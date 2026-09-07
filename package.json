@@ -1,0 +1,16 @@
+{
+  "name": "capycanvas-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "(MIT OR Apache-2.0)",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node site/build.mjs",
+    "test": "node --test --test-isolation=none tests/*.test.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "check": "npm run build && npm test && npm run test:browser",
+    "serve": "node site/scripts/serve.mjs",
+    "capture": "node site/scripts/capture.mjs"
+  }
+}

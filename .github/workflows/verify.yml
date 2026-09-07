@@ -1,0 +1,28 @@
+name: Verify site
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm run build
+      - run: npm test
+      - name: Check committed output is current
+        run: |
+          git diff --exit-code -- docs
+          test -z "$(git ls-files --others --exclude-standard docs)"
+      - name: Browser checks
+        run: npm run test:browser
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-review
+          path: artifacts/review/

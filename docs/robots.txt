@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://capycanvas.art/sitemap.xml

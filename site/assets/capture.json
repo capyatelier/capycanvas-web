@@ -1,0 +1,12 @@
+{
+  "source": "https://github.com/capyatelier/capycanvas",
+  "revision": "46010d54cd5f9a30b66a977f9fe64f19c307e493",
+  "packageAssetDirectory": "assets/170a65c11ca847877cca",
+  "width": 1440,
+  "height": 810,
+  "artwork": "Three watercolor squiggles drawn through actual browser pen input using brush 20 (Watercolor Wash).",
+  "screenshots": [
+    "workspace-light.webp",
+    "workspace-dark.webp"
+  ]
+}
