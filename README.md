@@ -54,14 +54,15 @@ canonical and alternate links, and a sitemap entry.
 
 The download page includes brief install instructions in `site/pwa-content.mjs`.
 `site/assets/pwa.js` uses browser/OS hints to select a guide, including desktop-mode
-iPads and Android client hints. This is guidance, not a capability check: users
-can select another browser, and unknown combinations get a supported-browser
+iPads and Android client hints. OS and browser pickers sit side by side; the OS
+picker reuses the platform icons and supports keyboard navigation. Browser
+choices update for the selected OS. This is guidance, not a capability check:
+users can change either choice, and unknown combinations get a supported-browser
 recommendation. Without JavaScript, a general guide remains visible. Only the
 editor is installed; the marketing site has no service worker or install prompt.
 
-The editor's package precaches its runtime for offline use. The instructions ask
-users to open the installed app online once, since installation can create fresh
-browser storage. This does not imply drawing autosave.
+The editor's package precaches its runtime for offline use. This does not imply
+drawing autosave.
 
 Browser instructions were checked against these upstream sources on 2026-09-08:
 

@@ -39,10 +39,14 @@ for(const locale of Object.keys(languages)) {
       for(const platform of ['iPadOS','Android','Linux','Windows','macOS']) assert.ok(html.includes(`<h2>${platform}</h2>`));
       const pwa=content[locale].download.pwa;
       assert.ok(html.indexOf('class="pwa"')>html.indexOf('<h2>macOS</h2>'));
-      assert.ok(html.includes(pwa.intro)); assert.ok(html.includes(pwa.offline));
+      assert.ok(html.includes(pwa.intro));
+      assert.doesNotMatch(html,/Open the installed app once online before using it offline\./);
       assert.match(html,/<script type="module" src="\/assets\/pwa.js"><\/script>/);
       assert.match(html,/<div data-pwa-guide="generic"><ol>/);
-      assert.match(html,/<div class="pwa-browser" hidden><label for="pwa-browser">/);
+      assert.match(html,/<div class="pwa-browser" hidden><details id="pwa-os"/);
+      assert.match(html,/<select id="pwa-browser" aria-label=".+?"/);
+      assert.doesNotMatch(html,/<label for="pwa-/);
+      for(const os of Object.keys(pwa.systems)) assert.match(html,new RegExp(`data-os="${os}"[^>]*><svg`));
       for(const [id,guide] of Object.entries(pwa.guides)) {
         assert.ok(html.includes(`data-pwa-guide="${id}"`));
         assert.ok(html.includes(guide.step));
