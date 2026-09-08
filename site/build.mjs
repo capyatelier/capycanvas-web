@@ -22,11 +22,11 @@ function languageMenu(locale, page) {
 function header(locale, page) {
   const t = content[locale];
   if (page === 'home') return `<div class="home-top">${languageMenu(locale,page)}</div>`;
-  return `<header class="site-header"><div class="nav-inner">${brand(locale)}<nav class="nav-links" aria-label="${e(t.nav.main)}">${['download','documentation'].map(p=>`<a href="${route(locale,p)}"${p===page?' aria-current="page"':''}>${e(t.nav[p])}</a>`).join('')}<a href="${appUrl}">${e(t.nav.openApp)}${icon('external')}</a></nav><div class="nav-tools">${languageMenu(locale,page)}<a class="icon-button" href="${repo}" target="_blank" rel="noopener noreferrer" aria-label="${e(t.nav.github)}">${github}</a></div></div></header>`;
+  return `<header class="site-header"><div class="nav-inner">${brand(locale)}<nav class="nav-links" aria-label="${e(t.nav.main)}">${['download','documentation'].map(p=>`<a href="${route(locale,p)}"${p===page?' aria-current="page"':''}>${e(t.nav[p])}</a>`).join('')}<a href="${appUrl}">${e(t.nav.webDemo)}${icon('external')}</a></nav><div class="nav-tools">${languageMenu(locale,page)}<a class="icon-button" href="${repo}" target="_blank" rel="noopener noreferrer" aria-label="${e(t.nav.github)}">${github}</a></div></div></header>`;
 }
 function home(locale) {
   const t=content[locale],h=t.home;
-  return `<main id="main" class="hero"><h1 class="visually-hidden">${e(h.title)}</h1><picture class="workspace"><source media="(prefers-color-scheme: dark)" srcset="/assets/workspace-dark.webp"><img src="/assets/workspace-light.webp" width="1440" height="810" alt="${e(h.screenshot)}" fetchpriority="high"></picture><p class="home-description">${e(h.description)}</p><div class="actions"><a class="button primary" href="${appUrl}">${e(t.nav.openApp)}</a><a class="button" href="${route(locale,'download')}">${e(t.nav.download)}</a><a class="button" href="${route(locale,'documentation')}">${e(t.nav.documentation)}</a></div></main>`;
+  return `<main id="main" class="hero"><h1 class="visually-hidden">${e(h.title)}</h1><picture class="workspace"><source media="(prefers-color-scheme: dark)" srcset="/assets/workspace-dark.webp"><img src="/assets/workspace-light.webp" width="1440" height="810" alt="${e(h.screenshot)}" fetchpriority="high"></picture><p class="home-description">${e(h.description)}</p><div class="actions"><a class="button primary" href="${appUrl}">${e(t.nav.webDemo)}</a><a class="button" href="${route(locale,'download')}">${e(t.nav.download)}</a><a class="button" href="${route(locale,'documentation')}">${e(t.nav.documentation)}</a></div></main>`;
 }
 function download(locale) {
   const t=content[locale].download;

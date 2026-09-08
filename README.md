@@ -2,7 +2,7 @@
 
 The static, localized website for **[capycanvas.art](https://capycanvas.art)**.
 The drawing app lives in [capyatelier/capycanvas](https://github.com/capyatelier/capycanvas);
-the Open App button opens [editor.capycanvas.art](https://editor.capycanvas.art).
+the Web Demo button opens [editor.capycanvas.art](https://editor.capycanvas.art).
 
 ## Develop
 

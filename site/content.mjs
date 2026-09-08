@@ -4,7 +4,7 @@ export const languages = { en: 'English', ja: '日本語', zh: '简体中文', k
 export const content = {
   en: {
     lang: 'en', locale: 'en_US', name: 'English',
-    nav: { openApp: 'Open App', download: 'Download', documentation: 'Documentation', home: 'Home', language: 'Language', main: 'Main navigation', skip: 'Skip to content', github: 'Capy Canvas on GitHub' },
+    nav: { webDemo: 'Web Demo', download: 'Download', documentation: 'Documentation', home: 'Home', language: 'Language', main: 'Main navigation', skip: 'Skip to content', github: 'Capy Canvas on GitHub' },
     home: {
       title: 'Capy Canvas',
       description: 'Capy Canvas is a fast, comfy, and cross-platform drawing app with powerful GPU accelerated brushes.',
@@ -32,7 +32,7 @@ export const content = {
   },
   ja: {
     lang: 'ja', locale: 'ja_JP', name: '日本語',
-    nav: { openApp: 'アプリを開く', download: 'ダウンロード', documentation: 'ドキュメント', home: 'ホーム', language: '言語', main: 'メインナビゲーション', skip: '本文へ移動', github: 'GitHub の Capy Canvas' },
+    nav: { webDemo: 'ウェブデモ', download: 'ダウンロード', documentation: 'ドキュメント', home: 'ホーム', language: '言語', main: 'メインナビゲーション', skip: '本文へ移動', github: 'GitHub の Capy Canvas' },
     home: {
       title: 'Capy Canvas',
       description: 'Capy Canvas は、強力な GPU 加速ブラシを備えた、速くて心地よいクロスプラットフォームのお絵かきアプリです。',
@@ -60,7 +60,7 @@ export const content = {
   },
   zh: {
     lang: 'zh-Hans', locale: 'zh_CN', name: '简体中文',
-    nav: { openApp: '打开应用', download: '下载', documentation: '文档', home: '首页', language: '语言', main: '主导航', skip: '跳转到正文', github: 'GitHub 上的 Capy Canvas' },
+    nav: { webDemo: '网页演示', download: '下载', documentation: '文档', home: '首页', language: '语言', main: '主导航', skip: '跳转到正文', github: 'GitHub 上的 Capy Canvas' },
     home: {
       title: 'Capy Canvas',
       description: 'Capy Canvas 是一款快速、舒适的跨平台绘画应用，配备强大的 GPU 加速笔刷。',
@@ -88,7 +88,7 @@ export const content = {
   },
   ko: {
     lang: 'ko', locale: 'ko_KR', name: '한국어',
-    nav: { openApp: '앱 열기', download: '다운로드', documentation: '문서', home: '홈', language: '언어', main: '주요 탐색', skip: '본문으로 건너뛰기', github: 'GitHub의 Capy Canvas' },
+    nav: { webDemo: '웹 데모', download: '다운로드', documentation: '문서', home: '홈', language: '언어', main: '주요 탐색', skip: '본문으로 건너뛰기', github: 'GitHub의 Capy Canvas' },
     home: {
       title: 'Capy Canvas',
       description: 'Capy Canvas는 강력한 GPU 가속 브러시를 갖춘 빠르고 편안한 크로스 플랫폼 드로잉 앱입니다.',
