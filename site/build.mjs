@@ -44,6 +44,7 @@ function render(locale,page) {
 <html lang="${t.lang}" data-locale="${locale}" data-page="${page}">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark">
+<meta name="darkreader-lock">
 <title>${e(title)}</title><meta name="description" content="${e(p.meta||p.text)}">
 ${page==='404'?'<meta name="robots" content="noindex">':`<link rel="canonical" href="${canonical}">${Object.keys(languages).map(code=>`<link rel="alternate" hreflang="${content[code].lang}" href="${origin+route(code,page)}">`).join('')}<link rel="alternate" hreflang="x-default" href="${origin+route('en',page)}">`}
 <meta property="og:type" content="website"><meta property="og:site_name" content="Capy Canvas"><meta property="og:title" content="${e(title)}"><meta property="og:description" content="${e(p.meta||p.text)}"><meta property="og:locale" content="${t.locale}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="${origin}/assets/workspace-light.webp"><meta property="og:image:width" content="1440"><meta property="og:image:height" content="810"><meta property="og:image:alt" content="${e(t.home.screenshot)}"><meta name="twitter:card" content="summary_large_image">
