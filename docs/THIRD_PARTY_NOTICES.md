@@ -6,11 +6,13 @@ for local browser checks and is not distributed with the site.
 
 ## Capy Canvas application assets
 
-The capybara SVG and genuine application screenshots originate from
+The capybara SVG, rounded favicon, and genuine application screenshots originate from
 <https://github.com/capyatelier/capycanvas>, copyright (c) 2026 Zack Drach and
 Capy Canvas contributors. Original application code and non-brand assets are
 MIT OR Apache-2.0; the mark is subject to the separate terms in BRANDING.md.
 Copies of both standard licenses and the branding terms accompany the built site.
+`site/assets/favicon.png` is the application's packaged `icon-32.png`, generated
+by `apps/layer-web/package.mjs` with rounded corners and a dark background.
 `site/assets/capture.json` records the application source revision used for the
 screenshots. `site/scripts/capture.mjs` reproduces the watercolor squiggles through
 browser pen events and the application's real brush engine. No external artwork is used.
