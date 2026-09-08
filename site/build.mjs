@@ -9,7 +9,7 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const faviconVersion = createHash('sha256').update(await readFile(join(root, 'site/assets/favicon.png'))).digest('hex').slice(0, 12);
 const out = join(root, 'docs');
 const origin = 'https://capycanvas.art';
-const demo = 'https://editor.capycanvas.art/';
+const appUrl = 'https://editor.capycanvas.art/';
 const repo = 'https://github.com/capyatelier/capycanvas';
 export const route = (locale, page = 'home') => `${locale === 'en' ? '' : '/' + locale}/${page === 'home' ? '' : page + '/'}`;
 const e = text => String(text).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -22,16 +22,16 @@ function languageMenu(locale, page) {
 function header(locale, page) {
   const t = content[locale];
   if (page === 'home') return `<div class="home-top">${languageMenu(locale,page)}</div>`;
-  return `<header class="site-header"><div class="nav-inner">${brand(locale)}<nav class="nav-links" aria-label="${e(t.nav.main)}">${['download','documentation'].map(p=>`<a href="${route(locale,p)}"${p===page?' aria-current="page"':''}>${e(t.nav[p])}</a>`).join('')}<a href="${demo}">${e(t.nav.demo)}${icon('external')}</a></nav><div class="nav-tools">${languageMenu(locale,page)}<a class="icon-button" href="${repo}" target="_blank" rel="noopener noreferrer" aria-label="${e(t.nav.github)}">${github}</a></div></div></header>`;
+  return `<header class="site-header"><div class="nav-inner">${brand(locale)}<nav class="nav-links" aria-label="${e(t.nav.main)}">${['download','documentation'].map(p=>`<a href="${route(locale,p)}"${p===page?' aria-current="page"':''}>${e(t.nav[p])}</a>`).join('')}<a href="${appUrl}">${e(t.nav.openApp)}${icon('external')}</a></nav><div class="nav-tools">${languageMenu(locale,page)}<a class="icon-button" href="${repo}" target="_blank" rel="noopener noreferrer" aria-label="${e(t.nav.github)}">${github}</a></div></div></header>`;
 }
 function home(locale) {
   const t=content[locale],h=t.home;
-  return `<main id="main" class="hero"><h1 class="visually-hidden">${e(h.title)}</h1><picture class="workspace"><source media="(prefers-color-scheme: dark)" srcset="/assets/workspace-dark.webp"><img src="/assets/workspace-light.webp" width="1440" height="810" alt="${e(h.screenshot)}" fetchpriority="high"></picture><p class="home-description">${e(h.description)}</p><div class="actions"><a class="button primary" href="${demo}">${e(t.nav.demo)}</a><a class="button" href="${route(locale,'download')}">${e(t.nav.download)}</a><a class="button" href="${route(locale,'documentation')}">${e(t.nav.documentation)}</a></div></main>`;
+  return `<main id="main" class="hero"><h1 class="visually-hidden">${e(h.title)}</h1><picture class="workspace"><source media="(prefers-color-scheme: dark)" srcset="/assets/workspace-dark.webp"><img src="/assets/workspace-light.webp" width="1440" height="810" alt="${e(h.screenshot)}" fetchpriority="high"></picture><p class="home-description">${e(h.description)}</p><div class="actions"><a class="button primary" href="${appUrl}">${e(t.nav.openApp)}</a><a class="button" href="${route(locale,'download')}">${e(t.nav.download)}</a><a class="button" href="${route(locale,'documentation')}">${e(t.nav.documentation)}</a></div></main>`;
 }
 function download(locale) {
   const t=content[locale].download;
   const p=t.pwa;
-  const guides=Object.entries(p.guides).map(([id,guide])=>`<div data-pwa-guide="${id}"${id==='generic'?'':' hidden'}><ol><li><a href="${demo}" target="_blank" rel="noopener noreferrer">${e(p.open)}</a></li><li>${e(guide.step)}</li></ol>${guide.note?`<p class="pwa-note">${e(guide.note)}</p>`:''}</div>`).join('');
+  const guides=Object.entries(p.guides).map(([id,guide])=>`<div data-pwa-guide="${id}"${id==='generic'?'':' hidden'}><ol><li><a href="${appUrl}" target="_blank" rel="noopener noreferrer">${e(p.open)}</a></li><li>${e(guide.step)}</li></ol>${guide.note?`<p class="pwa-note">${e(guide.note)}</p>`:''}</div>`).join('');
   const osIcons={windows:'windows',macos:'mac',linux:'linux',chromeos:'globe',android:'android',ios:'ipad',other:'globe'};
   const osMenu=`<details id="pwa-os" class="pwa-os" data-value="other"><summary aria-haspopup="listbox" aria-labelledby="pwa-os-label pwa-os-current"><span id="pwa-os-label" class="visually-hidden">${e(p.os)}</span><span id="pwa-os-current">${icon('globe')}<span>${e(p.systems.other)}</span></span>${icon('chevron','chevron')}</summary><div class="pwa-os-options" role="listbox" aria-label="${e(p.os)}">${Object.entries(p.systems).map(([value,name])=>`<button type="button" role="option" data-os="${value}" aria-selected="${value==='other'}" tabindex="-1">${icon(osIcons[value])}<span>${e(name)}</span></button>`).join('')}</div></details>`;
   const select=(id,label,options)=>`<select id="pwa-${id}" aria-label="${e(label)}" aria-controls="pwa-instructions">${Object.entries(options).map(([value,name])=>`<option value="${value}"${value==='other'?' selected':''}>${e(name)}</option>`).join('')}</select>`;
