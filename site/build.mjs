@@ -30,7 +30,10 @@ function home(locale) {
 }
 function download(locale) {
   const t=content[locale].download;
-  return `<main id="main" class="page"><h1>${e(t.title)}</h1><p class="lead">${e(t.intro)}</p><ul class="platforms" aria-label="${e(t.platformsLabel)}">${t.platforms.map((name,i)=>`<li class="platform">${icon(['ipad','android','linux','windows','mac'][i])}<h2>${e(name)}</h2><p>${e(t.status)}</p></li>`).join('')}</ul></main>`;
+  const p=t.pwa;
+  const guides=Object.entries(p.guides).map(([id,guide])=>`<div data-pwa-guide="${id}"${id==='generic'?'':' hidden'}><ol><li><a href="${demo}" target="_blank" rel="noopener noreferrer">${e(p.open)}</a></li><li>${e(guide.step)}</li></ol>${guide.note?`<p class="pwa-note">${e(guide.note)}</p>`:''}</div>`).join('');
+  const pwa=`<section class="pwa" aria-labelledby="pwa-title"><h2 id="pwa-title">${e(p.title)}</h2><p>${e(p.intro)}</p><div class="pwa-browser" hidden><label for="pwa-browser">${e(p.browser)}</label><select id="pwa-browser" aria-controls="pwa-instructions">${Object.entries(p.guides).map(([id,guide])=>`<option value="${id}"${id==='generic'?' selected':''}>${e(guide.label)}</option>`).join('')}</select></div><div id="pwa-instructions" aria-live="polite">${Object.entries(p.fallback).map(([id,text])=>`<p data-pwa-fallback="${id}" hidden>${e(text)}</p>`).join('')}${guides}</div><p class="pwa-note">${e(p.offline)}</p></section>`;
+  return `<main id="main" class="page"><h1>${e(t.title)}</h1><p class="lead">${e(t.intro)}</p><ul class="platforms" aria-label="${e(t.platformsLabel)}">${t.platforms.map((name,i)=>`<li class="platform">${icon(['ipad','android','linux','windows','mac'][i])}<h2>${e(name)}</h2><p>${e(t.status)}</p></li>`).join('')}</ul>${pwa}</main>`;
 }
 function documentation(locale) {
   const t=content[locale].documentation;
@@ -51,7 +54,7 @@ function render(locale,page) {
 ${page==='404'?'<meta name="robots" content="noindex">':`<link rel="canonical" href="${canonical}">${Object.keys(languages).map(code=>`<link rel="alternate" hreflang="${content[code].lang}" href="${origin+route(code,page)}">`).join('')}<link rel="alternate" hreflang="x-default" href="${origin+route('en',page)}">`}
 <meta property="og:type" content="website"><meta property="og:site_name" content="Capy Canvas"><meta property="og:title" content="${e(title)}"><meta property="og:description" content="${e(p.meta||p.text)}"><meta property="og:locale" content="${t.locale}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="${origin}/assets/workspace-light.webp"><meta property="og:image:width" content="1440"><meta property="og:image:height" content="810"><meta property="og:image:alt" content="${e(t.home.screenshot)}"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#ededed" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#333333" media="(prefers-color-scheme: dark)">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png?v=${faviconVersion}"><link rel="stylesheet" href="/assets/style.css"><script src="/assets/language.js"></script>
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png?v=${faviconVersion}"><link rel="stylesheet" href="/assets/style.css"><script src="/assets/language.js"></script>${page==='download'?'<script type="module" src="/assets/pwa.js"></script>':''}
 </head><body><a class="skip" href="#main">${e(t.nav.skip)}</a>${header(locale,page)}${body}</body></html>
 `;
 }

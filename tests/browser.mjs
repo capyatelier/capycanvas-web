@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { browser } from '../site/scripts/browser.mjs';
 import { serve } from '../site/scripts/serve.mjs';
+import { checkPwaInstructions } from './pwa-browser.mjs';
 
 await mkdir('artifacts/review',{recursive:true});
 const host=await serve();
@@ -44,6 +45,7 @@ try {
     if((width===1440&&locale==='en')||(width===390&&(locale==='en'||theme==='dark'))) await b.screenshot(`artifacts/review/${width}-${theme}-${locale}-${page}.png`,true);
     report.push(label);
   }
+  await checkPwaInstructions(b,host,check);
   // Live OS appearance changes swap both the site palette and the actual screenshot.
   await b.navigate(host.url+'/?lang=en'); await b.theme('light'); await b.settle();
   await b.theme('dark'); await b.until("document.querySelector('.workspace img').currentSrc.endsWith('workspace-dark.webp')"); checks++;
@@ -76,6 +78,7 @@ try {
   await b.call('Emulation.setScriptExecutionDisabled',{value:true});
   await b.navigate(host.url+'/ja/download/');
   check(await b.evaluate("document.documentElement.lang==='ja'&&document.querySelectorAll('.platform').length===5"),'No-JS page content');
+  check(await b.evaluate("document.querySelector('[data-pwa-guide=generic]').hidden===false&&document.querySelector('.pwa-browser').hidden&&document.querySelectorAll('[data-pwa-guide]:not([hidden])').length===1"),'No-JS installation instructions remain readable');
   await b.screenshot('artifacts/review/no-js-japanese.png',true);
   await b.call('Emulation.setScriptExecutionDisabled',{value:false});
   const {identifier}=await b.call('Page.addScriptToEvaluateOnNewDocument',{source:"Object.defineProperty(window,'localStorage',{get(){throw new Error('Storage disabled')}})"});

@@ -1,4 +1,5 @@
 // Every locale is rendered to real HTML. Keep the shape identical across translations.
+import { pwaContent } from './pwa-content.mjs';
 export const languages = { en: 'English', ja: '日本語', zh: '简体中文', ko: '한국어' };
 export const content = {
   en: {
@@ -13,7 +14,8 @@ export const content = {
     download: {
       title: 'Download', intro: 'Native downloads are not available yet.',
       status: 'Coming soon', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: 'Planned platforms',
-      meta: 'Capy Canvas downloads are coming soon for iPadOS, Android, Linux, Windows, and macOS.'
+      pwa: pwaContent.en,
+      meta: 'Install Capy Canvas as a web app for offline use. Native downloads are coming soon.'
     },
     documentation: {
       title: 'Documentation', intro: 'Capy Canvas is in early development. Documentation is coming soon.',
@@ -40,7 +42,8 @@ export const content = {
     download: {
       title: 'ダウンロード', intro: 'ネイティブ版はまだダウンロードできません。',
       status: '公開予定', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: '対応予定のプラットフォーム',
-      meta: 'Capy Canvas の iPadOS、Android、Linux、Windows、macOS 版は公開準備中です。'
+      pwa: pwaContent.ja,
+      meta: 'Capy Canvas のウェブ版をインストールしてオフラインで使えます。ネイティブ版は公開準備中です。'
     },
     documentation: {
       title: 'ドキュメント', intro: 'Capy Canvas は開発初期の段階です。ドキュメントは準備中です。',
@@ -67,7 +70,8 @@ export const content = {
     download: {
       title: '下载', intro: '原生版本暂未开放下载。',
       status: '即将推出', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: '计划支持的平台',
-      meta: 'Capy Canvas 的 iPadOS、Android、Linux、Windows 和 macOS 版即将推出。'
+      pwa: pwaContent.zh,
+      meta: '安装 Capy Canvas 网页应用，即可离线使用。原生版本即将推出。'
     },
     documentation: {
       title: '文档', intro: 'Capy Canvas 仍处于开发早期，文档正在筹备中。',
@@ -94,7 +98,8 @@ export const content = {
     download: {
       title: '다운로드', intro: '네이티브 버전은 아직 다운로드할 수 없습니다.',
       status: '출시 예정', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: '지원 예정 플랫폼',
-      meta: 'Capy Canvas의 iPadOS, Android, Linux, Windows, macOS 버전은 출시 예정입니다.'
+      pwa: pwaContent.ko,
+      meta: 'Capy Canvas 웹 앱을 설치해 오프라인으로 사용하세요. 네이티브 버전은 출시 예정입니다.'
     },
     documentation: {
       title: '문서', intro: 'Capy Canvas는 개발 초기 단계입니다. 문서는 준비 중입니다.',

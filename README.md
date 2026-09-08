@@ -50,6 +50,30 @@ image scales to fit the viewport. All pages use borderless controls and omit foo
 in `site/content.mjs`; each language gets static HTML, appropriate metadata,
 canonical and alternate links, and a sitemap entry.
 
+## Web app installation instructions
+
+The download page includes brief install instructions in `site/pwa-content.mjs`.
+`site/assets/pwa.js` uses browser/OS hints to select a guide, including desktop-mode
+iPads and Android client hints. This is guidance, not a capability check: users
+can select another browser, and unknown combinations get a supported-browser
+recommendation. Without JavaScript, a general guide remains visible. Only the
+editor is installed; the marketing site has no service worker or install prompt.
+
+The editor's package precaches its runtime for offline use. The instructions ask
+users to open the installed app online once, since installation can create fresh
+browser storage. This does not imply drawing autosave.
+
+Browser instructions were checked against these upstream sources on 2026-09-08:
+
+- Chrome: [computer](https://support.google.com/chrome/answer/9658361?hl=en&co=GENIE.Platform%3DDesktop), [Android](https://support.google.com/chrome/answer/9658361?hl=en&co=GENIE.Platform%3DAndroid), [iPhone/iPad](https://support.google.com/chrome/answer/9658361?hl=en&co=GENIE.Platform%3DiOS).
+- [Microsoft Edge](https://support.microsoft.com/en-us/edge/install-manage-or-uninstall-apps-in-microsoft-edge).
+- Safari: [Mac (macOS 14+)](https://support.apple.com/en-us/104996), [iPhone/iPad](https://support.apple.com/guide/iphone/open-as-web-app-iphea86e5236/ios).
+- Firefox: [Windows (143+, or 150+ for Microsoft Store installs)](https://support.mozilla.org/en-US/kb/web-apps-firefox-windows), [Android](https://support.mozilla.org/en-US/kb/use-web-apps-firefox-android). Firefox on Mac/Linux currently receives Chrome instructions.
+
+Unit tests cover browser/OS detection; Chrome browser tests exercise the rendered
+guides using those hints in all four locales. Those checks validate the website's
+instructions, not native install dialogs on each operating system.
+
 ## Recapture the app
 
 Start a compatible build of the actual app, for example a stable copy of

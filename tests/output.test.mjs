@@ -35,7 +35,19 @@ for(const locale of Object.keys(languages)) {
       assert.match(html,/class="nav-links"/); assert.match(html,/aria-current="page"/);
       assert.match(html,/href="https:\/\/github.com\/capyatelier\/capycanvas"/);
     }
-    if(page==='download') for(const platform of ['iPadOS','Android','Linux','Windows','macOS']) assert.ok(html.includes(`<h2>${platform}</h2>`));
+    if(page==='download') {
+      for(const platform of ['iPadOS','Android','Linux','Windows','macOS']) assert.ok(html.includes(`<h2>${platform}</h2>`));
+      const pwa=content[locale].download.pwa;
+      assert.ok(html.indexOf('class="pwa"')>html.indexOf('<h2>macOS</h2>'));
+      assert.ok(html.includes(pwa.intro)); assert.ok(html.includes(pwa.offline));
+      assert.match(html,/<script type="module" src="\/assets\/pwa.js"><\/script>/);
+      assert.match(html,/<div data-pwa-guide="generic"><ol>/);
+      assert.match(html,/<div class="pwa-browser" hidden><label for="pwa-browser">/);
+      for(const [id,guide] of Object.entries(pwa.guides)) {
+        assert.ok(html.includes(`data-pwa-guide="${id}"`));
+        assert.ok(html.includes(guide.step));
+      }
+    } else assert.doesNotMatch(html,/src="\/assets\/pwa.js"|class="pwa"/);
     if(page==='documentation') {
       for(const text of [...content[locale].documentation.built,...content[locale].documentation.planned,content[locale].documentation.direction]) assert.ok(html.includes(text));
       assert.equal((html.match(/<section>/g)||[]).length,3);
