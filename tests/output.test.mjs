@@ -14,15 +14,19 @@ for(const locale of Object.keys(languages)) {
   for(const page of pages) test(`${locale}/${page}: static content, metadata and navigation`,async()=>{
     const html=await read(route(locale,page)+'index.html');
     assert.match(html,new RegExp(`<html lang="${content[locale].lang}"`));
-    assert.equal((html.match(/<h1>/g)||[]).length,1);
+    assert.equal((html.match(/<h1(?: [^>]*)?>/g)||[]).length,1);
     assert.equal((html.match(/<main /g)||[]).length,1);
     assert.equal((html.match(/rel="alternate"/g)||[]).length,5);
     assert.match(html,/<meta name="description" content=".+?">/);
     assert.match(html,/href="https:\/\/editor\.capycanvas\.art\/"/);
     assert.match(html,/data-language="en"/); assert.match(html,/data-language="ja"/); assert.match(html,/data-language="zh"/); assert.match(html,/data-language="ko"/);
     assert.ok(html.includes(content[locale][page].title));
+    assert.doesNotMatch(html,/<footer|<hr(?:\s|>)/);
     assert.doesNotMatch(html,/undefined|\[object Object\]|TODO|lorem ipsum/i);
     if(page==='home') {
+      assert.equal((html.match(/<p(?: [^>]*)?>/g)||[]).length,1);
+      assert.match(html,/<h1 class="visually-hidden">Capy Canvas<\/h1>/);
+      assert.doesNotMatch(html,/<figcaption|class="brand"|class="eyebrow"/);
       assert.equal((html.match(/class="button(?: primary)?"/g)||[]).length,3);
       assert.match(html,/<source media="\(prefers-color-scheme: dark\)" srcset="\/assets\/workspace-dark.webp">/);
       assert.match(html,/<img src="\/assets\/workspace-light.webp" width="1440" height="810" alt=".+?"/);
@@ -32,7 +36,11 @@ for(const locale of Object.keys(languages)) {
       assert.match(html,/href="https:\/\/github.com\/capyatelier\/capycanvas"/);
     }
     if(page==='download') for(const platform of ['iPadOS','Android','Linux','Windows','macOS']) assert.ok(html.includes(`<h2>${platform}</h2>`));
-    if(page==='documentation') assert.equal((html.match(/<article>/g)||[]).length,6);
+    if(page==='documentation') {
+      for(const text of [...content[locale].documentation.built,...content[locale].documentation.planned,content[locale].documentation.direction]) assert.ok(html.includes(text));
+      assert.equal((html.match(/<section>/g)||[]).length,3);
+      assert.doesNotMatch(html,/<aside/);
+    }
   });
 }
 async function files(dir) { const entries=await readdir(dir,{withFileTypes:true}); return (await Promise.all(entries.map(e=>e.isDirectory()?files(join(dir,e.name)):join(dir,e.name)))).flat(); }

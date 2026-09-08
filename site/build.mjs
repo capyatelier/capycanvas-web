@@ -19,32 +19,27 @@ function languageMenu(locale, page) {
 }
 function header(locale, page) {
   const t = content[locale];
-  if (page === 'home') return `<div class="home-top">${brand(locale)}${languageMenu(locale,page)}</div>`;
+  if (page === 'home') return `<div class="home-top">${languageMenu(locale,page)}</div>`;
   return `<header class="site-header"><div class="nav-inner">${brand(locale)}<nav class="nav-links" aria-label="${e(t.nav.main)}">${['download','documentation'].map(p=>`<a href="${route(locale,p)}"${p===page?' aria-current="page"':''}>${e(t.nav[p])}</a>`).join('')}<a href="${demo}">${e(t.nav.demo)}${icon('external')}</a></nav><div class="nav-tools">${languageMenu(locale,page)}<a class="icon-button" href="${repo}" aria-label="${e(t.nav.github)}">${github}</a></div></div></header>`;
 }
-const footer = (t,page) => `<footer class="site-footer ${page==='home'?'home-footer':''}"><span class="footer-brand">${brandSvg}${e(t.footer)}</span><span>${e(t.early)}</span></footer>`;
 function home(locale) {
   const t=content[locale],h=t.home;
-  return `<main id="main" class="hero"><figure class="workspace"><picture><source media="(prefers-color-scheme: dark)" srcset="/assets/workspace-dark.webp"><img src="/assets/workspace-light.webp" width="1440" height="810" alt="${e(h.screenshot)}" fetchpriority="high"></picture><figcaption>${e(h.caption)}</figcaption></figure><div class="home-copy"><p class="eyebrow">${e(h.eyebrow)}</p><h1>${e(h.title)}</h1><p class="home-description">${e(h.description)}</p><div class="actions"><a class="button primary" href="${demo}">${e(t.nav.demo)}${icon('external')}</a><a class="button" href="${route(locale,'download')}">${icon('download')}${e(t.nav.download)}</a><a class="button" href="${route(locale,'documentation')}">${icon('book')}${e(t.nav.documentation)}</a></div><p class="micro">${e(h.note)}</p><p class="ambition">${e(h.ambition)}</p></div></main>`;
+  return `<main id="main" class="hero"><h1 class="visually-hidden">${e(h.title)}</h1><picture class="workspace"><source media="(prefers-color-scheme: dark)" srcset="/assets/workspace-dark.webp"><img src="/assets/workspace-light.webp" width="1440" height="810" alt="${e(h.screenshot)}" fetchpriority="high"></picture><p class="home-description">${e(h.description)}</p><div class="actions"><a class="button primary" href="${demo}">${e(t.nav.demo)}</a><a class="button" href="${route(locale,'download')}">${e(t.nav.download)}</a><a class="button" href="${route(locale,'documentation')}">${e(t.nav.documentation)}</a></div></main>`;
 }
-function callout(t,link) {
-  return `<aside class="callout"><h2>${e(t.callTitle)}</h2><p>${e(t.callText)}</p><div class="actions"><a class="button primary" href="${demo}">${e(t.action)}${icon('external')}</a><a class="text-link" href="${link}">${e(t.link)}${icon('arrow')}</a></div></aside>`;
-}
-const intro = (t, badge=false) => `<div class="page-intro"><p class="eyebrow">${e(t.eyebrow)}</p><h1>${e(t.title)}</h1><p class="lead">${e(t.intro)}</p>${badge?`<span class="badge">${e(t.status)}</span>`:''}</div>`;
 function download(locale) {
   const t=content[locale].download;
-  return `<main id="main" class="page">${intro(t)}<ul class="platforms" aria-label="${e(t.platformsLabel)}">${t.platforms.map((name,i)=>`<li class="platform">${icon(['ipad','android','linux','windows','mac'][i])}<h2>${e(name)}</h2><p>${e(t.status)}</p></li>`).join('')}</ul><p class="platform-note">${e(t.note)}</p>${callout(t,route(locale,'documentation'))}</main>`;
+  return `<main id="main" class="page"><h1>${e(t.title)}</h1><p class="lead">${e(t.intro)}</p><ul class="platforms" aria-label="${e(t.platformsLabel)}">${t.platforms.map((name,i)=>`<li class="platform">${icon(['ipad','android','linux','windows','mac'][i])}<h2>${e(name)}</h2><p>${e(t.status)}</p></li>`).join('')}</ul></main>`;
 }
 function documentation(locale) {
   const t=content[locale].documentation;
-  const column=(title,note,items,symbol)=>`<section><div class="roadmap-heading">${icon(symbol)}<h2>${e(title)}</h2></div><p class="section-note">${e(note)}</p>${items.map(([name,text])=>`<article><h3>${e(name)}</h3><p>${e(text)}</p></article>`).join('')}</section>`;
-  return `<main id="main" class="page">${intro(t,true)}<div class="roadmap">${column(t.now,t.nowIntro,t.built,'circleCheck')}${column(t.next,t.nextIntro,t.planned,'sprout')}</div>${callout(t,repo)}</main>`;
+  const section=(title,items)=>`<section><h2>${e(title)}</h2><ul>${items.map(item=>`<li>${e(item)}</li>`).join('')}</ul></section>`;
+  return `<main id="main" class="page documentation"><h1>${e(t.title)}</h1><p class="lead">${e(t.intro)}</p>${section(t.now,t.built)}${section(t.next,t.planned)}<section><h2>${e(t.focus)}</h2><p>${e(t.direction)}</p></section></main>`;
 }
 function render(locale,page) {
   const t=content[locale],p=t[page] || t.notFound;
-  const title=page==='home'?'Capy Canvas — '+p.title:page==='404'?p.title:`${t.nav[page]} — Capy Canvas`;
+  const title=page==='home'?p.title:page==='404'?p.title:`${t.nav[page]} — Capy Canvas`;
   const canonical=origin+route(locale,page);
-  const body=page==='home'?home(locale):page==='download'?download(locale):page==='documentation'?documentation(locale):`<main class="page error-page" id="main"><p class="eyebrow">404</p><h1>${e(p.title)}</h1><p class="lead">${e(p.text)}</p><a class="button primary" href="${route(locale)}">${e(p.action)}${icon('arrow')}</a></main>`;
+  const body=page==='home'?home(locale):page==='download'?download(locale):page==='documentation'?documentation(locale):`<main class="page error-page" id="main"><p class="error-code">404</p><h1>${e(p.title)}</h1><p class="lead">${e(p.text)}</p><a class="button primary" href="${route(locale)}">${e(p.action)}${icon('arrow')}</a></main>`;
   return `<!doctype html>
 <html lang="${t.lang}" data-locale="${locale}" data-page="${page}">
 <head>
@@ -52,9 +47,9 @@ function render(locale,page) {
 <title>${e(title)}</title><meta name="description" content="${e(p.meta||p.text)}">
 ${page==='404'?'<meta name="robots" content="noindex">':`<link rel="canonical" href="${canonical}">${Object.keys(languages).map(code=>`<link rel="alternate" hreflang="${content[code].lang}" href="${origin+route(code,page)}">`).join('')}<link rel="alternate" hreflang="x-default" href="${origin+route('en',page)}">`}
 <meta property="og:type" content="website"><meta property="og:site_name" content="Capy Canvas"><meta property="og:title" content="${e(title)}"><meta property="og:description" content="${e(p.meta||p.text)}"><meta property="og:locale" content="${t.locale}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="${origin}/assets/workspace-light.webp"><meta property="og:image:width" content="1440"><meta property="og:image:height" content="810"><meta property="og:image:alt" content="${e(t.home.screenshot)}"><meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#fafafb" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#242424" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafafb" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#333333" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/style.css"><script src="/assets/language.js"></script>
-</head><body><a class="skip" href="#main">${e(t.nav.skip)}</a>${header(locale,page)}${body}${footer(t,page)}</body></html>
+</head><body><a class="skip" href="#main">${e(t.nav.skip)}</a>${header(locale,page)}${body}</body></html>
 `;
 }
 await rm(out,{recursive:true,force:true});

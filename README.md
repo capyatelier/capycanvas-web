@@ -44,7 +44,9 @@ navigation, theme selection, and the language menu still work; automatic
 language detection and remembering a choice require JavaScript.
 
 The browser's `prefers-color-scheme` selects the whole page palette and the
-matching genuine app screenshot. Changes apply live. Source translations live
+matching genuine app screenshot. Changes apply live. The home page contains only
+the screenshot, a short description, three links, and the language selector; its
+image scales to fit the viewport. All pages use borderless controls and omit footers. Source translations live
 in `site/content.mjs`; each language gets static HTML, appropriate metadata,
 canonical and alternate links, and a sitemap entry.
 

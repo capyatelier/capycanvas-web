@@ -11,8 +11,8 @@ const report=[];
 const check=(value,message)=>{assert.ok(value,message);checks++;};
 try {
   await b.call('Page.addScriptToEvaluateOnNewDocument',{source:"Object.defineProperty(navigator,'languages',{get:()=>['en-US','en'],configurable:true})"});
-  for(const width of [1440,768,390,320]) for(const theme of ['light','dark']) for(const locale of ['en','ja','zh','ko']) for(const page of ['home','download','documentation']) {
-    await b.call('Emulation.setDeviceMetricsOverride',{width,height:1000,deviceScaleFactor:1,mobile:false});
+  for(const [width,height] of [[1440,900],[1280,720],[1024,600],[768,1024],[390,844],[320,568],[844,390]]) for(const theme of ['light','dark']) for(const locale of ['en','ja','zh','ko']) for(const page of ['home','download','documentation']) {
+    await b.call('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
     await b.theme(theme);
     const path=`${locale==='en'?'':'/'+locale}/${page==='home'?'':page+'/'}`;
     await b.navigate(host.url+path);
@@ -21,19 +21,26 @@ try {
     const metrics=await b.evaluate(`(() => {
       const visible=e=>e.getClientRects().length>0;
       const bounds=[...document.querySelectorAll('h1,h2,h3,p,a,summary')].filter(visible).filter(e=>e.getBoundingClientRect().right>innerWidth+1||e.getBoundingClientRect().left< -1).map(e=>e.textContent);
-      return { width:innerWidth, scroll:document.documentElement.scrollWidth, lang:document.documentElement.dataset.locale, bg:getComputedStyle(document.body).backgroundColor, source:document.querySelector('.workspace img')?.currentSrc, bounds,
+      const shot=document.querySelector('.workspace img')?.getBoundingClientRect();
+      const borders=[...document.querySelectorAll('header,nav,main,picture,section,a,li')].filter(visible).filter(e=>['Top','Right','Bottom','Left'].some(side=>parseFloat(getComputedStyle(e)['border'+side+'Width'])>0)).map(e=>e.className);
+      return { height:innerHeight, scrollHeight:document.documentElement.scrollHeight, shotRatio:shot?shot.width/shot.height:null, borders, width:innerWidth, scroll:document.documentElement.scrollWidth, lang:document.documentElement.dataset.locale, bg:getComputedStyle(document.body).backgroundColor, source:document.querySelector('.workspace img')?.currentSrc, bounds,
         labels:[...document.querySelectorAll('a,summary')].filter(visible).every(e=>(e.getAttribute('aria-label')||e.textContent).trim()),
         headings:document.querySelectorAll('h1').length,
         broken:[...document.images].some(i=>!i.complete||!i.naturalWidth)
       };
     })()`);
-    const label=`${width}/${theme}/${locale}/${page}`;
+    const label=`${width}x${height}/${theme}/${locale}/${page}`;
     check(metrics.scroll<=width,`Horizontal overflow ${label}: ${JSON.stringify(metrics)}`);
     check(metrics.bounds.length===0,`Clipped text ${label}: ${metrics.bounds}`);
     check(metrics.lang===locale,`Wrong language ${label}`);
-    check(metrics.bg===(theme==='light'?'rgb(250, 250, 251)':'rgb(36, 36, 36)'),`Wrong theme ${label}`);
+    check(metrics.bg===(theme==='light'?'rgb(250, 250, 251)':'rgb(51, 51, 51)'),`Wrong theme ${label}`);
     check(metrics.labels&&metrics.headings===1&&!metrics.broken,`Accessibility/asset basics ${label}`);
-    if(page==='home')check(metrics.source.endsWith(`workspace-${theme}.webp`),`Wrong screenshot ${label}`);
+    check(metrics.borders.length===0,`Unexpected borders ${label}: ${metrics.borders}`);
+    if(page==='home') {
+      check(metrics.source.endsWith(`workspace-${theme}.webp`),`Wrong screenshot ${label}`);
+      check(metrics.scrollHeight<=height,`Home should fit viewport ${label}: ${metrics.scrollHeight}`);
+      check(Math.abs(metrics.shotRatio-16/9)<.01,`Screenshot aspect ratio ${label}`);
+    }
     if((width===1440&&locale==='en')||(width===390&&(locale==='en'||theme==='dark'))) await b.screenshot(`artifacts/review/${width}-${theme}-${locale}-${page}.png`,true);
     report.push(label);
   }
