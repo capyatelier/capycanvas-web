@@ -6,9 +6,9 @@ export const content = {
     nav: { demo: 'Demo', download: 'Download', documentation: 'Documentation', home: 'Home', language: 'Language', main: 'Main navigation', skip: 'Skip to content', github: 'Capy Canvas on GitHub' },
     home: {
       title: 'Capy Canvas',
-      description: 'Capy Canvas is a free drawing app in early development.',
+      description: 'Capy Canvas is a fast, comfy, and cross-platform drawing app with powerful GPU accelerated brushes.',
       screenshot: 'Capy Canvas’s drawing workspace with three pressure-sensitive watercolor strokes.',
-      meta: 'Capy Canvas is a free, open-source drawing app in early development, focused on comics and illustration.'
+      meta: 'Capy Canvas is a fast, comfy, and cross-platform drawing app with powerful GPU accelerated brushes.'
     },
     download: {
       title: 'Download', intro: 'Native downloads are not available yet.',
@@ -33,9 +33,9 @@ export const content = {
     nav: { demo: 'デモ', download: 'ダウンロード', documentation: 'ドキュメント', home: 'ホーム', language: '言語', main: 'メインナビゲーション', skip: '本文へ移動', github: 'GitHub の Capy Canvas' },
     home: {
       title: 'Capy Canvas',
-      description: 'Capy Canvas は、開発初期の無料お絵かきアプリです。',
+      description: 'Capy Canvas は、強力な GPU 加速ブラシを備えた、速くて心地よいクロスプラットフォームのお絵かきアプリです。',
       screenshot: '筆圧を反映した 3 本の水彩の線がある Capy Canvas の作業画面。',
-      meta: 'Capy Canvas は、漫画とイラストに重点を置く、開発初期の無料・オープンソースお絵かきアプリです。'
+      meta: 'Capy Canvas は、強力な GPU 加速ブラシを備えた、速くて心地よいクロスプラットフォームのお絵かきアプリです。'
     },
     download: {
       title: 'ダウンロード', intro: 'ネイティブ版はまだダウンロードできません。',
@@ -60,9 +60,9 @@ export const content = {
     nav: { demo: '在线体验', download: '下载', documentation: '文档', home: '首页', language: '语言', main: '主导航', skip: '跳转到正文', github: 'GitHub 上的 Capy Canvas' },
     home: {
       title: 'Capy Canvas',
-      description: 'Capy Canvas 是一款处于开发早期的免费绘画应用。',
+      description: 'Capy Canvas 是一款快速、舒适的跨平台绘画应用，配备强大的 GPU 加速笔刷。',
       screenshot: 'Capy Canvas 的绘画界面，画布上有三条带压感变化的水彩笔触。',
-      meta: 'Capy Canvas 是一款处于开发早期的免费开源绘画应用，重点面向漫画和插画创作。'
+      meta: 'Capy Canvas 是一款快速、舒适的跨平台绘画应用，配备强大的 GPU 加速笔刷。'
     },
     download: {
       title: '下载', intro: '原生版本暂未开放下载。',
@@ -87,9 +87,9 @@ export const content = {
     nav: { demo: '데모', download: '다운로드', documentation: '문서', home: '홈', language: '언어', main: '주요 탐색', skip: '본문으로 건너뛰기', github: 'GitHub의 Capy Canvas' },
     home: {
       title: 'Capy Canvas',
-      description: 'Capy Canvas는 개발 초기 단계의 무료 드로잉 앱입니다.',
+      description: 'Capy Canvas는 강력한 GPU 가속 브러시를 갖춘 빠르고 편안한 크로스 플랫폼 드로잉 앱입니다.',
       screenshot: '필압 변화가 반영된 수채화 획 세 개가 있는 Capy Canvas 작업 화면.',
-      meta: 'Capy Canvas는 만화와 일러스트에 중점을 둔 개발 초기 단계의 무료 오픈 소스 드로잉 앱입니다.'
+      meta: 'Capy Canvas는 강력한 GPU 가속 브러시를 갖춘 빠르고 편안한 크로스 플랫폼 드로잉 앱입니다.'
     },
     download: {
       title: '다운로드', intro: '네이티브 버전은 아직 다운로드할 수 없습니다.',

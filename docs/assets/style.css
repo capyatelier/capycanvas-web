@@ -94,7 +94,7 @@ h1 { font-size: 28px; font-weight: 700; line-height: 1.3; letter-spacing: -.6px;
 }
 @media (max-height: 480px) and (min-width: 541px) {
   .hero { padding-top: 44px; padding-bottom: 12px; }
-  .workspace { width: min(1024px, 100%, calc((100svh - 152px) * 16 / 9)); }
+  .workspace { width: min(1024px, 100%, calc((100svh - 180px) * 16 / 9)); }
   .home-description { margin: 12px 0; }
 }
 @media print { .language-menu, .nav-tools, .skip { display: none; } .workspace { box-shadow: none; } }
