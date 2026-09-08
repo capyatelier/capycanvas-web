@@ -46,7 +46,8 @@ export async function browser({ gpu = false, width = 1440, height = 1000 } = {})
   }
   async function until(expression) {
     for (let i = 0; i < 150; i++) {
-      if (await evaluate(expression)) return;
+      // Navigation can briefly leave the new document without a root element.
+      if (await evaluate(`!!document.documentElement && (${expression})`)) return;
       await new Promise(r => setTimeout(r, 100));
     }
     throw new Error(`Timed out waiting for ${expression}`);
