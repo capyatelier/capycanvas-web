@@ -20,7 +20,7 @@ function languageMenu(locale, page) {
 function header(locale, page) {
   const t = content[locale];
   if (page === 'home') return `<div class="home-top">${languageMenu(locale,page)}</div>`;
-  return `<header class="site-header"><div class="nav-inner">${brand(locale)}<nav class="nav-links" aria-label="${e(t.nav.main)}">${['download','documentation'].map(p=>`<a href="${route(locale,p)}"${p===page?' aria-current="page"':''}>${e(t.nav[p])}</a>`).join('')}<a href="${demo}">${e(t.nav.demo)}${icon('external')}</a></nav><div class="nav-tools">${languageMenu(locale,page)}<a class="icon-button" href="${repo}" aria-label="${e(t.nav.github)}">${github}</a></div></div></header>`;
+  return `<header class="site-header"><div class="nav-inner">${brand(locale)}<nav class="nav-links" aria-label="${e(t.nav.main)}">${['download','documentation'].map(p=>`<a href="${route(locale,p)}"${p===page?' aria-current="page"':''}>${e(t.nav[p])}</a>`).join('')}<a href="${demo}">${e(t.nav.demo)}${icon('external')}</a></nav><div class="nav-tools">${languageMenu(locale,page)}<a class="icon-button" href="${repo}" target="_blank" rel="noopener noreferrer" aria-label="${e(t.nav.github)}">${github}</a></div></div></header>`;
 }
 function home(locale) {
   const t=content[locale],h=t.home;
