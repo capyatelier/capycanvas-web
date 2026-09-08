@@ -48,7 +48,7 @@ function render(locale,page) {
 <title>${e(title)}</title><meta name="description" content="${e(p.meta||p.text)}">
 ${page==='404'?'<meta name="robots" content="noindex">':`<link rel="canonical" href="${canonical}">${Object.keys(languages).map(code=>`<link rel="alternate" hreflang="${content[code].lang}" href="${origin+route(code,page)}">`).join('')}<link rel="alternate" hreflang="x-default" href="${origin+route('en',page)}">`}
 <meta property="og:type" content="website"><meta property="og:site_name" content="Capy Canvas"><meta property="og:title" content="${e(title)}"><meta property="og:description" content="${e(p.meta||p.text)}"><meta property="og:locale" content="${t.locale}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="${origin}/assets/workspace-light.webp"><meta property="og:image:width" content="1440"><meta property="og:image:height" content="810"><meta property="og:image:alt" content="${e(t.home.screenshot)}"><meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#fafafb" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#333333" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ededed" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#333333" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/style.css"><script src="/assets/language.js"></script>
 </head><body><a class="skip" href="#main">${e(t.nav.skip)}</a>${header(locale,page)}${body}</body></html>
 `;

@@ -33,7 +33,7 @@ try {
     check(metrics.scroll<=width,`Horizontal overflow ${label}: ${JSON.stringify(metrics)}`);
     check(metrics.bounds.length===0,`Clipped text ${label}: ${metrics.bounds}`);
     check(metrics.lang===locale,`Wrong language ${label}`);
-    check(metrics.bg===(theme==='light'?'rgb(250, 250, 251)':'rgb(51, 51, 51)'),`Wrong theme ${label}`);
+    check(metrics.bg===(theme==='light'?'rgb(237, 237, 237)':'rgb(51, 51, 51)'),`Wrong theme ${label}`);
     check(metrics.labels&&metrics.headings===1&&!metrics.broken,`Accessibility/asset basics ${label}`);
     check(metrics.borders.length===0,`Unexpected borders ${label}: ${metrics.borders}`);
     if(page==='home') {
