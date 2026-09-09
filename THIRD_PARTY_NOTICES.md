@@ -11,6 +11,8 @@ The capybara SVG, rounded favicon, and genuine application screenshots originate
 Capy Canvas contributors. Original application code and non-brand assets are
 MIT OR Apache-2.0; the mark is subject to the separate terms in BRANDING.md.
 Copies of both standard licenses and the branding terms accompany the built site.
+`site/assets/capybara.svg` is the application's
+`apps/layer-web/icons/layer-zen-looking-up-symbolic.svg`.
 `site/assets/favicon.png` is the application's packaged `icon-32.png`, generated
 by `apps/layer-web/package.mjs` with rounded corners and a gray background.
 `site/assets/capture.json` records the application source revision used for the
