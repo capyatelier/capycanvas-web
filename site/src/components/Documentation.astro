@@ -1,0 +1,14 @@
+---
+import { content } from '../data/content.mjs';
+import type { Locale } from '../lib/site';
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const t = content[locale].documentation;
+---
+<main id="main" class="page documentation">
+  <h1>{t.title}</h1>
+  <p class="lead">{t.intro}</p>
+  <section><h2>{t.now}</h2><ul>{t.built.map(item => <li>{item}</li>)}</ul></section>
+  <section><h2>{t.next}</h2><ul>{t.planned.map(item => <li>{item}</li>)}</ul></section>
+  <section><h2>{t.focus}</h2><p>{t.direction}</p></section>
+</main>

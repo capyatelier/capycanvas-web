@@ -13,11 +13,11 @@ Protected names: **Capy Canvas**, **CapyCanvas**, **Capy Atelier**, and
 
 Designated artwork:
 
-- `site/assets/capybara.svg`, the original owner-contributed capybara mark from
+- `site/public/assets/capybara.svg`, the original owner-contributed capybara mark from
   the Capy Canvas application.
 - Copies of that mark in generated `docs/assets/capybara.svg`,
-  `docs/assets/favicon.svg`, the generated HTML, and the app screenshots
-  `site/assets/workspace-*.webp` and their copies in `docs/assets/`.
+  `site/public/assets/favicon.png`, `docs/assets/favicon.png`, the generated HTML,
+  and the app screenshots `site/public/assets/workspace-*.webp` and their copies in `docs/assets/`.
   Only the embedded mark is reserved in screenshots; the interface and
   watercolor squiggles remain MIT OR Apache-2.0.
 

@@ -1,5 +1,5 @@
 // Generic interface symbols are original geometric SVGs; brand marks are attributed in THIRD_PARTY_NOTICES.md.
-const paths = {
+export const paths = {
   arrow: '<path d="M5 12h14m-5-5 5 5-5 5"/>',
   external: '<path d="M7 17 17 7M7 7h10v10"/>',
   chevron: '<path d="m6 9 6 6 6-6"/>',
@@ -16,4 +16,3 @@ const paths = {
   mac: '<rect x="2" y="3" width="20" height="14" rx="2"/><path d="M9 17v4m6-4v4m-8 0h10M2 13h20"/>',
 };
 export const github = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 .297a12 12 0 0 0-3.793 23.384c.6.111.82-.261.82-.577v-2.234c-3.338.726-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.085 1.839 1.237 1.839 1.237 1.07 1.835 2.809 1.305 3.493.998.108-.776.418-1.305.762-1.605-2.665-.303-5.467-1.334-5.467-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.323 3.301 1.23a11.52 11.52 0 0 1 6.008 0c2.291-1.553 3.297-1.23 3.297-1.23.655 1.652.243 2.873.119 3.176.769.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.625-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.216.694.825.576A12 12 0 0 0 12 .297Z"/></svg>';
-export const icon = (name, className = '') => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"${className ? ` class="${className}"` : ''}>${paths[name]}</svg>`;

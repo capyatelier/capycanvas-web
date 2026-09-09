@@ -1,0 +1,23 @@
+---
+import { locales, route, type Locale, type SitePage } from '../lib/site';
+interface Props { locale: Locale; page: SitePage }
+const { locale, page } = Astro.props;
+const languageUrls = Object.fromEntries(locales.map(code => [code, route(code, page)]));
+---
+<!-- GitHub Pages cannot inspect request headers. Run before paint using Astro's generated URLs. -->
+<script is:inline define:vars={{ current: locale, page, languageUrls }}>
+  const supported = Object.keys(languageUrls);
+  let saved;
+  try { saved = localStorage.getItem('capycanvas.language'); } catch { /* Storage can be disabled. */ }
+  if (!supported.includes(saved)) saved = null;
+  // Explicit translated URLs win; ?lang=en overrides detection even without storage.
+  if (page !== '404' && current === 'en') {
+    const query = new URLSearchParams(location.search).get('lang');
+    const requested = supported.includes(query) ? query : null;
+    const detected = (navigator.languages || [navigator.language])
+      .map(value => value.toLowerCase().split(/[-_]/)[0])
+      .find(value => supported.includes(value)) || 'en';
+    const locale = requested || saved || detected;
+    if (locale !== current) location.replace(languageUrls[locale] + location.search + location.hash);
+  }
+</script>

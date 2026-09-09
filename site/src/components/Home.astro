@@ -1,0 +1,17 @@
+---
+import { content } from '../data/content.mjs';
+import { appUrl, route, type Locale } from '../lib/site';
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const t = content[locale];
+---
+<main id="main" class="hero">
+  <h1 class="visually-hidden">{t.home.title}</h1>
+  <picture class="workspace"><source media="(prefers-color-scheme: dark)" srcset="/assets/workspace-dark.webp" /><img src="/assets/workspace-light.webp" width="1440" height="810" alt={t.home.screenshot} fetchpriority="high" /></picture>
+  <p class="home-description">{t.home.description}</p>
+  <div class="actions">
+    <a class="button primary" href={appUrl}>{t.nav.webDemo}</a>
+    <a class="button" href={route(locale, 'download')}>{t.nav.download}</a>
+    <a class="button" href={route(locale, 'documentation')}>{t.nav.documentation}</a>
+  </div>
+</main>

@@ -1,0 +1,30 @@
+---
+import { content } from '../data/content.mjs';
+import { route, appUrl, repositoryUrl, type Locale, type SitePage } from '../lib/site';
+import { github } from '../lib/icons';
+import capybara from '../../public/assets/capybara.svg?raw';
+import Icon from './Icon.astro';
+import LanguageMenu from './LanguageMenu.astro';
+interface Props { locale: Locale; page: SitePage }
+const { locale, page } = Astro.props;
+const t = content[locale];
+const brandSvg = capybara.replace('<svg ', '<svg aria-hidden="true" ');
+const navPages = ['download', 'documentation'] as const;
+---
+{page === 'home' ? (
+  <div class="home-top"><LanguageMenu locale={locale} page={page} /></div>
+) : (
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href={route(locale)} aria-label={`Capy Canvas · ${t.nav.home}`}><Fragment set:html={brandSvg} /><span>Capy Canvas</span></a>
+      <nav class="nav-links" aria-label={t.nav.main}>
+        {navPages.map(p => <a href={route(locale, p)} aria-current={p === page ? 'page' : undefined}>{t.nav[p]}</a>)}
+        <a href={appUrl}>{t.nav.webDemo}<Icon name="external" /></a>
+      </nav>
+      <div class="nav-tools">
+        <LanguageMenu locale={locale} page={page} />
+        <a class="icon-button" href={repositoryUrl} target="_blank" rel="noopener noreferrer" aria-label={t.nav.github} set:html={github} />
+      </div>
+    </div>
+  </header>
+)}

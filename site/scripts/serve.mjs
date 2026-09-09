@@ -3,8 +3,8 @@ import { readFile, stat } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
-export async function serve(port = 0) {
-  const root = fileURLToPath(new URL('../../docs/', import.meta.url));
+export async function serve(port = 0, directory = process.env.SITE_OUTPUT || fileURLToPath(new URL('../../docs/', import.meta.url))) {
+  const root = resolve(directory);
   const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.xml': 'application/xml', '.json': 'application/json' };
   const server = createServer(async (req,res) => {
     try {

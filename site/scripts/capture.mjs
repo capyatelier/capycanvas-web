@@ -6,7 +6,7 @@ import { browser } from './browser.mjs';
 // Each squiggle uses browser pen events and the app's actual watercolor renderer.
 // UI and artwork are captured together, with no screenshot compositing.
 const b = await browser({ gpu: true, width: 1440, height: 810 });
-await mkdir(new URL('../assets/', import.meta.url), { recursive: true });
+await mkdir(new URL('../public/assets/', import.meta.url), { recursive: true });
 try {
   await b.navigate(process.env.APP_URL || 'http://127.0.0.1:4183');
   try { await b.until('!!window.layerApp && (!layerApp.app.gpu_ready || layerApp.app.gpu_ready())'); }
@@ -35,9 +35,9 @@ try {
     await b.evaluate('Promise.all([...document.images].map(i=>i.decode())).then(()=>null)');
     await b.settle();
     const shot=await b.call('Page.captureScreenshot',{format:'webp',quality:90});
-    await writeFile(new URL(`../assets/workspace-${theme}.webp`,import.meta.url),Buffer.from(shot.data,'base64'));
+    await writeFile(new URL(`../public/assets/workspace-${theme}.webp`,import.meta.url),Buffer.from(shot.data,'base64'));
   }
   const revision=execFileSync('git',['-C','../draw','rev-parse','HEAD'],{encoding:'utf8'}).trim();
-  await writeFile(new URL('../assets/capture.json',import.meta.url),JSON.stringify({source:'https://github.com/capyatelier/capycanvas',revision,packageAssetDirectory:await b.evaluate("document.querySelector('script[type=module]').src.split('/').slice(-3,-1).join('/')"),width:1440,height:810,artwork:'Three watercolor squiggles drawn through actual browser pen input using brush 20 (Watercolor Wash).',screenshots:['workspace-light.webp','workspace-dark.webp']},null,2)+'\n');
+  await writeFile(new URL('../public/assets/capture.json',import.meta.url),JSON.stringify({source:'https://github.com/capyatelier/capycanvas',revision,packageAssetDirectory:await b.evaluate("document.querySelector('script[type=module]').src.split('/').slice(-3,-1).join('/')"),width:1440,height:810,artwork:'Three watercolor squiggles drawn through actual browser pen input using brush 20 (Watercolor Wash).',screenshots:['workspace-light.webp','workspace-dark.webp']},null,2)+'\n');
   console.log('Captured watercolor squiggles in both themes from the real GPU workspace.');
 } catch(error) {console.error(b.errors.join("\n"));throw error;} finally { await b.close(); }

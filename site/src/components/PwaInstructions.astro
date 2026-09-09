@@ -1,0 +1,38 @@
+---
+import { content } from '../data/content.mjs';
+import { appUrl, type Locale } from '../lib/site';
+import Icon from './Icon.astro';
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const p = content[locale].download.pwa;
+const osIcons = { windows: 'windows', macos: 'mac', linux: 'linux', chromeos: 'globe', android: 'android', ios: 'ipad', other: 'globe' } as const;
+const systems = Object.keys(p.systems) as (keyof typeof osIcons)[];
+---
+<section class="pwa" aria-labelledby="pwa-title">
+  <h2 id="pwa-title">{p.title}</h2>
+  <p>{p.intro}</p>
+  <div class="pwa-browser" hidden>
+    <details id="pwa-os" class="pwa-os" data-value="other">
+      <summary aria-haspopup="listbox" aria-labelledby="pwa-os-label pwa-os-current"><span id="pwa-os-label" class="visually-hidden">{p.os}</span><span id="pwa-os-current"><Icon name="globe" /><span>{p.systems.other}</span></span><Icon name="chevron" class="chevron" /></summary>
+      <div class="pwa-os-options" role="listbox" aria-label={p.os}>
+        {systems.map(value => <button type="button" role="option" data-os={value} aria-selected={value === 'other' ? 'true' : 'false'} tabindex="-1"><Icon name={osIcons[value]} /><span>{p.systems[value]}</span></button>)}
+      </div>
+    </details>
+    <select id="pwa-browser" aria-label={p.browser} aria-controls="pwa-instructions">
+      {Object.entries(p.browsers).map(([value, name]) => <option value={value} selected={value === 'other'}>{name}</option>)}
+    </select>
+  </div>
+  <div id="pwa-instructions" aria-live="polite">
+    {Object.entries(p.fallback).map(([id, text]) => <p data-pwa-fallback={id} hidden>{text}</p>)}
+    {Object.entries(p.guides).map(([id, guide]) => (
+      <div data-pwa-guide={id} hidden={id !== 'generic'}>
+        <ol><li><a href={appUrl} target="_blank" rel="noopener noreferrer">{p.open}</a></li><li>{guide.step}</li></ol>
+        {'note' in guide && guide.note && <p class="pwa-note">{guide.note}</p>}
+      </div>
+    ))}
+  </div>
+</section>
+
+<script>
+  import '../scripts/pwa.js';
+</script>

@@ -1,5 +1,5 @@
 import { profiles } from './pwa-profiles.mjs';
-import { pwaContent } from '../site/pwa-content.mjs';
+import { pwaContent } from '../site/src/data/pwa-content.mjs';
 
 export async function checkPwaInstructions(b, host, check) {
   for (const [index, [name, profile, guide, fallback, os, browser]] of profiles.entries()) {

@@ -1,0 +1,18 @@
+---
+import type { GetStaticPaths, InferGetStaticPropsType } from 'astro';
+import { routes } from '../lib/site';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import Home from '../components/Home.astro';
+import Download from '../components/Download.astro';
+import Documentation from '../components/Documentation.astro';
+
+export const getStaticPaths = (() => routes.map(({ locale, page, path }) => ({
+  params: { path: path.slice(1, -1) || undefined },
+  props: { locale, page },
+}))) satisfies GetStaticPaths;
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+const { locale, page } = Astro.props;
+const PageContent = { home: Home, download: Download, documentation: Documentation }[page];
+---
+<SiteLayout locale={locale} page={page}><PageContent locale={locale} /></SiteLayout>

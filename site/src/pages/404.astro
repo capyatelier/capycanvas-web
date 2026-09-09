@@ -1,0 +1,14 @@
+---
+import { content } from '../data/content.mjs';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import Icon from '../components/Icon.astro';
+const t = content.en.notFound;
+---
+<SiteLayout locale="en" page="404">
+  <main class="page error-page" id="main">
+    <p class="error-code">404</p>
+    <h1>{t.title}</h1>
+    <p class="lead">{t.text}</p>
+    <a class="button primary" href="/">{t.action}<Icon name="arrow" /></a>
+  </main>
+</SiteLayout>

@@ -2,9 +2,10 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile, readdir, stat } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
-import { content, languages } from '../site/content.mjs';
+import { createHash } from 'node:crypto';
+import { content, languages } from '../site/src/data/content.mjs';
 
-const root=resolve('docs');
+const root=resolve(process.env.SITE_OUTPUT || 'docs');
 const read=path=>readFile(join(root,path),'utf8');
 const pages=['home','download','documentation'];
 const route=(l,p)=>`${l==='en'?'':l+'/'}${p==='home'?'':p+'/'}`;
@@ -13,11 +14,25 @@ for(const locale of Object.keys(languages)) {
   test(`${locale}: translation coverage matches English`,()=>assert.deepEqual(shape(content[locale]),shape(content.en)));
   for(const page of pages) test(`${locale}/${page}: static content, metadata and navigation`,async()=>{
     const html=await read(route(locale,page)+'index.html');
+    const modules=await Promise.all([...html.matchAll(/<script type="module"([^>]*)>([\s\S]*?)<\/script>/g)].map(async ([,attributes,code])=>{
+      const source=attributes.match(/src="([^"]+)"/)?.[1];
+      return source?read(new URL(source,'https://capycanvas.art').pathname):code;
+    }));
     assert.match(html,new RegExp(`<html lang="${content[locale].lang}"`));
     assert.equal((html.match(/<h1(?: [^>]*)?>/g)||[]).length,1);
     assert.equal((html.match(/<main /g)||[]).length,1);
     assert.equal((html.match(/rel="alternate"/g)||[]).length,5);
     assert.match(html,/<meta name="description" content=".+?">/);
+    assert.ok(html.includes(`<link rel="canonical" href="https://capycanvas.art/${route(locale,page)}">`));
+    for(const code of Object.keys(languages)) {
+      const path='/'+route(code,page);
+      assert.ok(html.includes(`<link rel="alternate" hreflang="${content[code].lang}" href="https://capycanvas.art${path}">`));
+      assert.ok(html.includes(`href="${path}${code==='en'?'?lang=en':''}" lang="${content[code].lang}" hreflang="${content[code].lang}" data-language="${code}"`));
+    }
+    assert.match(html,/<meta name="color-scheme" content="light dark">/);
+    assert.match(html,/<meta name="darkreader-lock">/);
+    const ids=[...html.matchAll(/\sid="([^"]+)"/g)].map(([,id])=>id);
+    assert.equal(new Set(ids).size,ids.length,'Component IDs are unique');
     assert.match(html,/href="https:\/\/editor\.capycanvas\.art\/"/);
     assert.match(html,/data-language="en"/); assert.match(html,/data-language="ja"/); assert.match(html,/data-language="zh"/); assert.match(html,/data-language="ko"/);
     assert.ok(html.includes(content[locale][page].title));
@@ -34,6 +49,7 @@ for(const locale of Object.keys(languages)) {
     } else {
       assert.match(html,/class="nav-links"/); assert.match(html,/aria-current="page"/);
       assert.match(html,/href="https:\/\/github.com\/capyatelier\/capycanvas"/);
+      assert.match(html,/href="https:\/\/github.com\/capyatelier\/capycanvas" target="_blank" rel="noopener noreferrer"/);
     }
     if(page==='download') {
       for(const platform of ['iPadOS','Android','Linux','Windows','macOS']) assert.ok(html.includes(`<h2>${platform}</h2>`));
@@ -41,7 +57,7 @@ for(const locale of Object.keys(languages)) {
       assert.ok(html.indexOf('class="pwa"')>html.indexOf('<h2>macOS</h2>'));
       assert.ok(html.includes(pwa.intro));
       assert.doesNotMatch(html,/Open the installed app once online before using it offline\./);
-      assert.match(html,/<script type="module" src="\/assets\/pwa.js"><\/script>/);
+      assert.ok(modules.some(code=>code.includes('[data-pwa-guide]')), 'PWA behavior is bundled with the download component');
       assert.match(html,/<div data-pwa-guide="generic"><ol>/);
       assert.match(html,/<div class="pwa-browser" hidden><details id="pwa-os"/);
       assert.match(html,/<select id="pwa-browser" aria-label=".+?"/);
@@ -51,7 +67,10 @@ for(const locale of Object.keys(languages)) {
         assert.ok(html.includes(`data-pwa-guide="${id}"`));
         assert.ok(html.includes(guide.step));
       }
-    } else assert.doesNotMatch(html,/src="\/assets\/pwa.js"|class="pwa"/);
+    } else {
+      assert.doesNotMatch(html,/class="pwa"/);
+      assert.ok(modules.every(code=>!code.includes('[data-pwa-guide]')), 'Other pages do not load PWA behavior');
+    }
     if(page==='documentation') {
       for(const text of [...content[locale].documentation.built,...content[locale].documentation.planned,content[locale].documentation.direction]) assert.ok(html.includes(text));
       assert.equal((html.match(/<section>/g)||[]).length,3);
@@ -83,6 +102,10 @@ test('real screenshots are distinct, compressed WebP images with provenance',asy
   for(const data of images) { assert.equal(data.subarray(0,4).toString(),'RIFF'); assert.equal(data.subarray(8,12).toString(),'WEBP'); assert.ok(data.length>10000&&data.length<500000); }
   assert.notDeepEqual(images[0],images[1]);
   const capture=JSON.parse(await read('assets/capture.json')); assert.match(capture.revision,/^[a-f0-9]{40}$/); assert.match(capture.artwork,/Watercolor Wash/);
+});
+test('favicon cache version matches the shipped icon',async()=>{
+  const hash=createHash('sha256').update(await readFile(join(root,'assets/favicon.png'))).digest('hex').slice(0,12);
+  for(const path of (await files(root)).filter(p=>p.endsWith('.html'))) assert.ok((await readFile(path,'utf8')).includes(`href="/assets/favicon.png?v=${hash}"`));
 });
 test('no external script, style, font, iframe, tracking or runtime dependency',async()=>{
   for(const path of (await files(root)).filter(p=>p.endsWith('.html'))) assert.doesNotMatch(await readFile(path,'utf8'),/<(?:script|iframe)[^>]*src="https?:|<link[^>]*rel="stylesheet"[^>]*href="https?:/);

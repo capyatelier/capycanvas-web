@@ -1,0 +1,18 @@
+---
+import { content } from '../data/content.mjs';
+import type { Locale } from '../lib/site';
+import Icon from './Icon.astro';
+import PwaInstructions from './PwaInstructions.astro';
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const t = content[locale].download;
+const platformIcons = ['ipad', 'android', 'linux', 'windows', 'mac'] as const;
+---
+<main id="main" class="page">
+  <h1>{t.title}</h1>
+  <p class="lead">{t.intro}</p>
+  <ul class="platforms" aria-label={t.platformsLabel}>
+    {t.platforms.map((name, i) => <li class="platform"><Icon name={platformIcons[i]} /><h2>{name}</h2><p>{t.status}</p></li>)}
+  </ul>
+  <PwaInstructions locale={locale} />
+</main>

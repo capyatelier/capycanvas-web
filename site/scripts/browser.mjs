@@ -3,7 +3,7 @@ import { mkdtemp, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
-// A small Chrome DevTools Protocol client keeps the build and tests dependency-free.
+// A small Chrome DevTools Protocol client for browser checks and real app captures.
 export async function browser({ gpu = false, width = 1440, height = 1000 } = {}) {
   const profile = await mkdtemp(join(tmpdir(), 'capy-site-chrome-'));
   const args = ['--remote-debugging-pipe', `--user-data-dir=${profile}`,

@@ -4,13 +4,24 @@
   "private": true,
   "type": "module",
   "license": "(MIT OR Apache-2.0)",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
-    "build": "node site/build.mjs",
+    "build": "astro check --root site && astro build --root site",
+    "dev": "cd site && astro dev",
     "test": "node --test --test-isolation=none tests/*.test.mjs",
     "test:browser": "node tests/browser.mjs",
+    "test:migration": "node tests/migration.mjs",
     "check": "npm run build && npm test && npm run test:browser",
     "serve": "node site/scripts/serve.mjs",
     "capture": "node site/scripts/capture.mjs"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "@types/node": "24.13.4",
+    "astro": "7.3.2",
+    "pngjs": "7.0.0",
+    "typescript": "6.0.3"
   }
 }

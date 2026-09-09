@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { detectInstallGuide } from '../site/assets/pwa.js';
+import { detectInstallGuide } from '../site/src/scripts/pwa.js';
 
 import { profiles } from './pwa-profiles.mjs';
 
