@@ -77,6 +77,7 @@ for(const locale of Object.keys(languages)) {
       assert.ok(html.includes(docsUI[locale].intro));
       assert.ok(html.includes(docsUI[locale].notice));
       assert.equal((html.match(/class="phase-card"/g)||[]).length,4);
+      assert.ok(html.includes(`href="/${route(locale, 'documentation')}illustration/"`), 'The overview links to the tutorial introduction');
       assert.match(html, /class="docs-sidebar"/);
       for (const {slug} of docTopics) assert.ok(html.includes(`href="/${route(locale, 'documentation')}${slug}/"`));
     }

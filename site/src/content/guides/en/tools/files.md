@@ -3,7 +3,11 @@ title: "Saving and exporting"
 description: "Keep an editable document and make a separate image for sharing."
 figure: "The layered working document beside an exported image without editing controls."
 related: ["illustration/render", "layers/basics"]
+purpose: "Keep a working document for editing and export an image for sharing. The document needs to retain layers and masks so later corrections remain possible; the exported image records the visible result. Saving these separately avoids losing the structure used in the tutorial."
+techniques: ["Save a document that preserves the layer and mask setup.", "Export the visible illustration without merging the working layers.", "Check transferred files in the destination app or device before removing the original."]
 ---
+
+Document saving and export controls are still in development. The supported formats and their layer compatibility will be listed here when they are available. The following sections describe the planned workflow.
 
 ## Keep the working document editable
 

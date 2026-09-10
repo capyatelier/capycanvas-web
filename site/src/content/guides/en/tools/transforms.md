@@ -3,7 +3,11 @@ title: "Transformations"
 description: "Reposition a layer or part of a sketch without changing unrelated paint."
 figure: "A selected hand repositioned on Sketch while the other layers remain unchanged."
 related: ["workspace", "illustration/draft"]
+purpose: "Use a transform to change the position or shape of existing paint. It can affect a whole layer or just a selected part, such as a hand in the sketch. This changes the document, unlike rotating the canvas view for a more comfortable drawing angle."
+techniques: ["Select the layer and area that should change.", "Combine moving, scaling, and rotation in one adjustment.", "Use view controls instead when you only want to change how you see the artwork."]
 ---
+
+The transform controls and their shortcuts are still being developed. The steps below describe the intended editing behavior; control names will be added once they are settled.
 
 ## Choose the content to transform
 

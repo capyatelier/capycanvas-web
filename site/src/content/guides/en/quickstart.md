@@ -3,6 +3,8 @@ title: "Quickstart"
 description: "Choose a version, check your pen, and start the illustration tutorial."
 figure: "The brush list and Layers panel beside the canvas."
 related: ["workspace", "illustration/draft"]
+purpose: "Capy Canvas needs GPU access and a pen that reports pressure to make the most of its brushes. This page helps you choose the available version and check your pen before starting the illustration tutorial."
+techniques: ["Find the available installation options and try the web version.", "Check whether your pen's pressure reaches the editor.", "Open the tutorial, or adjust the workspace if the default arrangement is uncomfortable."]
 ---
 
 ## Choose a version
@@ -13,10 +15,10 @@ Capy Canvas uses your GPU to render brushes. For drawing, use a pressure-sensiti
 
 ## Check your pen
 
-Open a document, choose a pencil brush, and make a stroke that starts lightly, gets heavier, and fades out. The mark should respond to the pressure. If it stays uniform, check [input settings](/docs/advanced/input/) before adjusting the brush itself.
+Open a document, choose the built-in **Pencil** preset, and make a stroke that starts lightly, gets heavier, and fades out. The mark should respond to the pressure. If it stays uniform, check [input settings](/docs/advanced/input/) before adjusting the brush itself.
 
 ## Start drawing
 
-Continue with [Sketching](/docs/illustration/draft/). The tutorial uses separate layers for the sketch, line art, and paint, so each can be revised without redrawing the others. It introduces the relevant controls as you need them.
+Open the [illustration tutorial](/docs/illustration/). Its introduction describes the intended result and the tools used to take a pencil sketch through inking and color.
 
 If the default layout gets in your way, [Workspace and canvas](/docs/workspace/) explains how to move panels and toolbars or hide them with Zen mode. Brush customization can wait until you have a preset you want to change.

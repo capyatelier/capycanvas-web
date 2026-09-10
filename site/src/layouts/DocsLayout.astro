@@ -18,10 +18,10 @@ const guides = await getGuides(locale);
         <a class="docs-overview" href={route(locale, 'documentation')} aria-current={!slug ? 'page' : undefined}>{t.overview}</a>
         {docGroups.map(group => <div class="docs-nav-group">
           <p>{t.groups[group as keyof typeof t.groups]}</p>
-          <ul>{guides.filter(guide => guide.group === group).map((guide, i) => <li>
+          <ul>{guides.filter(guide => guide.group === group).map(guide => <li>
             <a href={route(locale, 'documentation', guide.slug)} aria-current={slug === guide.slug ? 'page' : undefined}>
-              {group === 'illustration' && <span class="docs-step" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>}
-              <span>{guide.entry.data.title}</span>
+              {guide.step && <span class="docs-step" aria-hidden="true">{String(guide.step).padStart(2, '0')}</span>}
+              <span>{guide.entry.data.navTitle ?? guide.entry.data.title}</span>
             </a>
           </li>)}</ul>
         </div>)}

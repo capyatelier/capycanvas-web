@@ -40,6 +40,7 @@ export async function checkDocumentation(b, host, check) {
         toc: [...document.querySelectorAll('.docs-toc a')].map(element => decodeURIComponent(element.hash.slice(1))),
         background: getComputedStyle(document.body).backgroundColor,
         image: document.querySelector('.guide-figure img')?.currentSrc,
+        sequence: ['.docs-lead', '.guide-techniques', '.guide-figure', '.guide-prose'].map(selector => document.querySelector(selector).getBoundingClientRect().top),
       };
     })()`);
     const label = `${width}/${theme}/${locale}/${slug}`;
@@ -48,8 +49,9 @@ export async function checkDocumentation(b, host, check) {
     check(metrics.menuOpen === (width > 800), `Responsive documentation menu ${label}`);
     check(metrics.headings.length > 0 && metrics.headings.every(id => metrics.toc.includes(id)), `Guide section anchors ${label}`);
     check(metrics.background === (theme === 'dark' ? 'rgb(51, 51, 51)' : 'rgb(237, 237, 237)'), `Guide theme ${label}`);
+    check(metrics.sequence.every((top, index) => index === 0 || top > metrics.sequence[index - 1]), `Purpose and techniques precede steps ${label}`);
     if (slug === 'workspace') check(metrics.image.endsWith(`workspace-${theme}.webp`), `Guide screenshot follows appearance ${label}`);
-    if ((locale === 'en' && ['illustration/mask', 'workspace'].includes(slug)) || (locale === 'ko' && slug === 'advanced/input')) {
+    if ((locale === 'en' && ['illustration', 'illustration/mask', 'workspace'].includes(slug)) || (locale === 'ko' && slug === 'advanced/input')) {
       await b.screenshot(`artifacts/review/guide-${width}-${theme}-${locale}-${slug.replaceAll('/', '-')}.png`, true);
     }
     results.push(label);
@@ -117,7 +119,7 @@ export async function checkDocumentation(b, host, check) {
   for (const locale of ['en', 'ja', 'zh', 'ko']) {
     await b.navigate(host.url + route(locale, 'advanced/input'));
     check(await b.evaluate(`document.documentElement.lang === '${content[locale].lang}' && document.querySelectorAll('[data-doc-platform]:not([hidden])').length === 5 && document.querySelector('.docs-platform').hidden`), `All platform content survives without JavaScript in ${locale}`);
-    check(await b.evaluate("document.querySelector('.docs-menu').open && document.querySelectorAll('.docs-navigation a').length === 16 && document.querySelectorAll('.guide-prose h2').length > 0"), 'Static guides and mobile navigation are usable without JavaScript');
+    check(await b.evaluate(`document.querySelector('.docs-menu').open && document.querySelectorAll('.docs-navigation a').length === ${docTopics.length + 1} && document.querySelectorAll('.guide-prose h2').length > 0`), 'Static guides and mobile navigation are usable without JavaScript');
   }
   await b.call('Emulation.setScriptExecutionDisabled', { value: false });
   await b.evaluate('localStorage.clear()');

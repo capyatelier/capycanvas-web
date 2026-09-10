@@ -3,11 +3,13 @@ title: "Brush engine"
 description: "Adjust a preset's marks, pressure response, and paint buildup."
 figure: "The same test stroke before and after changing one brush parameter."
 related: ["advanced/custom-brushes", "advanced/input"]
+purpose: "Brush presets determine how a mark is built and how it responds to your pen. Adjust the engine when an existing preset is close to what you need but its spacing, paint buildup, or pressure response needs changing. Start with one repeatable stroke so you can judge each adjustment."
+techniques: ["Compare a copied preset with the original under the same drawing conditions.", "Change tip spacing and texture to control the marks within a stroke.", "Separate opacity, flow, and pressure response when adjusting paint buildup."]
 ---
 
 ## Start with a repeatable stroke
 
-Capy Canvas renders brushes on the GPU, while the preset determines how each stroke is built. Duplicate a preset that is close to the result you need, then use the same size, color, and test stroke when comparing changes. A slow curve with pressure increasing and decreasing exposes more of the response than a quick tap.
+Duplicate a preset that is close to the result you need, then use the same size, color, and test stroke when comparing changes. A slow curve with pressure increasing and decreasing exposes more of the response than a quick tap.
 
 Keep the test layer's opacity at full strength and its blending mode at Normal. Otherwise layer settings can obscure the brush change. [Custom brushes](/docs/advanced/custom-brushes/) covers keeping the modified preset.
 

@@ -20,12 +20,16 @@ const related = entry.data.related.map(slug => {
   return guide;
 });
 ---
-<DocsLayout locale={locale} slug={slug} headings={headings}>
+<DocsLayout locale={locale} slug={slug} headings={[{ slug: 'guide-techniques', text: t.techniques, depth: 2 }, ...headings]}>
   <article class="guide-article">
     <span class="guide-status">{t.outline}</span>
     <h1>{entry.data.title}</h1>
-    <p class="docs-lead">{entry.data.description}</p>
+    <p class="docs-lead">{entry.data.purpose}</p>
     <p class="docs-notice">{t.notice}</p>
+    <section class="guide-techniques" aria-labelledby="guide-techniques">
+      <h2 id="guide-techniques">{t.techniques}</h2>
+      <ul>{entry.data.techniques.map(technique => <li>{technique}</li>)}</ul>
+    </section>
     <GuideFigure locale={locale} caption={entry.data.figure} image={entry.data.image} />
     <div class="guide-prose"><Content /></div>
     {slug === 'advanced/input' && <PlatformNotes locale={locale} />}

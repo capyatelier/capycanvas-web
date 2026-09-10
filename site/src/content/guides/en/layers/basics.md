@@ -3,6 +3,8 @@ title: "Layer basics"
 description: "Choose the drawing target and keep revisions separate."
 figure: "Sketch, Line art, Hair, and Hair shading in the Layers panel."
 related: ["layers/masks", "layers/groups"]
+purpose: "Layers hold parts of the drawing separately. That separation matters when you want to move a hand, hide the sketch, or change a color without affecting the rest of the picture. This page explains how to choose the edit target and when to keep layers apart."
+techniques: ["Check the active layer before drawing, filling, or erasing.", "Use layer order, visibility, and opacity to control what appears in the image.", "Keep editable parts separate and merge only when that separation is no longer useful."]
 ---
 
 ## Choose where a stroke goes

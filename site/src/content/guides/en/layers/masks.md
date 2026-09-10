@@ -3,13 +3,17 @@ title: "Layer masks and clipping"
 description: "Choose how to restrict paint while keeping the parts you need editable."
 figure: "The same base shape edited with a mask, a clipped layer, and alpha lock."
 related: ["illustration/mask", "layers/basics"]
+purpose: "Masks, clipping, and alpha lock restrict paint in different ways. A mask edits what is visible, clipping confines a separate layer to a base shape, and alpha lock lets you recolor existing marks. Choose according to what you want to change and what you need to preserve."
+techniques: ["Use a mask when an outline needs to remain editable.", "Use clipping when shading should stay separate from its base color.", "Use alpha lock for direct recoloring, and selections for temporary limits on an edit."]
 ---
+
+Creating a mask from a selection is part of the planned workflow. Its control location will be documented when that operation is available.
 
 ## Edit an outline with a layer mask
 
 A layer mask controls which parts of a layer are visible. Select its thumbnail to edit visibility: black hides the layer, white reveals it, and gray makes it partly visible. Switch back to the paint thumbnail when you want to change the color itself.
 
-Use a mask when you expect to revise a boundary, such as the hair shape in [Masking](/docs/illustration/mask/). Hiding an edge preserves the paint underneath, so painting white on the mask can restore it. A mask cannot restore paint that was erased from the layer itself.
+Use a mask when you expect to revise a boundary, such as the hair shape in [Masking](/docs/illustration/mask/). That tutorial fills the whole paint layer before refining its mask, so hidden color is available when the outline expands. White reveals existing paint; it cannot reveal an unpainted area or restore pixels erased from the layer.
 
 ## Keep shading separate with clipping
 

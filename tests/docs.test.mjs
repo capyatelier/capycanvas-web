@@ -22,7 +22,8 @@ async function markdownFiles(dir) {
 
 test('the documentation collection has one page per topic and locale, with no orphaned guides', async () => {
   assert.deepEqual(docGroups, ['start', 'illustration', 'layers', 'tools', 'advanced']);
-  assert.deepEqual(docTopics.filter(topic => topic.group === 'illustration').map(topic => topic.slug), ['illustration/draft', 'illustration/ink', 'illustration/mask', 'illustration/render']);
+  assert.deepEqual(docTopics.filter(topic => topic.group === 'illustration').map(topic => topic.slug), ['illustration', 'illustration/draft', 'illustration/ink', 'illustration/mask', 'illustration/render']);
+  assert.deepEqual(docTopics.filter(topic => topic.step).map(topic => topic.step), [1, 2, 3, 4]);
   assert.equal(new Set(docTopics.map(topic => topic.slug)).size, docTopics.length);
   const files = await markdownFiles(source);
   assert.deepEqual(files.sort(), Object.keys(languages).flatMap(locale => docTopics.map(({ slug }) => join(source, locale, slug + '.md'))).sort());
@@ -44,6 +45,13 @@ for (const locale of Object.keys(languages)) {
     assert.match(html, /<article class="guide-article">/);
     assert.ok(html.includes(docsUI[locale].outline));
     assert.ok(html.includes(docsUI[locale].notice), 'Direct article visits include the draft feature status');
+    assert.ok(html.includes(`<p class="docs-lead">${escapeText(data.purpose)}</p>`), 'The guide opens with its practical purpose');
+    const techniques = html.match(/<section class="guide-techniques"[^>]*>([\s\S]*?)<\/section>/)?.[1];
+    assert.ok(techniques, 'Key techniques appear before the instructions');
+    for (const technique of data.techniques) assert.ok(techniques.includes(`<li>${escapeText(technique)}</li>`));
+    assert.ok(html.indexOf('class="docs-lead"') < html.indexOf('class="guide-techniques"'));
+    assert.ok(html.indexOf('class="guide-techniques"') < html.indexOf('class="guide-figure"'));
+    assert.ok(html.indexOf('class="guide-figure"') < html.indexOf('class="guide-prose"'));
     assert.equal((html.match(/<main\b/g) || []).length, 1);
     assert.equal((html.match(/<h1\b/g) || []).length, 1);
     assert.equal((html.match(/rel="alternate"/g) || []).length, 5);
@@ -66,9 +74,9 @@ for (const locale of Object.keys(languages)) {
     if (slug === 'quickstart') {
       assert.ok(links.includes(`${locale === 'en' ? '' : '/' + locale}/download/`), 'Setup links to current release availability');
       assert.ok(links.includes('https://editor.capycanvas.art/'), 'Setup links to the usable web version');
-      assert.ok(links.includes(route(locale, 'illustration/draft')), 'Setup leads directly to the tutorial');
+      assert.ok(links.includes(route(locale, 'illustration')), 'Setup leads to the introduction before the first stage');
     }
-    const nextStage = { 'illustration/draft': 'illustration/ink', 'illustration/ink': 'illustration/mask', 'illustration/mask': 'illustration/render', 'illustration/render': 'tools/files' }[slug];
+    const nextStage = { illustration: 'illustration/draft', 'illustration/draft': 'illustration/ink', 'illustration/ink': 'illustration/mask', 'illustration/mask': 'illustration/render', 'illustration/render': 'tools/files' }[slug];
     if (nextStage) assert.ok(links.includes(route(locale, nextStage)), 'The tutorial provides a contextual link to its next task');
     assert.equal((body.match(/<h2 /g) || []).length, (markdown.match(/^## /gm) || []).length);
     assert.ok((body.match(/<p>/g) || []).length >= 1);
@@ -88,6 +96,11 @@ for (const locale of Object.keys(languages)) {
     const active = html.match(/class="docs-navigation"[^>]*>([\s\S]*?)<\/nav>/)[1];
     assert.equal((active.match(/aria-current="page"/g) || []).length, 1);
     assert.ok(active.includes(`href="${route(locale, slug)}" aria-current="page"`));
+    assert.ok(active.includes(escapeText(docsUI[locale].groups.illustration)));
+    if (slug === 'illustration') {
+      assert.ok(active.includes(`<span>${escapeText(data.navTitle)}</span>`), 'The sidebar includes the tutorial introduction');
+      assert.deepEqual([...active.matchAll(/class="docs-step"[^>]*>(\d+)</g)].map(([, number]) => number), ['01', '02', '03', '04']);
+    }
     if (slug === 'advanced/input') {
       for (const system of Object.keys(docsUI[locale].systems)) {
         assert.ok(html.includes(`data-doc-platform="${system}"`));

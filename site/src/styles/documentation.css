@@ -44,6 +44,12 @@ html[data-page="documentation"] .nav-inner { max-width: 1320px; }
 .docs-back { display: inline-block; color: var(--muted); font-size: 12px; margin-bottom: 24px; }
 .docs-back:hover { color: var(--accent); }
 .guide-status { display: block; color: var(--muted); font-size: 11px; margin-bottom: 8px; }
+.guide-techniques { margin-top: 28px; font-size: 15px; line-height: 1.8; }
+.guide-techniques ul { margin: 0; padding-left: 22px; }
+.guide-techniques li + li { margin-top: 6px; }
+.docs-tutorial-start { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); }
+.docs-tutorial-start svg { width: 14px; height: 14px; }
+.docs-tutorial-start:hover { text-decoration: underline; text-underline-offset: 3px; }
 .guide-figure { margin: 28px 0 36px; }
 .guide-figure picture, .guide-figure img { display: block; width: 100%; height: auto; border-radius: 6px; }
 .guide-image-slot { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; min-height: 148px; background: color-mix(in srgb, var(--surface) 55%, transparent); border-radius: 6px; color: var(--muted); }
@@ -103,7 +109,7 @@ html[data-page="documentation"] .nav-inner { max-width: 1320px; }
   .docs-landing > section { margin-top: 32px; }
   .phase-grid { gap: 24px 16px; }
   .docs-journey h3 { font-size: 14px; }
-  .guide-prose { font-size: 14px; }
+  .guide-prose, .guide-techniques { font-size: 14px; }
   .guide-image-slot { min-height: 130px; }
   .guide-pagination { gap: 16px; font-size: 13px; }
 }

@@ -3,13 +3,15 @@ title: "Selections and fill"
 description: "Select a region, fill it on the right layer, and correct its edges."
 figure: "A hair selection read from Line art and filled on the separate Hair layer."
 related: ["illustration/draft", "illustration/mask"]
+purpose: "A selection limits where an edit can happen. It does not decide which layer receives the edit. This distinction lets you use an ink outline to find a region, then fill that region on a separate color layer without painting over the ink."
+techniques: ["Choose between drawing a boundary yourself and selecting from an existing outline or color.", "Set which layer a selection or fill reads for its boundaries.", "Correct gaps and edges, then clear the selection when the operation is complete."]
 ---
 
 ## Choose the selection method
 
 Use a freehand selection when you want to draw the boundary yourself, such as around part of a sketch that needs moving. Use automatic selection when an existing color region or enclosed outline provides the boundary. Add to or subtract from the selection to correct it without starting over.
 
-A selection limits where an operation can act; it does not choose which layer is edited. After selecting an area from the line art, select the intended base-color layer before filling it, as in [Masking](/docs/illustration/mask/).
+A selection limits where an operation can act; it does not choose which layer is edited. Select the intended base-color layer before filling the region or creating a mask from it. [Masking](/docs/illustration/mask/) uses the latter method to keep the boundary editable.
 
 ## Read one layer and fill another
 

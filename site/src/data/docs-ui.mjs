@@ -8,7 +8,7 @@ export const docsUI = {
     "onPage": "On this page",
     "groups": {
       "start": "Getting started",
-      "illustration": "Illustration",
+      "illustration": "Illustration tutorial",
       "layers": "Layers",
       "tools": "Tools and files",
       "advanced": "Advanced"
@@ -39,10 +39,12 @@ export const docsUI = {
     "platformNotes": {
       "windows": "Check pen pressure in your tablet driver's settings if it fails in more than one app. With multiple displays, map the tablet to the display showing Capy Canvas.",
       "mac": "Check the display mapping in your tablet settings before adjusting the brush. When assigning shortcuts, treat Command and Control as different keys; do not copy a Windows shortcut assignment without checking it.",
-      "linux": "For the GTK version, check your desktop's tablet mapping as well as the editor's input settings. Include whether you use Wayland or X11 when reporting cursor offsets or missing pressure.",
+      "linux": "For the web version, check tablet mapping in your desktop settings. When reporting missing pressure or a cursor offset, include your browser and whether your desktop uses Wayland or X11.",
       "ipad": "Check that your Apple Pencil model supports the pressure or tilt input you want to use. If your hand leaves marks, check how touch input is assigned before changing the brush.",
       "android": "Check that the pen and device support pressure input; a generic touch stylus may act like a finger. If pen input works but touch interferes, check the separate drawing and canvas-navigation assignments."
-    }
+    },
+    "techniques": "What you'll learn",
+    "tutorialStart": "Start with the tutorial introduction"
   },
   "ja": {
     "intro": "人物イラストの制作を通してCapy Canvasの操作を説明します。個々のツールや設定はリファレンスで確認できます。",
@@ -53,13 +55,13 @@ export const docsUI = {
     "onPage": "このページの内容",
     "groups": {
       "start": "基本操作",
-      "illustration": "イラスト制作",
+      "illustration": "イラスト制作チュートリアル",
       "layers": "レイヤー",
       "tools": "ツールとファイル",
       "advanced": "詳細設定"
     },
     "startTitle": "基本操作",
-    "journey": "イラスト制作の手順",
+    "journey": "イラスト制作チュートリアル",
     "journeyIntro": "同じドキュメントで順に進めます。各工程では、前の工程で作成したレイヤーを使います。",
     "references": "リファレンス",
     "referenceIntro": "制作手順で使う操作と、自分の作業に合わせて調整するための設定を説明します。",
@@ -84,10 +86,12 @@ export const docsUI = {
     "platformNotes": {
       "windows": "複数のアプリで筆圧が使えない場合は、タブレットドライバーの設定で筆圧を確認します。複数画面を使う場合は、Capy Canvasを表示している画面にタブレットを割り当ててください。",
       "mac": "ブラシを調整する前に、タブレット設定の画面への割り当てを確認します。ショートカットのCommandとControlは別のキーなので、Windowsの割り当てをそのまま使わずに確認してください。",
-      "linux": "GTK版では、エディターの入力設定に加えて、デスクトップ側のタブレットの割り当ても確認します。カーソルのずれや筆圧の不具合を報告する際は、WaylandとX11のどちらを使っているかも記載してください。",
+      "linux": "ウェブ版では、デスクトップ設定のタブレットの割り当てを確認します。筆圧が届かない、カーソルがずれるといった問題の報告には、ブラウザー名と、デスクトップがWaylandかX11かを添えてください。",
       "ipad": "使っているApple Pencilのモデルが、必要な筆圧や傾きの入力に対応しているか確認します。手を置くと線が描かれる場合は、ブラシを変更する前にタッチ入力の割り当てを確認してください。",
       "android": "ペンとデバイスが筆圧入力に対応しているか確認します。一般的なタッチ用スタイラスは、指と同じ入力になる場合があります。ペンは使えるのにタッチが妨げになる場合は、描画とキャンバス操作の割り当てを確認してください。"
-    }
+    },
+    "techniques": "このページで学ぶこと",
+    "tutorialStart": "チュートリアルの紹介を読む"
   },
   "zh": {
     "intro": "教程通过一幅人物插画介绍Capy Canvas的操作，参考页面则说明各个工具与设置。",
@@ -98,13 +102,13 @@ export const docsUI = {
     "onPage": "本页内容",
     "groups": {
       "start": "基本操作",
-      "illustration": "插画制作",
+      "illustration": "插画教程",
       "layers": "图层",
       "tools": "工具与文件",
       "advanced": "高级设置"
     },
     "startTitle": "基本操作",
-    "journey": "插画制作教程",
+    "journey": "插画教程",
     "journeyIntro": "按顺序在同一文档中完成各阶段，每一步都会沿用上一阶段建立的图层。",
     "references": "参考手册",
     "referenceIntro": "这些页面解释教程用到的控件，以及如何按自己的工作方式调整相关设置。",
@@ -129,10 +133,12 @@ export const docsUI = {
     "platformNotes": {
       "windows": "如果多个应用都无法使用压感，请在数位板驱动设置中检查笔压。使用多台显示器时，将数位板映射到显示Capy Canvas的屏幕。",
       "mac": "修改笔刷前，先检查数位板设置中的屏幕映射。设置快捷键时要区分Command和Control，不要未经检查就照搬Windows的按键分配。",
-      "linux": "使用GTK版本时，除了编辑器的输入设置，也要检查桌面环境中的数位板映射。报告光标偏移或压感缺失时，请注明使用的是Wayland还是X11。",
+      "linux": "使用网页版时，在桌面设置中检查数位板映射。报告压感缺失或光标偏移时，请注明浏览器，以及桌面使用的是Wayland还是X11。",
       "ipad": "确认所用Apple Pencil型号支持需要的压感或倾斜输入。如果手掌接触屏幕会留下笔迹，请先检查触控的操作分配，再修改笔刷。",
       "android": "确认笔和设备支持压力输入；普通电容触控笔可能与手指输入相同。如果笔能正常工作但触控干扰绘画，请检查绘画与画布操作各自的分配。"
-    }
+    },
+    "techniques": "本页会学到什么",
+    "tutorialStart": "从教程介绍开始"
   },
   "ko": {
     "intro": "인물 일러스트를 그리면서 Capy Canvas의 조작을 설명합니다. 개별 도구와 설정은 참조 문서에서 확인할 수 있습니다.",
@@ -143,13 +149,13 @@ export const docsUI = {
     "onPage": "이 페이지의 내용",
     "groups": {
       "start": "기본 조작",
-      "illustration": "일러스트 제작",
+      "illustration": "일러스트 튜토리얼",
       "layers": "레이어",
       "tools": "도구와 파일",
       "advanced": "고급 설정"
     },
     "startTitle": "기본 조작",
-    "journey": "일러스트 제작 튜토리얼",
+    "journey": "일러스트 튜토리얼",
     "journeyIntro": "같은 문서에서 순서대로 진행합니다. 각 단계는 앞 단계에서 만든 레이어를 이어서 사용합니다.",
     "references": "참조 문서",
     "referenceIntro": "튜토리얼에서 사용하는 조작과 자신의 작업 방식에 맞게 조정할 설정을 설명합니다.",
@@ -174,9 +180,11 @@ export const docsUI = {
     "platformNotes": {
       "windows": "여러 앱에서 필압이 작동하지 않으면 태블릿 드라이버 설정에서 압력을 확인합니다. 화면을 여러 개 쓴다면 Capy Canvas가 있는 화면에 태블릿을 매핑하세요.",
       "mac": "브러시를 조정하기 전에 태블릿 설정의 화면 매핑을 확인합니다. 단축키를 지정할 때 Command와 Control은 다른 키이므로 Windows의 할당을 그대로 옮기지 말고 확인하세요.",
-      "linux": "GTK 버전에서는 편집기의 입력 설정과 데스크톱의 태블릿 매핑을 함께 확인합니다. 커서 위치나 필압 문제를 보고할 때는 Wayland와 X11 중 무엇을 사용하는지도 적어 주세요.",
+      "linux": "웹 버전에서는 데스크톱 설정의 태블릿 매핑을 확인합니다. 필압이 없거나 커서가 어긋나는 문제를 보고할 때는 브라우저와 데스크톱의 Wayland 또는 X11 사용 여부를 적어 주세요.",
       "ipad": "사용하는 Apple Pencil 모델이 필요한 필압이나 기울기 입력을 지원하는지 확인합니다. 손을 올렸을 때 자국이 생기면 브러시를 바꾸기 전에 터치 할당부터 확인하세요.",
       "android": "펜과 기기가 필압 입력을 지원하는지 확인합니다. 일반 터치용 스타일러스는 손가락처럼 입력될 수 있습니다. 펜은 정상인데 터치가 방해된다면 그리기와 캔버스 조작의 할당을 확인하세요."
-    }
+    },
+    "techniques": "이 페이지에서 배울 내용",
+    "tutorialStart": "튜토리얼 소개부터 시작하기"
   }
 };

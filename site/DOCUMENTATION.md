@@ -12,13 +12,15 @@ download page; do not imply that a native build can be downloaded before it exis
 
 - **Getting started:** quickstart; workspace and canvas, including toolbar placement
   and tool settings.
-- **Illustration:** sketching → line art → masking → rendering. Sketching includes
+- **Illustration tutorial:** introduction and intended result, followed by
+  sketching → line art → masking → rendering. Sketching includes
   the pencil sketch and color rough; masking includes base-color layers.
 - **Layers:** basics; masks and clipping; groups and blending.
 - **Tools & files:** selections and fill; transforms; save and export.
 - **Advanced:** brush engine; custom brushes and import; pen, gestures, and shortcuts.
 
-The overview introduces the tutorial. Reference pages explain a particular tool
+The documentation overview links to the introduction at `/docs/illustration/`.
+The sidebar places it before stages 01–04. Reference pages explain a particular tool
 or setting and link back to the phase where it is useful. Color is covered within
 the workflow, layers, and brush settings rather than as a separate sidebar group.
 
@@ -42,17 +44,24 @@ JSON-compatible YAML values:
 ---
 title: "Sketching"
 description: "Draw a pencil sketch and keep the color rough on a separate layer."
+purpose: "The sketch records the drawing, while a separate color rough lets you try the main colors underneath it."
+techniques: ["Use a pencil preset and pen pressure to draw the sketch.", "Select and transform one part of the drawing.", "Put rough colors on a layer below the pencil lines."]
 figure: "A pencil sketch above separate subject and background color roughs."
 related: ["tools/selections", "tools/transforms"]
 ---
 
-## Set up the sketch
+## 1. Set up the sketch
 
-Name the drawing layer **Sketch** and choose a pencil preset.
+Create a new document for the illustration and name its first drawing layer
+**Sketch**. Choose the built-in **Pencil** preset.
 ```
 
 Keep the title out of the Markdown body; the layout supplies the H1. Use H2s for
-the main steps and H3s for details.
+the main steps and H3s for details. The layout renders `purpose`, then a short
+`techniques` list, then the figure and Markdown instructions. `description` stays
+brief for navigation cards and search metadata. Use an optional `navTitle` when a
+short sidebar label is clearer; the tutorial's full title appears as its H1, with
+“Introduction” in the sidebar.
 
 ## Editorial style
 
@@ -60,7 +69,16 @@ Assume readers are comfortable with computers and office software. Explain what
 they need to decide or do in Capy Canvas, including the result and the reason when
 it is not obvious. Do not walk through familiar dialogs or list their fields just
 because those controls exist. Quickstart covers versions, hardware, and a pen
-check, then sends the reader directly to sketching.
+check, then sends the reader to the tutorial introduction.
+
+Every guide starts with a practical explanation of what the reader is trying to
+do and why the main tool or concept helps. Follow it with two to four concrete
+techniques or controls they will learn, before the detailed steps. For the four
+tutorial stages, number the step headings. Introduce an operation before asking
+the reader to perform it. Avoid abstract learning goals: “Use a mask to correct
+the hair's edge” explains more than “Build a flexible, non-destructive workflow.”
+The introduction describes the intended result and the overall sequence; individual
+stages should not repeat the entire tutorial's setup.
 
 Write complete, natural sentences. Be concise by limiting each section to its
 current task, not by compressing explanations into fragments. Use a neutral manual
@@ -76,6 +94,12 @@ shading layers such as Hair shading. Introduce selections during sketch correcti
 masks when preparing base colors, and clipping during rendering. Explain each
 concept when it first becomes necessary. Keep engine parameters, blending details,
 and alternate methods in linked reference pages rather than front-loading them.
+
+Check the document state between steps. A mask can reveal only existing paint;
+the masking stage fills the entire base layer so later mask edits can extend its
+visible boundary. Keep clipped layers directly above their base, in the stated
+order. Set a selection's reference before selecting, and clear it before an
+unrestricted fill or the next drawing operation.
 
 Use established drawing terms. The tutorial stages are **sketching, line art,
 masking, and rendering**. Distinguish the color rough from base colors, and
@@ -123,6 +147,10 @@ where the UI differs. Ordinary Markdown images also work within the text. Use
 several captures of the same illustration for the four phases; show the active
 tool, relevant settings, and layer stack when they explain the step. The abstract
 marks on the overview are navigation illustrations, not app screenshots.
+
+Do not include AI-generated illustration artwork. Use supplied artwork or verified
+app captures. Until the finished tutorial drawing is available, keep the clearly
+labeled result-image placeholder instead of substituting generated art.
 
 Custom behavior belongs in a small Astro component with a processed browser script.
 `PlatformNotes.astro` demonstrates this: detect the device, let the reader change
@@ -173,3 +201,12 @@ complete tutorials and reference pages:
   describe visibility masks, clipping, and alpha lock.
 
 These are research references, not dependencies or sources of republished artwork.
+
+Control details were checked against the public app source: the
+[shortcut defaults](https://github.com/capyatelier/capycanvas/blob/main/crates/layer-ui/src/shortcuts.rs),
+[panel customization](https://github.com/capyatelier/capycanvas/blob/main/docs/panel-customization.md),
+[preferences and shortcut editor](https://github.com/capyatelier/capycanvas/blob/main/docs/settings-implementation-plan.md),
+and [built-in brush presets](https://github.com/capyatelier/capycanvas/blob/main/crates/layer-core/src/presets.rs).
+Recheck those when updating instructions. Do not invent names for unfinished
+controls or supported import/export formats; the relevant reference page should
+say when those details are pending.

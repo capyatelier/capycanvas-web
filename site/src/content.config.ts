@@ -6,7 +6,10 @@ const guides = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/guides' }),
   schema: z.object({
     title: z.string(),
+    navTitle: z.string().optional(),
     description: z.string(),
+    purpose: z.string(),
+    techniques: z.array(z.string()).min(2).max(4),
     figure: z.string(),
     image: z.object({ light: z.string(), dark: z.string(), alt: z.string() }).optional(),
     related: z.array(z.string()).default([]),

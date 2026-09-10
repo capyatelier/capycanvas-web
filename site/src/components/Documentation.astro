@@ -30,10 +30,11 @@ const references = [
   <section class="docs-journey" aria-labelledby="illustration">
     <h2 id="illustration">{t.journey}</h2>
     <p class="docs-section-intro">{t.journeyIntro}</p>
-    <ol class="phase-grid">{guides.filter(guide => guide.group === 'illustration').map((guide, i) => <li>
+    <p class="docs-section-intro"><a class="docs-tutorial-start" href={route(locale, 'documentation', 'illustration')}>{t.tutorialStart}<Icon name="arrow" /></a></p>
+    <ol class="phase-grid">{guides.filter(guide => guide.step).map(guide => <li>
       <a class="phase-card" href={route(locale, 'documentation', guide.slug)}>
-        <PhaseVisual phase={i + 1} />
-        <span class="phase-number">{String(i + 1).padStart(2, '0')}</span>
+        <PhaseVisual phase={guide.step!} />
+        <span class="phase-number">{String(guide.step).padStart(2, '0')}</span>
         <h3>{guide.entry.data.title}</h3>
         <p>{guide.entry.data.description}</p>
       </a>
