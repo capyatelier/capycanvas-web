@@ -1,16 +1,16 @@
 ---
-title: "Workspace & canvas"
-description: "Navigate the canvas and arrange the tools around it."
-figure: "The drawing workspace with pressure-sensitive watercolor strokes."
+title: "Workspace and canvas"
+description: "Canvas navigation, toolbar placement, and tool settings."
+figure: "Workspace with the brush list and three watercolor strokes."
 related: ["advanced/input", "tools/transforms"]
-image: {"light": "/assets/workspace-light.webp", "dark": "/assets/workspace-dark.webp", "alt": "The drawing workspace with pressure-sensitive watercolor strokes."}
+image: {"light": "/assets/workspace-light.webp", "dark": "/assets/workspace-dark.webp", "alt": "Workspace with the brush list and three watercolor strokes."}
 ---
 
-## Find your tools
-Locate the canvas, brush picker, color controls, and Layers panel. Open a tool’s settings to see its options.
+## Panels and toolbars
+The workspace contains the canvas, toolbars, brush list, color controls, and Layers panel. A tool's settings contain parameters for the active tool, such as brush size and opacity.
 
-## Move around the canvas
-Pan, zoom, rotate, and mirror the view. Fit the drawing to the window and reset the view without changing the artwork.
+## Canvas view
+Pan, zoom, rotate, and mirror the canvas view. These operations change the display, not the document's pixels. Fit the canvas to the window or reset the view to its default orientation.
 
-## Make room to draw
-Move toolbars to a comfortable position, show or hide panels, and adjust toolbar contents and tool settings. Restore the layout when you want a fresh start.
+## Workspace layout
+Move toolbars, show or hide panels, and change which controls a toolbar contains. Open a toolbar or tool's settings to configure it. Reset the layout to restore the default arrangement.

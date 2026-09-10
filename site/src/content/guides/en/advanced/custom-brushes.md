@@ -1,15 +1,15 @@
 ---
-title: "Custom brushes & import"
-description: "Make, organize, and share brush presets."
-figure: "A duplicated preset, its settings, and a set of test strokes."
+title: "Custom brushes"
+description: "Brush presets, tips, textures, and import compatibility."
+figure: "Brush preset settings and test strokes."
 related: ["advanced/brush-engine"]
 ---
 
-## Make a preset
-Duplicate a brush, change a few settings, and compare test strokes. Cover naming, preview images, and resetting changes.
+## Presets
+A preset stores brush-engine settings. Duplicate a preset before changing its tip, stroke parameters, or input dynamics. Save the modified settings under a separate name.
 
-## Use your own materials
-Create or import brush tips and textures. Cover size, transparency, tiling, and how those materials interact with brush dynamics.
+## Tips and textures
+A brush-tip image defines the dab's shape and transparency. A texture adds surface variation. Image dimensions, transparency, and tiling affect the resulting marks.
 
-## Import and organize
-Import and export brushes or brush sets. Document supported formats and any settings that cannot transfer, then cover folders, favorites, and resolving duplicates.
+## Import and export
+Brush formats differ between applications. An imported preset may not reproduce settings that the destination brush engine does not support. Compare test strokes after import and check pressure and texture behavior before saving the preset.

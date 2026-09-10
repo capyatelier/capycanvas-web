@@ -1,15 +1,15 @@
 ---
-title: "Save & export"
-description: "Keep an editable working file and make images to share."
-figure: "The working document beside an exported image."
+title: "Saving and exporting"
+description: "Document files, image export, and file transfer."
+figure: "Layered document and flattened image export."
 related: ["illustration/render", "layers/basics"]
 ---
 
-## Save the working file
-Cover creating a saved document, saving changes, and reopening a project with its layers and settings.
+## Document files
+A working document retains the layer structure and other editable data supported by its format. Save changes to the document before closing it or transferring it to another device.
 
-## Export an image
-Choose dimensions, background transparency, and an appropriate image format. Explain the difference between a layered working file and a flattened export.
+## Image export
+Export produces an image with the selected dimensions, format, and transparency settings. A flattened export does not retain independent layers. Transparency is preserved only in formats that support it.
 
-## Move between devices
-Cover importing images, transferring working files, and browser downloads. Include recovery and storage behavior for each platform.
+## Import and transfer
+Import an image as source material or transfer a working document between devices. Browser downloads and native file dialogs use the storage locations provided by the operating system.

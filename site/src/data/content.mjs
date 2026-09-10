@@ -19,7 +19,7 @@ export const content = {
     },
     documentation: {
       title: 'Documentation',
-      meta: 'Capy Canvas guides: quickstart, workspace, a four-phase illustration tutorial, layers, tools, and advanced brush settings.'
+      meta: 'Capy Canvas documentation: workspace, sketching, line art, masking, rendering, layers, and brush settings.'
     },
     notFound: { title: 'Page not found', text: 'The requested page does not exist.', action: 'Home' }
   },
@@ -40,7 +40,7 @@ export const content = {
     },
     documentation: {
       title: 'ドキュメント',
-      meta: 'Capy Canvas のガイド。はじめの操作、作業画面、4工程のイラスト制作、レイヤー、ツール、ブラシの詳細設定。'
+      meta: 'Capy Canvas のドキュメント。作業画面、下描き、線画、マスク作成、塗り込み、レイヤー、ブラシ設定。'
     },
     notFound: { title: 'ページが見つかりません', text: '指定されたページは存在しません。', action: 'ホーム' }
   },
@@ -61,7 +61,7 @@ export const content = {
     },
     documentation: {
       title: '文档',
-      meta: 'Capy Canvas指南：快速上手、工作区、四阶段插画教程、图层、工具与进阶笔刷设置。'
+      meta: 'Capy Canvas文档：工作区、草稿、线稿、蒙版、细化、图层与笔刷设置。'
     },
     notFound: { title: '页面不存在', text: '找不到所请求的页面。', action: '首页' }
   },
@@ -82,7 +82,7 @@ export const content = {
     },
     documentation: {
       title: '문서',
-      meta: 'Capy Canvas 가이드: 빠른 시작, 작업 화면, 네 단계 일러스트, 레이어, 도구와 고급 브러시 설정.'
+      meta: 'Capy Canvas 문서: 작업 화면, 스케치, 선화, 마스킹, 렌더링, 레이어 및 브러시 설정.'
     },
     notFound: { title: '페이지를 찾을 수 없습니다', text: '요청한 페이지가 존재하지 않습니다.', action: '홈' }
   }

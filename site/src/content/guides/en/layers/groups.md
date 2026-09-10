@@ -1,15 +1,15 @@
 ---
-title: "Groups & blending"
-description: "Organize a drawing and control how its layers combine."
-figure: "A subject group with base colors, clipped shadows, and highlights."
+title: "Layer groups and blending"
+description: "Layer groups, group opacity, and blending modes."
+figure: "A layer group containing base colors, shadows, and highlights."
 related: ["illustration/render", "layers/masks"]
 ---
 
-## Organize with groups
-Group layers by subject or part of the drawing. Cover nested groups, shared visibility, opacity, and masks.
+## Groups
+A group contains related layers and can contain other groups. Group visibility and opacity apply to the combined contents. A group mask limits the visible area of the group.
 
-## Blend layers
-Compare Normal, Multiply, Screen, and other blending modes using the same small example. Show how blending and opacity affect underlying colors.
+## Blending modes
+A blending mode determines how a layer's colors combine with the layers below. Normal uses the layer's color and opacity directly. Multiply produces a darker result; Screen produces a lighter result.
 
-## Combine effects
-Explain group isolation and how masks, clipping, and blending interact. Use a shadow-and-highlight example that stays editable.
+## Group compositing
+An isolated group composites its contents before combining the result with the rest of the document. In a pass-through group, layer blending can also affect layers outside the group.

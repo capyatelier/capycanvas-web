@@ -1,15 +1,15 @@
 ---
-title: "Transforms"
-description: "Reposition and reshape parts of a drawing."
-figure: "A selected part before and after scaling and rotation."
+title: "Transformations"
+description: "Moving, scaling, rotating, and reshaping image content."
+figure: "Selected image content before and after scaling and rotation."
 related: ["workspace", "illustration/draft"]
 ---
 
-## Move and resize
-Move, scale, and rotate a layer or selected area. Preserve proportions when needed and distinguish transforming pixels from changing the canvas view.
+## Move, scale, and rotate
+Transform a layer or a selected region. Scaling changes its dimensions; rotation changes its angle. Constrain proportions to preserve the width-to-height ratio.
 
-## Reshape
-Cover flipping, skew, perspective, and free transformation. Compare adjusting the whole composition with correcting one part.
+## Distortion
+Skew, perspective, and free transformation change the relationship between corners or edges. Flipping reverses the image content horizontally or vertically. These operations modify the document, unlike rotating or mirroring the canvas view.
 
-## Protect image quality
-Preview before applying a transform. Explain resampling, repeated transformations, and keeping a copy before major changes.
+## Resampling
+Transforms may resample pixels. Repeated scaling and rotation can reduce sharpness. Retain an untransformed copy when further revisions are expected.

@@ -1,15 +1,15 @@
 ---
 title: "Quickstart"
-description: "Make a canvas, try a brush, and find your way around."
-figure: "A new canvas, the brush picker, and the Layers panel."
+description: "Creating a document, selecting a brush, and saving."
+figure: "Canvas, brush list, and Layers panel."
 related: ["workspace", "illustration/draft"]
 ---
 
-## Make a canvas
-Choose a canvas size and a background. Find the brush picker and the Layers panel.
+## New document
+Create a document and set the canvas width, height, and background color.
 
-## Try a few strokes
-Pick a pencil, change its size, and draw a few lines. Try light and firm pressure with a pen, then erase and undo.
+## Drawing
+Select a paint layer and a pencil brush. Set the brush size, then draw a stroke. With a pressure-sensitive pen, vary the pressure to change the stroke. Use the eraser to remove pixels or Undo to revert the last operation.
 
-## Start an illustration
-Keep a working copy with its layers. Continue with the workspace tour, or begin the four-phase illustration guide.
+## Saving
+Save the document in a format that preserves its layers. Export a separate image when a flattened copy is required.

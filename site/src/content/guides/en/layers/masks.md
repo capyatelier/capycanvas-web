@@ -1,15 +1,15 @@
 ---
-title: "Masks & clipping"
-description: "Choose how to limit paint without losing the shapes underneath."
-figure: "The same stroke with a selection, alpha lock, a mask, and clipping."
+title: "Layer masks and clipping"
+description: "Selections, alpha lock, layer masks, and clipping."
+figure: "Comparison of a selection, alpha lock, a layer mask, and a clipped layer."
 related: ["illustration/mask", "layers/basics"]
 ---
 
 ## Selections and alpha lock
-A selection limits the area an operation can affect. Alpha lock keeps painting within a layer’s existing opacity. Compare when to use each.
+A selection restricts the area affected by an operation. Alpha lock preserves the active layer's transparency, allowing its existing pixels to be recolored without extending the painted area.
 
 ## Layer masks
-Hide or reveal parts of a layer without erasing its paint. Cover painting a mask, soft edges, disabling it, and turning a selection into a mask.
+A layer mask controls which parts of a layer are visible. White reveals, black hides, and gray produces partial visibility. Editing the mask does not erase the layer's pixels.
 
 ## Clipping
-Keep paint on a separate layer while using the base layer’s shape as a boundary. Compare clipping with masks when shading, recoloring, and changing an outline.
+A clipped layer uses the transparency of the base layer to limit its visibility. Shading and texture remain on a separate layer. Changes to the base shape also change the visible area of the clipped layers.

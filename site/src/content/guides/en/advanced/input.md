@@ -1,15 +1,15 @@
 ---
-title: "Pen, gestures & shortcuts"
-description: "Adjust input for your pen, keyboard, and device."
-figure: "Pressure response curves and a toolbar arranged for pen input."
+title: "Input settings"
+description: "Pen pressure, tablet mapping, gestures, and shortcuts."
+figure: "Pressure-response curve and pen-button assignments."
 related: ["workspace", "advanced/brush-engine"]
 ---
 
-## Tune the pen
-Check pressure and tilt, adjust the response curve, and compare light and firm strokes. Cover pen buttons and tablet mapping.
+## Pen input
+Pen pressure and tilt are inputs to brush dynamics. The pressure curve adjusts the response to applied force. Tablet mapping determines how the active tablet area corresponds to the display or canvas.
 
-## Set up controls
-Customize keyboard shortcuts and touch gestures. Balance pen and touch input, set up undo and canvas navigation, and keep frequently used actions nearby.
+## Shortcuts and gestures
+Keyboard shortcuts, pen buttons, and touch gestures invoke editor commands. Assign controls for undo, tool switching, and canvas navigation. Pen and touch input can have separate assignments.
 
-## Troubleshoot input
-Cover missing pressure, accidental touch marks, offset cursors, and delayed strokes. Separate app settings from browser, operating-system, and tablet-driver settings.
+## Input problems
+Missing pressure, cursor offset, unintended touch input, and stroke latency can originate in the app, browser, operating system, or tablet driver. Check the relevant input settings for the device.

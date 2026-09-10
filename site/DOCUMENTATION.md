@@ -8,10 +8,10 @@ outline label until a guide has verified steps and images from the app.
 
 `src/data/docs-nav.mjs` defines the sidebar order and stable topic paths:
 
-- **Get started:** quickstart; workspace and canvas, including toolbar placement
+- **Getting started:** quickstart; workspace and canvas, including toolbar placement
   and tool settings.
-- **Draw an illustration:** draft and color blocks → ink → flat colors and masks
-  → render and finish.
+- **Illustration:** sketching → line art → masking → rendering. Sketching includes
+  the pencil sketch and color rough; masking includes base-color layers.
 - **Layers:** basics; masks and clipping; groups and blending.
 - **Tools & files:** selections and fill; transforms; save and export.
 - **Advanced:** brush engine; custom brushes and import; pen, gestures, and shortcuts.
@@ -38,21 +38,51 @@ JSON-compatible YAML values:
 
 ```markdown
 ---
-title: "Draft & color blocks"
-description: "Plan the composition with pencil marks and large shapes of color."
-figure: "Pencil sketch, loose color blocks, and the combined draft."
+title: "Sketching"
+description: "Rough sketch, color rough, and composition."
+figure: "Pencil sketch and color rough on separate layers."
 related: ["tools/selections", "tools/transforms"]
 ---
 
-## Sketch the idea
+## Rough sketch
 
 Short, task-specific instructions go here.
 ```
 
 Keep the title out of the Markdown body; the layout supplies the H1. Use H2s for
-the main steps and H3s for details. Prefer a direct answer followed by a short
-procedure, a useful image, and links to relevant settings. Do not add a sales pitch
-or an account of how the guide was written.
+the main steps and H3s for details.
+
+## Editorial style
+
+Write as a software manual. Describe the operation, its parameters, and its result.
+Use short procedures for tasks and factual descriptions for reference pages.
+Headings should identify a subject or operation: “Layer masks,” “Resampling,” or
+“Save a document.” Descriptions should state the page's scope.
+
+Use established drawing terms. The tutorial stages are **sketching, line art,
+masking, and rendering**. Distinguish the color rough from base colors, and
+selections from layer masks, clipping, and alpha lock. Define terms when their
+meaning matters to the operation. Do not invent feature names or menu labels.
+
+Avoid promotional headings (“Go deeper”), encouragement (“find your way around”),
+vague benefits (“make room to draw”), and narrative transitions (“one drawing,
+four phases”). Remove author-directed notes such as “Cover…,” “Explain…,” and
+“Show…” from published outlines. State the subject itself. The outline label
+already identifies incomplete documentation.
+
+Translations should use the same neutral register and conventional terminology
+for their language, rather than translating English idioms or promotional phrases.
+
+| English | Japanese | Simplified Chinese | Korean |
+| --- | --- | --- | --- |
+| Sketching | 下描き | 草稿 | 스케치 |
+| Color rough | 色ラフ | 色稿 | 컬러 러프 |
+| Line art | 線画 | 线稿 | 선화 |
+| Masking | マスク作成 | 蒙版 | 마스킹 |
+| Rendering | 塗り込み | 细化 | 렌더링 |
+| Layer mask | レイヤーマスク | 图层蒙版 | 레이어 마스크 |
+| Clipping | クリッピング | 剪贴 | 클리핑 |
+| Alpha lock | 透明度ロック | 锁定透明像素 | 알파 잠금 |
 
 Shared interface text lives in `src/data/docs-ui.mjs`. Add a topic to the sidebar
 registry and supply all four Markdown files; missing translations fail the build.
@@ -94,12 +124,24 @@ Commit both `site/` sources and the generated `docs/` output; GitHub Pages serve
 The tutorial sequence follows the requested illustration workflow and the public
 chapter list of [RiceBrush's workflow study](https://www.youtube.com/watch?v=JNfcnJBdel4):
 sketch at 01:00, line art at 03:42, masking at 05:33, and rendering at 07:40.
-The public caption endpoint returned no transcript during this outline pass;
-the detailed tool coverage uses the requested sequence and the following guides:
+The video's caption endpoint and browser transcript panel did not return the
+narration. The terminology and technical descriptions were checked against these
+complete tutorials and reference pages:
 
 - [Krita: Flat Coloring](https://docs.krita.org/en/tutorials/flat-coloring.html)
   informs the separation of flats, selections, fill edges, and masks.
 - [CLIP STUDIO PAINT: Color Blocking & Flat Colors](https://tips.clip-studio.com/en-us/articles/1231)
   provides a professional example of large color shapes and editable masked areas.
+- [CLIP STUDIO PAINT: Sketching & Color Rough](https://tips.clip-studio.com/en-us/articles/1229)
+  distinguishes the preliminary drawing and color study from later painting.
+- [CLIP STUDIO PAINT: Line Art](https://tips.clip-studio.com/en-us/articles/1230)
+  describes line-art layers, contours, and separating parts for masking.
+- [CLIP STUDIO PAINT: Painting the Character](https://tips.clip-studio.com/en-us/articles/1232)
+  covers shadows, line color, reflected light, and highlights.
+- [Krita: Opacity and Flow](https://docs.krita.org/en/reference_manual/brushes/brush_settings/opacity_and_flow.html)
+  distinguishes stroke opacity from individual dab deposition.
+- [Krita: Transparency Masks](https://docs.krita.org/en/reference_manual/layers_and_masks/transparency_masks.html)
+  and [Procreate: Mask](https://help.procreate.com/procreate/handbook/layers/layers-mask)
+  describe visibility masks, clipping, and alpha lock.
 
 These are research references, not dependencies or sources of republished artwork.

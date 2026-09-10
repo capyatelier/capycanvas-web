@@ -1,15 +1,15 @@
 ---
 title: "Layer basics"
-description: "Keep sketches, ink, colors, and paint easy to edit."
-figure: "A layer stack with separate sketch, ink, flats, and paint."
+description: "Layer order, visibility, opacity, and merging."
+figure: "Layer stack containing sketch, line art, base colors, and shading."
 related: ["layers/masks", "layers/groups"]
 ---
 
-## Create and arrange
-Add, name, duplicate, reorder, and delete layers. Understand how the active layer and stacking order affect the next stroke.
+## Active layer and order
+Drawing operations affect the active layer. Layers higher in the stack appear above lower layers. Add, rename, duplicate, reorder, or delete layers in the Layers panel.
 
-## Control visibility
-Show, hide, and adjust layer opacity. Lock a layer to protect it, or lock its alpha to limit painting to existing pixels.
+## Visibility and locking
+Visibility hides or shows a layer; opacity controls its contribution to the image. Layer locking prevents edits. Alpha lock preserves the layer's existing transparency during painting.
 
-## Keep the work editable
-Separate stages of the illustration and combine layers only when useful. Cover merging, flattening, and how those operations affect later edits.
+## Merging and flattening
+Merging combines layer contents. Flattening combines the document into a single image and removes the separate layer structure. A layered copy is required to retain independent editing of the original layers.

@@ -1,15 +1,15 @@
 ---
-title: "Selections & fill"
-description: "Define an area, then fill it, paint inside it, or refine its edge."
-figure: "A lasso selection, a filled shape, and a close-up of its edge."
+title: "Selections and fill"
+description: "Selection tools, selection boundaries, and fill settings."
+figure: "Lasso selection, filled region, and an enlarged view of the boundary."
 related: ["illustration/draft", "illustration/mask"]
 ---
 
-## Make a selection
-Cover rectangle, ellipse, freehand lasso, and color-based selection. Add to, subtract from, and intersect selections; select all or clear the selection.
+## Selection tools
+Rectangular, elliptical, and freehand selections define an area geometrically. Automatic selection uses color similarity. Selections can be added, subtracted, intersected, inverted, or cleared.
 
-## Refine the boundary
-Grow, shrink, feather, and invert a selection. Compare crisp edges for flats with softer edges for painting.
+## Selection boundaries
+Expansion and contraction move the selection boundary outward or inward. Feathering softens it. Anti-aliasing smooths the transition at the boundary to reduce jagged edges.
 
-## Fill an area
-Cover fill tolerance, gap handling, edge expansion, and which layers the fill samples. Use selections and masks to keep later color changes simple.
+## Fill settings
+Tolerance controls which colors a fill treats as similar. Gap closing prevents small openings from causing a fill to spread into adjacent regions. Expansion extends the fill under line art; the reference-layer setting determines which layers are sampled.

@@ -1,15 +1,15 @@
 ---
 title: "Brush engine"
-description: "Understand the settings that turn pen input into a stroke."
-figure: "One stroke repeated with different spacing, pressure, and texture settings."
+description: "Brush tips, stroke parameters, and input dynamics."
+figure: "Test strokes with different spacing, pressure curves, and textures."
 related: ["advanced/custom-brushes", "advanced/input"]
 ---
 
-## Build a stroke
-Explain brush tips, size, spacing, rotation, scattering, and texture. Compare settings using the same short stroke so each change is visible.
+## Brush tip and stroke
+The brush tip defines the shape of each dab. Spacing controls the distance between dabs. Rotation, scatter, and texture change how dabs are placed and how they deposit color.
 
-## Shape the response
-Map pressure, tilt, and speed to size, opacity, flow, and other dynamics. Explain response curves and the difference between opacity and paint buildup.
+## Opacity and flow
+Opacity controls stroke transparency. Flow controls the amount of color deposited by individual dabs. Their interaction determines how overlapping marks accumulate. Blending and color pickup control interaction with existing paint.
 
-## Mix and render paint
-Cover blending, pigment pickup, wet edges, and texture interaction. Explain how brush settings affect the appearance and cost of GPU-rendered strokes.
+## Input dynamics
+Pressure, tilt, and stroke speed can drive parameters such as size, opacity, and rotation. A response curve maps the input value to the parameter value. Test each parameter with a consistent stroke when editing a preset.

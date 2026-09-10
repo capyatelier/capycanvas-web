@@ -1,15 +1,15 @@
 ---
-title: "Ink"
-description: "Draw clear lines on a new layer above the draft."
-figure: "The faded draft beneath a separate layer of inked lines."
+title: "Line art"
+description: "Line art on a separate layer above the sketch."
+figure: "Line art layer above a low-opacity sketch."
 related: ["layers/basics", "advanced/input"]
 ---
 
-## Prepare the sketch
-Lower the sketch layer’s opacity and add an ink layer above it. Keep the rough color blocks available as a reference.
+## Layer setup
+Reduce the sketch layer's opacity. Create a line art layer above it, keeping the color rough separate.
 
-## Build the linework
-Choose an inking preset. Adjust size, pressure response, and stabilization; rotate the canvas for comfortable strokes. Use line weight to separate overlapping forms.
+## Inking
+Trace the contours and internal details with a pencil or ink brush. Adjust brush size, pressure response, and stabilization. Vary line weight to indicate overlaps and distinguish outer contours from internal lines.
 
-## Clean up
-Erase stray marks and refine important edges. Check the lines with the sketch hidden. Keep the ink separate so it can be recolored or painted over later.
+## Corrections
+Hide the sketch to inspect the line art. Remove stray strokes and correct intersections. Separate line art by subject or material where it will need independent masking or recoloring.
