@@ -37,6 +37,10 @@ This is a plain Astro static site with the existing Capy Canvas theme.
 - `site/src/layouts/SiteLayout.astro`: shared document, metadata, and header.
 - `site/src/components/`: header, language controls, and page components.
 - `site/src/data/`: the four existing translations and installation instructions.
+- `site/src/content/guides/`: English, Japanese, Chinese, and Korean Markdown guides.
+- `site/src/content.config.ts`: typed Astro content collection schema.
+- `site/src/layouts/DocsLayout.astro`: documentation sidebar, article area, and section links.
+- `site/src/styles/documentation.css`: documentation styles using the existing editor palette.
 - `site/src/lib/site.ts`: typed page/locale definitions and Astro locale URL helpers.
 - `site/src/scripts/pwa.js`: browser/OS detection and installation picker behavior.
 - `site/public/assets/`: unchanged global CSS, brand assets, and app screenshots.
@@ -45,8 +49,10 @@ This is a plain Astro static site with the existing Capy Canvas theme.
 Use shared components and the locale URL helper when adding pages. Astro processes
 the components' browser scripts; the PWA script is only included on download pages.
 The short language-detection script deliberately runs inline in the head before paint.
-There is no client router or UI framework runtime. Existing documentation copy remains
-in the translation files; Markdown guides and content collections can be added separately.
+There is no client router or UI framework runtime. Documentation uses Astro's Markdown
+content collections, with complete HTML generated for every translated guide.
+See [the documentation authoring guide](site/DOCUMENTATION.md) for the structure,
+English-first editing, planned images, and custom interactive components.
 
 ## Routes and languages
 
@@ -55,6 +61,13 @@ in the translation files; Markdown guides and content collections can be added s
 | Home | `/` | `/ja/` | `/zh/` | `/ko/` |
 | Download | `/download/` | `/ja/download/` | `/zh/download/` | `/ko/download/` |
 | Documentation | `/documentation/` | `/ja/documentation/` | `/zh/documentation/` | `/ko/documentation/` |
+
+Guides extend the documentation route with the same topic path in every locale,
+for example `/documentation/illustration/draft/` and
+`/ja/documentation/illustration/draft/`. The sidebar, related guides, section links,
+and previous/next links all point to static pages. Device-specific input notes
+auto-detect the reader's platform and provide a manual selector; all variants are
+present in the HTML and remain readable without JavaScript.
 
 Astro's `i18n` configuration defines English as the unprefixed default and
 Japanese, Chinese, and Korean under `/ja/`, `/zh/`, and `/ko/`. Navigation,
@@ -150,6 +163,8 @@ For later comparisons, set `BASELINE_OUTPUT` to a saved build directory and
 optionally `SITE_OUTPUT` to the candidate build. Both browser suites accept
 `CHROME`; the regular browser and output tests also accept `SITE_OUTPUT`.
 Pixel comparisons should use the same machine and fonts for both builds.
+The documentation redesign intentionally differs from the pre-Astro reference;
+use a current reference build when checking subsequent visual regressions.
 
 ## Publish
 

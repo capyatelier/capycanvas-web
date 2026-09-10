@@ -1,0 +1,26 @@
+---
+interface Props { phase: number }
+const { phase } = Astro.props;
+---
+<!-- Abstract workflow markers, not editor screenshots or tutorial artwork. -->
+<svg class:list={['phase-visual', `phase-${phase}`]} viewBox="0 0 240 112" aria-hidden="true" fill="none">
+  {phase === 1 && <>
+    <path d="M42 76c24-35 38-39 56-17s28 20 43-4 39-21 53 7" stroke="var(--phase-color)" stroke-width="29" stroke-linecap="round" opacity=".24" />
+    <path d="M42 78c30-71 49-58 61-29s32 24 42-2 37-29 49 4M43 71c27-54 44-41 56-18s35 28 49-1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".62" />
+  </>}
+  {phase === 2 && <>
+    <path d="M42 78c30-71 49-58 61-29s32 24 42-2 37-29 49 4" stroke="currentColor" stroke-width="1.5" opacity=".15" transform="translate(0 10)" />
+    <path d="M42 78c30-71 49-58 61-29s32 24 42-2 37-29 49 4" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+  </>}
+  {phase === 3 && <>
+    <path d="m58 71 60-28 64 28-62 29z" fill="var(--phase-color)" opacity=".22" />
+    <path d="m58 54 60-28 64 28-62 29z" fill="var(--phase-color)" opacity=".55" />
+    <path d="m58 37 60-28 64 28-62 29z" fill="var(--phase-color)" />
+    <path d="m100 36 13 10 28-17" stroke="var(--bg)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </>}
+  {phase === 4 && <>
+    <path d="M44 74c23-42 41-41 60-12s29 14 42-9 37-25 48 0" stroke="var(--phase-color)" stroke-width="24" stroke-linecap="round" opacity=".27" />
+    <path d="M49 64c20-26 34-24 48-8s30 27 49-3 28-19 40-10" stroke="var(--phase-color)" stroke-width="17" stroke-linecap="round" opacity=".7" />
+    <path d="M57 54c12-11 23-10 34 1m59-6c10-12 20-12 28-7" stroke="var(--bg)" stroke-width="4" stroke-linecap="round" />
+  </>}
+</svg>

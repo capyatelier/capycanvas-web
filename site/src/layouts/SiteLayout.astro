@@ -3,12 +3,13 @@ import { content } from '../data/content.mjs';
 import { origin, locales, route, type Locale, type SitePage } from '../lib/site';
 import Header from '../components/Header.astro';
 import LanguagePreference from '../components/LanguagePreference.astro';
-interface Props { locale: Locale; page: SitePage }
-const { locale, page } = Astro.props;
+import docsStyleUrl from '../styles/documentation.css?url';
+interface Props { locale: Locale; page: SitePage; slug?: string; title?: string; description?: string }
+const { locale, page, slug = '' } = Astro.props;
 const t = content[locale];
-const title = page === 'home' ? t.home.title : page === '404' ? t.notFound.title : `${t.nav[page]} — Capy Canvas`;
-const description = page === '404' ? t.notFound.text : t[page].meta;
-const canonical = origin + route(locale, page);
+const title = Astro.props.title ? `${Astro.props.title} — Capy Canvas` : page === 'home' ? t.home.title : page === '404' ? t.notFound.title : `${t.nav[page]} — Capy Canvas`;
+const description = Astro.props.description ?? (page === '404' ? t.notFound.text : t[page].meta);
+const canonical = origin + route(locale, page, slug);
 const faviconVersion = import.meta.env.FAVICON_VERSION;
 ---
 <!doctype html>
@@ -22,8 +23,8 @@ const faviconVersion = import.meta.env.FAVICON_VERSION;
     <meta name="description" content={description} />
     {page === '404' ? <meta name="robots" content="noindex" /> : <>
       <link rel="canonical" href={canonical} />
-      {locales.map(code => <link rel="alternate" hreflang={content[code].lang} href={origin + route(code, page)} />)}
-      <link rel="alternate" hreflang="x-default" href={origin + route('en', page)} />
+      {locales.map(code => <link rel="alternate" hreflang={content[code].lang} href={origin + route(code, page, slug)} />)}
+      <link rel="alternate" hreflang="x-default" href={origin + route('en', page, slug)} />
     </>}
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Capy Canvas" />
@@ -40,11 +41,12 @@ const faviconVersion = import.meta.env.FAVICON_VERSION;
     <meta name="theme-color" content="#333333" media="(prefers-color-scheme: dark)" />
     <link rel="icon" type="image/png" sizes="32x32" href={`/assets/favicon.png?v=${faviconVersion}`} />
     <link rel="stylesheet" href="/assets/style.css" />
-    <LanguagePreference locale={locale} page={page} />
+    {page === 'documentation' && <link rel="stylesheet" href={docsStyleUrl} />}
+    <LanguagePreference locale={locale} page={page} slug={slug} />
   </head>
   <body>
     <a class="skip" href="#main">{t.nav.skip}</a>
-    <Header locale={locale} page={page} />
+    <Header locale={locale} page={page} slug={slug} />
     <slot />
   </body>
 </html>

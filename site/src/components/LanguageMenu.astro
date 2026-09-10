@@ -2,15 +2,15 @@
 import { content, languages } from '../data/content.mjs';
 import { locales, route, type Locale, type SitePage } from '../lib/site';
 import Icon from './Icon.astro';
-interface Props { locale: Locale; page: SitePage }
-const { locale, page } = Astro.props;
+interface Props { locale: Locale; page: SitePage; slug?: string }
+const { locale, page, slug = '' } = Astro.props;
 const t = content[locale];
 ---
 <details class="language-menu">
   <summary aria-label={t.nav.language}><Icon name="globe" /><span>{t.name}</span><Icon name="chevron" class="chevron" /></summary>
   <div class="language-options">
     {locales.map(code => (
-      <a href={route(code, page === '404' ? 'home' : page) + (code === 'en' ? '?lang=en' : '')} lang={content[code].lang} hreflang={content[code].lang} data-language={code} aria-current={code === locale ? 'true' : undefined}>{languages[code]}{code === locale && <Icon name="check" />}</a>
+      <a href={route(code, page === '404' ? 'home' : page, slug) + (code === 'en' ? '?lang=en' : '')} lang={content[code].lang} hreflang={content[code].lang} data-language={code} aria-current={code === locale ? 'true' : undefined}>{languages[code]}{code === locale && <Icon name="check" />}</a>
     ))}
   </div>
 </details>

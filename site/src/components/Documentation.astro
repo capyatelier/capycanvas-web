@@ -1,14 +1,49 @@
 ---
 import { content } from '../data/content.mjs';
-import type { Locale } from '../lib/site';
+import { docsUI } from '../data/docs-ui.mjs';
+import { getGuides } from '../lib/guides';
+import { route, type Locale } from '../lib/site';
+import DocsLayout from '../layouts/DocsLayout.astro';
+import PhaseVisual from './PhaseVisual.astro';
+import Icon from './Icon.astro';
 interface Props { locale: Locale }
 const { locale } = Astro.props;
-const t = content[locale].documentation;
+const t = docsUI[locale];
+const guides = await getGuides(locale);
+const references = [
+  { slug: 'layers/basics', title: t.groups.layers, description: t.layerSummary },
+  { slug: 'tools/selections', title: t.groups.tools, description: t.toolSummary },
+  { slug: 'advanced/brush-engine', title: t.groups.advanced, description: t.brushSummary },
+];
 ---
-<main id="main" class="page documentation">
-  <h1>{t.title}</h1>
-  <p class="lead">{t.intro}</p>
-  <section><h2>{t.now}</h2><ul>{t.built.map(item => <li>{item}</li>)}</ul></section>
-  <section><h2>{t.next}</h2><ul>{t.planned.map(item => <li>{item}</li>)}</ul></section>
-  <section><h2>{t.focus}</h2><p>{t.direction}</p></section>
-</main>
+<DocsLayout locale={locale}>
+  <h1>{content[locale].documentation.title}</h1>
+  <p class="docs-lead">{t.intro}</p>
+  <p class="docs-notice">{t.notice}</p>
+  <section class="docs-start" aria-labelledby="start">
+    <h2 id="start">{t.startTitle}</h2>
+    <div class="docs-start-links">{guides.filter(guide => guide.group === 'start').map(guide => <a href={route(locale, 'documentation', guide.slug)}>
+      <h3>{guide.entry.data.title}<Icon name="arrow" /></h3>
+      <p>{guide.entry.data.description}</p>
+    </a>)}</div>
+  </section>
+  <section class="docs-journey" aria-labelledby="illustration">
+    <h2 id="illustration">{t.journey}</h2>
+    <p class="docs-section-intro">{t.journeyIntro}</p>
+    <ol class="phase-grid">{guides.filter(guide => guide.group === 'illustration').map((guide, i) => <li>
+      <a class="phase-card" href={route(locale, 'documentation', guide.slug)}>
+        <PhaseVisual phase={i + 1} />
+        <span class="phase-number">{String(i + 1).padStart(2, '0')}</span>
+        <h3>{guide.entry.data.title}</h3>
+        <p>{guide.entry.data.description}</p>
+      </a>
+    </li>)}</ol>
+  </section>
+  <section class="docs-references" aria-labelledby="references">
+    <h2 id="references">{t.references}</h2>
+    <p class="docs-section-intro">{t.referenceIntro}</p>
+    <div class="reference-grid">{references.map(reference => <a href={route(locale, 'documentation', reference.slug)}>
+      <h3>{reference.title}<Icon name="arrow" /></h3><p>{reference.description}</p>
+    </a>)}</div>
+  </section>
+</DocsLayout>

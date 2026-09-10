@@ -3,6 +3,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { browser } from '../site/scripts/browser.mjs';
 import { serve } from '../site/scripts/serve.mjs';
 import { checkPwaInstructions } from './pwa-browser.mjs';
+import { checkDocumentation } from './docs-browser.mjs';
 
 await mkdir('artifacts/review',{recursive:true});
 const host=await serve();
@@ -46,6 +47,7 @@ try {
     report.push(label);
   }
   await checkPwaInstructions(b,host,check);
+  const guideLayouts = await checkDocumentation(b,host,check);
   // Live OS appearance changes swap both the site palette and the actual screenshot.
   await b.navigate(host.url+'/?lang=en'); await b.theme('light'); await b.settle();
   await b.theme('dark'); await b.until("document.querySelector('.workspace img').currentSrc.endsWith('workspace-dark.webp')"); checks++;
@@ -87,6 +89,6 @@ try {
   await b.call('Page.removeScriptToEvaluateOnNewDocument',{identifier});
   await b.navigate(host.url+'/missing-page');check(await b.evaluate("!!document.querySelector('.error-page')"),'Real 404 response is readable');
   check(b.errors.length===0,`Browser console errors: ${b.errors.join('\n')}`);
-  await writeFile('artifacts/review/report.json',JSON.stringify({checks,layouts:report.length,report},null,2)+'\n');
-  console.log(`PASS: ${checks} checks across ${report.length} responsive/theme/locale/page combinations, plus language, keyboard, no-JS, storage and 404 flows.`);
+  await writeFile('artifacts/review/report.json',JSON.stringify({checks,layouts:report.length+guideLayouts.length,report,guideLayouts},null,2)+'\n');
+  console.log(`PASS: ${checks} checks across ${report.length+guideLayouts.length} responsive/theme/locale/page combinations, plus language, device, keyboard, no-JS, storage and 404 flows.`);
 } finally {await b.close();await host.close();}

@@ -1,0 +1,40 @@
+---
+import { render, type CollectionEntry } from 'astro:content';
+import { docsUI } from '../data/docs-ui.mjs';
+import { getGuides } from '../lib/guides';
+import { route, type Locale } from '../lib/site';
+import DocsLayout from '../layouts/DocsLayout.astro';
+import GuideFigure from './GuideFigure.astro';
+import PlatformNotes from './PlatformNotes.astro';
+interface Props { locale: Locale; slug: string; entry: CollectionEntry<'guides'> }
+const { locale, slug, entry } = Astro.props;
+const t = docsUI[locale];
+const { Content, headings } = await render(entry);
+const guides = await getGuides(locale);
+const index = guides.findIndex(guide => guide.slug === slug);
+const previous = guides[index - 1];
+const next = guides[index + 1];
+const related = entry.data.related.map(slug => {
+  const guide = guides.find(guide => guide.slug === slug);
+  if (!guide) throw new Error(`Unknown related guide: ${slug}`);
+  return guide;
+});
+---
+<DocsLayout locale={locale} slug={slug} headings={headings}>
+  <article class="guide-article">
+    <span class="guide-status">{t.outline}</span>
+    <h1>{entry.data.title}</h1>
+    <p class="docs-lead">{entry.data.description}</p>
+    <GuideFigure locale={locale} caption={entry.data.figure} image={entry.data.image} />
+    <div class="guide-prose"><Content /></div>
+    {slug === 'advanced/input' && <PlatformNotes locale={locale} />}
+    {related.length > 0 && <section class="guide-related" aria-labelledby="related">
+      <h2 id="related">{t.related}</h2>
+      <ul>{related.map(guide => <li><a href={route(locale, 'documentation', guide.slug)}>{guide.entry.data.title}</a></li>)}</ul>
+    </section>}
+  </article>
+  <nav class="guide-pagination" aria-label={t.contents}>
+    {previous && <a href={route(locale, 'documentation', previous.slug)} rel="prev"><span>{t.previous}</span>{previous.entry.data.title}</a>}
+    {next && <a href={route(locale, 'documentation', next.slug)} rel="next"><span>{t.next}</span>{next.entry.data.title}</a>}
+  </nav>
+</DocsLayout>

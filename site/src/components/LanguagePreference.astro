@@ -1,8 +1,8 @@
 ---
 import { locales, route, type Locale, type SitePage } from '../lib/site';
-interface Props { locale: Locale; page: SitePage }
-const { locale, page } = Astro.props;
-const languageUrls = Object.fromEntries(locales.map(code => [code, route(code, page)]));
+interface Props { locale: Locale; page: SitePage; slug?: string }
+const { locale, page, slug = '' } = Astro.props;
+const languageUrls = Object.fromEntries(locales.map(code => [code, route(code, page, slug)]));
 ---
 <!-- GitHub Pages cannot inspect request headers. Run before paint using Astro's generated URLs. -->
 <script is:inline define:vars={{ current: locale, page, languageUrls }}>

@@ -3,6 +3,8 @@ import assert from 'node:assert/strict';
 import { readFile, readdir, stat } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { createHash } from 'node:crypto';
+import { docsUI } from '../site/src/data/docs-ui.mjs';
+import { docTopics } from '../site/src/data/docs-nav.mjs';
 import { content, languages } from '../site/src/data/content.mjs';
 
 const root=resolve(process.env.SITE_OUTPUT || 'docs');
@@ -72,9 +74,11 @@ for(const locale of Object.keys(languages)) {
       assert.ok(modules.every(code=>!code.includes('[data-pwa-guide]')), 'Other pages do not load PWA behavior');
     }
     if(page==='documentation') {
-      for(const text of [...content[locale].documentation.built,...content[locale].documentation.planned,content[locale].documentation.direction]) assert.ok(html.includes(text));
-      assert.equal((html.match(/<section>/g)||[]).length,3);
-      assert.doesNotMatch(html,/<aside/);
+      assert.ok(html.includes(docsUI[locale].intro));
+      assert.ok(html.includes(docsUI[locale].notice));
+      assert.equal((html.match(/class="phase-card"/g)||[]).length,4);
+      assert.match(html, /class="docs-sidebar"/);
+      for (const {slug} of docTopics) assert.ok(html.includes(`href="/${route(locale, 'documentation')}${slug}/"`));
     }
   });
 }
@@ -92,7 +96,7 @@ test('every local link and referenced asset resolves in the published output',as
 });
 test('GitHub Pages output, sitemap, error page and distributable notices',async()=>{
   assert.equal(await read('CNAME'),'capycanvas.art\n'); assert.equal(await read('.nojekyll'),'');
-  assert.equal((await read('sitemap.xml')).match(/<loc>/g).length,12);
+  assert.equal((await read('sitemap.xml')).match(/<loc>/g).length,4*(3+docTopics.length));
   assert.match(await read('robots.txt'),/Sitemap: https:\/\/capycanvas.art\/sitemap.xml/);
   assert.match(await read('404.html'),/name="robots" content="noindex"/);
   for(const name of ['LICENSE','LICENSE-MIT','LICENSE-APACHE','BRANDING.md','THIRD_PARTY_NOTICES.md']) assert.equal(await read(name),await readFile(name,'utf8'));

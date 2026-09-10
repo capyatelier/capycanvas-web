@@ -1,0 +1,56 @@
+---
+import { content } from '../data/content.mjs';
+import { docsUI } from '../data/docs-ui.mjs';
+import { docGroups } from '../data/docs-nav.mjs';
+import { getGuides } from '../lib/guides';
+import { route, type Locale } from '../lib/site';
+import Icon from '../components/Icon.astro';
+interface Props { locale: Locale; slug?: string; headings?: { slug: string; text: string; depth: number }[] }
+const { locale, slug = '', headings = [] } = Astro.props;
+const t = docsUI[locale];
+const guides = await getGuides(locale);
+---
+<div class="docs-shell">
+  <aside class="docs-sidebar">
+    <details class="docs-menu" open>
+      <summary>{t.contents}<Icon name="chevron" /></summary>
+      <nav aria-label={t.contents} class="docs-navigation">
+        <a class="docs-overview" href={route(locale, 'documentation')} aria-current={!slug ? 'page' : undefined}>{t.overview}</a>
+        {docGroups.map(group => <div class="docs-nav-group">
+          <p>{t.groups[group as keyof typeof t.groups]}</p>
+          <ul>{guides.filter(guide => guide.group === group).map((guide, i) => <li>
+            <a href={route(locale, 'documentation', guide.slug)} aria-current={slug === guide.slug ? 'page' : undefined}>
+              {group === 'illustration' && <span class="docs-step" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>}
+              <span>{guide.entry.data.title}</span>
+            </a>
+          </li>)}</ul>
+        </div>)}
+      </nav>
+    </details>
+  </aside>
+  <main id="main" class:list={['docs-main', { 'docs-landing': !slug }]}>
+    {slug && <a class="docs-back" href={route(locale, 'documentation')}>{content[locale].documentation.title}</a>}
+    <slot />
+  </main>
+  {headings.length > 0 && <aside class="docs-toc">
+    <nav aria-label={t.onPage}>
+      <p>{t.onPage}</p>
+      <ul>{headings.filter(heading => heading.depth === 2).map(heading => <li><a href={`#${heading.slug}`}>{heading.text}</a></li>)}</ul>
+    </nav>
+  </aside>}
+</div>
+<script>
+  const menu = document.querySelector<HTMLDetailsElement>('.docs-menu');
+  const mobile = matchMedia('(max-width: 800px)');
+  if (menu) {
+    const setLayout = () => { menu.open = !mobile.matches; };
+    setLayout();
+    mobile.addEventListener('change', setLayout);
+    menu.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && mobile.matches) {
+        menu.open = false;
+        menu.querySelector('summary')?.focus();
+      }
+    });
+  }
+</script>

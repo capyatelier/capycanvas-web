@@ -5,14 +5,14 @@ import { github } from '../lib/icons';
 import capybara from '../../public/assets/capybara.svg?raw';
 import Icon from './Icon.astro';
 import LanguageMenu from './LanguageMenu.astro';
-interface Props { locale: Locale; page: SitePage }
-const { locale, page } = Astro.props;
+interface Props { locale: Locale; page: SitePage; slug?: string }
+const { locale, page, slug = '' } = Astro.props;
 const t = content[locale];
 const brandSvg = capybara.replace('<svg ', '<svg aria-hidden="true" ');
 const navPages = ['download', 'documentation'] as const;
 ---
 {page === 'home' ? (
-  <div class="home-top"><LanguageMenu locale={locale} page={page} /></div>
+  <div class="home-top"><LanguageMenu locale={locale} page={page} slug={slug} /></div>
 ) : (
   <header class="site-header">
     <div class="nav-inner">
@@ -22,7 +22,7 @@ const navPages = ['download', 'documentation'] as const;
         <a href={appUrl}>{t.nav.webDemo}<Icon name="external" /></a>
       </nav>
       <div class="nav-tools">
-        <LanguageMenu locale={locale} page={page} />
+        <LanguageMenu locale={locale} page={page} slug={slug} />
         <a class="icon-button" href={repositoryUrl} target="_blank" rel="noopener noreferrer" aria-label={t.nav.github} set:html={github} />
       </div>
     </div>

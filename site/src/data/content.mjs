@@ -18,15 +18,8 @@ export const content = {
       meta: 'Install Capy Canvas as a web app for offline use. Native downloads are coming soon.'
     },
     documentation: {
-      title: 'Documentation', intro: 'Capy Canvas is in early development. Documentation is coming soon.',
-      now: 'Completed', next: 'Next', focus: 'Focus',
-      built: ['General editor framework', 'MVP brush library', 'Web and GTK ports'],
-      planned: [
-        'Core editor features, brushes, and tools expected in a drawing app.',
-        'iOS/iPadOS and Android ports, including drawing tablets such as the Wacom MovinkPad Pro 14.'
-      ],
-      direction: 'Comics and illustration first, with realistic painting planned later.',
-      meta: 'Capy Canvas development status: editor framework, MVP brushes, and web and GTK ports completed. Core editing tools and mobile ports are next.'
+      title: 'Documentation',
+      meta: 'Capy Canvas guides: quickstart, workspace, a four-phase illustration tutorial, layers, tools, and advanced brush settings.'
     },
     notFound: { title: 'Page not found', text: 'The requested page does not exist.', action: 'Home' }
   },
@@ -46,15 +39,8 @@ export const content = {
       meta: 'Capy Canvas のウェブ版をインストールしてオフラインで使えます。ネイティブ版は公開準備中です。'
     },
     documentation: {
-      title: 'ドキュメント', intro: 'Capy Canvas は開発初期の段階です。ドキュメントは準備中です。',
-      now: '実装済み', next: '今後の予定', focus: '開発方針',
-      built: ['エディターの基本フレームワーク', 'MVP ブラシライブラリ（初期の最小構成）', 'ウェブ版と GTK 版'],
-      planned: [
-        'お絵かきアプリに必要な基本編集機能、ブラシ、各種ツールの拡充。',
-        'iOS/iPadOS と Android への移植。Wacom MovinkPad Pro 14 などの描画用タブレットにも対応予定。'
-      ],
-      direction: 'まずは漫画とイラスト向けの機能に重点を置き、将来的にはリアルな絵画表現にも対応する予定です。',
-      meta: 'Capy Canvas の開発状況。基本フレームワーク、MVP ブラシ、ウェブ版、GTK 版は実装済み。次は基本編集ツールとモバイル版です。'
+      title: 'ドキュメント',
+      meta: 'Capy Canvas のガイド。はじめの操作、作業画面、4工程のイラスト制作、レイヤー、ツール、ブラシの詳細設定。'
     },
     notFound: { title: 'ページが見つかりません', text: '指定されたページは存在しません。', action: 'ホーム' }
   },
@@ -74,15 +60,8 @@ export const content = {
       meta: '安装 Capy Canvas 网页应用，即可离线使用。原生版本即将推出。'
     },
     documentation: {
-      title: '文档', intro: 'Capy Canvas 仍处于开发早期，文档正在筹备中。',
-      now: '已完成', next: '下一步', focus: '开发方向',
-      built: ['编辑器基础框架', 'MVP 笔刷库（初始最小可用版本）', '网页版和 GTK 版'],
-      planned: [
-        '完善绘画应用所需的核心编辑功能、笔刷及各类工具。',
-        '移植至 iOS/iPadOS 和 Android，包括 Wacom MovinkPad Pro 14 等绘画平板。'
-      ],
-      direction: '优先面向漫画和插画创作，后续计划支持写实绘画。',
-      meta: 'Capy Canvas 开发状态：编辑器框架、MVP 笔刷库、网页版和 GTK 版已完成。下一步是核心编辑工具和移动平台移植。'
+      title: '文档',
+      meta: 'Capy Canvas指南：快速上手、工作区、四阶段插画教程、图层、工具与进阶笔刷设置。'
     },
     notFound: { title: '页面不存在', text: '找不到所请求的页面。', action: '首页' }
   },
@@ -102,15 +81,8 @@ export const content = {
       meta: 'Capy Canvas 웹 앱을 설치해 오프라인으로 사용하세요. 네이티브 버전은 출시 예정입니다.'
     },
     documentation: {
-      title: '문서', intro: 'Capy Canvas는 개발 초기 단계입니다. 문서는 준비 중입니다.',
-      now: '완료', next: '다음 단계', focus: '개발 방향',
-      built: ['에디터 기본 프레임워크', 'MVP 브러시 라이브러리(초기 최소 기능 버전)', '웹 및 GTK 버전'],
-      planned: [
-        '드로잉 앱에 필요한 핵심 편집 기능, 브러시 및 도구 확충.',
-        'iOS/iPadOS 및 Android로 이식. Wacom MovinkPad Pro 14 같은 드로잉 태블릿도 지원할 예정입니다.'
-      ],
-      direction: '만화와 일러스트 도구에 먼저 집중하고, 사실적인 페인팅은 이후 지원할 계획입니다.',
-      meta: 'Capy Canvas 개발 현황: 에디터 프레임워크, MVP 브러시, 웹 및 GTK 버전 완료. 다음 단계는 핵심 편집 도구와 모바일 버전입니다.'
+      title: '문서',
+      meta: 'Capy Canvas 가이드: 빠른 시작, 작업 화면, 네 단계 일러스트, 레이어, 도구와 고급 브러시 설정.'
     },
     notFound: { title: '페이지를 찾을 수 없습니다', text: '요청한 페이지가 존재하지 않습니다.', action: '홈' }
   }
