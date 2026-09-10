@@ -60,11 +60,11 @@ English-first editing, planned images, and custom interactive components.
 | --- | --- | --- | --- | --- |
 | Home | `/` | `/ja/` | `/zh/` | `/ko/` |
 | Download | `/download/` | `/ja/download/` | `/zh/download/` | `/ko/download/` |
-| Documentation | `/documentation/` | `/ja/documentation/` | `/zh/documentation/` | `/ko/documentation/` |
+| Documentation | `/docs/` | `/ja/docs/` | `/zh/docs/` | `/ko/docs/` |
 
 Guides extend the documentation route with the same topic path in every locale,
-for example `/documentation/illustration/draft/` and
-`/ja/documentation/illustration/draft/`. The sidebar, related guides, section links,
+for example `/docs/illustration/draft/` and
+`/ja/docs/illustration/draft/`. The sidebar, related guides, section links,
 and previous/next links all point to static pages. Device-specific input notes
 auto-detect the reader's platform and provide a manual selector; all variants are
 present in the HTML and remain readable without JavaScript.
@@ -170,7 +170,10 @@ use a current reference build when checking subsequent visual regressions.
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for GitHub Pages, Porkbun, and Cloudflare setup.
 The publishing directory is **`/docs`**, not the generator's `site/` directory.
-The public documentation route is `/documentation/`.
+The public documentation route is `/docs/`.
+The former `/documentation/` URLs redirect to the matching `/docs/` pages,
+including translated guides. GitHub Pages still serves the repository's `docs/`
+directory, so the documentation landing page is built to `docs/docs/index.html`.
 
 ## License
 

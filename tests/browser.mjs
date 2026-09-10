@@ -16,7 +16,7 @@ try {
   for(const [width,height] of [[1440,900],[1280,720],[1024,600],[768,1024],[390,844],[320,568],[844,390]]) for(const theme of ['light','dark']) for(const locale of ['en','ja','zh','ko']) for(const page of ['home','download','documentation']) {
     await b.call('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
     await b.theme(theme);
-    const path=`${locale==='en'?'':'/'+locale}/${page==='home'?'':page+'/'}`;
+    const path=`${locale==='en'?'':'/'+locale}/${page==='home'?'':(page==='documentation'?'docs':page)+'/'}`;
     await b.navigate(host.url+path);
     await b.evaluate('Promise.all([...document.images].map(i=>i.decode())).then(()=>null)');
     await b.settle();
@@ -60,10 +60,10 @@ try {
     await b.call('Page.removeScriptToEvaluateOnNewDocument',{identifier});
   }
   // Explicit locale URLs take priority; language links preserve the page and persist.
-  await b.navigate(host.url+'/ja/documentation/');
+  await b.navigate(host.url+'/ja/docs/');
   await b.evaluate("document.querySelector('.language-menu').open=true;document.querySelector('[data-language=ko]').click()");
   await b.until("document.documentElement.dataset.locale==='ko'");
-  check(await b.evaluate("location.pathname==='/ko/documentation/'&&localStorage.getItem('capycanvas.language')==='ko'"),'Manual selection persists and preserves page');
+  check(await b.evaluate("location.pathname==='/ko/docs/'&&localStorage.getItem('capycanvas.language')==='ko'"),'Manual selection persists and preserves page');
   await b.navigate(host.url+'/');await b.until("document.documentElement.dataset.locale==='ko'");checks++;
   await b.navigate(host.url+'/ja/');check(await b.evaluate("document.documentElement.dataset.locale==='ja'"),'Explicit locale URL wins over storage');
   await b.evaluate("document.querySelector('[data-language=en]').click()");await b.until("document.documentElement.dataset.locale==='en'");checks++;

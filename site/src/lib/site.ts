@@ -12,7 +12,8 @@ export const appUrl = 'https://editor.capycanvas.art/';
 export const repositoryUrl = 'https://github.com/capyatelier/capycanvas';
 
 export function route(locale: Locale, page: SitePage = 'home', slug = '') {
-  return getRelativeLocaleUrl(locale, page === 'home' ? '' : [page, slug].filter(Boolean).join('/'));
+  const segment = page === 'documentation' ? 'docs' : page;
+  return getRelativeLocaleUrl(locale, page === 'home' ? '' : [segment, slug].filter(Boolean).join('/'));
 }
 
 export const routes = locales.flatMap(locale => [

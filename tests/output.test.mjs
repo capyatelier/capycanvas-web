@@ -10,7 +10,7 @@ import { content, languages } from '../site/src/data/content.mjs';
 const root=resolve(process.env.SITE_OUTPUT || 'docs');
 const read=path=>readFile(join(root,path),'utf8');
 const pages=['home','download','documentation'];
-const route=(l,p)=>`${l==='en'?'':l+'/'}${p==='home'?'':p+'/'}`;
+const route=(l,p)=>`${l==='en'?'':l+'/'}${p==='home'?'':(p==='documentation'?'docs':p)+'/'}`;
 function shape(value) { return Array.isArray(value)?value.map(shape):value && typeof value==='object'?Object.fromEntries(Object.entries(value).map(([k,v])=>[k,shape(v)])):typeof value; }
 for(const locale of Object.keys(languages)) {
   test(`${locale}: translation coverage matches English`,()=>assert.deepEqual(shape(content[locale]),shape(content.en)));

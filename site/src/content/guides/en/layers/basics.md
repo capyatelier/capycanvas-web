@@ -1,15 +1,24 @@
 ---
 title: "Layer basics"
-description: "Layer order, visibility, opacity, and merging."
-figure: "Layer stack containing sketch, line art, base colors, and shading."
+description: "Choose the drawing target and keep revisions separate."
+figure: "Sketch, Line art, Hair, and Hair shading in the Layers panel."
 related: ["layers/masks", "layers/groups"]
 ---
 
-## Active layer and order
-Drawing operations affect the active layer. Layers higher in the stack appear above lower layers. Add, rename, duplicate, reorder, or delete layers in the Layers panel.
+## Choose where a stroke goes
 
-## Visibility and locking
-Visibility hides or shows a layer; opacity controls its contribution to the image. Layer locking prevents edits. Alpha lock preserves the layer's existing transparency during painting.
+The selected layer receives your drawing, fill, and erase operations. Visibility and selection are independent: showing a layer does not make it the drawing target. Before making a correction, check the selected row and, if it has a mask, whether the paint or mask thumbnail is active.
 
-## Merging and flattening
-Merging combines layer contents. Flattening combines the document into a single image and removes the separate layer structure. A layered copy is required to retain independent editing of the original layers.
+Layers higher in the stack appear over layers below them. In the [illustration tutorial](/docs/illustration/draft/), Line art stays above the base colors so a fill does not cover the ink. Reordering a layer can change the picture even though no pixels on that layer have changed.
+
+## Separate work that needs separate adjustment
+
+Use different layers when you expect to recolor, move, hide, or replace parts independently. A sketch and its ink belong on different layers because you need to fade or hide the sketch. A highlight only needs its own layer if you want to adjust it independently of the shading beneath it.
+
+Name layers for their contents, such as Hair or Hair shading. Duplicate a layer before an uncertain edit when you need a directly comparable copy. A [group](/docs/layers/groups/) keeps related layers together without combining their paint.
+
+## Opacity, locks, and merging
+
+Layer opacity fades everything on a layer, including existing marks. A layer lock prevents accidental edits; alpha lock allows recoloring while preserving transparency. The [mask reference](/docs/layers/masks/) explains when alpha lock is useful.
+
+Merge layers only when you no longer need to edit them separately. After merging, their individual opacity, masks, and blending settings are no longer independently adjustable. To share a single image, [export](/docs/tools/files/) it instead of flattening the working document.

@@ -1,0 +1,30 @@
+---
+import { content } from '../data/content.mjs';
+import { origin, route, type Locale } from '../lib/site';
+interface Props { locale: Locale; slug: string }
+const { locale, slug } = Astro.props;
+const target = route(locale, 'documentation', slug);
+const t = content[locale];
+---
+<!doctype html>
+<html lang={t.lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="darkreader-lock" />
+    <title>{t.nav.documentation} — Capy Canvas</title>
+    <link rel="canonical" href={origin + target} />
+    <link rel="icon" type="image/png" sizes="32x32" href={`/assets/favicon.png?v=${import.meta.env.FAVICON_VERSION}`} />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <!-- Preserve explicit language choices and section links on the static host. -->
+    <script is:inline define:vars={{ target }}>
+      location.replace(target + location.search + location.hash);
+    </script>
+    <meta http-equiv="refresh" content={`0;url=${target}`} />
+  </head>
+  <body>
+    <main class="error-page"><a href={target}>{t.nav.documentation}</a></main>
+  </body>
+</html>

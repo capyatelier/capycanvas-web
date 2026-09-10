@@ -7,18 +7,25 @@ import SiteLayout from '../layouts/SiteLayout.astro';
 import Home from '../components/Home.astro';
 import Download from '../components/Download.astro';
 import Documentation from '../components/Documentation.astro';
+import DocumentationRedirect from '../components/DocumentationRedirect.astro';
 
-export const getStaticPaths = (() => routes.map(({ locale, page, path, slug }) => ({
-  params: { path: path.slice(1, -1) || undefined },
-  props: { locale, page, slug },
-}))) satisfies GetStaticPaths;
+export const getStaticPaths = (() => [
+  ...routes.map(({ locale, page, path, slug }) => ({
+    params: { path: path.slice(1, -1) || undefined },
+    props: { locale, page, slug, redirect: false },
+  })),
+  ...routes.filter(({ page }) => page === 'documentation').map(({ locale, page, path, slug }) => ({
+    params: { path: path.replace('/docs/', '/documentation/').slice(1, -1) },
+    props: { locale, page, slug, redirect: true },
+  })),
+]) satisfies GetStaticPaths;
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
-const { locale, page, slug } = Astro.props;
-const entry = slug ? await getEntry('guides', `${locale}/${slug}`) : undefined;
-if (slug && !entry) throw new Error(`Missing guide ${locale}/${slug}`);
+const { locale, page, slug, redirect } = Astro.props;
+const entry = !redirect && slug ? await getEntry('guides', `${locale}/${slug}`) : undefined;
+if (!redirect && slug && !entry) throw new Error(`Missing guide ${locale}/${slug}`);
 const PageContent = { home: Home, download: Download, documentation: Documentation }[page];
 ---
-<SiteLayout locale={locale} page={page} slug={slug} title={entry?.data.title} description={entry?.data.description}>
+{redirect ? <DocumentationRedirect locale={locale} slug={slug} /> : <SiteLayout locale={locale} page={page} slug={slug} title={entry?.data.title} description={entry?.data.description}>
   {entry ? <Guide locale={locale} slug={slug} entry={entry} /> : <PageContent locale={locale} />}
-</SiteLayout>
+</SiteLayout>}

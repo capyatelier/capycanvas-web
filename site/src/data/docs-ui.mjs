@@ -1,8 +1,8 @@
 export const docsUI = {
   "en": {
-    "intro": "Workspace, illustration workflow, and tool reference.",
-    "outline": "Outline",
-    "notice": "Documentation in progress.",
+    "intro": "The tutorial explains Capy Canvas through a character illustration. Reference pages cover individual tools and settings.",
+    "outline": "Draft",
+    "notice": "These draft guides describe the intended workflow and include features that are still in development.",
     "overview": "Overview",
     "contents": "Documentation contents",
     "onPage": "On this page",
@@ -15,12 +15,12 @@ export const docsUI = {
     },
     "startTitle": "Getting started",
     "journey": "Illustration tutorial",
-    "journeyIntro": "The workflow uses separate layers for the sketch, line art, base colors, and shading.",
+    "journeyIntro": "Work through the stages in order using the same document. Each stage builds on the layers from the previous one.",
     "references": "Reference",
-    "referenceIntro": "Layer operations, tool settings, and brush parameters.",
-    "layerSummary": "Layer order, opacity, masks, clipping, and blending modes.",
-    "toolSummary": "Selections, fill, transformations, and file operations.",
-    "brushSummary": "Brush engine, brush presets, and input settings.",
+    "referenceIntro": "These pages explain the controls used in the tutorial and the settings for adapting them to your work.",
+    "layerSummary": "Manage separate parts of an illustration with layers, masks, and groups.",
+    "toolSummary": "Adjust selected areas, correct fill edges, and save or export the result.",
+    "brushSummary": "Adapt brush presets and input settings to the marks you want to make.",
     "figureSoon": "Image pending",
     "related": "See also",
     "previous": "Previous",
@@ -28,7 +28,7 @@ export const docsUI = {
     "platform": "Platform",
     "allPlatforms": "All platforms",
     "platformTitle": "Platform-specific input",
-    "platformIntro": "Input configuration varies by operating system and device.",
+    "platformIntro": "The device selector shows notes for your current system. You can switch it to check another device.",
     "systems": {
       "windows": "Windows",
       "mac": "macOS",
@@ -37,17 +37,17 @@ export const docsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "Pen pressure, tablet drivers, and keyboard shortcuts.",
-      "mac": "Pen tablets, trackpad gestures, and Command-key shortcuts.",
-      "linux": "GTK interface, tablet mapping, and pen input.",
-      "ipad": "Apple Pencil pressure and tilt, touch gestures, and external keyboards.",
-      "android": "Stylus pressure, touch gestures, and Android drawing tablets, including the Wacom MovinkPad Pro 14."
+      "windows": "Check pen pressure in your tablet driver's settings if it fails in more than one app. With multiple displays, map the tablet to the display showing Capy Canvas.",
+      "mac": "Check the display mapping in your tablet settings before adjusting the brush. When assigning shortcuts, treat Command and Control as different keys; do not copy a Windows shortcut assignment without checking it.",
+      "linux": "For the GTK version, check your desktop's tablet mapping as well as the editor's input settings. Include whether you use Wayland or X11 when reporting cursor offsets or missing pressure.",
+      "ipad": "Check that your Apple Pencil model supports the pressure or tilt input you want to use. If your hand leaves marks, check how touch input is assigned before changing the brush.",
+      "android": "Check that the pen and device support pressure input; a generic touch stylus may act like a finger. If pen input works but touch interferes, check the separate drawing and canvas-navigation assignments."
     }
   },
   "ja": {
-    "intro": "作業画面、イラスト制作の手順、ツールのリファレンス。",
-    "outline": "概要",
-    "notice": "ドキュメントは作成中です。",
+    "intro": "人物イラストの制作を通してCapy Canvasの操作を説明します。個々のツールや設定はリファレンスで確認できます。",
+    "outline": "草案",
+    "notice": "このガイドは想定する制作手順を説明する草案で、開発中の機能も含みます。",
     "overview": "目次",
     "contents": "ドキュメントの目次",
     "onPage": "このページの内容",
@@ -60,12 +60,12 @@ export const docsUI = {
     },
     "startTitle": "基本操作",
     "journey": "イラスト制作の手順",
-    "journeyIntro": "ラフ、線画、下塗り、陰影を別々のレイヤーで作成する手順です。",
+    "journeyIntro": "同じドキュメントで順に進めます。各工程では、前の工程で作成したレイヤーを使います。",
     "references": "リファレンス",
-    "referenceIntro": "レイヤー操作、ツール設定、ブラシのパラメーター。",
-    "layerSummary": "重ね順、不透明度、マスク、クリッピング、合成モード。",
-    "toolSummary": "選択範囲、塗りつぶし、変形、ファイル操作。",
-    "brushSummary": "ブラシエンジン、プリセット、入力設定。",
+    "referenceIntro": "制作手順で使う操作と、自分の作業に合わせて調整するための設定を説明します。",
+    "layerSummary": "レイヤー、マスク、グループを使って、イラストの各部分を管理します。",
+    "toolSummary": "選択部分の調整、塗りの縁の修正、保存と書き出しを説明します。",
+    "brushSummary": "描きたい筆跡に合わせて、ブラシのプリセットと入力設定を調整します。",
     "figureSoon": "画像未掲載",
     "related": "関連項目",
     "previous": "前へ",
@@ -73,7 +73,7 @@ export const docsUI = {
     "platform": "プラットフォーム",
     "allPlatforms": "すべて",
     "platformTitle": "プラットフォーム別の入力",
-    "platformIntro": "入力設定はOSとデバイスによって異なります。",
+    "platformIntro": "現在のシステムに対応する説明を表示します。選択を切り替えると、ほかのデバイスについても確認できます。",
     "systems": {
       "windows": "Windows",
       "mac": "macOS",
@@ -82,17 +82,17 @@ export const docsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "筆圧、タブレットドライバー、キーボードショートカット。",
-      "mac": "ペンタブレット、トラックパッドのジェスチャー、Commandキーのショートカット。",
-      "linux": "GTKインターフェース、タブレットのマッピング、ペン入力。",
-      "ipad": "Apple Pencilの筆圧と傾き、タッチジェスチャー、外付けキーボード。",
-      "android": "スタイラスの筆圧、タッチジェスチャー、Wacom MovinkPad Pro 14などの描画用デバイス。"
+      "windows": "複数のアプリで筆圧が使えない場合は、タブレットドライバーの設定で筆圧を確認します。複数画面を使う場合は、Capy Canvasを表示している画面にタブレットを割り当ててください。",
+      "mac": "ブラシを調整する前に、タブレット設定の画面への割り当てを確認します。ショートカットのCommandとControlは別のキーなので、Windowsの割り当てをそのまま使わずに確認してください。",
+      "linux": "GTK版では、エディターの入力設定に加えて、デスクトップ側のタブレットの割り当ても確認します。カーソルのずれや筆圧の不具合を報告する際は、WaylandとX11のどちらを使っているかも記載してください。",
+      "ipad": "使っているApple Pencilのモデルが、必要な筆圧や傾きの入力に対応しているか確認します。手を置くと線が描かれる場合は、ブラシを変更する前にタッチ入力の割り当てを確認してください。",
+      "android": "ペンとデバイスが筆圧入力に対応しているか確認します。一般的なタッチ用スタイラスは、指と同じ入力になる場合があります。ペンは使えるのにタッチが妨げになる場合は、描画とキャンバス操作の割り当てを確認してください。"
     }
   },
   "zh": {
-    "intro": "工作区、插画制作流程与工具参考。",
-    "outline": "大纲",
-    "notice": "文档编写中。",
+    "intro": "教程通过一幅人物插画介绍Capy Canvas的操作，参考页面则说明各个工具与设置。",
+    "outline": "草案",
+    "notice": "这些指南草案描述了预期的制作流程，其中包含仍在开发的功能。",
     "overview": "概览",
     "contents": "文档目录",
     "onPage": "本页内容",
@@ -105,12 +105,12 @@ export const docsUI = {
     },
     "startTitle": "基本操作",
     "journey": "插画制作教程",
-    "journeyIntro": "使用独立图层绘制草稿、线稿、底色与明暗。",
+    "journeyIntro": "按顺序在同一文档中完成各阶段，每一步都会沿用上一阶段建立的图层。",
     "references": "参考手册",
-    "referenceIntro": "图层操作、工具设置与笔刷参数。",
-    "layerSummary": "图层顺序、不透明度、蒙版、剪贴与混合模式。",
-    "toolSummary": "选区、填充、变换与文件操作。",
-    "brushSummary": "笔刷引擎、笔刷预设与输入设置。",
+    "referenceIntro": "这些页面解释教程用到的控件，以及如何按自己的工作方式调整相关设置。",
+    "layerSummary": "用图层、蒙版和图层组管理插画的不同部分。",
+    "toolSummary": "调整选中内容、修正填充边缘，并保存或导出结果。",
+    "brushSummary": "根据需要的笔迹调整笔刷预设和输入设置。",
     "figureSoon": "图片待补充",
     "related": "另请参阅",
     "previous": "上一篇",
@@ -118,7 +118,7 @@ export const docsUI = {
     "platform": "平台",
     "allPlatforms": "所有平台",
     "platformTitle": "各平台的输入设置",
-    "platformIntro": "输入设置因操作系统和设备而异。",
+    "platformIntro": "设备选择器会显示当前系统的说明，也可以切换到其他设备进行查看。",
     "systems": {
       "windows": "Windows",
       "mac": "macOS",
@@ -127,17 +127,17 @@ export const docsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "压感、数位板驱动与键盘快捷键。",
-      "mac": "数位板、触控板手势与Command键快捷键。",
-      "linux": "GTK界面、数位板映射与数位笔输入。",
-      "ipad": "Apple Pencil的压感与倾斜、触控手势和外接键盘。",
-      "android": "触控笔压感、触控手势，以及Wacom MovinkPad Pro 14等绘画设备。"
+      "windows": "如果多个应用都无法使用压感，请在数位板驱动设置中检查笔压。使用多台显示器时，将数位板映射到显示Capy Canvas的屏幕。",
+      "mac": "修改笔刷前，先检查数位板设置中的屏幕映射。设置快捷键时要区分Command和Control，不要未经检查就照搬Windows的按键分配。",
+      "linux": "使用GTK版本时，除了编辑器的输入设置，也要检查桌面环境中的数位板映射。报告光标偏移或压感缺失时，请注明使用的是Wayland还是X11。",
+      "ipad": "确认所用Apple Pencil型号支持需要的压感或倾斜输入。如果手掌接触屏幕会留下笔迹，请先检查触控的操作分配，再修改笔刷。",
+      "android": "确认笔和设备支持压力输入；普通电容触控笔可能与手指输入相同。如果笔能正常工作但触控干扰绘画，请检查绘画与画布操作各自的分配。"
     }
   },
   "ko": {
-    "intro": "작업 화면, 일러스트 제작 과정 및 도구 참조 문서.",
-    "outline": "개요",
-    "notice": "문서 작성 중입니다.",
+    "intro": "인물 일러스트를 그리면서 Capy Canvas의 조작을 설명합니다. 개별 도구와 설정은 참조 문서에서 확인할 수 있습니다.",
+    "outline": "초안",
+    "notice": "이 가이드 초안은 예정된 작업 흐름을 설명하며, 아직 개발 중인 기능도 포함합니다.",
     "overview": "개요",
     "contents": "문서 목차",
     "onPage": "이 페이지의 내용",
@@ -150,12 +150,12 @@ export const docsUI = {
     },
     "startTitle": "기본 조작",
     "journey": "일러스트 제작 튜토리얼",
-    "journeyIntro": "스케치, 선화, 밑색과 명암을 별도 레이어로 작성하는 과정입니다.",
+    "journeyIntro": "같은 문서에서 순서대로 진행합니다. 각 단계는 앞 단계에서 만든 레이어를 이어서 사용합니다.",
     "references": "참조 문서",
-    "referenceIntro": "레이어 조작, 도구 설정 및 브러시 매개변수.",
-    "layerSummary": "레이어 순서, 불투명도, 마스크, 클리핑 및 혼합 모드.",
-    "toolSummary": "선택 영역, 채우기, 변형 및 파일 조작.",
-    "brushSummary": "브러시 엔진, 프리셋 및 입력 설정.",
+    "referenceIntro": "튜토리얼에서 사용하는 조작과 자신의 작업 방식에 맞게 조정할 설정을 설명합니다.",
+    "layerSummary": "레이어, 마스크, 그룹으로 일러스트의 각 부분을 관리합니다.",
+    "toolSummary": "선택한 부분과 채우기 가장자리를 수정하고 결과를 저장하거나 내보냅니다.",
+    "brushSummary": "원하는 자국에 맞춰 브러시 프리셋과 입력 설정을 조정합니다.",
     "figureSoon": "이미지 준비 중",
     "related": "관련 항목",
     "previous": "이전",
@@ -163,7 +163,7 @@ export const docsUI = {
     "platform": "플랫폼",
     "allPlatforms": "모든 플랫폼",
     "platformTitle": "플랫폼별 입력 설정",
-    "platformIntro": "입력 설정은 운영체제와 기기에 따라 다릅니다.",
+    "platformIntro": "현재 시스템에 맞는 설명을 표시합니다. 다른 기기를 선택해 해당 설명을 확인할 수도 있습니다.",
     "systems": {
       "windows": "Windows",
       "mac": "macOS",
@@ -172,11 +172,11 @@ export const docsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "필압, 태블릿 드라이버 및 키보드 단축키.",
-      "mac": "펜 태블릿, 트랙패드 제스처 및 Command 키 단축키.",
-      "linux": "GTK 인터페이스, 태블릿 매핑 및 펜 입력.",
-      "ipad": "Apple Pencil 필압과 기울기, 터치 제스처 및 외장 키보드.",
-      "android": "스타일러스 필압, 터치 제스처 및 Wacom MovinkPad Pro 14 등의 드로잉 기기."
+      "windows": "여러 앱에서 필압이 작동하지 않으면 태블릿 드라이버 설정에서 압력을 확인합니다. 화면을 여러 개 쓴다면 Capy Canvas가 있는 화면에 태블릿을 매핑하세요.",
+      "mac": "브러시를 조정하기 전에 태블릿 설정의 화면 매핑을 확인합니다. 단축키를 지정할 때 Command와 Control은 다른 키이므로 Windows의 할당을 그대로 옮기지 말고 확인하세요.",
+      "linux": "GTK 버전에서는 편집기의 입력 설정과 데스크톱의 태블릿 매핑을 함께 확인합니다. 커서 위치나 필압 문제를 보고할 때는 Wayland와 X11 중 무엇을 사용하는지도 적어 주세요.",
+      "ipad": "사용하는 Apple Pencil 모델이 필요한 필압이나 기울기 입력을 지원하는지 확인합니다. 손을 올렸을 때 자국이 생기면 브러시를 바꾸기 전에 터치 할당부터 확인하세요.",
+      "android": "펜과 기기가 필압 입력을 지원하는지 확인합니다. 일반 터치용 스타일러스는 손가락처럼 입력될 수 있습니다. 펜은 정상인데 터치가 방해된다면 그리기와 캔버스 조작의 할당을 확인하세요."
     }
   }
 };

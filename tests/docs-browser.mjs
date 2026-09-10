@@ -2,9 +2,23 @@ import { docTopics } from '../site/src/data/docs-nav.mjs';
 import { content } from '../site/src/data/content.mjs';
 
 export async function checkDocumentation(b, host, check) {
-  const route = (locale, slug) => `${locale === 'en' ? '' : '/' + locale}/documentation/${slug}/`;
+  const route = (locale, slug) => `${locale === 'en' ? '' : '/' + locale}/docs/${slug}/`;
   const results = [];
   await b.evaluate('localStorage.clear()');
+  // Old bookmarks keep the article, explicit language, and section on the static host.
+  for (const locale of ['en', 'ja', 'zh', 'ko']) {
+    const target = route(locale, 'illustration/render');
+    await b.navigate(host.url + target + '?lang=' + locale);
+    const section = await b.evaluate("document.querySelector('.guide-prose h2').id");
+    await b.navigate(host.url + target.replace('/docs/', '/documentation/') + '?lang=' + locale + '#' + encodeURIComponent(section));
+    await b.until(`location.pathname === '${target}' && document.readyState === 'complete'`);
+    check(await b.evaluate(`location.search === '?lang=${locale}' && decodeURIComponent(location.hash.slice(1)) === ${JSON.stringify(section)}`), `Legacy guide preserves query and section in ${locale}`);
+  }
+  await b.call('Emulation.setScriptExecutionDisabled', { value: true });
+  await b.navigate(host.url + '/ja/documentation/quickstart/');
+  await b.until("location.pathname === '/ja/docs/quickstart/' && document.readyState === 'complete'");
+  check(await b.evaluate("document.documentElement.lang === 'ja' && !!document.querySelector('.guide-prose')"), 'Legacy guide redirects without JavaScript');
+  await b.call('Emulation.setScriptExecutionDisabled', { value: false });
   for (const [width, height] of [[1440, 900], [390, 844]]) for (const theme of ['light', 'dark']) for (const locale of ['en', 'ja', 'zh', 'ko']) for (const { slug } of docTopics) {
     await b.call('Emulation.setDeviceMetricsOverride', { width, height, deviceScaleFactor: 1, mobile: false });
     await b.theme(theme);
@@ -42,7 +56,7 @@ export async function checkDocumentation(b, host, check) {
   }
   // The narrowest supported width and a long translated title.
   await b.call('Emulation.setDeviceMetricsOverride', { width: 320, height: 568, deviceScaleFactor: 1, mobile: false });
-  await b.navigate(host.url + '/ko/documentation/advanced/input/');
+  await b.navigate(host.url + '/ko/docs/advanced/input/');
   check(await b.evaluate('document.documentElement.scrollWidth <= innerWidth'), 'Narrow input reference has no horizontal overflow');
   // Keyboard-accessible mobile navigation opens, closes, and follows real links.
   await b.evaluate("document.querySelector('.docs-menu summary').focus()");
@@ -52,19 +66,19 @@ export async function checkDocumentation(b, host, check) {
   check(await b.evaluate("document.querySelector('.docs-menu').open"), 'Keyboard opens documentation navigation');
   await b.call('Input.dispatchKeyEvent', { type: 'keyDown', key: 'Escape', code: 'Escape', windowsVirtualKeyCode: 27 });
   check(await b.evaluate("!document.querySelector('.docs-menu').open && document.activeElement === document.querySelector('.docs-menu summary')"), 'Escape closes navigation and restores focus');
-  await b.evaluate("document.querySelector('.docs-menu').open = true; document.querySelector('.docs-navigation a[href=\"/ko/documentation/illustration/ink/\"]').click()");
-  await b.until("location.pathname === '/ko/documentation/illustration/ink/' && document.readyState === 'complete'");
+  await b.evaluate("document.querySelector('.docs-menu').open = true; document.querySelector('.docs-navigation a[href=\"/ko/docs/illustration/ink/\"]').click()");
+  await b.until("location.pathname === '/ko/docs/illustration/ink/' && document.readyState === 'complete'");
   check(await b.evaluate("document.querySelector('.guide-prose h2') !== null"), 'Sidebar navigates to the actual guide');
   // Language detection and explicit choices keep nested article paths.
   const { identifier: languageOverride } = await b.call('Page.addScriptToEvaluateOnNewDocument', { source: "Object.defineProperty(navigator,'languages',{get:()=>['ja-JP'],configurable:true})" });
-  await b.navigate(host.url + '/documentation/illustration/mask/');
-  await b.until("location.pathname === '/ja/documentation/illustration/mask/' && document.readyState === 'complete'");
+  await b.navigate(host.url + '/docs/illustration/mask/');
+  await b.until("location.pathname === '/ja/docs/illustration/mask/' && document.readyState === 'complete'");
   check(await b.evaluate("document.documentElement.lang === 'ja'"), 'Browser language detection preserves nested guide');
   await b.evaluate("document.querySelector('.language-menu').open = true; document.querySelector('[data-language=zh]').click()");
-  await b.until("location.pathname === '/zh/documentation/illustration/mask/' && document.readyState === 'complete'");
+  await b.until("location.pathname === '/zh/docs/illustration/mask/' && document.readyState === 'complete'");
   check(await b.evaluate("localStorage.getItem('capycanvas.language') === 'zh'"), 'Manual guide translation persists');
   await b.evaluate("document.querySelector('[data-language=en]').click()");
-  await b.until("location.pathname === '/documentation/illustration/mask/' && document.readyState === 'complete'");
+  await b.until("location.pathname === '/docs/illustration/mask/' && document.readyState === 'complete'");
   check(await b.evaluate("location.search === '?lang=en' && document.documentElement.lang === 'en'"), 'Explicit English guide overrides detected language');
   await b.call('Page.removeScriptToEvaluateOnNewDocument', { identifier: languageOverride });
   // Device detection is guidance; every variant is switchable and in static HTML.
@@ -81,7 +95,7 @@ export async function checkDocumentation(b, host, check) {
   for (const [platform, userAgent, maxTouchPoints, expected] of profiles) {
     const { identifier } = await b.call('Page.addScriptToEvaluateOnNewDocument', { source: `for (const [key,value] of Object.entries(${JSON.stringify({ platform, userAgent, maxTouchPoints })})) Object.defineProperty(navigator,key,{get:()=>value,configurable:true});` });
     await b.evaluate('localStorage.clear()');
-    await b.navigate(host.url + '/documentation/advanced/input/?lang=en');
+    await b.navigate(host.url + '/docs/advanced/input/?lang=en');
     await b.until("document.querySelector('.docs-platform')?.hidden === false");
     check(await b.evaluate(`document.querySelector('.docs-platform').value === '${expected}'`), `Device guide detects ${expected}/${platform}`);
     check(await b.evaluate(`document.querySelectorAll('[data-doc-platform]:not([hidden])').length === ${expected === 'all' ? 5 : 1}`), 'Only the selected device notes are visible');
@@ -94,7 +108,7 @@ export async function checkDocumentation(b, host, check) {
     check(await b.evaluate("document.querySelector('.docs-platform').value === 'android' && !document.querySelector('[data-doc-platform=android]').hidden"), `Device choice persists in ${locale}`);
   }
   const { identifier: storageOverride } = await b.call('Page.addScriptToEvaluateOnNewDocument', { source: "Object.defineProperty(window,'localStorage',{get(){throw new Error('Storage disabled')}})" });
-  await b.navigate(host.url + '/documentation/advanced/input/?lang=en');
+  await b.navigate(host.url + '/docs/advanced/input/?lang=en');
   await b.until("document.querySelector('.docs-platform')?.hidden === false");
   await b.evaluate("const picker = document.querySelector('.docs-platform'); picker.value = 'all'; picker.dispatchEvent(new Event('change')); ");
   check(await b.evaluate("document.querySelectorAll('[data-doc-platform]:not([hidden])').length === 5"), 'Device picker works with storage disabled');

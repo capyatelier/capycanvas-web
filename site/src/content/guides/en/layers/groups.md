@@ -1,15 +1,24 @@
 ---
 title: "Layer groups and blending"
-description: "Layer groups, group opacity, and blending modes."
-figure: "A layer group containing base colors, shadows, and highlights."
+description: "Organize an illustration and control how its layers combine."
+figure: "A Character group containing line art and separate clipped color layers."
 related: ["illustration/render", "layers/masks"]
 ---
 
-## Groups
-A group contains related layers and can contain other groups. Group visibility and opacity apply to the combined contents. A group mask limits the visible area of the group.
+## Group a subject's layers
 
-## Blending modes
-A blending mode determines how a layer's colors combine with the layers below. Normal uses the layer's color and opacity directly. Multiply produces a darker result; Screen produces a lighter result.
+Put the character's line art, base colors, and clipped shading into a group named **Character**. You can then hide the character to work on the background without toggling each layer separately. Keep clipped layers beside their base inside the group; moving them away from it can change what they clip to.
 
-## Group compositing
-An isolated group composites its contents before combining the result with the rest of the document. In a pass-through group, layer blending can also affect layers outside the group.
+A group is useful for managing related layers, but it does not replace them. Select the particular paint layer or mask before drawing. See [Layer basics](/docs/layers/basics/) if an edit is affecting the wrong part of the image.
+
+## Choose a blending mode for a specific effect
+
+Normal combines a layer's paint with the image using its opacity. Start there when you want the chosen paint color to appear directly. Multiply combines colors to darken the underlying image, which can be useful for a separate shadow pass. Screen lightens the result and can be useful for a light effect.
+
+Compare the result by hiding the layer, then adjust its opacity. A blending mode changes how existing paint combines with the layers below; it does not choose the shading color for you. The [rendering tutorial](/docs/illustration/render/) uses Normal so brush and layer opacity can be learned independently.
+
+## Limit a group's effect
+
+An isolated group combines its contents before placing the result over the rest of the document. Pass-through allows blending inside the group to interact with layers outside it. If a shadow layer unexpectedly changes the background, check the group's blending behavior as well as the shadow's clipping.
+
+Use a group mask when several layers need the same visible boundary. Use a mask on an individual layer when only that layer needs correction. [Layer masks and clipping](/docs/layers/masks/) covers editing those boundaries.

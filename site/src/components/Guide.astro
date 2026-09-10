@@ -25,6 +25,7 @@ const related = entry.data.related.map(slug => {
     <span class="guide-status">{t.outline}</span>
     <h1>{entry.data.title}</h1>
     <p class="docs-lead">{entry.data.description}</p>
+    <p class="docs-notice">{t.notice}</p>
     <GuideFigure locale={locale} caption={entry.data.figure} image={entry.data.image} />
     <div class="guide-prose"><Content /></div>
     {slug === 'advanced/input' && <PlatformNotes locale={locale} />}
