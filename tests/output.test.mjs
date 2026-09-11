@@ -36,12 +36,13 @@ for(const locale of Object.keys(languages)) {
     const ids=[...html.matchAll(/\sid="([^"]+)"/g)].map(([,id])=>id);
     assert.equal(new Set(ids).size,ids.length,'Component IDs are unique');
     assert.match(html,/href="https:\/\/editor\.capycanvas\.art\/"/);
-    assert.ok(html.includes(`href="/${route(locale,'privacy')}"`), 'Privacy is discoverable in every locale');
     assert.match(html,/data-language="en"/); assert.match(html,/data-language="ja"/); assert.match(html,/data-language="zh"/); assert.match(html,/data-language="ko"/);
     assert.ok(html.includes(content[locale][page].title));
-    assert.doesNotMatch(html,/<footer|<hr(?:\s|>)/);
+    assert.doesNotMatch(html,/<hr(?:\s|>)/);
     assert.doesNotMatch(html,/undefined|\[object Object\]|TODO|lorem ipsum/i);
     if(page==='home') {
+      assert.doesNotMatch(html, /<footer/);
+      assert.ok(!html.includes(`href="/${route(locale,'privacy')}"`), 'The home page has no privacy link');
       assert.equal((html.match(/<p(?: [^>]*)?>/g)||[]).length,1);
       assert.match(html,/<h1 class="visually-hidden">Capy Canvas<\/h1>/);
       assert.doesNotMatch(html,/<figcaption|class="brand"|class="eyebrow"/);
@@ -50,6 +51,12 @@ for(const locale of Object.keys(languages)) {
       assert.match(html,/<img src="\/assets\/workspace-light.webp" width="1440" height="810" alt=".+?"/);
       assert.doesNotMatch(html,/<header|class="nav-links"|href="https:\/\/github.com/);
     } else {
+      const footer = html.match(/<footer class="site-footer">([\s\S]*?)<\/footer>/)?.[1];
+      assert.ok(footer?.includes(content[locale].footer.madeBy));
+      assert.ok(footer.includes(`href="/${route(locale,'privacy')}"`));
+      const header = html.match(/<header[\s\S]*?<\/header>/)?.[0];
+      assert.ok(!header.includes(`href="/${route(locale,'privacy')}" aria-current="page"`));
+      assert.ok(!header.match(/<nav[\s\S]*?<\/nav>/)?.[0].includes(`href="/${route(locale,'privacy')}"`), 'Privacy is in the footer, not header navigation');
       assert.match(html,/class="nav-links"/); assert.match(html,/aria-current="page"/);
       assert.match(html,/href="https:\/\/github.com\/capyatelier\/capycanvas"/);
       assert.match(html,/href="https:\/\/github.com\/capyatelier\/capycanvas" target="_blank" rel="noopener noreferrer"/);

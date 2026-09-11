@@ -12,7 +12,7 @@ const brandSvg = capybara.replace('<svg ', '<svg aria-hidden="true" ');
 const navPages = ['download', 'documentation'] as const;
 ---
 {page === 'home' ? (
-  <div class="home-top"><a class="home-privacy" href={route(locale, 'privacy')}>{t.nav.privacy}</a><LanguageMenu locale={locale} page={page} slug={slug} /></div>
+  <div class="home-top"><LanguageMenu locale={locale} page={page} slug={slug} /></div>
 ) : (
   <header class="site-header">
     <div class="nav-inner">
@@ -20,7 +20,6 @@ const navPages = ['download', 'documentation'] as const;
       <nav class="nav-links" aria-label={t.nav.main}>
         {navPages.map(p => <a href={route(locale, p)} aria-current={p === page ? 'page' : undefined}>{t.nav[p]}</a>)}
         <a href={appUrl}>{t.nav.webDemo}<Icon name="external" /></a>
-        <a href={route(locale, 'privacy')} aria-current={page === 'privacy' ? 'page' : undefined}>{t.nav.privacy}</a>
       </nav>
       <div class="nav-tools">
         <LanguageMenu locale={locale} page={page} slug={slug} />

@@ -93,8 +93,9 @@ and keyboard interaction. The browser tests cover both behaviors.
 
 The browser's `prefers-color-scheme` selects the whole page palette and the
 matching genuine app screenshot. Changes apply live. The home page contains
-the screenshot, a short description, three primary links, a small privacy link, and the language selector; its
-image scales to fit the viewport. All pages use borderless controls and omit footers. Source translations live
+the screenshot, a short description, three primary links, and the language selector; its
+image scales to fit the viewport. Other pages have a small footer with a privacy link
+and a Capy Atelier credit. All pages use borderless controls. Source translations live
 in `site/src/data/content.mjs`; each language gets static HTML, appropriate metadata,
 canonical and alternate links, and a sitemap entry.
 

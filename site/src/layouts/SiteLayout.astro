@@ -2,6 +2,7 @@
 import { content } from '../data/content.mjs';
 import { origin, locales, route, type Locale, type SitePage } from '../lib/site';
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import LanguagePreference from '../components/LanguagePreference.astro';
 import docsStyleUrl from '../styles/documentation.css?url';
 interface Props { locale: Locale; page: SitePage; slug?: string; title?: string; description?: string }
@@ -44,9 +45,10 @@ const faviconVersion = import.meta.env.FAVICON_VERSION;
     {page === 'documentation' && <link rel="stylesheet" href={docsStyleUrl} />}
     <LanguagePreference locale={locale} page={page} slug={slug} />
   </head>
-  <body>
+  <body class:list={{ 'has-footer': page !== 'home' }}>
     <a class="skip" href="#main">{t.nav.skip}</a>
     <Header locale={locale} page={page} slug={slug} />
     <slot />
+    {page !== 'home' && <Footer locale={locale} page={page} />}
   </body>
 </html>

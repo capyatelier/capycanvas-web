@@ -3,6 +3,7 @@ import { pwaContent } from './pwa-content.mjs';
 export const languages = { en: 'English', ja: '日本語', zh: '简体中文', ko: '한국어' };
 export const content = {
   en: {
+    footer: { madeBy: 'Made by Capy Atelier' },
     lang: 'en', locale: 'en_US', name: 'English',
     nav: { privacy: 'Privacy', webDemo: 'Web Demo', download: 'Download', documentation: 'Documentation', home: 'Home', language: 'Language', main: 'Main navigation', skip: 'Skip to content', github: 'Capy Canvas on GitHub' },
     home: {
@@ -25,6 +26,7 @@ export const content = {
     notFound: { title: 'Page not found', text: 'The requested page does not exist.', action: 'Home' }
   },
   ja: {
+    footer: { madeBy: '制作：Capy Atelier' },
     lang: 'ja', locale: 'ja_JP', name: '日本語',
     nav: { privacy: 'プライバシー', webDemo: 'ウェブデモ', download: 'ダウンロード', documentation: 'ドキュメント', home: 'ホーム', language: '言語', main: 'メインナビゲーション', skip: '本文へ移動', github: 'GitHub の Capy Canvas' },
     home: {
@@ -47,6 +49,7 @@ export const content = {
     notFound: { title: 'ページが見つかりません', text: '指定されたページは存在しません。', action: 'ホーム' }
   },
   zh: {
+    footer: { madeBy: '由 Capy Atelier 制作' },
     lang: 'zh-Hans', locale: 'zh_CN', name: '简体中文',
     nav: { privacy: '隐私', webDemo: '网页演示', download: '下载', documentation: '文档', home: '首页', language: '语言', main: '主导航', skip: '跳转到正文', github: 'GitHub 上的 Capy Canvas' },
     home: {
@@ -69,6 +72,7 @@ export const content = {
     notFound: { title: '页面不存在', text: '找不到所请求的页面。', action: '首页' }
   },
   ko: {
+    footer: { madeBy: 'Capy Atelier 제작' },
     lang: 'ko', locale: 'ko_KR', name: '한국어',
     nav: { privacy: '개인정보', webDemo: '웹 데모', download: '다운로드', documentation: '문서', home: '홈', language: '언어', main: '주요 탐색', skip: '본문으로 건너뛰기', github: 'GitHub의 Capy Canvas' },
     home: {

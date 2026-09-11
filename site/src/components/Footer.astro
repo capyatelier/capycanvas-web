@@ -1,0 +1,11 @@
+---
+import { content } from '../data/content.mjs';
+import { route, type Locale, type SitePage } from '../lib/site';
+interface Props { locale: Locale; page: SitePage }
+const { locale, page } = Astro.props;
+const t = content[locale];
+---
+<footer class="site-footer">
+  <span>{t.footer.madeBy}</span>
+  <a href={route(locale, 'privacy')} aria-current={page === 'privacy' ? 'page' : undefined}>{t.nav.privacy}</a>
+</footer>

@@ -57,7 +57,10 @@ for (const locale of Object.keys(languages)) {
     assert.equal((html.match(/rel="alternate"/g) || []).length, 5);
     assert.match(html, /name="color-scheme" content="light dark"/);
     assert.match(html, /name="darkreader-lock"/);
-    assert.doesNotMatch(html, /<footer|<hr\b|undefined|\[object Object\]|lorem ipsum/i);
+    assert.doesNotMatch(html, /<hr\b|undefined|\[object Object\]|lorem ipsum/i);
+    const footer = html.match(/<footer class="site-footer">([\s\S]*?)<\/footer>/)?.[1];
+    assert.ok(footer?.includes(content[locale].footer.madeBy));
+    assert.ok(footer.includes(`href="${locale === 'en' ? '' : '/' + locale}/privacy/"`));
     const body = html.match(/<div class="guide-prose">([\s\S]*?)<\/div>/)?.[1];
     assert.ok(body, 'Markdown is rendered at build time');
     const links = [...body.matchAll(/href="([^"]+)"/g)].map(([, href]) => href);
