@@ -9,7 +9,7 @@ import { content, languages } from '../site/src/data/content.mjs';
 
 const root=resolve(process.env.SITE_OUTPUT || 'docs');
 const read=path=>readFile(join(root,path),'utf8');
-const pages=['home','download','documentation'];
+const pages=['home','download','documentation','privacy'];
 const route=(l,p)=>`${l==='en'?'':l+'/'}${p==='home'?'':(p==='documentation'?'docs':p)+'/'}`;
 function shape(value) { return Array.isArray(value)?value.map(shape):value && typeof value==='object'?Object.fromEntries(Object.entries(value).map(([k,v])=>[k,shape(v)])):typeof value; }
 for(const locale of Object.keys(languages)) {
@@ -36,6 +36,7 @@ for(const locale of Object.keys(languages)) {
     const ids=[...html.matchAll(/\sid="([^"]+)"/g)].map(([,id])=>id);
     assert.equal(new Set(ids).size,ids.length,'Component IDs are unique');
     assert.match(html,/href="https:\/\/editor\.capycanvas\.art\/"/);
+    assert.ok(html.includes(`href="/${route(locale,'privacy')}"`), 'Privacy is discoverable in every locale');
     assert.match(html,/data-language="en"/); assert.match(html,/data-language="ja"/); assert.match(html,/data-language="zh"/); assert.match(html,/data-language="ko"/);
     assert.ok(html.includes(content[locale][page].title));
     assert.doesNotMatch(html,/<footer|<hr(?:\s|>)/);
@@ -97,7 +98,7 @@ test('every local link and referenced asset resolves in the published output',as
 });
 test('GitHub Pages output, sitemap, error page and distributable notices',async()=>{
   assert.equal(await read('CNAME'),'capycanvas.art\n'); assert.equal(await read('.nojekyll'),'');
-  assert.equal((await read('sitemap.xml')).match(/<loc>/g).length,4*(3+docTopics.length));
+  assert.equal((await read('sitemap.xml')).match(/<loc>/g).length,4*(4+docTopics.length));
   assert.match(await read('robots.txt'),/Sitemap: https:\/\/capycanvas.art\/sitemap.xml/);
   assert.match(await read('404.html'),/name="robots" content="noindex"/);
   for(const name of ['LICENSE','LICENSE-MIT','LICENSE-APACHE','BRANDING.md','THIRD_PARTY_NOTICES.md']) assert.equal(await read(name),await readFile(name,'utf8'));

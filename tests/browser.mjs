@@ -13,7 +13,7 @@ const report=[];
 const check=(value,message)=>{assert.ok(value,message);checks++;};
 try {
   await b.call('Page.addScriptToEvaluateOnNewDocument',{source:"Object.defineProperty(navigator,'languages',{get:()=>['en-US','en'],configurable:true})"});
-  for(const [width,height] of [[1440,900],[1280,720],[1024,600],[768,1024],[390,844],[320,568],[844,390]]) for(const theme of ['light','dark']) for(const locale of ['en','ja','zh','ko']) for(const page of ['home','download','documentation']) {
+  for(const [width,height] of [[1440,900],[1280,720],[1024,600],[768,1024],[390,844],[320,568],[844,390]]) for(const theme of ['light','dark']) for(const locale of ['en','ja','zh','ko']) for(const page of ['home','download','documentation','privacy']) {
     await b.call('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
     await b.theme(theme);
     const path=`${locale==='en'?'':'/'+locale}/${page==='home'?'':(page==='documentation'?'docs':page)+'/'}`;
@@ -54,9 +54,11 @@ try {
   // Preference detection and regional language tags, including unsupported-first lists.
   for(const [langs,expected] of [[['ja-JP'],'ja'],[['zh-TW'],'zh'],[['ko-KR'],'ko'],[['fr-FR','ja-JP'],'ja'],[['de-DE'],'en']]) {
     const {identifier}=await b.call('Page.addScriptToEvaluateOnNewDocument',{source:`Object.defineProperty(navigator,'languages',{get:()=>${JSON.stringify(langs)},configurable:true})`});
-    await b.evaluate('localStorage.clear()'); await b.navigate(host.url+'/download/');
-    await b.until(`document.documentElement.dataset.locale==='${expected}'`);checks++;
-    check(await b.evaluate("document.documentElement.dataset.page==='download'"),'Auto detection preserves the page');
+    for (const page of ['download', 'privacy']) {
+      await b.evaluate('localStorage.clear()'); await b.navigate(host.url+'/'+page+'/');
+      await b.until(`document.documentElement.dataset.locale==='${expected}'`);checks++;
+      check(await b.evaluate(`document.documentElement.dataset.page==='${page}'`),'Auto detection preserves the page');
+    }
     await b.call('Page.removeScriptToEvaluateOnNewDocument',{identifier});
   }
   // Explicit locale URLs take priority; language links preserve the page and persist.
@@ -82,6 +84,8 @@ try {
   check(await b.evaluate("document.documentElement.lang==='ja'&&document.querySelectorAll('.platform').length===5"),'No-JS page content');
   check(await b.evaluate("document.querySelector('[data-pwa-guide=generic]').hidden===false&&document.querySelector('.pwa-browser').hidden&&document.querySelectorAll('[data-pwa-guide]:not([hidden])').length===1"),'No-JS installation instructions remain readable');
   await b.screenshot('artifacts/review/no-js-japanese.png',true);
+  await b.navigate(host.url+'/ko/privacy/');
+  check(await b.evaluate("document.querySelectorAll('.policy-prose h2').length===5&&!!document.querySelector('a[href=\"mailto:zackdrach@gmail.com\"]')&&document.querySelectorAll('[data-language]').length===4"),'The full privacy policy and language links work without JavaScript');
   await b.call('Emulation.setScriptExecutionDisabled',{value:false});
   const {identifier}=await b.call('Page.addScriptToEvaluateOnNewDocument',{source:"Object.defineProperty(window,'localStorage',{get(){throw new Error('Storage disabled')}})"});
   await b.navigate(host.url+'/?lang=en');

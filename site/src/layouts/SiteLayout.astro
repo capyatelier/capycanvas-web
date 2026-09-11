@@ -7,7 +7,7 @@ import docsStyleUrl from '../styles/documentation.css?url';
 interface Props { locale: Locale; page: SitePage; slug?: string; title?: string; description?: string }
 const { locale, page, slug = '' } = Astro.props;
 const t = content[locale];
-const title = Astro.props.title ? `${Astro.props.title} — Capy Canvas` : page === 'home' ? t.home.title : page === '404' ? t.notFound.title : `${t.nav[page]} — Capy Canvas`;
+const title = Astro.props.title ? `${Astro.props.title} — Capy Canvas` : page === 'home' ? t.home.title : page === '404' ? t.notFound.title : `${t[page].title} — Capy Canvas`;
 const description = Astro.props.description ?? (page === '404' ? t.notFound.text : t[page].meta);
 const canonical = origin + route(locale, page, slug);
 const faviconVersion = import.meta.env.FAVICON_VERSION;

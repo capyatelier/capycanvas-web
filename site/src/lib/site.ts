@@ -3,10 +3,10 @@ import { languages } from '../data/content.mjs';
 import { getRelativeLocaleUrl } from 'astro:i18n';
 
 export type Locale = keyof typeof languages;
-export type Page = 'home' | 'download' | 'documentation';
+export type Page = 'home' | 'download' | 'documentation' | 'privacy';
 export type SitePage = Page | '404';
 export const locales = Object.keys(languages) as Locale[];
-export const pages = ['home', 'download', 'documentation'] as const;
+export const pages = ['home', 'download', 'documentation', 'privacy'] as const;
 export const origin = 'https://capycanvas.art';
 export const appUrl = 'https://editor.capycanvas.art/';
 export const repositoryUrl = 'https://github.com/capyatelier/capycanvas';

@@ -1,0 +1,26 @@
+---
+import { getEntry, render } from 'astro:content';
+import { content } from '../data/content.mjs';
+import type { Locale } from '../lib/site';
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const t = content[locale].privacy;
+const entry = await getEntry('policies', locale);
+if (!entry) throw new Error(`Missing privacy policy: ${locale}`);
+const { Content } = await render(entry);
+const date = new Intl.DateTimeFormat(content[locale].lang, { dateStyle: 'long', timeZone: 'UTC' })
+  .format(new Date(`${entry.data.effectiveDate}T12:00:00Z`));
+---
+<main id="main" class="page policy">
+  <h1>{t.title}</h1>
+  <p class="lead">{t.effectiveDate}: <time datetime={entry.data.effectiveDate}>{date}</time></p>
+  <article class="policy-prose"><Content /></article>
+</main>
+
+<style>
+  .policy-prose { font-size: 15px; overflow-wrap: anywhere; }
+  .policy-prose :global(h2) { font-size: 18px; font-weight: 650; line-height: 1.4; margin: 32px 0 12px; }
+  .policy-prose :global(p) { margin: 0 0 16px; }
+  .policy-prose :global(a) { text-decoration: underline; text-underline-offset: 3px; }
+  .policy-prose :global(a:hover) { color: var(--accent); }
+</style>
