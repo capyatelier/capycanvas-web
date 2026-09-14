@@ -15,6 +15,8 @@ checks its own toolchain requirements. Install website dependencies with `npm ci
 # Defaults to the tracked HEAD of ../draw. Pin a commit when reproducing a release.
 APP_REPO=../draw APP_REVISION=fb81ebebe6987c7b773a17ec07c5b86472d7087a npm run capture:prepare
 npm run capture
+# Refresh all guide images/examples while preserving the homepage pair and project.
+CAPTURE_ONLY=docs npm run capture
 npm run check
 ```
 
@@ -47,9 +49,12 @@ of the package served by a URL.
 - `editor.mjs` selects actual commands, tools, layers, workspaces and dialogs.
   Artwork follows sampled paths delivered as browser pen events, with pressure.
   Every pen path is checked against the actual canvas hit target.
-- `illustration.mjs` defines the original teaching portrait. It creates real
+- `illustration.mjs` defines the original abstract study. It creates real
   sketch, ink, masked base-color and clipped shading layers. It saves four `.capy`
-  stages and exports `character.png`; these are reader-downloadable examples.
+  stages and exports `abstract-study.png`; these are reader-downloadable examples.
+  Ribbon, Disc and Block use teal, sage, ochre and terracotta, with dark blue ink
+  and cream highlights. Pencil, G-Pen, Paintbrush, Watercolor Wash and Airbrush
+  produce the line work, hatching and shading in the actual editor.
 - `references.mjs` stages individual tool and workflow examples. Image import uses
   the real file input, then checks painted pixels in a real PNG export. The imported
   image/effect project is also saved, reopened and checked for its layer structure.
@@ -70,11 +75,13 @@ Commit the recipes, these public assets, and rebuilt `docs/`:
 
 - `site/public/assets/workspace-{light,dark}.webp`: unannotated homepage captures.
 - `site/public/assets/guides/`: 25 guide pairs, including the four tutorial stages.
-- `site/public/assets/examples/`: four tutorial projects, the portrait PNG,
+- `site/public/assets/examples/`: four tutorial projects, the abstract-study PNG,
   watercolor project, and imported-image project/PNG.
 - `site/public/assets/capture.json`: source revision, applied source corrections,
   app hashes, recipe hashes, browser version, dimensions, screenshot hashes,
-  annotation targets/bounds, and example-file hashes.
+  annotation targets/bounds, and example-file hashes. Documentation-only runs retain
+  the homepage assets byte-for-byte and record their original environment and recipe
+  hashes separately under `retainedHomepage`.
 
 `capture-compatibility.mjs` lists any required source corrections explicitly.
 The recorded baseline needs parentheses around multiplication operands in the
@@ -97,7 +104,7 @@ logs are in `display.log`. A failed or partial run must not be published.
 ```sh
 # Reuses already-generated tutorial files while debugging the reference scenes.
 CAPTURE_ONLY=references npm run capture
-# Always run the complete capture afterward before publishing.
+# A reference-only run writes partial provenance; restore a complete run before publishing.
 npm run capture
 npm run check
 ```

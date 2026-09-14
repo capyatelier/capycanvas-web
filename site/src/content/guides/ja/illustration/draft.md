@@ -10,9 +10,9 @@ image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/asset
 
 ## 1. 下描きする
 
-**Sketch**という描画レイヤーを作り、Tool Setで**Pencil**を選びます。頭、髪、服を軽い補助線で描き、輪郭を整えます。Toolでサイズを調整し、強い線には筆圧を使います。
+**Sketch**という描画レイヤーを作り、Tool Setで**Pencil**を選びます。円、曲がったリボン、傾いた四角形を軽い補助線で描き、輪郭を整えます。Toolでサイズを調整し、強い線には筆圧を使います。
 
-作例はコートとマフラーのある人物画です。周囲に余白を残すと、後の選択範囲や筆跡を確認しやすくなります。
+作例は3つの抽象的な形に、輪を描く線やハッチングを重ねています。周囲に余白を残すと、後の選択範囲や筆跡を確認しやすくなります。
 
 ## 2. 一部を直す
 
@@ -22,6 +22,6 @@ image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/asset
 
 ## 3. 色ラフを加える
 
-Sketchの下に**Color rough**を追加します。太いブラシや**Lasso Fill**で髪、肌、服の色を試します。配色の検討なので輪郭はラフで構いません。鉛筆の線はSketchに保持します。
+Sketchの下に**Color rough**を追加します。太いブラシや**Lasso Fill**で3つの形に青緑、黄土色、テラコッタを試します。配色の検討なので輪郭はラフで構いません。鉛筆の線はSketchに保持します。
 
 見づらければColor roughを一時的に隠します。`.capy`を保存し、2枚を分けたまま[線画](/ja/docs/illustration/ink/)へ進みます。

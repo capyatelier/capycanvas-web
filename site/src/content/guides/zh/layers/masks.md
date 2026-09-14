@@ -3,9 +3,9 @@ title: "蒙版与剪贴"
 description: "保留原有颜色，用独立边界控制可见范围。"
 purpose: "蒙版决定图层哪里可见，剪贴把另一层限制在底层形状内，锁定透明像素则限制当前图层上的新笔画。按修改目的选择。"
 techniques: ["从选区建立蒙版。", "单独编辑或禁用蒙版。", "把阴影剪贴在底色上方。"]
-figure: "1：Hair的蒙版缩略图。2：剪贴在Hair上方的阴影。3：剪贴与锁定透明像素。"
+figure: "1：Ribbon的蒙版缩略图。2：剪贴在Ribbon上方的阴影。3：剪贴与锁定透明像素。"
 related: ["tools/selections", "illustration/mask", "illustration/render"]
-image: {"light": "/assets/guides/layers-masks-light.webp", "dark": "/assets/guides/layers-masks-dark.webp", "alt": "1：Hair的蒙版缩略图。2：剪贴在Hair上方的阴影。3：剪贴与锁定透明像素。"}
+image: {"light": "/assets/guides/layers-masks-light.webp", "dark": "/assets/guides/layers-masks-dark.webp", "alt": "1：Ribbon的蒙版缩略图。2：剪贴在Ribbon上方的阴影。3：剪贴与锁定透明像素。"}
 ---
 
 ## 从选区建立蒙版

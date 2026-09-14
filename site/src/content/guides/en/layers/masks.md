@@ -3,9 +3,9 @@ title: "Masks and clipping"
 description: "Control visibility without erasing the underlying paint."
 purpose: "A layer mask changes what is visible; clipping restricts another layer to a base layer’s shape. Alpha lock restricts new paint on the layer itself. Choose the one that matches the correction."
 techniques: ["Create a mask from a selection.", "Edit or disable a mask separately from its paint.", "Clip shading above a base layer."]
-figure: "1: Hair’s mask thumbnail. 2: Shading clipped above Hair. 3: Clip to layer below and Alpha lock controls."
+figure: "1: Ribbon’s mask thumbnail. 2: Shading clipped above Ribbon. 3: Clip to layer below and Alpha lock controls."
 related: ["tools/selections", "illustration/mask", "illustration/render"]
-image: {"light": "/assets/guides/layers-masks-light.webp", "dark": "/assets/guides/layers-masks-dark.webp", "alt": "1: Hair’s mask thumbnail. 2: Shading clipped above Hair. 3: Clip to layer below and Alpha lock controls."}
+image: {"light": "/assets/guides/layers-masks-light.webp", "dark": "/assets/guides/layers-masks-dark.webp", "alt": "1: Ribbon’s mask thumbnail. 2: Shading clipped above Ribbon. 3: Clip to layer below and Alpha lock controls."}
 ---
 
 ## Make a mask from a selection

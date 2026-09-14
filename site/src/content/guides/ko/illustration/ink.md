@@ -16,7 +16,7 @@ image: {"light": "/assets/guides/illustration-ink-light.webp", "dark": "/assets/
 
 ## 2. 그리고 수정하기
 
-실루엣, 얼굴과 옷의 봉제선을 그립니다. 곡선의 각도가 불편하면 Navigator나 터치로 보기를 회전합니다. 저장되는 작품은 회전하지 않습니다.
+도형 윤곽, 자유로운 고리 모양 선과 짧은 빗금을 그립니다. 곡선의 각도가 불편하면 Navigator나 터치로 보기를 회전합니다. 저장되는 작품은 회전하지 않습니다.
 
 Eraser나 실행 취소로 Line art를 고칩니다. 획 표시가 펜을 뒤따르면 [입력 설정](/ko/docs/advanced/input/)에서 예측을 비교하고 같은 곡선을 다시 그립니다. 너무 강한 예측은 의도한 꺾임을 지나칠 수 있습니다.
 

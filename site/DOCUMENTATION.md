@@ -83,7 +83,7 @@ do and why the main tool or concept helps. Follow it with two to four concrete
 techniques or controls they will learn, before the detailed steps. For the four
 tutorial stages, number the step headings. Introduce an operation before asking
 the reader to perform it. Avoid abstract learning goals: “Use a mask to correct
-the hair's edge” explains more than “Build a flexible, non-destructive workflow.”
+the ribbon's edge” explains more than “Build a flexible, non-destructive workflow.”
 The introduction describes the intended result and the overall sequence; individual
 stages should not repeat the entire tutorial's setup.
 
@@ -95,9 +95,9 @@ brush opacity changes new marks, while layer opacity changes all existing paint
 on the layer. Generic advice about lighting, composition, or artistic confidence
 does not substitute for instructions on using the editor.
 
-The tutorial follows one character illustration. Preserve the named layers across
-stages: Sketch and Color rough; Line art; Hair, Skin, and Clothing; then clipped
-shading layers such as Hair shading. Introduce selections during sketch corrections,
+The tutorial follows one abstract shape study. Preserve the named layers across
+stages: Sketch and Color rough; Line art; Ribbon, Disc, and Block; then clipped
+shading layers such as Ribbon shading. Introduce selections during sketch corrections,
 masks when preparing base colors, and clipping during rendering. Explain each
 concept when it first becomes necessary. Keep engine parameters, blending details,
 and alternate methods in linked reference pages rather than front-loading them.
@@ -159,8 +159,8 @@ several captures of the same illustration for the four phases; show the active
 tool, relevant settings, and layer stack when they explain the step. The abstract
 marks on the overview are navigation illustrations, not app screenshots.
 
-Do not include AI-generated illustration artwork. The current original teaching
-portrait is drawn in the actual app through scripted pen input and layer actions.
+Do not include AI-generated illustration artwork. The current original abstract
+study is drawn in the actual app through scripted pen input and layer actions.
 The four `.capy` stages and final PNG in `public/assets/examples/` are shared across
 languages. Asset-download links intentionally have no locale prefix.
 

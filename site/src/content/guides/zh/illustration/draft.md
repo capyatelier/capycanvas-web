@@ -10,9 +10,9 @@ image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/asset
 
 ## 1. 绘制草稿
 
-建立名为**Sketch**的图层，在Tool Set中选择**Pencil**。先用轻线确定头、头发与衣服，再整理轮廓。用Tool调整大小，以压感强调线条。
+建立名为**Sketch**的图层，在Tool Set中选择**Pencil**。先用轻线确定圆形、弯曲的带状形与倾斜的四边形，再整理轮廓。用Tool调整大小，以压感强调线条。
 
-示例是穿外套、戴围巾的人物。轮廓周围留出余量，便于检查之后的选区和笔迹。
+示例叠放三个抽象形状，并加入自由环线和排线。轮廓周围留出余量，便于检查之后的选区和笔迹。
 
 ## 2. 修正局部
 
@@ -22,6 +22,6 @@ image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/asset
 
 ## 3. 添加色稿
 
-在Sketch下方添加**Color rough**。用宽画笔或**Lasso Fill**试头发、皮肤和衣服的主色。此时重点是配色，边缘可以粗略；铅笔线条留在Sketch上。
+在Sketch下方添加**Color rough**。用宽画笔或**Lasso Fill**为三个形状尝试蓝绿色、土黄色和陶土色。此时重点是配色，边缘可以粗略；铅笔线条留在Sketch上。
 
 色稿妨碍检查时可临时隐藏。保存`.capy`，保持两层分开并继续[线稿](/zh/docs/illustration/ink/)。

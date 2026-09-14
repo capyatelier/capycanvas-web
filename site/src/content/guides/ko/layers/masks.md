@@ -3,9 +3,9 @@ title: "마스크와 클리핑"
 description: "기존 색을 지우지 않고 표시 범위를 조절합니다."
 purpose: "레이어 마스크는 보이는 부분을 바꾸고, 클리핑은 다른 레이어를 기본 레이어의 모양에 제한합니다. 알파 잠금은 같은 레이어의 새 획을 제한합니다. 수정 목적에 맞춰 선택합니다."
 techniques: ["선택 영역에서 마스크를 만듭니다.", "색과 별개로 마스크를 편집하거나 끕니다.", "기본색 위에 음영을 클리핑합니다."]
-figure: "1: Hair의 마스크 썸네일. 2: Hair 위에 클리핑된 음영. 3: 클리핑과 알파 잠금."
+figure: "1: Ribbon의 마스크 썸네일. 2: Ribbon 위에 클리핑된 음영. 3: 클리핑과 알파 잠금."
 related: ["tools/selections", "illustration/mask", "illustration/render"]
-image: {"light": "/assets/guides/layers-masks-light.webp", "dark": "/assets/guides/layers-masks-dark.webp", "alt": "1: Hair의 마스크 썸네일. 2: Hair 위에 클리핑된 음영. 3: 클리핑과 알파 잠금."}
+image: {"light": "/assets/guides/layers-masks-light.webp", "dark": "/assets/guides/layers-masks-dark.webp", "alt": "1: Ribbon의 마스크 썸네일. 2: Ribbon 위에 클리핑된 음영. 3: 클리핑과 알파 잠금."}
 ---
 
 ## 선택 영역에서 만들기

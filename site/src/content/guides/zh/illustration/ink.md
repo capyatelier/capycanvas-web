@@ -16,7 +16,7 @@ image: {"light": "/assets/guides/illustration-ink-light.webp", "dark": "/assets/
 
 ## 2. 描画与修正
 
-画出外形、五官和衣服接缝。曲线角度不方便时，用Navigator或触摸旋转视图；这不会旋转保存的作品。
+画出形状轮廓、自由环线和短排线。曲线角度不方便时，用Navigator或触摸旋转视图；这不会旋转保存的作品。
 
 用Eraser或撤销修正Line art。笔迹显示落后于笔尖时，在[输入设置](/zh/docs/advanced/input/)中比较预测选项，并重复相同曲线。预测过强可能越过预期的转弯位置。
 

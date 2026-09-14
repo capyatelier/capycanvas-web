@@ -10,7 +10,7 @@ image: {"light": "/assets/guides/layers-groups-light.webp", "dark": "/assets/gui
 
 ## 整理相关内容
 
-在Layers中使用**New group**，把相关图层移入。人物的底色、阴影和Line art可以放在一起，背景单独保留。折叠组可缩短列表。
+在Layers中使用**New group**，把相关图层移入。抽象练习的底色、阴影和Line art可以放在一起，背景单独保留。折叠组可缩短列表。
 
 移动后检查层级。父组隐藏时，内部图层即使开启也不可见。剪贴层应与底色保持同一堆栈关系，紧邻底色上方。
 

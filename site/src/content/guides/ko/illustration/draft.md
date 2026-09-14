@@ -10,9 +10,9 @@ image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/asset
 
 ## 1. 스케치 그리기
 
-**Sketch**라는 레이어를 만들고 Tool Set에서**Pencil**을 선택합니다. 가벼운 보조선으로 머리, 얼굴, 옷을 잡은 뒤 윤곽을 다듬습니다. Tool에서 크기를 바꾸고 필압으로 강한 선을 그립니다.
+**Sketch**라는 레이어를 만들고 Tool Set에서**Pencil**을 선택합니다. 가벼운 보조선으로 원, 휘어진 리본, 기울어진 사각형을 잡은 뒤 윤곽을 다듬습니다. Tool에서 크기를 바꾸고 필압으로 강한 선을 그립니다.
 
-예제는 외투와 목도리가 있는 인물입니다. 주변에 여백을 남기면 이후 선택과 획을 살펴보기 쉽습니다.
+예제는 세 추상 도형에 자유로운 고리 모양 선과 빗금을 더한 그림입니다. 주변에 여백을 남기면 이후 선택과 획을 살펴보기 쉽습니다.
 
 ## 2. 일부 고치기
 
@@ -22,6 +22,6 @@ image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/asset
 
 ## 3. 컬러 러프 추가하기
 
-Sketch 아래에**Color rough**를 만듭니다. 넓은 브러시나**Lasso Fill**로 머리, 피부, 옷의 주색을 시험합니다. 배색을 보는 단계이므로 경계는 거칠어도 됩니다. 연필선은 Sketch에 둡니다.
+Sketch 아래에**Color rough**를 만듭니다. 넓은 브러시나**Lasso Fill**로 세 도형에 청록색, 황토색, 테라코타를 시험합니다. 배색을 보는 단계이므로 경계는 거칠어도 됩니다. 연필선은 Sketch에 둡니다.
 
 보기 어렵다면 Color rough를 잠시 숨깁니다. `.capy`를 저장하고 두 레이어를 분리한 채[선화](/ko/docs/illustration/ink/)로 진행합니다.

@@ -6,7 +6,7 @@ import { browser } from './browser.mjs';
 import { serve } from './serve.mjs';
 import { editor } from './capture/editor.mjs';
 import { annotate, clearAnnotations } from './capture/annotations.mjs';
-import { illustration } from './capture/illustration.mjs';
+import { illustration, colors } from './capture/illustration.mjs';
 import { references } from './capture/references.mjs';
 import { PNG } from 'pngjs';
 
@@ -27,11 +27,29 @@ for (const [path, expected] of Object.entries(source.hashes)) {
 const headless = process.env.CAPTURE_BROWSER_MODE !== 'wayland';
 const b = await browser({ gpu: true, headless, width, height });
 const captures = [];
+const scope = process.env.CAPTURE_ONLY || 'all';
+assert.ok(['all', 'docs', 'references'].includes(scope), 'Known capture scope');
+let retainedHomepage;
+if (scope === 'docs') {
+  const previous = JSON.parse(await readFile(`${output}/capture.json`, 'utf8'));
+  assert.equal(previous.partial, false, 'Retain homepage from a complete run');
+  const files = ['workspace-light.webp', 'workspace-dark.webp', 'examples/watercolor-study.capy'];
+  const entries = files.map(file => [...previous.captures, ...previous.examples].find(entry => entry.file === file));
+  for (const entry of entries) {
+    assert.ok(entry, 'Homepage asset has recorded provenance');
+    assert.equal(createHash('sha256').update(await readFile(`${output}/${entry.file}`)).digest('hex'), entry.sha256, `Unchanged retained asset: ${entry.file}`);
+  }
+  captures.push(...entries.filter(entry => entry.file.endsWith('.webp')));
+  retainedHomepage = previous.retainedHomepage || {
+    assets: entries,
+    provenance: Object.fromEntries(['source', 'revision', 'patches', 'hashes', 'browser', 'display', 'width', 'height', 'workspace', 'recipeHashes'].filter(key => key in previous).map(key => [key, previous[key]])),
+  };
+}
 const recipeFiles = ['capture.mjs', 'browser.mjs', 'serve.mjs', 'capture-headless.sh', 'prepare-capture.mjs', 'capture-compatibility.mjs', 'capture/editor.mjs', 'capture/annotations.mjs', 'capture/illustration.mjs', 'capture/references.mjs'];
 const recipeHashes = Object.fromEntries(await Promise.all(recipeFiles.map(async path => [path, createHash('sha256').update(await readFile(`site/scripts/${path}`)).digest('hex')])));
-const manifest = { ...source, width, height, partial: !!process.env.CAPTURE_ONLY, browser: await b.call('Browser.getVersion'), display: headless ? 'Chrome native headless' : 'Headed Chrome on a private headless Wayland display', workspace: { id: 'builtin:workspace:illustrator', name: 'Paint' },
+const manifest = { ...source, width, height, partial: scope === 'references', ...(retainedHomepage ? { retainedHomepage } : {}), browser: await b.call('Browser.getVersion'), display: headless ? 'Chrome native headless' : 'Headed Chrome on a private headless Wayland display', workspace: { id: 'builtin:workspace:illustrator', name: 'Paint' },
   canvas2d: 'Software decoding and UI previews; artwork remains hardware WebGPU.', recipeHashes,
-  artwork: 'Three Watercolor Wash strokes and an original character tutorial, drawn through real browser pen input and editor actions.',
+  artwork: 'Three Watercolor Wash strokes and an original abstract study of a teal ribbon, ochre disc and terracotta block with pencil hatching, watercolor and airbrush shading, drawn through real browser pen input and editor actions.',
   annotations: 'Numbered SVG outlines injected over measured DOM controls; artwork and UI rendered by Capy Canvas.', captures };
 async function record(name, targets = [], homepage = false, scene = {}) {
   console.log(`Capturing ${name}`);
@@ -73,21 +91,27 @@ try {
   await b.navigate(appUrl);
   const e = await editor(b);
   await e.workspace('illustrator');
-  if (process.env.CAPTURE_ONLY === 'references') {
+  if (scope === 'references') {
     for (const name of ['04-finished.capy', '03-base-colors.capy']) {
       const base64 = (await readFile(`${output}/examples/${name}`)).toString('base64');
       await b.evaluate(`__captureFiles.set(${JSON.stringify(name)},Uint8Array.from(atob(${JSON.stringify(base64)}),c=>c.charCodeAt(0)));void 0`);
     }
   } else {
-  await e.newDocument(2048, 1536); await e.brush(20, 165, '#244f6c');
-  assert.equal(await e.read("document.querySelector('[data-brush=\"20\"]')?.getAttribute('aria-pressed')"), 'true');
-  for (const [j, color] of ['#244f6c', '#396951', '#965c35'].entries()) {
-    await e.setColor(color);
-    const points = Array.from({ length: 101 }, (_, i) => { const t = i / 100; return [390 + 1260 * t, 410 + j * 310 + 110 * Math.sin(t * Math.PI * 2 - .5 + j * .3) + 40 * Math.sin(t * Math.PI * 3 + j * .2)]; });
-    for (let pass = 0; pass < 3; pass++) await e.stroke(points, { pressure: .9, taper: true });
+  const watercolorStudy = async palette => {
+    await e.newDocument(2048, 1536); await e.brush(20, 165, palette[0]);
+    assert.equal(await e.read(`document.querySelector('[data-brush="20"]')?.getAttribute("aria-pressed")`), 'true');
+    for (const [j, color] of palette.entries()) {
+      await e.setColor(color);
+      const points = Array.from({ length: 101 }, (_, i) => { const t = i / 100; return [390 + 1260 * t, 410 + j * 310 + 110 * Math.sin(t * Math.PI * 2 - .5 + j * .3) + 40 * Math.sin(t * Math.PI * 3 + j * .2)]; });
+      for (let pass = 0; pass < 3; pass++) await e.stroke(points, { pressure: .9, taper: true });
+    }
+  };
+  if (scope === 'all') {
+    await watercolorStudy(['#244f6c', '#396951', '#965c35']);
+    await e.save('watercolor-study.capy', `${output}/examples`);
+    await record('workspace', [], true);
   }
-  await e.save('watercolor-study.capy', `${output}/examples`);
-  await record('workspace', [], true);
+  await watercolorStudy([colors.ink, colors.ribbon, colors.disc]);
   await record('workspace', [{ selector: '.workspace-switcher' }, { selector: '.brushes-panel' }, { selector: '.navigator-panel' }]);
   await record('quickstart', [{ selector: '.workspace-switcher' }, { selector: '.brushes-panel' }, { selector: '.layers-panel' }]);
   await record('painting-brushes', [{ selector: '.dock-group[data-panel="toolbar"]' }, { selector: '.brushes-panel' }, { selector: '.tool-settings-control' }]);
@@ -96,7 +120,7 @@ try {
   }
   await references(e, record, `${output}/examples`);
   assert.deepEqual(b.errors, [], 'No application errors during capture');
-  const exampleNames = ['watercolor-study.capy', '01-sketch.capy', '02-line-art.capy', '03-base-colors.capy', '04-finished.capy', 'character.png', 'image-editing.capy', 'image-editing.png'];
+  const exampleNames = ['watercolor-study.capy', '01-sketch.capy', '02-line-art.capy', '03-base-colors.capy', '04-finished.capy', 'abstract-study.png', 'image-editing.capy', 'image-editing.png'];
   const examples = await Promise.all(exampleNames.map(async name => { const bytes = await readFile(`${output}/examples/${name}`); return {file:`examples/${name}`, bytes:bytes.length, sha256:createHash('sha256').update(bytes).digest('hex')}; }));
   await writeFile(`${output}/capture.json`, JSON.stringify({ ...manifest, examples, screenshots: ['workspace-light.webp', 'workspace-dark.webp'] }, null, 2) + '\n');
   console.log(`Captured ${captures.length} images from ${source.revision}.`);

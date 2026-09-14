@@ -10,7 +10,7 @@ image: {"light": "/assets/guides/layers-groups-light.webp", "dark": "/assets/gui
 
 ## Group related parts
 
-Use **New group** in Layers and move related layers into it. For a character, keep its base colors, shading and Line art together while leaving the background separate. Collapse the group when you want a shorter list.
+Use **New group** in Layers and move related layers into it. For a shape study, keep its base colors, shading and Line art together while leaving the background separate. Collapse the group when you want a shorter list.
 
 Check the hierarchy after moving rows. A group’s visibility affects its contents, so a layer can be enabled yet remain hidden by its parent. Keep clipped layers directly above their base within the same intended stack.
 

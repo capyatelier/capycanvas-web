@@ -16,7 +16,7 @@ Choose **Pen → G-Pen**, or another ink preset in Tool Set. Test the width with
 
 ## 2. Trace and correct
 
-Ink the main silhouette, facial features and clothing seams. Rotate the view using Navigator or touch for curves that are awkward at the current angle. View rotation does not rotate the saved artwork.
+Ink the shape contours, looping scribbles and short hatch marks. Rotate the view using Navigator or touch for curves that are awkward at the current angle. View rotation does not rotate the saved artwork.
 
 Use Eraser or undo to correct Line art. If the visible stroke trails behind the pen, compare the prediction controls in [input settings](/docs/advanced/input/) and test the same curve again. Too much prediction can overshoot the intended turn.
 

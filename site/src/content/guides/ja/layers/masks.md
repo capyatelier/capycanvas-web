@@ -3,9 +3,9 @@ title: "マスクとクリッピング"
 description: "元の塗りを消さずに表示範囲を制御します。"
 purpose: "レイヤーマスクは表示範囲を変え、クリッピングは別レイヤーを下地の形に制限します。透明度ロックは同じレイヤーの新しい描画を制限します。"
 techniques: ["選択範囲からマスクを作ります。", "塗りとは別にマスクを編集・無効化します。", "下地の上に陰影をクリッピングします。"]
-figure: "1：Hairのマスクサムネイル。2：Hairの上にクリッピングした陰影。3：クリッピングと透明度ロック。"
+figure: "1：Ribbonのマスクサムネイル。2：Ribbonの上にクリッピングした陰影。3：クリッピングと透明度ロック。"
 related: ["tools/selections", "illustration/mask", "illustration/render"]
-image: {"light": "/assets/guides/layers-masks-light.webp", "dark": "/assets/guides/layers-masks-dark.webp", "alt": "1：Hairのマスクサムネイル。2：Hairの上にクリッピングした陰影。3：クリッピングと透明度ロック。"}
+image: {"light": "/assets/guides/layers-masks-light.webp", "dark": "/assets/guides/layers-masks-dark.webp", "alt": "1：Ribbonのマスクサムネイル。2：Ribbonの上にクリッピングした陰影。3：クリッピングと透明度ロック。"}
 ---
 
 ## 選択範囲から作る

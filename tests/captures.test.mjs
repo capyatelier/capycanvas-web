@@ -39,6 +39,12 @@ test('every guide and the home page have complete, verified light/dark captures'
       assert.ok(bounds.x + bounds.width <= 1920 && bounds.y + bounds.height <= 1080, `Visible annotation: ${capture.file}`);
     }
   }
+  if (manifest.retainedHomepage) {
+    const { assets, provenance } = manifest.retainedHomepage;
+    assert.deepEqual(assets.map(entry => entry.file).sort(), ['examples/watercolor-study.capy', 'workspace-dark.webp', 'workspace-light.webp']);
+    assert.ok(provenance.revision && provenance.browser.product && provenance.recipeHashes['capture.mjs'], 'Retained assets keep their original capture provenance');
+    for (const entry of assets) assert.deepEqual([...manifest.captures, ...manifest.examples].find(asset => asset.file === entry.file), entry, `Retained homepage asset is unchanged: ${entry.file}`);
+  }
   for (const {slug} of docTopics) for (const locale of ['en', 'ja', 'zh', 'ko']) {
     const markdown = await readFile(`site/src/content/guides/${locale}/${slug}.md`, 'utf8');
     const figure = JSON.parse(markdown.match(/^figure: (.+)$/m)[1]);
@@ -53,7 +59,7 @@ test('every guide and the home page have complete, verified light/dark captures'
   for (const [path, expectedHash] of Object.entries(manifest.recipeHashes)) assert.equal(hash(await readFile(`site/scripts/${path}`)), expectedHash, `Recipe changed; regenerate captures: ${path}`);
 });
 
-test('downloadable examples match provenance and contain a painted 1200px portrait', async () => {
+test('downloadable examples match provenance and contain a painted 1200px abstract study', async () => {
   const manifest = JSON.parse(await readFile(join(root, 'assets/capture.json'), 'utf8'));
   assert.equal(manifest.examples.length, 8);
   for (const entry of manifest.examples) {
