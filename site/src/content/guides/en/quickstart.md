@@ -1,24 +1,25 @@
 ---
 title: "Quickstart"
-description: "Choose a version, check your pen, and start the illustration tutorial."
-figure: "The brush list and Layers panel beside the canvas."
-related: ["workspace", "illustration/draft"]
-purpose: "Capy Canvas needs GPU access and a pen that reports pressure to make the most of its brushes. This page helps you choose the available version and check your pen before starting the illustration tutorial."
-techniques: ["Find the available installation options and try the web version.", "Check whether your pen's pressure reaches the editor.", "Open the tutorial, or adjust the workspace if the default arrangement is uncomfortable."]
+description: "Open Paint, check your pen, and save your first drawing."
+purpose: "Make a few marks before adjusting the workspace. This checks that the editor and pen work together and gives you a small document to save."
+techniques: ["Choose Paint and create a document.", "Test pressure with a pencil preset.", "Save an editable project and export a PNG."]
+figure: "1: Paint workspace. 2: Tool Set. 3: Layers, where new marks are stored."
+related: ["workspace", "painting/brushes", "tools/files"]
+image: {"light": "/assets/guides/quickstart-light.webp", "dark": "/assets/guides/quickstart-dark.webp", "alt": "1: Paint workspace. 2: Tool Set. 3: Layers, where new marks are stored."}
 ---
 
-## Choose a version
+## Open the editor
 
-The [download page](/download/) lists release availability and installation options. Native builds are not available yet; they are being developed to improve drawing performance beyond the browser version. For now, use the [Web Demo](https://editor.capycanvas.art/) to try the editor. You can also install the web version for offline use by following the instructions on the download page.
+The [download page](/download/) lists installation options and current availability. Use the [Web Demo](https://editor.capycanvas.art/) in a browser with hardware WebGPU, or install that web app for offline use. A touchscreen alone does not supply pen pressure; use a pressure-sensitive pen supported by your device.
 
-Capy Canvas uses your GPU to render brushes. For drawing, use a pressure-sensitive pen tablet or a pen-enabled display that works with your operating system. A display lets you draw directly on the image, but a separate pen tablet works too. A touchscreen alone does not provide pen pressure.
+Select **Paint** in the top bar. Choose **File → New…** to create a document. Paint keeps Tool Set, Color and Layers visible; Sketch provides a smaller set of controls, while Photo emphasizes image adjustments.
 
-## Check your pen
+## Check a first stroke
 
-Open a document, choose the built-in **Pencil** preset, and make a stroke that starts lightly, gets heavier, and fades out. The mark should respond to the pressure. If it stays uniform, check [input settings](/docs/advanced/input/) before adjusting the brush itself.
+Choose **Pencil**, then a pencil preset in **Tool Set**. Draw lightly, press harder, and lighten the pressure again. Adjust brush size in **Tool**. If the mark does not respond, check [pen settings](/docs/advanced/input/) before changing the brush. Use undo to remove the test.
 
-## Start drawing
+## Save and continue
 
-Open the [illustration tutorial](/docs/illustration/). Its introduction describes the intended result and the tools used to take a pencil sketch through inking and color.
+Use **File → Save As…** to keep a `.capy` project, and **Export PNG…** for a flattened image. Workspace settings save separately from the drawing.
 
-If the default layout gets in your way, [Workspace and canvas](/docs/workspace/) explains how to move panels and toolbars or hide them with Zen mode. Brush customization can wait until you have a preset you want to change.
+Continue with [Brushes and painting](/docs/painting/brushes/), or follow the [illustration tutorial](/docs/illustration/) through sketching, line art and color.

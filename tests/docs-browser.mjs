@@ -40,6 +40,7 @@ export async function checkDocumentation(b, host, check) {
         toc: [...document.querySelectorAll('.docs-toc a')].map(element => decodeURIComponent(element.hash.slice(1))),
         background: getComputedStyle(document.body).backgroundColor,
         image: document.querySelector('.guide-figure img')?.currentSrc,
+        imageLink: document.querySelector('.guide-image-link')?.href,
         sequence: ['.docs-lead', '.guide-techniques', '.guide-figure', '.guide-prose'].map(selector => document.querySelector(selector).getBoundingClientRect().top),
       };
     })()`);
@@ -50,7 +51,8 @@ export async function checkDocumentation(b, host, check) {
     check(metrics.headings.length > 0 && metrics.headings.every(id => metrics.toc.includes(id)), `Guide section anchors ${label}`);
     check(metrics.background === (theme === 'dark' ? 'rgb(51, 51, 51)' : 'rgb(237, 237, 237)'), `Guide theme ${label}`);
     check(metrics.sequence.every((top, index) => index === 0 || top > metrics.sequence[index - 1]), `Purpose and techniques precede steps ${label}`);
-    if (slug === 'workspace') check(metrics.image.endsWith(`workspace-${theme}.webp`), `Guide screenshot follows appearance ${label}`);
+    check(metrics.image.endsWith(`${slug.replaceAll('/', '-')}-${theme}.webp`), `Guide screenshot follows appearance ${label}`);
+    check(metrics.imageLink === metrics.image, `Full-size link follows the displayed screenshot ${label}`);
     if ((locale === 'en' && ['illustration', 'illustration/mask', 'workspace'].includes(slug)) || (locale === 'ko' && slug === 'advanced/input')) {
       await b.screenshot(`artifacts/review/guide-${width}-${theme}-${locale}-${slug.replaceAll('/', '-')}.png`, true);
     }

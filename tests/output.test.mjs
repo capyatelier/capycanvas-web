@@ -48,7 +48,7 @@ for(const locale of Object.keys(languages)) {
       assert.doesNotMatch(html,/<figcaption|class="brand"|class="eyebrow"/);
       assert.equal((html.match(/class="button(?: primary)?"/g)||[]).length,3);
       assert.match(html,/<source media="\(prefers-color-scheme: dark\)" srcset="\/assets\/workspace-dark.webp">/);
-      assert.match(html,/<img src="\/assets\/workspace-light.webp" width="1440" height="810" alt=".+?"/);
+      assert.match(html,/<img src="\/assets\/workspace-light.webp" width="1920" height="1080" alt=".+?"/);
       assert.doesNotMatch(html,/<header|class="nav-links"|href="https:\/\/github.com/);
     } else {
       const footer = html.match(/<footer class="site-footer">([\s\S]*?)<\/footer>/)?.[1];

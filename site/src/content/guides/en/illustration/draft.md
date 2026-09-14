@@ -1,26 +1,27 @@
 ---
 title: "Sketching"
-description: "Draw a pencil sketch and keep the color rough on a separate layer."
-figure: "A pencil sketch above separate subject and background color roughs."
-related: ["tools/selections", "tools/transforms"]
-purpose: "Start with a pencil sketch and a rough color study. The sketch records the drawing, while the color rough lets you try the main colors underneath it. Keeping them on separate layers means you can move part of the sketch or change a color without having to redo both."
-techniques: ["Use a pencil preset and pen pressure to draw the sketch.", "Select and transform one part of the drawing, then clear the selection to keep drawing elsewhere.", "Put rough colors on a layer below the pencil lines."]
+description: "Draw a pencil sketch above a separate color rough."
+purpose: "Keep the preliminary drawing and color study on separate layers. A sketch records the forms; the rough colors let you compare the palette without repainting the pencil lines."
+techniques: ["Draw with a pencil preset and pressure.", "Select and transform a part of the sketch.", "Keep rough colors below the drawing."]
+figure: "1: Pencil presets. 2: Sketch above Color rough in Layers. 3: Pencil size and opacity controls."
+related: ["tools/selections", "tools/transforms", "painting/color"]
+image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/assets/guides/illustration-draft-dark.webp", "alt": "1: Pencil presets. 2: Sketch above Color rough in Layers. 3: Pencil size and opacity controls."}
 ---
 
-## 1. Set up the sketch
+## 1. Draw the sketch
 
-Create a new document for the illustration and name its first drawing layer **Sketch**. Choose the built-in **Pencil** preset and use brush size and pen pressure to vary the mark.
+Create a paint layer named **Sketch** and choose **Pencil** in Tool Set. Draw the head, hair and clothing with light construction lines before refining the contours. Adjust brush size in Tool and vary pressure for the stronger lines.
 
-## 2. Revise part of the drawing
+The example is a simple portrait with a coat and scarf. Leave room around the silhouette so later selections and strokes are easy to inspect.
 
-To move a hand or resize the head, use a freehand selection to enclose that part of the sketch, then transform the selected area. This changes the selected pixels on the active layer. Confirm the transform and clear the selection before continuing to draw; otherwise your strokes remain restricted to that area.
+## 2. Correct a part
 
-The [selection](/docs/tools/selections/) and [transform](/docs/tools/transforms/) references cover adjustments that need more control.
+Use **Lasso selection** to enclose an area that needs moving, then choose **Scale / rotate**. Move or resize the selected paint, choose **Apply transform**, and use **Deselect pixels** before drawing elsewhere.
 
-## 3. Add a color rough
+The [selection](/docs/tools/selections/) and [transform](/docs/tools/transforms/) references explain the editing target and preview controls. Undo a poor adjustment while keeping the rest of the sketch.
 
-Create a layer named **Color rough** below Sketch and use a broad brush to block in the subject's colors. Keep the background on another layer beneath it if you expect to revise it separately. These marks are a color study, so they do not need to follow the sketch precisely.
+## 3. Add the color rough
 
-Keep the pencil lines on Sketch. If they become difficult to see against the colors, temporarily hide Color rough. The rough colors will remain available as a reference when you make the final base-color layers.
+Add **Color rough** below Sketch. Use a broad brush or **Lasso Fill** to try the main hair, skin and clothing colors. These marks are a color study, so their boundaries can remain loose. Keep the pencil strokes on Sketch.
 
-Continue to [Line art](/docs/illustration/ink/) with the sketch and color rough still separate.
+Hide Color rough briefly if it makes the drawing hard to inspect. Save a `.capy` copy, then continue to [Line art](/docs/illustration/ink/) with the two layers still separate.

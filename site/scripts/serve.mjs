@@ -5,7 +5,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 
 export async function serve(port = 0, directory = process.env.SITE_OUTPUT || fileURLToPath(new URL('../../docs/', import.meta.url))) {
   const root = resolve(directory);
-  const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.xml': 'application/xml', '.json': 'application/json' };
+  const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.wasm': 'application/wasm', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.png': 'image/png', '.xml': 'application/xml', '.json': 'application/json' };
   const server = createServer(async (req,res) => {
     try {
       const url = new URL(req.url, 'http://localhost');
@@ -15,7 +15,7 @@ export async function serve(port = 0, directory = process.env.SITE_OUTPUT || fil
       if (info.isDirectory() && !url.pathname.endsWith('/')) { res.writeHead(301,{ Location: url.pathname + '/' + url.search }).end(); return; }
       const target = info.isDirectory() ? resolve(file,'index.html') : file;
       res.writeHead(200, { 'Content-Type': types[extname(target)] || 'text/plain; charset=utf-8' }); res.end(await readFile(target));
-    } catch { res.writeHead(404,{ 'Content-Type':'text/html; charset=utf-8' }); res.end(await readFile(resolve(root,'404.html'))); }
+    } catch { res.writeHead(404,{ 'Content-Type':'text/html; charset=utf-8' }); res.end(await readFile(resolve(root,'404.html')).catch(() => 'Not found')); }
   });
   await new Promise((done,reject) => { server.once('error',reject); server.listen(port,'127.0.0.1',done); });
   return { server, url: `http://127.0.0.1:${server.address().port}`, close: () => new Promise(r=>server.close(r)) };

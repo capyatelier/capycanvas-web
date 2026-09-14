@@ -1,10 +1,1986 @@
 {
   "source": "https://github.com/capyatelier/capycanvas",
-  "revision": "46010d54cd5f9a30b66a977f9fe64f19c307e493",
-  "packageAssetDirectory": "assets/170a65c11ca847877cca",
-  "width": 1440,
-  "height": 810,
-  "artwork": "Three watercolor squiggles drawn through actual browser pen input using brush 20 (Watercolor Wash).",
+  "revision": "fb81ebebe6987c7b773a17ec07c5b86472d7087a",
+  "patches": [
+    {
+      "file": "crates/layer-render-wgpu/src/contact.wgsl",
+      "reason": "WGSL requires parentheses between multiplication and bitwise XOR (Chrome 152).",
+      "before": "var h = bitcast<u32>(cell.x) * 1597334677u ^ bitcast<u32>(cell.y) * 3812015801u;",
+      "after": "var h = (bitcast<u32>(cell.x) * 1597334677u) ^ (bitcast<u32>(cell.y) * 3812015801u);"
+    }
+  ],
+  "hashes": {
+    "app.js": "512ab293db7eb0f3028bde5c085904c484aad19e4f3789375b606cd60162b7ad",
+    "pkg/layer_web_bg.wasm": "076c382c49574b79690cfd22048dcc74de693b6abded6a484b6d38bf54f04661"
+  },
+  "width": 1920,
+  "height": 1080,
+  "partial": false,
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/152.0.7977.64",
+    "revision": "@506c834ecceaa943c5f41e6cfe7f68acb5c45346",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+    "jsVersion": "15.2.124.18"
+  },
+  "display": "Headed Chrome on a private headless Wayland display",
+  "workspace": {
+    "id": "builtin:workspace:illustrator",
+    "name": "Paint"
+  },
+  "canvas2d": "Software decoding and UI previews; artwork remains hardware WebGPU.",
+  "recipeHashes": {
+    "capture.mjs": "defe61d774cc03b4b61fe23af1dbb065ba3b709f3bf2a9dbf6d586e98bc4106f",
+    "browser.mjs": "9962e5586f7a9cb58ef44600efe35501047ede0c59a66a953b7c672ff4794217",
+    "serve.mjs": "f804ab7645298d628e5749e2cb50539242b8fb5ab17f222f9506dba7e9134569",
+    "capture-headless.sh": "353f18d6a88a2134e5aa01b4646f5a40db3c9b7f719e70a361b6a903aafbd0a5",
+    "prepare-capture.mjs": "519e33a176e6260bd380e73c27e3c9a1c6f03add7016989300a88dd130432287",
+    "capture-compatibility.mjs": "0e83db9d43b43c4b8fc062e224ec0c9c4bc75ebf31ebc111f4a67f6399d0de5c",
+    "capture/editor.mjs": "dceca998ed9ffb2505522b7115aac45440f3cb66f3776d1910d5f036ce048e70",
+    "capture/annotations.mjs": "d2a2749808bda914fac45676075262969f4f28169cb0c4e94b45d0753bc789eb",
+    "capture/illustration.mjs": "009c79949bd41232a66bcf50fa9400f9a3fea74c5d5fd201c4bed1c559bea184",
+    "capture/references.mjs": "5403916027863fa1367f0519c5c7c9494ed4333290834bc9c458654977198f6d"
+  },
+  "artwork": "Three Watercolor Wash strokes and an original character tutorial, drawn through real browser pen input and editor actions.",
+  "annotations": "Numbered SVG outlines injected over measured DOM controls; artwork and UI rendered by Capy Canvas.",
+  "captures": [
+    {
+      "file": "workspace-light.webp",
+      "theme": "light",
+      "bytes": 68192,
+      "sha256": "43c9a6a80da9b931770c514446573e8f3df2ee2c65b1518f4a69eaf06a347206",
+      "annotations": []
+    },
+    {
+      "file": "workspace-dark.webp",
+      "theme": "dark",
+      "bytes": 68152,
+      "sha256": "5d625c08de854a13c54891bb97450e6a97e486e830186b1e74e2e756123ea553",
+      "annotations": []
+    },
+    {
+      "file": "guides/workspace-light.webp",
+      "theme": "light",
+      "bytes": 71508,
+      "sha256": "4b30e672a6556eee5943a712628ea9e183b4d495c9a5ec2d7b6685ca85575120",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".workspace-switcher",
+          "bounds": {
+            "x": 1630,
+            "y": 4,
+            "width": 204.015625,
+            "height": 42
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".brushes-panel",
+          "bounds": {
+            "x": 44,
+            "y": 80,
+            "width": 250,
+            "height": 440.375
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".navigator-panel",
+          "bounds": {
+            "x": 1614,
+            "y": 80,
+            "width": 262,
+            "height": 224.265625
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/workspace-dark.webp",
+      "theme": "dark",
+      "bytes": 71922,
+      "sha256": "6eb0bf7970c2e99a1f8181ef671ce715679a3cbe4643c64cf7994b7cb11a58b0",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".workspace-switcher",
+          "bounds": {
+            "x": 1630,
+            "y": 4,
+            "width": 204.015625,
+            "height": 42
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".brushes-panel",
+          "bounds": {
+            "x": 44,
+            "y": 80,
+            "width": 250,
+            "height": 440.375
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".navigator-panel",
+          "bounds": {
+            "x": 1614,
+            "y": 80,
+            "width": 262,
+            "height": 224.265625
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/quickstart-light.webp",
+      "theme": "light",
+      "bytes": 71404,
+      "sha256": "1d32edcc1c03d355286bf5a3b30865d97848549a86e56f0e0520f3143ed046a8",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".workspace-switcher",
+          "bounds": {
+            "x": 1630,
+            "y": 4,
+            "width": 204.015625,
+            "height": 42
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".brushes-panel",
+          "bounds": {
+            "x": 44,
+            "y": 80,
+            "width": 250,
+            "height": 440.375
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".layers-panel",
+          "bounds": {
+            "x": 1614,
+            "y": 647,
+            "width": 262,
+            "height": 429
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/quickstart-dark.webp",
+      "theme": "dark",
+      "bytes": 71814,
+      "sha256": "8760e91702992a0c9fdda788c257d3764051dd56f116bcb47b467a24cd3e8ba7",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".workspace-switcher",
+          "bounds": {
+            "x": 1630,
+            "y": 4,
+            "width": 204.015625,
+            "height": 42
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".brushes-panel",
+          "bounds": {
+            "x": 44,
+            "y": 80,
+            "width": 250,
+            "height": 440.375
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".layers-panel",
+          "bounds": {
+            "x": 1614,
+            "y": 647,
+            "width": 262,
+            "height": 429
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/painting-brushes-light.webp",
+      "theme": "light",
+      "bytes": 71492,
+      "sha256": "8d0a1585d42af91bf9cbe65dabf0877f9d1a6077ad00a9d7036b46a30cd4f710",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".dock-group[data-panel=\"toolbar\"]",
+          "bounds": {
+            "x": 4,
+            "y": 44,
+            "width": 44,
+            "height": 1032
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".brushes-panel",
+          "bounds": {
+            "x": 44,
+            "y": 80,
+            "width": 250,
+            "height": 440.375
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".tool-settings-control",
+          "bounds": {
+            "x": 52,
+            "y": 562.375,
+            "width": 234,
+            "height": 159.3125
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/painting-brushes-dark.webp",
+      "theme": "dark",
+      "bytes": 72066,
+      "sha256": "6f0f61ad9fba3a6998f7b694fda56d458b6c4a50e4f31bab968b427fb9da4ce7",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".dock-group[data-panel=\"toolbar\"]",
+          "bounds": {
+            "x": 4,
+            "y": 44,
+            "width": 44,
+            "height": 1032
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".brushes-panel",
+          "bounds": {
+            "x": 44,
+            "y": 80,
+            "width": 250,
+            "height": 440.375
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".tool-settings-control",
+          "bounds": {
+            "x": 52,
+            "y": 562.375,
+            "width": 234,
+            "height": 159.3125
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/advanced-brush-engine-light.webp",
+      "theme": "light",
+      "bytes": 71064,
+      "sha256": "7b8f4b64226b9225bbd1e0ec69060b38bda1395f203d92e268d10e7491ba263a",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".tool-subtools",
+          "bounds": {
+            "x": 52,
+            "y": 169.375,
+            "width": 234,
+            "height": 125.375
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".tool-settings-control",
+          "bounds": {
+            "x": 52,
+            "y": 562.375,
+            "width": 234,
+            "height": 159.3125
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".dock-tab[data-panel=\"sizes\"]",
+          "bounds": {
+            "x": 113.15625,
+            "y": 518.375,
+            "width": 120.609375,
+            "height": 44
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/advanced-brush-engine-dark.webp",
+      "theme": "dark",
+      "bytes": 71286,
+      "sha256": "51aafd80972562011b6df9c561ae8f42c8672d0e480d8b3a2d76c4ae6c8fce2d",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".tool-subtools",
+          "bounds": {
+            "x": 52,
+            "y": 169.375,
+            "width": 234,
+            "height": 125.375
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".tool-settings-control",
+          "bounds": {
+            "x": 52,
+            "y": 562.375,
+            "width": 234,
+            "height": 159.3125
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".dock-tab[data-panel=\"sizes\"]",
+          "bounds": {
+            "x": 113.15625,
+            "y": 518.375,
+            "width": 120.609375,
+            "height": 44
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/illustration-draft-light.webp",
+      "theme": "light",
+      "bytes": 74678,
+      "sha256": "70f18d2bef6c5c1fa57d71d29bb588c76d746bd2a3f06fde53fd03601475d7eb",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".tool-subtools",
+          "bounds": {
+            "x": 52,
+            "y": 148.6875,
+            "width": 234,
+            "height": 169.375
+          }
+        },
+        {
+          "number": 2,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1614,
+            "y": 705,
+            "width": 262,
+            "height": 341
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".tool-settings-control",
+          "bounds": {
+            "x": 52,
+            "y": 562.375,
+            "width": 234,
+            "height": 159.3125
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/illustration-draft-dark.webp",
+      "theme": "dark",
+      "bytes": 75288,
+      "sha256": "33b7f99c3e30e87e0a6bbe473c6152a362c20e3e8847541c45f4cedef8158f0f",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".tool-subtools",
+          "bounds": {
+            "x": 52,
+            "y": 148.6875,
+            "width": 234,
+            "height": 169.375
+          }
+        },
+        {
+          "number": 2,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1614,
+            "y": 705,
+            "width": 262,
+            "height": 341
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".tool-settings-control",
+          "bounds": {
+            "x": 52,
+            "y": 562.375,
+            "width": 234,
+            "height": 159.3125
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/illustration-ink-light.webp",
+      "theme": "light",
+      "bytes": 73732,
+      "sha256": "b8137a268928086aec73c393e93ef846a810b468cae49edd2f30c715d3992177",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1614,
+            "y": 705,
+            "width": 262,
+            "height": 341
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".navigator-buttons",
+          "bounds": {
+            "x": 1622,
+            "y": 256.265625,
+            "width": 246,
+            "height": 40
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".tool-subtools",
+          "bounds": {
+            "x": 52,
+            "y": 148.6875,
+            "width": 234,
+            "height": 371.6875
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/illustration-ink-dark.webp",
+      "theme": "dark",
+      "bytes": 73988,
+      "sha256": "fcfe75cdbf2d2e36e808fce340420bfe697fb4d6a68bebb53752080eb5136802",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1614,
+            "y": 705,
+            "width": 262,
+            "height": 341
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".navigator-buttons",
+          "bounds": {
+            "x": 1622,
+            "y": 256.265625,
+            "width": 246,
+            "height": 40
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".tool-subtools",
+          "bounds": {
+            "x": 52,
+            "y": 148.6875,
+            "width": 234,
+            "height": 371.6875
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/illustration-mask-light.webp",
+      "theme": "light",
+      "bytes": 74722,
+      "sha256": "5540a757b82b6c088a6bf3e4ed8b9115d4c68be897d4494d42616d3e3aff9e99",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".layer-thumbnail.editing-target",
+          "bounds": {
+            "x": 1723,
+            "y": 790,
+            "width": 38,
+            "height": 38
+          }
+        },
+        {
+          "number": 2,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1614,
+            "y": 705,
+            "width": 262,
+            "height": 341
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".color-panel",
+          "bounds": {
+            "x": 44,
+            "y": 755.703125,
+            "width": 250,
+            "height": 320.296875
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/illustration-mask-dark.webp",
+      "theme": "dark",
+      "bytes": 74892,
+      "sha256": "ea2490e7b25e6fbcb244c9946465c489a4699a0f7af85f33a9538696a59e8719",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".layer-thumbnail.editing-target",
+          "bounds": {
+            "x": 1723,
+            "y": 790,
+            "width": 38,
+            "height": 38
+          }
+        },
+        {
+          "number": 2,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1614,
+            "y": 705,
+            "width": 262,
+            "height": 341
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".color-panel",
+          "bounds": {
+            "x": 44,
+            "y": 755.703125,
+            "width": 250,
+            "height": 320.296875
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/illustration-render-light.webp",
+      "theme": "light",
+      "bytes": 81352,
+      "sha256": "1e5052a52c4206590009d700e2235a8b8a1b03e33cd7749a61b04fd60a7e6a7e",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1614,
+            "y": 705,
+            "width": 262,
+            "height": 341
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".layer-flags",
+          "bounds": {
+            "x": 1620,
+            "y": 677,
+            "width": 250,
+            "height": 32
+          }
+        },
+        {
+          "number": 3,
+          "selector": "#layer-opacity",
+          "bounds": {
+            "x": 1744,
+            "y": 651,
+            "width": 126,
+            "height": 32
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/illustration-render-dark.webp",
+      "theme": "dark",
+      "bytes": 81484,
+      "sha256": "a2b5404b9a32298acad73746829cf6f8656643b417b9c76da84df4977d85da69",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1614,
+            "y": 705,
+            "width": 262,
+            "height": 341
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".layer-flags",
+          "bounds": {
+            "x": 1620,
+            "y": 677,
+            "width": 250,
+            "height": 32
+          }
+        },
+        {
+          "number": 3,
+          "selector": "#layer-opacity",
+          "bounds": {
+            "x": 1744,
+            "y": 651,
+            "width": 126,
+            "height": 32
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/illustration-light.webp",
+      "theme": "light",
+      "bytes": 78460,
+      "sha256": "1cd745c2a270aa2e884dd2cc94519204486d61fcf3329912de71820dc97d5feb",
+      "annotations": []
+    },
+    {
+      "file": "guides/illustration-dark.webp",
+      "theme": "dark",
+      "bytes": 78304,
+      "sha256": "74a2efc99b42f23b3099b7d1a51f9dfa62c61af456fdff71fa241318e3c6033a",
+      "annotations": []
+    },
+    {
+      "file": "guides/layers-basics-light.webp",
+      "theme": "light",
+      "bytes": 77446,
+      "sha256": "43e92438c36e921b7cd38b6c8c84183db828dcebe59321e5b3f3bfe2ef58cbef",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1614,
+            "y": 705,
+            "width": 262,
+            "height": 341
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".layer-row.selected [aria-label=\"Hide layer\"]",
+          "bounds": {
+            "x": 1620,
+            "y": 907,
+            "width": 32,
+            "height": 44
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".layer-footer",
+          "bounds": {
+            "x": 1614,
+            "y": 1038,
+            "width": 262,
+            "height": 38
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/layers-basics-dark.webp",
+      "theme": "dark",
+      "bytes": 77614,
+      "sha256": "d036365f0baf7c22e7bd231b2085cee951cead2b7d09d89c469205243a55362a",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1614,
+            "y": 705,
+            "width": 262,
+            "height": 341
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".layer-row.selected [aria-label=\"Hide layer\"]",
+          "bounds": {
+            "x": 1620,
+            "y": 907,
+            "width": 32,
+            "height": 44
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".layer-footer",
+          "bounds": {
+            "x": 1614,
+            "y": 1038,
+            "width": 262,
+            "height": 38
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/layers-masks-light.webp",
+      "theme": "light",
+      "bytes": 79982,
+      "sha256": "2f0746e67af765f1a012697fb4bfb7d6bc1e64a2d101ca7db9f7ded0233b8bb1",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".layer-thumbnail.editing-target",
+          "bounds": {
+            "x": 1723,
+            "y": 910,
+            "width": 38,
+            "height": 38
+          }
+        },
+        {
+          "number": 2,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1614,
+            "y": 705,
+            "width": 262,
+            "height": 341
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".layer-flags",
+          "bounds": {
+            "x": 1620,
+            "y": 677,
+            "width": 250,
+            "height": 32
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/layers-masks-dark.webp",
+      "theme": "dark",
+      "bytes": 80130,
+      "sha256": "9e9b6093bebf1a41877b9c29e660c3022383f2304c88637524adc7c7476e05db",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".layer-thumbnail.editing-target",
+          "bounds": {
+            "x": 1723,
+            "y": 910,
+            "width": 38,
+            "height": 38
+          }
+        },
+        {
+          "number": 2,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1614,
+            "y": 705,
+            "width": 262,
+            "height": 341
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".layer-flags",
+          "bounds": {
+            "x": 1620,
+            "y": 677,
+            "width": 250,
+            "height": 32
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/layers-groups-light.webp",
+      "theme": "light",
+      "bytes": 81910,
+      "sha256": "2c94e0c7d53663d028005b190e6ce8db84be0ce2e87f47e05d87f6939db102c9",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1614,
+            "y": 705,
+            "width": 262,
+            "height": 341
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".layer-header select",
+          "bounds": {
+            "x": 1620,
+            "y": 651,
+            "width": 126,
+            "height": 32
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".layer-footer [aria-label=\"New group\"]",
+          "bounds": {
+            "x": 1646,
+            "y": 1042,
+            "width": 32,
+            "height": 32
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/layers-groups-dark.webp",
+      "theme": "dark",
+      "bytes": 82044,
+      "sha256": "a99b880283322156f2620b000d86189a0315915e010589d935f8a1d79202dbd8",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1614,
+            "y": 705,
+            "width": 262,
+            "height": 341
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".layer-header select",
+          "bounds": {
+            "x": 1620,
+            "y": 651,
+            "width": 126,
+            "height": 32
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".layer-footer [aria-label=\"New group\"]",
+          "bounds": {
+            "x": 1646,
+            "y": 1042,
+            "width": 32,
+            "height": 32
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/painting-color-light.webp",
+      "theme": "light",
+      "bytes": 70122,
+      "sha256": "8299004c4457b9e953aa1112df61341c2ca37fa3f3dda39b9141d91ea94a6a53",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".color-wheel",
+          "bounds": {
+            "x": 66,
+            "y": 777.703125,
+            "width": 206,
+            "height": 206
+          }
+        },
+        {
+          "number": 2,
+          "selector": "[data-color-slot]",
+          "union": true,
+          "bounds": {
+            "x": 52,
+            "y": 943.703125,
+            "width": 224,
+            "height": 54
+          }
+        },
+        {
+          "number": 3,
+          "selector": "[data-command=\"eyedropper\"]",
+          "bounds": {
+            "x": 4,
+            "y": 672,
+            "width": 44,
+            "height": 44
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/painting-color-dark.webp",
+      "theme": "dark",
+      "bytes": 70430,
+      "sha256": "d10c0db4211fd5a26ba9244b1e41c4dc91b49946b5f36081354b91e5302ba8b8",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".color-wheel",
+          "bounds": {
+            "x": 66,
+            "y": 777.703125,
+            "width": 206,
+            "height": 206
+          }
+        },
+        {
+          "number": 2,
+          "selector": "[data-color-slot]",
+          "union": true,
+          "bounds": {
+            "x": 52,
+            "y": 943.703125,
+            "width": 224,
+            "height": 54
+          }
+        },
+        {
+          "number": 3,
+          "selector": "[data-command=\"eyedropper\"]",
+          "bounds": {
+            "x": 4,
+            "y": 672,
+            "width": 44,
+            "height": 44
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/tools-selections-light.webp",
+      "theme": "light",
+      "bytes": 79386,
+      "sha256": "a5ff23081718b965d9c987e95c3ffde65c2a5993e31a141692ef60b489ea0a56",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".brushes-panel",
+          "bounds": {
+            "x": 44,
+            "y": 80,
+            "width": 250,
+            "height": 440.375
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".tool-settings-control",
+          "bounds": {
+            "x": 52,
+            "y": 562.375,
+            "width": 234,
+            "height": 159.3125
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".layer-row.selected",
+          "bounds": {
+            "x": 1614,
+            "y": 905,
+            "width": 247,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/tools-selections-dark.webp",
+      "theme": "dark",
+      "bytes": 80090,
+      "sha256": "23cfa4bf08c43e3e01166057f887639eb306ee3093b11f6bb108a82b7abf900d",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".brushes-panel",
+          "bounds": {
+            "x": 44,
+            "y": 80,
+            "width": 250,
+            "height": 440.375
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".tool-settings-control",
+          "bounds": {
+            "x": 52,
+            "y": 562.375,
+            "width": 234,
+            "height": 159.3125
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".layer-row.selected",
+          "bounds": {
+            "x": 1614,
+            "y": 905,
+            "width": 247,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/tools-transforms-light.webp",
+      "theme": "light",
+      "bytes": 73840,
+      "sha256": "e319c142da449d8fef3dba6b5d41c49a77507c5b61de88d81dad2db4bf5a7bfc",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".tool-settings-control",
+          "bounds": {
+            "x": 52,
+            "y": 562.375,
+            "width": 234,
+            "height": 159.3125
+          }
+        },
+        {
+          "number": 2,
+          "selector": "#canvas",
+          "documentRect": [
+            402,
+            430,
+            165,
+            190
+          ],
+          "bounds": {
+            "x": 800.8760024309158,
+            "y": 452.54000174999237,
+            "width": 129.7699959874153,
+            "height": 148.21999537944794
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".layer-row.selected",
+          "bounds": {
+            "x": 1614,
+            "y": 705,
+            "width": 247,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/tools-transforms-dark.webp",
+      "theme": "dark",
+      "bytes": 74526,
+      "sha256": "b115202530ac402b7d0079c3aed91a115fd1711dbf7e7461d96e5c668397556b",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".tool-settings-control",
+          "bounds": {
+            "x": 52,
+            "y": 562.375,
+            "width": 234,
+            "height": 159.3125
+          }
+        },
+        {
+          "number": 2,
+          "selector": "#canvas",
+          "documentRect": [
+            402,
+            430,
+            165,
+            190
+          ],
+          "bounds": {
+            "x": 800.8760024309158,
+            "y": 452.54000174999237,
+            "width": 129.7699959874153,
+            "height": 148.21999537944794
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".layer-row.selected",
+          "bounds": {
+            "x": 1614,
+            "y": 705,
+            "width": 247,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/tools-gradients-light.webp",
+      "theme": "light",
+      "bytes": 59674,
+      "sha256": "5cde152a020bf79d28d1541ba1dce1618e200d53c5c4edcf90a7ffc21cdfe421",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".brushes-panel",
+          "bounds": {
+            "x": 44,
+            "y": 80,
+            "width": 250,
+            "height": 440.375
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".color-panel",
+          "bounds": {
+            "x": 44,
+            "y": 755.703125,
+            "width": 250,
+            "height": 320.296875
+          }
+        },
+        {
+          "number": 3,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1614,
+            "y": 705,
+            "width": 262,
+            "height": 341
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/tools-gradients-dark.webp",
+      "theme": "dark",
+      "bytes": 59944,
+      "sha256": "72e418d285764e5788a0a7807293d6c273f9fd72f28a5357f5b7f7e42cbab5fe",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".brushes-panel",
+          "bounds": {
+            "x": 44,
+            "y": 80,
+            "width": 250,
+            "height": 440.375
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".color-panel",
+          "bounds": {
+            "x": 44,
+            "y": 755.703125,
+            "width": 250,
+            "height": 320.296875
+          }
+        },
+        {
+          "number": 3,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1614,
+            "y": 705,
+            "width": 262,
+            "height": 341
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/tools-figures-light.webp",
+      "theme": "light",
+      "bytes": 62566,
+      "sha256": "189ed2e0addb2d0f1f76481b649dbc5a7e2628a5ace80a1bc6b1c20635b58b73",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".brushes-panel",
+          "bounds": {
+            "x": 44,
+            "y": 80,
+            "width": 250,
+            "height": 440.375
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".tool-settings-control",
+          "bounds": {
+            "x": 52,
+            "y": 562.375,
+            "width": 234,
+            "height": 112
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".color-panel",
+          "bounds": {
+            "x": 44,
+            "y": 755.703125,
+            "width": 250,
+            "height": 320.296875
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/tools-figures-dark.webp",
+      "theme": "dark",
+      "bytes": 63374,
+      "sha256": "bf17e94a41dfb71931557ac6ca6c284b8a06800cd378d8693261a631f3e9e57e",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".brushes-panel",
+          "bounds": {
+            "x": 44,
+            "y": 80,
+            "width": 250,
+            "height": 440.375
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".tool-settings-control",
+          "bounds": {
+            "x": 52,
+            "y": 562.375,
+            "width": 234,
+            "height": 112
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".color-panel",
+          "bounds": {
+            "x": 44,
+            "y": 755.703125,
+            "width": 250,
+            "height": 320.296875
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/tools-rulers-light.webp",
+      "theme": "light",
+      "bytes": 59036,
+      "sha256": "a1babe8c2d7c14f7298c5f4f727cb00317d3d0fd837a5e43d6ba5f7d618e5d0b",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".brushes-panel",
+          "bounds": {
+            "x": 44,
+            "y": 80,
+            "width": 250,
+            "height": 440.375
+          }
+        },
+        {
+          "number": 2,
+          "selector": "#canvas",
+          "documentRect": [
+            220,
+            230,
+            790,
+            690
+          ],
+          "bounds": {
+            "x": 666.5600068569183,
+            "y": 304.9400066137314,
+            "width": 591.0199807882309,
+            "height": 517.2199832201004
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".tool-settings-control",
+          "bounds": {
+            "x": 52,
+            "y": 562.375,
+            "width": 234,
+            "height": 121.03125
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/tools-rulers-dark.webp",
+      "theme": "dark",
+      "bytes": 59762,
+      "sha256": "89f24b4a42a67c9d0e6019bd15924da95ac31b6aad3c8f9979ab7e3013de99dd",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".brushes-panel",
+          "bounds": {
+            "x": 44,
+            "y": 80,
+            "width": 250,
+            "height": 440.375
+          }
+        },
+        {
+          "number": 2,
+          "selector": "#canvas",
+          "documentRect": [
+            220,
+            230,
+            790,
+            690
+          ],
+          "bounds": {
+            "x": 666.5600068569183,
+            "y": 304.9400066137314,
+            "width": 591.0199807882309,
+            "height": 517.2199832201004
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".tool-settings-control",
+          "bounds": {
+            "x": 52,
+            "y": 562.375,
+            "width": 234,
+            "height": 121.03125
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/filters-image-editing-light.webp",
+      "theme": "light",
+      "bytes": 57236,
+      "sha256": "438d4b7ce36b03888f017165ddb7b1dc75f835c49f8396aa07fac45b72317248",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".workspace-switcher",
+          "bounds": {
+            "x": 1630,
+            "y": 4,
+            "width": 204.015625,
+            "height": 42
+          }
+        },
+        {
+          "number": 2,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1656,
+            "y": 705,
+            "width": 260,
+            "height": 341
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".effect-properties",
+          "bounds": {
+            "x": 1662,
+            "y": 344.265625,
+            "width": 250,
+            "height": 188
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/filters-image-editing-dark.webp",
+      "theme": "dark",
+      "bytes": 58260,
+      "sha256": "d9230b9a00874e7928feb40a0536fc781074f72777021cd0f2939e3a959a3dbb",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".workspace-switcher",
+          "bounds": {
+            "x": 1630,
+            "y": 4,
+            "width": 204.015625,
+            "height": 42
+          }
+        },
+        {
+          "number": 2,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1656,
+            "y": 705,
+            "width": 260,
+            "height": 341
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".effect-properties",
+          "bounds": {
+            "x": 1662,
+            "y": 344.265625,
+            "width": 250,
+            "height": 188
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/filters-overview-light.webp",
+      "theme": "light",
+      "bytes": 59152,
+      "sha256": "dba32ba1ef31bf1bde115d97a54a49ab0884e42aeb0afdeaddd90865c88379ef",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".adjustments-panel",
+          "bounds": {
+            "x": 1656,
+            "y": 338.265625,
+            "width": 260,
+            "height": 274.71875
+          }
+        },
+        {
+          "number": 2,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1656,
+            "y": 705,
+            "width": 260,
+            "height": 341
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".dock-tab[data-panel=\"properties\"]",
+          "bounds": {
+            "x": 1656,
+            "y": 302.265625,
+            "width": 120.59375,
+            "height": 44
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/filters-overview-dark.webp",
+      "theme": "dark",
+      "bytes": 61882,
+      "sha256": "c323e5a8d0869be7f79871efd7999a52bd1ee0512b1b5fde9c73d9585765daeb",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".adjustments-panel",
+          "bounds": {
+            "x": 1656,
+            "y": 338.265625,
+            "width": 260,
+            "height": 274.71875
+          }
+        },
+        {
+          "number": 2,
+          "selector": "#layer-rows",
+          "bounds": {
+            "x": 1656,
+            "y": 705,
+            "width": 260,
+            "height": 341
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".dock-tab[data-panel=\"properties\"]",
+          "bounds": {
+            "x": 1656,
+            "y": 302.265625,
+            "width": 120.59375,
+            "height": 44
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/tools-files-light.webp",
+      "theme": "light",
+      "bytes": 77458,
+      "sha256": "a0a489b9c6d65f46f4a78cf36126bc925bc176a45af8f7ef526c38bf7b2b4d4e",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": "[data-menu=\"file\"] > summary",
+          "bounds": {
+            "x": 44.0625,
+            "y": 4,
+            "width": 49.546875,
+            "height": 44
+          }
+        },
+        {
+          "number": 2,
+          "selector": "[data-menu=\"file\"] button",
+          "labels": [
+            "Save",
+            "Save As…"
+          ],
+          "union": true,
+          "bounds": {
+            "x": 50.0625,
+            "y": 129,
+            "width": 233.359375,
+            "height": 76
+          }
+        },
+        {
+          "number": 3,
+          "selector": "[data-menu=\"file\"] button",
+          "labels": [
+            "Export PNG…"
+          ],
+          "bounds": {
+            "x": 50.0625,
+            "y": 197,
+            "width": 233.359375,
+            "height": 42
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/tools-files-dark.webp",
+      "theme": "dark",
+      "bytes": 77532,
+      "sha256": "bbf1e4f9e33ccca1e6996278c05c93ff15bf7d20c843ad2c3dc29d1a0f72e4b3",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": "[data-menu=\"file\"] > summary",
+          "bounds": {
+            "x": 44.0625,
+            "y": 4,
+            "width": 49.546875,
+            "height": 44
+          }
+        },
+        {
+          "number": 2,
+          "selector": "[data-menu=\"file\"] button",
+          "labels": [
+            "Save",
+            "Save As…"
+          ],
+          "union": true,
+          "bounds": {
+            "x": 50.0625,
+            "y": 129,
+            "width": 233.359375,
+            "height": 76
+          }
+        },
+        {
+          "number": 3,
+          "selector": "[data-menu=\"file\"] button",
+          "labels": [
+            "Export PNG…"
+          ],
+          "bounds": {
+            "x": 50.0625,
+            "y": 197,
+            "width": 233.359375,
+            "height": 42
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/workspace-customization-light.webp",
+      "theme": "light",
+      "bytes": 89486,
+      "sha256": "adda35fce882ea235182528d81fbf6d09f89826dd0d46437ad23c1a6c2d800ed",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".dock-tabs",
+          "bounds": {
+            "x": 1614,
+            "y": 44,
+            "width": 262,
+            "height": 44
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".commands-panel",
+          "bounds": {
+            "x": 292,
+            "y": 44,
+            "width": 1318,
+            "height": 44
+          }
+        },
+        {
+          "number": 3,
+          "selector": "[role=\"menu\"]",
+          "bounds": {
+            "x": 446.671875,
+            "y": 42,
+            "width": 324.109375,
+            "height": 535
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/workspace-customization-dark.webp",
+      "theme": "dark",
+      "bytes": 89760,
+      "sha256": "69d17468fbdf04e248496d5ea26f29ac110130e82b454b91409d5fefeb13471c",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".dock-tabs",
+          "bounds": {
+            "x": 1614,
+            "y": 44,
+            "width": 262,
+            "height": 44
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".commands-panel",
+          "bounds": {
+            "x": 292,
+            "y": 44,
+            "width": 1318,
+            "height": 44
+          }
+        },
+        {
+          "number": 3,
+          "selector": "[role=\"menu\"]",
+          "bounds": {
+            "x": 446.671875,
+            "y": 42,
+            "width": 324.109375,
+            "height": 535
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/advanced-custom-brushes-light.webp",
+      "theme": "light",
+      "bytes": 80170,
+      "sha256": "6c128d660d7cbc5de409595c7a2c1a590bd8a90e21471a7ecc2c94a38ed79182",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".workspace-switcher",
+          "bounds": {
+            "x": 1630,
+            "y": 4,
+            "width": 204.015625,
+            "height": 42
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".tool-settings-control",
+          "bounds": {
+            "x": 52,
+            "y": 562.375,
+            "width": 234,
+            "height": 159.3125
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".workspace-form",
+          "bounds": {
+            "x": 746,
+            "y": 453.671875,
+            "width": 428,
+            "height": 172.65625
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/advanced-custom-brushes-dark.webp",
+      "theme": "dark",
+      "bytes": 77814,
+      "sha256": "2d6ef2301f658dba42a9c35ac9473adc4745cdbdae29a1c0451621785dbddb47",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".workspace-switcher",
+          "bounds": {
+            "x": 1630,
+            "y": 4,
+            "width": 204.015625,
+            "height": 42
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".tool-settings-control",
+          "bounds": {
+            "x": 52,
+            "y": 562.375,
+            "width": 234,
+            "height": 159.3125
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".workspace-form",
+          "bounds": {
+            "x": 746,
+            "y": 453.671875,
+            "width": 428,
+            "height": 172.65625
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/workspace-management-light.webp",
+      "theme": "light",
+      "bytes": 74932,
+      "sha256": "b1e45310002b830fc99a3fa534b7b49cbc0b42b2a7a657ec4be50db0921540cf",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".workspace-list",
+          "bounds": {
+            "x": 744,
+            "y": 408,
+            "width": 432,
+            "height": 322
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".workspace-row[data-id=\"builtin:workspace:illustrator\"]",
+          "bounds": {
+            "x": 744,
+            "y": 464,
+            "width": 432,
+            "height": 64
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".workspace-manager footer",
+          "bounds": {
+            "x": 744,
+            "y": 734,
+            "width": 432,
+            "height": 42
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/workspace-management-dark.webp",
+      "theme": "dark",
+      "bytes": 75618,
+      "sha256": "9dd13b9bf2a504b1adcda9762aec0e8e4306078776f632156381f72d2949217b",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".workspace-list",
+          "bounds": {
+            "x": 744,
+            "y": 408,
+            "width": 432,
+            "height": 322
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".workspace-row[data-id=\"builtin:workspace:illustrator\"]",
+          "bounds": {
+            "x": 744,
+            "y": 464,
+            "width": 432,
+            "height": 64
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".workspace-manager footer",
+          "bounds": {
+            "x": 744,
+            "y": 734,
+            "width": 432,
+            "height": 42
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/advanced-input-light.webp",
+      "theme": "light",
+      "bytes": 79622,
+      "sha256": "3dfa2e9ba69001928d8877485a95d5aeeb7aa140d22552a2ffd2f4f51806310a",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".preferences-navigation",
+          "bounds": {
+            "x": 456,
+            "y": 210,
+            "width": 218,
+            "height": 238
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".preferences-page[data-page=\"input\"]",
+          "bounds": {
+            "x": 666,
+            "y": 210,
+            "width": 798,
+            "height": 393
+          }
+        },
+        {
+          "number": 3,
+          "selector": "[data-settings-page=\"shortcuts\"]",
+          "bounds": {
+            "x": 462,
+            "y": 348,
+            "width": 206,
+            "height": 50
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/advanced-input-dark.webp",
+      "theme": "dark",
+      "bytes": 67822,
+      "sha256": "cf89076f59a28bce95017cbb8bab09c823d42da3a69c30df200ab54ef5c953ad",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".preferences-navigation",
+          "bounds": {
+            "x": 456,
+            "y": 210,
+            "width": 218,
+            "height": 238
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".preferences-page[data-page=\"input\"]",
+          "bounds": {
+            "x": 666,
+            "y": 210,
+            "width": 798,
+            "height": 393
+          }
+        },
+        {
+          "number": 3,
+          "selector": "[data-settings-page=\"shortcuts\"]",
+          "bounds": {
+            "x": 462,
+            "y": 348,
+            "width": 206,
+            "height": 50
+          }
+        }
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "file": "examples/watercolor-study.capy",
+      "bytes": 2747793,
+      "sha256": "2ae2ab7afbd1bd816873880af88bea672b89dc04dec14f464d9c214a1f8e29bb"
+    },
+    {
+      "file": "examples/01-sketch.capy",
+      "bytes": 414939,
+      "sha256": "aedc73080825a94c80b2950a6f71c284284de72e8a79fcba2e7c6f7e89d52489"
+    },
+    {
+      "file": "examples/02-line-art.capy",
+      "bytes": 603701,
+      "sha256": "3d769ed50cb7edd51dc02e171cdcb533ea15db6b706f9cfb9e89930fc780f5f1"
+    },
+    {
+      "file": "examples/03-base-colors.capy",
+      "bytes": 695680,
+      "sha256": "c921eac551a911691cfabc2958ebd15cd850cab7d40bde10d0feace299a6e5a2"
+    },
+    {
+      "file": "examples/04-finished.capy",
+      "bytes": 1333174,
+      "sha256": "6e7ac3d0ad309d54e7238f6bdd91b4149c0df76c58b0bc76c4043e3f2a9ed320"
+    },
+    {
+      "file": "examples/character.png",
+      "bytes": 271351,
+      "sha256": "73dfa994f539b1c833eb6d73e50dad6c64405fae949c9f9ee6b54a0aeb650897"
+    },
+    {
+      "file": "examples/image-editing.capy",
+      "bytes": 6199683,
+      "sha256": "1f259074193f63ba69d9453863e748af11343b4260a564be42c9b7b5a3885eaf"
+    },
+    {
+      "file": "examples/image-editing.png",
+      "bytes": 271413,
+      "sha256": "ffea71d42b4547ca7e39069ad04e43d19d173d8ba752955a94eeea2ee75370bb"
+    }
+  ],
   "screenshots": [
     "workspace-light.webp",
     "workspace-dark.webp"

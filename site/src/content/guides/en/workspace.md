@@ -1,27 +1,27 @@
 ---
 title: "Workspace and canvas"
-description: "Arrange the controls around your drawing and navigate the canvas."
-figure: "Workspace with the brush list and three watercolor strokes."
-related: ["advanced/input", "tools/transforms"]
-image: {"light": "/assets/workspace-light.webp", "dark": "/assets/workspace-dark.webp", "alt": "Workspace with the brush list and three watercolor strokes."}
-purpose: "You can move Capy Canvas's panels and toolbars to suit your screen and drawing hand. Canvas view controls let you change your drawing angle without rotating the artwork itself. This page covers those adjustments and when to hide the controls with Zen mode."
-techniques: ["Place the brush list and Layers panel where you can reach them without covering the drawing.", "Pan, zoom, and rotate the view while keeping the document unchanged.", "Use Zen mode with undo and navigation still accessible from your keyboard or pen."]
+description: "Choose a workspace and navigate the view without changing the artwork."
+purpose: "Sketch, Paint and Photo arrange the same editor for different tasks. Start in Paint to keep drawing controls visible, then adjust the view to reach the part you want to work on."
+techniques: ["Switch among Sketch, Paint and Photo.", "Use Navigator, zoom, rotation and view flips.", "Hide controls with Zen mode."]
+figure: "1: Workspace switcher. 2: Tool Set. 3: Navigator and view controls."
+related: ["workspace/management", "workspace/customization", "advanced/input"]
+image: {"light": "/assets/guides/workspace-light.webp", "dark": "/assets/guides/workspace-dark.webp", "alt": "1: Workspace switcher. 2: Tool Set. 3: Navigator and view controls."}
 ---
 
-## Arrange panels and toolbars
+## Choose an arrangement
 
-Keep the brush list and Layers panel visible while following the tutorial. Drag a panel by its tab, or by the bottom grip if its tab is hidden; drag a toolbar by its grip. Release at a docking indicator to attach it, or over the canvas to leave it floating. Right-click or press and hold its tab or grip, then choose **Configure** to change the controls it contains.
+**Sketch** keeps essential drawing controls in the top bar and opens panels as drawers. **Paint** has Tool Set, Tool/Brush size and Color on the left, with Navigator, Properties/Filters and Layers on the right. **Photo** places its main panels on the right and starts with Operation selected.
 
-Tool settings apply to the active tool. When you switch from a brush to a selection tool, check the settings again: a brush's opacity and a selection's edge settings affect different operations. The [brush engine reference](/docs/advanced/brush-engine/) covers the detailed brush controls.
+Switching workspace restores its arrangement and working tool settings. Your document stays open. [Manage workspaces](/docs/workspace/management/) explains how to keep different setups.
 
-## Navigate without changing the drawing
+## Navigate the canvas
 
-On a touch-enabled screen, turn two fingers to rotate the canvas view until a long curve is comfortable to draw. **F** fits the canvas and resets its rotation. Rotation currently requires touch input; with a mouse or a separate pen tablet, keep the view upright. View adjustments leave the artwork unchanged. Use [Transformations](/docs/tools/transforms/) to move or reshape the actual drawing.
+Hold **Space** and drag to pan; use **Ctrl+mouse wheel** or a two-finger pinch to zoom. **F** fits the document. Navigator provides zoom, rotation and view-flip controls, and dragging its preview moves the view. The View menu also offers **Rotate view 90° left/right** and horizontal/vertical flips. Touch rotation lets you choose another drawing angle.
 
-Hold **Space** and drag to pan. Use **Ctrl+mouse wheel**, or pinch with two fingers, to zoom while checking the zoom percentage. Actual size means **100% zoom**; a direct 100% control is not available yet. Zoom in to inspect fine marks and fill edges, since fitting a large document to the window can hide small gaps.
+These operations change your view, including its orientation, without changing exported pixels. Use [Moving and transforming](/docs/tools/transforms/) to change the artwork itself.
 
-## Use Zen mode
+## Hide or rearrange controls
 
-Choose a brush and layer, then press **Tab** or use the **Zen** button to hide the surrounding controls while drawing. Press Tab again to leave Zen mode. In the default configuration, moving to an occupied screen edge temporarily reveals its panels. Hiding controls does not change the active tool or layer.
+Press **Tab** for **Zen mode**; press it again to restore the controls. The artwork stays in place. Moving to an occupied edge can reveal controls temporarily.
 
-If you often draw this way, keep undo and canvas navigation accessible through your keyboard or pen buttons. Set those up in [Input settings](/docs/advanced/input/) before hiding the controls.
+For a lasting change, move or configure the panels using [workspace customization](/docs/workspace/customization/). Layout undo is separate from drawing undo.

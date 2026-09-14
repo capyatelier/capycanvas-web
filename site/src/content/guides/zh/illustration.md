@@ -1,21 +1,28 @@
 ---
 title: "插画教程"
-navTitle: "教程介绍"
-description: "从铅笔草稿开始，完成一幅上色的人物插画。"
-purpose: "本教程采用先画线稿、再上色的常见流程，制作人物插画。你会依次画草稿、勾线、铺底色和添加明暗。完成的文档会保留这些独立部分，方便继续改色或修正边缘，而不必从头重画。"
-techniques: ["使用铅笔笔刷，配合笔压绘制草稿，再通过选区调整画面的一部分。", "在独立图层上勾线，并在绘画时使用画布旋转和撤销。", "建立底色图层，用蒙版修整边缘。", "在剪贴图层上添加明暗，调整强度，再导出图片。"]
-figure: "完成效果示例待补充，将展示结合线稿、底色与明暗的人物插画。"
-related: ["quickstart", "workspace", "advanced/input"]
+description: "从铅笔草稿画到带阴影的人物插画。"
+purpose: "用简单头像练习分开保存草稿、线稿、底色与阴影。每个阶段使用命名图层，修改某一部分时无需重做其他部分。"
+techniques: ["分开绘制草稿与色稿。", "在淡化草稿上勾线。", "为头发、皮肤和衣服建立蒙版底色。", "添加剪贴阴影并导出。"]
+figure: "在Paint中绘制的完成示例，包含独立线稿、带蒙版的底色与阴影图层。"
+related: ["quickstart", "workspace", "tools/files"]
+navTitle: "介绍"
+image: {"light": "/assets/guides/illustration-light.webp", "dark": "/assets/guides/illustration-dark.webp", "alt": "在Paint中绘制的完成示例，包含独立线稿、带蒙版的底色与阴影图层。"}
 ---
 
-## 开始之前
+## 准备文档
 
-如果尚未确认可用版本和笔输入，请先查看[快速上手](/zh/docs/quickstart/)。保留笔刷列表和图层面板，[工作区与画布](/zh/docs/workspace/)介绍了如何按落笔位置安排它们。
+尚未检查笔时，先看[快速入门](/zh/docs/quickstart/)。选择**Paint**让Tool Set、Color和Layers保持可见。示例使用**1200 × 1200**文档；自己的作品可用合适尺寸。
 
-教程中会经常使用撤销、笔刷大小调整和画布操作。参考[输入设置](/zh/docs/advanced/input/)，把这些命令分配给绘画时容易触及的键或笔按键。选择适合自己设备的操作方式即可。
+示例包含头发、脸、外套与围巾。图层名保留英文以便与示例文件对应，不必描摹同一个人物。
 
-## 按顺序完成各阶段
+## 按四个阶段进行
 
-从[草稿](/zh/docs/illustration/draft/)开始，在同一文档里完成四个阶段。每一阶段先介绍新用到的工具，再沿用上一阶段的图层进行操作。需要了解详细设置时，可以打开步骤中的相关链接。
+从[草稿](/zh/docs/illustration/draft/)开始，在同一文档中继续线稿、蒙版与细化。Sketch和Color rough隐藏后仍保留，后续阶段通过添加图层继续工作。
 
-可以画自己的人物。步骤使用头发、皮肤和服装来明确编辑对象，姿势和配色可以自行选择。
+各阶段使用真实编辑器截图，编号对应图注中的操作区。打开原图可检查顺序与缩略图。
+
+## 使用示例文件
+
+通过<strong>File → Open…</strong>打开<a href="/assets/examples/01-sketch.capy" download>草稿</a>、<a href="/assets/examples/02-line-art.capy" download>线稿</a>、<a href="/assets/examples/03-base-colors.capy" download>底色</a>或<a href="/assets/examples/04-finished.capy" download>完成项目</a>。图像编辑指南也可使用[完成PNG](/assets/examples/character.png)。
+
+修改前另存自己的副本。项目包含截图中实际使用的图层和蒙版。

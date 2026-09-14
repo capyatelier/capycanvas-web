@@ -1,26 +1,27 @@
 ---
 title: "Line art"
-description: "Ink above the sketch without changing the underlying drawing."
-figure: "The Line art layer selected above the faded Sketch layer."
-related: ["layers/basics", "advanced/input"]
-purpose: "In this stage, you will draw the finished outlines over the faded sketch. The new ink stays on its own layer so you can erase it, inspect it without the sketch, and add color underneath it later."
-techniques: ["Lower the sketch layer's opacity without changing the pencil marks themselves.", "Use an ink preset, canvas rotation, and optional stroke stabilization for the lines.", "Check for gaps in outlines that will become filled color regions."]
+description: "Ink on a new layer above the faded sketch."
+purpose: "Keep the finished outlines separate from the preliminary drawing. You can erase or recolor the ink without altering the sketch, then put the final colors underneath it."
+techniques: ["Fade Sketch and select a separate Line art layer.", "Use a pen preset and view rotation.", "Close contours that will guide selections."]
+figure: "1: Line art above the faded Sketch. 2: Navigator’s view controls. 3: Pen presets in Tool Set."
+related: ["layers/basics", "advanced/input", "workspace"]
+image: {"light": "/assets/guides/illustration-ink-light.webp", "dark": "/assets/guides/illustration-ink-dark.webp", "alt": "1: Line art above the faded Sketch. 2: Navigator’s view controls. 3: Pen presets in Tool Set."}
 ---
 
-## 1. Separate the ink from the sketch
+## 1. Separate the ink
 
-In the Layers panel, lower the opacity of **Sketch** until it is visible without competing with a new stroke. Hide **Color rough**, then add a layer named **Line art** above Sketch. Select Line art before drawing; changing the sketch's opacity does not select a new drawing layer.
+Select **Sketch** and lower its layer opacity until it is visible without competing with the next stroke. Hide **Color rough**. Add **Line art** above Sketch and select its content thumbnail before drawing.
 
-Choose an ink preset and test its line width with your usual pen pressure. Some presets keep a fixed width. If you expect pressure to vary the line but it does not, test with the built-in Pencil preset as described in [Input settings](/docs/advanced/input/).
+Choose **Pen → G-Pen**, or another ink preset in Tool Set. Test the width with your usual pressure. Changing the sketch’s opacity does not itself select a new drawing layer.
 
-## 2. Ink and correct the lines
+## 2. Trace and correct
 
-Rotate the canvas view for curves that are awkward at the current angle. This changes your drawing position without rotating the layer's pixels. If you need steadier lines, increase stroke stabilization only enough to help; stronger stabilization can make the stroke trail behind the pen.
+Ink the main silhouette, facial features and clothing seams. Rotate the view using Navigator or touch for curves that are awkward at the current angle. View rotation does not rotate the saved artwork.
 
-Make corrections on Line art. Erasing a stroke there leaves the sketch intact, and undo lets you replace the last stroke.
+Use Eraser or undo to correct Line art. If the visible stroke trails behind the pen, compare the prediction controls in [input settings](/docs/advanced/input/) and test the same curve again. Too much prediction can overshoot the intended turn.
 
-## 3. Prepare the contours for color
+## 3. Check the contours
 
-Hide Sketch periodically to inspect the ink by itself. Close accidental gaps around areas you want to fill, such as a sleeve or a section of hair. Internal detail lines can remain open; the next stage also uses freehand selections where an enclosed outline is not available.
+Hide Sketch to inspect the ink alone. Close accidental gaps in regions you intend to select automatically. Internal details can remain open when you will use a lasso to define the base-color shape.
 
-Keep Line art above the color layers in [Masking](/docs/illustration/mask/). You can hide the sketch while retaining it for later revisions; there is no need to merge the layers.
+Keep Line art above the colors throughout the following stages. Save the document, then continue to [Masking](/docs/illustration/mask/). The screenshot retains a faded sketch so the separation of layers remains visible.

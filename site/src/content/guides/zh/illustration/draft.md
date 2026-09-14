@@ -1,26 +1,27 @@
 ---
 title: "草稿"
-description: "用铅笔起稿，并把色稿放在单独的图层上。"
-figure: "铅笔草稿下方分别放置人物色稿和背景色稿。"
-related: ["tools/selections", "tools/transforms"]
-purpose: "先画铅笔草稿，再添加粗略的色稿。草稿记录形体，色稿放在下方，用来尝试主要配色。将两者分层，就能单独移动一部分草稿或改变颜色，而不必把两者都重画。"
-techniques: ["使用铅笔预设和笔压绘制草稿。", "选中并变换画面的一部分，再取消选区，继续在其他位置绘画。", "在铅笔线下方的图层上铺出大致颜色。"]
+description: "在独立色稿上方绘制铅笔草稿。"
+purpose: "草稿记录形体，色稿用来比较配色。将它们分开，就能试色而不重画铅笔线条。"
+techniques: ["用铅笔预设和压感绘画。", "选择并变换局部。", "把色稿放在草稿下方。"]
+figure: "1：铅笔预设。2：Color rough上方的Sketch。3：铅笔大小与不透明度。"
+related: ["tools/selections", "tools/transforms", "painting/color"]
+image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/assets/guides/illustration-draft-dark.webp", "alt": "1：铅笔预设。2：Color rough上方的Sketch。3：铅笔大小与不透明度。"}
 ---
 
-## 1. 准备草稿图层
+## 1. 绘制草稿
 
-为插画新建文档，将第一个绘画图层命名为**草稿**。选择内置的**Pencil**预设，通过笔刷大小和笔压调整笔触。
+建立名为**Sketch**的图层，在Tool Set中选择**Pencil**。先用轻线确定头、头发与衣服，再整理轮廓。用Tool调整大小，以压感强调线条。
 
-## 2. 修改画面的一部分
+示例是穿外套、戴围巾的人物。轮廓周围留出余量，便于检查之后的选区和笔迹。
 
-需要移动手的位置或调整头部大小时，用自由选区圈住对应部分，再对选中区域进行变换。这只会改变当前图层中被选中的像素。确认变换后，先取消选区再继续画，否则新笔触仍会被限制在该区域内。
+## 2. 修正局部
 
-需要更细致的控制时，可查阅[选区与填充](/zh/docs/tools/selections/)和[变换](/zh/docs/tools/transforms/)。
+用**Lasso selection**圈住需要移动的部分，选择**Scale / rotate**。移动或缩放后选择**Apply transform**，去其他位置绘画前使用**Deselect pixels**。
+
+[选区](/zh/docs/tools/selections/)与[变换](/zh/docs/tools/transforms/)参考页说明编辑目标和预览操作。不满意时撤销该调整，其他草稿保留。
 
 ## 3. 添加色稿
 
-在草稿下方新建**色稿**图层，用较大的笔刷铺出人物的主要颜色。如果预计会单独修改背景，就把背景放在更下方的另一图层。色稿用于尝试配色，不必精确贴合草稿轮廓。
+在Sketch下方添加**Color rough**。用宽画笔或**Lasso Fill**试头发、皮肤和衣服的主色。此时重点是配色，边缘可以粗略；铅笔线条留在Sketch上。
 
-铅笔线留在草稿图层上。如果颜色使线条难以辨认，暂时隐藏色稿即可。之后制作正式底色图层时，仍可用色稿作参考。
-
-保留草稿和色稿各自的图层，然后进入[线稿](/zh/docs/illustration/ink/)。
+色稿妨碍检查时可临时隐藏。保存`.capy`，保持两层分开并继续[线稿](/zh/docs/illustration/ink/)。

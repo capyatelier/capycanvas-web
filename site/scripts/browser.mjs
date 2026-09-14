@@ -4,11 +4,12 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
 // A small Chrome DevTools Protocol client for browser checks and real app captures.
-export async function browser({ gpu = false, width = 1440, height = 1000 } = {}) {
+export async function browser({ gpu = false, headless = true, gpuArgs, width = 1440, height = 1000 } = {}) {
   const profile = await mkdtemp(join(tmpdir(), 'capy-site-chrome-'));
   const args = ['--remote-debugging-pipe', `--user-data-dir=${profile}`,
     '--no-first-run', '--no-default-browser-check', '--force-color-profile=srgb',
-    ...(gpu ? ['--ozone-platform=wayland', '--enable-gpu', '--enable-unsafe-webgpu', '--use-angle=vulkan'] : ['--headless=new', '--disable-gpu']), 'about:blank'];
+    ...(headless ? ['--headless=new', '--ozone-platform=headless'] : ['--ozone-platform=wayland']),
+    ...(gpu ? ['--enable-gpu', '--enable-unsafe-webgpu', '--disable-accelerated-2d-canvas', ...(gpuArgs || (process.platform === 'linux' ? ['--use-angle=vulkan', '--enable-features=Vulkan', '--disable-vulkan-surface'] : []))] : ['--disable-gpu']), 'about:blank'];
   const chrome = spawn(process.env.CHROME || 'google-chrome', args, { stdio: ['ignore', 'ignore', 'pipe', 'pipe', 'pipe'] });
   let seq = 0, buffer = '', session, stderr = '';
   const pending = new Map(), errors = [];
@@ -44,8 +45,8 @@ export async function browser({ gpu = false, width = 1440, height = 1000 } = {})
     if (r.exceptionDetails) throw new Error(r.exceptionDetails.exception?.description || r.exceptionDetails.exception?.value || r.exceptionDetails.text);
     return r.result.value;
   }
-  async function until(expression) {
-    for (let i = 0; i < 150; i++) {
+  async function until(expression, timeout = 15000) {
+    for (let i = 0; i < timeout / 100; i++) {
       // Navigation can briefly leave the new document without a root element.
       if (await evaluate(`!!document.documentElement && (${expression})`)) return;
       await new Promise(r => setTimeout(r, 100));

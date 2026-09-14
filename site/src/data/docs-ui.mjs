@@ -1,23 +1,25 @@
 export const docsUI = {
   "en": {
-    "intro": "The tutorial explains Capy Canvas through a character illustration. Reference pages cover individual tools and settings.",
+    "intro": "Start in Paint, learn the drawing and editing tools, then save an editable project and export an image. Short references cover individual tasks; the illustration tutorial puts them together.",
     "outline": "Draft",
-    "notice": "These draft guides describe the intended workflow and include features that are still in development.",
+    "notice": "These concise guides follow the current web editor. Native controls may differ while the ports are being completed.",
     "overview": "Overview",
     "contents": "Documentation contents",
     "onPage": "On this page",
     "groups": {
       "start": "Getting started",
-      "illustration": "Illustration tutorial",
-      "layers": "Layers",
-      "tools": "Tools and files",
-      "advanced": "Advanced"
+      "drawing": "Drawing",
+      "layers": "Layers and masks",
+      "editing": "Selections and editing",
+      "output": "Filters and output",
+      "customize": "Customize",
+      "illustration": "Illustration tutorial"
     },
     "startTitle": "Getting started",
     "journey": "Illustration tutorial",
-    "journeyIntro": "Work through the stages in order using the same document. Each stage builds on the layers from the previous one.",
-    "references": "Reference",
-    "referenceIntro": "These pages explain the controls used in the tutorial and the settings for adapting them to your work.",
+    "journeyIntro": "Practice with a simple character illustration. Follow the four stages in the same document, from pencil sketch to clipped shading.",
+    "references": "Tools and workflows",
+    "referenceIntro": "Start with brushes and color, organize your layers, then edit and export. You can also edit an imported image in Photo or adapt the workspace to your habits.",
     "layerSummary": "Manage separate parts of an illustration with layers, masks, and groups.",
     "toolSummary": "Adjust selected areas, correct fill edges, and save or export the result.",
     "brushSummary": "Adapt brush presets and input settings to the marks you want to make.",
@@ -40,31 +42,42 @@ export const docsUI = {
       "windows": "Check pen pressure in your tablet driver's settings if it fails in more than one app. With multiple displays, map the tablet to the display showing Capy Canvas.",
       "mac": "Check the display mapping in your tablet settings before adjusting the brush. When assigning shortcuts, treat Command and Control as different keys; do not copy a Windows shortcut assignment without checking it.",
       "linux": "For the web version, check tablet mapping in your desktop settings. When reporting missing pressure or a cursor offset, include your browser and whether your desktop uses Wayland or X11.",
-      "ipad": "Check that your Apple Pencil model supports the pressure or tilt input you want to use. If your hand leaves marks, check how touch input is assigned before changing the brush.",
-      "android": "Check that the pen and device support pressure input; a generic touch stylus may act like a finger. If pen input works but touch interferes, check the separate drawing and canvas-navigation assignments."
+      "ipad": "Check that your Apple Pencil model supports the pressure or tilt input you want to use. If your hand leaves marks, test pen and touch separately before changing the brush.",
+      "android": "Check that the pen and device support pressure input; a generic touch stylus may act like a finger. If pen input works but touch interferes, compare pen-only drawing with touch navigation and check the device’s palm rejection."
     },
     "techniques": "What you'll learn",
-    "tutorialStart": "Start with the tutorial introduction"
+    "tutorialStart": "Start with the tutorial introduction",
+    "groupDescriptions": {
+      "drawing": "Choose brushes and colors, adjust the marks, and keep your settings.",
+      "layers": "Separate paint, control visibility with masks, and combine groups.",
+      "editing": "Select, fill and transform areas; draw gradients, shapes and ruled lines.",
+      "output": "Edit an imported image, adjust filters, and save or export the result.",
+      "customize": "Manage Sketch, Paint and Photo, arrange controls, and set up input."
+    },
+    "imageOpen": "Open full-size screenshot",
+    "imageHint": "Open the image to inspect the controls. Numbered outlines identify the controls described in the caption."
   },
   "ja": {
-    "intro": "人物イラストの制作を通してCapy Canvasの操作を説明します。個々のツールや設定はリファレンスで確認できます。",
+    "intro": "Paintで描画と編集の基本を覚え、編集用のプロジェクトを保存して画像を書き出します。各リファレンスは短くまとめ、イラスト制作チュートリアルで操作を組み合わせて使います。",
     "outline": "草案",
-    "notice": "このガイドは想定する制作手順を説明する草案で、開発中の機能も含みます。",
+    "notice": "この簡潔なガイドは現在のウェブ版に基づいています。移植作業中のネイティブ版では操作が異なる場合があります。",
     "overview": "目次",
     "contents": "ドキュメントの目次",
     "onPage": "このページの内容",
     "groups": {
       "start": "基本操作",
-      "illustration": "イラスト制作チュートリアル",
-      "layers": "レイヤー",
-      "tools": "ツールとファイル",
-      "advanced": "詳細設定"
+      "drawing": "描画",
+      "layers": "レイヤーとマスク",
+      "editing": "選択と編集",
+      "output": "フィルターと書き出し",
+      "customize": "カスタマイズ",
+      "illustration": "イラスト制作チュートリアル"
     },
     "startTitle": "基本操作",
     "journey": "イラスト制作チュートリアル",
-    "journeyIntro": "同じドキュメントで順に進めます。各工程では、前の工程で作成したレイヤーを使います。",
-    "references": "リファレンス",
-    "referenceIntro": "制作手順で使う操作と、自分の作業に合わせて調整するための設定を説明します。",
+    "journeyIntro": "シンプルな人物イラストで練習します。同じドキュメントを使い、鉛筆の下描きからクリッピングを使った陰影までの4工程を進めます。",
+    "references": "ツールと作業手順",
+    "referenceIntro": "ブラシと色から始め、レイヤーを整理して編集・書き出しへ進みます。Photoで読み込んだ画像を編集したり、作業画面を自分の操作に合わせたりすることもできます。",
     "layerSummary": "レイヤー、マスク、グループを使って、イラストの各部分を管理します。",
     "toolSummary": "選択部分の調整、塗りの縁の修正、保存と書き出しを説明します。",
     "brushSummary": "描きたい筆跡に合わせて、ブラシのプリセットと入力設定を調整します。",
@@ -87,31 +100,42 @@ export const docsUI = {
       "windows": "複数のアプリで筆圧が使えない場合は、タブレットドライバーの設定で筆圧を確認します。複数画面を使う場合は、Capy Canvasを表示している画面にタブレットを割り当ててください。",
       "mac": "ブラシを調整する前に、タブレット設定の画面への割り当てを確認します。ショートカットのCommandとControlは別のキーなので、Windowsの割り当てをそのまま使わずに確認してください。",
       "linux": "ウェブ版では、デスクトップ設定のタブレットの割り当てを確認します。筆圧が届かない、カーソルがずれるといった問題の報告には、ブラウザー名と、デスクトップがWaylandかX11かを添えてください。",
-      "ipad": "使っているApple Pencilのモデルが、必要な筆圧や傾きの入力に対応しているか確認します。手を置くと線が描かれる場合は、ブラシを変更する前にタッチ入力の割り当てを確認してください。",
-      "android": "ペンとデバイスが筆圧入力に対応しているか確認します。一般的なタッチ用スタイラスは、指と同じ入力になる場合があります。ペンは使えるのにタッチが妨げになる場合は、描画とキャンバス操作の割り当てを確認してください。"
+      "ipad": "使っているApple Pencilのモデルが、必要な筆圧や傾きの入力に対応しているか確認します。手を置くと線が描かれる場合は、ブラシを変更する前にペンとタッチを別々に試してください。",
+      "android": "ペンとデバイスが筆圧入力に対応しているか確認します。一般的なタッチ用スタイラスは、指と同じ入力になる場合があります。タッチが妨げになる場合は、ペンだけの描画とタッチでの表示操作を比較し、機器のパームリジェクションを確認してください。"
     },
     "techniques": "このページで学ぶこと",
-    "tutorialStart": "チュートリアルの紹介を読む"
+    "tutorialStart": "チュートリアルの紹介を読む",
+    "groupDescriptions": {
+      "drawing": "ブラシと色を選び、筆跡を調整して設定を保持します。",
+      "layers": "描画を分け、マスクで表示範囲を制御し、グループを組み合わせます。",
+      "editing": "範囲の選択・塗りつぶし・変形と、グラデーション・図形・定規を使います。",
+      "output": "読み込んだ画像にフィルターを適用し、保存や書き出しを行います。",
+      "customize": "Sketch・Paint・Photoを管理し、パネルと入力設定を調整します。"
+    },
+    "imageOpen": "スクリーンショットを原寸で開く",
+    "imageHint": "画像を開くと操作部分を詳しく確認できます。番号付きの枠はキャプションで説明する操作部分を示します。"
   },
   "zh": {
-    "intro": "教程通过一幅人物插画介绍Capy Canvas的操作，参考页面则说明各个工具与设置。",
+    "intro": "从Paint工作区开始，学习绘画与编辑工具，然后保存可编辑的项目并导出图像。简短的参考页面介绍各项任务，插画教程则将这些操作串联起来。",
     "outline": "草案",
-    "notice": "这些指南草案描述了预期的制作流程，其中包含仍在开发的功能。",
+    "notice": "这些简明指南以当前网页版为准。原生版本仍在移植中，部分控件可能不同。",
     "overview": "概览",
     "contents": "文档目录",
     "onPage": "本页内容",
     "groups": {
       "start": "基本操作",
-      "illustration": "插画教程",
-      "layers": "图层",
-      "tools": "工具与文件",
-      "advanced": "高级设置"
+      "drawing": "绘画",
+      "layers": "图层与蒙版",
+      "editing": "选择与编辑",
+      "output": "滤镜与输出",
+      "customize": "自定义",
+      "illustration": "插画教程"
     },
     "startTitle": "基本操作",
     "journey": "插画教程",
-    "journeyIntro": "按顺序在同一文档中完成各阶段，每一步都会沿用上一阶段建立的图层。",
-    "references": "参考手册",
-    "referenceIntro": "这些页面解释教程用到的控件，以及如何按自己的工作方式调整相关设置。",
+    "journeyIntro": "用一幅简单的人物插画练习。在同一文档中完成四个阶段，从铅笔草稿到剪贴阴影。",
+    "references": "工具与工作流程",
+    "referenceIntro": "从笔刷与颜色开始，整理图层，再进行编辑和导出。也可以在Photo中编辑导入的图像，或按自己的习惯调整工作区。",
     "layerSummary": "用图层、蒙版和图层组管理插画的不同部分。",
     "toolSummary": "调整选中内容、修正填充边缘，并保存或导出结果。",
     "brushSummary": "根据需要的笔迹调整笔刷预设和输入设置。",
@@ -134,31 +158,42 @@ export const docsUI = {
       "windows": "如果多个应用都无法使用压感，请在数位板驱动设置中检查笔压。使用多台显示器时，将数位板映射到显示Capy Canvas的屏幕。",
       "mac": "修改笔刷前，先检查数位板设置中的屏幕映射。设置快捷键时要区分Command和Control，不要未经检查就照搬Windows的按键分配。",
       "linux": "使用网页版时，在桌面设置中检查数位板映射。报告压感缺失或光标偏移时，请注明浏览器，以及桌面使用的是Wayland还是X11。",
-      "ipad": "确认所用Apple Pencil型号支持需要的压感或倾斜输入。如果手掌接触屏幕会留下笔迹，请先检查触控的操作分配，再修改笔刷。",
-      "android": "确认笔和设备支持压力输入；普通电容触控笔可能与手指输入相同。如果笔能正常工作但触控干扰绘画，请检查绘画与画布操作各自的分配。"
+      "ipad": "确认所用Apple Pencil型号支持需要的压感或倾斜输入。如果手掌接触屏幕会留下笔迹，请先分别测试笔与触控，再修改笔刷。",
+      "android": "确认笔和设备支持压力输入；普通电容触控笔可能与手指输入相同。如果笔能正常工作但触控干扰绘画，请比较仅用笔绘画和触控导航，并检查设备的防误触功能。"
     },
     "techniques": "本页会学到什么",
-    "tutorialStart": "从教程介绍开始"
+    "tutorialStart": "从教程介绍开始",
+    "groupDescriptions": {
+      "drawing": "选择笔刷与颜色，调整笔迹，并保留设置。",
+      "layers": "分开绘制内容，用蒙版控制可见范围，并组合图层组。",
+      "editing": "选择、填充和变换区域，绘制渐变、图形和辅助线。",
+      "output": "编辑导入的图像，调整滤镜，并保存或导出结果。",
+      "customize": "管理Sketch、Paint和Photo，安排控件位置，设置输入方式。"
+    },
+    "imageOpen": "打开原尺寸截图",
+    "imageHint": "打开图像可仔细查看控件。带编号的边框对应图注中说明的控件。"
   },
   "ko": {
-    "intro": "인물 일러스트를 그리면서 Capy Canvas의 조작을 설명합니다. 개별 도구와 설정은 참조 문서에서 확인할 수 있습니다.",
+    "intro": "Paint에서 그리기와 편집 도구를 익힌 다음 편집 가능한 프로젝트를 저장하고 이미지를 내보냅니다. 짧은 참조 페이지는 개별 작업을, 일러스트 튜토리얼은 작업을 연결하는 방법을 설명합니다.",
     "outline": "초안",
-    "notice": "이 가이드 초안은 예정된 작업 흐름을 설명하며, 아직 개발 중인 기능도 포함합니다.",
+    "notice": "이 간단한 가이드는 현재 웹 편집기를 기준으로 합니다. 이식 중인 네이티브 버전에서는 일부 조작이 다를 수 있습니다.",
     "overview": "개요",
     "contents": "문서 목차",
     "onPage": "이 페이지의 내용",
     "groups": {
       "start": "기본 조작",
-      "illustration": "일러스트 튜토리얼",
-      "layers": "레이어",
-      "tools": "도구와 파일",
-      "advanced": "고급 설정"
+      "drawing": "그리기",
+      "layers": "레이어와 마스크",
+      "editing": "선택과 편집",
+      "output": "필터와 출력",
+      "customize": "사용자 설정",
+      "illustration": "일러스트 튜토리얼"
     },
     "startTitle": "기본 조작",
     "journey": "일러스트 튜토리얼",
-    "journeyIntro": "같은 문서에서 순서대로 진행합니다. 각 단계는 앞 단계에서 만든 레이어를 이어서 사용합니다.",
-    "references": "참조 문서",
-    "referenceIntro": "튜토리얼에서 사용하는 조작과 자신의 작업 방식에 맞게 조정할 설정을 설명합니다.",
+    "journeyIntro": "간단한 인물 일러스트로 연습합니다. 같은 문서에서 연필 스케치부터 클리핑 음영까지 네 단계를 따라갑니다.",
+    "references": "도구와 작업 흐름",
+    "referenceIntro": "브러시와 색상부터 시작해 레이어를 정리하고 편집과 내보내기로 이어갑니다. Photo에서 불러온 이미지를 편집하거나 작업 화면을 익숙한 방식으로 바꿀 수도 있습니다.",
     "layerSummary": "레이어, 마스크, 그룹으로 일러스트의 각 부분을 관리합니다.",
     "toolSummary": "선택한 부분과 채우기 가장자리를 수정하고 결과를 저장하거나 내보냅니다.",
     "brushSummary": "원하는 자국에 맞춰 브러시 프리셋과 입력 설정을 조정합니다.",
@@ -181,10 +216,19 @@ export const docsUI = {
       "windows": "여러 앱에서 필압이 작동하지 않으면 태블릿 드라이버 설정에서 압력을 확인합니다. 화면을 여러 개 쓴다면 Capy Canvas가 있는 화면에 태블릿을 매핑하세요.",
       "mac": "브러시를 조정하기 전에 태블릿 설정의 화면 매핑을 확인합니다. 단축키를 지정할 때 Command와 Control은 다른 키이므로 Windows의 할당을 그대로 옮기지 말고 확인하세요.",
       "linux": "웹 버전에서는 데스크톱 설정의 태블릿 매핑을 확인합니다. 필압이 없거나 커서가 어긋나는 문제를 보고할 때는 브라우저와 데스크톱의 Wayland 또는 X11 사용 여부를 적어 주세요.",
-      "ipad": "사용하는 Apple Pencil 모델이 필요한 필압이나 기울기 입력을 지원하는지 확인합니다. 손을 올렸을 때 자국이 생기면 브러시를 바꾸기 전에 터치 할당부터 확인하세요.",
-      "android": "펜과 기기가 필압 입력을 지원하는지 확인합니다. 일반 터치용 스타일러스는 손가락처럼 입력될 수 있습니다. 펜은 정상인데 터치가 방해된다면 그리기와 캔버스 조작의 할당을 확인하세요."
+      "ipad": "사용하는 Apple Pencil 모델이 필요한 필압이나 기울기 입력을 지원하는지 확인합니다. 손을 올렸을 때 자국이 생기면 브러시를 바꾸기 전에 펜과 터치를 따로 시험합니다.",
+      "android": "펜과 기기가 필압 입력을 지원하는지 확인합니다. 일반 터치용 스타일러스는 손가락처럼 입력될 수 있습니다. 펜은 정상인데 터치가 방해된다면 펜만 쓰는 그리기와 터치 탐색을 비교하고 기기의 팜 리젝션을 확인합니다."
     },
     "techniques": "이 페이지에서 배울 내용",
-    "tutorialStart": "튜토리얼 소개부터 시작하기"
+    "tutorialStart": "튜토리얼 소개부터 시작하기",
+    "groupDescriptions": {
+      "drawing": "브러시와 색상을 고르고 자국을 조정하며 설정을 유지합니다.",
+      "layers": "그림을 나누고 마스크로 표시 범위를 조절하며 그룹을 구성합니다.",
+      "editing": "영역을 선택·채우기·변형하고 그라디언트, 도형, 자를 사용합니다.",
+      "output": "불러온 이미지를 편집하고 필터를 조정한 뒤 저장하거나 내보냅니다.",
+      "customize": "Sketch, Paint, Photo를 관리하고 조작부와 입력을 설정합니다."
+    },
+    "imageOpen": "원본 크기 스크린샷 열기",
+    "imageHint": "이미지를 열어 조작부를 자세히 볼 수 있습니다. 번호가 붙은 테두리는 캡션에서 설명하는 조작부를 가리킵니다."
   }
 };

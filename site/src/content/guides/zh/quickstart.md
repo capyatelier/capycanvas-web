@@ -1,24 +1,25 @@
 ---
-title: "快速上手"
-description: "选择版本、检查数位笔，然后开始插画教程。"
-figure: "画布旁的笔刷列表与图层面板。"
-related: ["workspace", "illustration/draft"]
-purpose: "Capy Canvas需要访问GPU来绘制笔刷；能提供压感的笔则便于控制线条和上色。这一页会帮助你选择当前可用的版本，检查数位笔，再进入插画教程。"
-techniques: ["查看可用的安装方式，并试用网页版本。", "确认笔的压力数据能传到编辑器。", "打开教程；如果默认布局影响落笔，先调整工作区。"]
+title: "快速入门"
+description: "打开Paint，检查压感并保存第一张画。"
+purpose: "先在小文档中画几笔，确认画笔、撤销和保存都能正常使用，再调整工作区。"
+techniques: ["创建Paint文档。", "用铅笔测试压感。", "保存可编辑项目和PNG。"]
+figure: "1：Paint工作区。2：Tool Set。3：选择绘画目标的Layers。"
+related: ["workspace", "painting/brushes", "tools/files"]
+image: {"light": "/assets/guides/quickstart-light.webp", "dark": "/assets/guides/quickstart-dark.webp", "alt": "1：Paint工作区。2：Tool Set。3：选择绘画目标的Layers。"}
 ---
 
-## 选择版本
+## 打开编辑器
 
-[下载页面](/zh/download/)列出了版本发布情况和安装方式。原生版本尚未开放下载，开发目标是提供比浏览器版本更好的绘画性能。目前可以通过[网页演示](https://editor.capycanvas.art/)试用编辑器。下载页面也介绍了如何安装网页应用以供离线使用。
+先查看[下载页](/zh/download/)中的版本和安装方式。在支持硬件WebGPU的浏览器中打开[Web Demo](https://editor.capycanvas.art/)，也可安装网页应用供离线使用。触摸屏本身不提供压感，需要设备支持的压感笔。
 
-Capy Canvas使用GPU渲染笔刷。绘画时，请使用操作系统支持的压感数位板或数位屏。数位屏可以让你直接在图像上落笔，但不带屏幕的数位板也能使用。普通触摸屏本身不能提供笔压。
+选择顶部的**Paint**，通过<strong>File → New…</strong>创建文档。Paint持续显示Tool Set、Color和Layers；Sketch精简操作区，Photo侧重图像调整。
 
-## 检查笔压
+## 测试笔画
 
-打开文档，选择内置的**Pencil**预设，画一条从轻到重、再逐渐减轻力度的线，确认笔触会随压力变化。如果笔触始终一致，请先检查[输入设置](/zh/docs/advanced/input/)，再考虑修改笔刷。
+选择**Pencil**及铅笔预设，画一条从轻到重、再逐渐放轻的线。在**Tool**中调整粗细。没有压感时，先检查[输入设置](/zh/docs/advanced/input/)，再考虑更换画笔。可以撤销测试笔画。
 
-## 开始绘画
+## 保存并继续
 
-接下来打开[插画教程](/zh/docs/illustration/)。介绍页会说明要完成的作品，以及从铅笔草稿到勾线、上色所用的工具。
+用<strong>Save As…</strong>保存`.capy`项目，用<strong>Export PNG…</strong>导出合成图像。工作区设置与作品分别保存。
 
-如果默认布局影响落笔，可以先阅读[工作区与画布](/zh/docs/workspace/)，了解如何移动面板和工具栏，或用Zen模式将它们隐藏。笔刷的详细定制可以等到你确实需要改变某个预设时再做。
+接下来阅读[画笔与绘画](/zh/docs/painting/brushes/)，或通过[插画教程](/zh/docs/illustration/)练习从草稿到上色的过程。

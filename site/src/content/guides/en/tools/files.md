@@ -1,28 +1,27 @@
 ---
 title: "Saving and exporting"
-description: "Keep an editable document and make a separate image for sharing."
-figure: "The layered working document beside an exported image without editing controls."
-related: ["illustration/render", "layers/basics"]
-purpose: "Keep a working document for editing and export an image for sharing. The document needs to retain layers and masks so later corrections remain possible; the exported image records the visible result. Saving these separately avoids losing the structure used in the tutorial."
-techniques: ["Save a document that preserves the layer and mask setup.", "Export the visible illustration without merging the working layers.", "Check transferred files in the destination app or device before removing the original."]
+description: "Keep an editable .capy project and export a flattened PNG."
+purpose: "A .capy project retains document structure for further editing. PNG records the visible image for sharing. Save the project before exporting so later revisions can use the same layers, masks and effects."
+techniques: ["Create, save and reopen a .capy project.", "Export the visible image as PNG.", "Keep workspace settings separate from artwork."]
+figure: "1: File menu. 2: Save and Save As commands. 3: Export PNG command."
+related: ["filters/image-editing", "layers/basics", "illustration/render"]
+image: {"light": "/assets/guides/tools-files-light.webp", "dark": "/assets/guides/tools-files-dark.webp", "alt": "1: File menu. 2: Save and Save As commands. 3: Export PNG command."}
 ---
 
-Document saving and export controls are still in development. The supported formats and their layer compatibility will be listed here when they are available. The following sections describe the planned workflow.
+## Save the editable document
 
-## Keep the working document editable
+Use **File → Save As…** for a new `.capy` project or another working copy. **Save** updates the current file when the browser can retain its file handle. Where direct file access is unavailable, the web editor uses a download flow; confirm the file was saved before dismissing it.
 
-Save your working copy in a document format that preserves Capy Canvas's layers and masks. In the tutorial, that separation lets you change a base color or a shading layer without repainting the rest of the illustration. A flattened image cannot retain those editing relationships.
+**Open…** opens a `.capy` project. To add an ordinary image to the current drawing, use **Import image as layer** in Layers instead.
 
-Before transferring work between apps, check whether the destination supports the features you used. Layers alone do not guarantee that clipping, masks, and blending will reproduce identically. Keep the original document until you have opened and checked the transferred copy.
+## Export the visible result
 
-## Export a copy for sharing
+Choose **File → Export PNG…**. Export produces a flattened image without merging the working layers. Hide Sketch and Color rough if they should not appear; check Paper’s visibility when you need transparency.
 
-Export an image when you need to post the illustration or place it in another document. Exporting combines the visible result without requiring you to merge the working layers. Hide Sketch and Color rough, and check the background's visibility before exporting.
+Open the PNG afterward to check its pixel dimensions, edges and background. Canvas zoom and view rotation do not change the exported artwork. Keep the `.capy` file alongside it for future edits.
 
-Choose a format that supports transparency when you need a transparent background. Open the exported file to check its appearance and dimensions; the editor's zoom level is not the size of the exported image.
+## Keep files when changing devices
 
-## Move files between devices
+Workspace changes save separately in browser storage. They do not save the drawing, sync files to another device, or replace a project backup. Transfer the `.capy` file itself and reopen it on the destination before removing the original.
 
-In the web version, pay attention to where the browser saves the file. Installing the web app for offline use does not make your documents available on another device. Transfer the saved document itself and open it on the destination before removing the original copy.
-
-Return to [Rendering](/docs/illustration/render/) if the export reveals an edge that needs correction. Keeping the base masks and shading layers separate makes that revision possible without rebuilding the finished paint.
+When New, Open or Close prompts about unsaved changes, save, discard, or cancel deliberately. Cancel returns to the current drawing.

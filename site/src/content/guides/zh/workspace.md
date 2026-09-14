@@ -1,27 +1,27 @@
 ---
 title: "工作区与画布"
-description: "调整控件的位置，并在不改变作品的前提下操作画布视图。"
-figure: "显示笔刷列表和三条水彩笔触的工作区。"
-related: ["advanced/input", "tools/transforms"]
-image: {"light": "/assets/workspace-light.webp", "dark": "/assets/workspace-dark.webp", "alt": "显示笔刷列表和三条水彩笔触的工作区。"}
-purpose: "Capy Canvas的面板和工具栏可以根据屏幕及持笔习惯重新摆放。画布视图控件则能改变落笔角度，而不旋转作品本身。本页介绍这些调整，以及何时用Zen模式隐藏控件。"
-techniques: ["把笔刷列表和图层面板放在方便操作、又不遮挡绘画的位置。", "平移、缩放和旋转视图，而不改动文档内容。", "使用Zen模式时，仍能通过键盘或笔按键撤销和操作画布。"]
+description: "选择操作布局，并在不改变作品的情况下调整视图。"
+purpose: "Sketch、Paint和Photo提供不同的布局，共用编辑功能。先在Paint中认识操作区，再调整视图以便绘画。"
+techniques: ["切换Sketch、Paint和Photo。", "用Navigator缩放、旋转和翻转视图。", "用Zen模式隐藏界面。"]
+figure: "1：工作区切换。2：Tool Set。3：Navigator与视图控制。"
+related: ["workspace/management", "workspace/customization", "advanced/input"]
+image: {"light": "/assets/guides/workspace-light.webp", "dark": "/assets/guides/workspace-dark.webp", "alt": "1：工作区切换。2：Tool Set。3：Navigator与视图控制。"}
 ---
 
-## 安排面板和工具栏
+## 选择布局
 
-跟随教程时，保留笔刷列表和图层面板。拖动面板标签来移动面板；标签隐藏时，使用底部的拖动柄。工具栏也可以用拖动柄移动。在停靠指示位置松开可将其停靠，在画布上松开则保持浮动。右键单击或长按标签、拖动柄，选择**Configure**，即可修改其中显示的控件。
+**Sketch**把主要绘画操作放在顶部，面板以抽屉形式展开。**Paint**左侧是Tool Set、Tool/Brush size和Color，右侧是Navigator、Properties/Filters和Layers。**Photo**把主要面板集中在右侧，默认选择Operation。
 
-工具设置作用于当前工具。从笔刷切换到选择工具后，请重新检查设置内容：笔刷的不透明度和选区的边缘设置影响的是不同操作。笔刷的详细参数见[笔刷引擎](/zh/docs/advanced/brush-engine/)。
+切换时恢复该工作区的布局与工具设置，文档保持打开。另存一套设置的方法见[工作区管理](/zh/docs/workspace/management/)。
 
-## 调整视图，不改动画面内容
+## 调整视图
 
-在支持触控的屏幕上，转动双指可以旋转画布视图，便于画出较长的曲线。按**F**让画布适应窗口，同时恢复旋转角度。目前旋转需要触控输入；使用鼠标或独立数位板时，保持画布视图正向即可。调整视图不会改动画面内容。需要移动或改变实际绘画内容时，请使用[变换](/zh/docs/tools/transforms/)。
+按住**空格拖动**可平移，**Ctrl＋滚轮**或双指捏合可缩放，**F**可适合画布。Navigator提供缩放、旋转和翻转按钮，拖动预览可移动视野。View菜单还有90度旋转和水平、垂直翻转；触摸手势支持任意角度旋转。
 
-按住**Space**拖动可平移视图。使用**Ctrl+鼠标滚轮**或双指捏合进行缩放，并查看缩放百分比。实际大小指**100%缩放**，目前还没有直接切换到100%的控件。将较大的文档适应窗口时，小缝隙可能不明显，检查细线和填充边缘时应放大查看。
+这些操作不改变导出的像素。要改变作品本身，请使用[移动与变换](/zh/docs/tools/transforms/)。
 
-## 使用Zen模式
+## 隐藏或移动操作区
 
-选好笔刷和图层后，按**Tab**或使用**Zen**按钮隐藏周围的控件，再按Tab退出。默认设置下，将指针移到放有面板的屏幕边缘，会暂时显示该处面板。隐藏控件不会改变当前工具或图层。
+按**Tab**进入Zen，再按一次返回。作品位置保持不变；移向有面板的边缘可临时显示操作区。
 
-如果经常这样绘画，可以把撤销和画布操作分配给键盘或笔上的按键，方便在控件隐藏时使用。先在[输入设置](/zh/docs/advanced/input/)中确认这些操作，再进入Zen模式。
+持久的布局调整见[自定义工作区](/zh/docs/workspace/customization/)。布局历史与绘画历史相互独立。

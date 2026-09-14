@@ -1,26 +1,27 @@
 ---
-title: "Transformations"
-description: "Reposition a layer or part of a sketch without changing unrelated paint."
-figure: "A selected hand repositioned on Sketch while the other layers remain unchanged."
-related: ["workspace", "illustration/draft"]
-purpose: "Use a transform to change the position or shape of existing paint. It can affect a whole layer or just a selected part, such as a hand in the sketch. This changes the document, unlike rotating the canvas view for a more comfortable drawing angle."
-techniques: ["Select the layer and area that should change.", "Combine moving, scaling, and rotation in one adjustment.", "Use view controls instead when you only want to change how you see the artwork."]
+title: "Moving and transforming"
+description: "Reposition, scale or rotate a layer or selected pixels."
+purpose: "Operation moves existing content. Scale / rotate provides handles for changing its size and angle. These edits change the saved artwork, unlike canvas view navigation."
+techniques: ["Choose a layer and optional pixel selection.", "Move, scale and rotate with the tool’s handles.", "Apply or cancel the preview."]
+figure: "1: Position controls in Tool. 2: The transform preview on the canvas. 3: The editing layer."
+related: ["tools/selections", "workspace", "illustration/draft"]
+image: {"light": "/assets/guides/tools-transforms-light.webp", "dark": "/assets/guides/tools-transforms-dark.webp", "alt": "1: Position controls in Tool. 2: The transform preview on the canvas. 3: The editing layer."}
 ---
 
-The transform controls and their shortcuts are still being developed. The steps below describe the intended editing behavior; control names will be added once they are settled.
+## Choose what changes
 
-## Choose the content to transform
+Select the content thumbnail of the layer to edit. Use a [pixel selection](/docs/tools/selections/) first if only part of the paint should change. The **Operation** tool moves the editing target; choose **Scale / rotate** for its transform handles.
 
-Select the layer you want to edit. To change only part of it, enclose that area with a [selection](/docs/tools/selections/) before starting the transform. In the sketch stage, this lets you move a hand without moving the rest of the figure or its color rough.
+Check the thumbnail before dragging. A selected mask changes the visibility boundary. A linked mask can move with its layer; unlink it only when you intend to reposition the mask independently.
 
-Keep the transformation on the intended paint layer. If a mask thumbnail is selected, you may be changing the visibility boundary instead of the drawing. Check both the selected layer and thumbnail when the result is unexpected.
+## Adjust the preview
 
-## Make the adjustment in one pass
+Drag the content to move it, use the surrounding handles to scale, and use the rotation handle to change its angle. Enable **Keep proportions** when the drawing should retain its aspect ratio. Tool exposes the available controls and the preview remains pending while you adjust it.
 
-Move, rotate, or scale the selected content, preserving proportions when the shape should stay the same. Use perspective or distortion controls only when the shape itself needs to change. Confirm the adjustment when the preview is correct, then clear the selection before drawing again.
+Make related changes in one preview. Repeatedly applying raster transforms can soften edges through resampling. Duplicate the original layer first if you expect to compare substantially different arrangements.
 
-Repeatedly applying small transforms can soften raster artwork because the pixels are resampled each time. Combine adjustments in one transform where possible. Duplicate the original layer before a substantial change if you expect to try several alternatives.
+## Apply or cancel
 
-## Distinguish the artwork from its view
+Choose **Apply transform** to keep the change or **Cancel transform** to return to the original. Clear any pixel selection before drawing elsewhere.
 
-Use canvas rotation or mirroring from [Workspace and canvas](/docs/workspace/) when you only want a different drawing angle or a reversed view. Those operations leave the document unchanged. Transforming or flipping layer content changes what will be saved and exported.
+Use Navigator or the [View controls](/docs/workspace/) when you only want a more comfortable drawing angle. The current transform workflow covers movement, scaling and rotation; it does not provide a perspective-warp procedure.

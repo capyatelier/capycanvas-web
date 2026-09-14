@@ -56,6 +56,9 @@ html[data-page="documentation"] .nav-inner { max-width: 1320px; }
 .guide-image-slot svg { width: 38px; height: 30px; opacity: .65; }
 .guide-image-slot span { font-size: 12px; }
 .guide-figure figcaption { color: var(--muted); font-size: 12px; line-height: 1.65; margin-top: 10px; }
+.guide-image-link { display: block; cursor: zoom-in; border-radius: 6px; }
+.guide-image-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.guide-image-hint { color: var(--muted); font-size: 11px; line-height: 1.6; margin: 6px 0 0; }
 .guide-prose { font-size: 15px; line-height: 1.8; }
 .guide-prose p { margin: 0 0 28px; }
 .guide-prose h2:not(:first-child) { margin-top: 30px; }

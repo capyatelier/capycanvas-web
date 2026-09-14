@@ -53,7 +53,7 @@ The short language-detection script deliberately runs inline in the head before 
 There is no client router or UI framework runtime. Documentation uses Astro's Markdown
 content collections, with complete HTML generated for every translated guide.
 See [the documentation authoring guide](site/DOCUMENTATION.md) for the structure,
-English-first editing, planned images, and custom interactive components.
+English-first editing, screenshots, and custom interactive components.
 
 ## Routes and languages
 
@@ -124,25 +124,25 @@ Unit tests cover browser/OS detection; Chrome browser tests exercise the rendere
 guides using those hints in all four locales. Those checks validate the website's
 instructions, not native install dialogs on each operating system.
 
-## Recapture the app
-
-Start a compatible build of the actual app, for example a stable copy of
-`../draw/dist/capycanvas`, using a local HTTP server. Then:
+## Regenerate screenshots
 
 ```sh
-APP_URL=http://127.0.0.1:4184 npm run capture
-npm run build
-npm test
+APP_REPO=../draw npm run capture:prepare
+npm run capture
+npm run check
 ```
 
-Screenshots are captured at 1440 × 810 (16:9), with pen pressure tapering at both
-ends of each watercolor stroke. Capture requires Linux/Wayland, Chrome, and working hardware WebGPU. It paints
-three simple watercolor squiggles with the app's Watercolor Wash brush through
-real browser pen input, scrolls the brush list to the selection, and captures the
-entire workspace in both themes. The script does not fabricate or composite UI.
-`site/public/assets/capture.json` records the source revision and capture dimensions.
-The app UI in the screenshots remains in its original English; the website is
-localized independently.
+The capture pipeline builds a tracked product revision in an isolated directory,
+then uses headed Chrome on a private Wayland display on Linux. It captures the
+Paint workspace at 1920 × 1080, plus light/dark images for all 25 guides. Numbered
+outlines identify real controls, and the tutorial provides editable `.capy`
+examples drawn through actual editor actions and browser pen input.
+
+See [the capture guide](site/scripts/capture/README.md) for dependencies, source
+pinning, annotations, browser settings, debugging and provenance. The recorded
+baseline includes an explicit WGSL compatibility correction in the isolated build.
+The adjacent product checkout is not modified. The screenshot UI remains English;
+all four guide languages supply localized captions and full-size image links.
 
 ## Migration comparisons
 

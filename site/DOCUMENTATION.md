@@ -1,28 +1,32 @@
 # Maintaining the documentation
 
-The guides are an Astro content collection in `src/content/guides/`. They are
-currently mock tutorials and references, including tools that are not implemented
-yet. Keep the draft label and development notice until the steps and images have
-been verified against the app. Release availability must still agree with the
-download page; do not imply that a native build can be downloaded before it exists.
+The guides are an Astro content collection in `src/content/guides/`. They follow
+the current web editor, with short references and a four-stage illustration
+exercise. Keep instructions tied to observed controls and the recorded product
+revision. Release availability must agree with the download page; source code
+for a native client does not establish that a native release is available.
 
 ## Structure
 
-`src/data/docs-nav.mjs` defines the sidebar order and stable topic paths:
+`src/data/docs-nav.mjs` defines seven groups and 25 stable topic paths:
 
-- **Getting started:** quickstart; workspace and canvas, including toolbar placement
-  and tool settings.
-- **Illustration tutorial:** introduction and intended result, followed by
-  sketching → line art → masking → rendering. Sketching includes
-  the pencil sketch and color rough; masking includes base-color layers.
-- **Layers:** basics; masks and clipping; groups and blending.
-- **Tools & files:** selections and fill; transforms; save and export.
-- **Advanced:** brush engine; custom brushes and import; pen, gestures, and shortcuts.
+- **Getting started:** quickstart; workspace and canvas.
+- **Drawing:** brushes and painting; color and eyedropper; brush settings;
+  saving and resetting brush settings.
+- **Layers and masks:** layers; masks and clipping; groups and blending.
+- **Selections and editing:** selections and fill; transforms; gradients;
+  shapes; rulers and snapping.
+- **Filters and output:** filters and properties; editing an imported image;
+  saving and exporting.
+- **Customize:** panels/toolbars/title bar; workspace management; input.
+- **Illustration tutorial:** introduction, then sketching → line art → masking
+  → rendering, using the same example document throughout.
 
-The documentation overview links to the introduction at `/docs/illustration/`.
-The sidebar places it before stages 01–04. Reference pages explain a particular tool
-or setting and link back to the phase where it is useful. Color is covered within
-the workflow, layers, and brush settings rather than as a separate sidebar group.
+The overview puts the starting path and tool/workflow references before the
+optional illustration exercise. Reference entries come from `docGroupEntries`,
+with translated descriptions in `docs-ui.mjs`. Existing topic URLs are retained,
+including `advanced/` pages now grouped under Drawing or Customize. Add new topic
+slugs without moving existing pages merely to match a navigation label.
 
 ## English first, one topic at a time
 
@@ -35,7 +39,10 @@ There is no translation API or automatic translation step in the build.
 Use the same relative filename and related-topic paths in every language. Astro's
 locale URL helpers generate navigation, canonical URLs, language alternates, and
 the sitemap. Language switching and browser detection preserve the article path.
-Headings are localized and Astro generates their section anchors.
+Headings are localized and Astro generates their section anchors. Use inline
+`<strong>` for control labels ending in an ellipsis when adjacent CJK text would
+prevent Markdown emphasis from closing. Project-file links use the HTML
+`download` attribute so local previews also save them as files.
 
 Frontmatter is validated by `src/content.config.ts`. Guides use
 JSON-compatible YAML values:
@@ -69,7 +76,7 @@ Assume readers are comfortable with computers and office software. Explain what
 they need to decide or do in Capy Canvas, including the result and the reason when
 it is not obvious. Do not walk through familiar dialogs or list their fields just
 because those controls exist. Quickstart covers versions, hardware, and a pen
-check, then sends the reader to the tutorial introduction.
+check, then links to painting basics and the tutorial introduction.
 
 Every guide starts with a practical explanation of what the reader is trying to
 do and why the main tool or concept helps. Follow it with two to four concrete
@@ -98,8 +105,9 @@ and alternate methods in linked reference pages rather than front-loading them.
 Check the document state between steps. A mask can reveal only existing paint;
 the masking stage fills the entire base layer so later mask edits can extend its
 visible boundary. Keep clipped layers directly above their base, in the stated
-order. Set a selection's reference before selecting, and clear it before an
-unrestricted fill or the next drawing operation.
+order. Set a selection's reference before selecting, and clear it before the next unrestricted drawing operation. To fill an entire
+layer with Fill selection, select its content thumbnail, use Select all pixels,
+Fill selection, then Deselect pixels. A fill command needs a pixel selection.
 
 Use established drawing terms. The tutorial stages are **sketching, line art,
 masking, and rendering**. Distinguish the color rough from base colors, and
@@ -109,12 +117,13 @@ meaning matters to the operation. Do not invent feature names or menu labels.
 Avoid promotional headings (“Go deeper”), encouragement (“find your way around”),
 vague benefits (“make room to draw”), and narrative transitions (“one drawing,
 four phases”). Remove author-directed notes such as “Cover…,” “Explain…,” and
-“Show…” from published guides. The draft notice identifies the provisional status;
+“Show…” from published guides. The brief status notice identifies the guide’s scope;
 the body should still contain useful instructions rather than notes to an author.
 
 Translations should use complete sentences, the same neutral register, and
-conventional terminology for their language. Keep the example layer names
-consistent within each language rather than translating English word order.
+conventional terminology for their language. Keep the example file’s English layer names in every language so readers can
+match the screenshots and downloadable projects. Translate the surrounding
+explanation and use conventional terms for the operations:
 
 | English | Japanese | Simplified Chinese | Korean |
 | --- | --- | --- | --- |
@@ -135,22 +144,29 @@ reader's language. Use explicit localized paths in Markdown, such as
 
 ## Images and interactive elements
 
-`GuideFigure.astro` renders a labeled image slot from `figure`. To replace it with
-a real capture, add image metadata:
+`GuideFigure.astro` renders the theme-aware screenshot, caption and full-size
+image link. Every current topic has image metadata:
 
 ```yaml
 image: {"light": "/assets/guides/example-light.webp", "dark": "/assets/guides/example-dark.webp", "alt": "Describe what the screenshot shows."}
 ```
 
 Put public captures under `public/assets/guides/`. Include light and dark versions
-where the UI differs. Ordinary Markdown images also work within the text. Use
+at 1920 × 1080. Numbered annotations must match both `figure` and `image.alt` in all
+four translations. The full-size link follows the selected appearance with JS;
+without JS it opens the light image while the inline picture still follows CSS. Ordinary Markdown images also work within the text. Use
 several captures of the same illustration for the four phases; show the active
 tool, relevant settings, and layer stack when they explain the step. The abstract
 marks on the overview are navigation illustrations, not app screenshots.
 
-Do not include AI-generated illustration artwork. Use supplied artwork or verified
-app captures. Until the finished tutorial drawing is available, keep the clearly
-labeled result-image placeholder instead of substituting generated art.
+Do not include AI-generated illustration artwork. The current original teaching
+portrait is drawn in the actual app through scripted pen input and layer actions.
+The four `.capy` stages and final PNG in `public/assets/examples/` are shared across
+languages. Asset-download links intentionally have no locale prefix.
+
+Use [the capture guide](scripts/capture/README.md) to rebuild the isolated product
+package, regenerate the screenshots and examples, and inspect provenance. Keep
+source corrections explicit; do not silently modify the adjacent app checkout.
 
 Custom behavior belongs in a small Astro component with a processed browser script.
 `PlatformNotes.astro` demonstrates this: detect the device, let the reader change
@@ -209,4 +225,6 @@ Control details were checked against the public app source: the
 and [built-in brush presets](https://github.com/capyatelier/capycanvas/blob/main/crates/layer-core/src/presets.rs).
 Recheck those when updating instructions. Do not invent names for unfinished
 controls or supported import/export formats; the relevant reference page should
-say when those details are pending.
+describe only workflows verified in the current product. Workspace-owned brush
+overrides are available; a standalone custom-preset import/export library is not
+part of this guide. Color-management design proposals are not shipped features.

@@ -1,28 +1,27 @@
 ---
 title: "Rendering"
-description: "Add shading and texture on clipped layers, then revise the result."
-figure: "Hair shading clipped to Hair, with the base layer's mask visible in the Layers panel."
-related: ["layers/groups", "tools/files"]
-purpose: "You will now paint over the base colors while keeping the outlines from the previous stage. A clipped layer holds the new paint but only shows it inside the base layer's shape. This lets you revise shading separately and reuse the same boundary for several passes."
-techniques: ["Clip a shading layer to a base-color layer so strokes stay inside its shape.", "Adjust new strokes with brush opacity and existing shading with layer opacity.", "Correct the base mask once, then recolor the line art and export the finished image."]
+description: "Add separate shading and texture layers clipped to each base."
+purpose: "Clipping keeps a shading layer inside a base layer’s visible coverage. The shade remains editable on its own, while the base mask supplies the shared outer boundary."
+techniques: ["Clip Hair shading above Hair.", "Adjust the brush and layer opacity separately.", "Add texture, check the final stack, and export."]
+figure: "1: Hair texture and Hair shading above Hair. 2: Clip to layer below. 3: Layer opacity for the complete shading pass."
+related: ["layers/groups", "layers/masks", "tools/files"]
+image: {"light": "/assets/guides/illustration-render-light.webp", "dark": "/assets/guides/illustration-render-dark.webp", "alt": "1: Hair texture and Hair shading above Hair. 2: Clip to layer below. 3: Layer opacity for the complete shading pass."}
 ---
 
-## 1. Add paint above a base layer
+## 1. Add clipped shading
 
-Select **Hair**, add a layer directly above it, and name it **Hair shading**. Enable clipping for this new layer. Clipping uses the base layer's visible shape to limit the paint above it, so a stroke can cross the hair's outline without covering the face or background.
+Select **Hair**, add a layer directly above it, and name it **Hair shading**. Enable **Clip to layer below**. Paint a darker tone along the hair’s sides with a painting preset. A stroke can cross the outer silhouette while its visible result remains within the base coverage.
 
-Choose a painting preset and a shading color, then paint on Hair shading. Leave the layer's blending mode at Normal for this pass. The base color stays on Hair, so you can erase a shading stroke without cutting a hole in the base.
+Leave the shading layer at **Normal** blending for this first pass. The base color stays on Hair, so erasing a shading mark does not erase that base.
 
-## 2. Control the stroke and the whole layer separately
+## 2. Adjust strength and texture
 
-Use the brush's size, opacity, and pressure response to change the marks you are making. Use **Hair shading's layer opacity** to reduce the strength of all the shading already on that layer. Lowering brush opacity affects new strokes; it does not fade existing ones.
+Brush opacity changes new strokes. **Hair shading’s layer opacity** changes the whole pass you have already drawn. Reduce the latter when every shadow is too strong.
 
-For a separate texture pass, add **Hair texture** directly above **Hair shading** and enable clipping. The order from top to bottom is Hair texture, Hair shading, then Hair; the upper two layers clip to Hair. Hide and show Hair texture to compare its effect. For a different brush response, see opacity, flow, and pressure in [Brush engine](/docs/advanced/brush-engine/).
+Add **Hair texture** directly above Hair shading and enable clipping again. Use a smaller pencil or textured preset for a few highlights. The order is Hair texture, Hair shading, Hair. The [brush settings reference](/docs/advanced/brush-engine/) explains spacing, opacity and flow.
 
-## 3. Revise an edge or color
+## 3. Finish the other regions
 
-To correct the hair's outline, edit the mask on Hair. The clipped paint follows the revised base shape, so the same edge does not need to be cleaned up on every shading layer. If you are only correcting a shading stroke, edit Hair shading instead.
+Repeat the clipped-layer setup for **Skin** and **Clothing**. Keep **Line art** above them. Edit a base mask when its shared boundary needs correction; edit a shading layer when only that pass is wrong. [Masks and clipping](/docs/layers/masks/) also explains alpha lock for recoloring the ink.
 
-Repeat the clipped-layer setup for **Skin** and **Clothing**. Keep **Line art** above the paint. To recolor the ink without making the lines wider, enable alpha lock on Line art; this preserves its transparency while you paint over its existing marks. [Layer masks and clipping](/docs/layers/masks/) compares these ways of restricting paint.
-
-Save the layered document, then [export an image](/docs/tools/files/) for sharing. The document retains the masks and separate shading layers for later revisions.
+Hide the rough layers, save the `.capy` project, and [export PNG](/docs/tools/files/). Inspect the exported image before sharing it.

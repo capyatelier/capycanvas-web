@@ -1,26 +1,27 @@
 ---
-title: "Custom brushes"
-description: "Adapt an existing preset and check imported brushes before using them."
-figure: "An original preset and a renamed copy with their test strokes."
-related: ["advanced/brush-engine"]
-purpose: "A custom brush is a saved set of brush-engine settings. Making a copy of an existing preset gives you a starting point and an unchanged version to compare against. This page covers keeping that variant and checking what happens when you import a brush from another app."
-techniques: ["Copy and name a preset before changing its settings.", "Test a new tip or texture in both short and long strokes.", "Check imported brushes for differences in pressure, paint buildup, and texture."]
+title: "Save and reset brush settings"
+description: "Keep brush changes in a workspace and restore defaults when needed."
+purpose: "Brush adjustments are saved with the workspace. Create another workspace when you want to preserve one set of tool settings while experimenting with another."
+techniques: ["Keep per-preset changes in a workspace.", "Create a separate workspace for another brush setup.", "Distinguish Reset All Brushes from Restore Starting Layout."]
+figure: "1: Active workspace. 2: Tool settings saved with it. 3: Reset All Brushes confirmation."
+related: ["advanced/brush-engine", "workspace/management"]
+image: {"light": "/assets/guides/advanced-custom-brushes-light.webp", "dark": "/assets/guides/advanced-custom-brushes-dark.webp", "alt": "1: Active workspace. 2: Tool settings saved with it. 3: Reset All Brushes confirmation."}
 ---
 
-## Make a variant of an existing brush
+## Keep your adjustments
 
-Duplicate the preset closest to the brush you want. Give the copy a name that describes its use, such as a softer pencil or a wider ink brush. Keep the original available so you can compare the marks or return to its settings.
+Select a preset and change its controls in **Tool**. Switch to another preset, then return to compare the saved values. The workspace remembers per-preset overrides along with the selected tools and arrangement.
 
-Change one part of the preset at a time and test it at the size you actually draw with. Once the result is useful, save the changes to the copied preset. The [brush engine reference](/docs/advanced/brush-engine/) explains which settings control spacing, buildup, and pressure response.
+These are workspace settings, separate from the `.capy` document. Saving artwork does not create a portable brush library, and opening artwork does not replace the current workspace.
 
-## Change a tip or texture
+## Preserve another setup
 
-The tip image defines the shape and transparency of each impression of the brush tip; a texture adds variation to the deposited mark. First test a new tip without additional scatter or texture so you can see its shape clearly. Then add the other settings back as needed.
+Use **New Workspace** to copy the current settings and arrangement, then give the copy a useful name. Make experimental brush changes in that copy. Switching back restores the other workspace’s values.
 
-Check both short and long strokes. A texture that looks convincing in a small patch may repeat visibly along a long stroke. Fix the relevant texture or spacing setting rather than adding unrelated variation to hide the problem.
+This is the available way to retain separate setups; the editor does not currently expose a standalone custom-preset duplicate/import/export workflow. See [Manage workspaces](/docs/workspace/management/) for switching, pinning and restoration.
 
-## Evaluate an imported preset
+## Reset the right settings
 
-Brush importing is planned; supported formats have not been published yet. The comparisons below describe how to evaluate a brush once importing is available. Brushes from another app may rely on engine behavior without an exact equivalent in Capy Canvas.
+Use **Reset All Brushes** to restore the built-in brush values in the current workspace, including presets that are not currently selected. It preserves your document and arrangement, but removes that workspace’s brush overrides.
 
-Compare a light-to-heavy stroke, an overlapping stroke, and a broad painted area. These reveal differences in pressure response, paint buildup, and texture. Keep the source brush file and save any adjustments as a separate Capy Canvas preset rather than replacing your only copy.
+**Restore Starting Layout** restores panel placement instead. It keeps working tool settings. Make a workspace copy before resetting if you want to retain the values for later comparison.

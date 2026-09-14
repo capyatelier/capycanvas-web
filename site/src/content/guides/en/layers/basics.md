@@ -1,26 +1,27 @@
 ---
-title: "Layer basics"
-description: "Choose the drawing target and keep revisions separate."
-figure: "Sketch, Line art, Hair, and Hair shading in the Layers panel."
-related: ["layers/masks", "layers/groups"]
-purpose: "Layers hold parts of the drawing separately. That separation matters when you want to move a hand, hide the sketch, or change a color without affecting the rest of the picture. This page explains how to choose the edit target and when to keep layers apart."
-techniques: ["Check the active layer before drawing, filling, or erasing.", "Use layer order, visibility, and opacity to control what appears in the image.", "Keep editable parts separate and merge only when that separation is no longer useful."]
+title: "Layers"
+description: "Keep separate parts of a drawing editable."
+purpose: "A layer holds one part of your document. Select its content before painting, and keep unrelated parts on separate layers so corrections do not affect everything at once."
+techniques: ["Create and name paint layers.", "Distinguish the editing target from selected rows.", "Change visibility, order and opacity."]
+figure: "1: Layer rows and content thumbnails. 2: Visibility controls. 3: New layer, group, mask and image-import actions."
+related: ["layers/masks", "layers/groups", "tools/files"]
+image: {"light": "/assets/guides/layers-basics-light.webp", "dark": "/assets/guides/layers-basics-dark.webp", "alt": "1: Layer rows and content thumbnails. 2: Visibility controls. 3: New layer, group, mask and image-import actions."}
 ---
 
-## Choose where a stroke goes
+## Create a useful stack
 
-The selected layer receives your drawing, fill, and erase operations. Visibility and selection are independent: showing a layer does not make it the drawing target. Before making a correction, check the selected row and, if it has a mask, whether the paint or mask thumbnail is active.
+Use **New layer** at the bottom of **Layers**, then double-click its name to rename it. For the tutorial, keep Sketch, Line art and each base color separate. Place Line art above the colors so they do not cover the outlines.
 
-Layers higher in the stack appear over layers below them. In the [illustration tutorial](/docs/illustration/draft/), Line art stays above the base colors so a fill does not cover the ink. Reordering a layer can change the picture even though no pixels on that layer have changed.
+Click a layer’s content thumbnail to make it the editing target. Row-selection controls can select layers for a group operation without changing where you draw. A mask thumbnail selects a different editing target on the same layer.
 
-## Separate work that needs separate adjustment
+## Inspect and reorder
 
-Use different layers when you expect to recolor, move, hide, or replace parts independently. A sketch and its ink belong on different layers because you need to fade or hide the sketch. A highlight only needs its own layer if you want to adjust it independently of the shading beneath it.
+Toggle the eye to hide a layer without deleting its contents. Drag rows to change the stacking order. With touch or pen, hold a row before dragging, or use its grip immediately. Mouse can drag the row directly.
 
-Name layers for their contents, such as Hair or Hair shading. Duplicate a layer before an uncertain edit when you need a directly comparable copy. A [group](/docs/layers/groups/) keeps related layers together without combining their paint.
+A layer’s menu provides operations such as duplication and deletion. Duplicate important paint before trying a major [transform](/docs/tools/transforms/) or a different treatment.
 
-## Opacity, locks, and merging
+## Adjust the whole layer
 
-Layer opacity fades everything on a layer, including existing marks. A layer lock prevents accidental edits; alpha lock allows recoloring while preserving transparency. The [mask reference](/docs/layers/masks/) explains when alpha lock is useful.
+The opacity control above the rows changes all visible paint on the editing layer. The blend-mode selector controls how it combines with lower content; begin with **Normal**.
 
-Merge layers only when you no longer need to edit them separately. After merging, their individual opacity, masks, and blending settings are no longer independently adjustable. To share a single image, [export](/docs/tools/files/) it instead of flattening the working document.
+**Lock editing** protects the layer. **Alpha lock** lets new paint change existing colored pixels without extending into transparent space. Use [masks and clipping](/docs/layers/masks/) when you need a separate editable boundary.

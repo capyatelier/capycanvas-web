@@ -15,7 +15,8 @@
     "test:migration": "node tests/migration.mjs",
     "check": "npm run build && npm test && npm run test:browser",
     "serve": "node site/scripts/serve.mjs",
-    "capture": "node site/scripts/capture.mjs"
+    "capture": "bash site/scripts/capture-headless.sh",
+    "capture:prepare": "node site/scripts/prepare-capture.mjs"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.10",

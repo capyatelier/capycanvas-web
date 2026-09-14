@@ -21,7 +21,7 @@ async function markdownFiles(dir) {
 }
 
 test('the documentation collection has one page per topic and locale, with no orphaned guides', async () => {
-  assert.deepEqual(docGroups, ['start', 'illustration', 'layers', 'tools', 'advanced']);
+  assert.deepEqual(docGroups, ['start', 'drawing', 'layers', 'editing', 'output', 'customize', 'illustration']);
   assert.deepEqual(docTopics.filter(topic => topic.group === 'illustration').map(topic => topic.slug), ['illustration', 'illustration/draft', 'illustration/ink', 'illustration/mask', 'illustration/render']);
   assert.deepEqual(docTopics.filter(topic => topic.step).map(topic => topic.step), [1, 2, 3, 4]);
   assert.equal(new Set(docTopics.map(topic => topic.slug)).size, docTopics.length);
@@ -63,10 +63,11 @@ for (const locale of Object.keys(languages)) {
     assert.ok(footer.includes(`href="${locale === 'en' ? '' : '/' + locale}/privacy/"`));
     const body = html.match(/<div class="guide-prose">([\s\S]*?)<\/div>/)?.[1];
     assert.ok(body, 'Markdown is rendered at build time');
+    assert.doesNotMatch(body, /\*\*/, 'Emphasis around translated control labels renders correctly');
     const links = [...body.matchAll(/href="([^"]+)"/g)].map(([, href]) => href);
     for (const href of links.filter(href => href.startsWith('/'))) {
       const prefix = locale === 'en' ? '' : '/' + locale;
-      assert.ok(href.startsWith(prefix + '/docs/') || href === prefix + '/download/', `Prose link leaves the locale: ${href}`);
+      assert.ok(href.startsWith(prefix + '/docs/') || href === prefix + '/download/' || href.startsWith('/assets/examples/'), `Prose link leaves the locale: ${href}`);
     }
     if (locale !== 'en') {
       const english = await read('en', slug);
