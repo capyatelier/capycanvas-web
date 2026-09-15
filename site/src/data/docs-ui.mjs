@@ -51,7 +51,7 @@ export const docsUI = {
         },
         "workspace": {
           "title": "Your workspace",
-          "text": "Capy Canvas was designed with customizability at its core. Every tool and panel in the workspace can be moved exactly how you like it. And if you just want to focus on your art with no distractions, click the Capybara to enter Zen mode!",
+          "text": "Capy Canvas was designed with customizability at its core. Every tool and panel in the workspace can be moved exactly how you like it. And if you just want a blank canvas with no distractions, click the Capybara to enter Zen mode!",
           "link": "Workspace and canvas"
         },
         "input": {
@@ -135,7 +135,7 @@ export const docsUI = {
         },
         "workspace": {
           "title": "自分のワークスペース",
-          "text": "Capy Canvasは、最初からカスタマイズを大切にして設計されています。ワークスペースのツールやパネルは、すべて自分の好きな位置に動かせます。気を散らすものをなくして作品に集中したいときは、カピバラをクリックしてZenモードへ！",
+          "text": "Capy Canvasは、最初からカスタマイズを大切にして設計されています。ワークスペースのツールやパネルは、すべて自分の好きな位置に動かせます。気を散らすもののない、まっさらなキャンバスだけが欲しいときは、カピバラをクリックしてZenモードへ！",
           "link": "ワークスペースとキャンバス"
         },
         "input": {
@@ -219,7 +219,7 @@ export const docsUI = {
         },
         "workspace": {
           "title": "你的工作区",
-          "text": "Capy Canvas从设计之初就把可自定义性放在核心位置。工作区中的每个工具和面板都可以按你的喜好移动。如果你只想专心画画，不受任何干扰，点击水豚就能进入Zen模式！",
+          "text": "Capy Canvas从设计之初就把可自定义性放在核心位置。工作区中的每个工具和面板都可以按你的喜好移动。如果你只想要一张空白画布，不受任何干扰，点击水豚就能进入Zen模式！",
           "link": "工作区与画布"
         },
         "input": {
@@ -303,7 +303,7 @@ export const docsUI = {
         },
         "workspace": {
           "title": "나만의 작업 공간",
-          "text": "Capy Canvas는 처음부터 자유로운 커스터마이징을 중심에 두고 설계되었습니다. 작업 공간의 모든 도구와 패널을 원하는 위치로 옮길 수 있습니다. 방해받지 않고 작품에만 집중하고 싶다면, 카피바라를 클릭해 Zen 모드로 들어가 보세요!",
+          "text": "Capy Canvas는 처음부터 자유로운 커스터마이징을 중심에 두고 설계되었습니다. 작업 공간의 모든 도구와 패널을 원하는 위치로 옮길 수 있습니다. 방해 요소 없이 빈 캔버스만 보고 싶다면, 카피바라를 클릭해 Zen 모드로 들어가 보세요!",
           "link": "작업 공간과 캔버스"
         },
         "input": {
