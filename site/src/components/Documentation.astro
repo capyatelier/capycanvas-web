@@ -1,7 +1,7 @@
 ---
 import { content } from '../data/content.mjs';
 import { docsUI } from '../data/docs-ui.mjs';
-import { appUrl, route, type Locale } from '../lib/site';
+import { appUrl, repositoryUrl, route, type Locale } from '../lib/site';
 import DocsLayout from '../layouts/DocsLayout.astro';
 import GuideFigure from './GuideFigure.astro';
 import Icon from './Icon.astro';
@@ -14,7 +14,7 @@ const topics = [
   { id: 'workspace', copy: overview.sections.workspace, href: route(locale, 'documentation', 'workspace') },
   { id: 'input', copy: overview.sections.input, href: route(locale, 'documentation', 'advanced/input') },
   { id: 'color', copy: overview.sections.color, href: route(locale, 'documentation', 'painting/color') },
-  { id: 'responsive', copy: overview.sections.responsive, href: undefined },
+  { id: 'responsive', copy: overview.sections.responsive, href: repositoryUrl },
   { id: 'native', copy: overview.sections.native, href: route(locale, 'download') },
 ];
 const startingPoints = [

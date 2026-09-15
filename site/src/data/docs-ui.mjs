@@ -67,7 +67,7 @@ export const docsUI = {
         "responsive": {
           "title": "A responsive canvas",
           "text": "Capy Canvas’s compositor runs entirely on the GPU, with a target of smooth 120 Hz interaction. Even on modest hardware, it should feel smooth and snappy.",
-          "link": null
+          "link": "System architecture"
         },
         "native": {
           "title": "Desktop and tablet",
@@ -151,7 +151,7 @@ export const docsUI = {
         "responsive": {
           "title": "滑らかに応えるキャンバス",
           "text": "Capy Canvasの画面合成は、すべてGPUで処理されます。120 Hzでの滑らかな操作が目標です。控えめな性能のデバイスでも、きびきびと気持ちよく描けることを目指しています。",
-          "link": null
+          "link": "システムアーキテクチャ"
         },
         "native": {
           "title": "デスクトップとタブレット",
@@ -235,7 +235,7 @@ export const docsUI = {
         "responsive": {
           "title": "响应流畅的画布",
           "text": "Capy Canvas的合成器完全运行在GPU上，以流畅的120 Hz交互为目标。即使在性能不高的硬件上，也希望它能流畅、利落地响应。",
-          "link": null
+          "link": "系统架构"
         },
         "native": {
           "title": "桌面与平板",
@@ -319,7 +319,7 @@ export const docsUI = {
         "responsive": {
           "title": "부드럽게 반응하는 캔버스",
           "text": "Capy Canvas의 합성기는 전적으로 GPU에서 실행되며, 부드러운 120 Hz 조작을 목표로 합니다. 사양이 높지 않은 기기에서도 매끄럽고 경쾌하게 반응하도록 설계하고 있습니다.",
-          "link": null
+          "link": "시스템 아키텍처"
         },
         "native": {
           "title": "데스크톱과 태블릿",

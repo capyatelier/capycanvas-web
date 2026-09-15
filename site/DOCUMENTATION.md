@@ -25,8 +25,9 @@ for a native client does not establish that a native release is available.
 The overview introduces the product before directing readers to guides. Its
 short opening and real Paint screenshot lead into painting, workspaces and Zen mode,
 pen/touch/mouse input, perceptual color, responsiveness, and native desktop/tablet
-applications. Concepts link to relevant guides or download availability; a section
-without a matching guide does not need a link. Getting started links the Web Demo,
+applications. Concepts link to relevant guides or download availability; the
+responsive canvas section links to the GitHub repository root as “System
+architecture.” Getting started links the Web Demo,
 downloads, Quickstart and the tutorial introduction. The sidebar remains the complete
 topic index. Overview copy lives in `docs-ui.mjs`.
 
