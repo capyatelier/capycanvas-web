@@ -75,7 +75,7 @@ export const docsUI = {
           "link": "Downloads and availability"
         }
       },
-      "start": "Capy Canvas can run entirely in your web browser. The shared engine is compiled for the web and uses WebGPU. If you want better performance, the download page will offer native builds as they become available.",
+      "start": "Capy Canvas can run entirely in your web browser. This is a quick and easy way to get started. However, for the best performance and hardware compatibility, download the desktop or mobile app.",
       "links": {
         "quickstart": "Quickstart",
         "illustration": "Illustration tutorial"
@@ -159,7 +159,7 @@ export const docsUI = {
           "link": "ダウンロードと提供状況"
         }
       },
-      "start": "Capy Canvasは、ウェブブラウザーだけでも動作します。共通の描画エンジンをウェブ向けにコンパイルし、WebGPUで動かしています。より高い性能を求める方には、準備が整ったネイティブ版からダウンロードページで提供していきます。",
+      "start": "Capy Canvasは、ウェブブラウザーだけでも動作します。手軽にすぐ使い始められる方法です。ただし、最高の性能とハードウェアとの互換性を求めるなら、デスクトップ版またはモバイル版アプリをダウンロードしてください。",
       "links": {
         "quickstart": "クイックスタート",
         "illustration": "イラスト制作チュートリアル"
@@ -243,7 +243,7 @@ export const docsUI = {
           "link": "下载与版本提供情况"
         }
       },
-      "start": "Capy Canvas可以完全在网页浏览器中运行。共用的绘画引擎经过网页编译，并使用WebGPU。如果你希望获得更好的性能，原生版本准备好后会在下载页面提供。",
+      "start": "Capy Canvas可以完全在网页浏览器中运行。这是一种快速、轻松的入门方式。不过，要获得最佳性能和硬件兼容性，请下载桌面版或移动版应用。",
       "links": {
         "quickstart": "快速入门",
         "illustration": "插画教程"
@@ -327,7 +327,7 @@ export const docsUI = {
           "link": "다운로드와 제공 현황"
         }
       },
-      "start": "Capy Canvas는 웹 브라우저 안에서만으로도 실행할 수 있습니다. 공통 엔진을 웹용으로 컴파일해 WebGPU와 함께 사용합니다. 더 높은 성능을 원한다면, 준비되는 네이티브 버전을 다운로드 페이지에서 받을 수 있습니다.",
+      "start": "Capy Canvas는 웹 브라우저 안에서만으로도 실행할 수 있습니다. 빠르고 간편하게 시작할 수 있는 방법입니다. 다만 최고의 성능과 하드웨어 호환성을 원한다면 데스크톱 또는 모바일 앱을 다운로드하세요.",
       "links": {
         "quickstart": "빠른 시작",
         "illustration": "일러스트 튜토리얼"
