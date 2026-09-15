@@ -1,6 +1,6 @@
 export const docsUI = {
   "en": {
-    "intro": "Capy Canvas is a free, open-source app for painting and image editing. Its GPU brush engine brings the feel of real paint to your screen.",
+    "intro": "Capy Canvas is a free, open-source app for painting and image editing. It is inspired by the zen of capybaras.",
     "outline": "Draft",
     "notice": "These concise guides follow the current web editor. Native controls may differ while the ports are being completed.",
     "overview": "Overview",
@@ -84,7 +84,7 @@ export const docsUI = {
     }
   },
   "ja": {
-    "intro": "Capy Canvasは、無料でオープンソースの描画・画像編集アプリです。GPUブラシエンジンが、本物の絵の具のような描き心地を画面に届けます。",
+    "intro": "Capy Canvasは、無料でオープンソースの描画・画像編集アプリです。カピバラの禅のような穏やかさに着想を得ています。",
     "outline": "草案",
     "notice": "この簡潔なガイドは現在のウェブ版に基づいています。移植作業中のネイティブ版では操作が異なる場合があります。",
     "overview": "目次",
@@ -168,7 +168,7 @@ export const docsUI = {
     }
   },
   "zh": {
-    "intro": "Capy Canvas是一款免费、开源的绘画与图像编辑应用。它的GPU笔刷引擎将真实颜料的绘画感受带到屏幕上。",
+    "intro": "Capy Canvas是一款免费、开源的绘画与图像编辑应用。它的灵感来自水豚的禅意。",
     "outline": "草案",
     "notice": "这些简明指南以当前网页版为准。原生版本仍在移植中，部分控件可能不同。",
     "overview": "概览",
@@ -252,7 +252,7 @@ export const docsUI = {
     }
   },
   "ko": {
-    "intro": "Capy Canvas는 무료 오픈 소스 페인팅·이미지 편집 앱입니다. GPU 브러시 엔진이 실제 물감으로 그리는 듯한 느낌을 화면에 담아냅니다.",
+    "intro": "Capy Canvas는 무료 오픈 소스 페인팅·이미지 편집 앱입니다. 카피바라의 선(禪) 같은 평온함에서 영감을 받았습니다.",
     "outline": "초안",
     "notice": "이 간단한 가이드는 현재 웹 편집기를 기준으로 합니다. 이식 중인 네이티브 버전에서는 일부 조작이 다를 수 있습니다.",
     "overview": "개요",
