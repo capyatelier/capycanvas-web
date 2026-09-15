@@ -46,7 +46,7 @@ export const docsUI = {
       "sections": {
         "painting": {
           "title": "Painting",
-          "text": "The GPU-powered brush engine lets us simulate the interaction between paint and physical media. Watercolor spreads into soft washes. Oil brushes pick up and carry color as you paint.",
+          "text": "The GPU-powered brush engine lets us simulate the interaction between paint and physical media. Watercolor soaks into the paper’s fibers and dries. Oil brushes pick up and carry color as you paint.",
           "link": "Brushes and painting"
         },
         "workspace": {
@@ -130,7 +130,7 @@ export const docsUI = {
       "sections": {
         "painting": {
           "title": "絵の具の表現",
-          "text": "GPUで動くブラシエンジンにより、絵の具と紙などの画材との相互作用をシミュレーションしています。水彩は柔らかなにじみとなって広がります。油彩ブラシは、描きながら色を拾って運びます。",
+          "text": "GPUで動くブラシエンジンにより、絵の具と紙などの画材との相互作用をシミュレーションしています。水彩は紙の繊維に染み込み、乾いていきます。油彩ブラシは、描きながら色を拾って運びます。",
           "link": "ブラシと描画"
         },
         "workspace": {
@@ -214,7 +214,7 @@ export const docsUI = {
       "sections": {
         "painting": {
           "title": "绘画",
-          "text": "借助GPU驱动的笔刷引擎，我们能够模拟颜料与实体绘画介质之间的相互作用。水彩会晕染成柔和的色块。油画笔刷则会在绘画时拾取并携带颜色。",
+          "text": "借助GPU驱动的笔刷引擎，我们能够模拟颜料与实体绘画介质之间的相互作用。水彩会渗入纸张纤维，逐渐干燥。油画笔刷则会在绘画时拾取并携带颜色。",
           "link": "笔刷与绘画"
         },
         "workspace": {
@@ -298,7 +298,7 @@ export const docsUI = {
       "sections": {
         "painting": {
           "title": "페인팅",
-          "text": "GPU로 실행되는 브러시 엔진으로 물감과 실제 회화 재료 사이의 상호작용을 시뮬레이션할 수 있습니다. 수채화는 부드럽게 번집니다. 유화 브러시는 그리는 동안 색을 묻혀 옮깁니다.",
+          "text": "GPU로 실행되는 브러시 엔진으로 물감과 실제 회화 재료 사이의 상호작용을 시뮬레이션할 수 있습니다. 수채 물감은 종이 섬유에 스며들고 마릅니다. 유화 브러시는 그리는 동안 색을 묻혀 옮깁니다.",
           "link": "브러시와 페인팅"
         },
         "workspace": {
