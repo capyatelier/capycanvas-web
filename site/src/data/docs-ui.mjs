@@ -56,7 +56,7 @@ export const docsUI = {
         },
         "input": {
           "title": "Pen, touch and mouse",
-          "text": "Capy Canvas’s interface was designed for pen and touch from the start. That includes drawing tablets from Wacom, XP-Pen and Huion, as well as pen and touch on iPad and Galaxy tablets. And if you prefer a mouse for photo editing, that works too.",
+          "text": "The interface was designed for pen and touch from the start. That includes drawing tablets from Wacom, XP-Pen and Huion, as well as pen and touch on iPad and Galaxy tablets. And if you prefer a mouse for photo editing, that works too.",
           "link": "Pen, touch and shortcuts"
         },
         "color": {
@@ -66,12 +66,12 @@ export const docsUI = {
         },
         "responsive": {
           "title": "A responsive canvas",
-          "text": "Capy Canvas’s compositor runs entirely on the GPU, with a target of smooth 120 Hz interaction. Even on modest hardware, it should feel smooth and snappy.",
+          "text": "The compositor runs entirely on the GPU, with a target of smooth 120 Hz interaction. Even on modest hardware, it should feel smooth and snappy.",
           "link": "System architecture"
         },
         "native": {
           "title": "Desktop and tablet",
-          "text": "Capy Canvas is being built for Linux, Windows, macOS, Android and iPadOS. These are compiled native apps, with performance and battery life in mind. Each version uses its platform’s own interface controls.",
+          "text": "Capy Canvas is being built for Linux, Windows, macOS, Android and iPadOS. These are compiled native apps and use platform-native UI toolkits. This means better performance and battery life on every device.",
           "link": "Downloads and availability"
         }
       },
@@ -140,7 +140,7 @@ export const docsUI = {
         },
         "input": {
           "title": "ペン、タッチ、マウス",
-          "text": "Capy Canvasの画面は、最初からペンとタッチでの操作を考えて設計されています。Wacom、XP-Pen、Huionのペンタブレットはもちろん、iPadやGalaxyタブレットでのペンとタッチも想定しています。写真編集にはマウスを使いたい、という方も大丈夫です。",
+          "text": "画面は、最初からペンとタッチでの操作を考えて設計されています。Wacom、XP-Pen、Huionのペンタブレットはもちろん、iPadやGalaxyタブレットでのペンとタッチも想定しています。写真編集にはマウスを使いたい、という方も大丈夫です。",
           "link": "ペン、タッチ、ショートカット"
         },
         "color": {
@@ -150,12 +150,12 @@ export const docsUI = {
         },
         "responsive": {
           "title": "滑らかに応えるキャンバス",
-          "text": "Capy Canvasの画面合成は、すべてGPUで処理されます。120 Hzでの滑らかな操作が目標です。控えめな性能のデバイスでも、きびきびと気持ちよく描けることを目指しています。",
+          "text": "画面合成は、すべてGPUで処理されます。120 Hzでの滑らかな操作が目標です。控えめな性能のデバイスでも、きびきびと気持ちよく描けることを目指しています。",
           "link": "システムアーキテクチャ"
         },
         "native": {
           "title": "デスクトップとタブレット",
-          "text": "Capy Canvasは、Linux、Windows、macOS、Android、iPadOS向けに開発中です。処理性能とバッテリー持続時間を考え、ネイティブアプリとしてコンパイルされます。操作部分には、それぞれのプラットフォームの標準コントロールを使っています。",
+          "text": "Capy Canvasは、Linux、Windows、macOS、Android、iPadOS向けに開発中です。各バージョンはコンパイルされたネイティブアプリで、プラットフォーム標準のUIツールキットを使っています。これにより、どのデバイスでも性能とバッテリー持続時間が向上します。",
           "link": "ダウンロードと提供状況"
         }
       },
@@ -224,7 +224,7 @@ export const docsUI = {
         },
         "input": {
           "title": "笔、触控与鼠标",
-          "text": "Capy Canvas的界面从一开始就为笔和触控操作而设计。这包括Wacom、XP-Pen和Huion的绘图板，也包括iPad和Galaxy平板上的笔与触控。如果你更喜欢用鼠标编辑照片，也完全可以。",
+          "text": "界面从一开始就为笔和触控操作而设计。这包括Wacom、XP-Pen和Huion的绘图板，也包括iPad和Galaxy平板上的笔与触控。如果你更喜欢用鼠标编辑照片，也完全可以。",
           "link": "笔、触控与快捷键"
         },
         "color": {
@@ -234,12 +234,12 @@ export const docsUI = {
         },
         "responsive": {
           "title": "响应流畅的画布",
-          "text": "Capy Canvas的合成器完全运行在GPU上，以流畅的120 Hz交互为目标。即使在性能不高的硬件上，也希望它能流畅、利落地响应。",
+          "text": "合成器完全运行在GPU上，以流畅的120 Hz交互为目标。即使在性能不高的硬件上，也希望它能流畅、利落地响应。",
           "link": "系统架构"
         },
         "native": {
           "title": "桌面与平板",
-          "text": "Capy Canvas正在为Linux、Windows、macOS、Android和iPadOS开发。各版本都会编译为原生应用，并兼顾性能与电池续航。每个版本都使用所在平台的原生界面控件。",
+          "text": "Capy Canvas正在为Linux、Windows、macOS、Android和iPadOS开发。这些都是经过编译的原生应用，并使用平台原生UI工具包。这意味着每台设备都能获得更好的性能和电池续航。",
           "link": "下载与版本提供情况"
         }
       },
@@ -308,7 +308,7 @@ export const docsUI = {
         },
         "input": {
           "title": "펜, 터치와 마우스",
-          "text": "Capy Canvas의 인터페이스는 처음부터 펜과 터치 조작을 고려해 설계되었습니다. Wacom, XP-Pen, Huion의 드로잉 태블릿은 물론 iPad와 Galaxy 태블릿의 펜과 터치도 포함됩니다. 사진 편집에는 마우스를 쓰는 게 편하다면, 그것도 가능합니다.",
+          "text": "인터페이스는 처음부터 펜과 터치 조작을 고려해 설계되었습니다. Wacom, XP-Pen, Huion의 드로잉 태블릿은 물론 iPad와 Galaxy 태블릿의 펜과 터치도 포함됩니다. 사진 편집에는 마우스를 쓰는 게 편하다면, 그것도 가능합니다.",
           "link": "펜, 터치와 단축키"
         },
         "color": {
@@ -318,12 +318,12 @@ export const docsUI = {
         },
         "responsive": {
           "title": "부드럽게 반응하는 캔버스",
-          "text": "Capy Canvas의 합성기는 전적으로 GPU에서 실행되며, 부드러운 120 Hz 조작을 목표로 합니다. 사양이 높지 않은 기기에서도 매끄럽고 경쾌하게 반응하도록 설계하고 있습니다.",
+          "text": "합성기는 전적으로 GPU에서 실행되며, 부드러운 120 Hz 조작을 목표로 합니다. 사양이 높지 않은 기기에서도 매끄럽고 경쾌하게 반응하도록 설계하고 있습니다.",
           "link": "시스템 아키텍처"
         },
         "native": {
           "title": "데스크톱과 태블릿",
-          "text": "Capy Canvas는 Linux, Windows, macOS, Android, iPadOS용으로 개발 중입니다. 각 버전은 성능과 배터리 지속 시간을 고려한 네이티브 앱으로 컴파일됩니다. 인터페이스에는 각 플랫폼의 기본 조작부를 사용합니다.",
+          "text": "Capy Canvas는 Linux, Windows, macOS, Android, iPadOS용으로 개발 중입니다. 각 버전은 컴파일된 네이티브 앱으로, 플랫폼 고유의 UI 툴킷을 사용합니다. 따라서 모든 기기에서 더 나은 성능과 배터리 지속 시간을 제공합니다.",
           "link": "다운로드와 제공 현황"
         }
       },
