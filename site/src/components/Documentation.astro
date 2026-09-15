@@ -1,7 +1,7 @@
 ---
 import { content } from '../data/content.mjs';
 import { docsUI } from '../data/docs-ui.mjs';
-import { route, type Locale } from '../lib/site';
+import { appUrl, route, type Locale } from '../lib/site';
 import DocsLayout from '../layouts/DocsLayout.astro';
 import GuideFigure from './GuideFigure.astro';
 import Icon from './Icon.astro';
@@ -12,20 +12,23 @@ const overview = t.landing;
 const topics = [
   { id: 'painting', copy: overview.sections.painting, href: route(locale, 'documentation', 'painting/brushes') },
   { id: 'workspace', copy: overview.sections.workspace, href: route(locale, 'documentation', 'workspace') },
+  { id: 'input', copy: overview.sections.input, href: route(locale, 'documentation', 'advanced/input') },
   { id: 'color', copy: overview.sections.color, href: route(locale, 'documentation', 'painting/color') },
+  { id: 'responsive', copy: overview.sections.responsive, href: undefined },
   { id: 'native', copy: overview.sections.native, href: route(locale, 'download') },
 ];
 const startingPoints = [
-  { title: overview.links.quickstart, slug: 'quickstart' },
-  { title: overview.links.illustration, slug: 'illustration' },
-  { title: overview.links.files, slug: 'tools/files' },
+  { title: content[locale].nav.webDemo, href: appUrl },
+  { title: content[locale].nav.download, href: route(locale, 'download') },
+  { title: overview.links.quickstart, href: route(locale, 'documentation', 'quickstart') },
+  { title: overview.links.illustration, href: route(locale, 'documentation', 'illustration') },
 ];
 ---
 <DocsLayout locale={locale}>
   <h1>{content[locale].documentation.title}</h1>
   <p class="docs-lead">{t.intro}</p>
   <div class="docs-overview-image">
-    <GuideFigure locale={locale} caption={overview.caption} showHint={false} image={{
+    <GuideFigure locale={locale} showHint={false} image={{
       light: '/assets/guides/illustration-light.webp', dark: '/assets/guides/illustration-dark.webp', alt: overview.alt,
     }} />
   </div>
@@ -33,14 +36,14 @@ const startingPoints = [
     {topics.map(({ id, copy, href }) => <section aria-labelledby={id}>
       <h2 id={id}>{copy.title}</h2>
       <p>{copy.text}</p>
-      <a href={href}>{copy.link}<Icon name="arrow" /></a>
+      {href && copy.link && <a href={href}>{copy.link}<Icon name="arrow" /></a>}
     </section>)}
   </div>
   <section class="docs-start" aria-labelledby="start">
     <h2 id="start">{t.startTitle}</h2>
     <p>{overview.start}</p>
-    <ul class="docs-start-links">{startingPoints.map(({ title, slug }) => <li>
-      <a href={route(locale, 'documentation', slug)}>{title}<Icon name="arrow" /></a>
+    <ul class="docs-start-links">{startingPoints.map(({ title, href }) => <li>
+      <a href={href}>{title}<Icon name="arrow" /></a>
     </li>)}</ul>
     <p class="docs-notice">{overview.notice}</p>
   </section>

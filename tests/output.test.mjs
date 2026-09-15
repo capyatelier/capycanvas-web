@@ -87,12 +87,13 @@ for(const locale of Object.keys(languages)) {
       const overview=docsUI[locale].landing;
       assert.ok(html.includes(overview.notice));
       for (const section of Object.values(overview.sections)) {
-        assert.ok(html.includes(section.title) && html.includes(section.text) && html.includes(section.link), 'Concepts and links are translated');
+        assert.ok(html.includes(section.title) && html.includes(section.text) && (!section.link || html.includes(section.link)), 'Concepts and links are translated');
       }
       assert.match(html, /src="\/assets\/guides\/illustration-light.webp"/);
       assert.match(html, /srcset="\/assets\/guides\/illustration-dark.webp"/);
-      assert.ok(html.includes(overview.caption) && html.includes(overview.alt));
-      assert.doesNotMatch(html, /class="phase-card"|class="reference-grid"|class="guide-image-hint"/);
+      assert.ok(html.includes(overview.alt));
+      assert.doesNotMatch(html, /<figcaption|class="phase-card"|class="reference-grid"|class="guide-image-hint"/);
+      assert.ok(html.indexOf('id="workspace"') < html.indexOf('id="input"') && html.indexOf('id="input"') < html.indexOf('id="color"'));
       assert.ok(html.indexOf('class="docs-lead"') < html.indexOf('class="docs-concepts"'));
       assert.ok(html.indexOf('class="docs-concepts"') < html.indexOf('class="docs-start"'));
       assert.ok(html.includes(`href="/${route(locale, 'documentation')}illustration/"`), 'The overview links to the tutorial introduction');

@@ -1,6 +1,6 @@
 export const docsUI = {
   "en": {
-    "intro": "Capy Canvas is a free, open-source painting and image editor for taking an idea from sketch to finished work. Its GPU brush engine and compositor are designed for realistic painting and fluid interaction at 120 Hz on supported devices. Customizable workspaces provide familiar layouts for illustration and photo editing, while Zen mode hides the interface and leaves only the canvas.",
+    "intro": "Capy Canvas is a free, open-source app for painting and image editing. Its GPU brush engine brings the feel of real paint to your screen.",
     "outline": "Draft",
     "notice": "These concise guides follow the current web editor. Native controls may differ while the ports are being completed.",
     "overview": "Overview",
@@ -42,41 +42,49 @@ export const docsUI = {
     "imageOpen": "Open full-size screenshot",
     "imageHint": "Open the image to inspect the controls. Numbered outlines identify the controls described in the caption.",
     "landing": {
-      "caption": "An abstract painting in the Paint workspace, with tools beside the canvas and editable layers.",
       "alt": "Paint workspace showing a teal ribbon, ochre disc and terracotta block with textured shading.",
       "sections": {
         "painting": {
-          "title": "Paint, ink and watercolor",
-          "text": "Watercolor spreads and mixes on the canvas; oil brushes pick up and carry color. Brushes, image effects and layer compositing run on the GPU, keeping demanding painting work on your device’s graphics hardware.",
+          "title": "Painting",
+          "text": "GPU shaders give us the speed to model paint as it behaves in the physical world. Watercolor spreads into soft washes. Oil brushes pick up and carry color as you paint.",
           "link": "Brushes and painting"
         },
         "workspace": {
-          "title": "Workspaces and Zen mode",
-          "text": "Sketch, Paint and Photo are starting layouts for the same editor. Panels and toolbars can dock, float or collapse, and shortcuts are adjustable. Zen mode hides the controls without moving the artwork.",
+          "title": "Your workspace",
+          "text": "Capy Canvas was designed with customizability at its core. Every tool and panel in the workspace can be moved exactly how you like it. And if you just want to focus on your art with no distractions, click the Capybara to enter Zen mode!",
           "link": "Workspace and canvas"
         },
+        "input": {
+          "title": "Pen, touch and mouse",
+          "text": "Capy Canvas’s interface was designed for pen and touch from the start. That includes drawing tablets from Wacom, XP-Pen and Huion, as well as pen and touch on iPad and Galaxy tablets. And if you prefer a mouse for photo editing, that works too.",
+          "link": "Pen, touch and shortcuts"
+        },
         "color": {
-          "title": "Color based on perception",
-          "text": "The OKLCH color wheel describes color through hue, perceived lightness and colorfulness. These qualities can be adjusted independently, alongside familiar RGB values.",
+          "title": "Choosing colors",
+          "text": "The color wheel uses OKLCH, which is based on how people perceive color. For photographers, 16-bit channels, HDR and advanced proofing workflows are planned to help every pixel come out right.",
           "link": "Color and eyedropper"
         },
+        "responsive": {
+          "title": "A responsive canvas",
+          "text": "Capy Canvas’s compositor runs entirely on the GPU, with a target of smooth 120 Hz interaction. Even on modest hardware, it should feel smooth and snappy.",
+          "link": null
+        },
         "native": {
-          "title": "Native on desktop and tablet",
-          "text": "Desktop and tablet versions share the painting engine and compile to native applications with controls built for each platform. The design aims to improve performance and battery life, especially on mobile devices.",
+          "title": "Desktop and tablet",
+          "text": "Capy Canvas is being built for Linux, Windows, macOS, Android and iPadOS. These are compiled native apps, with performance and battery life in mind. Each version uses its platform’s own interface controls.",
           "link": "Downloads and availability"
         }
       },
-      "start": "Quickstart covers the first marks and a saved project. The illustration tutorial follows a drawing through sketching, ink, color and shading to an exported image.",
+      "start": "Capy Canvas can run entirely in your web browser. The shared engine is compiled for the web and uses WebGPU. If you want better performance, the download page will offer native builds as they become available.",
       "links": {
         "quickstart": "Quickstart",
-        "illustration": "Illustration tutorial",
-        "files": "Saving and exporting"
+        "illustration": "Illustration tutorial"
       },
       "notice": "Capy Canvas is in development. These guides currently cover the web editor."
     }
   },
   "ja": {
-    "intro": "Capy Canvasは、アイデアを下描きから完成作品まで仕上げるための、無料でオープンソースの描画・画像編集アプリです。GPUブラシエンジンと合成処理は、実際の絵の具に近い描き心地と、対応するデバイスでの120 Hzの滑らかな操作を目指して設計されています。作業画面はイラスト制作や写真編集でなじみのある配置から調整でき、Zenモードでは操作部分が隠れ、キャンバスだけが残ります。",
+    "intro": "Capy Canvasは、無料でオープンソースの描画・画像編集アプリです。GPUブラシエンジンが、本物の絵の具のような描き心地を画面に届けます。",
     "outline": "草案",
     "notice": "この簡潔なガイドは現在のウェブ版に基づいています。移植作業中のネイティブ版では操作が異なる場合があります。",
     "overview": "目次",
@@ -91,7 +99,7 @@ export const docsUI = {
       "customize": "カスタマイズ",
       "illustration": "イラスト制作チュートリアル"
     },
-    "startTitle": "基本操作",
+    "startTitle": "使い始めるには",
     "figureSoon": "画像未掲載",
     "related": "関連項目",
     "previous": "前へ",
@@ -118,41 +126,49 @@ export const docsUI = {
     "imageOpen": "スクリーンショットを原寸で開く",
     "imageHint": "画像を開くと操作部分を詳しく確認できます。番号付きの枠はキャプションで説明する操作部分を示します。",
     "landing": {
-      "caption": "Paintワークスペースで描いた抽象画。キャンバスの両側にツールと編集可能なレイヤーが並んでいます。",
       "alt": "青緑のリボン、黄土色の円、テラコッタ色の四角形に質感のある陰影を加えたPaintワークスペース。",
       "sections": {
         "painting": {
-          "title": "絵の具、インク、水彩",
-          "text": "水彩はキャンバス上で広がり混ざり合い、油彩ブラシは色を拾って運びます。ブラシ、画像効果、レイヤー合成はGPUで処理され、負荷の高い描画処理をデバイスのグラフィックス機能が担います。",
+          "title": "絵の具の表現",
+          "text": "GPUシェーダーの速さを生かして、実際の絵の具の振る舞いを再現しています。水彩は柔らかなにじみとなって広がります。油彩ブラシは、描きながら色を拾って運びます。",
           "link": "ブラシと描画"
         },
         "workspace": {
-          "title": "ワークスペースとZenモード",
-          "text": "Sketch、Paint、Photoは、同じエディターを使うための初期レイアウトです。パネルやツールバーはドッキング、フローティング、折りたたみができ、ショートカットも調整できます。Zenモードは作品の位置を保ったまま操作部分を隠します。",
+          "title": "自分のワークスペース",
+          "text": "Capy Canvasは、最初からカスタマイズを大切にして設計されています。ワークスペースのツールやパネルは、すべて自分の好きな位置に動かせます。気を散らすものをなくして作品に集中したいときは、カピバラをクリックしてZenモードへ！",
           "link": "ワークスペースとキャンバス"
         },
+        "input": {
+          "title": "ペン、タッチ、マウス",
+          "text": "Capy Canvasの画面は、最初からペンとタッチでの操作を考えて設計されています。Wacom、XP-Pen、Huionのペンタブレットはもちろん、iPadやGalaxyタブレットでのペンとタッチも想定しています。写真編集にはマウスを使いたい、という方も大丈夫です。",
+          "link": "ペン、タッチ、ショートカット"
+        },
         "color": {
-          "title": "人の知覚に基づく色選び",
-          "text": "OKLCHのカラーホイールは、色相、知覚上の明るさ、色の鮮やかさで色を表します。それぞれを独立して調整でき、なじみのあるRGB値でも確認できます。",
+          "title": "色を選ぶ",
+          "text": "カラーホイールには、人の色の感じ方に基づくOKLCHを使っています。写真を扱う方に向けては、16ビットのカラーチャンネル、HDR、高度なプルーフィングにも対応を予定しています。ひとつひとつのピクセルを、狙いどおりの仕上がりにするためです。",
           "link": "色とスポイト"
         },
+        "responsive": {
+          "title": "滑らかに応えるキャンバス",
+          "text": "Capy Canvasの画面合成は、すべてGPUで処理されます。120 Hzでの滑らかな操作が目標です。控えめな性能のデバイスでも、きびきびと気持ちよく描けることを目指しています。",
+          "link": null
+        },
         "native": {
-          "title": "デスクトップとタブレットでネイティブに動作",
-          "text": "デスクトップ版とタブレット版は描画エンジンを共有し、各プラットフォームの操作部を使うネイティブアプリとしてコンパイルされます。特にモバイル機器で、処理性能とバッテリー持続時間の向上を目指した設計です。",
+          "title": "デスクトップとタブレット",
+          "text": "Capy Canvasは、Linux、Windows、macOS、Android、iPadOS向けに開発中です。処理性能とバッテリー持続時間を考え、ネイティブアプリとしてコンパイルされます。操作部分には、それぞれのプラットフォームの標準コントロールを使っています。",
           "link": "ダウンロードと提供状況"
         }
       },
-      "start": "クイックスタートでは、最初の描画とプロジェクトの保存を説明します。イラスト制作チュートリアルは、下描きから線画、色、陰影を経て、画像を書き出すまでの流れを扱います。",
+      "start": "Capy Canvasは、ウェブブラウザーだけでも動作します。共通の描画エンジンをウェブ向けにコンパイルし、WebGPUで動かしています。より高い性能を求める方には、準備が整ったネイティブ版からダウンロードページで提供していきます。",
       "links": {
         "quickstart": "クイックスタート",
-        "illustration": "イラスト制作チュートリアル",
-        "files": "保存と書き出し"
+        "illustration": "イラスト制作チュートリアル"
       },
       "notice": "Capy Canvasは開発中です。現在のガイドはウェブ版を対象としています。"
     }
   },
   "zh": {
-    "intro": "Capy Canvas是一款免费、开源的绘画与图像编辑应用，可将想法从草图发展为完成的作品。它的GPU笔刷引擎和合成器以真实的绘画体验及支持设备上的120 Hz流畅交互为设计目标。可自定义的工作区提供插画和照片编辑中熟悉的布局，Zen模式则隐藏界面，只留下画布。",
+    "intro": "Capy Canvas是一款免费、开源的绘画与图像编辑应用。它的GPU笔刷引擎将真实颜料的绘画感受带到屏幕上。",
     "outline": "草案",
     "notice": "这些简明指南以当前网页版为准。原生版本仍在移植中，部分控件可能不同。",
     "overview": "概览",
@@ -167,7 +183,7 @@ export const docsUI = {
       "customize": "自定义",
       "illustration": "插画教程"
     },
-    "startTitle": "基本操作",
+    "startTitle": "开始使用",
     "figureSoon": "图片待补充",
     "related": "另请参阅",
     "previous": "上一篇",
@@ -194,41 +210,49 @@ export const docsUI = {
     "imageOpen": "打开原尺寸截图",
     "imageHint": "打开图像可仔细查看控件。带编号的边框对应图注中说明的控件。",
     "landing": {
-      "caption": "在Paint工作区中绘制的抽象画，画布两侧是工具和可编辑的图层。",
       "alt": "Paint工作区中的蓝绿色带状形、土黄色圆形和陶土色四边形，带有质感与阴影。",
       "sections": {
         "painting": {
-          "title": "绘画、墨线与水彩",
-          "text": "水彩在画布上扩散、混合，油画笔刷则拾取并携带颜色。笔刷、图像效果和图层合成都由GPU处理，让设备的图形硬件承担繁重的绘画运算。",
+          "title": "绘画",
+          "text": "GPU着色器带来的速度，让我们能够模拟颜料在真实世界中的表现。水彩会晕染成柔和的色块。油画笔刷则会在绘画时拾取并携带颜色。",
           "link": "笔刷与绘画"
         },
         "workspace": {
-          "title": "工作区与Zen模式",
-          "text": "Sketch、Paint和Photo是同一编辑器的起始布局。面板与工具栏可以停靠、浮动或折叠，快捷键也可调整。Zen模式隐藏控件，同时保持作品的位置不变。",
+          "title": "你的工作区",
+          "text": "Capy Canvas从设计之初就把可自定义性放在核心位置。工作区中的每个工具和面板都可以按你的喜好移动。如果你只想专心画画，不受任何干扰，点击水豚就能进入Zen模式！",
           "link": "工作区与画布"
         },
+        "input": {
+          "title": "笔、触控与鼠标",
+          "text": "Capy Canvas的界面从一开始就为笔和触控操作而设计。这包括Wacom、XP-Pen和Huion的绘图板，也包括iPad和Galaxy平板上的笔与触控。如果你更喜欢用鼠标编辑照片，也完全可以。",
+          "link": "笔、触控与快捷键"
+        },
         "color": {
-          "title": "基于人类感知的颜色选择",
-          "text": "OKLCH色轮通过色相、感知明度和彩度描述颜色。这些属性可以独立调整，也可通过熟悉的RGB数值查看。",
+          "title": "选择颜色",
+          "text": "色轮使用OKLCH，它以人类对颜色的感知为基础。面向摄影师，我们计划支持16位颜色通道、HDR和高级打样工作流程，帮助每个像素都呈现出理想的效果。",
           "link": "颜色与吸管"
         },
+        "responsive": {
+          "title": "响应流畅的画布",
+          "text": "Capy Canvas的合成器完全运行在GPU上，以流畅的120 Hz交互为目标。即使在性能不高的硬件上，也希望它能流畅、利落地响应。",
+          "link": null
+        },
         "native": {
-          "title": "桌面与平板上的原生应用",
-          "text": "桌面版与平板版共享绘画引擎，并编译为使用各平台控件的原生应用。这一设计旨在提高性能与电池续航，尤其是在移动设备上。",
+          "title": "桌面与平板",
+          "text": "Capy Canvas正在为Linux、Windows、macOS、Android和iPadOS开发。各版本都会编译为原生应用，并兼顾性能与电池续航。每个版本都使用所在平台的原生界面控件。",
           "link": "下载与版本提供情况"
         }
       },
-      "start": "快速入门介绍第一次绘画与项目保存。插画教程则从草稿、线稿、底色到阴影，完整呈现导出图像之前的制作过程。",
+      "start": "Capy Canvas可以完全在网页浏览器中运行。共用的绘画引擎经过网页编译，并使用WebGPU。如果你希望获得更好的性能，原生版本准备好后会在下载页面提供。",
       "links": {
         "quickstart": "快速入门",
-        "illustration": "插画教程",
-        "files": "保存与导出"
+        "illustration": "插画教程"
       },
       "notice": "Capy Canvas仍在开发中。目前的指南以网页版为准。"
     }
   },
   "ko": {
-    "intro": "Capy Canvas는 아이디어를 스케치에서 완성된 작품까지 발전시키는 무료 오픈 소스 페인팅·이미지 편집 앱입니다. GPU 브러시 엔진과 합성기는 실제 물감에 가까운 표현과 지원 기기에서의 부드러운 120 Hz 조작을 목표로 설계되었습니다. 작업 화면은 일러스트와 사진 편집에 익숙한 배치에서 조정할 수 있으며, Zen 모드에서는 조작부가 숨겨지고 캔버스만 남습니다.",
+    "intro": "Capy Canvas는 무료 오픈 소스 페인팅·이미지 편집 앱입니다. GPU 브러시 엔진이 실제 물감으로 그리는 듯한 느낌을 화면에 담아냅니다.",
     "outline": "초안",
     "notice": "이 간단한 가이드는 현재 웹 편집기를 기준으로 합니다. 이식 중인 네이티브 버전에서는 일부 조작이 다를 수 있습니다.",
     "overview": "개요",
@@ -243,7 +267,7 @@ export const docsUI = {
       "customize": "사용자 설정",
       "illustration": "일러스트 튜토리얼"
     },
-    "startTitle": "기본 조작",
+    "startTitle": "시작하기",
     "figureSoon": "이미지 준비 중",
     "related": "관련 항목",
     "previous": "이전",
@@ -270,35 +294,43 @@ export const docsUI = {
     "imageOpen": "원본 크기 스크린샷 열기",
     "imageHint": "이미지를 열어 조작부를 자세히 볼 수 있습니다. 번호가 붙은 테두리는 캡션에서 설명하는 조작부를 가리킵니다.",
     "landing": {
-      "caption": "Paint 작업 공간에서 그린 추상화. 캔버스 양옆에 도구와 편집 가능한 레이어가 배치되어 있습니다.",
       "alt": "청록색 리본, 황토색 원, 테라코타색 사각형에 질감과 음영을 더한 Paint 작업 공간.",
       "sections": {
         "painting": {
-          "title": "페인팅, 잉크와 수채화",
-          "text": "수채화는 캔버스에서 번지고 섞이며, 유화 브러시는 색을 묻혀 옮깁니다. 브러시, 이미지 효과와 레이어 합성은 GPU에서 처리되어 기기의 그래픽 하드웨어가 연산량이 많은 그리기 작업을 담당합니다.",
+          "title": "페인팅",
+          "text": "GPU 셰이더의 속도 덕분에 실제 세계에서 물감이 움직이는 방식을 표현할 수 있습니다. 수채화는 부드럽게 번집니다. 유화 브러시는 그리는 동안 색을 묻혀 옮깁니다.",
           "link": "브러시와 페인팅"
         },
         "workspace": {
-          "title": "작업 공간과 Zen 모드",
-          "text": "Sketch, Paint, Photo는 같은 편집기를 위한 시작 배치입니다. 패널과 도구 모음은 도킹하거나 띄우고 접을 수 있으며 단축키도 조정할 수 있습니다. Zen 모드는 작품의 위치를 유지한 채 조작부를 숨깁니다.",
+          "title": "나만의 작업 공간",
+          "text": "Capy Canvas는 처음부터 자유로운 커스터마이징을 중심에 두고 설계되었습니다. 작업 공간의 모든 도구와 패널을 원하는 위치로 옮길 수 있습니다. 방해받지 않고 작품에만 집중하고 싶다면, 카피바라를 클릭해 Zen 모드로 들어가 보세요!",
           "link": "작업 공간과 캔버스"
         },
+        "input": {
+          "title": "펜, 터치와 마우스",
+          "text": "Capy Canvas의 인터페이스는 처음부터 펜과 터치 조작을 고려해 설계되었습니다. Wacom, XP-Pen, Huion의 드로잉 태블릿은 물론 iPad와 Galaxy 태블릿의 펜과 터치도 포함됩니다. 사진 편집에는 마우스를 쓰는 게 편하다면, 그것도 가능합니다.",
+          "link": "펜, 터치와 단축키"
+        },
         "color": {
-          "title": "사람의 지각을 바탕으로 한 색 선택",
-          "text": "OKLCH 색상환은 색상, 지각적 밝기와 색의 선명도로 색을 표현합니다. 각 속성을 독립적으로 조정하고 익숙한 RGB 값으로도 확인할 수 있습니다.",
+          "title": "색 고르기",
+          "text": "색상환은 사람이 색을 인식하는 방식을 바탕으로 한 OKLCH를 사용합니다. 사진 작업을 위해서는 16비트 색상 채널, HDR과 고급 교정 워크플로를 지원할 계획입니다. 픽셀 하나하나를 원하는 결과로 완성하는 데 도움을 주기 위해서입니다.",
           "link": "색상과 스포이트"
         },
+        "responsive": {
+          "title": "부드럽게 반응하는 캔버스",
+          "text": "Capy Canvas의 합성기는 전적으로 GPU에서 실행되며, 부드러운 120 Hz 조작을 목표로 합니다. 사양이 높지 않은 기기에서도 매끄럽고 경쾌하게 반응하도록 설계하고 있습니다.",
+          "link": null
+        },
         "native": {
-          "title": "데스크톱과 태블릿의 네이티브 앱",
-          "text": "데스크톱과 태블릿 버전은 같은 페인팅 엔진을 사용하며 각 플랫폼의 조작부를 갖춘 네이티브 앱으로 컴파일됩니다. 특히 모바일 기기에서 성능과 배터리 지속 시간을 높이는 것을 목표로 한 설계입니다.",
+          "title": "데스크톱과 태블릿",
+          "text": "Capy Canvas는 Linux, Windows, macOS, Android, iPadOS용으로 개발 중입니다. 각 버전은 성능과 배터리 지속 시간을 고려한 네이티브 앱으로 컴파일됩니다. 인터페이스에는 각 플랫폼의 기본 조작부를 사용합니다.",
           "link": "다운로드와 제공 현황"
         }
       },
-      "start": "빠른 시작에서는 첫 그림과 프로젝트 저장을 다룹니다. 일러스트 튜토리얼은 스케치, 선화, 색과 음영을 거쳐 이미지를 내보내기까지의 과정을 설명합니다.",
+      "start": "Capy Canvas는 웹 브라우저 안에서만으로도 실행할 수 있습니다. 공통 엔진을 웹용으로 컴파일해 WebGPU와 함께 사용합니다. 더 높은 성능을 원한다면, 준비되는 네이티브 버전을 다운로드 페이지에서 받을 수 있습니다.",
       "links": {
         "quickstart": "빠른 시작",
-        "illustration": "일러스트 튜토리얼",
-        "files": "저장과 내보내기"
+        "illustration": "일러스트 튜토리얼"
       },
       "notice": "Capy Canvas는 개발 중입니다. 현재 가이드는 웹 편집기를 기준으로 합니다."
     }

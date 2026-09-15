@@ -23,17 +23,22 @@ for a native client does not establish that a native release is available.
   → rendering, using the same example document throughout.
 
 The overview introduces the product before directing readers to guides. Its
-short, descriptive opening and real Paint screenshot lead into painting, workspaces
-and Zen mode, perceptual color, and native desktop/tablet applications. Each concept
-links to a detailed guide or current download availability. A final getting-started
-path links Quickstart, the tutorial introduction, and saving/exporting. The sidebar
-remains the complete topic index. Overview copy lives in `docs-ui.mjs`.
+short opening and real Paint screenshot lead into painting, workspaces and Zen mode,
+pen/touch/mouse input, perceptual color, responsiveness, and native desktop/tablet
+applications. Concepts link to relevant guides or download availability; a section
+without a matching guide does not need a link. Getting started links the Web Demo,
+downloads, Quickstart and the tutorial introduction. The sidebar remains the complete
+topic index. Overview copy lives in `docs-ui.mjs`.
 
-Use descriptive prose on this landing page; procedural instructions belong in the
-task guides. Explain what the design enables for an artist. Keep 120 Hz responsiveness,
-performance and battery efficiency framed as design goals on supported hardware.
-OKLCH selection is available; higher-precision color, HDR and RAW workflows must not
-be described as shipped based on design proposals. Existing topic URLs are retained,
+Use warm, concrete prose on this landing page. Each sentence should develop its
+section's central idea, without restating the introduction, listing incidental
+controls or adding generic reassurance. Explain the design intention and what it
+enables for an artist. A short instruction is useful when it answers a stated need,
+such as clicking the Capybara to enter Zen mode when someone wants no distractions.
+Keep 120 Hz responsiveness, performance and battery efficiency framed as design
+goals. OKLCH selection is available; higher-precision color, HDR, proofing and RAW
+workflows must not be described as shipped based on design proposals. Native
+downloads must reflect current availability. Existing topic URLs are retained,
 including `advanced/` pages grouped under Drawing or Customize. Add new topic slugs
 without moving existing pages merely to match a navigation label.
 
@@ -166,8 +171,8 @@ four translations. The full-size link follows the selected appearance with JS;
 without JS it opens the light image while the inline picture still follows CSS. Ordinary Markdown images also work within the text. Use
 several captures of the same illustration for the four phases; show the active
 tool, relevant settings, and layer stack when they explain the step. The overview
-reuses the tutorial's unannotated Paint screenshot, with a descriptive caption and
-no instructional image hint.
+reuses the tutorial's unannotated Paint screenshot, with accessible alt text and
+no visible caption or instructional image hint.
 
 Do not include AI-generated illustration artwork. The current original abstract
 study is drawn in the actual app through scripted pen input and layer actions.
