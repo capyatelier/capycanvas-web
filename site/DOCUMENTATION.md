@@ -36,7 +36,7 @@ section's central idea, without restating the introduction, listing incidental
 controls or adding generic reassurance. Explain the design intention and what it
 enables for an artist. A short instruction is useful when it answers a stated need,
 such as clicking the Capybara to enter Zen mode when someone wants no distractions.
-Keep 120 Hz responsiveness framed as a design goal. Explain the performance and
+Connect 120 Hz responsiveness to reduced pen lag. Explain the performance and
 battery-life benefits of native compilation and platform-native UI toolkits.
 OKLCH selection is available; higher-precision color, HDR, proofing and RAW
 workflows must not be described as shipped based on design proposals. Native

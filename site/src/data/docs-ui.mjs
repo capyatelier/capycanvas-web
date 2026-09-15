@@ -66,7 +66,7 @@ export const docsUI = {
         },
         "responsive": {
           "title": "A responsive canvas",
-          "text": "The compositor runs entirely on the GPU, with a target of smooth 120 Hz interaction. Even on modest hardware, it should feel smooth and snappy.",
+          "text": "The compositor runs entirely on the GPU, enabling your display to run at a full 120 Hz, which reduces pen lag. Even on modest hardware, it should feel smooth and snappy.",
           "link": "System architecture"
         },
         "native": {
@@ -150,7 +150,7 @@ export const docsUI = {
         },
         "responsive": {
           "title": "滑らかに応えるキャンバス",
-          "text": "画面合成は、すべてGPUで処理されます。120 Hzでの滑らかな操作が目標です。控えめな性能のデバイスでも、きびきびと気持ちよく描けることを目指しています。",
+          "text": "画面合成はすべてGPUで処理されるため、ディスプレイの120 Hzをフルに活かし、ペンの遅延を減らせます。控えめな性能のデバイスでも、きびきびと気持ちよく描けることを目指しています。",
           "link": "システムアーキテクチャ"
         },
         "native": {
@@ -234,7 +234,7 @@ export const docsUI = {
         },
         "responsive": {
           "title": "响应流畅的画布",
-          "text": "合成器完全运行在GPU上，以流畅的120 Hz交互为目标。即使在性能不高的硬件上，也希望它能流畅、利落地响应。",
+          "text": "合成器完全运行在GPU上，让显示屏以完整的120 Hz刷新率运行，减少笔输入延迟。即使在性能不高的硬件上，也希望它能流畅、利落地响应。",
           "link": "系统架构"
         },
         "native": {
@@ -318,7 +318,7 @@ export const docsUI = {
         },
         "responsive": {
           "title": "부드럽게 반응하는 캔버스",
-          "text": "합성기는 전적으로 GPU에서 실행되며, 부드러운 120 Hz 조작을 목표로 합니다. 사양이 높지 않은 기기에서도 매끄럽고 경쾌하게 반응하도록 설계하고 있습니다.",
+          "text": "합성기는 전적으로 GPU에서 실행되어 디스플레이가 120 Hz를 온전히 활용하도록 하고, 펜 입력 지연을 줄여 줍니다. 사양이 높지 않은 기기에서도 매끄럽고 경쾌하게 반응하도록 설계하고 있습니다.",
           "link": "시스템 아키텍처"
         },
         "native": {
