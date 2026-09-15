@@ -1,8 +1,9 @@
 # Reproduce the editor screenshots
 
 Run from the website repository root. Screenshots are actual Capy Canvas renders:
-1920 × 1080, English editor controls, light and dark appearances. The homepage uses
-the shipped **Paint** workspace. Guide images add numbered outlines; translated
+1920 × 1080, English editor controls, light and dark appearances. The homepage,
+documentation overview and product README share the unannotated abstract study in
+the shipped **Paint** workspace (`guides/illustration-{light,dark}.webp`). Other guide images add numbered outlines; translated
 captions explain the same controls in each language.
 
 ## Prepare and capture
@@ -13,9 +14,9 @@ checks its own toolchain requirements. Install website dependencies with `npm ci
 
 ```sh
 # Defaults to the tracked HEAD of ../draw. Pin a commit when reproducing a release.
-APP_REPO=../draw APP_REVISION=fb81ebebe6987c7b773a17ec07c5b86472d7087a npm run capture:prepare
+APP_REPO=../draw APP_REVISION=390c82e4df5c67cd8668b039dfc0aa7192e92f56 npm run capture:prepare
 npm run capture
-# Refresh all guide images/examples while preserving the homepage pair and project.
+# Refresh guides (including the homepage view), preserving the old watercolor pair/project.
 CAPTURE_ONLY=docs npm run capture
 npm run check
 ```
@@ -32,7 +33,7 @@ It does not open windows or move the pointer on the user's desktop. The wrapper
 starts its own Mutter process and cleans up that process and its temporary runtime
 directory on exit. `CHROME` selects another executable. `CAPTURE_BROWSER_MODE=native`
 opts into Chrome's native headless mode on systems where it renders WebGPU correctly;
-the homepage pixel check rejects a black or missing canvas.
+the watercolor-study pixel check rejects a black or missing canvas.
 
 Chrome uses software Canvas2D for image decoding and tiny UI previews, while the
 editor's painting and effects remain hardware WebGPU. This avoids blank image
@@ -73,22 +74,30 @@ teaching example.
 
 Commit the recipes, these public assets, and rebuilt `docs/`:
 
-- `site/public/assets/workspace-{light,dark}.webp`: unannotated homepage captures.
+- `site/public/assets/workspace-{light,dark}.webp`: unannotated watercolor captures,
+  retained at their old homepage URLs for existing links.
 - `site/public/assets/guides/`: 25 guide pairs, including the four tutorial stages.
 - `site/public/assets/examples/`: four tutorial projects, the abstract-study PNG,
   watercolor project, and imported-image project/PNG.
 - `site/public/assets/capture.json`: source revision, applied source corrections,
   app hashes, recipe hashes, browser version, dimensions, screenshot hashes,
   annotation targets/bounds, and example-file hashes. Documentation-only runs retain
-  the homepage assets byte-for-byte and record their original environment and recipe
-  hashes separately under `retainedHomepage`.
+  the old watercolor assets byte-for-byte and record their original environment and
+  recipe hashes under the legacy `retainedHomepage` field. The manifest's legacy
+  `screenshots` list also names that pair; the current homepage shares the
+  `guides/illustration` entries in `captures`.
 
 `capture-compatibility.mjs` lists any required source corrections explicitly.
-The recorded baseline needs parentheses around multiplication operands in the
-contact WGSL hash expression for Chrome 152. This correction is applied only to
-the isolated source archive and recorded verbatim in provenance. Recheck it when
-updating the product revision; an upstream fix makes the correction unnecessary.
+The current baseline includes the WGSL hash-expression correction upstream and
+needs no compatibility patch. It also includes the Web Tool Set layout fix: preset
+labels and brush previews use the same arrangement as GTK. Any future correction
+must be applied only to the isolated source archive and recorded in provenance.
 Do not describe a corrected build as an unmodified checkout.
+
+The capture sequence reapplies each appearance once after its CSS palette is
+active. This refreshes the color wheel's canvas text, which this app revision
+otherwise draws with the preceding theme's ink. It uses the normal editor action
+without altering app source or screenshot pixels.
 
 Reproduction means the same source, actions, artwork and composition. GPU, fonts,
 Chrome versions and input timing can change individual screenshot bytes. Use the

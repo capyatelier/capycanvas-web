@@ -9,7 +9,7 @@ export const content = {
     home: {
       title: 'Capy Canvas',
       description: 'Capy Canvas is a fast, familiar, and cross-platform drawing app with powerful GPU accelerated brushes.',
-      screenshot: 'Capy Canvas’s Paint workspace with three pressure-sensitive watercolor strokes.',
+      screenshot: 'Capy Canvas’s Paint workspace with abstract shapes, textured shading and editable layers.',
       meta: 'Capy Canvas is a fast, familiar, and cross-platform drawing app with powerful GPU accelerated brushes.'
     },
     download: {
@@ -32,7 +32,7 @@ export const content = {
     home: {
       title: 'Capy Canvas',
       description: 'Capy Canvas は、強力な GPU 加速ブラシを備えた、速くて親しみやすいクロスプラットフォームのお絵かきアプリです。',
-      screenshot: '筆圧を反映した3本の水彩の線があるCapy CanvasのPaintワークスペース。',
+      screenshot: '抽象的な形に質感と陰影を加えた作品と、編集可能なレイヤーがあるCapy CanvasのPaintワークスペース。',
       meta: 'Capy Canvas は、強力な GPU 加速ブラシを備えた、速くて親しみやすいクロスプラットフォームのお絵かきアプリです。'
     },
     download: {
@@ -55,7 +55,7 @@ export const content = {
     home: {
       title: 'Capy Canvas',
       description: 'Capy Canvas 是一款快速、操作熟悉的跨平台绘画应用，配备强大的 GPU 加速笔刷。',
-      screenshot: 'Capy Canvas的Paint工作区，画布上有三条带压感变化的水彩笔触。',
+      screenshot: 'Capy Canvas的Paint工作区，包含带有质感和阴影的抽象形状，以及可编辑的图层。',
       meta: 'Capy Canvas 是一款快速、操作熟悉的跨平台绘画应用，配备强大的 GPU 加速笔刷。'
     },
     download: {
@@ -78,7 +78,7 @@ export const content = {
     home: {
       title: 'Capy Canvas',
       description: 'Capy Canvas는 강력한 GPU 가속 브러시를 갖춘 빠르고 익숙한 크로스 플랫폼 드로잉 앱입니다.',
-      screenshot: '필압 변화가 반영된 수채화 획 세 개가 있는 Capy Canvas의 Paint 작업 공간.',
+      screenshot: '질감과 음영을 더한 추상 도형과 편집 가능한 레이어가 있는 Capy Canvas의 Paint 작업 공간.',
       meta: 'Capy Canvas는 강력한 GPU 가속 브러시를 갖춘 빠르고 익숙한 크로스 플랫폼 드로잉 앱입니다.'
     },
     download: {

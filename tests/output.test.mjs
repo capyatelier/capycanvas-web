@@ -47,8 +47,9 @@ for(const locale of Object.keys(languages)) {
       assert.match(html,/<h1 class="visually-hidden">Capy Canvas<\/h1>/);
       assert.doesNotMatch(html,/<figcaption|class="brand"|class="eyebrow"/);
       assert.equal((html.match(/class="button(?: primary)?"/g)||[]).length,3);
-      assert.match(html,/<source media="\(prefers-color-scheme: dark\)" srcset="\/assets\/workspace-dark.webp">/);
-      assert.match(html,/<img src="\/assets\/workspace-light.webp" width="1920" height="1080" alt=".+?"/);
+      assert.match(html,/<source media="\(prefers-color-scheme: dark\)" srcset="\/assets\/guides\/illustration-dark.webp">/);
+      assert.match(html,/<img src="\/assets\/guides\/illustration-light.webp" width="1920" height="1080" alt=".+?"/);
+      assert.match(html,/<meta property="og:image" content="https:\/\/capycanvas.art\/assets\/guides\/illustration-light.webp">/);
       assert.doesNotMatch(html,/<header|class="nav-links"|href="https:\/\/github.com/);
     } else {
       const footer = html.match(/<footer class="site-footer">([\s\S]*?)<\/footer>/)?.[1];
@@ -83,8 +84,17 @@ for(const locale of Object.keys(languages)) {
     }
     if(page==='documentation') {
       assert.ok(html.includes(docsUI[locale].intro));
-      assert.ok(html.includes(docsUI[locale].notice));
-      assert.equal((html.match(/class="phase-card"/g)||[]).length,4);
+      const overview=docsUI[locale].landing;
+      assert.ok(html.includes(overview.notice));
+      for (const section of Object.values(overview.sections)) {
+        assert.ok(html.includes(section.title) && html.includes(section.text) && html.includes(section.link), 'Concepts and links are translated');
+      }
+      assert.match(html, /src="\/assets\/guides\/illustration-light.webp"/);
+      assert.match(html, /srcset="\/assets\/guides\/illustration-dark.webp"/);
+      assert.ok(html.includes(overview.caption) && html.includes(overview.alt));
+      assert.doesNotMatch(html, /class="phase-card"|class="reference-grid"|class="guide-image-hint"/);
+      assert.ok(html.indexOf('class="docs-lead"') < html.indexOf('class="docs-concepts"'));
+      assert.ok(html.indexOf('class="docs-concepts"') < html.indexOf('class="docs-start"'));
       assert.ok(html.includes(`href="/${route(locale, 'documentation')}illustration/"`), 'The overview links to the tutorial introduction');
       assert.match(html, /class="docs-sidebar"/);
       for (const {slug} of docTopics) assert.ok(html.includes(`href="/${route(locale, 'documentation')}${slug}/"`));
@@ -111,7 +121,7 @@ test('GitHub Pages output, sitemap, error page and distributable notices',async(
   for(const name of ['LICENSE','LICENSE-MIT','LICENSE-APACHE','BRANDING.md','THIRD_PARTY_NOTICES.md']) assert.equal(await read(name),await readFile(name,'utf8'));
 });
 test('real screenshots are distinct, compressed WebP images with provenance',async()=>{
-  const images=await Promise.all(['light','dark'].map(t=>readFile(join(root,`assets/workspace-${t}.webp`))));
+  const images=await Promise.all(['light','dark'].map(t=>readFile(join(root,`assets/guides/illustration-${t}.webp`))));
   for(const data of images) { assert.equal(data.subarray(0,4).toString(),'RIFF'); assert.equal(data.subarray(8,12).toString(),'WEBP'); assert.ok(data.length>10000&&data.length<500000); }
   assert.notDeepEqual(images[0],images[1]);
   const capture=JSON.parse(await read('assets/capture.json')); assert.match(capture.revision,/^[a-f0-9]{40}$/); assert.match(capture.artwork,/Watercolor Wash/);

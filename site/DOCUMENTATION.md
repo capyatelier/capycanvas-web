@@ -22,11 +22,20 @@ for a native client does not establish that a native release is available.
 - **Illustration tutorial:** introduction, then sketching → line art → masking
   → rendering, using the same example document throughout.
 
-The overview puts the starting path and tool/workflow references before the
-optional illustration exercise. Reference entries come from `docGroupEntries`,
-with translated descriptions in `docs-ui.mjs`. Existing topic URLs are retained,
-including `advanced/` pages now grouped under Drawing or Customize. Add new topic
-slugs without moving existing pages merely to match a navigation label.
+The overview introduces the product before directing readers to guides. Its
+short, descriptive opening and real Paint screenshot lead into painting, workspaces
+and Zen mode, perceptual color, and native desktop/tablet applications. Each concept
+links to a detailed guide or current download availability. A final getting-started
+path links Quickstart, the tutorial introduction, and saving/exporting. The sidebar
+remains the complete topic index. Overview copy lives in `docs-ui.mjs`.
+
+Use descriptive prose on this landing page; procedural instructions belong in the
+task guides. Explain what the design enables for an artist. Keep 120 Hz responsiveness,
+performance and battery efficiency framed as design goals on supported hardware.
+OKLCH selection is available; higher-precision color, HDR and RAW workflows must not
+be described as shipped based on design proposals. Existing topic URLs are retained,
+including `advanced/` pages grouped under Drawing or Customize. Add new topic slugs
+without moving existing pages merely to match a navigation label.
 
 ## English first, one topic at a time
 
@@ -156,8 +165,9 @@ at 1920 × 1080. Numbered annotations must match both `figure` and `image.alt` i
 four translations. The full-size link follows the selected appearance with JS;
 without JS it opens the light image while the inline picture still follows CSS. Ordinary Markdown images also work within the text. Use
 several captures of the same illustration for the four phases; show the active
-tool, relevant settings, and layer stack when they explain the step. The abstract
-marks on the overview are navigation illustrations, not app screenshots.
+tool, relevant settings, and layer stack when they explain the step. The overview
+reuses the tutorial's unannotated Paint screenshot, with a descriptive caption and
+no instructional image hint.
 
 Do not include AI-generated illustration artwork. The current original abstract
 study is drawn in the actual app through scripted pen input and layer actions.

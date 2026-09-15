@@ -1,50 +1,47 @@
 ---
 import { content } from '../data/content.mjs';
 import { docsUI } from '../data/docs-ui.mjs';
-import { getGuides } from '../lib/guides';
 import { route, type Locale } from '../lib/site';
 import DocsLayout from '../layouts/DocsLayout.astro';
-import PhaseVisual from './PhaseVisual.astro';
+import GuideFigure from './GuideFigure.astro';
 import Icon from './Icon.astro';
-import { docGroupEntries } from '../data/docs-nav.mjs';
 interface Props { locale: Locale }
 const { locale } = Astro.props;
 const t = docsUI[locale];
-const guides = await getGuides(locale);
-const references = Object.entries(docGroupEntries).map(([group, slug]) => ({
-  slug, title: t.groups[group as keyof typeof t.groups],
-  description: t.groupDescriptions[group as keyof typeof t.groupDescriptions],
-}));
+const overview = t.landing;
+const topics = [
+  { id: 'painting', copy: overview.sections.painting, href: route(locale, 'documentation', 'painting/brushes') },
+  { id: 'workspace', copy: overview.sections.workspace, href: route(locale, 'documentation', 'workspace') },
+  { id: 'color', copy: overview.sections.color, href: route(locale, 'documentation', 'painting/color') },
+  { id: 'native', copy: overview.sections.native, href: route(locale, 'download') },
+];
+const startingPoints = [
+  { title: overview.links.quickstart, slug: 'quickstart' },
+  { title: overview.links.illustration, slug: 'illustration' },
+  { title: overview.links.files, slug: 'tools/files' },
+];
 ---
 <DocsLayout locale={locale}>
   <h1>{content[locale].documentation.title}</h1>
   <p class="docs-lead">{t.intro}</p>
-  <p class="docs-notice">{t.notice}</p>
+  <div class="docs-overview-image">
+    <GuideFigure locale={locale} caption={overview.caption} showHint={false} image={{
+      light: '/assets/guides/illustration-light.webp', dark: '/assets/guides/illustration-dark.webp', alt: overview.alt,
+    }} />
+  </div>
+  <div class="docs-concepts">
+    {topics.map(({ id, copy, href }) => <section aria-labelledby={id}>
+      <h2 id={id}>{copy.title}</h2>
+      <p>{copy.text}</p>
+      <a href={href}>{copy.link}<Icon name="arrow" /></a>
+    </section>)}
+  </div>
   <section class="docs-start" aria-labelledby="start">
     <h2 id="start">{t.startTitle}</h2>
-    <div class="docs-start-links">{guides.filter(guide => guide.group === 'start').map(guide => <a href={route(locale, 'documentation', guide.slug)}>
-      <h3>{guide.entry.data.title}<Icon name="arrow" /></h3>
-      <p>{guide.entry.data.description}</p>
-    </a>)}</div>
-  </section>
-  <section class="docs-references" aria-labelledby="references">
-    <h2 id="references">{t.references}</h2>
-    <p class="docs-section-intro">{t.referenceIntro}</p>
-    <div class="reference-grid">{references.map(reference => <a href={route(locale, 'documentation', reference.slug)}>
-      <h3>{reference.title}<Icon name="arrow" /></h3><p>{reference.description}</p>
-    </a>)}</div>
-  </section>
-  <section class="docs-journey" aria-labelledby="illustration">
-    <h2 id="illustration">{t.journey}</h2>
-    <p class="docs-section-intro">{t.journeyIntro}</p>
-    <p class="docs-section-intro"><a class="docs-tutorial-start" href={route(locale, 'documentation', 'illustration')}>{t.tutorialStart}<Icon name="arrow" /></a></p>
-    <ol class="phase-grid">{guides.filter(guide => guide.step).map(guide => <li>
-      <a class="phase-card" href={route(locale, 'documentation', guide.slug)}>
-        <PhaseVisual phase={guide.step!} />
-        <span class="phase-number">{String(guide.step).padStart(2, '0')}</span>
-        <h3>{guide.entry.data.title}</h3>
-        <p>{guide.entry.data.description}</p>
-      </a>
-    </li>)}</ol>
+    <p>{overview.start}</p>
+    <ul class="docs-start-links">{startingPoints.map(({ title, slug }) => <li>
+      <a href={route(locale, 'documentation', slug)}>{title}<Icon name="arrow" /></a>
+    </li>)}</ul>
+    <p class="docs-notice">{overview.notice}</p>
   </section>
 </DocsLayout>

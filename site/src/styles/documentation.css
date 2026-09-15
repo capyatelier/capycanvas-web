@@ -20,36 +20,19 @@ html[data-page="documentation"] .nav-inner { max-width: 1320px; }
 .docs-main h2 { font-size: 18px; font-weight: 650; line-height: 1.5; margin: 0 0 10px; letter-spacing: -.15px; scroll-margin-top: 24px; }
 .docs-main h3 { font-size: 15px; font-weight: 600; line-height: 1.5; margin: 0 0 6px; }
 .docs-landing > section { margin-top: 40px; }
-.docs-start-links { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
-.docs-start-links > a, .reference-grid > a { padding: 10px 0; }
-.docs-start-links h3, .reference-grid h3 { display: flex; align-items: center; gap: 10px; }
-.docs-start-links svg, .reference-grid svg { width: 14px; height: 14px; color: var(--muted); }
-.docs-start-links a:hover h3, .reference-grid a:hover h3 { color: var(--accent); }
-.docs-start-links p, .reference-grid p { font-size: 13px; line-height: 1.65; color: var(--muted); margin: 0; }
-.docs-section-intro { font-size: 14px; color: var(--muted); margin: 0 0 20px; }
-.phase-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; list-style: none; padding: 0; margin: 0; }
-.phase-grid li { min-width: 0; }
-.phase-card { display: block; height: 100%; border-radius: 6px; }
-.phase-visual { width: 100%; height: auto; aspect-ratio: 240 / 112; background: color-mix(in srgb, var(--surface) 60%, transparent); border-radius: 6px; color: var(--ink); transition: background .15s; }
-.phase-card:hover .phase-visual { background: var(--surface); }
-.phase-1 { --phase-color: #668ca3; }
-.phase-2 { --phase-color: #a6917f; }
-.phase-3 { --phase-color: #6e9382; }
-.phase-4 { --phase-color: #a68cbd; }
-.phase-number { display: block; font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; margin: 14px 0 5px; }
-.phase-card h3 { font-size: 14px; }
-.phase-card:hover h3 { color: var(--accent); }
-.phase-card p { color: var(--muted); font-size: 12px; line-height: 1.7; margin: 0; }
-.reference-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.docs-overview-image { max-width: 720px; }
+.docs-concepts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 40px; }
+.docs-concepts p, .docs-start > p:not(.docs-notice) { font-size: 14px; line-height: 1.7; color: var(--muted); margin: 0 0 12px; }
+.docs-concepts a, .docs-start-links a { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); font-size: 13px; line-height: 1.5; }
+.docs-concepts a:hover, .docs-start-links a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.docs-concepts svg, .docs-start-links svg { width: 14px; height: 14px; flex-shrink: 0; }
+.docs-start-links { display: flex; flex-wrap: wrap; gap: 12px 24px; list-style: none; margin: 16px 0 24px; padding: 0; }
 .docs-back { display: inline-block; color: var(--muted); font-size: 12px; margin-bottom: 24px; }
 .docs-back:hover { color: var(--accent); }
 .guide-status { display: block; color: var(--muted); font-size: 11px; margin-bottom: 8px; }
 .guide-techniques { margin-top: 28px; font-size: 15px; line-height: 1.8; }
 .guide-techniques ul { margin: 0; padding-left: 22px; }
 .guide-techniques li + li { margin-top: 6px; }
-.docs-tutorial-start { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); }
-.docs-tutorial-start svg { width: 14px; height: 14px; }
-.docs-tutorial-start:hover { text-decoration: underline; text-underline-offset: 3px; }
 .guide-figure { margin: 28px 0 36px; }
 .guide-figure picture, .guide-figure img { display: block; width: 100%; height: auto; border-radius: 6px; }
 .guide-image-slot { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; min-height: 148px; background: color-mix(in srgb, var(--surface) 55%, transparent); border-radius: 6px; color: var(--muted); }
@@ -89,8 +72,6 @@ html[data-page="documentation"] .nav-inner { max-width: 1320px; }
 @media (max-width: 1100px) {
   .docs-shell { grid-template-columns: 188px minmax(0, 1fr); gap: 32px; }
   .docs-toc { display: none; }
-  .phase-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
-  .phase-visual { max-height: 116px; }
 }
 @media (max-width: 800px) {
   .docs-shell { display: block; padding: 14px 24px 48px; }
@@ -108,10 +89,8 @@ html[data-page="documentation"] .nav-inner { max-width: 1320px; }
 @media (max-width: 540px) {
   .docs-shell { padding: 14px 20px 40px; }
   .docs-main h1 { font-size: 26px; }
-  .docs-start-links, .reference-grid { grid-template-columns: 1fr; gap: 6px; }
+  .docs-concepts { grid-template-columns: 1fr; gap: 28px; }
   .docs-landing > section { margin-top: 32px; }
-  .phase-grid { gap: 24px 16px; }
-  .docs-journey h3 { font-size: 14px; }
   .guide-prose, .guide-techniques { font-size: 14px; }
   .guide-image-slot { min-height: 130px; }
   .guide-pagination { gap: 16px; font-size: 13px; }

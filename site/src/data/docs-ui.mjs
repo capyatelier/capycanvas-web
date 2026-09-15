@@ -1,6 +1,6 @@
 export const docsUI = {
   "en": {
-    "intro": "Start in Paint, learn the drawing and editing tools, then save an editable project and export an image. Short references cover individual tasks; the illustration tutorial puts them together.",
+    "intro": "Capy Canvas is a free, open-source painting and image editor for taking an idea from sketch to finished work. Its GPU brush engine and compositor are designed for realistic painting and fluid interaction at 120 Hz on supported devices. Customizable workspaces provide familiar layouts for illustration and photo editing, while Zen mode hides the interface and leaves only the canvas.",
     "outline": "Draft",
     "notice": "These concise guides follow the current web editor. Native controls may differ while the ports are being completed.",
     "overview": "Overview",
@@ -16,13 +16,6 @@ export const docsUI = {
       "illustration": "Illustration tutorial"
     },
     "startTitle": "Getting started",
-    "journey": "Illustration tutorial",
-    "journeyIntro": "Practice with abstract shapes, scribbles and a limited palette. Follow the four stages in the same document, from pencil sketch to clipped shading.",
-    "references": "Tools and workflows",
-    "referenceIntro": "Start with brushes and color, organize your layers, then edit and export. You can also edit an imported image in Photo or adapt the workspace to your habits.",
-    "layerSummary": "Manage separate parts of an illustration with layers, masks, and groups.",
-    "toolSummary": "Adjust selected areas, correct fill edges, and save or export the result.",
-    "brushSummary": "Adapt brush presets and input settings to the marks you want to make.",
     "figureSoon": "Image pending",
     "related": "See also",
     "previous": "Previous",
@@ -46,19 +39,44 @@ export const docsUI = {
       "android": "Check that the pen and device support pressure input; a generic touch stylus may act like a finger. If pen input works but touch interferes, compare pen-only drawing with touch navigation and check the device’s palm rejection."
     },
     "techniques": "What you'll learn",
-    "tutorialStart": "Start with the tutorial introduction",
-    "groupDescriptions": {
-      "drawing": "Choose brushes and colors, adjust the marks, and keep your settings.",
-      "layers": "Separate paint, control visibility with masks, and combine groups.",
-      "editing": "Select, fill and transform areas; draw gradients, shapes and ruled lines.",
-      "output": "Edit an imported image, adjust filters, and save or export the result.",
-      "customize": "Manage Sketch, Paint and Photo, arrange controls, and set up input."
-    },
     "imageOpen": "Open full-size screenshot",
-    "imageHint": "Open the image to inspect the controls. Numbered outlines identify the controls described in the caption."
+    "imageHint": "Open the image to inspect the controls. Numbered outlines identify the controls described in the caption.",
+    "landing": {
+      "caption": "An abstract painting in the Paint workspace, with tools beside the canvas and editable layers.",
+      "alt": "Paint workspace showing a teal ribbon, ochre disc and terracotta block with textured shading.",
+      "sections": {
+        "painting": {
+          "title": "Paint, ink and watercolor",
+          "text": "Watercolor spreads and mixes on the canvas; oil brushes pick up and carry color. Brushes, image effects and layer compositing run on the GPU, keeping demanding painting work on your device’s graphics hardware.",
+          "link": "Brushes and painting"
+        },
+        "workspace": {
+          "title": "Workspaces and Zen mode",
+          "text": "Sketch, Paint and Photo are starting layouts for the same editor. Panels and toolbars can dock, float or collapse, and shortcuts are adjustable. Zen mode hides the controls without moving the artwork.",
+          "link": "Workspace and canvas"
+        },
+        "color": {
+          "title": "Color based on perception",
+          "text": "The OKLCH color wheel describes color through hue, perceived lightness and colorfulness. These qualities can be adjusted independently, alongside familiar RGB values.",
+          "link": "Color and eyedropper"
+        },
+        "native": {
+          "title": "Native on desktop and tablet",
+          "text": "Desktop and tablet versions share the painting engine and compile to native applications with controls built for each platform. The design aims to improve performance and battery life, especially on mobile devices.",
+          "link": "Downloads and availability"
+        }
+      },
+      "start": "Quickstart covers the first marks and a saved project. The illustration tutorial follows a drawing through sketching, ink, color and shading to an exported image.",
+      "links": {
+        "quickstart": "Quickstart",
+        "illustration": "Illustration tutorial",
+        "files": "Saving and exporting"
+      },
+      "notice": "Capy Canvas is in development. These guides currently cover the web editor."
+    }
   },
   "ja": {
-    "intro": "Paintで描画と編集の基本を覚え、編集用のプロジェクトを保存して画像を書き出します。各リファレンスは短くまとめ、イラスト制作チュートリアルで操作を組み合わせて使います。",
+    "intro": "Capy Canvasは、アイデアを下描きから完成作品まで仕上げるための、無料でオープンソースの描画・画像編集アプリです。GPUブラシエンジンと合成処理は、実際の絵の具に近い描き心地と、対応するデバイスでの120 Hzの滑らかな操作を目指して設計されています。作業画面はイラスト制作や写真編集でなじみのある配置から調整でき、Zenモードでは操作部分が隠れ、キャンバスだけが残ります。",
     "outline": "草案",
     "notice": "この簡潔なガイドは現在のウェブ版に基づいています。移植作業中のネイティブ版では操作が異なる場合があります。",
     "overview": "目次",
@@ -74,13 +92,6 @@ export const docsUI = {
       "illustration": "イラスト制作チュートリアル"
     },
     "startTitle": "基本操作",
-    "journey": "イラスト制作チュートリアル",
-    "journeyIntro": "抽象的な形や自由な線を、色数を絞った配色で描いて練習します。同じドキュメントを使い、鉛筆の下描きからクリッピングを使った陰影までの4工程を進めます。",
-    "references": "ツールと作業手順",
-    "referenceIntro": "ブラシと色から始め、レイヤーを整理して編集・書き出しへ進みます。Photoで読み込んだ画像を編集したり、作業画面を自分の操作に合わせたりすることもできます。",
-    "layerSummary": "レイヤー、マスク、グループを使って、イラストの各部分を管理します。",
-    "toolSummary": "選択部分の調整、塗りの縁の修正、保存と書き出しを説明します。",
-    "brushSummary": "描きたい筆跡に合わせて、ブラシのプリセットと入力設定を調整します。",
     "figureSoon": "画像未掲載",
     "related": "関連項目",
     "previous": "前へ",
@@ -104,19 +115,44 @@ export const docsUI = {
       "android": "ペンとデバイスが筆圧入力に対応しているか確認します。一般的なタッチ用スタイラスは、指と同じ入力になる場合があります。タッチが妨げになる場合は、ペンだけの描画とタッチでの表示操作を比較し、機器のパームリジェクションを確認してください。"
     },
     "techniques": "このページで学ぶこと",
-    "tutorialStart": "チュートリアルの紹介を読む",
-    "groupDescriptions": {
-      "drawing": "ブラシと色を選び、筆跡を調整して設定を保持します。",
-      "layers": "描画を分け、マスクで表示範囲を制御し、グループを組み合わせます。",
-      "editing": "範囲の選択・塗りつぶし・変形と、グラデーション・図形・定規を使います。",
-      "output": "読み込んだ画像にフィルターを適用し、保存や書き出しを行います。",
-      "customize": "Sketch・Paint・Photoを管理し、パネルと入力設定を調整します。"
-    },
     "imageOpen": "スクリーンショットを原寸で開く",
-    "imageHint": "画像を開くと操作部分を詳しく確認できます。番号付きの枠はキャプションで説明する操作部分を示します。"
+    "imageHint": "画像を開くと操作部分を詳しく確認できます。番号付きの枠はキャプションで説明する操作部分を示します。",
+    "landing": {
+      "caption": "Paintワークスペースで描いた抽象画。キャンバスの両側にツールと編集可能なレイヤーが並んでいます。",
+      "alt": "青緑のリボン、黄土色の円、テラコッタ色の四角形に質感のある陰影を加えたPaintワークスペース。",
+      "sections": {
+        "painting": {
+          "title": "絵の具、インク、水彩",
+          "text": "水彩はキャンバス上で広がり混ざり合い、油彩ブラシは色を拾って運びます。ブラシ、画像効果、レイヤー合成はGPUで処理され、負荷の高い描画処理をデバイスのグラフィックス機能が担います。",
+          "link": "ブラシと描画"
+        },
+        "workspace": {
+          "title": "ワークスペースとZenモード",
+          "text": "Sketch、Paint、Photoは、同じエディターを使うための初期レイアウトです。パネルやツールバーはドッキング、フローティング、折りたたみができ、ショートカットも調整できます。Zenモードは作品の位置を保ったまま操作部分を隠します。",
+          "link": "ワークスペースとキャンバス"
+        },
+        "color": {
+          "title": "人の知覚に基づく色選び",
+          "text": "OKLCHのカラーホイールは、色相、知覚上の明るさ、色の鮮やかさで色を表します。それぞれを独立して調整でき、なじみのあるRGB値でも確認できます。",
+          "link": "色とスポイト"
+        },
+        "native": {
+          "title": "デスクトップとタブレットでネイティブに動作",
+          "text": "デスクトップ版とタブレット版は描画エンジンを共有し、各プラットフォームの操作部を使うネイティブアプリとしてコンパイルされます。特にモバイル機器で、処理性能とバッテリー持続時間の向上を目指した設計です。",
+          "link": "ダウンロードと提供状況"
+        }
+      },
+      "start": "クイックスタートでは、最初の描画とプロジェクトの保存を説明します。イラスト制作チュートリアルは、下描きから線画、色、陰影を経て、画像を書き出すまでの流れを扱います。",
+      "links": {
+        "quickstart": "クイックスタート",
+        "illustration": "イラスト制作チュートリアル",
+        "files": "保存と書き出し"
+      },
+      "notice": "Capy Canvasは開発中です。現在のガイドはウェブ版を対象としています。"
+    }
   },
   "zh": {
-    "intro": "从Paint工作区开始，学习绘画与编辑工具，然后保存可编辑的项目并导出图像。简短的参考页面介绍各项任务，插画教程则将这些操作串联起来。",
+    "intro": "Capy Canvas是一款免费、开源的绘画与图像编辑应用，可将想法从草图发展为完成的作品。它的GPU笔刷引擎和合成器以真实的绘画体验及支持设备上的120 Hz流畅交互为设计目标。可自定义的工作区提供插画和照片编辑中熟悉的布局，Zen模式则隐藏界面，只留下画布。",
     "outline": "草案",
     "notice": "这些简明指南以当前网页版为准。原生版本仍在移植中，部分控件可能不同。",
     "overview": "概览",
@@ -132,13 +168,6 @@ export const docsUI = {
       "illustration": "插画教程"
     },
     "startTitle": "基本操作",
-    "journey": "插画教程",
-    "journeyIntro": "用抽象形状、自由涂鸦和有限的配色练习。在同一文档中完成四个阶段，从铅笔草稿到剪贴阴影。",
-    "references": "工具与工作流程",
-    "referenceIntro": "从笔刷与颜色开始，整理图层，再进行编辑和导出。也可以在Photo中编辑导入的图像，或按自己的习惯调整工作区。",
-    "layerSummary": "用图层、蒙版和图层组管理插画的不同部分。",
-    "toolSummary": "调整选中内容、修正填充边缘，并保存或导出结果。",
-    "brushSummary": "根据需要的笔迹调整笔刷预设和输入设置。",
     "figureSoon": "图片待补充",
     "related": "另请参阅",
     "previous": "上一篇",
@@ -162,19 +191,44 @@ export const docsUI = {
       "android": "确认笔和设备支持压力输入；普通电容触控笔可能与手指输入相同。如果笔能正常工作但触控干扰绘画，请比较仅用笔绘画和触控导航，并检查设备的防误触功能。"
     },
     "techniques": "本页会学到什么",
-    "tutorialStart": "从教程介绍开始",
-    "groupDescriptions": {
-      "drawing": "选择笔刷与颜色，调整笔迹，并保留设置。",
-      "layers": "分开绘制内容，用蒙版控制可见范围，并组合图层组。",
-      "editing": "选择、填充和变换区域，绘制渐变、图形和辅助线。",
-      "output": "编辑导入的图像，调整滤镜，并保存或导出结果。",
-      "customize": "管理Sketch、Paint和Photo，安排控件位置，设置输入方式。"
-    },
     "imageOpen": "打开原尺寸截图",
-    "imageHint": "打开图像可仔细查看控件。带编号的边框对应图注中说明的控件。"
+    "imageHint": "打开图像可仔细查看控件。带编号的边框对应图注中说明的控件。",
+    "landing": {
+      "caption": "在Paint工作区中绘制的抽象画，画布两侧是工具和可编辑的图层。",
+      "alt": "Paint工作区中的蓝绿色带状形、土黄色圆形和陶土色四边形，带有质感与阴影。",
+      "sections": {
+        "painting": {
+          "title": "绘画、墨线与水彩",
+          "text": "水彩在画布上扩散、混合，油画笔刷则拾取并携带颜色。笔刷、图像效果和图层合成都由GPU处理，让设备的图形硬件承担繁重的绘画运算。",
+          "link": "笔刷与绘画"
+        },
+        "workspace": {
+          "title": "工作区与Zen模式",
+          "text": "Sketch、Paint和Photo是同一编辑器的起始布局。面板与工具栏可以停靠、浮动或折叠，快捷键也可调整。Zen模式隐藏控件，同时保持作品的位置不变。",
+          "link": "工作区与画布"
+        },
+        "color": {
+          "title": "基于人类感知的颜色选择",
+          "text": "OKLCH色轮通过色相、感知明度和彩度描述颜色。这些属性可以独立调整，也可通过熟悉的RGB数值查看。",
+          "link": "颜色与吸管"
+        },
+        "native": {
+          "title": "桌面与平板上的原生应用",
+          "text": "桌面版与平板版共享绘画引擎，并编译为使用各平台控件的原生应用。这一设计旨在提高性能与电池续航，尤其是在移动设备上。",
+          "link": "下载与版本提供情况"
+        }
+      },
+      "start": "快速入门介绍第一次绘画与项目保存。插画教程则从草稿、线稿、底色到阴影，完整呈现导出图像之前的制作过程。",
+      "links": {
+        "quickstart": "快速入门",
+        "illustration": "插画教程",
+        "files": "保存与导出"
+      },
+      "notice": "Capy Canvas仍在开发中。目前的指南以网页版为准。"
+    }
   },
   "ko": {
-    "intro": "Paint에서 그리기와 편집 도구를 익힌 다음 편집 가능한 프로젝트를 저장하고 이미지를 내보냅니다. 짧은 참조 페이지는 개별 작업을, 일러스트 튜토리얼은 작업을 연결하는 방법을 설명합니다.",
+    "intro": "Capy Canvas는 아이디어를 스케치에서 완성된 작품까지 발전시키는 무료 오픈 소스 페인팅·이미지 편집 앱입니다. GPU 브러시 엔진과 합성기는 실제 물감에 가까운 표현과 지원 기기에서의 부드러운 120 Hz 조작을 목표로 설계되었습니다. 작업 화면은 일러스트와 사진 편집에 익숙한 배치에서 조정할 수 있으며, Zen 모드에서는 조작부가 숨겨지고 캔버스만 남습니다.",
     "outline": "초안",
     "notice": "이 간단한 가이드는 현재 웹 편집기를 기준으로 합니다. 이식 중인 네이티브 버전에서는 일부 조작이 다를 수 있습니다.",
     "overview": "개요",
@@ -190,13 +244,6 @@ export const docsUI = {
       "illustration": "일러스트 튜토리얼"
     },
     "startTitle": "기본 조작",
-    "journey": "일러스트 튜토리얼",
-    "journeyIntro": "추상 도형과 자유로운 낙서를 제한된 배색으로 그리며 연습합니다. 같은 문서에서 연필 스케치부터 클리핑 음영까지 네 단계를 따라갑니다.",
-    "references": "도구와 작업 흐름",
-    "referenceIntro": "브러시와 색상부터 시작해 레이어를 정리하고 편집과 내보내기로 이어갑니다. Photo에서 불러온 이미지를 편집하거나 작업 화면을 익숙한 방식으로 바꿀 수도 있습니다.",
-    "layerSummary": "레이어, 마스크, 그룹으로 일러스트의 각 부분을 관리합니다.",
-    "toolSummary": "선택한 부분과 채우기 가장자리를 수정하고 결과를 저장하거나 내보냅니다.",
-    "brushSummary": "원하는 자국에 맞춰 브러시 프리셋과 입력 설정을 조정합니다.",
     "figureSoon": "이미지 준비 중",
     "related": "관련 항목",
     "previous": "이전",
@@ -220,15 +267,40 @@ export const docsUI = {
       "android": "펜과 기기가 필압 입력을 지원하는지 확인합니다. 일반 터치용 스타일러스는 손가락처럼 입력될 수 있습니다. 펜은 정상인데 터치가 방해된다면 펜만 쓰는 그리기와 터치 탐색을 비교하고 기기의 팜 리젝션을 확인합니다."
     },
     "techniques": "이 페이지에서 배울 내용",
-    "tutorialStart": "튜토리얼 소개부터 시작하기",
-    "groupDescriptions": {
-      "drawing": "브러시와 색상을 고르고 자국을 조정하며 설정을 유지합니다.",
-      "layers": "그림을 나누고 마스크로 표시 범위를 조절하며 그룹을 구성합니다.",
-      "editing": "영역을 선택·채우기·변형하고 그라디언트, 도형, 자를 사용합니다.",
-      "output": "불러온 이미지를 편집하고 필터를 조정한 뒤 저장하거나 내보냅니다.",
-      "customize": "Sketch, Paint, Photo를 관리하고 조작부와 입력을 설정합니다."
-    },
     "imageOpen": "원본 크기 스크린샷 열기",
-    "imageHint": "이미지를 열어 조작부를 자세히 볼 수 있습니다. 번호가 붙은 테두리는 캡션에서 설명하는 조작부를 가리킵니다."
+    "imageHint": "이미지를 열어 조작부를 자세히 볼 수 있습니다. 번호가 붙은 테두리는 캡션에서 설명하는 조작부를 가리킵니다.",
+    "landing": {
+      "caption": "Paint 작업 공간에서 그린 추상화. 캔버스 양옆에 도구와 편집 가능한 레이어가 배치되어 있습니다.",
+      "alt": "청록색 리본, 황토색 원, 테라코타색 사각형에 질감과 음영을 더한 Paint 작업 공간.",
+      "sections": {
+        "painting": {
+          "title": "페인팅, 잉크와 수채화",
+          "text": "수채화는 캔버스에서 번지고 섞이며, 유화 브러시는 색을 묻혀 옮깁니다. 브러시, 이미지 효과와 레이어 합성은 GPU에서 처리되어 기기의 그래픽 하드웨어가 연산량이 많은 그리기 작업을 담당합니다.",
+          "link": "브러시와 페인팅"
+        },
+        "workspace": {
+          "title": "작업 공간과 Zen 모드",
+          "text": "Sketch, Paint, Photo는 같은 편집기를 위한 시작 배치입니다. 패널과 도구 모음은 도킹하거나 띄우고 접을 수 있으며 단축키도 조정할 수 있습니다. Zen 모드는 작품의 위치를 유지한 채 조작부를 숨깁니다.",
+          "link": "작업 공간과 캔버스"
+        },
+        "color": {
+          "title": "사람의 지각을 바탕으로 한 색 선택",
+          "text": "OKLCH 색상환은 색상, 지각적 밝기와 색의 선명도로 색을 표현합니다. 각 속성을 독립적으로 조정하고 익숙한 RGB 값으로도 확인할 수 있습니다.",
+          "link": "색상과 스포이트"
+        },
+        "native": {
+          "title": "데스크톱과 태블릿의 네이티브 앱",
+          "text": "데스크톱과 태블릿 버전은 같은 페인팅 엔진을 사용하며 각 플랫폼의 조작부를 갖춘 네이티브 앱으로 컴파일됩니다. 특히 모바일 기기에서 성능과 배터리 지속 시간을 높이는 것을 목표로 한 설계입니다.",
+          "link": "다운로드와 제공 현황"
+        }
+      },
+      "start": "빠른 시작에서는 첫 그림과 프로젝트 저장을 다룹니다. 일러스트 튜토리얼은 스케치, 선화, 색과 음영을 거쳐 이미지를 내보내기까지의 과정을 설명합니다.",
+      "links": {
+        "quickstart": "빠른 시작",
+        "illustration": "일러스트 튜토리얼",
+        "files": "저장과 내보내기"
+      },
+      "notice": "Capy Canvas는 개발 중입니다. 현재 가이드는 웹 편집기를 기준으로 합니다."
+    }
   }
 };

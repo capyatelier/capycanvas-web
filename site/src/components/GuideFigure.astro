@@ -1,8 +1,8 @@
 ---
 import { docsUI } from '../data/docs-ui.mjs';
 import type { Locale } from '../lib/site';
-interface Props { locale: Locale; caption: string; image?: { light: string; dark: string; alt: string } }
-const { locale, caption, image } = Astro.props;
+interface Props { locale: Locale; caption: string; showHint?: boolean; image?: { light: string; dark: string; alt: string } }
+const { locale, caption, image, showHint = true } = Astro.props;
 ---
 <figure class="guide-figure">
   {image ? <a class="guide-image-link" href={image.light} data-light={image.light} data-dark={image.dark} aria-label={docsUI[locale].imageOpen}><picture>
@@ -13,7 +13,7 @@ const { locale, caption, image } = Astro.props;
     <span>{docsUI[locale].figureSoon}</span>
   </div>}
   <figcaption>{caption}</figcaption>
-  {image && <p class="guide-image-hint">{docsUI[locale].imageHint}</p>}
+  {image && showHint && <p class="guide-image-hint">{docsUI[locale].imageHint}</p>}
 </figure>
 <script>
   const appearance = matchMedia('(prefers-color-scheme: dark)');

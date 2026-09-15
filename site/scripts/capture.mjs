@@ -57,6 +57,9 @@ async function record(name, targets = [], homepage = false, scene = {}) {
     await clearAnnotations(b); await b.theme(theme);
     await b.evaluate(`layerApp.dispatch({type:'set_theme',theme:${JSON.stringify(theme)}});void 0`);
     await b.until(`document.body.dataset.theme === ${JSON.stringify(theme)}`);
+    // This app revision draws canvas-based color labels before applying the CSS
+    // palette. Reapplying the same appearance redraws them with the current ink.
+    await b.evaluate(`layerApp.dispatch({type:'set_theme',theme:${JSON.stringify(theme)}});void 0`);
     if (scene.setup) await scene.setup();
     await b.evaluate('Promise.all([...document.images].map(i=>i.decode())).then(()=>null)');
     await b.evaluate('document.fonts.ready.then(()=>null)');

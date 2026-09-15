@@ -1,6 +1,5 @@
 // Stable, language-independent paths. Titles come from each Markdown translation.
 export const docGroups = ['start', 'drawing', 'layers', 'editing', 'output', 'customize', 'illustration'];
-export const docGroupEntries = { drawing: 'painting/brushes', layers: 'layers/basics', editing: 'tools/selections', output: 'filters/image-editing', customize: 'workspace/management' };
 export const docTopics = [
   { slug: 'quickstart', group: 'start' },
   { slug: 'workspace', group: 'start' },
