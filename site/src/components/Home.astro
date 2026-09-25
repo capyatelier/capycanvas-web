@@ -47,7 +47,7 @@ const slides = [
         const current = choices.findIndex(choice => choice.checked);
         choices[(current + 1) % choices.length].checked = true;
         schedule();
-      }, 4500);
+      }, 13500);
     };
     for (const choice of choices) choice.addEventListener('change', schedule);
     document.addEventListener('visibilitychange', schedule);

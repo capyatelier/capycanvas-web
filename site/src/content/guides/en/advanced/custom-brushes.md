@@ -12,7 +12,7 @@ image: {"light": "/assets/guides/advanced-custom-brushes-light.webp", "dark": "/
 
 Choose a brush and change its settings in the **Tool** panel. When you switch to another brush and come back later, your changes are still there. Each workspace remembers the settings for every brush separately, along with the tools you last used and the way the panels are arranged.
 
-Brush settings belong to the workspace, not to your drawings. Opening a drawing doesn't change your brushes, and saving a drawing doesn't save them. Bookmarks that you add on the size and opacity sliders in Sketch are kept separately for each brush, and they are available in every workspace.
+Brush settings belong to the workspace, not to your drawings. Opening a drawing doesn't change your brushes, and saving a drawing doesn't save them.
 
 ## Try another setup
 
@@ -22,6 +22,6 @@ To experiment freely, choose **Window → Workspaces → New Workspace…**. Thi
 
 ## Start fresh
 
-**Window → Workspaces → Reset All Brushes…** returns every brush in the current workspace to its original settings, including brushes you aren't using right now. Your drawings, your panel layout and your slider bookmarks are not affected.
+**Window → Workspaces → Reset All Brushes…** returns every brush in the current workspace to its original settings, including brushes you aren't using right now. Your drawings and your panel layout are not affected.
 
 If you want the panels back where they started instead, use **Restore Starting Layout…**. That puts the panels back but keeps your brush settings, so the two resets never undo each other's work.

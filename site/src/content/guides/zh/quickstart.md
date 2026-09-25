@@ -10,7 +10,7 @@ image: {"light": "/assets/guides/quickstart-light.webp", "dark": "/assets/guides
 
 ## 打开编辑器
 
-最快的开始方式是使用在浏览器中运行的[Web Demo](https://editor.capycanvas.art/)。它需要支持硬件加速WebGPU的浏览器；首次访问之后，即使离线也能继续使用。你也可以把它安装成应用，[下载页](/zh/download/)介绍了安装方法，也会说明桌面版和移动版应用何时推出。
+最快的开始方式是使用[Web Demo](https://editor.capycanvas.art/)，它可以在Chrome、Edge或Safari等较新的浏览器中运行。首次访问之后，即使离线也能继续使用。你也可以把它安装成应用，[下载页](/zh/download/)介绍了安装方法。
 
 编辑器打开后，在窗口顶部的工作区切换器中选择**Paint**。Paint会把笔刷、颜色和图层都显示在屏幕上，很适合用来熟悉编辑器。然后选择<strong>File → New…</strong>，选好尺寸，再选择**Create**。
 

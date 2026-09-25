@@ -28,7 +28,7 @@ const startingPoints = [
   <h1>{content[locale].documentation.title}</h1>
   <p class="docs-lead">{t.intro}</p>
   <div class="docs-overview-image">
-    <GuideFigure locale={locale} showHint={false} image={{
+    <GuideFigure locale={locale} image={{
       light: '/assets/guides/illustration-light.webp', dark: '/assets/guides/illustration-dark.webp', alt: overview.alt,
     }} />
   </div>
@@ -45,6 +45,5 @@ const startingPoints = [
     <ul class="docs-start-links">{startingPoints.map(({ title, href }) => <li>
       <a href={href}>{title}<Icon name="arrow" /></a>
     </li>)}</ul>
-    <p class="docs-notice">{overview.notice}</p>
   </section>
 </DocsLayout>

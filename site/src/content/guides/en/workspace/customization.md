@@ -12,7 +12,7 @@ image: {"light": "/assets/guides/workspace-customization-light.webp", "dark": "/
 
 Drag a panel by its tab or grip to move it. As you drag, markers show the places where it can dock; let go anywhere else and the panel floats freely. Drop a panel onto another panel's tabs to group them together, and drag the edge between panels to make one larger. A column can also be collapsed into a strip of icons, so each panel opens as a drawer only when you need it.
 
-With a mouse, panels start moving as soon as you drag. With a pen or a finger, press and hold for a moment before you drag, so that a quick tap is never mistaken for a move.
+Panels move as soon as you start dragging them. Buttons inside a toolbar are different: press and hold a button for a moment before you drag it, so that a quick tap is never mistaken for a move.
 
 ## Choose your toolbars
 

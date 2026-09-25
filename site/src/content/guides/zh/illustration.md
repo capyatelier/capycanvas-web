@@ -19,8 +19,6 @@ image: {"light": "/assets/guides/illustration-light.webp", "dark": "/assets/guid
 
 本教程分为四个阶段，都在同一幅作品中进行：[草稿](/zh/docs/illustration/draft/)、线稿、蒙版和细化。每个阶段都在前一阶段的图层之上添加新图层，而不是替换它们。即使隐藏了草稿和色稿，也最好把它们保留下来，以便以后回头参考。
 
-每个阶段都配有编辑器的截图。带编号的框指向图注中提到的控件，你还可以打开每张图片的原尺寸，更仔细地查看图层。
-
 ## 使用示例文件
 
 如果想从某个阶段开始，可以用<strong>File → Open…</strong>打开保存好的<a href="/assets/examples/01-sketch.capy" download>草稿</a>、<a href="/assets/examples/02-line-art.capy" download>线稿</a>、<a href="/assets/examples/03-base-colors.capy" download>底色</a>或<a href="/assets/examples/04-finished.capy" download>完成作品</a>。另外还有一张[完成图的PNG](/assets/examples/abstract-study.png)，可以用来练习照片编辑。

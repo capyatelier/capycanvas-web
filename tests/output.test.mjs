@@ -94,7 +94,6 @@ for(const locale of Object.keys(languages)) {
     if(page==='documentation') {
       assert.ok(html.includes(docsUI[locale].intro));
       const overview=docsUI[locale].landing;
-      assert.ok(html.includes(overview.notice));
       for (const section of Object.values(overview.sections)) {
         assert.ok(html.includes(section.title) && html.includes(section.text) && (!section.link || html.includes(section.link)), 'Concepts and links are translated');
       }

@@ -16,7 +16,7 @@ Start from the brush that is closest to what you want. Draw a test stroke on an 
 
 ## Shape the tip
 
-The settings under **Tip** change the edge and texture of the mark. **Hardness** makes the edge crisp or soft. **Spacing** matters for brushes that stamp their tip along the stroke, such as spray and some paint brushes; a larger spacing separates the stamps so you can see each one. Other brushes draw a smooth, continuous stroke and don't need it.
+The settings under **Tip** change the edge and texture of the mark. **Hardness** makes the edge crisp or soft. **Spacing** only changes a few brushes, such as spray, where a larger value spreads the marks further apart.
 
 You can also change settings from the **Tool Options** bar, which appears along the top of Photo and can be added to any toolbar. Double-click the name of a setting there to put it back to the brush's original value.
 

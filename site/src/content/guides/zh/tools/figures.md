@@ -16,7 +16,7 @@ image: {"light": "/assets/guides/tools-figures-light.webp", "dark": "/assets/gui
 
 ## 设置外观
 
-在**Tool**面板中，**Line width**决定轮廓的粗细，**Opacity**决定形状的透明程度。轮廓使用前景色。选择**Outline + fill**时，内部会用背景色填充，这样你就能画出诸如浅色形状外围一圈深色轮廓的效果。
+在**Tool**面板中，**Line width**决定轮廓的粗细，**Opacity**决定形状的透明程度。轮廓使用前景色。选择**Outline + fill**时，内部会用背景色填充，这样你就能画出例如带深色轮廓的浅色形状。
 
 ## 画出形状
 

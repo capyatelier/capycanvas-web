@@ -16,7 +16,7 @@ image: {"light": "/assets/guides/workspace-light.webp", "dark": "/assets/guides/
 
 **Photo**是为调整照片而布置的。选区工具近在手边，顶部的工具条显示当前工具的选项，Color、Filters和Layers则一直在右侧打开。
 
-切换工作区永远不会改变你的作品。每幅打开的作品在标题栏中都有自己的标签页，切换工作区时它们都会保持打开。
+切换工作区永远不会改变你的作品，所有打开的作品在切换时也都会保持打开。
 
 ## 在画布上移动
 

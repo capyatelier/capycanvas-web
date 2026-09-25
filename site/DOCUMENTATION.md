@@ -121,9 +121,12 @@ selections from layer masks, clipping, and alpha lock. Define terms when their
 meaning matters to the operation. Do not invent feature names or menu labels.
 
 Avoid promotional headings (“Go deeper”), vague benefits, and narrative
-transitions that don't help the reader do the task. Remove author-directed notes such as “Cover…,” “Explain…,” and
-“Show…” from published guides. The brief status notice identifies the guide’s scope;
-the body should still contain useful instructions rather than notes to an author.
+transitions that don't help the reader do the task. Write only for the reader:
+leave out notes about the documentation itself, draft or status labels, remarks
+about native ports or how screenshots were made, and advice meant for bug reports.
+Before adding a detail, ask whether a new user needs it to do the task on this page;
+settings they can safely leave alone deserve a sentence saying so, not an
+explanation.
 
 Translations should use complete, natural sentences, the same friendly register,
 and conventional terminology for their language. Keep the app's English control

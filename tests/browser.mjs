@@ -61,11 +61,11 @@ try {
   await b.navigate(host.url+'/?lang=en'); await b.theme('light'); await b.settle();
   await b.theme('dark'); await b.until("document.querySelector('.showcase-frame[data-slide=\"paint\"] img').currentSrc.endsWith('paint-dark.webp')"); checks++;
   await b.until("document.querySelector('[data-showcase]').hasAttribute('data-playing')"); checks++;
-  await b.until("document.querySelector('.showcase input[value=\"photo\"]').checked", 9000); checks++;
+  await b.until("document.querySelector('.showcase input[value=\"photo\"]').checked", 20000); checks++;
   await b.evaluate("[...document.querySelectorAll('.showcase-switcher label')].find(label=>label.textContent.trim()==='Sketch').click()");
   check(await b.evaluate("document.querySelector('.showcase input[value=\"sketch\"]').checked&&document.querySelector('[data-showcase]').hasAttribute('data-playing')"),'Choosing a workspace shows it and the slideshow continues');
   await b.until("getComputedStyle(document.querySelector('.showcase-frame[data-slide=\"sketch\"]')).opacity==='1'"); checks++;
-  await b.until("document.querySelector('.showcase input[value=\"paint\"]').checked", 9000); checks++;
+  await b.until("document.querySelector('.showcase input[value=\"paint\"]').checked", 20000); checks++;
   check(await b.evaluate("(()=>{const shot=document.querySelector('.showcase').getBoundingClientRect(),dots=document.querySelector('.showcase-switcher').getBoundingClientRect();return dots.top>=shot.top&&dots.bottom<=shot.bottom&&dots.width<shot.width*.6})()"),'The slide indicator sits inside the screenshot');
   // Preference detection and regional language tags, including unsupported-first lists.
   for(const [langs,expected] of [[['ja-JP'],'ja'],[['zh-TW'],'zh'],[['ko-KR'],'ko'],[['fr-FR','ja-JP'],'ja'],[['de-DE'],'en']]) {

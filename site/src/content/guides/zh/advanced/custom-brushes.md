@@ -12,7 +12,7 @@ image: {"light": "/assets/guides/advanced-custom-brushes-light.webp", "dark": "/
 
 选择一支笔刷，然后在**Tool**面板中修改它的设置。切换到其他笔刷、之后再回来时，你的修改依然还在。每个工作区都会分别记住每支笔刷的设置，以及你最近使用的工具和面板的排列方式。
 
-笔刷设置属于工作区，而不属于作品。打开作品不会改变你的笔刷，保存作品也不会保存笔刷。你在Sketch的大小和不透明度滑块上添加的书签会按笔刷分别保存，并且在所有工作区中都可以使用。
+笔刷设置属于工作区，而不属于作品。打开作品不会改变你的笔刷，保存作品也不会保存笔刷。
 
 ## 尝试另一套配置
 
@@ -22,6 +22,6 @@ image: {"light": "/assets/guides/advanced-custom-brushes-light.webp", "dark": "/
 
 ## 从头开始
 
-<strong>Window → Workspaces → Reset All Brushes…</strong>会把当前工作区中的每支笔刷恢复为原始设置，包括你现在没有使用的笔刷。你的作品、面板布局和滑块书签都不受影响。
+<strong>Window → Workspaces → Reset All Brushes…</strong>会把当前工作区中的每支笔刷恢复为原始设置，包括你现在没有使用的笔刷。你的作品和面板布局都不受影响。
 
 如果你想让面板回到最初的位置，请改用<strong>Restore Starting Layout…</strong>。它会恢复面板位置，但保留笔刷设置，因此这两种重置永远不会抵消彼此的效果。

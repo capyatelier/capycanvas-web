@@ -19,8 +19,6 @@ image: {"light": "/assets/guides/illustration-light.webp", "dark": "/assets/guid
 
 チュートリアルは、[下描き](/ja/docs/illustration/draft/)、線画、マスク作成、塗り込みの4つの工程からなり、すべて同じドキュメントで進めます。各工程では、前の工程のレイヤーを置き換えるのではなく、その上に新しいレイヤーを追加していきます。下描きと色の検討は、非表示にしたあとも残しておくのがおすすめです。あとで見返したくなるかもしれないからです。
 
-各工程には、編集画面のスクリーンショットがあります。番号付きの枠はキャプションで触れている操作部分を示しており、どの画像も原寸で開いて、レイヤーを詳しく確認できます。
-
 ## 作例ファイルを使う
 
 特定の工程から始めたい場合は、保存済みの<a href="/assets/examples/01-sketch.capy" download>下描き</a>、<a href="/assets/examples/02-line-art.capy" download>線画</a>、<a href="/assets/examples/03-base-colors.capy" download>下塗り</a>、<a href="/assets/examples/04-finished.capy" download>完成した絵</a>のいずれかを<strong>File → Open…</strong>で開きます。写真編集の練習に使える[完成画像のPNG](/assets/examples/abstract-study.png)もあります。

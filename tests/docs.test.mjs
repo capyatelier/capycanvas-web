@@ -45,8 +45,7 @@ for (const locale of Object.keys(languages)) {
     assert.ok(html.includes(`<meta name="description" content="${escape(data.description)}">`));
     assert.ok(html.includes(`<link rel="canonical" href="https://capycanvas.art${route(locale, slug)}">`));
     assert.match(html, /<article class="guide-article">/);
-    assert.ok(html.includes(docsUI[locale].outline));
-    assert.ok(html.includes(docsUI[locale].notice), 'Direct article visits include the draft feature status');
+    assert.doesNotMatch(html, /guide-status|docs-notice|guide-image-hint/, 'Guides show no draft or status notes');
     assert.ok(html.includes(`<p class="docs-lead">${escapeText(data.purpose)}</p>`), 'The guide opens with its practical purpose');
     const techniques = html.match(/<section class="guide-techniques"[^>]*>([\s\S]*?)<\/section>/)?.[1];
     assert.ok(techniques, 'Key techniques appear before the instructions');

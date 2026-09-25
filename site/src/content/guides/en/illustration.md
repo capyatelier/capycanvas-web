@@ -19,8 +19,6 @@ The example is made of three overlapping shapes: a curved ribbon, a disc and a t
 
 The tutorial has four stages, all in the same drawing: [Sketching](/docs/illustration/draft/), Line art, Masking and Rendering. Each stage adds new layers on top of the previous ones rather than replacing them. It's a good idea to keep the sketch and the color study even after you hide them, in case you want to look back at them later.
 
-Every stage has a screenshot from the editor. The numbered outlines point to the controls mentioned in the caption, and you can open each image at full size to look at the layers more closely.
-
 ## Use the example files
 
 If you'd like to start from a particular stage, open the saved <a href="/assets/examples/01-sketch.capy" download>sketch</a>, <a href="/assets/examples/02-line-art.capy" download>line art</a>, <a href="/assets/examples/03-base-colors.capy" download>base colors</a> or <a href="/assets/examples/04-finished.capy" download>finished drawing</a> with **File → Open…**. There is also a [PNG of the finished image](/assets/examples/abstract-study.png) that you can use to practice photo editing.

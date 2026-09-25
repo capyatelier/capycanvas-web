@@ -10,7 +10,7 @@ image: {"light": "/assets/guides/filters-overview-light.webp", "dark": "/assets/
 
 ## 添加滤镜
 
-选择滤镜应当位于其上方的那个图层，然后打开**Filters**面板。滤镜分为Tone、Color、Blur和Artistic等组，你也可以在搜索框中输入名称来查找，例如**Curves**或**Gaussian Blur**。选择一个滤镜，它就会作为新图层添加进来。窗口顶部的**Filter**菜单中也列出了同样的滤镜。
+先选中一个图层，滤镜会添加在它的上方，然后打开**Filters**面板。滤镜分为Tone、Color、Blur和Artistic等组，你也可以在搜索框中输入名称来查找，例如**Curves**或**Gaussian Blur**。选择一个滤镜，它就会作为新图层添加进来。窗口顶部的**Filter**菜单中也列出了同样的滤镜。
 
 在Sketch中，标题栏里的**Filters**按钮会改为打开一个抽屉。先在左侧选择一个组，再选择滤镜，右侧就会显示它的设置。
 

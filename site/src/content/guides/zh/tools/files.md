@@ -16,7 +16,7 @@ image: {"light": "/assets/guides/tools-files-light.webp", "dark": "/assets/guide
 
 ## 同时处理多幅作品
 
-你打开或新建的每幅作品在标题栏中都有自己的标签页。点击标签页可以切换到对应的作品，拖动标签页可以调整顺序。名称旁边的圆点表示这幅作品有尚未保存的修改。窗口较窄时，标签页会收拢成一个列表，而<strong>File → Drawings…</strong>始终会列出所有打开的作品。
+在Paint和Photo中，你打开或新建的每幅作品在窗口顶部都有自己的标签页。点击标签页可以切换到对应的作品，拖动标签页可以调整顺序。名称旁边的圆点表示这幅作品有尚未保存的修改。<strong>File → Drawings…</strong>会列出所有打开的作品，在任何工作区中都能使用。
 
 用标签页上的按钮或**File → Close**可以关闭作品。如果作品有未保存的修改，Capy Canvas会询问你是否要先保存。
 
@@ -24,6 +24,6 @@ image: {"light": "/assets/guides/tools-files-light.webp", "dark": "/assets/guide
 
 第一次保存作品时选择<strong>File → Save As…</strong>，之后用**File → Save**更新同一个文件。保存你打开的照片时，Capy Canvas会询问新的`.capy`文件要保存在哪里，原始照片保持不变。
 
-在你工作时，网页版编辑器会在浏览器中为每幅未保存的作品保留一份恢复副本。如果浏览器意外关闭，下次打开编辑器时会询问你是否恢复这幅作品。这只是一道安全网，不能代替保存，所以请定期保存`.capy`文件，并为重要的作品保留副本。
+如果浏览器在你保存之前就关闭了，下次打开Capy Canvas时，它会提出帮你恢复作品。这只是一道安全网，所以请定期保存`.capy`文件，并为重要的作品保留副本。
 
 要制作用于分享或打印的图像，请参阅[导出图像](/zh/docs/output/export/)。

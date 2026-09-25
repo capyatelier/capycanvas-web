@@ -16,7 +16,7 @@ image: {"light": "/assets/guides/workspace-light.webp", "dark": "/assets/guides/
 
 **Photo** is arranged for adjusting pictures. The selection tools are close at hand, the bar along the top shows options for the current tool, and Color, Filters and Layers stay open on the right.
 
-Switching workspaces never changes your drawing. Each open drawing has its own tab in the title bar, and all of them stay open when you switch.
+Switching workspaces never changes your drawing, and all of your open drawings stay open when you switch.
 
 ## Move around the canvas
 

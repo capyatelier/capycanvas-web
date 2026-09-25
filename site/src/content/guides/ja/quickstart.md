@@ -10,7 +10,7 @@ image: {"light": "/assets/guides/quickstart-light.webp", "dark": "/assets/guides
 
 ## 編集画面を開く
 
-いちばん手軽に始められるのは、ブラウザーで動く[Web Demo](https://editor.capycanvas.art/)です。ハードウェアアクセラレーションが有効なWebGPUに対応したブラウザーが必要で、一度開けば、その後はオフラインでも使えます。アプリとしてインストールすることもできます。方法は[ダウンロードページ](/ja/download/)で説明しており、デスクトップ版とモバイル版のアプリがいつ使えるようになるかも案内しています。
+いちばん手軽に始められるのは[Web Demo](https://editor.capycanvas.art/)です。Chrome、Edge、Safariなどの最新のブラウザーで動き、一度開けば、その後はオフラインでも使えます。アプリとしてインストールすることもでき、方法は[ダウンロードページ](/ja/download/)で説明しています。
 
 編集画面が開いたら、ウィンドウ上部のワークスペースの切り替えで**Paint**を選びます。Paintではブラシ、色、レイヤーが常に画面に表示されるので、操作を覚えるのに適しています。次に<strong>File → New…</strong>を選び、サイズを決めて**Create**を選択します。
 

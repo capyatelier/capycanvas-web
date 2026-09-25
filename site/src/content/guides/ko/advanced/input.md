@@ -18,8 +18,8 @@ image: {"light": "/assets/guides/advanced-input-light.webp", "dark": "/assets/gu
 
 **Preferences**를 열고 **Pen & Input**을 선택합니다. **Pressure response**는 얼마나 세게 눌러야 하는지를 바꿉니다. 값을 낮추면 가볍게 눌러도 더 강하게 반영됩니다. **Cursor shape**는 캔버스 위에서 포인터가 어떤 모양일지 정하고, **Hide cursor when painting**은 그리는 동안 포인터가 방해되지 않게 숨겨 줍니다.
 
-**Enable stroke prediction**은 마지막으로 받은 위치보다 조금 앞서 선을 그려서, 빠르게 움직이는 펜을 선이 잘 따라오게 합니다. 급하게 꺾이는 곳에서 획 끝이 지나치게 튀어 나가는 것 같다면 **Prediction amount**를 낮추거나 예측을 끄세요. 브라우저가 자체적으로 획을 예측할 수 있는 경우에는 **Use browser stroke prediction**을 켜면 브라우저의 예측을 대신 사용합니다. 설정은 한 번에 하나씩 바꾸고, 바꿀 때마다 같은 곡선을 그려 비교하세요.
+**Enable stroke prediction**은 빠르게 움직이는 펜을 선이 잘 따라오게 도와줍니다. 급하게 꺾이는 곳에서 획 끝이 지나치게 튀어 나가는 것 같다면 **Prediction amount**를 낮추거나 예측을 끄세요. 설정은 한 번에 하나씩 바꾸고, 바꿀 때마다 같은 곡선을 그려 비교하세요.
 
 ## 단축키 설정하기
 
-**Help → Keyboard Shortcuts**를 열면 모든 명령과 해당 키를 볼 수 있습니다. 명령을 선택해 새 단축키를 지정할 수 있으며, 이미 사용 중인 키라면 Capy Canvas가 알려 줍니다. 유용한 기본 단축키로는 실행 취소 **Ctrl+Z**, 화면 이동 **Space**-드래그, 그림을 화면에 맞추는 **Ctrl+0**, 스포이트 **I**, Quick Mask **Q**, Zen 모드 **Tab**이 있습니다. Mac에서는 Ctrl 대신 Command를 사용합니다.
+**Help → Keyboard Shortcuts**를 열면 모든 명령과 해당 키를 볼 수 있습니다. 명령을 선택해 새 단축키를 지정할 수 있으며, 이미 사용 중인 키라면 Capy Canvas가 알려 줍니다. 유용한 기본 단축키로는 실행 취소 **Ctrl+Z**, 화면 이동 **Space**-드래그, 그림을 화면에 맞추는 **Ctrl+0**, 스포이트 **I**, Quick Mask **Q**, Zen 모드 **Tab**이 있습니다. Mac에서는 이 가이드에 나오는 Ctrl 대신 Command를 사용합니다.

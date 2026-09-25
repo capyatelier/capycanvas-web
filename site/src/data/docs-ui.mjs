@@ -1,8 +1,6 @@
 export const docsUI = {
   "en": {
     "intro": "Capy Canvas is a free, open-source app for sketching, painting and photo editing. It is inspired by the zen of capybaras.",
-    "outline": "Draft",
-    "notice": "These concise guides follow the current web editor. Native controls may differ while the ports are being completed.",
     "overview": "Overview",
     "contents": "Documentation contents",
     "onPage": "On this page",
@@ -23,8 +21,8 @@ export const docsUI = {
     "next": "Next",
     "platform": "Platform",
     "allPlatforms": "All platforms",
-    "platformTitle": "Platform-specific input",
-    "platformIntro": "The device selector shows notes for your current system. You can switch it to check another device.",
+    "platformTitle": "Tips for your device",
+    "platformIntro": "Choose your device to see a few tips for it.",
     "systems": {
       "windows": "Windows",
       "mac": "macOS",
@@ -33,15 +31,14 @@ export const docsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "Check pen pressure in your tablet driver's settings if it fails in more than one app. With multiple displays, map the tablet to the display showing Capy Canvas.",
-      "mac": "Check the display mapping in your tablet settings before adjusting the brush. When assigning shortcuts, treat Command and Control as different keys; do not copy a Windows shortcut assignment without checking it.",
-      "linux": "For the web version, check tablet mapping in your desktop settings. When reporting missing pressure or a cursor offset, include your browser and whether your desktop uses Wayland or X11.",
-      "ipad": "Check that your Apple Pencil model supports the pressure or tilt input you want to use. If your hand leaves marks, test pen and touch separately before changing the brush.",
-      "android": "Check that the pen and device support pressure input; a generic touch stylus may act like a finger. If pen input works but touch interferes, compare pen-only drawing with touch navigation and check the device’s palm rejection."
+      "windows": "If pressure doesn't work in any app, check your tablet driver's settings. If you use more than one screen, set the tablet to draw on the screen that shows Capy Canvas.",
+      "mac": "If the pen lands in the wrong place, check which screen your tablet is mapped to in its settings. On a Mac, use Command wherever these guides say Ctrl.",
+      "linux": "If pressure doesn't work or the cursor lands in the wrong place, check your desktop's tablet settings and make sure your browser is up to date.",
+      "ipad": "Most Apple Pencil models support pressure and tilt, but Apple Pencil (USB-C) does not support pressure. If your hand leaves marks while you draw, check the Apple Pencil settings on your iPad.",
+      "android": "Use a pen that supports pressure; a simple rubber-tipped stylus works like a finger. If your hand leaves marks while you draw, check your tablet's palm rejection settings."
     },
     "techniques": "What you'll learn",
     "imageOpen": "Open full-size screenshot",
-    "imageHint": "Open the image to inspect the controls. Numbered outlines identify the controls described in the caption.",
     "landing": {
       "alt": "Paint workspace showing a teal ribbon, ochre disc and terracotta block with textured shading.",
       "sections": {
@@ -80,14 +77,11 @@ export const docsUI = {
       "links": {
         "quickstart": "Quickstart",
         "illustration": "Illustration tutorial"
-      },
-      "notice": "Capy Canvas is in development. These guides currently cover the web editor."
+      }
     }
   },
   "ja": {
     "intro": "Capy Canvasは、スケッチ、ペイント、写真編集のための、無料でオープンソースのアプリです。カピバラの禅のような穏やかさに着想を得ています。",
-    "outline": "草案",
-    "notice": "この簡潔なガイドは現在のウェブ版に基づいています。移植作業中のネイティブ版では操作が異なる場合があります。",
     "overview": "目次",
     "contents": "ドキュメントの目次",
     "onPage": "このページの内容",
@@ -108,8 +102,8 @@ export const docsUI = {
     "next": "次へ",
     "platform": "プラットフォーム",
     "allPlatforms": "すべて",
-    "platformTitle": "プラットフォーム別の入力",
-    "platformIntro": "現在のシステムに対応する説明を表示します。選択を切り替えると、ほかのデバイスについても確認できます。",
+    "platformTitle": "デバイス別のヒント",
+    "platformIntro": "お使いのデバイスを選ぶと、そのデバイス向けのヒントが表示されます。",
     "systems": {
       "windows": "Windows",
       "mac": "macOS",
@@ -118,15 +112,14 @@ export const docsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "複数のアプリで筆圧が使えない場合は、タブレットドライバーの設定で筆圧を確認します。複数画面を使う場合は、Capy Canvasを表示している画面にタブレットを割り当ててください。",
-      "mac": "ブラシを調整する前に、タブレット設定の画面への割り当てを確認します。ショートカットのCommandとControlは別のキーなので、Windowsの割り当てをそのまま使わずに確認してください。",
-      "linux": "ウェブ版では、デスクトップ設定のタブレットの割り当てを確認します。筆圧が届かない、カーソルがずれるといった問題の報告には、ブラウザー名と、デスクトップがWaylandかX11かを添えてください。",
-      "ipad": "使っているApple Pencilのモデルが、必要な筆圧や傾きの入力に対応しているか確認します。手を置くと線が描かれる場合は、ブラシを変更する前にペンとタッチを別々に試してください。",
-      "android": "ペンとデバイスが筆圧入力に対応しているか確認します。一般的なタッチ用スタイラスは、指と同じ入力になる場合があります。タッチが妨げになる場合は、ペンだけの描画とタッチでの表示操作を比較し、機器のパームリジェクションを確認してください。"
+      "windows": "どのアプリでも筆圧が効かない場合は、タブレットドライバーの設定を確認してください。複数の画面を使っている場合は、Capy Canvasを表示している画面にタブレットを割り当ててください。",
+      "mac": "ペンの位置がずれる場合は、タブレットの設定で割り当てている画面を確認してください。このガイドでCtrlと書かれているショートカットは、MacではCommandを使います。",
+      "linux": "筆圧が効かない、またはカーソルの位置がずれる場合は、デスクトップのタブレット設定を確認し、ブラウザーを最新の状態にしてください。",
+      "ipad": "ほとんどのApple Pencilは筆圧と傾きに対応していますが、Apple Pencil（USB-C）は筆圧に対応していません。描いているときに手が触れて線が入る場合は、iPadのApple Pencilの設定を確認してください。",
+      "android": "筆圧に対応したペンを使ってください。先端がゴムの一般的なスタイラスは、指と同じように動作します。描いているときに手が触れて線が入る場合は、タブレットのパームリジェクションの設定を確認してください。"
     },
     "techniques": "このページで学ぶこと",
     "imageOpen": "スクリーンショットを原寸で開く",
-    "imageHint": "画像を開くと操作部分を詳しく確認できます。番号付きの枠はキャプションで説明する操作部分を示します。",
     "landing": {
       "alt": "青緑のリボン、黄土色の円、テラコッタ色の四角形に質感のある陰影を加えたPaintワークスペース。",
       "sections": {
@@ -165,14 +158,11 @@ export const docsUI = {
       "links": {
         "quickstart": "クイックスタート",
         "illustration": "イラスト制作チュートリアル"
-      },
-      "notice": "Capy Canvasは開発中です。現在のガイドはウェブ版を対象としています。"
+      }
     }
   },
   "zh": {
     "intro": "Capy Canvas是一款免费、开源的速写、绘画与照片编辑应用。它的灵感来自水豚的禅意。",
-    "outline": "草案",
-    "notice": "这些简明指南以当前网页版为准。原生版本仍在移植中，部分控件可能不同。",
     "overview": "概览",
     "contents": "文档目录",
     "onPage": "本页内容",
@@ -193,8 +183,8 @@ export const docsUI = {
     "next": "下一篇",
     "platform": "平台",
     "allPlatforms": "所有平台",
-    "platformTitle": "各平台的输入设置",
-    "platformIntro": "设备选择器会显示当前系统的说明，也可以切换到其他设备进行查看。",
+    "platformTitle": "设备小贴士",
+    "platformIntro": "选择你的设备，查看适用于它的几条提示。",
     "systems": {
       "windows": "Windows",
       "mac": "macOS",
@@ -203,15 +193,14 @@ export const docsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "如果多个应用都无法使用压感，请在数位板驱动设置中检查笔压。使用多台显示器时，将数位板映射到显示Capy Canvas的屏幕。",
-      "mac": "修改笔刷前，先检查数位板设置中的屏幕映射。设置快捷键时要区分Command和Control，不要未经检查就照搬Windows的按键分配。",
-      "linux": "使用网页版时，在桌面设置中检查数位板映射。报告压感缺失或光标偏移时，请注明浏览器，以及桌面使用的是Wayland还是X11。",
-      "ipad": "确认所用Apple Pencil型号支持需要的压感或倾斜输入。如果手掌接触屏幕会留下笔迹，请先分别测试笔与触控，再修改笔刷。",
-      "android": "确认笔和设备支持压力输入；普通电容触控笔可能与手指输入相同。如果笔能正常工作但触控干扰绘画，请比较仅用笔绘画和触控导航，并检查设备的防误触功能。"
+      "windows": "如果在所有应用中压感都不起作用，请检查数位板驱动程序的设置。如果使用多个屏幕，请把数位板设置为在显示Capy Canvas的屏幕上绘画。",
+      "mac": "如果笔的落点不对，请在数位板设置中检查它映射到了哪个屏幕。本指南中写作Ctrl的快捷键，在Mac上请使用Command。",
+      "linux": "如果压感不起作用或光标位置不对，请检查桌面环境中的数位板设置，并确保浏览器是最新版本。",
+      "ipad": "大多数Apple Pencil都支持压感和倾斜，但Apple Pencil（USB-C）不支持压感。如果绘画时手掌会留下痕迹，请检查iPad上的Apple Pencil设置。",
+      "android": "请使用支持压感的笔；普通的橡胶头触控笔和手指的效果一样。如果绘画时手掌会留下痕迹，请检查平板的防误触设置。"
     },
     "techniques": "本页会学到什么",
     "imageOpen": "打开原尺寸截图",
-    "imageHint": "打开图像可仔细查看控件。带编号的边框对应图注中说明的控件。",
     "landing": {
       "alt": "Paint工作区中的蓝绿色带状形、土黄色圆形和陶土色四边形，带有质感与阴影。",
       "sections": {
@@ -250,14 +239,11 @@ export const docsUI = {
       "links": {
         "quickstart": "快速入门",
         "illustration": "插画教程"
-      },
-      "notice": "Capy Canvas仍在开发中。目前的指南以网页版为准。"
+      }
     }
   },
   "ko": {
     "intro": "Capy Canvas는 스케치, 페인팅, 사진 편집을 위한 무료 오픈 소스 앱입니다. 카피바라의 선(禪) 같은 평온함에서 영감을 받았습니다.",
-    "outline": "초안",
-    "notice": "이 간단한 가이드는 현재 웹 편집기를 기준으로 합니다. 이식 중인 네이티브 버전에서는 일부 조작이 다를 수 있습니다.",
     "overview": "개요",
     "contents": "문서 목차",
     "onPage": "이 페이지의 내용",
@@ -278,8 +264,8 @@ export const docsUI = {
     "next": "다음",
     "platform": "플랫폼",
     "allPlatforms": "모든 플랫폼",
-    "platformTitle": "플랫폼별 입력 설정",
-    "platformIntro": "현재 시스템에 맞는 설명을 표시합니다. 다른 기기를 선택해 해당 설명을 확인할 수도 있습니다.",
+    "platformTitle": "기기별 도움말",
+    "platformIntro": "사용 중인 기기를 선택하면 그 기기에 맞는 도움말을 볼 수 있습니다.",
     "systems": {
       "windows": "Windows",
       "mac": "macOS",
@@ -288,15 +274,14 @@ export const docsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "여러 앱에서 필압이 작동하지 않으면 태블릿 드라이버 설정에서 압력을 확인합니다. 화면을 여러 개 쓴다면 Capy Canvas가 있는 화면에 태블릿을 매핑하세요.",
-      "mac": "브러시를 조정하기 전에 태블릿 설정의 화면 매핑을 확인합니다. 단축키를 지정할 때 Command와 Control은 다른 키이므로 Windows의 할당을 그대로 옮기지 말고 확인하세요.",
-      "linux": "웹 버전에서는 데스크톱 설정의 태블릿 매핑을 확인합니다. 필압이 없거나 커서가 어긋나는 문제를 보고할 때는 브라우저와 데스크톱의 Wayland 또는 X11 사용 여부를 적어 주세요.",
-      "ipad": "사용하는 Apple Pencil 모델이 필요한 필압이나 기울기 입력을 지원하는지 확인합니다. 손을 올렸을 때 자국이 생기면 브러시를 바꾸기 전에 펜과 터치를 따로 시험합니다.",
-      "android": "펜과 기기가 필압 입력을 지원하는지 확인합니다. 일반 터치용 스타일러스는 손가락처럼 입력될 수 있습니다. 펜은 정상인데 터치가 방해된다면 펜만 쓰는 그리기와 터치 탐색을 비교하고 기기의 팜 리젝션을 확인합니다."
+      "windows": "어느 앱에서도 필압이 작동하지 않으면 태블릿 드라이버 설정을 확인하세요. 화면을 여러 개 쓴다면 Capy Canvas가 표시된 화면에 태블릿을 연결하세요.",
+      "mac": "펜이 엉뚱한 위치에 찍히면 태블릿 설정에서 어느 화면에 연결되어 있는지 확인하세요. 이 가이드에서 Ctrl로 표시된 단축키는 Mac에서 Command를 사용합니다.",
+      "linux": "필압이 작동하지 않거나 커서 위치가 어긋나면 데스크톱의 태블릿 설정을 확인하고, 브라우저를 최신 버전으로 업데이트하세요.",
+      "ipad": "대부분의 Apple Pencil은 필압과 기울기를 지원하지만, Apple Pencil(USB-C)은 필압을 지원하지 않습니다. 그림을 그릴 때 손이 닿아 선이 생기면 iPad의 Apple Pencil 설정을 확인하세요.",
+      "android": "필압을 지원하는 펜을 사용하세요. 끝이 고무로 된 일반 스타일러스는 손가락처럼 동작합니다. 그림을 그릴 때 손이 닿아 선이 생기면 태블릿의 손바닥 인식 방지 설정을 확인하세요."
     },
     "techniques": "이 페이지에서 배울 내용",
     "imageOpen": "원본 크기 스크린샷 열기",
-    "imageHint": "이미지를 열어 조작부를 자세히 볼 수 있습니다. 번호가 붙은 테두리는 캡션에서 설명하는 조작부를 가리킵니다.",
     "landing": {
       "alt": "청록색 리본, 황토색 원, 테라코타색 사각형에 질감과 음영을 더한 Paint 작업 공간.",
       "sections": {
@@ -335,8 +320,7 @@ export const docsUI = {
       "links": {
         "quickstart": "빠른 시작",
         "illustration": "일러스트 튜토리얼"
-      },
-      "notice": "Capy Canvas는 개발 중입니다. 현재 가이드는 웹 편집기를 기준으로 합니다."
+      }
     }
   }
 };

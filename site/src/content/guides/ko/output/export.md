@@ -2,7 +2,7 @@
 title: "이미지 내보내기"
 description: "공유하거나 인쇄할 수 있도록 그림을 PNG, JPEG, TIFF 사본으로 저장합니다."
 purpose: "내보내기는 그림을 일반 이미지로 만들어, 온라인에 올리거나 다른 사람에게 보내거나 인쇄할 수 있게 합니다. .capy 파일은 모든 레이어와 함께 그대로 남으므로, 언제든 그림을 고쳐 다시 내보낼 수 있습니다."
-techniques: ["이미지 용도에 맞는 프리셋을 고릅니다.", "파일 형식, 색상 프로파일, 비트 심도를 정합니다.", "내보낸 이미지를 저장합니다."]
+techniques: ["이미지 용도에 맞는 프리셋을 고릅니다.", "파일 형식과 크기를 정합니다.", "내보낸 이미지를 저장합니다."]
 figure: "1: Destination 프리셋. 2: 형식, 색상 프로파일, 비트 심도. 3: 빈 영역의 저장 방식을 정하는 Transparency."
 related: ["tools/files", "color/management", "filters/image-editing"]
 image: {"light": "/assets/guides/output-export-light.webp", "dark": "/assets/guides/output-export-dark.webp", "alt": "1: Destination 프리셋. 2: 형식, 색상 프로파일, 비트 심도. 3: 빈 영역의 저장 방식을 정하는 Transparency."}
@@ -16,7 +16,7 @@ image: {"light": "/assets/guides/output-export-light.webp", "dark": "/assets/gui
 
 ## 세부 설정 조절하기
 
-더 세밀하게 조절하고 싶다면 Destination 아래의 설정을 바꿉니다. **Format**에서는 PNG, JPEG, TIFF 중 하나를 고릅니다. PNG는 가장자리가 선명하거나 투명한 부분이 있는 작품에 알맞고, JPEG은 사진을 더 작은 파일로 저장합니다. **Output profile**은 파일의 색 공간을, **Bit depth**는 색을 얼마나 세밀하게 저장할지를 정합니다.
+더 세밀하게 조절하고 싶다면 Destination 아래의 설정을 바꿉니다. **Format**에서는 PNG, JPEG, TIFF 중 하나를 고릅니다. PNG는 가장자리가 선명하거나 투명한 부분이 있는 작품에 알맞고, JPEG은 사진을 더 작은 파일로 저장합니다. **Output profile**, **Bit depth** 설정은 대개 Destination에서 정해 준 대로 두면 됩니다.
 
 **Transparency**는 그림의 빈 영역을 어떻게 처리할지 정합니다. 투명도를 지원하는 형식에서는 빈 영역을 투명하게 둘 수 있고, 흰색이나 검은색으로 채울 수도 있습니다. **Pixel size**를 사용하면 웹사이트용처럼 더 작은 사본을 만들 수 있습니다. 마음에 드는 설정 조합은 나만의 프리셋으로 저장해 둘 수 있습니다.
 

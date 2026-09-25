@@ -1,7 +1,7 @@
 // Browser menu wording is intentionally brief; support references are in README.md.
 export const pwaContent = {
   en: {
-    title: 'Progressive Web App', intro: 'The web version of Capy Canvas can be installed for offline use.',
+    title: 'Install the web app', intro: 'The web version of Capy Canvas can be installed for offline use.',
     os: 'Operating system', browser: 'Browser', open: 'Open the web app.',
     systems: { windows: 'Windows', macos: 'macOS', linux: 'Linux', chromeos: 'ChromeOS', android: 'Android', ios: 'iOS/iPadOS', other: 'Other OS' },
     browsers: { chrome: 'Chrome', edge: 'Edge', firefox: 'Firefox', safari: 'Safari', other: 'Other browser' },
@@ -18,7 +18,7 @@ export const pwaContent = {
     }
   },
   ja: {
-    title: 'プログレッシブウェブアプリ', intro: 'Capy Canvas のウェブ版は、インストールしてオフラインで使えます。',
+    title: 'ウェブアプリをインストール', intro: 'Capy Canvas のウェブ版は、インストールしてオフラインで使えます。',
     os: 'OS', browser: 'ブラウザー', open: 'ウェブアプリを開く。',
     systems: { windows: 'Windows', macos: 'macOS', linux: 'Linux', chromeos: 'ChromeOS', android: 'Android', ios: 'iOS/iPadOS', other: 'その他の OS' },
     browsers: { chrome: 'Chrome', edge: 'Edge', firefox: 'Firefox', safari: 'Safari', other: 'その他' },
@@ -35,7 +35,7 @@ export const pwaContent = {
     }
   },
   zh: {
-    title: '渐进式网页应用', intro: 'Capy Canvas 网页版可安装到设备上，供离线使用。',
+    title: '安装网页应用', intro: 'Capy Canvas 网页版可安装到设备上，供离线使用。',
     os: '操作系统', browser: '浏览器', open: '打开网页应用。',
     systems: { windows: 'Windows', macos: 'macOS', linux: 'Linux', chromeos: 'ChromeOS', android: 'Android', ios: 'iOS/iPadOS', other: '其他系统' },
     browsers: { chrome: 'Chrome', edge: 'Edge', firefox: 'Firefox', safari: 'Safari', other: '其他浏览器' },
@@ -52,7 +52,7 @@ export const pwaContent = {
     }
   },
   ko: {
-    title: '프로그레시브 웹 앱', intro: 'Capy Canvas 웹 버전을 설치해 오프라인으로 사용할 수 있습니다.',
+    title: '웹 앱 설치하기', intro: 'Capy Canvas 웹 버전을 설치해 오프라인으로 사용할 수 있습니다.',
     os: '운영체제', browser: '브라우저', open: '웹 앱을 엽니다.',
     systems: { windows: 'Windows', macos: 'macOS', linux: 'Linux', chromeos: 'ChromeOS', android: 'Android', ios: 'iOS/iPadOS', other: '기타' },
     browsers: { chrome: 'Chrome', edge: 'Edge', firefox: 'Firefox', safari: 'Safari', other: '다른 브라우저' },

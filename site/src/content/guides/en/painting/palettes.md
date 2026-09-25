@@ -18,7 +18,7 @@ Select any swatch to make it your painting color. In Sketch, the same swatches a
 
 Below the recent colors is the current palette. Capy Canvas includes a few palettes to start with, and you can switch between them with the palette menu at the bottom of the panel. To add your current color, select the **+** tile at the end of the palette. You can drag swatches to put them in a different order.
 
-To start a fresh palette, open the palette menu and choose **New Palette…**. The same menu can rename or remove a palette. Palettes are kept with your workspace settings, not inside your drawings, so the same palettes are available in every drawing you open.
+To start a fresh palette, open the palette menu and choose **New Palette…**. The same menu can rename or remove a palette. Your palettes aren't stored inside your drawings, so they are available in every drawing you open.
 
 ## Import and export palettes
 

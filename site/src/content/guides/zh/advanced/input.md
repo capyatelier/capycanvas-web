@@ -18,8 +18,8 @@ image: {"light": "/assets/guides/advanced-input-light.webp", "dark": "/assets/gu
 
 打开**Preferences**并选择**Pen & Input**。**Pressure response**决定你需要用多大的力：数值越低，轻压的效果就越明显。**Cursor shape**决定指针在画布上的样子，**Hide cursor when painting**则会在绘画时把指针藏起来，免得碍事。
 
-**Enable stroke prediction**会在最后收到的点之外稍微往前多画一点，帮助线条跟上快速移动的笔。如果笔画末端在急转弯处似乎冲过了头，请降低**Prediction amount**或关闭预测。当浏览器本身能够预测笔画时，**Use browser stroke prediction**会改用浏览器的预测。每次只修改一项设置，每改一次都画同一条曲线来比较。
+**Enable stroke prediction**能帮助线条跟上快速移动的笔。如果笔画末端在急转弯处似乎冲过了头，请降低**Prediction amount**或关闭预测。每次只修改一项设置，每改一次都画同一条曲线来比较。
 
 ## 设置快捷键
 
-打开**Help → Keyboard Shortcuts**，可以看到所有命令及其按键。选择一个命令即可为它设置新的快捷键；如果按键已被占用，Capy Canvas会提醒你。几个实用的默认快捷键：**Ctrl+Z**撤销，按住**Space**拖动来平移，**Ctrl+0**让作品完整显示在屏幕上，**I**切换到吸管，**Q**进入Quick Mask，**Tab**进入Zen模式。在Mac上，凡是用Ctrl的地方请改用Command。
+打开**Help → Keyboard Shortcuts**，可以看到所有命令及其按键。选择一个命令即可为它设置新的快捷键；如果按键已被占用，Capy Canvas会提醒你。几个实用的默认快捷键：**Ctrl+Z**撤销，按住**Space**拖动来平移，**Ctrl+0**让作品完整显示在屏幕上，**I**切换到吸管，**Q**进入Quick Mask，**Tab**进入Zen模式。在Mac上，这些指南中凡是提到Ctrl的地方，都请改用Command。

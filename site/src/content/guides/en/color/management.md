@@ -12,7 +12,7 @@ image: {"light": "/assets/guides/color-management-light.webp", "dark": "/assets/
 
 When you choose **File → New…**, the **Preset** menu offers a few starting points. **Standard drawing** suits most artwork and anything you'll share online. **Wide color** can hold the more vivid colors that many modern screens show, and **Photo editing** keeps extra precision so that strong adjustments don't cause banding in smooth gradients.
 
-**Color space** sets the range of colors the drawing can hold, and **Bit depth** sets how finely each color is stored. You can change both later with **Edit → Convert Color Space…** and **Edit → Change Bit Depth…**, and **File → Document Properties…** shows the settings of the drawing that is open. Photos keep their own color profile when you open them, so there is nothing to set up. You can choose the defaults for new drawings and photos under **Preferences → Color**.
+**Color space** sets the range of colors the drawing can hold, and **Bit depth** sets how finely each color is stored. If you change your mind later, use **Edit → Convert Color Space…** or **Edit → Change Bit Depth…**. Photos keep the colors they were taken with, so there is nothing to set up when you open one.
 
 ## Work in HDR
 

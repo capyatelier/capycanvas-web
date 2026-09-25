@@ -19,8 +19,6 @@ image: {"light": "/assets/guides/illustration-light.webp", "dark": "/assets/guid
 
 튜토리얼은 [스케치](/ko/docs/illustration/draft/), 선화, 마스킹, 렌더링의 네 단계로 이루어지며, 모두 같은 그림에서 진행합니다. 각 단계는 이전 단계를 대체하지 않고 그 위에 새 레이어를 더합니다. 스케치와 컬러 러프는 숨긴 뒤에도 남겨 두는 것이 좋습니다. 나중에 다시 참고하고 싶어질 수도 있기 때문입니다.
 
-모든 단계에는 편집기 스크린샷이 있습니다. 번호가 붙은 테두리는 캡션에서 언급한 조작부를 가리키며, 각 이미지를 원본 크기로 열어 레이어를 더 자세히 살펴볼 수 있습니다.
-
 ## 예제 파일 사용하기
 
 특정 단계부터 시작하고 싶다면 저장된 <a href="/assets/examples/01-sketch.capy" download>스케치</a>, <a href="/assets/examples/02-line-art.capy" download>선화</a>, <a href="/assets/examples/03-base-colors.capy" download>밑색</a>, <a href="/assets/examples/04-finished.capy" download>완성 그림</a> 파일을 <strong>File → Open…</strong>으로 여세요. 사진 편집을 연습할 수 있는 [완성 이미지 PNG](/assets/examples/abstract-study.png)도 있습니다.

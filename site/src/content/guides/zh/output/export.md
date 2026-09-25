@@ -2,7 +2,7 @@
 title: "导出图像"
 description: "把作品另存为PNG、JPEG或TIFF副本，用于分享或打印。"
 purpose: "导出会把你的作品制作成一张普通图像，可以直接发布到网上、发给别人或拿去打印。.capy文件会保持原样，所有图层都还在，因此你随时可以修改作品并再次导出。"
-techniques: ["选择用途预设。", "选择文件格式、色彩配置文件和位深度。", "保存导出的图像。"]
+techniques: ["选择用途预设。", "选择文件格式和尺寸。", "保存导出的图像。"]
 figure: "1：Destination预设。2：格式、色彩配置文件和位深度。3：Transparency，决定空白区域如何保存。"
 related: ["tools/files", "color/management", "filters/image-editing"]
 image: {"light": "/assets/guides/output-export-light.webp", "dark": "/assets/guides/output-export-dark.webp", "alt": "1：Destination预设。2：格式、色彩配置文件和位深度。3：Transparency，决定空白区域如何保存。"}
@@ -16,7 +16,7 @@ image: {"light": "/assets/guides/output-export-light.webp", "dark": "/assets/gui
 
 ## 调整细节
 
-如果想更精细地控制，可以修改Destination下方的设置。**Format**用于在PNG、JPEG和TIFF之间选择。PNG适合边缘清晰或带有透明区域的作品，JPEG则能让照片的文件更小。**Output profile**设置文件的色彩空间，**Bit depth**设置颜色存储的精细程度。
+如果想更精细地控制，可以修改Destination下方的设置。**Format**用于在PNG、JPEG和TIFF之间选择。PNG适合边缘清晰或带有透明区域的作品，JPEG则能让照片的文件更小。**Output profile**和**Bit depth**通常保持Destination设定的值即可。
 
 **Transparency**决定作品中空白区域的处理方式。在支持透明的格式中，你可以保留透明，也可以用白色或黑色填充。**Pixel size**可以生成较小的副本，例如用于网站。如果你喜欢某一组设置，可以把它另存为自己的预设。
 

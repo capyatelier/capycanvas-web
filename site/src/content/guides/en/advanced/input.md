@@ -18,8 +18,8 @@ On a separate drawing tablet, make sure the tablet is mapped to the screen that 
 
 Open **Preferences** and choose **Pen & Input**. **Pressure response** changes how hard you need to press: lower values make light pressure count for more. **Cursor shape** chooses what the pointer looks like over the canvas, and **Hide cursor when painting** keeps it out of the way while you draw.
 
-**Enable stroke prediction** helps the line keep up with a fast-moving pen by drawing a little ahead of the last point it received. If the end of a stroke seems to overshoot a sharp turn, lower **Prediction amount** or turn prediction off. When your browser can predict strokes itself, **Use browser stroke prediction** uses its prediction instead. Change one setting at a time, and draw the same curve after each change.
+**Enable stroke prediction** helps the line keep up with a fast-moving pen. If the end of a stroke seems to overshoot a sharp turn, lower **Prediction amount** or turn prediction off. Change one setting at a time, and draw the same curve after each change.
 
 ## Set up shortcuts
 
-Open **Help → Keyboard Shortcuts** to see every command and its keys. Select a command to give it a new shortcut, and Capy Canvas lets you know if the keys are already in use. A few useful defaults are **Ctrl+Z** to undo, **Space**-drag to pan, **Ctrl+0** to fit the drawing on screen, **I** for the eyedropper, **Q** for Quick Mask, and **Tab** for Zen mode. On a Mac, use Command where you would use Ctrl.
+Open **Help → Keyboard Shortcuts** to see every command and its keys. Select a command to give it a new shortcut, and Capy Canvas lets you know if the keys are already in use. A few useful defaults are **Ctrl+Z** to undo, **Space**-drag to pan, **Ctrl+0** to fit the drawing on screen, **I** for the eyedropper, **Q** for Quick Mask, and **Tab** for Zen mode. On a Mac, use Command wherever these guides say Ctrl.

@@ -12,7 +12,7 @@ image: {"light": "/assets/guides/color-management-light.webp", "dark": "/assets/
 
 <strong>File → New…</strong>を選ぶと、**Preset**メニューにいくつかの出発点が用意されています。**Standard drawing**は、ほとんどのイラストや、オンラインで共有するものに適しています。**Wide color**は最近の多くの画面が表示できる鮮やかな色を扱え、**Photo editing**は精度を高く保つので、強い調整をしてもなめらかなグラデーションにトーンジャンプが出にくくなります。
 
-**Color space**はドキュメントが扱える色の範囲を、**Bit depth**は各色をどれだけ細かく記録するかを決めます。どちらもあとから<strong>Edit → Convert Color Space…</strong>と<strong>Edit → Change Bit Depth…</strong>で変更でき、<strong>File → Document Properties…</strong>で開いているドキュメントの設定を確認できます。写真は開いたときに元のカラープロファイルが保たれるので、特に設定することはありません。新しいドキュメントと写真の初期設定は、**Preferences → Color**で選べます。
+**Color space**はドキュメントが扱える色の範囲を、**Bit depth**は各色をどれだけ細かく記録するかを決めます。あとで変えたくなったら、<strong>Edit → Convert Color Space…</strong>または<strong>Edit → Change Bit Depth…</strong>を使います。写真は撮影したときの色のまま開くので、開くときに設定することは何もありません。
 
 ## HDRで作業する
 

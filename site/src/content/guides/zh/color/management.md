@@ -12,7 +12,7 @@ image: {"light": "/assets/guides/color-management-light.webp", "dark": "/assets/
 
 选择<strong>File → New…</strong>时，**Preset**菜单提供了几个起点。**Standard drawing**适合大多数作品，以及要在网上分享的内容。**Wide color**可以容纳许多现代屏幕能够显示的更鲜艳的颜色，**Photo editing**则会保留额外的精度，避免强烈的调整在平滑的渐变中造成色带。
 
-**Color space**设置作品能够容纳的颜色范围，**Bit depth**设置每种颜色存储的精细程度。以后可以用<strong>Edit → Convert Color Space…</strong>和<strong>Edit → Change Bit Depth…</strong>修改这两项，<strong>File → Document Properties…</strong>则会显示当前打开的作品的设置。照片打开时会保留自己的色彩配置文件，所以无需额外设置。你可以在**Preferences → Color**中为新作品和照片选择默认设置。
+**Color space**设置作品能够容纳的颜色范围，**Bit depth**设置每种颜色存储的精细程度。如果以后改变主意，可以使用<strong>Edit → Convert Color Space…</strong>或<strong>Edit → Change Bit Depth…</strong>。照片会保留拍摄时的颜色，所以打开照片时无需任何设置。
 
 ## 在HDR中工作
 

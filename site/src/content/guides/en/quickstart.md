@@ -10,7 +10,7 @@ image: {"light": "/assets/guides/quickstart-light.webp", "dark": "/assets/guides
 
 ## Open the editor
 
-The quickest way to start is the [Web Demo](https://editor.capycanvas.art/), which runs in your browser. It needs a browser with hardware-accelerated WebGPU, and after your first visit it keeps working even when you are offline. You can also install it as an app; the [download page](/download/) explains how, and it also shows when the desktop and mobile apps will be available.
+The quickest way to start is the [Web Demo](https://editor.capycanvas.art/), which runs in an up-to-date browser such as Chrome, Edge or Safari. After your first visit, it keeps working even when you are offline. You can also install it as an app; the [download page](/download/) explains how.
 
 When the editor opens, choose **Paint** in the workspace switcher at the top of the window. Paint keeps your brushes, colors and layers on screen, which makes it a good place to learn. Then choose **File → New…**, pick a size, and select **Create**.
 

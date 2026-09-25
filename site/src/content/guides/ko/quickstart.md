@@ -10,7 +10,7 @@ image: {"light": "/assets/guides/quickstart-light.webp", "dark": "/assets/guides
 
 ## 편집기 열기
 
-가장 빨리 시작하는 방법은 브라우저에서 실행되는 [Web Demo](https://editor.capycanvas.art/)입니다. 하드웨어 가속 WebGPU를 지원하는 브라우저가 필요하며, 한 번 방문한 뒤에는 오프라인에서도 계속 사용할 수 있습니다. 앱으로 설치할 수도 있습니다. 설치 방법은 [다운로드 페이지](/ko/download/)에서 안내하며, 데스크톱 앱과 모바일 앱을 언제 사용할 수 있는지도 이 페이지에서 확인할 수 있습니다.
+가장 빨리 시작하는 방법은 Chrome, Edge, Safari 같은 최신 브라우저에서 실행되는 [Web Demo](https://editor.capycanvas.art/)입니다. 한 번 방문한 뒤에는 오프라인에서도 계속 사용할 수 있습니다. 앱으로 설치할 수도 있으며, 설치 방법은 [다운로드 페이지](/ko/download/)에서 안내합니다.
 
 편집기가 열리면 창 위쪽의 작업 공간 전환기에서 **Paint**를 선택합니다. Paint는 브러시, 색상, 레이어를 화면에 계속 표시하므로 처음 익히기에 좋습니다. 그런 다음 <strong>File → New…</strong>를 선택하고 크기를 정한 뒤 **Create**를 누릅니다.
 

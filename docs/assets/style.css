@@ -36,7 +36,8 @@ svg { display: block; width: 20px; height: 20px; flex: none; }
 .hero { min-height: 100dvh; padding: 48px 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
 .workspace { display: block; flex: none; width: min(1024px, 100%, calc((100dvh - 232px) * 16 / 9)); overflow: hidden; border-radius: 8px; box-shadow: var(--shadow); }
 .workspace img { display: block; width: 100%; height: auto; aspect-ratio: 16/9; }
-.showcase { position: relative; display: grid; background: var(--surface); }
+.showcase { position: relative; display: grid; background: var(--surface); animation: showcase-breathe 9s ease-in-out infinite; }
+@keyframes showcase-breathe { 50% { transform: scale(1.007); } }
 .showcase-frame { grid-area: 1 / 1; opacity: 0; transform: scale(1.015); transition: opacity .9s ease, transform 1.6s cubic-bezier(.2, .7, .2, 1); }
 .showcase:has(input[value="sketch"]:checked) [data-slide="sketch"],
 .showcase:has(input[value="paint"]:checked) [data-slide="paint"],
@@ -49,7 +50,11 @@ svg { display: block; width: 20px; height: 20px; flex: none; }
 .showcase:has(input[value="paint"]:checked) .showcase-indicator { transform: translateX(100%); }
 .showcase:has(input[value="photo"]:checked) .showcase-indicator { transform: translateX(200%); }
 .home-description { font-size: 15px; line-height: 1.6; color: var(--muted); margin: 32px 0 16px; }
+@supports (corner-shape: squircle) {
+  .showcase-switcher, .showcase-indicator, .showcase-switcher label { corner-shape: squircle; }
+}
 @media (prefers-reduced-motion: reduce) {
+  .showcase { animation: none; }
   .showcase-frame { transform: none; }
 }
 .actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px; }

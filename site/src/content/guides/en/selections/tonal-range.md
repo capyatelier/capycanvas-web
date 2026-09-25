@@ -16,7 +16,7 @@ To pick your own range, choose **Custom**, then click or drag on the part of the
 
 ## Soften the edges
 
-**Softness** decides how gradually the selection fades out between the tones you chose and the tones around them. A high softness gives smooth, natural transitions, which is usually best for photos. **Feather** blurs the edge of the selection across the image as well. Like the other selection tools, you can add to or subtract from a tonal selection with the buttons at the top of the Tool panel.
+**Softness** decides how gradually the selection fades out between the tones you chose and the tones around them. A high softness gives smooth, natural transitions, which is usually best for photos. **Feather** softens the outer edges of the selected areas even more. Like the other selection tools, you can add to or subtract from a tonal selection with the buttons at the top of the Tool panel.
 
 ## Use the selection
 

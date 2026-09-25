@@ -16,7 +16,7 @@ To bring an image into the drawing you already have open, choose **File → Impo
 
 ## Work with several drawings
 
-Every drawing you open or create gets its own tab in the title bar. Click a tab to switch to that drawing, or drag tabs to change their order. A dot next to the name tells you the drawing has changes that haven't been saved yet. When the window is narrow, the tabs fold into a single list, and **File → Drawings…** always shows every open drawing.
+In Paint and Photo, every drawing you open or create gets its own tab at the top of the window. Click a tab to switch to that drawing, or drag tabs to change their order. A dot next to the name tells you the drawing has changes that haven't been saved yet. **File → Drawings…** lists every open drawing, in any workspace.
 
 Close a drawing with the button on its tab or with **File → Close**. If it has unsaved changes, Capy Canvas asks whether you'd like to save it first.
 
@@ -24,6 +24,6 @@ Close a drawing with the button on its tab or with **File → Close**. If it has
 
 Choose **File → Save As…** the first time you save a drawing, and **File → Save** afterwards to update the same file. When you save a photo you opened, Capy Canvas asks where to save a new `.capy` file and leaves the original photo untouched.
 
-While you work, the web editor keeps a recovery copy of each unsaved drawing in your browser. If the browser closes unexpectedly, you'll be asked whether to recover the drawing the next time you open the editor. This is a safety net rather than a replacement for saving, so save your `.capy` files regularly and keep copies of important ones.
+If the browser closes before you've saved, Capy Canvas offers to recover your drawing the next time you open it. This is only a safety net, so save your `.capy` files regularly and keep copies of important ones.
 
 To make an image for sharing or printing, see [Export an image](/docs/output/export/).
