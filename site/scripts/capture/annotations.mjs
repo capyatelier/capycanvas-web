@@ -9,7 +9,7 @@ export async function annotate(b, targets) {
     Object.assign(svg.style,{position:'fixed',inset:'0',width:'100%',height:'100%',pointerEvents:'none',zIndex:'2147483647'});
     const add=(tag,attrs)=>{const node=document.createElementNS(svg.namespaceURI,tag);for(const [key,value]of Object.entries(attrs))node.setAttribute(key,value);svg.append(node);return node;};
     const result=specs.map((spec,index)=>{
-      const nodes=[...document.querySelectorAll(spec.selector)].filter(n=>n.checkVisibility()&&n.getBoundingClientRect().width>0&&(!spec.labels||spec.labels.includes(n.querySelector('.menu-label')?.textContent)));
+      const nodes=[...document.querySelectorAll(spec.selector)].filter(n=>n.checkVisibility()&&n.getBoundingClientRect().width>0&&(!spec.labels||spec.labels.includes(n.querySelector('.menu-label')?.textContent))&&(!spec.text||spec.text.includes(n.textContent.trim())));
       if(!nodes.length)throw Error('Annotation target missing: '+spec.selector);
       const node=nodes[spec.index||0];
       if(!node)throw Error('Annotation target index missing: '+spec.selector);

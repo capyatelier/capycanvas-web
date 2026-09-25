@@ -25,7 +25,7 @@ test('every guide and the home page have complete, verified light/dark captures'
   assert.equal(manifest.partial, false, 'A partial debugging run must not be published');
   assert.equal(manifest.workspace.name, 'Paint');
   assert.deepEqual([manifest.width, manifest.height], [1920, 1080]);
-  const expected = ['workspace', ...docTopics.map(({slug}) => 'guides/' + slug.replaceAll('/', '-'))].flatMap(name => ['light', 'dark'].map(theme => `${name}-${theme}.webp`)).sort();
+  const expected = [...['sketch', 'paint', 'photo'].map(name => 'showcase/' + name), ...docTopics.map(({slug}) => 'guides/' + slug.replaceAll('/', '-'))].flatMap(name => ['light', 'dark'].map(theme => `${name}-${theme}.webp`)).sort();
   assert.deepEqual(manifest.captures.map(capture => capture.file).sort(), expected);
   for (const capture of manifest.captures) {
     const bytes = await readFile(join(root, 'assets', capture.file));
@@ -39,12 +39,8 @@ test('every guide and the home page have complete, verified light/dark captures'
       assert.ok(bounds.x + bounds.width <= 1920 && bounds.y + bounds.height <= 1080, `Visible annotation: ${capture.file}`);
     }
   }
-  if (manifest.retainedHomepage) {
-    const { assets, provenance } = manifest.retainedHomepage;
-    assert.deepEqual(assets.map(entry => entry.file).sort(), ['examples/watercolor-study.capy', 'workspace-dark.webp', 'workspace-light.webp']);
-    assert.ok(provenance.revision && provenance.browser.product && provenance.recipeHashes['capture.mjs'], 'Retained assets keep their original capture provenance');
-    for (const entry of assets) assert.deepEqual([...manifest.captures, ...manifest.examples].find(asset => asset.file === entry.file), entry, `Retained homepage asset is unchanged: ${entry.file}`);
-  }
+  assert.deepEqual(manifest.showcase.map(entry => entry.file).sort(), ['showcase/NDF_4717.capy', 'showcase/house.capy', 'showcase/spring.capy']);
+  for (const entry of manifest.showcase) assert.equal(hash(await readFile(`site/scripts/capture/${entry.file}`)), entry.sha256, `Homepage artwork matches its capture: ${entry.file}`);
   for (const {slug} of docTopics) for (const locale of ['en', 'ja', 'zh', 'ko']) {
     const markdown = await readFile(`site/src/content/guides/${locale}/${slug}.md`, 'utf8');
     const figure = JSON.parse(markdown.match(/^figure: (.+)$/m)[1]);
@@ -61,7 +57,7 @@ test('every guide and the home page have complete, verified light/dark captures'
 
 test('downloadable examples match provenance and contain a painted 1200px abstract study', async () => {
   const manifest = JSON.parse(await readFile(join(root, 'assets/capture.json'), 'utf8'));
-  assert.equal(manifest.examples.length, 8);
+  assert.equal(manifest.examples.length, 7);
   for (const entry of manifest.examples) {
     const bytes = await readFile(join(root, 'assets', entry.file));
     assert.equal(bytes.length, entry.bytes); assert.equal(hash(bytes), entry.sha256);

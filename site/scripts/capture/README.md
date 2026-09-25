@@ -1,10 +1,12 @@
 # Reproduce the editor screenshots
 
 Run from the website repository root. Screenshots are actual Capy Canvas renders:
-1920 × 1080, English editor controls, light and dark appearances. The homepage,
-documentation overview and product README share the unannotated abstract study in
-the shipped **Paint** workspace (`guides/illustration-{light,dark}.webp`). Other guide images add numbered outlines; translated
-captions explain the same controls in each language.
+1920 × 1080, English editor controls, light and dark appearances. The homepage
+showcase has three unannotated slides (`showcase/{sketch,paint,photo}-{light,dark}.webp`)
+that open finished artwork in the Sketch, Paint and Photo workspaces. The
+documentation overview uses the unannotated abstract study in **Paint**
+(`guides/illustration-{light,dark}.webp`). Other guide images add numbered outlines;
+translated captions explain the same controls in each language.
 
 ## Prepare and capture
 
@@ -13,10 +15,10 @@ hardware WebGPU, and (on Linux) Mutter and `dbus-run-session`. The app build scr
 checks its own toolchain requirements. Install website dependencies with `npm ci`.
 
 ```sh
-# Defaults to the tracked HEAD of ../draw. Pin a commit when reproducing a release.
-APP_REPO=../draw APP_REVISION=390c82e4df5c67cd8668b039dfc0aa7192e92f56 npm run capture:prepare
+# Defaults to the tracked HEAD of ../draw. Pin the revision deployed at editor.capycanvas.art.
+APP_REPO=../draw APP_REVISION=b4f4a64eb8554a8788faf244f83d09fae0eeca60 npm run capture:prepare
 npm run capture
-# Refresh guides (including the homepage view), preserving the old watercolor pair/project.
+# Refresh the guides only, keeping the recorded homepage showcase slides.
 CAPTURE_ONLY=docs npm run capture
 npm run check
 ```
@@ -33,7 +35,7 @@ It does not open windows or move the pointer on the user's desktop. The wrapper
 starts its own Mutter process and cleans up that process and its temporary runtime
 directory on exit. `CHROME` selects another executable. `CAPTURE_BROWSER_MODE=native`
 opts into Chrome's native headless mode on systems where it renders WebGPU correctly;
-the watercolor-study pixel check rejects a black or missing canvas.
+pixel checks on the overview and showcase images reject a black or missing canvas.
 
 Chrome uses software Canvas2D for image decoding and tiny UI previews, while the
 editor's painting and effects remain hardware WebGPU. This avoids blank image
@@ -56,16 +58,22 @@ of the package served by a URL.
   Ribbon, Disc and Block use teal, sage, ochre and terracotta, with dark blue ink
   and cream highlights. Pencil, G-Pen, Paintbrush, Watercolor Wash and Airbrush
   produce the line work, hatching and shading in the actual editor.
-- `references.mjs` stages individual tool and workflow examples. Image import uses
-  the real file input, then checks painted pixels in a real PNG export. The imported
-  image/effect project is also saved, reopened and checked for its layer structure.
+- `references.mjs` stages individual tool and workflow examples. The photo-editing
+  scenes open the exported abstract study as an image, check painted pixels in a real
+  PNG export, then save, reopen and check the image/effect project.
+- `showcase.mjs` opens the homepage artwork from `showcase/*.capy` (an ink drawing,
+  an oil painting and a photograph supplied by Capy Atelier), frames it in the
+  matching workspace, and adds the Photo slide's Curves and Vibrance layers.
 - `annotations.mjs` injects an SVG overlay above the app. It measures visible DOM
   targets and clips outlines to their containers. An HTML popover keeps the overlay
   above modal dialogs without changing the app's controls or painting. Numbers are
   language-neutral; `figure` and `image.alt` in each guide must match them.
 
 The browser file-picker transport is replaced with an in-memory file store so an
-OS save dialog does not block automation. The app still serializes and reopens its
+OS save dialog does not block automation. PNG saves go through the real **Export
+image** dialog. Each new or opened drawing adds a title-bar tab, so the recipes close
+the other drawings after saving them, keeping one drawing in each screenshot unless
+a scene shows tabs on purpose. The app still serializes and reopens its
 own `.capy` data and produces the PNG bytes. Neither UI screenshots nor artwork are
 replaced with fabricated DOM or a separate bitmap. The illustration is a scripted
 teaching example.
@@ -74,18 +82,14 @@ teaching example.
 
 Commit the recipes, these public assets, and rebuilt `docs/`:
 
-- `site/public/assets/workspace-{light,dark}.webp`: unannotated watercolor captures,
-  retained at their old homepage URLs for existing links.
-- `site/public/assets/guides/`: 25 guide pairs, including the four tutorial stages.
+- `site/public/assets/showcase/`: the three homepage slides in both appearances.
+- `site/public/assets/guides/`: 30 guide pairs, including the four tutorial stages.
 - `site/public/assets/examples/`: four tutorial projects, the abstract-study PNG,
-  watercolor project, and imported-image project/PNG.
+  and the edited-image project/PNG.
 - `site/public/assets/capture.json`: source revision, applied source corrections,
   app hashes, recipe hashes, browser version, dimensions, screenshot hashes,
-  annotation targets/bounds, and example-file hashes. Documentation-only runs retain
-  the old watercolor assets byte-for-byte and record their original environment and
-  recipe hashes under the legacy `retainedHomepage` field. The manifest's legacy
-  `screenshots` list also names that pair; the current homepage shares the
-  `guides/illustration` entries in `captures`.
+  annotation targets/bounds, example-file hashes, and the hashes of the showcase
+  artwork. Documentation-only runs keep the recorded showcase slides byte-for-byte.
 
 `capture-compatibility.mjs` lists any required source corrections explicitly.
 The current baseline includes the WGSL hash-expression correction upstream and
@@ -95,9 +99,9 @@ must be applied only to the isolated source archive and recorded in provenance.
 Do not describe a corrected build as an unmodified checkout.
 
 The capture sequence reapplies each appearance once after its CSS palette is
-active. This refreshes the color wheel's canvas text, which this app revision
-otherwise draws with the preceding theme's ink. It uses the normal editor action
-without altering app source or screenshot pixels.
+active, so canvas-drawn labels such as the color wheel's readout use the current
+theme. It uses the normal editor action without altering app source or screenshot
+pixels.
 
 Reproduction means the same source, actions, artwork and composition. GPU, fonts,
 Chrome versions and input timing can change individual screenshot bytes. Use the

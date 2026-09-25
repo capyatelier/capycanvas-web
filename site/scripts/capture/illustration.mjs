@@ -23,9 +23,10 @@ export async function illustration(e, record, directory) {
   await e.newDocument(1200, 1200);
   await e.layer({ op: 'rename', id: await e.active(), name: 'Color rough' });
   for (const [name, shape] of Object.entries(shapes)) {
-    await e.brush(4, 80, colors[name], .45);
-    await e.layer({ op: 'tool', tool: 'lasso_fill' }); await e.draw(shape);
+    await e.brush(4, 80, colors[name]);
+    await e.lasso(shape); await e.invoke('fill_selection'); await e.invoke('deselect');
   }
+  await e.send({ type: 'set_layer_opacity', opacity: .5 });
   await e.add('Sketch'); await e.brush(2, 8, colors.ink, .8);
   for (const d of ink) await e.draw(d, { taper: true });
   await e.brush(2, 5, colors.sage, .6);
@@ -43,7 +44,7 @@ export async function illustration(e, record, directory) {
   await record('illustration-ink', [{ selector: '#layer-rows' }, { selector: '.navigator-buttons' }, { selector: '.tool-subtools' }]);
 
   await e.visible('Sketch', false); await e.select('Sketch');
-  // Full paint behind each lasso mask lets later white mask strokes reveal more.
+  // Full paint behind each lasso mask lets later mask strokes reveal more.
   for (const [name, key] of [['Block', 'block'], ['Disc', 'disc'], ['Ribbon', 'ribbon']]) {
     await e.add(name); await e.brush(4, 40, colors[key]);
     await e.lasso(shapes[key]);
@@ -52,7 +53,7 @@ export async function illustration(e, record, directory) {
   }
   await e.select('Ribbon', true); await e.brush(1, 20, '#ffffff');
   await e.save('03-base-colors.capy', directory);
-  await record('illustration-mask', [{ selector: '.layer-thumbnail.editing-target' }, { selector: '#layer-rows' }, { selector: '.color-panel' }]);
+  await record('illustration-mask', [{ selector: '.layer-thumbnail.editing-target' }, { selector: '#layer-rows' }, { selector: '[data-command="eraser"]' }]);
 
   await e.select('Ribbon'); await e.add('Ribbon shading', { clipped: true });
   await e.brush(20, 100, colors.ink, .65);
@@ -78,5 +79,5 @@ export async function illustration(e, record, directory) {
   await e.save('04-finished.capy', directory);
   await e.save('abstract-study.png', directory);
   await record('illustration-render', [{ selector: '#layer-rows' }, { selector: '.layer-flags' }, { selector: '#layer-opacity' }]);
-  await record('illustration', []);
+  await record('illustration', [], { check: 'paper' });
 }
