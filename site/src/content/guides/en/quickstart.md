@@ -16,9 +16,9 @@ When the editor opens, choose **Paint** in the workspace switcher at the top of 
 
 ## Make a first stroke
 
-Choose the **Pencil** tool on the left, then pick one of the pencils in **Tool Set**. Draw a line that starts lightly, presses harder in the middle and lightens again at the end. If your pen reports pressure, the line gets thicker and darker where you pressed harder.
+Choose the **Pencil** tool on the left, then pick one of the pencils in **Tool Set**. Draw with a pen or a mouse; on a touch screen, your fingers move the view instead of painting. Draw a line that starts lightly, presses harder in the middle and lightens again at the end. If your pen reports pressure, the line gets thicker and darker where you pressed harder.
 
-If every line looks the same, the pen may not be sending pressure to the browser. The [pen and touch guide](/docs/advanced/input/) walks through what to check before you change any brush settings. Press **Ctrl+Z** to undo test marks you don't want to keep.
+If every line looks the same, the pen may not be sending pressure to the browser. The [pen and touch guide](/docs/advanced/input/) walks through what to check before you change any brush settings. Press **Ctrl+Z**, or the undo button in the toolbar, to remove test marks you don't want to keep, and **Ctrl+Shift+Z** to redo.
 
 ## Save your work
 

@@ -22,6 +22,6 @@ The four buttons at the top of the **Tool** panel choose what happens when you m
 
 ## Use the selection
 
-With a selection active, paint freely: strokes only land inside it. Choose **Edit → Fill selection** to fill it with the current color, or turn it into a [layer mask](/docs/layers/masks/). The **Select** menu can also invert the selection, grow or shrink it by a few pixels, or bring back the last selection with **Reselect**.
+To select everything painted on a layer, hold **Ctrl** and click the layer's thumbnail. With a selection active, paint freely: strokes only land inside it. Choose **Edit → Fill selection** to fill it with the current color, or turn it into a [layer mask](/docs/layers/masks/). The **Select** menu can also invert the selection, grow or shrink it by a few pixels, or bring back the last selection with **Reselect**.
 
 When you're finished, choose **Select → Deselect pixels** so your next strokes can go anywhere again.

@@ -15,7 +15,7 @@ export async function annotate(b, targets) {
       if(!node)throw Error('Annotation target index missing: '+spec.selector);
       let r=node.getBoundingClientRect();
       if(spec.union){const boxes=nodes.map(n=>n.getBoundingClientRect());const x=Math.min(...boxes.map(r=>r.left)),y=Math.min(...boxes.map(r=>r.top)),right=Math.max(...boxes.map(r=>r.right)),bottom=Math.max(...boxes.map(r=>r.bottom));r={left:x,top:y,right,bottom};}
-      if(spec.documentRect){const camera=layerApp.state().camera;if(camera.rotation!==0||camera.flipped.some(Boolean))throw Error('Document callout requires an unrotated view');const [x,y,w,h]=spec.documentRect;r={left:camera.translation[0]+x*camera.zoom,top:camera.translation[1]+y*camera.zoom,right:camera.translation[0]+(x+w)*camera.zoom,bottom:camera.translation[1]+(y+h)*camera.zoom};}
+      if(spec.documentRect){const camera=layerApp.state().camera;if(camera.rotation!==0||camera.flipped.some(Boolean))throw Error('Document callout requires an unrotated view');const [x,y,w,h]=spec.documentRect;const ratio=camera.viewport[0]/innerWidth;r={left:(camera.translation[0]+x*camera.zoom)/ratio,top:(camera.translation[1]+y*camera.zoom)/ratio,right:(camera.translation[0]+(x+w)*camera.zoom)/ratio,bottom:(camera.translation[1]+(y+h)*camera.zoom)/ratio};}
       let left=r.left,top=r.top,right=r.right,bottom=r.bottom;
       for(let p=node.parentElement;p;p=p.parentElement){const style=getComputedStyle(p),box=p.getBoundingClientRect();
         if(/hidden|clip|auto|scroll/.test(style.overflowX)){left=Math.max(left,box.left);right=Math.min(right,box.right);}

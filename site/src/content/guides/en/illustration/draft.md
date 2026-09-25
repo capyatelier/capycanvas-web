@@ -12,7 +12,7 @@ image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/asset
 
 Add a new layer and name it **Sketch**. Choose the **Pencil** tool and one of the pencils in Tool Set. Start with light lines to find the disc, the curved ribbon and the tilted block, then press harder to firm up the outlines you want to keep. Set the pencil's size in the Tool panel.
 
-Leave a little space around the shapes. It makes the later stages easier, because you will be able to see clearly where each shape ends.
+Leave a little space around the shapes. It makes the later stages easier, because you will be able to see clearly where each shape ends. Now and then, select **Flip view horizontally** in the top toolbar to see the sketch mirrored; mistakes in proportion are much easier to spot that way.
 
 ## 2. Fix a part that's not quite right
 

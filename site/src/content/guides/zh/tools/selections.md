@@ -22,6 +22,6 @@ image: {"light": "/assets/guides/tools-selections-light.webp", "dark": "/assets/
 
 ## 使用选区
 
-选区激活时可以放心绘画，笔画只会落在选区之内。选择**Edit → Fill selection**可以用当前颜色填充选区，你也可以把选区转换为[图层蒙版](/zh/docs/layers/masks/)。**Select**菜单还可以反选、把选区扩展或收缩几个像素，或者用**Reselect**恢复上一次的选区。
+要选中图层上画过的所有内容，请按住**Ctrl**并点击该图层的缩略图。选区激活时可以放心绘画，笔画只会落在选区之内。选择**Edit → Fill selection**可以用当前颜色填充选区，你也可以把选区转换为[图层蒙版](/zh/docs/layers/masks/)。**Select**菜单还可以反选、把选区扩展或收缩几个像素，或者用**Reselect**恢复上一次的选区。
 
 完成后，选择**Select → Deselect pixels**，让接下来的笔画可以画到任何地方。

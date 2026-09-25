@@ -138,8 +138,8 @@ npm run check
 
 The capture pipeline builds a tracked product revision in an isolated directory,
 then uses headed Chrome on a private Wayland display on Linux. It captures the
-three homepage showcase slides and light/dark images for all 30 guides at
-1920 × 1080. Numbered outlines identify real controls, and the tutorial provides
+three homepage showcase slides and light/dark images for all 30 guides with a
+1920 × 1080 layout at twice the pixel density (3840 × 2160 pixels). Numbered outlines identify real controls, and the tutorial provides
 editable `.capy` examples drawn through actual editor actions and browser pen input.
 Pin `APP_REVISION` to the revision deployed at editor.capycanvas.art so the
 screenshots match the live editor.

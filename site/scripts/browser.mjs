@@ -4,7 +4,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
 // A small Chrome DevTools Protocol client for browser checks and real app captures.
-export async function browser({ gpu = false, headless = true, gpuArgs, width = 1440, height = 1000 } = {}) {
+export async function browser({ gpu = false, headless = true, gpuArgs, width = 1440, height = 1000, scale = 1 } = {}) {
   const profile = await mkdtemp(join(tmpdir(), 'capy-site-chrome-'));
   const args = ['--remote-debugging-pipe', `--user-data-dir=${profile}`,
     '--no-first-run', '--no-default-browser-check', '--force-color-profile=srgb',
@@ -63,7 +63,7 @@ export async function browser({ gpu = false, headless = true, gpuArgs, width = 1
     ({ sessionId: session } = await call('Target.attachToTarget', { targetId: target.targetId, flatten: true }, null));
     await call('Runtime.enable'); await call('Page.enable');
     await call('Emulation.setFocusEmulationEnabled', { enabled: true });
-    await call('Emulation.setDeviceMetricsOverride', { width, height, deviceScaleFactor: 1, mobile: false });
+    await call('Emulation.setDeviceMetricsOverride', { width, height, deviceScaleFactor: scale, mobile: false });
   } catch (error) { await close(); throw error; }
   return { call, evaluate, until, close, errors,
     async navigate(url) { await call('Page.navigate', { url }); await until(`document.readyState === 'complete' && location.href !== 'about:blank'`); },

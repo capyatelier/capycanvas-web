@@ -2,7 +2,7 @@
 title: "Color and eyedropper"
 description: "Choose paint colors, switch between two colors, and pick colors from your drawing."
 purpose: "The Color panel sets the color your brushes paint with. You can keep two colors ready to swap between, jump straight to black or white, and pick up any color that is already in your drawing."
-techniques: ["Choose a color on the color wheel.", "Use the foreground, background, black and white swatches.", "Pick a color from the drawing with the Eyedropper."]
+techniques: ["Choose a color on the color wheel.", "Use the foreground, background, black and white swatches.", "Touch and hold the canvas to pick a color from your drawing."]
 figure: "1: Color wheel. 2: Foreground, background, transparent, black and white paint. 3: Eyedropper tool."
 related: ["painting/palettes", "painting/brushes", "tools/gradients"]
 image: {"light": "/assets/guides/painting-color-light.webp", "dark": "/assets/guides/painting-color-dark.webp", "alt": "1: Color wheel. 2: Foreground, background, transparent, black and white paint. 3: Eyedropper tool."}
@@ -22,6 +22,10 @@ The small black and white circles let you paint with pure black or white straigh
 
 ## Pick a color from the drawing
 
-Choose the **Eyedropper** tool, or press **I**, then click the part of the drawing whose color you want. By default it picks the color you see on screen, with all layers combined. You can switch it to read only the selected layer, and choose a larger sample size to average out texture or noise. On a touch screen, you can also touch and hold the canvas to pick a color.
+The quickest way to pick up a color from your drawing is to touch and hold the canvas with one finger. After a moment, a magnifying loupe appears just above your finger, so you can see exactly which color is under the crosshair. Slide to the color you want and lift your finger to pick it. While you are holding, tap a second finger to switch between the color you see and the color on the selected layer alone.
+
+With a mouse or pen, press **I**, or select the color picker button at the edge of the screen in Sketch. The same loupe follows the pointer. Click with the mouse, or touch the canvas with the pen and lift it, to pick the color, and you go straight back to the brush you were using. Press **Escape** or tap with a finger if you change your mind.
+
+In Paint and Photo you can also choose the **Eyedropper** tool from the toolbar. Its settings choose whether it picks the color you see or only the selected layer's color, and a larger **Sample size** averages out texture or noise.
 
 To keep colors for later, add them to a palette in [Palettes](/docs/painting/palettes/).

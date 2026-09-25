@@ -12,7 +12,7 @@ image: {"light": "/assets/guides/tools-files-light.webp", "dark": "/assets/guide
 
 选择<strong>File → Open…</strong>可以打开`.capy`文件。照片和其他图像也可以用同样的方式打开，包括JPEG、PNG、TIFF、WebP、HEIC、AVIF和OpenEXR文件。照片会以原始尺寸作为一幅新作品打开，颜色也会保持拍摄时的样子。
 
-如果要把图像加入当前已打开的作品，请改用<strong>File → Import Image as Layer…</strong>，或者直接把图像文件拖到画布上。[编辑照片](/zh/docs/filters/image-editing/)更详细地介绍了这两种方式。
+如果要把图像加入当前已打开的作品，请改用<strong>File → Import Image as Layer…</strong>，或者直接把图像文件拖到画布上。你也可以在其他应用中复制一张图像，然后按**Ctrl+V**粘贴进来，添加参考图时这样很方便。[编辑照片](/zh/docs/filters/image-editing/)更详细地介绍了这两种方式。
 
 ## 同时处理多幅作品
 

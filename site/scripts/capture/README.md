@@ -1,7 +1,8 @@
 # Reproduce the editor screenshots
 
 Run from the website repository root. Screenshots are actual Capy Canvas renders:
-1920 × 1080, English editor controls, light and dark appearances. The homepage
+a 1920 × 1080 layout at twice the pixel density (3840 × 2160 pixels), English
+editor controls, light and dark appearances. The homepage
 showcase has three unannotated slides (`showcase/{sketch,paint,photo}-{light,dark}.webp`)
 that open finished artwork in the Sketch, Paint and Photo workspaces. The
 documentation overview uses the unannotated abstract study in **Paint**

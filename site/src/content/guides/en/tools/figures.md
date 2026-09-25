@@ -20,6 +20,6 @@ In the **Tool** panel, **Line width** sets how thick the outline is, and **Opaci
 
 ## Draw the shape
 
-Drag across the canvas to draw the shape. Hold **Shift** while you drag to make a perfect square or circle. When you let go, the shape is painted onto the layer. If it isn't quite right, undo and draw it again.
+Drag across the canvas to draw the shape. Hold **Shift** while you drag to make a perfect square or circle, or to keep a line at 45° angles. When you let go, the shape is painted onto the layer. If it isn't quite right, undo and draw it again.
 
 A selection limits where the shape can appear, just as it does for a brush. For lots of freehand lines that follow the same direction, such as hatching or perspective lines, [Rulers and snapping](/docs/tools/rulers/) is a better fit.

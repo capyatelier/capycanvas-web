@@ -51,9 +51,10 @@ export async function editor(b) {
   };
   const frame = async (zoom, [x, y]) => {
     const camera = await read('layerApp.state().camera');
+    const target = zoom * camera.viewport[0] / await read('innerWidth');
     const from = [camera.translation[0] + x * camera.zoom, camera.translation[1] + y * camera.zoom];
-    await b.evaluate(`layerApp.app.gesture(${from[0]},${from[1]},${camera.viewport[0] / 2},${camera.viewport[1] / 2},${zoom / camera.zoom},0);layerApp.wake();void 0`);
-    await wait(`Math.abs(layerApp.state().camera.zoom-${zoom})<.001`);
+    await b.evaluate(`layerApp.app.gesture(${from[0]},${from[1]},${camera.viewport[0] / 2},${camera.viewport[1] / 2},${target / camera.zoom},0);layerApp.wake();void 0`);
+    await wait(`Math.abs(layerApp.state().camera.zoom-${target})<.001`);
     await b.settle(); await b.settle();
   };
   const active = () => read('layerApp.state().layer_tools.editing_layer.id');
@@ -88,11 +89,12 @@ export async function editor(b) {
   const stroke = async (points, { pressure = .65, taper = false, settleEvery = 10 } = {}) => {
     const camera = await read('layerApp.state().camera');
     assert.equal(camera.rotation, 0); assert.deepEqual(camera.flipped, [false, false]);
-    const obstructed = await read(`(()=>{const points=${JSON.stringify(points)},camera=${JSON.stringify(camera)};return points.map(([x,y])=>[camera.translation[0]+x*camera.zoom,camera.translation[1]+y*camera.zoom]).map(([x,y])=>({x,y,node:document.elementFromPoint(x,y)})).filter(p=>p.node?.id!=='canvas').map(p=>({x:p.x,y:p.y,element:p.node?.outerHTML.slice(0,240)})).slice(0,3)})()`);
+    const ratio = camera.viewport[0] / await read('innerWidth');
+    const obstructed = await read(`(()=>{const points=${JSON.stringify(points)},camera=${JSON.stringify(camera)},ratio=${ratio};return points.map(([x,y])=>[(camera.translation[0]+x*camera.zoom)/ratio,(camera.translation[1]+y*camera.zoom)/ratio]).map(([x,y])=>({x,y,node:document.elementFromPoint(x,y)})).filter(p=>p.node?.id!=='canvas').map(p=>({x:p.x,y:p.y,element:p.node?.outerHTML.slice(0,240)})).slice(0,3)})()`);
     assert.deepEqual(obstructed, [], 'Pen path is on the canvas, clear of panels and dialogs');
     for (let i = 0; i < points.length; i++) {
       const t = i / (points.length - 1), [x, y] = points[i];
-      const position = { x: camera.translation[0] + x * camera.zoom, y: camera.translation[1] + y * camera.zoom };
+      const position = { x: (camera.translation[0] + x * camera.zoom) / ratio, y: (camera.translation[1] + y * camera.zoom) / ratio };
       assert.ok(position.x >= 0 && position.x < 1920 && position.y >= 0 && position.y < 1080, `Point inside viewport: ${JSON.stringify(position)}`);
       await b.call('Input.dispatchMouseEvent', { type: i === 0 ? 'mousePressed' : i === points.length - 1 ? 'mouseReleased' : 'mouseMoved', ...position,
         button: 'left', buttons: i === points.length - 1 ? 0 : 1, clickCount: i === 0 ? 1 : 0, pointerType: 'pen', force: i === points.length - 1 ? 0 : taper ? .08 + pressure * Math.sin(Math.PI * t) ** .7 : pressure });

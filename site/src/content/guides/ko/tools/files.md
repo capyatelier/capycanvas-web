@@ -12,7 +12,7 @@ image: {"light": "/assets/guides/tools-files-light.webp", "dark": "/assets/guide
 
 <strong>File → Open…</strong>을 선택해 `.capy` 파일을 엽니다. 사진과 다른 이미지도 같은 방법으로 열 수 있으며, JPEG, PNG, TIFF, WebP, HEIC, AVIF, OpenEXR 파일을 지원합니다. 사진은 원래 크기의 새 그림으로 열리고, 색은 촬영했을 때 그대로 유지됩니다.
 
-이미 열려 있는 그림에 이미지를 넣으려면 대신 <strong>File → Import Image as Layer…</strong>를 선택하거나, 이미지 파일을 캔버스로 드래그합니다. 두 방법 모두 [사진 편집하기](/ko/docs/filters/image-editing/)에서 더 자세히 설명합니다.
+이미 열려 있는 그림에 이미지를 넣으려면 대신 <strong>File → Import Image as Layer…</strong>를 선택하거나, 이미지 파일을 캔버스로 드래그합니다. 다른 앱에서 이미지를 복사해 **Ctrl+V**로 붙여 넣을 수도 있어, 참고 이미지를 넣을 때 편리합니다. 두 방법 모두 [사진 편집하기](/ko/docs/filters/image-editing/)에서 더 자세히 설명합니다.
 
 ## 여러 그림으로 작업하기
 

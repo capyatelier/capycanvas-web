@@ -16,7 +16,7 @@ Click a layer's thumbnail to select it. The selected layer is the one your brush
 
 ## Hide, reorder and fade
 
-Click the eye next to a layer to hide it. Hiding keeps everything on the layer, so you can bring it back at any time. Drag a layer up or down to change its place in the stack. With a mouse you can drag straight away; with a pen or finger, press and hold the layer for a moment first, or drag it by its grip.
+Click the eye next to a layer to hide it. Hiding keeps everything on the layer, so you can bring it back at any time. Drag a layer up or down to change its place in the stack. With a mouse you can drag straight away; with a pen or finger, press and hold the layer for a moment first, or drag it by its grip. On a touch screen, swipe a layer to the left to delete it.
 
 The slider above the list sets the opacity of the whole layer, which fades everything already painted on it. The menu beside it sets the blend mode, which changes how the layer's colors mix with the layers below; **Normal** is the right choice for most layers. [Groups and blending](/docs/layers/groups/) shows a few useful blend modes.
 

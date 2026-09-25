@@ -161,7 +161,7 @@ image: {"light": "/assets/guides/example-light.webp", "dark": "/assets/guides/ex
 ```
 
 Put public captures under `public/assets/guides/`. Include light and dark versions
-at 1920 × 1080. Numbered annotations must match both `figure` and `image.alt` in all
+with a 1920 × 1080 layout captured at twice the pixel density (3840 × 2160 pixels). Numbered annotations must match both `figure` and `image.alt` in all
 four translations. The full-size link follows the selected appearance with JS;
 without JS it opens the light image while the inline picture still follows CSS. Ordinary Markdown images also work within the text. Use
 several captures of the same illustration for the four phases; show the active

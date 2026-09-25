@@ -2,7 +2,7 @@
 title: "图层组与混合"
 description: "把相关图层放在一起，并改变它们颜色的组合方式。"
 purpose: "作品越画越复杂时，图层组可以把相关图层放在一起，让列表保持清晰易读。混合模式会改变图层颜色与下方图层的混合方式，适合用来画阴影、高光和罩色。"
-techniques: ["把相关图层放进一个组。", "在阴影图层上尝试混合模式。", "保持图层可编辑，而不是合并它们。"]
+techniques: ["把相关图层放进一个组。", "在阴影图层上尝试混合模式。", "让较长的图层列表保持整洁。"]
 figure: "1：图层堆栈。2：混合模式。3：New group按钮。"
 related: ["layers/basics", "layers/masks", "filters/overview"]
 image: {"light": "/assets/guides/layers-groups-light.webp", "dark": "/assets/guides/layers-groups-dark.webp", "alt": "1：图层堆栈。2：混合模式。3：New group按钮。"}
@@ -20,8 +20,8 @@ image: {"light": "/assets/guides/layers-groups-light.webp", "dark": "/assets/gui
 
 隐藏再显示该图层，就能比较效果。如果效果太强，请降低图层的不透明度，而不是重新绘制。
 
-## 保持可编辑
+## 保持列表整洁
 
-为了缩短列表，你可能很想合并图层；但图层组同样能让列表保持整洁，而且每个图层都仍然可以编辑。如果其他应用需要一张合并后的单层图像，请[导出](/zh/docs/output/export/)一份副本，并保留包含所有图层的`.capy`文件。
+图层组能让较长的列表保持整洁，同时每个图层都仍然可以编辑；暂时不处理的组还可以折叠起来。如果其他应用需要一张合并后的单层图像，请[导出](/zh/docs/output/export/)一份副本，并保留包含所有图层的`.capy`文件。
 
 对于想要不断调整的颜色修改（例如亮度或饱和度），请使用[滤镜与调整](/zh/docs/filters/overview/)中的滤镜图层，而不是把修改直接画进图层里。

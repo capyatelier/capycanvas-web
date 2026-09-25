@@ -49,7 +49,7 @@ export const docsUI = {
         },
         "workspace": {
           "title": "Your workspace",
-          "text": "Sketch, Paint and Photo each arrange the workspace for a different kind of work, and every tool and panel can be moved exactly how you like it. And if you just want a blank canvas with no distractions, click the Capybara to enter Zen mode!",
+          "text": "Capy Canvas comes with familiar layouts for sketching, painting and photo editing, and every tool and panel can be moved exactly how you like it. And if you just want a blank canvas with no distractions, click the Capybara to enter Zen mode!",
           "link": "Workspaces and canvas"
         },
         "input": {
@@ -130,7 +130,7 @@ export const docsUI = {
         },
         "workspace": {
           "title": "自分のワークスペース",
-          "text": "Sketch、Paint、Photoの3つのワークスペースは、それぞれ異なる作業に合わせて配置され、ツールやパネルはすべて好きな位置に動かせます。気を散らすもののない、まっさらなキャンバスだけが欲しいときは、カピバラをクリックしてZenモードへ！",
+          "text": "Capy Canvasには、スケッチ、ペイント、写真編集のためのなじみやすいレイアウトが用意されていて、ツールやパネルはすべて好きな位置に動かせます。気を散らすもののない、まっさらなキャンバスだけが欲しいときは、カピバラをクリックしてZenモードへ！",
           "link": "ワークスペースとキャンバス"
         },
         "input": {
@@ -211,7 +211,7 @@ export const docsUI = {
         },
         "workspace": {
           "title": "你的工作区",
-          "text": "Sketch、Paint和Photo三个工作区分别为不同的工作而布置，每个工具和面板都可以按你的喜好移动。如果你只想要一张空白画布，不受任何干扰，点击水豚就能进入Zen模式！",
+          "text": "Capy Canvas为速写、绘画和照片编辑准备了熟悉的布局，每个工具和面板都可以按你的喜好移动。如果你只想要一张空白画布，不受任何干扰，点击水豚就能进入Zen模式！",
           "link": "工作区与画布"
         },
         "input": {
@@ -292,7 +292,7 @@ export const docsUI = {
         },
         "workspace": {
           "title": "나만의 작업 공간",
-          "text": "Sketch, Paint, Photo 세 가지 작업 공간은 각각 다른 작업에 맞게 배치되어 있고, 모든 도구와 패널을 원하는 위치로 옮길 수 있습니다. 방해 요소 없이 빈 캔버스만 보고 싶다면, 카피바라를 클릭해 Zen 모드로 들어가 보세요!",
+          "text": "Capy Canvas에는 스케치, 페인팅, 사진 편집을 위한 익숙한 레이아웃이 준비되어 있고, 모든 도구와 패널을 원하는 위치로 옮길 수 있습니다. 방해 요소 없이 빈 캔버스만 보고 싶다면, 카피바라를 클릭해 Zen 모드로 들어가 보세요!",
           "link": "작업 공간과 캔버스"
         },
         "input": {

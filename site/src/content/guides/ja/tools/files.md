@@ -12,7 +12,7 @@ image: {"light": "/assets/guides/tools-files-light.webp", "dark": "/assets/guide
 
 <strong>File → Open…</strong>を選ぶと、`.capy`ファイルを開けます。写真やその他の画像も同じ方法で開けます。対応している形式は、JPEG、PNG、TIFF、WebP、HEIC、AVIF、OpenEXRなどです。写真は元のサイズのまま新しいドキュメントとして開き、色も撮影したときのまま保たれます。
 
-すでに開いているドキュメントに画像を取り込むには、代わりに<strong>File → Import Image as Layer…</strong>を選ぶか、画像ファイルをキャンバスにドラッグします。どちらの方法も、[写真を編集する](/ja/docs/filters/image-editing/)で詳しく説明しています。
+すでに開いているドキュメントに画像を取り込むには、代わりに<strong>File → Import Image as Layer…</strong>を選ぶか、画像ファイルをキャンバスにドラッグします。ほかのアプリで画像をコピーし、**Ctrl+V**で貼り付けることもできます。資料用の画像を取り込むときに便利です。どちらの方法も、[写真を編集する](/ja/docs/filters/image-editing/)で詳しく説明しています。
 
 ## 複数のドキュメントを扱う
 

@@ -24,15 +24,15 @@ test('every guide and the home page have complete, verified light/dark captures'
   const manifest = JSON.parse(await readFile(join(root, 'assets/capture.json'), 'utf8'));
   assert.equal(manifest.partial, false, 'A partial debugging run must not be published');
   assert.equal(manifest.workspace.name, 'Paint');
-  assert.deepEqual([manifest.width, manifest.height], [1920, 1080]);
+  assert.deepEqual([manifest.width, manifest.height, manifest.scale], [1920, 1080, 2], 'A 1920 × 1080 layout captured at twice the pixel density');
   const expected = [...['sketch', 'paint', 'photo'].map(name => 'showcase/' + name), ...docTopics.map(({slug}) => 'guides/' + slug.replaceAll('/', '-'))].flatMap(name => ['light', 'dark'].map(theme => `${name}-${theme}.webp`)).sort();
   assert.deepEqual(manifest.captures.map(capture => capture.file).sort(), expected);
   for (const capture of manifest.captures) {
     const bytes = await readFile(join(root, 'assets', capture.file));
     assert.equal(bytes.length, capture.bytes);
     assert.equal(hash(bytes), capture.sha256, `Capture has changed without updated provenance: ${capture.file}`);
-    assert.deepEqual(dimensions(bytes), [1920, 1080]);
-    assert.ok(bytes.length > 10000 && bytes.length < 500000, `WebP size: ${capture.file}`);
+    assert.deepEqual(dimensions(bytes), [3840, 2160]);
+    assert.ok(bytes.length > 10000 && bytes.length < 900000, `WebP size: ${capture.file}`);
     assert.deepEqual(capture.annotations.map(item => item.number), Array.from({length:capture.annotations.length}, (_,i) => i+1));
     for (const {bounds} of capture.annotations) {
       assert.ok(bounds.x >= 0 && bounds.y >= 0 && bounds.width > 0 && bounds.height > 0);

@@ -131,7 +131,7 @@ test('GitHub Pages output, sitemap, error page and distributable notices',async(
 });
 test('real screenshots are distinct, compressed WebP images with provenance',async()=>{
   const images=await Promise.all(['light','dark'].map(t=>readFile(join(root,`assets/guides/illustration-${t}.webp`))));
-  for(const data of images) { assert.equal(data.subarray(0,4).toString(),'RIFF'); assert.equal(data.subarray(8,12).toString(),'WEBP'); assert.ok(data.length>10000&&data.length<500000); }
+  for(const data of images) { assert.equal(data.subarray(0,4).toString(),'RIFF'); assert.equal(data.subarray(8,12).toString(),'WEBP'); assert.ok(data.length>10000&&data.length<900000); }
   assert.notDeepEqual(images[0],images[1]);
   const capture=JSON.parse(await read('assets/capture.json')); assert.match(capture.revision,/^[a-f0-9]{40}$/); assert.match(capture.artwork,/Watercolor Wash/);
 });

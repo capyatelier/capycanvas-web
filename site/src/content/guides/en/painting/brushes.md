@@ -24,6 +24,6 @@ Opacity only affects the strokes you are about to make. To fade paint that is al
 
 ## Erase, blend and push paint
 
-**Eraser** removes paint from the selected layer. **Blend** softens and mixes colors that are already on the canvas, and **Liquify** pushes paint around as if it were wet. In Sketch, Blend and Liquify are together under the **Sculpt** button. These tools change existing paint, so try them on a copy of the layer if you want to keep the original.
+**Eraser** removes paint from the selected layer. If your pen has an eraser on its other end, just turn the pen over to erase with the shape of the brush you are using. **Blend** softens and mixes colors that are already on the canvas, and **Liquify** pushes paint around as if it were wet. In Sketch, Blend and Liquify are together under the **Sculpt** button. These tools change existing paint, so try them on a copy of the layer if you want to keep the original.
 
 To choose colors, continue with [Color and eyedropper](/docs/painting/color/).

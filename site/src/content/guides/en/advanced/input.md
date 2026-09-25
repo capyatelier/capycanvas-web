@@ -12,7 +12,9 @@ image: {"light": "/assets/guides/advanced-input-light.webp", "dark": "/assets/gu
 
 Choose a pencil and draw a stroke that starts lightly, presses harder, and then lightens again. If the line stays the same all the way along, try the same thing in another drawing app. If pressure doesn't work there either, the problem is most likely the tablet driver or its settings. If it only fails in Capy Canvas, check the settings below.
 
-On a separate drawing tablet, make sure the tablet is mapped to the screen that shows Capy Canvas. On a pen display, check that the cursor lines up with the pen tip, both in the middle and near the edges. The buttons on the side of the pen do nothing on the canvas unless you give them a job in your tablet's settings, such as a keyboard shortcut.
+On a separate drawing tablet, make sure the tablet is mapped to the screen that shows Capy Canvas. On a pen display, check that the cursor lines up with the pen tip, both in the middle and near the edges. If your pen has an eraser end, turn it over to erase. The buttons on the side of the pen do nothing on the canvas unless you give them a job in your tablet's settings, such as a keyboard shortcut.
+
+On a touch screen, fingers never paint: one finger held still picks a color, and two fingers move, zoom and rotate the view. This means you can rest your hand on the screen while you draw with the pen.
 
 ## Tune how the pen feels
 
@@ -22,4 +24,4 @@ Open **Preferences** and choose **Pen & Input**. **Pressure response** changes h
 
 ## Set up shortcuts
 
-Open **Help → Keyboard Shortcuts** to see every command and its keys. Select a command to give it a new shortcut, and Capy Canvas lets you know if the keys are already in use. A few useful defaults are **Ctrl+Z** to undo, **Space**-drag to pan, **Ctrl+0** to fit the drawing on screen, **I** for the eyedropper, **Q** for Quick Mask, and **Tab** for Zen mode. On a Mac, use Command wherever these guides say Ctrl.
+Open **Help → Keyboard Shortcuts** to see every command and its keys. Select a command to give it a new shortcut, and Capy Canvas lets you know if the keys are already in use. A few useful defaults are **Ctrl+Z** to undo and **Ctrl+Shift+Z** to redo, **B** for brushes, **P** for pens and pencils, **E** for the eraser, **I** to pick a color, **F** to fill, **Ctrl+0** to fit the drawing on screen, **Q** for Quick Mask, and **Tab** for Zen mode. Pressing **B** or **P** again switches between the tools that share the key. You can also give your favorite brush sizes their own keys. On a Mac, use Command wherever these guides say Ctrl.

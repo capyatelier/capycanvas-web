@@ -24,6 +24,6 @@ image: {"light": "/assets/guides/painting-brushes-light.webp", "dark": "/assets/
 
 ## 擦除、混色与推动颜料
 
-**Eraser**会从选中的图层上擦除颜色。**Blend**会柔化并融合画布上已有的颜色，**Liquify**则像推动未干的颜料一样推移画面。在Sketch中，Blend和Liquify一起放在**Sculpt**按钮下。这些工具会改变已有的颜色，如果想保留原来的样子，可以先在图层副本上尝试。
+**Eraser**会从选中的图层上擦除颜色。如果你的笔另一端带有橡皮擦，只要把笔倒过来，就能用当前笔刷的形状进行擦除。**Blend**会柔化并融合画布上已有的颜色，**Liquify**则像推动未干的颜料一样推移画面。在Sketch中，Blend和Liquify一起放在**Sculpt**按钮下。这些工具会改变已有的颜色，如果想保留原来的样子，可以先在图层副本上尝试。
 
 要选择颜色，请继续阅读[颜色与吸管](/zh/docs/painting/color/)。

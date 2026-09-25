@@ -1,12 +1,18 @@
 ---
-title: "渐变"
-description: "用从一种颜色平滑过渡到另一种颜色的渐变填充区域。"
-purpose: "渐变会从一种颜色平滑地过渡到另一种颜色，适合用于天空、背景和柔和的光照。在画布上拖动，就能设定渐变的方向和长度。"
-techniques: ["选择线性渐变或径向渐变。", "在两种颜色之间过渡，或渐隐为透明。", "把渐变限制在选区内。"]
+title: "填充与渐变"
+description: "点击一下就能填充一个区域，也可以用从一种颜色平滑过渡到另一种颜色的渐变来填充。"
+purpose: "Fill工具只需点击一下，就能把颜色倒进一个区域，这是给线稿上色最快的方法。渐变则会从一种颜色平滑地过渡到另一种颜色，适合用于天空、背景和柔和的光照。"
+techniques: ["点击一下，填充线稿内的区域。", "画出线性渐变或径向渐变。", "把填充或渐变限制在选区内。"]
 figure: "1：Tool Set中的渐变类型。2：前景色和背景色。3：接收渐变的图层。"
 related: ["painting/color", "tools/selections", "layers/masks"]
 image: {"light": "/assets/guides/tools-gradients-light.webp", "dark": "/assets/guides/tools-gradients-dark.webp", "alt": "1：Tool Set中的渐变类型。2：前景色和背景色。3：接收渐变的图层。"}
 ---
+
+## 一键填充区域
+
+选择**Fill**工具（或按**F**），然后在某个区域内点击，就能用前景色填充它。要给另一个图层上的线稿上色，请先用**Layer Settings → Use as reference**把线稿图层标记为参考图层，并在Tool Set中选择**Reference layers**。然后选择要上色的空白图层，在区域内点击。即使线条在另一个图层上，填充也会在线条处停下。
+
+如果填充从线条的小缺口中漏了出去，请在Tool面板中调高**Close gaps**。**Expansion**会把填充稍微推到线条下方，这样颜色和墨线之间就不会留下细细的白边。
 
 ## 选择颜色和图层
 

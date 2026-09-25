@@ -12,7 +12,7 @@ image: {"light": "/assets/guides/tools-files-light.webp", "dark": "/assets/guide
 
 Choose **File → Open…** to open a `.capy` file. You can open photos and other images the same way, including JPEG, PNG, TIFF, WebP, HEIC, AVIF and OpenEXR files. A photo opens as a new drawing at its original size, and its colors are kept just as they were captured.
 
-To bring an image into the drawing you already have open, choose **File → Import Image as Layer…** instead, or drag the image file onto the canvas. [Edit a photo](/docs/filters/image-editing/) shows both ways in more detail.
+To bring an image into the drawing you already have open, choose **File → Import Image as Layer…** instead, or drag the image file onto the canvas. You can also copy an image in another app and paste it with **Ctrl+V**, which is handy for reference pictures. [Edit a photo](/docs/filters/image-editing/) shows both ways in more detail.
 
 ## Work with several drawings
 

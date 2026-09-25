@@ -11,7 +11,7 @@ import { references } from './capture/references.mjs';
 import { showcase, showcaseFiles } from './capture/showcase.mjs';
 import { PNG } from 'pngjs';
 
-const width = 1920, height = 1080;
+const width = 1920, height = 1080, scale = 2;
 const output = resolve('site/public/assets');
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 await mkdir(`${output}/guides`, { recursive: true });
@@ -28,7 +28,7 @@ for (const [path, expected] of Object.entries(source.hashes)) {
   assert.equal(hash(Buffer.from(bytes)), expected, `Served bytes match source manifest: ${path}`);
 }
 const headless = process.env.CAPTURE_BROWSER_MODE !== 'wayland';
-const b = await browser({ gpu: true, headless, width, height });
+const b = await browser({ gpu: true, headless, width, height, scale });
 const captures = [];
 const scope = process.env.CAPTURE_ONLY || 'all';
 assert.ok(['all', 'docs', 'references'].includes(scope), 'Known capture scope');
@@ -45,7 +45,7 @@ if (scope !== 'all') {
 const recipeFiles = ['capture.mjs', 'browser.mjs', 'serve.mjs', 'capture-headless.sh', 'prepare-capture.mjs', 'capture-compatibility.mjs', 'capture/editor.mjs', 'capture/annotations.mjs', 'capture/illustration.mjs', 'capture/references.mjs', 'capture/showcase.mjs'];
 const recipeHashes = Object.fromEntries(await Promise.all(recipeFiles.map(async path => [path, hash(await readFile(`site/scripts/${path}`))])));
 const artwork = await Promise.all(showcaseFiles.map(async name => { const bytes = await readFile(`site/scripts/capture/showcase/${name}`); return { file: `showcase/${name}`, bytes: bytes.length, sha256: hash(bytes) }; }));
-const manifest = { ...source, width, height, partial: scope === 'references', browser: await b.call('Browser.getVersion'), display: headless ? 'Chrome native headless' : 'Headed Chrome on a private headless Wayland display', workspace: { id: 'builtin:workspace:illustrator', name: 'Paint' },
+const manifest = { ...source, width, height, scale, partial: scope === 'references', browser: await b.call('Browser.getVersion'), display: headless ? 'Chrome native headless' : 'Headed Chrome on a private headless Wayland display', workspace: { id: 'builtin:workspace:illustrator', name: 'Paint' },
   canvas2d: 'Software decoding and UI previews; artwork remains hardware WebGPU.', recipeHashes,
   artwork: 'Guides: Watercolor Wash strokes and an original abstract study of a teal ribbon, ochre disc and terracotta block with pencil hatching, watercolor and airbrush shading, drawn through real browser pen input and editor actions. Homepage: a pen sketch, an oil painting and a photograph supplied by Capy Atelier as .capy projects, shown in Sketch, Paint and Photo.',
   showcase: artwork,

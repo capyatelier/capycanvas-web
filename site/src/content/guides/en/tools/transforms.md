@@ -16,7 +16,7 @@ Choose the **Operation** tool in the toolbar. Its **Move** mode moves the conten
 
 ## Move, scale and rotate
 
-Drag inside the box to move the content. Drag the handles on its corners and sides to make it larger or smaller, and drag the handle outside the box to rotate it. Turn on **Keep proportions** in the Tool panel when you want the drawing to keep its shape while you resize it.
+Drag inside the box to move the content. Drag the handles on its corners and sides to make it larger or smaller, and drag the handle outside the box to rotate it. Hold **Shift** while you resize to keep the drawing's proportions, or while you rotate to turn it in neat 15° steps. If you need exact values, type them into the position, size and angle fields in the Tool panel.
 
 Nothing is final while the handles are showing, so take your time. It is best to make all of the changes you need in one go, because resizing the same paint over and over can gradually soften its edges. If you're unsure, duplicate the layer first so you can compare.
 

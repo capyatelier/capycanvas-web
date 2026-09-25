@@ -2,7 +2,7 @@
 title: "Groups and blending"
 description: "Keep related layers together and change how their colors combine."
 purpose: "As a drawing grows, groups keep related layers together so the list stays easy to read. Blend modes change how a layer's colors mix with the layers below, which is useful for shadows, highlights and color washes."
-techniques: ["Put related layers in a group.", "Try a blend mode on a shading layer.", "Keep your layers editable instead of merging them."]
+techniques: ["Put related layers in a group.", "Try a blend mode on a shading layer.", "Keep a long layer list tidy."]
 figure: "1: Layer stack. 2: Blend mode. 3: New group button."
 related: ["layers/basics", "layers/masks", "filters/overview"]
 image: {"light": "/assets/guides/layers-groups-light.webp", "dark": "/assets/guides/layers-groups-dark.webp", "alt": "1: Layer stack. 2: Blend mode. 3: New group button."}
@@ -20,8 +20,8 @@ Select a shading layer and open the blend mode menu above the list. **Multiply**
 
 Hide and show the layer to compare the result. If the effect is too strong, lower the layer's opacity rather than repainting it.
 
-## Keep things editable
+## Keep the list tidy
 
-It can be tempting to merge layers to shorten the list, but a group keeps the same tidy list while leaving every layer editable. If you need a single flat image for another app, [export](/docs/output/export/) a copy and keep the `.capy` file with all its layers.
+Groups keep a long list tidy while every layer stays editable, and you can fold away the groups you aren't working on. If you need a single flat image for another app, [export](/docs/output/export/) a copy and keep the `.capy` file with all its layers.
 
 For color changes you'd like to keep adjusting, such as brightness or saturation, use a filter layer from [Filters and adjustments](/docs/filters/overview/) instead of painting the change into a layer.
