@@ -37,7 +37,7 @@ svg { display: block; width: 20px; height: 20px; flex: none; }
 .workspace { display: block; flex: none; width: min(1024px, 100%, calc((100dvh - 232px) * 16 / 9)); overflow: hidden; border-radius: 8px; box-shadow: var(--shadow); }
 .workspace img { display: block; width: 100%; height: auto; aspect-ratio: 16/9; }
 .showcase { position: relative; display: grid; background: var(--surface); animation: showcase-breathe 9s ease-in-out infinite; }
-@keyframes showcase-breathe { 50% { transform: scale(1.007); } }
+@keyframes showcase-breathe { 50% { transform: scale(1.02); } }
 .showcase-frame { grid-area: 1 / 1; opacity: 0; transform: scale(1.015); transition: opacity .9s ease, transform 1.6s cubic-bezier(.2, .7, .2, 1); }
 .showcase:has(input[value="sketch"]:checked) [data-slide="sketch"],
 .showcase:has(input[value="paint"]:checked) [data-slide="paint"],
