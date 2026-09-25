@@ -1,27 +1,29 @@
 ---
-title: "画笔与绘画"
-description: "选择工具和预设，调整下一笔的效果。"
-purpose: "工具决定操作类型，Tool Set提供相应的分组与预设。从内置画笔开始，只调整当前笔画需要的设置。"
-techniques: ["选择工具、分组和预设。", "调整大小、不透明度与流量。", "在正确图层上使用擦除、混色和液化。"]
-figure: "1：绘画工具。2：Tool Set中的Watercolor与预设。3：当前画笔设置。"
+title: "笔刷与绘画"
+description: "选择绘画工具和笔刷，然后设置下一笔的大小和不透明度。"
+purpose: "Capy Canvas中的每种笔刷都属于一种绘画工具，例如Pencil或Paint Brush。工具决定你画出哪一类笔迹，Tool Set则让你在该工具中挑选具体的笔刷。先从内置笔刷开始，只调整下一笔真正需要的设置。"
+techniques: ["选择工具、分组和笔刷。", "调整大小、不透明度和流量。", "擦除、混色和推动颜料。"]
+figure: "1：绘画工具。2：Tool Set中的Watercolor分组和笔刷。3：当前笔刷的设置。"
 related: ["painting/color", "advanced/brush-engine", "layers/basics"]
-image: {"light": "/assets/guides/painting-brushes-light.webp", "dark": "/assets/guides/painting-brushes-dark.webp", "alt": "1：绘画工具。2：Tool Set中的Watercolor与预设。3：当前画笔设置。"}
+image: {"light": "/assets/guides/painting-brushes-light.webp", "dark": "/assets/guides/painting-brushes-dark.webp", "alt": "1：绘画工具。2：Tool Set中的Watercolor分组和笔刷。3：当前笔刷的设置。"}
 ---
 
-## 选择预设
+## 选择笔刷
 
-**Pen**和**Pencil**适合线条，**Brush**用于上色，**Airbrush**用于柔和喷涂。**Tool Set**随工具变化；Brush包含Paint、Watercolor和Oil paint等分组，可选择**Watercolor Wash**等预设。
+绘画工具位于Paint左边缘的工具栏中。**Pen**和**Pencil**用于画线，**Paint Brush**用于上色，**Airbrush**用于柔和的阴影。选择一个工具后，**Tool Set**会显示属于它的笔刷。有些工具包含多个分组，例如Paint Brush就有Paint、Watercolor和Oil paint三组。先选择分组，再选择**Watercolor Wash**之类的笔刷。
 
-绘画前在**Layers**中选择目标。如果选中了蒙版，编辑的是可见范围而非普通颜色。结果异常时先检查缩略图。
+在Sketch中，标题栏里的**Brush**按钮会在抽屉中打开同样的选项。抽屉把所有种类的笔刷集中在一处，还会记住你上次使用的笔刷，轻点一下就能回到它。
 
-## 调整笔画
+绘画前，先在**Layers**中确认选中的是哪个图层。新画的颜色总是落在选中的图层上。
 
-在**Tool**中修改大小和不透明度，旁边的**Brush size**提供常用尺寸。压感效果取决于预设和设备；用实际需要的粗细测试轻重变化。
+## 设置大小和不透明度
 
-画笔不透明度影响新笔画，不会淡化已有颜色。流量改变一笔中的颜料累积方式。比较方法见[画笔设置](/zh/docs/advanced/brush-engine/)。
+**Tool**面板显示当前笔刷的设置。**Brush size**决定笔画的宽度，**Opacity**决定新画颜色的透明程度。旁边的**Brush size**标签页保存着一排尺寸，方便你快速切换。在Sketch中，屏幕边缘的滑块起同样的作用，拖动时还会显示笔尖的预览。
 
-## 擦除、混色与变形
+不透明度只影响你接下来要画的笔画。要淡化图层上已有的颜色，请改为在Layers中降低该图层的不透明度。**Flow**与不透明度略有不同：它控制在同一笔中反复经过同一区域时，颜料会累积多少。[笔刷设置](/zh/docs/advanced/brush-engine/)对这些设置有更深入的说明。
 
-**Eraser**擦除当前目标，**Blend**混合已有颜色，**Liquify**移动已有笔迹。大范围尝试前先复制图层；撤销可恢复上一步。
+## 擦除、混色与推动颜料
 
-通过[颜色与吸管](/zh/docs/painting/color/)选色，合适的调整会保留在当前工作区。
+**Eraser**会从选中的图层上擦除颜色。**Blend**会柔化并融合画布上已有的颜色，**Liquify**则像推动未干的颜料一样推移画面。在Sketch中，Blend和Liquify一起放在**Sculpt**按钮下。这些工具会改变已有的颜色，如果想保留原来的样子，可以先在图层副本上尝试。
+
+要选择颜色，请继续阅读[颜色与吸管](/zh/docs/painting/color/)。

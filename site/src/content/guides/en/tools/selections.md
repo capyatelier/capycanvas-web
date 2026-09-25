@@ -1,25 +1,27 @@
 ---
-title: "Selections and fill"
-description: "Define an area, choose a boundary source, and fill the intended layer."
-purpose: "A pixel selection limits where an edit can happen. It does not choose the editing layer. This lets you read outlines on one layer while putting color on another."
-techniques: ["Draw a lasso or use Auto select.", "Choose Visible, Editing or Reference as the boundary source.", "Adjust tolerance and edges, then clear the selection."]
-figure: "1: Auto select tool and source choices. 2: Tolerance and edge controls. 3: The editing layer, separate from the boundary source."
-related: ["tools/transforms", "layers/masks", "illustration/mask"]
-image: {"light": "/assets/guides/tools-selections-light.webp", "dark": "/assets/guides/tools-selections-dark.webp", "alt": "1: Auto select tool and source choices. 2: Tolerance and edge controls. 3: The editing layer, separate from the boundary source."}
+title: "Selection tools"
+description: "Select part of your drawing so that changes only affect that area."
+purpose: "A selection marks the part of the drawing you want to work on. While it is active, painting, filling and transforming only affect the selected area, so the rest of the drawing stays safe. Capy Canvas has selection tools for simple shapes, freehand outlines, and areas of similar color."
+techniques: ["Choose the right selection tool.", "Add to or subtract from a selection.", "Fill a selection and clear it when you're done."]
+figure: "1: Selection tools in Tool Set. 2: Selection mode, feather and shape options. 3: An ellipse selection around the disc."
+related: ["selections/quick-mask", "selections/tonal-range", "layers/masks"]
+image: {"light": "/assets/guides/tools-selections-light.webp", "dark": "/assets/guides/tools-selections-dark.webp", "alt": "1: Selection tools in Tool Set. 2: Selection mode, feather and shape options. 3: An ellipse selection around the disc."}
 ---
 
-## Choose a selection method
+## Choose a selection tool
 
-Use **Lasso selection** to draw the boundary yourself. **Auto select** reads a region from the existing image. In Tool Set, choose the visible image, editing layer, or reference layers as its source. To use Line art as a reference, select its row and use **Use selected layers as references** in Layers.
+In Paint, choose **Lasso selection** or **Auto select** in the toolbar, and Tool Set will list all of the selection tools. In Sketch, they are under the **Select** button, and Photo keeps most of them in its toolbar.
 
-Return to the intended paint layer before filling. **Lasso Fill** draws and fills a freehand region directly; it is a different subtool from a persistent pixel selection.
+**Rectangle select** and **Ellipse select** draw simple shapes; hold **Shift** for a square or circle, and **Alt** to draw from the center. **Lasso selection** follows your pen freehand, and **Polygonal lasso** joins straight lines between the points you click; click the first point again or press **Enter** to close it. **Auto select** picks an area of similar color with one click, and **Select by color** picks every area of that color at once. Two more tools, **Paint selection** and **Tonal range**, have their own pages: [Quick Mask and selection layers](/docs/selections/quick-mask/) and [Select by brightness](/docs/selections/tonal-range/).
 
-## Read an outline and correct the edge
+## Combine and soften selections
 
-Choose **Fill** to fill a detected region directly, or **Auto select** to inspect a selection first. Their **Tool** controls include **Tolerance**, **Close gaps**, **Expansion** and **Edge smoothing**.
+The four buttons at the top of the **Tool** panel choose what happens when you make another selection. It can replace the current one, add to it, subtract from it, or keep only the area where the two overlap. You can also hold **Shift** to add, or **Alt** to subtract, without changing the buttons.
 
-Increase tolerance when a varied color region is being split into pieces. Close gaps can bridge small openings; check the outline if the operation escapes into another area. A small expansion helps the fill reach beneath antialiased ink. These settings apply to the next region operation.
+**Feather radius** softens the edge of the selection, so that paint and adjustments fade out gradually instead of stopping at a hard line. For Auto select, **Tolerance** controls how different a color can be and still be included, and **Close gaps** stops the selection from leaking through small breaks in your line art.
 
-## Finish the operation
+## Use the selection
 
-Use **Fill selection** to fill the selected pixels on the editing layer, or turn the selection into a [layer mask](/docs/layers/masks/). After a fill or [transform](/docs/tools/transforms/), use **Select → Deselect pixels** so subsequent strokes are unrestricted.
+With a selection active, paint freely: strokes only land inside it. Choose **Edit → Fill selection** to fill it with the current color, or turn it into a [layer mask](/docs/layers/masks/). The **Select** menu can also invert the selection, grow or shrink it by a few pixels, or bring back the last selection with **Reselect**.
+
+When you're finished, choose **Select → Deselect pixels** so your next strokes can go anywhere again.

@@ -23,11 +23,12 @@ try {
     const metrics=await b.evaluate(`(() => {
       const visible=e=>e.getClientRects().length>0;
       const bounds=[...document.querySelectorAll('h1,h2,h3,p,a,summary')].filter(visible).filter(e=>e.getBoundingClientRect().right>innerWidth+1||e.getBoundingClientRect().left< -1).map(e=>e.textContent);
-      const shot=document.querySelector('.workspace img')?.getBoundingClientRect();
+      const shot=document.querySelector('.showcase-frame[data-slide="paint"] img')?.getBoundingClientRect();
+      const shown=[...document.querySelectorAll('.showcase-frame')].filter(frame=>getComputedStyle(frame).opacity!=='0').map(frame=>frame.dataset.slide);
       const overviewImage=document.querySelector('.docs-overview-image img');
       const overviewBounds=overviewImage?.getBoundingClientRect();
       const borders=[...document.querySelectorAll('header,nav,main,picture,section,a,li')].filter(visible).filter(e=>['Top','Right','Bottom','Left'].some(side=>parseFloat(getComputedStyle(e)['border'+side+'Width'])>0)).map(e=>e.className);
-      return { overviewSource:overviewImage?.currentSrc, overviewRatio:overviewBounds?overviewBounds.width/overviewBounds.height:null, overviewLink:document.querySelector('.docs-overview-image a')?.href, height:innerHeight, scrollHeight:document.documentElement.scrollHeight, shotRatio:shot?shot.width/shot.height:null, borders, width:innerWidth, scroll:document.documentElement.scrollWidth, lang:document.documentElement.dataset.locale, bg:getComputedStyle(document.body).backgroundColor, source:document.querySelector('.workspace img')?.currentSrc, bounds,
+      return { overviewSource:overviewImage?.currentSrc, overviewRatio:overviewBounds?overviewBounds.width/overviewBounds.height:null, overviewLink:document.querySelector('.docs-overview-image a')?.href, height:innerHeight, scrollHeight:document.documentElement.scrollHeight, shotRatio:shot?shot.width/shot.height:null, borders, width:innerWidth, scroll:document.documentElement.scrollWidth, lang:document.documentElement.dataset.locale, bg:getComputedStyle(document.body).backgroundColor, source:document.querySelector('.showcase-frame[data-slide="paint"] img')?.currentSrc, shown, bounds,
         labels:[...document.querySelectorAll('a,summary')].filter(visible).every(e=>(e.getAttribute('aria-label')||e.textContent).trim()),
         headings:document.querySelectorAll('h1').length,
         broken:[...document.images].some(i=>!i.complete||!i.naturalWidth)
@@ -41,7 +42,8 @@ try {
     check(metrics.labels&&metrics.headings===1&&!metrics.broken,`Accessibility/asset basics ${label}`);
     check(metrics.borders.length===0,`Unexpected borders ${label}: ${metrics.borders}`);
     if(page==='home') {
-      check(metrics.source.endsWith(`guides/illustration-${theme}.webp`),`Wrong screenshot ${label}`);
+      check(metrics.source.endsWith(`showcase/paint-${theme}.webp`),`Wrong screenshot ${label}`);
+      check(metrics.shown.join()==='paint',`Paint slide is shown first ${label}: ${metrics.shown}`);
       check(metrics.scrollHeight<=height,`Home should fit viewport ${label}: ${metrics.scrollHeight}`);
       check(Math.abs(metrics.shotRatio-16/9)<.01,`Screenshot aspect ratio ${label}`);
     }
@@ -57,7 +59,14 @@ try {
   const guideLayouts = await checkDocumentation(b,host,check);
   // Live OS appearance changes swap both the site palette and the actual screenshot.
   await b.navigate(host.url+'/?lang=en'); await b.theme('light'); await b.settle();
-  await b.theme('dark'); await b.until("document.querySelector('.workspace img').currentSrc.endsWith('illustration-dark.webp')"); checks++;
+  await b.theme('dark'); await b.until("document.querySelector('.showcase-frame[data-slide=\"paint\"] img').currentSrc.endsWith('paint-dark.webp')"); checks++;
+  await b.until("document.querySelector('[data-showcase]').hasAttribute('data-playing')"); checks++;
+  await b.until("document.querySelector('.showcase input[value=\"photo\"]').checked", 9000); checks++;
+  await b.evaluate("[...document.querySelectorAll('.showcase-switcher label')].find(label=>label.textContent.trim()==='Sketch').click()");
+  check(await b.evaluate("document.querySelector('.showcase input[value=\"sketch\"]').checked&&!document.querySelector('[data-showcase]').hasAttribute('data-playing')"),'Choosing a workspace stops the showcase');
+  await b.until("getComputedStyle(document.querySelector('.showcase-frame[data-slide=\"sketch\"]')).opacity==='1'"); checks++;
+  await new Promise(resolve=>setTimeout(resolve,6000));
+  check(await b.evaluate("document.querySelector('.showcase input[value=\"sketch\"]').checked"),'The chosen workspace stays on screen');
   // Preference detection and regional language tags, including unsupported-first lists.
   for(const [langs,expected] of [[['ja-JP'],'ja'],[['zh-TW'],'zh'],[['ko-KR'],'ko'],[['fr-FR','ja-JP'],'ja'],[['de-DE'],'en']]) {
     const {identifier}=await b.call('Page.addScriptToEvaluateOnNewDocument',{source:`Object.defineProperty(navigator,'languages',{get:()=>${JSON.stringify(langs)},configurable:true})`});
@@ -91,6 +100,9 @@ try {
   check(await b.evaluate("document.documentElement.lang==='ja'&&document.querySelectorAll('.platform').length===5"),'No-JS page content');
   check(await b.evaluate("document.querySelector('[data-pwa-guide=generic]').hidden===false&&document.querySelector('.pwa-browser').hidden&&document.querySelectorAll('[data-pwa-guide]:not([hidden])').length===1"),'No-JS installation instructions remain readable');
   await b.screenshot('artifacts/review/no-js-japanese.png',true);
+  await b.navigate(host.url+'/ko/');
+  await b.evaluate("[...document.querySelectorAll('.showcase-switcher label')].find(label=>label.textContent.trim()==='Photo').click()");
+  await b.until("getComputedStyle(document.querySelector('.showcase-frame[data-slide=\"photo\"]')).opacity==='1'&&getComputedStyle(document.querySelector('.showcase-frame[data-slide=\"paint\"]')).opacity==='0'"); checks++;
   await b.navigate(host.url+'/ko/privacy/');
   check(await b.evaluate("document.querySelectorAll('.policy-prose h2').length===5&&!!document.querySelector('a[href=\"mailto:zackdrach@gmail.com\"]')&&document.querySelectorAll('[data-language]').length===4"),'The full privacy policy and language links work without JavaScript');
   await b.call('Emulation.setScriptExecutionDisabled',{value:false});

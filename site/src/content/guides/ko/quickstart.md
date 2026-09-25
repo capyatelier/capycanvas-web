@@ -1,25 +1,27 @@
 ---
 title: "빠른 시작"
-description: "Paint를 열고 필압을 확인한 뒤 첫 그림을 저장합니다."
-purpose: "작업 공간을 꾸미기 전에 작은 문서에서 몇 획을 그려 보세요. 펜 입력과 편집 동작을 확인하고 저장까지 시험합니다."
-techniques: ["Paint에서 문서를 만듭니다.", "연필 프리셋으로 필압을 확인합니다.", "편집용 프로젝트와 PNG를 저장합니다."]
-figure: "1: Paint 작업 공간. 2: Tool Set. 3: 그릴 대상을 선택하는 Layers."
+description: "Capy Canvas를 열고 펜을 확인한 뒤 첫 그림을 저장합니다."
+purpose: "레이아웃을 바꾸거나 브러시를 하나하나 써 보기 전에, 먼저 몇 획을 그려 보고 저장해 보세요. 편집기와 펜이 제대로 함께 작동하는지 확인할 수 있고, 나중에 다시 열어 볼 작은 그림도 하나 생깁니다."
+techniques: ["편집기를 열고 새 그림을 만듭니다.", "연필로 필압을 시험합니다.", "그림을 저장하고 공유할 사본을 내보냅니다."]
+figure: "1: 작업 공간 전환기. 2: 브러시를 고르는 Tool Set. 3: 그린 획이 담기는 Layers."
 related: ["workspace", "painting/brushes", "tools/files"]
-image: {"light": "/assets/guides/quickstart-light.webp", "dark": "/assets/guides/quickstart-dark.webp", "alt": "1: Paint 작업 공간. 2: Tool Set. 3: 그릴 대상을 선택하는 Layers."}
+image: {"light": "/assets/guides/quickstart-light.webp", "dark": "/assets/guides/quickstart-dark.webp", "alt": "1: 작업 공간 전환기. 2: 브러시를 고르는 Tool Set. 3: 그린 획이 담기는 Layers."}
 ---
 
 ## 편집기 열기
 
-[다운로드 페이지](/ko/download/)에서 제공 버전과 설치 방법을 확인합니다. 하드웨어 WebGPU를 지원하는 브라우저에서[Web Demo](https://editor.capycanvas.art/)를 열거나 웹 앱을 설치해 오프라인으로 사용합니다. 터치스크린만으로는 필압이 전달되지 않으므로 기기에서 지원하는 압력 감지 펜이 필요합니다.
+가장 빨리 시작하는 방법은 브라우저에서 실행되는 [Web Demo](https://editor.capycanvas.art/)입니다. 하드웨어 가속 WebGPU를 지원하는 브라우저가 필요하며, 한 번 방문한 뒤에는 오프라인에서도 계속 사용할 수 있습니다. 앱으로 설치할 수도 있습니다. 설치 방법은 [다운로드 페이지](/ko/download/)에서 안내하며, 데스크톱 앱과 모바일 앱을 언제 사용할 수 있는지도 이 페이지에서 확인할 수 있습니다.
 
-상단의**Paint**를 선택하고<strong>File → New…</strong>로 문서를 만듭니다. Paint는 Tool Set, Color, Layers를 계속 표시합니다. Sketch는 조작부를 간소화하고 Photo는 이미지 조정에 맞춰 배치합니다.
+편집기가 열리면 창 위쪽의 작업 공간 전환기에서 **Paint**를 선택합니다. Paint는 브러시, 색상, 레이어를 화면에 계속 표시하므로 처음 익히기에 좋습니다. 그런 다음 <strong>File → New…</strong>를 선택하고 크기를 정한 뒤 **Create**를 누릅니다.
 
-## 획 시험하기
+## 첫 획 그리기
 
-**Pencil**과 연필 프리셋을 선택합니다. 가볍게 시작해 힘을 주었다가 빼며 선을 그리고, **Tool**에서 굵기를 조절합니다. 필압이 작동하지 않으면 브러시를 바꾸기 전에[입력 설정](/ko/docs/advanced/input/)을 확인합니다. 시험한 획은 실행 취소할 수 있습니다.
+왼쪽에서 **Pencil** 도구를 고른 다음 **Tool Set**에서 연필 하나를 선택합니다. 가볍게 시작해 가운데에서 더 세게 누르고, 끝에서 다시 힘을 빼며 선을 그어 보세요. 펜이 필압을 전달한다면 세게 누른 곳에서 선이 더 굵고 진해집니다.
 
-## 저장하고 계속하기
+모든 선이 똑같아 보인다면 펜의 필압이 브라우저에 전달되지 않고 있을 수 있습니다. 브러시 설정을 바꾸기 전에 무엇을 확인해야 하는지는 [펜과 터치 안내](/ko/docs/advanced/input/)에서 차례대로 설명합니다. 남기고 싶지 않은 시험 획은 **Ctrl+Z**로 실행 취소합니다.
 
-<strong>Save As…</strong>로`.capy` 프로젝트를, <strong>Export PNG…</strong>로 합성 이미지를 저장합니다. 작업 공간 설정과 그림은 따로 저장됩니다.
+## 작업 저장하기
 
-[브러시와 페인팅](/ko/docs/painting/brushes/)을 읽거나[일러스트 튜토리얼](/ko/docs/illustration/)에서 스케치부터 채색까지 연습합니다.
+<strong>File → Save As…</strong>를 선택해 `.capy` 파일로 저장합니다. 이 파일은 레이어를 포함한 모든 내용을 편집할 수 있는 상태로 보관하므로, 나중에 하던 곳에서 이어서 작업할 수 있습니다. 공유할 일반 이미지가 필요하면 <strong>File → Export…</strong>를 선택해 PNG나 JPEG 사본을 저장합니다.
+
+이제 [브러시와 페인팅](/ko/docs/painting/brushes/)에서 브러시를 고르고 조절하는 방법을 알아보거나, [일러스트 튜토리얼](/ko/docs/illustration/)을 따라 첫 스케치부터 마지막 음영까지 그림 한 장을 완성해 보세요.

@@ -1,27 +1,27 @@
 ---
 title: "标尺与吸附"
-description: "引导手绘笔画沿方向或朝一点延伸。"
-purpose: "标尺约束笔画，画出的内容仍留在绘画图层上。直线、平行和放射标尺适用于不同的重复线条。"
-techniques: ["创建直线、平行或放射标尺。", "切换显示与吸附。", "移动或删除标尺。"]
-figure: "1：标尺类型。2：画布上的标尺。3：显示、吸附与删除。"
+description: "引导笔画沿直线或朝某一点前进。"
+purpose: "标尺会引导你的笔画，就像在纸上放一把真正的尺子。笔画仍然使用你选择的笔刷、压感和颜色，标尺只负责让它们不偏离轨道。画直边、排线和透视线时，它会是很大的帮手。"
+techniques: ["放置直线、平行或放射标尺。", "开启吸附后绘画。", "移动或删除标尺。"]
+figure: "1：标尺类型。2：画布上的标尺。3：标尺的显示、吸附和删除控件。"
 related: ["tools/figures", "painting/brushes", "tools/transforms"]
-image: {"light": "/assets/guides/tools-rulers-light.webp", "dark": "/assets/guides/tools-rulers-dark.webp", "alt": "1：标尺类型。2：画布上的标尺。3：显示、吸附与删除。"}
+image: {"light": "/assets/guides/tools-rulers-light.webp", "dark": "/assets/guides/tools-rulers-dark.webp", "alt": "1：标尺类型。2：画布上的标尺。3：标尺的显示、吸附和删除控件。"}
 ---
 
 ## 放置标尺
 
-选择**Ruler**，在Tool Set中选择**Straight**、**Parallel**或**Radial**，拖动确定位置与方向。直线标尺沿自身线段引导，平行标尺提供共同方向，放射标尺把线条导向中心。
+选择**Ruler**工具，然后在**Tool Set**中选择一种类型。**Straight**标尺引导笔画沿一条直线前进。**Parallel**标尺让你无论在哪里下笔，每一笔都朝着同一方向；**Radial**标尺则引导笔画朝向同一个点，就像交汇于消失点的线条。在画布上拖动即可放置标尺。
 
-定位后切回绘画工具。标尺是辅助线，不会出现在导出图像中。
+标尺只是一种辅助工具。它会显示在屏幕上，但永远不会出现在导出的图像中。
 
-## 开启吸附绘画
+## 沿标尺绘画
 
-启用**Snap to rulers**，用笔或画笔在标尺附近绘画。大小、压感和颜色仍决定笔迹。需要自由笔画时关闭吸附。
+确认已打开**Snap to rulers**，然后切换回钢笔或其他笔刷，在标尺附近绘画。笔画会沿着标尺前进，而笔刷、压感和颜色都照常起作用。需要再次自由绘画时，关闭吸附即可。
 
-**Show rulers**控制显示。隐藏的标尺不约束笔画，因此吸附失效时要同时检查显示与吸附开关。
+**Show rulers**用于隐藏和显示标尺。隐藏的标尺不会引导笔画，所以如果吸附似乎失效了，请检查标尺是否处于显示状态。
 
-## 修改辅助线
+## 调整或删除标尺
 
-返回Ruler或使用Operation选择标尺，移动主体或端点调整位置与方向。**Delete ruler**删除标尺，但保留已经画出的内容。
+再次选择Ruler工具，就可以调整标尺。拖动标尺可以移动它，拖动它的一端可以改变角度。**Delete ruler**会删除选中的标尺，已经画好的内容保持不变。
 
-单个几何形状使用[Figure](/zh/docs/tools/figures/)，修改已有笔迹使用[变换](/zh/docs/tools/transforms/)。
+如果只需要一条干净的线或一个形状，用[Figure工具](/zh/docs/tools/figures/)可能更快。要移动已经画好的线条，请使用[移动与变换](/zh/docs/tools/transforms/)。

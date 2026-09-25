@@ -1,27 +1,25 @@
 ---
 title: "Shapes"
-description: "Draw lines, rectangles and ellipses with the Figure tool."
-purpose: "Figure draws geometric marks on a paint layer. The shape and paint mode determine whether you get an outline, a filled area, or both."
-techniques: ["Choose Line, Rectangle or Ellipse.", "Switch Outline, Fill and Outline + fill.", "Use brush size, colors and a pixel selection."]
-figure: "1: Figure shapes and paint modes. 2: Size and opacity. 3: Foreground and background colors."
+description: "Draw straight lines, rectangles and ellipses with the Figure tool."
+purpose: "The Figure tool draws clean geometric shapes, which is handy for panel borders, simple objects, or guides you'll paint over later. Each shape can be an outline, a filled shape, or both."
+techniques: ["Choose a line, rectangle or ellipse.", "Draw an outline, a fill, or both.", "Set the line width and colors."]
+figure: "1: Figure shapes and fill modes. 2: Line width and opacity. 3: Foreground and background colors."
 related: ["tools/rulers", "painting/color", "tools/selections"]
-image: {"light": "/assets/guides/tools-figures-light.webp", "dark": "/assets/guides/tools-figures-dark.webp", "alt": "1: Figure shapes and paint modes. 2: Size and opacity. 3: Foreground and background colors."}
+image: {"light": "/assets/guides/tools-figures-light.webp", "dark": "/assets/guides/tools-figures-dark.webp", "alt": "1: Figure shapes and fill modes. 2: Line width and opacity. 3: Foreground and background colors."}
 ---
 
-## Choose the shape
+## Choose a shape
 
-Select **Figure** and choose **Line**, **Rectangle** or **Ellipse** in Tool Set. Line draws an outline stroke; rectangles and ellipses can use **Outline**, **Fill**, or **Outline + fill**.
+Choose the **Figure** tool, then pick **Line**, **Rectangle** or **Ellipse** in **Tool Set**. For rectangles and ellipses, you can also choose **Outline**, **Fill**, or **Outline + fill**.
 
-Choose the editing layer before drawing. A separate layer makes a shape easier to move or erase without disturbing the sketch below it.
+Shapes are painted onto the selected layer, just like brush strokes. Drawing them on a layer of their own makes them easy to move or remove later without disturbing the rest of your drawing.
 
-## Set its appearance and draw
+## Set the look
 
-Set brush size for the outline width and opacity for the mark. Foreground color supplies the outline or single fill. **Outline + fill** uses foreground for the outline and background for the interior.
+In the **Tool** panel, **Line width** sets how thick the outline is, and **Opacity** sets how see-through the shape is. The outline uses the foreground color. When you choose **Outline + fill**, the inside is filled with the background color, so you can have, for example, a dark outline around a light shape.
 
-Drag across the canvas to define the shape. Hold **Shift** to constrain its geometry, such as making an ellipse circular. Release to commit the mark. Undo and draw again if the bounds are wrong.
+## Draw the shape
 
-## Combine with other tools
+Drag across the canvas to draw the shape. Hold **Shift** while you drag to make a perfect square or circle. When you let go, the shape is painted onto the layer. If it isn't quite right, undo and draw it again.
 
-A [pixel selection](/docs/tools/selections/) limits where the figure appears. Clear it afterward if the next stroke should cover a different area. To reposition existing marks, use Scale / rotate rather than drawing another shape over them.
-
-For repeated freehand lines following a direction or vanishing point, use [Rulers and snapping](/docs/tools/rulers/) instead.
+A selection limits where the shape can appear, just as it does for a brush. For lots of freehand lines that follow the same direction, such as hatching or perspective lines, [Rulers and snapping](/docs/tools/rulers/) is a better fit.

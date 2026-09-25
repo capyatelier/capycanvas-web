@@ -1,27 +1,27 @@
 ---
 title: "Panels, toolbars and title bar"
-description: "Arrange controls around the canvas and recover an earlier layout."
-purpose: "Move panels to the places you use them and put frequent commands within reach. Layout changes have their own history, so restoring an arrangement does not undo your painting."
-techniques: ["Dock, float, tab and collapse panels.", "Configure toolbar contents and the title bar.", "Undo layout changes separately from artwork edits."]
-figure: "1: Panel title/grip used for moving. 2: Toolbars and their controls. 3: Window menu for layout and title-bar commands."
+description: "Arrange panels and toolbars around the canvas, and change how the interface looks."
+purpose: "Every panel and toolbar can be moved to where your hand expects it, which is especially helpful if you are used to another app. Layout changes have their own undo, so rearranging the interface never undoes any of your painting."
+techniques: ["Move, group and collapse panels.", "Choose what your toolbars and title bar contain.", "Change the look of the interface, and undo layout changes."]
+figure: "1: Panel tabs, used to move a panel. 2: A toolbar. 3: Window menu with layout and title bar commands."
 related: ["workspace", "workspace/management", "advanced/input"]
-image: {"light": "/assets/guides/workspace-customization-light.webp", "dark": "/assets/guides/workspace-customization-dark.webp", "alt": "1: Panel title/grip used for moving. 2: Toolbars and their controls. 3: Window menu for layout and title-bar commands."}
+image: {"light": "/assets/guides/workspace-customization-light.webp", "dark": "/assets/guides/workspace-customization-dark.webp", "alt": "1: Panel tabs, used to move a panel. 2: A toolbar. 3: Window menu with layout and title bar commands."}
 ---
 
-## Place the panels
+## Arrange the panels
 
-Drag a panel by its title, tab or grip. Docking indicators show where it can attach; a free position leaves it floating. Panels can share a tab group, and a collapsed column opens them as drawers. Resize the panel edges to balance controls and canvas space.
+Drag a panel by its tab or grip to move it. As you drag, markers show the places where it can dock; let go anywhere else and the panel floats freely. Drop a panel onto another panel's tabs to group them together, and drag the edge between panels to make one larger. A column can also be collapsed into a strip of icons, so each panel opens as a drawer only when you need it.
 
-Title bars and grips drag immediately after movement starts. Reorderable tool tiles require a press and hold before dragging, including with a mouse. Lists can differ: touch and pen generally hold a row, while its grip starts immediately.
+With a mouse, panels start moving as soon as you drag. With a pen or a finger, press and hold for a moment before you drag, so that a quick tap is never mistaken for a move.
 
-## Choose the controls
+## Choose your toolbars
 
-Open a panel or toolbar’s context menu to configure its contents and presentation. **Manage Toolbars…** handles reusable toolbar containers. **Customize Title Bar…** opens an explicit editor for positioning individual controls in the bar.
+Right-click a toolbar, or press and hold it, to choose which tools and commands it shows. Toolbars can hold more than buttons: you can add brush size and opacity sliders, or a **Tool Options** bar that always shows the settings of the current tool. Drag a toolbar by its grip to move it, and drop it near the start, middle or end of any screen edge to attach it there. **Window → Quick Access Toolbars** creates and manages extra toolbars.
 
-In that title-bar editor, drag items and component-bank chips directly; the bank uses drag placement rather than click-to-add. Finish the edit to keep it, or cancel the preview.
+**Window → Customize Title Bar…** lets you arrange the buttons along the top of the window, including the workspace switcher. Drag items into place, then finish to keep the new arrangement.
 
-## Recover an arrangement
+## Change the look, or undo a change
 
-Use **Undo Layout Change** or **Redo Layout Change** for placement changes. Ordinary undo still belongs to the drawing. **Restore Starting Layout…** previews a return to the workspace’s starting arrangement while retaining working brush settings.
+**Preferences → Appearance** holds settings for the look of the interface. You can choose a light or dark theme, pick an accent color, and set how see-through the panels are, so that your artwork can show softly through them.
 
-Create another [workspace](/docs/workspace/management/) when you want to preserve a distinct arrangement for another task.
+Use **Window → Undo Layout Change** and **Redo Layout Change** to step back through changes to the layout; ordinary undo is only for your drawing. To go back to the way a workspace started, choose **Restore Starting Layout…**. If you'd like to keep more than one arrangement, save each one as its own [workspace](/docs/workspace/management/).

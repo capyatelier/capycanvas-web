@@ -1,27 +1,29 @@
 ---
 title: "Brushes and painting"
-description: "Choose a drawing tool, select a preset, and control the next stroke."
-purpose: "A tool chooses the kind of operation; Tool Set chooses a group and preset within it. Start with a built-in brush, then change only the controls needed for your next mark."
-techniques: ["Select a tool, group and preset.", "Adjust size, opacity and flow.", "Use Eraser, Blend and Liquify on the intended layer."]
-figure: "1: Drawing tools. 2: Watercolor group and preset in Tool Set. 3: Settings for the active brush."
+description: "Choose a drawing tool and a brush, then set the size and opacity of your next stroke."
+purpose: "Every brush in Capy Canvas belongs to a drawing tool, such as Pencil or Paint Brush. The tool decides what kind of mark you make, and Tool Set lets you pick a specific brush within it. Start with a built-in brush and only adjust what your next stroke needs."
+techniques: ["Choose a tool, a group and a brush.", "Change size, opacity and flow.", "Erase, blend and push paint around."]
+figure: "1: Drawing tools. 2: Watercolor group and brush in Tool Set. 3: Settings for the active brush."
 related: ["painting/color", "advanced/brush-engine", "layers/basics"]
-image: {"light": "/assets/guides/painting-brushes-light.webp", "dark": "/assets/guides/painting-brushes-dark.webp", "alt": "1: Drawing tools. 2: Watercolor group and preset in Tool Set. 3: Settings for the active brush."}
+image: {"light": "/assets/guides/painting-brushes-light.webp", "dark": "/assets/guides/painting-brushes-dark.webp", "alt": "1: Drawing tools. 2: Watercolor group and brush in Tool Set. 3: Settings for the active brush."}
 ---
 
-## Choose a tool and preset
+## Choose a brush
 
-Use **Pen** or **Pencil** for lines, **Brush** for paint, or **Airbrush** for softer deposition. **Tool Set** changes with the active tool. Brush includes Paint, Watercolor and Oil groups; select a group, then a named preset such as **Watercolor Wash**.
+The drawing tools sit in the toolbar along the left edge of Paint. Use **Pen** and **Pencil** for lines, **Paint Brush** for paint, and **Airbrush** for soft shading. When you choose a tool, **Tool Set** shows the brushes that belong to it. Some tools have several groups; Paint Brush, for example, has Paint, Watercolor and Oil paint. Choose a group first, then a brush such as **Watercolor Wash**.
 
-Choose the destination in **Layers** before drawing. A selected mask receives visibility edits instead of ordinary paint, so check its thumbnail when a stroke behaves unexpectedly.
+In Sketch, the **Brush** button in the title bar opens the same choices in a drawer. The drawer lists every kind of brush in one place, and it remembers the last brush you used, so a single tap brings you back to it.
 
-## Control the mark
+Before you draw, check which layer is selected in **Layers**. New paint always goes onto the selected layer.
 
-Use **Tool** to adjust size and opacity. The neighboring **Brush size** tab provides reusable sizes. Pressure response depends on the preset and device. Test a light-to-heavy curve at the size you intend to use.
+## Set the size and opacity
 
-Opacity changes new marks; it does not fade paint already on the layer. Flow controls deposition within a stroke. [Brush settings](/docs/advanced/brush-engine/) explains how to compare them.
+The **Tool** panel shows the settings for the current brush. **Brush size** sets how wide the stroke is, and **Opacity** sets how see-through the new paint is. The **Brush size** tab next to it keeps a row of sizes you can switch between quickly. In Sketch, the sliders at the edge of the screen do the same job and show a preview of the brush tip while you drag them.
 
-## Erase, blend or deform
+Opacity only affects the strokes you are about to make. To fade paint that is already on a layer, lower the layer's opacity in Layers instead. **Flow** is a little different from opacity: it controls how much paint builds up as you go over the same area within one stroke. [Brush settings](/docs/advanced/brush-engine/) explains these in more depth.
 
-**Eraser** removes paint from the active target. **Blend** mixes existing color, while **Liquify** moves existing paint. Try these on a duplicate layer before a large change. Undo restores the last document edit.
+## Erase, blend and push paint
 
-Choose a color in [Color and eyedropper](/docs/painting/color/), then keep the adjustments you like in the current workspace.
+**Eraser** removes paint from the selected layer. **Blend** softens and mixes colors that are already on the canvas, and **Liquify** pushes paint around as if it were wet. In Sketch, Blend and Liquify are together under the **Sculpt** button. These tools change existing paint, so try them on a copy of the layer if you want to keep the original.
+
+To choose colors, continue with [Color and eyedropper](/docs/painting/color/).

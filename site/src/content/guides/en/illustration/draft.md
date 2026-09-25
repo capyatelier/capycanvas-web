@@ -1,27 +1,27 @@
 ---
 title: "Sketching"
-description: "Draw a pencil sketch above a separate color rough."
-purpose: "Keep the preliminary drawing and color study on separate layers. A sketch records the forms; the rough colors let you compare the palette without repainting the pencil lines."
-techniques: ["Draw with a pencil preset and pressure.", "Select and transform a part of the sketch.", "Keep rough colors below the drawing."]
-figure: "1: Pencil presets. 2: Sketch above Color rough in Layers. 3: Pencil size and opacity controls."
+description: "Draw a pencil sketch, and try out colors on a separate layer."
+purpose: "A sketch is where you work out the shapes, and a color rough is where you try out the colors. Keeping them on separate layers means you can change the colors as often as you like without touching your pencil lines."
+techniques: ["Draw with a pencil and pen pressure.", "Select and fix part of the sketch.", "Put rough colors on a layer below the sketch."]
+figure: "1: Pencil brushes. 2: Sketch above Color rough in Layers. 3: Pencil size and opacity."
 related: ["tools/selections", "tools/transforms", "painting/color"]
-image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/assets/guides/illustration-draft-dark.webp", "alt": "1: Pencil presets. 2: Sketch above Color rough in Layers. 3: Pencil size and opacity controls."}
+image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/assets/guides/illustration-draft-dark.webp", "alt": "1: Pencil brushes. 2: Sketch above Color rough in Layers. 3: Pencil size and opacity."}
 ---
 
 ## 1. Draw the sketch
 
-Create a paint layer named **Sketch** and choose **Pencil** in Tool Set. Draw a disc, a curved ribbon and a tilted block with light construction lines before refining the contours. Adjust brush size in Tool and vary pressure for the stronger lines.
+Add a new layer and name it **Sketch**. Choose the **Pencil** tool and one of the pencils in Tool Set. Start with light lines to find the disc, the curved ribbon and the tilted block, then press harder to firm up the outlines you want to keep. Set the pencil's size in the Tool panel.
 
-The example overlaps three abstract shapes with loose looping lines and hatching. Leave room around the silhouette so later selections and strokes are easy to inspect.
+Leave a little space around the shapes. It makes the later stages easier, because you will be able to see clearly where each shape ends.
 
-## 2. Correct a part
+## 2. Fix a part that's not quite right
 
-Use **Lasso selection** to enclose an area that needs moving, then choose **Scale / rotate**. Move or resize the selected paint, choose **Apply transform**, and use **Deselect pixels** before drawing elsewhere.
+If one part is in the wrong place or the wrong size, you don't need to redraw it. Choose **Lasso selection** and draw a loop around that part. Then choose **Scale / rotate**, drag the part into place or resize it, and select **Apply transform**. Choose **Select → Deselect pixels** before you continue drawing.
 
-The [selection](/docs/tools/selections/) and [transform](/docs/tools/transforms/) references explain the editing target and preview controls. Undo a poor adjustment while keeping the rest of the sketch.
+The [selection](/docs/tools/selections/) and [transform](/docs/tools/transforms/) guides explain these tools in more detail. If a change goes wrong, just undo it.
 
-## 3. Add the color rough
+## 3. Try out the colors
 
-Add **Color rough** below Sketch. Use a broad brush or **Lasso Fill** to try teal, ochre and terracotta for the three shapes. These marks are a color study, so their boundaries can remain loose. Keep the pencil strokes on Sketch.
+Add another layer named **Color rough** and drag it below Sketch. For each shape, choose a color, draw around the shape with **Lasso selection**, and choose **Edit → Fill selection**. The example uses teal for the ribbon, ochre for the disc and terracotta for the block. These are rough colors, so the edges don't need to be neat. Lower the layer's opacity a little so the pencil lines stay easy to see.
 
-Hide Color rough briefly if it makes the drawing hard to inspect. Save a `.capy` copy, then continue to [Line art](/docs/illustration/ink/) with the two layers still separate.
+Hide Color rough for a moment whenever you want to see the sketch on its own. Save your drawing, then continue to [Line art](/docs/illustration/ink/).

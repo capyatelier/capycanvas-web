@@ -1,27 +1,29 @@
 ---
 title: "Brush settings"
-description: "Adjust a preset’s marks, paint buildup and response."
-purpose: "Tool exposes settings for the selected preset. Compare one repeatable stroke after each change so you can tell which parameter changed the result."
-techniques: ["Separate size, opacity and flow.", "Adjust the tip and spacing.", "Check pressure before changing brush behavior."]
-figure: "1: Selected preset. 2: Size, opacity and flow. 3: Brush size tab for preset sizes."
+description: "Fine-tune a brush by changing one setting at a time."
+purpose: "Each brush comes with settings that suit it, but you can adjust them for your own style. The clearest way to learn what a setting does is to draw the same stroke before and after changing it, so you can see the difference side by side."
+techniques: ["Compare size, opacity and flow.", "Adjust the brush tip.", "Get the most from pencils, pastels and paint."]
+figure: "1: Brushes in Tool Set. 2: Size, opacity, flow and tip settings. 3: Brush size tab with sizes you use often."
 related: ["painting/brushes", "advanced/custom-brushes", "advanced/input"]
-image: {"light": "/assets/guides/advanced-brush-engine-light.webp", "dark": "/assets/guides/advanced-brush-engine-dark.webp", "alt": "1: Selected preset. 2: Size, opacity and flow. 3: Brush size tab for preset sizes."}
+image: {"light": "/assets/guides/advanced-brush-engine-light.webp", "dark": "/assets/guides/advanced-brush-engine-dark.webp", "alt": "1: Brushes in Tool Set. 2: Size, opacity, flow and tip settings. 3: Brush size tab with sizes you use often."}
 ---
 
-## Compare the same stroke
+## Compare one change at a time
 
-Choose a preset close to the desired result. Keep the layer at full opacity with **Normal** blending while testing. Draw the same curve at the same size, changing one setting between strokes. Scroll **Tool** for the controls available to that preset.
+Start from the brush that is closest to what you want. Draw a test stroke on an empty layer, change one setting in the **Tool** panel, and draw the same stroke again beside it. Scroll the Tool panel to see every setting the brush offers; different brushes offer different settings.
 
-Brush size changes the mark’s width. Opacity controls its transparency, while flow changes how paint builds up during the stroke. Compare one continuous stroke with several overlapping strokes. Layer opacity changes all existing paint and should stay fixed during this comparison.
+**Brush size** sets the width of the stroke. **Opacity** sets how see-through the whole stroke is, while **Flow** sets how much paint each part of the stroke adds, so paint builds up where the stroke overlaps itself. A low flow with full opacity is good for building up shading gradually within a single stroke.
 
-## Adjust the tip
+## Shape the tip
 
-A brush places repeated tip impressions along the path. **Spacing** controls their separation; larger values can expose individual impressions. **Hardness**, tip angle and variation controls change the mark’s edge and orientation where the preset supports them.
+The settings under **Tip** change the edge and texture of the mark. **Hardness** makes the edge crisp or soft. **Spacing** matters for brushes that stamp their tip along the stroke, such as spray and some paint brushes; a larger spacing separates the stamps so you can see each one. Other brushes draw a smooth, continuous stroke and don't need it.
 
-Different media expose different settings. A watercolor or oil preset can interact with existing paint, so test it both on empty paper and over another color.
+You can also change settings from the **Tool Options** bar, which appears along the top of Photo and can be added to any toolbar. Double-click the name of a setting there to put it back to the brush's original value.
 
-## Keep a useful response
+## Paper, pencils and paint
 
-If pressure produces no variation, first test a pencil and check [input settings](/docs/advanced/input/). Adjusting the brush cannot supply missing device pressure.
+Pencils, charcoal and pastels catch the grain of the paper. The grain stays in place on the page, so going over an area again fills in more of it, just as it would on real paper. If your pen reports tilt, tilting it lays the side of the pencil down for broader shading.
 
-Your changes belong to the current workspace. [Save and reset brush settings](/docs/advanced/custom-brushes/) explains how to preserve a setup and return to defaults.
+Paint brushes behave differently from dry media. Oil paint picks up the color underneath and carries it along the stroke, and watercolor soaks into the paper and keeps spreading while it's wet. Try these over existing paint as well as on empty paper, because they react to what is already there.
+
+If pressure doesn't change your strokes at all, check your [pen settings](/docs/advanced/input/) before adjusting the brush.

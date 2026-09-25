@@ -1,48 +1,46 @@
 # Maintaining the documentation
 
 The guides are an Astro content collection in `src/content/guides/`. They follow
-the current web editor, with short references and a four-stage illustration
-exercise. Keep instructions tied to observed controls and the recorded product
+the current web editor, with short tutorial-style references and a four-stage
+illustration exercise. Keep instructions tied to observed controls and the recorded product
 revision. Release availability must agree with the download page; source code
 for a native client does not establish that a native release is available.
 
 ## Structure
 
-`src/data/docs-nav.mjs` defines seven groups and 25 stable topic paths:
+`src/data/docs-nav.mjs` defines eight groups and 30 stable topic paths:
 
-- **Getting started:** quickstart; workspace and canvas.
-- **Drawing:** brushes and painting; color and eyedropper; brush settings;
+- **Getting started:** quickstart; workspaces and canvas; open, save and recover
+  (`tools/files`); export an image (`output/export`).
+- **Drawing:** brushes and painting; color and eyedropper; palettes; brush settings;
   saving and resetting brush settings.
 - **Layers and masks:** layers; masks and clipping; groups and blending.
-- **Selections and editing:** selections and fill; transforms; gradients;
-  shapes; rulers and snapping.
-- **Filters and output:** filters and properties; editing an imported image;
-  saving and exporting.
+- **Selections:** selection tools (`tools/selections`); Quick Mask and selection
+  layers; select by brightness (`selections/tonal-range`).
+- **Editing tools:** transforms; gradients; shapes; rulers and snapping.
+- **Photos and color:** edit a photo; filters and adjustments; color spaces, HDR and
+  proofing (`color/management`).
 - **Customize:** panels/toolbars/title bar; workspace management; input.
 - **Illustration tutorial:** introduction, then sketching → line art → masking
   → rendering, using the same example document throughout.
 
 The overview introduces the product before directing readers to guides. Its
-short opening and real Paint screenshot lead into painting, workspaces and Zen mode,
-pen/touch/mouse input, perceptual color, responsiveness, and native desktop/tablet
-applications. Concepts link to relevant guides or download availability; the
-responsive canvas section links to the GitHub repository root as “System
-architecture.” Getting started links the Web Demo,
-downloads, Quickstart and the tutorial introduction. The sidebar remains the complete
-topic index. Overview copy lives in `docs-ui.mjs`.
+short opening and real Paint screenshot lead into six sections: painting and
+physical media, the three workspaces and Zen mode, pen/touch/mouse input with
+120 Hz responsiveness, color (OKLCH, palettes, wide gamut, 16-bit, HDR and Proof),
+photo editing, and native desktop/tablet applications. The native section links to
+the GitHub repository root as “System architecture.” Getting started links the
+Web Demo, downloads, Quickstart and the tutorial introduction. The sidebar remains
+the complete topic index. Overview copy lives in `docs-ui.mjs`.
 
-Use warm, concrete prose on this landing page. Each sentence should develop its
-section's central idea, without restating the introduction, listing incidental
-controls or adding generic reassurance. Explain the design intention and what it
-enables for an artist. A short instruction is useful when it answers a stated need,
-such as clicking the Capybara to enter Zen mode when someone wants no distractions.
-Connect 120 Hz responsiveness to reduced pen lag. Explain the performance and
-battery-life benefits of native compilation and platform-native UI toolkits.
-OKLCH selection is available; higher-precision color, HDR, proofing and RAW
-workflows must not be described as shipped based on design proposals. Native
-downloads must reflect current availability. Existing topic URLs are retained,
-including `advanced/` pages grouped under Drawing or Customize. Add new topic slugs
-without moving existing pages merely to match a navigation label.
+Use warm, concrete prose on this landing page, in the same tone as the existing
+sections. Each sentence should develop its section's central idea for an artist,
+without turning into a feature list or technical specification, and without
+sounding like an advertisement. Reasonable descriptions of what the app is designed
+to do are fine; they do not each need a benchmark. Native downloads must reflect
+current availability. Existing topic URLs are retained, including `advanced/` pages
+grouped under Drawing or Customize. Add new topic slugs without moving existing
+pages merely to match a navigation label.
 
 ## English first, one topic at a time
 
@@ -88,56 +86,48 @@ short sidebar label is clearer; the tutorial's full title appears as its H1, wit
 
 ## Editorial style
 
-Assume readers are comfortable with computers and office software. Explain what
-they need to decide or do in Capy Canvas, including the result and the reason when
-it is not obvious. Do not walk through familiar dialogs or list their fields just
-because those controls exist. Quickstart covers versions, hardware, and a pen
-check, then links to painting basics and the tutorial introduction.
+Write like a friendly tutorial. Assume readers are comfortable with computers but
+new to Capy Canvas. Explain only what they need to do the task, using complete,
+fleshed-out sentences for those few ideas. Avoid short, dense sentences that pack
+several facts together, and leave out implementation details a reader doesn't need,
+such as how the renderer, storage or file transport work. Don't walk through
+familiar dialogs or list every field just because it exists.
 
 Every guide starts with a practical explanation of what the reader is trying to
 do and why the main tool or concept helps. Follow it with two to four concrete
-techniques or controls they will learn, before the detailed steps. For the four
-tutorial stages, number the step headings. Introduce an operation before asking
-the reader to perform it. Avoid abstract learning goals: “Use a mask to correct
-the ribbon's edge” explains more than “Build a flexible, non-destructive workflow.”
-The introduction describes the intended result and the overall sequence; individual
-stages should not repeat the entire tutorial's setup.
-
-Write complete, natural sentences. Be concise by limiting each section to its
-current task, not by compressing explanations into fragments. Use a neutral manual
-register, with procedures for tasks and practical explanations for references.
-Headings should identify the operation. Explain controls through a concrete use:
-brush opacity changes new marks, while layer opacity changes all existing paint
-on the layer. Generic advice about lighting, composition, or artistic confidence
-does not substitute for instructions on using the editor.
+techniques they will learn, before the steps. For the four tutorial stages, number
+the step headings. Introduce an operation before asking the reader to perform it,
+and explain a control through a concrete use: brush opacity changes new marks,
+while layer opacity changes all existing paint on the layer. Headings should name
+the task. Generic advice about lighting, composition, or artistic confidence does
+not substitute for instructions on using the editor.
 
 The tutorial follows one abstract shape study. Preserve the named layers across
 stages: Sketch and Color rough; Line art; Ribbon, Disc, and Block; then clipped
 shading layers such as Ribbon shading. Introduce selections during sketch corrections,
-masks when preparing base colors, and clipping during rendering. Explain each
-concept when it first becomes necessary. Keep engine parameters, blending details,
-and alternate methods in linked reference pages rather than front-loading them.
+masks when preparing base colors, and clipping during rendering. Keep engine
+parameters, blending details, and alternate methods in linked reference pages.
 
 Check the document state between steps. A mask can reveal only existing paint;
 the masking stage fills the entire base layer so later mask edits can extend its
-visible boundary. Keep clipped layers directly above their base, in the stated
-order. Set a selection's reference before selecting, and clear it before the next unrestricted drawing operation. To fill an entire
-layer with Fill selection, select its content thumbnail, use Select all pixels,
-Fill selection, then Deselect pixels. A fill command needs a pixel selection.
+visible boundary. On a mask, any brush reveals and the Eraser hides; the paint color
+does not matter. Keep clipped layers directly above their base, in the stated
+order. To fill an entire layer, use Select all pixels, Fill selection, then Deselect
+pixels. A fill command needs a pixel selection.
 
 Use established drawing terms. The tutorial stages are **sketching, line art,
 masking, and rendering**. Distinguish the color rough from base colors, and
 selections from layer masks, clipping, and alpha lock. Define terms when their
 meaning matters to the operation. Do not invent feature names or menu labels.
 
-Avoid promotional headings (“Go deeper”), encouragement (“find your way around”),
-vague benefits (“make room to draw”), and narrative transitions (“one drawing,
-four phases”). Remove author-directed notes such as “Cover…,” “Explain…,” and
+Avoid promotional headings (“Go deeper”), vague benefits, and narrative
+transitions that don't help the reader do the task. Remove author-directed notes such as “Cover…,” “Explain…,” and
 “Show…” from published guides. The brief status notice identifies the guide’s scope;
 the body should still contain useful instructions rather than notes to an author.
 
-Translations should use complete sentences, the same neutral register, and
-conventional terminology for their language. Keep the example file’s English layer names in every language so readers can
+Translations should use complete, natural sentences, the same friendly register,
+and conventional terminology for their language. Keep the app's English control
+labels in bold, as they appear in the editor. Keep the example file’s English layer names in every language so readers can
 match the screenshots and downloadable projects. Translate the surrounding
 explanation and use conventional terms for the operations:
 
@@ -174,7 +164,13 @@ without JS it opens the light image while the inline picture still follows CSS. 
 several captures of the same illustration for the four phases; show the active
 tool, relevant settings, and layer stack when they explain the step. The overview
 reuses the tutorial's unannotated Paint screenshot, with accessible alt text and
-no visible caption or instructional image hint.
+no visible caption or instructional image hint. Guides always use the abstract
+study, including the photo-editing pages.
+
+The homepage showcase (`src/components/Home.astro`) crossfades between the Sketch,
+Paint and Photo workspaces, each showing finished artwork supplied by Capy Atelier.
+Those sources are the `.capy` projects in `scripts/capture/showcase/`; they are
+capture inputs rather than published downloads.
 
 Do not include AI-generated illustration artwork. The current original abstract
 study is drawn in the actual app through scripted pen input and layer actions.
@@ -188,7 +184,8 @@ source corrections explicit; do not silently modify the adjacent app checkout.
 Custom behavior belongs in a small Astro component with a processed browser script.
 `PlatformNotes.astro` demonstrates this: detect the device, let the reader change
 it, remember the choice, and leave every variant in the static HTML. Use that same
-approach for future comparison sliders or slide galleries. Reading a guide should
+approach for future comparison sliders or slide galleries; the homepage showcase
+switches slides with styled radio buttons, so it also works without JavaScript. Reading a guide should
 not initialize the editor or require WebGPU. A future live exercise should start
 only after an explicit action, with a static image and instructions as its fallback.
 
@@ -237,11 +234,14 @@ These are research references, not dependencies or sources of republished artwor
 
 Control details were checked against the public app source: the
 [shortcut defaults](https://github.com/capyatelier/capycanvas/blob/main/crates/layer-ui/src/shortcuts.rs),
-[panel customization](https://github.com/capyatelier/capycanvas/blob/main/docs/panel-customization.md),
-[preferences and shortcut editor](https://github.com/capyatelier/capycanvas/blob/main/docs/settings-implementation-plan.md),
+[panel customization](https://github.com/capyatelier/capycanvas/blob/main/docs/ui/panel-customization.md),
+[default workspaces](https://github.com/capyatelier/capycanvas/blob/main/docs/ui/default-workspaces.md),
+[supported photo formats](https://github.com/capyatelier/capycanvas/blob/main/crates/layer-color/src/photo.rs),
+[export choices](https://github.com/capyatelier/capycanvas/blob/main/apps/layer-web/export-controls.js)
 and [built-in brush presets](https://github.com/capyatelier/capycanvas/blob/main/crates/layer-core/src/presets.rs).
 Recheck those when updating instructions. Do not invent names for unfinished
-controls or supported import/export formats; the relevant reference page should
-describe only workflows verified in the current product. Workspace-owned brush
-overrides are available; a standalone custom-preset import/export library is not
-part of this guide. Color-management design proposals are not shipped features.
+controls or supported import/export formats. Wide-gamut color, 16-bit and HDR
+editing, HDR export and print proofing are part of the web editor; RAW development,
+healing, cloning, cropping and CMYK editing are not, so the guides do not describe
+them. Workspace-owned brush overrides are available; a standalone custom-preset
+import/export library is not part of this guide.

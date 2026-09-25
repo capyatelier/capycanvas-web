@@ -1,27 +1,27 @@
 ---
 title: "下描き"
-description: "色ラフと鉛筆の下描きを別レイヤーに描きます。"
-purpose: "下描きは形を記録し、色ラフは配色を比較するために使います。分けておけば、鉛筆の線を塗り直さずに色を試せます。"
-techniques: ["鉛筆と筆圧で描きます。", "一部を選択して変形します。", "色ラフを下描きの下に置きます。"]
-figure: "1：鉛筆プリセット。2：Color roughの上にあるSketch。3：鉛筆のサイズと不透明度。"
+description: "鉛筆で下描きをし、別のレイヤーで色を試します。"
+purpose: "下描きでは形を決め、色ラフでは色を試します。2つを別々のレイヤーにしておけば、鉛筆の線に触れることなく、何度でも色を変えられます。"
+techniques: ["鉛筆と筆圧で描きます。", "下描きの一部を選択して直します。", "下描きの下のレイヤーに大まかな色を置きます。"]
+figure: "1：鉛筆のブラシ。2：LayersでColor roughの上にあるSketch。3：鉛筆のサイズと不透明度。"
 related: ["tools/selections", "tools/transforms", "painting/color"]
-image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/assets/guides/illustration-draft-dark.webp", "alt": "1：鉛筆プリセット。2：Color roughの上にあるSketch。3：鉛筆のサイズと不透明度。"}
+image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/assets/guides/illustration-draft-dark.webp", "alt": "1：鉛筆のブラシ。2：LayersでColor roughの上にあるSketch。3：鉛筆のサイズと不透明度。"}
 ---
 
-## 1. 下描きする
+## 1. 下描きをする
 
-**Sketch**という描画レイヤーを作り、Tool Setで**Pencil**を選びます。円、曲がったリボン、傾いた四角形を軽い補助線で描き、輪郭を整えます。Toolでサイズを調整し、強い線には筆圧を使います。
+新しいレイヤーを追加し、**Sketch**という名前を付けます。**Pencil**ツールを選び、Tool Setで鉛筆を1つ選びます。まずは軽い線で円、曲がったリボン、傾いた四角形の形を探り、残したい輪郭は強めに押してはっきりさせます。鉛筆のサイズはToolパネルで設定します。
 
-作例は3つの抽象的な形に、輪を描く線やハッチングを重ねています。周囲に余白を残すと、後の選択範囲や筆跡を確認しやすくなります。
+形の周りには少し余白を残しておきましょう。それぞれの形がどこで終わるのかがはっきり見えるので、後の工程が楽になります。
 
-## 2. 一部を直す
+## 2. うまくいかない部分を直す
 
-**Lasso selection**で移す部分を囲み、**Scale / rotate**を選びます。移動や拡大縮小後に**Apply transform**を選び、別の場所に描く前に**Deselect pixels**を使います。
+一部の位置や大きさが違っていても、描き直す必要はありません。**Lasso selection**を選び、その部分をぐるりと囲みます。次に**Scale / rotate**を選び、その部分をドラッグして正しい位置に動かすか、サイズを変えてから、**Apply transform**を選択します。描き続ける前に、**Select → Deselect pixels**を選びます。
 
-[選択](/ja/docs/tools/selections/)と[変形](/ja/docs/tools/transforms/)のページで編集対象とプレビューを説明します。うまくいかなければ、その変更を元に戻します。
+これらのツールについては、[選択ツール](/ja/docs/tools/selections/)と[移動と変形](/ja/docs/tools/transforms/)のガイドで詳しく説明しています。変更がうまくいかなかったら、元に戻すだけで大丈夫です。
 
-## 3. 色ラフを加える
+## 3. 色を試す
 
-Sketchの下に**Color rough**を追加します。太いブラシや**Lasso Fill**で3つの形に青緑、黄土色、テラコッタを試します。配色の検討なので輪郭はラフで構いません。鉛筆の線はSketchに保持します。
+**Color rough**という名前のレイヤーをもう1枚追加し、Sketchの下にドラッグします。形ごとに色を選び、**Lasso selection**で形の周りを囲んで、**Edit → Fill selection**を選びます。作例では、リボンに青緑、円に黄土色、四角形にテラコッタを使っています。色ラフなので、輪郭がきれいでなくてもかまいません。鉛筆の線が見やすいように、レイヤーの不透明度を少し下げておきます。
 
-見づらければColor roughを一時的に隠します。`.capy`を保存し、2枚を分けたまま[線画](/ja/docs/illustration/ink/)へ進みます。
+下描きだけを見たいときは、一時的にColor roughを非表示にします。ドキュメントを保存したら、[線画](/ja/docs/illustration/ink/)に進みます。

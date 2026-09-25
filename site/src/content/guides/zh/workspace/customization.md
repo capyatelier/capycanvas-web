@@ -1,27 +1,27 @@
 ---
 title: "面板、工具栏与标题栏"
-description: "安排操作区，并恢复以前的布局。"
-purpose: "把面板移到常用位置，让频繁操作容易触及。布局有独立历史，恢复位置不会撤销绘画。"
-techniques: ["停靠、浮动、合并标签和折叠面板。", "配置工具栏与标题栏。", "单独撤销布局修改。"]
-figure: "1：用于移动的面板标题或手柄。2：工具栏。3：包含布局和标题栏操作的Window菜单。"
+description: "在画布周围布置面板和工具栏，并更改界面的外观。"
+purpose: "每个面板和工具栏都可以移到你的手习惯的位置，如果你用惯了其他应用，这一点尤其有用。布局修改有独立的撤销，所以调整界面永远不会撤销你画的内容。"
+techniques: ["移动、组合和折叠面板。", "选择工具栏和标题栏中显示的内容。", "更改界面的外观，并撤销布局修改。"]
+figure: "1：用于移动面板的面板标签。2：工具栏。3：包含布局和标题栏命令的Window菜单。"
 related: ["workspace", "workspace/management", "advanced/input"]
-image: {"light": "/assets/guides/workspace-customization-light.webp", "dark": "/assets/guides/workspace-customization-dark.webp", "alt": "1：用于移动的面板标题或手柄。2：工具栏。3：包含布局和标题栏操作的Window菜单。"}
+image: {"light": "/assets/guides/workspace-customization-light.webp", "dark": "/assets/guides/workspace-customization-dark.webp", "alt": "1：用于移动面板的面板标签。2：工具栏。3：包含布局和标题栏命令的Window菜单。"}
 ---
 
-## 放置面板
+## 布置面板
 
-拖动标题、标签或手柄。停靠提示显示可连接的位置，放到空白位置则保持浮动。面板可共享标签组，折叠列可作为抽屉展开；拖动边缘调整大小。
+拖动面板的标签或手柄即可移动它。拖动时，标记会显示可以停靠的位置；在其他任何地方松开，面板就会自由浮动。把一个面板放到另一个面板的标签上，可以把它们组合在一起；拖动面板之间的边界，可以把其中一个放大。一整列面板还可以折叠成一排图标，让每个面板只在需要时以抽屉形式打开。
 
-标题和手柄开始移动即可拖动。工具块需要长按后排序，鼠标也一样。列表中，触摸和笔通常需长按行，拖手柄则立即开始。
+使用鼠标时，一拖动面板就会开始移动。使用笔或手指时，请先按住片刻再拖动，这样快速轻点就不会被误当成移动。
 
-## 选择操作项
+## 选择工具栏
 
-打开面板或工具栏的上下文菜单配置内容与显示。<strong>Manage Toolbars…</strong>管理可复用工具栏；<strong>Customize Title Bar…</strong>打开标题栏编辑器。
+右键点击工具栏或长按工具栏，就可以选择它显示哪些工具和命令。工具栏里不只可以放按钮：你可以添加笔刷大小和不透明度滑块，或者添加一个始终显示当前工具设置的**Tool Options**工具栏。拖动工具栏的手柄可以移动它，把它放在任意屏幕边缘的开头、中间或末尾附近，它就会停靠在那里。**Window → Quick Access Toolbars**用于创建和管理额外的工具栏。
 
-在标题栏编辑器中直接拖动项目和组件库中的块。组件通过拖放添加，点击不会添加。完成编辑保留变化，取消则退出预览。
+<strong>Window → Customize Title Bar…</strong>让你排列窗口顶部的按钮，包括工作区切换器。把各项拖到合适的位置，完成后即可保留新的排列。
 
-## 恢复布局
+## 更改外观或撤销修改
 
-**Undo Layout Change**和**Redo Layout Change**只处理布局。普通撤销仍用于绘画。<strong>Restore Starting Layout…</strong>预览恢复初始布局，并保留画笔设置。
+**Preferences → Appearance**包含界面外观的设置。你可以选择浅色或深色主题、挑选强调色，并设置面板的透明程度，让作品柔和地透过面板显现出来。
 
-需要为另一项任务保留布局时，创建另一个[工作区](/zh/docs/workspace/management/)。
+用**Window → Undo Layout Change**和**Redo Layout Change**可以逐步撤销或重做布局修改；普通的撤销只作用于你的作品。要让工作区回到最初的样子，请选择<strong>Restore Starting Layout…</strong>。如果想保留多种布局，可以把每一种都保存为单独的[工作区](/zh/docs/workspace/management/)。

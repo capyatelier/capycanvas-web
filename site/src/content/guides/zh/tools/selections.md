@@ -1,25 +1,27 @@
 ---
-title: "选区与填充"
-description: "确定范围和边界来源，在目标图层上填色。"
-purpose: "像素选区限制编辑范围，但不选择编辑图层。因此可以读取一层上的线稿，把颜色填到另一层。"
-techniques: ["使用套索或自动选择。", "选择可见图像、编辑层或参考层作为来源。", "调整容差与边缘，完成后解除选区。"]
-figure: "1：Auto select及来源选项。2：容差与边缘设置。3：与边界来源分开的编辑图层。"
-related: ["tools/transforms", "layers/masks", "illustration/mask"]
-image: {"light": "/assets/guides/tools-selections-light.webp", "dark": "/assets/guides/tools-selections-dark.webp", "alt": "1：Auto select及来源选项。2：容差与边缘设置。3：与边界来源分开的编辑图层。"}
+title: "选区工具"
+description: "选中作品的一部分，让修改只作用于该区域。"
+purpose: "选区标出你想处理的那部分画面。选区激活时，绘画、填充和变换都只会影响选中的区域，作品的其余部分不会受到影响。Capy Canvas提供了多种选区工具，可以选择简单的形状、徒手画出的轮廓，以及颜色相近的区域。"
+techniques: ["选择合适的选区工具。", "增加或减去选区。", "填充选区，完成后取消选择。"]
+figure: "1：Tool Set中的选区工具。2：选区模式、羽化和形状选项。3：围绕圆形的椭圆选区。"
+related: ["selections/quick-mask", "selections/tonal-range", "layers/masks"]
+image: {"light": "/assets/guides/tools-selections-light.webp", "dark": "/assets/guides/tools-selections-dark.webp", "alt": "1：Tool Set中的选区工具。2：选区模式、羽化和形状选项。3：围绕圆形的椭圆选区。"}
 ---
 
-## 选择方法
+## 选择选区工具
 
-**Lasso selection**手动圈定边界；**Auto select**从已有图像读取区域。在Tool Set中选择可见图像、编辑图层或参考图层。要参考Line art，选中其行并使用Layers中的**Use selected layers as references**。
+在Paint中，从工具栏选择**Lasso selection**或**Auto select**，Tool Set就会列出所有选区工具。在Sketch中，它们位于**Select**按钮下；Photo则把大部分选区工具放在自己的工具栏中。
 
-填色前回到目标图层。**Lasso Fill**直接绘制并填充自由区域，与保留像素选区的套索工具不同。
+**Rectangle select**和**Ellipse select**用于画出简单的形状；按住**Shift**可以画出正方形或正圆，按住**Alt**可以从中心开始画。**Lasso selection**会跟随笔的轨迹自由圈选，**Polygonal lasso**则会在你点击的各点之间连出直线；再次点击第一个点或按**Enter**即可闭合选区。**Auto select**只需点击一下就能选中颜色相近的区域，**Select by color**则会一次选中所有该颜色的区域。另外两个工具**Paint selection**和**Tonal range**有各自的页面：[快速蒙版与选区图层](/zh/docs/selections/quick-mask/)和[按亮度选择](/zh/docs/selections/tonal-range/)。
 
-## 读取轮廓并修正边缘
+## 组合与柔化选区
 
-**Fill**直接填充检测区域，**Auto select**则允许先检查选区。它们的**Tool**设置包括**Tolerance**、**Close gaps**、**Expansion**和**Edge smoothing**。
+**Tool**面板顶部的四个按钮决定再次创建选区时会发生什么：替换当前选区、添加到当前选区、从当前选区中减去，或者只保留两者重叠的区域。你也可以按住**Shift**添加、按住**Alt**减去，而不必切换按钮。
 
-颜色变化导致区域碎裂时提高容差；填充漏到外部时检查轮廓并尝试闭合小间隙。少量扩张可填到抗锯齿线条下方。这些设置作用于下一次区域操作。
+**Feather radius**会柔化选区的边缘，让颜色和调整逐渐淡出，而不是在一条硬线上戛然而止。使用Auto select时，**Tolerance**控制颜色相差多少仍会被选中，**Close gaps**则可以防止选区从线稿的小缺口中漏出去。
 
-## 完成操作
+## 使用选区
 
-用**Fill selection**填充当前图层的选中像素，也可转为[图层蒙版](/zh/docs/layers/masks/)。填充或[变换](/zh/docs/tools/transforms/)后，使用**Select → Deselect pixels**，让后续笔画不受限制。
+选区激活时可以放心绘画，笔画只会落在选区之内。选择**Edit → Fill selection**可以用当前颜色填充选区，你也可以把选区转换为[图层蒙版](/zh/docs/layers/masks/)。**Select**菜单还可以反选、把选区扩展或收缩几个像素，或者用**Reselect**恢复上一次的选区。
+
+完成后，选择**Select → Deselect pixels**，让接下来的笔画可以画到任何地方。

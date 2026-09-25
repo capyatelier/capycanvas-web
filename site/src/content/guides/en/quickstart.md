@@ -1,25 +1,27 @@
 ---
 title: "Quickstart"
-description: "Open Paint, check your pen, and save your first drawing."
-purpose: "Make a few marks before adjusting the workspace. This checks that the editor and pen work together and gives you a small document to save."
-techniques: ["Choose Paint and create a document.", "Test pressure with a pencil preset.", "Save an editable project and export a PNG."]
-figure: "1: Paint workspace. 2: Tool Set. 3: Layers, where new marks are stored."
+description: "Open Capy Canvas, check your pen, and save your first drawing."
+purpose: "Before you rearrange anything or try every brush, it helps to make a few marks and save them. That way you know the editor and your pen are working together, and you have a small drawing to come back to."
+techniques: ["Open the editor and create a new drawing.", "Test pen pressure with a pencil.", "Save your drawing and export a copy to share."]
+figure: "1: Workspace switcher. 2: Tool Set, where you choose a brush. 3: Layers, where your marks are kept."
 related: ["workspace", "painting/brushes", "tools/files"]
-image: {"light": "/assets/guides/quickstart-light.webp", "dark": "/assets/guides/quickstart-dark.webp", "alt": "1: Paint workspace. 2: Tool Set. 3: Layers, where new marks are stored."}
+image: {"light": "/assets/guides/quickstart-light.webp", "dark": "/assets/guides/quickstart-dark.webp", "alt": "1: Workspace switcher. 2: Tool Set, where you choose a brush. 3: Layers, where your marks are kept."}
 ---
 
 ## Open the editor
 
-The [download page](/download/) lists installation options and current availability. Use the [Web Demo](https://editor.capycanvas.art/) in a browser with hardware WebGPU, or install that web app for offline use. A touchscreen alone does not supply pen pressure; use a pressure-sensitive pen supported by your device.
+The quickest way to start is the [Web Demo](https://editor.capycanvas.art/), which runs in your browser. It needs a browser with hardware-accelerated WebGPU, and after your first visit it keeps working even when you are offline. You can also install it as an app; the [download page](/download/) explains how, and it also shows when the desktop and mobile apps will be available.
 
-Select **Paint** in the top bar. Choose **File → New…** to create a document. Paint keeps Tool Set, Color and Layers visible; Sketch provides a smaller set of controls, while Photo emphasizes image adjustments.
+When the editor opens, choose **Paint** in the workspace switcher at the top of the window. Paint keeps your brushes, colors and layers on screen, which makes it a good place to learn. Then choose **File → New…**, pick a size, and select **Create**.
 
-## Check a first stroke
+## Make a first stroke
 
-Choose **Pencil**, then a pencil preset in **Tool Set**. Draw lightly, press harder, and lighten the pressure again. Adjust brush size in **Tool**. If the mark does not respond, check [pen settings](/docs/advanced/input/) before changing the brush. Use undo to remove the test.
+Choose the **Pencil** tool on the left, then pick one of the pencils in **Tool Set**. Draw a line that starts lightly, presses harder in the middle and lightens again at the end. If your pen reports pressure, the line gets thicker and darker where you pressed harder.
 
-## Save and continue
+If every line looks the same, the pen may not be sending pressure to the browser. The [pen and touch guide](/docs/advanced/input/) walks through what to check before you change any brush settings. Press **Ctrl+Z** to undo test marks you don't want to keep.
 
-Use **File → Save As…** to keep a `.capy` project, and **Export PNG…** for a flattened image. Workspace settings save separately from the drawing.
+## Save your work
 
-Continue with [Brushes and painting](/docs/painting/brushes/), or follow the [illustration tutorial](/docs/illustration/) through sketching, line art and color.
+Choose **File → Save As…** to save a `.capy` file. This keeps everything editable, including your layers, so you can pick up where you left off. When you want an ordinary image to share, choose **File → Export…** and save a PNG or JPEG copy.
+
+From here, [Brushes and painting](/docs/painting/brushes/) shows how to choose and adjust brushes, and the [illustration tutorial](/docs/illustration/) takes you through a complete drawing, from the first sketch to the final shading.

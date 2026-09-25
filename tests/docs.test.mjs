@@ -21,7 +21,7 @@ async function markdownFiles(dir) {
 }
 
 test('the documentation collection has one page per topic and locale, with no orphaned guides', async () => {
-  assert.deepEqual(docGroups, ['start', 'drawing', 'layers', 'editing', 'output', 'customize', 'illustration']);
+  assert.deepEqual(docGroups, ['start', 'drawing', 'layers', 'selections', 'editing', 'photo', 'customize', 'illustration']);
   assert.deepEqual(docTopics.filter(topic => topic.group === 'illustration').map(topic => topic.slug), ['illustration', 'illustration/draft', 'illustration/ink', 'illustration/mask', 'illustration/render']);
   assert.deepEqual(docTopics.filter(topic => topic.step).map(topic => topic.step), [1, 2, 3, 4]);
   assert.equal(new Set(docTopics.map(topic => topic.slug)).size, docTopics.length);
@@ -82,7 +82,7 @@ for (const locale of Object.keys(languages)) {
       assert.ok(links.includes('https://editor.capycanvas.art/'), 'Setup links to the usable web version');
       assert.ok(links.includes(route(locale, 'illustration')), 'Setup leads to the introduction before the first stage');
     }
-    const nextStage = { illustration: 'illustration/draft', 'illustration/draft': 'illustration/ink', 'illustration/ink': 'illustration/mask', 'illustration/mask': 'illustration/render', 'illustration/render': 'tools/files' }[slug];
+    const nextStage = { illustration: 'illustration/draft', 'illustration/draft': 'illustration/ink', 'illustration/ink': 'illustration/mask', 'illustration/mask': 'illustration/render', 'illustration/render': 'output/export' }[slug];
     if (nextStage) assert.ok(links.includes(route(locale, nextStage)), 'The tutorial provides a contextual link to its next task');
     assert.equal((body.match(/<h2 /g) || []).length, (markdown.match(/^## /gm) || []).length);
     assert.ok((body.match(/<p>/g) || []).length >= 1);

@@ -1,27 +1,27 @@
 ---
 title: "移动与变换"
-description: "移动、缩放或旋转图层及选中像素。"
-purpose: "Operation移动已有内容，Scale / rotate提供缩放和旋转手柄。这些操作会改变保存的作品，与画布视图操作不同。"
-techniques: ["选择图层及可选的像素选区。", "用手柄移动、缩放和旋转。", "应用或取消预览。"]
-figure: "1：Tool中的位置控制。2：画布中的变换预览。3：编辑图层。"
+description: "移动、缩放或旋转一个图层或作品的一部分。"
+purpose: "有时画面的某一部分几乎画对了，只是稍微大了一点、低了一点，或者角度不对。Operation工具可以移动、缩放和旋转它，不必重画，而且你可以先检查结果，再决定是否应用。"
+techniques: ["选择要移动的内容。", "用控制柄移动、缩放和旋转。", "应用或取消修改。"]
+figure: "1：Tool中的变换控件。2：画布上的变换预览。3：正在编辑的图层。"
 related: ["tools/selections", "workspace", "illustration/draft"]
-image: {"light": "/assets/guides/tools-transforms-light.webp", "dark": "/assets/guides/tools-transforms-dark.webp", "alt": "1：Tool中的位置控制。2：画布中的变换预览。3：编辑图层。"}
+image: {"light": "/assets/guides/tools-transforms-light.webp", "dark": "/assets/guides/tools-transforms-dark.webp", "alt": "1：Tool中的变换控件。2：画布上的变换预览。3：正在编辑的图层。"}
 ---
 
-## 选择修改对象
+## 选择要移动的内容
 
-点击目标图层的内容缩略图。只改一部分时，先建立[像素选区](/zh/docs/tools/selections/)。**Operation**移动编辑目标，**Scale / rotate**提供变换手柄。
+在Layers面板中选择要修改的图层。如果只需要移动图层的一部分，请先用[选区](/zh/docs/tools/selections/)圈出那部分。没有选区时，整个图层都会移动。
 
-拖动前检查缩略图。选中蒙版时改变的是可见边界；链接蒙版可随图层移动，仅在要单独移动蒙版时解除链接。
+在工具栏中选择**Operation**工具。它的**Move**模式会在你拖动时移动内容，**Scale / rotate**则会添加用于改变大小和角度的控制柄。在Sketch中，标题栏里的**Scale / rotate**按钮也能启动同样的操作。
 
-## 调整预览
+## 移动、缩放和旋转
 
-拖动内容进行移动，拖动周围手柄缩放，使用旋转手柄改变角度。需要保持比例时开启**Keep proportions**。Tool显示操作控制，调整期间预览保持待确认状态。
+在框内拖动可以移动内容。拖动四角和四边的控制柄可以放大或缩小，拖动框外的控制柄可以旋转。如果希望缩放时保持画面的比例，请在Tool面板中打开**Keep proportions**。
 
-尽量在一次预览内完成相关变化。反复应用栅格变换可能使边缘变软；需要比较多个方案时，先复制原图层。
+只要控制柄还显示着，一切都还没有定下来，所以不必着急。最好一次完成所有需要的修改，因为反复缩放同一片颜色会让边缘逐渐变软。如果拿不准，可以先复制图层，方便比较。
 
 ## 应用或取消
 
-**Apply transform**保留修改，**Cancel transform**返回原状。去其他位置绘画前解除选区。
+选择**Apply transform**保留修改，或选择**Cancel transform**让一切恢复原样。如果你只选中了图层的一部分，之后请选择**Select → Deselect pixels**，这样接下来的笔画就不会被限制在那个区域内。
 
-如果只是想换个绘画角度，使用Navigator或[视图控制](/zh/docs/workspace/)。这里介绍的是移动、缩放与旋转，不包含透视变形流程。
+向作品中[导入图像](/zh/docs/filters/image-editing/)时，也会出现同样的控制柄，方便你在选择**Apply**之前调整它的位置和大小。如果想转动视图而不是作品，请使用[工作区与画布](/zh/docs/workspace/)中介绍的Navigator旋转按钮。

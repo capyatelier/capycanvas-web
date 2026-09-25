@@ -1,27 +1,25 @@
 ---
-title: "笔、触摸与快捷键"
-description: "检查压感，把频繁操作放在容易使用的控制上。"
-purpose: "先确认设备输入，再修改画笔。压感正常后，通过偏好设置和快捷键调整反复使用的操作。"
-techniques: ["用铅笔测试压感。", "比较压力响应与笔画预测。", "分配快捷键，区分笔与触摸。"]
-figure: "1：Preferences分类。2：Input控制。3：Keyboard Shortcuts入口。"
+title: "笔、触控与快捷键"
+description: "确认笔能正常工作，调整笔的手感，并设置键盘快捷键。"
+purpose: "在修改任何笔刷设置之前，最好先确认笔能正常工作。确认之后，几项偏好设置和快捷键就能让绘画更加顺手，并让常用命令触手可及。"
+techniques: ["检查压感是否正常。", "调整压感、光标和笔画预测。", "设置键盘快捷键。"]
+figure: "1：Preferences的各个页面。2：Pen & Input设置。3：Keyboard Shortcuts。"
 related: ["painting/brushes", "advanced/brush-engine", "workspace"]
-image: {"light": "/assets/guides/advanced-input-light.webp", "dark": "/assets/guides/advanced-input-dark.webp", "alt": "1：Preferences分类。2：Input控制。3：Keyboard Shortcuts入口。"}
+image: {"light": "/assets/guides/advanced-input-light.webp", "dark": "/assets/guides/advanced-input-dark.webp", "alt": "1：Preferences的各个页面。2：Pen & Input设置。3：Keyboard Shortcuts。"}
 ---
 
-## 检查笔
+## 检查你的笔
 
-用内置铅笔画一条由轻到重、再放轻的线。如果粗细不变，在其他绘画应用中测试。两边都失败时检查设备或驱动；只有这里失败时检查编辑器输入与预设。
+选择一支铅笔，画一条先轻、再用力、然后再放轻的笔画。如果整条线从头到尾都没有变化，请在另一个绘画应用中试试同样的操作。如果那里的压感也不起作用，问题很可能出在数位板驱动或其设置上。如果只在Capy Canvas中失效，请检查下面的设置。
 
-数位板应映射到正确屏幕并保持比例。数位屏需检查中央和边缘的光标对齐。压感与倾斜需要设备支持。
+使用独立的数位板时，请确认数位板已映射到显示Capy Canvas的屏幕上。使用数位屏时，请检查光标是否与笔尖对齐，屏幕中间和边缘附近都要检查。笔身侧面的按键在画布上不起任何作用，除非你在数位板设置中为它们分配了功能，例如某个键盘快捷键。
 
-## 调整响应
+## 调整笔的手感
 
-在**Preferences**中检查输入设置。**Pressure response**改变传入压力的映射；**Enable stroke prediction**估计下一次笔位置。**Use browser stroke prediction**使用浏览器提供的估计；可用时，**Prediction amount**调整编辑器自身的预测量。提高预测可缩短可见笔迹与笔尖的距离，但也可能越过转弯位置。每次改一项，用同一曲线比较。
+打开**Preferences**并选择**Pen & Input**。**Pressure response**决定你需要用多大的力：数值越低，轻压的效果就越明显。**Cursor shape**决定指针在画布上的样子，**Hide cursor when painting**则会在绘画时把指针藏起来，免得碍事。
 
-触摸支持平移、捏合和旋转。如果手掌落下时产生笔迹，检查设备触摸行为。单个预设的调整见[画笔设置](/zh/docs/advanced/brush-engine/)。
+**Enable stroke prediction**会在最后收到的点之外稍微往前多画一点，帮助线条跟上快速移动的笔。如果笔画末端在急转弯处似乎冲过了头，请降低**Prediction amount**或关闭预测。当浏览器本身能够预测笔画时，**Use browser stroke prediction**会改用浏览器的预测。每次只修改一项设置，每改一次都画同一条曲线来比较。
 
 ## 设置快捷键
 
-在**Keyboard Shortcuts**中选择命令并添加按键，应用前处理冲突。常用默认键包括**Ctrl+Z**撤销、**空格拖动**平移、**F**适合画布、**Tab**进入Zen。Apple系统在平台映射支持时可使用Command。
-
-需要时通过数位板驱动把笔按钮映射为这些按键。
+打开**Help → Keyboard Shortcuts**，可以看到所有命令及其按键。选择一个命令即可为它设置新的快捷键；如果按键已被占用，Capy Canvas会提醒你。几个实用的默认快捷键：**Ctrl+Z**撤销，按住**Space**拖动来平移，**Ctrl+0**让作品完整显示在屏幕上，**I**切换到吸管，**Q**进入Quick Mask，**Tab**进入Zen模式。在Mac上，凡是用Ctrl的地方请改用Command。

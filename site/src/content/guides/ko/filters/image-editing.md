@@ -1,27 +1,25 @@
 ---
-title: "가져온 이미지 편집"
-description: "이미지를 레이어로 가져와 조절하고 사본을 내보냅니다."
-purpose: "Photo는 이미지 조정에 편한 배치를 제공합니다. 이미지 가져오기는 현재 문서에 레이어를 추가하고, .capy 열기는 편집 가능한 문서 전체를 복원합니다."
-techniques: ["Photo로 이미지를 가져옵니다.", "편집 가능한 색 조정을 추가합니다.", "레이어가 있는 프로젝트와 PNG를 저장합니다."]
-figure: "1: Photo 작업 공간. 2: 가져온 이미지와 효과 레이어. 3: 색 조정의 Properties."
-related: ["filters/overview", "tools/transforms", "tools/files"]
-image: {"light": "/assets/guides/filters-image-editing-light.webp", "dark": "/assets/guides/filters-image-editing-dark.webp", "alt": "1: Photo 작업 공간. 2: 가져온 이미지와 효과 레이어. 3: 색 조정의 Properties."}
+title: "사진 편집하기"
+description: "사진을 열고, 편집 가능한 레이어로 색을 조정하고, 결과를 내보냅니다."
+purpose: "Photo는 사진 보정을 위한 작업 공간입니다. 카메라나 휴대폰으로 찍은 사진을 바로 열어, 조정 레이어로 밝게 하거나 색을 바꾸고, 완성본을 내보낼 수 있습니다. 이 모든 과정에서 원본 파일은 바뀌지 않습니다."
+techniques: ["사진을 열거나 기존 그림에 추가합니다.", "편집 가능한 필터 레이어로 조정합니다.", "편집 내용을 저장하고 사본을 내보냅니다."]
+figure: "1: Photo 작업 공간. 2: 사진과 조정 레이어. 3: 조정의 Properties."
+related: ["filters/overview", "selections/tonal-range", "output/export"]
+image: {"light": "/assets/guides/filters-image-editing-light.webp", "dark": "/assets/guides/filters-image-editing-dark.webp", "alt": "1: Photo 작업 공간. 2: 사진과 조정 레이어. 3: 조정의 Properties."}
 ---
 
-## 문서로 가져오기
+## 사진 열기
 
-**Photo**를 선택하고 필요한 크기로 문서를 만듭니다. **Layers**아래의**Import image as layer**에서 브라우저가 읽을 수 있는 이미지를 선택합니다. 새 이미지 레이어가 추가됩니다.
+작업 공간 전환기에서 **Photo**를 고른 다음, <strong>File → Open…</strong>을 선택하고 사진을 고릅니다. Capy Canvas는 JPEG, PNG, TIFF, WebP, HEIC, AVIF, OpenEXR 파일을 열 수 있으므로, 대부분의 카메라와 휴대폰으로 찍은 사진을 바로 열 수 있습니다. 사진은 원래 크기와 원래 색 그대로 자기 탭에 열립니다.
 
-**Operation**이나**Scale / rotate**로 위치를 정합니다. 가져와도 문서 크기가 원본 이미지에 맞춰 바뀌지는 않습니다. 시험하는 동안 원본 파일을 보관합니다.
+이미 열려 있는 그림에 사진을 추가하려면 <strong>File → Import Image as Layer…</strong>를 선택하거나, 파일을 캔버스로 드래그합니다. 사진이 손잡이와 함께 나타나므로 위치와 크기를 조절할 수 있습니다. 자리를 잡았으면 **Apply**를 선택하고, 실제 크기로 쓰려면 <strong>Original Size (100%)</strong>를 선택합니다.
 
-## 모습 조절하기
+## 조정 추가하기
 
-**Filters**에서**Curves**나**Hue / Saturation**을 추가합니다. 효과 레이어를 고르고**Properties**에서 조절한 뒤 표시를 전환해 원본과 비교합니다.
+**Filters**를 열고 **Curves**, **Vibrance**, **Hue / Saturation** 같은 조정을 고릅니다. 조정은 사진 위에 새 레이어로 추가되고, 설정은 **Properties**에 나타납니다. 사진을 지켜보면서 설정을 조금씩 바꾸세요. 조정 레이어를 숨겼다가 다시 표시하면 결과를 원본과 비교할 수 있습니다.
 
-일부만 바꾸려면 마스크를 추가합니다. 무관한 내용에 작용하지 않도록 순서, 클리핑, 그룹을 확인합니다. 관계는[필터와 속성](/ko/docs/filters/overview/)에서 설명합니다.
+조정은 별도 레이어에 있으므로 언제든 돌아와 바꾸거나 흔적 없이 삭제할 수 있습니다. 사진의 일부만 조정하려면 먼저 그 영역을 선택하세요. 예를 들어 [밝기로 선택하기](/ko/docs/selections/tonal-range/)로 하늘을 선택할 수 있습니다. 조정 범위를 제한하는 다른 방법은 [필터와 조정](/ko/docs/filters/overview/)에서 설명합니다.
 
-## 저장과 내보내기
+## 저장하고 내보내기
 
-<strong>Save As…</strong>로 이미지와 편집 가능한 효과가 있는`.capy`를 저장합니다. <strong>Export PNG…</strong>는 공유용 합성 사본을 만듭니다. PNG를 열어 크기와 모습을 확인합니다.
-
-이 절차는 현재 공통 도구를 사용합니다. RAW 현상, 복구 브러시, 색상 프로파일 작업은 포함하지 않습니다.
+편집한 사진을 저장하면 Capy Canvas는 모든 조정 레이어가 담긴 `.capy` 파일을 저장하며, 원본 사진은 절대 덮어쓰지 않습니다. 결과를 공유하려면 <strong>File → Export…</strong>를 선택해 JPEG이나 PNG로 저장합니다. 내보내기 설정은 [이미지 내보내기](/ko/docs/output/export/)에서 설명합니다.

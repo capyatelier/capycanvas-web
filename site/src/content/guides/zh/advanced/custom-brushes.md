@@ -1,27 +1,27 @@
 ---
-title: "保存与重置画笔设置"
-description: "在工作区中保留修改，并按需恢复默认值。"
-purpose: "画笔调整随工作区保存。需要保留一套工具设置，同时尝试另一套时，可以创建另一个工作区。"
-techniques: ["保留各预设的修改。", "复制工作区用于另一套画笔设置。", "区分重置画笔与恢复布局。"]
-figure: "1：当前工作区。2：随工作区保存的工具设置。3：重置画笔的确认窗口。"
+title: "保存与重置笔刷设置"
+description: "保留你的笔刷调整，尝试新的设置，并恢复默认值。"
+purpose: "修改笔刷设置后，Capy Canvas会把它们作为工作区的一部分记住，你不需要手动保存任何东西。如果想做些尝试，又不想丢掉一套满意的配置，请先复制工作区。"
+techniques: ["在当前工作区中保留修改。", "在工作区副本中尝试另一套配置。", "重置笔刷而不改变布局。"]
+figure: "1：当前工作区。2：随工作区保存的笔刷设置。3：Reset All Brushes确认窗口。"
 related: ["advanced/brush-engine", "workspace/management"]
-image: {"light": "/assets/guides/advanced-custom-brushes-light.webp", "dark": "/assets/guides/advanced-custom-brushes-dark.webp", "alt": "1：当前工作区。2：随工作区保存的工具设置。3：重置画笔的确认窗口。"}
+image: {"light": "/assets/guides/advanced-custom-brushes-light.webp", "dark": "/assets/guides/advanced-custom-brushes-dark.webp", "alt": "1：当前工作区。2：随工作区保存的笔刷设置。3：Reset All Brushes确认窗口。"}
 ---
 
-## 保留调整
+## 修改会自动保留
 
-选择预设并修改**Tool**中的设置，再切换到其他预设后返回，检查保留的数值。工作区记住各预设的修改，以及选中的工具和布局。
+选择一支笔刷，然后在**Tool**面板中修改它的设置。切换到其他笔刷、之后再回来时，你的修改依然还在。每个工作区都会分别记住每支笔刷的设置，以及你最近使用的工具和面板的排列方式。
 
-这些设置与`.capy`文档分开。保存作品不会生成便携画笔库，打开作品也不会替换当前工作区。
+笔刷设置属于工作区，而不属于作品。打开作品不会改变你的笔刷，保存作品也不会保存笔刷。你在Sketch的大小和不透明度滑块上添加的书签会按笔刷分别保存，并且在所有工作区中都可以使用。
 
-## 保存另一套配置
+## 尝试另一套配置
 
-用**New Workspace**复制当前布局和工具并命名，在副本中试验。切回原工作区即可恢复另一套数值。
+想要自由尝试时，请选择<strong>Window → Workspaces → New Workspace…</strong>。这会以新的名称复制当前工作区，连同其中的笔刷和布局。在副本中进行修改即可。切换回原来的工作区时，它的设置会完全恢复成你离开时的样子。
 
-目前可通过这种方式保留多套设置，编辑器尚未提供独立自定义预设的复制、导入和导出流程。切换、固定与恢复的方法见[工作区管理](/zh/docs/workspace/management/)。
+[管理工作区](/zh/docs/workspace/management/)介绍了如何在工作区之间切换，以及如何选择哪些工作区显示在标题栏中。
 
-## 重置正确的部分
+## 从头开始
 
-**Reset All Brushes**恢复当前工作区内所有内置画笔的默认值，包括未选中的预设。作品和布局保留，但画笔修改会被移除。
+<strong>Window → Workspaces → Reset All Brushes…</strong>会把当前工作区中的每支笔刷恢复为原始设置，包括你现在没有使用的笔刷。你的作品、面板布局和滑块书签都不受影响。
 
-**Restore Starting Layout**恢复面板位置并保留工具设置。如果还要比较原来的数值，应先复制工作区。
+如果你想让面板回到最初的位置，请改用<strong>Restore Starting Layout…</strong>。它会恢复面板位置，但保留笔刷设置，因此这两种重置永远不会抵消彼此的效果。

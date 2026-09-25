@@ -1,27 +1,27 @@
 ---
 title: "草稿"
-description: "在独立色稿上方绘制铅笔草稿。"
-purpose: "草稿记录形体，色稿用来比较配色。将它们分开，就能试色而不重画铅笔线条。"
-techniques: ["用铅笔预设和压感绘画。", "选择并变换局部。", "把色稿放在草稿下方。"]
-figure: "1：铅笔预设。2：Color rough上方的Sketch。3：铅笔大小与不透明度。"
+description: "用铅笔画出草稿，并在单独的图层上试色。"
+purpose: "草稿用来确定形状，色稿用来尝试颜色。把它们放在不同的图层上，你就可以随意反复修改颜色，而不会碰到铅笔线条。"
+techniques: ["用铅笔和压感绘画。", "选中并修正草稿的一部分。", "把色稿放在草稿下方的图层上。"]
+figure: "1：铅笔笔刷。2：Layers中位于Color rough上方的Sketch。3：铅笔的大小和不透明度。"
 related: ["tools/selections", "tools/transforms", "painting/color"]
-image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/assets/guides/illustration-draft-dark.webp", "alt": "1：铅笔预设。2：Color rough上方的Sketch。3：铅笔大小与不透明度。"}
+image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/assets/guides/illustration-draft-dark.webp", "alt": "1：铅笔笔刷。2：Layers中位于Color rough上方的Sketch。3：铅笔的大小和不透明度。"}
 ---
 
 ## 1. 绘制草稿
 
-建立名为**Sketch**的图层，在Tool Set中选择**Pencil**。先用轻线确定圆形、弯曲的带状形与倾斜的四边形，再整理轮廓。用Tool调整大小，以压感强调线条。
+添加一个新图层，命名为**Sketch**。选择**Pencil**工具，并在Tool Set中选一支铅笔。先用轻淡的线条找出圆形、弯曲的带状形和倾斜的四边形，再加重力度，确定想要保留的轮廓。在Tool面板中设置铅笔的大小。
 
-示例叠放三个抽象形状，并加入自由环线和排线。轮廓周围留出余量，便于检查之后的选区和笔迹。
+在形状周围留出一些空间。这会让后面的阶段更轻松，因为你能清楚地看到每个形状在哪里结束。
 
-## 2. 修正局部
+## 2. 修正不太对的部分
 
-用**Lasso selection**圈住需要移动的部分，选择**Scale / rotate**。移动或缩放后选择**Apply transform**，去其他位置绘画前使用**Deselect pixels**。
+如果某个部分的位置或大小不对，不必重画。选择**Lasso selection**，在那部分周围画一个圈。然后选择**Scale / rotate**，把它拖到合适的位置或调整大小，再选择**Apply transform**。继续绘画之前，选择**Select → Deselect pixels**。
 
-[选区](/zh/docs/tools/selections/)与[变换](/zh/docs/tools/transforms/)参考页说明编辑目标和预览操作。不满意时撤销该调整，其他草稿保留。
+[选区](/zh/docs/tools/selections/)和[变换](/zh/docs/tools/transforms/)指南更详细地介绍了这些工具。如果修改出了问题，撤销即可。
 
-## 3. 添加色稿
+## 3. 尝试配色
 
-在Sketch下方添加**Color rough**。用宽画笔或**Lasso Fill**为三个形状尝试蓝绿色、土黄色和陶土色。此时重点是配色，边缘可以粗略；铅笔线条留在Sketch上。
+再添加一个名为**Color rough**的图层，把它拖到Sketch下方。为每个形状选择一种颜色，用**Lasso selection**沿形状画一圈，然后选择**Edit → Fill selection**。示例中，带状形用蓝绿色，圆形用土黄色，四边形用陶土色。这些只是粗略的颜色，边缘不需要整齐。稍微降低这个图层的不透明度，让铅笔线条依然清晰可见。
 
-色稿妨碍检查时可临时隐藏。保存`.capy`，保持两层分开并继续[线稿](/zh/docs/illustration/ink/)。
+想单独查看草稿时，随时可以暂时隐藏Color rough。保存作品，然后继续[线稿](/zh/docs/illustration/ink/)阶段。

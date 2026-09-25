@@ -4,10 +4,30 @@ import { appUrl, route, type Locale } from '../lib/site';
 interface Props { locale: Locale }
 const { locale } = Astro.props;
 const t = content[locale];
+const slides = [
+  { id: 'sketch', label: 'Sketch' },
+  { id: 'paint', label: 'Paint' },
+  { id: 'photo', label: 'Photo' },
+] as const;
 ---
 <main id="main" class="hero">
   <h1 class="visually-hidden">{t.home.title}</h1>
-  <picture class="workspace"><source media="(prefers-color-scheme: dark)" srcset="/assets/guides/illustration-dark.webp" /><img src="/assets/guides/illustration-light.webp" width="1920" height="1080" alt={t.home.screenshot} fetchpriority="high" /></picture>
+  <div class="showcase" data-showcase>
+    <div class="workspace showcase-frames">
+      {slides.map(({ id }) => <picture class="showcase-frame" data-slide={id}>
+        <source media="(prefers-color-scheme: dark)" srcset={`/assets/showcase/${id}-dark.webp`} />
+        <img src={`/assets/showcase/${id}-light.webp`} width="1920" height="1080" alt={t.home.slides[id]} loading={id === 'paint' ? 'eager' : 'lazy'} fetchpriority={id === 'paint' ? 'high' : 'low'} decoding="async" />
+      </picture>)}
+    </div>
+    <fieldset class="showcase-switcher">
+      <legend class="visually-hidden">{t.home.workspaces}</legend>
+      <span class="showcase-indicator" aria-hidden="true"></span>
+      {slides.map(({ id, label }) => <label>
+        <input class="visually-hidden" type="radio" name="workspace" value={id} checked={id === 'paint'} />
+        <span>{label}</span>
+      </label>)}
+    </fieldset>
+  </div>
   <p class="home-description">{t.home.description}</p>
   <div class="actions">
     <a class="button primary" href={appUrl}>{t.nav.webDemo}</a>
@@ -15,3 +35,33 @@ const t = content[locale];
     <a class="button" href={route(locale, 'documentation')}>{t.nav.documentation}</a>
   </div>
 </main>
+<script>
+  const showcase = document.querySelector<HTMLElement>('[data-showcase]');
+  const calm = matchMedia('(prefers-reduced-motion: reduce)');
+  if (showcase) {
+    const choices = [...showcase.querySelectorAll<HTMLInputElement>('input[type="radio"]')];
+    const images = [...showcase.querySelectorAll<HTMLImageElement>('img')];
+    let timer: number | undefined;
+    let chosen = false;
+    let paused = false;
+    const stop = () => { window.clearTimeout(timer); timer = undefined; showcase.removeAttribute('data-playing'); };
+    const schedule = () => {
+      stop();
+      if (chosen || paused || calm.matches || document.hidden) return;
+      showcase.setAttribute('data-playing', '');
+      timer = window.setTimeout(() => {
+        const current = choices.findIndex(choice => choice.checked);
+        choices[(current + 1) % choices.length].checked = true;
+        schedule();
+      }, 5200);
+    };
+    for (const choice of choices) choice.addEventListener('change', () => { chosen = true; stop(); });
+    showcase.addEventListener('pointerenter', () => { paused = true; stop(); });
+    showcase.addEventListener('pointerleave', () => { paused = false; schedule(); });
+    showcase.addEventListener('focusin', () => { paused = true; stop(); });
+    showcase.addEventListener('focusout', () => { paused = false; schedule(); });
+    document.addEventListener('visibilitychange', schedule);
+    calm.addEventListener('change', schedule);
+    Promise.all(images.map(image => { image.loading = 'eager'; return image.decode().catch(() => undefined); })).then(schedule);
+  }
+</script>

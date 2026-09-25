@@ -1,10 +1,10 @@
 {
   "source": "https://github.com/capyatelier/capycanvas",
-  "revision": "390c82e4df5c67cd8668b039dfc0aa7192e92f56",
+  "revision": "b4f4a64eb8554a8788faf244f83d09fae0eeca60",
   "patches": [],
   "hashes": {
-    "app.js": "512ab293db7eb0f3028bde5c085904c484aad19e4f3789375b606cd60162b7ad",
-    "pkg/layer_web_bg.wasm": "cff786bb582c22e121a833aba47e241418fe66581975cb4f900237b0b0da93cb"
+    "app.js": "d9a1e7c18789b74b08e5ea630565402d258c28f061ee46dd9cb7c06a04294dc3",
+    "pkg/layer_web_bg.wasm": "2d7092693ec63b8855dbf9ce78a6bb2985ca95c3bb22cdfd06439d8ad193b9e2"
   },
   "width": 1920,
   "height": 1080,
@@ -23,121 +23,91 @@
   },
   "canvas2d": "Software decoding and UI previews; artwork remains hardware WebGPU.",
   "recipeHashes": {
-    "capture.mjs": "5988799b8550e5bfe9d82b2a2ad792a8a55788284be3132d78b08264b9e11727",
+    "capture.mjs": "5d321a29b448afdee1ca4fd46390e663015d00e6f0a3888978bcf85ae300b357",
     "browser.mjs": "9962e5586f7a9cb58ef44600efe35501047ede0c59a66a953b7c672ff4794217",
     "serve.mjs": "f804ab7645298d628e5749e2cb50539242b8fb5ab17f222f9506dba7e9134569",
     "capture-headless.sh": "353f18d6a88a2134e5aa01b4646f5a40db3c9b7f719e70a361b6a903aafbd0a5",
     "prepare-capture.mjs": "519e33a176e6260bd380e73c27e3c9a1c6f03add7016989300a88dd130432287",
     "capture-compatibility.mjs": "f69af5075fec4e7d76ea19e8d1ee1bb768a26b792615306d701a0ff4c5f775f3",
-    "capture/editor.mjs": "dceca998ed9ffb2505522b7115aac45440f3cb66f3776d1910d5f036ce048e70",
-    "capture/annotations.mjs": "d2a2749808bda914fac45676075262969f4f28169cb0c4e94b45d0753bc789eb",
-    "capture/illustration.mjs": "b857749f6574016af8cf6e3e6f0fc8855121323de83e7922480361b2c23bb149",
-    "capture/references.mjs": "6d66db20852315698bcd245cfa2082b8b60f82e4013bbaa684862116e9ff3ce9"
+    "capture/editor.mjs": "fec82b3f6656e5b2a1f1e37855c85e4c63a0e735902666962b88f37fca1019df",
+    "capture/annotations.mjs": "92b10bf7d2520aac04d7e095446bb7b803ebc8f8713056e5a5ac0af69f742359",
+    "capture/illustration.mjs": "aeea5cf6f6b74cbfb3e49c2bb587447693912de327bbb603b258631fa7034a23",
+    "capture/references.mjs": "45da63c40d4a0e231e836cfc8bb01b1aba2dfbaeb182b5a1ff000cc68cd00663",
+    "capture/showcase.mjs": "5aec91ebc3a8e2625d86eb838efaa2f609317a2bd368aad418322d163fc5baff"
   },
-  "artwork": "Three Watercolor Wash strokes and an original abstract study of a teal ribbon, ochre disc and terracotta block with pencil hatching, watercolor and airbrush shading, drawn through real browser pen input and editor actions.",
+  "artwork": "Guides: Watercolor Wash strokes and an original abstract study of a teal ribbon, ochre disc and terracotta block with pencil hatching, watercolor and airbrush shading, drawn through real browser pen input and editor actions. Homepage: a pen sketch, an oil painting and a photograph supplied by Capy Atelier as .capy projects, shown in Sketch, Paint and Photo.",
+  "showcase": [
+    {
+      "file": "showcase/spring.capy",
+      "bytes": 2474192,
+      "sha256": "5341a4476f775e07b4876e1025c16f12f5bc38405e6a6f31906bc8e4b27940e6"
+    },
+    {
+      "file": "showcase/house.capy",
+      "bytes": 5511879,
+      "sha256": "afc250a8d8ea0e1a4a27454961fd728f2ac74ac7deff0f175d6802b5ed2c8492"
+    },
+    {
+      "file": "showcase/NDF_4717.capy",
+      "bytes": 16441965,
+      "sha256": "2339579778db9988df6e58342a8034a41a23c5292f8745b9096b96d98a363b75"
+    }
+  ],
   "annotations": "Numbered SVG outlines injected over measured DOM controls; artwork and UI rendered by Capy Canvas.",
   "captures": [
     {
-      "file": "workspace-light.webp",
+      "file": "showcase/sketch-light.webp",
       "theme": "light",
-      "bytes": 70636,
-      "sha256": "7e88c70d9c864fbc8200de2629fb202d1cb7e85d4aae1ec90c6019e7f406470d",
+      "bytes": 379600,
+      "sha256": "8c3051c0d49402c19b568d4dda31f86727693c4699b89e89af4d04a1d0eafa2c",
       "annotations": []
     },
     {
-      "file": "workspace-dark.webp",
+      "file": "showcase/sketch-dark.webp",
       "theme": "dark",
-      "bytes": 70054,
-      "sha256": "89b6f02d0583b3f82e04804a54b053279c2a8493e315ea0e10d8c94789177e80",
+      "bytes": 379760,
+      "sha256": "ea435225d3275be5e5b8b197d9841ab442afcef070257c1fac796f3d9aeecb85",
       "annotations": []
     },
     {
-      "file": "guides/workspace-light.webp",
+      "file": "showcase/paint-light.webp",
       "theme": "light",
-      "bytes": 72544,
-      "sha256": "8f0c90be2e539b9dda651800d1d975f52d2bc915aee4ce6ae95b4aca4ba04e9b",
-      "annotations": [
-        {
-          "number": 1,
-          "selector": ".workspace-switcher",
-          "bounds": {
-            "x": 1630,
-            "y": 4,
-            "width": 204.015625,
-            "height": 42
-          }
-        },
-        {
-          "number": 2,
-          "selector": ".brushes-panel",
-          "bounds": {
-            "x": 44,
-            "y": 80,
-            "width": 250,
-            "height": 440.375
-          }
-        },
-        {
-          "number": 3,
-          "selector": ".navigator-panel",
-          "bounds": {
-            "x": 1614,
-            "y": 80,
-            "width": 262,
-            "height": 224.265625
-          }
-        }
-      ]
+      "bytes": 135636,
+      "sha256": "aa08227dd80e9545cc5282e07ccb4f375ccd33030e9dce7bc40fce559a072ad3",
+      "annotations": []
     },
     {
-      "file": "guides/workspace-dark.webp",
+      "file": "showcase/paint-dark.webp",
       "theme": "dark",
-      "bytes": 72650,
-      "sha256": "c2d04cb6a0c9e9025ddacf36eb43e296aabded0fe662a1149eae11b06511158c",
-      "annotations": [
-        {
-          "number": 1,
-          "selector": ".workspace-switcher",
-          "bounds": {
-            "x": 1630,
-            "y": 4,
-            "width": 204.015625,
-            "height": 42
-          }
-        },
-        {
-          "number": 2,
-          "selector": ".brushes-panel",
-          "bounds": {
-            "x": 44,
-            "y": 80,
-            "width": 250,
-            "height": 440.375
-          }
-        },
-        {
-          "number": 3,
-          "selector": ".navigator-panel",
-          "bounds": {
-            "x": 1614,
-            "y": 80,
-            "width": 262,
-            "height": 224.265625
-          }
-        }
-      ]
+      "bytes": 136270,
+      "sha256": "479a5c01f3963d2cb52baae710b22526f4b2e3c686d62e015e2031029bbc656a",
+      "annotations": []
+    },
+    {
+      "file": "showcase/photo-light.webp",
+      "theme": "light",
+      "bytes": 187354,
+      "sha256": "2b99c78f6bb6323799581724acb103b67afc1698728dd077e2c430a613139888",
+      "annotations": []
+    },
+    {
+      "file": "showcase/photo-dark.webp",
+      "theme": "dark",
+      "bytes": 187940,
+      "sha256": "cb885c2d64a69e6e44a9758fdf012eb5beeb4430e88fed64f93753eda600ddc5",
+      "annotations": []
     },
     {
       "file": "guides/quickstart-light.webp",
       "theme": "light",
-      "bytes": 72516,
-      "sha256": "dcc83c496a4de0c59751478e12106b98c41ce88d1663cf543f45f87b9f3523eb",
+      "bytes": 76502,
+      "sha256": "d8eaf89f857f070eb2b6d44afb64a22c6dc09f2ad6af527c2ec7b99362e76a4f",
       "annotations": [
         {
           "number": 1,
           "selector": ".workspace-switcher",
           "bounds": {
-            "x": 1630,
+            "x": 1636,
             "y": 4,
             "width": 204.015625,
             "height": 42
@@ -149,8 +119,8 @@
           "bounds": {
             "x": 44,
             "y": 80,
-            "width": 250,
-            "height": 440.375
+            "width": 288,
+            "height": 321
           }
         },
         {
@@ -158,9 +128,9 @@
           "selector": ".layers-panel",
           "bounds": {
             "x": 1614,
-            "y": 647,
+            "y": 605.59375,
             "width": 262,
-            "height": 429
+            "height": 470.40625
           }
         }
       ]
@@ -168,14 +138,14 @@
     {
       "file": "guides/quickstart-dark.webp",
       "theme": "dark",
-      "bytes": 72520,
-      "sha256": "30e426228e1377f6334b0d707141e4777144a2b4f9316935ead8834e0f6e3030",
+      "bytes": 76172,
+      "sha256": "21e31a71c82c22a8557cab513ae80839711e3f2ebc66ba32fe63851ce4a6b493",
       "annotations": [
         {
           "number": 1,
           "selector": ".workspace-switcher",
           "bounds": {
-            "x": 1630,
+            "x": 1636,
             "y": 4,
             "width": 204.015625,
             "height": 42
@@ -187,8 +157,8 @@
           "bounds": {
             "x": 44,
             "y": 80,
-            "width": 250,
-            "height": 440.375
+            "width": 288,
+            "height": 321
           }
         },
         {
@@ -196,9 +166,9 @@
           "selector": ".layers-panel",
           "bounds": {
             "x": 1614,
-            "y": 647,
+            "y": 605.59375,
             "width": 262,
-            "height": 429
+            "height": 470.40625
           }
         }
       ]
@@ -206,8 +176,8 @@
     {
       "file": "guides/painting-brushes-light.webp",
       "theme": "light",
-      "bytes": 72478,
-      "sha256": "be0b048e740dc68260dc235614094a8ffcdf549af1ef9cd7f1ec3d9fc2e586ee",
+      "bytes": 76482,
+      "sha256": "36a7eac1f3cf19a222e4cc3f1eaacf43f6422fdff5e1d29cfa4ae70399f22078",
       "annotations": [
         {
           "number": 1,
@@ -225,8 +195,8 @@
           "bounds": {
             "x": 44,
             "y": 80,
-            "width": 250,
-            "height": 440.375
+            "width": 288,
+            "height": 321
           }
         },
         {
@@ -234,9 +204,9 @@
           "selector": ".tool-settings-control",
           "bounds": {
             "x": 52,
-            "y": 562.375,
-            "width": 234,
-            "height": 159.3125
+            "y": 443,
+            "width": 272,
+            "height": 313
           }
         }
       ]
@@ -244,8 +214,8 @@
     {
       "file": "guides/painting-brushes-dark.webp",
       "theme": "dark",
-      "bytes": 72826,
-      "sha256": "3466572bac249b3b869cf92e1ab462635027b1b3d5c72b028dabaee3f9b051c0",
+      "bytes": 76348,
+      "sha256": "2d3ab724e4e5f508a70f1915dbee5d0e158429437baf82a6d0a05afbd5afb028",
       "annotations": [
         {
           "number": 1,
@@ -263,8 +233,8 @@
           "bounds": {
             "x": 44,
             "y": 80,
-            "width": 250,
-            "height": 440.375
+            "width": 288,
+            "height": 321
           }
         },
         {
@@ -272,9 +242,9 @@
           "selector": ".tool-settings-control",
           "bounds": {
             "x": 52,
-            "y": 562.375,
-            "width": 234,
-            "height": 159.3125
+            "y": 443,
+            "width": 272,
+            "height": 313
           }
         }
       ]
@@ -282,16 +252,16 @@
     {
       "file": "guides/advanced-brush-engine-light.webp",
       "theme": "light",
-      "bytes": 72120,
-      "sha256": "3442ad81bf9c9fcab82e52f38b81dcd900a1a6507008eddcdc63920c047520bd",
+      "bytes": 76378,
+      "sha256": "a38b359960a97335c0cb3f3fea63658cfa27d7d840eb42f98b2a8e005d1745a1",
       "annotations": [
         {
           "number": 1,
           "selector": ".tool-subtools",
           "bounds": {
             "x": 52,
-            "y": 169.375,
-            "width": 234,
+            "y": 148.6875,
+            "width": 272,
             "height": 150.6875
           }
         },
@@ -300,9 +270,9 @@
           "selector": ".tool-settings-control",
           "bounds": {
             "x": 52,
-            "y": 562.375,
-            "width": 234,
-            "height": 159.3125
+            "y": 443,
+            "width": 272,
+            "height": 313
           }
         },
         {
@@ -310,7 +280,7 @@
           "selector": ".dock-tab[data-panel=\"sizes\"]",
           "bounds": {
             "x": 113.15625,
-            "y": 518.375,
+            "y": 399,
             "width": 120.609375,
             "height": 44
           }
@@ -320,16 +290,16 @@
     {
       "file": "guides/advanced-brush-engine-dark.webp",
       "theme": "dark",
-      "bytes": 72092,
-      "sha256": "043d37aebd91c6776fc9172ca8cbe7eb10980dbf314ad20471499c9d5d37ff67",
+      "bytes": 75962,
+      "sha256": "db7cc8ef4dd2e21c1ef471b0992c7eaccce088eceef62c5e084020756d461df6",
       "annotations": [
         {
           "number": 1,
           "selector": ".tool-subtools",
           "bounds": {
             "x": 52,
-            "y": 169.375,
-            "width": 234,
+            "y": 148.6875,
+            "width": 272,
             "height": 150.6875
           }
         },
@@ -338,9 +308,9 @@
           "selector": ".tool-settings-control",
           "bounds": {
             "x": 52,
-            "y": 562.375,
-            "width": 234,
-            "height": 159.3125
+            "y": 443,
+            "width": 272,
+            "height": 313
           }
         },
         {
@@ -348,7 +318,7 @@
           "selector": ".dock-tab[data-panel=\"sizes\"]",
           "bounds": {
             "x": 113.15625,
-            "y": 518.375,
+            "y": 399,
             "width": 120.609375,
             "height": 44
           }
@@ -358,8 +328,8 @@
     {
       "file": "guides/illustration-draft-light.webp",
       "theme": "light",
-      "bytes": 84926,
-      "sha256": "9a06bd353b93f65d4782b35d6170f0280f0257327f9b506f99b5011175d8ad1e",
+      "bytes": 81308,
+      "sha256": "676e639507bf2881a54b637a423bdc264a3a135714b5931418acb6a4fb65f51a",
       "annotations": [
         {
           "number": 1,
@@ -367,7 +337,7 @@
           "bounds": {
             "x": 52,
             "y": 148.6875,
-            "width": 234,
+            "width": 272,
             "height": 223.03125
           }
         },
@@ -376,9 +346,9 @@
           "selector": "#layer-rows",
           "bounds": {
             "x": 1614,
-            "y": 705,
+            "y": 663.59375,
             "width": 262,
-            "height": 341
+            "height": 382.390625
           }
         },
         {
@@ -386,9 +356,9 @@
           "selector": ".tool-settings-control",
           "bounds": {
             "x": 52,
-            "y": 562.375,
-            "width": 234,
-            "height": 159.3125
+            "y": 443,
+            "width": 272,
+            "height": 313
           }
         }
       ]
@@ -396,8 +366,8 @@
     {
       "file": "guides/illustration-draft-dark.webp",
       "theme": "dark",
-      "bytes": 85874,
-      "sha256": "c0e28a722c6d8da00e39c4a9fdeeff4f778d3c42a2d05655bc8f0b7c44412202",
+      "bytes": 81360,
+      "sha256": "fe47f4fe14492cf1d01c833f11279ba0a0c42973d26f8031d0d9b0e74de29fb4",
       "annotations": [
         {
           "number": 1,
@@ -405,7 +375,7 @@
           "bounds": {
             "x": 52,
             "y": 148.6875,
-            "width": 234,
+            "width": 272,
             "height": 223.03125
           }
         },
@@ -414,9 +384,9 @@
           "selector": "#layer-rows",
           "bounds": {
             "x": 1614,
-            "y": 705,
+            "y": 663.59375,
             "width": 262,
-            "height": 341
+            "height": 382.390625
           }
         },
         {
@@ -424,9 +394,9 @@
           "selector": ".tool-settings-control",
           "bounds": {
             "x": 52,
-            "y": 562.375,
-            "width": 234,
-            "height": 159.3125
+            "y": 443,
+            "width": 272,
+            "height": 313
           }
         }
       ]
@@ -434,17 +404,17 @@
     {
       "file": "guides/illustration-ink-light.webp",
       "theme": "light",
-      "bytes": 80288,
-      "sha256": "2c2cf0a3a7d58a48179987ee3c9473fb546288fd441d95b7ad7239cbc51e8b28",
+      "bytes": 81852,
+      "sha256": "47a3e54ba0f92029f0cbfd9290491c20153459c1c90fdd43e85fe0c5892d5d7f",
       "annotations": [
         {
           "number": 1,
           "selector": "#layer-rows",
           "bounds": {
             "x": 1614,
-            "y": 705,
+            "y": 663.59375,
             "width": 262,
-            "height": 341
+            "height": 382.390625
           }
         },
         {
@@ -452,7 +422,7 @@
           "selector": ".navigator-buttons",
           "bounds": {
             "x": 1622,
-            "y": 256.265625,
+            "y": 184,
             "width": 246,
             "height": 40
           }
@@ -463,8 +433,8 @@
           "bounds": {
             "x": 52,
             "y": 148.6875,
-            "width": 234,
-            "height": 371.6875
+            "width": 272,
+            "height": 252.3125
           }
         }
       ]
@@ -472,17 +442,17 @@
     {
       "file": "guides/illustration-ink-dark.webp",
       "theme": "dark",
-      "bytes": 80526,
-      "sha256": "7ad5609fc14725b407a6797b0f172c97e6db66ffb070edd3b0dfb93353322a19",
+      "bytes": 81924,
+      "sha256": "f914744132c0dde50281541ed64c4059cb71b4bb5adeec79d8bd8ba95aa9d4e0",
       "annotations": [
         {
           "number": 1,
           "selector": "#layer-rows",
           "bounds": {
             "x": 1614,
-            "y": 705,
+            "y": 663.59375,
             "width": 262,
-            "height": 341
+            "height": 382.390625
           }
         },
         {
@@ -490,7 +460,7 @@
           "selector": ".navigator-buttons",
           "bounds": {
             "x": 1622,
-            "y": 256.265625,
+            "y": 184,
             "width": 246,
             "height": 40
           }
@@ -501,8 +471,8 @@
           "bounds": {
             "x": 52,
             "y": 148.6875,
-            "width": 234,
-            "height": 371.6875
+            "width": 272,
+            "height": 252.3125
           }
         }
       ]
@@ -510,15 +480,15 @@
     {
       "file": "guides/illustration-mask-light.webp",
       "theme": "light",
-      "bytes": 81166,
-      "sha256": "a5967753c21b090ccf5360923d5729b6e4db80f2714cac80fcb436a65bd36556",
+      "bytes": 84208,
+      "sha256": "f5755217ee3538795099edb290ed488064a34efd97adbb84daaf2891ba42d25d",
       "annotations": [
         {
           "number": 1,
           "selector": ".layer-thumbnail.editing-target",
           "bounds": {
             "x": 1723,
-            "y": 750,
+            "y": 708.59375,
             "width": 38,
             "height": 38
           }
@@ -528,19 +498,19 @@
           "selector": "#layer-rows",
           "bounds": {
             "x": 1614,
-            "y": 705,
+            "y": 663.59375,
             "width": 262,
-            "height": 341
+            "height": 382.390625
           }
         },
         {
           "number": 3,
-          "selector": ".color-panel",
+          "selector": "[data-command=\"eraser\"]",
           "bounds": {
-            "x": 44,
-            "y": 755.703125,
-            "width": 250,
-            "height": 320.296875
+            "x": 4,
+            "y": 158,
+            "width": 44,
+            "height": 44
           }
         }
       ]
@@ -548,15 +518,15 @@
     {
       "file": "guides/illustration-mask-dark.webp",
       "theme": "dark",
-      "bytes": 81232,
-      "sha256": "20a85adc3acd23f8230c7673e8132b133c2abf41be90545b7d85fc6b92ebc9ce",
+      "bytes": 84296,
+      "sha256": "80d22ddfe0879257fb896a819d64e54226adbd9998d813e21498c640a2788ddd",
       "annotations": [
         {
           "number": 1,
           "selector": ".layer-thumbnail.editing-target",
           "bounds": {
             "x": 1723,
-            "y": 750,
+            "y": 708.59375,
             "width": 38,
             "height": 38
           }
@@ -566,19 +536,19 @@
           "selector": "#layer-rows",
           "bounds": {
             "x": 1614,
-            "y": 705,
+            "y": 663.59375,
             "width": 262,
-            "height": 341
+            "height": 382.390625
           }
         },
         {
           "number": 3,
-          "selector": ".color-panel",
+          "selector": "[data-command=\"eraser\"]",
           "bounds": {
-            "x": 44,
-            "y": 755.703125,
-            "width": 250,
-            "height": 320.296875
+            "x": 4,
+            "y": 158,
+            "width": 44,
+            "height": 44
           }
         }
       ]
@@ -586,17 +556,17 @@
     {
       "file": "guides/illustration-render-light.webp",
       "theme": "light",
-      "bytes": 94286,
-      "sha256": "b6379d47d4a23d7fdb852445defb209892b4446e23764db798963c17f05ee560",
+      "bytes": 99540,
+      "sha256": "c8a5042cf369006af8e511cb59837bf600154f9998323892967cf1a2341e9a3c",
       "annotations": [
         {
           "number": 1,
           "selector": "#layer-rows",
           "bounds": {
             "x": 1614,
-            "y": 705,
+            "y": 663.59375,
             "width": 262,
-            "height": 341
+            "height": 382.390625
           }
         },
         {
@@ -604,7 +574,7 @@
           "selector": ".layer-flags",
           "bounds": {
             "x": 1620,
-            "y": 677,
+            "y": 635.59375,
             "width": 250,
             "height": 32
           }
@@ -614,7 +584,7 @@
           "selector": "#layer-opacity",
           "bounds": {
             "x": 1744,
-            "y": 651,
+            "y": 609.59375,
             "width": 126,
             "height": 32
           }
@@ -624,17 +594,17 @@
     {
       "file": "guides/illustration-render-dark.webp",
       "theme": "dark",
-      "bytes": 94182,
-      "sha256": "5e313d50eea7727cfabd5d3b758c90ea5ffd461ba4bd94d38fab35e959fd3be3",
+      "bytes": 99200,
+      "sha256": "e8815b9ac651db7e1f7b390ba8bad326d7d0a7da0282d0eef339c557170f7a33",
       "annotations": [
         {
           "number": 1,
           "selector": "#layer-rows",
           "bounds": {
             "x": 1614,
-            "y": 705,
+            "y": 663.59375,
             "width": 262,
-            "height": 341
+            "height": 382.390625
           }
         },
         {
@@ -642,7 +612,7 @@
           "selector": ".layer-flags",
           "bounds": {
             "x": 1620,
-            "y": 677,
+            "y": 635.59375,
             "width": 250,
             "height": 32
           }
@@ -652,7 +622,7 @@
           "selector": "#layer-opacity",
           "bounds": {
             "x": 1744,
-            "y": 651,
+            "y": 609.59375,
             "width": 126,
             "height": 32
           }
@@ -662,31 +632,185 @@
     {
       "file": "guides/illustration-light.webp",
       "theme": "light",
-      "bytes": 91526,
-      "sha256": "7b0f62b50ca1389bd35dc9b685c2195c2a68671c88f4a97884e26e17a115a392",
+      "bytes": 96544,
+      "sha256": "f7377bb26df96c828086441a7cbcf4d05d3f9d63cdde39def30e107d56e40a07",
       "annotations": []
     },
     {
       "file": "guides/illustration-dark.webp",
       "theme": "dark",
-      "bytes": 91036,
-      "sha256": "6f8e4a247aa987a3cc3b621e8fc8862d33ada52c243bdc0316f5177e4b3cb580",
+      "bytes": 96004,
+      "sha256": "3b1db122eb00820e8af156dbcd33fbda974b014c079ac1f47e210a2d1891fb19",
       "annotations": []
+    },
+    {
+      "file": "guides/painting-palettes-light.webp",
+      "theme": "light",
+      "bytes": 93342,
+      "sha256": "253bb3f84cf45ef856d80782ae0cbb9ba924a493a1aed8e7e11541b906352472",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".palette-history",
+          "bounds": {
+            "x": 52,
+            "y": 796,
+            "width": 272,
+            "height": 48
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".palette-swatches",
+          "bounds": {
+            "x": 52,
+            "y": 849,
+            "width": 272,
+            "height": 92
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".palette-selector",
+          "bounds": {
+            "x": 52,
+            "y": 1032,
+            "width": 100.703125,
+            "height": 32
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/painting-palettes-dark.webp",
+      "theme": "dark",
+      "bytes": 92786,
+      "sha256": "e42b6ce2a5c11cf1d1a995e9d01e9e51e94b82f9071ea0f03715658a809be9a4",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".palette-history",
+          "bounds": {
+            "x": 52,
+            "y": 796,
+            "width": 272,
+            "height": 48
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".palette-swatches",
+          "bounds": {
+            "x": 52,
+            "y": 849,
+            "width": 272,
+            "height": 92
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".palette-selector",
+          "bounds": {
+            "x": 52,
+            "y": 1032,
+            "width": 100.703125,
+            "height": 32
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/workspace-light.webp",
+      "theme": "light",
+      "bytes": 46028,
+      "sha256": "8ab23ccec9849176236388ac03c26b2f98bacb2b8ab1962ccdcef2bb0af656a0",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".workspace-switcher",
+          "bounds": {
+            "x": 858,
+            "y": 9,
+            "width": 204.015625,
+            "height": 42
+          }
+        },
+        {
+          "number": 2,
+          "selector": "#header .header-tool[aria-label=\"Brush\"],#header .header-tool[aria-label=\"Sculpt\"],#header .header-tool[aria-label=\"Eraser\"],#header .header-tool[aria-label=\"Layers panel\"],#header .header-tool[aria-label=\"Brush color\"]",
+          "union": true,
+          "bounds": {
+            "x": 1622,
+            "y": 4,
+            "width": 248,
+            "height": 56
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".dock-group.tool-strip",
+          "bounds": {
+            "x": 4,
+            "y": 245,
+            "width": 62,
+            "height": 644
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/workspace-dark.webp",
+      "theme": "dark",
+      "bytes": 46726,
+      "sha256": "897d78151726cc5de70f211844aaeeeef9ff0b8cabd4bcf96a4a3ecbbef8b2ad",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".workspace-switcher",
+          "bounds": {
+            "x": 858,
+            "y": 9,
+            "width": 204.015625,
+            "height": 42
+          }
+        },
+        {
+          "number": 2,
+          "selector": "#header .header-tool[aria-label=\"Brush\"],#header .header-tool[aria-label=\"Sculpt\"],#header .header-tool[aria-label=\"Eraser\"],#header .header-tool[aria-label=\"Layers panel\"],#header .header-tool[aria-label=\"Brush color\"]",
+          "union": true,
+          "bounds": {
+            "x": 1622,
+            "y": 4,
+            "width": 248,
+            "height": 56
+          }
+        },
+        {
+          "number": 3,
+          "selector": ".dock-group.tool-strip",
+          "bounds": {
+            "x": 4,
+            "y": 245,
+            "width": 62,
+            "height": 644
+          }
+        }
+      ]
     },
     {
       "file": "guides/layers-basics-light.webp",
       "theme": "light",
-      "bytes": 90334,
-      "sha256": "660ad54056f016b832211403361d3126898b94677a24efa60e972c4b4f15e295",
+      "bytes": 98710,
+      "sha256": "401f331e64cb1eb5805dccf9d82b70e11fd66fb1e5bc6839057c29ecb6293ae3",
       "annotations": [
         {
           "number": 1,
           "selector": "#layer-rows",
           "bounds": {
             "x": 1614,
-            "y": 705,
+            "y": 663.59375,
             "width": 262,
-            "height": 341
+            "height": 382.390625
           }
         },
         {
@@ -694,7 +818,7 @@
           "selector": ".layer-row.selected [aria-label=\"Hide layer\"]",
           "bounds": {
             "x": 1620,
-            "y": 827,
+            "y": 785.59375,
             "width": 32,
             "height": 44
           }
@@ -704,9 +828,9 @@
           "selector": ".layer-footer",
           "bounds": {
             "x": 1614,
-            "y": 1038,
+            "y": 1037.984375,
             "width": 262,
-            "height": 38
+            "height": 38.015625
           }
         }
       ]
@@ -714,17 +838,17 @@
     {
       "file": "guides/layers-basics-dark.webp",
       "theme": "dark",
-      "bytes": 91332,
-      "sha256": "74884a8edb6c72cd89018ca9161e57c47fad3787c2b16f982022a96075136867",
+      "bytes": 98912,
+      "sha256": "2d9e426a1908c251ddc5fc12878bc3d3f38541407d6de68990120e669a96b7af",
       "annotations": [
         {
           "number": 1,
           "selector": "#layer-rows",
           "bounds": {
             "x": 1614,
-            "y": 705,
+            "y": 663.59375,
             "width": 262,
-            "height": 341
+            "height": 382.390625
           }
         },
         {
@@ -732,7 +856,7 @@
           "selector": ".layer-row.selected [aria-label=\"Hide layer\"]",
           "bounds": {
             "x": 1620,
-            "y": 827,
+            "y": 785.59375,
             "width": 32,
             "height": 44
           }
@@ -742,9 +866,9 @@
           "selector": ".layer-footer",
           "bounds": {
             "x": 1614,
-            "y": 1038,
+            "y": 1037.984375,
             "width": 262,
-            "height": 38
+            "height": 38.015625
           }
         }
       ]
@@ -752,15 +876,15 @@
     {
       "file": "guides/layers-masks-light.webp",
       "theme": "light",
-      "bytes": 95342,
-      "sha256": "c554445c4af5f5e107f730fc4536d363a0915684a6f06b945367b218c2338fe6",
+      "bytes": 98718,
+      "sha256": "71f7f3c3fe01563c58cef96c36bf5c53391221211c9d9a686b0a66a94bdfeddc",
       "annotations": [
         {
           "number": 1,
           "selector": ".layer-thumbnail.editing-target",
           "bounds": {
             "x": 1723,
-            "y": 830,
+            "y": 788.59375,
             "width": 38,
             "height": 38
           }
@@ -770,9 +894,9 @@
           "selector": "#layer-rows",
           "bounds": {
             "x": 1614,
-            "y": 705,
+            "y": 663.59375,
             "width": 262,
-            "height": 341
+            "height": 382.390625
           }
         },
         {
@@ -780,7 +904,7 @@
           "selector": ".layer-flags",
           "bounds": {
             "x": 1620,
-            "y": 677,
+            "y": 635.59375,
             "width": 250,
             "height": 32
           }
@@ -790,15 +914,15 @@
     {
       "file": "guides/layers-masks-dark.webp",
       "theme": "dark",
-      "bytes": 96084,
-      "sha256": "bd2d95707c2bb30ca0d45e9e6f093f41256f7555467757fd420023bd3517866f",
+      "bytes": 98766,
+      "sha256": "45de97ad144af404507cbfdb4204064c51c525e1fe30ba8675435b920f57a798",
       "annotations": [
         {
           "number": 1,
           "selector": ".layer-thumbnail.editing-target",
           "bounds": {
             "x": 1723,
-            "y": 830,
+            "y": 788.59375,
             "width": 38,
             "height": 38
           }
@@ -808,9 +932,9 @@
           "selector": "#layer-rows",
           "bounds": {
             "x": 1614,
-            "y": 705,
+            "y": 663.59375,
             "width": 262,
-            "height": 341
+            "height": 382.390625
           }
         },
         {
@@ -818,7 +942,7 @@
           "selector": ".layer-flags",
           "bounds": {
             "x": 1620,
-            "y": 677,
+            "y": 635.59375,
             "width": 250,
             "height": 32
           }
@@ -828,17 +952,17 @@
     {
       "file": "guides/layers-groups-light.webp",
       "theme": "light",
-      "bytes": 97334,
-      "sha256": "623a41d310c710b240941815b358ac062caf7ebf0e3d3713150276806d08324f",
+      "bytes": 100482,
+      "sha256": "6942767010b70f7785003db4ba84b3ddbf79e1d374a38300d56bc710ceb6bfd4",
       "annotations": [
         {
           "number": 1,
           "selector": "#layer-rows",
           "bounds": {
             "x": 1614,
-            "y": 705,
+            "y": 663.59375,
             "width": 262,
-            "height": 341
+            "height": 382.390625
           }
         },
         {
@@ -846,7 +970,7 @@
           "selector": ".layer-header select",
           "bounds": {
             "x": 1620,
-            "y": 651,
+            "y": 609.59375,
             "width": 126,
             "height": 32
           }
@@ -856,7 +980,7 @@
           "selector": ".layer-footer [aria-label=\"New group\"]",
           "bounds": {
             "x": 1646,
-            "y": 1042,
+            "y": 1041.984375,
             "width": 32,
             "height": 32
           }
@@ -866,17 +990,17 @@
     {
       "file": "guides/layers-groups-dark.webp",
       "theme": "dark",
-      "bytes": 97722,
-      "sha256": "4e893d4722fe9d594e5c2083c63247bc5030703eccffc11f3288052b6ffccd28",
+      "bytes": 100774,
+      "sha256": "a3729536a298a76226831c1118ab066b62376b46032100c3b724f3733359d7cd",
       "annotations": [
         {
           "number": 1,
           "selector": "#layer-rows",
           "bounds": {
             "x": 1614,
-            "y": 705,
+            "y": 663.59375,
             "width": 262,
-            "height": 341
+            "height": 382.390625
           }
         },
         {
@@ -884,7 +1008,7 @@
           "selector": ".layer-header select",
           "bounds": {
             "x": 1620,
-            "y": 651,
+            "y": 609.59375,
             "width": 126,
             "height": 32
           }
@@ -894,7 +1018,7 @@
           "selector": ".layer-footer [aria-label=\"New group\"]",
           "bounds": {
             "x": 1646,
-            "y": 1042,
+            "y": 1041.984375,
             "width": 32,
             "height": 32
           }
@@ -904,28 +1028,28 @@
     {
       "file": "guides/painting-color-light.webp",
       "theme": "light",
-      "bytes": 84034,
-      "sha256": "10c05fc6f38effa4f0e7e9b7588e1e87310cd7ec944b2d246dca8c3da5cdc4b0",
+      "bytes": 91318,
+      "sha256": "1fca2dac7a4ec5fc7a6766fa990d95293fa414ea3c92e4eb6c76365719f44c94",
       "annotations": [
         {
           "number": 1,
           "selector": ".color-wheel",
           "bounds": {
             "x": 66,
-            "y": 777.703125,
-            "width": 206,
-            "height": 206
+            "y": 812,
+            "width": 244,
+            "height": 244
           }
         },
         {
           "number": 2,
-          "selector": "[data-color-slot]",
+          "selector": ".color-panel [data-color-slot], .color-panel [data-quick-color]",
           "union": true,
           "bounds": {
             "x": 52,
-            "y": 943.703125,
-            "width": 224,
-            "height": 54
+            "y": 1009,
+            "width": 272,
+            "height": 61
           }
         },
         {
@@ -943,28 +1067,28 @@
     {
       "file": "guides/painting-color-dark.webp",
       "theme": "dark",
-      "bytes": 84494,
-      "sha256": "5001d46752db9cf33b77b539967aaad744a6db5db65009d688bf93ee0af174d7",
+      "bytes": 92246,
+      "sha256": "6333d5e2787354f7444b464424f0f6493f5c00bac3c70f2c25014da970d73473",
       "annotations": [
         {
           "number": 1,
           "selector": ".color-wheel",
           "bounds": {
             "x": 66,
-            "y": 777.703125,
-            "width": 206,
-            "height": 206
+            "y": 812,
+            "width": 244,
+            "height": 244
           }
         },
         {
           "number": 2,
-          "selector": "[data-color-slot]",
+          "selector": ".color-panel [data-color-slot], .color-panel [data-quick-color]",
           "union": true,
           "bounds": {
             "x": 52,
-            "y": 943.703125,
-            "width": 224,
-            "height": 54
+            "y": 1009,
+            "width": 272,
+            "height": 61
           }
         },
         {
@@ -982,17 +1106,17 @@
     {
       "file": "guides/tools-selections-light.webp",
       "theme": "light",
-      "bytes": 93292,
-      "sha256": "5ca263ca16fd081cbf472a53d54d7248b20b0fa4081531f65e12c9381a020c44",
+      "bytes": 100234,
+      "sha256": "a3fb7d721ca4e3e300e5a12a58feea51f31f4119ef6768c03f959146dd118f79",
       "annotations": [
         {
           "number": 1,
-          "selector": ".brushes-panel",
+          "selector": ".tool-subtools",
           "bounds": {
-            "x": 44,
-            "y": 80,
-            "width": 250,
-            "height": 440.375
+            "x": 52,
+            "y": 148.6875,
+            "width": 272,
+            "height": 252.3125
           }
         },
         {
@@ -1000,19 +1124,25 @@
           "selector": ".tool-settings-control",
           "bounds": {
             "x": 52,
-            "y": 562.375,
-            "width": 234,
-            "height": 159.3125
+            "y": 443,
+            "width": 272,
+            "height": 311.71875
           }
         },
         {
           "number": 3,
-          "selector": ".layer-row.selected",
+          "selector": "#canvas",
+          "documentRect": [
+            150,
+            144,
+            484,
+            482
+          ],
           "bounds": {
-            "x": 1614,
-            "y": 825,
-            "width": 247,
-            "height": 48
+            "x": 633.900008559227,
+            "y": 241.47200870513916,
+            "width": 365.1919882297516,
+            "height": 363.715988278389
           }
         }
       ]
@@ -1020,17 +1150,17 @@
     {
       "file": "guides/tools-selections-dark.webp",
       "theme": "dark",
-      "bytes": 94080,
-      "sha256": "de7d422d1a7b5a5d74b4079249d618e3f6feabf6e5310048d1a2b0d539c8eb58",
+      "bytes": 100592,
+      "sha256": "9360fbfecbfe9c0d8d573520fda9ecc0e329e8f45f816c96125c04cdb6a887bf",
       "annotations": [
         {
           "number": 1,
-          "selector": ".brushes-panel",
+          "selector": ".tool-subtools",
           "bounds": {
-            "x": 44,
-            "y": 80,
-            "width": 250,
-            "height": 440.375
+            "x": 52,
+            "y": 148.6875,
+            "width": 272,
+            "height": 252.3125
           }
         },
         {
@@ -1038,19 +1168,203 @@
           "selector": ".tool-settings-control",
           "bounds": {
             "x": 52,
-            "y": 562.375,
-            "width": 234,
-            "height": 159.3125
+            "y": 443,
+            "width": 272,
+            "height": 311.71875
           }
         },
         {
           "number": 3,
+          "selector": "#canvas",
+          "documentRect": [
+            150,
+            144,
+            484,
+            482
+          ],
+          "bounds": {
+            "x": 633.900008559227,
+            "y": 241.47200870513916,
+            "width": 365.1919882297516,
+            "height": 363.715988278389
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/selections-quick-mask-light.webp",
+      "theme": "light",
+      "bytes": 102820,
+      "sha256": "4a0c91e9f082f2e73a48c1e0e19dc14470205ff1ae6a3ec905087e95dcb0530b",
+      "annotations": [
+        {
+          "number": 1,
           "selector": ".layer-row.selected",
           "bounds": {
             "x": 1614,
-            "y": 825,
+            "y": 663.59375,
             "width": 247,
             "height": 48
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".properties-panel",
+          "bounds": {
+            "x": 1614,
+            "y": 266,
+            "width": 262,
+            "height": 305.59375
+          }
+        },
+        {
+          "number": 3,
+          "selector": "#canvas",
+          "documentRect": [
+            150,
+            144,
+            484,
+            800
+          ],
+          "bounds": {
+            "x": 633.900008559227,
+            "y": 241.47200870513916,
+            "width": 365.1919882297516,
+            "height": 598.399980545044
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/selections-quick-mask-dark.webp",
+      "theme": "dark",
+      "bytes": 102488,
+      "sha256": "3ab08a81c5d4763d8bc297768d4c736026fc2b44116e8af9238530800a073d5e",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".layer-row.selected",
+          "bounds": {
+            "x": 1614,
+            "y": 663.59375,
+            "width": 247,
+            "height": 48
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".properties-panel",
+          "bounds": {
+            "x": 1614,
+            "y": 266,
+            "width": 262,
+            "height": 305.59375
+          }
+        },
+        {
+          "number": 3,
+          "selector": "#canvas",
+          "documentRect": [
+            150,
+            144,
+            484,
+            800
+          ],
+          "bounds": {
+            "x": 633.900008559227,
+            "y": 241.47200870513916,
+            "width": 365.1919882297516,
+            "height": 598.399980545044
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/selections-tonal-range-light.webp",
+      "theme": "light",
+      "bytes": 112304,
+      "sha256": "93d8a357c2eb204288d065a3b9901a5ebd6abffe5561a2ed5680804bf40956af",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".tonal-tones",
+          "bounds": {
+            "x": 52,
+            "y": 483,
+            "width": 272,
+            "height": 44
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".tonal-numeric-row",
+          "union": true,
+          "bounds": {
+            "x": 52,
+            "y": 523,
+            "width": 272,
+            "height": 66
+          }
+        },
+        {
+          "number": 3,
+          "selector": "#canvas",
+          "documentRect": [
+            0,
+            0,
+            1200,
+            1200
+          ],
+          "bounds": {
+            "x": 523.2000122070312,
+            "y": 135.20001220703125,
+            "width": 893.5999708175659,
+            "height": 893.5999708175659
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/selections-tonal-range-dark.webp",
+      "theme": "dark",
+      "bytes": 112512,
+      "sha256": "89b288deeab1920576acb0327225914ae3297de795b8659af42df5df2e15936e",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": ".tonal-tones",
+          "bounds": {
+            "x": 52,
+            "y": 483,
+            "width": 272,
+            "height": 44
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".tonal-numeric-row",
+          "union": true,
+          "bounds": {
+            "x": 52,
+            "y": 523,
+            "width": 272,
+            "height": 66
+          }
+        },
+        {
+          "number": 3,
+          "selector": "#canvas",
+          "documentRect": [
+            0,
+            0,
+            1200,
+            1200
+          ],
+          "bounds": {
+            "x": 523.2000122070312,
+            "y": 135.20001220703125,
+            "width": 893.5999708175659,
+            "height": 893.5999708175659
           }
         }
       ]
@@ -1058,17 +1372,17 @@
     {
       "file": "guides/tools-transforms-light.webp",
       "theme": "light",
-      "bytes": 90624,
-      "sha256": "b1d40c6a99270e61bc2ca912d4497487cafb363e5502e428832c371cc48416aa",
+      "bytes": 95780,
+      "sha256": "c24311331786452e0b97895c3c4f1724e9f89ba532b1248c4dffd535a85b9328",
       "annotations": [
         {
           "number": 1,
           "selector": ".tool-settings-control",
           "bounds": {
             "x": 52,
-            "y": 562.375,
-            "width": 234,
-            "height": 159.3125
+            "y": 443,
+            "width": 272,
+            "height": 313
           }
         },
         {
@@ -1081,7 +1395,7 @@
             325
           ],
           "bounds": {
-            "x": 1083.5299931168556,
+            "x": 1102.5299931168556,
             "y": 699.7699936032295,
             "width": 255.22999185323715,
             "height": 247.8499920964241
@@ -1092,7 +1406,7 @@
           "selector": ".layer-row.selected",
           "bounds": {
             "x": 1614,
-            "y": 705,
+            "y": 663.59375,
             "width": 247,
             "height": 48
           }
@@ -1102,17 +1416,17 @@
     {
       "file": "guides/tools-transforms-dark.webp",
       "theme": "dark",
-      "bytes": 91038,
-      "sha256": "3e04a1764af1c65225711976af1385bbc739a6f534a93f109dcdb158b3d02932",
+      "bytes": 96486,
+      "sha256": "93386dfd2868db90a69a240eb1f42beba5a71bc3cad350dcea7cc1dea019bc29",
       "annotations": [
         {
           "number": 1,
           "selector": ".tool-settings-control",
           "bounds": {
             "x": 52,
-            "y": 562.375,
-            "width": 234,
-            "height": 159.3125
+            "y": 443,
+            "width": 272,
+            "height": 313
           }
         },
         {
@@ -1125,7 +1439,7 @@
             325
           ],
           "bounds": {
-            "x": 1083.5299931168556,
+            "x": 1102.5299931168556,
             "y": 699.7699936032295,
             "width": 255.22999185323715,
             "height": 247.8499920964241
@@ -1136,7 +1450,7 @@
           "selector": ".layer-row.selected",
           "bounds": {
             "x": 1614,
-            "y": 705,
+            "y": 663.59375,
             "width": 247,
             "height": 48
           }
@@ -1144,10 +1458,262 @@
       ]
     },
     {
+      "file": "guides/tools-files-light.webp",
+      "theme": "light",
+      "bytes": 100134,
+      "sha256": "a72d10dc58e2236b2d8b07f3b7beb00dad10805b572b0d95f60d654c9aa9f8d0",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": "[data-menu=\"file\"] > summary",
+          "bounds": {
+            "x": 47.953125,
+            "y": 7,
+            "width": 48.90625,
+            "height": 34
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".drawing-tabs",
+          "bounds": {
+            "x": 500,
+            "y": 4,
+            "width": 1132,
+            "height": 42
+          }
+        },
+        {
+          "number": 3,
+          "selector": "[data-menu=\"file\"] button",
+          "labels": [
+            "Open…",
+            "Import Image as Layer…",
+            "Save",
+            "Save As…"
+          ],
+          "union": true,
+          "bounds": {
+            "x": 53.953125,
+            "y": 87,
+            "width": 308.53125,
+            "height": 157
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/tools-files-dark.webp",
+      "theme": "dark",
+      "bytes": 100668,
+      "sha256": "ee009a2b08466a0f53349ec48ee206abdb3ece05377f4a64408422829af70fe9",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": "[data-menu=\"file\"] > summary",
+          "bounds": {
+            "x": 47.953125,
+            "y": 7,
+            "width": 48.90625,
+            "height": 34
+          }
+        },
+        {
+          "number": 2,
+          "selector": ".drawing-tabs",
+          "bounds": {
+            "x": 500,
+            "y": 4,
+            "width": 1132,
+            "height": 42
+          }
+        },
+        {
+          "number": 3,
+          "selector": "[data-menu=\"file\"] button",
+          "labels": [
+            "Open…",
+            "Import Image as Layer…",
+            "Save",
+            "Save As…"
+          ],
+          "union": true,
+          "bounds": {
+            "x": 53.953125,
+            "y": 87,
+            "width": 308.53125,
+            "height": 157
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/output-export-light.webp",
+      "theme": "light",
+      "bytes": 91096,
+      "sha256": "4248d76f78e97f0e96a6210e163a028ac4d9a36e816f823ed2114b6b07ab947f",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": "dialog[open] label:has(> select[aria-label=\"Destination\"])",
+          "bounds": {
+            "x": 754,
+            "y": 357.3125,
+            "width": 397,
+            "height": 42
+          }
+        },
+        {
+          "number": 2,
+          "selector": "dialog[open] label:has(> select[aria-label=\"Format\"]),dialog[open] label:has(> select[aria-label=\"Output profile\"]),dialog[open] label:has(> select[aria-label=\"Bit depth\"])",
+          "union": true,
+          "bounds": {
+            "x": 754,
+            "y": 453.3125,
+            "width": 397,
+            "height": 138
+          }
+        },
+        {
+          "number": 3,
+          "selector": "dialog[open] label:has(> select[aria-label=\"Transparency\"])",
+          "bounds": {
+            "x": 754,
+            "y": 597.3125,
+            "width": 397,
+            "height": 42
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/output-export-dark.webp",
+      "theme": "dark",
+      "bytes": 76810,
+      "sha256": "09398e826ece455685c838efc31b3f9d17a1d205b9f9c535851c43afb12d1d65",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": "dialog[open] label:has(> select[aria-label=\"Destination\"])",
+          "bounds": {
+            "x": 754,
+            "y": 357.3125,
+            "width": 397,
+            "height": 42
+          }
+        },
+        {
+          "number": 2,
+          "selector": "dialog[open] label:has(> select[aria-label=\"Format\"]),dialog[open] label:has(> select[aria-label=\"Output profile\"]),dialog[open] label:has(> select[aria-label=\"Bit depth\"])",
+          "union": true,
+          "bounds": {
+            "x": 754,
+            "y": 453.3125,
+            "width": 397,
+            "height": 138
+          }
+        },
+        {
+          "number": 3,
+          "selector": "dialog[open] label:has(> select[aria-label=\"Transparency\"])",
+          "bounds": {
+            "x": 754,
+            "y": 597.3125,
+            "width": 397,
+            "height": 42
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/color-management-light.webp",
+      "theme": "light",
+      "bytes": 86420,
+      "sha256": "e852b9890167aba419fa6604a63da44cadeb73bea4b6be9b9f5265c067771f39",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": "dialog[open] label:has(> select[aria-label=\"Preset\"])",
+          "bounds": {
+            "x": 754,
+            "y": 278,
+            "width": 412,
+            "height": 42
+          }
+        },
+        {
+          "number": 2,
+          "selector": "dialog[open] label:has(> select[aria-label=\"Color space\"]),dialog[open] label:has(> select[aria-label=\"Bit depth\"])",
+          "union": true,
+          "bounds": {
+            "x": 754,
+            "y": 402,
+            "width": 412,
+            "height": 90
+          }
+        },
+        {
+          "number": 3,
+          "selector": "dialog[open] button",
+          "text": [
+            "Create"
+          ],
+          "bounds": {
+            "x": 1064.203125,
+            "y": 673.3125,
+            "width": 89.796875,
+            "height": 42
+          }
+        }
+      ]
+    },
+    {
+      "file": "guides/color-management-dark.webp",
+      "theme": "dark",
+      "bytes": 71138,
+      "sha256": "0355b8f5e94a301e6ce1d4c002e9a7d7530d0574b210951b4c2fc144d40816f0",
+      "annotations": [
+        {
+          "number": 1,
+          "selector": "dialog[open] label:has(> select[aria-label=\"Preset\"])",
+          "bounds": {
+            "x": 754,
+            "y": 278,
+            "width": 412,
+            "height": 42
+          }
+        },
+        {
+          "number": 2,
+          "selector": "dialog[open] label:has(> select[aria-label=\"Color space\"]),dialog[open] label:has(> select[aria-label=\"Bit depth\"])",
+          "union": true,
+          "bounds": {
+            "x": 754,
+            "y": 402,
+            "width": 412,
+            "height": 90
+          }
+        },
+        {
+          "number": 3,
+          "selector": "dialog[open] button",
+          "text": [
+            "Create"
+          ],
+          "bounds": {
+            "x": 1064.203125,
+            "y": 673.3125,
+            "width": 89.796875,
+            "height": 42
+          }
+        }
+      ]
+    },
+    {
       "file": "guides/tools-gradients-light.webp",
       "theme": "light",
-      "bytes": 58542,
-      "sha256": "aa6a97283c250b3337016a7e6dc41840558634ee337db02a64e68e30ff1bf170",
+      "bytes": 62196,
+      "sha256": "71849ea709dd41f853f175324f4a193b342bc6d58017ea51a8a18559ac4cb586",
       "annotations": [
         {
           "number": 1,
@@ -1155,8 +1721,8 @@
           "bounds": {
             "x": 44,
             "y": 80,
-            "width": 250,
-            "height": 440.375
+            "width": 288,
+            "height": 321
           }
         },
         {
@@ -1164,9 +1730,9 @@
           "selector": ".color-panel",
           "bounds": {
             "x": 44,
-            "y": 755.703125,
-            "width": 250,
-            "height": 320.296875
+            "y": 790,
+            "width": 288,
+            "height": 286
           }
         },
         {
@@ -1174,9 +1740,9 @@
           "selector": "#layer-rows",
           "bounds": {
             "x": 1614,
-            "y": 705,
+            "y": 663.59375,
             "width": 262,
-            "height": 341
+            "height": 382.390625
           }
         }
       ]
@@ -1184,8 +1750,8 @@
     {
       "file": "guides/tools-gradients-dark.webp",
       "theme": "dark",
-      "bytes": 58198,
-      "sha256": "2be4905c98f5fa2b8bb52aca785f9d45ff4e643d38540efa6b6760d9dada9c89",
+      "bytes": 61864,
+      "sha256": "51a9ed297c30633fe88d87f8302f6929a274b4dbe630e0f91ef315a6c66aee56",
       "annotations": [
         {
           "number": 1,
@@ -1193,8 +1759,8 @@
           "bounds": {
             "x": 44,
             "y": 80,
-            "width": 250,
-            "height": 440.375
+            "width": 288,
+            "height": 321
           }
         },
         {
@@ -1202,9 +1768,9 @@
           "selector": ".color-panel",
           "bounds": {
             "x": 44,
-            "y": 755.703125,
-            "width": 250,
-            "height": 320.296875
+            "y": 790,
+            "width": 288,
+            "height": 286
           }
         },
         {
@@ -1212,9 +1778,9 @@
           "selector": "#layer-rows",
           "bounds": {
             "x": 1614,
-            "y": 705,
+            "y": 663.59375,
             "width": 262,
-            "height": 341
+            "height": 382.390625
           }
         }
       ]
@@ -1222,8 +1788,8 @@
     {
       "file": "guides/tools-figures-light.webp",
       "theme": "light",
-      "bytes": 61656,
-      "sha256": "87ac9372b971941ae22b98fb64485cfcc3ade756bd8c2e7611f7a9ee29f1b296",
+      "bytes": 64622,
+      "sha256": "c985dae8b8cc5562dd65bcbf092b6c4111ccc5787305be99ab70270e0f70436c",
       "annotations": [
         {
           "number": 1,
@@ -1231,8 +1797,8 @@
           "bounds": {
             "x": 44,
             "y": 80,
-            "width": 250,
-            "height": 440.375
+            "width": 288,
+            "height": 321
           }
         },
         {
@@ -1240,8 +1806,8 @@
           "selector": ".tool-settings-control",
           "bounds": {
             "x": 52,
-            "y": 562.375,
-            "width": 234,
+            "y": 443,
+            "width": 272,
             "height": 112
           }
         },
@@ -1250,9 +1816,9 @@
           "selector": ".color-panel",
           "bounds": {
             "x": 44,
-            "y": 755.703125,
-            "width": 250,
-            "height": 320.296875
+            "y": 790,
+            "width": 288,
+            "height": 286
           }
         }
       ]
@@ -1260,8 +1826,8 @@
     {
       "file": "guides/tools-figures-dark.webp",
       "theme": "dark",
-      "bytes": 62164,
-      "sha256": "55454bc10981ee9aa741be07e48175c6b50a72b5be99071433cc679780e28ba4",
+      "bytes": 64972,
+      "sha256": "743dc5405877769b2efca1d2517ee5bfdf99309d0fb45ba5e851f9de7f61564c",
       "annotations": [
         {
           "number": 1,
@@ -1269,8 +1835,8 @@
           "bounds": {
             "x": 44,
             "y": 80,
-            "width": 250,
-            "height": 440.375
+            "width": 288,
+            "height": 321
           }
         },
         {
@@ -1278,8 +1844,8 @@
           "selector": ".tool-settings-control",
           "bounds": {
             "x": 52,
-            "y": 562.375,
-            "width": 234,
+            "y": 443,
+            "width": 272,
             "height": 112
           }
         },
@@ -1288,9 +1854,9 @@
           "selector": ".color-panel",
           "bounds": {
             "x": 44,
-            "y": 755.703125,
-            "width": 250,
-            "height": 320.296875
+            "y": 790,
+            "width": 288,
+            "height": 286
           }
         }
       ]
@@ -1298,8 +1864,8 @@
     {
       "file": "guides/tools-rulers-light.webp",
       "theme": "light",
-      "bytes": 59712,
-      "sha256": "273520e531206d91f2caf16da6a0d8b2217381236739d7ec46440d54e99519a1",
+      "bytes": 65292,
+      "sha256": "61ed41dc2b97c07c603eba8cde22947251353ca9728525c50f841f984f168dba",
       "annotations": [
         {
           "number": 1,
@@ -1307,8 +1873,8 @@
           "bounds": {
             "x": 44,
             "y": 80,
-            "width": 250,
-            "height": 440.375
+            "width": 288,
+            "height": 321
           }
         },
         {
@@ -1321,7 +1887,7 @@
             690
           ],
           "bounds": {
-            "x": 666.5600068569183,
+            "x": 685.5600068569183,
             "y": 304.9400066137314,
             "width": 591.0199807882309,
             "height": 517.2199832201004
@@ -1332,8 +1898,8 @@
           "selector": ".tool-settings-control",
           "bounds": {
             "x": 52,
-            "y": 562.375,
-            "width": 234,
+            "y": 443,
+            "width": 272,
             "height": 121.03125
           }
         }
@@ -1342,8 +1908,8 @@
     {
       "file": "guides/tools-rulers-dark.webp",
       "theme": "dark",
-      "bytes": 60964,
-      "sha256": "ea9cde1c7cc8c09524fde324bf26751c09fa3986f7050ca8691d5306ac45d306",
+      "bytes": 65152,
+      "sha256": "3b66fa52e59a90c135ca645eaf1ddc036356a1315756600d23d4d7e338b80cb9",
       "annotations": [
         {
           "number": 1,
@@ -1351,8 +1917,8 @@
           "bounds": {
             "x": 44,
             "y": 80,
-            "width": 250,
-            "height": 440.375
+            "width": 288,
+            "height": 321
           }
         },
         {
@@ -1365,7 +1931,7 @@
             690
           ],
           "bounds": {
-            "x": 666.5600068569183,
+            "x": 685.5600068569183,
             "y": 304.9400066137314,
             "width": 591.0199807882309,
             "height": 517.2199832201004
@@ -1376,8 +1942,8 @@
           "selector": ".tool-settings-control",
           "bounds": {
             "x": 52,
-            "y": 562.375,
-            "width": 234,
+            "y": 443,
+            "width": 272,
             "height": 121.03125
           }
         }
@@ -1386,14 +1952,14 @@
     {
       "file": "guides/filters-image-editing-light.webp",
       "theme": "light",
-      "bytes": 71832,
-      "sha256": "cc9d8ddbc5e6de178ca29e51ac84078a0f9f770062bcad61eb8492b5bf899659",
+      "bytes": 73666,
+      "sha256": "2bdb0f53207d2638104e1925ffe59e2aaa6c58c8e27b4638e68602453400f3a2",
       "annotations": [
         {
           "number": 1,
           "selector": ".workspace-switcher",
           "bounds": {
-            "x": 1630,
+            "x": 1636,
             "y": 4,
             "width": 204.015625,
             "height": 42
@@ -1403,20 +1969,20 @@
           "number": 2,
           "selector": "#layer-rows",
           "bounds": {
-            "x": 1656,
-            "y": 705,
-            "width": 260,
-            "height": 341
+            "x": 1630,
+            "y": 723.890625,
+            "width": 286,
+            "height": 322.09375
           }
         },
         {
           "number": 3,
           "selector": ".effect-properties",
           "bounds": {
-            "x": 1662,
-            "y": 344.265625,
-            "width": 250,
-            "height": 188
+            "x": 1636,
+            "y": 450,
+            "width": 276,
+            "height": 181.890625
           }
         }
       ]
@@ -1424,14 +1990,14 @@
     {
       "file": "guides/filters-image-editing-dark.webp",
       "theme": "dark",
-      "bytes": 72874,
-      "sha256": "fb022c3e02b48814f51d8e8e145221bfd00b373f7408cbed7bc75fb0b803d6ed",
+      "bytes": 74640,
+      "sha256": "c35a97b16893aa0e3874e7b186e73fce26606f0b587f0da64a7b516ea87200c2",
       "annotations": [
         {
           "number": 1,
           "selector": ".workspace-switcher",
           "bounds": {
-            "x": 1630,
+            "x": 1636,
             "y": 4,
             "width": 204.015625,
             "height": 42
@@ -1441,20 +2007,20 @@
           "number": 2,
           "selector": "#layer-rows",
           "bounds": {
-            "x": 1656,
-            "y": 705,
-            "width": 260,
-            "height": 341
+            "x": 1630,
+            "y": 723.890625,
+            "width": 286,
+            "height": 322.09375
           }
         },
         {
           "number": 3,
           "selector": ".effect-properties",
           "bounds": {
-            "x": 1662,
-            "y": 344.265625,
-            "width": 250,
-            "height": 188
+            "x": 1636,
+            "y": 450,
+            "width": 276,
+            "height": 181.890625
           }
         }
       ]
@@ -1462,35 +2028,35 @@
     {
       "file": "guides/filters-overview-light.webp",
       "theme": "light",
-      "bytes": 75102,
-      "sha256": "d646720d7a2852d95148ace5b352796d802ec47d99e638007d7c11960afe6a04",
+      "bytes": 74656,
+      "sha256": "72eca1335eb4214f2a7f0196d87402b034172f19cda5c617d8a55091c310ec9a",
       "annotations": [
         {
           "number": 1,
           "selector": ".adjustments-panel",
           "bounds": {
-            "x": 1656,
-            "y": 338.265625,
-            "width": 260,
-            "height": 274.71875
+            "x": 1630,
+            "y": 444,
+            "width": 286,
+            "height": 187.890625
           }
         },
         {
           "number": 2,
           "selector": "#layer-rows",
           "bounds": {
-            "x": 1656,
-            "y": 705,
-            "width": 260,
-            "height": 341
+            "x": 1630,
+            "y": 723.890625,
+            "width": 286,
+            "height": 322.09375
           }
         },
         {
           "number": 3,
           "selector": ".dock-tab[data-panel=\"properties\"]",
           "bounds": {
-            "x": 1656,
-            "y": 302.265625,
+            "x": 1630,
+            "y": 408,
             "width": 120.59375,
             "height": 44
           }
@@ -1500,35 +2066,35 @@
     {
       "file": "guides/filters-overview-dark.webp",
       "theme": "dark",
-      "bytes": 75766,
-      "sha256": "be2f89c6d3a9ae97865536996d241c13005ba4b5a75e0667f1c0b2fa2ea9be59",
+      "bytes": 75324,
+      "sha256": "9dc748ad9ebf0defe40baa425a8b919d21d75ef1036b0b441d3261b2b40fe1b5",
       "annotations": [
         {
           "number": 1,
           "selector": ".adjustments-panel",
           "bounds": {
-            "x": 1656,
-            "y": 338.265625,
-            "width": 260,
-            "height": 274.71875
+            "x": 1630,
+            "y": 444,
+            "width": 286,
+            "height": 187.890625
           }
         },
         {
           "number": 2,
           "selector": "#layer-rows",
           "bounds": {
-            "x": 1656,
-            "y": 705,
-            "width": 260,
-            "height": 341
+            "x": 1630,
+            "y": 723.890625,
+            "width": 286,
+            "height": 322.09375
           }
         },
         {
           "number": 3,
           "selector": ".dock-tab[data-panel=\"properties\"]",
           "bounds": {
-            "x": 1656,
-            "y": 302.265625,
+            "x": 1630,
+            "y": 408,
             "width": 120.59375,
             "height": 44
           }
@@ -1536,106 +2102,14 @@
       ]
     },
     {
-      "file": "guides/tools-files-light.webp",
-      "theme": "light",
-      "bytes": 92670,
-      "sha256": "86fa45e52daa985e20034f422d5f600545df3b252ade29feb1d6f7fa669f2eca",
-      "annotations": [
-        {
-          "number": 1,
-          "selector": "[data-menu=\"file\"] > summary",
-          "bounds": {
-            "x": 44.0625,
-            "y": 4,
-            "width": 49.546875,
-            "height": 44
-          }
-        },
-        {
-          "number": 2,
-          "selector": "[data-menu=\"file\"] button",
-          "labels": [
-            "Save",
-            "Save As…"
-          ],
-          "union": true,
-          "bounds": {
-            "x": 50.0625,
-            "y": 129,
-            "width": 233.359375,
-            "height": 76
-          }
-        },
-        {
-          "number": 3,
-          "selector": "[data-menu=\"file\"] button",
-          "labels": [
-            "Export PNG…"
-          ],
-          "bounds": {
-            "x": 50.0625,
-            "y": 197,
-            "width": 233.359375,
-            "height": 42
-          }
-        }
-      ]
-    },
-    {
-      "file": "guides/tools-files-dark.webp",
-      "theme": "dark",
-      "bytes": 92848,
-      "sha256": "4b39fb9ee5a91f39b6c4db233a7297e605450456c5d2412e0b960315f5efabb7",
-      "annotations": [
-        {
-          "number": 1,
-          "selector": "[data-menu=\"file\"] > summary",
-          "bounds": {
-            "x": 44.0625,
-            "y": 4,
-            "width": 49.546875,
-            "height": 44
-          }
-        },
-        {
-          "number": 2,
-          "selector": "[data-menu=\"file\"] button",
-          "labels": [
-            "Save",
-            "Save As…"
-          ],
-          "union": true,
-          "bounds": {
-            "x": 50.0625,
-            "y": 129,
-            "width": 233.359375,
-            "height": 76
-          }
-        },
-        {
-          "number": 3,
-          "selector": "[data-menu=\"file\"] button",
-          "labels": [
-            "Export PNG…"
-          ],
-          "bounds": {
-            "x": 50.0625,
-            "y": 197,
-            "width": 233.359375,
-            "height": 42
-          }
-        }
-      ]
-    },
-    {
       "file": "guides/workspace-customization-light.webp",
       "theme": "light",
-      "bytes": 103728,
-      "sha256": "c8c6dbaa6ab75e94c8220ad7ed69b3434e24cb95b9674f9af3c4a6962120301a",
+      "bytes": 111996,
+      "sha256": "b6755fcc7fc5826d7dd905a7504c6e52af45afa629a1d7a18ad277b53577ec29",
       "annotations": [
         {
           "number": 1,
-          "selector": ".dock-tabs",
+          "selector": ".dock-group:has(.dock-tab[data-panel=\"navigator\"]) .dock-tabs",
           "bounds": {
             "x": 1614,
             "y": 44,
@@ -1647,9 +2121,9 @@
           "number": 2,
           "selector": ".commands-panel",
           "bounds": {
-            "x": 292,
+            "x": 330,
             "y": 44,
-            "width": 1318,
+            "width": 1280,
             "height": 44
           }
         },
@@ -1657,10 +2131,10 @@
           "number": 3,
           "selector": "[role=\"menu\"]",
           "bounds": {
-            "x": 446.671875,
-            "y": 42,
+            "x": 360.234375,
+            "y": 47,
             "width": 324.109375,
-            "height": 535
+            "height": 739
           }
         }
       ]
@@ -1668,12 +2142,12 @@
     {
       "file": "guides/workspace-customization-dark.webp",
       "theme": "dark",
-      "bytes": 104012,
-      "sha256": "f3dbccaa2d3b134d54e6bc80f159c36d274d34e9d58da00bc2fcdc067bffc86e",
+      "bytes": 111984,
+      "sha256": "c2e43f6a1fe278943bb538baa515feb58fdde4ecb9c024fc3e9cf012942f0d90",
       "annotations": [
         {
           "number": 1,
-          "selector": ".dock-tabs",
+          "selector": ".dock-group:has(.dock-tab[data-panel=\"navigator\"]) .dock-tabs",
           "bounds": {
             "x": 1614,
             "y": 44,
@@ -1685,9 +2159,9 @@
           "number": 2,
           "selector": ".commands-panel",
           "bounds": {
-            "x": 292,
+            "x": 330,
             "y": 44,
-            "width": 1318,
+            "width": 1280,
             "height": 44
           }
         },
@@ -1695,10 +2169,10 @@
           "number": 3,
           "selector": "[role=\"menu\"]",
           "bounds": {
-            "x": 446.671875,
-            "y": 42,
+            "x": 360.234375,
+            "y": 47,
             "width": 324.109375,
-            "height": 535
+            "height": 739
           }
         }
       ]
@@ -1706,14 +2180,14 @@
     {
       "file": "guides/advanced-custom-brushes-light.webp",
       "theme": "light",
-      "bytes": 92218,
-      "sha256": "9100ca116fe6bc360a1360020ab99e6885468a041a5d1ab6f9ca1227a3a2aedf",
+      "bytes": 96026,
+      "sha256": "d9bb49d85532778373e8c1ceb40afba0e3263a8f497128dc5250b78bf4afd015",
       "annotations": [
         {
           "number": 1,
           "selector": ".workspace-switcher",
           "bounds": {
-            "x": 1630,
+            "x": 1636,
             "y": 4,
             "width": 204.015625,
             "height": 42
@@ -1724,9 +2198,9 @@
           "selector": ".tool-settings-control",
           "bounds": {
             "x": 52,
-            "y": 562.375,
-            "width": 234,
-            "height": 159.3125
+            "y": 443,
+            "width": 272,
+            "height": 313
           }
         },
         {
@@ -1744,14 +2218,14 @@
     {
       "file": "guides/advanced-custom-brushes-dark.webp",
       "theme": "dark",
-      "bytes": 89276,
-      "sha256": "280036428c3393d95cacc720af5f9c2d7a110c710a6630ff6015d0602f3fd82f",
+      "bytes": 92906,
+      "sha256": "8521ff83f3afec69205a370d8781bae2e1aa8ebbc46875cbde9d17b760a6b1ab",
       "annotations": [
         {
           "number": 1,
           "selector": ".workspace-switcher",
           "bounds": {
-            "x": 1630,
+            "x": 1636,
             "y": 4,
             "width": 204.015625,
             "height": 42
@@ -1762,9 +2236,9 @@
           "selector": ".tool-settings-control",
           "bounds": {
             "x": 52,
-            "y": 562.375,
-            "width": 234,
-            "height": 159.3125
+            "y": 443,
+            "width": 272,
+            "height": 313
           }
         },
         {
@@ -1782,8 +2256,8 @@
     {
       "file": "guides/workspace-management-light.webp",
       "theme": "light",
-      "bytes": 86980,
-      "sha256": "29f374a390a5ccfb07c4885a7751bc8e05f9f865e681ff944ae7a005c5e2a246",
+      "bytes": 90406,
+      "sha256": "e102ab67bafbdb90b8b68f22e6957064a95a1216845a91a7354b167ba0d880cb",
       "annotations": [
         {
           "number": 1,
@@ -1820,8 +2294,8 @@
     {
       "file": "guides/workspace-management-dark.webp",
       "theme": "dark",
-      "bytes": 87262,
-      "sha256": "706de9d0d650035c23de40b0d8d6f8d24da4e7a4c1f14dcab76b21a4fc62fbec",
+      "bytes": 90562,
+      "sha256": "8ffbd41b910048d8ad84a6e64b2a872869363b1f0a0d3142ac549979c1fbcdaf",
       "annotations": [
         {
           "number": 1,
@@ -1858,8 +2332,8 @@
     {
       "file": "guides/advanced-input-light.webp",
       "theme": "light",
-      "bytes": 83984,
-      "sha256": "bbc1d1da2383e64bdf9ffc747470f5fc883219d34245767a4010c7236355f5a2",
+      "bytes": 89996,
+      "sha256": "e0d2a10241e4ca7d2bbd236ad3244d70bba4843e4df89841c06fde83460ab629",
       "annotations": [
         {
           "number": 1,
@@ -1868,7 +2342,7 @@
             "x": 456,
             "y": 210,
             "width": 218,
-            "height": 238
+            "height": 282
           }
         },
         {
@@ -1878,7 +2352,7 @@
             "x": 666,
             "y": 210,
             "width": 798,
-            "height": 393
+            "height": 621
           }
         },
         {
@@ -1886,7 +2360,7 @@
           "selector": "[data-settings-page=\"shortcuts\"]",
           "bounds": {
             "x": 462,
-            "y": 348,
+            "y": 392,
             "width": 206,
             "height": 50
           }
@@ -1896,8 +2370,8 @@
     {
       "file": "guides/advanced-input-dark.webp",
       "theme": "dark",
-      "bytes": 69934,
-      "sha256": "04240c7a8e78a1ff31771c4e30b12b959661b4e9b50a5df25732aa2b099378ce",
+      "bytes": 75916,
+      "sha256": "a66ee776db84a5fee200de4acf145654c51919231af683732fa266166aeea9ce",
       "annotations": [
         {
           "number": 1,
@@ -1906,7 +2380,7 @@
             "x": 456,
             "y": 210,
             "width": 218,
-            "height": 238
+            "height": 282
           }
         },
         {
@@ -1916,7 +2390,7 @@
             "x": 666,
             "y": 210,
             "width": 798,
-            "height": 393
+            "height": 621
           }
         },
         {
@@ -1924,7 +2398,7 @@
           "selector": "[data-settings-page=\"shortcuts\"]",
           "bounds": {
             "x": 462,
-            "y": 348,
+            "y": 392,
             "width": 206,
             "height": 50
           }
@@ -1934,48 +2408,39 @@
   ],
   "examples": [
     {
-      "file": "examples/watercolor-study.capy",
-      "bytes": 2752285,
-      "sha256": "4277eb543ff341e5725c4da6e8865fa5025770b600aa0b394afc417f54fe62ef"
-    },
-    {
       "file": "examples/01-sketch.capy",
-      "bytes": 427279,
-      "sha256": "767b8412db9d7297100e5ec8c07d45d2bddb71834785ab967ea7d4b0cdadb109"
+      "bytes": 246580,
+      "sha256": "eda52e2d4ef179788e4a98ffe8f5c4052819cd007bd4825e259007e87c36c32f"
     },
     {
       "file": "examples/02-line-art.capy",
-      "bytes": 580908,
-      "sha256": "9639fc4477a160ab32ee8edc5fd58c2ed49c8114233099d4a8d38c60ef9d819e"
+      "bytes": 353987,
+      "sha256": "33b488c77b95e619e754d2f62d1b5500fab3f76314a43abf98b8d043ed6bdd82"
     },
     {
       "file": "examples/03-base-colors.capy",
-      "bytes": 667829,
-      "sha256": "065dd9cb5ea1134f3af51c6c801b5efc51ef2db46e286d98c1264c7adc4a8604"
+      "bytes": 395928,
+      "sha256": "5f61419beb04205c70c7b9e916713dd35ecadda8204290b12fa991d57be1eeac"
     },
     {
       "file": "examples/04-finished.capy",
-      "bytes": 1992214,
-      "sha256": "ea0f6738927580e347500faac666f528fa3285123738bf082314112cd268a93f"
+      "bytes": 1142704,
+      "sha256": "8cb8bf4dba065bf87bb0dc0d89fa98ce46906a2ab81c698aa4f28278831c4d82"
     },
     {
       "file": "examples/abstract-study.png",
-      "bytes": 431958,
-      "sha256": "0282896f1ed91a2a41636f3c114794d2494874c00e7b13dedd8c954d3e46e552"
+      "bytes": 406406,
+      "sha256": "42ed526b46826e79399255401c2d4c892fd212acea3a4df992353016f5dec646"
     },
     {
       "file": "examples/image-editing.capy",
-      "bytes": 6508533,
-      "sha256": "8f48122b9f7c078a8f65e9ad0cc5ed3c37ed2c1d38f64f1ba39832cf57ba3ab1"
+      "bytes": 479210,
+      "sha256": "f82b4ae94d6eb17c6785abc5ff70ee5e812550f9ae7743de2cd2e1a4f4bc0d28"
     },
     {
       "file": "examples/image-editing.png",
-      "bytes": 446224,
-      "sha256": "9a37f08ea21f182c51862828bdbdcd62c422bbf7aaa9b11236e10ad187b24c00"
+      "bytes": 416744,
+      "sha256": "37887eda5750b9edc90d616eb854c48a059cc47479b130d7cf7c3ee1589dc517"
     }
-  ],
-  "screenshots": [
-    "workspace-light.webp",
-    "workspace-dark.webp"
   ]
 }

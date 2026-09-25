@@ -1,28 +1,28 @@
 ---
 title: "일러스트 튜토리얼"
-description: "연필 스케치에서 음영이 있는 추상 색채 습작까지 그립니다."
-purpose: "겹치는 추상 도형으로 스케치, 선화, 기본색, 음영을 분리하는 연습을 합니다. 단계마다 이름 붙인 레이어에 남겨 한 부분을 바꿀 때 나머지를 다시 만들지 않아도 됩니다."
-techniques: ["스케치와 컬러 러프를 분리합니다.", "옅게 한 스케치 위에 선화를 그립니다.", "Ribbon, Disc, Block의 기본색에 마스크를 만듭니다.", "음영을 클리핑하고 내보냅니다."]
-figure: "Paint에서 그린 완성 예제. 선화, 마스크가 있는 기본색, 음영을 각각의 레이어에 보관합니다."
+description: "연필 스케치부터 마무리 음영까지, 작은 추상 습작을 그립니다."
+purpose: "이 튜토리얼에서는 작은 그림 한 장을 처음부터 끝까지 그려 봅니다. 단순한 추상 도형을 사용하므로, 작업을 단계와 레이어로 나누는 방법에 집중할 수 있습니다. 단계마다 자체 레이어를 추가하기 때문에, 나머지를 다시 하지 않고도 한 부분으로 돌아가 바꿀 수 있습니다."
+techniques: ["스케치하고 색을 시험해 봅니다.", "스케치 위에 깔끔한 선화를 그립니다.", "도형마다 마스크가 있는 색 레이어를 만듭니다.", "각 도형 안에 음영을 넣고 결과를 내보냅니다."]
+figure: "선화, 마스크를 적용한 색, 음영이 각각 별도의 레이어에 있는 완성 예제."
 related: ["quickstart", "workspace", "tools/files"]
 navTitle: "소개"
-image: {"light": "/assets/guides/illustration-light.webp", "dark": "/assets/guides/illustration-dark.webp", "alt": "Paint에서 그린 완성 예제. 선화, 마스크가 있는 기본색, 음영을 각각의 레이어에 보관합니다."}
+image: {"light": "/assets/guides/illustration-light.webp", "dark": "/assets/guides/illustration-dark.webp", "alt": "선화, 마스크를 적용한 색, 음영이 각각 별도의 레이어에 있는 완성 예제."}
 ---
 
-## 문서 준비하기
+## 준비하기
 
-아직 펜을 확인하지 않았다면[빠른 시작](/ko/docs/quickstart/)부터 진행합니다. Tool Set, Color, Layers가 보이는**Paint**를 선택합니다. 예제는**1200 × 1200**이며 자신의 그림에는 적절한 크기를 사용합니다.
+아직 펜을 확인하지 않았다면 [빠른 시작](/ko/docs/quickstart/)부터 진행하세요. 그런 다음 브러시, 색상, 레이어가 모두 화면에 보이도록 **Paint**를 선택합니다. 예제를 따라 하려면 약 **1200 × 1200** 픽셀 크기의 새 그림을 만드세요. 원한다면 자신만의 소재를 그려도 됩니다.
 
-예제는 휘어진 리본, 원, 기울어진 사각형에 자유로운 낙서를 더한 구성입니다. 청록색, 세이지 그린, 황토색, 테라코타를 사용하고 선은 짙은 파랑, 밝은 부분은 크림색으로 그립니다. 파일과 맞춰 볼 수 있도록 레이어 이름은 영어로 유지하며 배치는 자유롭게 바꿀 수 있습니다.
+예제는 휘어진 리본, 원, 기울어진 사각형이라는 세 도형이 서로 겹쳐 있고, 그 주위에 자유로운 낙서가 몇 개 있는 그림입니다. 색은 청록색, 세이지 그린, 황토색, 테라코타를 쓰고, 선은 짙은 파란색, 하이라이트는 크림색입니다. 도형마다 이름을 붙인 레이어가 따로 있어서 무엇이 어디에 속하는지 쉽게 알 수 있습니다.
 
-## 네 단계 따라가기
+## 네 단계
 
-[스케치](/ko/docs/illustration/draft/)에서 시작해 같은 문서로 선화, 마스킹, 렌더링을 진행합니다. Sketch와 Color rough는 숨긴 뒤에도 보관합니다. 후속 단계는 이전 작업을 대체하지 않고 레이어를 더합니다.
+튜토리얼은 [스케치](/ko/docs/illustration/draft/), 선화, 마스킹, 렌더링의 네 단계로 이루어지며, 모두 같은 그림에서 진행합니다. 각 단계는 이전 단계를 대체하지 않고 그 위에 새 레이어를 더합니다. 스케치와 컬러 러프는 숨긴 뒤에도 남겨 두는 것이 좋습니다. 나중에 다시 참고하고 싶어질 수도 있기 때문입니다.
 
-각 단계는 실제 편집기 화면을 사용합니다. 번호는 설명의 조작부를 가리킵니다. 원본 크기로 열면 순서와 썸네일을 확인할 수 있습니다.
+모든 단계에는 편집기 스크린샷이 있습니다. 번호가 붙은 테두리는 캡션에서 언급한 조작부를 가리키며, 각 이미지를 원본 크기로 열어 레이어를 더 자세히 살펴볼 수 있습니다.
 
 ## 예제 파일 사용하기
 
-<strong>File → Open…</strong>로<a href="/assets/examples/01-sketch.capy" download>스케치</a>, <a href="/assets/examples/02-line-art.capy" download>선화</a>, <a href="/assets/examples/03-base-colors.capy" download>기본색</a>, <a href="/assets/examples/04-finished.capy" download>완성 프로젝트</a>를 엽니다. 이미지 편집 연습에는[완성 PNG](/assets/examples/abstract-study.png)도 사용할 수 있습니다.
+특정 단계부터 시작하고 싶다면 저장된 <a href="/assets/examples/01-sketch.capy" download>스케치</a>, <a href="/assets/examples/02-line-art.capy" download>선화</a>, <a href="/assets/examples/03-base-colors.capy" download>밑색</a>, <a href="/assets/examples/04-finished.capy" download>완성 그림</a> 파일을 <strong>File → Open…</strong>으로 여세요. 사진 편집을 연습할 수 있는 [완성 이미지 PNG](/assets/examples/abstract-study.png)도 있습니다.
 
-바꾸기 전에 자신의 사본을 저장합니다. 화면에 사용한 실제 레이어와 마스크가 들어 있습니다.
+예제 파일에는 스크린샷에서 보는 것과 같은 레이어와 마스크가 들어 있습니다. 원본을 계속 쓸 수 있도록, 수정하기 전에 자신의 사본을 저장하세요.

@@ -1,27 +1,25 @@
 ---
-title: "图形"
-description: "用Figure绘制直线、矩形和椭圆。"
-purpose: "Figure在绘画图层上生成几何图形。形状与绘画模式决定绘制轮廓、填充或两者。"
-techniques: ["选择直线、矩形或椭圆。", "切换轮廓、填充和轮廓加填充。", "使用画笔大小、双色和选区。"]
-figure: "1：Figure的形状与模式。2：大小和不透明度。3：前景色与背景色。"
+title: "形状"
+description: "用Figure工具画出直线、矩形和椭圆。"
+purpose: "Figure工具可以画出干净的几何形状，适合用于漫画分格框、简单的物体，或者之后要在上面继续绘画的参考线。每个形状可以只有轮廓、只有填充，或者两者兼有。"
+techniques: ["选择直线、矩形或椭圆。", "画出轮廓、填充或两者兼有。", "设置线宽和颜色。"]
+figure: "1：Figure的形状和填充模式。2：线宽和不透明度。3：前景色和背景色。"
 related: ["tools/rulers", "painting/color", "tools/selections"]
-image: {"light": "/assets/guides/tools-figures-light.webp", "dark": "/assets/guides/tools-figures-dark.webp", "alt": "1：Figure的形状与模式。2：大小和不透明度。3：前景色与背景色。"}
+image: {"light": "/assets/guides/tools-figures-light.webp", "dark": "/assets/guides/tools-figures-dark.webp", "alt": "1：Figure的形状和填充模式。2：线宽和不透明度。3：前景色和背景色。"}
 ---
 
 ## 选择形状
 
-选择**Figure**，在Tool Set中选择**Line**、**Rectangle**或**Ellipse**。Line绘制轮廓线；矩形和椭圆支持**Outline**、**Fill**、**Outline + fill**。
+选择**Figure**工具，然后在**Tool Set**中选择**Line**、**Rectangle**或**Ellipse**。对于矩形和椭圆，还可以选择**Outline**、**Fill**或**Outline + fill**。
 
-先选择目标图层。单独绘制便于移动或擦除，而不影响下方草稿。
+形状和笔画一样，会画在选中的图层上。把形状画在单独的图层上，以后就能轻松移动或删除它们，而不会影响作品的其他部分。
 
-## 设置外观并绘制
+## 设置外观
 
-画笔大小决定轮廓宽度，不透明度决定笔迹强度。单独轮廓或填充使用前景色；**Outline + fill**用前景色描边、背景色填充内部。
+在**Tool**面板中，**Line width**决定轮廓的粗细，**Opacity**决定形状的透明程度。轮廓使用前景色。选择**Outline + fill**时，内部会用背景色填充，这样你就能画出诸如浅色形状外围一圈深色轮廓的效果。
 
-在画布上拖动定义形状，按住**Shift**可约束几何比例，例如画正圆。松开即提交；范围不合适时撤销重画。
+## 画出形状
 
-## 配合其他工具
+在画布上拖动即可画出形状。拖动时按住**Shift**，可以画出正方形或正圆。松开后，形状就会画到图层上。如果不太满意，撤销后重新画即可。
 
-[像素选区](/zh/docs/tools/selections/)可限制图形出现的位置，画下一部分前记得解除。移动已有图形时使用Scale / rotate。
-
-重复绘制沿同一方向或消失点的手绘线条时，使用[标尺与吸附](/zh/docs/tools/rulers/)。
+和笔刷一样，选区也会限制形状出现的范围。如果要画很多方向一致的徒手线条，例如排线或透视线，[标尺与吸附](/zh/docs/tools/rulers/)会更合适。

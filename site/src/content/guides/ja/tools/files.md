@@ -1,27 +1,29 @@
 ---
-title: "保存と書き出し"
-description: "編集用の.capyと統合したPNGを保存します。"
-purpose: ".capyは再編集のためにドキュメント構造を保持します。PNGは表示画像を共有する形式です。先にプロジェクトを保存すると、後から同じレイヤー、マスク、効果を使って修正できます。"
-techniques: ["プロジェクトを作成・保存・再読み込みします。", "表示画像をPNGに書き出します。", "ワークスペース設定と作品を別に保存します。"]
-figure: "1：Fileメニュー。2：SaveとSave As。3：Export PNG。"
-related: ["filters/image-editing", "layers/basics", "illustration/render"]
-image: {"light": "/assets/guides/tools-files-light.webp", "dark": "/assets/guides/tools-files-dark.webp", "alt": "1：Fileメニュー。2：SaveとSave As。3：Export PNG。"}
+title: "開く・保存・復元"
+description: "絵や写真を開き、複数のドキュメントを同時に扱い、作業内容を守ります。"
+purpose: "Capy Canvasの絵は.capyファイルとして保存されます。レイヤー、マスク、調整がすべて残るので、あとから続きを編集できます。複数のドキュメントをそれぞれのタブで同時に開いておけるほか、保存する前に何か問題が起きたときのために、編集画面が復元用のコピーを保持します。"
+techniques: [".capyファイルや写真を開きます。", "タブで開いているドキュメントを切り替えます。", "作品を保存し、未保存の変更を復元します。"]
+figure: "1：Fileメニュー。2：開いているドキュメントのタブ。3：Open、Import Image as Layer、Save、Save As。"
+related: ["output/export", "filters/image-editing", "workspace/management"]
+image: {"light": "/assets/guides/tools-files-light.webp", "dark": "/assets/guides/tools-files-dark.webp", "alt": "1：Fileメニュー。2：開いているドキュメントのタブ。3：Open、Import Image as Layer、Save、Save As。"}
 ---
 
-## 編集可能なドキュメントを保存する
+## 絵や写真を開く
 
-新規プロジェクトや別の作業用コピーには<strong>File → Save As…</strong>を使います。ブラウザーがファイルハンドルを保持できる場合、**Save**は現在のファイルを更新します。直接アクセスできない環境ではダウンロードになるため、保存できたことを確認してください。
+<strong>File → Open…</strong>を選ぶと、`.capy`ファイルを開けます。写真やその他の画像も同じ方法で開けます。対応している形式は、JPEG、PNG、TIFF、WebP、HEIC、AVIF、OpenEXRなどです。写真は元のサイズのまま新しいドキュメントとして開き、色も撮影したときのまま保たれます。
 
-<strong>Open…</strong>は`.capy`を開きます。通常の画像を現在の絵に追加する場合は、Layersの**Import image as layer**を使います。
+すでに開いているドキュメントに画像を取り込むには、代わりに<strong>File → Import Image as Layer…</strong>を選ぶか、画像ファイルをキャンバスにドラッグします。どちらの方法も、[写真を編集する](/ja/docs/filters/image-editing/)で詳しく説明しています。
 
-## 表示結果を書き出す
+## 複数のドキュメントを扱う
 
-<strong>File → Export PNG…</strong>は作業中のレイヤーを統合せず、統合画像を出力します。不要なSketchやColor roughを非表示にします。透明な背景が必要ならPaperの表示も確認します。
+開いたり作成したりしたドキュメントには、それぞれタイトルバーにタブが付きます。タブをクリックするとそのドキュメントに切り替わり、ドラッグすると並び順を変えられます。名前の横にある点は、まだ保存していない変更があるという印です。ウィンドウの幅が狭いときはタブが1つのリストにまとまりますが、<strong>File → Drawings…</strong>を使えば、開いているすべてのドキュメントをいつでも確認できます。
 
-PNGを開き直し、寸法、輪郭、背景を確認します。キャンバス表示の倍率や回転は書き出す画素を変えません。修正用の`.capy`も保管します。
+ドキュメントを閉じるには、タブのボタンか**File → Close**を使います。未保存の変更がある場合は、先に保存するかどうかを確認するメッセージが表示されます。
 
-## 機器を移るとき
+## 保存と復元
 
-ワークスペースの変更はブラウザーに別途保存されます。絵の保存や機器間同期、バックアップの代わりにはなりません。`.capy`自体を移し、元ファイルを削除する前に移動先で開けることを確認します。
+初めて保存するときは<strong>File → Save As…</strong>を選び、その後は**File → Save**を選ぶと同じファイルが更新されます。開いた写真を保存するときは、新しい`.capy`ファイルの保存先を尋ねられ、元の写真はそのまま残ります。
 
-New、Open、Closeで未保存の変更を確認されたら、保存、破棄、キャンセルを選びます。キャンセルすると現在の絵に戻ります。
+作業中、ウェブ版の編集画面は、保存していないドキュメントごとに復元用のコピーをブラウザー内に保持します。ブラウザーが突然閉じてしまった場合は、次に編集画面を開いたときに、そのドキュメントを復元するかどうかを確認されます。これはあくまで万一のための備えで、保存の代わりにはなりません。`.capy`ファイルはこまめに保存し、大切なファイルはコピーを取っておきましょう。
+
+共有や印刷用の画像を作るには、[画像を書き出す](/ja/docs/output/export/)を参照してください。

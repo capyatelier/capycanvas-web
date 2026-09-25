@@ -1,27 +1,27 @@
 ---
-title: "ワークスペース管理"
-description: "作業ごとに配置とツール設定を保持します。"
-purpose: "ワークスペースは配置と作業用ツール設定を保存します。Sketch、Paint、Photoも編集可能な開始点です。切り替えてもドキュメントは開いたままです。"
-techniques: ["切り替えや複製を行います。", "上部に表示する項目と順序を決めます。", "ブラシを初期化せず配置を復元します。"]
-figure: "1：Manage Workspacesの一覧。2：プレビューするワークスペース。3：切り替えとキャンセル。"
+title: "ワークスペースの管理"
+description: "作業の種類ごとに、異なるレイアウトとブラシ設定を使い分けます。"
+purpose: "ワークスペースは、レイアウトとブラシ設定をまとめて記憶します。Sketch、Paint、Photoはすぐに使え、漫画のペン入れや写真のレタッチなど、よく行うほかの作業のために自分のワークスペースを作ることもできます。"
+techniques: ["ワークスペースを切り替えたり、新しく作ったりします。", "タイトルバーに表示するワークスペースを選びます。", "ブラシをリセットせずにレイアウトを元に戻します。"]
+figure: "1：Manage Workspacesの一覧。2：プレビューのために選択したワークスペース。3：Switch to WorkspaceとCancel。"
 related: ["workspace/customization", "advanced/custom-brushes", "tools/files"]
-image: {"light": "/assets/guides/workspace-management-light.webp", "dark": "/assets/guides/workspace-management-dark.webp", "alt": "1：Manage Workspacesの一覧。2：プレビューするワークスペース。3：切り替えとキャンセル。"}
+image: {"light": "/assets/guides/workspace-management-light.webp", "dark": "/assets/guides/workspace-management-dark.webp", "alt": "1：Manage Workspacesの一覧。2：プレビューのために選択したワークスペース。3：Switch to WorkspaceとCancel。"}
 ---
 
-## 切り替える・コピーする
+## ワークスペースを切り替える・作る
 
-上部の**Sketch**、**Paint**、**Photo**を選ぶと、それぞれ最後に保存した設定へ戻ります。毎回初期プリセットに戻るわけではありません。**New Workspace**は現在の配置とツールを別名でコピーします。
+タイトルバーの切り替えを使って、**Sketch**、**Paint**、**Photo**を行き来します。各ワークスペースは独自のパネル配置とブラシ設定を持ち、離れたときのままの状態で戻ってきます。切り替えても、開いているドキュメントは開いたままです。
 
-**Manage Workspaces**でプレビューし、**Switch to Workspace**で適用します。**Cancel**は現在の配置を保ちます。別ウィンドウですでに使用中の場合は、そのウィンドウに移ることがあります。
+新しいワークスペースを作るには、<strong>Window → Workspaces → New Workspace…</strong>を選びます。新しいワークスペースは現在のワークスペースのコピーとして作られるので、そこから配置を変え、名前を付けます。<strong>Window → Workspaces → Manage Workspaces…</strong>には、すべてのワークスペースが一覧表示されます。1つ選択するとプレビューでき、**Switch to Workspace**を選ぶとそのワークスペースを使い始め、**Cancel**を選ぶと今のワークスペースにとどまります。
 
-## 上部の項目を選ぶ
+## 切り替えに表示する項目を選ぶ
 
-行のメニューの**Show in top bar**で表示を切り替えます。行を並べ替えると上部の順序も変わります。タッチやペンではグリップを直接ドラッグするか、行を長押しします。マウスは行を直接ドラッグできます。
+**Manage Workspaces**でワークスペースのメニューを開き、**Show in top bar**をオンにすると切り替えに追加され、オフにすると非表示になります。一覧でワークスペースを上下にドラッグすると、切り替えでの並び順を変えられます。ペンや指の場合は、グリップをつかんでドラッグします。
 
-表示と順序はすぐ保存され、プレビューのキャンセルでは戻りません。組み込みワークスペースは名前変更・削除できません。
+これらの設定はすぐに保存されます。Sketch、Paint、Photoもほかのワークスペースと同じように配置を変えられますが、名前の変更や削除はできません。
 
-## 必要な部分を復元する
+## 必要な部分だけを元に戻す
 
-<strong>Restore Starting Layout…</strong>は、組み込みでは最新の標準配置、カスタムでは保存した開始配置に戻します。作業用ツール設定は保持します。<strong>Reset All Brushes…</strong>はブラシの変更を初期化します。
+<strong>Restore Starting Layout…</strong>は、現在のワークスペースのパネルを最初の位置に戻し、ブラシの設定は残します。<strong>Reset All Brushes…</strong>はその逆で、ブラシをリセットし、レイアウトはそのままにします。違いは[ブラシ設定の保存とリセット](/ja/docs/advanced/custom-brushes/)で詳しく説明しています。
 
-作品は別に保存します。[Save](/ja/docs/tools/files/)で編集可能な`.capy`を残してください。
+ワークスペースはドキュメントとは別に、アプリの中に保存されます。絵を残すには、`.capy`ファイルとして[保存](/ja/docs/tools/files/)します。

@@ -1,27 +1,25 @@
 ---
 title: "Pen, touch and shortcuts"
-description: "Check pressure and put frequent actions on reachable controls."
-purpose: "Check the device’s input before changing brush settings. Once pressure works, use preferences and shortcuts to make repeated drawing operations comfortable."
-techniques: ["Test pressure response with a pencil.", "Adjust pressure response and stroke prediction.", "Assign shortcuts and distinguish pen input from touch."]
-figure: "1: Preferences categories. 2: Input controls. 3: Keyboard Shortcuts entry."
+description: "Check that your pen works, tune how it feels, and set up keyboard shortcuts."
+purpose: "It's worth making sure your pen works properly before changing any brush settings. Once it does, a few preferences and shortcuts can make drawing feel more comfortable and keep your favorite commands within easy reach."
+techniques: ["Check that pen pressure works.", "Adjust pressure, cursor and stroke prediction.", "Set up keyboard shortcuts."]
+figure: "1: Preferences pages. 2: Pen & Input settings. 3: Keyboard Shortcuts."
 related: ["painting/brushes", "advanced/brush-engine", "workspace"]
-image: {"light": "/assets/guides/advanced-input-light.webp", "dark": "/assets/guides/advanced-input-dark.webp", "alt": "1: Preferences categories. 2: Input controls. 3: Keyboard Shortcuts entry."}
+image: {"light": "/assets/guides/advanced-input-light.webp", "dark": "/assets/guides/advanced-input-dark.webp", "alt": "1: Preferences pages. 2: Pen & Input settings. 3: Keyboard Shortcuts."}
 ---
 
-## Check the pen
+## Check your pen
 
-Choose a built-in pencil and draw a stroke that starts lightly, becomes heavier, then fades. If it stays uniform, test pressure in another drawing app. Failure in both suggests a device or driver problem; failure only here calls for checking this editor’s input and preset settings.
+Choose a pencil and draw a stroke that starts lightly, presses harder, and then lightens again. If the line stays the same all the way along, try the same thing in another drawing app. If pressure doesn't work there either, the problem is most likely the tablet driver or its settings. If it only fails in Capy Canvas, check the settings below.
 
-On a separate tablet, map the active area to the correct display and preserve its aspect ratio. On a pen display, check cursor alignment near the center and edges. Pen pressure and tilt require device support.
+On a separate drawing tablet, make sure the tablet is mapped to the screen that shows Capy Canvas. On a pen display, check that the cursor lines up with the pen tip, both in the middle and near the edges. The buttons on the side of the pen do nothing on the canvas unless you give them a job in your tablet's settings, such as a keyboard shortcut.
 
-## Adjust the response
+## Tune how the pen feels
 
-Open **Preferences** and inspect the input controls. **Pressure response** changes how reported pressure is mapped. **Enable stroke prediction** estimates the next pen position. **Use browser stroke prediction** selects the browser’s estimate; **Prediction amount** controls the editor’s own prediction when available. Higher prediction can reduce the visible gap but may overshoot. Change one setting and compare the same curve before keeping it.
+Open **Preferences** and choose **Pen & Input**. **Pressure response** changes how hard you need to press: lower values make light pressure count for more. **Cursor shape** chooses what the pointer looks like over the canvas, and **Hide cursor when painting** keeps it out of the way while you draw.
 
-Touch can pan, pinch and rotate the view. Check your device’s touch behavior if resting a hand produces unexpected marks. See [Brush settings](/docs/advanced/brush-engine/) for changes belonging to one preset.
+**Enable stroke prediction** helps the line keep up with a fast-moving pen by drawing a little ahead of the last point it received. If the end of a stroke seems to overshoot a sharp turn, lower **Prediction amount** or turn prediction off. When your browser can predict strokes itself, **Use browser stroke prediction** uses its prediction instead. Change one setting at a time, and draw the same curve after each change.
 
-## Set shortcuts
+## Set up shortcuts
 
-Open **Keyboard Shortcuts**, select a command, and add the desired keys. Resolve reported conflicts before applying the assignment. Common defaults include **Ctrl+Z** for undo, **Space-drag** to pan, **F** to fit, and **Tab** for Zen. Apple systems can use Command where the platform mapping provides it.
-
-Map pen buttons to those keys through the tablet driver when needed.
+Open **Help → Keyboard Shortcuts** to see every command and its keys. Select a command to give it a new shortcut, and Capy Canvas lets you know if the keys are already in use. A few useful defaults are **Ctrl+Z** to undo, **Space**-drag to pan, **Ctrl+0** to fit the drawing on screen, **I** for the eyedropper, **Q** for Quick Mask, and **Tab** for Zen mode. On a Mac, use Command where you would use Ctrl.

@@ -8,9 +8,14 @@ export const content = {
     nav: { privacy: 'Privacy', webDemo: 'Web Demo', download: 'Download', documentation: 'Documentation', home: 'Home', language: 'Language', main: 'Main navigation', skip: 'Skip to content', github: 'Capy Canvas on GitHub' },
     home: {
       title: 'Capy Canvas',
-      description: 'Capy Canvas is a fast, familiar, and cross-platform drawing app with powerful GPU accelerated brushes.',
-      screenshot: 'Capy Canvas’s Paint workspace with abstract shapes, textured shading and editable layers.',
-      meta: 'Capy Canvas is a fast, familiar, and cross-platform drawing app with powerful GPU accelerated brushes.'
+      description: 'Capy Canvas is a fast, familiar, and cross-platform app for sketching, painting and photo editing, with powerful GPU accelerated brushes.',
+      workspaces: 'Workspace',
+      slides: {
+        sketch: 'An ink drawing of a train beneath a large tree in the Sketch workspace, where the drawing fills the screen and a few tools sit at the edges.',
+        paint: 'An oil painting of a house by the sea at sunset in the Paint workspace, with brushes, colors and layers beside the canvas.',
+        photo: 'A photograph of a small terrarium in the Photo workspace, with Curves and Vibrance adjustment layers and their settings.'
+      },
+      meta: 'Capy Canvas is a fast, familiar, and cross-platform app for sketching, painting and photo editing, with powerful GPU accelerated brushes.'
     },
     download: {
       title: 'Download', intro: 'Native downloads are not available yet.',
@@ -20,7 +25,7 @@ export const content = {
     },
     documentation: {
       title: 'Documentation',
-      meta: 'Capy Canvas documentation: workspace, sketching, line art, masking, rendering, layers, and brush settings.'
+      meta: 'Capy Canvas documentation: workspaces, brushes, color, layers, selections, photo editing and an illustration tutorial.'
     },
     privacy: { title: 'Privacy Policy', effectiveDate: 'Effective date', meta: 'How Capy Canvas handles app data, hosting, diagnostics, and support requests.' },
     notFound: { title: 'Page not found', text: 'The requested page does not exist.', action: 'Home' }
@@ -31,9 +36,14 @@ export const content = {
     nav: { privacy: 'プライバシー', webDemo: 'ウェブデモ', download: 'ダウンロード', documentation: 'ドキュメント', home: 'ホーム', language: '言語', main: 'メインナビゲーション', skip: '本文へ移動', github: 'GitHub の Capy Canvas' },
     home: {
       title: 'Capy Canvas',
-      description: 'Capy Canvas は、強力な GPU 加速ブラシを備えた、速くて親しみやすいクロスプラットフォームのお絵かきアプリです。',
-      screenshot: '抽象的な形に質感と陰影を加えた作品と、編集可能なレイヤーがあるCapy CanvasのPaintワークスペース。',
-      meta: 'Capy Canvas は、強力な GPU 加速ブラシを備えた、速くて親しみやすいクロスプラットフォームのお絵かきアプリです。'
+      description: 'Capy Canvas は、強力な GPU 加速ブラシを備えた、スケッチ、ペイント、写真編集のための速くて親しみやすいクロスプラットフォームアプリです。',
+      workspaces: 'ワークスペース',
+      slides: {
+        sketch: 'Sketchワークスペースで表示した、大きな木の下の電車を描いたペン画。絵が画面いっぱいに広がり、道具は画面の端にまとまっています。',
+        paint: 'Paintワークスペースで表示した、夕暮れの海辺の家を描いた油彩。キャンバスの横にブラシ、色、レイヤーが並んでいます。',
+        photo: 'Photoワークスペースで表示した、小さなテラリウムの写真。CurvesとVibranceの調整レイヤーと、その設定が表示されています。'
+      },
+      meta: 'Capy Canvas は、強力な GPU 加速ブラシを備えた、スケッチ、ペイント、写真編集のための速くて親しみやすいクロスプラットフォームアプリです。'
     },
     download: {
       title: 'ダウンロード', intro: 'ネイティブ版はまだダウンロードできません。',
@@ -43,7 +53,7 @@ export const content = {
     },
     documentation: {
       title: 'ドキュメント',
-      meta: 'Capy Canvas のドキュメント。作業画面、下描き、線画、マスク作成、塗り込み、レイヤー、ブラシ設定。'
+      meta: 'Capy Canvas のドキュメント。ワークスペース、ブラシ、色、レイヤー、選択範囲、写真編集、イラスト制作チュートリアル。'
     },
     privacy: { title: 'プライバシーポリシー', effectiveDate: '施行日', meta: 'Capy Canvas のアプリデータ、ホスティング、診断情報、お問い合わせの取り扱い。' },
     notFound: { title: 'ページが見つかりません', text: '指定されたページは存在しません。', action: 'ホーム' }
@@ -54,9 +64,14 @@ export const content = {
     nav: { privacy: '隐私', webDemo: '网页演示', download: '下载', documentation: '文档', home: '首页', language: '语言', main: '主导航', skip: '跳转到正文', github: 'GitHub 上的 Capy Canvas' },
     home: {
       title: 'Capy Canvas',
-      description: 'Capy Canvas 是一款快速、操作熟悉的跨平台绘画应用，配备强大的 GPU 加速笔刷。',
-      screenshot: 'Capy Canvas的Paint工作区，包含带有质感和阴影的抽象形状，以及可编辑的图层。',
-      meta: 'Capy Canvas 是一款快速、操作熟悉的跨平台绘画应用，配备强大的 GPU 加速笔刷。'
+      description: 'Capy Canvas 是一款快速、操作熟悉的跨平台应用，配备强大的 GPU 加速笔刷，适用于速写、绘画和照片编辑。',
+      workspaces: '工作区',
+      slides: {
+        sketch: 'Sketch工作区中的一幅钢笔画：大树下的一节电车。画面铺满整个屏幕，少量工具位于屏幕边缘。',
+        paint: 'Paint工作区中的一幅油画：日落时分海边的房子，画布旁边是笔刷、颜色和图层。',
+        photo: 'Photo工作区中的一张小型生态缸照片，带有Curves和Vibrance调整图层及其设置。'
+      },
+      meta: 'Capy Canvas 是一款快速、操作熟悉的跨平台应用，配备强大的 GPU 加速笔刷，适用于速写、绘画和照片编辑。'
     },
     download: {
       title: '下载', intro: '原生版本暂未开放下载。',
@@ -66,7 +81,7 @@ export const content = {
     },
     documentation: {
       title: '文档',
-      meta: 'Capy Canvas文档：工作区、草稿、线稿、蒙版、细化、图层与笔刷设置。'
+      meta: 'Capy Canvas文档：工作区、笔刷、颜色、图层、选区、照片编辑与插画教程。'
     },
     privacy: { title: '隐私政策', effectiveDate: '生效日期', meta: 'Capy Canvas 如何处理应用数据、网站托管、诊断信息和支持请求。' },
     notFound: { title: '页面不存在', text: '找不到所请求的页面。', action: '首页' }
@@ -77,9 +92,14 @@ export const content = {
     nav: { privacy: '개인정보', webDemo: '웹 데모', download: '다운로드', documentation: '문서', home: '홈', language: '언어', main: '주요 탐색', skip: '본문으로 건너뛰기', github: 'GitHub의 Capy Canvas' },
     home: {
       title: 'Capy Canvas',
-      description: 'Capy Canvas는 강력한 GPU 가속 브러시를 갖춘 빠르고 익숙한 크로스 플랫폼 드로잉 앱입니다.',
-      screenshot: '질감과 음영을 더한 추상 도형과 편집 가능한 레이어가 있는 Capy Canvas의 Paint 작업 공간.',
-      meta: 'Capy Canvas는 강력한 GPU 가속 브러시를 갖춘 빠르고 익숙한 크로스 플랫폼 드로잉 앱입니다.'
+      description: 'Capy Canvas는 강력한 GPU 가속 브러시를 갖춘, 스케치와 페인팅, 사진 편집을 위한 빠르고 익숙한 크로스 플랫폼 앱입니다.',
+      workspaces: '작업 공간',
+      slides: {
+        sketch: 'Sketch 작업 공간에 표시한, 큰 나무 아래의 전차를 그린 펜화. 그림이 화면을 가득 채우고 몇 가지 도구만 가장자리에 있습니다.',
+        paint: 'Paint 작업 공간에 표시한, 해 질 녘 바닷가의 집을 그린 유화. 캔버스 옆에 브러시, 색상, 레이어가 있습니다.',
+        photo: 'Photo 작업 공간에 표시한 작은 테라리움 사진. Curves와 Vibrance 조정 레이어와 그 설정이 보입니다.'
+      },
+      meta: 'Capy Canvas는 강력한 GPU 가속 브러시를 갖춘, 스케치와 페인팅, 사진 편집을 위한 빠르고 익숙한 크로스 플랫폼 앱입니다.'
     },
     download: {
       title: '다운로드', intro: '네이티브 버전은 아직 다운로드할 수 없습니다.',
@@ -89,7 +109,7 @@ export const content = {
     },
     documentation: {
       title: '문서',
-      meta: 'Capy Canvas 문서: 작업 화면, 스케치, 선화, 마스킹, 렌더링, 레이어 및 브러시 설정.'
+      meta: 'Capy Canvas 문서: 작업 공간, 브러시, 색상, 레이어, 선택 영역, 사진 편집, 일러스트 튜토리얼.'
     },
     privacy: { title: '개인정보 처리방침', effectiveDate: '시행일', meta: 'Capy Canvas의 앱 데이터, 호스팅, 진단 정보 및 문의 처리 방침.' },
     notFound: { title: '페이지를 찾을 수 없습니다', text: '요청한 페이지가 존재하지 않습니다.', action: '홈' }

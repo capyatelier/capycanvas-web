@@ -1,27 +1,27 @@
 ---
 title: "Manage workspaces"
-description: "Keep separate arrangements and tool settings for different tasks."
-purpose: "A workspace stores its arrangement and working tool settings. Sketch, Paint and Photo are editable starting points; your document stays open when you switch between them."
-techniques: ["Switch or copy a workspace.", "Pin and reorder entries in the top bar.", "Restore layout without resetting brushes."]
-figure: "1: Manage Workspaces list. 2: Workspace selected for preview. 3: Switch to Workspace and Cancel."
+description: "Keep different layouts and brush setups for different kinds of work."
+purpose: "A workspace remembers a layout together with your brush settings. Sketch, Paint and Photo are ready to use, and you can make your own workspaces for anything else you do often, such as inking comics or retouching photos."
+techniques: ["Switch between workspaces or make a new one.", "Choose which workspaces appear in the title bar.", "Restore a layout without resetting your brushes."]
+figure: "1: Manage Workspaces list. 2: The workspace selected for preview. 3: Switch to Workspace and Cancel."
 related: ["workspace/customization", "advanced/custom-brushes", "tools/files"]
-image: {"light": "/assets/guides/workspace-management-light.webp", "dark": "/assets/guides/workspace-management-dark.webp", "alt": "1: Manage Workspaces list. 2: Workspace selected for preview. 3: Switch to Workspace and Cancel."}
+image: {"light": "/assets/guides/workspace-management-light.webp", "dark": "/assets/guides/workspace-management-dark.webp", "alt": "1: Manage Workspaces list. 2: The workspace selected for preview. 3: Switch to Workspace and Cancel."}
 ---
 
-## Switch or make a copy
+## Switch or make a workspace
 
-Use the top-bar choices to switch among **Sketch**, **Paint** and **Photo**. Each restores its latest saved settings, rather than reapplying its original preset every time. Choose **New Workspace** to copy the current arrangement and tools under another name.
+Use the switcher in the title bar to move between **Sketch**, **Paint** and **Photo**. Each workspace comes back exactly as you left it, with its own panel layout and brush settings. Your open drawings stay open when you switch.
 
-**Manage Workspaces** lets you preview an entry before choosing **Switch to Workspace**. **Cancel** leaves the current arrangement in place. If a workspace is already in use in another window, switching can focus that window.
+To make a new workspace, choose **Window → Workspaces → New Workspace…**. It starts as a copy of the current workspace, which you can then rearrange and give a name. **Window → Workspaces → Manage Workspaces…** lists every workspace. Select one to preview it, then choose **Switch to Workspace** to use it, or **Cancel** to stay where you are.
 
-## Choose the top-bar entries
+## Choose what the switcher shows
 
-In the manager, use a row’s menu and **Show in top bar** to pin or hide it. Reorder rows to change their order in the switcher. Touch or pen can drag the grip directly; holding the row also permits dragging. Mouse can drag the row directly.
+In **Manage Workspaces**, open a workspace's menu and turn on **Show in top bar** to add it to the switcher, or turn it off to hide it. Drag workspaces up or down in the list to change their order in the switcher. With a pen or a finger, drag a workspace by its grip.
 
-Pinning and ordering save immediately. Canceling a preview does not undo those preferences. Included workspaces retain their identities and cannot be renamed or deleted.
+These choices are saved straight away. Sketch, Paint and Photo can be rearranged like any other workspace, but they can't be renamed or deleted.
 
 ## Restore the right part
 
-**Restore Starting Layout…** restores the latest shipped arrangement for an included workspace, or the saved starting arrangement for a custom one. It preserves working tool settings. **Reset All Brushes…** restores brush overrides instead.
+**Restore Starting Layout…** puts the panels of the current workspace back where they started, while keeping your brush settings. **Reset All Brushes…** does the opposite: it resets the brushes and leaves the layout alone. [Save and reset brush settings](/docs/advanced/custom-brushes/) explains the difference in more detail.
 
-These changes save separately from your drawing. Use [Save](/docs/tools/files/) to keep an editable `.capy` project.
+Workspaces are stored in the app, separately from your drawings. To keep a drawing, [save it](/docs/tools/files/) as a `.capy` file.

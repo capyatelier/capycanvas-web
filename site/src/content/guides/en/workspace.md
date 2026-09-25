@@ -1,27 +1,31 @@
 ---
-title: "Workspace and canvas"
-description: "Choose a workspace and navigate the view without changing the artwork."
-purpose: "Sketch, Paint and Photo arrange the same editor for different tasks. Start in Paint to keep drawing controls visible, then adjust the view to reach the part you want to work on."
-techniques: ["Switch among Sketch, Paint and Photo.", "Use Navigator, zoom, rotation and view flips.", "Hide controls with Zen mode."]
-figure: "1: Workspace switcher. 2: Tool Set. 3: Navigator and view controls."
-related: ["workspace/management", "workspace/customization", "advanced/input"]
-image: {"light": "/assets/guides/workspace-light.webp", "dark": "/assets/guides/workspace-dark.webp", "alt": "1: Workspace switcher. 2: Tool Set. 3: Navigator and view controls."}
+title: "Workspaces and canvas"
+description: "Choose between Sketch, Paint and Photo, and move around your drawing."
+purpose: "Capy Canvas has three workspaces, each arranged for a different kind of work. They all use the same tools and open the same drawings, so you can switch whenever the task changes. This page also shows how to move around the canvas and how to hide everything but your drawing."
+techniques: ["Choose the workspace that suits your task.", "Pan, zoom and rotate the view.", "Hide the interface with Zen mode."]
+figure: "1: Workspace switcher. 2: Brush, Sculpt, Eraser, Layers and Color in the Sketch title bar. 3: Brush size, color and opacity at the edge of the screen."
+related: ["workspace/customization", "workspace/management", "advanced/input"]
+image: {"light": "/assets/guides/workspace-light.webp", "dark": "/assets/guides/workspace-dark.webp", "alt": "1: Workspace switcher. 2: Brush, Sculpt, Eraser, Layers and Color in the Sketch title bar. 3: Brush size, color and opacity at the edge of the screen."}
 ---
 
-## Choose an arrangement
+## Choose a workspace
 
-**Sketch** keeps essential drawing controls in the top bar and opens panels as drawers. **Paint** has Tool Set, Tool/Brush size and Color on the left, with Navigator, Properties/Filters and Layers on the right. **Photo** places its main panels on the right and starts with Operation selected.
+**Sketch** gives your drawing as much of the screen as possible. The few buttons you need sit in the title bar, and panels such as Layers and Color open as drawers only while you use them. A small bar at the edge of the screen holds brush size, opacity, the color picker, and undo and redo, so they stay within reach of your hand.
 
-Switching workspace restores its arrangement and working tool settings. Your document stays open. [Manage workspaces](/docs/workspace/management/) explains how to keep different setups.
+**Paint** keeps everything open around the canvas. Your tools, brushes and colors are on the left, and Navigator, Properties and Layers are on the right. It is the best place to learn the editor, and most of these guides use it.
 
-## Navigate the canvas
+**Photo** is arranged for adjusting pictures. The selection tools are close at hand, the bar along the top shows options for the current tool, and Color, Filters and Layers stay open on the right.
 
-Hold **Space** and drag to pan; use **Ctrl+mouse wheel** or a two-finger pinch to zoom. **F** fits the document. Navigator provides zoom, rotation and view-flip controls, and dragging its preview moves the view. The View menu also offers **Rotate view 90° left/right** and horizontal/vertical flips. Touch rotation lets you choose another drawing angle.
+Switching workspaces never changes your drawing. Each open drawing has its own tab in the title bar, and all of them stay open when you switch.
 
-These operations change your view, including its orientation, without changing exported pixels. Use [Moving and transforming](/docs/tools/transforms/) to change the artwork itself.
+## Move around the canvas
 
-## Hide or rearrange controls
+Hold **Space** and drag to pan, and use **Ctrl** with the mouse wheel, or pinch with two fingers, to zoom. Press **Ctrl+0** to fit the whole drawing on screen. The **Navigator** panel shows a small preview of the drawing, with buttons to zoom, rotate and flip the view. You can also rotate with two fingers on a touch screen.
 
-Press **Tab** for **Zen mode**; press it again to restore the controls. The artwork stays in place. Moving to an occupied edge can reveal controls temporarily.
+Rotating or flipping the view only changes how you see the drawing. It is a comfortable way to draw a difficult curve, and it doesn't change the saved image. To turn the artwork itself, use [Moving and transforming](/docs/tools/transforms/).
 
-For a lasting change, move or configure the panels using [workspace customization](/docs/workspace/customization/). Layout undo is separate from drawing undo.
+## Hide everything with Zen mode
+
+Press **Tab**, or click the capybara in the top-left corner, to enter **Zen mode**. The panels and toolbars disappear, leaving only your drawing. Press **Tab** or click the capybara again to bring them back.
+
+If you'd like to rearrange a workspace instead of hiding it, see [Panels, toolbars and title bar](/docs/workspace/customization/).

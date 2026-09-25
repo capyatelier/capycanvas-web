@@ -1,27 +1,27 @@
 ---
 title: "Save and reset brush settings"
-description: "Keep brush changes in a workspace and restore defaults when needed."
-purpose: "Brush adjustments are saved with the workspace. Create another workspace when you want to preserve one set of tool settings while experimenting with another."
-techniques: ["Keep per-preset changes in a workspace.", "Create a separate workspace for another brush setup.", "Distinguish Reset All Brushes from Restore Starting Layout."]
-figure: "1: Active workspace. 2: Tool settings saved with it. 3: Reset All Brushes confirmation."
+description: "Keep your brush adjustments, try out new ones, and return to the defaults."
+purpose: "When you change a brush's settings, Capy Canvas remembers them as part of your workspace. You don't need to save anything by hand. If you want to experiment without losing a setup you like, make a copy of the workspace first."
+techniques: ["Keep your changes in the current workspace.", "Try a different setup in a copy of the workspace.", "Reset brushes without changing your layout."]
+figure: "1: Active workspace. 2: Brush settings saved with it. 3: Reset All Brushes confirmation."
 related: ["advanced/brush-engine", "workspace/management"]
-image: {"light": "/assets/guides/advanced-custom-brushes-light.webp", "dark": "/assets/guides/advanced-custom-brushes-dark.webp", "alt": "1: Active workspace. 2: Tool settings saved with it. 3: Reset All Brushes confirmation."}
+image: {"light": "/assets/guides/advanced-custom-brushes-light.webp", "dark": "/assets/guides/advanced-custom-brushes-dark.webp", "alt": "1: Active workspace. 2: Brush settings saved with it. 3: Reset All Brushes confirmation."}
 ---
 
-## Keep your adjustments
+## Your changes are kept for you
 
-Select a preset and change its controls in **Tool**. Switch to another preset, then return to compare the saved values. The workspace remembers per-preset overrides along with the selected tools and arrangement.
+Choose a brush and change its settings in the **Tool** panel. When you switch to another brush and come back later, your changes are still there. Each workspace remembers the settings for every brush separately, along with the tools you last used and the way the panels are arranged.
 
-These are workspace settings, separate from the `.capy` document. Saving artwork does not create a portable brush library, and opening artwork does not replace the current workspace.
+Brush settings belong to the workspace, not to your drawings. Opening a drawing doesn't change your brushes, and saving a drawing doesn't save them. Bookmarks that you add on the size and opacity sliders in Sketch are kept separately for each brush, and they are available in every workspace.
 
-## Preserve another setup
+## Try another setup
 
-Use **New Workspace** to copy the current settings and arrangement, then give the copy a useful name. Make experimental brush changes in that copy. Switching back restores the other workspace’s values.
+To experiment freely, choose **Window → Workspaces → New Workspace…**. This makes a copy of the current workspace, with its brushes and layout, under a new name. Make your changes in the copy. Switching back to the original workspace brings back its settings exactly as you left them.
 
-This is the available way to retain separate setups; the editor does not currently expose a standalone custom-preset duplicate/import/export workflow. See [Manage workspaces](/docs/workspace/management/) for switching, pinning and restoration.
+[Manage workspaces](/docs/workspace/management/) explains how to switch between workspaces and choose which ones appear in the title bar.
 
-## Reset the right settings
+## Start fresh
 
-Use **Reset All Brushes** to restore the built-in brush values in the current workspace, including presets that are not currently selected. It preserves your document and arrangement, but removes that workspace’s brush overrides.
+**Window → Workspaces → Reset All Brushes…** returns every brush in the current workspace to its original settings, including brushes you aren't using right now. Your drawings, your panel layout and your slider bookmarks are not affected.
 
-**Restore Starting Layout** restores panel placement instead. It keeps working tool settings. Make a workspace copy before resetting if you want to retain the values for later comparison.
+If you want the panels back where they started instead, use **Restore Starting Layout…**. That puts the panels back but keeps your brush settings, so the two resets never undo each other's work.

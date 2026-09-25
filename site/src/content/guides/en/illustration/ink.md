@@ -1,27 +1,27 @@
 ---
 title: "Line art"
-description: "Ink on a new layer above the faded sketch."
-purpose: "Keep the finished outlines separate from the preliminary drawing. You can erase or recolor the ink without altering the sketch, then put the final colors underneath it."
-techniques: ["Fade Sketch and select a separate Line art layer.", "Use a pen preset and view rotation.", "Close contours that will guide selections."]
-figure: "1: Line art above the faded Sketch. 2: Navigator’s view controls. 3: Pen presets in Tool Set."
+description: "Draw clean ink lines on a new layer above the faded sketch."
+purpose: "Line art is the clean, final version of your outlines. Drawing it on its own layer means you can erase or recolor the ink without touching the sketch, and later paint colors underneath it."
+techniques: ["Fade the sketch and add a Line art layer.", "Ink with a pen and rotate the view for tricky curves.", "Close the outlines of each shape."]
+figure: "1: Line art above the faded Sketch. 2: Navigator’s view controls. 3: Pen brushes in Tool Set."
 related: ["layers/basics", "advanced/input", "workspace"]
-image: {"light": "/assets/guides/illustration-ink-light.webp", "dark": "/assets/guides/illustration-ink-dark.webp", "alt": "1: Line art above the faded Sketch. 2: Navigator’s view controls. 3: Pen presets in Tool Set."}
+image: {"light": "/assets/guides/illustration-ink-light.webp", "dark": "/assets/guides/illustration-ink-dark.webp", "alt": "1: Line art above the faded Sketch. 2: Navigator’s view controls. 3: Pen brushes in Tool Set."}
 ---
 
-## 1. Separate the ink
+## 1. Prepare the layers
 
-Select **Sketch** and lower its layer opacity until it is visible without competing with the next stroke. Hide **Color rough**. Add **Line art** above Sketch and select its content thumbnail before drawing.
+Select **Sketch** and lower its opacity until the lines are faint but still easy to follow. Hide **Color rough** for now. Then add a new layer above Sketch, name it **Line art**, and make sure it is the selected layer before you start inking.
 
-Choose **Pen → G-Pen**, or another ink preset in Tool Set. Test the width with your usual pressure. Changing the sketch’s opacity does not itself select a new drawing layer.
+Choose the **Pen** tool and a pen such as **G-Pen**. Draw a few test lines with your usual pressure, and adjust the size until the line weight feels right.
 
-## 2. Trace and correct
+## 2. Ink the drawing
 
-Ink the shape contours, looping scribbles and short hatch marks. Rotate the view using Navigator or touch for curves that are awkward at the current angle. View rotation does not rotate the saved artwork.
+Trace the outlines of the three shapes, then add the loose scribbles and short hatching lines. When a curve feels awkward to draw, rotate the view with the buttons in **Navigator**, or with two fingers on a touch screen. Rotating the view doesn't rotate the drawing, so you can turn it as often as you like.
 
-Use Eraser or undo to correct Line art. If the visible stroke trails behind the pen, compare the prediction controls in [input settings](/docs/advanced/input/) and test the same curve again. Too much prediction can overshoot the intended turn.
+Use the Eraser or undo to fix mistakes. If the line seems to lag behind your pen, the [pen settings](/docs/advanced/input/) can help.
 
-## 3. Check the contours
+## 3. Check the outlines
 
-Hide Sketch to inspect the ink alone. Close accidental gaps in regions you intend to select automatically. Internal details can remain open when you will use a lasso to define the base-color shape.
+Hide Sketch to look at your ink on its own. Close any small gaps in the outlines of the three shapes, because the next stage uses them to select each shape. Small details inside a shape can stay open.
 
-Keep Line art above the colors throughout the following stages. Save the document, then continue to [Masking](/docs/illustration/mask/). The screenshot retains a faded sketch so the separation of layers remains visible.
+Line art stays at the top of the layer list for the rest of the tutorial, so the colors will always sit underneath it. Save your drawing, then continue to [Masking](/docs/illustration/mask/).

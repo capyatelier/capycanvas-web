@@ -1,27 +1,27 @@
 ---
 title: "线稿"
-description: "在淡化草稿上方的新图层上勾线。"
-purpose: "把最终轮廓与草稿分开，便于擦除或改色而不改变草稿，再将最终颜色放在线稿下方。"
-techniques: ["淡化Sketch并选择Line art。", "使用钢笔预设与视图旋转。", "闭合用于自动选择的轮廓。"]
-figure: "1：淡化Sketch上方的Line art。2：Navigator视图控制。3：Tool Set中的钢笔预设。"
+description: "在淡化的草稿上方新建图层，画出干净的墨线。"
+purpose: "线稿是轮廓干净的最终版本。把它画在单独的图层上，就可以擦除墨线或为墨线重新上色而不影响草稿，之后还能在它下面上色。"
+techniques: ["淡化草稿并添加Line art图层。", "用Pen勾线，遇到难画的曲线时旋转视图。", "闭合每个形状的轮廓。"]
+figure: "1：位于淡化的Sketch上方的Line art。2：Navigator的视图控件。3：Tool Set中的Pen笔刷。"
 related: ["layers/basics", "advanced/input", "workspace"]
-image: {"light": "/assets/guides/illustration-ink-light.webp", "dark": "/assets/guides/illustration-ink-dark.webp", "alt": "1：淡化Sketch上方的Line art。2：Navigator视图控制。3：Tool Set中的钢笔预设。"}
+image: {"light": "/assets/guides/illustration-ink-light.webp", "dark": "/assets/guides/illustration-ink-dark.webp", "alt": "1：位于淡化的Sketch上方的Line art。2：Navigator的视图控件。3：Tool Set中的Pen笔刷。"}
 ---
 
-## 1. 分开线稿
+## 1. 准备图层
 
-选择**Sketch**并降低图层不透明度，使其清晰但不干扰新线条。隐藏**Color rough**，在Sketch上方添加**Line art**，绘画前选择内容缩略图。
+选择**Sketch**，降低它的不透明度，直到线条变淡但仍然容易看清。暂时隐藏**Color rough**。然后在Sketch上方添加一个新图层，命名为**Line art**，并在开始勾线前确认它是选中的图层。
 
-选用**Pen → G-Pen**或其他勾线预设，以平常压感测试粗细。降低草稿不透明度不会自动切换绘画目标。
+选择**Pen**工具和一支笔，例如**G-Pen**。用平常的力度画几条测试线，并调整大小，直到线条粗细合适。
 
-## 2. 描画与修正
+## 2. 勾线
 
-画出形状轮廓、自由环线和短排线。曲线角度不方便时，用Navigator或触摸旋转视图；这不会旋转保存的作品。
+描出三个形状的轮廓，然后加上随意的涂鸦和短排线。遇到不好画的曲线时，可以用**Navigator**中的按钮旋转视图，在触摸屏上也可以用双指旋转。旋转视图不会旋转作品，所以想转多少次都可以。
 
-用Eraser或撤销修正Line art。笔迹显示落后于笔尖时，在[输入设置](/zh/docs/advanced/input/)中比较预测选项，并重复相同曲线。预测过强可能越过预期的转弯位置。
+用Eraser或撤销来修正错误。如果线条似乎跟不上笔，[笔的设置](/zh/docs/advanced/input/)可能会有帮助。
 
 ## 3. 检查轮廓
 
-隐藏Sketch，单独检查线稿。需要自动选择的区域应闭合意外缺口；准备用套索定义底色时，内部细节可以保持开放。
+隐藏Sketch，单独查看墨线。闭合三个形状轮廓上的小缺口，因为下一阶段要用这些轮廓来选中每个形状。形状内部的小细节可以保持开口。
 
-后续阶段始终把Line art放在颜色上方。保存后继续[蒙版](/zh/docs/illustration/mask/)。截图保留淡化草稿，以展示图层分离。
+在本教程余下的部分，Line art会一直位于图层列表的最上方，所以颜色总是在它下面。保存作品，然后继续[蒙版](/zh/docs/illustration/mask/)阶段。

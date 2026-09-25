@@ -10,6 +10,7 @@ import { content, languages } from '../site/src/data/content.mjs';
 const root=resolve(process.env.SITE_OUTPUT || 'docs');
 const read=path=>readFile(join(root,path),'utf8');
 const pages=['home','download','documentation','privacy'];
+const escape=text=>text.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;').replaceAll('>','&gt;');
 const route=(l,p)=>`${l==='en'?'':l+'/'}${p==='home'?'':(p==='documentation'?'docs':p)+'/'}`;
 function shape(value) { return Array.isArray(value)?value.map(shape):value && typeof value==='object'?Object.fromEntries(Object.entries(value).map(([k,v])=>[k,shape(v)])):typeof value; }
 for(const locale of Object.keys(languages)) {
@@ -47,9 +48,17 @@ for(const locale of Object.keys(languages)) {
       assert.match(html,/<h1 class="visually-hidden">Capy Canvas<\/h1>/);
       assert.doesNotMatch(html,/<figcaption|class="brand"|class="eyebrow"/);
       assert.equal((html.match(/class="button(?: primary)?"/g)||[]).length,3);
-      assert.match(html,/<source media="\(prefers-color-scheme: dark\)" srcset="\/assets\/guides\/illustration-dark.webp">/);
-      assert.match(html,/<img src="\/assets\/guides\/illustration-light.webp" width="1920" height="1080" alt=".+?"/);
-      assert.match(html,/<meta property="og:image" content="https:\/\/capycanvas.art\/assets\/guides\/illustration-light.webp">/);
+      for(const slide of ['sketch','paint','photo']) {
+        assert.ok(html.includes(`<source media="(prefers-color-scheme: dark)" srcset="/assets/showcase/${slide}-dark.webp">`));
+        assert.ok(html.includes(`<img src="/assets/showcase/${slide}-light.webp" width="1920" height="1080" alt="${escape(content[locale].home.slides[slide])}"`), `Slide ${slide} has its localized description`);
+        assert.match(html,new RegExp(`<input class="visually-hidden" type="radio" name="workspace" value="${slide}"`));
+      }
+      assert.equal((html.match(/type="radio"[^>]*checked/g)||[]).length,1,'One workspace is chosen without JavaScript');
+      assert.match(html,/value="paint" checked/);
+      assert.ok(html.includes(`<legend class="visually-hidden">${content[locale].home.workspaces}</legend>`));
+      assert.ok(modules.some(code=>code.includes('[data-showcase]')), 'Showcase behavior is bundled with the home page');
+      assert.match(html,/<meta property="og:image" content="https:\/\/capycanvas.art\/assets\/showcase\/paint-light.webp">/);
+      assert.match(html,/<meta property="og:image:width" content="1920">/);
       assert.doesNotMatch(html,/<header|class="nav-links"|href="https:\/\/github.com/);
     } else {
       const footer = html.match(/<footer class="site-footer">([\s\S]*?)<\/footer>/)?.[1];

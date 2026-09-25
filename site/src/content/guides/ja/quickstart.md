@@ -1,25 +1,27 @@
 ---
 title: "クイックスタート"
-description: "Paintを開き、筆圧を確認して最初の絵を保存します。"
-purpose: "作業画面を調整する前に、数本の線を描いてみます。ペンと編集機能の動作を確認し、小さなドキュメントで保存まで試します。"
-techniques: ["Paintでドキュメントを作成します。", "鉛筆プリセットで筆圧を確認します。", "編集用プロジェクトとPNGを保存します。"]
-figure: "1：Paintワークスペース。2：Tool Set。3：描画先を選ぶLayers。"
+description: "Capy Canvasを開いてペンを確かめ、最初の絵を保存します。"
+purpose: "レイアウトを変えたり、すべてのブラシを試したりする前に、まずは何本か線を描いて保存してみましょう。編集画面とペンがきちんと連携しているか確かめられ、あとで見返せる小さな絵も手元に残ります。"
+techniques: ["編集画面を開き、新しいドキュメントを作成します。", "鉛筆で筆圧を試します。", "絵を保存し、共有用のコピーを書き出します。"]
+figure: "1：ワークスペースの切り替え。2：ブラシを選ぶTool Set。3：描いた線を保持するLayers。"
 related: ["workspace", "painting/brushes", "tools/files"]
-image: {"light": "/assets/guides/quickstart-light.webp", "dark": "/assets/guides/quickstart-dark.webp", "alt": "1：Paintワークスペース。2：Tool Set。3：描画先を選ぶLayers。"}
+image: {"light": "/assets/guides/quickstart-light.webp", "dark": "/assets/guides/quickstart-dark.webp", "alt": "1：ワークスペースの切り替え。2：ブラシを選ぶTool Set。3：描いた線を保持するLayers。"}
 ---
 
 ## 編集画面を開く
 
-[ダウンロードページ](/ja/download/)で提供状況とインストール方法を確認します。ハードウェアWebGPUに対応するブラウザーで[Web Demo](https://editor.capycanvas.art/)を開くか、ウェブアプリをインストールしてオフラインで使います。タッチ画面だけでは筆圧は得られません。機器が対応する筆圧ペンを使ってください。
+いちばん手軽に始められるのは、ブラウザーで動く[Web Demo](https://editor.capycanvas.art/)です。ハードウェアアクセラレーションが有効なWebGPUに対応したブラウザーが必要で、一度開けば、その後はオフラインでも使えます。アプリとしてインストールすることもできます。方法は[ダウンロードページ](/ja/download/)で説明しており、デスクトップ版とモバイル版のアプリがいつ使えるようになるかも案内しています。
 
-上部の**Paint**を選び、<strong>File → New…</strong>でドキュメントを作成します。PaintではTool Set、Color、Layersが常に見えます。Sketchは操作を絞り、Photoは画像調整を中心に配置します。
+編集画面が開いたら、ウィンドウ上部のワークスペースの切り替えで**Paint**を選びます。Paintではブラシ、色、レイヤーが常に画面に表示されるので、操作を覚えるのに適しています。次に<strong>File → New…</strong>を選び、サイズを決めて**Create**を選択します。
 
-## 線を試す
+## 最初の線を描く
 
-**Pencil**と鉛筆プリセットを選び、軽く描き始めて徐々に力を加え、最後に力を抜きます。太さは**Tool**で調整します。筆圧が反映されない場合は、ブラシを変える前に[入力設定](/ja/docs/advanced/input/)を確認します。テストの線は元に戻せます。
+左側の**Pencil**ツールを選び、**Tool Set**で鉛筆を1つ選びます。軽く描き始め、途中で強く押し、最後にまた力を抜く線を描いてみてください。ペンが筆圧を送っていれば、強く押したところほど線が太く、濃くなります。
 
-## 保存して次へ進む
+どの線も同じに見える場合は、ペンの筆圧がブラウザーに届いていない可能性があります。ブラシの設定を変える前に確認することを、[ペンとタッチのガイド](/ja/docs/advanced/input/)で順に説明しています。残したくない試し描きは、**Ctrl+Z**で取り消せます。
 
-<strong>Save As…</strong>で`.capy`プロジェクト、<strong>Export PNG…</strong>で統合画像を保存します。ワークスペース設定と絵の保存は別です。
+## 作品を保存する
 
-[ブラシと描画](/ja/docs/painting/brushes/)へ進むか、[イラスト制作チュートリアル](/ja/docs/illustration/)で下描きから塗りまで練習します。
+<strong>File → Save As…</strong>を選び、`.capy`ファイルとして保存します。`.capy`ファイルにはレイヤーを含めてすべてが編集できる状態で残るので、続きからまた作業できます。共有用に一般的な画像がほしいときは、<strong>File → Export…</strong>を選んでPNGまたはJPEGのコピーを保存します。
+
+次は、[ブラシと描画](/ja/docs/painting/brushes/)でブラシの選び方と調整方法を確認しましょう。[イラスト制作チュートリアル](/ja/docs/illustration/)では、最初の下描きから最後の陰影まで、1枚の絵を仕上げる流れを紹介しています。

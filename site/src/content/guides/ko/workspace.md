@@ -1,27 +1,31 @@
 ---
 title: "작업 공간과 캔버스"
-description: "배치를 선택하고 작품을 바꾸지 않은 채 보기를 조절합니다."
-purpose: "Sketch, Paint, Photo는 같은 편집 기능을 서로 다른 배치로 제공합니다. Paint에서 조작부를 확인한 뒤 그리기 편한 위치로 보기를 조절합니다."
-techniques: ["Sketch, Paint, Photo를 전환합니다.", "Navigator로 확대, 회전, 반전을 합니다.", "Zen 모드로 조작부를 숨깁니다."]
-figure: "1: 작업 공간 전환. 2: Tool Set. 3: Navigator와 보기 조작부."
-related: ["workspace/management", "workspace/customization", "advanced/input"]
-image: {"light": "/assets/guides/workspace-light.webp", "dark": "/assets/guides/workspace-dark.webp", "alt": "1: 작업 공간 전환. 2: Tool Set. 3: Navigator와 보기 조작부."}
+description: "Sketch, Paint, Photo 중에서 작업 공간을 고르고, 캔버스를 자유롭게 둘러봅니다."
+purpose: "Capy Canvas에는 작업 종류에 맞게 배치된 세 가지 작업 공간이 있습니다. 모두 같은 도구를 쓰고 같은 그림을 열기 때문에, 하는 일이 바뀔 때마다 언제든 전환할 수 있습니다. 이 페이지에서는 캔버스를 둘러보는 방법과 그림만 남기고 나머지를 모두 숨기는 방법도 설명합니다."
+techniques: ["작업에 맞는 작업 공간을 고릅니다.", "화면을 이동, 확대·축소, 회전합니다.", "Zen 모드로 인터페이스를 숨깁니다."]
+figure: "1: 작업 공간 전환기. 2: Sketch 제목 표시줄의 Brush, Sculpt, Eraser, Layers, Color. 3: 화면 가장자리의 브러시 크기, 색상, 불투명도."
+related: ["workspace/customization", "workspace/management", "advanced/input"]
+image: {"light": "/assets/guides/workspace-light.webp", "dark": "/assets/guides/workspace-dark.webp", "alt": "1: 작업 공간 전환기. 2: Sketch 제목 표시줄의 Brush, Sculpt, Eraser, Layers, Color. 3: 화면 가장자리의 브러시 크기, 색상, 불투명도."}
 ---
 
-## 배치 선택하기
+## 작업 공간 고르기
 
-**Sketch**는 주요 그리기 조작부를 상단에 두고 패널을 서랍처럼 엽니다. **Paint**는 왼쪽에 Tool Set, Tool/Brush size, Color를, 오른쪽에 Navigator, Properties/Filters, Layers를 둡니다. **Photo**는 주요 패널을 오른쪽에 모으고 Operation을 기본 선택합니다.
+**Sketch**는 화면을 최대한 그림에 내어 줍니다. 꼭 필요한 몇 가지 버튼은 제목 표시줄에 있고, Layers나 Color 같은 패널은 사용할 때만 서랍처럼 열립니다. 화면 가장자리의 작은 막대에는 브러시 크기, 불투명도, 색 선택기, 실행 취소와 다시 실행이 모여 있어 손을 뻗으면 바로 닿습니다.
 
-전환하면 해당 작업 공간의 배치와 도구 설정을 복원하며 문서는 열린 상태로 유지됩니다. 별도 설정을 보관하는 방법은[작업 공간 관리](/ko/docs/workspace/management/)를 참조하세요.
+**Paint**는 캔버스 주위에 모든 것을 펼쳐 둡니다. 왼쪽에는 도구, 브러시, 색상이, 오른쪽에는 Navigator, Properties, Layers가 있습니다. 편집기를 익히기에 가장 좋은 작업 공간이며, 이 가이드도 대부분 Paint를 기준으로 합니다.
 
-## 보기 조절하기
+**Photo**는 사진 보정에 맞게 배치되어 있습니다. 선택 도구가 가까이 있고, 위쪽 막대에는 현재 도구의 옵션이 표시되며, 오른쪽에는 Color, Filters, Layers가 계속 열려 있습니다.
 
-**Space를 누르고 드래그**하면 이동하고, **Ctrl+휠**이나 두 손가락 핀치로 확대·축소합니다. **F**는 전체 보기에 맞춥니다. Navigator 버튼으로 확대, 회전, 반전을 하고 미리보기를 드래그해 표시 위치를 옮깁니다. View 메뉴에는 90도 회전과 가로·세로 반전이 있으며, 터치로는 자유롭게 회전할 수 있습니다.
+작업 공간을 바꿔도 그림은 전혀 바뀌지 않습니다. 열려 있는 그림마다 제목 표시줄에 탭이 하나씩 있으며, 작업 공간을 전환해도 모두 열린 채로 남습니다.
 
-보기 조작은 내보내는 픽셀을 바꾸지 않습니다. 작품 자체를 바꾸려면[이동과 변형](/ko/docs/tools/transforms/)을 사용합니다.
+## 캔버스 둘러보기
 
-## 조작부 숨기기와 이동하기
+**Space**를 누른 채 드래그하면 화면이 이동하고, **Ctrl**을 누른 채 마우스 휠을 돌리거나 두 손가락으로 핀치하면 확대·축소됩니다. **Ctrl+0**을 누르면 그림 전체가 화면에 맞춰집니다. **Navigator** 패널에는 그림의 작은 미리보기와 함께 화면을 확대, 회전, 반전하는 버튼이 있습니다. 터치스크린에서는 두 손가락으로 회전할 수도 있습니다.
 
-**Tab**으로 Zen 모드를 켜고 다시 눌러 돌아옵니다. 작품 위치는 유지됩니다. 패널이 있는 화면 가장자리로 이동하면 조작부를 잠시 표시할 수 있습니다.
+화면을 회전하거나 반전해도 그림이 보이는 방식만 바뀝니다. 어려운 곡선을 편한 각도에서 그릴 수 있고, 저장되는 이미지는 바뀌지 않습니다. 작품 자체를 돌리려면 [이동과 변형](/ko/docs/tools/transforms/)을 참고하세요.
 
-지속적으로 배치를 바꾸는 방법은[작업 공간 꾸미기](/ko/docs/workspace/customization/)를 참조하세요. 배치 기록은 그리기 기록과 별개입니다.
+## Zen 모드로 모두 숨기기
+
+**Tab**을 누르거나 왼쪽 위 모서리의 카피바라를 클릭하면 **Zen 모드**로 들어갑니다. 패널과 도구 모음이 사라지고 그림만 남습니다. 다시 **Tab**을 누르거나 카피바라를 클릭하면 원래대로 돌아옵니다.
+
+작업 공간을 숨기는 대신 배치를 바꾸고 싶다면 [패널, 도구 모음과 제목 표시줄](/ko/docs/workspace/customization/)을 참고하세요.

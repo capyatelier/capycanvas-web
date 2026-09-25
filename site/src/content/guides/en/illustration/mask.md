@@ -1,27 +1,27 @@
 ---
 title: "Masking"
-description: "Give Ribbon, Disc and Block their own editable color boundaries."
-purpose: "A base-color layer holds paint, while its mask controls the visible boundary. Filling behind the mask lets you reveal a little more color later without repainting the whole region."
-techniques: ["Define a region with Lasso or Auto select.", "Create a mask from the selection and fill the underlying layer.", "Select the mask thumbnail to refine its edge."]
-figure: "1: Ribbon’s selected mask thumbnail. 2: Separate Ribbon, Disc and Block layers below Line art. 3: White paint for revealing mask coverage."
+description: "Give the ribbon, disc and block their own color layers with editable edges."
+purpose: "In this stage, each shape gets its own layer of color. The color fills the whole layer, and a mask decides which part of it you see. Because nothing is erased, you can adjust the edge of any shape later just by painting on its mask."
+techniques: ["Select a shape with a lasso or Auto select.", "Turn the selection into a mask and fill the layer with color.", "Paint on the mask to adjust the edge."]
+figure: "1: Ribbon’s selected mask thumbnail. 2: Ribbon, Disc and Block below Line art. 3: Eraser, which hides parts of the mask."
 related: ["layers/masks", "tools/selections", "painting/color"]
-image: {"light": "/assets/guides/illustration-mask-light.webp", "dark": "/assets/guides/illustration-mask-dark.webp", "alt": "1: Ribbon’s selected mask thumbnail. 2: Separate Ribbon, Disc and Block layers below Line art. 3: White paint for revealing mask coverage."}
+image: {"light": "/assets/guides/illustration-mask-light.webp", "dark": "/assets/guides/illustration-mask-dark.webp", "alt": "1: Ribbon’s selected mask thumbnail. 2: Ribbon, Disc and Block below Line art. 3: Eraser, which hides parts of the mask."}
 ---
 
-## 1. Select a base shape
+## 1. Select a shape
 
-Hide **Sketch** and **Color rough**. Use **Lasso selection** to define the ribbon outline, as in the example. For an enclosed ink region, you can instead mark **Line art** as a reference layer, choose **Auto select → Reference**, and click inside it.
+Hide **Sketch** and **Color rough**. Choose **Lasso selection** and carefully trace around the ribbon, as in the example.
 
-Check the boundary before continuing. Adjust tolerance, gap closing and expansion before repeating automatic selection if needed. [Selections and fill](/docs/tools/selections/) explains those controls.
+If your line art is closed around a shape, **Auto select** can do this with one click. Mark **Line art** as a reference layer by choosing **Layer Settings → Use as reference** in its menu. Then choose **Auto select**, choose **Sample reference layers** in the Tool panel, and click inside the shape. [Selection tools](/docs/tools/selections/) explains the settings that control how far the selection spreads.
 
-## 2. Make the masked layer
+## 2. Make the masked color layer
 
-Create **Ribbon** below Line art. With the pixel selection present, open Ribbon’s context menu and choose **Mask: reveal selection**. Clear any remaining pixel selection, then choose Ribbon’s **content thumbnail**.
+Add a new layer named **Ribbon** below Line art. With the selection still active, open Ribbon's menu and choose **Mask → Mask: reveal selection**. The layer now has a mask that shows only the ribbon's shape.
 
-Choose the base color, use **Select → Select all pixels**, then **Edit → Fill selection** to fill the entire layer. Use **Deselect pixels** afterward. The mask shows only the selected silhouette, but paint remains behind its hidden area. Temporarily show Color rough to sample a color if needed, then hide it again.
+Click Ribbon's paint thumbnail and choose the ribbon's color. Choose **Select → Select all pixels** and then **Edit → Fill selection** to fill the whole layer with color, and finish with **Select → Deselect pixels**. Only the ribbon shows, but the color continues underneath the mask, ready for when you want to widen the shape.
 
-## 3. Refine the edge
+## 3. Adjust the edge
 
-Select Ribbon’s **mask thumbnail**. Paint black to hide excess coverage or white to reveal more. Return to the content thumbnail before recoloring the paint.
+Click Ribbon's mask thumbnail to edit the mask. Now any brush reveals more of the color where you paint, and the **Eraser** hides it again. Click the paint thumbnail again when you want to change the color itself.
 
-Make **Disc** and **Block** the same way. Keep Disc below Ribbon and Block below Disc, with Line art above all three. Save, then continue to [Rendering](/docs/illustration/render/) for clipped shading.
+Make **Disc** and **Block** in the same way. Keep Disc below Ribbon and Block below Disc, with Line art above all three. Save your drawing, then continue to [Rendering](/docs/illustration/render/).

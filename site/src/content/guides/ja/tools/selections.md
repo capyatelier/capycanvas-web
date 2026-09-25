@@ -1,25 +1,27 @@
 ---
-title: "選択範囲と塗りつぶし"
-description: "境界を読む対象と、塗りを置くレイヤーを選びます。"
-purpose: "画素の選択範囲は編集できる場所を制限しますが、編集レイヤーは選びません。この違いにより、線画から境界を読み、別レイヤーへ色を置けます。"
-techniques: ["投げ縄またはAuto selectで範囲を選びます。", "Visible・Editing・Referenceから参照元を選びます。", "許容値と境界を調整し、最後に選択を解除します。"]
-figure: "1：Auto selectと参照元。2：許容値と境界設定。3：参照元とは別の編集レイヤー。"
-related: ["tools/transforms", "layers/masks", "illustration/mask"]
-image: {"light": "/assets/guides/tools-selections-light.webp", "dark": "/assets/guides/tools-selections-dark.webp", "alt": "1：Auto selectと参照元。2：許容値と境界設定。3：参照元とは別の編集レイヤー。"}
+title: "選択ツール"
+description: "絵の一部を選択し、その範囲だけに変更が及ぶようにします。"
+purpose: "選択範囲は、絵の中で作業したい部分を示します。選択範囲があるあいだは、描画、塗りつぶし、変形が選択した部分にだけ適用されるので、ほかの部分に影響しません。Capy Canvasには、単純な図形、フリーハンドの輪郭、似た色の範囲を選ぶための選択ツールがあります。"
+techniques: ["目的に合った選択ツールを選びます。", "選択範囲に追加したり、選択範囲から一部を除いたりします。", "選択範囲を塗りつぶし、終わったら解除します。"]
+figure: "1：Tool Setの選択ツール。2：選択モード、ぼかし、形のオプション。3：円を囲む楕円の選択範囲。"
+related: ["selections/quick-mask", "selections/tonal-range", "layers/masks"]
+image: {"light": "/assets/guides/tools-selections-light.webp", "dark": "/assets/guides/tools-selections-dark.webp", "alt": "1：Tool Setの選択ツール。2：選択モード、ぼかし、形のオプション。3：円を囲む楕円の選択範囲。"}
 ---
 
-## 方法を選ぶ
+## 選択ツールを選ぶ
 
-自分で境界を描くときは**Lasso selection**、画像の領域から判断するときは**Auto select**を使います。Tool Setで表示画像、編集中レイヤー、参照レイヤーを選びます。Line artを参照元にするには、その行を選択して**Use selected layers as references**を使います。
+Paintでは、ツールバーで**Lasso selection**か**Auto select**を選ぶと、Tool Setにすべての選択ツールが表示されます。Sketchでは**Select**ボタンの中にあり、Photoではほとんどの選択ツールがツールバーに並んでいます。
 
-塗りつぶす前に目的の描画レイヤーへ戻ります。**Lasso Fill**は描いた境界をすぐ塗りつぶす別のサブツールで、保持される画素選択とは異なります。
+**Rectangle select**と**Ellipse select**は、単純な形の範囲を選択します。**Shift**を押しながらドラッグすると正方形や正円に、**Alt**を押しながらドラッグすると中心から描けます。**Lasso selection**はペンの動きをそのままたどり、**Polygonal lasso**はクリックした点のあいだを直線で結びます。範囲を閉じるには、最初の点をもう一度クリックするか、**Enter**を押します。**Auto select**は1回のクリックで似た色の範囲を選び、**Select by color**はその色の範囲をすべて一度に選びます。**Paint selection**と**Tonal range**の2つのツールについては、それぞれ[クイックマスクと選択レイヤー](/ja/docs/selections/quick-mask/)と[明るさで選択する](/ja/docs/selections/tonal-range/)のページで説明しています。
 
-## 輪郭と境界を調整する
+## 選択範囲を組み合わせる・ぼかす
 
-**Fill**は検出した領域を直接塗り、**Auto select**は塗る前に選択を確認できます。Toolには**Tolerance**、**Close gaps**、**Expansion**、**Edge smoothing**があります。
+**Tool**パネル上部にある4つのボタンで、次に範囲を選択したときの動作を選びます。現在の選択範囲を置き換える、追加する、一部を除く、2つが重なる部分だけを残す、のいずれかです。ボタンを切り替えずに、**Shift**を押しながら選択して追加したり、**Alt**を押しながら選択して除いたりすることもできます。
 
-色の変化で領域が分かれる場合は許容値を上げます。小さな開口部は隙間を閉じる設定で補えますが、大きく漏れる場合は輪郭を確認します。少量の拡張はアンチエイリアスの線の下まで色を届かせます。設定は次の領域操作に適用されます。
+**Feather radius**は選択範囲の境界をぼかします。塗りや調整が硬い線でぴたりと止まらず、徐々に薄れていくようになります。Auto selectでは、**Tolerance**でどれくらい違う色まで範囲に含めるかを決め、**Close gaps**で線画の小さな途切れから選択範囲が漏れ出すのを防ぎます。
 
-## 編集を終える
+## 選択範囲を使う
 
-**Fill selection**で編集レイヤーの選択画素を塗るか、選択から[レイヤーマスク](/ja/docs/layers/masks/)を作ります。塗りつぶしや[変形](/ja/docs/tools/transforms/)の後は、**Select → Deselect pixels**で選択を解除してください。
+選択範囲があるあいだは、自由に描いても、線は範囲の内側にだけ描かれます。**Edit → Fill selection**を選ぶと現在の色で塗りつぶせるほか、選択範囲を[レイヤーマスク](/ja/docs/layers/masks/)にすることもできます。**Select**メニューでは、選択範囲を反転したり、数ピクセル単位で広げたり狭めたりできるほか、**Reselect**で直前の選択範囲を呼び戻せます。
+
+終わったら**Select → Deselect pixels**を選び、次の線をどこにでも描けるようにします。
