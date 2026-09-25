@@ -167,8 +167,10 @@ reuses the tutorial's unannotated Paint screenshot, with accessible alt text and
 no visible caption or instructional image hint. Guides always use the abstract
 study, including the photo-editing pages.
 
-The homepage showcase (`src/components/Home.astro`) crossfades between the Sketch,
-Paint and Photo workspaces, each showing finished artwork supplied by Capy Atelier.
+The homepage showcase (`src/components/Home.astro`) is a slideshow that crossfades
+between the Sketch, Paint and Photo workspaces every few seconds, each showing
+finished artwork supplied by Capy Atelier. Its small indicator is overlaid on the
+screenshot so it takes no extra space.
 Those sources are the `.capy` projects in `scripts/capture/showcase/`; they are
 capture inputs rather than published downloads.
 

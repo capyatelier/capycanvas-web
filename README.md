@@ -94,10 +94,10 @@ and keyboard interaction. The browser tests cover both behaviors.
 The browser's `prefers-color-scheme` selects the whole page palette and the
 matching genuine app screenshots. Changes apply live. The home page contains a
 workspace showcase, a short description, three primary links, and the language
-selector. The showcase crossfades between real Sketch, Paint and Photo screenshots,
-advancing on its own until the reader picks a workspace in its switcher; it pauses
-on hover or focus, respects reduced motion, and switches with plain CSS when
-JavaScript is unavailable. The showcase scales to fit the viewport. Other pages have a small footer with a privacy link
+selector. The showcase is a slideshow that crossfades between real Sketch, Paint and
+Photo screenshots every few seconds. A small indicator overlaid on the screenshot
+names the current workspace and lets the reader jump to another; without JavaScript
+it still switches slides with plain CSS. The showcase scales to fit the viewport. Other pages have a small footer with a privacy link
 and a Capy Atelier credit. All pages use borderless controls. Source translations live
 in `site/src/data/content.mjs`; each language gets static HTML, appropriate metadata,
 canonical and alternate links, and a sitemap entry.

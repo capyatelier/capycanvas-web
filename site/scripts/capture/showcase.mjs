@@ -29,10 +29,11 @@ export async function showcase(e, record) {
   const curves = (await e.read('layerApp.state().layer_properties')).layer;
   await e.send({ type: 'effect', action: { op: 'set', layer: curves, key: 'curve_0', value: { kind: 'curve', value: [[0, 0], [.22, .16], [.72, .84], [1, 1]] } } });
   await e.send({ type: 'effect', action: { op: 'insert', effect: 'vibrance' } });
-  await e.invoke('move');
   await e.show('properties');
   const vibrance = (await e.read('layerApp.state().layer_properties')).layer;
   await e.send({ type: 'effect', action: { op: 'set', layer: vibrance, key: 'vibrance', value: { kind: 'number', value: 35 } } });
+  await e.invoke('tonal_select');
+  await e.wait(`[...document.querySelectorAll('button[aria-label]')].some(b=>(b.getAttribute('aria-label')||'').startsWith('Highlights'))`);
   await record('photo', [], { file: 'showcase/photo', check: 'artwork' });
   await e.workspace('illustrator');
 }
