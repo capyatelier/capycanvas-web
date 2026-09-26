@@ -8,14 +8,14 @@ export const content = {
     nav: { privacy: 'Privacy', webDemo: 'Web Demo', download: 'Download', documentation: 'Documentation', home: 'Home', language: 'Language', main: 'Main navigation', skip: 'Skip to content', github: 'Capy Canvas on GitHub' },
     home: {
       title: 'Capy Canvas',
-      description: 'Capy Canvas is a cross-platform app for sketching, illustration, and photography, with a powerful GPU accelerated painting engine.',
+      description: 'Capy Canvas is a cross-platform app for sketching, illustration, and photography, with a powerful GPU-accelerated painting engine.',
       workspaces: 'Workspace',
       slides: {
         sketch: 'An ink drawing of a train beneath a large tree in the Sketch workspace, where the drawing fills the screen and a few tools sit at the edges.',
         paint: 'An oil painting of a house by the sea at sunset in the Paint workspace, with brushes, colors and layers beside the canvas.',
         photo: 'A photograph of a small terrarium in the Photo workspace, with the Tonal range tool ready to select by brightness, and Curves and Vibrance adjustment layers.'
       },
-      meta: 'Capy Canvas is a cross-platform app for sketching, illustration, and photography, with a powerful GPU accelerated painting engine.'
+      meta: 'Capy Canvas is a cross-platform app for sketching, illustration, and photography, with a powerful GPU-accelerated painting engine.'
     },
     download: {
       title: 'Download', intro: 'Native downloads are not available yet.',
