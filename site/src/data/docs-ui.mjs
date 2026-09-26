@@ -49,7 +49,7 @@ export const docsUI = {
         },
         "workspace": {
           "title": "Your workspace",
-          "text": "Capy Canvas comes with familiar layouts for sketching, painting and photo editing, and every tool and panel can be moved exactly how you like it. And if you just want a blank canvas with no distractions, click the Capybara to enter Zen mode!",
+          "text": "Capy Canvas comes with familiar layouts for sketching, painting and photo editing, and every tool and panel can be moved wherever you like. And if you just want a blank canvas with no distractions, click the Capybara to enter Zen mode!",
           "link": "Workspaces and canvas"
         },
         "input": {
