@@ -1,4 +1,5 @@
 // Browser menu wording is intentionally brief; support references are in README.md.
+import { additionalPwaContent } from './additional-pwa.mjs';
 export const pwaContent = {
   en: {
     title: 'Install the web app', intro: 'The web version of Capy Canvas can be installed for offline use.',
@@ -67,5 +68,6 @@ export const pwaContent = {
       firefoxAndroid: { step: '메뉴(⋮) → 설치 → 홈 화면에 추가.', note: '' },
       generic: { step: '컴퓨터나 Android에서는 Chrome, iPhone/iPad에서는 Safari를 사용하세요. 브라우저에서 설치 또는 홈 화면에 추가를 선택합니다.', note: '' }
     }
-  }
+  },
+  ...additionalPwaContent
 };

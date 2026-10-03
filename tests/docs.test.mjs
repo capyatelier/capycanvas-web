@@ -55,7 +55,7 @@ for (const locale of Object.keys(languages)) {
     assert.ok(html.indexOf('class="guide-figure"') < html.indexOf('class="guide-prose"'));
     assert.equal((html.match(/<main\b/g) || []).length, 1);
     assert.equal((html.match(/<h1\b/g) || []).length, 1);
-    assert.equal((html.match(/rel="alternate"/g) || []).length, 5);
+    assert.equal((html.match(/rel="alternate"/g) || []).length, Object.keys(languages).length + 1);
     assert.match(html, /name="color-scheme" content="light dark"/);
     assert.match(html, /name="darkreader-lock"/);
     assert.doesNotMatch(html, /<hr\b|undefined|\[object Object\]|lorem ipsum/i);

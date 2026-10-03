@@ -2,7 +2,7 @@
 
 Reviewed September 10, 2026 by a fresh-context agent against current official Apple, Google Play, and Microsoft Store policies. This file records maintenance and submission notes; it is not part of the public policy or site build. The review concerns published store requirements, not a guarantee of approval or a full jurisdiction-by-jurisdiction legal assessment.
 
-The user approved publication of the shortened policy on September 10, 2026. Its source is now `src/content/policies/en.md`, with corresponding Japanese, Chinese, and Korean Markdown files. Edit English first and update the affected translations and their effective dates together. The app-store submission checks below remain separate from publishing this website page.
+The user approved publication of the shortened policy on September 10, 2026. Its source is `src/content/policies/en.md`, with corresponding Markdown files for every supported locale. Edit English first and update the affected translations and their effective dates together. The ten translations added on October 2, 2026 retain the September 10 effective date and the same published terms. The app-store submission checks below remain separate from publishing this website page.
 
 ## Required content retained
 

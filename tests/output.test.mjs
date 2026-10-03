@@ -11,6 +11,7 @@ const root=resolve(process.env.SITE_OUTPUT || 'docs');
 const read=path=>readFile(join(root,path),'utf8');
 const pages=['home','download','documentation','privacy'];
 const escape=text=>text.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;').replaceAll('>','&gt;');
+const escapeText=text=>escape(text).replaceAll("'",'&#39;');
 const route=(l,p)=>`${l==='en'?'':l+'/'}${p==='home'?'':(p==='documentation'?'docs':p)+'/'}`;
 function shape(value) { return Array.isArray(value)?value.map(shape):value && typeof value==='object'?Object.fromEntries(Object.entries(value).map(([k,v])=>[k,shape(v)])):typeof value; }
 for(const locale of Object.keys(languages)) {
@@ -24,7 +25,7 @@ for(const locale of Object.keys(languages)) {
     assert.match(html,new RegExp(`<html lang="${content[locale].lang}"`));
     assert.equal((html.match(/<h1(?: [^>]*)?>/g)||[]).length,1);
     assert.equal((html.match(/<main /g)||[]).length,1);
-    assert.equal((html.match(/rel="alternate"/g)||[]).length,5);
+    assert.equal((html.match(/rel="alternate"/g)||[]).length,Object.keys(languages).length+1);
     assert.match(html,/<meta name="description" content=".+?">/);
     assert.ok(html.includes(`<link rel="canonical" href="https://capycanvas.art/${route(locale,page)}">`));
     for(const code of Object.keys(languages)) {
@@ -40,7 +41,8 @@ for(const locale of Object.keys(languages)) {
     assert.match(html,/data-language="en"/); assert.match(html,/data-language="ja"/); assert.match(html,/data-language="zh"/); assert.match(html,/data-language="ko"/);
     assert.ok(html.includes(content[locale][page].title));
     assert.doesNotMatch(html,/<hr(?:\s|>)/);
-    assert.doesNotMatch(html,/undefined|\[object Object\]|TODO|lorem ipsum/i);
+    assert.doesNotMatch(html,/undefined|\[object Object\]|lorem ipsum/i);
+    assert.doesNotMatch(html,/\bTODO\b/);
     if(page==='home') {
       assert.doesNotMatch(html, /<footer/);
       assert.ok(!html.includes(`href="/${route(locale,'privacy')}"`), 'The home page has no privacy link');
@@ -75,7 +77,7 @@ for(const locale of Object.keys(languages)) {
       for(const platform of ['iPadOS','Android','Linux','Windows','macOS']) assert.ok(html.includes(`<h2>${platform}</h2>`));
       const pwa=content[locale].download.pwa;
       assert.ok(html.indexOf('class="pwa"')>html.indexOf('<h2>macOS</h2>'));
-      assert.ok(html.includes(pwa.intro));
+      assert.ok(html.includes(escapeText(pwa.intro)));
       assert.doesNotMatch(html,/Open the installed app once online before using it offline\./);
       assert.ok(modules.some(code=>code.includes('[data-pwa-guide]')), 'PWA behavior is bundled with the download component');
       assert.match(html,/<div data-pwa-guide="generic"><ol>/);
@@ -85,17 +87,17 @@ for(const locale of Object.keys(languages)) {
       for(const os of Object.keys(pwa.systems)) assert.match(html,new RegExp(`data-os="${os}"[^>]*><svg`));
       for(const [id,guide] of Object.entries(pwa.guides)) {
         assert.ok(html.includes(`data-pwa-guide="${id}"`));
-        assert.ok(html.includes(guide.step));
+        assert.ok(html.includes(escapeText(guide.step)));
       }
     } else {
       assert.doesNotMatch(html,/class="pwa"/);
       assert.ok(modules.every(code=>!code.includes('[data-pwa-guide]')), 'Other pages do not load PWA behavior');
     }
     if(page==='documentation') {
-      assert.ok(html.includes(docsUI[locale].intro));
+      assert.ok(html.includes(escapeText(docsUI[locale].intro)));
       const overview=docsUI[locale].landing;
       for (const section of Object.values(overview.sections)) {
-        assert.ok(html.includes(section.title) && html.includes(section.text) && (!section.link || html.includes(section.link)), 'Concepts and links are translated');
+        assert.ok(html.includes(escapeText(section.title)) && html.includes(escapeText(section.text)) && (!section.link || html.includes(escapeText(section.link))), 'Concepts and links are translated');
       }
       assert.match(html, /src="\/assets\/guides\/illustration-light.webp"/);
       assert.match(html, /srcset="\/assets\/guides\/illustration-dark.webp"/);
@@ -124,7 +126,7 @@ test('every local link and referenced asset resolves in the published output',as
 });
 test('GitHub Pages output, sitemap, error page and distributable notices',async()=>{
   assert.equal(await read('CNAME'),'capycanvas.art\n'); assert.equal(await read('.nojekyll'),'');
-  assert.equal((await read('sitemap.xml')).match(/<loc>/g).length,4*(4+docTopics.length));
+  assert.equal((await read('sitemap.xml')).match(/<loc>/g).length,Object.keys(languages).length*(pages.length+docTopics.length));
   assert.match(await read('robots.txt'),/Sitemap: https:\/\/capycanvas.art\/sitemap.xml/);
   assert.match(await read('404.html'),/name="robots" content="noindex"/);
   for(const name of ['LICENSE','LICENSE-MIT','LICENSE-APACHE','BRANDING.md','THIRD_PARTY_NOTICES.md']) assert.equal(await read(name),await readFile(name,'utf8'));

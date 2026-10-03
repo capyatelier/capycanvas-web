@@ -14,9 +14,13 @@ const languageUrls = Object.fromEntries(locales.map(code => [code, route(code, p
   if (page !== '404' && current === 'en') {
     const query = new URLSearchParams(location.search).get('lang');
     const requested = supported.includes(query) ? query : null;
-    const detected = (navigator.languages || [navigator.language])
-      .map(value => value.toLowerCase().split(/[-_]/)[0])
-      .find(value => supported.includes(value)) || 'en';
+    const detected = (navigator.languages?.length ? navigator.languages : [navigator.language])
+      .map(value => {
+        const tag = value.toLowerCase().replaceAll('_', '-');
+        return supported.find(code => code.toLowerCase() === tag)
+          || supported.find(code => code.toLowerCase().split('-')[0] === tag.split('-')[0]);
+      })
+      .find(Boolean) || 'en';
     const locale = requested || saved || detected;
     if (locale !== current) location.replace(languageUrls[locale] + location.search + location.hash);
   }

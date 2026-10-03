@@ -3,7 +3,10 @@ import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 const guides = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/guides' }),
+  loader: glob({
+    pattern: '**/*.md', base: './src/content/guides',
+    generateId: ({ entry }) => entry.replace(/\.md$/, ''),
+  }),
   schema: z.object({
     title: z.string(),
     navTitle: z.string().optional(),
@@ -17,7 +20,10 @@ const guides = defineCollection({
 });
 
 const policies = defineCollection({
-  loader: glob({ pattern: '*.md', base: './src/content/policies' }),
+  loader: glob({
+    pattern: '*.md', base: './src/content/policies',
+    generateId: ({ entry }) => entry.replace(/\.md$/, ''),
+  }),
   schema: z.object({ effectiveDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/) }),
 });
 

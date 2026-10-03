@@ -1,12 +1,12 @@
 import { docTopics } from '../site/src/data/docs-nav.mjs';
-import { content } from '../site/src/data/content.mjs';
+import { content, languages } from '../site/src/data/content.mjs';
 
 export async function checkDocumentation(b, host, check) {
   const route = (locale, slug) => `${locale === 'en' ? '' : '/' + locale}/docs/${slug}/`;
   const results = [];
   await b.evaluate('localStorage.clear()');
   // Old bookmarks keep the article, explicit language, and section on the static host.
-  for (const locale of ['en', 'ja', 'zh', 'ko']) {
+  for (const locale of Object.keys(languages)) {
     const target = route(locale, 'illustration/render');
     await b.navigate(host.url + target + '?lang=' + locale);
     const section = await b.evaluate("document.querySelector('.guide-prose h2').id");
@@ -19,7 +19,7 @@ export async function checkDocumentation(b, host, check) {
   await b.until("location.pathname === '/ja/docs/quickstart/' && document.readyState === 'complete'");
   check(await b.evaluate("document.documentElement.lang === 'ja' && !!document.querySelector('.guide-prose')"), 'Legacy guide redirects without JavaScript');
   await b.call('Emulation.setScriptExecutionDisabled', { value: false });
-  for (const [width, height] of [[1440, 900], [390, 844]]) for (const theme of ['light', 'dark']) for (const locale of ['en', 'ja', 'zh', 'ko']) for (const { slug } of docTopics) {
+  for (const [width, height] of [[1440, 900], [390, 844]]) for (const theme of ['light', 'dark']) for (const locale of Object.keys(languages)) for (const { slug } of docTopics) {
     await b.call('Emulation.setDeviceMetricsOverride', { width, height, deviceScaleFactor: 1, mobile: false });
     await b.theme(theme);
     await b.navigate(host.url + route(locale, slug));

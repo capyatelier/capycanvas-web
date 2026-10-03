@@ -80,7 +80,8 @@ Check:
 
 - `https://capycanvas.art/`, `/download/`, and `/documentation/`.
 - `https://www.capycanvas.art/` redirects to the apex.
-- `/ja/`, `/zh/`, and `/ko/`, including language selection and both OS themes.
+- Every supported locale, including `/es/`, `/pt-BR/`, `/id/`, `/fr/`, `/de/`,
+  `/ru/`, `/th/`, `/vi/`, `/tr/`, and `/it/`, with language selection and both OS themes.
 - Demo opens the separately hosted `https://editor.capycanvas.art/`.
 
 Useful DNS checks:

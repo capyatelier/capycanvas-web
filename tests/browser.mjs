@@ -4,6 +4,9 @@ import { browser } from '../site/scripts/browser.mjs';
 import { serve } from '../site/scripts/serve.mjs';
 import { checkPwaInstructions } from './pwa-browser.mjs';
 import { checkDocumentation } from './docs-browser.mjs';
+import { languages } from '../site/src/data/content.mjs';
+
+const locales = Object.keys(languages);
 
 await mkdir('artifacts/review',{recursive:true});
 const host=await serve();
@@ -13,7 +16,7 @@ const report=[];
 const check=(value,message)=>{assert.ok(value,message);checks++;};
 try {
   await b.call('Page.addScriptToEvaluateOnNewDocument',{source:"Object.defineProperty(navigator,'languages',{get:()=>['en-US','en'],configurable:true})"});
-  for(const [width,height] of [[1440,900],[1280,720],[1024,600],[768,1024],[390,844],[320,568],[844,390]]) for(const theme of ['light','dark']) for(const locale of ['en','ja','zh','ko']) for(const page of ['home','download','documentation','privacy']) {
+  for(const [width,height] of [[1440,900],[1280,720],[1024,600],[768,1024],[390,844],[320,568],[844,390]]) for(const theme of ['light','dark']) for(const locale of locales) for(const page of ['home','download','documentation','privacy']) {
     await b.call('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
     await b.theme(theme);
     const path=`${locale==='en'?'':'/'+locale}/${page==='home'?'':(page==='documentation'?'docs':page)+'/'}`;
@@ -68,7 +71,13 @@ try {
   await b.until("document.querySelector('.showcase input[value=\"paint\"]').checked", 20000); checks++;
   check(await b.evaluate("(()=>{const shot=document.querySelector('.showcase').getBoundingClientRect(),dots=document.querySelector('.showcase-switcher').getBoundingClientRect();return dots.top>=shot.top&&dots.bottom<=shot.bottom&&dots.width<shot.width*.6})()"),'The slide indicator sits inside the screenshot');
   // Preference detection and regional language tags, including unsupported-first lists.
-  for(const [langs,expected] of [[['ja-JP'],'ja'],[['zh-TW'],'zh'],[['ko-KR'],'ko'],[['fr-FR','ja-JP'],'ja'],[['de-DE'],'en']]) {
+  for(const [langs,expected] of [
+    [['ja-JP'],'ja'], [['zh-TW'],'zh'], [['ko-KR'],'ko'],
+    [['es-MX'],'es'], [['pt-BR'],'pt-BR'], [['pt-br'],'pt-BR'], [['pt_PT'],'pt-BR'], [['pt'],'pt-BR'],
+    [['id-ID'],'id'], [['fr-CA'],'fr'], [['de-DE'],'de'], [['ru-RU'],'ru'],
+    [['th-TH'],'th'], [['vi-VN'],'vi'], [['tr-TR'],'tr'], [['it-IT'],'it'],
+    [['ar-SA','fr-FR','ja-JP'],'fr'], [['ar-SA','pt-BR'],'pt-BR'], [['ar-SA'],'en'],
+  ]) {
     const {identifier}=await b.call('Page.addScriptToEvaluateOnNewDocument',{source:`Object.defineProperty(navigator,'languages',{get:()=>${JSON.stringify(langs)},configurable:true})`});
     for (const page of ['download', 'privacy']) {
       await b.evaluate('localStorage.clear()'); await b.navigate(host.url+'/'+page+'/');
@@ -94,6 +103,22 @@ try {
   check(await b.evaluate("document.querySelector('.language-menu').open"),'Keyboard opens language menu');
   await b.call('Input.dispatchKeyEvent',{type:'keyDown',key:'Escape',code:'Escape',windowsVirtualKeyCode:27});
   check(await b.evaluate("!document.querySelector('.language-menu').open&&document.activeElement.tagName==='SUMMARY'"),'Escape closes language menu');
+  // Every choice remains reachable in the larger menu, even on a short mobile screen.
+  for (const [width,height] of [[320,568],[844,390]]) {
+    await b.call('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
+    await b.navigate(host.url+'/pt-BR/download/'); await b.settle();
+    await b.evaluate("document.querySelector('.language-menu').open=true");
+    check(await b.evaluate(`(() => {
+      const menu=document.querySelector('.language-options');
+      const box=menu.getBoundingClientRect();
+      const last=menu.querySelector('a:last-child');
+      last.focus();
+      const option=last.getBoundingClientRect();
+      return menu.querySelectorAll('a').length===${locales.length}&&menu.scrollHeight>menu.clientHeight&&menu.scrollTop>0&&box.left>=0&&box.right<=innerWidth&&box.bottom<=innerHeight&&option.bottom<=box.bottom;
+    })()`),`All language choices fit and scroll at ${width}x${height}`);
+  }
+  await b.evaluate("document.querySelector('[data-language=it]').click()");
+  await b.until("location.pathname==='/it/download/'&&document.documentElement.dataset.locale==='it'");checks++;
   // With script and storage unavailable, every page and language link is still usable.
   await b.call('Emulation.setScriptExecutionDisabled',{value:true});
   await b.navigate(host.url+'/ja/download/');
@@ -104,7 +129,7 @@ try {
   await b.evaluate("[...document.querySelectorAll('.showcase-switcher label')].find(label=>label.textContent.trim()==='Photo').click()");
   await b.until("getComputedStyle(document.querySelector('.showcase-frame[data-slide=\"photo\"]')).opacity==='1'&&getComputedStyle(document.querySelector('.showcase-frame[data-slide=\"paint\"]')).opacity==='0'"); checks++;
   await b.navigate(host.url+'/ko/privacy/');
-  check(await b.evaluate("document.querySelectorAll('.policy-prose h2').length===5&&!!document.querySelector('a[href=\"mailto:zackdrach@gmail.com\"]')&&document.querySelectorAll('[data-language]').length===4"),'The full privacy policy and language links work without JavaScript');
+  check(await b.evaluate(`document.querySelectorAll('.policy-prose h2').length===5&&!!document.querySelector('a[href="mailto:zackdrach@gmail.com"]')&&document.querySelectorAll('[data-language]').length===${locales.length}`),'The full privacy policy and language links work without JavaScript');
   await b.call('Emulation.setScriptExecutionDisabled',{value:false});
   const {identifier}=await b.call('Page.addScriptToEvaluateOnNewDocument',{source:"Object.defineProperty(window,'localStorage',{get(){throw new Error('Storage disabled')}})"});
   await b.navigate(host.url+'/?lang=en');

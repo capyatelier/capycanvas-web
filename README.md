@@ -36,9 +36,9 @@ This is a plain Astro static site with the existing Capy Canvas theme.
 - `site/src/pages/`: static page routes, 404, robots.txt, and sitemap.
 - `site/src/layouts/SiteLayout.astro`: shared document, metadata, and header.
 - `site/src/components/`: header, language controls, and page components.
-- `site/src/data/`: the four existing translations and installation instructions.
-- `site/src/content/guides/`: English, Japanese, Chinese, and Korean Markdown guides.
-- `site/src/content/policies/`: the privacy policy in four languages with a shared effective date.
+- `site/src/data/`: translations and installation instructions for all fourteen languages.
+- `site/src/content/guides/`: one Markdown guide per topic and language.
+- `site/src/content/policies/`: the privacy policy in every language with a shared effective date.
 - `site/src/content.config.ts`: typed Astro content collection schema.
 - `site/src/layouts/DocsLayout.astro`: documentation sidebar, article area, and section links.
 - `site/src/styles/documentation.css`: documentation styles using the existing editor palette.
@@ -57,12 +57,25 @@ English-first editing, screenshots, and custom interactive components.
 
 ## Routes and languages
 
-| Page | English | Japanese | Simplified Chinese | Korean |
-| --- | --- | --- | --- | --- |
-| Home | `/` | `/ja/` | `/zh/` | `/ko/` |
-| Download | `/download/` | `/ja/download/` | `/zh/download/` | `/ko/download/` |
-| Documentation | `/docs/` | `/ja/docs/` | `/zh/docs/` | `/ko/docs/` |
-| Privacy | `/privacy/` | `/ja/privacy/` | `/zh/privacy/` | `/ko/privacy/` |
+| Language | Code | Home |
+| --- | --- | --- |
+| English | `en` | `/` |
+| 日本語 | `ja` | `/ja/` |
+| 简体中文 | `zh` | `/zh/` |
+| 한국어 | `ko` | `/ko/` |
+| Español | `es` | `/es/` |
+| Português (Brasil) | `pt-BR` | `/pt-BR/` |
+| Bahasa Indonesia | `id` | `/id/` |
+| Français | `fr` | `/fr/` |
+| Deutsch | `de` | `/de/` |
+| Русский | `ru` | `/ru/` |
+| ไทย | `th` | `/th/` |
+| Tiếng Việt | `vi` | `/vi/` |
+| Türkçe | `tr` | `/tr/` |
+| Italiano | `it` | `/it/` |
+
+Download, documentation, and privacy append `download/`, `docs/`, and `privacy/`
+to the language's home URL. The Brazilian Portuguese path preserves `pt-BR` casing.
 
 Guides extend the documentation route with the same topic path in every locale,
 for example `/docs/illustration/draft/` and
@@ -72,13 +85,14 @@ auto-detect the reader's platform and provide a manual selector; all variants ar
 present in the HTML and remain readable without JavaScript.
 
 Astro's `i18n` configuration defines English as the unprefixed default and
-Japanese, Chinese, and Korean under `/ja/`, `/zh/`, and `/ko/`. Navigation,
+all other languages under their locale codes. Navigation,
 alternate links, the sitemap, and detection destinations use `astro:i18n` URL
 helpers. Each translated page is generated as complete HTML.
 
-Unprefixed entry pages detect `navigator.languages`. Japanese, Chinese, and
-Korean regional tags map to the corresponding translation. Other languages
-fall back to English. Chinese is currently Simplified Chinese, including when
+Unprefixed entry pages detect `navigator.languages`, trying supported choices
+in preference order. Regional tags map to the corresponding translation;
+Portuguese tags (including `pt`, `pt-PT`, and `pt-BR`) select Brazilian Portuguese.
+Unsupported languages fall back to English. Chinese is Simplified Chinese, including when
 selected for other Chinese regional preferences. The language menu remembers
 an explicit choice in local storage and preserves the current page. An explicit
 translated URL takes priority over detection or a saved preference. `?lang=en`
@@ -125,7 +139,7 @@ Browser instructions were checked against these upstream sources on 2026-09-08:
 - Firefox: [Windows (143+, or 150+ for Microsoft Store installs)](https://support.mozilla.org/en-US/kb/web-apps-firefox-windows), [Android](https://support.mozilla.org/en-US/kb/use-web-apps-firefox-android). Firefox on Mac/Linux currently receives Chrome instructions.
 
 Unit tests cover browser/OS detection; Chrome browser tests exercise the rendered
-guides using those hints in all four locales. Those checks validate the website's
+guides using those hints in all supported locales. Those checks validate the website's
 instructions, not native install dialogs on each operating system.
 
 ## Regenerate screenshots
@@ -148,7 +162,7 @@ See [the capture guide](site/scripts/capture/README.md) for dependencies, source
 pinning, annotations, browser settings, debugging and provenance. The recorded
 baseline includes an explicit WGSL compatibility correction in the isolated build.
 The adjacent product checkout is not modified. The screenshot UI remains English;
-all four guide languages supply localized captions and full-size image links.
+all guide languages supply localized captions and full-size image links.
 
 ## Migration comparisons
 

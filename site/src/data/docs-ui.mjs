@@ -1,3 +1,4 @@
+import { additionalDocsUI } from './additional-docs.mjs';
 export const docsUI = {
   "en": {
     "intro": "Capy Canvas is a free, open-source app for sketching, painting and photo editing. It is inspired by the zen of capybaras.",
@@ -322,5 +323,6 @@ export const docsUI = {
         "illustration": "일러스트 튜토리얼"
       }
     }
-  }
+  },
+  ...additionalDocsUI
 };

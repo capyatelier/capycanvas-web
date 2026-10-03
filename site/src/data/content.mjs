@@ -1,6 +1,12 @@
 // Every locale is rendered to real HTML. Keep the shape identical across translations.
 import { pwaContent } from './pwa-content.mjs';
-export const languages = { en: 'English', ja: '日本語', zh: '简体中文', ko: '한국어' };
+import { additionalContent } from './additional-content.mjs';
+export const languages = {
+  en: 'English', ja: '日本語', zh: '简体中文', ko: '한국어',
+  es: 'Español', 'pt-BR': 'Português (Brasil)', id: 'Bahasa Indonesia',
+  fr: 'Français', de: 'Deutsch', ru: 'Русский', th: 'ไทย',
+  vi: 'Tiếng Việt', tr: 'Türkçe', it: 'Italiano',
+};
 export const content = {
   en: {
     footer: { madeBy: 'Made by Capy Atelier' },
@@ -113,5 +119,6 @@ export const content = {
     },
     privacy: { title: '개인정보 처리방침', effectiveDate: '시행일', meta: 'Capy Canvas의 앱 데이터, 호스팅, 진단 정보 및 문의 처리 방침.' },
     notFound: { title: '페이지를 찾을 수 없습니다', text: '요청한 페이지가 존재하지 않습니다.', action: '홈' }
-  }
+  },
+  ...additionalContent
 };

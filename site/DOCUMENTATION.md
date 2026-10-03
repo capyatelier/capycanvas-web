@@ -45,10 +45,15 @@ pages merely to match a navigation label.
 ## English first, one topic at a time
 
 Edit `src/content/guides/en/<topic>.md`, then update only the corresponding files
-under `ja/`, `zh/`, and `ko/`. Use the English diff to translate changed passages;
+under every supported locale directory listed in `src/data/content.mjs`.
+Use the English diff to translate changed passages;
 keep unrelated translations and formatting intact. Each topic has its own file,
 so a change to one guide does not require regenerating a language or the whole manual.
 There is no translation API or automatic translation step in the build.
+The ten locales added in October 2026 use machine-assisted static translations.
+Keep product names, keyboard shortcuts, file formats, and English editor control
+labels intact so the instructions match the screenshots. Review translated prose
+when updating a topic, and preserve every contextual link and example file.
 
 Use the same relative filename and related-topic paths in every language. Astro's
 locale URL helpers generate navigation, canonical URLs, language alternates, and
@@ -146,7 +151,7 @@ explanation and use conventional terms for the operations:
 | Alpha lock | 透明度ロック | 锁定透明像素 | 알파 잠금 |
 
 Shared interface text lives in `src/data/docs-ui.mjs`. Add a topic to the sidebar
-registry and supply all four Markdown files; missing translations fail the build.
+registry and supply a Markdown file for every locale; missing translations fail the build.
 Tests also reject orphaned files, broken links, and prose links that leave the
 reader's language. Use explicit localized paths in Markdown, such as
 `/ja/docs/layers/masks/`; Astro's locale helpers generate the navigation links.
@@ -198,7 +203,7 @@ only after an explicit action, with a static image and instructions as its fallb
 
 Run `npm run check` from the repository root. It type-checks and builds Astro,
 validates the published HTML, and checks desktop/mobile layouts, both themes,
-all four languages, device choices, keyboard navigation, and no-JavaScript behavior.
+all supported languages, device choices, keyboard navigation, and no-JavaScript behavior.
 Inspect the screenshots in `artifacts/review/` when changing layouts or content.
 Commit both `site/` sources and the generated `docs/` output; GitHub Pages serves
 `main:/docs` at `/docs/`.

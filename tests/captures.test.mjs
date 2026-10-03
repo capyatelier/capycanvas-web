@@ -5,6 +5,7 @@ import { resolve, join } from 'node:path';
 import { createHash } from 'node:crypto';
 import { PNG } from 'pngjs';
 import { docTopics } from '../site/src/data/docs-nav.mjs';
+import { languages } from '../site/src/data/content.mjs';
 
 const root = resolve(process.env.SITE_OUTPUT || 'docs');
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -41,10 +42,10 @@ test('every guide and the home page have complete, verified light/dark captures'
   }
   assert.deepEqual(manifest.showcase.map(entry => entry.file).sort(), ['showcase/NDF_4717.capy', 'showcase/house.capy', 'showcase/spring.capy']);
   for (const entry of manifest.showcase) assert.equal(hash(await readFile(`site/scripts/capture/${entry.file}`)), entry.sha256, `Homepage artwork matches its capture: ${entry.file}`);
-  for (const {slug} of docTopics) for (const locale of ['en', 'ja', 'zh', 'ko']) {
+  for (const {slug} of docTopics) for (const locale of Object.keys(languages)) {
     const markdown = await readFile(`site/src/content/guides/${locale}/${slug}.md`, 'utf8');
     const figure = JSON.parse(markdown.match(/^figure: (.+)$/m)[1]);
-    const numbers = [...figure.matchAll(/(\d)[:：]/g)].map(([,n]) => Number(n));
+    const numbers = [...figure.matchAll(/(\d)\s*[:：]/g)].map(([,n]) => Number(n));
     const name = 'guides/' + slug.replaceAll('/', '-');
     for (const theme of ['light', 'dark']) {
       const capture = manifest.captures.find(item => item.file === `${name}-${theme}.webp`);

@@ -13,7 +13,7 @@ export const repositoryUrl = 'https://github.com/capyatelier/capycanvas';
 
 export function route(locale: Locale, page: SitePage = 'home', slug = '') {
   const segment = page === 'documentation' ? 'docs' : page;
-  return getRelativeLocaleUrl(locale, page === 'home' ? '' : [segment, slug].filter(Boolean).join('/'));
+  return getRelativeLocaleUrl(locale, page === 'home' ? '' : [segment, slug].filter(Boolean).join('/'), { normalizeLocale: false });
 }
 
 export const routes = locales.flatMap(locale => [

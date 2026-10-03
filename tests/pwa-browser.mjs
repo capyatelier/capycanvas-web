@@ -9,7 +9,7 @@ export async function checkPwaInstructions(b, host, check) {
     });
     const mobile=/Android|iPhone|iPad|iOS/.test(name);
     await b.call('Emulation.setDeviceMetricsOverride',{width:mobile?390:1440,height:mobile?844:900,deviceScaleFactor:1,mobile:false});
-    for (const [i, locale] of ['en','ja','zh','ko'].entries()) {
+    for (const [i, locale] of Object.keys(pwaContent).entries()) {
       await b.theme((index+i)%2?'dark':'light');
       await b.navigate(host.url+(locale==='en'?'/download/?lang=en':`/${locale}/download/`));
       await b.settle();
