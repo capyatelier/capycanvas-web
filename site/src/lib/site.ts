@@ -9,6 +9,7 @@ export const locales = Object.keys(languages) as Locale[];
 export const pages = ['home', 'download', 'versions', 'ipadBeta', 'androidBeta', 'documentation', 'privacy'] as const;
 export const platforms = ['ipad', 'android', 'linux', 'windows', 'mac'] as const;
 export const betaPages: Partial<Record<(typeof platforms)[number], 'ipadBeta' | 'androidBeta'>> = { ipad: 'ipadBeta', android: 'androidBeta' };
+export const testFlightAppUrl = 'https://apps.apple.com/app/testflight/id899247664';
 export const betaLinks = {
   ipadBeta: { invitation: 'https://testflight.apple.com/join/VBcE4Z8r' },
   androidBeta: { group: 'https://groups.google.com/g/capycanvas-beta', test: 'https://play.google.com/apps/internaltest/4701362132766426867' },

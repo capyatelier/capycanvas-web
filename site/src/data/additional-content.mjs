@@ -32,7 +32,7 @@ export const additionalContent = {
     },
     "download": {
       "title": "Descargar",
-      "intro": "Ya están disponibles las betas para iPad y tabletas Android. Las demás descargas nativas llegarán pronto.",
+      "intro": "Capy Canvas está en fase beta. Puede tener algunos fallos, así que guarde su trabajo a menudo.",
       "status": "Próximamente",
       "platforms": [
         "iPadOS",
@@ -41,13 +41,12 @@ export const additionalContent = {
         "Windows",
         "macOS"
       ],
-      "platformsLabel": "Plataformas",
+      "otherPlatforms": "Otras plataformas",
       "joinBeta": "Unirse a la beta",
-      "downloadFor": "Descargar para {platform}",
+      "downloadFor": "Descargar {version} para {platform}",
       "openWebApp": "Abrir la aplicación web",
       "meta": "Instale Capy Canvas como una aplicación web para uso sin conexión. Las descargas nativas llegarán pronto.",
       "pwa": pwaContent["es"],
-      "released": "Versión {version}, publicada el {date}",
       "get": "Descargar",
       "checksums": "La huella de cada archivo aparece en {file}, para que pueda comprobar que la descarga está completa y sin cambios.",
       "pastVersions": "Versiones anteriores",
@@ -140,7 +139,7 @@ export const additionalContent = {
     },
     "download": {
       "title": "Baixar",
-      "intro": "As versões beta para iPad e tablets Android já estão disponíveis. Os outros downloads nativos estarão disponíveis em breve.",
+      "intro": "O Capy Canvas está em fase beta. Pode haver alguns problemas, então salve seu trabalho com frequência.",
       "status": "Em breve",
       "platforms": [
         "iPadOS",
@@ -149,13 +148,12 @@ export const additionalContent = {
         "Windows",
         "macOS"
       ],
-      "platformsLabel": "Plataformas",
+      "otherPlatforms": "Outras plataformas",
       "joinBeta": "Participar do beta",
-      "downloadFor": "Baixar para {platform}",
+      "downloadFor": "Baixar {version} para {platform}",
       "openWebApp": "Abrir o aplicativo da web",
       "meta": "Instale Capy Canvas como um aplicativo da web para uso offline. Os downloads nativos estarão disponíveis em breve.",
       "pwa": pwaContent["pt-BR"],
-      "released": "Versão {version}, lançada em {date}",
       "get": "Baixar",
       "checksums": "A impressão digital de cada arquivo está em {file}, para você conferir se o download está completo e sem alterações.",
       "pastVersions": "Versões anteriores",
@@ -248,7 +246,7 @@ export const additionalContent = {
     },
     "download": {
       "title": "Unduh",
-      "intro": "Versi beta untuk iPad dan tablet Android sudah tersedia. Unduhan asli lainnya akan segera hadir.",
+      "intro": "Capy Canvas masih dalam tahap beta. Mungkin masih ada sedikit kendala, jadi sering-seringlah menyimpan karya Anda.",
       "status": "Segera hadir",
       "platforms": [
         "iPadOS",
@@ -257,13 +255,12 @@ export const additionalContent = {
         "Windows",
         "macOS"
       ],
-      "platformsLabel": "Platform",
+      "otherPlatforms": "Platform lainnya",
       "joinBeta": "Ikuti beta",
-      "downloadFor": "Unduh untuk {platform}",
+      "downloadFor": "Unduh {version} untuk {platform}",
       "openWebApp": "Buka aplikasi web",
       "meta": "Instal Capy Canvas sebagai aplikasi web untuk penggunaan offline. Unduhan asli akan segera hadir.",
       "pwa": pwaContent["id"],
-      "released": "Versi {version}, dirilis {date}",
       "get": "Unduh",
       "checksums": "Sidik jari setiap berkas tercantum di {file}, sehingga Anda dapat memastikan unduhan lengkap dan tidak berubah.",
       "pastVersions": "Versi sebelumnya",
@@ -356,7 +353,7 @@ export const additionalContent = {
     },
     "download": {
       "title": "Télécharger",
-      "intro": "Les bêtas pour iPad et tablettes Android sont disponibles. Les autres téléchargements natifs arrivent bientôt.",
+      "intro": "Capy Canvas est en version bêta. Quelques imperfections sont possibles : enregistrez souvent votre travail.",
       "status": "Bientôt disponible",
       "platforms": [
         "iPadOS",
@@ -365,13 +362,12 @@ export const additionalContent = {
         "Windows",
         "macOS"
       ],
-      "platformsLabel": "Plateformes",
+      "otherPlatforms": "Autres plateformes",
       "joinBeta": "Rejoindre la bêta",
-      "downloadFor": "Télécharger pour {platform}",
+      "downloadFor": "Télécharger {version} pour {platform}",
       "openWebApp": "Ouvrir l'application Web",
       "meta": "Installez Capy Canvas en tant qu'application Web pour une utilisation hors ligne. Les téléchargements natifs arrivent bientôt.",
       "pwa": pwaContent["fr"],
-      "released": "Version {version}, publiée le {date}",
       "get": "Télécharger",
       "checksums": "L'empreinte de chaque fichier figure dans {file}, pour vérifier qu'un téléchargement est complet et intact.",
       "pastVersions": "Versions précédentes",
@@ -464,7 +460,7 @@ export const additionalContent = {
     },
     "download": {
       "title": "Herunterladen",
-      "intro": "Betaversionen für iPad und Android-Tablets sind verfügbar. Weitere native Downloads folgen bald.",
+      "intro": "Capy Canvas befindet sich in der Betaphase. Es kann noch kleine Fehler geben, speichern Sie Ihre Arbeit daher regelmäßig.",
       "status": "Kommt bald",
       "platforms": [
         "iPadOS",
@@ -473,13 +469,12 @@ export const additionalContent = {
         "Windows",
         "macOS"
       ],
-      "platformsLabel": "Plattformen",
+      "otherPlatforms": "Weitere Plattformen",
       "joinBeta": "Beta beitreten",
-      "downloadFor": "Für {platform} herunterladen",
+      "downloadFor": "{version} für {platform} herunterladen",
       "openWebApp": "Web-App öffnen",
       "meta": "Installieren Sie Capy Canvas als Web-App für die Offline-Nutzung. Native Downloads folgen bald.",
       "pwa": pwaContent["de"],
-      "released": "Version {version}, veröffentlicht am {date}",
       "get": "Herunterladen",
       "checksums": "Der Fingerabdruck jeder Datei steht in {file}. Damit können Sie prüfen, ob ein Download vollständig und unverändert ist.",
       "pastVersions": "Frühere Versionen",
@@ -572,7 +567,7 @@ export const additionalContent = {
     },
     "download": {
       "title": "Скачать",
-      "intro": "Доступны бета-версии для iPad и планшетов Android. Остальные нативные версии скоро появятся.",
+      "intro": "Capy Canvas сейчас в бета-версии. Возможны небольшие ошибки, поэтому почаще сохраняйте работу.",
       "status": "Скоро",
       "platforms": [
         "iPadOS",
@@ -581,13 +576,12 @@ export const additionalContent = {
         "Windows",
         "macOS"
       ],
-      "platformsLabel": "Платформы",
+      "otherPlatforms": "Другие платформы",
       "joinBeta": "Стать тестером",
-      "downloadFor": "Скачать для {platform}",
+      "downloadFor": "Скачать {version} для {platform}",
       "openWebApp": "Открыть веб-приложение",
       "meta": "Установите Capy Canvas как веб-приложение для автономного использования. Скоро появятся нативные загрузки.",
       "pwa": pwaContent["ru"],
-      "released": "Версия {version}, выпущена {date}",
       "get": "Скачать",
       "checksums": "Отпечаток каждого файла указан в {file}: по нему можно проверить, что файл скачан полностью и не изменён.",
       "pastVersions": "Предыдущие версии",
@@ -680,7 +674,7 @@ export const additionalContent = {
     },
     "download": {
       "title": "ดาวน์โหลด",
-      "intro": "เวอร์ชันเบต้าสำหรับ iPad และแท็บเล็ต Android พร้อมให้ใช้งานแล้ว ส่วนเวอร์ชันเนทีฟอื่นๆ จะมาในเร็วๆ นี้",
+      "intro": "Capy Canvas อยู่ในช่วงเบต้า อาจมีข้อบกพร่องบ้าง จึงควรบันทึกงานบ่อยๆ",
       "status": "เร็วๆ นี้",
       "platforms": [
         "iPadOS",
@@ -689,13 +683,12 @@ export const additionalContent = {
         "Windows",
         "macOS"
       ],
-      "platformsLabel": "แพลตฟอร์ม",
+      "otherPlatforms": "แพลตฟอร์มอื่นๆ",
       "joinBeta": "เข้าร่วมเบต้า",
-      "downloadFor": "ดาวน์โหลดสำหรับ {platform}",
+      "downloadFor": "ดาวน์โหลด {version} สำหรับ {platform}",
       "openWebApp": "เปิดเว็บแอป",
       "meta": "ติดตั้ง Capy Canvas เป็นเว็บแอปสำหรับการใช้งานออฟไลน์ การดาวน์โหลดแบบเนทีฟจะมาในเร็วๆ นี้",
       "pwa": pwaContent["th"],
-      "released": "เวอร์ชัน {version} เผยแพร่เมื่อ {date}",
       "get": "ดาวน์โหลด",
       "checksums": "ลายนิ้วมือของแต่ละไฟล์อยู่ใน {file} ใช้ตรวจสอบได้ว่าไฟล์ที่ดาวน์โหลดครบถ้วนและไม่ถูกแก้ไข",
       "pastVersions": "เวอร์ชันก่อนหน้า",
@@ -788,7 +781,7 @@ export const additionalContent = {
     },
     "download": {
       "title": "Tải xuống",
-      "intro": "Đã có bản beta cho iPad và máy tính bảng Android. Các bản tải xuống gốc khác sắp ra mắt.",
+      "intro": "Capy Canvas đang trong giai đoạn beta. Có thể còn vài lỗi nhỏ, vì vậy hãy lưu tác phẩm thường xuyên.",
       "status": "Sắp có",
       "platforms": [
         "iPadOS",
@@ -797,13 +790,12 @@ export const additionalContent = {
         "Windows",
         "macOS"
       ],
-      "platformsLabel": "Nền tảng",
+      "otherPlatforms": "Nền tảng khác",
       "joinBeta": "Tham gia beta",
-      "downloadFor": "Tải xuống cho {platform}",
+      "downloadFor": "Tải xuống {version} cho {platform}",
       "openWebApp": "Mở ứng dụng web",
       "meta": "Cài đặt Capy Canvas làm ứng dụng web để sử dụng ngoại tuyến. Bản tải xuống gốc sắp ra mắt.",
       "pwa": pwaContent["vi"],
-      "released": "Phiên bản {version}, phát hành ngày {date}",
       "get": "Tải xuống",
       "checksums": "Dấu vân tay của từng tệp có trong {file}, giúp bạn kiểm tra tệp tải về còn nguyên vẹn và không bị thay đổi.",
       "pastVersions": "Các phiên bản trước",
@@ -896,7 +888,7 @@ export const additionalContent = {
     },
     "download": {
       "title": "İndir",
-      "intro": "iPad ve Android tabletler için beta sürümleri hazır. Diğer yerel indirmeler yakında geliyor.",
+      "intro": "Capy Canvas şu anda beta aşamasında. Küçük sorunlar olabilir, bu yüzden çalışmanızı sık sık kaydedin.",
       "status": "Yakında",
       "platforms": [
         "iPadOS",
@@ -905,13 +897,12 @@ export const additionalContent = {
         "Windows",
         "macOS"
       ],
-      "platformsLabel": "Platformlar",
+      "otherPlatforms": "Diğer platformlar",
       "joinBeta": "Betaya katıl",
-      "downloadFor": "{platform} için indir",
+      "downloadFor": "{platform} için {version} sürümünü indir",
       "openWebApp": "Web uygulamasını aç",
       "meta": "Capy Canvas'yu çevrimdışı kullanım için bir web uygulaması olarak yükleyin. Yerel indirmeler yakında geliyor.",
       "pwa": pwaContent["tr"],
-      "released": "Sürüm {version}, {date} tarihinde yayımlandı",
       "get": "İndir",
       "checksums": "Her dosyanın parmak izi {file} içinde yer alır; böylece indirdiğiniz dosyanın eksiksiz ve değiştirilmemiş olduğunu kontrol edebilirsiniz.",
       "pastVersions": "Önceki sürümler",
@@ -1004,7 +995,7 @@ export const additionalContent = {
     },
     "download": {
       "title": "Scarica",
-      "intro": "Sono disponibili le beta per iPad e tablet Android. Gli altri download nativi arriveranno presto.",
+      "intro": "Capy Canvas è in fase beta. Potrebbe esserci qualche imperfezione, quindi salva spesso il tuo lavoro.",
       "status": "Prossimamente",
       "platforms": [
         "iPadOS",
@@ -1013,13 +1004,12 @@ export const additionalContent = {
         "Windows",
         "macOS"
       ],
-      "platformsLabel": "Piattaforme",
+      "otherPlatforms": "Altre piattaforme",
       "joinBeta": "Partecipa alla beta",
-      "downloadFor": "Scarica per {platform}",
+      "downloadFor": "Scarica {version} per {platform}",
       "openWebApp": "Apri l'app Web",
       "meta": "Installa Capy Canvas come app Web per l'utilizzo offline. I download nativi arriveranno presto.",
       "pwa": pwaContent["it"],
-      "released": "Versione {version}, pubblicata il {date}",
       "get": "Scarica",
       "checksums": "L'impronta di ogni file è elencata in {file}, così puoi verificare che un download sia completo e non modificato.",
       "pastVersions": "Versioni precedenti",

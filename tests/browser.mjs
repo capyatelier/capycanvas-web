@@ -70,7 +70,7 @@ try {
     await layouts(releaseHost,['download','versions'],'releases/');
     await b.call('Emulation.setDeviceMetricsOverride',{width:1280,height:800,deviceScaleFactor:1,mobile:false});
     await b.navigate(releaseHost.url+'/download/?lang=en');
-    check(await b.evaluate("(()=>{const shown=[...document.querySelectorAll('[data-pick], [data-pick] [data-platform]')].filter(e=>!e.hidden);return shown.length===2&&shown[1].dataset.platform==='linux'&&shown[1].querySelector('a').href.endsWith('-linux-x86_64.AppImage')})()"),'The detected platform gets the big download button');
+    check(await b.evaluate("(()=>{const shown=[...document.querySelectorAll('[data-pick], [data-pick] [data-platform]')].filter(e=>!e.hidden);return shown.length===2&&shown[1].dataset.platform==='linux'&&shown[1].querySelector('a').href.endsWith('-linux-x86_64.AppImage')&&document.querySelector('.platform[data-platform=\"linux\"]').hidden&&document.querySelectorAll('.platform:not([hidden])').length===4})()"),'The detected platform gets the big download button and leaves the other platforms');
     const {identifier}=await b.call('Page.addScriptToEvaluateOnNewDocument',{source:"Object.defineProperty(navigator,'platform',{get:()=>'MacIntel',configurable:true});Object.defineProperty(navigator,'maxTouchPoints',{get:()=>5,configurable:true})"});
     await b.navigate(releaseHost.url+'/download/?lang=en');
     check(await b.evaluate("document.querySelector('[data-pick] [data-platform]:not([hidden]) a')?.getAttribute('href')==='/download/ipad-beta/'"),'An iPad is sent to the TestFlight beta');

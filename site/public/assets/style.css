@@ -113,7 +113,7 @@ h1 { font-size: 28px; font-weight: 700; line-height: 1.3; letter-spacing: -.6px;
 .platforms { list-style: none; margin: 0; padding: 0; max-width: 420px; }
 .platform { display: flex; align-items: center; gap: 14px; padding: 12px 0; }
 .platform > svg { width: 23px; height: 23px; }
-.platform h2 { font-size: 15px; font-weight: 600; margin: 0; }
+.platform h3 { font-size: 15px; font-weight: 600; margin: 0; }
 .platform p { margin: 0 0 0 auto; font-size: 13px; color: var(--muted); }
 .pwa { margin-top: 40px; max-width: 600px; font-size: 15px; color: var(--muted); }
 .pwa h2 { color: var(--ink); font-size: 16px; font-weight: 650; margin-bottom: 8px; }

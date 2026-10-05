@@ -24,10 +24,10 @@ export const content = {
       meta: 'Capy Canvas is a cross-platform app for sketching, illustration, and photography, with a powerful GPU-accelerated painting engine.'
     },
     download: {
-      title: 'Download', intro: 'Betas for iPad and Android tablets are available. Other native downloads are coming soon.',
-      status: 'Coming soon', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: 'Platforms', joinBeta: 'Join the beta', downloadFor: 'Download for {platform}', openWebApp: 'Open the web app',
+      title: 'Download', intro: 'Capy Canvas is in beta. Expect some rough edges, and save your work often.',
+      status: 'Coming soon', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: 'Other platforms', joinBeta: 'Join the beta', downloadFor: 'Download {version} for {platform}', openWebApp: 'Open the web app',
       pwa: pwaContent.en,
-      released: 'Version {version}, released {date}', get: 'Download',
+      get: 'Download',
       checksums: "Each file's fingerprint is listed in {file}, so you can check that a download is complete and unchanged.",
       pastVersions: 'Past versions', allReleases: 'Releases on GitHub',
       notes: "What's new in {version}", notesLanguage: 'Release notes are in English.',
@@ -78,10 +78,10 @@ export const content = {
       meta: 'Capy Canvas は、強力な GPU 加速ペイントエンジンを備えた、スケッチ、イラスト、写真のためのクロスプラットフォームアプリです。'
     },
     download: {
-      title: 'ダウンロード', intro: 'iPad と Android タブレット向けのベータ版を配布しています。その他のネイティブ版は公開予定です。',
-      status: '公開予定', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: 'プラットフォーム', joinBeta: 'ベータに参加', downloadFor: '{platform} 版をダウンロード', openWebApp: 'ウェブアプリを開く',
+      title: 'ダウンロード', intro: 'Capy Canvas は現在ベータ版です。不具合があるかもしれないので、こまめに保存してください。',
+      status: '公開予定', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: 'その他のプラットフォーム', joinBeta: 'ベータに参加', downloadFor: '{platform} 版 {version} をダウンロード', openWebApp: 'ウェブアプリを開く',
       pwa: pwaContent.ja,
-      released: 'バージョン {version}（{date} 公開）', get: 'ダウンロード',
+      get: 'ダウンロード',
       checksums: '各ファイルの指紋（フィンガープリント）は {file} に載っています。ダウンロードしたファイルが欠けたり変えられたりしていないかを確かめられます。',
       pastVersions: '過去のバージョン', allReleases: 'GitHub のリリース',
       notes: '{version} の変更点', notesLanguage: 'リリースノートは英語です。',
@@ -132,10 +132,10 @@ export const content = {
       meta: 'Capy Canvas 是一款跨平台应用，配备强大的 GPU 加速绘画引擎，适用于速写、插画和摄影。'
     },
     download: {
-      title: '下载', intro: '已提供 iPad 和 Android 平板电脑的测试版，其他原生版本即将推出。',
-      status: '即将推出', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: '平台', joinBeta: '加入测试', downloadFor: '下载 {platform} 版', openWebApp: '打开网页应用',
+      title: '下载', intro: 'Capy Canvas 目前处于测试阶段，可能会有一些小问题，请经常保存作品。',
+      status: '即将推出', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: '其他平台', joinBeta: '加入测试', downloadFor: '下载 {platform} 版 {version}', openWebApp: '打开网页应用',
       pwa: pwaContent.zh,
-      released: '版本 {version}，发布于 {date}', get: '下载',
+      get: '下载',
       checksums: '{file} 列出了每个文件的指纹，可用来确认下载的文件完整且未被改动。',
       pastVersions: '历史版本', allReleases: 'GitHub 上的发布页面',
       notes: '{version} 的新内容', notesLanguage: '发布说明为英文。',
@@ -186,10 +186,10 @@ export const content = {
       meta: 'Capy Canvas는 강력한 GPU 가속 페인팅 엔진을 갖춘, 스케치와 일러스트, 사진을 위한 크로스 플랫폼 앱입니다.'
     },
     download: {
-      title: '다운로드', intro: 'iPad와 Android 태블릿용 베타를 받을 수 있습니다. 다른 네이티브 버전은 출시 예정입니다.',
-      status: '출시 예정', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: '플랫폼', joinBeta: '베타 참여', downloadFor: '{platform}용 다운로드', openWebApp: '웹 앱 열기',
+      title: '다운로드', intro: 'Capy Canvas는 현재 베타 단계입니다. 다소 불안정할 수 있으니 작업을 자주 저장하세요.',
+      status: '출시 예정', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: '다른 플랫폼', joinBeta: '베타 참여', downloadFor: '{platform}용 {version} 다운로드', openWebApp: '웹 앱 열기',
       pwa: pwaContent.ko,
-      released: '버전 {version}, {date} 출시', get: '다운로드',
+      get: '다운로드',
       checksums: '{file}에 각 파일의 지문이 있어, 다운로드한 파일이 온전하고 바뀌지 않았는지 확인할 수 있습니다.',
       pastVersions: '이전 버전', allReleases: 'GitHub 릴리스',
       notes: '{version} 변경 사항', notesLanguage: '릴리스 노트는 영어로 제공됩니다.',

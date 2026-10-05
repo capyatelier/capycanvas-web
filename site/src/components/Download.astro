@@ -15,47 +15,53 @@ const { lang } = content[locale];
 const t = content[locale].download;
 const [latest] = releases;
 const name = (platform: (typeof platforms)[number]) => t.platforms[platforms.indexOf(platform)];
-interface Pick { platform: string; href: string; icon: keyof typeof paths; label: string; detail: string }
+interface Pick { platform: string; href: string; icon: keyof typeof paths; label: string; detail?: string }
 const picks: Pick[] = [
   ...platforms.flatMap((platform): Pick[] => {
     const file = platform === 'ipad' ? undefined : latest?.files[platform];
     const beta = betaPages[platform];
-    if (file) return [{ platform, href: file.url, icon: 'download', label: t.downloadFor.replace('{platform}', name(platform)), detail: `${file.name} · ${formatSize(lang, file.size)}` }];
+    if (file && latest) return [{
+      platform, href: file.url, icon: 'download',
+      label: t.downloadFor.replace('{version}', latest.version).replace('{platform}', name(platform)),
+      detail: `${content[locale].versions.released.replace('{date}', formatDate(lang, latest.date))} · ${formatSize(lang, file.size)}`,
+    }];
     if (beta) return [{ platform, href: route(locale, beta), icon: platform, label: t.joinBeta, detail: content[locale][beta].title }];
     return [];
   }),
-  { platform: 'other', href: appUrl, icon: 'globe', label: t.openWebApp, detail: t.pwa.intro },
+  { platform: 'other', href: appUrl, icon: 'globe', label: t.openWebApp },
 ];
 ---
 <main id="main" class="page">
   <h1>{t.title}</h1>
-  {latest ? (
-    <p class="lead"><Phrase text={t.released}><span slot="version">{latest.version}</span><time slot="date" datetime={latest.date}>{formatDate(lang, latest.date)}</time></Phrase></p>
-  ) : <p class="lead">{t.intro}</p>}
+  <p class="lead">{t.intro}</p>
   <div class="pick" data-pick hidden>
     {picks.map(pick => <div data-platform={pick.platform} hidden>
       <a class="button primary" href={pick.href}><Icon name={pick.icon} />{pick.label}</a>
-      <p>{pick.detail}</p>
+      {pick.detail && <p>{pick.detail}</p>}
     </div>)}
   </div>
-  <ul class="platforms" aria-label={t.platformsLabel}>
-    {platforms.map((platform, i) => {
-      const file = platform === 'ipad' ? undefined : latest?.files[platform];
-      const beta = betaPages[platform];
-      return <li class="platform">
-        <Icon name={platform} />
-        <div class="platform-name"><h2 id={`platform-${platform}`}>{t.platforms[i]}</h2>{file && <p class="platform-detail">{formatSize(lang, file.size)}</p>}</div>
-        {beta || file ? <div class="platform-links">
-          {beta && <a class="button" href={route(locale, beta)} aria-describedby={`platform-${platform}`}>{t.joinBeta}</a>}
-          {file && <a class="button" href={file.url} aria-describedby={`platform-${platform}`}><Icon name="download" />{t.get}</a>}
-        </div> : <p>{t.status}</p>}
-      </li>;
-    })}
-  </ul>
-  {latest ? <>
-    {latest.checksums && <p class="release-detail"><Phrase text={t.checksums}><a slot="file" href={latest.checksums.url}>{latest.checksums.name}</a></Phrase></p>}
-    <p class="release-detail"><a href={route(locale, 'versions')}>{t.pastVersions}</a></p>
-  </> : <p class="release-detail"><a href={releasesUrl}>{t.allReleases}<Icon name="external" /></a></p>}
+  <section class="other-platforms" aria-labelledby="other-platforms">
+    <h2 id="other-platforms">{t.otherPlatforms}</h2>
+    <ul class="platforms">
+      {platforms.map((platform, i) => {
+        const file = platform === 'ipad' ? undefined : latest?.files[platform];
+        const beta = betaPages[platform];
+        return <li class="platform" data-platform={platform}>
+          <Icon name={platform} />
+          <div class="platform-name"><h3 id={`platform-${platform}`}>{t.platforms[i]}</h3>{file && <p class="platform-detail">{formatSize(lang, file.size)}</p>}</div>
+          {beta || file ? <div class="platform-links">
+            {beta && <a class="button" href={route(locale, beta)} aria-describedby={`platform-${platform}`}>{t.joinBeta}</a>}
+            {file && <a class="button" href={file.url} aria-describedby={`platform-${platform}`}><Icon name="download" />{t.get}</a>}
+          </div> : <p>{t.status}</p>}
+        </li>;
+      })}
+    </ul>
+    {latest?.checksums && <p class="release-detail"><Phrase text={t.checksums}><a slot="file" href={latest.checksums.url}>{latest.checksums.name}</a></Phrase></p>}
+    <p class="release-detail release-links">
+      {latest && <a href={route(locale, 'versions')}>{t.pastVersions}</a>}
+      <a href={releasesUrl}>{t.allReleases}<Icon name="external" /></a>
+    </p>
+  </section>
   <PwaInstructions locale={locale} />
   {latest?.notes && <section class="whats-new" aria-labelledby="whats-new">
     <h2 id="whats-new"><Phrase text={t.notes}><span slot="version">{latest.version}</span></Phrase></h2>
@@ -70,21 +76,27 @@ const picks: Pick[] = [
   if (pick) {
     const platform = detectPlatform(navigator.platform, navigator.userAgent, navigator.maxTouchPoints);
     const choice = pick.querySelector<HTMLElement>(`[data-platform="${platform}"]`) ?? pick.querySelector<HTMLElement>('[data-platform="other"]');
-    if (choice) { choice.hidden = false; pick.hidden = false; }
+    if (choice) {
+      choice.hidden = false;
+      pick.hidden = false;
+      document.querySelector<HTMLElement>(`.platform[data-platform="${choice.dataset.platform}"]`)?.setAttribute('hidden', '');
+    }
   }
 </script>
 
 <style>
-  .pick { margin: -8px 0 32px; }
+  .pick { margin: 0 0 40px; }
   .pick .button { min-height: 44px; padding: 10px 24px; font-size: 16px; }
   .pick .button :global(svg) { width: 18px; height: 18px; }
   .pick p { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
-  .pick [hidden], .pick[hidden] { display: none; }
+  .pick [hidden], .pick[hidden], .platform[hidden] { display: none; }
+  .other-platforms h2 { font-size: 16px; font-weight: 650; margin-bottom: 4px; }
   .platform-name { min-width: 0; }
   .platform-name .platform-detail { margin: 0; font-size: 12px; color: var(--muted); }
   .platform-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: var(--gap); margin-left: auto; }
   .platform .button { white-space: nowrap; }
   .release-detail { max-width: 600px; margin: 16px 0 0; font-size: 13px; color: var(--muted); }
+  .release-links { display: flex; flex-wrap: wrap; gap: 4px 20px; }
   .release-detail a { display: inline-flex; align-items: center; gap: 4px; color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
   .release-detail :global(svg) { width: 12px; height: 12px; }
   .whats-new { margin-top: 40px; max-width: 600px; }

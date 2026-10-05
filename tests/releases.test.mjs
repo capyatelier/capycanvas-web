@@ -82,7 +82,7 @@ for (const locale of Object.keys(languages)) {
     const html = await read(published, `${prefix(locale)}download`);
     const page = main(html);
     assert.ok(html.includes(`<meta name="description" content="${escape(t.download.metaReleased)}">`));
-    assert.match(page, /<p class="lead"[^>]*>.*<span[^>]*>1\.0\.2<\/span>.*<time datetime="2026-10-02"/);
+    assert.match(page, new RegExp(`<p class="lead"[^>]*>${escapeText(t.download.intro)}</p><div class="pick"`));
     const buttons = [...page.matchAll(/<a class="button" href="([^"]+)" aria-describedby="platform-(\w+)"/g)].map(([, url, platform]) => [platform, url]);
     assert.deepEqual(buttons, [
       ['ipad', `/${prefix(locale)}download/ipad-beta/`],
@@ -102,10 +102,11 @@ for (const locale of Object.keys(languages)) {
       ['mac', `${download}/v1.0.2/capycanvas-1.0.2-macos-arm64.dmg`],
       ['other', 'https://editor.capycanvas.art/'],
     ]);
-    assert.ok(page.includes(`>${escapeText(t.download.downloadFor.replace('{platform}', 'Windows'))}</a>`));
+    assert.ok(page.includes(`>${escapeText(t.download.downloadFor.replace('{version}', '1.0.2').replace('{platform}', 'Windows'))}</a>`));
+    assert.ok(page.includes(escapeText(t.versions.released.replace('{date}', new Intl.DateTimeFormat(t.lang, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date('2026-10-02T12:00:00Z'))))));
     assert.ok(page.includes(`href="${download}/v1.0.2/SHA256SUMS"`));
     assert.ok(page.includes(`href="/${prefix(locale)}download/past-versions/"`));
-    assert.ok(!page.includes(`href="${releasesUrl}"`));
+    assert.ok(page.includes(`href="${releasesUrl}"`));
     const notes = page.match(/<section class="whats-new"[\s\S]*<\/section>/)[0];
     assert.ok(page.indexOf('class="pwa"') < page.indexOf('class="whats-new"'));
     assert.match(notes, /<div class="release-notes" lang="en"[^>]*><h3>Highlights<\/h3>/);

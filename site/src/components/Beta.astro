@@ -1,6 +1,7 @@
 ---
 import { content } from '../data/content.mjs';
-import { betaLinks, type Locale } from '../lib/site';
+import { betaLinks, testFlightAppUrl, type Locale } from '../lib/site';
+import { appStore } from '../lib/icons';
 import Phrase from './Phrase.astro';
 interface Props { locale: Locale; page: 'ipadBeta' | 'androidBeta' }
 const { locale, page } = Astro.props;
@@ -13,7 +14,10 @@ const links = Object.fromEntries(Object.entries(betaLinks[page]).map(([key, href
   <p class="lead">{t.intro}</p>
   {'note' in t && <p class="beta-note">{t.note}</p>}
   <ol class="beta-steps">
-    {t.steps.map(step => <li><Phrase text={step} links={links} /></li>)}
+    {t.steps.map((step, i) => <li>
+      <Phrase text={step} links={links} />
+      {page === 'ipadBeta' && i === 0 && <a class="button store" href={testFlightAppUrl}><Fragment set:html={appStore} />App Store</a>}
+    </li>)}
   </ol>
 </main>
 
@@ -21,5 +25,6 @@ const links = Object.fromEntries(Object.entries(betaLinks[page]).map(([key, href
   .beta-note { max-width: 600px; margin: -12px 0 24px; font-size: 15px; }
   .beta-steps { max-width: 600px; margin: 0; padding-left: 22px; font-size: 15px; }
   .beta-steps li + li { margin-top: 10px; }
-  .beta-steps :global(a) { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+  .beta-steps :global(a:not(.button)) { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+  .beta-steps .store { display: flex; width: fit-content; margin: 10px 0 4px; }
 </style>

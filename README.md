@@ -133,11 +133,13 @@ Drafts are private and pre-releases are not offered, so both are skipped.
 If the GitHub API request fails, the build fails rather than publishing pages
 without the releases.
 
-The Download page shows the latest release's version and date, one direct download
-per platform, a link to `SHA256SUMS`, and the release notes. A large button under the
-version offers the file for the visitor's detected system, the beta sign-up on an iPad
-(or on Android before an APK is released), and the web app otherwise. Without
-JavaScript the button stays hidden and the list below still offers every file. Past versions lists every
+The Download page opens with a one-line beta note and a large button for the visitor's
+detected system: the latest release's file (labelled with its version, with the release
+date and size beneath), the beta sign-up on an iPad (or on Android before an APK is
+released), or the web app otherwise. **Other platforms** lists the rest with direct
+downloads, followed by `SHA256SUMS`, Past versions and the GitHub releases list, the web
+app instructions and the release notes. Without JavaScript the button stays hidden and
+the list shows every platform. Past versions lists every
 published release, newest first, with its date, notes and files. Only these assets are
 offered, matched by exact name:
 
@@ -154,7 +156,7 @@ the `.zip` archives are never linked. Until a release is published, Linux, Windo
 macOS keep their "Coming soon" status and the page links to the GitHub releases list.
 
 The iPad and Android rows always show **Join the beta**, which opens a short sign-up
-page: `/download/ipad-beta/` (install TestFlight, open the invitation, install) and
+page: `/download/ipad-beta/` (install TestFlight from its App Store button, open the invitation, install) and
 `/download/android-beta/` (join the Google Group, accept the Google Play test, install,
 all with the tablet's Google account). On Android the button sits beside the APK once a
 release exists. The TestFlight, Google Group and Google Play test links are `betaLinks`
