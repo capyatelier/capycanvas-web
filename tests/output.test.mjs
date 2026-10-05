@@ -88,8 +88,8 @@ for(const locale of Object.keys(languages)) {
       const links={ipadBeta:{invitation:'https://testflight.apple.com/join/VBcE4Z8r'},androidBeta:{group:'https://groups.google.com/g/capycanvas-beta',test:'https://play.google.com/apps/internaltest/4701362132766426867'}}[page];
       const steps=[...html.matchAll(/<li(?: [^>]*)?>([\s\S]*?)<\/li>/g)].map(([,step])=>step.trim());
       if(page==='ipadBeta') {
-        assert.match(steps[0],/<a class="button store" href="https:\/\/apps\.apple\.com\/app\/testflight\/id899247664"[^>]*><svg[^>]*>[\s\S]*<\/svg>App Store<\/a>$/);
-        steps[0]=steps[0].replace(/\s*<a class="button store"[\s\S]*$/,'');
+        assert.match(steps[0],new RegExp(`<a class="store" href="https://apps\\.apple\\.com/app/testflight/id899247664"[^>]*><img src="/assets/badges/app-store-${locale}\\.svg" alt="App Store" height="40"[^>]*></a>$`));
+        steps[0]=steps[0].replace(/\s*<a class="store"[\s\S]*$/,'');
       }
       assert.deepEqual(steps.map(step=>step.replace(/<a href="([^"]+)"[^>]*>([^<]+)<\/a>/g,(_,href,text)=>`{${Object.keys(links).find(key=>links[key]===href&&t.links[key]===text.replaceAll('&#39;',"'"))}}`)),t.steps.map(escapeText));
       assert.equal(html.includes(escapeText(t.note??'\0')),'note' in t);

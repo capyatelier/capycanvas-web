@@ -32,13 +32,14 @@ imply endorsement. It is excluded from this project's MIT/Apache and branding
 grants. See <https://github.com/logos> and
 <https://docs.github.com/en/site-policy/content-removal-policies/github-trademark-policy>.
 
-## App Store mark
+## App Store badge
 
-The App Store mark in `site/src/lib/icons.ts` labels the link to Apple's TestFlight app
-on the iPad beta page. Apple owns the mark; its use does not imply endorsement, and it
-is excluded from this project's MIT/Apache and branding grants. The path data comes
-from Simple Icons 16.34.0 (CC0-1.0). See
-<https://developer.apple.com/app-store/marketing/guidelines/>.
+The "Download on the App Store" badges in `site/public/assets/badges/` are Apple's
+official artwork, downloaded unmodified in each site language from
+<https://toolbox.marketingtools.apple.com/>. They link to Apple's TestFlight app on
+the iPad beta page. Apple owns the App Store mark and badge; their use does not imply
+endorsement, and they are excluded from this project's MIT/Apache and branding
+grants. See <https://developer.apple.com/app-store/marketing/guidelines/>.
 
 Other interface symbols are original geometric SVGs under MIT OR Apache-2.0.
 Platform names identify planned compatibility; their owners retain their rights.
