@@ -7,7 +7,8 @@ import { serve } from './serve.mjs';
 import { editor } from './capture/editor.mjs';
 import { annotate, clearAnnotations } from './capture/annotations.mjs';
 import { applyTheme, settled, shooter } from './capture/shoot.mjs';
-import { chapters } from './capture/docs/index.mjs';
+import { chapters as docs } from './capture/docs/index.mjs';
+import showcase from './capture/showcase.mjs';
 import { PNG } from 'pngjs';
 
 const width = 1920, height = 1080, scale = 2;
@@ -28,6 +29,7 @@ for (const [path, expected] of Object.entries(source.hashes)) {
   assert.equal(hash(Buffer.from(bytes)), expected, `Served bytes match source manifest: ${path}`);
 }
 
+const chapters = { ...docs, showcase };
 const scope = (process.env.CAPTURE_ONLY || 'all').split(',').map(name => name.trim()).filter(Boolean);
 const known = Object.keys(chapters);
 for (const name of scope) assert.ok(name === 'all' || known.includes(name), `Known capture chapter: ${name}`);
@@ -36,12 +38,8 @@ const examples = selected.includes('illustration') ? `${output}/examples` : `${p
 await mkdir(examples, { recursive: true });
 const previous = JSON.parse(await readFile(`${output}/capture.json`, 'utf8').catch(() => readFile(`${published}/capture.json`, 'utf8')));
 const captures = [];
-for (const entry of previous.captures.filter(capture => capture.file.startsWith('showcase/'))) {
-  assert.equal(hash(await readFile(`${published}/${entry.file}`)), entry.sha256, `Unchanged retained slide: ${entry.file}`);
-  captures.push({ revision: previous.showcaseRevision ?? previous.revision, ...entry });
-}
 if (!scope.includes('all')) {
-  for (const entry of previous.captures.filter(capture => !capture.file.startsWith('showcase/'))) {
+  for (const entry of previous.captures) {
     const bytes = await readFile(`${output}/${entry.file}`).catch(() => null);
     if (bytes && hash(bytes) === entry.sha256) captures.push(entry);
   }
@@ -58,7 +56,6 @@ const headless = process.env.CAPTURE_BROWSER_MODE !== 'wayland';
 const b = await browser({ gpu: true, headless, width, height, scale });
 const manifest = { ...source, width, height, scale, partial: !scope.includes('all'), browser: await b.call('Browser.getVersion'),
   display: headless ? 'Chrome native headless' : 'Headed Chrome on a private headless Wayland display',
-  showcaseRevision: previous.showcaseRevision ?? previous.revision,
   canvas2d: 'Software decoding and UI previews; artwork remains hardware WebGPU.', recipeHashes,
   artwork: 'Manual: an original abstract study of a teal ribbon, ochre disc and terracotta block drawn through real browser pen input and editor actions, and a photograph of a terrarium supplied by Capy Atelier. Homepage: a pen sketch, an oil painting and a photograph supplied by Capy Atelier, shown in Sketch, Paint and Photo.',
   annotations: 'Cropped from the real editor; numbered SVG outlines are injected over measured DOM controls.', captures };

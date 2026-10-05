@@ -132,11 +132,21 @@ export default async function customize({ e, b, shoot, examples }) {
     setup: async () => {
       await openWindowMenu('Workspaces');
       await pressButton('#workspace-menu', 'Layout History…');
-      await e.wait(`JSON.parse(layerApp.app.workspace_view()).page==='history' && document.querySelector('dialog.workspace-manager')?.open`);
+      await e.wait(`JSON.parse(layerApp.app.workspace_view()).page==='history' && document.querySelector('dialog.workspace-manager')?.open && document.querySelectorAll('dialog.workspace-manager .workspace-choice').length>1`);
+      await b.settle();
       const rows = await e.read(`document.querySelectorAll('dialog.workspace-manager .workspace-choice').length`);
       for (let row = 1; ; row++) {
         assert.ok(row <= rows, 'A layout history entry can be restored');
-        await press(`dialog.workspace-manager .workspace-choice:nth-child(${row} of .workspace-choice:not([aria-selected="true"]))`);
+        const choice = `document.querySelectorAll('dialog.workspace-manager .workspace-choice')[${row - 1}]`;
+        const selected = `${choice}.getAttribute('aria-selected')==='true'`;
+        if (await e.read(selected)) continue;
+        await b.evaluate(`${choice}.scrollIntoView({block:'nearest'});void 0`);
+        await b.settle();
+        for (let attempt = 1; ; attempt++) {
+          await mouse(await e.read(`(r=>({x:r.x+r.width/2,y:r.y+r.height/2}))(${choice}.getBoundingClientRect())`));
+          if (await b.until(selected, 3000).then(() => true, () => false)) break;
+          assert.ok(attempt < 3, `Layout history entry ${row} can be selected`);
+        }
         if (await b.until(`JSON.parse(layerApp.app.workspace_view()).enabled`, 3000).then(() => true, () => false)) break;
       }
     },

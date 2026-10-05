@@ -35,6 +35,7 @@ Chrome's own headless mode where it renders WebGPU correctly.
 `docs/index.mjs` lists one recipe per chapter, in the order they run in one
 browser. The illustration chapter runs first: it draws the tutorial study with
 real pen input and saves the downloadable examples the other chapters open.
+`showcase.mjs` runs last and stages the homepage slides.
 
 - `editor.mjs` drives the editor through its own actions, commands, clicks and
   pen events. The browser file picker is replaced with an in-memory store so
@@ -51,6 +52,9 @@ real pen input and saves the downloadable examples the other chapters open.
   ochre disc and a terracotta block) and the tutorial's four stages.
 - `photo/terrarium.jpg` is a photograph supplied by Capy Atelier for the photo
   tutorial and photo features, resized with its metadata removed.
+- `showcase/spring.png` (an ink drawing), `showcase/house.png` (an oil painting)
+  and `showcase/NDF_4717.jpg` (the terrarium photograph at full size) are supplied
+  by Capy Atelier for the Sketch, Paint and Photo slides on the homepage.
 
 Never fake UI: no injected controls, CSS overrides or replaced pixels. Reach every
 state through the app.
@@ -75,14 +79,10 @@ Commit the recipes and these public assets:
 
 - `public/assets/docs/`: every manual image, by chapter.
 - `public/assets/guides/illustration-{light,dark}.webp`: the documentation overview.
+- `public/assets/showcase/`: the homepage slides.
 - `public/assets/examples/`: the four tutorial projects and the exported study.
 - `public/assets/capture.json`: source revision, app hashes, recipe hashes,
   browser version, image sizes and hashes, callout bounds, and example hashes.
-
-The homepage slides in `public/assets/showcase/` are kept byte-for-byte from an
-earlier capture (`showcaseRevision`). Their artwork in `showcase/*.capy` predates
-the current project format and has to be re-saved before the slides can be
-captured again.
 
 Reproduction means the same source, actions, artwork and composition. GPU, fonts,
 Chrome versions and input timing can change individual bytes, so review new

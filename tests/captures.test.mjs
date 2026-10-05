@@ -63,9 +63,14 @@ test('every capture in the manual is a verified light/dark pair from the real ed
     assert.equal(hash(await readFile(join(root, 'assets', overview.file))), overview.sha256);
     assert.deepEqual(dimensions(await readFile(join(root, 'assets', overview.file))), [3840, 2160]);
   }
-  for (const capture of manifest.captures.filter(item => item.file.startsWith('showcase/'))) {
-    assert.equal(hash(await readFile(join(root, 'assets', capture.file))), capture.sha256, `Homepage slide matches its provenance: ${capture.file}`);
+  for (const slide of ['sketch', 'paint', 'photo']) for (const theme of ['light', 'dark']) {
+    const capture = manifest.captures.find(item => item.file === `showcase/${slide}-${theme}.webp`);
+    assert.ok(capture, `Homepage slide recorded: ${slide}-${theme}`);
+    const bytes = await readFile(join(root, 'assets', capture.file));
+    assert.equal(hash(bytes), capture.sha256, `Homepage slide matches its provenance: ${capture.file}`);
+    assert.deepEqual(dimensions(bytes), [3840, 2160], `Full-window homepage slide: ${capture.file}`);
   }
+  assert.equal(manifest.showcaseRevision, undefined, 'Homepage slides are captured from the same revision as the manual');
   assert.ok(Object.keys(manifest.recipeHashes).length >= 10, 'Capture recipe is identified');
   for (const [path, expectedHash] of Object.entries(manifest.recipeHashes)) assert.equal(hash(await readFile(`site/scripts/${path}`)), expectedHash, `Recipe changed; regenerate captures: ${path}`);
 });
