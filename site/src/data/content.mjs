@@ -24,10 +24,36 @@ export const content = {
       meta: 'Capy Canvas is a cross-platform app for sketching, illustration, and photography, with a powerful GPU-accelerated painting engine.'
     },
     download: {
-      title: 'Download', intro: 'Native downloads are not available yet.',
-      status: 'Coming soon', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: 'Planned platforms',
+      title: 'Download', intro: 'Betas for iPad and Android tablets are available. Other native downloads are coming soon.',
+      status: 'Coming soon', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: 'Platforms', joinBeta: 'Join the beta',
       pwa: pwaContent.en,
+      released: 'Version {version}, released {date}', get: 'Download',
+      checksums: "Each file's fingerprint is listed in {file}, so you can check that a download is complete and unchanged.",
+      pastVersions: 'Past versions', allReleases: 'Releases on GitHub',
+      notes: "What's new in {version}", notesLanguage: 'Release notes are in English.',
+      metaReleased: 'Download Capy Canvas, or install it as a web app for offline use.',
       meta: 'Install Capy Canvas as a web app for offline use. Native downloads are coming soon.'
+    },
+    versions: {
+      title: 'Past versions', intro: 'Every released version of Capy Canvas, newest first.',
+      empty: 'No versions have been released yet.',
+      version: 'Version {version}', released: 'Released {date}', latest: 'Latest', files: 'Files',
+      meta: 'Every released version of Capy Canvas, with release notes and download links.'
+    },
+    ipadBeta: {
+      title: 'iPad beta',
+      intro: 'Try new versions of Capy Canvas on your iPad before they reach the App Store.',
+      steps: ["Install Apple's TestFlight app from the App Store.", 'On your iPad, open the {invitation}.', 'Tap Accept, then Install.'],
+      links: { invitation: 'Capy Canvas beta invitation' },
+      meta: 'How to install the Capy Canvas beta on your iPad with TestFlight.'
+    },
+    androidBeta: {
+      title: 'Android tablet beta',
+      intro: 'Try new versions of Capy Canvas on your Android tablet before they are released.',
+      note: 'Sign in with the Google account you use on your tablet.',
+      steps: ['Join the {group}.', 'Open the {test} and accept the invitation.', 'Install Capy Canvas from Google Play on your tablet.'],
+      links: { group: 'Capy Canvas beta group', test: 'beta page on Google Play' },
+      meta: 'How to install the Capy Canvas beta on your Android tablet from Google Play.'
     },
     documentation: {
       title: 'Documentation',
@@ -52,10 +78,36 @@ export const content = {
       meta: 'Capy Canvas は、強力な GPU 加速ペイントエンジンを備えた、スケッチ、イラスト、写真のためのクロスプラットフォームアプリです。'
     },
     download: {
-      title: 'ダウンロード', intro: 'ネイティブ版はまだダウンロードできません。',
-      status: '公開予定', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: '対応予定のプラットフォーム',
+      title: 'ダウンロード', intro: 'iPad と Android タブレット向けのベータ版を配布しています。その他のネイティブ版は公開予定です。',
+      status: '公開予定', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: 'プラットフォーム', joinBeta: 'ベータに参加',
       pwa: pwaContent.ja,
+      released: 'バージョン {version}（{date} 公開）', get: 'ダウンロード',
+      checksums: '各ファイルの指紋（フィンガープリント）は {file} に載っています。ダウンロードしたファイルが欠けたり変えられたりしていないかを確かめられます。',
+      pastVersions: '過去のバージョン', allReleases: 'GitHub のリリース',
+      notes: '{version} の変更点', notesLanguage: 'リリースノートは英語です。',
+      metaReleased: 'Capy Canvas をダウンロードするか、ウェブアプリとしてインストールしてオフラインで使えます。',
       meta: 'Capy Canvas のウェブ版をインストールしてオフラインで使えます。ネイティブ版は公開準備中です。'
+    },
+    versions: {
+      title: '過去のバージョン', intro: 'これまでに公開した Capy Canvas のすべてのバージョンを、新しい順に掲載しています。',
+      empty: '公開済みのバージョンはまだありません。',
+      version: 'バージョン {version}', released: '{date} 公開', latest: '最新', files: 'ファイル',
+      meta: 'これまでに公開した Capy Canvas のすべてのバージョンと、リリースノート、ダウンロードリンク。'
+    },
+    ipadBeta: {
+      title: 'iPad ベータ版',
+      intro: 'App Store で公開される前の新しい Capy Canvas を iPad で試せます。',
+      steps: ['App Store から Apple の TestFlight アプリをインストールします。', 'iPad で{invitation}を開きます。', '招待を承諾して、Capy Canvas をインストールします。'],
+      links: { invitation: 'Capy Canvas ベータ版への招待リンク' },
+      meta: 'TestFlight を使って iPad に Capy Canvas のベータ版をインストールする方法。'
+    },
+    androidBeta: {
+      title: 'Android タブレット ベータ版',
+      intro: '一般公開される前の新しい Capy Canvas を Android タブレットで試せます。',
+      note: 'タブレットで使っている Google アカウントでログインしてください。',
+      steps: ['{group}に参加します。', '{test}を開き、招待を承諾します。', 'タブレットの Google Play から Capy Canvas をインストールします。'],
+      links: { group: 'Capy Canvas ベータ版グループ', test: 'Google Play のベータ版ページ' },
+      meta: 'Google Play から Android タブレットに Capy Canvas のベータ版をインストールする方法。'
     },
     documentation: {
       title: 'ドキュメント',
@@ -80,10 +132,36 @@ export const content = {
       meta: 'Capy Canvas 是一款跨平台应用，配备强大的 GPU 加速绘画引擎，适用于速写、插画和摄影。'
     },
     download: {
-      title: '下载', intro: '原生版本暂未开放下载。',
-      status: '即将推出', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: '计划支持的平台',
+      title: '下载', intro: '已提供 iPad 和 Android 平板电脑的测试版，其他原生版本即将推出。',
+      status: '即将推出', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: '平台', joinBeta: '加入测试',
       pwa: pwaContent.zh,
+      released: '版本 {version}，发布于 {date}', get: '下载',
+      checksums: '{file} 列出了每个文件的指纹，可用来确认下载的文件完整且未被改动。',
+      pastVersions: '历史版本', allReleases: 'GitHub 上的发布页面',
+      notes: '{version} 的新内容', notesLanguage: '发布说明为英文。',
+      metaReleased: '下载 Capy Canvas，或将其安装为网页应用以便离线使用。',
       meta: '安装 Capy Canvas 网页应用，即可离线使用。原生版本即将推出。'
+    },
+    versions: {
+      title: '历史版本', intro: 'Capy Canvas 已发布的所有版本，按从新到旧排列。',
+      empty: '目前还没有发布任何版本。',
+      version: '版本 {version}', released: '发布于 {date}', latest: '最新', files: '文件',
+      meta: 'Capy Canvas 已发布的所有版本，附发布说明和下载链接。'
+    },
+    ipadBeta: {
+      title: 'iPad 测试版',
+      intro: '在新版本登陆 App Store 之前，先在 iPad 上试用 Capy Canvas。',
+      steps: ['从 App Store 安装 Apple 的 TestFlight 应用。', '在 iPad 上打开{invitation}。', '接受邀请，然后安装 Capy Canvas。'],
+      links: { invitation: 'Capy Canvas 测试版邀请链接' },
+      meta: '如何通过 TestFlight 在 iPad 上安装 Capy Canvas 测试版。'
+    },
+    androidBeta: {
+      title: 'Android 平板测试版',
+      intro: '在新版本正式发布之前，先在 Android 平板上试用 Capy Canvas。',
+      note: '请登录你在平板上使用的 Google 账号。',
+      steps: ['加入{group}。', '打开{test}并接受邀请。', '在平板上从 Google Play 安装 Capy Canvas。'],
+      links: { group: 'Capy Canvas 测试版群组', test: 'Google Play 测试版页面' },
+      meta: '如何从 Google Play 在 Android 平板上安装 Capy Canvas 测试版。'
     },
     documentation: {
       title: '文档',
@@ -108,10 +186,36 @@ export const content = {
       meta: 'Capy Canvas는 강력한 GPU 가속 페인팅 엔진을 갖춘, 스케치와 일러스트, 사진을 위한 크로스 플랫폼 앱입니다.'
     },
     download: {
-      title: '다운로드', intro: '네이티브 버전은 아직 다운로드할 수 없습니다.',
-      status: '출시 예정', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: '지원 예정 플랫폼',
+      title: '다운로드', intro: 'iPad와 Android 태블릿용 베타를 받을 수 있습니다. 다른 네이티브 버전은 출시 예정입니다.',
+      status: '출시 예정', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: '플랫폼', joinBeta: '베타 참여',
       pwa: pwaContent.ko,
+      released: '버전 {version}, {date} 출시', get: '다운로드',
+      checksums: '{file}에 각 파일의 지문이 있어, 다운로드한 파일이 온전하고 바뀌지 않았는지 확인할 수 있습니다.',
+      pastVersions: '이전 버전', allReleases: 'GitHub 릴리스',
+      notes: '{version} 변경 사항', notesLanguage: '릴리스 노트는 영어로 제공됩니다.',
+      metaReleased: 'Capy Canvas를 다운로드하거나 웹 앱으로 설치해 오프라인으로 사용하세요.',
       meta: 'Capy Canvas 웹 앱을 설치해 오프라인으로 사용하세요. 네이티브 버전은 출시 예정입니다.'
+    },
+    versions: {
+      title: '이전 버전', intro: '지금까지 출시된 Capy Canvas의 모든 버전을 최신순으로 보여 줍니다.',
+      empty: '아직 출시된 버전이 없습니다.',
+      version: '버전 {version}', released: '{date} 출시', latest: '최신', files: '파일',
+      meta: '지금까지 출시된 Capy Canvas의 모든 버전과 릴리스 노트, 다운로드 링크.'
+    },
+    ipadBeta: {
+      title: 'iPad 베타',
+      intro: 'App Store에 출시되기 전에 새 버전의 Capy Canvas를 iPad에서 사용해 보세요.',
+      steps: ['App Store에서 Apple의 TestFlight 앱을 설치합니다.', 'iPad에서 {invitation}를 엽니다.', '초대를 수락하고 Capy Canvas를 설치합니다.'],
+      links: { invitation: 'Capy Canvas 베타 초대 링크' },
+      meta: 'TestFlight로 iPad에 Capy Canvas 베타를 설치하는 방법.'
+    },
+    androidBeta: {
+      title: 'Android 태블릿 베타',
+      intro: '정식 출시 전에 새 버전의 Capy Canvas를 Android 태블릿에서 사용해 보세요.',
+      note: '태블릿에서 사용하는 Google 계정으로 로그인하세요.',
+      steps: ['{group}에 가입합니다.', '{test}를 열고 초대를 수락합니다.', '태블릿의 Google Play에서 Capy Canvas를 설치합니다.'],
+      links: { group: 'Capy Canvas 베타 그룹', test: 'Google Play 베타 페이지' },
+      meta: 'Google Play에서 Android 태블릿에 Capy Canvas 베타를 설치하는 방법.'
     },
     documentation: {
       title: '문서',

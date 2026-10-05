@@ -3,16 +3,23 @@ import { languages } from '../data/content.mjs';
 import { getRelativeLocaleUrl } from 'astro:i18n';
 
 export type Locale = keyof typeof languages;
-export type Page = 'home' | 'download' | 'documentation' | 'privacy';
+export type Page = 'home' | 'download' | 'versions' | 'ipadBeta' | 'androidBeta' | 'documentation' | 'privacy';
 export type SitePage = Page | '404';
 export const locales = Object.keys(languages) as Locale[];
-export const pages = ['home', 'download', 'documentation', 'privacy'] as const;
+export const pages = ['home', 'download', 'versions', 'ipadBeta', 'androidBeta', 'documentation', 'privacy'] as const;
+export const platforms = ['ipad', 'android', 'linux', 'windows', 'mac'] as const;
+export const betaPages: Partial<Record<(typeof platforms)[number], 'ipadBeta' | 'androidBeta'>> = { ipad: 'ipadBeta', android: 'androidBeta' };
+export const betaLinks = {
+  ipadBeta: { invitation: 'https://testflight.apple.com/join/VBcE4Z8r' },
+  androidBeta: { group: 'https://groups.google.com/g/capycanvas-beta', test: 'https://play.google.com/apps/internaltest/4701362132766426867' },
+};
 export const origin = 'https://capycanvas.art';
 export const appUrl = 'https://editor.capycanvas.art/';
 export const repositoryUrl = 'https://github.com/capyatelier/capycanvas';
+const segments: Partial<Record<SitePage, string>> = { versions: 'download/past-versions', ipadBeta: 'download/ipad-beta', androidBeta: 'download/android-beta', documentation: 'docs' };
 
 export function route(locale: Locale, page: SitePage = 'home', slug = '') {
-  const segment = page === 'documentation' ? 'docs' : page;
+  const segment = segments[page] ?? page;
   return getRelativeLocaleUrl(locale, page === 'home' ? '' : [segment, slug].filter(Boolean).join('/'), { normalizeLocale: false });
 }
 

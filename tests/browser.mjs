@@ -5,22 +5,28 @@ import { serve } from '../site/scripts/serve.mjs';
 import { checkPwaInstructions } from './pwa-browser.mjs';
 import { checkDocumentation } from './docs-browser.mjs';
 import { languages } from '../site/src/data/content.mjs';
+import { buildReleaseSite } from './release-sites.mjs';
 
 const locales = Object.keys(languages);
+const segments = { documentation: 'docs', versions: 'download/past-versions', ipadBeta: 'download/ipad-beta', androidBeta: 'download/android-beta' };
 
 await mkdir('artifacts/review',{recursive:true});
 const host=await serve();
 const b=await browser();
+const navigating=/Inspected target navigated or closed|Execution context was destroyed|Cannot find context with specified id/;
+const {until}=b;
+b.until=async(expression,timeout)=>{for(let attempt=1;;attempt++){try{return await until(expression,timeout);}catch(error){if(attempt===5||!navigating.test(error.message))throw error;}}};
+b.navigate=async url=>{await b.call('Page.navigate',{url});await b.until("document.readyState === 'complete' && location.href !== 'about:blank'");};
 let checks=0;
 const report=[];
 const check=(value,message)=>{assert.ok(value,message);checks++;};
 try {
   await b.call('Page.addScriptToEvaluateOnNewDocument',{source:"Object.defineProperty(navigator,'languages',{get:()=>['en-US','en'],configurable:true})"});
-  for(const [width,height] of [[1440,900],[1280,720],[1024,600],[768,1024],[390,844],[320,568],[844,390]]) for(const theme of ['light','dark']) for(const locale of locales) for(const page of ['home','download','documentation','privacy']) {
+  const layouts=async (site,pages,name='')=>{for(const [width,height] of [[1440,900],[1280,720],[1024,600],[768,1024],[390,844],[320,568],[844,390]]) for(const theme of ['light','dark']) for(const locale of locales) for(const page of pages) {
     await b.call('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
     await b.theme(theme);
-    const path=`${locale==='en'?'':'/'+locale}/${page==='home'?'':(page==='documentation'?'docs':page)+'/'}`;
-    await b.navigate(host.url+path);
+    const path=`${locale==='en'?'':'/'+locale}/${page==='home'?'':(segments[page]??page)+'/'}`;
+    await b.navigate(site.url+path);
     await b.evaluate('Promise.all([...document.images].map(i=>i.decode())).then(()=>null)');
     await b.settle();
     const metrics=await b.evaluate(`(() => {
@@ -37,7 +43,7 @@ try {
         broken:[...document.images].some(i=>!i.complete||!i.naturalWidth)
       };
     })()`);
-    const label=`${width}x${height}/${theme}/${locale}/${page}`;
+    const label=`${name}${width}x${height}/${theme}/${locale}/${page}`;
     check(metrics.scroll<=width,`Horizontal overflow ${label}: ${JSON.stringify(metrics)}`);
     check(metrics.bounds.length===0,`Clipped text ${label}: ${metrics.bounds}`);
     check(metrics.lang===locale,`Wrong language ${label}`);
@@ -55,9 +61,12 @@ try {
       check(Math.abs(metrics.overviewRatio-16/9)<.01,`Overview image aspect ratio ${label}`);
       check(metrics.overviewLink===metrics.overviewSource,`Overview full-size image ${label}`);
     }
-    if((width===1440&&locale==='en')||(width===390&&(locale==='en'||theme==='dark'))) await b.screenshot(`artifacts/review/${width}-${theme}-${locale}-${page}.png`,true);
+    if((width===1440&&locale==='en')||(width===390&&(locale==='en'||theme==='dark'))) await b.screenshot(`artifacts/review/${name.replace('/','-')}${width}-${theme}-${locale}-${page}.png`,true);
     report.push(label);
-  }
+  }};
+  await layouts(host,['home','download','versions','ipadBeta','androidBeta','documentation','privacy']);
+  const releaseHost=await serve(0,await buildReleaseSite('releases'));
+  try { await layouts(releaseHost,['download','versions'],'releases/'); } finally { await releaseHost.close(); }
   await checkPwaInstructions(b,host,check);
   const guideLayouts = await checkDocumentation(b,host,check);
   // Live OS appearance changes swap both the site palette and the actual screenshot.

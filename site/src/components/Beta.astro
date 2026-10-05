@@ -1,0 +1,25 @@
+---
+import { content } from '../data/content.mjs';
+import { betaLinks, type Locale } from '../lib/site';
+import Phrase from './Phrase.astro';
+interface Props { locale: Locale; page: 'ipadBeta' | 'androidBeta' }
+const { locale, page } = Astro.props;
+const t = content[locale][page];
+const labels: Record<string, string> = t.links;
+const links = Object.fromEntries(Object.entries(betaLinks[page]).map(([key, href]) => [key, { href, text: labels[key] }]));
+---
+<main id="main" class="page">
+  <h1>{t.title}</h1>
+  <p class="lead">{t.intro}</p>
+  {'note' in t && <p class="beta-note">{t.note}</p>}
+  <ol class="beta-steps">
+    {t.steps.map(step => <li><Phrase text={step} links={links} /></li>)}
+  </ol>
+</main>
+
+<style>
+  .beta-note { max-width: 600px; margin: -12px 0 24px; font-size: 15px; }
+  .beta-steps { max-width: 600px; margin: 0; padding-left: 22px; font-size: 15px; }
+  .beta-steps li + li { margin-top: 10px; }
+  .beta-steps :global(a) { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+</style>

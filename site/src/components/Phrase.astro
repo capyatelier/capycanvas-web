@@ -1,0 +1,6 @@
+---
+interface Props { text: string; links?: Record<string, { href: string; text: string }> }
+const { text, links = {} } = Astro.props;
+const parts = await Promise.all(text.split(/\{(\w+)\}/).map((part, i) => i % 2 && !links[part] ? Astro.slots.render(part) : part));
+---
+{parts.map((part, i) => i % 2 ? (links[part] ? <a href={links[part].href}>{links[part].text}</a> : <Fragment set:html={part} />) : part)}

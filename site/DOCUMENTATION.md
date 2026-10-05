@@ -205,8 +205,8 @@ Run `npm run check` from the repository root. It type-checks and builds Astro,
 validates the published HTML, and checks desktop/mobile layouts, both themes,
 all supported languages, device choices, keyboard navigation, and no-JavaScript behavior.
 Inspect the screenshots in `artifacts/review/` when changing layouts or content.
-Commit both `site/` sources and the generated `docs/` output; GitHub Pages serves
-`main:/docs` at `/docs/`.
+Commit the `site/` sources only. Pushing to `main` runs the Deploy site workflow,
+which builds `docs/` and publishes it to GitHub Pages.
 
 The output directory and URL have separate meanings: `/docs/quickstart/` is built
 to `docs/docs/quickstart/index.html`. The route helper maps the internal

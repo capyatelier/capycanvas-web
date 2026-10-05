@@ -1,0 +1,25 @@
+---
+interface Props { html: string }
+---
+<div class="release-notes" lang="en" set:html={Astro.props.html} />
+
+<style>
+  .release-notes { color: var(--ink); font-size: 15px; overflow-wrap: anywhere; }
+  .release-notes > :global(:first-child) { margin-top: 0; }
+  .release-notes :global(:is(h3, h4, h5, h6)) { font-size: 15px; font-weight: 650; line-height: 1.4; margin: 24px 0 8px; }
+  .release-notes :global(h3) { font-size: 16px; }
+  .release-notes :global(:is(p, ul, ol, pre, table, details, blockquote)) { margin: 0 0 14px; }
+  .release-notes :global(:is(ul, ol)) { padding-left: 22px; }
+  .release-notes :global(li + li) { margin-top: 4px; }
+  .release-notes :global(a[href]) { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+  .release-notes :global(code) { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .88em; padding: 1px 5px; border-radius: 4px; background: var(--surface); }
+  .release-notes :global(pre) { overflow-x: auto; padding: 12px 14px; border-radius: 6px; background: var(--surface); }
+  .release-notes :global(pre code) { padding: 0; background: none; }
+  .release-notes :global(img) { max-width: 100%; height: auto; }
+  .release-notes :global(table) { display: block; overflow-x: auto; border-collapse: collapse; }
+  .release-notes :global(:is(th, td)) { padding: 6px 12px; text-align: left; }
+  .release-notes :global(th) { background: var(--surface); }
+  .release-notes :global(blockquote) { margin-left: 0; padding: 8px 14px; border-radius: 6px; background: var(--surface); color: var(--muted); }
+  .release-notes :global(summary) { cursor: pointer; }
+  .release-notes :global(.sr-only) { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>

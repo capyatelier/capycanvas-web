@@ -6,13 +6,16 @@ import { createHash } from 'node:crypto';
 import { docsUI } from '../site/src/data/docs-ui.mjs';
 import { docTopics } from '../site/src/data/docs-nav.mjs';
 import { content, languages } from '../site/src/data/content.mjs';
+import { releasesUrl } from '../site/src/lib/releases.mjs';
 
 const root=resolve(process.env.SITE_OUTPUT || 'docs');
 const read=path=>readFile(join(root,path),'utf8');
-const pages=['home','download','documentation','privacy'];
+const pages=['home','download','versions','ipadBeta','androidBeta','documentation','privacy'];
 const escape=text=>text.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;').replaceAll('>','&gt;');
 const escapeText=text=>escape(text).replaceAll("'",'&#39;');
-const route=(l,p)=>`${l==='en'?'':l+'/'}${p==='home'?'':(p==='documentation'?'docs':p)+'/'}`;
+const segments={documentation:'docs',versions:'download/past-versions',ipadBeta:'download/ipad-beta',androidBeta:'download/android-beta'};
+const route=(l,p)=>`${l==='en'?'':l+'/'}${p==='home'?'':(segments[p]??p)+'/'}`;
+const releaseFile=/^https:\/\/github\.com\/capyatelier\/capycanvas\/releases\/download\/v([^/]+)\/(?:capycanvas-\1-(?:android\.apk|linux-x86_64\.AppImage|windows-x64-setup\.exe|macos-arm64\.dmg)|SHA256SUMS)$/;
 function shape(value) { return Array.isArray(value)?value.map(shape):value && typeof value==='object'?Object.fromEntries(Object.entries(value).map(([k,v])=>[k,shape(v)])):typeof value; }
 for(const locale of Object.keys(languages)) {
   test(`${locale}: translation coverage matches English`,()=>assert.deepEqual(shape(content[locale]),shape(content.en)));
@@ -73,10 +76,35 @@ for(const locale of Object.keys(languages)) {
       assert.match(html,/href="https:\/\/github.com\/capyatelier\/capycanvas"/);
       assert.match(html,/href="https:\/\/github.com\/capyatelier\/capycanvas" target="_blank" rel="noopener noreferrer"/);
     }
+    if(page==='download'||page==='versions') {
+      for(const [,url] of html.matchAll(/href="(https:\/\/github\.com\/capyatelier\/capycanvas\/releases\/download\/[^"]+)"/g)) assert.match(url,releaseFile);
+    }
+    if(page==='versions') {
+      assert.ok(html.includes(`href="${releasesUrl}"`));
+      assert.ok(html.includes(escapeText(html.includes('<article class="release"')?content[locale].versions.intro:content[locale].versions.empty)));
+    }
+    if(page==='ipadBeta'||page==='androidBeta') {
+      const t=content[locale][page];
+      const links={ipadBeta:{invitation:'https://testflight.apple.com/join/VBcE4Z8r'},androidBeta:{group:'https://groups.google.com/g/capycanvas-beta',test:'https://play.google.com/apps/internaltest/4701362132766426867'}}[page];
+      const steps=[...html.matchAll(/<li(?: [^>]*)?>([\s\S]*?)<\/li>/g)].map(([,step])=>step);
+      assert.deepEqual(steps.map(step=>step.replace(/<a href="([^"]+)"[^>]*>([^<]+)<\/a>/g,(_,href,text)=>`{${Object.keys(links).find(key=>links[key]===href&&t.links[key]===text.replaceAll('&#39;',"'"))}}`)),t.steps.map(escapeText));
+      assert.equal(html.includes(escapeText(t.note??'\0')),'note' in t);
+    }
     if(page==='download') {
-      for(const platform of ['iPadOS','Android','Linux','Windows','macOS']) assert.ok(html.includes(`<h2>${platform}</h2>`));
-      const pwa=content[locale].download.pwa;
-      assert.ok(html.indexOf('class="pwa"')>html.indexOf('<h2>macOS</h2>'));
+      const t=content[locale].download;
+      for(const platform of ['iPadOS','Android','Linux','Windows','macOS']) assert.match(html,new RegExp(`<h2 id="platform-[a-z]+"[^>]*>${platform}</h2>`));
+      for(const [platform,beta] of [['ipad','ipadBeta'],['android','androidBeta']]) assert.match(html,new RegExp(`<a class="button" href="/${route(locale,beta)}" aria-describedby="platform-${platform}"[^>]*>${escapeText(t.joinBeta)}</a>`));
+      if(html.includes(`href="/${route(locale,'versions')}"`)) {
+        assert.match(html,/<p class="lead"[^>]*>.*<time datetime="\d{4}-\d{2}-\d{2}"/);
+        assert.ok(html.includes(`<meta name="description" content="${escape(t.metaReleased)}">`));
+        assert.ok(!html.includes(`href="${releasesUrl}"`));
+      } else {
+        assert.match(html,new RegExp(`<p class="lead"[^>]*>${escapeText(t.intro)}</p>`));
+        assert.equal(html.split(`>${escapeText(t.status)}</p>`).length,4);
+        assert.ok(html.includes(`href="${releasesUrl}"`));
+      }
+      const pwa=t.pwa;
+      assert.ok(html.indexOf('class="pwa"')>html.indexOf('>macOS</h2>'));
       assert.ok(html.includes(escapeText(pwa.intro)));
       assert.doesNotMatch(html,/Open the installed app once online before using it offline\./);
       assert.ok(modules.some(code=>code.includes('[data-pwa-guide]')), 'PWA behavior is bundled with the download component');

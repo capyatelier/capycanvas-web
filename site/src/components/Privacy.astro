@@ -2,14 +2,14 @@
 import { getEntry, render } from 'astro:content';
 import { content } from '../data/content.mjs';
 import type { Locale } from '../lib/site';
+import { formatDate } from '../lib/format';
 interface Props { locale: Locale }
 const { locale } = Astro.props;
 const t = content[locale].privacy;
 const entry = await getEntry('policies', locale);
 if (!entry) throw new Error(`Missing privacy policy: ${locale}`);
 const { Content } = await render(entry);
-const date = new Intl.DateTimeFormat(content[locale].lang, { dateStyle: 'long', timeZone: 'UTC' })
-  .format(new Date(`${entry.data.effectiveDate}T12:00:00Z`));
+const date = formatDate(content[locale].lang, entry.data.effectiveDate);
 ---
 <main id="main" class="page policy">
   <h1>{t.title}</h1>

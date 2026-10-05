@@ -21,11 +21,16 @@ npm run serve           # http://127.0.0.1:4321
 executable; the default is `google-chrome`. Browser checks launch their own
 local server and save review screenshots to ignored `artifacts/review/`.
 
-Edit source in `site/`; commit the rebuilt `docs/` output with every change.
-Astro replaces `docs/` completely. GitHub Pages publishes the committed
-files directly, with no server-side JavaScript, external fonts, or analytics.
+Edit source in `site/`. `docs/` is ignored build output that Astro replaces
+completely on every build; the **Deploy site** workflow builds and publishes it to
+GitHub Pages, with no server-side JavaScript, external fonts, or analytics.
 The source is independent of the adjacent app repository except when explicitly
-recapturing screenshots.
+recapturing screenshots and reading published releases at build time.
+
+The build reads the GitHub API, so it needs network access. Set `GITHUB_TOKEN`
+to any GitHub token to avoid the anonymous rate limit; the workflows pass their own.
+`RELEASES_FILE=tests/fixtures/releases.json npm run build` builds from a JSON file
+shaped like the API response instead.
 
 ## Source structure
 
@@ -43,6 +48,8 @@ This is a plain Astro static site with the existing Capy Canvas theme.
 - `site/src/layouts/DocsLayout.astro`: documentation sidebar, article area, and section links.
 - `site/src/styles/documentation.css`: documentation styles using the existing editor palette.
 - `site/src/lib/site.ts`: typed page/locale definitions and Astro locale URL helpers.
+- `site/src/lib/releases.mjs`: reads Capy Canvas releases from GitHub, picks the offered
+  files and renders sanitized release notes; `release-data.ts` loads them once per build.
 - `site/src/scripts/pwa.js`: browser/OS detection and installation picker behavior.
 - `site/public/assets/`: unchanged global CSS, brand assets, and app screenshots.
 - `site/scripts/`: static preview server and Chrome/capture utilities.
@@ -74,8 +81,10 @@ English-first editing, screenshots, and custom interactive components.
 | Türkçe | `tr` | `/tr/` |
 | Italiano | `it` | `/it/` |
 
-Download, documentation, and privacy append `download/`, `docs/`, and `privacy/`
-to the language's home URL. The Brazilian Portuguese path preserves `pt-BR` casing.
+Download, past versions, the two beta sign-up pages, documentation, and privacy append
+`download/`, `download/past-versions/`, `download/ipad-beta/`, `download/android-beta/`,
+`docs/`, and `privacy/` to the language's home URL.
+The Brazilian Portuguese path preserves `pt-BR` casing.
 
 Guides extend the documentation route with the same topic path in every locale,
 for example `/docs/illustration/draft/` and
@@ -115,6 +124,53 @@ it still switches slides with plain CSS. The showcase scales to fit the viewport
 and a Capy Atelier credit. All pages use borderless controls. Source translations live
 in `site/src/data/content.mjs`; each language gets static HTML, appropriate metadata,
 canonical and alternate links, and a sitemap entry.
+
+## Downloads and past versions
+
+The Download page and Past versions are built from the published
+[Capy Canvas releases](https://github.com/capyatelier/capycanvas/releases).
+Drafts are private and pre-releases are not offered, so both are skipped.
+If the GitHub API request fails, the build fails rather than publishing pages
+without the releases.
+
+The Download page shows the latest release's version and date, one direct download
+per platform, a link to `SHA256SUMS`, and the release notes. Past versions lists every
+published release, newest first, with its date, notes and files. Only these assets are
+offered, matched by exact name:
+
+| Platform | Asset |
+| --- | --- |
+| Windows | `capycanvas-<version>-windows-x64-setup.exe` |
+| macOS | `capycanvas-<version>-macos-arm64.dmg` |
+| Linux | `capycanvas-<version>-linux-x86_64.AppImage` |
+| Android | `capycanvas-<version>-android.apk` |
+| Checksums | `SHA256SUMS` |
+
+The Microsoft Store `.msix`, Google Play `.aab`, AppImage `.zsync` update data and
+the `.zip` archives are never linked. Until a release is published, Linux, Windows and
+macOS keep their "Coming soon" status and the page links to the GitHub releases list.
+
+The iPad and Android rows always show **Join the beta**, which opens a short sign-up
+page: `/download/ipad-beta/` (install TestFlight, open the invitation, install) and
+`/download/android-beta/` (join the Google Group, accept the Google Play test, install,
+all with the tablet's Google account). On Android the button sits beside the APK once a
+release exists. The TestFlight, Google Group and Google Play test links are `betaLinks`
+in `site/src/lib/site.ts`; the Google Group is what puts testers on the Play test's list.
+
+Page text is translated in every language; release notes stay in English. They are
+rendered from the release body's Markdown and sanitized with `rehype-sanitize`'s
+GitHub schema before being written into the page. Headings in the notes are moved below the page's
+headings, relative links resolve to GitHub, and in-page anchors are kept unique.
+
+Tests build the site from `tests/fixtures/releases.json`, shaped like the GitHub API
+response and including a draft, a pre-release and an unfinished upload, and from the empty
+`tests/fixtures/no-releases.json`, into `artifacts/release-pages/`.
+
+**After publishing a Capy Canvas release, run Actions › Deploy site** in this
+repository (or `gh workflow run deploy.yml --repo capyatelier/capycanvas-web`)
+so the Download page picks it up. The online editor at editor.capycanvas.art is
+deployed separately, by **Actions › Deploy editor** in
+[capyatelier/capycanvas-release](https://github.com/capyatelier/capycanvas-release).
 
 ## Web app installation instructions
 
@@ -191,12 +247,16 @@ use a current reference build when checking subsequent visual regressions.
 
 ## Publish
 
+The **Deploy site** workflow (`.github/workflows/deploy.yml`) runs on every push to
+`main` and from **Actions › Deploy site › Run workflow**. It runs the build, output
+and browser checks, then publishes `docs/` with GitHub Pages' Actions deployment.
+It needs no secrets. Pull requests run the same checks in **Verify site**.
 See [DEPLOYMENT.md](DEPLOYMENT.md) for GitHub Pages, Porkbun, and Cloudflare setup.
-The publishing directory is **`/docs`**, not the generator's `site/` directory.
+
 The public documentation route is `/docs/`.
 The former `/documentation/` URLs redirect to the matching `/docs/` pages,
-including translated guides. GitHub Pages still serves the repository's `docs/`
-directory, so the documentation landing page is built to `docs/docs/index.html`.
+including translated guides. The build directory is also named `docs/`,
+so the documentation landing page is built to `docs/docs/index.html`.
 
 ## License
 

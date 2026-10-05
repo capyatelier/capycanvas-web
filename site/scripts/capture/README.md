@@ -81,7 +81,7 @@ teaching example.
 
 ## Outputs and provenance
 
-Commit the recipes, these public assets, and rebuilt `docs/`:
+Commit the recipes and these public assets:
 
 - `site/public/assets/showcase/`: the three homepage slides in both appearances.
 - `site/public/assets/guides/`: 30 guide pairs, including the four tutorial stages.

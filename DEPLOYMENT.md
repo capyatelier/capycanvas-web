@@ -1,8 +1,10 @@
 # Publish capycanvas.art with GitHub Pages
 
-The repository includes generated `docs/`, `docs/CNAME` containing
-`capycanvas.art`, and `docs/.nojekyll`. Only GitHub and DNS setup remain.
-The drawing app at `editor.capycanvas.art` is a separate deployment.
+The **Deploy site** GitHub Actions workflow builds the site and publishes it to
+GitHub Pages; the generated `docs/` directory is not committed. Only GitHub and
+DNS setup remain. The drawing app at `editor.capycanvas.art` is a separate
+deployment, published by **Actions › Deploy editor** in
+[capyatelier/capycanvas-release](https://github.com/capyatelier/capycanvas-release).
 
 ## 1. Make Cloudflare authoritative (skip if already done)
 
@@ -33,15 +35,25 @@ Source: [GitHub domain verification](https://docs.github.com/en/pages/configurin
 
 In **capyatelier/capycanvas-web → Settings → Pages**:
 
-- Source: **Deploy from a branch**.
-- Branch: **main**.
-- Folder: **/docs**.
-- Save, then set **Custom domain** to `capycanvas.art` and save.
+- Source: **GitHub Actions**.
+- Set **Custom domain** to `capycanvas.art` and save.
+
+The same source setting from the command line:
+
+```sh
+gh api -X PUT repos/capyatelier/capycanvas-web/pages -f build_type=workflow
+```
 
 The repository must be public for GitHub Pages on the free organization plan,
-or use a plan that supports Pages for private repositories. The `verify`
-workflow checks source/output consistency; it does not deploy. GitHub's own
-Pages workflow publishes the committed `docs/` directory.
+or use a plan that supports Pages for private repositories. The custom domain
+is a repository setting; a `CNAME` file in the build is not used by Actions
+deployments. The `github-pages` environment must allow deployments from `main`.
+
+`.github/workflows/deploy.yml` (**Deploy site**) runs on every push to `main` and
+from **Actions › Deploy site › Run workflow**. It builds the site, runs the output
+and browser checks, uploads `docs/` with `actions/upload-pages-artifact`, and
+publishes it with `actions/deploy-pages`. It reads releases with the workflow's
+own token and needs no secrets. **Verify site** runs the same checks on pull requests.
 
 Source: [GitHub publishing-source setup](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
@@ -78,7 +90,8 @@ in repository **Settings → Pages**. GitHub says this option can take up to
 
 Check:
 
-- `https://capycanvas.art/`, `/download/`, and `/documentation/`.
+- `https://capycanvas.art/`, `/download/`, `/download/past-versions/`, `/download/ipad-beta/`,
+  `/download/android-beta/`, and `/documentation/`.
 - `https://www.capycanvas.art/` redirects to the apex.
 - Every supported locale, including `/es/`, `/pt-BR/`, `/id/`, `/fr/`, `/de/`,
   `/ru/`, `/th/`, `/vi/`, `/tr/`, and `/it/`, with language selection and both OS themes.
@@ -98,13 +111,27 @@ Source: [GitHub HTTPS setup](https://docs.github.com/en/pages/getting-started-wi
 ## Future updates
 
 ```sh
-npm run build
-npm test
-npm run test:browser
-git add site docs tests
+npm run check
+git add site tests
 git commit -m "Update Capy Canvas website"
 git push
 ```
 
-If GitHub adds a CNAME commit after changing Pages settings, pull it before your
-next push. Never edit only the generated HTML; the next build replaces it.
+Pushing to `main` runs Deploy site. Never edit the generated HTML; `docs/` is
+ignored and every build replaces it.
+
+## After publishing a Capy Canvas release
+
+The Download and Past versions pages are built from the published releases of
+[capyatelier/capycanvas](https://github.com/capyatelier/capycanvas/releases).
+Publishing a release does not rebuild this site, so after publishing one, run
+**Actions › Deploy site** in this repository:
+
+```sh
+gh workflow run deploy.yml --repo capyatelier/capycanvas-web
+```
+
+Drafts and pre-releases are not shown. To update the online editor, run
+**Actions › Deploy editor** in
+[capyatelier/capycanvas-release](https://github.com/capyatelier/capycanvas-release);
+it is deployed separately from this site.

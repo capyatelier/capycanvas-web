@@ -10,6 +10,7 @@ const { locale, page, slug = '' } = Astro.props;
 const t = content[locale];
 const brandSvg = capybara.replace('<svg ', '<svg aria-hidden="true" ');
 const navPages = ['download', 'documentation'] as const;
+const section = page === 'versions' || page === 'ipadBeta' || page === 'androidBeta' ? 'download' : page;
 ---
 {page === 'home' ? (
   <div class="home-top"><LanguageMenu locale={locale} page={page} slug={slug} /></div>
@@ -18,7 +19,7 @@ const navPages = ['download', 'documentation'] as const;
     <div class="nav-inner">
       <a class="brand" href={route(locale)} aria-label={`Capy Canvas · ${t.nav.home}`}><Fragment set:html={brandSvg} /><span>Capy Canvas</span></a>
       <nav class="nav-links" aria-label={t.nav.main}>
-        {navPages.map(p => <a href={route(locale, p)} aria-current={p === page ? 'page' : undefined}>{t.nav[p]}</a>)}
+        {navPages.map(p => <a href={route(locale, p)} aria-current={p === section ? 'page' : undefined}>{t.nav[p]}</a>)}
         <a href={appUrl}>{t.nav.webDemo}<Icon name="external" /></a>
       </nav>
       <div class="nav-tools">
