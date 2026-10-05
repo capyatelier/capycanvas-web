@@ -38,7 +38,7 @@ try {
       const overviewBounds=overviewImage?.getBoundingClientRect();
       const borders=[...document.querySelectorAll('header,nav,main,picture,section,a,li')].filter(visible).filter(e=>['Top','Right','Bottom','Left'].some(side=>parseFloat(getComputedStyle(e)['border'+side+'Width'])>0)).map(e=>e.className);
       return { overviewSource:overviewImage?.currentSrc, overviewRatio:overviewBounds?overviewBounds.width/overviewBounds.height:null, overviewLink:document.querySelector('.docs-overview-image a')?.href, height:innerHeight, scrollHeight:document.documentElement.scrollHeight, shotRatio:shot?shot.width/shot.height:null, borders, width:innerWidth, scroll:document.documentElement.scrollWidth, lang:document.documentElement.dataset.locale, bg:getComputedStyle(document.body).backgroundColor, source:document.querySelector('.showcase-frame[data-slide="paint"] img')?.currentSrc, shown, bounds,
-        labels:[...document.querySelectorAll('a,summary')].filter(visible).every(e=>(e.getAttribute('aria-label')||e.textContent).trim()),
+        labels:[...document.querySelectorAll('a,summary')].filter(visible).every(e=>(e.getAttribute('aria-label')||e.textContent||e.querySelector('img[alt]')?.alt||'').trim()),
         headings:document.querySelectorAll('h1').length,
         broken:[...document.images].some(i=>!i.complete||!i.naturalWidth)
       };
