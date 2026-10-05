@@ -1,27 +1,65 @@
 ---
 title: "Rendu"
-description: "Ajoutez de l'ombrage et de la texture sur les calques attachés à chaque forme, puis exportez le résultat."
-purpose: "Le rendu est l'endroit où les formes obtiennent leur lumière et leur ombre. Peindre l'ombrage sur des calques découpés le maintient automatiquement à l'intérieur de chaque forme, et comme l'ombrage est séparé de la couleur de base, vous pouvez l'ajuster ou le refaire sans rien perdre."
-techniques: ["Découpez un calque d’ombrage sur le ruban.", "Contrôlez la force de l’ombrage.", "Ombrez les autres formes, vérifiez les calques et exportez."]
-figure: "1 : Texture du ruban et ombrage du ruban au-dessus du ruban. 2 : Clip sur le calque ci-dessous. 3 : Opacité du calque pour toute la passe d’ombrage."
-related: ["layers/groups", "layers/masks", "output/export"]
-image: {"light": "/assets/guides/illustration-render-light.webp", "dark": "/assets/guides/illustration-render-dark.webp", "alt": "1 : Texture du ruban et ombrage du ruban au-dessus du ruban. 2 : Clip sur le calque ci-dessous. 3 : Opacité du calque pour toute la passe d’ombrage."}
+description: "Étape 4 du tutoriel d’illustration : ombrage et texture sur des calques écrêtés sur chaque couleur de base, et une exportation PNG."
+related: ["layers/settings", "drawing/brush-tools", "files/open-save", "files/export"]
 ---
 
-## 1. Ajouter un ombrage coupé
+Cette étape produit l’ombrage de chaque forme, sur des calques écrêtés sur sa
+couleur de base, et une exportation PNG de l’étude.
 
-Sélectionnez **Ribbon**, ajoutez un nouveau calque directement au-dessus et nommez-le **Ribbon shading**. Ouvrez son menu et choisissez **Layer Settings → Clip to layer below**. Peignez maintenant les ombres dans les coudes du ruban avec **Watercolor Wash** et ajoutez quelques accents de sauge avec **Paintbrush**. Vos traits peuvent dépasser le bord du ruban, car seule la partie située à l'intérieur du ruban est visible.
+## 1. Ajouter un calque écrêté
 
-Laissez le mode de fusion du calque d'ombrage sur **Normal** pour le moment. La couleur de base reste en sécurité sur le calque du ruban, donc l'effacement de l'ombrage n'efface jamais la couleur en dessous.
+Sélectionnez *Ribbon*, puis choisissez **Calque > Nouveau > Nouveau calque écrêté**,
+ou choisissez **Nouveau > Nouveau calque écrêté** dans le menu de la ligne
+([Réglages du calque](/fr/docs/layers/settings/)). Renommez le nouveau calque
+*Ribbon shading*.
 
-## 2. Contrôlez la force
+![Le menu du calque avec Nouveau ouvert et Nouveau calque écrêté à l’intérieur.](shot:illustration/render-new-menu)
 
-L’opacité du pinceau modifie les traits que vous êtes sur le point de peindre. Le **opacity of the Ribbon shading layer** modifie toutes les nuances que vous avez déjà peintes. Si chaque ombre semble trop forte, réduisez l'opacité du calque au lieu de repeindre.
+*Ribbon shading* apparaît juste au-dessus de *Ribbon*, et un rail à gauche des
+miniatures signale l’écrêtage. L’écrêtage suit le masque de *Ribbon*, et non le
+bleu canard qui remplit tout le calque.
 
-Pour les reflets, ajoutez **Ribbon texture** directement au-dessus de l'ombrage du ruban et coupez-le également. Utilisez un petit crayon ou un pinceau texturé pour quelques légères marques. L'ordre des calques est maintenant Texture du ruban, Ombrage du ruban, puis Ruban. [Paramètres du pinceau](/fr/docs/advanced/brush-engine/) explique l'opacité et le flux plus en détail.
+## 2. Ombrer le ruban
 
-## 3. Terminer et exporter
+Sélectionnez **Pinceau de peinture** dans la barre d’outils Outils et
+**Lavis d’aquarelle** dans Ensemble d’outils ([Outils de pinceau](/fr/docs/drawing/brush-tools/)).
+Réglez **Opacité** sur 65 % dans le panneau **Outil**, et peignez les ombres dans
+les courbes du ruban en bleu foncé. Ajoutez ensuite des touches vert sauge avec le
+pinceau **Pinceau**.
 
-Ombrez **Disc** et **Block** de la même manière, chacun avec ses propres calques découpés. L'exemple utilise l'aérographe pour l'ombrage doux sur le disque et le crayon pour les petites hachures crème. Gardez **Line art** au-dessus de tout. Si le bord extérieur d'une forme doit être réparé, peignez sur le masque de cette forme ; si seul l'ombrage est faux, changez le calque d'ombrage. [Masques et découpages](/fr/docs/layers/masks/) montre également comment recolorer l'encre avec le verrouillage alpha.
+## 3. Ajouter un calque de texture
 
-Lorsque vous en êtes satisfait, masquez les calques approximatifs, enregistrez votre fichier `.capy` et [exportez une image](/fr/docs/output/export/) à partager. Ouvrez le fichier exporté une fois pour vérifier qu'il ressemble à ce que vous attendez.
+Avec *Ribbon shading* sélectionné, choisissez de nouveau
+**Calque > Nouveau > Nouveau calque écrêté** et renommez le calque *Ribbon texture*.
+Il se place au-dessus de *Ribbon shading*, dans le même écrêtage. Sélectionnez
+**Crayon** et le pinceau **Crayon**, puis dessinez des hachures et des rehauts crème.
+
+## 4. Ombrer le disque et le bloc
+
+Sélectionnez *Disc*, ajoutez un calque écrêté nommé *Disc shading* et ombrez la
+moitié inférieure du disque à l’**Aérographe**, en terre cuite. Ajoutez un rehaut
+crème en haut à gauche.
+
+*Block shading* se place de la même façon sur *Block* : du bleu foncé le long des
+bords droit et inférieur avec le pinceau **Pinceau**, puis des hachures crème avec
+le pinceau **Crayon**.
+
+![Le panneau Calques avec Ribbon texture et Ribbon shading écrêtés sur Ribbon, et Disc shading et Block shading écrêtés sur leurs bases.](shot:illustration/render-layers)
+
+La liste des calques correspond aux calques terminés présentés dans
+l’[introduction](/fr/docs/illustration/).
+
+## 5. Enregistrer et exporter
+
+Choisissez **Fichier > Enregistrer**, ou appuyez sur **Ctrl+S**, et enregistrez le
+dessin en fichier `.capy` ([Ouvrir et enregistrer](/fr/docs/files/open-save/)).
+Pour exporter un PNG :
+
+1. Choisissez **Fichier > Exporter…**, ou appuyez sur **Ctrl+Maj+E**.
+2. Laissez **Destination** sur **Web / Partage**, et réglez **Format** sur **Image PNG**.
+3. Sélectionnez **Choisir un fichier…**, puis choisissez un dossier et un nom.
+
+Après la première exportation, **Fichier > Exporter à nouveau** écrit le même
+fichier avec les mêmes réglages, sans la boîte de dialogue
+([Exporter des images](/fr/docs/files/export/)).

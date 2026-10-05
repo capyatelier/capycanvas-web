@@ -1,27 +1,63 @@
 ---
 title: "Rendering"
-description: "Aggiungi ombreggiatura e texture sui livelli ritagliati su ciascuna forma, quindi esporta il risultato."
-purpose: "Il rendering è il luogo in cui le forme ottengono la loro luce e ombra. Dipingere l'ombreggiatura sui livelli ritagliati la mantiene automaticamente all'interno di ogni forma e, poiché l'ombreggiatura è separata dal colore di base, puoi regolarla o rifarla senza perdere nulla."
-techniques: ["Aggancia uno strato di ombreggiatura al nastro.", "Controlla la forza dell'ombreggiatura.", "Ombreggia le altre forme, controlla i livelli ed esporta."]
-figure: "1: Trama del nastro e ombreggiatura del nastro sopra il nastro. 2: aggancia al livello sottostante. 3: Opacità del livello per l'intera passata di ombreggiatura."
-related: ["layers/groups", "layers/masks", "output/export"]
-image: {"light": "/assets/guides/illustration-render-light.webp", "dark": "/assets/guides/illustration-render-dark.webp", "alt": "1: Trama del nastro e ombreggiatura del nastro sopra il nastro. 2: aggancia al livello sottostante. 3: Opacità del livello per l'intera passata di ombreggiatura."}
+description: "Fase 4 del tutorial di illustrazione: ombreggiatura e trama su livelli ritagliati su ogni colore base, e un'esportazione PNG."
+related: ["layers/settings", "drawing/brush-tools", "files/open-save", "files/export"]
 ---
 
-## 1. Aggiungi ombreggiatura ritagliata
+Questa fase produce l'ombreggiatura di ogni forma, su livelli ritagliati sul
+suo colore base, e un'esportazione PNG dello studio.
 
-Seleziona **Ribbon**, aggiungi un nuovo livello direttamente sopra di esso e chiamalo **Ribbon shading**. Apri il suo menu e scegli **Layer Settings → Clip to layer below**. Ora dipingi le ombre nelle pieghe del nastro con **Watercolor Wash** e aggiungi qualche accento salvia con **Paintbrush**. I tuoi tratti possono oltrepassare il bordo del nastro, perché è visibile solo la parte all'interno del nastro.
+## 1. Aggiungi un livello ritagliato
 
-Per ora lascia la modalità di fusione del livello di ombreggiatura su **Normal**. Il colore di base rimane al sicuro sul livello della barra multifunzione, quindi la cancellazione dell'ombreggiatura non cancella mai il colore sottostante.
+Seleziona *Ribbon*, poi scegli **Livello > Nuovo > Nuovo livello ritagliato**,
+oppure scegli **Nuovo > Nuovo livello ritagliato** dal menu della riga
+([Impostazioni livello](/it/docs/layers/settings/)). Rinomina il nuovo livello
+*Ribbon shading*.
 
-## 2. Controlla la forza
+![Il menu del livello con Nuovo aperto e Nuovo livello ritagliato al suo interno.](shot:illustration/render-new-menu)
 
-L'opacità del pennello modifica i tratti che stai per dipingere. Lo **opacity of the Ribbon shading layer** cambia tutte le sfumature che hai già dipinto. Se ogni ombra sembra troppo forte, abbassa l'opacità del livello invece di ridipingere.
+*Ribbon shading* appare subito sopra *Ribbon*, e una barra a sinistra delle
+miniature indica il ritaglio. Il ritaglio segue la maschera di *Ribbon*, non il
+verde acqua che riempie l'intero livello.
 
-Per le luci, aggiungi **Ribbon texture** direttamente sopra l'ombreggiatura del nastro e ritaglia anche questo. Usa una piccola matita o un pennello strutturato per alcuni segni leggeri. L'ordine dei livelli ora è Texture nastro, Ombreggiatura nastro, quindi Nastro. [Le impostazioni del pennello](/it/docs/advanced/brush-engine/) spiegano l'opacità e il flusso in modo più dettagliato.
+## 2. Ombreggia il nastro
 
-## 3. Termina ed esporta
+Seleziona **Pennello** nella barra strumenti Strumenti e
+**Lavatura ad acquerello** in Set di strumenti
+([Strumenti pennello](/it/docs/drawing/brush-tools/)). Imposta **Opacità** nel
+pannello **Strumento** al 65% e dipingi in blu scuro le ombre nelle pieghe del
+nastro. Poi aggiungi accenti color salvia con il pennello **Pennello**.
 
-Ombreggia **Disc** e **Block** allo stesso modo, ciascuno con i propri strati ritagliati. L'esempio utilizza l'aerografo per l'ombreggiatura morbida sul disco e la matita per piccoli segni di tratteggio color crema. Tieni **Line art** sopra ogni cosa. Se è necessario fissare il bordo esterno di una forma, dipingi sulla maschera di quella forma; se solo l'ombreggiatura è sbagliata, cambia il livello dell'ombreggiatura. [Maschere e ritaglio](/it/docs/layers/masks/) mostra anche come ricolorare l'inchiostro con il blocco alfa.
+## 3. Aggiungi un livello di trama
 
-Quando sei soddisfatto, nascondi gli strati grezzi, salva il tuo file `.capy` ed [esporta un'immagine](/it/docs/output/export/) da condividere. Apri il file esportato una volta per verificare che abbia l'aspetto previsto.
+Con *Ribbon shading* selezionato, scegli di nuovo
+**Livello > Nuovo > Nuovo livello ritagliato** e rinomina il livello
+*Ribbon texture*. Va sopra *Ribbon shading*, nello stesso ritaglio. Seleziona
+**Matita** e il pennello **Matita**, e disegna tratteggi e luci color crema.
+
+## 4. Ombreggia il disco e il blocco
+
+Seleziona *Disc*, aggiungi un livello ritagliato chiamato *Disc shading* e
+ombreggia la metà inferiore del disco con l'**Aerografo** in terracotta.
+Aggiungi una luce color crema in alto a sinistra.
+
+*Block shading* va su *Block* allo stesso modo: blu scuro lungo il bordo destro e
+quello inferiore con il pennello **Pennello**, poi un tratteggio color crema con
+il pennello **Matita**.
+
+![Il pannello Livelli con Ribbon texture e Ribbon shading ritagliati su Ribbon, e Disc shading e Block shading ritagliati sulle loro basi.](shot:illustration/render-layers)
+
+L'elenco dei livelli corrisponde ai livelli finali dell'[introduzione](/it/docs/illustration/).
+
+## 5. Salva ed esporta
+
+Scegli **File > Salva**, o premi **Ctrl+S**, e salva il disegno come file
+`.capy` ([Aprire e salvare](/it/docs/files/open-save/)). Per esportare un PNG:
+
+1. Scegli **File > Esporta…**, o premi **Ctrl+Maiusc+E**.
+2. Lascia **Destinazione** impostata su **Web / Condivisione** e imposta **Formato** su **Immagine PNG**.
+3. Seleziona **Scegli file…** e scegli una cartella e un nome.
+
+Dopo la prima esportazione, **File > Esporta di nuovo** scrive lo stesso file
+con le stesse impostazioni, senza la finestra di dialogo
+([Esportare immagini](/it/docs/files/export/)).

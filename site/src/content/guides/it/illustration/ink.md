@@ -1,27 +1,47 @@
 ---
-title: "Linea artistica"
-description: "Disegna linee di inchiostro pulite su un nuovo livello sopra lo schizzo sbiadito."
-purpose: "La grafica al tratto è la versione pulita e finale dei tuoi contorni. Disegnarlo sul proprio livello significa che puoi cancellare o ricolorare l'inchiostro senza toccare lo schizzo e successivamente dipingere i colori sotto di esso."
-techniques: ["Sfuma lo schizzo e aggiungi un livello Line art.", "Inchiostra con una penna e ruota la vista per curve difficili.", "Chiudi i contorni di ciascuna forma."]
-figure: "1: Line art sopra lo Sketch sbiadito. 2: controlli di visualizzazione del navigatore. 3: Pennelli penna nel Set strumenti."
-related: ["layers/basics", "advanced/input", "workspace"]
-image: {"light": "/assets/guides/illustration-ink-light.webp", "dark": "/assets/guides/illustration-ink-dark.webp", "alt": "1: Line art sopra lo Sketch sbiadito. 2: controlli di visualizzazione del navigatore. 3: Pennelli penna nel Set strumenti."}
+title: "Inchiostrazione"
+description: "Fase 2 del tutorial di illustrazione: la line art disegnata con G-Pen su un livello sopra lo schizzo sbiadito."
+related: ["layers/panel", "drawing/brush-tools", "start/canvas", "input/pen"]
 ---
 
-## 1. Preparare gli strati
+Questa fase produce la line art su un livello sopra lo schizzo sbiadito.
 
-Seleziona **Sketch** e abbassane l'opacità finché le linee non saranno sbiadite ma comunque facili da seguire. Nascondi **Color rough** per ora. Quindi aggiungi un nuovo livello sopra Sketch, chiamalo **Line art** e assicurati che sia il livello selezionato prima di iniziare l'inchiostrazione.
+## 1. Prepara i livelli
 
-Scegli lo strumento **Pen** e una penna come **G-Pen**. Disegna alcune linee di prova con la pressione abituale e regola le dimensioni finché lo spessore della linea non risulta corretto.
+Nel [pannello Livelli](/it/docs/layers/panel/):
 
-## 2. Inchiostrare il disegno
+1. Seleziona **Nascondi livello** (l'occhio) sulla riga *Color rough*.
+2. Seleziona *Sketch* e imposta **Opacità livello** nell'intestazione del pannello su 22.
+3. Seleziona **Nuovo livello** in fondo al pannello e rinomina il nuovo livello *Line art*.
 
-Traccia i contorni delle tre forme, quindi aggiungi gli scarabocchi sciolti e le brevi linee di tratteggio. Quando risulta difficile disegnare una curva, ruotare la vista con i pulsanti in **Navigator** o con due dita su un touch screen. La rotazione della vista non ruota il disegno, quindi puoi ruotarlo tutte le volte che vuoi.
+![Il pannello Livelli con Line art sopra Sketch al 22% e Color rough nascosto.](shot:illustration/ink-layers)
 
-Usa la Gomma o annulla per correggere gli errori. Se la linea sembra restare indietro rispetto alla penna, le [impostazioni della penna](/it/docs/advanced/input/) possono aiutarti.
+L'elenco dei livelli mostra *Line art*, *Sketch* al 22%, *Color rough*
+(nascosto) e **Carta**.
 
-## 3. Controlla i contorni
+## 2. Inchiostra i contorni
 
-Nascondi Sketch per vedere il tuo inchiostro da solo. Chiudi eventuali piccoli spazi vuoti nei contorni delle tre forme, perché la fase successiva li utilizzerà per selezionare ciascuna forma. Piccoli dettagli all'interno di una forma possono rimanere aperti.
+Seleziona **Penna** nella barra strumenti Strumenti e il pennello
+**G-Pen** in Set di strumenti ([Strumenti pennello](/it/docs/drawing/brush-tools/)),
+e imposta **Dimensioni pennello** su 4,5 px. Su *Line art*, ripassa i tre
+contorni, poi gli scarabocchi e i tratteggi.
 
-La grafica al tratto rimane in cima all'elenco dei livelli per il resto del tutorial, quindi i colori si troveranno sempre sotto di essa. Salva il tuo disegno, quindi continua con [Masking](/it/docs/illustration/mask/).
+![Il pannello Set di strumenti con i pennelli a penna e G-Pen selezionato.](shot:illustration/ink-pens)
+
+Per correggere una linea, premi **Ctrl+Z** per annullare il tratto, oppure premi
+**E** e cancella con la **Gomma**.
+
+Puoi ruotare la vista mentre inchiostri. Scegli
+**Visualizza > Ruota vista di 90° a sinistra** o
+**Visualizza > Ruota vista di 90° a destra**, oppure seleziona i pulsanti di
+rotazione nel pannello **Navigatore**. In Pittura, l'icona del **Navigatore** si
+trova a destra della finestra.
+
+![Il pannello Navigatore con i pulsanti di zoom, rotazione e riflessione.](shot:illustration/ink-navigator)
+
+Per qualsiasi angolo, ruota due dita sulla tela, oppure digita l'angolo nel menu
+dell'indicatore dello zoom, all'estremità destra del piè di pagina.
+**Reimposta rotazione** in quel menu riporta la vista a 0°
+([Visualizzare la tela](/it/docs/start/canvas/)).
+
+Fase successiva: [Colori base](/it/docs/illustration/mask/).

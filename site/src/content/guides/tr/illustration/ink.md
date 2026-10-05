@@ -1,27 +1,47 @@
 ---
-title: "Hat sanatı"
-description: "Soluk çizimin üzerindeki yeni katmana temiz mürekkep çizgileri çizin."
-purpose: "Çizgi sanatı, ana hatlarınızın temiz ve son halidir. Bunu kendi katmanına çizmek, taslağa dokunmadan mürekkebi silebileceğiniz veya yeniden renklendirebileceğiniz ve daha sonra altındaki renkleri boyayabileceğiniz anlamına gelir."
-techniques: ["Çizimi soluklaştırın ve bir Çizgi sanatı katmanı ekleyin.", "Bir kalemle mürekkepleyin ve zorlu eğriler için görünümü döndürün.", "Her şeklin ana hatlarını kapatın."]
-figure: "1: Soluk Sketch'nun üzerindeki çizim. 2: Gezginin görünüm kontrolleri. 3: Araç Setindeki kalem fırçaları."
-related: ["layers/basics", "advanced/input", "workspace"]
-image: {"light": "/assets/guides/illustration-ink-light.webp", "dark": "/assets/guides/illustration-ink-dark.webp", "alt": "1: Soluk Sketch'nun üzerindeki çizim. 2: Gezginin görünüm kontrolleri. 3: Araç Setindeki kalem fırçaları."}
+title: "Çizgi çalışması"
+description: "İllüstrasyon eğitiminin 2. aşaması: soluklaştırılmış eskizin üstündeki bir katmanda G kalem ile çizilen çizgiler."
+related: ["layers/panel", "drawing/brush-tools", "start/canvas", "input/pen"]
 ---
+
+Bu aşamada soluklaştırılmış eskizin üstündeki bir katmanda çizgi çalışması
+oluşur.
 
 ## 1. Katmanları hazırlayın
 
-**Sketch**'yu seçin ve çizgiler soluk ama yine de takip edilmesi kolay hale gelinceye kadar opaklığını azaltın. Şimdilik **Color rough**'yu gizleyin. Ardından Sketch'nun üzerine yeni bir katman ekleyin, buna **Line art** adını verin ve mürekkebi başlatmadan önce bunun seçilen katman olduğundan emin olun.
+[Katmanlar panelinde](/tr/docs/layers/panel/):
 
-**Pen** aracını ve **G-Pen** gibi bir kalemi seçin. Her zamanki basıncınızla birkaç test çizgisi çizin ve çizgi ağırlığı doğru hissedene kadar boyutu ayarlayın.
+1. *Color rough* satırında **Katmanı gizle** düğmesini (göz simgesi) seçin.
+2. *Sketch* katmanını seçin ve panel başlığında **Katman opaklığı** değerini 22 yapın.
+3. Panelin altındaki **Yeni katman** düğmesini seçin ve yeni katmanı *Line art* olarak yeniden adlandırın.
 
-## 2. Çizimi mürekkepleyin
+![%22 opaklıktaki Sketch üstünde Line art ve gizli Color rough ile Katmanlar paneli.](shot:illustration/ink-layers)
 
-Üç şeklin ana hatlarını takip edin, ardından gevşek karalamalar ve kısa tarama çizgileri ekleyin. Bir eğri çizmenin zor olduğu durumlarda, **Navigator**'daki düğmeleri kullanarak veya dokunmatik ekranda iki parmağınızı kullanarak görünümü döndürün. Görünümü döndürmek çizimi döndürmez, dolayısıyla onu istediğiniz sıklıkta çevirebilirsiniz.
+Katman listesinde *Line art*, %22 opaklıkta *Sketch*, *Color rough* (gizli) ve
+**Kâğıt** yer alır.
 
-Hataları düzeltmek için Silgiyi kullanın veya geri alın. Çizgi kaleminizin gerisinde kalıyor gibi görünüyorsa [pen settings](/tr/docs/advanced/input/) yardımcı olabilir.
+## 2. Dış çizgileri mürekkepleyin
 
-## 3. Ana hatları kontrol edin
+Araçlar çubuğunda **Kalem** düğmesini, Araç setinde **G kalem** fırçasını seçin
+([Fırça araçları](/tr/docs/drawing/brush-tools/)) ve **Fırça boyutu** değerini
+4,5 px yapın. *Line art* katmanında üç dış çizgiyi, ardından karalamaları ve
+tarama çizgilerini çizin.
 
-Mürekkebinize kendi başınıza bakmak için Sketch'yu gizleyin. Üç şeklin ana hatlarındaki küçük boşlukları kapatın çünkü bir sonraki aşamada her şekli seçmek için bunları kullanırız. Bir şeklin içindeki küçük ayrıntılar açık kalabilir.
+![Kalem fırçaları ve seçili G kalem ile Araç seti paneli.](shot:illustration/ink-pens)
 
-Çizgi sanatı, eğitimin geri kalanı boyunca katman listesinin en üstünde kalır, böylece renkler her zaman onun altında kalır. Çiziminizi kaydedin ve ardından [Masking](/tr/docs/illustration/mask/).jpg] işlemine devam edin.
+Bir çizgiyi düzeltmek için fırça darbesini geri almak üzere **Ctrl+Z** tuşlarına
+basın veya **E** tuşuna basıp **Silgi** ile silin.
+
+Mürekkeplerken görünümü döndürebilirsiniz. **Görünüm > Görünümü 90° sola döndür**
+veya **Görünüm > Görünümü 90° sağa döndür** komutunu seçin ya da **Gezgin**
+panelindeki döndürme düğmelerini seçin. Boya'da **Gezgin** simgesi
+pencerenin sağındadır.
+
+![Yakınlaştırma, döndürme ve çevirme düğmeleriyle Gezgin paneli.](shot:illustration/ink-navigator)
+
+Herhangi bir açı için tuvalde iki parmağınızı döndürün veya açıyı alt çubuğun
+sağ ucundaki yakınlaştırma göstergesinin menüsüne yazın. O menüdeki
+**Döndürmeyi sıfırla** görünümü 0°'ye döndürür
+([Tuvali görüntüleme](/tr/docs/start/canvas/)).
+
+Sonraki aşama: [Temel renkler](/tr/docs/illustration/mask/).

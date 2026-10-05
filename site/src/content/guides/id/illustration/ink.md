@@ -1,27 +1,44 @@
 ---
-title: "Seni garis"
-description: "Gambarkan garis tinta bersih pada layer baru di atas sketsa yang pudar."
-purpose: "Seni garis adalah versi akhir yang bersih dari kerangka Anda. Menggambarnya pada lapisannya sendiri berarti Anda dapat menghapus atau mewarnai ulang tinta tanpa menyentuh sketsa, dan kemudian melukis warna di bawahnya."
-techniques: ["Memudarkan sketsa dan menambahkan layer seni Garis.", "Tinta dengan pena dan putar tampilan untuk kurva yang rumit.", "Tutup garis luar setiap bentuk."]
-figure: "1: Seni garis di atas Sketch yang memudar. 2: Kontrol tampilan Navigator. 3: Kuas pena di Set Alat."
-related: ["layers/basics", "advanced/input", "workspace"]
-image: {"light": "/assets/guides/illustration-ink-light.webp", "dark": "/assets/guides/illustration-ink-dark.webp", "alt": "1: Seni garis di atas Sketch yang memudar. 2: Kontrol tampilan Navigator. 3: Kuas pena di Set Alat."}
+title: "Line art"
+description: "Tahap 2 tutorial ilustrasi: line art yang digambar dengan Pena G di lapisan di atas sketsa yang dipudarkan."
+related: ["layers/panel", "drawing/brush-tools", "start/canvas", "input/pen"]
 ---
 
-## 1. Siapkan lapisannya
+Tahap ini menghasilkan line art di lapisan di atas sketsa yang dipudarkan.
 
-Pilih **Sketch** dan turunkan opacitynya hingga garisnya samar namun tetap mudah diikuti. Sembunyikan **Color rough** untuk saat ini. Kemudian tambahkan layer baru di atas Sketch, beri nama **Line art**, dan pastikan itu adalah layer yang dipilih sebelum Anda mulai meninta.
+## 1. Siapkan lapisan
 
-Pilih alat **Pen** dan pena seperti **G-Pen**. Gambarlah beberapa garis uji dengan tekanan biasa, dan sesuaikan ukurannya hingga berat garis terasa pas.
+Di [panel Lapisan](/id/docs/layers/panel/):
 
-## 2. Tinta gambarnya
+1. Pilih **Sembunyikan lapisan** (ikon mata) di baris *Color rough*.
+2. Pilih *Sketch* lalu setel **Opasitas lapisan** di kepala panel ke 22.
+3. Pilih **Lapisan baru** di bagian bawah panel, lalu ganti nama lapisan baru itu menjadi *Line art*.
 
-Jiplak garis luar ketiga bentuk tersebut, lalu tambahkan coretan longgar dan garis arsiran pendek. Jika kurva terasa canggung untuk digambar, putar tampilan dengan tombol di **Navigator**, atau dengan dua jari di layar sentuh. Memutar tampilan tidak akan merotasi gambar, jadi Anda dapat memutarnya sesering yang Anda suka.
+![Panel Lapisan dengan Line art di atas Sketch pada 22%, dan Color rough tersembunyi.](shot:illustration/ink-layers)
 
-Gunakan Penghapus atau batalkan untuk memperbaiki kesalahan. Jika garis tampak tertinggal di belakang pena Anda, [pen settings](/id/docs/advanced/input/) dapat membantu.
+Daftar lapisan berisi *Line art*, *Sketch* pada 22%, *Color rough* (tersembunyi), dan
+**Kertas**.
 
-## 3. Periksa garis besarnya
+## 2. Tintai garis luar
 
-Sembunyikan Sketch untuk melihat sendiri tinta Anda. Tutup celah kecil apa pun pada garis luar ketiga bentuk tersebut, karena tahap selanjutnya akan menggunakannya untuk memilih setiap bentuk. Detail kecil di dalam suatu bentuk bisa tetap terbuka.
+Pilih **Pena** di bilah alat Alat dan kuas **Pena G** di Set Alat
+([Alat kuas](/id/docs/drawing/brush-tools/)), lalu setel **Ukuran kuas** ke 4.5 px.
+Di *Line art*, telusuri ketiga garis luar, lalu coretan dan arsirannya.
 
-Seni garis tetap berada di bagian atas daftar lapisan selama sisa tutorial, sehingga warna akan selalu berada di bawahnya. Simpan gambar Anda, lalu lanjutkan ke [Masking](/id/docs/illustration/mask/).
+![Panel Set Alat dengan kuas-kuas pena dan Pena G terpilih.](shot:illustration/ink-pens)
+
+Untuk memperbaiki garis, tekan **Ctrl+Z** untuk mengurungkan goresan, atau tekan **E**
+lalu hapus dengan **Penghapus**.
+
+Anda dapat memutar tampilan selama menintai. Pilih **Tampilan > Putar tampilan 90° ke
+kiri** atau **Tampilan > Putar tampilan 90° ke kanan**, atau pilih tombol putar di
+panel **Navigator**. Di Lukis, ikon **Navigator** ada di sisi kanan
+jendela.
+
+![Panel Navigator dengan tombol zum, putar, dan balik.](shot:illustration/ink-navigator)
+
+Untuk sudut berapa pun, putar dua jari di kanvas, atau ketik sudutnya di menu
+indikator zum di ujung kanan bagian bawah jendela. **Atur ulang rotasi** di menu itu
+mengembalikan tampilan ke 0° ([Melihat kanvas](/id/docs/start/canvas/)).
+
+Tahap berikutnya: [Warna dasar](/id/docs/illustration/mask/).

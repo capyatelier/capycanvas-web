@@ -150,7 +150,8 @@ async function files(dir) { const entries=await readdir(dir,{withFileTypes:true}
 test('every local link and referenced asset resolves in the published output',async()=>{
   for(const path of (await files(root)).filter(p=>p.endsWith('.html'))) {
     const html=await readFile(path,'utf8');
-    for(const [,raw] of html.matchAll(/(?:href|src|srcset)="([^"#]+)"/g)) {
+    const references=[...html.matchAll(/(?:href|src)="([^"#]+)"/g)].map(([,raw])=>raw).concat([...html.matchAll(/srcset="([^"]+)"/g)].flatMap(([,set])=>set.split(',').map(entry=>entry.trim().split(/\s+/)[0])));
+    for(const raw of references) {
       if(!raw.startsWith('/'))continue;
       const pathname=new URL(raw,'https://capycanvas.art').pathname;
       const target=join(root,pathname,pathname.endsWith('/')?'index.html':'');
@@ -169,7 +170,7 @@ test('real screenshots are distinct, compressed WebP images with provenance',asy
   const images=await Promise.all(['light','dark'].map(t=>readFile(join(root,`assets/guides/illustration-${t}.webp`))));
   for(const data of images) { assert.equal(data.subarray(0,4).toString(),'RIFF'); assert.equal(data.subarray(8,12).toString(),'WEBP'); assert.ok(data.length>10000&&data.length<900000); }
   assert.notDeepEqual(images[0],images[1]);
-  const capture=JSON.parse(await read('assets/capture.json')); assert.match(capture.revision,/^[a-f0-9]{40}$/); assert.match(capture.artwork,/Watercolor Wash/);
+  const capture=JSON.parse(await read('assets/capture.json')); assert.match(capture.revision,/^[a-f0-9]{40}$/); assert.match(capture.artwork,/abstract study/);
 });
 test('favicon cache version matches the shipped icon',async()=>{
   const hash=createHash('sha256').update(await readFile(join(root,'assets/favicon.png'))).digest('hex').slice(0,12);

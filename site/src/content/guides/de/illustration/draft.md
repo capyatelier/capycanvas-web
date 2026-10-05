@@ -1,27 +1,70 @@
 ---
 title: "Skizzieren"
-description: "Zeichnen Sie eine Bleistiftskizze und probieren Sie die Farben auf einer separaten Ebene aus."
-purpose: "In einer Skizze erarbeiten Sie die Formen und in einer Farbskizze probieren Sie die Farben aus. Wenn Sie sie auf separaten Ebenen aufbewahren, können Sie die Farben beliebig oft ändern, ohne Ihre Bleistiftlinien zu berühren."
-techniques: ["Zeichnen Sie mit Bleistift und Stiftdruck.", "Wählen Sie einen Teil der Skizze aus und fixieren Sie ihn.", "Tragen Sie grobe Farben auf eine Ebene unterhalb der Skizze auf."]
-figure: "1: Bleistiftpinsel. 2: Sketch oben Farbe grob in Schichten. 3: Bleistiftgröße und Deckkraft."
-related: ["tools/selections", "tools/transforms", "painting/color"]
-image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/assets/guides/illustration-draft-dark.webp", "alt": "1: Bleistiftpinsel. 2: Sketch oben Farbe grob in Schichten. 3: Bleistiftgröße und Deckkraft."}
+description: "Phase 1 des Illustrations-Tutorials: eine mit Lassofüllung angelegte Farbskizze und darüber eine Bleistiftskizze."
+related: ["files/new", "drawing/fill", "drawing/brush-tools", "transform/move-transform"]
 ---
 
-## 1. Zeichnen Sie die Skizze
+In dieser Phase entstehen eine Farbskizze der drei Formen und auf einer Ebene
+darüber eine Bleistiftskizze.
 
-Fügen Sie eine neue Ebene hinzu und nennen Sie sie **Sketch**. Wählen Sie das Werkzeug **Pencil** und einen der Stifte im Werkzeugset. Beginnen Sie mit leichten Linien, um die Scheibe, das gebogene Band und den geneigten Block zu finden, und drücken Sie dann fester, um die Umrisse zu festigen, die Sie beibehalten möchten. Legen Sie die Größe des Stifts im Werkzeugfenster fest.
+## 1. Zeichnung erstellen
 
-Lassen Sie um die Formen herum etwas Platz. Dies erleichtert die späteren Phasen, da Sie klar erkennen können, wo jede Form endet. Wählen Sie ab und zu **Flip view horizontally** in der oberen Symbolleiste aus, um die Skizze gespiegelt anzuzeigen. Proportionsfehler sind so viel leichter zu erkennen.
+1. Wählen Sie im Arbeitsbereichswechsler in der Titelleiste **Malen** aus.
+2. Wählen Sie **Datei > Neu…** oder drücken Sie **Strg+N** ([Neue Zeichnungen](/de/docs/files/new/)).
+3. Stellen Sie im Dialog **Neue Zeichnung** **Breite (px)** und **Höhe (px)** auf 1200 und wählen Sie **Erstellen** aus.
 
-## 2. Reparieren Sie ein Teil, das nicht ganz stimmt
+![Der Dialog Neue Zeichnung mit Breite (px) und Höhe (px) auf 1200.](shot:illustration/new-drawing)
 
-Wenn sich ein Teil an der falschen Stelle befindet oder die falsche Größe hat, müssen Sie es nicht neu zeichnen. Wählen Sie **Lasso selection** und zeichnen Sie eine Schleife um dieses Teil. Wählen Sie dann **Scale / rotate**, ziehen Sie das Teil an seinen Platz oder ändern Sie seine Größe und wählen Sie **Apply transform** aus. Wählen Sie **Select → Deselect pixels**, bevor Sie mit dem Zeichnen fortfahren.
+Die Zeichnung hat zwei Ebenen: **Aktuelle Tinte** über **Papier**.
+Doppelklicken Sie im Bedienfeld Ebenen auf **Aktuelle Tinte** und benennen Sie
+die Ebene in *Color rough* um.
 
-In den Anleitungen [selection](/de/docs/tools/selections/) und [transform](/de/docs/tools/transforms/)] werden diese Tools ausführlicher erläutert. Wenn eine Änderung schief geht, machen Sie sie einfach rückgängig.
+## 2. Farben anlegen
 
-## 3. Probieren Sie die Farben aus
+Das Werkzeug **Lassofüllung** füllt eine Freihandform in einem Strich mit der
+aktuellen Farbe ([Füllwerkzeuge](/de/docs/drawing/fill/)). Wählen Sie in der
+Werkzeugleiste Werkzeuge **Füllung** aus und dann im Bedienfeld **Werkzeugsatz**
+**Lassofüllung**.
 
-Fügen Sie eine weitere Ebene mit dem Namen **Color rough** hinzu und ziehen Sie sie unter Sketch. Wählen Sie für jede Form eine Farbe, zeichnen Sie mit **Lasso selection** um die Form und wählen Sie **Edit → Fill selection**. Im Beispiel werden Blaugrün für das Band, Ocker für die Scheibe und Terrakotta für den Block verwendet. Da es sich um grobe Farben handelt, müssen die Kanten nicht sauber sein. Reduzieren Sie die Deckkraft der Ebene etwas, damit die Bleistiftlinien gut sichtbar bleiben.
+![Das Bedienfeld Werkzeugsatz mit ausgewählter Lassofüllung.](shot:illustration/draft-lasso-fill)
 
-Blenden Sie „Color Rough“ für einen Moment aus, wenn Sie die Skizze einzeln sehen möchten. Speichern Sie Ihre Zeichnung und fahren Sie dann mit [Strichzeichnung](/de/docs/illustration/ink/).] fort.
+Wählen Sie für jede Form ihre Farbe im Bedienfeld **Farbe** und umfahren Sie
+ihren Umriss in einem Strich. Beginnen Sie mit dem Block unten links in
+Terrakotta, dann folgt die Scheibe darüber in Ocker und zuletzt das Band rechts
+in Blaugrün. Jede Form überdeckt Teile der vorherigen Formen.
+
+Stellen Sie **Ebenendeckkraft** im Kopfbereich des Bedienfelds Ebenen auf 50
+([Bedienfeld Ebenen](/de/docs/layers/panel/)). Die Zeile *Color rough* zeigt
+unter dem Ebenennamen „50%“.
+
+## 3. Skizze zeichnen
+
+Wählen Sie unten im Bedienfeld Ebenen **Neue Ebene** aus und benennen Sie die
+neue Ebene in *Sketch* um. Sie erscheint direkt über *Color rough*.
+
+Wählen Sie in der Werkzeugleiste Werkzeuge **Bleistift** aus und im
+Werkzeugsatz den Pinsel **Bleistift** ([Pinselwerkzeuge](/de/docs/drawing/brush-tools/)).
+Stellen Sie **Pinselgröße** im Bedienfeld **Werkzeug** auf 8 px.
+
+![Das Bedienfeld Werkzeugsatz mit den Bleistiftpinseln und ausgewähltem Bleistift.](shot:illustration/draft-pencils)
+
+Zeichnen Sie die drei Umrisse und danach die Kritzeleien und Schraffuren. Das
+Beispiel hat außerdem Konstruktionslinien in Salbeigrün, mit 5 px gezeichnet.
+
+Die Ebenenliste zeigt *Sketch*, *Color rough* und **Papier**.
+
+## 4. Teil der Skizze transformieren
+
+Sie können einen ausgewählten Teil der Skizze mit **Transformieren** verschieben,
+skalieren oder drehen ([Verschieben und Transformieren](/de/docs/transform/move-transform/)).
+Das Beispiel transformiert die Schleife unten rechts.
+
+1. Drücken Sie **M**, oder wählen Sie in der Werkzeugleiste Werkzeuge in der Gruppe **Auswahl** die **Lassoauswahl** aus, und ziehen Sie eine Schleife um den Teil.
+2. Wählen Sie in der Auswahlleiste **Transformieren** aus oder drücken Sie **Strg+T**.
+3. Ziehen Sie an den Griffen.
+4. Wählen Sie in der Leiste **Anwenden** aus oder drücken Sie **Eingabe**.
+5. Wählen Sie **Auswahl > Pixelauswahl aufheben** oder drücken Sie **Strg+D**.
+
+![Die Transformationsleiste mit Abbrechen und Anwenden neben einem ausgewählten Teil der Skizze.](shot:illustration/draft-transform)
+
+Nächste Phase: [Lineart](/de/docs/illustration/ink/).

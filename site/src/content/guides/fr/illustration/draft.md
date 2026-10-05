@@ -1,27 +1,70 @@
 ---
 title: "Esquisse"
-description: "Dessinez un croquis au crayon et essayez les couleurs sur un calque séparé."
-purpose: "Un croquis est l'endroit où vous travaillez les formes, et un brouillon de couleur est l'endroit où vous essayez les couleurs. En les gardant sur des calques séparés, vous pouvez changer les couleurs aussi souvent que vous le souhaitez sans toucher aux traits de votre crayon."
-techniques: ["Dessinez avec un crayon et une pression de stylo.", "Sélectionnez et corrigez une partie de l'esquisse.", "Mettez des couleurs brutes sur un calque sous l'esquisse."]
-figure: "1 : Pinceaux à crayons. 2 : Sketch ci-dessus Couleur brute en couches. 3 : Taille du crayon et opacité."
-related: ["tools/selections", "tools/transforms", "painting/color"]
-image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/assets/guides/illustration-draft-dark.webp", "alt": "1 : Pinceaux à crayons. 2 : Sketch ci-dessus Couleur brute en couches. 3 : Taille du crayon et opacité."}
+description: "Étape 1 du tutoriel d’illustration : une ébauche couleur tracée avec Remplissage au lasso et une esquisse au crayon au-dessus."
+related: ["files/new", "drawing/fill", "drawing/brush-tools", "transform/move-transform"]
 ---
 
-## 1. Dessinez le croquis
+Cette étape produit une ébauche couleur des trois formes et une esquisse au crayon
+sur un calque placé au-dessus.
 
-Ajoutez un nouveau calque et nommez-le **Sketch**. Choisissez l'outil **Pencil** et l'un des crayons du jeu d'outils. Commencez par des traits légers pour retrouver le disque, le ruban courbé et le bloc incliné, puis appuyez plus fort pour raffermir les contours que vous souhaitez conserver. Définissez la taille du crayon dans le panneau Outils.
+## 1. Créer le dessin
 
-Laissez un peu d'espace autour des formes. Cela facilite les étapes ultérieures, car vous pourrez voir clairement où se termine chaque forme. De temps en temps, sélectionnez **Flip view horizontally** dans la barre d'outils supérieure pour voir l'esquisse en miroir ; les erreurs proportionnelles sont beaucoup plus faciles à repérer de cette façon.
+1. Sélectionnez **Peinture** dans le sélecteur d’espaces de travail de la barre de titre.
+2. Choisissez **Fichier > Nouveau…** ou appuyez sur **Ctrl+N** ([Nouveaux dessins](/fr/docs/files/new/)).
+3. Dans la boîte de dialogue **Nouveau dessin**, réglez **Largeur (px)** et **Hauteur (px)** sur 1200, puis sélectionnez **Créer**.
 
-## 2. Réparez une pièce qui ne va pas tout à fait
+![La boîte de dialogue Nouveau dessin avec Largeur (px) et Hauteur (px) réglées sur 1200.](shot:illustration/new-drawing)
 
-Si une pièce est au mauvais endroit ou à la mauvaise taille, vous n'avez pas besoin de la redessiner. Choisissez **Lasso selection** et tracez une boucle autour de cette pièce. Choisissez ensuite **Scale / rotate**, faites glisser la pièce ou redimensionnez-la, puis sélectionnez **Apply transform**. Choisissez **Select → Deselect pixels** avant de continuer à dessiner.
+Le dessin contient deux calques : **Encre actuelle** au-dessus de **Papier**.
+Double-cliquez sur **Encre actuelle** dans le panneau Calques et renommez le calque
+*Color rough*.
 
-Les guides [selection](/fr/docs/tools/selections/) et [transform](/fr/docs/tools/transforms/) expliquent ces outils plus en détail. Si une modification échoue, annulez-la simplement.
+## 2. Poser les couleurs
 
-## 3. Essayez les couleurs
+L’outil **Remplissage au lasso** remplit une forme tracée à main levée avec la
+couleur actuelle, en un seul trait ([Outils de remplissage](/fr/docs/drawing/fill/)).
+Sélectionnez **Remplissage** dans la barre d’outils Outils, puis **Remplissage au lasso**
+dans le panneau **Ensemble d’outils**.
 
-Ajoutez un autre calque nommé **Color rough** et faites-le glisser sous Sketch. Pour chaque forme, choisissez une couleur, dessinez autour de la forme avec **Lasso selection** et choisissez **Edit → Fill selection**. L'exemple utilise du bleu sarcelle pour le ruban, de l'ocre pour le disque et de la terre cuite pour le bloc. Ce sont des couleurs grossières, les bords n'ont donc pas besoin d'être nets. Réduisez un peu l'opacité du calque pour que les lignes de crayon restent faciles à voir.
+![Le panneau Ensemble d’outils avec Remplissage au lasso sélectionné.](shot:illustration/draft-lasso-fill)
 
-Masquez la couleur approximative pendant un moment chaque fois que vous souhaitez voir l'esquisse seule. Enregistrez votre dessin, puis passez à [Dessin au trait](/fr/docs/illustration/ink/).
+Pour chaque forme, choisissez sa couleur dans le panneau **Couleur** et tracez son
+contour d’un seul trait. Commencez par le bloc en bas à gauche, en terre cuite,
+puis le disque au-dessus, en ocre, et terminez par le ruban à droite, en bleu
+canard. Chaque forme recouvre en partie les précédentes.
+
+Réglez **Opacité du calque** sur 50 dans l’en-tête du panneau Calques
+([Panneau Calques](/fr/docs/layers/panel/)). La ligne *Color rough* affiche « 50% »
+sous le nom du calque.
+
+## 3. Dessiner l’esquisse
+
+Sélectionnez **Nouveau calque** en bas du panneau Calques et renommez le nouveau
+calque *Sketch*. Il apparaît juste au-dessus de *Color rough*.
+
+Sélectionnez **Crayon** dans la barre d’outils Outils et le pinceau **Crayon** dans
+Ensemble d’outils ([Outils de pinceau](/fr/docs/drawing/brush-tools/)). Réglez
+**Taille du pinceau** sur 8 px dans le panneau **Outil**.
+
+![Le panneau Ensemble d’outils avec les pinceaux crayon et Crayon sélectionné.](shot:illustration/draft-pencils)
+
+Dessinez les trois contours, puis les gribouillis et les hachures. L’exemple
+comporte aussi des lignes de construction vert sauge, tracées à 5 px.
+
+La liste des calques affiche *Sketch*, *Color rough* et **Papier**.
+
+## 4. Transformer une partie de l’esquisse
+
+Vous pouvez déplacer, mettre à l’échelle ou faire pivoter une partie sélectionnée
+de l’esquisse avec **Transformer** ([Déplacer et transformer](/fr/docs/transform/move-transform/)).
+L’exemple transforme la boucle en bas à droite.
+
+1. Appuyez sur **M**, ou sélectionnez **Sélection au lasso** dans le groupe **Sélection** de la barre d’outils Outils, et tracez une boucle autour de la partie.
+2. Sélectionnez **Transformer** dans la barre de sélection, ou appuyez sur **Ctrl+T**.
+3. Faites glisser les poignées.
+4. Sélectionnez **Appliquer** dans la barre, ou appuyez sur **Entrée**.
+5. Choisissez **Sélection > Désélectionner les pixels**, ou appuyez sur **Ctrl+D**.
+
+![La barre de transformation avec Annuler et Appliquer à côté d’une partie sélectionnée de l’esquisse.](shot:illustration/draft-transform)
+
+Étape suivante : [Encrage](/fr/docs/illustration/ink/).

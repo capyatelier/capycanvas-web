@@ -1,26 +1,59 @@
 ---
 title: "일러스트 튜토리얼"
-description: "연필 스케치부터 마무리 음영까지, 작은 추상 습작을 그립니다."
-purpose: "이 튜토리얼에서는 작은 그림 한 장을 처음부터 끝까지 그려 봅니다. 단순한 추상 도형을 사용하므로, 작업을 단계와 레이어로 나누는 방법에 집중할 수 있습니다. 단계마다 자체 레이어를 추가하기 때문에, 나머지를 다시 하지 않고도 한 부분으로 돌아가 바꿀 수 있습니다."
-techniques: ["스케치하고 색을 시험해 봅니다.", "스케치 위에 깔끔한 선화를 그립니다.", "도형마다 마스크가 있는 색 레이어를 만듭니다.", "각 도형 안에 음영을 넣고 결과를 내보냅니다."]
-figure: "선화, 마스크를 적용한 색, 음영이 각각 별도의 레이어에 있는 완성 예제."
-related: ["quickstart", "workspace", "tools/files"]
 navTitle: "소개"
-image: {"light": "/assets/guides/illustration-light.webp", "dark": "/assets/guides/illustration-dark.webp", "alt": "선화, 마스크를 적용한 색, 음영이 각각 별도의 레이어에 있는 완성 예제."}
+description: "일러스트 튜토리얼: 페인팅 작업 영역에서 컬러 러프부터 PNG 내보내기까지 네 단계로 추상 습작을 그립니다."
+related: ["start/workspaces", "layers/panel", "layers/masks", "files/open-save"]
 ---
 
-## 준비하기
+[페인팅](/ko/docs/start/workspaces/) 작업 영역에서 네 단계에 걸쳐 추상 습작을 그립니다.
+단계마다 레이어가 추가되며, 병합하는 레이어는 없습니다.
 
-아직 펜을 확인하지 않았다면 [빠른 시작](/ko/docs/quickstart/)부터 진행하세요. 그런 다음 브러시, 색상, 레이어가 모두 화면에 보이도록 **Paint**를 선택합니다. 예제를 따라 하려면 약 **1200 × 1200** 픽셀 크기의 새 그림을 만드세요. 원한다면 자신만의 소재를 그려도 됩니다.
+![캔버스에 완성된 추상 습작이 있고 레이어 패널에 그 레이어가 표시된 페인팅 작업 영역.](shot:illustration/overview)
 
-예제는 휘어진 리본, 원, 기울어진 사각형이라는 세 도형이 서로 겹쳐 있고, 그 주위에 자유로운 낙서가 몇 개 있는 그림입니다. 색은 청록색, 세이지 그린, 황토색, 테라코타를 쓰고, 선은 짙은 파란색, 하이라이트는 크림색입니다. 도형마다 이름을 붙인 레이어가 따로 있어서 무엇이 어디에 속하는지 쉽게 알 수 있습니다.
+## 습작
 
-## 네 단계
+습작은 세 도형이 겹쳐 있는 1200 × 1200 그림입니다. 도형은 휘어진 리본, 원반,
+기울어진 블록입니다. 도형 위와 주변에 느슨한 낙서와 해칭 자국이 있습니다.
 
-튜토리얼은 [스케치](/ko/docs/illustration/draft/), 선화, 마스킹, 렌더링의 네 단계로 이루어지며, 모두 같은 그림에서 진행합니다. 각 단계는 이전 단계를 대체하지 않고 그 위에 새 레이어를 더합니다. 스케치와 컬러 러프는 숨긴 뒤에도 남겨 두는 것이 좋습니다. 나중에 다시 참고하고 싶어질 수도 있기 때문입니다.
+## 단계
 
-## 예제 파일 사용하기
+1. [스케치](/ko/docs/illustration/draft/): 컬러 러프와 연필 스케치.
+2. [선화](/ko/docs/illustration/ink/): 흐리게 한 스케치 위의 잉크 선.
+3. [밑색](/ko/docs/illustration/mask/): 도형마다 마스크한 색 레이어.
+4. [렌더링](/ko/docs/illustration/render/): 클리핑 레이어의 명암과 PNG 내보내기.
 
-특정 단계부터 시작하고 싶다면 저장된 <a href="/assets/examples/01-sketch.capy" download>스케치</a>, <a href="/assets/examples/02-line-art.capy" download>선화</a>, <a href="/assets/examples/03-base-colors.capy" download>밑색</a>, <a href="/assets/examples/04-finished.capy" download>완성 그림</a> 파일을 <strong>File → Open…</strong>으로 여세요. 사진 편집을 연습할 수 있는 [완성 이미지 PNG](/assets/examples/abstract-study.png)도 있습니다.
+## 완성된 레이어
 
-예제 파일에는 스크린샷에서 보는 것과 같은 레이어와 마스크가 들어 있습니다. 원본을 계속 쓸 수 있도록, 수정하기 전에 자신의 사본을 저장하세요.
+완성된 그림에는 위에서부터 다음 레이어가 있습니다.
+
+| 레이어 | 내용 |
+| --- | --- |
+| *Line art* | 잉크 선 |
+| *Ribbon texture* | 크림색 해칭과 하이라이트, *Ribbon*에 클리핑 |
+| *Ribbon shading* | 그림자와 세이지색 포인트, *Ribbon*에 클리핑 |
+| *Ribbon* | 청록색, 리본 모양으로 마스크 |
+| *Disc shading* | 명암과 하이라이트, *Disc*에 클리핑 |
+| *Disc* | 황토색, 원반 모양으로 마스크 |
+| *Block shading* | 명암과 해칭, *Block*에 클리핑 |
+| *Block* | 테라코타색, 블록 모양으로 마스크 |
+| *Sketch* | 불투명도 22%의 연필 선, 숨김 |
+| *Color rough* | 불투명도 50%의 평면 색, 숨김 |
+| **종이** | 흰색 |
+
+## 예제 파일
+
+어느 단계의 끝에서든 시작할 수 있습니다. 해당 단계의 파일을 다운로드하고
+**파일 > 열기…** 명령을 선택하거나 **Ctrl+O** 키를 누른 다음 파일을 선택합니다. 그림은
+별도의 탭에 열립니다.
+
+| 단계 | 파일 |
+| --- | --- |
+| 1. 스케치 | <a href="/assets/examples/01-sketch.capy" download>01-sketch.capy</a> |
+| 2. 선화 | <a href="/assets/examples/02-line-art.capy" download>02-line-art.capy</a> |
+| 3. 밑색 | <a href="/assets/examples/03-base-colors.capy" download>03-base-colors.capy</a> |
+| 4. 렌더링 | <a href="/assets/examples/04-finished.capy" download>04-finished.capy</a> |
+
+완성된 습작을 PNG로 내보낸 파일은
+<a href="/assets/examples/abstract-study.png" download>abstract-study.png</a>입니다.
+
+첫 단계: [스케치](/ko/docs/illustration/draft/).

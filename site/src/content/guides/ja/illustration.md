@@ -1,26 +1,54 @@
 ---
-title: "イラスト制作チュートリアル"
-description: "鉛筆の下描きから陰影の仕上げまで、小さな抽象画を描きます。"
-purpose: "このチュートリアルでは、1枚の小さな絵を最初から最後まで描いていきます。シンプルな抽象的な形を使うので、作業を工程とレイヤーに分ける方法に集中できます。工程ごとに専用のレイヤーを追加していくため、残りをやり直すことなく、あとから一部だけを戻って変更できます。"
-techniques: ["下描きをして、色を試します。", "下描きの上にきれいな線画を描きます。", "それぞれの形に、マスク付きの専用の色レイヤーを作ります。", "各形の内側に陰影を付け、結果を書き出します。"]
-figure: "完成した作例。線画、マスク付きの色、陰影をそれぞれ別のレイヤーに分けています。"
-related: ["quickstart", "workspace", "tools/files"]
+title: "イラストのチュートリアル"
 navTitle: "はじめに"
-image: {"light": "/assets/guides/illustration-light.webp", "dark": "/assets/guides/illustration-dark.webp", "alt": "完成した作例。線画、マスク付きの色、陰影をそれぞれ別のレイヤーに分けています。"}
+description: "「ペイント」ワークスペースで、色ラフからPNGの書き出しまで4つの段階で抽象的な習作を描く、イラストのチュートリアルです。"
+related: ["start/workspaces", "layers/panel", "layers/masks", "files/open-save"]
 ---
 
-## 準備する
+[「ペイント」](/ja/docs/start/workspaces/)ワークスペースで、抽象的な習作を4つの段階で描きます。各段階でレイヤーを追加し、レイヤーは1枚も結合しません。
 
-まだペンを確認していない場合は、[クイックスタート](/ja/docs/quickstart/)から始めましょう。次に**Paint**を選び、ブラシ、色、レイヤーがすべて画面に表示されるようにします。作例と同じように進める場合は、約**1200 × 1200**ピクセルの新しいドキュメントを作成します。好みに応じて、自分で選んだ題材を描いてもかまいません。
+![「ペイント」ワークスペース。キャンバスに完成した抽象的な習作、レイヤーパネルにそのレイヤーが表示されています。](shot:illustration/overview)
 
-作例は、曲がったリボン、円、傾いた四角形という重なり合う3つの形と、その周りのいくつかの自由な走り書きでできています。色は青緑、セージグリーン、黄土色、テラコッタで、線には濃い青、ハイライトにはクリーム色を使っています。形ごとに名前付きのレイヤーを用意するので、どのレイヤーに何が描かれているかがひと目で分かります。
+## 習作
 
-## 4つの工程
+習作は1200 × 1200の作品で、曲がったリボン、円盤、傾いたブロックの3つの形が重なっています。形の上と周りには、ラフな走り描きとハッチングがあります。
 
-チュートリアルは、[下描き](/ja/docs/illustration/draft/)、線画、マスク作成、塗り込みの4つの工程からなり、すべて同じドキュメントで進めます。各工程では、前の工程のレイヤーを置き換えるのではなく、その上に新しいレイヤーを追加していきます。下描きと色の検討は、非表示にしたあとも残しておくのがおすすめです。あとで見返したくなるかもしれないからです。
+## 段階
 
-## 作例ファイルを使う
+1. [下描き](/ja/docs/illustration/draft/)：色ラフと鉛筆の下描き。
+2. [線画](/ja/docs/illustration/ink/)：薄くした下描きの上に引くインクの線。
+3. [下塗り](/ja/docs/illustration/mask/)：形ごとにマスクした色のレイヤー。
+4. [塗り込み](/ja/docs/illustration/render/)：クリッピングしたレイヤーへの陰影と、PNGの書き出し。
 
-特定の工程から始めたい場合は、保存済みの<a href="/assets/examples/01-sketch.capy" download>下描き</a>、<a href="/assets/examples/02-line-art.capy" download>線画</a>、<a href="/assets/examples/03-base-colors.capy" download>下塗り</a>、<a href="/assets/examples/04-finished.capy" download>完成した絵</a>のいずれかを<strong>File → Open…</strong>で開きます。写真編集の練習に使える[完成画像のPNG](/assets/examples/abstract-study.png)もあります。
+## 完成したレイヤー
 
-作例ファイルには、スクリーンショットと同じレイヤーとマスクが入っています。変更する前に自分用のコピーを保存して、元のファイルを残しておきましょう。
+完成した作品には、上から順に次のレイヤーがあります。
+
+| レイヤー | 内容 |
+| --- | --- |
+| *Line art* | インクの線 |
+| *Ribbon texture* | クリーム色のハッチングとハイライト。*Ribbon*にクリッピング |
+| *Ribbon shading* | 影とセージ色のアクセント。*Ribbon*にクリッピング |
+| *Ribbon* | 青緑。リボンの形にマスク |
+| *Disc shading* | 陰影とハイライト。*Disc*にクリッピング |
+| *Disc* | 黄土色。円盤の形にマスク |
+| *Block shading* | 陰影とハッチング。*Block*にクリッピング |
+| *Block* | テラコッタ。ブロックの形にマスク |
+| *Sketch* | 不透明度22%の鉛筆の線。非表示 |
+| *Color rough* | 不透明度50%のフラットな色。非表示 |
+| **用紙** | 白 |
+
+## サンプルファイル
+
+どの段階の終わりからでも始められます。その段階のファイルをダウンロードし、**ファイル > 開く…** を選ぶか**Ctrl+O**を押して、ファイルを選択します。作品は専用のタブで開きます。
+
+| 段階 | ファイル |
+| --- | --- |
+| 1. 下描き | <a href="/assets/examples/01-sketch.capy" download>01-sketch.capy</a> |
+| 2. 線画 | <a href="/assets/examples/02-line-art.capy" download>02-line-art.capy</a> |
+| 3. 下塗り | <a href="/assets/examples/03-base-colors.capy" download>03-base-colors.capy</a> |
+| 4. 塗り込み | <a href="/assets/examples/04-finished.capy" download>04-finished.capy</a> |
+
+完成した習作をPNGで書き出したファイルは、<a href="/assets/examples/abstract-study.png" download>abstract-study.png</a>です。
+
+最初の段階：[下描き](/ja/docs/illustration/draft/)。

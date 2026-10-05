@@ -1,27 +1,46 @@
 ---
-title: "Arte de linha"
-description: "Desenhe linhas de tinta limpa em uma nova camada acima do esboço desbotado."
-purpose: "A arte linear é a versão final e limpa de seus contornos. Desenhar em sua própria camada significa que você pode apagar ou recolorir a tinta sem tocar no esboço e, posteriormente, pintar cores abaixo dele."
-techniques: ["Esmaeça o esboço e adicione uma camada de arte de linha.", "Pinte com uma caneta e gire a visualização para curvas complicadas.", "Feche os contornos de cada forma."]
-figure: "1: Arte de linha acima do Sketch desbotado. 2: Controles de visualização do Navigator. 3: Pincéis de caneta no conjunto de ferramentas."
-related: ["layers/basics", "advanced/input", "workspace"]
-image: {"light": "/assets/guides/illustration-ink-light.webp", "dark": "/assets/guides/illustration-ink-dark.webp", "alt": "1: Arte de linha acima do Sketch desbotado. 2: Controles de visualização do Navigator. 3: Pincéis de caneta no conjunto de ferramentas."}
+title: "Arte-final"
+description: "Etapa 2 do tutorial de ilustração: arte-final feita com a Caneta G em uma camada acima do esboço esmaecido."
+related: ["layers/panel", "drawing/brush-tools", "start/canvas", "input/pen"]
 ---
 
-## 1. Prepare as camadas
+Esta etapa produz a arte-final em uma camada acima do esboço esmaecido.
 
-Selecione **Sketch** e diminua sua opacidade até que as linhas fiquem fracas, mas ainda fáceis de seguir. Oculte **Color rough** por enquanto. Em seguida, adicione uma nova camada acima de Sketch, nomeie-a como **Line art** e certifique-se de que seja a camada selecionada antes de começar a pintar.
+## 1. Preparar as camadas
 
-Escolha a ferramenta **Pen** e uma caneta como **G-Pen**. Desenhe algumas linhas de teste com sua pressão habitual e ajuste o tamanho até que a espessura da linha pareça correta.
+No [painel Camadas](/pt-BR/docs/layers/panel/):
 
-## 2. Pinte o desenho
+1. Selecione **Ocultar camada** (o olho) na linha *Color rough*.
+2. Selecione *Sketch* e defina **Opacidade da camada** como 22 no cabeçalho do painel.
+3. Selecione **Nova camada** na parte inferior do painel e renomeie a nova camada como *Line art*.
 
-Trace os contornos das três formas e, em seguida, adicione os rabiscos soltos e as linhas hachuradas curtas. Quando parecer difícil desenhar uma curva, gire a visualização com os botões em **Navigator** ou com dois dedos em uma tela sensível ao toque. Girar a vista não gira o desenho, então você pode girá-lo quantas vezes quiser.
+![O painel Camadas com Line art acima de Sketch em 22% e Color rough oculta.](shot:illustration/ink-layers)
 
-Use a borracha ou desfaça para corrigir erros. Se a linha parecer estar atrasada em relação à sua caneta, as [configurações da caneta](/pt-BR/docs/advanced/input/) podem ajudar.
+A lista de camadas mostra *Line art*, *Sketch* em 22%, *Color rough* (oculta) e
+**Papel**.
 
-## 3. Verifique os contornos
+## 2. Arte-finalizar os contornos
 
-Oculte Sketch para ver sua tinta por conta própria. Feche quaisquer pequenas lacunas nos contornos das três formas, pois o próximo estágio as utiliza para selecionar cada forma. Pequenos detalhes dentro de uma forma podem permanecer abertos.
+Selecione **Caneta** na barra de ferramentas Ferramentas e o pincel **Caneta G**
+no Conjunto de ferramentas ([Ferramentas de pincel](/pt-BR/docs/drawing/brush-tools/))
+e defina **Tamanho do pincel** como 4,5 px. Em *Line art*, trace os três
+contornos e depois os rabiscos e as marcas de hachura.
 
-A arte de linha permanece no topo da lista de camadas durante o resto do tutorial, então as cores sempre ficarão abaixo dela. Salve seu desenho e prossiga para [Masking](/pt-BR/docs/illustration/mask/).
+![O painel Conjunto de ferramentas com os pincéis de caneta e Caneta G selecionado.](shot:illustration/ink-pens)
+
+Para corrigir uma linha, pressione **Ctrl+Z** para desfazer o traço, ou pressione
+**E** e apague com a **Borracha**.
+
+Você pode girar a visualização enquanto arte-finaliza. Escolha
+**Exibir > Girar visualização 90° à esquerda** ou
+**Exibir > Girar visualização 90° à direita**, ou selecione os botões de girar
+no painel **Navegador**. Em Pintura, o ícone do **Navegador** fica à direita da
+janela.
+
+![O painel Navegador com os botões de zoom, girar e espelhar.](shot:illustration/ink-navigator)
+
+Para qualquer ângulo, gire dois dedos na tela ou digite o ângulo no menu da
+indicação de zoom, na extremidade direita do rodapé. **Redefinir rotação**
+nesse menu volta a visualização para 0° ([Visualizar a tela](/pt-BR/docs/start/canvas/)).
+
+Próxima etapa: [Cores base](/pt-BR/docs/illustration/mask/).

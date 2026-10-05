@@ -1,27 +1,58 @@
 ---
 title: "렌더링"
-description: "도형마다 클리핑한 레이어에 음영과 질감을 더하고, 결과를 내보냅니다."
-purpose: "렌더링은 도형에 빛과 그림자를 입히는 단계입니다. 클리핑한 레이어에 음영을 칠하면 음영이 저절로 각 도형 안에 머물고, 음영이 밑색과 분리되어 있으므로 아무것도 잃지 않고 조절하거나 다시 칠할 수 있습니다."
-techniques: ["Ribbon에 음영 레이어를 클리핑합니다.", "음영의 강도를 조절합니다.", "다른 도형에도 음영을 넣고, 레이어를 확인한 뒤 내보냅니다."]
-figure: "1: Ribbon 위의 Ribbon texture와 Ribbon shading. 2: Clip to layer below. 3: 음영 작업 전체를 조절하는 레이어 불투명도."
-related: ["layers/groups", "layers/masks", "output/export"]
-image: {"light": "/assets/guides/illustration-render-light.webp", "dark": "/assets/guides/illustration-render-dark.webp", "alt": "1: Ribbon 위의 Ribbon texture와 Ribbon shading. 2: Clip to layer below. 3: 음영 작업 전체를 조절하는 레이어 불투명도."}
+description: "일러스트 튜토리얼 4단계: 각 밑색에 클리핑한 레이어의 명암과 질감, 그리고 PNG 내보내기."
+related: ["layers/settings", "drawing/brush-tools", "files/open-save", "files/export"]
 ---
 
-## 1. 클리핑 음영 추가하기
+이 단계에서는 각 도형의 밑색에 클리핑한 레이어에 명암을 넣고, 습작을 PNG로
+내보냅니다.
 
-**Ribbon**을 선택하고 바로 위에 새 레이어를 추가해 이름을 **Ribbon shading**으로 정합니다. 레이어 메뉴를 열고 **Layer Settings → Clip to layer below**를 선택합니다. 이제 **Watercolor Wash**로 리본이 휘어지는 곳에 그림자를 칠하고, **Paintbrush**로 세이지 그린 포인트를 몇 군데 더합니다. 리본 안쪽 부분만 보이므로 획이 리본 가장자리를 넘어가도 괜찮습니다.
+## 1. 클리핑 레이어 추가하기
 
-음영 레이어의 혼합 모드는 일단 **Normal**로 둡니다. 밑색은 Ribbon 레이어에 안전하게 남아 있으므로, 음영을 지워도 그 아래의 색이 지워지는 일은 없습니다.
+*Ribbon*을 선택한 다음 **레이어 > 새로 만들기 > 새 클리핑 레이어**를 선택하거나,
+행의 메뉴에서 **새로 만들기 > 새 클리핑 레이어**를 선택합니다([레이어 설정](/ko/docs/layers/settings/)).
+새 레이어의 이름을 *Ribbon shading*으로 바꿉니다.
 
-## 2. 강도 조절하기
+![새로 만들기 하위 메뉴가 열려 있고 그 안에 새 클리핑 레이어가 있는 레이어 메뉴.](shot:illustration/render-new-menu)
 
-브러시 불투명도는 앞으로 칠할 획을 바꿉니다. **Ribbon shading 레이어의 불투명도**는 이미 칠한 음영 전체를 바꿉니다. 모든 그림자가 너무 진해 보인다면 다시 칠하지 말고 레이어 불투명도를 낮추세요.
+*Ribbon shading*이 *Ribbon* 바로 위에 나타나고, 썸네일 왼쪽의 세로선이 클리핑을
+나타냅니다. 클리핑은 레이어 전체를 채운 청록색이 아니라 *Ribbon*의 마스크를 따릅니다.
 
-하이라이트를 넣으려면 Ribbon shading 바로 위에 **Ribbon texture**를 추가하고 이 레이어도 클리핑합니다. 작은 연필이나 질감 있는 브러시로 밝은 자국을 몇 개 더합니다. 이제 레이어 순서는 위에서부터 Ribbon texture, Ribbon shading, Ribbon입니다. 불투명도와 유량은 [브러시 설정](/ko/docs/advanced/brush-engine/)에서 더 자세히 설명합니다.
+## 2. 리본에 명암 넣기
 
-## 3. 마무리하고 내보내기
+“도구” 도구 모음에서 **페인트 브러시**를, 도구 세트에서 **수채 워시**를 선택합니다([브러시 도구](/ko/docs/drawing/brush-tools/)).
+**도구** 패널에서 **불투명도**를 65%로 설정하고, 리본이 휘어지는 부분의 그림자를 짙은
+파란색으로 칠합니다. 그다음 **페인트 브러시** 브러시로 세이지색 포인트를 더합니다.
 
-**Disc**와 **Block**에도 각각 클리핑 레이어를 만들어 같은 방법으로 음영을 넣습니다. 예제에서는 원의 부드러운 음영에 Airbrush를, 작은 크림색 해칭에 Pencil을 사용했습니다. **Line art**는 언제나 맨 위에 둡니다. 도형의 바깥 경계를 고쳐야 한다면 그 도형의 마스크에 칠하고, 음영만 잘못되었다면 음영 레이어를 고칩니다. [마스크와 클리핑](/ko/docs/layers/masks/)에서는 알파 잠금으로 선화의 색을 바꾸는 방법도 설명합니다.
+## 3. 질감 레이어 추가하기
 
-그림이 마음에 들면 러프 레이어를 숨기고, `.capy` 파일을 저장한 다음, 공유할 [이미지를 내보냅니다](/ko/docs/output/export/). 내보낸 파일을 한 번 열어 예상대로 보이는지 확인하세요.
+*Ribbon shading*이 선택된 상태에서 다시 **레이어 > 새로 만들기 > 새 클리핑 레이어**를
+선택하고, 레이어 이름을 *Ribbon texture*로 바꿉니다. 이 레이어는 같은 클리핑 안에서
+*Ribbon shading* 위에 놓입니다. **연필**과 **연필** 브러시를 선택하고 크림색 해칭과
+하이라이트를 그립니다.
+
+## 4. 원반과 블록에 명암 넣기
+
+*Disc*를 선택하고 *Disc shading*이라는 클리핑 레이어를 추가한 다음, **에어브러시**로
+원반 아래쪽 절반에 테라코타색 명암을 넣습니다. 왼쪽 위에는 크림색 하이라이트를
+더합니다.
+
+*Block shading*도 같은 방법으로 *Block*에 추가합니다. **페인트 브러시** 브러시로 오른쪽과
+아래쪽 가장자리를 따라 짙은 파란색을 칠한 다음, **연필** 브러시로 크림색 해칭을
+그립니다.
+
+![Ribbon에 클리핑된 Ribbon texture와 Ribbon shading, 각 기준 레이어에 클리핑된 Disc shading과 Block shading이 있는 레이어 패널.](shot:illustration/render-layers)
+
+레이어 목록은 [소개](/ko/docs/illustration/)의 완성된 레이어와 같습니다.
+
+## 5. 저장하고 내보내기
+
+**파일 > 저장**을 선택하거나 **Ctrl+S** 키를 누르고, 그림을 `.capy` 파일로 저장합니다([열기와 저장](/ko/docs/files/open-save/)).
+PNG로 내보내려면 다음과 같이 합니다.
+
+1. **파일 > 내보내기…** 명령을 선택하거나 **Ctrl+Shift+E** 키를 누릅니다.
+2. **용도**는 **웹 / 공유**로 두고, **형식**을 **PNG 이미지**로 설정합니다.
+3. **파일 선택…** 버튼을 선택하고 폴더와 이름을 선택합니다.
+
+처음 내보낸 뒤에는 **파일 > 다시 내보내기**를 선택하면 대화 상자 없이 같은 설정으로 같은
+파일에 기록합니다([이미지 내보내기](/ko/docs/files/export/)).

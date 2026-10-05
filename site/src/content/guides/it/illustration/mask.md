@@ -1,27 +1,65 @@
 ---
-title: "Mascheramento"
-description: "Dai al nastro, al disco e al blocco i propri strati di colore con bordi modificabili."
-purpose: "In questa fase, ogni forma ottiene il proprio strato di colore. Il colore riempie l'intero livello e una maschera decide quale parte di esso vedi. Poiché nulla viene cancellato, puoi regolare il bordo di qualsiasi forma in un secondo momento semplicemente dipingendo sulla sua maschera."
-techniques: ["Seleziona una forma con un lazo o con la selezione automatica.", "Trasforma la selezione in una maschera e riempi il livello di colore.", "Paint sulla maschera per regolare il bordo."]
-figure: "1: miniatura della maschera selezionata della barra multifunzione. 2: Nastro, disco e blocco sotto la linea art. 3: Gomma, che nasconde parti della maschera."
-related: ["layers/masks", "tools/selections", "painting/color"]
-image: {"light": "/assets/guides/illustration-mask-light.webp", "dark": "/assets/guides/illustration-mask-dark.webp", "alt": "1: miniatura della maschera selezionata della barra multifunzione. 2: Nastro, disco e blocco sotto la linea art. 3: Gomma, che nasconde parti della maschera."}
+title: "Colori base"
+description: "Fase 3 del tutorial di illustrazione: un livello di pittura per ogni forma, con una maschera sulla forma e riempito con il suo colore base."
+related: ["layers/masks", "selections/working", "layers/types", "layers/settings"]
 ---
 
-## 1. Seleziona una forma
+Questa fase produce un livello di pittura per ogni forma, riempito con il suo
+colore base e con una maschera sulla forma. I colori base vanno su livelli di
+pittura perché un livello di riempimento non può fare da base di ritaglio per
+l'ombreggiatura della fase 4.
 
-Nascondi **Sketch** e **Color rough**. Scegli **Lasso selection** e traccia con attenzione il nastro, come nell'esempio.
+## 1. Aggiungi il livello Block
 
-Se la tua grafica al tratto è chiusa attorno a una forma, **Auto select** può farlo con un clic. Contrassegna **Line art** come livello di riferimento scegliendo **Layer Settings → Use as reference** nel suo menu. Quindi scegli **Auto select**, scegli **Sample reference layers** nel pannello Strumenti e fai clic all'interno della forma. [Strumenti di selezione](/it/docs/tools/selections/) spiega le impostazioni che controllano l'ampiezza della diffusione della selezione.
+Nascondi *Sketch*, seleziona la sua riga e aggiungi un livello chiamato *Block*
+con **Nuovo livello**. Il nuovo livello appare subito sopra *Sketch*, sotto
+*Line art*.
 
-## 2. Crea il livello di colore mascherato
+## 2. Applica al livello una maschera sul blocco
 
-Aggiungi un nuovo livello denominato **Ribbon** sotto Line art. Con la selezione ancora attiva, apri il menu della barra multifunzione e scegli **Mask → Mask: reveal selection**. Il livello ora ha una maschera che mostra solo la forma del nastro.
+Premi **M**, o seleziona **Selezione con lazo** nel gruppo **Seleziona** della
+barra strumenti Strumenti, e ripassa il contorno del blocco in *Line art*.
+Poi seleziona **Maschera** nella barra della selezione
+([Lavorare con le selezioni](/it/docs/selections/working/)).
 
-Fai clic sulla miniatura della vernice del nastro e scegli il colore del nastro. Scegli **Select → Select all pixels** e poi **Edit → Fill selection** per riempire di colore l'intero strato e termina con **Select → Deselect pixels**. Si vede solo il nastro, ma il colore continua sotto la maschera, pronto per quando vorrai allargare la forma.
+![La barra della selezione con Maschera, accanto a una selezione attorno al blocco.](shot:illustration/mask-selection-bar)
 
-## 3. Regola il bordo
+La selezione diventa la maschera di *Block* ([Maschere](/it/docs/layers/masks/)).
+Sulla riga appare una miniatura della maschera, e una barra in fondo alla tela
+indica «Modifica della maschera di Block».
 
-Fare clic sulla miniatura della maschera della barra multifunzione per modificare la maschera. Ora qualsiasi pennello rivela una parte maggiore del colore su cui dipingi e **Eraser** lo nasconde nuovamente. Fai di nuovo clic sulla miniatura della vernice quando desideri modificare il colore stesso.
+## 3. Riempi il livello
 
-Realizza **Disc** e **Block** allo stesso modo. Mantieni il disco sotto il nastro e il blocco sotto il disco, con la grafica al tratto sopra tutti e tre. Salva il tuo disegno, quindi continua con [Rendering](/it/docs/illustration/render/).
+**Riempi selezione** non è disponibile mentre modifichi una maschera. Per
+riempire il livello:
+
+1. Seleziona la miniatura del livello sulla riga *Block*, o seleziona **Modifica contenuto** nella barra in fondo alla tela.
+2. Scegli il terracotta nel pannello **Colore**.
+3. Scegli **Seleziona > Seleziona tutti i pixel**, o premi **Ctrl+A**.
+4. Scegli **Modifica > Riempi selezione**, o premi **Maiusc+Backspace**.
+5. Scegli **Seleziona > Deseleziona pixel**, o premi **Ctrl+D**.
+
+Il colore copre l'intero livello, e la maschera lo mostra solo all'interno del
+blocco.
+
+## 4. Aggiungi Disc e Ribbon
+
+Crea allo stesso modo *Disc* in ocra, poi *Ribbon* in verde acqua.
+
+![Il pannello Livelli con Ribbon, Disc e Block, ognuno con una miniatura della maschera, sotto Line art.](shot:illustration/mask-layers)
+
+L'elenco dei livelli mostra *Line art*, *Ribbon*, *Disc*, *Block*, *Sketch*,
+*Color rough* e **Carta**.
+
+## 5. Ritocca un bordo
+
+Seleziona la miniatura della maschera sulla riga *Ribbon*. La barra in fondo alla
+tela indica «Modifica della maschera di Ribbon».
+
+![La barra in fondo alla tela con la scritta Modifica della maschera di Ribbon, con Inverti, Disattiva, Applica maschera e Modifica contenuto.](shot:illustration/mask-bar)
+
+Dipingi lungo un bordo con il pennello **G-Pen** per mostrare più verde acqua,
+oppure usa la **Gomma** per rifilare il bordo. Su una maschera, i pennelli
+ignorano il colore di pittura.
+
+Fase successiva: [Rendering](/it/docs/illustration/render/).

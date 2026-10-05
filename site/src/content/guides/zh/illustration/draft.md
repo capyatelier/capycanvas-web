@@ -1,27 +1,53 @@
 ---
 title: "草稿"
-description: "用铅笔画出草稿，并在单独的图层上试色。"
-purpose: "草稿用来确定形状，色稿用来尝试颜色。把它们放在不同的图层上，你就可以随意反复修改颜色，而不会碰到铅笔线条。"
-techniques: ["用铅笔和压感绘画。", "选中并修正草稿的一部分。", "把色稿放在草稿下方的图层上。"]
-figure: "1：铅笔笔刷。2：Layers中位于Color rough上方的Sketch。3：铅笔的大小和不透明度。"
-related: ["tools/selections", "tools/transforms", "painting/color"]
-image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/assets/guides/illustration-draft-dark.webp", "alt": "1：铅笔笔刷。2：Layers中位于Color rough上方的Sketch。3：铅笔的大小和不透明度。"}
+description: "插画教程第 1 阶段：用套索填充画出色稿，并在其上方画铅笔草稿。"
+related: ["files/new", "drawing/fill", "drawing/brush-tools", "transform/move-transform"]
 ---
 
-## 1. 绘制草稿
+这一阶段完成三个形状的色稿，以及位于其上方图层的铅笔草稿。
 
-添加一个新图层，命名为**Sketch**。选择**Pencil**工具，并在Tool Set中选一支铅笔。先用轻淡的线条找出圆形、弯曲的带状形和倾斜的四边形，再加重力度，确定想要保留的轮廓。在Tool面板中设置铅笔的大小。
+## 1. 创建画作
 
-在形状周围留出一些空间。这会让后面的阶段更轻松，因为你能清楚地看到每个形状在哪里结束。时不时在顶部工具栏中选择**Flip view horizontally**，看看镜像后的草稿；这样更容易发现比例上的错误。
+1. 在标题栏的工作区切换器中选择**绘画**。
+2. 选择**文件 > 新建…**，或按 **Ctrl+N**（[新建画作](/zh/docs/files/new/)）。
+3. 在**新建绘画**对话框中，将**宽度（px）** 和**高度（px）** 设为 1200，然后选择**创建**。
 
-## 2. 修正不太对的部分
+![新建绘画对话框，宽度（px）和高度（px）设为 1200。](shot:illustration/new-drawing)
 
-如果某个部分的位置或大小不对，不必重画。选择**Lasso selection**，在那部分周围画一个圈。然后选择**Scale / rotate**，把它拖到合适的位置或调整大小，再选择**Apply transform**。继续绘画之前，选择**Select → Deselect pixels**。
+画作有两个图层：**当前墨色**位于**纸张**上方。在图层面板中双击**当前墨色**，将图层重命名为 *Color rough*。
 
-[选区](/zh/docs/tools/selections/)和[变换](/zh/docs/tools/transforms/)指南更详细地介绍了这些工具。如果修改出了问题，撤销即可。
+## 2. 铺色块
 
-## 3. 尝试配色
+**套索填充**工具用一笔以当前颜色填充徒手绘制的形状（[填充工具](/zh/docs/drawing/fill/)）。选择“工具”工具栏中的**填充**，然后在**工具组**面板中选择**套索填充**。
 
-再添加一个名为**Color rough**的图层，把它拖到Sketch下方。为每个形状选择一种颜色，用**Lasso selection**沿形状画一圈，然后选择**Edit → Fill selection**。示例中，带状形用蓝绿色，圆形用土黄色，四边形用陶土色。这些只是粗略的颜色，边缘不需要整齐。稍微降低这个图层的不透明度，让铅笔线条依然清晰可见。
+![工具组面板，已选中套索填充。](shot:illustration/draft-lasso-fill)
 
-想单独查看草稿时，随时可以暂时隐藏Color rough。保存作品，然后继续[线稿](/zh/docs/illustration/ink/)阶段。
+对每个形状，在**颜色**面板中选择其颜色，并用一笔描出其轮廓。先用赤陶色画左下方的方块，再用赭黄色画其上方的圆盘，最后用蓝绿色画右侧的带子。每个形状都会覆盖先前形状的一部分。
+
+在图层面板顶部栏中将**图层不透明度**设为 50（[图层面板](/zh/docs/layers/panel/)）。*Color rough* 行的图层名称下方显示“50%”。
+
+## 3. 画草稿
+
+选择图层面板底部的**新建图层**，将新图层重命名为 *Sketch*。它出现在 *Color rough* 正上方。
+
+选择“工具”工具栏中的**铅笔**，并在工具组中选择**铅笔**画笔（[画笔工具](/zh/docs/drawing/brush-tools/)）。在**工具设置**面板中将**画笔大小**设为 8 px。
+
+![工具组面板，显示铅笔画笔，已选中铅笔。](shot:illustration/draft-pencils)
+
+画出三个轮廓，然后画涂画和排线笔触。示例中还有用灰绿色以 5 px 画的辅助构图线。
+
+图层列表依次为 *Sketch*、*Color rough* 和**纸张**。
+
+## 4. 变换草稿的一部分
+
+可以用**变换**移动、缩放或旋转草稿中选中的部分（[移动和变换](/zh/docs/transform/move-transform/)）。示例变换的是右下方的线圈。
+
+1. 按 **M**，或选择“工具”工具栏**选择**组中的**套索选区**，然后围绕该部分画一个圈。
+2. 选择选区操作栏中的**变换**，或按 **Ctrl+T**。
+3. 拖动控制点。
+4. 选择栏中的**应用**，或按 **Enter**。
+5. 选择**选择 > 取消像素选择**，或按 **Ctrl+D**。
+
+![变换栏，取消和应用位于草稿中选中部分的旁边。](shot:illustration/draft-transform)
+
+下一阶段：[线稿](/zh/docs/illustration/ink/)。

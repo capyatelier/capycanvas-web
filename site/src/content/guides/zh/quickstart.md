@@ -1,27 +1,73 @@
 ---
 title: "快速入门"
-description: "打开Capy Canvas，检查你的笔，并保存第一幅画。"
-purpose: "在调整布局或尝试各种笔刷之前，不妨先画几笔并保存下来。这样你就能确认编辑器和笔可以正常配合，还能留下一幅随时可以回来继续画的小作品。"
-techniques: ["打开编辑器并新建一幅画。", "用铅笔测试压感。", "保存作品，并导出一份用于分享的副本。"]
-figure: "1：工作区切换器。2：Tool Set，用于选择笔刷。3：Layers，你画下的笔迹都保存在这里。"
-related: ["workspace", "painting/brushes", "tools/files"]
-image: {"light": "/assets/guides/quickstart-light.webp", "dark": "/assets/guides/quickstart-dark.webp", "alt": "1：工作区切换器。2：Tool Set，用于选择笔刷。3：Layers，你画下的笔迹都保存在这里。"}
+description: "打开 Capy Canvas，在第一幅空白画作上绘画，将其保存为 .capy 文件并导出 PNG。"
+related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
 ---
 
-## 打开编辑器
+## 打开 Capy Canvas
 
-最快的开始方式是使用[Web Demo](https://editor.capycanvas.art/)，它可以在Chrome、Edge或Safari等较新的浏览器中运行。首次访问之后，即使离线也能继续使用。你也可以把它安装成应用，[下载页](/zh/download/)介绍了安装方法。
+执行以下任一操作：
 
-编辑器打开后，在窗口顶部的工作区切换器中选择**Paint**。Paint会把笔刷、颜色和图层都显示在屏幕上，很适合用来熟悉编辑器。然后选择<strong>File → New…</strong>，选好尺寸，再选择**Create**。
+- 在 [editor.capycanvas.art](https://editor.capycanvas.art/) 打开网页版编辑器。
+- 在[下载](/zh/download/)页面获取桌面应用、iPad 或 Android 测试版，或者查看将网页版编辑器安装为应用的步骤。
 
-## 画下第一笔
+网页版编辑器支持以下浏览器：
 
-在左侧选择**Pencil**工具，然后在**Tool Set**中选一支铅笔。请用笔或鼠标绘画；在触摸屏上，手指会移动视图，而不会画出笔迹。画一条线：起笔要轻，中间用力，收笔时再放轻。如果你的笔能传递压感，用力的地方线条会更粗、颜色更深。
+| 系统 | 浏览器 |
+| --- | --- |
+| Windows | Chrome、Edge、Firefox 141 或更高版本 |
+| macOS | Chrome、Edge、Safari 26 或更高版本、Firefox 147 或更高版本（Apple 芯片） |
+| Linux（Wayland） | Chrome、Edge |
+| iPadOS 26 或更高版本 | Safari |
+| Android 12 或更高版本 | Chrome |
 
-如果每条线看起来都一样，可能是笔没有把压感传给浏览器。[笔与触控指南](/zh/docs/advanced/input/)介绍了在修改笔刷设置之前需要检查哪些地方。按**Ctrl+Z**或工具栏中的撤销按钮，可以去掉不想保留的测试笔迹，按**Ctrl+Shift+Z**则可以重做。
+首次访问之后，网页版编辑器在没有网络连接时也能打开。
 
-## 保存作品
+## 第一幅画作
 
-选择<strong>File → Save As…</strong>，保存为`.capy`文件。这种文件会保留包括图层在内的所有可编辑内容，方便你下次接着画。需要一张用于分享的普通图像时，选择<strong>File → Export…</strong>，保存一份PNG或JPEG副本。
+![新画作的图层面板，当前墨色位于纸张上方。](shot:files/new-layers)
 
-接下来，[笔刷与绘画](/zh/docs/painting/brushes/)介绍如何选择和调整笔刷；[插画教程](/zh/docs/illustration/)则会带你完成一幅完整的作品，从最初的草稿一直画到最后的阴影。
+首次打开 Capy Canvas 时，会显示[“绘画”](/zh/docs/start/workspaces/)工作区和一幅空白画作，标题栏显示“未命名 · 2048 × 1536”。已选中的**当前墨色**是一个空的绘画图层，位于白色填充图层**纸张**上方。当前工具为**钢笔**，画笔为 **G 笔**，颜色接近黑色。
+
+之后再打开 Capy Canvas 时，会进入上次使用的工作区，并打开上次打开的画作。
+
+## 绘画
+
+用数位笔或鼠标在画布上拖动。要使用其他工具，请在窗口左边缘的“工具”工具栏中选择。在“素描”中，选择标题栏中的**画笔**。
+
+> **备注**：手指不会绘画。两根手指在画布上可以平移、缩放和旋转视图。
+
+要撤销一笔，选择**编辑 > 撤销**、按 **Ctrl+Z** 或用两根手指轻点画布（参见[撤销和重做](/zh/docs/start/undo/)）。
+
+## macOS 和 iPad 上的按键
+
+本手册按 Windows 和 Linux 的方式书写按键。在 macOS 和 iPad 上，手册中写 **Ctrl** 的地方请按 **Command**（⌘）。在网页版编辑器和 macOS 应用中，**Ctrl** 同样有效。
+
+网页版编辑器中所有快捷键都标为 **Ctrl**。浏览器会保留 **F5**、**F11**、**F12**，以及 **Ctrl** 或 **Ctrl+Shift** 与 **W**、**T**、**N**、**R**、**L**、**Q** 或 **P** 的组合。使用这些按键的命令在网页版编辑器中没有快捷键，请从菜单或[命令搜索](/zh/docs/start/command-search/)中选择。
+
+## 新建另一幅画作
+
+选择**文件 > 新建…**，然后在[新建绘画](/zh/docs/files/new/)对话框中选择**创建**。新画作在第一幅画作旁边的单独标签页中打开。
+
+## 保存画作
+
+![文件菜单，包含新建…、打开…、保存、另存为…和导出…。](shot:files/file-menu)
+
+要保存包含所有图层的画作：
+
+1. 选择**文件 > 保存**，或按 **Ctrl+S**。
+2. 选择文件夹和名称。建议的名称为“未命名.capy”。
+
+之后标题栏会显示文件名。在 Firefox 和 Safari 中，只有在**下载文件**对话框中选择**下载**，再选择**文件已保存**之后，画作才算已保存。
+
+## 导出 PNG
+
+![导出图像对话框，用途设为网页 / 分享。](shot:files/export-dialog)
+
+要导出画作的拼合 PNG 副本：
+
+1. 选择**文件 > 导出…**，或按 **Ctrl+Shift+E**。
+2. 保持**用途**为**网页 / 分享**，然后选择**选择文件…**。
+3. 选择文件夹和名称。建议的名称为“未命名.png”。
+
+**网页 / 分享**按画作的完整尺寸写入 8 位 sRGB PNG。导出不会更改或保存画作。

@@ -1,27 +1,67 @@
 ---
-title: "phác thảo"
-description: "Vẽ một bản phác thảo bằng bút chì và thử màu trên một lớp riêng biệt."
-purpose: "Bản phác thảo là nơi bạn tạo ra các hình dạng và màu thô là nơi bạn thử màu. Giữ chúng trên các lớp riêng biệt có nghĩa là bạn có thể thay đổi màu sắc thường xuyên tùy thích mà không cần chạm vào các đường bút chì."
-techniques: ["Vẽ bằng bút chì và áp lực bút.", "Chọn và sửa một phần của bản phác thảo.", "Đặt các màu thô trên một lớp bên dưới bản phác thảo."]
-figure: "1: Bàn chải bút chì. 2: Sketch ở trên Màu thô theo Lớp. 3: Kích thước bút chì và độ mờ."
-related: ["tools/selections", "tools/transforms", "painting/color"]
-image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/assets/guides/illustration-draft-dark.webp", "alt": "1: Bàn chải bút chì. 2: Sketch ở trên Màu thô theo Lớp. 3: Kích thước bút chì và độ mờ."}
+title: "Phác thảo"
+description: "Giai đoạn 1 của hướng dẫn vẽ minh họa: bản phác màu vẽ bằng Tô vùng chọn tự do và bản phác bút chì phía trên."
+related: ["files/new", "drawing/fill", "drawing/brush-tools", "transform/move-transform"]
 ---
 
-## 1. Vẽ phác thảo
+Giai đoạn này tạo bản phác màu của ba hình và bản phác bút chì trên một lớp phía
+trên.
 
-Thêm một lớp mới và đặt tên là **Sketch**. Chọn công cụ **Pencil** và một trong các bút chì trong Bộ công cụ. Bắt đầu với các vạch sáng để tìm đĩa, ruy băng cong và khối nghiêng, sau đó nhấn mạnh hơn để cố định các đường viền bạn muốn giữ. Đặt kích thước của bút chì trong bảng Công cụ.
+## 1. Tạo bản vẽ
 
-Để lại một khoảng trống nhỏ xung quanh các hình dạng. Nó làm cho các giai đoạn sau dễ dàng hơn vì bạn sẽ có thể thấy rõ mỗi hình dạng kết thúc ở đâu. Thỉnh thoảng, chọn **Flip view horizontally** trên thanh công cụ trên cùng để xem bản phác thảo được phản chiếu; Những sai lầm về tỷ lệ sẽ dễ dàng được phát hiện hơn theo cách đó.
+1. Chọn **Vẽ** trong bộ chuyển không gian làm việc trên thanh tiêu đề.
+2. Chọn **Tệp > Mới…**, hoặc nhấn **Ctrl+N** ([Bản vẽ mới](/vi/docs/files/new/)).
+3. Trong hộp thoại **Bản vẽ mới**, đặt **Chiều rộng (px)** và **Chiều cao (px)** là 1200, rồi chọn **Tạo**.
 
-## 2. Sửa một phần chưa ổn lắm
+![Hộp thoại Bản vẽ mới với Chiều rộng (px) và Chiều cao (px) đặt là 1200.](shot:illustration/new-drawing)
 
-Nếu một phần ở sai vị trí hoặc sai kích thước, bạn không cần phải vẽ lại phần đó. Chọn **Lasso selection** và vẽ một vòng quanh phần đó. Sau đó chọn **Scale / rotate**, kéo bộ phận vào vị trí hoặc thay đổi kích thước của nó và chọn **Apply transform**. Chọn **Select → Deselect pixels** trước khi bạn tiếp tục vẽ.
+Bản vẽ có hai lớp: **Mực hiện tại** phía trên **Giấy**. Nhấp đúp vào **Mực hiện
+tại** trong bảng Lớp và đổi tên lớp thành *Color rough*.
 
-Hướng dẫn [selection](/vi/docs/tools/selections/) và [transform](/vi/docs/tools/transforms/) giải thích các công cụ này chi tiết hơn. Nếu một thay đổi xảy ra sai sót, chỉ cần hoàn tác nó.
+## 2. Lên mảng màu
 
-## 3. Thử màu sắc
+Công cụ **Tô vùng chọn tự do** tô một hình vẽ tự do bằng màu hiện tại chỉ trong một
+nét ([Công cụ tô màu](/vi/docs/drawing/fill/)). Chọn **Tô đầy** trên Thanh công cụ
+vẽ, rồi chọn **Tô vùng chọn tự do** trong bảng **Bộ công cụ**.
 
-Thêm một lớp khác có tên **Color rough** và kéo nó xuống dưới Sketch. Đối với mỗi hình dạng, hãy chọn một màu, vẽ xung quanh hình bằng **Lasso selection** và chọn **Edit → Fill selection**. Ví dụ sử dụng màu xanh mòng két cho dải băng, màu đất son cho đĩa và đất nung cho khối. Đây là những màu thô nên các cạnh không cần phải gọn gàng. Giảm độ mờ của lớp một chút để dễ nhìn thấy các đường bút chì.
+![Bảng Bộ công cụ với Tô vùng chọn tự do được chọn.](shot:illustration/draft-lasso-fill)
 
-Ẩn màu thô trong giây lát bất cứ khi nào bạn muốn xem bản phác thảo. Lưu bản vẽ của bạn, sau đó tiếp tục đến [Line art](/vi/docs/illustration/ink/).
+Với mỗi hình, chọn màu trong bảng **Màu** và vẽ đường viền của hình trong một nét.
+Bắt đầu với khối ở góc dưới bên trái bằng màu đất nung, sau đó là hình tròn phía
+trên bằng màu vàng đất, cuối cùng là dải ruy băng bên phải bằng màu xanh mòng két.
+Mỗi hình che một phần các hình vẽ trước.
+
+Đặt **Độ đục lớp** ở phần đầu bảng Lớp là 50
+([Bảng lớp](/vi/docs/layers/panel/)). Hàng *Color rough* hiện “50%” dưới tên lớp.
+
+## 3. Vẽ phác
+
+Chọn **Lớp mới** ở cuối bảng Lớp và đổi tên lớp mới thành *Sketch*. Lớp này nằm
+ngay trên *Color rough*.
+
+Chọn **Bút chì** trên Thanh công cụ vẽ và cọ **Bút chì** trong Bộ công cụ
+([Công cụ cọ](/vi/docs/drawing/brush-tools/)). Đặt **Kích thước cọ** trong bảng
+**Công cụ** là 8 px.
+
+![Bảng Bộ công cụ với các cọ bút chì và Bút chì được chọn.](shot:illustration/draft-pencils)
+
+Vẽ đường viền của ba hình, sau đó là các nét nguệch ngoạc và nét gạch. Trong ví dụ
+còn có các đường dựng hình màu xanh sage, vẽ ở 5 px.
+
+Danh sách lớp lúc này là *Sketch*, *Color rough* và **Giấy**.
+
+## 4. Biến đổi một phần bản phác
+
+Bạn có thể di chuyển, đổi tỷ lệ hoặc xoay một phần bản phác đã chọn bằng
+**Biến đổi** ([Di chuyển và biến đổi](/vi/docs/transform/move-transform/)). Trong ví
+dụ, vòng xoắn ở góc dưới bên phải được biến đổi.
+
+1. Nhấn **M**, hoặc chọn **Chọn tự do** trong nhóm **Chọn** trên Thanh công cụ vẽ, rồi vẽ một vòng quanh phần đó.
+2. Chọn **Biến đổi** trên thanh vùng chọn, hoặc nhấn **Ctrl+T**.
+3. Kéo các tay nắm.
+4. Chọn **Áp dụng** trên thanh, hoặc nhấn **Enter**.
+5. Chọn **Chọn > Bỏ chọn pixel**, hoặc nhấn **Ctrl+D**.
+
+![Thanh biến đổi với Hủy và Áp dụng bên cạnh phần bản phác đang chọn.](shot:illustration/draft-transform)
+
+Giai đoạn tiếp theo: [Lineart](/vi/docs/illustration/ink/).

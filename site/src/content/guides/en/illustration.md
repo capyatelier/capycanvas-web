@@ -1,26 +1,61 @@
 ---
 title: "Illustration tutorial"
-description: "Paint a small abstract study, from pencil sketch to finished shading."
-purpose: "This tutorial walks through one small painting from start to finish. It uses simple abstract shapes, so you can focus on the way the work is split into stages and layers. Because each stage adds its own layers, you can go back and change one part without redoing the rest."
-techniques: ["Sketch and try out colors.", "Draw clean line art above the sketch.", "Give each shape its own masked color layer.", "Shade inside each shape and export the result."]
-figure: "The finished example, with separate ink, masked color and shading layers."
-related: ["quickstart", "workspace", "tools/files"]
 navTitle: "Introduction"
-image: {"light": "/assets/guides/illustration-light.webp", "dark": "/assets/guides/illustration-dark.webp", "alt": "The finished example, with separate ink, masked color and shading layers."}
+description: "The illustration tutorial: an abstract study painted in four stages in the Paint workspace, from a color rough to a PNG export."
+related: ["start/workspaces", "layers/panel", "layers/masks", "files/open-save"]
 ---
 
-## Set up
+You paint an abstract study in four stages in the
+[Paint](/docs/start/workspaces/) workspace. Each stage adds layers, and no
+layer is merged.
 
-If you haven't checked your pen yet, start with the [Quickstart](/docs/quickstart/). Then choose **Paint**, so that your brushes, colors and layers are all on screen. Create a new drawing about **1200 × 1200** pixels to follow along with the example, or use your own subject if you prefer.
+![The Paint workspace with the finished abstract study on the canvas and its layers in the Layers panel.](shot:illustration/overview)
 
-The example is made of three overlapping shapes: a curved ribbon, a disc and a tilted block, with a few loose scribbles around them. It uses teal, sage, ochre and terracotta, with dark blue lines and cream highlights. Each shape gets its own named layers, which makes it easy to see what belongs where.
+## The study
 
-## The four stages
+The study is a 1200 × 1200 drawing of three overlapping shapes: a curved
+ribbon, a disc, and a tilted block. Loose scribbles and hatch marks lie on and
+around the shapes.
 
-The tutorial has four stages, all in the same drawing: [Sketching](/docs/illustration/draft/), Line art, Masking and Rendering. Each stage adds new layers on top of the previous ones rather than replacing them. It's a good idea to keep the sketch and the color study even after you hide them, in case you want to look back at them later.
+## The stages
 
-## Use the example files
+1. [Sketching](/docs/illustration/draft/): a color rough and a pencil sketch.
+2. [Line art](/docs/illustration/ink/): ink lines above the faded sketch.
+3. [Base colors](/docs/illustration/mask/): a masked color layer for each shape.
+4. [Rendering](/docs/illustration/render/): shading on clipped layers, and a PNG export.
 
-If you'd like to start from a particular stage, open the saved <a href="/assets/examples/01-sketch.capy" download>sketch</a>, <a href="/assets/examples/02-line-art.capy" download>line art</a>, <a href="/assets/examples/03-base-colors.capy" download>base colors</a> or <a href="/assets/examples/04-finished.capy" download>finished drawing</a> with **File → Open…**. There is also a [PNG of the finished image](/assets/examples/abstract-study.png) that you can use to practice photo editing.
+## The finished layers
 
-The example files contain the same layers and masks you see in the screenshots. Save your own copy before you change one, so the original stays available.
+The finished drawing has these layers, from top to bottom:
+
+| Layer | Contents |
+| --- | --- |
+| *Line art* | Ink lines |
+| *Ribbon texture* | Cream hatching and highlights, clipped to *Ribbon* |
+| *Ribbon shading* | Shadows and sage accents, clipped to *Ribbon* |
+| *Ribbon* | Teal, masked to the ribbon |
+| *Disc shading* | Shading and a highlight, clipped to *Disc* |
+| *Disc* | Ochre, masked to the disc |
+| *Block shading* | Shading and hatching, clipped to *Block* |
+| *Block* | Terracotta, masked to the block |
+| *Sketch* | Pencil lines at 22% opacity, hidden |
+| *Color rough* | Flat colors at 50% opacity, hidden |
+| **Paper** | White |
+
+## Example files
+
+You can start from the end of any stage. Download the stage's file, choose
+**File > Open…** or press **Ctrl+O**, and select the file. The drawing opens in
+a tab of its own.
+
+| Stage | File |
+| --- | --- |
+| 1. Sketching | <a href="/assets/examples/01-sketch.capy" download>01-sketch.capy</a> |
+| 2. Line art | <a href="/assets/examples/02-line-art.capy" download>02-line-art.capy</a> |
+| 3. Base colors | <a href="/assets/examples/03-base-colors.capy" download>03-base-colors.capy</a> |
+| 4. Rendering | <a href="/assets/examples/04-finished.capy" download>04-finished.capy</a> |
+
+The PNG export of the finished study is
+<a href="/assets/examples/abstract-study.png" download>abstract-study.png</a>.
+
+First stage: [Sketching](/docs/illustration/draft/).

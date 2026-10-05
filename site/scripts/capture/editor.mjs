@@ -3,9 +3,12 @@ import { writeFile } from 'node:fs/promises';
 
 export async function editor(b) {
   const read = expression => b.evaluate(`JSON.parse(JSON.stringify((${expression}),(_,value)=>typeof value==='bigint'?Number(value):value))`);
-  const send = async action => { await b.evaluate(`layerApp.dispatch(${JSON.stringify(action)});void 0`); await b.settle(); };
+  const idle = () => b.until('!layerApp.state().document_file.busy && !layerApp.documents.busy() && layerApp.app.brush_ready()', 60000);
+  const send = async action => { await idle(); await b.evaluate(`layerApp.dispatch(${JSON.stringify(action)});void 0`); await b.settle(); };
   const invoke = async command => {
-    assert.ok(await read(`layerApp.state().commands.find(c=>c.id===${JSON.stringify(command)})?.enabled`), `Command enabled: ${command}`);
+    await idle();
+    const enabled = `layerApp.state().commands.find(c=>c.id===${JSON.stringify(command)})?.enabled`;
+    await b.until(enabled, 10000).catch(async () => assert.fail(`Command enabled: ${command} (${await read(`layerApp.state().commands.find(c=>c.id===${JSON.stringify(command)})?.disabled_reason ?? 'unknown command'`)})`));
     await send({ type: 'invoke', command });
   };
   const layer = action => send({ type: 'layer', action });
@@ -15,7 +18,7 @@ export async function editor(b) {
     await b.settle();
   };
   const ready = async () => {
-    await wait('window.layerApp?.startupTimes.complete != null');
+    await b.until('window.layerApp?.startupTimes.complete != null', 240000);
     await wait('JSON.parse(layerApp.app.workspace_view()).ready && !JSON.parse(layerApp.app.workspace_view()).busy');
     assert.equal(await read('document.querySelector("#status").textContent.includes("unavailable")'), false, 'GPU canvas is available');
   };
@@ -29,12 +32,15 @@ export async function editor(b) {
     await b.evaluate(`__captureFiles.set(${JSON.stringify(name)},Uint8Array.from(atob(${JSON.stringify(Buffer.from(bytes).toString('base64'))}),c=>c.charCodeAt(0)));void 0`);
   };
   const drawings = () => read('layerApp.app.document_tabs(0)');
+  const settledDocuments = () => b.until('!layerApp.state().document_file.busy && !layerApp.documents.busy() && layerApp.app.brush_ready() && layerApp.app.document_park_ready()', 60000);
   const closeOtherDrawings = async () => {
+    await settledDocuments();
     const keep = (await drawings()).selected;
     for (;;) {
       const other = (await drawings()).tabs.find(tab => tab.id !== keep);
       if (!other) break;
       assert.equal(other.modified, false, `Drawing saved before closing: ${other.title}`);
+      await settledDocuments();
       await b.evaluate(`layerApp.documents.close(${other.id}n);void 0`);
       await wait(`!layerApp.app.document_tabs(0).tabs.some(tab=>Number(tab.id)===${other.id}) && !document.querySelector('dialog[open]')`);
     }
@@ -101,6 +107,8 @@ export async function editor(b) {
       if (i % settleEvery === 0) await b.settle();
     }
     await b.settle();
+    await b.evaluate('layerApp.app.wait_for_canvas().then(()=>null)');
+    await idle();
   };
   const draw = async (d, options) => stroke(await path(d), options);
   const lasso = async d => { await invoke('lasso'); await draw(d, { pressure: .6 }); await wait('layerApp.state().layer_tools.has_selection'); };
@@ -141,8 +149,8 @@ export async function editor(b) {
     if (await read('layerApp.state().document_file.modified')) await save('_capture-scratch.capy');
     const before = (await drawings()).selected;
     await invoke('new_document');
-    await wait('!!document.querySelector(".document-dialog input[type=number]")');
-    await b.evaluate(`(()=>{const fields=document.querySelectorAll('.document-dialog input[type=number]');fields[0].value=${width};fields[1].value=${height};[...document.querySelectorAll('.document-dialog button')].find(b=>b.textContent==='Create').click();})()`);
+    await wait('!!document.querySelector(".document-dialog input.number-entry")');
+    await b.evaluate(`(()=>{const d=document.querySelector('.document-dialog');for(const[label,value]of[['Width (px)',${width}],['Height (px)',${height}]]){const entry=d.querySelector('input.number-entry[aria-label="'+label+'"]');entry.closest('.number-control').querySelector('.number-value').click();entry.value=String(value);entry.dispatchEvent(new Event('input',{bubbles:true}));entry.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',bubbles:true}));}[...d.querySelectorAll('button')].find(b=>b.textContent==='Create').click();})()`);
     await wait(`Number(layerApp.app.document_tabs(0).selected)!==${before} && !layerApp.state().document_file.busy && layerApp.state().tabs[0].width===${width}`);
     await closeOtherDrawings();
     await wait('layerApp.app.brush_ready()'); await invoke('fit_canvas');
@@ -156,5 +164,5 @@ export async function editor(b) {
     }
     await b.settle(); await invoke('fit_canvas');
   };
-  return { b, read, send, invoke, layer, wait, click, ready, active, select, add, visible, show, brush, setColor, path, stroke, draw, lasso, exportDialog, save, provide, drawings, closeOtherDrawings, selectDrawing, frame, open, load, newDocument, workspace };
+  return { b, read, idle, send, invoke, layer, wait, click, ready, active, select, add, visible, show, brush, setColor, path, stroke, draw, lasso, exportDialog, save, provide, drawings, closeOtherDrawings, selectDrawing, frame, open, load, newDocument, workspace };
 }

@@ -1,27 +1,91 @@
 ---
 title: "Início rápido"
-description: "Abra Capy Canvas, verifique sua caneta e salve seu primeiro desenho."
-purpose: "Antes de reorganizar qualquer coisa ou experimentar cada pincel, é útil fazer algumas marcas e salvá-las. Dessa forma, você sabe que o editor e sua caneta estão trabalhando juntos e você tem um pequeno desenho para voltar."
-techniques: ["Abra o editor e crie um novo desenho.", "Teste a pressão da caneta com um lápis.", "Salve seu desenho e exporte uma cópia para compartilhar."]
-figure: "1: Alternador de espaço de trabalho. 2: Conjunto de ferramentas, onde você escolhe um pincel. 3: Camadas, onde ficam suas marcas."
-related: ["workspace", "painting/brushes", "tools/files"]
-image: {"light": "/assets/guides/quickstart-light.webp", "dark": "/assets/guides/quickstart-dark.webp", "alt": "1: Alternador de espaço de trabalho. 2: Conjunto de ferramentas, onde você escolhe um pincel. 3: Camadas, onde ficam suas marcas."}
+description: "Como abrir o Capy Canvas, desenhar no primeiro desenho em branco, salvá-lo como arquivo .capy e exportar um PNG."
+related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
 ---
 
-## Abra o editor
+## Abrir o Capy Canvas
 
-A maneira mais rápida de começar é o [Web Demo](https://editor.capycanvas.art/), que roda em um navegador atualizado como Chrome, Edge ou Safari. Após a sua primeira visita, ele continua funcionando mesmo quando você está offline. Você também pode instalá-lo como um aplicativo; a [página de download](/pt-BR/download/) explica como.
+Faça uma das seguintes ações:
 
-Quando o editor abrir, escolha **Paint** no alternador de espaço de trabalho na parte superior da janela. Paint mantém seus pincéis, cores e camadas na tela, o que o torna um bom lugar para aprender. Em seguida, escolha **File → New…**, escolha um tamanho e selecione **Create**.
+- Abra o editor web em [editor.capycanvas.art](https://editor.capycanvas.art/).
+- Na página [Baixar](/pt-BR/download/), baixe o aplicativo para desktop ou o beta para iPad ou Android, ou veja como instalar o editor web como aplicativo.
 
-## Faça um primeiro golpe
+O editor web funciona nestes navegadores:
 
-Escolha a ferramenta **Pencil** à esquerda e, em seguida, escolha um dos lápis em **Tool Set**. Desenhe com uma caneta ou mouse; em uma tela sensível ao toque, seus dedos movem a visualização em vez de pintar. Desenhe uma linha que comece levemente, pressione com mais força no meio e clareie novamente no final. Se a sua caneta reportar pressão, a linha ficará mais espessa e escura onde você pressionou com mais força.
+| Sistema | Navegadores |
+| --- | --- |
+| Windows | Chrome, Edge, Firefox 141 ou posterior |
+| macOS | Chrome, Edge, Safari 26 ou posterior, Firefox 147 ou posterior (Apple silicon) |
+| Linux (Wayland) | Chrome, Edge |
+| iPadOS 26 ou posterior | Safari |
+| Android 12 ou posterior | Chrome |
 
-Se todas as linhas parecerem iguais, a caneta pode não estar pressionando o navegador. O [guia de caneta e toque](/pt-BR/docs/advanced/input/) explica o que verificar antes de alterar qualquer configuração de pincel. Pressione **Ctrl+Z** ou o botão desfazer na barra de ferramentas para remover marcas de teste que você não deseja manter e **Ctrl+Shift+Z** para refazer.
+Depois da primeira visita, o editor web abre também sem conexão com a internet.
 
-## Salve seu trabalho
+## O primeiro desenho
 
-Escolha **File → Save As…** para salvar um arquivo `.capy`. Isso mantém tudo editável, incluindo suas camadas, para que você possa continuar de onde parou. Quando quiser compartilhar uma imagem comum, escolha **File → Export…** e salve uma cópia PNG ou JPEG.
+![O painel Camadas de um desenho novo, com Tinta atual acima de Papel.](shot:files/new-layers)
 
-A partir daqui, [Pincéis e pintura](/pt-BR/docs/painting/brushes/) mostra como escolher e ajustar pincéis, e o [tutorial de ilustração](/pt-BR/docs/illustration/) conduz você por um desenho completo, desde o primeiro esboço até o sombreamento final.
+Na primeira vez que você abre o Capy Canvas, ele mostra a área de trabalho
+[Pintura](/pt-BR/docs/start/workspaces/) com um desenho em branco, e a barra de título
+mostra "Sem título · 2048 × 1536". **Tinta atual**, uma camada de pintura vazia, está
+selecionada acima de **Papel**, uma camada de preenchimento branca. A ferramenta
+**Caneta** está ativa, com o pincel **Caneta G** e uma cor quase preta.
+
+Nas vezes seguintes, o Capy Canvas abre com a última área de trabalho usada e os
+desenhos que estavam abertos.
+
+## Desenhar
+
+Arraste na tela com uma caneta ou um mouse. Para usar outra ferramenta, selecione-a
+na barra de ferramentas Ferramentas, na borda esquerda da janela. Em Esboço,
+selecione **Pincel** na barra de título.
+
+> **Observação:** Os dedos nunca desenham. Com dois dedos na tela, você desloca, amplia e gira a visualização.
+
+Para desfazer um traço, escolha **Editar > Desfazer**, pressione **Ctrl+Z** ou toque
+na tela com dois dedos (consulte [Desfazer e refazer](/pt-BR/docs/start/undo/)).
+
+## Teclas no macOS e no iPad
+
+Este manual indica as teclas como no Windows e no Linux. No macOS e no iPad,
+pressione **Command** (⌘) onde o manual diz **Ctrl**. **Ctrl** também funciona no
+editor web e no aplicativo para macOS.
+
+O editor web indica todos os atalhos com **Ctrl**. O navegador reserva **F5**,
+**F11**, **F12** e **Ctrl** ou **Ctrl+Shift** com **W**, **T**, **N**, **R**, **L**,
+**Q** ou **P**. Um comando que usa uma dessas teclas fica sem atalho no editor web.
+Escolha-o no menu ou na [busca de comandos](/pt-BR/docs/start/command-search/).
+
+## Começar outro desenho
+
+Escolha **Arquivo > Novo…** e selecione **Criar** na caixa de diálogo
+[Novo desenho](/pt-BR/docs/files/new/). O novo desenho abre em uma aba própria, ao
+lado do primeiro.
+
+## Salvar o desenho
+
+![O menu Arquivo com Novo…, Abrir…, Salvar, Salvar como… e Exportar….](shot:files/file-menu)
+
+Para salvar o desenho com todas as camadas:
+
+1. Escolha **Arquivo > Salvar** ou pressione **Ctrl+S**.
+2. Escolha uma pasta e um nome. O nome sugerido é "Sem título.capy".
+
+A barra de título passa a mostrar o nome do arquivo. No Firefox e no Safari, o
+desenho só conta como salvo depois que você seleciona **Baixar** e depois
+**Arquivo salvo** na caixa de diálogo **Baixar arquivo**.
+
+## Exportar um PNG
+
+![A caixa de diálogo Exportar imagem com Destino definido como Web / Compartilhar.](shot:files/export-dialog)
+
+Para exportar uma cópia achatada do desenho em PNG:
+
+1. Escolha **Arquivo > Exportar…** ou pressione **Ctrl+Shift+E**.
+2. Deixe **Destino** definido como **Web / Compartilhar** e selecione **Escolher arquivo…**.
+3. Escolha uma pasta e um nome. O nome sugerido é "Sem título.png".
+
+**Web / Compartilhar** grava um PNG sRGB de 8 bits no tamanho total do desenho.
+Exportar não altera nem salva o desenho.

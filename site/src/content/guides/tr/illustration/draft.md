@@ -1,27 +1,71 @@
 ---
-title: "Eskiz"
-description: "Bir kalem taslağı çizin ve renkleri ayrı bir katmanda deneyin."
-purpose: "Eskiz, şekilleri çözdüğünüz yerdir ve renk pürüzlülüğü ise renkleri denediğiniz yerdir. Bunları ayrı katmanlarda tutmak, kalem çizgilerinize dokunmadan renkleri istediğiniz sıklıkta değiştirebileceğiniz anlamına gelir."
-techniques: ["Bir kalem ve kalem baskısı ile çizin.", "Çizimin bir bölümünü seçin ve düzeltin.", "Taslağın altındaki bir katmana kaba renkler koyun."]
-figure: "1: Kurşun kalem fırçaları. 2: Sketch Katmanlar halinde kaba renk üzerinde. 3: Kalem boyutu ve opaklığı."
-related: ["tools/selections", "tools/transforms", "painting/color"]
-image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/assets/guides/illustration-draft-dark.webp", "alt": "1: Kurşun kalem fırçaları. 2: Sketch Katmanlar halinde kaba renk üzerinde. 3: Kalem boyutu ve opaklığı."}
+title: "Eskiz çizme"
+description: "İllüstrasyon eğitiminin 1. aşaması: Kement dolgusu ile çizilen bir renk taslağı ve üstünde bir kurşun kalem eskizi."
+related: ["files/new", "drawing/fill", "drawing/brush-tools", "transform/move-transform"]
 ---
 
-## 1. Taslağı çizin
+Bu aşamada üç şeklin renk taslağı ve bunun üstündeki bir katmanda kurşun kalem
+eskizi oluşur.
 
-Yeni bir katman ekleyin ve **Sketch** olarak adlandırın. **Pencil** aracını ve Araç Seti'ndeki kalemlerden birini seçin. Diski, kavisli şeridi ve eğimli bloğu bulmak için hafif çizgilerle başlayın, ardından korumak istediğiniz ana hatları sağlamlaştırmak için daha sert bastırın. Araç panelinde kalemin boyutunu ayarlayın.
+## 1. Çizimi oluşturun
 
-Şekillerin etrafında biraz boşluk bırakın. Sonraki aşamaları kolaylaştırır çünkü her şeklin nerede bittiğini net bir şekilde görebileceksiniz. Arada sırada çizimin yansıtılmış halini görmek için üst araç çubuğunda **Flip view horizontally** öğesini seçin; Orantılı hataların bu şekilde fark edilmesi çok daha kolaydır.
+1. Başlık çubuğundaki çalışma alanı değiştiricide **Boya** seçeneğini seçin.
+2. **Dosya > Yeni…** komutunu seçin veya **Ctrl+N** tuşlarına basın ([Yeni çizimler](/tr/docs/files/new/)).
+3. **Yeni çizim** iletişim kutusunda **Genişlik (px)** ve **Yükseklik (px)** değerlerini 1200 yapın ve **Oluştur** düğmesini seçin.
 
-## 2. Tam olarak doğru olmayan bir parçayı düzeltin
+![Genişlik (px) ve Yükseklik (px) değerleri 1200 olan Yeni çizim iletişim kutusu.](shot:illustration/new-drawing)
 
-Parçalardan biri yanlış yerdeyse veya yanlış boyuttaysa onu yeniden çizmenize gerek yoktur. **Lasso selection**'yu seçin ve bu parçanın etrafına bir döngü çizin. Ardından **Scale / rotate**'yu seçin, parçayı yerine sürükleyin veya yeniden boyutlandırın ve **Apply transform**'yu seçin. Çizime devam etmeden önce **Select → Deselect pixels**'yu seçin.
+Çizimde iki katman vardır: **Kâğıt** katmanının üstünde **Geçerli mürekkep**.
+Katmanlar panelinde **Geçerli mürekkep** katmanına çift tıklayın ve katmanı
+*Color rough* olarak yeniden adlandırın.
 
-[selection](/tr/docs/tools/selections/) ve [transform](/tr/docs/tools/transforms/) kılavuzları bu araçları daha ayrıntılı olarak açıklamaktadır. Bir değişiklik ters giderse, geri almanız yeterlidir.
+## 2. Renkleri yerleştirin
 
-## 3. Renkleri deneyin
+**Kement dolgusu** aracı, serbest elle çizilen bir şekli tek darbede geçerli
+renkle doldurur ([Dolgu araçları](/tr/docs/drawing/fill/)). Araçlar
+çubuğunda **Doldur** düğmesini seçin, ardından **Araç seti** panelinde
+**Kement dolgusu** aracını seçin.
 
-**Color rough** adında başka bir katman ekleyin ve onu Sketch'nun altına sürükleyin. Her şekil için bir renk seçin, **Lasso selection** ile şeklin çevresini çizin ve **Edit → Fill selection**'yu seçin. Örnekte şerit için deniz mavisi, disk için toprak boyası ve blok için pişmiş toprak kullanılmıştır. Bunlar kaba renkler olduğundan kenarların düzgün olmasına gerek yoktur. Kalem çizgilerinin kolayca görülebilmesi için katmanın opaklığını biraz azaltın.
+![Kement dolgusu seçili Araç seti paneli.](shot:illustration/draft-lasso-fill)
 
-Taslağı tek başına görmek istediğinizde, Renk Kaba'yı bir anlığına gizleyin. Çiziminizi kaydedin ve ardından [Line art](/tr/docs/illustration/ink/).jpg'ye devam edin.
+Her şekil için **Renk** panelinde şeklin rengini seçin ve dış çizgisini tek
+darbede çizin. Sol alttaki blokla terrakota renginde başlayın, ardından üstündeki
+diski aşı boyası renginde, son olarak sağdaki şeridi petrol mavisi renginde
+çizin. Her şekil önceki şekillerin bazı bölümlerini örter.
+
+Katmanlar paneli başlığında **Katman opaklığı** değerini 50 yapın
+([Katmanlar paneli](/tr/docs/layers/panel/)). *Color rough* satırında katman
+adının altında “%50” görünür.
+
+## 3. Eskizi çizin
+
+Katmanlar panelinin altındaki **Yeni katman** düğmesini seçin ve yeni katmanı
+*Sketch* olarak yeniden adlandırın. Katman *Color rough* katmanının hemen
+üstünde görünür.
+
+Araçlar çubuğunda **Kurşun kalem** düğmesini, Araç setinde **Kurşun kalem**
+fırçasını seçin ([Fırça araçları](/tr/docs/drawing/brush-tools/)). **Araç**
+panelinde **Fırça boyutu** değerini 8 px yapın.
+
+![Kurşun kalem fırçaları ve seçili Kurşun kalem ile Araç seti paneli.](shot:illustration/draft-pencils)
+
+Üç dış çizgiyi, ardından karalamaları ve tarama çizgilerini çizin. Örnekte
+ayrıca 5 px ile çizilmiş adaçayı yeşili yardımcı çizgiler bulunur.
+
+Katman listesinde *Sketch*, *Color rough* ve **Kâğıt** yer alır.
+
+## 4. Eskizin bir bölümünü dönüştürün
+
+Eskizin seçili bir bölümünü **Dönüştür** ile taşıyabilir, ölçekleyebilir veya
+döndürebilirsiniz ([Taşıma ve dönüştürme](/tr/docs/transform/move-transform/)).
+Örnekte sağ alttaki halka dönüştürülür.
+
+1. **M** tuşuna basın veya Araçlar çubuğunun **Seç** grubunda **Kement seçimi** aracını seçin ve bölümün çevresine bir halka çizin.
+2. Seçim çubuğunda **Dönüştür** düğmesini seçin veya **Ctrl+T** tuşlarına basın.
+3. Tutamaçları sürükleyin.
+4. Çubukta **Uygula** düğmesini seçin veya **Enter** tuşuna basın.
+5. **Seç > Piksel seçimini kaldır** komutunu seçin veya **Ctrl+D** tuşlarına basın.
+
+![Eskizin seçili bir bölümünün yanında İptal ve Uygula düğmeleriyle dönüştürme çubuğu.](shot:illustration/draft-transform)
+
+Sonraki aşama: [Çizgi çalışması](/tr/docs/illustration/ink/).

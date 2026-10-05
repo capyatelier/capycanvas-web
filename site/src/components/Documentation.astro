@@ -10,11 +10,11 @@ const { locale } = Astro.props;
 const t = docsUI[locale];
 const overview = t.landing;
 const topics = [
-  { id: 'painting', copy: overview.sections.painting, href: route(locale, 'documentation', 'painting/brushes') },
-  { id: 'workspace', copy: overview.sections.workspace, href: route(locale, 'documentation', 'workspace') },
-  { id: 'input', copy: overview.sections.input, href: route(locale, 'documentation', 'advanced/input') },
-  { id: 'color', copy: overview.sections.color, href: route(locale, 'documentation', 'painting/color') },
-  { id: 'photo', copy: overview.sections.photo, href: route(locale, 'documentation', 'filters/image-editing') },
+  { id: 'painting', copy: overview.sections.painting, href: route(locale, 'documentation', 'drawing/brush-tools') },
+  { id: 'workspace', copy: overview.sections.workspace, href: route(locale, 'documentation', 'start/workspaces') },
+  { id: 'input', copy: overview.sections.input, href: route(locale, 'documentation', 'input/pen') },
+  { id: 'color', copy: overview.sections.color, href: route(locale, 'documentation', 'color/color-panel') },
+  { id: 'photo', copy: overview.sections.photo, href: route(locale, 'documentation', 'photo') },
   { id: 'native', copy: overview.sections.native, href: repositoryUrl },
 ];
 const startingPoints = [

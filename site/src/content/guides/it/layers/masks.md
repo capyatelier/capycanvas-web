@@ -1,27 +1,129 @@
 ---
-title: "Maschere e ritagli"
-description: "Nascondi parti di un livello senza cancellarle e mantieni l'ombreggiatura all'interno di una forma."
-purpose: "Una maschera nasconde parte di un livello senza eliminare la vernice, quindi puoi sempre cambiare idea su dove dovrebbe essere il bordo. Il ritaglio mantiene un livello all'interno della forma del livello sottostante, che è il modo più semplice per aggiungere un'ombreggiatura che non fuoriesca mai dalle linee."
-techniques: ["Crea una maschera da una selezione.", "Paint su una maschera per mostrare o nascondere la vernice.", "Aggancia l'ombreggiatura al livello sottostante."]
-figure: "1: miniatura della maschera della barra multifunzione. 2: Ombreggiatura ritagliata sopra il nastro. 3: Clip al livello sottostante e controlli Alpha Lock."
-related: ["tools/selections", "illustration/mask", "illustration/render"]
-image: {"light": "/assets/guides/layers-masks-light.webp", "dark": "/assets/guides/layers-masks-dark.webp", "alt": "1: miniatura della maschera della barra multifunzione. 2: Ombreggiatura ritagliata sopra il nastro. 3: Clip al livello sottostante e controlli Alpha Lock."}
+title: "Maschere"
+description: "Nascondere parti di un livello con una maschera, e tutti i comandi che modificano una maschera."
+related: ["layers/panel", "selections/working", "filters/how-filters-apply", "layers/merging"]
 ---
 
-## Crea una maschera da una selezione
+Puoi nascondere parti di un livello con una maschera. Le aree dipinte sulla
+maschera mostrano il livello, e le aree vuote lo nascondono. Possono avere una
+maschera i livelli di pittura, i livelli fotografici, i gruppi, i livelli di
+riempimento e i filtri.
 
-Per prima cosa [seleziona](/it/docs/tools/selections/) l'area che desideri mantenere visibile. Quindi apri il menu del livello e scegli **Mask → Mask: reveal selection**. Tutto ciò che è esterno alla selezione viene nascosto, ma nulla viene cancellato. Puoi anche scegliere **Mask: hide selection** per nascondere l'area selezionata. Ricordati di deselezionare in seguito, in modo che i tratti successivi non siano limitati alla selezione.
+## Aggiungere una maschera
 
-Una maschera può mostrare solo la vernice effettivamente presente sul livello. Se pensi di voler allargare la forma in un secondo momento, riempi l'intero livello con il colore prima di mascherarlo, come fa la [fase di mascheramento](/it/docs/illustration/mask/) del tutorial.
+Esegui una delle seguenti operazioni:
 
-## Paint sulla maschera
+- Scegli **Livello > Maschera > Aggiungi maschera**.
+- Seleziona **Aggiungi maschera** in fondo al pannello Livelli.
 
-Fai clic sulla miniatura della maschera accanto al livello per modificare la maschera anziché la vernice. Ora qualsiasi pennello rivela una parte maggiore dello strato ovunque dipingi e **Eraser** lo nasconde di nuovo. Il colore con cui dipingi non ha importanza su una maschera. Quando hai finito, fai clic sulla miniatura della pittura per tornare a dipingere normalmente.
+![La riga di Ribbon, con un contorno attorno alla miniatura della maschera.](shot:layers/masks-row)
 
-Il menu della maschera può disattivare la maschera per un momento, invertirla o eliminarla. Spegnerlo è un modo pratico per confrontare il risultato con la vernice sottostante.
+La miniatura della maschera appare a destra della miniatura del livello, con un
+contorno che la indica come destinazione dei pennelli. Una nuova maschera mostra
+l'intero livello. Se c'è una selezione attiva, la maschera mostra solo l'area
+selezionata, e la selezione viene annullata.
 
-## Aggancia l'ombreggiatura a una forma
+Se il livello ha già una maschera, **Aggiungi maschera** la seleziona per
+dipingerci sopra. Non puoi aggiungere una maschera a un livello di selezione o a
+un livello bloccato.
 
-Aggiungi un nuovo livello direttamente sopra un livello base, apri il suo menu e scegli **Layer Settings → Clip to layer below**. Qualunque cosa dipingi sullo strato ritagliato ora mostra solo dove c'è vernice sullo strato di base, così puoi ombreggiare liberamente senza andare oltre i bordi. Puoi impilare diversi livelli ritagliati sopra la stessa base, uno per le ombre e un altro per le luci.
+## Dipingere su una maschera
 
-**Alpha lock** è un'alternativa più semplice quando desideri ricolorare tratti già esistenti, come la grafica al tratto. Mantiene la nuova vernice all'interno dei tratti esistenti sullo stesso livello. La [fase di rendering](/it/docs/illustration/render/) del tutorial utilizza entrambi.
+Seleziona la miniatura della maschera per dipingere sulla maschera. Per tornare a
+dipingere sul livello, seleziona la miniatura del livello o premi **Esc**.
+
+> **Nota:** su una maschera i pennelli ignorano il colore di pittura. Rivelano il livello, e la **Gomma** lo nasconde.
+
+Su una maschera invertita, i pennelli e la **Gomma** si scambiano i ruoli. I
+tratti sulla maschera sono asciutti, senza mescolanza, diffusione né trama.
+
+## Barra di modifica della maschera
+
+Mentre dipingi su una maschera, in fondo alla tela appare una barra con la
+scritta «Modifica della maschera di *livello*».
+
+![La barra di modifica della maschera con Inverti, Disattiva, Applica maschera, Altro e Modifica contenuto.](shot:layers/masks-bar)
+
+- **Inverti**
+- **Disattiva** spegne la maschera, e il pulsante diventa **Attiva**.
+- **Applica maschera** cancella i pixel nascosti dalla maschera, poi rimuove la maschera.
+- **Altro** contiene il menu **Livello** e **Mostra barra azioni della tela**. Disattiva **Mostra barra azioni della tela** per nascondere la barra.
+- **Modifica contenuto** torna a dipingere sul livello.
+
+## Maschere dalle selezioni
+
+Puoi creare una maschera dalla selezione corrente.
+
+Esegui una delle seguenti operazioni:
+
+- Scegli **Livello > Maschera > Maschera: mostra selezione** o **Maschera: nascondi selezione**. Su un livello con maschera, le voci diventano **Sostituisci maschera: mostra selezione** e **Sostituisci maschera: nascondi selezione**.
+- Seleziona **Maschera** nella [barra della selezione](/it/docs/selections/working/) sulla tela. La nuova maschera mostra l'area selezionata e sostituisce l'eventuale maschera del livello.
+
+Un filtro o un livello di riempimento aggiunto mentre c'è una selezione attiva
+riceve una maschera dalla selezione. **Incolla dentro** crea un nuovo livello con
+una maschera sulla selezione (vedi [Copiare e incollare](/it/docs/transform/clipboard/)).
+
+## Selezioni dalle maschere
+
+Puoi caricare una maschera come selezione.
+
+Esegui una delle seguenti operazioni:
+
+- Scegli **Seleziona > Dalla maschera del livello** e poi **Carica maschera come selezione**, **Aggiungi maschera alla selezione**, **Sottrai maschera dalla selezione** o **Interseca con maschera**.
+- Scegli le stesse voci da **Selezione pixel** nel menu della maschera.
+- Fai **Ctrl**+clic sulla miniatura della maschera. Aggiungi **Maiusc** per aggiungere alla selezione, **Alt** per sottrarre o **Maiusc+Alt** per intersecare.
+
+## Menu della maschera
+
+Esegui una delle seguenti operazioni:
+
+- Scegli **Livello > Maschera** (la prima voce è **Modifica maschera**).
+- Fai clic con il pulsante destro sulla miniatura della maschera, o tienila premuta.
+- Mentre dipingi sulla maschera, apri il menu **Livello** o seleziona **Azioni livello** in fondo al pannello Livelli.
+
+Su un livello senza maschera, **Livello > Maschera** contiene solo
+**Aggiungi maschera**, **Maschera: mostra selezione**,
+**Maschera: nascondi selezione** e **Incolla maschera**.
+
+![Il menu della maschera di Ribbon.](shot:layers/masks-menu)
+
+| Voce | Funzione |
+| --- | --- |
+| **Modifica contenuto livello** | Torna a dipingere sul livello. |
+| **Mostra area della maschera** | Mostra la maschera sulla tela e la seleziona per dipingerci sopra. |
+| **Attiva maschera** | Attiva o disattiva la maschera senza modificarla. Una maschera disattivata ha la miniatura sbiadita. |
+| **Collega maschera al livello** | Se attivo, la maschera si sposta con il livello. Se disattivo, **Sposta livello / maschera** sposta il livello o la maschera, a seconda di dove stai dipingendo. Il pulsante di collegamento tra le miniature fa lo stesso. |
+| **Sostituisci maschera: mostra selezione**, **Sostituisci maschera: nascondi selezione** | Sostituisce la maschera con la selezione. |
+| **Copia maschera** | Copia la maschera, per **Sostituisci con maschera copiata** su un altro livello o **Incolla maschera** su un livello senza maschera. |
+| **Inverti maschera** | Scambia le aree mostrate e quelle nascoste. |
+| **Mostra tutto**, **Nascondi tutto** | La maschera mostra o nasconde l'intero livello, e l'inversione viene disattivata. |
+| **Applica maschera al livello** | Cancella i pixel nascosti dalla maschera, poi rimuove la maschera. |
+| **Elimina maschera** | Rimuove la maschera. I pixel del livello non cambiano. |
+| **Selezione pixel** | Carica la maschera come selezione. |
+
+Tutte le voci tranne **Modifica contenuto livello**,
+**Mostra area della maschera** e **Copia maschera** richiedono un livello non
+bloccato.
+
+## Applicare una maschera
+
+Esegui una delle seguenti operazioni:
+
+- Scegli **Livello > Maschera > Applica maschera al livello**.
+- Seleziona **Applica maschera** nella barra di modifica della maschera.
+
+**Applica maschera al livello** funziona solo sui livelli di pittura, e la
+maschera deve essere attiva. Su un livello distorto o deformato, scegli prima
+**Applica trasformazione ai pixel**. Per applicare la maschera di un gruppo, usa
+**Unisci gruppo** (vedi [Unire i livelli](/it/docs/layers/merging/)).
+
+Su un livello fotografico, **Ripristina foto originale** recupera ciò che una
+maschera applicata ha cancellato.
+
+## Maschere sui livelli filtro e di riempimento
+
+La maschera di un filtro stabilisce dove si applica il filtro. Con un filtro o
+un livello di riempimento selezionato, i pennelli dipingono sempre sulla sua
+maschera. **Riempi**, **Sfumatura** e gli altri strumenti che disegnano non
+funzionano sulla maschera di un filtro. Per dipingere su un livello di
+riempimento serve una maschera.

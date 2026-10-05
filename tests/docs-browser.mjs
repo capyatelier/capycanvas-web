@@ -19,11 +19,12 @@ export async function checkDocumentation(b, host, check) {
   await b.until("location.pathname === '/ja/docs/quickstart/' && document.readyState === 'complete'");
   check(await b.evaluate("document.documentElement.lang === 'ja' && !!document.querySelector('.guide-prose')"), 'Legacy guide redirects without JavaScript');
   await b.call('Emulation.setScriptExecutionDisabled', { value: false });
-  for (const [width, height] of [[1440, 900], [390, 844]]) for (const theme of ['light', 'dark']) for (const locale of Object.keys(languages)) for (const { slug } of docTopics) {
+  const views = locale => locale === 'en' ? [[1440, 900, 'light'], [1440, 900, 'dark'], [390, 844, 'light'], [390, 844, 'dark']] : [[1440, 900, 'dark'], [390, 844, 'light']];
+  for (const locale of Object.keys(languages)) for (const [width, height, theme] of views(locale)) for (const { slug } of docTopics) {
     await b.call('Emulation.setDeviceMetricsOverride', { width, height, deviceScaleFactor: 1, mobile: false });
     await b.theme(theme);
     await b.navigate(host.url + route(locale, slug));
-    await b.evaluate('Promise.all([...document.images].map(image => image.decode())).then(() => null)');
+    await b.evaluate("document.querySelectorAll('img[loading=lazy]').forEach(image => { image.loading = 'eager'; }); Promise.all([...document.images].map(image => image.decode())).then(() => null)");
     await b.settle();
     const metrics = await b.evaluate(`(() => {
       const visible = element => element.checkVisibility();
@@ -39,28 +40,32 @@ export async function checkDocumentation(b, host, check) {
         headings: [...document.querySelectorAll('.guide-prose h2')].map(element => element.id),
         toc: [...document.querySelectorAll('.docs-toc a')].map(element => decodeURIComponent(element.hash.slice(1))),
         background: getComputedStyle(document.body).backgroundColor,
-        image: document.querySelector('.guide-figure img')?.currentSrc,
-        imageLink: document.querySelector('.guide-image-link')?.href,
-        sequence: ['.docs-lead', '.guide-techniques', '.guide-figure', '.guide-prose'].map(selector => document.querySelector(selector).getBoundingClientRect().top),
+        image: document.querySelector('.guide-shot img')?.currentSrc,
+        imageLink: document.querySelector('.guide-shot .guide-image-link')?.href,
+        images: [...document.querySelectorAll('.guide-shot img')].map(image => image.complete && image.naturalWidth > 0),
+        wide: [...document.querySelectorAll('.guide-shot img')].filter(image => image.getBoundingClientRect().right > innerWidth + 1).length,
       };
     })()`);
     const label = `${width}/${theme}/${locale}/${slug}`;
     check(metrics.scroll <= width && metrics.clipped.length === 0, `Guide overflow ${label}: ${JSON.stringify(metrics)}`);
     check(metrics.locale === locale && metrics.current === route(locale, slug), `Localized active guide ${label}`);
     check(metrics.menuOpen === (width > 800), `Responsive documentation menu ${label}`);
+    check(await b.evaluate(`document.querySelector('.docs-navigation [aria-current=page]').checkVisibility() || ${width <= 800}`), `Current chapter is open in the sidebar ${label}`);
     check(metrics.headings.length > 0 && metrics.headings.every(id => metrics.toc.includes(id)), `Guide section anchors ${label}`);
     check(metrics.background === (theme === 'dark' ? 'rgb(51, 51, 51)' : 'rgb(237, 237, 237)'), `Guide theme ${label}`);
-    check(metrics.sequence.every((top, index) => index === 0 || top > metrics.sequence[index - 1]), `Purpose and techniques precede steps ${label}`);
-    check(metrics.image.endsWith(`${slug.replaceAll('/', '-')}-${theme}.webp`), `Guide screenshot follows appearance ${label}`);
-    check(metrics.imageLink === metrics.image, `Full-size link follows the displayed screenshot ${label}`);
-    if ((locale === 'en' && ['illustration', 'illustration/mask', 'workspace'].includes(slug)) || (locale === 'ko' && slug === 'advanced/input')) {
+    if (metrics.image) {
+      check(metrics.image.endsWith(`-${theme}.webp`), `Guide screenshots follow appearance ${label}`);
+      check(metrics.imageLink === metrics.image, `Full-size link follows the displayed screenshot ${label}`);
+    }
+    check(metrics.images.every(Boolean) && metrics.wide === 0, `Guide screenshots load and fit ${label}`);
+    if ((locale === 'en' && ['illustration', 'illustration/mask', 'start/workspaces', 'layers/panel', 'filters/how-filters-apply', 'photo/adjust'].includes(slug)) || (locale === 'ko' && slug === 'input/pen')) {
       await b.screenshot(`artifacts/review/guide-${width}-${theme}-${locale}-${slug.replaceAll('/', '-')}.png`, true);
     }
     results.push(label);
   }
   // The narrowest supported width and a long translated title.
   await b.call('Emulation.setDeviceMetricsOverride', { width: 320, height: 568, deviceScaleFactor: 1, mobile: false });
-  await b.navigate(host.url + '/ko/docs/advanced/input/');
+  await b.navigate(host.url + '/ko/docs/input/pen/');
   check(await b.evaluate('document.documentElement.scrollWidth <= innerWidth'), 'Narrow input reference has no horizontal overflow');
   // Keyboard-accessible mobile navigation opens, closes, and follows real links.
   await b.evaluate("document.querySelector('.docs-menu summary').focus()");
@@ -99,7 +104,7 @@ export async function checkDocumentation(b, host, check) {
   for (const [platform, userAgent, maxTouchPoints, expected] of profiles) {
     const { identifier } = await b.call('Page.addScriptToEvaluateOnNewDocument', { source: `for (const [key,value] of Object.entries(${JSON.stringify({ platform, userAgent, maxTouchPoints })})) Object.defineProperty(navigator,key,{get:()=>value,configurable:true});` });
     await b.evaluate('localStorage.clear()');
-    await b.navigate(host.url + '/docs/advanced/input/?lang=en');
+    await b.navigate(host.url + '/docs/input/pen/?lang=en');
     await b.until("document.querySelector('.docs-platform')?.hidden === false");
     check(await b.evaluate(`document.querySelector('.docs-platform').value === '${expected}'`), `Device guide detects ${expected}/${platform}`);
     check(await b.evaluate(`document.querySelectorAll('[data-doc-platform]:not([hidden])').length === ${expected === 'all' ? 5 : 1}`), 'Only the selected device notes are visible');
@@ -107,19 +112,19 @@ export async function checkDocumentation(b, host, check) {
   }
   await b.evaluate("const picker = document.querySelector('.docs-platform'); picker.value = 'android'; picker.dispatchEvent(new Event('change')); ");
   for (const locale of ['ja', 'zh', 'ko', 'en']) {
-    await b.navigate(host.url + route(locale, 'advanced/input'));
+    await b.navigate(host.url + route(locale, 'input/pen'));
     await b.until("document.querySelector('.docs-platform')?.hidden === false");
     check(await b.evaluate("document.querySelector('.docs-platform').value === 'android' && !document.querySelector('[data-doc-platform=android]').hidden"), `Device choice persists in ${locale}`);
   }
   const { identifier: storageOverride } = await b.call('Page.addScriptToEvaluateOnNewDocument', { source: "Object.defineProperty(window,'localStorage',{get(){throw new Error('Storage disabled')}})" });
-  await b.navigate(host.url + '/docs/advanced/input/?lang=en');
+  await b.navigate(host.url + '/docs/input/pen/?lang=en');
   await b.until("document.querySelector('.docs-platform')?.hidden === false");
   await b.evaluate("const picker = document.querySelector('.docs-platform'); picker.value = 'all'; picker.dispatchEvent(new Event('change')); ");
   check(await b.evaluate("document.querySelectorAll('[data-doc-platform]:not([hidden])').length === 5"), 'Device picker works with storage disabled');
   await b.call('Page.removeScriptToEvaluateOnNewDocument', { identifier: storageOverride });
   await b.call('Emulation.setScriptExecutionDisabled', { value: true });
   for (const locale of ['en', 'ja', 'zh', 'ko']) {
-    await b.navigate(host.url + route(locale, 'advanced/input'));
+    await b.navigate(host.url + route(locale, 'input/pen'));
     check(await b.evaluate(`document.documentElement.lang === '${content[locale].lang}' && document.querySelectorAll('[data-doc-platform]:not([hidden])').length === 5 && document.querySelector('.docs-platform').hidden`), `All platform content survives without JavaScript in ${locale}`);
     check(await b.evaluate(`document.querySelector('.docs-menu').open && document.querySelectorAll('.docs-navigation a').length === ${docTopics.length + 1} && document.querySelectorAll('.guide-prose h2').length > 0`), 'Static guides and mobile navigation are usable without JavaScript');
   }

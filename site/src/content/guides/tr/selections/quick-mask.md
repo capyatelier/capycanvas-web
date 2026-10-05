@@ -1,25 +1,107 @@
 ---
-title: "Hızlı Maske ve seçim katmanları"
-description: "Paint fırça ile bir seçim yapın ve seçimleri daha sonra tekrar kullanmak üzere kaydedin."
-purpose: "Yumuşak saçlar, bulutlar veya bulanık bir arka plan gibi bazı alanları boyamak ana hatlarını çizmekten daha kolaydır. Hızlı Maske, seçiminizi herhangi bir fırçayla boyayabileceğiniz renkli bir kaplama olarak gösterir. Seçim katmanları bir seçimi çiziminizde tutar, böylece ihtiyacınız olduğunda tekrar yükleyebilirsiniz."
-techniques: ["Hızlı Maske'de bir fırçayla seçimi hassaslaştırın.", "Paint doğrudan Paint seçimiyle bir seçim.", "Seçimi seçim katmanı olarak kaydedin ve daha sonra yükleyin."]
-figure: "1: Geçici Hızlı Maske katmanı. 2: Kaplama rengi de dahil olmak üzere Hızlı Maske ayarları. 3: Fırça darbesiyle genişletilmiş, renkli bir katman olarak gösterilen seçim."
-related: ["tools/selections", "selections/tonal-range", "layers/masks"]
-image: {"light": "/assets/guides/selections-quick-mask-light.webp", "dark": "/assets/guides/selections-quick-mask-dark.webp", "alt": "1: Geçici Hızlı Maske katmanı. 2: Kaplama rengi de dahil olmak üzere Hızlı Maske ayarları. 3: Fırça darbesiyle genişletilmiş, renkli bir katman olarak gösterilen seçim."}
+title: "Hızlı maske"
+description: "Hızlı maskede bir seçimi boyanmış bir maske olarak düzenleme."
+related: ["selections/working", "selections/selection-layers", "selections/tonal-range", "layers/masks"]
 ---
 
-## Hızlı Maske'de seçimi hassaslaştırın
+Hızlı maskede bir seçimi boyanmış bir maske olarak düzenleyebilirsiniz.
 
-Herhangi bir seçim aracıyla kaba bir seçim yapın, ardından **Select → Quick Mask**'yu seçin veya **Q**'ya basın. Seçim renkli bir katman olarak görünür ve Katmanlar panelinin üst kısmında geçici bir **Quick Mask** katmanı görünür. Şimdi seçime eklemek için herhangi bir fırçayla boyayın ve ondan çıkarmak için **Eraser**'yu kullanın. Yumuşak fırçalar yumuşak kenarlar oluşturur; bu da kürk veya yapraklar için tam olarak istediğiniz şeydir.
+## Hızlı maskeye girme
 
-Kaplamanın çiziminizde görülmesi zorsa rengini veya opaklığını **Properties**'da değiştirin. Seçim doğru göründüğünde, seçim etkin durumdayken boyamaya geri dönmek için **Return to Artwork**'yu seçin.
+Aşağıdakilerden birini yapın:
 
-## Paint doğrudan bir seçim
+- **Seç > Hızlı maske** komutunu seçin.
+- **Q** tuşuna basın.
+- [Seçim çubuğunda](/tr/docs/selections/working/) **Hızlı maske** düğmesini seçin.
 
-İlk adımı atlamayı tercih ederseniz seçim araçlarından **Paint selection** aracını seçin. Yaptığınız her vuruş seçime eklenir ve bir alanı daire içine almak içindeki her şeyi seçer. Seçimin bazı kısımlarını yeniden boyamak için **Alt** tuşunu basılı tutun veya Araç panelindeki modu değiştirin.
+Geçerli seçim maske olur. Seçim yoksa maske boş başlar. **Ton aralığı** etkin
+olduğu durum dışında araç geçerli fırçaya geçer.
 
-## Seçimleri daha sonra kullanmak üzere kaydet
+Bir dönüştürme açıkken Hızlı maskeye giremezsiniz.
 
-Yeni bir seçim yaptığınızda seçim kaybolur, bu nedenle ihtiyaç duyacağınız seçimi tekrar kaydedin. Hızlı Maske katmanı menüsünden **Select → Save as Selection Layer** veya **Save as Selection Layer**'yu seçin. Seçim, Katmanlar panelinde bir seçim katmanı olarak saklanır ve çiziminizle birlikte kaydedilir.
+## Hızlı maskenin gösterdikleri
 
-Tekrar kullanmak için **Select → Load Selection**'yu seçin veya **Ctrl**'yu basılı tutun ve seçim katmanının küçük resmini tıklayın. Ayrıca bunu katmanın menüsündeki geçerli seçimle de birleştirebilirsiniz. Katmanlar panelinin altındaki **New Selection Layer** düğmesi, doğrudan boyama yapabileceğiniz boş bir seçim katmanı oluşturur.
+Varsayılan olarak %50 kırmızı olan bir kaplama tuvalde maskeyi işaretler.
+**Seçimi boya** modunda kaplama seçili alanı, **Gri tonlamalı maske** modunda
+seçimin dışındaki alanı kaplar.
+
+Katmanlar panelinin en üstünde **Hızlı maske** adlı seçili bir satır görünür.
+Bu satırın göz düğmesi, komut aramadaki **Maske kaplamasını göster** gibi
+kaplamayı gösterir veya gizler. Renk paneli çizim renkleri yerine maske
+renklerini gösterir.
+
+![Hızlı maskede teraryum fotoğrafı, kaplama açık tonların üstünde.](shot:selections/quick-mask-overlay)
+
+## Maskeyi boyama
+
+Maskeyi değiştirmek için kalem, kurşun kalem, pistole veya silgiyle boyayın.
+Diğer fırçalar Hızlı maskede boyamaz. **Doldur**, **Gradyan** ve **Seçimi boya**
+da maskeyi değiştirir.
+
+- **Seçimi boya** modunda her renk seçer. Silgi ve saydam renk seçimi kaldırır.
+- **Gri tonlamalı maske** modunda rengin gri değeri maskeyi belirler: beyaz seçer, siyah seçimi kaldırır, griler kısmen seçer.
+
+Maskenin, Hızlı maske başladığında çizim renklerinden kopyalanan kendi ön plan
+ve arka plan renkleri vardır. Siyah ön plan ve beyaz arka plan için **D**
+(**Siyah / beyaza sıfırla**) tuşuna basın. Maske renklerinin yerini değiştirmek
+için komut aramadan **Maske renklerini değiştir** komutunu çalıştırın.
+
+**Seçili pikselleri temizle** ve **Dönüştür** gibi çizimi değiştiren komutlar
+Hızlı maskede kullanılamaz.
+
+## Hızlı maske çubuğu
+
+Tuvalin altındaki [tuval çubuğunun](/tr/docs/selections/working/) başlığı
+“Hızlı maske” olur:
+
+- **Tersine çevir**: **Seçimi tersine çevir**.
+- **Doldur** ve **Temizle**: **Maskeyi doldur** maskenin tamamını doldurur, **Seçim kapsamını temizle** maskeyi boşaltır.
+- **İyileştir**: **Genişlet…**, **Daralt…**, **Kenarları yumuşat…**, **Kenarlık…** ve **Düzleştir…**. **Seçim anahattını dönüştür** burada kullanılamaz.
+- **Kaydet**: **Seçim katmanı olarak kaydet** (bkz. [Seçim katmanları](/tr/docs/selections/selection-layers/)).
+- **Çık**: **Çizime dön**.
+
+Tuval çubuğu gizliyse Hızlı maske çubuğu görünmez.
+
+![Tuvalin altındaki Hızlı maske çubuğu.](shot:selections/quick-mask-bar)
+
+## Hızlı maske menüsü
+
+Hızlı maske açıkken **Katman** menüsü **Hızlı maske** menüsüne dönüşür. Aynı
+menü için **Hızlı maske** satırına sağ tıklayın veya satırı basılı tutun.
+
+- **Çizime dön**
+- **Seçim katmanı olarak kaydet**
+- **Değiştir**: **Seçimi tersine çevir**, **Tüm pikselleri seç**, **Seçim kapsamını temizle**, **Maskeyi doldur**, **Genişlet…**, **Daralt…**, **Kenarları yumuşat…**, **Kenarlık…** ve **Düzleştir…**
+
+## Kaplama ayarları
+
+Hızlı maske açıkken Özellikler paneli maskenin ayarlarını gösterir.
+
+![Mod, Kaplama rengi ve Kaplama opaklığı ayarlarıyla Hızlı maske için Özellikler paneli.](shot:selections/quick-mask-properties)
+
+### Mod
+
+**Seçimi boya** (varsayılan) veya **Gri tonlamalı maske**. Mod, Hızlı maske ve
+her seçim katmanı için, tüm çizimlerde tek bir ayardır. Komut aramadaki
+**Gri tonlamalı maske** komutu da modu değiştirir.
+
+### Kaplama rengi
+
+Kaplamanın rengini belirler. Varsayılan kırmızıdır.
+
+### Kaplama opaklığı
+
+%0 ile %100 arası. Varsayılan %50'dir.
+
+## Hızlı maskeden çıkma
+
+Aşağıdakilerden birini yapın:
+
+- **Seç > Hızlı maske** komutunu seçin veya **Q** tuşuna basın.
+- **Katman > Çizime dön** komutunu seçin.
+- Hızlı maske çubuğunda **Çık** düğmesini seçin.
+- **Escape** tuşuna basın.
+- **Hızlı maske** satırında küçük resmin yanındaki yükleme düğmesini seçin.
+
+Maske geçerli seçim olur. **Piksel seçimini kaldır** (**Ctrl+D**) da Hızlı
+maskeden çıkar ve seçimi kaldırır.

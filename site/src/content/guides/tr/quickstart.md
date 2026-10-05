@@ -1,27 +1,93 @@
 ---
 title: "Hızlı başlangıç"
-description: "Capy Canvas'yu açın, kaleminizi kontrol edin ve ilk çiziminizi kaydedin."
-purpose: "Herhangi bir şeyi yeniden düzenlemeden veya her fırçayı denemeden önce, birkaç işaret koyup bunları kaydetmeniz yardımcı olur. Bu şekilde editörün ve kaleminizin birlikte çalıştığını bilirsiniz ve geri dönmeniz gereken küçük bir çiziminiz olur."
-techniques: ["Düzenleyiciyi açın ve yeni bir çizim oluşturun.", "Kalem basıncını bir kalemle test edin.", "Çiziminizi kaydedin ve paylaşmak üzere bir kopyasını dışa aktarın."]
-figure: "1: Çalışma alanı değiştirici. 2: Bir fırça seçeceğiniz Araç Seti. 3: İşaretlerinizin tutulduğu katmanlar."
-related: ["workspace", "painting/brushes", "tools/files"]
-image: {"light": "/assets/guides/quickstart-light.webp", "dark": "/assets/guides/quickstart-dark.webp", "alt": "1: Çalışma alanı değiştirici. 2: Bir fırça seçeceğiniz Araç Seti. 3: İşaretlerinizin tutulduğu katmanlar."}
+description: "Capy Canvas'ı açma, ilk boş çizimde çizme, çizimi .capy dosyası olarak kaydetme ve PNG dışa aktarma."
+related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
 ---
 
-## Düzenleyiciyi aç
+## Capy Canvas'ı açma
 
-Başlamanın en hızlı yolu, Chrome, Edge veya Safari gibi güncel bir tarayıcıda çalışan [Web Demosu](https://editor.capycanvas.art/)'dur. İlk ziyaretinizden sonra çevrimdışı olduğunuzda bile çalışmaya devam eder. Bunu bir uygulama olarak da yükleyebilirsiniz; [indirme sayfası](/tr/download/) bunun nasıl yapılacağını açıklıyor.
+Aşağıdakilerden birini yapın:
 
-Düzenleyici açıldığında pencerenin üst kısmındaki çalışma alanı değiştiricide **Paint**'yu seçin. Paint fırçalarınızı, renklerinizi ve katmanlarınızı ekranda tutar, bu da onu öğrenmek için iyi bir yer haline getirir. Ardından **File → New…**'yu seçin, bir boyut seçin ve **Create**'yu seçin.
+- Web düzenleyicisini [editor.capycanvas.art](https://editor.capycanvas.art/) adresinde açın.
+- Masaüstü uygulamasını, iPad veya Android betasını ya da web düzenleyicisini uygulama olarak yükleme adımlarını [İndir](/tr/download/) sayfasından edinin.
 
-## İlk vuruşu yapın
+Web düzenleyicisi şu tarayıcılarda çalışır:
 
-Soldaki **Pencil** aracını seçin, ardından **Tool Set**'daki kalemlerden birini seçin. Bir kalem veya fareyle çizin; Dokunmatik ekranda parmaklarınız boyamak yerine görünümü hareket ettirir. Hafifçe başlayan, ortasından daha sert basan ve sonunda tekrar hafifleyen bir çizgi çizin. Kaleminiz baskı bildirirse, daha fazla bastığınız yerde çizgi kalınlaşır ve koyulaşır.
+| Sistem | Tarayıcılar |
+| --- | --- |
+| Windows | Chrome, Edge, Firefox 141 veya üstü |
+| macOS | Chrome, Edge, Safari 26 veya üstü, Firefox 147 veya üstü (Apple silicon) |
+| Linux (Wayland) | Chrome, Edge |
+| iPadOS 26 veya üstü | Safari |
+| Android 12 veya üstü | Chrome |
 
-Her satır aynı görünüyorsa kalem tarayıcıya baskı göndermiyor olabilir. [Kalem ve dokunma kılavuzu](/tr/docs/advanced/input/), herhangi bir fırça ayarını değiştirmeden önce neleri kontrol etmeniz gerektiğini açıklamaktadır. Saklamak istemediğiniz test işaretlerini kaldırmak için **Ctrl+Z**'ya veya araç çubuğundaki geri al düğmesine basın ve yinelemek için **Ctrl+Shift+Z**'ya basın.
+İlk ziyaretten sonra web düzenleyicisi internet bağlantısı olmadan da açılır.
 
-## Çalışmanızı kaydedin
+## İlk çizim
 
-Bir `.capy` dosyasını kaydetmek için **File → Save As…**'yu seçin. Bu, katmanlarınız dahil her şeyin düzenlenebilir olmasını sağlar; böylece kaldığınız yerden devam edebilirsiniz. Sıradan bir görüntünün paylaşılmasını istediğinizde **File → Export…**'yu seçin ve bir PNG veya JPEG kopyasını kaydedin.
+![Yeni bir çizimin Katmanlar paneli: Kâğıt'ın üstünde Geçerli mürekkep.](shot:files/new-layers)
 
-Buradan, [Fırçalar ve boyama](/tr/docs/painting/brushes/), fırçaların nasıl seçileceğini ve ayarlanacağını gösterir ve [illüstrasyon eğitimi](/tr/docs/illustration/), ilk çizimden son gölgelemeye kadar eksiksiz bir çizim boyunca size yol gösterir.
+Capy Canvas ilk açıldığında boş bir çizimle [Boya](/tr/docs/start/workspaces/)
+çalışma alanını gösterir ve başlık çubuğunda “Adsız · 2048 × 1536” yazar. Beyaz
+bir dolgu katmanı olan **Kâğıt** katmanının üstündeki boş boya katmanı
+**Geçerli mürekkep** seçilidir. **Kalem** aracı, **G kalem** fırçası ve siyaha
+yakın bir renkle etkindir.
+
+Sonraki açılışlarda Capy Canvas, en son kullandığınız çalışma alanıyla ve açık
+olan çizimlerle açılır.
+
+## Çizme
+
+Tuvalde kalemle veya fareyle sürükleyin. Başka bir araç kullanmak için o aracı
+pencerenin sol kenarındaki Araçlar çubuğunda seçin. Eskiz'de başlık
+çubuğundaki **Fırça** düğmesini seçin.
+
+> **Not:** Parmaklar hiçbir zaman çizmez. Tuvaldeki iki parmak görünümü kaydırır, yakınlaştırır ve döndürür.
+
+Bir fırça darbesini geri almak için **Düzenle > Geri al** komutunu seçin,
+**Ctrl+Z** tuşlarına basın veya tuvale iki parmakla dokunun (bkz.
+[Geri alma ve yineleme](/tr/docs/start/undo/)).
+
+## macOS ve iPad'de tuşlar
+
+Bu kılavuz tuşları Windows ve Linux'taki gibi yazar. macOS ve iPad'de, kılavuzda
+**Ctrl** yazan yerde **Command** (⌘) tuşuna basın. **Ctrl** tuşu web
+düzenleyicisinde ve macOS uygulamasında da çalışır.
+
+Web düzenleyicisi her kısayolu **Ctrl** ile gösterir. Tarayıcı **F5**, **F11**,
+**F12** tuşlarını ve **W**, **T**, **N**, **R**, **L**, **Q** veya **P** ile
+birlikte **Ctrl** ya da **Ctrl+Shift** kombinasyonlarını kendine ayırır. Bu
+tuşlardan birini kullanan bir komutun web düzenleyicisinde kısayolu yoktur. Böyle
+bir komutu menüden veya [komut aramadan](/tr/docs/start/command-search/) seçin.
+
+## Başka bir çizim başlatma
+
+**Dosya > Yeni…** komutunu seçin ve [Yeni çizim](/tr/docs/files/new/) iletişim
+kutusunda **Oluştur** düğmesini seçin. Yeni çizim, ilk çizimin yanında kendi
+sekmesinde açılır.
+
+## Çizimi kaydetme
+
+![Yeni…, Aç…, Kaydet, Farklı kaydet… ve Dışa aktar… öğelerini içeren Dosya menüsü.](shot:files/file-menu)
+
+Çizimi tüm katmanlarıyla kaydetmek için:
+
+1. **Dosya > Kaydet** komutunu seçin veya **Ctrl+S** tuşlarına basın.
+2. Bir klasör ve ad seçin. Önerilen ad “Adsız.capy” olur.
+
+Ardından başlık çubuğunda dosya adı görünür. Firefox ve Safari'de çizim, ancak
+**Dosyayı indir** iletişim kutusunda önce **İndir**, sonra **Dosya kaydedildi**
+düğmesini seçtiğinizde kaydedilmiş sayılır.
+
+## PNG dışa aktarma
+
+![Hedef ayarı Web / paylaşım olan Görüntüyü dışa aktar iletişim kutusu.](shot:files/export-dialog)
+
+Çizimin düzleştirilmiş bir PNG kopyasını dışa aktarmak için:
+
+1. **Dosya > Dışa aktar…** komutunu seçin veya **Ctrl+Shift+E** tuşlarına basın.
+2. **Hedef** ayarını **Web / paylaşım** olarak bırakın ve **Dosya seç…** düğmesini seçin.
+3. Bir klasör ve ad seçin. Önerilen ad “Adsız.png” olur.
+
+**Web / paylaşım**, çizimin tam boyutunda 8 bit sRGB bir PNG yazar. Dışa aktarma
+çizimi değiştirmez ve kaydetmez.

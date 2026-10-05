@@ -153,13 +153,17 @@ h1 { font-size: 28px; font-weight: 700; line-height: 1.3; letter-spacing: -.6px;
   .home-description { font-size: 14px; margin-top: 28px; }
   .button { padding: 5px 13px; font-size: 13px; }
   .nav-inner { padding-left: 18px; padding-right: 18px; }
-  .nav-links { margin-left: -10px; gap: 0; }
+  .nav-links { margin-left: -10px; }
   .nav-links a { padding: 0 10px; font-size: 12px; }
-  .nav-tools { gap: 0; }
   .nav-tools .language-menu summary { gap: 5px; padding: 0 8px; }
   .nav-tools .language-menu summary span { max-width: 20vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .page { padding: 32px 20px 40px; }
   h1 { font-size: 26px; }
+}
+@media (max-width: 360px) {
+  .nav-links { gap: 4px; margin-left: -7px; }
+  .nav-links a { padding: 0 7px; }
+  .nav-tools .language-menu summary span { display: none; }
 }
 @media (max-height: 480px) and (min-width: 541px) {
   .hero { padding-top: 28px; padding-bottom: 28px; }

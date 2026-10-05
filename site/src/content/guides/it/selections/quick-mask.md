@@ -1,25 +1,112 @@
 ---
-title: "Maschera veloce e livelli di selezione"
-description: "Paint una selezione con un pennello e salva le selezioni per riutilizzarle in seguito."
-purpose: "Alcune aree sono più facili da dipingere che da delineare, come i capelli morbidi, le nuvole o uno sfondo sfocato. La maschera veloce mostra la tua selezione come una sovrapposizione colorata che puoi dipingere con qualsiasi pennello. I livelli di selezione mantengono una selezione nel disegno in modo da poterla caricare nuovamente ogni volta che ne hai bisogno."
-techniques: ["Perfeziona una selezione con un pennello in Maschera veloce.", "Paint una selezione direttamente con la selezione Paint.", "Salva una selezione come livello di selezione e caricala in seguito."]
-figure: "1: Il livello temporaneo di Maschera veloce. 2: Impostazioni della maschera veloce, incluso il colore di sovrapposizione. 3: la selezione mostrata come sovrapposizione colorata, estesa con un tratto di pennello."
-related: ["tools/selections", "selections/tonal-range", "layers/masks"]
-image: {"light": "/assets/guides/selections-quick-mask-light.webp", "dark": "/assets/guides/selections-quick-mask-dark.webp", "alt": "1: Il livello temporaneo di Maschera veloce. 2: Impostazioni della maschera veloce, incluso il colore di sovrapposizione. 3: la selezione mostrata come sovrapposizione colorata, estesa con un tratto di pennello."}
+title: "Maschera veloce"
+description: "Modificare una selezione come maschera dipinta nella Maschera veloce."
+related: ["selections/working", "selections/selection-layers", "selections/tonal-range", "layers/masks"]
 ---
 
-## Perfeziona una selezione in Maschera veloce
+Puoi modificare una selezione come maschera dipinta nella Maschera veloce.
 
-Effettua una selezione approssimativa con qualsiasi strumento di selezione, quindi scegli **Select → Quick Mask** o premi **Q**. La selezione appare come una sovrapposizione colorata e nella parte superiore del pannello Livelli viene visualizzato un livello **Quick Mask** temporaneo. Ora dipingi con qualsiasi pennello per aggiungere alla selezione e usa **Eraser** per toglierlo. I pennelli morbidi creano bordi morbidi, che è esattamente ciò che desideri per la pelliccia o il fogliame.
+## Entrare nella Maschera veloce
 
-Se la sovrapposizione è difficile da vedere rispetto al disegno, modificane il colore o l'opacità in **Properties**. Quando la selezione sembra corretta, scegli **Return to Artwork** per tornare a dipingere con la selezione attiva.
+Esegui una delle seguenti operazioni:
 
-## Paint una selezione diretta
+- Scegli **Seleziona > Maschera veloce**.
+- Premi **Q**.
+- Seleziona **Maschera veloce** nella [barra della selezione](/it/docs/selections/working/).
 
-Se preferisci saltare il primo passaggio, scegli lo strumento **Paint selection** dagli strumenti di selezione. Ogni tratto che esegui si aggiunge alla selezione e circondando un'area si seleziona tutto al suo interno. Tieni premuto **Alt** o cambia la modalità nel pannello Strumenti per dipingere nuovamente parti della selezione.
+La selezione corrente diventa la maschera. Senza selezione, la maschera parte
+vuota. Lo strumento passa al pennello corrente, tranne quando è attivo
+**Intervallo tonale**.
 
-## Salva le selezioni per dopo
+Non puoi entrare nella Maschera veloce mentre è aperta una trasformazione.
 
-Una selezione viene persa non appena ne fai una nuova, quindi salva nuovamente qualsiasi selezione che ti servirà. Scegli **Select → Save as Selection Layer** o **Save as Selection Layer** dal menu del livello Maschera veloce. La selezione viene memorizzata come livello di selezione nel pannello Livelli e viene salvata con il disegno.
+## Cosa mostra la Maschera veloce
 
-Per riutilizzarlo, scegli **Select → Load Selection** oppure tieni premuto **Ctrl** e fai clic sulla miniatura del livello di selezione. Puoi anche combinarlo con la selezione corrente dal menu del livello. Il pulsante **New Selection Layer** nella parte inferiore del pannello Livelli crea un livello di selezione vuoto su cui puoi dipingere direttamente.
+Una sovrapposizione, rossa al 50% per impostazione predefinita, indica la
+maschera sulla tela. In modalità **Dipingi selezione** copre l'area selezionata,
+e in modalità **Maschera in scala di grigi** l'area fuori dalla selezione.
+
+In cima al pannello Livelli appare una riga **Maschera veloce**, selezionata. Il
+suo pulsante a occhio mostra o nasconde la sovrapposizione, come
+**Mostra sovrapposizione maschera** nella ricerca comandi. Il pannello Colore
+mostra i colori della maschera al posto dei colori del disegno.
+
+![La foto del terrario nella Maschera veloce, con la sovrapposizione sulle luci.](shot:selections/quick-mask-overlay)
+
+## Dipingere la maschera
+
+Dipingi con una penna, una matita, un aerografo o una gomma per modificare la
+maschera. Gli altri pennelli non dipingono nella Maschera veloce. Anche
+**Riempi**, **Sfumatura** e **Dipingi selezione** modificano la maschera.
+
+- In modalità **Dipingi selezione**, qualsiasi colore seleziona. La gomma e il colore trasparente deselezionano.
+- In modalità **Maschera in scala di grigi**, il valore di grigio del colore imposta la maschera: il bianco seleziona, il nero deseleziona e i grigi selezionano in parte.
+
+La maschera ha colori di primo piano e di sfondo propri, copiati dai colori del
+disegno quando la Maschera veloce si avvia. Premi **D**
+(**Ripristina nero / bianco**) per avere il nero in primo piano e il bianco
+come sfondo. Per scambiare i colori della maschera, esegui
+**Scambia colori della maschera** dalla ricerca comandi.
+
+I comandi che modificano il disegno, come **Svuota pixel selezionati** e
+**Trasforma**, non sono disponibili nella Maschera veloce.
+
+## Barra della Maschera veloce
+
+La [barra azioni della tela](/it/docs/selections/working/) in fondo alla tela ha la
+didascalia «Maschera veloce»:
+
+- **Inverti**: **Inverti selezione**.
+- **Riempi** e **Svuota**: **Riempi maschera** riempie l'intera maschera, e **Svuota copertura selezione** svuota la maschera.
+- **Perfeziona**: **Espandi…**, **Riduci…**, **Sfuma…**, **Bordo…** e **Smussa…**. **Trasforma contorno** qui non è disponibile.
+- **Salva**: **Salva come livello di selezione** (vedi [Livelli di selezione](/it/docs/selections/selection-layers/)).
+- **Esci**: **Torna al disegno**.
+
+Con la barra azioni della tela nascosta, la barra della Maschera veloce non appare.
+
+![La barra della Maschera veloce in fondo alla tela.](shot:selections/quick-mask-bar)
+
+## Menu Maschera veloce
+
+Mentre la Maschera veloce è attiva, il menu **Livello** diventa il menu
+**Maschera veloce**. Fai clic con il pulsante destro sulla riga
+**Maschera veloce**, o tienila premuta, per aprire lo stesso menu.
+
+- **Torna al disegno**
+- **Salva come livello di selezione**
+- **Modifica**: **Inverti selezione**, **Seleziona tutti i pixel**, **Svuota copertura selezione**, **Riempi maschera**, **Espandi…**, **Riduci…**, **Sfuma…**, **Bordo…** e **Smussa…**
+
+## Impostazioni della sovrapposizione
+
+Mentre la Maschera veloce è attiva, il pannello Proprietà mostra le impostazioni
+della maschera.
+
+![Il pannello Proprietà per la Maschera veloce, con Modalità, Colore di sovrapposizione e Opacità di sovrapposizione.](shot:selections/quick-mask-properties)
+
+### Modalità
+
+**Dipingi selezione** (il valore predefinito) o **Maschera in scala di grigi**.
+La modalità è un'unica impostazione per la Maschera veloce e per tutti i livelli
+di selezione, in tutti i disegni. Anche il comando
+**Maschera in scala di grigi** nella ricerca comandi la cambia.
+
+### Colore di sovrapposizione
+
+Imposta il colore della sovrapposizione. Rosso per impostazione predefinita.
+
+### Opacità di sovrapposizione
+
+Da 0 a 100%. Il valore predefinito è 50%.
+
+## Uscire dalla Maschera veloce
+
+Esegui una delle seguenti operazioni:
+
+- Scegli **Seleziona > Maschera veloce** o premi **Q**.
+- Scegli **Livello > Torna al disegno**.
+- Seleziona **Esci** nella barra della Maschera veloce.
+- Premi **Esc**.
+- Seleziona il pulsante di caricamento accanto alla miniatura nella riga **Maschera veloce**.
+
+La maschera diventa la selezione corrente. Anche **Deseleziona pixel**
+(**Ctrl+D**) fa uscire dalla Maschera veloce, e rimuove la selezione.

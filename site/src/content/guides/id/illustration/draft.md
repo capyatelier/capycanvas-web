@@ -1,27 +1,68 @@
 ---
 title: "Membuat sketsa"
-description: "Gambarlah sketsa pensil, dan cobalah warna pada lapisan terpisah."
-purpose: "Sketsa adalah tempat Anda mengerjakan bentuk, dan warna kasar adalah tempat Anda mencoba warna. Menyimpannya pada lapisan terpisah berarti Anda dapat mengubah warna sesering yang Anda suka tanpa menyentuh garis pensil."
-techniques: ["Menggambar dengan pensil dan tekanan pena.", "Pilih dan perbaiki bagian sketsa.", "Letakkan warna kasar pada lapisan di bawah sketsa."]
-figure: "1: Kuas pensil. 2: Sketch di atas Warna kasar di Lapisan. 3: Ukuran dan opasitas pensil."
-related: ["tools/selections", "tools/transforms", "painting/color"]
-image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/assets/guides/illustration-draft-dark.webp", "alt": "1: Kuas pensil. 2: Sketch di atas Warna kasar di Lapisan. 3: Ukuran dan opasitas pensil."}
+description: "Tahap 1 tutorial ilustrasi: sketsa warna kasar yang digambar dengan Isi laso dan sketsa pensil di atasnya."
+related: ["files/new", "drawing/fill", "drawing/brush-tools", "transform/move-transform"]
 ---
 
-## 1. Gambarlah sketsanya
+Tahap ini menghasilkan sketsa warna kasar dari ketiga bentuk dan sketsa pensil di
+lapisan di atasnya.
 
-Tambahkan layer baru dan beri nama **Sketch**. Pilih alat **Pencil** dan salah satu pensil di Tool Set. Mulailah dengan garis tipis untuk menemukan cakram, pita melengkung, dan balok miring, lalu tekan lebih keras untuk memperkuat garis luar yang ingin Anda pertahankan. Atur ukuran pensil di panel Alat.
+## 1. Buat gambar
 
-Sisakan sedikit ruang di sekitar bentuk. Ini membuat tahapan selanjutnya lebih mudah, karena Anda akan dapat melihat dengan jelas di mana setiap bentuk berakhir. Sesekali, pilih **Flip view horizontally** di toolbar atas untuk melihat sketsa dicerminkan; kesalahan dalam proporsi lebih mudah dikenali dengan cara itu.
+1. Pilih **Lukis** di pemilih ruang kerja pada bilah judul.
+2. Pilih **Berkas > Baru…**, atau tekan **Ctrl+N** ([Gambar baru](/id/docs/files/new/)).
+3. Di dialog **Gambar baru**, setel **Lebar (px)** dan **Tinggi (px)** ke 1200, lalu pilih **Buat**.
 
-## 2. Perbaiki bagian yang kurang tepat
+![Dialog Gambar baru dengan Lebar (px) dan Tinggi (px) disetel ke 1200.](shot:illustration/new-drawing)
 
-Jika salah satu bagian berada di tempat yang salah atau ukurannya salah, Anda tidak perlu menggambar ulang. Pilih **Lasso selection** dan gambar lingkaran di sekitar bagian itu. Lalu pilih **Scale / rotate**, seret bagian ke tempatnya atau ubah ukurannya, dan pilih **Apply transform**. Pilih **Select → Deselect pixels** sebelum Anda melanjutkan menggambar.
+Gambar memiliki dua lapisan: **Tinta saat ini** di atas **Kertas**. Klik ganda
+**Tinta saat ini** di panel Lapisan dan ganti nama lapisan menjadi *Color rough*.
 
-Panduan [selection](/id/docs/tools/selections/) dan [transform](/id/docs/tools/transforms/) menjelaskan alat ini secara lebih detail. Jika ada perubahan yang salah, batalkan saja.
+## 2. Blok warna
 
-## 3. Cobalah warnanya
+Alat **Isi laso** mengisi bentuk bebas dengan warna saat ini dalam satu goresan
+([Alat isi](/id/docs/drawing/fill/)). Pilih **Isi** di bilah alat Alat, lalu pilih
+**Isi laso** di panel **Set Alat**.
 
-Tambahkan layer lain bernama **Color rough** dan seret ke bawah Sketch. Untuk setiap bentuk, pilih warna, gambar sekeliling bentuk dengan **Lasso selection**, dan pilih **Edit → Fill selection**. Contohnya menggunakan teal untuk pita, oker untuk cakram, dan terakota untuk balok. Ini warnanya kasar, jadi pinggirannya tidak perlu rapi. Turunkan opacity layer sedikit agar garis pensil tetap mudah terlihat.
+![Panel Set Alat dengan Isi laso terpilih.](shot:illustration/draft-lasso-fill)
 
-Sembunyikan Warna kasar sejenak kapan pun Anda ingin melihat sketsanya sendiri. Simpan gambar Anda, lalu lanjutkan ke [Line art](/id/docs/illustration/ink/).
+Untuk setiap bentuk, pilih warnanya di panel **Warna** dan telusuri garis luarnya
+dalam satu goresan. Mulailah dengan balok di kiri bawah dalam warna terakota, lalu
+cakram di atasnya dalam warna oker, dan terakhir pita di sebelah kanan dalam warna
+hijau toska. Setiap bentuk menutupi sebagian bentuk sebelumnya.
+
+Setel **Opasitas lapisan** di kepala panel Lapisan ke 50
+([Panel Lapisan](/id/docs/layers/panel/)). Baris *Color rough* menampilkan "50%" di
+bawah nama lapisan.
+
+## 3. Gambar sketsa
+
+Pilih **Lapisan baru** di bagian bawah panel Lapisan, lalu ganti nama lapisan baru itu
+menjadi *Sketch*. Lapisan ini muncul tepat di atas *Color rough*.
+
+Pilih **Pensil** di bilah alat Alat dan kuas **Pensil** di Set Alat
+([Alat kuas](/id/docs/drawing/brush-tools/)). Setel **Ukuran kuas** di panel **Alat**
+ke 8 px.
+
+![Panel Set Alat dengan kuas-kuas pensil dan Pensil terpilih.](shot:illustration/draft-pencils)
+
+Gambar ketiga garis luar, lalu coretan dan arsirannya. Contoh ini juga memiliki garis
+konstruksi berwarna hijau sage, yang digambar dengan ukuran 5 px.
+
+Daftar lapisan berisi *Sketch*, *Color rough*, dan **Kertas**.
+
+## 4. Transformasi sebagian sketsa
+
+Anda dapat memindahkan, menskalakan, atau memutar bagian sketsa yang terseleksi
+dengan **Transformasi** ([Pemindahan dan transformasi](/id/docs/transform/move-transform/)).
+Contoh ini mentransformasi lingkaran di kanan bawah.
+
+1. Tekan **M**, atau pilih **Seleksi laso** di grup **Seleksi** pada bilah alat Alat, lalu gambar lingkaran di sekeliling bagian itu.
+2. Pilih **Transformasi** di bilah seleksi, atau tekan **Ctrl+T**.
+3. Seret pegangannya.
+4. Pilih **Terapkan** di bilah, atau tekan **Enter**.
+5. Pilih **Seleksi > Batalkan seleksi piksel**, atau tekan **Ctrl+D**.
+
+![Bilah transformasi dengan Batal dan Terapkan di samping bagian sketsa yang terseleksi.](shot:illustration/draft-transform)
+
+Tahap berikutnya: [Line art](/id/docs/illustration/ink/).

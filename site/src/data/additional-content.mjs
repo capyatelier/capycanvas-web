@@ -93,7 +93,7 @@ export const additionalContent = {
     },
     "documentation": {
       "title": "Documentación",
-      "meta": "Documentación Capy Canvas: espacios de trabajo, pinceles, color, capas, selecciones, edición de fotografías y un tutorial de ilustración."
+      "meta": "Documentación de Capy Canvas: espacios de trabajo, pinceles, color, capas, filtros, selecciones, edición de fotos y tutoriales de ilustración y fotografía."
     },
     "privacy": {
       "title": "Política de privacidad",
@@ -198,7 +198,7 @@ export const additionalContent = {
     },
     "documentation": {
       "title": "Documentação",
-      "meta": "Documentação Capy Canvas: áreas de trabalho, pincéis, cores, camadas, seleções, edição de fotos e um tutorial de ilustração."
+      "meta": "Documentação do Capy Canvas: áreas de trabalho, pincéis, cores, camadas, filtros, seleções, edição de fotos e tutoriais de ilustração e fotografia."
     },
     "privacy": {
       "title": "Política de Privacidade",
@@ -303,7 +303,7 @@ export const additionalContent = {
     },
     "documentation": {
       "title": "Dokumentasi",
-      "meta": "Dokumentasi Capy Canvas: ruang kerja, kuas, warna, lapisan, pilihan, pengeditan foto, dan tutorial ilustrasi."
+      "meta": "Dokumentasi Capy Canvas: ruang kerja, kuas, warna, lapisan, filter, seleksi, pengeditan foto, serta tutorial ilustrasi dan foto."
     },
     "privacy": {
       "title": "Kebijakan Privasi",
@@ -408,7 +408,7 @@ export const additionalContent = {
     },
     "documentation": {
       "title": "Documentation",
-      "meta": "Documentation Capy Canvas : espaces de travail, pinceaux, couleurs, calques, sélections, retouche photo et un didacticiel d'illustration."
+      "meta": "Documentation Capy Canvas : espaces de travail, pinceaux, couleurs, calques, filtres, sélections, retouche photo, et tutoriels d'illustration et de photo."
     },
     "privacy": {
       "title": "Politique de confidentialité",
@@ -513,7 +513,7 @@ export const additionalContent = {
     },
     "documentation": {
       "title": "Dokumentation",
-      "meta": "Capy Canvas-Dokumentation: Arbeitsbereiche, Pinsel, Farben, Ebenen, Auswahlen, Fotobearbeitung und ein Illustrations-Tutorial."
+      "meta": "Capy Canvas-Dokumentation: Arbeitsbereiche, Pinsel, Farben, Ebenen, Filter, Auswahlen, Fotobearbeitung sowie Illustrations- und Foto-Tutorials."
     },
     "privacy": {
       "title": "Datenschutzrichtlinie",
@@ -618,7 +618,7 @@ export const additionalContent = {
     },
     "documentation": {
       "title": "Документация",
-      "meta": "Документация Capy Canvas: рабочие пространства, кисти, цвет, слои, выделение, редактирование фотографий и руководство по иллюстрациям."
+      "meta": "Документация Capy Canvas: рабочие пространства, кисти, цвет, слои, фильтры, выделение, обработка фотографий и уроки по иллюстрации и фотографии."
     },
     "privacy": {
       "title": "Политика конфиденциальности",
@@ -723,7 +723,7 @@ export const additionalContent = {
     },
     "documentation": {
       "title": "เอกสารประกอบ",
-      "meta": "เอกสาร Capy Canvas: พื้นที่ทำงาน แปรง สี เลเยอร์ การเลือก การแก้ไขภาพ และการสอนภาพประกอบ"
+      "meta": "เอกสาร Capy Canvas: พื้นที่ทำงาน พู่กัน สี เลเยอร์ ฟิลเตอร์ พื้นที่เลือก การแก้ไขภาพถ่าย และบทเรียนการวาดภาพประกอบและภาพถ่าย"
     },
     "privacy": {
       "title": "นโยบายความเป็นส่วนตัว",
@@ -828,7 +828,7 @@ export const additionalContent = {
     },
     "documentation": {
       "title": "Tài liệu",
-      "meta": "Tài liệu Capy Canvas: không gian làm việc, bút vẽ, màu sắc, lớp, vùng chọn, chỉnh sửa ảnh và hướng dẫn minh họa."
+      "meta": "Tài liệu Capy Canvas: không gian làm việc, cọ, màu, lớp, bộ lọc, vùng chọn, xử lý ảnh, cùng các hướng dẫn về minh họa và ảnh."
     },
     "privacy": {
       "title": "Chính sách bảo mật",
@@ -933,7 +933,7 @@ export const additionalContent = {
     },
     "documentation": {
       "title": "Dokümantasyon",
-      "meta": "Capy Canvas belgeleri: çalışma alanları, fırçalar, renk, katmanlar, seçimler, fotoğraf düzenleme ve illüstrasyon eğitimi."
+      "meta": "Capy Canvas belgeleri: çalışma alanları, fırçalar, renk, katmanlar, filtreler, seçimler, fotoğraf düzenleme ile illüstrasyon ve fotoğraf eğitimleri."
     },
     "privacy": {
       "title": "Gizlilik Politikası",
@@ -1038,7 +1038,7 @@ export const additionalContent = {
     },
     "documentation": {
       "title": "Documentazione",
-      "meta": "Documentazione Capy Canvas: aree di lavoro, pennelli, colore, livelli, selezioni, fotoritocco e un tutorial sull'illustrazione."
+      "meta": "Documentazione Capy Canvas: aree di lavoro, pennelli, colore, livelli, filtri, selezioni, fotoritocco e tutorial su illustrazione e foto."
     },
     "privacy": {
       "title": "Informativa sulla privacy",

@@ -1,27 +1,65 @@
 ---
-title: "Rendern"
-description: "Fügen Sie den auf jede Form zugeschnittenen Ebenen Schattierungen und Texturen hinzu und exportieren Sie dann das Ergebnis."
-purpose: "Beim Rendern erhalten die Formen ihr Licht und ihren Schatten. Wenn Sie die Schattierung auf beschnittene Ebenen malen, bleibt sie automatisch in jeder Form, und da die Schattierung von der Grundfarbe getrennt ist, können Sie sie anpassen oder wiederholen, ohne etwas zu verlieren."
-techniques: ["Befestigen Sie eine Schattierungsebene an der Multifunktionsleiste.", "Steuern Sie die Stärke der Schattierung.", "Schattieren Sie die anderen Formen, überprüfen Sie die Ebenen und exportieren Sie."]
-figure: "1: Bandtextur und Bandschattierung über dem Band. 2: Auf die darunter liegende Ebene zuschneiden. 3: Deckkraft der Ebene für den gesamten Schattierungsdurchgang."
-related: ["layers/groups", "layers/masks", "output/export"]
-image: {"light": "/assets/guides/illustration-render-light.webp", "dark": "/assets/guides/illustration-render-dark.webp", "alt": "1: Bandtextur und Bandschattierung über dem Band. 2: Auf die darunter liegende Ebene zuschneiden. 3: Deckkraft der Ebene für den gesamten Schattierungsdurchgang."}
+title: "Rendering"
+description: "Phase 4 des Illustrations-Tutorials: Schattierung und Textur auf Ebenen, die auf die jeweilige Grundfarbe beschnitten sind, und ein PNG-Export."
+related: ["layers/settings", "drawing/brush-tools", "files/open-save", "files/export"]
 ---
 
-## 1. Fügen Sie abgeschnittene Schattierungen hinzu
+In dieser Phase entstehen die Schattierungen der Formen, jeweils auf Ebenen, die
+auf ihre Grundfarbe beschnitten sind, und ein PNG-Export der Studie.
 
-Wählen Sie **Ribbon** aus, fügen Sie direkt darüber eine neue Ebene hinzu und nennen Sie sie **Ribbon shading**. Öffnen Sie das Menü und wählen Sie **Layer Settings → Clip to layer below**. Malen Sie nun mit **Watercolor Wash** die Schatten in den Biegungen des Bandes und setzen Sie mit **Paintbrush** ein paar Salbei-Akzente. Ihre Striche können über den Rand des Bandes hinausgehen, da nur der Teil innerhalb des Bandes sichtbar ist.
+## 1. Beschnittene Ebene hinzufügen
 
-Belassen Sie den Mischmodus der Schattierungsebene vorerst bei **Normal**. Die Grundfarbe verbleibt sicher auf der Farbbandebene, sodass durch das Löschen der Schattierung niemals die darunter liegende Farbe gelöscht wird.
+Wählen Sie *Ribbon* aus und wählen Sie dann **Ebene > Neu > Neue beschnittene Ebene**
+oder im Menü der Zeile **Neu > Neue beschnittene Ebene**
+([Ebeneneinstellungen](/de/docs/layers/settings/)). Benennen Sie die neue Ebene
+in *Ribbon shading* um.
 
-## 2. Kontrollieren Sie die Stärke
+![Das Ebenenmenü mit geöffnetem Untermenü Neu und dem Eintrag Neue beschnittene Ebene.](shot:illustration/render-new-menu)
 
-Die Deckkraft des Pinsels ändert die Striche, die Sie malen möchten. Der **opacity of the Ribbon shading layer** verändert alle Schattierungen, die Sie bereits gemalt haben. Wenn jeder Schatten zu stark aussieht, verringern Sie die Deckkraft der Ebene, anstatt neu zu malen.
+*Ribbon shading* erscheint direkt über *Ribbon*, und eine Schiene links neben den
+Miniaturen kennzeichnet die Beschneidung. Die Beschneidung folgt der Maske von
+*Ribbon*, nicht dem Blaugrün, das die ganze Ebene füllt.
 
-Für Highlights fügen Sie **Ribbon texture** direkt über der Ribbon-Schattierung hinzu und schneiden Sie es ebenfalls ab. Für ein paar leichte Markierungen verwenden Sie einen kleinen Bleistift oder einen Strukturpinsel. Die Ebenenreihenfolge ist jetzt Bandtextur, Bandschattierung und dann Band. [Pinseleinstellungen](/de/docs/advanced/brush-engine/) erklärt Deckkraft und Fluss ausführlicher.
+## 2. Band schattieren
 
-## 3. Fertig stellen und exportieren
+Wählen Sie in der Werkzeugleiste Werkzeuge **Malpinsel** aus und im
+Werkzeugsatz **Aquarelllasur** ([Pinselwerkzeuge](/de/docs/drawing/brush-tools/)).
+Stellen Sie **Deckkraft** im Bedienfeld **Werkzeug** auf 65% und malen Sie die
+Schatten in den Biegungen des Bands in Dunkelblau. Setzen Sie dann mit dem
+Pinsel **Malpinsel** salbeigrüne Akzente.
 
-Schattieren Sie **Disc** und **Block** auf die gleiche Weise, jede mit ihren eigenen beschnittenen Ebenen. Das Beispiel verwendet Airbrush für die sanfte Schattierung auf der Scheibe und Bleistift für kleine cremefarbene Schraffuren. Halten Sie **Line art** über allem. Wenn der äußere Rand einer Form repariert werden muss, malen Sie auf der Maske dieser Form. Wenn nur die Schattierung falsch ist, ändern Sie die Schattierungsebene. [Masken und Ausschnitt](/de/docs/layers/masks/) zeigt auch, wie man die Tinte mit Alpha-Lock neu einfärbt.
+## 3. Texturebene hinzufügen
 
-Wenn Sie damit zufrieden sind, blenden Sie die groben Ebenen aus, speichern Sie Ihre `.capy`-Datei und [exportieren Sie ein Bild](/de/docs/output/export/) zum Teilen. Öffnen Sie die exportierte Datei einmal, um zu überprüfen, ob sie Ihren Erwartungen entspricht.
+Wählen Sie bei ausgewählter Ebene *Ribbon shading* erneut
+**Ebene > Neu > Neue beschnittene Ebene** und benennen Sie die Ebene in
+*Ribbon texture* um. Sie kommt über *Ribbon shading* in dieselbe Beschneidung.
+Wählen Sie **Bleistift** und den Pinsel **Bleistift** aus und zeichnen Sie
+cremefarbene Schraffuren und Glanzlichter.
+
+## 4. Scheibe und Block schattieren
+
+Wählen Sie *Disc* aus, fügen Sie eine beschnittene Ebene namens *Disc shading*
+hinzu und schattieren Sie die untere Hälfte der Scheibe mit dem **Airbrush** in
+Terrakotta. Setzen Sie oben links ein cremefarbenes Glanzlicht.
+
+*Block shading* kommt auf dieselbe Weise auf *Block*: Dunkelblau entlang der
+rechten und unteren Kante mit dem Pinsel **Malpinsel**, danach cremefarbene
+Schraffur mit dem Pinsel **Bleistift**.
+
+![Das Bedienfeld Ebenen mit Ribbon texture und Ribbon shading auf Ribbon beschnitten und Disc shading und Block shading auf ihre Basis beschnitten.](shot:illustration/render-layers)
+
+Die Ebenenliste entspricht den fertigen Ebenen in der
+[Einführung](/de/docs/illustration/).
+
+## 5. Speichern und exportieren
+
+Wählen Sie **Datei > Speichern** oder drücken Sie **Strg+S**, und speichern Sie
+die Zeichnung als `.capy`-Datei ([Öffnen und Speichern](/de/docs/files/open-save/)).
+So exportieren Sie ein PNG:
+
+1. Wählen Sie **Datei > Exportieren…** oder drücken Sie **Strg+Umschalt+E**.
+2. Lassen Sie **Ziel** auf **Web / Teilen** und stellen Sie **Format** auf **PNG-Bild**.
+3. Wählen Sie **Datei auswählen…** aus und wählen Sie einen Ordner und einen Namen.
+
+Nach dem ersten Export schreibt **Datei > Erneut exportieren** dieselbe Datei mit
+denselben Einstellungen, ohne den Dialog ([Bilder exportieren](/de/docs/files/export/)).

@@ -42,7 +42,7 @@ This is a plain Astro static site with the existing Capy Canvas theme.
 - `site/src/layouts/SiteLayout.astro`: shared document, metadata, and header.
 - `site/src/components/`: header, language controls, and page components.
 - `site/src/data/`: translations and installation instructions for all fourteen languages.
-- `site/src/content/guides/`: one Markdown guide per topic and language.
+- `site/src/content/guides/`: one Markdown manual page per topic and language.
 - `site/src/content/policies/`: the privacy policy in every language with a shared effective date.
 - `site/src/content.config.ts`: typed Astro content collection schema.
 - `site/src/layouts/DocsLayout.astro`: documentation sidebar, article area, and section links.
@@ -86,10 +86,11 @@ Download, past versions, the two beta sign-up pages, documentation, and privacy 
 `docs/`, and `privacy/` to the language's home URL.
 The Brazilian Portuguese path preserves `pt-BR` casing.
 
-Guides extend the documentation route with the same topic path in every locale,
-for example `/docs/illustration/draft/` and
-`/ja/docs/illustration/draft/`. The sidebar, related guides, section links,
-and previous/next links all point to static pages. Device-specific input notes
+Manual pages extend the documentation route with the same topic path in every
+locale, for example `/docs/layers/masks/` and `/ja/docs/layers/masks/`. The
+sidebar groups them by chapter; related pages, section links and previous/next
+links all point to static pages. The manual follows the app's areas, with two
+tutorials, and is written to [site/WRITING.md](site/WRITING.md). Device-specific input notes
 auto-detect the reader's platform and provide a manual selector; all variants are
 present in the HTML and remain readable without JavaScript.
 
@@ -209,24 +210,23 @@ instructions, not native install dialogs on each operating system.
 ## Regenerate screenshots
 
 ```sh
-APP_REPO=../draw npm run capture:prepare
+APP_REPO=../capycanvas APP_REVISION=v1.0.4 npm run capture:prepare
 npm run capture
 npm run check
 ```
 
 The capture pipeline builds a tracked product revision in an isolated directory,
-then uses headed Chrome on a private Wayland display on Linux. It captures the
-three homepage showcase slides and light/dark images for all 30 guides with a
-1920 × 1080 layout at twice the pixel density (3840 × 2160 pixels). Numbered outlines identify real controls, and the tutorial provides
-editable `.capy` examples drawn through actual editor actions and browser pen input.
-Pin `APP_REVISION` to the revision deployed at editor.capycanvas.art so the
-screenshots match the live editor.
+then uses headed Chrome on a private Wayland display on Linux. It drives the real
+editor chapter by chapter and saves light and dark images, cropped to the panel,
+bar, menu or dialog each section describes, at twice the pixel density. The
+illustration tutorial is drawn through editor actions and browser pen input and
+saved as the downloadable `.capy` examples. Pin `APP_REVISION` to the released
+version the manual describes.
 
-See [the capture guide](site/scripts/capture/README.md) for dependencies, source
-pinning, annotations, browser settings, debugging and provenance. The recorded
-baseline includes an explicit WGSL compatibility correction in the isolated build.
-The adjacent product checkout is not modified. The screenshot UI remains English;
-all guide languages supply localized captions and full-size image links.
+See [the capture guide](site/scripts/capture/README.md) for dependencies,
+recipes, developing one chapter, and provenance. The adjacent product checkout is
+not modified. The screenshot UI is English; every language has translated alt
+text and captions.
 
 ## Migration comparisons
 
@@ -262,8 +262,8 @@ It needs no secrets. Pull requests run the same checks in **Verify site**.
 See [DEPLOYMENT.md](DEPLOYMENT.md) for GitHub Pages, Porkbun, and Cloudflare setup.
 
 The public documentation route is `/docs/`.
-The former `/documentation/` URLs redirect to the matching `/docs/` pages,
-including translated guides. The build directory is also named `docs/`,
+The former `/documentation/` URLs and retired topic paths redirect to the
+matching `/docs/` pages in every language. The build directory is also named `docs/`,
 so the documentation landing page is built to `docs/docs/index.html`.
 
 ## License

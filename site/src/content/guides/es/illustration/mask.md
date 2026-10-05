@@ -1,27 +1,64 @@
 ---
-title: "enmascaramiento"
-description: "Dale a la cinta, al disco y al bloque sus propias capas de color con bordes editables."
-purpose: "En esta etapa, cada forma obtiene su propia capa de color. El color llena toda la capa y una máscara decide qué parte ves. Como no se borra nada, puedes ajustar el borde de cualquier forma más adelante simplemente pintando sobre su máscara."
-techniques: ["Seleccione una forma con un lazo o selección automática.", "Convierte la selección en una máscara y llena la capa con color.", "Paint en la máscara para ajustar el borde."]
-figure: "1: Miniatura de la máscara seleccionada en la cinta. 2: Cinta, Disco y Bloque debajo del Arte lineal. 3: Borrador, que oculta partes de la máscara."
-related: ["layers/masks", "tools/selections", "painting/color"]
-image: {"light": "/assets/guides/illustration-mask-light.webp", "dark": "/assets/guides/illustration-mask-dark.webp", "alt": "1: Miniatura de la máscara seleccionada en la cinta. 2: Cinta, Disco y Bloque debajo del Arte lineal. 3: Borrador, que oculta partes de la máscara."}
+title: "Colores base"
+description: "Etapa 3 del tutorial de ilustración: una capa de pintura para cada forma, con una máscara ajustada a la forma y rellena con su color base."
+related: ["layers/masks", "selections/working", "layers/types", "layers/settings"]
 ---
 
-## 1. Selecciona una forma
+En esta etapa se crea una capa de pintura para cada forma, rellena con su color
+base y con una máscara ajustada a la forma. Los colores base van en capas de
+pintura porque una capa de relleno no puede ser base de recorte para el
+sombreado de la etapa 4.
 
-Oculte **Sketch** y **Color rough**. Elija **Lasso selection** y trace con cuidado alrededor de la cinta, como en el ejemplo.
+## 1. Añade la capa Block
 
-Si su arte lineal está cerrado alrededor de una forma, **Auto select** puede hacerlo con un solo clic. Marque **Line art** como capa de referencia eligiendo **Layer Settings → Use as reference** en su menú. Luego elija **Auto select**, elija **Sample reference layers** en el panel Herramientas y haga clic dentro de la forma. [Herramientas de selección](/es/docs/tools/selections/) explica las configuraciones que controlan hasta qué punto se extiende la selección.
+Oculta *Sketch*, selecciona su fila y añade una capa llamada *Block* con
+**Capa nueva**. La capa nueva aparece justo encima de *Sketch*, debajo de
+*Line art*.
 
-## 2. Haz la capa de color enmascarada.
+## 2. Ajusta la máscara de la capa al bloque
 
-Agregue una nueva capa llamada **Ribbon** debajo de Line art. Con la selección aún activa, abra el menú de la cinta y elija **Mask → Mask: reveal selection**. La capa ahora tiene una máscara que muestra sólo la forma de la cinta.
+Pulsa **M**, o selecciona **Selección con lazo** en el grupo **Seleccionar** de la
+barra de herramientas, y traza el contorno del bloque en *Line art*. Después
+selecciona **Máscara** en la barra de selección
+([Trabajar con selecciones](/es/docs/selections/working/)).
 
-Haga clic en la miniatura de pintura de la cinta y elija el color de la cinta. Elija **Select → Select all pixels** y luego **Edit → Fill selection** para llenar toda la capa con color y termine con **Select → Deselect pixels**. Solo se muestra la cinta, pero el color continúa debajo de la máscara, listo para cuando quieras ampliar la forma.
+![La barra de selección con Máscara, junto a una selección alrededor del bloque.](shot:illustration/mask-selection-bar)
 
-## 3. Ajusta el borde
+La selección se convierte en la máscara de *Block* ([Máscaras](/es/docs/layers/masks/)).
+En la fila aparece una miniatura de máscara, y una barra en la parte inferior del
+lienzo dice «Editando máscara de Block».
 
-Haga clic en la miniatura de la máscara de la cinta para editar la máscara. Ahora cualquier pincel revela más del color donde pintas y el **Eraser** lo vuelve a ocultar. Vuelva a hacer clic en la miniatura de la pintura cuando desee cambiar el color.
+## 3. Rellena la capa
 
-Haga **Disc** y **Block** de la misma manera. Mantenga el disco debajo de la cinta y el bloque debajo del disco, con el arte lineal encima de los tres. Guarde su dibujo y luego continúe con [Rendering](/es/docs/illustration/render/).
+**Rellenar selección** no está disponible mientras editas una máscara. Para
+rellenar la capa:
+
+1. Selecciona la miniatura de la capa en la fila *Block*, o selecciona **Editar contenido** en la barra de la parte inferior del lienzo.
+2. Elige terracota en el panel **Color**.
+3. Elige **Seleccionar > Seleccionar todos los píxeles**, o pulsa **Ctrl+A**.
+4. Elige **Editar > Rellenar selección**, o pulsa **Mayús+Retroceso**.
+5. Elige **Seleccionar > Deseleccionar píxeles**, o pulsa **Ctrl+D**.
+
+El color cubre toda la capa, y la máscara solo lo muestra dentro del bloque.
+
+## 4. Añade Disc y Ribbon
+
+Crea *Disc* en ocre y después *Ribbon* en verde azulado, de la misma manera.
+
+![El panel Capas con Ribbon, Disc y Block, cada una con una miniatura de máscara, debajo de Line art.](shot:illustration/mask-layers)
+
+La lista de capas muestra *Line art*, *Ribbon*, *Disc*, *Block*, *Sketch*,
+*Color rough* y **Papel**.
+
+## 5. Ajusta un borde
+
+Selecciona la miniatura de la máscara en la fila *Ribbon*. La barra de la parte
+inferior del lienzo dice «Editando máscara de Ribbon».
+
+![La barra de la parte inferior del lienzo con el texto Editando máscara de Ribbon, con Invertir, Desactivar, Aplicar máscara y Editar contenido.](shot:illustration/mask-bar)
+
+Pinta a lo largo de un borde con el pincel **Plumilla G** para mostrar más verde
+azulado, o usa el **Borrador** para recortar el borde. En una máscara, los
+pinceles ignoran el color de pintura.
+
+Siguiente etapa: [Renderizado](/es/docs/illustration/render/).

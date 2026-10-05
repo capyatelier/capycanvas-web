@@ -1,27 +1,59 @@
 ---
-title: "Mặt nạ"
-description: "Cung cấp dải băng, đĩa và khối màu của riêng chúng với các cạnh có thể chỉnh sửa."
-purpose: "Ở giai đoạn này, mỗi hình dạng có lớp màu riêng. Màu sắc lấp đầy toàn bộ lớp và mặt nạ quyết định phần nào bạn nhìn thấy. Vì không có gì bị xóa nên bạn có thể điều chỉnh cạnh của bất kỳ hình dạng nào sau này chỉ bằng cách vẽ lên mặt nạ của nó."
-techniques: ["Chọn một hình dạng bằng Lasso hoặc Tự động chọn.", "Biến vùng chọn thành một mặt nạ và tô màu cho lớp đó.", "Paint trên mặt nạ để điều chỉnh cạnh."]
-figure: "1: Hình thu nhỏ mặt nạ được chọn của Ribbon. 2: Ribbon, Disc và Block bên dưới Line art. 3: Cục tẩy, dùng để che đi các phần của mặt nạ."
-related: ["layers/masks", "tools/selections", "painting/color"]
-image: {"light": "/assets/guides/illustration-mask-light.webp", "dark": "/assets/guides/illustration-mask-dark.webp", "alt": "1: Hình thu nhỏ mặt nạ được chọn của Ribbon. 2: Ribbon, Disc và Block bên dưới Line art. 3: Cục tẩy, dùng để che đi các phần của mặt nạ."}
+title: "Màu nền"
+description: "Giai đoạn 3 của hướng dẫn vẽ minh họa: mỗi hình một lớp vẽ, có mặt nạ theo hình và được tô màu nền của hình."
+related: ["layers/masks", "selections/working", "layers/types", "layers/settings"]
 ---
 
-## 1. Chọn hình dạng
+Giai đoạn này tạo một lớp vẽ cho mỗi hình, tô màu nền của hình và có mặt nạ theo
+hình. Màu nền được đặt trên lớp vẽ vì lớp tô màu không thể làm lớp nền cắt cho các
+lớp đổ bóng ở giai đoạn 4.
 
-Ẩn **Sketch** và **Color rough**. Chọn **Lasso selection** và cẩn thận vẽ đồ xung quanh dải băng, như trong ví dụ.
+## 1. Thêm lớp Block
 
-Nếu đường nét của bạn được đóng xung quanh một hình, **Auto select** có thể thực hiện việc này chỉ bằng một cú nhấp chuột. Đánh dấu **Line art** làm lớp tham chiếu bằng cách chọn **Layer Settings → Use as reference** trong menu của nó. Sau đó chọn **Auto select**, chọn **Sample reference layers** trong bảng Công cụ và nhấp vào bên trong hình. [Công cụ lựa chọn](/vi/docs/tools/selections/) giải thích các cài đặt kiểm soát khoảng cách trải rộng của lựa chọn.
+Ẩn *Sketch*, chọn hàng của lớp đó, rồi thêm một lớp tên *Block* bằng
+**Lớp mới**. Lớp mới nằm ngay trên *Sketch*, dưới *Line art*.
 
-## 2. Tạo lớp mặt nạ màu
+## 2. Tạo mặt nạ lớp theo khối
 
-Thêm một lớp mới có tên **Ribbon** bên dưới Line art. Với lựa chọn vẫn hoạt động, hãy mở menu của Ribbon và chọn **Mask → Mask: reveal selection**. Lớp này bây giờ có một mặt nạ chỉ hiển thị hình dạng của dải băng.
+Nhấn **M**, hoặc chọn **Chọn tự do** trong nhóm **Chọn** trên Thanh công cụ vẽ,
+rồi đồ theo đường viền của khối trên *Line art*. Sau đó chọn **Mặt nạ** trên thanh
+vùng chọn ([Làm việc với vùng chọn](/vi/docs/selections/working/)).
 
-Nhấp vào hình thu nhỏ sơn của Ribbon và chọn màu của ribbon. Chọn **Select → Select all pixels** và sau đó là **Edit → Fill selection** để tô màu toàn bộ lớp và hoàn thiện với **Select → Deselect pixels**. Chỉ có dải băng hiển thị nhưng màu vẫn tiếp tục bên dưới mặt nạ, sẵn sàng khi bạn muốn mở rộng hình dạng.
+![Thanh vùng chọn với Mặt nạ, bên cạnh vùng chọn quanh khối.](shot:illustration/mask-selection-bar)
 
-## 3. Điều chỉnh cạnh
+Vùng chọn trở thành mặt nạ của *Block* ([Mặt nạ](/vi/docs/layers/masks/)). Hình
+thu nhỏ mặt nạ xuất hiện trên hàng, và một thanh ở cuối khung vẽ ghi
+“Đang sửa mặt nạ Block”.
 
-Nhấp vào hình thu nhỏ mặt nạ của Ribbon để chỉnh sửa mặt nạ. Giờ đây, bất kỳ cọ vẽ nào cũng hiển thị nhiều màu hơn ở nơi bạn vẽ và **Eraser** sẽ ẩn nó lại. Nhấp vào hình thu nhỏ sơn một lần nữa khi bạn muốn thay đổi màu sắc.
+## 3. Tô màu lớp
 
-Tạo **Disc** và **Block** theo cách tương tự. Giữ Đĩa bên dưới Dải băng và Khối bên dưới Đĩa, với nghệ thuật Đường kẻ ở trên cả ba. Lưu bản vẽ của bạn, sau đó tiếp tục [Rendering](/vi/docs/illustration/render/).
+**Tô đầy vùng chọn** không dùng được trong lúc bạn sửa mặt nạ. Để tô màu lớp:
+
+1. Chọn hình thu nhỏ của lớp trên hàng *Block*, hoặc chọn **Sửa nội dung** trên thanh ở cuối khung vẽ.
+2. Chọn màu đất nung trong bảng **Màu**.
+3. Chọn **Chọn > Chọn mọi pixel**, hoặc nhấn **Ctrl+A**.
+4. Chọn **Chỉnh sửa > Tô đầy vùng chọn**, hoặc nhấn **Shift+Backspace**.
+5. Chọn **Chọn > Bỏ chọn pixel**, hoặc nhấn **Ctrl+D**.
+
+Màu phủ toàn bộ lớp, và mặt nạ chỉ cho màu hiện bên trong khối.
+
+## 4. Thêm Disc và Ribbon
+
+Làm tương tự để tạo *Disc* màu vàng đất, rồi *Ribbon* màu xanh mòng két.
+
+![Bảng Lớp với Ribbon, Disc và Block, mỗi lớp có một hình thu nhỏ mặt nạ, bên dưới Line art.](shot:illustration/mask-layers)
+
+Danh sách lớp lúc này là *Line art*, *Ribbon*, *Disc*, *Block*, *Sketch*,
+*Color rough* và **Giấy**.
+
+## 5. Chỉnh một cạnh
+
+Chọn hình thu nhỏ mặt nạ trên hàng *Ribbon*. Thanh ở cuối khung vẽ ghi
+“Đang sửa mặt nạ Ribbon”.
+
+![Thanh ở cuối khung vẽ ghi Đang sửa mặt nạ Ribbon, với Đảo ngược, Tắt, Áp dụng mặt nạ và Sửa nội dung.](shot:illustration/mask-bar)
+
+Vẽ dọc theo cạnh bằng cọ **Bút G** để hiện thêm màu xanh mòng két, hoặc dùng
+**Tẩy** để gọt cạnh. Trên mặt nạ, cọ bỏ qua màu vẽ.
+
+Giai đoạn tiếp theo: [Render](/vi/docs/illustration/render/).

@@ -1,27 +1,130 @@
 ---
-title: "Masques et détourage"
-description: "Masquez des parties d’un calque sans les effacer et conservez l’ombrage à l’intérieur d’une forme."
-purpose: "Un masque masque une partie d'un calque sans supprimer aucune peinture, vous pouvez donc toujours changer d'avis sur l'emplacement du bord. Le découpage conserve un calque à l’intérieur de la forme du calque situé en dessous, ce qui constitue le moyen le plus simple d’ajouter un ombrage qui ne déborde jamais des lignes."
-techniques: ["Créez un masque à partir d'une sélection.", "Paint sur un masque pour afficher ou masquer la peinture.", "Découpez l’ombrage sur le calque ci-dessous."]
-figure: "1 : Vignette du masque du ruban. 2 : Ombrage coupé au-dessus du ruban. 3 : Découper sur le calque ci-dessous et sur les commandes de verrouillage Alpha."
-related: ["tools/selections", "illustration/mask", "illustration/render"]
-image: {"light": "/assets/guides/layers-masks-light.webp", "dark": "/assets/guides/layers-masks-dark.webp", "alt": "1 : Vignette du masque du ruban. 2 : Ombrage coupé au-dessus du ruban. 3 : Découper sur le calque ci-dessous et sur les commandes de verrouillage Alpha."}
+title: "Masques"
+description: "Masquer des parties d’un calque avec un masque, et toutes les commandes qui modifient un masque."
+related: ["layers/panel", "selections/working", "filters/how-filters-apply", "layers/merging"]
 ---
 
-## Créer un masque à partir d'une sélection
+Vous pouvez masquer des parties d’un calque avec un masque. Les zones peintes sur
+le masque montrent le calque, et les zones vides le cachent. Les calques de
+peinture, les calques photo, les groupes, les calques de remplissage et les
+filtres peuvent avoir un masque.
 
-Commencez par [sélectionner](/fr/docs/tools/selections/) la zone que vous souhaitez garder visible. Ouvrez ensuite le menu du calque et choisissez **Mask → Mask: reveal selection**. Tout ce qui se trouve en dehors de la sélection est masqué, mais rien n’est effacé. Vous pouvez également choisir **Mask: hide selection** pour masquer la zone sélectionnée. N'oubliez pas de désélectionner par la suite, afin que vos prochains traits ne se limitent pas à la sélection.
+## Ajouter un masque
 
-Un masque ne peut afficher que la peinture qui se trouve réellement sur le calque. Si vous pensez vouloir élargir la forme plus tard, remplissez tout le calque de couleur avant de le masquer, comme le fait l'[étape de masquage](/fr/docs/illustration/mask/) du didacticiel.
+Effectuez l’une des opérations suivantes :
 
-## Paint sur le masque
+- Choisissez **Calque > Masque > Ajouter un masque**.
+- Sélectionnez **Ajouter un masque** en bas du panneau Calques.
 
-Cliquez sur la vignette du masque à côté du calque pour modifier le masque au lieu de la peinture. Désormais, n'importe quel pinceau révèle une plus grande partie du calque partout où vous peignez, et le **Eraser** le cache à nouveau. La couleur avec laquelle vous peignez n'a pas d'importance sur un masque. Lorsque vous avez terminé, cliquez sur la vignette de peinture pour revenir à la peinture normalement.
+![La ligne de Ribbon, avec un contour autour de la miniature de son masque.](shot:layers/masks-row)
 
-Le menu du masque peut éteindre le masque pendant un moment, l'inverser ou le supprimer. Le désactiver est un moyen pratique de comparer le résultat avec la peinture en dessous.
+La miniature du masque apparaît à droite de la miniature du calque, entourée d’un
+contour qui la désigne comme cible des pinceaux. Un nouveau masque montre tout le
+calque. Si une sélection est active, le masque ne montre que la zone
+sélectionnée, et la sélection est effacée.
 
-## Découper l'ombrage sur une forme
+Si le calque a déjà un masque, **Ajouter un masque** le sélectionne pour la
+peinture. Vous ne pouvez pas ajouter de masque à un calque de sélection ni à un
+calque verrouillé.
 
-Ajoutez un nouveau calque directement au-dessus d'un calque de base, ouvrez son menu et choisissez **Layer Settings → Clip to layer below**. Tout ce que vous peignez sur le calque découpé n'affiche désormais que les endroits où le calque de base contient de la peinture, afin que vous puissiez ombrer librement sans dépasser les bords. Vous pouvez empiler plusieurs calques découpés au-dessus de la même base, un pour les ombres et un autre pour les reflets.
+## Peindre sur un masque
 
-**Alpha lock** est une alternative plus simple lorsque vous souhaitez recolorer des traits déjà existants, tels que des dessins au trait. Il conserve la nouvelle peinture à l’intérieur des traits existants sur le même calque. Le [stade de rendu](/fr/docs/illustration/render/) du didacticiel utilise les deux.
+Sélectionnez la miniature du masque pour peindre sur le masque. Pour peindre de
+nouveau sur le calque, sélectionnez la miniature du calque ou appuyez sur
+**Échap**.
+
+> **Remarque :** sur un masque, les pinceaux ignorent la couleur de peinture. Ils révèlent le calque, et la **Gomme** le cache.
+
+Sur un masque inversé, les pinceaux et la **Gomme** échangent leurs rôles. Les
+traits sur un masque sont secs, sans mélange, ni diffusion, ni texture.
+
+## Barre de modification du masque
+
+Pendant que vous peignez sur un masque, une barre intitulée « Modification du
+masque de *calque* » apparaît en bas de la toile.
+
+![La barre de modification du masque avec Inverser, Désactiver, Appliquer le masque, Plus et Modifier le contenu.](shot:layers/masks-bar)
+
+- **Inverser**
+- **Désactiver** désactive le masque, et le bouton indique alors **Activer**.
+- **Appliquer le masque** efface les pixels que le masque cache, puis supprime le masque.
+- **Plus** contient le menu **Calque** et **Afficher la barre d’actions de la toile**. Désactivez **Afficher la barre d’actions de la toile** pour masquer la barre.
+- **Modifier le contenu** revient à la peinture sur le calque.
+
+## Masques à partir de sélections
+
+Vous pouvez créer un masque à partir de la sélection actuelle.
+
+Effectuez l’une des opérations suivantes :
+
+- Choisissez **Calque > Masque > Masque : révéler la sélection** ou **Masque : masquer la sélection**. Sur un calque qui a un masque, ces éléments deviennent **Remplacer le masque : révéler la sélection** et **Remplacer le masque : masquer la sélection**.
+- Sélectionnez **Masque** dans la [barre de sélection](/fr/docs/selections/working/) sur la toile. Le nouveau masque montre la zone sélectionnée et remplace le masque éventuel du calque.
+
+Un filtre ou un calque de remplissage ajouté pendant qu’une sélection est active
+reçoit un masque tiré de la sélection. **Coller dedans** crée un nouveau calque
+masqué selon la sélection (voir [Copier et coller](/fr/docs/transform/clipboard/)).
+
+## Sélections à partir de masques
+
+Vous pouvez charger un masque comme sélection.
+
+Effectuez l’une des opérations suivantes :
+
+- Choisissez **Sélection > À partir du masque du calque**, puis **Charger le masque comme sélection**, **Ajouter le masque à la sélection**, **Soustraire le masque de la sélection** ou **Intersection avec le masque**.
+- Choisissez les mêmes éléments dans **Sélection de pixels**, dans le menu du masque.
+- Faites **Ctrl**+clic sur la miniature du masque. Maintenez aussi **Maj** pour ajouter à la sélection, **Alt** pour en soustraire, ou **Maj+Alt** pour n’en garder que l’intersection.
+
+## Menu du masque
+
+Effectuez l’une des opérations suivantes :
+
+- Choisissez **Calque > Masque** (le premier élément indique **Modifier le masque**).
+- Cliquez avec le bouton droit sur la miniature du masque, ou appuyez longuement dessus.
+- Pendant que vous peignez sur le masque, ouvrez le menu **Calque** ou sélectionnez **Actions du calque** en bas du panneau Calques.
+
+Sur un calque sans masque, **Calque > Masque** ne contient qu’**Ajouter un
+masque**, **Masque : révéler la sélection**, **Masque : masquer la sélection** et
+**Coller le masque**.
+
+![Le menu du masque de Ribbon.](shot:layers/masks-menu)
+
+| Élément | Effet |
+| --- | --- |
+| **Modifier le contenu du calque** | Revient à la peinture sur le calque. |
+| **Afficher la zone du masque** | Affiche le masque sur la toile et le sélectionne pour la peinture. |
+| **Activer le masque** | Active ou désactive le masque sans le modifier. Un masque désactivé a une miniature estompée. |
+| **Lier le masque au calque** | Activé, le masque se déplace avec le calque. Désactivé, **Déplacer le calque / masque** déplace le calque ou le masque, selon celui sur lequel vous peignez. Le bouton de lien entre les miniatures a le même effet. |
+| **Remplacer le masque : révéler la sélection**, **Remplacer le masque : masquer la sélection** | Remplace le masque par la sélection. |
+| **Copier le masque** | Copie le masque, pour **Remplacer par le masque copié** sur un autre calque, ou **Coller le masque** sur un calque sans masque. |
+| **Inverser le masque** | Intervertit les zones visibles et cachées. |
+| **Tout révéler**, **Tout masquer** | Règle le masque pour montrer ou cacher tout le calque, et désactive l’inversion. |
+| **Appliquer le masque au calque** | Efface les pixels que le masque cache, puis supprime le masque. |
+| **Supprimer le masque** | Supprime le masque. Les pixels du calque ne changent pas. |
+| **Sélection de pixels** | Charge le masque comme sélection. |
+
+Tous les éléments sauf **Modifier le contenu du calque**, **Afficher la zone du
+masque** et **Copier le masque** demandent un calque non verrouillé.
+
+## Appliquer un masque
+
+Effectuez l’une des opérations suivantes :
+
+- Choisissez **Calque > Masque > Appliquer le masque au calque**.
+- Sélectionnez **Appliquer le masque** dans la barre de modification du masque.
+
+**Appliquer le masque au calque** ne fonctionne que sur les calques de peinture,
+et le masque doit être activé. Sur un calque distordu ou déformé, choisissez
+d’abord **Appliquer la transformation aux pixels**. Pour appliquer le masque d’un
+groupe, utilisez **Fusionner le groupe** (voir
+[Fusionner des calques](/fr/docs/layers/merging/)).
+
+Sur un calque photo, **Revenir à la photo d’origine** rétablit ce qu’un masque
+appliqué a effacé.
+
+## Masques des calques de filtre et de remplissage
+
+Le masque d’un filtre définit où le filtre s’applique. Quand un calque de filtre
+ou de remplissage est sélectionné, les pinceaux peignent toujours sur son masque.
+**Remplissage**, **Dégradé** et les autres outils qui dessinent ne fonctionnent
+pas sur le masque d’un filtre. Pour peindre sur un calque de remplissage, il faut
+un masque.

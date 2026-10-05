@@ -1,27 +1,94 @@
 ---
-title: "Démarrage rapide"
-description: "Ouvrez Capy Canvas, vérifiez votre stylo et enregistrez votre premier dessin."
-purpose: "Avant de réorganiser quoi que ce soit ou d’essayer chaque pinceau, il est utile de faire quelques marques et de les enregistrer. De cette façon, vous savez que l'éditeur et votre stylo travaillent ensemble et vous disposez d'un petit dessin sur lequel revenir."
-techniques: ["Ouvrez l'éditeur et créez un nouveau dessin.", "Testez la pression du stylo avec un crayon.", "Enregistrez votre dessin et exportez une copie à partager."]
-figure: "1 : Sélecteur d'espace de travail. 2 : Ensemble d'outils, dans lequel vous choisissez un pinceau. 3 : Calques, où vos marques sont conservées."
-related: ["workspace", "painting/brushes", "tools/files"]
-image: {"light": "/assets/guides/quickstart-light.webp", "dark": "/assets/guides/quickstart-dark.webp", "alt": "1 : Sélecteur d'espace de travail. 2 : Ensemble d'outils, dans lequel vous choisissez un pinceau. 3 : Calques, où vos marques sont conservées."}
+title: "Prise en main"
+description: "Ouvrir Capy Canvas, dessiner sur le premier dessin vierge, l’enregistrer en fichier .capy et exporter un PNG."
+related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
 ---
 
-## Ouvrez l'éditeur
+## Ouvrir Capy Canvas
 
-Le moyen le plus rapide de démarrer est la [Démo Web](https://editor.capycanvas.art/), qui s'exécute dans un navigateur à jour tel que Chrome, Edge ou Safari. Après votre première visite, il continue de fonctionner même lorsque vous êtes hors ligne. Vous pouvez également l'installer en tant qu'application ; la [page de téléchargement](/fr/download/) explique comment.
+Effectuez l’une des opérations suivantes :
 
-Lorsque l'éditeur s'ouvre, choisissez **Paint** dans le sélecteur d'espace de travail en haut de la fenêtre. Paint conserve vos pinceaux, couleurs et calques à l'écran, ce qui en fait un bon endroit pour apprendre. Choisissez ensuite **File → New…**, choisissez une taille et sélectionnez **Create**.
+- Ouvrez l’éditeur web à l’adresse [editor.capycanvas.art](https://editor.capycanvas.art/).
+- Sur la page [Télécharger](/fr/download/), obtenez l’application de bureau, la bêta pour iPad ou Android, ou la marche à suivre pour installer l’éditeur web comme application.
 
-## Faire un premier coup
+L’éditeur web fonctionne dans ces navigateurs :
 
-Choisissez l'outil **Pencil** sur la gauche, puis choisissez l'un des crayons dans **Tool Set**. Dessinez avec un stylo ou une souris ; sur un écran tactile, vos doigts déplacent la vue au lieu de peindre. Tracez une ligne qui commence légèrement, s'appuie plus fort au milieu et s'éclaircit à nouveau à la fin. Si votre stylet signale une pression, la ligne devient plus épaisse et plus sombre là où vous avez appuyé plus fort.
+| Système | Navigateurs |
+| --- | --- |
+| Windows | Chrome, Edge, Firefox 141 ou version ultérieure |
+| macOS | Chrome, Edge, Safari 26 ou version ultérieure, Firefox 147 ou version ultérieure (Apple silicon) |
+| Linux (Wayland) | Chrome, Edge |
+| iPadOS 26 ou version ultérieure | Safari |
+| Android 12 ou version ultérieure | Chrome |
 
-Si toutes les lignes se ressemblent, le stylet n’envoie peut-être pas de pression au navigateur. Le [guide du stylet et du toucher](/fr/docs/advanced/input/) explique ce qu'il faut vérifier avant de modifier les paramètres du pinceau. Appuyez sur **Ctrl+Z**, ou sur le bouton Annuler dans la barre d'outils, pour supprimer les marques de test que vous ne souhaitez pas conserver, et sur **Ctrl+Shift+Z** pour refaire.
+Après votre première visite, l’éditeur web s’ouvre aussi sans connexion à Internet.
 
-## Enregistrez votre travail
+## Le premier dessin
 
-Choisissez **File → Save As…** pour enregistrer un fichier `.capy`. Cela permet de garder tout modifiable, y compris vos calques, afin que vous puissiez reprendre là où vous vous étiez arrêté. Lorsque vous souhaitez partager une image ordinaire, choisissez **File → Export…** et enregistrez une copie PNG ou JPEG.
+![Le panneau Calques d’un nouveau dessin, avec Encre actuelle au-dessus de Papier.](shot:files/new-layers)
 
-À partir de là, [Pinceaux et peinture](/fr/docs/painting/brushes/) montre comment choisir et ajuster les pinceaux, et le [tutoriel d'illustration](/fr/docs/illustration/) vous guide à travers un dessin complet, de la première esquisse à l'ombrage final.
+La première fois que vous ouvrez Capy Canvas, l’espace de travail
+[Peinture](/fr/docs/start/workspaces/) s’affiche avec un dessin vierge, et la barre
+de titre indique « Sans titre · 2048 × 1536 ». **Encre actuelle**, un calque de
+peinture vide, est sélectionné au-dessus de **Papier**, un calque de remplissage
+blanc. L’outil **Plume** est actif, avec le pinceau **Plume G** et une couleur
+presque noire.
+
+Les fois suivantes, Capy Canvas s’ouvre sur le dernier espace de travail utilisé,
+avec les dessins qui étaient ouverts.
+
+## Dessiner
+
+Faites glisser le stylet ou la souris sur la toile. Pour utiliser un autre outil,
+sélectionnez-le dans la barre d’outils Outils, sur le bord gauche de la fenêtre.
+Dans Croquis, sélectionnez **Pinceau** dans la barre de titre.
+
+> **Remarque :** les doigts ne dessinent jamais. Deux doigts posés sur la toile font défiler, zoomer et pivoter la vue.
+
+Pour annuler un trait, choisissez **Édition > Annuler**, appuyez sur **Ctrl+Z** ou
+touchez la toile avec deux doigts (voir [Annuler et rétablir](/fr/docs/start/undo/)).
+
+## Touches sur macOS et iPad
+
+Ce manuel écrit les touches comme sous Windows et Linux. Sur macOS et iPad,
+appuyez sur **Commande** (⌘) là où le manuel indique **Ctrl**. **Ctrl** fonctionne
+aussi dans l’éditeur web et dans l’application macOS.
+
+L’éditeur web affiche **Ctrl** dans tous les raccourcis. Le navigateur se réserve
+**F5**, **F11**, **F12**, ainsi que **Ctrl** ou **Ctrl+Maj** avec **W**, **T**,
+**N**, **R**, **L**, **Q** ou **P**. Une commande qui utilise l’une de ces touches
+n’a pas de raccourci dans l’éditeur web. Choisissez-la dans le menu ou dans la
+[recherche de commandes](/fr/docs/start/command-search/).
+
+## Commencer un autre dessin
+
+Choisissez **Fichier > Nouveau…** et sélectionnez **Créer** dans la boîte de
+dialogue [Nouveau dessin](/fr/docs/files/new/). Le nouveau dessin s’ouvre dans son
+propre onglet, à côté du premier.
+
+## Enregistrer le dessin
+
+![Le menu Fichier avec Nouveau…, Ouvrir…, Enregistrer, Enregistrer sous… et Exporter….](shot:files/file-menu)
+
+Pour enregistrer le dessin avec tous ses calques :
+
+1. Choisissez **Fichier > Enregistrer**, ou appuyez sur **Ctrl+S**.
+2. Choisissez un dossier et un nom. Le nom proposé est « Sans titre.capy ».
+
+La barre de titre affiche ensuite le nom du fichier. Dans Firefox et Safari, le
+dessin n’est considéré comme enregistré qu’une fois que vous avez sélectionné
+**Télécharger**, puis **Fichier enregistré** dans la boîte de dialogue
+**Télécharger le fichier**.
+
+## Exporter un PNG
+
+![La boîte de dialogue Exporter l’image avec Destination réglée sur Web / Partage.](shot:files/export-dialog)
+
+Pour exporter une copie aplatie du dessin au format PNG :
+
+1. Choisissez **Fichier > Exporter…**, ou appuyez sur **Ctrl+Maj+E**.
+2. Laissez **Destination** sur **Web / Partage**, puis sélectionnez **Choisir un fichier…**.
+3. Choisissez un dossier et un nom. Le nom proposé est « Sans titre.png ».
+
+**Web / Partage** écrit un PNG sRGB 8 bits à la taille réelle du dessin.
+L’exportation ne modifie pas le dessin et ne l’enregistre pas.

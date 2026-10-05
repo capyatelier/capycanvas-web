@@ -1,26 +1,61 @@
 ---
 title: "Tutorial ilustrasi"
-description: "Paint sebuah studi abstrak kecil, dari sketsa pensil hingga arsir akhir."
-purpose: "Tutorial ini membahas satu lukisan kecil dari awal hingga akhir. Ini menggunakan bentuk abstrak sederhana, sehingga Anda dapat fokus pada cara pekerjaan dibagi menjadi beberapa tahap dan lapisan. Karena setiap tahapan menambahkan lapisannya sendiri, Anda dapat kembali dan mengubah satu bagian tanpa mengulangi sisanya."
-techniques: ["Sketch dan mencoba warna.", "Gambarlah seni garis bersih di atas sketsa.", "Berikan setiap bentuk lapisan warna terselubungnya sendiri.", "Buat bayangan di dalam setiap bentuk dan ekspor hasilnya."]
-figure: "Contoh yang sudah selesai, dengan tinta terpisah, lapisan warna dan bayangan yang disamarkan."
-related: ["quickstart", "workspace", "tools/files"]
-navTitle: "Pendahuluan"
-image: {"light": "/assets/guides/illustration-light.webp", "dark": "/assets/guides/illustration-dark.webp", "alt": "Contoh yang sudah selesai, dengan tinta terpisah, lapisan warna dan bayangan yang disamarkan."}
+navTitle: "Pengantar"
+description: "Tutorial ilustrasi: studi abstrak yang dilukis dalam empat tahap di ruang kerja Lukis, dari sketsa warna kasar hingga ekspor PNG."
+related: ["start/workspaces", "layers/panel", "layers/masks", "files/open-save"]
 ---
 
-## Siapkan
+Anda melukis sebuah studi abstrak dalam empat tahap di ruang kerja
+[Lukis](/id/docs/start/workspaces/). Setiap tahap menambahkan lapisan, dan tidak ada
+lapisan yang digabungkan.
 
-Jika Anda belum memeriksa pena Anda, mulailah dengan [Quickstart](/id/docs/quickstart/). Kemudian pilih **Paint**, sehingga kuas, warna, dan lapisan Anda semuanya ada di layar. Buat gambar baru tentang piksel **1200 × 1200** untuk mengikuti contoh, atau gunakan subjek Anda sendiri jika Anda mau.
+![Ruang kerja Lukis dengan studi abstrak yang sudah selesai di kanvas dan lapisan-lapisannya di panel Lapisan.](shot:illustration/overview)
 
-Contohnya dibuat dari tiga bentuk yang tumpang tindih: pita melengkung, cakram, dan balok miring, dengan beberapa coretan lepas di sekelilingnya. Ini menggunakan teal, sage, oker dan terakota, dengan garis biru tua dan highlight krem. Setiap bentuk mempunyai lapisan namanya sendiri, yang membuatnya mudah untuk melihat apa yang termasuk di dalamnya.
+## Studi
 
-## Empat tahap
+Studi ini adalah gambar berukuran 1200 × 1200 berisi tiga bentuk yang saling
+bertumpuk: pita melengkung, cakram, dan balok miring. Coretan lepas dan arsiran
+tersebar di atas dan di sekitar bentuk-bentuk itu.
 
-Tutorial ini memiliki empat tahapan, semuanya dalam gambar yang sama: [Sketching](/id/docs/illustration/draft/), Line art, Masking dan Rendering. Tiap tahap menambahkan lapisan baru di atas lapisan sebelumnya, bukan menggantinya. Sebaiknya simpan sketsa dan studi warna bahkan setelah Anda menyembunyikannya, jika Anda ingin melihatnya kembali nanti.
+## Tahapan
 
-## Gunakan file contoh
+1. [Membuat sketsa](/id/docs/illustration/draft/): sketsa warna kasar dan sketsa pensil.
+2. [Line art](/id/docs/illustration/ink/): garis tinta di atas sketsa yang dipudarkan.
+3. [Warna dasar](/id/docs/illustration/mask/): satu lapisan warna ber-mask untuk setiap bentuk.
+4. [Rendering](/id/docs/illustration/render/): shading di lapisan yang diklip, dan ekspor PNG.
 
-Untuk memulai dari tahap tertentu, buka <a href="/assets/examples/01-sketch.capy" download>sketsa</a>, <a href="/assets/examples/02-line-art.capy" download>gambar garis</a>, <a href="/assets/examples/03-base-colors.capy" download>warna dasar</a>, atau <a href="/assets/examples/04-finished.capy" download>gambar selesai</a> melalui **File → Open…**. Anda juga dapat menggunakan [PNG gambar yang sudah selesai](/assets/examples/abstract-study.png) untuk berlatih mengedit foto.
+## Lapisan akhir
 
-File contoh berisi lapisan dan masker yang sama dengan yang Anda lihat di tangkapan layar. Simpan salinan Anda sendiri sebelum Anda mengubahnya, sehingga yang asli tetap tersedia.
+Gambar yang sudah selesai memiliki lapisan berikut, dari atas ke bawah:
+
+| Lapisan | Isi |
+| --- | --- |
+| *Line art* | Garis tinta |
+| *Ribbon texture* | Arsiran dan sorotan krem, diklip ke *Ribbon* |
+| *Ribbon shading* | Bayangan dan aksen hijau sage, diklip ke *Ribbon* |
+| *Ribbon* | Hijau toska, di-mask sesuai pita |
+| *Disc shading* | Shading dan satu sorotan, diklip ke *Disc* |
+| *Disc* | Oker, di-mask sesuai cakram |
+| *Block shading* | Shading dan arsiran, diklip ke *Block* |
+| *Block* | Terakota, di-mask sesuai balok |
+| *Sketch* | Garis pensil dengan opasitas 22%, tersembunyi |
+| *Color rough* | Warna rata dengan opasitas 50%, tersembunyi |
+| **Kertas** | Putih |
+
+## Berkas contoh
+
+Anda dapat memulai dari akhir tahap mana pun. Unduh berkas tahap itu, pilih
+**Berkas > Buka…** atau tekan **Ctrl+O**, lalu pilih berkasnya. Gambar terbuka di
+tabnya sendiri.
+
+| Tahap | Berkas |
+| --- | --- |
+| 1. Membuat sketsa | <a href="/assets/examples/01-sketch.capy" download>01-sketch.capy</a> |
+| 2. Line art | <a href="/assets/examples/02-line-art.capy" download>02-line-art.capy</a> |
+| 3. Warna dasar | <a href="/assets/examples/03-base-colors.capy" download>03-base-colors.capy</a> |
+| 4. Rendering | <a href="/assets/examples/04-finished.capy" download>04-finished.capy</a> |
+
+Hasil ekspor PNG studi yang sudah selesai adalah
+<a href="/assets/examples/abstract-study.png" download>abstract-study.png</a>.
+
+Tahap pertama: [Membuat sketsa](/id/docs/illustration/draft/).

@@ -1,27 +1,89 @@
 ---
 title: "Mulai cepat"
-description: "Buka Capy Canvas, periksa pena Anda, dan simpan gambar pertama Anda."
-purpose: "Sebelum Anda mengatur ulang apa pun atau mencoba setiap kuas, ada baiknya membuat beberapa tanda dan menyimpannya. Dengan begitu Anda tahu editor dan pena Anda bekerja sama, dan Anda memiliki gambar kecil untuk dilihat kembali."
-techniques: ["Buka editor dan buat gambar baru.", "Uji tekanan pena dengan pensil.", "Simpan gambar Anda dan ekspor salinannya untuk dibagikan."]
-figure: "1: Pengalih ruang kerja. 2: Set Alat, tempat Anda memilih kuas. 3: Lapisan, tempat tanda Anda disimpan."
-related: ["workspace", "painting/brushes", "tools/files"]
-image: {"light": "/assets/guides/quickstart-light.webp", "dark": "/assets/guides/quickstart-dark.webp", "alt": "1: Pengalih ruang kerja. 2: Set Alat, tempat Anda memilih kuas. 3: Lapisan, tempat tanda Anda disimpan."}
+description: "Membuka Capy Canvas, menggambar di gambar kosong pertama, menyimpannya sebagai berkas .capy, dan mengekspor PNG."
+related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
 ---
 
-## Buka editornya
+## Membuka Capy Canvas
 
-Cara tercepat untuk memulai adalah [Web Demo](https://editor.capycanvas.art/), yang berjalan di browser terkini seperti Chrome, Edge, atau Safari. Setelah kunjungan pertama Anda, ini tetap berfungsi bahkan saat Anda offline. Anda juga dapat menginstalnya sebagai aplikasi; [halaman unduh](/id/download/) menjelaskan caranya.
+Lakukan salah satu langkah berikut:
 
-Saat editor terbuka, pilih **Paint** di pengalih ruang kerja di bagian atas jendela. Paint menyimpan kuas, warna, dan lapisan Anda di layar, menjadikannya tempat yang baik untuk belajar. Kemudian pilih **File → New…**, pilih ukuran, dan pilih **Create**.
+- Buka editor web di [editor.capycanvas.art](https://editor.capycanvas.art/).
+- Dapatkan aplikasi desktop, versi beta iPad atau Android, atau langkah-langkah memasang editor web sebagai aplikasi di halaman [Unduh](/id/download/).
 
-## Lakukan pukulan pertama
+Editor web berjalan di peramban berikut:
 
-Pilih alat **Pencil** di sebelah kiri, lalu pilih salah satu pensil di **Tool Set**. Menggambar dengan pena atau mouse; di layar sentuh, jari Anda menggerakkan tampilan alih-alih melukis. Gambarlah garis yang dimulai dengan ringan, tekan lebih keras di bagian tengah dan menjadi lebih terang lagi di bagian akhir. Jika pena Anda menunjukkan tekanan, garisnya menjadi lebih tebal dan gelap saat Anda menekan lebih keras.
+| Sistem | Peramban |
+| --- | --- |
+| Windows | Chrome, Edge, Firefox 141 atau yang lebih baru |
+| macOS | Chrome, Edge, Safari 26 atau yang lebih baru, Firefox 147 atau yang lebih baru (Apple silicon) |
+| Linux (Wayland) | Chrome, Edge |
+| iPadOS 26 atau yang lebih baru | Safari |
+| Android 12 atau yang lebih baru | Chrome |
 
-Jika setiap baris terlihat sama, pena mungkin tidak memberikan tekanan ke browser. [Panduan pena dan sentuh](/id/docs/advanced/input/) menjelaskan hal-hal yang harus diperiksa sebelum Anda mengubah pengaturan kuas. Tekan **Ctrl+Z**, atau tombol batalkan pada toolbar, untuk menghapus tanda tes yang tidak ingin Anda pertahankan, dan **Ctrl+Shift+Z** untuk mengulangi.
+Setelah kunjungan pertama, editor web juga terbuka tanpa koneksi internet.
 
-## Simpan pekerjaan Anda
+## Gambar pertama
 
-Pilih **File → Save As…** untuk menyimpan file `.capy`. Ini membuat semuanya tetap dapat diedit, termasuk lapisan Anda, sehingga Anda dapat melanjutkan dari bagian terakhir yang Anda tinggalkan. Bila Anda ingin berbagi gambar biasa, pilih **File → Export…** dan simpan salinan PNG atau JPEG.
+![Panel Lapisan pada gambar baru, dengan Tinta saat ini di atas Kertas.](shot:files/new-layers)
 
-Dari sini, [Kuas dan lukisan](/id/docs/painting/brushes/) menunjukkan cara memilih dan menyesuaikan kuas, dan [tutorial ilustrasi](/id/docs/illustration/) membawa Anda melalui gambar lengkap, dari sketsa pertama hingga bayangan akhir.
+Saat pertama kali dibuka, Capy Canvas menampilkan ruang kerja [Lukis](/id/docs/start/workspaces/)
+dengan gambar kosong, dan bilah judul bertuliskan "Tanpa judul · 2048 × 1536".
+**Tinta saat ini**, lapisan lukis yang kosong, terpilih di atas **Kertas**, lapisan
+isian putih. Alat **Pena** aktif dengan kuas **Pena G** dan warna yang hampir hitam.
+
+Pada pembukaan berikutnya, Capy Canvas terbuka dengan ruang kerja yang terakhir Anda
+gunakan dan gambar yang masih terbuka saat itu.
+
+## Menggambar
+
+Seret pena atau tetikus di kanvas. Untuk memakai alat lain, pilih alat tersebut di
+bilah alat Alat di tepi kiri jendela. Di Sketsa, pilih **Kuas** di bilah judul.
+
+> **Catatan:** Jari tidak pernah menggambar. Dua jari di kanvas menggeser, memperbesar/memperkecil, dan memutar tampilan.
+
+Untuk mengurungkan goresan, pilih **Edit > Urungkan**, tekan **Ctrl+Z**, atau ketuk
+kanvas dengan dua jari (lihat [Urungkan dan ulangi](/id/docs/start/undo/)).
+
+## Tombol di macOS dan iPad
+
+Manual ini menuliskan tombol seperti di Windows dan Linux. Di macOS dan iPad, tekan
+**Command** (⌘) di tempat manual menyebut **Ctrl**. **Ctrl** juga berfungsi di editor
+web dan aplikasi macOS.
+
+Editor web menandai setiap pintasan dengan **Ctrl**. Peramban memakai sendiri **F5**,
+**F11**, **F12**, serta **Ctrl** atau **Ctrl+Shift** bersama **W**, **T**, **N**,
+**R**, **L**, **Q**, atau **P**. Perintah yang memakai salah satu tombol ini tidak
+memiliki pintasan di editor web. Pilih perintah itu dari menu atau dari
+[pencarian perintah](/id/docs/start/command-search/).
+
+## Memulai gambar lain
+
+Pilih **Berkas > Baru…** lalu pilih **Buat** di dialog [Gambar baru](/id/docs/files/new/).
+Gambar baru terbuka di tabnya sendiri, di samping gambar pertama.
+
+## Menyimpan gambar
+
+![Menu Berkas dengan Baru…, Buka…, Simpan, Simpan Sebagai…, dan Ekspor….](shot:files/file-menu)
+
+Untuk menyimpan gambar beserta semua lapisannya:
+
+1. Pilih **Berkas > Simpan**, atau tekan **Ctrl+S**.
+2. Pilih folder dan tentukan nama. Nama yang disarankan adalah "Tanpa judul.capy".
+
+Bilah judul lalu menampilkan nama berkas. Di Firefox dan Safari, gambar dianggap
+tersimpan hanya setelah Anda memilih **Unduh** lalu **Berkas disimpan** di dialog
+**Unduh berkas**.
+
+## Mengekspor PNG
+
+![Dialog Ekspor gambar dengan Tujuan disetel ke Web / Bagikan.](shot:files/export-dialog)
+
+Untuk mengekspor salinan PNG gambar yang sudah diratakan:
+
+1. Pilih **Berkas > Ekspor…**, atau tekan **Ctrl+Shift+E**.
+2. Biarkan **Tujuan** tetap **Web / Bagikan**, lalu pilih **Pilih Berkas…**.
+3. Pilih folder dan tentukan nama. Nama yang disarankan adalah "Tanpa judul.png".
+
+**Web / Bagikan** menulis PNG sRGB 8-bit dalam ukuran penuh gambar. Mengekspor tidak
+mengubah atau menyimpan gambar.

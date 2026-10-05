@@ -1,131 +1,89 @@
 # Reproduce the editor screenshots
 
-Run from the website repository root. Screenshots are actual Capy Canvas renders:
-a 1920 × 1080 layout at twice the pixel density (3840 × 2160 pixels), English
-editor controls, light and dark appearances. The homepage
-showcase has three unannotated slides (`showcase/{sketch,paint,photo}-{light,dark}.webp`)
-that open finished artwork in the Sketch, Paint and Photo workspaces. The
-documentation overview uses the unannotated abstract study in **Paint**
-(`guides/illustration-{light,dark}.webp`). Other guide images add numbered outlines;
-translated captions explain the same controls in each language.
+Run from the website repository root. Every image in the manual is an actual
+Capy Canvas render from the web editor, captured in a 1920 × 1080 window at twice
+the pixel density, with English controls, in both light and dark appearances.
+Most images are cropped to the panel, bar, menu or dialog a section describes;
+the workspace overviews show the whole window.
 
 ## Prepare and capture
 
 Requirements: Node 24, the product's Rust/Wasm build dependencies, Chrome with
-hardware WebGPU, and (on Linux) Mutter and `dbus-run-session`. The app build script
-checks its own toolchain requirements. Install website dependencies with `npm ci`.
+hardware WebGPU, and (on Linux) Mutter and `dbus-run-session`. Install website
+dependencies with `npm ci`.
 
 ```sh
-# Defaults to the tracked HEAD of ../draw. Pin the revision deployed at editor.capycanvas.art.
-APP_REPO=../draw APP_REVISION=b4f4a64eb8554a8788faf244f83d09fae0eeca60 npm run capture:prepare
+# Build the released revision in an isolated copy of the app repository.
+APP_REPO=../capycanvas APP_REVISION=v1.0.4 npm run capture:prepare
 npm run capture
-# Refresh the guides only, keeping the recorded homepage showcase slides.
-CAPTURE_ONLY=docs npm run capture
 npm run check
 ```
 
 `capture:prepare` archives the selected tracked revision into ignored
 `artifacts/capture-app/<revision>/`, builds there, and records the prepared package
-in `artifacts/capture-app.json`. It does not change the adjacent product checkout
-or include its uncommitted edits. `CAPTURE_APP_DIR` and `CAPTURE_TARGET_DIR` can
-select different staging and Cargo-cache directories.
+in `artifacts/capture-app.json`. It never changes the product checkout.
+`CAPTURE_APP_DIR` and `CAPTURE_TARGET_DIR` select other staging and Cargo-cache
+directories.
 
-On Linux, `capture` launches **headed Chrome** on a private headless Wayland display.
-This preserves the WebGPU surface on the NVIDIA setup used for these captures.
-It does not open windows or move the pointer on the user's desktop. The wrapper
-starts its own Mutter process and cleans up that process and its temporary runtime
-directory on exit. `CHROME` selects another executable. `CAPTURE_BROWSER_MODE=native`
-opts into Chrome's native headless mode on systems where it renders WebGPU correctly;
-pixel checks on the overview and showcase images reject a black or missing canvas.
+On Linux, `capture` launches **headed Chrome** on a private headless Wayland
+display, which keeps the WebGPU surface on NVIDIA. It opens no window on the
+desktop. `CHROME` selects another executable; `CAPTURE_BROWSER_MODE=native` uses
+Chrome's own headless mode where it renders WebGPU correctly.
 
-Chrome uses software Canvas2D for image decoding and tiny UI previews, while the
-editor's painting and effects remain hardware WebGPU. This avoids blank image
-imports in the tested Chrome/Vulkan Canvas2D path. Captures run with a fresh browser
-profile. Website browser checks use ordinary headless Chrome and need no WebGPU.
+## Recipes
 
-The runner serves the prepared app automatically. For a separately hosted staging
-build, set `APP_URL`; it must serve the prepared `capture-source.json`, matching
-JavaScript entry point and Wasm. A source checkout's revision alone is not proof
-of the package served by a URL.
+`docs/index.mjs` lists one recipe per chapter, in the order they run in one
+browser. The illustration chapter runs first: it draws the tutorial study with
+real pen input and saves the downloadable examples the other chapters open.
 
-## Recipes and annotations
+- `editor.mjs` drives the editor through its own actions, commands, clicks and
+  pen events. The browser file picker is replaced with an in-memory store so
+  saving and opening never block on an OS dialog; the app still writes and reads
+  its real `.capy` and image bytes.
+- `shoot.mjs` captures `public/assets/docs/<name>-{light,dark}.webp`, cropped to
+  the union of CSS selectors, document rectangles or window rectangles. A recipe
+  opens menus and dialogs in `setup` and closes them in `teardown`, because the
+  appearance switch can close them. `ready` waits for a state such as the canvas
+  bar being shown.
+- `annotations.mjs` draws numbered outlines over measured controls for images with
+  callouts. Numbers match the image caption in the page.
+- `docs/illustration.mjs` defines the original abstract study (a teal ribbon, an
+  ochre disc and a terracotta block) and the tutorial's four stages.
+- `photo/terrarium.jpg` is a photograph supplied by Capy Atelier for the photo
+  tutorial and photo features, resized with its metadata removed.
 
-- `editor.mjs` selects actual commands, tools, layers, workspaces and dialogs.
-  Artwork follows sampled paths delivered as browser pen events, with pressure.
-  Every pen path is checked against the actual canvas hit target.
-- `illustration.mjs` defines the original abstract study. It creates real
-  sketch, ink, masked base-color and clipped shading layers. It saves four `.capy`
-  stages and exports `abstract-study.png`; these are reader-downloadable examples.
-  Ribbon, Disc and Block use teal, sage, ochre and terracotta, with dark blue ink
-  and cream highlights. Pencil, G-Pen, Paintbrush, Watercolor Wash and Airbrush
-  produce the line work, hatching and shading in the actual editor.
-- `references.mjs` stages individual tool and workflow examples. The photo-editing
-  scenes open the exported abstract study as an image, check painted pixels in a real
-  PNG export, then save, reopen and check the image/effect project.
-- `showcase.mjs` opens the homepage artwork from `showcase/*.capy` (an ink drawing,
-  an oil painting and a photograph supplied by Capy Atelier), frames it in the
-  matching workspace, and adds the Photo slide's Curves and Vibrance layers.
-- `annotations.mjs` injects an SVG overlay above the app. It measures visible DOM
-  targets and clips outlines to their containers. An HTML popover keeps the overlay
-  above modal dialogs without changing the app's controls or painting. Numbers are
-  language-neutral; `figure` and `image.alt` in each guide must match them.
+Never fake UI: no injected controls, CSS overrides or replaced pixels. Reach every
+state through the app.
 
-The browser file-picker transport is replaced with an in-memory file store so an
-OS save dialog does not block automation. PNG saves go through the real **Export
-image** dialog. Each new or opened drawing adds a title-bar tab, so the recipes close
-the other drawings after saving them, keeping one drawing in each screenshot unless
-a scene shows tabs on purpose. The app still serializes and reopens its
-own `.capy` data and produces the PNG bytes. Neither UI screenshots nor artwork are
-replaced with fabricated DOM or a separate bitmap. The illustration is a scripted
-teaching example.
+## Develop one chapter
+
+`CAPTURE_ONLY` runs selected chapters; `CAPTURE_OUTPUT` and `CAPTURE_REVIEW` keep
+the results out of the published assets, so several chapters can be developed at
+once:
+
+```sh
+CAPTURE_ONLY=layers CAPTURE_OUTPUT=/tmp/capture/layers CAPTURE_REVIEW=/tmp/capture/layers-review npm run capture
+```
+
+On failure the review directory holds a screenshot, the editor state and browser
+errors. A partial run is marked `partial` and must not be published; run every
+chapter with `npm run capture` before committing.
 
 ## Outputs and provenance
 
 Commit the recipes and these public assets:
 
-- `site/public/assets/showcase/`: the three homepage slides in both appearances.
-- `site/public/assets/guides/`: 30 guide pairs, including the four tutorial stages.
-- `site/public/assets/examples/`: four tutorial projects, the abstract-study PNG,
-  and the edited-image project/PNG.
-- `site/public/assets/capture.json`: source revision, applied source corrections,
-  app hashes, recipe hashes, browser version, dimensions, screenshot hashes,
-  annotation targets/bounds, example-file hashes, and the hashes of the showcase
-  artwork. Documentation-only runs keep the recorded showcase slides byte-for-byte.
+- `public/assets/docs/`: every manual image, by chapter.
+- `public/assets/guides/illustration-{light,dark}.webp`: the documentation overview.
+- `public/assets/examples/`: the four tutorial projects and the exported study.
+- `public/assets/capture.json`: source revision, app hashes, recipe hashes,
+  browser version, image sizes and hashes, callout bounds, and example hashes.
 
-`capture-compatibility.mjs` lists any required source corrections explicitly.
-The current baseline includes the WGSL hash-expression correction upstream and
-needs no compatibility patch. It also includes the Web Tool Set layout fix: preset
-labels and brush previews use the same arrangement as GTK. Any future correction
-must be applied only to the isolated source archive and recorded in provenance.
-Do not describe a corrected build as an unmodified checkout.
-
-The capture sequence reapplies each appearance once after its CSS palette is
-active, so canvas-drawn labels such as the color wheel's readout use the current
-theme. It uses the normal editor action without altering app source or screenshot
-pixels.
+The homepage slides in `public/assets/showcase/` are kept byte-for-byte from an
+earlier capture (`showcaseRevision`). Their artwork in `showcase/*.capy` predates
+the current project format and has to be re-saved before the slides can be
+captured again.
 
 Reproduction means the same source, actions, artwork and composition. GPU, fonts,
-Chrome versions and input timing can change individual screenshot bytes. Use the
-recorded environment and review new images rather than promising bit-identical
-output across machines.
-
-## Review and debug
-
-The runner writes progress to `artifacts/capture-review/progress.json`. On failure
-it saves a screenshot, editor state and browser errors in that directory. Mutter
-logs are in `display.log`. A failed or partial run must not be published.
-
-```sh
-# Reuses already-generated tutorial files while debugging the reference scenes.
-CAPTURE_ONLY=references npm run capture
-# A reference-only run writes partial provenance; restore a complete run before publishing.
-npm run capture
-npm run check
-```
-
-Tests verify complete topic/theme coverage, dimensions and compression, provenance
-hashes, visible callouts, translated caption numbers, the editable examples and
-colored PNG output. Website checks cover all guides in all four languages at desktop
-and mobile widths, both themes, full-size image links, language switching and
-reading without JavaScript. Review the actual art and annotation placement as well:
-a passing selector check cannot establish that a screenshot explains its page.
+Chrome versions and input timing can change individual bytes, so review new
+images rather than expecting identical output.

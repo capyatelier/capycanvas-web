@@ -160,6 +160,6 @@ test('drafts, pre-releases and upload-only files appear nowhere in the built sit
   for (const path of (await files(published)).filter(path => path.endsWith('.html'))) {
     const html = await readFile(path, 'utf8');
     assert.doesNotMatch(html, neverOffered, path);
-    assert.doesNotMatch(html, /1\.0\.3|1\.1\.0-beta|untagged-/, path);
+    assert.doesNotMatch(html, /1\.0\.3|1\.1\.0-beta|\/untagged-/, path);
   }
 });

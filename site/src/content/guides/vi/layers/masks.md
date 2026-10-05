@@ -1,27 +1,120 @@
 ---
-title: "Mặt nạ và cắt"
-description: "Ẩn các phần của lớp mà không xóa chúng và tiếp tục tô bóng bên trong hình dạng."
-purpose: "Mặt nạ ẩn một phần của lớp mà không xóa bất kỳ lớp sơn nào, vì vậy bạn luôn có thể thay đổi ý định về vị trí của cạnh. Việc cắt giữ một lớp bên trong hình dạng của lớp bên dưới nó, đây là cách dễ nhất để thêm bóng mà không bao giờ tràn ra ngoài các đường kẻ."
-techniques: ["Tạo một mặt nạ từ vùng lựa chọn.", "Paint trên mặt nạ để hiển thị hoặc ẩn sơn.", "Cắt bóng cho lớp bên dưới."]
-figure: "1: Hình thu nhỏ mặt nạ của Ribbon. 2: Bóng được cắt bớt phía trên Ribbon. 3: Clip vào lớp bên dưới và điều khiển khóa Alpha."
-related: ["tools/selections", "illustration/mask", "illustration/render"]
-image: {"light": "/assets/guides/layers-masks-light.webp", "dark": "/assets/guides/layers-masks-dark.webp", "alt": "1: Hình thu nhỏ mặt nạ của Ribbon. 2: Bóng được cắt bớt phía trên Ribbon. 3: Clip vào lớp bên dưới và điều khiển khóa Alpha."}
+title: "Mặt nạ"
+description: "Ẩn một phần lớp bằng mặt nạ, và mọi lệnh thay đổi mặt nạ."
+related: ["layers/panel", "selections/working", "filters/how-filters-apply", "layers/merging"]
 ---
 
-## Tạo mặt nạ từ vùng chọn
+Bạn có thể ẩn một phần lớp bằng mặt nạ. Vùng được vẽ trên mặt nạ hiện lớp, còn vùng
+trống ẩn lớp. Lớp vẽ, lớp ảnh, nhóm, lớp tô màu và bộ lọc đều có thể có mặt nạ.
 
-Đầu tiên [chọn](/vi/docs/tools/selections/) khu vực bạn muốn hiển thị. Sau đó mở menu của lớp và chọn **Mask → Mask: reveal selection**. Mọi thứ bên ngoài vùng chọn đều bị ẩn, nhưng không có cái nào bị xóa. Thay vào đó, bạn cũng có thể chọn **Mask: hide selection** để ẩn vùng đã chọn. Hãy nhớ bỏ chọn sau đó để các nét tiếp theo của bạn không bị giới hạn trong vùng chọn.
+## Thêm mặt nạ
 
-Mặt nạ chỉ có thể hiển thị lớp sơn thực sự có trên lớp. Nếu bạn nghĩ rằng bạn có thể muốn mở rộng hình dạng sau này, hãy tô màu toàn bộ lớp trước khi che nó, như [masking stage](/vi/docs/illustration/mask/) của hướng dẫn đã làm.
+Thực hiện một trong các cách sau:
 
-## Paint trên mặt nạ
+- Chọn **Lớp > Mặt nạ > Thêm mặt nạ**.
+- Chọn **Thêm mặt nạ** ở cuối bảng Lớp.
 
-Nhấp vào hình thu nhỏ của mặt nạ bên cạnh lớp để chỉnh sửa mặt nạ thay vì sơn. Giờ đây, bất kỳ cọ vẽ nào cũng hiển thị nhiều lớp hơn ở bất cứ nơi nào bạn vẽ và **Eraser** sẽ ẩn nó lại. Màu bạn vẽ không quan trọng trên mặt nạ. Khi hoàn tất, hãy nhấp vào hình thu nhỏ của bức vẽ để quay lại vẽ bình thường.
+![Hàng của Ribbon, với đường viền quanh hình thu nhỏ mặt nạ.](shot:layers/masks-row)
 
-Menu của mặt nạ có thể tắt mặt nạ trong giây lát, đảo ngược hoặc xóa nó. Tắt nó đi là một cách thuận tiện để so sánh kết quả với lớp sơn bên dưới.
+Hình thu nhỏ mặt nạ xuất hiện bên phải hình thu nhỏ của lớp, với đường viền cho biết
+cọ đang vẽ lên mặt nạ. Mặt nạ mới hiện toàn bộ lớp. Nếu đang có vùng chọn, mặt nạ
+chỉ hiện vùng đã chọn, và vùng chọn bị bỏ.
 
-## Cắt bóng thành hình dạng
+Nếu lớp đã có mặt nạ, **Thêm mặt nạ** chọn mặt nạ đó để vẽ. Bạn không thể thêm mặt
+nạ cho lớp vùng chọn hoặc lớp đã khóa.
 
-Thêm một lớp mới ngay phía trên lớp cơ sở, mở menu của nó và chọn **Layer Settings → Clip to layer below**. Bất cứ thứ gì bạn vẽ trên lớp đã cắt bây giờ chỉ hiển thị nơi lớp nền có sơn, vì vậy bạn có thể tô bóng tự do mà không cần tô quá các cạnh. Bạn có thể xếp chồng nhiều lớp đã cắt lên trên cùng một lớp nền, một lớp dành cho bóng và lớp khác dành cho vùng sáng.
+## Vẽ lên mặt nạ
 
-**Alpha lock** là một giải pháp thay thế đơn giản hơn khi bạn muốn tô màu lại các nét đã tồn tại, chẳng hạn như nghệ thuật đường nét. Nó giữ lớp sơn mới bên trong các nét hiện có trên cùng một lớp. [kết xuất stage](/vi/docs/illustration/render/) của hướng dẫn sử dụng cả hai.
+Chọn hình thu nhỏ mặt nạ để vẽ lên mặt nạ. Để vẽ lại lên lớp, chọn hình thu nhỏ của
+lớp hoặc nhấn **Escape**.
+
+> **Lưu ý:** Trên mặt nạ, cọ bỏ qua màu vẽ. Cọ làm lộ lớp, còn **Tẩy** ẩn lớp.
+
+Trên mặt nạ đã đảo ngược, cọ và **Tẩy** đổi vai trò cho nhau. Nét vẽ trên mặt nạ là
+nét khô, không trộn màu, không loang và không có kết cấu.
+
+## Thanh sửa mặt nạ
+
+Khi bạn vẽ lên mặt nạ, một thanh ghi “Đang sửa mặt nạ *lớp*” xuất hiện ở cuối khung
+vẽ.
+
+![Thanh sửa mặt nạ với Đảo ngược, Tắt, Áp dụng mặt nạ, Thêm và Sửa nội dung.](shot:layers/masks-bar)
+
+- **Đảo ngược**
+- **Tắt** tắt mặt nạ, và nút đổi thành **Bật**.
+- **Áp dụng mặt nạ** xóa các pixel bị mặt nạ ẩn, rồi bỏ mặt nạ.
+- **Thêm** chứa trình đơn **Lớp** và **Hiện thanh thao tác khung vẽ**. Tắt **Hiện thanh thao tác khung vẽ** để ẩn thanh này.
+- **Sửa nội dung** quay lại vẽ lên lớp.
+
+## Mặt nạ từ vùng chọn
+
+Bạn có thể tạo mặt nạ từ vùng chọn hiện tại.
+
+Thực hiện một trong các cách sau:
+
+- Chọn **Lớp > Mặt nạ > Mặt nạ: hiện vùng chọn** hoặc **Mặt nạ: ẩn vùng chọn**. Trên lớp đã có mặt nạ, các mục này ghi **Thay mặt nạ: hiện vùng chọn** và **Thay mặt nạ: ẩn vùng chọn**.
+- Chọn **Mặt nạ** trên [thanh vùng chọn](/vi/docs/selections/working/) trên khung vẽ. Mặt nạ mới hiện vùng đã chọn và thay mọi mặt nạ lớp đang có.
+
+Bộ lọc hoặc lớp tô màu được thêm khi đang có vùng chọn sẽ nhận mặt nạ từ vùng chọn.
+**Dán vào** tạo một lớp mới có mặt nạ theo vùng chọn (xem
+[Sao chép và dán](/vi/docs/transform/clipboard/)).
+
+## Vùng chọn từ mặt nạ
+
+Bạn có thể nạp mặt nạ thành vùng chọn.
+
+Thực hiện một trong các cách sau:
+
+- Chọn **Chọn > Từ mặt nạ lớp** rồi chọn **Nạp mặt nạ thành vùng chọn**, **Thêm mặt nạ vào vùng chọn**, **Trừ mặt nạ khỏi vùng chọn** hoặc **Giao với mặt nạ**.
+- Chọn các mục này từ **Vùng chọn pixel** trong trình đơn mặt nạ.
+- **Ctrl**+nhấp vào hình thu nhỏ mặt nạ. Giữ thêm **Shift** để cộng vào vùng chọn, **Alt** để trừ khỏi vùng chọn, hoặc **Shift+Alt** để lấy phần giao với vùng chọn.
+
+## Trình đơn mặt nạ
+
+Thực hiện một trong các cách sau:
+
+- Chọn **Lớp > Mặt nạ** (mục đầu tiên ghi **Sửa mặt nạ**).
+- Nhấp chuột phải hoặc giữ hình thu nhỏ mặt nạ.
+- Khi bạn đang vẽ lên mặt nạ, mở trình đơn **Lớp** hoặc chọn **Thao tác lớp** ở cuối bảng Lớp.
+
+Trên lớp không có mặt nạ, **Lớp > Mặt nạ** chỉ có **Thêm mặt nạ**,
+**Mặt nạ: hiện vùng chọn**, **Mặt nạ: ẩn vùng chọn** và **Dán mặt nạ**.
+
+![Trình đơn mặt nạ của Ribbon.](shot:layers/masks-menu)
+
+| Mục | Chức năng |
+| --- | --- |
+| **Sửa nội dung lớp** | Quay lại vẽ lên lớp. |
+| **Hiện vùng mặt nạ** | Hiện mặt nạ trên khung vẽ và chọn mặt nạ để vẽ. |
+| **Bật mặt nạ** | Bật hoặc tắt mặt nạ mà không thay đổi mặt nạ. Mặt nạ đang tắt có hình thu nhỏ bị mờ. |
+| **Liên kết mặt nạ với lớp** | Khi bật, mặt nạ di chuyển cùng lớp. Khi tắt, **Di chuyển lớp / mặt nạ** di chuyển lớp hoặc mặt nạ, tùy bạn đang vẽ lên phần nào. Nút liên kết giữa hai hình thu nhỏ có cùng chức năng. |
+| **Thay mặt nạ: hiện vùng chọn**, **Thay mặt nạ: ẩn vùng chọn** | Thay mặt nạ bằng vùng chọn. |
+| **Sao chép mặt nạ** | Sao chép mặt nạ để dùng với **Thay bằng mặt nạ đã sao chép** trên lớp khác, hoặc **Dán mặt nạ** trên lớp chưa có mặt nạ. |
+| **Đảo mặt nạ** | Đổi chỗ vùng hiện và vùng ẩn. |
+| **Hiện tất cả**, **Ẩn tất cả** | Cho mặt nạ hiện hoặc ẩn toàn bộ lớp, và tắt chế độ đảo ngược. |
+| **Áp dụng mặt nạ vào lớp** | Xóa các pixel bị mặt nạ ẩn, rồi bỏ mặt nạ. |
+| **Xóa mặt nạ** | Bỏ mặt nạ. Pixel của lớp không thay đổi. |
+| **Vùng chọn pixel** | Nạp mặt nạ thành vùng chọn. |
+
+Mọi mục, trừ **Sửa nội dung lớp**, **Hiện vùng mặt nạ** và **Sao chép mặt nạ**, đều
+cần lớp chưa khóa.
+
+## Áp dụng mặt nạ
+
+Thực hiện một trong các cách sau:
+
+- Chọn **Lớp > Mặt nạ > Áp dụng mặt nạ vào lớp**.
+- Chọn **Áp dụng mặt nạ** trên thanh sửa mặt nạ.
+
+**Áp dụng mặt nạ vào lớp** chỉ dùng được với lớp vẽ, và mặt nạ phải đang bật. Trên
+lớp đã bị làm méo hoặc uốn cong, hãy chọn **Áp dụng biến đổi vào pixel** trước. Để
+áp dụng mặt nạ của nhóm, dùng **Gộp nhóm** (xem [Gộp lớp](/vi/docs/layers/merging/)).
+
+Trên lớp ảnh, **Trở về ảnh gốc** khôi phục phần mà mặt nạ đã áp dụng xóa đi.
+
+## Mặt nạ trên lớp bộ lọc và lớp tô màu
+
+Mặt nạ của bộ lọc quyết định bộ lọc tác động ở đâu. Khi đang chọn bộ lọc hoặc lớp
+tô màu, cọ luôn vẽ lên mặt nạ của lớp đó. **Tô đầy**, **Chuyển màu** và các công cụ tạo
+nét vẽ khác không dùng được trên mặt nạ của bộ lọc. Muốn vẽ lên lớp tô màu thì cần có mặt
+nạ.

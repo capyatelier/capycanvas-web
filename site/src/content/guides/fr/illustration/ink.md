@@ -1,27 +1,47 @@
 ---
-title: "Dessin au trait"
-description: "Dessinez des lignes d'encre nettes sur un nouveau calque au-dessus de l'esquisse estompée."
-purpose: "Le dessin au trait est la version nette et finale de vos contours. Le dessiner sur son propre calque signifie que vous pouvez effacer ou recolorer l'encre sans toucher l'esquisse, puis peindre des couleurs en dessous."
-techniques: ["Estompez l'esquisse et ajoutez un calque de dessin au trait.", "Encrez avec un stylo et faites pivoter la vue pour créer des courbes délicates.", "Fermez les contours de chaque forme."]
-figure: "1 : Dessin au trait au-dessus du Sketch décoloré. 2 : Contrôles de vue du navigateur. 3 : Pinceaux à stylo dans le jeu d’outils."
-related: ["layers/basics", "advanced/input", "workspace"]
-image: {"light": "/assets/guides/illustration-ink-light.webp", "dark": "/assets/guides/illustration-ink-dark.webp", "alt": "1 : Dessin au trait au-dessus du Sketch décoloré. 2 : Contrôles de vue du navigateur. 3 : Pinceaux à stylo dans le jeu d’outils."}
+title: "Encrage"
+description: "Étape 2 du tutoriel d’illustration : l’encrage à la Plume G sur un calque placé au-dessus de l’esquisse estompée."
+related: ["layers/panel", "drawing/brush-tools", "start/canvas", "input/pen"]
 ---
 
-## 1. Préparez les couches
+Cette étape produit l’encrage sur un calque placé au-dessus de l’esquisse estompée.
 
-Sélectionnez **Sketch** et réduisez son opacité jusqu'à ce que les lignes soient pâles mais toujours faciles à suivre. Masquez **Color rough** pour le moment. Ajoutez ensuite un nouveau calque au-dessus de Sketch, nommez-le **Line art** et assurez-vous qu'il s'agit du calque sélectionné avant de commencer l'encrage.
+## 1. Préparer les calques
 
-Choisissez l'outil **Pen** et un stylo tel que **G-Pen**. Tracez quelques lignes de test avec votre pression habituelle et ajustez la taille jusqu'à ce que l'épaisseur de la ligne vous semble correcte.
+Dans le [panneau Calques](/fr/docs/layers/panel/) :
 
-## 2. Encrez le dessin
+1. Sélectionnez **Masquer le calque** (l’œil) sur la ligne *Color rough*.
+2. Sélectionnez *Sketch* et réglez **Opacité du calque** sur 22 dans l’en-tête du panneau.
+3. Sélectionnez **Nouveau calque** en bas du panneau et renommez le nouveau calque *Line art*.
 
-Tracez les contours des trois formes, puis ajoutez les gribouillis lâches et les courtes lignes hachurées. Lorsqu'une courbe semble difficile à dessiner, faites pivoter la vue avec les boutons de **Navigator** ou avec deux doigts sur un écran tactile. La rotation de la vue ne fait pas pivoter le dessin, vous pouvez donc la faire pivoter aussi souvent que vous le souhaitez.
+![Le panneau Calques avec Line art au-dessus de Sketch à 22 %, et Color rough masqué.](shot:illustration/ink-layers)
 
-Utilisez la gomme ou annulez pour corriger les erreurs. Si la ligne semble être en retard par rapport à votre stylet, les [paramètres du stylet](/fr/docs/advanced/input/) peuvent vous aider.
+La liste des calques affiche *Line art*, *Sketch* à 22 %, *Color rough* (masqué)
+et **Papier**.
 
-## 3. Vérifiez les contours
+## 2. Encrer les contours
 
-Masquez Sketch pour examiner votre encre seule. Comblez les petits espaces dans les contours des trois formes, car l'étape suivante les utilise pour sélectionner chaque forme. Les petits détails à l’intérieur d’une forme peuvent rester ouverts.
+Sélectionnez **Plume** dans la barre d’outils Outils et le pinceau **Plume G** dans
+Ensemble d’outils ([Outils de pinceau](/fr/docs/drawing/brush-tools/)), puis réglez
+**Taille du pinceau** sur 4,5 px. Sur *Line art*, repassez les trois contours, puis
+les gribouillis et les hachures.
 
-Le dessin au trait reste en haut de la liste des calques pour le reste du didacticiel, de sorte que les couleurs seront toujours placées en dessous. Enregistrez votre dessin, puis passez à [Masking](/fr/docs/illustration/mask/).
+![Le panneau Ensemble d’outils avec les pinceaux plume et Plume G sélectionné.](shot:illustration/ink-pens)
+
+Pour corriger un trait, appuyez sur **Ctrl+Z** pour l’annuler, ou appuyez sur **E**
+et effacez avec la **Gomme**.
+
+Vous pouvez faire pivoter la vue pendant l’encrage. Choisissez
+**Affichage > Pivoter la vue de 90° à gauche** ou
+**Affichage > Pivoter la vue de 90° à droite**, ou sélectionnez les boutons de
+rotation du panneau **Navigateur**. Dans Peinture, l’icône **Navigateur** se trouve
+à droite de la fenêtre.
+
+![Le panneau Navigateur avec ses boutons de zoom, de rotation et de retournement.](shot:illustration/ink-navigator)
+
+Pour un angle quelconque, faites pivoter deux doigts sur la toile, ou tapez l’angle
+dans le menu de l’indicateur de zoom, à l’extrémité droite du pied de page.
+**Réinitialiser la rotation**, dans ce menu, ramène la vue à 0°
+([Afficher la toile](/fr/docs/start/canvas/)).
+
+Étape suivante : [Couleurs de base](/fr/docs/illustration/mask/).

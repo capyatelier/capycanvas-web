@@ -1,27 +1,63 @@
 ---
-title: "Maskeleme"
-description: "Şeride, diske ve bloka, düzenlenebilir kenarlarla kendi renk katmanlarını verin."
-purpose: "Bu aşamada her şekil kendi renk katmanını alır. Renk tüm katmanı doldurur ve maske hangi kısmını göreceğinize karar verir. Hiçbir şey silinmediği için herhangi bir şeklin kenarını daha sonra yalnızca maskesini boyayarak ayarlayabilirsiniz."
-techniques: ["Kement veya Otomatik seçim ile bir şekil seçin.", "Seçimi bir maskeye dönüştürün ve katmanı renkle doldurun.", "Kenarı ayarlamak için maskenin üzerindeki Paint."]
-figure: "1: Ribbon'un seçili maske küçük resmi. 2: Çizgi sanatının altındaki Şerit, Disk ve Blok. 3: Maskenin bazı kısımlarını gizleyen silgi."
-related: ["layers/masks", "tools/selections", "painting/color"]
-image: {"light": "/assets/guides/illustration-mask-light.webp", "dark": "/assets/guides/illustration-mask-dark.webp", "alt": "1: Ribbon'un seçili maske küçük resmi. 2: Çizgi sanatının altındaki Şerit, Disk ve Blok. 3: Maskenin bazı kısımlarını gizleyen silgi."}
+title: "Temel renkler"
+description: "İllüstrasyon eğitiminin 3. aşaması: her şekil için şekle göre maskelenmiş ve temel rengiyle doldurulmuş bir boya katmanı."
+related: ["layers/masks", "selections/working", "layers/types", "layers/settings"]
 ---
 
-## 1. Bir şekil seçin
+Bu aşamada her şekil için temel rengiyle doldurulmuş ve şekle göre maskelenmiş
+bir boya katmanı oluşur. Temel renkler boya katmanlarına konur, çünkü bir dolgu
+katmanı 4. aşamadaki gölgelendirme için kırpma tabanı olamaz.
 
-**Sketch** ve **Color rough**'yu gizleyin. **Lasso selection**'yu seçin ve örnekte olduğu gibi şeridin etrafını dikkatlice çizin.
+## 1. Block katmanını ekleyin
 
-Çizgi resminiz bir şeklin etrafında kapalıysa **Auto select** bunu tek tıklamayla yapabilir. Menüsünde **Layer Settings → Use as reference**'yu seçerek **Line art**'yu referans katmanı olarak işaretleyin. Daha sonra **Auto select**'yu seçin, Araç panelinde **Sample reference layers**'yu seçin ve şeklin içine tıklayın. [Seçim araçları](/tr/docs/tools/selections/), seçimin ne kadar yayılacağını kontrol eden ayarları açıklar.
+*Sketch* katmanını gizleyin, satırını seçin ve **Yeni katman** ile *Block* adlı
+bir katman ekleyin. Yeni katman *Sketch* katmanının hemen üstünde, *Line art*
+katmanının altında görünür.
 
-## 2. Maskelenmiş renk katmanını oluşturun
+## 2. Katmanı bloğa göre maskeleyin
 
-Çizgi sanatının altına **Ribbon** adlı yeni bir katman ekleyin. Seçim hala etkinken Ribbon menüsünü açın ve **Mask → Mask: reveal selection**'yu seçin. Katmanın artık yalnızca şeridin şeklini gösteren bir maskesi var.
+**M** tuşuna basın veya Araçlar çubuğunun **Seç** grubunda **Kement seçimi**
+aracını seçin ve *Line art* katmanındaki bloğun dış çizgisini izleyin. Ardından
+seçim çubuğunda **Maske** düğmesini seçin
+([Seçimlerle çalışma](/tr/docs/selections/working/)).
 
-Şerit'in boyama küçük resmine tıklayın ve şeridin rengini seçin. Tüm katmanı renkle doldurmak için **Select → Select all pixels**'yu ve ardından **Edit → Fill selection**'yu seçin ve **Select → Deselect pixels** ile bitirin. Yalnızca şerit görünür ancak renk, şekli genişletmek istediğinizde kullanıma hazır şekilde maskenin altında da devam eder.
+![Bloğun çevresindeki bir seçimin yanında Maske düğmesiyle seçim çubuğu.](shot:illustration/mask-selection-bar)
 
-## 3. Kenarı ayarlayın
+Seçim *Block* katmanının maskesi olur ([Maskeler](/tr/docs/layers/masks/)).
+Satırda bir maske küçük resmi görünür ve tuvalin altındaki bir çubukta
+“Maske düzenleniyor: Block” yazar.
 
-Maskeyi düzenlemek için Şerit'in maske küçük resmine tıklayın. Artık herhangi bir fırça, boyadığınız yerdeki rengin daha fazlasını ortaya çıkarır ve **Eraser** onu yeniden gizler. Rengin kendisini değiştirmek istediğinizde boya küçük resmine tekrar tıklayın.
+## 3. Katmanı doldurun
 
-**Disc** ve **Block**'yu aynı şekilde yapın. Diski Şerit'in altında ve Blok'u Disk'in altında tutun; Çizgi sanatı bu üçünün üzerinde olsun. Çiziminizi kaydedin ve ardından [Rendering](/tr/docs/illustration/render/).jpg] işlemine devam edin.
+Bir maskeyi düzenlerken **Seçimi doldur** kullanılamaz. Katmanı doldurmak için:
+
+1. *Block* satırındaki katman küçük resmini seçin veya tuvalin altındaki çubukta **İçeriği düzenle** düğmesini seçin.
+2. **Renk** panelinde terrakota rengini seçin.
+3. **Seç > Tüm pikselleri seç** komutunu seçin veya **Ctrl+A** tuşlarına basın.
+4. **Düzenle > Seçimi doldur** komutunu seçin veya **Shift+Backspace** tuşlarına basın.
+5. **Seç > Piksel seçimini kaldır** komutunu seçin veya **Ctrl+D** tuşlarına basın.
+
+Renk katmanın tamamını kaplar, maske ise rengi yalnızca bloğun içinde gösterir.
+
+## 4. Disc ve Ribbon katmanlarını ekleyin
+
+Aynı şekilde aşı boyası renginde *Disc*, ardından petrol mavisi renginde
+*Ribbon* katmanını oluşturun.
+
+![Line art altında her biri maske küçük resmine sahip Ribbon, Disc ve Block ile Katmanlar paneli.](shot:illustration/mask-layers)
+
+Katman listesinde *Line art*, *Ribbon*, *Disc*, *Block*, *Sketch*,
+*Color rough* ve **Kâğıt** yer alır.
+
+## 5. Bir kenarı düzeltin
+
+*Ribbon* satırındaki maske küçük resmini seçin. Tuvalin altındaki çubukta
+“Maske düzenleniyor: Ribbon” yazar.
+
+![Tuvalin altında Maske düzenleniyor: Ribbon yazan, Tersine çevir, Devre dışı bırak, Maskeyi uygula ve İçeriği düzenle düğmeleriyle çubuk.](shot:illustration/mask-bar)
+
+Petrol mavisinin daha fazlasını göstermek için **G kalem** fırçasıyla bir kenar
+boyunca boyayın veya kenarı kırpmak için **Silgi** kullanın. Maskede fırçalar
+boya rengini dikkate almaz.
+
+Sonraki aşama: [Gölgelendirme](/tr/docs/illustration/render/).

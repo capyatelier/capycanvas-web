@@ -1,27 +1,60 @@
 ---
-title: "Penyamaran"
-description: "Berikan pita, cakram, dan blok lapisan warnanya sendiri dengan tepi yang dapat diedit."
-purpose: "Pada tahap ini, setiap bentuk mendapat lapisan warnanya masing-masing. Warna memenuhi seluruh lapisan, dan topeng menentukan bagian mana yang Anda lihat. Karena tidak ada yang terhapus, Anda dapat menyesuaikan tepi bentuk apa pun nanti hanya dengan mengecat topengnya."
-techniques: ["Pilih bentuk dengan laso atau Pilih otomatis.", "Ubah seleksi menjadi topeng dan isi layer dengan warna.", "Paint pada topeng untuk mengatur tepinya."]
-figure: "1: Gambar kecil topeng yang dipilih pada pita. 2: Pita, Cakram, dan Blok di bawah Seni garis. 3: Penghapus, yang menyembunyikan bagian topeng."
-related: ["layers/masks", "tools/selections", "painting/color"]
-image: {"light": "/assets/guides/illustration-mask-light.webp", "dark": "/assets/guides/illustration-mask-dark.webp", "alt": "1: Gambar kecil topeng yang dipilih pada pita. 2: Pita, Cakram, dan Blok di bawah Seni garis. 3: Penghapus, yang menyembunyikan bagian topeng."}
+title: "Warna dasar"
+description: "Tahap 3 tutorial ilustrasi: lapisan lukis untuk setiap bentuk, di-mask sesuai bentuknya dan diisi warna dasarnya."
+related: ["layers/masks", "selections/working", "layers/types", "layers/settings"]
 ---
 
-## 1. Pilih bentuk
+Tahap ini menghasilkan lapisan lukis untuk setiap bentuk, yang diisi warna dasarnya
+dan di-mask sesuai bentuknya. Warna dasar ditempatkan di lapisan lukis karena lapisan
+isian tidak dapat menjadi dasar kliping untuk shading di tahap 4.
 
-Sembunyikan **Sketch** dan **Color rough**. Pilih **Lasso selection** dan telusuri pita dengan hati-hati, seperti pada contoh.
+## 1. Tambahkan lapisan Block
 
-Jika seni garis Anda tertutup di sekitar suatu bentuk, **Auto select** dapat melakukannya dengan satu klik. Tandai **Line art** sebagai layer referensi dengan memilih **Layer Settings → Use as reference** di menunya. Kemudian pilih **Auto select**, pilih **Sample reference layers** di panel Tool, dan klik di dalam bentuk. [Alat seleksi](/id/docs/tools/selections/) menjelaskan pengaturan yang mengontrol seberapa jauh penyebaran seleksi.
+Sembunyikan *Sketch*, pilih barisnya, lalu tambahkan lapisan bernama *Block* dengan
+**Lapisan baru**. Lapisan baru muncul tepat di atas *Sketch*, di bawah *Line art*.
 
-## 2. Buat layer warna bertopeng
+## 2. Beri mask sesuai balok
 
-Tambahkan layer baru bernama **Ribbon** di bawah Line art. Dengan pilihan yang masih aktif, buka menu Ribbon dan pilih **Mask → Mask: reveal selection**. Layer sekarang memiliki mask yang hanya memperlihatkan bentuk pita.
+Tekan **M**, atau pilih **Seleksi laso** di grup **Seleksi** pada bilah alat Alat,
+lalu telusuri garis luar balok di *Line art*. Kemudian pilih **Mask** di bilah seleksi
+([Bekerja dengan seleksi](/id/docs/selections/working/)).
 
-Klik thumbnail cat Ribbon dan pilih warna pita. Pilih **Select → Select all pixels** dan kemudian **Edit → Fill selection** untuk mengisi seluruh lapisan dengan warna, dan akhiri dengan **Select → Deselect pixels**. Hanya pitanya yang terlihat, namun warnanya berlanjut di bawah topeng, siap digunakan saat Anda ingin melebarkan bentuknya.
+![Bilah seleksi dengan Mask, di samping seleksi di sekeliling balok.](shot:illustration/mask-selection-bar)
 
-## 3. Sesuaikan tepinya
+Seleksi menjadi mask *Block* ([Mask](/id/docs/layers/masks/)). Gambar mini mask muncul
+di baris, dan bilah di bagian bawah kanvas bertuliskan "Mengedit mask Block".
 
-Klik thumbnail topeng Ribbon untuk mengedit topeng. Sekarang kuas apa pun memperlihatkan lebih banyak warna tempat Anda melukis, dan **Eraser** menyembunyikannya lagi. Klik lagi thumbnail cat bila Anda ingin mengubah warnanya sendiri.
+## 3. Isi lapisan
 
-Buat **Disc** dan **Block** dengan cara yang sama. Simpan Disk di bawah Pita dan Blokir di bawah Disk, dengan seni Garis di atas ketiganya. Simpan gambar Anda, lalu lanjutkan ke [Rendering](/id/docs/illustration/render/).
+**Isi seleksi** tidak tersedia selama Anda mengedit mask. Untuk mengisi lapisan:
+
+1. Pilih gambar mini lapisan di baris *Block*, atau pilih **Edit Isi** di bilah di bagian bawah kanvas.
+2. Pilih warna terakota di panel **Warna**.
+3. Pilih **Seleksi > Pilih semua piksel**, atau tekan **Ctrl+A**.
+4. Pilih **Edit > Isi seleksi**, atau tekan **Shift+Backspace**.
+5. Pilih **Seleksi > Batalkan seleksi piksel**, atau tekan **Ctrl+D**.
+
+Warna menutupi seluruh lapisan, dan mask hanya menampilkannya di dalam balok.
+
+## 4. Tambahkan Disc dan Ribbon
+
+Buat *Disc* dengan warna oker, lalu *Ribbon* dengan warna hijau toska, dengan cara
+yang sama.
+
+![Panel Lapisan dengan Ribbon, Disc, dan Block, masing-masing dengan gambar mini mask, di bawah Line art.](shot:illustration/mask-layers)
+
+Daftar lapisan berisi *Line art*, *Ribbon*, *Disc*, *Block*, *Sketch*,
+*Color rough*, dan **Kertas**.
+
+## 5. Sesuaikan tepi
+
+Pilih gambar mini mask di baris *Ribbon*. Bilah di bagian bawah kanvas bertuliskan
+"Mengedit mask Ribbon".
+
+![Bilah di bagian bawah kanvas bertuliskan Mengedit mask Ribbon, dengan Balikkan, Nonaktifkan, Terapkan Mask, dan Edit Isi.](shot:illustration/mask-bar)
+
+Lukis di sepanjang tepi dengan kuas **Pena G** untuk menampilkan lebih banyak warna
+hijau toska, atau gunakan **Penghapus** untuk merapikan tepinya. Di mask, kuas
+mengabaikan warna cat.
+
+Tahap berikutnya: [Rendering](/id/docs/illustration/render/).

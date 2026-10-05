@@ -1,27 +1,44 @@
 ---
 title: "Line art"
-description: "Draw clean ink lines on a new layer above the faded sketch."
-purpose: "Line art is the clean, final version of your outlines. Drawing it on its own layer means you can erase or recolor the ink without touching the sketch, and later paint colors underneath it."
-techniques: ["Fade the sketch and add a Line art layer.", "Ink with a pen and rotate the view for tricky curves.", "Close the outlines of each shape."]
-figure: "1: Line art above the faded Sketch. 2: Navigator’s view controls. 3: Pen brushes in Tool Set."
-related: ["layers/basics", "advanced/input", "workspace"]
-image: {"light": "/assets/guides/illustration-ink-light.webp", "dark": "/assets/guides/illustration-ink-dark.webp", "alt": "1: Line art above the faded Sketch. 2: Navigator’s view controls. 3: Pen brushes in Tool Set."}
+description: "Stage 2 of the illustration tutorial: line art drawn with G-Pen on a layer above the faded sketch."
+related: ["layers/panel", "drawing/brush-tools", "start/canvas", "input/pen"]
 ---
+
+This stage produces the line art on a layer above the faded sketch.
 
 ## 1. Prepare the layers
 
-Select **Sketch** and lower its opacity until the lines are faint but still easy to follow. Hide **Color rough** for now. Then add a new layer above Sketch, name it **Line art**, and make sure it is the selected layer before you start inking.
+In the [Layers panel](/docs/layers/panel/):
 
-Choose the **Pen** tool and a pen such as **G-Pen**. Draw a few test lines with your usual pressure, and adjust the size until the line weight feels right.
+1. Select **Hide layer** (the eye) on the *Color rough* row.
+2. Select *Sketch* and set **Layer opacity** in the panel header to 22.
+3. Select **New layer** at the bottom of the panel, and rename the new layer *Line art*.
 
-## 2. Ink the drawing
+![The Layers panel with Line art above Sketch at 22%, and Color rough hidden.](shot:illustration/ink-layers)
 
-Trace the outlines of the three shapes, then add the loose scribbles and short hatching lines. When a curve feels awkward to draw, rotate the view with the buttons in **Navigator**, or with two fingers on a touch screen. Rotating the view doesn't rotate the drawing, so you can turn it as often as you like.
+The layer list reads *Line art*, *Sketch* at 22%, *Color rough* (hidden), and
+**Paper**.
 
-Use the Eraser or undo to fix mistakes. If the line seems to lag behind your pen, the [pen settings](/docs/advanced/input/) can help.
+## 2. Ink the outlines
 
-## 3. Check the outlines
+Select **Pen** in the Tools toolbar and the **G-Pen** brush in Tool Set
+([Brush tools](/docs/drawing/brush-tools/)), and set **Brush size** to 4.5 px.
+On *Line art*, trace the three outlines, then the scribbles and hatch marks.
 
-Hide Sketch to look at your ink on its own. Close any small gaps in the outlines of the three shapes, because the next stage uses them to select each shape. Small details inside a shape can stay open.
+![The Tool Set panel with the pen brushes and G-Pen selected.](shot:illustration/ink-pens)
 
-Line art stays at the top of the layer list for the rest of the tutorial, so the colors will always sit underneath it. Save your drawing, then continue to [Masking](/docs/illustration/mask/).
+To correct a line, press **Ctrl+Z** to undo the stroke, or press **E** and
+erase with the **Eraser**.
+
+You can turn the view while you ink. Choose **View > Rotate view 90° left** or
+**View > Rotate view 90° right**, or select the rotate buttons in the
+**Navigator** panel. In Paint, the **Navigator** icon is at the right of the
+window.
+
+![The Navigator panel with its zoom, rotate and flip buttons.](shot:illustration/ink-navigator)
+
+For any angle, rotate two fingers on the canvas, or type the angle in the zoom
+readout's menu at the right end of the footer. **Reset rotation** in that menu
+returns the view to 0° ([Viewing the canvas](/docs/start/canvas/)).
+
+Next stage: [Base colors](/docs/illustration/mask/).

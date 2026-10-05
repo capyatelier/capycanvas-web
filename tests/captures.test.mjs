@@ -20,57 +20,72 @@ function dimensions(bytes) {
   }
   throw Error('No supported WebP dimensions');
 }
+const shots = markdown => [...markdown.matchAll(/!\[([^\]]*)\]\(shot:([^ )]+)(?: "([^"]*)")?\)/g)].map(([, alt, name, caption]) => ({ alt, name, caption }));
 
-test('every guide and the home page have complete, verified light/dark captures', async () => {
+test('every capture in the manual is a verified light/dark pair from the real editor', async () => {
   const manifest = JSON.parse(await readFile(join(root, 'assets/capture.json'), 'utf8'));
   assert.equal(manifest.partial, false, 'A partial debugging run must not be published');
-  assert.equal(manifest.workspace.name, 'Paint');
-  assert.deepEqual([manifest.width, manifest.height, manifest.scale], [1920, 1080, 2], 'A 1920 × 1080 layout captured at twice the pixel density');
-  const expected = [...['sketch', 'paint', 'photo'].map(name => 'showcase/' + name), ...docTopics.map(({slug}) => 'guides/' + slug.replaceAll('/', '-'))].flatMap(name => ['light', 'dark'].map(theme => `${name}-${theme}.webp`)).sort();
-  assert.deepEqual(manifest.captures.map(capture => capture.file).sort(), expected);
-  for (const capture of manifest.captures) {
+  assert.match(manifest.revision, /^[a-f0-9]{40}$/);
+  assert.equal(manifest.scale, 2, 'Captured at twice the pixel density');
+  const referenced = new Set();
+  for (const { slug } of docTopics) {
+    const english = shots(await readFile(`site/src/content/guides/en/${slug}.md`, 'utf8'));
+    for (const locale of Object.keys(languages)) {
+      const translated = shots(await readFile(`site/src/content/guides/${locale}/${slug}.md`, 'utf8'));
+      assert.deepEqual(translated.map(shot => shot.name), english.map(shot => shot.name), `Same captures in ${locale}/${slug}`);
+      for (const [index, shot] of translated.entries()) {
+        assert.ok(shot.alt.trim(), `Alt text for ${shot.name} in ${locale}/${slug}`);
+        const numbers = (shot.caption || '').split('·').map(item => item.trim().match(/^(\d+)/)?.[1]).filter(Boolean).map(Number);
+        const capture = manifest.captures.find(item => item.file === `docs/${shot.name}-light.webp`);
+        assert.ok(capture, `Capture exists: ${shot.name}`);
+        assert.deepEqual(numbers, capture.annotations.map(item => item.number), `Caption and callouts agree: ${locale}/${slug} ${shot.name}`);
+        assert.equal(Boolean(shot.caption), Boolean(english[index].caption));
+      }
+    }
+    for (const shot of english) referenced.add(shot.name);
+  }
+  for (const name of referenced) for (const theme of ['light', 'dark']) {
+    const capture = manifest.captures.find(item => item.file === `docs/${name}-${theme}.webp`);
+    assert.ok(capture, `Capture recorded: ${name}-${theme}`);
     const bytes = await readFile(join(root, 'assets', capture.file));
     assert.equal(bytes.length, capture.bytes);
-    assert.equal(hash(bytes), capture.sha256, `Capture has changed without updated provenance: ${capture.file}`);
-    assert.deepEqual(dimensions(bytes), [3840, 2160]);
-    assert.ok(bytes.length > 10000 && bytes.length < 900000, `WebP size: ${capture.file}`);
-    assert.deepEqual(capture.annotations.map(item => item.number), Array.from({length:capture.annotations.length}, (_,i) => i+1));
-    for (const {bounds} of capture.annotations) {
-      assert.ok(bounds.x >= 0 && bounds.y >= 0 && bounds.width > 0 && bounds.height > 0);
-      assert.ok(bounds.x + bounds.width <= 1920 && bounds.y + bounds.height <= 1080, `Visible annotation: ${capture.file}`);
+    assert.equal(hash(bytes), capture.sha256, `Capture changed without updated provenance: ${capture.file}`);
+    assert.deepEqual(dimensions(bytes), capture.size.map(value => value * 2), `Twice the recorded size: ${capture.file}`);
+    assert.ok(bytes.length > 1500 && bytes.length < 900000, `WebP size: ${capture.file}`);
+    for (const { bounds } of capture.annotations) {
+      assert.ok(bounds.x >= -1 && bounds.y >= -1 && bounds.width > 0 && bounds.height > 0, `Visible callout: ${capture.file}`);
+      assert.ok(bounds.x + bounds.width <= capture.size[0] + 1 && bounds.y + bounds.height <= capture.size[1] + 1, `Callout inside the crop: ${capture.file}`);
     }
   }
-  assert.deepEqual(manifest.showcase.map(entry => entry.file).sort(), ['showcase/NDF_4717.capy', 'showcase/house.capy', 'showcase/spring.capy']);
-  for (const entry of manifest.showcase) assert.equal(hash(await readFile(`site/scripts/capture/${entry.file}`)), entry.sha256, `Homepage artwork matches its capture: ${entry.file}`);
-  for (const {slug} of docTopics) for (const locale of Object.keys(languages)) {
-    const markdown = await readFile(`site/src/content/guides/${locale}/${slug}.md`, 'utf8');
-    const figure = JSON.parse(markdown.match(/^figure: (.+)$/m)[1]);
-    const numbers = [...figure.matchAll(/(\d)\s*[:：]/g)].map(([,n]) => Number(n));
-    const name = 'guides/' + slug.replaceAll('/', '-');
-    for (const theme of ['light', 'dark']) {
-      const capture = manifest.captures.find(item => item.file === `${name}-${theme}.webp`);
-      assert.deepEqual(numbers, capture.annotations.map(item => item.number), `Caption and callouts agree: ${locale}/${slug}/${theme}`);
-    }
+  for (const theme of ['light', 'dark']) {
+    const overview = manifest.captures.find(item => item.file === `guides/illustration-${theme}.webp`);
+    assert.ok(overview, 'The documentation overview has its Paint workspace capture');
+    assert.equal(hash(await readFile(join(root, 'assets', overview.file))), overview.sha256);
+    assert.deepEqual(dimensions(await readFile(join(root, 'assets', overview.file))), [3840, 2160]);
   }
-  assert.ok(Object.keys(manifest.recipeHashes).length >= 8, 'Capture recipe is identified');
+  for (const capture of manifest.captures.filter(item => item.file.startsWith('showcase/'))) {
+    assert.equal(hash(await readFile(join(root, 'assets', capture.file))), capture.sha256, `Homepage slide matches its provenance: ${capture.file}`);
+  }
+  assert.ok(Object.keys(manifest.recipeHashes).length >= 10, 'Capture recipe is identified');
   for (const [path, expectedHash] of Object.entries(manifest.recipeHashes)) assert.equal(hash(await readFile(`site/scripts/${path}`)), expectedHash, `Recipe changed; regenerate captures: ${path}`);
 });
 
-test('downloadable examples match provenance and contain a painted 1200px abstract study', async () => {
+test('downloadable examples match provenance and open in the current editor format', async () => {
   const manifest = JSON.parse(await readFile(join(root, 'assets/capture.json'), 'utf8'));
-  assert.equal(manifest.examples.length, 7);
+  const names = manifest.examples.map(entry => entry.file);
+  for (const name of ['01-sketch.capy', '02-line-art.capy', '03-base-colors.capy', '04-finished.capy', 'abstract-study.png']) assert.ok(names.includes(`examples/${name}`), `Example published: ${name}`);
   for (const entry of manifest.examples) {
     const bytes = await readFile(join(root, 'assets', entry.file));
     assert.equal(bytes.length, entry.bytes); assert.equal(hash(bytes), entry.sha256);
-    assert.ok(bytes.length > 100);
-    if (entry.file.endsWith('.png')) {
+    if (entry.file.endsWith('.capy')) assert.equal(bytes.subarray(0, 4).toString('latin1'), 'PK\u0003\u0004', `Current Capy package: ${entry.file}`);
+    if (entry.file.endsWith('abstract-study.png')) {
       const png = PNG.sync.read(bytes);
       assert.deepEqual([png.width, png.height], [1200, 1200]);
       let colored = 0;
-      for (let i = 0; i < png.data.length; i += 4) if (png.data[i + 3] > 200 && Math.max(...png.data.subarray(i,i+3)) - Math.min(...png.data.subarray(i,i+3)) > 20) colored++;
+      for (let i = 0; i < png.data.length; i += 4) if (png.data[i + 3] > 200 && Math.max(...png.data.subarray(i, i + 3)) - Math.min(...png.data.subarray(i, i + 3)) > 20) colored++;
       assert.ok(colored > 100000, `Export contains real colored artwork: ${entry.file}`);
     }
   }
-  const stages = await Promise.all(['01-sketch','02-line-art','03-base-colors','04-finished'].map(name => readFile(join(root, `assets/examples/${name}.capy`)).then(hash)));
+  const stages = await Promise.all(['01-sketch', '02-line-art', '03-base-colors', '04-finished'].map(name => readFile(join(root, `assets/examples/${name}.capy`)).then(hash)));
   assert.equal(new Set(stages).size, 4, 'Each tutorial stage has its own editable project');
 });

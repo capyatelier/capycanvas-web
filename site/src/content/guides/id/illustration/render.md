@@ -1,27 +1,61 @@
 ---
-title: "Render"
-description: "Tambahkan bayangan dan tekstur pada lapisan yang terpotong pada setiap bentuk, lalu ekspor hasilnya."
-purpose: "Rendering adalah tempat bentuk mendapatkan cahaya dan bayangannya. Melukis arsiran pada lapisan yang terpotong akan menyimpannya di dalam setiap bentuk secara otomatis, dan karena arsiran terpisah dari warna dasar, Anda dapat menyesuaikan atau mengulanginya tanpa kehilangan apa pun."
-techniques: ["Klip lapisan bayangan ke Ribbon.", "Kontrol kekuatan bayangan.", "Buat bayangan pada bentuk lainnya, periksa lapisannya, dan ekspor."]
-figure: "1: Tekstur pita dan bayangan pita di atas pita. 2: Klip ke lapisan di bawah. 3: Opasitas lapisan untuk seluruh lintasan bayangan."
-related: ["layers/groups", "layers/masks", "output/export"]
-image: {"light": "/assets/guides/illustration-render-light.webp", "dark": "/assets/guides/illustration-render-dark.webp", "alt": "1: Tekstur pita dan bayangan pita di atas pita. 2: Klip ke lapisan di bawah. 3: Opasitas lapisan untuk seluruh lintasan bayangan."}
+title: "Rendering"
+description: "Tahap 4 tutorial ilustrasi: shading dan tekstur di lapisan yang diklip ke setiap warna dasar, serta ekspor PNG."
+related: ["layers/settings", "drawing/brush-tools", "files/open-save", "files/export"]
 ---
 
-## 1. Tambahkan bayangan yang terpotong
+Tahap ini menghasilkan shading setiap bentuk, di lapisan yang diklip ke warna
+dasarnya, serta ekspor PNG studi tersebut.
 
-Pilih **Ribbon**, tambahkan layer baru tepat di atasnya, dan beri nama **Ribbon shading**. Buka menunya dan pilih **Layer Settings → Clip to layer below**. Sekarang cat bayangan di lekukan pita dengan **Watercolor Wash**, dan tambahkan beberapa aksen bijak dengan **Paintbrush**. Sapuan Anda bisa melewati tepi pita, karena hanya bagian dalam pita yang terlihat.
+## 1. Tambahkan lapisan kliping
 
-Biarkan blend mode layer bayangan di **Normal** untuk saat ini. Warna dasar tetap aman pada lapisan Pita, jadi menghapus bayangan tidak akan pernah menghapus warna di bawahnya.
+Pilih *Ribbon*, lalu pilih **Lapisan > Baru > Lapisan kliping baru**, atau pilih
+**Baru > Lapisan kliping baru** dari menu baris itu
+([Pengaturan lapisan](/id/docs/layers/settings/)). Ganti nama lapisan baru menjadi
+*Ribbon shading*.
 
-## 2. Kendalikan kekuatan
+![Menu lapisan dengan Baru terbuka dan Lapisan kliping baru di dalamnya.](shot:illustration/render-new-menu)
 
-Opasitas kuas mengubah guratan yang akan Anda lukis. **opacity of the Ribbon shading layer** mengubah semua bayangan yang telah Anda lukis. Jika setiap bayangan terlihat terlalu kuat, turunkan opacity layer daripada mengecat ulang.
+*Ribbon shading* muncul tepat di atas *Ribbon*, dan rel di sebelah kiri gambar mini
+menandai kliping. Kliping mengikuti mask *Ribbon*, bukan warna hijau toska yang
+mengisi seluruh lapisan.
 
-Untuk highlight, tambahkan **Ribbon texture** tepat di atas Ribbon shading dan klip juga. Gunakan pensil kecil atau kuas bertekstur untuk membuat beberapa tanda tipis. Urutan layer sekarang adalah tekstur Ribbon, Ribbon shading, lalu Ribbon. [Pengaturan kuas](/id/docs/advanced/brush-engine/) menjelaskan opacity dan aliran lebih detail.
+## 2. Beri shading pada pita
 
-## 3. Selesaikan dan ekspor
+Pilih **Kuas Cat** di bilah alat Alat dan **Sapuan Cat Air** di Set Alat
+([Alat kuas](/id/docs/drawing/brush-tools/)). Setel **Opasitas** di panel **Alat**
+ke 65%, lalu lukis bayangan di lekukan pita dengan warna biru tua. Kemudian tambahkan
+aksen hijau sage dengan kuas **Kuas Cat**.
 
-Warnai **Disc** dan **Block** dengan cara yang sama, masing-masing dengan lapisan terpotongnya sendiri. Contohnya menggunakan Airbrush untuk arsir lembut pada disk, dan Pensil untuk tanda arsiran kecil berwarna krem. Pertahankan **Line art** di atas segalanya. Jika tepi luar suatu bentuk perlu diperbaiki, catlah topeng bentuk itu; jika hanya arsirannya yang salah, ubahlah lapisan arsirannya. [Masker dan kliping](/id/docs/layers/masks/) juga menunjukkan cara mewarnai ulang tinta dengan kunci alfa.
+## 3. Tambahkan lapisan tekstur
 
-Jika Anda menyukainya, sembunyikan lapisan kasarnya, simpan file `.capy` Anda, dan [ekspor gambar](/id/docs/output/export/) untuk dibagikan. Buka file yang diekspor sekali untuk memeriksa apakah tampilannya sesuai dengan yang Anda harapkan.
+Dengan *Ribbon shading* terpilih, pilih **Lapisan > Baru > Lapisan kliping baru**
+sekali lagi, lalu ganti nama lapisan menjadi *Ribbon texture*. Lapisan ini ditempatkan
+di atas *Ribbon shading*, dalam kliping yang sama. Pilih **Pensil** dan kuas
+**Pensil**, lalu gambar arsiran dan sorotan berwarna krem.
+
+## 4. Beri shading pada cakram dan balok
+
+Pilih *Disc*, tambahkan lapisan kliping bernama *Disc shading*, lalu beri shading
+pada separuh bawah cakram dengan **Kuas Semprot Halus** berwarna terakota. Tambahkan
+sorotan krem di kiri atas.
+
+*Block shading* ditempatkan pada *Block* dengan cara yang sama: biru tua di
+sepanjang tepi kanan dan bawah dengan kuas **Kuas Cat**, lalu arsiran krem dengan
+kuas **Pensil**.
+
+![Panel Lapisan dengan Ribbon texture dan Ribbon shading yang diklip ke Ribbon, serta Disc shading dan Block shading yang diklip ke dasarnya masing-masing.](shot:illustration/render-layers)
+
+Daftar lapisan sama dengan lapisan akhir di [pengantar](/id/docs/illustration/).
+
+## 5. Simpan dan ekspor
+
+Pilih **Berkas > Simpan**, atau tekan **Ctrl+S**, lalu simpan gambar sebagai berkas
+`.capy` ([Membuka dan menyimpan](/id/docs/files/open-save/)). Untuk mengekspor PNG:
+
+1. Pilih **Berkas > Ekspor…**, atau tekan **Ctrl+Shift+E**.
+2. Biarkan **Tujuan** tetap **Web / Bagikan**, lalu setel **Format** ke **Gambar PNG**.
+3. Pilih **Pilih Berkas…**, lalu pilih folder dan tentukan nama.
+
+Setelah ekspor pertama, **Berkas > Ekspor Lagi** menulis berkas yang sama dengan
+pengaturan yang sama, tanpa dialog ([Mengekspor gambar](/id/docs/files/export/)).

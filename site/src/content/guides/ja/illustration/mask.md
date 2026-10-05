@@ -1,27 +1,49 @@
 ---
-title: "マスク作成"
-description: "リボン、円、四角形のそれぞれに、境界を編集できる専用の色レイヤーを作ります。"
-purpose: "この工程では、形ごとに専用の色レイヤーを作ります。色はレイヤー全体を塗りつぶし、そのどの部分を見せるかをマスクが決めます。何も消していないので、あとからマスクに描くだけで、どの形の境界でも調整できます。"
-techniques: ["投げ縄かAuto selectで形を選択します。", "選択範囲をマスクにし、レイヤーを色で塗りつぶします。", "マスクに描いて境界を調整します。"]
-figure: "1：選択されたRibbonのマスクのサムネイル。2：Line artの下にあるRibbon、Disc、Block。3：マスクの一部を隠すEraser。"
-related: ["layers/masks", "tools/selections", "painting/color"]
-image: {"light": "/assets/guides/illustration-mask-light.webp", "dark": "/assets/guides/illustration-mask-dark.webp", "alt": "1：選択されたRibbonのマスクのサムネイル。2：Line artの下にあるRibbon、Disc、Block。3：マスクの一部を隠すEraser。"}
+title: "下塗り"
+description: "イラストのチュートリアルの段階3として、形ごとにペイントレイヤーを作り、形に合わせてマスクして下塗りの色で塗りつぶします。"
+related: ["layers/masks", "selections/working", "layers/types", "layers/settings"]
 ---
 
-## 1. 形を選択する
+この段階では、形ごとに、下塗りの色で塗りつぶし、形に合わせてマスクしたペイントレイヤーを作ります。塗りつぶしレイヤーは段階4の陰影のクリッピングのベースレイヤーにできないため、下塗りの色はペイントレイヤーに置きます。
 
-**Sketch**と**Color rough**を非表示にします。**Lasso selection**を選び、作例のようにリボンの周りを丁寧になぞります。
+## 1. Blockレイヤーを追加する
 
-線画が形の周りで閉じていれば、**Auto select**を使って1回のクリックで選択することもできます。まず、**Line art**のメニューで**Layer Settings → Use as reference**を選び、参照レイヤーに設定します。次に**Auto select**を選び、Toolパネルで**Sample reference layers**を選んでから、形の内側をクリックします。選択範囲がどこまで広がるかを決める設定は、[選択ツール](/ja/docs/tools/selections/)で説明しています。
+*Sketch*を非表示にしてその行を選択し、**新規レイヤー**で*Block*という名前のレイヤーを追加します。新しいレイヤーは、*Sketch*のすぐ上、*Line art*の下に追加されます。
 
-## 2. マスク付きの色レイヤーを作る
+## 2. レイヤーをブロックの形にマスクする
 
-Line artの下に新しいレイヤーを追加し、**Ribbon**という名前を付けます。選択範囲を残したまま、Ribbonのメニューを開いて**Mask → Mask: reveal selection**を選びます。これでこのレイヤーに、リボンの形だけを表示するマスクが付きます。
+**M**を押すか、「ツール」ツールバーの**選択範囲**グループで**投げなわ選択**を選択し、*Line art*のブロックの輪郭をなぞります。次に、選択範囲バーの**マスク**を選択します（[選択範囲の操作](/ja/docs/selections/working/)）。
 
-Ribbonの塗りのサムネイルをクリックし、リボンの色を選びます。**Select → Select all pixels**、**Edit → Fill selection**の順に選んでレイヤー全体を色で塗りつぶし、最後に**Select → Deselect pixels**を選びます。表示されるのはリボンの部分だけですが、色はマスクの下にも続いているので、あとで形を広げたくなったときにそのまま対応できます。
+![ブロックを囲む選択範囲の横に、マスクがある選択範囲バーが表示されています。](shot:illustration/mask-selection-bar)
 
-## 3. 境界を調整する
+選択範囲が*Block*のマスクになります（[マスク](/ja/docs/layers/masks/)）。行にマスクのサムネイルが表示され、キャンバス下部のバーに「Block」のマスクを編集中と表示されます。
 
-Ribbonのマスクのサムネイルをクリックして、マスクを編集します。この状態では、どのブラシでも描いたところの色がさらに表示され、**Eraser**で描いたところは再び隠れます。色そのものを変えたいときは、もう一度塗りのサムネイルをクリックします。
+## 3. レイヤーを塗りつぶす
 
-同じ方法で**Disc**と**Block**も作ります。DiscはRibbonの下に、BlockはDiscの下に置き、Line artは3つすべての上に置きます。ドキュメントを保存したら、[塗り込み](/ja/docs/illustration/render/)に進みます。
+マスクの編集中は、**選択範囲を塗りつぶす**を使えません。レイヤーを塗りつぶすには：
+
+1. *Block*の行のレイヤーのサムネイルを選択するか、キャンバス下部のバーの**内容を編集**を選択します。
+2. **色**パネルでテラコッタを選びます。
+3. **選択範囲 > すべての画素を選択**を選ぶか、**Ctrl+A**を押します。
+4. **編集 > 選択範囲を塗りつぶす**を選ぶか、**Shift+Backspace**を押します。
+5. **選択範囲 > 画素の選択を解除**を選ぶか、**Ctrl+D**を押します。
+
+色はレイヤー全体を覆い、マスクによってブロックの内側だけに表示されます。
+
+## 4. DiscとRibbonを追加する
+
+同じ方法で、黄土色の*Disc*、次に青緑の*Ribbon*を作ります。
+
+![Line artの下に、それぞれマスクのサムネイルがあるRibbon、Disc、Blockが並ぶレイヤーパネル。](shot:illustration/mask-layers)
+
+レイヤーリストは、上から*Line art*、*Ribbon*、*Disc*、*Block*、*Sketch*、*Color rough*、**用紙**の順になります。
+
+## 5. 縁を調整する
+
+*Ribbon*の行のマスクのサムネイルを選択します。キャンバス下部のバーに、「Ribbon」のマスクを編集中と表示されます。
+
+![キャンバス下部に「Ribbon」のマスクを編集中と表示されたバー。反転、無効にする、マスクを適用、内容を編集があります。](shot:illustration/mask-bar)
+
+**Gペン**のブラシで縁に沿って描くと青緑が広く表示され、**消しゴム**を使うと縁を削れます。マスク上では、ブラシは描画色を無視します。
+
+次の段階：[塗り込み](/ja/docs/illustration/render/)。

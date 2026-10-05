@@ -1,26 +1,61 @@
 ---
 title: "Tutorial de ilustración"
-description: "Paint un pequeño estudio abstracto, desde el boceto a lápiz hasta el sombreado final."
-purpose: "Este tutorial recorre una pequeña pintura de principio a fin. Utiliza formas abstractas simples, para que puedas concentrarte en la forma en que se divide el trabajo en etapas y capas. Debido a que cada etapa agrega sus propias capas, puedes regresar y cambiar una parte sin rehacer el resto."
-techniques: ["Sketch y prueba colores.", "Dibuja líneas limpias encima del boceto.", "Dale a cada forma su propia capa de color enmascarada.", "Sombrea el interior de cada forma y exporta el resultado."]
-figure: "El ejemplo terminado, con tinta separada, color enmascarado y capas de sombreado."
-related: ["quickstart", "workspace", "tools/files"]
 navTitle: "Introducción"
-image: {"light": "/assets/guides/illustration-light.webp", "dark": "/assets/guides/illustration-dark.webp", "alt": "El ejemplo terminado, con tinta separada, color enmascarado y capas de sombreado."}
+description: "El tutorial de ilustración: un estudio abstracto pintado en cuatro etapas en el espacio de trabajo Pintura, desde un boceto de color hasta una exportación PNG."
+related: ["start/workspaces", "layers/panel", "layers/masks", "files/open-save"]
 ---
 
-## Configurar
+Vas a pintar un estudio abstracto en cuatro etapas en el espacio de trabajo
+[Pintura](/es/docs/start/workspaces/). Cada etapa añade capas, y no se combina
+ninguna capa.
 
-Si aún no ha revisado su lápiz, comience con el [Quickstart](/es/docs/quickstart/). Luego elige **Paint**, para que tus pinceles, colores y capas estén todos en la pantalla. Crea un nuevo dibujo sobre los píxeles **1200 × 1200** para seguir el ejemplo, o usa tu propio tema si lo prefieres.
+![El espacio de trabajo Pintura con el estudio abstracto terminado en el lienzo y sus capas en el panel Capas.](shot:illustration/overview)
 
-El ejemplo está formado por tres formas superpuestas: una cinta curva, un disco y un bloque inclinado, con algunos garabatos sueltos a su alrededor. Utiliza verde azulado, salvia, ocre y terracota, con líneas azul oscuro y reflejos crema. Cada forma tiene sus propias capas con nombre, lo que facilita ver qué pertenece a cada lugar.
+## El estudio
 
-## Las cuatro etapas
+El estudio es un dibujo de 1200 × 1200 con tres formas superpuestas: una cinta
+curva, un disco y un bloque inclinado. Sobre las formas y a su alrededor hay
+garabatos sueltos y marcas de rayado.
 
-El tutorial tiene cuatro etapas, todas en un mismo dibujo: [Sketching](/es/docs/illustration/draft/), Line art, Masking y Rendering. Cada etapa agrega nuevas capas encima de las anteriores en lugar de reemplazarlas. Es una buena idea conservar el boceto y el estudio de color incluso después de ocultarlos, en caso de que quieras volver a verlos más tarde.
+## Las etapas
 
-## Utilice los archivos de ejemplo
+1. [Bocetado](/es/docs/illustration/draft/): un boceto de color y un boceto a lápiz.
+2. [Entintado](/es/docs/illustration/ink/): líneas de tinta sobre el boceto atenuado.
+3. [Colores base](/es/docs/illustration/mask/): una capa de color con máscara para cada forma.
+4. [Renderizado](/es/docs/illustration/render/): sombreado en capas recortadas y una exportación PNG.
 
-Si quieres empezar desde una etapa concreta, abre el <a href="/assets/examples/01-sketch.capy" download>boceto</a>, el <a href="/assets/examples/02-line-art.capy" download>dibujo de líneas</a>, los <a href="/assets/examples/03-base-colors.capy" download>colores base</a> o el <a href="/assets/examples/04-finished.capy" download>dibujo terminado</a> con **File → Open…**. También puedes usar el [PNG de la imagen terminada](/assets/examples/abstract-study.png) para practicar la edición de fotografías.
+## Las capas terminadas
 
-Los archivos de ejemplo contienen las mismas capas y máscaras que ves en las capturas de pantalla. Guarde su propia copia antes de cambiar una, para que el original permanezca disponible.
+El dibujo terminado tiene estas capas, de arriba abajo:
+
+| Capa | Contenido |
+| --- | --- |
+| *Line art* | Líneas de tinta |
+| *Ribbon texture* | Rayado y luces en crema, recortados a *Ribbon* |
+| *Ribbon shading* | Sombras y acentos en verde salvia, recortados a *Ribbon* |
+| *Ribbon* | Verde azulado, con una máscara ajustada a la cinta |
+| *Disc shading* | Sombreado y una luz, recortados a *Disc* |
+| *Disc* | Ocre, con una máscara ajustada al disco |
+| *Block shading* | Sombreado y rayado, recortados a *Block* |
+| *Block* | Terracota, con una máscara ajustada al bloque |
+| *Sketch* | Líneas de lápiz al 22% de opacidad, oculta |
+| *Color rough* | Colores planos al 50% de opacidad, oculta |
+| **Papel** | Blanco |
+
+## Archivos de ejemplo
+
+Puedes empezar desde el final de cualquier etapa. Descarga el archivo de la
+etapa, elige **Archivo > Abrir…** o pulsa **Ctrl+O** y selecciona el archivo. El
+dibujo se abre en su propia pestaña.
+
+| Etapa | Archivo |
+| --- | --- |
+| 1. Bocetado | <a href="/assets/examples/01-sketch.capy" download>01-sketch.capy</a> |
+| 2. Entintado | <a href="/assets/examples/02-line-art.capy" download>02-line-art.capy</a> |
+| 3. Colores base | <a href="/assets/examples/03-base-colors.capy" download>03-base-colors.capy</a> |
+| 4. Renderizado | <a href="/assets/examples/04-finished.capy" download>04-finished.capy</a> |
+
+La exportación PNG del estudio terminado es
+<a href="/assets/examples/abstract-study.png" download>abstract-study.png</a>.
+
+Primera etapa: [Bocetado](/es/docs/illustration/draft/).

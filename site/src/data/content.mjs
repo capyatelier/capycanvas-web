@@ -56,7 +56,7 @@ export const content = {
     },
     documentation: {
       title: 'Documentation',
-      meta: 'Capy Canvas documentation: workspaces, brushes, color, layers, selections, photo editing and an illustration tutorial.'
+      meta: 'Capy Canvas documentation: workspaces, brushes, color, layers, filters, selections, photo editing, and illustration and photo tutorials.'
     },
     privacy: { title: 'Privacy Policy', effectiveDate: 'Effective date', meta: 'How Capy Canvas handles app data, hosting, diagnostics, and support requests.' },
     notFound: { title: 'Page not found', text: 'The requested page does not exist.', action: 'Home' }
@@ -109,7 +109,7 @@ export const content = {
     },
     documentation: {
       title: 'ドキュメント',
-      meta: 'Capy Canvas のドキュメント。ワークスペース、ブラシ、色、レイヤー、選択範囲、写真編集、イラスト制作チュートリアル。'
+      meta: 'Capy Canvas のドキュメント。ワークスペース、ブラシ、色、レイヤー、フィルター、選択範囲、写真編集、イラスト制作と写真のチュートリアル。'
     },
     privacy: { title: 'プライバシーポリシー', effectiveDate: '施行日', meta: 'Capy Canvas のアプリデータ、ホスティング、診断情報、お問い合わせの取り扱い。' },
     notFound: { title: 'ページが見つかりません', text: '指定されたページは存在しません。', action: 'ホーム' }
@@ -162,7 +162,7 @@ export const content = {
     },
     documentation: {
       title: '文档',
-      meta: 'Capy Canvas文档：工作区、笔刷、颜色、图层、选区、照片编辑与插画教程。'
+      meta: 'Capy Canvas文档：工作区、画笔、颜色、图层、滤镜、选区、照片编辑，以及插画与照片教程。'
     },
     privacy: { title: '隐私政策', effectiveDate: '生效日期', meta: 'Capy Canvas 如何处理应用数据、网站托管、诊断信息和支持请求。' },
     notFound: { title: '页面不存在', text: '找不到所请求的页面。', action: '首页' }
@@ -215,7 +215,7 @@ export const content = {
     },
     documentation: {
       title: '문서',
-      meta: 'Capy Canvas 문서: 작업 공간, 브러시, 색상, 레이어, 선택 영역, 사진 편집, 일러스트 튜토리얼.'
+      meta: 'Capy Canvas 문서: 작업 영역, 브러시, 색상, 레이어, 필터, 선택 영역, 사진 편집, 일러스트와 사진 튜토리얼.'
     },
     privacy: { title: '개인정보 처리방침', effectiveDate: '시행일', meta: 'Capy Canvas의 앱 데이터, 호스팅, 진단 정보 및 문의 처리 방침.' },
     notFound: { title: '페이지를 찾을 수 없습니다', text: '요청한 페이지가 존재하지 않습니다.', action: '홈' }

@@ -2,7 +2,8 @@
 import { getEntry } from 'astro:content';
 import Guide from '../components/Guide.astro';
 import type { GetStaticPaths, InferGetStaticPropsType } from 'astro';
-import { routes } from '../lib/site';
+import { locales, route, routes } from '../lib/site';
+import { docRedirects } from '../data/docs-nav.mjs';
 import SiteLayout from '../layouts/SiteLayout.astro';
 import Home from '../components/Home.astro';
 import Download from '../components/Download.astro';
@@ -23,6 +24,10 @@ export const getStaticPaths = (() => [
     params: { path: path.replace('/docs/', '/documentation/').slice(1, -1) },
     props: { locale, page, slug, redirect: true },
   })),
+  ...locales.flatMap(locale => Object.entries(docRedirects).flatMap(([former, slug]) => ['docs', 'documentation'].map(segment => ({
+    params: { path: route(locale, 'documentation', former).replace('/docs/', `/${segment}/`).slice(1, -1) },
+    props: { locale, page: 'documentation' as const, slug, redirect: true },
+  })))),
 ]) satisfies GetStaticPaths;
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;

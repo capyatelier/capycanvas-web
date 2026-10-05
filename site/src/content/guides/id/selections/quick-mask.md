@@ -1,25 +1,107 @@
 ---
-title: "Masker Cepat dan lapisan seleksi"
-description: "Paint seleksi dengan kuas, dan simpan pilihan untuk digunakan lagi nanti."
-purpose: "Beberapa area lebih mudah untuk dicat daripada digariskan, seperti rambut lembut, awan, atau latar belakang buram. Quick Mask menampilkan pilihan Anda sebagai hamparan berwarna yang dapat Anda lukis dengan kuas apa pun. Lapisan pilihan menyimpan pilihan dalam gambar Anda sehingga Anda dapat memuatnya lagi kapan pun Anda membutuhkannya."
-techniques: ["Sempurnakan pilihan dengan kuas di Quick Mask.", "Paint pilihan langsung dengan pilihan Paint.", "Simpan pilihan sebagai lapisan pilihan dan muat nanti."]
-figure: "1: Lapisan Quick Mask sementara. 2: Pengaturan Quick Mask, termasuk warna overlay. 3: Pilihan ditampilkan sebagai hamparan berwarna, diperluas dengan sapuan kuas."
-related: ["tools/selections", "selections/tonal-range", "layers/masks"]
-image: {"light": "/assets/guides/selections-quick-mask-light.webp", "dark": "/assets/guides/selections-quick-mask-dark.webp", "alt": "1: Lapisan Quick Mask sementara. 2: Pengaturan Quick Mask, termasuk warna overlay. 3: Pilihan ditampilkan sebagai hamparan berwarna, diperluas dengan sapuan kuas."}
+title: "Mask Cepat"
+description: "Mengedit seleksi sebagai mask yang dilukis di Mask Cepat."
+related: ["selections/working", "selections/selection-layers", "selections/tonal-range", "layers/masks"]
 ---
 
-## Sempurnakan pilihan di Quick Mask
+Anda dapat mengedit seleksi sebagai mask yang dilukis di Mask Cepat.
 
-Buat pilihan kasar dengan alat seleksi apa saja, lalu pilih **Select → Quick Mask** atau tekan **Q**. Pilihan muncul sebagai overlay berwarna, dan lapisan **Quick Mask** sementara muncul di bagian atas panel Layers. Sekarang cat dengan kuas apa saja untuk menambah seleksi, dan gunakan **Eraser** untuk menghilangkannya. Kuas lembut menghasilkan tepian yang lembut, persis seperti yang Anda inginkan untuk bulu atau dedaunan.
+## Masuk ke Mask Cepat
 
-Jika overlay sulit dilihat pada gambar Anda, ubah warna atau opasitasnya di **Properties**. Ketika seleksi terlihat benar, pilih **Return to Artwork** untuk kembali melukis dengan seleksi aktif.
+Lakukan salah satu langkah berikut:
 
-## Paint pilihan secara langsung
+- Pilih **Seleksi > Mask Cepat**.
+- Tekan **Q**.
+- Pilih **Mask Cepat** di [bilah seleksi](/id/docs/selections/working/).
 
-Jika Anda lebih suka melewatkan langkah pertama, pilih alat **Paint selection** dari alat seleksi. Setiap goresan yang Anda buat menambah pilihan, dan melingkari suatu area akan memilih semua yang ada di dalamnya. Tahan **Alt** atau alihkan mode di panel Alat untuk menghilangkan bagian seleksi lagi.
+Seleksi saat ini menjadi mask. Jika tidak ada seleksi, mask dimulai dalam keadaan
+kosong. Alat berganti ke kuas saat ini, kecuali jika **Rentang nada** sedang aktif.
 
-## Simpan pilihan untuk nanti
+Anda tidak dapat masuk ke Mask Cepat selama transformasi masih terbuka.
 
-Pilihan akan hilang segera setelah Anda membuat yang baru, jadi simpan lagi pilihan yang Anda perlukan. Pilih **Select → Save as Selection Layer**, atau **Save as Selection Layer** dari menu layer Quick Mask. Pilihan disimpan sebagai lapisan pilihan di panel Lapisan dan disimpan bersama gambar Anda.
+## Tampilan Mask Cepat
 
-Untuk menggunakannya lagi, pilih **Select → Load Selection**, atau tahan **Ctrl** dan klik thumbnail layer pilihan. Anda juga dapat menggabungkannya dengan pilihan saat ini dari menu layer. Tombol **New Selection Layer** di bagian bawah panel Layers membuat layer pilihan kosong yang bisa Anda cat secara langsung.
+Hamparan, secara bawaan merah dengan opasitas 50%, menandai mask di kanvas. Dalam mode
+**Lukis seleksi**, hamparan menutupi area yang terseleksi, dan dalam mode **Mask
+skala abu-abu**, hamparan menutupi area di luar seleksi.
+
+Baris bernama **Mask Cepat** muncul di posisi teratas panel Lapisan, dalam keadaan
+terpilih. Tombol matanya menampilkan atau menyembunyikan hamparan, sama seperti
+**Tampilkan Hamparan Mask** di pencarian perintah. Panel Warna menampilkan warna mask
+sebagai pengganti warna gambar.
+
+![Foto terarium di Mask Cepat, dengan hamparan di atas sorotan.](shot:selections/quick-mask-overlay)
+
+## Melukis mask
+
+Lukis dengan pena, pensil, kuas semprot halus, atau penghapus untuk mengubah mask. Kuas lain
+tidak melukis di Mask Cepat. **Isi**, **Gradasi**, dan **Lukis seleksi** juga
+mengubah mask.
+
+- Dalam mode **Lukis seleksi**, warna apa pun menyeleksi. Penghapus dan warna transparan membatalkan seleksi.
+- Dalam mode **Mask skala abu-abu**, nilai abu-abu warna menentukan mask: putih menyeleksi, hitam membatalkan seleksi, dan abu-abu menyeleksi sebagian.
+
+Mask memiliki warna latar depan dan latar belakangnya sendiri, yang disalin dari
+warna gambar saat Mask Cepat dimulai. Tekan **D** (**Atur Ulang ke Hitam / Putih**)
+untuk latar depan hitam dan latar belakang putih. Untuk menukar warna mask, jalankan
+**Tukar Warna Mask** dari pencarian perintah.
+
+Perintah yang mengubah karya, seperti **Bersihkan Piksel Terpilih** dan
+**Transformasi**, tidak tersedia di Mask Cepat.
+
+## Bilah Mask Cepat
+
+[Bilah kanvas](/id/docs/selections/working/) di bagian bawah kanvas berketerangan
+"Mask Cepat":
+
+- **Balikkan**: **Balikkan seleksi**.
+- **Isi** dan **Bersihkan**: **Isi Mask** mengisi seluruh mask, dan **Bersihkan Cakupan Seleksi** mengosongkan mask.
+- **Perbaiki**: **Perluas…**, **Perkecil…**, **Perhalus Tepi…**, **Bingkai…**, dan **Haluskan…**. **Transformasi Garis Seleksi** tidak tersedia di sini.
+- **Simpan**: **Simpan sebagai Lapisan Seleksi** (lihat [Lapisan seleksi](/id/docs/selections/selection-layers/)).
+- **Keluar**: **Kembali ke Karya**.
+
+Jika bilah kanvas disembunyikan, bilah Mask Cepat tidak muncul.
+
+![Bilah Mask Cepat di bagian bawah kanvas.](shot:selections/quick-mask-bar)
+
+## Menu Mask Cepat
+
+Selama Mask Cepat aktif, menu **Lapisan** menjadi menu **Mask Cepat**. Klik kanan
+atau tahan baris **Mask Cepat** untuk membuka menu yang sama.
+
+- **Kembali ke Karya**
+- **Simpan sebagai Lapisan Seleksi**
+- **Ubah**: **Balikkan seleksi**, **Pilih semua piksel**, **Bersihkan Cakupan Seleksi**, **Isi Mask**, **Perluas…**, **Perkecil…**, **Perhalus Tepi…**, **Bingkai…**, dan **Haluskan…**
+
+## Pengaturan hamparan
+
+Panel Properti menampilkan pengaturan mask selama Mask Cepat aktif.
+
+![Panel Properti untuk Mask Cepat, dengan Mode, Warna hamparan, dan Opasitas hamparan.](shot:selections/quick-mask-properties)
+
+### Mode
+
+**Lukis seleksi** (bawaan) atau **Mask skala abu-abu**. Mode ini adalah satu
+pengaturan untuk Mask Cepat dan setiap lapisan seleksi, di setiap gambar. Perintah
+**Mask skala abu-abu** di pencarian perintah juga mengalihkannya.
+
+### Warna hamparan
+
+Menyetel warna hamparan. Bawaannya merah.
+
+### Opasitas hamparan
+
+Dari 0 hingga 100%. Bawaannya 50%.
+
+## Keluar dari Mask Cepat
+
+Lakukan salah satu langkah berikut:
+
+- Pilih **Seleksi > Mask Cepat** atau tekan **Q**.
+- Pilih **Lapisan > Kembali ke Karya**.
+- Pilih **Keluar** di bilah Mask Cepat.
+- Tekan **Escape**.
+- Pilih tombol muat di samping gambar mini pada baris **Mask Cepat**.
+
+Mask menjadi seleksi saat ini. **Batalkan seleksi piksel** (**Ctrl+D**) juga keluar
+dari Mask Cepat, dan membuang seleksi.

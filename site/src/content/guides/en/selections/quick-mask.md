@@ -1,25 +1,108 @@
 ---
-title: "Quick Mask and selection layers"
-description: "Paint a selection with a brush, and save selections to use again later."
-purpose: "Some areas are easier to paint than to outline, such as soft hair, clouds or a blurry background. Quick Mask shows your selection as a colored overlay that you can paint with any brush. Selection layers keep a selection in your drawing so you can load it again whenever you need it."
-techniques: ["Refine a selection with a brush in Quick Mask.", "Paint a selection directly with Paint selection.", "Save a selection as a selection layer and load it later."]
-figure: "1: The temporary Quick Mask layer. 2: Quick Mask settings, including the overlay color. 3: The selection shown as a colored overlay, extended with a brush stroke."
-related: ["tools/selections", "selections/tonal-range", "layers/masks"]
-image: {"light": "/assets/guides/selections-quick-mask-light.webp", "dark": "/assets/guides/selections-quick-mask-dark.webp", "alt": "1: The temporary Quick Mask layer. 2: Quick Mask settings, including the overlay color. 3: The selection shown as a colored overlay, extended with a brush stroke."}
+title: "Quick Mask"
+description: "Editing a selection as a painted mask in Quick Mask."
+related: ["selections/working", "selections/selection-layers", "selections/tonal-range", "layers/masks"]
 ---
 
-## Refine a selection in Quick Mask
+You can edit a selection as a painted mask in Quick Mask.
 
-Make a rough selection with any selection tool, then choose **Select → Quick Mask** or press **Q**. The selection appears as a colored overlay, and a temporary **Quick Mask** layer appears at the top of the Layers panel. Now paint with any brush to add to the selection, and use the **Eraser** to take away from it. Soft brushes make soft edges, which is exactly what you want for fur or foliage.
+## Entering Quick Mask
 
-If the overlay is hard to see against your drawing, change its color or opacity in **Properties**. When the selection looks right, choose **Return to Artwork** to go back to painting with the selection active.
+Do one of the following:
 
-## Paint a selection directly
+- Choose **Select > Quick Mask**.
+- Press **Q**.
+- Select **Quick Mask** on the [selection bar](/docs/selections/working/).
 
-If you'd rather skip the first step, choose the **Paint selection** tool from the selection tools. Every stroke you make adds to the selection, and circling an area selects everything inside it. Hold **Alt** or switch the mode in the Tool panel to paint parts of the selection away again.
+The current selection becomes the mask. With no selection, the mask starts
+empty. The tool changes to the current brush, except when **Tonal range** is
+active.
 
-## Save selections for later
+You can't enter Quick Mask while a transform is open.
 
-A selection is lost as soon as you make a new one, so save any selection you'll need again. Choose **Select → Save as Selection Layer**, or **Save as Selection Layer** from the Quick Mask layer's menu. The selection is stored as a selection layer in the Layers panel and is saved with your drawing.
+## What Quick Mask shows
 
-To use it again, choose **Select → Load Selection**, or hold **Ctrl** and click the selection layer's thumbnail. You can also combine it with the current selection from the layer's menu. The **New Selection Layer** button at the bottom of the Layers panel makes an empty selection layer that you can paint into directly.
+An overlay, red at 50% by default, marks the mask on the canvas. In **Paint
+selection** mode it covers the selected area, and in **Grayscale mask** mode
+the area outside the selection.
+
+A row named **Quick Mask** appears at the top of the Layers panel, selected.
+Its eye button shows or hides the overlay, as does **Show Mask Overlay** in
+command search. The Color panel shows the mask colors in place of the drawing
+colors.
+
+![The terrarium photo in Quick Mask, with the overlay over the highlights.](shot:selections/quick-mask-overlay)
+
+## Painting the mask
+
+Paint with a pen, pencil, airbrush or eraser to change the mask. Other brushes
+don't paint in Quick Mask. **Fill**, **Gradient** and **Paint selection** also
+change the mask.
+
+- In **Paint selection** mode, any color selects. The eraser and the transparent color deselect.
+- In **Grayscale mask** mode, the gray value of the color sets the mask: white selects, black deselects, and grays select partly.
+
+The mask has its own foreground and background colors, copied from the drawing
+colors when Quick Mask starts. Press **D** (**Reset to Black / White**) for a
+black foreground and a white background. To swap the mask colors, run
+**Swap Mask Colors** from command search.
+
+Commands that change the artwork, such as **Clear Selected Pixels** and
+**Transform**, are unavailable in Quick Mask.
+
+## Quick Mask bar
+
+The [canvas bar](/docs/selections/working/) at the bottom of the canvas is
+captioned "Quick Mask":
+
+- **Invert**: **Invert selection**.
+- **Fill** and **Clear**: **Fill Mask** fills the whole mask, and **Clear Selection Coverage** empties the mask.
+- **Refine**: **Grow…**, **Shrink…**, **Feather…**, **Border…** and **Smooth…**. **Transform Outline** is unavailable here.
+- **Save**: **Save as Selection Layer** (see [Selection layers](/docs/selections/selection-layers/)).
+- **Exit**: **Return to Artwork**.
+
+With the canvas bar hidden, the Quick Mask bar doesn't appear.
+
+![The Quick Mask bar at the bottom of the canvas.](shot:selections/quick-mask-bar)
+
+## Quick Mask menu
+
+While Quick Mask is on, the **Layer** menu becomes the **Quick Mask** menu.
+Right-click or hold the **Quick Mask** row for the same menu.
+
+- **Return to Artwork**
+- **Save as Selection Layer**
+- **Modify**: **Invert selection**, **Select all pixels**, **Clear Selection Coverage**, **Fill Mask**, **Grow…**, **Shrink…**, **Feather…**, **Border…** and **Smooth…**
+
+## Overlay settings
+
+The Properties panel shows the mask's settings while Quick Mask is on.
+
+![The Properties panel for Quick Mask, with Mode, Overlay color and Overlay opacity.](shot:selections/quick-mask-properties)
+
+### Mode
+
+**Paint selection** (the default) or **Grayscale mask**. The mode is one
+setting for Quick Mask and every selection layer, in every drawing. The
+**Grayscale mask** command in command search switches it too.
+
+### Overlay color
+
+Sets the color of the overlay. Red by default.
+
+### Overlay opacity
+
+From 0 to 100%. The default is 50%.
+
+## Leaving Quick Mask
+
+Do one of the following:
+
+- Choose **Select > Quick Mask** or press **Q**.
+- Choose **Layer > Return to Artwork**.
+- Select **Exit** on the Quick Mask bar.
+- Press **Escape**.
+- Select the load button beside the thumbnail on the **Quick Mask** row.
+
+The mask becomes the current selection. **Deselect pixels** (**Ctrl+D**) also
+leaves Quick Mask, and removes the selection.

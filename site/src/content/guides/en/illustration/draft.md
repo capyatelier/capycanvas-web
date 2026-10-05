@@ -1,27 +1,68 @@
 ---
 title: "Sketching"
-description: "Draw a pencil sketch, and try out colors on a separate layer."
-purpose: "A sketch is where you work out the shapes, and a color rough is where you try out the colors. Keeping them on separate layers means you can change the colors as often as you like without touching your pencil lines."
-techniques: ["Draw with a pencil and pen pressure.", "Select and fix part of the sketch.", "Put rough colors on a layer below the sketch."]
-figure: "1: Pencil brushes. 2: Sketch above Color rough in Layers. 3: Pencil size and opacity."
-related: ["tools/selections", "tools/transforms", "painting/color"]
-image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/assets/guides/illustration-draft-dark.webp", "alt": "1: Pencil brushes. 2: Sketch above Color rough in Layers. 3: Pencil size and opacity."}
+description: "Stage 1 of the illustration tutorial: a color rough drawn with Lasso fill and a pencil sketch above it."
+related: ["files/new", "drawing/fill", "drawing/brush-tools", "transform/move-transform"]
 ---
 
-## 1. Draw the sketch
+This stage produces a color rough of the three shapes and a pencil sketch on a
+layer above it.
 
-Add a new layer and name it **Sketch**. Choose the **Pencil** tool and one of the pencils in Tool Set. Start with light lines to find the disc, the curved ribbon and the tilted block, then press harder to firm up the outlines you want to keep. Set the pencil's size in the Tool panel.
+## 1. Create the drawing
 
-Leave a little space around the shapes. It makes the later stages easier, because you will be able to see clearly where each shape ends. Now and then, select **Flip view horizontally** in the top toolbar to see the sketch mirrored; mistakes in proportion are much easier to spot that way.
+1. Select **Paint** in the workspace switcher in the title bar.
+2. Choose **File > New…**, or press **Ctrl+N** ([New drawings](/docs/files/new/)).
+3. In the **New drawing** dialog, set **Width (px)** and **Height (px)** to 1200, and select **Create**.
 
-## 2. Fix a part that's not quite right
+![The New drawing dialog with Width (px) and Height (px) set to 1200.](shot:illustration/new-drawing)
 
-If one part is in the wrong place or the wrong size, you don't need to redraw it. Choose **Lasso selection** and draw a loop around that part. Then choose **Scale / rotate**, drag the part into place or resize it, and select **Apply transform**. Choose **Select → Deselect pixels** before you continue drawing.
+The drawing has two layers: **Current ink** above **Paper**. Double-click
+**Current ink** in the Layers panel and rename the layer *Color rough*.
 
-The [selection](/docs/tools/selections/) and [transform](/docs/tools/transforms/) guides explain these tools in more detail. If a change goes wrong, just undo it.
+## 2. Block in the colors
 
-## 3. Try out the colors
+The **Lasso fill** tool fills a freehand shape with the current color in one
+stroke ([Fill tools](/docs/drawing/fill/)). Select **Fill** in the Tools
+toolbar, then select **Lasso fill** in the **Tool Set** panel.
 
-Add another layer named **Color rough** and drag it below Sketch. For each shape, choose a color, draw around the shape with **Lasso selection**, and choose **Edit → Fill selection**. The example uses teal for the ribbon, ochre for the disc and terracotta for the block. These are rough colors, so the edges don't need to be neat. Lower the layer's opacity a little so the pencil lines stay easy to see.
+![The Tool Set panel with Lasso fill selected.](shot:illustration/draft-lasso-fill)
 
-Hide Color rough for a moment whenever you want to see the sketch on its own. Save your drawing, then continue to [Line art](/docs/illustration/ink/).
+For each shape, choose its color in the **Color** panel and trace its outline
+in one stroke. Start with the block at the lower left in terracotta, then the
+disc above it in ochre, and last the ribbon on the right in teal. Each shape
+covers parts of the earlier shapes.
+
+Set **Layer opacity** in the Layers panel header to 50
+([Layers panel](/docs/layers/panel/)). The *Color rough* row shows "50%" under
+the layer name.
+
+## 3. Draw the sketch
+
+Select **New layer** at the bottom of the Layers panel, and rename the new
+layer *Sketch*. It appears directly above *Color rough*.
+
+Select **Pencil** in the Tools toolbar and the **Pencil** brush in Tool Set
+([Brush tools](/docs/drawing/brush-tools/)). Set **Brush size** in the
+**Tool** panel to 8 px.
+
+![The Tool Set panel with the pencil brushes and Pencil selected.](shot:illustration/draft-pencils)
+
+Draw the three outlines, then the scribbles and hatch marks. The example also
+has construction lines in sage, drawn at 5 px.
+
+The layer list reads *Sketch*, *Color rough*, and **Paper**.
+
+## 4. Transform part of the sketch
+
+You can move, scale, or rotate a selected part of the sketch with
+**Transform** ([Move and Transform](/docs/transform/move-transform/)). The
+example transforms the loop at the lower right.
+
+1. Press **M**, or select **Lasso selection** in the **Select** group of the Tools toolbar, and draw a loop around the part.
+2. Select **Transform** in the selection bar, or press **Ctrl+T**.
+3. Drag the handles.
+4. Select **Apply** in the bar, or press **Enter**.
+5. Choose **Select > Deselect pixels**, or press **Ctrl+D**.
+
+![The transform bar with Cancel and Apply beside a selected part of the sketch.](shot:illustration/draft-transform)
+
+Next stage: [Line art](/docs/illustration/ink/).

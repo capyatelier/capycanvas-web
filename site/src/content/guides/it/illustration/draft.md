@@ -1,27 +1,71 @@
 ---
-title: "Schizzi"
-description: "Disegna uno schizzo a matita e prova i colori su un livello separato."
-purpose: "Uno schizzo è il luogo in cui elabori le forme, mentre un colore grezzo è il luogo in cui provi i colori. Mantenerli su livelli separati significa che puoi cambiare i colori tutte le volte che vuoi senza toccare le linee della matita."
-techniques: ["Disegna con una matita e la pressione della penna.", "Seleziona e correggi parte dello schizzo.", "Metti i colori grezzi su uno strato sotto lo schizzo."]
-figure: "1: Pennelli a matita. 2: Sketch sopra Colore grezzo in strati. 3: Dimensioni e opacità della matita."
-related: ["tools/selections", "tools/transforms", "painting/color"]
-image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/assets/guides/illustration-draft-dark.webp", "alt": "1: Pennelli a matita. 2: Sketch sopra Colore grezzo in strati. 3: Dimensioni e opacità della matita."}
+title: "Schizzo"
+description: "Fase 1 del tutorial di illustrazione: un bozzetto a colori disegnato con Riempimento con lazo e uno schizzo a matita sopra di esso."
+related: ["files/new", "drawing/fill", "drawing/brush-tools", "transform/move-transform"]
 ---
 
-## 1. Disegna lo schizzo
+Questa fase produce un bozzetto a colori delle tre forme e uno schizzo a matita
+su un livello sopra di esso.
 
-Aggiungi un nuovo livello e chiamalo **Sketch**. Scegli lo strumento **Pencil** e una delle matite nel set di strumenti. Inizia con linee leggere per trovare il disco, il nastro curvo e il blocco inclinato, quindi premi più forte per fissare i contorni che desideri mantenere. Imposta la dimensione della matita nel pannello Strumenti.
+## 1. Crea il disegno
 
-Lascia un po' di spazio attorno alle forme. Rende le fasi successive più facili, perché sarai in grado di vedere chiaramente dove finisce ogni forma. Di tanto in tanto, seleziona **Flip view horizontally** nella barra degli strumenti in alto per vedere lo schizzo specchiato; gli errori proporzionali sono molto più facili da individuare in questo modo.
+1. Seleziona **Pittura** nel selettore dell'area di lavoro nella barra del titolo.
+2. Scegli **File > Nuovo…**, o premi **Ctrl+N** ([Nuovi disegni](/it/docs/files/new/)).
+3. Nella finestra di dialogo **Nuovo disegno**, imposta **Larghezza (px)** e **Altezza (px)** su 1200 e seleziona **Crea**.
 
-## 2. Correggi una parte che non è del tutto corretta
+![La finestra di dialogo Nuovo disegno con Larghezza (px) e Altezza (px) impostate su 1200.](shot:illustration/new-drawing)
 
-Se una parte è nel posto sbagliato o ha le dimensioni errate, non è necessario ridisegnarla. Scegli **Lasso selection** e disegna un anello attorno a quella parte. Quindi scegli **Scale / rotate**, trascina la parte in posizione o ridimensionala e seleziona **Apply transform**. Scegli **Select → Deselect pixels** prima di continuare a disegnare.
+Il disegno ha due livelli: **Inchiostro corrente** sopra **Carta**. Fai doppio
+clic su **Inchiostro corrente** nel pannello Livelli e rinomina il livello
+*Color rough*.
 
-Le guide [selection](/it/docs/tools/selections/) e [transform](/it/docs/tools/transforms/) spiegano questi strumenti in modo più dettagliato. Se una modifica va storta, basta annullarla.
+## 2. Stendi i colori
 
-## 3. Prova i colori
+Lo strumento **Riempimento con lazo** riempie una forma a mano libera con il
+colore corrente in un solo tratto
+([Strumenti di riempimento](/it/docs/drawing/fill/)). Seleziona **Riempi** nella
+barra strumenti Strumenti, poi seleziona **Riempimento con lazo** nel
+pannello **Set di strumenti**.
 
-Aggiungi un altro livello denominato **Color rough** e trascinalo sotto Sketch. Per ogni forma, scegli un colore, disegna attorno alla forma con **Lasso selection** e scegli **Edit → Fill selection**. L'esempio utilizza verde acqua per il nastro, ocra per il disco e terracotta per il blocco. Questi sono colori grezzi, quindi non è necessario che i bordi siano puliti. Abbassa leggermente l'opacità del livello in modo che le linee della matita rimangano facili da vedere.
+![Il pannello Set di strumenti con Riempimento con lazo selezionato.](shot:illustration/draft-lasso-fill)
 
-Nascondi Colore grezzo per un momento ogni volta che vuoi vedere lo schizzo da solo. Salva il tuo disegno, quindi continua con [Line art](/it/docs/illustration/ink/).
+Per ogni forma, scegli il suo colore nel pannello **Colore** e traccia il suo
+contorno in un solo tratto. Inizia con il blocco in basso a sinistra in
+terracotta, poi il disco sopra di esso in ocra, e infine il nastro a destra in
+verde acqua. Ogni forma copre in parte le forme precedenti.
+
+Imposta **Opacità livello** nell'intestazione del pannello Livelli su 50
+([Pannello Livelli](/it/docs/layers/panel/)). La riga *Color rough* mostra «50%»
+sotto il nome del livello.
+
+## 3. Disegna lo schizzo
+
+Seleziona **Nuovo livello** in fondo al pannello Livelli e rinomina il nuovo
+livello *Sketch*. Appare subito sopra *Color rough*.
+
+Seleziona **Matita** nella barra strumenti Strumenti e il pennello
+**Matita** in Set di strumenti ([Strumenti pennello](/it/docs/drawing/brush-tools/)).
+Imposta **Dimensioni pennello** nel pannello **Strumento** su 8 px.
+
+![Il pannello Set di strumenti con i pennelli a matita e Matita selezionato.](shot:illustration/draft-pencils)
+
+Disegna i tre contorni, poi gli scarabocchi e i tratteggi. L'esempio ha anche
+linee di costruzione color salvia, tracciate a 5 px.
+
+L'elenco dei livelli mostra *Sketch*, *Color rough* e **Carta**.
+
+## 4. Trasforma una parte dello schizzo
+
+Puoi spostare, scalare o ruotare una parte selezionata dello schizzo con
+**Trasforma** ([Spostamento e trasformazione](/it/docs/transform/move-transform/)).
+L'esempio trasforma l'anello in basso a destra.
+
+1. Premi **M**, o seleziona **Selezione con lazo** nel gruppo **Seleziona** della barra strumenti Strumenti, e traccia un anello attorno alla parte.
+2. Seleziona **Trasforma** nella barra della selezione, o premi **Ctrl+T**.
+3. Trascina le maniglie.
+4. Seleziona **Applica** nella barra, o premi **Invio**.
+5. Scegli **Seleziona > Deseleziona pixel**, o premi **Ctrl+D**.
+
+![La barra di trasformazione con Annulla e Applica accanto a una parte selezionata dello schizzo.](shot:illustration/draft-transform)
+
+Fase successiva: [Inchiostrazione](/it/docs/illustration/ink/).

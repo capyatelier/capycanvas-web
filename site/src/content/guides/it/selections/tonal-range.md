@@ -1,25 +1,85 @@
 ---
-title: "Seleziona per luminosità"
-description: "Seleziona le ombre, i mezzitoni o le luci di un'immagine con lo strumento Gamma tonale."
-purpose: "I fotografi spesso desiderano regolare solo le parti scure o luminose di un'immagine, ad esempio sollevando le ombre o calmando un cielo luminoso. Lo strumento Gamma tonale seleziona le aree in base a quanto sono chiare o scure, con un bordo morbido in modo che le regolazioni si fondano in modo naturale."
-techniques: ["Scegli una gamma di toni con un preset.", "Scegli un intervallo personalizzato dall'immagine.", "Ammorbidisci la selezione e usala per una regolazione."]
-figure: "1: Preimpostazioni tonali, dalle ombre alle luci. 2: Morbidezza e piuma. 3: i mezzitoni selezionati sulla tela."
-related: ["tools/selections", "filters/overview", "filters/image-editing"]
-image: {"light": "/assets/guides/selections-tonal-range-light.webp", "dark": "/assets/guides/selections-tonal-range-dark.webp", "alt": "1: Preimpostazioni tonali, dalle ombre alle luci. 2: Morbidezza e piuma. 3: i mezzitoni selezionati sulla tela."}
+title: "Selezionare per luminosità"
+description: "Lo strumento Intervallo tonale per selezionare i pixel in base alla luminosità."
+related: ["selections/tools", "selections/quick-mask", "color-management/hdr", "customize/toolbars"]
 ---
 
-## Scegli una gamma di toni
+Puoi selezionare i pixel in base alla luminosità con lo strumento
+**Intervallo tonale**. La luminosità si misura in stop rispetto al bianco di
+riferimento (0). Lo strumento legge l'immagine visibile, con tutti i livelli
+insieme, e crea una selezione dai bordi morbidi.
 
-Scegli **Tonal range** dagli strumenti di selezione. Il pannello Strumenti mostra una riga di preimpostazioni, che vanno da **Shadows** a **Midtones** a **Highlights**. Selezionane uno e le parti corrispondenti dell'immagine verranno selezionate immediatamente.
+## Scegliere Intervallo tonale
 
-Per scegliere il tuo intervallo, scegli **Custom**, quindi fai clic o trascina la parte dell'immagine che desideri abbinare. È quindi possibile regolare le due estremità dell'intervallo finché la selezione non copre solo i toni desiderati.
+Esegui una delle seguenti operazioni:
 
-## Ammorbidire i bordi
+- Digita «Intervallo tonale» nella [ricerca comandi](/it/docs/start/command-search/).
+- In Schizzo, seleziona **Seleziona** nella barra del titolo, selezionalo di nuovo per aprire il cassetto e seleziona **Intervallo tonale**.
+- Premi un tasto che hai assegnato a **Intervallo tonale** in [Scorciatoie da tastiera](/it/docs/input/keyboard/).
+- Seleziona **Intervallo tonale** in una barra strumenti in cui l'hai aggiunto con **Inserisci strumenti…** (vedi [Barre strumenti e barra del titolo](/it/docs/customize/toolbars/)).
 
-**Softness** decide quanto gradualmente la selezione sfuma tra i toni scelti e quelli circostanti. Un'elevata morbidezza offre transizioni fluide e naturali, che di solito sono le migliori per le foto. **Feather** ammorbidisce ancora di più i bordi esterni delle aree selezionate. Come gli altri strumenti di selezione, puoi aggiungere o sottrarre da una selezione tonale con i pulsanti nella parte superiore del pannello Strumenti.
+**Intervallo tonale** non ha un tasto predefinito né un pulsante nelle barre
+strumenti di Pittura o Foto. Mentre è lo strumento attivo, il pannello Set
+di strumenti elenca tutti gli strumenti di selezione.
 
-## Usa la selezione
+![Le impostazioni di Intervallo tonale nel cassetto Seleziona di Schizzo, con Modalità, Toni, Morbidezza e Sfumatura.](shot:selections/tonal-range-settings)
 
-Con la selezione attiva, aggiungere una regolazione da [Filtri e regolazioni](/it/docs/filters/overview/), come **Curves** o **Exposure**. La regolazione influisce solo sui toni selezionati. Ad esempio, seleziona le ombre e schiariscile per rivelare i dettagli, oppure seleziona le luci e abbassale per ripristinare un cielo sbiadito.
+## Toni
 
-Per conservare la selezione per un secondo momento, salvarla come livello di selezione, come descritto in [Maschera veloce e livelli di selezione](/it/docs/selections/quick-mask/).
+Seleziona un pulsante nella riga **Toni · stop rispetto al bianco di riferimento**
+per selezionare quella fascia di luminosità. La fascia si combina con la
+selezione corrente secondo **Modalità** (vedi
+[Strumenti di selezione](/it/docs/selections/tools/)).
+
+Il suggerimento di ogni pulsante indica la sua fascia:
+
+- **Ombre · sotto −5 stop**
+- **Ombre medie · da −5 a −3,5 stop**
+- **Mezzitoni · da −3,5 a −1,5 stop**
+- **Luci medie · da −1,5 a −0,5 stop**
+- **Luci · oltre −0,5 stop**
+- **HDR luminoso · oltre +1 stop**, solo nei [disegni HDR](/it/docs/color-management/hdr/)
+- **Personalizzato · imposta o campiona un intervallo in stop**
+
+Mentre è selezionato un pulsante di tono, la selezione segue le modifiche a
+**Morbidezza**, **Sfumatura**, **Da** e **A**. Scegliere un altro strumento o
+un'altra **Modalità** deseleziona il pulsante di tono.
+
+## Intervallo personalizzato
+
+Puoi impostare la fascia tu stesso, o campionarla dalla tela.
+
+Esegui una delle seguenti operazioni:
+
+- Seleziona **Personalizzato · imposta o campiona un intervallo in stop** e imposta **Da** e **A**, in stop. I valori predefiniti sono −3,5 e −1,5.
+- Trascina su un'area della tela per usare l'intervallo di luminosità di quell'area.
+- Fai clic sulla tela per centrare una fascia sulla luminosità di quel punto. La fascia mantiene l'ampiezza personalizzata corrente, oppure è ampia 1 stop quando era selezionato un altro tono.
+
+Campionare sulla tela imposta il tono su Personalizzato. Nell'editor web,
+**Da** e **A** condividono un unico controllo di intervallo.
+
+![Le impostazioni di Intervallo tonale con Personalizzato selezionato e l'intervallo in stop.](shot:selections/tonal-range-custom)
+
+## Morbidezza
+
+Allarga la transizione morbida a entrambe le estremità della fascia, da 0 a
+200%. Il valore predefinito è 100%.
+
+## Sfumatura
+
+Ammorbidisce il bordo della selezione fino a 100 px.
+
+## Modalità e tasti premuti
+
+**Intervallo tonale** ha gli stessi pulsanti **Modalità** degli altri strumenti
+di selezione, e non ha **Antialiasing**. Tieni premuto **Maiusc**, **Alt** o
+**Maiusc+Alt** mentre fai clic o trascini per aggiungere, sottrarre o
+intersecare.
+
+## Maschera veloce e livelli di selezione
+
+**Intervallo tonale** funziona nella [Maschera veloce](/it/docs/selections/quick-mask/)
+e mentre modifichi un [livello di selezione](/it/docs/selections/selection-layers/),
+e in quel caso modifica la maschera. La sua barra azioni della tela è la
+[barra della selezione](/it/docs/selections/working/), lungo il bordo inferiore
+della tela.

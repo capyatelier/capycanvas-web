@@ -1,27 +1,64 @@
 ---
-title: "Mascaramento"
-description: "Dê à fita, ao disco e ao bloco suas próprias camadas de cores com bordas editáveis."
-purpose: "Nesta etapa, cada forma ganha sua própria camada de cor. A cor preenche toda a camada e uma máscara decide qual parte dela você vê. Como nada é apagado, você pode ajustar a borda de qualquer forma posteriormente apenas pintando sua máscara."
-techniques: ["Selecione uma forma com um laço ou seleção automática.", "Transforme a seleção em uma máscara e preencha a camada com cor.", "Paint na máscara para ajustar a borda."]
-figure: "1: miniatura da máscara selecionada da faixa de opções. 2: Fita, disco e bloco abaixo da arte da linha. 3: Borracha, que esconde partes da máscara."
-related: ["layers/masks", "tools/selections", "painting/color"]
-image: {"light": "/assets/guides/illustration-mask-light.webp", "dark": "/assets/guides/illustration-mask-dark.webp", "alt": "1: miniatura da máscara selecionada da faixa de opções. 2: Fita, disco e bloco abaixo da arte da linha. 3: Borracha, que esconde partes da máscara."}
+title: "Cores base"
+description: "Etapa 3 do tutorial de ilustração: uma camada de pintura para cada forma, mascarada pela forma e preenchida com a cor base dela."
+related: ["layers/masks", "selections/working", "layers/types", "layers/settings"]
 ---
 
-## 1. Selecione uma forma
+Esta etapa produz uma camada de pintura para cada forma, preenchida com a cor
+base dela e mascarada pela forma. As cores base ficam em camadas de pintura
+porque uma camada de preenchimento não pode ser base de recorte para o
+sombreamento da etapa 4.
 
-Oculte **Sketch** e **Color rough**. Escolha **Lasso selection** e trace cuidadosamente ao redor da fita, como no exemplo.
+## 1. Adicionar a camada Block
 
-Se o seu desenho de linha estiver fechado em torno de uma forma, o **Auto select** pode fazer isso com um clique. Marque **Line art** como camada de referência escolhendo **Layer Settings → Use as reference** em seu menu. Em seguida, escolha **Auto select**, escolha **Sample reference layers** no painel Ferramentas e clique dentro da forma. [Ferramentas de seleção](/pt-BR/docs/tools/selections/) explica as configurações que controlam até que ponto a seleção se espalha.
+Oculte *Sketch*, selecione a linha dela e adicione uma camada chamada *Block*
+com **Nova camada**. A nova camada aparece logo acima de *Sketch*, abaixo de
+*Line art*.
 
-## 2. Faça a camada de cor mascarada
+## 2. Mascarar a camada pelo bloco
 
-Adicione uma nova camada chamada **Ribbon** abaixo da arte de linha. Com a seleção ainda ativa, abra o menu do Ribbon e escolha **Mask → Mask: reveal selection**. A camada agora possui uma máscara que mostra apenas o formato da fita.
+Pressione **M**, ou selecione **Seleção por laço** no grupo **Selecionar** da
+barra de ferramentas Ferramentas, e trace o contorno do bloco em *Line art*.
+Depois selecione **Máscara** na barra de seleção
+([Trabalhar com seleções](/pt-BR/docs/selections/working/)).
 
-Clique na miniatura de pintura da faixa de opções e escolha a cor da faixa de opções. Escolha **Select → Select all pixels** e depois **Edit → Fill selection** para preencher toda a camada com cor e finalize com **Select → Deselect pixels**. Só aparece a fita, mas a cor continua por baixo da máscara, pronta para quando você quiser ampliar o formato.
+![A barra de seleção com Máscara, ao lado de uma seleção ao redor do bloco.](shot:illustration/mask-selection-bar)
 
-## 3. Ajuste a borda
+A seleção vira a máscara de *Block* ([Máscaras](/pt-BR/docs/layers/masks/)).
+Uma miniatura de máscara aparece na linha, e uma barra na parte inferior da tela
+mostra "Editando a máscara de Block".
 
-Clique na miniatura da máscara da faixa de opções para editar a máscara. Agora, qualquer pincel revela mais da cor onde você pinta, e o **Eraser** a oculta novamente. Clique na miniatura da pintura novamente quando quiser alterar a cor em si.
+## 3. Preencher a camada
 
-Faça **Disc** e **Block** da mesma maneira. Mantenha o disco abaixo da faixa de opções e o bloco abaixo do disco, com a arte de linha acima dos três. Salve seu desenho e prossiga para [Rendering](/pt-BR/docs/illustration/render/).
+**Preencher seleção** não fica disponível enquanto você edita uma máscara. Para
+preencher a camada:
+
+1. Selecione a miniatura da camada na linha *Block* ou selecione **Editar conteúdo** na barra na parte inferior da tela.
+2. Escolha terracota no painel **Cor**.
+3. Escolha **Selecionar > Selecionar todos os pixels** ou pressione **Ctrl+A**.
+4. Escolha **Editar > Preencher seleção** ou pressione **Shift+Backspace**.
+5. Escolha **Selecionar > Desmarcar pixels** ou pressione **Ctrl+D**.
+
+A cor cobre a camada inteira, e a máscara só a mostra dentro do bloco.
+
+## 4. Adicionar Disc e Ribbon
+
+Crie *Disc* em ocre e depois *Ribbon* em verde-azulado, do mesmo jeito.
+
+![O painel Camadas com Ribbon, Disc e Block, cada uma com uma miniatura de máscara, abaixo de Line art.](shot:illustration/mask-layers)
+
+A lista de camadas mostra *Line art*, *Ribbon*, *Disc*, *Block*, *Sketch*,
+*Color rough* e **Papel**.
+
+## 5. Ajustar uma borda
+
+Selecione a miniatura da máscara na linha *Ribbon*. A barra na parte inferior
+da tela mostra "Editando a máscara de Ribbon".
+
+![A barra na parte inferior da tela mostrando Editando a máscara de Ribbon, com Inverter, Desativar, Aplicar máscara e Editar conteúdo.](shot:illustration/mask-bar)
+
+Pinte ao longo de uma borda com o pincel **Caneta G** para mostrar mais do
+verde-azulado, ou use a **Borracha** para aparar a borda. Na máscara, os pincéis
+ignoram a cor de pintura.
+
+Próxima etapa: [Renderização](/pt-BR/docs/illustration/render/).

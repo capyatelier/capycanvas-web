@@ -1,27 +1,43 @@
 ---
 title: "细化"
-description: "在剪贴到各个形状的图层上添加阴影和质感，然后导出结果。"
-purpose: "细化阶段为形状加上光影。在剪贴图层上画阴影，阴影会自动保持在每个形状之内；而且由于阴影与底色分开，你可以调整或重画阴影，而不会丢失任何内容。"
-techniques: ["把阴影图层剪贴到Ribbon上。", "控制阴影的强度。", "为其他形状画阴影，检查图层并导出。"]
-figure: "1：位于Ribbon上方的Ribbon texture和Ribbon shading。2：Clip to layer below。3：控制整层阴影的图层不透明度。"
-related: ["layers/groups", "layers/masks", "output/export"]
-image: {"light": "/assets/guides/illustration-render-light.webp", "dark": "/assets/guides/illustration-render-dark.webp", "alt": "1：位于Ribbon上方的Ribbon texture和Ribbon shading。2：Clip to layer below。3：控制整层阴影的图层不透明度。"}
+description: "插画教程第 4 阶段：在剪贴到各底色的图层上绘制明暗和纹理，并导出 PNG。"
+related: ["layers/settings", "drawing/brush-tools", "files/open-save", "files/export"]
 ---
 
-## 1. 添加剪贴阴影
+这一阶段在剪贴到各形状底色的图层上绘制每个形状的明暗，并将习作导出为 PNG。
 
-选择**Ribbon**，在它正上方添加一个新图层，命名为**Ribbon shading**。打开它的菜单，选择**Layer Settings → Clip to layer below**。现在用**Watercolor Wash**在带状形的弯折处画出阴影，再用**Paintbrush**加几笔鼠尾草绿作为点缀。笔画可以超出带状形的边缘，因为只有带状形内部的部分才会显示出来。
+## 1. 添加剪贴图层
 
-暂时把阴影图层的混合模式保持为**Normal**。底色安全地保留在Ribbon图层上，所以擦除阴影永远不会擦掉下面的颜色。
+选择 *Ribbon*，然后选择**图层 > 新建 > 新建剪贴图层**，或从该行的菜单中选择**新建 > 新建剪贴图层**（[图层设置](/zh/docs/layers/settings/)）。将新图层重命名为 *Ribbon shading*。
 
-## 2. 控制强度
+![图层菜单，新建已展开，其中有新建剪贴图层。](shot:illustration/render-new-menu)
 
-笔刷不透明度改变的是你接下来要画的笔画，而**Ribbon shading图层的不透明度**改变的是你已经画好的全部阴影。如果每处阴影都显得太重，请降低图层的不透明度，而不是重新绘制。
+*Ribbon shading* 出现在 *Ribbon* 正上方，缩略图左侧的竖线标出剪贴关系。剪贴范围跟随 *Ribbon* 的蒙版，而不是填满整个图层的蓝绿色。
 
-画高光时，在Ribbon shading正上方添加**Ribbon texture**，同样把它剪贴。用小号铅笔或带纹理的笔刷画几笔浅色笔迹。现在的图层顺序从上到下依次是Ribbon texture、Ribbon shading和Ribbon。[笔刷设置](/zh/docs/advanced/brush-engine/)更详细地说明了不透明度和流量。
+## 2. 为带子绘制明暗
 
-## 3. 完成并导出
+选择“工具”工具栏中的**绘画画笔**，并在工具组中选择**水彩平涂**（[画笔工具](/zh/docs/drawing/brush-tools/)）。在**工具设置**面板中将**不透明度**设为 65%，然后用深蓝色画出带子弯折处的阴影。再用**画笔**画笔添加灰绿色点缀。
 
-用同样的方法为**Disc**和**Block**画阴影，每个形状都有自己的剪贴图层。示例中，圆形上柔和的阴影用Airbrush绘制，奶油色的细小排线用Pencil绘制。让**Line art**始终位于所有图层之上。如果形状的外边缘需要修正，就在该形状的蒙版上绘画；如果只是阴影有问题，就修改阴影图层。[蒙版与剪贴](/zh/docs/layers/masks/)还介绍了如何用Alpha lock为墨线重新上色。
+## 3. 添加纹理图层
 
-满意之后，隐藏草稿和色稿图层，保存`.capy`文件，然后[导出图像](/zh/docs/output/export/)用于分享。打开导出的文件看一看，确认效果符合预期。
+选中 *Ribbon shading*，再次选择**图层 > 新建 > 新建剪贴图层**，将该图层重命名为 *Ribbon texture*。它位于 *Ribbon shading* 上方，属于同一剪贴组。选择**铅笔**和**铅笔**画笔，画出米白色的排线笔触和高光。
+
+## 4. 为圆盘和方块绘制明暗
+
+选择 *Disc*，添加名为 *Disc shading* 的剪贴图层，用**喷枪**以赤陶色为圆盘下半部分绘制明暗。在左上方添加一处米白色高光。
+
+用同样的方法在 *Block* 上添加 *Block shading*：用**画笔**画笔沿右边缘和下边缘画深蓝色，然后用**铅笔**画笔画米白色排线。
+
+![图层面板，Ribbon texture 和 Ribbon shading 剪贴到 Ribbon，Disc shading 和 Block shading 剪贴到各自的基底图层。](shot:illustration/render-layers)
+
+图层列表与[简介](/zh/docs/illustration/)中完成后的图层一致。
+
+## 5. 保存和导出
+
+选择**文件 > 保存**，或按 **Ctrl+S**，将画作保存为 `.capy` 文件（[打开和保存](/zh/docs/files/open-save/)）。要导出 PNG：
+
+1. 选择**文件 > 导出…**，或按 **Ctrl+Shift+E**。
+2. 保持**用途**为**网页 / 分享**，并将**格式**设为 **PNG 图像**。
+3. 选择**选择文件…**，然后选择文件夹和名称。
+
+第一次导出之后，**文件 > 再次导出**会以相同设置写入同一文件，不显示对话框（[导出图像](/zh/docs/files/export/)）。

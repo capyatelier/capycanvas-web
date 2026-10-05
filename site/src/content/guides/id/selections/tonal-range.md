@@ -1,25 +1,80 @@
 ---
-title: "Pilih berdasarkan kecerahan"
-description: "Pilih bayangan, midtone, atau highlight gambar dengan alat rentang Tonal."
-purpose: "Fotografer sering kali hanya ingin menyesuaikan bagian gelap atau terang dari sebuah gambar, seperti mengangkat bayangan atau menenangkan langit yang cerah. Alat Rentang Tonal memilih area berdasarkan terang atau gelapnya, dengan tepi lembut sehingga penyesuaian menyatu secara alami."
-techniques: ["Pilih rentang nada dengan preset.", "Pilih rentang khusus dari gambar.", "Perlembut seleksi dan gunakan untuk penyesuaian."]
-figure: "1: Prasetel nada, dari bayangan hingga sorotan. 2: Kelembutan dan bulu. 3: Nada tengah yang dipilih pada kanvas."
-related: ["tools/selections", "filters/overview", "filters/image-editing"]
-image: {"light": "/assets/guides/selections-tonal-range-light.webp", "dark": "/assets/guides/selections-tonal-range-dark.webp", "alt": "1: Prasetel nada, dari bayangan hingga sorotan. 2: Kelembutan dan bulu. 3: Nada tengah yang dipilih pada kanvas."}
+title: "Seleksi berdasarkan kecerahan"
+description: "Alat Rentang nada untuk menyeleksi piksel berdasarkan kecerahan."
+related: ["selections/tools", "selections/quick-mask", "color-management/hdr", "customize/toolbars"]
 ---
 
-## Pilih rentang nada
+Anda dapat menyeleksi piksel berdasarkan kecerahan dengan alat **Rentang nada**.
+Kecerahan diukur dalam stop relatif terhadap putih acuan (0). Alat ini membaca gambar
+yang terlihat, semua lapisan sekaligus, dan membuat seleksi bertepi lembut.
 
-Pilih **Tonal range** dari alat seleksi. Panel Alat menampilkan deretan preset, mulai dari **Shadows** hingga **Midtones** hingga **Highlights**. Pilih satu, dan bagian gambar yang cocok akan langsung dipilih.
+## Memilih Rentang nada
 
-Untuk memilih rentang Anda sendiri, pilih **Custom**, lalu klik atau seret bagian gambar yang ingin Anda cocokkan. Anda kemudian dapat menyesuaikan kedua ujung rentang hingga pilihan hanya mencakup nada yang Anda inginkan.
+Lakukan salah satu langkah berikut:
 
-## Lembutkan pinggirannya
+- Ketik "Rentang nada" di [pencarian perintah](/id/docs/start/command-search/).
+- Di Sketsa, pilih **Seleksi** di bilah judul, pilih sekali lagi untuk membuka laci, lalu pilih **Rentang nada**.
+- Tekan tombol yang Anda tetapkan untuk **Rentang nada** di [Pintasan papan ketik](/id/docs/input/keyboard/).
+- Pilih **Rentang nada** di bilah alat tempat Anda menambahkannya dengan **Sisipkan Alat…** (lihat [Bilah alat dan bilah judul](/id/docs/customize/toolbars/)).
 
-**Softness** menentukan seberapa bertahap pilihan memudar antara nada yang Anda pilih dan nada di sekitarnya. Kelembutan yang tinggi memberikan transisi yang mulus dan alami, yang biasanya paling baik untuk foto. **Feather** semakin memperhalus tepi luar area yang dipilih. Seperti alat seleksi lainnya, Anda dapat menambah atau mengurangi pilihan nada dengan tombol di bagian atas panel Alat.
+**Rentang nada** tidak memiliki tombol pintasan bawaan dan tidak memiliki tombol di
+bilah alat Lukis atau Foto. Selama alat ini aktif, panel Set Alat mencantumkan
+setiap alat seleksi.
 
-## Gunakan pilihan
+![Pengaturan Rentang nada di laci Seleksi pada Sketsa, dengan Mode, Nada, Kelembutan, dan Perhalus tepi.](shot:selections/tonal-range-settings)
 
-Dengan pilihan aktif, tambahkan penyesuaian dari [Filter dan penyesuaian](/id/docs/filters/overview/), seperti **Curves** atau **Exposure**. Penyesuaian hanya mempengaruhi nada yang dipilih. Misalnya, pilih bayangan dan cerahkan untuk menampilkan detail, atau pilih sorotan dan turunkan untuk mengembalikan langit yang pudar.
+## Nada
 
-Untuk menyimpan pilihan untuk nanti, simpan sebagai lapisan pilihan, seperti yang dijelaskan dalam [Masker Cepat dan lapisan pilihan](/id/docs/selections/quick-mask/).
+Pilih sebuah tombol di baris **Nada · stop relatif terhadap putih acuan** untuk
+menyeleksi pita kecerahan itu. Pita tersebut digabungkan dengan seleksi saat ini
+sesuai **Mode** (lihat [Alat seleksi](/id/docs/selections/tools/)).
+
+Keterangan alat setiap tombol menyebutkan pitanya:
+
+- **Bayangan · di bawah −5 stop**
+- **Bayangan sedang · −5 hingga −3.5 stop**
+- **Nada tengah · −3.5 hingga −1.5 stop**
+- **Sorotan sedang · −1.5 hingga −0.5 stop**
+- **Sorotan · di atas −0.5 stop**
+- **HDR terang · di atas +1 stop**, hanya di [gambar HDR](/id/docs/color-management/hdr/)
+- **Khusus · atur atau ambil sampel rentang dalam stop**
+
+Selama sebuah tombol nada terpilih, seleksi mengikuti perubahan pada **Kelembutan**,
+**Perhalus tepi**, **Dari**, dan **Hingga**. Memilih alat lain atau **Mode** lain
+membatalkan pilihan tombol nada.
+
+## Rentang khusus
+
+Anda dapat menyetel pita sendiri, atau mengambil sampelnya dari kanvas.
+
+Lakukan salah satu langkah berikut:
+
+- Pilih **Khusus · atur atau ambil sampel rentang dalam stop**, lalu setel **Dari** dan **Hingga** dalam stop. Bawaannya −3.5 dan −1.5.
+- Seret melintasi sebuah area di kanvas untuk memakai rentang kecerahan di area itu.
+- Klik kanvas untuk memusatkan pita pada kecerahan di titik itu. Pita mempertahankan lebar Khusus saat ini, atau selebar 1 stop jika sebelumnya nada lain yang terpilih.
+
+Mengambil sampel di kanvas mengalihkan nada ke Khusus. Di editor web, **Dari** dan
+**Hingga** berbagi satu kontrol rentang.
+
+![Pengaturan Rentang nada dengan Khusus terpilih dan rentang dalam stop.](shot:selections/tonal-range-custom)
+
+## Kelembutan
+
+Melebarkan peluruhan lembut di kedua ujung pita, dari 0 hingga 200%. Bawaannya 100%.
+
+## Perhalus tepi
+
+Melembutkan tepi seleksi hingga 100 px.
+
+## Mode dan tombol yang ditahan
+
+**Rentang nada** memiliki tombol **Mode** yang sama seperti alat seleksi lainnya,
+tanpa **Penghalusan tepi**. Tahan **Shift**, **Alt**, atau **Shift+Alt** saat Anda
+mengeklik atau menyeret untuk menambah, mengurangi, atau mengambil irisan.
+
+## Mask Cepat dan lapisan seleksi
+
+**Rentang nada** berfungsi di [Mask Cepat](/id/docs/selections/quick-mask/) dan
+selama Anda mengedit [lapisan seleksi](/id/docs/selections/selection-layers/), dan
+mengubah mask tersebut. Bilah kanvasnya adalah [bilah seleksi](/id/docs/selections/working/),
+di tepi bawah kanvas.

@@ -1,27 +1,65 @@
 ---
-title: "Representación"
-description: "Agregue sombreado y textura en capas recortadas a cada forma, luego exporte el resultado."
-purpose: "El renderizado es donde las formas obtienen su luz y sombra. Pintar el sombreado en capas recortadas lo mantiene dentro de cada forma automáticamente y, como el sombreado está separado del color base, puede ajustarlo o rehacerlo sin perder nada."
-techniques: ["Recorta una capa de sombreado a la cinta.", "Controla la fuerza del sombreado.", "Sombrea las otras formas, revisa las capas y exporta."]
-figure: "1: Textura de la cinta y sombreado de la cinta encima de la cinta. 2: Recortar a la capa inferior. 3: Opacidad de capa para toda la pasada de sombreado."
-related: ["layers/groups", "layers/masks", "output/export"]
-image: {"light": "/assets/guides/illustration-render-light.webp", "dark": "/assets/guides/illustration-render-dark.webp", "alt": "1: Textura de la cinta y sombreado de la cinta encima de la cinta. 2: Recortar a la capa inferior. 3: Opacidad de capa para toda la pasada de sombreado."}
+title: "Renderizado"
+description: "Etapa 4 del tutorial de ilustración: sombreado y textura en capas recortadas a cada color base, y una exportación PNG."
+related: ["layers/settings", "drawing/brush-tools", "files/open-save", "files/export"]
 ---
 
-## 1. Agrega sombreado recortado
+En esta etapa se crea el sombreado de cada forma, en capas recortadas a su color
+base, y una exportación PNG del estudio.
 
-Seleccione **Ribbon**, agregue una nueva capa directamente encima y asígnele el nombre **Ribbon shading**. Abra su menú y elija **Layer Settings → Clip to layer below**. Ahora pinte las sombras en las curvas de la cinta con **Watercolor Wash** y agregue algunos acentos salvia con **Paintbrush**. Tus trazos pueden ir más allá del borde de la cinta, porque solo se muestra la parte dentro de la cinta.
+## 1. Añade una capa de recorte
 
-Deje el modo de fusión de la capa de sombreado en **Normal** por ahora. El color base permanece de forma segura en la capa de la Cinta, por lo que al borrar el sombreado nunca se borra el color que se encuentra debajo.
+Selecciona *Ribbon* y elige **Capa > Nuevo > Nueva capa de recorte**, o elige
+**Nuevo > Nueva capa de recorte** en el menú de la fila
+([Ajustes de capa](/es/docs/layers/settings/)). Cambia el nombre de la capa nueva
+a *Ribbon shading*.
 
-## 2. Controla la fuerza
+![El menú de capa con Nuevo abierto y Nueva capa de recorte dentro.](shot:illustration/render-new-menu)
 
-La opacidad del pincel cambia los trazos que estás a punto de pintar. El **opacity of the Ribbon shading layer** cambia todos los tonos que ya has pintado. Si cada sombra parece demasiado fuerte, reduzca la opacidad de la capa en lugar de volver a pintar.
+*Ribbon shading* aparece justo encima de *Ribbon*, y una barra a la izquierda de
+las miniaturas marca el recorte. El recorte sigue la máscara de *Ribbon*, no el
+verde azulado que rellena toda la capa.
 
-Para resaltar, agregue **Ribbon texture** directamente encima del sombreado de la cinta y recórtelo también. Utilice un lápiz pequeño o un pincel texturizado para hacer algunas marcas claras. El orden de las capas ahora es Textura de la cinta, Sombreado de la cinta y luego Cinta. [Configuración del pincel](/es/docs/advanced/brush-engine/) explica la opacidad y el flujo con más detalle.
+## 2. Sombrea la cinta
 
-## 3. Finalizar y exportar
+Selecciona **Pincel de pintura** en la barra de herramientas y **Aguada de acuarela**
+en el Conjunto de herramientas ([Herramientas de pincel](/es/docs/drawing/brush-tools/)).
+Pon **Opacidad** en 65% en el panel **Herramienta** y pinta en azul oscuro las
+sombras de las curvas de la cinta. Después añade acentos en verde salvia con el
+pincel **Pincel de pintura**.
 
-Sombrea **Disc** y **Block** de la misma manera, cada uno con sus propias capas recortadas. En el ejemplo se utiliza Aerógrafo para el sombreado suave del disco y Lápiz para las pequeñas marcas de color crema. Mantenga **Line art** por encima de todo. Si es necesario arreglar el borde exterior de una forma, pinte la máscara de esa forma; si solo el sombreado es incorrecto, cambie la capa de sombreado. [Máscaras y recortes](/es/docs/layers/masks/) también muestra cómo cambiar el color de la tinta con bloqueo alfa.
+## 3. Añade una capa de textura
 
-Cuando esté satisfecho con él, oculte las capas preliminares, guarde su archivo `.capy` y [exporte una imagen](/es/docs/output/export/) para compartir. Abra el archivo exportado una vez para comprobar que tiene el aspecto esperado.
+Con *Ribbon shading* seleccionada, vuelve a elegir
+**Capa > Nuevo > Nueva capa de recorte** y cambia el nombre de la capa a
+*Ribbon texture*. Se coloca encima de *Ribbon shading*, en el mismo recorte.
+Selecciona **Lápiz** y el pincel **Lápiz**, y dibuja marcas de rayado y luces en
+crema.
+
+## 4. Sombrea el disco y el bloque
+
+Selecciona *Disc*, añade una capa de recorte llamada *Disc shading* y sombrea la
+mitad inferior del disco con el **Aerógrafo** en terracota. Añade una luz en
+crema arriba a la izquierda.
+
+*Block shading* va sobre *Block* de la misma manera: azul oscuro a lo largo de
+los bordes derecho e inferior con el pincel **Pincel de pintura** y después un
+rayado en crema con el pincel **Lápiz**.
+
+![El panel Capas con Ribbon texture y Ribbon shading recortadas a Ribbon, y Disc shading y Block shading recortadas a sus bases.](shot:illustration/render-layers)
+
+La lista de capas coincide con las capas terminadas de la
+[introducción](/es/docs/illustration/).
+
+## 5. Guarda y exporta
+
+Elige **Archivo > Guardar**, o pulsa **Ctrl+S**, y guarda el dibujo como archivo
+`.capy` ([Abrir y guardar](/es/docs/files/open-save/)). Para exportar un PNG:
+
+1. Elige **Archivo > Exportar…**, o pulsa **Ctrl+Mayús+E**.
+2. Deja **Destino** en **Web / Compartir** y pon **Formato** en **Imagen PNG**.
+3. Selecciona **Elegir archivo…** y elige una carpeta y un nombre.
+
+Después de la primera exportación, **Archivo > Exportar de nuevo** escribe el
+mismo archivo con los mismos ajustes, sin el diálogo
+([Exportar imágenes](/es/docs/files/export/)).

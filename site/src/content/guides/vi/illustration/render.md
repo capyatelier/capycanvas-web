@@ -1,27 +1,59 @@
 ---
-title: "Kết xuất"
-description: "Thêm bóng và kết cấu trên các lớp được cắt theo từng hình, sau đó xuất kết quả."
-purpose: "Kết xuất là nơi các hình dạng có được ánh sáng và bóng tối. Việc tô bóng trên các lớp đã cắt sẽ tự động giữ nó bên trong mỗi hình dạng và vì bóng đổ tách biệt với màu cơ bản nên bạn có thể điều chỉnh hoặc làm lại nó mà không mất bất kỳ thứ gì."
-techniques: ["Cắt một lớp bóng vào Ribbon.", "Kiểm soát cường độ của bóng.", "Tô bóng các hình dạng khác, kiểm tra các lớp và xuất."]
-figure: "1: Kết cấu Ribbon và bóng Ribbon phía trên Ribbon. 2: Clip vào lớp bên dưới. 3: Độ mờ của lớp cho toàn bộ đường bóng."
-related: ["layers/groups", "layers/masks", "output/export"]
-image: {"light": "/assets/guides/illustration-render-light.webp", "dark": "/assets/guides/illustration-render-dark.webp", "alt": "1: Kết cấu Ribbon và bóng Ribbon phía trên Ribbon. 2: Clip vào lớp bên dưới. 3: Độ mờ của lớp cho toàn bộ đường bóng."}
+title: "Render"
+description: "Giai đoạn 4 của hướng dẫn vẽ minh họa: đổ bóng và kết cấu trên các lớp cắt theo từng màu nền, và xuất PNG."
+related: ["layers/settings", "drawing/brush-tools", "files/open-save", "files/export"]
 ---
 
-## 1. Thêm bóng đã được cắt bớt
+Giai đoạn này tạo phần đổ bóng của mỗi hình trên các lớp cắt theo màu nền của hình,
+và xuất bức tranh ra PNG.
 
-Chọn **Ribbon**, thêm một lớp mới ngay phía trên nó và đặt tên là **Ribbon shading**. Mở menu của nó và chọn **Layer Settings → Clip to layer below**. Bây giờ, tô bóng ở những chỗ uốn cong của dải ruy băng bằng **Watercolor Wash** và thêm một vài điểm nhấn bằng **Paintbrush**. Các nét của bạn có thể đi qua mép của dải băng vì chỉ phần bên trong dải băng mới hiển thị.
+## 1. Thêm lớp cắt
 
-Bây giờ, hãy để chế độ hòa trộn của lớp đổ bóng ở **Normal**. Màu cơ bản vẫn an toàn trên lớp Ribbon, vì vậy việc xóa bóng sẽ không bao giờ xóa màu bên dưới.
+Chọn *Ribbon*, rồi chọn **Lớp > Mới > Lớp cắt mới**, hoặc chọn
+**Mới > Lớp cắt mới** trong trình đơn của hàng
+([Thiết lập lớp](/vi/docs/layers/settings/)). Đổi tên lớp mới thành
+*Ribbon shading*.
 
-## 2. Kiểm soát sức mạnh
+![Trình đơn lớp với Mới đang mở và Lớp cắt mới bên trong.](shot:illustration/render-new-menu)
 
-Độ mờ của cọ làm thay đổi các nét bạn sắp vẽ. **opacity of the Ribbon shading layer** thay đổi tất cả màu sắc mà bạn đã vẽ. Nếu mọi bóng trông quá mạnh, hãy giảm độ mờ của lớp thay vì sơn lại.
+*Ribbon shading* nằm ngay trên *Ribbon*, và một thanh dọc bên trái các hình thu nhỏ
+đánh dấu lớp cắt. Lớp cắt đi theo mặt nạ của *Ribbon*, không theo màu xanh mòng két
+phủ kín cả lớp.
 
-Để làm nổi bật, hãy thêm **Ribbon texture** ngay phía trên phần bóng Ribbon và cắt nó. Sử dụng bút chì nhỏ hoặc cọ có họa tiết để tạo một vài vết sáng. Thứ tự lớp bây giờ là kết cấu Ribbon, tô bóng Ribbon, sau đó là Ribbon. [Cài đặt cọ](/vi/docs/advanced/brush-engine/) giải thích độ mờ và dòng chảy chi tiết hơn.
+## 2. Đổ bóng dải ruy băng
 
-## 3. Hoàn thiện và xuất khẩu
+Chọn **Cọ vẽ** trên Thanh công cụ vẽ và **Màu nước phủ loãng** trong Bộ công cụ
+([Công cụ cọ](/vi/docs/drawing/brush-tools/)). Đặt **Độ đục** trong bảng
+**Công cụ** là 65%, rồi vẽ vùng tối ở các chỗ uốn của dải ruy băng bằng màu xanh
+lam đậm. Sau đó thêm điểm nhấn xanh sage bằng cọ **Cọ vẽ**.
 
-Tạo bóng cho **Disc** và **Block** theo cùng một cách, mỗi lớp có các lớp được cắt bớt riêng. Ví dụ này sử dụng Airbrush để tạo bóng mờ mềm mại trên đĩa và Pencil để tạo các dấu gạch nhỏ màu kem. Đặt **Line art** lên trên hết. Nếu cạnh ngoài của hình cần sửa, hãy vẽ lên mặt nạ của hình đó; nếu chỉ đổ bóng sai, hãy thay đổi lớp đổ bóng. [Mặt nạ và cắt](/vi/docs/layers/masks/) cũng hướng dẫn cách đổi màu mực bằng khóa alpha.
+## 3. Thêm lớp kết cấu
 
-Khi bạn hài lòng với nó, hãy ẩn các lớp thô, lưu tệp `.capy` của bạn và [xuất image](/vi/docs/output/export/) để chia sẻ. Mở tệp đã xuất một lần để kiểm tra xem nó có giống như bạn mong đợi hay không.
+Khi *Ribbon shading* đang được chọn, chọn lại **Lớp > Mới > Lớp cắt mới** và đổi
+tên lớp thành *Ribbon texture*. Lớp này nằm trên *Ribbon shading*, trong cùng nhóm
+cắt. Chọn **Bút chì** và cọ **Bút chì**, rồi vẽ các nét gạch và vùng sáng màu kem.
+
+## 4. Đổ bóng hình tròn và khối
+
+Chọn *Disc*, thêm một lớp cắt tên *Disc shading*, rồi đổ bóng nửa dưới hình tròn
+bằng **Bút phun** màu đất nung. Thêm một điểm sáng màu kem ở góc trên bên trái.
+
+Làm tương tự để thêm *Block shading* trên *Block*: màu xanh lam đậm dọc cạnh phải
+và cạnh dưới bằng cọ **Cọ vẽ**, sau đó là nét gạch màu kem bằng cọ **Bút chì**.
+
+![Bảng Lớp với Ribbon texture và Ribbon shading cắt theo Ribbon, còn Disc shading và Block shading cắt theo lớp nền của chúng.](shot:illustration/render-layers)
+
+Danh sách lớp lúc này khớp với các lớp hoàn chỉnh trong trang
+[Giới thiệu](/vi/docs/illustration/).
+
+## 5. Lưu và xuất
+
+Chọn **Tệp > Lưu**, hoặc nhấn **Ctrl+S**, rồi lưu bản vẽ thành tệp `.capy`
+([Mở và lưu](/vi/docs/files/open-save/)). Để xuất PNG:
+
+1. Chọn **Tệp > Xuất…**, hoặc nhấn **Ctrl+Shift+E**.
+2. Giữ **Đích** ở **Web / Chia sẻ**, và đặt **Định dạng** là **Ảnh PNG**.
+3. Chọn **Chọn tệp…**, rồi chọn thư mục và tên.
+
+Sau lần xuất đầu tiên, **Tệp > Xuất lại** ghi cùng tệp đó với cùng thiết lập mà
+không mở hộp thoại ([Xuất ảnh](/vi/docs/files/export/)).

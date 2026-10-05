@@ -1,25 +1,112 @@
 ---
-title: "Masque rapide et calques de sélection"
-description: "Paint une sélection avec un pinceau et enregistrez les sélections pour les réutiliser plus tard."
-purpose: "Certaines zones sont plus faciles à peindre qu'à délimiter, comme les cheveux mous, les nuages ou un arrière-plan flou. Quick Mask affiche votre sélection sous la forme d'une superposition colorée que vous pouvez peindre avec n'importe quel pinceau. Les calques de sélection conservent une sélection dans votre dessin afin que vous puissiez la charger à nouveau chaque fois que vous en avez besoin."
-techniques: ["Affinez une sélection avec un pinceau dans Quick Mask.", "Paint une sélection directement avec la sélection Paint.", "Enregistrez une sélection en tant que calque de sélection et chargez-la plus tard."]
-figure: "1 : Le calque temporaire de masque rapide. 2 : Paramètres du masque rapide, y compris la couleur de superposition. 3 : La sélection affichée sous forme de superposition colorée, prolongée par un coup de pinceau."
-related: ["tools/selections", "selections/tonal-range", "layers/masks"]
-image: {"light": "/assets/guides/selections-quick-mask-light.webp", "dark": "/assets/guides/selections-quick-mask-dark.webp", "alt": "1 : Le calque temporaire de masque rapide. 2 : Paramètres du masque rapide, y compris la couleur de superposition. 3 : La sélection affichée sous forme de superposition colorée, prolongée par un coup de pinceau."}
+title: "Masque rapide"
+description: "Modifier une sélection comme un masque peint en Masque rapide."
+related: ["selections/working", "selections/selection-layers", "selections/tonal-range", "layers/masks"]
 ---
 
-## Affiner une sélection dans Quick Mask
+Vous pouvez modifier une sélection comme un masque peint en Masque rapide.
 
-Faites une sélection approximative avec n'importe quel outil de sélection, puis choisissez **Select → Quick Mask** ou appuyez sur **Q**. La sélection apparaît sous la forme d'une superposition colorée et un calque temporaire **Quick Mask** apparaît en haut du panneau Calques. Peignez maintenant avec n'importe quel pinceau à ajouter à la sélection et utilisez le **Eraser** pour en retirer. Les brosses souples créent des bords doux, ce qui correspond exactement à ce que vous souhaitez pour la fourrure ou le feuillage.
+## Passer en Masque rapide
 
-Si la superposition est difficile à voir sur votre dessin, modifiez sa couleur ou son opacité dans **Properties**. Lorsque la sélection semble correcte, choisissez **Return to Artwork** pour revenir à la peinture avec la sélection active.
+Effectuez l’une des opérations suivantes :
 
-## Paint une sélection directement
+- Choisissez **Sélection > Masque rapide**.
+- Appuyez sur **Q**.
+- Sélectionnez **Masque rapide** dans la [barre de sélection](/fr/docs/selections/working/).
 
-Si vous préférez ignorer la première étape, choisissez l'outil **Paint selection** parmi les outils de sélection. Chaque trait que vous effectuez s'ajoute à la sélection, et le fait d'encercler une zone sélectionne tout ce qu'elle contient. Maintenez **Alt** ou changez de mode dans le panneau Outils pour peindre à nouveau des parties de la sélection.
+La sélection actuelle devient le masque. Sans sélection, le masque est vide au
+départ. L’outil passe au pinceau actuel, sauf si **Plage tonale** est actif.
 
-## Enregistrer les sélections pour plus tard
+Vous ne pouvez pas passer en Masque rapide pendant une transformation.
 
-Une sélection est perdue dès que vous en faites une nouvelle, alors enregistrez à nouveau toute sélection dont vous aurez besoin. Choisissez **Select → Save as Selection Layer** ou **Save as Selection Layer** dans le menu du calque Masque rapide. La sélection est stockée sous forme de calque de sélection dans le panneau Calques et est enregistrée avec votre dessin.
+## Affichage du Masque rapide
 
-Pour l'utiliser à nouveau, choisissez **Select → Load Selection** ou maintenez **Ctrl** et cliquez sur la vignette du calque de sélection. Vous pouvez également le combiner avec la sélection actuelle dans le menu du calque. Le bouton **New Selection Layer** en bas du panneau Calques crée un calque de sélection vide dans lequel vous pouvez peindre directement.
+Une superposition, rouge à 50 % par défaut, signale le masque sur la toile. En mode
+**Peindre la sélection**, elle couvre la zone sélectionnée ; en mode
+**Masque en niveaux de gris**, la zone hors de la sélection.
+
+Une ligne nommée **Masque rapide** apparaît en haut du panneau Calques,
+sélectionnée. Son bouton en forme d’œil affiche ou masque la superposition, tout
+comme **Afficher la superposition du masque** dans la recherche de commandes. Le
+panneau Couleur affiche les couleurs du masque à la place des couleurs du dessin.
+
+![La photo du terrarium en Masque rapide, avec la superposition sur les hautes lumières.](shot:selections/quick-mask-overlay)
+
+## Peindre le masque
+
+Peignez avec une plume, un crayon, un aérographe ou une gomme pour modifier le
+masque. Les autres pinceaux ne peignent pas en Masque rapide. **Remplissage**,
+**Dégradé** et **Peindre la sélection** modifient aussi le masque.
+
+- En mode **Peindre la sélection**, toute couleur sélectionne. La gomme et la couleur transparente désélectionnent.
+- En mode **Masque en niveaux de gris**, la valeur de gris de la couleur détermine le masque : le blanc sélectionne, le noir désélectionne et les gris sélectionnent en partie.
+
+Le masque a ses propres couleurs de premier plan et d’arrière-plan, copiées des
+couleurs du dessin au passage en Masque rapide. Appuyez sur **D**
+(**Réinitialiser en noir / blanc**) pour un premier plan noir et un arrière-plan
+blanc. Pour intervertir les couleurs du masque, lancez **Échanger les couleurs du
+masque** depuis la recherche de commandes.
+
+Les commandes qui modifient le dessin, comme **Effacer les pixels sélectionnés**
+et **Transformer**, sont indisponibles en Masque rapide.
+
+## Barre Masque rapide
+
+La [barre d’actions de la toile](/fr/docs/selections/working/), en bas de la
+toile, porte l’intitulé « Masque rapide » :
+
+- **Inverser** : **Inverser la sélection**.
+- **Remplissage** et **Effacer** : **Remplir le masque** remplit tout le masque, et **Effacer la couverture de sélection** le vide.
+- **Affiner** : **Agrandir…**, **Réduire…**, **Contour progressif…**, **Bordure…** et **Lisser…**. **Transformer le contour** n’est pas disponible ici.
+- **Enregistrer** : **Enregistrer comme calque de sélection** (voir [Calques de sélection](/fr/docs/selections/selection-layers/)).
+- **Quitter** : **Revenir au dessin**.
+
+Quand la barre d’actions de la toile est masquée, la barre Masque rapide
+n’apparaît pas.
+
+![La barre Masque rapide en bas de la toile.](shot:selections/quick-mask-bar)
+
+## Menu Masque rapide
+
+Tant que le Masque rapide est actif, le menu **Calque** devient le menu
+**Masque rapide**. Cliquez avec le bouton droit sur la ligne **Masque rapide**, ou
+appuyez longuement dessus, pour ouvrir le même menu.
+
+- **Revenir au dessin**
+- **Enregistrer comme calque de sélection**
+- **Modifier** : **Inverser la sélection**, **Sélectionner tous les pixels**, **Effacer la couverture de sélection**, **Remplir le masque**, **Agrandir…**, **Réduire…**, **Contour progressif…**, **Bordure…** et **Lisser…**
+
+## Réglages de la superposition
+
+Le panneau Propriétés affiche les réglages du masque tant que le Masque rapide est
+actif.
+
+![Le panneau Propriétés pour Masque rapide, avec Mode, Couleur de superposition et Opacité de superposition.](shot:selections/quick-mask-properties)
+
+### Mode
+
+**Peindre la sélection** (par défaut) ou **Masque en niveaux de gris**. Le mode est
+un réglage unique pour le Masque rapide et tous les calques de sélection, dans tous
+les dessins. La commande **Masque en niveaux de gris** de la recherche de commandes
+le change aussi.
+
+### Couleur de superposition
+
+Définit la couleur de la superposition. Rouge par défaut.
+
+### Opacité de superposition
+
+De 0 à 100 %. La valeur par défaut est 50 %.
+
+## Quitter le Masque rapide
+
+Effectuez l’une des opérations suivantes :
+
+- Choisissez **Sélection > Masque rapide** ou appuyez sur **Q**.
+- Choisissez **Calque > Revenir au dessin**.
+- Sélectionnez **Quitter** dans la barre Masque rapide.
+- Appuyez sur **Échap**.
+- Sélectionnez le bouton de chargement à côté de la miniature, sur la ligne **Masque rapide**.
+
+Le masque devient la sélection actuelle. **Désélectionner les pixels**
+(**Ctrl+D**) quitte aussi le Masque rapide, et supprime la sélection.

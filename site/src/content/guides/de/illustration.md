@@ -1,26 +1,62 @@
 ---
 title: "Illustrations-Tutorial"
-description: "Paint eine kleine abstrakte Studie, von der Bleistiftskizze bis zur fertigen Schattierung."
-purpose: "Dieses Tutorial führt Sie von Anfang bis Ende durch ein kleines Gemälde. Es werden einfache abstrakte Formen verwendet, sodass Sie sich auf die Aufteilung der Arbeit in Phasen und Ebenen konzentrieren können. Da jede Stufe ihre eigenen Ebenen hinzufügt, können Sie zurückgehen und einen Teil ändern, ohne den Rest wiederholen zu müssen."
-techniques: ["Sketch und probieren Sie Farben aus.", "Zeichnen Sie klare Strichzeichnungen über der Skizze.", "Geben Sie jeder Form eine eigene maskierte Farbebene.", "Schattieren Sie jede Form und exportieren Sie das Ergebnis."]
-figure: "Das fertige Beispiel mit separaten Tinten-, maskierten Farb- und Schattierungsebenen."
-related: ["quickstart", "workspace", "tools/files"]
 navTitle: "Einführung"
-image: {"light": "/assets/guides/illustration-light.webp", "dark": "/assets/guides/illustration-dark.webp", "alt": "Das fertige Beispiel mit separaten Tinten-, maskierten Farb- und Schattierungsebenen."}
+description: "Das Illustrations-Tutorial: eine abstrakte Studie, in vier Phasen im Arbeitsbereich Malen gemalt, von der Farbskizze bis zum PNG-Export."
+related: ["start/workspaces", "layers/panel", "layers/masks", "files/open-save"]
 ---
 
-## Einrichten
+Sie malen eine abstrakte Studie in vier Phasen im Arbeitsbereich
+[Malen](/de/docs/start/workspaces/). Jede Phase fügt Ebenen hinzu, und keine
+Ebene wird vereint.
 
-Wenn Sie Ihren Stift noch nicht überprüft haben, beginnen Sie mit dem [Quickstart](/de/docs/quickstart/). Wählen Sie dann **Paint**, damit alle Pinsel, Farben und Ebenen auf dem Bildschirm angezeigt werden. Erstellen Sie eine neue Zeichnung über **1200 × 1200**-Pixel, um dem Beispiel zu folgen, oder verwenden Sie bei Bedarf Ihr eigenes Motiv.
+![Der Arbeitsbereich Malen mit der fertigen abstrakten Studie auf der Leinwand und ihren Ebenen im Bedienfeld Ebenen.](shot:illustration/overview)
 
-Das Beispiel besteht aus drei überlappenden Formen: einem gebogenen Band, einer Scheibe und einem geneigten Block, mit ein paar losen Kritzeleien darum herum. Es verwendet Blaugrün, Salbei, Ocker und Terrakotta mit dunkelblauen Linien und cremefarbenen Akzenten. Jede Form erhält eigene benannte Ebenen, sodass Sie leicht erkennen können, was wo hingehört.
+## Die Studie
 
-## Die vier Etappen
+Die Studie ist eine Zeichnung im Format 1200 × 1200 mit drei sich
+überlappenden Formen: einem geschwungenen Band, einer Scheibe und einem
+gekippten Block. Lockere Kritzeleien und Schraffuren liegen auf und um die
+Formen.
 
-Das Tutorial besteht aus vier Phasen, alle in derselben Zeichnung: [Skizzieren](/de/docs/illustration/draft/), Strichzeichnungen, Maskierung und Rendern. In jeder Phase werden neue Ebenen über den vorherigen hinzugefügt, anstatt diese zu ersetzen. Es empfiehlt sich, die Skizze und die Farbstudie auch nach dem Ausblenden aufzubewahren, für den Fall, dass Sie sie sich später noch einmal ansehen möchten.
+## Die Phasen
 
-## Verwenden Sie die Beispieldateien
+1. [Skizzieren](/de/docs/illustration/draft/): eine Farbskizze und eine Bleistiftskizze.
+2. [Lineart](/de/docs/illustration/ink/): Tuschelinien über der abgeschwächten Skizze.
+3. [Grundfarben](/de/docs/illustration/mask/): eine maskierte Farbebene für jede Form.
+4. [Rendering](/de/docs/illustration/render/): Schattierung auf beschnittenen Ebenen und ein PNG-Export.
 
-Um bei einem bestimmten Schritt zu beginnen, öffnen Sie mit **File → Open…** die gespeicherte <a href="/assets/examples/01-sketch.capy" download>Skizze</a>, die <a href="/assets/examples/02-line-art.capy" download>Reinzeichnung</a>, die <a href="/assets/examples/03-base-colors.capy" download>Grundfarben</a> oder das <a href="/assets/examples/04-finished.capy" download>fertige Bild</a>. Zum Üben der Fotobearbeitung gibt es außerdem ein [PNG des fertigen Bildes](/assets/examples/abstract-study.png).
+## Die fertigen Ebenen
 
-Die Beispieldateien enthalten dieselben Ebenen und Masken, die Sie in den Screenshots sehen. Speichern Sie Ihre eigene Kopie, bevor Sie eine ändern, damit das Original verfügbar bleibt.
+Die fertige Zeichnung hat diese Ebenen, von oben nach unten:
+
+| Ebene | Inhalt |
+| --- | --- |
+| *Line art* | Tuschelinien |
+| *Ribbon texture* | Cremefarbene Schraffur und Glanzlichter, auf *Ribbon* beschnitten |
+| *Ribbon shading* | Schatten und salbeigrüne Akzente, auf *Ribbon* beschnitten |
+| *Ribbon* | Blaugrün, auf das Band maskiert |
+| *Disc shading* | Schattierung und ein Glanzlicht, auf *Disc* beschnitten |
+| *Disc* | Ocker, auf die Scheibe maskiert |
+| *Block shading* | Schattierung und Schraffur, auf *Block* beschnitten |
+| *Block* | Terrakotta, auf den Block maskiert |
+| *Sketch* | Bleistiftlinien mit 22% Deckkraft, ausgeblendet |
+| *Color rough* | Flächige Farben mit 50% Deckkraft, ausgeblendet |
+| **Papier** | Weiß |
+
+## Beispieldateien
+
+Sie können am Ende jeder Phase einsteigen. Laden Sie die Datei der Phase
+herunter, wählen Sie **Datei > Öffnen…** oder drücken Sie **Strg+O**, und wählen
+Sie die Datei aus. Die Zeichnung öffnet sich in einer eigenen Registerkarte.
+
+| Phase | Datei |
+| --- | --- |
+| 1. Skizzieren | <a href="/assets/examples/01-sketch.capy" download>01-sketch.capy</a> |
+| 2. Lineart | <a href="/assets/examples/02-line-art.capy" download>02-line-art.capy</a> |
+| 3. Grundfarben | <a href="/assets/examples/03-base-colors.capy" download>03-base-colors.capy</a> |
+| 4. Rendering | <a href="/assets/examples/04-finished.capy" download>04-finished.capy</a> |
+
+Der PNG-Export der fertigen Studie ist
+<a href="/assets/examples/abstract-study.png" download>abstract-study.png</a>.
+
+Erste Phase: [Skizzieren](/de/docs/illustration/draft/).

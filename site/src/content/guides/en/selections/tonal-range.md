@@ -1,25 +1,80 @@
 ---
 title: "Select by brightness"
-description: "Select the shadows, midtones or highlights of an image with the Tonal range tool."
-purpose: "Photographers often want to adjust only the dark or bright parts of a picture, such as lifting the shadows or calming a bright sky. The Tonal range tool selects areas by how light or dark they are, with a soft edge so that adjustments blend in naturally."
-techniques: ["Choose a range of tones with a preset.", "Pick a custom range from the image.", "Soften the selection and use it for an adjustment."]
-figure: "1: Tonal presets, from shadows to highlights. 2: Softness and feather. 3: The selected midtones on the canvas."
-related: ["tools/selections", "filters/overview", "filters/image-editing"]
-image: {"light": "/assets/guides/selections-tonal-range-light.webp", "dark": "/assets/guides/selections-tonal-range-dark.webp", "alt": "1: Tonal presets, from shadows to highlights. 2: Softness and feather. 3: The selected midtones on the canvas."}
+description: "The Tonal range tool for selecting pixels by brightness."
+related: ["selections/tools", "selections/quick-mask", "color-management/hdr", "customize/toolbars"]
 ---
 
-## Choose a range of tones
+You can select pixels by brightness with the **Tonal range** tool. Brightness
+is measured in stops relative to reference white (0). The tool reads the
+visible image, all layers together, and makes a soft-edged selection.
 
-Choose **Tonal range** from the selection tools. The Tool panel shows a row of presets, running from **Shadows** through **Midtones** to **Highlights**. Select one, and the matching parts of the image are selected straight away.
+## Choosing Tonal range
 
-To pick your own range, choose **Custom**, then click or drag on the part of the image you want to match. You can then adjust the two ends of the range until the selection covers just the tones you want.
+Do one of the following:
 
-## Soften the edges
+- Type "Tonal range" in [command search](/docs/start/command-search/).
+- In Sketch, select **Select** in the title bar, select it again to open the drawer, and select **Tonal range**.
+- Press a key you assigned to **Tonal range** in [Keyboard shortcuts](/docs/input/keyboard/).
+- Select **Tonal range** on a toolbar where you added it with **Insert Tools…** (see [Toolbars and title bar](/docs/customize/toolbars/)).
 
-**Softness** decides how gradually the selection fades out between the tones you chose and the tones around them. A high softness gives smooth, natural transitions, which is usually best for photos. **Feather** softens the outer edges of the selected areas even more. Like the other selection tools, you can add to or subtract from a tonal selection with the buttons at the top of the Tool panel.
+**Tonal range** has no default key and no button on the Paint or Photo
+toolbars. While it is the tool, the Tool Set panel lists every selection tool.
 
-## Use the selection
+![The Tonal range settings in the Sketch Select drawer, with Mode, Tones, Softness and Feather.](shot:selections/tonal-range-settings)
 
-With the selection active, add an adjustment from [Filters and adjustments](/docs/filters/overview/), such as **Curves** or **Exposure**. The adjustment only affects the selected tones. For example, select the shadows and brighten them to reveal detail, or select the highlights and lower them to bring back a washed-out sky.
+## Tones
 
-To keep the selection for later, save it as a selection layer, as described in [Quick Mask and selection layers](/docs/selections/quick-mask/).
+Select a button in the **Tones · stops relative to reference white** row to
+select that band of brightness. The band combines with the current selection
+according to **Mode** (see [Selection tools](/docs/selections/tools/)).
+
+Each button's tooltip names its band:
+
+- **Shadows · below −5 stops**
+- **Mid-shadows · −5 to −3.5 stops**
+- **Midtones · −3.5 to −1.5 stops**
+- **Mid-highlights · −1.5 to −0.5 stops**
+- **Highlights · above −0.5 stops**
+- **Bright HDR · above +1 stop**, in [HDR drawings](/docs/color-management/hdr/) only
+- **Custom · set or sample a range in stops**
+
+While a tone button is selected, the selection follows changes to
+**Softness**, **Feather**, **From** and **To**. Choosing another tool or
+**Mode** deselects the tone button.
+
+## Custom range
+
+You can set the band yourself, or sample it from the canvas.
+
+Do one of the following:
+
+- Select **Custom · set or sample a range in stops** and set **From** and **To**, in stops. The defaults are −3.5 and −1.5.
+- Drag across an area of the canvas to use the range of brightness in that area.
+- Click the canvas to center a band on the brightness there. The band keeps the current Custom width, or is 1 stop wide when another tone was selected.
+
+Sampling on the canvas switches the tone to Custom. In the web editor,
+**From** and **To** share one range control.
+
+![The Tonal range settings with Custom selected and the range in stops.](shot:selections/tonal-range-custom)
+
+## Softness
+
+Widens the soft falloff at both ends of the band, from 0 to 200%. The default
+is 100%.
+
+## Feather
+
+Softens the edge of the selection by up to 100 px.
+
+## Mode and held keys
+
+**Tonal range** has the same **Mode** buttons as the other selection tools,
+and no **Anti-aliasing**. Hold **Shift**, **Alt** or **Shift+Alt** as you click
+or drag to add, subtract or intersect.
+
+## Quick Mask and selection layers
+
+**Tonal range** works in [Quick Mask](/docs/selections/quick-mask/) and while
+you edit a [selection layer](/docs/selections/selection-layers/), and changes
+that mask. Its canvas bar is the [selection bar](/docs/selections/working/), at
+the bottom edge of the canvas.

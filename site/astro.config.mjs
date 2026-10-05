@@ -3,6 +3,8 @@ import { copyFile } from 'node:fs/promises';
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { languages } from './src/data/content.mjs';
+import { satteri } from '@astrojs/markdown-satteri';
+import { shotFigures } from './src/lib/shots.mjs';
 
 export default defineConfig({
   site: 'https://capycanvas.art',
@@ -15,6 +17,7 @@ export default defineConfig({
     routing: { prefixDefaultLocale: false },
   },
   build: { format: 'directory' },
+  markdown: { processor: satteri({ hastPlugins: [shotFigures()] }) },
   vite: {
     define: {
       'import.meta.env.FAVICON_VERSION': JSON.stringify(createHash('sha256').update(readFileSync(new URL('./public/assets/favicon.png', import.meta.url))).digest('hex').slice(0, 12)),

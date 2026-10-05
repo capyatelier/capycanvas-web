@@ -1,27 +1,124 @@
 ---
-title: "Masker dan kliping"
-description: "Sembunyikan bagian lapisan tanpa menghapusnya, dan pertahankan bayangan di dalam bentuk."
-purpose: "Masker menyembunyikan sebagian lapisan tanpa menghapus cat apa pun, sehingga Anda selalu dapat berubah pikiran tentang di mana seharusnya tepinya berada. Kliping menjaga satu lapisan tetap berada di dalam bentuk lapisan di bawahnya, yang merupakan cara termudah untuk menambahkan bayangan yang tidak pernah keluar dari garis."
-techniques: ["Buatlah topeng dari pilihan.", "Paint pada topeng untuk menampilkan atau menyembunyikan cat.", "Klip bayangan ke lapisan di bawahnya."]
-figure: "1: Thumbnail topeng pita. 2: Bayangan terpotong di atas Pita. 3: Klip ke lapisan di bawah dan kontrol kunci Alpha."
-related: ["tools/selections", "illustration/mask", "illustration/render"]
-image: {"light": "/assets/guides/layers-masks-light.webp", "dark": "/assets/guides/layers-masks-dark.webp", "alt": "1: Thumbnail topeng pita. 2: Bayangan terpotong di atas Pita. 3: Klip ke lapisan di bawah dan kontrol kunci Alpha."}
+title: "Mask"
+description: "Menyembunyikan bagian lapisan dengan mask, dan setiap perintah yang mengubah mask."
+related: ["layers/panel", "selections/working", "filters/how-filters-apply", "layers/merging"]
 ---
 
-## Buatlah topeng dari pilihan
+Anda dapat menyembunyikan bagian lapisan dengan mask. Area yang dilukis di mask
+menampilkan lapisan, dan area kosong menyembunyikannya. Lapisan lukis, lapisan foto,
+grup, lapisan isian, dan filter dapat memiliki mask.
 
-Pertama [pilih](/id/docs/tools/selections/) area yang ingin Anda tetap terlihat. Kemudian buka menu layer dan pilih **Mask → Mask: reveal selection**. Segala sesuatu di luar pilihan disembunyikan, tetapi tidak ada satupun yang terhapus. Anda juga dapat memilih **Mask: hide selection** untuk menyembunyikan area yang dipilih. Ingatlah untuk membatalkan pilihan setelahnya, sehingga pukulan Anda berikutnya tidak terbatas pada pilihan.
+## Menambahkan mask
 
-Masker hanya dapat menampilkan cat yang sebenarnya ada pada lapisan tersebut. Jika Anda ingin melebarkan bentuknya nanti, isi seluruh lapisan dengan warna sebelum menutupinya, seperti yang dilakukan pada [tahap masking](/id/docs/illustration/mask/) dalam tutorial.
+Lakukan salah satu langkah berikut:
 
-## Paint pada topeng
+- Pilih **Lapisan > Mask > Tambah mask**.
+- Pilih **Tambah mask** di bagian bawah panel Lapisan.
 
-Klik thumbnail topeng di sebelah layer untuk mengedit topengnya, bukan catnya. Sekarang kuas apa pun memperlihatkan lebih banyak lapisan di mana pun Anda melukis, dan **Eraser** menyembunyikannya lagi. Warna yang Anda gunakan untuk melukis tidak menjadi masalah pada topeng. Setelah selesai, klik thumbnail cat untuk kembali melukis secara normal.
+![Baris Ribbon, dengan garis tepi di sekeliling gambar mini mask-nya.](shot:layers/masks-row)
 
-Menu topeng dapat mematikan topeng sejenak, membalikkannya, atau menghapusnya. Mematikannya adalah cara praktis untuk membandingkan hasilnya dengan cat di bawahnya.
+Gambar mini mask muncul di sebelah kanan gambar mini lapisan, dengan garis tepi
+yang menandainya sebagai sasaran kuas. Mask baru menampilkan seluruh lapisan. Jika
+ada seleksi aktif, mask hanya menampilkan area yang terseleksi, dan seleksi itu
+dibatalkan.
 
-## Klip bayangan ke suatu bentuk
+Jika lapisan sudah memiliki mask, **Tambah mask** memilih mask itu untuk dilukis.
+Mask tidak dapat ditambahkan ke lapisan seleksi atau lapisan terkunci.
 
-Tambahkan layer baru tepat di atas lapisan dasar, buka menunya, dan pilih **Layer Settings → Clip to layer below**. Apa pun yang Anda lukis pada lapisan yang terpotong sekarang hanya menunjukkan di mana lapisan dasar memiliki cat, sehingga Anda dapat membuat bayangan dengan bebas tanpa melewati tepinya. Anda dapat menumpuk beberapa layer yang terpotong di atas dasar yang sama, satu untuk bayangan dan satu lagi untuk sorotan.
+## Melukis di mask
 
-**Alpha lock** merupakan alternatif yang lebih sederhana ketika Anda ingin mewarnai ulang guratan yang sudah ada, seperti seni garis. Itu membuat cat baru tetap berada di dalam goresan yang ada pada lapisan yang sama. [Tahap rendering](/id/docs/illustration/render/) dari tutorial menggunakan keduanya.
+Pilih gambar mini mask untuk melukis di mask. Untuk kembali melukis di lapisan,
+pilih gambar mini lapisan atau tekan **Escape**.
+
+> **Catatan:** Di mask, kuas mengabaikan warna cat. Kuas menampilkan lapisan, dan **Penghapus** menyembunyikannya.
+
+Pada mask yang dibalik, peran kuas dan **Penghapus** bertukar. Goresan di mask
+bersifat kering, tanpa pencampuran, rembesan, atau tekstur.
+
+## Bilah pengeditan mask
+
+Selama Anda melukis di mask, bilah bertuliskan "Mengedit mask *lapisan*" muncul di
+bagian bawah kanvas.
+
+![Bilah pengeditan mask dengan Balikkan, Nonaktifkan, Terapkan Mask, Lainnya, dan Edit Isi.](shot:layers/masks-bar)
+
+- **Balikkan**
+- **Nonaktifkan** mematikan mask, lalu tombolnya bertuliskan **Aktifkan**.
+- **Terapkan Mask** menghapus piksel yang disembunyikan mask, lalu membuang mask.
+- **Lainnya** memuat menu **Lapisan** dan **Tampilkan bilah tindakan kanvas**. Nonaktifkan **Tampilkan bilah tindakan kanvas** untuk menyembunyikan bilah ini.
+- **Edit Isi** kembali ke melukis di lapisan.
+
+## Mask dari seleksi
+
+Anda dapat membuat mask dari seleksi saat ini.
+
+Lakukan salah satu langkah berikut:
+
+- Pilih **Lapisan > Mask > Mask: tampilkan seleksi** atau **Mask: sembunyikan seleksi**. Pada lapisan yang sudah memiliki mask, item ini bertuliskan **Ganti mask: tampilkan seleksi** dan **Ganti mask: sembunyikan seleksi**.
+- Pilih **Mask** di [bilah seleksi](/id/docs/selections/working/) pada kanvas. Mask baru menampilkan area yang terseleksi dan menggantikan mask yang sudah dimiliki lapisan.
+
+Filter atau lapisan isian yang ditambahkan selama ada seleksi aktif mendapat mask
+dari seleksi itu. **Tempel ke Dalam** membuat lapisan baru yang di-mask sesuai
+seleksi (lihat [Salin dan tempel](/id/docs/transform/clipboard/)).
+
+## Seleksi dari mask
+
+Anda dapat memuat mask sebagai seleksi.
+
+Lakukan salah satu langkah berikut:
+
+- Pilih **Seleksi > Dari Mask Lapisan**, lalu **Muat Mask sebagai Seleksi**, **Tambah Mask ke Seleksi**, **Kurangi Mask dari Seleksi**, atau **Irisan dengan Mask**.
+- Pilih item yang sama dari **Seleksi Piksel** di menu mask.
+- **Ctrl**+klik gambar mini mask. Tambahkan **Shift** untuk menambah ke seleksi, **Alt** untuk mengurangi dari seleksi, atau **Shift+Alt** untuk mengambil irisannya.
+
+## Menu mask
+
+Lakukan salah satu langkah berikut:
+
+- Pilih **Lapisan > Mask** (item pertama bertuliskan **Edit mask**).
+- Klik kanan atau tahan gambar mini mask.
+- Selama Anda melukis di mask, buka menu **Lapisan** atau pilih **Tindakan lapisan** di bagian bawah panel Lapisan.
+
+Pada lapisan tanpa mask, **Lapisan > Mask** hanya memuat **Tambah mask**,
+**Mask: tampilkan seleksi**, **Mask: sembunyikan seleksi**, dan **Tempel mask**.
+
+![Menu mask Ribbon.](shot:layers/masks-menu)
+
+| Item | Fungsi |
+| --- | --- |
+| **Edit isi lapisan** | Kembali ke melukis di lapisan. |
+| **Tampilkan area mask** | Menampilkan mask di kanvas dan memilihnya untuk dilukis. |
+| **Aktifkan mask** | Mengaktifkan atau menonaktifkan mask tanpa mengubahnya. Mask yang nonaktif memiliki gambar mini yang pudar. |
+| **Tautkan mask ke lapisan** | Jika aktif, mask berpindah bersama lapisan. Jika nonaktif, **Pindahkan lapisan / mask** memindahkan lapisan atau mask, tergantung mana yang sedang Anda lukis. Tombol tautan di antara gambar mini melakukan hal yang sama. |
+| **Ganti mask: tampilkan seleksi**, **Ganti mask: sembunyikan seleksi** | Mengganti mask dengan seleksi. |
+| **Salin mask** | Menyalin mask, untuk **Ganti dengan mask yang disalin** di lapisan lain, atau **Tempel mask** di lapisan tanpa mask. |
+| **Balikkan mask** | Menukar area yang ditampilkan dan yang disembunyikan. |
+| **Tampilkan semua**, **Sembunyikan semua** | Membuat mask menampilkan atau menyembunyikan seluruh lapisan, dan menonaktifkan pembalikan. |
+| **Terapkan mask ke lapisan** | Menghapus piksel yang disembunyikan mask, lalu membuang mask. |
+| **Hapus mask** | Membuang mask. Piksel lapisan tidak berubah. |
+| **Seleksi Piksel** | Memuat mask sebagai seleksi. |
+
+Setiap item kecuali **Edit isi lapisan**, **Tampilkan area mask**, dan **Salin mask**
+memerlukan lapisan yang tidak terkunci.
+
+## Menerapkan mask
+
+Lakukan salah satu langkah berikut:
+
+- Pilih **Lapisan > Mask > Terapkan mask ke lapisan**.
+- Pilih **Terapkan Mask** di bilah pengeditan mask.
+
+**Terapkan mask ke lapisan** hanya berfungsi pada lapisan lukis, dan mask harus
+aktif. Pada lapisan yang didistorsi atau dilengkungkan, pilih **Terapkan
+Transformasi ke Piksel** terlebih dahulu. Untuk menerapkan mask grup, gunakan
+**Gabungkan Grup** (lihat [Menggabungkan lapisan](/id/docs/layers/merging/)).
+
+Pada lapisan foto, **Kembalikan ke Foto Asli** memulihkan bagian yang dihapus oleh
+mask yang sudah diterapkan.
+
+## Mask pada lapisan filter dan lapisan isian
+
+Mask filter menentukan tempat filter diterapkan. Saat lapisan filter atau lapisan
+isian terpilih, kuas selalu melukis di mask-nya. **Isi**, **Gradasi**, dan alat lain
+yang menggambar karya tidak berfungsi di mask filter. Melukis di lapisan isian
+memerlukan mask.

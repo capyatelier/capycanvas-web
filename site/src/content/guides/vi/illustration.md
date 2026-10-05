@@ -1,26 +1,60 @@
 ---
-title: "Hướng dẫn minh họa"
-description: "Paint là một nghiên cứu trừu tượng nhỏ, từ phác thảo bằng bút chì đến tô bóng hoàn thiện."
-purpose: "Hướng dẫn này đi qua một bức tranh nhỏ từ đầu đến cuối. Nó sử dụng các hình dạng trừu tượng đơn giản, vì vậy bạn có thể tập trung vào cách chia tác phẩm thành các giai đoạn và lớp. Vì mỗi giai đoạn sẽ thêm các lớp riêng nên bạn có thể quay lại và thay đổi một phần mà không cần làm lại phần còn lại."
-techniques: ["Sketch và thử màu sắc.", "Vẽ đường nét rõ ràng phía trên bản phác thảo.", "Cung cấp cho mỗi hình dạng lớp màu mặt nạ riêng của nó.", "Tô bóng bên trong mỗi hình và xuất kết quả."]
-figure: "Ví dụ đã hoàn thành, với các lớp mực, màu mặt nạ và bóng đổ riêng biệt."
-related: ["quickstart", "workspace", "tools/files"]
+title: "Hướng dẫn vẽ minh họa"
 navTitle: "Giới thiệu"
-image: {"light": "/assets/guides/illustration-light.webp", "dark": "/assets/guides/illustration-dark.webp", "alt": "Ví dụ đã hoàn thành, với các lớp mực, màu mặt nạ và bóng đổ riêng biệt."}
+description: "Hướng dẫn vẽ minh họa: một bức tranh trừu tượng vẽ qua bốn giai đoạn trong không gian làm việc Vẽ, từ bản phác màu đến tệp PNG xuất ra."
+related: ["start/workspaces", "layers/panel", "layers/masks", "files/open-save"]
 ---
 
-## Thiết lập
+Bạn vẽ một bức tranh trừu tượng qua bốn giai đoạn trong không gian làm việc
+[Vẽ](/vi/docs/start/workspaces/). Mỗi giai đoạn thêm lớp mới, và không lớp nào bị
+gộp.
 
-Nếu bạn chưa kiểm tra bút của mình, hãy bắt đầu với [Quickstart](/vi/docs/quickstart/). Sau đó chọn **Paint** để bút vẽ, màu sắc và lớp của bạn đều hiển thị trên màn hình. Tạo một bản vẽ mới về các pixel **1200 × 1200** để làm theo ví dụ hoặc sử dụng chủ đề của riêng bạn nếu bạn thích.
+![Không gian làm việc Vẽ với bức tranh trừu tượng hoàn chỉnh trên khung vẽ và các lớp của tranh trong bảng Lớp.](shot:illustration/overview)
 
-Ví dụ này được tạo thành từ ba hình dạng chồng lên nhau: một dải ruy băng cong, một cái đĩa và một khối nghiêng, với một vài nét vẽ nguệch ngoạc xung quanh chúng. Nó sử dụng màu xanh mòng két, cây xô thơm, màu đất son và đất nung, với những đường nét màu xanh đậm và những điểm nhấn màu kem. Mỗi hình dạng có các lớp được đặt tên riêng, giúp bạn dễ dàng biết được những gì thuộc về nơi nào.
+## Bức tranh
 
-## Bốn giai đoạn
+Bức tranh là một bản vẽ 1200 × 1200 gồm ba hình chồng lên nhau: một dải ruy băng
+uốn cong, một hình tròn và một khối nghiêng. Các nét nguệch ngoạc và nét gạch nằm
+trên và quanh các hình.
 
-Hướng dẫn này có bốn giai đoạn, tất cả đều trong cùng một bản vẽ: [Sketching](/vi/docs/illustration/draft/), Line art, Masking và Rendering. Mỗi giai đoạn sẽ thêm các lớp mới lên trên các lớp trước thay vì thay thế chúng. Bạn nên giữ lại bản phác thảo và nghiên cứu màu sắc ngay cả sau khi bạn giấu chúng đi, phòng trường hợp bạn muốn xem lại chúng sau này.
+## Các giai đoạn
 
-## Sử dụng các tập tin ví dụ
+1. [Phác thảo](/vi/docs/illustration/draft/): bản phác màu và bản phác bút chì.
+2. [Lineart](/vi/docs/illustration/ink/): nét mực phía trên bản phác đã làm mờ.
+3. [Màu nền](/vi/docs/illustration/mask/): mỗi hình một lớp màu có mặt nạ.
+4. [Render](/vi/docs/illustration/render/): đổ bóng trên các lớp cắt, và xuất PNG.
 
-Để bắt đầu từ một giai đoạn cụ thể, hãy dùng **File → Open…** để mở <a href="/assets/examples/01-sketch.capy" download>bản phác thảo</a>, <a href="/assets/examples/02-line-art.capy" download>bản vẽ nét</a>, <a href="/assets/examples/03-base-colors.capy" download>màu nền</a> hoặc <a href="/assets/examples/04-finished.capy" download>bức vẽ hoàn chỉnh</a>. Bạn cũng có thể dùng [PNG của hình ảnh hoàn chỉnh](/assets/examples/abstract-study.png) để luyện chỉnh sửa ảnh.
+## Các lớp hoàn chỉnh
 
-Các tệp ví dụ chứa các lớp và mặt nạ giống như bạn thấy trong ảnh chụp màn hình. Lưu bản sao của riêng bạn trước khi bạn thay đổi bản sao để bản gốc vẫn có sẵn.
+Bản vẽ hoàn chỉnh có các lớp sau, từ trên xuống dưới:
+
+| Lớp | Nội dung |
+| --- | --- |
+| *Line art* | Nét mực |
+| *Ribbon texture* | Nét gạch màu kem và vùng sáng, cắt theo *Ribbon* |
+| *Ribbon shading* | Vùng tối và điểm nhấn xanh sage, cắt theo *Ribbon* |
+| *Ribbon* | Xanh mòng két, có mặt nạ theo dải ruy băng |
+| *Disc shading* | Đổ bóng và một điểm sáng, cắt theo *Disc* |
+| *Disc* | Vàng đất, có mặt nạ theo hình tròn |
+| *Block shading* | Đổ bóng và nét gạch, cắt theo *Block* |
+| *Block* | Màu đất nung, có mặt nạ theo khối |
+| *Sketch* | Nét bút chì ở độ đục 22%, đang ẩn |
+| *Color rough* | Màu phẳng ở độ đục 50%, đang ẩn |
+| **Giấy** | Trắng |
+
+## Tệp mẫu
+
+Bạn có thể bắt đầu từ cuối bất kỳ giai đoạn nào. Tải tệp của giai đoạn đó, chọn
+**Tệp > Mở…** hoặc nhấn **Ctrl+O**, rồi chọn tệp. Bản vẽ mở trong một thẻ riêng.
+
+| Giai đoạn | Tệp |
+| --- | --- |
+| 1. Phác thảo | <a href="/assets/examples/01-sketch.capy" download>01-sketch.capy</a> |
+| 2. Lineart | <a href="/assets/examples/02-line-art.capy" download>02-line-art.capy</a> |
+| 3. Màu nền | <a href="/assets/examples/03-base-colors.capy" download>03-base-colors.capy</a> |
+| 4. Render | <a href="/assets/examples/04-finished.capy" download>04-finished.capy</a> |
+
+Tệp PNG xuất từ bức tranh hoàn chỉnh là
+<a href="/assets/examples/abstract-study.png" download>abstract-study.png</a>.
+
+Giai đoạn đầu tiên: [Phác thảo](/vi/docs/illustration/draft/).

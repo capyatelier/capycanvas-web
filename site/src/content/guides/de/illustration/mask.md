@@ -1,27 +1,65 @@
 ---
-title: "Maskierung"
-description: "Geben Sie dem Farbband, der Scheibe und dem Block eigene Farbebenen mit bearbeitbaren Kanten."
-purpose: "In dieser Phase erhält jede Form ihre eigene Farbschicht. Die Farbe füllt die gesamte Ebene aus und eine Maske entscheidet, welchen Teil davon Sie sehen. Da nichts gelöscht wird, können Sie den Rand jeder Form später anpassen, indem Sie einfach auf die Maske malen."
-techniques: ["Wählen Sie eine Form mit einem Lasso oder einer automatischen Auswahl aus.", "Verwandeln Sie die Auswahl in eine Maske und füllen Sie die Ebene mit Farbe.", "Paint auf der Maske, um die Kante anzupassen."]
-figure: "1: Miniaturansicht der ausgewählten Maske im Menüband. 2: Band, Scheibe und Block unter der Strichzeichnung. 3: Radiergummi, der Teile der Maske verdeckt."
-related: ["layers/masks", "tools/selections", "painting/color"]
-image: {"light": "/assets/guides/illustration-mask-light.webp", "dark": "/assets/guides/illustration-mask-dark.webp", "alt": "1: Miniaturansicht der ausgewählten Maske im Menüband. 2: Band, Scheibe und Block unter der Strichzeichnung. 3: Radiergummi, der Teile der Maske verdeckt."}
+title: "Grundfarben"
+description: "Phase 3 des Illustrations-Tutorials: eine Malebene für jede Form, auf die Form maskiert und mit ihrer Grundfarbe gefüllt."
+related: ["layers/masks", "selections/working", "layers/types", "layers/settings"]
 ---
 
-## 1. Wählen Sie eine Form aus
+In dieser Phase entsteht für jede Form eine Malebene, die mit ihrer Grundfarbe
+gefüllt und auf die Form maskiert ist. Die Grundfarben kommen auf Malebenen,
+weil eine Füllebene keine Beschneidungsbasis für die Schattierung in Phase 4
+sein kann.
 
-Verstecken Sie **Sketch** und **Color rough**. Wählen Sie **Lasso selection** und zeichnen Sie das Farbband sorgfältig nach, wie im Beispiel.
+## 1. Ebene Block hinzufügen
 
-Wenn Ihre Strichzeichnungen um eine Form geschlossen sind, kann **Auto select** dies mit einem Klick erledigen. Markieren Sie **Line art** als Referenzebene, indem Sie im Menü **Layer Settings → Use as reference** auswählen. Wählen Sie dann **Auto select**, wählen Sie im Werkzeugbedienfeld **Sample reference layers** und klicken Sie in die Form. [Auswahltools](/de/docs/tools/selections/) erläutert die Einstellungen, die steuern, wie weit die Auswahl reicht.
+Blenden Sie *Sketch* aus, wählen Sie die Zeile aus und fügen Sie mit
+**Neue Ebene** eine Ebene namens *Block* hinzu. Die neue Ebene erscheint direkt
+über *Sketch* und unter *Line art*.
 
-## 2. Erstellen Sie die maskierte Farbebene
+## 2. Ebene auf den Block maskieren
 
-Fügen Sie unter der Strichzeichnung eine neue Ebene mit dem Namen **Ribbon** hinzu. Öffnen Sie bei noch aktiver Auswahl das Menü der Multifunktionsleiste und wählen Sie **Mask → Mask: reveal selection**. Die Ebene verfügt jetzt über eine Maske, die nur die Form des Bandes anzeigt.
+Drücken Sie **M**, oder wählen Sie in der Werkzeugleiste Werkzeuge in der Gruppe
+**Auswahl** die **Lassoauswahl** aus, und ziehen Sie den Umriss des Blocks in
+*Line art* nach. Wählen Sie dann in der Auswahlleiste **Maske** aus
+([Mit Auswahlen arbeiten](/de/docs/selections/working/)).
 
-Klicken Sie auf die Miniaturansicht der Multifunktionsleiste und wählen Sie die Farbe der Multifunktionsleiste aus. Wählen Sie **Select → Select all pixels** und dann **Edit → Fill selection**, um die gesamte Ebene mit Farbe zu füllen, und schließen Sie mit **Select → Deselect pixels** ab. Es ist nur das Band zu sehen, aber die Farbe setzt sich unter der Maske fort, bereit für den Fall, dass Sie die Form erweitern möchten.
+![Die Auswahlleiste mit Maske neben einer Auswahl um den Block.](shot:illustration/mask-selection-bar)
 
-## 3. Passen Sie die Kante an
+Die Auswahl wird zur Maske von *Block* ([Masken](/de/docs/layers/masks/)). In
+der Zeile erscheint eine Maskenminiatur, und eine Leiste am unteren Rand der
+Leinwand zeigt „Maske von Block wird bearbeitet“.
 
-Klicken Sie auf die Miniaturansicht der Maske im Menüband, um die Maske zu bearbeiten. Jetzt zeigt jeder Pinsel mehr von der Farbe an der Stelle, an der Sie malen, und der **Eraser** verbirgt sie wieder. Klicken Sie erneut auf die Miniaturansicht der Farbe, wenn Sie die Farbe selbst ändern möchten.
+## 3. Ebene füllen
 
-Erstellen Sie **Disc** und **Block** auf die gleiche Weise. Halten Sie die Scheibe unter dem Band und den Block unter der Scheibe, mit Strichzeichnungen über allen dreien. Speichern Sie Ihre Zeichnung und fahren Sie dann mit [Rendering](/de/docs/illustration/render/).
+**Auswahl füllen** ist nicht verfügbar, während Sie eine Maske bearbeiten. So
+füllen Sie die Ebene:
+
+1. Wählen Sie in der Zeile *Block* die Ebenenminiatur aus oder wählen Sie in der Leiste am unteren Rand der Leinwand **Inhalt bearbeiten** aus.
+2. Wählen Sie im Bedienfeld **Farbe** Terrakotta.
+3. Wählen Sie **Auswahl > Alle Pixel auswählen** oder drücken Sie **Strg+A**.
+4. Wählen Sie **Bearbeiten > Auswahl füllen** oder drücken Sie **Umschalt+Rücktaste**.
+5. Wählen Sie **Auswahl > Pixelauswahl aufheben** oder drücken Sie **Strg+D**.
+
+Die Farbe bedeckt die ganze Ebene, und die Maske zeigt sie nur innerhalb des
+Blocks.
+
+## 4. Disc und Ribbon hinzufügen
+
+Legen Sie auf dieselbe Weise *Disc* in Ocker und danach *Ribbon* in Blaugrün an.
+
+![Das Bedienfeld Ebenen mit Ribbon, Disc und Block, jeweils mit Maskenminiatur, unter Line art.](shot:illustration/mask-layers)
+
+Die Ebenenliste zeigt *Line art*, *Ribbon*, *Disc*, *Block*, *Sketch*,
+*Color rough* und **Papier**.
+
+## 5. Kante anpassen
+
+Wählen Sie in der Zeile *Ribbon* die Maskenminiatur aus. Die Leiste am unteren
+Rand der Leinwand zeigt „Maske von Ribbon wird bearbeitet“.
+
+![Die Leiste am unteren Rand der Leinwand mit „Maske von Ribbon wird bearbeitet“, Umkehren, Deaktivieren, Maske anwenden und Inhalt bearbeiten.](shot:illustration/mask-bar)
+
+Malen Sie mit dem Pinsel **G-Feder** an einer Kante entlang, um mehr vom
+Blaugrün zu zeigen, oder schneiden Sie die Kante mit dem **Radierer** zurück.
+Auf einer Maske ignorieren Pinsel die Malfarbe.
+
+Nächste Phase: [Rendering](/de/docs/illustration/render/).

@@ -1,25 +1,81 @@
 ---
-title: "Parlaklığa göre seç"
-description: "Ton aralığı aracıyla bir görüntünün gölgelerini, orta tonlarını veya açıktonlarını seçin."
-purpose: "Fotoğrafçılar genellikle gölgeleri kaldırmak veya parlak gökyüzünü sakinleştirmek gibi bir resmin yalnızca karanlık veya parlak kısımlarını ayarlamak isterler. Ton aralığı aracı, ayarlamaların doğal bir şekilde uyum sağlaması için alanları ne kadar açık veya koyu olduğuna göre yumuşak bir kenarla seçer."
-techniques: ["Ön ayarlı bir ton aralığı seçin.", "Görüntüden özel bir aralık seçin.", "Seçimi yumuşatın ve ayarlama için kullanın."]
-figure: "1: Gölgelerden parlak noktalara kadar ton ön ayarları. 2: Yumuşaklık ve tüy. 3: Tuval üzerinde seçilen orta tonlar."
-related: ["tools/selections", "filters/overview", "filters/image-editing"]
-image: {"light": "/assets/guides/selections-tonal-range-light.webp", "dark": "/assets/guides/selections-tonal-range-dark.webp", "alt": "1: Gölgelerden parlak noktalara kadar ton ön ayarları. 2: Yumuşaklık ve tüy. 3: Tuval üzerinde seçilen orta tonlar."}
+title: "Parlaklığa göre seçme"
+description: "Pikselleri parlaklığa göre seçen Ton aralığı aracı."
+related: ["selections/tools", "selections/quick-mask", "color-management/hdr", "customize/toolbars"]
 ---
 
-## Bir ton aralığı seçin
+**Ton aralığı** aracıyla pikselleri parlaklığa göre seçebilirsiniz. Parlaklık,
+referans beyaza (0) göre poz cinsinden ölçülür. Araç, tüm katmanlarıyla birlikte
+görünür görüntüyü okur ve yumuşak kenarlı bir seçim oluşturur.
 
-Seçim araçlarından **Tonal range**'yu seçin. Araç paneli, **Shadows**'dan **Midtones**'ya ve **Highlights**'ya kadar uzanan bir dizi ön ayarı gösterir. Birini seçtiğinizde görüntünün eşleşen kısımları hemen seçilir.
+## Ton aralığını seçme
 
-Kendi aralığınızı seçmek için **Custom**'yu seçin, ardından görüntünün eşleştirmek istediğiniz kısmına tıklayın veya sürükleyin. Daha sonra seçim yalnızca istediğiniz tonları kapsayana kadar aralığın iki ucunu ayarlayabilirsiniz.
+Aşağıdakilerden birini yapın:
 
-## Kenarları yumuşatın
+- [Komut aramaya](/tr/docs/start/command-search/) “Ton aralığı” yazın.
+- Eskiz'de başlık çubuğundaki **Seç** düğmesini seçin, çekmeceyi açmak için düğmeyi yeniden seçin ve **Ton aralığı** aracını seçin.
+- [Klavye kısayolları](/tr/docs/input/keyboard/) bölümünde **Ton aralığı** aracına atadığınız tuşa basın.
+- **Araçları ekle…** ile eklediğiniz bir araç çubuğunda **Ton aralığı** düğmesini seçin (bkz. [Araç çubukları ve başlık çubuğu](/tr/docs/customize/toolbars/)).
 
-**Softness**, seçtiğiniz tonlar ve bunların etrafındaki tonlar arasındaki seçimin ne kadar yavaş yavaş kaybolacağına karar verir. Yüksek yumuşaklık, fotoğraflar için genellikle en iyi olan, yumuşak, doğal geçişler sağlar. **Feather** seçilen alanların dış kenarlarını daha da yumuşatır. Diğer seçim araçları gibi, Araç panelinin üst kısmındaki düğmeleri kullanarak bir ton seçimine ekleme veya çıkarma işlemi yapabilirsiniz.
+**Ton aralığı** aracının varsayılan tuşu yoktur ve Boya veya Fotoğraf araç
+çubuklarında düğmesi bulunmaz. Etkin araç bu olduğunda Araç seti paneli tüm
+seçim araçlarını listeler.
 
-## Seçimi kullan
+![Eskiz Seç çekmecesinde Mod, Tonlar, Yumuşaklık ve Kenar yumuşatma ile Ton aralığı ayarları.](shot:selections/tonal-range-settings)
 
-Seçim etkinken, [Filtreler ve ayarlamalar](/tr/docs/filters/overview/)'dan **Curves** veya **Exposure** gibi bir ayarlama ekleyin. Ayarlama yalnızca seçilen tonları etkiler. Örneğin, ayrıntıları ortaya çıkarmak için gölgeleri seçip aydınlatın veya soluk gökyüzünü geri getirmek için parlak noktaları seçip azaltın.
+## Tonlar
 
-Seçimi daha sonra kullanmak üzere saklamak için, [Hızlı Maske ve seçim katmanları](/tr/docs/selections/quick-mask/) bölümünde açıklandığı gibi bir seçim katmanı olarak kaydedin.
+O parlaklık bandını seçmek için **Tonlar · referans beyaza göre poz cinsinden**
+satırında bir düğme seçin. Band, **Mod** ayarına göre geçerli seçimle birleşir
+(bkz. [Seçim araçları](/tr/docs/selections/tools/)).
+
+Her düğmenin araç ipucu bandını belirtir:
+
+- **Gölgeler · −5 pozun altında**
+- **Orta gölgeler · −5 ile −3,5 poz arası**
+- **Orta tonlar · −3,5 ile −1,5 poz arası**
+- **Orta açık tonlar · −1,5 ile −0,5 poz arası**
+- **Açık tonlar · −0,5 pozun üstünde**
+- **Parlak HDR · +1 pozun üstünde**, yalnızca [HDR çizimlerde](/tr/docs/color-management/hdr/)
+- **Özel · poz cinsinden bir aralık ayarlayın veya örnekleyin**
+
+Bir ton düğmesi seçiliyken seçim **Yumuşaklık**, **Kenar yumuşatma**,
+**Başlangıç** ve **Bitiş** değişikliklerini izler. Başka bir araç veya **Mod**
+seçmek ton düğmesinin seçimini kaldırır.
+
+## Özel aralık
+
+Bandı kendiniz ayarlayabilir veya tuvalden örnekleyebilirsiniz.
+
+Aşağıdakilerden birini yapın:
+
+- **Özel · poz cinsinden bir aralık ayarlayın veya örnekleyin** düğmesini seçin ve **Başlangıç** ile **Bitiş** değerlerini poz cinsinden ayarlayın. Varsayılanlar −3,5 ve −1,5'tir.
+- O alandaki parlaklık aralığını kullanmak için tuvalde bir alan boyunca sürükleyin.
+- Bandı o noktadaki parlaklığa ortalamak için tuvale tıklayın. Band geçerli Özel genişliğini korur, başka bir ton seçiliyse 1 poz genişliğinde olur.
+
+Tuvalde örnekleme yapmak tonu Özel olarak değiştirir. Web düzenleyicisinde
+**Başlangıç** ve **Bitiş** tek bir aralık denetimini paylaşır.
+
+![Özel seçili ve aralık poz cinsinden gösterilirken Ton aralığı ayarları.](shot:selections/tonal-range-custom)
+
+## Yumuşaklık
+
+Bandın iki ucundaki yumuşak geçişi %0 ile %200 arasında genişletir. Varsayılan
+%100'dür.
+
+## Kenar yumuşatma
+
+Seçimin kenarını en fazla 100 px yumuşatır.
+
+## Mod ve basılı tutulan tuşlar
+
+**Ton aralığı** aracında diğer seçim araçlarıyla aynı **Mod** düğmeleri bulunur,
+**Kenar düzleştirme** yoktur. Eklemek, çıkarmak veya kesiştirmek için tıklarken
+ya da sürüklerken **Shift**, **Alt** veya **Shift+Alt** tuşunu basılı tutun.
+
+## Hızlı maske ve seçim katmanları
+
+**Ton aralığı** [Hızlı maskede](/tr/docs/selections/quick-mask/) ve bir
+[seçim katmanını](/tr/docs/selections/selection-layers/) düzenlerken de çalışır
+ve o maskeyi değiştirir. Aracın tuval çubuğu, tuvalin alt kenarındaki
+[seçim çubuğudur](/tr/docs/selections/working/).

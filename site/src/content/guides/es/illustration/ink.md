@@ -1,27 +1,47 @@
 ---
-title: "Arte lineal"
-description: "Dibuja líneas de tinta limpias en una nueva capa sobre el boceto descolorido."
-purpose: "El arte lineal es la versión limpia y final de tus contornos. Dibujarlo en su propia capa significa que puedes borrar o volver a colorear la tinta sin tocar el boceto y luego pintar colores debajo."
-techniques: ["Desvanece el boceto y agrega una capa de arte lineal.", "Entinta con un bolígrafo y gira la vista para obtener curvas complicadas.", "Cierra los contornos de cada forma."]
-figure: "1: Arte lineal sobre el Sketch descolorido. 2: Controles de vista del navegador. 3: Pinceles de lápiz en el conjunto de herramientas."
-related: ["layers/basics", "advanced/input", "workspace"]
-image: {"light": "/assets/guides/illustration-ink-light.webp", "dark": "/assets/guides/illustration-ink-dark.webp", "alt": "1: Arte lineal sobre el Sketch descolorido. 2: Controles de vista del navegador. 3: Pinceles de lápiz en el conjunto de herramientas."}
+title: "Entintado"
+description: "Etapa 2 del tutorial de ilustración: líneas de tinta dibujadas con Plumilla G en una capa encima del boceto atenuado."
+related: ["layers/panel", "drawing/brush-tools", "start/canvas", "input/pen"]
 ---
+
+En esta etapa se crean las líneas de tinta en una capa encima del boceto
+atenuado.
 
 ## 1. Prepara las capas
 
-Seleccione **Sketch** y reduzca su opacidad hasta que las líneas sean tenues pero aún fáciles de seguir. Oculte **Color rough** por ahora. Luego agregue una nueva capa encima de Sketch, asígnele el nombre **Line art** y asegúrese de que sea la capa seleccionada antes de comenzar a entintar.
+En el [panel de capas](/es/docs/layers/panel/):
 
-Elija la herramienta **Pen** y un bolígrafo como **G-Pen**. Dibuja algunas líneas de prueba con tu presión habitual y ajusta el tamaño hasta que el grosor de la línea se sienta bien.
+1. Selecciona **Ocultar capa** (el ojo) en la fila *Color rough*.
+2. Selecciona *Sketch* y pon **Opacidad de capa** en 22 en la cabecera del panel.
+3. Selecciona **Capa nueva** en la parte inferior del panel y cambia el nombre de la capa nueva a *Line art*.
 
-## 2. Entintar el dibujo
+![El panel Capas con Line art encima de Sketch al 22%, y Color rough oculta.](shot:illustration/ink-layers)
 
-Traza los contornos de las tres formas, luego agrega los garabatos sueltos y las líneas cortas de sombreado. Cuando resulte difícil dibujar una curva, gire la vista con los botones del **Navigator** o con dos dedos en una pantalla táctil. Al girar la vista no se gira el dibujo, por lo que puedes girarlo tantas veces como quieras.
+La lista de capas muestra *Line art*, *Sketch* al 22%, *Color rough* (oculta) y
+**Papel**.
 
-Utilice el Borrador o deshacer para corregir errores. Si la línea parece retrasarse con respecto a su lápiz, la [configuración del lápiz](/es/docs/advanced/input/) puede ayudar.
+## 2. Entinta los contornos
 
-## 3. Revisa los contornos
+Selecciona **Pluma** en la barra de herramientas y el pincel **Plumilla G** en el
+Conjunto de herramientas ([Herramientas de pincel](/es/docs/drawing/brush-tools/))
+y pon **Tamaño del pincel** en 4.5 px. En *Line art*, repasa los tres contornos y
+después los garabatos y las marcas de rayado.
 
-Oculta Sketch para ver tu tinta por sí sola. Cierra los pequeños espacios en los contornos de las tres formas, porque la siguiente etapa los utiliza para seleccionar cada forma. Los pequeños detalles dentro de una forma pueden permanecer abiertos.
+![El panel Conjunto de herramientas con los pinceles de pluma y Plumilla G seleccionado.](shot:illustration/ink-pens)
 
-El arte lineal permanece en la parte superior de la lista de capas durante el resto del tutorial, por lo que los colores siempre estarán debajo de él. Guarde su dibujo y luego continúe con [Masking](/es/docs/illustration/mask/).
+Para corregir una línea, pulsa **Ctrl+Z** para deshacer el trazo, o pulsa **E** y
+borra con el **Borrador**.
+
+Puedes girar la vista mientras entintas. Elige **Ver > Girar vista 90° a la izquierda**
+o **Ver > Girar vista 90° a la derecha**, o selecciona los botones de giro del
+panel **Navegador**. En Pintura, el icono de **Navegador** está a la derecha de
+la ventana.
+
+![El panel Navegador con sus botones de zoom, giro y volteo.](shot:illustration/ink-navigator)
+
+Para cualquier otro ángulo, gira dos dedos sobre el lienzo, o escribe el ángulo
+en el menú del indicador de zoom, en el extremo derecho del pie.
+**Restablecer rotación**, en ese menú, devuelve la vista a 0°
+([Vista del lienzo](/es/docs/start/canvas/)).
+
+Siguiente etapa: [Colores base](/es/docs/illustration/mask/).

@@ -1,27 +1,62 @@
 ---
 title: "Rendering"
-description: "Add shading and texture on layers clipped to each shape, then export the result."
-purpose: "Rendering is where the shapes get their light and shadow. Painting the shading on clipped layers keeps it inside each shape automatically, and because the shading is separate from the base color, you can adjust or redo it without losing anything."
-techniques: ["Clip a shading layer to Ribbon.", "Control the strength of the shading.", "Shade the other shapes, check the layers, and export."]
-figure: "1: Ribbon texture and Ribbon shading above Ribbon. 2: Clip to layer below. 3: Layer opacity for the whole shading pass."
-related: ["layers/groups", "layers/masks", "output/export"]
-image: {"light": "/assets/guides/illustration-render-light.webp", "dark": "/assets/guides/illustration-render-dark.webp", "alt": "1: Ribbon texture and Ribbon shading above Ribbon. 2: Clip to layer below. 3: Layer opacity for the whole shading pass."}
+description: "Stage 4 of the illustration tutorial: shading and texture on layers clipped to each base color, and a PNG export."
+related: ["layers/settings", "drawing/brush-tools", "files/open-save", "files/export"]
 ---
 
-## 1. Add clipped shading
+This stage produces the shading of each shape, on layers clipped to its base
+color, and a PNG export of the study.
 
-Select **Ribbon**, add a new layer directly above it, and name it **Ribbon shading**. Open its menu and choose **Layer Settings → Clip to layer below**. Now paint the shadows in the bends of the ribbon with **Watercolor Wash**, and add a few sage accents with **Paintbrush**. Your strokes can go past the edge of the ribbon, because only the part inside the ribbon shows.
+## 1. Add a clipping layer
 
-Leave the shading layer's blend mode at **Normal** for now. The base color stays safely on the Ribbon layer, so erasing shading never erases the color underneath.
+Select *Ribbon*, then choose **Layer > New > New clipping layer**, or choose
+**New > New clipping layer** from the row's menu
+([Layer settings](/docs/layers/settings/)). Rename the new layer
+*Ribbon shading*.
 
-## 2. Control the strength
+![The layer menu with New open and New clipping layer in it.](shot:illustration/render-new-menu)
 
-Brush opacity changes the strokes you are about to paint. The **opacity of the Ribbon shading layer** changes all of the shading you have already painted. If every shadow looks too strong, lower the layer's opacity instead of repainting.
+*Ribbon shading* appears directly above *Ribbon*, and a rail to the left of the
+thumbnails marks the clip. The clip follows the mask of *Ribbon*, not the teal
+that fills the whole layer.
 
-For highlights, add **Ribbon texture** directly above Ribbon shading and clip it too. Use a small pencil or a textured brush for a few light marks. The layer order is now Ribbon texture, Ribbon shading, then Ribbon. [Brush settings](/docs/advanced/brush-engine/) explains opacity and flow in more detail.
+## 2. Shade the ribbon
 
-## 3. Finish and export
+Select **Paint Brush** in the Tools toolbar and **Watercolor Wash** in Tool Set
+([Brush tools](/docs/drawing/brush-tools/)). Set **Opacity** in the **Tool**
+panel to 65%, and paint the shadows in the bends of the ribbon in dark blue.
+Then add sage accents with the **Paintbrush** brush.
 
-Shade **Disc** and **Block** in the same way, each with its own clipped layers. The example uses Airbrush for the soft shading on the disc, and Pencil for small cream hatching marks. Keep **Line art** above everything. If the outer edge of a shape needs fixing, paint on that shape's mask; if only the shading is wrong, change the shading layer. [Masks and clipping](/docs/layers/masks/) also shows how to recolor the ink with alpha lock.
+## 3. Add a texture layer
 
-When you're happy with it, hide the rough layers, save your `.capy` file, and [export an image](/docs/output/export/) to share. Open the exported file once to check that it looks the way you expect.
+With *Ribbon shading* selected, choose **Layer > New > New clipping layer**
+again, and rename the layer *Ribbon texture*. It goes above *Ribbon shading*,
+in the same clip. Select **Pencil** and the **Pencil** brush, and draw cream
+hatch marks and highlights.
+
+## 4. Shade the disc and the block
+
+Select *Disc*, add a clipping layer named *Disc shading*, and shade the lower
+half of the disc with the **Airbrush** in terracotta. Add a cream highlight at
+the upper left.
+
+*Block shading* goes on *Block* in the same way: dark blue along the right and
+bottom edges with the **Paintbrush** brush, then cream hatching with the
+**Pencil** brush.
+
+![The Layers panel with Ribbon texture and Ribbon shading clipped to Ribbon, and Disc shading and Block shading clipped to their bases.](shot:illustration/render-layers)
+
+The layer list matches the finished layers in the
+[introduction](/docs/illustration/).
+
+## 5. Save and export
+
+Choose **File > Save**, or press **Ctrl+S**, and save the drawing as a `.capy`
+file ([Opening and saving](/docs/files/open-save/)). To export a PNG:
+
+1. Choose **File > Export…**, or press **Ctrl+Shift+E**.
+2. Leave **Destination** set to **Web / Share**, and set **Format** to **PNG image**.
+3. Select **Choose File…**, and choose a folder and a name.
+
+After the first export, **File > Export Again** writes the same file with the
+same settings, without the dialog ([Exporting images](/docs/files/export/)).

@@ -1,27 +1,70 @@
 ---
-title: "Dibujar"
-description: "Dibuja un boceto a lápiz y prueba colores en una capa separada."
-purpose: "Un boceto es donde trabajas las formas y un color aproximado es donde pruebas los colores. Mantenerlos en capas separadas significa que puedes cambiar los colores tantas veces como quieras sin tocar las líneas del lápiz."
-techniques: ["Dibuja con lápiz y presión del bolígrafo.", "Seleccione y arregle parte del boceto.", "Coloque colores rugosos en una capa debajo del boceto."]
-figure: "1: Pinceles tipo lápiz. 2: Sketch arriba Color rugoso en capas. 3: Tamaño del lápiz y opacidad."
-related: ["tools/selections", "tools/transforms", "painting/color"]
-image: {"light": "/assets/guides/illustration-draft-light.webp", "dark": "/assets/guides/illustration-draft-dark.webp", "alt": "1: Pinceles tipo lápiz. 2: Sketch arriba Color rugoso en capas. 3: Tamaño del lápiz y opacidad."}
+title: "Bocetado"
+description: "Etapa 1 del tutorial de ilustración: un boceto de color dibujado con Relleno con lazo y un boceto a lápiz encima."
+related: ["files/new", "drawing/fill", "drawing/brush-tools", "transform/move-transform"]
 ---
 
-## 1. Dibuja el boceto
+En esta etapa se crea un boceto de color de las tres formas y un boceto a lápiz
+en una capa encima.
 
-Agregue una nueva capa y asígnele el nombre **Sketch**. Elija la herramienta **Pencil** y uno de los lápices en Tool Set. Comience con líneas claras para encontrar el disco, la cinta curva y el bloque inclinado, luego presione con más fuerza para reafirmar los contornos que desea conservar. Establece el tamaño del lápiz en el panel de herramientas.
+## 1. Crea el dibujo
 
-Deja un poco de espacio alrededor de las formas. Facilita las etapas posteriores, porque podrás ver claramente dónde termina cada forma. De vez en cuando, seleccione **Flip view horizontally** en la barra de herramientas superior para ver el boceto reflejado; Los errores en proporción son mucho más fáciles de detectar de esa manera.
+1. Selecciona **Pintura** en el selector de espacio de trabajo de la barra de título.
+2. Elige **Archivo > Nuevo…** o pulsa **Ctrl+N** ([Dibujos nuevos](/es/docs/files/new/)).
+3. En el diálogo **Dibujo nuevo**, pon **Anchura (px)** y **Altura (px)** en 1200 y selecciona **Crear**.
 
-## 2. Arreglar una parte que no esté del todo bien
+![El diálogo Dibujo nuevo con Anchura (px) y Altura (px) en 1200.](shot:illustration/new-drawing)
 
-Si una parte está en el lugar incorrecto o tiene el tamaño incorrecto, no es necesario volver a dibujarla. Elija **Lasso selection** y dibuje un bucle alrededor de esa parte. Luego elija **Scale / rotate**, arrastre la pieza a su lugar o cambie su tamaño y seleccione **Apply transform**. Elija **Select → Deselect pixels** antes de continuar dibujando.
+El dibujo tiene dos capas: **Tinta actual** encima de **Papel**. Haz doble clic
+en **Tinta actual** en el panel Capas y cambia el nombre de la capa a
+*Color rough*.
 
-Las guías [selection](/es/docs/tools/selections/) y [transform](/es/docs/tools/transforms/)] explican estas herramientas con más detalle. Si un cambio sale mal, simplemente deshazlo.
+## 2. Mancha los colores
 
-## 3. Prueba los colores
+La herramienta **Relleno con lazo** rellena una forma a mano alzada con el color
+actual en un solo trazo ([Herramientas de relleno](/es/docs/drawing/fill/)).
+Selecciona **Rellenar** en la barra de herramientas y después selecciona
+**Relleno con lazo** en el panel **Conjunto de herramientas**.
 
-Agregue otra capa llamada **Color rough** y arrástrela debajo de Sketch. Para cada forma, elija un color, dibuje alrededor de la forma con **Lasso selection** y elija **Edit → Fill selection**. El ejemplo utiliza verde azulado para la cinta, ocre para el disco y terracota para el bloque. Estos son colores ásperos, por lo que no es necesario que los bordes estén limpios. Reduce un poco la opacidad de la capa para que las líneas del lápiz sean fáciles de ver.
+![El panel Conjunto de herramientas con Relleno con lazo seleccionado.](shot:illustration/draft-lasso-fill)
 
-Oculta Color aproximado por un momento cuando quieras ver el boceto por sí solo. Guarde su dibujo y luego continúe con [Line art](/es/docs/illustration/ink/).
+Para cada forma, elige su color en el panel **Color** y traza su contorno en un
+solo trazo. Empieza por el bloque de abajo a la izquierda en terracota, sigue con
+el disco que está encima en ocre y termina con la cinta de la derecha en verde
+azulado. Cada forma tapa partes de las formas anteriores.
+
+Pon **Opacidad de capa** en 50 en la cabecera del panel Capas
+([Panel de capas](/es/docs/layers/panel/)). La fila *Color rough* muestra «50%»
+bajo el nombre de la capa.
+
+## 3. Dibuja el boceto
+
+Selecciona **Capa nueva** en la parte inferior del panel Capas y cambia el nombre
+de la capa nueva a *Sketch*. Aparece justo encima de *Color rough*.
+
+Selecciona **Lápiz** en la barra de herramientas y el pincel **Lápiz** en el
+Conjunto de herramientas ([Herramientas de pincel](/es/docs/drawing/brush-tools/)).
+Pon **Tamaño del pincel** en 8 px en el panel **Herramienta**.
+
+![El panel Conjunto de herramientas con los pinceles de lápiz y Lápiz seleccionado.](shot:illustration/draft-pencils)
+
+Dibuja los tres contornos y después los garabatos y las marcas de rayado. El
+ejemplo también tiene líneas de construcción en verde salvia, dibujadas a 5 px.
+
+La lista de capas muestra *Sketch*, *Color rough* y **Papel**.
+
+## 4. Transforma una parte del boceto
+
+Puedes mover, escalar o girar una parte seleccionada del boceto con
+**Transformar** ([Mover y transformar](/es/docs/transform/move-transform/)). El
+ejemplo transforma el bucle de abajo a la derecha.
+
+1. Pulsa **M**, o selecciona **Selección con lazo** en el grupo **Seleccionar** de la barra de herramientas, y dibuja un bucle alrededor de la parte.
+2. Selecciona **Transformar** en la barra de selección, o pulsa **Ctrl+T**.
+3. Arrastra los tiradores.
+4. Selecciona **Aplicar** en la barra, o pulsa **Intro**.
+5. Elige **Seleccionar > Deseleccionar píxeles**, o pulsa **Ctrl+D**.
+
+![La barra de transformación con Cancelar y Aplicar junto a una parte seleccionada del boceto.](shot:illustration/draft-transform)
+
+Siguiente etapa: [Entintado](/es/docs/illustration/ink/).

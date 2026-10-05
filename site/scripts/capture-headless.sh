@@ -16,14 +16,15 @@ export XDG_RUNTIME_DIR="$capture_runtime"
 export WAYLAND_DISPLAY=capy-site-capture
 export CAPTURE_BROWSER_MODE=wayland
 unset DISPLAY
-mkdir -p artifacts/capture-review
+capture_review="${CAPTURE_REVIEW:-artifacts/capture-review}"
+mkdir -p "$capture_review"
 mutter --headless --wayland --no-x11 --virtual-monitor=1920x1080@60 \
-  --wayland-display="$WAYLAND_DISPLAY" > artifacts/capture-review/display.log 2>&1 &
+  --wayland-display="$WAYLAND_DISPLAY" > "$capture_review/display.log" 2>&1 &
 capture_display_pid=$!
 trap 'kill "$capture_display_pid" 2>/dev/null || true; wait "$capture_display_pid" 2>/dev/null || true; rm -rf "$capture_runtime"' EXIT
 for ((capture_attempt=0; capture_attempt<100; capture_attempt++)); do
   [[ -S "$XDG_RUNTIME_DIR/$WAYLAND_DISPLAY" ]] && break
-  kill -0 "$capture_display_pid" 2>/dev/null || { cat artifacts/capture-review/display.log; exit 1; }
+  kill -0 "$capture_display_pid" 2>/dev/null || { cat "$capture_review/display.log"; exit 1; }
   sleep .1
 done
 [[ -S "$XDG_RUNTIME_DIR/$WAYLAND_DISPLAY" ]]
