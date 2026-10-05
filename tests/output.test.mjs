@@ -94,6 +94,9 @@ for(const locale of Object.keys(languages)) {
       const t=content[locale].download;
       for(const platform of ['iPadOS','Android','Linux','Windows','macOS']) assert.match(html,new RegExp(`<h2 id="platform-[a-z]+"[^>]*>${platform}</h2>`));
       for(const [platform,beta] of [['ipad','ipadBeta'],['android','androidBeta']]) assert.match(html,new RegExp(`<a class="button" href="/${route(locale,beta)}" aria-describedby="platform-${platform}"[^>]*>${escapeText(t.joinBeta)}</a>`));
+      assert.match(html,/<div class="pick" data-pick hidden[^>]*>/);
+      assert.match(html,new RegExp(`<div data-platform="other" hidden[^>]*><a class="button primary" href="https://editor\\.capycanvas\\.art/"[^>]*>.*?${escapeText(t.openWebApp)}</a>`));
+      assert.ok(modules.some(code=>code.includes('[data-pick]')), 'Platform detection is bundled with the download page');
       if(html.includes(`href="/${route(locale,'versions')}"`)) {
         assert.match(html,/<p class="lead"[^>]*>.*<time datetime="\d{4}-\d{2}-\d{2}"/);
         assert.ok(html.includes(`<meta name="description" content="${escape(t.metaReleased)}">`));

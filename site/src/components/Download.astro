@@ -2,8 +2,9 @@
 import { content } from '../data/content.mjs';
 import { releasesUrl } from '../lib/releases.mjs';
 import { releases } from '../lib/release-data';
-import { betaPages, platforms, route, type Locale } from '../lib/site';
+import { appUrl, betaPages, platforms, route, type Locale } from '../lib/site';
 import { formatDate, formatSize } from '../lib/format';
+import type { paths } from '../lib/icons';
 import Icon from './Icon.astro';
 import Phrase from './Phrase.astro';
 import PwaInstructions from './PwaInstructions.astro';
@@ -13,12 +14,30 @@ const { locale } = Astro.props;
 const { lang } = content[locale];
 const t = content[locale].download;
 const [latest] = releases;
+const name = (platform: (typeof platforms)[number]) => t.platforms[platforms.indexOf(platform)];
+interface Pick { platform: string; href: string; icon: keyof typeof paths; label: string; detail: string }
+const picks: Pick[] = [
+  ...platforms.flatMap((platform): Pick[] => {
+    const file = platform === 'ipad' ? undefined : latest?.files[platform];
+    const beta = betaPages[platform];
+    if (file) return [{ platform, href: file.url, icon: 'download', label: t.downloadFor.replace('{platform}', name(platform)), detail: `${file.name} · ${formatSize(lang, file.size)}` }];
+    if (beta) return [{ platform, href: route(locale, beta), icon: platform, label: t.joinBeta, detail: content[locale][beta].title }];
+    return [];
+  }),
+  { platform: 'other', href: appUrl, icon: 'globe', label: t.openWebApp, detail: t.pwa.intro },
+];
 ---
 <main id="main" class="page">
   <h1>{t.title}</h1>
   {latest ? (
     <p class="lead"><Phrase text={t.released}><span slot="version">{latest.version}</span><time slot="date" datetime={latest.date}>{formatDate(lang, latest.date)}</time></Phrase></p>
   ) : <p class="lead">{t.intro}</p>}
+  <div class="pick" data-pick hidden>
+    {picks.map(pick => <div data-platform={pick.platform} hidden>
+      <a class="button primary" href={pick.href}><Icon name={pick.icon} />{pick.label}</a>
+      <p>{pick.detail}</p>
+    </div>)}
+  </div>
   <ul class="platforms" aria-label={t.platformsLabel}>
     {platforms.map((platform, i) => {
       const file = platform === 'ipad' ? undefined : latest?.files[platform];
@@ -45,11 +64,26 @@ const [latest] = releases;
   </section>}
 </main>
 
+<script>
+  import { detectPlatform } from '../scripts/docs-platform';
+  const pick = document.querySelector<HTMLElement>('[data-pick]');
+  if (pick) {
+    const platform = detectPlatform(navigator.platform, navigator.userAgent, navigator.maxTouchPoints);
+    const choice = pick.querySelector<HTMLElement>(`[data-platform="${platform}"]`) ?? pick.querySelector<HTMLElement>('[data-platform="other"]');
+    if (choice) { choice.hidden = false; pick.hidden = false; }
+  }
+</script>
+
 <style>
+  .pick { margin: -8px 0 32px; }
+  .pick .button { min-height: 44px; padding: 10px 24px; font-size: 16px; }
+  .pick .button :global(svg) { width: 18px; height: 18px; }
+  .pick p { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
+  .pick [hidden], .pick[hidden] { display: none; }
   .platform-name { min-width: 0; }
   .platform-name .platform-detail { margin: 0; font-size: 12px; color: var(--muted); }
-  .platform-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; margin-left: auto; }
-  .platform .button { padding-left: 16px; padding-right: 18px; white-space: nowrap; }
+  .platform-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: var(--gap); margin-left: auto; }
+  .platform .button { white-space: nowrap; }
   .release-detail { max-width: 600px; margin: 16px 0 0; font-size: 13px; color: var(--muted); }
   .release-detail a { display: inline-flex; align-items: center; gap: 4px; color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
   .release-detail :global(svg) { width: 12px; height: 12px; }

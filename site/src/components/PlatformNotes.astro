@@ -2,6 +2,7 @@
 import { docsUI } from '../data/docs-ui.mjs';
 import type { Locale } from '../lib/site';
 import Icon from './Icon.astro';
+import SelectField from './SelectField.astro';
 interface Props { locale: Locale }
 const { locale } = Astro.props;
 const t = docsUI[locale];
@@ -10,10 +11,10 @@ const systems = Object.keys(t.systems) as (keyof typeof t.systems)[];
 <section class="platform-notes" aria-labelledby="device-notes">
   <h2 id="device-notes">{t.platformTitle}</h2>
   <p>{t.platformIntro}</p>
-  <select class="docs-platform" aria-label={t.platform} hidden>
+  <SelectField class="docs-platform-field"><select class="docs-platform" aria-label={t.platform} hidden>
     <option value="all">{t.allPlatforms}</option>
     {systems.map(system => <option value={system}>{t.systems[system]}</option>)}
-  </select>
+  </select></SelectField>
   <div class="platform-topics">{systems.map(system => <section data-doc-platform={system}>
     <h3><Icon name={system} />{t.systems[system]}</h3><p>{t.platformNotes[system]}</p>
   </section>)}</div>

@@ -41,12 +41,12 @@ const t = content[locale].versions;
   .release { max-width: 640px; margin-top: 40px; }
   .release h2 { font-size: 20px; font-weight: 650; line-height: 1.35; margin-bottom: 2px; }
   .release-date { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin-bottom: 14px; font-size: 13px; color: var(--muted); }
-  .release-latest { padding: 0 8px; border-radius: 999px; background: var(--selected); color: var(--ink); font-size: 11px; font-weight: 600; line-height: 20px; }
-  .release-files { display: flex; flex-wrap: wrap; gap: 6px 8px; list-style: none; margin: 0 0 18px; padding: 0; }
-  .release-files li { display: flex; align-items: center; border-radius: 6px; background: var(--surface); font-size: 13px; }
-  .release-files a { display: inline-flex; align-items: center; gap: 7px; min-height: 36px; padding: 6px 4px 6px 12px; font-weight: 600; }
+  .release-latest { padding: 0 8px; border-radius: 999px; background: var(--selected); color: var(--ink); font-size: 11px; font-weight: 500; line-height: 20px; }
+  .release-files { display: flex; flex-wrap: wrap; gap: var(--gap); list-style: none; margin: 0 0 18px; padding: 0; }
+  .release-files li { display: flex; align-items: center; border-radius: var(--control-radius); background: var(--surface); font-size: 14px; }
+  .release-files li:hover { background: color-mix(in srgb, var(--surface), var(--ink) 8%); }
+  .release-files a { display: inline-flex; align-items: center; gap: 8px; min-height: var(--control-height); padding: 5px 4px 5px 12px; font-weight: 700; line-height: 24px; }
   .release-files li:has(> :only-child) a { padding-right: 12px; }
-  .release-files a:hover { color: var(--accent); }
   .release-files span { padding: 0 12px 0 6px; color: var(--muted); }
   .release-files :global(svg) { width: 16px; height: 16px; }
   .all-releases { margin: 40px 0 0; font-size: 13px; }

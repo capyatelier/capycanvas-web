@@ -25,7 +25,7 @@ export const content = {
     },
     download: {
       title: 'Download', intro: 'Betas for iPad and Android tablets are available. Other native downloads are coming soon.',
-      status: 'Coming soon', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: 'Platforms', joinBeta: 'Join the beta',
+      status: 'Coming soon', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: 'Platforms', joinBeta: 'Join the beta', downloadFor: 'Download for {platform}', openWebApp: 'Open the web app',
       pwa: pwaContent.en,
       released: 'Version {version}, released {date}', get: 'Download',
       checksums: "Each file's fingerprint is listed in {file}, so you can check that a download is complete and unchanged.",
@@ -79,7 +79,7 @@ export const content = {
     },
     download: {
       title: 'ダウンロード', intro: 'iPad と Android タブレット向けのベータ版を配布しています。その他のネイティブ版は公開予定です。',
-      status: '公開予定', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: 'プラットフォーム', joinBeta: 'ベータに参加',
+      status: '公開予定', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: 'プラットフォーム', joinBeta: 'ベータに参加', downloadFor: '{platform} 版をダウンロード', openWebApp: 'ウェブアプリを開く',
       pwa: pwaContent.ja,
       released: 'バージョン {version}（{date} 公開）', get: 'ダウンロード',
       checksums: '各ファイルの指紋（フィンガープリント）は {file} に載っています。ダウンロードしたファイルが欠けたり変えられたりしていないかを確かめられます。',
@@ -133,7 +133,7 @@ export const content = {
     },
     download: {
       title: '下载', intro: '已提供 iPad 和 Android 平板电脑的测试版，其他原生版本即将推出。',
-      status: '即将推出', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: '平台', joinBeta: '加入测试',
+      status: '即将推出', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: '平台', joinBeta: '加入测试', downloadFor: '下载 {platform} 版', openWebApp: '打开网页应用',
       pwa: pwaContent.zh,
       released: '版本 {version}，发布于 {date}', get: '下载',
       checksums: '{file} 列出了每个文件的指纹，可用来确认下载的文件完整且未被改动。',
@@ -187,7 +187,7 @@ export const content = {
     },
     download: {
       title: '다운로드', intro: 'iPad와 Android 태블릿용 베타를 받을 수 있습니다. 다른 네이티브 버전은 출시 예정입니다.',
-      status: '출시 예정', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: '플랫폼', joinBeta: '베타 참여',
+      status: '출시 예정', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], platformsLabel: '플랫폼', joinBeta: '베타 참여', downloadFor: '{platform}용 다운로드', openWebApp: '웹 앱 열기',
       pwa: pwaContent.ko,
       released: '버전 {version}, {date} 출시', get: '다운로드',
       checksums: '{file}에 각 파일의 지문이 있어, 다운로드한 파일이 온전하고 바뀌지 않았는지 확인할 수 있습니다.',

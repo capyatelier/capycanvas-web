@@ -93,6 +93,16 @@ for (const locale of Object.keys(languages)) {
       ['mac', `${download}/v1.0.2/capycanvas-1.0.2-macos-arm64.dmg`],
     ]);
     assert.ok(!page.includes(`>${escapeText(t.download.status)}</p>`));
+    const picks = [...page.matchAll(/<div data-platform="(\w+)" hidden[^>]*><a class="button primary" href="([^"]+)"/g)].map(([, platform, url]) => [platform, url]);
+    assert.deepEqual(picks, [
+      ['ipad', `/${prefix(locale)}download/ipad-beta/`],
+      ['android', `${download}/v1.0.2/capycanvas-1.0.2-android.apk`],
+      ['linux', `${download}/v1.0.2/capycanvas-1.0.2-linux-x86_64.AppImage`],
+      ['windows', `${download}/v1.0.2/capycanvas-1.0.2-windows-x64-setup.exe`],
+      ['mac', `${download}/v1.0.2/capycanvas-1.0.2-macos-arm64.dmg`],
+      ['other', 'https://editor.capycanvas.art/'],
+    ]);
+    assert.ok(page.includes(`>${escapeText(t.download.downloadFor.replace('{platform}', 'Windows'))}</a>`));
     assert.ok(page.includes(`href="${download}/v1.0.2/SHA256SUMS"`));
     assert.ok(page.includes(`href="/${prefix(locale)}download/past-versions/"`));
     assert.ok(!page.includes(`href="${releasesUrl}"`));
@@ -137,6 +147,11 @@ for (const locale of Object.keys(languages)) {
     assert.ok(page.includes(`<a class="button" href="/${prefix(locale)}download/android-beta/" aria-describedby="platform-android"`));
     assert.ok(page.includes(`href="${releasesUrl}"`));
     assert.doesNotMatch(page, /releases\/download\/|class="whats-new"|past-versions/);
+    assert.deepEqual([...page.matchAll(/<div data-platform="(\w+)" hidden[^>]*><a class="button primary" href="([^"]+)"/g)].map(([, platform, url]) => [platform, url]), [
+      ['ipad', `/${prefix(locale)}download/ipad-beta/`],
+      ['android', `/${prefix(locale)}download/android-beta/`],
+      ['other', 'https://editor.capycanvas.art/'],
+    ]);
     const versions = main(await read(empty, `${prefix(locale)}download/past-versions`));
     assert.match(versions, new RegExp(`<p class="lead"[^>]*>${escapeText(t.versions.empty)}</p>`));
     assert.doesNotMatch(versions, /<article|release-notes/);

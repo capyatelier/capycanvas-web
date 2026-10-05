@@ -8,9 +8,9 @@ const t = content[locale];
 ---
 <details class="language-menu">
   <summary aria-label={t.nav.language} title={t.name}><Icon name="globe" /><span>{t.name}</span><Icon name="chevron" class="chevron" /></summary>
-  <div class="language-options">
+  <div class="language-options menu">
     {locales.map(code => (
-      <a href={route(code, page === '404' ? 'home' : page, slug) + (code === 'en' ? '?lang=en' : '')} lang={content[code].lang} hreflang={content[code].lang} data-language={code} aria-current={code === locale ? 'true' : undefined}>{languages[code]}{code === locale && <Icon name="check" />}</a>
+      <a class="menu-item" href={route(code, page === '404' ? 'home' : page, slug) + (code === 'en' ? '?lang=en' : '')} lang={content[code].lang} hreflang={content[code].lang} data-language={code} aria-current={code === locale ? 'true' : undefined}>{languages[code]}</a>
     ))}
   </div>
 </details>
