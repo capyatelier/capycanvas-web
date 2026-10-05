@@ -9,7 +9,6 @@ import rehypeStringify from 'rehype-stringify';
 export const releasesUrl = 'https://github.com/capyatelier/capycanvas/releases';
 export const releasesApiUrl = 'https://api.github.com/repos/capyatelier/capycanvas/releases?per_page=100';
 export const platformFiles = {
-  android: version => `capycanvas-${version}-android.apk`,
   linux: version => `capycanvas-${version}-linux-x86_64.AppImage`,
   windows: version => `capycanvas-${version}-windows-x64-setup.exe`,
   mac: version => `capycanvas-${version}-macos-arm64.dmg`,

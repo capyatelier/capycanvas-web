@@ -8,7 +8,7 @@ import { buildReleaseSite } from './release-sites.mjs';
 
 const fixture = JSON.parse(await readFile('tests/fixtures/releases.json', 'utf8'));
 const download = 'https://github.com/capyatelier/capycanvas/releases/download';
-const neverOffered = /\.(?:msix|aab|zsync|zip)"/;
+const neverOffered = /\.(?:msix|aab|zsync|zip|apk)"/;
 const prefix = locale => locale === 'en' ? '' : `${locale}/`;
 const escape = text => text.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 const escapeText = text => escape(text).replaceAll("'", '&#39;');
@@ -20,16 +20,15 @@ test('only published releases are offered, newest first', () => {
   assert.deepEqual(publishedReleases([]), []);
 });
 
-test('each platform gets its one direct download, plus SHA256SUMS', () => {
+test('each desktop platform gets its one direct download, plus SHA256SUMS', () => {
   const [latest, previous, first] = publishedReleases(fixture);
   assert.deepEqual(latest.files, {
-    android: { name: 'capycanvas-1.0.2-android.apk', url: `${download}/v1.0.2/capycanvas-1.0.2-android.apk`, size: 39847216 },
     linux: { name: 'capycanvas-1.0.2-linux-x86_64.AppImage', url: `${download}/v1.0.2/capycanvas-1.0.2-linux-x86_64.AppImage`, size: 88342528 },
     windows: { name: 'capycanvas-1.0.2-windows-x64-setup.exe', url: `${download}/v1.0.2/capycanvas-1.0.2-windows-x64-setup.exe`, size: 48213504 },
     mac: { name: 'capycanvas-1.0.2-macos-arm64.dmg', url: `${download}/v1.0.2/capycanvas-1.0.2-macos-arm64.dmg`, size: 71563120 },
   });
   assert.deepEqual(latest.checksums, { name: 'SHA256SUMS', url: `${download}/v1.0.2/SHA256SUMS`, size: 1012 });
-  assert.deepEqual(Object.keys(previous.files), ['android', 'linux', 'windows'], 'An unfinished upload is not offered');
+  assert.deepEqual(Object.keys(previous.files), ['linux', 'windows'], 'An unfinished upload is not offered');
   assert.deepEqual(Object.keys(first.files), ['linux', 'windows']);
   assert.equal(first.checksums, undefined);
   assert.equal(first.notes, '');
@@ -87,7 +86,6 @@ for (const locale of Object.keys(languages)) {
     assert.deepEqual(buttons, [
       ['ipad', `/${prefix(locale)}download/ipad-beta/`],
       ['android', `/${prefix(locale)}download/android-beta/`],
-      ['android', `${download}/v1.0.2/capycanvas-1.0.2-android.apk`],
       ['linux', `${download}/v1.0.2/capycanvas-1.0.2-linux-x86_64.AppImage`],
       ['windows', `${download}/v1.0.2/capycanvas-1.0.2-windows-x64-setup.exe`],
       ['mac', `${download}/v1.0.2/capycanvas-1.0.2-macos-arm64.dmg`],
@@ -96,7 +94,7 @@ for (const locale of Object.keys(languages)) {
     const picks = [...page.matchAll(/<div data-platform="(\w+)" hidden[^>]*><a class="button primary" href="([^"]+)"/g)].map(([, platform, url]) => [platform, url]);
     assert.deepEqual(picks, [
       ['ipad', `/${prefix(locale)}download/ipad-beta/`],
-      ['android', `${download}/v1.0.2/capycanvas-1.0.2-android.apk`],
+      ['android', `/${prefix(locale)}download/android-beta/`],
       ['linux', `${download}/v1.0.2/capycanvas-1.0.2-linux-x86_64.AppImage`],
       ['windows', `${download}/v1.0.2/capycanvas-1.0.2-windows-x64-setup.exe`],
       ['mac', `${download}/v1.0.2/capycanvas-1.0.2-macos-arm64.dmg`],
@@ -104,13 +102,10 @@ for (const locale of Object.keys(languages)) {
     ]);
     assert.ok(page.includes(`>${escapeText(t.download.downloadFor.replace('{version}', '1.0.2').replace('{platform}', 'Windows'))}</a>`));
     assert.ok(page.includes(escapeText(t.versions.released.replace('{date}', new Intl.DateTimeFormat(t.lang, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date('2026-10-02T12:00:00Z'))))));
-    assert.ok(page.includes(`href="${download}/v1.0.2/SHA256SUMS"`));
+    assert.ok(!page.includes('SHA256SUMS'));
     assert.ok(page.includes(`href="/${prefix(locale)}download/past-versions/"`));
     assert.ok(page.includes(`href="${releasesUrl}"`));
-    const notes = page.match(/<section class="whats-new"[\s\S]*<\/section>/)[0];
-    assert.ok(page.indexOf('class="pwa"') < page.indexOf('class="whats-new"'));
-    assert.match(notes, /<div class="release-notes" lang="en"[^>]*><h3>Highlights<\/h3>/);
-    assert.equal(notes.includes(escapeText(t.download.notesLanguage)), locale !== 'en');
+    assert.doesNotMatch(page, /whats-new|release-notes/);
     assert.doesNotMatch(page, /onclick|javascript:|alert\(/);
     assert.doesNotMatch(page, neverOffered);
     assert.doesNotMatch(html, /1\.0\.3|1\.1\.0-beta/);
@@ -123,7 +118,7 @@ for (const locale of Object.keys(languages)) {
     assert.ok(page.includes(escapeText(t.versions.intro)));
     assert.deepEqual([...page.matchAll(/<article class="release" id="v([^"]+)"/g)].map(([, version]) => version), ['1.0.2', '1.0.1', '1.0.0']);
     assert.equal(page.split(`>${escapeText(t.versions.latest)}</span>`).length, 2);
-    for (const [version, date, files] of [['1.0.2', '2026-10-02', 5], ['1.0.1', '2026-09-12', 4], ['1.0.0', '2026-08-30', 2]]) {
+    for (const [version, date, files] of [['1.0.2', '2026-10-02', 4], ['1.0.1', '2026-09-12', 3], ['1.0.0', '2026-08-30', 2]]) {
       const article = page.match(new RegExp(`<article class="release" id="v${version.replaceAll('.', '\\.')}"[\\s\\S]*?</article>`))[0];
       assert.match(article, new RegExp(`<time datetime="${date}"`));
       const links = [...article.matchAll(/<li[^>]*><a href="([^"]+)"/g)].map(([, url]) => url);

@@ -2,6 +2,7 @@
 export const additionalPwaContent = {
   "es": {
     "title": "Instalar la aplicación web",
+    "intro": "La versión web de Capy Canvas se puede instalar para uso sin conexión.",
     "os": "Sistema operativo",
     "browser": "Navegador",
     "open": "Abra la aplicación web.",
@@ -62,6 +63,7 @@ export const additionalPwaContent = {
   },
   "pt-BR": {
     "title": "Instale o aplicativo da web",
+    "intro": "A versão web do Capy Canvas pode ser instalada para uso offline.",
     "os": "Sistema operacional",
     "browser": "Navegador",
     "open": "Abra o aplicativo da web.",
@@ -122,6 +124,7 @@ export const additionalPwaContent = {
   },
   "id": {
     "title": "Instal aplikasi web",
+    "intro": "Versi web Capy Canvas dapat diinstal untuk penggunaan offline.",
     "os": "Sistem operasi",
     "browser": "Peramban",
     "open": "Buka aplikasi web.",
@@ -182,6 +185,7 @@ export const additionalPwaContent = {
   },
   "fr": {
     "title": "Installez l'application Web",
+    "intro": "La version Web de Capy Canvas peut être installée pour une utilisation hors ligne.",
     "os": "Système d'exploitation",
     "browser": "Navigateur",
     "open": "Ouvrez l'application Web.",
@@ -242,6 +246,7 @@ export const additionalPwaContent = {
   },
   "de": {
     "title": "Installieren Sie die Web-App",
+    "intro": "Die Webversion von Capy Canvas kann für die Offline-Nutzung installiert werden.",
     "os": "Betriebssystem",
     "browser": "Browser",
     "open": "Öffnen Sie die Web-App.",
@@ -302,6 +307,7 @@ export const additionalPwaContent = {
   },
   "ru": {
     "title": "Установите веб-приложение",
+    "intro": "Веб-версию Capy Canvas можно установить для автономного использования.",
     "os": "Операционная система",
     "browser": "Браузер",
     "open": "Откройте веб-приложение.",
@@ -362,6 +368,7 @@ export const additionalPwaContent = {
   },
   "th": {
     "title": "ติดตั้งเว็บแอป",
+    "intro": "สามารถติดตั้ง Capy Canvas เวอร์ชันเว็บเพื่อการใช้งานออฟไลน์ได้",
     "os": "ระบบปฏิบัติการ",
     "browser": "เบราว์เซอร์",
     "open": "เปิดเว็บแอป",
@@ -422,6 +429,7 @@ export const additionalPwaContent = {
   },
   "vi": {
     "title": "Cài đặt ứng dụng web",
+    "intro": "Phiên bản web của Capy Canvas có thể được cài đặt để sử dụng ngoại tuyến.",
     "os": "Hệ điều hành",
     "browser": "Trình duyệt",
     "open": "Mở ứng dụng web.",
@@ -482,6 +490,7 @@ export const additionalPwaContent = {
   },
   "tr": {
     "title": "Web uygulamasını yükleyin",
+    "intro": "Capy Canvas'nun web sürümü çevrimdışı kullanım için kurulabilir.",
     "os": "İşletim sistemi",
     "browser": "Tarayıcı",
     "open": "Web uygulamasını açın.",
@@ -542,6 +551,7 @@ export const additionalPwaContent = {
   },
   "it": {
     "title": "Installa l'app Web",
+    "intro": "La versione web di Capy Canvas può essere installata per l'utilizzo offline.",
     "os": "Sistema operativo",
     "browser": "Navigatore",
     "open": "Apri l'app Web.",

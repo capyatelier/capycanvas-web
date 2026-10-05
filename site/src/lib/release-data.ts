@@ -6,7 +6,7 @@ export interface Release {
   version: string;
   date: string;
   notes: string;
-  files: Partial<Record<'android' | 'linux' | 'windows' | 'mac', ReleaseFile>>;
+  files: Partial<Record<'linux' | 'windows' | 'mac', ReleaseFile>>;
   checksums?: ReleaseFile;
 }
 

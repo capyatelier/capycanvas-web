@@ -11,6 +11,7 @@ const systems = Object.keys(p.systems) as (keyof typeof osIcons)[];
 ---
 <section class="pwa" aria-labelledby="pwa-title">
   <h2 id="pwa-title">{p.title}</h2>
+  <p>{p.intro}</p>
   <div class="pwa-browser" hidden>
     <details id="pwa-os" class="pwa-os" data-value="other">
       <summary aria-haspopup="listbox" aria-labelledby="pwa-os-label pwa-os-current"><span id="pwa-os-label" class="visually-hidden">{p.os}</span><span id="pwa-os-current"><Icon name="globe" /><span>{p.systems.other}</span></span><Icon name="chevron" class="chevron" /></summary>

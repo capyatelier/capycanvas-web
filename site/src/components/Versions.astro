@@ -1,7 +1,7 @@
 ---
 import { content } from '../data/content.mjs';
 import { releasesUrl } from '../lib/releases.mjs';
-import { releases } from '../lib/release-data';
+import { releases, type Release, type ReleaseFile } from '../lib/release-data';
 import { platforms, type Locale } from '../lib/site';
 import { formatDate, formatSize } from '../lib/format';
 import Icon from './Icon.astro';
@@ -11,6 +11,7 @@ interface Props { locale: Locale }
 const { locale } = Astro.props;
 const { lang, download } = content[locale];
 const t = content[locale].versions;
+const fileOf = (release: Release, platform: (typeof platforms)[number]): ReleaseFile | undefined => (release.files as Partial<Record<(typeof platforms)[number], ReleaseFile>>)[platform];
 ---
 <main id="main" class="page">
   <h1>{t.title}</h1>
@@ -25,7 +26,7 @@ const t = content[locale].versions;
       </p>
       <ul class="release-files" aria-label={t.files}>
         {platforms.map((platform, i) => {
-          const file = platform === 'ipad' ? undefined : release.files[platform];
+          const file = fileOf(release, platform);
           return file && <li><a href={file.url}><Icon name={platform} />{download.platforms[i]}</a><span>{formatSize(lang, file.size)}</span></li>;
         })}
         {release.checksums && <li><a href={release.checksums.url}><Icon name="circleCheck" />{release.checksums.name}</a></li>}

@@ -135,11 +135,10 @@ without the releases.
 
 The Download page opens with a one-line beta note and a large button for the visitor's
 detected system: the latest release's file (labelled with its version, with the release
-date and size beneath), the beta sign-up on an iPad (or on Android before an APK is
-released), or the web app otherwise. **Other platforms** lists the rest with direct
-downloads, followed by `SHA256SUMS`, Past versions and the GitHub releases list, the web
-app instructions and the release notes. Without JavaScript the button stays hidden and
-the list shows every platform. Past versions lists every
+date and size beneath), the beta sign-up on iPad and Android, or the web app otherwise.
+**Other platforms** lists every platform with its download or beta link, followed by
+Past versions and the GitHub releases list, then the web app instructions. Release notes
+and checksums appear on Past versions. Without JavaScript the button stays hidden. Past versions lists every
 published release, newest first, with its date, notes and files. Only these assets are
 offered, matched by exact name:
 
@@ -148,18 +147,17 @@ offered, matched by exact name:
 | Windows | `capycanvas-<version>-windows-x64-setup.exe` |
 | macOS | `capycanvas-<version>-macos-arm64.dmg` |
 | Linux | `capycanvas-<version>-linux-x86_64.AppImage` |
-| Android | `capycanvas-<version>-android.apk` |
-| Checksums | `SHA256SUMS` |
+| Checksums (Past versions only) | `SHA256SUMS` |
 
-The Microsoft Store `.msix`, Google Play `.aab`, AppImage `.zsync` update data and
-the `.zip` archives are never linked. Until a release is published, Linux, Windows and
+The Android `.apk`, Microsoft Store `.msix`, Google Play `.aab`, AppImage `.zsync`
+update data and the `.zip` archives are never linked; Android is offered only through
+the Google Play beta. Until a release is published, Linux, Windows and
 macOS keep their "Coming soon" status and the page links to the GitHub releases list.
 
 The iPad and Android rows always show **Join the beta**, which opens a short sign-up
 page: `/download/ipad-beta/` (install TestFlight from its App Store button, open the invitation, install) and
 `/download/android-beta/` (join the Google Group, accept the Google Play test, install,
-all with the tablet's Google account). On Android the button sits beside the APK once a
-release exists. The TestFlight, Google Group and Google Play test links are `betaLinks`
+all with the tablet's Google account). The TestFlight, Google Group and Google Play test links are `betaLinks`
 in `site/src/lib/site.ts`; the Google Group is what puts testers on the Play test's list.
 
 Controls follow the editor's style: the 18px surface and 12px control radii become

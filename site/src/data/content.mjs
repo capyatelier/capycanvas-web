@@ -28,9 +28,8 @@ export const content = {
       status: 'Coming soon', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: 'Other platforms', joinBeta: 'Join the beta', downloadFor: 'Download {version} for {platform}', openWebApp: 'Open the web app',
       pwa: pwaContent.en,
       get: 'Download',
-      checksums: "Each file's fingerprint is listed in {file}, so you can check that a download is complete and unchanged.",
       pastVersions: 'Past versions', allReleases: 'Releases on GitHub',
-      notes: "What's new in {version}", notesLanguage: 'Release notes are in English.',
+      notesLanguage: 'Release notes are in English.',
       metaReleased: 'Download Capy Canvas, or install it as a web app for offline use.',
       meta: 'Install Capy Canvas as a web app for offline use. Native downloads are coming soon.'
     },
@@ -82,9 +81,8 @@ export const content = {
       status: '公開予定', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: 'その他のプラットフォーム', joinBeta: 'ベータに参加', downloadFor: '{platform} 版 {version} をダウンロード', openWebApp: 'ウェブアプリを開く',
       pwa: pwaContent.ja,
       get: 'ダウンロード',
-      checksums: '各ファイルの指紋（フィンガープリント）は {file} に載っています。ダウンロードしたファイルが欠けたり変えられたりしていないかを確かめられます。',
       pastVersions: '過去のバージョン', allReleases: 'GitHub のリリース',
-      notes: '{version} の変更点', notesLanguage: 'リリースノートは英語です。',
+      notesLanguage: 'リリースノートは英語です。',
       metaReleased: 'Capy Canvas をダウンロードするか、ウェブアプリとしてインストールしてオフラインで使えます。',
       meta: 'Capy Canvas のウェブ版をインストールしてオフラインで使えます。ネイティブ版は公開準備中です。'
     },
@@ -136,9 +134,8 @@ export const content = {
       status: '即将推出', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: '其他平台', joinBeta: '加入测试', downloadFor: '下载 {platform} 版 {version}', openWebApp: '打开网页应用',
       pwa: pwaContent.zh,
       get: '下载',
-      checksums: '{file} 列出了每个文件的指纹，可用来确认下载的文件完整且未被改动。',
       pastVersions: '历史版本', allReleases: 'GitHub 上的发布页面',
-      notes: '{version} 的新内容', notesLanguage: '发布说明为英文。',
+      notesLanguage: '发布说明为英文。',
       metaReleased: '下载 Capy Canvas，或将其安装为网页应用以便离线使用。',
       meta: '安装 Capy Canvas 网页应用，即可离线使用。原生版本即将推出。'
     },
@@ -190,9 +187,8 @@ export const content = {
       status: '출시 예정', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: '다른 플랫폼', joinBeta: '베타 참여', downloadFor: '{platform}용 {version} 다운로드', openWebApp: '웹 앱 열기',
       pwa: pwaContent.ko,
       get: '다운로드',
-      checksums: '{file}에 각 파일의 지문이 있어, 다운로드한 파일이 온전하고 바뀌지 않았는지 확인할 수 있습니다.',
       pastVersions: '이전 버전', allReleases: 'GitHub 릴리스',
-      notes: '{version} 변경 사항', notesLanguage: '릴리스 노트는 영어로 제공됩니다.',
+      notesLanguage: '릴리스 노트는 영어로 제공됩니다.',
       metaReleased: 'Capy Canvas를 다운로드하거나 웹 앱으로 설치해 오프라인으로 사용하세요.',
       meta: 'Capy Canvas 웹 앱을 설치해 오프라인으로 사용하세요. 네이티브 버전은 출시 예정입니다.'
     },

@@ -15,7 +15,7 @@ const escape=text=>text.replaceAll('&','&amp;').replaceAll('"','&quot;').replace
 const escapeText=text=>escape(text).replaceAll("'",'&#39;');
 const segments={documentation:'docs',versions:'download/past-versions',ipadBeta:'download/ipad-beta',androidBeta:'download/android-beta'};
 const route=(l,p)=>`${l==='en'?'':l+'/'}${p==='home'?'':(segments[p]??p)+'/'}`;
-const releaseFile=/^https:\/\/github\.com\/capyatelier\/capycanvas\/releases\/download\/v([^/]+)\/(?:capycanvas-\1-(?:android\.apk|linux-x86_64\.AppImage|windows-x64-setup\.exe|macos-arm64\.dmg)|SHA256SUMS)$/;
+const releaseFile=/^https:\/\/github\.com\/capyatelier\/capycanvas\/releases\/download\/v([^/]+)\/(?:capycanvas-\1-(?:linux-x86_64\.AppImage|windows-x64-setup\.exe|macos-arm64\.dmg)|SHA256SUMS)$/;
 function shape(value) { return Array.isArray(value)?value.map(shape):value && typeof value==='object'?Object.fromEntries(Object.entries(value).map(([k,v])=>[k,shape(v)])):typeof value; }
 for(const locale of Object.keys(languages)) {
   test(`${locale}: translation coverage matches English`,()=>assert.deepEqual(shape(content[locale]),shape(content.en)));
@@ -53,6 +53,7 @@ for(const locale of Object.keys(languages)) {
       assert.match(html,/<h1 class="visually-hidden">Capy Canvas<\/h1>/);
       assert.doesNotMatch(html,/<figcaption|class="brand"|class="eyebrow"/);
       assert.equal((html.match(/class="button(?: primary)?"/g)||[]).length,3);
+      assert.ok(html.includes(`<a class="button primary" href="/${route(locale,'download')}"`), 'Download is the primary home action');
       for(const slide of ['sketch','paint','photo']) {
         assert.ok(html.includes(`<source media="(prefers-color-scheme: dark)" srcset="/assets/showcase/${slide}-dark.webp">`));
         assert.ok(html.includes(`<img src="/assets/showcase/${slide}-light.webp" width="1920" height="1080" alt="${escape(content[locale].home.slides[slide])}"`), `Slide ${slide} has its localized description`);
@@ -109,7 +110,8 @@ for(const locale of Object.keys(languages)) {
       else assert.equal(html.split(`>${escapeText(t.status)}</p>`).length,4);
       const pwa=t.pwa;
       assert.ok(html.indexOf('class="pwa"')>html.indexOf('>macOS</h3>'));
-      assert.doesNotMatch(html,/can be installed for offline use/);
+      assert.ok(html.includes(escapeText(pwa.intro)));
+      assert.equal(html.split(escapeText(pwa.intro)).length,2,'The web app note appears only in its own section');
       assert.doesNotMatch(html,/Open the installed app once online before using it offline\./);
       assert.ok(modules.some(code=>code.includes('[data-pwa-guide]')), 'PWA behavior is bundled with the download component');
       assert.match(html,/<div data-pwa-guide="generic"><ol>/);
