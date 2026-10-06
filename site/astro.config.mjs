@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import { copyFile } from 'node:fs/promises';
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
+import { fileURLToPath } from 'node:url';
 import { languages } from './src/data/content.mjs';
 import { satteri } from '@astrojs/markdown-satteri';
 import { shotFigures } from './src/lib/shots.mjs';
@@ -20,6 +21,7 @@ export default defineConfig({
   markdown: { processor: satteri({ hastPlugins: [shotFigures()] }) },
   vite: {
     define: {
+      'import.meta.env.CAPTURE_MANIFEST': JSON.stringify(fileURLToPath(new URL('./public/assets/capture.json', import.meta.url))),
       'import.meta.env.FAVICON_VERSION': JSON.stringify(createHash('sha256').update(readFileSync(new URL('./public/assets/favicon.png', import.meta.url))).digest('hex').slice(0, 12)),
     },
   },

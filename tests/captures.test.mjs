@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
+import { readFile, readdir } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { createHash } from 'node:crypto';
 import { PNG } from 'pngjs';
@@ -22,57 +22,84 @@ function dimensions(bytes) {
 }
 const shots = markdown => [...markdown.matchAll(/!\[([^\]]*)\]\(shot:([^ )]+)(?: "([^"]*)")?\)/g)].map(([, alt, name, caption]) => ({ alt, name, caption }));
 
-test('every capture in the manual is a verified light/dark pair from the real editor', async () => {
+const locales = Object.keys(languages);
+const themes = ['light', 'dark'];
+async function files(dir) {
+  const entries = await readdir(dir, { withFileTypes: true }).catch(() => []);
+  return (await Promise.all(entries.map(entry => entry.isDirectory() ? files(join(dir, entry.name)) : [join(dir, entry.name)]))).flat();
+}
+
+test('every capture is a verified light/dark image from the real editor in every site language', async () => {
   const manifest = JSON.parse(await readFile(join(root, 'assets/capture.json'), 'utf8'));
   assert.equal(manifest.partial, false, 'A partial debugging run must not be published');
+  assert.deepEqual(manifest.locales, locales, 'Captured in every site language');
+  assert.equal(manifest.scale, 2, 'Captured at twice the pixel density');
+  const variants = new Map();
   for (const capture of manifest.captures) {
     assert.match(capture.revision, /^[a-f0-9]{40}$/, `App revision recorded: ${capture.file}`);
     assert.ok(Object.keys(manifest.sources[capture.revision]?.hashes ?? {}).length > 0, `Source hashes recorded for ${capture.revision}`);
-  }
-  assert.equal(new Set(manifest.captures.filter(capture => !capture.file.startsWith('showcase/')).map(capture => capture.revision)).size, 1, 'Every manual image comes from one app revision');
-  assert.equal(manifest.scale, 2, 'Captured at twice the pixel density');
-  const referenced = new Set();
-  for (const { slug } of docTopics) {
-    const english = shots(await readFile(`site/src/content/guides/en/${slug}.md`, 'utf8'));
-    for (const locale of Object.keys(languages)) {
-      const translated = shots(await readFile(`site/src/content/guides/${locale}/${slug}.md`, 'utf8'));
-      assert.deepEqual(translated.map(shot => shot.name), english.map(shot => shot.name), `Same captures in ${locale}/${slug}`);
-      for (const [index, shot] of translated.entries()) {
-        assert.ok(shot.alt.trim(), `Alt text for ${shot.name} in ${locale}/${slug}`);
-        const numbers = (shot.caption || '').split('·').map(item => item.trim().match(/^(\d+)/)?.[1]).filter(Boolean).map(Number);
-        const capture = manifest.captures.find(item => item.file === `docs/${shot.name}-light.webp`);
-        assert.ok(capture, `Capture exists: ${shot.name}`);
-        assert.deepEqual(numbers, capture.annotations.map(item => item.number), `Caption and callouts agree: ${locale}/${slug} ${shot.name}`);
-        assert.equal(Boolean(shot.caption), Boolean(english[index].caption));
-      }
+    assert.ok(themes.includes(capture.theme), `Theme recorded: ${capture.file}`);
+    assert.equal(capture.quality, capture.shot.startsWith('docs/') ? 70 : 90, `WebP quality recorded: ${capture.file}`);
+    const [area, ...rest] = capture.shot.split('/');
+    const shared = capture.locales.length > 1;
+    if (shared) assert.deepEqual(capture.locales, locales, `A shared capture serves every language: ${capture.file}`);
+    else assert.ok(locales.includes(capture.locales[0]), `Known language: ${capture.file}`);
+    assert.equal(capture.file, `${area}/${shared ? 'shared' : capture.locales[0]}/${rest.join('/')}-${capture.theme}.webp`, `One naming scheme: ${capture.file}`);
+    for (const locale of capture.locales) {
+      const key = `${capture.shot}|${locale}|${capture.theme}`;
+      assert.ok(!variants.has(key), `One image per shot, language and theme: ${key}`);
+      variants.set(key, capture);
     }
-    for (const shot of english) referenced.add(shot.name);
   }
-  for (const name of referenced) for (const theme of ['light', 'dark']) {
-    const capture = manifest.captures.find(item => item.file === `docs/${name}-${theme}.webp`);
-    assert.ok(capture, `Capture recorded: ${name}-${theme}`);
+  const shotNames = [...new Set(manifest.captures.map(capture => capture.shot))];
+  for (const shot of shotNames) {
+    const numbers = variants.get(`${shot}|en|light`)?.annotations.map(item => item.number);
+    for (const locale of locales) for (const theme of themes) {
+      const capture = variants.get(`${shot}|${locale}|${theme}`);
+      assert.ok(capture, `Capture recorded: ${shot} ${locale} ${theme}`);
+      assert.deepEqual(capture.annotations.map(item => item.number), numbers, `Same callouts in every language and theme: ${shot} ${locale} ${theme}`);
+    }
+  }
+  assert.equal(new Set(manifest.captures.filter(capture => !capture.shot.startsWith('showcase/')).map(capture => capture.revision)).size, 1, 'Every manual image comes from one app revision');
+  for (const capture of manifest.captures) {
     const bytes = await readFile(join(root, 'assets', capture.file));
-    assert.equal(bytes.length, capture.bytes);
+    assert.equal(bytes.length, capture.bytes, `Capture size matches provenance: ${capture.file}`);
     assert.equal(hash(bytes), capture.sha256, `Capture changed without updated provenance: ${capture.file}`);
     assert.deepEqual(dimensions(bytes), capture.size.map(value => value * 2), `Twice the recorded size: ${capture.file}`);
-    assert.ok(bytes.length > 1500 && bytes.length < 900000, `WebP size: ${capture.file}`);
+    assert.ok(bytes.length > 1500 && bytes.length < 1500000, `WebP size: ${capture.file}`);
     for (const { bounds } of capture.annotations) {
       assert.ok(bounds.x >= -1 && bounds.y >= -1 && bounds.width > 0 && bounds.height > 0, `Visible callout: ${capture.file}`);
       assert.ok(bounds.x + bounds.width <= capture.size[0] + 1 && bounds.y + bounds.height <= capture.size[1] + 1, `Callout inside the crop: ${capture.file}`);
     }
   }
-  for (const theme of ['light', 'dark']) {
-    const overview = manifest.captures.find(item => item.file === `guides/illustration-${theme}.webp`);
-    assert.ok(overview, 'The documentation overview has its Paint workspace capture');
-    assert.equal(hash(await readFile(join(root, 'assets', overview.file))), overview.sha256);
-    assert.deepEqual(dimensions(await readFile(join(root, 'assets', overview.file))), [3840, 2160]);
+  const recorded = new Set(manifest.captures.map(capture => capture.file));
+  for (const area of ['docs', 'guides', 'showcase']) for (const path of await files(join(root, 'assets', area))) {
+    assert.ok(recorded.has(path.slice(join(root, 'assets').length + 1)), `Published image has provenance: ${path}`);
   }
-  for (const slide of ['sketch', 'paint', 'photo']) for (const theme of ['light', 'dark']) {
-    const capture = manifest.captures.find(item => item.file === `showcase/${slide}-${theme}.webp`);
-    assert.ok(capture, `Homepage slide recorded: ${slide}-${theme}`);
-    const bytes = await readFile(join(root, 'assets', capture.file));
-    assert.equal(hash(bytes), capture.sha256, `Homepage slide matches its provenance: ${capture.file}`);
-    assert.deepEqual(dimensions(bytes), [3840, 2160], `Full-window homepage slide: ${capture.file}`);
+  const referenced = new Set();
+  for (const { slug } of docTopics) {
+    const english = shots(await readFile(`site/src/content/guides/en/${slug}.md`, 'utf8'));
+    for (const locale of locales) {
+      const translated = shots(await readFile(`site/src/content/guides/${locale}/${slug}.md`, 'utf8'));
+      assert.deepEqual(translated.map(shot => shot.name), english.map(shot => shot.name), `Same captures in ${locale}/${slug}`);
+      for (const [index, shot] of translated.entries()) {
+        assert.ok(shot.alt.trim(), `Alt text for ${shot.name} in ${locale}/${slug}`);
+        const numbers = (shot.caption || '').split('·').map(item => item.trim().match(/^(\d+)/)?.[1]).filter(Boolean).map(Number);
+        for (const theme of themes) {
+          const capture = variants.get(`docs/${shot.name}|${locale}|${theme}`);
+          assert.ok(capture, `Capture exists: ${shot.name} ${locale} ${theme}`);
+          assert.deepEqual(numbers, capture.annotations.map(item => item.number), `Caption and callouts agree: ${locale}/${slug} ${shot.name} ${theme}`);
+        }
+        assert.equal(Boolean(shot.caption), Boolean(english[index].caption));
+      }
+    }
+    for (const shot of english) referenced.add(`docs/${shot.name}`);
+  }
+  for (const shot of shotNames.filter(shot => shot.startsWith('docs/'))) assert.ok(referenced.has(shot), `Every manual capture is used by a page: ${shot}`);
+  for (const shot of ['guides/illustration', 'showcase/sketch', 'showcase/paint', 'showcase/photo']) for (const locale of locales) for (const theme of themes) {
+    const capture = variants.get(`${shot}|${locale}|${theme}`);
+    assert.ok(capture, `Full-window capture recorded: ${shot} ${locale} ${theme}`);
+    assert.deepEqual(capture.size, [1920, 1080], `Full-window capture: ${capture.file}`);
   }
   assert.ok(Object.keys(manifest.recipeHashes).length >= 10, 'Capture recipe is identified');
   for (const [path, expectedHash] of Object.entries(manifest.recipeHashes)) assert.equal(hash(await readFile(`site/scripts/${path}`)), expectedHash, `Recipe changed; regenerate captures: ${path}`);

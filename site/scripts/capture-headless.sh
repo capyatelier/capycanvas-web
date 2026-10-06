@@ -3,7 +3,7 @@ set -euo pipefail
 cd "$(dirname "$0")/../.."
 
 # Chrome's native headless mode can omit WebGPU surfaces on NVIDIA/Linux.
-# A private headless Wayland display preserves real GPU presentation without
+# Private headless Wayland displays preserve real GPU presentation without
 # opening a window or moving the pointer on the artist's desktop.
 if [[ "${CAPTURE_BROWSER_MODE:-}" == native || "$(uname -s)" != Linux ]]; then
   exec node site/scripts/capture.mjs
@@ -13,19 +13,26 @@ if [[ "${1:-}" != --session ]]; then
 fi
 capture_runtime=$(mktemp -d /tmp/capy-site-display.XXXXXX)
 export XDG_RUNTIME_DIR="$capture_runtime"
-export WAYLAND_DISPLAY=capy-site-capture
 export CAPTURE_BROWSER_MODE=wayland
 unset DISPLAY
 capture_review="${CAPTURE_REVIEW:-artifacts/capture-review}"
 mkdir -p "$capture_review"
-mutter --headless --wayland --no-x11 --virtual-monitor=1920x1080@60 \
-  --wayland-display="$WAYLAND_DISPLAY" > "$capture_review/display.log" 2>&1 &
-capture_display_pid=$!
-trap 'kill "$capture_display_pid" 2>/dev/null || true; wait "$capture_display_pid" 2>/dev/null || true; rm -rf "$capture_runtime"' EXIT
-for ((capture_attempt=0; capture_attempt<100; capture_attempt++)); do
-  [[ -S "$XDG_RUNTIME_DIR/$WAYLAND_DISPLAY" ]] && break
-  kill -0 "$capture_display_pid" 2>/dev/null || { cat "$capture_review/display.log"; exit 1; }
-  sleep .1
+capture_displays=()
+capture_pids=()
+for ((index=0; index<${CAPTURE_JOBS:-16}; index++)); do
+  display="capy-site-capture-$index"
+  WAYLAND_DISPLAY="$display" mutter --headless --wayland --no-x11 --virtual-monitor=1920x1080@60 \
+    --wayland-display="$display" > "$capture_review/display-$index.log" 2>&1 &
+  capture_pids+=($!)
+  capture_displays+=("$display")
 done
-[[ -S "$XDG_RUNTIME_DIR/$WAYLAND_DISPLAY" ]]
-node site/scripts/capture.mjs
+trap 'kill "${capture_pids[@]}" 2>/dev/null || true; wait "${capture_pids[@]}" 2>/dev/null || true; rm -rf "$capture_runtime"' EXIT
+for index in "${!capture_displays[@]}"; do
+  for ((attempt=0; attempt<200; attempt++)); do
+    [[ -S "$XDG_RUNTIME_DIR/${capture_displays[$index]}" ]] && break
+    kill -0 "${capture_pids[$index]}" 2>/dev/null || { cat "$capture_review/display-$index.log"; exit 1; }
+    sleep .1
+  done
+  [[ -S "$XDG_RUNTIME_DIR/${capture_displays[$index]}" ]]
+done
+CAPTURE_DISPLAYS=$(IFS=,; echo "${capture_displays[*]}") node site/scripts/capture.mjs

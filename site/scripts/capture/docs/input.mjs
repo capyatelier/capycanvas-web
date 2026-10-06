@@ -1,8 +1,7 @@
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
-import { settled } from '../shoot.mjs';
+import { quiet, settled } from '../shoot.mjs';
 
-export default async function input({ e, b, shoot, examples }) {
+export default async function input({ e, b, shoot, example }) {
   const json = value => JSON.stringify(value);
   const key = async (key, code, windowsVirtualKeyCode, text) => {
     await b.call('Input.dispatchKeyEvent', { type: 'keyDown', key, code, windowsVirtualKeyCode, ...(text ? { text } : {}) });
@@ -19,11 +18,13 @@ export default async function input({ e, b, shoot, examples }) {
   const press = async (selector, at) => click(await point(selector, at));
   const pressButton = async (container, label) => click(await b.evaluate(`(()=>{const n=[...document.querySelectorAll(${json(`${container} button`)})].find(n=>n.textContent.trim()===${json(label)});if(!n)throw Error('Missing button: '+${json(label)});const r=n.getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2}})()`));
   const toggle = async (selector, value) => {
-    for (let attempt = 0; attempt < 5 && await e.read(`document.querySelector(${json(selector)}).checked`) !== value; attempt++) {
-      await new Promise(resolve => setTimeout(resolve, 400));
+    const checked = `document.querySelector(${json(selector)}).checked===${value}`;
+    for (let attempt = 0; attempt < 5 && !await e.read(checked); attempt++) {
+      await quiet(b);
       await press(selector);
+      if (await b.until(checked, 2000).then(() => true, () => false)) break;
     }
-    await e.wait(`document.querySelector(${json(selector)}).checked===${value}`);
+    await e.wait(checked);
   };
   const settings = () => e.read('JSON.stringify({...layerApp.state().settings,theme:null})');
   const open = async page => {
@@ -37,13 +38,14 @@ export default async function input({ e, b, shoot, examples }) {
     await e.wait(`!document.querySelector('#settings')?.open`);
   };
   const reveal = async selector => {
+    await e.wait(`!!document.querySelector(${json(selector)})?.checkVisibility()`);
     await b.evaluate(`document.querySelector(${json(selector)}).scrollIntoView({block:'center',behavior:'instant'})`);
     await b.settle();
   };
 
   await e.workspace('illustrator');
   if (await e.read('layerApp.state().workspace.zen_mode')) await e.invoke('zen_mode');
-  await e.provide('04-finished.capy', await readFile(`${examples}/04-finished.capy`));
+  await e.provide('04-finished.capy', await example('04-finished.capy'));
   await e.load('04-finished.capy');
   await settled(b);
   const starting = await settings();
@@ -56,6 +58,7 @@ export default async function input({ e, b, shoot, examples }) {
       await open('input');
       await reveal('.settings-group:has(#setting-pressure)');
     },
+    variant: () => reveal('.settings-group:has(#setting-pressure)'),
     teardown: close,
   });
 
@@ -66,6 +69,11 @@ export default async function input({ e, b, shoot, examples }) {
       await open('input');
       await press(`${cursor} summary`);
       await e.wait(`document.querySelector(${json(cursor)}).open`);
+    },
+    variant: async () => {
+      await e.wait(`!!document.querySelector(${json(cursor)})?.querySelector(':scope > :not(summary)')?.lastElementChild?.checkVisibility()`);
+      await b.evaluate(`(()=>{const choice=document.querySelector(${json(cursor)});choice.querySelector('summary').scrollIntoView({block:'nearest',behavior:'instant'});choice.querySelector(':scope > :not(summary)').lastElementChild.scrollIntoView({block:'nearest',behavior:'instant'});})()`);
+      await b.settle();
     },
     teardown: async () => {
       await press(`${cursor} summary`);

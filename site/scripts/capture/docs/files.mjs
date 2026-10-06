@@ -1,5 +1,3 @@
-import { readFile } from 'node:fs/promises';
-
 const dialog = 'dialog.document-dialog[open]';
 const button = label => `[...document.querySelectorAll('dialog[open] button')].find(b=>b.textContent===${JSON.stringify(label)})`;
 const thumbnailsCurrent = `(()=>{const state=layerApp.state(),epoch=String(state.document_file.epoch),list=document.querySelector('#layer-rows').getBoundingClientRect();
@@ -7,7 +5,7 @@ const thumbnailsCurrent = `(()=>{const state=layerApp.state(),epoch=String(state
     if(box.height===0||box.bottom<Math.max(0,list.top)||box.top>innerHeight)return true;const [content,mask]=[...row.querySelectorAll('.layer-thumbnail')].map(b=>b.querySelector('canvas'));
     return (!layer.has_thumbnail||content?.dataset.previewRevision===epoch+':'+String(layer.paint_revision))&&(!layer.has_mask||mask?.dataset.previewRevision===epoch+':'+String(layer.mask_revision));});})()`;
 
-export default async function files({ e, b, shoot, examples }) {
+export default async function files({ e, b, shoot, example }) {
   const press = async label => {
     await e.wait(`!!${button(label)} && !${button(label)}.disabled`);
     await b.evaluate(`${button(label)}.click();void 0`);
@@ -44,7 +42,7 @@ export default async function files({ e, b, shoot, examples }) {
   });
 
   await e.wait(`(()=>{${button('Keep for Later')}?.click();return !document.querySelector('dialog[open]');})()`);
-  await e.provide('04-finished.capy', await readFile(`${examples}/04-finished.capy`));
+  await e.provide('04-finished.capy', await example('04-finished.capy'));
   await e.workspace('illustrator');
   await restore();
   await e.load('04-finished.capy');
@@ -101,6 +99,12 @@ export default async function files({ e, b, shoot, examples }) {
   await e.draw('M500 500 C800 300 1200 700 1550 450', { pressure: .8 });
   await e.setColor('#f2a541');
   await e.draw('M500 1000 C800 800 1200 1200 1550 950', { pressure: .8 });
+  const dialogAtEnd = `(d=>d.scrollTop+d.clientHeight>=d.scrollHeight-1)(document.querySelector('${dialog}'))`;
+  const scrollDialogToEnd = async () => {
+    await b.call('Input.dispatchMouseEvent', { type: 'mouseWheel', x: 960, y: 540, deltaX: 0, deltaY: 2000 });
+    await e.wait(dialogAtEnd);
+    await b.settle();
+  };
   const previewOutput = async () => {
     await e.exportDialog();
     await e.wait(`!!document.querySelector('dialog[open] [aria-label="Dynamic range"]')`);
@@ -109,14 +113,16 @@ export default async function files({ e, b, shoot, examples }) {
     await press('Preview Output');
     await e.wait("document.querySelectorAll('dialog[open] .color-comparison figure').length===2");
     await b.settle();
-    await b.call('Input.dispatchMouseEvent', { type: 'mouseWheel', x: 960, y: 540, deltaX: 0, deltaY: 2000 });
-    await e.wait(`(d=>d.scrollTop>0&&d.scrollTop+d.clientHeight>=d.scrollHeight-1)(document.querySelector('${dialog}'))`);
-    await b.settle();
+    await scrollDialogToEnd();
+    await e.wait(`(d=>d.scrollTop>0)(document.querySelector('${dialog}'))`);
   };
-  await previewOutput();
-  const preview = await e.read(`(()=>{const d=document.querySelector('${dialog}').getBoundingClientRect(),l=document.querySelector('${dialog} label:has(> select[aria-label="Preview rendition"])').getBoundingClientRect();return [d.left,l.top-4,d.width,d.bottom-l.top+4];})()`);
-  await cancel();
-  await shoot('files/export-hdr-preview', { target: { rect: preview }, setup: previewOutput, teardown: cancel });
+  const previewRect = () => e.read(`(()=>{const d=document.querySelector('${dialog}').getBoundingClientRect(),l=document.querySelector('${dialog} .color-comparison').previousElementSibling;if(!l?.querySelector('select'))throw Error('Preview rendition control missing');const top=l.getBoundingClientRect().top-4;return [d.left,top,d.width,d.bottom-top];})()`);
+  await shoot('files/export-hdr-preview', {
+    target: async () => ({ rect: await previewRect() }),
+    setup: previewOutput,
+    variant: async () => { if (!await e.read(dialogAtEnd)) await scrollDialogToEnd(); },
+    teardown: cancel,
+  });
 
   await e.load('04-finished.capy');
 }

@@ -1,8 +1,10 @@
 # Maintaining the documentation
 
 The manual is an Astro content collection in `src/content/guides/`. It describes
-the released Capy Canvas editor, recorded in `public/assets/capture.json`
-(currently v1.0.4). Release availability must agree with the download page.
+the Capy Canvas editor at the app revision recorded in
+`public/assets/capture.json` (currently main at d94650c5a, just after v1.0.4,
+with the glass fix from a71fa4834 applied and recorded there). Release
+availability must agree with the download page.
 
 Read [WRITING.md](WRITING.md) before writing or reviewing a page. It sets the
 audience, the page and section structure, the words to use and avoid, the tone,
@@ -81,9 +83,10 @@ required; a title becomes the caption and lists numbered callouts in order:
 ```
 
 `src/lib/shots.mjs` turns it into a figure that follows the reader's light or dark
-appearance, using the size recorded in `capture.json`; the build fails if a
-capture is missing. Every capture comes from the real editor, cropped to the
-panel, bar, menu or dialog the section describes. See
+appearance and shows the editor in the page's language, using the file and size
+recorded in `capture.json`; the build fails if a capture is missing in any
+language. Every capture comes from the real editor, cropped to the panel, bar,
+menu or dialog the section describes. See
 [the capture guide](scripts/capture/README.md).
 
 ## English first, then translations
@@ -92,7 +95,7 @@ panel, bar, menu or dialog the section describes. See
 2. Review it against WRITING.md section 11. A second reader who did not write the
    page does the review and fixes every failure. `npm test` also runs the
    mechanical checks in `tests/writing.test.mjs`.
-3. Capture or update its images.
+3. Capture or update its images. One run captures them in every language.
 4. Translate the changed page into every language.
 
 Translations use the app's own interface labels for that language, word for word:
@@ -101,7 +104,8 @@ message in `assets/locales/<locale>/` (the site's `zh` is the app's `zh-Hans`).
 A label the app doesn't translate stays in English. Keep keys, file names, `shot:`
 references and the example files' layer names unchanged, and prefix internal links
 with the locale (`/ja/docs/layers/masks/`). Tests check that each translation has
-the same captures and links as the English page.
+the same captures and links as the English page, and that its images show the
+editor in that language with the callouts its caption numbers.
 
 ## Validate and publish
 

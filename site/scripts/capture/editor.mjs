@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { writeFile } from 'node:fs/promises';
 
-export async function editor(b) {
+export async function editor(b, { saved } = {}) {
   const read = expression => b.evaluate(`JSON.parse(JSON.stringify((${expression}),(_,value)=>typeof value==='bigint'?Number(value):value))`);
   const idle = () => b.until('!layerApp.state().document_file.busy && !layerApp.documents.busy() && layerApp.app.brush_ready()', 60000);
   const send = async action => { await idle(); await b.evaluate(`layerApp.dispatch(${JSON.stringify(action)});void 0`); await b.settle(); };
@@ -32,6 +32,7 @@ export async function editor(b) {
     await b.evaluate(`__captureFiles.set(${JSON.stringify(name)},Uint8Array.from(atob(${JSON.stringify(Buffer.from(bytes).toString('base64'))}),c=>c.charCodeAt(0)));void 0`);
   };
   const drawings = () => read('layerApp.app.document_tabs(0)');
+  const canvas = async () => { await b.evaluate('layerApp.app.wait_for_canvas().then(()=>null)'); await b.settle(); };
   const settledDocuments = () => b.until('!layerApp.state().document_file.busy && !layerApp.documents.busy() && layerApp.app.brush_ready() && layerApp.app.document_park_ready()', 60000);
   const closeOtherDrawings = async () => {
     await settledDocuments();
@@ -45,15 +46,14 @@ export async function editor(b) {
       await wait(`!layerApp.app.document_tabs(0).tabs.some(tab=>Number(tab.id)===${other.id}) && !document.querySelector('dialog[open]')`);
     }
     await wait(`Number(layerApp.app.document_tabs(0).selected)===${keep} && !layerApp.state().document_file.busy`);
-    await b.settle(); await new Promise(resolve => setTimeout(resolve, 2000)); await b.settle();
+    await settledDocuments(); await canvas();
   };
   const selectDrawing = async title => {
     const tab = (await drawings()).tabs.find(tab => tab.title === title);
     assert.ok(tab, `Drawing is open: ${title}`);
     await b.evaluate(`layerApp.documents.select(${tab.id}n)`);
     await wait(`Number(layerApp.app.document_tabs(0).selected)===${tab.id} && !layerApp.state().document_file.busy`);
-    await wait('layerApp.app.brush_ready()'); await b.settle();
-    await new Promise(resolve => setTimeout(resolve, 1500)); await b.settle();
+    await settledDocuments(); await canvas();
   };
   const frame = async (zoom, [x, y]) => {
     const camera = await read('layerApp.state().camera');
@@ -129,7 +129,7 @@ export async function editor(b) {
     const bytes = Buffer.from(base64, 'base64');
     if (name.endsWith('.png')) assert.deepEqual([...bytes.subarray(0, 8)], [137,80,78,71,13,10,26,10]);
     else assert.ok(bytes.length > 100, 'Real project bytes');
-    if (directory) await writeFile(`${directory}/${name}`, bytes);
+    if (directory) { await writeFile(`${directory}/${name}`, bytes); saved?.(name); }
     return bytes;
   };
   const open = async (name, { keep = false } = {}) => {
@@ -164,5 +164,5 @@ export async function editor(b) {
     }
     await b.settle(); await invoke('fit_canvas');
   };
-  return { b, read, idle, send, invoke, layer, wait, click, ready, active, select, add, visible, show, brush, setColor, path, stroke, draw, lasso, exportDialog, save, provide, drawings, closeOtherDrawings, selectDrawing, frame, open, load, newDocument, workspace };
+  return { b, read, idle, canvas, send, invoke, layer, wait, click, ready, active, select, add, visible, show, brush, setColor, path, stroke, draw, lasso, exportDialog, save, provide, drawings, closeOtherDrawings, selectDrawing, frame, open, load, newDocument, workspace };
 }

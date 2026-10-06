@@ -91,8 +91,8 @@ en un seul calque. Les calques masqués et les pixels hors de la toile sont
 supprimés, mais les calques de sélection situés hors des groupes restent. Les
 calques visibles doivent être non verrouillés.
 
-![L’avis affiché sur la toile, qui indique « Flattening discards 2 hidden layers », avec un bouton Flatten.](shot:layers/merging-flatten-notice)
+![L’avis affiché sur la toile, qui indique « L’aplatissement supprime 2 calques masqués », avec un bouton Aplatir l’image.](shot:layers/merging-flatten-notice)
 
 Si le dessin contient des calques masqués, un avis sur la toile indique leur
-nombre, par exemple « Flattening discards 2 hidden layers ». Rien ne change tant
-que vous ne sélectionnez pas **Flatten** dans l’avis.
+nombre, par exemple « L’aplatissement supprime 2 calques masqués ». Rien ne change tant
+que vous ne sélectionnez pas **Aplatir l’image** dans l’avis.

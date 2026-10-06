@@ -41,6 +41,8 @@ export default async function showcase({ e, record }) {
   await e.brush(22, 64, '#86c5ea', .92);
   await e.show('color');
   await e.select('house');
+  await e.visible('house', false);
+  await e.visible('house', true);
   await record('showcase/paint', [], { setup: () => e.b.until(thumbnailsDrawn, 120000) });
 
   await openIn('photographer', 'NDF_4717.jpg');

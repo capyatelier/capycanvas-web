@@ -80,8 +80,8 @@ Choose **Layer > Flatten Image** to merge every visible layer into one layer.
 Hidden layers and pixels outside the canvas are discarded, but selection layers
 outside groups stay. The visible layers must be unlocked.
 
-![The notice over the canvas that reads "Flattening discards 2 hidden layers", with a Flatten button.](shot:layers/merging-flatten-notice)
+![The notice over the canvas that reads "Flattening discards 2 hidden layers", with a Flatten Image button.](shot:layers/merging-flatten-notice)
 
 If the drawing has hidden layers, a notice over the canvas gives their number,
 for example "Flattening discards 2 hidden layers". Nothing changes until you
-select **Flatten** in the notice.
+select **Flatten Image** in the notice.

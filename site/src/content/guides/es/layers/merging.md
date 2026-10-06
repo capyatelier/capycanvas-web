@@ -86,8 +86,8 @@ sola capa. Las capas ocultas y los píxeles fuera del lienzo se descartan, pero
 las capas de selección que están fuera de grupos se mantienen. Las capas
 visibles tienen que estar desbloqueadas.
 
-![El aviso sobre el lienzo que dice «Flattening discards 2 hidden layers», con un botón Flatten.](shot:layers/merging-flatten-notice)
+![El aviso sobre el lienzo que dice «Al acoplar se descartan 2 capas ocultas», con un botón Acoplar imagen.](shot:layers/merging-flatten-notice)
 
 Si el dibujo tiene capas ocultas, un aviso sobre el lienzo indica cuántas son,
-por ejemplo «Flattening discards 2 hidden layers». No cambia nada hasta que
-seleccionas **Flatten** en el aviso.
+por ejemplo «Al acoplar se descartan 2 capas ocultas». No cambia nada hasta que
+seleccionas **Acoplar imagen** en el aviso.

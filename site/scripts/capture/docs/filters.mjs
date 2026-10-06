@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { canvasBar } from '../shoot.mjs';
+import { canvasBar, quiet } from '../shoot.mjs';
 
 const photo = new URL('../photo/terrarium.jpg', import.meta.url);
 const menu = '.panel-context-menu:popover-open';
@@ -27,6 +27,7 @@ export default async function filters({ e, b, shoot }) {
     await e.wait(`!!${menuItem(label)}`);
     await clickAt(await e.read(`(()=>{const r=${menuItem(label)}.getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2}})()`));
   };
+  const menuAtRest = `!!document.querySelector('${menu}') && !document.querySelector('.panel-context-menu').getAnimations().length`;
   const menuShows = label => e.wait(`!!${menuItem(label)} && !document.querySelector('.panel-context-menu').getAnimations().length`);
   const closeMenu = async () => {
     await b.evaluate(`document.querySelector('${menu}')?.hidePopover();void 0`);
@@ -91,7 +92,7 @@ export default async function filters({ e, b, shoot }) {
     await e.wait(`layerApp.app.layout(innerWidth,innerHeight).groups.some(g=>g.panels.includes('navigator'))`);
     await b.settle();
   };
-  const listTarget = (through = null) => e.read(`(()=>{const picker=document.querySelector('${picker}'),list=picker.querySelector('.filter-picker-list').getBoundingClientRect(),box=picker.getBoundingClientRect();const rows=[...picker.querySelectorAll('.filter-row')];const end=${JSON.stringify(through)};const shown=rows.slice(0,end?rows.findIndex(r=>r.dataset.effect===end)+1:rows.length).map(r=>r.getBoundingClientRect()).filter(r=>r.height&&r.top>=list.top-.5&&r.bottom<=list.bottom+.5);const bottom=Math.max(...shown.map(r=>r.bottom));return{rect:[box.left-6,box.top-6,box.width+12,bottom-box.top+10]}})()`);
+  const listTarget = (through = null) => async () => ({ rect: await e.read(`(()=>{const picker=document.querySelector('${picker}'),list=picker.querySelector('.filter-picker-list').getBoundingClientRect(),box=picker.getBoundingClientRect();const rows=[...picker.querySelectorAll('.filter-row')];const end=${JSON.stringify(through)};const shown=rows.slice(0,end?rows.findIndex(r=>r.dataset.effect===end)+1:rows.length).map(r=>r.getBoundingClientRect()).filter(r=>r.height&&r.top>=list.top-.5&&r.bottom<=list.bottom+.5);const bottom=Math.max(...shown.map(r=>r.bottom));return[box.left-6,box.top-6,box.width+12,bottom-box.top+10]})()`) });
 
   await e.workspace('illustrator');
   if (await e.read('layerApp.state().workspace.zen_mode')) await e.invoke('zen_mode');
@@ -108,13 +109,38 @@ export default async function filters({ e, b, shoot }) {
   await e.invoke('select_all');
   await e.invoke('lasso');
   await e.wait(canvasBar);
+  const barItem = '.canvas-action-bar .canvas-action-bar-item';
+  const barLaidOut = `${canvasBar} && [...document.querySelectorAll('${barItem}')].some(r=>!r.hidden&&r.checkVisibility())`;
+  const menuRows = `[...document.querySelectorAll('${menu} > button:not(.submenu-back)')]`;
+  const submenuAtRest = `!!document.querySelector('${menu} .submenu-back') && !document.querySelector('.panel-context-menu').getAnimations().length`;
+  const centre = node => e.read(`(()=>{const r=${node}.getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2}})()`);
+  const openBarMenu = async name => {
+    await e.wait(barLaidOut);
+    const { direct, index } = await e.read(`(()=>{const rows=[...document.querySelectorAll('${barItem}')],shown=rows.filter(r=>!r.hidden&&r.checkVisibility()).length,at=rows.findIndex(r=>r.querySelector('[data-canvas-bar-menu="${name}"]'));return{direct:at<shown,index:at-shown}})()`);
+    if (direct) { await press(`.canvas-action-bar [data-canvas-bar-menu="${name}"]`); await e.wait(menuAtRest); return; }
+    await press('.canvas-action-bar .canvas-action-bar-more');
+    await e.wait(`${menuAtRest} && document.querySelectorAll('${menu} > button').length>${index}`);
+    await clickAt(await centre(`document.querySelectorAll('${menu} > button')[${index}]`));
+    await e.wait(submenuAtRest);
+  };
+  let tone;
   await shoot('filters/selection-adjust', {
     target: ['.canvas-action-bar', menu],
     ready: canvasBar, maxWidth: 1400,
     setup: async () => {
       await press('.canvas-action-bar [data-canvas-bar-menu="adjust"]');
+      await e.wait(`!!${menuItem('Tone')}`);
+      tone = await e.read(`${menuRows}.findIndex(b=>b.querySelector('.menu-label')?.textContent==='Tone')`);
       await choose('Tone');
       await menuShows('Curves');
+    },
+    variant: async () => {
+      if (await e.read(`!!document.querySelector('${menu}') && ${submenuAtRest}`)) return;
+      await openBarMenu('adjust');
+      await e.wait(`${menuRows}.length>${tone}`);
+      await clickAt(await centre(`${menuRows}[${tone}]`));
+      await e.wait(`${submenuAtRest} && ${menuRows}.some(b=>b.querySelector('.menu-label'))`);
+      await b.call('Input.dispatchMouseEvent', { type: 'mouseMoved', x: -20, y: -20 });
     },
     teardown: closeMenu,
   });
@@ -135,7 +161,7 @@ export default async function filters({ e, b, shoot }) {
   assert.deepEqual((await layers()).map(row => row.label), ['Vignette', 'Clarity', 'Curves', 'terrarium', 'Paper']);
   assert.equal(await e.read('layerApp.state().layer_tools.attachment.label'), 'Apply to terrarium');
   await shoot('filters/layers-chain', { target: { selector: '.layers-panel .layer-row', all: true }, pad: 6 });
-  const header = await e.read(`(()=>{const r=document.querySelector('.layers-panel .layer-header').getBoundingClientRect();return{rect:[r.left,r.top+3,r.width,r.height-3]}})()`);
+  const header = async () => ({ rect: await e.read(`(()=>{const r=document.querySelector('.layers-panel .layer-header').getBoundingClientRect();return[r.left,r.top+3,r.width,r.height-3]})()`) });
   await shoot('filters/attachment-button', { target: header, pad: 0 });
   await undoTo(base);
 
@@ -143,9 +169,18 @@ export default async function filters({ e, b, shoot }) {
   const vignette = await insert('vignette');
   await showPanel('layers');
   assert.equal(await e.read(`layerApp.state().commands.find(c=>c.id==='merge_down').enabled`), true, 'Apply Effect to Layer Below is available');
+  const openEffectMenu = () => press(`.layer-row[data-layer="${vignette}"] .layer-name`, 'right');
   await shoot('filters/apply-effect-menu', {
     target: menu,
-    setup: async () => { await press(`.layer-row[data-layer="${vignette}"] .layer-name`, 'right'); await menuShows('Apply Effect to Layer Below'); },
+    setup: async () => { await openEffectMenu(); await menuShows('Apply Effect to Layer Below'); },
+    variant: async () => {
+      if (await e.read(`!!document.querySelector('${menu}')`)) return;
+      await quiet(b); await e.canvas(); await e.idle();
+      await openEffectMenu();
+      await e.wait(menuAtRest);
+      await b.call('Input.dispatchMouseEvent', { type: 'mouseMoved', x: -20, y: -20 });
+    },
+    release: closeMenu,
     teardown: closeMenu,
   });
   await undoTo(base);
@@ -156,19 +191,19 @@ export default async function filters({ e, b, shoot }) {
   await category(null);
   await b.evaluate(`document.querySelector('${picker} .filter-picker-list').scrollTop=0;void 0`);
   await previews(picker);
-  await shoot('filters/filters-panel', { target: await listTarget('invert'), pad: 0, ready: previewsFilled(picker) });
+  await shoot('filters/filters-panel', { target: listTarget('invert'), pad: 0, ready: previewsFilled(picker) });
 
   for (const id of ['tone', 'color', 'artistic', 'texture', 'distort']) {
     await category(id);
     await previews(picker);
-    await shoot(`filters/${id}-list`, { target: await listTarget(), pad: 0, ready: previewsFilled(picker) });
+    await shoot(`filters/${id}-list`, { target: listTarget(), pad: 0, ready: previewsFilled(picker) });
   }
 
   await category(null);
   await previews(picker);
   await b.evaluate(`(()=>{const list=document.querySelector('${picker} .filter-picker-list'),heading=list.querySelector('h3.filter-category[data-category="detail"]');list.scrollTop+=heading.getBoundingClientRect().top-list.getBoundingClientRect().top-parseFloat(getComputedStyle(heading).marginTop);})()`);
   await previews(picker);
-  const detailBlur = await e.read(`(()=>{const picker=document.querySelector('${picker}'),box=picker.getBoundingClientRect(),top=picker.querySelector('h3.filter-category[data-category="detail"]').getBoundingClientRect().top,bottom=picker.querySelector('.filter-row:has(+ h3.filter-category[data-category="artistic"])').getBoundingClientRect().bottom;return{rect:[box.left-6,top-6,box.width+12,bottom-top+10]}})()`);
+  const detailBlur = async () => ({ rect: await e.read(`(()=>{const picker=document.querySelector('${picker}'),box=picker.getBoundingClientRect(),top=picker.querySelector('h3.filter-category[data-category="detail"]').getBoundingClientRect().top,bottom=picker.querySelector('.filter-row:has(+ h3.filter-category[data-category="artistic"])').getBoundingClientRect().bottom;return[box.left-6,top-6,box.width+12,bottom-top+10]})()`) });
   await shoot('filters/detail-blur-list', { target: detailBlur, pad: 0, ready: previewsFilled(picker) });
   await b.evaluate(`document.querySelector('${picker} .filter-picker-list').scrollTop=0;void 0`);
 

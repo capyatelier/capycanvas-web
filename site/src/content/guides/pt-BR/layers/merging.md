@@ -88,8 +88,8 @@ só camada. As camadas ocultas e os pixels fora da tela são descartados, mas as
 camadas de seleção fora de grupos continuam. As camadas visíveis precisam estar
 desbloqueadas.
 
-![O aviso sobre a tela que diz "Flattening discards 2 hidden layers", com um botão Flatten.](shot:layers/merging-flatten-notice)
+![O aviso sobre a tela que diz "Achatar descarta 2 camadas ocultas", com um botão Achatar imagem.](shot:layers/merging-flatten-notice)
 
 Se o desenho tiver camadas ocultas, um aviso sobre a tela informa quantas são,
-por exemplo "Flattening discards 2 hidden layers". Nada muda até você
-selecionar **Flatten** no aviso.
+por exemplo "Achatar descarta 2 camadas ocultas". Nada muda até você
+selecionar **Achatar imagem** no aviso.

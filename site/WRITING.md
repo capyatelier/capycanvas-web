@@ -496,7 +496,8 @@ whole workspace. Show the result of a setting only where the result is visual,
 such as a filter or a brush texture.
 
 Images are captured from the real editor with the scripts in `scripts/capture/`
-in both appearances. Write them in Markdown with the `shot:` scheme. The alt text
+in both appearances and in every site language, so each page shows the editor in
+its own language. Write them in Markdown with the `shot:` scheme. The alt text
 is required and describes what the image shows:
 
 ```markdown

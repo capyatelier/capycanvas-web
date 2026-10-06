@@ -5,6 +5,7 @@ import { appUrl, repositoryUrl, route, type Locale } from '../lib/site';
 import DocsLayout from '../layouts/DocsLayout.astro';
 import GuideFigure from './GuideFigure.astro';
 import Icon from './Icon.astro';
+import { capturePair } from '../lib/captures.mjs';
 interface Props { locale: Locale }
 const { locale } = Astro.props;
 const t = docsUI[locale];
@@ -28,9 +29,7 @@ const startingPoints = [
   <h1>{content[locale].documentation.title}</h1>
   <p class="docs-lead">{t.intro}</p>
   <div class="docs-overview-image">
-    <GuideFigure locale={locale} image={{
-      light: '/assets/guides/illustration-light.webp', dark: '/assets/guides/illustration-dark.webp', alt: overview.alt,
-    }} />
+    <GuideFigure locale={locale} image={{ ...capturePair('guides/illustration', locale), alt: overview.alt }} />
   </div>
   <div class="docs-concepts">
     {topics.map(({ id, copy, href }) => <section aria-labelledby={id}>

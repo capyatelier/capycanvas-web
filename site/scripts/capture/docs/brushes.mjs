@@ -8,7 +8,7 @@ const sizePreview = '.toolbar-brush-preview:popover-open';
 const form = 'dialog.workspace-form[open]';
 
 export default async function brushes({ e, b, shoot }) {
-  const { escape, point, press, workspace, restoreLayout, fit, openDrawer, closeDrawer } = helpers(e, b);
+  const { escape, point, press, workspace, restoreLayout, fit, refit, openDrawer, closeDrawer } = helpers(e, b);
   const setting = id => e.read(`layerApp.state().tool_settings.find(f=>f.id===${json(id)})?.value`);
   const closePopover = async selector => {
     if (await e.read(`!!document.querySelector(${json(selector)})`)) await escape();
@@ -23,6 +23,7 @@ export default async function brushes({ e, b, shoot }) {
     const bottom=extra?Math.max(box.bottom,extra.bottom):box.bottom;
     return[box.left,box.top,right+4-box.left,bottom-box.top];
   })()`);
+  const measured = measure => async () => ({ rect: await measure() });
   const openResetAll = async () => {
     await b.evaluate(`layerApp.app.workspace_input(JSON.stringify({type:'form',action:{type:'reset_brushes'}}));void 0`);
     await e.wait(`!!document.querySelector(${json(form)})`);
@@ -41,8 +42,9 @@ export default async function brushes({ e, b, shoot }) {
   await e.show('tool_settings');
   await e.wait(`!!document.querySelector('${group('tool_settings')} [data-tool-setting="grain_depth"]')`);
   await fit('tool_settings');
-  await shoot('brushes/tool-panel', { target: group('tool_settings') });
+  await shoot('brushes/tool-panel', { target: group('tool_settings'), variant: refit('tool_settings') });
   await shoot('brushes/tip-texture-settings', {
+    variant: refit('tool_settings'),
     target: [{ selector: `${group('tool_settings')} h3`, text: ['Tip', 'Texture'], all: true }, { selector: `${group('tool_settings')} [data-tool-setting="hardness"]` }, { selector: `${group('tool_settings')} [data-tool-setting="grain_depth"]` }],
   });
 
@@ -51,7 +53,7 @@ export default async function brushes({ e, b, shoot }) {
   await e.send({ type: 'set_brush_size', value: 20 });
   await e.wait(`!!document.querySelector('${group('sizes')} .size-button[data-size="20"]')`);
   await fit('sizes');
-  await shoot('brushes/brush-size-panel', { target: group('sizes') });
+  await shoot('brushes/brush-size-panel', { target: group('sizes'), variant: refit('sizes') });
   await e.show('tool_settings');
   await restoreLayout(paint);
 
@@ -70,17 +72,15 @@ export default async function brushes({ e, b, shoot }) {
   await e.newDocument(1600, 1000);
   await e.invoke('brush');
   await e.wait(`!!document.querySelector('${toolOptions} [data-toolbar-setting=size]')`);
-  const bar = { rect: [0, 0, 0, 0] };
-  await shoot('brushes/tool-options-bar', { target: [bar], setup: async () => { bar.rect = await barRect({ limit: 1000 }); } });
+  await shoot('brushes/tool-options-bar', { target: measured(() => barRect({ limit: 1000 })) });
 
   await e.send({ type: 'select_brush', id: 22 });
   await e.wait(`!!document.querySelector('${toolOptions} [data-toolbar-choice="color-mixing"] > button')`);
   await shoot('brushes/color-mixing-menu', {
-    target: [bar],
+    target: measured(() => barRect({ cover: popover })),
     setup: async () => {
       await press(`${toolOptions} [data-toolbar-choice="color-mixing"] > button`);
       await e.wait(`!!document.querySelector(${json(popover)})`);
-      bar.rect = await barRect({ cover: popover });
     },
     teardown: () => closePopover(popover),
   });
@@ -89,18 +89,26 @@ export default async function brushes({ e, b, shoot }) {
   await workspace('painter');
   await e.newDocument(1600, 1000);
   await e.send({ type: 'select_brush', id: 21 });
-  const wet = { rect: [0, 0, 0, 0] };
+  const column = `${drawer} .drawer-column:has([data-control="tool_settings"])`;
+  const scroller = `[...document.querySelectorAll('${drawer} .drawer-column, ${drawer} .drawer-column *')].find(n=>n.scrollHeight>n.clientHeight+1&&/auto|scroll/.test(getComputedStyle(n).overflowY)&&n.querySelector('[data-control="tool_settings"]'))`;
+  const scrolledToEnd = `(c=>!c||Math.abs(c.scrollTop+c.clientHeight-c.scrollHeight)<1)(${scroller})`;
+  const scrollToEnd = async () => {
+    await b.call('Input.dispatchMouseEvent', { type: 'mouseWheel', ...await point(column), deltaX: 0, deltaY: 2000 });
+    await e.wait(scrolledToEnd);
+    await b.settle();
+  };
+  let mixingHeading = -1;
+  const wetRect = () => e.read(`(()=>{const view=${scroller}??document.querySelector(${json(column)}),frame=view.getBoundingClientRect(),tool=view.querySelector('[data-control="tool_settings"]'),heading=tool.querySelectorAll('h3')[${mixingHeading}],buttons=[...tool.querySelectorAll('.tool-setting-action[data-tool-action^="color_mix"]')].map(n=>n.getBoundingClientRect()),leaves=[...tool.querySelectorAll('*')].filter(n=>!n.childElementCount&&n.checkVisibility()).map(n=>n.getBoundingClientRect().right),left=frame.left+view.clientLeft,right=Math.min(left+view.clientWidth,Math.max(...leaves)+10),top=heading.getBoundingClientRect().top-6,bottom=Math.min(frame.top+view.clientTop+view.clientHeight,Math.max(...buttons.map(r=>r.bottom))+6);return[left,top,right-left,bottom-top]})()`);
   await shoot('brushes/wet-media-settings', {
-    target: [wet], pad: 0,
+    target: measured(wetRect), pad: 0,
     setup: async () => {
       await openDrawer('drawing_brush', 'brush_sets', 'Watercolor');
-      const column = await point(`${drawer} .drawer-column:has([data-control="tool_settings"])`);
-      await b.call('Input.dispatchMouseEvent', { type: 'mouseWheel', ...column, deltaX: 0, deltaY: 800 });
-      const scroller = `[...document.querySelectorAll('${drawer} .drawer-column, ${drawer} .drawer-column *')].find(n=>n.scrollHeight>n.clientHeight+1&&/auto|scroll/.test(getComputedStyle(n).overflowY)&&n.querySelector('[data-control="tool_settings"]'))`;
-      await e.wait(`(c=>!!c&&c.scrollTop>0&&Math.abs(c.scrollTop+c.clientHeight-c.scrollHeight)<1)(${scroller})`);
-      await b.settle();
-      wet.rect = await e.read(`(()=>{const view=${scroller},frame=view.getBoundingClientRect(),tool=view.querySelector('[data-control="tool_settings"]'),heading=[...tool.querySelectorAll('h3')].find(n=>n.textContent.trim()==='Mixing'),buttons=[...tool.querySelectorAll('.tool-setting-action[data-tool-action^="color_mix"]')].map(n=>n.getBoundingClientRect()),leaves=[...tool.querySelectorAll('*')].filter(n=>!n.childElementCount&&n.checkVisibility()).map(n=>n.getBoundingClientRect().right),left=frame.left+view.clientLeft,right=Math.min(left+view.clientWidth,Math.max(...leaves)+10),top=heading.getBoundingClientRect().top-6,bottom=Math.min(frame.top+view.clientTop+view.clientHeight,Math.max(...buttons.map(r=>r.bottom))+6);return[left,top,right-left,bottom-top]})()`);
+      await scrollToEnd();
+      await e.wait(`${scroller}?.scrollTop>0`);
+      mixingHeading = await e.read(`[...document.querySelector(${json(`${drawer} [data-control="tool_settings"]`)}).querySelectorAll('h3')].findIndex(n=>n.textContent.trim()==='Mixing')`);
+      assert.ok(mixingHeading >= 0, 'The Mixing section is in the tool settings');
     },
+    variant: scrollToEnd,
     teardown: closeDrawer,
   });
   await e.invoke('drawing_brush');

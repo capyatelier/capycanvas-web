@@ -8,7 +8,7 @@ const thumbnailsCurrent = `(()=>{const state=layerApp.state(),epoch=String(state
     return (!layer.has_thumbnail||content?.dataset.previewRevision===epoch+':'+String(layer.paint_revision))&&(!layer.has_mask||mask?.dataset.previewRevision===epoch+':'+String(layer.mask_revision));});})()`;
 const commandTiles = (...ids) => ({ selector: `.toolbar-controls[data-panel="commands"] > [data-tile]:has(${ids.map(id => `> [data-command="${id}"]`).join(', ')})`, union: true, all: true });
 
-export default async function start({ e, b, shoot, examples }) {
+export default async function start({ e, b, shoot, example, message }) {
   const key = async (key, code = key, windowsVirtualKeyCode = 27) => {
     for (const type of ['keyDown', 'keyUp']) await b.call('Input.dispatchKeyEvent', { type, key, code, windowsVirtualKeyCode });
     await b.settle();
@@ -24,17 +24,27 @@ export default async function start({ e, b, shoot, examples }) {
     if (await e.read('layerApp.state().workspace.zen_mode')) await e.invoke('zen_mode');
     await b.settle();
   };
+  const edit = async name => {
+    const row = (await e.read('layerApp.state().layers')).find(row => row.label === name);
+    await e.layer({ op: 'visibility', id: row.id, value: !row.visible });
+    await e.layer({ op: 'visibility', id: row.id, value: row.visible });
+  };
   const fresh = async () => {
     await e.newDocument(2048, 1536);
     await e.wait('!layerApp.state().document_file.modified');
   };
+  const type = async (text, first) => {
+    await e.wait("document.activeElement?.id === 'command-search'");
+    await b.evaluate("document.querySelector('#command-search').select()");
+    await b.call('Input.insertText', { text });
+    await e.wait(`document.querySelector('#command-search').value === ${JSON.stringify(text)} && layerApp.state().command_search.results[0]?.id === ${JSON.stringify(first)}`);
+    await b.settle();
+  };
   const search = async (text, first) => {
     await e.invoke('search_commands');
     await e.wait("document.querySelector('#command-bar')?.open && document.activeElement?.id === 'command-search'");
-    if (!text) return b.settle();
-    await b.call('Input.insertText', { text });
-    await e.wait(`layerApp.state().command_search.results[0]?.id === ${JSON.stringify(first)}`);
-    await b.settle();
+    if (text) await type(text, first);
+    else await b.settle();
   };
   const closeSearch = async () => {
     await e.send({ type: 'command_search', action: { type: 'close' } });
@@ -42,7 +52,7 @@ export default async function start({ e, b, shoot, examples }) {
   };
 
   await e.wait(`(()=>{[...document.querySelectorAll('dialog[open] button')].find(b=>b.textContent==='Keep for Later')?.click();return !document.querySelector('dialog[open]');})()`);
-  await e.provide('04-finished.capy', await readFile(`${examples}/04-finished.capy`));
+  await e.provide('04-finished.capy', await example('04-finished.capy'));
   await e.provide('terrarium.jpg', await readFile('site/scripts/capture/photo/terrarium.jpg'));
 
   await e.workspace('illustrator');
@@ -55,7 +65,8 @@ export default async function start({ e, b, shoot, examples }) {
   await fresh();
   await shoot('start/command-search-unavailable', {
     target: '#command-bar',
-    setup: () => search('undo', 'command.undo'), teardown: closeSearch,
+    setup: () => search(), teardown: closeSearch,
+    variant: locale => type(message('command-undo', locale).toLowerCase(), 'command.undo'),
   });
   await e.invoke('pen');
   await shoot('start/command-search-typed-value', {
@@ -88,6 +99,7 @@ export default async function start({ e, b, shoot, examples }) {
   if (!await e.read(`!!document.querySelector('${group('layers')}')?.checkVisibility()`)) await e.click('.collapsed-column .column-tab[data-panel="layers"]');
   await e.wait(`['navigator','properties','layers'].every(panel=>document.querySelector('.dock-group:has(.dock-tab[data-panel="'+panel+'"])')?.checkVisibility())`);
   await e.invoke('fit_canvas');
+  await edit('Sketch');
   await e.wait(thumbnailsCurrent);
   await shoot('start/workspaces-paint', {
     target: fullWindow, pad: 0, maxWidth: 1920, ready: thumbnailsCurrent,
@@ -128,15 +140,14 @@ export default async function start({ e, b, shoot, examples }) {
   await e.send({ type: 'set_rotation', rotation: 0 });
   await e.invoke('fit_canvas');
 
-  const layer = (await e.read('layerApp.state().layers')).find(row => row.label === 'Sketch');
-  await e.layer({ op: 'visibility', id: layer.id, value: !layer.visible });
-  await e.layer({ op: 'visibility', id: layer.id, value: layer.visible });
+  await edit('Sketch');
   await shoot('start/undo-commands', { target: commandTiles('new_document', 'flip_horizontal') });
 
   await e.workspace('photographer');
   await restore();
   await e.open('terrarium.jpg');
   await e.invoke('move');
+  await edit('terrarium');
   await e.wait("layerApp.state().histogram.status === 'Exact' && layerApp.state().histogram.data != null");
   await e.wait(thumbnailsCurrent);
   await shoot('start/workspaces-photo', {

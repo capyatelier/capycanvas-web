@@ -1,32 +1,35 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { canvasBar } from '../shoot.mjs';
+import { canvasBar, quiet, settleLayout } from '../shoot.mjs';
 
 const photo = new URL('../photo/terrarium.jpg', import.meta.url);
 const bar = 'section.canvas-action-bar';
+const barItem = `${bar} .canvas-action-bar-item`;
 const menu = '.panel-context-menu:popover-open';
 const drawer = '.content-drawer';
 const tonal = `${drawer} .tonal-settings`;
 const group = panel => `section.dock-group[data-panel="${panel}"]`;
 
-export default async function selections({ e, b, shoot, examples }) {
-  const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
-  const point = selector => e.read(`(()=>{const node=[...document.querySelectorAll(${JSON.stringify(selector)})].find(n=>n.checkVisibility()&&n.getBoundingClientRect().width>0);if(!node)throw Error('Missing control: '+${JSON.stringify(selector)});const r=node.getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2}})()`);
+export default async function selections({ e, b, shoot, example }) {
+  const point = async selector => {
+    await settleLayout(b, selector, 4);
+    return e.read(`(()=>{const node=[...document.querySelectorAll(${JSON.stringify(selector)})].find(n=>n.checkVisibility()&&n.getBoundingClientRect().width>0);if(!node)throw Error('Missing control: '+${JSON.stringify(selector)});const r=node.getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2}})()`);
+  };
   const clickAt = async ({ x, y }, pointerType = 'mouse') => {
     await b.call('Input.dispatchMouseEvent', { type: 'mouseMoved', x, y, button: 'none', buttons: 0, pointerType });
     for (const type of ['mousePressed', 'mouseReleased']) {
       await b.call('Input.dispatchMouseEvent', { type, x, y, button: 'left', buttons: type === 'mousePressed' ? 1 : 0, clickCount: 1, pointerType, force: type === 'mousePressed' ? .7 : 0 });
     }
-    await b.settle(); await pause(350);
+    await e.canvas(); await e.idle();
   };
-  const press = async selector => clickAt(await point(selector));
+  const press = async selector => { await quiet(b); await clickAt(await point(selector)); };
   const screen = async ([x, y]) => e.read(`(()=>{const c=layerApp.app.camera(),r=layerApp.canvas.getBoundingClientRect();return{x:r.x+(${x}*c.zoom+c.translation[0])*r.width/c.viewport[0],y:r.y+(${y}*c.zoom+c.translation[1])*r.height/c.viewport[1]}})()`);
   const size = () => e.read('(t=>[t.width,t.height])(layerApp.state().tabs[0])');
   const mouse = (type, { x, y }, buttons = 0) => b.call('Input.dispatchMouseEvent', { type, x, y, button: type === 'mouseMoved' && !buttons ? 'none' : 'left', buttons, clickCount: 1, pointerType: 'mouse' });
   const drag = async (from, to, steps = 12) => {
     await mouse('mouseMoved', from); await mouse('mousePressed', from, 1);
     for (let i = 1; i <= steps; i++) { await mouse('mouseMoved', { x: from.x + (to.x - from.x) * i / steps, y: from.y + (to.y - from.y) * i / steps }, 1); await b.settle(); }
-    await mouse('mouseReleased', to); await b.settle(); await pause(350);
+    await mouse('mouseReleased', to); await e.canvas(); await e.idle();
   };
   const separator = (selector, side) => e.read(`(()=>{const g=document.querySelector(${JSON.stringify(selector)}).getBoundingClientRect();
     const fits={top:r=>r.width>r.height&&Math.abs(r.bottom-g.top)<=8&&r.left<g.right&&r.right>g.left,bottom:r=>r.width>r.height&&Math.abs(r.top-g.bottom)<=8&&r.left<g.right&&r.right>g.left,left:r=>r.height>r.width&&Math.abs(r.right-g.left)<=8&&r.top<g.bottom&&r.bottom>g.top}[${JSON.stringify(side)}];
@@ -70,7 +73,7 @@ export default async function selections({ e, b, shoot, examples }) {
     if (!await drawerOpen()) await press(button);
     if (!await drawerOpen()) await press(button);
     await e.wait(`!!layerApp.state().customization.drawer && document.querySelector(${JSON.stringify(drawer)})?.checkVisibility()`);
-    await b.settle();
+    await settleLayout(b, drawer, 4);
   };
   const closeDrawer = async () => {
     if (await drawerOpen()) await press(await opener());
@@ -78,7 +81,7 @@ export default async function selections({ e, b, shoot, examples }) {
     await b.settle();
   };
   const project = async name => {
-    await e.provide(name, await readFile(`${examples}/${name}`));
+    await e.provide(name, await example(name));
     await e.load(name);
   };
   const terrarium = async () => {
@@ -146,17 +149,34 @@ export default async function selections({ e, b, shoot, examples }) {
   await project('04-finished.capy');
   await clear();
   await e.invoke('polygon_select');
-  const area = await e.read('(()=>{const c=layerApp.app.camera(),r=layerApp.canvas.getBoundingClientRect(),a=c.work_area,s=r.width/c.viewport[0];return{x:r.x+(a[0]+a[2]/2)*s,bottom:r.y+(a[1]+a[3])*s}})()');
-  const corners = [[-190, -175], [170, -190], [30, -100]].map(([dx, dy]) => ({ x: area.x + dx, y: area.bottom + dy }));
-  for (const p of corners) await clickAt(p, 'pen');
-  const outline = { rect: [Math.min(...corners.map(p => p.x)) - 12, Math.min(...corners.map(p => p.y)) - 12, 0, 0] };
-  await shoot('selections/tools-polygon-bar', { target: [bar, outline], maxWidth: 1920, ready: canvasBar });
-  await e.invoke('cancel_selection');
+  let corners = [], drawn = false;
+  const drawPolygon = async () => {
+    const area = await e.read('(()=>{const c=layerApp.app.camera(),r=layerApp.canvas.getBoundingClientRect(),a=c.work_area,s=r.width/c.viewport[0];return{x:r.x+(a[0]+a[2]/2)*s,bottom:r.y+(a[1]+a[3])*s}})()');
+    corners = [[-190, -175], [170, -190], [30, -100]].map(([dx, dy]) => ({ x: area.x + dx, y: area.bottom + dy }));
+    for (const p of corners) await clickAt(p, 'pen');
+    drawn = true;
+  };
+  await shoot('selections/tools-polygon-bar', {
+    target: () => [bar, { rect: [Math.min(...corners.map(p => p.x)) - 12, Math.min(...corners.map(p => p.y)) - 12, 0, 0] }],
+    maxWidth: 1920, ready: canvasBar,
+    setup: drawPolygon,
+    variant: async () => { if (!drawn) await drawPolygon(); await e.wait(canvasBar); },
+    release: async () => { await e.invoke('cancel_selection'); drawn = false; },
+  });
   await clear();
 
   await e.invoke('auto_select');
-  await fit('tool_settings');
-  await shoot('selections/tools-auto-select-settings', { target: group('tool_settings') });
+  await shoot('selections/tools-auto-select-settings', {
+    target: group('tool_settings'),
+    variant: async () => {
+      await reset();
+      await settleLayout(b, group('tool_settings'), 8);
+      await fit('tool_settings');
+      await settleLayout(b, group('tool_settings'), 8);
+      await b.call('Input.dispatchMouseEvent', { type: 'mouseMoved', x: -20, y: -20 });
+      await e.wait(`!document.querySelector('#hover-tooltip').matches(':popover-open')`);
+    },
+  });
 
   await e.select('Ribbon');
   await e.invoke('rectangle_select');
@@ -165,12 +185,26 @@ export default async function selections({ e, b, shoot, examples }) {
   const edge = await nearBar();
   const around = async () => {
     const box = await e.read(`(r=>({left:r.left,top:r.top,width:r.width,height:r.height}))(document.querySelector('${bar}').getBoundingClientRect())`);
-    return { rect: [box.left, edge - 24, box.width, box.top + box.height - edge + 24] };
+    return [bar, { rect: [box.left, edge - 24, box.width, box.top + box.height - edge + 24] }];
   };
-  await shoot('selections/working-selection-bar', { target: [bar, await around()], maxWidth: 1920, ready: canvasBar });
+  await shoot('selections/working-selection-bar', { target: around, maxWidth: 1920, ready: canvasBar });
   await shoot('selections/working-refine-menu', {
     target: [bar, menu], maxWidth: 1920, ready: canvasBar,
     setup: () => openMenu(`${bar} [data-canvas-bar-menu="refine"]`, menu),
+    variant: async () => {
+      if (await e.read(`!!document.querySelector('${menu}')`)) return;
+      await e.wait(`${canvasBar} && [...document.querySelectorAll('${barItem}')].some(r=>!r.hidden&&r.checkVisibility())`);
+      const { direct, index } = await e.read(`(()=>{const rows=[...document.querySelectorAll('${barItem}')],shown=rows.filter(r=>!r.hidden&&r.checkVisibility()).length,at=rows.findIndex(r=>r.querySelector('[data-canvas-bar-menu="refine"]'));return{direct:at<shown,index:at-shown}})()`);
+      if (direct) await press(`${bar} [data-canvas-bar-menu="refine"]`);
+      else {
+        await press(`${bar} .canvas-action-bar-more`);
+        await e.wait(`!!document.querySelector('${menu}') && document.querySelectorAll('${menu} > button').length>${index}`);
+        await quiet(b);
+        await clickAt(await e.read(`(()=>{const r=document.querySelectorAll('${menu} > button')[${index}].getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2}})()`));
+      }
+      await e.wait(`!!document.querySelector('${menu}') && !document.querySelector('${menu}').getAnimations().length`);
+      await b.call('Input.dispatchMouseEvent', { type: 'mouseMoved', x: -20, y: -20 });
+    },
     teardown: closePopover,
   });
   await e.invoke('fit_canvas');

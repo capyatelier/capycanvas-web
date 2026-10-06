@@ -1,5 +1,5 @@
 import { readFile } from 'node:fs/promises';
-import { canvasBar } from '../shoot.mjs';
+import { canvasBar, settleLayout } from '../shoot.mjs';
 
 const photo = new URL('../photo/terrarium.jpg', import.meta.url);
 const bar = 'section.canvas-action-bar';
@@ -8,16 +8,16 @@ const group = panel => `section.dock-group[data-panel="${panel}"]`;
 const thumbnails = `[...document.querySelectorAll('#layer-rows .layer-thumbnail canvas')].filter(c=>c.checkVisibility()&&c.getBoundingClientRect().width>0).every(c=>c.dataset.previewRevision)`;
 
 export default async function retouch({ e, b, shoot }) {
-  const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
+  const steady = selector => settleLayout(b, selector, 8);
   const mouse = (type, { x, y }, buttons = 0) => b.call('Input.dispatchMouseEvent', { type, x, y, button: type === 'mouseMoved' && !buttons ? 'none' : 'left', buttons, clickCount: 1, pointerType: 'mouse' });
   const clickAt = async p => {
-    await mouse('mouseMoved', p); await mouse('mousePressed', p, 1); await pause(40); await mouse('mouseReleased', p);
-    await b.settle(); await pause(350);
+    await mouse('mouseMoved', p); await mouse('mousePressed', p, 1); await b.settle(); await mouse('mouseReleased', p);
+    await e.canvas();
   };
   const drag = async (from, to, steps = 12) => {
     await mouse('mouseMoved', from); await mouse('mousePressed', from, 1);
     for (let i = 1; i <= steps; i++) { await mouse('mouseMoved', { x: from.x + (to.x - from.x) * i / steps, y: from.y + (to.y - from.y) * i / steps }, 1); await b.settle(); }
-    await mouse('mouseReleased', to); await b.settle(); await pause(350);
+    await mouse('mouseReleased', to); await e.canvas();
   };
   const separator = (selector, side) => e.read(`(()=>{const g=document.querySelector(${JSON.stringify(selector)}).getBoundingClientRect();
     const fits={top:r=>r.width>r.height&&Math.abs(r.bottom-g.top)<=8&&r.left<g.right&&r.right>g.left,bottom:r=>r.width>r.height&&Math.abs(r.top-g.bottom)<=8&&r.left<g.right&&r.right>g.left,
@@ -67,7 +67,7 @@ export default async function retouch({ e, b, shoot }) {
   await terrarium();
   await e.invoke('clone');
   await fit('tool_settings');
-  await shoot('retouch/clone-tool-panel', { target: content('tool_settings') });
+  await shoot('retouch/clone-tool-panel', { target: content('tool_settings'), variant: () => steady(group('tool_settings')) });
   await reset();
 
   const image = await terrarium();
@@ -80,7 +80,7 @@ export default async function retouch({ e, b, shoot }) {
   await clickAt(center);
   await e.wait(sourceBar);
   const [x0, y0, x1, y1] = await e.read('layerApp.state().canvas_bar.anchor');
-  await shoot('retouch/clone-source-bar', { target: [bar, { documentRect: [x0 - 40, y0 - 40, x1 - x0 + 80, y1 - y0 + 80] }], maxWidth: 1920, ready: sourceBar });
+  await shoot('retouch/clone-source-bar', { target: [bar, { documentRect: [x0 - 40, y0 - 40, x1 - x0 + 80, y1 - y0 + 80] }], maxWidth: 1920, ready: sourceBar, variant: () => steady(bar) });
   await e.invoke('brush');
 
   await terrarium();
@@ -90,21 +90,21 @@ export default async function retouch({ e, b, shoot }) {
   const handle = await separator('.dock-group:has(.dock-tab[data-panel="layers"])', 'left');
   await drag(handle, { x: handle.x - 80, y: handle.y });
   await e.wait(thumbnails);
-  await shoot('retouch/dodge-burn-layer', { target: group('layers') });
+  await shoot('retouch/dodge-burn-layer', { target: group('layers'), variant: () => steady(group('layers')) });
 
   const original = await terrarium();
   if (!await e.read(`${command('blend_perceptual')}.selected`)) await e.invoke('blend_perceptual');
   await e.layer({ op: 'select', id: original, mask: false });
   await e.invoke('frequency_separation');
   await e.wait(`!!document.querySelector('${separation} #frequency-separation-value') && layerApp.state().layer_tools.frequency_separation?.radius===4`);
-  await shoot('retouch/frequency-separation-panel', { target: separation });
+  await shoot('retouch/frequency-separation-panel', { target: separation, variant: () => steady(separation) });
   await e.send({ type: 'frequency_separation', action: { op: 'apply' } });
   await e.wait(`!document.querySelector('${separation}') && layerApp.state().layers.find(l=>l.editing)?.label==='High'`);
   const split = await e.read("layerApp.state().layers.find(l=>l.label==='Frequency Separation')");
   if (split.collapsed) await e.layer({ op: 'collapse', id: split.id });
   await e.show('layers');
   await e.wait(thumbnails);
-  await shoot('retouch/frequency-separation-layers', { target: group('layers') });
+  await shoot('retouch/frequency-separation-layers', { target: group('layers'), variant: () => steady(group('layers')) });
   await e.invoke('brush');
   await reset();
 }

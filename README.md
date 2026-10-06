@@ -210,24 +210,26 @@ instructions, not native install dialogs on each operating system.
 ## Regenerate screenshots
 
 ```sh
-APP_REPO=../capycanvas APP_REVISION=v1.0.4 npm run capture:prepare
+APP_REPO=../capycanvas APP_REVISION=origin/main npm run capture:prepare
 npm run capture
 npm run check
 ```
 
 The capture pipeline builds a tracked product revision in an isolated directory,
-then uses headed Chrome on a private Wayland display on Linux. It drives the real
-editor chapter by chapter and saves light and dark images, cropped to the panel,
-bar, menu or dialog each section describes, at twice the pixel density. The
-illustration tutorial is drawn through editor actions and browser pen input and
-saved as the downloadable `.capy` examples. Pin `APP_REVISION` to the released
-version the manual describes. The homepage slides can come from a newer revision
-with `CAPTURE_ONLY=showcase`; `capture.json` records the revision of every image.
+then uses headed Chrome on private Wayland displays on Linux, one browser per
+chapter, all at once. It drives the real editor and saves light and dark images in
+every site language, switching the editor's language in place for each shot,
+cropped to the panel, bar, menu or dialog each section describes, at twice the
+pixel density. The illustration tutorial is drawn through editor actions and
+browser pen input and saved as the downloadable `.capy` examples. Pin
+`APP_REVISION` to the app revision the manual describes. The homepage slides can
+come from a newer revision with `CAPTURE_ONLY=showcase`; `capture.json` records
+the revision of every image.
 
 See [the capture guide](site/scripts/capture/README.md) for dependencies,
 recipes, developing one chapter, and provenance. The adjacent product checkout is
-not modified. The screenshot UI is English; every language has translated alt
-text and captions.
+not modified. Each language's pages and homepage show the editor in that
+language, with translated alt text and captions.
 
 ## Migration comparisons
 

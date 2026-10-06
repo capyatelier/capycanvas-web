@@ -1,8 +1,10 @@
+import { settleLayout } from '../shoot.mjs';
 const dialog = 'dialog[open]';
 const edit = '.header-menu[data-menu="edit"]';
 const proof = '.dock-group:has(.proof-panel)';
 
 export default async function colorManagement({ e, b, shoot }) {
+  const steady = selector => settleLayout(b, selector, 8);
   const press = async label => {
     await b.evaluate(`[...document.querySelectorAll('${dialog} button')].find(b=>b.textContent===${JSON.stringify(label)}).click();void 0`);
     await b.settle();
@@ -77,7 +79,7 @@ export default async function colorManagement({ e, b, shoot }) {
   await e.click('.proof-modes button[value="print"]');
   await b.evaluate(`(()=>{const select=document.querySelector('.proof-panel select[aria-label="Proof profile"]');select.value=[...select.querySelectorAll('optgroup[label="Standard Color Spaces"] option')].find(o=>o.textContent==='Adobe RGB (1998)').value;select.dispatchEvent(new Event('change',{bubbles:true}));})()`);
   await e.wait(`layerApp.app.proof_status().text.startsWith('Proof:') && !layerApp.app.proof_status().needed`);
-  await shoot('color-management/proof-panel-print', { target: await framed(proof), pad: 0 });
+  await shoot('color-management/proof-panel-print', { target: () => framed(proof), pad: 0, variant: () => steady(proof) });
   await e.click('.proof-modes button[value="off"]');
   await e.show('navigator');
 
@@ -88,6 +90,12 @@ export default async function colorManagement({ e, b, shoot }) {
       await e.wait(`!document.querySelector('#screen-status').hidden && document.querySelector('#screen-status').textContent==='Colors clipped'`);
       await e.click('#screen-status');
       await e.wait(`document.querySelector('.screen-details').matches(':popover-open')`);
+    },
+    variant: async () => {
+      await b.evaluate(`document.querySelector('.screen-details').hidePopover();document.querySelector('#screen-status').click();void 0`);
+      await e.wait(`document.querySelector('.screen-details').matches(':popover-open')`);
+      await b.call('Input.dispatchMouseEvent', { type: 'mouseMoved', x: 960, y: 25 });
+      await b.settle();
     },
     teardown: async theme => {
       await b.evaluate(`document.querySelector('.screen-details').hidePopover();void 0`);
@@ -113,7 +121,7 @@ export default async function colorManagement({ e, b, shoot }) {
   await create('Srgb', 'F16');
   await e.invoke('sdr_rendition');
   await e.wait(`!!document.querySelector('.proof-panel [aria-label="SDR balance and contrast"]')`);
-  await shoot('color-management/proof-panel-sdr', { target: await framed(proof), pad: 0 });
+  await shoot('color-management/proof-panel-sdr', { target: () => framed(proof), pad: 0, variant: () => steady(proof) });
   await e.click('.proof-modes button[value="off"]');
   await e.show('navigator');
 }

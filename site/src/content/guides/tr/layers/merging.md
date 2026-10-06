@@ -86,8 +86,8 @@ Tüm görünür katmanları tek katmanda birleştirmek için
 dışındaki pikseller atılır, ancak grupların dışındaki seçim katmanları kalır.
 Görünür katmanlar kilitsiz olmalıdır.
 
-![Tuvalin üstünde “Flattening discards 2 hidden layers” yazan ve Flatten düğmesi bulunan bildirim.](shot:layers/merging-flatten-notice)
+![Tuvalin üstünde “Düzleştirme 2 gizli katmanı atar” yazan ve Görüntüyü düzleştir düğmesi bulunan bildirim.](shot:layers/merging-flatten-notice)
 
 Çizimde gizli katmanlar varsa tuvalin üstündeki bir bildirim bunların sayısını
-verir, örneğin “Flattening discards 2 hidden layers”. Bildirimde **Flatten**
+verir, örneğin “Düzleştirme 2 gizli katmanı atar”. Bildirimde **Görüntüyü düzleştir**
 düğmesini seçene kadar hiçbir şey değişmez.

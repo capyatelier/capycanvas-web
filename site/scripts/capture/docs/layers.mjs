@@ -1,6 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
-import { canvasBar } from '../shoot.mjs';
+import { canvasBar, quiet } from '../shoot.mjs';
 
 const menu = '.panel-context-menu:popover-open';
 const opened = `!!document.querySelector('${menu}')`;
@@ -8,7 +7,7 @@ const layerMenuBar = '.header-menu[data-menu="layer"]';
 const row = id => `.layer-row[data-layer="${id}"]`;
 const swipe = id => `.layer-swipe:has(> ${row(id)})`;
 
-export default async function layers({ e, b, shoot, examples }) {
+export default async function layers({ e, b, shoot, example }) {
   const key = async (key, code = key, windowsVirtualKeyCode = 27) => {
     for (const type of ['rawKeyDown', 'keyUp']) await b.call('Input.dispatchKeyEvent', { type, key, code, windowsVirtualKeyCode });
     await b.settle();
@@ -29,6 +28,21 @@ export default async function layers({ e, b, shoot, examples }) {
     await e.wait(`!${opened}`);
   };
   const menuButton = label => `[...document.querySelectorAll('${menu} button')].find(b=>b.querySelector('.menu-label')?.textContent===${JSON.stringify(label)})`;
+  const menuRows = `document.querySelectorAll('${menu} > button')`;
+  const menuAtRest = `${opened} && !document.querySelector('${menu}').getAnimations().length`;
+  const submenuAtRest = `${menuAtRest} && !!document.querySelector('${menu} .submenu-back')`;
+  const centre = node => e.read(`(()=>{const r=${node}.getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2}})()`);
+  const away = () => b.call('Input.dispatchMouseEvent', { type: 'mouseMoved', x: -20, y: -20 });
+  const reopening = (open, ready = menuAtRest) => ({
+    variant: async () => {
+      if (await e.read(opened)) return;
+      await quiet(b); await e.canvas(); await e.idle();
+      await open();
+      await e.wait(ready);
+      await away();
+    },
+    release: closeMenus,
+  });
   const id = name => e.read(`Number(layerApp.state().layers.find(r=>r.label===${JSON.stringify(name)}).id)`);
   const activeName = () => e.read('layerApp.state().layer_tools.editing_layer.label');
   const checkedNames = () => e.read('layerApp.state().layers.filter(r=>r.selected).map(r=>r.label)');
@@ -48,7 +62,7 @@ export default async function layers({ e, b, shoot, examples }) {
   };
 
   await e.wait(`(()=>{[...document.querySelectorAll('dialog[open] button')].find(b=>b.textContent==='Keep for Later')?.click();return !document.querySelector('dialog[open]');})()`);
-  await e.provide('04-finished.capy', await readFile(`${examples}/04-finished.capy`));
+  await e.provide('04-finished.capy', await example('04-finished.capy'));
   await e.workspace('illustrator');
   if (await e.read('layerApp.state().workspace.zen_mode')) await e.invoke('zen_mode');
   await finished();
@@ -96,44 +110,61 @@ export default async function layers({ e, b, shoot, examples }) {
     ],
   });
 
-  const ribbon = await id('Ribbon'), disc = await id('Disc');
+  const ribbon = await id('Ribbon'), disc = await id('Disc'), shading = await id('Ribbon shading');
+  const openRibbonMenu = () => press(`${row(ribbon)} .layer-name`, 'right');
+  await e.layer({ op: 'select', id: ribbon, mask: false });
   await shoot('layers/panel-menu', {
     target: [menu, row(ribbon)],
     setup: async () => {
-      await press(`${row(ribbon)} .layer-name`, 'right');
+      await openRibbonMenu();
       await e.wait(`${opened} && !!${menuButton('Delete layer')}`);
     },
     teardown: closeMenus,
+    ...reopening(openRibbonMenu),
   });
 
+  let settings;
+  await e.layer({ op: 'select', id: shading, mask: false });
+  const openSettings = async () => {
+    await press(`${row(shading)} .layer-name`, 'right');
+    await e.wait(`${menuAtRest} && ${menuRows}.length>${settings}`);
+    await clickAt(await centre(`${menuRows}[${settings}]`));
+  };
   await shoot('layers/settings-menu', {
     target: menu,
     setup: async () => {
-      await press(`${row(await id('Ribbon shading'))} .layer-name`, 'right');
+      await press(`${row(shading)} .layer-name`, 'right');
       await e.wait(`${opened} && !!${menuButton('Layer Settings')}`);
-      await clickAt(await e.read(`(()=>{const r=${menuButton('Layer Settings')}.getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2}})()`));
+      settings = await e.read(`[...${menuRows}].findIndex(b=>b.querySelector('.menu-label')?.textContent==='Layer Settings')`);
+      await clickAt(await centre(menuButton('Layer Settings')));
       await e.wait(`!!${menuButton('Clip to Layer Below')}`);
     },
     teardown: closeMenus,
+    ...reopening(openSettings, submenuAtRest),
   });
 
+  await e.layer({ op: 'select', id: ribbon, mask: true });
+  const openMaskMenu = () => press(`${row(ribbon)} .layer-thumbnail ~ .layer-thumbnail`, 'right');
   await shoot('layers/masks-menu', {
     target: menu,
     setup: async () => {
-      await press(`${row(ribbon)} [aria-label="Edit layer mask"]`, 'right');
+      await openMaskMenu();
       await e.wait(`${opened} && !!${menuButton('Delete mask')}`);
     },
     teardown: closeMenus,
+    ...reopening(openMaskMenu),
   });
 
   await e.layer({ op: 'select', id: disc, mask: false });
+  const openBlendMenu = () => press('.layer-header .layer-blend');
   await shoot('layers/blend-menu', {
     target: [menu, '.layers-panel .layer-header'],
     setup: async () => {
-      await press('.layer-header .layer-blend');
+      await openBlendMenu();
       await e.wait(`${opened} && !!${menuButton('Luminosity')}`);
     },
     teardown: closeMenus,
+    ...reopening(openBlendMenu),
   });
 
   await e.layer({ op: 'select', id: ribbon, mask: false });
@@ -149,11 +180,16 @@ export default async function layers({ e, b, shoot, examples }) {
     },
   });
 
+  const noticeShown = `document.querySelector('.canvas-notice')?.checkVisibility() && !!document.querySelector('.canvas-notice-text').textContent`;
   await shoot('layers/merging-flatten-notice', {
     target: '.canvas-notice',
     setup: async () => {
       await e.send({ type: 'invoke', command: 'flatten_image' });
-      await e.wait(`document.querySelector('.canvas-notice')?.checkVisibility() && document.querySelector('.canvas-notice-text').textContent.includes('hidden layers')`);
+      await e.wait(`${noticeShown} && document.querySelector('.canvas-notice-text').textContent.includes('hidden layers')`);
+    },
+    variant: async () => {
+      await e.send({ type: 'invoke', command: 'flatten_image' });
+      await e.wait(noticeShown);
     },
     teardown: () => e.wait(`document.querySelector('.canvas-notice').hidden`),
   });
@@ -169,7 +205,7 @@ export default async function layers({ e, b, shoot, examples }) {
   });
 
   const colorRough = await id('Color rough'), sketch = await id('Sketch');
-  const order = () => e.read('layerApp.state().layers.map(r=>r.label).join()');
+  const order = () => e.read('layerApp.state().layers.map(r=>r.id).join()');
   const before = await order();
   let origin;
   await shoot('layers/working-drag', {
@@ -184,11 +220,12 @@ export default async function layers({ e, b, shoot, examples }) {
       await b.settle();
       await e.wait(`document.querySelector('${row(sketch)}').classList.contains('layer-drop-before') && !!document.querySelector('.layer-drag-preview')`);
     },
-    teardown: async () => {
+    release: async () => {
       await mouse('mouseMoved', origin);
       await mouse('mouseReleased', origin);
+      await b.call('Input.dispatchMouseEvent', { type: 'mouseMoved', x: -20, y: -20 });
       await b.settle();
-      await e.wait(`!document.querySelector('.layer-drag-preview')`);
+      await e.wait(`!document.querySelector('.layer-drag-preview') && !document.querySelector(':popover-open')`);
       assert.equal(await order(), before, 'Dropping back on the same row leaves the order unchanged');
     },
   });

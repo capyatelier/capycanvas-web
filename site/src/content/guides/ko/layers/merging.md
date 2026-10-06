@@ -81,8 +81,8 @@ related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers
 숨겨진 레이어와 캔버스 밖의 픽셀은 버려지지만, 그룹 밖에 있는 선택 영역 레이어는
 남습니다. 보이는 레이어는 잠기지 않아야 합니다.
 
-![“Flattening discards 2 hidden layers”라고 표시되고 Flatten 버튼이 있는 캔버스 위의 알림.](shot:layers/merging-flatten-notice)
+![“병합하면 숨긴 레이어 2개가 삭제됩니다.”라고 표시되고 “이미지 병합” 버튼이 있는 캔버스 위의 알림.](shot:layers/merging-flatten-notice)
 
 그림에 숨겨진 레이어가 있으면 캔버스 위의 알림에 그 개수가 표시됩니다(예:
-“Flattening discards 2 hidden layers”). 알림에서 **Flatten**을 선택해야 병합이
+“병합하면 숨긴 레이어 2개가 삭제됩니다.”). 알림에서 **이미지 병합**을 선택해야 병합이
 실행됩니다.

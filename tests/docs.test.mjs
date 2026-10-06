@@ -71,9 +71,12 @@ for (const locale of Object.keys(languages)) {
     if (locale !== 'en') {
       const english = await read('en', slug);
       const englishBody = english.match(/<div class="guide-prose">([\s\S]*?)<\/div>\s*(?:<section|<\/article)/)[1];
-      const shots = text => [...text.matchAll(/data-light="([^"]+)"/g)].map(([, href]) => href);
-      assert.deepEqual(shots(body), shots(englishBody), 'Translations show the same captures in the same order');
-      const outward = list => list.filter(href => !href.startsWith('#'));
+      const shots = (text, own) => [...text.matchAll(/data-light="\/assets\/docs\/([^/"]+)\/([^"]+)-light\.webp"/g)].map(([, folder, name]) => {
+        assert.ok(folder === own || folder === 'shared', `Captures come from the page language: ${folder}/${name}`);
+        return name;
+      });
+      assert.deepEqual(shots(body, locale), shots(englishBody, 'en'), 'Translations show the same captures in the same order');
+      const outward = list => list.filter(href => !href.startsWith('#')).map(href => href.replace(/^\/assets\/docs\/[^/]+\//, '/assets/docs/'));
       const englishLinks = outward([...englishBody.matchAll(/href="([^"]+)"/g)].map(([, href]) => href)).sort();
       assert.deepEqual(outward(links).map(href => href.replace(new RegExp(`^/${locale}/`), '/')).sort(), englishLinks, 'Translations retain the same contextual references');
     }

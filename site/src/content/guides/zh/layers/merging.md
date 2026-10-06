@@ -57,6 +57,6 @@ related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers
 
 选择**图层 > 拼合图像**，可将所有可见图层合并为一个图层。隐藏的图层和画布外的像素会被丢弃，但图层组之外的选区图层会保留。可见图层必须未锁定。
 
-![画布上方显示“Flattening discards 2 hidden layers”的提示，带有 Flatten 按钮。](shot:layers/merging-flatten-notice)
+![画布上方显示“拼合会丢弃 2 个隐藏图层”的提示，带有“拼合图像”按钮。](shot:layers/merging-flatten-notice)
 
-如果画作中有隐藏的图层，画布上方的提示会给出其数量，例如“Flattening discards 2 hidden layers”。在提示中选择 **Flatten** 之前，不会有任何更改。
+如果画作中有隐藏的图层，画布上方的提示会给出其数量，例如“拼合会丢弃 2 个隐藏图层”。在提示中选择 **拼合图像** 之前，不会有任何更改。

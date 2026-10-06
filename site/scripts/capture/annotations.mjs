@@ -1,6 +1,6 @@
 // Inject only editorial annotation chrome. Never replace or repaint app controls.
 // Numbers are language-neutral; each translated guide explains them in its caption.
-export async function annotate(b, targets) {
+export async function annotate(b, targets, first = true) {
   await clearAnnotations(b);
   return b.evaluate(`(()=>{
     const specs=${JSON.stringify(targets)};
@@ -9,8 +9,17 @@ export async function annotate(b, targets) {
     Object.assign(svg.style,{position:'fixed',inset:'0',width:'100%',height:'100%',pointerEvents:'none',zIndex:'2147483647'});
     const add=(tag,attrs)=>{const node=document.createElementNS(svg.namespaceURI,tag);for(const [key,value]of Object.entries(attrs))node.setAttribute(key,value);svg.append(node);return node;};
     const result=specs.map((spec,index)=>{
-      const nodes=[...document.querySelectorAll(spec.selector)].filter(n=>n.checkVisibility()&&n.getBoundingClientRect().width>0&&(!spec.labels||spec.labels.includes(n.querySelector('.menu-label')?.textContent))&&(!spec.text||spec.text.includes(n.textContent.trim())));
-      if(!nodes.length)throw Error('Annotation target missing: '+spec.selector);
+      const visible=n=>n.checkVisibility()&&n.getBoundingClientRect().width>0;
+      let nodes;
+      if(spec.documentRect)nodes=[document.querySelector(spec.selector||'#canvas')];
+      else if(${first}){
+        nodes=[...document.querySelectorAll(spec.selector)].filter(n=>visible(n)&&(!spec.labels||spec.labels.includes(n.querySelector('.menu-label')?.textContent))&&(!spec.text||spec.text.includes(n.textContent.trim())));
+        if(!nodes.length)throw Error('Annotation target missing: '+spec.selector);
+        __capture.pick('callout:'+index,nodes);
+      } else {
+        nodes=__capture.recall('callout:'+index);
+        if(!nodes.every(visible))throw Error('Annotation target hidden in this language: '+spec.selector);
+      }
       const node=nodes[spec.index||0];
       if(!node)throw Error('Annotation target index missing: '+spec.selector);
       let r=node.getBoundingClientRect();

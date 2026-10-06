@@ -89,8 +89,8 @@ un solo livello. I livelli nascosti e i pixel fuori dalla tela vengono scartati,
 ma i livelli di selezione fuori dai gruppi restano. I livelli visibili devono
 essere non bloccati.
 
-![L'avviso sopra la tela con la scritta «Flattening discards 2 hidden layers» e un pulsante Flatten.](shot:layers/merging-flatten-notice)
+![L'avviso sopra la tela con la scritta «L'appiattimento scarta 2 livelli nascosti» e un pulsante Appiattisci immagine.](shot:layers/merging-flatten-notice)
 
 Se il disegno ha livelli nascosti, un avviso sopra la tela ne indica il numero,
-per esempio «Flattening discards 2 hidden layers». Non cambia nulla finché non
-selezioni **Flatten** nell'avviso.
+per esempio «L'appiattimento scarta 2 livelli nascosti». Non cambia nulla finché non
+selezioni **Appiattisci immagine** nell'avviso.

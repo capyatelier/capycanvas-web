@@ -1,3 +1,4 @@
+import { settleLayout } from '../shoot.mjs';
 const teal = [.2, .72, .58, 1];
 const recent = ['#c8553d', '#f2a541', '#3d7ab8', '#6a4c93', '#e76f51', '#2a9d8f'];
 const panel = '.dock-group .color-wheel-control';
@@ -7,6 +8,7 @@ const palettesGroup = '.dock-group:has(.palettes-panel)';
 const chooser = `${palettes} .palette-chooser`;
 
 export default async function color({ e, b, shoot }) {
+  const steady = selector => settleLayout(b, selector, 8);
   const escape = async () => {
     for (const type of ['keyDown', 'keyUp']) await b.call('Input.dispatchKeyEvent', { type, key: 'Escape', code: 'Escape', windowsVirtualKeyCode: 27 });
     await b.settle();
@@ -61,6 +63,7 @@ export default async function color({ e, b, shoot }) {
   await paintColor(teal);
   await shoot('color/panel', {
     target: panel,
+    variant: () => steady(panel),
     callouts: [
       { selector: `${panel} .color-readout`, badge: 'below' },
       { selector: `${panel} .color-shape`, union: true, badge: 'left' },
@@ -108,8 +111,8 @@ export default async function color({ e, b, shoot }) {
   await e.show('palettes');
   await e.click(`${palettes} .palette-swatches > .palette-tile[data-id]:nth-child(4)`);
   await e.wait(`!!document.querySelector('${palettes} .palette-swatches > .palette-tile.selected')`);
-  await shoot('color/palettes-panel', { target: palettesGroup, pad: 4 });
-  await shoot('color/palettes-chooser', { target: palettesGroup, pad: 4, setup: openChooser, teardown: closeChooser });
+  await shoot('color/palettes-panel', { target: palettesGroup, pad: 4, variant: () => steady(palettesGroup) });
+  await shoot('color/palettes-chooser', { target: palettesGroup, pad: 4, setup: openChooser, variant: () => steady(palettesGroup), teardown: closeChooser });
   await shoot('color/palettes-menu', {
     target: '.panel-context-menu',
     setup: async () => {
@@ -145,7 +148,7 @@ export default async function color({ e, b, shoot }) {
 
   await e.invoke('eyedropper');
   await e.wait(`layerApp.state().layer_tools.tool.startsWith('pick_')`);
-  await shoot('color/eyedropper-settings', { target: '[data-control="tool_settings"]' });
+  await shoot('color/eyedropper-settings', { target: '[data-control="tool_settings"]', variant: () => steady('[data-control="tool_settings"]') });
   await escape();
   await e.wait(`!layerApp.state().layer_tools.tool.startsWith('pick_')`);
 
@@ -153,6 +156,6 @@ export default async function color({ e, b, shoot }) {
   await e.wait('layerApp.app.color_panel().hdr===true');
   await paintColor(teal);
   await e.send({ type: 'color', action: { op: 'hdr_intensity', stops: 2 } });
-  await shoot('color/panel-hdr', { target: panel });
+  await shoot('color/panel-hdr', { target: panel, variant: () => steady(panel) });
   await e.invoke('brush');
 }

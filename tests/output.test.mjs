@@ -7,6 +7,7 @@ import { docsUI } from '../site/src/data/docs-ui.mjs';
 import { docTopics } from '../site/src/data/docs-nav.mjs';
 import { content, languages } from '../site/src/data/content.mjs';
 import { releasesUrl } from '../site/src/lib/releases.mjs';
+import { capture } from '../site/src/lib/captures.mjs';
 
 const root=resolve(process.env.SITE_OUTPUT || 'docs');
 const read=path=>readFile(join(root,path),'utf8');
@@ -55,15 +56,17 @@ for(const locale of Object.keys(languages)) {
       assert.equal((html.match(/class="button(?: primary)?"/g)||[]).length,3);
       assert.ok(html.includes(`<a class="button primary" href="/${route(locale,'download')}"`), 'Download is the primary home action');
       for(const slide of ['sketch','paint','photo']) {
-        assert.ok(html.includes(`<source media="(prefers-color-scheme: dark)" srcset="/assets/showcase/${slide}-dark.webp">`));
-        assert.ok(html.includes(`<img src="/assets/showcase/${slide}-light.webp" width="1920" height="1080" alt="${escape(content[locale].home.slides[slide])}"`), `Slide ${slide} has its localized description`);
+        const [light,dark]=['light','dark'].map(theme=>capture(`showcase/${slide}`,locale,theme).file);
+        assert.match(light,new RegExp(`^showcase/(${locale}|shared)/${slide}-light\\.webp$`),`Slide ${slide} shows the editor in the page language`);
+        assert.ok(html.includes(`<source media="(prefers-color-scheme: dark)" srcset="/assets/${dark}">`));
+        assert.ok(html.includes(`<img src="/assets/${light}" width="1920" height="1080" alt="${escape(content[locale].home.slides[slide])}"`), `Slide ${slide} has its localized description`);
         assert.match(html,new RegExp(`<input class="visually-hidden" type="radio" name="workspace" value="${slide}"`));
       }
       assert.equal((html.match(/type="radio"[^>]*checked/g)||[]).length,1,'One workspace is chosen without JavaScript');
       assert.match(html,/value="paint" checked/);
       assert.ok(html.includes(`<legend class="visually-hidden">${content[locale].home.workspaces}</legend>`));
       assert.ok(modules.some(code=>code.includes('[data-showcase]')), 'Showcase behavior is bundled with the home page');
-      assert.match(html,/<meta property="og:image" content="https:\/\/capycanvas.art\/assets\/showcase\/paint-light.webp">/);
+      assert.ok(html.includes(`<meta property="og:image" content="https://capycanvas.art/assets/${capture('showcase/paint',locale,'light').file}">`),'Link previews show the editor in the page language');
       assert.match(html,/<meta property="og:image:width" content="1920">/);
       assert.doesNotMatch(html,/<header|class="nav-links"|href="https:\/\/github.com/);
     } else {
@@ -133,8 +136,10 @@ for(const locale of Object.keys(languages)) {
       for (const section of Object.values(overview.sections)) {
         assert.ok(html.includes(escapeText(section.title)) && html.includes(escapeText(section.text)) && (!section.link || html.includes(escapeText(section.link))), 'Concepts and links are translated');
       }
-      assert.match(html, /src="\/assets\/guides\/illustration-light.webp"/);
-      assert.match(html, /srcset="\/assets\/guides\/illustration-dark.webp"/);
+      const overviewImages=['light','dark'].map(theme=>capture('guides/illustration',locale,theme).file);
+      assert.match(overviewImages[0],new RegExp(`^guides/(${locale}|shared)/illustration-light\\.webp$`),'The overview shows the editor in the page language');
+      assert.ok(html.includes(`src="/assets/${overviewImages[0]}"`));
+      assert.ok(html.includes(`srcset="/assets/${overviewImages[1]}"`));
       assert.ok(html.includes(overview.alt));
       assert.doesNotMatch(html, /<figcaption|class="phase-card"|class="reference-grid"|class="guide-image-hint"/);
       assert.ok(html.indexOf('id="workspace"') < html.indexOf('id="input"') && html.indexOf('id="input"') < html.indexOf('id="color"'));
@@ -167,10 +172,10 @@ test('GitHub Pages output, sitemap, error page and distributable notices',async(
   for(const name of ['LICENSE','LICENSE-MIT','LICENSE-APACHE','BRANDING.md','THIRD_PARTY_NOTICES.md']) assert.equal(await read(name),await readFile(name,'utf8'));
 });
 test('real screenshots are distinct, compressed WebP images with provenance',async()=>{
-  const images=await Promise.all(['light','dark'].map(t=>readFile(join(root,`assets/guides/illustration-${t}.webp`))));
+  const images=await Promise.all(['light','dark'].map(t=>readFile(join(root,'assets',capture('guides/illustration','en',t).file))));
   for(const data of images) { assert.equal(data.subarray(0,4).toString(),'RIFF'); assert.equal(data.subarray(8,12).toString(),'WEBP'); assert.ok(data.length>10000&&data.length<900000); }
   assert.notDeepEqual(images[0],images[1]);
-  const capture=JSON.parse(await read('assets/capture.json')); assert.ok(capture.captures.every(entry=>/^[a-f0-9]{40}$/.test(entry.revision)&&capture.sources[entry.revision])); assert.match(capture.artwork,/abstract study/);
+  const manifest=JSON.parse(await read('assets/capture.json')); assert.ok(manifest.captures.every(entry=>/^[a-f0-9]{40}$/.test(entry.revision)&&manifest.sources[entry.revision])); assert.match(manifest.artwork,/abstract study/);
 });
 test('favicon cache version matches the shipped icon',async()=>{
   const hash=createHash('sha256').update(await readFile(join(root,'assets/favicon.png'))).digest('hex').slice(0,12);

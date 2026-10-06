@@ -57,6 +57,6 @@ related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers
 
 **レイヤー > 画像を統合**を選ぶと、すべての表示中のレイヤーを1枚に結合します。非表示のレイヤーとキャンバス外の画素は破棄されますが、グループ外の選択範囲レイヤーは残ります。表示中のレイヤーはロックされていない必要があります。
 
-![キャンバス上の通知。「Flattening discards 2 hidden layers」と表示され、Flattenボタンがあります。](shot:layers/merging-flatten-notice)
+![キャンバス上の通知。「統合すると、非表示のレイヤー2個が破棄されます。」と表示され、「画像を統合」ボタンがあります。](shot:layers/merging-flatten-notice)
 
-作品に非表示のレイヤーがあるときは、キャンバス上の通知にその数が表示されます（例：「Flattening discards 2 hidden layers」）。通知で**Flatten**を選択するまで、何も変わりません。
+作品に非表示のレイヤーがあるときは、キャンバス上の通知にその数が表示されます（例：「統合すると、非表示のレイヤー2個が破棄されます。」）。通知で**画像を統合**を選択するまで、何も変わりません。

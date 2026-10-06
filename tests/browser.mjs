@@ -51,13 +51,13 @@ try {
     check(metrics.labels&&metrics.headings===1&&!metrics.broken,`Accessibility/asset basics ${label}`);
     check(metrics.borders.length===0,`Unexpected borders ${label}: ${metrics.borders}`);
     if(page==='home') {
-      check(metrics.source.endsWith(`showcase/paint-${theme}.webp`),`Wrong screenshot ${label}`);
+      check(new RegExp(`/assets/showcase/(${locale}|shared)/paint-${theme}\\.webp$`).test(metrics.source),`Wrong screenshot ${label}`);
       check(metrics.shown.join()==='paint',`Paint slide is shown first ${label}: ${metrics.shown}`);
       check(metrics.scrollHeight<=height,`Home should fit viewport ${label}: ${metrics.scrollHeight}`);
       check(Math.abs(metrics.shotRatio-16/9)<.01,`Screenshot aspect ratio ${label}`);
     }
     if(page==='documentation') {
-      check(metrics.overviewSource.endsWith(`illustration-${theme}.webp`),`Overview image theme ${label}`);
+      check(new RegExp(`/assets/guides/(${locale}|shared)/illustration-${theme}\\.webp$`).test(metrics.overviewSource),`Overview image theme and language ${label}`);
       check(Math.abs(metrics.overviewRatio-16/9)<.01,`Overview image aspect ratio ${label}`);
       check(metrics.overviewLink===metrics.overviewSource,`Overview full-size image ${label}`);
     }

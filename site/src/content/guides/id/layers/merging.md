@@ -84,8 +84,8 @@ Pilih **Lapisan > Ratakan Gambar** untuk menggabungkan setiap lapisan yang terli
 menjadi satu lapisan. Lapisan tersembunyi dan piksel di luar kanvas dibuang, tetapi
 lapisan seleksi di luar grup tetap ada. Lapisan yang terlihat harus tidak terkunci.
 
-![Pemberitahuan di atas kanvas bertuliskan "Flattening discards 2 hidden layers", dengan tombol Flatten.](shot:layers/merging-flatten-notice)
+![Pemberitahuan di atas kanvas bertuliskan "Meratakan gambar akan membuang 2 lapisan tersembunyi", dengan tombol Ratakan Gambar.](shot:layers/merging-flatten-notice)
 
 Jika gambar memiliki lapisan tersembunyi, pemberitahuan di atas kanvas menyebutkan
-jumlahnya, misalnya "Flattening discards 2 hidden layers". Tidak ada yang berubah
-sampai Anda memilih **Flatten** di pemberitahuan itu.
+jumlahnya, misalnya "Meratakan gambar akan membuang 2 lapisan tersembunyi". Tidak ada yang berubah
+sampai Anda memilih **Ratakan Gambar** di pemberitahuan itu.

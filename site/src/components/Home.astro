@@ -1,6 +1,7 @@
 ---
 import { content } from '../data/content.mjs';
 import { appUrl, route, type Locale } from '../lib/site';
+import { capturePair } from '../lib/captures.mjs';
 interface Props { locale: Locale }
 const { locale } = Astro.props;
 const t = content[locale];
@@ -9,13 +10,14 @@ const slides = [
   { id: 'paint', label: 'Paint' },
   { id: 'photo', label: 'Photo' },
 ] as const;
+const images = Object.fromEntries(slides.map(({ id }) => [id, capturePair(`showcase/${id}`, locale)]));
 ---
 <main id="main" class="hero">
   <h1 class="visually-hidden">{t.home.title}</h1>
   <div class="workspace showcase" data-showcase>
     {slides.map(({ id }) => <picture class="showcase-frame" data-slide={id}>
-      <source media="(prefers-color-scheme: dark)" srcset={`/assets/showcase/${id}-dark.webp`} />
-      <img src={`/assets/showcase/${id}-light.webp`} width="1920" height="1080" alt={t.home.slides[id]} loading={id === 'paint' ? 'eager' : 'lazy'} fetchpriority={id === 'paint' ? 'high' : 'low'} decoding="async" />
+      <source media="(prefers-color-scheme: dark)" srcset={images[id].dark} />
+      <img src={images[id].light} width="1920" height="1080" alt={t.home.slides[id]} loading={id === 'paint' ? 'eager' : 'lazy'} fetchpriority={id === 'paint' ? 'high' : 'low'} decoding="async" />
     </picture>)}
     <fieldset class="showcase-switcher">
       <legend class="visually-hidden">{t.home.workspaces}</legend>

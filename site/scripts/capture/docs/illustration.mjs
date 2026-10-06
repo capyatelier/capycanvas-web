@@ -1,4 +1,4 @@
-import { canvasBar } from '../shoot.mjs';
+import { canvasBar, settled } from '../shoot.mjs';
 
 // Original abstract study drawn with real browser pen input. SVG paths only
 // sample coordinates; all color, texture, masks and clipping belong to the app.
@@ -24,7 +24,7 @@ export const presets = { gPen: 1, pencil: 2, eraser: 3, paintbrush: 4, airbrush:
 
 const toolSet = '.dock-group:has(.dock-tab[data-panel="brushes"])';
 const rows = { selector: '#layer-rows .layer-row', all: true };
-const barWith = label => `${canvasBar} && [...document.querySelectorAll('.canvas-action-bar button')].some(b=>b.checkVisibility()&&b.getAttribute('aria-label')===${JSON.stringify(label)})`;
+const barWith = command => `${canvasBar} && !!document.querySelector('.canvas-action-bar [data-command="${command}"]')?.checkVisibility()`;
 const navigator = '.dock-group:has(.dock-tab[data-panel="navigator"])';
 
 async function escape(b) {
@@ -47,9 +47,9 @@ async function growLayers(e, b, distance = 230) {
 async function layerMenu(e, b, name, submenu) {
   await b.evaluate(`(()=>{const id=layerApp.state().layers.find(r=>r.label===${JSON.stringify(name)}).id;const row=document.querySelector('.layer-row[data-layer="'+String(id)+'"]');if(!row)throw Error('No row for '+${JSON.stringify(name)}+' '+String(id)+' in '+JSON.stringify([...document.querySelectorAll('.layer-row')].map(r=>r.dataset.layer)));row.scrollIntoView({block:'nearest'});const r=row.getBoundingClientRect();row.dispatchEvent(new MouseEvent('contextmenu',{bubbles:true,clientX:r.left+150,clientY:r.top+15,button:2}));})()`);
   await e.wait(`[...document.querySelectorAll('.panel-context-menu')].some(m=>m.checkVisibility())`);
-  if (submenu) {
-    await b.evaluate(`[...document.querySelectorAll('.panel-context-menu button')].filter(b=>b.checkVisibility()).find(b=>b.textContent.trim()===${JSON.stringify(submenu)}).click()`);
-    await e.wait(`[...document.querySelectorAll('.panel-context-menu button')].some(b=>b.checkVisibility()&&b.textContent.trim().startsWith('New clipping layer'))`);
+  if (submenu !== undefined) {
+    await b.evaluate(`[...document.querySelectorAll('.panel-context-menu button')].filter(b=>b.checkVisibility())[${submenu}].click()`);
+    await e.wait(`[...document.querySelectorAll('.panel-context-menu .submenu-back')].some(b=>b.checkVisibility())`);
   }
   await b.settle();
 }
@@ -86,7 +86,7 @@ export default async function illustration({ e, b, shoot, record, examples }) {
   for (const d of ['M132 389 L656 389', 'M396 133 L396 645', 'M828 192 C1044 390 423 483 643 711 S806 898 608 1004', 'M170 651 L599 981']) await e.draw(d, { taper: true });
   await e.lasso('M800 780 L1110 780 L1110 1080 L800 1080 Z');
   await e.invoke('scale_rotate');
-  await shoot('illustration/draft-transform', { target: ['.canvas-action-bar', { documentRect: [790, 770, 330, 320] }], pad: 16, maxWidth: 1700, ready: barWith('Apply transform') });
+  await shoot('illustration/draft-transform', { target: ['.canvas-action-bar', { documentRect: [790, 770, 330, 320] }], pad: 16, maxWidth: 1700, ready: barWith('apply_transform') });
   await e.invoke('apply_transform'); await e.invoke('deselect');
   await e.brush(presets.pencil, 8, colors.ink, .8);
   await e.save('01-sketch.capy', examples);
@@ -107,7 +107,7 @@ export default async function illustration({ e, b, shoot, record, examples }) {
   for (const [name, key] of [['Block', 'block'], ['Disc', 'disc'], ['Ribbon', 'ribbon']]) {
     await e.add(name); await e.brush(presets.paintbrush, 40, colors[key]);
     await e.lasso(shapes[key]);
-    if (name === 'Block') await shoot('illustration/mask-selection-bar', { target: ['.canvas-action-bar', { documentRect: [175, 590, 413, 450] }], pad: 16, maxWidth: 1700, ready: barWith('Invert selection') });
+    if (name === 'Block') await shoot('illustration/mask-selection-bar', { target: ['.canvas-action-bar', { documentRect: [175, 590, 413, 450] }], pad: 16, maxWidth: 1700, ready: barWith('invert_selection') });
     await e.invoke('mask_selection');
     await e.select(name); await e.invoke('select_all'); await e.invoke('fill_selection'); await e.invoke('deselect');
   }
@@ -117,12 +117,35 @@ export default async function illustration({ e, b, shoot, record, examples }) {
   await e.select('Ribbon');
   await growLayers(e, b);
   await shoot('illustration/mask-layers', { target: rows });
+  const quiescent = async () => {
+    let steady = 0, last = null;
+    while (steady < 4) {
+      const revision = await e.read('layerApp.state().revision');
+      steady = revision === last ? steady + 1 : 0;
+      last = revision;
+      await b.settle();
+    }
+  };
+  const layerMenuOpen = `[...document.querySelectorAll('.panel-context-menu')].some(m=>m.checkVisibility())`;
+  const closeLayerMenu = async () => {
+    for (let i = 0; i < 3 && await e.read(layerMenuOpen); i++) await escape(b);
+    await e.wait(`!(${layerMenuOpen})`);
+  };
+  const newAt = await e.read(`(()=>{const id=layerApp.state().layers.find(r=>r.label==='Ribbon').id;return layerApp.app.layer_menu(id,false).sections.flat().findIndex(item=>item.label==='New')})()`);
+  const openNewMenu = async () => {
+    await settled(b);
+    await layerMenu(e, b, 'Ribbon', newAt);
+  };
   await shoot('illustration/render-new-menu', {
     target: { selector: '.panel-context-menu', all: true }, pad: 4,
-    setup: () => layerMenu(e, b, 'Ribbon', 'New'),
-    teardown: async () => {
-      for (let i = 0; i < 3 && await e.read(`[...document.querySelectorAll('.panel-context-menu')].some(m=>m.checkVisibility())`); i++) await escape(b);
+    setup: openNewMenu,
+    variant: async () => {
+      if (await e.read(layerMenuOpen)) return;
+      await quiescent();
+      await openNewMenu();
     },
+    release: closeLayerMenu,
+    teardown: closeLayerMenu,
   });
 
   await e.select('Ribbon'); await e.add('Ribbon shading', { clipped: true });
@@ -151,6 +174,8 @@ export default async function illustration({ e, b, shoot, record, examples }) {
   await shoot('illustration/render-layers', { target: rows });
   await e.invoke('undo_workspace');
   await e.invoke('fit_canvas');
+  await e.visible('Ribbon shading', false);
+  await e.visible('Ribbon shading', true);
   await record('docs/illustration/overview');
   await record('guides/illustration');
 }

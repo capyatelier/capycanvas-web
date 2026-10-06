@@ -55,6 +55,7 @@ export async function checkDocumentation(b, host, check) {
     check(metrics.background === (theme === 'dark' ? 'rgb(51, 51, 51)' : 'rgb(237, 237, 237)'), `Guide theme ${label}`);
     if (metrics.image) {
       check(metrics.image.endsWith(`-${theme}.webp`), `Guide screenshots follow appearance ${label}`);
+      check(new RegExp(`/assets/docs/(${locale}|shared)/`).test(metrics.image), `Guide screenshots are in the page language ${label}`);
       check(metrics.imageLink === metrics.image, `Full-size link follows the displayed screenshot ${label}`);
     }
     check(metrics.images.every(Boolean) && metrics.wide === 0, `Guide screenshots load and fit ${label}`);

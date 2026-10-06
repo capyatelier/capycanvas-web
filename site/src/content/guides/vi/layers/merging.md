@@ -79,8 +79,8 @@ Chọn **Lớp > Gộp phẳng ảnh** để gộp mọi lớp đang hiển th�
 đang ẩn và pixel nằm ngoài khung vẽ bị bỏ, nhưng các lớp vùng chọn nằm ngoài nhóm vẫn
 được giữ. Các lớp đang hiển thị phải chưa khóa.
 
-![Thông báo trên khung vẽ ghi “Flattening discards 2 hidden layers”, với nút Flatten.](shot:layers/merging-flatten-notice)
+![Thông báo trên khung vẽ ghi “Gộp phẳng sẽ bỏ 2 lớp ẩn”, với nút Gộp phẳng ảnh.](shot:layers/merging-flatten-notice)
 
 Nếu bản vẽ có lớp đang ẩn, một thông báo trên khung vẽ cho biết số lớp đó, ví dụ
-“Flattening discards 2 hidden layers”. Bản vẽ không thay đổi cho đến khi bạn chọn
-**Flatten** trong thông báo.
+“Gộp phẳng sẽ bỏ 2 lớp ẩn”. Bản vẽ không thay đổi cho đến khi bạn chọn
+**Gộp phẳng ảnh** trong thông báo.

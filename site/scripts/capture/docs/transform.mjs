@@ -1,5 +1,5 @@
 import { readFile } from 'node:fs/promises';
-import { canvasBar } from '../shoot.mjs';
+import { canvasBar, settleLayout } from '../shoot.mjs';
 
 const photo = new URL('../photo/terrarium.jpg', import.meta.url);
 const bar = 'section.canvas-action-bar';
@@ -7,19 +7,19 @@ const choice = '.toolbar-editor-popover:popover-open';
 const header = '.header-menu[open] .popover';
 const group = panel => `section.dock-group[data-panel="${panel}"]`;
 
-export default async function transform({ e, b, shoot, examples }) {
-  const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
+export default async function transform({ e, b, shoot, example }) {
+  const steady = selector => settleLayout(b, selector, 8);
   const point = selector => e.read(`(()=>{const node=[...document.querySelectorAll(${JSON.stringify(selector)})].find(n=>n.checkVisibility()&&n.getBoundingClientRect().width>0);if(!node)throw Error('Missing control: '+${JSON.stringify(selector)});const r=node.getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2}})()`);
   const mouse = (type, { x, y }, buttons = 0) => b.call('Input.dispatchMouseEvent', { type, x, y, button: type === 'mouseMoved' && !buttons ? 'none' : 'left', buttons, clickCount: 1, pointerType: 'mouse' });
   const clickAt = async p => {
     await mouse('mouseMoved', p); await mouse('mousePressed', p, 1); await mouse('mouseReleased', p);
-    await b.settle(); await pause(350);
+    await e.canvas();
   };
   const press = async selector => clickAt(await point(selector));
   const drag = async (from, to, steps = 12) => {
     await mouse('mouseMoved', from); await mouse('mousePressed', from, 1);
     for (let i = 1; i <= steps; i++) { await mouse('mouseMoved', { x: from.x + (to.x - from.x) * i / steps, y: from.y + (to.y - from.y) * i / steps }, 1); await b.settle(); }
-    await mouse('mouseReleased', to); await b.settle(); await pause(350);
+    await mouse('mouseReleased', to); await e.canvas();
   };
   const screen = async ([x, y]) => e.read(`(()=>{const c=layerApp.app.camera(),r=layerApp.canvas.getBoundingClientRect();return{x:r.x+(${x}*c.zoom+c.translation[0])*r.width/c.viewport[0],y:r.y+(${y}*c.zoom+c.translation[1])*r.height/c.viewport[1]}})()`);
   const size = () => e.read('(t=>[t.width,t.height])(layerApp.state().tabs[0])');
@@ -64,6 +64,16 @@ export default async function transform({ e, b, shoot, examples }) {
     }
     await e.idle(); await b.settle();
   };
+  const roomy = async panel => {
+    const owner = `.dock-group:has(.dock-tab[data-panel="${panel}"])`;
+    for (let attempt = 0; attempt < 8 && await overflow(panel) > 0; attempt++) {
+      const handle = await separator(owner, 'right');
+      if (!handle) break;
+      await drag(handle, { x: handle.x + 48, y: handle.y });
+      await e.idle(); await b.settle();
+    }
+    if (await overflow(panel) > 0) throw Error(`The ${panel} panel shows all its controls`);
+  };
   const reset = async () => {
     if (await e.read("layerApp.state().commands.find(c=>c.id==='reset_layout').enabled")) {
       await e.invoke('reset_layout');
@@ -75,7 +85,7 @@ export default async function transform({ e, b, shoot, examples }) {
   };
   const workspace = async id => { await e.workspace(id); await reset(); };
   const project = async name => {
-    await e.provide(name, await readFile(`${examples}/${name}`));
+    await e.provide(name, await example(name));
     await e.load(name);
   };
   const terrarium = async () => {
@@ -117,17 +127,22 @@ export default async function transform({ e, b, shoot, examples }) {
   await e.invoke('fit_canvas');
   await e.invoke('scale_rotate');
   await e.wait(canvasBar);
-  await shoot('transform/transform-bar', { target: [bar, await anchor()], maxWidth: 1920, ready: canvasBar });
+  await shoot('transform/transform-bar', { target: [bar, await anchor()], maxWidth: 1920, ready: canvasBar, variant: () => steady(bar) });
   await e.invoke('transform_warp');
   await e.wait(canvasBar);
-  await shoot('transform/warp-bar', { target: [bar, await strip()], maxWidth: 1920, ready: canvasBar });
+  await shoot('transform/warp-bar', { target: async () => [bar, await strip()], maxWidth: 1920, ready: canvasBar, variant: () => steady(bar) });
   await e.invoke('cancel_transform');
   await reset();
   await e.invoke('fit_canvas');
   await e.invoke('scale_rotate');
-  await grow('tool_settings');
+  await e.show('tool_settings');
   const skew = await e.read(`[...document.querySelectorAll('${group('tool_settings')} [data-tool-setting]')].at(-1).dataset.toolSetting`);
-  await shoot('transform/transform-numbers', { target: [`${group('tool_settings')} .dock-tabs`, `${group('tool_settings')} [data-tool-setting="${skew}"]`] });
+  await shoot('transform/transform-numbers', {
+    target: [`${group('tool_settings')} .dock-tabs`, `${group('tool_settings')} [data-tool-setting="${skew}"]`],
+    setup: () => grow('tool_settings'),
+    variant: async () => { await steady(group('tool_settings')); await grow('tool_settings'); await steady(group('tool_settings')); },
+    teardown: reset,
+  });
   await e.invoke('cancel_transform');
   await reset();
 
@@ -162,8 +177,12 @@ export default async function transform({ e, b, shoot, examples }) {
   await e.invoke('fit_canvas');
   await e.invoke('crop');
   await e.wait(cropping);
-  await fit('tool_settings');
-  await shoot('transform/crop-tool-panel', { target: content('tool_settings') });
+  await shoot('transform/crop-tool-panel', {
+    target: content('tool_settings'), ready: cropping,
+    setup: () => fit('tool_settings'),
+    variant: async () => { await steady(group('tool_settings')); await roomy('tool_settings'); await steady(group('tool_settings')); },
+    teardown: reset,
+  });
   await e.invoke('cancel_transform');
   await reset();
 
@@ -179,10 +198,20 @@ export default async function transform({ e, b, shoot, examples }) {
   await e.wait(cropping);
   await drag(await screen([0, 0]), await screen([width * .1, height * .1]));
   await e.wait(cropping);
-  await shoot('transform/crop-bar', { target: [bar, { documentRect: [0, 0, width, height] }], maxWidth: 1920, ready: cropping });
+  await shoot('transform/crop-bar', { target: [bar, { documentRect: [0, 0, width, height] }], maxWidth: 1920, ready: cropping, variant: () => steady(bar) });
+  const ratioButton = `${bar} [data-toolbar-choice="crop-ratio"] > button`;
+  const ratioMenu = async () => {
+    await press(ratioButton);
+    await e.wait(`!!document.querySelector('${choice}')`);
+  };
   await shoot('transform/crop-ratio-menu', {
     target: [bar, choice], maxWidth: 1920, ready: cropping,
-    setup: async () => { await press(`${bar} [data-toolbar-choice="crop-ratio"] > button`); await e.wait(`!!document.querySelector('${choice}')`); },
+    setup: ratioMenu,
+    variant: async () => {
+      if (await e.read(`!!document.querySelector('${choice}')`)) return;
+      await ratioMenu();
+      await mouse('mouseMoved', { x: -20, y: -20 });
+    },
     teardown: async () => { await b.evaluate(`document.querySelector('${choice}')?.hidePopover();void 0`); await e.wait(`!document.querySelector('${choice}')`); },
   });
   await e.invoke('cancel_transform');

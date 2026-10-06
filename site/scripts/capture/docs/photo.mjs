@@ -33,8 +33,7 @@ const specks = [
 const healSource = [1030, 1541];
 const smudge = [[1098, 1541], [1160, 1541]];
 
-export default async function photoTutorial({ e, b, shoot, review }) {
-  const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
+export default async function photoTutorial({ e, b, shoot, message, review }) {
   const center = selector => e.read(`(()=>{const node=[...document.querySelectorAll(${JSON.stringify(selector)})].find(n=>n.checkVisibility()&&n.getBoundingClientRect().width>0);if(!node)throw Error('Missing control: '+${JSON.stringify(selector)});const r=node.getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2}})()`);
   const mouse = (type, { x, y }, buttons = 0) => b.call('Input.dispatchMouseEvent', { type, x, y, button: type === 'mouseMoved' && !buttons ? 'none' : 'left', buttons, clickCount: type === 'mouseMoved' ? 0 : 1 });
   const clickAt = async point => {
@@ -53,6 +52,7 @@ export default async function photoTutorial({ e, b, shoot, review }) {
     await b.evaluate(`document.querySelector('${menu}')?.hidePopover();void 0`);
     await e.wait(`!document.querySelector('${menu}')`);
   };
+  const parkAway = () => mouse('mouseMoved', { x: -20, y: -20 });
   const closeChoice = async () => {
     await b.evaluate(`document.querySelector('.toolbar-editor-popover:popover-open')?.hidePopover();void 0`);
     await e.wait(`!document.querySelector('${choiceMenu}')`);
@@ -130,6 +130,11 @@ export default async function photoTutorial({ e, b, shoot, review }) {
     maxWidth: 1920,
     ready: barKind('crop'),
     setup: openRatio,
+    variant: async () => {
+      if (await e.read(`!!document.querySelector('${choiceMenu}')`)) return;
+      await openRatio();
+      await parkAway();
+    },
     teardown: closeChoice,
   });
 
@@ -159,8 +164,7 @@ export default async function photoTutorial({ e, b, shoot, review }) {
     const before = await revision(retouch);
     await e.stroke(points);
     await repainted(retouch, before);
-    await b.evaluate('layerApp.app.wait_for_canvas().then(()=>null)');
-    await pause(400);
+    await e.canvas();
   }
 
   await e.invoke('heal');
@@ -188,12 +192,19 @@ export default async function photoTutorial({ e, b, shoot, review }) {
   await e.invoke('fit_canvas');
 
   await e.select('Retouch');
-  await effect('curves', 'rgb', { kind: 'curve', value: [[0, 0], [.25, .21], [.75, .8], [1, 1]] });
+  const curves = await effect('curves', 'rgb', { kind: 'curve', value: [[0, 0], [.25, .21], [.75, .8], [1, 1]] });
   await e.show('properties');
-  await e.wait(curveAnalysed);
+  const curvesExact = locale => `layerApp.state().tonal_histogram.status===${JSON.stringify(message('resources-histogram-exact', locale))}`;
+  await e.wait(`${curveAnalysed}&&${curvesExact('en')}`);
   await shoot('photo/adjust-curves', {
     target: ['.dock-tab[data-panel="properties"]', `${curvesPanel} h3`, `${curvesPanel} .property-toolbar`, `${curvesPanel} .curve-coordinates`],
-    ready: curveAnalysed,
+    ready: `${curveAnalysed}&&${curvesExact('en')}`,
+    variant: async locale => {
+      if (locale === 'en') return;
+      await e.layer({ op: 'select', id: retouch, mask: false });
+      await e.layer({ op: 'select', id: curves, mask: false });
+      await e.wait(curvesExact(locale));
+    },
   });
   await effect('vibrance', 'vibrance', { kind: 'number', value: 25 });
 
@@ -203,21 +214,36 @@ export default async function photoTutorial({ e, b, shoot, review }) {
   await e.send({ type: 'selection', action: { op: 'resize_radius', radius: 20 } });
   await e.send({ type: 'selection', action: { op: 'apply_resize' } });
   await e.wait(`!layerApp.state().layer_tools.selection_resize&&layerApp.state().layer_tools.has_selection&&${barKind('selection')}`);
-  const adjustReady = `(()=>{const state=layerApp.state();if(state.canvas_bar?.context.kind!=='selection')return false;const tone=layerApp.app.canvas_bar_choice_menu(state.canvas_bar.context,'adjust')?.sections.flat().find(item=>item.label==='Tone');return !!tone&&tone.enabled!==false&&tone.sections.flat().every(item=>item.enabled)})()`;
+  const adjustMenu = `layerApp.app.canvas_bar_choice_menu(layerApp.state().canvas_bar.context,'adjust')`;
+  await e.wait(`${barKind('selection')}&&!!${adjustMenu}`);
+  const toneIndex = await e.read(`${adjustMenu}.sections.flat().findIndex(item=>item.label==='Tone')`);
+  const shadowsIndex = await e.read(`${adjustMenu}.sections.flat()[${toneIndex}].sections.flat().findIndex(item=>item.label==='Shadows/Highlights')`);
+  const adjustReady = `(()=>{const state=layerApp.state();if(state.canvas_bar?.context.kind!=='selection')return false;const tone=layerApp.app.canvas_bar_choice_menu(state.canvas_bar.context,'adjust')?.sections.flat()[${toneIndex}];return !!tone&&tone.enabled!==false&&tone.sections.flat().every(item=>item.enabled)})()`;
   const openAdjust = async () => {
-    await e.wait(`${barKind('selection')}&&${adjustReady}`);
-    const adjust = `${bar} [data-canvas-bar-menu="adjust"]`;
-    const onBar = await e.read(`(n=>!!n&&!n.closest('.canvas-action-bar-item,.canvas-action-bar-completion').hidden)(document.querySelector('${adjust}'))`);
-    if (onBar) await press(adjust);
-    else { await press(`${bar} .canvas-action-bar-more`); await chooseRow(await e.read(`document.querySelector('${adjust}').getAttribute('aria-label')`)); }
-    await e.wait(`!!document.querySelector('${menu}')`);
-    await chooseRow('Tone');
-    await e.wait(`!!${menuRow('Shadows/Highlights')}&&![...document.querySelectorAll('${menu} button:not(.submenu-back)')].some(b=>b.disabled)`);
+    for (let attempt = 1; ; attempt++) {
+      await e.wait(`${barKind('selection')}&&${adjustReady}`);
+      const labels = await e.read(`(()=>{const tone=${adjustMenu}.sections.flat()[${toneIndex}];return{tone:tone.label,shadows:tone.sections.flat()[${shadowsIndex}].label}})()`);
+      const adjust = `${bar} [data-canvas-bar-menu="adjust"]`;
+      const onBar = await e.read(`(n=>!!n&&!n.closest('.canvas-action-bar-item,.canvas-action-bar-completion').hidden)(document.querySelector('${adjust}'))`);
+      if (onBar) await press(adjust);
+      else { await press(`${bar} .canvas-action-bar-more`); await chooseRow(await e.read(`document.querySelector('${adjust}').getAttribute('aria-label')`)); }
+      await e.wait(`!!document.querySelector('${menu}')`);
+      await chooseRow(labels.tone);
+      const enabled = `!!${menuRow(labels.shadows)}&&![...document.querySelectorAll('${menu} button:not(.submenu-back)')].some(b=>b.disabled)`;
+      if (await b.until(enabled, 3000).then(() => true, () => false)) return;
+      assert.ok(attempt < 5, 'The Tone menu opens with its tools enabled');
+      await closeMenu();
+    }
   };
   await shoot('photo/adjust-bar', {
     target: [menu, bar, { documentRect: [170, 436, 750, 670] }],
     maxWidth: 1920,
     setup: openAdjust,
+    variant: async () => {
+      if (await e.read(`!!document.querySelector('${menu}')`)) return;
+      await openAdjust();
+      await parkAway();
+    },
     teardown: closeMenu,
   });
   await openAdjust();
@@ -250,12 +276,22 @@ export default async function photoTutorial({ e, b, shoot, review }) {
     assert.deepEqual(['Destination', 'Format', 'Quality', 'Pixel size', 'Maximum width (px)', 'Maximum height (px)'].map(label => fields[label]), ['Web / Share', 'JPEG image', '90', 'Fit within bounds', '2048', '2048'], `The JPEG export settings: ${JSON.stringify(fields)}`);
     assert.equal(fields.Metadata, undefined, 'The photo carries no metadata to export');
   };
-  const scrollToDestination = () => b.evaluate(`(()=>{const d=document.querySelector('${dialog}');const row=[...d.querySelectorAll('label.document-size')].find(l=>l.firstChild.textContent.trim()==='Destination');d.scrollTop+=row.getBoundingClientRect().top-d.getBoundingClientRect().top-8;})()`);
+  let destinationAt;
+  const scrollToDestination = () => b.evaluate(`(()=>{const d=document.querySelector('${dialog}');const row=[...d.querySelectorAll('label.document-size')][${destinationAt}];d.scrollTop+=row.getBoundingClientRect().top-d.getBoundingClientRect().top-8;})()`);
   const cancel = async () => {
     await b.evaluate(`[...document.querySelectorAll('${dialog} button')].find(b=>b.textContent==='Cancel').click()`);
     await e.wait(`!document.querySelector('${dialog}')`);
   };
-  await shoot('photo/export-jpeg', { target: dialog, setup: async () => { await exportForm(); await scrollToDestination(); }, teardown: cancel });
+  await shoot('photo/export-jpeg', {
+    target: dialog,
+    setup: async () => {
+      await exportForm();
+      destinationAt = await e.read(`[...document.querySelectorAll('${dialog} label.document-size')].findIndex(l=>l.firstChild.textContent.trim()==='Destination')`);
+      await scrollToDestination();
+    },
+    variant: scrollToDestination,
+    teardown: cancel,
+  });
   await b.evaluate(`window.__captureSaveName='terrarium.jpg';__captureFiles.delete('terrarium.jpg');void 0`);
   await exportForm();
   await b.evaluate(`[...document.querySelectorAll('${dialog} button')].find(b=>b.textContent==='Choose File…').click()`);

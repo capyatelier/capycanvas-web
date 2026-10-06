@@ -76,6 +76,10 @@ export function helpers(e, b) {
     const { need } = await measure();
     assert.ok(fits(need), `The ${panel} panel fits its content (${need}px off)`);
   };
+  const refit = panel => async () => {
+    await fit(panel);
+    await b.call('Input.dispatchMouseEvent', { type: 'mouseMoved', x: -20, y: -20 });
+  };
   const tile = predicate => e.read(`layerApp.state().workspace.layout.panels.find(p=>p.id==='toolbar').content.tiles.find(t=>${predicate}).id`);
   const tileButton = id => `.toolbar-controls[data-panel="toolbar"] > [data-tile="${id}"]`;
   const header = async command => `[data-header-item="${await e.read(`layerApp.state().workspace.layout.header.zones.flat().find(e=>e.item.control?.command===${json(command)}).id`)}"]`;
@@ -102,11 +106,11 @@ export function helpers(e, b) {
     await e.send({ type: 'customize', action: { type: 'close_expanded' } });
     await e.wait(`!document.querySelector(${json(drawer)})`);
   };
-  return { key, escape, point, mouse, press, mouseDrag, workspace, restoreLayout, fit, tile, tileButton, header, openMenu, closeMenu, drawerSettled, openDrawer, closeDrawer };
+  return { key, escape, point, mouse, press, mouseDrag, workspace, restoreLayout, fit, refit, tile, tileButton, header, openMenu, closeMenu, drawerSettled, openDrawer, closeDrawer };
 }
 
 export default async function drawing({ e, b, shoot }) {
-  const { press, workspace, restoreLayout, fit, tile, tileButton, header, openMenu, closeMenu, drawerSettled, openDrawer, closeDrawer } = helpers(e, b);
+  const { press, workspace, restoreLayout, fit, refit, tile, tileButton, header, openMenu, closeMenu, drawerSettled, openDrawer, closeDrawer } = helpers(e, b);
   const drag = (from, to, steps = 12) => e.stroke(Array.from({ length: steps + 1 }, (_, i) => [from[0] + (to[0] - from[0]) * i / steps, from[1] + (to[1] - from[1]) * i / steps]), { pressure: .5 });
 
   const paint = await workspace('illustrator');
@@ -116,7 +120,7 @@ export default async function drawing({ e, b, shoot }) {
   await e.send({ type: 'select_brush', id: 1 });
   await e.show('brushes');
   await fit('brushes');
-  await shoot('drawing/brush-tool-set', { target: group('brushes') });
+  await shoot('drawing/brush-tool-set', { target: group('brushes'), variant: refit('brushes') });
 
   await e.send({ type: 'select_brush', id: 4 });
   const brushTile = await tile(`t.control.kind==='command'&&t.control.command==='brush'`);
@@ -129,15 +133,15 @@ export default async function drawing({ e, b, shoot }) {
   await e.show('tool_settings');
   await e.wait(`!!document.querySelector('${group('tool_settings')} [data-tool-setting="distortion"]')`);
   await fit('tool_settings');
-  await shoot('drawing/liquify-settings', { target: group('tool_settings') });
+  await shoot('drawing/liquify-settings', { target: group('tool_settings'), variant: refit('tool_settings') });
 
   await e.invoke('fill');
   await e.show('brushes');
   await fit('brushes');
-  await shoot('drawing/fill-tool-set', { target: group('brushes') });
+  await shoot('drawing/fill-tool-set', { target: group('brushes'), variant: refit('brushes') });
   await e.show('tool_settings');
   await fit('tool_settings');
-  await shoot('drawing/fill-settings', { target: group('tool_settings') });
+  await shoot('drawing/fill-settings', { target: group('tool_settings'), variant: refit('tool_settings') });
 
   await e.send({ type: 'set_color', rgba: teal });
   await e.invoke('gradient');
@@ -149,7 +153,7 @@ export default async function drawing({ e, b, shoot }) {
   await press(`${stops}:nth-child(2)`);
   await e.wait(`document.querySelector(${json(`${stops}.selected`)})?.dataset.gradientStop==='1'`);
   await fit('tool_settings');
-  await shoot('drawing/gradient-tool-panel', { target: group('tool_settings') });
+  await shoot('drawing/gradient-tool-panel', { target: group('tool_settings'), variant: refit('tool_settings') });
   await editGradient({ kind: 'reset' });
 
   await e.layer({ op: 'tool', tool: { figure: { shape: 'rectangle', paint: 'outline' } } });
@@ -160,7 +164,7 @@ export default async function drawing({ e, b, shoot }) {
   });
   await e.show('brushes');
   await fit('brushes');
-  await shoot('drawing/figure-tool-set', { target: group('brushes') });
+  await shoot('drawing/figure-tool-set', { target: group('brushes'), variant: refit('brushes') });
   await restoreLayout(paint);
 
   await e.newDocument(1600, 1000);
@@ -194,7 +198,7 @@ export default async function drawing({ e, b, shoot }) {
   await e.show('properties');
   await e.wait(`!!document.querySelector('.dock-group[data-panel=properties] [data-property-key=style]')`);
   await fit('properties');
-  await shoot('drawing/gradient-fill-properties', { target: group('properties') });
+  await shoot('drawing/gradient-fill-properties', { target: group('properties'), variant: refit('properties') });
   await restoreLayout(photo);
 
   await workspace('painter');

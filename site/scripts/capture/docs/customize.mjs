@@ -1,10 +1,10 @@
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
+import { quiet } from '../shoot.mjs';
 
 const contextMenu = '.panel-context-menu:popover-open';
 const windowMenu = '#header details[data-menu="window"]';
 
-export default async function customize({ e, b, shoot, examples }) {
+export default async function customize({ e, b, shoot, example, message }) {
   const json = value => JSON.stringify(value);
   const workspaceReady = () => e.wait('(v=>v.ready&&!v.busy&&!v.dirty)(JSON.parse(layerApp.app.workspace_view()))');
   const layout = () => e.read('JSON.stringify(layerApp.state().workspace.layout)');
@@ -27,9 +27,9 @@ export default async function customize({ e, b, shoot, examples }) {
   };
   const park = async (selector, at) => {
     await b.call('Input.dispatchMouseEvent', { type: 'mouseMoved', ...await point(selector, at) });
+    await quiet(b);
+    await e.canvas();
     await b.settle();
-    await b.evaluate('layerApp.app.wait_for_canvas().then(()=>null)');
-    await b.settle(); await b.settle();
   };
   const thumbnails = () => e.wait(`[...document.querySelectorAll('#layer-rows .layer-thumbnail canvas')].filter(c=>c.checkVisibility()&&c.getBoundingClientRect().width>0).every(c=>{const d=c.getContext('2d').getImageData(0,0,c.width,c.height).data;for(let i=3;i<d.length;i+=4)if(d[i])return true;return false})`);
   const rightClick = async (selector, at) => {
@@ -40,6 +40,22 @@ export default async function customize({ e, b, shoot, examples }) {
   const closeContextMenu = async () => {
     if (await e.read(`!!document.querySelector(${json(contextMenu)})`)) await escape();
     await e.wait(`!document.querySelector(${json(contextMenu)})`);
+  };
+  const type = async (selector, text, { blur = false } = {}) => {
+    await b.evaluate(`(()=>{const n=document.querySelector(${json(selector)});n.focus();n.select();})()`);
+    await b.call('Input.insertText', { text });
+    if (blur) await b.evaluate(`document.querySelector(${json(selector)}).blur()`);
+    await b.settle();
+  };
+  const stableBounds = async measure => {
+    let current = await measure();
+    for (let steady = 0; steady < 3;) {
+      await b.settle();
+      const next = await measure();
+      steady = json(next) === json(current) ? steady + 1 : 0;
+      current = next;
+    }
+    return current;
   };
   const menuLabels = selector => e.read(`[...document.querySelectorAll(${json(`${selector} > button`)})].map(n=>n.querySelector('.menu-label')?.textContent??n.textContent)`);
   const openWindowMenu = async page => {
@@ -73,8 +89,10 @@ export default async function customize({ e, b, shoot, examples }) {
 
   await e.workspace('illustrator');
   if (await e.read('layerApp.state().workspace.zen_mode')) await e.invoke('zen_mode');
-  await e.provide('04-finished.capy', await readFile(`${examples}/04-finished.capy`));
+  await e.provide('04-finished.capy', await example('04-finished.capy'));
   await e.load('04-finished.capy');
+  await e.visible('Ribbon shading', false);
+  await e.visible('Ribbon shading', true);
   await workspaceReady();
   const starting = await layout();
   const transparency = await e.read('layerApp.state().settings.transparency');
@@ -150,6 +168,7 @@ export default async function customize({ e, b, shoot, examples }) {
         if (await b.until(`JSON.parse(layerApp.app.workspace_view()).enabled`, 3000).then(() => true, () => false)) break;
       }
     },
+    check: () => b.until(`!!document.querySelector('dialog.workspace-manager .workspace-choice[aria-selected="true"]') && JSON.parse(layerApp.app.workspace_view()).enabled`, 5000),
     teardown: () => closeManager(),
   });
   await undoLayout(starting);
@@ -161,10 +180,12 @@ export default async function customize({ e, b, shoot, examples }) {
   };
   if (!(await column()).open) await press('.collapsed-column .column-tab[data-panel="layers"]');
   await e.wait('!!layerApp.app.layout(innerWidth,innerHeight).collapsed[0].open');
-  const strip = await column();
-  const left = strip.open.bounds.x, right = strip.bounds.x + strip.bounds.width;
   await shoot('panels/collapsed-column-open', {
-    target: { rect: [left, strip.bounds.y, right - left, strip.bounds.height] },
+    target: async () => {
+      const strip = await column();
+      const left = strip.open.bounds.x, right = strip.bounds.x + strip.bounds.width;
+      return { rect: [left, strip.bounds.y, right - left, strip.bounds.height] };
+    },
     check: async () => { await thumbnails(); await park('.collapsed-column', 'r.x+r.width/2,r.bottom-120'); },
   });
 
@@ -185,6 +206,8 @@ export default async function customize({ e, b, shoot, examples }) {
     teardown: closeWindowMenu,
   });
 
+  const toolRow = label => `[...document.querySelectorAll('.tool-choice')].findIndex(c=>c.querySelector('span span').textContent===${json(label)})`;
+  const toolChecked = label => `[...document.querySelectorAll('.tool-choice')].some(c=>c.querySelector('span span').textContent===${json(label)}&&c.querySelector('input').checked)`;
   await shoot('toolbars/new-toolbar-picker', {
     target: '#tool-picker',
     setup: async () => {
@@ -192,10 +215,16 @@ export default async function customize({ e, b, shoot, examples }) {
       await e.wait(`document.querySelector('#tool-picker').open`);
       await press('#tool-search');
       await b.call('Input.insertText', { text: 'pencil' });
-      await e.wait(`document.querySelector('#tool-search').value==='pencil' && document.querySelectorAll('.tool-choice').length>0`);
+      await e.wait(`document.querySelector('#tool-search').value==='pencil' && ${toolRow('Pencil')}>=0`);
       await b.settle();
-      await press('.tool-choice:first-child');
-      await e.wait(`document.querySelector('.tool-choice:first-child input').checked`);
+      await press(`.tool-choice:nth-child(${await e.read(toolRow('Pencil')) + 1})`);
+      await e.wait(toolChecked('Pencil'));
+    },
+    variant: async locale => {
+      if (locale === 'en') return;
+      const query = message('command-pencil', locale);
+      await type('#tool-search', query, { blur: true });
+      await b.until(`document.querySelector('#tool-search').value===${json(query)} && ${toolChecked(query)}`, 5000);
     },
     teardown: async () => {
       await escape();
@@ -231,15 +260,8 @@ export default async function customize({ e, b, shoot, examples }) {
     await escape();
     await e.wait(`!document.querySelector('.expanded-panel')`);
   };
-  await configureToolbar();
-  const measure = () => b.evaluate(`(()=>{const panel=document.querySelector('.expanded-panel'),box=panel.getBoundingClientRect();const bottom=Math.max(...[...panel.querySelectorAll('[data-tile], .panel-configuration-body > *')].map(n=>n.getBoundingClientRect().bottom));return [box.x,box.y,box.width,bottom+12-box.y]})()`);
-  let configured = await measure();
-  for (let previous = null; json(previous) !== json(configured);) {
-    await new Promise(resolve => setTimeout(resolve, 250));
-    [previous, configured] = [configured, await measure()];
-  }
-  await closeConfiguration();
-  await shoot('toolbars/configure', { target: { rect: configured }, setup: configureToolbar, teardown: closeConfiguration });
+  const configuredBounds = () => b.evaluate(`(()=>{const panel=document.querySelector('.expanded-panel'),box=panel.getBoundingClientRect();const bottom=Math.max(...[...panel.querySelectorAll('[data-tile], .panel-configuration-body > *')].map(n=>n.getBoundingClientRect().bottom));return [box.x,box.y,box.width,bottom+12-box.y]})()`);
+  await shoot('toolbars/configure', { target: async () => ({ rect: await stableBounds(configuredBounds) }), setup: configureToolbar, teardown: closeConfiguration });
   await undoLayout(starting);
 
   await shoot('toolbars/manage', {
@@ -311,6 +333,15 @@ export default async function customize({ e, b, shoot, examples }) {
       await press(`${inkingRow} .workspace-options`);
       await e.wait(`!!document.querySelector('.workspace-row-menu')?.checkVisibility()`);
     },
+    variant: async locale => {
+      if (locale === 'en') return;
+      await b.evaluate(`document.querySelector('.workspace-row-menu')?.hidePopover();void 0`);
+      await e.wait(`(v=>v.ready&&!v.busy&&!v.switcher_busy)(JSON.parse(layerApp.app.workspace_view()))`);
+      await press(`${inkingRow} .workspace-options`);
+      await e.wait(`!!document.querySelector('.workspace-row-menu')?.checkVisibility()`);
+      await b.call('Input.dispatchMouseEvent', { type: 'mouseMoved', x: -20, y: -20 });
+      await b.settle();
+    },
     teardown: () => closeManager(),
   });
   await e.send({ type: 'workspace_manager', command: { type: 'manage' } });
@@ -378,10 +409,36 @@ export default async function customize({ e, b, shoot, examples }) {
     await e.send({ type: 'preferences', action: { type: 'search', query: 'cursor' } });
     await e.wait(`document.querySelector('.preferences-sidebar')?.textContent.includes('Hide cursor when painting')`);
   };
-  await search();
-  const results = await b.evaluate(`(()=>{const bar=document.querySelector('.preferences-sidebar'),box=bar.getBoundingClientRect();const bottom=Math.max(...[...bar.querySelectorAll('button, input')].filter(n=>n.checkVisibility()).map(n=>n.getBoundingClientRect().bottom));return [box.x,box.y,box.width,bottom+16-box.y]})()`);
-  await closeSettings();
-  await shoot('preferences/search', { target: { rect: results }, setup: search, teardown: closeSettings });
+  const commonText = (first, second, locale) => {
+    const [lower, other] = [first, second].map(text => text.toLocaleLowerCase(locale));
+    let best = '';
+    for (let from = 0; from < first.length; from++) for (let to = from + best.length + 1; to <= first.length && other.includes(lower.slice(from, to)); to++) best = first.slice(from, to);
+    return best.trim();
+  };
+  const cursorQueries = locale => {
+    const [shape, hide] = ['settings-cursor-shape', 'settings-hide-cursor-when-painting'].map(key => message(key, locale));
+    return [commonText(shape, hide, locale), ...shape.split(' ')];
+  };
+  const searchResults = `document.querySelectorAll('.preferences-search-results > *').length`;
+  let cursorResults;
+  const resultsBounds = () => b.evaluate(`(()=>{const bar=document.querySelector('.preferences-sidebar'),box=bar.getBoundingClientRect();const bottom=Math.max(...[...bar.querySelectorAll('button, input')].filter(n=>n.checkVisibility()).map(n=>n.getBoundingClientRect().bottom));return [box.x,box.y,box.width,bottom+16-box.y]})()`);
+  await shoot('preferences/search', {
+    target: async () => ({ rect: await stableBounds(resultsBounds) }),
+    setup: async () => { await search(); cursorResults = await e.read(searchResults); },
+    variant: async locale => {
+      if (locale === 'en') return;
+      let best;
+      for (const query of cursorQueries(locale)) {
+        await type('#settings-search', query);
+        await b.until(`document.querySelector('#settings-search').value===${json(query)}`, 5000);
+        const count = await e.read(searchResults);
+        if (!best || Math.abs(count - cursorResults) < Math.abs(best.count - cursorResults)) best = { query, count };
+        if (count === cursorResults) return;
+      }
+      await type('#settings-search', best.query);
+    },
+    teardown: closeSettings,
+  });
 
   const darkBase = '[data-preference=dark_base]';
   await shoot('preferences/reset-menu', {

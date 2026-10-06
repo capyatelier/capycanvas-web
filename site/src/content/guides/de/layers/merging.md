@@ -90,8 +90,8 @@ zu vereinen. Ausgeblendete Ebenen und Pixel außerhalb der Leinwand werden
 verworfen, Auswahlebenen außerhalb von Gruppen bleiben jedoch erhalten. Die
 sichtbaren Ebenen dürfen nicht gesperrt sein.
 
-![Der Hinweis über der Leinwand mit dem Text „Flattening discards 2 hidden layers“ und einer Schaltfläche Flatten.](shot:layers/merging-flatten-notice)
+![Der Hinweis über der Leinwand mit dem Text „Beim Reduzieren werden 2 ausgeblendete Ebenen verworfen“ und einer Schaltfläche Bild reduzieren.](shot:layers/merging-flatten-notice)
 
 Hat die Zeichnung ausgeblendete Ebenen, nennt ein Hinweis über der Leinwand ihre
-Anzahl, zum Beispiel „Flattening discards 2 hidden layers“. Es ändert sich
-nichts, bis Sie im Hinweis **Flatten** auswählen.
+Anzahl, zum Beispiel „Beim Reduzieren werden 2 ausgeblendete Ebenen verworfen“. Es ändert sich
+nichts, bis Sie im Hinweis **Bild reduzieren** auswählen.
