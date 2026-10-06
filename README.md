@@ -153,18 +153,21 @@ architecture; other browsers get x64. **Other platforms** lists every platform w
 per option, named by its variant, followed by Past versions and the GitHub releases list,
 then the web app instructions. Without JavaScript the button stays hidden. Past versions
 lists every published release, newest first, with its date, files, a link to the release on
-GitHub and its notes. Only these assets are offered, matched by exact name:
+GitHub and its notes. Release assets are matched by exact name; Linux installation
+uses the stable reference hosted on GitHub Pages:
 
 | Platform | Variant | Asset |
 | --- | --- | --- |
 | Android | APK | `capycanvas-<version>-android.apk` |
-| Linux | Flatpak | `capycanvas.flatpakref` on Download, `capycanvas-<version>-linux-x86_64.flatpak` on Past versions |
+| Linux | Flatpak | Pages `capycanvas.flatpakref` on Download, `capycanvas-<version>-linux-x86_64.flatpak` on Past versions |
 | Windows | x64 | `capycanvas-<version>-windows-x64-setup.exe` |
 | Windows | Arm64 | `capycanvas-<version>-windows-arm64-setup.exe` |
 | macOS | Apple silicon | `capycanvas-<version>-macos-arm64.dmg` |
 
-The Flatpak reference always installs the newest release, so Past versions links each
-release's bundle instead. AppImages from earlier releases, `SHA256SUMS`, the Microsoft
+Both Linux Download buttons use
+`https://capyatelier.github.io/capycanvas/capycanvas.flatpakref`. This stable reference
+installs the newest release, so Past versions links each release's bundle instead.
+AppImages from earlier releases, `SHA256SUMS`, the Microsoft
 Store `.msix`, Google Play `.aab`, the Flatpak repository archive and the `.zip` archives
 are left on GitHub. Until a release is published, Linux, Windows and macOS keep their
 "Coming soon" status and the page links to the GitHub releases list.

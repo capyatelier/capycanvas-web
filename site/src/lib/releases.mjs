@@ -17,7 +17,7 @@ export const platformFiles = {
   },
   mac: { appleSilicon: version => `capycanvas-${version}-macos-arm64.dmg` },
 };
-export const installFiles = { flatpak: 'capycanvas.flatpakref' };
+export const installFiles = { flatpak: { name: 'capycanvas.flatpakref', url: 'https://capyatelier.github.io/capycanvas/capycanvas.flatpakref' } };
 const notesHeadingLevel = 3;
 
 export async function fetchReleases({ token = process.env.GITHUB_TOKEN, fetch = globalThis.fetch } = {}) {
@@ -55,7 +55,7 @@ export function publishedReleases(releases) {
         files: Object.fromEntries(Object.entries(platformFiles).flatMap(([platform, variants]) => {
           const found = Object.entries(variants).flatMap(([variant, name]) => {
             const asset = file(name(version));
-            const install = installFiles[variant] && file(installFiles[variant]);
+            const install = installFiles[variant];
             return asset ? [{ variant, ...asset, ...(install && { install }) }] : [];
           });
           return found.length ? [[platform, found]] : [];

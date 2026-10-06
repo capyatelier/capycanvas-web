@@ -8,6 +8,7 @@ import { buildReleaseSite } from './release-sites.mjs';
 
 const fixture = JSON.parse(await readFile('tests/fixtures/releases.json', 'utf8'));
 const download = 'https://github.com/capyatelier/capycanvas/releases/download';
+const flatpakRef = 'https://capyatelier.github.io/capycanvas/capycanvas.flatpakref';
 const neverOffered = /(?:\.msix|\.aab|\.zsync|\.zip|\.AppImage|\.tar\.zst|SHA256SUMS)"/;
 const prefix = locale => locale === 'en' ? '' : `${locale}/`;
 const escape = text => text.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
@@ -26,7 +27,7 @@ test('each platform offers its variants, and the Flatpak installs through its re
   const asset = name => ({ name, url: `${download}/v1.0.2/${name}` });
   assert.deepEqual(latest.files, {
     android: [{ variant: 'apk', ...asset('capycanvas-1.0.2-android.apk') }],
-    linux: [{ variant: 'flatpak', ...asset('capycanvas-1.0.2-linux-x86_64.flatpak'), install: asset('capycanvas.flatpakref') }],
+    linux: [{ variant: 'flatpak', ...asset('capycanvas-1.0.2-linux-x86_64.flatpak'), install: { name: 'capycanvas.flatpakref', url: flatpakRef } }],
     windows: [{ variant: 'x64', ...asset('capycanvas-1.0.2-windows-x64-setup.exe') }, { variant: 'arm64', ...asset('capycanvas-1.0.2-windows-arm64-setup.exe') }],
     mac: [{ variant: 'appleSilicon', ...asset('capycanvas-1.0.2-macos-arm64.dmg') }],
   });
@@ -90,7 +91,7 @@ for (const locale of Object.keys(languages)) {
       ['ipad', `/${prefix(locale)}download/ipad-beta/`, escapeText(t.download.joinBeta)],
       ['android', `/${prefix(locale)}download/android-beta/`, escapeText(t.download.joinBeta)],
       ['android', `${download}/v1.0.2/capycanvas-1.0.2-android.apk`, variants.apk],
-      ['linux', `${download}/v1.0.2/capycanvas.flatpakref`, variants.flatpak],
+      ['linux', flatpakRef, variants.flatpak],
       ['windows', `${download}/v1.0.2/capycanvas-1.0.2-windows-x64-setup.exe`, variants.x64],
       ['windows', `${download}/v1.0.2/capycanvas-1.0.2-windows-arm64-setup.exe`, variants.arm64],
       ['mac', `${download}/v1.0.2/capycanvas-1.0.2-macos-arm64.dmg`, escapeText(variants.appleSilicon)],
@@ -100,7 +101,7 @@ for (const locale of Object.keys(languages)) {
     assert.deepEqual(picks, [
       ['ipad', '', `/${prefix(locale)}download/ipad-beta/`],
       ['android', '', `/${prefix(locale)}download/android-beta/`],
-      ['linux', '', `${download}/v1.0.2/capycanvas.flatpakref`],
+      ['linux', '', flatpakRef],
       ['windows', 'x86', `${download}/v1.0.2/capycanvas-1.0.2-windows-x64-setup.exe`],
       ['windows', 'arm', `${download}/v1.0.2/capycanvas-1.0.2-windows-arm64-setup.exe`],
       ['mac', '', `${download}/v1.0.2/capycanvas-1.0.2-macos-arm64.dmg`],
