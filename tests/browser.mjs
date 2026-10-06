@@ -37,7 +37,7 @@ try {
       const overviewImage=document.querySelector('.docs-overview-image img');
       const overviewBounds=overviewImage?.getBoundingClientRect();
       const borders=[...document.querySelectorAll('header,nav,main,picture,section,a,li')].filter(visible).filter(e=>['Top','Right','Bottom','Left'].some(side=>parseFloat(getComputedStyle(e)['border'+side+'Width'])>0)).map(e=>e.className);
-      return { overviewSource:overviewImage?.currentSrc, overviewRatio:overviewBounds?overviewBounds.width/overviewBounds.height:null, overviewLink:document.querySelector('.docs-overview-image a')?.href, height:innerHeight, heroHeight:document.querySelector('.hero')?.getBoundingClientRect().height, shotRatio:shot?shot.width/shot.height:null, borders, width:innerWidth, scroll:document.documentElement.scrollWidth, lang:document.documentElement.dataset.locale, bg:getComputedStyle(document.body).backgroundColor, source:document.querySelector('.showcase-frame[data-slide="paint"] img')?.currentSrc, original:document.querySelector('.showcase-frame[data-slide="paint"] img')?.getAttribute('src'), shown, bounds,
+      return { overviewSource:overviewImage?.currentSrc, overviewRatio:overviewBounds?overviewBounds.width/overviewBounds.height:null, overviewLink:document.querySelector('.docs-overview-image a')?.href, height:innerHeight, scrollHeight:document.documentElement.scrollHeight, shotRatio:shot?shot.width/shot.height:null, borders, width:innerWidth, scroll:document.documentElement.scrollWidth, lang:document.documentElement.dataset.locale, bg:getComputedStyle(document.body).backgroundColor, source:document.querySelector('.showcase-frame[data-slide="paint"] img')?.currentSrc, original:document.querySelector('.showcase-frame[data-slide="paint"] img')?.getAttribute('src'), shown, bounds,
         labels:[...document.querySelectorAll('a,summary')].filter(visible).every(e=>(e.getAttribute('aria-label')||e.textContent||e.querySelector('img[alt]')?.alt||'').trim()),
         headings:document.querySelectorAll('h1').length,
         broken:[...document.images].some(i=>!i.complete||!i.naturalWidth)
@@ -53,8 +53,8 @@ try {
     if(page==='home') {
       check(new RegExp(`/assets/showcase/(${locale}|shared)/paint-light\\.webp$`).test(metrics.original)&&new RegExp(`/_astro/paint-${theme}\\.`).test(metrics.source),`Wrong screenshot ${label}`);
       check(metrics.shown.join()==='paint',`Paint slide is shown first ${label}: ${metrics.shown}`);
-      check(metrics.heroHeight<=height+1,`Home hero should fit viewport ${label}: ${metrics.heroHeight}`);
-      check(await b.evaluate("document.querySelector('#home-title').getBoundingClientRect().width>100&&document.querySelectorAll('.home-features section').length===3&&!!document.querySelector('.home-platforms a[href*=github]')"),'Visible brand and crawlable feature links');
+      check(metrics.scrollHeight<=height+1,`Minimal home should fit viewport ${label}: ${metrics.scrollHeight}`);
+      check(await b.evaluate("document.querySelector('main').classList.contains('hero')&&document.querySelector('h1').classList.contains('visually-hidden')&&document.querySelector('h1').getBoundingClientRect().width===1&&document.querySelectorAll('main p').length===1&&document.querySelectorAll('main .button').length===3&&!document.querySelector('.home-details')&&!document.querySelector('[data-language-suggestion]')"),'Original minimal landing page design');
       check(Math.abs(metrics.shotRatio-16/9)<.01,`Screenshot aspect ratio ${label}`);
     }
     if(page==='documentation') {
@@ -126,7 +126,7 @@ try {
   await b.until("document.documentElement.dataset.locale==='ko'");
   check(await b.evaluate("location.pathname==='/ko/docs/'&&localStorage.getItem('capycanvas.language')==='ko'"),'Manual selection persists and preserves page');
   await b.navigate(host.url+'/');
-  check(await b.evaluate("document.documentElement.dataset.locale==='en'&&!document.querySelector('[data-language-suggestion]').hidden&&document.querySelector('[data-language-suggestion]').href.endsWith('/ko/')"),'Saved language suggests a translation without redirecting');
+  check(await b.evaluate("document.documentElement.dataset.locale==='en'&&document.querySelector('.language-menu [data-language=ko]').href.endsWith('/ko/')&&!document.querySelector('[data-language-suggestion]')"),'The minimal home preserves its URL and offers translations through the original menu');
   await b.navigate(host.url+'/ja/');check(await b.evaluate("document.documentElement.dataset.locale==='ja'"),'Explicit locale URL wins over storage');
   await b.evaluate("document.querySelector('[data-language=en]').click()");await b.until("document.documentElement.dataset.locale==='en'");checks++;
   await b.until("document.readyState==='complete'");await b.settle();

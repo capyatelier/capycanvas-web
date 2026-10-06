@@ -119,13 +119,14 @@ and keyboard interaction. The browser tests cover both behaviors.
 
 The browser's `prefers-color-scheme` selects the whole page palette and the
 matching genuine app screenshots. Changes apply live. The home page contains a
-visible brand heading, workspace showcase, a short description, three primary
-links, and the language selector. Localized feature and platform sections link
-to the tutorials, downloads and source repository. The homepage title describes
+workspace showcase, the original short description, three primary links, and
+the language selector. Keep this minimal, viewport-sized design: the accessible
+heading stays visually hidden, and the homepage has no extra content sections
+or language suggestion outside the original menu. The document title describes
 painting and photo editing, and `WebSite` structured data identifies Capy Canvas
-and its alternate spelling, CapyCanvas. Homepage copy and language suggestions
-live in `site/src/data/home-content.mjs`.
-The showcase is a slideshow that switches between real Sketch, Paint and
+and its alternate spelling, CapyCanvas. Homepage metadata and other pages’
+language suggestions live in `site/src/data/home-content.mjs`.
+The showcase is a slideshow that crossfades between real Sketch, Paint and
 Photo screenshots every few seconds. A small indicator overlaid on the screenshot
 names the current workspace and lets the reader jump to another; without JavaScript
 it still switches slides with plain CSS. Astro generates WebP variants at 480,

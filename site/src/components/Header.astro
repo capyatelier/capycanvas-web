@@ -13,7 +13,7 @@ const navPages = ['download', 'documentation'] as const;
 const section = page === 'versions' || page === 'ipadBeta' || page === 'androidBeta' ? 'download' : page;
 ---
 {page === 'home' ? (
-  <div class="home-top"><a class="language-suggestion" data-language-suggestion hidden></a><LanguageMenu locale={locale} page={page} slug={slug} /></div>
+  <div class="home-top"><LanguageMenu locale={locale} page={page} slug={slug} /></div>
 ) : (
   <header class="site-header">
     <div class="nav-inner">

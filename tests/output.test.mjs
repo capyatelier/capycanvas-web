@@ -56,14 +56,16 @@ for(const locale of Object.keys(languages)) {
     if(page==='home') {
       assert.doesNotMatch(html, /<footer/);
       assert.ok(!html.includes(`href="/${route(locale,'privacy')}"`), 'The home page has no privacy link');
-      assert.match(html,/<h1 id="home-title">Capy Canvas<\/h1>/);
+      assert.match(html,/<main id="main" class="hero">/);
+      assert.match(html,/<h1 class="visually-hidden">Capy Canvas<\/h1>/);
+      assert.equal((html.match(/<p(?: [^>]*)?>/g)||[]).length,1);
+      assert.doesNotMatch(html, /home-features|home-details|home-platforms|<a\b[^>]*data-language-suggestion/);
       assert.ok(html.includes(`<title>${escape(homeContent[locale].metaTitle)}</title>`));
-      assert.ok(html.includes(escapeText(homeContent[locale].description)));
+      assert.ok(html.includes(escapeText(content[locale].home.description)));
       const website = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)?.[1]);
       assert.equal(website.name, 'Capy Canvas');
       assert.equal(website.alternateName, 'CapyCanvas');
       assert.equal(website.url, 'https://capycanvas.art/');
-      for (const slug of ['illustration','photo','quickstart']) assert.ok(html.includes(`href="/${route(locale,'documentation')}${slug}/"`));
       assert.doesNotMatch(html,/<figcaption|class="brand"|class="eyebrow"/);
       assert.equal((html.match(/class="button(?: primary)?"/g)||[]).length,3);
       assert.ok(html.includes(`<a class="button primary" href="/${route(locale,'download')}"`), 'Download is the primary home action');
@@ -80,8 +82,7 @@ for(const locale of Object.keys(languages)) {
       assert.ok(modules.some(code=>code.includes('[data-showcase]')), 'Showcase behavior is bundled with the home page');
       assert.ok(html.includes(`<meta property="og:image" content="https://capycanvas.art/assets/${capture('showcase/paint',locale,'light').file}">`),'Link previews show the editor in the page language');
       assert.match(html,/<meta property="og:image:width" content="1920">/);
-      assert.doesNotMatch(html,/<header|class="nav-links"/);
-      assert.ok(html.includes(`href="https://github.com/capyatelier/capycanvas">${escapeText(homeContent[locale].sourceLink)}</a>`));
+      assert.doesNotMatch(html,/<header|class="nav-links"|href="https:\/\/github.com/);
     } else {
       const footer = html.match(/<footer class="site-footer">([\s\S]*?)<\/footer>/)?.[1];
       assert.ok(footer?.includes(content[locale].footer.madeBy));
