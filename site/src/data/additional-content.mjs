@@ -32,7 +32,8 @@ export const additionalContent = {
     },
     "download": {
       "title": "Descargar",
-      "intro": "Capy Canvas está en fase beta. Puede tener algunos fallos, así que guarde su trabajo a menudo.",
+      "intro": "Capy Canvas está en fase beta. Puede tener algunos fallos. {feedback}.",
+      "feedback": "Cuéntenos su opinión en GitHub",
       "status": "Próximamente",
       "platforms": [
         "iPadOS",
@@ -144,7 +145,8 @@ export const additionalContent = {
     },
     "download": {
       "title": "Baixar",
-      "intro": "O Capy Canvas está em fase beta. Pode haver alguns problemas, então salve seu trabalho com frequência.",
+      "intro": "O Capy Canvas está em fase beta. Pode haver alguns problemas. {feedback}.",
+      "feedback": "Envie sua opinião pelo GitHub",
       "status": "Em breve",
       "platforms": [
         "iPadOS",
@@ -256,7 +258,8 @@ export const additionalContent = {
     },
     "download": {
       "title": "Unduh",
-      "intro": "Capy Canvas masih dalam tahap beta. Mungkin masih ada sedikit kendala, jadi sering-seringlah menyimpan karya Anda.",
+      "intro": "Capy Canvas masih dalam tahap beta. Mungkin masih ada sedikit kendala. {feedback}.",
+      "feedback": "Sampaikan masukan Anda di GitHub",
       "status": "Segera hadir",
       "platforms": [
         "iPadOS",
@@ -368,7 +371,8 @@ export const additionalContent = {
     },
     "download": {
       "title": "Télécharger",
-      "intro": "Capy Canvas est en version bêta. Quelques imperfections sont possibles : enregistrez souvent votre travail.",
+      "intro": "Capy Canvas est en version bêta. Quelques imperfections sont possibles. {feedback}.",
+      "feedback": "Faites-nous part de vos remarques sur GitHub",
       "status": "Bientôt disponible",
       "platforms": [
         "iPadOS",
@@ -480,7 +484,8 @@ export const additionalContent = {
     },
     "download": {
       "title": "Herunterladen",
-      "intro": "Capy Canvas befindet sich in der Betaphase. Es kann noch kleine Fehler geben, speichern Sie Ihre Arbeit daher regelmäßig.",
+      "intro": "Capy Canvas befindet sich in der Betaphase. Es kann noch kleine Fehler geben. {feedback}.",
+      "feedback": "Teilen Sie uns Ihr Feedback auf GitHub mit",
       "status": "Kommt bald",
       "platforms": [
         "iPadOS",
@@ -592,7 +597,8 @@ export const additionalContent = {
     },
     "download": {
       "title": "Скачать",
-      "intro": "Capy Canvas сейчас в бета-версии. Возможны небольшие ошибки, поэтому почаще сохраняйте работу.",
+      "intro": "Capy Canvas сейчас в бета-версии. Возможны небольшие ошибки. {feedback}.",
+      "feedback": "Делитесь отзывами на GitHub",
       "status": "Скоро",
       "platforms": [
         "iPadOS",
@@ -704,7 +710,8 @@ export const additionalContent = {
     },
     "download": {
       "title": "ดาวน์โหลด",
-      "intro": "Capy Canvas อยู่ในช่วงเบต้า อาจมีข้อบกพร่องบ้าง จึงควรบันทึกงานบ่อยๆ",
+      "intro": "Capy Canvas อยู่ในช่วงเบต้า อาจมีข้อบกพร่องบ้าง {feedback}",
+      "feedback": "แสดงความคิดเห็นได้ที่ GitHub",
       "status": "เร็วๆ นี้",
       "platforms": [
         "iPadOS",
@@ -816,7 +823,8 @@ export const additionalContent = {
     },
     "download": {
       "title": "Tải xuống",
-      "intro": "Capy Canvas đang trong giai đoạn beta. Có thể còn vài lỗi nhỏ, vì vậy hãy lưu tác phẩm thường xuyên.",
+      "intro": "Capy Canvas đang trong giai đoạn beta. Có thể còn vài lỗi nhỏ. {feedback}.",
+      "feedback": "Hãy góp ý cho chúng tôi trên GitHub",
       "status": "Sắp có",
       "platforms": [
         "iPadOS",
@@ -928,7 +936,8 @@ export const additionalContent = {
     },
     "download": {
       "title": "İndir",
-      "intro": "Capy Canvas şu anda beta aşamasında. Küçük sorunlar olabilir, bu yüzden çalışmanızı sık sık kaydedin.",
+      "intro": "Capy Canvas şu anda beta aşamasında. Küçük sorunlar olabilir. {feedback}.",
+      "feedback": "Görüşlerinizi GitHub'da paylaşın",
       "status": "Yakında",
       "platforms": [
         "iPadOS",
@@ -1040,7 +1049,8 @@ export const additionalContent = {
     },
     "download": {
       "title": "Scarica",
-      "intro": "Capy Canvas è in fase beta. Potrebbe esserci qualche imperfezione, quindi salva spesso il tuo lavoro.",
+      "intro": "Capy Canvas è in fase beta. Potrebbe esserci qualche imperfezione. {feedback}.",
+      "feedback": "Condividi la tua opinione su GitHub",
       "status": "Prossimamente",
       "platforms": [
         "iPadOS",

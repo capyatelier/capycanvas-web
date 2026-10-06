@@ -24,7 +24,7 @@ export const content = {
       meta: 'Capy Canvas is a cross-platform app for sketching, illustration, and photography, with a powerful GPU-accelerated painting engine.'
     },
     download: {
-      title: 'Download', intro: 'Capy Canvas is in beta. Expect some rough edges, and save your work often.',
+      title: 'Download', intro: 'Capy Canvas is in beta. Expect some rough edges, and {feedback}.', feedback: 'share your feedback on GitHub',
       status: 'Coming soon', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: 'Other platforms', joinBeta: 'Join the beta', downloadFor: 'Download {version} · {platform}', openWebApp: 'Open the web app',
       pwa: pwaContent.en,
       variants: { apk: 'APK', flatpak: 'Flatpak', x64: 'x64', arm64: 'Arm64', appleSilicon: 'Apple silicon' },
@@ -77,7 +77,7 @@ export const content = {
       meta: 'Capy Canvas は、強力な GPU 加速ペイントエンジンを備えた、スケッチ、イラスト、写真のためのクロスプラットフォームアプリです。'
     },
     download: {
-      title: 'ダウンロード', intro: 'Capy Canvas は現在ベータ版です。不具合があるかもしれないので、こまめに保存してください。',
+      title: 'ダウンロード', intro: 'Capy Canvas は現在ベータ版です。不具合があるかもしれません。{feedback}。', feedback: 'GitHub でご意見をお寄せください',
       status: '公開予定', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: 'その他のプラットフォーム', joinBeta: 'ベータに参加', downloadFor: '{version} をダウンロード · {platform}', openWebApp: 'ウェブアプリを開く',
       pwa: pwaContent.ja,
       variants: { apk: 'APK', flatpak: 'Flatpak', x64: 'x64', arm64: 'Arm64', appleSilicon: 'Appleシリコン' },
@@ -130,7 +130,7 @@ export const content = {
       meta: 'Capy Canvas 是一款跨平台应用，配备强大的 GPU 加速绘画引擎，适用于速写、插画和摄影。'
     },
     download: {
-      title: '下载', intro: 'Capy Canvas 目前处于测试阶段，可能会有一些小问题，请经常保存作品。',
+      title: '下载', intro: 'Capy Canvas 目前处于测试阶段，可能会有一些小问题，欢迎{feedback}。', feedback: '在 GitHub 上反馈意见',
       status: '即将推出', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: '其他平台', joinBeta: '加入测试', downloadFor: '下载 {version} · {platform}', openWebApp: '打开网页应用',
       pwa: pwaContent.zh,
       variants: { apk: 'APK', flatpak: 'Flatpak', x64: 'x64', arm64: 'Arm64', appleSilicon: 'Apple 芯片' },
@@ -183,7 +183,7 @@ export const content = {
       meta: 'Capy Canvas는 강력한 GPU 가속 페인팅 엔진을 갖춘, 스케치와 일러스트, 사진을 위한 크로스 플랫폼 앱입니다.'
     },
     download: {
-      title: '다운로드', intro: 'Capy Canvas는 현재 베타 단계입니다. 다소 불안정할 수 있으니 작업을 자주 저장하세요.',
+      title: '다운로드', intro: 'Capy Canvas는 현재 베타 단계입니다. 다소 불안정할 수 있습니다. {feedback}.', feedback: 'GitHub에서 의견을 보내 주세요',
       status: '출시 예정', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: '다른 플랫폼', joinBeta: '베타 참여', downloadFor: '{version} 다운로드 · {platform}', openWebApp: '웹 앱 열기',
       pwa: pwaContent.ko,
       variants: { apk: 'APK', flatpak: 'Flatpak', x64: 'x64', arm64: 'Arm64', appleSilicon: 'Apple 실리콘' },

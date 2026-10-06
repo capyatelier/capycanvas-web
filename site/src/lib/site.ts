@@ -18,6 +18,7 @@ export const betaLinks = {
 export const origin = 'https://capycanvas.art';
 export const appUrl = 'https://editor.capycanvas.art/';
 export const repositoryUrl = 'https://github.com/capyatelier/capycanvas';
+export const feedbackUrl = `${repositoryUrl}/issues`;
 const segments: Partial<Record<SitePage, string>> = { versions: 'download/past-versions', ipadBeta: 'download/ipad-beta', androidBeta: 'download/android-beta', documentation: 'docs' };
 
 export function route(locale: Locale, page: SitePage = 'home', slug = '') {

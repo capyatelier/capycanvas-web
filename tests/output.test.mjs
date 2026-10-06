@@ -14,6 +14,7 @@ const read=path=>readFile(join(root,path),'utf8');
 const pages=['home','download','versions','ipadBeta','androidBeta','documentation','privacy'];
 const escape=text=>text.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;').replaceAll('>','&gt;');
 const escapeText=text=>escape(text).replaceAll("'",'&#39;');
+const lead=t=>escapeText(t.intro).replace('{feedback}',`<a href="https://github.com/capyatelier/capycanvas/issues">${escapeText(t.feedback)}</a>`);
 const segments={documentation:'docs',versions:'download/past-versions',ipadBeta:'download/ipad-beta',androidBeta:'download/android-beta'};
 const route=(l,p)=>`${l==='en'?'':l+'/'}${p==='home'?'':(segments[p]??p)+'/'}`;
 const releaseFile=/^https:\/\/github\.com\/capyatelier\/capycanvas\/releases\/download\/v([^/]+)\/(?:capycanvas-\1-(?:android\.apk|linux-x86_64\.flatpak|windows-(?:x64|arm64)-setup\.exe|macos-arm64\.dmg)|capycanvas\.flatpakref)$/;
@@ -105,7 +106,7 @@ for(const locale of Object.keys(languages)) {
       assert.match(html,/<div class="pick" data-pick hidden[^>]*>/);
       assert.match(html,new RegExp(`<div data-platform="other" hidden[^>]*><a class="button primary" href="https://editor\\.capycanvas\\.art/"[^>]*>.*?${escapeText(t.openWebApp)}</a>`));
       assert.ok(modules.some(code=>code.includes('[data-pick]')), 'Platform detection is bundled with the download page');
-      assert.match(html,new RegExp(`<h1[^>]*>${escapeText(t.title)}</h1><p class="lead"[^>]*>${escapeText(t.intro)}</p><div class="pick"`));
+      assert.match(html,new RegExp(`<h1[^>]*>${escapeText(t.title)}</h1><p class="lead"[^>]*>${lead(t)}</p><div class="pick"`));
       assert.ok(html.indexOf('class="pick"')<html.indexOf(`>${escapeText(t.otherPlatforms)}</h2>`));
       assert.ok(html.indexOf(`>${escapeText(t.otherPlatforms)}</h2>`)<html.indexOf(`href="${releasesUrl}"`));
       assert.ok(html.indexOf(`href="${releasesUrl}"`)<html.indexOf('class="pwa"'));

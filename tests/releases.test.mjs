@@ -12,6 +12,7 @@ const neverOffered = /(?:\.msix|\.aab|\.zsync|\.zip|\.AppImage|\.tar\.zst|SHA256
 const prefix = locale => locale === 'en' ? '' : `${locale}/`;
 const escape = text => text.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 const escapeText = text => escape(text).replaceAll("'", '&#39;');
+const lead = t => escapeText(t.intro).replace('{feedback}', `<a href="https://github.com/capyatelier/capycanvas/issues">${escapeText(t.feedback)}</a>`);
 
 test('only published releases are offered, newest first', () => {
   const releases = publishedReleases(fixture);
@@ -82,7 +83,7 @@ for (const locale of Object.keys(languages)) {
     const html = await read(published, `${prefix(locale)}download`);
     const page = main(html);
     assert.ok(html.includes(`<meta name="description" content="${escape(t.download.metaReleased)}">`));
-    assert.match(page, new RegExp(`<p class="lead"[^>]*>${escapeText(t.download.intro)}</p><div class="pick"`));
+    assert.match(page, new RegExp(`<p class="lead"[^>]*>${lead(t.download)}</p><div class="pick"`));
     const variants = t.download.variants;
     const buttons = [...page.matchAll(/<a class="button" href="([^"]+)" aria-describedby="platform-(\w+)"[^>]*>(?:<svg[\s\S]*?<\/svg>)?([^<]+)<\/a>/g)].map(([, url, platform, label]) => [platform, url, label]);
     assert.deepEqual(buttons, [
@@ -151,7 +152,7 @@ for (const locale of Object.keys(languages)) {
     const downloadHtml = await read(empty, `${prefix(locale)}download`);
     const page = main(downloadHtml);
     assert.ok(downloadHtml.includes(`<meta name="description" content="${escape(t.download.meta)}">`));
-    assert.match(page, new RegExp(`<p class="lead"[^>]*>${escapeText(t.download.intro)}</p>`));
+    assert.match(page, new RegExp(`<p class="lead"[^>]*>${lead(t.download)}</p>`));
     assert.equal(page.split(`>${escapeText(t.download.status)}</p>`).length, 4);
     assert.ok(page.includes(`<a class="button" href="/${prefix(locale)}download/ipad-beta/" aria-describedby="platform-ipad"`));
     assert.ok(page.includes(`<a class="button" href="/${prefix(locale)}download/android-beta/" aria-describedby="platform-android"`));
