@@ -19,14 +19,14 @@ export async function checkPwaInstructions(b, host, check) {
         const notices=[...section.querySelectorAll('[data-pwa-fallback]')].filter(e=>!e.hidden);
         return {guide:visible.map(e=>e.dataset.pwaGuide),fallback:notices.map(e=>e.dataset.pwaFallback),
           steps:visible[0].querySelectorAll('li').length,text:visible[0].innerText,
-          os:section.querySelector('#pwa-os').dataset.value,browser:section.querySelector('select').value,
-          selectorVisible:!!section.querySelector('select').getClientRects().length,
-          sameRow:Math.abs(section.querySelector('#pwa-os summary').getBoundingClientRect().top-section.querySelector('select').getBoundingClientRect().top)<1,
-          named:!!section.querySelector('#pwa-os summary').getAttribute('aria-labelledby')&&!!section.querySelector('select').getAttribute('aria-label'),
-          icons:!!section.querySelector('#pwa-os-current svg')&&[...section.querySelectorAll('[data-os]')].every(e=>e.querySelector('svg')),
+          os:section.querySelector('#pwa-os').dataset.value,browser:section.querySelector('#pwa-browser').dataset.value,
+          selectorVisible:!!section.querySelector('#pwa-browser summary').getClientRects().length,
+          sameRow:Math.abs(section.querySelector('#pwa-os summary').getBoundingClientRect().top-section.querySelector('#pwa-browser summary').getBoundingClientRect().top)<1,
+          named:!!section.querySelector('#pwa-os summary').getAttribute('aria-labelledby')&&!!section.querySelector('#pwa-browser summary').getAttribute('aria-labelledby'),
+          icons:!!section.querySelector('#pwa-os-current svg')&&[...section.querySelectorAll('#pwa-os [role=option]')].every(e=>e.querySelector('svg')),
           labels:section.querySelectorAll('label').length,
           target:visible[0].querySelector('a').href,
-          clipped:[...section.querySelectorAll('li,p,label,select')].filter(e=>e.getClientRects().length&&e.getBoundingClientRect().right>innerWidth+1).length};
+          clipped:[...section.querySelectorAll('li,p,label,summary')].filter(e=>e.getClientRects().length&&e.getBoundingClientRect().right>innerWidth+1).length};
       })()`);
       const label=`${name}/${locale}`;
       check(metrics.guide.length===1&&metrics.guide[0]===guide&&metrics.os===os&&metrics.browser===browser,`PWA guide ${label}`);
@@ -46,27 +46,33 @@ export async function checkPwaInstructions(b, host, check) {
     ['linux','edge','desktop',['chrome','edge']],
     ['chromeos','chrome','desktop',['chrome']]
   ]) {
-    await b.evaluate(`document.querySelector('#pwa-os').open=true;document.querySelector('[data-os=${os}]').click();`);
-    check(await b.evaluate(`JSON.stringify([...document.querySelector('#pwa-browser').options].map(o=>o.value))===${JSON.stringify(JSON.stringify(choices))}`),`Browsers available on ${os}`);
-    await b.evaluate(`(() => {const select=document.querySelector('#pwa-browser');select.value='${browser}';select.dispatchEvent(new Event('change',{bubbles:true}));})()`);
-    check(await b.evaluate(`!document.querySelector('[data-pwa-guide=${guide}]').hidden&&document.querySelectorAll('[data-pwa-guide]:not([hidden])').length===1&&document.querySelectorAll('[data-pwa-fallback]:not([hidden])').length===0`),`Manual selection ${os}/${browser}`);
+    await b.evaluate(`document.querySelector('#pwa-os').open=true;document.querySelector('#pwa-os [data-value=${os}]').click();`);
+    check(await b.evaluate(`JSON.stringify([...document.querySelectorAll('#pwa-browser [role=option]')].map(o=>o.dataset.value))===${JSON.stringify(JSON.stringify(choices))}`),`Browsers available on ${os}`);
+    await b.evaluate(`document.querySelector('#pwa-browser').open=true;document.querySelector('#pwa-browser [data-value=${browser}]').click();`);
+    check(await b.evaluate(`document.querySelector('#pwa-browser').dataset.value==='${browser}'&&!document.querySelector('#pwa-browser').open&&!document.querySelector('[data-pwa-guide=${guide}]').hidden&&document.querySelectorAll('[data-pwa-guide]:not([hidden])').length===1&&document.querySelectorAll('[data-pwa-fallback]:not([hidden])').length===0`),`Manual selection ${os}/${browser}`);
   }
-  // The custom OS picker keeps icons and keyboard navigation on narrow screens.
   await b.call('Emulation.setDeviceMetricsOverride',{width:320,height:844,deviceScaleFactor:1,mobile:false});
   await b.evaluate("document.querySelector('#pwa-os summary').focus()");
   await b.call('Input.dispatchKeyEvent',{type:'keyDown',key:'ArrowDown',code:'ArrowDown'});
-  await b.until("document.querySelector('#pwa-os').open&&document.activeElement.matches('[data-os]')");
+  await b.until("document.querySelector('#pwa-os').open&&document.activeElement.matches('#pwa-os [role=option]')");
   await b.call('Input.dispatchKeyEvent',{type:'keyDown',key:'Home',code:'Home'});
-  check(await b.evaluate("document.activeElement.dataset.os==='windows'"),'OS picker Home key');
+  check(await b.evaluate("document.activeElement.dataset.value==='windows'"),'OS picker Home key');
   await b.call('Input.dispatchKeyEvent',{type:'keyDown',key:'ArrowDown',code:'ArrowDown'});
   await b.call('Input.dispatchKeyEvent',{type:'keyDown',key:'Enter',code:'Enter',windowsVirtualKeyCode:13,text:'\r',unmodifiedText:'\r'});
   await b.call('Input.dispatchKeyEvent',{type:'keyUp',key:'Enter',code:'Enter',windowsVirtualKeyCode:13});
   check(await b.evaluate("document.querySelector('#pwa-os').dataset.value==='macos'&&!document.querySelector('#pwa-os').open&&document.activeElement.matches('#pwa-os summary')"),'OS picker chooses with keyboard and restores focus');
   await b.call('Input.dispatchKeyEvent',{type:'keyDown',key:'ArrowDown',code:'ArrowDown'});
-  await b.until("document.activeElement.matches('[data-os]')");
+  await b.until("document.activeElement.matches('#pwa-os [role=option]')");
   await b.settle();
-  check(await b.evaluate("[...document.querySelectorAll('.pwa-browser,.pwa-os-options')].every(e=>e.getBoundingClientRect().right<=innerWidth)&&Math.abs(document.querySelector('#pwa-os summary').getBoundingClientRect().top-document.querySelector('#pwa-browser').getBoundingClientRect().top)<1"),'Both dropdowns and OS menu fit a 320px screen');
+  check(await b.evaluate("[...document.querySelectorAll('.pwa-browser,#pwa-os .menu-field-options')].every(e=>e.getBoundingClientRect().right<=innerWidth)&&Math.abs(document.querySelector('#pwa-os summary').getBoundingClientRect().top-document.querySelector('#pwa-browser summary').getBoundingClientRect().top)<1"),'Both dropdowns and OS menu fit a 320px screen');
   await b.screenshot('artifacts/review/pwa-os-menu.png',true);
   await b.call('Input.dispatchKeyEvent',{type:'keyDown',key:'Escape',code:'Escape'});
   check(await b.evaluate("!document.querySelector('#pwa-os').open&&document.activeElement.matches('#pwa-os summary')"),'Escape closes OS picker');
+  await b.evaluate("document.querySelector('#pwa-browser summary').focus()");
+  await b.call('Input.dispatchKeyEvent',{type:'keyDown',key:'ArrowDown',code:'ArrowDown'});
+  await b.until("document.querySelector('#pwa-browser').open&&document.activeElement.matches('#pwa-browser [role=option]')");
+  check(await b.evaluate("(()=>{const menu=document.querySelector('#pwa-browser .menu-field-options');const os=document.querySelector('#pwa-os .menu-field-options');const style=getComputedStyle(menu);return style.position==='absolute'&&style.borderRadius===getComputedStyle(os).borderRadius&&style.backgroundColor===getComputedStyle(os).backgroundColor&&document.activeElement.getAttribute('aria-selected')==='true'&&menu.getBoundingClientRect().right<=innerWidth})()"),'The browser picker opens the same menu as the OS picker');
+  await b.screenshot('artifacts/review/pwa-browser-menu.png',true);
+  await b.call('Input.dispatchKeyEvent',{type:'keyDown',key:'Escape',code:'Escape'});
+  check(await b.evaluate("!document.querySelector('#pwa-browser').open&&document.activeElement.matches('#pwa-browser summary')"),'Escape closes browser picker');
 }

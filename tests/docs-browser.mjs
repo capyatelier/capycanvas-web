@@ -107,20 +107,20 @@ export async function checkDocumentation(b, host, check) {
     await b.evaluate('localStorage.clear()');
     await b.navigate(host.url + '/docs/input/pen/?lang=en');
     await b.until("document.querySelector('.docs-platform')?.hidden === false");
-    check(await b.evaluate(`document.querySelector('.docs-platform').value === '${expected}'`), `Device guide detects ${expected}/${platform}`);
+    check(await b.evaluate(`document.querySelector('.docs-platform').dataset.value === '${expected}' && document.querySelector('.docs-platform [aria-selected=true]').dataset.value === '${expected}'`), `Device guide detects ${expected}/${platform}`);
     check(await b.evaluate(`document.querySelectorAll('[data-doc-platform]:not([hidden])').length === ${expected === 'all' ? 5 : 1}`), 'Only the selected device notes are visible');
     await b.call('Page.removeScriptToEvaluateOnNewDocument', { identifier });
   }
-  await b.evaluate("const picker = document.querySelector('.docs-platform'); picker.value = 'android'; picker.dispatchEvent(new Event('change')); ");
+  await b.evaluate("document.querySelector('.docs-platform').open = true; document.querySelector('.docs-platform [data-value=android]').click();");
   for (const locale of ['ja', 'zh', 'ko', 'en']) {
     await b.navigate(host.url + route(locale, 'input/pen'));
     await b.until("document.querySelector('.docs-platform')?.hidden === false");
-    check(await b.evaluate("document.querySelector('.docs-platform').value === 'android' && !document.querySelector('[data-doc-platform=android]').hidden"), `Device choice persists in ${locale}`);
+    check(await b.evaluate("document.querySelector('.docs-platform').dataset.value === 'android' && !document.querySelector('[data-doc-platform=android]').hidden"), `Device choice persists in ${locale}`);
   }
   const { identifier: storageOverride } = await b.call('Page.addScriptToEvaluateOnNewDocument', { source: "Object.defineProperty(window,'localStorage',{get(){throw new Error('Storage disabled')}})" });
   await b.navigate(host.url + '/docs/input/pen/?lang=en');
   await b.until("document.querySelector('.docs-platform')?.hidden === false");
-  await b.evaluate("const picker = document.querySelector('.docs-platform'); picker.value = 'all'; picker.dispatchEvent(new Event('change')); ");
+  await b.evaluate("document.querySelector('.docs-platform').open = true; document.querySelector('.docs-platform [data-value=all]').click();");
   check(await b.evaluate("document.querySelectorAll('[data-doc-platform]:not([hidden])').length === 5"), 'Device picker works with storage disabled');
   await b.call('Page.removeScriptToEvaluateOnNewDocument', { identifier: storageOverride });
   await b.call('Emulation.setScriptExecutionDisabled', { value: true });

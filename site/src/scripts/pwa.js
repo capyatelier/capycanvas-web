@@ -1,3 +1,5 @@
+import { initMenuField, setMenuValue } from './menu-field.js';
+
 // These hints choose instructions only. Browsers expose no cross-origin API for
 // checking whether the editor can be installed. Keep manual selection available.
 export const installOptions = {
@@ -48,57 +50,24 @@ export function initInstallGuide(doc, browser) {
   const section = doc.querySelector('.pwa');
   if (!section) return;
   const osMenu = section.querySelector('#pwa-os');
-  const osSummary = osMenu.querySelector('summary');
-  const osOptions = [...osMenu.querySelectorAll('[data-os]')];
-  const browserSelect = section.querySelector('#pwa-browser');
-  const labels = Object.fromEntries([...browserSelect.options].map(option => [option.value, option.textContent]));
+  const browserMenu = section.querySelector('#pwa-browser');
+  const browserList = browserMenu.querySelector('[role=listbox]');
+  const browserOptions = Object.fromEntries([...browserList.children].map(option => [option.dataset.value, option]));
   const detected = detectInstallGuide(browser);
   function show(system, preferredBrowser, fallback = '') {
     const options = installOptions[system] || installOptions.other;
     const browser = options[preferredBrowser] ? preferredBrowser : Object.keys(options)[0];
     const guide = options[browser];
-    osMenu.dataset.value = system;
-    for (const option of osOptions) option.setAttribute('aria-selected', String(option.dataset.os === system));
-    const selected = osOptions.find(option => option.dataset.os === system);
-    section.querySelector('#pwa-os-current').replaceChildren(...[...selected.children].map(node => node.cloneNode(true)));
-    browserSelect.replaceChildren(...Object.keys(options).map(value => {
-      const option = doc.createElement('option');
-      option.value = value;
-      option.textContent = labels[value];
-      return option;
-    }));
-    browserSelect.value = browser;
+    setMenuValue(osMenu, system);
+    browserList.replaceChildren(...Object.keys(options).map(value => browserOptions[value]));
+    setMenuValue(browserMenu, browser);
     for (const block of section.querySelectorAll('[data-pwa-guide]')) block.hidden = block.dataset.pwaGuide !== guide;
     for (const note of section.querySelectorAll('[data-pwa-fallback]')) note.hidden = note.dataset.pwaFallback !== fallback;
   }
   show(detected.os, detected.browser, detected.fallback);
   section.querySelector('.pwa-browser').hidden = false;
-  const close = () => { osMenu.open = false; osSummary.focus(); };
-  for (const option of osOptions) option.addEventListener('click', () => {
-    show(option.dataset.os, browserSelect.value);
-    close();
-  });
-  osMenu.addEventListener('toggle', () => {
-    if (osMenu.open) {
-      for (const option of osOptions) option.tabIndex = option.getAttribute('aria-selected') === 'true' ? 0 : -1;
-      osOptions.find(option => option.tabIndex === 0).focus();
-    }
-  });
-  osMenu.addEventListener('keydown', event => {
-    if (event.key === 'Escape' && osMenu.open) { event.preventDefault(); close(); return; }
-    if (!['ArrowDown','ArrowUp','Home','End'].includes(event.key)) return;
-    event.preventDefault();
-    if (!osMenu.open) { osMenu.open = true; return; }
-    const current = osOptions.indexOf(doc.activeElement);
-    const index = event.key === 'Home' ? 0 : event.key === 'End' ? osOptions.length - 1
-      : (current + (event.key === 'ArrowDown' ? 1 : -1) + osOptions.length) % osOptions.length;
-    for (const option of osOptions) option.tabIndex = -1;
-    osOptions[index].tabIndex = 0;
-    osOptions[index].focus();
-  });
-  osMenu.addEventListener('focusout', event => { if (!osMenu.contains(event.relatedTarget)) osMenu.open = false; });
-  doc.addEventListener('click', event => { if (!osMenu.contains(event.target)) osMenu.open = false; });
-  browserSelect.addEventListener('change', () => show(osMenu.dataset.value, browserSelect.value));
+  initMenuField(osMenu, system => show(system, browserMenu.dataset.value));
+  initMenuField(browserMenu, value => show(osMenu.dataset.value, value));
 }
 
 if (typeof document !== 'undefined') initInstallGuide(document, navigator);

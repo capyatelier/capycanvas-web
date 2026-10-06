@@ -43,7 +43,7 @@ html[data-page="documentation"] .nav-inner { max-width: 1320px; }
 .guide-image-link { display: block; cursor: zoom-in; border-radius: var(--surface-radius); }
 .guide-shot { margin: 4px 0 28px; }
 .guide-shot .guide-image-link { display: inline-block; max-width: 100%; vertical-align: top; }
-.guide-shot picture, .guide-shot img { width: auto; max-width: 100%; border-radius: var(--control-radius); }
+.guide-shot picture, .guide-shot img { width: auto; max-width: 100%; border-radius: var(--surface-radius); }
 .guide-shot .guide-image-slot { min-height: 96px; padding: 16px; text-align: center; font-size: 12px; }
 .guide-image-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .guide-prose { font-size: 15px; line-height: 1.8; overflow-wrap: anywhere; }
@@ -76,7 +76,7 @@ html[data-page="documentation"] .nav-inner { max-width: 1320px; }
 .docs-toc a:hover { color: var(--accent); }
 .platform-notes { margin-top: 32px; }
 .platform-notes > p { font-size: 14px; color: var(--muted); }
-.docs-platform-field { margin-bottom: 18px; font-size: 14px; }
+.docs-platform { width: max-content; min-width: 200px; max-width: 100%; margin-bottom: 18px; font-size: 14px; }
 .platform-topics section + section { margin-top: 20px; }
 .platform-topics h3 { display: flex; gap: 9px; align-items: center; font-size: 14px; }
 .platform-topics svg { width: 17px; height: 17px; }
@@ -109,7 +109,7 @@ html[data-page="documentation"] .nav-inner { max-width: 1320px; }
   .guide-pagination { gap: 16px; font-size: 13px; }
 }
 @media print {
-  .docs-sidebar, .docs-toc, .guide-pagination, .docs-back, .docs-platform-field { display: none; }
+  .docs-sidebar, .docs-toc, .guide-pagination, .docs-back, .docs-platform { display: none; }
   .docs-shell { display: block; }
   .platform-topics [hidden] { display: block; }
 }

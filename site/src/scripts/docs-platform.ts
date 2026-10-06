@@ -1,3 +1,5 @@
+import { initMenuField, setMenuValue } from './menu-field.js';
+
 export function detectPlatform(platform: string, userAgent: string, touchPoints: number) {
   if (/iPad|iPhone|iPod/.test(userAgent) || (/Mac/.test(platform) && touchPoints > 1)) return 'ipad';
   if (/Android/.test(userAgent)) return 'android';
@@ -9,21 +11,21 @@ export function detectPlatform(platform: string, userAgent: string, touchPoints:
 }
 
 export function initPlatformNotes() {
-  const picker = document.querySelector<HTMLSelectElement>('.docs-platform');
+  const picker = document.querySelector<HTMLDetailsElement>('.docs-platform');
   if (!picker) return;
   let saved: string | null = null;
   try { saved = localStorage.getItem('capycanvas.docs.platform'); } catch { /* Detection works without storage. */ }
-  const valid = Array.from(picker.options, option => option.value);
-  picker.value = saved && valid.includes(saved) ? saved : detectPlatform(navigator.platform, navigator.userAgent, navigator.maxTouchPoints);
-  const update = () => {
+  const valid = Array.from(picker.querySelectorAll<HTMLElement>('[role=option]'), option => option.dataset.value);
+  const update = (value: string) => {
+    setMenuValue(picker, value);
     document.querySelectorAll<HTMLElement>('[data-doc-platform]').forEach(section => {
-      section.hidden = picker.value !== 'all' && picker.value !== section.dataset.docPlatform;
+      section.hidden = value !== 'all' && value !== section.dataset.docPlatform;
     });
   };
-  update();
+  update(saved && valid.includes(saved) ? saved : detectPlatform(navigator.platform, navigator.userAgent, navigator.maxTouchPoints));
   picker.hidden = false;
-  picker.addEventListener('change', () => {
-    update();
-    try { localStorage.setItem('capycanvas.docs.platform', picker.value); } catch { /* The picker works without storage. */ }
+  initMenuField(picker, (value: string) => {
+    update(value);
+    try { localStorage.setItem('capycanvas.docs.platform', value); } catch { /* The picker works without storage. */ }
   });
 }

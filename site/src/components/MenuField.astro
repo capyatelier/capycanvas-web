@@ -1,0 +1,14 @@
+---
+import type { paths } from '../lib/icons';
+import Icon from './Icon.astro';
+interface Option { value: string; label: string; icon?: keyof typeof paths }
+interface Props { id: string; label: string; options: Option[]; value: string; class?: string; hidden?: boolean }
+const { id, label, options, value, hidden } = Astro.props;
+const current = options.find(option => option.value === value) ?? options[0];
+---
+<details id={id} class:list={['menu-field', Astro.props.class]} data-value={current.value} hidden={hidden}>
+  <summary aria-haspopup="listbox" aria-labelledby={`${id}-label ${id}-current`}><span id={`${id}-label`} class="visually-hidden">{label}</span><span id={`${id}-current`} class="menu-field-current">{current.icon && <Icon name={current.icon} />}<span>{current.label}</span></span><Icon name="chevron" class="chevron" /></summary>
+  <div class="menu-field-options menu" role="listbox" aria-label={label}>
+    {options.map(option => <button class="menu-item" type="button" role="option" data-value={option.value} aria-selected={option.value === current.value ? 'true' : 'false'} tabindex="-1">{option.icon && <Icon name={option.icon} />}<span>{option.label}</span></button>)}
+  </div>
+</details>

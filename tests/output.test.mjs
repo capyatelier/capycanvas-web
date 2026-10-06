@@ -119,9 +119,10 @@ for(const locale of Object.keys(languages)) {
       assert.ok(modules.some(code=>code.includes('[data-pwa-guide]')), 'PWA behavior is bundled with the download component');
       assert.match(html,/<div data-pwa-guide="generic"><ol>/);
       assert.match(html,/<div class="pwa-browser" hidden><details id="pwa-os"/);
-      assert.match(html,/<select id="pwa-browser" aria-label=".+?"/);
+      assert.match(html,/<details id="pwa-browser" class="menu-field"[^>]*><summary aria-haspopup="listbox" aria-labelledby="pwa-browser-label pwa-browser-current"/);
+      assert.doesNotMatch(html,/<select/);
       assert.doesNotMatch(html,/<label for="pwa-/);
-      for(const os of Object.keys(pwa.systems)) assert.match(html,new RegExp(`data-os="${os}"[^>]*><svg`));
+      for(const os of Object.keys(pwa.systems)) assert.match(html,new RegExp(`data-value="${os}"[^>]*><svg`));
       for(const [id,guide] of Object.entries(pwa.guides)) {
         assert.ok(html.includes(`data-pwa-guide="${id}"`));
         assert.ok(html.includes(escapeText(guide.step)));
