@@ -46,7 +46,8 @@
     "capture/editor.mjs": "3dfbefc48f3e25773b8285d7841a45c3a4280834f82adf770862fa2d7784b096",
     "capture/languages.mjs": "cd9dcbf4da7f54ce67be95a2e7ee80989625f6e8b2acd07724ac09a5ee7969b4",
     "capture/shoot.mjs": "e807f8c69ecd222b3b2ca57525a99b254cabf651720abe02c1fa8223711a71c2",
-    "capture/showcase.mjs": "b877efa1c7761f3156d040cfb948e9030968fe4f1d383b749ba3d989722d8bd7",
+    "capture/showcase-scenes.mjs": "2ab43bb35dc3869921ae4ce0e15219134d394d2ce4cf491c2a2d6bc520788484",
+    "capture/showcase.mjs": "6de3a4f4f43d3741dd422449a840d4ada2ed4002b23535fc31648b529305d3e6",
     "prepare-capture.mjs": "519e33a176e6260bd380e73c27e3c9a1c6f03add7016989300a88dd130432287",
     "serve.mjs": "f804ab7645298d628e5749e2cb50539242b8fb5ab17f222f9506dba7e9134569"
   },
@@ -97793,8 +97794,8 @@
         1920,
         1080
       ],
-      "bytes": 306246,
-      "sha256": "083b781009d781cb20b35042b3fbade2ffca6892e4048a4eee1b52612a416c1f",
+      "bytes": 306176,
+      "sha256": "3256218cdac798613e526dff867012512186de40a94b213820b72f9278d40fc3",
       "annotations": []
     },
     {
@@ -97827,8 +97828,8 @@
         1920,
         1080
       ],
-      "bytes": 910668,
-      "sha256": "721b7bd83b6d4172b955da0531d28074024966a16f5b333ec1b1d198509e86c8",
+      "bytes": 910122,
+      "sha256": "1f132af70e5c28de98273c60887cca019b61449b76fbc5bfdffeed1f8ab4bb3a",
       "annotations": []
     },
     {
@@ -97929,8 +97930,8 @@
         1920,
         1080
       ],
-      "bytes": 916432,
-      "sha256": "4951dab2a5bf614be5160d4e255bf86d18930c3de1aaa40104cc0cfdfb695c9f",
+      "bytes": 916384,
+      "sha256": "8dc69c9773028727d8af0b7e93de56c3c5e6c1b991b6debfe6ac0e21747fb446",
       "annotations": []
     },
     {
@@ -97997,8 +97998,8 @@
         1920,
         1080
       ],
-      "bytes": 318058,
-      "sha256": "c0f09608119918cdceb939ad323c2804cfc151bb01c5770d163f2bbd221bc25e",
+      "bytes": 320764,
+      "sha256": "3a48f46a8dbaf5a046244edc5615fe3d622671f7535ae6eb0b51651a59cf13a3",
       "annotations": []
     },
     {
@@ -98201,8 +98202,8 @@
         1920,
         1080
       ],
-      "bytes": 317948,
-      "sha256": "8af9f639c5d2ba3adcf92e8dcf71bc5a397d96729a618365b1a83cffd134f67d",
+      "bytes": 316862,
+      "sha256": "e7b18983fd7e06e2dc005829164b7375228cb228ffb2200ba5f146e064b57aba",
       "annotations": []
     },
     {
@@ -98711,8 +98712,8 @@
         1920,
         1080
       ],
-      "bytes": 302508,
-      "sha256": "7706ccf45e78349eac6edd85268357329953aa261554f6a7436e36739bf3fd57",
+      "bytes": 308542,
+      "sha256": "11ff1556ef13d40d80d7cbbb79c8ae7e9e62072ba7ea96189baf573945532b38",
       "annotations": []
     },
     {
@@ -98728,8 +98729,8 @@
         1920,
         1080
       ],
-      "bytes": 298116,
-      "sha256": "f3d9ea09c95c1dcd05721c78f918e1b37ae8fdaf27856fb95b4c9934112086dc",
+      "bytes": 304456,
+      "sha256": "bc215a2e7daa4d2f24dca9dc708a054b4ddabdb0006fabc7fa459c52bc472cc0",
       "annotations": []
     },
     {
@@ -98745,8 +98746,8 @@
         1920,
         1080
       ],
-      "bytes": 909418,
-      "sha256": "ab725c06ef9c5f13db234e00d52b81a8eecfd45f8f054d8b7ed69d251d6b4a1c",
+      "bytes": 911842,
+      "sha256": "e1cd832d717294d7ee0917db44cffa8b2841cabf4e6c836189a11c9cfe50dfe0",
       "annotations": []
     },
     {
@@ -98762,8 +98763,8 @@
         1920,
         1080
       ],
-      "bytes": 909368,
-      "sha256": "0096cc246053b746d793b365f2ca485bc9eca5ab8819b03b8b5888fd2ee73b68",
+      "bytes": 912136,
+      "sha256": "63c1e84a25ab979a5f800fa0e94a707a84f45ecbffee467baec3f2292d4b75f5",
       "annotations": []
     },
     {
@@ -98779,8 +98780,8 @@
         1920,
         1080
       ],
-      "bytes": 835076,
-      "sha256": "29d7e2ef365c227f769a9c2795ad063e09a9f36f870ba12a86beca189e88d768",
+      "bytes": 834902,
+      "sha256": "f65033a27d2158bce13ef8a16b8980e64c56aa55e8a76e2e1feb9788b74491ab",
       "annotations": []
     },
     {
@@ -98796,8 +98797,8 @@
         1920,
         1080
       ],
-      "bytes": 834248,
-      "sha256": "e41034875750f46df23f70992f527a4417ca5d3e92c037fe5f4dd83734e39b12",
+      "bytes": 834116,
+      "sha256": "ba82040e4d948bc6359f0650d63e4b53d94c5d31ebe855efd93bce59c5722b64",
       "annotations": []
     },
     {
