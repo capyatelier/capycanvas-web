@@ -32,7 +32,7 @@ generated recipe, logs and images go to `artifacts/store-capture/<time>/`
 (`STORE_OUTPUT` selects another directory).
 
 `STORE_SCENES`, `STORE_LANGUAGES`, `STORE_THEMES` and `STORE_WINDOW` (such as
-`1920x1080`) limit a trial run; such a run can't be published.
+`1920x1080`) limit a trial run. Use `refresh` below to replace reviewed variants in an existing complete catalog; `publish` still requires a full run.
 `STORE_EXECUTABLE` reuses an executable built from unchanged app sources.
 
 ## Review and publish
@@ -48,10 +48,19 @@ npm run check
 
 `publish` replaces `site/public/store/gtk/` with the run's images, named
 `<language>/<scene>-<theme>.png` with the language tag in lower case, and writes
-`manifest.json`. The manifest records the app revision and executable hash, the
-window size, recipe and artwork hashes, and each image's scene, language,
-theme, URL, pixel size and hash. `npm test` checks the published images against
+`manifest.json`. The manifest records the window size, recipe file and artwork hashes, and each image's scene, language, theme, URL, pixel size and hash. Each image also records its own app revision, executable hash and capture recipe hash. `npm test` checks the published images against
 the manifest and the current recipe without rendering.
+
+To refresh selected variants after an app fix, capture committed, clean app sources and review every selected image:
+
+```sh
+APP_REPO=../capycanvas STORE_SCENES=photo STORE_LANGUAGES=fr,de,ru \
+  STORE_THEMES=light,dark npm run capture:store
+npm run capture:store -- refresh artifacts/store-capture/<time>
+npm run check
+```
+
+`refresh` checks the existing complete catalog and every retained file, then replaces only the captured variants. The other files and their original app provenance stay unchanged. The window, scene recipe files, canonical artwork and supported languages must still match; use a full capture and `publish` when those change. Failed, duplicate, unknown or wrongly attributed variants are rejected before any published files change.
 
 After the site deploys:
 

@@ -17,9 +17,7 @@ test('GTK store screenshots cover every scene, app language and theme with prove
   const text = await readFile(join(root, directory, 'manifest.json'), 'utf8');
   const manifest = JSON.parse(text);
   assert.doesNotMatch(text, /\/home\/|\/tmp\/|artifacts\//, 'No local paths are published');
-  assert.match(manifest.app.revision, /^[a-f0-9]{40}$/);
-  assert.match(manifest.app.executable_sha256, /^[a-f0-9]{64}$/);
-  assert.match(manifest.recipe_sha256, /^[a-f0-9]{64}$/);
+  assert.deepEqual(manifest.app, { source: 'https://github.com/capyatelier/capycanvas', helper: 'tools/visual/gtk-store-capture.py' });
   assert.deepEqual(manifest.window, window);
   assert.deepEqual(manifest.themes, themes);
   assert.deepEqual(manifest.scenes, scenes.map(scene => scene.id));
@@ -32,6 +30,9 @@ test('GTK store screenshots cover every scene, app language and theme with prove
   const expected = manifest.scenes.flatMap(scene => manifest.languages.flatMap(language => themes.map(theme => `${scene}|${language}|${theme}`)));
   assert.deepEqual(manifest.images.map(image => `${image.scene}|${image.language}|${image.theme}`), expected, 'One image per scene, language and theme');
   for (const image of manifest.images) {
+    assert.match(image.capture.source_revision, /^[a-f0-9]{40}$/);
+    assert.match(image.capture.executable_sha256, /^[a-f0-9]{64}$/);
+    assert.match(image.capture.recipe_sha256, /^[a-f0-9]{64}$/);
     assert.equal(image.path, imagePath(image));
     assert.equal(image.url, `${origin}/${image.path}`);
     const bytes = await readFile(join(root, image.path));

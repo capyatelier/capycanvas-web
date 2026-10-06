@@ -119,51 +119,122 @@ async function capture() {
   if (failed.length) process.exitCode = 1;
 }
 
-async function publish(runDirectory) {
-  assert.ok(runDirectory, 'Usage: publish <run directory>');
-  const run = await json(join(resolve(runDirectory), 'run.json'));
-  assert.ok(run.complete, 'Only a full run at the published window size can be published');
+const appSource = { source: 'https://github.com/capyatelier/capycanvas', helper: 'tools/visual/gtk-store-capture.py' };
+const expectedKeys = manifest => manifest.scenes.flatMap(scene => manifest.languages.flatMap(language => themes.map(theme => key({ scene, language, theme }))));
+const provenance = capture => {
+  assert.deepEqual(Object.keys(capture).sort(), ['executable_sha256', 'recipe_sha256', 'source_revision']);
+  assert.match(capture.source_revision, /^[a-f0-9]{40}$/);
+  for (const field of ['executable_sha256', 'recipe_sha256']) assert.match(capture[field], /^[a-f0-9]{64}$/);
+};
+
+export function mergeRefresh(current, run, replacements) {
+  assert.deepEqual(current.app, appSource, 'Per-image app provenance is required');
+  for (const field of ['window', 'recipeHashes', 'languages', 'themes', 'scenes']) assert.deepEqual(current[field], run[field], `Refresh cannot change ${field}`);
+  assert.deepEqual(current.images.map(key), expectedKeys(current), 'Existing catalog covers every variant exactly once');
+  for (const image of current.images) {
+    provenance(image.capture);
+    assert.equal(image.path, imagePath(image), 'Canonical image path');
+    assert.equal(image.url, `${origin}/${image.path}`, 'Canonical image URL');
+  }
+  assert.ok(replacements.length, 'Refresh needs at least one captured variant');
+  const updated = new Map(replacements.map(image => [key(image), image]));
+  assert.equal(updated.size, replacements.length, 'One replacement per variant');
+  const known = new Set(current.images.map(key));
+  for (const [variant, image] of updated) {
+    assert.ok(known.has(variant), `Existing variant: ${variant}`);
+    assert.deepEqual(image.capture, { source_revision: run.app.revision, executable_sha256: run.app.executable_sha256, recipe_sha256: run.recipe_sha256 }, `Captured provenance: ${variant}`);
+    assert.equal(image.path, imagePath(image), 'Canonical replacement path');
+    assert.equal(image.url, `${origin}/${image.path}`, 'Canonical replacement URL');
+  }
+  return { ...current, images: current.images.map(image => updated.get(key(image)) ?? image) };
+}
+
+async function captureImages(run) {
   assert.equal(run.app.dirty, false, 'Captured from committed app sources');
+  provenance({ source_revision: run.app.revision, executable_sha256: run.app.executable_sha256, recipe_sha256: run.recipe_sha256 });
   assert.deepEqual(run.window, window, 'Captured at the published window size');
   assert.deepEqual(run.recipeHashes, await recipeHashes(), 'Scene recipe changed since the capture; capture again');
-  const expected = run.scenes.flatMap(scene => run.languages.flatMap(language => themes.map(theme => key({ scene, language, theme }))));
-  assert.deepEqual(run.results.map(key), expected, 'Every scene, language and theme was captured');
-  const sources = Object.fromEntries(await Promise.all(scenes.map(async ({ source }) => {
-    const bytes = await readFile(new URL(source, artwork));
-    return [source, { bytes: bytes.length, sha256: hash(bytes) }];
-  })));
+  assert.deepEqual(run.themes, themes);
+  assert.deepEqual(run.scenes, scenes.map(scene => scene.id));
+  assert.ok(run.results.length, 'Run needs captured variants');
+  assert.equal(new Set(run.results.map(key)).size, run.results.length, 'Captured variants are unique');
+  const supported = new Set(expectedKeys(run));
   const images = [];
   for (const result of run.results) {
+    assert.ok(supported.has(key(result)), `Supported variant: ${key(result)}`);
     assert.ok(result.ok, `Captured: ${key(result)}`);
     const manifest = await json(join(result.output, 'capture.json'));
     for (const [field, value] of Object.entries({ source_revision: run.app.revision, source_dirty: false, executable_sha256: run.app.executable_sha256, recipe_sha256: run.recipe_sha256, ...run.window })) {
       assert.deepEqual(manifest[field], value, `${key(result)}: ${field}`);
     }
+    assert.equal(manifest.captures.length, 1, 'Exactly one image per capture');
     const [shot] = manifest.captures;
     assert.deepEqual([shot.scene, shot.language, shot.theme], [result.scene, result.language, result.theme], `Variant recorded: ${key(result)}`);
-    const bytes = await readFile(join(result.output, shot.image));
+    const source = resolve(result.output, shot.image);
+    for (const file of [shot.image, shot.sidecar]) assert.ok(resolve(result.output, file).startsWith(resolve(result.output, 'images') + '/'), 'Capture files remain inside output/images');
+    const bytes = await readFile(source);
     const sidecar = await json(join(result.output, shot.sidecar));
     const [width, height] = dimensions(bytes);
     assert.deepEqual([width, height], sidecar.dimensions, `Sidecar dimensions: ${key(result)}`);
-    assert.deepEqual(sidecar.alpha.corners, [0, 0, 0, 0], `Transparent corners: ${key(result)}`);
+    const padding = alpha(bytes);
+    assert.equal(padding.colorType, 6, 'RGBA capture');
+    assert.ok(padding.transparent > 0, 'Transparent padding');
+    assert.ok(width > window.width * window.scale && height > window.height * window.scale, 'Full-scale window and shadow');
+    assert.deepEqual(padding.corners, [0, 0, 0, 0], `Transparent PNG corners: ${key(result)}`);
+    assert.deepEqual(sidecar.alpha.corners, [0, 0, 0, 0], `Transparent sidecar corners: ${key(result)}`);
     const path = imagePath(result);
-    images.push({ scene: result.scene, language: result.language, theme: result.theme, url: `${origin}/${path}`, path, width, height, bytes: bytes.length, sha256: hash(bytes), source: join(result.output, shot.image) });
+    images.push({ scene: result.scene, language: result.language, theme: result.theme, url: `${origin}/${path}`, path, width, height, bytes: bytes.length, sha256: hash(bytes),
+      capture: { source_revision: run.app.revision, executable_sha256: run.app.executable_sha256, recipe_sha256: run.recipe_sha256 }, source });
   }
-  const target = join(published, directory);
-  await rm(target, { recursive: true, force: true });
+  return images;
+}
+
+async function artworkHashes() {
+  return Object.fromEntries(await Promise.all(scenes.map(async ({ source }) => {
+    const bytes = await readFile(new URL(source, artwork));
+    return [source, { bytes: bytes.length, sha256: hash(bytes) }];
+  })));
+}
+
+async function writeImages(images, manifest) {
   for (const image of images) {
     await mkdir(join(published, image.path, '..'), { recursive: true });
     await copyFile(image.source, join(published, image.path));
     delete image.source;
   }
+  await writeFile(join(published, directory, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
+}
+
+async function publish(runDirectory) {
+  assert.ok(runDirectory, 'Usage: publish <run directory>');
+  const run = await json(join(resolve(runDirectory), 'run.json'));
+  assert.ok(run.complete, 'Only a full run at the published window size can replace the whole catalog');
+  assert.deepEqual(run.results.map(key), expectedKeys(run), 'Every scene, language and theme was captured');
+  const images = await captureImages(run);
   const manifest = {
     description: 'Native GTK screenshots of Capy Canvas for software centers: each showcase scene in every app language, light and dark, captured from a fresh app on a private headless display at real monitor scale. Images keep the native window corners and shadow on transparent padding.',
-    app: { source: 'https://github.com/capyatelier/capycanvas', revision: run.app.revision, executable_sha256: run.app.executable_sha256, helper: 'tools/visual/gtk-store-capture.py' },
-    window: run.window, recipe_sha256: run.recipe_sha256, recipeHashes: run.recipeHashes, artwork: sources,
-    languages: run.languages, themes, scenes: run.scenes, images,
+    app: appSource, window: run.window, recipeHashes: run.recipeHashes, artwork: await artworkHashes(), languages: run.languages, themes, scenes: run.scenes, images,
   };
-  await writeFile(join(target, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
-  console.log(`Published ${images.length} images to ${target}`);
+  await rm(join(published, directory), { recursive: true, force: true });
+  await writeImages(images, manifest);
+  console.log(`Published ${images.length} images to ${join(published, directory)}`);
+}
+
+async function refresh(runDirectory) {
+  assert.ok(runDirectory, 'Usage: refresh <run directory>');
+  const run = await json(join(resolve(runDirectory), 'run.json'));
+  const replacements = await captureImages(run);
+  const current = await json(join(published, directory, 'manifest.json'));
+  const manifest = mergeRefresh(current, run, replacements);
+  assert.deepEqual(current.artwork, await artworkHashes(), 'Refresh cannot change canonical artwork');
+  for (const image of current.images) {
+    const bytes = await readFile(join(published, image.path));
+    assert.equal(hash(bytes), image.sha256, `Existing image matches provenance: ${image.path}`);
+    assert.equal(bytes.length, image.bytes, `Existing image size: ${image.path}`);
+    assert.deepEqual(dimensions(bytes), [image.width, image.height], `Existing image dimensions: ${image.path}`);
+  }
+  await writeImages(replacements, manifest);
+  console.log(`Refreshed ${replacements.length} images; retained ${current.images.length - replacements.length} in ${join(published, directory)}`);
 }
 
 async function verify(base = origin) {
@@ -199,6 +270,8 @@ async function verify(base = origin) {
 }
 
 const [command = 'capture', ...args] = process.argv.slice(2);
-const commands = { capture, publish, verify };
-assert.ok(commands[command], `Unknown command: ${command}`);
-await commands[command](...args);
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  const commands = { capture, publish, refresh, verify };
+  assert.ok(commands[command], `Unknown command: ${command}`);
+  await commands[command](...args);
+}
