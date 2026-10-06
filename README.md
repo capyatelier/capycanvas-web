@@ -135,25 +135,28 @@ If the GitHub API request fails, the build fails rather than publishing pages
 without the releases.
 
 The Download page opens with a one-line beta note and a large button for the visitor's
-detected system: the latest release's file (labelled with its version, with the release
-date and size beneath), the beta sign-up on iPad and Android, or the web app otherwise.
-**Other platforms** lists every platform with its download or beta link, followed by
-Past versions and the GitHub releases list, then the web app instructions. Release notes
-and checksums appear on Past versions. Without JavaScript the button stays hidden. Past versions lists every
-published release, newest first, with its date, notes and files. Only these assets are
-offered, matched by exact name:
+detected system: the latest release's file (labelled with its version, platform and
+variant, with the release date beneath), the beta sign-up on iPad and Android, or the web
+app otherwise. Windows on Arm gets the Arm64 installer when a Chromium browser reports the
+architecture; other browsers get x64. **Other platforms** lists every platform with a button
+per option, named by its variant, followed by Past versions and the GitHub releases list,
+then the web app instructions. Without JavaScript the button stays hidden. Past versions
+lists every published release, newest first, with its date, files, a link to the release on
+GitHub and its notes. Only these assets are offered, matched by exact name:
 
-| Platform | Asset |
-| --- | --- |
-| Windows | `capycanvas-<version>-windows-x64-setup.exe` |
-| macOS | `capycanvas-<version>-macos-arm64.dmg` |
-| Linux | `capycanvas-<version>-linux-x86_64.AppImage` |
-| Checksums (Past versions only) | `SHA256SUMS` |
+| Platform | Variant | Asset |
+| --- | --- | --- |
+| Android | APK | `capycanvas-<version>-android.apk` |
+| Linux | Flatpak | `capycanvas.flatpakref` on Download, `capycanvas-<version>-linux-x86_64.flatpak` on Past versions |
+| Windows | x64 | `capycanvas-<version>-windows-x64-setup.exe` |
+| Windows | Arm64 | `capycanvas-<version>-windows-arm64-setup.exe` |
+| macOS | Apple silicon | `capycanvas-<version>-macos-arm64.dmg` |
 
-The Android `.apk`, Microsoft Store `.msix`, Google Play `.aab`, AppImage `.zsync`
-update data and the `.zip` archives are never linked; Android is offered only through
-the Google Play beta. Until a release is published, Linux, Windows and
-macOS keep their "Coming soon" status and the page links to the GitHub releases list.
+The Flatpak reference always installs the newest release, so Past versions links each
+release's bundle instead. AppImages from earlier releases, `SHA256SUMS`, the Microsoft
+Store `.msix`, Google Play `.aab`, the Flatpak repository archive and the `.zip` archives
+are left on GitHub. Until a release is published, Linux, Windows and macOS keep their
+"Coming soon" status and the page links to the GitHub releases list.
 
 The iPad and Android rows always show **Join the beta**, which opens a short sign-up
 page: `/download/ipad-beta/` (install TestFlight from its App Store button, open the invitation, install) and

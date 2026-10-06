@@ -25,18 +25,18 @@ export const content = {
     },
     download: {
       title: 'Download', intro: 'Capy Canvas is in beta. Expect some rough edges, and save your work often.',
-      status: 'Coming soon', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: 'Other platforms', joinBeta: 'Join the beta', downloadFor: 'Download {version} for {platform}', openWebApp: 'Open the web app',
+      status: 'Coming soon', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: 'Other platforms', joinBeta: 'Join the beta', downloadFor: 'Download {version} · {platform}', openWebApp: 'Open the web app',
       pwa: pwaContent.en,
-      get: 'Download',
+      variants: { apk: 'APK', flatpak: 'Flatpak', x64: 'x64', arm64: 'Arm64', appleSilicon: 'Apple silicon' },
       pastVersions: 'Past versions', allReleases: 'Releases on GitHub',
       notesLanguage: 'Release notes are in English.',
       metaReleased: 'Download Capy Canvas, or install it as a web app for offline use.',
       meta: 'Install Capy Canvas as a web app for offline use. Native downloads are coming soon.'
     },
     versions: {
-      title: 'Past versions', intro: 'Every released version of Capy Canvas, newest first.',
+      title: 'Past versions', intro: 'If an update gives you trouble, you can go back to an earlier version.',
       empty: 'No versions have been released yet.',
-      version: 'Version {version}', released: 'Released {date}', latest: 'Latest', files: 'Files',
+      version: 'Version {version}', released: 'Released {date}', latest: 'Latest', files: 'Files', github: 'All files on GitHub',
       meta: 'Every released version of Capy Canvas, with release notes and download links.'
     },
     ipadBeta: {
@@ -78,18 +78,18 @@ export const content = {
     },
     download: {
       title: 'ダウンロード', intro: 'Capy Canvas は現在ベータ版です。不具合があるかもしれないので、こまめに保存してください。',
-      status: '公開予定', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: 'その他のプラットフォーム', joinBeta: 'ベータに参加', downloadFor: '{platform} 版 {version} をダウンロード', openWebApp: 'ウェブアプリを開く',
+      status: '公開予定', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: 'その他のプラットフォーム', joinBeta: 'ベータに参加', downloadFor: '{version} をダウンロード · {platform}', openWebApp: 'ウェブアプリを開く',
       pwa: pwaContent.ja,
-      get: 'ダウンロード',
+      variants: { apk: 'APK', flatpak: 'Flatpak', x64: 'x64', arm64: 'Arm64', appleSilicon: 'Appleシリコン' },
       pastVersions: '過去のバージョン', allReleases: 'GitHub のリリース',
       notesLanguage: 'リリースノートは英語です。',
       metaReleased: 'Capy Canvas をダウンロードするか、ウェブアプリとしてインストールしてオフラインで使えます。',
       meta: 'Capy Canvas のウェブ版をインストールしてオフラインで使えます。ネイティブ版は公開準備中です。'
     },
     versions: {
-      title: '過去のバージョン', intro: 'これまでに公開した Capy Canvas のすべてのバージョンを、新しい順に掲載しています。',
+      title: '過去のバージョン', intro: 'アップデートで問題が起きたときは、以前のバージョンに戻せます。',
       empty: '公開済みのバージョンはまだありません。',
-      version: 'バージョン {version}', released: '{date} 公開', latest: '最新', files: 'ファイル',
+      version: 'バージョン {version}', released: '{date} 公開', latest: '最新', files: 'ファイル', github: 'GitHub のすべてのファイル',
       meta: 'これまでに公開した Capy Canvas のすべてのバージョンと、リリースノート、ダウンロードリンク。'
     },
     ipadBeta: {
@@ -131,18 +131,18 @@ export const content = {
     },
     download: {
       title: '下载', intro: 'Capy Canvas 目前处于测试阶段，可能会有一些小问题，请经常保存作品。',
-      status: '即将推出', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: '其他平台', joinBeta: '加入测试', downloadFor: '下载 {platform} 版 {version}', openWebApp: '打开网页应用',
+      status: '即将推出', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: '其他平台', joinBeta: '加入测试', downloadFor: '下载 {version} · {platform}', openWebApp: '打开网页应用',
       pwa: pwaContent.zh,
-      get: '下载',
+      variants: { apk: 'APK', flatpak: 'Flatpak', x64: 'x64', arm64: 'Arm64', appleSilicon: 'Apple 芯片' },
       pastVersions: '历史版本', allReleases: 'GitHub 上的发布页面',
       notesLanguage: '发布说明为英文。',
       metaReleased: '下载 Capy Canvas，或将其安装为网页应用以便离线使用。',
       meta: '安装 Capy Canvas 网页应用，即可离线使用。原生版本即将推出。'
     },
     versions: {
-      title: '历史版本', intro: 'Capy Canvas 已发布的所有版本，按从新到旧排列。',
+      title: '历史版本', intro: '如果更新后遇到问题，可以换回之前的版本。',
       empty: '目前还没有发布任何版本。',
-      version: '版本 {version}', released: '发布于 {date}', latest: '最新', files: '文件',
+      version: '版本 {version}', released: '发布于 {date}', latest: '最新', files: '文件', github: 'GitHub 上的所有文件',
       meta: 'Capy Canvas 已发布的所有版本，附发布说明和下载链接。'
     },
     ipadBeta: {
@@ -184,18 +184,18 @@ export const content = {
     },
     download: {
       title: '다운로드', intro: 'Capy Canvas는 현재 베타 단계입니다. 다소 불안정할 수 있으니 작업을 자주 저장하세요.',
-      status: '출시 예정', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: '다른 플랫폼', joinBeta: '베타 참여', downloadFor: '{platform}용 {version} 다운로드', openWebApp: '웹 앱 열기',
+      status: '출시 예정', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: '다른 플랫폼', joinBeta: '베타 참여', downloadFor: '{version} 다운로드 · {platform}', openWebApp: '웹 앱 열기',
       pwa: pwaContent.ko,
-      get: '다운로드',
+      variants: { apk: 'APK', flatpak: 'Flatpak', x64: 'x64', arm64: 'Arm64', appleSilicon: 'Apple 실리콘' },
       pastVersions: '이전 버전', allReleases: 'GitHub 릴리스',
       notesLanguage: '릴리스 노트는 영어로 제공됩니다.',
       metaReleased: 'Capy Canvas를 다운로드하거나 웹 앱으로 설치해 오프라인으로 사용하세요.',
       meta: 'Capy Canvas 웹 앱을 설치해 오프라인으로 사용하세요. 네이티브 버전은 출시 예정입니다.'
     },
     versions: {
-      title: '이전 버전', intro: '지금까지 출시된 Capy Canvas의 모든 버전을 최신순으로 보여 줍니다.',
+      title: '이전 버전', intro: '업데이트 후 문제가 생기면 이전 버전으로 되돌릴 수 있습니다.',
       empty: '아직 출시된 버전이 없습니다.',
-      version: '버전 {version}', released: '{date} 출시', latest: '최신', files: '파일',
+      version: '버전 {version}', released: '{date} 출시', latest: '최신', files: '파일', github: 'GitHub의 모든 파일',
       meta: '지금까지 출시된 Capy Canvas의 모든 버전과 릴리스 노트, 다운로드 링크.'
     },
     ipadBeta: {

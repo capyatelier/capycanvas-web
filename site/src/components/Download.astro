@@ -1,9 +1,9 @@
 ---
 import { content } from '../data/content.mjs';
 import { releasesUrl } from '../lib/releases.mjs';
-import { releases, type ReleaseFile } from '../lib/release-data';
-import { appUrl, betaPages, platforms, route, type Locale } from '../lib/site';
-import { formatDate, formatSize } from '../lib/format';
+import { releases, type PlatformFile, type Variant } from '../lib/release-data';
+import { appUrl, betaPages, platforms, route, type Locale, type Platform } from '../lib/site';
+import { formatDate } from '../lib/format';
 import type { paths } from '../lib/icons';
 import Icon from './Icon.astro';
 import PwaInstructions from './PwaInstructions.astro';
@@ -12,20 +12,21 @@ const { locale } = Astro.props;
 const { lang } = content[locale];
 const t = content[locale].download;
 const [latest] = releases;
-const files: Partial<Record<(typeof platforms)[number], ReleaseFile>> = latest?.files ?? {};
-const name = (platform: (typeof platforms)[number]) => t.platforms[platforms.indexOf(platform)];
-interface Pick { platform: string; href: string; icon: keyof typeof paths; label: string; detail?: string }
+const files: Partial<Record<Platform, PlatformFile[]>> = latest?.files ?? {};
+const name = (platform: Platform) => t.platforms[platforms.indexOf(platform)];
+const href = (file: PlatformFile) => file.install?.url ?? file.url;
+const architectures: Partial<Record<Variant, string>> = { x64: 'x86', arm64: 'arm' };
+interface Pick { platform: string; href: string; icon: keyof typeof paths; label: string; detail?: string; arch?: string }
 const picks: Pick[] = [
   ...platforms.flatMap((platform): Pick[] => {
-    const file = files[platform];
     const beta = betaPages[platform];
-    if (file && latest) return [{
-      platform, href: file.url, icon: 'download',
-      label: t.downloadFor.replace('{version}', latest.version).replace('{platform}', name(platform)),
-      detail: `${content[locale].versions.released.replace('{date}', formatDate(lang, latest.date))} · ${formatSize(lang, file.size)}`,
-    }];
     if (beta) return [{ platform, href: route(locale, beta), icon: platform, label: t.joinBeta, detail: content[locale][beta].title }];
-    return [];
+    if (!latest) return [];
+    return (files[platform] ?? []).map(file => ({
+      platform, href: href(file), icon: 'download', arch: architectures[file.variant],
+      label: t.downloadFor.replace('{version}', latest.version).replace('{platform}', `${name(platform)} ${t.variants[file.variant]}`),
+      detail: content[locale].versions.released.replace('{date}', formatDate(lang, latest.date)),
+    }));
   }),
   { platform: 'other', href: appUrl, icon: 'globe', label: t.openWebApp },
 ];
@@ -34,7 +35,7 @@ const picks: Pick[] = [
   <h1>{t.title}</h1>
   <p class="lead">{t.intro}</p>
   <div class="pick" data-pick hidden>
-    {picks.map(pick => <div data-platform={pick.platform} hidden>
+    {picks.map(pick => <div data-platform={pick.platform} data-arch={pick.arch} hidden>
       <a class="button primary" href={pick.href}><Icon name={pick.icon} />{pick.label}</a>
       {pick.detail && <p>{pick.detail}</p>}
     </div>)}
@@ -43,14 +44,14 @@ const picks: Pick[] = [
     <h2 id="other-platforms">{t.otherPlatforms}</h2>
     <ul class="platforms">
       {platforms.map((platform, i) => {
-        const file = files[platform];
         const beta = betaPages[platform];
+        const available = files[platform] ?? [];
         return <li class="platform">
           <Icon name={platform} />
-          <div class="platform-name"><h3 id={`platform-${platform}`}>{t.platforms[i]}</h3>{file && <p class="platform-detail">{formatSize(lang, file.size)}</p>}</div>
-          {beta || file ? <div class="platform-links">
+          <h3 id={`platform-${platform}`}>{t.platforms[i]}</h3>
+          {beta || available.length ? <div class="platform-links">
             {beta && <a class="button" href={route(locale, beta)} aria-describedby={`platform-${platform}`}>{t.joinBeta}</a>}
-            {file && <a class="button" href={file.url} aria-describedby={`platform-${platform}`}><Icon name="download" />{t.get}</a>}
+            {available.map(file => <a class="button" href={href(file)} aria-describedby={`platform-${platform}`}><Icon name="download" />{t.variants[file.variant]}</a>)}
           </div> : <p>{t.status}</p>}
         </li>;
       })}
@@ -65,11 +66,18 @@ const picks: Pick[] = [
 
 <script>
   import { detectPlatform } from '../scripts/docs-platform';
+  interface UserAgentData { getHighEntropyValues(hints: string[]): Promise<{ architecture?: string }> }
   const pick = document.querySelector<HTMLElement>('[data-pick]');
   if (pick) {
     const platform = detectPlatform(navigator.platform, navigator.userAgent, navigator.maxTouchPoints);
-    const choice = pick.querySelector<HTMLElement>(`[data-platform="${platform}"]`) ?? pick.querySelector<HTMLElement>('[data-platform="other"]');
-    if (choice) { choice.hidden = false; pick.hidden = false; }
+    const choices = [...pick.querySelectorAll<HTMLElement>(`[data-platform="${platform}"]`)];
+    const show = (architecture?: string) => {
+      const choice = choices.find(choice => choice.dataset.arch === architecture) ?? choices[0] ?? pick.querySelector<HTMLElement>('[data-platform="other"]');
+      if (choice) { choice.hidden = false; pick.hidden = false; }
+    };
+    const agent = (navigator as Navigator & { userAgentData?: UserAgentData }).userAgentData;
+    if (choices.length > 1 && agent) agent.getHighEntropyValues(['architecture']).then(values => show(values.architecture), () => show());
+    else show();
   }
 </script>
 
@@ -80,8 +88,6 @@ const picks: Pick[] = [
   .pick p { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
   .pick [hidden], .pick[hidden] { display: none; }
   .other-platforms h2 { font-size: 16px; font-weight: 650; margin-bottom: 4px; }
-  .platform-name { min-width: 0; }
-  .platform-name .platform-detail { margin: 0; font-size: 12px; color: var(--muted); }
   .platform-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: var(--gap); margin-left: auto; }
   .platform .button { white-space: nowrap; }
   .release-detail { max-width: 600px; margin: 16px 0 0; font-size: 13px; color: var(--muted); }

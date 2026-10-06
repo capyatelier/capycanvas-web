@@ -43,11 +43,17 @@ export const additionalContent = {
       ],
       "otherPlatforms": "Otras plataformas",
       "joinBeta": "Unirse a la beta",
-      "downloadFor": "Descargar {version} para {platform}",
+      "downloadFor": "Descargar {version} · {platform}",
       "openWebApp": "Abrir la aplicación web",
       "meta": "Instale Capy Canvas como una aplicación web para uso sin conexión. Las descargas nativas llegarán pronto.",
       "pwa": pwaContent["es"],
-      "get": "Descargar",
+      "variants": {
+        "apk": "APK",
+        "flatpak": "Flatpak",
+        "x64": "x64",
+        "arm64": "Arm64",
+        "appleSilicon": "Apple silicon"
+      },
       "pastVersions": "Versiones anteriores",
       "allReleases": "Versiones en GitHub",
       "notesLanguage": "Las notas de la versión están en inglés.",
@@ -55,12 +61,13 @@ export const additionalContent = {
     },
     "versions": {
       "title": "Versiones anteriores",
-      "intro": "Todas las versiones publicadas de Capy Canvas, de la más reciente a la más antigua.",
+      "intro": "Si una actualización le da problemas, puede volver a una versión anterior.",
       "empty": "Todavía no se ha publicado ninguna versión.",
       "version": "Versión {version}",
       "released": "Publicada el {date}",
       "latest": "Más reciente",
       "files": "Archivos",
+      "github": "Todos los archivos en GitHub",
       "meta": "Todas las versiones publicadas de Capy Canvas, con notas de la versión y enlaces de descarga."
     },
     "ipadBeta": {
@@ -148,11 +155,17 @@ export const additionalContent = {
       ],
       "otherPlatforms": "Outras plataformas",
       "joinBeta": "Participar do beta",
-      "downloadFor": "Baixar {version} para {platform}",
+      "downloadFor": "Baixar {version} · {platform}",
       "openWebApp": "Abrir o aplicativo da web",
       "meta": "Instale Capy Canvas como um aplicativo da web para uso offline. Os downloads nativos estarão disponíveis em breve.",
       "pwa": pwaContent["pt-BR"],
-      "get": "Baixar",
+      "variants": {
+        "apk": "APK",
+        "flatpak": "Flatpak",
+        "x64": "x64",
+        "arm64": "Arm64",
+        "appleSilicon": "Apple silicon"
+      },
       "pastVersions": "Versões anteriores",
       "allReleases": "Versões no GitHub",
       "notesLanguage": "As notas da versão estão em inglês.",
@@ -160,12 +173,13 @@ export const additionalContent = {
     },
     "versions": {
       "title": "Versões anteriores",
-      "intro": "Todas as versões lançadas do Capy Canvas, da mais recente para a mais antiga.",
+      "intro": "Se uma atualização der problema, você pode voltar para uma versão anterior.",
       "empty": "Nenhuma versão foi lançada ainda.",
       "version": "Versão {version}",
       "released": "Lançada em {date}",
       "latest": "Mais recente",
       "files": "Arquivos",
+      "github": "Todos os arquivos no GitHub",
       "meta": "Todas as versões lançadas do Capy Canvas, com notas da versão e links para download."
     },
     "ipadBeta": {
@@ -253,11 +267,17 @@ export const additionalContent = {
       ],
       "otherPlatforms": "Platform lainnya",
       "joinBeta": "Ikuti beta",
-      "downloadFor": "Unduh {version} untuk {platform}",
+      "downloadFor": "Unduh {version} · {platform}",
       "openWebApp": "Buka aplikasi web",
       "meta": "Instal Capy Canvas sebagai aplikasi web untuk penggunaan offline. Unduhan asli akan segera hadir.",
       "pwa": pwaContent["id"],
-      "get": "Unduh",
+      "variants": {
+        "apk": "APK",
+        "flatpak": "Flatpak",
+        "x64": "x64",
+        "arm64": "Arm64",
+        "appleSilicon": "Apple silicon"
+      },
       "pastVersions": "Versi sebelumnya",
       "allReleases": "Rilis di GitHub",
       "notesLanguage": "Catatan rilis tersedia dalam bahasa Inggris.",
@@ -265,12 +285,13 @@ export const additionalContent = {
     },
     "versions": {
       "title": "Versi sebelumnya",
-      "intro": "Semua versi Capy Canvas yang telah dirilis, dari yang terbaru.",
+      "intro": "Jika pembaruan menimbulkan masalah, Anda dapat kembali ke versi sebelumnya.",
       "empty": "Belum ada versi yang dirilis.",
       "version": "Versi {version}",
       "released": "Dirilis {date}",
       "latest": "Terbaru",
       "files": "Berkas",
+      "github": "Semua berkas di GitHub",
       "meta": "Semua versi Capy Canvas yang telah dirilis, beserta catatan rilis dan tautan unduhan."
     },
     "ipadBeta": {
@@ -358,11 +379,17 @@ export const additionalContent = {
       ],
       "otherPlatforms": "Autres plateformes",
       "joinBeta": "Rejoindre la bêta",
-      "downloadFor": "Télécharger {version} pour {platform}",
+      "downloadFor": "Télécharger {version} · {platform}",
       "openWebApp": "Ouvrir l'application Web",
       "meta": "Installez Capy Canvas en tant qu'application Web pour une utilisation hors ligne. Les téléchargements natifs arrivent bientôt.",
       "pwa": pwaContent["fr"],
-      "get": "Télécharger",
+      "variants": {
+        "apk": "APK",
+        "flatpak": "Flatpak",
+        "x64": "x64",
+        "arm64": "Arm64",
+        "appleSilicon": "Apple silicon"
+      },
       "pastVersions": "Versions précédentes",
       "allReleases": "Versions sur GitHub",
       "notesLanguage": "Les notes de version sont en anglais.",
@@ -370,12 +397,13 @@ export const additionalContent = {
     },
     "versions": {
       "title": "Versions précédentes",
-      "intro": "Toutes les versions publiées de Capy Canvas, de la plus récente à la plus ancienne.",
+      "intro": "Si une mise à jour vous pose problème, vous pouvez revenir à une version précédente.",
       "empty": "Aucune version n'a encore été publiée.",
       "version": "Version {version}",
       "released": "Publiée le {date}",
       "latest": "Dernière version",
       "files": "Fichiers",
+      "github": "Tous les fichiers sur GitHub",
       "meta": "Toutes les versions publiées de Capy Canvas, avec leurs notes de version et leurs liens de téléchargement."
     },
     "ipadBeta": {
@@ -463,11 +491,17 @@ export const additionalContent = {
       ],
       "otherPlatforms": "Weitere Plattformen",
       "joinBeta": "Beta beitreten",
-      "downloadFor": "{version} für {platform} herunterladen",
+      "downloadFor": "{version} herunterladen · {platform}",
       "openWebApp": "Web-App öffnen",
       "meta": "Installieren Sie Capy Canvas als Web-App für die Offline-Nutzung. Native Downloads folgen bald.",
       "pwa": pwaContent["de"],
-      "get": "Herunterladen",
+      "variants": {
+        "apk": "APK",
+        "flatpak": "Flatpak",
+        "x64": "x64",
+        "arm64": "Arm64",
+        "appleSilicon": "Apple silicon"
+      },
       "pastVersions": "Frühere Versionen",
       "allReleases": "Versionen auf GitHub",
       "notesLanguage": "Die Versionshinweise sind auf Englisch.",
@@ -475,12 +509,13 @@ export const additionalContent = {
     },
     "versions": {
       "title": "Frühere Versionen",
-      "intro": "Alle veröffentlichten Versionen von Capy Canvas, die neueste zuerst.",
+      "intro": "Wenn ein Update Probleme macht, können Sie zu einer früheren Version zurückkehren.",
       "empty": "Bisher wurde noch keine Version veröffentlicht.",
       "version": "Version {version}",
       "released": "Veröffentlicht am {date}",
       "latest": "Neueste",
       "files": "Dateien",
+      "github": "Alle Dateien auf GitHub",
       "meta": "Alle veröffentlichten Versionen von Capy Canvas mit Versionshinweisen und Download-Links."
     },
     "ipadBeta": {
@@ -568,11 +603,17 @@ export const additionalContent = {
       ],
       "otherPlatforms": "Другие платформы",
       "joinBeta": "Стать тестером",
-      "downloadFor": "Скачать {version} для {platform}",
+      "downloadFor": "Скачать {version} · {platform}",
       "openWebApp": "Открыть веб-приложение",
       "meta": "Установите Capy Canvas как веб-приложение для автономного использования. Скоро появятся нативные загрузки.",
       "pwa": pwaContent["ru"],
-      "get": "Скачать",
+      "variants": {
+        "apk": "APK",
+        "flatpak": "Flatpak",
+        "x64": "x64",
+        "arm64": "Arm64",
+        "appleSilicon": "Apple silicon"
+      },
       "pastVersions": "Предыдущие версии",
       "allReleases": "Выпуски на GitHub",
       "notesLanguage": "Примечания к выпуску на английском языке.",
@@ -580,12 +621,13 @@ export const additionalContent = {
     },
     "versions": {
       "title": "Предыдущие версии",
-      "intro": "Все выпущенные версии Capy Canvas, от новых к старым.",
+      "intro": "Если обновление вызвало проблемы, можно вернуться к одной из прежних версий.",
       "empty": "Пока не выпущено ни одной версии.",
       "version": "Версия {version}",
       "released": "Выпущена {date}",
       "latest": "Последняя",
       "files": "Файлы",
+      "github": "Все файлы на GitHub",
       "meta": "Все выпущенные версии Capy Canvas с примечаниями к выпуску и ссылками для скачивания."
     },
     "ipadBeta": {
@@ -673,11 +715,17 @@ export const additionalContent = {
       ],
       "otherPlatforms": "แพลตฟอร์มอื่นๆ",
       "joinBeta": "เข้าร่วมเบต้า",
-      "downloadFor": "ดาวน์โหลด {version} สำหรับ {platform}",
+      "downloadFor": "ดาวน์โหลด {version} · {platform}",
       "openWebApp": "เปิดเว็บแอป",
       "meta": "ติดตั้ง Capy Canvas เป็นเว็บแอปสำหรับการใช้งานออฟไลน์ การดาวน์โหลดแบบเนทีฟจะมาในเร็วๆ นี้",
       "pwa": pwaContent["th"],
-      "get": "ดาวน์โหลด",
+      "variants": {
+        "apk": "APK",
+        "flatpak": "Flatpak",
+        "x64": "x64",
+        "arm64": "Arm64",
+        "appleSilicon": "Apple silicon"
+      },
       "pastVersions": "เวอร์ชันก่อนหน้า",
       "allReleases": "รุ่นที่เผยแพร่บน GitHub",
       "notesLanguage": "บันทึกประจำรุ่นเป็นภาษาอังกฤษ",
@@ -685,12 +733,13 @@ export const additionalContent = {
     },
     "versions": {
       "title": "เวอร์ชันก่อนหน้า",
-      "intro": "Capy Canvas ทุกเวอร์ชันที่เผยแพร่แล้ว เรียงจากใหม่ไปเก่า",
+      "intro": "หากอัปเดตแล้วเกิดปัญหา คุณกลับไปใช้เวอร์ชันก่อนหน้าได้",
       "empty": "ยังไม่มีเวอร์ชันที่เผยแพร่",
       "version": "เวอร์ชัน {version}",
       "released": "เผยแพร่เมื่อ {date}",
       "latest": "ล่าสุด",
       "files": "ไฟล์",
+      "github": "ไฟล์ทั้งหมดบน GitHub",
       "meta": "Capy Canvas ทุกเวอร์ชันที่เผยแพร่แล้ว พร้อมบันทึกประจำรุ่นและลิงก์ดาวน์โหลด"
     },
     "ipadBeta": {
@@ -778,11 +827,17 @@ export const additionalContent = {
       ],
       "otherPlatforms": "Nền tảng khác",
       "joinBeta": "Tham gia beta",
-      "downloadFor": "Tải xuống {version} cho {platform}",
+      "downloadFor": "Tải xuống {version} · {platform}",
       "openWebApp": "Mở ứng dụng web",
       "meta": "Cài đặt Capy Canvas làm ứng dụng web để sử dụng ngoại tuyến. Bản tải xuống gốc sắp ra mắt.",
       "pwa": pwaContent["vi"],
-      "get": "Tải xuống",
+      "variants": {
+        "apk": "APK",
+        "flatpak": "Flatpak",
+        "x64": "x64",
+        "arm64": "Arm64",
+        "appleSilicon": "Apple silicon"
+      },
       "pastVersions": "Các phiên bản trước",
       "allReleases": "Các bản phát hành trên GitHub",
       "notesLanguage": "Ghi chú phát hành bằng tiếng Anh.",
@@ -790,12 +845,13 @@ export const additionalContent = {
     },
     "versions": {
       "title": "Các phiên bản trước",
-      "intro": "Mọi phiên bản Capy Canvas đã phát hành, mới nhất ở trên cùng.",
+      "intro": "Nếu bản cập nhật gây lỗi, bạn có thể quay lại phiên bản trước.",
       "empty": "Chưa có phiên bản nào được phát hành.",
       "version": "Phiên bản {version}",
       "released": "Phát hành ngày {date}",
       "latest": "Mới nhất",
       "files": "Tệp",
+      "github": "Tất cả tệp trên GitHub",
       "meta": "Mọi phiên bản Capy Canvas đã phát hành, kèm ghi chú phát hành và liên kết tải xuống."
     },
     "ipadBeta": {
@@ -883,11 +939,17 @@ export const additionalContent = {
       ],
       "otherPlatforms": "Diğer platformlar",
       "joinBeta": "Betaya katıl",
-      "downloadFor": "{platform} için {version} sürümünü indir",
+      "downloadFor": "{version} sürümünü indir · {platform}",
       "openWebApp": "Web uygulamasını aç",
       "meta": "Capy Canvas'yu çevrimdışı kullanım için bir web uygulaması olarak yükleyin. Yerel indirmeler yakında geliyor.",
       "pwa": pwaContent["tr"],
-      "get": "İndir",
+      "variants": {
+        "apk": "APK",
+        "flatpak": "Flatpak",
+        "x64": "x64",
+        "arm64": "Arm64",
+        "appleSilicon": "Apple silicon"
+      },
       "pastVersions": "Önceki sürümler",
       "allReleases": "GitHub'daki sürümler",
       "notesLanguage": "Sürüm notları İngilizcedir.",
@@ -895,12 +957,13 @@ export const additionalContent = {
     },
     "versions": {
       "title": "Önceki sürümler",
-      "intro": "Capy Canvas uygulamasının yayımlanan tüm sürümleri, en yenisi en üstte.",
+      "intro": "Bir güncelleme sorun çıkarırsa önceki bir sürüme dönebilirsiniz.",
       "empty": "Henüz yayımlanmış bir sürüm yok.",
       "version": "Sürüm {version}",
       "released": "{date} tarihinde yayımlandı",
       "latest": "En yeni",
       "files": "Dosyalar",
+      "github": "GitHub'daki tüm dosyalar",
       "meta": "Capy Canvas uygulamasının yayımlanan tüm sürümleri, sürüm notları ve indirme bağlantılarıyla."
     },
     "ipadBeta": {
@@ -988,11 +1051,17 @@ export const additionalContent = {
       ],
       "otherPlatforms": "Altre piattaforme",
       "joinBeta": "Partecipa alla beta",
-      "downloadFor": "Scarica {version} per {platform}",
+      "downloadFor": "Scarica {version} · {platform}",
       "openWebApp": "Apri l'app Web",
       "meta": "Installa Capy Canvas come app Web per l'utilizzo offline. I download nativi arriveranno presto.",
       "pwa": pwaContent["it"],
-      "get": "Scarica",
+      "variants": {
+        "apk": "APK",
+        "flatpak": "Flatpak",
+        "x64": "x64",
+        "arm64": "Arm64",
+        "appleSilicon": "Apple silicon"
+      },
       "pastVersions": "Versioni precedenti",
       "allReleases": "Versioni su GitHub",
       "notesLanguage": "Le note di rilascio sono in inglese.",
@@ -1000,12 +1069,13 @@ export const additionalContent = {
     },
     "versions": {
       "title": "Versioni precedenti",
-      "intro": "Tutte le versioni pubblicate di Capy Canvas, dalla più recente.",
+      "intro": "Se un aggiornamento ti dà problemi, puoi tornare a una versione precedente.",
       "empty": "Non è ancora stata pubblicata nessuna versione.",
       "version": "Versione {version}",
       "released": "Pubblicata il {date}",
       "latest": "Più recente",
       "files": "File",
+      "github": "Tutti i file su GitHub",
       "meta": "Tutte le versioni pubblicate di Capy Canvas, con note di rilascio e link per il download."
     },
     "ipadBeta": {

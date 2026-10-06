@@ -70,11 +70,19 @@ try {
     await layouts(releaseHost,['download','versions'],'releases/');
     await b.call('Emulation.setDeviceMetricsOverride',{width:1280,height:800,deviceScaleFactor:1,mobile:false});
     await b.navigate(releaseHost.url+'/download/?lang=en');
-    check(await b.evaluate("(()=>{const shown=[...document.querySelectorAll('[data-pick], [data-pick] [data-platform]')].filter(e=>!e.hidden);return shown.length===2&&shown[1].dataset.platform==='linux'&&shown[1].querySelector('a').href.endsWith('-linux-x86_64.AppImage')&&document.querySelectorAll('.platform').length===5&&[...document.querySelectorAll('.platform')].every(e=>e.getClientRects().length)})()"),'The detected platform gets the big download button and every platform stays listed');
+    check(await b.evaluate("(()=>{const shown=[...document.querySelectorAll('[data-pick], [data-pick] [data-platform]')].filter(e=>!e.hidden);return shown.length===2&&shown[1].dataset.platform==='linux'&&shown[1].querySelector('a').href.endsWith('/capycanvas.flatpakref')&&document.querySelectorAll('.platform').length===5&&[...document.querySelectorAll('.platform')].every(e=>e.getClientRects().length)})()"),'The detected platform gets the big download button and every platform stays listed');
     const {identifier}=await b.call('Page.addScriptToEvaluateOnNewDocument',{source:"Object.defineProperty(navigator,'platform',{get:()=>'MacIntel',configurable:true});Object.defineProperty(navigator,'maxTouchPoints',{get:()=>5,configurable:true})"});
     await b.navigate(releaseHost.url+'/download/?lang=en');
     check(await b.evaluate("document.querySelector('[data-pick] [data-platform]:not([hidden]) a')?.getAttribute('href')==='/download/ipad-beta/'"),'An iPad is sent to the TestFlight beta');
     await b.call('Page.removeScriptToEvaluateOnNewDocument',{identifier});
+    for(const [architecture,file,label] of [['arm','-windows-arm64-setup.exe','An Arm PC gets the Arm64 installer'],['','-windows-x64-setup.exe','Without architecture hints, Windows gets the x64 installer']]) {
+      const hints=architecture?`{get:()=>({getHighEntropyValues:async()=>({architecture:'${architecture}'})}),configurable:true}`:'{get:()=>undefined,configurable:true}';
+      const {identifier}=await b.call('Page.addScriptToEvaluateOnNewDocument',{source:`Object.defineProperty(navigator,'platform',{get:()=>'Win32',configurable:true});Object.defineProperty(navigator,'userAgentData',${hints})`});
+      await b.navigate(releaseHost.url+'/download/?lang=en');
+      await b.until("!document.querySelector('[data-pick]').hidden");
+      check(await b.evaluate(`[...document.querySelectorAll('[data-pick] [data-platform]')].filter(e=>!e.hidden).map(e=>e.querySelector('a').href).join()===document.querySelector('a[aria-describedby="platform-windows"][href$="${file}"]')?.href`),label);
+      await b.call('Page.removeScriptToEvaluateOnNewDocument',{identifier});
+    }
   } finally { await releaseHost.close(); }
   await b.navigate(host.url+'/download/?lang=en');
   check(await b.evaluate("(()=>{const shown=document.querySelector('[data-pick] [data-platform]:not([hidden])');const released=!!document.querySelector('a[aria-describedby=\"platform-linux\"][href*=\"releases/download\"]');return !document.querySelector('[data-pick]').hidden&&shown.dataset.platform===(released?'linux':'other')})()"),'Without a Linux release, the big button opens the web app');

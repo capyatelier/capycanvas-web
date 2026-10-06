@@ -9,10 +9,15 @@ import rehypeStringify from 'rehype-stringify';
 export const releasesUrl = 'https://github.com/capyatelier/capycanvas/releases';
 export const releasesApiUrl = 'https://api.github.com/repos/capyatelier/capycanvas/releases?per_page=100';
 export const platformFiles = {
-  linux: version => `capycanvas-${version}-linux-x86_64.AppImage`,
-  windows: version => `capycanvas-${version}-windows-x64-setup.exe`,
-  mac: version => `capycanvas-${version}-macos-arm64.dmg`,
+  android: { apk: version => `capycanvas-${version}-android.apk` },
+  linux: { flatpak: version => `capycanvas-${version}-linux-x86_64.flatpak` },
+  windows: {
+    x64: version => `capycanvas-${version}-windows-x64-setup.exe`,
+    arm64: version => `capycanvas-${version}-windows-arm64-setup.exe`,
+  },
+  mac: { appleSilicon: version => `capycanvas-${version}-macos-arm64.dmg` },
 };
+export const installFiles = { flatpak: 'capycanvas.flatpakref' };
 const notesHeadingLevel = 3;
 
 export async function fetchReleases({ token = process.env.GITHUB_TOKEN, fetch = globalThis.fetch } = {}) {
@@ -40,17 +45,21 @@ export function publishedReleases(releases) {
       const version = release.tag_name.replace(/^v/, '');
       const file = name => {
         const asset = release.assets.find(asset => asset.name === name && asset.state === 'uploaded');
-        return asset && { name: asset.name, url: asset.browser_download_url, size: asset.size };
+        return asset && { name: asset.name, url: asset.browser_download_url };
       };
       return {
         version,
         date: release.published_at.slice(0, 10),
+        url: release.html_url,
         notes: renderNotes(release.body ?? '', { base: release.html_url, prefix: `notes-${version.replace(/[^\w-]/g, '-')}-` }),
-        files: Object.fromEntries(Object.entries(platformFiles).flatMap(([platform, name]) => {
-          const found = file(name(version));
-          return found ? [[platform, found]] : [];
+        files: Object.fromEntries(Object.entries(platformFiles).flatMap(([platform, variants]) => {
+          const found = Object.entries(variants).flatMap(([variant, name]) => {
+            const asset = file(name(version));
+            const install = installFiles[variant] && file(installFiles[variant]);
+            return asset ? [{ variant, ...asset, ...(install && { install }) }] : [];
+          });
+          return found.length ? [[platform, found]] : [];
         })),
-        checksums: file('SHA256SUMS'),
       };
     });
 }

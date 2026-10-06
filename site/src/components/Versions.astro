@@ -1,9 +1,9 @@
 ---
 import { content } from '../data/content.mjs';
 import { releasesUrl } from '../lib/releases.mjs';
-import { releases, type Release, type ReleaseFile } from '../lib/release-data';
+import { releases } from '../lib/release-data';
 import { platforms, type Locale } from '../lib/site';
-import { formatDate, formatSize } from '../lib/format';
+import { formatDate } from '../lib/format';
 import Icon from './Icon.astro';
 import Phrase from './Phrase.astro';
 import ReleaseNotes from './ReleaseNotes.astro';
@@ -11,7 +11,6 @@ interface Props { locale: Locale }
 const { locale } = Astro.props;
 const { lang, download } = content[locale];
 const t = content[locale].versions;
-const fileOf = (release: Release, platform: (typeof platforms)[number]): ReleaseFile | undefined => (release.files as Partial<Record<(typeof platforms)[number], ReleaseFile>>)[platform];
 ---
 <main id="main" class="page">
   <h1>{t.title}</h1>
@@ -25,11 +24,8 @@ const fileOf = (release: Release, platform: (typeof platforms)[number]): Release
         {index === 0 && <span class="release-latest">{t.latest}</span>}
       </p>
       <ul class="release-files" aria-label={t.files}>
-        {platforms.map((platform, i) => {
-          const file = fileOf(release, platform);
-          return file && <li><a href={file.url}><Icon name={platform} />{download.platforms[i]}</a><span>{formatSize(lang, file.size)}</span></li>;
-        })}
-        {release.checksums && <li><a href={release.checksums.url}><Icon name="circleCheck" />{release.checksums.name}</a></li>}
+        {platforms.flatMap((platform, i) => (release.files[platform] ?? []).map(file => <li><a href={file.url}><Icon name={platform} />{download.platforms[i]} {download.variants[file.variant]}</a></li>))}
+        <li class="release-github"><a href={release.url}>{t.github}<Icon name="external" /></a></li>
       </ul>
       {release.notes && <ReleaseNotes html={release.notes} />}
     </article>
@@ -46,10 +42,11 @@ const fileOf = (release: Release, platform: (typeof platforms)[number]): Release
   .release-files { display: flex; flex-wrap: wrap; gap: var(--gap); list-style: none; margin: 0 0 18px; padding: 0; }
   .release-files li { display: flex; align-items: center; border-radius: var(--control-radius); background: var(--surface); font-size: 14px; }
   .release-files li:hover { background: color-mix(in srgb, var(--surface), var(--ink) 8%); }
-  .release-files a { display: inline-flex; align-items: center; gap: 8px; min-height: var(--control-height); padding: 5px 4px 5px 12px; font-weight: 700; line-height: 24px; }
-  .release-files li:has(> :only-child) a { padding-right: 12px; }
-  .release-files span { padding: 0 12px 0 6px; color: var(--muted); }
+  .release-files a { display: inline-flex; align-items: center; gap: 8px; min-height: var(--control-height); padding: 5px 12px; font-weight: 700; line-height: 24px; }
   .release-files :global(svg) { width: 16px; height: 16px; }
+  .release-files .release-github, .release-files .release-github:hover { background: none; font-size: 13px; }
+  .release-files .release-github a { gap: 4px; padding: 0 4px; font-weight: 400; color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+  .release-files .release-github :global(svg) { width: 12px; height: 12px; }
   .all-releases { margin: 40px 0 0; font-size: 13px; }
   .all-releases a { display: inline-flex; align-items: center; gap: 4px; color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
   .all-releases :global(svg) { width: 12px; height: 12px; }

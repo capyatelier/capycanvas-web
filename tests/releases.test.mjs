@@ -8,7 +8,7 @@ import { buildReleaseSite } from './release-sites.mjs';
 
 const fixture = JSON.parse(await readFile('tests/fixtures/releases.json', 'utf8'));
 const download = 'https://github.com/capyatelier/capycanvas/releases/download';
-const neverOffered = /\.(?:msix|aab|zsync|zip|apk)"/;
+const neverOffered = /(?:\.msix|\.aab|\.zsync|\.zip|\.AppImage|\.tar\.zst|SHA256SUMS)"/;
 const prefix = locale => locale === 'en' ? '' : `${locale}/`;
 const escape = text => text.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 const escapeText = text => escape(text).replaceAll("'", '&#39;');
@@ -20,20 +20,21 @@ test('only published releases are offered, newest first', () => {
   assert.deepEqual(publishedReleases([]), []);
 });
 
-test('each desktop platform gets its one direct download, plus SHA256SUMS', () => {
+test('each platform offers its variants, and the Flatpak installs through its reference', () => {
   const [latest, previous, first] = publishedReleases(fixture);
+  const asset = name => ({ name, url: `${download}/v1.0.2/${name}` });
   assert.deepEqual(latest.files, {
-    linux: { name: 'capycanvas-1.0.2-linux-x86_64.AppImage', url: `${download}/v1.0.2/capycanvas-1.0.2-linux-x86_64.AppImage`, size: 88342528 },
-    windows: { name: 'capycanvas-1.0.2-windows-x64-setup.exe', url: `${download}/v1.0.2/capycanvas-1.0.2-windows-x64-setup.exe`, size: 48213504 },
-    mac: { name: 'capycanvas-1.0.2-macos-arm64.dmg', url: `${download}/v1.0.2/capycanvas-1.0.2-macos-arm64.dmg`, size: 71563120 },
+    android: [{ variant: 'apk', ...asset('capycanvas-1.0.2-android.apk') }],
+    linux: [{ variant: 'flatpak', ...asset('capycanvas-1.0.2-linux-x86_64.flatpak'), install: asset('capycanvas.flatpakref') }],
+    windows: [{ variant: 'x64', ...asset('capycanvas-1.0.2-windows-x64-setup.exe') }, { variant: 'arm64', ...asset('capycanvas-1.0.2-windows-arm64-setup.exe') }],
+    mac: [{ variant: 'appleSilicon', ...asset('capycanvas-1.0.2-macos-arm64.dmg') }],
   });
-  assert.deepEqual(latest.checksums, { name: 'SHA256SUMS', url: `${download}/v1.0.2/SHA256SUMS`, size: 1012 });
-  assert.deepEqual(Object.keys(previous.files), ['linux', 'windows'], 'An unfinished upload is not offered');
-  assert.deepEqual(Object.keys(first.files), ['linux', 'windows']);
-  assert.equal(first.checksums, undefined);
+  assert.equal(latest.url, 'https://github.com/capyatelier/capycanvas/releases/tag/v1.0.2');
+  assert.deepEqual(Object.keys(previous.files), ['android', 'windows'], 'AppImages and an unfinished upload are not offered');
+  assert.deepEqual(Object.keys(first.files), ['windows']);
   assert.equal(first.notes, '');
   for (const release of publishedReleases(fixture)) {
-    for (const file of [...Object.values(release.files), release.checksums].filter(Boolean)) assert.doesNotMatch(`${file.url}"`, neverOffered);
+    for (const file of Object.values(release.files).flat().flatMap(file => [file, file.install].filter(Boolean))) assert.doesNotMatch(`${file.url}"`, neverOffered);
   }
 });
 
@@ -82,25 +83,31 @@ for (const locale of Object.keys(languages)) {
     const page = main(html);
     assert.ok(html.includes(`<meta name="description" content="${escape(t.download.metaReleased)}">`));
     assert.match(page, new RegExp(`<p class="lead"[^>]*>${escapeText(t.download.intro)}</p><div class="pick"`));
-    const buttons = [...page.matchAll(/<a class="button" href="([^"]+)" aria-describedby="platform-(\w+)"/g)].map(([, url, platform]) => [platform, url]);
+    const variants = t.download.variants;
+    const buttons = [...page.matchAll(/<a class="button" href="([^"]+)" aria-describedby="platform-(\w+)"[^>]*>(?:<svg[\s\S]*?<\/svg>)?([^<]+)<\/a>/g)].map(([, url, platform, label]) => [platform, url, label]);
     assert.deepEqual(buttons, [
-      ['ipad', `/${prefix(locale)}download/ipad-beta/`],
-      ['android', `/${prefix(locale)}download/android-beta/`],
-      ['linux', `${download}/v1.0.2/capycanvas-1.0.2-linux-x86_64.AppImage`],
-      ['windows', `${download}/v1.0.2/capycanvas-1.0.2-windows-x64-setup.exe`],
-      ['mac', `${download}/v1.0.2/capycanvas-1.0.2-macos-arm64.dmg`],
+      ['ipad', `/${prefix(locale)}download/ipad-beta/`, escapeText(t.download.joinBeta)],
+      ['android', `/${prefix(locale)}download/android-beta/`, escapeText(t.download.joinBeta)],
+      ['android', `${download}/v1.0.2/capycanvas-1.0.2-android.apk`, variants.apk],
+      ['linux', `${download}/v1.0.2/capycanvas.flatpakref`, variants.flatpak],
+      ['windows', `${download}/v1.0.2/capycanvas-1.0.2-windows-x64-setup.exe`, variants.x64],
+      ['windows', `${download}/v1.0.2/capycanvas-1.0.2-windows-arm64-setup.exe`, variants.arm64],
+      ['mac', `${download}/v1.0.2/capycanvas-1.0.2-macos-arm64.dmg`, escapeText(variants.appleSilicon)],
     ]);
     assert.ok(!page.includes(`>${escapeText(t.download.status)}</p>`));
-    const picks = [...page.matchAll(/<div data-platform="(\w+)" hidden[^>]*><a class="button primary" href="([^"]+)"/g)].map(([, platform, url]) => [platform, url]);
+    const picks = [...page.matchAll(/<div data-platform="(\w+)"(?: data-arch="(\w+)")? hidden[^>]*><a class="button primary" href="([^"]+)"/g)].map(([, platform, arch = '', url]) => [platform, arch, url]);
     assert.deepEqual(picks, [
-      ['ipad', `/${prefix(locale)}download/ipad-beta/`],
-      ['android', `/${prefix(locale)}download/android-beta/`],
-      ['linux', `${download}/v1.0.2/capycanvas-1.0.2-linux-x86_64.AppImage`],
-      ['windows', `${download}/v1.0.2/capycanvas-1.0.2-windows-x64-setup.exe`],
-      ['mac', `${download}/v1.0.2/capycanvas-1.0.2-macos-arm64.dmg`],
-      ['other', 'https://editor.capycanvas.art/'],
+      ['ipad', '', `/${prefix(locale)}download/ipad-beta/`],
+      ['android', '', `/${prefix(locale)}download/android-beta/`],
+      ['linux', '', `${download}/v1.0.2/capycanvas.flatpakref`],
+      ['windows', 'x86', `${download}/v1.0.2/capycanvas-1.0.2-windows-x64-setup.exe`],
+      ['windows', 'arm', `${download}/v1.0.2/capycanvas-1.0.2-windows-arm64-setup.exe`],
+      ['mac', '', `${download}/v1.0.2/capycanvas-1.0.2-macos-arm64.dmg`],
+      ['other', '', 'https://editor.capycanvas.art/'],
     ]);
-    assert.ok(page.includes(`>${escapeText(t.download.downloadFor.replace('{version}', '1.0.2').replace('{platform}', 'Windows'))}</a>`));
+    for (const name of ['Linux Flatpak', 'Windows x64', 'Windows Arm64', `macOS ${variants.appleSilicon}`]) {
+      assert.ok(page.includes(`>${escapeText(t.download.downloadFor.replace('{version}', '1.0.2').replace('{platform}', name))}</a>`), name);
+    }
     assert.ok(page.includes(escapeText(t.versions.released.replace('{date}', new Intl.DateTimeFormat(t.lang, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date('2026-10-02T12:00:00Z'))))));
     assert.ok(!page.includes('SHA256SUMS'));
     assert.ok(page.includes(`href="/${prefix(locale)}download/past-versions/"`));
@@ -118,12 +125,19 @@ for (const locale of Object.keys(languages)) {
     assert.ok(page.includes(escapeText(t.versions.intro)));
     assert.deepEqual([...page.matchAll(/<article class="release" id="v([^"]+)"/g)].map(([, version]) => version), ['1.0.2', '1.0.1', '1.0.0']);
     assert.equal(page.split(`>${escapeText(t.versions.latest)}</span>`).length, 2);
-    for (const [version, date, files] of [['1.0.2', '2026-10-02', 4], ['1.0.1', '2026-09-12', 3], ['1.0.0', '2026-08-30', 2]]) {
+    const variants = t.download.variants;
+    for (const [version, date, files] of [
+      ['1.0.2', '2026-10-02', [['android.apk', 'Android APK'], ['linux-x86_64.flatpak', 'Linux Flatpak'], ['windows-x64-setup.exe', 'Windows x64'], ['windows-arm64-setup.exe', 'Windows Arm64'], ['macos-arm64.dmg', `macOS ${variants.appleSilicon}`]]],
+      ['1.0.1', '2026-09-12', [['android.apk', 'Android APK'], ['windows-x64-setup.exe', 'Windows x64']]],
+      ['1.0.0', '2026-08-30', [['windows-x64-setup.exe', 'Windows x64']]],
+    ]) {
       const article = page.match(new RegExp(`<article class="release" id="v${version.replaceAll('.', '\\.')}"[\\s\\S]*?</article>`))[0];
       assert.match(article, new RegExp(`<time datetime="${date}"`));
-      const links = [...article.matchAll(/<li[^>]*><a href="([^"]+)"/g)].map(([, url]) => url);
-      assert.equal(links.length, files);
-      for (const url of links) assert.ok(url.startsWith(`${download}/v${version}/`));
+      const links = [...article.matchAll(/<li[^>]*><a href="([^"]+)"[^>]*>(?:<svg[\s\S]*?<\/svg>)?([^<]+)(?:<svg[\s\S]*?<\/svg>)?<\/a>/g)].map(([, url, label]) => [url, label]);
+      assert.deepEqual(links, [
+        ...files.map(([file, label]) => [`${download}/v${version}/capycanvas-${version}-${file}`, escapeText(label)]),
+        [`https://github.com/capyatelier/capycanvas/releases/tag/v${version}`, escapeText(t.versions.github)],
+      ]);
     }
     assert.equal(page.split('class="release-notes" lang="en"').length, 3, 'A release without notes shows none');
     assert.equal(page.includes(escapeText(t.download.notesLanguage)), locale !== 'en');
