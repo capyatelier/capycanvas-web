@@ -20,8 +20,8 @@ Copies of both standard licenses and the branding terms accompany the built site
 `apps/layer-web/icons/layer-zen-looking-up-symbolic.svg`.
 `site/public/assets/favicon.png` is the application's packaged `icon-32.png`, generated
 by `apps/layer-web/package.mjs` with rounded corners and a gray background.
-`site/public/assets/capture.json` records the application source revision used for the
-screenshots. `site/scripts/capture.mjs` reproduces the watercolor squiggles through
+`site/public/assets/capture.json` records the application source revision used for each
+screenshot. `site/scripts/capture.mjs` reproduces the watercolor squiggles through
 browser pen events and the application's real brush engine. No external artwork is used.
 
 ## GitHub mark

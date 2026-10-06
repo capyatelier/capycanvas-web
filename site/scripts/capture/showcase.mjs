@@ -3,6 +3,7 @@ import { readFile } from 'node:fs/promises';
 const source = new URL('./showcase/', import.meta.url);
 const command = id => `layerApp.state().commands.find(c=>c.id===${JSON.stringify(id)})`;
 const analysed = `layerApp.state().histogram.status==='Exact'&&!String(layerApp.state().layer_properties?.description??'').includes('Updating')`;
+const thumbnailsDrawn = `[...document.querySelectorAll('#layer-rows .layer-thumbnail canvas')].filter(c=>c.checkVisibility()).every(c=>{const d=c.getContext('2d').getImageData(0,0,c.width,c.height).data;for(let i=3;i<d.length;i+=4)if(d[i])return true;return false})`;
 
 export default async function showcase({ e, record }) {
   const restoreLayout = async () => {
@@ -31,6 +32,7 @@ export default async function showcase({ e, record }) {
 
   await openIn('painter', 'spring.png');
   await e.frame(.96, [1000, 912]);
+  await e.setColor('#000000');
   await record('showcase/sketch');
 
   await openIn('illustrator', 'house.png');
@@ -39,7 +41,7 @@ export default async function showcase({ e, record }) {
   await e.brush(22, 64, '#86c5ea', .92);
   await e.show('color');
   await e.select('house');
-  await record('showcase/paint');
+  await record('showcase/paint', [], { setup: () => e.b.until(thumbnailsDrawn, 120000) });
 
   await openIn('photographer', 'NDF_4717.jpg');
   await e.select('NDF_4717');
@@ -49,6 +51,6 @@ export default async function showcase({ e, record }) {
   await e.show('properties');
   await e.invoke('tonal_select');
   await e.wait(`[...document.querySelectorAll('button[aria-label]')].some(b=>(b.getAttribute('aria-label')||'').startsWith('Highlights'))`);
-  await record('showcase/photo', [], { setup: () => e.wait(analysed) });
+  await record('showcase/photo', [], { setup: async () => { await e.wait(analysed); await e.b.until(thumbnailsDrawn, 120000); } });
   await e.workspace('illustrator');
 }

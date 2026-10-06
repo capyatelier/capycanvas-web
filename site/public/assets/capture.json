@@ -1,29 +1,15 @@
 {
-  "source": "https://github.com/capyatelier/capycanvas",
-  "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
-  "patches": [],
-  "hashes": {
-    "app.js": "8e543970b409daf96c3794534222a35d32ecc529a4ce646c3f51a67ce42b0571",
-    "pkg/layer_web_bg.wasm": "d90c255466c33c630436d7c72fe22e8866e08d30d32d441057a089c5f1a63b41"
-  },
   "width": 1920,
   "height": 1080,
   "scale": 2,
   "partial": false,
-  "browser": {
-    "protocolVersion": "1.3",
-    "product": "Chrome/154.0.8037.57",
-    "revision": "@73c14f6228d7cd537c855007e8f88678969cc0eb",
-    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
-    "jsVersion": "15.4.80.11"
-  },
   "display": "Headed Chrome on a private headless Wayland display",
   "canvas2d": "Software decoding and UI previews; artwork remains hardware WebGPU.",
   "recipeHashes": {
     "browser.mjs": "55763307560c35986658d32242e718563a64a7dfff2ba624a34186c207d36893",
     "capture-compatibility.mjs": "f69af5075fec4e7d76ea19e8d1ee1bb768a26b792615306d701a0ff4c5f775f3",
     "capture-headless.sh": "f6584c5ab92b890917d10d956caf9c7567aa8f33072fbcb3cd93ba4efcf50ab3",
-    "capture.mjs": "2eae5a501e001f8b202306a19192db890260624b92a3a7a6c4863e8768cfaa11",
+    "capture.mjs": "af38aa45824ad5f3db7d5471c202a397b511a2d5d6648b778e6462fb96cb6d74",
     "capture/annotations.mjs": "c1680252626ec3187400a0bf275ac77ac8ce20b398b758310548af0ab2a1ee88",
     "capture/docs/brushes.mjs": "ca5b5f00af96d785992f3524b8db14dc1da9f6fbea4467c243407c22baa6ed65",
     "capture/docs/color-management.mjs": "f633ba307e0c1da1306f12a6fe5b1f2a3e858bb6aca5660e3f382e2d333691ea",
@@ -43,7 +29,7 @@
     "capture/docs/transform.mjs": "1fc31a99f8f3a7163a6000c23e89151e8d770e80c1b35509c94d00827fd844d1",
     "capture/editor.mjs": "ed3782216fff62daebefe95f0fb28302b8cb45656fb7ea40f3b97084fb02d0ee",
     "capture/shoot.mjs": "9b81a7ba2d0646abedbad650b29ef417df62b3ead0016020248c9821b9962dfb",
-    "capture/showcase.mjs": "cd9ebcf795b43db68b82398a109ca11e704dd1c69d829598d73d7d3cae4877c6",
+    "capture/showcase.mjs": "8cb45c88853de1f102a40fa33fc5fa93914da7d561ad0eb1c78c5a372391f242",
     "prepare-capture.mjs": "519e33a176e6260bd380e73c27e3c9a1c6f03add7016989300a88dd130432287",
     "serve.mjs": "f804ab7645298d628e5749e2cb50539242b8fb5ab17f222f9506dba7e9134569"
   },
@@ -52,6 +38,7 @@
   "captures": [
     {
       "file": "docs/brushes/brush-size-panel-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         296,
@@ -63,6 +50,7 @@
     },
     {
       "file": "docs/brushes/brush-size-panel-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         296,
@@ -74,6 +62,7 @@
     },
     {
       "file": "docs/brushes/color-mixing-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         952,
@@ -85,6 +74,7 @@
     },
     {
       "file": "docs/brushes/color-mixing-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         952,
@@ -96,6 +86,7 @@
     },
     {
       "file": "docs/brushes/reset-all-dialog-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         436,
@@ -107,6 +98,7 @@
     },
     {
       "file": "docs/brushes/reset-all-dialog-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         436,
@@ -118,6 +110,7 @@
     },
     {
       "file": "docs/brushes/sketch-size-slider-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         298,
@@ -129,6 +122,7 @@
     },
     {
       "file": "docs/brushes/sketch-size-slider-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         298,
@@ -140,6 +134,7 @@
     },
     {
       "file": "docs/brushes/texture-strength-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         897,
@@ -151,6 +146,7 @@
     },
     {
       "file": "docs/brushes/texture-strength-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         897,
@@ -162,6 +158,7 @@
     },
     {
       "file": "docs/brushes/tip-texture-settings-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         280,
@@ -173,6 +170,7 @@
     },
     {
       "file": "docs/brushes/tip-texture-settings-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         280,
@@ -184,6 +182,7 @@
     },
     {
       "file": "docs/brushes/tool-options-bar-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         944,
@@ -195,6 +194,7 @@
     },
     {
       "file": "docs/brushes/tool-options-bar-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         944,
@@ -206,6 +206,7 @@
     },
     {
       "file": "docs/brushes/tool-panel-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         296,
@@ -217,6 +218,7 @@
     },
     {
       "file": "docs/brushes/tool-panel-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         296,
@@ -228,6 +230,7 @@
     },
     {
       "file": "docs/brushes/wet-media-settings-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         305,
@@ -239,6 +242,7 @@
     },
     {
       "file": "docs/brushes/wet-media-settings-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         305,
@@ -250,6 +254,7 @@
     },
     {
       "file": "docs/color-management/convert-dialog-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         456,
@@ -261,6 +266,7 @@
     },
     {
       "file": "docs/color-management/convert-dialog-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         456,
@@ -272,6 +278,7 @@
     },
     {
       "file": "docs/color-management/edit-blending-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         216,
@@ -283,6 +290,7 @@
     },
     {
       "file": "docs/color-management/edit-blending-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         216,
@@ -294,6 +302,7 @@
     },
     {
       "file": "docs/color-management/new-dialog-color-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         456,
@@ -305,6 +314,7 @@
     },
     {
       "file": "docs/color-management/new-dialog-color-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         456,
@@ -316,6 +326,7 @@
     },
     {
       "file": "docs/color-management/proof-panel-print-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         259,
@@ -327,6 +338,7 @@
     },
     {
       "file": "docs/color-management/proof-panel-print-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         259,
@@ -338,6 +350,7 @@
     },
     {
       "file": "docs/color-management/proof-panel-sdr-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         259,
@@ -349,6 +362,7 @@
     },
     {
       "file": "docs/color-management/proof-panel-sdr-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         259,
@@ -360,6 +374,7 @@
     },
     {
       "file": "docs/color-management/screen-chip-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         357,
@@ -371,6 +386,7 @@
     },
     {
       "file": "docs/color-management/screen-chip-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         357,
@@ -382,6 +398,7 @@
     },
     {
       "file": "docs/color/edit-color-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         768,
@@ -448,6 +465,7 @@
     },
     {
       "file": "docs/color/edit-color-formats-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         440,
@@ -459,6 +477,7 @@
     },
     {
       "file": "docs/color/edit-color-formats-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         440,
@@ -470,6 +489,7 @@
     },
     {
       "file": "docs/color/edit-color-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         768,
@@ -536,6 +556,7 @@
     },
     {
       "file": "docs/color/edit-color-swatches-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         736,
@@ -547,6 +568,7 @@
     },
     {
       "file": "docs/color/edit-color-swatches-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         736,
@@ -558,6 +580,7 @@
     },
     {
       "file": "docs/color/eyedropper-loupe-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         141,
@@ -569,6 +592,7 @@
     },
     {
       "file": "docs/color/eyedropper-loupe-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         141,
@@ -580,6 +604,7 @@
     },
     {
       "file": "docs/color/eyedropper-settings-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         280,
@@ -591,6 +616,7 @@
     },
     {
       "file": "docs/color/eyedropper-settings-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         280,
@@ -602,6 +628,7 @@
     },
     {
       "file": "docs/color/palettes-chooser-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         288,
@@ -613,6 +640,7 @@
     },
     {
       "file": "docs/color/palettes-chooser-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         288,
@@ -624,6 +652,7 @@
     },
     {
       "file": "docs/color/palettes-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         310,
@@ -635,6 +664,7 @@
     },
     {
       "file": "docs/color/palettes-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         310,
@@ -646,6 +676,7 @@
     },
     {
       "file": "docs/color/palettes-panel-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         288,
@@ -657,6 +688,7 @@
     },
     {
       "file": "docs/color/palettes-panel-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         288,
@@ -668,6 +700,7 @@
     },
     {
       "file": "docs/color/panel-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         312,
@@ -743,6 +776,7 @@
     },
     {
       "file": "docs/color/panel-hdr-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         280,
@@ -754,6 +788,7 @@
     },
     {
       "file": "docs/color/panel-hdr-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         280,
@@ -765,6 +800,7 @@
     },
     {
       "file": "docs/color/panel-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         312,
@@ -840,6 +876,7 @@
     },
     {
       "file": "docs/drawing/brush-group-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         212,
@@ -851,6 +888,7 @@
     },
     {
       "file": "docs/drawing/brush-group-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         212,
@@ -862,6 +900,7 @@
     },
     {
       "file": "docs/drawing/brush-tool-set-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         296,
@@ -873,6 +912,7 @@
     },
     {
       "file": "docs/drawing/brush-tool-set-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         296,
@@ -884,6 +924,7 @@
     },
     {
       "file": "docs/drawing/figure-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         212,
@@ -895,6 +936,7 @@
     },
     {
       "file": "docs/drawing/figure-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         212,
@@ -906,6 +948,7 @@
     },
     {
       "file": "docs/drawing/figure-tool-set-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         296,
@@ -917,6 +960,7 @@
     },
     {
       "file": "docs/drawing/figure-tool-set-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         296,
@@ -928,6 +972,7 @@
     },
     {
       "file": "docs/drawing/fill-settings-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         296,
@@ -939,6 +984,7 @@
     },
     {
       "file": "docs/drawing/fill-settings-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         296,
@@ -950,6 +996,7 @@
     },
     {
       "file": "docs/drawing/fill-tool-set-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         296,
@@ -961,6 +1008,7 @@
     },
     {
       "file": "docs/drawing/fill-tool-set-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         296,
@@ -972,6 +1020,7 @@
     },
     {
       "file": "docs/drawing/gradient-fill-properties-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         268,
@@ -983,6 +1032,7 @@
     },
     {
       "file": "docs/drawing/gradient-fill-properties-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         268,
@@ -994,6 +1044,7 @@
     },
     {
       "file": "docs/drawing/gradient-tool-panel-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         296,
@@ -1005,6 +1056,7 @@
     },
     {
       "file": "docs/drawing/gradient-tool-panel-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         296,
@@ -1016,6 +1068,7 @@
     },
     {
       "file": "docs/drawing/liquify-settings-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         296,
@@ -1027,6 +1080,7 @@
     },
     {
       "file": "docs/drawing/liquify-settings-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         296,
@@ -1038,6 +1092,7 @@
     },
     {
       "file": "docs/drawing/ruler-guide-bar-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         725,
@@ -1049,6 +1104,7 @@
     },
     {
       "file": "docs/drawing/ruler-guide-bar-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         725,
@@ -1060,6 +1116,7 @@
     },
     {
       "file": "docs/drawing/ruler-guides-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         577,
@@ -1071,6 +1128,7 @@
     },
     {
       "file": "docs/drawing/ruler-guides-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         577,
@@ -1082,6 +1140,7 @@
     },
     {
       "file": "docs/drawing/sketch-brush-drawer-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         768,
@@ -1093,6 +1152,7 @@
     },
     {
       "file": "docs/drawing/sketch-brush-drawer-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         768,
@@ -1104,6 +1164,7 @@
     },
     {
       "file": "docs/drawing/sketch-sculpt-drawer-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         768,
@@ -1115,6 +1176,7 @@
     },
     {
       "file": "docs/drawing/sketch-sculpt-drawer-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         768,
@@ -1126,6 +1188,7 @@
     },
     {
       "file": "docs/files/download-file-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         456,
@@ -1137,6 +1200,7 @@
     },
     {
       "file": "docs/files/download-file-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         456,
@@ -1148,6 +1212,7 @@
     },
     {
       "file": "docs/files/drawing-tabs-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1124,
@@ -1159,6 +1224,7 @@
     },
     {
       "file": "docs/files/drawing-tabs-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1124,
@@ -1170,6 +1236,7 @@
     },
     {
       "file": "docs/files/drawings-list-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         616,
@@ -1181,6 +1248,7 @@
     },
     {
       "file": "docs/files/drawings-list-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         616,
@@ -1192,6 +1260,7 @@
     },
     {
       "file": "docs/files/export-dialog-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         456,
@@ -1203,6 +1272,7 @@
     },
     {
       "file": "docs/files/export-dialog-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         456,
@@ -1214,6 +1284,7 @@
     },
     {
       "file": "docs/files/export-hdr-preview-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         456,
@@ -1225,6 +1296,7 @@
     },
     {
       "file": "docs/files/export-hdr-preview-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         456,
@@ -1236,6 +1308,7 @@
     },
     {
       "file": "docs/files/file-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         330,
@@ -1247,6 +1320,7 @@
     },
     {
       "file": "docs/files/file-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         330,
@@ -1258,6 +1332,7 @@
     },
     {
       "file": "docs/files/new-dialog-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         456,
@@ -1269,6 +1344,7 @@
     },
     {
       "file": "docs/files/new-dialog-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         456,
@@ -1280,6 +1356,7 @@
     },
     {
       "file": "docs/files/new-layers-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         266,
@@ -1291,6 +1368,7 @@
     },
     {
       "file": "docs/files/new-layers-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         266,
@@ -1302,6 +1380,7 @@
     },
     {
       "file": "docs/filters/add-filter-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         306,
@@ -1313,6 +1392,7 @@
     },
     {
       "file": "docs/filters/add-filter-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         306,
@@ -1324,6 +1404,7 @@
     },
     {
       "file": "docs/filters/apply-effect-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         309,
@@ -1335,6 +1416,7 @@
     },
     {
       "file": "docs/filters/apply-effect-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         309,
@@ -1346,6 +1428,7 @@
     },
     {
       "file": "docs/filters/artistic-list-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         254,
@@ -1357,6 +1440,7 @@
     },
     {
       "file": "docs/filters/artistic-list-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         254,
@@ -1368,6 +1452,7 @@
     },
     {
       "file": "docs/filters/attachment-button-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         254,
@@ -1379,6 +1464,7 @@
     },
     {
       "file": "docs/filters/attachment-button-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         254,
@@ -1390,6 +1476,7 @@
     },
     {
       "file": "docs/filters/color-list-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         254,
@@ -1401,6 +1488,7 @@
     },
     {
       "file": "docs/filters/color-list-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         254,
@@ -1412,6 +1500,7 @@
     },
     {
       "file": "docs/filters/color-lookup-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         254,
@@ -1423,6 +1512,7 @@
     },
     {
       "file": "docs/filters/color-lookup-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         254,
@@ -1434,6 +1524,7 @@
     },
     {
       "file": "docs/filters/detail-blur-list-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         254,
@@ -1445,6 +1536,7 @@
     },
     {
       "file": "docs/filters/detail-blur-list-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         254,
@@ -1456,6 +1548,7 @@
     },
     {
       "file": "docs/filters/distort-list-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         254,
@@ -1467,6 +1560,7 @@
     },
     {
       "file": "docs/filters/distort-list-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         254,
@@ -1478,6 +1572,7 @@
     },
     {
       "file": "docs/filters/filters-panel-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         254,
@@ -1489,6 +1584,7 @@
     },
     {
       "file": "docs/filters/filters-panel-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         254,
@@ -1500,6 +1596,7 @@
     },
     {
       "file": "docs/filters/histogram-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         254,
@@ -1511,6 +1608,7 @@
     },
     {
       "file": "docs/filters/histogram-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         254,
@@ -1522,6 +1620,7 @@
     },
     {
       "file": "docs/filters/hue-saturation-properties-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         254,
@@ -1533,6 +1632,7 @@
     },
     {
       "file": "docs/filters/hue-saturation-properties-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         254,
@@ -1544,6 +1644,7 @@
     },
     {
       "file": "docs/filters/layers-chain-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         266,
@@ -1555,6 +1656,7 @@
     },
     {
       "file": "docs/filters/layers-chain-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         266,
@@ -1566,6 +1668,7 @@
     },
     {
       "file": "docs/filters/levels-properties-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         254,
@@ -1577,6 +1680,7 @@
     },
     {
       "file": "docs/filters/levels-properties-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         254,
@@ -1588,6 +1692,7 @@
     },
     {
       "file": "docs/filters/properties-curves-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         254,
@@ -1599,6 +1704,7 @@
     },
     {
       "file": "docs/filters/properties-curves-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         254,
@@ -1610,6 +1716,7 @@
     },
     {
       "file": "docs/filters/selection-adjust-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1201,
@@ -1621,6 +1728,7 @@
     },
     {
       "file": "docs/filters/selection-adjust-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1201,
@@ -1632,6 +1740,7 @@
     },
     {
       "file": "docs/filters/sketch-drawer-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         754,
@@ -1643,6 +1752,7 @@
     },
     {
       "file": "docs/filters/sketch-drawer-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         754,
@@ -1654,6 +1764,7 @@
     },
     {
       "file": "docs/filters/swirl-properties-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         254,
@@ -1665,6 +1776,7 @@
     },
     {
       "file": "docs/filters/swirl-properties-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         254,
@@ -1676,6 +1788,7 @@
     },
     {
       "file": "docs/filters/texture-list-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         254,
@@ -1687,6 +1800,7 @@
     },
     {
       "file": "docs/filters/texture-list-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         254,
@@ -1698,6 +1812,7 @@
     },
     {
       "file": "docs/filters/tone-list-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         254,
@@ -1709,6 +1824,7 @@
     },
     {
       "file": "docs/filters/tone-list-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         254,
@@ -1720,6 +1836,7 @@
     },
     {
       "file": "docs/filters/unsharp-mask-properties-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         254,
@@ -1731,6 +1848,7 @@
     },
     {
       "file": "docs/filters/unsharp-mask-properties-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         254,
@@ -1742,6 +1860,7 @@
     },
     {
       "file": "docs/illustration/draft-lasso-fill-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         296,
@@ -1753,6 +1872,7 @@
     },
     {
       "file": "docs/illustration/draft-lasso-fill-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         296,
@@ -1764,6 +1884,7 @@
     },
     {
       "file": "docs/illustration/draft-pencils-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         296,
@@ -1775,6 +1896,7 @@
     },
     {
       "file": "docs/illustration/draft-pencils-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         296,
@@ -1786,6 +1908,7 @@
     },
     {
       "file": "docs/illustration/draft-transform-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1200,
@@ -1797,6 +1920,7 @@
     },
     {
       "file": "docs/illustration/draft-transform-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1200,
@@ -1808,6 +1932,7 @@
     },
     {
       "file": "docs/illustration/ink-layers-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         270,
@@ -1819,6 +1944,7 @@
     },
     {
       "file": "docs/illustration/ink-layers-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         270,
@@ -1830,6 +1956,7 @@
     },
     {
       "file": "docs/illustration/ink-navigator-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         270,
@@ -1841,6 +1968,7 @@
     },
     {
       "file": "docs/illustration/ink-navigator-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         270,
@@ -1852,6 +1980,7 @@
     },
     {
       "file": "docs/illustration/ink-pens-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         296,
@@ -1863,6 +1992,7 @@
     },
     {
       "file": "docs/illustration/ink-pens-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         296,
@@ -1874,6 +2004,7 @@
     },
     {
       "file": "docs/illustration/mask-bar-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         931,
@@ -1885,6 +2016,7 @@
     },
     {
       "file": "docs/illustration/mask-bar-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         931,
@@ -1896,6 +2028,7 @@
     },
     {
       "file": "docs/illustration/mask-layers-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         270,
@@ -1907,6 +2040,7 @@
     },
     {
       "file": "docs/illustration/mask-layers-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         270,
@@ -1918,6 +2052,7 @@
     },
     {
       "file": "docs/illustration/mask-selection-bar-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1174,
@@ -1929,6 +2064,7 @@
     },
     {
       "file": "docs/illustration/mask-selection-bar-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1174,
@@ -1940,6 +2076,7 @@
     },
     {
       "file": "docs/illustration/new-drawing-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         456,
@@ -1951,6 +2088,7 @@
     },
     {
       "file": "docs/illustration/new-drawing-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         456,
@@ -1962,6 +2100,7 @@
     },
     {
       "file": "docs/illustration/overview-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1920,
@@ -1973,6 +2112,7 @@
     },
     {
       "file": "docs/illustration/overview-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1920,
@@ -1984,6 +2124,7 @@
     },
     {
       "file": "docs/illustration/render-layers-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         270,
@@ -1995,6 +2136,7 @@
     },
     {
       "file": "docs/illustration/render-layers-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         270,
@@ -2006,6 +2148,7 @@
     },
     {
       "file": "docs/illustration/render-new-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         340,
@@ -2017,6 +2160,7 @@
     },
     {
       "file": "docs/illustration/render-new-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         340,
@@ -2028,6 +2172,7 @@
     },
     {
       "file": "docs/keyboard/editor-reassign-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         476,
@@ -2039,6 +2184,7 @@
     },
     {
       "file": "docs/keyboard/editor-reassign-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         476,
@@ -2050,6 +2196,7 @@
     },
     {
       "file": "docs/keyboard/keymap-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         584,
@@ -2061,6 +2208,7 @@
     },
     {
       "file": "docs/keyboard/keymap-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         584,
@@ -2072,6 +2220,7 @@
     },
     {
       "file": "docs/keyboard/modifier-keys-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         584,
@@ -2083,6 +2232,7 @@
     },
     {
       "file": "docs/keyboard/modifier-keys-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         584,
@@ -2094,6 +2244,7 @@
     },
     {
       "file": "docs/keyboard/page-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1016,
@@ -2105,6 +2256,7 @@
     },
     {
       "file": "docs/keyboard/page-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1016,
@@ -2116,6 +2268,7 @@
     },
     {
       "file": "docs/layers/blend-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         270,
@@ -2127,6 +2280,7 @@
     },
     {
       "file": "docs/layers/blend-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         270,
@@ -2138,6 +2292,7 @@
     },
     {
       "file": "docs/layers/masks-bar-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         931,
@@ -2149,6 +2304,7 @@
     },
     {
       "file": "docs/layers/masks-bar-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         931,
@@ -2160,6 +2316,7 @@
     },
     {
       "file": "docs/layers/masks-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         281,
@@ -2171,6 +2328,7 @@
     },
     {
       "file": "docs/layers/masks-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         281,
@@ -2182,6 +2340,7 @@
     },
     {
       "file": "docs/layers/masks-row-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         270,
@@ -2193,6 +2352,7 @@
     },
     {
       "file": "docs/layers/masks-row-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         270,
@@ -2204,6 +2364,7 @@
     },
     {
       "file": "docs/layers/merging-flatten-notice-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         366,
@@ -2215,6 +2376,7 @@
     },
     {
       "file": "docs/layers/merging-flatten-notice-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         366,
@@ -2226,6 +2388,7 @@
     },
     {
       "file": "docs/layers/merging-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         273,
@@ -2237,6 +2400,7 @@
     },
     {
       "file": "docs/layers/merging-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         273,
@@ -2248,6 +2412,7 @@
     },
     {
       "file": "docs/layers/panel-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         302,
@@ -2287,6 +2452,7 @@
     },
     {
       "file": "docs/layers/panel-footer-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         302,
@@ -2371,6 +2537,7 @@
     },
     {
       "file": "docs/layers/panel-footer-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         302,
@@ -2455,6 +2622,7 @@
     },
     {
       "file": "docs/layers/panel-header-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         302,
@@ -2521,6 +2689,7 @@
     },
     {
       "file": "docs/layers/panel-header-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         302,
@@ -2587,6 +2756,7 @@
     },
     {
       "file": "docs/layers/panel-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         302,
@@ -2626,6 +2796,7 @@
     },
     {
       "file": "docs/layers/panel-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         310,
@@ -2637,6 +2808,7 @@
     },
     {
       "file": "docs/layers/panel-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         310,
@@ -2648,6 +2820,7 @@
     },
     {
       "file": "docs/layers/panel-row-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         302,
@@ -2732,6 +2905,7 @@
     },
     {
       "file": "docs/layers/panel-row-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         302,
@@ -2816,6 +2990,7 @@
     },
     {
       "file": "docs/layers/panel-swipe-delete-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         270,
@@ -2827,6 +3002,7 @@
     },
     {
       "file": "docs/layers/panel-swipe-delete-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         270,
@@ -2838,6 +3014,7 @@
     },
     {
       "file": "docs/layers/settings-color-mode-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         258,
@@ -2849,6 +3026,7 @@
     },
     {
       "file": "docs/layers/settings-color-mode-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         258,
@@ -2860,6 +3038,7 @@
     },
     {
       "file": "docs/layers/settings-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         356,
@@ -2871,6 +3050,7 @@
     },
     {
       "file": "docs/layers/settings-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         356,
@@ -2882,6 +3062,7 @@
     },
     {
       "file": "docs/layers/types-rows-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         270,
@@ -2893,6 +3074,7 @@
     },
     {
       "file": "docs/layers/types-rows-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         270,
@@ -2904,6 +3086,7 @@
     },
     {
       "file": "docs/layers/working-drag-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         270,
@@ -2915,6 +3098,7 @@
     },
     {
       "file": "docs/layers/working-drag-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         270,
@@ -2926,6 +3110,7 @@
     },
     {
       "file": "docs/layers/working-rename-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         270,
@@ -2937,6 +3122,7 @@
     },
     {
       "file": "docs/layers/working-rename-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         270,
@@ -2948,6 +3134,7 @@
     },
     {
       "file": "docs/panels/collapsed-column-open-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         310,
@@ -2959,6 +3146,7 @@
     },
     {
       "file": "docs/panels/collapsed-column-open-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         310,
@@ -2970,6 +3158,7 @@
     },
     {
       "file": "docs/panels/column-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         225,
@@ -2981,6 +3170,7 @@
     },
     {
       "file": "docs/panels/column-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         225,
@@ -2992,6 +3182,7 @@
     },
     {
       "file": "docs/panels/configure-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         676,
@@ -3003,6 +3194,7 @@
     },
     {
       "file": "docs/panels/configure-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         676,
@@ -3014,6 +3206,7 @@
     },
     {
       "file": "docs/panels/floating-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         328,
@@ -3025,6 +3218,7 @@
     },
     {
       "file": "docs/panels/floating-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         328,
@@ -3036,6 +3230,7 @@
     },
     {
       "file": "docs/panels/group-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         250,
@@ -3047,6 +3242,7 @@
     },
     {
       "file": "docs/panels/group-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         250,
@@ -3058,6 +3254,7 @@
     },
     {
       "file": "docs/panels/panel-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         269,
@@ -3069,6 +3266,7 @@
     },
     {
       "file": "docs/panels/panel-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         269,
@@ -3080,6 +3278,7 @@
     },
     {
       "file": "docs/panels/window-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         333,
@@ -3091,6 +3290,7 @@
     },
     {
       "file": "docs/panels/window-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         333,
@@ -3102,6 +3302,7 @@
     },
     {
       "file": "docs/pen/cursor-shapes-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         227,
@@ -3113,6 +3314,7 @@
     },
     {
       "file": "docs/pen/cursor-shapes-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         227,
@@ -3124,6 +3326,7 @@
     },
     {
       "file": "docs/pen/pen-and-input-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1016,
@@ -3135,6 +3338,7 @@
     },
     {
       "file": "docs/pen/pen-and-input-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1016,
@@ -3146,6 +3350,7 @@
     },
     {
       "file": "docs/pen/pen-button-page-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1016,
@@ -3157,6 +3362,7 @@
     },
     {
       "file": "docs/pen/pen-button-page-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1016,
@@ -3168,6 +3374,7 @@
     },
     {
       "file": "docs/pen/prediction-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         584,
@@ -3179,6 +3386,7 @@
     },
     {
       "file": "docs/pen/prediction-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         584,
@@ -3190,6 +3398,7 @@
     },
     {
       "file": "docs/photo/adjust-bar-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1398,
@@ -3201,6 +3410,7 @@
     },
     {
       "file": "docs/photo/adjust-bar-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1398,
@@ -3212,6 +3422,7 @@
     },
     {
       "file": "docs/photo/adjust-curves-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         264,
@@ -3223,6 +3434,7 @@
     },
     {
       "file": "docs/photo/adjust-curves-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         264,
@@ -3234,6 +3446,7 @@
     },
     {
       "file": "docs/photo/crop-bar-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1346,
@@ -3245,6 +3458,7 @@
     },
     {
       "file": "docs/photo/crop-bar-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1346,
@@ -3256,6 +3470,7 @@
     },
     {
       "file": "docs/photo/crop-ratio-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1206,
@@ -3267,6 +3482,7 @@
     },
     {
       "file": "docs/photo/crop-ratio-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1206,
@@ -3278,6 +3494,7 @@
     },
     {
       "file": "docs/photo/export-jpeg-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         456,
@@ -3289,6 +3506,7 @@
     },
     {
       "file": "docs/photo/export-jpeg-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         456,
@@ -3300,6 +3518,7 @@
     },
     {
       "file": "docs/photo/open-layers-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         268,
@@ -3311,6 +3530,7 @@
     },
     {
       "file": "docs/photo/open-layers-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         268,
@@ -3322,6 +3542,7 @@
     },
     {
       "file": "docs/photo/overview-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1920,
@@ -3333,6 +3554,7 @@
     },
     {
       "file": "docs/photo/overview-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1920,
@@ -3344,6 +3566,7 @@
     },
     {
       "file": "docs/photo/retouch-disc-bar-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         844,
@@ -3355,6 +3578,7 @@
     },
     {
       "file": "docs/photo/retouch-disc-bar-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         844,
@@ -3366,6 +3590,7 @@
     },
     {
       "file": "docs/photo/retouch-layers-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         268,
@@ -3377,6 +3602,7 @@
     },
     {
       "file": "docs/photo/retouch-layers-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         268,
@@ -3388,6 +3614,7 @@
     },
     {
       "file": "docs/preferences/appearance-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1016,
@@ -3399,6 +3626,7 @@
     },
     {
       "file": "docs/preferences/appearance-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1016,
@@ -3410,6 +3638,7 @@
     },
     {
       "file": "docs/preferences/color-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         790,
@@ -3421,6 +3650,7 @@
     },
     {
       "file": "docs/preferences/color-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         790,
@@ -3432,6 +3662,7 @@
     },
     {
       "file": "docs/preferences/reset-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         584,
@@ -3443,6 +3674,7 @@
     },
     {
       "file": "docs/preferences/reset-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         584,
@@ -3454,6 +3686,7 @@
     },
     {
       "file": "docs/preferences/search-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         226,
@@ -3465,6 +3698,7 @@
     },
     {
       "file": "docs/preferences/search-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         226,
@@ -3476,6 +3710,7 @@
     },
     {
       "file": "docs/retouch/clone-source-bar-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         812,
@@ -3487,6 +3722,7 @@
     },
     {
       "file": "docs/retouch/clone-source-bar-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         812,
@@ -3498,6 +3734,7 @@
     },
     {
       "file": "docs/retouch/clone-tool-panel-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         258,
@@ -3509,6 +3746,7 @@
     },
     {
       "file": "docs/retouch/clone-tool-panel-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         258,
@@ -3520,6 +3758,7 @@
     },
     {
       "file": "docs/retouch/dodge-burn-layer-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         350,
@@ -3531,6 +3770,7 @@
     },
     {
       "file": "docs/retouch/dodge-burn-layer-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         350,
@@ -3542,6 +3782,7 @@
     },
     {
       "file": "docs/retouch/frequency-separation-layers-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         350,
@@ -3553,6 +3794,7 @@
     },
     {
       "file": "docs/retouch/frequency-separation-layers-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         350,
@@ -3564,6 +3806,7 @@
     },
     {
       "file": "docs/retouch/frequency-separation-panel-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         376,
@@ -3575,6 +3818,7 @@
     },
     {
       "file": "docs/retouch/frequency-separation-panel-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         376,
@@ -3586,6 +3830,7 @@
     },
     {
       "file": "docs/selections/quick-mask-bar-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1158,
@@ -3597,6 +3842,7 @@
     },
     {
       "file": "docs/selections/quick-mask-bar-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1158,
@@ -3608,6 +3854,7 @@
     },
     {
       "file": "docs/selections/quick-mask-overlay-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1200,
@@ -3619,6 +3866,7 @@
     },
     {
       "file": "docs/selections/quick-mask-overlay-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1200,
@@ -3630,6 +3878,7 @@
     },
     {
       "file": "docs/selections/quick-mask-properties-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         270,
@@ -3641,6 +3890,7 @@
     },
     {
       "file": "docs/selections/quick-mask-properties-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         270,
@@ -3652,6 +3902,7 @@
     },
     {
       "file": "docs/selections/selection-layer-bar-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         788,
@@ -3663,6 +3914,7 @@
     },
     {
       "file": "docs/selections/selection-layer-bar-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         788,
@@ -3674,6 +3926,7 @@
     },
     {
       "file": "docs/selections/selection-layer-row-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         350,
@@ -3685,6 +3938,7 @@
     },
     {
       "file": "docs/selections/selection-layer-row-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         350,
@@ -3696,6 +3950,7 @@
     },
     {
       "file": "docs/selections/tonal-range-custom-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         320,
@@ -3707,6 +3962,7 @@
     },
     {
       "file": "docs/selections/tonal-range-custom-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         320,
@@ -3718,6 +3974,7 @@
     },
     {
       "file": "docs/selections/tonal-range-settings-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         320,
@@ -3729,6 +3986,7 @@
     },
     {
       "file": "docs/selections/tonal-range-settings-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         320,
@@ -3740,6 +3998,7 @@
     },
     {
       "file": "docs/selections/tools-auto-select-settings-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         296,
@@ -3751,6 +4010,7 @@
     },
     {
       "file": "docs/selections/tools-auto-select-settings-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         296,
@@ -3762,6 +4022,7 @@
     },
     {
       "file": "docs/selections/tools-polygon-bar-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         566,
@@ -3773,6 +4034,7 @@
     },
     {
       "file": "docs/selections/tools-polygon-bar-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         566,
@@ -3784,6 +4046,7 @@
     },
     {
       "file": "docs/selections/tools-sketch-select-drawer-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         609,
@@ -3795,6 +4058,7 @@
     },
     {
       "file": "docs/selections/tools-sketch-select-drawer-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         609,
@@ -3806,6 +4070,7 @@
     },
     {
       "file": "docs/selections/working-refine-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1158,
@@ -3817,6 +4082,7 @@
     },
     {
       "file": "docs/selections/working-refine-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1158,
@@ -3828,6 +4094,7 @@
     },
     {
       "file": "docs/selections/working-select-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         397,
@@ -3839,6 +4106,7 @@
     },
     {
       "file": "docs/selections/working-select-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         397,
@@ -3850,6 +4118,7 @@
     },
     {
       "file": "docs/selections/working-selection-bar-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1158,
@@ -3861,6 +4130,7 @@
     },
     {
       "file": "docs/selections/working-selection-bar-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1158,
@@ -3872,6 +4142,7 @@
     },
     {
       "file": "docs/start/canvas-navigator-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         270,
@@ -3883,6 +4154,7 @@
     },
     {
       "file": "docs/start/canvas-navigator-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         270,
@@ -3894,6 +4166,7 @@
     },
     {
       "file": "docs/start/canvas-view-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         292,
@@ -3905,6 +4178,7 @@
     },
     {
       "file": "docs/start/canvas-view-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         292,
@@ -3916,6 +4190,7 @@
     },
     {
       "file": "docs/start/canvas-zoom-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         370,
@@ -3927,6 +4202,7 @@
     },
     {
       "file": "docs/start/canvas-zoom-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         370,
@@ -3938,6 +4214,7 @@
     },
     {
       "file": "docs/start/command-search-suggestions-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         576,
@@ -3949,6 +4226,7 @@
     },
     {
       "file": "docs/start/command-search-suggestions-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         576,
@@ -3960,6 +4238,7 @@
     },
     {
       "file": "docs/start/command-search-typed-value-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         576,
@@ -3971,6 +4250,7 @@
     },
     {
       "file": "docs/start/command-search-typed-value-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         576,
@@ -3982,6 +4262,7 @@
     },
     {
       "file": "docs/start/command-search-unavailable-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         576,
@@ -3993,6 +4274,7 @@
     },
     {
       "file": "docs/start/command-search-unavailable-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         576,
@@ -4004,6 +4286,7 @@
     },
     {
       "file": "docs/start/undo-commands-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         386,
@@ -4015,6 +4298,7 @@
     },
     {
       "file": "docs/start/undo-commands-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         386,
@@ -4026,6 +4310,7 @@
     },
     {
       "file": "docs/start/workspaces-paint-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1920,
@@ -4092,6 +4377,7 @@
     },
     {
       "file": "docs/start/workspaces-paint-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1920,
@@ -4158,6 +4444,7 @@
     },
     {
       "file": "docs/start/workspaces-photo-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1920,
@@ -4215,6 +4502,7 @@
     },
     {
       "file": "docs/start/workspaces-photo-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1920,
@@ -4272,6 +4560,7 @@
     },
     {
       "file": "docs/start/workspaces-sketch-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1920,
@@ -4320,6 +4609,7 @@
     },
     {
       "file": "docs/start/workspaces-sketch-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1920,
@@ -4368,6 +4658,7 @@
     },
     {
       "file": "docs/start/workspaces-switcher-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         225,
@@ -4379,6 +4670,7 @@
     },
     {
       "file": "docs/start/workspaces-switcher-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         225,
@@ -4390,6 +4682,7 @@
     },
     {
       "file": "docs/start/workspaces-switcher-options-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         227,
@@ -4401,6 +4694,7 @@
     },
     {
       "file": "docs/start/workspaces-switcher-options-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         227,
@@ -4412,6 +4706,7 @@
     },
     {
       "file": "docs/title-bar/editing-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1920,
@@ -4423,6 +4718,7 @@
     },
     {
       "file": "docs/title-bar/editing-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1920,
@@ -4434,6 +4730,7 @@
     },
     {
       "file": "docs/toolbars/configure-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         430,
@@ -4445,6 +4742,7 @@
     },
     {
       "file": "docs/toolbars/configure-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         430,
@@ -4456,6 +4754,7 @@
     },
     {
       "file": "docs/toolbars/manage-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         496,
@@ -4467,6 +4766,7 @@
     },
     {
       "file": "docs/toolbars/manage-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         496,
@@ -4478,6 +4778,7 @@
     },
     {
       "file": "docs/toolbars/new-toolbar-picker-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         496,
@@ -4489,6 +4790,7 @@
     },
     {
       "file": "docs/toolbars/new-toolbar-picker-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         496,
@@ -4500,6 +4802,7 @@
     },
     {
       "file": "docs/toolbars/quick-access-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         228,
@@ -4511,6 +4814,7 @@
     },
     {
       "file": "docs/toolbars/quick-access-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         228,
@@ -4522,6 +4826,7 @@
     },
     {
       "file": "docs/toolbars/tool-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         196,
@@ -4533,6 +4838,7 @@
     },
     {
       "file": "docs/toolbars/tool-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         196,
@@ -4544,6 +4850,7 @@
     },
     {
       "file": "docs/toolbars/toolbar-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         244,
@@ -4555,6 +4862,7 @@
     },
     {
       "file": "docs/toolbars/toolbar-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         244,
@@ -4566,6 +4874,7 @@
     },
     {
       "file": "docs/touch/touch-gestures-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         584,
@@ -4577,6 +4886,7 @@
     },
     {
       "file": "docs/touch/touch-gestures-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         584,
@@ -4588,6 +4898,7 @@
     },
     {
       "file": "docs/transform/canvas-size-dialog-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         396,
@@ -4599,6 +4910,7 @@
     },
     {
       "file": "docs/transform/canvas-size-dialog-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         396,
@@ -4610,6 +4922,7 @@
     },
     {
       "file": "docs/transform/clipboard-edit-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         355,
@@ -4621,6 +4934,7 @@
     },
     {
       "file": "docs/transform/clipboard-edit-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         355,
@@ -4632,6 +4946,7 @@
     },
     {
       "file": "docs/transform/crop-bar-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1313,
@@ -4643,6 +4958,7 @@
     },
     {
       "file": "docs/transform/crop-bar-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1313,
@@ -4654,6 +4970,7 @@
     },
     {
       "file": "docs/transform/crop-ratio-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1214,
@@ -4665,6 +4982,7 @@
     },
     {
       "file": "docs/transform/crop-ratio-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1214,
@@ -4676,6 +4994,7 @@
     },
     {
       "file": "docs/transform/crop-tool-panel-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         258,
@@ -4687,6 +5006,7 @@
     },
     {
       "file": "docs/transform/crop-tool-panel-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         258,
@@ -4698,6 +5018,7 @@
     },
     {
       "file": "docs/transform/image-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         245,
@@ -4709,6 +5030,7 @@
     },
     {
       "file": "docs/transform/image-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         245,
@@ -4720,6 +5042,7 @@
     },
     {
       "file": "docs/transform/image-size-dialog-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         396,
@@ -4731,6 +5054,7 @@
     },
     {
       "file": "docs/transform/image-size-dialog-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         396,
@@ -4742,6 +5066,7 @@
     },
     {
       "file": "docs/transform/transform-bar-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1303,
@@ -4753,6 +5078,7 @@
     },
     {
       "file": "docs/transform/transform-bar-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1303,
@@ -4764,6 +5090,7 @@
     },
     {
       "file": "docs/transform/transform-numbers-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         296,
@@ -4775,6 +5102,7 @@
     },
     {
       "file": "docs/transform/transform-numbers-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         296,
@@ -4786,6 +5114,7 @@
     },
     {
       "file": "docs/transform/warp-bar-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1513,
@@ -4797,6 +5126,7 @@
     },
     {
       "file": "docs/transform/warp-bar-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1513,
@@ -4808,6 +5138,7 @@
     },
     {
       "file": "docs/workspaces/layout-history-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         476,
@@ -4819,6 +5150,7 @@
     },
     {
       "file": "docs/workspaces/layout-history-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         476,
@@ -4830,6 +5162,7 @@
     },
     {
       "file": "docs/workspaces/manage-dialog-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         590,
@@ -4841,6 +5174,7 @@
     },
     {
       "file": "docs/workspaces/manage-dialog-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         590,
@@ -4852,6 +5186,7 @@
     },
     {
       "file": "docs/workspaces/show-in-top-bar-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         227,
@@ -4863,6 +5198,7 @@
     },
     {
       "file": "docs/workspaces/show-in-top-bar-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         227,
@@ -4874,6 +5210,7 @@
     },
     {
       "file": "docs/workspaces/window-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         243,
@@ -4885,6 +5222,7 @@
     },
     {
       "file": "docs/workspaces/window-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         243,
@@ -4896,6 +5234,7 @@
     },
     {
       "file": "docs/zen/capy-menu-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         231,
@@ -4907,6 +5246,7 @@
     },
     {
       "file": "docs/zen/capy-menu-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         231,
@@ -4918,6 +5258,7 @@
     },
     {
       "file": "docs/zen/preferences-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         584,
@@ -4929,6 +5270,7 @@
     },
     {
       "file": "docs/zen/preferences-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         584,
@@ -4940,6 +5282,7 @@
     },
     {
       "file": "docs/zen/zen-canvas-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1920,
@@ -4951,6 +5294,7 @@
     },
     {
       "file": "docs/zen/zen-canvas-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1920,
@@ -4962,6 +5306,7 @@
     },
     {
       "file": "guides/illustration-dark.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "dark",
       "size": [
         1920,
@@ -4973,6 +5318,7 @@
     },
     {
       "file": "guides/illustration-light.webp",
+      "revision": "2e28688d1c85c21eb54c9e305a9eba970b12d3f3",
       "theme": "light",
       "size": [
         1920,
@@ -4984,68 +5330,74 @@
     },
     {
       "file": "showcase/paint-dark.webp",
+      "revision": "d94650c5a76e5277da59c8a30f0d1dad30148e1d",
       "theme": "dark",
       "size": [
         1920,
         1080
       ],
-      "bytes": 305490,
-      "sha256": "ea5ba21bddb048ae2309ece85d41b61a63a0a554bb34c9d1bc59b4bc9d3839e6",
+      "bytes": 305990,
+      "sha256": "ec63af7b3d883d0109dc5ed749103219aa53bbffff2e098c917b848e13642261",
       "annotations": []
     },
     {
       "file": "showcase/paint-light.webp",
+      "revision": "d94650c5a76e5277da59c8a30f0d1dad30148e1d",
       "theme": "light",
       "size": [
         1920,
         1080
       ],
-      "bytes": 303020,
-      "sha256": "887c2706e05b55ab50a21d90723efb650e3890ac0ab63981a30216f4470776f9",
+      "bytes": 303676,
+      "sha256": "3c5f5ea7b1cbbdc5099a3253b2b13133a473d9bfa8f3672506b9301ff38003cc",
       "annotations": []
     },
     {
       "file": "showcase/photo-dark.webp",
+      "revision": "d94650c5a76e5277da59c8a30f0d1dad30148e1d",
       "theme": "dark",
       "size": [
         1920,
         1080
       ],
-      "bytes": 909666,
-      "sha256": "d3658e452b0cf40e9de71613b6bea23ff52180a431b008d3e4bb676d371beec8",
+      "bytes": 910122,
+      "sha256": "1f132af70e5c28de98273c60887cca019b61449b76fbc5bfdffeed1f8ab4bb3a",
       "annotations": []
     },
     {
       "file": "showcase/photo-light.webp",
+      "revision": "d94650c5a76e5277da59c8a30f0d1dad30148e1d",
       "theme": "light",
       "size": [
         1920,
         1080
       ],
-      "bytes": 943760,
-      "sha256": "09e6abd671cbcdbace1f2fc96bd10916c57ec4875851c0c1bcdd6f39a992ab21",
+      "bytes": 944086,
+      "sha256": "228904a58964dde9b8faf54fc510c65004217227050e8341971c7758a9d8ac83",
       "annotations": []
     },
     {
       "file": "showcase/sketch-dark.webp",
+      "revision": "d94650c5a76e5277da59c8a30f0d1dad30148e1d",
       "theme": "dark",
       "size": [
         1920,
         1080
       ],
-      "bytes": 836956,
-      "sha256": "420c5ff7a6c9b28dfd9e13c7d0e94b84eee6c1cea2c00d351a9925c27cb59451",
+      "bytes": 835096,
+      "sha256": "fac30b8ad7af1be9e5a72023e195a29bb92c2c5c0bde407d9b24ba219a882569",
       "annotations": []
     },
     {
       "file": "showcase/sketch-light.webp",
+      "revision": "d94650c5a76e5277da59c8a30f0d1dad30148e1d",
       "theme": "light",
       "size": [
         1920,
         1080
       ],
-      "bytes": 836046,
-      "sha256": "b8874cfe0f79b424b5bb7e68e4a1e485798f66d9f3775f25faadeb6691dfd87b",
+      "bytes": 834420,
+      "sha256": "327374067434173c7ee50b395fce7dd3e608e127b34768ffc588f166d11480e4",
       "annotations": []
     }
   ],
@@ -5075,5 +5427,37 @@
       "bytes": 401905,
       "sha256": "f378eac318fc4f374d91cee69ff4dae9d4ac2a77025879178be15f3fde153076"
     }
-  ]
+  ],
+  "sources": {
+    "2e28688d1c85c21eb54c9e305a9eba970b12d3f3": {
+      "source": "https://github.com/capyatelier/capycanvas",
+      "patches": [],
+      "hashes": {
+        "app.js": "8e543970b409daf96c3794534222a35d32ecc529a4ce646c3f51a67ce42b0571",
+        "pkg/layer_web_bg.wasm": "d90c255466c33c630436d7c72fe22e8866e08d30d32d441057a089c5f1a63b41"
+      },
+      "browser": {
+        "protocolVersion": "1.3",
+        "product": "Chrome/154.0.8037.57",
+        "revision": "@73c14f6228d7cd537c855007e8f88678969cc0eb",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+        "jsVersion": "15.4.80.11"
+      }
+    },
+    "d94650c5a76e5277da59c8a30f0d1dad30148e1d": {
+      "source": "https://github.com/capyatelier/capycanvas",
+      "patches": [],
+      "hashes": {
+        "app.js": "8e543970b409daf96c3794534222a35d32ecc529a4ce646c3f51a67ce42b0571",
+        "pkg/layer_web_bg.wasm": "0360d4e69daac439b3c9dcb752edab176fee5232c8d5d4ad24bad88008d862a2"
+      },
+      "browser": {
+        "protocolVersion": "1.3",
+        "product": "Chrome/154.0.8037.57",
+        "revision": "@73c14f6228d7cd537c855007e8f88678969cc0eb",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+        "jsVersion": "15.4.80.11"
+      }
+    }
+  }
 }

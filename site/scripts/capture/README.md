@@ -81,8 +81,14 @@ Commit the recipes and these public assets:
 - `public/assets/guides/illustration-{light,dark}.webp`: the documentation overview.
 - `public/assets/showcase/`: the homepage slides.
 - `public/assets/examples/`: the four tutorial projects and the exported study.
-- `public/assets/capture.json`: source revision, app hashes, recipe hashes,
-  browser version, image sizes and hashes, callout bounds, and example hashes.
+- `public/assets/capture.json`: the app revision of each image, the source
+  hashes and browser version for each revision, recipe hashes, image sizes and
+  hashes, callout bounds, and example hashes.
+
+The manual's images all come from the released revision. The homepage slides can
+come from a newer one: prepare that revision and run
+`CAPTURE_ONLY=showcase npm run capture`. The other images are kept as long as
+their files are unchanged; otherwise the run is marked `partial`.
 
 Reproduction means the same source, actions, artwork and composition. GPU, fonts,
 Chrome versions and input timing can change individual bytes, so review new

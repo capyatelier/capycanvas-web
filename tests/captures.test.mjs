@@ -25,7 +25,11 @@ const shots = markdown => [...markdown.matchAll(/!\[([^\]]*)\]\(shot:([^ )]+)(?:
 test('every capture in the manual is a verified light/dark pair from the real editor', async () => {
   const manifest = JSON.parse(await readFile(join(root, 'assets/capture.json'), 'utf8'));
   assert.equal(manifest.partial, false, 'A partial debugging run must not be published');
-  assert.match(manifest.revision, /^[a-f0-9]{40}$/);
+  for (const capture of manifest.captures) {
+    assert.match(capture.revision, /^[a-f0-9]{40}$/, `App revision recorded: ${capture.file}`);
+    assert.ok(Object.keys(manifest.sources[capture.revision]?.hashes ?? {}).length > 0, `Source hashes recorded for ${capture.revision}`);
+  }
+  assert.equal(new Set(manifest.captures.filter(capture => !capture.file.startsWith('showcase/')).map(capture => capture.revision)).size, 1, 'Every manual image comes from one app revision');
   assert.equal(manifest.scale, 2, 'Captured at twice the pixel density');
   const referenced = new Set();
   for (const { slug } of docTopics) {
@@ -70,7 +74,6 @@ test('every capture in the manual is a verified light/dark pair from the real ed
     assert.equal(hash(bytes), capture.sha256, `Homepage slide matches its provenance: ${capture.file}`);
     assert.deepEqual(dimensions(bytes), [3840, 2160], `Full-window homepage slide: ${capture.file}`);
   }
-  assert.equal(manifest.showcaseRevision, undefined, 'Homepage slides are captured from the same revision as the manual');
   assert.ok(Object.keys(manifest.recipeHashes).length >= 10, 'Capture recipe is identified');
   for (const [path, expectedHash] of Object.entries(manifest.recipeHashes)) assert.equal(hash(await readFile(`site/scripts/${path}`)), expectedHash, `Recipe changed; regenerate captures: ${path}`);
 });

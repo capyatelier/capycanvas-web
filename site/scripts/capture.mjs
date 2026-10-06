@@ -41,9 +41,10 @@ const captures = [];
 if (!scope.includes('all')) {
   for (const entry of previous.captures) {
     const bytes = await readFile(`${output}/${entry.file}`).catch(() => null);
-    if (bytes && hash(bytes) === entry.sha256) captures.push(entry);
+    if (bytes && hash(bytes) === entry.sha256) captures.push({ revision: previous.revision, ...entry });
   }
 }
+const previousSources = previous.sources ?? { [previous.revision]: { source: previous.source, patches: previous.patches, hashes: previous.hashes, browser: previous.browser } };
 
 const recipeFiles = async dir => (await readdir(dir, { withFileTypes: true })).flatMap(entry => entry.isDirectory() ? [] : [join(dir, entry.name)]);
 const recipePaths = [
@@ -54,7 +55,8 @@ const recipePaths = [
 const recipeHashes = Object.fromEntries(await Promise.all(recipePaths.map(async path => [path.replace('site/scripts/', ''), hash(await readFile(path))])));
 const headless = process.env.CAPTURE_BROWSER_MODE !== 'wayland';
 const b = await browser({ gpu: true, headless, width, height, scale });
-const manifest = { ...source, width, height, scale, partial: !scope.includes('all'), browser: await b.call('Browser.getVersion'),
+const run = { source: source.source, patches: source.patches, hashes: source.hashes, browser: await b.call('Browser.getVersion') };
+const manifest = { width, height, scale, partial: !scope.includes('all'),
   display: headless ? 'Chrome native headless' : 'Headed Chrome on a private headless Wayland display',
   canvas2d: 'Software decoding and UI previews; artwork remains hardware WebGPU.', recipeHashes,
   artwork: 'Manual: an original abstract study of a teal ribbon, ochre disc and terracotta block drawn through real browser pen input and editor actions, and a photograph of a terrarium supplied by Capy Atelier. Homepage: a pen sketch, an oil painting and a photograph supplied by Capy Atelier, shown in Sketch, Paint and Photo.',
@@ -104,7 +106,9 @@ try {
   assert.deepEqual(b.errors, [], 'No application errors during capture');
   const exampleFiles = (await readdir(examples)).filter(name => !name.startsWith('_')).sort();
   manifest.examples = await Promise.all(exampleFiles.map(async name => { const bytes = await readFile(`${examples}/${name}`); return { file: `examples/${name}`, bytes: bytes.length, sha256: hash(bytes) }; }));
-  manifest.captures.sort((a, b) => a.file.localeCompare(b.file));
+  manifest.captures = captures.map(({ file, revision = source.revision, ...entry }) => ({ file, revision, ...entry })).sort((a, b) => a.file.localeCompare(b.file));
+  manifest.sources = Object.fromEntries([...new Set(manifest.captures.map(capture => capture.revision))].sort().map(revision => [revision, revision === source.revision ? run : previousSources[revision]]));
+  manifest.partial = !scope.includes('all') && previous.captures.some(entry => !manifest.captures.some(capture => capture.file === entry.file));
   await writeFile(`${output}/capture.json`, JSON.stringify(manifest, null, 2) + '\n');
   console.log(`Captured ${selected.join(', ')} from ${source.revision}; ${captures.length} images recorded.`);
 } catch (error) {
