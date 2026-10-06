@@ -36,7 +36,7 @@ shaped like the API response instead.
 
 This is a plain Astro static site with the existing Capy Canvas theme.
 
-- `site/astro.config.mjs`: output directory, Astro i18n routing, favicon version,
+- `site/astro.config.mjs`: output directory, Astro i18n routing, favicon and stylesheet versions,
   and copying the root license/branding notices into the build.
 - `site/src/pages/`: static page routes, 404, robots.txt, and sitemap.
 - `site/src/layouts/SiteLayout.astro`: shared document, metadata, and header.

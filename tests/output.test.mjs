@@ -45,6 +45,8 @@ for(const locale of Object.keys(languages)) {
     }
     assert.match(html,/<meta name="color-scheme" content="light dark">/);
     assert.match(html,/<meta name="darkreader-lock">/);
+    const styleHash=createHash('sha256').update(await read('assets/style.css')).digest('hex').slice(0,12);
+    assert.ok(html.includes(`<link rel="stylesheet" href="/assets/style.css?v=${styleHash}">`),'The stylesheet URL identifies its contents so a deployment refreshes cached CSS');
     const ids=[...html.matchAll(/\sid="([^"]+)"/g)].map(([,id])=>id);
     assert.equal(new Set(ids).size,ids.length,'Component IDs are unique');
     assert.match(html,/href="https:\/\/editor\.capycanvas\.art\/"/);

@@ -75,7 +75,7 @@ svg.chevron { stroke-width: 2.7; }
   .showcase-frame { transform: none; }
 }
 .actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--gap); }
-.button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: var(--control-height); padding: 5px 17px; border-radius: var(--control-radius); background: var(--surface); font-size: 14px; font-weight: 700; line-height: 24px; }
+.button { --button-padding-inline: 17px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: var(--control-height); padding: 5px var(--button-padding-inline); border-radius: var(--control-radius); background: var(--surface); font-size: 14px; font-weight: 700; line-height: 24px; }
 .button:hover { background: color-mix(in srgb, var(--surface), var(--ink) 8%); }
 .button:active { background: color-mix(in srgb, var(--surface), var(--ink) 16%); }
 .button.primary { background: var(--primary); color: #fff; }
@@ -147,7 +147,7 @@ h1 { font-size: 28px; font-weight: 700; line-height: 1.3; letter-spacing: -.6px;
   .showcase-switcher { bottom: 6px; }
   .showcase-switcher label { padding: 0 6px; font-size: 10px; line-height: 18px; }
   .home-description { font-size: 14px; margin-top: 28px; }
-  .button { padding: 5px 13px; font-size: 13px; }
+  .button { --button-padding-inline: 13px; font-size: 13px; }
   .nav-inner { padding-left: 18px; padding-right: 18px; }
   .nav-links { margin-left: -10px; }
   .nav-links a { padding: 0 10px; font-size: 12px; }

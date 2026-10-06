@@ -23,6 +23,7 @@ export default defineConfig({
     define: {
       'import.meta.env.CAPTURE_MANIFEST': JSON.stringify(fileURLToPath(new URL('./public/assets/capture.json', import.meta.url))),
       'import.meta.env.FAVICON_VERSION': JSON.stringify(createHash('sha256').update(readFileSync(new URL('./public/assets/favicon.png', import.meta.url))).digest('hex').slice(0, 12)),
+      'import.meta.env.STYLE_VERSION': JSON.stringify(createHash('sha256').update(readFileSync(new URL('./public/assets/style.css', import.meta.url))).digest('hex').slice(0, 12)),
     },
   },
   integrations: [{

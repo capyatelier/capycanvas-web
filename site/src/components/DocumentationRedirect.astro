@@ -17,7 +17,7 @@ const t = content[locale];
     <title>{t.nav.documentation} — Capy Canvas</title>
     <link rel="canonical" href={origin + target} />
     <link rel="icon" type="image/png" sizes="32x32" href={`/assets/favicon.png?v=${import.meta.env.FAVICON_VERSION}`} />
-    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href={`/assets/style.css?v=${import.meta.env.STYLE_VERSION}`} />
     <!-- Preserve explicit language choices and section links on the static host. -->
     <script is:inline define:vars={{ target }}>
       location.replace(target + location.search + location.hash);

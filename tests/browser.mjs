@@ -55,8 +55,10 @@ try {
       check(metrics.shown.join()==='paint',`Paint slide is shown first ${label}: ${metrics.shown}`);
       check(metrics.scrollHeight<=height+1,`Minimal home should fit viewport ${label}: ${metrics.scrollHeight}`);
       check(await b.evaluate("document.querySelector('main').classList.contains('hero')&&document.querySelector('h1').classList.contains('visually-hidden')&&document.querySelector('h1').getBoundingClientRect().width===1&&document.querySelectorAll('main p').length===1&&document.querySelectorAll('main .button').length===3&&!document.querySelector('.home-details')&&!document.querySelector('[data-language-suggestion]')"),'Original minimal landing page design');
+      check(await b.evaluate(`[...document.querySelectorAll('main .button')].every(button=>{const s=getComputedStyle(button);return parseFloat(s.paddingLeft)===${width<=540?13:17}&&s.paddingLeft===s.paddingRight})`),'Original landing button padding');
       check(Math.abs(metrics.shotRatio-16/9)<.01,`Screenshot aspect ratio ${label}`);
     }
+    if(page==='download') check(await b.evaluate("[...document.querySelectorAll('.pick .button,.platform .button')].filter(button=>button.getClientRects().length).every(button=>{const s=getComputedStyle(button),icon=button.querySelector('svg'),start=parseFloat(s.paddingInlineStart),end=parseFloat(s.paddingInlineEnd);return icon?end-start===8&&parseFloat(s.gap)===8:start===end})"),'Download icons use a smaller leading inset without changing label gaps or text-only buttons');
     if(page==='documentation') {
       check(new RegExp(`/assets/guides/(${locale}|shared)/illustration-${theme}\\.webp$`).test(metrics.overviewSource),`Overview image theme and language ${label}`);
       check(Math.abs(metrics.overviewRatio-16/9)<.01,`Overview image aspect ratio ${label}`);
