@@ -56,7 +56,8 @@ This is a plain Astro static site with the existing Capy Canvas theme.
 
 Use shared components and the locale URL helper when adding pages. Astro processes
 the components' browser scripts; the PWA script is only included on download pages.
-The short language-detection script deliberately runs inline in the head before paint.
+The language-preference script runs inline in the head and offers a translated
+page after the document loads, preserving the URL the reader requested.
 There is no client router or UI framework runtime. Documentation uses Astro's Markdown
 content collections, with complete HTML generated for every translated guide.
 See [the documentation authoring guide](site/DOCUMENTATION.md) for the structure,
@@ -96,19 +97,20 @@ present in the HTML and remain readable without JavaScript.
 
 Astro's `i18n` configuration defines English as the unprefixed default and
 all other languages under their locale codes. Navigation,
-alternate links, the sitemap, and detection destinations use `astro:i18n` URL
+alternate links, the sitemap, and suggested translations use `astro:i18n` URL
 helpers. Each translated page is generated as complete HTML.
 
-Unprefixed entry pages detect `navigator.languages`, trying supported choices
-in preference order. Regional tags map to the corresponding translation;
+Unprefixed entry pages suggest a translation from `navigator.languages`, trying
+supported choices in preference order, without automatically redirecting.
+Regional tags map to the corresponding translation;
 Portuguese tags (including `pt`, `pt-PT`, and `pt-BR`) select Brazilian Portuguese.
 Unsupported languages fall back to English. Chinese is Simplified Chinese, including when
 selected for other Chinese regional preferences. The language menu remembers
 an explicit choice in local storage and preserves the current page. An explicit
 translated URL takes priority over detection or a saved preference. `?lang=en`
 forces English even when storage is unavailable. Without JavaScript all pages,
-navigation, theme selection, and the language menu still work; automatic
-language detection and remembering a choice require JavaScript.
+navigation, theme selection, and the language menu still work; language
+suggestions and remembering a choice require JavaScript.
 
 Astro's request-based `preferredLocale` detection needs a server. GitHub Pages
 serves static files, so `LanguagePreference.astro` performs browser detection
@@ -117,11 +119,19 @@ and keyboard interaction. The browser tests cover both behaviors.
 
 The browser's `prefers-color-scheme` selects the whole page palette and the
 matching genuine app screenshots. Changes apply live. The home page contains a
-workspace showcase, a short description, three primary links, and the language
-selector. The showcase is a slideshow that crossfades between real Sketch, Paint and
+visible brand heading, workspace showcase, a short description, three primary
+links, and the language selector. Localized feature and platform sections link
+to the tutorials, downloads and source repository. The homepage title describes
+painting and photo editing, and `WebSite` structured data identifies Capy Canvas
+and its alternate spelling, CapyCanvas. Homepage copy and language suggestions
+live in `site/src/data/home-content.mjs`.
+The showcase is a slideshow that switches between real Sketch, Paint and
 Photo screenshots every few seconds. A small indicator overlaid on the screenshot
 names the current workspace and lets the reader jump to another; without JavaScript
-it still switches slides with plain CSS. The showcase scales to fit the viewport. Other pages have a small footer with a privacy link
+it still switches slides with plain CSS. Astro generates WebP variants at 480,
+960, 1440 and 1920 pixels for both themes. The first slide loads eagerly; other
+slides preload after it decodes and the browser is idle. The showcase scales
+to fit the viewport. Other pages have a small footer with a privacy link
 and a Capy Atelier credit. All pages use borderless controls. Source translations live
 in `site/src/data/content.mjs`; each language gets static HTML, appropriate metadata,
 canonical and alternate links, and a sitemap entry.

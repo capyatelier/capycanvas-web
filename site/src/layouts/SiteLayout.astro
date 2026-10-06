@@ -2,6 +2,7 @@
 import { content } from '../data/content.mjs';
 import { origin, locales, route, type Locale, type SitePage } from '../lib/site';
 import { capturePair } from '../lib/captures.mjs';
+import { homeContent } from '../data/home-content.mjs';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import LanguagePreference from '../components/LanguagePreference.astro';
@@ -9,8 +10,8 @@ import docsStyleUrl from '../styles/documentation.css?url';
 interface Props { locale: Locale; page: SitePage; slug?: string; title?: string; description?: string }
 const { locale, page, slug = '' } = Astro.props;
 const t = content[locale];
-const title = Astro.props.title ? `${Astro.props.title} — Capy Canvas` : page === 'home' ? t.home.title : page === '404' ? t.notFound.title : `${t[page].title} — Capy Canvas`;
-const description = Astro.props.description ?? (page === '404' ? t.notFound.text : t[page].meta);
+const title = Astro.props.title ? `${Astro.props.title} — Capy Canvas` : page === 'home' ? homeContent[locale].metaTitle : page === '404' ? t.notFound.title : `${t[page].title} — Capy Canvas`;
+const description = Astro.props.description ?? (page === '404' ? t.notFound.text : page === 'home' ? homeContent[locale].meta : t[page].meta);
 const canonical = origin + route(locale, page, slug);
 const faviconVersion = import.meta.env.FAVICON_VERSION;
 ---
@@ -39,6 +40,14 @@ const faviconVersion = import.meta.env.FAVICON_VERSION;
     <meta property="og:image:height" content="1080" />
     <meta property="og:image:alt" content={t.home.slides.paint} />
     <meta name="twitter:card" content="summary_large_image" />
+    {page === 'home' && <script is:inline type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Capy Canvas',
+      alternateName: 'CapyCanvas',
+      url: origin + '/',
+      inLanguage: locales.map(code => content[code].lang),
+    }).replaceAll('<', '\\u003c')} />}
     <meta name="theme-color" content="#ededed" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#333333" media="(prefers-color-scheme: dark)" />
     <link rel="icon" type="image/png" sizes="32x32" href={`/assets/favicon.png?v=${faviconVersion}`} />

@@ -27,7 +27,7 @@ try {
     await b.theme(theme);
     const path=`${locale==='en'?'':'/'+locale}/${page==='home'?'':(segments[page]??page)+'/'}`;
     await b.navigate(site.url+path);
-    await b.evaluate('Promise.all([...document.images].map(i=>i.decode())).then(()=>null)');
+    await b.evaluate('document.querySelectorAll("img[loading=lazy]").forEach(image=>{image.loading="eager"}); Promise.all([...document.images].map(i=>i.decode())).then(()=>null)');
     await b.settle();
     const metrics=await b.evaluate(`(() => {
       const visible=e=>e.getClientRects().length>0;
@@ -37,7 +37,7 @@ try {
       const overviewImage=document.querySelector('.docs-overview-image img');
       const overviewBounds=overviewImage?.getBoundingClientRect();
       const borders=[...document.querySelectorAll('header,nav,main,picture,section,a,li')].filter(visible).filter(e=>['Top','Right','Bottom','Left'].some(side=>parseFloat(getComputedStyle(e)['border'+side+'Width'])>0)).map(e=>e.className);
-      return { overviewSource:overviewImage?.currentSrc, overviewRatio:overviewBounds?overviewBounds.width/overviewBounds.height:null, overviewLink:document.querySelector('.docs-overview-image a')?.href, height:innerHeight, scrollHeight:document.documentElement.scrollHeight, shotRatio:shot?shot.width/shot.height:null, borders, width:innerWidth, scroll:document.documentElement.scrollWidth, lang:document.documentElement.dataset.locale, bg:getComputedStyle(document.body).backgroundColor, source:document.querySelector('.showcase-frame[data-slide="paint"] img')?.currentSrc, shown, bounds,
+      return { overviewSource:overviewImage?.currentSrc, overviewRatio:overviewBounds?overviewBounds.width/overviewBounds.height:null, overviewLink:document.querySelector('.docs-overview-image a')?.href, height:innerHeight, heroHeight:document.querySelector('.hero')?.getBoundingClientRect().height, shotRatio:shot?shot.width/shot.height:null, borders, width:innerWidth, scroll:document.documentElement.scrollWidth, lang:document.documentElement.dataset.locale, bg:getComputedStyle(document.body).backgroundColor, source:document.querySelector('.showcase-frame[data-slide="paint"] img')?.currentSrc, original:document.querySelector('.showcase-frame[data-slide="paint"] img')?.getAttribute('src'), shown, bounds,
         labels:[...document.querySelectorAll('a,summary')].filter(visible).every(e=>(e.getAttribute('aria-label')||e.textContent||e.querySelector('img[alt]')?.alt||'').trim()),
         headings:document.querySelectorAll('h1').length,
         broken:[...document.images].some(i=>!i.complete||!i.naturalWidth)
@@ -51,9 +51,10 @@ try {
     check(metrics.labels&&metrics.headings===1&&!metrics.broken,`Accessibility/asset basics ${label}`);
     check(metrics.borders.length===0,`Unexpected borders ${label}: ${metrics.borders}`);
     if(page==='home') {
-      check(new RegExp(`/assets/showcase/(${locale}|shared)/paint-${theme}\\.webp$`).test(metrics.source),`Wrong screenshot ${label}`);
+      check(new RegExp(`/assets/showcase/(${locale}|shared)/paint-light\\.webp$`).test(metrics.original)&&new RegExp(`/_astro/paint-${theme}\\.`).test(metrics.source),`Wrong screenshot ${label}`);
       check(metrics.shown.join()==='paint',`Paint slide is shown first ${label}: ${metrics.shown}`);
-      check(metrics.scrollHeight<=height,`Home should fit viewport ${label}: ${metrics.scrollHeight}`);
+      check(metrics.heroHeight<=height+1,`Home hero should fit viewport ${label}: ${metrics.heroHeight}`);
+      check(await b.evaluate("document.querySelector('#home-title').getBoundingClientRect().width>100&&document.querySelectorAll('.home-features section').length===3&&!!document.querySelector('.home-platforms a[href*=github]')"),'Visible brand and crawlable feature links');
       check(Math.abs(metrics.shotRatio-16/9)<.01,`Screenshot aspect ratio ${label}`);
     }
     if(page==='documentation') {
@@ -90,7 +91,7 @@ try {
   const guideLayouts = await checkDocumentation(b,host,check);
   // Live OS appearance changes swap both the site palette and the actual screenshot.
   await b.navigate(host.url+'/?lang=en'); await b.theme('light'); await b.settle();
-  await b.theme('dark'); await b.until("document.querySelector('.showcase-frame[data-slide=\"paint\"] img').currentSrc.endsWith('paint-dark.webp')"); checks++;
+  await b.theme('dark'); await b.until("document.querySelector('.showcase-frame[data-slide=\"paint\"] img').currentSrc.includes('/paint-dark.')"); checks++;
   await b.until("document.querySelector('[data-showcase]').hasAttribute('data-playing')"); checks++;
   await b.until("document.querySelector('.showcase input[value=\"photo\"]').checked", 20000); checks++;
   await b.evaluate("[...document.querySelectorAll('.showcase-switcher label')].find(label=>label.textContent.trim()==='Sketch').click()");
@@ -109,8 +110,13 @@ try {
     const {identifier}=await b.call('Page.addScriptToEvaluateOnNewDocument',{source:`Object.defineProperty(navigator,'languages',{get:()=>${JSON.stringify(langs)},configurable:true})`});
     for (const page of ['download', 'privacy']) {
       await b.evaluate('localStorage.clear()'); await b.navigate(host.url+'/'+page+'/');
-      await b.until(`document.documentElement.dataset.locale==='${expected}'`);checks++;
-      check(await b.evaluate(`document.documentElement.dataset.page==='${page}'`),'Auto detection preserves the page');
+      check(await b.evaluate(`document.documentElement.dataset.locale==='en'&&location.pathname==='/${page}/'`),'Browser language preserves the requested English URL');
+      check(await b.evaluate(`document.querySelector('[data-language-suggestion]').hidden===${expected==='en'}`),'A translated page is suggested when available');
+      if(expected!=='en') {
+        check(await b.evaluate(`document.querySelector('[data-language-suggestion]').href.endsWith('/${expected}/${page}/')`),'Suggestion preserves the page');
+        await b.evaluate("document.querySelector('[data-language-suggestion]').click()");
+        await b.until(`document.documentElement.dataset.locale==='${expected}'`);checks++;
+      }
     }
     await b.call('Page.removeScriptToEvaluateOnNewDocument',{identifier});
   }
@@ -119,7 +125,8 @@ try {
   await b.evaluate("document.querySelector('.language-menu').open=true;document.querySelector('[data-language=ko]').click()");
   await b.until("document.documentElement.dataset.locale==='ko'");
   check(await b.evaluate("location.pathname==='/ko/docs/'&&localStorage.getItem('capycanvas.language')==='ko'"),'Manual selection persists and preserves page');
-  await b.navigate(host.url+'/');await b.until("document.documentElement.dataset.locale==='ko'");checks++;
+  await b.navigate(host.url+'/');
+  check(await b.evaluate("document.documentElement.dataset.locale==='en'&&!document.querySelector('[data-language-suggestion]').hidden&&document.querySelector('[data-language-suggestion]').href.endsWith('/ko/')"),'Saved language suggests a translation without redirecting');
   await b.navigate(host.url+'/ja/');check(await b.evaluate("document.documentElement.dataset.locale==='ja'"),'Explicit locale URL wins over storage');
   await b.evaluate("document.querySelector('[data-language=en]').click()");await b.until("document.documentElement.dataset.locale==='en'");checks++;
   await b.until("document.readyState==='complete'");await b.settle();

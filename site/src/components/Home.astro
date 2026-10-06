@@ -1,23 +1,36 @@
 ---
 import { content } from '../data/content.mjs';
-import { appUrl, route, type Locale } from '../lib/site';
+import { appUrl, repositoryUrl, route, type Locale } from '../lib/site';
 import { capturePair } from '../lib/captures.mjs';
+import { getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import { homeContent } from '../data/home-content.mjs';
 interface Props { locale: Locale }
 const { locale } = Astro.props;
 const t = content[locale];
+const copy = homeContent[locale];
 const slides = [
   { id: 'sketch', label: 'Sketch' },
   { id: 'paint', label: 'Paint' },
   { id: 'photo', label: 'Photo' },
 ] as const;
 const images = Object.fromEntries(slides.map(({ id }) => [id, capturePair(`showcase/${id}`, locale)]));
+const sources = import.meta.glob<{ default: ImageMetadata }>('../../public/assets/showcase/**/*.webp', { eager: true });
+const responsive = Object.fromEntries(await Promise.all(slides.map(async ({ id }) => [id, Object.fromEntries(await Promise.all((['light', 'dark'] as const).map(async theme => {
+  const path = images[id][theme];
+  const image = await getImage({ src: sources[`../../public${path}`].default, widths: [480, 960, 1440, 1920], format: 'webp', quality: 85 });
+  return [theme, image.srcSet.attribute];
+})))])));
+const sizes = '(max-width: 540px) calc(100vw - 32px), (max-width: 1072px) calc(100vw - 48px), 1024px';
+const featureSlugs = ['illustration', 'photo', 'quickstart'];
 ---
-<main id="main" class="hero">
-  <h1 class="visually-hidden">{t.home.title}</h1>
+<main id="main">
+  <section class="hero" aria-labelledby="home-title">
+  <h1 id="home-title">{t.home.title}</h1>
   <div class="workspace showcase" data-showcase>
     {slides.map(({ id }) => <picture class="showcase-frame" data-slide={id}>
-      <source media="(prefers-color-scheme: dark)" srcset={images[id].dark} />
-      <img src={images[id].light} width="1920" height="1080" alt={t.home.slides[id]} loading={id === 'paint' ? 'eager' : 'lazy'} fetchpriority={id === 'paint' ? 'high' : 'low'} decoding="async" />
+      <source media="(prefers-color-scheme: dark)" srcset={responsive[id].dark} sizes={sizes} />
+      <img src={images[id].light} width="1920" height="1080" alt={t.home.slides[id]} srcset={responsive[id].light} sizes={sizes} loading={id === 'paint' ? 'eager' : 'lazy'} fetchpriority={id === 'paint' ? 'high' : 'low'} decoding="async" />
     </picture>)}
     <fieldset class="showcase-switcher">
       <legend class="visually-hidden">{t.home.workspaces}</legend>
@@ -28,11 +41,29 @@ const images = Object.fromEntries(slides.map(({ id }) => [id, capturePair(`showc
       </label>)}
     </fieldset>
   </div>
-  <p class="home-description">{t.home.description}</p>
+  <p class="home-description">{copy.description}</p>
   <div class="actions">
     <a class="button" href={appUrl}>{t.nav.webDemo}</a>
     <a class="button primary" href={route(locale, 'download')}>{t.nav.download}</a>
     <a class="button" href={route(locale, 'documentation')}>{t.nav.documentation}</a>
+  </div>
+  </section>
+  <div class="home-details">
+    <div class="home-features">
+      {copy.features.map((feature, i) => <section aria-labelledby={`feature-${i}`}>
+        <h2 id={`feature-${i}`}>{feature.title}</h2>
+        <p>{feature.text}</p>
+        <a href={route(locale, 'documentation', featureSlugs[i])}>{feature.link}</a>
+      </section>)}
+    </div>
+    <section class="home-platforms" aria-labelledby="platforms-title">
+      <h2 id="platforms-title">{copy.platformsTitle}</h2>
+      <p>{copy.platformsText}</p>
+      <div class="home-links">
+        <a href={route(locale, 'download')}>{copy.downloadLink}</a>
+        <a href={repositoryUrl}>{copy.sourceLink}</a>
+      </div>
+    </section>
   </div>
 </main>
 <script>
@@ -53,6 +84,11 @@ const images = Object.fromEntries(slides.map(({ id }) => [id, capturePair(`showc
     };
     for (const choice of choices) choice.addEventListener('change', schedule);
     document.addEventListener('visibilitychange', schedule);
-    Promise.all(images.map(image => { image.loading = 'eager'; return image.decode().catch(() => undefined); })).then(schedule);
+    const first = images.find(image => image.closest('[data-slide]')?.getAttribute('data-slide') === 'paint');
+    first?.decode().catch(() => undefined).then(() => {
+      const preload = () => Promise.all(images.map(image => { image.loading = 'eager'; return image.decode().catch(() => undefined); })).then(schedule);
+      if (typeof window.requestIdleCallback === 'function') window.requestIdleCallback(preload, { timeout: 2500 });
+      else window.setTimeout(preload, 1000);
+    });
   }
 </script>

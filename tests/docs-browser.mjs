@@ -79,11 +79,14 @@ export async function checkDocumentation(b, host, check) {
   await b.evaluate("document.querySelector('.docs-menu').open = true; document.querySelector('.docs-navigation a[href=\"/ko/docs/illustration/ink/\"]').click()");
   await b.until("location.pathname === '/ko/docs/illustration/ink/' && document.readyState === 'complete'");
   check(await b.evaluate("document.querySelector('.guide-prose h2') !== null"), 'Sidebar navigates to the actual guide');
-  // Language detection and explicit choices keep nested article paths.
+  // Language suggestions and explicit choices keep nested article paths.
   const { identifier: languageOverride } = await b.call('Page.addScriptToEvaluateOnNewDocument', { source: "Object.defineProperty(navigator,'languages',{get:()=>['ja-JP'],configurable:true})" });
   await b.navigate(host.url + '/docs/illustration/mask/');
+  check(await b.evaluate("location.pathname === '/docs/illustration/mask/' && document.documentElement.lang === 'en'"), 'Browser language keeps the requested guide URL');
+  check(await b.evaluate("!document.querySelector('[data-language-suggestion]').hidden && document.querySelector('[data-language-suggestion]').href.endsWith('/ja/docs/illustration/mask/')"), 'Language suggestion preserves the nested guide');
+  await b.evaluate("document.querySelector('[data-language-suggestion]').click()");
   await b.until("location.pathname === '/ja/docs/illustration/mask/' && document.readyState === 'complete'");
-  check(await b.evaluate("document.documentElement.lang === 'ja'"), 'Browser language detection preserves nested guide');
+  check(await b.evaluate("document.documentElement.lang === 'ja'"), 'Accepting a language suggestion opens the translated guide');
   await b.evaluate("document.querySelector('.language-menu').open = true; document.querySelector('[data-language=zh]').click()");
   await b.until("location.pathname === '/zh/docs/illustration/mask/' && document.readyState === 'complete'");
   check(await b.evaluate("localStorage.getItem('capycanvas.language') === 'zh'"), 'Manual guide translation persists');

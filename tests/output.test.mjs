@@ -6,6 +6,7 @@ import { createHash } from 'node:crypto';
 import { docsUI } from '../site/src/data/docs-ui.mjs';
 import { docTopics } from '../site/src/data/docs-nav.mjs';
 import { content, languages } from '../site/src/data/content.mjs';
+import { homeContent, languageSuggestions } from '../site/src/data/home-content.mjs';
 import { releasesUrl } from '../site/src/lib/releases.mjs';
 import { capture } from '../site/src/lib/captures.mjs';
 
@@ -21,6 +22,10 @@ const releaseFile=/^https:\/\/github\.com\/capyatelier\/capycanvas\/releases\/do
 function shape(value) { return Array.isArray(value)?value.map(shape):value && typeof value==='object'?Object.fromEntries(Object.entries(value).map(([k,v])=>[k,shape(v)])):typeof value; }
 for(const locale of Object.keys(languages)) {
   test(`${locale}: translation coverage matches English`,()=>assert.deepEqual(shape(content[locale]),shape(content.en)));
+  test(`${locale}: homepage and language suggestion translations`,()=>{
+    assert.deepEqual(shape(homeContent[locale]),shape(homeContent.en));
+    assert.ok(languageSuggestions[locale]);
+  });
   for(const page of pages) test(`${locale}/${page}: static content, metadata and navigation`,async()=>{
     const html=await read(route(locale,page)+'index.html');
     const modules=await Promise.all([...html.matchAll(/<script type="module"([^>]*)>([\s\S]*?)<\/script>/g)].map(async ([,attributes,code])=>{
@@ -51,15 +56,21 @@ for(const locale of Object.keys(languages)) {
     if(page==='home') {
       assert.doesNotMatch(html, /<footer/);
       assert.ok(!html.includes(`href="/${route(locale,'privacy')}"`), 'The home page has no privacy link');
-      assert.equal((html.match(/<p(?: [^>]*)?>/g)||[]).length,1);
-      assert.match(html,/<h1 class="visually-hidden">Capy Canvas<\/h1>/);
+      assert.match(html,/<h1 id="home-title">Capy Canvas<\/h1>/);
+      assert.ok(html.includes(`<title>${escape(homeContent[locale].metaTitle)}</title>`));
+      assert.ok(html.includes(escapeText(homeContent[locale].description)));
+      const website = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)?.[1]);
+      assert.equal(website.name, 'Capy Canvas');
+      assert.equal(website.alternateName, 'CapyCanvas');
+      assert.equal(website.url, 'https://capycanvas.art/');
+      for (const slug of ['illustration','photo','quickstart']) assert.ok(html.includes(`href="/${route(locale,'documentation')}${slug}/"`));
       assert.doesNotMatch(html,/<figcaption|class="brand"|class="eyebrow"/);
       assert.equal((html.match(/class="button(?: primary)?"/g)||[]).length,3);
       assert.ok(html.includes(`<a class="button primary" href="/${route(locale,'download')}"`), 'Download is the primary home action');
       for(const slide of ['sketch','paint','photo']) {
         const [light,dark]=['light','dark'].map(theme=>capture(`showcase/${slide}`,locale,theme).file);
         assert.match(light,new RegExp(`^showcase/(${locale}|shared)/${slide}-light\\.webp$`),`Slide ${slide} shows the editor in the page language`);
-        assert.ok(html.includes(`<source media="(prefers-color-scheme: dark)" srcset="/assets/${dark}">`));
+        assert.match(html, /<source media="\(prefers-color-scheme: dark\)" srcset="[^"]+ 480w, [^"]+ 960w, [^"]+ 1440w, [^"]+ 1920w" sizes="/);
         assert.ok(html.includes(`<img src="/assets/${light}" width="1920" height="1080" alt="${escape(content[locale].home.slides[slide])}"`), `Slide ${slide} has its localized description`);
         assert.match(html,new RegExp(`<input class="visually-hidden" type="radio" name="workspace" value="${slide}"`));
       }
@@ -69,7 +80,8 @@ for(const locale of Object.keys(languages)) {
       assert.ok(modules.some(code=>code.includes('[data-showcase]')), 'Showcase behavior is bundled with the home page');
       assert.ok(html.includes(`<meta property="og:image" content="https://capycanvas.art/assets/${capture('showcase/paint',locale,'light').file}">`),'Link previews show the editor in the page language');
       assert.match(html,/<meta property="og:image:width" content="1920">/);
-      assert.doesNotMatch(html,/<header|class="nav-links"|href="https:\/\/github.com/);
+      assert.doesNotMatch(html,/<header|class="nav-links"/);
+      assert.ok(html.includes(`href="https://github.com/capyatelier/capycanvas">${escapeText(homeContent[locale].sourceLink)}</a>`));
     } else {
       const footer = html.match(/<footer class="site-footer">([\s\S]*?)<\/footer>/)?.[1];
       assert.ok(footer?.includes(content[locale].footer.madeBy));

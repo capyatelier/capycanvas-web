@@ -34,7 +34,9 @@ svg.chevron { stroke-width: 2.7; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .skip { position: absolute; top: -100px; left: 16px; z-index: 20; padding: 5px 17px; border-radius: var(--control-radius); background: var(--raised); font-weight: 700; line-height: 24px; }
 .skip:focus { top: 12px; }
-.home-top { position: absolute; top: 12px; right: 18px; z-index: 10; }
+.home-top { position: absolute; top: 12px; right: 18px; z-index: 10; display: flex; align-items: center; gap: 8px; }
+.language-suggestion { max-width: 40vw; font-size: 12px; color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.language-suggestion[hidden] { display: none; }
 .language-menu { position: relative; z-index: 10; font-size: 13px; }
 .language-menu summary { display: flex; align-items: center; gap: var(--gap); min-height: var(--control-height); padding: 0 12px; cursor: pointer; border-radius: 999px; color: var(--muted); font-weight: 500; list-style: none; }
 .language-menu summary::-webkit-details-marker { display: none; }
@@ -52,14 +54,15 @@ svg.chevron { stroke-width: 2.7; }
 .menu-item svg { width: 16px; height: 16px; }
 .language-options { right: 0; min-width: 200px; max-width: calc(100vw - 32px); max-height: min(70dvh, calc(100dvh - 80px)); overflow-y: auto; overscroll-behavior: contain; }
 .hero { min-height: 100dvh; padding: 48px 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
-.workspace { display: block; flex: none; width: min(1024px, 100%, calc((100dvh - 226px) * 16 / 9)); overflow: hidden; border-radius: var(--surface-radius); box-shadow: var(--shadow); }
+.hero h1 { margin: 0 0 24px; font-size: clamp(28px, 4vw, 40px); line-height: 1.2; }
+.workspace { display: block; flex: none; width: min(1024px, 100%, max(240px, calc((100dvh - 300px) * 16 / 9))); overflow: hidden; border-radius: var(--surface-radius); box-shadow: var(--shadow); }
 .workspace img { display: block; width: 100%; height: auto; aspect-ratio: 16/9; }
 .showcase { position: relative; display: grid; background: var(--surface); animation: showcase-breathe 9s ease-in-out infinite; }
 @keyframes showcase-breathe { 50% { transform: scale(1.04); } }
-.showcase-frame { grid-area: 1 / 1; opacity: 0; transform: scale(1.015); transition: opacity .9s ease, transform 1.6s cubic-bezier(.2, .7, .2, 1); }
+.showcase-frame { grid-area: 1 / 1; content-visibility: hidden; opacity: 0; transform: scale(1.015); transition: opacity .9s ease, transform 1.6s cubic-bezier(.2, .7, .2, 1); }
 .showcase:has(input[value="sketch"]:checked) [data-slide="sketch"],
 .showcase:has(input[value="paint"]:checked) [data-slide="paint"],
-.showcase:has(input[value="photo"]:checked) [data-slide="photo"] { opacity: 1; transform: none; }
+.showcase:has(input[value="photo"]:checked) [data-slide="photo"] { content-visibility: visible; opacity: 1; transform: none; }
 .showcase-switcher { position: absolute; bottom: 10px; left: 50%; z-index: 1; display: grid; grid-template-columns: repeat(3, 1fr); min-inline-size: 0; margin: 0; padding: 2px; border: 0; border-radius: 999px; transform: translateX(-50%); background: color-mix(in srgb, var(--raised) 70%, transparent); box-shadow: 0 1px 4px rgb(0 0 0 / 18%); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
 .showcase-switcher label { position: relative; z-index: 1; padding: 0 9px; border-radius: 999px; color: var(--muted); font-size: 11px; font-weight: 500; line-height: 20px; text-align: center; cursor: pointer; transition: color .3s ease; }
 .showcase-switcher label:hover, .showcase-switcher label:has(:checked) { color: var(--ink); }
@@ -67,7 +70,15 @@ svg.chevron { stroke-width: 2.7; }
 .showcase-indicator { position: absolute; top: 2px; bottom: 2px; left: 2px; width: calc((100% - 4px) / 3); border-radius: 999px; background: var(--header-selection); transition: transform .5s cubic-bezier(.3, .7, .2, 1); }
 .showcase:has(input[value="paint"]:checked) .showcase-indicator { transform: translateX(100%); }
 .showcase:has(input[value="photo"]:checked) .showcase-indicator { transform: translateX(200%); }
-.home-description { font-size: 15px; line-height: 1.6; color: var(--muted); margin: 32px 0 16px; }
+.home-description { max-width: 660px; font-size: 15px; line-height: 1.6; color: var(--muted); margin: 32px 0 16px; }
+.home-details { max-width: 1072px; margin: auto; padding: 24px 24px 64px; }
+.home-features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; }
+.home-details h2 { font-size: 20px; line-height: 1.35; margin: 0 0 12px; }
+.home-details p { font-size: 15px; color: var(--muted); margin: 0 0 16px; }
+.home-details a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.home-platforms { max-width: 720px; margin-top: 48px; }
+.home-links { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+@media (max-width: 800px) { .home-features { grid-template-columns: 1fr; gap: 32px; } }
 @media (prefers-reduced-motion: reduce) {
   .showcase { animation: none; }
   .showcase-frame { transform: none; }
@@ -141,7 +152,7 @@ h1 { font-size: 28px; font-weight: 700; line-height: 1.3; letter-spacing: -.6px;
 @media (max-width: 540px) {
   .home-top { top: 8px; right: 10px; }
   .hero { padding: 40px 16px; }
-  .workspace { width: min(100%, calc((100dvh - 242px) * 16 / 9)); }
+  .workspace { width: min(100%, max(240px, calc((100dvh - 320px) * 16 / 9))); }
   .showcase-switcher { bottom: 6px; }
   .showcase-switcher label { padding: 0 6px; font-size: 10px; line-height: 18px; }
   .home-description { font-size: 14px; margin-top: 28px; }
@@ -161,7 +172,7 @@ h1 { font-size: 28px; font-weight: 700; line-height: 1.3; letter-spacing: -.6px;
 }
 @media (max-height: 480px) and (min-width: 541px) {
   .hero { padding-top: 28px; padding-bottom: 28px; }
-  .workspace { width: min(1024px, 100%, calc((100dvh - 194px) * 16 / 9)); }
+  .workspace { width: min(1024px, 100%, max(240px, calc((100dvh - 270px) * 16 / 9))); }
   .home-description { margin: 24px 0 16px; }
 }
 @media print { .language-menu, .nav-tools, .skip { display: none; } .workspace { box-shadow: none; } }

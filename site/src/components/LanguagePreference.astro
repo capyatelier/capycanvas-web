@@ -1,16 +1,15 @@
 ---
 import { locales, route, type Locale, type SitePage } from '../lib/site';
+import { languageSuggestions } from '../data/home-content.mjs';
 interface Props { locale: Locale; page: SitePage; slug?: string }
 const { locale, page, slug = '' } = Astro.props;
 const languageUrls = Object.fromEntries(locales.map(code => [code, route(code, page, slug)]));
 ---
-<!-- GitHub Pages cannot inspect request headers. Run before paint using Astro's generated URLs. -->
-<script is:inline define:vars={{ current: locale, page, languageUrls }}>
+<script is:inline define:vars={{ current: locale, page, languageUrls, languageSuggestions }}>
   const supported = Object.keys(languageUrls);
   let saved;
   try { saved = localStorage.getItem('capycanvas.language'); } catch { /* Storage can be disabled. */ }
   if (!supported.includes(saved)) saved = null;
-  // Explicit translated URLs win; ?lang=en overrides detection even without storage.
   if (page !== '404' && current === 'en') {
     const query = new URLSearchParams(location.search).get('lang');
     const requested = supported.includes(query) ? query : null;
@@ -21,7 +20,20 @@ const languageUrls = Object.fromEntries(locales.map(code => [code, route(code, p
           || supported.find(code => code.toLowerCase().split('-')[0] === tag.split('-')[0]);
       })
       .find(Boolean) || 'en';
-    const locale = requested || saved || detected;
-    if (locale !== current) location.replace(languageUrls[locale] + location.search + location.hash);
+    if (requested && requested !== current) location.replace(languageUrls[requested] + location.hash);
+    const preferred = requested || saved || detected;
+    if (!requested && preferred !== current) document.addEventListener('DOMContentLoaded', () => {
+      const suggestion = document.querySelector('[data-language-suggestion]');
+      if (suggestion) {
+        suggestion.href = languageUrls[preferred] + location.hash;
+        suggestion.textContent = languageSuggestions[preferred];
+        suggestion.lang = preferred;
+        suggestion.dataset.language = preferred;
+        suggestion.hidden = false;
+        suggestion.addEventListener('click', () => {
+          try { localStorage.setItem('capycanvas.language', preferred); } catch {}
+        });
+      }
+    });
   }
 </script>
