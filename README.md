@@ -245,6 +245,10 @@ recipes, developing one chapter, and provenance. The adjacent product checkout i
 not modified. Each language's pages and homepage show the editor in that
 language, with translated alt text and captions.
 
+Native GTK screenshots for Linux software centers come from the app's own capture
+helper and are published under `/store/gtk/`; see
+[the software center screenshot guide](site/scripts/store/README.md).
+
 ## Migration comparisons
 
 `npm run test:migration` compares a reference build with the current `docs/`

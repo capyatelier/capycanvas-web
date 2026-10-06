@@ -38,7 +38,9 @@ where it renders WebGPU correctly.
 `docs/index.mjs` lists one recipe per chapter. The illustration chapter draws
 the tutorial study with real pen input and saves the downloadable examples;
 other chapters get them with `example(name)`, which waits for that chapter.
-`showcase.mjs` stages the homepage slides.
+`showcase.mjs` stages the homepage slides from the scenes in
+`showcase-scenes.mjs`, which the [software center screenshots](../store/README.md)
+share.
 
 - `editor.mjs` drives the editor through its own actions, commands, clicks and
   pen events. The browser file picker is replaced with an in-memory store so
