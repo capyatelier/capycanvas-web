@@ -1,0 +1,5 @@
+Capy Canvas is free, GPU-accelerated painting and photo editing software. We want to improve upon the ideas of the past, and build something better.
+
+We want artists to build their own tools. We envision a world where painters build their own brush engine, and photographers write their effect shaders. And while software may be AI generated, the tools should be used by humans. Artists shouldn't have to wait for a software company to decide that your idea is worth building.
+
+That is why Capy Canvas is open source and forever free, and we want this to be a community of builders and creatives.

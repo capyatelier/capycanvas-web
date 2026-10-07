@@ -1,0 +1,335 @@
+{
+  "capturedAt": "2026-10-07T19:52:54.909Z",
+  "app": {
+    "revision": "520002ba7639804f3487a95ec2e66353716c0663",
+    "apkSha256": "49a1373744953beeebf65256a17e1d3bb3241aa4d79e7f9a865cda1176d8630b",
+    "package": "art.capycanvas.capycanvas3"
+  },
+  "capture": {
+    "platform": "Native Android, hardware Vulkan",
+    "hardware": "Wacom MovinkPad Pro 14",
+    "method": "Android UIAutomation screenshot; display resolution and density overrides for each layout",
+    "limitation": "Phone, seven-inch tablet, and desktop are layout simulations on the Wacom tablet, not captures from those physical device classes. Desktop windowing and XR are unverified.",
+    "profiles": {
+      "phone": {
+        "width": 1920,
+        "height": 1080,
+        "density": 480
+      },
+      "tablet-7-inch": {
+        "width": 1920,
+        "height": 1080,
+        "density": 240
+      },
+      "tablet-10-inch": {
+        "width": 2560,
+        "height": 1440,
+        "density": 240
+      },
+      "desktop": {
+        "width": 3840,
+        "height": 2160,
+        "density": 320
+      }
+    }
+  },
+  "artwork": [
+    {
+      "file": "site/scripts/capture/showcase/spring.png",
+      "sha256": "5f030443fc3396c6a1dd13513e0e1a3284fb1746ad123e08fb2cedea61d8a9b4"
+    },
+    {
+      "file": "site/scripts/capture/showcase/house.png",
+      "sha256": "e512dcd56a9976f81a3867e92460e365ac57617ab1539578622e4c1efcc7a49b"
+    },
+    {
+      "file": "site/scripts/capture/showcase/NDF_4717.jpg",
+      "sha256": "044c44f0886b97a044771b530744a39dec6296d8d44345f7ac52230ddef86b5f"
+    }
+  ],
+  "assets": [
+    {
+      "file": "en-US/phone/01-paint-light.png",
+      "width": 1920,
+      "height": 1080,
+      "channels": 3,
+      "bytes": 821071,
+      "sha256": "1668dafa7f1451c9d1cdbf2ba51f8f916b00597a5dfd4e84dcd017926e75fd55",
+      "rawSha256": "9cb723d72288389b2354f88a304cef199cdaa432251647d87c6c136198fb55ff"
+    },
+    {
+      "file": "en-US/phone/02-sketch-light.png",
+      "width": 1920,
+      "height": 1080,
+      "channels": 3,
+      "bytes": 527123,
+      "sha256": "c2f60470a65580f7e739781ed6ac9601e6b392a963597f2cb2ea10fb6e72f1fe",
+      "rawSha256": "89582777fd6a78118638769150ff1ad52cbbd11c1adee0951891288d4060a6c8"
+    },
+    {
+      "file": "en-US/phone/03-photo-dark.png",
+      "width": 1920,
+      "height": 1080,
+      "channels": 3,
+      "bytes": 798522,
+      "sha256": "7be51589d03de7f788c5a7e105bb167c9832c839d809bdac2e8730600a5a0f69",
+      "rawSha256": "ab459a79f9233c0cd1951f2ca56f4714c9dbcaa1abb52408c8be6cffa7c28c1f"
+    },
+    {
+      "file": "en-US/phone/04-brush-settings-dark.png",
+      "width": 1920,
+      "height": 1080,
+      "channels": 3,
+      "bytes": 818364,
+      "sha256": "d91aa293d1baebd27f08433fe33463af0fb8cc12a6ff324d27d254921ebf4b02",
+      "rawSha256": "71f9cba0f9addda460a82bf8dd274328acac612a2ec9511b3daa5738ec7037af"
+    },
+    {
+      "file": "en-US/phone/05-paint-dark.png",
+      "width": 1920,
+      "height": 1080,
+      "channels": 3,
+      "bytes": 813967,
+      "sha256": "dbb70887faa3c84bcc5bb76908007f1c78a5a3769574de09df66e186900bba02",
+      "rawSha256": "f9ca0a9bebfbffdcc765ea4bd31f8552c486eb3b12e6c088f40d0f7ada6f8c9e"
+    },
+    {
+      "file": "en-US/phone/06-sketch-dark.png",
+      "width": 1920,
+      "height": 1080,
+      "channels": 3,
+      "bytes": 519835,
+      "sha256": "dcf762ba3c24276b37900f30def9d243279704abe82c894269ab85add85caada",
+      "rawSha256": "de25304437ddac660950554f832ff30b89805138eb4889718789407be54d2b10"
+    },
+    {
+      "file": "en-US/phone/07-photo-light.png",
+      "width": 1920,
+      "height": 1080,
+      "channels": 3,
+      "bytes": 806097,
+      "sha256": "7108b6e320fc02656ee868a66e2396811a41909208ddc58e7ea4085b39188078",
+      "rawSha256": "eb773120e503a7266dc6597323de6d760b9e4e4b0f7aebe1d91ed70b792363d3"
+    },
+    {
+      "file": "en-US/tablet-7-inch/01-paint-light.png",
+      "width": 1920,
+      "height": 1080,
+      "channels": 3,
+      "bytes": 1358266,
+      "sha256": "365420f42801f448f89992e12d2e7a48648e289c60cb8d0ee1d70822e6d4feab",
+      "rawSha256": "56de3a75d533951699e519343d026cbe68aad94387d8695a1f6dd33ffe78e8ce"
+    },
+    {
+      "file": "en-US/tablet-7-inch/02-sketch-light.png",
+      "width": 1920,
+      "height": 1080,
+      "channels": 3,
+      "bytes": 606580,
+      "sha256": "60f02a38d3d0d9803cade013eb128164ef6cbe423d3f92b36dee4ec5a4ed43ae",
+      "rawSha256": "e3157992eee8d56caf158f40aaa85c1aca0cc93414a3789fecd692ea552857d4"
+    },
+    {
+      "file": "en-US/tablet-7-inch/03-photo-dark.png",
+      "width": 1920,
+      "height": 1080,
+      "channels": 3,
+      "bytes": 1006282,
+      "sha256": "20fd661ae8347ec2feebe6baef2612cca058a983398bcf611cab4dd8912f2157",
+      "rawSha256": "a237cf6ae751658a09c772489afe44cc6e225ece717cce4d6561ee3d03184eaf"
+    },
+    {
+      "file": "en-US/tablet-7-inch/04-brush-settings-dark.png",
+      "width": 1920,
+      "height": 1080,
+      "channels": 3,
+      "bytes": 819518,
+      "sha256": "6496719224e99cf7b0e57aac8d809bb3e686ea161d92e5d74b8e945ad5b3267d",
+      "rawSha256": "2480593cf478fe40ee421328578d928b804ac1b89fcb81a75a7e9ca10fb6e9ab"
+    },
+    {
+      "file": "en-US/tablet-7-inch/05-paint-dark.png",
+      "width": 1920,
+      "height": 1080,
+      "channels": 3,
+      "bytes": 1351268,
+      "sha256": "95d38ef70f9930b2c74b9e63e295cbb7bba6caff49790bb6172c9ed9351b8696",
+      "rawSha256": "537a60c116bfa1ffdad73389a9f4db5a42108397a79f447da9d48cf5b54662ac"
+    },
+    {
+      "file": "en-US/tablet-7-inch/06-sketch-dark.png",
+      "width": 1920,
+      "height": 1080,
+      "channels": 3,
+      "bytes": 600689,
+      "sha256": "a1c135184be25167d1e7639717cf0f28f7456af043755da9d3d574b3517b486c",
+      "rawSha256": "d0db2400cccfd3718c56af4448b4c9c736127630da91b660f5c539ca416f2eba"
+    },
+    {
+      "file": "en-US/tablet-7-inch/07-photo-light.png",
+      "width": 1920,
+      "height": 1080,
+      "channels": 3,
+      "bytes": 1011841,
+      "sha256": "78218d516c7bb9710eef2a2dea3294dc3d5b8e5c42b19437e8d016104003e913",
+      "rawSha256": "14ccc468b401ac6e9afabede495b0e5912a7b22aafa4c8dc28e7a3804aa7be89"
+    },
+    {
+      "file": "en-US/tablet-10-inch/01-paint-light.png",
+      "width": 2560,
+      "height": 1440,
+      "channels": 3,
+      "bytes": 2252273,
+      "sha256": "70bfac36072b949bbd4c98759577df2626500ae4b769243a802506303699912d",
+      "rawSha256": "e9946207a0eef5feaefe64adbb7ea646483b96bf18cd60065d70336afd4ba14d"
+    },
+    {
+      "file": "en-US/tablet-10-inch/02-sketch-light.png",
+      "width": 2560,
+      "height": 1440,
+      "channels": 3,
+      "bytes": 953249,
+      "sha256": "b38cddd74c3a0f9e3eeb1d402b05fcf856b86283294c40bf94057db875632da3",
+      "rawSha256": "9f4fd35860048ef7e3bb8d98bb0034f9a2cf77a3ccb2eaf77d4206a1e32c2990"
+    },
+    {
+      "file": "en-US/tablet-10-inch/03-photo-dark.png",
+      "width": 2560,
+      "height": 1440,
+      "channels": 3,
+      "bytes": 2056665,
+      "sha256": "f6a4f39e049044d87e38baae75f57dd3db0f5abf59eaae8a6b1481fd8182cb3c",
+      "rawSha256": "54fb7e404b84dc9818455252909ef857fb469604f214fdb16d7b52749d7a4dab"
+    },
+    {
+      "file": "en-US/tablet-10-inch/04-brush-settings-dark.png",
+      "width": 2560,
+      "height": 1440,
+      "channels": 3,
+      "bytes": 2104564,
+      "sha256": "ad7e744b403d3b8663babed77065df846206293cb3bd355e7ed699b75b6a4e3a",
+      "rawSha256": "f253646562cdd59ca8d3980cfc682d3a7e07515ac3d412e59a76bc70734ac53f"
+    },
+    {
+      "file": "en-US/tablet-10-inch/05-paint-dark.png",
+      "width": 2560,
+      "height": 1440,
+      "channels": 3,
+      "bytes": 2250500,
+      "sha256": "8cb2ef2372cfacab9cf9a0f21473d34e9dc181fe41cf3433699da834f267d707",
+      "rawSha256": "41a4f3f566bcf92ef50ba0eb241affc9dd69c5770e7465e277b8201be0c12161"
+    },
+    {
+      "file": "en-US/tablet-10-inch/06-sketch-dark.png",
+      "width": 2560,
+      "height": 1440,
+      "channels": 3,
+      "bytes": 948571,
+      "sha256": "1a28e362d15a616aee4fab7fa2525be70fad9d306bb05f639735ea8edc9d9ad8",
+      "rawSha256": "625b47cde0301e0d07e4df4415edbe260b699c348c2521725849fafe28ae9b88"
+    },
+    {
+      "file": "en-US/tablet-10-inch/07-photo-light.png",
+      "width": 2560,
+      "height": 1440,
+      "channels": 3,
+      "bytes": 2064200,
+      "sha256": "4ca686dbc8f14d9f4e724dff0c3641fdc2a7086eeca34e59a87577be0b50c183",
+      "rawSha256": "3eb3c56b4c17d46af97ba831a8fe2c59ba2a6353311fec5a298512ace301d1f7"
+    },
+    {
+      "file": "en-US/desktop/01-paint-light.png",
+      "width": 3840,
+      "height": 2160,
+      "channels": 3,
+      "bytes": 4516371,
+      "sha256": "c1b0f43f915d98ac1afa9d5db1666c505ef51482e265c291d6e92b082b63db5a",
+      "rawSha256": "489d28db12d61a7db614a8c16fefa84b1299398a5201c19dcebea00f6f4c3266"
+    },
+    {
+      "file": "en-US/desktop/02-sketch-light.png",
+      "width": 3840,
+      "height": 2160,
+      "channels": 3,
+      "bytes": 1889568,
+      "sha256": "31b6ae3a93a501b7d77bbd6e5cd749921403802d4d3685bfdff011166f284f09",
+      "rawSha256": "0ab7c4c0ca28e57f99a9f8b5b2debde3199772936537c1f8f073665b995406ad"
+    },
+    {
+      "file": "en-US/desktop/03-photo-dark.png",
+      "width": 3840,
+      "height": 2160,
+      "channels": 3,
+      "bytes": 4639475,
+      "sha256": "ab93802856f3f2d5e7d9478a8e71e1052ac2ecf8d166a2d8e6a0389c350dfd44",
+      "rawSha256": "675858e045ca7688bcba5abb5360f6f3956881499f284efd0e5e2f3284eb1412"
+    },
+    {
+      "file": "en-US/desktop/04-brush-settings-dark.png",
+      "width": 3840,
+      "height": 2160,
+      "channels": 3,
+      "bytes": 4574383,
+      "sha256": "6fa0463bd2e625f2102308b1e11bfa343d00c978279eb1e7eda9e246c782f624",
+      "rawSha256": "226fcd7b919b94b3a9c62ebf414f3709a4eaa0175e5a7a24a01af1f9cdcdb463"
+    },
+    {
+      "file": "en-US/desktop/05-paint-dark.png",
+      "width": 3840,
+      "height": 2160,
+      "channels": 3,
+      "bytes": 4515686,
+      "sha256": "4653a48b6ecc281376258b606710398897df99e607cbe137c96b7146ecc1606c",
+      "rawSha256": "218ec278ec0bf65aa2a87881a26e2b7b12ec78ba970d1cd5e1125b4d39db1cd2"
+    },
+    {
+      "file": "en-US/desktop/06-sketch-dark.png",
+      "width": 3840,
+      "height": 2160,
+      "channels": 3,
+      "bytes": 1883901,
+      "sha256": "5d8e6adb43989955359e6de936f451c16a469265f0489d405dba6af3dba4b362",
+      "rawSha256": "750843c8f2de5e88c99e67a8576fcd1c4185bb60f0d92d255bba4076b95f3c6e"
+    },
+    {
+      "file": "en-US/desktop/07-photo-light.png",
+      "width": 3840,
+      "height": 2160,
+      "channels": 3,
+      "bytes": 4645282,
+      "sha256": "8c8cc92da0d53b37a41ff6fb44d97af0dfd0841d7c01bd033e73a2bfdafb5048",
+      "rawSha256": "9e7e3bb7672ff20b063fcf89de53abe73ecc93bbf75392ac4b4d57e9d9c2f17a"
+    },
+    {
+      "file": "en-US/app-icon.png",
+      "width": 512,
+      "height": 512,
+      "channels": 4,
+      "bytes": 15818,
+      "sha256": "5ea67cbe9159301809c9545b319b4fb1343f34ecedb982e2d2a3c59ef1970ce3"
+    },
+    {
+      "file": "en-US/feature-graphic.png",
+      "width": 1024,
+      "height": 500,
+      "channels": 3,
+      "bytes": 330478,
+      "sha256": "2e3674f3647b54df47ebc95e39e46bdead48c80424d243fc416d8fbf4b42c08c"
+    },
+    {
+      "file": "en-US/app-name.txt",
+      "characters": 11,
+      "limit": 30
+    },
+    {
+      "file": "en-US/short-description.txt",
+      "characters": 71,
+      "limit": 80
+    },
+    {
+      "file": "en-US/full-description.txt",
+      "characters": 596,
+      "limit": 4000
+    }
+  ]
+}

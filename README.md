@@ -252,6 +252,9 @@ Native GTK screenshots for Linux software centers come from the app's own captur
 helper and are published under `/store/gtk/`; see
 [the software center screenshot guide](site/scripts/store/README.md).
 
+Google Play listing assets and the manual publishing workflow are documented in
+[the Google Play listing guide](store/google-play/README.md).
+
 ## Migration comparisons
 
 `npm run test:migration` compares a reference build with the current `docs/`
