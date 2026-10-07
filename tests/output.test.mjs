@@ -150,18 +150,34 @@ for(const locale of Object.keys(languages)) {
     if(page==='documentation') {
       assert.ok(html.includes(escapeText(docsUI[locale].intro)));
       const overview=docsUI[locale].landing;
+      const overviewText = html.replace(/<\/?em>/g, '');
       for (const section of Object.values(overview.sections)) {
-        assert.ok(html.includes(escapeText(section.title)) && html.includes(escapeText(section.text)) && (!section.link || html.includes(escapeText(section.link))), 'Concepts and links are translated');
+        assert.ok(html.includes(escapeText(section.title)) && section.text.split('\n\n').every(paragraph => overviewText.includes(escapeText(paragraph))) && (!section.link || html.includes(escapeText(section.link))), 'Concepts and links are translated');
+        if (section.image) {
+          for (const theme of ['light', 'dark']) assert.ok(html.includes(`/assets/${capture(section.image.shot, locale, theme).file}`), 'Each story shows its workspace in both themes');
+          const sectionHtml = html.split(`aria-labelledby="${section.title.toLowerCase()}"`)[1].split('</section>')[0];
+          for (const link of section.links) assert.ok(sectionHtml.includes(`href="/${route(locale, 'documentation')}${link.slug}/"`), 'Related guides belong to their story');
+          assert.ok(sectionHtml.indexOf('docs-story-links') > sectionHtml.indexOf('</figure>'), 'Guide links finish the story after its image');
+        }
       }
-      const overviewImages=['light','dark'].map(theme=>capture('guides/illustration',locale,theme).file);
-      assert.match(overviewImages[0],new RegExp(`^guides/(${locale}|shared)/illustration-light\\.webp$`),'The overview shows the editor in the page language');
-      assert.ok(html.includes(`src="/assets/${overviewImages[0]}"`));
-      assert.ok(html.includes(`srcset="/assets/${overviewImages[1]}"`));
-      assert.ok(html.includes(overview.alt));
+      if ('alt' in overview) {
+        const overviewImages=['light','dark'].map(theme=>capture('guides/illustration',locale,theme).file);
+        assert.match(overviewImages[0],new RegExp(`^guides/(${locale}|shared)/illustration-light\\.webp$`),'The overview shows the editor in the page language');
+        assert.ok(html.includes(`src="/assets/${overviewImages[0]}"`));
+        assert.ok(html.includes(`srcset="/assets/${overviewImages[1]}"`));
+        assert.ok(html.includes(overview.alt));
+      } else {
+        assert.doesNotMatch(html, /class="docs-overview-image"/);
+      }
       assert.doesNotMatch(html, /<figcaption|class="phase-card"|class="reference-grid"|class="guide-image-hint"/);
-      assert.ok(html.indexOf('id="workspace"') < html.indexOf('id="input"') && html.indexOf('id="input"') < html.indexOf('id="color"'));
-      assert.ok(html.indexOf('class="docs-lead"') < html.indexOf('class="docs-concepts"'));
-      assert.ok(html.indexOf('class="docs-concepts"') < html.indexOf('class="docs-start"'));
+      assert.ok(html.indexOf('class="docs-lead"') < html.indexOf('class="docs-concepts'));
+      if (locale === 'en') {
+        assert.ok(html.indexOf('id="sketch"') < html.indexOf('id="paint"') && html.indexOf('id="paint"') < html.indexOf('id="photo"'));
+        assert.doesNotMatch(html, /class="docs-start"|id="painting"|id="native"/);
+      } else {
+        assert.ok(html.indexOf('id="workspace"') < html.indexOf('id="input"') && html.indexOf('id="input"') < html.indexOf('id="color"'));
+        assert.ok(html.indexOf('class="docs-concepts"') < html.indexOf('class="docs-start"'));
+      }
       assert.ok(html.includes(`href="/${route(locale, 'documentation')}illustration/"`), 'The overview links to the tutorial introduction');
       assert.match(html, /class="docs-sidebar"/);
       for (const {slug} of docTopics) assert.ok(html.includes(`href="/${route(locale, 'documentation')}${slug}/"`));

@@ -38,8 +38,12 @@ for (const locale of Object.keys(languages)) {
   test(`${locale}: documentation interface has complete translations`, () => {
     assert.deepEqual(Object.keys(docsUI[locale]), Object.keys(docsUI.en));
     assert.deepEqual(Object.keys(docsUI[locale].groups), docGroups);
-    assert.deepEqual(Object.keys(docsUI[locale].landing.sections), Object.keys(docsUI.en.landing.sections));
-    assert.deepEqual(Object.keys(docsUI[locale].landing.links), Object.keys(docsUI.en.landing.links));
+    if (locale === 'en') {
+      assert.deepEqual(Object.keys(docsUI.en.landing.sections), ['sketch', 'paint', 'photo']);
+    } else {
+      assert.deepEqual(Object.keys(docsUI[locale].landing.sections), ['painting', 'workspace', 'input', 'color', 'photo', 'native']);
+      assert.deepEqual(Object.keys(docsUI[locale].landing.links), ['quickstart', 'illustration']);
+    }
     assert.deepEqual(Object.keys(docsUI[locale].platformNotes), Object.keys(docsUI.en.platformNotes));
   });
   for (const { slug } of docTopics) test(`${locale}/${slug}: complete static guide, localized routes and working anchors`, async () => {

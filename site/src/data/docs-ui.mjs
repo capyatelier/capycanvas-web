@@ -47,43 +47,166 @@ export const docsUI = {
     },
     "imageOpen": "Open full-size screenshot",
     "landing": {
-      "alt": "Paint workspace showing a teal ribbon, ochre disc and terracotta block with textured shading.",
       "sections": {
-        "painting": {
-          "title": "Painting",
-          "text": "The GPU-powered brush engine lets us simulate the interaction between paint and physical media. Watercolor soaks into the paper’s fibers, oil brushes pick up and carry color, and pencils catch the grain of the paper.",
-          "link": "Brush tools"
+        "sketch": {
+          "title": "Sketch",
+          "text": "My first foray into the digital art world (like many others) was with Procreate over a decade ago. Back when the apple pencil first came out, it was magic. Even though the processor was slow by today's standards, it was so heavily optimized that it gave a real pen-to-paper feeling.\n\nThis was the first time a drawing app was ever fully optimized for a mobile device, using predictive pen tracking and GPU powered brush+rendering engines. Then they dropped a clean and minimalist UI on top of it, which has become ubiquitious for all modern drawing apps.\n\nThe Sketch workspace is a tribute to our roots. The place where everyone starts out.",
+          "image": {
+            "shot": "showcase/sketch",
+            "alt": "An ink drawing of a train beneath a large tree in Sketch, with the drawing filling the screen and tools at the edges."
+          },
+          "links": [
+            {
+              "title": "Brush tools",
+              "slug": "drawing/brush-tools"
+            },
+            {
+              "title": "Pen",
+              "slug": "input/pen"
+            },
+            {
+              "title": "Zen mode",
+              "slug": "customize/zen"
+            }
+          ]
         },
-        "workspace": {
-          "title": "Your workspace",
-          "text": "Capy Canvas comes with familiar layouts for sketching, painting and photo editing, and every tool and panel can be moved wherever you like. And if you just want a blank canvas with no distractions, click the Capybara to enter Zen mode!",
-          "link": "Workspaces"
-        },
-        "input": {
-          "title": "Pen, touch and mouse",
-          "text": "The interface was designed for pen and touch from the start, including Wacom, XP-Pen and Huion tablets as well as iPad and Galaxy tablets. The canvas runs at a full 120 Hz, which reduces pen lag. And if you prefer a mouse, that works too.",
-          "link": "Pen"
-        },
-        "color": {
-          "title": "Choosing colors",
-          "text": "The color wheel uses OKLCH, which is based on how people perceive color. Palettes keep your favorite colors close by, and photographers can work in wide gamut, 16-bit and HDR, with proofing for print.",
-          "link": "Color panel"
+        "paint": {
+          "title": "Paint",
+          "text": "Once you get into proper comic/manga work, the simple tools don't cut it anymore. Lasso fill is your best friend, and you learn to live with the necessary evil of masks.\n\nThere are many tools out there that solve this problem, CSP and medibang are often what people learn first. And they are great, easy-to-use and inuitive software. All you have to do is follow the process and it usually turns out OK.\n\nWhile they are true workhorses, they are slow, built for an era where all rendering and compositing was done on the CPU instead of the GPU. So they never were able to match the powerful, realistic paintbrush engines in modern apps like Fresco and Rebelle.\n\nThe Paint workspace brings simulated physical media to digital illustration.",
+          "image": {
+            "shot": "showcase/paint",
+            "alt": "An oil painting of a house by the sea at sunset in Paint, with brushes, colors and layers beside the canvas."
+          },
+          "links": [
+            {
+              "title": "Illustration tutorial",
+              "slug": "illustration"
+            },
+            {
+              "title": "Fill tools",
+              "slug": "drawing/fill"
+            },
+            {
+              "title": "Masks",
+              "slug": "layers/masks"
+            },
+            {
+              "title": "Mixing, bleed and bristles",
+              "slug": "brushes/wet-media"
+            }
+          ]
         },
         "photo": {
-          "title": "Editing photos",
-          "text": "Open photos straight from your camera or phone, crop and retouch them, and adjust any area with filters you can keep changing later.",
-          "link": "Photo editing tutorial"
-        },
-        "native": {
-          "title": "Desktop and tablet",
-          "text": "Capy Canvas is in beta for Linux, Windows, macOS, Android and iPadOS. These are compiled native apps and use platform-native UI toolkits. This means better performance and battery life on every device.",
-          "link": "System architecture"
+          "title": "Photo",
+          "text": "Mobile devices are becoming more capable every day. It seems like OLED screens are everywhere, and my old phone saves its images in P3 HDR format by default. SRGB is a thing of the past.\n\nTo this date, the only painting app that properly supports wide gamut HDR is Krita. But I feel the experience is still a bit lacking. And when you export HDR and wide-gamut images online, you need control over the gain mapping, so that it still looks good on SDR devices. Of course you also need the basics (proofing, effect chains, the whole enchilada)\n\nThe Photo workspace enables stunning visuals for a new generation of wide-gamut screens.",
+          "image": {
+            "shot": "showcase/photo",
+            "alt": "A terrarium photograph in Photo, with the Tonal range selection tool and Curves and Vibrance adjustment layers."
+          },
+          "links": [
+            {
+              "title": "Photo editing tutorial",
+              "slug": "photo"
+            },
+            {
+              "title": "HDR",
+              "slug": "color-management/hdr"
+            },
+            {
+              "title": "How filters apply",
+              "slug": "filters/how-filters-apply"
+            },
+            {
+              "title": "Proof",
+              "slug": "color-management/proof"
+            }
+          ]
         }
       },
-      "start": "Capy Canvas can run entirely in your web browser, even offline. This is a quick and easy way to get started. The desktop and tablet apps, now in beta, offer the best performance and hardware compatibility.",
-      "links": {
-        "quickstart": "Quickstart",
-        "illustration": "Illustration tutorial"
+      "tools": {
+        "title": "Tools",
+        "columns": [
+          "Area",
+          "Tools and operations"
+        ],
+        "rows": [
+          {
+            "areas": [
+              {
+                "title": "Brushes",
+                "slug": "drawing/brush-tools"
+              }
+            ],
+            "text": "Pencil, charcoal, ink, bristle, watercolor, oil and airbrush; pressure and tilt, paper grain, textured tips and color mixing."
+          },
+          {
+            "areas": [
+              {
+                "title": "Layers",
+                "slug": "layers/types"
+              }
+            ],
+            "text": "Groups, clipping layers, layer masks, blend modes, editable color and gradient fills, and selection layers."
+          },
+          {
+            "areas": [
+              {
+                "title": "Selections",
+                "slug": "selections/tools"
+              }
+            ],
+            "text": "Rectangle, ellipse, lasso, polygon, contiguous color and tonal range; Quick Mask, feathering and saved selections."
+          },
+          {
+            "areas": [
+              {
+                "title": "Effects",
+                "slug": "filters/how-filters-apply"
+              }
+            ],
+            "text": "Linked non-destructive effect chains, adjustment layers and effect masks; Curves, Levels, color grading, blur, sharpening, halftone and painterly effects."
+          },
+          {
+            "areas": [
+              {
+                "title": "Retouching",
+                "slug": "retouch/clone-heal"
+              }
+            ],
+            "text": "Clone Stamp, Healing and Spot Healing, dodge and burn, blending and liquify."
+          },
+          {
+            "areas": [
+              {
+                "title": "Color",
+                "slug": "color-management/color-spaces"
+              }
+            ],
+            "text": "sRGB, Display P3, Adobe RGB and ProPhoto RGB; ICC profiles, 8/16-bit SDR, 16/32-bit float HDR, print proofing and gamut warnings."
+          },
+          {
+            "areas": [
+              {
+                "title": "Drawing",
+                "slug": "drawing/fill"
+              },
+              {
+                "title": "transforms",
+                "slug": "transform/move-transform"
+              }
+            ],
+            "text": "Reference-layer fills, Enclose and Fill, gradients, rulers, crop, resize, perspective and mesh warp."
+          },
+          {
+            "areas": [
+              {
+                "title": "Workspace",
+                "slug": "customize/workspaces"
+              }
+            ],
+            "text": "Docked or floating panels, tab groups, configurable toolbars and shortcuts, saved layouts and Zen mode."
+          }
+        ]
       }
     }
   },

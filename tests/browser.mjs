@@ -60,9 +60,13 @@ try {
     }
     if(page==='download') check(await b.evaluate("[...document.querySelectorAll('.pick .button,.platform .button')].filter(button=>button.getClientRects().length).every(button=>{const s=getComputedStyle(button),icon=button.querySelector('svg'),start=parseFloat(s.paddingInlineStart),end=parseFloat(s.paddingInlineEnd);return icon?end-start===8&&parseFloat(s.gap)===8:start===end})"),'Download icons use a smaller leading inset without changing label gaps or text-only buttons');
     if(page==='documentation') {
-      check(new RegExp(`/assets/guides/(${locale}|shared)/illustration-${theme}\\.webp$`).test(metrics.overviewSource),`Overview image theme and language ${label}`);
-      check(Math.abs(metrics.overviewRatio-16/9)<.01,`Overview image aspect ratio ${label}`);
-      check(metrics.overviewLink===metrics.overviewSource,`Overview full-size image ${label}`);
+      if (locale === 'en') {
+        check(await b.evaluate(`!document.querySelector('.docs-overview-image') && [...document.querySelectorAll('.docs-stories img')].length === 3 && [...document.querySelectorAll('.docs-stories img')].every(image => { const box=image.getBoundingClientRect(); return image.currentSrc.endsWith('-${theme}.webp') && Math.abs(box.width/box.height-16/9)<.01; })`), `English workspace stories and image proportions ${label}`);
+      } else {
+        check(new RegExp(`/assets/guides/(${locale}|shared)/illustration-${theme}\\.webp$`).test(metrics.overviewSource),`Overview image theme and language ${label}`);
+        check(Math.abs(metrics.overviewRatio-16/9)<.01,`Overview image aspect ratio ${label}`);
+        check(metrics.overviewLink===metrics.overviewSource,`Overview full-size image ${label}`);
+      }
     }
     if((width===1440&&locale==='en')||(width===390&&(locale==='en'||theme==='dark'))) await b.screenshot(`artifacts/review/${name.replace('/','-')}${width}-${theme}-${locale}-${page}.png`,true);
     report.push(label);

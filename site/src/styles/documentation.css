@@ -32,6 +32,30 @@ html[data-page="documentation"] .nav-inner { max-width: 1320px; }
 .docs-concepts a:hover, .docs-start-links a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .docs-concepts svg, .docs-start-links svg { width: 14px; height: 14px; flex-shrink: 0; }
 .docs-start-links { display: flex; flex-wrap: wrap; gap: 12px 24px; list-style: none; margin: 16px 0 24px; padding: 0; }
+.docs-stories { display: block; max-width: 880px; container-type: inline-size; }
+.docs-stories section + section { margin-top: 72px; }
+.docs-stories h2 { max-width: 760px; margin: 28px auto 20px; font-size: 28px; line-height: 1.2; letter-spacing: -.5px; }
+.docs-stories p { color: var(--ink); font-size: 16px; line-height: 1.8; margin-bottom: 18px; }
+.docs-stories .guide-image-link { display: block; }
+.docs-stories .guide-figure { margin: 0; }
+.docs-story-text { max-width: 760px; margin: auto; }
+.docs-story-text > p:first-child { font-style: italic; font-size: 17px; }
+.docs-story-summary { display: grid; grid-template-columns: 1.15fr 1fr; align-items: start; gap: 48px; margin-top: 32px; }
+.docs-story-summary blockquote { margin: 0; padding-left: 18px; border-left: 3px solid var(--accent); }
+.docs-story-summary blockquote p { margin: 0; font-size: 17px; line-height: 1.7; }
+.docs-story-links { display: grid; gap: 0; list-style: none; margin: -8px 0 0; padding: 0; }
+.docs-story-links a { display: inline-flex; gap: 10px; min-height: 42px; padding: 8px 0; color: color-mix(in srgb, var(--accent) 75%, var(--ink)); font-size: 16px; }
+.docs-story-links a span { text-decoration: underline; text-decoration-color: color-mix(in srgb, currentColor 45%, transparent); text-underline-offset: 4px; }
+.docs-story-links a:hover { color: var(--ink); text-decoration: none; }
+.docs-story-links a:hover span { text-decoration-color: currentColor; }
+@container (max-width: 620px) {
+  .docs-stories h2 { margin: 24px 0 18px; font-size: 26px; }
+  .docs-story-summary { grid-template-columns: 1fr; gap: 24px; margin-top: 28px; }
+  .docs-story-summary nav { padding-left: 21px; }
+  .docs-stories section + section { margin-top: 56px; }
+}
+.docs-features { max-width: 880px; }
+.docs-features td:first-child { min-width: 100px; }
 .docs-back { display: inline-block; color: var(--muted); font-size: 12px; margin-bottom: 24px; }
 .docs-back:hover { color: var(--accent); }
 .guide-figure { margin: 28px 0 36px; }

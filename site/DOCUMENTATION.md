@@ -42,8 +42,12 @@ its former path to `docRedirects`; the build writes a redirect page for it under
 `/docs/` and the older `/documentation/` prefix in every language.
 
 The overview (`components/Documentation.astro`, copy in `src/data/docs-ui.mjs`)
-introduces the app in six short sections and links to the pages that cover them.
-Keep its framework and length; update links and facts when features change.
+uses the author's Sketch, Paint and Photo stories on the English page. Each
+section opens with its workspace screenshot, followed by the title and story.
+The closing statement and guide links sit side by side when space allows and
+stack on narrow screens. The Tools table from the README follows. Its
+personal voice follows the app README; the lookup rules in WRITING.md apply to
+manual pages. The translated overviews retain their six-section layout.
 
 ## Pages
 
