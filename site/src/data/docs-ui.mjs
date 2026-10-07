@@ -50,7 +50,7 @@ export const docsUI = {
       "sections": {
         "sketch": {
           "title": "Sketch",
-          "text": "My first foray into the digital art world (like many others) was with Procreate over a decade ago. Back when the apple pencil first came out, it was magic. Even though the processor was slow by today's standards, it was so heavily optimized that it gave a real pen-to-paper feeling.\n\nThis was the first time a drawing app was ever fully optimized for a mobile device, using predictive pen tracking and GPU powered brush+rendering engines. Then they dropped a clean and minimalist UI on top of it, which has become ubiquitious for all modern drawing apps.\n\nThe Sketch workspace is a tribute to our roots. The place where everyone starts out.",
+          "text": "My first foray into the digital art world (like many others) was with Procreate over a decade ago. Back when the apple pencil first came out, it was magic. Even though the hardware was slow by today's standards, it was so well done that it gave a real pen-to-paper feeling.\n\nThis was the first time a drawing app was ever fully optimized for a mobile device, using predictive pen tracking and GPU powered brush+rendering engines. Then they dropped a clean and minimalist UI on top of it, which has become ubiquitious for all modern drawing apps.\n\nThe Sketch workspace is a tribute to our roots. The place where everyone starts out.",
           "image": {
             "shot": "showcase/sketch",
             "alt": "An ink drawing of a train beneath a large tree in Sketch, with the drawing filling the screen and tools at the edges."
@@ -98,7 +98,7 @@ export const docsUI = {
         },
         "photo": {
           "title": "Photo",
-          "text": "Mobile devices are becoming more capable every day. It seems like OLED screens are everywhere, and my old phone saves its images in P3 HDR format by default. SRGB is a thing of the past.\n\nTo this date, the only painting app that properly supports wide gamut HDR is Krita. But I feel the experience is still a bit lacking. And when you export HDR and wide-gamut images online, you need control over the gain mapping, so that it still looks good on SDR devices. Of course you also need the basics (proofing, effect chains, the whole enchilada)\n\nThe Photo workspace enables stunning visuals for a new generation of wide-gamut screens.",
+          "text": "Mobile devices are becoming more capable every day. It seems like OLED screens are everywhere, and my old phone saves its images in P3 HDR format by default. SRGB is a thing of the past.\n\nTo this date, the only painting app that properly supports wide gamut HDR is Krita. HDR is a complicated beast and is hard to get right. When you publish HDR and wide-gamut images online, you need control over the gain mapping, so that it still looks good on SDR devices. Of course you also need the basics (proofing, effect chains, the whole enchilada)\n\nThe Photo workspace enables stunning visuals for a new generation of wide-gamut screens.",
           "image": {
             "shot": "showcase/photo",
             "alt": "A terrarium photograph in Photo, with the Tonal range selection tool and Curves and Vibrance adjustment layers."
