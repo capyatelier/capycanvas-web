@@ -53,6 +53,23 @@ export const pwaContent = brandTranslations({
       generic: { step: '电脑或 Android 请使用 Chrome，iPhone/iPad 请使用 Safari。在浏览器中选择“安装”或“添加到主屏幕”。', note: '' }
     }
   },
+  'zh-Hant': {
+    title: '安裝網頁應用程式', intro: '{appName} 網頁版可安裝到裝置上，供離線使用。',
+    os: '作業系統', browser: '瀏覽器', open: '開啟網頁應用程式。',
+    systems: { windows: 'Windows', macos: 'macOS', linux: 'Linux', chromeos: 'ChromeOS', android: 'Android', ios: 'iOS/iPadOS', other: '其他系統' },
+    browsers: { chrome: 'Chrome', edge: 'Edge', firefox: 'Firefox', safari: 'Safari', other: '其他瀏覽器' },
+    fallback: { chrome: '請在此裝置上使用 Chrome 安裝。', safari: '請在此裝置上使用 Safari 安裝。' },
+    guides: {
+      desktop: { step: '按一下網址列中的安裝圖示，再選擇「安裝」。', note: '' },
+      android: { step: '選單（⋮）→「安裝並建立捷徑」→「安裝」。', note: '' },
+      safari: { step: '「分享」→「加入主畫面」→「加入」。如有「打開為網頁 App」選項，請將其開啟。', note: '' },
+      chromeIos: { step: '「分享」→「加入主畫面」→「新增」。', note: '' },
+      mac: { step: '「檔案」→「加入 Dock 中」→「加入」。', note: '需要 macOS 14 或更新版本。舊版本請使用 Chrome。' },
+      firefoxWindows: { step: '按一下網址列中的網頁應用程式按鈕進行安裝。', note: '如果沒有此按鈕，請更新 Firefox 或使用 Chrome。' },
+      firefoxAndroid: { step: '選單（⋮）→「安裝」→「新增至主畫面」。', note: '' },
+      generic: { step: '電腦或 Android 請使用 Chrome，iPhone/iPad 請使用 Safari。在瀏覽器中選擇「安裝」或「加入主畫面」。', note: '' }
+    }
+  },
   ko: {
     title: '웹 앱 설치하기', intro: '{appName} 웹 버전을 설치해 오프라인으로 사용할 수 있습니다.',
     os: '운영체제', browser: '브라우저', open: '웹 앱을 엽니다.',

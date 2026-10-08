@@ -12,6 +12,10 @@ export const homeContent = brandTranslations({
     metaTitle: '{appName} — 免费数字绘画与照片编辑',
     meta: '适用于 Linux、Windows、macOS、iPad、Android 和网页的免费开源绘画与照片编辑应用。使用画笔和图层创作，支持离线使用。',
   },
+  'zh-Hant': {
+    metaTitle: '{appName} — 免費數位繪畫與照片編輯',
+    meta: '適用於 Linux、Windows、macOS、iPad、Android 和網頁的免費開源繪畫與照片編輯應用程式。使用筆刷和圖層創作，支援離線使用。',
+  },
   ko: {
     metaTitle: '{appName} — 무료 디지털 페인팅과 사진 편집',
     meta: 'Linux, Windows, macOS, iPad, Android와 웹에서 사용하는 무료 오픈 소스 페인팅 및 사진 편집 앱. 브러시와 레이어로 그리고 오프라인에서도 작업하세요.',
@@ -59,7 +63,7 @@ export const homeContent = brandTranslations({
 });
 
 export const languageSuggestions = {
-  en: 'Read in English', ja: '日本語で読む', zh: '用简体中文阅读', ko: '한국어로 읽기',
+  en: 'Read in English', ja: '日本語で読む', zh: '用简体中文阅读', 'zh-Hant': '以繁體中文閱讀', ko: '한국어로 읽기',
   es: 'Leer en español', 'pt-BR': 'Ler em português', id: 'Baca dalam bahasa Indonesia',
   fr: 'Lire en français', de: 'Auf Deutsch lesen', ru: 'Читать на русском',
   th: 'อ่านเป็นภาษาไทย', vi: 'Đọc bằng tiếng Việt', tr: 'Türkçe oku', it: 'Leggi in italiano',

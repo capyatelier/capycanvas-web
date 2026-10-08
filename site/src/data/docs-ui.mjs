@@ -385,6 +385,93 @@ export const docsUI = brandTranslations({
       }
     }
   },
+  "zh-Hant": {
+    "intro": "{appName}是一款免費、開源的速寫、繪畫與照片編輯應用程式。它的靈感來自水豚的禪意。",
+    "overview": "概覽",
+    "contents": "文件目錄",
+    "onPage": "本頁內容",
+    "groups": {
+      "start": "開始使用",
+      "files": "檔案",
+      "drawing": "繪畫工具",
+      "brushes": "筆刷設定",
+      "color": "色彩",
+      "layers": "圖層",
+      "filters": "濾鏡",
+      "selections": "選取範圍",
+      "transform": "變形和影像",
+      "retouch": "修飾",
+      "colorManagement": "色彩管理",
+      "customize": "自訂",
+      "input": "輸入",
+      "illustration": "插畫教學",
+      "photo": "照片編輯教學"
+    },
+    "startTitle": "開始使用",
+    "figureSoon": "圖片待補充",
+    "related": "另請參閱",
+    "previous": "上一篇",
+    "next": "下一篇",
+    "platform": "平台",
+    "allPlatforms": "所有平台",
+    "platformTitle": "裝置使用提示",
+    "platformIntro": "選擇你的裝置，檢視適用於它的幾條提示。",
+    "systems": {
+      "windows": "Windows",
+      "mac": "macOS",
+      "linux": "Linux",
+      "ipad": "iOS / iPadOS",
+      "android": "Android"
+    },
+    "platformNotes": {
+      "windows": "{appName}使用Windows Ink處理筆輸入。在Windows上，「繪圖筆按鈕」中只列出一個側按鈕，即「下側按鈕」。",
+      "mac": "如果筆的落點不對，請在數位板設定中檢查它對映到了哪個螢幕。本指南中寫作Ctrl的地方請使用Command，寫作Alt的地方請使用Option。",
+      "linux": "Linux 版應用程式需要Wayland 工作階段和支援Vulkan的顯示卡。如果筆壓不起作用或游標位置不對，請檢查桌面環境中的數位板設定。",
+      "ipad": "大多數Apple Pencil都支援筆壓和傾斜，但Apple Pencil（USB-C）不支援筆壓。手指和手掌不會畫出筆畫。",
+      "android": "請使用支援筆壓的筆。橡膠頭觸控筆會被當作手指，而手指不會畫出筆畫。"
+    },
+    "imageOpen": "開啟原始大小截圖",
+    "landing": {
+      "alt": "Paint工作區中的藍綠色帶狀形、土黃色圓形和陶土色四邊形，帶有質感與陰影。",
+      "sections": {
+        "painting": {
+          "title": "繪畫",
+          "text": "藉助GPU驅動的筆刷引擎，我們能夠模擬顏料與實體繪畫介質之間的相互作用。水彩會滲入紙張纖維，油畫筆刷會拾取並攜帶色彩，鉛筆則會表現出紙紋。",
+          "link": "筆刷工具"
+        },
+        "workspace": {
+          "title": "你的工作區",
+          "text": "{appName}為速寫、繪畫與照片編輯準備了熟悉的版面配置，每個工具和面板都可以按你的喜好移動。如果你只想要一張空白畫布，不受任何干擾，點選水豚就能進入Zen模式！",
+          "link": "工作區"
+        },
+        "input": {
+          "title": "筆、觸控與滑鼠",
+          "text": "介面從一開始就為筆和觸控操作而設計，包括Wacom、XP-Pen和Huion的繪圖板，以及iPad和Galaxy平板。畫布以完整的120 Hz執行，減少筆輸入延遲。如果你更喜歡用滑鼠，也完全可以。",
+          "link": "筆"
+        },
+        "color": {
+          "title": "選擇色彩",
+          "text": "色輪使用OKLCH，它以人類對色彩的感知為基礎。色票盤讓喜歡的色彩隨手可用；面向攝影師，還支援廣色域、16位、HDR和列印打樣。",
+          "link": "色彩面板"
+        },
+        "photo": {
+          "title": "編輯照片",
+          "text": "直接開啟相機或手機拍攝的照片，進行裁切和修飾，再用隨時可以重新調整的濾鏡處理任意區域。",
+          "link": "照片編輯教學"
+        },
+        "native": {
+          "title": "桌面與平板",
+          "text": "{appName}已推出適用於Linux、Windows、macOS、Android和iPadOS的測試版。這些都是經過編譯的原生應用程式，並使用平台原生UI工具包。這意味著每臺裝置都能獲得更好的效能和電池續航。",
+          "link": "系統架構"
+        }
+      },
+      "start": "{appName}可以完全在網頁瀏覽器中執行，也能離線使用。這是一種快速、輕鬆的入門方式。目前處於測試階段的桌面版和平板版應用程式可提供最佳效能和硬體相容性。",
+      "links": {
+        "quickstart": "快速入門",
+        "illustration": "插畫教學"
+      }
+    }
+  },
   "ko": {
     "intro": "{appName}는 스케치, 페인팅, 사진 편집을 위한 무료 오픈 소스 앱입니다. 카피바라의 선(禪) 같은 평온함에서 영감을 받았습니다.",
     "overview": "개요",

@@ -106,7 +106,8 @@ menu or dialog the section describes. See
 
 Translations use the app's own interface labels for that language, word for word:
 look up the English label in the app's `assets/locales/en/*.ftl` and use the same
-message in `assets/locales/<locale>/` (the site's `zh` is the app's `zh-Hans`).
+message in `assets/locales/<locale>/` (the site's `zh` is the app's `zh-Hans`,
+and `zh-Hant` uses the app's Traditional Chinese catalog).
 A label the app doesn't translate stays in English. Keep keys, file names, `shot:`
 references and the example files' layer names unchanged, and prefix internal links
 with the locale (`/ja/docs/layers/masks/`). Tests check that each translation has

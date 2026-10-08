@@ -3,7 +3,7 @@ import { brandTranslations } from './branding.mjs';
 import { pwaContent } from './pwa-content.mjs';
 import { additionalContent } from './additional-content.mjs';
 export const languages = {
-  en: 'English', ja: '日本語', zh: '简体中文', ko: '한국어',
+  en: 'English', ja: '日本語', zh: '简体中文', 'zh-Hant': '繁體中文', ko: '한국어',
   es: 'Español', 'pt-BR': 'Português (Brasil)', id: 'Bahasa Indonesia',
   fr: 'Français', de: 'Deutsch', ru: 'Русский', th: 'ไทย',
   vi: 'Tiếng Việt', tr: 'Türkçe', it: 'Italiano',
@@ -167,6 +167,59 @@ export const content = brandTranslations({
     },
     privacy: { title: '隐私政策', effectiveDate: '生效日期', meta: '{appName} 如何处理应用数据、网站托管、诊断信息和支持请求。' },
     notFound: { title: '页面不存在', text: '找不到所请求的页面。', action: '首页' }
+  },
+  'zh-Hant': {
+    footer: { madeBy: '由 Capy Atelier 製作' },
+    lang: 'zh-Hant', locale: 'zh_TW', name: '繁體中文',
+    nav: { privacy: '隱私權', webDemo: '網頁示範', download: '下載', documentation: '文件', home: '首頁', language: '語言', main: '主導航', skip: '跳至主要內容', github: 'GitHub 上的 {appName}' },
+    home: {
+      title: '{appName}',
+      description: '{appName}是一款跨平台應用程式，配備強大的 GPU 加速繪畫引擎，適用於速寫、插畫和攝影。',
+      workspaces: '工作區',
+      slides: {
+        sketch: 'Sketch工作區中的一幅鋼筆畫：大樹下的一節電車。畫面鋪滿整個螢幕，少量工具位於螢幕邊緣。',
+        paint: 'Paint工作區中的一幅油畫：日落時分海邊的房子，畫布旁邊是筆刷、色彩和圖層。',
+        photo: 'Photo工作區中的一張小型生態缸照片，顯示按亮度選擇區域的Tonal range工具，以及Curves和Vibrance調整圖層。'
+      },
+      meta: '{appName}是一款跨平台應用程式，配備強大的 GPU 加速繪畫引擎，適用於速寫、插畫和攝影。'
+    },
+    download: {
+      title: '下載', intro: '{appName} 目前處於測試階段，可能會有一些小問題，歡迎{feedback}。', feedback: '在 GitHub 上回饋意見',
+      status: '即將推出', platforms: ['iPadOS', 'Android', 'Linux', 'Windows', 'macOS'], otherPlatforms: '其他平台', joinBeta: '加入測試', downloadFor: '下載 {version} · {platform}', openWebApp: '開啟網頁應用程式',
+      pwa: pwaContent['zh-Hant'],
+      variants: { apk: 'APK', flatpak: 'Flatpak', x64: 'x64', arm64: 'Arm64', appleSilicon: 'Apple 晶片' },
+      pastVersions: '歷史版本', allReleases: 'GitHub 上的釋出頁面',
+      notesLanguage: '釋出說明為英文。',
+      metaReleased: '下載 {appName}，或將其安裝為網頁應用程式以便離線使用。',
+      meta: '安裝 {appName} 網頁應用程式，即可離線使用。原生版本即將推出。'
+    },
+    versions: {
+      title: '歷史版本', intro: '如果更新後遇到問題，可以換回之前的版本。',
+      empty: '目前還沒有釋出任何版本。',
+      version: '版本 {version}', released: '釋出於 {date}', latest: '最新', files: '檔案', github: 'GitHub 上的所有檔案',
+      meta: '{appName} 已釋出的所有版本，附釋出說明和下載連結。'
+    },
+    ipadBeta: {
+      title: 'iPad 測試版',
+      intro: '在新版本登陸 App Store 之前，先在 iPad 上試用 {appName}。',
+      steps: ['從 App Store 安裝 Apple 的 TestFlight 應用程式。', '在 iPad 上開啟{invitation}。', '接受邀請，然後安裝 {appName}。'],
+      links: { invitation: '{appName} 測試版邀請連結' },
+      meta: '如何透過 TestFlight 在 iPad 上安裝 {appName} 測試版。'
+    },
+    androidBeta: {
+      title: 'Android 平板測試版',
+      intro: '在新版本正式釋出之前，先在 Android 平板上試用 {appName}。',
+      note: '請登入你在平板上使用的 Google 帳號。',
+      steps: ['加入{group}。', '開啟{test}並接受邀請。', '在平板上從 Google Play 安裝 {appName}。'],
+      links: { group: '{appName} 測試版群組', test: 'Google Play 測試版頁面' },
+      meta: '如何從 Google Play 在 Android 平板上安裝 {appName} 測試版。'
+    },
+    documentation: {
+      title: '文件',
+      meta: '{appName}文件：工作區、筆刷、色彩、圖層、濾鏡、選取範圍、照片編輯，以及插畫與照片教學。'
+    },
+    privacy: { title: '隱私權政策', effectiveDate: '生效日期', meta: '{appName} 如何處理應用程式資料、網站託管、診斷資訊和支援請求。' },
+    notFound: { title: '頁面不存在', text: '找不到所請求的頁面。', action: '首頁' }
   },
   ko: {
     footer: { madeBy: 'Capy Atelier 제작' },

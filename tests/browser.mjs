@@ -110,7 +110,10 @@ try {
   check(await b.evaluate("(()=>{const shot=document.querySelector('.showcase').getBoundingClientRect(),dots=document.querySelector('.showcase-switcher').getBoundingClientRect();return dots.top>=shot.top&&dots.bottom<=shot.bottom&&dots.width<shot.width*.6})()"),'The slide indicator sits inside the screenshot');
   // Preference detection and regional language tags, including unsupported-first lists.
   for(const [langs,expected] of [
-    [['ja-JP'],'ja'], [['zh-TW'],'zh'], [['ko-KR'],'ko'],
+    [['ja-JP'],'ja'], [['zh-TW'],'zh-Hant'], [['zh-HK'],'zh-Hant'], [['zh-MO'],'zh-Hant'],
+    [['zh-Hant'],'zh-Hant'], [['zh-Hant-TW'],'zh-Hant'], [['zh-Hant-CN'],'zh-Hant'], [['zh_hant_hk'],'zh-Hant'],
+    [['zh-Hans'],'zh'], [['zh-Hans-TW'],'zh'], [['zh-CN'],'zh'], [['zh-SG'],'zh'], [['zh'],'zh'],
+    [['zh-Latn','zh-Hant'],'zh-Hant'], [['zh-Latn','ja-JP'],'ja'], [['ko-KR'],'ko'],
     [['es-MX'],'es'], [['pt-BR'],'pt-BR'], [['pt-br'],'pt-BR'], [['pt_PT'],'pt-BR'], [['pt'],'pt-BR'],
     [['id-ID'],'id'], [['fr-CA'],'fr'], [['de-DE'],'de'], [['ru-RU'],'ru'],
     [['th-TH'],'th'], [['vi-VN'],'vi'], [['tr-TR'],'tr'], [['it-IT'],'it'],

@@ -90,6 +90,9 @@ export async function checkDocumentation(b, host, check) {
   await b.evaluate("document.querySelector('.language-menu').open = true; document.querySelector('[data-language=zh]').click()");
   await b.until("location.pathname === '/zh/docs/illustration/mask/' && document.readyState === 'complete'");
   check(await b.evaluate("localStorage.getItem('capycanvas.language') === 'zh'"), 'Manual guide translation persists');
+  await b.evaluate("document.querySelector('.language-menu').open = true; document.querySelector('[data-language=\"zh-Hant\"]').click()");
+  await b.until("location.pathname === '/zh-Hant/docs/illustration/mask/' && document.readyState === 'complete'");
+  check(await b.evaluate("document.documentElement.lang === 'zh-Hant' && localStorage.getItem('capycanvas.language') === 'zh-Hant' && document.querySelector('.guide-image-link').dataset.light.includes('/zh-Hant/')"), 'Traditional Chinese keeps the nested guide, remembers the choice and shows its own editor captures');
   await b.evaluate("document.querySelector('[data-language=en]').click()");
   await b.until("location.pathname === '/docs/illustration/mask/' && document.readyState === 'complete'");
   check(await b.evaluate("location.search === '?lang=en' && document.documentElement.lang === 'en'"), 'Explicit English guide overrides detected language');

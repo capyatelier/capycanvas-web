@@ -16,6 +16,13 @@ const languageUrls = Object.fromEntries(locales.map(code => [code, route(code, p
     const detected = (navigator.languages?.length ? navigator.languages : [navigator.language])
       .map(value => {
         const tag = value.toLowerCase().replaceAll('_', '-');
+        if (tag.split('-')[0] === 'zh') {
+          try {
+            const { script, region } = new Intl.Locale(tag);
+            if (script && !['Hans', 'Hant'].includes(script)) return;
+            return script === 'Hant' || (!script && ['TW', 'HK', 'MO'].includes(region)) ? 'zh-Hant' : 'zh';
+          } catch { return; }
+        }
         return supported.find(code => code.toLowerCase() === tag)
           || supported.find(code => code.toLowerCase().split('-')[0] === tag.split('-')[0]);
       })

@@ -16,6 +16,7 @@
   font-family: 'Adwaita Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', 'Noto Sans CJK JP', 'Noto Sans CJK SC', 'Noto Sans CJK KR', sans-serif;
   font-synthesis: none; -webkit-font-smoothing: antialiased;
 }
+:root:lang(zh-Hant) { font-family: 'Adwaita Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', 'Noto Sans CJK TC', 'PingFang TC', 'Microsoft JhengHei UI', sans-serif; }
 @media (prefers-color-scheme: dark) {
   :root { --bg: #333333; --surface: #414141; --raised: #414141; --field: #414141; --ink: #fafafb; --muted: #b9b9bf; --accent: #3584e4; --primary: #2871c8; --accent-hover: #2468bd; --selected: #40546e; --header-selection: #40546e; }
 }
@@ -131,7 +132,7 @@ h1 { font-size: 28px; font-weight: 700; line-height: 1.3; letter-spacing: -.6px;
 .pwa .pwa-note { font-size: 13px; margin-bottom: 12px; }
 .pwa [hidden] { display: none; }
 .error-code { color: var(--muted); font-size: 13px; }
-:lang(ja), :lang(zh-Hans), :lang(ko) { letter-spacing: normal; }
+:lang(ja), :lang(zh-Hans), :lang(zh-Hant), :lang(ko) { letter-spacing: normal; }
 :lang(ko) { word-break: keep-all; overflow-wrap: anywhere; }
 @media (max-width: 800px) {
   .nav-inner { flex-wrap: wrap; gap: 4px 14px; padding-top: 12px; padding-bottom: 8px; }

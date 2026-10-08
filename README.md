@@ -41,7 +41,7 @@ This is a plain Astro static site with the existing Capy Canvas theme.
 - `site/src/pages/`: static page routes, 404, robots.txt, and sitemap.
 - `site/src/layouts/SiteLayout.astro`: shared document, metadata, and header.
 - `site/src/components/`: header, language controls, and page components.
-- `site/src/data/`: translations and installation instructions for all fourteen languages.
+- `site/src/data/`: translations and installation instructions for all fifteen languages.
 - `site/src/content/guides/`: one Markdown manual page per topic and language.
 - `site/src/content/policies/`: the privacy policy in every language with a shared effective date.
 - `site/src/content.config.ts`: typed Astro content collection schema.
@@ -70,6 +70,7 @@ English-first editing, screenshots, and custom interactive components.
 | English | `en` | `/` |
 | 日本語 | `ja` | `/ja/` |
 | 简体中文 | `zh` | `/zh/` |
+| 繁體中文 | `zh-Hant` | `/zh-Hant/` |
 | 한국어 | `ko` | `/ko/` |
 | Español | `es` | `/es/` |
 | Português (Brasil) | `pt-BR` | `/pt-BR/` |
@@ -104,8 +105,12 @@ Unprefixed entry pages suggest a translation from `navigator.languages`, trying
 supported choices in preference order, without automatically redirecting.
 Regional tags map to the corresponding translation;
 Portuguese tags (including `pt`, `pt-PT`, and `pt-BR`) select Brazilian Portuguese.
-Unsupported languages fall back to English. Chinese is Simplified Chinese, including when
-selected for other Chinese regional preferences. The language menu remembers
+Unsupported languages fall back to English. Chinese script preferences select
+Simplified (`zh-Hans`) or Traditional (`zh-Hant`) Chinese. Without an explicit
+script, Taiwan, Hong Kong and Macau preferences select Traditional Chinese;
+other Chinese preferences select Simplified Chinese. An explicit script takes
+priority over the region, so `zh-Hans-TW` still selects Simplified Chinese.
+The language menu remembers
 an explicit choice in local storage and preserves the current page. An explicit
 translated URL takes priority over detection or a saved preference. `?lang=en`
 forces English even when storage is unavailable. Without JavaScript all pages,
@@ -140,10 +145,10 @@ canonical and alternate links, and a sitemap entry.
 ## Localized app names
 
 `site/src/data/branding.mjs` defines the approved names: カピカン for Japanese,
-水豚画布 for Simplified Chinese, 카피 캔버스 for Korean, Капи Канвас for Russian,
-คาปิ แคนวาส for Thai, and Capy Canvas for the other site languages. The map also
-reserves 水豚畫布 for a future Traditional Chinese translation; the current `zh`
-route remains Simplified Chinese.
+水豚画布 for Simplified Chinese, 水豚畫布 for Traditional Chinese,
+카피 캔버스 for Korean, Капи Канвас for Russian, คาปิ แคนวาส for Thai,
+and Capy Canvas for the other site languages. The `zh` route remains
+Simplified Chinese; Traditional Chinese uses `zh-Hant`.
 
 Write `{appName}` wherever the app is named in translation data, Markdown,
 frontmatter, image descriptions or captions. Translate the surrounding words,

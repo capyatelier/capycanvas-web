@@ -83,7 +83,7 @@ const example = async name => {
 };
 
 const glyphCheck = `(()=>{
-  const scripts={ja:/[\\u3040-\\u30ff\\u4e00-\\u9fff]/u,'zh-Hans':/[\\u4e00-\\u9fff]/u,ko:/[\\uac00-\\ud7af]/u,th:/[\\u0e00-\\u0e7f]/u};
+  const scripts={ja:/[\\u3040-\\u30ff\\u4e00-\\u9fff]/u,'zh-Hans':/[\\u4e00-\\u9fff]/u,'zh-Hant':/[\\u4e00-\\u9fff]/u,ko:/[\\uac00-\\ud7af]/u,th:/[\\u0e00-\\u0e7f]/u};
   const pattern=scripts[document.documentElement.lang];if(!pattern)return [];
   const chars=[...new Set([...document.body.innerText].filter(c=>pattern.test(c)))].slice(0,60);
   if(chars.length<5)return ['too few characters'];
