@@ -176,7 +176,11 @@ The iPad and Android rows always show **Join the beta**, which opens a short sig
 page: `/download/ipad-beta/` (install TestFlight from its App Store button, open the invitation, install) and
 `/download/android-beta/` (join the Google Group, accept the Google Play test, install,
 all with the tablet's Google account). The TestFlight, Google Group and Google Play test links are `betaLinks`
-in `site/src/lib/site.ts`; the Google Group is what puts testers on the Play test's list.
+in `site/src/lib/site.ts`. Play Console's closed testing track (`alpha`) must list
+`capycanvas-beta@googlegroups.com` under Google Groups and have a rolled-out release.
+The website uses that closed test's package-based opt-in URL; group members must
+accept the test with the same account they use in Google Play. Internal testing
+uses a separate invitation and tester list.
 
 Controls follow the editor's style: the 18px surface and 12px control radii become
 squircles where the browser supports `corner-shape`, menus keep round 10px corners,

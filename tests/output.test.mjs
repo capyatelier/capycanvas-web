@@ -105,7 +105,7 @@ for(const locale of Object.keys(languages)) {
     }
     if(page==='ipadBeta'||page==='androidBeta') {
       const t=content[locale][page];
-      const links={ipadBeta:{invitation:'https://testflight.apple.com/join/VBcE4Z8r'},androidBeta:{group:'https://groups.google.com/g/capycanvas-beta',test:'https://play.google.com/apps/internaltest/4701362132766426867'}}[page];
+      const links={ipadBeta:{invitation:'https://testflight.apple.com/join/VBcE4Z8r'},androidBeta:{group:'https://groups.google.com/g/capycanvas-beta',test:'https://play.google.com/apps/testing/art.capycanvas.editor'}}[page];
       const steps=[...html.matchAll(/<li(?: [^>]*)?>([\s\S]*?)<\/li>/g)].map(([,step])=>step.trim());
       if(page==='ipadBeta') {
         assert.match(steps[0],new RegExp(`<a class="store" href="https://apps\\.apple\\.com/app/testflight/id899247664"[^>]*><img src="/assets/badges/app-store-${locale}\\.svg" alt="App Store" height="40"[^>]*></a>$`));

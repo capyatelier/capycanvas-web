@@ -13,7 +13,7 @@ export const betaPages: Partial<Record<Platform, 'ipadBeta' | 'androidBeta'>> = 
 export const testFlightAppUrl = 'https://apps.apple.com/app/testflight/id899247664';
 export const betaLinks = {
   ipadBeta: { invitation: 'https://testflight.apple.com/join/VBcE4Z8r' },
-  androidBeta: { group: 'https://groups.google.com/g/capycanvas-beta', test: 'https://play.google.com/apps/internaltest/4701362132766426867' },
+  androidBeta: { group: 'https://groups.google.com/g/capycanvas-beta', test: 'https://play.google.com/apps/testing/art.capycanvas.editor' },
 };
 export const origin = 'https://capycanvas.art';
 export const appUrl = 'https://editor.capycanvas.art/';
