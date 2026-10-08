@@ -1,6 +1,6 @@
 ---
 title: "Kopieren und Einfügen"
-description: "Pixel kopieren und als neue Ebenen einfügen, innerhalb von Capy Canvas und zwischen Apps."
+description: "Pixel kopieren und als neue Ebenen einfügen, innerhalb von {appName} und zwischen Apps."
 related: ["selections/working", "transform/move-transform", "layers/working", "files/open-save"]
 ---
 
@@ -51,7 +51,7 @@ Eine große Kopie zeigt einen Fortschrittshinweis mit **Abbrechen**.
 
 Fügt den Inhalt der Zwischenablage als neue aktive Ebene hinzu.
 
-- Eine Kopie aus Capy Canvas landet dort, wo sie kopiert wurde, wenn diese Stelle in der Ansicht sichtbar ist, andernfalls in der Mitte der Ansicht.
+- Eine Kopie aus {appName} landet dort, wo sie kopiert wurde, wenn diese Stelle in der Ansicht sichtbar ist, andernfalls in der Mitte der Ansicht.
 - Ein Bild aus einer anderen App öffnet sich im Transformationsrahmen. **Anwenden** platziert das Bild, **Abbrechen** verwirft das Einfügen (siehe [Verschieben und Transformieren](/de/docs/transform/move-transform/)).
 
 ## An gleicher Stelle einfügen
@@ -68,8 +68,8 @@ danach entfernt. **In Auswahl einfügen** setzt eine Auswahl voraus.
 
 ## Einfügen zwischen Apps
 
-Andere Apps erhalten eine Kopie aus Capy Canvas als 8-Bit-sRGB-PNG-Bild. Beim
-Einfügen zurück in Capy Canvas wird die Kopie in voller Farbtiefe verwendet,
+Andere Apps erhalten eine Kopie aus {appName} als 8-Bit-sRGB-PNG-Bild. Beim
+Einfügen zurück in {appName} wird die Kopie in voller Farbtiefe verwendet,
 solange sie noch in der Zwischenablage liegt.
 
 Eine Kopie, die in eine Zeichnung mit anderen Farbeinstellungen eingefügt wird,

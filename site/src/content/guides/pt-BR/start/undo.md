@@ -47,7 +47,7 @@ Cada desenho guarda até 256 passos. Os passos mais antigos são descartados pri
 
 Salvar não apaga o histórico. Um desenho aberto a partir de um arquivo `.capy`
 começa com o histórico vazio, mas os desenhos que reabrem quando você reinicia o
-Capy Canvas mantêm os passos de desfazer.
+{appName} mantêm os passos de desfazer.
 
 ## Alterações de layout
 

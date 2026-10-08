@@ -91,7 +91,7 @@ Klik kanan atau tahan palet di daftar palet, lalu pilih **Rename Palette…** at
 ## Mengimpor dan mengekspor palet
 
 Untuk mengimpor berkas palet, pilih **+** di daftar palet, lalu pilih
-**Import Palette…**. Capy Canvas membaca berkas `.capycolor`, `.aco`, `.cls`,
+**Import Palette…**. {appName} membaca berkas `.capycolor`, `.aco`, `.cls`,
 `.swatches`, `.ase`, `.afpalette`, `.gpl`, `.kpl`, dan `.json` hingga 1 MB. Berkas
 menjadi palet baru dengan nama yang tersimpan di berkas, atau dengan nama berkasnya.
 
@@ -107,7 +107,7 @@ Panel melaporkan jumlah warna yang dipotong atau dihilangkan transparansinya.
 
 ## Palet bawaan
 
-Capy Canvas menyertakan Studi laut, Arkade piksel, Fantasi gelap, Seni pop, Pastel
+{appName} menyertakan Studi laut, Arkade piksel, Fantasi gelap, Seni pop, Pastel
 permen, Cetak Riso, Synthwave, Cetak tahun tujuh puluhan, Cetak cukil kayu, dan Tinta.
 Anda dapat mengubah palet bawaan seperti palet lainnya. Palet bawaan yang dihapus tidak
 akan kembali.

@@ -78,7 +78,7 @@ Effectuez l’une des opérations suivantes :
 - Choisissez **Échanger premier plan et arrière-plan** dans la recherche de commandes.
 - Appuyez sur **X** avec les raccourcis Style Photoshop, Style Krita, Style Clip Studio Paint et Style GIMP, ou sur **Maj+X** avec Style Affinity.
 
-La même pastille reste sélectionnée. Les raccourcis CapyCanvas n’ont pas de
+La même pastille reste sélectionnée. Les raccourcis {appName} n’ont pas de
 touche pour **Échanger les couleurs**.
 
 ## Noir et blanc

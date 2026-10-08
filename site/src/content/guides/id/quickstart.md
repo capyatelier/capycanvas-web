@@ -1,10 +1,10 @@
 ---
 title: "Mulai cepat"
-description: "Membuka Capy Canvas, menggambar di gambar kosong pertama, menyimpannya sebagai berkas .capy, dan mengekspor PNG."
+description: "Membuka {appName}, menggambar di gambar kosong pertama, menyimpannya sebagai berkas .capy, dan mengekspor PNG."
 related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
 ---
 
-## Membuka Capy Canvas
+## Membuka {appName}
 
 Lakukan salah satu langkah berikut:
 
@@ -27,12 +27,12 @@ Setelah kunjungan pertama, editor web juga terbuka tanpa koneksi internet.
 
 ![Panel Lapisan pada gambar baru, dengan Tinta saat ini di atas Kertas.](shot:files/new-layers)
 
-Saat pertama kali dibuka, Capy Canvas menampilkan ruang kerja [Lukis](/id/docs/start/workspaces/)
+Saat pertama kali dibuka, {appName} menampilkan ruang kerja [Lukis](/id/docs/start/workspaces/)
 dengan gambar kosong, dan bilah judul bertuliskan "Tanpa judul · 2048 × 1536".
 **Tinta saat ini**, lapisan lukis yang kosong, terpilih di atas **Kertas**, lapisan
 isian putih. Alat **Pena** aktif dengan kuas **Pena G** dan warna yang hampir hitam.
 
-Pada pembukaan berikutnya, Capy Canvas terbuka dengan ruang kerja yang terakhir Anda
+Pada pembukaan berikutnya, {appName} terbuka dengan ruang kerja yang terakhir Anda
 gunakan dan gambar yang masih terbuka saat itu.
 
 ## Menggambar

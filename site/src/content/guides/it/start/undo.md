@@ -47,8 +47,7 @@ eliminati per primi.
 ## Salvare e riaprire
 
 Il salvataggio non cancella la cronologia. Un disegno aperto da un file `.capy`
-parte con la cronologia vuota, ma i disegni che si riaprono al riavvio di Capy
-Canvas conservano i loro passaggi di annullamento.
+parte con la cronologia vuota, ma i disegni che si riaprono al riavvio di {appName} conservano i loro passaggi di annullamento.
 
 ## Modifiche alla disposizione
 

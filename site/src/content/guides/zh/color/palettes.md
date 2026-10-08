@@ -70,7 +70,7 @@ related: ["color/color-panel", "color/edit-color", "color/eyedropper"]
 
 ## 导入和导出调色板
 
-要导入调色板文件，在调色板列表中选择 **+**，然后选择 **Import Palette…**。Capy Canvas 可读取不超过 1 MB 的 `.capycolor`、`.aco`、`.cls`、`.swatches`、`.ase`、`.afpalette`、`.gpl`、`.kpl` 和 `.json` 文件。文件会成为一个新调色板，名称取自文件中保存的名称或文件名。
+要导入调色板文件，在调色板列表中选择 **+**，然后选择 **Import Palette…**。{appName} 可读取不超过 1 MB 的 `.capycolor`、`.aco`、`.cls`、`.swatches`、`.ase`、`.afpalette`、`.gpl`、`.kpl` 和 `.json` 文件。文件会成为一个新调色板，名称取自文件中保存的名称或文件名。
 
 要导出调色板，在调色板列表中右键单击或按住它，选择 **Export Palette**，然后选择一种格式：
 
@@ -83,4 +83,4 @@ related: ["color/color-panel", "color/edit-color", "color/eyedropper"]
 
 ## 预置调色板
 
-Capy Canvas 自带海洋习作、像素街机、暗黑幻想、波普艺术、糖果粉彩、孔版印刷、合成器浪潮、七十年代印刷、木版画和墨色调色板。预置调色板可以像其他调色板一样修改。移除的预置调色板不会恢复。
+{appName} 自带海洋习作、像素街机、暗黑幻想、波普艺术、糖果粉彩、孔版印刷、合成器浪潮、七十年代印刷、木版画和墨色调色板。预置调色板可以像其他调色板一样修改。移除的预置调色板不会恢复。

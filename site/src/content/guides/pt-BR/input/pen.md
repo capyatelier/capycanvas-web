@@ -27,7 +27,7 @@ caneta, e o traço real o substitui enquanto você desenha. As configurações f
 
 - **Ativar previsão de traços** ativa ou desativa os dois tipos de previsão.
 - **Usar previsão de traços do *sistema***, por exemplo **Usar previsão de traços do Windows**, usa a previsão do sistema ou do navegador.
-- **Quantidade de previsão** define até onde o próprio Capy Canvas prevê, de 0 a 64 ms.
+- **Quantidade de previsão** define até onde o próprio {appName} prevê, de 0 a 64 ms.
 
 As duas opções vêm ativadas por padrão, e **Quantidade de previsão** fica em 16 ms.
 Com **Ativar previsão de traços** desativado, as outras duas configurações ficam
@@ -123,5 +123,5 @@ configuração do próprio iPad em **Ajustes > Apple Pencil**.
 - "Alternar entre a ferramenta atual e a borracha" passa para a **Borracha** e volta.
 - "Alternar entre a ferramenta atual e a última usada" passa para a ferramenta escolhida antes.
 
-As outras opções não fazem nada no Capy Canvas. O aperto age quando você solta.
+As outras opções não fazem nada no {appName}. O aperto age quando você solta.
 Quando o Apple Pencil paira sobre a tela, o cursor aparece.

@@ -70,7 +70,7 @@ remplir. La barre Options de l’outil a un menu **Source** pour les deux.
 
 Chaque outil conserve sa propre source. Remplissage commence sur
 **Dessin visible**, et Entourer et remplir revient à **Calques de référence** à chaque
-ouverture de Capy Canvas.
+ouverture de {appName}.
 
 Si Remplissage utilise **Calques de référence** et qu’aucun calque n’est marqué,
 Remplissage ne peint rien et un avis propose de marquer le calque inférieur.

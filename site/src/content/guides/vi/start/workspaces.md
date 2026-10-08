@@ -5,7 +5,7 @@ related: ["customize/workspaces", "customize/panels", "customize/toolbars", "cus
 ---
 
 Không gian làm việc là một cách sắp xếp đã lưu của thanh tiêu đề, các thanh công cụ
-và các bảng. Capy Canvas có sẵn ba không gian làm việc: **Phác thảo**, **Vẽ** và
+và các bảng. {appName} có sẵn ba không gian làm việc: **Phác thảo**, **Vẽ** và
 **Ảnh**. Lần đầu, ứng dụng mở trong Vẽ. Những lần sau, ứng dụng mở trong không gian
 làm việc bạn dùng gần nhất.
 

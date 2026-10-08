@@ -20,7 +20,7 @@ related: ["input/pen", "input/touch", "start/command-search", "preferences"]
 
 ## 键位映射预设
 
-可以使用仿照其他应用的按键。在**键位映射**下选择一个**预设**：**CapyCanvas**（默认）、**Photoshop 风格**、**Krita 风格**、**Clip Studio Paint 风格**、**Procreate 风格**、**GIMP 风格**或 **Affinity 风格**。
+可以使用仿照其他应用的按键。在**键位映射**下选择一个**预设**：**{appName}**（默认）、**Photoshop 风格**、**Krita 风格**、**Clip Studio Paint 风格**、**Procreate 风格**、**GIMP 风格**或 **Affinity 风格**。
 
 预设只更改部分按键，并保留自己更改过的按键。**键位映射选项**菜单（**⋯**）中的**差异…** 会列出该预设无法与其来源应用一致的地方。
 

@@ -75,7 +75,7 @@ berikut:
 - Pilih **Tukar latar depan dan latar belakang** di pencarian perintah.
 - Tekan **X** pada pemetaan tombol Gaya Photoshop, Gaya Krita, Gaya Clip Studio Paint, dan Gaya GIMP, atau **Shift+X** pada Gaya Affinity.
 
-Contoh warna yang sama tetap terpilih. Pemetaan tombol CapyCanvas tidak memiliki tombol
+Contoh warna yang sama tetap terpilih. Pemetaan tombol {appName} tidak memiliki tombol
 untuk **Tukar warna**.
 
 ## Hitam dan putih

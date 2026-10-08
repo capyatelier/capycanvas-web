@@ -26,7 +26,7 @@ sebenarnya menggantikannya saat Anda menggambar. Pengaturannya ada di bawah
 
 - **Aktifkan prediksi goresan** mengaktifkan atau menonaktifkan kedua jenis prediksi.
 - **Gunakan prediksi goresan *sistem***, misalnya **Gunakan prediksi goresan Windows**, memakai prediksi dari sistem atau peramban.
-- **Jumlah prediksi** mengatur seberapa jauh Capy Canvas memprediksi dengan caranya sendiri, dari 0 hingga 64 ms.
+- **Jumlah prediksi** mengatur seberapa jauh {appName} memprediksi dengan caranya sendiri, dari 0 hingga 64 ms.
 
 Kedua sakelar aktif secara bawaan, dan **Jumlah prediksi** bernilai 16 ms. Selama
 **Aktifkan prediksi goresan** nonaktif, dua pengaturan lainnya tidak tersedia.
@@ -120,5 +120,5 @@ pengaturan iPad sendiri di **Pengaturan > Apple Pencil**.
 - "Switch between current tool and eraser" beralih ke **Penghapus** dan kembali.
 - "Switch between current tool and last used" beralih ke alat yang Anda pilih sebelumnya.
 
-Pilihan lainnya tidak melakukan apa pun di Capy Canvas. Remas bekerja saat Anda
+Pilihan lainnya tidak melakukan apa pun di {appName}. Remas bekerja saat Anda
 melepaskannya. Saat Apple Pencil melayang di atas layar, kursor muncul.

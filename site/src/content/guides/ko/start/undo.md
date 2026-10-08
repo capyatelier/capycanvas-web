@@ -40,7 +40,7 @@ related: ["start/command-search", "customize/workspaces", "input/touch"]
 
 ## 저장과 다시 열기
 
-저장해도 기록은 지워지지 않습니다. `.capy` 파일에서 연 그림은 빈 기록으로 시작하지만, Capy Canvas를 다시 시작할 때 다시 열리는 그림은 실행 취소 단계를 유지합니다.
+저장해도 기록은 지워지지 않습니다. `.capy` 파일에서 연 그림은 빈 기록으로 시작하지만, {appName}를 다시 시작할 때 다시 열리는 그림은 실행 취소 단계를 유지합니다.
 
 ## 레이아웃 변경
 

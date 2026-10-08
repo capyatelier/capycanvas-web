@@ -1,10 +1,10 @@
 ---
 title: "Bắt đầu nhanh"
-description: "Mở Capy Canvas, vẽ trên bản vẽ trống đầu tiên, lưu bản vẽ thành tệp .capy và xuất ảnh PNG."
+description: "Mở {appName}, vẽ trên bản vẽ trống đầu tiên, lưu bản vẽ thành tệp .capy và xuất ảnh PNG."
 related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
 ---
 
-## Mở Capy Canvas
+## Mở {appName}
 
 Thực hiện một trong các cách sau:
 
@@ -27,12 +27,12 @@ Sau lần truy cập đầu tiên, trình chỉnh sửa web mở được cả k
 
 ![Bảng Lớp của một bản vẽ mới, với Mực hiện tại nằm trên Giấy.](shot:files/new-layers)
 
-Lần đầu bạn mở Capy Canvas, ứng dụng hiện không gian làm việc [Vẽ](/vi/docs/start/workspaces/)
+Lần đầu bạn mở {appName}, ứng dụng hiện không gian làm việc [Vẽ](/vi/docs/start/workspaces/)
 với một bản vẽ trống, và thanh tiêu đề ghi “Chưa đặt tên · 2048 × 1536”.
 **Mực hiện tại**, một lớp vẽ trống, đang được chọn và nằm trên **Giấy**, một lớp
 tô màu trắng. Công cụ **Bút** đang dùng cọ **Bút G** với màu gần như đen.
 
-Những lần sau, Capy Canvas mở không gian làm việc bạn dùng gần nhất cùng các bản
+Những lần sau, {appName} mở không gian làm việc bạn dùng gần nhất cùng các bản
 vẽ đang mở lúc đó.
 
 ## Vẽ

@@ -45,8 +45,7 @@ Cada dibujo conserva hasta 256 pasos. Los más antiguos se descartan primero.
 ## Guardar y volver a abrir
 
 Guardar no borra el historial. Un dibujo que abres desde un archivo `.capy` empieza
-con el historial vacío, pero los dibujos que se vuelven a abrir al reiniciar Capy
-Canvas conservan sus pasos de deshacer.
+con el historial vacío, pero los dibujos que se vuelven a abrir al reiniciar {appName} conservan sus pasos de deshacer.
 
 ## Cambios de distribución
 

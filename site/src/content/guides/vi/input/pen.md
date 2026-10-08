@@ -25,7 +25,7 @@ thế đoạn đó khi bạn vẽ. Các thiết lập nằm trong **Đáp ứng 
 
 - **Bật dự đoán nét vẽ** bật hoặc tắt cả hai loại dự đoán.
 - **Dùng dự đoán nét vẽ của *hệ thống***, ví dụ **Dùng dự đoán nét vẽ của Windows**, dùng dự đoán của hệ thống hoặc của trình duyệt.
-- **Mức dự đoán** đặt khoảng thời gian Capy Canvas tự dự đoán trước, từ 0 đến 64 ms.
+- **Mức dự đoán** đặt khoảng thời gian {appName} tự dự đoán trước, từ 0 đến 64 ms.
 
 Theo mặc định, cả hai công tắc đều bật, và **Mức dự đoán** là 16 ms. Khi
 **Bật dự đoán nét vẽ** tắt, hai thiết lập còn lại không dùng được.
@@ -118,5 +118,5 @@ thiết lập riêng của iPad trong **Cài đặt > Apple Pencil**.
 - “Switch between current tool and eraser” chuyển sang **Tẩy** rồi chuyển lại.
 - “Switch between current tool and last used” chuyển sang công cụ bạn đã chọn trước đó.
 
-Các lựa chọn khác không có tác dụng trong Capy Canvas. Thao tác bóp có hiệu lực khi
+Các lựa chọn khác không có tác dụng trong {appName}. Thao tác bóp có hiệu lực khi
 bạn thả tay. Khi Apple Pencil di chuyển lơ lửng trên màn hình, con trỏ xuất hiện.

@@ -19,7 +19,7 @@ Do one of the following:
 - Type "Preferences" in [command search](/docs/start/command-search/).
 
 Preferences opens on the **Appearance** page. **Help > Keyboard Shortcuts** opens
-it on **Keyboard Shortcuts**, and **Help > About Capy Canvas** on **About**.
+it on **Keyboard Shortcuts**, and **Help > About {appName}** on **About**.
 
 While Preferences is open, canvas shortcuts, pen buttons and finger taps do
 nothing.

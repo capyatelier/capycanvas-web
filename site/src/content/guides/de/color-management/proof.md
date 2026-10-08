@@ -122,7 +122,7 @@ Details zu schließen.
 | Kennzeichen | Erscheint, wenn |
 | --- | --- |
 | „Farben beschnitten“ | Der Bildschirm einige sichtbare Farben der Zeichnung oder des Softproofs nicht darstellen kann. |
-| „Kann vom Druck abweichen“ | Der Druck-Softproof oder die Farbumfangswarnung aktiv ist und Capy Canvas nicht ermitteln kann, wie der Bildschirm Farben darstellt. |
+| „Kann vom Druck abweichen“ | Der Druck-Softproof oder die Farbumfangswarnung aktiv ist und {appName} nicht ermitteln kann, wie der Bildschirm Farben darstellt. |
 
 Bei einer HDR-Zeichnung meldet das Kennzeichen auch, ob der Bildschirm HDR darstellt
 (siehe [HDR](/de/docs/color-management/hdr/)).

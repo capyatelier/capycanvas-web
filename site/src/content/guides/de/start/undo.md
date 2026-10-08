@@ -49,7 +49,7 @@ Jede Zeichnung speichert bis zu 256 Schritte. Die ältesten Schritte fallen zuer
 
 Speichern leert den Verlauf nicht. Eine Zeichnung, die Sie aus einer `.capy`-Datei
 öffnen, beginnt mit einem leeren Verlauf. Zeichnungen, die sich beim Neustart von
-Capy Canvas wieder öffnen, behalten dagegen ihre Rückgängig-Schritte.
+{appName} wieder öffnen, behalten dagegen ihre Rückgängig-Schritte.
 
 ## Layoutänderungen
 

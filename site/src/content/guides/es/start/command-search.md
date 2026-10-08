@@ -34,7 +34,7 @@ ejecutaste desde la búsqueda y, después, **Deshacer**, **Ajustar lienzo a la v
 pueden ejecutar en ese momento no aparecen.
 
 Solo cuentan como recientes las entradas que ejecutas desde la búsqueda. La lista
-de recientes se vacía al salir de Capy Canvas.
+de recientes se vacía al salir de {appName}.
 
 ## Buscar
 

@@ -124,7 +124,7 @@ détails.
 | Puce | Affichée quand |
 | --- | --- |
 | « Couleurs écrêtées » | L’écran ne peut pas afficher certaines couleurs visibles du dessin ou de l’épreuve. |
-| « Peut différer du tirage » | L’épreuvage d’impression ou l’avertissement de gamut est actif, et Capy Canvas ne peut pas déterminer comment l’écran affiche les couleurs. |
+| « Peut différer du tirage » | L’épreuvage d’impression ou l’avertissement de gamut est actif, et {appName} ne peut pas déterminer comment l’écran affiche les couleurs. |
 
 Pour un dessin HDR, la puce indique aussi si l’écran affiche le HDR (voir
 [HDR](/fr/docs/color-management/hdr/)).

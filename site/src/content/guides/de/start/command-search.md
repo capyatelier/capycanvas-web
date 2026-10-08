@@ -33,7 +33,7 @@ Suche ausgeführten, dann **Rückgängig**, **Leinwand einpassen**, **Speichern*
 fehlen.
 
 Als zuletzt verwendet zählen nur Einträge, die Sie aus der Suche ausführen. Die
-Liste wird geleert, wenn Sie Capy Canvas beenden.
+Liste wird geleert, wenn Sie {appName} beenden.
 
 ## Suchen
 

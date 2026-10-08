@@ -1,10 +1,10 @@
 ---
 title: "Quickstart"
-description: "Opening Capy Canvas, drawing on the first blank drawing, saving it as a .capy file and exporting a PNG."
+description: "Opening {appName}, drawing on the first blank drawing, saving it as a .capy file and exporting a PNG."
 related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
 ---
 
-## Opening Capy Canvas
+## Opening {appName}
 
 Do one of the following:
 
@@ -27,12 +27,12 @@ After your first visit, the web editor also opens without an internet connection
 
 ![The Layers panel of a new drawing, with Current ink above Paper.](shot:files/new-layers)
 
-The first time you open Capy Canvas, it shows the [Paint](/docs/start/workspaces/)
+The first time you open {appName}, it shows the [Paint](/docs/start/workspaces/)
 workspace with a blank drawing, and the title bar reads "Untitled · 2048 × 1536".
 **Current ink**, an empty paint layer, is selected above **Paper**, a white fill
 layer. The **Pen** tool is active with the **G-Pen** brush and a near-black color.
 
-Later, Capy Canvas opens with the workspace you used last and the drawings that
+Later, {appName} opens with the workspace you used last and the drawings that
 were open.
 
 ## Drawing

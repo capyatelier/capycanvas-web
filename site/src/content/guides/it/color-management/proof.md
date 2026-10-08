@@ -122,7 +122,7 @@ aprirne i dettagli, e selezionalo di nuovo o premi **Esc** per chiuderli.
 | Indicatore | Compare quando |
 | --- | --- |
 | «Colori fuori gamma» | Lo schermo non può mostrare alcuni colori visibili del disegno o della prova colore. |
-| «Può differire dalla stampa» | La prova colore di stampa o l'avviso fuori gamma è attivo, e Capy Canvas non riesce a stabilire come lo schermo mostra i colori. |
+| «Può differire dalla stampa» | La prova colore di stampa o l'avviso fuori gamma è attivo, e {appName} non riesce a stabilire come lo schermo mostra i colori. |
 
 Per un disegno HDR, l'indicatore riporta anche se lo schermo mostra l'HDR (vedi
 [HDR](/it/docs/color-management/hdr/)).

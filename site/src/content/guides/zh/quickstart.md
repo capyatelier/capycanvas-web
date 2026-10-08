@@ -1,10 +1,10 @@
 ---
 title: "快速入门"
-description: "打开 Capy Canvas，在第一幅空白画作上绘画，将其保存为 .capy 文件并导出 PNG。"
+description: "打开 {appName}，在第一幅空白画作上绘画，将其保存为 .capy 文件并导出 PNG。"
 related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
 ---
 
-## 打开 Capy Canvas
+## 打开 {appName}
 
 执行以下任一操作：
 
@@ -27,9 +27,9 @@ related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard
 
 ![新画作的图层面板，当前墨色位于纸张上方。](shot:files/new-layers)
 
-首次打开 Capy Canvas 时，会显示[“绘画”](/zh/docs/start/workspaces/)工作区和一幅空白画作，标题栏显示“未命名 · 2048 × 1536”。已选中的**当前墨色**是一个空的绘画图层，位于白色填充图层**纸张**上方。当前工具为**钢笔**，画笔为 **G 笔**，颜色接近黑色。
+首次打开 {appName} 时，会显示[“绘画”](/zh/docs/start/workspaces/)工作区和一幅空白画作，标题栏显示“未命名 · 2048 × 1536”。已选中的**当前墨色**是一个空的绘画图层，位于白色填充图层**纸张**上方。当前工具为**钢笔**，画笔为 **G 笔**，颜色接近黑色。
 
-之后再打开 Capy Canvas 时，会进入上次使用的工作区，并打开上次打开的画作。
+之后再打开 {appName} 时，会进入上次使用的工作区，并打开上次打开的画作。
 
 ## 绘画
 

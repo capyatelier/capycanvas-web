@@ -1,10 +1,10 @@
 ---
 title: "Hızlı başlangıç"
-description: "Capy Canvas'ı açma, ilk boş çizimde çizme, çizimi .capy dosyası olarak kaydetme ve PNG dışa aktarma."
+description: "{appName}'ı açma, ilk boş çizimde çizme, çizimi .capy dosyası olarak kaydetme ve PNG dışa aktarma."
 related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
 ---
 
-## Capy Canvas'ı açma
+## {appName}'ı açma
 
 Aşağıdakilerden birini yapın:
 
@@ -27,13 +27,13 @@ Web düzenleyicisi şu tarayıcılarda çalışır:
 
 ![Yeni bir çizimin Katmanlar paneli: Kâğıt'ın üstünde Geçerli mürekkep.](shot:files/new-layers)
 
-Capy Canvas ilk açıldığında boş bir çizimle [Boya](/tr/docs/start/workspaces/)
+{appName} ilk açıldığında boş bir çizimle [Boya](/tr/docs/start/workspaces/)
 çalışma alanını gösterir ve başlık çubuğunda “Adsız · 2048 × 1536” yazar. Beyaz
 bir dolgu katmanı olan **Kâğıt** katmanının üstündeki boş boya katmanı
 **Geçerli mürekkep** seçilidir. **Kalem** aracı, **G kalem** fırçası ve siyaha
 yakın bir renkle etkindir.
 
-Sonraki açılışlarda Capy Canvas, en son kullandığınız çalışma alanıyla ve açık
+Sonraki açılışlarda {appName}, en son kullandığınız çalışma alanıyla ve açık
 olan çizimlerle açılır.
 
 ## Çizme

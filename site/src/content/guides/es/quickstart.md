@@ -1,10 +1,10 @@
 ---
 title: "Inicio rápido"
-description: "Abrir Capy Canvas, dibujar en el primer dibujo en blanco, guardarlo como archivo .capy y exportar un PNG."
+description: "Abrir {appName}, dibujar en el primer dibujo en blanco, guardarlo como archivo .capy y exportar un PNG."
 related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
 ---
 
-## Abrir Capy Canvas
+## Abrir {appName}
 
 Haz una de las siguientes acciones:
 
@@ -27,13 +27,13 @@ Después de la primera visita, el editor web también se abre sin conexión a in
 
 ![El panel Capas de un dibujo nuevo, con Tinta actual sobre Papel.](shot:files/new-layers)
 
-La primera vez que abres Capy Canvas, aparece el espacio de trabajo
+La primera vez que abres {appName}, aparece el espacio de trabajo
 [Pintura](/es/docs/start/workspaces/) con un dibujo en blanco, y la barra de título
 indica «Sin título · 2048 × 1536». **Tinta actual**, una capa de pintura vacía,
 está seleccionada sobre **Papel**, una capa de relleno blanca. La herramienta
 **Pluma** está activa con el pincel **Plumilla G** y un color casi negro.
 
-Más adelante, Capy Canvas se abre con el espacio de trabajo que usaste por última
+Más adelante, {appName} se abre con el espacio de trabajo que usaste por última
 vez y con los dibujos que tenías abiertos.
 
 ## Dibujar

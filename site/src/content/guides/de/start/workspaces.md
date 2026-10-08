@@ -5,7 +5,7 @@ related: ["customize/workspaces", "customize/panels", "customize/toolbars", "cus
 ---
 
 Ein Arbeitsbereich ist eine gespeicherte Anordnung von Titelleiste, Werkzeugleisten
-und Bedienfeldern. Capy Canvas enthält drei: **Skizze**, **Malen** und **Foto**. Beim
+und Bedienfeldern. {appName} enthält drei: **Skizze**, **Malen** und **Foto**. Beim
 ersten Start öffnet sich der Arbeitsbereich Malen, danach der zuletzt verwendete Arbeitsbereich.
 
 ## Skizze

@@ -95,7 +95,7 @@ e escolha **Rename Palette…** ou **Remove Palette…**. Não é possível remo
 ## Importar e exportar paletas
 
 Para importar um arquivo de paleta, selecione **+** na lista de paletas e escolha
-**Import Palette…**. O Capy Canvas lê arquivos `.capycolor`, `.aco`, `.cls`,
+**Import Palette…**. O {appName} lê arquivos `.capycolor`, `.aco`, `.cls`,
 `.swatches`, `.ase`, `.afpalette`, `.gpl`, `.kpl` e `.json` de até 1 MB. O arquivo
 vira uma nova paleta com o nome guardado no arquivo ou com o nome do arquivo.
 
@@ -111,7 +111,7 @@ O painel informa quantas cores foram cortadas ou ficaram opacas.
 
 ## Paletas iniciais
 
-O Capy Canvas vem com Estudo do oceano, Fliperama em pixels, Fantasia sombria,
+O {appName} vem com Estudo do oceano, Fliperama em pixels, Fantasia sombria,
 Pop art, Doces em tons pastel, Impressão risográfica, Synthwave, Impressão dos
 anos 70, Xilogravura e Tinta. Você pode alterar as paletas iniciais como qualquer
 outra paleta. Uma paleta inicial removida não volta.

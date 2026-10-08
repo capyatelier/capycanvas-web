@@ -63,7 +63,7 @@ related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-manag
 - コマンド検索で**描画色と背景色を入れ替える**を選びます。
 - Photoshop スタイル、Krita スタイル、Clip Studio Paint スタイル、GIMP スタイルのキー設定では**X**を、Affinity スタイルでは**Shift+X**を押します。
 
-選択中のスウォッチは変わりません。CapyCanvasのキー設定には、**色を入れ替える**のキーがありません。
+選択中のスウォッチは変わりません。{appName}のキー設定には、**色を入れ替える**のキーがありません。
 
 ## 黒と白
 

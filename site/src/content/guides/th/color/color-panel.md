@@ -63,7 +63,7 @@ related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-manag
 - เลือก **สลับสีพื้นหน้าและพื้นหลัง** ในการค้นหาคำสั่ง
 - กด **X** ในผังปุ่มรูปแบบ Photoshop รูปแบบ Krita รูปแบบ Clip Studio Paint และรูปแบบ GIMP หรือกด **Shift+X** ในรูปแบบ Affinity
 
-ช่องสีเดิมจะยังถูกเลือกอยู่ ผังปุ่ม CapyCanvas ไม่มีแป้นสำหรับ **สลับสี**
+ช่องสีเดิมจะยังถูกเลือกอยู่ ผังปุ่ม {appName} ไม่มีแป้นสำหรับ **สลับสี**
 
 ## ดำและขาว
 

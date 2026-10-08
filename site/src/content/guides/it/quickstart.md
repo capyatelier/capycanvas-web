@@ -1,10 +1,10 @@
 ---
 title: "Guida rapida"
-description: "Aprire Capy Canvas, disegnare sul primo disegno vuoto, salvarlo come file .capy ed esportare un PNG."
+description: "Aprire {appName}, disegnare sul primo disegno vuoto, salvarlo come file .capy ed esportare un PNG."
 related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
 ---
 
-## Aprire Capy Canvas
+## Aprire {appName}
 
 Esegui una delle seguenti operazioni:
 
@@ -27,13 +27,13 @@ Dopo la prima visita, l'editor web si apre anche senza connessione a Internet.
 
 ![Il pannello Livelli di un nuovo disegno, con Inchiostro corrente sopra Carta.](shot:files/new-layers)
 
-La prima volta che apri Capy Canvas, compare l'area di lavoro
+La prima volta che apri {appName}, compare l'area di lavoro
 [Pittura](/it/docs/start/workspaces/) con un disegno vuoto, e la barra del titolo
 riporta «Senza titolo · 2048 × 1536». **Inchiostro corrente**, un livello di
 pittura vuoto, è selezionato sopra **Carta**, un livello di riempimento bianco.
 È attivo lo strumento **Penna**, con il pennello **G-Pen** e un colore quasi nero.
 
-Alle aperture successive, Capy Canvas si apre nell'ultima area di lavoro usata e
+Alle aperture successive, {appName} si apre nell'ultima area di lavoro usata e
 con i disegni che erano aperti.
 
 ## Disegnare

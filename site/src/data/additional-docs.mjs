@@ -1,7 +1,7 @@
 // Static translations; no translation service is used at build time or in the browser.
 export const additionalDocsUI = {
   "es": {
-    "intro": "Capy Canvas es una aplicación gratuita de código abierto para dibujar, pintar y editar fotografías. Está inspirado en el zen de los capibaras.",
+    "intro": "{appName} es una aplicación gratuita de código abierto para dibujar, pintar y editar fotografías. Está inspirado en el zen de los capibaras.",
     "overview": "Descripción general",
     "contents": "Contenido de la documentación",
     "onPage": "En esta página",
@@ -39,7 +39,7 @@ export const additionalDocsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "Capy Canvas usa Windows Ink para el lápiz. En Windows, Botones del lápiz muestra un solo botón lateral: Botón lateral inferior.",
+      "windows": "{appName} usa Windows Ink para el lápiz. En Windows, Botones del lápiz muestra un solo botón lateral: Botón lateral inferior.",
       "mac": "Si el lápiz marca en el lugar equivocado, comprueba en los ajustes de tu tableta a qué pantalla está asignada. Usa Command donde estas guías digan Ctrl, y Option donde digan Alt.",
       "linux": "La aplicación para Linux necesita una sesión de Wayland y una tarjeta gráfica compatible con Vulkan. Si la presión no funciona o el cursor aparece en el lugar equivocado, revisa los ajustes de tableta de tu escritorio.",
       "ipad": "La mayoría de los modelos de Apple Pencil admiten presión e inclinación, pero el Apple Pencil (USB-C) no admite presión. Los dedos y la palma de la mano nunca dibujan.",
@@ -56,7 +56,7 @@ export const additionalDocsUI = {
         },
         "workspace": {
           "title": "Tu espacio de trabajo",
-          "text": "Capy Canvas viene con diseños familiares para dibujar, pintar y editar fotografías, y cada herramienta y panel se puede mover a donde quieras. Y si solo quieres un lienzo en blanco sin distracciones, haz clic en Carpincho para ingresar al modo Zen.",
+          "text": "{appName} viene con diseños familiares para dibujar, pintar y editar fotografías, y cada herramienta y panel se puede mover a donde quieras. Y si solo quieres un lienzo en blanco sin distracciones, haz clic en Carpincho para ingresar al modo Zen.",
           "link": "Espacios de trabajo"
         },
         "input": {
@@ -76,11 +76,11 @@ export const additionalDocsUI = {
         },
         "native": {
           "title": "Escritorio y tableta",
-          "text": "Capy Canvas está en beta para Linux, Windows, macOS, Android y iPadOS. Estas son aplicaciones nativas compiladas y utilizan kits de herramientas de interfaz de usuario nativos de la plataforma. Esto significa un mejor rendimiento y duración de la batería en cada dispositivo.",
+          "text": "{appName} está en beta para Linux, Windows, macOS, Android y iPadOS. Estas son aplicaciones nativas compiladas y utilizan kits de herramientas de interfaz de usuario nativos de la plataforma. Esto significa un mejor rendimiento y duración de la batería en cada dispositivo.",
           "link": "Arquitectura del sistema"
         }
       },
-      "start": "Capy Canvas puede ejecutarse completamente en su navegador web, incluso sin conexión. Esta es una manera rápida y fácil de comenzar. Las aplicaciones de escritorio y tableta, ahora en beta, ofrecen el mejor rendimiento y compatibilidad de hardware.",
+      "start": "{appName} puede ejecutarse completamente en su navegador web, incluso sin conexión. Esta es una manera rápida y fácil de comenzar. Las aplicaciones de escritorio y tableta, ahora en beta, ofrecen el mejor rendimiento y compatibilidad de hardware.",
       "links": {
         "quickstart": "Inicio rápido",
         "illustration": "Tutorial de ilustración"
@@ -88,7 +88,7 @@ export const additionalDocsUI = {
     }
   },
   "pt-BR": {
-    "intro": "Capy Canvas é um aplicativo gratuito e de código aberto para desenho, pintura e edição de fotos. É inspirado no zen das capivaras.",
+    "intro": "{appName} é um aplicativo gratuito e de código aberto para desenho, pintura e edição de fotos. É inspirado no zen das capivaras.",
     "overview": "Visão geral",
     "contents": "Conteúdo da documentação",
     "onPage": "Nesta página",
@@ -126,7 +126,7 @@ export const additionalDocsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "O Capy Canvas usa o Windows Ink para a caneta. No Windows, Botões da caneta mostra apenas um botão lateral: Botão lateral inferior.",
+      "windows": "O {appName} usa o Windows Ink para a caneta. No Windows, Botões da caneta mostra apenas um botão lateral: Botão lateral inferior.",
       "mac": "Se a caneta tocar no lugar errado, verifique nas configurações do tablet para qual tela ele está mapeado. Use Command onde estes guias indicarem Ctrl, e Option onde indicarem Alt.",
       "linux": "O aplicativo para Linux precisa de uma sessão Wayland e de uma placa de vídeo compatível com Vulkan. Se a pressão não funcionar ou o cursor parar no lugar errado, verifique as configurações de tablet do seu desktop.",
       "ipad": "A maioria dos modelos de Apple Pencil suporta pressão e inclinação, mas o Apple Pencil (USB-C) não suporta pressão. Dedos e palmas nunca desenham.",
@@ -143,7 +143,7 @@ export const additionalDocsUI = {
         },
         "workspace": {
           "title": "Seu espaço de trabalho",
-          "text": "Capy Canvas vem com layouts familiares para desenho, pintura e edição de fotos, e cada ferramenta e painel pode ser movido para onde você quiser. E se você quiser apenas uma tela em branco sem distrações, clique na Capivara para entrar no modo Zen!",
+          "text": "{appName} vem com layouts familiares para desenho, pintura e edição de fotos, e cada ferramenta e painel pode ser movido para onde você quiser. E se você quiser apenas uma tela em branco sem distrações, clique na Capivara para entrar no modo Zen!",
           "link": "Áreas de trabalho"
         },
         "input": {
@@ -163,11 +163,11 @@ export const additionalDocsUI = {
         },
         "native": {
           "title": "Computador de mesa e tablet",
-          "text": "Capy Canvas está em beta para Linux, Windows, macOS, Android e iPadOS. Esses são aplicativos nativos compilados e usam kits de ferramentas de UI nativos da plataforma. Isso significa melhor desempenho e duração da bateria em todos os dispositivos.",
+          "text": "{appName} está em beta para Linux, Windows, macOS, Android e iPadOS. Esses são aplicativos nativos compilados e usam kits de ferramentas de UI nativos da plataforma. Isso significa melhor desempenho e duração da bateria em todos os dispositivos.",
           "link": "Arquitetura do sistema"
         }
       },
-      "start": "Capy Canvas pode ser executado inteiramente em seu navegador, mesmo offline. Esta é uma maneira rápida e fácil de começar. Os aplicativos para desktop e tablet, agora em beta, oferecem o melhor desempenho e compatibilidade de hardware.",
+      "start": "{appName} pode ser executado inteiramente em seu navegador, mesmo offline. Esta é uma maneira rápida e fácil de começar. Os aplicativos para desktop e tablet, agora em beta, oferecem o melhor desempenho e compatibilidade de hardware.",
       "links": {
         "quickstart": "Início rápido",
         "illustration": "Tutorial de ilustração"
@@ -175,7 +175,7 @@ export const additionalDocsUI = {
     }
   },
   "id": {
-    "intro": "Capy Canvas adalah aplikasi sumber terbuka gratis untuk membuat sketsa, melukis, dan mengedit foto. Ini terinspirasi oleh zen kapibara.",
+    "intro": "{appName} adalah aplikasi sumber terbuka gratis untuk membuat sketsa, melukis, dan mengedit foto. Ini terinspirasi oleh zen kapibara.",
     "overview": "Ikhtisar",
     "contents": "Isi dokumentasi",
     "onPage": "Di halaman ini",
@@ -213,7 +213,7 @@ export const additionalDocsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "Capy Canvas menggunakan Windows Ink untuk pena. Di Windows, Tombol pena hanya mencantumkan satu tombol samping, yaitu Tombol samping bawah.",
+      "windows": "{appName} menggunakan Windows Ink untuk pena. Di Windows, Tombol pena hanya mencantumkan satu tombol samping, yaitu Tombol samping bawah.",
       "mac": "Jika pena mengenai tempat yang salah, periksa di pengaturan tablet Anda layar mana yang dipetakan ke tablet. Gunakan Command di mana pun panduan ini menyebut Ctrl, dan Option di mana pun menyebut Alt.",
       "linux": "Aplikasi Linux memerlukan sesi Wayland dan kartu grafis yang mendukung Vulkan. Jika tekanan tidak berfungsi atau kursor berada di tempat yang salah, periksa pengaturan tablet di desktop Anda.",
       "ipad": "Sebagian besar model Apple Pencil mendukung tekanan dan kemiringan, tetapi Apple Pencil (USB-C) tidak mendukung tekanan. Jari dan telapak tangan tidak pernah menggambar.",
@@ -230,7 +230,7 @@ export const additionalDocsUI = {
         },
         "workspace": {
           "title": "Ruang kerja Anda",
-          "text": "Capy Canvas hadir dengan tata letak yang familier untuk membuat sketsa, melukis, dan mengedit foto, dan setiap alat dan panel dapat dipindahkan ke mana pun Anda suka. Dan jika Anda hanya ingin kanvas kosong tanpa gangguan, klik Capybara untuk masuk ke mode Zen!",
+          "text": "{appName} hadir dengan tata letak yang familier untuk membuat sketsa, melukis, dan mengedit foto, dan setiap alat dan panel dapat dipindahkan ke mana pun Anda suka. Dan jika Anda hanya ingin kanvas kosong tanpa gangguan, klik Capybara untuk masuk ke mode Zen!",
           "link": "Ruang kerja"
         },
         "input": {
@@ -250,11 +250,11 @@ export const additionalDocsUI = {
         },
         "native": {
           "title": "Desktop dan tablet",
-          "text": "Capy Canvas dalam tahap beta untuk Linux, Windows, macOS, Android dan iPadOS. Ini adalah aplikasi asli yang dikompilasi dan menggunakan perangkat UI asli platform. Ini berarti kinerja dan masa pakai baterai yang lebih baik di setiap perangkat.",
+          "text": "{appName} dalam tahap beta untuk Linux, Windows, macOS, Android dan iPadOS. Ini adalah aplikasi asli yang dikompilasi dan menggunakan perangkat UI asli platform. Ini berarti kinerja dan masa pakai baterai yang lebih baik di setiap perangkat.",
           "link": "Arsitektur sistem"
         }
       },
-      "start": "Capy Canvas dapat berjalan sepenuhnya di browser web Anda, bahkan offline. Ini adalah cara cepat dan mudah untuk memulai. Aplikasi desktop dan tablet, yang kini dalam tahap beta, menawarkan kinerja dan kompatibilitas perangkat keras terbaik.",
+      "start": "{appName} dapat berjalan sepenuhnya di browser web Anda, bahkan offline. Ini adalah cara cepat dan mudah untuk memulai. Aplikasi desktop dan tablet, yang kini dalam tahap beta, menawarkan kinerja dan kompatibilitas perangkat keras terbaik.",
       "links": {
         "quickstart": "Mulai cepat",
         "illustration": "Tutorial ilustrasi"
@@ -262,7 +262,7 @@ export const additionalDocsUI = {
     }
   },
   "fr": {
-    "intro": "Capy Canvas est une application gratuite et open source pour le dessin, la peinture et la retouche photo. Il s'inspire du zen des capybaras.",
+    "intro": "{appName} est une application gratuite et open source pour le dessin, la peinture et la retouche photo. Il s'inspire du zen des capybaras.",
     "overview": "Aperçu",
     "contents": "Contenu de la documentation",
     "onPage": "Sur cette page",
@@ -300,7 +300,7 @@ export const additionalDocsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "Capy Canvas utilise Windows Ink pour le stylet. Sous Windows, « Boutons du stylet » n'affiche qu'un bouton latéral : « Bouton latéral inférieur ».",
+      "windows": "{appName} utilise Windows Ink pour le stylet. Sous Windows, « Boutons du stylet » n'affiche qu'un bouton latéral : « Bouton latéral inférieur ».",
       "mac": "Si le stylet touche au mauvais endroit, vérifiez dans les paramètres de votre tablette à quel écran elle est associée. Utilisez Commande partout où ces guides indiquent Ctrl, et Option partout où ils indiquent Alt.",
       "linux": "L'application Linux nécessite une session Wayland et une carte graphique compatible avec Vulkan. Si la pression ne fonctionne pas ou si le curseur se pose au mauvais endroit, vérifiez les paramètres de tablette de votre environnement de bureau.",
       "ipad": "La plupart des modèles d'Apple Pencil prennent en charge la pression et l'inclinaison, mais l'Apple Pencil (USB-C) ne prend pas en charge la pression. Les doigts et la paume ne dessinent jamais.",
@@ -317,7 +317,7 @@ export const additionalDocsUI = {
         },
         "workspace": {
           "title": "Votre espace de travail",
-          "text": "Le Capy Canvas est livré avec des dispositions familières pour le dessin, la peinture et l'édition de photos, et chaque outil et panneau peut être déplacé où vous le souhaitez. Et si vous voulez juste une toile vierge sans distractions, cliquez sur le Capybara pour passer en mode Zen !",
+          "text": "Le {appName} est livré avec des dispositions familières pour le dessin, la peinture et l'édition de photos, et chaque outil et panneau peut être déplacé où vous le souhaitez. Et si vous voulez juste une toile vierge sans distractions, cliquez sur le Capybara pour passer en mode Zen !",
           "link": "Espaces de travail"
         },
         "input": {
@@ -337,11 +337,11 @@ export const additionalDocsUI = {
         },
         "native": {
           "title": "Ordinateur de bureau et tablette",
-          "text": "Capy Canvas est en version bêta pour Linux, Windows, macOS, Android et iPadOS. Il s'agit d'applications natives compilées et utilisant des boîtes à outils d'interface utilisateur natives de la plate-forme. Cela signifie de meilleures performances et une meilleure durée de vie de la batterie sur chaque appareil.",
+          "text": "{appName} est en version bêta pour Linux, Windows, macOS, Android et iPadOS. Il s'agit d'applications natives compilées et utilisant des boîtes à outils d'interface utilisateur natives de la plate-forme. Cela signifie de meilleures performances et une meilleure durée de vie de la batterie sur chaque appareil.",
           "link": "Architecture du système"
         }
       },
-      "start": "Capy Canvas peut fonctionner entièrement dans votre navigateur Web, même hors ligne. Il s’agit d’un moyen simple et rapide de commencer. Les applications pour ordinateur et tablette, désormais en bêta, offrent les meilleures performances et compatibilité matérielle.",
+      "start": "{appName} peut fonctionner entièrement dans votre navigateur Web, même hors ligne. Il s’agit d’un moyen simple et rapide de commencer. Les applications pour ordinateur et tablette, désormais en bêta, offrent les meilleures performances et compatibilité matérielle.",
       "links": {
         "quickstart": "Prise en main",
         "illustration": "Tutoriel d’illustration"
@@ -349,7 +349,7 @@ export const additionalDocsUI = {
     }
   },
   "de": {
-    "intro": "Capy Canvas ist eine kostenlose Open-Source-App zum Skizzieren, Malen und Bearbeiten von Fotos. Es ist vom Zen der Wasserschweine inspiriert.",
+    "intro": "{appName} ist eine kostenlose Open-Source-App zum Skizzieren, Malen und Bearbeiten von Fotos. Es ist vom Zen der Wasserschweine inspiriert.",
     "overview": "Übersicht",
     "contents": "Dokumentationsinhalte",
     "onPage": "Auf dieser Seite",
@@ -387,7 +387,7 @@ export const additionalDocsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "Capy Canvas verwendet Windows Ink für den Stift. Unter Windows zeigt „Stifttasten“ nur eine Seitentaste an: „Untere Seitentaste“.",
+      "windows": "{appName} verwendet Windows Ink für den Stift. Unter Windows zeigt „Stifttasten“ nur eine Seitentaste an: „Untere Seitentaste“.",
       "mac": "Wenn der Stift an der falschen Stelle landet, überprüfen Sie in den Einstellungen, welchem Bildschirm Ihr Tablet zugeordnet ist. Verwenden Sie Command, wo in diesen Anleitungen Strg steht, und Option, wo Alt steht.",
       "linux": "Die Linux-App benötigt eine Wayland-Sitzung und eine Grafikkarte mit Vulkan-Unterstützung. Wenn Druck nicht funktioniert oder der Cursor an der falschen Stelle landet, überprüfen Sie die Tablet-Einstellungen Ihres Desktops.",
       "ipad": "Die meisten Apple Pencil-Modelle unterstützen Druck und Neigung, Apple Pencil (USB-C) unterstützt jedoch keinen Druck. Finger und Handballen zeichnen nie.",
@@ -404,7 +404,7 @@ export const additionalDocsUI = {
         },
         "workspace": {
           "title": "Ihr Arbeitsbereich",
-          "text": "Capy Canvas verfügt über vertraute Layouts zum Skizzieren, Malen und Bearbeiten von Fotos, und jedes Werkzeug und Bedienfeld kann an jeden beliebigen Ort verschoben werden. Und wenn Sie einfach nur eine leere Leinwand ohne Ablenkungen haben möchten, klicken Sie auf das Capybara, um in den Zen-Modus zu wechseln!",
+          "text": "{appName} verfügt über vertraute Layouts zum Skizzieren, Malen und Bearbeiten von Fotos, und jedes Werkzeug und Bedienfeld kann an jeden beliebigen Ort verschoben werden. Und wenn Sie einfach nur eine leere Leinwand ohne Ablenkungen haben möchten, klicken Sie auf das Capybara, um in den Zen-Modus zu wechseln!",
           "link": "Arbeitsbereiche"
         },
         "input": {
@@ -424,11 +424,11 @@ export const additionalDocsUI = {
         },
         "native": {
           "title": "Desktop und Tablet",
-          "text": "Capy Canvas ist für Linux, Windows, macOS, Android und iPadOS als Beta verfügbar. Hierbei handelt es sich um kompilierte native Apps, die plattformnative UI-Toolkits verwenden. Das bedeutet eine bessere Leistung und Akkulaufzeit auf jedem Gerät.",
+          "text": "{appName} ist für Linux, Windows, macOS, Android und iPadOS als Beta verfügbar. Hierbei handelt es sich um kompilierte native Apps, die plattformnative UI-Toolkits verwenden. Das bedeutet eine bessere Leistung und Akkulaufzeit auf jedem Gerät.",
           "link": "Systemarchitektur"
         }
       },
-      "start": "Capy Canvas kann vollständig in Ihrem Webbrowser ausgeführt werden, sogar offline. Dies ist ein schneller und einfacher Einstieg. Die Desktop- und Tablet-Apps sind jetzt als Beta verfügbar und bieten die beste Leistung und Hardwarekompatibilität.",
+      "start": "{appName} kann vollständig in Ihrem Webbrowser ausgeführt werden, sogar offline. Dies ist ein schneller und einfacher Einstieg. Die Desktop- und Tablet-Apps sind jetzt als Beta verfügbar und bieten die beste Leistung und Hardwarekompatibilität.",
       "links": {
         "quickstart": "Schnellstart",
         "illustration": "Illustrations-Tutorial"
@@ -436,7 +436,7 @@ export const additionalDocsUI = {
     }
   },
   "ru": {
-    "intro": "Capy Canvas — бесплатное приложение с открытым исходным кодом для создания эскизов, рисования и редактирования фотографий. Он вдохновлен дзеном капибар.",
+    "intro": "{appName} — бесплатное приложение с открытым исходным кодом для создания эскизов, рисования и редактирования фотографий. Он вдохновлен дзеном капибар.",
     "overview": "Обзор",
     "contents": "Содержание документации",
     "onPage": "На этой странице",
@@ -474,7 +474,7 @@ export const additionalDocsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "Capy Canvas использует Windows Ink для пера. В Windows в разделе «Кнопки пера» указана только одна боковая кнопка: «Нижняя боковая кнопка».",
+      "windows": "{appName} использует Windows Ink для пера. В Windows в разделе «Кнопки пера» указана только одна боковая кнопка: «Нижняя боковая кнопка».",
       "mac": "Если перо попадает не туда, проверьте в настройках планшета, к какому экрану он привязан. Используйте Command везде, где в руководствах написано Ctrl, и Option везде, где написано Alt.",
       "linux": "Приложению для Linux нужны сеанс Wayland и видеокарта с поддержкой Vulkan. Если нажим не работает или курсор оказывается не в том месте, проверьте настройки планшета в своей среде рабочего стола.",
       "ipad": "Большинство моделей Apple Pencil поддерживают нажим и наклон, но Apple Pencil (USB-C) не поддерживает нажим. Пальцы и ладонь никогда не рисуют.",
@@ -491,7 +491,7 @@ export const additionalDocsUI = {
         },
         "workspace": {
           "title": "Ваше рабочее пространство",
-          "text": "Capy Canvas поставляется со знакомыми макетами для создания эскизов, рисования и редактирования фотографий, а каждый инструмент и панель можно перемещать куда угодно. А если вам просто нужен чистый холст, не отвлекающий вас, щелкните Капибару, чтобы войти в режим Zen!",
+          "text": "{appName} поставляется со знакомыми макетами для создания эскизов, рисования и редактирования фотографий, а каждый инструмент и панель можно перемещать куда угодно. А если вам просто нужен чистый холст, не отвлекающий вас, щелкните Капибару, чтобы войти в режим Zen!",
           "link": "Рабочие пространства"
         },
         "input": {
@@ -511,11 +511,11 @@ export const additionalDocsUI = {
         },
         "native": {
           "title": "Рабочий стол и планшет",
-          "text": "Capy Canvas доступен в бета-версии для Linux, Windows, macOS, Android и iPadOS. Это скомпилированные собственные приложения, в которых используются собственные наборы инструментов пользовательского интерфейса. Это означает лучшую производительность и время автономной работы на каждом устройстве.",
+          "text": "{appName} доступен в бета-версии для Linux, Windows, macOS, Android и iPadOS. Это скомпилированные собственные приложения, в которых используются собственные наборы инструментов пользовательского интерфейса. Это означает лучшую производительность и время автономной работы на каждом устройстве.",
           "link": "Архитектура системы"
         }
       },
-      "start": "Capy Canvas может работать полностью в вашем веб-браузере, даже в автономном режиме. Это быстрый и простой способ начать работу. Приложения для компьютеров и планшетов, уже доступные в бета-версии, обеспечивают наилучшую производительность и совместимость с оборудованием.",
+      "start": "{appName} может работать полностью в вашем веб-браузере, даже в автономном режиме. Это быстрый и простой способ начать работу. Приложения для компьютеров и планшетов, уже доступные в бета-версии, обеспечивают наилучшую производительность и совместимость с оборудованием.",
       "links": {
         "quickstart": "Быстрый старт",
         "illustration": "Урок по иллюстрации"
@@ -523,7 +523,7 @@ export const additionalDocsUI = {
     }
   },
   "th": {
-    "intro": "Capy Canvas เป็นแอปโอเพ่นซอร์สฟรีสำหรับการสเก็ตช์ภาพ ลงสี และแก้ไขภาพ ได้รับแรงบันดาลใจจากเซนของคาปิบารา",
+    "intro": "{appName} เป็นแอปโอเพ่นซอร์สฟรีสำหรับการสเก็ตช์ภาพ ลงสี และแก้ไขภาพ ได้รับแรงบันดาลใจจากเซนของคาปิบารา",
     "overview": "ภาพรวม",
     "contents": "เนื้อหาเอกสาร",
     "onPage": "บนหน้านี้",
@@ -561,7 +561,7 @@ export const additionalDocsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "Capy Canvas ใช้ Windows Ink สำหรับปากกา บน Windows ปุ่มปากกาจะแสดงปุ่มด้านข้างเพียงปุ่มเดียว คือปุ่มด้านข้างล่าง",
+      "windows": "{appName} ใช้ Windows Ink สำหรับปากกา บน Windows ปุ่มปากกาจะแสดงปุ่มด้านข้างเพียงปุ่มเดียว คือปุ่มด้านข้างล่าง",
       "mac": "หากปากกาลงผิดตำแหน่ง ให้ตรวจสอบในการตั้งค่าแท็บเล็ตว่าแท็บเล็ตจับคู่กับหน้าจอใด ใช้ Command ทุกที่ที่คู่มือนี้ระบุว่า Ctrl และใช้ Option ทุกที่ที่ระบุว่า Alt",
       "linux": "แอป Linux ต้องใช้เซสชัน Wayland และการ์ดจอที่รองรับ Vulkan หากแรงกดไม่ทำงานหรือเคอร์เซอร์ไปผิดตำแหน่ง ให้ตรวจสอบการตั้งค่าแท็บเล็ตของเดสก์ท็อป",
       "ipad": "รุ่น Apple Pencil ส่วนใหญ่รองรับแรงกดและการเอียง แต่ Apple Pencil (USB-C) ไม่รองรับแรงกด นิ้วและฝ่ามือจะไม่วาดเส้น",
@@ -578,7 +578,7 @@ export const additionalDocsUI = {
         },
         "workspace": {
           "title": "พื้นที่ทำงานของคุณ",
-          "text": "Capy Canvas มาพร้อมกับเลย์เอาต์ที่คุ้นเคยสำหรับการสเก็ตช์ภาพ การลงสี และการแก้ไขภาพถ่าย โดยสามารถเคลื่อนย้ายเครื่องมือและแผงควบคุมทุกอย่างไปได้ทุกที่ที่คุณต้องการ และหากคุณต้องการเพียงผืนผ้าใบเปล่าๆ ที่ไม่มีสิ่งรบกวน ให้คลิกที่ Capybara เพื่อเข้าสู่โหมด Zen!",
+          "text": "{appName} มาพร้อมกับเลย์เอาต์ที่คุ้นเคยสำหรับการสเก็ตช์ภาพ การลงสี และการแก้ไขภาพถ่าย โดยสามารถเคลื่อนย้ายเครื่องมือและแผงควบคุมทุกอย่างไปได้ทุกที่ที่คุณต้องการ และหากคุณต้องการเพียงผืนผ้าใบเปล่าๆ ที่ไม่มีสิ่งรบกวน ให้คลิกที่ Capybara เพื่อเข้าสู่โหมด Zen!",
           "link": "พื้นที่ทำงาน"
         },
         "input": {
@@ -598,11 +598,11 @@ export const additionalDocsUI = {
         },
         "native": {
           "title": "เดสก์ท็อปและแท็บเล็ต",
-          "text": "Capy Canvas อยู่ในช่วงเบต้าสำหรับ Linux, Windows, macOS, Android และ iPadOS แอพเหล่านี้เป็นแอพเนทีฟที่คอมไพล์และใช้ชุดเครื่องมือ UI แบบเนทีฟของแพลตฟอร์ม ซึ่งหมายถึงประสิทธิภาพที่ดีขึ้นและอายุการใช้งานแบตเตอรี่ในทุกอุปกรณ์",
+          "text": "{appName} อยู่ในช่วงเบต้าสำหรับ Linux, Windows, macOS, Android และ iPadOS แอพเหล่านี้เป็นแอพเนทีฟที่คอมไพล์และใช้ชุดเครื่องมือ UI แบบเนทีฟของแพลตฟอร์ม ซึ่งหมายถึงประสิทธิภาพที่ดีขึ้นและอายุการใช้งานแบตเตอรี่ในทุกอุปกรณ์",
           "link": "สถาปัตยกรรมระบบ"
         }
       },
-      "start": "Capy Canvas สามารถทำงานได้ทั้งหมดในเว็บเบราว์เซอร์ของคุณ แม้ว่าจะออฟไลน์ก็ตาม นี่เป็นวิธีที่ง่ายและรวดเร็วในการเริ่มต้น แอปเดสก์ท็อปและแท็บเล็ตซึ่งขณะนี้อยู่ในช่วงเบต้า มอบประสิทธิภาพที่ดีที่สุดและความเข้ากันได้ของฮาร์ดแวร์",
+      "start": "{appName} สามารถทำงานได้ทั้งหมดในเว็บเบราว์เซอร์ของคุณ แม้ว่าจะออฟไลน์ก็ตาม นี่เป็นวิธีที่ง่ายและรวดเร็วในการเริ่มต้น แอปเดสก์ท็อปและแท็บเล็ตซึ่งขณะนี้อยู่ในช่วงเบต้า มอบประสิทธิภาพที่ดีที่สุดและความเข้ากันได้ของฮาร์ดแวร์",
       "links": {
         "quickstart": "เริ่มต้นใช้งานอย่างรวดเร็ว",
         "illustration": "บทช่วยสอนการวาดภาพประกอบ"
@@ -610,7 +610,7 @@ export const additionalDocsUI = {
     }
   },
   "vi": {
-    "intro": "Capy Canvas là một ứng dụng mã nguồn mở miễn phí để phác thảo, vẽ tranh và chỉnh sửa ảnh. Nó được lấy cảm hứng từ zen của capybaras.",
+    "intro": "{appName} là một ứng dụng mã nguồn mở miễn phí để phác thảo, vẽ tranh và chỉnh sửa ảnh. Nó được lấy cảm hứng từ zen của capybaras.",
     "overview": "Tổng quan",
     "contents": "Nội dung tài liệu",
     "onPage": "Trên trang này",
@@ -648,7 +648,7 @@ export const additionalDocsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "Capy Canvas dùng Windows Ink cho bút. Trên Windows, Nút bút chỉ có một nút bên: Nút bên dưới.",
+      "windows": "{appName} dùng Windows Ink cho bút. Trên Windows, Nút bút chỉ có một nút bên: Nút bên dưới.",
       "mac": "Nếu bút chạm sai vị trí, hãy kiểm tra trong cài đặt của bảng vẽ xem bảng vẽ được ánh xạ tới màn hình nào. Dùng Command ở mọi chỗ hướng dẫn ghi Ctrl, và Option ở mọi chỗ ghi Alt.",
       "linux": "Ứng dụng Linux cần phiên Wayland và card đồ họa hỗ trợ Vulkan. Nếu lực nhấn không hoạt động hoặc con trỏ đặt sai vị trí, hãy kiểm tra cài đặt bảng vẽ của môi trường desktop.",
       "ipad": "Hầu hết các mẫu Apple Pencil đều hỗ trợ lực nhấn và độ nghiêng, nhưng Apple Pencil (USB-C) không hỗ trợ lực nhấn. Ngón tay và lòng bàn tay không bao giờ vẽ.",
@@ -665,7 +665,7 @@ export const additionalDocsUI = {
         },
         "workspace": {
           "title": "Không gian làm việc của bạn",
-          "text": "Capy Canvas đi kèm với các bố cục quen thuộc để phác thảo, vẽ tranh và chỉnh sửa ảnh, đồng thời mọi công cụ và bảng điều khiển đều có thể được di chuyển đến bất cứ đâu bạn muốn. Và nếu bạn chỉ muốn một khung vẽ trống không gây phiền nhiễu, hãy nhấp vào Capybara để vào chế độ Zen!",
+          "text": "{appName} đi kèm với các bố cục quen thuộc để phác thảo, vẽ tranh và chỉnh sửa ảnh, đồng thời mọi công cụ và bảng điều khiển đều có thể được di chuyển đến bất cứ đâu bạn muốn. Và nếu bạn chỉ muốn một khung vẽ trống không gây phiền nhiễu, hãy nhấp vào Capybara để vào chế độ Zen!",
           "link": "Không gian làm việc"
         },
         "input": {
@@ -685,11 +685,11 @@ export const additionalDocsUI = {
         },
         "native": {
           "title": "Máy tính để bàn và máy tính bảng",
-          "text": "Capy Canvas đang ở giai đoạn beta trên Linux, Windows, macOS, Android và iPadOS. Đây là những ứng dụng gốc được biên dịch và sử dụng bộ công cụ giao diện người dùng gốc của nền tảng. Điều này có nghĩa là hiệu suất và thời lượng pin tốt hơn trên mọi thiết bị.",
+          "text": "{appName} đang ở giai đoạn beta trên Linux, Windows, macOS, Android và iPadOS. Đây là những ứng dụng gốc được biên dịch và sử dụng bộ công cụ giao diện người dùng gốc của nền tảng. Điều này có nghĩa là hiệu suất và thời lượng pin tốt hơn trên mọi thiết bị.",
           "link": "Kiến trúc hệ thống"
         }
       },
-      "start": "Capy Canvas có thể chạy hoàn toàn trên trình duyệt web của bạn, ngay cả khi ngoại tuyến. Đây là một cách nhanh chóng và dễ dàng để bắt đầu. Ứng dụng dành cho máy tính để bàn và máy tính bảng, hiện đang ở giai đoạn beta, mang lại hiệu suất và khả năng tương thích phần cứng tốt nhất.",
+      "start": "{appName} có thể chạy hoàn toàn trên trình duyệt web của bạn, ngay cả khi ngoại tuyến. Đây là một cách nhanh chóng và dễ dàng để bắt đầu. Ứng dụng dành cho máy tính để bàn và máy tính bảng, hiện đang ở giai đoạn beta, mang lại hiệu suất và khả năng tương thích phần cứng tốt nhất.",
       "links": {
         "quickstart": "Bắt đầu nhanh",
         "illustration": "Hướng dẫn vẽ minh họa"
@@ -697,7 +697,7 @@ export const additionalDocsUI = {
     }
   },
   "tr": {
-    "intro": "Capy Canvas, çizim, boyama ve fotoğraf düzenlemeye yönelik ücretsiz, açık kaynaklı bir uygulamadır. Kapibaraların zeninden ilham alıyor.",
+    "intro": "{appName}, çizim, boyama ve fotoğraf düzenlemeye yönelik ücretsiz, açık kaynaklı bir uygulamadır. Kapibaraların zeninden ilham alıyor.",
     "overview": "Genel bakış",
     "contents": "Dokümantasyon içeriği",
     "onPage": "Bu sayfada",
@@ -735,7 +735,7 @@ export const additionalDocsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "Capy Canvas, kalem için Windows Ink kullanır. Windows'ta Kalem düğmeleri yalnızca bir yan düğme listeler: Alt yan düğme.",
+      "windows": "{appName}, kalem için Windows Ink kullanır. Windows'ta Kalem düğmeleri yalnızca bir yan düğme listeler: Alt yan düğme.",
       "mac": "Kalem yanlış yere denk geliyorsa tabletinizin ayarlarından hangi ekrana eşlendiğini kontrol edin. Bu kılavuzlarda Ctrl yazan her yerde Command, Alt yazan her yerde Option kullanın.",
       "linux": "Linux uygulaması bir Wayland oturumu ve Vulkan destekleyen bir ekran kartı gerektirir. Basınç çalışmıyorsa veya imleç yanlış yere geliyorsa masaüstünüzün tablet ayarlarını kontrol edin.",
       "ipad": "Çoğu Apple Pencil modeli basınç ve eğimi destekler ancak Apple Pencil (USB-C) basıncı desteklemez. Parmaklar ve avuç içi hiçbir zaman çizim yapmaz.",
@@ -752,7 +752,7 @@ export const additionalDocsUI = {
         },
         "workspace": {
           "title": "Çalışma alanınız",
-          "text": "Capy Canvas eskiz, boyama ve fotoğraf düzenleme için tanıdık düzenlerle birlikte gelir ve her araç ve panel istediğiniz yere taşınabilir. Ve eğer dikkatinizin dağılmadığı boş bir tuval istiyorsanız, Zen moduna girmek için Capybara'ya tıklayın!",
+          "text": "{appName} eskiz, boyama ve fotoğraf düzenleme için tanıdık düzenlerle birlikte gelir ve her araç ve panel istediğiniz yere taşınabilir. Ve eğer dikkatinizin dağılmadığı boş bir tuval istiyorsanız, Zen moduna girmek için Capybara'ya tıklayın!",
           "link": "Çalışma alanları"
         },
         "input": {
@@ -772,11 +772,11 @@ export const additionalDocsUI = {
         },
         "native": {
           "title": "Masaüstü ve tablet",
-          "text": "Capy Canvas, Linux, Windows, macOS, Android ve iPadOS için beta aşamasında. Bunlar derlenmiş yerel uygulamalardır ve platforma özgü kullanıcı arayüzü araç kitlerini kullanır. Bu, her cihazda daha iyi performans ve pil ömrü anlamına gelir.",
+          "text": "{appName}, Linux, Windows, macOS, Android ve iPadOS için beta aşamasında. Bunlar derlenmiş yerel uygulamalardır ve platforma özgü kullanıcı arayüzü araç kitlerini kullanır. Bu, her cihazda daha iyi performans ve pil ömrü anlamına gelir.",
           "link": "Sistem mimarisi"
         }
       },
-      "start": "Capy Canvas tamamen web tarayıcınızda, hatta çevrimdışı bile çalışabilir. Bu, başlamanın hızlı ve kolay bir yoludur. Şu anda beta aşamasındaki masaüstü ve tablet uygulamaları en iyi performansı ve donanım uyumluluğunu sunar.",
+      "start": "{appName} tamamen web tarayıcınızda, hatta çevrimdışı bile çalışabilir. Bu, başlamanın hızlı ve kolay bir yoludur. Şu anda beta aşamasındaki masaüstü ve tablet uygulamaları en iyi performansı ve donanım uyumluluğunu sunar.",
       "links": {
         "quickstart": "Hızlı başlangıç",
         "illustration": "İllüstrasyon eğitimi"
@@ -784,7 +784,7 @@ export const additionalDocsUI = {
     }
   },
   "it": {
-    "intro": "Capy Canvas è un'app open source gratuita per disegnare, dipingere e modificare foto. Si ispira allo zen dei capibara.",
+    "intro": "{appName} è un'app open source gratuita per disegnare, dipingere e modificare foto. Si ispira allo zen dei capibara.",
     "overview": "Panoramica",
     "contents": "Contenuti della documentazione",
     "onPage": "In questa pagina",
@@ -822,7 +822,7 @@ export const additionalDocsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "Capy Canvas usa Windows Ink per la penna. Su Windows, Pulsanti della penna elenca un solo pulsante laterale: Pulsante laterale inferiore.",
+      "windows": "{appName} usa Windows Ink per la penna. Su Windows, Pulsanti della penna elenca un solo pulsante laterale: Pulsante laterale inferiore.",
       "mac": "Se la penna arriva nel punto sbagliato, controlla nelle impostazioni del tablet a quale schermo è associato. Usa Command dove queste guide indicano Ctrl, e Option dove indicano Alt.",
       "linux": "L'app per Linux richiede una sessione Wayland e una scheda grafica che supporti Vulkan. Se la pressione non funziona o il cursore finisce nel punto sbagliato, controlla le impostazioni del tablet del tuo desktop.",
       "ipad": "La maggior parte dei modelli di Apple Pencil supporta pressione e inclinazione, ma Apple Pencil (USB-C) non supporta la pressione. Dita e palmo non disegnano mai.",
@@ -839,7 +839,7 @@ export const additionalDocsUI = {
         },
         "workspace": {
           "title": "Il tuo spazio di lavoro",
-          "text": "Capy Canvas è dotato di layout familiari per schizzi, pittura e fotoritocco e ogni strumento e pannello può essere spostato dove preferisci. E se vuoi solo una tela bianca senza distrazioni, fai clic sul Capibara per accedere alla modalità Zen!",
+          "text": "{appName} è dotato di layout familiari per schizzi, pittura e fotoritocco e ogni strumento e pannello può essere spostato dove preferisci. E se vuoi solo una tela bianca senza distrazioni, fai clic sul Capibara per accedere alla modalità Zen!",
           "link": "Aree di lavoro"
         },
         "input": {
@@ -859,11 +859,11 @@ export const additionalDocsUI = {
         },
         "native": {
           "title": "Desktop e tablet",
-          "text": "Capy Canvas è in beta per Linux, Windows, macOS, Android e iPadOS. Si tratta di app native compilate e utilizzano toolkit dell'interfaccia utente nativi della piattaforma. Ciò significa prestazioni e durata della batteria migliori su ogni dispositivo.",
+          "text": "{appName} è in beta per Linux, Windows, macOS, Android e iPadOS. Si tratta di app native compilate e utilizzano toolkit dell'interfaccia utente nativi della piattaforma. Ciò significa prestazioni e durata della batteria migliori su ogni dispositivo.",
           "link": "Architettura del sistema"
         }
       },
-      "start": "Capy Canvas può essere eseguito interamente nel tuo browser web, anche offline. Questo è un modo semplice e veloce per iniziare. Le app desktop e per tablet, ora in beta, offrono le migliori prestazioni e compatibilità hardware.",
+      "start": "{appName} può essere eseguito interamente nel tuo browser web, anche offline. Questo è un modo semplice e veloce per iniziare. Le app desktop e per tablet, ora in beta, offrono le migliori prestazioni e compatibilità hardware.",
       "links": {
         "quickstart": "Guida rapida",
         "illustration": "Tutorial di illustrazione"

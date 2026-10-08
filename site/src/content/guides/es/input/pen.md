@@ -27,7 +27,7 @@ lápiz, y el trazo real lo sustituye a medida que dibujas. Los ajustes están en
 
 - **Activar predicción de trazos** activa o desactiva los dos tipos de predicción.
 - **Usar predicción de trazos de *sistema***, por ejemplo **Usar predicción de trazos de Windows**, usa la predicción del sistema o del navegador.
-- **Cantidad de predicción** define cuánto se adelanta la predicción propia de Capy Canvas, de 0 a 64 ms.
+- **Cantidad de predicción** define cuánto se adelanta la predicción propia de {appName}, de 0 a 64 ms.
 
 Los dos interruptores están activados de forma predeterminada, y **Cantidad de
 predicción** es 16 ms. Mientras **Activar predicción de trazos** está desactivado,
@@ -124,5 +124,5 @@ ajuste propio del iPad en **Ajustes > Apple Pencil**.
 - «Switch between current tool and eraser» cambia al **Borrador** y vuelve.
 - «Switch between current tool and last used» cambia a la herramienta que elegiste antes.
 
-Las demás opciones no hacen nada en Capy Canvas. El gesto de apretar actúa al soltar. Cuando
+Las demás opciones no hacen nada en {appName}. El gesto de apretar actúa al soltar. Cuando
 el Apple Pencil se mantiene sobre la pantalla sin tocarla, aparece el cursor.

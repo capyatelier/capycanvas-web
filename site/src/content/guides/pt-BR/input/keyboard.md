@@ -23,7 +23,7 @@ Faça uma das seguintes ações:
 ## Predefinições de mapa de atalhos
 
 Você pode usar teclas inspiradas em outro aplicativo. Escolha uma **Predefinição**
-em **Mapa de atalhos**: **CapyCanvas** (o padrão), **Estilo Photoshop**, **Estilo
+em **Mapa de atalhos**: **{appName}** (o padrão), **Estilo Photoshop**, **Estilo
 Krita**, **Estilo Clip Studio Paint**, **Estilo Procreate**, **Estilo GIMP** ou
 **Estilo Affinity**.
 

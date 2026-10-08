@@ -1,10 +1,10 @@
 ---
 title: "빠른 시작"
-description: "Capy Canvas 열기, 첫 빈 그림에 그리기, .capy 파일로 저장하기, PNG 내보내기."
+description: "{appName} 열기, 첫 빈 그림에 그리기, .capy 파일로 저장하기, PNG 내보내기."
 related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
 ---
 
-## Capy Canvas 열기
+## {appName} 열기
 
 다음 중 하나를 수행합니다.
 
@@ -27,12 +27,12 @@ related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard
 
 ![새 그림의 레이어 패널. 종이 위에 현재 잉크가 있습니다.](shot:files/new-layers)
 
-Capy Canvas를 처음 열면 [페인팅](/ko/docs/start/workspaces/) 작업 영역에 빈 그림이 표시되고,
+{appName}를 처음 열면 [페인팅](/ko/docs/start/workspaces/) 작업 영역에 빈 그림이 표시되고,
 제목 표시줄에 “제목 없음 · 2048 × 1536”이 나타납니다. 흰색 채우기 레이어인 **종이** 위에서
 빈 페인팅 레이어인 **현재 잉크**가 선택되어 있습니다. 도구는 **펜**, 브러시는 **G펜**이고
 색은 검은색에 가까운 색입니다.
 
-그다음부터는 마지막으로 사용한 작업 영역과 열려 있던 그림으로 Capy Canvas가 열립니다.
+그다음부터는 마지막으로 사용한 작업 영역과 열려 있던 그림으로 {appName}가 열립니다.
 
 ## 그리기
 

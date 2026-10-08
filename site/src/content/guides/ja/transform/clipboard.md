@@ -1,6 +1,6 @@
 ---
 title: "コピーと貼り付け"
-description: "Capy Canvas内やアプリ間で、画素をコピーして新しいレイヤーとして貼り付ける方法。"
+description: "{appName}内やアプリ間で、画素をコピーして新しいレイヤーとして貼り付ける方法。"
 related: ["selections/working", "transform/move-transform", "layers/working", "files/open-save"]
 ---
 
@@ -41,7 +41,7 @@ related: ["selections/working", "transform/move-transform", "layers/working", "f
 
 クリップボードの内容を新しいレイヤーとして追加し、編集中のレイヤーにします。
 
-- Capy Canvasからのコピーは、コピー元の位置が表示範囲内にあればその位置に、そうでなければ表示の中央に配置されます。
+- {appName}からのコピーは、コピー元の位置が表示範囲内にあればその位置に、そうでなければ表示の中央に配置されます。
 - ほかのアプリの画像は、変形ボックスに入った状態で開きます。**適用**で画像を配置し、**キャンセル**で貼り付けを破棄します（[移動と変形](/ja/docs/transform/move-transform/)を参照）。
 
 ## 元の位置に貼り付け
@@ -54,7 +54,7 @@ related: ["selections/working", "transform/move-transform", "layers/working", "f
 
 ## アプリ間の貼り付け
 
-Capy Canvasからのコピーは、ほかのアプリには8ビットsRGBのPNG画像として渡されます。そのコピーがクリップボードに残っている間にCapy Canvasに貼り付け直すと、元のビット深度のまま使われます。
+{appName}からのコピーは、ほかのアプリには8ビットsRGBのPNG画像として渡されます。そのコピーがクリップボードに残っている間に{appName}に貼り付け直すと、元のビット深度のまま使われます。
 
 色の設定が異なる作品に貼り付けたコピーは[写真レイヤー](/ja/docs/layers/types/)になり、コピー自体のカラープロファイルから変換されます。
 

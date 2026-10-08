@@ -19,7 +19,7 @@ Thực hiện một trong các cách sau:
 - Gõ “Tùy chọn” vào [tìm lệnh](/vi/docs/start/command-search/).
 
 Tùy chọn mở ở trang **Diện mạo**. **Trợ giúp > Phím tắt** mở Tùy chọn ở trang
-**Phím tắt**, còn **Trợ giúp > Giới thiệu Capy Canvas** mở ở trang **Giới thiệu**.
+**Phím tắt**, còn **Trợ giúp > Giới thiệu {appName}** mở ở trang **Giới thiệu**.
 
 Khi Tùy chọn đang mở, phím tắt trên khung vẽ, nút bút và thao tác chạm ngón tay không
 có tác dụng.

@@ -1,6 +1,6 @@
 ---
 title: "Copiar y pegar"
-description: "Copiar píxeles y pegarlos como capas nuevas, dentro de Capy Canvas y entre aplicaciones."
+description: "Copiar píxeles y pegarlos como capas nuevas, dentro de {appName} y entre aplicaciones."
 related: ["selections/working", "transform/move-transform", "layers/working", "files/open-save"]
 ---
 
@@ -50,7 +50,7 @@ Una copia grande muestra un aviso de progreso con **Cancelar**.
 
 Añade el portapapeles como una capa nueva activa.
 
-- Una copia de Capy Canvas aparece donde se copió si ese sitio está a la vista, o en el centro de la vista si no lo está.
+- Una copia de {appName} aparece donde se copió si ese sitio está a la vista, o en el centro de la vista si no lo está.
 - Una imagen de otra aplicación se abre en el cuadro de transformación. **Aplicar** coloca la imagen y **Cancelar** descarta el pegado (consulta [Mover y transformar](/es/docs/transform/move-transform/)).
 
 ## Pegar en su posición
@@ -67,8 +67,8 @@ selección se quita. **Pegar dentro** necesita una selección.
 
 ## Pegar entre aplicaciones
 
-Las demás aplicaciones reciben una copia de Capy Canvas como imagen PNG sRGB de
-8 bits. Al volver a pegar en Capy Canvas, se usa la copia con toda su
+Las demás aplicaciones reciben una copia de {appName} como imagen PNG sRGB de
+8 bits. Al volver a pegar en {appName}, se usa la copia con toda su
 profundidad de bits mientras siga en el portapapeles.
 
 Una copia pegada en un dibujo con otros ajustes de color pasa a ser una

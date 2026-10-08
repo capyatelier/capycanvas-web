@@ -34,7 +34,7 @@ avez exécutées en dernier depuis la recherche, puis **Annuler**,
 qui ne peuvent pas s’exécuter pour l’instant sont omises.
 
 Seules les entrées exécutées depuis la recherche comptent comme récentes. La liste
-des entrées récentes est vidée quand vous quittez Capy Canvas.
+des entrées récentes est vidée quand vous quittez {appName}.
 
 ## Rechercher
 

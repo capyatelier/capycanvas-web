@@ -66,8 +66,7 @@ for both.
 ![The Tool Set panel with Fill selected and the Visible artwork, Editing layer and Reference layers choices below.](shot:drawing/fill-tool-set)
 
 Each tool keeps its own source. Fill starts on **Visible artwork**, and
-Enclose and Fill returns to **Reference layers** each time you open Capy
-Canvas.
+Enclose and Fill returns to **Reference layers** each time you open {appName}.
 
 If Fill uses **Reference layers** and no layer is marked, Fill paints nothing
 and a notice offers to mark the layer below.

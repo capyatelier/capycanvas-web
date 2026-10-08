@@ -1,6 +1,6 @@
 ---
 title: "Copiar e colar"
-description: "Como copiar pixels e colá-los como novas camadas, dentro do Capy Canvas e entre aplicativos."
+description: "Como copiar pixels e colá-los como novas camadas, dentro do {appName} e entre aplicativos."
 related: ["selections/working", "transform/move-transform", "layers/working", "files/open-save"]
 ---
 
@@ -49,7 +49,7 @@ Uma cópia grande mostra um aviso de progresso com **Cancelar**.
 
 Adiciona o conteúdo da área de transferência como uma nova camada ativa.
 
-- Uma cópia feita no Capy Canvas é colada no lugar de onde foi copiada, se esse lugar estiver à vista, ou no centro da visualização, se não estiver.
+- Uma cópia feita no {appName} é colada no lugar de onde foi copiada, se esse lugar estiver à vista, ou no centro da visualização, se não estiver.
 - Uma imagem de outro aplicativo se abre na caixa de transformação. **Aplicar** posiciona a imagem e **Cancelar** descarta a colagem (consulte [Mover e Transformar](/pt-BR/docs/transform/move-transform/)).
 
 ## Colar no lugar
@@ -66,8 +66,8 @@ Funciona como **Colar no lugar** e dá à nova camada uma
 
 ## Colar entre aplicativos
 
-Os outros aplicativos recebem uma cópia do Capy Canvas como uma imagem PNG sRGB
-de 8 bits. Colar de volta no Capy Canvas usa a cópia na profundidade de bits
+Os outros aplicativos recebem uma cópia do {appName} como uma imagem PNG sRGB
+de 8 bits. Colar de volta no {appName} usa a cópia na profundidade de bits
 completa enquanto ela ainda está na área de transferência.
 
 Uma cópia colada em um desenho com outras configurações de cor vira uma

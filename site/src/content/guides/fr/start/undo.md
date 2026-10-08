@@ -49,7 +49,7 @@ premier.
 
 L’enregistrement ne vide pas l’historique. Un dessin ouvert depuis un fichier
 `.capy` commence avec un historique vide, mais les dessins qui se rouvrent au
-redémarrage de Capy Canvas conservent leurs étapes d’annulation.
+redémarrage de {appName} conservent leurs étapes d’annulation.
 
 ## Changements de disposition
 

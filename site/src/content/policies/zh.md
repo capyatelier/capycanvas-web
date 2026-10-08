@@ -2,15 +2,15 @@
 effectiveDate: "2026-09-10"
 ---
 
-本政策适用于 Capy Canvas 以及 capycanvas.art 和 editor.capycanvas.art 网站。Capy Canvas 由 Zachary Drach 以 Capy Atelier 项目名称运营。
+本政策适用于 {appName} 以及 capycanvas.art 和 editor.capycanvas.art 网站。{appName} 由 Zachary Drach 以 Capy Atelier 项目名称运营。
 
 如有隐私问题或相关请求，请发送邮件至 [zackdrach@gmail.com](mailto:zackdrach@gmail.com)。
 
 ## 应用数据
 
-Capy Canvas 在您的设备上处理绘画，并访问您选择打开或保存的文件。应用不会向我们发送您的作品或导入的图片。如果您在寻求支持时提交文件，我们会收到这些文件。
+{appName} 在您的设备上处理绘画，并访问您选择打开或保存的文件。应用不会向我们发送您的作品或导入的图片。如果您在寻求支持时提交文件，我们会收到这些文件。
 
-设置和网站偏好保存在您的设备上。网页版还会缓存应用文件，以供离线使用。使用 Capy Canvas 无需注册账户。
+设置和网站偏好保存在您的设备上。网页版还会缓存应用文件，以供离线使用。使用 {appName} 无需注册账户。
 
 我们不投放广告、不进行使用情况分析、不出售个人信息，也不嵌入跨网站跟踪您的追踪器。
 

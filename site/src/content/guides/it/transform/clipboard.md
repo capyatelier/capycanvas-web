@@ -1,6 +1,6 @@
 ---
 title: "Copiare e incollare"
-description: "Copiare pixel e incollarli come nuovi livelli, all'interno di Capy Canvas e tra app diverse."
+description: "Copiare pixel e incollarli come nuovi livelli, all'interno di {appName} e tra app diverse."
 related: ["selections/working", "transform/move-transform", "layers/working", "files/open-save"]
 ---
 
@@ -51,7 +51,7 @@ Una copia di grandi dimensioni mostra un avviso di avanzamento con **Annulla**.
 
 Aggiunge il contenuto degli appunti come nuovo livello attivo.
 
-- Una copia da Capy Canvas finisce nel punto da cui è stata copiata se quel punto è visibile, altrimenti al centro della vista.
+- Una copia da {appName} finisce nel punto da cui è stata copiata se quel punto è visibile, altrimenti al centro della vista.
 - Un'immagine da un'altra app si apre nel riquadro di trasformazione. **Applica** posiziona l'immagine e **Annulla** scarta l'operazione (vedi [Spostamento e trasformazione](/it/docs/transform/move-transform/)).
 
 ## Incolla nella stessa posizione
@@ -68,8 +68,8 @@ viene rimossa. **Incolla dentro** richiede una selezione.
 
 ## Incollare tra app diverse
 
-Le altre app ricevono una copia da Capy Canvas come immagine PNG sRGB a 8 bit.
-Incollando di nuovo in Capy Canvas, viene usata la copia con la sua profondità
+Le altre app ricevono una copia da {appName} come immagine PNG sRGB a 8 bit.
+Incollando di nuovo in {appName}, viene usata la copia con la sua profondità
 in bit completa finché è ancora negli appunti.
 
 Una copia incollata in un disegno con impostazioni colore diverse diventa un

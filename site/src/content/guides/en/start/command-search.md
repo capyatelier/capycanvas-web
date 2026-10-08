@@ -32,7 +32,7 @@ from search, then **Undo**, **Fit canvas**, **Save**, **Preferences** and
 **Keyboard Shortcuts**. Entries that can't run right now are left out.
 
 Only entries you run from search count as recent. The recent list is cleared
-when you quit Capy Canvas.
+when you quit {appName}.
 
 ## Searching
 

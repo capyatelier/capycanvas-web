@@ -98,7 +98,7 @@ ne pouvez pas retirer la dernière palette.
 ## Importer et exporter des palettes
 
 Pour importer un fichier de palette, sélectionnez **+** dans la liste des
-palettes et choisissez **Import Palette…**. Capy Canvas lit les fichiers
+palettes et choisissez **Import Palette…**. {appName} lit les fichiers
 `.capycolor`, `.aco`, `.cls`, `.swatches`, `.ase`, `.afpalette`, `.gpl`, `.kpl`
 et `.json` jusqu’à 1 Mo. Le fichier devient une nouvelle palette, avec le nom
 enregistré dans le fichier ou le nom du fichier.
@@ -116,7 +116,7 @@ Le panneau indique combien de couleurs ont été écrêtées ou rendues opaques.
 
 ## Palettes de départ
 
-Capy Canvas est fourni avec Étude marine, Arcade pixel, Fantaisie sombre, Pop
+{appName} est fourni avec Étude marine, Arcade pixel, Fantaisie sombre, Pop
 art, Pastels sucrés, Impression riso, Synthwave, Impression années 70, Gravure
 sur bois et Encre. Vous pouvez modifier les palettes de départ comme n’importe
 quelle autre palette. Une palette de départ retirée ne revient pas.

@@ -33,8 +33,7 @@ Alan boşken listede en fazla beş girdi bulunur: önce aramadan en son
 **Tercihler** ve **Klavye kısayolları**. O anda çalıştırılamayan girdiler listede
 yer almaz.
 
-Yalnızca aramadan çalıştırdığınız girdiler son kullanılanlara eklenir. Capy
-Canvas'tan çıktığınızda son kullanılanlar listesi temizlenir.
+Yalnızca aramadan çalıştırdığınız girdiler son kullanılanlara eklenir. {appName}'tan çıktığınızda son kullanılanlar listesi temizlenir.
 
 ## Arama
 

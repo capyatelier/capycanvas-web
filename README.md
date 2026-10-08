@@ -123,8 +123,8 @@ workspace showcase, the original short description, three primary links, and
 the language selector. Keep this minimal, viewport-sized design: the accessible
 heading stays visually hidden, and the homepage has no extra content sections
 or language suggestion outside the original menu. The document title describes
-painting and photo editing, and `WebSite` structured data identifies Capy Canvas
-and its alternate spelling, CapyCanvas. Homepage metadata and other pages’
+painting and photo editing, and `WebSite` structured data uses the localized app name
+and its global search aliases. Homepage metadata and other pages’
 language suggestions live in `site/src/data/home-content.mjs`.
 The showcase is a slideshow that crossfades between real Sketch, Paint and
 Photo screenshots every few seconds. A small indicator overlaid on the screenshot
@@ -136,6 +136,25 @@ to fit the viewport. Other pages have a small footer with a privacy link
 and a Capy Atelier credit. All pages use borderless controls. Source translations live
 in `site/src/data/content.mjs`; each language gets static HTML, appropriate metadata,
 canonical and alternate links, and a sitemap entry.
+
+## Localized app names
+
+`site/src/data/branding.mjs` defines the approved names: カピカン for Japanese,
+水豚画布 for Simplified Chinese, 카피 캔버스 for Korean, Капи Канвас for Russian,
+คาปิ แคนวาส for Thai, and Capy Canvas for the other site languages. The map also
+reserves 水豚畫布 for a future Traditional Chinese translation; the current `zh`
+route remains Simplified Chinese.
+
+Write `{appName}` wherever the app is named in translation data, Markdown,
+frontmatter, image descriptions or captions. Translate the surrounding words,
+and keep the placeholder unchanged. Headers, page titles, accessibility labels
+and search metadata use the same map; search aliases retain the global name.
+
+Run `npm run check:branding` for a quick source check. The build runs it before
+rendering, and `npm test` checks substitution and the published names. New
+languages need an approved name in the map; an unknown locale fails instead of
+using an English fallback. Adding a language also follows the existing route,
+content and capture requirements.
 
 ## Downloads and past versions
 

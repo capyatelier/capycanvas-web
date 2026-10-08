@@ -23,7 +23,7 @@ Aşağıdakilerden birini yapın:
 ## Tuş eşlemesi hazır ayarları
 
 Başka bir uygulamayı örnek alan tuşlar kullanabilirsiniz. **Tuş eşlemesi**
-altında bir **Hazır ayar** seçin: **CapyCanvas** (varsayılan), **Photoshop
+altında bir **Hazır ayar** seçin: **{appName}** (varsayılan), **Photoshop
 tarzı**, **Krita tarzı**, **Clip Studio Paint tarzı**, **Procreate tarzı**,
 **GIMP tarzı** veya **Affinity tarzı**.
 

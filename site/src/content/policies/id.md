@@ -2,15 +2,15 @@
 effectiveDate: "2026-09-10"
 ---
 
-Kebijakan ini mencakup Capy Canvas dan situs web capycanvas.art dan editor.capycanvas.art. Capy Canvas dioperasikan oleh Zachary Drach dengan nama proyek Capy Atelier.
+Kebijakan ini mencakup {appName} dan situs web capycanvas.art dan editor.capycanvas.art. {appName} dioperasikan oleh Zachary Drach dengan nama proyek Capy Atelier.
 
 Untuk pertanyaan atau permintaan privasi, kirim email ke [zackdrach@gmail.com](mailto:zackdrach@gmail.com).
 
 ## Data aplikasi
 
-Capy Canvas memproses gambar di perangkat Anda dan mengakses file yang Anda pilih untuk dibuka atau disimpan. Aplikasi tidak mengirimkan gambar Anda atau gambar yang diimpor kepada kami. Kami menerima file jika Anda mengirimkannya dengan permintaan dukungan.
+{appName} memproses gambar di perangkat Anda dan mengakses file yang Anda pilih untuk dibuka atau disimpan. Aplikasi tidak mengirimkan gambar Anda atau gambar yang diimpor kepada kami. Kami menerima file jika Anda mengirimkannya dengan permintaan dukungan.
 
-Pengaturan dan preferensi situs web disimpan di perangkat Anda. Aplikasi web juga menyimpan file aplikasi untuk penggunaan offline. Capy Canvas tidak memerlukan akun.
+Pengaturan dan preferensi situs web disimpan di perangkat Anda. Aplikasi web juga menyimpan file aplikasi untuk penggunaan offline. {appName} tidak memerlukan akun.
 
 Kami tidak menggunakan periklanan atau analisis penggunaan, menjual informasi pribadi, atau menyematkan pelacak yang mengikuti Anda di seluruh situs web.
 

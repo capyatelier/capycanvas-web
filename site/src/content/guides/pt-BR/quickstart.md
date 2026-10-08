@@ -1,10 +1,10 @@
 ---
 title: "Início rápido"
-description: "Como abrir o Capy Canvas, desenhar no primeiro desenho em branco, salvá-lo como arquivo .capy e exportar um PNG."
+description: "Como abrir o {appName}, desenhar no primeiro desenho em branco, salvá-lo como arquivo .capy e exportar um PNG."
 related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
 ---
 
-## Abrir o Capy Canvas
+## Abrir o {appName}
 
 Faça uma das seguintes ações:
 
@@ -27,13 +27,13 @@ Depois da primeira visita, o editor web abre também sem conexão com a internet
 
 ![O painel Camadas de um desenho novo, com Tinta atual acima de Papel.](shot:files/new-layers)
 
-Na primeira vez que você abre o Capy Canvas, ele mostra a área de trabalho
+Na primeira vez que você abre o {appName}, ele mostra a área de trabalho
 [Pintura](/pt-BR/docs/start/workspaces/) com um desenho em branco, e a barra de título
 mostra "Sem título · 2048 × 1536". **Tinta atual**, uma camada de pintura vazia, está
 selecionada acima de **Papel**, uma camada de preenchimento branca. A ferramenta
 **Caneta** está ativa, com o pincel **Caneta G** e uma cor quase preta.
 
-Nas vezes seguintes, o Capy Canvas abre com a última área de trabalho usada e os
+Nas vezes seguintes, o {appName} abre com a última área de trabalho usada e os
 desenhos que estavam abertos.
 
 ## Desenhar

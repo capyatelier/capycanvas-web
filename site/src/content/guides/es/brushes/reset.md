@@ -12,7 +12,7 @@ valor original.
 Cada cambio en un ajuste del pincel se guarda al instante con su ajuste preestablecido.
 
 - Los cambios se comparten entre todos los espacios de trabajo, incluidos los que creas tú.
-- Los cambios se conservan al reiniciar Capy Canvas.
+- Los cambios se conservan al reiniciar {appName}.
 - Los ajustes de los pinceles no se guardan en los archivos `.capy`.
 - Un cambio en un ajuste del pincel no es un paso de deshacer, y el Historial de distribución no muestra los cambios en los pinceles.
 - Un pincel no conserva ningún color. Pinta con el color actual del [panel de color](/es/docs/color/color-panel/).

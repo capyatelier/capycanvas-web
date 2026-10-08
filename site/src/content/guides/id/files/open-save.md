@@ -20,7 +20,7 @@ Lakukan salah satu langkah berikut:
 - Tekan **Ctrl+O**.
 - Di Lukis dan Foto, pilih **Buka…** di bilah alat Perintah.
 - Di editor web atau di Linux, seret berkas ke nama gambar atau ke tab di bilah judul.
-- Jika Anda memasang editor web sebagai aplikasi, buka berkas `.capy`, `.png`, `.jpg`, `.tif`, `.avif`, atau `.exr` dengan Capy Canvas dari sistem Anda.
+- Jika Anda memasang editor web sebagai aplikasi, buka berkas `.capy`, `.png`, `.jpg`, `.tif`, `.avif`, atau `.exr` dengan {appName} dari sistem Anda.
 
 ## Foto
 
@@ -86,7 +86,7 @@ seleksi yang sedang aktif.
 
 ## Gambar hanya-lihat
 
-Berkas `.capy` yang tidak dapat diedit oleh Capy Canvas, misalnya berkas yang rusak,
+Berkas `.capy` yang tidak dapat diedit oleh {appName}, misalnya berkas yang rusak,
 terbuka di dialog, bukan di tab. **Copy Original File…** menyimpan salinan berkas, dan
 **Export Preview Image…** menyimpan pratinjau gambar sebagai PNG.
 
@@ -145,12 +145,12 @@ jendela tertutup.
 ## Membuka kembali setelah dimulai ulang
 
 Semua gambar yang terbuka, baik sudah disimpan maupun belum, terbuka kembali saat Anda
-memulai Capy Canvas berikutnya, masing-masing dengan riwayat urungkan, tampilan, seleksi,
-dan ekspor terakhirnya. Keluar dari Capy Canvas tidak meminta Anda menyimpan.
+memulai {appName} berikutnya, masing-masing dengan riwayat urungkan, tampilan, seleksi,
+dan ekspor terakhirnya. Keluar dari {appName} tidak meminta Anda menyimpan.
 
 Di editor web, menghapus data situs akan menghapus gambar yang belum disimpan.
 
-Setelah Capy Canvas tertutup secara tak terduga, gambar yang terbuka kembali menampilkan
+Setelah {appName} tertutup secara tak terduga, gambar yang terbuka kembali menampilkan
 "(dipulihkan)" setelah namanya sampai Anda menyimpannya.
 
 ## Jendela Baru

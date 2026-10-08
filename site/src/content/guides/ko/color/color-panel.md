@@ -63,7 +63,7 @@ related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-manag
 - 명령 검색에서 **전경색과 배경색 교환**을 선택합니다.
 - Photoshop 스타일, Krita 스타일, Clip Studio Paint 스타일, GIMP 스타일 키맵에서는 **X** 키를, Affinity 스타일에서는 **Shift+X** 키를 누릅니다.
 
-선택된 견본은 그대로 유지됩니다. CapyCanvas 키맵에는 **색상 교환**에 지정된 키가 없습니다.
+선택된 견본은 그대로 유지됩니다. {appName} 키맵에는 **색상 교환**에 지정된 키가 없습니다.
 
 ## 검정과 흰색
 

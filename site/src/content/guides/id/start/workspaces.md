@@ -4,9 +4,8 @@ description: "Ruang kerja Sketsa, Lukis, dan Foto, cara berpindah ruang kerja, d
 related: ["customize/workspaces", "customize/panels", "customize/toolbars", "customize/zen"]
 ---
 
-Ruang kerja adalah susunan bilah judul, bilah alat, dan panel yang tersimpan. Capy
-Canvas menyertakan tiga ruang kerja: **Sketsa**, **Lukis**, dan **Foto**. Saat pertama
-kali dibuka, Capy Canvas menampilkan Lukis, dan setelah itu ruang kerja yang terakhir
+Ruang kerja adalah susunan bilah judul, bilah alat, dan panel yang tersimpan. {appName} menyertakan tiga ruang kerja: **Sketsa**, **Lukis**, dan **Foto**. Saat pertama
+kali dibuka, {appName} menampilkan Lukis, dan setelah itu ruang kerja yang terakhir
 Anda gunakan.
 
 ## Sketsa

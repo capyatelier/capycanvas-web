@@ -20,7 +20,7 @@ Esegui una delle seguenti operazioni:
 
 Le Preferenze si aprono sulla pagina **Aspetto**. **Aiuto > Scorciatoie da
 tastiera** le apre su **Scorciatoie da tastiera**, e **Aiuto > Informazioni su
-Capy Canvas** su **Informazioni**.
+{appName}** su **Informazioni**.
 
 Mentre le Preferenze sono aperte, le scorciatoie della tela, i pulsanti della
 penna e i tocchi con le dita non hanno effetto.

@@ -2,15 +2,15 @@
 effectiveDate: "2026-09-10"
 ---
 
-이 방침은 Capy Canvas와 capycanvas.art 및 editor.capycanvas.art 웹사이트에 적용됩니다. Capy Canvas는 Zachary Drach가 Capy Atelier라는 프로젝트 이름으로 운영합니다.
+이 방침은 {appName}와 capycanvas.art 및 editor.capycanvas.art 웹사이트에 적용됩니다. {appName}는 Zachary Drach가 Capy Atelier라는 프로젝트 이름으로 운영합니다.
 
 개인정보 관련 문의나 요청은 [zackdrach@gmail.com](mailto:zackdrach@gmail.com)으로 보내 주세요.
 
 ## 앱 데이터
 
-Capy Canvas는 기기에서 그림을 처리하며, 사용자가 열거나 저장하도록 선택한 파일에 접근합니다. 앱은 그림이나 불러온 이미지를 운영자에게 전송하지 않습니다. 지원 요청에 파일을 첨부하면 해당 파일을 받습니다.
+{appName}는 기기에서 그림을 처리하며, 사용자가 열거나 저장하도록 선택한 파일에 접근합니다. 앱은 그림이나 불러온 이미지를 운영자에게 전송하지 않습니다. 지원 요청에 파일을 첨부하면 해당 파일을 받습니다.
 
-설정과 웹사이트 환경설정은 기기에 저장됩니다. 웹 앱은 오프라인 사용을 위해 앱 파일도 캐시합니다. Capy Canvas를 사용하는 데 계정은 필요하지 않습니다.
+설정과 웹사이트 환경설정은 기기에 저장됩니다. 웹 앱은 오프라인 사용을 위해 앱 파일도 캐시합니다. {appName}를 사용하는 데 계정은 필요하지 않습니다.
 
 광고나 사용 현황 분석을 사용하지 않으며, 개인정보를 판매하거나 여러 웹사이트에 걸쳐 사용자를 추적하는 도구를 포함하지 않습니다.
 

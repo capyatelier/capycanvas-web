@@ -1,6 +1,6 @@
 ---
 title: "复制和粘贴"
-description: "复制像素并粘贴为新图层，包括在 Capy Canvas 内部和在应用之间。"
+description: "复制像素并粘贴为新图层，包括在 {appName} 内部和在应用之间。"
 related: ["selections/working", "transform/move-transform", "layers/working", "files/open-save"]
 ---
 
@@ -41,7 +41,7 @@ related: ["selections/working", "transform/move-transform", "layers/working", "f
 
 将剪贴板内容添加为新的当前图层。
 
-- 从 Capy Canvas 复制的内容：如果复制位置在视图中，会放在原位置；否则放在视图中心。
+- 从 {appName} 复制的内容：如果复制位置在视图中，会放在原位置；否则放在视图中心。
 - 来自其他应用的图像会在变换框中打开。**应用**置入图像，**取消**放弃粘贴（参见[移动和变换](/zh/docs/transform/move-transform/)）。
 
 ## 原位粘贴
@@ -54,7 +54,7 @@ related: ["selections/working", "transform/move-transform", "layers/working", "f
 
 ## 在应用之间粘贴
 
-其他应用接收到的 Capy Canvas 复制内容是 8 位 sRGB PNG 图像。只要复制内容仍在剪贴板上，粘贴回 Capy Canvas 时会使用其完整位深度。
+其他应用接收到的 {appName} 复制内容是 8 位 sRGB PNG 图像。只要复制内容仍在剪贴板上，粘贴回 {appName} 时会使用其完整位深度。
 
 粘贴到颜色设置不同的画作中的复制内容会成为[照片图层](/zh/docs/layers/types/)，并从其自身的色彩配置文件转换。
 

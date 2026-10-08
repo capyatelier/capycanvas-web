@@ -91,7 +91,7 @@ Palette…** or **Remove Palette…**. You can't remove the last palette.
 ## Importing and exporting palettes
 
 To import a palette file, select **+** in the palette list and choose **Import
-Palette…**. Capy Canvas reads `.capycolor`, `.aco`, `.cls`, `.swatches`,
+Palette…**. {appName} reads `.capycolor`, `.aco`, `.cls`, `.swatches`,
 `.ase`, `.afpalette`, `.gpl`, `.kpl` and `.json` files up to 1 MB. The file
 becomes a new palette with the name stored in the file, or the file name.
 
@@ -107,7 +107,7 @@ The panel reports how many colors were clipped or made opaque.
 
 ## Starter palettes
 
-Capy Canvas comes with Ocean Study, Pixel Arcade, Dark Fantasy, Pop Art, Candy
+{appName} comes with Ocean Study, Pixel Arcade, Dark Fantasy, Pop Art, Candy
 Pastels, Riso Print, Synthwave, Seventies Print, Woodblock and Ink. You can
 change starter palettes like any other palette. A removed starter palette
 doesn't come back.

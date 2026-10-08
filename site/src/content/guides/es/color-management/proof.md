@@ -119,7 +119,7 @@ vuelve a seleccionarlo o pulsa **Escape** para cerrarlos.
 | Indicador | Aparece cuando |
 | --- | --- |
 | «Colores recortados» | La pantalla no puede mostrar algunos colores visibles del dibujo o de la prueba. |
-| «Puede no coincidir con la impresión» | La prueba de impresión o el aviso de gama están activos, y Capy Canvas no puede saber cómo muestra los colores la pantalla. |
+| «Puede no coincidir con la impresión» | La prueba de impresión o el aviso de gama están activos, y {appName} no puede saber cómo muestra los colores la pantalla. |
 
 En un dibujo HDR, el indicador también informa de si la pantalla muestra HDR
 (consulta [HDR](/es/docs/color-management/hdr/)).

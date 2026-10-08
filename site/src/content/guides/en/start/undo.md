@@ -45,7 +45,7 @@ Each drawing keeps up to 256 steps. The oldest steps are dropped first.
 ## Saving and reopening
 
 Saving doesn't clear the history. A drawing you open from a `.capy` file starts
-with an empty history, but drawings that reopen when you restart Capy Canvas
+with an empty history, but drawings that reopen when you restart {appName}
 keep their undo steps.
 
 ## Layout changes

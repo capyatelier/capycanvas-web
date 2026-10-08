@@ -20,7 +20,7 @@ Führen Sie eine der folgenden Aktionen aus:
 - Drücken Sie **Strg+O**.
 - Wählen Sie in den Arbeitsbereichen Malen und Foto **Öffnen…** in der Werkzeugleiste Befehle aus.
 - Ziehen Sie im Web-Editor oder unter Linux Dateien auf den Zeichnungsnamen oder die Registerkarten in der Titelleiste.
-- Wenn Sie den Web-Editor als App installiert haben, öffnen Sie eine `.capy`-, `.png`-, `.jpg`-, `.tif`-, `.avif`- oder `.exr`-Datei aus Ihrem System mit Capy Canvas.
+- Wenn Sie den Web-Editor als App installiert haben, öffnen Sie eine `.capy`-, `.png`-, `.jpg`-, `.tif`-, `.avif`- oder `.exr`-Datei aus Ihrem System mit {appName}.
 
 ## Fotos
 
@@ -90,7 +90,7 @@ Rückgängig-Verlauf, die Ansicht und die aktive Auswahl.
 
 ## Nur lesbare Zeichnungen
 
-Eine `.capy`-Datei, die Capy Canvas nicht bearbeiten kann, etwa eine beschädigte
+Eine `.capy`-Datei, die {appName} nicht bearbeiten kann, etwa eine beschädigte
 Datei, öffnet sich in einem Dialog statt in einer Registerkarte. **Copy Original File…**
 speichert eine Kopie der Datei, und **Export Preview Image…** speichert die Vorschau
 der Zeichnung als PNG.
@@ -152,12 +152,12 @@ Zeichnung. Unter Linux schließt sich das Fenster.
 ## Erneut öffnen nach einem Neustart
 
 Alle geöffneten Zeichnungen, ob gespeichert oder nicht, öffnen sich beim nächsten
-Start von Capy Canvas wieder, jeweils mit Rückgängig-Verlauf, Ansicht, Auswahl und
-letztem Export. Beim Beenden fragt Capy Canvas nicht nach dem Speichern.
+Start von {appName} wieder, jeweils mit Rückgängig-Verlauf, Ansicht, Auswahl und
+letztem Export. Beim Beenden fragt {appName} nicht nach dem Speichern.
 
 Im Web-Editor löscht das Entfernen der Websitedaten ungespeicherte Zeichnungen.
 
-Nachdem Capy Canvas unerwartet beendet wurde, zeigen die wieder geöffneten Zeichnungen
+Nachdem {appName} unerwartet beendet wurde, zeigen die wieder geöffneten Zeichnungen
 „(wiederhergestellt)“ hinter ihrem Namen, bis Sie sie speichern.
 
 ## Neues Fenster

@@ -116,7 +116,7 @@ detailnya, dan pilih lagi atau tekan **Escape** untuk menutup detail.
 | Chip | Ditampilkan jika |
 | --- | --- |
 | "Warna terpotong" | Layar tidak dapat menampilkan sebagian warna yang terlihat pada gambar atau simulasi. |
-| "Mungkin tidak sesuai hasil cetak" | Simulasi cetak atau peringatan gamut aktif, dan Capy Canvas tidak dapat mengetahui cara layar menampilkan warna. |
+| "Mungkin tidak sesuai hasil cetak" | Simulasi cetak atau peringatan gamut aktif, dan {appName} tidak dapat mengetahui cara layar menampilkan warna. |
 
 Untuk gambar HDR, chip juga melaporkan apakah layar menampilkan HDR (lihat
 [HDR](/id/docs/color-management/hdr/)).

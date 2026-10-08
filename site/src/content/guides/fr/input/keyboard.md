@@ -24,7 +24,7 @@ Effectuez l’une des opérations suivantes :
 ## Préréglages de raccourcis
 
 Vous pouvez utiliser des touches inspirées d’une autre application. Choisissez un
-**Préréglage** sous **Raccourcis** : **CapyCanvas** (par défaut),
+**Préréglage** sous **Raccourcis** : **{appName}** (par défaut),
 **Style Photoshop**, **Style Krita**, **Style Clip Studio Paint**,
 **Style Procreate**, **Style GIMP** ou **Style Affinity**.
 

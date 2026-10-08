@@ -5,6 +5,7 @@ import { serve } from '../site/scripts/serve.mjs';
 import { checkPwaInstructions } from './pwa-browser.mjs';
 import { checkDocumentation } from './docs-browser.mjs';
 import { languages } from '../site/src/data/content.mjs';
+import { appName } from '../site/src/data/branding.mjs';
 import { buildReleaseSite } from './release-sites.mjs';
 
 const locales = Object.keys(languages);
@@ -37,7 +38,7 @@ try {
       const overviewImage=document.querySelector('.docs-overview-image img');
       const overviewBounds=overviewImage?.getBoundingClientRect();
       const borders=[...document.querySelectorAll('header,nav,main,picture,section,a,li')].filter(visible).filter(e=>['Top','Right','Bottom','Left'].some(side=>parseFloat(getComputedStyle(e)['border'+side+'Width'])>0)).map(e=>e.className);
-      return { overviewSource:overviewImage?.currentSrc, overviewRatio:overviewBounds?overviewBounds.width/overviewBounds.height:null, overviewLink:document.querySelector('.docs-overview-image a')?.href, height:innerHeight, scrollHeight:document.documentElement.scrollHeight, shotRatio:shot?shot.width/shot.height:null, borders, width:innerWidth, scroll:document.documentElement.scrollWidth, lang:document.documentElement.dataset.locale, bg:getComputedStyle(document.body).backgroundColor, source:document.querySelector('.showcase-frame[data-slide="paint"] img')?.currentSrc, original:document.querySelector('.showcase-frame[data-slide="paint"] img')?.getAttribute('src'), shown, bounds,
+      return { title: document.title, brand: document.querySelector('.brand span')?.textContent, brandLabel: document.querySelector('.brand')?.getAttribute('aria-label'), siteName: document.querySelector('[property="og:site_name"]')?.content, unresolved: document.body.textContent.includes('{appName}'), overviewSource:overviewImage?.currentSrc, overviewRatio:overviewBounds?overviewBounds.width/overviewBounds.height:null, overviewLink:document.querySelector('.docs-overview-image a')?.href, height:innerHeight, scrollHeight:document.documentElement.scrollHeight, shotRatio:shot?shot.width/shot.height:null, borders, width:innerWidth, scroll:document.documentElement.scrollWidth, lang:document.documentElement.dataset.locale, bg:getComputedStyle(document.body).backgroundColor, source:document.querySelector('.showcase-frame[data-slide="paint"] img')?.currentSrc, original:document.querySelector('.showcase-frame[data-slide="paint"] img')?.getAttribute('src'), shown, bounds,
         labels:[...document.querySelectorAll('a,summary')].filter(visible).every(e=>(e.getAttribute('aria-label')||e.textContent||e.querySelector('img[alt]')?.alt||'').trim()),
         headings:document.querySelectorAll('h1').length,
         broken:[...document.images].some(i=>!i.complete||!i.naturalWidth)
@@ -47,6 +48,8 @@ try {
     check(metrics.scroll<=width,`Horizontal overflow ${label}: ${JSON.stringify(metrics)}`);
     check(metrics.bounds.length===0,`Clipped text ${label}: ${metrics.bounds}`);
     check(metrics.lang===locale,`Wrong language ${label}`);
+    check(metrics.title.includes(appName(locale)) && metrics.siteName === appName(locale) && !metrics.unresolved, `Localized app identity ${label}`);
+    if (page !== 'home') check(metrics.brand === appName(locale) && metrics.brandLabel.startsWith(appName(locale)), `Localized header identity ${label}`);
     check(metrics.bg===(theme==='light'?'rgb(237, 237, 237)':'rgb(51, 51, 51)'),`Wrong theme ${label}`);
     check(metrics.labels&&metrics.headings===1&&!metrics.broken,`Accessibility/asset basics ${label}`);
     check(metrics.borders.length===0,`Unexpected borders ${label}: ${metrics.borders}`);

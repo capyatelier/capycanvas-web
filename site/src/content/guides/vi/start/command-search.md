@@ -32,7 +32,7 @@ lệnh, sau đó là **Hoàn tác**, **Vừa khung vẽ**, **Lưu**, **Tùy ch�
 **Phím tắt**. Các mục không chạy được lúc đó sẽ bị bỏ qua.
 
 Chỉ những mục bạn chạy từ tìm lệnh mới được tính là gần đây. Danh sách gần đây bị
-xóa khi bạn thoát Capy Canvas.
+xóa khi bạn thoát {appName}.
 
 ## Tìm kiếm
 

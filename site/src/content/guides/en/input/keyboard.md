@@ -23,7 +23,7 @@ Do one of the following:
 ## Keymap presets
 
 You can use keys modeled on another app. Choose a **Preset** under **Keymap**:
-**CapyCanvas** (the default), **Photoshop Style**, **Krita Style**, **Clip Studio
+**{appName}** (the default), **Photoshop Style**, **Krita Style**, **Clip Studio
 Paint Style**, **Procreate Style**, **GIMP Style** or **Affinity Style**.
 
 A preset changes only some keys and keeps the keys you changed yourself.

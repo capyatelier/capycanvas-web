@@ -1,10 +1,10 @@
 ---
 title: "Schnellstart"
-description: "Capy Canvas öffnen, auf der ersten leeren Zeichnung zeichnen, sie als .capy-Datei speichern und ein PNG exportieren."
+description: "{appName} öffnen, auf der ersten leeren Zeichnung zeichnen, sie als .capy-Datei speichern und ein PNG exportieren."
 related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
 ---
 
-## Capy Canvas öffnen
+## {appName} öffnen
 
 Führen Sie eine der folgenden Aktionen aus:
 
@@ -27,13 +27,13 @@ Nach dem ersten Besuch öffnet sich der Web-Editor auch ohne Internetverbindung.
 
 ![Das Bedienfeld Ebenen einer neuen Zeichnung mit Aktuelle Tinte über Papier.](shot:files/new-layers)
 
-Beim ersten Start zeigt Capy Canvas den Arbeitsbereich [Malen](/de/docs/start/workspaces/)
+Beim ersten Start zeigt {appName} den Arbeitsbereich [Malen](/de/docs/start/workspaces/)
 mit einer leeren Zeichnung, und in der Titelleiste steht „Unbenannt · 2048 × 1536“.
 Ausgewählt ist **Aktuelle Tinte**, eine leere Malebene über **Papier**, einer weißen
 Füllebene. Das Werkzeug **Feder** ist aktiv, mit dem Pinsel **G-Feder** und einer
 fast schwarzen Farbe.
 
-Bei späteren Starts öffnet Capy Canvas den zuletzt verwendeten Arbeitsbereich und die
+Bei späteren Starts öffnet {appName} den zuletzt verwendeten Arbeitsbereich und die
 Zeichnungen, die zuletzt geöffnet waren.
 
 ## Zeichnen

@@ -77,7 +77,7 @@ operazioni:
 - Scegli **Scambia primo piano e sfondo** nella ricerca comandi.
 - Premi **X** nelle mappe dei tasti Stile Photoshop, Stile Krita, Stile Clip Studio Paint e Stile GIMP, oppure **Maiusc+X** in Stile Affinity.
 
-Resta selezionato lo stesso campione. La mappa dei tasti CapyCanvas non ha un
+Resta selezionato lo stesso campione. La mappa dei tasti {appName} non ha un
 tasto per **Scambia colori**.
 
 ## Bianco e nero

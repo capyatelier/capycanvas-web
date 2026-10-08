@@ -5,7 +5,7 @@ related: ["customize/workspaces", "customize/panels", "customize/toolbars", "cus
 ---
 
 Un espacio de trabajo es una distribución guardada de la barra de título, las
-barras de herramientas y los paneles. Capy Canvas incluye tres: **Boceto**,
+barras de herramientas y los paneles. {appName} incluye tres: **Boceto**,
 **Pintura** y **Foto**. La primera vez se abre en Pintura y, después, en el
 espacio de trabajo que usaste por última vez.
 

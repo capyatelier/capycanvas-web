@@ -2,15 +2,15 @@
 effectiveDate: "2026-09-10"
 ---
 
-Esta póliza cubre Capy Canvas y los sitios web capycanvas.art y editor.capycanvas.art. Capy Canvas es operado por Zachary Drach bajo el nombre de proyecto Capy Atelier.
+Esta póliza cubre {appName} y los sitios web capycanvas.art y editor.capycanvas.art. {appName} es operado por Zachary Drach bajo el nombre de proyecto Capy Atelier.
 
 Para preguntas o solicitudes de privacidad, envíe un correo electrónico a [zackdrach@gmail.com](mailto:zackdrach@gmail.com).
 
 ## Datos de la aplicación
 
-Capy Canvas procesa dibujos en su dispositivo y accede a los archivos que elige abrir o guardar. La aplicación no nos envía sus dibujos ni imágenes importadas. Recibimos archivos si los envía con una solicitud de soporte.
+{appName} procesa dibujos en su dispositivo y accede a los archivos que elige abrir o guardar. La aplicación no nos envía sus dibujos ni imágenes importadas. Recibimos archivos si los envía con una solicitud de soporte.
 
-La configuración y las preferencias del sitio web se almacenan en su dispositivo. La aplicación web también almacena en caché los archivos de la aplicación para su uso sin conexión. Capy Canvas no requiere una cuenta.
+La configuración y las preferencias del sitio web se almacenan en su dispositivo. La aplicación web también almacena en caché los archivos de la aplicación para su uso sin conexión. {appName} no requiere una cuenta.
 
 No utilizamos publicidad ni análisis de uso, no vendemos información personal ni incorporamos rastreadores que lo sigan en todos los sitios web.
 

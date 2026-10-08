@@ -33,7 +33,7 @@ jalankan dari pencarian, lalu **Urungkan**, **Sesuaikan kanvas**, **Simpan**,
 itu tidak ditampilkan.
 
 Hanya entri yang Anda jalankan dari pencarian yang terhitung sebagai entri terbaru.
-Daftar entri terbaru dikosongkan saat Anda keluar dari Capy Canvas.
+Daftar entri terbaru dikosongkan saat Anda keluar dari {appName}.
 
 ## Mencari
 

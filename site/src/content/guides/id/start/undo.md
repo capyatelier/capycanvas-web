@@ -47,7 +47,7 @@ Setiap gambar menyimpan hingga 256 langkah. Langkah terlama dibuang lebih dulu.
 
 Menyimpan tidak menghapus riwayat. Gambar yang Anda buka dari berkas `.capy` dimulai
 dengan riwayat kosong, tetapi gambar yang terbuka kembali saat Anda memulai ulang
-Capy Canvas tetap memiliki langkah urungkannya.
+{appName} tetap memiliki langkah urungkannya.
 
 ## Perubahan tata letak
 

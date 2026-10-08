@@ -116,7 +116,7 @@ again or press **Escape** to close the details.
 | Chip | Shown when |
 | --- | --- |
 | "Colors clipped" | The screen can't show some visible colors of the drawing or the proof. |
-| "May not match print" | Print proofing or the gamut warning is on, and Capy Canvas can't tell how the screen shows colors. |
+| "May not match print" | Print proofing or the gamut warning is on, and {appName} can't tell how the screen shows colors. |
 
 For an HDR drawing, the chip also reports whether the screen shows HDR (see
 [HDR](/docs/color-management/hdr/)).

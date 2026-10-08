@@ -65,7 +65,7 @@ untuk Lingkari dan Isi. Bilah Opsi Alat memiliki menu **Sumber** untuk keduanya.
 ![Panel Set Alat dengan Isi dipilih dan pilihan Karya terlihat, Lapisan yang diedit, dan Lapisan acuan di bawahnya.](shot:drawing/fill-tool-set)
 
 Setiap alat menyimpan sumbernya sendiri. Isi dimulai pada **Karya terlihat**, sedangkan
-Lingkari dan Isi kembali ke **Lapisan acuan** setiap kali Anda membuka Capy Canvas.
+Lingkari dan Isi kembali ke **Lapisan acuan** setiap kali Anda membuka {appName}.
 
 Jika Isi memakai **Lapisan acuan** dan tidak ada lapisan yang ditandai, Isi tidak
 melukis apa pun dan sebuah pemberitahuan menawarkan untuk menandai lapisan di bawahnya.

@@ -20,7 +20,7 @@ Thực hiện một trong các cách sau:
 - Nhấn **Ctrl+O**.
 - Trong Vẽ và Ảnh, chọn **Mở…** trên Thanh lệnh.
 - Trong trình chỉnh sửa web hoặc trên Linux, kéo tệp vào tên bản vẽ hoặc vào các thẻ trên thanh tiêu đề.
-- Nếu bạn đã cài trình chỉnh sửa web thành ứng dụng, mở tệp `.capy`, `.png`, `.jpg`, `.tif`, `.avif` hoặc `.exr` bằng Capy Canvas từ hệ thống.
+- Nếu bạn đã cài trình chỉnh sửa web thành ứng dụng, mở tệp `.capy`, `.png`, `.jpg`, `.tif`, `.avif` hoặc `.exr` bằng {appName} từ hệ thống.
 
 ## Ảnh
 
@@ -87,7 +87,7 @@ EXIF, XMP và IPTC của ảnh. Tệp không lưu lịch sử hoàn tác, khung 
 
 ## Bản vẽ chỉ xem
 
-Tệp `.capy` mà Capy Canvas không chỉnh sửa được, ví dụ tệp bị hỏng, sẽ mở trong một
+Tệp `.capy` mà {appName} không chỉnh sửa được, ví dụ tệp bị hỏng, sẽ mở trong một
 hộp thoại thay vì một thẻ. **Copy Original File…** lưu một bản sao của tệp, còn
 **Export Preview Image…** lưu ảnh xem trước của bản vẽ thành PNG.
 
@@ -145,13 +145,12 @@ Linux, cửa sổ đóng lại.
 
 ## Mở lại sau khi khởi động lại
 
-Mọi bản vẽ đang mở, dù đã lưu hay chưa, đều mở lại vào lần tới bạn khởi động Capy
-Canvas, kèm lịch sử hoàn tác, khung nhìn, vùng chọn và lần xuất gần nhất của từng
-bản vẽ. Thoát Capy Canvas không hỏi bạn có muốn lưu không.
+Mọi bản vẽ đang mở, dù đã lưu hay chưa, đều mở lại vào lần tới bạn khởi động {appName}, kèm lịch sử hoàn tác, khung nhìn, vùng chọn và lần xuất gần nhất của từng
+bản vẽ. Thoát {appName} không hỏi bạn có muốn lưu không.
 
 Trong trình chỉnh sửa web, xóa dữ liệu trang web sẽ xóa các bản vẽ chưa lưu.
 
-Sau khi Capy Canvas đóng bất ngờ, các bản vẽ được mở lại hiện “(đã khôi phục)” sau
+Sau khi {appName} đóng bất ngờ, các bản vẽ được mở lại hiện “(đã khôi phục)” sau
 tên cho đến khi bạn lưu.
 
 ## Cửa sổ mới

@@ -546,6 +546,10 @@ painting. "Lower **Opacity** to 40%" is an instruction.
 ## 10. Translations
 
 - Translate from the English page, one page at a time.
+- Write the app name as `{appName}` in all translated copy, Markdown and
+  frontmatter, including English. Keep this placeholder unchanged. The build
+  supplies the approved name for the page language from `src/data/branding.mjs`.
+  Run `npm run check:branding` before submitting a translation.
 - Use the app's own labels for that language, from the app's translation files,
   word for word. Never translate a control label yourself.
 - Keep keys, file names, menu separators (`>`), `shot:` references and link

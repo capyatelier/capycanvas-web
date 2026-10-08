@@ -1,6 +1,6 @@
 ---
 title: "Kopyalama ve yapıştırma"
-description: "Capy Canvas içinde ve uygulamalar arasında pikselleri kopyalama ve yeni katman olarak yapıştırma."
+description: "{appName} içinde ve uygulamalar arasında pikselleri kopyalama ve yeni katman olarak yapıştırma."
 related: ["selections/working", "transform/move-transform", "layers/working", "files/open-save"]
 ---
 
@@ -50,7 +50,7 @@ Büyük bir kopyalama, **İptal** düğmesiyle bir ilerleme notu gösterir.
 
 Panodakini yeni etkin katman olarak ekler.
 
-- Capy Canvas'tan yapılan bir kopya, kopyalandığı yer görünümdeyse oraya, değilse görünümün ortasına yerleşir.
+- {appName}'tan yapılan bir kopya, kopyalandığı yer görünümdeyse oraya, değilse görünümün ortasına yerleşir.
 - Başka bir uygulamadan gelen görüntü dönüşüm kutusunda açılır. **Uygula** görüntüyü yerleştirir, **İptal** yapıştırmayı atar (bkz. [Taşıma ve dönüştürme](/tr/docs/transform/move-transform/)).
 
 ## Yerine yapıştır
@@ -67,8 +67,8 @@ yerleşir.
 
 ## Uygulamalar arasında yapıştırma
 
-Diğer uygulamalar Capy Canvas'tan yapılan bir kopyayı 8 bit sRGB PNG görüntüsü
-olarak alır. Kopya panoda kaldığı sürece Capy Canvas'a geri yapıştırma, kopyayı
+Diğer uygulamalar {appName}'tan yapılan bir kopyayı 8 bit sRGB PNG görüntüsü
+olarak alır. Kopya panoda kaldığı sürece {appName}'a geri yapıştırma, kopyayı
 tam bit derinliğiyle kullanır.
 
 Farklı renk ayarlarına sahip bir çizime yapıştırılan kopya, kendi renk

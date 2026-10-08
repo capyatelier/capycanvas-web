@@ -88,7 +88,7 @@ Nhấp chuột phải hoặc giữ một bảng màu trong danh sách bảng mà
 ## Nhập và xuất bảng màu
 
 Để nhập tệp bảng màu, chọn **+** trong danh sách bảng màu rồi chọn
-**Import Palette…**. Capy Canvas đọc các tệp `.capycolor`, `.aco`, `.cls`,
+**Import Palette…**. {appName} đọc các tệp `.capycolor`, `.aco`, `.cls`,
 `.swatches`, `.ase`, `.afpalette`, `.gpl`, `.kpl` và `.json` có dung lượng tối đa
 1 MB. Tệp trở thành một bảng màu mới mang tên được lưu trong tệp, hoặc tên tệp.
 
@@ -104,7 +104,7 @@ Bảng cho biết có bao nhiêu màu đã bị cắt ngưỡng hoặc bị chuy
 
 ## Bảng màu khởi đầu
 
-Capy Canvas có sẵn Nghiên cứu đại dương, Trò chơi pixel, Kỳ ảo tối, Nghệ thuật đại
+{appName} có sẵn Nghiên cứu đại dương, Trò chơi pixel, Kỳ ảo tối, Nghệ thuật đại
 chúng, Màu phấn kẹo, In Riso, Synthwave, In thập niên 70, Khắc gỗ và Mực. Bạn có thể
 thay đổi bảng màu khởi đầu như mọi bảng màu khác. Bảng màu khởi đầu đã xóa sẽ không
 xuất hiện lại.

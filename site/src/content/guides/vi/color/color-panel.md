@@ -72,7 +72,7 @@ Bạn có thể hoán đổi màu trước và màu nền. Thực hiện một t
 - Chọn **Đổi chỗ màu trước và màu nền** trong tìm lệnh.
 - Nhấn **X** trong các sơ đồ phím Kiểu Photoshop, Kiểu Krita, Kiểu Clip Studio Paint và Kiểu GIMP, hoặc **Shift+X** trong Kiểu Affinity.
 
-Ô màu đang chọn không thay đổi. Sơ đồ phím CapyCanvas không có phím cho **Đổi chỗ màu**.
+Ô màu đang chọn không thay đổi. Sơ đồ phím {appName} không có phím cho **Đổi chỗ màu**.
 
 ## Đen và trắng
 

@@ -66,7 +66,7 @@ La barra Opciones de herramienta tiene un menú **Origen** para las dos.
 ![El panel Conjunto de herramientas con Rellenar seleccionado y las opciones Imagen visible, Capa en edición y Capas de referencia debajo.](shot:drawing/fill-tool-set)
 
 Cada herramienta conserva su propio origen. Rellenar empieza en **Imagen visible**,
-y Rodear y rellenar vuelve a **Capas de referencia** cada vez que abres Capy Canvas.
+y Rodear y rellenar vuelve a **Capas de referencia** cada vez que abres {appName}.
 
 Si Rellenar usa **Capas de referencia** y no hay ninguna capa marcada, no pinta
 nada y un aviso ofrece marcar la capa de debajo.

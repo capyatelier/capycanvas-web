@@ -2,15 +2,15 @@
 effectiveDate: "2026-09-10"
 ---
 
-Chính sách này áp dụng cho Capy Canvas và các trang web capycanvas.art và editor.capycanvas.art. Capy Canvas được vận hành bởi Zachary Drach với tên dự án Capy Atelier.
+Chính sách này áp dụng cho {appName} và các trang web capycanvas.art và editor.capycanvas.art. {appName} được vận hành bởi Zachary Drach với tên dự án Capy Atelier.
 
 Đối với các câu hỏi hoặc yêu cầu về quyền riêng tư, hãy gửi email đến [zackdrach@gmail.com](mailto:zackdrach@gmail.com).
 
 ## Dữ liệu ứng dụng
 
-Capy Canvas xử lý các bản vẽ trên thiết bị của bạn và truy cập các tệp bạn chọn mở hoặc lưu. Ứng dụng không gửi bản vẽ hoặc hình ảnh đã nhập của bạn cho chúng tôi. Chúng tôi nhận được tệp nếu bạn gửi chúng cùng với yêu cầu hỗ trợ.
+{appName} xử lý các bản vẽ trên thiết bị của bạn và truy cập các tệp bạn chọn mở hoặc lưu. Ứng dụng không gửi bản vẽ hoặc hình ảnh đã nhập của bạn cho chúng tôi. Chúng tôi nhận được tệp nếu bạn gửi chúng cùng với yêu cầu hỗ trợ.
 
-Cài đặt và tùy chọn trang web được lưu trữ trên thiết bị của bạn. Ứng dụng web cũng lưu trữ các tệp ứng dụng để sử dụng ngoại tuyến. Capy Canvas không yêu cầu tài khoản.
+Cài đặt và tùy chọn trang web được lưu trữ trên thiết bị của bạn. Ứng dụng web cũng lưu trữ các tệp ứng dụng để sử dụng ngoại tuyến. {appName} không yêu cầu tài khoản.
 
 Chúng tôi không sử dụng phân tích quảng cáo hoặc sử dụng, bán thông tin cá nhân hoặc nhúng trình theo dõi theo dõi bạn trên các trang web.
 

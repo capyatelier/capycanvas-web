@@ -23,7 +23,7 @@ Esegui una delle seguenti operazioni:
 ## Predefiniti della mappa dei tasti
 
 Puoi usare tasti modellati su un'altra app. Scegli un **Predefinito** sotto
-**Mappa dei tasti**: **CapyCanvas** (predefinito), **Stile Photoshop**, **Stile
+**Mappa dei tasti**: **{appName}** (predefinito), **Stile Photoshop**, **Stile
 Krita**, **Stile Clip Studio Paint**, **Stile Procreate**, **Stile GIMP** o
 **Stile Affinity**.
 

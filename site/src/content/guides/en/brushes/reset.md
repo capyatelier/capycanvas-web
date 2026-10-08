@@ -12,7 +12,7 @@ value later.
 Every change to a brush setting is saved with its preset immediately.
 
 - Changes are shared by every workspace, including workspaces you create.
-- Changes stay after you restart Capy Canvas.
+- Changes stay after you restart {appName}.
 - Brush settings aren't saved in `.capy` files.
 - A change to a brush setting isn't an undo step, and Layout History doesn't list brush changes.
 - A brush doesn't keep a color. It paints with the current color in the [Color panel](/docs/color/color-panel/).

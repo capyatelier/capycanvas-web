@@ -20,7 +20,7 @@ Do one of the following:
 - Press **Ctrl+O**.
 - In Paint and Photo, select **Open…** in the Commands toolbar.
 - In the web editor or on Linux, drag files onto the drawing name or the tabs in the title bar.
-- If you installed the web editor as an app, open a `.capy`, `.png`, `.jpg`, `.tif`, `.avif` or `.exr` file with Capy Canvas from your system.
+- If you installed the web editor as an app, open a `.capy`, `.png`, `.jpg`, `.tif`, `.avif` or `.exr` file with {appName} from your system.
 
 ## Photos
 
@@ -86,7 +86,7 @@ active selection.
 
 ## View-only drawings
 
-A `.capy` file that Capy Canvas can't edit, such as a damaged file, opens in a
+A `.capy` file that {appName} can't edit, such as a damaged file, opens in a
 dialog instead of a tab. **Copy Original File…** saves a copy of the file, and
 **Export Preview Image…** saves the drawing's preview as a PNG.
 
@@ -144,13 +144,12 @@ Linux, the window closes.
 
 ## Reopening after a restart
 
-All open drawings, saved or not, reopen the next time you start Capy Canvas,
-each with its undo history, view, selection and last export. Quitting Capy
-Canvas doesn't ask you to save.
+All open drawings, saved or not, reopen the next time you start {appName},
+each with its undo history, view, selection and last export. Quitting {appName} doesn't ask you to save.
 
 In the web editor, clearing the site's data deletes unsaved drawings.
 
-After Capy Canvas closes unexpectedly, the reopened drawings show "(recovered)"
+After {appName} closes unexpectedly, the reopened drawings show "(recovered)"
 after their name until you save them.
 
 ## New Window

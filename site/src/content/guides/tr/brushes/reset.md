@@ -13,7 +13,7 @@ Fırça ayarlarında yapılan her değişiklik, hazır ayarıyla birlikte hemen
 kaydedilir.
 
 - Değişiklikler, sizin oluşturduklarınız dâhil tüm çalışma alanlarında ortaktır.
-- Değişiklikler Capy Canvas'ı yeniden başlattıktan sonra da korunur.
+- Değişiklikler {appName}'ı yeniden başlattıktan sonra da korunur.
 - Fırça ayarları `.capy` dosyalarına kaydedilmez.
 - Fırça ayarı değişikliği bir geri alma adımı değildir ve Düzen geçmişi fırça değişikliklerini listelemez.
 - Fırça bir renk saklamaz. [Renk panelindeki](/tr/docs/color/color-panel/) geçerli renkle boyar.

@@ -33,7 +33,7 @@ executou pela busca e, depois, **Desfazer**, **Ajustar tela**, **Salvar**,
 executadas no momento ficam de fora.
 
 Só as entradas executadas pela busca contam como recentes. A lista de recentes é
-apagada quando você fecha o Capy Canvas.
+apagada quando você fecha o {appName}.
 
 ## Buscar
 

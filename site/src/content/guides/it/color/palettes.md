@@ -97,7 +97,7 @@ l'ultima tavolozza.
 ## Importare ed esportare le tavolozze
 
 Per importare un file di tavolozza, seleziona **+** nell'elenco delle tavolozze e
-scegli **Importa tavolozza…**. Capy Canvas legge file `.capycolor`, `.aco`,
+scegli **Importa tavolozza…**. {appName} legge file `.capycolor`, `.aco`,
 `.cls`, `.swatches`, `.ase`, `.afpalette`, `.gpl`, `.kpl` e `.json` fino a 1 MB.
 Il file diventa una nuova tavolozza con il nome memorizzato nel file, oppure con
 il nome del file.
@@ -114,7 +114,7 @@ Il pannello indica quanti colori sono stati tagliati o resi opachi.
 
 ## Tavolozze iniziali
 
-Capy Canvas include Studio dell'oceano, Arcade a pixel, Fantasia oscura, Pop art,
+{appName} include Studio dell'oceano, Arcade a pixel, Fantasia oscura, Pop art,
 Pastelli caramella, Stampa risografica, Synthwave, Stampa anni Settanta,
 Xilografia e Inchiostro. Puoi modificare le tavolozze iniziali come qualsiasi
 altra tavolozza. Una tavolozza iniziale rimossa non ritorna.

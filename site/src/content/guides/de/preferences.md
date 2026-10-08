@@ -19,7 +19,7 @@ Führen Sie eine der folgenden Aktionen aus:
 - Geben Sie „Einstellungen“ in die [Befehlssuche](/de/docs/start/command-search/) ein.
 
 Die Einstellungen öffnen sich auf der Seite **Darstellung**. **Hilfe > Tastenkürzel**
-öffnet sie auf der Seite **Tastenkürzel**, **Hilfe > Über Capy Canvas** auf der Seite
+öffnet sie auf der Seite **Tastenkürzel**, **Hilfe > Über {appName}** auf der Seite
 **Info**.
 
 Solange die Einstellungen geöffnet sind, bewirken Leinwand-Tastenkürzel, Stifttasten

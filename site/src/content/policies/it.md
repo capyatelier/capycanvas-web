@@ -2,15 +2,15 @@
 effectiveDate: "2026-09-10"
 ---
 
-Questa politica copre Capy Canvas e i siti Web capycanvas.art e editor.capycanvas.art. Capy Canvas è gestito da Zachary Drach con il nome del progetto Capy Atelier.
+Questa politica copre {appName} e i siti Web capycanvas.art e editor.capycanvas.art. {appName} è gestito da Zachary Drach con il nome del progetto Capy Atelier.
 
 Per domande o richieste sulla privacy, inviare un'e-mail a [zackdrach@gmail.com](mailto:zackdrach@gmail.com).
 
 ## Dati dell'app
 
-Capy Canvas elabora i disegni sul tuo dispositivo e accede ai file che scegli di aprire o salvare. L'app non ci invia i tuoi disegni o le immagini importate. Riceviamo file se li invii con una richiesta di supporto.
+{appName} elabora i disegni sul tuo dispositivo e accede ai file che scegli di aprire o salvare. L'app non ci invia i tuoi disegni o le immagini importate. Riceviamo file se li invii con una richiesta di supporto.
 
-Le impostazioni e le preferenze del sito web vengono memorizzate sul tuo dispositivo. L'app Web memorizza inoltre nella cache i file dell'applicazione per l'utilizzo offline. Capy Canvas non richiede un account.
+Le impostazioni e le preferenze del sito web vengono memorizzate sul tuo dispositivo. L'app Web memorizza inoltre nella cache i file dell'applicazione per l'utilizzo offline. {appName} non richiede un account.
 
 Non utilizziamo pubblicità o analisi di utilizzo, non vendiamo informazioni personali né incorporiamo tracker che ti seguono sui siti web.
 

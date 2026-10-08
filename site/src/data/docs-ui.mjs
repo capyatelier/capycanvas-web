@@ -1,7 +1,8 @@
+import { brandTranslations } from './branding.mjs';
 import { additionalDocsUI } from './additional-docs.mjs';
-export const docsUI = {
+export const docsUI = brandTranslations({
   "en": {
-    "intro": "Capy Canvas is a free, open-source app for sketching, painting and photo editing. It is inspired by the zen of capybaras.",
+    "intro": "{appName} is a free, open-source app for sketching, painting and photo editing. It is inspired by the zen of capybaras.",
     "overview": "Overview",
     "contents": "Documentation contents",
     "onPage": "On this page",
@@ -39,7 +40,7 @@ export const docsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "Capy Canvas uses Windows Ink for the pen. On Windows, Pen buttons lists one side button, the Lower side button.",
+      "windows": "{appName} uses Windows Ink for the pen. On Windows, Pen buttons lists one side button, the Lower side button.",
       "mac": "If the pen lands in the wrong place, check which screen your tablet is mapped to in its settings. Use Command wherever these guides say Ctrl, and Option wherever they say Alt.",
       "linux": "The Linux app needs a Wayland session and a graphics card that supports Vulkan. If pressure doesn't work or the cursor lands in the wrong place, check your desktop's tablet settings.",
       "ipad": "Most Apple Pencil models support pressure and tilt, but Apple Pencil (USB-C) doesn't support pressure. Fingers and palms never draw.",
@@ -211,7 +212,7 @@ export const docsUI = {
     }
   },
   "ja": {
-    "intro": "Capy Canvasは、スケッチ、ペイント、写真編集のための、無料でオープンソースのアプリです。カピバラの禅のような穏やかさに着想を得ています。",
+    "intro": "{appName}は、スケッチ、ペイント、写真編集のための、無料でオープンソースのアプリです。カピバラの禅のような穏やかさに着想を得ています。",
     "overview": "目次",
     "contents": "ドキュメントの目次",
     "onPage": "このページの内容",
@@ -249,7 +250,7 @@ export const docsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "Capy CanvasはペンにWindows Inkを使います。Windowsでは、「ペンボタン」に表示されるサイドボタンは「下のサイドボタン」の1つだけです。",
+      "windows": "{appName}はペンにWindows Inkを使います。Windowsでは、「ペンボタン」に表示されるサイドボタンは「下のサイドボタン」の1つだけです。",
       "mac": "ペンの位置がずれる場合は、タブレットの設定で割り当てている画面を確認してください。このガイドでCtrlと書かれている箇所ではCommandを、Altと書かれている箇所ではOptionを使ってください。",
       "linux": "Linux版のアプリには、Waylandセッションと、Vulkanに対応したグラフィックカードが必要です。筆圧が効かない、またはカーソルの位置がずれる場合は、デスクトップのタブレット設定を確認してください。",
       "ipad": "ほとんどのApple Pencilは筆圧と傾きに対応していますが、Apple Pencil（USB-C）は筆圧に対応していません。指や手のひらでは描画されません。",
@@ -266,7 +267,7 @@ export const docsUI = {
         },
         "workspace": {
           "title": "自分のワークスペース",
-          "text": "Capy Canvasには、スケッチ、ペイント、写真編集のためのなじみやすいレイアウトが用意されていて、ツールやパネルはすべて好きな位置に動かせます。気を散らすもののない、まっさらなキャンバスだけが欲しいときは、カピバラをクリックしてZenモードへ！",
+          "text": "{appName}には、スケッチ、ペイント、写真編集のためのなじみやすいレイアウトが用意されていて、ツールやパネルはすべて好きな位置に動かせます。気を散らすもののない、まっさらなキャンバスだけが欲しいときは、カピバラをクリックしてZenモードへ！",
           "link": "ワークスペース"
         },
         "input": {
@@ -286,11 +287,11 @@ export const docsUI = {
         },
         "native": {
           "title": "デスクトップとタブレット",
-          "text": "Capy Canvasは、Linux、Windows、macOS、Android、iPadOS向けのベータ版を公開しています。各バージョンはコンパイルされたネイティブアプリで、プラットフォーム標準のUIツールキットを使っています。これにより、どのデバイスでも性能とバッテリー持続時間が向上します。",
+          "text": "{appName}は、Linux、Windows、macOS、Android、iPadOS向けのベータ版を公開しています。各バージョンはコンパイルされたネイティブアプリで、プラットフォーム標準のUIツールキットを使っています。これにより、どのデバイスでも性能とバッテリー持続時間が向上します。",
           "link": "システムアーキテクチャ"
         }
       },
-      "start": "Capy Canvasは、ウェブブラウザーだけでも、オフラインでも動作します。手軽にすぐ使い始められる方法です。現在ベータ版のデスクトップ版とタブレット版のアプリでは、最高の性能とハードウェアとの互換性が得られます。",
+      "start": "{appName}は、ウェブブラウザーだけでも、オフラインでも動作します。手軽にすぐ使い始められる方法です。現在ベータ版のデスクトップ版とタブレット版のアプリでは、最高の性能とハードウェアとの互換性が得られます。",
       "links": {
         "quickstart": "クイックスタート",
         "illustration": "イラストのチュートリアル"
@@ -298,7 +299,7 @@ export const docsUI = {
     }
   },
   "zh": {
-    "intro": "Capy Canvas是一款免费、开源的速写、绘画与照片编辑应用。它的灵感来自水豚的禅意。",
+    "intro": "{appName}是一款免费、开源的速写、绘画与照片编辑应用。它的灵感来自水豚的禅意。",
     "overview": "概览",
     "contents": "文档目录",
     "onPage": "本页内容",
@@ -336,7 +337,7 @@ export const docsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "Capy Canvas使用Windows Ink处理笔输入。在Windows上，“笔按钮”中只列出一个侧按钮，即“下侧按钮”。",
+      "windows": "{appName}使用Windows Ink处理笔输入。在Windows上，“笔按钮”中只列出一个侧按钮，即“下侧按钮”。",
       "mac": "如果笔的落点不对，请在数位板设置中检查它映射到了哪个屏幕。本指南中写作Ctrl的地方请使用Command，写作Alt的地方请使用Option。",
       "linux": "Linux版应用需要Wayland会话和支持Vulkan的显卡。如果压感不起作用或光标位置不对，请检查桌面环境中的数位板设置。",
       "ipad": "大多数Apple Pencil都支持压感和倾斜，但Apple Pencil（USB-C）不支持压感。手指和手掌不会画出笔画。",
@@ -353,7 +354,7 @@ export const docsUI = {
         },
         "workspace": {
           "title": "你的工作区",
-          "text": "Capy Canvas为速写、绘画和照片编辑准备了熟悉的布局，每个工具和面板都可以按你的喜好移动。如果你只想要一张空白画布，不受任何干扰，点击水豚就能进入Zen模式！",
+          "text": "{appName}为速写、绘画和照片编辑准备了熟悉的布局，每个工具和面板都可以按你的喜好移动。如果你只想要一张空白画布，不受任何干扰，点击水豚就能进入Zen模式！",
           "link": "工作区"
         },
         "input": {
@@ -373,11 +374,11 @@ export const docsUI = {
         },
         "native": {
           "title": "桌面与平板",
-          "text": "Capy Canvas已推出适用于Linux、Windows、macOS、Android和iPadOS的测试版。这些都是经过编译的原生应用，并使用平台原生UI工具包。这意味着每台设备都能获得更好的性能和电池续航。",
+          "text": "{appName}已推出适用于Linux、Windows、macOS、Android和iPadOS的测试版。这些都是经过编译的原生应用，并使用平台原生UI工具包。这意味着每台设备都能获得更好的性能和电池续航。",
           "link": "系统架构"
         }
       },
-      "start": "Capy Canvas可以完全在网页浏览器中运行，也能离线使用。这是一种快速、轻松的入门方式。目前处于测试阶段的桌面版和平板版应用可提供最佳性能和硬件兼容性。",
+      "start": "{appName}可以完全在网页浏览器中运行，也能离线使用。这是一种快速、轻松的入门方式。目前处于测试阶段的桌面版和平板版应用可提供最佳性能和硬件兼容性。",
       "links": {
         "quickstart": "快速入门",
         "illustration": "插画教程"
@@ -385,7 +386,7 @@ export const docsUI = {
     }
   },
   "ko": {
-    "intro": "Capy Canvas는 스케치, 페인팅, 사진 편집을 위한 무료 오픈 소스 앱입니다. 카피바라의 선(禪) 같은 평온함에서 영감을 받았습니다.",
+    "intro": "{appName}는 스케치, 페인팅, 사진 편집을 위한 무료 오픈 소스 앱입니다. 카피바라의 선(禪) 같은 평온함에서 영감을 받았습니다.",
     "overview": "개요",
     "contents": "문서 목차",
     "onPage": "이 페이지의 내용",
@@ -423,7 +424,7 @@ export const docsUI = {
       "android": "Android"
     },
     "platformNotes": {
-      "windows": "Capy Canvas는 펜 입력에 Windows Ink를 사용합니다. Windows의 펜 버튼에는 측면 버튼으로 아래쪽 측면 버튼 하나만 표시됩니다.",
+      "windows": "{appName}는 펜 입력에 Windows Ink를 사용합니다. Windows의 펜 버튼에는 측면 버튼으로 아래쪽 측면 버튼 하나만 표시됩니다.",
       "mac": "펜이 엉뚱한 위치에 찍히면 태블릿 설정에서 어느 화면에 연결되어 있는지 확인하세요. 이 가이드에서 Ctrl로 표시된 곳은 Command를, Alt로 표시된 곳은 Option을 사용하세요.",
       "linux": "Linux 앱에는 Wayland 세션과 Vulkan을 지원하는 그래픽 카드가 필요합니다. 필압이 작동하지 않거나 커서 위치가 어긋나면 데스크톱의 태블릿 설정을 확인하세요.",
       "ipad": "대부분의 Apple Pencil은 필압과 기울기를 지원하지만, Apple Pencil(USB-C)은 필압을 지원하지 않습니다. 손가락과 손바닥으로는 그려지지 않습니다.",
@@ -440,7 +441,7 @@ export const docsUI = {
         },
         "workspace": {
           "title": "나만의 작업 공간",
-          "text": "Capy Canvas에는 스케치, 페인팅, 사진 편집을 위한 익숙한 레이아웃이 준비되어 있고, 모든 도구와 패널을 원하는 위치로 옮길 수 있습니다. 방해 요소 없이 빈 캔버스만 보고 싶다면, 카피바라를 클릭해 Zen 모드로 들어가 보세요!",
+          "text": "{appName}에는 스케치, 페인팅, 사진 편집을 위한 익숙한 레이아웃이 준비되어 있고, 모든 도구와 패널을 원하는 위치로 옮길 수 있습니다. 방해 요소 없이 빈 캔버스만 보고 싶다면, 카피바라를 클릭해 Zen 모드로 들어가 보세요!",
           "link": "작업 영역"
         },
         "input": {
@@ -460,11 +461,11 @@ export const docsUI = {
         },
         "native": {
           "title": "데스크톱과 태블릿",
-          "text": "Capy Canvas는 Linux, Windows, macOS, Android, iPadOS용 베타로 제공됩니다. 각 버전은 컴파일된 네이티브 앱으로, 플랫폼 고유의 UI 툴킷을 사용합니다. 따라서 모든 기기에서 더 나은 성능과 배터리 지속 시간을 제공합니다.",
+          "text": "{appName}는 Linux, Windows, macOS, Android, iPadOS용 베타로 제공됩니다. 각 버전은 컴파일된 네이티브 앱으로, 플랫폼 고유의 UI 툴킷을 사용합니다. 따라서 모든 기기에서 더 나은 성능과 배터리 지속 시간을 제공합니다.",
           "link": "시스템 아키텍처"
         }
       },
-      "start": "Capy Canvas는 웹 브라우저 안에서, 오프라인에서도 실행할 수 있습니다. 빠르고 간편하게 시작할 수 있는 방법입니다. 현재 베타인 데스크톱과 태블릿 앱은 최고의 성능과 하드웨어 호환성을 제공합니다.",
+      "start": "{appName}는 웹 브라우저 안에서, 오프라인에서도 실행할 수 있습니다. 빠르고 간편하게 시작할 수 있는 방법입니다. 현재 베타인 데스크톱과 태블릿 앱은 최고의 성능과 하드웨어 호환성을 제공합니다.",
       "links": {
         "quickstart": "빠른 시작",
         "illustration": "일러스트 튜토리얼"
@@ -472,4 +473,4 @@ export const docsUI = {
     }
   },
   ...additionalDocsUI
-};
+});

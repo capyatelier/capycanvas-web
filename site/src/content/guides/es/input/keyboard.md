@@ -23,7 +23,7 @@ Haz una de las siguientes acciones:
 ## Mapas de atajos preestablecidos
 
 Puedes usar teclas basadas en otra aplicación. Elige un **Ajuste preestablecido** en
-**Mapa de atajos**: **CapyCanvas** (el predeterminado), **Estilo Photoshop**,
+**Mapa de atajos**: **{appName}** (el predeterminado), **Estilo Photoshop**,
 **Estilo Krita**, **Estilo Clip Studio Paint**, **Estilo Procreate**, **Estilo
 GIMP** o **Estilo Affinity**.
 

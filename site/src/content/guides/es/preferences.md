@@ -19,7 +19,7 @@ Haz una de las siguientes acciones:
 - Escribe «Preferencias» en la [búsqueda de comandos](/es/docs/start/command-search/).
 
 Preferencias se abre en la página **Apariencia**. **Ayuda > Atajos de teclado** lo
-abre en **Atajos de teclado**, y **Ayuda > Acerca de Capy Canvas**, en **Acerca de**.
+abre en **Atajos de teclado**, y **Ayuda > Acerca de {appName}**, en **Acerca de**.
 
 Mientras Preferencias está abierto, los atajos del lienzo, los botones del lápiz y
 los toques con los dedos no hacen nada.

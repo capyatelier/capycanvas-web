@@ -13,7 +13,7 @@ Ogni modifica a un'impostazione del pennello viene salvata subito con il suo
 predefinito.
 
 - Le modifiche sono condivise da tutte le aree di lavoro, comprese quelle che crei.
-- Le modifiche restano dopo il riavvio di Capy Canvas.
+- Le modifiche restano dopo il riavvio di {appName}.
 - Le impostazioni dei pennelli non vengono salvate nei file `.capy`.
 - Una modifica a un'impostazione del pennello non è un passaggio di annullamento, e Cronologia disposizione non elenca le modifiche ai pennelli.
 - Un pennello non conserva un colore. Dipinge con il colore corrente del [pannello Colore](/it/docs/color/color-panel/).

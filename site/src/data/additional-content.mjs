@@ -17,22 +17,22 @@ export const additionalContent = {
       "language": "Idioma",
       "main": "Navegación principal",
       "skip": "Saltar al contenido",
-      "github": "Capy Canvas en GitHub"
+      "github": "{appName} en GitHub"
     },
     "home": {
-      "title": "Capy Canvas",
-      "description": "Capy Canvas es una aplicación multiplataforma para bocetos, ilustración y fotografía, con un potente motor de pintura acelerado por GPU.",
+      "title": "{appName}",
+      "description": "{appName} es una aplicación multiplataforma para bocetos, ilustración y fotografía, con un potente motor de pintura acelerado por GPU.",
       "workspaces": "Espacio de trabajo",
       "slides": {
         "sketch": "Un dibujo a tinta de un tren debajo de un gran árbol en el espacio de trabajo Sketch, donde el dibujo llena la pantalla y algunas herramientas se ubican en los bordes.",
         "paint": "Una pintura al óleo de una casa junto al mar al atardecer en el espacio de trabajo Paint, con pinceles, colores y capas al lado del lienzo.",
         "photo": "Una fotografía de un pequeño terrario en el espacio de trabajo Photo, con la herramienta Rango tonal lista para seleccionar por brillo y capas de ajuste de Curvas e Intensidad."
       },
-      "meta": "Capy Canvas es una aplicación multiplataforma para bocetos, ilustración y fotografía, con un potente motor de pintura acelerado por GPU."
+      "meta": "{appName} es una aplicación multiplataforma para bocetos, ilustración y fotografía, con un potente motor de pintura acelerado por GPU."
     },
     "download": {
       "title": "Descargar",
-      "intro": "Capy Canvas está en fase beta. Puede tener algunos fallos. {feedback}.",
+      "intro": "{appName} está en fase beta. Puede tener algunos fallos. {feedback}.",
       "feedback": "Cuéntenos su opinión en GitHub",
       "status": "Próximamente",
       "platforms": [
@@ -46,7 +46,7 @@ export const additionalContent = {
       "joinBeta": "Unirse a la beta",
       "downloadFor": "Descargar {version} · {platform}",
       "openWebApp": "Abrir la aplicación web",
-      "meta": "Instale Capy Canvas como una aplicación web para uso sin conexión. Las descargas nativas llegarán pronto.",
+      "meta": "Instale {appName} como una aplicación web para uso sin conexión. Las descargas nativas llegarán pronto.",
       "pwa": pwaContent["es"],
       "variants": {
         "apk": "APK",
@@ -58,7 +58,7 @@ export const additionalContent = {
       "pastVersions": "Versiones anteriores",
       "allReleases": "Versiones en GitHub",
       "notesLanguage": "Las notas de la versión están en inglés.",
-      "metaReleased": "Descargue Capy Canvas o instálelo como aplicación web para usarlo sin conexión."
+      "metaReleased": "Descargue {appName} o instálelo como aplicación web para usarlo sin conexión."
     },
     "versions": {
       "title": "Versiones anteriores",
@@ -69,44 +69,44 @@ export const additionalContent = {
       "latest": "Más reciente",
       "files": "Archivos",
       "github": "Todos los archivos en GitHub",
-      "meta": "Todas las versiones publicadas de Capy Canvas, con notas de la versión y enlaces de descarga."
+      "meta": "Todas las versiones publicadas de {appName}, con notas de la versión y enlaces de descarga."
     },
     "ipadBeta": {
       "title": "Beta para iPad",
-      "intro": "Pruebe las nuevas versiones de Capy Canvas en su iPad antes de que lleguen al App Store.",
+      "intro": "Pruebe las nuevas versiones de {appName} en su iPad antes de que lleguen al App Store.",
       "steps": [
         "Instale la app TestFlight de Apple desde el App Store.",
         "En su iPad, abra la {invitation}.",
-        "Acepte la invitación e instale Capy Canvas."
+        "Acepte la invitación e instale {appName}."
       ],
       "links": {
-        "invitation": "invitación a la beta de Capy Canvas"
+        "invitation": "invitación a la beta de {appName}"
       },
-      "meta": "Cómo instalar la beta de Capy Canvas en su iPad con TestFlight."
+      "meta": "Cómo instalar la beta de {appName} en su iPad con TestFlight."
     },
     "androidBeta": {
       "title": "Beta para tabletas Android",
-      "intro": "Pruebe las nuevas versiones de Capy Canvas en su tableta Android antes de su lanzamiento.",
+      "intro": "Pruebe las nuevas versiones de {appName} en su tableta Android antes de su lanzamiento.",
       "note": "Inicie sesión con la cuenta de Google que usa en su tableta.",
       "steps": [
         "Únase al {group}.",
         "Abra la {test} y acepte la invitación.",
-        "Instale Capy Canvas desde Google Play en su tableta."
+        "Instale {appName} desde Google Play en su tableta."
       ],
       "links": {
-        "group": "grupo de la beta de Capy Canvas",
+        "group": "grupo de la beta de {appName}",
         "test": "página de la beta en Google Play"
       },
-      "meta": "Cómo instalar la beta de Capy Canvas en su tableta Android desde Google Play."
+      "meta": "Cómo instalar la beta de {appName} en su tableta Android desde Google Play."
     },
     "documentation": {
       "title": "Documentación",
-      "meta": "Documentación de Capy Canvas: espacios de trabajo, pinceles, color, capas, filtros, selecciones, edición de fotos y tutoriales de ilustración y fotografía."
+      "meta": "Documentación de {appName}: espacios de trabajo, pinceles, color, capas, filtros, selecciones, edición de fotos y tutoriales de ilustración y fotografía."
     },
     "privacy": {
       "title": "Política de privacidad",
       "effectiveDate": "Fecha de vigencia",
-      "meta": "Cómo maneja Capy Canvas los datos de las aplicaciones, el alojamiento, los diagnósticos y las solicitudes de soporte."
+      "meta": "Cómo maneja {appName} los datos de las aplicaciones, el alojamiento, los diagnósticos y las solicitudes de soporte."
     },
     "notFound": {
       "title": "Página no encontrada",
@@ -130,22 +130,22 @@ export const additionalContent = {
       "language": "Idioma",
       "main": "Navegação principal",
       "skip": "Pular para o conteúdo",
-      "github": "Capy Canvas no GitHub"
+      "github": "{appName} no GitHub"
     },
     "home": {
-      "title": "Capy Canvas",
-      "description": "Capy Canvas é um aplicativo multiplataforma para esboços, ilustração e fotografia, com um poderoso motor de pintura acelerado por GPU.",
+      "title": "{appName}",
+      "description": "{appName} é um aplicativo multiplataforma para esboços, ilustração e fotografia, com um poderoso motor de pintura acelerado por GPU.",
       "workspaces": "Espaço de trabalho",
       "slides": {
         "sketch": "Um desenho a tinta de um trem sob uma grande árvore na área de trabalho Sketch, onde o desenho preenche a tela e algumas ferramentas ficam nas bordas.",
         "paint": "Pintura a óleo de uma casa à beira-mar ao pôr do sol na área de trabalho Paint, com pincéis, cores e camadas ao lado da tela.",
         "photo": "Uma fotografia de um pequeno terrário na área de trabalho Photo, com a ferramenta Faixa tonal pronta para selecionar por brilho e camadas de ajuste de Curvas e Vibração."
       },
-      "meta": "Capy Canvas é um aplicativo multiplataforma para esboços, ilustração e fotografia, com um poderoso motor de pintura acelerado por GPU."
+      "meta": "{appName} é um aplicativo multiplataforma para esboços, ilustração e fotografia, com um poderoso motor de pintura acelerado por GPU."
     },
     "download": {
       "title": "Baixar",
-      "intro": "O Capy Canvas está em fase beta. Pode haver alguns problemas. {feedback}.",
+      "intro": "O {appName} está em fase beta. Pode haver alguns problemas. {feedback}.",
       "feedback": "Envie sua opinião pelo GitHub",
       "status": "Em breve",
       "platforms": [
@@ -159,7 +159,7 @@ export const additionalContent = {
       "joinBeta": "Participar do beta",
       "downloadFor": "Baixar {version} · {platform}",
       "openWebApp": "Abrir o aplicativo da web",
-      "meta": "Instale Capy Canvas como um aplicativo da web para uso offline. Os downloads nativos estarão disponíveis em breve.",
+      "meta": "Instale {appName} como um aplicativo da web para uso offline. Os downloads nativos estarão disponíveis em breve.",
       "pwa": pwaContent["pt-BR"],
       "variants": {
         "apk": "APK",
@@ -171,7 +171,7 @@ export const additionalContent = {
       "pastVersions": "Versões anteriores",
       "allReleases": "Versões no GitHub",
       "notesLanguage": "As notas da versão estão em inglês.",
-      "metaReleased": "Baixe o Capy Canvas ou instale-o como aplicativo da web para uso offline."
+      "metaReleased": "Baixe o {appName} ou instale-o como aplicativo da web para uso offline."
     },
     "versions": {
       "title": "Versões anteriores",
@@ -182,44 +182,44 @@ export const additionalContent = {
       "latest": "Mais recente",
       "files": "Arquivos",
       "github": "Todos os arquivos no GitHub",
-      "meta": "Todas as versões lançadas do Capy Canvas, com notas da versão e links para download."
+      "meta": "Todas as versões lançadas do {appName}, com notas da versão e links para download."
     },
     "ipadBeta": {
       "title": "Beta para iPad",
-      "intro": "Experimente as novas versões do Capy Canvas no iPad antes de chegarem à App Store.",
+      "intro": "Experimente as novas versões do {appName} no iPad antes de chegarem à App Store.",
       "steps": [
         "Instale o app TestFlight, da Apple, pela App Store.",
         "No iPad, abra o {invitation}.",
-        "Aceite o convite e instale o Capy Canvas."
+        "Aceite o convite e instale o {appName}."
       ],
       "links": {
-        "invitation": "convite para o beta do Capy Canvas"
+        "invitation": "convite para o beta do {appName}"
       },
-      "meta": "Como instalar a versão beta do Capy Canvas no iPad com o TestFlight."
+      "meta": "Como instalar a versão beta do {appName} no iPad com o TestFlight."
     },
     "androidBeta": {
       "title": "Beta para tablets Android",
-      "intro": "Experimente as novas versões do Capy Canvas no tablet Android antes do lançamento.",
+      "intro": "Experimente as novas versões do {appName} no tablet Android antes do lançamento.",
       "note": "Entre com a conta do Google que você usa no tablet.",
       "steps": [
         "Participe do {group}.",
         "Abra a {test} e aceite o convite.",
-        "Instale o Capy Canvas pelo Google Play no tablet."
+        "Instale o {appName} pelo Google Play no tablet."
       ],
       "links": {
-        "group": "grupo do beta do Capy Canvas",
+        "group": "grupo do beta do {appName}",
         "test": "página do beta no Google Play"
       },
-      "meta": "Como instalar a versão beta do Capy Canvas no tablet Android pelo Google Play."
+      "meta": "Como instalar a versão beta do {appName} no tablet Android pelo Google Play."
     },
     "documentation": {
       "title": "Documentação",
-      "meta": "Documentação do Capy Canvas: áreas de trabalho, pincéis, cores, camadas, filtros, seleções, edição de fotos e tutoriais de ilustração e fotografia."
+      "meta": "Documentação do {appName}: áreas de trabalho, pincéis, cores, camadas, filtros, seleções, edição de fotos e tutoriais de ilustração e fotografia."
     },
     "privacy": {
       "title": "Política de Privacidade",
       "effectiveDate": "Data efetiva",
-      "meta": "Como Capy Canvas lida com dados de aplicativos, hospedagem, diagnósticos e solicitações de suporte."
+      "meta": "Como {appName} lida com dados de aplicativos, hospedagem, diagnósticos e solicitações de suporte."
     },
     "notFound": {
       "title": "Página não encontrada",
@@ -243,22 +243,22 @@ export const additionalContent = {
       "language": "Bahasa",
       "main": "Navigasi utama",
       "skip": "Lewati ke konten",
-      "github": "Capy Canvas di GitHub"
+      "github": "{appName} di GitHub"
     },
     "home": {
-      "title": "Capy Canvas",
-      "description": "Capy Canvas adalah aplikasi lintas platform untuk sketsa, ilustrasi, dan fotografi, dengan mesin lukis canggih yang dipercepat GPU.",
+      "title": "{appName}",
+      "description": "{appName} adalah aplikasi lintas platform untuk sketsa, ilustrasi, dan fotografi, dengan mesin lukis canggih yang dipercepat GPU.",
       "workspaces": "Ruang kerja",
       "slides": {
         "sketch": "Gambar tinta kereta api di bawah pohon besar di ruang kerja Sketch, tempat gambar memenuhi layar dan beberapa alat berada di tepinya.",
         "paint": "Lukisan cat minyak sebuah rumah di tepi laut saat matahari terbenam di ruang kerja Paint, dengan kuas, warna, dan lapisan di samping kanvas.",
         "photo": "Foto terarium kecil di ruang kerja Photo, dengan alat rentang Tonal yang siap dipilih berdasarkan kecerahan, serta lapisan penyesuaian Curves dan Vibrance."
       },
-      "meta": "Capy Canvas adalah aplikasi lintas platform untuk sketsa, ilustrasi, dan fotografi, dengan mesin lukis canggih yang dipercepat GPU."
+      "meta": "{appName} adalah aplikasi lintas platform untuk sketsa, ilustrasi, dan fotografi, dengan mesin lukis canggih yang dipercepat GPU."
     },
     "download": {
       "title": "Unduh",
-      "intro": "Capy Canvas masih dalam tahap beta. Mungkin masih ada sedikit kendala. {feedback}.",
+      "intro": "{appName} masih dalam tahap beta. Mungkin masih ada sedikit kendala. {feedback}.",
       "feedback": "Sampaikan masukan Anda di GitHub",
       "status": "Segera hadir",
       "platforms": [
@@ -272,7 +272,7 @@ export const additionalContent = {
       "joinBeta": "Ikuti beta",
       "downloadFor": "Unduh {version} · {platform}",
       "openWebApp": "Buka aplikasi web",
-      "meta": "Instal Capy Canvas sebagai aplikasi web untuk penggunaan offline. Unduhan asli akan segera hadir.",
+      "meta": "Instal {appName} sebagai aplikasi web untuk penggunaan offline. Unduhan asli akan segera hadir.",
       "pwa": pwaContent["id"],
       "variants": {
         "apk": "APK",
@@ -284,7 +284,7 @@ export const additionalContent = {
       "pastVersions": "Versi sebelumnya",
       "allReleases": "Rilis di GitHub",
       "notesLanguage": "Catatan rilis tersedia dalam bahasa Inggris.",
-      "metaReleased": "Unduh Capy Canvas, atau instal sebagai aplikasi web untuk penggunaan offline."
+      "metaReleased": "Unduh {appName}, atau instal sebagai aplikasi web untuk penggunaan offline."
     },
     "versions": {
       "title": "Versi sebelumnya",
@@ -295,44 +295,44 @@ export const additionalContent = {
       "latest": "Terbaru",
       "files": "Berkas",
       "github": "Semua berkas di GitHub",
-      "meta": "Semua versi Capy Canvas yang telah dirilis, beserta catatan rilis dan tautan unduhan."
+      "meta": "Semua versi {appName} yang telah dirilis, beserta catatan rilis dan tautan unduhan."
     },
     "ipadBeta": {
       "title": "Beta iPad",
-      "intro": "Coba versi baru Capy Canvas di iPad sebelum tersedia di App Store.",
+      "intro": "Coba versi baru {appName} di iPad sebelum tersedia di App Store.",
       "steps": [
         "Instal aplikasi TestFlight dari Apple melalui App Store.",
         "Di iPad, buka {invitation}.",
-        "Terima undangan, lalu instal Capy Canvas."
+        "Terima undangan, lalu instal {appName}."
       ],
       "links": {
-        "invitation": "undangan beta Capy Canvas"
+        "invitation": "undangan beta {appName}"
       },
-      "meta": "Cara menginstal versi beta Capy Canvas di iPad dengan TestFlight."
+      "meta": "Cara menginstal versi beta {appName} di iPad dengan TestFlight."
     },
     "androidBeta": {
       "title": "Beta tablet Android",
-      "intro": "Coba versi baru Capy Canvas di tablet Android sebelum dirilis.",
+      "intro": "Coba versi baru {appName} di tablet Android sebelum dirilis.",
       "note": "Masuk dengan akun Google yang Anda gunakan di tablet.",
       "steps": [
         "Bergabunglah dengan {group}.",
         "Buka {test} dan terima undangannya.",
-        "Instal Capy Canvas dari Google Play di tablet Anda."
+        "Instal {appName} dari Google Play di tablet Anda."
       ],
       "links": {
-        "group": "grup beta Capy Canvas",
+        "group": "grup beta {appName}",
         "test": "halaman beta di Google Play"
       },
-      "meta": "Cara menginstal versi beta Capy Canvas di tablet Android dari Google Play."
+      "meta": "Cara menginstal versi beta {appName} di tablet Android dari Google Play."
     },
     "documentation": {
       "title": "Dokumentasi",
-      "meta": "Dokumentasi Capy Canvas: ruang kerja, kuas, warna, lapisan, filter, seleksi, pengeditan foto, serta tutorial ilustrasi dan foto."
+      "meta": "Dokumentasi {appName}: ruang kerja, kuas, warna, lapisan, filter, seleksi, pengeditan foto, serta tutorial ilustrasi dan foto."
     },
     "privacy": {
       "title": "Kebijakan Privasi",
       "effectiveDate": "Tanggal efektif",
-      "meta": "Bagaimana Capy Canvas menangani data aplikasi, hosting, diagnostik, dan permintaan dukungan."
+      "meta": "Bagaimana {appName} menangani data aplikasi, hosting, diagnostik, dan permintaan dukungan."
     },
     "notFound": {
       "title": "Halaman tidak ditemukan",
@@ -356,22 +356,22 @@ export const additionalContent = {
       "language": "Langue",
       "main": "Navigation principale",
       "skip": "Passer au contenu",
-      "github": "Capy Canvas sur GitHub"
+      "github": "{appName} sur GitHub"
     },
     "home": {
-      "title": "Capy Canvas",
-      "description": "Capy Canvas est une application multiplateforme pour le dessin, l'illustration et la photographie, dotée d'un puissant moteur de peinture accéléré par GPU.",
+      "title": "{appName}",
+      "description": "{appName} est une application multiplateforme pour le dessin, l'illustration et la photographie, dotée d'un puissant moteur de peinture accéléré par GPU.",
       "workspaces": "Espace de travail",
       "slides": {
         "sketch": "Un dessin à l'encre d'un train sous un grand arbre dans l'espace de travail Sketch, où le dessin remplit l'écran et quelques outils se trouvent sur les bords.",
         "paint": "Une peinture à l'huile d'une maison au bord de la mer au coucher du soleil dans l'espace de travail Paint, avec des pinceaux, des couleurs et des calques à côté de la toile.",
         "photo": "Une photographie d'un petit terrarium dans l'espace de travail Photo, avec l'outil Plage de tons prêt à sélectionner par luminosité et les calques de réglage Courbes et Vibrance."
       },
-      "meta": "Capy Canvas est une application multiplateforme pour le dessin, l'illustration et la photographie, dotée d'un puissant moteur de peinture accéléré par GPU."
+      "meta": "{appName} est une application multiplateforme pour le dessin, l'illustration et la photographie, dotée d'un puissant moteur de peinture accéléré par GPU."
     },
     "download": {
       "title": "Télécharger",
-      "intro": "Capy Canvas est en version bêta. Quelques imperfections sont possibles. {feedback}.",
+      "intro": "{appName} est en version bêta. Quelques imperfections sont possibles. {feedback}.",
       "feedback": "Faites-nous part de vos remarques sur GitHub",
       "status": "Bientôt disponible",
       "platforms": [
@@ -385,7 +385,7 @@ export const additionalContent = {
       "joinBeta": "Rejoindre la bêta",
       "downloadFor": "Télécharger {version} · {platform}",
       "openWebApp": "Ouvrir l'application Web",
-      "meta": "Installez Capy Canvas en tant qu'application Web pour une utilisation hors ligne. Les téléchargements natifs arrivent bientôt.",
+      "meta": "Installez {appName} en tant qu'application Web pour une utilisation hors ligne. Les téléchargements natifs arrivent bientôt.",
       "pwa": pwaContent["fr"],
       "variants": {
         "apk": "APK",
@@ -397,7 +397,7 @@ export const additionalContent = {
       "pastVersions": "Versions précédentes",
       "allReleases": "Versions sur GitHub",
       "notesLanguage": "Les notes de version sont en anglais.",
-      "metaReleased": "Téléchargez Capy Canvas ou installez-le en tant qu'application Web pour une utilisation hors ligne."
+      "metaReleased": "Téléchargez {appName} ou installez-le en tant qu'application Web pour une utilisation hors ligne."
     },
     "versions": {
       "title": "Versions précédentes",
@@ -408,44 +408,44 @@ export const additionalContent = {
       "latest": "Dernière version",
       "files": "Fichiers",
       "github": "Tous les fichiers sur GitHub",
-      "meta": "Toutes les versions publiées de Capy Canvas, avec leurs notes de version et leurs liens de téléchargement."
+      "meta": "Toutes les versions publiées de {appName}, avec leurs notes de version et leurs liens de téléchargement."
     },
     "ipadBeta": {
       "title": "Bêta pour iPad",
-      "intro": "Essayez les nouvelles versions de Capy Canvas sur votre iPad avant leur arrivée sur l'App Store.",
+      "intro": "Essayez les nouvelles versions de {appName} sur votre iPad avant leur arrivée sur l'App Store.",
       "steps": [
         "Installez l'app TestFlight d'Apple depuis l'App Store.",
         "Sur votre iPad, ouvrez l'{invitation}.",
-        "Acceptez l'invitation, puis installez Capy Canvas."
+        "Acceptez l'invitation, puis installez {appName}."
       ],
       "links": {
-        "invitation": "invitation à la bêta de Capy Canvas"
+        "invitation": "invitation à la bêta de {appName}"
       },
-      "meta": "Comment installer la bêta de Capy Canvas sur votre iPad avec TestFlight."
+      "meta": "Comment installer la bêta de {appName} sur votre iPad avec TestFlight."
     },
     "androidBeta": {
       "title": "Bêta pour tablettes Android",
-      "intro": "Essayez les nouvelles versions de Capy Canvas sur votre tablette Android avant leur sortie.",
+      "intro": "Essayez les nouvelles versions de {appName} sur votre tablette Android avant leur sortie.",
       "note": "Connectez-vous avec le compte Google que vous utilisez sur votre tablette.",
       "steps": [
         "Rejoignez le {group}.",
         "Ouvrez la {test} et acceptez l'invitation.",
-        "Installez Capy Canvas depuis Google Play sur votre tablette."
+        "Installez {appName} depuis Google Play sur votre tablette."
       ],
       "links": {
-        "group": "groupe de la bêta Capy Canvas",
+        "group": "groupe de la bêta {appName}",
         "test": "page de la bêta sur Google Play"
       },
-      "meta": "Comment installer la bêta de Capy Canvas sur votre tablette Android depuis Google Play."
+      "meta": "Comment installer la bêta de {appName} sur votre tablette Android depuis Google Play."
     },
     "documentation": {
       "title": "Documentation",
-      "meta": "Documentation Capy Canvas : espaces de travail, pinceaux, couleurs, calques, filtres, sélections, retouche photo, et tutoriels d'illustration et de photo."
+      "meta": "Documentation {appName} : espaces de travail, pinceaux, couleurs, calques, filtres, sélections, retouche photo, et tutoriels d'illustration et de photo."
     },
     "privacy": {
       "title": "Politique de confidentialité",
       "effectiveDate": "Date d'entrée en vigueur",
-      "meta": "Comment Capy Canvas gère les données d'application, l'hébergement, les diagnostics et les demandes d'assistance."
+      "meta": "Comment {appName} gère les données d'application, l'hébergement, les diagnostics et les demandes d'assistance."
     },
     "notFound": {
       "title": "Page introuvable",
@@ -469,22 +469,22 @@ export const additionalContent = {
       "language": "Sprache",
       "main": "Hauptnavigation",
       "skip": "Zum Inhalt springen",
-      "github": "Capy Canvas auf GitHub"
+      "github": "{appName} auf GitHub"
     },
     "home": {
-      "title": "Capy Canvas",
-      "description": "Capy Canvas ist eine plattformübergreifende App für Skizzen, Illustration und Fotografie mit einer leistungsstarken GPU-beschleunigten Mal-Engine.",
+      "title": "{appName}",
+      "description": "{appName} ist eine plattformübergreifende App für Skizzen, Illustration und Fotografie mit einer leistungsstarken GPU-beschleunigten Mal-Engine.",
       "workspaces": "Arbeitsbereich",
       "slides": {
         "sketch": "Eine Tuschezeichnung eines Zuges unter einem großen Baum im Sketch-Arbeitsbereich, wobei die Zeichnung den Bildschirm ausfüllt und an den Rändern einige Werkzeuge sitzen.",
         "paint": "Ein Ölgemälde eines Hauses am Meer bei Sonnenuntergang im Paint-Arbeitsbereich, mit Pinseln, Farben und Ebenen neben der Leinwand.",
         "photo": "Ein Foto eines kleinen Terrariums im Photo-Arbeitsbereich, mit dem Tonwertbereich-Werkzeug zur Auswahl nach Helligkeit und den Einstellungsebenen „Kurven“ und „Vibranz“."
       },
-      "meta": "Capy Canvas ist eine plattformübergreifende App für Skizzen, Illustration und Fotografie mit einer leistungsstarken GPU-beschleunigten Mal-Engine."
+      "meta": "{appName} ist eine plattformübergreifende App für Skizzen, Illustration und Fotografie mit einer leistungsstarken GPU-beschleunigten Mal-Engine."
     },
     "download": {
       "title": "Herunterladen",
-      "intro": "Capy Canvas befindet sich in der Betaphase. Es kann noch kleine Fehler geben. {feedback}.",
+      "intro": "{appName} befindet sich in der Betaphase. Es kann noch kleine Fehler geben. {feedback}.",
       "feedback": "Teilen Sie uns Ihr Feedback auf GitHub mit",
       "status": "Kommt bald",
       "platforms": [
@@ -498,7 +498,7 @@ export const additionalContent = {
       "joinBeta": "Beta beitreten",
       "downloadFor": "{version} herunterladen · {platform}",
       "openWebApp": "Web-App öffnen",
-      "meta": "Installieren Sie Capy Canvas als Web-App für die Offline-Nutzung. Native Downloads folgen bald.",
+      "meta": "Installieren Sie {appName} als Web-App für die Offline-Nutzung. Native Downloads folgen bald.",
       "pwa": pwaContent["de"],
       "variants": {
         "apk": "APK",
@@ -510,7 +510,7 @@ export const additionalContent = {
       "pastVersions": "Frühere Versionen",
       "allReleases": "Versionen auf GitHub",
       "notesLanguage": "Die Versionshinweise sind auf Englisch.",
-      "metaReleased": "Laden Sie Capy Canvas herunter oder installieren Sie es als Web-App für die Offline-Nutzung."
+      "metaReleased": "Laden Sie {appName} herunter oder installieren Sie es als Web-App für die Offline-Nutzung."
     },
     "versions": {
       "title": "Frühere Versionen",
@@ -521,44 +521,44 @@ export const additionalContent = {
       "latest": "Neueste",
       "files": "Dateien",
       "github": "Alle Dateien auf GitHub",
-      "meta": "Alle veröffentlichten Versionen von Capy Canvas mit Versionshinweisen und Download-Links."
+      "meta": "Alle veröffentlichten Versionen von {appName} mit Versionshinweisen und Download-Links."
     },
     "ipadBeta": {
       "title": "Beta für iPad",
-      "intro": "Testen Sie neue Versionen von Capy Canvas auf Ihrem iPad, bevor sie im App Store erscheinen.",
+      "intro": "Testen Sie neue Versionen von {appName} auf Ihrem iPad, bevor sie im App Store erscheinen.",
       "steps": [
         "Installieren Sie die App TestFlight von Apple aus dem App Store.",
         "Öffnen Sie auf Ihrem iPad die {invitation}.",
-        "Nehmen Sie die Einladung an und installieren Sie Capy Canvas."
+        "Nehmen Sie die Einladung an und installieren Sie {appName}."
       ],
       "links": {
-        "invitation": "Einladung zur Beta von Capy Canvas"
+        "invitation": "Einladung zur Beta von {appName}"
       },
-      "meta": "So installieren Sie die Beta von Capy Canvas mit TestFlight auf Ihrem iPad."
+      "meta": "So installieren Sie die Beta von {appName} mit TestFlight auf Ihrem iPad."
     },
     "androidBeta": {
       "title": "Beta für Android-Tablets",
-      "intro": "Testen Sie neue Versionen von Capy Canvas auf Ihrem Android-Tablet vor der Veröffentlichung.",
+      "intro": "Testen Sie neue Versionen von {appName} auf Ihrem Android-Tablet vor der Veröffentlichung.",
       "note": "Melden Sie sich mit dem Google-Konto an, das Sie auf Ihrem Tablet verwenden.",
       "steps": [
         "Treten Sie der {group} bei.",
         "Öffnen Sie die {test} und nehmen Sie die Einladung an.",
-        "Installieren Sie Capy Canvas über Google Play auf Ihrem Tablet."
+        "Installieren Sie {appName} über Google Play auf Ihrem Tablet."
       ],
       "links": {
-        "group": "Gruppe für die Beta von Capy Canvas",
+        "group": "Gruppe für die Beta von {appName}",
         "test": "Beta-Seite bei Google Play"
       },
-      "meta": "So installieren Sie die Beta von Capy Canvas aus Google Play auf Ihrem Android-Tablet."
+      "meta": "So installieren Sie die Beta von {appName} aus Google Play auf Ihrem Android-Tablet."
     },
     "documentation": {
       "title": "Dokumentation",
-      "meta": "Capy Canvas-Dokumentation: Arbeitsbereiche, Pinsel, Farben, Ebenen, Filter, Auswahlen, Fotobearbeitung sowie Illustrations- und Foto-Tutorials."
+      "meta": "{appName}-Dokumentation: Arbeitsbereiche, Pinsel, Farben, Ebenen, Filter, Auswahlen, Fotobearbeitung sowie Illustrations- und Foto-Tutorials."
     },
     "privacy": {
       "title": "Datenschutzrichtlinie",
       "effectiveDate": "Datum des Inkrafttretens",
-      "meta": "Wie Capy Canvas App-Daten, Hosting, Diagnose und Supportanfragen verarbeitet."
+      "meta": "Wie {appName} App-Daten, Hosting, Diagnose und Supportanfragen verarbeitet."
     },
     "notFound": {
       "title": "Seite nicht gefunden",
@@ -582,22 +582,22 @@ export const additionalContent = {
       "language": "Язык",
       "main": "Основная навигация",
       "skip": "Перейти к содержимому",
-      "github": "Capy Canvas на GitHub"
+      "github": "{appName} на GitHub"
     },
     "home": {
-      "title": "Capy Canvas",
-      "description": "Capy Canvas — это кроссплатформенное приложение для создания эскизов, иллюстраций и фотографий с мощным механизмом рисования с ускорением GPU.",
+      "title": "{appName}",
+      "description": "{appName} — это кроссплатформенное приложение для создания эскизов, иллюстраций и фотографий с мощным механизмом рисования с ускорением GPU.",
       "workspaces": "Рабочая область",
       "slides": {
         "sketch": "Чернильный рисунок поезда под большим деревом в рабочем пространстве Sketch, где рисунок заполняет экран, а по краям расположено несколько инструментов.",
         "paint": "Картина маслом дома у моря на закате в рабочем пространстве Paint, с кистями, цветами и слоями рядом с холстом.",
         "photo": "Фотография небольшого террариума в рабочей области Photo с инструментом «Тональный диапазон», готовым к выбору по яркости, а также корректирующими слоями «Кривые» и «Вибрация»."
       },
-      "meta": "Capy Canvas — это кроссплатформенное приложение для создания эскизов, иллюстраций и фотографий с мощным механизмом рисования с ускорением GPU."
+      "meta": "{appName} — это кроссплатформенное приложение для создания эскизов, иллюстраций и фотографий с мощным механизмом рисования с ускорением GPU."
     },
     "download": {
       "title": "Скачать",
-      "intro": "Capy Canvas сейчас в бета-версии. Возможны небольшие ошибки. {feedback}.",
+      "intro": "{appName} сейчас в бета-версии. Возможны небольшие ошибки. {feedback}.",
       "feedback": "Делитесь отзывами на GitHub",
       "status": "Скоро",
       "platforms": [
@@ -611,7 +611,7 @@ export const additionalContent = {
       "joinBeta": "Стать тестером",
       "downloadFor": "Скачать {version} · {platform}",
       "openWebApp": "Открыть веб-приложение",
-      "meta": "Установите Capy Canvas как веб-приложение для автономного использования. Скоро появятся нативные загрузки.",
+      "meta": "Установите {appName} как веб-приложение для автономного использования. Скоро появятся нативные загрузки.",
       "pwa": pwaContent["ru"],
       "variants": {
         "apk": "APK",
@@ -623,7 +623,7 @@ export const additionalContent = {
       "pastVersions": "Предыдущие версии",
       "allReleases": "Выпуски на GitHub",
       "notesLanguage": "Примечания к выпуску на английском языке.",
-      "metaReleased": "Скачайте Capy Canvas или установите его как веб-приложение для автономного использования."
+      "metaReleased": "Скачайте {appName} или установите его как веб-приложение для автономного использования."
     },
     "versions": {
       "title": "Предыдущие версии",
@@ -634,44 +634,44 @@ export const additionalContent = {
       "latest": "Последняя",
       "files": "Файлы",
       "github": "Все файлы на GitHub",
-      "meta": "Все выпущенные версии Capy Canvas с примечаниями к выпуску и ссылками для скачивания."
+      "meta": "Все выпущенные версии {appName} с примечаниями к выпуску и ссылками для скачивания."
     },
     "ipadBeta": {
       "title": "Бета-версия для iPad",
-      "intro": "Попробуйте новые версии Capy Canvas на iPad до их появления в App Store.",
+      "intro": "Попробуйте новые версии {appName} на iPad до их появления в App Store.",
       "steps": [
         "Установите приложение Apple TestFlight из App Store.",
         "Откройте на iPad {invitation}.",
-        "Примите приглашение и установите Capy Canvas."
+        "Примите приглашение и установите {appName}."
       ],
       "links": {
-        "invitation": "приглашение в бета-тест Capy Canvas"
+        "invitation": "приглашение в бета-тест {appName}"
       },
-      "meta": "Как установить бета-версию Capy Canvas на iPad через TestFlight."
+      "meta": "Как установить бета-версию {appName} на iPad через TestFlight."
     },
     "androidBeta": {
       "title": "Бета-версия для планшетов Android",
-      "intro": "Попробуйте новые версии Capy Canvas на планшете Android до их выхода.",
+      "intro": "Попробуйте новые версии {appName} на планшете Android до их выхода.",
       "note": "Войдите в тот же аккаунт Google, что и на планшете.",
       "steps": [
         "Вступите в {group}.",
         "Откройте {test} и примите приглашение.",
-        "Установите Capy Canvas из Google Play на планшете."
+        "Установите {appName} из Google Play на планшете."
       ],
       "links": {
-        "group": "группу бета-тестирования Capy Canvas",
+        "group": "группу бета-тестирования {appName}",
         "test": "страницу бета-теста в Google Play"
       },
-      "meta": "Как установить бета-версию Capy Canvas на планшет Android из Google Play."
+      "meta": "Как установить бета-версию {appName} на планшет Android из Google Play."
     },
     "documentation": {
       "title": "Документация",
-      "meta": "Документация Capy Canvas: рабочие пространства, кисти, цвет, слои, фильтры, выделение, обработка фотографий и уроки по иллюстрации и фотографии."
+      "meta": "Документация {appName}: рабочие пространства, кисти, цвет, слои, фильтры, выделение, обработка фотографий и уроки по иллюстрации и фотографии."
     },
     "privacy": {
       "title": "Политика конфиденциальности",
       "effectiveDate": "Дата вступления в силу",
-      "meta": "Как Capy Canvas обрабатывает данные приложений, хостинг, диагностику и запросы на поддержку."
+      "meta": "Как {appName} обрабатывает данные приложений, хостинг, диагностику и запросы на поддержку."
     },
     "notFound": {
       "title": "Страница не найдена",
@@ -695,22 +695,22 @@ export const additionalContent = {
       "language": "ภาษา",
       "main": "การนำทางหลัก",
       "skip": "ข้ามไปที่เนื้อหา",
-      "github": "Capy Canvas บน GitHub"
+      "github": "{appName} บน GitHub"
     },
     "home": {
-      "title": "Capy Canvas",
-      "description": "Capy Canvas เป็นแอปข้ามแพลตฟอร์มสำหรับการสเก็ตช์ภาพ ภาพประกอบ และการถ่ายภาพ พร้อมด้วยกลไกการลงสีที่เร่งประสิทธิภาพ GPU อันทรงพลัง",
+      "title": "{appName}",
+      "description": "{appName} เป็นแอปข้ามแพลตฟอร์มสำหรับการสเก็ตช์ภาพ ภาพประกอบ และการถ่ายภาพ พร้อมด้วยกลไกการลงสีที่เร่งประสิทธิภาพ GPU อันทรงพลัง",
       "workspaces": "พื้นที่ทำงาน",
       "slides": {
         "sketch": "ภาพวาดหมึกของรถไฟใต้ต้นไม้ใหญ่ในพื้นที่ทำงาน Sketch โดยที่ภาพวาดนั้นเต็มหน้าจอและมีเครื่องมือสองสามชิ้นอยู่ที่ขอบ",
         "paint": "ภาพวาดสีน้ำมันของบ้านริมทะเลยามพระอาทิตย์ตกดินในพื้นที่ทำงาน Paint พร้อมด้วยพู่กัน สี และเลเยอร์ข้างผ้าใบ",
         "photo": "รูปถ่ายของตู้กระจกขนาดเล็กในพื้นที่ทำงาน Photo พร้อมเครื่องมือช่วงโทนสีที่พร้อมให้เลือกตามความสว่าง และเลเยอร์การปรับเส้นโค้งและความสั่นสะเทือน"
       },
-      "meta": "Capy Canvas เป็นแอปข้ามแพลตฟอร์มสำหรับการสเก็ตช์ภาพ ภาพประกอบ และการถ่ายภาพ พร้อมด้วยกลไกการลงสีที่เร่งประสิทธิภาพ GPU อันทรงพลัง"
+      "meta": "{appName} เป็นแอปข้ามแพลตฟอร์มสำหรับการสเก็ตช์ภาพ ภาพประกอบ และการถ่ายภาพ พร้อมด้วยกลไกการลงสีที่เร่งประสิทธิภาพ GPU อันทรงพลัง"
     },
     "download": {
       "title": "ดาวน์โหลด",
-      "intro": "Capy Canvas อยู่ในช่วงเบต้า อาจมีข้อบกพร่องบ้าง {feedback}",
+      "intro": "{appName} อยู่ในช่วงเบต้า อาจมีข้อบกพร่องบ้าง {feedback}",
       "feedback": "แสดงความคิดเห็นได้ที่ GitHub",
       "status": "เร็วๆ นี้",
       "platforms": [
@@ -724,7 +724,7 @@ export const additionalContent = {
       "joinBeta": "เข้าร่วมเบต้า",
       "downloadFor": "ดาวน์โหลด {version} · {platform}",
       "openWebApp": "เปิดเว็บแอป",
-      "meta": "ติดตั้ง Capy Canvas เป็นเว็บแอปสำหรับการใช้งานออฟไลน์ การดาวน์โหลดแบบเนทีฟจะมาในเร็วๆ นี้",
+      "meta": "ติดตั้ง {appName} เป็นเว็บแอปสำหรับการใช้งานออฟไลน์ การดาวน์โหลดแบบเนทีฟจะมาในเร็วๆ นี้",
       "pwa": pwaContent["th"],
       "variants": {
         "apk": "APK",
@@ -736,7 +736,7 @@ export const additionalContent = {
       "pastVersions": "เวอร์ชันก่อนหน้า",
       "allReleases": "รุ่นที่เผยแพร่บน GitHub",
       "notesLanguage": "บันทึกประจำรุ่นเป็นภาษาอังกฤษ",
-      "metaReleased": "ดาวน์โหลด Capy Canvas หรือติดตั้งเป็นเว็บแอปสำหรับการใช้งานออฟไลน์"
+      "metaReleased": "ดาวน์โหลด {appName} หรือติดตั้งเป็นเว็บแอปสำหรับการใช้งานออฟไลน์"
     },
     "versions": {
       "title": "เวอร์ชันก่อนหน้า",
@@ -747,44 +747,44 @@ export const additionalContent = {
       "latest": "ล่าสุด",
       "files": "ไฟล์",
       "github": "ไฟล์ทั้งหมดบน GitHub",
-      "meta": "Capy Canvas ทุกเวอร์ชันที่เผยแพร่แล้ว พร้อมบันทึกประจำรุ่นและลิงก์ดาวน์โหลด"
+      "meta": "{appName} ทุกเวอร์ชันที่เผยแพร่แล้ว พร้อมบันทึกประจำรุ่นและลิงก์ดาวน์โหลด"
     },
     "ipadBeta": {
       "title": "เบต้าสำหรับ iPad",
-      "intro": "ลองใช้ Capy Canvas เวอร์ชันใหม่บน iPad ก่อนเผยแพร่บน App Store",
+      "intro": "ลองใช้ {appName} เวอร์ชันใหม่บน iPad ก่อนเผยแพร่บน App Store",
       "steps": [
         "ติดตั้งแอป TestFlight ของ Apple จาก App Store",
         "เปิด{invitation}บน iPad",
-        "ยอมรับคำเชิญ แล้วติดตั้ง Capy Canvas"
+        "ยอมรับคำเชิญ แล้วติดตั้ง {appName}"
       ],
       "links": {
-        "invitation": "ลิงก์เชิญเข้าร่วมเบต้า Capy Canvas"
+        "invitation": "ลิงก์เชิญเข้าร่วมเบต้า {appName}"
       },
-      "meta": "วิธีติดตั้ง Capy Canvas เวอร์ชันเบต้าบน iPad ด้วย TestFlight"
+      "meta": "วิธีติดตั้ง {appName} เวอร์ชันเบต้าบน iPad ด้วย TestFlight"
     },
     "androidBeta": {
       "title": "เบต้าสำหรับแท็บเล็ต Android",
-      "intro": "ลองใช้ Capy Canvas เวอร์ชันใหม่บนแท็บเล็ต Android ก่อนเปิดตัว",
+      "intro": "ลองใช้ {appName} เวอร์ชันใหม่บนแท็บเล็ต Android ก่อนเปิดตัว",
       "note": "ลงชื่อเข้าใช้ด้วยบัญชี Google เดียวกับที่ใช้บนแท็บเล็ต",
       "steps": [
         "เข้าร่วม{group}",
         "เปิด{test} แล้วยอมรับคำเชิญ",
-        "ติดตั้ง Capy Canvas จาก Google Play บนแท็บเล็ต"
+        "ติดตั้ง {appName} จาก Google Play บนแท็บเล็ต"
       ],
       "links": {
-        "group": "กลุ่มเบต้า Capy Canvas",
+        "group": "กลุ่มเบต้า {appName}",
         "test": "หน้าเบต้าบน Google Play"
       },
-      "meta": "วิธีติดตั้ง Capy Canvas เวอร์ชันเบต้าบนแท็บเล็ต Android จาก Google Play"
+      "meta": "วิธีติดตั้ง {appName} เวอร์ชันเบต้าบนแท็บเล็ต Android จาก Google Play"
     },
     "documentation": {
       "title": "เอกสารประกอบ",
-      "meta": "เอกสาร Capy Canvas: พื้นที่ทำงาน พู่กัน สี เลเยอร์ ฟิลเตอร์ พื้นที่เลือก การแก้ไขภาพถ่าย และบทเรียนการวาดภาพประกอบและภาพถ่าย"
+      "meta": "เอกสาร {appName}: พื้นที่ทำงาน พู่กัน สี เลเยอร์ ฟิลเตอร์ พื้นที่เลือก การแก้ไขภาพถ่าย และบทเรียนการวาดภาพประกอบและภาพถ่าย"
     },
     "privacy": {
       "title": "นโยบายความเป็นส่วนตัว",
       "effectiveDate": "วันที่มีผลบังคับใช้",
-      "meta": "Capy Canvas จัดการข้อมูลแอป โฮสติ้ง การวินิจฉัย และคำขอการสนับสนุนอย่างไร"
+      "meta": "{appName} จัดการข้อมูลแอป โฮสติ้ง การวินิจฉัย และคำขอการสนับสนุนอย่างไร"
     },
     "notFound": {
       "title": "ไม่พบหน้า",
@@ -808,22 +808,22 @@ export const additionalContent = {
       "language": "Ngôn ngữ",
       "main": "Điều hướng chính",
       "skip": "Chuyển đến nội dung",
-      "github": "Capy Canvas trên GitHub"
+      "github": "{appName} trên GitHub"
     },
     "home": {
-      "title": "Capy Canvas",
-      "description": "Capy Canvas là một ứng dụng đa nền tảng để phác thảo, minh họa và chụp ảnh, với công cụ vẽ tăng tốc GPU mạnh mẽ.",
+      "title": "{appName}",
+      "description": "{appName} là một ứng dụng đa nền tảng để phác thảo, minh họa và chụp ảnh, với công cụ vẽ tăng tốc GPU mạnh mẽ.",
       "workspaces": "Không gian làm việc",
       "slides": {
         "sketch": "Bản vẽ bằng mực về một chiếc xe lửa bên dưới một cái cây lớn trong không gian làm việc Sketch, nơi bản vẽ lấp đầy màn hình và một vài công cụ nằm ở các cạnh.",
         "paint": "Bức tranh sơn dầu về một ngôi nhà bên bờ biển lúc hoàng hôn trong không gian làm việc Paint, với bút vẽ, màu sắc và các lớp bên cạnh khung vẽ.",
         "photo": "Ảnh chụp một hồ cạn nhỏ trong không gian làm việc Photo, với công cụ Phạm vi tông màu sẵn sàng để chọn theo độ sáng cũng như các lớp điều chỉnh Đường cong và Độ rung."
       },
-      "meta": "Capy Canvas là một ứng dụng đa nền tảng để phác thảo, minh họa và chụp ảnh, với công cụ vẽ tăng tốc GPU mạnh mẽ."
+      "meta": "{appName} là một ứng dụng đa nền tảng để phác thảo, minh họa và chụp ảnh, với công cụ vẽ tăng tốc GPU mạnh mẽ."
     },
     "download": {
       "title": "Tải xuống",
-      "intro": "Capy Canvas đang trong giai đoạn beta. Có thể còn vài lỗi nhỏ. {feedback}.",
+      "intro": "{appName} đang trong giai đoạn beta. Có thể còn vài lỗi nhỏ. {feedback}.",
       "feedback": "Hãy góp ý cho chúng tôi trên GitHub",
       "status": "Sắp có",
       "platforms": [
@@ -837,7 +837,7 @@ export const additionalContent = {
       "joinBeta": "Tham gia beta",
       "downloadFor": "Tải xuống {version} · {platform}",
       "openWebApp": "Mở ứng dụng web",
-      "meta": "Cài đặt Capy Canvas làm ứng dụng web để sử dụng ngoại tuyến. Bản tải xuống gốc sắp ra mắt.",
+      "meta": "Cài đặt {appName} làm ứng dụng web để sử dụng ngoại tuyến. Bản tải xuống gốc sắp ra mắt.",
       "pwa": pwaContent["vi"],
       "variants": {
         "apk": "APK",
@@ -849,7 +849,7 @@ export const additionalContent = {
       "pastVersions": "Các phiên bản trước",
       "allReleases": "Các bản phát hành trên GitHub",
       "notesLanguage": "Ghi chú phát hành bằng tiếng Anh.",
-      "metaReleased": "Tải Capy Canvas xuống hoặc cài đặt làm ứng dụng web để sử dụng ngoại tuyến."
+      "metaReleased": "Tải {appName} xuống hoặc cài đặt làm ứng dụng web để sử dụng ngoại tuyến."
     },
     "versions": {
       "title": "Các phiên bản trước",
@@ -860,44 +860,44 @@ export const additionalContent = {
       "latest": "Mới nhất",
       "files": "Tệp",
       "github": "Tất cả tệp trên GitHub",
-      "meta": "Mọi phiên bản Capy Canvas đã phát hành, kèm ghi chú phát hành và liên kết tải xuống."
+      "meta": "Mọi phiên bản {appName} đã phát hành, kèm ghi chú phát hành và liên kết tải xuống."
     },
     "ipadBeta": {
       "title": "Bản beta cho iPad",
-      "intro": "Dùng thử các phiên bản mới của Capy Canvas trên iPad trước khi có trên App Store.",
+      "intro": "Dùng thử các phiên bản mới của {appName} trên iPad trước khi có trên App Store.",
       "steps": [
         "Cài đặt ứng dụng TestFlight của Apple từ App Store.",
         "Trên iPad, mở {invitation}.",
-        "Chấp nhận lời mời rồi cài đặt Capy Canvas."
+        "Chấp nhận lời mời rồi cài đặt {appName}."
       ],
       "links": {
-        "invitation": "lời mời tham gia bản beta Capy Canvas"
+        "invitation": "lời mời tham gia bản beta {appName}"
       },
-      "meta": "Cách cài đặt bản beta của Capy Canvas trên iPad bằng TestFlight."
+      "meta": "Cách cài đặt bản beta của {appName} trên iPad bằng TestFlight."
     },
     "androidBeta": {
       "title": "Bản beta cho máy tính bảng Android",
-      "intro": "Dùng thử các phiên bản mới của Capy Canvas trên máy tính bảng Android trước khi phát hành.",
+      "intro": "Dùng thử các phiên bản mới của {appName} trên máy tính bảng Android trước khi phát hành.",
       "note": "Đăng nhập bằng tài khoản Google bạn dùng trên máy tính bảng.",
       "steps": [
         "Tham gia {group}.",
         "Mở {test} và chấp nhận lời mời.",
-        "Cài đặt Capy Canvas từ Google Play trên máy tính bảng."
+        "Cài đặt {appName} từ Google Play trên máy tính bảng."
       ],
       "links": {
-        "group": "nhóm beta Capy Canvas",
+        "group": "nhóm beta {appName}",
         "test": "trang beta trên Google Play"
       },
-      "meta": "Cách cài đặt bản beta của Capy Canvas trên máy tính bảng Android từ Google Play."
+      "meta": "Cách cài đặt bản beta của {appName} trên máy tính bảng Android từ Google Play."
     },
     "documentation": {
       "title": "Tài liệu",
-      "meta": "Tài liệu Capy Canvas: không gian làm việc, cọ, màu, lớp, bộ lọc, vùng chọn, xử lý ảnh, cùng các hướng dẫn về minh họa và ảnh."
+      "meta": "Tài liệu {appName}: không gian làm việc, cọ, màu, lớp, bộ lọc, vùng chọn, xử lý ảnh, cùng các hướng dẫn về minh họa và ảnh."
     },
     "privacy": {
       "title": "Chính sách bảo mật",
       "effectiveDate": "Ngày có hiệu lực",
-      "meta": "Cách Capy Canvas xử lý dữ liệu ứng dụng, lưu trữ, chẩn đoán và yêu cầu hỗ trợ."
+      "meta": "Cách {appName} xử lý dữ liệu ứng dụng, lưu trữ, chẩn đoán và yêu cầu hỗ trợ."
     },
     "notFound": {
       "title": "Không tìm thấy trang",
@@ -921,22 +921,22 @@ export const additionalContent = {
       "language": "Dil",
       "main": "Ana gezinme",
       "skip": "İçeriğe atla",
-      "github": "GitHub üzerinde Capy Canvas"
+      "github": "GitHub üzerinde {appName}"
     },
     "home": {
-      "title": "Capy Canvas",
-      "description": "Capy Canvas, güçlü bir GPU hızlandırmalı boyama motoruna sahip, eskiz, illüstrasyon ve fotoğrafçılık için çapraz platformlu bir uygulamadır.",
+      "title": "{appName}",
+      "description": "{appName}, güçlü bir GPU hızlandırmalı boyama motoruna sahip, eskiz, illüstrasyon ve fotoğrafçılık için çapraz platformlu bir uygulamadır.",
       "workspaces": "Çalışma alanı",
       "slides": {
         "sketch": "Sketch çalışma alanındaki büyük bir ağacın altındaki bir trenin mürekkepli çizimi; burada çizim ekranı dolduruyor ve kenarlarda birkaç araç bulunuyor.",
         "paint": "Paint çalışma alanında, tuvalin yanında fırçalar, renkler ve katmanlar bulunan, gün batımında deniz kenarındaki bir evin yağlıboya tablosu.",
         "photo": "Photo çalışma alanındaki küçük bir teraryumun, parlaklığa göre seçime hazır Ton aralığı aracı ve Eğriler ve Titreşim ayarlama katmanları ile çekilmiş fotoğrafı."
       },
-      "meta": "Capy Canvas, güçlü bir GPU hızlandırmalı boyama motoruna sahip, eskiz, illüstrasyon ve fotoğrafçılık için çapraz platformlu bir uygulamadır."
+      "meta": "{appName}, güçlü bir GPU hızlandırmalı boyama motoruna sahip, eskiz, illüstrasyon ve fotoğrafçılık için çapraz platformlu bir uygulamadır."
     },
     "download": {
       "title": "İndir",
-      "intro": "Capy Canvas şu anda beta aşamasında. Küçük sorunlar olabilir. {feedback}.",
+      "intro": "{appName} şu anda beta aşamasında. Küçük sorunlar olabilir. {feedback}.",
       "feedback": "Görüşlerinizi GitHub'da paylaşın",
       "status": "Yakında",
       "platforms": [
@@ -950,7 +950,7 @@ export const additionalContent = {
       "joinBeta": "Betaya katıl",
       "downloadFor": "{version} sürümünü indir · {platform}",
       "openWebApp": "Web uygulamasını aç",
-      "meta": "Capy Canvas'yu çevrimdışı kullanım için bir web uygulaması olarak yükleyin. Yerel indirmeler yakında geliyor.",
+      "meta": "{appName}'yu çevrimdışı kullanım için bir web uygulaması olarak yükleyin. Yerel indirmeler yakında geliyor.",
       "pwa": pwaContent["tr"],
       "variants": {
         "apk": "APK",
@@ -962,7 +962,7 @@ export const additionalContent = {
       "pastVersions": "Önceki sürümler",
       "allReleases": "GitHub'daki sürümler",
       "notesLanguage": "Sürüm notları İngilizcedir.",
-      "metaReleased": "Capy Canvas uygulamasını indirin veya çevrimdışı kullanım için web uygulaması olarak yükleyin."
+      "metaReleased": "{appName} uygulamasını indirin veya çevrimdışı kullanım için web uygulaması olarak yükleyin."
     },
     "versions": {
       "title": "Önceki sürümler",
@@ -973,44 +973,44 @@ export const additionalContent = {
       "latest": "En yeni",
       "files": "Dosyalar",
       "github": "GitHub'daki tüm dosyalar",
-      "meta": "Capy Canvas uygulamasının yayımlanan tüm sürümleri, sürüm notları ve indirme bağlantılarıyla."
+      "meta": "{appName} uygulamasının yayımlanan tüm sürümleri, sürüm notları ve indirme bağlantılarıyla."
     },
     "ipadBeta": {
       "title": "iPad beta sürümü",
-      "intro": "Capy Canvas uygulamasının yeni sürümlerini App Store'a gelmeden önce iPad'inizde deneyin.",
+      "intro": "{appName} uygulamasının yeni sürümlerini App Store'a gelmeden önce iPad'inizde deneyin.",
       "steps": [
         "App Store'dan Apple'ın TestFlight uygulamasını yükleyin.",
         "iPad'inizde {invitation} açın.",
-        "Daveti kabul edin ve Capy Canvas uygulamasını yükleyin."
+        "Daveti kabul edin ve {appName} uygulamasını yükleyin."
       ],
       "links": {
-        "invitation": "Capy Canvas beta davetini"
+        "invitation": "{appName} beta davetini"
       },
-      "meta": "Capy Canvas beta sürümünü TestFlight ile iPad'inize yükleme."
+      "meta": "{appName} beta sürümünü TestFlight ile iPad'inize yükleme."
     },
     "androidBeta": {
       "title": "Android tablet beta sürümü",
-      "intro": "Capy Canvas uygulamasının yeni sürümlerini yayımlanmadan önce Android tabletinizde deneyin.",
+      "intro": "{appName} uygulamasının yeni sürümlerini yayımlanmadan önce Android tabletinizde deneyin.",
       "note": "Tabletinizde kullandığınız Google hesabıyla oturum açın.",
       "steps": [
         "{group} katılın.",
         "{test} açın ve daveti kabul edin.",
-        "Capy Canvas uygulamasını tabletinizde Google Play'den yükleyin."
+        "{appName} uygulamasını tabletinizde Google Play'den yükleyin."
       ],
       "links": {
-        "group": "Capy Canvas beta grubuna",
+        "group": "{appName} beta grubuna",
         "test": "Google Play beta sayfasını"
       },
-      "meta": "Capy Canvas beta sürümünü Google Play'den Android tabletinize yükleme."
+      "meta": "{appName} beta sürümünü Google Play'den Android tabletinize yükleme."
     },
     "documentation": {
       "title": "Dokümantasyon",
-      "meta": "Capy Canvas belgeleri: çalışma alanları, fırçalar, renk, katmanlar, filtreler, seçimler, fotoğraf düzenleme ile illüstrasyon ve fotoğraf eğitimleri."
+      "meta": "{appName} belgeleri: çalışma alanları, fırçalar, renk, katmanlar, filtreler, seçimler, fotoğraf düzenleme ile illüstrasyon ve fotoğraf eğitimleri."
     },
     "privacy": {
       "title": "Gizlilik Politikası",
       "effectiveDate": "Geçerlilik tarihi",
-      "meta": "Capy Canvas'nun uygulama verilerini, barındırmayı, tanılamayı ve destek isteklerini nasıl ele aldığı."
+      "meta": "{appName}'nun uygulama verilerini, barındırmayı, tanılamayı ve destek isteklerini nasıl ele aldığı."
     },
     "notFound": {
       "title": "Sayfa bulunamadı",
@@ -1034,22 +1034,22 @@ export const additionalContent = {
       "language": "Lingua",
       "main": "Navigazione principale",
       "skip": "Vai al contenuto",
-      "github": "Capy Canvas su GitHub"
+      "github": "{appName} su GitHub"
     },
     "home": {
-      "title": "Capy Canvas",
-      "description": "Capy Canvas è un'app multipiattaforma per schizzi, illustrazioni e fotografie, con un potente motore di pittura accelerato GPU.",
+      "title": "{appName}",
+      "description": "{appName} è un'app multipiattaforma per schizzi, illustrazioni e fotografie, con un potente motore di pittura accelerato GPU.",
       "workspaces": "Spazio di lavoro",
       "slides": {
         "sketch": "Un disegno a inchiostro di un treno sotto un grande albero nell'area di lavoro Sketch, dove il disegno riempie lo schermo e alcuni strumenti si trovano ai bordi.",
         "paint": "Un dipinto a olio di una casa al mare al tramonto nello spazio di lavoro Paint, con pennelli, colori e strati accanto alla tela.",
         "photo": "Una fotografia di un piccolo terrario nell'area di lavoro Photo, con lo strumento Gamma tonale pronto per la selezione in base alla luminosità e ai livelli di regolazione Curve e Vividezza."
       },
-      "meta": "Capy Canvas è un'app multipiattaforma per schizzi, illustrazioni e fotografie, con un potente motore di pittura accelerato GPU."
+      "meta": "{appName} è un'app multipiattaforma per schizzi, illustrazioni e fotografie, con un potente motore di pittura accelerato GPU."
     },
     "download": {
       "title": "Scarica",
-      "intro": "Capy Canvas è in fase beta. Potrebbe esserci qualche imperfezione. {feedback}.",
+      "intro": "{appName} è in fase beta. Potrebbe esserci qualche imperfezione. {feedback}.",
       "feedback": "Condividi la tua opinione su GitHub",
       "status": "Prossimamente",
       "platforms": [
@@ -1063,7 +1063,7 @@ export const additionalContent = {
       "joinBeta": "Partecipa alla beta",
       "downloadFor": "Scarica {version} · {platform}",
       "openWebApp": "Apri l'app Web",
-      "meta": "Installa Capy Canvas come app Web per l'utilizzo offline. I download nativi arriveranno presto.",
+      "meta": "Installa {appName} come app Web per l'utilizzo offline. I download nativi arriveranno presto.",
       "pwa": pwaContent["it"],
       "variants": {
         "apk": "APK",
@@ -1075,7 +1075,7 @@ export const additionalContent = {
       "pastVersions": "Versioni precedenti",
       "allReleases": "Versioni su GitHub",
       "notesLanguage": "Le note di rilascio sono in inglese.",
-      "metaReleased": "Scarica Capy Canvas o installalo come app Web per l'utilizzo offline."
+      "metaReleased": "Scarica {appName} o installalo come app Web per l'utilizzo offline."
     },
     "versions": {
       "title": "Versioni precedenti",
@@ -1086,44 +1086,44 @@ export const additionalContent = {
       "latest": "Più recente",
       "files": "File",
       "github": "Tutti i file su GitHub",
-      "meta": "Tutte le versioni pubblicate di Capy Canvas, con note di rilascio e link per il download."
+      "meta": "Tutte le versioni pubblicate di {appName}, con note di rilascio e link per il download."
     },
     "ipadBeta": {
       "title": "Beta per iPad",
-      "intro": "Prova le nuove versioni di Capy Canvas su iPad prima che arrivino sull'App Store.",
+      "intro": "Prova le nuove versioni di {appName} su iPad prima che arrivino sull'App Store.",
       "steps": [
         "Installa l'app TestFlight di Apple dall'App Store.",
         "Sul tuo iPad, apri l'{invitation}.",
-        "Accetta l'invito e installa Capy Canvas."
+        "Accetta l'invito e installa {appName}."
       ],
       "links": {
-        "invitation": "invito alla beta di Capy Canvas"
+        "invitation": "invito alla beta di {appName}"
       },
-      "meta": "Come installare la beta di Capy Canvas su iPad con TestFlight."
+      "meta": "Come installare la beta di {appName} su iPad con TestFlight."
     },
     "androidBeta": {
       "title": "Beta per tablet Android",
-      "intro": "Prova le nuove versioni di Capy Canvas sul tuo tablet Android prima dell'uscita.",
+      "intro": "Prova le nuove versioni di {appName} sul tuo tablet Android prima dell'uscita.",
       "note": "Accedi con l'account Google che usi sul tablet.",
       "steps": [
         "Unisciti al {group}.",
         "Apri la {test} e accetta l'invito.",
-        "Installa Capy Canvas da Google Play sul tablet."
+        "Installa {appName} da Google Play sul tablet."
       ],
       "links": {
-        "group": "gruppo della beta di Capy Canvas",
+        "group": "gruppo della beta di {appName}",
         "test": "pagina della beta su Google Play"
       },
-      "meta": "Come installare la beta di Capy Canvas sul tuo tablet Android da Google Play."
+      "meta": "Come installare la beta di {appName} sul tuo tablet Android da Google Play."
     },
     "documentation": {
       "title": "Documentazione",
-      "meta": "Documentazione Capy Canvas: aree di lavoro, pennelli, colore, livelli, filtri, selezioni, fotoritocco e tutorial su illustrazione e foto."
+      "meta": "Documentazione {appName}: aree di lavoro, pennelli, colore, livelli, filtri, selezioni, fotoritocco e tutorial su illustrazione e foto."
     },
     "privacy": {
       "title": "Informativa sulla privacy",
       "effectiveDate": "Data di entrata in vigore",
-      "meta": "In che modo Capy Canvas gestisce i dati delle app, l'hosting, la diagnostica e le richieste di supporto."
+      "meta": "In che modo {appName} gestisce i dati delle app, l'hosting, la diagnostica e le richieste di supporto."
     },
     "notFound": {
       "title": "Pagina non trovata",

@@ -98,7 +98,7 @@ Die letzte Palette lässt sich nicht entfernen.
 ## Paletten importieren und exportieren
 
 Um eine Palettendatei zu importieren, wählen Sie in der Palettenliste **+** aus und
-dann **Import Palette…**. Capy Canvas liest Dateien im Format `.capycolor`, `.aco`,
+dann **Import Palette…**. {appName} liest Dateien im Format `.capycolor`, `.aco`,
 `.cls`, `.swatches`, `.ase`, `.afpalette`, `.gpl`, `.kpl` und `.json` bis 1 MB. Die
 Datei wird zu einer neuen Palette mit dem in der Datei gespeicherten Namen oder dem
 Dateinamen.
@@ -116,7 +116,7 @@ Das Bedienfeld meldet, wie viele Farben beschnitten oder deckend gemacht wurden.
 
 ## Startpaletten
 
-Capy Canvas enthält Meeresstudie, Pixelspielhalle, Dunkle Fantasie, Pop-Art,
+{appName} enthält Meeresstudie, Pixelspielhalle, Dunkle Fantasie, Pop-Art,
 Bonbonpastell, Risodruck, Synthwave, Siebzigerjahredruck, Holzschnitt und Tinte. Sie
 können Startpaletten wie jede andere Palette ändern. Eine entfernte Startpalette kommt
 nicht zurück.

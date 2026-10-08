@@ -1,4 +1,5 @@
 import test, { before } from 'node:test';
+import { appName } from '../site/src/data/branding.mjs';
 import assert from 'node:assert/strict';
 import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
@@ -123,7 +124,7 @@ for (const locale of Object.keys(languages)) {
   test(`${locale}: Past versions lists every published release, newest first`, async () => {
     const html = await read(published, `${prefix(locale)}download/past-versions`);
     const page = main(html);
-    assert.ok(html.includes(`<title>${escapeText(t.versions.title)} — Capy Canvas</title>`));
+    assert.ok(html.includes(`<title>${escapeText(t.versions.title)} — ${appName(locale)}</title>`));
     assert.ok(page.includes(escapeText(t.versions.intro)));
     assert.deepEqual([...page.matchAll(/<article class="release" id="v([^"]+)"/g)].map(([, version]) => version), ['1.0.2', '1.0.1', '1.0.0']);
     assert.equal(page.split(`>${escapeText(t.versions.latest)}</span>`).length, 2);

@@ -20,7 +20,7 @@ Faça uma das seguintes ações:
 - Pressione **Ctrl+O**.
 - Em Pintura e Foto, selecione **Abrir…** na barra de ferramentas Comandos.
 - No editor web ou no Linux, arraste arquivos até o nome do desenho ou até as abas na barra de título.
-- Se você instalou o editor web como aplicativo, abra um arquivo `.capy`, `.png`, `.jpg`, `.tif`, `.avif` ou `.exr` com o Capy Canvas pelo seu sistema.
+- Se você instalou o editor web como aplicativo, abra um arquivo `.capy`, `.png`, `.jpg`, `.tif`, `.avif` ou `.exr` com o {appName} pelo seu sistema.
 
 ## Fotos
 
@@ -87,7 +87,7 @@ de desfazer, a visualização nem a seleção ativa.
 
 ## Desenhos somente para visualização
 
-Um arquivo `.capy` que o Capy Canvas não consegue editar, como um arquivo
+Um arquivo `.capy` que o {appName} não consegue editar, como um arquivo
 danificado, abre em uma caixa de diálogo em vez de uma aba. **Copy Original
 File…** salva uma cópia do arquivo, e **Export Preview Image…** salva a prévia do
 desenho como PNG.
@@ -148,12 +148,12 @@ No Linux, a janela fecha.
 ## Reabrir depois de reiniciar
 
 Todos os desenhos abertos, salvos ou não, reabrem na próxima vez que você inicia
-o Capy Canvas, cada um com seu histórico de desfazer, visualização, seleção e
-última exportação. Fechar o Capy Canvas não pede para salvar.
+o {appName}, cada um com seu histórico de desfazer, visualização, seleção e
+última exportação. Fechar o {appName} não pede para salvar.
 
 No editor web, apagar os dados do site exclui os desenhos não salvos.
 
-Depois que o Capy Canvas fecha inesperadamente, os desenhos reabertos mostram
+Depois que o {appName} fecha inesperadamente, os desenhos reabertos mostram
 "(recuperado)" depois do nome até você salvá-los.
 
 ## Nova janela

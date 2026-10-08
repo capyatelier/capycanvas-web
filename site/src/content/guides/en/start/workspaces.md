@@ -4,8 +4,7 @@ description: "The Sketch, Paint and Photo workspaces, switching between workspac
 related: ["customize/workspaces", "customize/panels", "customize/toolbars", "customize/zen"]
 ---
 
-A workspace is a saved arrangement of the title bar, toolbars and panels. Capy
-Canvas includes three: **Sketch**, **Paint** and **Photo**. It opens in Paint the
+A workspace is a saved arrangement of the title bar, toolbars and panels. {appName} includes three: **Sketch**, **Paint** and **Photo**. It opens in Paint the
 first time, and after that in the workspace you used last.
 
 ## Sketch

@@ -74,7 +74,7 @@ seguintes ações:
 - Escolha **Trocar primeiro plano e fundo** na busca de comandos.
 - Pressione **X** nos mapas de atalhos Estilo Photoshop, Estilo Krita, Estilo Clip Studio Paint e Estilo GIMP, ou **Shift+X** no Estilo Affinity.
 
-A mesma amostra continua selecionada. O mapa de atalhos CapyCanvas não tem tecla
+A mesma amostra continua selecionada. O mapa de atalhos {appName} não tem tecla
 para **Trocar cores**.
 
 ## Preto e branco

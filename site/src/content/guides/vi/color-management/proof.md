@@ -116,7 +116,7 @@ vẽ hoặc bản mô phỏng. Chọn nhãn để mở phần chi tiết, rồi 
 | Nhãn | Hiện khi |
 | --- | --- |
 | “Màu bị cắt ngưỡng” | Màn hình không hiển thị được một số màu nhìn thấy của bản vẽ hoặc bản mô phỏng. |
-| “Có thể khác bản in” | Mô phỏng bản in hoặc cảnh báo ngoài dải màu đang bật, và Capy Canvas không xác định được cách màn hình hiển thị màu. |
+| “Có thể khác bản in” | Mô phỏng bản in hoặc cảnh báo ngoài dải màu đang bật, và {appName} không xác định được cách màn hình hiển thị màu. |
 
 Với bản vẽ HDR, nhãn còn cho biết màn hình có hiển thị HDR hay không (xem
 [HDR](/vi/docs/color-management/hdr/)).

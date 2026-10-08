@@ -5,7 +5,7 @@ related: ["customize/workspaces", "customize/panels", "customize/toolbars", "cus
 ---
 
 Uma área de trabalho é uma disposição salva da barra de título, das barras de
-ferramentas e dos painéis. O Capy Canvas inclui três: **Esboço**, **Pintura** e
+ferramentas e dos painéis. O {appName} inclui três: **Esboço**, **Pintura** e
 **Foto**. Ele abre em Pintura na primeira vez e, depois disso, na última área de
 trabalho usada.
 

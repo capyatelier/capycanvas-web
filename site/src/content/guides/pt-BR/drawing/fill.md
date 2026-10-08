@@ -68,7 +68,7 @@ Opções da ferramenta tem um menu **Origem** para as duas.
 
 Cada ferramenta guarda sua própria origem. Preencher começa em **Arte visível**, e
 Contornar e preencher volta para **Camadas de referência** sempre que você abre o
-Capy Canvas.
+{appName}.
 
 Se Preencher usar **Camadas de referência** e nenhuma camada estiver marcada,
 Preencher não pinta nada e um aviso oferece marcar a camada abaixo.

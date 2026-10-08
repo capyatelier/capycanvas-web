@@ -66,7 +66,7 @@ hoặc trong bảng **Công cụ** với Khoanh và tô. Thanh Tùy chọn công
 ![Bảng Bộ công cụ với Tô đầy được chọn và các lựa chọn Bản vẽ hiển thị, Lớp đang sửa và Lớp tham chiếu bên dưới.](shot:drawing/fill-tool-set)
 
 Mỗi công cụ giữ nguồn riêng. Tô đầy bắt đầu với **Bản vẽ hiển thị**, còn Khoanh và
-tô trở về **Lớp tham chiếu** mỗi lần bạn mở Capy Canvas.
+tô trở về **Lớp tham chiếu** mỗi lần bạn mở {appName}.
 
 Nếu Tô đầy dùng **Lớp tham chiếu** mà chưa có lớp nào được đánh dấu, Tô đầy không vẽ
 gì và một thông báo đề nghị đánh dấu lớp bên dưới.

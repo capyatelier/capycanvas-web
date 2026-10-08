@@ -76,7 +76,7 @@ Aktionen aus:
 - Wählen Sie **Vorder- und Hintergrundfarbe tauschen** in der Befehlssuche.
 - Drücken Sie **X** in den Tastenkürzelbelegungen Photoshop-Stil, Krita-Stil, Clip-Studio-Paint-Stil und GIMP-Stil oder **Umschalt+X** im Affinity-Stil.
 
-Dasselbe Farbfeld bleibt ausgewählt. Die Tastenkürzelbelegung CapyCanvas hat keine Taste
+Dasselbe Farbfeld bleibt ausgewählt. Die Tastenkürzelbelegung {appName} hat keine Taste
 für **Farben tauschen**.
 
 ## Schwarz und Weiß

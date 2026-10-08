@@ -1,5 +1,5 @@
 ---
-import { getEntry } from 'astro:content';
+import { getGuide } from '../lib/guides';
 import Guide from '../components/Guide.astro';
 import type { GetStaticPaths, InferGetStaticPropsType } from 'astro';
 import { locales, route, routes } from '../lib/site';
@@ -32,7 +32,7 @@ export const getStaticPaths = (() => [
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 const { locale, page, slug, redirect } = Astro.props;
-const entry = !redirect && slug ? await getEntry('guides', `${locale}/${slug}`) : undefined;
+const entry = !redirect && slug ? await getGuide(locale, slug) : undefined;
 if (!redirect && slug && !entry) throw new Error(`Missing guide ${locale}/${slug}`);
 const PageContent = page === 'ipadBeta' || page === 'androidBeta' ? undefined : { home: Home, download: Download, versions: Versions, documentation: Documentation, privacy: Privacy }[page];
 const released = page === 'download' && releases.length > 0;

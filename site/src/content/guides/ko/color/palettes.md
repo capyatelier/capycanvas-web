@@ -70,7 +70,7 @@ related: ["color/color-panel", "color/edit-color", "color/eyedropper"]
 
 ## 팔레트 가져오기와 내보내기
 
-팔레트 파일을 가져오려면 팔레트 목록에서 **+** 버튼을 선택하고 **Import Palette…** 항목을 선택합니다. Capy Canvas는 1 MB 이하의 `.capycolor`, `.aco`, `.cls`, `.swatches`, `.ase`, `.afpalette`, `.gpl`, `.kpl`, `.json` 파일을 읽습니다. 파일은 새 팔레트가 되며, 팔레트 이름은 파일에 저장된 이름이나 파일 이름입니다.
+팔레트 파일을 가져오려면 팔레트 목록에서 **+** 버튼을 선택하고 **Import Palette…** 항목을 선택합니다. {appName}는 1 MB 이하의 `.capycolor`, `.aco`, `.cls`, `.swatches`, `.ase`, `.afpalette`, `.gpl`, `.kpl`, `.json` 파일을 읽습니다. 파일은 새 팔레트가 되며, 팔레트 이름은 파일에 저장된 이름이나 파일 이름입니다.
 
 팔레트를 내보내려면 팔레트 목록에서 팔레트를 마우스 오른쪽 버튼으로 클릭하거나 길게 누르고 **Export Palette**를 선택한 다음 형식을 선택합니다.
 
@@ -83,4 +83,4 @@ related: ["color/color-panel", "color/edit-color", "color/eyedropper"]
 
 ## 기본 팔레트
 
-Capy Canvas에는 바다색 습작, 픽셀 아케이드, 다크 판타지, 팝 아트, 캔디 파스텔, 리소 인쇄, 신스웨이브, 70년대 인쇄, 목판화, 먹색 팔레트가 들어 있습니다. 기본 팔레트도 다른 팔레트처럼 바꿀 수 있습니다. 제거한 기본 팔레트는 다시 돌아오지 않습니다.
+{appName}에는 바다색 습작, 픽셀 아케이드, 다크 판타지, 팝 아트, 캔디 파스텔, 리소 인쇄, 신스웨이브, 70년대 인쇄, 목판화, 먹색 팔레트가 들어 있습니다. 기본 팔레트도 다른 팔레트처럼 바꿀 수 있습니다. 제거한 기본 팔레트는 다시 돌아오지 않습니다.

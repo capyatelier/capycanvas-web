@@ -1,5 +1,6 @@
 ---
 import { content } from '../data/content.mjs';
+import { appName, globalBrandAliases } from '../data/branding.mjs';
 import { origin, locales, route, type Locale, type SitePage } from '../lib/site';
 import { capturePair } from '../lib/captures.mjs';
 import { homeContent } from '../data/home-content.mjs';
@@ -10,7 +11,8 @@ import docsStyleUrl from '../styles/documentation.css?url';
 interface Props { locale: Locale; page: SitePage; slug?: string; title?: string; description?: string }
 const { locale, page, slug = '' } = Astro.props;
 const t = content[locale];
-const title = Astro.props.title ? `${Astro.props.title} — Capy Canvas` : page === 'home' ? homeContent[locale].metaTitle : page === '404' ? t.notFound.title : `${t[page].title} — Capy Canvas`;
+const name = appName(locale);
+const title = Astro.props.title ? `${Astro.props.title} — ${name}` : page === 'home' ? homeContent[locale].metaTitle : page === '404' ? `${t.notFound.title} — ${name}` : `${t[page].title} — ${name}`;
 const description = Astro.props.description ?? (page === '404' ? t.notFound.text : page === 'home' ? homeContent[locale].meta : t[page].meta);
 const canonical = origin + route(locale, page, slug);
 const faviconVersion = import.meta.env.FAVICON_VERSION;
@@ -30,7 +32,7 @@ const faviconVersion = import.meta.env.FAVICON_VERSION;
       <link rel="alternate" hreflang="x-default" href={origin + route('en', page, slug)} />
     </>}
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Capy Canvas" />
+    <meta property="og:site_name" content={name} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:locale" content={t.locale} />
@@ -43,8 +45,8 @@ const faviconVersion = import.meta.env.FAVICON_VERSION;
     {page === 'home' && <script is:inline type="application/ld+json" set:html={JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'WebSite',
-      name: 'Capy Canvas',
-      alternateName: 'CapyCanvas',
+      name,
+      alternateName: globalBrandAliases.filter(alias => alias !== name),
       url: origin + '/',
       inLanguage: locales.map(code => content[code].lang),
     }).replaceAll('<', '\\u003c')} />}

@@ -68,7 +68,7 @@ Opzioni strumento ha un menu **Sorgente** per entrambi.
 
 Ogni strumento conserva la propria sorgente. Riempi parte da **Disegno
 visibile**, mentre Racchiudi e riempi torna a **Livelli di riferimento** ogni
-volta che apri Capy Canvas.
+volta che apri {appName}.
 
 Se Riempi usa **Livelli di riferimento** e nessun livello è contrassegnato,
 Riempi non dipinge nulla e un avviso propone di contrassegnare il livello

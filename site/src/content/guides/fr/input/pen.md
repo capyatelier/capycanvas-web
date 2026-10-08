@@ -28,7 +28,7 @@ réglages se trouvent sous **Réponse du stylet** :
 
 - **Activer la prédiction des traits** active ou désactive les deux types de prédiction.
 - **Utiliser la prédiction des traits de *système***, par exemple **Utiliser la prédiction des traits de Windows**, utilise la prédiction du système ou du navigateur.
-- **Intensité de la prédiction** règle l’avance de la prédiction propre à Capy Canvas, de 0 à 64 ms.
+- **Intensité de la prédiction** règle l’avance de la prédiction propre à {appName}, de 0 à 64 ms.
 
 Les deux interrupteurs sont activés par défaut, et **Intensité de la prédiction**
 vaut 16 ms. Quand **Activer la prédiction des traits** est désactivé, les deux
@@ -126,5 +126,5 @@ Pro suivent le réglage propre à l’iPad dans **Réglages > Apple Pencil**.
 - « Basculer entre l’outil actuel et la gomme » passe à la **Gomme** et revient.
 - « Basculer entre l’outil actuel et le dernier outil utilisé » passe à l’outil choisi précédemment.
 
-Les autres choix n’ont aucun effet dans Capy Canvas. La pression agit quand vous
+Les autres choix n’ont aucun effet dans {appName}. La pression agit quand vous
 relâchez. Quand l’Apple Pencil survole l’écran, le curseur apparaît.

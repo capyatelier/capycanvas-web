@@ -45,7 +45,7 @@ Her çizim en fazla 256 adım saklar. Önce en eski adımlar silinir.
 ## Kaydetme ve yeniden açma
 
 Kaydetmek geçmişi temizlemez. `.capy` dosyasından açtığınız bir çizim boş bir
-geçmişle başlar. Capy Canvas'ı yeniden başlattığınızda yeniden açılan çizimler
+geçmişle başlar. {appName}'ı yeniden başlattığınızda yeniden açılan çizimler
 ise geri alma adımlarını korur.
 
 ## Düzen değişiklikleri

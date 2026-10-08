@@ -20,7 +20,7 @@ Aşağıdakilerden birini yapın:
 - **Ctrl+O** tuşlarına basın.
 - Boya ve Fotoğraf'ta Komutlar çubuğunda **Aç…** düğmesini seçin.
 - Web düzenleyicisinde veya Linux'ta dosyaları başlık çubuğundaki çizim adının ya da sekmelerin üzerine sürükleyin.
-- Web düzenleyicisini uygulama olarak yüklediyseniz bir `.capy`, `.png`, `.jpg`, `.tif`, `.avif` veya `.exr` dosyasını sisteminizden Capy Canvas ile açın.
+- Web düzenleyicisini uygulama olarak yüklediyseniz bir `.capy`, `.png`, `.jpg`, `.tif`, `.avif` veya `.exr` dosyasını sisteminizden {appName} ile açın.
 
 ## Fotoğraflar
 
@@ -88,7 +88,7 @@ etkin seçimi saklamaz.
 
 ## Yalnızca görüntülenebilen çizimler
 
-Capy Canvas'ın düzenleyemediği bir `.capy` dosyası (örneğin hasarlı bir dosya)
+{appName}'ın düzenleyemediği bir `.capy` dosyası (örneğin hasarlı bir dosya)
 sekme yerine bir iletişim kutusunda açılır. **Copy Original File…** dosyanın bir
 kopyasını kaydeder. **Export Preview Image…** ise çizimin önizlemesini PNG olarak
 kaydeder.
@@ -149,13 +149,13 @@ pencere kapanır.
 
 ## Yeniden başlatmadan sonra yeniden açma
 
-Kaydedilmiş olsun olmasın tüm açık çizimler, Capy Canvas'ı bir sonraki
+Kaydedilmiş olsun olmasın tüm açık çizimler, {appName}'ı bir sonraki
 başlatışınızda geri alma geçmişi, görünümü, seçimi ve son dışa aktarımıyla
-birlikte yeniden açılır. Capy Canvas'tan çıkarken kaydetmeniz istenmez.
+birlikte yeniden açılır. {appName}'tan çıkarken kaydetmeniz istenmez.
 
 Web düzenleyicisinde sitenin verilerini temizlemek kaydedilmemiş çizimleri siler.
 
-Capy Canvas beklenmedik şekilde kapandıktan sonra yeniden açılan çizimlerin
+{appName} beklenmedik şekilde kapandıktan sonra yeniden açılan çizimlerin
 adından sonra, siz kaydedene kadar “(kurtarıldı)” yazar.
 
 ## Yeni pencere

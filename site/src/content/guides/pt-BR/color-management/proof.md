@@ -117,7 +117,7 @@ selecione-o de novo ou pressione **Escape** para fechá-los.
 | Indicador | Aparece quando |
 | --- | --- |
 | "Cores limitadas" | A tela não consegue mostrar algumas cores visíveis do desenho ou da prova. |
-| "Pode diferir da impressão" | A prova de impressão ou o aviso de gama está ativo, e o Capy Canvas não consegue saber como a tela mostra as cores. |
+| "Pode diferir da impressão" | A prova de impressão ou o aviso de gama está ativo, e o {appName} não consegue saber como a tela mostra as cores. |
 
 Em um desenho HDR, o indicador também informa se a tela mostra HDR (consulte
 [HDR](/pt-BR/docs/color-management/hdr/)).

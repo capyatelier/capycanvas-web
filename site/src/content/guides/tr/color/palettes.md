@@ -94,7 +94,7 @@ Palette…** veya **Remove Palette…** öğesini seçin. Son palet kaldırılam
 ## Paletleri içe ve dışa aktarma
 
 Bir palet dosyasını içe aktarmak için palet listesinde **+** düğmesini seçin ve
-**Import Palette…** öğesini seçin. Capy Canvas en fazla 1 MB boyutundaki
+**Import Palette…** öğesini seçin. {appName} en fazla 1 MB boyutundaki
 `.capycolor`, `.aco`, `.cls`, `.swatches`, `.ase`, `.afpalette`, `.gpl`, `.kpl`
 ve `.json` dosyalarını okur. Dosya, dosyada saklanan adla veya dosya adıyla yeni
 bir palet olur.
@@ -111,7 +111,7 @@ Panel kaç rengin kırpıldığını veya opak yapıldığını bildirir.
 
 ## Başlangıç paletleri
 
-Capy Canvas'ta Okyanus çalışması, Piksel oyun salonu, Karanlık fantezi, Pop
+{appName}'ta Okyanus çalışması, Piksel oyun salonu, Karanlık fantezi, Pop
 sanat, Şeker pastel tonları, Riso baskı, Synthwave, Yetmişler baskısı, Ahşap
 baskı ve Mürekkep paletleri bulunur. Başlangıç paletlerini diğer paletler gibi
 değiştirebilirsiniz. Kaldırılan bir başlangıç paleti geri gelmez.

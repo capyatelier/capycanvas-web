@@ -18,7 +18,7 @@ related: ["files/new", "files/export", "transform/move-transform", "start/undo"]
 - 按 **Ctrl+O**。
 - 在“绘画”和“照片”中，选择“命令”工具栏中的**打开…**。
 - 在网页版编辑器或 Linux 上，将文件拖到标题栏中的画作名称或标签页上。
-- 如果已将网页版编辑器安装为应用，可以在系统中用 Capy Canvas 打开 `.capy`、`.png`、`.jpg`、`.tif`、`.avif` 或 `.exr` 文件。
+- 如果已将网页版编辑器安装为应用，可以在系统中用 {appName} 打开 `.capy`、`.png`、`.jpg`、`.tif`、`.avif` 或 `.exr` 文件。
 
 ## 照片
 
@@ -71,7 +71,7 @@ related: ["files/new", "files/export", "transform/move-transform", "start/undo"]
 
 ## 只读画作
 
-Capy Canvas 无法编辑的 `.capy` 文件（例如已损坏的文件）会在对话框中打开，而不是在标签页中打开。**Copy Original File…** 用于保存文件的副本，**Export Preview Image…** 用于将画作的预览图保存为 PNG。
+{appName} 无法编辑的 `.capy` 文件（例如已损坏的文件）会在对话框中打开，而不是在标签页中打开。**Copy Original File…** 用于保存文件的副本，**Export Preview Image…** 用于将画作的预览图保存为 PNG。
 
 ## 画作标签页
 
@@ -120,11 +120,11 @@ Capy Canvas 无法编辑的 `.capy` 文件（例如已损坏的文件）会在�
 
 ## 重新启动后重新打开
 
-所有打开的画作，无论是否已保存，都会在下次启动 Capy Canvas 时重新打开，并保留各自的撤销历史记录、视图、选区和上次导出设置。退出 Capy Canvas 时不会提示保存。
+所有打开的画作，无论是否已保存，都会在下次启动 {appName} 时重新打开，并保留各自的撤销历史记录、视图、选区和上次导出设置。退出 {appName} 时不会提示保存。
 
 在网页版编辑器中，清除网站数据会删除未保存的画作。
 
-Capy Canvas 意外关闭后，重新打开的画作名称后会显示“（已恢复）”，直到保存为止。
+{appName} 意外关闭后，重新打开的画作名称后会显示“（已恢复）”，直到保存为止。
 
 ## 新建窗口
 

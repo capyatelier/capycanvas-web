@@ -119,7 +119,7 @@ kapatmak için çipi yeniden seçin veya **Escape** tuşuna basın.
 | Çip | Gösterildiği durum |
 | --- | --- |
 | “Renkler kırpılıyor” | Ekran, çizimin veya renk provasının görünen bazı renklerini gösteremiyor. |
-| “Baskıyla eşleşmeyebilir” | Baskı renk provası veya renk gamı uyarısı açık ve Capy Canvas ekranın renkleri nasıl gösterdiğini belirleyemiyor. |
+| “Baskıyla eşleşmeyebilir” | Baskı renk provası veya renk gamı uyarısı açık ve {appName} ekranın renkleri nasıl gösterdiğini belirleyemiyor. |
 
 HDR çizimde çip, ekranın HDR gösterip göstermediğini de bildirir (bkz.
 [HDR](/tr/docs/color-management/hdr/)).

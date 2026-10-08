@@ -27,7 +27,7 @@ der echte Strich ersetzt es beim Zeichnen. Die Einstellungen stehen unter
 
 - **Strichvorhersage aktivieren** schaltet beide Arten der Vorhersage ein oder aus.
 - **Strichvorhersage von *System* verwenden**, zum Beispiel **Strichvorhersage von Windows verwenden**, nutzt die Vorhersage des Systems oder des Browsers.
-- **Vorhersagestärke** legt fest, wie weit Capy Canvas selbst vorausberechnet, von 0 bis 64 ms.
+- **Vorhersagestärke** legt fest, wie weit {appName} selbst vorausberechnet, von 0 bis 64 ms.
 
 Beide Schalter sind standardmäßig aktiviert, und **Vorhersagestärke** beträgt 16 ms.
 Solange **Strichvorhersage aktivieren** deaktiviert ist, sind die beiden anderen
@@ -122,5 +122,5 @@ Pro der eigenen Einstellung des iPad unter **Einstellungen > Apple Pencil**.
 - „Switch between current tool and eraser“ wechselt zum **Radierer** und zurück.
 - „Switch between current tool and last used“ wechselt zu dem Werkzeug, das Sie davor gewählt haben.
 
-Die anderen Optionen bewirken in Capy Canvas nichts. Drücken wirkt beim Loslassen.
+Die anderen Optionen bewirken in {appName} nichts. Drücken wirkt beim Loslassen.
 Wenn der Apple Pencil über dem Bildschirm schwebt, erscheint der Cursor.

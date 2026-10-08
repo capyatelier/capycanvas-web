@@ -1,10 +1,10 @@
 ---
 title: "クイックスタート"
-description: "Capy Canvasの起動、最初の白紙の作品への描画、.capyファイルとしての保存、PNGの書き出し。"
+description: "{appName}の起動、最初の白紙の作品への描画、.capyファイルとしての保存、PNGの書き出し。"
 related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
 ---
 
-## Capy Canvasを開く
+## {appName}を開く
 
 次のいずれかの操作を行います。
 
@@ -27,9 +27,9 @@ related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard
 
 ![新しい作品のレイヤーパネル。用紙の上に現在のインクがあります。](shot:files/new-layers)
 
-Capy Canvasを初めて開くと、[「ペイント」](/ja/docs/start/workspaces/)ワークスペースに白紙の作品が表示され、タイトルバーには「無題 · 2048 × 1536」と表示されます。白い塗りつぶしレイヤー**用紙**の上で、空のペイントレイヤー**現在のインク**が選択されています。ツールは**ペン**で、ブラシは**Gペン**、色は黒に近い色です。
+{appName}を初めて開くと、[「ペイント」](/ja/docs/start/workspaces/)ワークスペースに白紙の作品が表示され、タイトルバーには「無題 · 2048 × 1536」と表示されます。白い塗りつぶしレイヤー**用紙**の上で、空のペイントレイヤー**現在のインク**が選択されています。ツールは**ペン**で、ブラシは**Gペン**、色は黒に近い色です。
 
-2回目以降は、前回使ったワークスペースと、開いていた作品でCapy Canvasが開きます。
+2回目以降は、前回使ったワークスペースと、開いていた作品で{appName}が開きます。
 
 ## 描画
 

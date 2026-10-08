@@ -23,7 +23,7 @@ Lakukan salah satu langkah berikut:
 ## Prasetel pemetaan tombol
 
 Anda dapat memakai tombol yang meniru aplikasi lain. Pilih **Prasetel** di bawah
-**Pemetaan tombol**: **CapyCanvas** (bawaan), **Gaya Photoshop**, **Gaya Krita**,
+**Pemetaan tombol**: **{appName}** (bawaan), **Gaya Photoshop**, **Gaya Krita**,
 **Gaya Clip Studio Paint**, **Gaya Procreate**, **Gaya GIMP**, atau **Gaya Affinity**.
 
 Prasetel hanya mengubah sebagian tombol dan mempertahankan tombol yang Anda ubah sendiri.

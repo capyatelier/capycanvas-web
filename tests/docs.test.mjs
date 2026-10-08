@@ -5,6 +5,7 @@ import { resolve, join } from 'node:path';
 import { docTopics, docGroups, docRedirects } from '../site/src/data/docs-nav.mjs';
 import { docsUI } from '../site/src/data/docs-ui.mjs';
 import { content, languages } from '../site/src/data/content.mjs';
+import { appName, brandCopy } from '../site/src/data/branding.mjs';
 
 const root = resolve(process.env.SITE_OUTPUT || 'docs');
 const source = resolve('site/src/content/guides');
@@ -49,11 +50,13 @@ for (const locale of Object.keys(languages)) {
   for (const { slug } of docTopics) test(`${locale}/${slug}: complete static guide, localized routes and working anchors`, async () => {
     const html = await read(locale, slug);
     const markdown = await readFile(join(source, locale, slug + '.md'), 'utf8');
-    const data = frontmatter(markdown);
+    const data = brandCopy(locale, frontmatter(markdown));
     assert.ok(html.includes(`<h1>${escapeText(data.title)}</h1>`));
     assert.ok(html.includes(`<meta name="description" content="${data.description.replaceAll('&', '&amp;').replaceAll('"', '&quot;')}">`), 'Description meta');
     assert.ok(html.includes(`<link rel="canonical" href="https://capycanvas.art${route(locale, slug)}">`));
     assert.match(html, /<article class="guide-article">/);
+    assert.ok(html.includes(`<meta property="og:site_name" content="${appName(locale)}">`));
+    assert.doesNotMatch(html, /\{appName\}/);
     assert.doesNotMatch(html, /guide-status|docs-notice|guide-image-hint|guide-image-slot|shot:/, 'Guides show no draft notes or missing captures');
     assert.equal((html.match(/<main\b/g) || []).length, 1);
     assert.equal((html.match(/<h1\b/g) || []).length, 1);
@@ -135,6 +138,7 @@ test('former documentation URLs redirect to canonical docs URLs in every languag
     assert.ok(html.includes(`<meta http-equiv="refresh" content="0;url=${destination}">`), 'No-JS redirect');
     assert.ok(html.includes(`<link rel="canonical" href="https://capycanvas.art${destination}">`));
     assert.ok(html.includes(`<a href="${destination}">`), 'Fallback link goes to the same translated topic');
+    assert.ok(html.includes(`<title>${escapeText(content[locale].nav.documentation)} — ${appName(locale)}</title>`));
     assert.match(html, /name="robots" content="noindex"/);
     assert.doesNotMatch(html, /class="guide-prose"/);
     const current = await read(locale, slug);

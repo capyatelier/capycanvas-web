@@ -4,7 +4,7 @@ description: "“素描”“绘画”和“照片”工作区，工作区之间
 related: ["customize/workspaces", "customize/panels", "customize/toolbars", "customize/zen"]
 ---
 
-工作区是一套已保存的标题栏、工具栏和面板布局。Capy Canvas 自带三个工作区：**素描**、**绘画**和**照片**。首次启动时打开“绘画”，之后打开上次使用的工作区。
+工作区是一套已保存的标题栏、工具栏和面板布局。{appName} 自带三个工作区：**素描**、**绘画**和**照片**。首次启动时打开“绘画”，之后打开上次使用的工作区。
 
 ## 素描
 

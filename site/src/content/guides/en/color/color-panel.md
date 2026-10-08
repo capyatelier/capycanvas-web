@@ -74,7 +74,7 @@ You can exchange the foreground and background colors. Do one of the following:
 - Choose **Swap foreground and background** in command search.
 - Press **X** in the Photoshop Style, Krita Style, Clip Studio Paint Style and GIMP Style keymaps, or **Shift+X** in Affinity Style.
 
-The same swatch stays selected. The CapyCanvas keymap has no key for **Swap
+The same swatch stays selected. The {appName} keymap has no key for **Swap
 colors**.
 
 ## Black and white

@@ -1,10 +1,10 @@
 ---
 title: "Prise en main"
-description: "Ouvrir Capy Canvas, dessiner sur le premier dessin vierge, l’enregistrer en fichier .capy et exporter un PNG."
+description: "Ouvrir {appName}, dessiner sur le premier dessin vierge, l’enregistrer en fichier .capy et exporter un PNG."
 related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
 ---
 
-## Ouvrir Capy Canvas
+## Ouvrir {appName}
 
 Effectuez l’une des opérations suivantes :
 
@@ -27,14 +27,14 @@ Après votre première visite, l’éditeur web s’ouvre aussi sans connexion �
 
 ![Le panneau Calques d’un nouveau dessin, avec Encre actuelle au-dessus de Papier.](shot:files/new-layers)
 
-La première fois que vous ouvrez Capy Canvas, l’espace de travail
+La première fois que vous ouvrez {appName}, l’espace de travail
 [Peinture](/fr/docs/start/workspaces/) s’affiche avec un dessin vierge, et la barre
 de titre indique « Sans titre · 2048 × 1536 ». **Encre actuelle**, un calque de
 peinture vide, est sélectionné au-dessus de **Papier**, un calque de remplissage
 blanc. L’outil **Plume** est actif, avec le pinceau **Plume G** et une couleur
 presque noire.
 
-Les fois suivantes, Capy Canvas s’ouvre sur le dernier espace de travail utilisé,
+Les fois suivantes, {appName} s’ouvre sur le dernier espace de travail utilisé,
 avec les dessins qui étaient ouverts.
 
 ## Dessiner

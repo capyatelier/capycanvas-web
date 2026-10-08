@@ -28,7 +28,7 @@ e il tratto reale lo sostituisce mentre disegni. Le impostazioni si trovano sott
 
 - **Attiva previsione del tratto** attiva o disattiva entrambi i tipi di previsione.
 - **Usa previsione del tratto di *sistema***, per esempio **Usa previsione del tratto di Windows**, usa la previsione del sistema o del browser.
-- **Intensità della previsione** imposta quanto in anticipo prevede Capy Canvas da solo, da 0 a 64 ms.
+- **Intensità della previsione** imposta quanto in anticipo prevede {appName} da solo, da 0 a 64 ms.
 
 Entrambi gli interruttori sono attivi per impostazione predefinita, e
 **Intensità della previsione** è 16 ms. Mentre **Attiva previsione del tratto** è
@@ -125,5 +125,5 @@ Pro seguono l'impostazione dell'iPad in **Impostazioni > Apple Pencil**.
 - «Switch between current tool and eraser» passa alla **Gomma** e ritorna.
 - «Switch between current tool and last used» passa allo strumento scelto in precedenza.
 
-Le altre scelte non hanno effetto in Capy Canvas. La pressione laterale agisce
+Le altre scelte non hanno effetto in {appName}. La pressione laterale agisce
 quando rilasci. Quando Apple Pencil passa sopra lo schermo, compare il cursore.

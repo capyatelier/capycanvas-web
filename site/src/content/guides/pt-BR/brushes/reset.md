@@ -12,7 +12,7 @@ original depois.
 Toda alteração em uma configuração de pincel é salva na hora com a predefinição.
 
 - As alterações valem para todas as áreas de trabalho, inclusive as que você cria.
-- As alterações continuam depois que você reinicia o Capy Canvas.
+- As alterações continuam depois que você reinicia o {appName}.
 - As configurações de pincel não são salvas nos arquivos `.capy`.
 - Uma alteração em uma configuração de pincel não é um passo de desfazer, e o Histórico de layout não lista alterações de pincel.
 - Um pincel não guarda cor. Ele pinta com a cor atual do [painel Cor](/pt-BR/docs/color/color-panel/).

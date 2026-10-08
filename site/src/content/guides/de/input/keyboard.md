@@ -24,7 +24,7 @@ Führen Sie eine der folgenden Aktionen aus:
 ## Tastenkürzelvorgaben
 
 Sie können Tasten nach dem Vorbild einer anderen App verwenden. Wählen Sie unter
-**Tastenkürzelbelegung** eine **Vorgabe**: **CapyCanvas** (Standard),
+**Tastenkürzelbelegung** eine **Vorgabe**: **{appName}** (Standard),
 **Photoshop-Stil**, **Krita-Stil**, **Clip-Studio-Paint-Stil**, **Procreate-Stil**,
 **GIMP-Stil** oder **Affinity-Stil**.
 

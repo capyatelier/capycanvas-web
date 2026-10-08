@@ -67,7 +67,7 @@ ikisi için de bir **Kaynak** menüsü bulunur.
 ![Doldur seçili Araç seti paneli: altta Görünür çizim, Düzenlenen katman ve Referans katmanlar seçenekleri.](shot:drawing/fill-tool-set)
 
 Her araç kendi kaynağını korur. Doldur **Görünür çizim** ile başlar. Çevrele ve
-doldur ise Capy Canvas'ı her açtığınızda **Referans katmanlar** ayarına döner.
+doldur ise {appName}'ı her açtığınızda **Referans katmanlar** ayarına döner.
 
 Doldur **Referans katmanlar** kullanıyorsa ve işaretli katman yoksa Doldur
 hiçbir şey boyamaz. Bir bildirim, alttaki katmanı işaretlemeyi önerir.

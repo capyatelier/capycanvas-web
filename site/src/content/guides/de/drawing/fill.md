@@ -68,7 +68,7 @@ Werkzeugoptionen hat für beide ein Menü **Quelle**.
 ![Das Bedienfeld Werkzeugsatz mit ausgewählter Füllung und den Optionen Sichtbares Bild, Bearbeitete Ebene und Referenzebenen darunter.](shot:drawing/fill-tool-set)
 
 Jedes Werkzeug merkt sich seine eigene Quelle. Füllung beginnt mit **Sichtbares
-Bild**, und Umranden und füllen kehrt bei jedem Start von Capy Canvas zu
+Bild**, und Umranden und füllen kehrt bei jedem Start von {appName} zu
 **Referenzebenen** zurück.
 
 Verwendet Füllung **Referenzebenen** und ist keine Ebene markiert, malt Füllung nichts,

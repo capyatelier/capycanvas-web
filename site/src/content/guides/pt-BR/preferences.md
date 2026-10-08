@@ -19,7 +19,7 @@ Faça uma das seguintes ações:
 - Digite "Preferências" na [busca de comandos](/pt-BR/docs/start/command-search/).
 
 As Preferências abrem na página **Aparência**. **Ajuda > Atalhos de teclado** as
-abre em **Atalhos de teclado**, e **Ajuda > Sobre o Capy Canvas**, em **Sobre**.
+abre em **Atalhos de teclado**, e **Ajuda > Sobre o {appName}**, em **Sobre**.
 
 Com as Preferências abertas, os atalhos da tela, os botões da caneta e os toques
 com os dedos não fazem nada.

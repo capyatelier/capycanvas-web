@@ -75,7 +75,7 @@ birini yapın:
 - Komut aramada **Ön plan ve arka planı değiştir** öğesini seçin.
 - Photoshop tarzı, Krita tarzı, Clip Studio Paint tarzı ve GIMP tarzı tuş eşlemelerinde **X**, Affinity tarzında **Shift+X** tuşuna basın.
 
-Aynı renk örneği seçili kalır. CapyCanvas tuş eşlemesinde **Renkleri değiştir**
+Aynı renk örneği seçili kalır. {appName} tuş eşlemesinde **Renkleri değiştir**
 için bir tuş yoktur.
 
 ## Siyah ve beyaz

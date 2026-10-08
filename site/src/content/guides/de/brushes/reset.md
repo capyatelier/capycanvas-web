@@ -12,7 +12,7 @@ ursprünglichen Wert zurücksetzen.
 Jede Änderung an einer Pinseleinstellung wird sofort mit ihrer Vorgabe gespeichert.
 
 - Änderungen gelten in allen Arbeitsbereichen, auch in selbst erstellten.
-- Änderungen bleiben nach einem Neustart von Capy Canvas erhalten.
+- Änderungen bleiben nach einem Neustart von {appName} erhalten.
 - Pinseleinstellungen werden nicht in `.capy`-Dateien gespeichert.
 - Eine Änderung an einer Pinseleinstellung ist kein Rückgängig-Schritt, und der Layoutverlauf listet keine Pinseländerungen.
 - Ein Pinsel speichert keine Farbe. Er malt mit der aktuellen Farbe im [Bedienfeld Farbe](/de/docs/color/color-panel/).

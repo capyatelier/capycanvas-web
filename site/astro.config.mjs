@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { languages } from './src/data/content.mjs';
 import { satteri } from '@astrojs/markdown-satteri';
 import { shotFigures } from './src/lib/shots.mjs';
+import { appNameMarkdown } from './src/lib/branding-markdown.mjs';
 
 export default defineConfig({
   site: 'https://capycanvas.art',
@@ -18,7 +19,7 @@ export default defineConfig({
     routing: { prefixDefaultLocale: false },
   },
   build: { format: 'directory' },
-  markdown: { processor: satteri({ hastPlugins: [shotFigures()] }) },
+  markdown: { processor: satteri({ mdastPlugins: [appNameMarkdown()], hastPlugins: [shotFigures()] }) },
   vite: {
     define: {
       'import.meta.env.CAPTURE_MANIFEST': JSON.stringify(fileURLToPath(new URL('./public/assets/capture.json', import.meta.url))),

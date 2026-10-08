@@ -92,7 +92,7 @@ related: ["color-management/hdr", "color-management/color-spaces", "files/export
 | 提示标签 | 显示条件 |
 | --- | --- |
 | “颜色被截断” | 屏幕无法显示画作或校样中的部分可见颜色。 |
-| “可能与打印结果不同” | 打印校样或色域警告已打开，且 Capy Canvas 无法确定屏幕如何显示颜色。 |
+| “可能与打印结果不同” | 打印校样或色域警告已打开，且 {appName} 无法确定屏幕如何显示颜色。 |
 
 对于 HDR 画作，提示标签还会报告屏幕是否以 HDR 显示（参见 [HDR](/zh/docs/color-management/hdr/)）。
 

@@ -23,7 +23,7 @@ Thực hiện một trong các cách sau:
 ## Sơ đồ phím đặt sẵn
 
 Bạn có thể dùng bộ phím theo kiểu của một ứng dụng khác. Chọn một **Thiết lập đặt
-sẵn** trong **Sơ đồ phím**: **CapyCanvas** (mặc định), **Kiểu Photoshop**,
+sẵn** trong **Sơ đồ phím**: **{appName}** (mặc định), **Kiểu Photoshop**,
 **Kiểu Krita**, **Kiểu Clip Studio Paint**, **Kiểu Procreate**, **Kiểu GIMP** hoặc
 **Kiểu Affinity**.
 

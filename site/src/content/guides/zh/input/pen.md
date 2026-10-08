@@ -20,7 +20,7 @@ related: ["input/touch", "input/keyboard", "preferences", "brushes/basics"]
 
 - **启用笔迹预测**同时打开或关闭两种预测。
 - **使用*系统*笔迹预测**（例如**使用 Windows 笔迹预测**）使用系统或浏览器提供的预测。
-- **预测量**设置 Capy Canvas 自身预测的提前量，范围为 0 到 64 ms。
+- **预测量**设置 {appName} 自身预测的提前量，范围为 0 到 64 ms。
 
 两个开关默认都打开，**预测量**默认为 16 ms。**启用笔迹预测**关闭时，另外两项设置不可用。
 
@@ -100,4 +100,4 @@ related: ["input/touch", "input/keyboard", "preferences", "brushes/basics"]
 - “在当前工具和橡皮擦之间切换”会切换到**橡皮擦**，再次操作时切换回来。
 - “在当前工具和上次使用的工具之间切换”会切换到之前选择的工具。
 
-其他选项在 Capy Canvas 中不起作用。挤压在松开时生效。Apple Pencil 悬停在屏幕上方时会显示光标。
+其他选项在 {appName} 中不起作用。挤压在松开时生效。Apple Pencil 悬停在屏幕上方时会显示光标。

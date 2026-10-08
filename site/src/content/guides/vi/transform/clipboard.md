@@ -1,6 +1,6 @@
 ---
 title: "Sao chép và dán"
-description: "Sao chép pixel và dán thành lớp mới, trong Capy Canvas và giữa các ứng dụng."
+description: "Sao chép pixel và dán thành lớp mới, trong {appName} và giữa các ứng dụng."
 related: ["selections/working", "transform/move-transform", "layers/working", "files/open-save"]
 ---
 
@@ -48,7 +48,7 @@ Khi sao chép một vùng lớn, một thông báo tiến trình hiện ra kèm 
 
 Thêm nội dung bảng nhớ tạm thành một lớp mới và đặt lớp đó làm lớp hiện tại.
 
-- Bản sao từ Capy Canvas được đặt tại chỗ đã sao chép nếu chỗ đó nằm trong khung nhìn, nếu không thì đặt ở giữa khung nhìn.
+- Bản sao từ {appName} được đặt tại chỗ đã sao chép nếu chỗ đó nằm trong khung nhìn, nếu không thì đặt ở giữa khung nhìn.
 - Ảnh từ ứng dụng khác mở ra trong hộp biến đổi. **Áp dụng** đặt ảnh, còn **Hủy** bỏ thao tác dán (xem [Di chuyển và biến đổi](/vi/docs/transform/move-transform/)).
 
 ## Dán đúng vị trí
@@ -64,8 +64,8 @@ Hoạt động giống **Dán đúng vị trí**, và tạo cho lớp mới mộ
 
 ## Dán giữa các ứng dụng
 
-Ứng dụng khác nhận bản sao từ Capy Canvas dưới dạng ảnh PNG sRGB 8 bit. Dán lại vào
-Capy Canvas sẽ dùng bản sao với độ sâu bit đầy đủ khi bản sao vẫn còn trong bảng nhớ
+Ứng dụng khác nhận bản sao từ {appName} dưới dạng ảnh PNG sRGB 8 bit. Dán lại vào
+{appName} sẽ dùng bản sao với độ sâu bit đầy đủ khi bản sao vẫn còn trong bảng nhớ
 tạm.
 
 Bản sao được dán vào bản vẽ có thiết lập màu khác sẽ trở thành

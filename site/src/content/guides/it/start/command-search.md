@@ -35,7 +35,7 @@ per ultime dalla ricerca, poi **Annulla**, **Adatta tela**, **Salva**,
 essere eseguite vengono omesse.
 
 Contano come recenti solo le voci eseguite dalla ricerca. L'elenco delle voci
-recenti si svuota quando chiudi Capy Canvas.
+recenti si svuota quando chiudi {appName}.
 
 ## Cercare
 

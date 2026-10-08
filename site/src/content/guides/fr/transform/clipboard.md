@@ -1,6 +1,6 @@
 ---
 title: "Copier et coller"
-description: "Copier des pixels et les coller comme nouveaux calques, dans Capy Canvas et entre applications."
+description: "Copier des pixels et les coller comme nouveaux calques, dans {appName} et entre applications."
 related: ["selections/working", "transform/move-transform", "layers/working", "files/open-save"]
 ---
 
@@ -51,7 +51,7 @@ Une copie volumineuse affiche une indication de progression avec **Annuler**.
 
 Ajoute le contenu du presse-papiers comme nouveau calque actif.
 
-- Une copie faite dans Capy Canvas se place à l’endroit d’où elle a été copiée si cet endroit est visible, et sinon au centre de la vue.
+- Une copie faite dans {appName} se place à l’endroit d’où elle a été copiée si cet endroit est visible, et sinon au centre de la vue.
 - Une image provenant d’une autre application s’ouvre dans le cadre de transformation. **Appliquer** place l’image et **Annuler** abandonne le collage (voir [Déplacer et transformer](/fr/docs/transform/move-transform/)).
 
 ## Coller sur place
@@ -68,8 +68,8 @@ ensuite supprimée. **Coller dedans** nécessite une sélection.
 
 ## Coller entre applications
 
-Les autres applications reçoivent une copie faite dans Capy Canvas sous forme
-d’image PNG sRGB 8 bits. Un collage dans Capy Canvas utilise la copie à sa pleine
+Les autres applications reçoivent une copie faite dans {appName} sous forme
+d’image PNG sRGB 8 bits. Un collage dans {appName} utilise la copie à sa pleine
 profondeur de couleur tant qu’elle se trouve encore dans le presse-papiers.
 
 Une copie collée dans un dessin aux réglages de couleur différents devient un

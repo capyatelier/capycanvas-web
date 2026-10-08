@@ -5,7 +5,7 @@ related: ["customize/workspaces", "customize/panels", "customize/toolbars", "cus
 ---
 
 Çalışma alanı, başlık çubuğunun, araç çubuklarının ve panellerin kaydedilmiş bir
-düzenidir. Capy Canvas'ta üç çalışma alanı bulunur: **Eskiz**, **Boya** ve
+düzenidir. {appName}'ta üç çalışma alanı bulunur: **Eskiz**, **Boya** ve
 **Fotoğraf**. Uygulama ilk seferde Boya'da, sonrasında en son kullandığınız
 çalışma alanında açılır.
 

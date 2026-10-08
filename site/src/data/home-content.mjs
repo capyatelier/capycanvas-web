@@ -1,61 +1,62 @@
-export const homeContent = {
+import { brandTranslations } from './branding.mjs';
+export const homeContent = brandTranslations({
   en: {
-    metaTitle: 'Capy Canvas — Free Digital Painting & Photo Editing',
+    metaTitle: '{appName} — Free Digital Painting & Photo Editing',
     meta: 'Free, open source digital painting and photo editing for Linux, Windows, macOS, iPad, Android and the web. Draw with brushes and layers, and work offline.',
   },
   ja: {
-    metaTitle: 'Capy Canvas — 無料のデジタルペイントと写真編集',
+    metaTitle: '{appName} — 無料のデジタルペイントと写真編集',
     meta: 'Linux、Windows、macOS、iPad、Android、ウェブで使える無料・オープンソースのペイント・写真編集アプリ。ブラシとレイヤーで描き、オフラインでも使えます。',
   },
   zh: {
-    metaTitle: 'Capy Canvas — 免费数字绘画与照片编辑',
+    metaTitle: '{appName} — 免费数字绘画与照片编辑',
     meta: '适用于 Linux、Windows、macOS、iPad、Android 和网页的免费开源绘画与照片编辑应用。使用画笔和图层创作，支持离线使用。',
   },
   ko: {
-    metaTitle: 'Capy Canvas — 무료 디지털 페인팅과 사진 편집',
+    metaTitle: '{appName} — 무료 디지털 페인팅과 사진 편집',
     meta: 'Linux, Windows, macOS, iPad, Android와 웹에서 사용하는 무료 오픈 소스 페인팅 및 사진 편집 앱. 브러시와 레이어로 그리고 오프라인에서도 작업하세요.',
   },
   es: {
-    metaTitle: 'Capy Canvas — Pintura digital y edición de fotos gratis',
+    metaTitle: '{appName} — Pintura digital y edición de fotos gratis',
     meta: 'Pintura digital y edición de fotos gratis y de código abierto para Linux, Windows, macOS, iPad, Android y la web. Dibuja con pinceles y capas, incluso sin conexión.',
   },
   'pt-BR': {
-    metaTitle: 'Capy Canvas — Pintura digital e edição de fotos grátis',
+    metaTitle: '{appName} — Pintura digital e edição de fotos grátis',
     meta: 'Pintura digital e edição de fotos grátis e de código aberto para Linux, Windows, macOS, iPad, Android e web. Desenhe com pincéis e camadas e trabalhe offline.',
   },
   id: {
-    metaTitle: 'Capy Canvas — Melukis Digital dan Edit Foto Gratis',
+    metaTitle: '{appName} — Melukis Digital dan Edit Foto Gratis',
     meta: 'Aplikasi melukis digital dan edit foto gratis dan sumber terbuka untuk Linux, Windows, macOS, iPad, Android, dan web. Menggambar dengan kuas dan lapisan, termasuk saat offline.',
   },
   fr: {
-    metaTitle: 'Capy Canvas — Peinture numérique et retouche photo gratuites',
+    metaTitle: '{appName} — Peinture numérique et retouche photo gratuites',
     meta: 'Peinture numérique et retouche photo gratuites et open source sur Linux, Windows, macOS, iPad, Android et le web. Dessinez avec des pinceaux et des calques, même hors ligne.',
   },
   de: {
-    metaTitle: 'Capy Canvas — Kostenlos digital malen und Fotos bearbeiten',
+    metaTitle: '{appName} — Kostenlos digital malen und Fotos bearbeiten',
     meta: 'Kostenlos digital malen und Fotos bearbeiten auf Linux, Windows, macOS, iPad, Android und im Web. Open Source, mit Pinseln und Ebenen, auch offline nutzbar.',
   },
   ru: {
-    metaTitle: 'Capy Canvas — Бесплатное рисование и обработка фотографий',
+    metaTitle: '{appName} — Бесплатное рисование и обработка фотографий',
     meta: 'Бесплатное рисование и обработка фото на Linux, Windows, macOS, iPad, Android и в браузере. Открытый исходный код, кисти, слои и работа без интернета.',
   },
   th: {
-    metaTitle: 'Capy Canvas — วาดภาพดิจิทัลและแต่งภาพฟรี',
+    metaTitle: '{appName} — วาดภาพดิจิทัลและแต่งภาพฟรี',
     meta: 'วาดภาพดิจิทัลและแต่งภาพฟรีบน Linux, Windows, macOS, iPad, Android และเว็บ แอปโอเพนซอร์สพร้อมแปรงและเลเยอร์ ใช้งานแบบออฟไลน์ได้',
   },
   vi: {
-    metaTitle: 'Capy Canvas — Vẽ kỹ thuật số và chỉnh sửa ảnh miễn phí',
+    metaTitle: '{appName} — Vẽ kỹ thuật số và chỉnh sửa ảnh miễn phí',
     meta: 'Vẽ kỹ thuật số và chỉnh sửa ảnh miễn phí, mã nguồn mở trên Linux, Windows, macOS, iPad, Android và web. Vẽ bằng cọ và lớp, làm việc cả khi ngoại tuyến.',
   },
   tr: {
-    metaTitle: 'Capy Canvas — Ücretsiz Dijital Boyama ve Fotoğraf Düzenleme',
+    metaTitle: '{appName} — Ücretsiz Dijital Boyama ve Fotoğraf Düzenleme',
     meta: 'Linux, Windows, macOS, iPad, Android ve web için ücretsiz, açık kaynaklı dijital boyama ve fotoğraf düzenleme. Fırçalar ve katmanlarla çizin, çevrimdışı çalışın.',
   },
   it: {
-    metaTitle: 'Capy Canvas — Pittura digitale e fotoritocco gratuiti',
+    metaTitle: '{appName} — Pittura digitale e fotoritocco gratuiti',
     meta: 'Pittura digitale e fotoritocco gratuiti e open source per Linux, Windows, macOS, iPad, Android e web. Disegna con pennelli e livelli e lavora anche offline.',
   },
-};
+});
 
 export const languageSuggestions = {
   en: 'Read in English', ja: '日本語で読む', zh: '用简体中文阅读', ko: '한국어로 읽기',

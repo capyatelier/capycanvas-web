@@ -12,7 +12,7 @@ thiết lập đó về giá trị ban đầu sau này.
 Mọi thay đổi thiết lập cọ được lưu ngay vào cọ đặt sẵn tương ứng.
 
 - Thay đổi được dùng chung ở mọi không gian làm việc, kể cả các không gian làm việc bạn tạo.
-- Thay đổi vẫn còn sau khi bạn khởi động lại Capy Canvas.
+- Thay đổi vẫn còn sau khi bạn khởi động lại {appName}.
 - Thiết lập cọ không được lưu trong tệp `.capy`.
 - Thay đổi thiết lập cọ không phải là bước hoàn tác, và Lịch sử bố cục không liệt kê thay đổi cọ.
 - Cọ không giữ màu. Cọ vẽ bằng màu hiện tại trong [Bảng màu hiện tại](/vi/docs/color/color-panel/).

@@ -1,5 +1,6 @@
 ---
 import { content } from '../data/content.mjs';
+import { appName } from '../data/branding.mjs';
 import { route, appUrl, repositoryUrl, type Locale, type SitePage } from '../lib/site';
 import { github } from '../lib/icons';
 import capybara from '../../public/assets/capybara.svg?raw';
@@ -8,6 +9,7 @@ import LanguageMenu from './LanguageMenu.astro';
 interface Props { locale: Locale; page: SitePage; slug?: string }
 const { locale, page, slug = '' } = Astro.props;
 const t = content[locale];
+const name = appName(locale);
 const brandSvg = capybara.replace('<svg ', '<svg aria-hidden="true" ');
 const navPages = ['download', 'documentation'] as const;
 const section = page === 'versions' || page === 'ipadBeta' || page === 'androidBeta' ? 'download' : page;
@@ -17,7 +19,7 @@ const section = page === 'versions' || page === 'ipadBeta' || page === 'androidB
 ) : (
   <header class="site-header">
     <div class="nav-inner">
-      <a class="brand" href={route(locale)} aria-label={`Capy Canvas · ${t.nav.home}`}><Fragment set:html={brandSvg} /><span>Capy Canvas</span></a>
+      <a class="brand" href={route(locale)} aria-label={`${name} · ${t.nav.home}`}><Fragment set:html={brandSvg} /><span>{name}</span></a>
       <nav class="nav-links" aria-label={t.nav.main}>
         {navPages.map(p => <a href={route(locale, p)} aria-current={p === section ? 'page' : undefined}>{t.nav[p]}</a>)}
         <a href={appUrl}>{t.nav.webDemo}<Icon name="external" /></a>

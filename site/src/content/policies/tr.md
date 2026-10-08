@@ -2,15 +2,15 @@
 effectiveDate: "2026-09-10"
 ---
 
-Bu politika Capy Canvas ile capycanvas.art ve editor.capycanvas.art web sitelerini kapsar. Capy Canvas, Zachary Drach tarafından Capy Atelier proje adı altında çalıştırılır.
+Bu politika {appName} ile capycanvas.art ve editor.capycanvas.art web sitelerini kapsar. {appName}, Zachary Drach tarafından Capy Atelier proje adı altında çalıştırılır.
 
 Gizlilikle ilgili sorularınız veya istekleriniz için [zackdrach@gmail.com](mailto:zackdrach@gmail.com).
 
 ## Uygulama verileri
 
-Capy Canvas, cihazınızdaki çizimleri işler ve açmayı veya kaydetmeyi seçtiğiniz dosyalara erişir. Uygulama çizimlerinizi veya içe aktarılan görsellerinizi bize göndermez. Destek talebiyle birlikte gönderirseniz dosyaları alırız.
+{appName}, cihazınızdaki çizimleri işler ve açmayı veya kaydetmeyi seçtiğiniz dosyalara erişir. Uygulama çizimlerinizi veya içe aktarılan görsellerinizi bize göndermez. Destek talebiyle birlikte gönderirseniz dosyaları alırız.
 
-Ayarlar ve web sitesi tercihleri ​​cihazınızda saklanır. Web uygulaması ayrıca uygulama dosyalarını çevrimdışı kullanım için önbelleğe alır. Capy Canvas bir hesap gerektirmez.
+Ayarlar ve web sitesi tercihleri ​​cihazınızda saklanır. Web uygulaması ayrıca uygulama dosyalarını çevrimdışı kullanım için önbelleğe alır. {appName} bir hesap gerektirmez.
 
 Reklam veya kullanım analizlerini kullanmıyoruz, kişisel bilgileri satmıyoruz veya sizi web sitelerinde takip eden izleyicileri yerleştirmiyoruz.
 

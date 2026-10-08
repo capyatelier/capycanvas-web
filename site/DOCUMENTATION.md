@@ -100,7 +100,9 @@ menu or dialog the section describes. See
    page does the review and fixes every failure. `npm test` also runs the
    mechanical checks in `tests/writing.test.mjs`.
 3. Capture or update its images. One run captures them in every language.
-4. Translate the changed page into every language.
+4. Translate the changed page into every language. Keep `{appName}` unchanged
+   in body text and frontmatter; the build supplies each language's approved name.
+   `npm run check:branding` rejects literal names and missing brand placeholders.
 
 Translations use the app's own interface labels for that language, word for word:
 look up the English label in the app's `assets/locales/en/*.ftl` and use the same

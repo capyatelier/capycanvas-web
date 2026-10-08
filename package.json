@@ -8,7 +8,7 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "build": "astro check --root site && astro build --root site",
+    "build": "npm run check:branding && astro check --root site && astro build --root site",
     "dev": "cd site && astro dev",
     "test": "node --test --test-isolation=none tests/*.test.mjs",
     "test:browser": "node tests/browser.mjs",
@@ -17,7 +17,8 @@
     "serve": "node site/scripts/serve.mjs",
     "capture": "bash site/scripts/capture-headless.sh",
     "capture:prepare": "node site/scripts/prepare-capture.mjs",
-    "capture:store": "node site/scripts/store/capture.mjs"
+    "capture:store": "node site/scripts/store/capture.mjs",
+    "check:branding": "node site/scripts/check-branding.mjs"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.10",

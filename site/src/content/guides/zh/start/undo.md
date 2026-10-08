@@ -40,7 +40,7 @@ related: ["start/command-search", "customize/workspaces", "input/touch"]
 
 ## 保存和重新打开
 
-保存不会清除历史记录。从 `.capy` 文件打开的画作以空的历史记录开始；重新启动 Capy Canvas 时自动重新打开的画作会保留撤销步骤。
+保存不会清除历史记录。从 `.capy` 文件打开的画作以空的历史记录开始；重新启动 {appName} 时自动重新打开的画作会保留撤销步骤。
 
 ## 布局更改
 

@@ -63,7 +63,7 @@ related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-manag
 - 在命令搜索中选择**交换前景色和背景色**。
 - 在 Photoshop 风格、Krita 风格、Clip Studio Paint 风格和 GIMP 风格键位映射中按 **X**，在 Affinity 风格中按 **Shift+X**。
 
-交换后仍选中同一个色板。CapyCanvas 键位映射没有为**交换颜色**分配按键。
+交换后仍选中同一个色板。{appName} 键位映射没有为**交换颜色**分配按键。
 
 ## 黑色和白色
 

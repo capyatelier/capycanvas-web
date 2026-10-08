@@ -12,7 +12,7 @@ aslinya nanti.
 Setiap perubahan pada pengaturan kuas langsung disimpan bersama prasetelnya.
 
 - Perubahan berlaku di semua ruang kerja, termasuk ruang kerja yang Anda buat.
-- Perubahan tetap ada setelah Anda memulai ulang Capy Canvas.
+- Perubahan tetap ada setelah Anda memulai ulang {appName}.
 - Pengaturan kuas tidak disimpan di berkas `.capy`.
 - Perubahan pengaturan kuas bukan langkah urungkan, dan Riwayat Tata Letak tidak mencantumkan perubahan kuas.
 - Kuas tidak menyimpan warna. Kuas melukis dengan warna saat ini di [panel Warna](/id/docs/color/color-panel/).

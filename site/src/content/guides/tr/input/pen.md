@@ -27,7 +27,7 @@ altındadır:
 
 - **Fırça darbesi tahminini etkinleştir**, iki tahmin türünü de açar veya kapatır.
 - ***sistem* fırça darbesi tahminini kullan** (örneğin **Windows fırça darbesi tahminini kullan**), sistemin veya tarayıcının tahminini kullanır.
-- **Tahmin miktarı**, Capy Canvas'ın kendi başına ne kadar ileriyi tahmin edeceğini 0 ile 64 ms arasında belirler.
+- **Tahmin miktarı**, {appName}'ın kendi başına ne kadar ileriyi tahmin edeceğini 0 ile 64 ms arasında belirler.
 
 İki anahtar da varsayılan olarak açıktır ve **Tahmin miktarı** 16 ms'dir.
 **Fırça darbesi tahminini etkinleştir** kapalıyken diğer iki ayar kullanılamaz.
@@ -121,5 +121,5 @@ iPad'de Apple Pencil'a çift dokunma ve Apple Pencil Pro'yu sıkıştırma, iPad
 - “Switch between current tool and eraser”, **Silgi** aracına geçer ve geri döner.
 - “Switch between current tool and last used”, daha önce seçtiğiniz araca geçer.
 
-Diğer seçenekler Capy Canvas'ta hiçbir şey yapmaz. Sıkıştırma, bıraktığınızda
+Diğer seçenekler {appName}'ta hiçbir şey yapmaz. Sıkıştırma, bıraktığınızda
 etkili olur. Apple Pencil ekranın üzerinde gezinirken imleç görünür.

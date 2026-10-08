@@ -1,5 +1,6 @@
 ---
 import { content } from '../data/content.mjs';
+import { appName } from '../data/branding.mjs';
 import { origin, route, type Locale } from '../lib/site';
 interface Props { locale: Locale; slug: string }
 const { locale, slug } = Astro.props;
@@ -14,7 +15,7 @@ const t = content[locale];
     <meta name="robots" content="noindex" />
     <meta name="color-scheme" content="light dark" />
     <meta name="darkreader-lock" />
-    <title>{t.nav.documentation} — Capy Canvas</title>
+    <title>{t.nav.documentation} — {appName(locale)}</title>
     <link rel="canonical" href={origin + target} />
     <link rel="icon" type="image/png" sizes="32x32" href={`/assets/favicon.png?v=${import.meta.env.FAVICON_VERSION}`} />
     <link rel="stylesheet" href={`/assets/style.css?v=${import.meta.env.STYLE_VERSION}`} />

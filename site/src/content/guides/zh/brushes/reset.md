@@ -11,7 +11,7 @@ related: ["brushes/basics", "drawing/brush-tools", "customize/workspaces"]
 对画笔设置的每次更改都会立即随其预设保存。
 
 - 所有工作区共用这些更改，包括自己创建的工作区。
-- 重新启动 Capy Canvas 后，更改仍然保留。
+- 重新启动 {appName} 后，更改仍然保留。
 - 画笔设置不会保存在 `.capy` 文件中。
 - 更改画笔设置不算撤销步骤，布局历史中也不会列出画笔更改。
 - 画笔不保留颜色，始终使用[颜色面板](/zh/docs/color/color-panel/)中的当前颜色绘画。

@@ -25,7 +25,7 @@ the real stroke replaces it as you draw. The settings are under **Pen response**
 
 - **Enable stroke prediction** switches both kinds of prediction on or off.
 - **Use *system* stroke prediction**, for example **Use Windows stroke prediction**, uses the prediction of the system or the browser.
-- **Prediction amount** sets how far ahead Capy Canvas predicts on its own, from 0 to 64 ms.
+- **Prediction amount** sets how far ahead {appName} predicts on its own, from 0 to 64 ms.
 
 Both switches are on by default, and **Prediction amount** is 16 ms. While
 **Enable stroke prediction** is off, the other two settings are unavailable.
@@ -119,5 +119,5 @@ the iPad's own setting in **Settings > Apple Pencil**.
 - "Switch between current tool and eraser" switches to the **Eraser** and back.
 - "Switch between current tool and last used" switches to the tool you chose before.
 
-The other choices do nothing in Capy Canvas. Squeeze acts when you let go. When
+The other choices do nothing in {appName}. Squeeze acts when you let go. When
 the Apple Pencil hovers over the screen, the cursor appears.

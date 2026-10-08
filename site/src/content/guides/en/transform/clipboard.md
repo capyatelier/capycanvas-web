@@ -1,6 +1,6 @@
 ---
 title: "Copy and paste"
-description: "Copying pixels and pasting them as new layers, within Capy Canvas and between apps."
+description: "Copying pixels and pasting them as new layers, within {appName} and between apps."
 related: ["selections/working", "transform/move-transform", "layers/working", "files/open-save"]
 ---
 
@@ -48,7 +48,7 @@ A large copy shows a progress note with **Cancel**.
 
 Adds the clipboard as a new active layer.
 
-- A copy from Capy Canvas lands where it was copied from if that spot is in view, or in the center of the view otherwise.
+- A copy from {appName} lands where it was copied from if that spot is in view, or in the center of the view otherwise.
 - An image from another app opens in the transform box. **Apply** places the image and **Cancel** discards the paste (see [Move and Transform](/docs/transform/move-transform/)).
 
 ## Paste in Place
@@ -64,8 +64,8 @@ then removed. **Paste Into** needs a selection.
 
 ## Pasting between apps
 
-Other apps receive a copy from Capy Canvas as an 8-bit sRGB PNG image. Pasting
-back into Capy Canvas uses the copy at its full bit depth while it is still on
+Other apps receive a copy from {appName} as an 8-bit sRGB PNG image. Pasting
+back into {appName} uses the copy at its full bit depth while it is still on
 the clipboard.
 
 A copy pasted into a drawing with other color settings becomes a

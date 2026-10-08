@@ -76,7 +76,7 @@ siguientes acciones:
 - Elige **Intercambiar primer plano y fondo** en la búsqueda de comandos.
 - Pulsa **X** en los mapas de atajos Estilo Photoshop, Estilo Krita, Estilo Clip Studio Paint y Estilo GIMP, o **Mayús+X** en Estilo Affinity.
 
-La misma muestra sigue seleccionada. El mapa de atajos CapyCanvas no tiene tecla
+La misma muestra sigue seleccionada. El mapa de atajos {appName} no tiene tecla
 para **Intercambiar colores**.
 
 ## Negro y blanco

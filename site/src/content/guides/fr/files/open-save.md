@@ -21,7 +21,7 @@ Effectuez l’une des opérations suivantes :
 - Appuyez sur **Ctrl+O**.
 - Dans Peinture et Photo, sélectionnez **Ouvrir…** dans la barre d’outils Commandes.
 - Dans l’éditeur web ou sous Linux, faites glisser des fichiers sur le nom du dessin ou sur les onglets de la barre de titre.
-- Si vous avez installé l’éditeur web comme application, ouvrez un fichier `.capy`, `.png`, `.jpg`, `.tif`, `.avif` ou `.exr` avec Capy Canvas depuis votre système.
+- Si vous avez installé l’éditeur web comme application, ouvrez un fichier `.capy`, `.png`, `.jpg`, `.tif`, `.avif` ou `.exr` avec {appName} depuis votre système.
 
 ## Photos
 
@@ -93,7 +93,7 @@ active.
 
 ## Dessins en lecture seule
 
-Un fichier `.capy` que Capy Canvas ne peut pas modifier, comme un fichier
+Un fichier `.capy` que {appName} ne peut pas modifier, comme un fichier
 endommagé, s’ouvre dans une boîte de dialogue au lieu d’un onglet.
 **Copy Original File…** enregistre une copie du fichier, et **Export Preview Image…**
 enregistre l’aperçu du dessin au format PNG.
@@ -157,13 +157,13 @@ Sous Linux, la fenêtre se ferme.
 ## Réouverture après un redémarrage
 
 Tous les dessins ouverts, enregistrés ou non, se rouvrent au prochain démarrage de
-Capy Canvas, chacun avec son historique d’annulation, sa vue, sa sélection et sa
-dernière exportation. Capy Canvas ne demande pas d’enregistrer quand vous le quittez.
+{appName}, chacun avec son historique d’annulation, sa vue, sa sélection et sa
+dernière exportation. {appName} ne demande pas d’enregistrer quand vous le quittez.
 
 Dans l’éditeur web, effacer les données du site supprime les dessins non
 enregistrés.
 
-Après une fermeture inattendue de Capy Canvas, les dessins rouverts affichent
+Après une fermeture inattendue de {appName}, les dessins rouverts affichent
 « (récupéré) » après leur nom jusqu’à ce que vous les enregistriez.
 
 ## Nouvelle fenêtre

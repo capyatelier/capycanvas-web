@@ -1,6 +1,6 @@
 ---
 title: "Salin dan tempel"
-description: "Menyalin piksel dan menempelkannya sebagai lapisan baru, di dalam Capy Canvas maupun antaraplikasi."
+description: "Menyalin piksel dan menempelkannya sebagai lapisan baru, di dalam {appName} maupun antaraplikasi."
 related: ["selections/working", "transform/move-transform", "layers/working", "files/open-save"]
 ---
 
@@ -50,7 +50,7 @@ Penyalinan berukuran besar menampilkan catatan kemajuan dengan **Batal**.
 
 Menambahkan isi papan klip sebagai lapisan aktif baru.
 
-- Salinan dari Capy Canvas diletakkan di tempat asal salinannya jika tempat itu terlihat, atau di tengah tampilan jika tidak.
+- Salinan dari {appName} diletakkan di tempat asal salinannya jika tempat itu terlihat, atau di tengah tampilan jika tidak.
 - Gambar dari aplikasi lain terbuka di kotak transformasi. **Terapkan** menempatkan gambar dan **Batal** membuang tempelan (lihat [Pemindahan dan transformasi](/id/docs/transform/move-transform/)).
 
 ## Tempel di Tempat
@@ -67,8 +67,8 @@ dibuang. **Tempel ke Dalam** memerlukan seleksi.
 
 ## Menempel antaraplikasi
 
-Aplikasi lain menerima salinan dari Capy Canvas sebagai gambar PNG sRGB 8-bit.
-Menempelkan kembali ke Capy Canvas memakai salinan dengan kedalaman bit penuhnya
+Aplikasi lain menerima salinan dari {appName} sebagai gambar PNG sRGB 8-bit.
+Menempelkan kembali ke {appName} memakai salinan dengan kedalaman bit penuhnya
 selama salinan itu masih ada di papan klip.
 
 Salinan yang ditempelkan ke gambar dengan pengaturan warna lain menjadi

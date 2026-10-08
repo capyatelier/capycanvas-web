@@ -21,7 +21,7 @@ Effectuez l’une des opérations suivantes :
 
 Les Préférences s’ouvrent sur la page **Apparence**.
 **Aide > Raccourcis clavier** les ouvre sur **Raccourcis clavier**, et
-**Aide > À propos de Capy Canvas** sur **À propos**.
+**Aide > À propos de {appName}** sur **À propos**.
 
 Tant que les Préférences sont ouvertes, les raccourcis de la toile, les boutons
 du stylet et les touchers à plusieurs doigts n’ont aucun effet.

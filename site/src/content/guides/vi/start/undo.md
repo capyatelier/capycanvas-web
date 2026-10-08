@@ -45,7 +45,7 @@ Mỗi bản vẽ giữ tối đa 256 bước. Các bước cũ nhất bị bỏ 
 ## Lưu và mở lại
 
 Lưu không xóa lịch sử. Bản vẽ bạn mở từ tệp `.capy` bắt đầu với lịch sử trống, còn
-các bản vẽ được mở lại khi bạn khởi động lại Capy Canvas vẫn giữ các bước hoàn tác.
+các bản vẽ được mở lại khi bạn khởi động lại {appName} vẫn giữ các bước hoàn tác.
 
 ## Thay đổi bố cục
 

@@ -19,7 +19,7 @@ Aşağıdakilerden birini yapın:
 - [Komut aramaya](/tr/docs/start/command-search/) “Tercihler” yazın.
 
 Tercihler **Görünüm** sayfasında açılır. **Yardım > Klavye kısayolları**
-Tercihler'i **Klavye kısayolları** sayfasında, **Yardım > Capy Canvas hakkında**
+Tercihler'i **Klavye kısayolları** sayfasında, **Yardım > {appName} hakkında**
 ise **Hakkında** sayfasında açar.
 
 Tercihler açıkken tuval kısayolları, kalem düğmeleri ve parmak dokunuşları

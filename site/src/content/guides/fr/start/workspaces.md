@@ -5,7 +5,7 @@ related: ["customize/workspaces", "customize/panels", "customize/toolbars", "cus
 ---
 
 Un espace de travail est une disposition enregistrée de la barre de titre, des
-barres d’outils et des panneaux. Capy Canvas en propose trois : **Croquis**,
+barres d’outils et des panneaux. {appName} en propose trois : **Croquis**,
 **Peinture** et **Photo**. Il s’ouvre dans Peinture la première fois, puis dans le
 dernier espace de travail utilisé.
 

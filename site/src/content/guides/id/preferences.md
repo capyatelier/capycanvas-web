@@ -19,7 +19,7 @@ Lakukan salah satu langkah berikut:
 - Ketik "Preferensi" di [pencarian perintah](/id/docs/start/command-search/).
 
 Preferensi terbuka di halaman **Tampilan**. **Bantuan > Pintasan Papan Ketik** membukanya
-di **Pintasan Papan Ketik**, dan **Bantuan > Tentang Capy Canvas** di **Tentang**.
+di **Pintasan Papan Ketik**, dan **Bantuan > Tentang {appName}** di **Tentang**.
 
 Selama Preferensi terbuka, pintasan kanvas, tombol pena, dan ketukan jari tidak
 melakukan apa pun.

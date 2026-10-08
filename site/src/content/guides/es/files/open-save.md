@@ -20,7 +20,7 @@ Haz una de las siguientes acciones:
 - Pulsa **Ctrl+O**.
 - En Pintura y Foto, selecciona **Abrir…** en la barra de comandos.
 - En el editor web o en Linux, arrastra archivos sobre el nombre del dibujo o sobre las pestañas de la barra de título.
-- Si instalaste el editor web como aplicación, abre un archivo `.capy`, `.png`, `.jpg`, `.tif`, `.avif` o `.exr` con Capy Canvas desde tu sistema.
+- Si instalaste el editor web como aplicación, abre un archivo `.capy`, `.png`, `.jpg`, `.tif`, `.avif` o `.exr` con {appName} desde tu sistema.
 
 ## Fotos
 
@@ -89,7 +89,7 @@ deshacer, la vista ni la selección activa.
 
 ## Dibujos de solo lectura
 
-Un archivo `.capy` que Capy Canvas no puede editar, como un archivo dañado, se
+Un archivo `.capy` que {appName} no puede editar, como un archivo dañado, se
 abre en un diálogo en lugar de en una pestaña. **Copy Original File…** guarda una
 copia del archivo, y **Export Preview Image…** guarda la vista previa del dibujo
 como PNG.
@@ -150,12 +150,12 @@ Linux, la ventana se cierra.
 ## Volver a abrir tras reiniciar
 
 Todos los dibujos abiertos, guardados o no, se vuelven a abrir la próxima vez que
-inicias Capy Canvas, cada uno con su historial de deshacer, su vista, su selección
-y su última exportación. Al salir de Capy Canvas no se te pide guardar.
+inicias {appName}, cada uno con su historial de deshacer, su vista, su selección
+y su última exportación. Al salir de {appName} no se te pide guardar.
 
 En el editor web, borrar los datos del sitio elimina los dibujos sin guardar.
 
-Si Capy Canvas se cierra de forma inesperada, los dibujos que se vuelven a abrir
+Si {appName} se cierra de forma inesperada, los dibujos que se vuelven a abrir
 muestran «(recuperado)» después del nombre hasta que los guardas.
 
 ## Nueva ventana

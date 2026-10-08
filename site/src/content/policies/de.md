@@ -2,15 +2,15 @@
 effectiveDate: "2026-09-10"
 ---
 
-Diese Richtlinie gilt für Capy Canvas und die Websites capycanvas.art und editor.capycanvas.art. Capy Canvas wird von Zachary Drach unter dem Projektnamen Capy Atelier betrieben.
+Diese Richtlinie gilt für {appName} und die Websites capycanvas.art und editor.capycanvas.art. {appName} wird von Zachary Drach unter dem Projektnamen Capy Atelier betrieben.
 
 Bei Fragen oder Wünschen zum Datenschutz senden Sie bitte eine E-Mail an [zackdrach@gmail.com](mailto:zackdrach@gmail.com).
 
 ## App-Daten
 
-Capy Canvas verarbeitet Zeichnungen auf Ihrem Gerät und greift auf Dateien zu, die Sie öffnen oder speichern möchten. Die App sendet Ihre Zeichnungen oder importierten Bilder nicht an uns. Wir erhalten Dateien, wenn Sie diese mit einer Supportanfrage einreichen.
+{appName} verarbeitet Zeichnungen auf Ihrem Gerät und greift auf Dateien zu, die Sie öffnen oder speichern möchten. Die App sendet Ihre Zeichnungen oder importierten Bilder nicht an uns. Wir erhalten Dateien, wenn Sie diese mit einer Supportanfrage einreichen.
 
-Einstellungen und Website-Präferenzen werden auf Ihrem Gerät gespeichert. Die Web-App speichert auch Anwendungsdateien für die Offline-Nutzung zwischen. Für Capy Canvas ist kein Konto erforderlich.
+Einstellungen und Website-Präferenzen werden auf Ihrem Gerät gespeichert. Die Web-App speichert auch Anwendungsdateien für die Offline-Nutzung zwischen. Für {appName} ist kein Konto erforderlich.
 
 Wir verwenden keine Werbung oder Nutzungsanalysen, verkaufen keine personenbezogenen Daten und betten keine Tracker ein, die Sie über Websites hinweg verfolgen.
 

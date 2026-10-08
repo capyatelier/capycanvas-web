@@ -20,7 +20,7 @@ macOS와 iPad에서는 Ctrl 대신 Command를 사용하고, Option이 Alt 키입
 
 ## 키맵 사전 설정
 
-다른 앱을 본뜬 키를 사용할 수 있습니다. **키맵** 아래의 **사전 설정**에서 **CapyCanvas**(기본값), **Photoshop 스타일**, **Krita 스타일**, **Clip Studio Paint 스타일**, **Procreate 스타일**, **GIMP 스타일**, **Affinity 스타일** 중 하나를 고릅니다.
+다른 앱을 본뜬 키를 사용할 수 있습니다. **키맵** 아래의 **사전 설정**에서 **{appName}**(기본값), **Photoshop 스타일**, **Krita 스타일**, **Clip Studio Paint 스타일**, **Procreate 스타일**, **GIMP 스타일**, **Affinity 스타일** 중 하나를 고릅니다.
 
 사전 설정은 일부 키만 바꾸며, 직접 바꾼 키는 그대로 유지합니다. **키맵 옵션** 메뉴(**⋯**)의 **차이점…** 항목은 사전 설정이 원래 앱과 맞추지 못한 부분을 나열합니다.
 

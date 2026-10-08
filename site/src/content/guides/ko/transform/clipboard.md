@@ -1,6 +1,6 @@
 ---
 title: "복사와 붙여넣기"
-description: "Capy Canvas 안에서, 그리고 다른 앱과의 사이에서 픽셀을 복사해 새 레이어로 붙여넣는 방법을 설명합니다."
+description: "{appName} 안에서, 그리고 다른 앱과의 사이에서 픽셀을 복사해 새 레이어로 붙여넣는 방법을 설명합니다."
 related: ["selections/working", "transform/move-transform", "layers/working", "files/open-save"]
 ---
 
@@ -48,7 +48,7 @@ related: ["selections/working", "transform/move-transform", "layers/working", "f
 
 클립보드의 내용을 새 활성 레이어로 추가합니다.
 
-- Capy Canvas에서 복사한 내용은 복사한 위치가 화면에 보이면 그 위치에, 보이지 않으면 화면 가운데에 놓입니다.
+- {appName}에서 복사한 내용은 복사한 위치가 화면에 보이면 그 위치에, 보이지 않으면 화면 가운데에 놓입니다.
 - 다른 앱의 이미지는 변형 상자에 열립니다. **적용**은 이미지를 배치하고, **취소**는 붙여넣기를 취소합니다([이동과 변형](/ko/docs/transform/move-transform/) 참조).
 
 ## 제자리에 붙여넣기
@@ -64,8 +64,8 @@ related: ["selections/working", "transform/move-transform", "layers/working", "f
 
 ## 앱 사이에서 붙여넣기
 
-다른 앱은 Capy Canvas에서 복사한 내용을 8비트 sRGB PNG 이미지로 받습니다. 클립보드에
-그 내용이 남아 있는 동안 Capy Canvas에 다시 붙여넣으면 원래 비트 심도 그대로
+다른 앱은 {appName}에서 복사한 내용을 8비트 sRGB PNG 이미지로 받습니다. 클립보드에
+그 내용이 남아 있는 동안 {appName}에 다시 붙여넣으면 원래 비트 심도 그대로
 사용됩니다.
 
 색 설정이 다른 그림에 붙여넣은 내용은 자체 색상 프로파일에서 변환된

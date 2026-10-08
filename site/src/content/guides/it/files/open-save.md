@@ -20,7 +20,7 @@ Esegui una delle seguenti operazioni:
 - Premi **Ctrl+O**.
 - In Pittura e Foto, seleziona **Apri…** nella barra strumenti Comandi.
 - Nell'editor web o su Linux, trascina i file sul nome del disegno o sulle schede nella barra del titolo.
-- Se hai installato l'editor web come app, apri un file `.capy`, `.png`, `.jpg`, `.tif`, `.avif` o `.exr` con Capy Canvas dal tuo sistema.
+- Se hai installato l'editor web come app, apri un file `.capy`, `.png`, `.jpg`, `.tif`, `.avif` o `.exr` con {appName} dal tuo sistema.
 
 ## Foto
 
@@ -89,7 +89,7 @@ degli annullamenti, la vista né la selezione attiva.
 
 ## Disegni di sola lettura
 
-Un file `.capy` che Capy Canvas non può modificare, per esempio un file
+Un file `.capy` che {appName} non può modificare, per esempio un file
 danneggiato, si apre in una finestra di dialogo invece che in una scheda. **Copy
 Original File…** salva una copia del file, ed **Export Preview Image…** salva
 l'anteprima del disegno come PNG.
@@ -150,13 +150,12 @@ Linux, la finestra si chiude.
 
 ## Riaprire dopo un riavvio
 
-Tutti i disegni aperti, salvati o no, si riaprono al successivo avvio di Capy
-Canvas, ciascuno con la propria cronologia degli annullamenti, vista, selezione e
-ultima esportazione. Chiudere Capy Canvas non chiede di salvare.
+Tutti i disegni aperti, salvati o no, si riaprono al successivo avvio di {appName}, ciascuno con la propria cronologia degli annullamenti, vista, selezione e
+ultima esportazione. Chiudere {appName} non chiede di salvare.
 
 Nell'editor web, cancellare i dati del sito elimina i disegni non salvati.
 
-Dopo una chiusura imprevista di Capy Canvas, i disegni riaperti mostrano
+Dopo una chiusura imprevista di {appName}, i disegni riaperti mostrano
 «(recuperato)» dopo il nome finché non li salvi.
 
 ## Nuova finestra
