@@ -47,43 +47,81 @@ export const additionalDocsUI = {
     },
     "imageOpen": "Abrir captura de pantalla en tamaño completo",
     "landing": {
-      "alt": "Espacio de trabajo Paint que muestra una cinta verde azulado, un disco ocre y un bloque de terracota con sombreado texturizado.",
       "sections": {
-        "painting": {
-          "title": "pintura",
-          "text": "El motor de cepillo GPU nos permite simular la interacción entre la pintura y los medios físicos. La acuarela empapa las fibras del papel, los pinceles al óleo recogen y transmiten el color y los lápices captan la veta del papel.",
-          "link": "Herramientas de pincel"
+        "sketch": {
+          "title": "Sketch",
+          "text": "Mi primera incursión en el mundo del arte digital, como la de muchas otras personas, fue con Procreate hace más de una década. Cuando apareció el primer Apple Pencil, parecía magia. Aunque el hardware era lento para los estándares actuales, estaba tan bien hecho que daba una auténtica sensación de dibujar con un lápiz sobre papel.\n\nEra la primera vez que una aplicación de dibujo estaba totalmente optimizada para un dispositivo móvil, con seguimiento predictivo del lápiz y motores de pinceles y renderizado impulsados por la GPU. Después añadieron una interfaz limpia y minimalista, que acabó convirtiéndose en el estándar de la industria para las aplicaciones de dibujo modernas.\n\nEl espacio de trabajo Sketch es un homenaje a nuestras raíces. El lugar donde todos empezamos.",
+          "image": {
+            "shot": "showcase/sketch",
+            "alt": "Un dibujo a tinta de un tren debajo de un gran árbol en el espacio de trabajo Sketch, donde el dibujo llena la pantalla y algunas herramientas se ubican en los bordes."
+          },
+          "links": [
+            {
+              "title": "Herramientas de pincel",
+              "slug": "drawing/brush-tools"
+            },
+            {
+              "title": "Lápiz",
+              "slug": "input/pen"
+            },
+            {
+              "title": "Modo Zen",
+              "slug": "customize/zen"
+            }
+          ]
         },
-        "workspace": {
-          "title": "Tu espacio de trabajo",
-          "text": "{appName} viene con diseños familiares para dibujar, pintar y editar fotografías, y cada herramienta y panel se puede mover a donde quieras. Y si solo quieres un lienzo en blanco sin distracciones, haz clic en Carpincho para ingresar al modo Zen.",
-          "link": "Espacios de trabajo"
-        },
-        "input": {
-          "title": "Lápiz, tacto y ratón",
-          "text": "La interfaz fue diseñada para lápiz y tacto desde el principio, incluidas las tabletas Wacom, XP-Pen y Huion, así como las tabletas iPad y Galaxy. El lienzo funciona a 120 Hz completos, lo que reduce el retraso del lápiz. Y si prefieres un mouse, también funciona.",
-          "link": "Lápiz"
-        },
-        "color": {
-          "title": "Elegir colores",
-          "text": "La rueda de colores utiliza OKLCH, que se basa en cómo las personas perciben el color. Las paletas mantienen sus colores favoritos a mano y los fotógrafos pueden trabajar en una amplia gama, 16 bits y HDR, con pruebas para impresión.",
-          "link": "Panel de color"
+        "paint": {
+          "title": "Paint",
+          "text": "Cuando empiezas a trabajar en serio en cómics o manga, las herramientas sencillas ya no bastan. El relleno con lazo se convierte en tu mejor amigo y aprendes a convivir con el mal necesario de las máscaras.\n\nHay muchas herramientas para los procesos de ilustración profesional; CSP y MediBang suelen ser las primeras que se aprenden. Y son programas estupendos, fáciles de usar e intuitivos. Basta con seguir el proceso y normalmente el resultado sale bien.\n\nAunque son auténticos caballos de batalla, son lentos, hechos para una época en la que todo el renderizado y la composición se hacían en la CPU en lugar de la GPU. Por eso nunca pudieron igualar los potentes y realistas motores de pinceles de aplicaciones modernas como Fresco y Rebelle.\n\nEl espacio de trabajo Paint lleva la simulación de materiales físicos a la ilustración digital.",
+          "image": {
+            "shot": "showcase/paint",
+            "alt": "Una pintura al óleo de una casa junto al mar al atardecer en el espacio de trabajo Paint, con pinceles, colores y capas al lado del lienzo."
+          },
+          "links": [
+            {
+              "title": "Tutorial de ilustración",
+              "slug": "illustration"
+            },
+            {
+              "title": "Herramientas de relleno",
+              "slug": "drawing/fill"
+            },
+            {
+              "title": "Máscaras",
+              "slug": "layers/masks"
+            },
+            {
+              "title": "Mezcla, difusión y cerdas",
+              "slug": "brushes/wet-media"
+            }
+          ]
         },
         "photo": {
-          "title": "Editando fotos",
-          "text": "Abra fotos directamente desde su cámara o teléfono, recórtelas y retóquelas, y ajuste cualquier área con filtros que puede seguir cambiando más tarde.",
-          "link": "Tutorial de edición de fotos"
-        },
-        "native": {
-          "title": "Escritorio y tableta",
-          "text": "{appName} está en beta para Linux, Windows, macOS, Android y iPadOS. Estas son aplicaciones nativas compiladas y utilizan kits de herramientas de interfaz de usuario nativos de la plataforma. Esto significa un mejor rendimiento y duración de la batería en cada dispositivo.",
-          "link": "Arquitectura del sistema"
+          "title": "Photo",
+          "text": "Los dispositivos móviles son cada día más capaces. Parece que las pantallas OLED están por todas partes y mi viejo teléfono guarda sus imágenes en formato P3 HDR de forma predeterminada. SRGB es cosa del pasado.\n\nHasta la fecha, la única aplicación de pintura que admite correctamente HDR de amplia gama de colores es Krita. El HDR es complicado y cuesta hacerlo bien. Cuando publicas imágenes HDR y de amplia gama en internet, necesitas controlar el mapeo de ganancia para que también se vean bien en dispositivos SDR. Por supuesto, ningún editor de fotos está completo sin todas las funciones básicas: pruebas de color, cadenas de efectos y todo lo demás.\n\nEl espacio de trabajo Photo permite crear imágenes impresionantes para una nueva generación de pantallas de amplia gama de colores.",
+          "image": {
+            "shot": "showcase/photo",
+            "alt": "Una fotografía de un pequeño terrario en el espacio de trabajo Photo, con la herramienta Rango tonal lista para seleccionar por brillo y capas de ajuste de Curvas e Intensidad."
+          },
+          "links": [
+            {
+              "title": "Tutorial de edición de fotos",
+              "slug": "photo"
+            },
+            {
+              "title": "HDR",
+              "slug": "color-management/hdr"
+            },
+            {
+              "title": "Cómo se aplican los filtros",
+              "slug": "filters/how-filters-apply"
+            },
+            {
+              "title": "Prueba de color",
+              "slug": "color-management/proof"
+            }
+          ]
         }
-      },
-      "start": "{appName} puede ejecutarse completamente en su navegador web, incluso sin conexión. Esta es una manera rápida y fácil de comenzar. Las aplicaciones de escritorio y tableta, ahora en beta, ofrecen el mejor rendimiento y compatibilidad de hardware.",
-      "links": {
-        "quickstart": "Inicio rápido",
-        "illustration": "Tutorial de ilustración"
       }
     }
   },
@@ -134,43 +172,81 @@ export const additionalDocsUI = {
     },
     "imageOpen": "Abra a captura de tela em tamanho real",
     "landing": {
-      "alt": "Área de trabalho Paint mostrando uma fita azul-petróleo, disco ocre e bloco de terracota com sombreamento texturizado.",
       "sections": {
-        "painting": {
-          "title": "Pintura",
-          "text": "O mecanismo de pincel com tecnologia GPU nos permite simular a interação entre tinta e mídia física. A aquarela penetra nas fibras do papel, os pincéis de óleo captam e transportam a cor e os lápis capturam a granulação do papel.",
-          "link": "Ferramentas de pincel"
+        "sketch": {
+          "title": "Sketch",
+          "text": "Minha primeira incursão no mundo da arte digital, como a de muita gente, foi com o Procreate há mais de uma década. Quando o primeiro Apple Pencil chegou, parecia mágica. Embora o hardware fosse lento pelos padrões de hoje, era tão bem feito que dava uma sensação real de desenhar com uma caneta sobre o papel.\n\nFoi a primeira vez que um aplicativo de desenho foi totalmente otimizado para um dispositivo móvel, com rastreamento preditivo da caneta e motores de pincéis e renderização movidos pela GPU. Depois colocaram uma interface limpa e minimalista por cima, que acabou se tornando o padrão da indústria para os aplicativos de desenho modernos.\n\nO espaço de trabalho Sketch é uma homenagem às nossas raízes. O lugar onde todo mundo começa.",
+          "image": {
+            "shot": "showcase/sketch",
+            "alt": "Um desenho a tinta de um trem sob uma grande árvore na área de trabalho Sketch, onde o desenho preenche a tela e algumas ferramentas ficam nas bordas."
+          },
+          "links": [
+            {
+              "title": "Ferramentas de pincel",
+              "slug": "drawing/brush-tools"
+            },
+            {
+              "title": "Caneta",
+              "slug": "input/pen"
+            },
+            {
+              "title": "Modo Zen",
+              "slug": "customize/zen"
+            }
+          ]
         },
-        "workspace": {
-          "title": "Seu espaço de trabalho",
-          "text": "{appName} vem com layouts familiares para desenho, pintura e edição de fotos, e cada ferramenta e painel pode ser movido para onde você quiser. E se você quiser apenas uma tela em branco sem distrações, clique na Capivara para entrar no modo Zen!",
-          "link": "Áreas de trabalho"
-        },
-        "input": {
-          "title": "Caneta, toque e mouse",
-          "text": "A interface foi projetada para caneta e toque desde o início, incluindo tablets Wacom, XP-Pen e Huion, bem como tablets iPad e Galaxy. A tela funciona a 120 Hz, o que reduz o atraso da caneta. E se você preferir um mouse, também funciona.",
-          "link": "Caneta"
-        },
-        "color": {
-          "title": "Escolhendo cores",
-          "text": "A roda de cores usa OKLCH, que se baseia em como as pessoas percebem as cores. As paletas mantêm suas cores favoritas por perto e os fotógrafos podem trabalhar em ampla gama, 16 bits e HDR, com provas para impressão.",
-          "link": "Painel Cor"
+        "paint": {
+          "title": "Paint",
+          "text": "Quando você começa a trabalhar a sério com quadrinhos ou mangá, as ferramentas simples já não dão conta. O preenchimento com laço vira seu melhor amigo, e você aprende a conviver com o mal necessário das máscaras.\n\nExistem muitas ferramentas para fluxos de ilustração profissional; CSP e MediBang costumam ser as primeiras que as pessoas aprendem. E são ótimos programas, fáceis de usar e intuitivos. Basta seguir o processo, e o resultado geralmente fica bom.\n\nEmbora sejam verdadeiros cavalos de batalha, são lentos, feitos para uma época em que toda a renderização e composição aconteciam na CPU em vez da GPU. Por isso nunca conseguiram se igualar aos motores de pincéis potentes e realistas de aplicativos modernos como Fresco e Rebelle.\n\nO espaço de trabalho Paint traz a simulação de materiais físicos para a ilustração digital.",
+          "image": {
+            "shot": "showcase/paint",
+            "alt": "Pintura a óleo de uma casa à beira-mar ao pôr do sol na área de trabalho Paint, com pincéis, cores e camadas ao lado da tela."
+          },
+          "links": [
+            {
+              "title": "Tutorial de ilustração",
+              "slug": "illustration"
+            },
+            {
+              "title": "Ferramentas de preenchimento",
+              "slug": "drawing/fill"
+            },
+            {
+              "title": "Máscaras",
+              "slug": "layers/masks"
+            },
+            {
+              "title": "Mistura, espalhamento e cerdas",
+              "slug": "brushes/wet-media"
+            }
+          ]
         },
         "photo": {
-          "title": "Editando fotos",
-          "text": "Abra fotos diretamente de sua câmera ou telefone, recorte-as e retoque-as, e ajuste qualquer área com filtros que você pode alterar posteriormente.",
-          "link": "Tutorial de edição de fotos"
-        },
-        "native": {
-          "title": "Computador de mesa e tablet",
-          "text": "{appName} está em beta para Linux, Windows, macOS, Android e iPadOS. Esses são aplicativos nativos compilados e usam kits de ferramentas de UI nativos da plataforma. Isso significa melhor desempenho e duração da bateria em todos os dispositivos.",
-          "link": "Arquitetura do sistema"
+          "title": "Photo",
+          "text": "Os dispositivos móveis ficam mais capazes a cada dia. Parece que telas OLED estão por toda parte, e meu celular antigo salva suas imagens em P3 HDR por padrão. SRGB é coisa do passado.\n\nAté hoje, o único aplicativo de pintura que suporta corretamente HDR com ampla gama de cores é o Krita. HDR é complicado e difícil de fazer direito. Quando você publica imagens HDR e de ampla gama na internet, precisa controlar o mapeamento de ganho para que elas também fiquem boas em dispositivos SDR. Claro que nenhum editor de fotos está completo sem todas as funções básicas: prova de cores, cadeias de efeitos e todo o resto.\n\nO espaço de trabalho Photo permite criar imagens impressionantes para uma nova geração de telas de ampla gama de cores.",
+          "image": {
+            "shot": "showcase/photo",
+            "alt": "Uma fotografia de um pequeno terrário na área de trabalho Photo, com a ferramenta Faixa tonal pronta para selecionar por brilho e camadas de ajuste de Curvas e Vibração."
+          },
+          "links": [
+            {
+              "title": "Tutorial de edição de fotos",
+              "slug": "photo"
+            },
+            {
+              "title": "HDR",
+              "slug": "color-management/hdr"
+            },
+            {
+              "title": "Como os filtros se aplicam",
+              "slug": "filters/how-filters-apply"
+            },
+            {
+              "title": "Prova",
+              "slug": "color-management/proof"
+            }
+          ]
         }
-      },
-      "start": "{appName} pode ser executado inteiramente em seu navegador, mesmo offline. Esta é uma maneira rápida e fácil de começar. Os aplicativos para desktop e tablet, agora em beta, oferecem o melhor desempenho e compatibilidade de hardware.",
-      "links": {
-        "quickstart": "Início rápido",
-        "illustration": "Tutorial de ilustração"
       }
     }
   },
@@ -221,43 +297,81 @@ export const additionalDocsUI = {
     },
     "imageOpen": "Buka tangkapan layar ukuran penuh",
     "landing": {
-      "alt": "Ruang kerja Paint menampilkan pita teal, cakram oker, dan balok terakota dengan bayangan bertekstur.",
       "sections": {
-        "painting": {
-          "title": "Lukisan",
-          "text": "Mesin kuas bertenaga GPU memungkinkan kita mensimulasikan interaksi antara cat dan media fisik. Cat air meresap ke dalam serat kertas, kuas minyak mengambil dan membawa warna, dan pensil menangkap butiran kertas.",
-          "link": "Alat kuas"
+        "sketch": {
+          "title": "Sketch",
+          "text": "Seperti banyak orang lain, saya pertama kali memasuki dunia seni digital lewat Procreate lebih dari satu dekade lalu. Saat Apple Pencil pertama kali hadir, rasanya seperti sihir. Meski perangkat kerasnya lambat menurut standar sekarang, semuanya dibuat begitu baik sehingga benar-benar terasa seperti menggambar dengan pena di atas kertas.\n\nUntuk pertama kalinya, aplikasi menggambar dioptimalkan sepenuhnya untuk perangkat seluler, dengan pelacakan gerakan pena secara prediktif serta mesin kuas dan rendering bertenaga GPU. Lalu mereka menambahkan antarmuka yang bersih dan minimalis, yang kemudian menjadi standar industri bagi aplikasi menggambar modern.\n\nRuang kerja Sketch adalah penghormatan untuk akar kami. Tempat semua orang memulai.",
+          "image": {
+            "shot": "showcase/sketch",
+            "alt": "Gambar tinta kereta api di bawah pohon besar di ruang kerja Sketch, tempat gambar memenuhi layar dan beberapa alat berada di tepinya."
+          },
+          "links": [
+            {
+              "title": "Alat kuas",
+              "slug": "drawing/brush-tools"
+            },
+            {
+              "title": "Pena",
+              "slug": "input/pen"
+            },
+            {
+              "title": "Mode Zen",
+              "slug": "customize/zen"
+            }
+          ]
         },
-        "workspace": {
-          "title": "Ruang kerja Anda",
-          "text": "{appName} hadir dengan tata letak yang familier untuk membuat sketsa, melukis, dan mengedit foto, dan setiap alat dan panel dapat dipindahkan ke mana pun Anda suka. Dan jika Anda hanya ingin kanvas kosong tanpa gangguan, klik Capybara untuk masuk ke mode Zen!",
-          "link": "Ruang kerja"
-        },
-        "input": {
-          "title": "Pena, sentuhan, dan mouse",
-          "text": "Antarmukanya dirancang untuk pena dan sentuhan sejak awal, termasuk tablet Wacom, XP-Pen dan Huion serta tablet iPad dan Galaxy. Kanvas berjalan pada 120 Hz penuh, yang mengurangi jeda pena. Dan jika Anda lebih suka mouse, itu juga bisa digunakan.",
-          "link": "Pena"
-        },
-        "color": {
-          "title": "Memilih warna",
-          "text": "Roda warna menggunakan OKLCH, yang didasarkan pada cara orang memandang warna. Palet menyimpan warna favorit Anda, dan fotografer dapat bekerja dalam gamut lebar, 16-bit dan HDR, dengan pemeriksaan untuk pencetakan.",
-          "link": "Panel Warna"
+        "paint": {
+          "title": "Paint",
+          "text": "Saat mulai serius mengerjakan komik atau manga, alat sederhana tidak lagi cukup. Isian laso menjadi sahabat terbaik, dan Anda belajar menerima masker sebagai sesuatu yang merepotkan tetapi diperlukan.\n\nAda banyak alat untuk alur kerja ilustrasi profesional; CSP dan MediBang sering menjadi yang pertama dipelajari. Keduanya perangkat lunak yang bagus, mudah dipakai, dan intuitif. Cukup ikuti prosesnya, dan hasilnya biasanya baik.\n\nMeski benar-benar andal untuk bekerja, keduanya lambat, dibuat pada masa ketika semua rendering dan pengomposisian dilakukan di CPU, bukan GPU. Karena itu, keduanya tidak pernah mampu menyamai mesin kuas yang kuat dan realistis dalam aplikasi modern seperti Fresco dan Rebelle.\n\nRuang kerja Paint menghadirkan simulasi bahan lukis fisik ke dalam ilustrasi digital.",
+          "image": {
+            "shot": "showcase/paint",
+            "alt": "Lukisan cat minyak sebuah rumah di tepi laut saat matahari terbenam di ruang kerja Paint, dengan kuas, warna, dan lapisan di samping kanvas."
+          },
+          "links": [
+            {
+              "title": "Tutorial ilustrasi",
+              "slug": "illustration"
+            },
+            {
+              "title": "Alat isi",
+              "slug": "drawing/fill"
+            },
+            {
+              "title": "Mask",
+              "slug": "layers/masks"
+            },
+            {
+              "title": "Pencampuran, rembesan, dan bulu kuas",
+              "slug": "brushes/wet-media"
+            }
+          ]
         },
         "photo": {
-          "title": "Mengedit foto",
-          "text": "Buka foto langsung dari kamera atau ponsel Anda, pangkas dan retus foto itu, lalu sesuaikan area mana pun dengan filter yang dapat terus Anda ubah nanti.",
-          "link": "Tutorial pengeditan foto"
-        },
-        "native": {
-          "title": "Desktop dan tablet",
-          "text": "{appName} dalam tahap beta untuk Linux, Windows, macOS, Android dan iPadOS. Ini adalah aplikasi asli yang dikompilasi dan menggunakan perangkat UI asli platform. Ini berarti kinerja dan masa pakai baterai yang lebih baik di setiap perangkat.",
-          "link": "Arsitektur sistem"
+          "title": "Photo",
+          "text": "Perangkat seluler makin mampu melakukan banyak hal setiap hari. Layar OLED tampaknya ada di mana-mana, dan ponsel lama saya menyimpan gambar dalam format P3 HDR secara bawaan. SRGB sudah menjadi masa lalu.\n\nHingga kini, satu-satunya aplikasi melukis yang mendukung HDR bergamut luas dengan benar adalah Krita. HDR rumit dan sulit ditangani dengan baik. Saat menerbitkan gambar HDR dan bergamut luas di internet, Anda perlu mengendalikan pemetaan gain agar gambar tetap terlihat bagus di perangkat SDR. Tentu saja, editor foto belum lengkap tanpa semua fungsi dasar: proofing, rantai efek, dan segala sisanya.\n\nRuang kerja Photo memungkinkan visual yang memukau untuk generasi baru layar bergamut luas.",
+          "image": {
+            "shot": "showcase/photo",
+            "alt": "Foto terarium kecil di ruang kerja Photo, dengan alat rentang Tonal yang siap dipilih berdasarkan kecerahan, serta lapisan penyesuaian Curves dan Vibrance."
+          },
+          "links": [
+            {
+              "title": "Tutorial pengeditan foto",
+              "slug": "photo"
+            },
+            {
+              "title": "HDR",
+              "slug": "color-management/hdr"
+            },
+            {
+              "title": "Cara filter diterapkan",
+              "slug": "filters/how-filters-apply"
+            },
+            {
+              "title": "Simulasi Cetak",
+              "slug": "color-management/proof"
+            }
+          ]
         }
-      },
-      "start": "{appName} dapat berjalan sepenuhnya di browser web Anda, bahkan offline. Ini adalah cara cepat dan mudah untuk memulai. Aplikasi desktop dan tablet, yang kini dalam tahap beta, menawarkan kinerja dan kompatibilitas perangkat keras terbaik.",
-      "links": {
-        "quickstart": "Mulai cepat",
-        "illustration": "Tutorial ilustrasi"
       }
     }
   },
@@ -308,43 +422,81 @@ export const additionalDocsUI = {
     },
     "imageOpen": "Ouvrir la capture d'écran en taille réelle",
     "landing": {
-      "alt": "Espace de travail Paint montrant un ruban bleu sarcelle, un disque ocre et un bloc en terre cuite avec un ombrage texturé.",
       "sections": {
-        "painting": {
-          "title": "Peinture",
-          "text": "Le moteur de pinceaux alimenté par GPU nous permet de simuler l'interaction entre la peinture et les supports physiques. L’aquarelle pénètre dans les fibres du papier, les pinceaux à huile captent et transportent la couleur et les crayons captent le grain du papier.",
-          "link": "Outils de pinceau"
+        "sketch": {
+          "title": "Sketch",
+          "text": "Comme beaucoup d’autres, j’ai fait mes premiers pas dans l’art numérique avec Procreate, il y a plus de dix ans. À la sortie du premier Apple Pencil, c’était magique. Même si le matériel était lent selon les critères d’aujourd’hui, l’ensemble était si bien conçu qu’on avait vraiment l’impression de dessiner au stylo sur du papier.\n\nPour la première fois, une application de dessin était entièrement optimisée pour un appareil mobile, avec un suivi prédictif du stylet et des moteurs de pinceaux et de rendu fonctionnant sur le GPU. Ils y ont ensuite ajouté une interface épurée et minimaliste, qui est devenue la norme du secteur pour les applications de dessin modernes.\n\nL’espace de travail Sketch rend hommage à nos racines. C’est là que tout le monde commence.",
+          "image": {
+            "shot": "showcase/sketch",
+            "alt": "Un dessin à l'encre d'un train sous un grand arbre dans l'espace de travail Sketch, où le dessin remplit l'écran et quelques outils se trouvent sur les bords."
+          },
+          "links": [
+            {
+              "title": "Outils de pinceau",
+              "slug": "drawing/brush-tools"
+            },
+            {
+              "title": "Stylet",
+              "slug": "input/pen"
+            },
+            {
+              "title": "Mode Zen",
+              "slug": "customize/zen"
+            }
+          ]
         },
-        "workspace": {
-          "title": "Votre espace de travail",
-          "text": "Le {appName} est livré avec des dispositions familières pour le dessin, la peinture et l'édition de photos, et chaque outil et panneau peut être déplacé où vous le souhaitez. Et si vous voulez juste une toile vierge sans distractions, cliquez sur le Capybara pour passer en mode Zen !",
-          "link": "Espaces de travail"
-        },
-        "input": {
-          "title": "Stylet, toucher et souris",
-          "text": "L'interface a été conçue dès le départ pour le stylet et le toucher, notamment les tablettes Wacom, XP-Pen et Huion ainsi que les tablettes iPad et Galaxy. La toile fonctionne à une fréquence complète de 120 Hz, ce qui réduit le décalage du stylet. Et si vous préférez une souris, cela fonctionne aussi.",
-          "link": "Stylet"
-        },
-        "color": {
-          "title": "Choisir les couleurs",
-          "text": "La roue chromatique utilise OKLCH, qui est basée sur la façon dont les gens perçoivent la couleur. Les palettes gardent vos couleurs préférées à portée de main et les photographes peuvent travailler dans une large gamme, 16 bits et HDR, avec une épreuve pour l'impression.",
-          "link": "Panneau Couleur"
+        "paint": {
+          "title": "Paint",
+          "text": "Quand on se met sérieusement à la bande dessinée ou au manga, les outils simples ne suffisent plus. Le remplissage au lasso devient votre meilleur ami, et vous apprenez à vivre avec les masques, ce mal nécessaire.\n\nIl existe de nombreux outils pour les méthodes de travail de l’illustration professionnelle ; CSP et MediBang sont souvent les premiers qu’on apprend à utiliser. Ce sont d’excellents logiciels, faciles à utiliser et intuitifs. Il suffit de suivre le processus, et le résultat est généralement satisfaisant.\n\nMême s’ils sont de véritables bêtes de somme, ils sont lents, conçus à une époque où le rendu et la composition se faisaient entièrement sur le CPU plutôt que sur le GPU. Ils n’ont donc jamais pu égaler les moteurs de pinceaux puissants et réalistes d’applications modernes comme Fresco et Rebelle.\n\nL’espace de travail Paint apporte la simulation des matériaux traditionnels à l’illustration numérique.",
+          "image": {
+            "shot": "showcase/paint",
+            "alt": "Une peinture à l'huile d'une maison au bord de la mer au coucher du soleil dans l'espace de travail Paint, avec des pinceaux, des couleurs et des calques à côté de la toile."
+          },
+          "links": [
+            {
+              "title": "Tutoriel d’illustration",
+              "slug": "illustration"
+            },
+            {
+              "title": "Outils de remplissage",
+              "slug": "drawing/fill"
+            },
+            {
+              "title": "Masques",
+              "slug": "layers/masks"
+            },
+            {
+              "title": "Mélange, diffusion et soies",
+              "slug": "brushes/wet-media"
+            }
+          ]
         },
         "photo": {
-          "title": "Retouche de photos",
-          "text": "Ouvrez des photos directement depuis votre appareil photo ou votre téléphone, recadrez-les et retouchez-les, et ajustez n'importe quelle zone avec des filtres que vous pourrez continuer à modifier plus tard.",
-          "link": "Tutoriel de retouche photo"
-        },
-        "native": {
-          "title": "Ordinateur de bureau et tablette",
-          "text": "{appName} est en version bêta pour Linux, Windows, macOS, Android et iPadOS. Il s'agit d'applications natives compilées et utilisant des boîtes à outils d'interface utilisateur natives de la plate-forme. Cela signifie de meilleures performances et une meilleure durée de vie de la batterie sur chaque appareil.",
-          "link": "Architecture du système"
+          "title": "Photo",
+          "text": "Les appareils mobiles sont chaque jour plus capables. Les écrans OLED semblent être partout, et mon vieux téléphone enregistre ses images au format P3 HDR par défaut. Le SRGB appartient au passé.\n\nÀ ce jour, la seule application de peinture qui prend correctement en charge le HDR à large gamut est Krita. Le HDR est complexe et difficile à maîtriser. Quand vous publiez des images HDR et à large gamut en ligne, vous devez contrôler le mappage de gain pour qu’elles restent agréables à regarder sur les appareils SDR. Bien sûr, aucun éditeur photo n’est complet sans toutes les fonctions de base : épreuvage, chaînes d’effets et tout le reste.\n\nL’espace de travail Photo permet de créer des images saisissantes pour une nouvelle génération d’écrans à large gamut.",
+          "image": {
+            "shot": "showcase/photo",
+            "alt": "Une photographie d'un petit terrarium dans l'espace de travail Photo, avec l'outil Plage de tons prêt à sélectionner par luminosité et les calques de réglage Courbes et Vibrance."
+          },
+          "links": [
+            {
+              "title": "Tutoriel de retouche photo",
+              "slug": "photo"
+            },
+            {
+              "title": "HDR",
+              "slug": "color-management/hdr"
+            },
+            {
+              "title": "Application des filtres",
+              "slug": "filters/how-filters-apply"
+            },
+            {
+              "title": "Épreuvage",
+              "slug": "color-management/proof"
+            }
+          ]
         }
-      },
-      "start": "{appName} peut fonctionner entièrement dans votre navigateur Web, même hors ligne. Il s’agit d’un moyen simple et rapide de commencer. Les applications pour ordinateur et tablette, désormais en bêta, offrent les meilleures performances et compatibilité matérielle.",
-      "links": {
-        "quickstart": "Prise en main",
-        "illustration": "Tutoriel d’illustration"
       }
     }
   },
@@ -395,43 +547,81 @@ export const additionalDocsUI = {
     },
     "imageOpen": "Öffnen Sie den Screenshot in voller Größe",
     "landing": {
-      "alt": "Paint-Arbeitsbereich mit einem blaugrünen Band, einer ockerfarbenen Scheibe und einem Terrakottablock mit strukturierter Schattierung.",
       "sections": {
-        "painting": {
-          "title": "Malerei",
-          "text": "Mit der von GPU angetriebenen Pinsel-Engine können wir die Interaktion zwischen Farbe und physischen Medien simulieren. Wasserfarbe dringt in die Fasern des Papiers ein, Ölpinsel nehmen Farbe auf und tragen sie und Bleistifte fangen die Maserung des Papiers ein.",
-          "link": "Pinselwerkzeuge"
+        "sketch": {
+          "title": "Sketch",
+          "text": "Mein erster Ausflug in die Welt der digitalen Kunst war, wie bei vielen anderen, vor über zehn Jahren mit Procreate. Als der erste Apple Pencil erschien, war es magisch. Auch wenn die Hardware nach heutigen Maßstäben langsam war, war alles so gut umgesetzt, dass es sich wirklich wie Zeichnen mit einem Stift auf Papier anfühlte.\n\nZum ersten Mal war eine Zeichen-App vollständig für ein mobiles Gerät optimiert, mit vorausschauender Stiftverfolgung und GPU-betriebenen Pinsel- und Rendering-Engines. Darüber legten sie dann eine klare, minimalistische Oberfläche, die später zum Branchenstandard für moderne Zeichen-Apps wurde.\n\nDer Arbeitsbereich Sketch ist eine Hommage an unsere Wurzeln. Der Ort, an dem alle anfangen.",
+          "image": {
+            "shot": "showcase/sketch",
+            "alt": "Eine Tuschezeichnung eines Zuges unter einem großen Baum im Sketch-Arbeitsbereich, wobei die Zeichnung den Bildschirm ausfüllt und an den Rändern einige Werkzeuge sitzen."
+          },
+          "links": [
+            {
+              "title": "Pinselwerkzeuge",
+              "slug": "drawing/brush-tools"
+            },
+            {
+              "title": "Stift",
+              "slug": "input/pen"
+            },
+            {
+              "title": "Zen-Modus",
+              "slug": "customize/zen"
+            }
+          ]
         },
-        "workspace": {
-          "title": "Ihr Arbeitsbereich",
-          "text": "{appName} verfügt über vertraute Layouts zum Skizzieren, Malen und Bearbeiten von Fotos, und jedes Werkzeug und Bedienfeld kann an jeden beliebigen Ort verschoben werden. Und wenn Sie einfach nur eine leere Leinwand ohne Ablenkungen haben möchten, klicken Sie auf das Capybara, um in den Zen-Modus zu wechseln!",
-          "link": "Arbeitsbereiche"
-        },
-        "input": {
-          "title": "Stift, Touch und Maus",
-          "text": "Die Benutzeroberfläche wurde von Anfang an für Stift und Touch konzipiert, darunter die Tablets Wacom, XP-Pen und Huion sowie die Tablets iPad und Galaxy. Die Leinwand läuft mit vollen 120 Hz, was die Stiftverzögerung reduziert. Und wenn Sie eine Maus bevorzugen, funktioniert das auch.",
-          "link": "Stift"
-        },
-        "color": {
-          "title": "Farben auswählen",
-          "text": "Das Farbrad verwendet OKLCH, das darauf basiert, wie Menschen Farben wahrnehmen. Paletten halten Ihre Lieblingsfarben immer griffbereit und Fotografen können im breiten Farbraum, 16 Bit und HDR arbeiten, mit Proofing für den Druck.",
-          "link": "Bedienfeld Farbe"
+        "paint": {
+          "title": "Paint",
+          "text": "Sobald man ernsthaft an Comics oder Manga arbeitet, reichen einfache Werkzeuge nicht mehr aus. Die Lasso-Füllung wird zum besten Freund, und man lernt, mit dem notwendigen Übel der Masken zu leben.\n\nEs gibt viele Werkzeuge für professionelle Illustrationsabläufe; CSP und MediBang sind oft die ersten, die man kennenlernt. Und sie sind großartige, leicht bedienbare und intuitive Programme. Man muss nur dem Ablauf folgen, dann wird das Ergebnis meistens gut.\n\nObwohl sie echte Arbeitstiere sind, sind sie langsam und für eine Zeit gebaut, in der Rendering und Compositing vollständig auf der CPU statt auf der GPU liefen. Deshalb konnten sie nie mit den leistungsfähigen, realistischen Pinsel-Engines moderner Apps wie Fresco und Rebelle mithalten.\n\nDer Arbeitsbereich Paint bringt die Simulation echter Malmaterialien in die digitale Illustration.",
+          "image": {
+            "shot": "showcase/paint",
+            "alt": "Ein Ölgemälde eines Hauses am Meer bei Sonnenuntergang im Paint-Arbeitsbereich, mit Pinseln, Farben und Ebenen neben der Leinwand."
+          },
+          "links": [
+            {
+              "title": "Illustrations-Tutorial",
+              "slug": "illustration"
+            },
+            {
+              "title": "Füllwerkzeuge",
+              "slug": "drawing/fill"
+            },
+            {
+              "title": "Masken",
+              "slug": "layers/masks"
+            },
+            {
+              "title": "Mischen, Farbausbreitung und Borsten",
+              "slug": "brushes/wet-media"
+            }
+          ]
         },
         "photo": {
-          "title": "Fotos bearbeiten",
-          "text": "Öffnen Sie Fotos direkt von Ihrer Kamera oder Ihrem Telefon, schneiden Sie sie zu, retuschieren Sie sie und passen Sie beliebige Bereiche mit Filtern an, die Sie später immer wieder ändern können.",
-          "link": "Tutorial zur Fotobearbeitung"
-        },
-        "native": {
-          "title": "Desktop und Tablet",
-          "text": "{appName} ist für Linux, Windows, macOS, Android und iPadOS als Beta verfügbar. Hierbei handelt es sich um kompilierte native Apps, die plattformnative UI-Toolkits verwenden. Das bedeutet eine bessere Leistung und Akkulaufzeit auf jedem Gerät.",
-          "link": "Systemarchitektur"
+          "title": "Photo",
+          "text": "Mobile Geräte werden jeden Tag leistungsfähiger. OLED-Bildschirme scheinen überall zu sein, und mein altes Handy speichert seine Bilder standardmäßig im P3-HDR-Format. SRGB gehört der Vergangenheit an.\n\nBis heute ist Krita die einzige Mal-App, die HDR mit großem Farbumfang richtig unterstützt. HDR ist kompliziert und schwer richtig umzusetzen. Wenn man HDR-Bilder und Bilder mit großem Farbumfang online veröffentlicht, muss man das Gain-Mapping steuern können, damit sie auch auf SDR-Geräten gut aussehen. Natürlich ist kein Fotoeditor ohne sämtliche Grundfunktionen vollständig: Softproof, Effektketten und alles, was dazugehört.\n\nDer Arbeitsbereich Photo ermöglicht beeindruckende Bilder für eine neue Generation von Bildschirmen mit großem Farbumfang.",
+          "image": {
+            "shot": "showcase/photo",
+            "alt": "Ein Foto eines kleinen Terrariums im Photo-Arbeitsbereich, mit dem Tonwertbereich-Werkzeug zur Auswahl nach Helligkeit und den Einstellungsebenen „Kurven“ und „Vibranz“."
+          },
+          "links": [
+            {
+              "title": "Tutorial zur Fotobearbeitung",
+              "slug": "photo"
+            },
+            {
+              "title": "HDR",
+              "slug": "color-management/hdr"
+            },
+            {
+              "title": "Wie Filter wirken",
+              "slug": "filters/how-filters-apply"
+            },
+            {
+              "title": "Softproof",
+              "slug": "color-management/proof"
+            }
+          ]
         }
-      },
-      "start": "{appName} kann vollständig in Ihrem Webbrowser ausgeführt werden, sogar offline. Dies ist ein schneller und einfacher Einstieg. Die Desktop- und Tablet-Apps sind jetzt als Beta verfügbar und bieten die beste Leistung und Hardwarekompatibilität.",
-      "links": {
-        "quickstart": "Schnellstart",
-        "illustration": "Illustrations-Tutorial"
       }
     }
   },
@@ -482,43 +672,81 @@ export const additionalDocsUI = {
     },
     "imageOpen": "Открыть полноразмерный скриншот",
     "landing": {
-      "alt": "Рабочее пространство Paint: бирюзовая лента, диск охры и терракотовый блок с текстурированной штриховкой.",
       "sections": {
-        "painting": {
-          "title": "Живопись",
-          "text": "Кисть на базе GPU позволяет моделировать взаимодействие краски с физическим носителем. Акварель впитывается в волокна бумаги, масляные кисти захватывают и переносят цвет, а карандаши улавливают волокна бумаги.",
-          "link": "Кистевые инструменты"
+        "sketch": {
+          "title": "Sketch",
+          "text": "Моё первое знакомство с миром цифрового искусства, как и у многих других, началось с Procreate больше десяти лет назад. Когда появился первый Apple Pencil, это было похоже на магию. Хотя по нынешним меркам устройство было медленным, всё было сделано настолько хорошо, что рисование действительно ощущалось как работа ручкой по бумаге.\n\nВпервые приложение для рисования было полностью оптимизировано для мобильного устройства: с предсказанием движения пера и движками кистей и рендеринга на GPU. Затем к этому добавили чистый, минималистичный интерфейс, который стал отраслевым стандартом для современных приложений для рисования.\n\nРабочее пространство Sketch — дань нашим истокам. Место, с которого начинают все.",
+          "image": {
+            "shot": "showcase/sketch",
+            "alt": "Чернильный рисунок поезда под большим деревом в рабочем пространстве Sketch, где рисунок заполняет экран, а по краям расположено несколько инструментов."
+          },
+          "links": [
+            {
+              "title": "Кистевые инструменты",
+              "slug": "drawing/brush-tools"
+            },
+            {
+              "title": "Перо",
+              "slug": "input/pen"
+            },
+            {
+              "title": "Режим дзен",
+              "slug": "customize/zen"
+            }
+          ]
         },
-        "workspace": {
-          "title": "Ваше рабочее пространство",
-          "text": "{appName} поставляется со знакомыми макетами для создания эскизов, рисования и редактирования фотографий, а каждый инструмент и панель можно перемещать куда угодно. А если вам просто нужен чистый холст, не отвлекающий вас, щелкните Капибару, чтобы войти в режим Zen!",
-          "link": "Рабочие пространства"
-        },
-        "input": {
-          "title": "Перо, сенсорный экран и мышь",
-          "text": "Интерфейс с самого начала был разработан для перьевого и сенсорного ввода, включая планшеты Wacom, XP-Pen и Huion, а также планшеты iPad и Galaxy. Холст работает с частотой 120 Гц, что уменьшает задержку пера. А если вы предпочитаете мышь, это тоже подойдет.",
-          "link": "Перо"
-        },
-        "color": {
-          "title": "Выбор цвета",
-          "text": "Цветовой круг использует OKLCH, который основан на том, как люди воспринимают цвет. Палитры сохраняют ваши любимые цвета под рукой, а фотографы могут работать в широкой гамме, 16-битной и HDR, с пробами для печати.",
-          "link": "Панель «Цвет»"
+        "paint": {
+          "title": "Paint",
+          "text": "Когда начинаешь всерьёз работать над комиксами или мангой, простых инструментов уже не хватает. Заливка лассо становится лучшим другом, и приходится учиться жить с необходимым злом — масками.\n\nДля профессиональной иллюстрации есть множество инструментов; часто первыми осваивают CSP и MediBang. Это отличные, простые в использовании и понятные программы. Достаточно следовать процессу, и результат обычно получается хорошим.\n\nХотя это настоящие рабочие лошадки, они медленные и созданы для эпохи, когда весь рендеринг и композитинг выполнялись на CPU, а не на GPU. Поэтому они так и не смогли сравниться с мощными, реалистичными движками кистей в современных приложениях вроде Fresco и Rebelle.\n\nРабочее пространство Paint привносит симуляцию настоящих художественных материалов в цифровую иллюстрацию.",
+          "image": {
+            "shot": "showcase/paint",
+            "alt": "Картина маслом дома у моря на закате в рабочем пространстве Paint, с кистями, цветами и слоями рядом с холстом."
+          },
+          "links": [
+            {
+              "title": "Урок по иллюстрации",
+              "slug": "illustration"
+            },
+            {
+              "title": "Инструменты заливки",
+              "slug": "drawing/fill"
+            },
+            {
+              "title": "Маски",
+              "slug": "layers/masks"
+            },
+            {
+              "title": "Смешивание, растекание и щетина",
+              "slug": "brushes/wet-media"
+            }
+          ]
         },
         "photo": {
-          "title": "Редактирование фотографий",
-          "text": "Открывайте фотографии прямо с камеры или телефона, обрезайте и ретушируйте их и настраивайте любую область с помощью фильтров, которые вы сможете изменить позже.",
-          "link": "Урок по обработке фотографий"
-        },
-        "native": {
-          "title": "Рабочий стол и планшет",
-          "text": "{appName} доступен в бета-версии для Linux, Windows, macOS, Android и iPadOS. Это скомпилированные собственные приложения, в которых используются собственные наборы инструментов пользовательского интерфейса. Это означает лучшую производительность и время автономной работы на каждом устройстве.",
-          "link": "Архитектура системы"
+          "title": "Photo",
+          "text": "Мобильные устройства с каждым днём умеют всё больше. Кажется, OLED-экраны уже повсюду, а мой старый телефон по умолчанию сохраняет изображения в формате P3 HDR. SRGB остался в прошлом.\n\nНа сегодняшний день единственное приложение для рисования с полноценной поддержкой широкого цветового охвата и HDR — Krita. HDR сложен, и реализовать его правильно непросто. Когда публикуешь HDR-изображения и изображения с широким цветовым охватом в интернете, нужно управлять картой усиления, чтобы они хорошо выглядели и на SDR-устройствах. Конечно, ни один фоторедактор не будет полноценным без всех базовых возможностей: цветопробы, цепочек эффектов и всего остального.\n\nРабочее пространство Photo позволяет создавать впечатляющие изображения для нового поколения экранов с широким цветовым охватом.",
+          "image": {
+            "shot": "showcase/photo",
+            "alt": "Фотография небольшого террариума в рабочей области Photo с инструментом «Тональный диапазон», готовым к выбору по яркости, а также корректирующими слоями «Кривые» и «Вибрация»."
+          },
+          "links": [
+            {
+              "title": "Урок по обработке фотографий",
+              "slug": "photo"
+            },
+            {
+              "title": "HDR",
+              "slug": "color-management/hdr"
+            },
+            {
+              "title": "Как применяются фильтры",
+              "slug": "filters/how-filters-apply"
+            },
+            {
+              "title": "Цветопроба",
+              "slug": "color-management/proof"
+            }
+          ]
         }
-      },
-      "start": "{appName} может работать полностью в вашем веб-браузере, даже в автономном режиме. Это быстрый и простой способ начать работу. Приложения для компьютеров и планшетов, уже доступные в бета-версии, обеспечивают наилучшую производительность и совместимость с оборудованием.",
-      "links": {
-        "quickstart": "Быстрый старт",
-        "illustration": "Урок по иллюстрации"
       }
     }
   },
@@ -569,43 +797,81 @@ export const additionalDocsUI = {
     },
     "imageOpen": "เปิดภาพหน้าจอขนาดเต็ม",
     "landing": {
-      "alt": "พื้นที่ทำงาน Paint แสดงริบบิ้นสีน้ำเงินอมเขียว แผ่นดิสก์สีเหลือง และบล็อกดินเผาพร้อมแรเงาพื้นผิว",
       "sections": {
-        "painting": {
-          "title": "จิตรกรรม",
-          "text": "เครื่องยนต์แปรงที่ขับเคลื่อนด้วย GPU ช่วยให้เราจำลองปฏิสัมพันธ์ระหว่างสีและสื่อทางกายภาพได้ สีน้ำซึมเข้าไปในเส้นใยของกระดาษ แปรงน้ำมันจะดึงและพกพาสี และดินสอจะจับเนื้อกระดาษ",
-          "link": "เครื่องมือพู่กัน"
+        "sketch": {
+          "title": "Sketch",
+          "text": "ฉันเริ่มก้าวเข้าสู่โลกศิลปะดิจิทัลครั้งแรกด้วย Procreate เมื่อกว่าสิบปีก่อน เช่นเดียวกับอีกหลายคน ตอนที่ Apple Pencil รุ่นแรกออกมา มันเหมือนเวทมนตร์เลย แม้ฮาร์ดแวร์จะช้าเมื่อเทียบกับมาตรฐานปัจจุบัน แต่ทุกอย่างทำมาได้ดีจนให้ความรู้สึกเหมือนใช้ปากกาวาดบนกระดาษจริง ๆ\n\nนี่เป็นครั้งแรกที่แอปวาดภาพได้รับการปรับให้เหมาะกับอุปกรณ์พกพาอย่างเต็มที่ โดยใช้การติดตามปากกาแบบคาดการณ์ล่วงหน้าและเอนจินแปรงกับการเรนเดอร์ที่ทำงานบน GPU จากนั้นก็เพิ่มหน้าตาที่สะอาดและเรียบง่าย ซึ่งต่อมากลายเป็นมาตรฐานของอุตสาหกรรมสำหรับแอปวาดภาพสมัยใหม่\n\nพื้นที่ทำงาน Sketch คือการคารวะต่อจุดเริ่มต้นของเรา เป็นที่ที่ทุกคนเริ่มต้นวาดภาพ",
+          "image": {
+            "shot": "showcase/sketch",
+            "alt": "ภาพวาดหมึกของรถไฟใต้ต้นไม้ใหญ่ในพื้นที่ทำงาน Sketch โดยที่ภาพวาดนั้นเต็มหน้าจอและมีเครื่องมือสองสามชิ้นอยู่ที่ขอบ"
+          },
+          "links": [
+            {
+              "title": "เครื่องมือพู่กัน",
+              "slug": "drawing/brush-tools"
+            },
+            {
+              "title": "ปากกา",
+              "slug": "input/pen"
+            },
+            {
+              "title": "โหมดเซน",
+              "slug": "customize/zen"
+            }
+          ]
         },
-        "workspace": {
-          "title": "พื้นที่ทำงานของคุณ",
-          "text": "{appName} มาพร้อมกับเลย์เอาต์ที่คุ้นเคยสำหรับการสเก็ตช์ภาพ การลงสี และการแก้ไขภาพถ่าย โดยสามารถเคลื่อนย้ายเครื่องมือและแผงควบคุมทุกอย่างไปได้ทุกที่ที่คุณต้องการ และหากคุณต้องการเพียงผืนผ้าใบเปล่าๆ ที่ไม่มีสิ่งรบกวน ให้คลิกที่ Capybara เพื่อเข้าสู่โหมด Zen!",
-          "link": "พื้นที่ทำงาน"
-        },
-        "input": {
-          "title": "ปากกา ระบบสัมผัส และเมาส์",
-          "text": "อินเทอร์เฟซได้รับการออกแบบมาสำหรับปากกาและระบบสัมผัสตั้งแต่เริ่มต้น รวมถึงแท็บเล็ต Wacom, XP-Pen และ Huion รวมถึงแท็บเล็ต iPad และ Galaxy ผ้าใบทำงานเต็ม 120 Hz ซึ่งช่วยลดความล่าช้าของปากกา และถ้าคุณชอบเมาส์ มันก็ใช้ได้ดีเช่นกัน",
-          "link": "ปากกา"
-        },
-        "color": {
-          "title": "การเลือกสี",
-          "text": "วงล้อสีใช้ OKLCH ซึ่งขึ้นอยู่กับวิธีที่ผู้คนรับรู้สี จานสีจะเก็บสีโปรดของคุณไว้ใกล้ตัว และช่างภาพสามารถทำงานได้ในช่วงสีกว้าง 16 บิตและ HDR พร้อมการพิสูจน์อักษรสำหรับการพิมพ์",
-          "link": "แผงสี"
+        "paint": {
+          "title": "Paint",
+          "text": "พอเริ่มทำงานการ์ตูนหรือมังงะอย่างจริงจัง เครื่องมือง่าย ๆ ก็ไม่พอแล้ว การเติมสีด้วยบ่วงกลายเป็นเพื่อนที่ดีที่สุด และคุณก็ต้องเรียนรู้ที่จะอยู่กับมาสก์ แม้จะยุ่งยากแต่ก็จำเป็น\n\nมีเครื่องมือมากมายสำหรับกระบวนการสร้างภาพประกอบระดับมืออาชีพ โดย CSP และ MediBang มักเป็นโปรแกรมแรก ๆ ที่ผู้คนเรียนรู้ ทั้งคู่เป็นซอฟต์แวร์ที่ดี ใช้งานง่าย และเข้าใจได้ไม่ยาก เพียงทำตามขั้นตอน ผลงานก็มักจะออกมาดี\n\nแม้จะเป็นเครื่องมือทำงานที่ไว้ใจได้ แต่ก็ทำงานช้า เพราะสร้างขึ้นในยุคที่การเรนเดอร์และการรวมภาพทั้งหมดทำบน CPU แทน GPU จึงไม่เคยเทียบได้กับเอนจินแปรงที่ทรงพลังและสมจริงในแอปสมัยใหม่อย่าง Fresco และ Rebelle\n\nพื้นที่ทำงาน Paint นำการจำลองวัสดุวาดภาพจริงมาสู่ภาพประกอบดิจิทัล",
+          "image": {
+            "shot": "showcase/paint",
+            "alt": "ภาพวาดสีน้ำมันของบ้านริมทะเลยามพระอาทิตย์ตกดินในพื้นที่ทำงาน Paint พร้อมด้วยพู่กัน สี และเลเยอร์ข้างผ้าใบ"
+          },
+          "links": [
+            {
+              "title": "บทช่วยสอนการวาดภาพประกอบ",
+              "slug": "illustration"
+            },
+            {
+              "title": "เครื่องมือเติมสี",
+              "slug": "drawing/fill"
+            },
+            {
+              "title": "มาสก์",
+              "slug": "layers/masks"
+            },
+            {
+              "title": "การผสม สีซึม และขนพู่กัน",
+              "slug": "brushes/wet-media"
+            }
+          ]
         },
         "photo": {
-          "title": "การแก้ไขภาพถ่าย",
-          "text": "เปิดรูปภาพโดยตรงจากกล้องหรือโทรศัพท์ของคุณ ครอบตัดและรีทัช แล้วปรับแต่งพื้นที่ใดก็ได้ด้วยฟิลเตอร์ที่คุณสามารถเปลี่ยนแปลงได้ในภายหลัง",
-          "link": "บทช่วยสอนการแต่งภาพถ่าย"
-        },
-        "native": {
-          "title": "เดสก์ท็อปและแท็บเล็ต",
-          "text": "{appName} อยู่ในช่วงเบต้าสำหรับ Linux, Windows, macOS, Android และ iPadOS แอพเหล่านี้เป็นแอพเนทีฟที่คอมไพล์และใช้ชุดเครื่องมือ UI แบบเนทีฟของแพลตฟอร์ม ซึ่งหมายถึงประสิทธิภาพที่ดีขึ้นและอายุการใช้งานแบตเตอรี่ในทุกอุปกรณ์",
-          "link": "สถาปัตยกรรมระบบ"
+          "title": "Photo",
+          "text": "อุปกรณ์พกพามีความสามารถมากขึ้นทุกวัน ดูเหมือนหน้าจอ OLED จะอยู่ทุกที่ และโทรศัพท์เครื่องเก่าของฉันก็บันทึกภาพเป็น P3 HDR ตามค่าเริ่มต้น SRGB กลายเป็นเรื่องในอดีตไปแล้ว\n\nจนถึงตอนนี้ แอปวาดภาพเพียงตัวเดียวที่รองรับ HDR และขอบเขตสีกว้างได้อย่างเหมาะสมคือ Krita HDR มีความซับซ้อนและทำให้ถูกต้องได้ยาก เมื่อเผยแพร่ภาพ HDR และภาพขอบเขตสีกว้างทางออนไลน์ คุณต้องควบคุมการแมปเกนเพื่อให้ภาพยังดูดีบนอุปกรณ์ SDR แน่นอนว่าโปรแกรมแต่งภาพจะยังไม่ครบถ้วนหากขาดฟังก์ชันพื้นฐานทั้งหมด ไม่ว่าจะเป็นการปรู๊ฟสี ชุดเอฟเฟกต์ที่ต่อกัน และทุกอย่างที่ควรมี\n\nพื้นที่ทำงาน Photo ช่วยสร้างภาพที่น่าตื่นตาสำหรับหน้าจอขอบเขตสีกว้างรุ่นใหม่",
+          "image": {
+            "shot": "showcase/photo",
+            "alt": "รูปถ่ายของตู้กระจกขนาดเล็กในพื้นที่ทำงาน Photo พร้อมเครื่องมือช่วงโทนสีที่พร้อมให้เลือกตามความสว่าง และเลเยอร์การปรับเส้นโค้งและความสั่นสะเทือน"
+          },
+          "links": [
+            {
+              "title": "บทช่วยสอนการแต่งภาพถ่าย",
+              "slug": "photo"
+            },
+            {
+              "title": "HDR",
+              "slug": "color-management/hdr"
+            },
+            {
+              "title": "การทำงานของฟิลเตอร์",
+              "slug": "filters/how-filters-apply"
+            },
+            {
+              "title": "ปรู๊ฟสี",
+              "slug": "color-management/proof"
+            }
+          ]
         }
-      },
-      "start": "{appName} สามารถทำงานได้ทั้งหมดในเว็บเบราว์เซอร์ของคุณ แม้ว่าจะออฟไลน์ก็ตาม นี่เป็นวิธีที่ง่ายและรวดเร็วในการเริ่มต้น แอปเดสก์ท็อปและแท็บเล็ตซึ่งขณะนี้อยู่ในช่วงเบต้า มอบประสิทธิภาพที่ดีที่สุดและความเข้ากันได้ของฮาร์ดแวร์",
-      "links": {
-        "quickstart": "เริ่มต้นใช้งานอย่างรวดเร็ว",
-        "illustration": "บทช่วยสอนการวาดภาพประกอบ"
       }
     }
   },
@@ -656,43 +922,81 @@ export const additionalDocsUI = {
     },
     "imageOpen": "Mở ảnh chụp màn hình kích thước đầy đủ",
     "landing": {
-      "alt": "Không gian làm việc Paint hiển thị dải ruy băng màu xanh mòng két, đĩa màu đất son và khối đất nung với họa tiết bóng mờ.",
       "sections": {
-        "painting": {
-          "title": "Tranh vẽ",
-          "text": "Công cụ cọ vẽ được hỗ trợ bởi GPU cho phép chúng tôi mô phỏng sự tương tác giữa sơn và phương tiện vật lý. Màu nước thấm vào các thớ giấy, cọ dầu lấy và mang màu, còn bút chì bám vào thớ giấy.",
-          "link": "Công cụ cọ"
+        "sketch": {
+          "title": "Sketch",
+          "text": "Cũng như nhiều người khác, tôi lần đầu bước vào thế giới nghệ thuật số với Procreate hơn một thập kỷ trước. Khi Apple Pencil đầu tiên ra mắt, cảm giác thật kỳ diệu. Dù phần cứng chậm so với tiêu chuẩn ngày nay, mọi thứ được làm tốt đến mức cho cảm giác thực sự như dùng bút vẽ trên giấy.\n\nĐây là lần đầu một ứng dụng vẽ được tối ưu hoàn toàn cho thiết bị di động, với tính năng dự đoán chuyển động của bút cùng bộ máy cọ và kết xuất chạy trên GPU. Sau đó, họ thêm một giao diện gọn gàng, tối giản, và nó đã trở thành tiêu chuẩn của ngành cho các ứng dụng vẽ hiện đại.\n\nKhông gian làm việc Sketch là lời tri ân nguồn cội của chúng tôi. Nơi mọi người bắt đầu.",
+          "image": {
+            "shot": "showcase/sketch",
+            "alt": "Bản vẽ bằng mực về một chiếc xe lửa bên dưới một cái cây lớn trong không gian làm việc Sketch, nơi bản vẽ lấp đầy màn hình và một vài công cụ nằm ở các cạnh."
+          },
+          "links": [
+            {
+              "title": "Công cụ cọ",
+              "slug": "drawing/brush-tools"
+            },
+            {
+              "title": "Bút",
+              "slug": "input/pen"
+            },
+            {
+              "title": "Chế độ Zen",
+              "slug": "customize/zen"
+            }
+          ]
         },
-        "workspace": {
-          "title": "Không gian làm việc của bạn",
-          "text": "{appName} đi kèm với các bố cục quen thuộc để phác thảo, vẽ tranh và chỉnh sửa ảnh, đồng thời mọi công cụ và bảng điều khiển đều có thể được di chuyển đến bất cứ đâu bạn muốn. Và nếu bạn chỉ muốn một khung vẽ trống không gây phiền nhiễu, hãy nhấp vào Capybara để vào chế độ Zen!",
-          "link": "Không gian làm việc"
-        },
-        "input": {
-          "title": "Bút, cảm ứng và chuột",
-          "text": "Giao diện được thiết kế cho bút và cảm ứng ngay từ đầu, bao gồm máy tính bảng Wacom, XP-Pen và Huion cũng như máy tính bảng iPad và Galaxy. Canvas chạy ở tần số tối đa 120 Hz, giúp giảm độ trễ của bút. Và nếu bạn thích chuột hơn, điều đó cũng có tác dụng.",
-          "link": "Bút"
-        },
-        "color": {
-          "title": "Chọn màu sắc",
-          "text": "Bánh xe màu sử dụng OKLCH, dựa trên cách mọi người cảm nhận màu sắc. Các bảng màu giữ cho màu sắc yêu thích của bạn luôn ở gần và các nhiếp ảnh gia có thể làm việc với gam màu rộng, 16-bit và HDR, với khả năng kiểm tra bản in.",
-          "link": "Bảng màu hiện tại"
+        "paint": {
+          "title": "Paint",
+          "text": "Khi bắt đầu làm truyện tranh hay manga một cách nghiêm túc, những công cụ đơn giản không còn đủ nữa. Tô bằng Lasso trở thành người bạn thân nhất, và bạn học cách sống chung với mặt nạ, thứ phiền phức nhưng cần thiết.\n\nCó nhiều công cụ dành cho quy trình minh họa chuyên nghiệp; CSP và MediBang thường là những phần mềm mọi người học đầu tiên. Chúng là những phần mềm tốt, dễ dùng và trực quan. Chỉ cần làm theo quy trình, kết quả thường sẽ ổn.\n\nDù là những công cụ làm việc đáng tin cậy, chúng chạy chậm, được tạo ra trong thời kỳ mọi thao tác kết xuất và tổng hợp đều diễn ra trên CPU thay vì GPU. Vì thế, chúng chưa bao giờ sánh được với bộ máy cọ mạnh mẽ, chân thực trong các ứng dụng hiện đại như Fresco và Rebelle.\n\nKhông gian làm việc Paint mang mô phỏng chất liệu vẽ thật vào minh họa số.",
+          "image": {
+            "shot": "showcase/paint",
+            "alt": "Bức tranh sơn dầu về một ngôi nhà bên bờ biển lúc hoàng hôn trong không gian làm việc Paint, với bút vẽ, màu sắc và các lớp bên cạnh khung vẽ."
+          },
+          "links": [
+            {
+              "title": "Hướng dẫn vẽ minh họa",
+              "slug": "illustration"
+            },
+            {
+              "title": "Công cụ tô màu",
+              "slug": "drawing/fill"
+            },
+            {
+              "title": "Mặt nạ",
+              "slug": "layers/masks"
+            },
+            {
+              "title": "Trộn màu, loang và lông cọ",
+              "slug": "brushes/wet-media"
+            }
+          ]
         },
         "photo": {
-          "title": "Chỉnh sửa ảnh",
-          "text": "Mở ảnh trực tiếp từ máy ảnh hoặc điện thoại của bạn, cắt xén và chỉnh sửa ảnh, rồi điều chỉnh bất kỳ khu vực nào bằng các bộ lọc mà bạn có thể tiếp tục thay đổi sau này.",
-          "link": "Hướng dẫn chỉnh sửa ảnh"
-        },
-        "native": {
-          "title": "Máy tính để bàn và máy tính bảng",
-          "text": "{appName} đang ở giai đoạn beta trên Linux, Windows, macOS, Android và iPadOS. Đây là những ứng dụng gốc được biên dịch và sử dụng bộ công cụ giao diện người dùng gốc của nền tảng. Điều này có nghĩa là hiệu suất và thời lượng pin tốt hơn trên mọi thiết bị.",
-          "link": "Kiến trúc hệ thống"
+          "title": "Photo",
+          "text": "Thiết bị di động ngày càng làm được nhiều việc hơn. Dường như màn hình OLED đã có mặt ở khắp nơi, và chiếc điện thoại cũ của tôi mặc định lưu ảnh ở định dạng P3 HDR. SRGB đã là chuyện của quá khứ.\n\nĐến nay, ứng dụng vẽ duy nhất hỗ trợ tốt HDR với gam màu rộng là Krita. HDR phức tạp và khó làm cho đúng. Khi đăng ảnh HDR và ảnh gam màu rộng lên mạng, bạn cần kiểm soát ánh xạ độ khuếch đại để ảnh vẫn đẹp trên thiết bị SDR. Tất nhiên, không trình chỉnh sửa ảnh nào hoàn chỉnh nếu thiếu toàn bộ chức năng cơ bản: xem thử màu in, chuỗi hiệu ứng và tất cả những thứ cần có.\n\nKhông gian làm việc Photo cho phép tạo hình ảnh ấn tượng cho thế hệ màn hình gam màu rộng mới.",
+          "image": {
+            "shot": "showcase/photo",
+            "alt": "Ảnh chụp một hồ cạn nhỏ trong không gian làm việc Photo, với công cụ Phạm vi tông màu sẵn sàng để chọn theo độ sáng cũng như các lớp điều chỉnh Đường cong và Độ rung."
+          },
+          "links": [
+            {
+              "title": "Hướng dẫn chỉnh sửa ảnh",
+              "slug": "photo"
+            },
+            {
+              "title": "HDR",
+              "slug": "color-management/hdr"
+            },
+            {
+              "title": "Phạm vi tác động của bộ lọc",
+              "slug": "filters/how-filters-apply"
+            },
+            {
+              "title": "Mô phỏng màu",
+              "slug": "color-management/proof"
+            }
+          ]
         }
-      },
-      "start": "{appName} có thể chạy hoàn toàn trên trình duyệt web của bạn, ngay cả khi ngoại tuyến. Đây là một cách nhanh chóng và dễ dàng để bắt đầu. Ứng dụng dành cho máy tính để bàn và máy tính bảng, hiện đang ở giai đoạn beta, mang lại hiệu suất và khả năng tương thích phần cứng tốt nhất.",
-      "links": {
-        "quickstart": "Bắt đầu nhanh",
-        "illustration": "Hướng dẫn vẽ minh họa"
       }
     }
   },
@@ -743,43 +1047,81 @@ export const additionalDocsUI = {
     },
     "imageOpen": "Tam boyutlu ekran görüntüsünü aç",
     "landing": {
-      "alt": "Paint çalışma alanı, deniz mavisi bir kurdele, koyu sarı bir disk ve dokulu gölgeli pişmiş toprak bloğu gösteriyor.",
       "sections": {
-        "painting": {
-          "title": "Boyama",
-          "text": "GPU destekli fırça motoru, boya ve fiziksel ortam arasındaki etkileşimi simüle etmemizi sağlar. Suluboya kağıdın liflerine nüfuz eder, yağlı boya fırçaları rengi alır ve taşır, kalemler ise kağıdın dokusunu yakalar.",
-          "link": "Fırça araçları"
+        "sketch": {
+          "title": "Sketch",
+          "text": "Pek çok kişi gibi benim de dijital sanat dünyasına ilk adımım, on yılı aşkın süre önce Procreate ile oldu. İlk Apple Pencil çıktığında sihir gibiydi. Donanım bugünün ölçütlerine göre yavaş olsa da o kadar iyi yapılmıştı ki gerçekten kâğıt üzerinde kalemle çiziyormuş hissi veriyordu.\n\nBir çizim uygulaması ilk kez mobil bir cihaz için tamamen optimize edilmişti; kalem hareketini tahmin ederek izliyor, fırça ve işleme motorlarını GPU üzerinde çalıştırıyordu. Ardından bunun üzerine temiz ve minimalist bir arayüz eklediler. Bu da zamanla modern çizim uygulamalarının sektör standardı oldu.\n\nSketch çalışma alanı, köklerimize bir saygı duruşudur. Herkesin başladığı yer.",
+          "image": {
+            "shot": "showcase/sketch",
+            "alt": "Sketch çalışma alanındaki büyük bir ağacın altındaki bir trenin mürekkepli çizimi; burada çizim ekranı dolduruyor ve kenarlarda birkaç araç bulunuyor."
+          },
+          "links": [
+            {
+              "title": "Fırça araçları",
+              "slug": "drawing/brush-tools"
+            },
+            {
+              "title": "Kalem",
+              "slug": "input/pen"
+            },
+            {
+              "title": "Zen modu",
+              "slug": "customize/zen"
+            }
+          ]
         },
-        "workspace": {
-          "title": "Çalışma alanınız",
-          "text": "{appName} eskiz, boyama ve fotoğraf düzenleme için tanıdık düzenlerle birlikte gelir ve her araç ve panel istediğiniz yere taşınabilir. Ve eğer dikkatinizin dağılmadığı boş bir tuval istiyorsanız, Zen moduna girmek için Capybara'ya tıklayın!",
-          "link": "Çalışma alanları"
-        },
-        "input": {
-          "title": "Kalem, dokunma ve fare",
-          "text": "Arayüz, Wacom, XP-Pen ve Huion tabletlerin yanı sıra iPad ve Galaxy tabletler de dahil olmak üzere baştan itibaren kalem ve dokunma için tasarlandı. Kanvas tam 120 Hz'de çalışır, bu da kalem gecikmesini azaltır. Ve eğer fareyi tercih ederseniz bu da işe yarar.",
-          "link": "Kalem"
-        },
-        "color": {
-          "title": "Renkleri seçme",
-          "text": "Renk tekerleği, insanların rengi nasıl algıladığını temel alan OKLCH'yu kullanır. Paletler en sevdiğiniz renkleri yakınınızda tutar ve fotoğrafçılar baskı provası ile geniş gamda, 16 bit ve HDR ile çalışabilir.",
-          "link": "Renk paneli"
+        "paint": {
+          "title": "Paint",
+          "text": "Ciddi biçimde çizgi roman veya manga çalışmaya başladığınızda basit araçlar artık yetmez. Kement dolgusu en iyi dostunuz olur, maskelerin gerekli bir kötülük olduğunu kabullenmeyi öğrenirsiniz.\n\nProfesyonel illüstrasyon iş akışları için pek çok araç var; CSP ve MediBang genellikle insanların ilk öğrendikleri oluyor. İkisi de harika, kullanımı kolay ve sezgisel yazılımlar. Süreci takip etmeniz yeterli, sonuç genellikle iyi olur.\n\nGerçek birer iş gücü olsalar da yavaşlar; tüm görüntü işleme ve birleştirmenin GPU yerine CPU üzerinde yapıldığı bir dönem için tasarlanmışlar. Bu yüzden Fresco ve Rebelle gibi modern uygulamaların güçlü, gerçekçi fırça motorlarına hiçbir zaman yetişemediler.\n\nPaint çalışma alanı, fiziksel resim malzemelerinin simülasyonunu dijital illüstrasyona taşır.",
+          "image": {
+            "shot": "showcase/paint",
+            "alt": "Paint çalışma alanında, tuvalin yanında fırçalar, renkler ve katmanlar bulunan, gün batımında deniz kenarındaki bir evin yağlıboya tablosu."
+          },
+          "links": [
+            {
+              "title": "İllüstrasyon eğitimi",
+              "slug": "illustration"
+            },
+            {
+              "title": "Dolgu araçları",
+              "slug": "drawing/fill"
+            },
+            {
+              "title": "Maskeler",
+              "slug": "layers/masks"
+            },
+            {
+              "title": "Karıştırma, yayılma ve kıllar",
+              "slug": "brushes/wet-media"
+            }
+          ]
         },
         "photo": {
-          "title": "Fotoğrafları düzenleme",
-          "text": "Fotoğrafları doğrudan kameranızdan veya telefonunuzdan açın, kırpın ve rötuşlayın, ardından herhangi bir alanı daha sonra değiştirmeye devam edebileceğiniz filtrelerle ayarlayın.",
-          "link": "Fotoğraf düzenleme eğitimi"
-        },
-        "native": {
-          "title": "Masaüstü ve tablet",
-          "text": "{appName}, Linux, Windows, macOS, Android ve iPadOS için beta aşamasında. Bunlar derlenmiş yerel uygulamalardır ve platforma özgü kullanıcı arayüzü araç kitlerini kullanır. Bu, her cihazda daha iyi performans ve pil ömrü anlamına gelir.",
-          "link": "Sistem mimarisi"
+          "title": "Photo",
+          "text": "Mobil cihazlar her gün daha fazla şey yapabiliyor. OLED ekranlar her yerde gibi görünüyor ve eski telefonum bile görüntülerini varsayılan olarak P3 HDR biçiminde kaydediyor. SRGB geçmişte kaldı.\n\nBugüne kadar geniş renk gamutlu HDR'ı düzgün destekleyen tek boyama uygulaması Krita. HDR karmaşık ve doğru uygulanması zor. HDR ve geniş gamutlu görüntüleri internette yayımlarken SDR cihazlarda da iyi görünmeleri için kazanç eşlemesini kontrol etmeniz gerekiyor. Elbette renk provası, efekt zincirleri ve diğer tüm temel işlevler olmadan hiçbir fotoğraf düzenleyici tamamlanmış sayılmaz.\n\nPhoto çalışma alanı, yeni nesil geniş gamutlu ekranlar için çarpıcı görseller oluşturmayı mümkün kılar.",
+          "image": {
+            "shot": "showcase/photo",
+            "alt": "Photo çalışma alanındaki küçük bir teraryumun, parlaklığa göre seçime hazır Ton aralığı aracı ve Eğriler ve Titreşim ayarlama katmanları ile çekilmiş fotoğrafı."
+          },
+          "links": [
+            {
+              "title": "Fotoğraf düzenleme eğitimi",
+              "slug": "photo"
+            },
+            {
+              "title": "HDR",
+              "slug": "color-management/hdr"
+            },
+            {
+              "title": "Filtrelerin uygulanması",
+              "slug": "filters/how-filters-apply"
+            },
+            {
+              "title": "Renk provası",
+              "slug": "color-management/proof"
+            }
+          ]
         }
-      },
-      "start": "{appName} tamamen web tarayıcınızda, hatta çevrimdışı bile çalışabilir. Bu, başlamanın hızlı ve kolay bir yoludur. Şu anda beta aşamasındaki masaüstü ve tablet uygulamaları en iyi performansı ve donanım uyumluluğunu sunar.",
-      "links": {
-        "quickstart": "Hızlı başlangıç",
-        "illustration": "İllüstrasyon eğitimi"
       }
     }
   },
@@ -830,43 +1172,81 @@ export const additionalDocsUI = {
     },
     "imageOpen": "Apri lo screenshot a dimensione intera",
     "landing": {
-      "alt": "Area di lavoro Paint che mostra un nastro verde acqua, un disco ocra e un blocco di terracotta con ombreggiatura strutturata.",
       "sections": {
-        "painting": {
-          "title": "Pittura",
-          "text": "Il motore pennello basato su GPU ci consente di simulare l'interazione tra vernice e supporto fisico. L’acquerello penetra nelle fibre della carta, i pennelli ad olio raccolgono e trasportano il colore e le matite catturano la grana della carta.",
-          "link": "Strumenti pennello"
+        "sketch": {
+          "title": "Sketch",
+          "text": "Come molti altri, ho mosso i primi passi nel mondo dell’arte digitale con Procreate, più di dieci anni fa. Quando uscì il primo Apple Pencil, sembrava magia. Anche se l’hardware era lento rispetto agli standard di oggi, era realizzato così bene da dare davvero la sensazione di disegnare con una penna sulla carta.\n\nEra la prima volta che un’app di disegno veniva ottimizzata completamente per un dispositivo mobile, con tracciamento predittivo della penna e motori di pennelli e rendering basati sulla GPU. Poi ci hanno aggiunto un’interfaccia pulita e minimalista, che è diventata lo standard del settore per le app di disegno moderne.\n\nL’area di lavoro Sketch è un omaggio alle nostre radici. Il luogo da cui tutti iniziano.",
+          "image": {
+            "shot": "showcase/sketch",
+            "alt": "Un disegno a inchiostro di un treno sotto un grande albero nell'area di lavoro Sketch, dove il disegno riempie lo schermo e alcuni strumenti si trovano ai bordi."
+          },
+          "links": [
+            {
+              "title": "Strumenti pennello",
+              "slug": "drawing/brush-tools"
+            },
+            {
+              "title": "Penna",
+              "slug": "input/pen"
+            },
+            {
+              "title": "Modalità Zen",
+              "slug": "customize/zen"
+            }
+          ]
         },
-        "workspace": {
-          "title": "Il tuo spazio di lavoro",
-          "text": "{appName} è dotato di layout familiari per schizzi, pittura e fotoritocco e ogni strumento e pannello può essere spostato dove preferisci. E se vuoi solo una tela bianca senza distrazioni, fai clic sul Capibara per accedere alla modalità Zen!",
-          "link": "Aree di lavoro"
-        },
-        "input": {
-          "title": "Penna, tocco e mouse",
-          "text": "L'interfaccia è stata progettata fin dall'inizio per la penna e il tocco, inclusi i tablet Wacom, XP-Pen e Huion nonché i tablet iPad e Galaxy. La tela funziona a 120 Hz completi, il che riduce il ritardo della penna. E se preferisci un mouse, funziona anche quello.",
-          "link": "Penna"
-        },
-        "color": {
-          "title": "Scegliere i colori",
-          "text": "La ruota dei colori utilizza OKLCH, che si basa sul modo in cui le persone percepiscono il colore. Le tavolozze mantengono i tuoi colori preferiti a portata di mano e i fotografi possono lavorare con un'ampia gamma, a 16 bit e HDR, con prove colore per la stampa.",
-          "link": "Pannello Colore"
+        "paint": {
+          "title": "Paint",
+          "text": "Quando inizi a lavorare seriamente a fumetti o manga, gli strumenti semplici non bastano più. Il riempimento con lazo diventa il tuo migliore amico e impari a convivere con quel male necessario che sono le maschere.\n\nCi sono molti strumenti per i flussi di illustrazione professionale; CSP e MediBang sono spesso i primi che si imparano a usare. Sono ottimi programmi, facili da usare e intuitivi. Basta seguire il processo e il risultato di solito viene bene.\n\nPur essendo veri cavalli da lavoro, sono lenti, progettati per un’epoca in cui rendering e composizione venivano eseguiti interamente sulla CPU anziché sulla GPU. Per questo non sono mai riusciti a eguagliare i motori di pennelli potenti e realistici di app moderne come Fresco e Rebelle.\n\nL’area di lavoro Paint porta la simulazione dei materiali fisici nell’illustrazione digitale.",
+          "image": {
+            "shot": "showcase/paint",
+            "alt": "Un dipinto a olio di una casa al mare al tramonto nello spazio di lavoro Paint, con pennelli, colori e strati accanto alla tela."
+          },
+          "links": [
+            {
+              "title": "Tutorial di illustrazione",
+              "slug": "illustration"
+            },
+            {
+              "title": "Strumenti di riempimento",
+              "slug": "drawing/fill"
+            },
+            {
+              "title": "Maschere",
+              "slug": "layers/masks"
+            },
+            {
+              "title": "Mescolanza, diffusione e setole",
+              "slug": "brushes/wet-media"
+            }
+          ]
         },
         "photo": {
-          "title": "Modifica delle foto",
-          "text": "Apri le foto direttamente dalla fotocamera o dal telefono, ritagliale e ritoccale, e regola qualsiasi area con filtri che puoi continuare a modificare in seguito.",
-          "link": "Tutorial di fotoritocco"
-        },
-        "native": {
-          "title": "Desktop e tablet",
-          "text": "{appName} è in beta per Linux, Windows, macOS, Android e iPadOS. Si tratta di app native compilate e utilizzano toolkit dell'interfaccia utente nativi della piattaforma. Ciò significa prestazioni e durata della batteria migliori su ogni dispositivo.",
-          "link": "Architettura del sistema"
+          "title": "Photo",
+          "text": "I dispositivi mobili sono ogni giorno più capaci. Sembra che gli schermi OLED siano ovunque e il mio vecchio telefono salva le immagini in formato P3 HDR per impostazione predefinita. SRGB appartiene al passato.\n\nA oggi, l’unica app di pittura che supporta correttamente l’HDR ad ampia gamma cromatica è Krita. L’HDR è complicato e difficile da realizzare bene. Quando pubblichi online immagini HDR e ad ampia gamma cromatica, devi controllare la mappatura del guadagno perché siano belle anche sui dispositivi SDR. Naturalmente, nessun editor fotografico è completo senza tutte le funzioni di base: prove colore, catene di effetti e tutto il resto.\n\nL’area di lavoro Photo permette di creare immagini sorprendenti per una nuova generazione di schermi ad ampia gamma cromatica.",
+          "image": {
+            "shot": "showcase/photo",
+            "alt": "Una fotografia di un piccolo terrario nell'area di lavoro Photo, con lo strumento Gamma tonale pronto per la selezione in base alla luminosità e ai livelli di regolazione Curve e Vividezza."
+          },
+          "links": [
+            {
+              "title": "Tutorial di fotoritocco",
+              "slug": "photo"
+            },
+            {
+              "title": "HDR",
+              "slug": "color-management/hdr"
+            },
+            {
+              "title": "Come si applicano i filtri",
+              "slug": "filters/how-filters-apply"
+            },
+            {
+              "title": "Prova colore",
+              "slug": "color-management/proof"
+            }
+          ]
         }
-      },
-      "start": "{appName} può essere eseguito interamente nel tuo browser web, anche offline. Questo è un modo semplice e veloce per iniziare. Le app desktop e per tablet, ora in beta, offrono le migliori prestazioni e compatibilità hardware.",
-      "links": {
-        "quickstart": "Guida rapida",
-        "illustration": "Tutorial di illustrazione"
       }
     }
   }

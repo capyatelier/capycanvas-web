@@ -51,7 +51,7 @@ export const docsUI = brandTranslations({
       "sections": {
         "sketch": {
           "title": "Sketch",
-          "text": "My first foray into the digital art world (like many others) was with Procreate over a decade ago. Back when the apple pencil first came out, it was magic. Even though the hardware was slow by today's standards, it was so well done that it gave a real pen-to-paper feeling.\n\nThis was the first time a drawing app was ever fully optimized for a mobile device, using predictive pen tracking and GPU powered brush+rendering engines. Then they dropped a clean and minimalist UI on top of it, which has become ubiquitious for all modern drawing apps.\n\nThe Sketch workspace is a tribute to our roots. The place where everyone starts out.",
+          "text": "My first foray into the digital art world (like many others) was with Procreate over a decade ago. Back when the apple pencil first came out, it was magic. Even though the hardware was slow by today's standards, it was so well done that it gave a real pen-to-paper feeling.\n\nThis was the first time a drawing app was fully optimized for a mobile device, using predictive pen tracking and GPU powered brush+rendering engines. Then they dropped a clean and minimalist UI on top of it, which then became the industry standard for all modern drawing apps.\n\nThe Sketch workspace is a tribute to our roots. The place where everyone starts out.",
           "image": {
             "shot": "showcase/sketch",
             "alt": "An ink drawing of a train beneath a large tree in Sketch, with the drawing filling the screen and tools at the edges."
@@ -73,7 +73,7 @@ export const docsUI = brandTranslations({
         },
         "paint": {
           "title": "Paint",
-          "text": "Once you get into proper comic/manga work, the simple tools don't cut it anymore. Lasso fill is your best friend, and you learn to live with the necessary evil of masks.\n\nThere are many tools out there that solve this problem, CSP and medibang are often what people learn first. And they are great, easy-to-use and inuitive software. All you have to do is follow the process and it usually turns out OK.\n\nWhile they are true workhorses, they are slow, built for an era where all rendering and compositing was done on the CPU instead of the GPU. So they never were able to match the powerful, realistic paintbrush engines in modern apps like Fresco and Rebelle.\n\nThe Paint workspace brings simulated physical media to digital illustration.",
+          "text": "Once you get into proper comic/manga work, the simple tools don't cut it anymore. Lasso fill is your best friend, and you learn to live with the necessary evil of masks.\n\nThere are many tools out there for professional illustration workflows, CSP and medibang are often what people learn first. And they are great, easy-to-use and inuitive software. All you have to do is follow the process and it usually turns out OK.\n\nWhile they are true workhorses, they are slow, built for an era where all rendering and compositing was done on the CPU instead of the GPU. So they never were able to match the powerful, realistic paintbrush engines in modern apps like Fresco and Rebelle.\n\nThe Paint workspace brings simulated physical media to digital illustration.",
           "image": {
             "shot": "showcase/paint",
             "alt": "An oil painting of a house by the sea at sunset in Paint, with brushes, colors and layers beside the canvas."
@@ -99,7 +99,7 @@ export const docsUI = brandTranslations({
         },
         "photo": {
           "title": "Photo",
-          "text": "Mobile devices are becoming more capable every day. It seems like OLED screens are everywhere, and my old phone saves its images in P3 HDR format by default. SRGB is a thing of the past.\n\nTo this date, the only painting app that properly supports wide gamut HDR is Krita. HDR is a complicated beast and is hard to get right. When you publish HDR and wide-gamut images online, you need control over the gain mapping, so that it still looks good on SDR devices. Of course you also need the basics (proofing, effect chains, the whole enchilada)\n\nThe Photo workspace enables stunning visuals for a new generation of wide-gamut screens.",
+          "text": "Mobile devices are becoming more capable every day. It seems like OLED screens are everywhere, and my old phone saves its images in P3 HDR format by default. SRGB is a thing of the past.\n\nTo this date, the only painting app that properly supports wide gamut HDR is Krita. HDR is a complicated beast and is hard to get right. When you publish HDR and wide-gamut images online, you need to control the gain mapping so that it still looks good on SDR devices. Of course no photo editor is complete without the all of the basics (proofing, effect chains, the whole enchilada)\n\nThe Photo workspace enables stunning visuals for a new generation of wide-gamut screens.",
           "image": {
             "shot": "showcase/photo",
             "alt": "A terrarium photograph in Photo, with the Tonal range selection tool and Curves and Vibrance adjustment layers."
@@ -258,43 +258,81 @@ export const docsUI = brandTranslations({
     },
     "imageOpen": "スクリーンショットを原寸で開く",
     "landing": {
-      "alt": "青緑のリボン、黄土色の円、テラコッタ色の四角形に質感のある陰影を加えたPaintワークスペース。",
       "sections": {
-        "painting": {
-          "title": "絵の具の表現",
-          "text": "GPUで動くブラシエンジンにより、絵の具と紙などの画材との相互作用をシミュレーションしています。水彩は紙の繊維に染み込み、油彩ブラシは色を拾って運び、鉛筆は紙目をとらえます。",
-          "link": "ブラシツール"
+        "sketch": {
+          "title": "Sketch",
+          "text": "私が初めてデジタルアートの世界に足を踏み入れたのは、多くの人と同じく、十年以上前のProcreateでした。Apple Pencilが初めて登場した頃は、魔法のようでした。今の基準ではハードウェアは遅かったものの、よく作り込まれていて、本当に紙にペンで描いているような感覚がありました。\n\n描画アプリがモバイル端末向けに徹底的に最適化されたのは、これが初めてでした。ペンの動きを予測して追跡し、ブラシと描画のエンジンをGPUで動かしていました。その上にすっきりとした最小限のUIが加わり、その後、現代の描画アプリ全体の業界標準になりました。\n\nSketchワークスペースは、私たちの原点へのオマージュです。誰もが描き始める場所です。",
+          "image": {
+            "shot": "showcase/sketch",
+            "alt": "Sketchワークスペースで表示した、大きな木の下の電車を描いたペン画。絵が画面いっぱいに広がり、道具は画面の端にまとまっています。"
+          },
+          "links": [
+            {
+              "title": "ブラシツール",
+              "slug": "drawing/brush-tools"
+            },
+            {
+              "title": "ペン",
+              "slug": "input/pen"
+            },
+            {
+              "title": "集中モード",
+              "slug": "customize/zen"
+            }
+          ]
         },
-        "workspace": {
-          "title": "自分のワークスペース",
-          "text": "{appName}には、スケッチ、ペイント、写真編集のためのなじみやすいレイアウトが用意されていて、ツールやパネルはすべて好きな位置に動かせます。気を散らすもののない、まっさらなキャンバスだけが欲しいときは、カピバラをクリックしてZenモードへ！",
-          "link": "ワークスペース"
-        },
-        "input": {
-          "title": "ペン、タッチ、マウス",
-          "text": "画面は、最初からペンとタッチでの操作を考えて設計されています。Wacom、XP-Pen、Huionのペンタブレットに加え、iPadやGalaxyタブレットも想定しています。キャンバスは120 Hzをフルに活かし、ペンの遅延を減らします。マウス派の方も大丈夫です。",
-          "link": "ペン"
-        },
-        "color": {
-          "title": "色を選ぶ",
-          "text": "カラーホイールには、人の色の感じ方に基づくOKLCHを使っています。パレットでお気に入りの色を手元に置けるほか、写真を扱う方に向けて広色域、16ビット、HDR、印刷用のプルーフにも対応しています。",
-          "link": "色パネル"
+        "paint": {
+          "title": "Paint",
+          "text": "本格的に漫画を描くようになると、シンプルな道具だけでは足りなくなります。投げ縄塗りつぶしが頼れる相棒になり、必要悪であるマスクとも付き合っていくことになります。\n\nプロのイラスト制作に向けた道具は数多くあり、最初に覚えるのはCSPやMediBangという人が多いでしょう。どちらも優れた、使いやすく直感的なソフトです。手順に沿って進めれば、たいていうまく仕上がります。\n\n頼れる働き者ではありますが、動作は遅く、描画と合成をすべてGPUではなくCPUで行っていた時代に作られています。そのため、FrescoやRebelleといった現代のアプリの、強力でリアルなブラシエンジンには追いつけませんでした。\n\nPaintワークスペースは、実際の画材のシミュレーションをデジタルイラストにもたらします。",
+          "image": {
+            "shot": "showcase/paint",
+            "alt": "Paintワークスペースで表示した、夕暮れの海辺の家を描いた油彩。キャンバスの横にブラシ、色、レイヤーが並んでいます。"
+          },
+          "links": [
+            {
+              "title": "イラストのチュートリアル",
+              "slug": "illustration"
+            },
+            {
+              "title": "塗りつぶしツール",
+              "slug": "drawing/fill"
+            },
+            {
+              "title": "マスク",
+              "slug": "layers/masks"
+            },
+            {
+              "title": "混色、にじみ、筆毛",
+              "slug": "brushes/wet-media"
+            }
+          ]
         },
         "photo": {
-          "title": "写真の編集",
-          "text": "カメラやスマートフォンの写真をそのまま開き、切り抜きとレタッチをして、どの範囲もあとから調整し直せるフィルターで仕上げられます。",
-          "link": "写真編集のチュートリアル"
-        },
-        "native": {
-          "title": "デスクトップとタブレット",
-          "text": "{appName}は、Linux、Windows、macOS、Android、iPadOS向けのベータ版を公開しています。各バージョンはコンパイルされたネイティブアプリで、プラットフォーム標準のUIツールキットを使っています。これにより、どのデバイスでも性能とバッテリー持続時間が向上します。",
-          "link": "システムアーキテクチャ"
+          "title": "Photo",
+          "text": "モバイル端末は日々進化しています。どこを見てもOLED画面があるようで、私の古いスマートフォンでさえ、標準で画像をP3 HDR形式で保存します。SRGBはもう過去のものです。\n\n今のところ、広色域HDRにきちんと対応している描画アプリはKritaだけです。HDRは複雑で、正しく扱うのは難しいものです。HDRや広色域の画像をオンラインで公開するときは、SDR端末でも見栄えがよくなるよう、ゲインマッピングを調整する必要があります。もちろん、プルーフやエフェクトチェーンなど、基本機能をひととおり備えてこそ写真編集ソフトです。\n\nPhotoワークスペースは、新世代の広色域画面で目を見張るような表現を可能にします。",
+          "image": {
+            "shot": "showcase/photo",
+            "alt": "Photoワークスペースで表示した、小さなテラリウムの写真。明るさで範囲を選ぶTonal rangeツールと、CurvesとVibranceの調整レイヤーが表示されています。"
+          },
+          "links": [
+            {
+              "title": "写真編集のチュートリアル",
+              "slug": "photo"
+            },
+            {
+              "title": "HDR",
+              "slug": "color-management/hdr"
+            },
+            {
+              "title": "フィルターの適用のしくみ",
+              "slug": "filters/how-filters-apply"
+            },
+            {
+              "title": "校正表示",
+              "slug": "color-management/proof"
+            }
+          ]
         }
-      },
-      "start": "{appName}は、ウェブブラウザーだけでも、オフラインでも動作します。手軽にすぐ使い始められる方法です。現在ベータ版のデスクトップ版とタブレット版のアプリでは、最高の性能とハードウェアとの互換性が得られます。",
-      "links": {
-        "quickstart": "クイックスタート",
-        "illustration": "イラストのチュートリアル"
       }
     }
   },
@@ -345,43 +383,81 @@ export const docsUI = brandTranslations({
     },
     "imageOpen": "打开原尺寸截图",
     "landing": {
-      "alt": "Paint工作区中的蓝绿色带状形、土黄色圆形和陶土色四边形，带有质感与阴影。",
       "sections": {
-        "painting": {
-          "title": "绘画",
-          "text": "借助GPU驱动的笔刷引擎，我们能够模拟颜料与实体绘画介质之间的相互作用。水彩会渗入纸张纤维，油画笔刷会拾取并携带颜色，铅笔则会表现出纸纹。",
-          "link": "画笔工具"
+        "sketch": {
+          "title": "Sketch",
+          "text": "和许多人一样，我第一次踏入数字艺术的世界，是十多年前开始使用Procreate的时候。Apple Pencil刚推出时，简直像魔法一样。虽然按今天的标准来看，当时的硬件很慢，但它做得非常出色，真的让人有了用笔在纸上画画的感觉。\n\n这是绘画应用第一次针对移动设备进行全面优化：预测笔的运动轨迹，并用GPU驱动画笔和渲染引擎。之后，他们又加上了干净、极简的界面，后来成为现代绘画应用的行业标准。\n\nSketch工作区是对我们初心的致敬。这里是每个人开始画画的地方。",
+          "image": {
+            "shot": "showcase/sketch",
+            "alt": "Sketch工作区中的一幅钢笔画：大树下的一节电车。画面铺满整个屏幕，少量工具位于屏幕边缘。"
+          },
+          "links": [
+            {
+              "title": "画笔工具",
+              "slug": "drawing/brush-tools"
+            },
+            {
+              "title": "笔",
+              "slug": "input/pen"
+            },
+            {
+              "title": "专注模式",
+              "slug": "customize/zen"
+            }
+          ]
         },
-        "workspace": {
-          "title": "你的工作区",
-          "text": "{appName}为速写、绘画和照片编辑准备了熟悉的布局，每个工具和面板都可以按你的喜好移动。如果你只想要一张空白画布，不受任何干扰，点击水豚就能进入Zen模式！",
-          "link": "工作区"
-        },
-        "input": {
-          "title": "笔、触控与鼠标",
-          "text": "界面从一开始就为笔和触控操作而设计，包括Wacom、XP-Pen和Huion的绘图板，以及iPad和Galaxy平板。画布以完整的120 Hz运行，减少笔输入延迟。如果你更喜欢用鼠标，也完全可以。",
-          "link": "笔"
-        },
-        "color": {
-          "title": "选择颜色",
-          "text": "色轮使用OKLCH，它以人类对颜色的感知为基础。调色板让喜欢的颜色随手可用；面向摄影师，还支持广色域、16位、HDR和打印打样。",
-          "link": "颜色面板"
+        "paint": {
+          "title": "Paint",
+          "text": "当你开始认真创作漫画时，简单的工具就不够用了。套索填充成了你最好的伙伴，而蒙版虽然麻烦，却也是你必须学会接受的必要工具。\n\n专业插画工作流程有许多工具可选，CSP和MediBang往往是大家最先学会的。它们都很出色，易用又直观。只要按流程操作，通常就能得到不错的结果。\n\n它们虽然是可靠的主力工具，但速度较慢，诞生于所有渲染和合成都由CPU而非GPU完成的时代。因此，它们始终无法媲美Fresco和Rebelle等现代应用中强大而逼真的画笔引擎。\n\nPaint工作区将实体画材的模拟带入数字插画。",
+          "image": {
+            "shot": "showcase/paint",
+            "alt": "Paint工作区中的一幅油画：日落时分海边的房子，画布旁边是笔刷、颜色和图层。"
+          },
+          "links": [
+            {
+              "title": "插画教程",
+              "slug": "illustration"
+            },
+            {
+              "title": "填充工具",
+              "slug": "drawing/fill"
+            },
+            {
+              "title": "蒙版",
+              "slug": "layers/masks"
+            },
+            {
+              "title": "混色、洇色和鬃毛",
+              "slug": "brushes/wet-media"
+            }
+          ]
         },
         "photo": {
-          "title": "编辑照片",
-          "text": "直接打开相机或手机拍摄的照片，进行裁剪和修饰，再用随时可以重新调整的滤镜处理任意区域。",
-          "link": "照片编辑教程"
-        },
-        "native": {
-          "title": "桌面与平板",
-          "text": "{appName}已推出适用于Linux、Windows、macOS、Android和iPadOS的测试版。这些都是经过编译的原生应用，并使用平台原生UI工具包。这意味着每台设备都能获得更好的性能和电池续航。",
-          "link": "系统架构"
+          "title": "Photo",
+          "text": "移动设备的能力每天都在提升。OLED屏幕似乎随处可见，就连我的旧手机也默认将照片保存为P3 HDR格式。SRGB已经是过去的事了。\n\n到目前为止，唯一真正支持广色域HDR的绘画应用是Krita。HDR很复杂，要做好并不容易。在网上发布HDR和广色域图像时，你需要控制增益映射，让图像在SDR设备上也好看。当然，照片编辑器也少不了全部基本功能：软打样、效果链等等，一样都不能少。\n\nPhoto工作区为新一代广色域屏幕带来令人惊艳的视觉效果。",
+          "image": {
+            "shot": "showcase/photo",
+            "alt": "Photo工作区中的一张小型生态缸照片，显示按亮度选择区域的Tonal range工具，以及Curves和Vibrance调整图层。"
+          },
+          "links": [
+            {
+              "title": "照片编辑教程",
+              "slug": "photo"
+            },
+            {
+              "title": "HDR",
+              "slug": "color-management/hdr"
+            },
+            {
+              "title": "滤镜的作用方式",
+              "slug": "filters/how-filters-apply"
+            },
+            {
+              "title": "校样",
+              "slug": "color-management/proof"
+            }
+          ]
         }
-      },
-      "start": "{appName}可以完全在网页浏览器中运行，也能离线使用。这是一种快速、轻松的入门方式。目前处于测试阶段的桌面版和平板版应用可提供最佳性能和硬件兼容性。",
-      "links": {
-        "quickstart": "快速入门",
-        "illustration": "插画教程"
       }
     }
   },
@@ -432,43 +508,81 @@ export const docsUI = brandTranslations({
     },
     "imageOpen": "開啟原始大小截圖",
     "landing": {
-      "alt": "Paint工作區中的藍綠色帶狀形、土黃色圓形和陶土色四邊形，帶有質感與陰影。",
       "sections": {
-        "painting": {
-          "title": "繪畫",
-          "text": "藉助GPU驅動的筆刷引擎，我們能夠模擬顏料與實體繪畫介質之間的相互作用。水彩會滲入紙張纖維，油畫筆刷會拾取並攜帶色彩，鉛筆則會表現出紙紋。",
-          "link": "筆刷工具"
+        "sketch": {
+          "title": "Sketch",
+          "text": "和許多人一樣，我第一次踏入數位藝術的世界，是十多年前開始使用Procreate的時候。Apple Pencil剛推出時，簡直像魔法一樣。雖然以今天的標準來看，當時的硬體很慢，但它做得非常出色，真的讓人有了用筆在紙上畫畫的感覺。\n\n這是繪畫應用程式第一次針對行動裝置進行全面最佳化：預測筆的運動軌跡，並用GPU驅動筆刷與算圖引擎。之後，他們又加上了乾淨、極簡的介面，後來成為現代繪畫應用程式的業界標準。\n\nSketch工作區是對我們初心的致敬。這裡是每個人開始畫畫的地方。",
+          "image": {
+            "shot": "showcase/sketch",
+            "alt": "Sketch工作區中的一幅鋼筆畫：大樹下的一節電車。畫面鋪滿整個螢幕，少量工具位於螢幕邊緣。"
+          },
+          "links": [
+            {
+              "title": "筆刷工具",
+              "slug": "drawing/brush-tools"
+            },
+            {
+              "title": "筆",
+              "slug": "input/pen"
+            },
+            {
+              "title": "專注模式",
+              "slug": "customize/zen"
+            }
+          ]
         },
-        "workspace": {
-          "title": "你的工作區",
-          "text": "{appName}為速寫、繪畫與照片編輯準備了熟悉的版面配置，每個工具和面板都可以按你的喜好移動。如果你只想要一張空白畫布，不受任何干擾，點選水豚就能進入Zen模式！",
-          "link": "工作區"
-        },
-        "input": {
-          "title": "筆、觸控與滑鼠",
-          "text": "介面從一開始就為筆和觸控操作而設計，包括Wacom、XP-Pen和Huion的繪圖板，以及iPad和Galaxy平板。畫布以完整的120 Hz執行，減少筆輸入延遲。如果你更喜歡用滑鼠，也完全可以。",
-          "link": "筆"
-        },
-        "color": {
-          "title": "選擇色彩",
-          "text": "色輪使用OKLCH，它以人類對色彩的感知為基礎。色票盤讓喜歡的色彩隨手可用；面向攝影師，還支援廣色域、16位、HDR和列印打樣。",
-          "link": "色彩面板"
+        "paint": {
+          "title": "Paint",
+          "text": "當你開始認真創作漫畫時，簡單的工具就不夠用了。套索填色成了你最好的夥伴，而遮色片雖然麻煩，卻也是你必須學會接受的必要工具。\n\n專業插畫工作流程有許多工具可選，CSP和MediBang往往是大家最先學會的。它們都很出色，易用又直覺。只要按流程操作，通常就能得到不錯的結果。\n\n它們雖然是可靠的主力工具，但速度較慢，誕生於所有算圖和合成都由CPU而非GPU完成的時代。因此，它們始終無法媲美Fresco和Rebelle等現代應用程式中強大而逼真的筆刷引擎。\n\nPaint工作區將實體畫材的模擬帶入數位插畫。",
+          "image": {
+            "shot": "showcase/paint",
+            "alt": "Paint工作區中的一幅油畫：日落時分海邊的房子，畫布旁邊是筆刷、色彩和圖層。"
+          },
+          "links": [
+            {
+              "title": "插畫教學",
+              "slug": "illustration"
+            },
+            {
+              "title": "填色工具",
+              "slug": "drawing/fill"
+            },
+            {
+              "title": "遮罩",
+              "slug": "layers/masks"
+            },
+            {
+              "title": "混色、暈染和鬃毛",
+              "slug": "brushes/wet-media"
+            }
+          ]
         },
         "photo": {
-          "title": "編輯照片",
-          "text": "直接開啟相機或手機拍攝的照片，進行裁切和修飾，再用隨時可以重新調整的濾鏡處理任意區域。",
-          "link": "照片編輯教學"
-        },
-        "native": {
-          "title": "桌面與平板",
-          "text": "{appName}已推出適用於Linux、Windows、macOS、Android和iPadOS的測試版。這些都是經過編譯的原生應用程式，並使用平台原生UI工具包。這意味著每臺裝置都能獲得更好的效能和電池續航。",
-          "link": "系統架構"
+          "title": "Photo",
+          "text": "行動裝置的能力每天都在提升。OLED螢幕似乎隨處可見，就連我的舊手機也預設將照片儲存為P3 HDR格式。SRGB已經是過去的事了。\n\n到目前為止，唯一真正支援廣色域HDR的繪畫應用程式是Krita。HDR很複雜，要做好並不容易。在網路上發布HDR和廣色域影像時，你需要控制增益映射，讓影像在SDR裝置上也好看。當然，照片編輯器也少不了全部基本功能：軟打樣、效果鏈等等，一樣都不能少。\n\nPhoto工作區為新一代廣色域螢幕帶來令人驚豔的視覺效果。",
+          "image": {
+            "shot": "showcase/photo",
+            "alt": "Photo工作區中的一張小型生態缸照片，顯示按亮度選擇區域的Tonal range工具，以及Curves和Vibrance調整圖層。"
+          },
+          "links": [
+            {
+              "title": "照片編輯教學",
+              "slug": "photo"
+            },
+            {
+              "title": "HDR",
+              "slug": "color-management/hdr"
+            },
+            {
+              "title": "濾鏡的作用方式",
+              "slug": "filters/how-filters-apply"
+            },
+            {
+              "title": "校樣",
+              "slug": "color-management/proof"
+            }
+          ]
         }
-      },
-      "start": "{appName}可以完全在網頁瀏覽器中執行，也能離線使用。這是一種快速、輕鬆的入門方式。目前處於測試階段的桌面版和平板版應用程式可提供最佳效能和硬體相容性。",
-      "links": {
-        "quickstart": "快速入門",
-        "illustration": "插畫教學"
       }
     }
   },
@@ -519,43 +633,81 @@ export const docsUI = brandTranslations({
     },
     "imageOpen": "원본 크기 스크린샷 열기",
     "landing": {
-      "alt": "청록색 리본, 황토색 원, 테라코타색 사각형에 질감과 음영을 더한 Paint 작업 공간.",
       "sections": {
-        "painting": {
-          "title": "페인팅",
-          "text": "GPU로 실행되는 브러시 엔진으로 물감과 실제 회화 재료 사이의 상호작용을 시뮬레이션할 수 있습니다. 수채 물감은 종이 섬유에 스며들고, 유화 브러시는 색을 묻혀 옮기며, 연필은 종이결을 드러냅니다.",
-          "link": "브러시 도구"
+        "sketch": {
+          "title": "Sketch",
+          "text": "많은 사람들처럼 저도 십여 년 전 Procreate로 디지털 아트의 세계에 처음 발을 들였습니다. Apple Pencil이 처음 나왔을 때는 마법 같았습니다. 지금 기준으로 보면 하드웨어는 느렸지만, 워낙 잘 만들어져서 정말 종이에 펜으로 그리는 듯한 느낌이 들었습니다.\n\n드로잉 앱이 모바일 기기에 완전히 최적화된 것은 처음이었습니다. 펜 움직임을 예측해 추적하고, 브러시와 렌더링 엔진을 GPU로 구동했습니다. 그 위에 깔끔하고 간결한 UI를 더했고, 이후 현대 드로잉 앱 전반의 업계 표준이 되었습니다.\n\nSketch 작업 영역은 우리의 뿌리에 바치는 헌사입니다. 누구나 처음 시작하는 곳입니다.",
+          "image": {
+            "shot": "showcase/sketch",
+            "alt": "Sketch 작업 공간에 표시한, 큰 나무 아래의 전차를 그린 펜화. 그림이 화면을 가득 채우고 몇 가지 도구만 가장자리에 있습니다."
+          },
+          "links": [
+            {
+              "title": "브러시 도구",
+              "slug": "drawing/brush-tools"
+            },
+            {
+              "title": "펜",
+              "slug": "input/pen"
+            },
+            {
+              "title": "집중 모드",
+              "slug": "customize/zen"
+            }
+          ]
         },
-        "workspace": {
-          "title": "나만의 작업 공간",
-          "text": "{appName}에는 스케치, 페인팅, 사진 편집을 위한 익숙한 레이아웃이 준비되어 있고, 모든 도구와 패널을 원하는 위치로 옮길 수 있습니다. 방해 요소 없이 빈 캔버스만 보고 싶다면, 카피바라를 클릭해 Zen 모드로 들어가 보세요!",
-          "link": "작업 영역"
-        },
-        "input": {
-          "title": "펜, 터치와 마우스",
-          "text": "인터페이스는 처음부터 펜과 터치 조작을 고려해 설계되었습니다. Wacom, XP-Pen, Huion 드로잉 태블릿은 물론 iPad와 Galaxy 태블릿도 포함됩니다. 캔버스는 120 Hz를 온전히 활용해 펜 입력 지연을 줄입니다. 마우스를 써도 괜찮습니다.",
-          "link": "펜"
-        },
-        "color": {
-          "title": "색 고르기",
-          "text": "색상환은 사람이 색을 인식하는 방식을 바탕으로 한 OKLCH를 사용합니다. 팔레트로 좋아하는 색을 가까이 둘 수 있고, 사진 작업을 위해 넓은 색 영역, 16비트, HDR과 인쇄 교정도 지원합니다.",
-          "link": "색상 패널"
+        "paint": {
+          "title": "Paint",
+          "text": "본격적으로 만화를 그리기 시작하면 단순한 도구만으로는 부족해집니다. 올가미 채우기가 가장 든든한 친구가 되고, 필요악인 마스크와 함께 작업하는 법도 배우게 됩니다.\n\n전문 일러스트 작업을 위한 도구는 많고, CSP와 MediBang을 먼저 배우는 사람이 많습니다. 둘 다 훌륭하고 사용하기 쉬우며 직관적인 소프트웨어입니다. 작업 절차를 따르면 대체로 괜찮은 결과가 나옵니다.\n\n믿음직한 주력 도구이기는 하지만, 속도가 느리고 모든 렌더링과 합성을 GPU 대신 CPU로 처리하던 시대에 만들어졌습니다. 그래서 Fresco와 Rebelle 같은 현대 앱의 강력하고 사실적인 브러시 엔진을 따라잡지 못했습니다.\n\nPaint 작업 영역은 실제 화구의 시뮬레이션을 디지털 일러스트에 가져옵니다.",
+          "image": {
+            "shot": "showcase/paint",
+            "alt": "Paint 작업 공간에 표시한, 해 질 녘 바닷가의 집을 그린 유화. 캔버스 옆에 브러시, 색상, 레이어가 있습니다."
+          },
+          "links": [
+            {
+              "title": "일러스트 튜토리얼",
+              "slug": "illustration"
+            },
+            {
+              "title": "채우기 도구",
+              "slug": "drawing/fill"
+            },
+            {
+              "title": "마스크",
+              "slug": "layers/masks"
+            },
+            {
+              "title": "혼색, 번짐, 붓털",
+              "slug": "brushes/wet-media"
+            }
+          ]
         },
         "photo": {
-          "title": "사진 편집",
-          "text": "카메라나 휴대폰으로 찍은 사진을 그대로 열고, 자르기와 보정을 한 다음, 나중에 다시 조정할 수 있는 필터로 원하는 영역을 다듬어 보세요.",
-          "link": "사진 편집 튜토리얼"
-        },
-        "native": {
-          "title": "데스크톱과 태블릿",
-          "text": "{appName}는 Linux, Windows, macOS, Android, iPadOS용 베타로 제공됩니다. 각 버전은 컴파일된 네이티브 앱으로, 플랫폼 고유의 UI 툴킷을 사용합니다. 따라서 모든 기기에서 더 나은 성능과 배터리 지속 시간을 제공합니다.",
-          "link": "시스템 아키텍처"
+          "title": "Photo",
+          "text": "모바일 기기는 날마다 더 많은 일을 해냅니다. OLED 화면은 어디에나 있는 것 같고, 제 오래된 휴대폰도 기본적으로 사진을 P3 HDR 형식으로 저장합니다. SRGB는 이제 과거의 일입니다.\n\n지금까지 넓은 색 영역 HDR을 제대로 지원하는 페인팅 앱은 Krita뿐입니다. HDR은 복잡하고 제대로 구현하기 어렵습니다. HDR과 넓은 색 영역 이미지를 온라인에 공개할 때는 SDR 기기에서도 보기 좋도록 게인 매핑을 조절해야 합니다. 물론 교정, 효과 체인 등 기본 기능을 모두 갖춰야 사진 편집기라고 할 수 있습니다.\n\nPhoto 작업 영역은 새로운 세대의 넓은 색 영역 화면에서 눈길을 사로잡는 시각 표현을 가능하게 합니다.",
+          "image": {
+            "shot": "showcase/photo",
+            "alt": "Photo 작업 공간에 표시한 작은 테라리움 사진. 밝기로 영역을 선택하는 Tonal range 도구와 Curves, Vibrance 조정 레이어가 보입니다."
+          },
+          "links": [
+            {
+              "title": "사진 편집 튜토리얼",
+              "slug": "photo"
+            },
+            {
+              "title": "HDR",
+              "slug": "color-management/hdr"
+            },
+            {
+              "title": "필터 적용 방식",
+              "slug": "filters/how-filters-apply"
+            },
+            {
+              "title": "교정",
+              "slug": "color-management/proof"
+            }
+          ]
         }
-      },
-      "start": "{appName}는 웹 브라우저 안에서, 오프라인에서도 실행할 수 있습니다. 빠르고 간편하게 시작할 수 있는 방법입니다. 현재 베타인 데스크톱과 태블릿 앱은 최고의 성능과 하드웨어 호환성을 제공합니다.",
-      "links": {
-        "quickstart": "빠른 시작",
-        "illustration": "일러스트 튜토리얼"
       }
     }
   },

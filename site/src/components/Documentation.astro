@@ -1,7 +1,7 @@
 ---
 import { content } from '../data/content.mjs';
 import { docsUI } from '../data/docs-ui.mjs';
-import { appUrl, repositoryUrl, route, type Locale } from '../lib/site';
+import { route, type Locale } from '../lib/site';
 import DocsLayout from '../layouts/DocsLayout.astro';
 import GuideFigure from './GuideFigure.astro';
 import Icon from './Icon.astro';
@@ -10,54 +10,28 @@ interface Props { locale: Locale }
 const { locale } = Astro.props;
 const t = docsUI[locale];
 const overview = t.landing;
-const destinations: Record<string, string> = {
-  painting: 'drawing/brush-tools', workspace: 'start/workspaces', input: 'input/pen',
-  color: 'color/color-panel', photo: 'photo',
-};
-const topics = Object.entries(overview.sections).map(([id, copy]) => ({
-  id, copy,
-  href: id === 'native' ? repositoryUrl : destinations[id] ? route(locale, 'documentation', destinations[id]) : undefined,
-}));
-const startingPoints = 'links' in overview ? [
-  { title: content[locale].nav.webDemo, href: appUrl },
-  { title: content[locale].nav.download, href: route(locale, 'download') },
-  { title: overview.links.quickstart, href: route(locale, 'documentation', 'quickstart') },
-  { title: overview.links.illustration, href: route(locale, 'documentation', 'illustration') },
-] : [];
+const topics = Object.entries(overview.sections).map(([id, copy]) => ({ id, copy, paragraphs: copy.text.split('\n\n') }));
 ---
 <DocsLayout locale={locale}>
   <h1>{content[locale].documentation.title}</h1>
   <p class="docs-lead">{t.intro}</p>
-  {'alt' in overview && <div class="docs-overview-image">
-    <GuideFigure locale={locale} image={{ ...capturePair('guides/illustration', locale), alt: overview.alt }} />
-  </div>}
-  <div class:list={['docs-concepts', { 'docs-stories': 'sketch' in overview.sections }]}>
-    {topics.map(({ id, copy, href }) => <section aria-labelledby={id}>
-      {'image' in copy && <GuideFigure locale={locale} image={{ ...capturePair(copy.image.shot, locale), alt: copy.image.alt }} />}
+  <div class="docs-concepts docs-stories">
+    {topics.map(({ id, copy, paragraphs }) => <section aria-labelledby={id}>
+      <GuideFigure locale={locale} image={{ ...capturePair(copy.image.shot, locale), alt: copy.image.alt }} />
       <h2 id={id}>{copy.title}</h2>
-      {'links' in copy ? <div class="docs-story-text">
-        {copy.text.split('\n\n').slice(0, -1).map((paragraph: string) => <p>{paragraph}</p>)}
+      <div class="docs-story-text">
+        {paragraphs.slice(0, -1).map((paragraph: string) => <p>{paragraph}</p>)}
         <div class="docs-story-summary">
-          <blockquote><p>{copy.text.split('\n\n').at(-1).split(copy.title).map((part: string, index: number) => <>{index > 0 && <em>{copy.title}</em>}{part}</>)}</p></blockquote>
-          <nav aria-label={`Learn more about ${copy.title}`}>
+          <blockquote>{paragraphs.slice(-1).map((paragraph: string) => <p>{paragraph.split(copy.title).map((part: string, index: number) => <>{index > 0 && <em>{copy.title}</em>}{part}</>)}</p>)}</blockquote>
+          <nav aria-labelledby={id}>
             <ul class="docs-story-links">
               {copy.links.map(({ title, slug }: { title: string; slug: string }) => <li><a href={route(locale, 'documentation', slug)}><span>{title}</span><Icon name="arrow" /></a></li>)}
             </ul>
           </nav>
         </div>
-      </div> : <>
-        <p>{copy.text}</p>
-        {href && <a href={href}>{copy.link}<Icon name="arrow" /></a>}
-      </>}
+      </div>
     </section>)}
   </div>
-  {'start' in overview && <section class="docs-start" aria-labelledby="start">
-    <h2 id="start">{t.startTitle}</h2>
-    <p>{overview.start}</p>
-    <ul class="docs-start-links">{startingPoints.map(({ title, href }) => <li>
-      <a href={href}>{title}<Icon name="arrow" /></a>
-    </li>)}</ul>
-  </section>}
   {'tools' in overview && <section class="docs-features guide-prose" aria-labelledby="tools">
     <h2 id="tools">{overview.tools.title}</h2>
     <table>

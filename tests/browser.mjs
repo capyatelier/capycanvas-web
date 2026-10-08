@@ -35,10 +35,8 @@ try {
       const bounds=[...document.querySelectorAll('h1,h2,h3,p,a,summary')].filter(visible).filter(e=>e.getBoundingClientRect().right>innerWidth+1||e.getBoundingClientRect().left< -1).map(e=>e.textContent);
       const shot=document.querySelector('.showcase-frame[data-slide="paint"] img')?.getBoundingClientRect();
       const shown=[...document.querySelectorAll('.showcase-frame')].filter(frame=>getComputedStyle(frame).opacity!=='0').map(frame=>frame.dataset.slide);
-      const overviewImage=document.querySelector('.docs-overview-image img');
-      const overviewBounds=overviewImage?.getBoundingClientRect();
       const borders=[...document.querySelectorAll('header,nav,main,picture,section,a,li')].filter(visible).filter(e=>['Top','Right','Bottom','Left'].some(side=>parseFloat(getComputedStyle(e)['border'+side+'Width'])>0)).map(e=>e.className);
-      return { title: document.title, brand: document.querySelector('.brand span')?.textContent, brandLabel: document.querySelector('.brand')?.getAttribute('aria-label'), siteName: document.querySelector('[property="og:site_name"]')?.content, unresolved: document.body.textContent.includes('{appName}'), overviewSource:overviewImage?.currentSrc, overviewRatio:overviewBounds?overviewBounds.width/overviewBounds.height:null, overviewLink:document.querySelector('.docs-overview-image a')?.href, height:innerHeight, scrollHeight:document.documentElement.scrollHeight, shotRatio:shot?shot.width/shot.height:null, borders, width:innerWidth, scroll:document.documentElement.scrollWidth, lang:document.documentElement.dataset.locale, bg:getComputedStyle(document.body).backgroundColor, source:document.querySelector('.showcase-frame[data-slide="paint"] img')?.currentSrc, original:document.querySelector('.showcase-frame[data-slide="paint"] img')?.getAttribute('src'), shown, bounds,
+      return { title: document.title, brand: document.querySelector('.brand span')?.textContent, brandLabel: document.querySelector('.brand')?.getAttribute('aria-label'), siteName: document.querySelector('[property="og:site_name"]')?.content, unresolved: document.body.textContent.includes('{appName}'), height:innerHeight, scrollHeight:document.documentElement.scrollHeight, shotRatio:shot?shot.width/shot.height:null, borders, width:innerWidth, scroll:document.documentElement.scrollWidth, lang:document.documentElement.dataset.locale, bg:getComputedStyle(document.body).backgroundColor, source:document.querySelector('.showcase-frame[data-slide="paint"] img')?.currentSrc, original:document.querySelector('.showcase-frame[data-slide="paint"] img')?.getAttribute('src'), shown, bounds,
         labels:[...document.querySelectorAll('a,summary')].filter(visible).every(e=>(e.getAttribute('aria-label')||e.textContent||e.querySelector('img[alt]')?.alt||'').trim()),
         headings:document.querySelectorAll('h1').length,
         broken:[...document.images].some(i=>!i.complete||!i.naturalWidth)
@@ -63,13 +61,7 @@ try {
     }
     if(page==='download') check(await b.evaluate("[...document.querySelectorAll('.pick .button,.platform .button')].filter(button=>button.getClientRects().length).every(button=>{const s=getComputedStyle(button),icon=button.querySelector('svg'),start=parseFloat(s.paddingInlineStart),end=parseFloat(s.paddingInlineEnd);return icon?end-start===8&&parseFloat(s.gap)===8:start===end})"),'Download icons use a smaller leading inset without changing label gaps or text-only buttons');
     if(page==='documentation') {
-      if (locale === 'en') {
-        check(await b.evaluate(`!document.querySelector('.docs-overview-image') && [...document.querySelectorAll('.docs-stories img')].length === 3 && [...document.querySelectorAll('.docs-stories img')].every(image => { const box=image.getBoundingClientRect(); return image.currentSrc.endsWith('-${theme}.webp') && Math.abs(box.width/box.height-16/9)<.01; })`), `English workspace stories and image proportions ${label}`);
-      } else {
-        check(new RegExp(`/assets/guides/(${locale}|shared)/illustration-${theme}\\.webp$`).test(metrics.overviewSource),`Overview image theme and language ${label}`);
-        check(Math.abs(metrics.overviewRatio-16/9)<.01,`Overview image aspect ratio ${label}`);
-        check(metrics.overviewLink===metrics.overviewSource,`Overview full-size image ${label}`);
-      }
+      check(await b.evaluate(`!document.querySelector('.docs-overview-image') && [...document.querySelectorAll('.docs-stories img')].length === 3 && [...document.querySelectorAll('.docs-stories img')].every(image => { const box=image.getBoundingClientRect(); return image.currentSrc.endsWith('-${theme}.webp') && Math.abs(box.width/box.height-16/9)<.01; })`), `Workspace stories and image proportions ${label}`);
     }
     if((width===1440&&locale==='en')||(width===390&&(locale==='en'||theme==='dark'))) await b.screenshot(`artifacts/review/${name.replace('/','-')}${width}-${theme}-${locale}-${page}.png`,true);
     report.push(label);
