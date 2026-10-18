@@ -55,7 +55,6 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
-      "installCommand": "Comando de instalación",
       "copy": "Copiar",
       "copied": "Copiado",
       "pastVersions": "Versiones anteriores",
@@ -171,7 +170,6 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
-      "installCommand": "Comando de instalação",
       "copy": "Copiar",
       "copied": "Copiado",
       "pastVersions": "Versões anteriores",
@@ -287,7 +285,6 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
-      "installCommand": "Perintah instalasi",
       "copy": "Salin",
       "copied": "Disalin",
       "pastVersions": "Versi sebelumnya",
@@ -403,7 +400,6 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
-      "installCommand": "Commande d'installation",
       "copy": "Copier",
       "copied": "Copié",
       "pastVersions": "Versions précédentes",
@@ -519,7 +515,6 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
-      "installCommand": "Installationsbefehl",
       "copy": "Kopieren",
       "copied": "Kopiert",
       "pastVersions": "Frühere Versionen",
@@ -635,7 +630,6 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
-      "installCommand": "Команда установки",
       "copy": "Копировать",
       "copied": "Скопировано",
       "pastVersions": "Предыдущие версии",
@@ -751,7 +745,6 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
-      "installCommand": "คำสั่งติดตั้ง",
       "copy": "คัดลอก",
       "copied": "คัดลอกแล้ว",
       "pastVersions": "เวอร์ชันก่อนหน้า",
@@ -867,7 +860,6 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
-      "installCommand": "Lệnh cài đặt",
       "copy": "Sao chép",
       "copied": "Đã sao chép",
       "pastVersions": "Các phiên bản trước",
@@ -983,7 +975,6 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
-      "installCommand": "Kurulum komutu",
       "copy": "Kopyala",
       "copied": "Kopyalandı",
       "pastVersions": "Önceki sürümler",
@@ -1099,7 +1090,6 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
-      "installCommand": "Comando di installazione",
       "copy": "Copia",
       "copied": "Copiato",
       "pastVersions": "Versioni precedenti",

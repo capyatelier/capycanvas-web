@@ -39,8 +39,8 @@ const picks: Pick[] = [
   <div class="pick" data-pick hidden>
     {picks.map(pick => <div data-platform={pick.platform} data-arch={pick.arch} hidden>
       <a class="button primary" href={pick.href}><Icon name={pick.icon} />{pick.label}</a>
-      {pick.command && <div class="command" style={`--length: ${pick.command.length}`}>
-        <input value={pick.command} aria-label={t.installCommand} readonly spellcheck="false" autocomplete="off" />
+      {pick.command && <div class="command">
+        <code>{pick.command}</code>
         <button type="button" data-copy={t.copy} data-copied={t.copied} title={t.copy} aria-label={t.copy}><Icon name="copy" /><Icon name="check" /></button>
       </div>}
       {pick.detail && <p>{pick.detail}</p>}
@@ -86,12 +86,11 @@ const picks: Pick[] = [
     else show();
   }
   for (const button of document.querySelectorAll<HTMLButtonElement>('.command button')) {
-    const field = button.previousElementSibling as HTMLInputElement;
+    const command = button.previousElementSibling as HTMLElement;
     const label = (text = '') => { button.title = text; button.setAttribute('aria-label', text); };
     let reset: ReturnType<typeof setTimeout>;
-    field.addEventListener('click', () => field.select());
     button.addEventListener('click', async () => {
-      try { await navigator.clipboard.writeText(field.value); } catch { field.select(); return; }
+      try { await navigator.clipboard.writeText(command.textContent ?? ''); } catch { getSelection()?.selectAllChildren(command); return; }
       button.classList.add('copied'); label(button.dataset.copied);
       clearTimeout(reset);
       reset = setTimeout(() => { button.classList.remove('copied'); label(button.dataset.copy); }, 1200);
@@ -106,9 +105,10 @@ const picks: Pick[] = [
   .pick .button, .platform .button:has(> svg) { padding-inline-start: calc(var(--button-padding-inline) - 8px); }
   .pick .button :global(svg) { width: 18px; height: 18px; }
   .pick p { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
-  .command { position: relative; width: min(calc(var(--length) * 1ch + 48px), 100%); margin-top: 12px; font: 12px 'Adwaita Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
-  .command input { display: block; width: 100%; height: var(--control-height); padding: 0 36px 0 12px; border: 0; border-radius: var(--control-radius); background: var(--field); color: var(--ink); font: inherit; text-overflow: ellipsis; }
-  .command button { position: absolute; top: 3px; right: 3px; display: grid; place-items: center; width: 28px; height: 28px; padding: 0; border: 0; border-radius: var(--control-radius); background: transparent; color: var(--muted); cursor: pointer; }
+  .command { display: flex; align-items: center; width: fit-content; max-width: 100%; min-height: var(--control-height); margin-top: 12px; padding: 0 3px 0 12px; border-radius: var(--control-radius); background: var(--field); font: 12px 'Adwaita Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+  .command::before { content: '$'; content: '$' / ''; margin-right: 1ch; color: var(--muted); user-select: none; }
+  .command code { min-width: 0; overflow: hidden; font: inherit; white-space: nowrap; text-overflow: ellipsis; user-select: all; }
+  .command button { flex: none; display: grid; margin-left: 8px; place-items: center; width: 28px; height: 28px; padding: 0; border: 0; border-radius: var(--control-radius); background: transparent; color: var(--muted); cursor: pointer; }
   .command button:hover { background: var(--hover); color: var(--ink); }
   .command button:active { background: var(--pressed); }
   .command button :global(svg) { width: 16px; height: 16px; }
