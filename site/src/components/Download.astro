@@ -17,14 +17,15 @@ const files: Partial<Record<Platform, PlatformFile[]>> = latest?.files ?? {};
 const name = (platform: Platform) => t.platforms[platforms.indexOf(platform)];
 const href = (file: PlatformFile) => file.install?.url ?? file.url;
 const architectures: Partial<Record<Variant, string>> = { x64: 'x86', arm64: 'arm' };
-interface Pick { platform: string; href: string; icon: keyof typeof paths; label: string; detail?: string; arch?: string }
+const commands: Partial<Record<Variant, (file: PlatformFile) => string>> = { flatpak: file => `flatpak install --from ${href(file)}` };
+interface Pick { platform: string; href: string; icon: keyof typeof paths; label: string; detail?: string; arch?: string; command?: string }
 const picks: Pick[] = [
   ...platforms.flatMap((platform): Pick[] => {
     const beta = betaPages[platform];
     if (beta) return [{ platform, href: route(locale, beta), icon: platform, label: t.joinBeta, detail: content[locale][beta].title }];
     if (!latest) return [];
     return (files[platform] ?? []).map(file => ({
-      platform, href: href(file), icon: 'download', arch: architectures[file.variant],
+      platform, href: href(file), icon: 'download', arch: architectures[file.variant], command: commands[file.variant]?.(file),
       label: t.downloadFor.replace('{version}', latest.version).replace('{platform}', `${name(platform)} ${t.variants[file.variant]}`),
       detail: content[locale].versions.released.replace('{date}', formatDate(lang, latest.date)),
     }));
@@ -38,6 +39,10 @@ const picks: Pick[] = [
   <div class="pick" data-pick hidden>
     {picks.map(pick => <div data-platform={pick.platform} data-arch={pick.arch} hidden>
       <a class="button primary" href={pick.href}><Icon name={pick.icon} />{pick.label}</a>
+      {pick.command && <div class="command" style={`--length: ${pick.command.length}`}>
+        <input value={pick.command} aria-label={t.installCommand} readonly spellcheck="false" autocomplete="off" />
+        <button type="button" data-copy={t.copy} data-copied={t.copied} title={t.copy} aria-label={t.copy}><Icon name="copy" /><Icon name="check" /></button>
+      </div>}
       {pick.detail && <p>{pick.detail}</p>}
     </div>)}
   </div>
@@ -80,6 +85,18 @@ const picks: Pick[] = [
     if (choices.length > 1 && agent) agent.getHighEntropyValues(['architecture']).then(values => show(values.architecture), () => show());
     else show();
   }
+  for (const button of document.querySelectorAll<HTMLButtonElement>('.command button')) {
+    const field = button.previousElementSibling as HTMLInputElement;
+    const label = (text = '') => { button.title = text; button.setAttribute('aria-label', text); };
+    let reset: ReturnType<typeof setTimeout>;
+    field.addEventListener('click', () => field.select());
+    button.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(field.value); } catch { field.select(); return; }
+      button.classList.add('copied'); label(button.dataset.copied);
+      clearTimeout(reset);
+      reset = setTimeout(() => { button.classList.remove('copied'); label(button.dataset.copy); }, 1200);
+    });
+  }
 </script>
 
 <style>
@@ -89,6 +106,13 @@ const picks: Pick[] = [
   .pick .button, .platform .button:has(> svg) { padding-inline-start: calc(var(--button-padding-inline) - 8px); }
   .pick .button :global(svg) { width: 18px; height: 18px; }
   .pick p { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
+  .command { position: relative; width: min(calc(var(--length) * 1ch + 48px), 100%); margin-top: 12px; font: 12px 'Adwaita Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+  .command input { display: block; width: 100%; height: var(--control-height); padding: 0 36px 0 12px; border: 0; border-radius: var(--control-radius); background: var(--field); color: var(--ink); font: inherit; text-overflow: ellipsis; }
+  .command button { position: absolute; top: 3px; right: 3px; display: grid; place-items: center; width: 28px; height: 28px; padding: 0; border: 0; border-radius: var(--control-radius); background: transparent; color: var(--muted); cursor: pointer; }
+  .command button:hover { background: var(--hover); color: var(--ink); }
+  .command button:active { background: var(--pressed); }
+  .command button :global(svg) { width: 16px; height: 16px; }
+  .command button:not(.copied) :global(svg + svg), .command button.copied :global(svg:first-child) { display: none; }
   .pick [hidden], .pick[hidden] { display: none; }
   .other-platforms h2 { font-size: 16px; font-weight: 650; margin-bottom: 4px; }
   .platform-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: var(--gap); margin-left: auto; }

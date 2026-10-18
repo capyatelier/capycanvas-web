@@ -108,6 +108,9 @@ for (const locale of Object.keys(languages)) {
       ['mac', '', `${download}/v1.0.2/capycanvas-1.0.2-macos-arm64.dmg`],
       ['other', '', 'https://editor.capycanvas.art/'],
     ]);
+    assert.match(page, /<div data-platform="linux" hidden[^>]*><a [^>]+>[\s\S]*?<\/a><div class="command"/);
+    assert.deepEqual([...page.matchAll(/<input value="([^"]+)" aria-label="([^"]+)" readonly/g)].map(([, command, label]) => [command, label]), [[`flatpak install --from ${flatpakRef}`, escape(t.download.installCommand)]]);
+    assert.ok(page.includes(`data-copy="${escape(t.download.copy)}" data-copied="${escape(t.download.copied)}" title="${escape(t.download.copy)}" aria-label="${escape(t.download.copy)}"`));
     for (const name of ['Linux Flatpak', 'Windows x64', 'Windows Arm64', `macOS ${variants.appleSilicon}`]) {
       assert.ok(page.includes(`>${escapeText(t.download.downloadFor.replace('{version}', '1.0.2').replace('{platform}', name))}</a>`), name);
     }

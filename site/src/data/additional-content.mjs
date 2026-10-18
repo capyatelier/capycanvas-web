@@ -55,6 +55,9 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
+      "installCommand": "Comando de instalación",
+      "copy": "Copiar",
+      "copied": "Copiado",
       "pastVersions": "Versiones anteriores",
       "allReleases": "Versiones en GitHub",
       "notesLanguage": "Las notas de la versión están en inglés.",
@@ -168,6 +171,9 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
+      "installCommand": "Comando de instalação",
+      "copy": "Copiar",
+      "copied": "Copiado",
       "pastVersions": "Versões anteriores",
       "allReleases": "Versões no GitHub",
       "notesLanguage": "As notas da versão estão em inglês.",
@@ -281,6 +287,9 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
+      "installCommand": "Perintah instalasi",
+      "copy": "Salin",
+      "copied": "Disalin",
       "pastVersions": "Versi sebelumnya",
       "allReleases": "Rilis di GitHub",
       "notesLanguage": "Catatan rilis tersedia dalam bahasa Inggris.",
@@ -394,6 +403,9 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
+      "installCommand": "Commande d'installation",
+      "copy": "Copier",
+      "copied": "Copié",
       "pastVersions": "Versions précédentes",
       "allReleases": "Versions sur GitHub",
       "notesLanguage": "Les notes de version sont en anglais.",
@@ -507,6 +519,9 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
+      "installCommand": "Installationsbefehl",
+      "copy": "Kopieren",
+      "copied": "Kopiert",
       "pastVersions": "Frühere Versionen",
       "allReleases": "Versionen auf GitHub",
       "notesLanguage": "Die Versionshinweise sind auf Englisch.",
@@ -620,6 +635,9 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
+      "installCommand": "Команда установки",
+      "copy": "Копировать",
+      "copied": "Скопировано",
       "pastVersions": "Предыдущие версии",
       "allReleases": "Выпуски на GitHub",
       "notesLanguage": "Примечания к выпуску на английском языке.",
@@ -733,6 +751,9 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
+      "installCommand": "คำสั่งติดตั้ง",
+      "copy": "คัดลอก",
+      "copied": "คัดลอกแล้ว",
       "pastVersions": "เวอร์ชันก่อนหน้า",
       "allReleases": "รุ่นที่เผยแพร่บน GitHub",
       "notesLanguage": "บันทึกประจำรุ่นเป็นภาษาอังกฤษ",
@@ -846,6 +867,9 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
+      "installCommand": "Lệnh cài đặt",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép",
       "pastVersions": "Các phiên bản trước",
       "allReleases": "Các bản phát hành trên GitHub",
       "notesLanguage": "Ghi chú phát hành bằng tiếng Anh.",
@@ -959,6 +983,9 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
+      "installCommand": "Kurulum komutu",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı",
       "pastVersions": "Önceki sürümler",
       "allReleases": "GitHub'daki sürümler",
       "notesLanguage": "Sürüm notları İngilizcedir.",
@@ -1072,6 +1099,9 @@ export const additionalContent = {
         "arm64": "Arm64",
         "appleSilicon": "Apple silicon"
       },
+      "installCommand": "Comando di installazione",
+      "copy": "Copia",
+      "copied": "Copiato",
       "pastVersions": "Versioni precedenti",
       "allReleases": "Versioni su GitHub",
       "notesLanguage": "Le note di rilascio sono in inglese.",

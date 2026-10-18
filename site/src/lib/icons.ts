@@ -4,6 +4,7 @@ export const paths = {
   external: '<path d="M7 17 17 7M7 7h10v10"/>',
   chevron: '<path d="m6 9 6 6 6-6"/>',
   check: '<path d="m5 12 4 4L19 6"/>',
+  copy: '<rect x="9" y="9" width="11" height="11" rx="2"/><path d="M15 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h3"/>',
   globe: '<circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/>',
   download: '<path d="M12 3v12m-5-5 5 5 5-5M4 15v5h16v-5"/>',
   book: '<path d="M12 5v15M3 4h5a4 4 0 0 1 4 2 4 4 0 0 1 4-2h5v14h-5a4 4 0 0 0-4 2 4 4 0 0 0-4-2H3Z"/>',
