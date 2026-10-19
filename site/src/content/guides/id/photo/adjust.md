@@ -26,23 +26,23 @@ Pilih **Filter > Warna > Vibransi**, lalu setel **Vibransi** ke 25 di panel
 **Properti** ([Filter Warna](/id/docs/filters/color/)). Lapisan **Vibransi** muncul di
 atas **Kurva**.
 
-## 3. Seleksi batu
+## 3. Tambahkan Bayangan/Sorotan
 
-1. Tekan **M**, atau pilih **Seleksi laso** di bilah alat Alat, lalu gambar di sekeliling batu.
-2. Pilih **Seleksi > Perhalus Tepi Seleksi…**, atau pilih **Perbaiki** di bilah seleksi lalu pilih **Perhalus Tepi…** ([Bekerja dengan seleksi](/id/docs/selections/working/)).
-3. Setel **Feather radius** ke 20 px, lalu pilih **Terapkan**.
+Pilih **Filter > Nada > Bayangan/Sorotan**. Atur **Bayangan** ke 35% di panel **Properti**. Lapisan **Bayangan/Sorotan** muncul di atas **Vibransi** dan tetap dipilih.
 
-## 4. Angkat bayangan di batu
+## 4. Batasi penyesuaian ke batu dengan mask
 
 Mengangkat bayangan di seluruh foto akan mengubah latar belakang hitam menjadi
 abu-abu. Contoh ini hanya mengangkat bayangan di batu.
 
-Pilih **Sesuaikan** di bilah seleksi, lalu pilih **Nada > Bayangan/Sorotan**. Setel
-**Bayangan** ke 35% di panel **Properti**.
+1. Tekan **M**, atau pilih **Seleksi laso** di bilah alat Alat, lalu gambar di sekeliling batu.
+2. Pilih **Seleksi > Perhalus Tepi Seleksi…**, atau pilih **Perbaiki** di bilah seleksi lalu pilih **Perhalus Tepi…** ([Bekerja dengan seleksi](/id/docs/selections/working/)).
+3. Setel **Radius perhalusan tepi** ke 20 px, lalu pilih **Terapkan**.
+4. Pilih **Mask** di bilah seleksi.
 
-![Bilah seleksi dengan menu Sesuaikan terbuka pada kategori Nada, di samping seleksi di sekeliling batu.](shot:photo/adjust-bar)
+![Bilah seleksi dengan Mask di samping seleksi di sekeliling batu.](shot:photo/adjust-bar)
 
-Seleksi menjadi mask lapisan **Bayangan/Sorotan** yang baru. Hanya batu yang berubah.
+Seleksi menjadi mask lapisan **Bayangan/Sorotan**. Hanya batu yang berubah.
 
 ## 5. Simpan gambar
 

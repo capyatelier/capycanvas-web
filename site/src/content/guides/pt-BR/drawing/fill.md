@@ -77,10 +77,7 @@ Preencher não pinta nada e um aviso oferece marcar a camada abaixo.
 
 ![O painel Ferramenta de Preencher, com Tolerância, o grupo Bordas e Opacidade.](shot:drawing/fill-settings)
 
-Preencher e Contornar e preencher compartilham as configurações abaixo.
-**Seleção automática** e **Selecionar por cor** usam os mesmos valores, exceto
-**Opacidade**. Para redefinir uma configuração, clique duas vezes no rótulo dela
-na barra Opções da ferramenta ([Tamanho, opacidade e fluxo](/pt-BR/docs/brushes/basics/)).
+Preencher e Contornar e preencher compartilham os ajustes abaixo. **Seleção automática** e **Selecionar por cor** usam os mesmos valores, exceto **Opacidade**. Para redefinir um ajuste, clique duas vezes no rótulo na barra Opções da ferramenta ([Tamanho, intensidade e opacidade](/pt-BR/docs/brushes/basics/)).
 
 ### Tolerância
 
@@ -104,9 +101,7 @@ as bordas duras dos pixels.
 
 ### Opacidade
 
-Define a intensidade do preenchimento. Alterá-la altera a **Opacidade** do pincel
-atual, e vice-versa. Em Esboço, use o controle deslizante de opacidade na barra da
-borda esquerda.
+Define a intensidade do preenchimento. Alterá-la altera a **Opacidade** do pincel atual e vice-versa. Em Esboço, use **Controle de intensidade** na barra da borda esquerda.
 
 ## Preencher uma seleção
 

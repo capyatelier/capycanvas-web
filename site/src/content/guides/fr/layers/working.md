@@ -139,7 +139,4 @@ Effectuez l’une des opérations suivantes :
 - Sélectionnez **Importer une image comme calque…** en bas du panneau Calques.
 - Faites glisser des fichiers image sur la toile ou sur une ligne du panneau Calques.
 
-Chaque fichier devient un [calque photo](/fr/docs/layers/types/) au-dessus du
-calque actif, ou au-dessus, au-dessous ou à l’intérieur de la ligne sur laquelle
-vous le déposez. L’image est centrée et réduite pour tenir dans la toile, avec des
-[poignées de placement](/fr/docs/transform/move-transform/).
+Chaque fichier devient un [calque Objet](/fr/docs/layers/types/) au-dessus du calque actif, ou au-dessus, en dessous ou à l’intérieur de la ligne sur laquelle vous le déposez. L’image est centrée et réduite pour tenir dans la toile, avec des [poignées de placement](/fr/docs/transform/move-transform/).

@@ -1,12 +1,10 @@
 ---
 title: "Công cụ cọ"
 description: "Các công cụ cọ, cọ đặt sẵn có trong ứng dụng, và nơi chọn chúng."
-related: ["brushes/basics", "drawing/blend-liquify", "color/color-panel", "input/keyboard"]
+related: ["brushes/basics", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
 ---
 
-Bạn có thể vẽ bằng các công cụ **Bút**, **Bút chì**, **Cọ vẽ**, **Bút phun** và
-**Trang trí**, và tẩy bằng **Tẩy**. Mỗi công cụ chứa một hoặc nhiều nhóm cọ đặt sẵn
-có trong ứng dụng.
+Bạn có thể vẽ bằng các công cụ **Bút**, **Bút chì**, **Than vẽ**, **Phấn**, **Phấn tiên**, **Bút sáp màu**, **Cọ vẽ**, **Bút phun** và **Trang trí**, và tẩy bằng **Tẩy**. Mỗi công cụ chứa một hoặc nhiều nhóm cọ đặt sẵn có trong ứng dụng.
 
 ## Công cụ và cọ đặt sẵn
 
@@ -15,7 +13,10 @@ có trong ứng dụng.
 | **Bút** | **Bút** | **Bút G**, **Bút G thô**, **Bút thư pháp**, **Bút cổ điển**, **Bút tự nhiên**, **Mực ướt**, **Mực loang**, **Mực cọ tự nhiên** |
 | | **Bút dạ** | **Bút dạ** |
 | **Bút chì** | **Bút chì** | **Bút chì**, **Bút chì nhọn**, **Bút chì tô bóng** |
-| | **Phấn tiên** | **Than vẽ**, **Phấn**, **Khối phấn tiên** |
+| **Than vẽ** | **Than vẽ** | **Than vẽ** |
+| **Phấn** | **Phấn** | **Phấn** |
+| **Phấn tiên** | **Phấn tiên** | **Khối phấn tiên** |
+| **Bút sáp màu** | **Bút sáp màu** | **Bút sáp màu** |
 | **Cọ vẽ** | **Vẽ** | **Cọ vẽ**, **Cọ lông**, **Cọ dẹt có kết cấu**, **Cọ khô phủ mỏng**, **Lớp phủ trong**, **Màu bột đục**, **Lớp phủ nhân màu** |
 | | **Màu nước** | **Màu nước phủ loãng**, **Màu nước ướt** |
 | | **Sơn dầu** | **Cọ sơn dầu đẫm**, **Dao bay**, **Cọ tròn ướt** |
@@ -36,9 +37,9 @@ Các đặc tính này có sẵn trong cọ đặt sẵn và không có thiết 
 | --- | --- |
 | **Bút thư pháp**, **Bút cổ điển** | Ngòi đặt nghiêng. |
 | **Bút dạ** | Đầu vát. |
-| **Bút chì**, **Bút chì nhọn**, **Bút chì tô bóng**, **Than vẽ** | Nét rộng hơn khi bạn nghiêng bút. |
+| **Bút chì**, **Bút chì nhọn**, **Bút chì tô bóng**, **Than vẽ**, **Phấn**, **Khối phấn tiên**, **Bút sáp màu** | Lực nhấn và độ nghiêng thay đổi hình dạng và độ phủ dấu vẽ. Xem [Chất liệu khô](/vi/docs/brushes/dry-media/). |
 | **Bút phun** | Tiếp tục thêm màu khi bạn giữ yên bút. |
-| **Phun màu** | Rải các dấu cọ quanh nét vẽ. |
+| **Phun màu** | Rải dấu cọ quanh nét. |
 | **Lớp phủ nhân màu** | Vẽ ở chế độ Nhân. |
 
 ## Chọn công cụ cọ
@@ -122,7 +123,7 @@ Trên các lớp sau, nét vẽ không vẽ gì và một thông báo nêu lý d
 - Lớp tô màu không có mặt nạ.
 - Lớp đang bật **Khóa chỉnh sửa**, hoặc nằm trong nhóm đã khóa.
 - Lớp bộ lọc không có mặt nạ, khi lớp bên dưới đã khóa hoặc không tồn tại.
-- Lớp đã đổi tỷ lệ hoặc đã xoay, cho đến khi bạn chọn **Áp dụng biến đổi vào pixel** ([Di chuyển và biến đổi](/vi/docs/transform/move-transform/)).
+- Lớp đã đổi tỷ lệ hoặc đã xoay, cho đến khi bạn chọn **Áp dụng biến đổi** ([Di chuyển và biến đổi](/vi/docs/transform/move-transform/)).
 
 Cọ ướt, cọ hòa màu và cọ màu nước chỉ vẽ độ phủ đơn thuần trên mặt nạ. Nét đầu tiên
 như vậy trên mỗi mặt nạ sẽ hiện một thông báo.

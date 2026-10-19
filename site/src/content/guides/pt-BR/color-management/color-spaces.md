@@ -54,10 +54,7 @@ Preferências não tem configuração de Mesclagem.
 
 ## Atribuir perfil
 
-Escolha **Editar > Atribuir perfil…** para manter os números RGB do desenho e
-interpretá-los em outro espaço de trabalho. Escolha o espaço em **Espaço de
-cores**, onde o Adobe RGB (1998) aparece como **Adobe RGB**. As camadas de foto
-mantêm o perfil de origem da [foto original](/pt-BR/docs/layers/types/).
+Escolha **Editar > Atribuir perfil…** para manter os valores RGB do desenho e interpretá-los em outro espaço de trabalho. Escolha o espaço em **Espaço de cores**, onde Adobe RGB (1998) aparece como **Adobe RGB**. Camadas de objeto mantêm o perfil de origem da [foto original](/pt-BR/docs/layers/types/).
 
 ## Converter espaço de cores
 

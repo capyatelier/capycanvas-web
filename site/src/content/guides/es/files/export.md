@@ -1,11 +1,13 @@
 ---
 title: "Exportar imágenes"
-description: "Exportar una copia acoplada de un dibujo como imagen con el diálogo Exportar imagen y con Exportar de nuevo."
-related: ["files/open-save", "color-management/hdr", "color-management/color-spaces"]
+description: "Exportar una copia acoplada del dibujo con el diálogo Exportar imagen y Exportar de nuevo."
+related: ["files/open-save", "layers/paper", "color-management/hdr", "color-management/color-spaces"]
 ---
 
 Puedes exportar una copia acoplada del dibujo como imagen. Exportar no cambia el
 dibujo `.capy` ni cuenta como guardar.
+
+Las exportaciones nativas incluyen la [iluminación del Papel](/es/docs/layers/paper/). Las exportaciones web la omiten actualmente. La vista previa temporal del relieve que aparece al cambiar la textura o la escala del Papel no se incluye.
 
 ## Exportar una imagen
 
@@ -56,8 +58,7 @@ aparece con esos formatos.
 
 ### Perfil de salida
 
-**sRGB**, **Display P3**, **Adobe RGB (1998)** o **ProPhoto RGB**, además de
-«Original: *nombre*» por cada capa de foto que tenga su propio perfil incrustado.
+**sRGB**, **Display P3**, **Adobe RGB (1998)** o **ProPhoto RGB**, más «Original: *nombre*» para cada capa de objeto con su propio perfil incrustado.
 
 ### Profundidad de bits
 

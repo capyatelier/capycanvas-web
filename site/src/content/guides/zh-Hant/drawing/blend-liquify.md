@@ -42,7 +42,7 @@ related: ["drawing/brush-tools", "brushes/wet-media", "brushes/tip-texture", "re
 
 ![液化結晶的工具設定面板，液化分組中顯示強度和扭曲量。](shot:drawing/liquify-settings)
 
-**強度**、**扭曲量**和**慣性**位於**工具設定**面板的**液化**分組中。液化沒有**流量**。
+**強度**、**扭曲** 和 **慣性** 位於 **工具設定** 面板的 **液化** 分組中。**強度** 設定筆跡移動像素的強度。
 
 ### 強度
 

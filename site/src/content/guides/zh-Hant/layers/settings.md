@@ -107,4 +107,4 @@ related: ["layers/panel", "layers/blend-modes", "layers/types", "filters/how-fil
 
 ## 其他圖層設定項
 
-**圖層設定**中還有**將變形套用至像素**（參見[移動與變形](/zh-Hant/docs/transform/move-transform/)）。在照片圖層上，其中還有**修復來源描述檔…**、**點陣化來源影像…** 和**還原原始照片**（參見[圖層型別](/zh-Hant/docs/layers/types/)）。
+**圖層設定** 還列出 **套用變形**（參見[移動和變換](/zh-Hant/docs/transform/move-transform/)）。在物件圖層上，選擇 **點陣化圖層** 可將源影像轉換為可編輯像素（參見[圖層類型](/zh-Hant/docs/layers/types/)）。

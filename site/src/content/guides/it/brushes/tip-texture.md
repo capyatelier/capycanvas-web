@@ -1,12 +1,10 @@
 ---
 title: "Punta e trama"
-description: "Le impostazioni di Punta che danno forma a ogni impronta, e Intensità della trama per la grana della carta nel segno."
+description: "Le impostazioni Punta che modellano ogni impronta e Intensità della trama per la trama della carta nel segno."
 related: ["brushes/basics", "brushes/wet-media", "drawing/brush-tools"]
 ---
 
-Puoi cambiare la forma di ogni impronta e quanto la grana della carta si vede nel
-segno con le impostazioni **Punta** e **Trama** del pannello **Strumento**
-([Dimensioni, opacità e flusso](/it/docs/brushes/basics/)).
+Puoi cambiare la forma di ogni impronta e quanto la trama della carta modifica il segno con le impostazioni **Punta** e **Trama** del pannello **Strumento** ([Dimensioni, intensità e opacità](/it/docs/brushes/basics/)).
 
 ![Il pannello Strumento per Matita con il gruppo Punta e il gruppo Trama.](shot:brushes/tip-texture-settings)
 
@@ -24,7 +22,7 @@ Imposta la distanza tra le impronte, in percentuale del diametro dell'impronta
 alla pressione corrente. Il cursore arriva al 100%, e puoi digitare valori fino
 al 1000%.
 
-### Angolo
+### Angolo della punta
 
 Ruota la punta, da −180° a 180°. Una punta tonda appare uguale a qualsiasi
 angolo.
@@ -45,11 +43,11 @@ entrambe le direzioni.
 Le punte di **Pennello**, **Pennello piatto con trama**, **Pastello a blocco**,
 **Velatura trasparente**, **Gouache coprente**, **Olio carico**, **Spatola**,
 **Lavatura ad acquerello**, **Acquerello bagnato**, **Doppia trama** e **Sfumino
-naturale** seguono la direzione del tratto. **Angolo** non ha effetto su questi
+naturale** seguono la direzione del tratto. **Tip angle** non ha effetto su questi
 pennelli.
 
 **Sfregazzo asciutto** e **Inchiostro realistico a pennello** aggiungono la
-direzione del tratto ad **Angolo**.
+direzione del tratto ad **Angolo della punta**.
 
 ## Trama
 
@@ -58,12 +56,10 @@ direzione del tratto ad **Angolo**.
 **Sfregazzo asciutto**, **Velatura trasparente**, **Gouache coprente**, **Olio
 carico**, **Spatola**, **Doppia trama** e **Sfumino naturale**.
 
-La grana è fissa rispetto alla tela. Ogni pennello ha la propria grana, e non
-puoi cambiarne la dimensione né sceglierne un'altra.
+I pennelli a secco usano la trama della Carta più vicina sotto il livello di destinazione. Scegli e ridimensiona la trama in [Carta](/it/docs/layers/paper/).
 
 ### Intensità della trama
 
-Imposta quanto la grana della carta si vede nel segno. Allo 0% la grana non ha
-effetto, e al 100% il colore segue completamente la grana.
+Imposta quanto la trama della Carta cambia la copertura. A 0% la trama non ha effetto.
 
 ![Tre tratti di Carboncino con Intensità della trama a 0%, 50% e 100%.](shot:brushes/texture-strength)

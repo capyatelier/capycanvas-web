@@ -12,14 +12,13 @@ Scegli **File > Apri…**, o premi **Ctrl+O**, e seleziona la foto
 ([Aprire e salvare](/it/docs/files/open-save/)). La foto si apre in una scheda di
 disegno propria.
 
-![Il pannello Livelli con il livello fotografico del terrario sopra un livello Carta nascosto.](shot:photo/open-layers)
+![Il pannello Livelli con il livello Oggetto del terrario.](shot:photo/open-layers)
 
-Il disegno ha un livello, con il nome del file, sopra un livello **Carta**
-nascosto. Nell'esempio, il livello si chiama «terrarium».
+Il disegno ha un livello Oggetto che prende il nome dal file. Nell'esempio, il livello si chiama «terrarium».
 
 ## 2. Scegli le proporzioni
 
-Scegli **Modifica > Immagine > Ritaglia**, seleziona **Ritaglia** nella barra
+Scegli **Immagine > Ritaglia**, seleziona **Ritaglia** nella barra
 strumenti Strumenti o premi **C** ([Ritaglio](/it/docs/transform/crop/)).
 Sopra la foto appare una cornice con maniglie, con la barra del ritaglio lungo il
 bordo inferiore della tela.

@@ -20,7 +20,7 @@ export const pageHelpers = `window.__capture=(()=>{
       const hit=r=>r.width>0&&r.height>0&&r.right>clip.x&&r.left<clip.x+clip.width&&r.bottom>clip.y&&r.top<clip.y+clip.height;
       const found=new Set();const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
       const within=(text,label)=>{for(let at=text.indexOf(label);at>=0;at=text.indexOf(label,at+1))if(!/[\p{L}\p{N}]/u.test(text[at-1]||'')&&!/[\p{L}\p{N}]/u.test(text[at+label.length]||''))return true;return false;};
-      for(let node;(node=walker.nextNode());){const text=node.nodeValue.trim();const named=labels.filter(label=>loose.includes(label)?within(text,label):text===label);if(!named.length||!node.parentElement.checkVisibility({visibilityProperty:true,opacityProperty:true}))continue;const range=document.createRange();range.selectNodeContents(node);if([...range.getClientRects()].some(hit))named.forEach(label=>found.add(label));}
+      for(let node;(node=walker.nextNode());){const text=node.nodeValue.trim();const named=labels.filter(label=>loose.includes(label)?!node.parentElement.closest('#new-drawing-dialog')&&within(text,label):text===label);if(!named.length||!node.parentElement.checkVisibility({visibilityProperty:true,opacityProperty:true}))continue;const range=document.createRange();range.selectNodeContents(node);if([...range.getClientRects()].some(hit))named.forEach(label=>found.add(label));}
       for(const input of document.querySelectorAll('input'))if(labels.includes(input.value.trim())&&input.checkVisibility()&&hit(input.getBoundingClientRect()))found.add(input.value.trim());
       return [...found];
     },
@@ -44,8 +44,8 @@ export async function settled(b) {
   await quiet(b);
   await b.evaluate('layerApp.app.wait_for_canvas().then(()=>null)');
   await b.until('!document.querySelector("#status").textContent && layerApp.app.brush_ready() && document.querySelector(".startup-progress")?.hidden !== false', 20000);
-  await b.until(`[...document.querySelectorAll('#layer-rows .layer-thumbnail canvas')].filter(canvas=>{const box=canvas.getBoundingClientRect();return canvas.checkVisibility()&&box.width>0&&box.top<innerHeight&&box.bottom>0}).every(canvas=>canvas.dataset.previewRevision)`, 15000);
-  await b.until(`[...document.querySelectorAll('#layer-rows .layer-thumbnail canvas')].filter(c=>c.checkVisibility()&&c.getBoundingClientRect().width>0).every(c=>{const d=c.getContext('2d').getImageData(0,0,c.width,c.height).data;for(let i=3;i<d.length;i+=4)if(d[i])return true;return false})`, 3000).catch(() => {});
+  await b.until(`[...document.querySelectorAll('#layer-rows .layer-thumbnail:not(.layer-texture) canvas')].filter(canvas=>{const box=canvas.getBoundingClientRect();return canvas.checkVisibility()&&box.width>0&&box.top<innerHeight&&box.bottom>0}).every(canvas=>canvas.dataset.previewRevision)`, 15000);
+  await b.until(`[...document.querySelectorAll('#layer-rows .layer-thumbnail:not(.layer-texture) canvas')].filter(c=>c.checkVisibility()&&c.getBoundingClientRect().width>0).every(c=>{const d=c.getContext('2d').getImageData(0,0,c.width,c.height).data;for(let i=3;i<d.length;i+=4)if(d[i])return true;return false})`, 3000).catch(() => {});
   assert.equal(await b.evaluate('document.body.innerText.includes("Painting is unavailable")'), false, 'Capture has a working GPU canvas');
   await quiet(b);
 }

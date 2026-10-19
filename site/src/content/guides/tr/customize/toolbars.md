@@ -4,8 +4,7 @@ description: "Araç çubukları oluşturma ve düzenleme ve başlık çubuğunu 
 related: ["customize/panels", "customize/workspaces", "customize/zen", "start/command-search"]
 ---
 
-Her çalışma alanı kendi araç çubuklarını ve başlık çubuğunu korur. **Pencere >
-Düzen değişikliğini geri al** (**Ctrl+Alt+Z**) son değişikliği geri alır.
+Her çalışma alanı kendi araç çubuklarını ve başlık çubuğunu korur. **Pencere > Düzen değişikliğini geri al** (**Ctrl+Alt+Z**) son değişikliği geri alır.
 
 ## Araç çubuğu menüleri
 
@@ -55,8 +54,7 @@ Her araç çubuğunun kendine ait bir adı olmalıdır.
 - Bir aracı taşımak için basılı tutun, ardından araç çubuğunun içinde veya başka bir araç çubuğuna sürükleyin.
 
 **Araç ekle** listesinde komutların ve araçların yanı sıra fırçalar, fırça
-boyutları, **Renk seçici**, **Fırça boyutu kaydırıcısı**, **Fırça opaklığı
-kaydırıcısı**, **Araç seçenekleri** ve **Ayırıcı** bulunur. Listede ayrıca her
+boyutları, **Renk seçici**, **Fırça boyutu kaydırıcısı**, **Güç kaydırıcısı**, **Araç seçenekleri** ve **Ayırıcı** bulunur. Listede ayrıca her
 panel için, paneli bir çekmecede açan **Katmanlar paneli** gibi bir girdi vardır.
 
 **Araç seçenekleri**, geçerli aracın ayarlarını araç çubuğunun geri kalanı
@@ -67,8 +65,7 @@ boyunca gösterir. Menüsünde **Yatay: metin**, **Yatay: simgeler** ve
 
 ## Kutucuk boyutları
 
-Araç çubuğunun menüsünden **Küçük kutucuklar**, **Orta kutucuklar**, **Büyük
-kutucuklar**, **Orta etiketli kutucuklar** veya **Büyük etiketli kutucuklar**
+Araç çubuğunun menüsünden **Küçük kutucuklar**, **Orta kutucuklar**, **Büyük kutucuklar**, **Orta etiketli kutucuklar** veya **Büyük etiketli kutucuklar**
 seçeneğini seçin. Etiketli kutucuklar her aracın adını gösterir. Yeni araç
 çubukları **Küçük kutucuklar** kullanır.
 
@@ -88,8 +85,7 @@ tutamacına çift tıklayın.
 
 ## Araç çubuklarını yeniden adlandırma ve çoğaltma
 
-Araç çubuğunun menüsünden **Yeniden adlandır: *ad* araç çubuğu…** veya **Çoğalt:
-*ad* araç çubuğu…** komutunu seçin. Kopya, özgün araç çubuğunun araçlarını ve
+Araç çubuğunun menüsünden **Yeniden adlandır: *ad* araç çubuğu…** veya **Çoğalt: *ad* araç çubuğu…** komutunu seçin. Kopya, özgün araç çubuğunun araçlarını ve
 kutucuk boyutunu taşır.
 
 ## Araç çubuklarını silme
@@ -110,8 +106,7 @@ Bir araç çubuğunu silmek için:
 Linux, Windows, macOS ve iPad uygulamalarında bir araç çubuğunun kopyasını
 kaydedip başka çalışma alanlarına ekleyebilirsiniz. Araç çubuğunun menüsünden
 **Araç çubuğu kitaplığına kaydet…** komutunu seçin. Kayıtlı bir araç çubuğunu
-eklemek için **Araç çubuklarını yönet…** penceresini açın, **Kaydedilen araç
-çubukları** bölümüne gidin, araç çubuğunu seçin ve **Çalışma alanına ekle**
+eklemek için **Araç çubuklarını yönet…** penceresini açın, **Kaydedilen araç çubukları** bölümüne gidin, araç çubuğunu seçin ve **Çalışma alanına ekle**
 düğmesini seçin.
 
 ## Başlık çubuğunu özelleştirme
@@ -125,7 +120,7 @@ Başlık çubuğunun altında, ekleyebileceğiniz öğeleri içeren bir çubuk a
 
 - Bir öğe eklemek için öğeyi başlık çubuğuna sürükleyin. Çubukta bir öğeyi seçmek hiçbir şey yapmaz.
 - Bir öğeyi taşımak için yeni bir yere sürükleyin.
-- Bir öğeyi kaldırmak için başlık çubuğunun dışına sürükleyin veya seçip **Delete** tuşuna basın.
+- Bir öğeyi kaldırmak için başlık çubuğunun dışına sürükleyin veya seçip **Sil** tuşuna basın.
 
 Araç eklemek için **Araç ekle…** öğesini başlık çubuğuna sürükleyin ve o yer
 için araçları seçin. Çubukta ayrıca başlık çubuğunun boyutu için **Küçük**,

@@ -62,7 +62,7 @@ related: ["drawing/gradient", "layers/settings", "selections/working", "drawing/
 
 ![填色的工具設定面板，包含容差、邊緣分組和不透明度。](shot:drawing/fill-settings)
 
-填色和圍住填色共用以下設定。**自動選取**和**依色彩選取**除**不透明度**外都使用相同的值。要重置某項設定，在工具選項欄中按兩下其標籤（[大小、不透明度和流量](/zh-Hant/docs/brushes/basics/)）。
+填充和閉合填充共用以下設定。**自動選取** 和 **依色彩選取** 共用除 **不透明度** 之外的全部數值。按兩下工具選項欄中的標籤可重置設定（[大小、強度和不透明度](/zh-Hant/docs/brushes/basics/)）。
 
 ### 容差
 
@@ -82,7 +82,7 @@ related: ["drawing/gradient", "layers/settings", "selections/working", "drawing/
 
 ### 不透明度
 
-設定填色的強度。更改它會同時更改目前筆刷的**不透明度**，反之亦然。在「素描」中，使用左邊緣豎欄上的不透明度滑塊。
+設定填充的強度。更改此值會改變目前筆刷的 **不透明度**，反之亦然。在“素描”中，使用左邊緣欄上的 **強度滑桿**。
 
 ## 填色選取範圍
 

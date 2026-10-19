@@ -18,7 +18,7 @@ Phác thảo không có bảng gắn cố định: các nút công cụ và nút
 1. **Capy (chế độ Zen)**, **Trình đơn chính**, **Bảng bộ lọc**, **Chọn** và **Biến đổi**.
 2. Bộ chuyển không gian làm việc.
 3. **Cọ**, **Tạo hình**, **Tẩy**, **Bảng lớp** và **Màu cọ**. Trình chỉnh sửa web có thêm **Toàn màn hình**.
-4. **Thanh trượt kích thước cọ**, **Bộ chọn màu**, **Thanh trượt độ đục cọ**, **Hoàn tác** và **Làm lại**.
+4. **Thanh trượt kích thước cọ**, **Bộ chọn màu**, **Thanh trượt cường độ**, **Hoàn tác** và **Làm lại**.
 
 | Nút | Bảng trong ngăn |
 | --- | --- |

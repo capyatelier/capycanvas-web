@@ -20,14 +20,11 @@ Esegui una delle seguenti operazioni:
 - Premi **Ctrl+O**.
 - In Pittura e Foto, seleziona **Apri…** nella barra strumenti Comandi.
 - Nell'editor web o su Linux, trascina i file sul nome del disegno o sulle schede nella barra del titolo.
-- Se hai installato l'editor web come app, apri un file `.capy`, `.png`, `.jpg`, `.tif`, `.avif` o `.exr` con {appName} dal tuo sistema.
+- Se hai installato l'editor web come app, apri un file supportato con {appName} dal tuo sistema.
 
 ## Foto
 
-Una foto si apre come nuovo disegno con un livello fotografico, che prende il
-nome dal file, sopra un livello **Carta**. La foto mantiene il suo profilo colore
-e, per impostazione predefinita, la sua profondità in bit. Il salvataggio del
-disegno crea un file `.capy` e non sovrascrive mai la foto.
+Una foto si apre come nuovo disegno con un livello Oggetto che prende il nome dal file. L'Oggetto conserva l'immagine con dimensioni, profilo colore e, per impostazione predefinita, profondità in bit propri. Salvare il disegno crea un file `.capy` e non sovrascrive mai l'immagine sorgente.
 
 - Di una GIF o WebP animata si apre il primo fotogramma.
 - Una foto può misurare fino a 32768 pixel per lato.
@@ -48,9 +45,7 @@ Esegui una delle seguenti operazioni:
 - Premi **Ctrl+Maiusc+O**.
 - Trascina le immagini sulla tela oppure su una riga del pannello **Livelli**.
 
-Ogni immagine diventa un livello che prende il nome dal file, sopra il livello
-selezionato, con le [maniglie di trasformazione](/it/docs/transform/move-transform/)
-per posizionarla. Un'immagine più grande della tela viene ridotta per starci.
+Ogni immagine diventa un [livello Oggetto](/it/docs/layers/types/) che prende il nome dal file, sopra il livello selezionato, con le [maniglie di trasformazione](/it/docs/transform/move-transform/) per posizionarla. Un'immagine più grande della tela viene ridotta per starci.
 
 Non puoi importare un file `.capy`. Nell'editor web, un'immagine può pesare fino
 a 512 MiB.
@@ -82,17 +77,11 @@ se il file è cambiato sul disco da quando lo hai aperto o salvato.
 
 ## Cosa conserva un file .capy
 
-Un file `.capy` conserva ogni livello con la sua maschera e le sue impostazioni,
-i filtri, le selezioni e le guide salvate, lo spazio colore, la profondità in bit
-e la fusione, e i dati EXIF, XMP e IPTC di una foto. Non conserva la cronologia
-degli annullamenti, la vista né la selezione attiva.
+Un file `.capy` conserva ogni livello con maschera e impostazioni, le immagini sorgenti incorporate degli Oggetti e le trame della Carta importate, i filtri, le selezioni e le guide salvate, lo spazio colore, la profondità in bit e la fusione, e i dati EXIF, XMP e IPTC di una foto. Non conserva la cronologia degli annullamenti, la vista né la selezione attiva.
 
 ## Disegni di sola lettura
 
-Un file `.capy` che {appName} non può modificare, per esempio un file
-danneggiato, si apre in una finestra di dialogo invece che in una scheda. **Copy
-Original File…** salva una copia del file, ed **Export Preview Image…** salva
-l'anteprima del disegno come PNG.
+Un file `.capy` che {appName} non può modificare, inclusi file di un formato più recente non supportato o danneggiati, si apre in una finestra invece che in una scheda. **Copy Original File…** salva una copia del file e **Export Preview Image…** salva l'anteprima del disegno come PNG.
 
 ## Schede dei disegni
 

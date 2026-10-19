@@ -9,9 +9,7 @@ Bạn có thể gộp các lớp thành một lớp vẽ. Các lệnh gộp nằ
 
 ![Trình đơn Lớp khi Ribbon là lớp hiện tại, với Gộp lớp bị cắt, Gộp lớp hiển thị, Tạo lớp gộp hiển thị và Gộp phẳng ảnh.](shot:layers/merging-menu)
 
-Mỗi lần gộp là một bước hoàn tác. [Lớp ảnh](/vi/docs/layers/types/) mất ảnh gốc khi
-bạn gộp lớp đó. Bạn không thể gộp khi đang sửa lớp vùng chọn hoặc Mặt nạ nhanh, hoặc
-khi đang biến đổi.
+Mỗi lần gộp là một bước hoàn tác. [Lớp Đối tượng](/vi/docs/layers/types/) được chuyển thành ảnh điểm khi gộp. Bạn không thể gộp khi sửa lớp vùng chọn hoặc Mặt nạ nhanh, hoặc trong khi biến đổi.
 
 ## Gộp xuống
 
@@ -57,13 +55,9 @@ Nhóm phải đang hiển thị và chưa khóa, và không được chứa lớ
 
 ## Gộp lớp hiển thị
 
-Chọn **Lớp > Gộp lớp hiển thị** để gộp mọi lớp đang hiển thị, kể cả **Giấy**, thành
-một lớp. Các lớp đang ẩn giữ nguyên.
+Chọn **Lớp > Gộp lớp hiển thị** để gộp các lớp thông thường đang hiện. Giấy vẫn là lớp Giấy dưới cùng. Các lớp ẩn giữ nguyên.
 
-Lớp sau khi gộp lấy tên và vị trí của lớp hiển thị thấp nhất (**Giấy**, nếu Giấy đang
-hiển thị). Các lớp đang ẩn từng được cắt theo một lớp bị gộp sẽ không còn bị cắt. Các
-lớp đang hiển thị phải chưa khóa, và các nhóm trong số đó không được chứa lớp vùng
-chọn.
+Lớp gộp lấy tên và vị trí của lớp thấp nhất được gộp. Các lớp ẩn bị cắt theo lớp đã gộp được giải phóng. Các lớp đang hiện phải được mở khóa và các nhóm trong đó không được chứa lớp vùng chọn.
 
 ## Tạo lớp gộp hiển thị
 
@@ -75,9 +69,7 @@ không cản **Tạo lớp gộp hiển thị**.
 
 ## Gộp phẳng ảnh
 
-Chọn **Lớp > Gộp phẳng ảnh** để gộp mọi lớp đang hiển thị thành một lớp. Các lớp
-đang ẩn và pixel nằm ngoài khung vẽ bị bỏ, nhưng các lớp vùng chọn nằm ngoài nhóm vẫn
-được giữ. Các lớp đang hiển thị phải chưa khóa.
+Chọn **Lớp > Gộp phẳng ảnh** để gộp các lớp thông thường đang hiện. Giấy vẫn là Giấy dưới cùng. Các lớp ẩn và pixel ngoài khung vẽ bị bỏ nhưng lớp vùng chọn ngoài nhóm còn lại. Các lớp đang hiện phải được mở khóa.
 
 ![Thông báo trên khung vẽ ghi “Gộp phẳng sẽ bỏ 2 lớp ẩn”, với nút Gộp phẳng ảnh.](shot:layers/merging-flatten-notice)
 

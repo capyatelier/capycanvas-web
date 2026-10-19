@@ -1,123 +1,65 @@
 ---
-title: "Size, opacity and flow"
-description: "Brush size, Opacity and Flow, and the panels, bars and keys where you change brush settings."
-related: ["brushes/tip-texture", "brushes/reset", "drawing/brush-tools", "input/keyboard"]
+title: "Size, strength and opacity"
+description: "Brush Size, Strength and Opacity, and the panels, bars and keys where you change them."
+related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools"]
 ---
 
-Every change to a brush setting is saved with the brush preset
-([Saving and resetting brushes](/docs/brushes/reset/)).
+Brush controls depend on the tool and preset. Changes are saved with the preset.
 
 ## Tool panel
 
-You can change every setting of the current brush in the **Tool** panel.
+Open **Window > Tool** to see every setting for the active tool. You can also select the **Tool** tab in Paint or Photo, or select the active tool again to open its drawer.
 
-Do one of the following:
+![The Tool panel for a dry-media brush with Size, Strength and Opacity.](shot:brushes/tool-panel)
 
-- Choose **Window > Tool**.
-- In Paint, select the **Tool** tab in the left column.
-- In Photo, select **Tool** in the icon strip at the right.
-- Select the active tool's button again. **Tool** is the last column of the drawer.
+### Size
 
-Each setting has a value, **−** and **+** buttons and a slider. Select the
-value to type a number. Only the settings the brush uses appear, grouped under
-headings such as **Tip** and **Texture**
-([Tip and texture](/docs/brushes/tip-texture/)).
+Sets the diameter or width of the mark. The range depends on the tool.
 
-![The Tool panel for Pencil with Brush size, Opacity and Flow above the Tip and Texture groups.](shot:brushes/tool-panel)
+### Strength
 
-### Brush size
+Sets how strongly the tool acts at full pressure. On dry media it changes material coverage; on the Eraser it changes how much is removed; on Blend and Liquify it changes how strongly pixels move or mix.
 
-Sets the diameter of the brush, from 0.5 to 2048 px.
+Strength acts within each stroke. It is separate from [Smoothing Strength](/docs/brushes/smoothing/).
 
 ### Opacity
 
-Sets the strength of every dab in the stroke. No built-in brush changes
-Opacity with pen pressure.
+Sets the maximum opacity of the completed stroke. Lowering Opacity makes the whole stroke more transparent without changing the material response within it.
 
-### Flow
+### Family controls
 
-Sets how much paint each dab lays down, measured at full pressure on brushes
-where pressure changes flow. Wet and blending brushes also use Flow for how
-strongly each dab mixes with the paint on the layer.
+Wet brushes can show controls such as **Water load**, **Bleed** and **Mixing**. Dry-media brushes show **Texture strength** and **Material hardness**. Only controls used by the selected preset appear.
 
-Liquify brushes have no Flow.
+## Numeric controls
 
-## Build-up within a stroke
-
-Where a stroke crosses itself, these brushes stay at the strength of their
-strongest dab: the presets in the **Pen** group, **Marker**, **Shading
-Pencil**, **Paintbrush**, **Bristle Paintbrush**, **Textured Flat**, **Dry
-Scumble**, **Pastel Block**, **Transparent Glaze**, **Watercolor Wash** and
-**Wet Watercolor**. Other brushes build up where their dabs overlap.
-
-The drawing's **Blending** setting controls how dabs build up
-([Color space, bit depth and blending](/docs/color-management/color-spaces/)).
+Select a displayed value to type one. Scroll over a value, or use **−** and **+**, to step it. Hold a modifier shown by the app while dragging for finer changes. Double-click a label or icon in **Tool Options** to reset that setting.
 
 ## Brush size panel
 
-You can pick a size from a grid in the **Brush size** panel.
-
-Do one of the following:
-
-- Choose **Window > Brush size**.
-- In Paint, select the **Brush size** tab next to **Tool** in the left column.
-- In Photo, select **Brush size** in the icon strip at the right.
-
-Each button shows a dot and a size in pixels. The button for the current size
-is pressed.
-
-With **Paint selection** active, the panel sets the selection brush size. You
-can give each size a key under **Brush sizes** on the Keyboard Shortcuts page.
+Open **Window > Brush size** to choose a bookmarked pixel size. The active size is pressed. Each preset keeps its own size bookmarks.
 
 ![The Brush size panel with its grid of size buttons.](shot:brushes/brush-size-panel)
 
-## Tool Options bar
+## Tool Options
 
-You can change the current tool's settings in one row with the **Tool Options**
-bar. Photo has it at the end of the top toolbar. In other workspaces, add it to
-a toolbar with **Insert Tools…** ([Toolbars and title bar](/docs/customize/toolbars/)).
+The **Tool Options** bar places the active tool's main controls in one row. Photo includes it in the top toolbar; add it elsewhere with **Insert Tools…**. Settings that do not fit are under **More tool options**.
 
-**Tool** and **Variant** menus come first when the tool has choices, then
-**Color mixing** for brushes that mix paint, then the numeric settings.
-Settings that don't fit are under **More tool options**.
-
-- Double-click (or double-tap) a setting's label or icon to reset the setting to the brush's built-in value.
-- Scroll over a value to step it. With a finger, drag up or down on the value.
-- Right-click or hold the bar to choose **Horizontal: Text**, **Horizontal: Icons** or **Show Sliders**.
-
-![The Tool Options bar in Photo for the Paint Brush, with Variant and the numeric settings.](shot:brushes/tool-options-bar)
+![Tool Options for a brush with its current primary controls.](shot:brushes/tool-options-bar)
 
 ## Sliders in Sketch
 
-You can set the size and opacity of the brush with the two sliders on the bar
-at the left edge in Sketch.
+Sketch has **Brush size slider** and **Strength slider** at the left edge. Tap or click a track to set a value, drag along it to change the value, or select the end cap to open the contact preview.
 
-- Tap or click the track to set a value. A preview shows the tip at its real pixel size, or at the chosen opacity.
-- Drag along the track to change the value. The preview closes when you lift.
-- Tap the cap at the end of the slider to see the preview without changing the value.
+![The Brush size and Strength sliders in Sketch, with a 37 px size preview open.](shot:brushes/sketch-size-slider)
 
-Select **+** (**Bookmark this value**) in the preview to mark the value on the
-track, or **−** (**Remove bookmark**) to remove the mark. A tap near a mark
-sets that exact value. Each brush preset keeps its own bookmarks.
+The Strength preview shows how the current brush responds at that value.
 
-A slider is dimmed when the current tool has no size or opacity. You can add
-the **Brush size slider** and **Brush opacity slider** to any toolbar with
-**Insert Tools…**.
+![The Strength slider with its contact preview open.](shot:brushes/strength-preview)
 
-![The bar at the left edge in Sketch with the size preview open beside the Brush size slider.](shot:brushes/sketch-size-slider)
+Select **Bookmark this value** in a preview to add a mark to the track, or **Remove bookmark** to remove it. Each preset keeps its own bookmarks.
 
-## Keys
+## Size keys
 
-| Key | Action |
-| --- | --- |
-| **[** | **Decrease brush size** by 1 px. Hold to repeat. |
-| **]** | **Increase brush size** by 1 px. Hold to repeat. |
-| None | **Decrease brush opacity** and **Increase brush opacity** by 1%. |
+Press **[** or **]** to move to the previous or next brush size step. Hold the key to repeat. The steps follow the preset's size sequence rather than changing by one pixel.
 
-You can assign keys to these actions under **Painting** on the
-[Keyboard Shortcuts](/docs/input/keyboard/) page.
-
-## Typing a value
-
-Search commands for a setting's name, such as **Flow…**, and type the new value
-([Command search](/docs/start/command-search/)).
+You can assign keys to brush Size, Strength and Opacity commands on the [Keyboard Shortcuts](/docs/input/keyboard/) page.

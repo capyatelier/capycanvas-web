@@ -9,9 +9,7 @@ están cerca del final del menú **Capa** y del menú de cada capa.
 
 ![El menú Capa con Ribbon activa, que muestra Combinar capas recortadas, Combinar visibles, Crear capa de visibles y Acoplar imagen.](shot:layers/merging-menu)
 
-Cada combinación es un solo paso de deshacer. Una [capa de foto](/es/docs/layers/types/)
-pierde su foto original al combinarla. No puedes combinar mientras editas una
-capa de selección o la Máscara rápida, ni durante una transformación.
+Cada combinación es un paso de deshacer. Una [capa de objeto](/es/docs/layers/types/) se rasteriza al combinarla. No puedes combinar mientras editas una capa de selección o Máscara rápida, ni durante una transformación.
 
 ## Combinar hacia abajo
 
@@ -62,13 +60,9 @@ selección.
 
 ## Combinar visibles
 
-Elige **Capa > Combinar visibles** para combinar todas las capas visibles,
-incluida **Papel**, en una sola capa. Las capas ocultas se quedan como están.
+Elige **Capa > Combinar visibles** para combinar las capas normales visibles. Papel permanece como capa de Papel inferior. Las capas ocultas quedan como están.
 
-La capa combinada toma el nombre y la posición de la capa visible más baja
-(**Papel**, si está visible). Las capas ocultas que estaban recortadas a una capa
-combinada se liberan. Las capas visibles tienen que estar desbloqueadas, y los
-grupos que haya entre ellas no pueden contener capas de selección.
+La capa combinada toma el nombre y la posición de la capa combinada más baja. Las capas ocultas que estaban recortadas a una capa combinada se liberan. Las capas visibles deben estar desbloqueadas y los grupos entre ellas no pueden contener capas de selección.
 
 ## Crear capa de visibles
 
@@ -81,10 +75,7 @@ Las capas bloqueadas no impiden **Crear capa de visibles**.
 
 ## Acoplar imagen
 
-Elige **Capa > Acoplar imagen** para combinar todas las capas visibles en una
-sola capa. Las capas ocultas y los píxeles fuera del lienzo se descartan, pero
-las capas de selección que están fuera de grupos se mantienen. Las capas
-visibles tienen que estar desbloqueadas.
+Elige **Capa > Acoplar imagen** para combinar las capas normales visibles. Papel permanece como Papel al fondo. Las capas ocultas y los píxeles fuera del lienzo se descartan, pero las capas de selección fuera de los grupos se conservan. Las capas visibles deben estar desbloqueadas.
 
 ![El aviso sobre el lienzo que dice «Al acoplar se descartan 2 capas ocultas», con un botón Acoplar imagen.](shot:layers/merging-flatten-notice)
 

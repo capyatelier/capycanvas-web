@@ -61,7 +61,7 @@ Aşağıdakilerden birini yapın:
 
 ![Katmanlar panelinin altından açılan Filtre ekle menüsü.](shot:filters/add-filter-menu)
 
-**Filtre ekle** kilitsiz boya katmanlarında, fotoğraf katmanlarında ve Geçiş
+**Filtre ekle** kilitsiz boya katmanlarında, nesne katmanlarında ve Geçiş
 ayarlı olmayan gruplarda çalışır. Menüsünde **Dolgu** dışındaki tüm kategoriler
 bulunur.
 

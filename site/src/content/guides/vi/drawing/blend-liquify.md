@@ -45,8 +45,7 @@ Mỗi chế độ là một cọ đặt sẵn trong **Bộ công cụ**:
 
 ![Bảng Công cụ cho Biến dạng tinh thể, với nhóm Biến dạng hiện Độ mạnh và Độ méo.](shot:drawing/liquify-settings)
 
-**Độ mạnh**, **Độ méo** và **Quán tính** nằm trong nhóm **Biến dạng** của bảng
-**Công cụ**. Biến dạng không có **Lượng màu ra**.
+**Độ mạnh**, **Độ méo** và **Quán tính** nằm trong nhóm **Biến dạng** của bảng **Công cụ**. **Độ mạnh** đặt mức nét dịch chuyển pixel.
 
 ### Độ mạnh
 

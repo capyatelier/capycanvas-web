@@ -65,7 +65,7 @@ Esegui una delle seguenti operazioni:
 ![Il menu Aggiungi filtro aperto dal fondo del pannello Livelli.](shot:filters/add-filter-menu)
 
 **Aggiungi filtro** funziona su livelli di pittura non bloccati, livelli
-fotografici e gruppi non impostati su Attraversa. Il suo menu contiene tutte le
+Oggetto e gruppi non impostati su Attraversa. Il suo menu contiene tutte le
 categorie tranne **Riempimento**.
 
 ## Cassetto Filtri in Schizzo

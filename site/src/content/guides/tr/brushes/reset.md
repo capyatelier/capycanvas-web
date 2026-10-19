@@ -22,7 +22,7 @@ kaydedilir.
 
 Tek bir ayarı fırçanın yerleşik değerine döndürebilirsiniz. Araç seçenekleri
 çubuğunda ayarın etiketine veya simgesine çift tıklayın (ya da çift dokunun)
-([Boyut, opaklık ve akış](/tr/docs/brushes/basics/)).
+([Boyut, güç ve opaklık](/tr/docs/brushes/basics/)).
 
 **Araç** panelinde sıfırlama yoktur. **Renk karıştırma** ayarını sıfırlamak
 için tüm karıştırma fırçalarının yerleşik seçeneği olan **Oklab karıştırma**
@@ -30,8 +30,7 @@ düğmesini seçin.
 
 ## Tüm fırçaları sıfırla…
 
-Tüm fırçaları yerleşik ayarlarına döndürebilirsiniz. **Pencere > Çalışma
-alanları > Tüm fırçaları sıfırla…** komutunu seçin, ardından iletişim kutusunda
+Tüm fırçaları yerleşik ayarlarına döndürebilirsiniz. **Pencere > Çalışma alanları > Tüm fırçaları sıfırla…** komutunu seçin, ardından iletişim kutusunda
 **Fırçaları sıfırla** düğmesini seçin.
 
 ![Fırçaları sıfırla düğmesini içeren Tüm fırçalar sıfırlansın mı? iletişim kutusu.](shot:brushes/reset-all-dialog)

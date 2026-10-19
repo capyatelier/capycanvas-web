@@ -53,7 +53,7 @@ related: ["filters/how-filters-apply", "filters/tone", "filters/color", "start/c
 
 ![从图层面板底部打开的添加滤镜菜单。](shot:filters/add-filter-menu)
 
-**添加滤镜**适用于未锁定的绘画图层、照片图层以及未设为穿透的图层组。其菜单包含除**填充**以外的所有类别。
+**添加滤镜** 可用于未锁定的绘画图层、对象图层和未设为穿透的组。其菜单包含除 **填充** 之外的所有类别。
 
 ## “素描”中的滤镜抽屉
 

@@ -95,12 +95,12 @@ export default async function transform({ e, b, shoot, example }) {
   const clear = async () => {
     if (await e.read('layerApp.state().layer_tools.has_selection')) await e.invoke('deselect');
   };
-  const openHeader = async (menu, row) => {
+  const openHeader = async (menu, row, expected) => {
     await e.click(`.header-menu[data-menu="${menu}"] > summary`);
     await e.wait(`!!document.querySelector(${JSON.stringify(header)})?.checkVisibility()`);
     if (row) {
       await b.evaluate(`[...document.querySelectorAll('${header} button')].find(b=>b.querySelector('.menu-label')?.textContent===${JSON.stringify(row)}).click();void 0`);
-      await e.wait(`[...document.querySelectorAll('${header} button .menu-label')].some(n=>n.checkVisibility()&&n.textContent==='Image Size…')`);
+      await e.wait(`[...document.querySelectorAll('${header} button .menu-label')].some(n=>n.checkVisibility()&&n.textContent===${JSON.stringify(expected)})`);
     }
     await b.settle();
   };
@@ -149,9 +149,18 @@ export default async function transform({ e, b, shoot, example }) {
   await e.select('Ribbon');
   await e.invoke('select_all');
   await e.wait('layerApp.state().layer_tools.has_selection');
+  await b.call('Browser.grantPermissions', { origin: await e.read('location.origin'), permissions: ['clipboardReadWrite', 'clipboardSanitizedWrite'] }, null);
+  const previousClip = await e.read('layerApp.app.clip_nonce()??null');
+  await e.invoke('copy');
+  await e.wait(`(layerApp.app.clip_nonce()??null)!==${JSON.stringify(previousClip)} && !layerApp.documents.busy() && !layerApp.state().document_file.busy`);
   await shoot('transform/clipboard-edit-menu', {
-    target: [{ selector: `${header} button`, index: 0 }, { selector: `${header} .menu-label`, text: ['Paste Into'] }], pad: 12,
+    target: [{ selector: `${header} button`, index: 0 }, { selector: `${header} .menu-label`, text: ['Paste Special'] }], pad: 12,
     setup: () => openHeader('edit'),
+    teardown: closeHeader,
+  });
+  await shoot('transform/paste-special', {
+    target: header,
+    setup: () => openHeader('edit', 'Paste Special', 'Paste in Place'),
     teardown: closeHeader,
   });
   await clear();
@@ -160,7 +169,7 @@ export default async function transform({ e, b, shoot, example }) {
   await clear();
   await shoot('transform/image-menu', {
     target: header,
-    setup: () => openHeader('edit', 'Image'),
+    setup: () => openHeader('image'),
     teardown: closeHeader,
   });
   await shoot('transform/image-size-dialog', {
@@ -180,7 +189,12 @@ export default async function transform({ e, b, shoot, example }) {
   await shoot('transform/crop-tool-panel', {
     target: content('tool_settings'), ready: cropping,
     setup: () => fit('tool_settings'),
-    variant: async () => { await steady(group('tool_settings')); await roomy('tool_settings'); await steady(group('tool_settings')); },
+    variant: async () => {
+      await steady(group('tool_settings'));
+      await fit('tool_settings');
+      await roomy('tool_settings');
+      await steady(group('tool_settings'));
+    },
     teardown: reset,
   });
   await e.invoke('cancel_transform');

@@ -1,129 +1,65 @@
 ---
-title: "Größe, Deckkraft und Fluss"
-description: "Pinselgröße, Deckkraft und Fluss sowie die Bedienfelder, Leisten und Tasten, mit denen Sie Pinseleinstellungen ändern."
-related: ["brushes/tip-texture", "brushes/reset", "drawing/brush-tools", "input/keyboard"]
+title: "Größe, Stärke und Deckkraft"
+description: "Größe, Stärke und Deckkraft des Pinsels sowie die Bedienfelder, Leisten und Tasten zum Ändern dieser Werte."
+related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools"]
 ---
 
-Jede Änderung an einer Pinseleinstellung wird mit der Pinselvorgabe gespeichert
-([Pinsel speichern und zurücksetzen](/de/docs/brushes/reset/)).
+Die Pinselregler hängen vom Werkzeug und der Vorgabe ab. Änderungen werden mit der Vorgabe gespeichert.
 
 ## Bedienfeld Werkzeug
 
-Im Bedienfeld **Werkzeug** können Sie jede Einstellung des aktuellen Pinsels ändern.
+Öffnen Sie **Fenster > Werkzeug**, um alle Einstellungen des aktiven Werkzeugs anzuzeigen. Sie können auch den Reiter **Werkzeug** in Malen oder Foto wählen oder das aktive Werkzeug erneut wählen, um seine Schublade zu öffnen.
 
-Führen Sie eine der folgenden Aktionen aus:
+![Das Werkzeug-Bedienfeld eines Trockenmedium-Pinsels mit Größe, Stärke und Deckkraft.](shot:brushes/tool-panel)
 
-- Wählen Sie **Fenster > Werkzeug**.
-- Wählen Sie im Arbeitsbereich Malen die Registerkarte **Werkzeug** in der linken Spalte aus.
-- Wählen Sie im Arbeitsbereich Foto **Werkzeug** im Symbolstreifen rechts aus.
-- Wählen Sie die Schaltfläche des aktiven Werkzeugs erneut aus. **Werkzeug** ist die letzte Spalte der Schublade.
+### Größe
 
-Jede Einstellung hat einen Wert, die Schaltflächen **−** und **+** und einen
-Schieberegler. Wählen Sie den Wert aus, um eine Zahl einzugeben. Es erscheinen nur
-die Einstellungen, die der Pinsel verwendet, gruppiert unter Überschriften wie
-**Spitze** und **Textur** ([Spitze und Textur](/de/docs/brushes/tip-texture/)).
+Legt den Durchmesser oder die Breite der Markierung fest. Der Bereich hängt vom Werkzeug ab.
 
-![Das Bedienfeld Werkzeug für Bleistift mit Pinselgröße, Deckkraft und Fluss über den Gruppen Spitze und Textur.](shot:brushes/tool-panel)
+### Stärke
 
-### Pinselgröße
+Legt fest, wie stark das Werkzeug bei vollem Druck wirkt. Bei Trockenmedien ändert dies den Materialauftrag, beim Radierer die entfernte Menge und bei Mischen und Verflüssigen die Stärke der Pixelbewegung oder Farbmischung.
 
-Legt den Durchmesser des Pinsels fest, von 0.5 bis 2048 px.
+Die Stärke wirkt innerhalb jedes Strichs. Sie ist von der [Glättungsstärke](/de/docs/brushes/smoothing/) getrennt.
 
 ### Deckkraft
 
-Legt die Stärke jedes Pinselabdrucks im Strich fest. Kein integrierter Pinsel ändert
-die Deckkraft mit dem Stiftdruck.
+Legt die maximale Deckkraft des fertigen Strichs fest. Eine geringere Deckkraft macht den ganzen Strich transparenter, ohne das Materialverhalten innerhalb des Strichs zu ändern.
 
-### Fluss
+### Regler nach Pinselfamilie
 
-Legt fest, wie viel Farbe jeder Pinselabdruck aufträgt, gemessen bei vollem Druck an
-Pinseln, bei denen der Druck den Fluss ändert. Nasse und mischende Pinsel verwenden
-Fluss außerdem dafür, wie stark sich jeder Pinselabdruck mit der Farbe auf der Ebene
-mischt.
+Nasse Pinsel können Regler wie **Wasserauftrag**, **Farbausbreitung** und **Mischen** anzeigen. Trockenmedium-Pinsel zeigen **Texturstärke** und **Materialhärte**. Es erscheinen nur Regler, die die gewählte Vorgabe verwendet.
 
-Verflüssigen-Pinsel haben keinen Fluss.
+## Zahlenregler
 
-## Farbaufbau innerhalb eines Strichs
-
-Wo sich ein Strich selbst kreuzt, bleiben diese Pinsel bei der Stärke ihres stärksten
-Pinselabdrucks: die Vorgaben der Gruppe **Feder**, **Filzstift**,
-**Schattierungsstift**, **Malpinsel**, **Borstenpinsel**, **Flacher Texturpinsel**,
-**Trockenes Schummern**, **Pastellblock**, **Transparente Lasur**, **Aquarelllasur**
-und **Nasses Aquarell**. Andere Pinsel bauen sich dort auf, wo sich ihre
-Pinselabdrücke überlappen.
-
-Die Einstellung **Verrechnung** der Zeichnung steuert, wie sich Pinselabdrücke
-aufbauen ([Farbraum, Farbtiefe und Verrechnung](/de/docs/color-management/color-spaces/)).
+Wählen Sie einen angezeigten Wert, um einen Wert einzugeben. Scrollen Sie über einem Wert oder verwenden Sie **−** und **+**, um ihn schrittweise zu ändern. Halten Sie beim Ziehen eine von der App angezeigte Zusatztaste für feinere Änderungen. Doppelklicken Sie auf eine Beschriftung oder ein Symbol in **Werkzeugoptionen**, um die Einstellung zurückzusetzen.
 
 ## Bedienfeld Pinselgröße
 
-Im Bedienfeld **Pinselgröße** können Sie eine Größe aus einem Raster wählen.
-
-Führen Sie eine der folgenden Aktionen aus:
-
-- Wählen Sie **Fenster > Pinselgröße**.
-- Wählen Sie im Arbeitsbereich Malen die Registerkarte **Pinselgröße** neben **Werkzeug** in der linken Spalte aus.
-- Wählen Sie im Arbeitsbereich Foto **Pinselgröße** im Symbolstreifen rechts aus.
-
-Jede Schaltfläche zeigt einen Punkt und eine Größe in Pixeln. Die Schaltfläche der
-aktuellen Größe ist gedrückt.
-
-Ist **Auswahl malen** aktiv, legt das Bedienfeld die Größe des Auswahlpinsels fest.
-Auf der Seite Tastenkürzel können Sie jeder Größe unter **Pinselgrößen** eine Taste
-zuweisen.
+Öffnen Sie **Fenster > Pinselgröße**, um eine als Lesezeichen gespeicherte Pixelgröße zu wählen. Die aktive Größe erscheint gedrückt. Jede Vorgabe behält ihre eigenen Größenlesezeichen.
 
 ![Das Bedienfeld Pinselgröße mit seinem Raster aus Größenschaltflächen.](shot:brushes/brush-size-panel)
 
-## Leiste Werkzeugoptionen
+## Werkzeugoptionen
 
-Mit der Leiste **Werkzeugoptionen** können Sie die Einstellungen des aktuellen
-Werkzeugs in einer Zeile ändern. Im Arbeitsbereich Foto steht sie am Ende der oberen Werkzeugleiste.
-In anderen Arbeitsbereichen fügen Sie sie mit **Werkzeuge einfügen…** zu einer
-Werkzeugleiste hinzu ([Werkzeugleisten und Titelleiste](/de/docs/customize/toolbars/)).
+Die Leiste **Werkzeugoptionen** zeigt die Hauptregler des aktiven Werkzeugs in einer Zeile. Foto enthält sie in der oberen Werkzeugleiste; fügen Sie sie andernorts mit **Werkzeuge einfügen…** hinzu. Einstellungen, die keinen Platz finden, liegen unter **Weitere Werkzeugoptionen**.
 
-Zuerst kommen die Menüs **Werkzeug** und **Variante**, wenn das Werkzeug Optionen hat,
-dann **Farbmischung** bei Pinseln, die Farbe mischen, dann die Zahlenwerte.
-Einstellungen, die nicht hineinpassen, stehen unter **Weitere Werkzeugoptionen**.
-
-- Doppelklicken (oder doppeltippen) Sie auf die Beschriftung oder das Symbol einer Einstellung, um sie auf den integrierten Wert des Pinsels zurückzusetzen.
-- Scrollen Sie über einem Wert, um ihn schrittweise zu ändern. Mit dem Finger ziehen Sie auf dem Wert nach oben oder unten.
-- Klicken Sie mit der rechten Maustaste auf die Leiste oder halten Sie sie gedrückt, um **Horizontal: Text**, **Horizontal: Symbole** oder **Schieberegler anzeigen** zu wählen.
-
-![Die Leiste Werkzeugoptionen im Arbeitsbereich Foto für den Malpinsel mit Variante und den Zahlenwerten.](shot:brushes/tool-options-bar)
+![Werkzeugoptionen für einen Pinsel mit seinen aktuellen Hauptreglern.](shot:brushes/tool-options-bar)
 
 ## Schieberegler im Arbeitsbereich Skizze
 
-Im Arbeitsbereich Skizze können Sie Größe und Deckkraft des Pinsels mit den beiden Schiebereglern
-auf der Leiste am linken Rand einstellen.
+Skizze hat am linken Rand **Schieberegler für Pinselgröße** und **Stärkeregler**. Tippen oder klicken Sie auf eine Spur, um einen Wert festzulegen, ziehen Sie entlang der Spur zum Ändern des Werts oder wählen Sie die Endkappe, um die Kontaktvorschau zu öffnen.
 
-- Tippen oder klicken Sie auf die Spur, um einen Wert festzulegen. Eine Vorschau zeigt die Spitze in ihrer echten Pixelgröße oder mit der gewählten Deckkraft.
-- Ziehen Sie entlang der Spur, um den Wert zu ändern. Die Vorschau schließt sich, wenn Sie den Finger oder Stift abheben.
-- Tippen Sie auf die Kappe am Ende des Schiebereglers, um die Vorschau zu sehen, ohne den Wert zu ändern.
+![Die Schieberegler für Pinselgröße und Stärke in Skizze mit geöffneter Größenvorschau von 37 px.](shot:brushes/sketch-size-slider)
 
-Wählen Sie in der Vorschau **+** (**Diesen Wert merken**) aus, um den Wert auf der Spur
-zu markieren, oder **−** (**Lesezeichen entfernen**), um die Markierung zu entfernen.
-Ein Tippen nahe einer Markierung setzt genau diesen Wert. Jede Pinselvorgabe hat ihre
-eigenen Markierungen.
+Die Stärkevorschau zeigt, wie der aktuelle Pinsel bei diesem Wert reagiert.
 
-Ein Schieberegler ist abgeblendet, wenn das aktuelle Werkzeug keine Größe oder
-Deckkraft hat. Mit **Werkzeuge einfügen…** können Sie **Schieberegler für
-Pinselgröße** und **Schieberegler für Pinseldeckkraft** zu jeder Werkzeugleiste
-hinzufügen.
+![Der Stärkeregler mit geöffneter Kontaktvorschau.](shot:brushes/strength-preview)
 
-![Die Leiste am linken Rand im Arbeitsbereich Skizze mit geöffneter Größenvorschau neben dem Schieberegler für Pinselgröße.](shot:brushes/sketch-size-slider)
+Wählen Sie **Diesen Wert merken** in einer Vorschau, um eine Markierung auf der Spur hinzuzufügen, oder **Lesezeichen entfernen**, um sie zu entfernen. Jede Vorgabe behält ihre eigenen Lesezeichen.
 
-## Tasten
+## Größentasten
 
-| Taste | Aktion |
-| --- | --- |
-| **[** | **Pinselgröße verringern** um 1 px. Gedrückt halten zum Wiederholen. |
-| **]** | **Pinselgröße erhöhen** um 1 px. Gedrückt halten zum Wiederholen. |
-| Keine | **Pinseldeckkraft verringern** und **Pinseldeckkraft erhöhen** um 1%. |
+Drücken Sie **[** oder **]**, um zur vorherigen oder nächsten Pinselgrößenstufe zu wechseln. Halten Sie die Taste zum Wiederholen. Die Stufen folgen der Größenfolge der Vorgabe statt Änderungen um jeweils einen Pixel.
 
-Sie können diesen Aktionen auf der Seite [Tastenkürzel](/de/docs/input/keyboard/)
-unter **Malen** Tasten zuweisen.
-
-## Einen Wert eingeben
-
-Suchen Sie in der Befehlssuche nach dem Namen einer Einstellung, etwa **Fluss…**, und
-geben Sie den neuen Wert ein ([Befehlssuche](/de/docs/start/command-search/)).
+Auf der Seite [Tastenkürzel](/de/docs/input/keyboard/) können Sie den Befehlen für Pinselgröße, Stärke und Deckkraft Tasten zuweisen.

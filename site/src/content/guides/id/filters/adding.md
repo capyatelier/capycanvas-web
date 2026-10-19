@@ -62,7 +62,7 @@ Lakukan salah satu langkah berikut:
 
 ![Menu Tambahkan filter yang dibuka dari bagian bawah panel Lapisan.](shot:filters/add-filter-menu)
 
-**Tambahkan filter** berfungsi pada lapisan lukis, lapisan foto, dan grup yang tidak
+**Tambahkan filter** berfungsi pada lapisan lukis, lapisan Objek, dan grup yang tidak
 terkunci. Grup juga tidak boleh disetel ke Lewat Langsung. Menunya memuat semua
 kategori kecuali **Isi**.
 

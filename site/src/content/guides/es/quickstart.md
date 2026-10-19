@@ -1,7 +1,7 @@
 ---
 title: "Inicio rápido"
 description: "Abrir {appName}, dibujar en el primer dibujo en blanco, guardarlo como archivo .capy y exportar un PNG."
-related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
+related: ["start/workspaces", "start/device-support", "files/new", "files/open-save", "files/export"]
 ---
 
 ## Abrir {appName}
@@ -11,15 +11,7 @@ Haz una de las siguientes acciones:
 - Abre el editor web en [editor.capycanvas.art](https://editor.capycanvas.art/).
 - En la página [Descargar](/es/download/), consigue la aplicación de escritorio, la beta para iPad o Android, o los pasos para instalar el editor web como aplicación.
 
-El editor web funciona en estos navegadores:
-
-| Sistema | Navegadores |
-| --- | --- |
-| Windows | Chrome, Edge, Firefox 141 o posterior |
-| macOS | Chrome, Edge, Safari 26 o posterior, Firefox 147 o posterior (Apple silicon) |
-| Linux (Wayland) | Chrome, Edge |
-| iPadOS 26 o posterior | Safari |
-| Android 12 o posterior | Chrome |
+Consulta [Compatibilidad de dispositivos](/es/docs/start/device-support/) para los requisitos independientes de las aplicaciones nativas y los navegadores web.
 
 Después de la primera visita, el editor web también se abre sin conexión a internet.
 
@@ -27,11 +19,7 @@ Después de la primera visita, el editor web también se abre sin conexión a in
 
 ![El panel Capas de un dibujo nuevo, con Tinta actual sobre Papel.](shot:files/new-layers)
 
-La primera vez que abres {appName}, aparece el espacio de trabajo
-[Pintura](/es/docs/start/workspaces/) con un dibujo en blanco, y la barra de título
-indica «Sin título · 2048 × 1536». **Tinta actual**, una capa de pintura vacía,
-está seleccionada sobre **Papel**, una capa de relleno blanca. La herramienta
-**Pluma** está activa con el pincel **Plumilla G** y un color casi negro.
+La primera vez que abres {appName}, muestra el espacio de trabajo [Pintura](/es/docs/start/workspaces/) con un dibujo A4 horizontal en blanco a 300 ppp. **Tinta actual**, una capa de pintura vacía, está seleccionada encima de **Papel**. La herramienta **Pluma** está activa con el pincel **Plumilla G** y un color casi negro.
 
 Más adelante, {appName} se abre con el espacio de trabajo que usaste por última
 vez y con los dibujos que tenías abiertos.
@@ -61,9 +49,7 @@ tecla en el editor web. Elígelo en el menú o en la
 
 ## Empezar otro dibujo
 
-Elige **Archivo > Nuevo…** y selecciona **Crear** en el diálogo
-[Dibujo nuevo](/es/docs/files/new/). El dibujo nuevo se abre en su propia pestaña,
-junto al primero.
+Elige **Archivo > Nuevo…** y selecciona **Crear** en el diálogo [Nuevo dibujo](/es/docs/files/new/). Elige el tamaño, la resolución y los ajustes de Papel y color, y selecciona **Crear**. El dibujo nuevo se abre en su propia pestaña junto al primero.
 
 ## Guardar el dibujo
 

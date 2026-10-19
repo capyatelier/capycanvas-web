@@ -141,7 +141,4 @@ mientras pintas en la máscara de la capa.
 
 ## Otros elementos de Ajustes de capa
 
-**Ajustes de capa** también incluye **Aplicar transformación a píxeles**
-(consulta [Mover y transformar](/es/docs/transform/move-transform/)). En una
-capa de foto, incluye **Reparar perfil del original…**, **Rasterizar original…**
-y **Volver a la foto original** (consulta [Tipos de capa](/es/docs/layers/types/)).
+**Ajustes de capa** también incluye **Aplicar transformación** (consulta [Mover y transformar](/es/docs/transform/move-transform/)). En una capa de objeto, elige **Rasterizar capa** para convertir su origen en píxeles editables (consulta [Tipos de capa](/es/docs/layers/types/)).

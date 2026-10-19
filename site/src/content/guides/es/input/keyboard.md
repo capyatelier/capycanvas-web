@@ -16,8 +16,8 @@ web muestra Ctrl en todos los equipos, y en un Mac, Command funciona como Ctrl.
 
 Haz una de las siguientes acciones:
 
-- Elige **Ayuda > Atajos de teclado**.
-- Pulsa **Ctrl+Mayús+?**.
+- Elige **Editar > Atajos de teclado**.
+- Pulsa **Ctrl+Shift+?**.
 - Elige **Editar > Preferencias** y selecciona **Atajos de teclado**.
 
 ## Mapas de atajos preestablecidos

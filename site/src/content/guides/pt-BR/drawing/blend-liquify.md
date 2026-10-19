@@ -46,8 +46,7 @@ Cada modo é uma predefinição em **Conjunto de ferramentas**:
 
 ![O painel Ferramenta de Cristais de liquefação, com o grupo Liquefazer mostrando Intensidade e Distorção.](shot:drawing/liquify-settings)
 
-**Intensidade**, **Distorção** e **Inércia** ficam no grupo **Liquefazer** do
-painel **Ferramenta**. Liquefazer não tem **Fluxo**.
+**Intensidade**, **Distorção** e **Inércia** ficam no grupo **Liquefazer** do painel **Ferramenta**. **Intensidade** define quanto o traço move os pixels.
 
 ### Intensidade
 

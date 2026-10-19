@@ -24,9 +24,7 @@ Haz una de las siguientes acciones:
 
 **Pincel corrector** y **Pincel corrector puntual** no tienen botón en Pintura.
 
-Cada herramienta es un pincel, con **Tamaño del pincel**, **Opacidad**, **Flujo**
-y los ajustes de **Punta** en el panel Herramienta (consulta
-[Tamaño, opacidad y flujo](/es/docs/brushes/basics/)).
+Cada herramienta es un pincel, con **Tamaño del pincel**, **Opacidad**, **Intensidad** y los ajustes de **Punta** en el panel Herramienta (consulta [Tamaño, intensidad y opacidad](/es/docs/brushes/basics/)).
 
 ![El panel Herramienta de Tampón de clonar, con los ajustes del pincel y los ajustes del origen.](shot:retouch/clone-tool-panel)
 

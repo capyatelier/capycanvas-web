@@ -16,9 +16,9 @@ menampilkan Ctrl di semua komputer, dan di Mac, Command berfungsi sebagai Ctrl.
 
 Lakukan salah satu langkah berikut:
 
-- Pilih **Bantuan > Pintasan Papan Ketik**.
+- Pilih **Edit > Pintasan Papan Ketik**.
 - Tekan **Ctrl+Shift+?**.
-- Pilih **Edit > Preferensi** lalu pilih **Pintasan Papan Ketik**.
+- Pilih **Edit > Preferensi** dan pilih **Pintasan Papan Ketik**.
 
 ## Prasetel pemetaan tombol
 

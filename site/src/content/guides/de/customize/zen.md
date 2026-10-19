@@ -19,8 +19,7 @@ Führen Sie eine der folgenden Aktionen aus:
 - Geben Sie „Zen-Modus“ in die [Befehlssuche](/de/docs/start/command-search/) ein.
 - Tippen Sie mit der Tastenkürzelbelegung **Procreate-Stil** mit vier Fingern auf die Leinwand.
 
-Wiederholen Sie den Schritt, um den Zen-Modus zu beenden. Solange der Zen-Modus aktiv
-ist, erscheint die Capy-Schaltfläche gedrückt.
+Wiederholen Sie dieselbe Aktion, um den Zen-Modus zu verlassen.
 
 Der Zen-Modus wird mit jedem Arbeitsbereich gespeichert und bleibt nach einem
 Neustart aktiv. **Titelleiste anpassen…** schaltet den Zen-Modus aus.
@@ -37,25 +36,9 @@ bleiben:
 
 Tasten und die Befehlssuche (**Strg+K**) funktionieren wie gewohnt.
 
-## Bedienelemente kurz einblenden
-
-Die ausgeblendeten Bedienelemente kehren zurück, solange ein Menü oder Dialog geöffnet
-ist und solange Sie ein Bedienfeld ziehen oder seine Größe ändern. Drücken Sie
-**Escape**, um sie anzuzeigen, bis sich der Zeiger bewegt.
-
-Ist **Bedienfelder an den Bildschirmrändern einblenden** aktiviert, kehren sie auch
-zurück, solange der Zeiger nahe am oberen Rand oder nahe an einem Rand mit
-angedockten Bedienfeldern ist.
-
-Auf einem Touchscreen blendet das erste Tippen auf ein ausgeblendetes Bedienelement
-die Bedienelemente ein, und das zweite Tippen bedient das Element.
-
 ## Andocken im Zen-Modus
 
-Solange angedockte Bedienfelder ausgeblendet sind, kann ein schwebendes Bedienfeld,
-das Sie ziehen, nur mit anderen schwebenden Bedienfeldern verbunden werden. Ist
-**Bedienfelder an den Bildschirmrändern einblenden** aktiviert, zeigt das Ziehen an
-einen Rand mit angedockten Bedienfeldern diese als Ablageziele.
+Solange angedockte Bedienfelder ausgeblendet sind, kann ein gezogenes schwebendes Bedienfeld nur mit anderen schwebenden Bedienfeldern verbunden werden.
 
 ## Menü der Capy-Schaltfläche
 
@@ -78,12 +61,6 @@ Sie die Gruppe **Zen-Modus**. Diese Einstellungen gelten für alle Arbeitsbereic
 Behält die Capy-Schaltfläche im Zen-Modus in der oberen linken Ecke. Standardmäßig
 aktiviert. Solange die Einstellung deaktiviert ist, beenden Sie den Zen-Modus mit
 **Tab** oder über die Befehlssuche.
-
-### Bedienfelder an den Bildschirmrändern einblenden
-
-Zeigt die ausgeblendeten Bedienelemente, solange der Zeiger oder ein Finger nahe an
-einem Bildschirmrand mit ausgeblendeten Bedienelementen ist. Standardmäßig
-deaktiviert.
 
 ### Schaltflächensymbol
 

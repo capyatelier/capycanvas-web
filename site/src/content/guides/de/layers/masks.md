@@ -4,9 +4,7 @@ description: "Teile einer Ebene mit einer Maske verbergen, und alle Befehle, die
 related: ["layers/panel", "selections/working", "filters/how-filters-apply", "layers/merging"]
 ---
 
-Sie können Teile einer Ebene mit einer Maske verbergen. Bemalte Bereiche der
-Maske zeigen die Ebene, leere Bereiche verbergen sie. Malebenen, Fotoebenen,
-Gruppen, Füllebenen und Filter können Masken haben.
+Mit einer Maske können Sie Teile einer Ebene ausblenden. Bemalte Bereiche der Maske zeigen die Ebene, leere Bereiche blenden sie aus. Malebenen, Objektebenen, Gruppen, Füllebenen und Filter können Masken haben.
 
 ## Maske hinzufügen
 
@@ -110,13 +108,9 @@ Führen Sie eine der folgenden Aktionen aus:
 - Wählen Sie **Ebene > Maske > Maske auf Ebene anwenden**.
 - Wählen Sie in der Leiste zur Maskenbearbeitung **Maske anwenden** aus.
 
-**Maske auf Ebene anwenden** funktioniert nur bei Malebenen, und die Maske muss
-aktiviert sein. Wählen Sie bei einer verzerrten oder verformten Ebene zuerst
-**Transformation auf Pixel anwenden**. Um die Maske einer Gruppe anzuwenden,
-verwenden Sie **Gruppe vereinen** (siehe [Ebenen vereinen](/de/docs/layers/merging/)).
+**Maske auf Ebene anwenden** funktioniert nur auf Malebenen, und die Maske muss aktiviert sein. Wählen Sie bei einer verzerrten oder verformten Ebene zuerst **Transformation anwenden**. Um die Maske einer Gruppe anzuwenden, verwenden Sie **Gruppe vereinen** (siehe [Ebenen zusammenführen](/de/docs/layers/merging/)).
 
-Bei einer Fotoebene stellt **Zum Originalfoto zurückkehren** wieder her, was
-eine angewandte Maske gelöscht hat.
+Das Anwenden einer Maske auf eine Objektebene rastert sie.
 
 ## Masken auf Filter- und Füllebenen
 

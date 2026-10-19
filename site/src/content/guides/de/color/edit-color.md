@@ -107,9 +107,7 @@ Klicken Sie, oder heben Sie Stift oder Finger ab, um die Farbe aufzunehmen. Der 
 erscheint wieder mit der aufgenommenen Farbe als Neu. Drücken Sie **Escape** oder
 wählen Sie den Streifen aus, um ohne Änderung zurückzukehren.
 
-Mit dem Finger liegt der Aufnahmepunkt über der Fingerspitze. Wenn Farbe bearbeiten
-aus einem anderen Dialog geöffnet wird, ist **Von der Leinwand aufnehmen**
-ausgeblendet.
+Bei Verwendung eines Fingers erscheint die Lupe über der Fingerspitze, während der Abtastpunkt darunter bleibt. **Von der Leinwand aufnehmen** ist ausgeblendet, wenn Farbe bearbeiten aus einem anderen Dialog geöffnet wird.
 
 ## Zuletzt verwendete Farben und Paletten
 

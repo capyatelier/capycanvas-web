@@ -15,7 +15,7 @@ Esegui una delle seguenti operazioni:
 
 - Scegli **Finestra > Livelli**.
 - In Pittura, seleziona **Livelli** nella colonna destra.
-- In Schizzo, seleziona **Pannello Livelli** nella barra del titolo.
+- In Schizzo, seleziona **Livelli** nella barra del titolo. Il cassetto condiviso si apre sulla vista Livelli; seleziona il pulsante Proprietà di un livello per passare a Proprietà.
 - Digita «Pannello Livelli» nella [ricerca comandi](/it/docs/start/command-search/).
 
 In Foto, il pannello è aperto nella colonna destra.
@@ -52,6 +52,10 @@ I livelli di un gruppo appaiono rientrati sotto il gruppo.
 
 Seleziona una riga per renderla il livello attivo e l'unica riga selezionata.
 [Tipi di livello](/it/docs/layers/types/) mostra la miniatura di ogni tipo.
+
+La Carta ha miniature separate del colore e della trama. Se manca la Carta, **Aggiungi carta** compare dopo l'ultima riga.
+
+![Il cassetto di Schizzo passa da Livelli a Proprietà.](shot:layers/sketch-properties-drawer)
 
 Fai **Ctrl**+clic sulla miniatura di un livello di pittura per caricarne
 l'opacità come selezione, o sulla miniatura della maschera per caricare la

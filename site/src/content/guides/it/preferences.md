@@ -1,7 +1,7 @@
 ---
 title: "Preferenze"
-description: "La finestra di dialogo Preferenze e le impostazioni delle pagine Aspetto, Tela, Colore e Informazioni."
-related: ["input/pen", "input/keyboard", "customize/zen", "color-management/color-spaces"]
+description: "La finestra di dialogo Preferenze e le impostazioni delle pagine Aspetto, Tela, Ingresso, Colore e Informazioni."
+related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
 Puoi modificare le impostazioni dell'intera app nella finestra di dialogo
@@ -18,9 +18,7 @@ Esegui una delle seguenti operazioni:
 - In Pittura e Foto, seleziona il pulsante a ingranaggio all'estremità destra della barra del titolo.
 - Digita «preferenze» nella [ricerca comandi](/it/docs/start/command-search/).
 
-Le Preferenze si aprono sulla pagina **Aspetto**. **Aiuto > Scorciatoie da
-tastiera** le apre su **Scorciatoie da tastiera**, e **Aiuto > Informazioni su
-{appName}** su **Informazioni**.
+Le Preferenze si aprono su **Aspetto**. Scegli **Modifica > Scorciatoie da tastiera** per le scorciatoie da tastiera, oppure **Informazioni su {appName}** dal menu dell'applicazione per Informazioni.
 
 Mentre le Preferenze sono aperte, le scorciatoie della tela, i pulsanti della
 penna e i tocchi con le dita non hanno effetto.
@@ -91,18 +89,22 @@ acqua**, **Verde**, **Giallo**, **Arancione**, **Rosso**, **Rosa**, **Viola**,
 Mantiene il pulsante Capy sullo schermo in [modalità Zen](/it/docs/customize/zen/).
 Attivo per impostazione predefinita.
 
-### Mostra pannelli vicino ai bordi dello schermo
-
-Mostra i controlli nascosti in modalità Zen mentre il puntatore è vicino a un
-bordo dello schermo con controlli nascosti. Disattivato per impostazione
-predefinita.
-
 ### Icona del pulsante
 
 Imposta l'immagine del pulsante Capy: **Guarda in alto** (predefinita), **Guarda
 avanti**, **Fa il bagno** o **Dorme**.
 
 ## Tela
+
+![Le impostazioni di navigazione della tela.](shot:preferences/canvas-navigation)
+
+### Rotella del mouse
+
+Scegli se la rotella del mouse senza modificatori sposta o ingrandisce la tela. Tenere premuto **Ctrl** usa l'altra azione.
+
+### Ruota con due dita
+
+Consente di ruotare la vista ruotando due dita. Disattivalo per limitare i gesti a due dita a spostamento e zoom.
 
 ### Velocità di spostamento con scorrimento
 

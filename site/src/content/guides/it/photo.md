@@ -36,9 +36,8 @@ La foto modificata ha questi livelli, dall'alto in basso:
 | **Vividezza** | Aumenta la vividezza dell'intera foto |
 | **Curve** | Una curva a S per l'intera foto |
 | *Retouch* | Tratti di correzione |
-| Il livello fotografico | La foto, con il nome del suo file |
-| **Carta** | Nascosto |
+| Il livello Oggetto | La foto, con il nome del suo file |
 
-Sul livello fotografico non c'è nulla di dipinto.
+Sul livello Oggetto non c'è nulla di dipinto.
 
 Prima fase: [Aprire e ritagliare](/it/docs/photo/crop/).

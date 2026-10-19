@@ -1,10 +1,12 @@
 ---
 title: "การส่งออกภาพ"
 description: "การส่งออกสำเนาภาพแบบรวมเลเยอร์ของภาพวาดด้วยกล่องโต้ตอบส่งออกภาพและส่งออกอีกครั้ง"
-related: ["files/open-save", "color-management/hdr", "color-management/color-spaces"]
+related: ["files/open-save", "layers/paper", "color-management/hdr", "color-management/color-spaces"]
 ---
 
 คุณส่งออกสำเนาภาพของภาพวาดแบบรวมเลเยอร์ได้ การส่งออกไม่เปลี่ยนภาพวาด `.capy` และไม่นับเป็นการบันทึก
+
+การส่งออกจากแอปเนทีฟรวม[แสงกระดาษ](/th/docs/layers/paper/) การส่งออกจากเว็บยังไม่รวมแสงกระดาษ ภาพตัวอย่างความนูนชั่วคราวหลังเปลี่ยนพื้นผิวกระดาษหรือมาตราส่วนไม่รวมอยู่ด้วย
 
 ## การส่งออกภาพ
 
@@ -46,7 +48,7 @@ related: ["files/open-save", "color-management/hdr", "color-management/color-spa
 
 ### โปรไฟล์ผลลัพธ์
 
-**sRGB** **Display P3** **Adobe RGB (1998)** หรือ **ProPhoto RGB** และ “ต้นฉบับ: *ชื่อ*” สำหรับเลเยอร์ภาพถ่ายแต่ละเลเยอร์ที่มีโปรไฟล์ฝังอยู่ในตัว
+**sRGB** **Display P3** **Adobe RGB (1998)** หรือ **ProPhoto RGB** และ “ต้นฉบับ: *ชื่อ*” สำหรับเลเยอร์วัตถุแต่ละเลเยอร์ที่มีโปรไฟล์ฝังอยู่ในตัว
 
 ### ความลึกบิต
 

@@ -56,7 +56,7 @@ Setiap bilah alat harus memiliki nama yang berbeda.
 - Untuk memindahkan alat, tahan alat itu, lalu seret di dalam bilah alat atau ke bilah alat lain.
 
 Selain perintah dan alat, daftar **Tambah Alat** berisi kuas, ukuran kuas,
-**Pemilih Warna**, **Penggeser ukuran kuas**, **Penggeser opasitas kuas**,
+**Pemilih Warna**, **Penggeser ukuran kuas**, **Penggeser kekuatan**,
 **Opsi Alat**, dan **Pemisah**. Daftar ini juga memiliki entri untuk setiap panel,
 seperti **Panel Lapisan**, yang membuka panel itu dalam laci.
 

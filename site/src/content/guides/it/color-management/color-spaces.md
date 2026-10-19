@@ -56,7 +56,7 @@ Le Preferenze non hanno un'impostazione per la Fusione.
 
 Scegli **Modifica > Assegna profilo…** per mantenere i valori RGB del disegno e
 leggerli in un altro spazio di lavoro. Scegli lo spazio sotto **Spazio colore**,
-dove Adobe RGB (1998) compare come **Adobe RGB**. I livelli fotografici mantengono
+dove Adobe RGB (1998) compare come **Adobe RGB**. I livelli Oggetto mantengono
 il profilo sorgente della loro [foto originale](/it/docs/layers/types/).
 
 ## Converti spazio colore

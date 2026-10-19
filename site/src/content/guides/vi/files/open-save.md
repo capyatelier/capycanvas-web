@@ -11,8 +11,7 @@ này từ **Trình đơn chính** trên thanh tiêu đề.
 
 ## Mở bản vẽ hoặc ảnh
 
-Bạn có thể mở bản vẽ `.capy` và ảnh ở định dạng OpenEXR, TIFF, PNG, WebP, BMP,
-JPEG, GIF, HEIF và AVIF. Mỗi tệp mở trong thẻ riêng.
+Bạn có thể mở bản vẽ `.capy` và ảnh ở định dạng OpenEXR, TIFF, PNG, WebP, BMP, JPEG, GIF, HEIF và AVIF. Mỗi tệp mở trong thẻ riêng.
 
 Thực hiện một trong các cách sau:
 
@@ -20,13 +19,11 @@ Thực hiện một trong các cách sau:
 - Nhấn **Ctrl+O**.
 - Trong Vẽ và Ảnh, chọn **Mở…** trên Thanh lệnh.
 - Trong trình chỉnh sửa web hoặc trên Linux, kéo tệp vào tên bản vẽ hoặc vào các thẻ trên thanh tiêu đề.
-- Nếu bạn đã cài trình chỉnh sửa web thành ứng dụng, mở tệp `.capy`, `.png`, `.jpg`, `.tif`, `.avif` hoặc `.exr` bằng {appName} từ hệ thống.
+- Nếu đã cài trình biên tập web thành ứng dụng, mở tệp được hỗ trợ bằng {appName} từ hệ thống.
 
 ## Ảnh
 
-Ảnh mở thành một bản vẽ mới có một lớp ảnh mang tên tệp, nằm trên một lớp
-**Giấy**. Ảnh giữ hồ sơ màu và, theo mặc định, giữ độ sâu bit của nó. Lưu bản vẽ sẽ
-tạo một tệp `.capy` và không bao giờ ghi đè lên ảnh.
+Ảnh mở thành bản vẽ mới với lớp Đối tượng được đặt tên theo tệp. Đối tượng giữ kích thước, hồ sơ màu và theo mặc định là độ sâu bit riêng của ảnh. Lưu bản vẽ tạo tệp `.capy` và không bao giờ ghi đè ảnh nguồn.
 
 - Ảnh GIF hoặc WebP động chỉ mở khung hình đầu tiên.
 - Mỗi cạnh của ảnh có thể dài tối đa 32768 pixel.
@@ -39,7 +36,7 @@ Khi **RGB và thang xám không có hồ sơ màu** được đặt là **Hỏi*
 
 ## Nhập ảnh thành lớp
 
-Bạn có thể thêm ảnh vào bản vẽ hiện tại thành các lớp mới.
+Bạn có thể thêm ảnh vào bản vẽ dưới dạng lớp mới.
 
 Thực hiện một trong các cách sau:
 
@@ -47,9 +44,7 @@ Thực hiện một trong các cách sau:
 - Nhấn **Ctrl+Shift+O**.
 - Kéo ảnh vào khung vẽ, hoặc vào một hàng của bảng **Lớp**.
 
-Mỗi ảnh trở thành một lớp mang tên tệp, nằm trên lớp đang chọn, kèm
-[các tay nắm biến đổi](/vi/docs/transform/move-transform/) để đặt vị trí. Ảnh lớn
-hơn khung vẽ được thu nhỏ cho vừa.
+Mỗi ảnh trở thành [lớp Đối tượng](/vi/docs/layers/types/) được đặt tên theo tệp, phía trên lớp đang chọn, với [tay nắm biến đổi](/vi/docs/transform/move-transform/) để đặt ảnh. Ảnh lớn hơn khung vẽ được thu nhỏ để vừa.
 
 Không thể nhập tệp `.capy`. Trong trình chỉnh sửa web, mỗi ảnh có dung lượng tối đa
 512 MiB.
@@ -64,8 +59,7 @@ Thực hiện một trong các cách sau:
 - Nhấn **Ctrl+S**.
 - Trong Vẽ và Ảnh, chọn **Lưu** trên Thanh lệnh.
 
-Lần lưu đầu tiên hỏi vị trí lưu, các lần lưu sau ghi vào cùng tệp đó. Sau khi lưu,
-thẻ hiện tên tệp không có dấu ●.
+Lần lưu đầu hỏi vị trí; các lần sau dùng cùng tệp. Thẻ đã lưu hiện tên tệp không có dấu ●.
 
 Trong Firefox và Safari, bản vẽ chỉ được tính là đã lưu sau khi bạn chọn
 **Tải xuống** rồi chọn **Đã lưu tệp** trong hộp thoại **Tải tệp xuống**.
@@ -80,16 +74,11 @@ Không dùng được **Lưu** khi đang mở thao tác cắt xén hoặc biến
 
 ## Những gì tệp .capy lưu giữ
 
-Tệp `.capy` lưu mọi lớp cùng mặt nạ và thiết lập của lớp, các bộ lọc, vùng chọn đã
-lưu và đường hướng dẫn, không gian màu, độ sâu bit và hòa trộn, cùng dữ liệu
-EXIF, XMP và IPTC của ảnh. Tệp không lưu lịch sử hoàn tác, khung nhìn và vùng chọn
-đang hoạt động.
+Tệp `.capy` giữ mọi lớp cùng mặt nạ và thiết lập, ảnh nguồn Đối tượng được nhúng và kết cấu Giấy đã nhập, bộ lọc, vùng chọn và đường dẫn hướng đã lưu, không gian màu, độ sâu bit và hòa trộn, cùng dữ liệu EXIF, XMP và IPTC của ảnh. Tệp không giữ lịch sử hoàn tác, chế độ xem hoặc vùng chọn đang hoạt động.
 
 ## Bản vẽ chỉ xem
 
-Tệp `.capy` mà {appName} không chỉnh sửa được, ví dụ tệp bị hỏng, sẽ mở trong một
-hộp thoại thay vì một thẻ. **Copy Original File…** lưu một bản sao của tệp, còn
-**Export Preview Image…** lưu ảnh xem trước của bản vẽ thành PNG.
+Tệp `.capy` mà {appName} không thể sửa, gồm tệp ở định dạng mới chưa hỗ trợ hoặc tệp hỏng, mở trong hộp thoại thay vì thẻ. **Copy Original File…** lưu bản sao của tệp và **Export Preview Image…** lưu ảnh xem trước của bản vẽ thành PNG.
 
 ## Thẻ bản vẽ
 
@@ -111,8 +100,7 @@ Trong trình chỉnh sửa web, kéo một thẻ sang ngang để sắp xếp l�
 Dấu ● trước tên cho biết có thay đổi chưa lưu. Khi thanh tiêu đề hẹp, các thẻ gộp
 thành một nút mở danh sách Bản vẽ.
 
-Mỗi thẻ giữ riêng lịch sử hoàn tác, khung nhìn và vùng chọn. Thẻ không thuộc về
-không gian làm việc.
+Mỗi thẻ giữ lịch sử hoàn tác, chế độ xem và vùng chọn riêng. Thẻ không thuộc không gian làm việc.
 
 ## Bản vẽ…
 

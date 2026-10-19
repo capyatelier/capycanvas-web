@@ -1,23 +1,16 @@
 ---
 title: "Caneta"
-description: "As configurações da caneta nas Preferências e o toque duplo e o aperto do Apple Pencil."
-related: ["input/touch", "input/keyboard", "preferences", "brushes/basics"]
+description: "Os ajustes da caneta em Preferências e o toque duplo e o gesto de apertar do Apple Pencil."
+related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-As configurações da caneta ficam na página **Caneta e entrada** de **Editar >
-Preferências**.
+Os ajustes da caneta ficam na página **Caneta e entrada** de **Editar > Preferências**.
 
 ![A página Caneta e entrada das Preferências.](shot:pen/pen-and-input)
 
-## Resposta à pressão
+## Pressão da caneta
 
-Você pode alterar como a caneta responde à pressão leve com **Resposta à pressão**,
-em **Resposta da caneta**. Valores menores tornam a pressão leve mais forte, e
-valores maiores exigem mais força. O intervalo vai de 0,25 × a 4,00 ×. No padrão,
-1,00 ×, a pressão da caneta é usada sem alteração.
-
-A configuração vale para todos os pincéis e ferramentas, incluindo **Pintar
-seleção** e **Máscara rápida**. Os traços já desenhados não mudam.
+Selecione **Ajustar…** ao lado de **Pressão da caneta** para moldar a curva de pressão e testá-la na tela atual. A curva se aplica a todos os pincéis e ferramentas sensíveis à pressão; os traços já desenhados não mudam. Consulte [Pressão da caneta](/pt-BR/docs/input/pen-pressure/).
 
 ## Previsão de traços
 

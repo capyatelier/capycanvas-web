@@ -18,7 +18,7 @@ Eskiz'de yuvaya yerleştirilmiş panel yoktur: başlık çubuğundaki araç ve p
 1. **Capy (Zen modu)**, **Ana menü**, **Filtreler paneli**, **Seç** ve **Dönüştür**.
 2. Çalışma alanı değiştirici.
 3. **Fırça**, **Şekillendir**, **Silgi**, **Katmanlar paneli** ve **Fırça rengi**. Web düzenleyicisinde bunlara **Tam ekran** eklenir.
-4. **Fırça boyutu kaydırıcısı**, **Renk seçici**, **Fırça opaklığı kaydırıcısı**, **Geri al** ve **Yinele**.
+4. **Fırça boyutu kaydırıcısı**, **Renk seçici**, **Güç kaydırıcısı**, **Geri al** ve **Yinele**.
 
 | Düğme | Çekmecedeki paneller |
 | --- | --- |
@@ -34,8 +34,7 @@ Eskiz'de yuvaya yerleştirilmiş panel yoktur: başlık çubuğundaki araç ve p
 çubuğundadır). **Seç**, en son kullandığınız seçim aracını seçer.
 
 Eskiz, yakınlaştırma göstergesinin bulunduğu alt çubuğu gizler. Alt çubuğu
-göstermek için **Pencere > Başlık çubuğunu özelleştir…** içinde **Alt çubuğu
-göster** seçeneğini açın.
+göstermek için **Pencere > Başlık çubuğunu özelleştir…** içinde **Alt çubuğu göster** seçeneğini açın.
 
 ## Boya
 
@@ -105,8 +104,7 @@ Değiştiricide hangi çalışma alanlarının görüneceğini seçebilirsiniz.
 - Değiştiriciye sağ tıklayın veya değiştiriciyi kalemle ya da parmakla basılı tutun.
 - Değiştirici odaktayken **Shift+F10** tuşlarına basın (macOS ve iPad'de çalışmaz).
 
-Bir çalışma alanını değiştiricide göstermek için işaretleyin. **Çalışma
-alanlarını yönet…** tüm çalışma alanlarının listesini açar (bkz.
+Bir çalışma alanını değiştiricide göstermek için işaretleyin. **Çalışma alanlarını yönet…** tüm çalışma alanlarının listesini açar (bkz.
 [Çalışma alanlarını yönetme](/tr/docs/customize/workspaces/)).
 
 Değiştirici her çalışma alanında ve her pencerede aynı çalışma alanlarını
@@ -127,5 +125,4 @@ kaydetmek için bir komut yoktur.
 | Düzen geçmişi ve başlangıç düzeni | Tercihler ve klavye kısayolları |
 
 **Eskiz**, **Boya** ve **Fotoğraf** yeniden adlandırılamaz veya silinemez.
-Bunlardan birini başlangıç düzenine döndürmek için **Pencere > Çalışma alanları >
-Başlangıç düzenini geri yükle…** komutunu seçin.
+Bunlardan birini başlangıç düzenine döndürmek için **Pencere > Çalışma alanları > Başlangıç düzenini geri yükle…** komutunu seçin.

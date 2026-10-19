@@ -55,7 +55,7 @@ Preferences has no Blending setting.
 
 Choose **Edit > Assign Profile…** to keep the drawing's RGB numbers and read
 them in another working space. Choose the space under **Color space**, where
-Adobe RGB (1998) is listed as **Adobe RGB**. Photo layers keep the source
+Adobe RGB (1998) is listed as **Adobe RGB**. Object layers keep the source
 profile of their [original photo](/docs/layers/types/).
 
 ## Convert Color Space

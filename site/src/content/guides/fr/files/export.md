@@ -1,12 +1,14 @@
 ---
 title: "Exporter des images"
-description: "Exporter une copie aplatie d’un dessin avec la boîte de dialogue Exporter l’image et avec Exporter à nouveau."
-related: ["files/open-save", "color-management/hdr", "color-management/color-spaces"]
+description: "L’exportation d’une copie aplatie d’un dessin avec la boîte de dialogue Exporter l’image et Exporter à nouveau."
+related: ["files/open-save", "layers/paper", "color-management/hdr", "color-management/color-spaces"]
 ---
 
 Vous pouvez exporter une copie aplatie du dessin sous forme d’image.
 L’exportation ne modifie pas le dessin `.capy` et ne compte pas comme un
 enregistrement.
+
+Les exportations natives incluent l’[éclairage du Papier](/fr/docs/layers/paper/). Les exportations web l’omettent actuellement. L’aperçu temporaire du relief affiché après une modification de la texture ou de l’Échelle du Papier n’est pas inclus.
 
 ## Exporter une image
 
@@ -57,9 +59,7 @@ Limites des formats plus bas).
 
 ### Profil de sortie
 
-**sRGB**, **Display P3**, **Adobe RGB (1998)** ou **ProPhoto RGB**, ainsi que
-« Original : *nom* » pour chaque calque photo doté de son propre profil
-incorporé.
+**sRGB**, **Display P3**, **Adobe RGB (1998)** ou **ProPhoto RGB**, plus « Original : *nom* » pour chaque calque Objet ayant son propre profil intégré.
 
 ### Profondeur de couleur
 

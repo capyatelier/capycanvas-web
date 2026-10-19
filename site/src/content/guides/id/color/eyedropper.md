@@ -14,7 +14,7 @@ Lakukan salah satu langkah berikut:
 - Tekan **I** (**O** pada pemetaan tombol Gaya GIMP).
 - Pilih **Pipet Warna** di pencarian perintah.
 - Di Lukis dan Foto, pilih **Pipet Warna** di bilah alat Alat.
-- Di Sketsa, pilih **Pemilih Warna** pada bilah di tepi kiri, di antara penggeser ukuran dan penggeser opasitas.
+- Di Sketsa, pilih **Pemilih Warna** pada bilah di tepi kiri, di antara **Penggeser ukuran kuas** dan **Penggeser kekuatan**.
 
 Untuk berhenti tanpa mengambil warna, tekan **I** atau pilih tombol yang sama lagi, tekan
 **Escape**, atau pilih alat atau kuas lain. Ketukan jari tanpa menahan juga menghentikan
@@ -31,7 +31,7 @@ hanya berubah saat Anda mengambil warna.
 | Pena | Arahkan pena, atau tekan pena ke layar | Angkat pena |
 | Jari | Sentuh | Angkat jari |
 
-Dengan jari, titik sampel berada di atas ujung jari.
+Dengan jari, kaca pembesar muncul di atas ujung jari sementara titik sampel tetap berada di bawah ujung jari.
 
 Piksel transparan tidak menghasilkan warna, dan warna yang diambil selalu pekat. Warna
 diambil dalam ruang warna gambar. Pada gambar HDR, warna yang diambil dapat lebih terang
@@ -65,6 +65,8 @@ Pilih **Gaya** di bilah Opsi Alat saat mengambil warna (di bagian atas jendela d
 - **Pipet Warna** menampilkan kursor pipet dengan ujungnya di titik sampel.
 
 ![Kaca pembesar Pemilih Warna di atas goresan merah, dengan warna sampel dan warna saat ini di cincinnya.](shot:color/eyedropper-loupe)
+
+![Kaca pembesar Pemilih Warna di atas jari, dengan titik sampel di bawah kontak.](shot:color/eyedropper-touch)
 
 Sentuhan selalu memakai kaca pembesar. Memilih **Pemilih Warna** di Sketsa mengatur
 **Gaya** ke **Pemilih Warna**. Tanda lapisan kecil muncul jika **Sumber** disetel ke

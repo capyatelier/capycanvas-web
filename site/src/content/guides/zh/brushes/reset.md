@@ -18,7 +18,7 @@ related: ["brushes/basics", "drawing/brush-tools", "customize/workspaces"]
 
 ## 重置单项设置
 
-可以将单项设置恢复为画笔的内置值。在工具选项栏中双击（或轻点两下）该设置的标签或图标（[大小、不透明度和流量](/zh/docs/brushes/basics/)）。
+可以将一项设置恢复为画笔的内置值。双击（或轻点两下）工具选项栏中该设置的标签或图标（[大小、强度和不透明度](/zh/docs/brushes/basics/)）。
 
 **工具设置**面板中没有重置功能。要重置**混色**，请选择 **Oklab 混色**，这是所有混色画笔的内置选项。
 

@@ -57,11 +57,7 @@ Cada barra de herramientas necesita un nombre propio.
 - Para quitar una herramienta, elige **Quitar herramienta** en su menú.
 - Para mover una herramienta, mantenla pulsada y arrástrala dentro de la barra o a otra barra.
 
-Además de comandos y herramientas, la lista **Añadir herramientas** incluye
-pinceles, tamaños de pincel, **Selector de color**, **Deslizador de tamaño de
-pincel**, **Deslizador de opacidad de pincel**, **Opciones de herramienta** y
-**Separador**. También tiene una entrada por cada panel, como **Panel de capas**,
-que abre el panel en un cajón.
+Además de comandos y herramientas, la lista **Añadir herramientas** tiene pinceles, tamaños de pincel, **Selector de color**, **Deslizador de tamaño de pincel**, **Control de intensidad**, **Opciones de herramienta** y **Separador**. También tiene una entrada para cada panel, como **Panel de capas**, que abre el panel en un cajón.
 
 **Opciones de herramienta** muestra los ajustes de la herramienta actual a lo largo
 del resto de la barra. Su menú tiene **Horizontal: texto**, **Horizontal: iconos** y

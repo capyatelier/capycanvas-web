@@ -15,8 +15,8 @@ Effectuez l’une des opérations suivantes :
 
 - Choisissez **Fenêtre > Calques**.
 - Dans Peinture, sélectionnez **Calques** dans la colonne de droite.
-- Dans Croquis, sélectionnez **Panneau Calques** dans la barre de titre.
-- Tapez « Panneau Calques » dans la [recherche de commandes](/fr/docs/start/command-search/).
+- Dans Croquis, sélectionnez **Calques** dans la barre de titre. Le tiroir partagé s’ouvre sur sa vue Calques ; sélectionnez le bouton Propriétés d’un calque pour passer aux Propriétés.
+- Tapez « Panneau Calques » dans la [recherche de commandes](/fr/docs/start/command-search/).
 
 Dans Photo, le panneau est ouvert dans la colonne de droite.
 
@@ -52,6 +52,10 @@ Les calques d’un groupe sont en retrait sous le groupe.
 
 Sélectionnez une ligne pour en faire le calque actif et la seule ligne sélectionnée.
 [Types de calques](/fr/docs/layers/types/) montre la miniature de chaque type.
+
+Le Papier possède des vignettes distinctes pour la couleur et la texture. Si le Papier est absent, **Ajouter du papier** apparaît après la dernière ligne.
+
+![Le tiroir de Croquis passant de Calques à Propriétés.](shot:layers/sketch-properties-drawer)
 
 Faites **Ctrl**+clic sur la miniature d’un calque de peinture pour charger son
 opacité comme sélection, ou sur la miniature du masque pour charger le masque.

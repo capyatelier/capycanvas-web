@@ -106,7 +106,7 @@ Daraltılmış bir grupta menü öğesinin adı **Grubu ve içeriğini sil** olu
 Genişletilmiş bir grubu silmek, **Grubu çöz** gibi katmanlarını korur.
 
 Bir katmanı sildiğinizde ona kırpılmış katmanlar ve iliştirilmiş filtreler
-kalır. Kilitli bir katmanı silemezsiniz. **Delete** tuşu katmanları değil,
+kalır. Kilitli bir katmanı silemezsiniz. **Sil** tuşu katmanları değil,
 seçili pikselleri temizler.
 
 ## Seçimi yeni katmana kopyala
@@ -136,7 +136,4 @@ Aşağıdakilerden birini yapın:
 - Katmanlar panelinin altındaki **Görüntüyü katman olarak içe aktar…** düğmesini seçin.
 - Görüntü dosyalarını tuvale veya Katmanlar panelindeki bir satırın üzerine sürükleyin.
 
-Her dosya, etkin katmanın üstünde ya da bırakıldığı satırın üstünde, altında
-veya içinde bir [fotoğraf katmanı](/tr/docs/layers/types/) olur. Görüntü
-ortalanır, tuvale sığacak şekilde küçültülür ve
-[yerleştirme tutamaçlarıyla](/tr/docs/transform/move-transform/) gösterilir.
+Her dosya etkin katmanın üzerinde veya bırakıldığı satırın üstünde, altında ya da içinde bir [nesne katmanı](/tr/docs/layers/types/) olur. Görüntü ortalanır ve tuvale sığacak şekilde küçültülür; [yerleştirme tutamaçları](/tr/docs/transform/move-transform/) gösterilir.

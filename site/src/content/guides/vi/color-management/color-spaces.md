@@ -55,7 +55,7 @@ Tùy chọn không có thiết lập Hòa trộn.
 
 Chọn **Chỉnh sửa > Gán hồ sơ màu…** để giữ nguyên các số RGB của bản vẽ và đọc chúng
 trong một không gian làm việc khác. Chọn không gian trong **Không gian màu**, nơi
-Adobe RGB (1998) được ghi là **Adobe RGB**. Lớp ảnh giữ hồ sơ màu nguồn của
+Adobe RGB (1998) được ghi là **Adobe RGB**. Lớp Đối tượng giữ hồ sơ màu nguồn của
 [ảnh gốc](/vi/docs/layers/types/).
 
 ## Chuyển không gian màu

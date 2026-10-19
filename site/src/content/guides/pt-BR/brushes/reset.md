@@ -19,9 +19,7 @@ Toda alteração em uma configuração de pincel é salva na hora com a predefin
 
 ## Redefinir uma configuração
 
-Você pode voltar uma configuração ao valor integrado do pincel. Clique duas vezes
-(ou toque duas vezes) no rótulo ou no ícone da configuração na barra Opções da
-ferramenta ([Tamanho, opacidade e fluxo](/pt-BR/docs/brushes/basics/)).
+Você pode restaurar um ajuste para o valor incluído do pincel. Clique duas vezes (ou toque duas vezes) no rótulo ou ícone na barra Opções da ferramenta ([Tamanho, intensidade e opacidade](/pt-BR/docs/brushes/basics/)).
 
 O painel **Ferramenta** não tem opção de redefinir. Para redefinir **Mistura de
 cores**, selecione **Mistura Oklab**, a opção integrada de todos os pincéis de

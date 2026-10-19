@@ -62,9 +62,7 @@ Haz una de las siguientes acciones:
 
 ![El menú Añadir filtro abierto desde la parte inferior del panel Capas.](shot:filters/add-filter-menu)
 
-**Añadir filtro** funciona en capas de pintura desbloqueadas, en capas de foto y
-en grupos que no tengan Traspasar activado. Su menú tiene todas las categorías
-salvo **Relleno**.
+**Añadir filtro** funciona en capas de pintura, capas de objeto y grupos desbloqueados que no estén en modo Traspasar. Su menú tiene todas las categorías excepto **Rellenar**.
 
 ## Cajón Filtros de Boceto
 

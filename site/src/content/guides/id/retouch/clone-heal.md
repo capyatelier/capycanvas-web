@@ -24,8 +24,8 @@ Lakukan salah satu langkah berikut:
 
 **Kuas Pemulih** dan **Kuas Pemulih Noda** tidak memiliki tombol di Lukis.
 
-Setiap alat adalah kuas, dengan **Ukuran kuas**, **Opasitas**, **Aliran cat**, dan
-pengaturan **Ujung** di panel Alat (lihat [Ukuran, opasitas, dan aliran cat](/id/docs/brushes/basics/)).
+Setiap alat adalah kuas, dengan **Ukuran kuas**, **Opasitas**, **Kekuatan**, dan
+pengaturan **Ujung** di panel Alat (lihat [Ukuran, kekuatan, dan opasitas cat](/id/docs/brushes/basics/)).
 
 ![Panel Alat untuk Stempel Klon, dengan pengaturan kuas dan pengaturan sumber.](shot:retouch/clone-tool-panel)
 

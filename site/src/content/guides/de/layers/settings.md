@@ -151,7 +151,4 @@ Maske der Ebene malen.
 
 ## Weitere Einträge unter Ebeneneinstellungen
 
-**Ebeneneinstellungen** enthält außerdem **Transformation auf Pixel anwenden**
-(siehe [Verschieben und Transformieren](/de/docs/transform/move-transform/)). Bei
-einer Fotoebene enthält es **Quellprofil reparieren…**, **Quelle rastern…** und
-**Zum Originalfoto zurückkehren** (siehe [Ebenentypen](/de/docs/layers/types/)).
+**Ebeneneinstellungen** enthält auch **Transformation anwenden** (siehe [Verschieben und Transformieren](/de/docs/transform/move-transform/)). Wählen Sie bei einer Objektebene **Ebene rastern**, um ihre Quelle in bearbeitbare Pixel umzuwandeln (siehe [Ebenentypen](/de/docs/layers/types/)).

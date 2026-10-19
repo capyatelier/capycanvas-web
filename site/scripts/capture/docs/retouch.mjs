@@ -5,7 +5,7 @@ const photo = new URL('../photo/terrarium.jpg', import.meta.url);
 const bar = 'section.canvas-action-bar';
 const separation = '#frequency-separation-panel';
 const group = panel => `section.dock-group[data-panel="${panel}"]`;
-const thumbnails = `[...document.querySelectorAll('#layer-rows .layer-thumbnail canvas')].filter(c=>c.checkVisibility()&&c.getBoundingClientRect().width>0).every(c=>c.dataset.previewRevision)`;
+const thumbnails = `[...document.querySelectorAll('#layer-rows .layer-thumbnail:not(.layer-texture) canvas')].filter(c=>c.checkVisibility()&&c.getBoundingClientRect().width>0).every(c=>c.dataset.previewRevision)`;
 
 export default async function retouch({ e, b, shoot }) {
   const steady = selector => settleLayout(b, selector, 8);
@@ -61,6 +61,19 @@ export default async function retouch({ e, b, shoot }) {
   };
   const command = id => `layerApp.state().commands.find(c=>c.id===${JSON.stringify(id)})`;
   const sourceBar = `layerApp.state().canvas_bar?.context.kind==='clone_source' && ${canvasBar}`;
+  const prepareSeparation = async original => {
+    // Prepare the blur through its ordinary filter path before the separation
+    // preview uses it. Undo restores the original photo and layer selection.
+    const count = await e.read('layerApp.state().layers.length');
+    await e.send({ type: 'effect', action: { op: 'insert', effect: 'gaussian_blur' } });
+    await e.wait(`layerApp.state().layers.length===${count + 1} && layerApp.state().layer_tools.editing_layer.adjustment_effect`);
+    await e.canvas();
+    await b.until('!layerApp.app.shader_work_pending(true)', 180000);
+    await e.invoke('undo');
+    await e.wait(`layerApp.state().layers.length===${count}`);
+    await e.layer({ op: 'select', id: original, mask: false });
+    await e.canvas();
+  };
 
   await e.workspace('illustrator');
   await reset();
@@ -95,6 +108,8 @@ export default async function retouch({ e, b, shoot }) {
   const original = await terrarium();
   if (!await e.read(`${command('blend_perceptual')}.selected`)) await e.invoke('blend_perceptual');
   await e.layer({ op: 'select', id: original, mask: false });
+  await b.until('!layerApp.app.shader_work_pending(true)', 180000);
+  await prepareSeparation(original);
   await e.invoke('frequency_separation');
   await e.wait(`!!document.querySelector('${separation} #frequency-separation-value') && layerApp.state().layer_tools.frequency_separation?.radius===4`);
   await shoot('retouch/frequency-separation-panel', { target: separation, variant: () => steady(separation) });

@@ -46,8 +46,7 @@ Ogni modalità è un predefinito in **Set di strumenti**:
 
 ![Il pannello Strumento per Fluidifica: cristalli, con il gruppo Fluidifica che mostra Intensità e Distorsione.](shot:drawing/liquify-settings)
 
-**Intensità**, **Distorsione** e **Inerzia** si trovano nel gruppo
-**Fluidifica** del pannello **Strumento**. Fluidifica non ha **Flusso**.
+**Intensità**, **Distorsione** e **Inerzia** si trovano nel gruppo **Fluidifica** del pannello **Strumento**. **Intensità** imposta l'intensità con cui il tratto sposta i pixel.
 
 ### Intensità
 

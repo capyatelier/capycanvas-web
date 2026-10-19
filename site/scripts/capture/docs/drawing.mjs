@@ -73,6 +73,20 @@ export function helpers(e, b) {
         await workspaceReady();
       }
     }
+    // Some preset lists exceed the dock column's minimum-size constraints.
+    // Float and resize the real panel so every preset is visible in the shot.
+    if (!fits((await measure()).need)) {
+      if (!await e.read(`document.querySelector(${json(group(panel))}).classList.contains('floating-panel')`)) {
+        await e.send({ type: 'move_panel', panel, target: { kind: 'float', position: [420, 100] } });
+        await workspaceReady();
+      }
+      for (let attempt = 0; attempt < 4 && !fits((await measure()).need); attempt++) {
+        const need = (await measure()).need;
+        const handle = await e.read(`(()=>{const id=layerApp.app.layout(innerWidth,innerHeight).groups.find(g=>g.panels.includes(${json(panel)})).id;const node=[...document.querySelectorAll('.floating-resize[data-edge="bottom"]')].find(n=>JSON.parse(n.dataset.workspaceDrag).group===id);if(!node)throw Error('Missing floating resize handle');const r=node.getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2}})()`);
+        await mouseDrag(handle, { x: handle.x, y: handle.y + need + 6 });
+        await workspaceReady();
+      }
+    }
     const { need } = await measure();
     assert.ok(fits(need), `The ${panel} panel fits its content (${need}px off)`);
   };

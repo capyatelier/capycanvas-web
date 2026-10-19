@@ -1,96 +1,49 @@
 ---
 title: "Bản vẽ mới"
-description: "Hộp thoại Bản vẽ mới và các lớp có sẵn khi bắt đầu một bản vẽ mới."
-related: ["color-management/color-spaces", "layers/types", "files/open-save"]
+description: "Kích thước tờ giấy, độ phân giải, thiết lập giấy và màu, cùng thiết lập đặt sẵn trong hộp thoại Bản vẽ mới."
+related: ["layers/paper", "color-management/color-spaces", "layers/types", "files/open-save"]
 ---
 
-Bạn có thể bắt đầu một bản vẽ trong hộp thoại **Bản vẽ mới**. Bản vẽ mới mở trong
-thẻ riêng, và bản vẽ hiện tại vẫn mở.
+Chọn **Tệp > Mới…**, nhấn **Ctrl+N** ở nơi có thể dùng, hoặc chọn **Mới…** trên thanh Lệnh. Bản vẽ mới mở trong thẻ riêng.
 
-## Mở hộp thoại Bản vẽ mới
+![Hộp thoại Bản vẽ mới với kích thước A4, độ phân giải 300 ppi, thiết lập màu và Giấy, cùng Tạo.](shot:files/new-dialog)
 
-Thực hiện một trong các cách sau:
+## Thiết lập đặt sẵn
 
-- Chọn **Tệp > Mới…**.
-- Nhấn **Ctrl+N** (không có trong trình chỉnh sửa web).
-- Trong Vẽ và Ảnh, chọn **Mới…** trên Thanh lệnh.
+Chọn thiết lập đặt sẵn theo danh mục, tìm theo tên hoặc chọn thiết lập dùng gần đây. Thiết lập đặt sẵn điền kích thước, độ phân giải, thiết lập màu và Giấy.
 
-Chọn các thiết lập bên dưới, rồi chọn **Tạo**.
+![Trình duyệt thiết lập đặt sẵn của Bản vẽ mới.](shot:files/new-presets)
 
-Không dùng được **Mới…** khi đang mở thao tác cắt xén hoặc biến đổi. Nếu dữ liệu
-bản vẽ đang mở đã quá nhiều, bản vẽ mới chỉ mở sau khi bạn đóng bớt một số bản vẽ.
+Trước khi bạn dùng hoặc lưu thiết lập khác, Thiết lập đặt sẵn chọn **Sổ vẽ**: A4 dọc (210 × 297 mm), Giấy vẽ màu Trắng tự nhiên và 2480 × 3508 px ở 300 ppi.
 
-## Thiết lập
+Lưu các thiết lập hiện tại thành thiết lập đặt sẵn có tên để dùng lại. Mở trình đơn của thiết lập đã lưu để đổi tên hoặc xóa. Không thể đổi tên hoặc xóa thiết lập có sẵn.
 
-![Hộp thoại Bản vẽ mới với thiết lập đặt sẵn Bản vẽ tiêu chuẩn.](shot:files/new-dialog)
+## Tờ giấy
 
-### Thiết lập đặt sẵn
+Bản xem trước hiện tỷ lệ và hướng tờ giấy. Nhập tên bản vẽ, rồi đặt **Chiều rộng** và **Chiều cao** bằng pixel, inch, centimét hoặc milimét. Dùng điều khiển liên kết để giữ tỷ lệ hiện tại và điều khiển hướng để đổi chỗ chiều rộng và chiều cao.
 
-Điền mọi ô theo một thiết lập đặt sẵn có trong ứng dụng hoặc do bạn đã lưu. Nếu sau
-đó bạn đổi một ô, **Thiết lập đặt sẵn** chuyển thành **Tùy chỉnh**.
+**Độ phân giải** đặt số pixel mỗi inch cho kích thước vật lý và tỷ lệ [kết cấu Giấy](/vi/docs/layers/paper/). Chỉ đổi độ phân giải sẽ đổi siêu dữ liệu kích thước in mà không lấy mẫu lại bản vẽ.
 
-Mọi thiết lập đặt sẵn có trong ứng dụng đều có kích thước 2048 × 1536 pixel trên
-nền trắng.
+Cửa sổ mới bắt đầu với một bản vẽ A4 ngang trống riêng ở 300 ppi (3508 × 2480 px).
 
-| Thiết lập đặt sẵn | Không gian màu | Độ sâu bit | Hòa trộn |
-| --- | --- | --- | --- |
-| **Bản vẽ tiêu chuẩn** | sRGB | SDR 8 bit | Theo cảm nhận |
-| **Dải màu rộng** | Display P3 | SDR 8 bit | Theo cảm nhận |
-| **Chỉnh sửa ảnh** | ProPhoto RGB | SDR 16 bit | Theo cảm nhận |
-| **Bản vẽ HDR** | sRGB | HDR số thực 16 bit | Ánh sáng tuyến tính |
+Hộp thoại hiện kích thước pixel kết quả và dung lượng ước tính. Không thể tạo thiết lập vượt giới hạn bản vẽ hiện tại của thiết bị; giới hạn tùy thuộc kích thước, độ sâu bit và tài nguyên đồ họa có sẵn.
 
-### Xóa thiết lập đặt sẵn đã lưu
+## Giấy
 
-Xóa thiết lập đặt sẵn đã lưu đang được chọn. Không thể xóa các thiết lập đặt sẵn có
-trong ứng dụng.
+![Các lựa chọn kết cấu Giấy trong Bản vẽ mới.](shot:files/new-paper)
 
-### Chiều rộng (px) và Chiều cao (px)
+Chọn kết cấu Giấy có sẵn hoặc đã nhập cho bản vẽ mới. **Nhập…** thêm ảnh vào thư viện giấy và chọn ảnh đó. Chọn **Không có giấy** để tạo bản vẽ không có lớp Giấy.
 
-Từ 1 đến 8192 pixel. Các ô này nhận phép tính, ví dụ “160*2”.
+![Các lựa chọn Màu Giấy và Trong suốt trong Bản vẽ mới.](shot:files/new-paper-color)
 
-### Không gian màu
+**Màu** đặt màu Giấy. **Trong suốt** giữ lớp Giấy nhưng ban đầu ẩn lớp đó. Lựa chọn này khác **Không có giấy**, vốn không tạo lớp Giấy.
 
-**sRGB**, **Display P3**, **Adobe RGB (1998)** hoặc **ProPhoto RGB** (xem
-[Không gian màu, độ sâu bit và hòa trộn](/vi/docs/color-management/color-spaces/)).
-Với **ProPhoto RGB** và **SDR 8 bit**, hộp thoại khuyên dùng SDR 16 bit.
+## Thiết lập màu
 
-### Độ sâu bit
+Chọn **Không gian màu**, **Độ sâu bit** và **Hòa trộn** của bản vẽ. Độ sâu bit dấu phẩy động dùng hòa trộn **Ánh sáng tuyến tính**. Xem [Không gian màu, độ sâu bit và hòa trộn](/vi/docs/color-management/color-spaces/).
 
-**SDR 8 bit**, **SDR 16 bit**, **HDR số thực 16 bit** hoặc **HDR số thực 32 bit**.
-Độ sâu bit số thực tạo ra bản vẽ HDR.
+## Tạo bản vẽ
 
-### Hòa trộn
+Chọn **Tạo**. Bản vẽ bắt đầu với lớp vẽ trống **Mực hiện tại** phía trên Giấy đã chọn khi có Giấy.
 
-**Theo cảm nhận** hoặc **Ánh sáng tuyến tính**. Với độ sâu bit số thực, **Hòa trộn**
-cố định ở **Ánh sáng tuyến tính**.
-
-### Nền
-
-**Trắng** hoặc **Trong suốt**. **Trong suốt** ẩn lớp **Giấy**.
-
-### Tên thiết lập đặt sẵn
-
-Lưu các thiết lập thành một thiết lập đặt sẵn với tên này khi bạn chọn **Tạo**. Tên
-dài tối đa 64 ký tự, và bạn có thể giữ tối đa 64 thiết lập đặt sẵn.
-
-### Dùng các thiết lập này cho bản vẽ mới
-
-Khi bật, hộp thoại mở với các thiết lập này ở lần sau. Không gian màu, độ sâu bit
-và nền cũng trở thành thiết lập **Bản vẽ mới** trong [Tùy chọn](/vi/docs/preferences/).
-
-## Các lớp ban đầu
-
-![Bảng Lớp của một bản vẽ mới, với Mực hiện tại nằm trên Giấy.](shot:files/new-layers)
-
-Bản vẽ mới có hai lớp. **Mực hiện tại**, một lớp vẽ trống, đang được chọn và nằm
-trên **Giấy**, một lớp tô màu trắng (xem [Các loại lớp](/vi/docs/layers/types/)).
-Các lớp bạn thêm sau được đặt tên là “Lớp” kèm một số.
-
-## Nền tảng khác
-
-Trên iPad, macOS và Android, ô **Lưu thiết lập đặt sẵn…** và tùy chọn **Dùng mặc
-định** thay cho **Tên thiết lập đặt sẵn** và **Dùng các thiết lập này cho bản vẽ
-mới**. iPad và macOS không có nút **Xóa thiết lập đặt sẵn đã lưu**.
-
-Trên Linux, **Lưu thiết lập đặt sẵn…** mở một hộp thoại riêng để nhập tên, và
-**Không gian màu**, **Độ sâu bit** và **Hòa trộn** được nhóm dưới **Màu**.
+Hộp thoại giữ các lựa chọn dùng để tạo bản vẽ lần cuối. Chọn thiết lập đặt sẵn sẽ thay chúng bằng các giá trị của thiết lập đó.

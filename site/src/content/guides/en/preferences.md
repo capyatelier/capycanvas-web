@@ -1,7 +1,7 @@
 ---
 title: "Preferences"
-description: "The Preferences dialog and the settings on its Appearance, Canvas, Color and About pages."
-related: ["input/pen", "input/keyboard", "customize/zen", "color-management/color-spaces"]
+description: "The Preferences dialog and the settings on its Appearance, Canvas, Input, Color and About pages."
+related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
 You can change settings for the whole app in the **Preferences** dialog. Each
@@ -18,8 +18,7 @@ Do one of the following:
 - In Paint and Photo, select the gear button at the right end of the title bar.
 - Type "Preferences" in [command search](/docs/start/command-search/).
 
-Preferences opens on the **Appearance** page. **Help > Keyboard Shortcuts** opens
-it on **Keyboard Shortcuts**, and **Help > About {appName}** on **About**.
+Preferences opens on **Appearance**. Choose **Edit > Keyboard Shortcuts** for keyboard shortcuts, or **About {appName}** from the application menu for About.
 
 While Preferences is open, canvas shortcuts, pen buttons and finger taps do
 nothing.
@@ -87,17 +86,22 @@ choices are
 Keeps the Capy button on screen in [Zen mode](/docs/customize/zen/). On by
 default.
 
-### Reveal panels near screen edges
-
-Shows the hidden controls in Zen mode while the pointer is near a screen edge
-with hidden controls. Off by default.
-
 ### Button icon
 
 Sets the Capy button's picture: **Looking up** (the default), **Facing
 forward**, **Bathing** or **Sleeping**.
 
 ## Canvas
+
+![Canvas navigation settings.](shot:preferences/canvas-navigation)
+
+### Mouse wheel
+
+Choose whether an unmodified mouse wheel pans or zooms the canvas. Holding **Ctrl** uses the other action.
+
+### Rotate with two fingers
+
+Allows a two-finger twist to rotate the view. Turn it off to keep two-finger gestures to pan and zoom.
 
 ### Scroll pan speed
 

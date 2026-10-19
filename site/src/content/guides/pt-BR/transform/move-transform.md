@@ -154,21 +154,19 @@ de uma transformação aberta, exceto em **Deformar**.
 
 ## Transformações de camada
 
-Uma transformação de camadas de pintura ou de foto inteiras fica armazenada em
-cada camada, e os pixels não são reamostrados. **Transformar** abre de novo a
-partir da transformação armazenada.
+Uma transformação de camadas inteiras de pintura ou objeto é salva com cada camada e os pixels não são reamostrados. **Transformar** reabre a partir da transformação salva.
 
 Até você aplicar a transformação aos pixels, não é possível retocar uma camada
 dimensionada ou girada, nem pintar em uma camada distorcida ou deformada.
 
-## Aplicar transformação aos pixels
+## Aplicar transformação
 
 Você pode incorporar aos pixels a transformação armazenada de uma camada.
 
 Faça uma das seguintes ações:
 
-- Escolha **Editar > Aplicar transformação aos pixels**.
-- Escolha **Camada > Configurações da camada > Aplicar transformação aos pixels**.
+- Escolha **Editar > Aplicar transformação**.
+- Escolha **Camada > Configurações da camada > Aplicar transformação**.
 
 Durante o processo, uma barra na parte inferior da tela mostra "Aplicando
 transformação…" com **Cancelar**.

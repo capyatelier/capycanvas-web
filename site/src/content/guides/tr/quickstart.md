@@ -1,7 +1,7 @@
 ---
 title: "Hızlı başlangıç"
 description: "{appName}'ı açma, ilk boş çizimde çizme, çizimi .capy dosyası olarak kaydetme ve PNG dışa aktarma."
-related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
+related: ["start/workspaces", "start/device-support", "files/new", "files/open-save", "files/export"]
 ---
 
 ## {appName}'ı açma
@@ -11,15 +11,7 @@ Aşağıdakilerden birini yapın:
 - Web düzenleyicisini [editor.capycanvas.art](https://editor.capycanvas.art/) adresinde açın.
 - Masaüstü uygulamasını, iPad veya Android betasını ya da web düzenleyicisini uygulama olarak yükleme adımlarını [İndir](/tr/download/) sayfasından edinin.
 
-Web düzenleyicisi şu tarayıcılarda çalışır:
-
-| Sistem | Tarayıcılar |
-| --- | --- |
-| Windows | Chrome, Edge, Firefox 141 veya üstü |
-| macOS | Chrome, Edge, Safari 26 veya üstü, Firefox 147 veya üstü (Apple silicon) |
-| Linux (Wayland) | Chrome, Edge |
-| iPadOS 26 veya üstü | Safari |
-| Android 12 veya üstü | Chrome |
+Yerel uygulama ve web tarayıcısı gereksinimleri için [Cihaz desteği](/tr/docs/start/device-support/) sayfasına bakın.
 
 İlk ziyaretten sonra web düzenleyicisi internet bağlantısı olmadan da açılır.
 
@@ -27,11 +19,7 @@ Web düzenleyicisi şu tarayıcılarda çalışır:
 
 ![Yeni bir çizimin Katmanlar paneli: Kâğıt'ın üstünde Geçerli mürekkep.](shot:files/new-layers)
 
-{appName} ilk açıldığında boş bir çizimle [Boya](/tr/docs/start/workspaces/)
-çalışma alanını gösterir ve başlık çubuğunda “Adsız · 2048 × 1536” yazar. Beyaz
-bir dolgu katmanı olan **Kâğıt** katmanının üstündeki boş boya katmanı
-**Geçerli mürekkep** seçilidir. **Kalem** aracı, **G kalem** fırçası ve siyaha
-yakın bir renkle etkindir.
+{appName} ilk açıldığında 300 ppi çözünürlükte boş yatay A4 çizimle [Boyama](/tr/docs/start/workspaces/) çalışma alanını gösterir. **Kâğıt** üzerinde boş **Geçerli mürekkep** boya katmanı seçilidir. **Kalem** aracı **G kalem** fırçası ve siyaha yakın renkle etkindir.
 
 Sonraki açılışlarda {appName}, en son kullandığınız çalışma alanıyla ve açık
 olan çizimlerle açılır.
@@ -55,16 +43,14 @@ Bu kılavuz tuşları Windows ve Linux'taki gibi yazar. macOS ve iPad'de, kılav
 düzenleyicisinde ve macOS uygulamasında da çalışır.
 
 Web düzenleyicisi her kısayolu **Ctrl** ile gösterir. Tarayıcı **F5**, **F11**,
-**F12** tuşlarını ve **W**, **T**, **N**, **R**, **L**, **Q** veya **P** ile
+**F12** tuşlarını ve **G**, **T**, **N**, **R**, **L**, **Q** veya **P** ile
 birlikte **Ctrl** ya da **Ctrl+Shift** kombinasyonlarını kendine ayırır. Bu
 tuşlardan birini kullanan bir komutun web düzenleyicisinde kısayolu yoktur. Böyle
 bir komutu menüden veya [komut aramadan](/tr/docs/start/command-search/) seçin.
 
 ## Başka bir çizim başlatma
 
-**Dosya > Yeni…** komutunu seçin ve [Yeni çizim](/tr/docs/files/new/) iletişim
-kutusunda **Oluştur** düğmesini seçin. Yeni çizim, ilk çizimin yanında kendi
-sekmesinde açılır.
+**Dosya > Yeni…** yolunu ve [Yeni çizim](/tr/docs/files/new/) iletişim kutusunda **Oluştur** seçeneğini seçin. Boyutunu, çözünürlüğünü, Kâğıt ve renk ayarlarını seçin, ardından **Oluştur** seçin. Yeni çizim ilkinin yanında kendi sekmesinde açılır.
 
 ## Çizimi kaydetme
 

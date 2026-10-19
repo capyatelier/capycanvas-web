@@ -6,7 +6,7 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 
 可以在**工具设置**面板中设置湿画笔和混色画笔处理颜料的方式。每个分组只出现在其所在小节列出的画笔上。
 
-![湿水彩的工具设置面板，包含混色、水彩和洇色分组以及混色按钮。](shot:brushes/wet-media-settings)
+![湿水彩的工具设置面板，包含混色选项以及混色、水彩和洇色分组。](shot:brushes/wet-media-settings)
 
 ## 混色
 
@@ -62,8 +62,8 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 
 执行以下任一操作：
 
-- 在**工具设置**面板底部选择 **Oklab 混色**、**线性光混色**或**经典混色**。
-- 在工具选项栏的**混色**中选择（[大小、不透明度和流量](/zh/docs/brushes/basics/)）。
+- 从 **工具设置** 面板的 **混色** 中选择 **Oklab 混色**、**线性光混色** 或 **经典混色**。
+- 打开工具选项栏中的 **更多工具选项**，然后在工具设置抽屉中选择 **混色**（[大小、强度和不透明度](/zh/docs/brushes/basics/)）。
 - 在命令搜索中搜索选项名称。
 
 | 选项 | 混合方式 |
@@ -74,7 +74,7 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 
 所有内置混色画笔的初始设置都是 **Oklab 混色**。该选项随画笔保存，画作的**颜色混合**设置不会改变它。对不混色的画笔，这些选项不可用。
 
-![饱蘸油彩的工具选项栏中打开的混色菜单。](shot:brushes/color-mixing-menu)
+![工具设置抽屉中的混色选项。](shot:brushes/color-mixing-menu)
 
 ## 鬃毛
 

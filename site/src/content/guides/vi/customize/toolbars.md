@@ -55,7 +55,7 @@ Mỗi thanh công cụ cần một tên riêng.
 - Để di chuyển một công cụ, giữ công cụ rồi kéo trong thanh công cụ hoặc sang thanh công cụ khác.
 
 Ngoài lệnh và công cụ, danh sách **Thêm công cụ** còn có cọ, kích thước cọ,
-**Bộ chọn màu**, **Thanh trượt kích thước cọ**, **Thanh trượt độ đục cọ**,
+**Bộ chọn màu**, **Thanh trượt kích thước cọ**, **Thanh trượt cường độ**,
 **Tùy chọn công cụ** và **Đường phân cách**. Danh sách cũng có một mục cho mỗi bảng, ví
 dụ **Bảng lớp**, để mở bảng đó trong một ngăn.
 

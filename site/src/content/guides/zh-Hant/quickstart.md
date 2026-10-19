@@ -1,7 +1,7 @@
 ---
 title: "快速入門"
 description: "開啟 {appName}，在第一幅空白畫作上繪畫，將其儲存為 .capy 檔案並匯出 PNG。"
-related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
+related: ["start/workspaces", "start/device-support", "files/new", "files/open-save", "files/export"]
 ---
 
 ## 開啟 {appName}
@@ -9,17 +9,9 @@ related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard
 執行以下任一操作：
 
 - 在 [editor.capycanvas.art](https://editor.capycanvas.art/) 開啟網頁版編輯器。
-- 在[下載](/zh-Hant/download/)頁面獲取桌面應用程式、iPad 或 Android 測試版，或者檢視將網頁版編輯器安裝為應用程式的步驟。
+- 在[下載](/zh-Hant/download/)頁面獲取桌面應用程式程式、iPad 或 Android 測試版，或者檢視將網頁版編輯器安裝為應用程式的步驟。
 
-網頁版編輯器支援以下瀏覽器：
-
-| 系統 | 瀏覽器 |
-| --- | --- |
-| Windows | Chrome、Edge、Firefox 141 或更高版本 |
-| macOS | Chrome、Edge、Safari 26 或更高版本、Firefox 147 或更高版本（Apple 晶片） |
-| Linux（Wayland） | Chrome、Edge |
-| iPadOS 26 或更高版本 | Safari |
-| Android 12 或更高版本 | Chrome |
+原生應用程式和網頁瀏覽器各自的要求參見[設備支持](/zh-Hant/docs/start/device-support/)。
 
 首次造訪之後，網頁版編輯器在沒有網路連線時也能開啟。
 
@@ -27,7 +19,7 @@ related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard
 
 ![新畫作的圖層面板，目前墨色位於紙張上方。](shot:files/new-layers)
 
-首次開啟 {appName} 時，會顯示[「繪畫」](/zh-Hant/docs/start/workspaces/)工作區和一幅空白畫作，標題列顯示「未命名 · 2048 × 1536」。已選取的**目前墨色**是一個空的繪畫圖層，位於白色填色圖層**紙張**上方。目前工具為**鋼筆**，筆刷為 **G 筆**，色彩接近黑色。
+首次打開 {appName} 時，會顯示[繪畫](/zh-Hant/docs/start/workspaces/)工作區和一幅 300 ppi 的 A4 橫向空白畫作。紙張 **紙張** 上方的空白繪畫圖層 **目前墨色** 處於選中狀態。**鋼筆** 工具啓用，使用 **G 筆** 筆刷和接近黑色的顏色。
 
 之後再開啟 {appName} 時，會進入上次使用的工作區，並開啟上次開啟的畫作。
 
@@ -47,7 +39,7 @@ related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard
 
 ## 新建另一幅畫作
 
-選擇**檔案 > 新增…**，然後在[新建繪畫](/zh-Hant/docs/files/new/)對話方塊中選擇**建立**。新畫作在第一幅畫作旁邊的獨立分頁中開啟。
+選擇 **檔案 > 新增…**，在[新建畫作](/zh-Hant/docs/files/new/)對話框中選擇 **建立**。選擇大小、解析度、紙張和顏色設定，然後選擇 **建立**。新畫作在第一個畫作旁邊的獨立分頁中打開。
 
 ## 儲存畫作
 

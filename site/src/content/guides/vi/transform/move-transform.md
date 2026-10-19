@@ -149,20 +149,20 @@ Bảng Công cụ, và thanh Tùy chọn công cụ trong Ảnh, hiện các gi�
 
 ## Biến đổi lớp
 
-Phép biến đổi áp lên toàn bộ lớp vẽ hoặc lớp ảnh được lưu cùng từng lớp, và pixel
+Phép biến đổi áp lên toàn bộ lớp vẽ hoặc lớp Đối tượng được lưu cùng từng lớp, và pixel
 không bị lấy mẫu lại. **Biến đổi** mở lại từ phép biến đổi đã lưu.
 
 Cho đến khi bạn áp dụng phép biến đổi vào pixel, bạn không thể chỉnh sửa ảnh trên lớp
 đã đổi tỷ lệ hoặc đã xoay, cũng không thể vẽ lên lớp đã làm méo hoặc uốn cong.
 
-## Áp dụng biến đổi vào pixel
+## Áp dụng biến đổi
 
 Bạn có thể biến phép biến đổi đã lưu của lớp thành một phần pixel của lớp.
 
 Thực hiện một trong các cách sau:
 
-- Chọn **Chỉnh sửa > Áp dụng biến đổi vào pixel**.
-- Chọn **Lớp > Thiết lập lớp > Áp dụng biến đổi vào pixel**.
+- Chọn **Chỉnh sửa > Áp dụng biến đổi**.
+- Chọn **Lớp > Thiết lập lớp > Áp dụng biến đổi**.
 
 Trong lúc xử lý, một thanh ở cuối khung vẽ ghi “Đang áp dụng biến đổi…” kèm nút
 **Hủy**.

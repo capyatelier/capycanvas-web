@@ -16,7 +16,7 @@ Ctrl trên mọi máy tính, và trên máy Mac, Command hoạt động như Ctr
 
 Thực hiện một trong các cách sau:
 
-- Chọn **Trợ giúp > Phím tắt**.
+- Chọn **Chỉnh sửa > Phím tắt**.
 - Nhấn **Ctrl+Shift+?**.
 - Chọn **Chỉnh sửa > Tùy chọn** rồi chọn **Phím tắt**.
 

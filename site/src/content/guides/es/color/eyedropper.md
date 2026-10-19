@@ -11,10 +11,10 @@ herramienta que estabas usando.
 
 Haz una de las siguientes acciones:
 
-- Pulsa **I** (**O** en el mapa de atajos Estilo GIMP).
+- Pulsa **I** (**O** en el mapa de teclas Estilo GIMP).
 - Elige **Cuentagotas** en la búsqueda de comandos.
-- En Pintura y Foto, selecciona **Cuentagotas** en la barra de herramientas.
-- En Boceto, selecciona **Selector de color** en la barra del borde izquierdo, entre los deslizadores de tamaño y de opacidad.
+- En Pintura y Foto, selecciona **Cuentagotas** en la barra Herramientas.
+- En Boceto, selecciona **Selector de color** en la barra del borde izquierdo, entre **Deslizador de tamaño de pincel** y **Control de intensidad**.
 
 Para salir sin tomar un color, pulsa **I** o vuelve a seleccionar el mismo botón,
 pulsa **Escape**, o elige otra herramienta u otro pincel. Un toque con el dedo sin
@@ -31,7 +31,7 @@ color de pintura solo cambia cuando tomas el color.
 | Lápiz | Pasar por encima, o apoyar el lápiz | Levantar el lápiz |
 | Dedo | Tocar | Levantar el dedo |
 
-Con un dedo, el punto de muestreo queda por encima de la yema.
+Con un dedo, la lupa aparece por encima de la yema mientras el punto de muestra permanece debajo de la yema.
 
 Los píxeles transparentes no dan ningún color, y los colores tomados son siempre
 opacos. Los colores se toman en el espacio de color del dibujo. En un dibujo HDR,
@@ -68,6 +68,8 @@ parte superior de la ventana en Foto):
 - **Cuentagotas** muestra un cursor de pipeta con la punta sobre el punto muestreado.
 
 ![La lupa del Selector de color sobre un trazo rojo, con los colores muestreado y actual en su anillo.](shot:color/eyedropper-loupe)
+
+![La lupa del selector de color sobre un dedo, con el punto de muestra debajo del contacto.](shot:color/eyedropper-touch)
 
 Con la pantalla táctil siempre se usa la lupa. Seleccionar **Selector de color** en
 Boceto pone **Estilo** en **Selector de color**. Cuando **Origen** es **Capa

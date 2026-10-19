@@ -54,7 +54,7 @@ Each toolbar needs a name of its own.
 - To move a tool, hold it, then drag it within the toolbar or into another toolbar.
 
 Besides commands and tools, the **Add Tools** list has brushes, brush sizes,
-**Color Picker**, **Brush size slider**, **Brush opacity slider**, **Tool
+**Color Picker**, **Brush size slider**, **Strength slider**, **Tool
 Options** and **Divider**. It also has an entry for each panel, such as **Layers
 panel**, that opens the panel in a drawer.
 

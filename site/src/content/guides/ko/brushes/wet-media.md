@@ -6,7 +6,7 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 
 **도구** 패널에서 물기가 있는 브러시와 혼색 브러시가 물감을 다루는 방식을 설정할 수 있습니다. 각 그룹은 해당 섹션에 나오는 브러시에서만 표시됩니다.
 
-![혼색 그룹, 수채 그룹, 번짐 그룹과 혼색 버튼이 있는 습식 수채의 도구 패널.](shot:brushes/wet-media-settings)
+![혼색 설정과 혼색, 수채, 번짐 그룹이 있는 습식 수채의 도구 패널.](shot:brushes/wet-media-settings)
 
 ## 혼색
 
@@ -62,8 +62,8 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 
 다음 중 하나를 수행합니다.
 
-- **도구** 패널 아래쪽에서 **Oklab 혼색**, **선형광 혼색**, **클래식 혼색** 중 하나를 선택합니다.
-- 도구 옵션 막대의 **혼색**에서 고릅니다([크기, 불투명도, 플로우](/ko/docs/brushes/basics/)).
+- **도구** 패널의 **혼색**에서 **Oklab 혼색**, **선형광 혼색**, **클래식 혼색** 중 하나를 고릅니다.
+- 도구 옵션 막대에서 **더 많은 도구 옵션**을 연 다음 도구 서랍의 **혼색**을 고릅니다([크기, 강도 및 불투명도](/ko/docs/brushes/basics/)).
 - 명령 검색에서 선택 항목의 이름을 검색합니다.
 
 | 선택 항목 | 섞는 방식 |
@@ -74,7 +74,7 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 
 기본 제공 혼색 브러시는 모두 **Oklab 혼색**으로 시작합니다. 선택은 브러시와 함께 저장되며, 그림의 **색상 합성** 설정으로 바뀌지 않습니다. 섞지 않는 브러시에서는 이 선택 항목을 사용할 수 없습니다.
 
-![물감이 가득한 유화의 도구 옵션 막대에 혼색 메뉴가 열려 있습니다.](shot:brushes/color-mixing-menu)
+![도구 서랍의 혼색.](shot:brushes/color-mixing-menu)
 
 ## 붓털
 

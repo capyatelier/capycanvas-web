@@ -33,13 +33,12 @@ Das bearbeitete Foto hat diese Ebenen, von oben nach unten:
 
 | Ebene | Inhalt |
 | --- | --- |
-| **Tiefen/Lichter** | Hellt die Tiefen im Stein auf, maskiert auf eine Auswahl mit weicher Kante |
+| **Tiefen/Lichter** | Hellt die Schatten im Felsen auf, mit einer Maske aus einer weichgezeichneten Auswahl |
 | **Dynamik** | Erhöht die Dynamik des ganzen Fotos |
 | **Kurven** | Eine S-Kurve für das ganze Foto |
 | *Retouch* | Reparaturstriche |
-| Die Fotoebene | Das Foto, nach seiner Datei benannt |
-| **Papier** | Ausgeblendet |
+| Die Objektebene | Das Foto, nach seiner Datei benannt |
 
-Auf der Fotoebene ist nichts gemalt.
+Auf der Objektebene wird nichts gemalt.
 
 Erste Phase: [Öffnen und Zuschneiden](/de/docs/photo/crop/).

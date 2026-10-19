@@ -19,8 +19,7 @@ Lakukan salah satu langkah berikut:
 - Ketik "Mode Zen" di [pencarian perintah](/id/docs/start/command-search/).
 - Dengan pemetaan tombol **Gaya Procreate**, ketuk kanvas dengan empat jari.
 
-Lakukan hal yang sama lagi untuk keluar dari Mode Zen. Tombol Capy tampak tertekan
-selama Mode Zen aktif.
+Lakukan hal yang sama lagi untuk keluar dari mode Zen.
 
 Mode Zen disimpan bersama setiap ruang kerja dan tetap aktif setelah aplikasi dimulai
 ulang. **Sesuaikan Bilah Judul…** menonaktifkan Mode Zen.
@@ -37,24 +36,9 @@ tampil:
 
 Tombol pintasan dan pencarian perintah (**Ctrl+K**) berfungsi seperti biasa.
 
-## Menampilkan kontrol sesaat
-
-Kontrol yang tersembunyi muncul kembali selama menu atau dialog terbuka dan selama Anda
-menyeret atau mengubah ukuran panel. Tekan **Escape** untuk menampilkannya sampai
-penunjuk bergerak.
-
-Jika **Tampilkan panel dekat tepi layar** aktif, kontrol juga muncul kembali selama
-penunjuk berada di dekat tepi atas, atau di dekat tepi yang memiliki panel tertambat.
-
-Pada layar sentuh, ketukan pertama pada kontrol yang tersembunyi menampilkan kontrol,
-dan ketukan kedua memakai kontrol itu.
-
 ## Menambatkan dalam Mode Zen
 
-Selama panel yang tertambat disembunyikan, panel mengambang yang Anda seret hanya dapat
-bergabung dengan panel mengambang lainnya. Jika **Tampilkan panel dekat tepi layar**
-aktif, menyeret ke tepi yang memiliki panel tertambat menampilkan panel itu sebagai
-tempat pelepasan.
+Saat panel tertambat disembunyikan, panel mengambang yang diseret hanya dapat bergabung dengan panel mengambang lain.
 
 ## Menu tombol Capy
 
@@ -76,11 +60,6 @@ Pengaturan ini berlaku untuk semua ruang kerja.
 Mempertahankan tombol Capy di sudut kiri atas dalam Mode Zen. Aktif secara bawaan.
 Selama pengaturan ini nonaktif, tekan **Tab** atau gunakan pencarian perintah untuk
 keluar dari Mode Zen.
-
-### Tampilkan panel dekat tepi layar
-
-Menampilkan kontrol yang tersembunyi selama penunjuk atau jari berada di dekat tepi
-layar yang memiliki kontrol tersembunyi. Nonaktif secara bawaan.
 
 ### Ikon tombol
 

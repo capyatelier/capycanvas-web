@@ -56,11 +56,7 @@ qu’avec **Contour**.
 
 ## Épaisseur de ligne et Opacité
 
-**Épaisseur de ligne** et **Opacité** se trouvent dans le panneau **Outil** et
-dans la barre Options de l’outil. Ces réglages partagent leurs valeurs avec la
-**Taille du pinceau** et l’**Opacité** du pinceau actif
-([Taille, opacité et débit](/fr/docs/brushes/basics/)), et **[** et **]**
-modifient Épaisseur de ligne.
+**Épaisseur de ligne** et **Opacité** sont dans le panneau **Outil** et la barre Options de l’outil. Ils partagent leurs valeurs avec **Taille du pinceau** et **Opacité** du pinceau actif ([Taille, intensité et opacité](/fr/docs/brushes/basics/)), et **[** et **]** modifient l’Épaisseur de ligne.
 
 ### Épaisseur de ligne
 

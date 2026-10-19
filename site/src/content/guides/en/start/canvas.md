@@ -24,6 +24,7 @@ Do one of the following:
 - Pinch with two fingers on a touch screen, or on the trackpad on macOS and iPad.
 - Select a zoom level in the zoom readout's menu, or a zoom button in the **Navigator** panel.
 - Push the right stick of a game controller up or down.
+- Select the **Zoom** tool, then click or drag according to its Tool settings.
 
 The zoom ranges from 2% to 1600%. **Ctrl**+scroll zooms around the pointer, and
 pinching zooms around your fingers. **Scroll zoom speed** in
@@ -36,6 +37,12 @@ centered. Fit canvas also sets the view rotation to 0° but keeps flips.
 
 A drawing is fitted when it opens, and not again when you resize the window.
 
+## Zoom tool
+
+Select **Zoom** in the Tools toolbar, or hold its temporary-access key, then use the canvas. Its **Click** setting chooses whether a click zooms in or out. **Drag** chooses continuous zoom, a zoom area, the opposite click action, or click only.
+
+![The Click and Drag settings for the Zoom tool.](shot:start/zoom-tool-settings)
+
 ## Actual Pixels
 
 Choose **View > Actual Pixels**, or press **Ctrl+1** or **Ctrl+Alt+0**, to show
@@ -47,7 +54,7 @@ one image pixel per screen pixel (100%). The zoom readout's menu also has 25%,
 
 Do one of the following:
 
-- Scroll. Hold **Shift** and scroll to move sideways.
+- Scroll when **Mouse wheel** is set to pan in [Preferences](/docs/preferences/). Hold **Shift** and scroll to move sideways.
 - Hold **Space** and drag.
 - Drag with two fingers on a touch screen.
 - Select the **Hand** tool or press **H**, then drag.
@@ -63,7 +70,7 @@ scroll step.
 Do one of the following:
 
 - Choose **View > Rotate view 90° left** or **View > Rotate view 90° right**.
-- Twist two fingers on a touch screen, or on the trackpad on macOS and iPad.
+- Twist two fingers on a touch screen, or on the trackpad on macOS and iPad, when **Rotate with two fingers** is on in Preferences.
 - Type an angle or drag the rotation slider in the zoom readout's menu.
 - Select a rotate button in the **Navigator** panel.
 

@@ -10,9 +10,9 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 
 執行以下任一操作：
 
-- 選擇**編輯 > 影像 > 裁切**。
+- 選擇 **影像 > 裁切**。
 - 按 **C**。
-- 在「照片」中，選擇「工具」工具列中的**裁切**。
+- 在“照片”中，選擇工具工具列中的 **裁切**。
 
 帶控制點的裁切框會出現在整個畫布周圍，或以所選比例的最大裁切框出現。裁切框外的畫布變暗，畫布底部邊緣出現裁切的[畫布操作欄](/zh-Hant/docs/selections/working/)。
 
@@ -82,11 +82,11 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 
 執行以下任一操作：
 
-- 選擇**編輯 > 影像 > 將畫布裁切至選取範圍**。
-- 選擇[選取範圍操作欄](/zh-Hant/docs/selections/working/)上的**裁切**。
+- 選擇 **影像 > 將畫布裁切至選取範圍**。
+- 選擇[選取範圍欄](/zh-Hant/docs/selections/working/)上的 **裁切**。
 
 選取範圍邊界以外的像素隱藏並保留在各自的圖層上。不能裁切到反轉的選取範圍。
 
 ## 找回裁掉的像素
 
-選擇**編輯 > 影像 > 顯示全部**，可擴大畫布直到顯示所有圖層的像素；或用**編輯 > 影像 > 畫布大小…** 擴大畫布（參見[影像大小和旋轉](/zh-Hant/docs/transform/image/)）。
+選擇 **影像 > 顯示全部** 可擴大畫布以顯示所有圖層的像素，或使用 **影像 > 畫布大小…** 擴大畫布（參見[影像大小和旋轉](/zh-Hant/docs/transform/image/)）。

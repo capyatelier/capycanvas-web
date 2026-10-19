@@ -1,22 +1,16 @@
 ---
 title: "Pen"
 description: "The pen settings in Preferences and Apple Pencil double-tap and squeeze."
-related: ["input/touch", "input/keyboard", "preferences", "brushes/basics"]
+related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
 The pen settings are on the **Pen & Input** page of **Edit > Preferences**.
 
 ![The Pen & Input page of Preferences.](shot:pen/pen-and-input)
 
-## Pressure response
+## Pen pressure
 
-You can change how the pen responds to light pressure with **Pressure response**
-under **Pen response**. Lower values make light pressure stronger, and higher
-values need more force. The range is 0.25 × to 4.00 ×. At the default, 1.00 ×,
-the pen's pressure is used unchanged.
-
-The setting applies to every brush and tool, including **Paint selection** and
-**Quick Mask**. Strokes you have already drawn don't change.
+Select **Adjust…** beside **Pen pressure** to shape the pressure curve and test it on the current canvas. The curve applies to every pressure-sensitive brush and tool; strokes already drawn do not change. See [Pen pressure](/docs/input/pen-pressure/).
 
 ## Stroke prediction
 

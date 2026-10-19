@@ -38,7 +38,7 @@ const scope = (process.env.CAPTURE_ONLY || 'all').split(',').map(name => name.tr
 const known = Object.keys(chapters);
 for (const name of scope) assert.ok(name === 'all' || known.includes(name), `Known capture chapter: ${name}`);
 const selected = scope.includes('all') ? known : known.filter(name => scope.includes(name));
-const examples = selected.includes('illustration') ? `${output}/examples` : `${published}/examples`;
+const examples = resolve(process.env.CAPTURE_EXAMPLES || (selected.includes('illustration') ? `${output}/examples` : `${published}/examples`));
 await mkdir(examples, { recursive: true });
 const previous = JSON.parse(await readFile(`${output}/capture.json`, 'utf8').catch(() => readFile(`${published}/capture.json`, 'utf8')));
 const shotOf = entry => entry.shot ?? entry.file.replace(/-(light|dark)\.webp$/, '');
@@ -61,12 +61,12 @@ const recipePaths = [
 const recipeHashes = Object.fromEntries(await Promise.all(recipePaths.map(async path => [path.replace('site/scripts/', ''), hash(await readFile(path))])));
 const headless = process.env.CAPTURE_BROWSER_MODE !== 'wayland';
 const displays = (process.env.CAPTURE_DISPLAYS || '').split(',').filter(Boolean);
-const jobs = Math.max(1, Math.min(selected.length, headless ? Number(process.env.CAPTURE_JOBS || selected.length) : displays.length));
+const jobs = Math.max(1, Math.min(selected.length, headless ? Number(process.env.CAPTURE_JOBS || 6) : displays.length));
 const manifest = { width, height, scale, partial: true, locales,
   display: headless ? 'Chrome native headless' : 'Headed Chrome on private headless Wayland displays, one browser per chapter',
   canvas2d: 'Software decoding and UI previews; artwork remains hardware WebGPU.', recipeHashes,
   languages: 'Each image is captured once per site language from the same editor state, after switching the editor language in place. Default layer, palette and swatch names shown in the image are renamed to the names the editor gives them in that language, then restored. Images identical in every language are stored once under shared/. A new capture keeps the committed file when it has the same size, quality and callouts and its pixels match within a small tolerance (no channel off by more than 32, mean difference under 1).',
-  artwork: 'Manual: an original abstract study of a teal ribbon, ochre disc and terracotta block drawn through real browser pen input and editor actions, and a photograph of a terrarium supplied by Capy Atelier. Homepage: a pen sketch, an oil painting and a photograph supplied by Capy Atelier, shown in Sketch, Paint and Photo.',
+  artwork: 'Manual: an original abstract study of a teal ribbon, ochre disc and terracotta block, dry-media and paper comparisons drawn through real browser pen input and editor actions, and a photograph of a terrarium supplied by Capy Atelier. The paper-library example imports a PNG derived from the editor\'s Linen preview. Homepage: a pen sketch, an oil painting and a photograph supplied by Capy Atelier, shown in Sketch, Paint and Photo.',
   annotations: 'Cropped from the real editor; numbered SVG outlines are injected over measured DOM controls.', captures };
 
 const drawing = selected.includes('illustration');

@@ -107,8 +107,7 @@ Clique, ou levante a caneta ou o dedo, para capturar. A caixa de diálogo volta 
 a cor capturada como Nova. Pressione **Escape** ou selecione a faixa para voltar
 sem alterações.
 
-Com o dedo, o ponto de captura fica acima da ponta do dedo. **Capturar da tela**
-fica oculto quando Editar cor é aberto a partir de outra caixa de diálogo.
+Com um dedo, a lupa aparece acima da ponta do dedo enquanto o ponto de amostragem permanece embaixo. **Capturar da tela** fica oculto quando Editar cor é aberto a partir de outro diálogo.
 
 ## Cores recentes e paletas
 

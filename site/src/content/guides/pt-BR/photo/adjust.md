@@ -26,24 +26,23 @@ Escolha **Filtro > Cor > Vibração** e defina **Vibração** como 25 no painel
 **Propriedades** ([Filtros de cor](/pt-BR/docs/filters/color/)). A camada
 **Vibração** aparece acima de **Curvas**.
 
-## 3. Selecionar a pedra
+## 3. Adicionar Sombras/Realces
 
-1. Pressione **M**, ou selecione **Seleção por laço** na barra de ferramentas Ferramentas, e desenhe ao redor da pedra.
-2. Escolha **Selecionar > Difusão da seleção…**, ou selecione **Refinar** na barra de seleção e escolha **Difusão…** ([Trabalhar com seleções](/pt-BR/docs/selections/working/)).
-3. Defina **Feather radius** como 20 px e selecione **Aplicar**.
+Escolha **Filtro > Tom > Sombras/Realces**. Defina **Sombras** como 35% no painel **Propriedades**. A camada **Sombras/Realces** aparece acima de **Vibração** e permanece selecionada.
 
-## 4. Clarear as sombras da pedra
+## 4. Mascarar o ajuste na rocha
 
 Clarear as sombras da foto inteira deixaria cinza o fundo preto. O exemplo
 clareia as sombras só na pedra.
 
-Selecione **Ajustar** na barra de seleção e escolha
-**Tom > Sombras/Realces**. Defina **Sombras** como 35% no painel
-**Propriedades**.
+1. Pressione **M**, ou selecione **Seleção por laço** na barra de ferramentas Ferramentas, e desenhe ao redor da pedra.
+2. Escolha **Selecionar > Difusão da seleção…**, ou selecione **Refinar** na barra de seleção e escolha **Difusão…** ([Trabalhar com seleções](/pt-BR/docs/selections/working/)).
+3. Defina **Raio de difusão** como 20 px e selecione **Aplicar**.
+4. Selecione **Máscara** na barra de seleção.
 
-![A barra de seleção com o menu Ajustar aberto na categoria Tom, ao lado da seleção ao redor da pedra.](shot:photo/adjust-bar)
+![A barra de seleção com Máscara ao lado da seleção ao redor da rocha.](shot:photo/adjust-bar)
 
-A seleção vira a máscara da nova camada **Sombras/Realces**. Só a pedra muda.
+A seleção se torna a máscara da camada **Sombras/Realces**. Só a rocha muda.
 
 ## 5. Salvar o desenho
 

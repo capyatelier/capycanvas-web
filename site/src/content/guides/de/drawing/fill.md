@@ -78,10 +78,7 @@ und ein Hinweis bietet an, die Ebene darunter zu markieren.
 
 ![Das Bedienfeld Werkzeug für Füllung mit Toleranz, der Gruppe Kanten und Deckkraft.](shot:drawing/fill-settings)
 
-Füllung und Umranden und füllen teilen sich die folgenden Einstellungen. **Automatisch
-auswählen** und **Nach Farbe auswählen** verwenden außer bei **Deckkraft** dieselben
-Werte. Um eine Einstellung zurückzusetzen, doppelklicken Sie auf ihre Beschriftung in
-der Leiste Werkzeugoptionen ([Größe, Deckkraft und Fluss](/de/docs/brushes/basics/)).
+Füllen und Umranden und füllen teilen die folgenden Einstellungen. **Automatisch auswählen** und **Nach Farbe auswählen** verwenden dieselben Werte außer **Deckkraft**. Doppelklicken Sie zum Zurücksetzen auf die Beschriftung in der Werkzeugoptionsleiste ([Größe, Stärke und Deckkraft](/de/docs/brushes/basics/)).
 
 ### Toleranz
 
@@ -105,9 +102,7 @@ harte Pixelkanten.
 
 ### Deckkraft
 
-Legt die Stärke der Füllung fest. Eine Änderung ändert auch die **Deckkraft** des
-aktuellen Pinsels und umgekehrt. Im Arbeitsbereich Skizze verwenden Sie den Deckkraftregler auf der
-Leiste am linken Rand.
+Legt die Stärke der Füllung fest. Eine Änderung ändert die **Deckkraft** des aktuellen Pinsels und umgekehrt. Verwenden Sie in Skizze **Stärkeregler** auf der Leiste am linken Rand.
 
 ## Eine Auswahl füllen
 

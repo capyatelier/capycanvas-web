@@ -57,15 +57,14 @@ async function layerMenu(e, b, name, submenu) {
 export default async function illustration({ e, b, shoot, record, examples }) {
   await e.workspace('illustrator');
   await shoot('illustration/new-drawing', {
-    target: 'dialog[open].document-dialog',
+    target: '#new-drawing-dialog[open]',
     setup: async () => {
       await e.invoke('new_document');
-      await e.wait('!!document.querySelector(".document-dialog input.number-entry")');
-      await b.evaluate(`(()=>{const d=document.querySelector('.document-dialog');for(const label of ['Width (px)','Height (px)']){const entry=d.querySelector('input.number-entry[aria-label="'+label+'"]');entry.closest('.number-control').querySelector('.number-value').click();entry.value='1200';entry.dispatchEvent(new Event('input',{bubbles:true}));entry.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',bubbles:true}));}})()`);
+      await e.configureNewDocument(1200, 1200);
       await b.settle();
     },
     teardown: async () => {
-      await b.evaluate(`[...document.querySelectorAll('.document-dialog button')].find(b=>b.textContent==='Cancel').click()`);
+      await e.click('#new-drawing-cancel');
       await e.wait("!document.querySelector('dialog[open]')");
     },
   });

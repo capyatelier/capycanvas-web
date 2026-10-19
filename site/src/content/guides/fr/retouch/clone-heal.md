@@ -24,8 +24,7 @@ Effectuez l’une des opérations suivantes :
 
 **Pinceau correcteur** et **Correcteur localisé** n’ont pas de bouton dans Peinture.
 
-Chaque outil est un pinceau, avec **Taille du pinceau**, **Opacité**, **Débit** et
-les réglages **Pointe** dans le panneau Outil (voir [Taille, opacité et débit](/fr/docs/brushes/basics/)).
+Chaque outil est un pinceau, avec les réglages **Taille du pinceau**, **Opacité**, **Intensité** et **Pointe** dans le panneau Outil (voir [Taille, intensité et opacité](/fr/docs/brushes/basics/)).
 
 ![Le panneau Outil du Tampon de duplication, avec les réglages du pinceau et ceux de la source.](shot:retouch/clone-tool-panel)
 

@@ -156,22 +156,20 @@ zeigen die Werte einer geöffneten Transformation, außer in **Verformen**.
 
 ## Ebenentransformationen
 
-Eine Transformation ganzer Mal- oder Fotoebenen wird mit jeder Ebene
-gespeichert, und die Pixel werden nicht neu berechnet. **Transformieren** öffnet
-sich wieder mit der gespeicherten Transformation.
+Eine Transformation ganzer Mal- oder Objektebenen wird mit jeder Ebene gespeichert; die Pixel werden nicht neu berechnet. **Transformieren** öffnet die gespeicherte Transformation erneut.
 
 Bis Sie die Transformation auf die Pixel anwenden, können Sie eine skalierte
 oder gedrehte Ebene nicht retuschieren und auf einer verzerrten oder verformten
 Ebene nicht malen.
 
-## Transformation auf Pixel anwenden
+## Transformation anwenden
 
 Sie können die gespeicherte Transformation einer Ebene in ihre Pixel übernehmen.
 
 Führen Sie eine der folgenden Aktionen aus:
 
-- Wählen Sie **Bearbeiten > Transformation auf Pixel anwenden**.
-- Wählen Sie **Ebene > Ebeneneinstellungen > Transformation auf Pixel anwenden**.
+- Wählen Sie **Bearbeiten > Transformation anwenden**.
+- Wählen Sie **Ebene > Ebeneneinstellungen > Transformation anwenden**.
 
 Während die Transformation angewandt wird, zeigt eine Leiste am unteren Rand der Leinwand
 „Transformation wird angewandt…“ mit **Abbrechen**.

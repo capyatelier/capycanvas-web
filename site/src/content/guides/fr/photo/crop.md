@@ -12,16 +12,13 @@ Choisissez **Fichier > Ouvrir…**, ou appuyez sur **Ctrl+O**, et sélectionnez 
 ([Ouvrir et enregistrer](/fr/docs/files/open-save/)). La photo s’ouvre dans son
 propre onglet de dessin.
 
-![Le panneau Calques avec le calque de la photo du terrarium au-dessus d’un calque Papier masqué.](shot:photo/open-layers)
+![Le panneau Calques avec le calque Objet du terrarium.](shot:photo/open-layers)
 
-Le dessin contient un seul calque, nommé d’après le fichier, au-dessus d’un calque
-**Papier** masqué. Dans l’exemple, le calque s’appelle « terrarium ».
+Le dessin contient un calque Objet nommé d’après le fichier. Dans l’exemple, le calque s’appelle « terrarium ».
 
 ## 2. Choisir un rapport
 
-Choisissez **Édition > Image > Recadrer**, sélectionnez **Recadrer** dans la barre
-d’outils Outils, ou appuyez sur **C** ([Recadrer](/fr/docs/transform/crop/)). Un cadre
-muni de poignées apparaît sur la photo, avec la barre de recadrage en bas de la toile.
+Choisissez **Image > Recadrer**, sélectionnez **Recadrer** dans la barre Outils, ou appuyez sur **C** ([Recadrer](/fr/docs/transform/crop/)). Un cadre à poignées apparaît sur la photo, avec la barre de recadrage au bas de la toile.
 
 Sélectionnez **Rapport** dans la barre de recadrage et choisissez **4:5**. Le cadre
 devient le plus grand cadre de ce rapport, centré sur la toile. Son orientation suit

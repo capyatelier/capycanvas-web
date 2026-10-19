@@ -7,7 +7,7 @@ related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-manag
 Vous pouvez choisir la couleur de peinture dans le panneau **Couleur**. Tous les
 espaces de travail utilisent la même couleur de peinture.
 
-![Le panneau Couleur avec la roue circulaire, les valeurs en haut à gauche et les pastilles sous la roue.](shot:color/panel "1 Valeurs · 2 Boutons de forme · 3 Modifier la couleur · 4 Premier plan et arrière-plan · 5 Échanger · 6 Peinture transparente · 7 Noir et blanc")
+![Le panneau Couleur avec le cercle chromatique, l’indicateur en haut à gauche et les échantillons sous le cercle.](shot:color/panel "1 Indicateur · 2 Boutons de forme · 3 Modifier la couleur · 4 Premier plan et arrière-plan · 5 Échanger · 6 Peinture transparente")
 
 ## Ouvrir le panneau Couleur
 
@@ -83,9 +83,7 @@ touche pour **Échanger les couleurs**.
 
 ## Noir et blanc
 
-Sélectionnez **Peindre en noir** ou **Peindre en blanc** (les deux petits cercles
-à côté de la pastille transparente), ou choisissez **Noir** ou **Blanc** dans la
-recherche de commandes.
+Choisissez **Noir** ou **Blanc** dans la recherche de commandes.
 
 Le noir ou le blanc remplace la couleur de la pastille de premier plan ou
 d’arrière-plan sélectionnée. Si **Peinture transparente** est sélectionnée, le

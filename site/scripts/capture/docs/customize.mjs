@@ -330,6 +330,7 @@ export default async function customize({ e, b, shoot, example, message }) {
     setup: async () => {
       await e.send({ type: 'workspace_manager', command: { type: 'manage' } });
       await e.wait(`document.querySelector('dialog.workspace-manager')?.open`);
+      await quiet(b);
       await press(`${inkingRow} .workspace-options`);
       await e.wait(`!!document.querySelector('.workspace-row-menu')?.checkVisibility()`);
     },
@@ -337,6 +338,7 @@ export default async function customize({ e, b, shoot, example, message }) {
       if (locale === 'en') return;
       await b.evaluate(`document.querySelector('.workspace-row-menu')?.hidePopover();void 0`);
       await e.wait(`(v=>v.ready&&!v.busy&&!v.switcher_busy)(JSON.parse(layerApp.app.workspace_view()))`);
+      await quiet(b);
       await press(`${inkingRow} .workspace-options`);
       await e.wait(`!!document.querySelector('.workspace-row-menu')?.checkVisibility()`);
       await b.call('Input.dispatchMouseEvent', { type: 'mouseMoved', x: -20, y: -20 });
@@ -346,6 +348,7 @@ export default async function customize({ e, b, shoot, example, message }) {
   });
   await e.send({ type: 'workspace_manager', command: { type: 'manage' } });
   await e.wait(`document.querySelector('dialog.workspace-manager')?.open`);
+  await quiet(b);
   await press(`${inkingRow} .workspace-options`);
   await press('.workspace-row-menu [data-action="delete"]');
   await e.wait(`!!document.querySelector('.workspace-form[open] .destructive-action')`);
@@ -370,9 +373,9 @@ export default async function customize({ e, b, shoot, example, message }) {
   await undoLayout(starting);
 
   await shoot('zen/capy-menu', {
-    target: ['#zen-button', contextMenu],
+    target: ['#zen-capy', contextMenu],
     setup: async () => {
-      await rightClick('#zen-button');
+      await rightClick('#zen-capy');
       assert.deepEqual(await menuLabels(contextMenu), ['Customize Title Bar…', 'Change icon…']);
     },
     teardown: closeContextMenu,
@@ -461,6 +464,15 @@ export default async function customize({ e, b, shoot, example, message }) {
     target: '.preferences-page[data-page=color]',
     pad: 0,
     setup: () => settings('color'),
+    teardown: closeSettings,
+  });
+
+  await shoot('preferences/canvas-navigation', {
+    target: '#settings .settings-group:has(#setting-wheel-behavior)',
+    setup: async () => {
+      await settings('canvas');
+      await e.wait(`document.querySelector('.preference-choice:has(#setting-wheel-behavior) summary')?.checkVisibility() && document.querySelector('#setting-rotate-with-two-fingers')?.checkVisibility()`);
+    },
     teardown: closeSettings,
   });
 

@@ -32,13 +32,12 @@ La foto editada tiene estas capas, de arriba abajo:
 
 | Capa | Contenido |
 | --- | --- |
-| **Sombras/Iluminaciones** | Aclara las sombras de la roca, con una máscara a partir de una selección con bordes suavizados |
-| **Intensidad de color** | Sube la intensidad de color de toda la foto |
+| **Sombras/Iluminaciones** | Aclara las sombras de la roca, con una máscara de selección desvanecida |
+| **Intensidad de color** | Aumenta la intensidad de toda la foto |
 | **Curvas** | Una curva en S para toda la foto |
 | *Retouch* | Trazos de corrección |
-| La capa de la foto | La foto, con el nombre de su archivo |
-| **Papel** | Oculta |
+| La capa de objeto | La foto, con el nombre de su archivo |
 
-No hay nada pintado en la capa de la foto.
+No se pinta nada en la capa de objeto.
 
 Primera etapa: [Abrir y recortar](/es/docs/photo/crop/).

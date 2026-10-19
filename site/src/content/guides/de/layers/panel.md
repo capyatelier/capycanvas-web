@@ -14,9 +14,9 @@ Ebene steht oben. Der Kopfbereich zeigt die Einstellungen der aktiven Ebene.
 Führen Sie eine der folgenden Aktionen aus:
 
 - Wählen Sie **Fenster > Ebenen**.
-- Wählen Sie im Arbeitsbereich Malen in der rechten Spalte **Ebenen** aus.
-- Wählen Sie im Arbeitsbereich Skizze in der Titelleiste **Bedienfeld Ebenen** aus.
-- Geben Sie „Bedienfeld Ebenen“ in die [Befehlssuche](/de/docs/start/command-search/) ein.
+- Wählen Sie in Malen **Ebenen** in der rechten Spalte.
+- Wählen Sie in Skizze **Ebenen** in der Titelleiste. Die gemeinsame Schublade öffnet ihre Ebenenansicht; wählen Sie die Eigenschaften-Schaltfläche einer Ebene, um zu Eigenschaften zu wechseln.
+- Geben Sie „Ebenen-Bedienfeld“ in der [Befehlssuche](/de/docs/start/command-search/) ein.
 
 Im Arbeitsbereich Foto ist das Bedienfeld in der rechten Spalte geöffnet.
 
@@ -53,6 +53,10 @@ Ebenen in einer Gruppe stehen eingerückt unter der Gruppe.
 Wählen Sie eine Zeile aus, um sie zur aktiven Ebene und zur einzigen
 ausgewählten Zeile zu machen. [Ebenentypen](/de/docs/layers/types/) zeigt die
 Miniatur jedes Typs.
+
+Papier hat getrennte Farb- und Texturminiaturen. Fehlt Papier, erscheint **Papier hinzufügen** nach der letzten Zeile.
+
+![Die Schublade in Skizze beim Wechsel von Ebenen zu Eigenschaften.](shot:layers/sketch-properties-drawer)
 
 Klicken Sie bei gedrückter Taste **Strg** auf die Miniatur einer Malebene, um
 ihre Deckkraft als Auswahl zu laden, oder auf die Maskenminiatur, um die Maske

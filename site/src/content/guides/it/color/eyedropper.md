@@ -14,7 +14,7 @@ Esegui una delle seguenti operazioni:
 - Premi **I** (**O** nella mappa dei tasti Stile GIMP).
 - Scegli **Contagocce** nella ricerca comandi.
 - In Pittura e Foto, seleziona **Contagocce** nella barra strumenti Strumenti.
-- In Schizzo, seleziona **Contagocce** nella barra sul bordo sinistro, tra i cursori della dimensione e dell'opacità.
+- In Schizzo, seleziona **Contagocce** nella barra sul bordo sinistro, tra **Cursore dimensioni pennello** e **Cursore intensità**.
 
 Per uscire senza prelevare, premi **I** o seleziona di nuovo lo stesso pulsante,
 premi **Esc**, oppure scegli un altro strumento o pennello. Anche un tocco con il
@@ -31,7 +31,7 @@ colore di pittura cambia solo quando prelevi.
 | Penna | Passaggio sopra la tela, o penna appoggiata | Sollevare la penna |
 | Dito | Tocco | Sollevare il dito |
 
-Con un dito, il punto di campionamento si trova sopra il polpastrello.
+Con un dito, la lente appare sopra il polpastrello mentre il punto di campionamento rimane sotto il polpastrello.
 
 I pixel trasparenti non prelevano nulla, e i colori prelevati sono sempre opachi.
 I prelievi avvengono nello spazio colore del disegno. In un disegno HDR, un
@@ -68,6 +68,8 @@ finestra in Foto). Entrambe le scelte si chiamano **Contagocce**:
 - **Contagocce** con la pipetta mostra un cursore a pipetta con la punta sul punto campionato.
 
 ![La lente del Contagocce sopra un tratto rosso, con il colore campionato e il colore corrente nel suo anello.](shot:color/eyedropper-loupe)
+
+![La lente del Contagocce sopra un dito, con il punto di campionamento sotto il contatto.](shot:color/eyedropper-touch)
 
 Il tocco usa sempre la lente. In Schizzo, selezionare **Contagocce** imposta
 **Stile** sulla lente. Un piccolo simbolo di livelli compare quando **Sorgente**

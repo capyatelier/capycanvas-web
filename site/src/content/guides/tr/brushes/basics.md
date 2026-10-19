@@ -1,127 +1,65 @@
 ---
-title: "Boyut, opaklık ve akış"
-description: "Fırça boyutu, Opaklık ve Akış ile fırça ayarlarını değiştirebileceğiniz paneller, çubuklar ve tuşlar."
-related: ["brushes/tip-texture", "brushes/reset", "drawing/brush-tools", "input/keyboard"]
+title: "Boyut, güç ve opaklık"
+description: "Fırça boyutu, gücü ve opaklığı ile bunları değiştiren paneller, çubuklar ve tuşlar."
+related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools"]
 ---
 
-Fırça ayarlarında yaptığınız her değişiklik fırça hazır ayarıyla birlikte
-kaydedilir ([Fırçaları kaydetme ve sıfırlama](/tr/docs/brushes/reset/)).
+Fırça denetimleri araca ve hazır ayara bağlıdır. Değişiklikler hazır ayarla kaydedilir.
 
 ## Araç paneli
 
-Geçerli fırçanın tüm ayarlarını **Araç** panelinde değiştirebilirsiniz.
+Etkin aracın tüm ayarlarını görmek için **Pencere > Araç** yolunu açın. Boyama veya Fotoğraf alanında **Araç** sekmesini de seçebilir ya da çekmecesini açmak için etkin aracı yeniden seçebilirsiniz.
 
-Aşağıdakilerden birini yapın:
+![Kuru malzeme fırçasının Boyut, Güç ve Opaklık denetimleriyle Araç paneli.](shot:brushes/tool-panel)
 
-- **Pencere > Araç** komutunu seçin.
-- Boya'da sol sütundaki **Araç** sekmesini seçin.
-- Fotoğraf'ta sağdaki simge şeridinde **Araç** simgesini seçin.
-- Etkin aracın düğmesini yeniden seçin. **Araç**, çekmecenin son sütunudur.
+### Boyut
 
-Her ayarın bir değeri, **−** ve **+** düğmeleri ve bir kaydırıcısı vardır. Sayı
-yazmak için değeri seçin. Yalnızca fırçanın kullandığı ayarlar görünür ve **Uç**
-ile **Doku** gibi başlıklar altında gruplanır
-([Uç ve doku](/tr/docs/brushes/tip-texture/)).
+İzin çapını veya genişliğini belirler. Aralık araca bağlıdır.
 
-![Kurşun kalem için Araç paneli: Uç ve Doku gruplarının üstünde Fırça boyutu, Opaklık ve Akış.](shot:brushes/tool-panel)
+### Güç
 
-### Fırça boyutu
+Aracın tam basınçta ne kadar güçlü etki ettiğini belirler. Kuru malzemelerde kaplamayı, Silgi aracında silinen miktarı, Karıştırma ve Sıvılaştırma araçlarında piksellerin hareket veya karışma gücünü değiştirir.
 
-Fırçanın çapını 0,5 ile 2048 px arasında belirler.
+Güç her çizginin içinde etki eder. [Yumuşatma gücünden](/tr/docs/brushes/smoothing/) ayrı bir ayardır.
 
 ### Opaklık
 
-Darbedeki her fırça izinin gücünü belirler. Hiçbir yerleşik fırça Opaklık
-değerini kalem basıncıyla değiştirmez.
+Tamamlanan çizginin en yüksek opaklığını belirler. Opaklığı azaltmak, çizginin içindeki malzeme tepkisini değiştirmeden tüm çizgiyi daha saydam yapar.
 
-### Akış
+### Aile denetimleri
 
-Her fırça izinin ne kadar boya bırakacağını belirler. Basıncın akışı
-değiştirdiği fırçalarda bu değer tam basınçta geçerlidir. Islak ve karıştırma
-fırçaları Akış değerini, her fırça izinin katmandaki boyayla ne kadar güçlü
-karışacağını belirlemek için de kullanır.
+Islak fırçalarda **Su yükü**, **Yayılma** ve **Karıştırma** gibi denetimler bulunabilir. Kuru malzeme fırçalarında **Doku gücü** ve **Malzeme sertliği** görünür. Yalnızca seçili hazır ayarın kullandığı denetimler gösterilir.
 
-Sıvılaştırma fırçalarının Akış ayarı yoktur.
+## Sayısal denetimler
 
-## Darbe içinde birikme
-
-Darbe kendi üzerinden geçtiğinde şu fırçalar en güçlü fırça izlerinin gücünde
-kalır: **Kalem** grubundaki hazır ayarlar, **Keçeli kalem**, **Gölgelendirme
-kalemi**, **Boya fırçası**, **Kıl boya fırçası**, **Dokulu düz fırça**, **Kuru
-sürtme**, **Pastel blok**, **Saydam lazür**, **Suluboya yıkama** ve **Islak
-suluboya**. Diğer fırçalar, fırça izlerinin üst üste bindiği yerlerde birikir.
-
-Fırça izlerinin nasıl birikeceğini çizimin **Karıştırma** ayarı belirler
-([Renk uzayı, bit derinliği ve karıştırma](/tr/docs/color-management/color-spaces/)).
+Sayı girmek için gösterilen değeri seçin. Adım adım değiştirmek için değerin üzerinde kaydırın veya **−** ve **+** kullanın. Daha ince değişiklikler için sürüklerken uygulamanın gösterdiği değiştirici tuşu basılı tutun. Ayarı sıfırlamak için **Araç seçenekleri** içindeki etikete veya simgeye çift tıklayın.
 
 ## Fırça boyutu paneli
 
-**Fırça boyutu** panelindeki ızgaradan bir boyut seçebilirsiniz.
-
-Aşağıdakilerden birini yapın:
-
-- **Pencere > Fırça boyutu** komutunu seçin.
-- Boya'da sol sütunda **Araç** sekmesinin yanındaki **Fırça boyutu** sekmesini seçin.
-- Fotoğraf'ta sağdaki simge şeridinde **Fırça boyutu** simgesini seçin.
-
-Her düğmede bir nokta ve piksel cinsinden bir boyut gösterilir. Geçerli boyutun
-düğmesi basılı görünür.
-
-**Seçimi boya** etkinken panel, seçim fırçasının boyutunu ayarlar. Klavye
-kısayolları sayfasında **Fırça boyutları** altında her boyuta bir tuş
-atayabilirsiniz.
+İşaretlenmiş bir piksel boyutu seçmek için **Pencere > Fırça boyutu** yolunu açın. Etkin boyut basılı görünür. Her hazır ayar kendi boyut işaretlerini saklar.
 
 ![Boyut düğmelerinden oluşan ızgarasıyla Fırça boyutu paneli.](shot:brushes/brush-size-panel)
 
-## Araç seçenekleri çubuğu
+## Araç seçenekleri
 
-Geçerli aracın ayarlarını **Araç seçenekleri** çubuğunda tek bir satırda
-değiştirebilirsiniz. Fotoğraf'ta bu çubuk üst araç çubuğunun sonundadır. Diğer
-çalışma alanlarında çubuğu **Araçları ekle…** ile bir araç çubuğuna ekleyin
-([Araç çubukları ve başlık çubuğu](/tr/docs/customize/toolbars/)).
+**Araç seçenekleri** çubuğu etkin aracın ana denetimlerini tek satırda gösterir. Fotoğraf alanında üst araç çubuğunda bulunur; başka yerlere **Araçları ekle…** ile ekleyin. Sığmayan ayarlar **Diğer araç seçenekleri** içindedir.
 
-Aracın seçenekleri varsa önce **Araç** ve **Çeşit** menüleri, ardından boya
-karıştıran fırçalar için **Renk karıştırma**, sonra sayısal ayarlar gelir.
-Sığmayan ayarlar **Diğer araç seçenekleri** altındadır.
-
-- Bir ayarı fırçanın yerleşik değerine sıfırlamak için ayarın etiketine veya simgesine çift tıklayın (ya da çift dokunun).
-- Değeri adım adım değiştirmek için değerin üzerinde kaydırın. Parmakla değerin üzerinde yukarı veya aşağı sürükleyin.
-- **Yatay: metin**, **Yatay: simgeler** veya **Kaydırıcıları göster** seçeneğini seçmek için çubuğa sağ tıklayın veya çubuğu basılı tutun.
-
-![Fotoğraf'ta Boya fırçası için Araç seçenekleri çubuğu: Çeşit ve sayısal ayarlar.](shot:brushes/tool-options-bar)
+![Fırçanın geçerli ana denetimleriyle Araç Seçenekleri.](shot:brushes/tool-options-bar)
 
 ## Eskiz'de kaydırıcılar
 
-Eskiz'de sol kenardaki çubukta bulunan iki kaydırıcıyla fırçanın boyutunu ve
-opaklığını ayarlayabilirsiniz.
+Eskiz alanının sol kenarında **Fırça boyutu kaydırıcısı** ve **Güç kaydırıcısı** bulunur. Değer belirlemek için yola dokunun veya tıklayın, değiştirmek için yol boyunca sürükleyin ya da temas önizlemesini açmak için uç başlığını seçin.
 
-- Bir değer ayarlamak için kaydırıcının yoluna dokunun veya tıklayın. Bir önizleme, ucu gerçek piksel boyutunda veya seçilen opaklıkta gösterir.
-- Değeri değiştirmek için yol boyunca sürükleyin. Parmağınızı veya kalemi kaldırdığınızda önizleme kapanır.
-- Değeri değiştirmeden önizlemeyi görmek için kaydırıcının ucundaki başlığa dokunun.
+![Eskizde 37 px boyut önizlemesi açıkken Fırça boyutu ve Güç kaydırıcıları.](shot:brushes/sketch-size-slider)
 
-Değeri yol üzerinde işaretlemek için önizlemede **+** (**Bu değeri yer
-işaretlerine ekle**), işareti kaldırmak için **−** (**Yer işaretini kaldır**)
-düğmesini seçin. Bir işaretin yakınına dokunmak tam olarak o değeri ayarlar. Her
-fırça hazır ayarı kendi yer işaretlerini korur.
+Güç önizlemesi geçerli fırçanın bu değerdeki tepkisini gösterir.
 
-Geçerli aracın boyutu veya opaklığı yoksa ilgili kaydırıcı soluk görünür.
-**Fırça boyutu kaydırıcısı** ve **Fırça opaklığı kaydırıcısı** öğelerini
-**Araçları ekle…** ile herhangi bir araç çubuğuna ekleyebilirsiniz.
+![Temas önizlemesi açık Güç kaydırıcısı.](shot:brushes/strength-preview)
 
-![Eskiz'de sol kenardaki çubuk: Fırça boyutu kaydırıcısının yanında boyut önizlemesi açık.](shot:brushes/sketch-size-slider)
+Yola bir işaret eklemek için önizlemede **Bu değeri yer işaretlerine ekle**, kaldırmak için **Yer işaretini kaldır** seçin. Her hazır ayar kendi işaretlerini saklar.
 
-## Tuşlar
+## Boyut tuşları
 
-| Tuş | Eylem |
-| --- | --- |
-| **[** | **Fırça boyutunu azalt** (1 px). Yinelemek için basılı tutun. |
-| **]** | **Fırça boyutunu artır** (1 px). Yinelemek için basılı tutun. |
-| Yok | **Fırça opaklığını azalt** ve **Fırça opaklığını artır** (%1). |
+Önceki veya sonraki fırça boyutu adımına geçmek için **[** veya **]** tuşuna basın. Yinelemek için tuşu basılı tutun. Adımlar birer piksel değişmek yerine hazır ayarın boyut dizisini izler.
 
-Bu eylemlere [Klavye kısayolları](/tr/docs/input/keyboard/) sayfasında
-**Boyama** altında tuş atayabilirsiniz.
-
-## Değer yazma
-
-Komut aramada **Akış…** gibi bir ayarın adını arayın ve yeni değeri yazın
-([Komut arama](/tr/docs/start/command-search/)).
+Fırça Boyutu, Gücü ve Opaklığı komutlarına [Klavye Kısayolları](/tr/docs/input/keyboard/) sayfasında tuş atayabilirsiniz.

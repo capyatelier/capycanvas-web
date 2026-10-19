@@ -1,7 +1,7 @@
 ---
 title: "首选项"
-description: "首选项对话框，以及其中外观、画布、颜色和关于页面上的设置。"
-related: ["input/pen", "input/keyboard", "customize/zen", "color-management/color-spaces"]
+description: "首选项对话框及其外观、画布、输入、颜色和关于页面上的设置。"
+related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
 可以在**首选项**对话框中更改整个应用的设置。每项更改都会立即生效并保存。
@@ -17,7 +17,7 @@ related: ["input/pen", "input/keyboard", "customize/zen", "color-management/colo
 - 在“绘画”和“照片”中，选择标题栏右端的齿轮按钮。
 - 在[命令搜索](/zh/docs/start/command-search/)中输入“首选项”。
 
-首选项打开时显示**外观**页面。**帮助 > 键盘快捷键**会打开首选项并显示**键盘快捷键**页面，**帮助 > 关于 {appName}** 则显示**关于**页面。
+首选项打开 **外观** 页面。选择 **编辑 > Keyboard Shortcuts…** 可打开键盘快捷键，或从应用菜单选择 **关于 {appName}** 打开关于页面。
 
 首选项打开期间，画布快捷键、笔按钮和手指轻点都不起作用。
 
@@ -69,15 +69,21 @@ related: ["input/pen", "input/keyboard", "customize/zen", "color-management/colo
 
 在[专注模式](/zh/docs/customize/zen/)下将 Capy 按钮保留在屏幕上。默认打开。
 
-### 靠近屏幕边缘时显示面板
-
-在专注模式下，指针靠近有隐藏控件的屏幕边缘时，显示这些隐藏的控件。默认关闭。
-
 ### 按钮图标
 
 设置 Capy 按钮的图片：**仰望**（默认）、**正面**、**泡澡**或**睡觉**。
 
 ## 画布
+
+![画布导航设置。](shot:preferences/canvas-navigation)
+
+### 鼠标滚轮
+
+选择不按修饰键时鼠标滚轮是平移还是缩放画布。按住 **Ctrl** 使用另一种操作。
+
+### 双指旋转
+
+允许通过双指扭转旋转视图。关闭后，双指手势仅平移和缩放。
 
 ### 滚动平移速度
 

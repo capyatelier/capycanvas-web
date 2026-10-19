@@ -1,18 +1,16 @@
 ---
 title: "筆"
 description: "偏好設定中的筆設定，以及 Apple Pencil 的輕點兩下和擠壓。"
-related: ["input/touch", "input/keyboard", "preferences", "brushes/basics"]
+related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-筆的設定位於**編輯 > 偏好設定**的**繪圖筆與輸入**頁面。
+筆的設定位於 **編輯 > 偏好設定** 的 **繪圖筆與輸入** 頁面。
 
 ![偏好設定的繪圖筆與輸入頁面。](shot:pen/pen-and-input)
 
-## 筆壓反應
+## 筆壓
 
-可以用**繪圖筆反應**下的**筆壓反應**更改數位筆對輕壓的響應。值越低，輕壓的效果越強；值越高，需要用的力越大。範圍為 0.25 × 到 4.00 ×。預設值 1.00 × 時，筆壓按原樣使用。
-
-此設定適用於所有筆刷和工具，包括**繪製選取範圍**和**快速遮罩**。已經畫好的筆跡不會改變。
+選擇 **筆壓** 旁的 **調整…** 可調整壓力曲線並在目前畫布上測試。曲線作用於所有壓感筆刷和工具；已畫出的筆跡不會改變。參見[筆壓](/zh-Hant/docs/input/pen-pressure/)。
 
 ## 筆跡預測
 

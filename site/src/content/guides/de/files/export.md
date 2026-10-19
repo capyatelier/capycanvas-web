@@ -1,11 +1,13 @@
 ---
 title: "Bilder exportieren"
-description: "Eine auf eine Ebene reduzierte Bildkopie einer Zeichnung mit dem Dialog Bild exportieren und mit Erneut exportieren ausgeben."
-related: ["files/open-save", "color-management/hdr", "color-management/color-spaces"]
+description: "Eine reduzierte Bildkopie mit dem Dialog Bild exportieren und Erneut exportieren ausgeben."
+related: ["files/open-save", "layers/paper", "color-management/hdr", "color-management/color-spaces"]
 ---
 
 Sie können eine auf eine Ebene reduzierte Bildkopie der Zeichnung exportieren. Das
 Exportieren ändert die `.capy`-Zeichnung nicht und zählt nicht als Speichern.
+
+Native Exporte enthalten [Papierbeleuchtung](/de/docs/layers/paper/). Web-Exporte lassen sie derzeit weg. Die vorübergehende Reliefvorschau nach Änderungen an Papiertextur oder Skalierung wird nicht eingeschlossen.
 
 ## Ein Bild exportieren
 
@@ -56,8 +58,7 @@ Formatgrenzen weiter unten).
 
 ### Ausgabeprofil
 
-**sRGB**, **Display P3**, **Adobe RGB (1998)** oder **ProPhoto RGB**, dazu
-„Original: *Name*“ für jede Fotoebene mit eigenem eingebettetem Profil.
+**sRGB**, **Display P3**, **Adobe RGB (1998)** oder **ProPhoto RGB** sowie „Original: *Name*“ für jede Objektebene mit eigenem eingebettetem Profil.
 
 ### Farbtiefe
 

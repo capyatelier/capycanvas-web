@@ -4,14 +4,14 @@ description: "照片编辑教程第 2 阶段：在照片上方的图层上用修
 related: ["retouch/clone-heal", "layers/settings", "layers/working"]
 ---
 
-这一阶段建立一个 *Retouch* 图层，覆盖照片中的灰尘和一处污迹。照片图层保持不变。
+本阶段创建 *Retouch* 图层，覆盖照片中的灰尘和一处污迹。对象图层保持不变。
 
 ## 1. 添加修饰图层
 
 1. 选择图层面板底部的**新建图层**，将新图层重命名为 *Retouch*。
 2. 选择**图层 > 图层设置 > 使用下方图层作为参考**（[图层设置](/zh/docs/layers/settings/)）。
 
-照片图层成为参考图层，其行上的眼睛图标旁边出现灯塔图标。修复工具默认从参考图层复制，并在 *Retouch* 上绘画。
+对象图层成为参考图层，其行中眼睛旁边出现灯塔图标。修复工具默认从参考图层复制，并画在 *Retouch* 上。
 
 ![图层面板，Retouch 位于 terrarium 图层上方，terrarium 图层显示参考图标。](shot:photo/retouch-layers)
 

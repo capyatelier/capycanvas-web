@@ -12,7 +12,7 @@ olarak kalır.
 
 Aşağıdakilerden birini yapın:
 
-- **Düzenle > Görüntü > Kırp** komutunu seçin.
+- **Görüntü > Kırp** komutunu seçin.
 - **C** tuşuna basın.
 - Fotoğraf'ta Araçlar çubuğundaki **Kırp** düğmesini seçin.
 
@@ -108,7 +108,7 @@ Tuvali bir seçimin sınırlarına göre kırpabilirsiniz.
 
 Aşağıdakilerden birini yapın:
 
-- **Düzenle > Görüntü > Tuvali seçime göre kırp** komutunu seçin.
+- **Görüntü > Tuvali seçime göre kırp** komutunu seçin.
 - [Seçim çubuğunda](/tr/docs/selections/working/) **Kırp** düğmesini seçin.
 
 Seçimin sınırları dışındaki pikseller kendi katmanlarında gizli olarak kalır.
@@ -117,6 +117,6 @@ Tersine çevrilmiş bir seçime göre kırpamazsınız.
 ## Kırpılan pikselleri geri getirme
 
 Tuvali tüm katmanların piksellerini gösterene kadar büyütmek için
-**Düzenle > Görüntü > Tümünü göster** komutunu seçin veya tuvali
-**Düzenle > Görüntü > Tuval boyutu…** ile büyütün (bkz.
+**Görüntü > Tümünü göster** komutunu seçin veya tuvali
+**Görüntü > Tuval boyutu…** ile büyütün (bkz.
 [Görüntü boyutu ve döndürme](/tr/docs/transform/image/)).

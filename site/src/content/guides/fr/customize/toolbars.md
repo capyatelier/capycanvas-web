@@ -58,11 +58,7 @@ Chaque barre d’outils doit avoir un nom qui lui est propre.
 - Pour retirer un outil, choisissez **Retirer l’outil** dans son menu.
 - Pour déplacer un outil, appuyez longuement dessus, puis faites-le glisser dans la barre d’outils ou dans une autre barre d’outils.
 
-En plus des commandes et des outils, la liste **Ajouter des outils** contient des
-pinceaux, des tailles de pinceau, **Pipette**, **Curseur de taille du pinceau**,
-**Curseur d’opacité du pinceau**, **Options de l’outil** et **Séparateur**. Elle
-contient aussi une entrée pour chaque panneau, comme **Panneau Calques**, qui
-ouvre le panneau dans un tiroir.
+Outre les commandes et les outils, la liste **Ajouter des outils** comprend des pinceaux, des tailles de pinceau, **Pipette**, **Curseur de taille du pinceau**, **Curseur d’intensité**, **Options de l’outil** et **Séparateur**. Elle propose aussi une entrée pour chaque panneau, comme **Panneau Calques**, qui ouvre le panneau dans un tiroir.
 
 **Options de l’outil** affiche les réglages de l’outil actif sur le reste de la
 barre d’outils. Son menu contient **Horizontal : texte**,

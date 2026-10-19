@@ -26,8 +26,8 @@ Aşağıdakilerden birini yapın:
 Boya'da **Düzeltme fırçası** ve **Nokta düzeltme fırçası** için düğme
 yoktur.
 
-Her araç bir fırçadır. Araç panelinde **Fırça boyutu**, **Opaklık**, **Akış** ve
-**Uç** ayarları bulunur (bkz. [Boyut, opaklık ve akış](/tr/docs/brushes/basics/)).
+Her araç bir fırçadır. Araç panelinde **Fırça boyutu**, **Opaklık**, **Güç** ve
+**Uç** ayarları bulunur (bkz. [Boyut, güç ve opaklık](/tr/docs/brushes/basics/)).
 
 ![Fırça ayarları ve kaynak ayarlarıyla Klonlama damgası için Araç paneli.](shot:retouch/clone-tool-panel)
 

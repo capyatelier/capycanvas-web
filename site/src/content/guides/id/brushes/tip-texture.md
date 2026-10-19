@@ -1,12 +1,10 @@
 ---
 title: "Ujung dan tekstur"
-description: "Pengaturan Ujung yang membentuk setiap tapak kuas, dan Kekuatan tekstur untuk butiran kertas pada goresan."
+description: "Pengaturan Ujung yang membentuk setiap tapak kuas, dan Kekuatan tekstur untuk tekstur kertas pada goresan."
 related: ["brushes/basics", "brushes/wet-media", "drawing/brush-tools"]
 ---
 
-Anda dapat mengubah bentuk setiap tapak kuas dan banyaknya butiran kertas yang tampak
-pada goresan dengan pengaturan **Ujung** dan **Tekstur** di panel **Alat**
-([Ukuran, opasitas, dan aliran cat](/id/docs/brushes/basics/)).
+Anda dapat mengubah bentuk setiap cap dan seberapa kuat tekstur kertas mengubah goresan dengan pengaturan **Ujung** dan **Tekstur** di panel **Alat** ([Ukuran, kekuatan, dan opasitas](/id/docs/brushes/basics/)).
 
 ![Panel Alat untuk Pensil dengan grup Ujung dan grup Tekstur.](shot:brushes/tip-texture-settings)
 
@@ -23,7 +21,7 @@ tepinya tidak rata dan tidak memiliki **Kekerasan**.
 Mengatur jarak antartapak, sebagai persentase diameter tapak pada tekanan saat ini.
 Penggeser mencapai 100%, dan Anda dapat mengetik nilai hingga 1000%.
 
-### Sudut
+### Sudut ujung
 
 Memutar ujung kuas, dari −180° hingga 180°. Ujung bulat tampak sama pada sudut berapa
 pun.
@@ -43,9 +41,9 @@ putaran penuh ke arah mana pun.
 Ujung **Kuas Cat**, **Kuas Pipih Bertekstur**, **Balok Pastel**,
 **Sapuan Tipis Transparan**, **Gouache Pekat**, **Cat Minyak Penuh**, **Pisau Palet**,
 **Sapuan Cat Air**, **Cat Air Basah**, **Tekstur Ganda**, dan **Pembaur Alami**
-mengikuti arah goresan. **Sudut** tidak berpengaruh pada kuas-kuas ini.
+mengikuti arah goresan. **Sudut ujung** tidak berpengaruh pada kuas-kuas ini.
 
-**Sapuan Kering** dan **Tinta Sapuan Realistis** menambahkan arah goresan ke **Sudut**.
+**Sapuan Kering** dan **Tinta Sapuan Realistis** menambahkan arah goresan ke **Sudut ujung**.
 
 ## Tekstur
 
@@ -54,12 +52,10 @@ mengikuti arah goresan. **Sudut** tidak berpengaruh pada kuas-kuas ini.
 **Gouache Pekat**, **Cat Minyak Penuh**, **Pisau Palet**, **Tekstur Ganda**, dan
 **Pembaur Alami**.
 
-Butiran kertas terkunci pada kanvas. Setiap kuas memiliki butirannya sendiri, dan Anda
-tidak dapat mengubah ukurannya atau memilih butiran lain.
+Kuas media kering membaca tekstur Kertas terdekat di bawah lapisan tujuannya. Pilih dan atur skala tekstur di [Kertas](/id/docs/layers/paper/).
 
 ### Kekuatan tekstur
 
-Mengatur seberapa banyak butiran kertas tampak pada goresan. Pada 0% butiran tidak
-berpengaruh, dan pada 100% cat sepenuhnya mengikuti butiran.
+Mengatur seberapa kuat tekstur Kertas mengubah cakupan. Pada 0% tekstur tidak berpengaruh.
 
 ![Tiga goresan Arang dengan Kekuatan tekstur 0%, 50%, dan 100%.](shot:brushes/texture-strength)

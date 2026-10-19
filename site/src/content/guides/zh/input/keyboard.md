@@ -14,9 +14,9 @@ related: ["input/pen", "input/touch", "start/command-search", "preferences"]
 
 执行以下任一操作：
 
-- 选择**帮助 > 键盘快捷键**。
+- 选择 **编辑 > Keyboard Shortcuts…**。
 - 按 **Ctrl+Shift+?**。
-- 选择**编辑 > 首选项**，然后选择**键盘快捷键**。
+- 选择 **编辑 > 首选项**，再选择 **键盘快捷键**。
 
 ## 键位映射预设
 

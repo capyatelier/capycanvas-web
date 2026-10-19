@@ -24,10 +24,7 @@ dele nesse grupo, a menos que o grupo esteja com
 
 ## Filtro anexado
 
-Você pode anexar filtros a uma camada de pintura, a uma camada de foto ou a um
-grupo que não esteja com Atravessar. Selecione a camada e depois selecione
-**Adicionar filtro** na parte inferior do painel Camadas, no painel
-**Propriedades** ou no menu da camada.
+Você pode anexar filtros a uma camada de pintura, uma camada de objeto ou um grupo que não esteja em modo Atravessar. Selecione a camada e depois **Adicionar filtro** na parte inferior do painel Camadas, do painel **Propriedades** ou no menu da camada.
 
 Os filtros anexados se aplicam de baixo para cima na cadeia, depois da máscara
 da camada e antes da opacidade e do modo de mesclagem dela. Em uma base de
@@ -55,9 +52,7 @@ Faça uma das seguintes ações:
 **Aplicar às camadas abaixo** coloca o filtro em uma camada própria, acima da
 camada à qual ele estava anexado e das camadas recortadas por ela.
 
-O botão fica indisponível enquanto o filtro ou a camada abaixo está bloqueado.
-Quando a camada abaixo não é uma camada de pintura, uma camada de foto nem um
-grupo, a dica do botão mostra "Não há camada abaixo à qual vincular".
+O botão fica indisponível enquanto o filtro ou a camada abaixo estiverem bloqueados. Quando a camada abaixo não é uma camada de pintura, de objeto ou um grupo, a dica indica “Não há camada abaixo à qual vincular”.
 
 ## Seleções como máscaras de filtro
 

@@ -1,12 +1,10 @@
 ---
 title: "Outils de pinceau"
-description: "Les outils de pinceau, leurs préréglages intégrés et l’endroit où les choisir."
-related: ["brushes/basics", "drawing/blend-liquify", "color/color-panel", "input/keyboard"]
+description: "Les outils de pinceau, leurs préréglages intégrés et les endroits où les choisir."
+related: ["brushes/basics", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
 ---
 
-Vous pouvez peindre avec les outils **Plume**, **Crayon**,
-**Pinceau de peinture**, **Aérographe** et **Décoration**, et effacer avec la **Gomme**.
-Chaque outil contient un ou plusieurs groupes de préréglages de pinceau intégrés.
+Vous pouvez peindre avec les outils **Plume**, **Crayon**, **Fusain**, **Craie**, **Pastel**, **Crayon de cire**, **Pinceau de peinture**, **Aérographe** et **Décoration**, et effacer avec **Gomme**. Chaque outil contient un ou plusieurs groupes de préréglages de pinceau intégrés.
 
 ## Outils et préréglages
 
@@ -15,7 +13,10 @@ Chaque outil contient un ou plusieurs groupes de préréglages de pinceau intég
 | **Plume** | **Plume** | **Plume G**, **Plume G rugueuse**, **Plume calligraphique**, **Plume ancienne**, **Plume réaliste**, **Encre humide**, **Encre tachetée**, **Encre réaliste au pinceau** |
 | | **Feutre** | **Feutre** |
 | **Crayon** | **Crayon** | **Crayon**, **Crayon pointu**, **Crayon d’ombrage** |
-| | **Pastel** | **Fusain**, **Craie**, **Bloc de pastel** |
+| **Fusain** | **Fusain** | **Fusain** |
+| **Craie** | **Craie** | **Craie** |
+| **Pastel** | **Pastel** | **Bloc de pastel** |
+| **Crayon de cire** | **Crayon de cire** | **Crayon de cire** |
 | **Pinceau de peinture** | **Peinture** | **Pinceau**, **Pinceau à soies**, **Plat texturé**, **Brossage à sec**, **Glacis transparent**, **Gouache opaque**, **Glacis en produit** |
 | | **Aquarelle** | **Lavis d’aquarelle**, **Aquarelle humide** |
 | | **Peinture à l’huile** | **Huile chargée**, **Couteau à palette**, **Rond humide** |
@@ -34,10 +35,10 @@ Ces comportements font partie des préréglages et n’ont pas de réglage.
 
 | Préréglage | Comportement |
 | --- | --- |
-| **Plume calligraphique**, **Plume ancienne** | Bec oblique. |
+| **Plume calligraphique**, **Plume ancienne** | Plume inclinée. |
 | **Feutre** | Pointe biseautée. |
-| **Crayon**, **Crayon pointu**, **Crayon d’ombrage**, **Fusain** | Un trait plus large quand vous inclinez le stylet. |
-| **Aérographe** | Continue d’ajouter de la peinture tant que vous gardez le stylet immobile. |
+| **Crayon**, **Crayon pointu**, **Crayon d’ombrage**, **Fusain**, **Craie**, **Bloc de pastel**, **Crayon de cire** | La pression et l’inclinaison modifient la forme et la couverture de la marque. Voir [Outils secs](/fr/docs/brushes/dry-media/). |
+| **Aérographe** | Continue d’ajouter de la peinture quand vous maintenez le stylet immobile. |
 | **Pulvérisation** | Disperse ses empreintes autour du trait. |
 | **Glacis en produit** | Peint en mode Produit. |
 
@@ -128,9 +129,9 @@ Sur les calques suivants, un trait ne peint rien et un avis en donne la raison 
 
 - Un groupe ou un calque de sélection.
 - Un calque de remplissage sans masque.
-- Un calque dont **Verrouiller la modification** est activé, ou qui se trouve dans un groupe verrouillé.
-- Un calque de filtre sans masque, quand le calque situé en dessous est verrouillé ou absent.
-- Un calque mis à l’échelle ou pivoté, tant que vous n’avez pas choisi **Appliquer la transformation aux pixels** ([Déplacer et transformer](/fr/docs/transform/move-transform/)).
+- Un calque avec **Verrouiller la modification** activé, ou situé dans un groupe verrouillé.
+- Un calque de filtre sans masque, quand le calque du dessous est verrouillé ou absent.
+- Un calque mis à l’échelle ou pivoté, tant que vous n’avez pas choisi **Appliquer la transformation** ([Déplacer et transformer](/fr/docs/transform/move-transform/)).
 
 Les pinceaux humides, de mélange et d’aquarelle peignent une couverture simple sur
 un masque. Le premier trait de ce type sur chaque masque affiche un avis.

@@ -11,7 +11,7 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 
 다음 중 하나를 수행합니다.
 
-- **편집 > 이미지 > 자르기**를 선택합니다.
+- **이미지 > 자르기**를 선택합니다.
 - **C** 키를 누릅니다.
 - 사진 작업 영역에서는 “도구” 도구 모음의 **자르기**를 선택합니다.
 
@@ -103,7 +103,7 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 
 다음 중 하나를 수행합니다.
 
-- **편집 > 이미지 > 선택 영역에 맞춰 캔버스 자르기**를 선택합니다.
+- **이미지 > 선택 영역에 맞춰 캔버스 자르기**를 선택합니다.
 - [선택 영역 표시줄](/ko/docs/selections/working/)에서 **자르기**를 선택합니다.
 
 선택 영역 경계 밖의 픽셀은 숨겨진 채로 각 레이어에 남습니다. 반전한 선택 영역으로는
@@ -111,5 +111,5 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 
 ## 잘린 픽셀 되살리기
 
-**편집 > 이미지 > 모든 픽셀 표시**를 선택하면 모든 레이어의 픽셀이 보이도록 캔버스가
-커집니다. **편집 > 이미지 > 캔버스 크기…** 명령으로 캔버스를 키울 수도 있습니다([이미지 크기와 회전](/ko/docs/transform/image/) 참조).
+**이미지 > 모든 픽셀 표시**를 선택하면 모든 레이어의 픽셀이 보이도록 캔버스가
+커집니다. **이미지 > 캔버스 크기…** 명령으로 캔버스를 키울 수도 있습니다([이미지 크기와 회전](/ko/docs/transform/image/) 참조).

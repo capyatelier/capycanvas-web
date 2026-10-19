@@ -11,23 +11,19 @@ Bu sayfadaki komutlar **Dosya** menüsündedir. Eskiz'de bu menüyü başlık
 
 ## Çizim veya fotoğraf açma
 
-`.capy` çizimlerini ve OpenEXR, TIFF, PNG, WebP, BMP, JPEG, GIF, HEIF ve AVIF
-biçimindeki fotoğrafları açabilirsiniz. Her dosya kendi sekmesinde açılır.
+`.capy` çizimlerini ve OpenEXR, TIFF, PNG, WebP, BMP, JPEG, GIF, HEIF ve AVIF biçimindeki fotoğrafları açabilirsiniz. Her biri kendi sekmesinde açılır.
 
 Aşağıdakilerden birini yapın:
 
-- **Dosya > Aç…** komutunu seçin. Linux dışında birden çok dosya seçebilirsiniz.
+- **Dosya > Aç…** seçin. Linux dışında birden fazla dosya seçebilirsiniz.
 - **Ctrl+O** tuşlarına basın.
-- Boya ve Fotoğraf'ta Komutlar çubuğunda **Aç…** düğmesini seçin.
-- Web düzenleyicisinde veya Linux'ta dosyaları başlık çubuğundaki çizim adının ya da sekmelerin üzerine sürükleyin.
-- Web düzenleyicisini uygulama olarak yüklediyseniz bir `.capy`, `.png`, `.jpg`, `.tif`, `.avif` veya `.exr` dosyasını sisteminizden {appName} ile açın.
+- Boyama ve Fotoğraf alanlarında Komutlar çubuğunda **Aç…** seçin.
+- Web düzenleyicisinde veya Linux üzerinde dosyaları başlık çubuğundaki çizim adına veya sekmelere sürükleyin.
+- Web düzenleyicisini uygulama olarak yüklediyseniz sisteminizden desteklenen bir dosyayı {appName} ile açın.
 
 ## Fotoğraflar
 
-Fotoğraf, yeni bir çizim olarak açılır: **Kâğıt** katmanının üstünde, dosyanın
-adını taşıyan bir fotoğraf katmanı bulunur. Fotoğraf renk profilini ve varsayılan
-olarak bit derinliğini korur. Çizimi kaydetmek bir `.capy` dosyası oluşturur ve
-hiçbir zaman fotoğrafın üzerine yazmaz.
+Fotoğraf, dosya adını taşıyan bir nesne katmanıyla yeni çizim olarak açılır. Nesne görüntünün kendi boyutunu, renk profilini ve varsayılan olarak bit derinliğini korur. Çizimi kaydetmek bir `.capy` dosyası oluşturur ve kaynak görüntünün üzerine yazmaz.
 
 - Hareketli bir GIF veya WebP dosyasının ilk karesi açılır.
 - Fotoğrafın her kenarı en fazla 32768 piksel olabilir.
@@ -35,12 +31,11 @@ hiçbir zaman fotoğrafın üzerine yazmaz.
 - HDR HEIF ve AVIF fotoğraflar açılamaz.
 
 [Tercihler](/tr/docs/preferences/) içinde **Profilsiz RGB ve gri tonlama** ayarı
-**Sor** olduğunda, renk profili olmayan bir fotoğraf **Görüntü yorumlamasını
-seçin** iletişim kutusunu açar.
+**Sor** olduğunda, renk profili olmayan bir fotoğraf **Görüntü yorumlamasını seçin** iletişim kutusunu açar.
 
 ## Görüntüleri katman olarak içe aktarma
 
-Geçerli çizime görüntüleri yeni katmanlar olarak ekleyebilirsiniz.
+Çizime yeni katmanlar olarak görüntüler ekleyebilirsiniz.
 
 Aşağıdakilerden birini yapın:
 
@@ -48,9 +43,7 @@ Aşağıdakilerden birini yapın:
 - **Ctrl+Shift+O** tuşlarına basın.
 - Görüntüleri tuvalin veya **Katmanlar** panelindeki bir satırın üzerine sürükleyin.
 
-Her görüntü, seçili katmanın üstünde dosyanın adını taşıyan bir katman olur ve
-yerleştirmek için [dönüştürme tutamaçlarıyla](/tr/docs/transform/move-transform/)
-birlikte gelir. Tuvalden büyük bir görüntü, tuvale sığacak şekilde küçültülür.
+Her görüntü seçili katmanın üzerinde dosya adını taşıyan bir [nesne katmanına](/tr/docs/layers/types/) dönüşür ve yerleştirme için [dönüştürme tutamaçları](/tr/docs/transform/move-transform/) gösterir. Tuvalden büyük görüntü sığacak şekilde küçültülür.
 
 `.capy` dosyası içe aktarılamaz. Web düzenleyicisinde bir görüntü en fazla 512 MiB
 olabilir.
@@ -65,8 +58,7 @@ Aşağıdakilerden birini yapın:
 - **Ctrl+S** tuşlarına basın.
 - Boya ve Fotoğraf'ta Komutlar çubuğunda **Kaydet** düğmesini seçin.
 
-İlk kaydetmede bir konum sorulur, sonraki kaydetmeler aynı dosyaya yazar.
-Kaydettikten sonra sekmede dosya adı ● işareti olmadan görünür.
+İlk kaydetme konum sorar; sonraki kaydetmeler aynı dosyayı kullanır. Kaydedilen sekmede dosya adı ● işareti olmadan görünür.
 
 Firefox ve Safari'de çizim, ancak **Dosyayı indir** iletişim kutusunda önce
 **İndir**, sonra **Dosya kaydedildi** düğmesini seçtiğinizde kaydedilmiş sayılır.
@@ -81,17 +73,11 @@ Kırpma veya dönüştürme açıkken **Kaydet** kullanılamaz.
 
 ## .capy dosyasının sakladıkları
 
-`.capy` dosyası her katmanı maskesi ve ayarlarıyla, filtreleri, kaydedilmiş
-seçimleri ve kılavuzları, renk uzayını, bit derinliğini ve karıştırmayı, ayrıca
-fotoğrafın EXIF, XMP ve IPTC verilerini saklar. Geri alma geçmişini, görünümü ve
-etkin seçimi saklamaz.
+`.capy` dosyası her katmanı maskesi ve ayarlarıyla, gömülü nesne kaynak görüntülerini ve içe aktarılmış Kâğıt dokularını, filtreleri, kayıtlı seçim ve kılavuzları, renk uzayını, bit derinliğini, karıştırmayı ve fotoğrafın EXIF, XMP ve IPTC verilerini saklar. Geri alma geçmişini, görünümü veya etkin seçimi saklamaz.
 
 ## Yalnızca görüntülenebilen çizimler
 
-{appName}'ın düzenleyemediği bir `.capy` dosyası (örneğin hasarlı bir dosya)
-sekme yerine bir iletişim kutusunda açılır. **Copy Original File…** dosyanın bir
-kopyasını kaydeder. **Export Preview Image…** ise çizimin önizlemesini PNG olarak
-kaydeder.
+Desteklenmeyen yeni bir biçimdeki veya hasarlı bir dosya dahil {appName} uygulamasının düzenleyemediği `.capy` dosyası sekme yerine iletişim kutusunda açılır. **Copy Original File…** dosyanın bir kopyasını, **Export Preview Image…** ise çizimin önizlemesini PNG olarak kaydeder.
 
 ## Çizim sekmeleri
 
@@ -113,8 +99,7 @@ Web düzenleyicisinde sekmeleri yeniden sıralamak için bir sekmeyi yana sürü
 Adın önündeki ●, kaydedilmemiş değişiklikleri belirtir. Dar bir başlık
 çubuğunda sekmeler, Çizimler listesini açan tek bir düğmeye dönüşür.
 
-Her sekme kendi geri alma geçmişini, görünümünü ve seçimini tutar. Sekmeler
-çalışma alanının parçası değildir.
+Her sekme geri alma geçmişini, görünümü ve seçimi korur. Sekmeler çalışma alanının parçası değildir.
 
 ## Çizimler…
 
@@ -129,8 +114,7 @@ Aşağıdakilerden birini yapın:
 
 Bir çizime geçmek için satırını seçin, yeniden sıralamak için satırın solundaki
 tutamacı sürükleyin veya çizimi kapatmak için **×** düğmesini seçin. Sekme
-sırasının listenin altında kendi **Sekme sırasını geri al** ve **Sekme sırasını
-yinele** düğmeleri vardır.
+sırasının listenin altında kendi **Sekme sırasını geri al** ve **Sekme sırasını yinele** düğmeleri vardır.
 
 ## Çizimi kapatma
 

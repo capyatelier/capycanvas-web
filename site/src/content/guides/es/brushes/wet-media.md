@@ -7,7 +7,7 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 Puedes definir cómo manejan la pintura los pinceles húmedos y de mezcla en el panel
 **Herramienta**. Cada grupo aparece solo en los pinceles que se nombran en su sección.
 
-![El panel Herramienta para Acuarela húmeda con los grupos Mezcla, Acuarela y Difusión y los botones de mezcla de colores.](shot:brushes/wet-media-settings)
+![El panel Herramienta para Acuarela húmeda con Mezcla de colores y los grupos Mezcla, Acuarela y Difusión.](shot:brushes/wet-media-settings)
 
 ## Mezcla
 
@@ -72,8 +72,8 @@ Puedes elegir cómo combina un pincel de mezcla los colores que recoge.
 
 Haz una de las siguientes acciones:
 
-- Selecciona **Mezcla Oklab**, **Mezcla en luz lineal** o **Mezcla clásica** en la parte inferior del panel **Herramienta**.
-- Elige la opción en **Mezcla de colores**, en la barra Opciones de herramienta ([Tamaño, opacidad y flujo](/es/docs/brushes/basics/)).
+- Elige **Mezcla Oklab**, **Mezcla en luz lineal** o **Mezcla clásica** en **Mezcla de colores** del panel **Herramienta**.
+- Abre **Más opciones de herramienta** en la barra Opciones de herramienta y elige **Mezcla de colores** en el cajón Herramienta ([Tamaño, intensidad y opacidad](/es/docs/brushes/basics/)).
 - Busca el nombre de la opción en la búsqueda de comandos.
 
 | Opción | Mezcla |
@@ -86,7 +86,7 @@ Todos los pinceles de mezcla integrados empiezan con **Mezcla Oklab**. La opció
 guarda con el pincel, y el ajuste **Mezcla** del dibujo no la cambia. En un pincel
 que no mezcla, las opciones no están disponibles.
 
-![El menú Mezcla de colores abierto en la barra Opciones de herramienta para Óleo cargado.](shot:brushes/color-mixing-menu)
+![Mezcla de colores en el cajón Herramienta.](shot:brushes/color-mixing-menu)
 
 ## Cerdas
 

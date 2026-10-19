@@ -1,12 +1,10 @@
 ---
 title: "Ferramentas de pincel"
-description: "As ferramentas de pincel, suas predefinições integradas e onde escolhê-las."
-related: ["brushes/basics", "drawing/blend-liquify", "color/color-panel", "input/keyboard"]
+description: "As ferramentas de pincel, suas predefinições incluídas e onde escolhê-las."
+related: ["brushes/basics", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
 ---
 
-Você pode pintar com as ferramentas **Caneta**, **Lápis**, **Pincel de pintura**,
-**Aerógrafo** e **Decoração**, e apagar com a **Borracha**. Cada ferramenta reúne
-um ou mais grupos de predefinições de pincel integradas.
+Você pode pintar com as ferramentas **Caneta**, **Lápis**, **Carvão vegetal**, **Giz**, **Pastel**, **Giz de cera**, **Pincel de pintura**, **Aerógrafo** e **Decoração**, e apagar com **Borracha**. Cada ferramenta contém um ou mais grupos de predefinições de pincel incluídas.
 
 ## Ferramentas e predefinições
 
@@ -15,8 +13,11 @@ um ou mais grupos de predefinições de pincel integradas.
 | **Caneta** | **Caneta** | **Caneta G**, **Caneta G áspera**, **Caneta de caligrafia**, **Caneta antiga**, **Caneta realista**, **Tinta molhada**, **Tinta manchada**, **Tinta realista com pincel** |
 | | **Marcador** | **Marcador** |
 | **Lápis** | **Lápis** | **Lápis**, **Lápis de ponta fina**, **Lápis de sombreado** |
-| | **Pastel** | **Carvão vegetal**, **Giz**, **Bloco de pastel** |
-| **Pincel de pintura** | **Pintar** | **Pincel**, **Pincel de cerdas**, **Pincel chato texturizado**, **Esfregaço seco**, **Veladura transparente**, **Guache opaco**, **Veladura multiplicada** |
+| **Carvão vegetal** | **Carvão vegetal** | **Carvão vegetal** |
+| **Giz** | **Giz** | **Giz** |
+| **Pastel** | **Pastel** | **Bloco de pastel** |
+| **Giz de cera** | **Giz de cera** | **Giz de cera** |
+| **Pincel de pintura** | **Pintura** | **Pincel**, **Pincel de cerdas**, **Pincel chato texturizado**, **Esfregaço seco**, **Veladura transparente**, **Guache opaco**, **Veladura multiplicada** |
 | | **Aquarela** | **Aguada de aquarela**, **Aquarela molhada** |
 | | **Tinta a óleo** | **Óleo carregado**, **Espátula**, **Pincel redondo molhado** |
 | **Aerógrafo** | **Aerógrafo** | **Aerógrafo** |
@@ -36,9 +37,9 @@ Estes comportamentos fazem parte das predefinições e não têm configuração.
 | --- | --- |
 | **Caneta de caligrafia**, **Caneta antiga** | Pena inclinada. |
 | **Marcador** | Ponta chanfrada. |
-| **Lápis**, **Lápis de ponta fina**, **Lápis de sombreado**, **Carvão vegetal** | Marca mais larga quando você inclina a caneta. |
+| **Lápis**, **Lápis de ponta fina**, **Lápis de sombreado**, **Carvão vegetal**, **Giz**, **Bloco de pastel**, **Giz de cera** | A pressão e a inclinação alteram a forma e a cobertura da marca. Consulte [Mídias secas](/pt-BR/docs/brushes/dry-media/). |
 | **Aerógrafo** | Continua adicionando tinta enquanto você mantém a caneta parada. |
-| **Spray** | Espalha os carimbos em volta do traço. |
+| **Spray** | Espalha as marcas ao redor do traço. |
 | **Veladura multiplicada** | Pinta no modo Multiplicar. |
 
 ## Selecionar uma ferramenta de pincel
@@ -124,8 +125,8 @@ Nas camadas a seguir, um traço não pinta nada e um aviso informa o motivo:
 - Um grupo ou uma camada de seleção.
 - Uma camada de preenchimento sem máscara.
 - Uma camada com **Bloquear edição** ativado ou dentro de um grupo bloqueado.
-- Uma camada de filtro sem máscara, quando a camada abaixo dela está bloqueada ou não existe.
-- Uma camada redimensionada ou girada, até você escolher **Aplicar transformação aos pixels** ([Mover e Transformar](/pt-BR/docs/transform/move-transform/)).
+- Uma camada de filtro sem máscara quando a camada abaixo está bloqueada ou ausente.
+- Uma camada redimensionada ou girada, até você escolher **Aplicar transformação** ([Mover e transformar](/pt-BR/docs/transform/move-transform/)).
 
 Pincéis úmidos, de mistura e de aquarela pintam cobertura simples em uma máscara.
 O primeiro traço desse tipo em cada máscara mostra um aviso.

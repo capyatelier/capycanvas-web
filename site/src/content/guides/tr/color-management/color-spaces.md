@@ -19,15 +19,13 @@ ICC profilleri çalışma renk uzayı olamaz. Bunları
 
 ## Bit derinlikleri
 
-Bir çizimin bit derinliği **8 bit SDR**, **16 bit SDR**, **16 bit kayan noktalı
-HDR** veya **32 bit kayan noktalı HDR** olur. Kayan noktalı bir derinlik çizimi
+Bir çizimin bit derinliği **8 bit SDR**, **16 bit SDR**, **16 bit kayan noktalı HDR** veya **32 bit kayan noktalı HDR** olur. Kayan noktalı bir derinlik çizimi
 [HDR çizimi](/tr/docs/color-management/hdr/) yapar. HDR çizimi, 1,0 değerinin
 203 cd/m² düzeyindeki SDR beyazı olduğu doğrusal RGB olarak saklanır.
 
 ## Yeni çizim için seçme
 
-**Dosya > Yeni…** (**Ctrl+N**) komutunu seçin ve **Renk uzayı**, **Bit
-derinliği** ile **Karıştırma** ayarlarını yapın ya da bir **Hazır ayar** seçin:
+**Dosya > Yeni…** (**Ctrl+N**) komutunu seçin ve **Renk uzayı**, **Bit derinliği** ile **Karıştırma** ayarlarını yapın ya da bir **Hazır ayar** seçin:
 
 | Hazır ayar | Renk uzayı | Bit derinliği | Karıştırma |
 | --- | --- | --- | --- |
@@ -37,8 +35,7 @@ derinliği** ile **Karıştırma** ayarlarını yapın ya da bir **Hazır ayar**
 | **HDR çizimi** | sRGB | 16 bit kayan noktalı HDR | Doğrusal ışık |
 
 Kayan noktalı derinlikte **Karıştırma**, Doğrusal ışık olarak sabittir.
-Karıştırma dâhil seçimlerinizi yeni çizimlerin varsayılanı yapmak için **Bu
-ayarları yeni çizimler için kullan** seçeneğini açın.
+Karıştırma dâhil seçimlerinizi yeni çizimlerin varsayılanı yapmak için **Bu ayarları yeni çizimler için kullan** seçeneğini açın.
 
 ![Yeni çizim iletişim kutusu: Renk uzayı Display P3, Bit derinliği, Karıştırma ve özet satırı.](shot:color-management/new-dialog-color)
 
@@ -56,15 +53,14 @@ Tercihler'de Karıştırma ayarı yoktur.
 
 Çizimin RGB sayılarını koruyup başka bir çalışma renk uzayında yorumlamak için
 **Düzenle > Profil ata…** komutunu seçin. Renk uzayını **Renk uzayı** altında
-seçin; burada Adobe RGB (1998), **Adobe RGB** olarak listelenir. Fotoğraf
+seçin; burada Adobe RGB (1998), **Adobe RGB** olarak listelenir. Nesne
 katmanları [özgün fotoğraflarının](/tr/docs/layers/types/) kaynak profilini
 korur.
 
 ## Renk uzayını dönüştür
 
 Renklerin başka bir çalışma renk uzayında, o uzayın gamı içinde görünümlerini
-korumaları için RGB sayılarını değiştirmek üzere **Düzenle > Renk uzayını
-dönüştür…** komutunu seçin.
+korumaları için RGB sayılarını değiştirmek üzere **Düzenle > Renk uzayını dönüştür…** komutunu seçin.
 
 **Düzleştirilmiş kopyayı kaydet** seçiliyken **Uygula**, **Kopyayı kaydet…**
 olur. Kopyanın tek bir katmanı vardır; boyutu ve bit derinliği aynıdır. Dosya
@@ -84,8 +80,7 @@ yeni bir `.capy` dosyası olarak kaydeder ve açık çizimi değiştirmez.
 
 ### Renk dönüştürme amacı
 
-**Göreli kolorimetrik** (varsayılan), **Algısal**, **Doygunluk** veya **Mutlak
-kolorimetrik**. Siyah nokta telafisi her zaman kapalıdır.
+**Göreli kolorimetrik** (varsayılan), **Algısal**, **Doygunluk** veya **Mutlak kolorimetrik**. Siyah nokta telafisi her zaman kapalıdır.
 
 ## Bit derinliğini değiştir
 
@@ -120,8 +115,7 @@ uygulamak için:
 önizlemeyi atar. Herhangi bir renk kırpılırsa durum satırında “Bazı renkler
 hedef renk gamını aşıyor. Uygulamadan önce sonucu karşılaştırın.” yazar.
 
-Uygulama tek bir geri alma adımıdır. Geri al ve Yinele, **Renk değişikliğini
-geri al** ve **Renk değişikliğini yinele** iletişim kutularını açar. Bu
+Uygulama tek bir geri alma adımıdır. Geri al ve Yinele, **Renk değişikliğini geri al** ve **Renk değişikliğini yinele** iletişim kutularını açar. Bu
 iletişim kutuları değişikliği başka bir giriş beklemeden uygular ve yalnızca
 **İptal** seçeneğini sunar.
 
@@ -152,7 +146,6 @@ derinlikte açılan fotoğraflar ve Karıştırma ayarı eklenmeden önce kayded
 ## Belge özellikleri
 
 Çizimin **Tuval boyutu**, **Çalışma renk uzayı**, **Bit derinliği**,
-**Karıştırma** ve **Çözünürlük üst verileri** bilgilerini görmek için **Dosya >
-Belge özellikleri…** komutunu seçin. HDR çizimlerde **HDR referans beyazı** da
+**Karıştırma** ve **Çözünürlük üst verileri** bilgilerini görmek için **Dosya > Belge özellikleri…** komutunu seçin. HDR çizimlerde **HDR referans beyazı** da
 gösterilir. Çizimdeki her özgün fotoğraf, kaynak profilini gösteren bir satır
 ekler. Bu iletişim kutusunda hiçbir şeyi değiştiremezsiniz.

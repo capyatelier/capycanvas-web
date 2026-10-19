@@ -20,13 +20,11 @@ Lakukan salah satu langkah berikut:
 - Tekan **Ctrl+O**.
 - Di Lukis dan Foto, pilih **Buka…** di bilah alat Perintah.
 - Di editor web atau di Linux, seret berkas ke nama gambar atau ke tab di bilah judul.
-- Jika Anda memasang editor web sebagai aplikasi, buka berkas `.capy`, `.png`, `.jpg`, `.tif`, `.avif`, atau `.exr` dengan {appName} dari sistem Anda.
+- Jika Anda memasang editor web sebagai aplikasi, buka file yang didukung dengan {appName} dari sistem Anda.
 
 ## Foto
 
-Foto terbuka sebagai gambar baru dengan lapisan foto, yang diberi nama sesuai berkasnya,
-di atas lapisan **Kertas**. Foto mempertahankan profil warnanya dan, secara bawaan,
-kedalaman bitnya. Menyimpan gambar membuat berkas `.capy` dan tidak pernah menimpa foto.
+Foto terbuka sebagai gambar baru dengan lapisan Objek bernama sesuai file. Objek mempertahankan ukuran, profil warna, dan secara bawaan kedalaman bit gambar itu sendiri. Menyimpan gambar membuat file `.capy` dan tidak pernah menimpa gambar sumber.
 
 - GIF atau WebP animasi hanya membuka bingkai pertamanya.
 - Foto dapat berukuran hingga 32768 piksel di setiap sisi.
@@ -47,9 +45,7 @@ Lakukan salah satu langkah berikut:
 - Tekan **Ctrl+Shift+O**.
 - Seret gambar ke kanvas, atau ke salah satu baris panel **Lapisan**.
 
-Setiap gambar menjadi lapisan yang diberi nama sesuai berkasnya, di atas lapisan yang
-dipilih, dengan [gagang transformasi](/id/docs/transform/move-transform/) untuk
-menempatkannya. Gambar yang lebih besar dari kanvas diperkecil agar muat.
+Setiap gambar menjadi [lapisan Objek](/id/docs/layers/types/) bernama sesuai file, di atas lapisan terpilih, dengan [handel transformasi](/id/docs/transform/move-transform/) untuk menempatkannya. Gambar yang lebih besar dari kanvas diperkecil agar muat.
 
 Anda tidak dapat mengimpor berkas `.capy`. Di editor web, ukuran gambar maksimal 512 MiB.
 
@@ -79,16 +75,11 @@ berkas di disk berubah sejak Anda membuka atau menyimpannya.
 
 ## Isi berkas .capy
 
-Berkas `.capy` menyimpan setiap lapisan beserta mask dan pengaturannya, filter, seleksi
-dan garis bantu yang disimpan, ruang warna, kedalaman bit, dan pembauran, serta data
-EXIF, XMP, dan IPTC foto. Berkas ini tidak menyimpan riwayat urungkan, tampilan, atau
-seleksi yang sedang aktif.
+File `.capy` menyimpan setiap lapisan dengan mask dan pengaturannya, gambar sumber Objek yang disematkan dan tekstur Kertas impor, filter, seleksi dan panduan tersimpan, ruang warna, kedalaman bit dan pencampuran, serta data EXIF, XMP, dan IPTC foto. File ini tidak menyimpan riwayat urung, tampilan, atau seleksi aktif.
 
 ## Gambar hanya-lihat
 
-Berkas `.capy` yang tidak dapat diedit oleh {appName}, misalnya berkas yang rusak,
-terbuka di dialog, bukan di tab. **Copy Original File…** menyimpan salinan berkas, dan
-**Export Preview Image…** menyimpan pratinjau gambar sebagai PNG.
+File `.capy` yang tidak dapat disunting {appName}, termasuk file berformat lebih baru yang tidak didukung atau file rusak, terbuka dalam dialog, bukan tab. **Copy Original File…** menyimpan salinan file, dan **Export Preview Image…** menyimpan pratinjau gambar sebagai PNG.
 
 ## Tab gambar
 

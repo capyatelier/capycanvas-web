@@ -11,24 +11,19 @@ ouvrez-le depuis **Menu principal** dans la barre de titre.
 
 ## Ouvrir un dessin ou une photo
 
-Vous pouvez ouvrir des dessins `.capy` et des photos aux formats OpenEXR, TIFF,
-PNG, WebP, BMP, JPEG, GIF, HEIF et AVIF. Chaque fichier s’ouvre dans son propre
-onglet.
+Vous pouvez ouvrir les dessins `.capy` et les photos aux formats OpenEXR, TIFF, PNG, WebP, BMP, JPEG, GIF, HEIF et AVIF. Chaque fichier s’ouvre dans son propre onglet.
 
 Effectuez l’une des opérations suivantes :
 
 - Choisissez **Fichier > Ouvrir…**. Vous pouvez choisir plusieurs fichiers, sauf sous Linux.
 - Appuyez sur **Ctrl+O**.
-- Dans Peinture et Photo, sélectionnez **Ouvrir…** dans la barre d’outils Commandes.
-- Dans l’éditeur web ou sous Linux, faites glisser des fichiers sur le nom du dessin ou sur les onglets de la barre de titre.
-- Si vous avez installé l’éditeur web comme application, ouvrez un fichier `.capy`, `.png`, `.jpg`, `.tif`, `.avif` ou `.exr` avec {appName} depuis votre système.
+- Dans Peinture et Photo, sélectionnez **Ouvrir…** dans la barre Commandes.
+- Dans l’éditeur web ou sous Linux, faites glisser les fichiers sur le nom du dessin ou les onglets de la barre de titre.
+- Si vous avez installé l’éditeur web comme application, ouvrez un fichier pris en charge avec {appName} depuis votre système.
 
 ## Photos
 
-Une photo s’ouvre comme un nouveau dessin, avec un calque photo qui porte le nom
-du fichier, au-dessus d’un calque **Papier**. La photo conserve son profil
-colorimétrique et, par défaut, sa profondeur de couleur. L’enregistrement du dessin crée
-un fichier `.capy` et n’écrase jamais la photo.
+Une photo s’ouvre comme nouveau dessin avec un calque Objet nommé d’après le fichier. L’Objet conserve la taille, le profil colorimétrique et, par défaut, la profondeur de couleur de l’image. Enregistrer le dessin crée un fichier `.capy` et n’écrase jamais l’image source.
 
 - Un GIF ou un WebP animé ouvre sa première image.
 - Une photo peut mesurer jusqu’à 32 768 pixels de côté.
@@ -41,7 +36,7 @@ boîte de dialogue **Choisir l’interprétation de l’image**.
 
 ## Importer des images comme calques
 
-Vous pouvez ajouter des images au dessin en cours sous forme de nouveaux calques.
+Vous pouvez ajouter des images à un dessin comme nouveaux calques.
 
 Effectuez l’une des opérations suivantes :
 
@@ -49,9 +44,7 @@ Effectuez l’une des opérations suivantes :
 - Appuyez sur **Ctrl+Maj+O**.
 - Faites glisser des images sur la toile, ou sur une ligne du panneau **Calques**.
 
-Chaque image devient un calque qui porte le nom du fichier, au-dessus du calque
-sélectionné, avec des [poignées de transformation](/fr/docs/transform/move-transform/)
-pour la placer. Une image plus grande que la toile est réduite pour y tenir.
+Chaque image devient un [calque Objet](/fr/docs/layers/types/) nommé d’après le fichier, au-dessus du calque sélectionné, avec des [poignées de transformation](/fr/docs/transform/move-transform/) pour la placer. Une image plus grande que la toile est réduite pour y tenir.
 
 Vous ne pouvez pas importer un fichier `.capy`. Dans l’éditeur web, une image peut
 peser jusqu’à 512 Mio.
@@ -66,9 +59,7 @@ Effectuez l’une des opérations suivantes :
 - Appuyez sur **Ctrl+S**.
 - Dans Peinture et Photo, sélectionnez **Enregistrer** dans la barre d’outils Commandes.
 
-Le premier enregistrement demande un emplacement, et les suivants écrivent dans le
-même fichier. Après l’enregistrement, l’onglet affiche le nom du fichier sans le
-signe ●.
+Le premier enregistrement demande un emplacement ; les suivants utilisent le même fichier. L’onglet enregistré affiche le nom du fichier sans la marque ●.
 
 Dans Firefox et Safari, le dessin n’est considéré comme enregistré qu’une fois que vous avez
 sélectionné **Télécharger**, puis **Fichier enregistré** dans la boîte de dialogue
@@ -85,18 +76,11 @@ que vous l’avez ouvert ou enregistré.
 
 ## Ce que conserve un fichier .capy
 
-Un fichier `.capy` conserve chaque calque avec son masque et ses réglages, les
-filtres, les sélections et les repères enregistrés, l’espace colorimétrique, la
-profondeur de couleur et la fusion, ainsi que les données EXIF, XMP et IPTC d’une
-photo. Il ne conserve pas l’historique d’annulation, la vue ni la sélection
-active.
+Un fichier `.capy` conserve chaque calque avec son masque et ses réglages, les images sources Objet intégrées et les textures de Papier importées, les filtres, les sélections enregistrées et les guides, l’espace colorimétrique, la profondeur de couleur et la fusion, ainsi que les données EXIF, XMP et IPTC d’une photo. Il ne conserve pas l’historique des annulations, la vue ni la sélection active.
 
 ## Dessins en lecture seule
 
-Un fichier `.capy` que {appName} ne peut pas modifier, comme un fichier
-endommagé, s’ouvre dans une boîte de dialogue au lieu d’un onglet.
-**Copy Original File…** enregistre une copie du fichier, et **Export Preview Image…**
-enregistre l’aperçu du dessin au format PNG.
+Un fichier `.capy` que {appName} ne peut pas modifier, notamment un fichier d’un format plus récent non pris en charge ou un fichier endommagé, s’ouvre dans une boîte de dialogue plutôt que dans un onglet. **Copy Original File…** enregistre une copie du fichier et **Export Preview Image…** enregistre l’aperçu du dessin au format PNG.
 
 ## Onglets des dessins
 
@@ -120,8 +104,7 @@ Un ● devant un nom signale des modifications non enregistrées. Quand la barre
 titre est étroite, les onglets deviennent un seul bouton qui ouvre la liste
 Dessins.
 
-Chaque onglet conserve son propre historique d’annulation, sa vue et sa
-sélection. Les onglets ne font pas partie d’un espace de travail.
+Chaque onglet conserve son historique des annulations, sa vue et sa sélection. Les onglets ne font pas partie d’un espace de travail.
 
 ## Dessins…
 

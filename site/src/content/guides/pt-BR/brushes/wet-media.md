@@ -7,7 +7,7 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 Você pode definir como os pincéis úmidos e de mistura lidam com a tinta no painel
 **Ferramenta**. Cada grupo aparece só nos pincéis citados na seção correspondente.
 
-![O painel Ferramenta da Aquarela molhada, com os grupos Mistura, Aquarela e Espalhamento e os botões de mistura de cores.](shot:brushes/wet-media-settings)
+![O painel Ferramenta da Aquarela molhada com Mistura de cores e os grupos Mistura, Aquarela e Espalhamento.](shot:brushes/wet-media-settings)
 
 ## Mistura
 
@@ -72,9 +72,9 @@ Você pode escolher como um pincel de mistura combina as cores que capta.
 
 Faça uma das seguintes ações:
 
-- Selecione **Mistura Oklab**, **Mistura em luz linear** ou **Mistura clássica** na parte de baixo do painel **Ferramenta**.
-- Escolha uma opção em **Mistura de cores** na barra Opções da ferramenta ([Tamanho, opacidade e fluxo](/pt-BR/docs/brushes/basics/)).
-- Busque o nome da opção na busca de comandos.
+- Escolha **Mistura Oklab**, **Mistura em luz linear** ou **Mistura clássica** em **Mistura de cores** no painel **Ferramenta**.
+- Abra **Mais opções da ferramenta** na barra Opções da ferramenta e escolha **Mistura de cores** na gaveta Ferramenta ([Tamanho, intensidade e opacidade](/pt-BR/docs/brushes/basics/)).
+- Pesquise o nome da opção na busca de comandos.
 
 | Opção | Mistura |
 | --- | --- |
@@ -86,7 +86,7 @@ Todo pincel de mistura integrado começa em **Mistura Oklab**. A opção é salv
 o pincel, e a configuração **Mesclagem** do desenho não a altera. Para um pincel
 que não mistura, as opções ficam indisponíveis.
 
-![O menu Mistura de cores aberto na barra Opções da ferramenta para Óleo carregado.](shot:brushes/color-mixing-menu)
+![Mistura de cores na gaveta Ferramenta.](shot:brushes/color-mixing-menu)
 
 ## Cerdas
 

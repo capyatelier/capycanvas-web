@@ -10,19 +10,19 @@ related: ["files/new", "files/export", "transform/move-transform", "start/undo"]
 
 ## 打开画作或照片
 
-可以打开 `.capy` 画作，以及 OpenEXR、TIFF、PNG、WebP、BMP、JPEG、GIF、HEIF 和 AVIF 格式的照片。每个文件在单独的标签页中打开。
+可以打开 `.capy` 画作，以及 OpenEXR、TIFF、PNG、WebP、BMP、JPEG、GIF、HEIF 和 AVIF 格式的照片。每个文件在自己的标签页中打开。
 
 执行以下任一操作：
 
-- 选择**文件 > 打开…**。除 Linux 外，可以一次选择多个文件。
+- 选择 **文件 > 打开…**。除 Linux 外，可以选择多个文件。
 - 按 **Ctrl+O**。
-- 在“绘画”和“照片”中，选择“命令”工具栏中的**打开…**。
-- 在网页版编辑器或 Linux 上，将文件拖到标题栏中的画作名称或标签页上。
-- 如果已将网页版编辑器安装为应用，可以在系统中用 {appName} 打开 `.capy`、`.png`、`.jpg`、`.tif`、`.avif` 或 `.exr` 文件。
+- 在“绘画”和“照片”中，选择命令工具栏中的 **打开…**。
+- 在网页编辑器或 Linux 上，将文件拖到标题栏中的画作名称或标签页上。
+- 如果已将网页编辑器安装为应用，可从系统中使用 {appName} 打开受支持的文件。
 
 ## 照片
 
-照片会作为新画作打开，其中有一个以文件名命名的照片图层，位于**纸张**图层上方。照片保留其色彩配置文件，默认也保留其位深度。保存画作会生成 `.capy` 文件，不会覆盖照片。
+照片会作为新画作打开，其中包含以文件名命名的对象图层。对象保留图像自身的尺寸、颜色配置文件和默认位深度。保存画作会创建 `.capy` 文件，不会覆盖源图像。
 
 - 动态 GIF 或 WebP 只打开第一帧。
 - 照片每边最多 32768 像素。
@@ -33,7 +33,7 @@ related: ["files/new", "files/export", "transform/move-transform", "start/undo"]
 
 ## 将图像导入为图层
 
-可以将图像作为新图层添加到当前画作中。
+可以将图像作为新图层添加到画作。
 
 执行以下任一操作：
 
@@ -41,7 +41,7 @@ related: ["files/new", "files/export", "transform/move-transform", "start/undo"]
 - 按 **Ctrl+Shift+O**。
 - 将图像拖到画布上，或拖到**图层**面板中的某一行上。
 
-每张图像都会成为一个以文件名命名的图层，位于所选图层上方，并带有用于放置图像的[变换控制点](/zh/docs/transform/move-transform/)。比画布大的图像会缩小到画布内。
+每张图像都会在所选图层上方成为以文件名命名的[对象图层](/zh/docs/layers/types/)，并显示用于放置的[变换手柄](/zh/docs/transform/move-transform/)。大于画布的图像会缩小以适应画布。
 
 不能导入 `.capy` 文件。在网页版编辑器中，图像最大为 512 MiB。
 
@@ -55,7 +55,7 @@ related: ["files/new", "files/export", "transform/move-transform", "start/undo"]
 - 按 **Ctrl+S**。
 - 在“绘画”和“照片”中，选择“命令”工具栏中的**保存**。
 
-首次保存时会询问保存位置，之后的保存都写入同一个文件。保存后，标签页上的文件名前不再有 ● 标记。
+首次保存会询问位置，之后保存使用同一文件。已保存的标签页显示文件名，不带 ● 标记。
 
 在 Firefox 和 Safari 中，只有在**下载文件**对话框中选择**下载**，再选择**文件已保存**之后，画作才算已保存。
 
@@ -67,11 +67,11 @@ related: ["files/new", "files/export", "transform/move-transform", "start/undo"]
 
 ## .capy 文件保存的内容
 
-`.capy` 文件保存每个图层及其蒙版和设置、滤镜、已存储的选区和辅助线、色彩空间、位深度和颜色混合方式，以及照片的 EXIF、XMP 和 IPTC 数据。它不保存撤销历史记录、视图和当前选区。
+`.capy` 文件保留每个图层及其蒙版和设置、嵌入的对象源图像和导入的纸张纹理、滤镜、已保存的选区和参考线、色彩空间、位深度和颜色混合，以及照片的 EXIF、XMP 和 IPTC 数据。它不保留撤销历史、视图或当前选区。
 
 ## 只读画作
 
-{appName} 无法编辑的 `.capy` 文件（例如已损坏的文件）会在对话框中打开，而不是在标签页中打开。**Copy Original File…** 用于保存文件的副本，**Export Preview Image…** 用于将画作的预览图保存为 PNG。
+{appName} 无法编辑的 `.capy` 文件（包括不受支持的新格式文件或损坏的文件）会在对话框中打开，而非标签页。**Copy Original File…** 保存文件副本，**Export Preview Image…** 将画作预览保存为 PNG。
 
 ## 画作标签页
 
@@ -91,7 +91,7 @@ related: ["files/new", "files/export", "transform/move-transform", "start/undo"]
 
 名称前的 ● 表示有未保存的更改。标题栏较窄时，所有标签页会合并为一个按钮，用于打开“绘画”列表。
 
-每个标签页都有自己的撤销历史记录、视图和选区。标签页不属于工作区。
+每个标签页保留自己的撤销历史、视图和选区。标签页不属于工作区。
 
 ## 绘画…
 

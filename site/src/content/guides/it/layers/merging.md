@@ -9,10 +9,7 @@ trovano verso la fine del menu **Livello** e del menu di ogni livello.
 
 ![Il menu Livello con Ribbon attivo, con Unisci livelli ritagliati, Unisci visibili, Crea livello dai visibili e Appiattisci immagine.](shot:layers/merging-menu)
 
-Ogni unione è un singolo passaggio di annullamento. Un
-[livello fotografico](/it/docs/layers/types/) perde la foto originale quando lo
-unisci. Non puoi unire livelli mentre modifichi un livello di selezione o la
-Maschera veloce, né durante una trasformazione.
+Ogni unione è un passaggio di annullamento. Un [livello Oggetto](/it/docs/layers/types/) viene rasterizzato quando lo unisci. Non puoi unire mentre modifichi un livello di selezione o la Maschera veloce, né durante una trasformazione.
 
 ## Unisci sotto
 
@@ -65,13 +62,9 @@ selezione.
 
 ## Unisci visibili
 
-Scegli **Livello > Unisci visibili** per unire tutti i livelli visibili,
-compreso il livello **Carta**, in un solo livello. I livelli nascosti restano come sono.
+Scegli **Livello > Unisci visibili** per unire i livelli ordinari visibili. La Carta rimane il livello Carta in fondo. I livelli nascosti restano come sono.
 
-Il livello unito prende il nome e la posizione del livello visibile più in basso
-(**Carta**, se è visibile). I livelli nascosti che erano ritagliati su un
-livello unito vengono sganciati. I livelli visibili devono essere non bloccati,
-e i gruppi tra di essi non possono contenere livelli di selezione.
+Il livello unito prende il nome e la posizione del livello unito più in basso. I livelli nascosti che erano ritagliati su un livello unito vengono sganciati. I livelli visibili devono essere non bloccati e i gruppi tra di essi non possono contenere livelli di selezione.
 
 ## Crea livello dai visibili
 
@@ -84,10 +77,7 @@ I livelli bloccati non impediscono **Crea livello dai visibili**.
 
 ## Appiattisci immagine
 
-Scegli **Livello > Appiattisci immagine** per unire tutti i livelli visibili in
-un solo livello. I livelli nascosti e i pixel fuori dalla tela vengono scartati,
-ma i livelli di selezione fuori dai gruppi restano. I livelli visibili devono
-essere non bloccati.
+Scegli **Livello > Appiattisci immagine** per unire i livelli ordinari visibili. La Carta rimane Carta in fondo. I livelli nascosti e i pixel fuori dalla tela vengono scartati, ma i livelli di selezione fuori dai gruppi restano. I livelli visibili devono essere non bloccati.
 
 ![L'avviso sopra la tela con la scritta «L'appiattimento scarta 2 livelli nascosti» e un pulsante Appiattisci immagine.](shot:layers/merging-flatten-notice)
 

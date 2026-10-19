@@ -1,7 +1,7 @@
 ---
 title: "Preferensi"
-description: "Dialog Preferensi dan pengaturan di halaman Tampilan, Kanvas, Warna, dan Tentang."
-related: ["input/pen", "input/keyboard", "customize/zen", "color-management/color-spaces"]
+description: "Dialog Preferensi dan pengaturan di halaman Tampilan, Kanvas, Masukan, Warna, dan Tentang."
+related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
 Anda dapat mengubah pengaturan untuk seluruh aplikasi di dialog **Preferensi**. Setiap
@@ -18,8 +18,7 @@ Lakukan salah satu langkah berikut:
 - Di Lukis dan Foto, pilih tombol roda gigi di ujung kanan bilah judul.
 - Ketik "Preferensi" di [pencarian perintah](/id/docs/start/command-search/).
 
-Preferensi terbuka di halaman **Tampilan**. **Bantuan > Pintasan Papan Ketik** membukanya
-di **Pintasan Papan Ketik**, dan **Bantuan > Tentang {appName}** di **Tentang**.
+Preferensi terbuka pada **Tampilan**. Pilih **Edit > Pintasan Papan Ketik** untuk pintasan keyboard, atau **Tentang {appName}** dari menu aplikasi untuk Tentang.
 
 Selama Preferensi terbuka, pintasan kanvas, tombol pena, dan ketukan jari tidak
 melakukan apa pun.
@@ -86,17 +85,22 @@ Windows, macOS, dan Android, dan tidak tersedia di web atau iPad. Pilihan lainny
 Mempertahankan tombol Capy di layar dalam [Mode Zen](/id/docs/customize/zen/). Aktif
 secara bawaan.
 
-### Tampilkan panel dekat tepi layar
-
-Menampilkan kontrol yang tersembunyi dalam Mode Zen selama penunjuk berada di dekat tepi
-layar yang memiliki kontrol tersembunyi. Nonaktif secara bawaan.
-
 ### Ikon tombol
 
 Mengatur gambar tombol Capy: **Menengadah** (bawaan), **Menghadap depan**, **Mandi**,
 atau **Tidur**.
 
 ## Kanvas
+
+![Pengaturan navigasi kanvas.](shot:preferences/canvas-navigation)
+
+### Roda mouse
+
+Pilih apakah roda mouse tanpa tombol pengubah menggeser atau menzum kanvas. Menahan **Ctrl** menggunakan tindakan lainnya.
+
+### Putar dengan dua jari
+
+Memungkinkan putaran dua jari memutar tampilan. Matikan untuk membatasi gerakan dua jari ke geser dan zum.
 
 ### Kecepatan geser saat menggulir
 

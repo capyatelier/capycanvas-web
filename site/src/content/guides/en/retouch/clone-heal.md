@@ -24,8 +24,8 @@ Do one of the following:
 
 **Healing Brush** and **Spot Healing Brush** have no button in Paint.
 
-Each tool is a brush, with **Brush size**, **Opacity**, **Flow** and the
-**Tip** settings in the Tool panel (see [Size, opacity and flow](/docs/brushes/basics/)).
+Each tool is a brush, with **Brush size**, **Opacity**, **Strength** and the
+**Tip** settings in the Tool panel (see [Size, strength and opacity](/docs/brushes/basics/)).
 
 ![The Tool panel for Clone Stamp, with the brush settings and the source settings.](shot:retouch/clone-tool-panel)
 

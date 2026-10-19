@@ -26,9 +26,7 @@ Führen Sie eine der folgenden Aktionen aus:
 **Reparaturpinsel** und **Bereichsreparaturpinsel** haben im Arbeitsbereich
 Malen keine Schaltfläche.
 
-Jedes Werkzeug ist ein Pinsel, mit **Pinselgröße**, **Deckkraft**, **Fluss** und
-den Einstellungen unter **Spitze** im Bedienfeld Werkzeug (siehe
-[Größe, Deckkraft und Fluss](/de/docs/brushes/basics/)).
+Jedes Werkzeug ist ein Pinsel mit **Pinselgröße**, **Deckkraft**, **Stärke** und den **Spitze**-Einstellungen im Werkzeug-Bedienfeld (siehe [Größe, Stärke und Deckkraft](/de/docs/brushes/basics/)).
 
 ![Das Bedienfeld Werkzeug für den Klonstempel mit den Pinseleinstellungen und den Quelleinstellungen.](shot:retouch/clone-tool-panel)
 

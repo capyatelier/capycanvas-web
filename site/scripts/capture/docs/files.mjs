@@ -1,4 +1,5 @@
 const dialog = 'dialog.document-dialog[open]';
+const newDialog = '#new-drawing-dialog[open]';
 const button = label => `[...document.querySelectorAll('dialog[open] button')].find(b=>b.textContent===${JSON.stringify(label)})`;
 const thumbnailsCurrent = `(()=>{const state=layerApp.state(),epoch=String(state.document_file.epoch),list=document.querySelector('#layer-rows').getBoundingClientRect();
   return state.layers.every(layer=>{const row=document.querySelector('#layer-rows .layer-row[data-layer="'+layer.id+'"]');if(!row)return true;const box=row.getBoundingClientRect();
@@ -24,14 +25,33 @@ export default async function files({ e, b, shoot, example }) {
   };
   const openNew = async () => {
     await e.invoke('new_document');
-    await e.wait(`!!document.querySelector('${dialog} [data-document-field=width]')`);
+    await e.wait(`!!document.querySelector('${newDialog} #new-drawing-width input') && !!layerApp.state().new_drawing`);
     await b.settle();
+  };
+  const cancelNew = async () => {
+    const drawer = await e.read('layerApp.state().new_drawing?.drawer?.kind??null');
+    if (drawer) {
+      await e.click({ presets: '#new-drawing-browser-cancel', paper: '#new-drawing-paper-cancel', paper_color: '#new-drawing-color-cancel' }[drawer]);
+      await e.wait('!layerApp.state().new_drawing?.drawer');
+    }
+    await e.click('#new-drawing-cancel');
+    await e.wait(`!document.querySelector('${newDialog}') && !layerApp.state().new_drawing`);
   };
   const create = async (fields = {}) => {
     const count = await e.read('layerApp.app.document_tabs(0).tabs.length');
     await openNew();
-    await b.evaluate(`(()=>{for(const [id,value] of ${JSON.stringify(Object.entries(fields))}){const field=document.querySelector('${dialog} [data-document-field="'+id+'"]');field.value=value;field.dispatchEvent(new Event('change',{bubbles:true}));}})()`);
-    await e.click(`${dialog} [data-document-action=create]`);
+    for (const [key, value] of Object.entries(fields)) {
+      if (['width', 'height', 'resolution'].includes(key)) {
+        const selector = key === 'resolution' ? '#new-drawing-resolution-field input' : `#new-drawing-${key} input`;
+        await b.evaluate(`(()=>{const n=document.querySelector(${JSON.stringify(selector)});n.focus();n.value=String(${JSON.stringify(value)});n.dispatchEvent(new Event('input',{bubbles:true}));n.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',bubbles:true}));})()`);
+      } else {
+        const choices = { depth: 'depths', space: 'spaces', unit: 'units' }[key];
+        if (!choices) throw Error(`Unsupported New drawing field: ${key}`);
+        await b.evaluate(`(()=>{const index=layerApp.state().new_drawing.${choices}.findIndex(choice=>choice.value===${JSON.stringify(value)});if(index<0)throw Error('Missing ${key} choice');const n=document.querySelector('#new-drawing-${key}');n.value=String(index);n.dispatchEvent(new Event('change',{bubbles:true}));})()`);
+      }
+      await b.settle();
+    }
+    await e.click('#new-drawing-create');
     await e.wait(`layerApp.app.document_tabs(0).tabs.length===${count + 1} && !layerApp.documents.busy() && !layerApp.state().document_file.busy && !document.querySelector('dialog[open]')`);
     await e.wait('layerApp.app.brush_ready() && layerApp.app.document_park_ready()');
     await e.invoke('fit_canvas');
@@ -48,9 +68,30 @@ export default async function files({ e, b, shoot, example }) {
   await e.load('04-finished.capy');
 
   await shoot('files/new-dialog', {
-    target: dialog,
+    target: newDialog,
     setup: openNew,
-    teardown: cancel,
+    teardown: cancelNew,
+  });
+  const drawer = async (button, kind, selector) => {
+    await openNew();
+    await e.click(button);
+    await e.wait(`layerApp.state().new_drawing?.drawer?.kind===${JSON.stringify(kind)} && document.querySelector(${JSON.stringify(selector)})?.checkVisibility()`);
+    await b.settle();
+  };
+  await shoot('files/new-presets', {
+    target: newDialog,
+    setup: () => drawer('#new-drawing-presets-button', 'presets', '#new-drawing-presets [data-new-drawing-preset]'),
+    teardown: cancelNew,
+  });
+  await shoot('files/new-paper', {
+    target: newDialog,
+    setup: () => drawer('#new-drawing-texture', 'paper', '#new-drawing-papers .texture-tile'),
+    teardown: cancelNew,
+  });
+  await shoot('files/new-paper-color', {
+    target: newDialog,
+    setup: () => drawer('#new-drawing-paper-color', 'paper_color', '#new-drawing-color-drawer .color-editor-body'),
+    teardown: cancelNew,
   });
 
   await create();
@@ -92,7 +133,7 @@ export default async function files({ e, b, shoot, example }) {
     teardown: cancel,
   });
 
-  await create({ depth: 'F16' });
+  await create({ depth: 'F16', unit: 'px', width: 2048, height: 1536 });
   await e.closeOtherDrawings();
   await e.invoke('pen');
   await e.brush(1, 60, '#2a9d8f');

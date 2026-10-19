@@ -98,8 +98,7 @@ Mengatur titik yang dipilih ke warna saat ini.
 
 ## Opasitas
 
-**Opasitas** mengatur kekuatan gradasi dan memakai nilai yang sama dengan **Opasitas**
-kuas saat ini. Di Sketsa, gunakan penggeser opasitas di tepi kiri.
+**Opasitas** mengatur kekuatan gradien dan merupakan nilai yang sama dengan **Opasitas** kuas saat ini. Di Sketsa, gunakan **Penggeser kekuatan** di tepi kiri.
 
 ## Lapisan Isian Gradasi
 

@@ -11,10 +11,10 @@ prélèvement, l’outil que vous utilisiez revient.
 
 Effectuez l’une des opérations suivantes :
 
-- Appuyez sur **I** (**O** avec les raccourcis Style GIMP).
+- Appuyez sur **I** (**O** dans la disposition Style GIMP).
 - Choisissez **Pipette** dans la recherche de commandes.
-- Dans Peinture et Photo, sélectionnez **Pipette** dans la barre d’outils Outils.
-- Dans Croquis, sélectionnez **Pipette** dans la barre du bord gauche, entre les curseurs de taille et d’opacité.
+- Dans Peinture et Photo, sélectionnez **Pipette** dans la barre Outils.
+- Dans Croquis, sélectionnez **Pipette** sur la barre du bord gauche, entre **Curseur de taille du pinceau** et **Curseur d’intensité**.
 
 Pour arrêter sans prélever, appuyez sur **I** ou sélectionnez de nouveau le même
 bouton, appuyez sur **Échap**, ou choisissez un autre outil ou un autre pinceau.
@@ -31,7 +31,7 @@ Couleur. La couleur de peinture ne change qu’au moment du prélèvement.
 | Stylet | Survol, ou appui du stylet | Lever le stylet |
 | Doigt | Toucher | Lever le doigt |
 
-Avec un doigt, le point d’échantillonnage se trouve au-dessus du bout du doigt.
+Avec un doigt, la loupe apparaît au-dessus du bout du doigt tandis que le point de prélèvement reste sous le bout du doigt.
 
 Les pixels transparents ne prélèvent rien, et les couleurs prélevées sont
 toujours opaques. Les prélèvements se font dans l’espace colorimétrique du
@@ -70,6 +70,8 @@ haut de la fenêtre dans Photo). Les deux choix s’intitulent **Pipette** :
 - Le second affiche un curseur en forme de pipette, dont la pointe est sur le point échantillonné.
 
 ![La loupe de la Pipette au-dessus d’un trait rouge, avec la couleur échantillonnée et la couleur active dans son anneau.](shot:color/eyedropper-loupe)
+
+![La loupe du Sélecteur de couleur au-dessus d’un doigt, avec le point de prélèvement sous le contact.](shot:color/eyedropper-touch)
 
 Le toucher utilise toujours la loupe. Sélectionner **Pipette** dans Croquis règle
 **Style** sur la loupe. Une petite marque de calques apparaît quand **Source** est

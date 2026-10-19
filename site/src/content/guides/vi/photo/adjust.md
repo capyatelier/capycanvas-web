@@ -26,25 +26,23 @@ Chọn **Bộ lọc > Màu > Độ rực màu**, rồi đặt **Độ rực màu
 **Thuộc tính** ([Bộ lọc màu](/vi/docs/filters/color/)). Lớp **Độ rực màu** xuất
 hiện phía trên **Đường cong**.
 
-## 3. Chọn hòn đá
+## 3. Thêm Vùng tối/Vùng sáng
 
-1. Nhấn **M**, hoặc chọn **Chọn tự do** trên Thanh công cụ vẽ, rồi vẽ quanh hòn đá.
-2. Chọn **Chọn > Làm mềm biên vùng chọn…**, hoặc chọn **Tinh chỉnh** trên thanh vùng chọn rồi chọn **Làm mềm biên…** ([Làm việc với vùng chọn](/vi/docs/selections/working/)).
-3. Đặt **Feather radius** là 20 px rồi chọn **Áp dụng**.
+Chọn **Bộ lọc > Sắc độ > Vùng tối/Vùng sáng**. Đặt **Vùng tối** thành 35% trong bảng **Thuộc tính**. Lớp **Vùng tối/Vùng sáng** xuất hiện trên **Độ rực màu** và vẫn được chọn.
 
-## 4. Nâng sáng vùng tối trên hòn đá
+## 4. Giới hạn điều chỉnh vào tảng đá bằng mặt nạ
 
 Nâng sáng vùng tối của toàn bộ ảnh sẽ làm nền đen chuyển sang xám. Trong ví dụ, chỉ
 vùng tối trên hòn đá được nâng sáng.
 
-Chọn **Điều chỉnh** trên thanh vùng chọn rồi chọn
-**Sắc độ > Vùng tối/Vùng sáng**. Đặt **Vùng tối** là 35% trong bảng
-**Thuộc tính**.
+1. Nhấn **M**, hoặc chọn **Chọn tự do** trên Thanh công cụ vẽ, rồi vẽ quanh hòn đá.
+2. Chọn **Chọn > Làm mềm biên vùng chọn…**, hoặc chọn **Tinh chỉnh** trên thanh vùng chọn rồi chọn **Làm mềm biên…** ([Làm việc với vùng chọn](/vi/docs/selections/working/)).
+3. Đặt **Bán kính làm mềm biên** là 20 px rồi chọn **Áp dụng**.
+4. Chọn **Mặt nạ** trên thanh vùng chọn.
 
-![Thanh vùng chọn với trình đơn Điều chỉnh đang mở ở danh mục Sắc độ, bên cạnh vùng chọn quanh hòn đá.](shot:photo/adjust-bar)
+![Thanh vùng chọn với Mặt nạ bên cạnh vùng chọn quanh tảng đá.](shot:photo/adjust-bar)
 
-Vùng chọn trở thành mặt nạ của lớp **Vùng tối/Vùng sáng** mới. Chỉ hòn đá thay
-đổi.
+Vùng chọn trở thành mặt nạ của lớp **Vùng tối/Vùng sáng**. Chỉ tảng đá thay đổi.
 
 ## 5. Lưu bản vẽ
 

@@ -12,14 +12,13 @@ Bu aşamada açılmış ve 5:4 oranında bir çerçeveye kırpılmış fotoğraf
 seçin ([Açma ve kaydetme](/tr/docs/files/open-save/)). Fotoğraf kendi çizim
 sekmesinde açılır.
 
-![Gizli bir Kâğıt katmanının üstünde teraryum fotoğraf katmanı bulunan Katmanlar paneli.](shot:photo/open-layers)
+![Terrarium nesne katmanıyla Katmanlar paneli.](shot:photo/open-layers)
 
-Çizimde, gizli bir **Kâğıt** katmanının üstünde dosyanın adını taşıyan tek bir
-katman vardır. Örnekte katmanın adı “terrarium” olur.
+Çizimde dosya adını taşıyan bir nesne katmanı bulunur. Örnekte katmanın adı “terrarium”dur.
 
 ## 2. Bir oran seçin
 
-**Düzenle > Görüntü > Kırp** komutunu seçin, Araçlar çubuğunda **Kırp**
+**Görüntü > Kırp** komutunu seçin, Araçlar çubuğunda **Kırp**
 düğmesini seçin veya **C** tuşuna basın ([Kırpma](/tr/docs/transform/crop/)).
 Fotoğrafın üzerinde tutamaçlı bir çerçeve, tuvalin altında da kırpma çubuğu
 görünür.

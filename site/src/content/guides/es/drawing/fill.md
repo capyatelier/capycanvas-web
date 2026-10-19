@@ -75,10 +75,7 @@ nada y un aviso ofrece marcar la capa de debajo.
 
 ![El panel Herramienta para Rellenar con Tolerancia, el grupo Bordes y Opacidad.](shot:drawing/fill-settings)
 
-Rellenar y Rodear y rellenar comparten los ajustes siguientes. **Seleccionar
-automáticamente** y **Seleccionar por color** usan los mismos valores en todos
-salvo en **Opacidad**. Para restablecer un ajuste, haz doble clic en su etiqueta
-en la barra Opciones de herramienta ([Tamaño, opacidad y flujo](/es/docs/brushes/basics/)).
+Rellenar y Rodear y rellenar comparten los ajustes siguientes. **Seleccionar automáticamente** y **Seleccionar por color** usan los mismos valores, excepto **Opacidad**. Para restablecer un ajuste, haz doble clic en su etiqueta en la barra Opciones de herramienta ([Tamaño, intensidad y opacidad](/es/docs/brushes/basics/)).
 
 ### Tolerancia
 
@@ -102,9 +99,7 @@ los bordes de píxel duros.
 
 ### Opacidad
 
-Define la intensidad del relleno. Al cambiarla cambia la **Opacidad** del pincel
-actual, y al revés. En Boceto, usa el deslizador de opacidad de la barra del borde
-izquierdo.
+Establece la intensidad del relleno. Cambiarla cambia la **Opacidad** del pincel actual y viceversa. En Boceto, usa **Control de intensidad** en la barra del borde izquierdo.
 
 ## Rellenar una selección
 

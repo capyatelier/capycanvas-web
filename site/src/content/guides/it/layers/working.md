@@ -136,7 +136,4 @@ Esegui una delle seguenti operazioni:
 - Seleziona **Importa immagine come livello…** in fondo al pannello Livelli.
 - Trascina file immagine sulla tela o su una riga del pannello Livelli.
 
-Ogni file diventa un [livello fotografico](/it/docs/layers/types/) sopra il
-livello attivo, oppure sopra, sotto o dentro la riga su cui lo rilasci.
-L'immagine viene centrata e ridotta per stare nella tela, con le
-[maniglie di posizionamento](/it/docs/transform/move-transform/).
+Ogni file diventa un [livello Oggetto](/it/docs/layers/types/) sopra il livello attivo, oppure sopra, sotto o dentro la riga su cui lo rilasci. L'immagine viene centrata e ridotta per stare nella tela, con le [maniglie di posizionamento](/it/docs/transform/move-transform/).

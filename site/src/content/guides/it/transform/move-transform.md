@@ -155,21 +155,21 @@ una trasformazione aperta, tranne in **Deforma**.
 
 ## Trasformazioni dei livelli
 
-Una trasformazione di interi livelli di pittura o fotografici viene memorizzata
+Una trasformazione di interi livelli di pittura o Oggetto viene memorizzata
 con ciascun livello, e i pixel non vengono ricampionati. **Trasforma** si riapre
 dalla trasformazione memorizzata.
 
 Finché non applichi la trasformazione ai pixel, non puoi ritoccare un livello
 scalato o ruotato, né dipingere su un livello distorto o deformato.
 
-## Applica trasformazione ai pixel
+## Applica trasformazione
 
 Puoi rendere la trasformazione memorizzata di un livello parte dei suoi pixel.
 
 Esegui una delle seguenti operazioni:
 
-- Scegli **Modifica > Applica trasformazione ai pixel**.
-- Scegli **Livello > Impostazioni livello > Applica trasformazione ai pixel**.
+- Scegli **Modifica > Applica trasformazione**.
+- Scegli **Livello > Impostazioni livello > Applica trasformazione**.
 
 Durante l'operazione, una barra in fondo alla tela indica «Applicazione
 trasformazione…» con **Annulla**.

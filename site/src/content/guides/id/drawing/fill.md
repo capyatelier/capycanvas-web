@@ -77,7 +77,7 @@ melukis apa pun dan sebuah pemberitahuan menawarkan untuk menandai lapisan di ba
 Isi dan Lingkari dan Isi memakai pengaturan di bawah ini bersama-sama.
 **Seleksi otomatis** dan **Seleksi berdasarkan warna** memakai nilai yang sama untuk
 semua pengaturan kecuali **Opasitas**. Untuk mengatur ulang sebuah pengaturan, klik
-ganda labelnya di bilah Opsi Alat ([Ukuran, opasitas, dan aliran cat](/id/docs/brushes/basics/)).
+ganda labelnya di bilah Opsi Alat ([Ukuran, kekuatan, dan opasitas cat](/id/docs/brushes/basics/)).
 
 ### Toleransi
 
@@ -101,8 +101,7 @@ piksel yang tegas.
 
 ### Opasitas
 
-Mengatur kekuatan pengisian. Mengubahnya akan mengubah **Opasitas** kuas saat ini, dan
-sebaliknya. Di Sketsa, gunakan penggeser opasitas pada bilah di tepi kiri.
+Mengatur kekuatan isian. Mengubahnya akan mengubah **Opasitas** kuas saat ini, dan sebaliknya. Di Sketsa, gunakan **Penggeser kekuatan** pada bilah di tepi kiri.
 
 ## Mengisi seleksi
 

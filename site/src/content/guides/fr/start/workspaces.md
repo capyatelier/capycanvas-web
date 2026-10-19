@@ -16,9 +16,9 @@ dernier espace de travail utilisé.
 Croquis n’a aucun panneau ancré : les boutons d’outils et de panneaux de la barre de titre ouvrent des tiroirs.
 
 1. **Capy (mode Zen)**, **Menu principal**, **Panneau Filtres**, **Sélection** et **Transformer**.
-2. Le sélecteur d’espaces de travail.
+2. Le sélecteur d’espace de travail.
 3. **Pinceau**, **Sculpture**, **Gomme**, **Panneau Calques** et **Couleur du pinceau**. L’éditeur web ajoute **Plein écran**.
-4. **Curseur de taille du pinceau**, **Pipette**, **Curseur d’opacité du pinceau**, **Annuler** et **Rétablir**.
+4. **Curseur de taille du pinceau**, **Pipette**, **Curseur d’intensité**, **Annuler** et **Rétablir**.
 
 | Bouton | Panneaux du tiroir |
 | --- | --- |

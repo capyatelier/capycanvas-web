@@ -12,14 +12,13 @@ Pilih **Berkas > Buka…**, atau tekan **Ctrl+O**, lalu pilih fotonya
 ([Membuka dan menyimpan](/id/docs/files/open-save/)). Foto terbuka di tab gambarnya
 sendiri.
 
-![Panel Lapisan dengan lapisan foto terarium di atas lapisan Kertas yang tersembunyi.](shot:photo/open-layers)
+![Panel Lapisan dengan lapisan Objek terarium.](shot:photo/open-layers)
 
-Gambar memiliki satu lapisan, yang dinamai sesuai berkasnya, di atas lapisan
-**Kertas** yang tersembunyi. Dalam contoh ini, lapisannya bernama "terrarium".
+Gambar memiliki satu lapisan Objek bernama sesuai file. Dalam contoh, lapisan bernama "terrarium".
 
 ## 2. Pilih rasio
 
-Pilih **Edit > Gambar > Pangkas**, pilih **Pangkas** di bilah alat Alat, atau tekan
+Pilih **Gambar > Pangkas**, pilih **Pangkas** di bilah alat Alat, atau tekan
 **C** ([Pangkas](/id/docs/transform/crop/)). Bingkai dengan pegangan muncul di atas
 foto, dengan bilah pangkas di sepanjang bagian bawah kanvas.
 

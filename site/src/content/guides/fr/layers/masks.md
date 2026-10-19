@@ -4,10 +4,7 @@ description: "Masquer des parties d’un calque avec un masque, et toutes les co
 related: ["layers/panel", "selections/working", "filters/how-filters-apply", "layers/merging"]
 ---
 
-Vous pouvez masquer des parties d’un calque avec un masque. Les zones peintes sur
-le masque montrent le calque, et les zones vides le cachent. Les calques de
-peinture, les calques photo, les groupes, les calques de remplissage et les
-filtres peuvent avoir un masque.
+Vous pouvez masquer des parties d’un calque avec un masque. Les zones peintes sur le masque montrent le calque, et les zones vides le masquent. Les calques de peinture, les calques Objet, les groupes, les calques de remplissage et les filtres peuvent avoir des masques.
 
 ## Ajouter un masque
 
@@ -112,14 +109,9 @@ Effectuez l’une des opérations suivantes :
 - Choisissez **Calque > Masque > Appliquer le masque au calque**.
 - Sélectionnez **Appliquer le masque** dans la barre de modification du masque.
 
-**Appliquer le masque au calque** ne fonctionne que sur les calques de peinture,
-et le masque doit être activé. Sur un calque distordu ou déformé, choisissez
-d’abord **Appliquer la transformation aux pixels**. Pour appliquer le masque d’un
-groupe, utilisez **Fusionner le groupe** (voir
-[Fusionner des calques](/fr/docs/layers/merging/)).
+**Appliquer le masque au calque** fonctionne uniquement sur les calques de peinture, et le masque doit être activé. Sur un calque déformé ou distordu, choisissez d’abord **Appliquer la transformation**. Pour appliquer le masque d’un groupe, utilisez **Fusionner le groupe** (voir [Fusionner des calques](/fr/docs/layers/merging/)).
 
-Sur un calque photo, **Revenir à la photo d’origine** rétablit ce qu’un masque
-appliqué a effacé.
+Appliquer un masque à un calque Objet le pixellise.
 
 ## Masques des calques de filtre et de remplissage
 

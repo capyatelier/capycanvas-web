@@ -14,9 +14,9 @@ related: ["input/pen", "input/touch", "start/command-search", "preferences"]
 
 執行以下任一操作：
 
-- 選擇**說明 > 鍵盤快捷鍵**。
+- 選擇 **編輯 > Keyboard Shortcuts…**。
 - 按 **Ctrl+Shift+?**。
-- 選擇**編輯 > 偏好設定**，然後選擇**鍵盤快捷鍵**。
+- 選擇 **編輯 > 偏好設定**，再選擇 **鍵盤快捷鍵**。
 
 ## 按鍵對應預設
 

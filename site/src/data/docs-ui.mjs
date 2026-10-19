@@ -138,7 +138,7 @@ export const docsUI = brandTranslations({
                 "slug": "drawing/brush-tools"
               }
             ],
-            "text": "Pencil, charcoal, ink, bristle, watercolor, oil and airbrush; pressure and tilt, paper grain, textured tips and color mixing."
+            "text": "Pencil, charcoal, chalk, pastel, crayon, ink, watercolor, oil and airbrush; pressure and tilt, Paper texture, smoothing and color mixing."
           },
           {
             "areas": [
@@ -147,7 +147,7 @@ export const docsUI = brandTranslations({
                 "slug": "layers/types"
               }
             ],
-            "text": "Groups, clipping layers, layer masks, blend modes, editable color and gradient fills, and selection layers."
+            "text": "Paint, Object and Paper layers; groups, clipping, masks, blend modes, editable fills and saved selections."
           },
           {
             "areas": [

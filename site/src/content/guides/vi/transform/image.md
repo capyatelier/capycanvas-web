@@ -1,25 +1,25 @@
 ---
 title: "Kích thước và góc xoay ảnh"
-description: "Các lệnh trong Chỉnh sửa > Ảnh để thay đổi kích thước và hướng của toàn bộ ảnh."
+description: "Các lệnh trình đơn Ảnh thay đổi kích thước và hướng của toàn bộ ảnh."
 related: ["transform/crop", "start/canvas", "files/new", "color-management/color-spaces"]
 ---
 
-Bạn có thể đổi kích thước, xoay và lật toàn bộ ảnh từ **Chỉnh sửa > Ảnh**. Ảnh giữ
+Bạn có thể đổi kích thước, xoay và lật toàn bộ ảnh từ **Ảnh**. Ảnh giữ
 nguyên vị trí trên màn hình.
 
 Các lệnh này không dùng được khi đang mở thao tác cắt xén hoặc biến đổi, và khi bạn
 đang sửa mặt nạ, Mặt nạ nhanh hoặc lớp vùng chọn. Về **Cắt xén** và
 **Cắt khung vẽ theo vùng chọn**, xem [Cắt xén](/vi/docs/transform/crop/).
 
-![Trình đơn con Ảnh của trình đơn Chỉnh sửa.](shot:transform/image-menu)
+![Trình đơn Ảnh.](shot:transform/image-menu)
 
 ## Kích thước ảnh…
 
 Bạn có thể đổi tỷ lệ toàn bộ ảnh, hoặc chỉ thay đổi độ phân giải.
 
-Chọn **Chỉnh sửa > Ảnh > Kích thước ảnh…**. Lớp vẽ và mặt nạ được lấy mẫu lại, còn
-ảnh đã đặt giữ pixel gốc. Vùng chọn, đường hướng dẫn và các thiết lập bộ lọc tính
-bằng pixel đổi tỷ lệ theo ảnh.
+Chọn **Ảnh > Kích thước ảnh…**. Lớp vẽ và mặt nạ được lấy mẫu lại còn lớp Đối tượng giữ pixel nguồn. Vùng chọn, đường dẫn hướng và thiết lập bộ lọc tính bằng pixel thay đổi tỷ lệ cùng ảnh.
+
+Giấy được lấy mẫu lại cùng ảnh. Chỉ đổi độ phân giải sẽ cập nhật tỷ lệ vật lý mà không lấy mẫu lại pixel.
 
 ![Hộp thoại Kích thước ảnh.](shot:transform/image-size-dialog)
 
@@ -48,7 +48,7 @@ Bạn cũng có thể chọn **Song bậc ba**, **Lanczos**, **Song tuyến tín
 
 Bạn có thể thêm hoặc bớt khung vẽ quanh ảnh mà không lấy mẫu lại.
 
-Chọn **Chỉnh sửa > Ảnh > Kích thước khung vẽ…**. Pixel nằm ngoài khung vẽ nhỏ hơn
+Chọn **Ảnh > Kích thước khung vẽ…**. Pixel nằm ngoài khung vẽ nhỏ hơn
 vẫn ở trên lớp của chúng ở trạng thái ẩn, và khung vẽ lớn hơn sẽ hiện lại các pixel
 đó.
 
@@ -70,7 +70,7 @@ Chọn cạnh hoặc góc của ảnh được giữ nguyên vị trí, từ m�
 
 ## Xoay và lật ảnh
 
-Chọn một trong các lệnh sau từ **Chỉnh sửa > Ảnh**:
+Chọn một trong các lệnh sau từ **Ảnh**:
 
 - **Xoay ảnh 90° sang trái**
 - **Xoay ảnh 90° sang phải**
@@ -83,10 +83,10 @@ lại. Để chỉ xoay hoặc lật khung nhìn, xem [Xem khung vẽ](/vi/docs/
 
 ## Xén biên
 
-Chọn **Chỉnh sửa > Ảnh > Xén biên** để thu khung vẽ theo các pixel hiển thị. Pixel
+Chọn **Ảnh > Xén biên** để thu khung vẽ theo các pixel hiển thị. Pixel
 nằm ngoài khung vẽ mới vẫn ở trên lớp của chúng ở trạng thái ẩn.
 
 ## Hiện tất cả
 
-Chọn **Chỉnh sửa > Ảnh > Hiện tất cả** để mở rộng khung vẽ cho đến khi hiện pixel
+Chọn **Ảnh > Hiện tất cả** để mở rộng khung vẽ cho đến khi hiện pixel
 của mọi lớp, kể cả lớp ẩn và pixel nằm ngoài khung vẽ.

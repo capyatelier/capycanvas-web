@@ -32,13 +32,12 @@ La photo retouchée contient ces calques, de haut en bas :
 
 | Calque | Contenu |
 | --- | --- |
-| **Tons foncés/Tons clairs** | Éclaircit les ombres de la roche, masqué à une sélection à contour progressif |
+| **Tons foncés/Tons clairs** | Éclaircit les ombres du rocher, avec un masque issu d’une sélection à contour progressif |
 | **Vibrance** | Augmente la vibrance de toute la photo |
 | **Courbes** | Une courbe en S pour toute la photo |
 | *Retouch* | Traits de correction |
-| Le calque de la photo | La photo, nommée d’après son fichier |
-| **Papier** | Masqué |
+| Le calque Objet | La photo, nommée d’après son fichier |
 
-Rien n’est peint sur le calque de la photo.
+Rien n’est peint sur le calque Objet.
 
 Première étape : [Ouverture et recadrage](/fr/docs/photo/crop/).

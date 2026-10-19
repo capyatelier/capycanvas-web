@@ -146,7 +146,4 @@ pendant que vous peignez sur le masque du calque.
 
 ## Autres éléments de Réglages du calque
 
-**Réglages du calque** propose aussi **Appliquer la transformation aux pixels**
-(voir [Déplacer et transformer](/fr/docs/transform/move-transform/)). Sur un calque
-photo, il propose **Réparer le profil source…**, **Pixelliser la source…** et
-**Revenir à la photo d’origine** (voir [Types de calques](/fr/docs/layers/types/)).
+**Réglages du calque** propose aussi **Appliquer la transformation** (voir [Déplacer et transformer](/fr/docs/transform/move-transform/)). Sur un calque Objet, choisissez **Pixelliser le calque** pour convertir sa source en pixels modifiables (voir [Types de calques](/fr/docs/layers/types/)).

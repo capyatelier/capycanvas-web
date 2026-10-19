@@ -18,7 +18,7 @@ barra del titolo aprono dei cassetti.
 1. **Capy (modalità Zen)**, **Menu principale**, **Pannello Filtri**, **Seleziona** e **Trasforma**.
 2. Il selettore dell'area di lavoro.
 3. **Pennello**, **Modella**, **Gomma**, **Pannello Livelli** e **Colore pennello**. L'editor web aggiunge **Schermo intero**.
-4. **Cursore dimensioni pennello**, **Contagocce**, **Cursore opacità pennello**, **Annulla** e **Ripeti**.
+4. **Cursore dimensioni pennello**, **Contagocce**, **Cursore intensità**, **Annulla** e **Ripeti**.
 
 | Pulsante | Pannelli nel cassetto |
 | --- | --- |

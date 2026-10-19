@@ -4,17 +4,14 @@ description: "Fotoğraf düzenleme eğitiminin 2. aşaması: fotoğrafın üstü
 related: ["retouch/clone-heal", "layers/settings", "layers/working"]
 ---
 
-Bu aşamada fotoğraftaki tozu ve bir lekeyi örten bir *Retouch* katmanı oluşur.
-Fotoğraf katmanı değişmez.
+Bu aşama, fotoğraftaki tozu ve lekeyi örten bir *Retouch* katmanı oluşturur. Nesne katmanı değişmez.
 
 ## 1. Rötuş katmanı ekleyin
 
 1. Katmanlar panelinin altındaki **Yeni katman** düğmesini seçin ve yeni katmanı *Retouch* olarak yeniden adlandırın.
 2. **Katman > Katman ayarları > Alttaki katmanı referans olarak kullan** komutunu seçin ([Katman ayarları](/tr/docs/layers/settings/)).
 
-Fotoğraf katmanı bir referans katman olur ve satırında göz simgesinin yanında
-bir deniz feneri simgesi görünür. Düzeltme araçları varsayılan olarak referans
-katmanlardan kopyalar ve *Retouch* katmanına boyar.
+Nesne katmanı referans katmanı olur ve satırında gözün yanında deniz feneri simgesi görünür. İyileştirme araçları varsayılan olarak referans katmanlarından kopyalar ve *Retouch* üzerine boyar.
 
 ![Referans simgesini gösteren terrarium katmanının üstünde Retouch bulunan Katmanlar paneli.](shot:photo/retouch-layers)
 

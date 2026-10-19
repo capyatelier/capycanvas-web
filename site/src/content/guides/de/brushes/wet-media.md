@@ -8,7 +8,7 @@ Im Bedienfeld **Werkzeug** können Sie festlegen, wie nasse und mischende Pinsel
 Farbe umgehen. Jede Gruppe erscheint nur bei den Pinseln, die in ihrem Abschnitt
 genannt sind.
 
-![Das Bedienfeld Werkzeug für Nasses Aquarell mit den Gruppen Mischen, Aquarell und Farbausbreitung und den Schaltflächen für die Farbmischung.](shot:brushes/wet-media-settings)
+![Das Bedienfeld Werkzeug für Nasses Aquarell mit Farbmischung und den Gruppen Mischen, Aquarell und Farbausbreitung.](shot:brushes/wet-media-settings)
 
 ## Mischen
 
@@ -75,8 +75,8 @@ Sie können festlegen, wie ein mischender Pinsel die aufgenommenen Farben kombin
 
 Führen Sie eine der folgenden Aktionen aus:
 
-- Wählen Sie **Oklab-Mischung**, **Mischen in linearem Licht** oder **Klassische Mischung** unten im Bedienfeld **Werkzeug** aus.
-- Wählen Sie unter **Farbmischung** in der Leiste Werkzeugoptionen ([Größe, Deckkraft und Fluss](/de/docs/brushes/basics/)).
+- Wählen Sie **Oklab-Mischung**, **Mischen in linearem Licht** oder **Klassische Mischung** unter **Farbmischung** im Bedienfeld **Werkzeug**.
+- Öffnen Sie **Weitere Werkzeugoptionen** in der Werkzeugoptionsleiste und wählen Sie dann **Farbmischung** in der Werkzeugschublade ([Größe, Stärke und Deckkraft](/de/docs/brushes/basics/)).
 - Suchen Sie in der Befehlssuche nach dem Namen der Option.
 
 | Option | Mischung |
@@ -89,7 +89,7 @@ Jeder integrierte Mischpinsel beginnt mit **Oklab-Mischung**. Die Wahl wird mit 
 Pinsel gespeichert, und die Einstellung **Verrechnung** der Zeichnung ändert sie
 nicht. Bei einem Pinsel, der nicht mischt, sind die Optionen nicht verfügbar.
 
-![Das Menü Farbmischung, geöffnet in der Leiste Werkzeugoptionen für Satter Ölpinsel.](shot:brushes/color-mixing-menu)
+![Farbmischung in der Werkzeugschublade.](shot:brushes/color-mixing-menu)
 
 ## Borsten
 

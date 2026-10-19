@@ -111,9 +111,7 @@ Cliquez, ou levez le stylet ou le doigt, pour prélever. La boîte de dialogue
 revient avec la couleur prélevée comme Nouvelle. Appuyez sur **Échap** ou
 sélectionnez la bande pour revenir sans changement.
 
-Avec un doigt, le point d’échantillonnage se trouve au-dessus du bout du doigt.
-**Prélever sur la toile** est masqué quand Modifier la couleur s’ouvre depuis une
-autre boîte de dialogue.
+Avec un doigt, la loupe apparaît au-dessus du bout du doigt tandis que le point de prélèvement reste dessous. **Prélever sur la toile** est masqué quand Modifier la couleur s’ouvre depuis une autre boîte de dialogue.
 
 ## Couleurs récentes et palettes
 

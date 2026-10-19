@@ -57,11 +57,7 @@ Jede Werkzeugleiste braucht einen eigenen Namen.
 - Um ein Werkzeug zu entfernen, wählen Sie **Werkzeug entfernen** in seinem Menü.
 - Um ein Werkzeug zu verschieben, halten Sie es gedrückt und ziehen es innerhalb der Werkzeugleiste oder in eine andere Werkzeugleiste.
 
-Neben Befehlen und Werkzeugen enthält die Liste **Werkzeuge hinzufügen** Pinsel,
-Pinselgrößen, **Farbpipette**, **Schieberegler für Pinselgröße**, **Schieberegler für
-Pinseldeckkraft**, **Werkzeugoptionen** und **Trennlinie**. Außerdem hat sie für jedes
-Bedienfeld einen Eintrag, etwa **Bedienfeld Ebenen**, der das Bedienfeld in einer
-Schublade öffnet.
+Neben Befehlen und Werkzeugen enthält die Liste **Werkzeuge hinzufügen** Pinsel, Pinselgrößen, **Farbpipette**, **Schieberegler für Pinselgröße**, **Stärkeregler**, **Werkzeugoptionen** und **Trennlinie**. Sie enthält auch einen Eintrag für jedes Bedienfeld, etwa **Bedienfeld Ebenen**, der das Bedienfeld in einer Schublade öffnet.
 
 Das Element **Werkzeugoptionen** zeigt die Einstellungen des aktuellen Werkzeugs über den Rest der
 Werkzeugleiste. Sein Menü enthält **Horizontal: Text**, **Horizontal: Symbole** und

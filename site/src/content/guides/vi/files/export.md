@@ -1,11 +1,13 @@
 ---
 title: "Xuất ảnh"
 description: "Xuất một bản sao ảnh gộp phẳng của bản vẽ bằng hộp thoại Xuất ảnh và Xuất lại."
-related: ["files/open-save", "color-management/hdr", "color-management/color-spaces"]
+related: ["files/open-save", "layers/paper", "color-management/hdr", "color-management/color-spaces"]
 ---
 
 Bạn có thể xuất một bản sao ảnh gộp phẳng của bản vẽ. Việc xuất không thay đổi bản
 vẽ `.capy` và không được tính là lưu.
+
+Ảnh xuất từ ứng dụng gốc có [Ánh sáng Giấy](/vi/docs/layers/paper/). Ảnh xuất từ web hiện không có ánh sáng giấy. Bản xem trước độ nổi tạm thời sau khi đổi kết cấu Giấy hoặc Tỷ lệ không được đưa vào.
 
 ## Xuất ảnh
 
@@ -56,7 +58,7 @@ Giới hạn định dạng bên dưới).
 ### Hồ sơ màu đầu ra
 
 **sRGB**, **Display P3**, **Adobe RGB (1998)** hoặc **ProPhoto RGB**, cùng
-“Gốc: *tên*” cho mỗi lớp ảnh có hồ sơ màu nhúng riêng.
+“Gốc: *tên*” cho mỗi lớp Đối tượng có hồ sơ màu nhúng riêng.
 
 ### Độ sâu bit
 

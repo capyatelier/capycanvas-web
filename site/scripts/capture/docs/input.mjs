@@ -26,7 +26,7 @@ export default async function input({ e, b, shoot, example }) {
     }
     await e.wait(checked);
   };
-  const settings = () => e.read('JSON.stringify({...layerApp.state().settings,theme:null})');
+  const settings = () => e.read('JSON.stringify({...layerApp.state().settings,theme:null,new_document:null})');
   const open = async page => {
     await e.send({ type: 'open_settings', page });
     await e.wait(`document.querySelector('#settings')?.open && document.querySelector('.preferences-page[data-page=${page}]')?.checkVisibility()`);
@@ -53,14 +53,53 @@ export default async function input({ e, b, shoot, example }) {
   await shoot('pen/pen-and-input', { target: '#settings', setup: () => open('input'), teardown: close });
 
   await shoot('pen/prediction', {
-    target: '.settings-group:has(#setting-pressure)',
+    target: '.settings-group:has(#setting-pen-pressure)',
     setup: async () => {
       await open('input');
-      await reveal('.settings-group:has(#setting-pressure)');
+      await reveal('.settings-group:has(#setting-pen-pressure)');
     },
-    variant: () => reveal('.settings-group:has(#setting-pressure)'),
+    variant: () => reveal('.settings-group:has(#setting-pen-pressure)'),
     teardown: close,
   });
+
+  const calibration = '#pen-pressure-dialog';
+  const openCalibration = async () => {
+    await open('input');
+    await reveal('#setting-pen-pressure');
+    await press('#setting-pen-pressure');
+    await e.wait(`!!layerApp.state().pressure_calibration && !!document.querySelector('${calibration}') && !document.querySelector('#settings').open`);
+  };
+  const cancelCalibration = async () => {
+    await e.send({ type: 'pressure_calibration', action: { kind: 'cancel' } });
+    await e.wait(`!layerApp.state().pressure_calibration && !document.querySelector('${calibration}')`);
+  };
+  await shoot('pen/pressure-calibration', { target: calibration, setup: openCalibration, teardown: cancelCalibration });
+
+  await e.workspace('painter');
+  if (await e.read('layerApp.state().workspace.zen_mode')) await e.invoke('zen_mode');
+  await e.newDocument(1400, 900);
+  await e.frame(.85, [700, 450]);
+  await e.brush(2, 36, '#394443');
+  await e.draw('M220 270 C400 110 500 420 740 260 C850 180 960 240 1120 190', { pressure: t => .08 + .65 * t, tiltX: 20, tiltY: 10 });
+  await e.draw('M230 470 C410 350 590 610 790 440 C930 330 1000 510 1130 420', { pressure: t => .15 + .6 * Math.sin(Math.PI * t), tiltX: 42, tiltY: 12 });
+  let contact;
+  await shoot('pen/pressure-live-test', {
+    target: [calibration, { documentRect: [150, 100, 1040, 560] }], maxWidth: 1800,
+    setup: openCalibration,
+    check: async () => {
+      contact = await e.read(`(()=>{const c=layerApp.state().camera,r=c.viewport[0]/innerWidth;return{x:(c.translation[0]+1060*c.zoom)/r,y:(c.translation[1]+580*c.zoom)/r}})()`);
+      assert.equal(await e.read(`document.elementFromPoint(${contact?.x ?? 0},${contact?.y ?? 0})?.id`), 'canvas', 'The live pen test is on the document');
+      await b.call('Input.dispatchMouseEvent', { type: 'mousePressed', ...contact, pointerType: 'pen', button: 'left', buttons: 1, clickCount: 1, force: .12 });
+      await e.wait('!!layerApp.state().pressure_calibration?.editor.marker');
+    },
+    release: async () => {
+      await b.call('Input.dispatchMouseEvent', { type: 'mouseReleased', ...contact, pointerType: 'pen', button: 'left', buttons: 0, force: 0 });
+      await e.wait('!layerApp.state().pressure_calibration?.editor.marker');
+    },
+    teardown: cancelCalibration,
+  });
+  assert.equal(await settings(), starting, 'Pressure calibration cancellation restores preferences');
+  await e.workspace('illustrator');
 
   const cursor = '.preference-choice:has(#setting-cursor)';
   await shoot('pen/cursor-shapes', {

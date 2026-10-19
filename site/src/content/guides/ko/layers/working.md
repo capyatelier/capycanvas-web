@@ -131,5 +131,5 @@ related: ["layers/panel", "layers/types", "layers/merging", "files/open-save"]
 - 이미지 파일을 캔버스나 레이어 패널의 행으로 드래그합니다.
 
 각 파일은 활성 레이어 위에, 또는 파일을 놓은 행의 위, 아래, 안에
-[사진 레이어](/ko/docs/layers/types/)로 추가됩니다. 이미지는 캔버스 가운데에 놓이고
+[오브젝트 레이어](/ko/docs/layers/types/)로 추가됩니다. 이미지는 캔버스 가운데에 놓이고
 캔버스에 맞게 축소되며, [배치 핸들](/ko/docs/transform/move-transform/)이 표시됩니다.

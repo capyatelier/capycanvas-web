@@ -23,7 +23,7 @@ group, unless the group is set to [Pass Through](/docs/layers/settings/).
 
 ## Attached filter
 
-You can attach filters to a paint layer, a photo layer or a group that isn't
+You can attach filters to a paint layer, an Object layer or a group that isn't
 set to Pass Through. Select the layer, then select **Add Filter** at the bottom
 of the Layers panel or the **Properties** panel, or in the layer's menu.
 
@@ -52,7 +52,7 @@ Do one of the following:
 was attached to and that layer's clipped layers.
 
 The button is unavailable while the filter or the layer below is locked. When
-the layer below is not a paint layer, photo layer or group, its tooltip reads
+the layer below is not a paint layer, Object layer or group, its tooltip reads
 "No layer below to attach to".
 
 ## Selections as filter masks

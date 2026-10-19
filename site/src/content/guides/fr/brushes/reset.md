@@ -20,9 +20,7 @@ son préréglage.
 
 ## Réinitialiser un réglage
 
-Vous pouvez rendre à un réglage la valeur intégrée du pinceau. Double-cliquez (ou
-touchez deux fois) le libellé ou l’icône du réglage dans la barre Options de
-l’outil ([Taille, opacité et débit](/fr/docs/brushes/basics/)).
+Vous pouvez rendre à un réglage la valeur intégrée du pinceau. Double-cliquez (ou touchez deux fois) sur le libellé ou l’icône du réglage dans la barre Options de l’outil ([Taille, intensité et opacité](/fr/docs/brushes/basics/)).
 
 Le panneau **Outil** n’a pas de réinitialisation. Pour réinitialiser
 **Mélange de couleurs**, sélectionnez **Mélange Oklab**, le choix intégré de tous les pinceaux

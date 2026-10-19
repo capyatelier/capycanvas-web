@@ -60,7 +60,7 @@ Ogni barra strumenti deve avere un nome proprio.
 
 Oltre a comandi e strumenti, l'elenco **Aggiungi strumenti** contiene pennelli,
 dimensioni dei pennelli, **Contagocce**, **Cursore dimensioni pennello**,
-**Cursore opacità pennello**, **Opzioni strumento** e **Separatore**. Contiene
+**Cursore intensità**, **Opzioni strumento** e **Separatore**. Contiene
 anche una voce per ogni pannello, come **Pannello Livelli**, che apre il pannello
 in un cassetto.
 

@@ -12,7 +12,7 @@ mengaktifkan **Hapus Bagian Terpangkas**.
 
 Lakukan salah satu langkah berikut:
 
-- Pilih **Edit > Gambar > Pangkas**.
+- Pilih **Gambar > Pangkas**.
 - Tekan **C**.
 - Di Foto, pilih **Pangkas** di bilah alat Alat.
 
@@ -109,7 +109,7 @@ Anda dapat memangkas kanvas sesuai batas seleksi.
 
 Lakukan salah satu langkah berikut:
 
-- Pilih **Edit > Gambar > Pangkas Kanvas ke Seleksi**.
+- Pilih **Gambar > Pangkas Kanvas ke Seleksi**.
 - Pilih **Pangkas** di [bilah seleksi](/id/docs/selections/working/).
 
 Piksel di luar batas seleksi tetap ada di lapisannya, dalam keadaan tersembunyi.
@@ -117,6 +117,6 @@ Kanvas tidak dapat dipangkas sesuai seleksi yang dibalik.
 
 ## Mengembalikan piksel yang terpangkas
 
-Pilih **Edit > Gambar > Tampilkan Semua** untuk memperbesar kanvas sampai
+Pilih **Gambar > Tampilkan Semua** untuk memperbesar kanvas sampai
 menampilkan piksel setiap lapisan, atau perbesar kanvas dengan
-**Edit > Gambar > Ukuran Kanvas…** (lihat [Ukuran dan rotasi gambar](/id/docs/transform/image/)).
+**Gambar > Ukuran Kanvas…** (lihat [Ukuran dan rotasi gambar](/id/docs/transform/image/)).

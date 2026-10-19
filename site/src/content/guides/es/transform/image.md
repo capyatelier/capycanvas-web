@@ -1,27 +1,25 @@
 ---
 title: "Tamaño y rotación de la imagen"
-description: "Los comandos de Editar > Imagen que cambian el tamaño y la orientación de toda la imagen."
+description: "Los comandos del menú Imagen que cambian el tamaño y la orientación de la imagen completa."
 related: ["transform/crop", "start/canvas", "files/new", "color-management/color-spaces"]
 ---
 
-Puedes cambiar el tamaño, girar y voltear toda la imagen desde
-**Editar > Imagen**. La imagen se queda en su sitio en la pantalla.
+Puedes cambiar el tamaño, girar y voltear la imagen completa desde **Imagen**. La imagen permanece en su sitio en la pantalla.
 
 Los comandos no están disponibles mientras hay un recorte o una transformación
 abiertos, ni mientras editas una máscara, la Máscara rápida o una capa de
 selección. Para **Recortar** y **Recortar lienzo a la selección**, consulta
 [Recortar](/es/docs/transform/crop/).
 
-![El submenú Imagen del menú Editar.](shot:transform/image-menu)
+![El menú Imagen.](shot:transform/image-menu)
 
 ## Tamaño de imagen…
 
 Puedes escalar toda la imagen o cambiar solo su resolución.
 
-Elige **Editar > Imagen > Tamaño de imagen…**. Las capas de pintura y las
-máscaras se remuestrean, y las fotos colocadas conservan sus píxeles originales.
-Las selecciones, las guías y los ajustes de filtro medidos en píxeles se escalan
-con la imagen.
+Elige **Imagen > Tamaño de imagen…**. Las capas de pintura y las máscaras se remuestrean y las capas de objeto conservan sus píxeles de origen. Las selecciones, las guías y los ajustes de filtro medidos en píxeles escalan con la imagen.
+
+Papel se remuestrea con la imagen. Cambiar solo la resolución actualiza su escala física sin remuestrear los píxeles.
 
 ![El diálogo Tamaño de imagen.](shot:transform/image-size-dialog)
 
@@ -50,9 +48,7 @@ Bicúbica cuando se amplía. También puedes elegir **Bicúbica**, **Lanczos**,
 
 Puedes añadir o quitar lienzo alrededor de la imagen sin remuestrear.
 
-Elige **Editar > Imagen > Tamaño del lienzo…**. Los píxeles fuera de un lienzo
-más pequeño se quedan en sus capas, ocultos, y un lienzo más grande vuelve a
-mostrarlos.
+Elige **Imagen > Tamaño del lienzo…**. Los píxeles fuera de un lienzo más pequeño permanecen ocultos en sus capas y un lienzo más grande los muestra de nuevo.
 
 ![El diálogo Tamaño del lienzo.](shot:transform/canvas-size-dialog)
 
@@ -73,7 +69,7 @@ en su sitio. **Centro** es el valor predeterminado.
 
 ## Girar y voltear la imagen
 
-Elige una de estas opciones en **Editar > Imagen**:
+Elige una de estas opciones de **Imagen**:
 
 - **Girar imagen 90° a la izquierda**
 - **Girar imagen 90° a la derecha**
@@ -87,12 +83,8 @@ no se remuestrean. Para girar o reflejar solo la vista, consulta
 
 ## Recortar bordes transparentes
 
-Elige **Editar > Imagen > Recortar bordes transparentes** para reducir el lienzo
-a los píxeles visibles. Los píxeles fuera del lienzo nuevo se quedan en sus
-capas, ocultos.
+Elige **Imagen > Recortar bordes transparentes** para reducir el lienzo a los píxeles visibles. Los píxeles fuera del lienzo nuevo permanecen ocultos en sus capas.
 
 ## Mostrar todo
 
-Elige **Editar > Imagen > Mostrar todo** para ampliar el lienzo hasta que muestre
-los píxeles de todas las capas, incluidas las capas ocultas y los píxeles fuera
-del lienzo.
+Elige **Imagen > Mostrar todo** para ampliar el lienzo hasta mostrar los píxeles de todas las capas, incluidas las capas ocultas y los píxeles fuera del lienzo.

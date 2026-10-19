@@ -1,11 +1,13 @@
 ---
 title: "Exporting images"
 description: "Exporting a flattened image copy of a drawing with the Export image dialog and Export Again."
-related: ["files/open-save", "color-management/hdr", "color-management/color-spaces"]
+related: ["files/open-save", "layers/paper", "color-management/hdr", "color-management/color-spaces"]
 ---
 
 You can export a flattened image copy of the drawing. Exporting doesn't change
 the `.capy` drawing, and it doesn't count as saving.
+
+Native exports include [Paper lighting](/docs/layers/paper/). Web exports currently omit it. The temporary relief preview after changing a Paper texture or Scale is not included.
 
 ## Exporting an image
 
@@ -56,7 +58,7 @@ Format limits below).
 ### Output profile
 
 **sRGB**, **Display P3**, **Adobe RGB (1998)** or **ProPhoto RGB**, plus
-"Original: *name*" for each photo layer with its own embedded profile.
+"Original: *name*" for each Object layer with its own embedded profile.
 
 ### Bit depth
 

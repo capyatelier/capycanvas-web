@@ -24,8 +24,8 @@ related: ["retouch/dodge-burn", "layers/settings", "brushes/basics", "photo/reto
 
 페인팅 작업 영역에는 **복구 브러시**와 **스팟 복구 브러시** 버튼이 없습니다.
 
-각 도구는 브러시이며, 도구 패널에 **브러시 크기**, **불투명도**, **플로우**,
-**브러시 끝** 설정이 있습니다([크기, 불투명도, 플로우](/ko/docs/brushes/basics/) 참조).
+각 도구는 브러시이며, 도구 패널에 **브러시 크기**, **불투명도**, **강도**,
+**브러시 끝** 설정이 있습니다([크기, 강도 및 불투명도](/ko/docs/brushes/basics/) 참조).
 
 ![브러시 설정과 샘플 지점 설정이 있는 복제 도장의 도구 패널.](shot:retouch/clone-tool-panel)
 

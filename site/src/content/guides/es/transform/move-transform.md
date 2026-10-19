@@ -153,22 +153,20 @@ valores de una transformación abierta, salvo en **Deformar**.
 
 ## Transformaciones de capa
 
-La transformación de capas de pintura o de foto completas se guarda con cada
-capa, y los píxeles no se remuestrean. **Transformar** vuelve a abrirse a partir
-de la transformación guardada.
+Una transformación de capas completas de pintura u objeto se guarda con cada capa y los píxeles no se remuestrean. **Transformar** vuelve a abrirse desde la transformación guardada.
 
 Hasta que apliques la transformación a los píxeles, no puedes retocar una capa
 escalada o girada, ni pintar en una capa distorsionada o deformada.
 
-## Aplicar transformación a píxeles
+## Aplicar transformación
 
 Puedes hacer que la transformación guardada de una capa pase a formar parte de
 sus píxeles.
 
 Haz una de las siguientes acciones:
 
-- Elige **Editar > Aplicar transformación a píxeles**.
-- Elige **Capa > Ajustes de capa > Aplicar transformación a píxeles**.
+- Elige **Editar > Aplicar transformación**.
+- Elige **Capa > Ajustes de capa > Aplicar transformación**.
 
 Mientras se aplica, una barra en la parte inferior del lienzo dice «Aplicando
 transformación…» y muestra **Cancelar**.

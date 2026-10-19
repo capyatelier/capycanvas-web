@@ -12,7 +12,7 @@ The commands on this page are in the **File** menu. In Sketch, open it from
 ## Opening a drawing or photo
 
 You can open `.capy` drawings and photos in OpenEXR, TIFF, PNG, WebP, BMP, JPEG,
-GIF, HEIF and AVIF format. Each file opens in its own tab.
+GIF, HEIF and AVIF format. Each opens in its own tab.
 
 Do one of the following:
 
@@ -20,13 +20,13 @@ Do one of the following:
 - Press **Ctrl+O**.
 - In Paint and Photo, select **Open…** in the Commands toolbar.
 - In the web editor or on Linux, drag files onto the drawing name or the tabs in the title bar.
-- If you installed the web editor as an app, open a `.capy`, `.png`, `.jpg`, `.tif`, `.avif` or `.exr` file with {appName} from your system.
+- If you installed the web editor as an app, open a supported file with {appName} from your system.
 
 ## Photos
 
-A photo opens as a new drawing with a photo layer, named after the file, above
-a **Paper** layer. The photo keeps its color profile and, by default, its bit
-depth. Saving the drawing creates a `.capy` file and never overwrites the photo.
+A photo opens as a new drawing with an Object layer named after the file. The
+Object keeps the image at its own size, color profile and, by default, bit depth.
+Saving the drawing creates a `.capy` file and never overwrites the source image.
 
 - An animated GIF or WebP opens its first frame.
 - A photo can be up to 32768 pixels on each side.
@@ -39,7 +39,7 @@ With **Untagged RGB and grayscale** set to **Ask** in
 
 ## Importing images as layers
 
-You can add images to the current drawing as new layers.
+You can add images to a drawing as new layers.
 
 Do one of the following:
 
@@ -47,7 +47,7 @@ Do one of the following:
 - Press **Ctrl+Shift+O**.
 - Drag images onto the canvas, or onto a row of the **Layers** panel.
 
-Each image becomes a layer named after the file, above the selected layer, with
+Each image becomes an [Object layer](/docs/layers/types/) named after the file, above the selected layer, with
 [transform handles](/docs/transform/move-transform/) for placing it. An image
 larger than the canvas is scaled down to fit.
 
@@ -63,8 +63,8 @@ Do one of the following:
 - Press **Ctrl+S**.
 - In Paint and Photo, select **Save** in the Commands toolbar.
 
-The first save asks for a location, and later saves write to the same file.
-After saving, the tab shows the file name without the ● mark.
+The first save asks for a location; later saves use the same file.
+The saved tab shows the file name without the ● mark.
 
 In Firefox and Safari, the drawing counts as saved only after you select
 **Download** and then **File saved** in the **Download file** dialog.
@@ -79,14 +79,14 @@ since you opened or saved it.
 
 ## What a .capy file keeps
 
-A `.capy` file keeps every layer with its mask and settings, the filters, saved
+A `.capy` file keeps every layer with its mask and settings, embedded Object source images and imported Paper textures, the filters, saved
 selections and guides, the color space, bit depth and blending, and a photo's
 EXIF, XMP and IPTC data. It doesn't keep the undo history, the view or the
 active selection.
 
 ## View-only drawings
 
-A `.capy` file that {appName} can't edit, such as a damaged file, opens in a
+A `.capy` file that {appName} can't edit, including a file from an unsupported newer format or a damaged file, opens in a
 dialog instead of a tab. **Copy Original File…** saves a copy of the file, and
 **Export Preview Image…** saves the drawing's preview as a PNG.
 
@@ -110,8 +110,7 @@ In the web editor, drag a tab sideways to reorder the tabs.
 A ● before a name marks unsaved changes. In a narrow title bar, the tabs become
 one button that opens the Drawings list.
 
-Each tab keeps its own undo history, view and selection. Tabs aren't part of a
-workspace.
+Each tab keeps its undo history, view and selection. Tabs aren't part of a workspace.
 
 ## Drawings…
 

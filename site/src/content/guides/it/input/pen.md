@@ -1,24 +1,16 @@
 ---
 title: "Penna"
 description: "Le impostazioni della penna nelle Preferenze, e il doppio tocco e la pressione laterale di Apple Pencil."
-related: ["input/touch", "input/keyboard", "preferences", "brushes/basics"]
+related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-Le impostazioni della penna si trovano nella pagina **Penna e input** di
-**Modifica > Preferenze**.
+Le impostazioni della penna si trovano nella pagina **Penna e input** di **Modifica > Preferenze**.
 
 ![La pagina Penna e input delle Preferenze.](shot:pen/pen-and-input)
 
-## Risposta alla pressione
+## Pressione della penna
 
-Puoi cambiare come la penna risponde alla pressione leggera con **Risposta alla
-pressione** sotto **Risposta della penna**. Valori più bassi rendono più forte la
-pressione leggera, e valori più alti richiedono più forza. L'intervallo va da
-0,25 × a 4,00 ×. Al valore predefinito, 1,00 ×, la pressione della penna viene
-usata senza modifiche.
-
-L'impostazione vale per tutti i pennelli e gli strumenti, compresi **Dipingi
-selezione** e **Maschera veloce**. I tratti già disegnati non cambiano.
+Seleziona **Regola…** accanto a **Pressione della penna** per modellare la curva della pressione e provarla sulla tela corrente. La curva si applica a tutti i pennelli e strumenti sensibili alla pressione; i tratti già disegnati non cambiano. Vedi [Pressione della penna](/it/docs/input/pen-pressure/).
 
 ## Previsione del tratto
 

@@ -1,96 +1,49 @@
 ---
 title: "New drawings"
-description: "The New drawing dialog and the layers a new drawing starts with."
-related: ["color-management/color-spaces", "layers/types", "files/open-save"]
+description: "Sheet size, resolution, paper and color settings, and presets in the New drawing dialog."
+related: ["layers/paper", "color-management/color-spaces", "layers/types", "files/open-save"]
 ---
 
-You can start a drawing in the **New drawing** dialog. The new drawing opens in
-its own tab, and the current drawing stays open.
+Choose **File > New…**, press **Ctrl+N** where available, or select **New…** in the Commands toolbar. The new drawing opens in its own tab.
 
-## Opening the New drawing dialog
+![The New drawing dialog with A4 dimensions, 300 ppi resolution, color and Paper settings, and Create.](shot:files/new-dialog)
 
-Do one of the following:
+## Presets
 
-- Choose **File > New…**.
-- Press **Ctrl+N** (not in the web editor).
-- In Paint and Photo, select **New…** in the Commands toolbar.
+Choose a preset by category, search by name, or select a recently used preset. A preset fills the dimensions, resolution, color settings and Paper settings.
 
-Choose the settings below, then select **Create**.
+![The New drawing preset browser.](shot:files/new-presets)
 
-**New…** isn't available while a crop or a transform is open. If too much
-drawing data is already open, the new drawing doesn't open until you close some
-drawings.
+Before you have used or saved another setup, Presets selects **Sketchbook**: A4 portrait (210 × 297 mm), Drawing paper in Natural white, and 2480 × 3508 px at 300 ppi.
 
-## Settings
+Save the current settings as a named preset for reuse. Open a saved preset's menu to rename or delete it. Built-in presets cannot be renamed or deleted.
 
-![The New drawing dialog with the Standard drawing preset.](shot:files/new-dialog)
+## Sheet
 
-### Preset
+The preview shows the sheet's proportions and orientation. Enter a drawing name, then set **Width** and **Height** in pixels, inches, centimeters or millimeters. Use the link control to keep the current proportions, and the orientation control to exchange width and height.
 
-Fills every field from a built-in preset or one you saved. Changing a field
-afterward switches **Preset** to **Custom**.
+**Resolution** sets the pixels per inch used for physical dimensions and [Paper texture](/docs/layers/paper/) scale. Changing only the resolution changes print-size metadata without resampling the drawing.
 
-Every built-in preset is 2048 × 1536 pixels on a white background.
+A new window starts with a separate blank A4 landscape drawing at 300 ppi (3508 × 2480 px).
 
-| Preset | Color space | Bit depth | Blending |
-| --- | --- | --- | --- |
-| **Standard drawing** | sRGB | 8-bit SDR | Perceptual |
-| **Wide color** | Display P3 | 8-bit SDR | Perceptual |
-| **Photo editing** | ProPhoto RGB | 16-bit SDR | Perceptual |
-| **HDR drawing** | sRGB | 16-bit float HDR | Linear light |
+The dialog shows the resulting pixel dimensions and estimated capacity. Settings beyond the device's current drawing limit cannot be created; the limit depends on the dimensions, bit depth and available graphics resources.
 
-### Remove saved preset
+## Paper
 
-Deletes the selected saved preset. Built-in presets can't be removed.
+![Paper texture choices in New drawing.](shot:files/new-paper)
 
-### Width (px) and Height (px)
+Choose a built-in or imported Paper texture for the new drawing. **Import…** adds an image to the paper library and selects it. Choose **No paper** to create the drawing without a Paper layer.
 
-From 1 to 8192 pixels. The fields accept arithmetic such as "160*2".
+![Paper Color and Transparent choices in New drawing.](shot:files/new-paper-color)
 
-### Color space
+**Color** sets the Paper color. **Transparent** keeps the Paper layer but starts it hidden. This differs from **No paper**, which creates no Paper layer.
 
-**sRGB**, **Display P3**, **Adobe RGB (1998)** or **ProPhoto RGB** (see
-[Color space, bit depth and blending](/docs/color-management/color-spaces/)).
-With **ProPhoto RGB** and **8-bit SDR**, the dialog recommends 16-bit SDR.
+## Color settings
 
-### Bit depth
+Choose the drawing's **Color space**, **Bit depth** and **Blending**. Float bit depths use **Linear light** blending. See [Color space, bit depth and blending](/docs/color-management/color-spaces/).
 
-**8-bit SDR**, **16-bit SDR**, **16-bit float HDR** or **32-bit float HDR**. A
-float bit depth makes an HDR drawing.
+## Creating the drawing
 
-### Blending
+Select **Create**. The drawing starts with an empty paint layer, **Current ink**, above the chosen Paper when one was included.
 
-**Perceptual** or **Linear light**. With a float bit depth, **Blending** is
-fixed to **Linear light**.
-
-### Background
-
-**White** or **Transparent**. **Transparent** hides the **Paper** layer.
-
-### Preset name
-
-Saves the settings as a preset under this name when you select **Create**. A
-name has up to 64 characters, and you can keep up to 64 presets.
-
-### Use these settings for new drawings
-
-When on, the dialog opens with these settings next time. The color space, bit
-depth and background also become the **New drawings** settings in
-[Preferences](/docs/preferences/).
-
-## The first layers
-
-![The Layers panel of a new drawing, with Current ink above Paper.](shot:files/new-layers)
-
-A new drawing has two layers. **Current ink**, an empty paint layer, is selected
-above **Paper**, a white fill layer (see [Layer types](/docs/layers/types/)).
-Layers you add later are named "Layer" and a number.
-
-## Other platforms
-
-On iPad, macOS and Android, a **Save Preset…** field and a **Use Defaults**
-option take the place of **Preset name** and **Use these settings for new
-drawings**. iPad and macOS have no **Remove saved preset** button.
-
-On Linux, **Save Preset…** opens a separate dialog for the name, and **Color
-space**, **Bit depth** and **Blending** are grouped under **Color**.
+The dialog retains the last choices used to create a drawing. Selecting a preset replaces them with that preset's values.

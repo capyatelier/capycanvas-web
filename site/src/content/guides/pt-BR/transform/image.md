@@ -1,27 +1,25 @@
 ---
 title: "Tamanho e rotação da imagem"
-description: "Os comandos de Editar > Imagem que mudam o tamanho e a orientação da imagem inteira."
+description: "Os comandos do menu Imagem que alteram o tamanho e a orientação da imagem inteira."
 related: ["transform/crop", "start/canvas", "files/new", "color-management/color-spaces"]
 ---
 
-Você pode redimensionar, girar e espelhar a imagem inteira em
-**Editar > Imagem**. A imagem continua no mesmo lugar na tela do monitor.
+Você pode redimensionar, girar e inverter a imagem inteira em **Imagem**. A imagem permanece no lugar na tela.
 
 Os comandos ficam indisponíveis enquanto um recorte ou uma transformação está
 aberto, e enquanto você edita uma máscara, a Máscara rápida ou uma camada de
 seleção. Para **Recortar** e **Recortar tela à seleção**, consulte
 [Recortar](/pt-BR/docs/transform/crop/).
 
-![O submenu Imagem do menu Editar.](shot:transform/image-menu)
+![O menu Imagem.](shot:transform/image-menu)
 
 ## Tamanho da imagem…
 
 Você pode dimensionar a imagem inteira ou mudar só a resolução dela.
 
-Escolha **Editar > Imagem > Tamanho da imagem…**. As camadas de pintura e as
-máscaras são reamostradas, e as fotos posicionadas mantêm os pixels originais.
-Seleções, guias e configurações de filtros medidas em pixels acompanham a escala
-da imagem.
+Escolha **Imagem > Tamanho da imagem…**. Camadas de pintura e máscaras são reamostradas e camadas de objeto mantêm seus pixels de origem. Seleções, guias e ajustes de filtro medidos em pixels são redimensionados com a imagem.
+
+Papel é reamostrado com a imagem. Alterar apenas a resolução atualiza sua escala física sem reamostrar os pixels.
 
 ![A caixa de diálogo Tamanho da imagem.](shot:transform/image-size-dialog)
 
@@ -50,8 +48,7 @@ ou **Vizinho mais próximo**.
 
 Você pode acrescentar ou remover tela ao redor da imagem sem reamostrar.
 
-Escolha **Editar > Imagem > Tamanho da tela…**. Os pixels fora de uma tela
-menor continuam nas camadas deles, ocultos, e uma tela maior volta a mostrá-los.
+Escolha **Imagem > Tamanho da tela…**. Os pixels fora de uma tela menor permanecem ocultos nas suas camadas e uma tela maior os mostra novamente.
 
 ![A caixa de diálogo Tamanho da tela.](shot:transform/canvas-size-dialog)
 
@@ -71,7 +68,7 @@ Escolhe, em uma grade 3 × 3, o lado ou o canto da imagem que fica no lugar.
 
 ## Girar e espelhar a imagem
 
-Escolha uma destas opções em **Editar > Imagem**:
+Escolha uma destas opções em **Imagem**:
 
 - **Girar imagem 90° à esquerda**
 - **Girar imagem 90° à direita**
@@ -85,10 +82,8 @@ não são reamostrados. Para girar ou espelhar só a visualização, consulte
 
 ## Aparar
 
-Escolha **Editar > Imagem > Aparar** para reduzir a tela aos pixels visíveis.
-Os pixels fora da nova tela continuam nas camadas deles, ocultos.
+Escolha **Imagem > Aparar** para reduzir a tela aos pixels visíveis. Os pixels fora da nova tela permanecem ocultos nas suas camadas.
 
 ## Revelar tudo
 
-Escolha **Editar > Imagem > Revelar tudo** para aumentar a tela até ela mostrar
-os pixels de todas as camadas, incluindo camadas ocultas e pixels fora da tela.
+Escolha **Imagem > Revelar tudo** para ampliar a tela até mostrar os pixels de todas as camadas, incluindo camadas ocultas e pixels fora da tela.

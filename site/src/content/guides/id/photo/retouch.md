@@ -12,7 +12,7 @@ foto tidak berubah.
 1. Pilih **Lapisan baru** di bagian bawah panel Lapisan, lalu ganti nama lapisan baru itu menjadi *Retouch*.
 2. Pilih **Lapisan > Pengaturan Lapisan > Gunakan lapisan di bawah sebagai acuan** ([Pengaturan lapisan](/id/docs/layers/settings/)).
 
-Lapisan foto menjadi lapisan acuan, dan ikon mercusuar muncul di samping ikon mata
+lapisan Objek menjadi lapisan acuan, dan ikon mercusuar muncul di samping ikon mata
 pada barisnya. Alat pemulih menyalin dari lapisan acuan secara bawaan dan melukis di
 *Retouch*.
 

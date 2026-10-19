@@ -5,7 +5,7 @@ related: ["layers/panel", "selections/working", "filters/how-filters-apply", "la
 ---
 
 Bạn có thể ẩn một phần lớp bằng mặt nạ. Vùng được vẽ trên mặt nạ hiện lớp, còn vùng
-trống ẩn lớp. Lớp vẽ, lớp ảnh, nhóm, lớp tô màu và bộ lọc đều có thể có mặt nạ.
+trống ẩn lớp. Lớp vẽ, lớp Đối tượng, nhóm, lớp tô màu và bộ lọc đều có thể có mặt nạ.
 
 ## Thêm mặt nạ
 
@@ -107,10 +107,10 @@ Thực hiện một trong các cách sau:
 - Chọn **Áp dụng mặt nạ** trên thanh sửa mặt nạ.
 
 **Áp dụng mặt nạ vào lớp** chỉ dùng được với lớp vẽ, và mặt nạ phải đang bật. Trên
-lớp đã bị làm méo hoặc uốn cong, hãy chọn **Áp dụng biến đổi vào pixel** trước. Để
+lớp đã bị làm méo hoặc uốn cong, hãy chọn **Áp dụng biến đổi** trước. Để
 áp dụng mặt nạ của nhóm, dùng **Gộp nhóm** (xem [Gộp lớp](/vi/docs/layers/merging/)).
 
-Trên lớp ảnh, **Trở về ảnh gốc** khôi phục phần mà mặt nạ đã áp dụng xóa đi.
+Áp dụng mặt nạ cho lớp Đối tượng sẽ chuyển lớp thành ảnh điểm.
 
 ## Mặt nạ trên lớp bộ lọc và lớp tô màu
 

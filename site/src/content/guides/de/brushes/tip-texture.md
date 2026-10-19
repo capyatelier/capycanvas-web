@@ -1,12 +1,10 @@
 ---
 title: "Spitze und Textur"
-description: "Die Einstellungen unter Spitze, die jeden Pinselabdruck formen, und Texturstärke für die Papierkörnung im Strich."
+description: "Die Spitzeneinstellungen für jeden Abdruck und die Texturstärke für Papiertextur in einer Markierung."
 related: ["brushes/basics", "brushes/wet-media", "drawing/brush-tools"]
 ---
 
-Mit den Einstellungen **Spitze** und **Textur** im Bedienfeld **Werkzeug** können Sie
-die Form jedes Pinselabdrucks ändern und festlegen, wie viel Papierkörnung im Strich
-sichtbar wird ([Größe, Deckkraft und Fluss](/de/docs/brushes/basics/)).
+Mit den Einstellungen **Spitze** und **Textur** im Bedienfeld **Werkzeug** können Sie die Form jedes Abdrucks und den Einfluss der Papiertextur auf die Markierung ändern ([Größe, Stärke und Deckkraft](/de/docs/brushes/basics/)).
 
 ![Das Bedienfeld Werkzeug für Bleistift mit den Gruppen Spitze und Textur.](shot:brushes/tip-texture-settings)
 
@@ -24,7 +22,7 @@ Legt den Abstand zwischen den Pinselabdrücken fest, in Prozent des Durchmessers
 aktuellen Druck. Der Schieberegler reicht bis 100%, eingeben können Sie Werte bis
 1000%.
 
-### Winkel
+### Spitzenwinkel
 
 Dreht die Spitze, von −180° bis 180°. Eine runde Spitze sieht in jedem Winkel gleich aus.
 
@@ -40,14 +38,9 @@ vollen Umdrehung in beide Richtungen.
 
 ## Spitzen, die sich mit dem Strich drehen
 
-Die Spitzen von **Malpinsel**, **Flacher Texturpinsel**, **Pastellblock**,
-**Transparente Lasur**, **Deckende Gouache**, **Satter Ölpinsel**, **Malmesser**,
-**Aquarelllasur**, **Nasses Aquarell**, **Doppelte Textur** und **Natürlicher
-Mischpinsel** folgen der Strichrichtung. **Winkel** wirkt sich bei diesen Pinseln
-nicht aus.
+Die Spitzen von **Malpinsel**, **Flacher Texturpinsel**, **Pastellblock**, **Transparente Lasur**, **Deckende Gouache**, **Satter Ölpinsel**, **Malmesser**, **Aquarelllasur**, **Nasses Aquarell**, **Doppelte Textur** und **Natürlicher Mischpinsel** folgen der Strichrichtung. **Spitzenwinkel** wirkt sich auf diese Pinsel nicht aus.
 
-**Trockenes Schummern** und **Realistische Pinseltinte** addieren die Strichrichtung
-zu **Winkel**.
+**Trockenes Schummern** und **Realistische Pinseltinte** addieren die Strichrichtung zu **Spitzenwinkel**.
 
 ## Textur
 
@@ -56,12 +49,10 @@ zu **Winkel**.
 Lasur**, **Deckende Gouache**, **Satter Ölpinsel**, **Malmesser**, **Doppelte
 Textur** und **Natürlicher Mischpinsel**.
 
-Die Körnung ist fest an die Leinwand gebunden. Jeder Pinsel hat seine eigene Körnung.
-Ihre Größe lässt sich nicht ändern, und eine andere Körnung lässt sich nicht wählen.
+Trockenmedium-Pinsel lesen die Textur des nächsten Papiers unter ihrer Zielebene. Wählen und skalieren Sie diese Textur unter [Papier](/de/docs/layers/paper/).
 
 ### Texturstärke
 
-Legt fest, wie stark die Papierkörnung im Strich sichtbar wird. Bei 0% hat die
-Körnung keine Wirkung, bei 100% folgt die Farbe vollständig der Körnung.
+Legt fest, wie stark die Papiertextur den Materialauftrag verändert. Bei 0 % hat die Textur keine Wirkung.
 
 ![Drei Striche mit Kohle bei Texturstärke 0%, 50% und 100%.](shot:brushes/texture-strength)

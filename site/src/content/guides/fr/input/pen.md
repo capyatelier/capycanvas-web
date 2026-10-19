@@ -1,24 +1,16 @@
 ---
 title: "Stylet"
-description: "Les réglages du stylet dans les Préférences, et le double-toucher et la pression sur l’Apple Pencil."
-related: ["input/touch", "input/keyboard", "preferences", "brushes/basics"]
+description: "Les réglages du stylet dans les Préférences, le double toucher et le pincement de l’Apple Pencil."
+related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-Les réglages du stylet se trouvent sur la page **Stylet et saisie** d’**Édition > Préférences**.
+Les réglages du stylet sont sur la page **Stylet et saisie** de **Édition > Préférences**.
 
 ![La page Stylet et saisie des Préférences.](shot:pen/pen-and-input)
 
-## Réponse à la pression
+## Pression du stylet
 
-Vous pouvez modifier la réaction du stylet à une pression légère avec
-**Réponse à la pression** sous **Réponse du stylet**. Les valeurs faibles amplifient une
-pression légère, et les valeurs élevées demandent plus de force. La plage va de
-0,25 × à 4,00 ×. À la valeur par défaut, 1,00 ×, la pression du stylet est
-utilisée telle quelle.
-
-Le réglage s’applique à tous les pinceaux et à tous les outils, y compris
-**Peindre la sélection** et **Masque rapide**. Les traits déjà dessinés ne
-changent pas.
+Sélectionnez **Ajuster…** à côté de **Pression du stylet** pour modeler la courbe de pression et la tester sur la toile actuelle. La courbe s’applique à tous les pinceaux et outils sensibles à la pression ; les traits déjà dessinés ne changent pas. Voir [Pression du stylet](/fr/docs/input/pen-pressure/).
 
 ## Prédiction des traits
 

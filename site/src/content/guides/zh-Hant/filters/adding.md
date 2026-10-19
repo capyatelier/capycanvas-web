@@ -53,7 +53,7 @@ related: ["filters/how-filters-apply", "filters/tone", "filters/color", "start/c
 
 ![從圖層面板底部開啟的新增濾鏡選單。](shot:filters/add-filter-menu)
 
-**新增濾鏡**適用於未鎖定的繪畫圖層、照片圖層以及未設為穿透的圖層群組。其選單包含除**填色**以外的所有類別。
+**新增濾鏡** 可用於未鎖定的繪畫圖層、物件圖層和未設為穿透的組。其選單包含除 **填色** 之外的所有類別。
 
 ## 「素描」中的濾鏡抽屜
 

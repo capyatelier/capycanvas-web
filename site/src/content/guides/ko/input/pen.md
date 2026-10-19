@@ -1,18 +1,16 @@
 ---
 title: "펜"
 description: "환경 설정의 펜 설정과 Apple Pencil 이중 탭 및 스퀴즈."
-related: ["input/touch", "input/keyboard", "preferences", "brushes/basics"]
+related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
 펜 설정은 **편집 > 환경 설정**의 **펜 및 입력** 페이지에 있습니다.
 
 ![환경 설정의 펜 및 입력 페이지.](shot:pen/pen-and-input)
 
-## 필압 반응
+## 필압
 
-**펜 반응** 아래의 **필압 반응**으로 약한 필압에 펜이 반응하는 방식을 바꿀 수 있습니다. 값이 낮을수록 약한 필압이 강하게 반영되고, 값이 높을수록 더 세게 눌러야 합니다. 범위는 0.25 ×에서 4.00 ×까지입니다. 기본값인 1.00 ×에서는 펜의 필압이 그대로 사용됩니다.
-
-이 설정은 **선택 영역 그리기**와 **빠른 마스크**를 포함한 모든 브러시와 도구에 적용됩니다. 이미 그린 획은 바뀌지 않습니다.
+**필압** 옆의 **조정…** 버튼을 선택해 필압 곡선을 바꾸고 현재 캔버스에서 시험합니다. 곡선은 필압에 반응하는 모든 브러시와 도구에 적용되며 이미 그린 선은 바뀌지 않습니다. [필압](/ko/docs/input/pen-pressure/)을 참조합니다.
 
 ## 획 예측
 

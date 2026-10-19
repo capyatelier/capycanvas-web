@@ -22,7 +22,7 @@ predefinito.
 
 Puoi riportare un'impostazione al valore integrato del pennello. Fai doppio clic
 (o doppio tocco) sull'etichetta o sull'icona dell'impostazione nella barra Opzioni
-strumento ([Dimensioni, opacità e flusso](/it/docs/brushes/basics/)).
+strumento ([Dimensioni, intensità e opacità](/it/docs/brushes/basics/)).
 
 Il pannello **Strumento** non ha un ripristino. Per ripristinare **Mescolanza dei
 colori**, seleziona **Mescolanza Oklab**, la scelta integrata di tutti i pennelli

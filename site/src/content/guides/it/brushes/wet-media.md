@@ -8,7 +8,7 @@ Puoi impostare come i pennelli bagnati e di sfumatura trattano il colore nel
 pannello **Strumento**. Ogni gruppo compare solo sui pennelli elencati nella sua
 sezione.
 
-![Il pannello Strumento per Acquerello bagnato con i gruppi Mescolanza, Acquerello e Diffusione e i pulsanti della mescolanza dei colori.](shot:brushes/wet-media-settings)
+![Il pannello Strumento per Acquerello bagnato con Mescolanza dei colori e i gruppi Mescolanza, Acquerello e Diffusione.](shot:brushes/wet-media-settings)
 
 ## Mescolanza
 
@@ -76,8 +76,8 @@ Puoi scegliere come un pennello che mescola combina i colori che preleva.
 
 Esegui una delle seguenti operazioni:
 
-- Seleziona **Mescolanza Oklab**, **Mescolanza in luce lineare** o **Mescolanza classica** in fondo al pannello **Strumento**.
-- Scegli da **Mescolanza dei colori** nella barra Opzioni strumento ([Dimensioni, opacità e flusso](/it/docs/brushes/basics/)).
+- Scegli **Mescolanza Oklab**, **Mescolanza in luce lineare** o **Mescolanza classica** da **Mescolanza dei colori** nel pannello **Strumento**.
+- Apri **Altre opzioni strumento** nella barra Opzioni strumento, poi scegli **Mescolanza dei colori** nel cassetto Strumento ([Dimensioni, intensità e opacità](/it/docs/brushes/basics/)).
 - Cerca il nome della scelta nella ricerca comandi.
 
 | Scelta | Mescolanza |
@@ -90,7 +90,7 @@ Tutti i pennelli integrati che mescolano partono da **Mescolanza Oklab**. La
 scelta viene salvata con il pennello, e l'impostazione **Fusione** del disegno
 non la modifica. Per un pennello che non mescola, le scelte non sono disponibili.
 
-![Il menu Mescolanza dei colori aperto nella barra Opzioni strumento per Olio carico.](shot:brushes/color-mixing-menu)
+![Mescolanza dei colori nel cassetto Strumento.](shot:brushes/color-mixing-menu)
 
 ## Setole
 

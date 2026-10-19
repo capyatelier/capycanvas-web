@@ -1,7 +1,7 @@
 ---
 title: "빠른 시작"
 description: "{appName} 열기, 첫 빈 그림에 그리기, .capy 파일로 저장하기, PNG 내보내기."
-related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
+related: ["start/workspaces", "start/device-support", "files/new", "files/open-save", "files/export"]
 ---
 
 ## {appName} 열기
@@ -11,15 +11,7 @@ related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard
 - [editor.capycanvas.art](https://editor.capycanvas.art/)에서 웹 편집기를 엽니다.
 - [다운로드](/ko/download/) 페이지에서 데스크톱 앱이나 iPad·Android 베타를 받거나, 웹 편집기를 앱으로 설치하는 방법을 확인합니다.
 
-웹 편집기는 다음 브라우저에서 실행됩니다.
-
-| 시스템 | 브라우저 |
-| --- | --- |
-| Windows | Chrome, Edge, Firefox 141 이상 |
-| macOS | Chrome, Edge, Safari 26 이상, Firefox 147 이상(Apple 실리콘) |
-| Linux(Wayland) | Chrome, Edge |
-| iPadOS 26 이상 | Safari |
-| Android 12 이상 | Chrome |
+기본 앱과 웹 브라우저의 개별 요구 사항은 [지원 기기](/ko/docs/start/device-support/)를 참조합니다.
 
 한 번 접속한 뒤에는 인터넷에 연결되어 있지 않아도 웹 편집기가 열립니다.
 
@@ -27,10 +19,7 @@ related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard
 
 ![새 그림의 레이어 패널. 종이 위에 현재 잉크가 있습니다.](shot:files/new-layers)
 
-{appName}를 처음 열면 [페인팅](/ko/docs/start/workspaces/) 작업 영역에 빈 그림이 표시되고,
-제목 표시줄에 “제목 없음 · 2048 × 1536”이 나타납니다. 흰색 채우기 레이어인 **종이** 위에서
-빈 페인팅 레이어인 **현재 잉크**가 선택되어 있습니다. 도구는 **펜**, 브러시는 **G펜**이고
-색은 검은색에 가까운 색입니다.
+{appName}을 처음 열면 [페인트](/ko/docs/start/workspaces/) 작업 공간에 300 ppi의 A4 가로 방향 빈 그림이 나타납니다. **종이** 위의 빈 페인트 레이어인 **현재 잉크**가 선택됩니다. **펜** 도구의 **G펜** 브러시와 검정에 가까운 색이 활성화됩니다.
 
 그다음부터는 마지막으로 사용한 작업 영역과 열려 있던 그림으로 {appName}가 열립니다.
 
@@ -56,8 +45,7 @@ related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard
 
 ## 다른 그림 시작하기
 
-**파일 > 새로 만들기…** 메뉴를 선택하고 [새 그림](/ko/docs/files/new/) 대화 상자에서 **만들기**를
-선택합니다. 새 그림은 첫 그림 옆의 별도 탭에서 열립니다.
+**파일 > 새로 만들기…** 명령을 선택하고 [새 그림](/ko/docs/files/new/) 대화상자에서 **만들기**를 선택합니다. 크기, 해상도, 종이 및 색상 설정을 고른 다음 **만들기**를 선택합니다. 새 그림은 첫 그림 옆의 별도 탭에 열립니다.
 
 ## 그림 저장하기
 

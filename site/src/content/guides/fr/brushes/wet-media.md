@@ -8,7 +8,7 @@ Vous pouvez régler la façon dont les pinceaux humides et de mélange travaille
 peinture dans le panneau **Outil**. Chaque groupe n’apparaît que sur les pinceaux
 cités dans sa section.
 
-![Le panneau Outil pour Aquarelle humide avec les groupes Mélange, Aquarelle et Diffusion, et les boutons de mélange de couleurs.](shot:brushes/wet-media-settings)
+![Le panneau Outil pour Aquarelle humide avec Mélange de couleurs et les groupes Mélange, Aquarelle et Diffusion.](shot:brushes/wet-media-settings)
 
 ## Mélange
 
@@ -77,9 +77,9 @@ prélève.
 
 Effectuez l’une des opérations suivantes :
 
-- Sélectionnez **Mélange Oklab**, **Mélange en lumière linéaire** ou **Mélange classique** en bas du panneau **Outil**.
-- Choisissez une option dans le menu **Mélange de couleurs** de la barre Options de l’outil ([Taille, opacité et débit](/fr/docs/brushes/basics/)).
-- Cherchez le nom du choix dans la recherche de commandes.
+- Choisissez **Mélange Oklab**, **Mélange en lumière linéaire** ou **Mélange classique** dans **Mélange de couleurs** du panneau **Outil**.
+- Ouvrez **Autres options de l’outil** dans la barre Options de l’outil, puis choisissez **Mélange de couleurs** dans le tiroir Outil ([Taille, intensité et opacité](/fr/docs/brushes/basics/)).
+- Recherchez le nom du choix dans la recherche de commandes.
 
 | Choix | Mélange |
 | --- | --- |
@@ -91,7 +91,7 @@ Tous les pinceaux de mélange intégrés commencent sur **Mélange Oklab**. Le c
 est enregistré avec le pinceau, et le réglage **Fusion** du dessin ne le modifie
 pas. Pour un pinceau qui ne mélange pas, les choix ne sont pas disponibles.
 
-![Le menu Mélange de couleurs ouvert dans la barre Options de l’outil pour Huile chargée.](shot:brushes/color-mixing-menu)
+![Mélange de couleurs dans le tiroir Outil.](shot:brushes/color-mixing-menu)
 
 ## Soies
 

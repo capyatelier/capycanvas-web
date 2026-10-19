@@ -23,9 +23,7 @@ dalam grup itu, kecuali jika grup disetel ke [Lewat Langsung](/id/docs/layers/se
 
 ## Filter terlampir
 
-Anda dapat melampirkan filter ke lapisan lukis, lapisan foto, atau grup yang tidak
-disetel ke Lewat Langsung. Pilih lapisannya, lalu pilih **Tambahkan filter** di
-bagian bawah panel Lapisan atau panel **Properti**, atau di menu lapisan.
+Anda dapat melampirkan filter ke lapisan cat, lapisan Objek, atau grup yang tidak diatur ke Lewati. Pilih lapisan, lalu pilih **Tambahkan filter** di bagian bawah panel Lapisan atau panel **Properti**, atau di menu lapisan.
 
 Filter terlampir diterapkan dari bawah rantai ke atas, setelah mask lapisan dan
 sebelum opasitas serta mode baurnya. Pada dasar kliping, filter ini juga mengubah
@@ -54,7 +52,7 @@ lapisan tempat filter itu tadinya dilampirkan beserta lapisan yang diklip ke lap
 itu.
 
 Tombol ini tidak tersedia selama filter atau lapisan di bawahnya terkunci. Jika
-lapisan di bawahnya bukan lapisan lukis, lapisan foto, atau grup, keterangan
+lapisan di bawahnya bukan lapisan lukis, lapisan Objek, atau grup, keterangan
 alatnya bertuliskan "Tidak ada lapisan di bawah untuk ditautkan".
 
 ## Seleksi sebagai mask filter

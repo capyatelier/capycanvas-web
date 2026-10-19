@@ -21,9 +21,10 @@ Lakukan salah satu langkah berikut:
 - Pilih **Tampilan > Perbesar** atau **Tampilan > Perkecil**.
 - Tekan **Ctrl+=** atau **Ctrl+-**.
 - Tahan **Ctrl** dan gulir. Di macOS dan iPad, tahan **Control**, bukan Command.
-- Cubit dengan dua jari di layar sentuh, atau di trackpad pada macOS dan iPad.
+- Cubit dengan dua jari di layar sentuh, atau di trackpad pada macOS dan iPad, saat **Putar dengan dua jari** aktif dalam Preferensi.
 - Pilih level zum di menu indikator zum, atau tombol zum di panel **Navigator**.
 - Dorong stik kanan pengontrol game ke atas atau ke bawah.
+- Pilih alat **Zoom**, lalu klik atau seret sesuai pengaturan Alatnya.
 
 Zum berkisar dari 2% hingga 1600%. **Ctrl**+gulir melakukan zum dengan penunjuk sebagai
 pusatnya, dan cubitan melakukan zum di sekitar jari Anda. **Kecepatan zum saat menggulir**
@@ -37,6 +38,12 @@ pembalikan tetap dipertahankan.
 
 Gambar disesuaikan saat dibuka, tetapi tidak lagi saat Anda mengubah ukuran jendela.
 
+## Alat Zum
+
+Pilih **Zoom** di bilah Alat, atau tahan tombol akses sementaranya, lalu gunakan kanvas. Pengaturan **Klik** memilih apakah klik memperbesar atau memperkecil. **Seret** memilih zum berkelanjutan, area zum, tindakan klik kebalikan, atau klik saja.
+
+![Pengaturan Klik dan Seret untuk alat Zum.](shot:start/zoom-tool-settings)
+
 ## Piksel Aktual
 
 Pilih **Tampilan > Piksel Aktual**, atau tekan **Ctrl+1** atau **Ctrl+Alt+0**, untuk
@@ -48,7 +55,7 @@ menyediakan 25%, 50%, 200%, dan 400%. Pada level ini, dengan tampilan diputar 0�
 
 Lakukan salah satu langkah berikut:
 
-- Gulir. Tahan **Shift** dan gulir untuk bergerak ke samping.
+- Gulir saat **Roda mouse** diatur ke geser dalam [Preferensi](/id/docs/preferences/). Tahan **Shift** dan gulir untuk bergerak ke samping.
 - Tahan **Spasi** dan seret.
 - Seret dengan dua jari di layar sentuh.
 - Pilih alat **Tangan** atau tekan **H**, lalu seret.
@@ -64,7 +71,7 @@ per langkah gulir.
 Lakukan salah satu langkah berikut:
 
 - Pilih **Tampilan > Putar tampilan 90° ke kiri** atau **Tampilan > Putar tampilan 90° ke kanan**.
-- Putar dua jari di layar sentuh, atau di trackpad pada macOS dan iPad.
+- Putar dua jari di layar sentuh, atau di trackpad pada macOS dan iPad, saat **Putar dengan dua jari** aktif dalam Preferensi.
 - Ketik sudut atau seret penggeser rotasi di menu indikator zum.
 - Pilih tombol putar di panel **Navigator**.
 

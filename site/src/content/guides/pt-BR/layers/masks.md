@@ -4,9 +4,7 @@ description: "Como ocultar partes de uma camada com uma máscara, e todos os com
 related: ["layers/panel", "selections/working", "filters/how-filters-apply", "layers/merging"]
 ---
 
-Você pode ocultar partes de uma camada com uma máscara. As áreas pintadas na
-máscara mostram a camada, e as áreas vazias a ocultam. Camadas de pintura,
-camadas de foto, grupos, camadas de preenchimento e filtros podem ter máscaras.
+Você pode ocultar partes de uma camada com uma máscara. As áreas pintadas na máscara mostram a camada e as áreas vazias a ocultam. Camadas de pintura, de objeto, grupos, camadas de preenchimento e filtros podem ter máscaras.
 
 ## Adicionar uma máscara
 
@@ -109,13 +107,9 @@ Faça uma das seguintes ações:
 - Escolha **Camada > Máscara > Aplicar máscara à camada**.
 - Selecione **Aplicar máscara** na barra de edição da máscara.
 
-**Aplicar máscara à camada** só funciona em camadas de pintura, e a máscara
-precisa estar ativada. Em uma camada distorcida ou deformada, escolha
-**Aplicar transformação aos pixels** antes. Para aplicar a máscara de um grupo,
-use **Mesclar grupo** (consulte [Mesclar camadas](/pt-BR/docs/layers/merging/)).
+**Aplicar máscara à camada** funciona apenas em camadas de pintura e a máscara deve estar ativada. Em uma camada distorcida ou deformada, escolha **Aplicar transformação** primeiro. Para aplicar a máscara de um grupo, use **Mesclar grupo** (consulte [Mesclar camadas](/pt-BR/docs/layers/merging/)).
 
-Em uma camada de foto, **Reverter para foto original** restaura o que uma
-máscara aplicada apagou.
+Aplicar uma máscara a uma camada de objeto a rasteriza.
 
 ## Máscaras em camadas de filtro e de preenchimento
 

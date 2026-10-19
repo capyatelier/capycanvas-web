@@ -16,7 +16,7 @@ shows Ctrl on every computer, and on a Mac, Command works as Ctrl.
 
 Do one of the following:
 
-- Choose **Help > Keyboard Shortcuts**.
+- Choose **Edit > Keyboard Shortcuts**.
 - Press **Ctrl+Shift+?**.
 - Choose **Edit > Preferences** and select **Keyboard Shortcuts**.
 

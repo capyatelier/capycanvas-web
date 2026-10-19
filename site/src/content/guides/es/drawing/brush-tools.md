@@ -1,21 +1,22 @@
 ---
 title: "Herramientas de pincel"
-description: "Las herramientas de pincel, sus ajustes preestablecidos integrados y dónde se eligen."
-related: ["brushes/basics", "drawing/blend-liquify", "color/color-panel", "input/keyboard"]
+description: "Las herramientas de pincel, sus preajustes incluidos y dónde elegirlos."
+related: ["brushes/basics", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
 ---
 
-Puedes pintar con las herramientas **Pluma**, **Lápiz**, **Pincel de pintura**,
-**Aerógrafo** y **Decoración**, y borrar con el **Borrador**. Cada herramienta
-contiene uno o varios grupos de ajustes preestablecidos de pincel integrados.
+Puedes pintar con las herramientas **Pluma**, **Lápiz**, **Carboncillo**, **Tiza**, **Pastel**, **Crayón**, **Pincel de pintura**, **Aerógrafo** y **Decoración**, y borrar con **Borrador**. Cada herramienta contiene uno o varios grupos de preajustes de pincel incluidos.
 
 ## Herramientas y ajustes preestablecidos
 
-| Herramienta | Grupos | Ajustes preestablecidos |
+| Herramienta | Grupos | Preajustes |
 | --- | --- | --- |
 | **Pluma** | **Pluma** | **Plumilla G**, **Plumilla G rugosa**, **Pluma de caligrafía**, **Pluma antigua**, **Pluma realista**, **Tinta húmeda**, **Tinta con manchas**, **Tinta de pincel realista** |
 | | **Marcador** | **Marcador** |
 | **Lápiz** | **Lápiz** | **Lápiz**, **Lápiz afilado**, **Lápiz de sombreado** |
-| | **Pastel** | **Carboncillo**, **Tiza**, **Bloque de pastel** |
+| **Carboncillo** | **Carboncillo** | **Carboncillo** |
+| **Tiza** | **Tiza** | **Tiza** |
+| **Pastel** | **Pastel** | **Bloque de pastel** |
+| **Crayón** | **Crayón** | **Crayón** |
 | **Pincel de pintura** | **Pintura** | **Pincel de pintura**, **Pincel de cerdas**, **Pincel plano con textura**, **Restregado en seco**, **Veladura transparente**, **Gouache opaco**, **Veladura multiplicar** |
 | | **Acuarela** | **Aguada de acuarela**, **Acuarela húmeda** |
 | | **Pintura al óleo** | **Óleo cargado**, **Espátula**, **Pincel redondo húmedo** |
@@ -33,13 +34,13 @@ pintan con el color actual del [panel de color](/es/docs/color/color-panel/).
 Estos comportamientos están integrados en los ajustes preestablecidos y no se
 controlan con ningún ajuste.
 
-| Ajuste preestablecido | Comportamiento |
+| Preajuste | Comportamiento |
 | --- | --- |
-| **Pluma de caligrafía**, **Pluma antigua** | Plumín en ángulo. |
+| **Pluma de caligrafía**, **Pluma antigua** | Plumilla inclinada. |
 | **Marcador** | Punta biselada. |
-| **Lápiz**, **Lápiz afilado**, **Lápiz de sombreado**, **Carboncillo** | Un trazo más ancho al inclinar el lápiz. |
+| **Lápiz**, **Lápiz afilado**, **Lápiz de sombreado**, **Carboncillo**, **Tiza**, **Bloque de pastel**, **Crayón** | La presión y la inclinación cambian la forma y la cobertura de la marca. Consulta [Medios secos](/es/docs/brushes/dry-media/). |
 | **Aerógrafo** | Sigue añadiendo pintura mientras mantienes el lápiz quieto. |
-| **Pulverizador** | Dispersa sus toques alrededor del trazo. |
+| **Pulverizador** | Dispersa las marcas alrededor del trazo. |
 | **Veladura multiplicar** | Pinta en modo Multiplicar. |
 
 ## Seleccionar una herramienta de pincel
@@ -125,9 +126,9 @@ En las siguientes capas, un trazo no pinta nada y un aviso indica el motivo:
 
 - Un grupo o una capa de selección.
 - Una capa de relleno sin máscara.
-- Una capa con **Bloquear edición** activado, o dentro de un grupo bloqueado.
-- Una capa de filtro sin máscara, cuando la capa de debajo está bloqueada o no existe.
-- Una capa escalada o girada, hasta que eliges **Aplicar transformación a píxeles** ([Mover y transformar](/es/docs/transform/move-transform/)).
+- Una capa con **Bloquear edición** activado o dentro de un grupo bloqueado.
+- Una capa de filtro sin máscara cuando la capa de debajo está bloqueada o no existe.
+- Una capa escalada o girada, hasta que elijas **Aplicar transformación** ([Mover y transformar](/es/docs/transform/move-transform/)).
 
 Los pinceles húmedos, de mezcla y de acuarela pintan cobertura simple en una
 máscara. El primer trazo de este tipo en cada máscara muestra un aviso.

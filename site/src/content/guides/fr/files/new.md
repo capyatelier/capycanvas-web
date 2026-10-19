@@ -1,105 +1,49 @@
 ---
 title: "Nouveaux dessins"
-description: "La boîte de dialogue Nouveau dessin et les calques avec lesquels commence un nouveau dessin."
-related: ["color-management/color-spaces", "layers/types", "files/open-save"]
+description: "Le format de feuille, la résolution, le papier, les réglages de couleur et les préréglages de la boîte de dialogue Nouveau dessin."
+related: ["layers/paper", "color-management/color-spaces", "layers/types", "files/open-save"]
 ---
 
-Vous pouvez commencer un dessin dans la boîte de dialogue **Nouveau dessin**. Le
-nouveau dessin s’ouvre dans son propre onglet, et le dessin en cours reste
-ouvert.
+Choisissez **Fichier > Nouveau…**, appuyez sur **Ctrl+N** si disponible, ou sélectionnez **Nouveau…** dans la barre Commandes. Le nouveau dessin s’ouvre dans son propre onglet.
 
-## Ouvrir la boîte de dialogue Nouveau dessin
+![La boîte de dialogue Nouveau dessin avec les dimensions A4, une résolution de 300 ppi, les réglages de couleur et de Papier, et Créer.](shot:files/new-dialog)
 
-Effectuez l’une des opérations suivantes :
+## Préréglages
 
-- Choisissez **Fichier > Nouveau…**.
-- Appuyez sur **Ctrl+N** (sauf dans l’éditeur web).
-- Dans Peinture et Photo, sélectionnez **Nouveau…** dans la barre d’outils Commandes.
+Choisissez un préréglage par catégorie, recherchez-le par nom ou sélectionnez un préréglage récent. Un préréglage renseigne les dimensions, la résolution et les réglages de couleur et de Papier.
 
-Choisissez les réglages ci-dessous, puis sélectionnez **Créer**.
+![Le navigateur de préréglages de Nouveau dessin.](shot:files/new-presets)
 
-**Nouveau…** n’est pas disponible pendant un recadrage ou une transformation. Si
-trop de données de dessin sont déjà ouvertes, le nouveau dessin ne s’ouvre pas
-tant que vous n’avez pas fermé certains dessins.
+Avant que vous ayez utilisé ou enregistré une autre configuration, Préréglages sélectionne **Carnet A4** : A4 portrait (210 × 297 mm), papier Dessin en Blanc naturel et 2480 × 3508 px à 300 ppp.
 
-## Réglages
+Enregistrez les réglages actuels comme préréglage nommé pour les réutiliser. Ouvrez le menu d’un préréglage enregistré pour le renommer ou le supprimer. Les préréglages intégrés ne peuvent pas être renommés ni supprimés.
 
-![La boîte de dialogue Nouveau dessin avec le préréglage Dessin standard.](shot:files/new-dialog)
+## Feuille
 
-### Préréglage
+L’aperçu montre les proportions et l’orientation de la feuille. Saisissez un nom de dessin, puis définissez **Largeur** et **Hauteur** en pixels, pouces, centimètres ou millimètres. Utilisez la commande de liaison pour conserver les proportions actuelles, et la commande d’orientation pour échanger largeur et hauteur.
 
-Remplit tous les champs à partir d’un préréglage intégré ou d’un préréglage que
-vous avez enregistré. Modifier ensuite un champ fait passer **Préréglage** sur
-**Personnalisé**.
+**Résolution** définit les pixels par pouce utilisés pour les dimensions physiques et l’échelle de la [texture du Papier](/fr/docs/layers/paper/). Modifier uniquement la résolution change les métadonnées de taille d’impression sans rééchantillonner le dessin.
 
-Tous les préréglages intégrés font 2048 × 1536 pixels sur fond blanc.
+Une nouvelle fenêtre démarre avec un dessin vierge distinct au format A4 paysage à 300 ppp (3508 × 2480 px).
 
-| Préréglage | Espace colorimétrique | Profondeur de couleur | Fusion |
-| --- | --- | --- | --- |
-| **Dessin standard** | sRGB | SDR 8 bits | Perceptuelle |
-| **Couleurs étendues** | Display P3 | SDR 8 bits | Perceptuelle |
-| **Retouche photo** | ProPhoto RGB | SDR 16 bits | Perceptuelle |
-| **Dessin HDR** | sRGB | HDR flottant 16 bits | Lumière linéaire |
+La boîte de dialogue affiche les dimensions obtenues en pixels et la capacité estimée. Les réglages dépassant la limite actuelle de dessin de l’appareil ne peuvent pas être créés ; cette limite dépend des dimensions, de la profondeur de couleur et des ressources graphiques disponibles.
 
-### Supprimer le préréglage enregistré
+## Papier
 
-Supprime le préréglage enregistré sélectionné. Les préréglages intégrés ne
-peuvent pas être supprimés.
+![Les textures de Papier proposées dans Nouveau dessin.](shot:files/new-paper)
 
-### Largeur (px) et Hauteur (px)
+Choisissez une texture de Papier intégrée ou importée pour le nouveau dessin. **Importer…** ajoute une image à la bibliothèque de papiers et la sélectionne. Choisissez **Sans papier** pour créer le dessin sans calque Papier.
 
-De 1 à 8192 pixels. Les champs acceptent des calculs comme « 160*2 ».
+![Les choix Couleur et Transparent du Papier dans Nouveau dessin.](shot:files/new-paper-color)
 
-### Espace colorimétrique
+**Couleur** définit la couleur du Papier. **Transparent** conserve le calque Papier mais le masque au départ. Ce choix diffère de **Sans papier**, qui ne crée aucun calque Papier.
 
-**sRGB**, **Display P3**, **Adobe RGB (1998)** ou **ProPhoto RGB** (voir
-[Espace colorimétrique, profondeur de couleur et fusion](/fr/docs/color-management/color-spaces/)).
-Avec **ProPhoto RGB** et **SDR 8 bits**, la boîte de dialogue recommande le
-SDR 16 bits.
+## Réglages de couleur
 
-### Profondeur de couleur
+Choisissez **Espace colorimétrique**, **Profondeur de couleur** et **Fusion** du dessin. Les profondeurs flottantes utilisent la fusion **Lumière linéaire**. Voir [Espace colorimétrique, profondeur de couleur et fusion](/fr/docs/color-management/color-spaces/).
 
-**SDR 8 bits**, **SDR 16 bits**, **HDR flottant 16 bits** ou
-**HDR flottant 32 bits**. Une profondeur de couleur en virgule flottante crée un dessin HDR.
+## Créer le dessin
 
-### Fusion
+Sélectionnez **Créer**. Le dessin commence avec un calque de peinture vide, **Encre actuelle**, au-dessus du Papier choisi si vous en avez inclus un.
 
-**Perceptuelle** ou **Lumière linéaire**. Avec une profondeur de couleur en
-virgule flottante, **Fusion** est fixé sur **Lumière linéaire**.
-
-### Arrière-plan
-
-**Blanc** ou **Transparent**. **Transparent** masque le calque **Papier**.
-
-### Nom du préréglage
-
-Enregistre les réglages comme préréglage sous ce nom quand vous sélectionnez
-**Créer**. Un nom compte jusqu’à 64 caractères, et vous pouvez conserver jusqu’à
-64 préréglages.
-
-### Utiliser ces réglages pour les nouveaux dessins
-
-Quand cette option est activée, la boîte de dialogue s’ouvre avec ces réglages la
-fois suivante. L’espace colorimétrique, la profondeur de couleur et l’arrière-plan
-deviennent aussi les réglages **Nouveaux dessins** des
-[Préférences](/fr/docs/preferences/).
-
-## Les premiers calques
-
-![Le panneau Calques d’un nouveau dessin, avec Encre actuelle au-dessus de Papier.](shot:files/new-layers)
-
-Un nouveau dessin a deux calques. **Encre actuelle**, un calque de peinture vide,
-est sélectionné au-dessus de **Papier**, un calque de remplissage blanc (voir
-[Types de calques](/fr/docs/layers/types/)). Les calques ajoutés ensuite
-s’appellent « Calque » suivi d’un numéro.
-
-## Autres plateformes
-
-Sur iPad, macOS et Android, un champ **Enregistrer le préréglage…** et une option
-**Utiliser les valeurs par défaut** remplacent **Nom du préréglage** et
-**Utiliser ces réglages pour les nouveaux dessins**. Sur iPad et macOS, il n’y a pas de
-bouton **Supprimer le préréglage enregistré**.
-
-Sous Linux, **Enregistrer le préréglage…** ouvre une boîte de dialogue distincte
-pour le nom, et **Espace colorimétrique**, **Profondeur de couleur** et
-**Fusion** sont regroupés sous **Couleur**.
+La boîte de dialogue conserve les derniers choix utilisés pour créer un dessin. Sélectionner un préréglage les remplace par les valeurs de ce préréglage.

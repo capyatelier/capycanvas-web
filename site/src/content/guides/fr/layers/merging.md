@@ -9,10 +9,7 @@ fusion se trouvent vers la fin du menu **Calque** et du menu de chaque calque.
 
 ![Le menu Calque avec Ribbon actif, montrant Fusionner les calques écrêtés, Fusionner les calques visibles, Créer un calque du visible et Aplatir l’image.](shot:layers/merging-menu)
 
-Chaque fusion est une étape d’annulation. Un [calque photo](/fr/docs/layers/types/)
-perd sa photo d’origine quand vous le fusionnez. Vous ne pouvez pas fusionner
-pendant la modification d’un calque de sélection ou du Masque rapide, ni pendant
-une transformation.
+Chaque fusion constitue une étape d’annulation. Un [calque Objet](/fr/docs/layers/types/) est pixellisé lors de sa fusion. Vous ne pouvez pas fusionner pendant la modification d’un calque de sélection ou du Masque rapide, ni pendant une transformation.
 
 ## Fusionner avec le calque inférieur
 
@@ -66,14 +63,9 @@ calques de sélection.
 
 ## Fusionner les calques visibles
 
-Choisissez **Calque > Fusionner les calques visibles** pour fusionner tous les
-calques visibles, **Papier** compris, en un seul calque. Les calques masqués
-restent tels quels.
+Choisissez **Calque > Fusionner les calques visibles** pour fusionner les calques ordinaires visibles. Le Papier reste le calque Papier du bas. Les calques masqués restent inchangés.
 
-Le calque fusionné reprend le nom et la place du calque visible le plus bas
-(**Papier**, s’il est visible). Les calques masqués qui étaient écrêtés sur un
-calque fusionné sont libérés. Les calques visibles doivent être non verrouillés,
-et les groupes parmi eux ne peuvent pas contenir de calques de sélection.
+Le calque fusionné prend le nom et la place du calque fusionné le plus bas. Les calques masqués écrêtés sur un calque fusionné sont libérés. Les calques visibles doivent être déverrouillés, et les groupes parmi eux ne peuvent pas contenir de calques de sélection.
 
 ## Créer un calque du visible
 
@@ -86,10 +78,7 @@ actif. Les calques verrouillés n’empêchent pas **Créer un calque du visible
 
 ## Aplatir l’image
 
-Choisissez **Calque > Aplatir l’image** pour fusionner tous les calques visibles
-en un seul calque. Les calques masqués et les pixels hors de la toile sont
-supprimés, mais les calques de sélection situés hors des groupes restent. Les
-calques visibles doivent être non verrouillés.
+Choisissez **Calque > Aplatir l’image** pour fusionner les calques ordinaires visibles. Le Papier reste du Papier en bas. Les calques masqués et les pixels hors de la toile sont supprimés, mais les calques de sélection hors des groupes restent. Les calques visibles doivent être déverrouillés.
 
 ![L’avis affiché sur la toile, qui indique « L’aplatissement supprime 2 calques masqués », avec un bouton Aplatir l’image.](shot:layers/merging-flatten-notice)
 

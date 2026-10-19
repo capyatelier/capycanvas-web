@@ -64,9 +64,7 @@ Faça uma das seguintes ações:
 
 ![O menu Adicionar filtro aberto na parte inferior do painel Camadas.](shot:filters/add-filter-menu)
 
-**Adicionar filtro** funciona em camadas de pintura desbloqueadas, camadas de
-foto e grupos que não estejam com Atravessar. O menu tem todas as categorias,
-exceto **Preencher**.
+**Adicionar filtro** funciona em camadas de pintura, camadas de objeto e grupos desbloqueados que não estejam em modo Atravessar. Seu menu tem todas as categorias, exceto **Preencher**.
 
 ## Gaveta Filtros em Esboço
 

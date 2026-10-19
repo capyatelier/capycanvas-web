@@ -26,24 +26,23 @@ Scegli **Filtro > Colore > Vividezza** e imposta **Vividezza** su 25 nel pannell
 **Proprietà** ([Filtri colore](/it/docs/filters/color/)). Il livello
 **Vividezza** appare sopra **Curve**.
 
-## 3. Seleziona la roccia
+## 3. Aggiungere Ombre/Luci
 
-1. Premi **M**, o seleziona **Selezione con lazo** nella barra strumenti Strumenti, e traccia un contorno attorno alla roccia.
-2. Scegli **Seleziona > Sfuma selezione…**, oppure seleziona **Perfeziona** nella barra della selezione e scegli **Sfuma…** ([Lavorare con le selezioni](/it/docs/selections/working/)).
-3. Imposta **Raggio di sfumatura** su 20 px e seleziona **Applica**.
+Scegli **Filtro > Tono > Ombre/Luci**. Imposta **Ombre** al 35% nel pannello **Proprietà**. Il livello **Ombre/Luci** appare sopra **Vividezza** e rimane selezionato.
 
-## 4. Schiarisci le ombre nella roccia
+## 4. Mascherare la regolazione sulla roccia
 
 Schiarire le ombre dell'intera foto renderebbe grigio lo sfondo nero. L'esempio
 le schiarisce solo nella roccia.
 
-Seleziona **Regola** nella barra della selezione e scegli
-**Tono > Ombre/Luci**. Imposta **Ombre** al 35% nel pannello **Proprietà**.
+1. Premi **M**, o seleziona **Selezione con lazo** nella barra strumenti Strumenti, e traccia un contorno attorno alla roccia.
+2. Scegli **Seleziona > Sfuma selezione…**, oppure seleziona **Perfeziona** nella barra della selezione e scegli **Sfuma…** ([Lavorare con le selezioni](/it/docs/selections/working/)).
+3. Imposta **Raggio di sfumatura** su 20 px e seleziona **Applica**.
+4. Seleziona **Maschera** nella barra di selezione.
 
-![La barra della selezione con il menu Regola aperto sulla categoria Tono, accanto alla selezione attorno alla roccia.](shot:photo/adjust-bar)
+![La barra di selezione con Maschera accanto alla selezione attorno alla roccia.](shot:photo/adjust-bar)
 
-La selezione diventa la maschera del nuovo livello **Ombre/Luci**. Cambia solo
-la roccia.
+La selezione diventa la maschera del livello **Ombre/Luci**. Cambia solo la roccia.
 
 ## 5. Salva il disegno
 

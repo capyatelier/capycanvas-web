@@ -1,101 +1,49 @@
 ---
 title: "Novos desenhos"
-description: "A caixa de diálogo Novo desenho e as camadas com que um desenho novo começa."
-related: ["color-management/color-spaces", "layers/types", "files/open-save"]
+description: "Tamanho da folha, resolução, ajustes de papel e cor e predefinições do diálogo Novo desenho."
+related: ["layers/paper", "color-management/color-spaces", "layers/types", "files/open-save"]
 ---
 
-Você pode começar um desenho na caixa de diálogo **Novo desenho**. O novo desenho
-abre em uma aba própria, e o desenho atual continua aberto.
+Escolha **Arquivo > Novo…**, pressione **Ctrl+N** quando disponível ou selecione **Novo…** na barra Comandos. O novo desenho abre em sua própria aba.
 
-## Abrir a caixa de diálogo Novo desenho
+![O diálogo Novo desenho com dimensões A4, resolução de 300 ppi, configurações de cor e Papel e Criar.](shot:files/new-dialog)
 
-Faça uma das seguintes ações:
+## Predefinições
 
-- Escolha **Arquivo > Novo…**.
-- Pressione **Ctrl+N** (exceto no editor web).
-- Em Pintura e Foto, selecione **Novo…** na barra de ferramentas Comandos.
+Escolha uma predefinição por categoria, pesquise pelo nome ou selecione uma usada recentemente. Uma predefinição preenche as dimensões, a resolução e os ajustes de cor e Papel.
 
-Escolha as configurações abaixo e selecione **Criar**.
+![O navegador de predefinições de Novo desenho.](shot:files/new-presets)
 
-**Novo…** não está disponível enquanto um recorte ou uma transformação está
-aberto. Se já houver dados de desenho demais abertos, o novo desenho só abre
-depois que você fechar alguns desenhos.
+Antes de você usar ou salvar outra configuração, Predefinições seleciona **Sketchbook**: A4 na orientação retrato (210 × 297 mm), papel Desenho em Branco natural e 2480 × 3508 px a 300 ppi.
 
-## Configurações
+Salve os ajustes atuais como uma predefinição nomeada para reutilizá-los. Abra o menu de uma predefinição salva para renomeá-la ou excluí-la. As predefinições incluídas não podem ser renomeadas nem excluídas.
 
-![A caixa de diálogo Novo desenho com a predefinição Desenho padrão.](shot:files/new-dialog)
+## Folha
 
-### Predefinição
+A prévia mostra as proporções e a orientação da folha. Digite um nome para o desenho e defina **Largura** e **Altura** em pixels, polegadas, centímetros ou milímetros. Use o controle de vínculo para manter as proporções atuais e o controle de orientação para trocar a largura e a altura.
 
-Preenche todos os campos a partir de uma predefinição integrada ou de uma que
-você salvou. Alterar um campo depois disso muda **Predefinição** para
-**Personalizado**.
+**Resolução** define os pixels por polegada usados nas dimensões físicas e na escala da [textura do Papel](/pt-BR/docs/layers/paper/). Alterar apenas a resolução altera os metadados do tamanho de impressão sem reamostrar o desenho.
 
-Todas as predefinições integradas têm 2048 × 1536 pixels com fundo branco.
+Uma nova janela começa com um desenho em branco separado A4 na orientação paisagem a 300 ppi (3508 × 2480 px).
 
-| Predefinição | Espaço de cores | Profundidade de bits | Mesclagem |
-| --- | --- | --- | --- |
-| **Desenho padrão** | sRGB | SDR de 8 bits | Perceptual |
-| **Cores amplas** | Display P3 | SDR de 8 bits | Perceptual |
-| **Edição de fotos** | ProPhoto RGB | SDR de 16 bits | Perceptual |
-| **Desenho HDR** | sRGB | HDR de 16 bits em ponto flutuante | Luz linear |
+O diálogo mostra as dimensões em pixels resultantes e a capacidade estimada. Não é possível criar desenhos cujos ajustes ultrapassem o limite atual do dispositivo; o limite depende das dimensões, da profundidade de bits e dos recursos gráficos disponíveis.
 
-### Remover predefinição salva
+## Papel
 
-Exclui a predefinição salva selecionada. As predefinições integradas não podem
-ser removidas.
+![Opções de textura do Papel em Novo desenho.](shot:files/new-paper)
 
-### Largura (px) e Altura (px)
+Escolha uma textura de Papel incluída ou importada para o novo desenho. **Importar…** adiciona uma imagem à biblioteca de papéis e a seleciona. Escolha **Sem papel** para criar o desenho sem uma camada de Papel.
 
-De 1 a 8192 pixels. Os campos aceitam contas como "160*2".
+![Opções Cor do papel e Transparente em Novo desenho.](shot:files/new-paper-color)
 
-### Espaço de cores
+**Cor** define a cor do Papel. **Transparente** mantém a camada de Papel, mas a inicia oculta. Isso difere de **Sem papel**, que não cria uma camada de Papel.
 
-**sRGB**, **Display P3**, **Adobe RGB (1998)** ou **ProPhoto RGB** (consulte
-[Espaço de cores, profundidade de bits e mesclagem](/pt-BR/docs/color-management/color-spaces/)).
-Com **ProPhoto RGB** e **SDR de 8 bits**, a caixa de diálogo recomenda SDR de 16 bits.
+## Ajustes de cor
 
-### Profundidade de bits
+Escolha **Espaço de cores**, **Profundidade de bits** e **Mesclagem** do desenho. Profundidades de bits de ponto flutuante usam a mistura **Luz linear**. Consulte [Espaço de cor, profundidade de bits e mistura](/pt-BR/docs/color-management/color-spaces/).
 
-**SDR de 8 bits**, **SDR de 16 bits**, **HDR de 16 bits em ponto flutuante** ou
-**HDR de 32 bits em ponto flutuante**. Uma profundidade de bits em ponto flutuante
-cria um desenho HDR.
+## Criar o desenho
 
-### Mesclagem
+Selecione **Criar**. O desenho começa com uma camada de pintura vazia, **Tinta atual**, acima do Papel escolhido quando um foi incluído.
 
-**Perceptual** ou **Luz linear**. Com uma profundidade de bits em ponto flutuante,
-**Mesclagem** fica fixa em **Luz linear**.
-
-### Fundo
-
-**Branco** ou **Transparente**. **Transparente** oculta a camada **Papel**.
-
-### Nome da predefinição
-
-Salva as configurações como predefinição com esse nome quando você seleciona
-**Criar**. Um nome tem até 64 caracteres, e você pode guardar até 64 predefinições.
-
-### Usar estas configurações para novos desenhos
-
-Quando ativado, a caixa de diálogo abre com essas configurações da próxima vez. O
-espaço de cores, a profundidade de bits e o fundo também passam a ser as
-configurações de **Novos desenhos** em [Preferências](/pt-BR/docs/preferences/).
-
-## As primeiras camadas
-
-![O painel Camadas de um desenho novo, com Tinta atual acima de Papel.](shot:files/new-layers)
-
-Um desenho novo tem duas camadas. **Tinta atual**, uma camada de pintura vazia,
-está selecionada acima de **Papel**, uma camada de preenchimento branca (consulte
-[Tipos de camada](/pt-BR/docs/layers/types/)). As camadas adicionadas depois
-recebem o nome "Camada" e um número.
-
-## Outras plataformas
-
-No iPad, no macOS e no Android, um campo **Salvar predefinição…** e uma opção
-**Usar padrões** substituem **Nome da predefinição** e **Usar estas configurações
-para novos desenhos**. O iPad e o macOS não têm o botão **Remover predefinição salva**.
-
-No Linux, **Salvar predefinição…** abre uma caixa de diálogo separada para o nome,
-e **Espaço de cores**, **Profundidade de bits** e **Mesclagem** ficam agrupados em
-**Cor**.
+O diálogo mantém as últimas opções usadas para criar um desenho. Selecionar uma predefinição as substitui pelos valores daquela predefinição.

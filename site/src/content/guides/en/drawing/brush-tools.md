@@ -1,10 +1,10 @@
 ---
 title: "Brush tools"
 description: "The brush tools, their built-in presets, and where you choose them."
-related: ["brushes/basics", "drawing/blend-liquify", "color/color-panel", "input/keyboard"]
+related: ["brushes/basics", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
 ---
 
-You can paint with the **Pen**, **Pencil**, **Paint Brush**, **Airbrush** and
+You can paint with the **Pen**, **Pencil**, **Charcoal**, **Chalk**, **Pastel**, **Crayon**, **Paint Brush**, **Airbrush** and
 **Decoration** tools, and erase with the **Eraser**. Each tool holds one or
 more groups of built-in brush presets.
 
@@ -15,7 +15,10 @@ more groups of built-in brush presets.
 | **Pen** | **Pen** | **G-Pen**, **Rough G-Pen**, **Calligraphy Pen**, **Antique Pen**, **Realistic Pen**, **Wet Ink**, **Blotty Ink**, **Realistic Brushed Ink** |
 | | **Marker** | **Marker** |
 | **Pencil** | **Pencil** | **Pencil**, **Pointy Pencil**, **Shading Pencil** |
-| | **Pastel** | **Charcoal**, **Chalk**, **Pastel Block** |
+| **Charcoal** | **Charcoal** | **Charcoal** |
+| **Chalk** | **Chalk** | **Chalk** |
+| **Pastel** | **Pastel** | **Pastel Block** |
+| **Crayon** | **Crayon** | **Crayon** |
 | **Paint Brush** | **Paint** | **Paintbrush**, **Bristle Paintbrush**, **Textured Flat**, **Dry Scumble**, **Transparent Glaze**, **Opaque Gouache**, **Multiply Glaze** |
 | | **Watercolor** | **Watercolor Wash**, **Wet Watercolor** |
 | | **Oil paint** | **Loaded Oil**, **Palette Knife**, **Wet Round** |
@@ -36,7 +39,7 @@ These behaviors are built into the presets and have no setting.
 | --- | --- |
 | **Calligraphy Pen**, **Antique Pen** | Angled nib. |
 | **Marker** | Chisel tip. |
-| **Pencil**, **Pointy Pencil**, **Shading Pencil**, **Charcoal** | A wider mark when you tilt the pen. |
+| **Pencil**, **Pointy Pencil**, **Shading Pencil**, **Charcoal**, **Chalk**, **Pastel Block**, **Crayon** | Pressure and tilt change the shape and coverage of the mark. See [Dry media](/docs/brushes/dry-media/). |
 | **Airbrush** | Keeps adding paint while you hold the pen still. |
 | **Spray** | Scatters its dabs around the stroke. |
 | **Multiply Glaze** | Paints in Multiply mode. |
@@ -123,7 +126,7 @@ reason:
 - A fill layer without a mask.
 - A layer with **Lock editing** on, or inside a locked group.
 - A filter layer without a mask, when the layer below it is locked or missing.
-- A scaled or rotated layer, until you choose **Apply Transform to Pixels** ([Move and Transform](/docs/transform/move-transform/)).
+- A scaled or rotated layer, until you choose **Apply transform** ([Move and Transform](/docs/transform/move-transform/)).
 
 Wet, blending and watercolor brushes paint plain coverage on a mask. The first
 such stroke on each mask shows a notice.

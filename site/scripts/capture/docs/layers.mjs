@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
-import { canvasBar, quiet } from '../shoot.mjs';
+import { canvasBar, quiet, settleLayout } from '../shoot.mjs';
+import { helpers } from './drawing.mjs';
 
 const menu = '.panel-context-menu:popover-open';
 const opened = `!!document.querySelector('${menu}')`;
@@ -8,6 +9,7 @@ const row = id => `.layer-row[data-layer="${id}"]`;
 const swipe = id => `.layer-swipe:has(> ${row(id)})`;
 
 export default async function layers({ e, b, shoot, example }) {
+  const { fit: fitPanel, refit: refitPanel } = helpers(e, b);
   const key = async (key, code = key, windowsVirtualKeyCode = 27) => {
     for (const type of ['rawKeyDown', 'keyUp']) await b.call('Input.dispatchKeyEvent', { type, key, code, windowsVirtualKeyCode });
     await b.settle();
@@ -46,7 +48,7 @@ export default async function layers({ e, b, shoot, example }) {
   const id = name => e.read(`Number(layerApp.state().layers.find(r=>r.label===${JSON.stringify(name)}).id)`);
   const activeName = () => e.read('layerApp.state().layer_tools.editing_layer.label');
   const checkedNames = () => e.read('layerApp.state().layers.filter(r=>r.selected).map(r=>r.label)');
-  const growLayers = async (distance = 80) => {
+  const growLayers = async (distance = 130) => {
     const handle = await e.read(`(()=>{const layers=document.querySelector('.dock-group:has(.dock-tab[data-panel="layers"])').getBoundingClientRect();const node=[...document.querySelectorAll('[role=separator]')].map(n=>n.getBoundingClientRect()).find(r=>r.width>r.height&&Math.abs(r.bottom-layers.top)<=8&&r.left>=layers.left-4);return node&&{x:node.left+node.width/2,y:node.top+node.height/2}})()`);
     assert.ok(handle, 'Divider above the Layers panel');
     await b.call('Input.dispatchMouseEvent', { type: 'mouseMoved', ...handle });
@@ -144,7 +146,7 @@ export default async function layers({ e, b, shoot, example }) {
   });
 
   await e.layer({ op: 'select', id: ribbon, mask: true });
-  const openMaskMenu = () => press(`${row(ribbon)} .layer-thumbnail ~ .layer-thumbnail`, 'right');
+  const openMaskMenu = () => press('.layer-footer .layer-more');
   await shoot('layers/masks-menu', {
     target: menu,
     setup: async () => {
@@ -231,7 +233,7 @@ export default async function layers({ e, b, shoot, example }) {
   });
 
   const swipeRow = async (layer, dx) => {
-    const start = await point(`${row(layer)} .layer-name`);
+    const start = await e.read(`(()=>{const r=document.querySelector('${row(layer)}').getBoundingClientRect(),p=document.querySelector('${swipe(layer)}').getBoundingClientRect();return{x:(Math.max(r.left,p.left)+Math.min(r.right,p.right))/2,y:r.y+r.height/2}})()`);
     const touch = (type, x) => b.call('Input.dispatchTouchEvent', { type, touchPoints: type === 'touchEnd' ? [] : [{ id: 1, x, y: start.y }] });
     await touch('touchStart', start.x);
     await touch('touchMove', start.x + dx / 3);
@@ -239,7 +241,7 @@ export default async function layers({ e, b, shoot, example }) {
     await touch('touchEnd', start.x + dx);
     await b.settle();
   };
-  const deleteHidden = `document.querySelector('${swipe(disc)} .layer-swipe-delete').hidden`;
+  const deleteHidden = `document.querySelector('${swipe(disc)} .layer-swipe-actions').hidden`;
   await shoot('layers/panel-swipe-delete', {
     target: swipe(disc),
     setup: async () => {
@@ -301,5 +303,116 @@ export default async function layers({ e, b, shoot, example }) {
   await e.layer({ op: 'select', id: await id('Disc'), mask: false });
   await e.show('properties');
   await shoot('layers/settings-color-mode', { target: '.properties-panel .effect-properties' });
+  await e.workspace('illustrator');
+  await e.newDocument(1440, 1000);
+  await e.frame(.75, [720, 500]);
+  const paper = await e.read('Number(layerApp.state().layers.find(r=>r.paper).id)');
+  const paintLayer = await e.active();
+  const selectPaper = async () => {
+    await e.layer({ op: 'select', id: paper, mask: false });
+    await e.wait(`Number(layerApp.state().layer_properties.layer)===${paper} && layerApp.state().layer_properties.controls.some(c=>c.key==='texture')`);
+  };
+  const paperReady = async () => {
+    await e.wait('(()=>{layerApp.wake();return !layerApp.app.shader_work_pending()})()');
+    await e.canvas();
+  };
+  const paperValue = async (key, value) => {
+    await e.send({ type: 'effect', action: { op: 'set', layer: paper, key, value: { kind: 'number', value } } });
+    await paperReady();
+  };
+  const paperTexture = async texture => {
+    await selectPaper();
+    const index = await e.read(`layerApp.state().layer_properties.controls.find(c=>c.key==='texture').paper.tiles.findIndex(t=>t.id===${JSON.stringify(texture)})`);
+    assert.ok(index >= 0, `Built-in paper exists: ${texture}`);
+    await e.send({ type: 'effect', action: { op: 'set', layer: paper, key: 'texture', value: { kind: 'choice', value: index } } });
+    await e.wait(`layerApp.state().layers.find(r=>Number(r.id)===${paper}).paper.id===${JSON.stringify(texture)}`);
+    await paperReady();
+  };
+  await paperTexture('unryu');
+  await e.show('layers');
+  await shoot('layers/paper-row', { target: row(paper) });
+  await e.show('properties');
+  await paperValue('relief', 38);
+  await fitPanel('properties');
+  await shoot('layers/paper-properties', { target: '.properties-panel .effect-properties', variant: refitPanel('properties') });
+
+  const textureDialog = '#texture-dialog[open]';
+  const chooseTexture = async () => {
+    await e.click('#property-texture');
+    await e.wait(`!!document.querySelector('${textureDialog}') && document.querySelectorAll('${textureDialog} .texture-tile').length>=12`);
+  };
+  const cancelTexture = async () => {
+    await e.click('#texture-cancel');
+    await e.wait(`!document.querySelector('${textureDialog}')`);
+  };
+  await shoot('layers/paper-choose-texture', { target: textureDialog, setup: chooseTexture, teardown: cancelTexture });
+
+  // Import a PNG made from the product's own Linen height preview. Only the
+  // operating-system picker is replaced; the editor imports/stores real bytes.
+  await b.evaluate(`(async()=>{const bytes=layerApp.app.paper_preview('linen'),side=Math.sqrt(bytes.length),canvas=new OffscreenCanvas(side,side),context=canvas.getContext('2d'),pixels=new Uint8ClampedArray(side*side*4);for(let i=0;i<bytes.length;i++){pixels[i*4]=pixels[i*4+1]=pixels[i*4+2]=bytes[i];pixels[i*4+3]=255;}context.putImageData(new ImageData(pixels,side,side),0,0);const file=new File([await canvas.convertToBlob({type:'image/png'})],'Linen texture.png',{type:'image/png'}),original=HTMLInputElement.prototype.click;HTMLInputElement.prototype.click=function(){if(this.type!=='file'||this.accept!=='image/*')return original.call(this);HTMLInputElement.prototype.click=original;const transfer=new DataTransfer();transfer.items.add(file);this.files=transfer.files;this.dispatchEvent(new Event('change'));};})()`);
+  await chooseTexture();
+  await e.click('#texture-import');
+  await e.wait(`!document.querySelector('${textureDialog}') && !layerApp.state().requests.some(r=>r.kind.type==='paper') && layerApp.state().layer_properties.controls.find(c=>c.key==='texture').paper.tiles.some(t=>t.label==='Linen texture')`);
+  const importedMenu = async () => {
+    await b.evaluate(`(()=>{const n=[...document.querySelectorAll('${textureDialog} .texture-tile')].find(n=>n.textContent==='Linen texture');n.scrollIntoView({block:'nearest'});const r=n.getBoundingClientRect();n.dispatchEvent(new MouseEvent('contextmenu',{bubbles:true,cancelable:true,clientX:r.x+r.width/2,clientY:r.y+r.height/2}));})()`);
+    await e.wait(`!!document.querySelector('${textureDialog} [role=menu]:popover-open')`);
+  };
+  await shoot('layers/paper-imported-menu', {
+    target: [textureDialog, `${textureDialog} [role=menu]:popover-open`],
+    setup: async () => { await chooseTexture(); await importedMenu(); },
+    variant: async () => {
+      if (!await e.read(`!!document.querySelector('${textureDialog} [role=menu]:popover-open')`)) await importedMenu();
+    },
+    teardown: async () => {
+      await b.evaluate(`document.querySelector('${textureDialog} [role=menu]:popover-open')?.hidePopover();void 0`);
+      await cancelTexture();
+    },
+  });
+
+  await e.show('layers');
+  await e.layer({ op: 'delete', id: paper });
+  await e.wait(`!!layerApp.state().layer_tools.add_paper && !!document.querySelector('#layer-add-paper')`);
+  await shoot('layers/add-paper', { target: ['.layers-panel', '#layer-add-paper'] });
+  // Localized names are real rename edits. Undo those before undoing the
+  // deletion, stopping as soon as the original Paper is restored.
+  for (let step = 0; step < 64 && !await e.read(`layerApp.state().layers.some(r=>Number(r.id)===${paper}&&r.paper)`); step++) await e.invoke('undo');
+  await e.wait(`layerApp.state().layers.some(r=>Number(r.id)===${paper}&&r.paper)`);
+  await selectPaper();
+  await paperValue('relief', 0);
+  for (const [index, texture] of ['bristol', 'cold_press', 'sanded_pastel'].entries()) {
+    await paperTexture(texture);
+    await e.layer({ op: 'select', id: paintLayer, mask: false });
+    await e.brush(27, 100, '#394443');
+    const y = 210 + index * 290;
+    await e.draw(`M190 ${y} C480 ${y-90} 860 ${y+90} 1240 ${y}`, { pressure: .04, tiltX: 42, tiltY: 12 });
+    await e.draw(`M190 ${y+100} C480 ${y+10} 860 ${y+190} 1240 ${y+100}`, { pressure: .18, tiltX: 42, tiltY: 12 });
+  }
+  await e.invoke('hand');
+  await shoot('layers/paper-surface-comparison', { target: { documentRect: [110, 65, 1230, 925] }, pad: 0 });
+  await selectPaper();
+  await paperTexture('linen');
+  await paperValue('relief', 55);
+  await paperValue('light', 130);
+  await paperValue('through_paint', 100);
+  await e.show('properties');
+  await shoot('layers/paper-lighting', { target: [{ documentRect: [110, 65, 1230, 925] }, '.properties-panel .effect-properties'], maxWidth: 1800 });
+
+  await e.workspace('painter');
+  const layerHeader = await e.read(`layerApp.state().workspace.layout.header.zones.flat().find(e=>e.item.control?.panel==='layers').id`);
+  const inspector = '.content-drawer .layer-inspector';
+  await shoot('layers/sketch-properties-drawer', {
+    target: '.content-drawer:has(.layer-inspector)',
+    setup: async () => {
+      await e.click('[data-header-item="'+layerHeader+'"] .header-tool');
+      await e.wait(`!!document.querySelector('${inspector}')`);
+      await e.click(`${inspector} .layer-properties-disclosure`);
+      await e.wait(`document.querySelector('${inspector} .layer-properties-disclosure').classList.contains('open')`);
+      await settleLayout(b, '.content-drawer:has(.layer-inspector)');
+    },
+    teardown: async () => {
+      await e.send({ type: 'customize', action: { type: 'close_expanded' } });
+      await e.wait(`!document.querySelector('${inspector}')`);
+    },
+  });
   await e.workspace('illustrator');
 }

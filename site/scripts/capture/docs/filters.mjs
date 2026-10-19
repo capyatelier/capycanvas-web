@@ -9,7 +9,7 @@ const properties = '.properties-panel .effect-properties';
 const drawer = '.content-drawer';
 const histogram = '[data-scope="histogram"]';
 
-const previewsFilled = scope => `(()=>{const rows=[...document.querySelectorAll(${JSON.stringify(`${scope} .filter-row`)})].filter(row=>{const box=row.getBoundingClientRect(),list=row.closest('.filter-picker-list').getBoundingClientRect(),frame=row.closest('.drawer-column,.panel').getBoundingClientRect();return box.height>0&&box.bottom>Math.max(list.top,frame.top,0)&&box.top<Math.min(list.bottom,frame.bottom,innerHeight)});return rows.length>0&&rows.every(row=>row.querySelector('canvas').height===Math.min(128,Math.round(40*devicePixelRatio)))})()`;
+const previewsFilled = scope => `(()=>{const rows=[...document.querySelectorAll(${JSON.stringify(`${scope} .filter-row`)})].filter(row=>{const box=row.getBoundingClientRect(),list=row.closest('.filter-picker-list').getBoundingClientRect(),frame=row.closest('.drawer-column,.panel').getBoundingClientRect();return box.height>0&&box.bottom>Math.max(list.top,frame.top,0)&&box.top<Math.min(list.bottom,frame.bottom,innerHeight)});return rows.length>0&&rows.every(row=>{const c=row.querySelector('canvas'),height=Math.min(128,Math.round(c.getBoundingClientRect().height*devicePixelRatio));return height>0&&c.width>0&&c.height===height&&c.getContext('2d').getImageData(0,0,c.width,c.height).data.some((v,i)=>i%4===3&&v>0)})})()`;
 const histogramsExact = scope => `[...document.querySelectorAll(${JSON.stringify(`${scope} [data-scope-control="status"]`)})].filter(n=>n.checkVisibility()).every(n=>n.textContent==='Exact')`;
 
 export default async function filters({ e, b, shoot }) {
@@ -242,7 +242,20 @@ export default async function filters({ e, b, shoot }) {
   await restoreLayout();
 
   await e.workspace('painter');
-  await openPhoto();
+  await selectLayer(image.id);
+  assert.equal((await layers()).length, base, 'The Sketch drawer uses the original photo after the temporary filters were undone');
+  // Exercise the ordinary blur path before the drawer uses its previews.
+  // Undo keeps the photo unchanged for the example.
+  for (const effect of ['gaussian_blur']) {
+    await e.send({ type: 'effect', action: { op: 'insert', effect } });
+    await e.wait(`layerApp.state().layers.length===${base + 1} && layerApp.state().layer_tools.editing_layer.adjustment_effect`);
+    await e.canvas();
+    await b.until('(layerApp.wake(), !layerApp.app.shader_work_pending(true))', 180000);
+    await e.invoke('undo');
+    await e.wait(`layerApp.state().layers.length===${base}`);
+    await selectLayer(image.id);
+  }
+  await category('blur');
   const filtersButton = `[data-header-item="${await e.read(`layerApp.state().workspace.layout.header.zones.flat().find(e=>e.item.control?.panel==='adjustments').id`)}"] .header-tool`;
   const drawerOpen = `JSON.stringify(layerApp.state().customization.drawer?.columns)==='[["filter_types"],["adjustments"],["properties"]]'`;
   const openDrawer = async () => {
@@ -255,10 +268,10 @@ export default async function filters({ e, b, shoot }) {
     }
   };
   await openDrawer();
-  await press(`${drawer} .filter-type[data-category="tone"]`);
-  await e.wait(`layerApp.state().filter_picker.category==='tone'`);
-  await press(`${drawer} [data-effect="curves"]`);
-  await e.wait(`layerApp.state().filter_picker.selected==='curves'`);
+  await press(`${drawer} .filter-type[data-category="blur"]`);
+  await e.wait(`layerApp.state().filter_picker.category==='blur'`);
+  await press(`${drawer} [data-effect="gaussian_blur"]`);
+  await e.wait(`layerApp.state().filter_picker.selected==='gaussian_blur'`);
   await previews(drawer);
   await exact(drawer);
   await shoot('filters/sketch-drawer', { target: drawer, pad: 0, setup: async () => { await openDrawer(); await previews(drawer); await exact(drawer); } });

@@ -24,10 +24,7 @@ sottostanti di quel gruppo, a meno che il gruppo non sia impostato su
 
 ## Filtro collegato
 
-Puoi collegare filtri a un livello di pittura, a un livello fotografico o a un
-gruppo non impostato su Attraversa. Seleziona il livello, poi seleziona
-**Aggiungi filtro** in fondo al pannello Livelli o al pannello **Proprietà**,
-oppure nel menu del livello.
+Puoi collegare filtri a un livello di pittura, a un livello Oggetto o a un gruppo non impostato su Attraversa. Seleziona il livello, poi **Aggiungi filtro** in fondo al pannello Livelli o al pannello **Proprietà**, oppure nel menu del livello.
 
 I filtri collegati si applicano dal basso verso l'alto della catena, dopo la
 maschera del livello e prima della sua opacità e del suo metodo di fusione. Su
@@ -57,7 +54,7 @@ il livello a cui era collegato e i livelli ritagliati su quel livello.
 
 Il pulsante non è disponibile mentre il filtro o il livello sottostante è
 bloccato. Quando il livello sottostante non è un livello di pittura, un livello
-fotografico o un gruppo, il suo suggerimento indica «Nessun livello sottostante
+Oggetto o un gruppo, il suo suggerimento indica «Nessun livello sottostante
 a cui collegare».
 
 ## Selezioni come maschere dei filtri

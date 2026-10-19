@@ -1,10 +1,12 @@
 ---
 title: "导出图像"
 description: "使用导出图像对话框和再次导出，将画作导出为拼合的图像副本。"
-related: ["files/open-save", "color-management/hdr", "color-management/color-spaces"]
+related: ["files/open-save", "layers/paper", "color-management/hdr", "color-management/color-spaces"]
 ---
 
 可以将画作导出为拼合的图像副本。导出不会更改 `.capy` 画作，也不算保存。
+
+原生应用导出时包含[纸张光照](/zh/docs/layers/paper/)。网页导出目前不包含纸张光照。更改纸张纹理或缩放后短暂显示的浮雕预览不包含在内。
 
 ## 导出图像
 
@@ -46,7 +48,7 @@ SDR 画作为 **SDR**；HDR 画作可以选择 HDR 格式（参见下文的 HDR 
 
 ### 输出配置文件
 
-**sRGB**、**Display P3**、**Adobe RGB (1998)** 或 **ProPhoto RGB**，另外每个带有自己嵌入配置文件的照片图层还会对应一项“原始配置文件：*名称*”。
+**sRGB**、**Display P3**、**Adobe RGB (1998)** 或 **ProPhoto RGB**，以及每个具有自身嵌入配置文件的对象图层对应的“原始：*name*”。
 
 ### 位深度
 

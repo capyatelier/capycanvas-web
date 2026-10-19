@@ -102,9 +102,7 @@ Asigna el color actual al punto de color seleccionado.
 
 ## Opacidad
 
-**Opacidad** define la intensidad del degradado, y es el mismo valor que la
-**Opacidad** del pincel actual. En Boceto, usa el deslizador de opacidad del borde
-izquierdo.
+**Opacidad** establece la intensidad del degradado y tiene el mismo valor que la **Opacidad** del pincel actual. En Boceto, usa **Control de intensidad** en el borde izquierdo.
 
 ## Capas de Relleno degradado
 

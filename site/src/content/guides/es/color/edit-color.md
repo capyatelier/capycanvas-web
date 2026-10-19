@@ -106,8 +106,7 @@ Haz clic, o levanta el lápiz o el dedo, para tomar el color. El diálogo vuelve
 el color tomado como Nuevo. Pulsa **Escape** o selecciona la franja para volver sin
 cambios.
 
-Con un dedo, el punto de muestreo queda por encima de la yema. **Tomar del lienzo**
-está oculto cuando Editar color se abre desde otro diálogo.
+Con un dedo, la lupa aparece por encima de la yema mientras el punto de muestra permanece debajo. **Tomar del lienzo** se oculta cuando Editar color se abre desde otro diálogo.
 
 ## Colores recientes y paletas
 

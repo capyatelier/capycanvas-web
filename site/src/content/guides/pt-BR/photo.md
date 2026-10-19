@@ -32,13 +32,12 @@ A foto editada tem estas camadas, de cima para baixo:
 
 | Camada | Conteúdo |
 | --- | --- |
-| **Sombras/Realces** | Clareia as sombras da pedra, mascarado por uma seleção com difusão |
-| **Vibração** | Aumenta a vibração da foto inteira |
-| **Curvas** | Uma curva em S para a foto inteira |
-| *Retouch* | Traços de correção |
-| A camada da foto | A foto, com o nome do arquivo |
-| **Papel** | Oculta |
+| **Sombras/Realces** | Clareia as sombras da rocha, com uma máscara de seleção suavizada |
+| **Vibração** | Aumenta a vibração de toda a foto |
+| **Curvas** | Uma curva em S para toda a foto |
+| *Retouch* | Traços de recuperação |
+| A camada de objeto | A foto, com o nome do arquivo |
 
-Nada é pintado na camada da foto.
+Nada é pintado na camada de objeto.
 
 Primeira etapa: [Abrir e recortar](/pt-BR/docs/photo/crop/).

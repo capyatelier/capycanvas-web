@@ -15,7 +15,7 @@ Do one of the following:
 
 - Choose **Window > Layers**.
 - In Paint, select **Layers** in the right column.
-- In Sketch, select **Layers panel** in the title bar.
+- In Sketch, select **Layers** in the title bar. The shared drawer opens on its Layers view; select a layer's Properties button to switch to Properties.
 - Type "Layers panel" in [command search](/docs/start/command-search/).
 
 In Photo, the panel is open in the right column.
@@ -52,6 +52,10 @@ Layers in a group are indented below the group.
 
 Select a row to make it the active layer and the only selected row.
 [Layer types](/docs/layers/types/) shows the thumbnail of each type.
+
+Paper has separate color and texture thumbnails. If Paper is missing, **Add paper** appears after the last row.
+
+![The Sketch drawer changing from Layers to Properties.](shot:layers/sketch-properties-drawer)
 
 **Ctrl**+click a paint layer's thumbnail to load its opacity as a selection, or
 the mask thumbnail to load the mask. Add **Shift** to add to the selection,

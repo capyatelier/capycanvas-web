@@ -47,7 +47,7 @@ Each mode is a preset in **Tool Set**:
 ![The Tool panel for Liquify Crystals, with the Liquify group showing Strength and Distortion.](shot:drawing/liquify-settings)
 
 **Strength**, **Distortion** and **Momentum** are in the **Liquify** group of
-the **Tool** panel. Liquify has no **Flow**.
+the **Tool** panel. **Strength** sets how strongly the stroke moves pixels.
 
 ### Strength
 

@@ -1,27 +1,25 @@
 ---
 title: "Taille et rotation de l’image"
-description: "Les commandes Édition > Image qui modifient la taille et l’orientation de toute l’image."
+description: "Les commandes du menu Image qui modifient la taille et l’orientation de toute l’image."
 related: ["transform/crop", "start/canvas", "files/new", "color-management/color-spaces"]
 ---
 
-Vous pouvez redimensionner, faire pivoter et retourner toute l’image depuis
-**Édition > Image**. L’image reste en place à l’écran.
+Vous pouvez redimensionner, faire pivoter et retourner toute l’image depuis **Image**. L’image reste en place à l’écran.
 
 Ces commandes sont indisponibles pendant un recadrage ou une transformation, et
 pendant la modification d’un masque, du Masque rapide ou d’un calque de sélection.
 Pour **Recadrer** et **Recadrer la toile sur la sélection**, voir
 [Recadrer](/fr/docs/transform/crop/).
 
-![Le sous-menu Image du menu Édition.](shot:transform/image-menu)
+![Le menu Image.](shot:transform/image-menu)
 
 ## Taille de l’image…
 
 Vous pouvez mettre à l’échelle toute l’image, ou ne modifier que sa résolution.
 
-Choisissez **Édition > Image > Taille de l’image…**. Les calques de peinture et les
-masques sont rééchantillonnés, et les photos placées conservent leurs pixels
-d’origine. Les sélections, les repères et les réglages de filtre exprimés en pixels
-sont mis à l’échelle avec l’image.
+Choisissez **Image > Taille de l’image…**. Les calques de peinture et les masques sont rééchantillonnés, et les calques Objet conservent leurs pixels sources. Les sélections, les guides et les réglages de filtre mesurés en pixels sont redimensionnés avec l’image.
+
+Le Papier est rééchantillonné avec l’image. Modifier uniquement la résolution met à jour son échelle physique sans rééchantillonner les pixels.
 
 ![La boîte de dialogue Taille de l’image.](shot:transform/image-size-dialog)
 
@@ -51,9 +49,7 @@ quand elle s’agrandit. Vous pouvez aussi choisir **Bicubique**, **Lanczos**,
 Vous pouvez ajouter ou retirer de la toile autour de l’image sans
 rééchantillonnage.
 
-Choisissez **Édition > Image > Taille de la toile…**. Les pixels situés hors d’une
-toile plus petite restent masqués sur leurs calques, et une toile plus grande les
-affiche de nouveau.
+Choisissez **Image > Taille de la toile…**. Les pixels hors d’une toile plus petite restent sur leurs calques, masqués, et une toile plus grande les montre de nouveau.
 
 ![La boîte de dialogue Taille de la toile.](shot:transform/canvas-size-dialog)
 
@@ -73,7 +69,7 @@ Choisit, dans une grille de 3 × 3, le côté ou l’angle de l’image qui rest
 
 ## Faire pivoter et retourner l’image
 
-Choisissez l’une de ces commandes dans **Édition > Image** :
+Choisissez l’une de ces commandes dans **Image** :
 
 - **Pivoter l’image de 90° à gauche**
 - **Pivoter l’image de 90° à droite**
@@ -87,11 +83,8 @@ sont pas rééchantillonnés. Pour faire pivoter ou retourner seulement la vue, 
 
 ## Rogner
 
-Choisissez **Édition > Image > Rogner** pour réduire la toile aux pixels visibles.
-Les pixels situés hors de la nouvelle toile restent masqués sur leurs calques.
+Choisissez **Image > Rogner** pour réduire la toile aux pixels visibles. Les pixels hors de la nouvelle toile restent sur leurs calques, masqués.
 
 ## Tout révéler
 
-Choisissez **Édition > Image > Tout révéler** pour agrandir la toile jusqu’à ce
-qu’elle affiche les pixels de tous les calques, y compris les calques masqués et les
-pixels situés hors de la toile.
+Choisissez **Image > Tout révéler** pour agrandir la toile jusqu’à montrer les pixels de tous les calques, y compris les calques masqués et les pixels hors de la toile.

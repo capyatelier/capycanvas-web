@@ -1,7 +1,7 @@
 ---
 title: "Quickstart"
 description: "Opening {appName}, drawing on the first blank drawing, saving it as a .capy file and exporting a PNG."
-related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
+related: ["start/workspaces", "start/device-support", "files/new", "files/open-save", "files/export"]
 ---
 
 ## Opening {appName}
@@ -11,15 +11,7 @@ Do one of the following:
 - Open the web editor at [editor.capycanvas.art](https://editor.capycanvas.art/).
 - Get the desktop app, the iPad or Android beta, or the steps to install the web editor as an app from the [Download](/download/) page.
 
-The web editor runs in these browsers:
-
-| System | Browsers |
-| --- | --- |
-| Windows | Chrome, Edge, Firefox 141 or later |
-| macOS | Chrome, Edge, Safari 26 or later, Firefox 147 or later (Apple silicon) |
-| Linux (Wayland) | Chrome, Edge |
-| iPadOS 26 or later | Safari |
-| Android 12 or later | Chrome |
+See [Device support](/docs/start/device-support/) for the separate native app and web browser requirements.
 
 After your first visit, the web editor also opens without an internet connection.
 
@@ -28,9 +20,9 @@ After your first visit, the web editor also opens without an internet connection
 ![The Layers panel of a new drawing, with Current ink above Paper.](shot:files/new-layers)
 
 The first time you open {appName}, it shows the [Paint](/docs/start/workspaces/)
-workspace with a blank drawing, and the title bar reads "Untitled · 2048 × 1536".
-**Current ink**, an empty paint layer, is selected above **Paper**, a white fill
-layer. The **Pen** tool is active with the **G-Pen** brush and a near-black color.
+workspace with a blank A4 landscape drawing at 300 ppi.
+**Current ink**, an empty paint layer, is selected above **Paper**. The **Pen**
+tool is active with the **G-Pen** brush and a near-black color.
 
 Later, {appName} opens with the workspace you used last and the drawings that
 were open.
@@ -61,7 +53,7 @@ in the web editor. Choose it from the menu or from
 ## Starting another drawing
 
 Choose **File > New…** and select **Create** in the [New drawing](/docs/files/new/)
-dialog. The new drawing opens in its own tab next to the first one.
+dialog. Choose its size, resolution, Paper and color settings, then select **Create**. The new drawing opens in its own tab next to the first one.
 
 ## Saving the drawing
 

@@ -1,7 +1,7 @@
 ---
 title: "Tercihler"
-description: "Tercihler iletişim kutusu ile Görünüm, Tuval, Renk ve Hakkında sayfalarındaki ayarlar."
-related: ["input/pen", "input/keyboard", "customize/zen", "color-management/color-spaces"]
+description: "Tercihler iletişim kutusu ve Görünüm, Tuval, Giriş, Renk ve Hakkında sayfalarındaki ayarlar."
+related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
 Uygulamanın tamamı için geçerli ayarları **Tercihler** iletişim kutusunda
@@ -18,9 +18,7 @@ Aşağıdakilerden birini yapın:
 - Boya ve Fotoğraf'ta başlık çubuğunun sağ ucundaki dişli düğmesini seçin.
 - [Komut aramaya](/tr/docs/start/command-search/) “Tercihler” yazın.
 
-Tercihler **Görünüm** sayfasında açılır. **Yardım > Klavye kısayolları**
-Tercihler'i **Klavye kısayolları** sayfasında, **Yardım > {appName} hakkında**
-ise **Hakkında** sayfasında açar.
+Tercihler **Görünüm** sayfasında açılır. Klavye kısayolları için **Düzenle > Klavye kısayolları**, Hakkında için uygulama menüsünden **About {appName}** seçin.
 
 Tercihler açıkken tuval kısayolları, kalem düğmeleri ve parmak dokunuşları
 hiçbir şey yapmaz.
@@ -89,17 +87,21 @@ seçenekleridir.
 Capy düğmesini [Zen modunda](/tr/docs/customize/zen/) ekranda tutar. Varsayılan
 olarak açıktır.
 
-### Ekran kenarlarına yaklaşınca panelleri göster
-
-Zen modunda, işaretçi gizli denetimleri olan bir ekran kenarına yakınken gizli
-denetimleri gösterir. Varsayılan olarak kapalıdır.
-
 ### Düğme simgesi
 
-Capy düğmesinin resmini belirler: **Yukarı bakıyor** (varsayılan), **Öne
-bakıyor**, **Yıkanıyor** veya **Uyuyor**.
+Capy düğmesinin resmini belirler: **Yukarı bakıyor** (varsayılan), **Öne bakıyor**, **Yıkanıyor** veya **Uyuyor**.
 
 ## Tuval
+
+![Tuvalde gezinme ayarları.](shot:preferences/canvas-navigation)
+
+### Fare tekerleği
+
+Değiştirici tuş kullanılmadan fare tekerleğinin tuvali kaydırmasını veya yakınlaştırmasını seçin. **Ctrl** basılıyken diğer işlem kullanılır.
+
+### İki parmakla döndür
+
+İki parmakla çevirmenin görünümü döndürmesini sağlar. İki parmak hareketlerini kaydırma ve yakınlaştırmayla sınırlamak için kapatın.
 
 ### Kaydırarak gezinme hızı
 
@@ -127,8 +129,7 @@ ayarları açtığınız fotoğraflara uygulanır.
 
 ### Renk uzayı
 
-**sRGB** (varsayılan), **Display P3**, **Adobe RGB (1998)** veya **ProPhoto
-RGB** seçeneğini seçin.
+**sRGB** (varsayılan), **Display P3**, **Adobe RGB (1998)** veya **ProPhoto RGB** seçeneğini seçin.
 
 ### Bit derinliği
 

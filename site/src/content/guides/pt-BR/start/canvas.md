@@ -20,10 +20,11 @@ Faça uma das seguintes ações:
 
 - Escolha **Exibir > Ampliar** ou **Exibir > Reduzir**.
 - Pressione **Ctrl+=** ou **Ctrl+-**.
-- Mantenha **Ctrl** pressionada e role. No macOS e no iPad, mantenha **Control** pressionada, e não Command.
-- Faça o gesto de pinça com dois dedos em uma tela sensível ao toque ou, no macOS e no iPad, no trackpad.
-- Selecione um nível de zoom no menu da indicação de zoom, ou um botão de zoom no painel **Navegador**.
-- Empurre o analógico direito de um controle de jogo para cima ou para baixo.
+- Mantenha **Ctrl** pressionado e role. No macOS e no iPad, mantenha **Control** pressionado, não Command.
+- Faça um gesto de pinça com dois dedos na tela sensível ao toque ou no trackpad do macOS e do iPad.
+- Selecione um nível de zoom no menu do indicador de zoom ou um botão de zoom no painel **Navegador**.
+- Mova o analógico direito de um controle de jogo para cima ou para baixo.
+- Selecione a ferramenta **Zoom** e clique ou arraste conforme seus ajustes de Ferramenta.
 
 O zoom vai de 2% a 1600%. **Ctrl**+rolagem amplia em torno do ponteiro, e a pinça
 amplia em torno dos dedos. **Velocidade de zoom com rolagem**, em
@@ -37,6 +38,12 @@ mas mantém as inversões.
 
 O desenho é ajustado quando abre, mas não de novo quando você redimensiona a janela.
 
+## Ferramenta Zoom
+
+Selecione **Zoom** na barra Ferramentas ou mantenha pressionada sua tecla de acesso temporário e use a tela. O ajuste **Clique** escolhe se um clique amplia ou reduz. **Arrastar** escolhe zoom contínuo, uma área de zoom, a ação de clique oposta ou apenas clique.
+
+![Os ajustes Clique e Arrastar da ferramenta Zoom.](shot:start/zoom-tool-settings)
+
 ## Pixels reais
 
 Escolha **Exibir > Pixels reais** ou pressione **Ctrl+1** ou **Ctrl+Alt+0** para
@@ -48,13 +55,13 @@ também tem 25%, 50%, 200% e 400%. Nesses níveis, com a visualização girada e
 
 Faça uma das seguintes ações:
 
-- Role. Mantenha **Shift** pressionada e role para deslocar na horizontal.
-- Mantenha **Espaço** pressionada e arraste.
+- Role quando **Roda do mouse** estiver configurada para deslocar em [Preferências](/pt-BR/docs/preferences/). Mantenha **Shift** pressionado e role para mover lateralmente.
+- Mantenha **Espaço** pressionado e arraste.
 - Arraste com dois dedos em uma tela sensível ao toque.
-- Selecione a ferramenta **Mão** ou pressione **H** e arraste.
+- Selecione a ferramenta **Mão** ou pressione **A** e arraste.
 - Arraste no painel **Navegador**.
-- No editor web, arraste com o botão do meio ou o botão direito do mouse.
-- Empurre o analógico esquerdo de um controle de jogo.
+- No editor web, arraste com o botão do meio ou direito do mouse.
+- Mova o analógico esquerdo de um controle de jogo.
 
 **Velocidade de deslocamento com rolagem**, em [Preferências](/pt-BR/docs/preferences/),
 define a distância de cada passo de rolagem.
@@ -64,8 +71,8 @@ define a distância de cada passo de rolagem.
 Faça uma das seguintes ações:
 
 - Escolha **Exibir > Girar visualização 90° à esquerda** ou **Exibir > Girar visualização 90° à direita**.
-- Gire dois dedos em uma tela sensível ao toque ou, no macOS e no iPad, no trackpad.
-- Digite um ângulo ou arraste o controle deslizante de rotação no menu da indicação de zoom.
+- Gire dois dedos na tela sensível ao toque ou no trackpad do macOS e do iPad quando **Girar com dois dedos** estiver ativado em Preferências.
+- Digite um ângulo ou arraste o controle de rotação no menu do indicador de zoom.
 - Selecione um botão de rotação no painel **Navegador**.
 
 Por padrão, nenhuma tecla gira a visualização. Para voltar a 0°, selecione

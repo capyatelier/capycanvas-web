@@ -1,7 +1,7 @@
 ---
 title: "Bắt đầu nhanh"
 description: "Mở {appName}, vẽ trên bản vẽ trống đầu tiên, lưu bản vẽ thành tệp .capy và xuất ảnh PNG."
-related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
+related: ["start/workspaces", "start/device-support", "files/new", "files/open-save", "files/export"]
 ---
 
 ## Mở {appName}
@@ -11,15 +11,7 @@ Thực hiện một trong các cách sau:
 - Mở trình chỉnh sửa web tại [editor.capycanvas.art](https://editor.capycanvas.art/).
 - Tải ứng dụng máy tính, bản beta cho iPad hoặc Android, hoặc xem các bước cài trình chỉnh sửa web thành ứng dụng trên trang [Tải xuống](/vi/download/).
 
-Trình chỉnh sửa web chạy trên các trình duyệt sau:
-
-| Hệ điều hành | Trình duyệt |
-| --- | --- |
-| Windows | Chrome, Edge, Firefox 141 trở lên |
-| macOS | Chrome, Edge, Safari 26 trở lên, Firefox 147 trở lên (Apple silicon) |
-| Linux (Wayland) | Chrome, Edge |
-| iPadOS 26 trở lên | Safari |
-| Android 12 trở lên | Chrome |
+Xem [Hỗ trợ thiết bị](/vi/docs/start/device-support/) để biết yêu cầu riêng của ứng dụng gốc và trình duyệt web.
 
 Sau lần truy cập đầu tiên, trình chỉnh sửa web mở được cả khi không có kết nối internet.
 
@@ -27,10 +19,7 @@ Sau lần truy cập đầu tiên, trình chỉnh sửa web mở được cả k
 
 ![Bảng Lớp của một bản vẽ mới, với Mực hiện tại nằm trên Giấy.](shot:files/new-layers)
 
-Lần đầu bạn mở {appName}, ứng dụng hiện không gian làm việc [Vẽ](/vi/docs/start/workspaces/)
-với một bản vẽ trống, và thanh tiêu đề ghi “Chưa đặt tên · 2048 × 1536”.
-**Mực hiện tại**, một lớp vẽ trống, đang được chọn và nằm trên **Giấy**, một lớp
-tô màu trắng. Công cụ **Bút** đang dùng cọ **Bút G** với màu gần như đen.
+Lần đầu mở {appName}, ứng dụng hiện không gian làm việc [Vẽ](/vi/docs/start/workspaces/) với bản vẽ A4 ngang trống ở 300 ppi. **Mực hiện tại**, lớp vẽ trống, được chọn phía trên **Giấy**. Công cụ **Bút** đang dùng với cọ **Bút G** và màu gần đen.
 
 Những lần sau, {appName} mở không gian làm việc bạn dùng gần nhất cùng các bản
 vẽ đang mở lúc đó.
@@ -59,8 +48,7 @@ trong trình chỉnh sửa web. Hãy chọn lệnh đó từ trình đơn hoặc
 
 ## Tạo bản vẽ khác
 
-Chọn **Tệp > Mới…** rồi chọn **Tạo** trong hộp thoại [Bản vẽ mới](/vi/docs/files/new/).
-Bản vẽ mới mở trong thẻ riêng, cạnh bản vẽ đầu tiên.
+Chọn **Tệp > Mới…** và chọn **Tạo** trong hộp thoại [Bản vẽ mới](/vi/docs/files/new/). Chọn kích thước, độ phân giải, Giấy và thiết lập màu rồi chọn **Tạo**. Bản vẽ mới mở trong thẻ riêng cạnh bản vẽ đầu.
 
 ## Lưu bản vẽ
 

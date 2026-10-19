@@ -7,7 +7,7 @@ related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-manag
 Boya rengini **Renk** panelinde seçebilirsiniz. Tüm çalışma alanları aynı boya
 rengini kullanır.
 
-![Renk paneli: renk çemberi, sol üstte değer göstergesi ve çemberin altında renk örnekleri.](shot:color/panel "1 Değer göstergesi · 2 Şekil düğmeleri · 3 Rengi düzenle · 4 Ön plan ve arka plan · 5 Değiştir · 6 Saydam boya · 7 Siyah ve beyaz")
+![Renk paneli: renk çemberi, sol üstte değer göstergesi ve çemberin altında renk örnekleri.](shot:color/panel "1 Değer göstergesi · 2 Şekil düğmeleri · 3 Rengi düzenle · 4 Ön plan ve arka plan · 5 Değiştir · 6 Saydam boya")
 
 ## Renk panelini açma
 
@@ -80,9 +80,7 @@ için bir tuş yoktur.
 
 ## Siyah ve beyaz
 
-**Siyahla boya** veya **Beyazla boya** (saydam renk örneğinin yanındaki iki
-küçük daire) öğesini seçin ya da komut aramada **Siyah** veya **Beyaz** öğesini
-seçin.
+Komut aramasında **Siyah** veya **Beyaz** seçin.
 
 Siyah veya beyaz, seçili ön plan veya arka plan renk örneğinin renginin yerini
 alır. **Saydam boya** seçiliyse siyah veya beyaz bunun yerine geçici bir boya

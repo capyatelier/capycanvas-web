@@ -137,7 +137,4 @@ Faça uma das seguintes ações:
 - Selecione **Importar imagem como camada…** na parte inferior do painel Camadas.
 - Arraste arquivos de imagem para a tela ou para uma linha do painel Camadas.
 
-Cada arquivo vira uma [camada de foto](/pt-BR/docs/layers/types/) acima da
-camada ativa, ou acima, abaixo ou dentro da linha em que você o solta. A imagem
-fica centralizada e reduzida para caber na tela, com
-[alças de posicionamento](/pt-BR/docs/transform/move-transform/).
+Cada arquivo se torna uma [camada de objeto](/pt-BR/docs/layers/types/) acima da camada ativa, ou acima, abaixo ou dentro da linha em que você o soltar. A imagem é centralizada e reduzida para caber na tela, com [alças de posicionamento](/pt-BR/docs/transform/move-transform/).

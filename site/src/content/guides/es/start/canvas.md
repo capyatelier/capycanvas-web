@@ -20,10 +20,11 @@ Haz una de las siguientes acciones:
 
 - Elige **Ver > Acercar** o **Ver > Alejar**.
 - Pulsa **Ctrl+=** o **Ctrl+-**.
-- Mantén pulsada **Ctrl** y desplázate con la rueda. En macOS y iPad, mantén pulsada **Control**, no Command.
-- Pellizca con dos dedos en una pantalla táctil, o en el trackpad en macOS y iPad.
-- Selecciona un nivel de zoom en el menú del indicador de zoom, o un botón de zoom en el panel **Navegador**.
-- Mueve hacia arriba o hacia abajo el joystick derecho de un mando de videojuegos.
+- Mantén pulsado **Ctrl** y desplaza la rueda. En macOS y iPad, mantén pulsado **Control**, no Command.
+- Pellizca con dos dedos en una pantalla táctil o en el trackpad de macOS y iPad.
+- Selecciona un nivel de zoom en el menú del indicador de zoom o un botón de zoom en el panel **Navegador**.
+- Mueve el stick derecho de un mando hacia arriba o abajo.
+- Selecciona la herramienta **Zoom** y haz clic o arrastra según sus ajustes de Herramienta.
 
 El zoom va del 2% al 1600%. Con **Ctrl** y la rueda, el zoom se centra en el
 puntero; al pellizcar, se centra en los dedos. **Velocidad de zoom con la rueda**,
@@ -38,6 +39,12 @@ de la vista a 0°, pero conserva los volteos.
 El dibujo se ajusta a la vista al abrirse, y no vuelve a ajustarse cuando cambias
 el tamaño de la ventana.
 
+## Herramienta Zoom
+
+Selecciona **Zoom** en la barra Herramientas o mantén pulsada su tecla de acceso temporal y usa el lienzo. Su ajuste **Clic** elige si un clic acerca o aleja. **Arrastrar** elige zoom continuo, un área de zoom, la acción de clic opuesta o solo clic.
+
+![Los ajustes Clic y Arrastrar de la herramienta Zoom.](shot:start/zoom-tool-settings)
+
 ## Píxeles reales
 
 Elige **Ver > Píxeles reales**, o pulsa **Ctrl+1** o **Ctrl+Alt+0**, para mostrar
@@ -49,13 +56,13 @@ girada 0°, 90°, 180° o 270°, los píxeles de la imagen coinciden con los de 
 
 Haz una de las siguientes acciones:
 
-- Desplázate con la rueda. Mantén pulsada **Mayús** mientras te desplazas para moverte en horizontal.
-- Mantén pulsada **Espacio** y arrastra.
+- Desplaza la rueda cuando **Rueda del ratón** esté configurada para desplazar en [Preferencias](/es/docs/preferences/). Mantén pulsado **Mayús** y desplaza la rueda para moverte lateralmente.
+- Mantén pulsado **Espacio** y arrastra.
 - Arrastra con dos dedos en una pantalla táctil.
-- Selecciona la herramienta **Mano** o pulsa **H**, y arrastra.
+- Selecciona la herramienta **Mano** o pulsa **Al** y arrastra.
 - Arrastra en el panel **Navegador**.
 - En el editor web, arrastra con el botón central o derecho del ratón.
-- Mueve el joystick izquierdo de un mando de videojuegos.
+- Mueve el stick izquierdo de un mando.
 
 **Velocidad de desplazamiento**, en [Preferencias](/es/docs/preferences/), define
 la distancia que recorre cada paso de la rueda.
@@ -65,9 +72,9 @@ la distancia que recorre cada paso de la rueda.
 Haz una de las siguientes acciones:
 
 - Elige **Ver > Girar vista 90° a la izquierda** o **Ver > Girar vista 90° a la derecha**.
-- Gira dos dedos en una pantalla táctil, o en el trackpad en macOS y iPad.
-- Escribe un ángulo o arrastra el deslizador de rotación en el menú del indicador de zoom.
-- Selecciona un botón de giro en el panel **Navegador**.
+- Gira dos dedos en una pantalla táctil o en el trackpad de macOS y iPad cuando **Girar con dos dedos** esté activado en Preferencias.
+- Escribe un ángulo o arrastra el control de rotación en el menú del indicador de zoom.
+- Selecciona un botón de rotación en el panel **Navegador**.
 
 De forma predeterminada, ninguna tecla gira la vista. Para volver a 0°, selecciona
 **Restablecer rotación** en el menú del indicador de zoom.

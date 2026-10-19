@@ -1,11 +1,13 @@
 ---
 title: "Mengekspor gambar"
 description: "Mengekspor salinan gambar yang sudah diratakan dengan dialog Ekspor gambar dan Ekspor Lagi."
-related: ["files/open-save", "color-management/hdr", "color-management/color-spaces"]
+related: ["files/open-save", "layers/paper", "color-management/hdr", "color-management/color-spaces"]
 ---
 
 Anda dapat mengekspor salinan gambar yang sudah diratakan. Mengekspor tidak mengubah
 gambar `.capy` dan tidak terhitung sebagai menyimpan.
+
+Ekspor aplikasi native menyertakan [Pencahayaan Kertas](/id/docs/layers/paper/). Ekspor web saat ini tidak menyertakannya. Pratinjau relief sementara setelah mengubah tekstur Kertas atau Skala tidak disertakan.
 
 ## Mengekspor gambar
 
@@ -56,7 +58,7 @@ hanya muncul untuk format-format tersebut.
 ### Profil keluaran
 
 **sRGB**, **Display P3**, **Adobe RGB (1998)**, atau **ProPhoto RGB**, ditambah
-"Asli: *nama*" untuk setiap lapisan foto yang memiliki profil tertanamnya sendiri.
+"Asli: *nama*" untuk setiap lapisan Objek yang memiliki profil tertanamnya sendiri.
 
 ### Kedalaman bit
 

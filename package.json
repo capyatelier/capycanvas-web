@@ -17,6 +17,8 @@
     "serve": "node site/scripts/serve.mjs",
     "capture": "bash site/scripts/capture-headless.sh",
     "capture:prepare": "node site/scripts/prepare-capture.mjs",
+    "capture:release": "bash site/scripts/run-private-capture.sh site/scripts/release-visual.mjs",
+    "capture:release:native": "node site/scripts/release-visual-native.mjs",
     "capture:store": "node site/scripts/store/capture.mjs",
     "check:branding": "node site/scripts/check-branding.mjs"
   },

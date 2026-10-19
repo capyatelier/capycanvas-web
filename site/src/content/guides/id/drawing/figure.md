@@ -56,7 +56,7 @@ Opsi Alat. Garis hanya dapat digambar dengan **Garis luar**.
 
 **Lebar garis** dan **Opasitas** ada di panel **Alat** dan bilah Opsi Alat. Keduanya
 berbagi nilai dengan **Ukuran kuas** dan **Opasitas** kuas saat ini
-([Ukuran, opasitas, dan aliran cat](/id/docs/brushes/basics/)), dan **[** serta **]**
+([Ukuran, kekuatan, dan opasitas cat](/id/docs/brushes/basics/)), dan **[** serta **]**
 mengubah Lebar garis.
 
 ### Lebar garis

@@ -12,9 +12,9 @@ recortados se quedan en sus capas, ocultos, salvo que actives
 
 Haz una de las siguientes acciones:
 
-- Elige **Editar > Imagen > Recortar**.
+- Elige **Imagen > Recortar**.
 - Pulsa **C**.
-- En Foto, selecciona **Recortar** en la barra de herramientas.
+- En Foto, selecciona **Recortar** en la barra Herramientas.
 
 Aparece un marco con tiradores alrededor de todo el lienzo, o como el marco más
 grande de la proporción elegida. El lienzo fuera del marco se atenúa, y la
@@ -113,7 +113,7 @@ Puedes recortar el lienzo a los límites de una selección.
 
 Haz una de las siguientes acciones:
 
-- Elige **Editar > Imagen > Recortar lienzo a la selección**.
+- Elige **Imagen > Recortar lienzo a la selección**.
 - Selecciona **Recortar** en la [barra de selección](/es/docs/selections/working/).
 
 Los píxeles fuera de los límites de la selección se quedan en sus capas,
@@ -121,7 +121,4 @@ ocultos. No puedes recortar a una selección invertida.
 
 ## Recuperar píxeles recortados
 
-Elige **Editar > Imagen > Mostrar todo** para ampliar el lienzo hasta que muestre
-los píxeles de todas las capas, o agranda el lienzo con
-**Editar > Imagen > Tamaño del lienzo…** (consulta
-[Tamaño y rotación de la imagen](/es/docs/transform/image/)).
+Elige **Imagen > Mostrar todo** para ampliar el lienzo hasta mostrar los píxeles de todas las capas, o amplía el lienzo con **Imagen > Tamaño del lienzo…** (consulta [Tamaño y rotación de la imagen](/es/docs/transform/image/)).

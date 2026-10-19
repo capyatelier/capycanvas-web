@@ -11,22 +11,19 @@ Die Befehle auf dieser Seite stehen im Menü **Datei**. Im Arbeitsbereich Skizze
 
 ## Eine Zeichnung oder ein Foto öffnen
 
-Sie können `.capy`-Zeichnungen und Fotos in den Formaten OpenEXR, TIFF, PNG, WebP,
-BMP, JPEG, GIF, HEIF und AVIF öffnen. Jede Datei öffnet sich in einer eigenen Registerkarte.
+Sie können `.capy`-Zeichnungen und Fotos in OpenEXR, TIFF, PNG, WebP, BMP, JPEG, GIF, HEIF und AVIF öffnen. Jede Datei öffnet sich in einem eigenen Reiter.
 
 Führen Sie eine der folgenden Aktionen aus:
 
-- Wählen Sie **Datei > Öffnen…**. Außer unter Linux können Sie mehrere Dateien auswählen.
+- Wählen Sie **Datei > Öffnen…**. Außer unter Linux können Sie mehrere Dateien wählen.
 - Drücken Sie **Strg+O**.
-- Wählen Sie in den Arbeitsbereichen Malen und Foto **Öffnen…** in der Werkzeugleiste Befehle aus.
-- Ziehen Sie im Web-Editor oder unter Linux Dateien auf den Zeichnungsnamen oder die Registerkarten in der Titelleiste.
-- Wenn Sie den Web-Editor als App installiert haben, öffnen Sie eine `.capy`-, `.png`-, `.jpg`-, `.tif`-, `.avif`- oder `.exr`-Datei aus Ihrem System mit {appName}.
+- Wählen Sie in Malen und Foto **Öffnen…** in der Befehlsleiste.
+- Ziehen Sie Dateien im Webeditor oder unter Linux auf den Zeichnungsnamen oder die Reiter in der Titelleiste.
+- Wenn Sie den Webeditor als App installiert haben, öffnen Sie eine unterstützte Datei über Ihr System mit {appName}.
 
 ## Fotos
 
-Ein Foto öffnet sich als neue Zeichnung mit einer Fotoebene, benannt nach der Datei,
-über einer Ebene **Papier**. Das Foto behält sein Farbprofil und standardmäßig seine
-Farbtiefe. Beim Speichern entsteht eine `.capy`-Datei. Das Foto wird nie überschrieben.
+Ein Foto öffnet sich als neue Zeichnung mit einer nach der Datei benannten Objektebene. Das Objekt behält die eigene Größe, das Farbprofil und standardmäßig die Farbtiefe des Bilds bei. Beim Speichern der Zeichnung entsteht eine `.capy`-Datei; das Quellbild wird niemals überschrieben.
 
 - Bei einem animierten GIF oder WebP öffnet sich das erste Einzelbild.
 - Ein Foto kann pro Seite bis zu 32768 Pixel groß sein.
@@ -39,7 +36,7 @@ auf **Nachfragen** gesetzt, öffnet ein Foto ohne Farbprofil den Dialog
 
 ## Bilder als Ebenen importieren
 
-Sie können der aktuellen Zeichnung Bilder als neue Ebenen hinzufügen.
+Sie können einer Zeichnung Bilder als neue Ebenen hinzufügen.
 
 Führen Sie eine der folgenden Aktionen aus:
 
@@ -47,9 +44,7 @@ Führen Sie eine der folgenden Aktionen aus:
 - Drücken Sie **Strg+Umschalt+O**.
 - Ziehen Sie Bilder auf die Leinwand oder auf eine Zeile im Bedienfeld **Ebenen**.
 
-Jedes Bild wird zu einer Ebene, benannt nach der Datei, über der ausgewählten Ebene,
-mit [Transformationsgriffen](/de/docs/transform/move-transform/) zum Platzieren. Ein
-Bild, das größer als die Leinwand ist, wird passend verkleinert.
+Jedes Bild wird zu einer nach der Datei benannten [Objektebene](/de/docs/layers/types/) über der ausgewählten Ebene, mit [Transformationsgriffen](/de/docs/transform/move-transform/) zur Platzierung. Ein größeres Bild wird verkleinert, damit es auf die Leinwand passt.
 
 Eine `.capy`-Datei lässt sich nicht importieren. Im Web-Editor kann ein Bild bis zu
 512 MiB groß sein.
@@ -64,9 +59,7 @@ Führen Sie eine der folgenden Aktionen aus:
 - Drücken Sie **Strg+S**.
 - Wählen Sie in den Arbeitsbereichen Malen und Foto **Speichern** in der Werkzeugleiste Befehle aus.
 
-Beim ersten Speichern werden Sie nach einem Speicherort gefragt. Spätere Speichervorgänge
-schreiben in dieselbe Datei. Nach dem Speichern zeigt die Registerkarte den Dateinamen ohne
-die Markierung ●.
+Beim ersten Speichern wird nach einem Speicherort gefragt; spätere Speichervorgänge verwenden dieselbe Datei. Der gespeicherte Reiter zeigt den Dateinamen ohne die Markierung ●.
 
 In Firefox und Safari gilt die Zeichnung erst als gespeichert, wenn Sie im Dialog
 **Datei herunterladen** zuerst **Herunterladen** und dann **Datei gespeichert** auswählen.
@@ -83,17 +76,11 @@ geöffnet ist.
 
 ## Was eine .capy-Datei speichert
 
-Eine `.capy`-Datei speichert jede Ebene mit ihrer Maske und ihren Einstellungen, die
-Filter, gespeicherte Auswahlen und Hilfslinien, Farbraum, Farbtiefe und Verrechnung
-sowie die EXIF-, XMP- und IPTC-Daten eines Fotos. Nicht gespeichert werden der
-Rückgängig-Verlauf, die Ansicht und die aktive Auswahl.
+Eine `.capy`-Datei enthält jede Ebene mit Maske und Einstellungen, eingebettete Objektquellbilder und importierte Papiertexturen, Filter, gespeicherte Auswahlen und Hilfslinien, Farbraum, Farbtiefe und Verrechnung sowie EXIF-, XMP- und IPTC-Daten eines Fotos. Sie enthält weder Rückgängig-Verlauf noch Ansicht noch aktive Auswahl.
 
 ## Nur lesbare Zeichnungen
 
-Eine `.capy`-Datei, die {appName} nicht bearbeiten kann, etwa eine beschädigte
-Datei, öffnet sich in einem Dialog statt in einer Registerkarte. **Copy Original File…**
-speichert eine Kopie der Datei, und **Export Preview Image…** speichert die Vorschau
-der Zeichnung als PNG.
+Eine `.capy`-Datei, die {appName} nicht bearbeiten kann, einschließlich einer Datei in einem nicht unterstützten neueren Format oder einer beschädigten Datei, öffnet sich in einem Dialog statt in einem Reiter. **Copy Original File…** speichert eine Kopie der Datei, und **Export Preview Image…** speichert die Zeichnungsvorschau als PNG.
 
 ## Zeichnungsregisterkarten
 
@@ -115,8 +102,7 @@ Im Web-Editor ziehen Sie eine Registerkarte seitwärts, um die Registerkarten ne
 Ein ● vor einem Namen kennzeichnet ungespeicherte Änderungen. In einer schmalen
 Titelleiste werden die Registerkarten zu einer Schaltfläche, die die Liste Zeichnungen öffnet.
 
-Jede Registerkarte hat ihren eigenen Rückgängig-Verlauf, ihre Ansicht und ihre Auswahl.
-Registerkarten gehören nicht zu einem Arbeitsbereich.
+Jeder Reiter behält seinen Rückgängig-Verlauf, seine Ansicht und seine Auswahl. Reiter gehören nicht zu einem Arbeitsbereich.
 
 ## Zeichnungen…
 

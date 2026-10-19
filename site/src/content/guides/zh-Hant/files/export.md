@@ -1,10 +1,12 @@
 ---
 title: "匯出影像"
 description: "使用匯出影像對話方塊和再次匯出，將畫作匯出為拼合的影像副本。"
-related: ["files/open-save", "color-management/hdr", "color-management/color-spaces"]
+related: ["files/open-save", "layers/paper", "color-management/hdr", "color-management/color-spaces"]
 ---
 
 可以將畫作匯出為拼合的影像副本。匯出不會更改 `.capy` 畫作，也不算儲存。
+
+原生應用程式匯出時包含[紙張光照](/zh-Hant/docs/layers/paper/)。網頁匯出目前不包含紙張光照。更改紙張紋理或縮放後短暫顯示的浮雕預覽不包含在內。
 
 ## 匯出影像
 
@@ -46,7 +48,7 @@ SDR 畫作為 **SDR**；HDR 畫作可以選擇 HDR 格式（參見下文的 HDR 
 
 ### 輸出描述檔
 
-**sRGB**、**Display P3**、**Adobe RGB (1998)** 或 **ProPhoto RGB**，另外每個帶有自己嵌入描述檔的照片圖層還會對應一項「原始描述檔：*名稱*」。
+**sRGB**、**Display P3**、**Adobe RGB (1998)** 或 **ProPhoto RGB**，以及每個具有自身嵌入描述檔的物件圖層對應的“原始：*name*”。
 
 ### 位元深度
 

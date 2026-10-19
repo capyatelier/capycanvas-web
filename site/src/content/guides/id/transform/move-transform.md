@@ -152,7 +152,7 @@ terbuka, kecuali dalam **Lengkungkan**.
 
 ## Transformasi lapisan
 
-Transformasi pada seluruh lapisan lukis atau lapisan foto disimpan bersama setiap
+Transformasi pada seluruh lapisan lukis atau lapisan Objek disimpan bersama setiap
 lapisan, dan pikselnya tidak disampel ulang. **Transformasi** terbuka kembali dari
 transformasi yang tersimpan.
 
@@ -160,14 +160,14 @@ Sampai Anda menerapkan transformasi ke piksel, lapisan yang diskalakan atau dipu
 tidak dapat diretus, dan lapisan yang didistorsi atau dilengkungkan tidak dapat
 dilukis.
 
-## Terapkan Transformasi ke Piksel
+## Terapkan transformasi
 
 Anda dapat menjadikan transformasi yang tersimpan pada lapisan sebagai bagian dari pikselnya.
 
 Lakukan salah satu langkah berikut:
 
-- Pilih **Edit > Terapkan Transformasi ke Piksel**.
-- Pilih **Lapisan > Pengaturan Lapisan > Terapkan Transformasi ke Piksel**.
+- Pilih **Edit > Terapkan transformasi**.
+- Pilih **Lapisan > Pengaturan Lapisan > Terapkan transformasi**.
 
 Selama prosesnya berjalan, bilah di bagian bawah kanvas bertuliskan "Menerapkan
 transformasi…" dengan **Batal**.

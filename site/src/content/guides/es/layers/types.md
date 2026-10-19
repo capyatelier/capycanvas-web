@@ -1,111 +1,45 @@
 ---
 title: "Tipos de capa"
-description: "Los tipos de capa de un dibujo y las reglas de cada uno."
-related: ["layers/panel", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
+description: "Capas de pintura, objeto, Papel, grupo, relleno, filtro y selección y las reglas de cada una."
+related: ["layers/panel", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
 ---
 
-![El panel Capas con una capa de selección, un grupo con Traspasar, un filtro Curvas, una capa Relleno degradado, una capa Color uniforme, la capa de pintura Tinta actual y Papel.](shot:layers/types-rows)
+![Los tipos de capa actuales en el panel Capas.](shot:layers/types-rows)
 
 ## Capa de pintura
 
-Una capa de pintura contiene píxeles pintados. Los pinceles, **Rellenar**,
-**Degradado** y **Figura** solo añaden píxeles a las capas de pintura.
+Una capa de pintura contiene píxeles en el espacio de color del dibujo. Los pinceles, **Rellenar**, **Degradado** y **Figura** pintan en este tipo de capa.
 
-Para añadir una capa de pintura, elige **Capa > Nuevo > Capa nueva** o selecciona
-**Capa nueva** en la parte inferior del panel Capas.
+Elige **Capa > Nuevo > Capa nueva** o selecciona **Capa nueva** al pie del panel Capas. Un dibujo nuevo comienza con **Tinta actual** encima de Papel.
 
-Un dibujo nuevo empieza con una capa de pintura vacía, **Tinta actual**, encima
-de **Papel**. Solo las capas de pintura tienen **Bloquear alfa**, **Modo de color**,
-**Borrar capa completa** y **Aplicar máscara a la capa**.
+## Capa de objeto
 
-## Grupo
+Una capa de objeto conserva una imagen importada con su propio tamaño, profundidad de bits y perfil de color. Abrir o importar una imagen, soltar una imagen en el lienzo y pegar una imagen desde otra aplicación crean capas de objeto.
 
-Un grupo reúne capas en una carpeta que puedes contraer en una sola fila.
-
-Haz una de las siguientes acciones:
-
-- Elige **Capa > Nuevo > Grupo nuevo**.
-- Selecciona **Grupo nuevo** en la parte inferior del panel Capas.
-- Selecciona varias filas y elige **Capa > Organizar > Agrupar capas seleccionadas**.
-
-Selecciona la miniatura de la carpeta para expandir o contraer el grupo. Una
-insignia en la carpeta marca un grupo con [Traspasar](/es/docs/layers/settings/) activado.
-
-Un grupo combina primero sus capas y después mezcla el resultado con las capas
-de debajo, salvo que tenga Traspasar activado. Un grupo no tiene píxeles propios.
-
-## Capas de relleno
-
-Una capa de relleno cubre el lienzo con un color (**Color uniforme**) o con un
-degradado (**Relleno degradado**).
-
-Haz una de las siguientes acciones:
-
-- Elige **Capa > Nuevo > Relleno de color uniforme** o **Relleno degradado**.
-- Elige **Filtro > Relleno > Color uniforme** o **Relleno degradado**.
-- Selecciona **Color uniforme** o **Relleno degradado** en la categoría **Relleno** del panel **Filtros**.
-
-La capa de relleno se coloca encima de la capa activa y de las capas recortadas
-a ella. Un Color uniforme nuevo usa el color de pintura actual, y un Relleno
-degradado nuevo va de negro a blanco. Si hay una selección activa, se convierte
-en la máscara de la capa de relleno.
-
-Para cambiar el color de un Color uniforme, selecciona su miniatura para abrir
-[Editar color](/es/docs/color/edit-color/), o cambia **Color** en el panel
-**Propiedades**. [Degradado](/es/docs/drawing/gradient/) describe los ajustes de
-un Relleno degradado.
-
-Para pintar en una capa de relleno, añádele una máscara. Los pinceles pintan la
-máscara, no el relleno. Puedes recortar una capa de relleno, pero no puedes
-recortar otras capas a ella ni adjuntarle filtros.
-
-## Capas de filtro
-
-Una capa de filtro contiene un filtro en lugar de píxeles. Su fila muestra el
-icono y el nombre del filtro. Consulta [Añadir filtros](/es/docs/filters/adding/)
-y [Cómo se aplican los filtros](/es/docs/filters/how-filters-apply/).
-
-Con una capa de filtro seleccionada, los pinceles pintan en la capa de debajo o
-en la capa a la que está adjunto el filtro. Si el filtro tiene máscara, los
-pinceles pintan la máscara.
-
-## Capas de selección
-
-Una capa de selección guarda una selección. Para añadir una, selecciona
-**Nueva capa de selección** en la parte inferior del panel Capas.
-
-El botón a la derecha de la miniatura carga la selección guardada. El ojo oculta
-o muestra la superposición de la selección en el lienzo. Una capa de selección
-no tiene opacidad, modo de mezcla, máscara, recorte ni ajuste de referencia, y
-no se puede combinar. [Capas de selección](/es/docs/selections/selection-layers/)
-explica cómo editar la selección guardada.
+Puedes mover, escalar y girar una capa de objeto sin remuestrear su origen repetidamente. Elige **Capa > Rasterizar capa** cuando necesites pintar en sus píxeles o usar un comando que requiera una capa de pintura. Rasterizar la convierte al espacio de color, la profundidad de bits y la cuadrícula de píxeles del dibujo.
 
 ## Papel
 
-**Papel** es una capa de relleno **Color uniforme** blanca en la parte inferior
-de un dibujo nuevo. Puedes cambiar el color de **Papel**, ocultarla o eliminarla
-como cualquier otra capa de relleno.
+Papel proporciona el color de fondo y la textura que usan los trazos de medios secos. Permanece al fondo de la pila de capas y tiene miniaturas de color y textura.
 
-**Papel** empieza oculta cuando **Fondo** está en **Transparente** en el diálogo
-[Dibujo nuevo](/es/docs/files/new/), y también en una foto que abres.
+Un dibujo puede contener un Papel. Papel no puede tener una máscara, convertirse en capa de recorte, moverse encima de las capas normales ni combinarse con una capa normal. Consulta [Papel](/es/docs/layers/paper/) para la textura, la iluminación y los demás ajustes.
 
-## Capas de foto
+## Grupo
 
-Una capa de foto es una capa de pintura que conserva la foto original con su
-propio tamaño, profundidad de bits y perfil de color. Lo que pintas y borras se
-guarda encima de la foto.
+Un grupo contiene capas en una carpeta plegable. Elige **Capa > Nuevo > Grupo nuevo**, selecciona **Grupo nuevo** debajo de la lista de capas o elige **Capa > Organizar > Agrupar capas seleccionadas**.
 
-Para añadir una capa de foto, haz una de las siguientes acciones:
+Un grupo combina su contenido antes de mezclarse con las capas inferiores, salvo que [Traspasar](/es/docs/layers/settings/) esté activado.
 
-- Elige **Archivo > Abrir…** y selecciona una foto.
-- Elige **Archivo > Importar imagen como capa…**.
-- Suelta un archivo de imagen en el lienzo.
+## Capas de relleno
 
-Mientras se conserva el original, **Capa > Ajustes de capa** muestra estos comandos:
+**Color uniforme** y **Relleno degradado** cubren el lienzo con contenido generado. Añade una desde **Capa > Nuevo**, el menú **Filtro > Rellenar** o el panel **Filtros**.
 
-- **Volver a la foto original** descarta lo pintado, lo borrado y las máscaras aplicadas. La posición, la máscara, la opacidad y el modo de mezcla se mantienen, y **Modo de color** vuelve a **Color completo**.
-- **Rasterizar original…** convierte el original al espacio de color y la profundidad de bits del dibujo, a tamaño completo. Después, **Volver a la foto original** deja de estar disponible.
-- **Reparar perfil del original…** cambia el perfil con el que se lee el original: **sRGB**, **Display P3**, **Adobe RGB (1998)** o **ProPhoto RGB**. Si la capa tiene pintura, **Añadir original corregido** añade en su lugar la foto corregida como capa nueva.
+Selecciona la miniatura de Color sólido para abrir **Editar color**. Añade una máscara para pintar el área visible de un relleno. Puedes recortar una capa de relleno, pero no puedes recortar otras capas a ella.
 
-**Volver a la foto original** y **Rasterizar original…** también están en el
-menú **Editar**. **Borrar capa completa** también descarta la foto original.
+## Capas de filtro
+
+Una capa de filtro cambia las capas inferiores en lugar de contener píxeles. Su fila muestra el icono y el nombre del filtro. Consulta [Cómo se aplican los filtros](/es/docs/filters/how-filters-apply/).
+
+## Capas de selección
+
+Una capa de selección guarda una selección. Selecciona **Nueva capa de selección** debajo de la lista de capas para añadir una. No tiene opacidad, modo de fusión, máscara, recorte ni ajuste de referencia y no se puede combinar.

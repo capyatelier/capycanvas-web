@@ -107,4 +107,4 @@ related: ["layers/panel", "layers/blend-modes", "layers/types", "filters/how-fil
 
 ## レイヤー設定のその他の項目
 
-**レイヤー設定**には、**変形をピクセルに適用**もあります（[移動と変形](/ja/docs/transform/move-transform/)を参照）。写真レイヤーでは、**元画像のプロファイルを修復…**、**元画像をラスタライズ…**、**元の写真に戻す**もあります（[レイヤーの種類](/ja/docs/layers/types/)を参照）。
+**レイヤー設定**には**変形を適用**もあります（[移動と変形](/ja/docs/transform/move-transform/)）。オブジェクトレイヤーでは**レイヤーをラスタライズ**で元画像を編集可能なピクセルに変換します（[レイヤーの種類](/ja/docs/layers/types/)）。

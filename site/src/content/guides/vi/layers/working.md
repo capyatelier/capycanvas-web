@@ -127,6 +127,6 @@ Thực hiện một trong các cách sau:
 - Chọn **Nhập ảnh thành lớp…** ở cuối bảng Lớp.
 - Kéo tệp ảnh vào khung vẽ hoặc vào một hàng trong bảng Lớp.
 
-Mỗi tệp trở thành một [lớp ảnh](/vi/docs/layers/types/) nằm trên lớp hiện tại, hoặc
+Mỗi tệp trở thành một [lớp Đối tượng](/vi/docs/layers/types/) nằm trên lớp hiện tại, hoặc
 nằm trên, dưới hay bên trong hàng mà bạn thả vào. Ảnh được đặt ở giữa và thu nhỏ cho
 vừa khung vẽ, kèm [tay nắm đặt ảnh](/vi/docs/transform/move-transform/).

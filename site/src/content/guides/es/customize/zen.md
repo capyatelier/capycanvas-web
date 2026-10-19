@@ -19,8 +19,7 @@ Haz una de las siguientes acciones:
 - Escribe «Modo Zen» en la [búsqueda de comandos](/es/docs/start/command-search/).
 - Con el mapa de atajos **Estilo Procreate**, toca el lienzo con cuatro dedos.
 
-Repite la acción para salir del modo Zen. El botón Capy aparece pulsado mientras el
-modo Zen está activo.
+Repite la misma acción para salir del modo Zen.
 
 El modo Zen se guarda con cada espacio de trabajo y sigue activo después de
 reiniciar. **Personalizar barra de título…** desactiva el modo Zen.
@@ -36,25 +35,9 @@ El modo Zen también oculta las columnas contraídas y el pie. Se mantienen:
 
 Las teclas y la búsqueda de comandos (**Ctrl+K**) funcionan como siempre.
 
-## Mostrar los controles un momento
-
-Los controles ocultos vuelven a aparecer mientras hay un menú o un diálogo abierto
-y mientras arrastras un panel o cambias su tamaño. Pulsa **Escape** para mostrarlos
-hasta que se mueva el puntero.
-
-Con **Mostrar paneles cerca de los bordes de la pantalla** activado, también
-aparecen mientras el puntero está cerca del borde superior o de un borde con paneles
-acoplados.
-
-En una pantalla táctil, el primer toque sobre un control oculto muestra los
-controles, y el segundo toque usa el control.
-
 ## Acoplar en modo Zen
 
-Mientras los paneles acoplados están ocultos, un panel flotante que arrastras solo
-puede unirse a otros paneles flotantes. Con **Mostrar paneles cerca de los bordes de
-la pantalla** activado, al arrastrar hacia un borde con paneles acoplados, estos se
-muestran como destinos donde soltar.
+Mientras los paneles acoplados están ocultos, un panel flotante que arrastres solo puede unirse a otros paneles flotantes.
 
 ## Menú del botón Capy
 
@@ -76,11 +59,6 @@ Zen**. Estos ajustes se aplican a todos los espacios de trabajo.
 Mantiene el botón Capy en la esquina superior izquierda en modo Zen. Activado de
 forma predeterminada. Mientras está desactivado, pulsa **Tab** o usa la búsqueda de
 comandos para salir del modo Zen.
-
-### Mostrar paneles cerca de los bordes de la pantalla
-
-Muestra los controles ocultos mientras el puntero o un dedo está cerca de un borde
-de la pantalla con controles ocultos. Desactivado de forma predeterminada.
 
 ### Icono del botón
 

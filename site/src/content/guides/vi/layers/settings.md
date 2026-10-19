@@ -133,7 +133,4 @@ trong suốt hoàn toàn. **Chế độ màu** bị ẩn khi bạn vẽ lên m�
 
 ## Các mục khác trong Thiết lập lớp
 
-**Thiết lập lớp** còn có **Áp dụng biến đổi vào pixel** (xem
-[Di chuyển và biến đổi](/vi/docs/transform/move-transform/)). Trên lớp ảnh, trình
-đơn này có **Sửa hồ sơ màu nguồn…**, **Chuyển nguồn thành ảnh điểm…** và
-**Trở về ảnh gốc** (xem [Các loại lớp](/vi/docs/layers/types/)).
+**Thiết lập lớp** còn có **Áp dụng biến đổi** (xem [Di chuyển và Biến đổi](/vi/docs/transform/move-transform/)). Trên lớp Đối tượng, chọn **Chuyển lớp thành ảnh điểm** để chuyển nguồn thành pixel có thể sửa (xem [Các loại lớp](/vi/docs/layers/types/)).

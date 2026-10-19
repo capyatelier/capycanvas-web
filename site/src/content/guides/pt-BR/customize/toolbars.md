@@ -56,11 +56,7 @@ Cada barra de ferramentas precisa de um nome próprio.
 - Para remover uma ferramenta, escolha **Remover ferramenta** no menu dela.
 - Para mover uma ferramenta, mantenha-a pressionada e arraste-a dentro da barra ou para outra barra.
 
-Além de comandos e ferramentas, a lista **Adicionar ferramentas** tem pincéis,
-tamanhos de pincel, **Conta-gotas**, **Controle deslizante de tamanho do
-pincel**, **Controle deslizante de opacidade do pincel**, **Opções da
-ferramenta** e **Divisor**. Ela também tem uma entrada para cada painel, como
-**Painel Camadas**, que abre o painel em uma gaveta.
+Além de comandos e ferramentas, a lista **Adicionar ferramentas** tem pincéis, tamanhos de pincel, **Conta-gotas**, **Controle deslizante de tamanho do pincel**, **Controle de intensidade**, **Opções da ferramenta** e **Divisor**. Ela também tem uma entrada para cada painel, como **Painel Camadas**, que abre o painel em uma gaveta.
 
 **Opções da ferramenta** mostra as configurações da ferramenta atual no restante
 da barra. O menu desse item tem **Horizontal: texto**, **Horizontal: ícones** e

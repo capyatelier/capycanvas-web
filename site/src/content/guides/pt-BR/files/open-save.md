@@ -11,23 +11,19 @@ Os comandos desta página ficam no menu **Arquivo**. Em Esboço, abra-o pelo
 
 ## Abrir um desenho ou uma foto
 
-Você pode abrir desenhos `.capy` e fotos nos formatos OpenEXR, TIFF, PNG, WebP,
-BMP, JPEG, GIF, HEIF e AVIF. Cada arquivo abre em uma aba própria.
+Você pode abrir desenhos `.capy` e fotos nos formatos OpenEXR, TIFF, PNG, WebP, BMP, JPEG, GIF, HEIF e AVIF. Cada um abre em sua própria aba.
 
 Faça uma das seguintes ações:
 
 - Escolha **Arquivo > Abrir…**. Você pode escolher vários arquivos, exceto no Linux.
 - Pressione **Ctrl+O**.
-- Em Pintura e Foto, selecione **Abrir…** na barra de ferramentas Comandos.
-- No editor web ou no Linux, arraste arquivos até o nome do desenho ou até as abas na barra de título.
-- Se você instalou o editor web como aplicativo, abra um arquivo `.capy`, `.png`, `.jpg`, `.tif`, `.avif` ou `.exr` com o {appName} pelo seu sistema.
+- Em Pintura e Foto, selecione **Abrir…** na barra Comandos.
+- No editor web ou no Linux, arraste arquivos para o nome do desenho ou para as abas na barra de título.
+- Se você instalou o editor web como aplicativo, abra um arquivo compatível com {appName} pelo sistema.
 
 ## Fotos
 
-Uma foto abre como um novo desenho com uma camada de foto, com o nome do arquivo,
-acima de uma camada **Papel**. A foto mantém o perfil de cor e, por padrão, a
-profundidade de bits. Salvar o desenho cria um arquivo `.capy` e nunca sobrescreve
-a foto.
+Uma foto abre como um novo desenho com uma camada de objeto nomeada a partir do arquivo. O objeto mantém o tamanho, o perfil de cor e, por padrão, a profundidade de bits da imagem. Salvar o desenho cria um arquivo `.capy` e nunca sobrescreve a imagem de origem.
 
 - Um GIF ou WebP animado abre no primeiro quadro.
 - Uma foto pode ter até 32768 pixels de cada lado.
@@ -40,7 +36,7 @@ diálogo **Escolher interpretação da imagem**.
 
 ## Importar imagens como camadas
 
-Você pode adicionar imagens ao desenho atual como novas camadas.
+Você pode adicionar imagens a um desenho como novas camadas.
 
 Faça uma das seguintes ações:
 
@@ -48,9 +44,7 @@ Faça uma das seguintes ações:
 - Pressione **Ctrl+Shift+O**.
 - Arraste imagens até a tela ou até uma linha do painel **Camadas**.
 
-Cada imagem vira uma camada com o nome do arquivo, acima da camada selecionada,
-com [alças de transformação](/pt-BR/docs/transform/move-transform/) para
-posicioná-la. Uma imagem maior que a tela é reduzida para caber.
+Cada imagem se torna uma [camada de objeto](/pt-BR/docs/layers/types/) com o nome do arquivo, acima da camada selecionada, com [alças de transformação](/pt-BR/docs/transform/move-transform/) para posicioná-la. Uma imagem maior que a tela é reduzida para caber.
 
 Não é possível importar um arquivo `.capy`. No editor web, uma imagem pode ter até 512 MiB.
 
@@ -64,8 +58,7 @@ Faça uma das seguintes ações:
 - Pressione **Ctrl+S**.
 - Em Pintura e Foto, selecione **Salvar** na barra de ferramentas Comandos.
 
-O primeiro salvamento pede um local, e os seguintes gravam no mesmo arquivo.
-Depois de salvar, a aba mostra o nome do arquivo sem a marca ●.
+O primeiro salvamento solicita um local; os seguintes usam o mesmo arquivo. A aba salva mostra o nome do arquivo sem a marca ●.
 
 No Firefox e no Safari, o desenho só conta como salvo depois que você seleciona
 **Baixar** e depois **Arquivo salvo** na caixa de diálogo **Baixar arquivo**.
@@ -80,17 +73,11 @@ o arquivo mudou no disco depois que você o abriu ou salvou.
 
 ## O que um arquivo .capy guarda
 
-Um arquivo `.capy` guarda cada camada com sua máscara e suas configurações, os
-filtros, as seleções e guias salvas, o espaço de cores, a profundidade de bits e
-a mesclagem, e os dados EXIF, XMP e IPTC de uma foto. Ele não guarda o histórico
-de desfazer, a visualização nem a seleção ativa.
+Um arquivo `.capy` mantém cada camada com sua máscara e ajustes, as imagens de origem incorporadas dos objetos e as texturas de Papel importadas, os filtros, as seleções e guias salvas, o espaço de cor, a profundidade de bits e a mistura, e os dados EXIF, XMP e IPTC de uma foto. Não mantém o histórico de desfazer, a visualização nem a seleção ativa.
 
 ## Desenhos somente para visualização
 
-Um arquivo `.capy` que o {appName} não consegue editar, como um arquivo
-danificado, abre em uma caixa de diálogo em vez de uma aba. **Copy Original
-File…** salva uma cópia do arquivo, e **Export Preview Image…** salva a prévia do
-desenho como PNG.
+Um arquivo `.capy` que {appName} não pode editar, incluindo um arquivo de um formato mais recente incompatível ou um arquivo danificado, abre em um diálogo em vez de uma aba. **Copy Original File…** salva uma cópia do arquivo e **Export Preview Image…** salva a prévia do desenho como PNG.
 
 ## Abas de desenho
 
@@ -112,8 +99,7 @@ No editor web, arraste uma aba para o lado para reordenar as abas.
 Um ● antes do nome indica alterações não salvas. Quando a barra de título é
 estreita, as abas viram um único botão que abre a lista Desenhos.
 
-Cada aba guarda seu próprio histórico de desfazer, visualização e seleção. As abas
-não fazem parte de uma área de trabalho.
+Cada aba mantém seu histórico de desfazer, visualização e seleção. As abas não fazem parte de um espaço de trabalho.
 
 ## Desenhos…
 

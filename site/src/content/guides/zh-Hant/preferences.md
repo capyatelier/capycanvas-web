@@ -1,7 +1,7 @@
 ---
 title: "偏好設定"
-description: "偏好設定對話方塊，以及其中外觀、畫布、色彩和關於頁面上的設定。"
-related: ["input/pen", "input/keyboard", "customize/zen", "color-management/color-spaces"]
+description: "偏好設定對話框及其外觀、畫布、輸入、顏色和關於頁面上的設定。"
+related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
 可以在**偏好設定**對話方塊中更改整個應用程式的設定。每項更改都會立即生效並儲存。
@@ -17,7 +17,7 @@ related: ["input/pen", "input/keyboard", "customize/zen", "color-management/colo
 - 在「繪畫」和「照片」中，選擇標題列右端的齒輪按鈕。
 - 在[命令搜尋](/zh-Hant/docs/start/command-search/)中輸入「偏好設定」。
 
-偏好設定開啟時顯示**外觀**頁面。**說明 > 鍵盤快捷鍵**會開啟偏好設定並顯示**鍵盤快捷鍵**頁面，**說明 > 關於 {appName}** 則顯示**關於**頁面。
+偏好設定打開 **外觀** 頁面。選擇 **編輯 > Keyboard Shortcuts…** 可打開鍵盤快捷鍵，或從應用選單選擇 **關於 {appName}** 打開關於頁面。
 
 偏好設定開啟期間，畫布快捷鍵、繪圖筆按鈕和手指輕點都不起作用。
 
@@ -69,15 +69,21 @@ related: ["input/pen", "input/keyboard", "customize/zen", "color-management/colo
 
 在[專注模式](/zh-Hant/docs/customize/zen/)下將 Capy 按鈕保留在螢幕上。預設開啟。
 
-### 靠近螢幕邊緣時顯示面板
-
-在專注模式下，指標靠近有隱藏控制元件的螢幕邊緣時，顯示這些隱藏的控制元件。預設關閉。
-
 ### 按鈕圖示
 
 設定 Capy 按鈕的圖片：**仰望**（預設）、**正面**、**泡澡**或**睡覺**。
 
 ## 畫布
+
+![畫布導航設定。](shot:preferences/canvas-navigation)
+
+### 滑鼠滾輪
+
+選擇不按輔助鍵時滑鼠滾輪是平移還是縮放畫布。按住 **Ctrl** 使用另一種操作。
+
+### 雙指旋轉
+
+允許通過雙指扭轉旋轉視圖。關閉後，雙指手勢僅平移和縮放。
 
 ### 捲動平移速度
 

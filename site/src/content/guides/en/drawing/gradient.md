@@ -99,8 +99,7 @@ Sets the selected stop to the current color.
 ## Opacity
 
 **Opacity** sets the strength of the gradient, and is the same value as the
-current brush's **Opacity**. In Sketch, use the opacity slider at the left
-edge.
+current brush's **Opacity**. In Sketch, use **Strength slider** at the left edge.
 
 ## Gradient Fill layers
 

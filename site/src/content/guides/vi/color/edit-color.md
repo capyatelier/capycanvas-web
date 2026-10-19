@@ -101,8 +101,7 @@ giá trị của màu đó.
 Nhấp, hoặc nhấc bút hay ngón tay, để lấy màu. Hộp thoại trở lại với màu vừa lấy làm màu
 Mới. Nhấn **Escape** hoặc chọn dải đó để quay lại mà không thay đổi.
 
-Với ngón tay, điểm lấy mẫu nằm phía trên đầu ngón tay. **Lấy từ khung vẽ** bị ẩn khi
-Sửa màu được mở từ một hộp thoại khác.
+Với ngón tay, kính lúp hiện phía trên đầu ngón tay còn điểm lấy mẫu vẫn nằm bên dưới. **Lấy từ khung vẽ** bị ẩn khi Sửa màu mở từ hộp thoại khác.
 
 ## Màu gần đây và bảng màu
 

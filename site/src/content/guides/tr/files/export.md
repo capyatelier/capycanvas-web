@@ -1,11 +1,13 @@
 ---
 title: "Görüntüleri dışa aktarma"
 description: "Görüntüyü dışa aktar iletişim kutusu ve Yeniden Dışa Aktar ile çizimin düzleştirilmiş bir görüntü kopyasını dışa aktarma."
-related: ["files/open-save", "color-management/hdr", "color-management/color-spaces"]
+related: ["files/open-save", "layers/paper", "color-management/hdr", "color-management/color-spaces"]
 ---
 
 Çizimin düzleştirilmiş bir görüntü kopyasını dışa aktarabilirsiniz. Dışa aktarma
 `.capy` çizimini değiştirmez ve kaydetme sayılmaz.
+
+Yerel uygulamadan dışa aktarma [Kâğıt ışığı](/tr/docs/layers/paper/) içerir. Web dışa aktarmaları şu anda bunu içermez. Kâğıt dokusu veya Ölçek değiştirildikten sonra gösterilen geçici kabartma önizlemesi dahil edilmez.
 
 ## Görüntü dışa aktarma
 
@@ -51,13 +53,12 @@ biçimlerde görünür.
 
 ### Biçim
 
-**PNG görüntüsü**, **TIFF görüntüsü**, **JPEG görüntüsü** veya **WebP ·
-kayıpsız** (aşağıdaki Biçim sınırları bölümüne bakın).
+**PNG görüntüsü**, **TIFF görüntüsü**, **JPEG görüntüsü** veya **WebP · kayıpsız** (aşağıdaki Biçim sınırları bölümüne bakın).
 
 ### Çıktı profili
 
 **sRGB**, **Display P3**, **Adobe RGB (1998)** veya **ProPhoto RGB**; ayrıca
-kendi gömülü profili olan her fotoğraf katmanı için “Özgün: *ad*”.
+kendi gömülü profili olan her nesne katmanı için “Özgün: *ad*”.
 
 ### Bit derinliği
 
@@ -69,8 +70,7 @@ kendi gömülü profili olan her fotoğraf katmanı için “Özgün: *ad*”.
 
 ### Renk dönüştürme amacı
 
-**Göreli kolorimetrik** (varsayılan), **Algısal**, **Doygunluk** veya **Mutlak
-kolorimetrik**.
+**Göreli kolorimetrik** (varsayılan), **Algısal**, **Doygunluk** veya **Mutlak kolorimetrik**.
 
 ### Ton dağılımı
 
@@ -83,8 +83,7 @@ AVIF için görünür.
 
 ### Piksel boyutu
 
-**Özgün boyut** veya **Sınırlara sığdır**. **Sınırlara sığdır**, **En büyük
-genişlik (px)** ve **En büyük yükseklik (px)** alanlarını ekler ve görüntüyü
+**Özgün boyut** veya **Sınırlara sığdır**. **Sınırlara sığdır**, **En büyük genişlik (px)** ve **En büyük yükseklik (px)** alanlarını ekler ve görüntüyü
 oranlarını değiştirmeden bu sınırların içine sığacak şekilde küçültür.
 
 ### Çözünürlük üst verileri
@@ -101,8 +100,7 @@ telif hakkı bilgileri içeren bir fotoğraftan açılan çizimlerde görünür.
 ### ICC profilini içe aktar… ve Kaydedilen profiller…
 
 **ICC profilini içe aktar…**, en fazla 16 MiB boyutunda bir `.icc` veya `.icm`
-dosyasını **Çıktı profili** listesine ekler. **Kaydedilen profiller…**, **Renk
-profili kitaplığı** penceresini açar.
+dosyasını **Çıktı profili** listesine ekler. **Kaydedilen profiller…**, **Renk profili kitaplığı** penceresini açar.
 
 ### Hazır ayar adı ve hazır ayar düğmeleri
 
@@ -160,12 +158,9 @@ ayarlanan SDR sürümünü kullanır. OpenEXR kamera veya telif hakkı bilgileri
 saklamaz. HDR çizimde **İleri düzenleme**, **İleri düzenleme (SDR)** adını alır
 ve OpenEXR kullanır.
 
-HDR JPEG ve HDR AVIF için **Çıktıyı önizle**, **HDR yeniden oluşturma · SDR
-önizlemesi** ve **Kodlanmış SDR tabanı** seçeneklerini içeren **Yorumlamayı
-önizle** ayarını ekler.
+HDR JPEG ve HDR AVIF için **Çıktıyı önizle**, **HDR yeniden oluşturma · SDR önizlemesi** ve **Kodlanmış SDR tabanı** seçeneklerini içeren **Yorumlamayı önizle** ayarını ekler.
 
-Önizleme HDR PNG, JPEG veya AVIF aralığının dışında renkler bulursa, **Aralık
-dışındaki HDR renklerini kırp** seçeneğini açana veya OpenEXR'ı seçene kadar
+Önizleme HDR PNG, JPEG veya AVIF aralığının dışında renkler bulursa, **Aralık dışındaki HDR renklerini kırp** seçeneğini açana veya OpenEXR'ı seçene kadar
 **Dosya seç…** kullanılamaz.
 
 ## Yeniden Dışa Aktar

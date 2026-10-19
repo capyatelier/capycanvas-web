@@ -17,7 +17,7 @@ Sketsa tidak memiliki panel yang tertambat: tombol alat dan panel di bilah judul
 1. **Capy (Mode Zen)**, **Menu Utama**, **Panel Filter**, **Seleksi**, dan **Transformasi**.
 2. Pemilih ruang kerja.
 3. **Kuas**, **Pahat**, **Penghapus**, **Panel Lapisan**, dan **Warna kuas**. Editor web menambahkan **Layar penuh**.
-4. **Penggeser ukuran kuas**, **Pemilih Warna**, **Penggeser opasitas kuas**, **Urungkan**, dan **Ulangi**.
+4. **Penggeser ukuran kuas**, **Pemilih Warna**, **Penggeser kekuatan**, **Urungkan**, dan **Ulangi**.
 
 | Tombol | Panel di laci |
 | --- | --- |

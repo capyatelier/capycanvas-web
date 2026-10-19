@@ -24,10 +24,7 @@ sur [Transfert](/fr/docs/layers/settings/).
 
 ## Filtre rattaché
 
-Vous pouvez rattacher des filtres à un calque de peinture, à un calque photo ou
-à un groupe qui n’est pas réglé sur Transfert. Sélectionnez le calque, puis
-sélectionnez **Ajouter un filtre** en bas du panneau Calques, dans le panneau
-**Propriétés** ou dans le menu du calque.
+Vous pouvez attacher des filtres à un calque de peinture, à un calque Objet ou à un groupe qui n’est pas en mode Transfert. Sélectionnez le calque, puis **Ajouter un filtre** au bas du panneau Calques ou du panneau **Propriétés**, ou dans le menu du calque.
 
 Les filtres rattachés s’appliquent du bas de la chaîne vers le haut, après le
 masque du calque et avant son opacité et son mode de fusion. Sur un calque de
@@ -56,10 +53,7 @@ Effectuez l’une des opérations suivantes :
 au-dessus du calque auquel il était rattaché et des calques écrêtés sur ce
 calque.
 
-Le bouton est indisponible tant que le filtre ou le calque inférieur est
-verrouillé. Si le calque inférieur n’est ni un calque de peinture, ni un calque
-photo, ni un groupe, son info-bulle indique « Aucun calque inférieur auquel
-rattacher ».
+Le bouton est indisponible tant que le filtre ou le calque du dessous est verrouillé. Si le calque du dessous n’est ni un calque de peinture, ni un calque Objet, ni un groupe, son infobulle indique « Aucun calque inférieur auquel rattacher ».
 
 ## Sélections comme masques de filtre
 

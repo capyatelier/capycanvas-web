@@ -1,22 +1,16 @@
 ---
 title: "Pena"
 description: "Pengaturan pena di Preferensi serta ketuk ganda dan remas pada Apple Pencil."
-related: ["input/touch", "input/keyboard", "preferences", "brushes/basics"]
+related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
 Pengaturan pena ada di halaman **Pena & Masukan** pada **Edit > Preferensi**.
 
 ![Halaman Pena & Masukan di Preferensi.](shot:pen/pen-and-input)
 
-## Respons tekanan
+## Tekanan pena
 
-Anda dapat mengubah cara pena merespons tekanan ringan dengan **Respons tekanan** di
-bawah **Respons pena**. Nilai yang lebih rendah memperkuat tekanan ringan, dan nilai yang
-lebih tinggi memerlukan tekanan yang lebih kuat. Rentangnya 0.25 × hingga 4.00 ×. Pada
-nilai bawaan, 1.00 ×, tekanan pena dipakai tanpa perubahan.
-
-Pengaturan ini berlaku untuk setiap kuas dan alat, termasuk **Lukis seleksi** dan
-**Mask Cepat**. Goresan yang sudah Anda gambar tidak berubah.
+Pilih **Sesuaikan…** di samping **Tekanan pena** untuk membentuk kurva tekanan dan mengujinya di kanvas saat ini. Kurva berlaku untuk setiap kuas dan alat yang peka tekanan; goresan yang sudah dibuat tidak berubah. Lihat [Tekanan pena](/id/docs/input/pen-pressure/).
 
 ## Prediksi goresan
 

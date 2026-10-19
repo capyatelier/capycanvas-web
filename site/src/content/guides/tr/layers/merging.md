@@ -9,9 +9,7 @@ Katmanları tek bir boya katmanında birleştirebilirsiniz. Birleştirme komutla
 
 ![Ribbon etkinken Katman menüsü; Kırpılan katmanları birleştir, Görünenleri birleştir, Görünenlerden yeni katman oluştur ve Görüntüyü düzleştir görünüyor.](shot:layers/merging-menu)
 
-Her birleştirme tek bir geri alma adımıdır. Bir [fotoğraf katmanı](/tr/docs/layers/types/)
-birleştirildiğinde özgün fotoğrafını kaybeder. Bir seçim katmanını veya Hızlı
-maskeyi düzenlerken ya da dönüştürme sırasında birleştirme yapamazsınız.
+Her birleştirme bir geri alma adımıdır. [Nesne katmanı](/tr/docs/layers/types/) birleştirildiğinde pikselleştirilir. Seçim katmanı veya Hızlı Maske düzenlerken ya da dönüştürme sırasında birleştiremezsiniz.
 
 ## Alttakiyle birleştir
 
@@ -61,14 +59,9 @@ Grup görünür ve kilitsiz olmalıdır, seçim katmanı içeremez.
 
 ## Görünenleri birleştir
 
-**Kâğıt** dâhil tüm görünür katmanları tek katmanda birleştirmek için
-**Katman > Görünenleri birleştir** komutunu seçin. Gizli katmanlar olduğu gibi
-kalır.
+Görünür normal katmanları birleştirmek için **Katman > Görünenleri birleştir** seçin. Kâğıt, alttaki Kâğıt katmanı olarak kalır. Gizli katmanlar değişmez.
 
-Birleştirilmiş katman en alttaki görünür katmanın adını ve yerini alır
-(**Kâğıt** görünürse **Kâğıt** katmanının). Birleştirilen bir katmana kırpılmış
-gizli katmanların kırpması kaldırılır. Görünür katmanlar kilitsiz olmalıdır ve
-aralarındaki gruplar seçim katmanı içeremez.
+Birleştirilen katman en alttaki birleştirilen katmanın adını ve yerini alır. Birleştirilen katmana kırpılmış gizli katmanlar serbest bırakılır. Görünür katmanların kilidi açık olmalı ve aralarındaki gruplar seçim katmanı içermemelidir.
 
 ## Görünenlerden yeni katman oluştur
 
@@ -81,10 +74,7 @@ Kilitli katmanlar **Görünenlerden yeni katman oluştur** komutunu engellemez.
 
 ## Görüntüyü düzleştir
 
-Tüm görünür katmanları tek katmanda birleştirmek için
-**Katman > Görüntüyü düzleştir** komutunu seçin. Gizli katmanlar ve tuvalin
-dışındaki pikseller atılır, ancak grupların dışındaki seçim katmanları kalır.
-Görünür katmanlar kilitsiz olmalıdır.
+Görünür normal katmanları birleştirmek için **Katman > Görüntüyü düzleştir** seçin. Kâğıt en altta Kâğıt olarak kalır. Gizli katmanlar ve tuval dışındaki pikseller atılır, ancak gruplar dışındaki seçim katmanları kalır. Görünür katmanların kilidi açık olmalıdır.
 
 ![Tuvalin üstünde “Düzleştirme 2 gizli katmanı atar” yazan ve Görüntüyü düzleştir düğmesi bulunan bildirim.](shot:layers/merging-flatten-notice)
 

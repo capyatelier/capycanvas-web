@@ -21,7 +21,7 @@ Every change to a brush setting is saved with its preset immediately.
 
 You can return one setting to the brush's built-in value. Double-click (or
 double-tap) the setting's label or icon in the Tool Options bar
-([Size, opacity and flow](/docs/brushes/basics/)).
+([Size, strength and opacity](/docs/brushes/basics/)).
 
 The **Tool** panel has no reset. To reset **Color mixing**, select **Oklab
 mixing**, the built-in choice of every mixing brush.

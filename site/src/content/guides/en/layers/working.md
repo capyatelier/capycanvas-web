@@ -131,7 +131,7 @@ Do one of the following:
 - Select **Import Image as Layer…** at the bottom of the Layers panel.
 - Drag image files onto the canvas or onto a row in the Layers panel.
 
-Each file becomes a [photo layer](/docs/layers/types/) above the active layer,
+Each file becomes an [Object layer](/docs/layers/types/) above the active layer,
 or above, below or inside the row you drop it on. The image is centered and
 scaled down to fit the canvas, with
 [placement handles](/docs/transform/move-transform/).

@@ -136,7 +136,6 @@ paint on the layer's mask.
 
 ## Other Layer Settings items
 
-**Layer Settings** also lists **Apply Transform to Pixels** (see
-[Move and Transform](/docs/transform/move-transform/)). On a photo layer, it
-lists **Repair Source Profile…**, **Rasterize Source…** and
-**Revert to Original Photo** (see [Layer types](/docs/layers/types/)).
+**Layer Settings** also lists **Apply transform** (see
+[Move and Transform](/docs/transform/move-transform/)). On an Object layer, choose
+**Rasterize Layer** to convert its source to editable pixels (see [Layer types](/docs/layers/types/)).

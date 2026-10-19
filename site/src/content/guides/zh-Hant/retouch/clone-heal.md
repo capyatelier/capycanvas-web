@@ -24,7 +24,7 @@ related: ["retouch/dodge-burn", "layers/settings", "brushes/basics", "photo/reto
 
 **修復筆刷**和**污點修復筆刷**在「繪畫」中沒有按鈕。
 
-每個工具都是一種筆刷，在工具設定面板中有**筆刷大小**、**不透明度**、**流量**和**筆尖**設定（參見[大小、不透明度和流量](/zh-Hant/docs/brushes/basics/)）。
+每個工具都是筆刷，在工具設定面板中有 **筆刷大小**、**不透明度**、**強度** 和 **筆尖** 設定（參見[大小、強度和不透明度](/zh-Hant/docs/brushes/basics/)）。
 
 ![仿製印章的工具設定面板，包含筆刷設定和來源設定。](shot:retouch/clone-tool-panel)
 

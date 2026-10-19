@@ -8,13 +8,11 @@ Islak ve karıştırma fırçalarının boyayı nasıl işleyeceğini **Araç** 
 ayarlayabilirsiniz. Her grup yalnızca kendi bölümünde adı geçen fırçalarda
 görünür.
 
-![Islak suluboya için Araç paneli: Karıştırma, Suluboya ve Yayılma grupları ile renk karıştırma düğmeleri.](shot:brushes/wet-media-settings)
+![Islak suluboya için Araç panelinde Renk karıştırma ile Karıştırma, Suluboya ve Yayılma grupları.](shot:brushes/wet-media-settings)
 
 ## Karıştırma
 
-**Karıştırma**; **Islak yuvarlak fırça**, **Opak guaj**, **Bol boyalı yağlı
-boya**, **Palet bıçağı**, **Suluboya yıkama**, **Islak suluboya**, **Doğal
-karıştırıcı** ve **Lekeleme** fırçalarında görünür. Suluboya fırçaları dışında,
+**Karıştırma**; **Islak yuvarlak fırça**, **Opak guaj**, **Bol boyalı yağlı boya**, **Palet bıçağı**, **Suluboya yıkama**, **Islak suluboya**, **Doğal karıştırıcı** ve **Lekeleme** fırçalarında görünür. Suluboya fırçaları dışında,
 boya yüklü bir fırçanın boyası darbe boyunca, her fırça için sabit bir hızla
 tükenir.
 
@@ -75,8 +73,8 @@ Karıştırma fırçasının aldığı renkleri nasıl birleştireceğini seçeb
 
 Aşağıdakilerden birini yapın:
 
-- **Araç** panelinin altında **Oklab karıştırma**, **Doğrusal ışıkta karıştırma** veya **Klasik karıştırma** düğmesini seçin.
-- Araç seçenekleri çubuğundaki **Renk karıştırma** menüsünden seçin ([Boyut, opaklık ve akış](/tr/docs/brushes/basics/)).
+- **Araç** panelindeki **Renk karıştırma** listesinden **Oklab karıştırma**, **Doğrusal ışıkta karıştırma** veya **Klasik karıştırma** seçin.
+- Araç seçenekleri çubuğunda **Diğer araç seçenekleri** açın, ardından Araç çekmecesinde **Renk karıştırma** seçin ([Boyut, güç ve opaklık](/tr/docs/brushes/basics/)).
 - Komut aramada seçeneğin adını arayın.
 
 | Seçenek | Karıştırma |
@@ -89,7 +87,7 @@ Tüm yerleşik karıştırma fırçaları **Oklab karıştırma** ile başlar. B
 fırçayla birlikte kaydedilir ve çizimin **Karıştırma** ayarı onu
 değiştirmez. Karıştırma yapmayan bir fırçada bu seçenekler kullanılamaz.
 
-![Bol boyalı yağlı boya için Araç seçenekleri çubuğunda açık Renk karıştırma menüsü.](shot:brushes/color-mixing-menu)
+![Araç çekmecesinde Renk karıştırma.](shot:brushes/color-mixing-menu)
 
 ## Kıllar
 

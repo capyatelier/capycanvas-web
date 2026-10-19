@@ -13,10 +13,10 @@ Panel başlığı etkin katmanın ayarlarını gösterir.
 
 Aşağıdakilerden birini yapın:
 
-- **Pencere > Katmanlar** komutunu seçin.
-- Boya'da sağ sütundaki **Katmanlar** öğesini seçin.
-- Eskiz'de başlık çubuğundaki **Katmanlar paneli** düğmesini seçin.
-- [Komut aramaya](/tr/docs/start/command-search/) “Katmanlar paneli” yazın.
+- **Pencere > Katmanlar** seçin.
+- Boyama alanında sağ sütunda **Katmanlar** seçin.
+- Eskiz alanında başlık çubuğunda **Katmanlar** seçin. Ortak çekmece Katmanlar görünümünde açılır; Özelliklere geçmek için katmanın Özellikler düğmesini seçin.
+- [Komut aramasına](/tr/docs/start/command-search/) “Katmanlar paneli” yazın.
 
 Fotoğraf'ta panel sağ sütunda açıktır.
 
@@ -52,6 +52,10 @@ Bir gruptaki katmanlar grubun altında içeriden başlar.
 
 Bir satırı seçtiğinizde o satır etkin katman ve tek seçili satır olur.
 [Katman türleri](/tr/docs/layers/types/) her türün küçük resmini gösterir.
+
+Kâğıdın ayrı renk ve doku küçük resimleri vardır. Kâğıt yoksa son satırdan sonra **Kâğıt ekle** görünür.
+
+![Eskiz çekmecesinin Katmanlardan Özelliklere geçişi.](shot:layers/sketch-properties-drawer)
 
 Bir boya katmanının opaklığını seçim olarak yüklemek için **Ctrl** tuşunu basılı
 tutarak küçük resmine tıklayın. Maskeyi yüklemek için aynı şekilde maske küçük

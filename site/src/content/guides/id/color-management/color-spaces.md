@@ -55,7 +55,7 @@ Preferensi tidak memiliki pengaturan Pembauran.
 
 Pilih **Edit > Tetapkan Profil…** untuk mempertahankan angka RGB gambar dan membacanya
 dalam ruang kerja lain. Pilih ruang di bawah **Ruang warna**, tempat Adobe RGB (1998)
-tercantum sebagai **Adobe RGB**. Lapisan foto mempertahankan profil sumber dari
+tercantum sebagai **Adobe RGB**. lapisan Objek mempertahankan profil sumber dari
 [foto aslinya](/id/docs/layers/types/).
 
 ## Konversi Ruang Warna

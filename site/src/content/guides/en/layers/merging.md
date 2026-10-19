@@ -9,8 +9,8 @@ of the **Layer** menu and of each layer's menu.
 
 ![The Layer menu with Ribbon active, showing Merge Clipped Layers, Merge Visible, Stamp Visible and Flatten Image.](shot:layers/merging-menu)
 
-Each merge is one undo step. A [photo layer](/docs/layers/types/) loses its
-original photo when you merge it. You can't merge while you edit a selection
+Each merge is one undo step. An [Object layer](/docs/layers/types/) is rasterized
+when you merge it. You can't merge while you edit a selection
 layer or Quick Mask, or during a transform.
 
 ## Merge Down
@@ -58,11 +58,9 @@ The group must be visible and unlocked, and it can't contain selection layers.
 
 ## Merge Visible
 
-Choose **Layer > Merge Visible** to merge every visible layer, including
-**Paper**, into one layer. Hidden layers stay as they are.
+Choose **Layer > Merge Visible** to merge visible ordinary layers. Paper remains the bottom Paper layer. Hidden layers stay as they are.
 
-The merged layer takes the name and place of the lowest visible layer
-(**Paper**, if it is visible). Hidden layers that were clipped to a merged layer
+The merged layer takes the name and place of the lowest merged layer. Hidden layers that were clipped to a merged layer
 are released. The visible layers must be unlocked, and groups among them can't
 contain selection layers.
 
@@ -76,9 +74,7 @@ layer. Locked layers don't prevent **Stamp Visible**.
 
 ## Flatten Image
 
-Choose **Layer > Flatten Image** to merge every visible layer into one layer.
-Hidden layers and pixels outside the canvas are discarded, but selection layers
-outside groups stay. The visible layers must be unlocked.
+Choose **Layer > Flatten Image** to merge visible ordinary layers. Paper remains as Paper at the bottom. Hidden layers and pixels outside the canvas are discarded, but selection layers outside groups stay. The visible layers must be unlocked.
 
 ![The notice over the canvas that reads "Flattening discards 2 hidden layers", with a Flatten Image button.](shot:layers/merging-flatten-notice)
 

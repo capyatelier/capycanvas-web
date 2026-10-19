@@ -32,13 +32,12 @@ Düzenlenmiş fotoğrafta yukarıdan aşağıya şu katmanlar bulunur:
 
 | Katman | İçerik |
 | --- | --- |
-| **Gölgeler/Parlak alanlar** | Kayadaki gölgeleri açar, kenarları yumuşatılmış bir seçime göre maskelenmiştir |
-| **Canlılık** | Fotoğrafın tamamının canlılığını artırır |
-| **Eğriler** | Fotoğrafın tamamı için bir S eğrisi |
-| *Retouch* | Düzeltme fırça darbeleri |
-| Fotoğraf katmanı | Dosyasının adını taşıyan fotoğraf |
-| **Kâğıt** | Gizli |
+| **Gölgeler/Parlak alanlar** | Kayadaki gölgeleri açar, yumuşatılmış seçime maskelenir |
+| **Canlılık** | Tüm fotoğrafın canlılığını artırır |
+| **Eğriler** | Tüm fotoğraf için S eğrisi |
+| *Retouch* | İyileştirme çizgileri |
+| Nesne katmanı | Dosya adını taşıyan fotoğraf |
 
-Fotoğraf katmanına hiçbir şey boyanmaz.
+Nesne katmanına hiçbir şey boyanmaz.
 
 İlk aşama: [Açma ve kırpma](/tr/docs/photo/crop/).

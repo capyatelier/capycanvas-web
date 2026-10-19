@@ -12,14 +12,13 @@ Choose **File > Open…**, or press **Ctrl+O**, and select the photo
 ([Opening and saving](/docs/files/open-save/)). The photo opens in a drawing
 tab of its own.
 
-![The Layers panel with the terrarium photo layer above a hidden Paper layer.](shot:photo/open-layers)
+![The Layers panel with the terrarium Object layer.](shot:photo/open-layers)
 
-The drawing has one layer, named after the file, above a hidden **Paper**
-layer. In the example, the layer is named "terrarium".
+The drawing has one Object layer named after the file. In the example, the layer is named "terrarium".
 
 ## 2. Choose a ratio
 
-Choose **Edit > Image > Crop**, select **Crop** in the Tools toolbar, or press
+Choose **Image > Crop**, select **Crop** in the Tools toolbar, or press
 **C** ([Crop](/docs/transform/crop/)). A frame with handles appears over the
 photo, with the crop bar along the bottom of the canvas.
 

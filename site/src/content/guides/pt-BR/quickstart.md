@@ -1,7 +1,7 @@
 ---
 title: "Início rápido"
-description: "Como abrir o {appName}, desenhar no primeiro desenho em branco, salvá-lo como arquivo .capy e exportar um PNG."
-related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
+description: "Abrir {appName}, desenhar no primeiro desenho em branco, salvá-lo como arquivo .capy e exportar um PNG."
+related: ["start/workspaces", "start/device-support", "files/new", "files/open-save", "files/export"]
 ---
 
 ## Abrir o {appName}
@@ -11,15 +11,7 @@ Faça uma das seguintes ações:
 - Abra o editor web em [editor.capycanvas.art](https://editor.capycanvas.art/).
 - Na página [Baixar](/pt-BR/download/), baixe o aplicativo para desktop ou o beta para iPad ou Android, ou veja como instalar o editor web como aplicativo.
 
-O editor web funciona nestes navegadores:
-
-| Sistema | Navegadores |
-| --- | --- |
-| Windows | Chrome, Edge, Firefox 141 ou posterior |
-| macOS | Chrome, Edge, Safari 26 ou posterior, Firefox 147 ou posterior (Apple silicon) |
-| Linux (Wayland) | Chrome, Edge |
-| iPadOS 26 ou posterior | Safari |
-| Android 12 ou posterior | Chrome |
+Consulte [Compatibilidade de dispositivos](/pt-BR/docs/start/device-support/) para os requisitos separados dos aplicativos nativos e dos navegadores web.
 
 Depois da primeira visita, o editor web abre também sem conexão com a internet.
 
@@ -27,11 +19,7 @@ Depois da primeira visita, o editor web abre também sem conexão com a internet
 
 ![O painel Camadas de um desenho novo, com Tinta atual acima de Papel.](shot:files/new-layers)
 
-Na primeira vez que você abre o {appName}, ele mostra a área de trabalho
-[Pintura](/pt-BR/docs/start/workspaces/) com um desenho em branco, e a barra de título
-mostra "Sem título · 2048 × 1536". **Tinta atual**, uma camada de pintura vazia, está
-selecionada acima de **Papel**, uma camada de preenchimento branca. A ferramenta
-**Caneta** está ativa, com o pincel **Caneta G** e uma cor quase preta.
+Na primeira vez que você abre {appName}, ele mostra o espaço de trabalho [Pintura](/pt-BR/docs/start/workspaces/) com um desenho A4 em branco na orientação paisagem a 300 ppi. **Tinta atual**, uma camada de pintura vazia, está selecionada acima de **Papel**. A ferramenta **Caneta** está ativa com o pincel **Caneta G** e uma cor quase preta.
 
 Nas vezes seguintes, o {appName} abre com a última área de trabalho usada e os
 desenhos que estavam abertos.
@@ -60,9 +48,7 @@ Escolha-o no menu ou na [busca de comandos](/pt-BR/docs/start/command-search/).
 
 ## Começar outro desenho
 
-Escolha **Arquivo > Novo…** e selecione **Criar** na caixa de diálogo
-[Novo desenho](/pt-BR/docs/files/new/). O novo desenho abre em uma aba própria, ao
-lado do primeiro.
+Escolha **Arquivo > Novo…** e selecione **Criar** no diálogo [Novo desenho](/pt-BR/docs/files/new/). Escolha o tamanho, a resolução e os ajustes de Papel e cor, e selecione **Criar**. O novo desenho abre em sua própria aba ao lado do primeiro.
 
 ## Salvar o desenho
 

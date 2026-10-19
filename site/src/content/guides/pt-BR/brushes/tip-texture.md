@@ -1,12 +1,10 @@
 ---
 title: "Ponta e textura"
-description: "As configurações de Ponta que dão forma a cada carimbo, e a Intensidade da textura para o grão do papel na marca."
+description: "Os ajustes de Ponta que moldam cada marca e a intensidade da textura do papel na marca."
 related: ["brushes/basics", "brushes/wet-media", "drawing/brush-tools"]
 ---
 
-Você pode alterar a forma de cada carimbo e quanto do grão do papel aparece na
-marca com as configurações de **Ponta** e **Textura** no painel **Ferramenta**
-([Tamanho, opacidade e fluxo](/pt-BR/docs/brushes/basics/)).
+Você pode alterar a forma de cada marca e quanto a textura do papel a modifica com os ajustes **Ponta** e **Textura** no painel **Ferramenta** ([Tamanho, intensidade e opacidade](/pt-BR/docs/brushes/basics/)).
 
 ![O painel Ferramenta do Lápis, com o grupo Ponta e o grupo Textura.](shot:brushes/tip-texture-settings)
 
@@ -24,7 +22,7 @@ Define a distância entre os carimbos, em porcentagem do diâmetro do carimbo na
 pressão atual. O controle deslizante vai até 100%, e você pode digitar valores
 até 1000%.
 
-### Ângulo
+### Ângulo da ponta
 
 Gira a ponta, de −180° a 180°. Uma ponta redonda fica igual em qualquer ângulo.
 
@@ -40,13 +38,9 @@ qualquer sentido.
 
 ## Pontas que giram com o traço
 
-As pontas de **Pincel**, **Pincel chato texturizado**, **Bloco de pastel**,
-**Veladura transparente**, **Guache opaco**, **Óleo carregado**, **Espátula**,
-**Aguada de aquarela**, **Aquarela molhada**, **Textura dupla** e **Misturador
-natural** seguem a direção do traço. **Ângulo** não tem efeito nesses pincéis.
+As pontas de **Pincel**, **Pincel chato texturizado**, **Bloco de pastel**, **Veladura transparente**, **Guache opaco**, **Óleo carregado**, **Espátula**, **Aguada de aquarela**, **Aquarela molhada**, **Textura dupla** e **Misturador natural** seguem a direção do traço. **Ângulo da ponta** não afeta esses pincéis.
 
-**Esfregaço seco** e **Tinta realista com pincel** somam a direção do traço ao
-**Ângulo**.
+**Esfregaço seco** e **Tinta realista com pincel** somam a direção do traço a **Ângulo da ponta**.
 
 ## Textura
 
@@ -55,12 +49,10 @@ natural** seguem a direção do traço. **Ângulo** não tem efeito nesses pinc�
 seco**, **Veladura transparente**, **Guache opaco**, **Óleo carregado**,
 **Espátula**, **Textura dupla** e **Misturador natural**.
 
-O grão fica fixo na tela. Cada pincel tem seu próprio grão, e não é possível
-alterar o tamanho dele nem escolher outro grão.
+Pincéis de mídia seca usam a textura do Papel mais próximo abaixo da camada de destino. Escolha essa textura e sua escala em [Papel](/pt-BR/docs/layers/paper/).
 
 ### Intensidade da textura
 
-Define quanto do grão do papel aparece na marca. Em 0% o grão não tem efeito, e
-em 100% a tinta segue o grão por completo.
+Define quanto a textura do Papel altera a cobertura. Em 0%, a textura não tem efeito.
 
 ![Três traços de Carvão vegetal com Intensidade da textura em 0%, 50% e 100%.](shot:brushes/texture-strength)

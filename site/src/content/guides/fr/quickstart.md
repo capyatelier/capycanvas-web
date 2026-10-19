@@ -1,7 +1,7 @@
 ---
-title: "Prise en main"
+title: "Démarrage rapide"
 description: "Ouvrir {appName}, dessiner sur le premier dessin vierge, l’enregistrer en fichier .capy et exporter un PNG."
-related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
+related: ["start/workspaces", "start/device-support", "files/new", "files/open-save", "files/export"]
 ---
 
 ## Ouvrir {appName}
@@ -11,15 +11,7 @@ Effectuez l’une des opérations suivantes :
 - Ouvrez l’éditeur web à l’adresse [editor.capycanvas.art](https://editor.capycanvas.art/).
 - Sur la page [Télécharger](/fr/download/), obtenez l’application de bureau, la bêta pour iPad ou Android, ou la marche à suivre pour installer l’éditeur web comme application.
 
-L’éditeur web fonctionne dans ces navigateurs :
-
-| Système | Navigateurs |
-| --- | --- |
-| Windows | Chrome, Edge, Firefox 141 ou version ultérieure |
-| macOS | Chrome, Edge, Safari 26 ou version ultérieure, Firefox 147 ou version ultérieure (Apple silicon) |
-| Linux (Wayland) | Chrome, Edge |
-| iPadOS 26 ou version ultérieure | Safari |
-| Android 12 ou version ultérieure | Chrome |
+Voir [Appareils pris en charge](/fr/docs/start/device-support/) pour les exigences distinctes des applications natives et des navigateurs web.
 
 Après votre première visite, l’éditeur web s’ouvre aussi sans connexion à Internet.
 
@@ -27,12 +19,7 @@ Après votre première visite, l’éditeur web s’ouvre aussi sans connexion �
 
 ![Le panneau Calques d’un nouveau dessin, avec Encre actuelle au-dessus de Papier.](shot:files/new-layers)
 
-La première fois que vous ouvrez {appName}, l’espace de travail
-[Peinture](/fr/docs/start/workspaces/) s’affiche avec un dessin vierge, et la barre
-de titre indique « Sans titre · 2048 × 1536 ». **Encre actuelle**, un calque de
-peinture vide, est sélectionné au-dessus de **Papier**, un calque de remplissage
-blanc. L’outil **Plume** est actif, avec le pinceau **Plume G** et une couleur
-presque noire.
+À la première ouverture, {appName} affiche l’espace de travail [Peinture](/fr/docs/start/workspaces/) avec un dessin A4 paysage vierge à 300 ppp. **Encre actuelle**, un calque de peinture vide, est sélectionné au-dessus de **Papier**. L’outil **Plume** est actif avec le pinceau **Plume G** et une couleur presque noire.
 
 Les fois suivantes, {appName} s’ouvre sur le dernier espace de travail utilisé,
 avec les dessins qui étaient ouverts.
@@ -62,9 +49,7 @@ n’a pas de raccourci dans l’éditeur web. Choisissez-la dans le menu ou dans
 
 ## Commencer un autre dessin
 
-Choisissez **Fichier > Nouveau…** et sélectionnez **Créer** dans la boîte de
-dialogue [Nouveau dessin](/fr/docs/files/new/). Le nouveau dessin s’ouvre dans son
-propre onglet, à côté du premier.
+Choisissez **Fichier > Nouveau…** et sélectionnez **Créer** dans la boîte de dialogue [Nouveau dessin](/fr/docs/files/new/). Choisissez sa taille, sa résolution, son Papier et ses réglages de couleur, puis sélectionnez **Créer**. Le nouveau dessin s’ouvre dans son propre onglet à côté du premier.
 
 ## Enregistrer le dessin
 

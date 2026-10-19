@@ -1,10 +1,10 @@
 import assert from 'node:assert/strict';
 import { readFile, writeFile } from 'node:fs/promises';
+import { PNG } from 'pngjs';
 
 const photo = new URL('../photo/terrarium.jpg', import.meta.url);
 const fullWindow = { rect: [0, 0, 1920, 1080] };
 const bar = '.canvas-action-bar';
-const menu = '.panel-context-menu:popover-open';
 const choiceMenu = '.toolbar-editor-popover:popover-open .toolbar-choice-menu';
 const dialog = 'dialog[open]';
 const curvesPanel = '.properties-panel .effect-properties';
@@ -43,15 +43,6 @@ export default async function photoTutorial({ e, b, shoot, message, review }) {
     await b.settle();
   };
   const press = async selector => clickAt(await center(selector));
-  const menuRow = label => `[...document.querySelectorAll('${menu} button')].find(b=>b.querySelector('.menu-label')?.textContent===${JSON.stringify(label)})`;
-  const chooseRow = async label => {
-    await e.wait(`!!${menuRow(label)}&&!${menuRow(label)}.disabled`);
-    await clickAt(await e.read(`(r=>({x:r.x+r.width/2,y:r.y+r.height/2}))(${menuRow(label)}.getBoundingClientRect())`));
-  };
-  const closeMenu = async () => {
-    await b.evaluate(`document.querySelector('${menu}')?.hidePopover();void 0`);
-    await e.wait(`!document.querySelector('${menu}')`);
-  };
   const parkAway = () => mouse('mouseMoved', { x: -20, y: -20 });
   const closeChoice = async () => {
     await b.evaluate(`document.querySelector('.toolbar-editor-popover:popover-open')?.hidePopover();void 0`);
@@ -208,50 +199,55 @@ export default async function photoTutorial({ e, b, shoot, message, review }) {
   });
   await effect('vibrance', 'vibrance', { kind: 'number', value: 25 });
 
+  const lift = await effect('shadows_highlights', 'shadows', { kind: 'number', value: 35 });
+  const checkShadows = async () => {
+    const rockClip = await e.read(`(()=>{const c=layerApp.state().camera,r=c.viewport[0]/innerWidth;return{x:(c.translation[0]+282*c.zoom)/r,y:(c.translation[1]+550*c.zoom)/r,width:Math.floor(560*c.zoom/r),height:Math.floor(500*c.zoom/r),scale:1}})()`);
+    const rockPixels = async () => {
+      await e.canvas();
+      return PNG.sync.read(Buffer.from((await b.call('Page.captureScreenshot', { format: 'png', clip: rockClip })).data, 'base64')).data;
+    };
+    await e.send({ type: 'effect', action: { op: 'set', layer: lift, key: 'shadows', value: { kind: 'number', value: 0 } } });
+    const unadjustedRock = await rockPixels();
+    await e.send({ type: 'effect', action: { op: 'set', layer: lift, key: 'shadows', value: { kind: 'number', value: 35 } } });
+    let shadowChange;
+    for (const end = Date.now() + 15000; ;) {
+      const adjusted = await rockPixels();
+      assert.equal(adjusted.length, unadjustedRock.length, 'Shadow comparison keeps the same viewport');
+      let changed = 0, brighter = 0;
+      for (let i = 0; i < adjusted.length; i += 4) {
+        const delta = (adjusted[i] + adjusted[i + 1] + adjusted[i + 2] - unadjustedRock[i] - unadjustedRock[i + 1] - unadjustedRock[i + 2]) / 3;
+        brighter += delta;
+        if (delta > 2) changed++;
+      }
+      shadowChange = { fraction: changed / (adjusted.length / 4), brighter: brighter / (adjusted.length / 4) };
+      if (shadowChange.fraction > .01 && shadowChange.brighter > .1) break;
+      assert.ok(Date.now() < end, `Shadows at 35 visibly lighten the rock: ${JSON.stringify(shadowChange)}`);
+      await b.settle();
+    }
+    console.log(`Photo shadow adjustment: ${Math.round(shadowChange.fraction * 100)}% of the rock brightened, mean +${shadowChange.brighter.toFixed(2)}/255`);
+  };
+  // Establish the adjustment's input analysis before adding its local mask.
+  await checkShadows();
+
   await e.lasso(rock);
   await e.invoke('feather_selection');
   await e.wait(`layerApp.state().layer_tools.selection_resize?.kind==='feather'`);
   await e.send({ type: 'selection', action: { op: 'resize_radius', radius: 20 } });
   await e.send({ type: 'selection', action: { op: 'apply_resize' } });
   await e.wait(`!layerApp.state().layer_tools.selection_resize&&layerApp.state().layer_tools.has_selection&&${barKind('selection')}`);
-  const adjustMenu = `layerApp.app.canvas_bar_choice_menu(layerApp.state().canvas_bar.context,'adjust')`;
-  await e.wait(`${barKind('selection')}&&!!${adjustMenu}`);
-  const toneIndex = await e.read(`${adjustMenu}.sections.flat().findIndex(item=>item.label==='Tone')`);
-  const shadowsIndex = await e.read(`${adjustMenu}.sections.flat()[${toneIndex}].sections.flat().findIndex(item=>item.label==='Shadows/Highlights')`);
-  const adjustReady = `(()=>{const state=layerApp.state();if(state.canvas_bar?.context.kind!=='selection')return false;const tone=layerApp.app.canvas_bar_choice_menu(state.canvas_bar.context,'adjust')?.sections.flat()[${toneIndex}];return !!tone&&tone.enabled!==false&&tone.sections.flat().every(item=>item.enabled)})()`;
-  const openAdjust = async () => {
-    for (let attempt = 1; ; attempt++) {
-      await e.wait(`${barKind('selection')}&&${adjustReady}`);
-      const labels = await e.read(`(()=>{const tone=${adjustMenu}.sections.flat()[${toneIndex}];return{tone:tone.label,shadows:tone.sections.flat()[${shadowsIndex}].label}})()`);
-      const adjust = `${bar} [data-canvas-bar-menu="adjust"]`;
-      const onBar = await e.read(`(n=>!!n&&!n.closest('.canvas-action-bar-item,.canvas-action-bar-completion').hidden)(document.querySelector('${adjust}'))`);
-      if (onBar) await press(adjust);
-      else { await press(`${bar} .canvas-action-bar-more`); await chooseRow(await e.read(`document.querySelector('${adjust}').getAttribute('aria-label')`)); }
-      await e.wait(`!!document.querySelector('${menu}')`);
-      await chooseRow(labels.tone);
-      const enabled = `!!${menuRow(labels.shadows)}&&![...document.querySelectorAll('${menu} button:not(.submenu-back)')].some(b=>b.disabled)`;
-      if (await b.until(enabled, 3000).then(() => true, () => false)) return;
-      assert.ok(attempt < 5, 'The Tone menu opens with its tools enabled');
-      await closeMenu();
-    }
-  };
-  await shoot('photo/adjust-bar', {
-    target: [menu, bar, { documentRect: [170, 436, 750, 670] }],
-    maxWidth: 1920,
-    setup: openAdjust,
-    variant: async () => {
-      if (await e.read(`!!document.querySelector('${menu}')`)) return;
-      await openAdjust();
-      await parkAway();
-    },
-    teardown: closeMenu,
-  });
-  await openAdjust();
+  // Finish the feathered coverage before applying it as the adjustment mask.
+  await b.until('(layerApp.wake(), !layerApp.app.canvas_work_pending())', 60000);
+  await e.canvas();
   const count = (await layers()).length;
-  await chooseRow('Shadows/Highlights');
-  await e.wait(`layerApp.state().layers.length===${count + 1}&&!layerApp.state().layer_tools.has_selection&&layerApp.state().layer_tools.editing_layer.adjustment_effect`);
-  const lift = await e.read('Number(layerApp.state().layer_properties.layer)');
-  await e.send({ type: 'effect', action: { op: 'set', layer: lift, key: 'shadows', value: { kind: 'number', value: 35 } } });
+  await e.wait(`${command('mask_selection')}?.enabled`);
+  await shoot('photo/adjust-bar', {
+    target: [bar, { documentRect: [170, 436, 750, 670] }],
+    maxWidth: 1920,
+    ready: `${barKind('selection')}&&${command('mask_selection')}?.enabled`,
+  });
+  await press(`${bar} [data-command="mask_selection"]`);
+  await e.wait(`layerApp.state().layers.length===${count}&&!layerApp.state().layer_tools.has_selection&&layerApp.state().layer_tools.editing_layer.has_mask&&Number(layerApp.state().layer_tools.editing_layer.id)===${lift}`);
+  await checkShadows();
   const finished = await layers();
   assert.deepEqual(finished.map(row => row.label), ['Shadows/Highlights', 'Vibrance', 'Curves', 'Retouch', 'terrarium', 'Paper'], 'The finished layers');
   assert.ok(finished[0].has_mask, 'Shadows/Highlights is masked to the selection');
@@ -259,7 +255,10 @@ export default async function photoTutorial({ e, b, shoot, message, review }) {
   await e.invoke('fit_canvas');
   await e.show('properties');
   await showAllLayers();
-  await e.wait(`${analysed}&&${thumbnailsCurrent}`);
+  await e.wait(`layerApp.state().histogram.status==='Exact'`);
+  await e.layer({ op: 'select', id: curves, mask: false });
+  await b.until(`(layerApp.wake(), ${analysed}&&${thumbnailsCurrent})`, 60000);
+  await parkAway();
   await shoot('photo/overview', { target: fullWindow, pad: 0, maxWidth: 1920, ready: `${analysed}&&${thumbnailsCurrent}` });
   await restoreLayout();
 

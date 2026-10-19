@@ -25,6 +25,7 @@ Aşağıdakilerden birini yapın:
 - Dokunmatik ekranda ya da macOS ve iPad'de izleme dörtgeninde iki parmakla kıstırın.
 - Yakınlaştırma göstergesinin menüsünde bir yakınlaştırma düzeyi veya **Gezgin** panelinde bir yakınlaştırma düğmesi seçin.
 - Oyun kumandasının sağ analog çubuğunu yukarı veya aşağı itin.
+- **Yakınlaştır** aracını seçin, ardından Araç ayarlarına göre tıklayın veya sürükleyin.
 
 Yakınlaştırma %2 ile %1600 arasındadır. **Ctrl**+kaydırma işaretçinin
 çevresinde, kıstırma ise parmaklarınızın çevresinde yakınlaştırır.
@@ -40,10 +41,15 @@ döndürmesini de 0° yapar ancak çevirmeleri korur.
 Çizim açıldığında sığdırılır. Pencereyi yeniden boyutlandırdığınızda yeniden
 sığdırılmaz.
 
+## Yakınlaştırma aracı
+
+Araçlar çubuğunda **Yakınlaştır** seçin veya geçici erişim tuşunu basılı tutun, ardından tuvali kullanın. **Tıklama** ayarı tıklamanın yakınlaştırmasını veya uzaklaştırmasını seçer. **Sürükleme**, sürekli yakınlaştırmayı, yakınlaştırma alanını, ters tıklama işlemini veya yalnızca tıklamayı seçer.
+
+![Yakınlaştırma aracının Tıklama ve Sürükleme ayarları.](shot:start/zoom-tool-settings)
+
 ## Gerçek pikseller
 
-Her ekran pikselinde bir görüntü pikseli göstermek (%100) için **Görünüm >
-Gerçek pikseller** komutunu seçin veya **Ctrl+1** ya da **Ctrl+Alt+0** tuşlarına
+Her ekran pikselinde bir görüntü pikseli göstermek (%100) için **Görünüm > Gerçek pikseller** komutunu seçin veya **Ctrl+1** ya da **Ctrl+Alt+0** tuşlarına
 basın. Yakınlaştırma göstergesinin menüsünde %25, %50, %200 ve %400 düzeyleri de
 bulunur. Bu düzeylerde, görünüm 0°, 90°, 180° veya 270° döndürülmüşken görüntü
 pikselleri ekran pikselleriyle hizalanır.
@@ -52,10 +58,10 @@ pikselleri ekran pikselleriyle hizalanır.
 
 Aşağıdakilerden birini yapın:
 
-- Kaydırın. Yana gitmek için **Shift** tuşunu basılı tutup kaydırın.
+- [Tercihlerde](/tr/docs/preferences/) **Fare tekerleği** kaydırmaya ayarlıyken kaydırın. Yana hareket için **Shift** basılıyken kaydırın.
 - **Boşluk** tuşunu basılı tutup sürükleyin.
 - Dokunmatik ekranda iki parmakla sürükleyin.
-- **El** aracını seçin veya **H** tuşuna basın, ardından sürükleyin.
+- **El** aracını seçin veya **Y** tuşuna basın, ardından sürükleyin.
 - **Gezgin** panelinde sürükleyin.
 - Web düzenleyicisinde farenin orta veya sağ düğmesiyle sürükleyin.
 - Oyun kumandasının sol analog çubuğunu itin.
@@ -68,7 +74,7 @@ kaydırma adımındaki mesafeyi belirler.
 Aşağıdakilerden birini yapın:
 
 - **Görünüm > Görünümü 90° sola döndür** veya **Görünüm > Görünümü 90° sağa döndür** komutunu seçin.
-- Dokunmatik ekranda ya da macOS ve iPad'de izleme dörtgeninde iki parmağınızı çevirin.
+- Tercihlerde **İki parmakla döndür** açıkken dokunmatik ekranda veya macOS ve iPad izleme dörtgeninde iki parmağınızı çevirin.
 - Yakınlaştırma göstergesinin menüsünde bir açı yazın veya döndürme kaydırıcısını sürükleyin.
 - **Gezgin** panelinde bir döndürme düğmesi seçin.
 
@@ -94,14 +100,12 @@ basılı görünür. Fırça darbeleri, çevrilmiş görünümde çizdiğiniz ye
 
 Alt çubuğun sağ ucunda yakınlaştırma ve döndürme gösterilir, örneğin “100% ·
 0°”. Göstergeyi seçtiğinizde bir menü açılır. Menüde yakınlaştırma ve döndürme
-alanları ile kaydırıcıları, yakınlaştırma komutları ve düzeyleri, **Döndürmeyi
-sıfırla**, kilitler ve görünümü yakınlaştıran, döndüren ve çeviren düğmeler
+alanları ile kaydırıcıları, yakınlaştırma komutları ve düzeyleri, **Döndürmeyi sıfırla**, kilitler ve görünümü yakınlaştıran, döndüren ve çeviren düğmeler
 bulunur.
 
 Bir satır seçmek menüyü kapatır. Düğmeler ve yazılan değerler menüyü açık bırakır.
 
-Eskiz alt çubuğu gizler. Alt çubuğu göstermek için **Pencere > Başlık çubuğunu
-özelleştir…** içinde **Alt çubuğu göster** seçeneğini açın.
+Eskiz alt çubuğu gizler. Alt çubuğu göstermek için **Pencere > Başlık çubuğunu özelleştir…** içinde **Alt çubuğu göster** seçeneğini açın.
 
 ## Yakınlaştırmayı kilitle ve Döndürmeyi kilitle
 

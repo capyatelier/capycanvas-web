@@ -1,7 +1,7 @@
 ---
-title: "Einstellungen"
-description: "Der Dialog Einstellungen und die Einstellungen auf seinen Seiten Darstellung, Leinwand, Farbe und Info."
-related: ["input/pen", "input/keyboard", "customize/zen", "color-management/color-spaces"]
+title: "Voreinstellungen"
+description: "Der Dialog Voreinstellungen und die Einstellungen auf den Seiten Erscheinungsbild, Leinwand, Stift und Eingabe, Farbe und Info."
+related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
 Im Dialog **Einstellungen** können Sie Einstellungen für die ganze App ändern. Jede
@@ -18,9 +18,7 @@ Führen Sie eine der folgenden Aktionen aus:
 - Wählen Sie in den Arbeitsbereichen Malen und Foto die Zahnradschaltfläche am rechten Ende der Titelleiste aus.
 - Geben Sie „Einstellungen“ in die [Befehlssuche](/de/docs/start/command-search/) ein.
 
-Die Einstellungen öffnen sich auf der Seite **Darstellung**. **Hilfe > Tastenkürzel**
-öffnet sie auf der Seite **Tastenkürzel**, **Hilfe > Über {appName}** auf der Seite
-**Info**.
+Die Voreinstellungen öffnen sich auf **Darstellung**. Wählen Sie **Bearbeiten > Tastenkürzel** für Tastenkürzel oder **Über {appName}** im Anwendungsmenü für Info.
 
 Solange die Einstellungen geöffnet sind, bewirken Leinwand-Tastenkürzel, Stifttasten
 und Fingertipps nichts.
@@ -90,17 +88,22 @@ angeboten. Die anderen Optionen sind
 Behält die Capy-Schaltfläche im [Zen-Modus](/de/docs/customize/zen/) auf dem
 Bildschirm. Standardmäßig aktiviert.
 
-### Bedienfelder an den Bildschirmrändern einblenden
-
-Zeigt im Zen-Modus die ausgeblendeten Bedienelemente, solange der Zeiger nahe an einem
-Bildschirmrand mit ausgeblendeten Bedienelementen ist. Standardmäßig deaktiviert.
-
 ### Schaltflächensymbol
 
 Legt das Bild der Capy-Schaltfläche fest: **Blick nach oben** (Standard), **Blick nach
 vorn**, **Badend** oder **Schlafend**.
 
 ## Leinwand
+
+![Die Einstellungen zur Leinwandnavigation.](shot:preferences/canvas-navigation)
+
+### Mausrad
+
+Wählen Sie, ob das Mausrad ohne Zusatztaste die Leinwand verschiebt oder zoomt. Mit gedrücktem **Strg** wird die andere Aktion verwendet.
+
+### Mit zwei Fingern drehen
+
+Erlaubt das Drehen der Ansicht mit einer Drehbewegung zweier Finger. Schalten Sie dies aus, um Gesten mit zwei Fingern auf Verschieben und Zoomen zu begrenzen.
 
 ### Verschiebegeschwindigkeit beim Scrollen
 

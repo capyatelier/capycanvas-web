@@ -15,8 +15,8 @@ Lakukan salah satu langkah berikut:
 
 - Pilih **Jendela > Lapisan**.
 - Di Lukis, pilih **Lapisan** di kolom kanan.
-- Di Sketsa, pilih **Panel Lapisan** di bilah judul.
-- Ketik "Panel Lapisan" di [pencarian perintah](/id/docs/start/command-search/).
+- Di Sketsa, pilih **Lapisan** di bilah judul. Laci bersama terbuka pada tampilan Lapisan; pilih tombol Properti lapisan untuk beralih ke Properti.
+- Ketik "Panel Lapisan" dalam [pencarian perintah](/id/docs/start/command-search/).
 
 Di Foto, panel ini sudah terbuka di kolom kanan.
 
@@ -52,6 +52,10 @@ Lapisan di dalam grup tampil menjorok di bawah grupnya.
 
 Pilih sebuah baris untuk menjadikannya lapisan aktif dan satu-satunya baris terpilih.
 [Jenis lapisan](/id/docs/layers/types/) menampilkan gambar mini setiap jenis.
+
+Kertas memiliki gambar mini warna dan tekstur terpisah. Jika Kertas tidak ada, **Tambah kertas** muncul setelah baris terakhir.
+
+![Laci Sketsa beralih dari Lapisan ke Properti.](shot:layers/sketch-properties-drawer)
 
 **Ctrl**+klik gambar mini lapisan lukis untuk memuat opasitasnya sebagai seleksi, atau
 gambar mini mask untuk memuat mask. Tambahkan **Shift** untuk menambah ke seleksi,

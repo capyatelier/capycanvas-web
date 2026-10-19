@@ -21,7 +21,7 @@ Setiap perubahan pada pengaturan kuas langsung disimpan bersama prasetelnya.
 
 Anda dapat mengembalikan satu pengaturan ke nilai bawaan kuas. Klik ganda (atau ketuk
 ganda) label atau ikon pengaturan itu di bilah Opsi Alat
-([Ukuran, opasitas, dan aliran cat](/id/docs/brushes/basics/)).
+([Ukuran, kekuatan, dan opasitas cat](/id/docs/brushes/basics/)).
 
 Panel **Alat** tidak memiliki tombol atur ulang. Untuk mengatur ulang
 **Pencampuran warna**, pilih **Pencampuran Oklab**, pilihan bawaan setiap kuas

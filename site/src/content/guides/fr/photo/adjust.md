@@ -27,25 +27,23 @@ Choisissez **Filtre > Couleur > Vibrance**, et réglez **Vibrance** sur 25 dans 
 panneau **Propriétés** ([Filtres de couleur](/fr/docs/filters/color/)). Le calque
 **Vibrance** apparaît au-dessus de **Courbes**.
 
-## 3. Sélectionner la roche
+## 3. Ajouter Tons foncés/Tons clairs
 
-1. Appuyez sur **M**, ou sélectionnez **Sélection au lasso** dans la barre d’outils Outils, et tracez le tour de la roche.
-2. Choisissez **Sélection > Contour progressif de sélection…**, ou sélectionnez **Affiner** dans la barre de sélection et choisissez **Contour progressif…** ([Travailler avec les sélections](/fr/docs/selections/working/)).
-3. Réglez **Feather radius** sur 20 px et sélectionnez **Appliquer**.
+Choisissez **Filtre > Tons > Tons foncés/Tons clairs**. Réglez **Tons foncés** sur 35 % dans le panneau **Propriétés**. Le calque **Tons foncés/Tons clairs** apparaît au-dessus de **Vibrance** et reste sélectionné.
 
-## 4. Éclaircir les ombres de la roche
+## 4. Masquer le réglage sur la roche
 
 Éclaircir les ombres de toute la photo rendrait le fond noir gris. L’exemple ne
 les éclaircit que dans la roche.
 
-Sélectionnez **Ajuster** dans la barre de sélection et choisissez
-**Tons > Tons foncés/Tons clairs**. Réglez **Tons foncés** sur 35 % dans le panneau
-**Propriétés**.
+1. Appuyez sur **M**, ou sélectionnez **Sélection au lasso** dans la barre d’outils Outils, et tracez le tour de la roche.
+2. Choisissez **Sélection > Contour progressif de sélection…**, ou sélectionnez **Affiner** dans la barre de sélection et choisissez **Contour progressif…** ([Travailler avec les sélections](/fr/docs/selections/working/)).
+3. Réglez **Rayon du contour progressif** sur 20 px et sélectionnez **Appliquer**.
+4. Sélectionnez **Masque** dans la barre de sélection.
 
-![La barre de sélection avec le menu Ajuster ouvert sur la catégorie Tons, à côté de la sélection autour de la roche.](shot:photo/adjust-bar)
+![La barre de sélection avec Masque, à côté de la sélection autour de la roche.](shot:photo/adjust-bar)
 
-La sélection devient le masque du nouveau calque **Tons foncés/Tons clairs**. Seule
-la roche change.
+La sélection devient le masque du calque **Tons foncés/Tons clairs**. Seule la roche change.
 
 ## 5. Enregistrer le dessin
 

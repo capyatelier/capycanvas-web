@@ -11,10 +11,10 @@ kullandığınız araca geri dönülür.
 
 Aşağıdakilerden birini yapın:
 
-- **I** tuşuna basın (GIMP tarzı tuş eşlemesinde **O**).
-- Komut aramada **Damlalık** öğesini seçin.
-- Boya ve Fotoğraf'ta Araçlar çubuğunda **Damlalık** düğmesini seçin.
-- Eskiz'de sol kenardaki çubukta, boyut ve opaklık kaydırıcılarının arasındaki **Renk seçici** düğmesini seçin.
+- **I** tuşuna basın (GIMP Style tuş düzeninde **O**).
+- Komut aramasında **Damlalık** seçin.
+- Boyama ve Fotoğraf alanlarında Araçlar çubuğunda **Damlalık** seçin.
+- Eskiz alanında sol kenardaki çubukta **Fırça boyutu kaydırıcısı** ve **Güç kaydırıcısı** arasındaki **Renk seçici** seçeneğini seçin.
 
 Renk almadan durdurmak için **I** tuşuna basın veya aynı düğmeyi yeniden seçin,
 **Escape** tuşuna basın ya da başka bir araç veya fırça seçin. Basılı tutmadan
@@ -31,7 +31,7 @@ rengi yalnızca rengi aldığınızda değişir.
 | Kalem | Üzerine gelme veya kalemi bastırma | Kalemi kaldırma |
 | Parmak | Dokunma | Parmağı kaldırma |
 
-Parmakla örnekleme noktası parmak ucunun üstündedir.
+Parmak kullanırken büyüteç parmak ucunun üzerinde görünür, örnekleme noktası ise parmak ucunun altında kalır.
 
 Saydam piksellerden renk alınmaz ve alınan renkler her zaman opaktır. Renkler
 çizimin renk uzayında alınır. HDR çiziminde alınan renk SDR beyazından daha
@@ -44,8 +44,7 @@ Bir fırça ya da Karıştır, Sıvılaştır, Doldur veya Gradyan aracı seçil
 **Alt** tuşunu bırakın.
 
 Krita tarzı ve GIMP tarzı tuş eşlemeleri bunun yerine **Ctrl** kullanır.
-[Klavye kısayolları](/tr/docs/input/keyboard/) sayfasında bu kısayol **Basılı
-tutulurken Renk örnekle** olarak geçer. **Kalem ve giriş** sayfasında
+[Klavye kısayolları](/tr/docs/input/keyboard/) sayfasında bu kısayol **Basılı tutulurken Renk örnekle** olarak geçer. **Kalem ve giriş** sayfasında
 Damlalık'a bir kalem düğmesi de atayabilirsiniz ([Kalem](/tr/docs/input/pen/)).
 
 ## Parmağı basılı tutma
@@ -67,6 +66,8 @@ Renk alırken Araç seçenekleri çubuğunda (Fotoğraf'ta pencerenin üstünde)
 - **Damlalık**, ucu örneklenen noktada olan bir pipet imleci gösterir.
 
 ![Kırmızı bir darbenin üzerinde Renk seçici büyüteci: halkasında örneklenen ve geçerli renkler.](shot:color/eyedropper-loupe)
+
+![Parmağın üzerinde Renk Seçici büyüteci ve temasın altındaki örnekleme noktası.](shot:color/eyedropper-touch)
 
 Dokunmatik girişte her zaman büyüteç kullanılır. Eskiz'de **Renk seçici**
 düğmesini seçmek **Tarz** ayarını **Renk seçici** yapar. **Kaynak** ayarı

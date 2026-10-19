@@ -1,12 +1,10 @@
 ---
 title: "Fırça araçları"
 description: "Fırça araçları, yerleşik hazır ayarları ve bunları seçebileceğiniz yerler."
-related: ["brushes/basics", "drawing/blend-liquify", "color/color-panel", "input/keyboard"]
+related: ["brushes/basics", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
 ---
 
-**Kalem**, **Kurşun kalem**, **Boya fırçası**, **Pistole** ve **Süsleme**
-araçlarıyla boyayabilir, **Silgi** ile silebilirsiniz. Her araçta bir veya daha
-fazla yerleşik fırça hazır ayarı grubu bulunur.
+**Kalem**, **Kurşun kalem**, **Kömür**, **Tebeşir**, **Pastel**, **Mum boya**, **Boya fırçası**, **Pistole** ve **Süsleme** araçlarıyla boyayabilir, **Silgi** ile silebilirsiniz. Her araç bir veya daha fazla yerleşik fırça hazır ayarı grubu içerir.
 
 ## Araçlar ve hazır ayarlar
 
@@ -15,7 +13,10 @@ fazla yerleşik fırça hazır ayarı grubu bulunur.
 | **Kalem** | **Kalem** | **G kalem**, **Pürüzlü G kalem**, **Hat kalemi**, **Antika kalem**, **Gerçekçi kalem**, **Islak mürekkep**, **Lekeli mürekkep**, **Gerçekçi fırça mürekkebi** |
 | | **Keçeli kalem** | **Keçeli kalem** |
 | **Kurşun kalem** | **Kurşun kalem** | **Kurşun kalem**, **Sivri kurşun kalem**, **Gölgelendirme kalemi** |
-| | **Pastel** | **Kömür**, **Tebeşir**, **Pastel blok** |
+| **Kömür** | **Kömür** | **Kömür** |
+| **Tebeşir** | **Tebeşir** | **Tebeşir** |
+| **Pastel** | **Pastel** | **Pastel blok** |
+| **Mum boya** | **Mum boya** | **Mum boya** |
 | **Boya fırçası** | **Boya** | **Boya fırçası**, **Kıl boya fırçası**, **Dokulu düz fırça**, **Kuru sürtme**, **Saydam lazür**, **Opak guaj**, **Çarpma lazürü** |
 | | **Suluboya** | **Suluboya yıkama**, **Islak suluboya** |
 | | **Yağlı boya** | **Bol boyalı yağlı boya**, **Palet bıçağı**, **Islak yuvarlak fırça** |
@@ -36,9 +37,9 @@ Bu davranışlar hazır ayarlara yerleşiktir ve ayarları yoktur.
 | --- | --- |
 | **Hat kalemi**, **Antika kalem** | Açılı uç. |
 | **Keçeli kalem** | Kesik uç. |
-| **Kurşun kalem**, **Sivri kurşun kalem**, **Gölgelendirme kalemi**, **Kömür** | Kalemi eğdiğinizde daha geniş iz. |
-| **Pistole** | Kalemi sabit tuttuğunuz sürece boya eklemeye devam eder. |
-| **Sprey** | Fırça izlerini darbenin çevresine saçar. |
+| **Kurşun kalem**, **Sivri kurşun kalem**, **Gölgelendirme kalemi**, **Kömür**, **Tebeşir**, **Pastel blok**, **Mum boya** | Basınç ve eğim izin şeklini ve kaplamasını değiştirir. Bkz. [Kuru malzemeler](/tr/docs/brushes/dry-media/). |
+| **Pistole** | Kalemi sabit tuttuğunuzda boya eklemeyi sürdürür. |
+| **Sprey** | İzleri çizginin çevresine saçar. |
 | **Çarpma lazürü** | Çarp modunda boyar. |
 
 ## Fırça aracı seçme
@@ -126,7 +127,7 @@ açıklar:
 - Maskesiz dolgu katmanı.
 - **Düzenlemeyi kilitle** açık olan ya da kilitli bir grubun içindeki katman.
 - Alttaki katman kilitliyse veya yoksa maskesiz filtre katmanı.
-- **Dönüşümü piksellere uygula** komutunu seçene kadar ölçeklenmiş veya döndürülmüş katman ([Taşıma ve dönüştürme](/tr/docs/transform/move-transform/)).
+- **Dönüşümü uygula** komutunu seçene kadar ölçeklenmiş veya döndürülmüş katman ([Taşıma ve dönüştürme](/tr/docs/transform/move-transform/)).
 
 Islak, karıştırma ve suluboya fırçaları maskeye düz kapsam boyar. Her maskedeki
 bu türden ilk darbe bir bildirim gösterir.

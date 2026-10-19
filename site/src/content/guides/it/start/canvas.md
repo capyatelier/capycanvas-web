@@ -24,6 +24,7 @@ Esegui una delle seguenti operazioni:
 - Pizzica con due dita su uno schermo touch, oppure sul trackpad su macOS e iPad.
 - Seleziona un livello di zoom nel menu dell'indicatore dello zoom, oppure un pulsante di zoom nel pannello **Navigatore**.
 - Spingi in su o in giù la levetta destra di un controller di gioco.
+- Seleziona lo strumento **Zoom**, poi fai clic o trascina in base alle sue impostazioni Strumento.
 
 Lo zoom va dal 2% al 1600%. **Ctrl**+scorrimento ingrandisce attorno al
 puntatore, e il pizzico attorno alle dita. **Velocità di zoom con scorrimento**
@@ -39,6 +40,12 @@ mantiene le riflessioni.
 Un disegno viene adattato quando si apre, ma non di nuovo quando ridimensioni la
 finestra.
 
+## Strumento Zoom
+
+Seleziona **Zoom** nella barra Strumenti, oppure tieni premuto il tasto di accesso temporaneo, poi usa la tela. L'impostazione **Clic** sceglie se un clic ingrandisce o riduce. **Trascina** sceglie zoom continuo, un'area di zoom, l'azione opposta al clic o solo clic.
+
+![Le impostazioni Clic e Trascina dello strumento Zoom.](shot:start/zoom-tool-settings)
+
 ## Pixel reali
 
 Scegli **Visualizza > Pixel reali**, oppure premi **Ctrl+1** o **Ctrl+Alt+0**,
@@ -51,10 +58,10 @@ con i pixel dello schermo.
 
 Esegui una delle seguenti operazioni:
 
-- Scorri. Tieni premuto **Maiusc** e scorri per spostarti in orizzontale.
+- Scorri quando **Rotella del mouse** è impostata sullo spostamento in [Preferenze](/it/docs/preferences/). Tieni premuto **Maiusc** e scorri per spostarti in orizzontale.
 - Tieni premuto **Spazio** e trascina.
 - Trascina con due dita su uno schermo touch.
-- Seleziona lo strumento **Mano** o premi **H**, poi trascina.
+- Seleziona lo strumento **Mano** o premi **A**, poi trascina.
 - Trascina nel pannello **Navigatore**.
 - Nell'editor web, trascina con il pulsante centrale o destro del mouse.
 - Spingi la levetta sinistra di un controller di gioco.
@@ -68,7 +75,7 @@ scorrimento.
 Esegui una delle seguenti operazioni:
 
 - Scegli **Visualizza > Ruota vista di 90° a sinistra** o **Visualizza > Ruota vista di 90° a destra**.
-- Ruota due dita su uno schermo touch, oppure sul trackpad su macOS e iPad.
+- Ruota due dita su uno schermo touch, oppure sul trackpad su macOS e iPad, quando **Ruota con due dita** è attivo nelle Preferenze.
 - Digita un angolo o trascina il cursore di rotazione nel menu dell'indicatore dello zoom.
 - Seleziona un pulsante di rotazione nel pannello **Navigatore**.
 

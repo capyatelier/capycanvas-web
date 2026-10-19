@@ -16,9 +16,9 @@ espacio de trabajo que usaste por última vez.
 Boceto no tiene paneles acoplados: los botones de herramientas y de paneles de la barra de título abren cajones.
 
 1. **Capy (modo Zen)**, **Menú principal**, **Panel de filtros**, **Seleccionar** y **Transformar**.
-2. El selector de espacio de trabajo.
+2. El selector de espacios de trabajo.
 3. **Pincel**, **Esculpir**, **Borrador**, **Panel de capas** y **Color del pincel**. El editor web añade **Pantalla completa**.
-4. **Deslizador de tamaño de pincel**, **Selector de color**, **Deslizador de opacidad de pincel**, **Deshacer** y **Rehacer**.
+4. **Deslizador de tamaño de pincel**, **Selector de color**, **Control de intensidad**, **Deshacer** y **Rehacer**.
 
 | Botón | Paneles del cajón |
 | --- | --- |

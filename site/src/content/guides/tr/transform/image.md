@@ -1,27 +1,26 @@
 ---
 title: "Görüntü boyutu ve döndürme"
-description: "Görüntünün tamamının boyutunu ve yönünü değiştiren Düzenle > Görüntü komutları."
+description: "Tüm görüntünün boyutunu ve yönünü değiştiren Görüntü menüsü komutları."
 related: ["transform/crop", "start/canvas", "files/new", "color-management/color-spaces"]
 ---
 
-Görüntünün tamamını **Düzenle > Görüntü** menüsünden yeniden boyutlandırabilir,
+Görüntünün tamamını **Görüntü** menüsünden yeniden boyutlandırabilir,
 döndürebilir ve çevirebilirsiniz. Görüntü ekranda yerinde kalır.
 
 Bir kırpma veya dönüştürme açıkken ve bir maskeyi, Hızlı maskeyi ya da bir seçim
 katmanını düzenlerken bu komutlar kullanılamaz. **Kırp** ve
 **Tuvali seçime göre kırp** için bkz. [Kırpma](/tr/docs/transform/crop/).
 
-![Düzenle menüsünün Görüntü alt menüsü.](shot:transform/image-menu)
+![Görüntü menüsü.](shot:transform/image-menu)
 
 ## Görüntü boyutu…
 
 Görüntünün tamamını ölçekleyebilir veya yalnızca çözünürlüğünü
 değiştirebilirsiniz.
 
-**Düzenle > Görüntü > Görüntü boyutu…** komutunu seçin. Boya katmanları ve
-maskeler yeniden örneklenir, yerleştirilmiş fotoğraflar özgün piksellerini
-korur. Seçimler, kılavuzlar ve piksel cinsinden ölçülen filtre ayarları
-görüntüyle birlikte ölçeklenir.
+**Görüntü > Görüntü boyutu…** seçin. Boya katmanları ve maskeler yeniden örneklenir; nesne katmanları kaynak piksellerini korur. Seçimler, kılavuzlar ve piksel cinsinden filtre ayarları görüntüyle birlikte ölçeklenir.
+
+Kâğıt görüntüyle birlikte yeniden örneklenir. Yalnızca çözünürlüğü değiştirmek pikselleri yeniden örneklemeden fiziksel ölçeğini günceller.
 
 ![Görüntü boyutu iletişim kutusu.](shot:transform/image-size-dialog)
 
@@ -51,7 +50,7 @@ yöntemini kullanır. **Çift kübik**, **Lanczos**, **Çift doğrusal** veya
 Yeniden örnekleme yapmadan görüntünün çevresine tuval ekleyebilir veya tuvalden
 kaldırabilirsiniz.
 
-**Düzenle > Görüntü > Tuval boyutu…** komutunu seçin. Daha küçük bir tuvalin
+**Görüntü > Tuval boyutu…** komutunu seçin. Daha küçük bir tuvalin
 dışında kalan pikseller kendi katmanlarında gizli olarak kalır. Daha büyük bir
 tuval bu pikselleri yeniden gösterir.
 
@@ -73,7 +72,7 @@ Varsayılan **Orta** seçeneğidir.
 
 ## Görüntüyü döndürme ve çevirme
 
-**Düzenle > Görüntü** menüsünden şunlardan birini seçin:
+**Görüntü** menüsünden şunlardan birini seçin:
 
 - **Görüntüyü 90° sola döndür**
 - **Görüntüyü 90° sağa döndür**
@@ -87,12 +86,12 @@ bkz. [Tuvali görüntüleme](/tr/docs/start/canvas/).
 
 ## Kenarları kırp
 
-Tuvali görünür piksellere küçültmek için **Düzenle > Görüntü > Kenarları kırp**
+Tuvali görünür piksellere küçültmek için **Görüntü > Kenarları kırp**
 komutunu seçin. Yeni tuvalin dışında kalan pikseller kendi katmanlarında gizli
 olarak kalır.
 
 ## Tümünü göster
 
 Tuvali, gizli katmanlar ve tuvalin dışındaki pikseller dâhil tüm katmanların
-piksellerini gösterene kadar büyütmek için **Düzenle > Görüntü > Tümünü göster**
+piksellerini gösterene kadar büyütmek için **Görüntü > Tümünü göster**
 komutunu seçin.

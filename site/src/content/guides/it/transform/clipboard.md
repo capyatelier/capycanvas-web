@@ -1,84 +1,42 @@
 ---
 title: "Copiare e incollare"
-description: "Copiare pixel e incollarli come nuovi livelli, all'interno di {appName} e tra app diverse."
-related: ["selections/working", "transform/move-transform", "layers/working", "files/open-save"]
+description: "Copiare pixel e incollarli come livello, maschera o nuovo disegno."
+related: ["selections/working", "transform/move-transform", "layers/types", "files/open-save"]
 ---
 
-Puoi copiare pixel da un livello o dall'immagine visibile, e incollarli come
-nuovo livello. I comandi si trovano nel menu **Modifica** e nella ricerca
-comandi.
+I comandi degli appunti sono nel menu **Modifica** e nella ricerca comandi.
 
-![I comandi degli appunti nel menu Modifica.](shot:transform/clipboard-edit-menu)
+![Incolla speciale nel menu Modifica.](shot:transform/clipboard-edit-menu)
 
-| Comando | Tasto |
-| --- | --- |
-| **Taglia** | **Ctrl+X** |
-| **Copia** | **Ctrl+C** |
-| **Copia elementi uniti** | **Ctrl+Maiusc+C** |
-| **Incolla** | **Ctrl+V** |
-| **Incolla nella stessa posizione** | **Ctrl+Maiusc+V** |
-| **Incolla dentro** | |
+## Copia e Taglia
 
-**Copia** nella [barra della selezione](/it/docs/selections/working/) contiene
-**Copia**, **Copia elementi uniti** e **Taglia**.
+**Copia** (**Ctrl+C**) copia i pixel del livello selezionato all'interno della selezione, senza opacità, maschera o filtri collegati. Senza selezione copia il livello entro la tela.
 
-## Copia
+**Taglia** (**Ctrl+X**) copia gli stessi pixel e li cancella. Non è disponibile su un livello bloccato o con **Blocca alfa**.
 
-Copia i pixel propri del livello attivo all'interno della selezione, senza
-l'opacità, la maschera e i filtri collegati del livello. Senza selezione, copia
-l'intero livello entro i limiti della tela.
-
-## Taglia
-
-Copia come **Copia**, poi cancella dal livello i pixel selezionati. Non puoi
-tagliare da un livello con **Blocca alfa** attivo.
-
-## Copia elementi uniti
-
-Copia l'immagine visibile all'interno della selezione, così come appare in
-un'esportazione.
-
-## Cosa non puoi copiare
-
-I gruppi, i livelli filtro e i livelli di selezione non hanno pixel propri. Per
-copiare da un gruppo, seleziona un livello al suo interno. Non puoi copiare il
-disegno nella Maschera veloce, e **Copia** e **Taglia** non sono disponibili
-mentre modifichi una maschera.
-
-Una copia di grandi dimensioni mostra un avviso di avanzamento con **Annulla**.
+**Copia elementi uniti** (**Ctrl+Shift+C**) copia il risultato visibile dentro la selezione, inclusa l'illuminazione della Carta. Gruppi, livelli filtro e livelli di selezione non hanno pixel propri.
 
 ## Incolla
 
-Aggiunge il contenuto degli appunti come nuovo livello attivo.
+**Incolla** (**Ctrl+V**) aggiunge il disegno degli appunti come nuovo livello e apre le maniglie di trasformazione quando serve posizionarlo. Un'immagine da un'altra app diventa un [livello Oggetto](/it/docs/layers/types/), conservando l'origine fino alla rasterizzazione.
 
-- Una copia da {appName} finisce nel punto da cui è stata copiata se quel punto è visibile, altrimenti al centro della vista.
-- Un'immagine da un'altra app si apre nel riquadro di trasformazione. **Applica** posiziona l'immagine e **Annulla** scarta l'operazione (vedi [Spostamento e trasformazione](/it/docs/transform/move-transform/)).
+Una copia eseguita in {appName} torna nella posizione copiata quando questa è visibile. Altrimenti viene posizionata al centro della vista.
 
-## Incolla nella stessa posizione
+## Incolla speciale
 
-Aggiunge il contenuto degli appunti come nuovo livello nel punto da cui è stato
-copiato, senza riquadro di trasformazione. Un'immagine da un'altra app finisce
-al centro della vista a dimensione piena.
+Apri **Modifica > Incolla speciale** per scegliere una destinazione.
 
-## Incolla dentro
+- **Incolla nella stessa posizione** aggiunge un livello nella posizione copiata senza aprire le maniglie di trasformazione.
+- **Incolla dentro** aggiunge un livello con la selezione attiva come maschera, poi cancella la selezione.
+- **Incolla maschera** sostituisce o aggiunge la maschera del livello selezionato con l'immagine degli appunti.
+- **Incolla come nuova immagine** crea un nuovo disegno dagli appunti.
 
-Funziona come **Incolla nella stessa posizione**, e dà al nuovo livello una
-[maschera](/it/docs/layers/masks/) che mostra solo la selezione. Poi la selezione
-viene rimossa. **Incolla dentro** richiede una selezione.
+I comandi che richiedono una selezione, un livello modificabile o un'immagine compatibile negli appunti sono attenuati.
 
-## Incollare tra app diverse
+![Le opzioni di Incolla speciale per livelli, maschere e nuovi disegni.](shot:transform/paste-special)
 
-Le altre app ricevono una copia da {appName} come immagine PNG sRGB a 8 bit.
-Incollando di nuovo in {appName}, viene usata la copia con la sua profondità
-in bit completa finché è ancora negli appunti.
+## Tra app
 
-Una copia incollata in un disegno con impostazioni colore diverse diventa un
-[livello fotografico](/it/docs/layers/types/), convertito dal proprio profilo
-colore.
+Le altre app ricevono una copia da {appName} come PNG sRGB a 8 bit. Finché la copia interna rimane negli appunti, un altro disegno di {appName} la riceve con la precisione originale.
 
-Mentre digiti in un campo di testo, i tasti degli appunti tagliano, copiano e
-incollano il testo.
-
-Nell'editor web, un'immagine incollata può arrivare a 512 MiB. In un browser che
-non può incollare immagini, scegli invece
-**File > Importa immagine come livello…**.
+Nell'editor web, un'immagine incollata può arrivare a 512 MiB. Se il browser non può incollare immagini, usa **File > Importa immagine come livello…**.

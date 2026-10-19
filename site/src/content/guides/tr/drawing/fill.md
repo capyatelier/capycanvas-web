@@ -4,8 +4,7 @@ description: "Bir katmandaki alanları, serbest çizilmiş şekilleri ve kapalı
 related: ["drawing/gradient", "layers/settings", "selections/working", "drawing/brush-tools"]
 ---
 
-Seçili katmanın bölümlerini **Doldur**, **Kement dolgusu** ve **Çevrele ve
-doldur** ile geçerli renkle doldurabilirsiniz. Her dolgu bir geri alma adımıdır
+Seçili katmanın bölümlerini **Doldur**, **Kement dolgusu** ve **Çevrele ve doldur** ile geçerli renkle doldurabilirsiniz. Her dolgu bir geri alma adımıdır
 ve **Alfa kilidi** dikkate alınır.
 
 Dolgular yalnızca katmanın çizimine boyar, hiçbir zaman katman maskesine veya
@@ -79,7 +78,7 @@ hiçbir şey boyamaz. Bir bildirim, alttaki katmanı işaretlemeyi önerir.
 Doldur ile Çevrele ve doldur aşağıdaki ayarları paylaşır. **Otomatik seç** ve
 **Renge göre seç**, **Opaklık** dışındaki tüm ayarlarda aynı değerleri kullanır.
 Bir ayarı sıfırlamak için Araç seçenekleri çubuğunda ayarın etiketine çift
-tıklayın ([Boyut, opaklık ve akış](/tr/docs/brushes/basics/)).
+tıklayın ([Boyut, güç ve opaklık](/tr/docs/brushes/basics/)).
 
 ### Tolerans
 
@@ -103,9 +102,7 @@ kenarlarını korur.
 
 ### Opaklık
 
-Dolgunun gücünü belirler. Bu ayarı değiştirmek geçerli fırçanın **Opaklık**
-değerini de değiştirir; tersi de geçerlidir. Eskiz'de sol kenardaki çubukta
-bulunan opaklık kaydırıcısını kullanın.
+Dolgunun gücünü belirler. Değiştirmek geçerli fırçanın **Opaklık** değerini değiştirir; tersi de geçerlidir. Eskiz alanında sol kenardaki çubukta **Güç kaydırıcısı** kullanın.
 
 ## Seçimi doldurma
 

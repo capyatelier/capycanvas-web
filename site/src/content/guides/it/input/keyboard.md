@@ -16,8 +16,8 @@ mostra Ctrl su tutti i computer, e su un Mac Command funziona come Ctrl.
 
 Esegui una delle seguenti operazioni:
 
-- Scegli **Aiuto > Scorciatoie da tastiera**.
-- Premi **Ctrl+Maiusc+?**.
+- Scegli **Modifica > Scorciatoie da tastiera**.
+- Premi **Ctrl+Shift+?**.
 - Scegli **Modifica > Preferenze** e seleziona **Scorciatoie da tastiera**.
 
 ## Predefiniti della mappa dei tasti

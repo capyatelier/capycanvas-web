@@ -148,20 +148,20 @@ transform, except in **Warp**.
 
 ## Layer transforms
 
-A transform of whole paint or photo layers is stored with each layer, and the
+A transform of whole paint or Object layers is stored with each layer, and the
 pixels aren't resampled. **Transform** opens again from the stored transform.
 
 Until you apply the transform to the pixels, you can't retouch a scaled or
 rotated layer, or paint on a distorted or warped one.
 
-## Apply Transform to Pixels
+## Apply transform
 
 You can make a layer's stored transform part of its pixels.
 
 Do one of the following:
 
-- Choose **Edit > Apply Transform to Pixels**.
-- Choose **Layer > Layer Settings > Apply Transform to Pixels**.
+- Choose **Edit > Apply transform**.
+- Choose **Layer > Layer Settings > Apply transform**.
 
 While it works, a bar at the bottom of the canvas reads "Applying transform…"
 with **Cancel**.

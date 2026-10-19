@@ -12,9 +12,9 @@ recortados continuam nas camadas deles, ocultos, a menos que você ative
 
 Faça uma das seguintes ações:
 
-- Escolha **Editar > Imagem > Recortar**.
+- Escolha **Imagem > Recortar**.
 - Pressione **C**.
-- Em Foto, selecione **Recortar** na barra de ferramentas Ferramentas.
+- Em Foto, selecione **Recortar** na barra Ferramentas.
 
 Um quadro com alças aparece ao redor da tela inteira, ou como o maior quadro da
 proporção escolhida. A tela fora do quadro fica esmaecida, e a
@@ -112,7 +112,7 @@ Você pode recortar a tela nos limites de uma seleção.
 
 Faça uma das seguintes ações:
 
-- Escolha **Editar > Imagem > Recortar tela à seleção**.
+- Escolha **Imagem > Recortar tela à seleção**.
 - Selecione **Recortar** na [barra de seleção](/pt-BR/docs/selections/working/).
 
 Os pixels fora dos limites da seleção continuam nas camadas deles, ocultos. Não
@@ -120,7 +120,4 @@ Os pixels fora dos limites da seleção continuam nas camadas deles, ocultos. N�
 
 ## Recuperar pixels recortados
 
-Escolha **Editar > Imagem > Revelar tudo** para aumentar a tela até ela mostrar
-os pixels de todas as camadas, ou aumente a tela com
-**Editar > Imagem > Tamanho da tela…** (consulte
-[Tamanho e rotação da imagem](/pt-BR/docs/transform/image/)).
+Escolha **Imagem > Revelar tudo** para ampliar a tela até mostrar os pixels de todas as camadas, ou amplie a tela com **Imagem > Tamanho da tela…** (consulte [Tamanho e rotação da imagem](/pt-BR/docs/transform/image/)).

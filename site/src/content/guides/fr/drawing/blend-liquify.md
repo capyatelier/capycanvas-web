@@ -46,8 +46,7 @@ Chaque mode est un préréglage du panneau **Ensemble d’outils** :
 
 ![Le panneau Outil pour Fluidité cristalline, avec le groupe Fluidité qui affiche Intensité et Distorsion.](shot:drawing/liquify-settings)
 
-**Intensité**, **Distorsion** et **Inertie** se trouvent dans le groupe
-**Fluidité** du panneau **Outil**. Fluidité n’a pas de **Débit**.
+**Intensité**, **Distorsion** et **Inertie** sont dans le groupe **Fluidité** du panneau **Outil**. **Intensité** définit l’intensité du déplacement des pixels par le trait.
 
 ### Intensité
 

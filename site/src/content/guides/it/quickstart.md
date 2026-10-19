@@ -1,7 +1,7 @@
 ---
 title: "Guida rapida"
 description: "Aprire {appName}, disegnare sul primo disegno vuoto, salvarlo come file .capy ed esportare un PNG."
-related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
+related: ["start/workspaces", "start/device-support", "files/new", "files/open-save", "files/export"]
 ---
 
 ## Aprire {appName}
@@ -11,15 +11,7 @@ Esegui una delle seguenti operazioni:
 - Apri l'editor web all'indirizzo [editor.capycanvas.art](https://editor.capycanvas.art/).
 - Nella pagina [Scarica](/it/download/) trovi l'app desktop, la beta per iPad o Android e le istruzioni per installare l'editor web come app.
 
-L'editor web funziona in questi browser:
-
-| Sistema | Browser |
-| --- | --- |
-| Windows | Chrome, Edge, Firefox 141 o successivo |
-| macOS | Chrome, Edge, Safari 26 o successivo, Firefox 147 o successivo (Apple silicon) |
-| Linux (Wayland) | Chrome, Edge |
-| iPadOS 26 o successivo | Safari |
-| Android 12 o successivo | Chrome |
+Vedi [Dispositivi supportati](/it/docs/start/device-support/) per i requisiti distinti delle app native e dei browser web.
 
 Dopo la prima visita, l'editor web si apre anche senza connessione a Internet.
 
@@ -27,11 +19,7 @@ Dopo la prima visita, l'editor web si apre anche senza connessione a Internet.
 
 ![Il pannello Livelli di un nuovo disegno, con Inchiostro corrente sopra Carta.](shot:files/new-layers)
 
-La prima volta che apri {appName}, compare l'area di lavoro
-[Pittura](/it/docs/start/workspaces/) con un disegno vuoto, e la barra del titolo
-riporta «Senza titolo · 2048 × 1536». **Inchiostro corrente**, un livello di
-pittura vuoto, è selezionato sopra **Carta**, un livello di riempimento bianco.
-È attivo lo strumento **Penna**, con il pennello **G-Pen** e un colore quasi nero.
+La prima volta che apri {appName}, compare l'area di lavoro [Pittura](/it/docs/start/workspaces/) con un disegno vuoto A4 orizzontale a 300 ppi. **Inchiostro corrente**, un livello di pittura vuoto, è selezionato sopra **Carta**. È attivo lo strumento **Penna** con il pennello **G-Pen** e un colore quasi nero.
 
 Alle aperture successive, {appName} si apre nell'ultima area di lavoro usata e
 con i disegni che erano aperti.
@@ -61,9 +49,7 @@ questi tasti non ha scorciatoia nell'editor web. Sceglilo dal menu o dalla
 
 ## Iniziare un altro disegno
 
-Scegli **File > Nuovo…** e seleziona **Crea** nella finestra di dialogo
-[Nuovo disegno](/it/docs/files/new/). Il nuovo disegno si apre in una scheda
-propria, accanto al primo.
+Scegli **File > Nuovo…** e seleziona **Crea** nella finestra [Nuovo disegno](/it/docs/files/new/). Scegli dimensioni, risoluzione, Carta e impostazioni colore, poi seleziona **Crea**. Il nuovo disegno si apre in una scheda dedicata accanto al primo.
 
 ## Salvare il disegno
 

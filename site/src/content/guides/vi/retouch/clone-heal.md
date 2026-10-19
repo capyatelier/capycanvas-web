@@ -24,9 +24,9 @@ Thực hiện một trong các cách sau:
 
 **Cọ phục hồi** và **Cọ phục hồi điểm** không có nút trong Vẽ.
 
-Mỗi công cụ là một cọ, có **Kích thước cọ**, **Độ đục**, **Lượng màu ra** và các
+Mỗi công cụ là một cọ, có **Kích thước cọ**, **Độ đục**, **Độ mạnh** và các
 thiết lập **Đầu cọ** trong bảng Công cụ (xem
-[Kích thước, độ đục và lượng màu ra](/vi/docs/brushes/basics/)).
+[Kích thước, độ mạnh và độ đục](/vi/docs/brushes/basics/)).
 
 ![Bảng Công cụ của Dấu sao chép, với các thiết lập cọ và thiết lập nguồn.](shot:retouch/clone-tool-panel)
 

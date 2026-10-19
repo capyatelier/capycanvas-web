@@ -18,7 +18,7 @@ related: ["brushes/basics", "drawing/brush-tools", "customize/workspaces"]
 
 ## 重置單項設定
 
-可以將單項設定恢復為筆刷的內建值。在工具選項欄中按兩下（或輕點兩下）該設定的標籤或圖示（[大小、不透明度和流量](/zh-Hant/docs/brushes/basics/)）。
+可以將一項設定恢復為筆刷的內建值。按兩下（或輕點兩下）工具選項欄中該設定的標籤或圖標（[大小、強度和不透明度](/zh-Hant/docs/brushes/basics/)）。
 
 **工具設定**面板中沒有重置功能。要重置**混色**，請選擇 **Oklab 混色**，這是所有混色筆刷的內建選項。
 

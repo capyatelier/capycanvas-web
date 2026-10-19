@@ -20,10 +20,11 @@ Effectuez l’une des opérations suivantes :
 
 - Choisissez **Affichage > Zoom avant** ou **Affichage > Zoom arrière**.
 - Appuyez sur **Ctrl+=** ou **Ctrl+-**.
-- Maintenez la touche **Ctrl** enfoncée et faites défiler. Sur macOS et iPad, maintenez **Contrôle** enfoncée, et non Commande.
-- Pincez avec deux doigts sur un écran tactile, ou sur le trackpad sur macOS et iPad.
-- Sélectionnez un niveau de zoom dans le menu de l’affichage du zoom, ou un bouton de zoom dans le panneau **Navigateur**.
-- Poussez le stick droit d’une manette de jeu vers le haut ou vers le bas.
+- Maintenez **Ctrl** et faites défiler. Sur macOS et iPad, maintenez **Control**, pas Command.
+- Pincez avec deux doigts sur un écran tactile, ou sur le trackpad de macOS et d’iPad.
+- Sélectionnez un niveau de zoom dans le menu de l’indicateur de zoom, ou un bouton de zoom du panneau **Navigateur**.
+- Poussez le stick droit d’une manette vers le haut ou le bas.
+- Sélectionnez l’outil **Zoom**, puis cliquez ou faites glisser selon ses réglages dans Outil.
 
 Le zoom va de 2 % à 1600 %. **Ctrl** + défilement zoome autour du pointeur, et le
 pincement zoome autour de vos doigts. **Vitesse de zoom par défilement**, dans les
@@ -39,6 +40,12 @@ afficher tout le dessin, centré. Cette commande remet aussi la rotation de la v
 Un dessin est ajusté à son ouverture, et ne l’est plus quand vous redimensionnez
 la fenêtre.
 
+## Outil Zoom
+
+Sélectionnez **Zoom** dans la barre Outils, ou maintenez sa touche d’accès temporaire, puis utilisez la toile. Son réglage **Clic** choisit si un clic agrandit ou réduit la vue. **Glisser** choisit un zoom continu, une zone de zoom, l’action inverse du clic, ou uniquement le clic.
+
+![Les réglages Clic et Glisser de l’outil Zoom.](shot:start/zoom-tool-settings)
+
 ## Pixels réels
 
 Choisissez **Affichage > Pixels réels**, ou appuyez sur **Ctrl+1** ou
@@ -51,13 +58,13 @@ sur les pixels de l’écran.
 
 Effectuez l’une des opérations suivantes :
 
-- Faites défiler. Maintenez la touche **Maj** enfoncée et faites défiler pour vous déplacer latéralement.
-- Maintenez la touche **Espace** enfoncée et faites glisser.
-- Faites glisser deux doigts sur un écran tactile.
+- Faites défiler quand **Molette de la souris** est réglé sur le déplacement dans les [Préférences](/fr/docs/preferences/). Maintenez **Maj** et faites défiler pour déplacer la vue horizontalement.
+- Maintenez **Espace** et faites glisser.
+- Faites glisser avec deux doigts sur un écran tactile.
 - Sélectionnez l’outil **Main** ou appuyez sur **H**, puis faites glisser.
 - Faites glisser dans le panneau **Navigateur**.
-- Dans l’éditeur web, faites glisser avec le bouton central ou le bouton droit de la souris.
-- Poussez le stick gauche d’une manette de jeu.
+- Dans l’éditeur web, faites glisser avec le bouton central ou droit de la souris.
+- Poussez le stick gauche d’une manette.
 
 **Vitesse de déplacement par défilement**, dans les
 [Préférences](/fr/docs/preferences/), règle la distance parcourue à chaque cran de
@@ -68,8 +75,8 @@ défilement.
 Effectuez l’une des opérations suivantes :
 
 - Choisissez **Affichage > Pivoter la vue de 90° à gauche** ou **Affichage > Pivoter la vue de 90° à droite**.
-- Faites tourner deux doigts sur un écran tactile, ou sur le trackpad sur macOS et iPad.
-- Saisissez un angle ou faites glisser le curseur de rotation dans le menu de l’affichage du zoom.
+- Faites pivoter deux doigts sur un écran tactile, ou sur le trackpad de macOS et d’iPad, quand **Tourner avec deux doigts** est activé dans les Préférences.
+- Saisissez un angle ou faites glisser le curseur de rotation dans le menu de l’indicateur de zoom.
 - Sélectionnez un bouton de rotation dans le panneau **Navigateur**.
 
 Par défaut, aucune touche ne fait pivoter la vue. Pour revenir à 0°, sélectionnez

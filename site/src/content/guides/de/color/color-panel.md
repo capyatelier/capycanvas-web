@@ -7,7 +7,7 @@ related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-manag
 Im Bedienfeld **Farbe** können Sie die Malfarbe wählen. Alle Arbeitsbereiche
 verwenden dieselbe Malfarbe.
 
-![Das Bedienfeld Farbe mit dem runden Farbrad, der Farbanzeige oben links und den Farbfeldern unter dem Rad.](shot:color/panel "1 Farbanzeige · 2 Formschaltflächen · 3 Farbe bearbeiten · 4 Vorder- und Hintergrund · 5 Tauschen · 6 Transparente Farbe · 7 Schwarz und Weiß")
+![Das Bedienfeld Farbe mit dem Farbrad, der Anzeige oben links und den Farbfeldern unter dem Rad.](shot:color/panel "1 Anzeige · 2 Formschaltflächen · 3 Farbe bearbeiten · 4 Vordergrund und Hintergrund · 5 Tauschen · 6 Transparent malen")
 
 ## Bedienfeld Farbe öffnen
 
@@ -81,9 +81,7 @@ für **Farben tauschen**.
 
 ## Schwarz und Weiß
 
-Wählen Sie **Mit Schwarz malen** oder **Mit Weiß malen** (die beiden kleinen Kreise
-neben dem transparenten Farbfeld) aus, oder wählen Sie **Schwarz** oder **Weiß** in
-der Befehlssuche.
+Wählen Sie **Schwarz** oder **Weiß** in der Befehlssuche.
 
 Schwarz oder Weiß ersetzt die Farbe des ausgewählten Vorder- oder
 Hintergrundfarbfelds. Ist **Transparente Farbe** ausgewählt, wird Schwarz oder Weiß

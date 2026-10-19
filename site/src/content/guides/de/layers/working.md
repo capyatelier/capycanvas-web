@@ -141,7 +141,4 @@ Führen Sie eine der folgenden Aktionen aus:
 - Wählen Sie unten im Bedienfeld Ebenen **Bild als Ebene importieren…** aus.
 - Ziehen Sie Bilddateien auf die Leinwand oder auf eine Zeile im Bedienfeld Ebenen.
 
-Jede Datei wird zu einer [Fotoebene](/de/docs/layers/types/) über der aktiven
-Ebene oder über, unter oder in der Zeile, auf der Sie sie ablegen. Das Bild wird
-zentriert und so verkleinert, dass es auf die Leinwand passt, mit
-[Platzierungsgriffen](/de/docs/transform/move-transform/).
+Jede Datei wird zu einer [Objektebene](/de/docs/layers/types/) über der aktiven Ebene oder über, unter beziehungsweise innerhalb der Zeile, auf der Sie sie ablegen. Das Bild wird zentriert und zum Einpassen in die Leinwand verkleinert, mit [Platzierungsgriffen](/de/docs/transform/move-transform/).

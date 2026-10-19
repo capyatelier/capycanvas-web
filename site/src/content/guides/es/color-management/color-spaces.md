@@ -54,10 +54,7 @@ Preferencias no tiene ningún ajuste de Mezcla.
 
 ## Asignar perfil
 
-Elige **Editar > Asignar perfil…** para conservar los valores RGB del dibujo e
-interpretarlos en otro espacio de trabajo. Elige el espacio en **Espacio de color**,
-donde Adobe RGB (1998) aparece como **Adobe RGB**. Las capas de foto conservan el
-perfil de origen de su [foto original](/es/docs/layers/types/).
+Elige **Editar > Asignar perfil…** para conservar los valores RGB del dibujo e interpretarlos en otro espacio de trabajo. Elige el espacio en **Espacio de color**, donde Adobe RGB (1998) aparece como **Adobe RGB**. Las capas de objeto conservan el perfil de origen de su [foto original](/es/docs/layers/types/).
 
 ## Convertir espacio de color
 

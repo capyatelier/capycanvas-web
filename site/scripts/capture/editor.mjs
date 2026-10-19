@@ -92,7 +92,7 @@ export async function editor(b, { saved } = {}) {
   };
   const setColor = color => send({ type: 'set_color', rgba: typeof color === 'string' ? [...color.match(/[\da-f]{2}/gi).map(byte => parseInt(byte, 16) / 255), 1] : color });
   const path = (d, spacing = 7) => read(`(()=>{const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('d',${JSON.stringify(d)});const length=p.getTotalLength(),count=Math.max(2,Math.ceil(length/${spacing}));return Array.from({length:count+1},(_,i)=>{const p0=p.getPointAtLength(length*i/count);return[p0.x,p0.y]});})()`);
-  const stroke = async (points, { pressure = .65, taper = false, settleEvery = 10 } = {}) => {
+  const stroke = async (points, { pressure = .65, taper = false, tiltX = 0, tiltY = 0, settleEvery = 10 } = {}) => {
     const camera = await read('layerApp.state().camera');
     assert.equal(camera.rotation, 0); assert.deepEqual(camera.flipped, [false, false]);
     const ratio = camera.viewport[0] / await read('innerWidth');
@@ -102,8 +102,10 @@ export async function editor(b, { saved } = {}) {
       const t = i / (points.length - 1), [x, y] = points[i];
       const position = { x: (camera.translation[0] + x * camera.zoom) / ratio, y: (camera.translation[1] + y * camera.zoom) / ratio };
       assert.ok(position.x >= 0 && position.x < 1920 && position.y >= 0 && position.y < 1080, `Point inside viewport: ${JSON.stringify(position)}`);
+      const value = typeof pressure === 'function' ? pressure(t, i) : Array.isArray(pressure) ? pressure[Math.min(i, pressure.length - 1)] : pressure;
+      const tilt = value => typeof value === 'function' ? value(t, i) : value;
       await b.call('Input.dispatchMouseEvent', { type: i === 0 ? 'mousePressed' : i === points.length - 1 ? 'mouseReleased' : 'mouseMoved', ...position,
-        button: 'left', buttons: i === points.length - 1 ? 0 : 1, clickCount: i === 0 ? 1 : 0, pointerType: 'pen', force: i === points.length - 1 ? 0 : taper ? .08 + pressure * Math.sin(Math.PI * t) ** .7 : pressure });
+        button: 'left', buttons: i === points.length - 1 ? 0 : 1, clickCount: i === 0 ? 1 : 0, pointerType: 'pen', tiltX: tilt(tiltX), tiltY: tilt(tiltY), force: i === points.length - 1 ? 0 : taper ? .08 + value * Math.sin(Math.PI * t) ** .7 : value });
       if (i % settleEvery === 0) await b.settle();
     }
     await b.settle();
@@ -145,12 +147,33 @@ export async function editor(b, { saved } = {}) {
     await open(name, options);
     assert.equal(await read('layerApp.state().document_file.location?.name'), name, `Opened project: ${name}`);
   };
-  const newDocument = async (width, height) => {
+  const configureNewDocument = async (width, height, { space = 'Srgb', depth = 'U8', resolution = 300, paper = 'drawing_paper', name } = {}) => {
+    await wait('!!document.querySelector("#new-drawing-dialog[open]") && !!layerApp.state().new_drawing');
+    await b.evaluate(`(()=>{
+      const view=()=>layerApp.state().new_drawing,dialog=()=>document.querySelector('#new-drawing-dialog[open]');
+      const choose=(id,key,value)=>{const index=view()[key].findIndex(c=>c.value===value||c.label===value);if(index<0)throw Error('Missing New drawing choice '+key+': '+value);const n=document.getElementById(id);n.value=String(index);n.dispatchEvent(new Event('change',{bubbles:true}));};
+      const type=(selector,value)=>{const n=dialog().querySelector(selector);n.focus();n.value=String(value);n.dispatchEvent(new Event('input',{bubbles:true}));n.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',bubbles:true}));};
+      const press=selector=>{const n=dialog().querySelector(selector);if(!n||n.disabled)throw Error('New drawing control unavailable: '+selector);n.click();};
+      choose('new-drawing-unit','units','px');
+      if(view().linked)press('#new-drawing-link');
+      type('#new-drawing-width input',${width});type('#new-drawing-height input',${height});
+      type('#new-drawing-resolution-field input',${resolution});
+      choose('new-drawing-space','spaces',${JSON.stringify(space)});choose('new-drawing-depth','depths',${JSON.stringify(depth)});
+      press('#new-drawing-texture');
+      const paper=view().drawer.tiles.findIndex(t=>t.id===${JSON.stringify(paper)});if(paper<0)throw Error('Missing paper');
+      press('[data-new-drawing-paper="'+paper+'"]');press('#new-drawing-paper-use');
+      press('#new-drawing-paper-color');press('#new-drawing-paper-color-tiles [data-new-drawing-paper-color="0"]');press('#new-drawing-color-use');
+      ${name ? `const field=dialog().querySelector('#new-drawing-name');field.value=${JSON.stringify(name)};field.dispatchEvent(new Event('input',{bubbles:true}));` : ''}
+    })()`);
+    await b.settle();
+    assert.deepEqual(await read('layerApp.state().new_drawing.values.slice(0,2)'), [width, height], 'New drawing dimensions match the capture');
+  };
+  const newDocument = async (width, height, options) => {
     if (await read('layerApp.state().document_file.modified')) await save('_capture-scratch.capy');
     const before = (await drawings()).selected;
     await invoke('new_document');
-    await wait('!!document.querySelector(".document-dialog input.number-entry")');
-    await b.evaluate(`(()=>{const d=document.querySelector('.document-dialog');for(const[label,value]of[['Width (px)',${width}],['Height (px)',${height}]]){const entry=d.querySelector('input.number-entry[aria-label="'+label+'"]');entry.closest('.number-control').querySelector('.number-value').click();entry.value=String(value);entry.dispatchEvent(new Event('input',{bubbles:true}));entry.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',bubbles:true}));}[...d.querySelectorAll('button')].find(b=>b.textContent==='Create').click();})()`);
+    await configureNewDocument(width, height, options);
+    await click('#new-drawing-create');
     await wait(`Number(layerApp.app.document_tabs(0).selected)!==${before} && !layerApp.state().document_file.busy && layerApp.state().tabs[0].width===${width}`);
     await closeOtherDrawings();
     await wait('layerApp.app.brush_ready()'); await invoke('fit_canvas');
@@ -164,5 +187,5 @@ export async function editor(b, { saved } = {}) {
     }
     await b.settle(); await invoke('fit_canvas');
   };
-  return { b, read, idle, canvas, send, invoke, layer, wait, click, ready, active, select, add, visible, show, brush, setColor, path, stroke, draw, lasso, exportDialog, save, provide, drawings, closeOtherDrawings, selectDrawing, frame, open, load, newDocument, workspace };
+  return { b, read, idle, canvas, send, invoke, layer, wait, click, ready, active, select, add, visible, show, brush, setColor, path, stroke, draw, lasso, exportDialog, save, provide, drawings, closeOtherDrawings, selectDrawing, frame, open, load, configureNewDocument, newDocument, workspace };
 }

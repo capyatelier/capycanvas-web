@@ -54,10 +54,7 @@ Die Einstellungen enthalten keine Einstellung für die Verrechnung.
 
 ## Profil zuweisen
 
-Wählen Sie **Bearbeiten > Profil zuweisen…**, um die RGB-Werte der Zeichnung zu
-behalten und in einem anderen Arbeitsfarbraum zu interpretieren. Wählen Sie den
-Farbraum unter **Farbraum**, wo Adobe RGB (1998) als **Adobe RGB** aufgeführt ist.
-Fotoebenen behalten das Quellprofil ihres [Originalfotos](/de/docs/layers/types/).
+Wählen Sie **Bearbeiten > Profil zuweisen…**, um die RGB-Werte der Zeichnung beizubehalten und in einem anderen Arbeitsfarbraum zu lesen. Wählen Sie den Farbraum unter **Farbraum**, wo Adobe RGB (1998) als **Adobe RGB** aufgeführt ist. Objektebenen behalten das Quellprofil ihres [Originalfotos](/de/docs/layers/types/).
 
 ## Farbraum konvertieren
 

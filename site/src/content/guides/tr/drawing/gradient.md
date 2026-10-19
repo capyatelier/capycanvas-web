@@ -100,8 +100,7 @@ Seçili durağı geçerli renge ayarlar.
 
 ## Opaklık
 
-**Opaklık** gradyanın gücünü belirler ve geçerli fırçanın **Opaklık** değeriyle
-aynıdır. Eskiz'de sol kenardaki opaklık kaydırıcısını kullanın.
+**Opaklık**, gradyanın gücünü belirler ve geçerli fırçanın **Opaklık** değeriyle aynıdır. Eskiz alanında sol kenardaki **Güç kaydırıcısı** denetimini kullanın.
 
 ## Gradyan dolgusu katmanları
 

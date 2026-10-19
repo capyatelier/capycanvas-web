@@ -78,7 +78,7 @@ gì và một thông báo đề nghị đánh dấu lớp bên dưới.
 Tô đầy và Khoanh và tô dùng chung các thiết lập bên dưới. **Tự động chọn** và
 **Chọn theo màu** dùng cùng giá trị cho mọi thiết lập trừ **Độ đục**. Để đặt lại
 một thiết lập, nhấp đúp vào nhãn của thiết lập đó trên thanh Tùy chọn công cụ
-([Kích thước, độ đục và lượng màu ra](/vi/docs/brushes/basics/)).
+([Kích thước, độ mạnh và độ đục](/vi/docs/brushes/basics/)).
 
 ### Dung sai
 
@@ -100,8 +100,7 @@ Làm mịn các cạnh răng cưa của vùng tô. Ở 0%, vùng tô giữ cạn
 
 ### Độ đục
 
-Đặt cường độ của màu tô. Đổi giá trị này sẽ đổi **Độ đục** của cọ hiện tại, và
-ngược lại. Trong Phác thảo, dùng thanh trượt độ đục trên thanh ở cạnh trái.
+Đặt cường độ tô. Đổi giá trị này sẽ đổi **Độ đục** của cọ hiện tại và ngược lại. Trong Phác thảo, dùng **Thanh trượt cường độ** trên thanh ở cạnh trái.
 
 ## Tô đầy vùng chọn
 

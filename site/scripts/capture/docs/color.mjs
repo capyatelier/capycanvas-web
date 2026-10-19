@@ -1,3 +1,4 @@
+import assert from 'node:assert/strict';
 import { settleLayout } from '../shoot.mjs';
 const teal = [.2, .72, .58, 1];
 const recent = ['#c8553d', '#f2a541', '#3d7ab8', '#6a4c93', '#e76f51', '#2a9d8f'];
@@ -14,17 +15,7 @@ export default async function color({ e, b, shoot }) {
     await b.settle();
   };
   const paintColor = async rgba => { await e.send({ type: 'set_color', rgba }); await e.send({ type: 'color', action: { op: 'select', slot: 'foreground' } }); };
-  const create = async fields => {
-    if (await e.read('layerApp.state().document_file.modified')) await e.save('_capture-scratch.capy');
-    const before = await e.read('Number(layerApp.app.document_tabs(0).selected)');
-    await e.invoke('new_document');
-    await e.wait(`!!document.querySelector('dialog[open] [data-document-field="depth"]')`);
-    await b.evaluate(`(()=>{for(const [id,value] of ${JSON.stringify(Object.entries(fields))}){const field=document.querySelector('dialog[open] [data-document-field="'+id+'"]');field.value=value;field.dispatchEvent(new Event('change'));}})()`);
-    await e.click('dialog[open] [data-document-action="create"]');
-    await e.wait(`Number(layerApp.app.document_tabs(0).selected)!==${before} && !layerApp.state().document_file.busy && !document.querySelector('dialog[open]')`);
-    await e.closeOtherDrawings();
-    await e.wait('layerApp.app.brush_ready()'); await e.invoke('fit_canvas');
-  };
+  const create = fields => e.newDocument(1200, 1200, fields);
   const openEditor = async () => {
     await e.wait(`!document.querySelector('${dialog}')`);
     await b.evaluate(`[...document.querySelectorAll('button[aria-label="Edit Color"]')].find(b=>b.getBoundingClientRect().width>0).click();void 0`);
@@ -71,7 +62,6 @@ export default async function color({ e, b, shoot }) {
       { selector: `${panel} [data-color-slot="foreground"], ${panel} [data-color-slot="background"]`, union: true, badge: 'above' },
       { selector: `${panel} .color-swap`, badge: 'below' },
       { selector: `${panel} [data-color-slot="transparent"]`, badge: 'above' },
-      { selector: `${panel} [data-quick-color]`, union: true, badge: 'left' },
     ],
   });
 
@@ -151,6 +141,25 @@ export default async function color({ e, b, shoot }) {
   await shoot('color/eyedropper-settings', { target: '[data-control="tool_settings"]', variant: () => steady('[data-control="tool_settings"]') });
   await escape();
   await e.wait(`!layerApp.state().layer_tools.tool.startsWith('pick_')`);
+
+  await e.invoke('brush');
+  await shoot('color/eyedropper-touch', {
+    target: async () => ({ rect: await e.read(`(()=>{const p=layerApp.state().color_picker,c=layerApp.state().camera,r=c.viewport[0]/innerWidth;const a=p.sample_point.map(v=>v/r),z=p.loupe_point.map(v=>v/r);const left=Math.min(a[0],z[0])-76,top=Math.min(a[1],z[1])-76;return[left,top,Math.abs(a[0]-z[0])+152,Math.abs(a[1]-z[1])+152]})()`) }),
+    pad: 0,
+    variant: async () => {
+      // Hold one finger as an artist does. The app's own hold recognizer
+      // activates the picker; wait for its actual sampled color and loupe.
+      if (await e.read(`layerApp.state().layer_tools.tool.startsWith('pick_')`)) await escape();
+      await b.call('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ id: 31, ...hover }] });
+      await e.wait('!!layerApp.state().color_picker.preview && layerApp.state().color_picker.loupe_point[1]<layerApp.state().color_picker.sample_point[1]-30');
+      assert.ok(await e.read('layerApp.state().color_picker.preview.rgba[0]>.8'), 'Touch samples the paint under the finger');
+    },
+    release: async () => {
+      await b.call('Input.dispatchTouchEvent', { type: 'touchCancel', touchPoints: [] });
+      if (await e.read(`layerApp.state().layer_tools.tool.startsWith('pick_')`)) await escape();
+      await e.wait(`!layerApp.state().layer_tools.tool.startsWith('pick_')`);
+    },
+  });
 
   await create({ depth: 'F16' });
   await e.wait('layerApp.app.color_panel().hdr===true');

@@ -4,7 +4,7 @@ description: "Giai đoạn 2 của hướng dẫn chỉnh sửa ảnh: xóa bụ
 related: ["retouch/clone-heal", "layers/settings", "layers/working"]
 ---
 
-Giai đoạn này tạo lớp *Retouch* che bụi và một vết nhòe trong ảnh. Lớp ảnh không
+Giai đoạn này tạo lớp *Retouch* che bụi và một vết nhòe trong ảnh. Lớp Đối tượng không
 thay đổi.
 
 ## 1. Thêm lớp chỉnh sửa ảnh
@@ -12,7 +12,7 @@ thay đổi.
 1. Chọn **Lớp mới** ở cuối bảng Lớp và đổi tên lớp mới thành *Retouch*.
 2. Chọn **Lớp > Thiết lập lớp > Dùng lớp bên dưới làm tham chiếu** ([Thiết lập lớp](/vi/docs/layers/settings/)).
 
-Lớp ảnh trở thành lớp tham chiếu, và biểu tượng ngọn hải đăng xuất hiện cạnh biểu
+Lớp Đối tượng trở thành lớp tham chiếu, và biểu tượng ngọn hải đăng xuất hiện cạnh biểu
 tượng mắt trên hàng của lớp. Theo mặc định, các công cụ phục hồi sao chép từ các
 lớp tham chiếu và vẽ lên *Retouch*.
 

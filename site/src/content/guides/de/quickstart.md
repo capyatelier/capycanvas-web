@@ -1,7 +1,7 @@
 ---
 title: "Schnellstart"
 description: "{appName} öffnen, auf der ersten leeren Zeichnung zeichnen, sie als .capy-Datei speichern und ein PNG exportieren."
-related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
+related: ["start/workspaces", "start/device-support", "files/new", "files/open-save", "files/export"]
 ---
 
 ## {appName} öffnen
@@ -11,15 +11,7 @@ Führen Sie eine der folgenden Aktionen aus:
 - Öffnen Sie den Web-Editor unter [editor.capycanvas.art](https://editor.capycanvas.art/).
 - Laden Sie auf der Seite [Herunterladen](/de/download/) die Desktop-App oder die Beta für iPad oder Android herunter, oder folgen Sie dort der Anleitung, um den Web-Editor als App zu installieren.
 
-Der Web-Editor läuft in diesen Browsern:
-
-| System | Browser |
-| --- | --- |
-| Windows | Chrome, Edge, Firefox 141 oder neuer |
-| macOS | Chrome, Edge, Safari 26 oder neuer, Firefox 147 oder neuer (Apple Silicon) |
-| Linux (Wayland) | Chrome, Edge |
-| iPadOS 26 oder neuer | Safari |
-| Android 12 oder neuer | Chrome |
+Siehe [Geräteunterstützung](/de/docs/start/device-support/) für die getrennten Anforderungen nativer Apps und Webbrowser.
 
 Nach dem ersten Besuch öffnet sich der Web-Editor auch ohne Internetverbindung.
 
@@ -27,11 +19,7 @@ Nach dem ersten Besuch öffnet sich der Web-Editor auch ohne Internetverbindung.
 
 ![Das Bedienfeld Ebenen einer neuen Zeichnung mit Aktuelle Tinte über Papier.](shot:files/new-layers)
 
-Beim ersten Start zeigt {appName} den Arbeitsbereich [Malen](/de/docs/start/workspaces/)
-mit einer leeren Zeichnung, und in der Titelleiste steht „Unbenannt · 2048 × 1536“.
-Ausgewählt ist **Aktuelle Tinte**, eine leere Malebene über **Papier**, einer weißen
-Füllebene. Das Werkzeug **Feder** ist aktiv, mit dem Pinsel **G-Feder** und einer
-fast schwarzen Farbe.
+Beim ersten Öffnen zeigt {appName} den Arbeitsbereich [Malen](/de/docs/start/workspaces/) mit einer leeren A4-Zeichnung im Querformat bei 300 ppi. **Aktuelle Tinte**, eine leere Malebene, ist über **Papier** ausgewählt. Das Werkzeug **Feder** ist mit dem Pinsel **G-Feder** und einer fast schwarzen Farbe aktiv.
 
 Bei späteren Starts öffnet {appName} den zuletzt verwendeten Arbeitsbereich und die
 Zeichnungen, die zuletzt geöffnet waren.
@@ -62,8 +50,7 @@ in der [Befehlssuche](/de/docs/start/command-search/).
 
 ## Eine weitere Zeichnung beginnen
 
-Wählen Sie **Datei > Neu…** und im Dialog [Neue Zeichnung](/de/docs/files/new/)
-**Erstellen** aus. Die neue Zeichnung öffnet sich in einer eigenen Registerkarte neben der ersten.
+Wählen Sie **Datei > Neu…** und **Erstellen** im Dialog [Neue Zeichnung](/de/docs/files/new/). Wählen Sie Größe, Auflösung, Papier und Farbeinstellungen und dann **Erstellen**. Die neue Zeichnung öffnet sich in einem eigenen Reiter neben der ersten.
 
 ## Die Zeichnung speichern
 

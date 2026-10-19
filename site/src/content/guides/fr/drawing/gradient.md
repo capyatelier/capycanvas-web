@@ -102,8 +102,7 @@ Applique la couleur active au point sélectionné.
 
 ## Opacité
 
-**Opacité** définit la force du dégradé. C’est la même valeur que l’**Opacité**
-du pinceau actif. Dans Croquis, utilisez le curseur d’opacité sur le bord gauche.
+**Opacité** définit l’intensité du dégradé et partage la valeur de l’**Opacité** du pinceau actif. Dans Croquis, utilisez **Curseur d’intensité** sur le bord gauche.
 
 ## Calques Remplissage dégradé
 

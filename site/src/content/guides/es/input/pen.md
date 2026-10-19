@@ -1,23 +1,16 @@
 ---
 title: "Lápiz"
-description: "Los ajustes del lápiz en Preferencias y los gestos de tocar dos veces y apretar el Apple Pencil."
-related: ["input/touch", "input/keyboard", "preferences", "brushes/basics"]
+description: "Los ajustes del lápiz en Preferencias y el doble toque y el gesto de apretar del Apple Pencil."
+related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-Los ajustes del lápiz están en la página **Lápiz y entrada** de **Editar >
-Preferencias**.
+Los ajustes del lápiz están en la página **Lápiz y entrada** de **Editar > Preferencias**.
 
 ![La página Lápiz y entrada de Preferencias.](shot:pen/pen-and-input)
 
-## Respuesta a la presión
+## Presión del lápiz
 
-Puedes cambiar cómo responde el lápiz a la presión suave con **Respuesta a la
-presión**, en **Respuesta del lápiz**. Los valores más bajos intensifican la presión
-suave, y los más altos requieren más fuerza. El rango va de 0.25 × a 4.00 ×. Con el
-valor predeterminado, 1.00 ×, la presión del lápiz se usa sin cambios.
-
-El ajuste se aplica a todos los pinceles y herramientas, incluidos **Pintar
-selección** y **Máscara rápida**. Los trazos que ya dibujaste no cambian.
+Selecciona **Ajustar…** junto a **Presión del lápiz** para dar forma a la curva de presión y probarla en el lienzo actual. La curva se aplica a todos los pinceles y herramientas sensibles a la presión; los trazos ya dibujados no cambian. Consulta [Presión del lápiz](/es/docs/input/pen-pressure/).
 
 ## Predicción de trazos
 

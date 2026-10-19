@@ -1,7 +1,7 @@
 ---
 title: "Mulai cepat"
 description: "Membuka {appName}, menggambar di gambar kosong pertama, menyimpannya sebagai berkas .capy, dan mengekspor PNG."
-related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
+related: ["start/workspaces", "start/device-support", "files/new", "files/open-save", "files/export"]
 ---
 
 ## Membuka {appName}
@@ -11,15 +11,7 @@ Lakukan salah satu langkah berikut:
 - Buka editor web di [editor.capycanvas.art](https://editor.capycanvas.art/).
 - Dapatkan aplikasi desktop, versi beta iPad atau Android, atau langkah-langkah memasang editor web sebagai aplikasi di halaman [Unduh](/id/download/).
 
-Editor web berjalan di peramban berikut:
-
-| Sistem | Peramban |
-| --- | --- |
-| Windows | Chrome, Edge, Firefox 141 atau yang lebih baru |
-| macOS | Chrome, Edge, Safari 26 atau yang lebih baru, Firefox 147 atau yang lebih baru (Apple silicon) |
-| Linux (Wayland) | Chrome, Edge |
-| iPadOS 26 atau yang lebih baru | Safari |
-| Android 12 atau yang lebih baru | Chrome |
+Lihat [Dukungan perangkat](/id/docs/start/device-support/) untuk persyaratan terpisah aplikasi native dan browser web.
 
 Setelah kunjungan pertama, editor web juga terbuka tanpa koneksi internet.
 
@@ -27,10 +19,7 @@ Setelah kunjungan pertama, editor web juga terbuka tanpa koneksi internet.
 
 ![Panel Lapisan pada gambar baru, dengan Tinta saat ini di atas Kertas.](shot:files/new-layers)
 
-Saat pertama kali dibuka, {appName} menampilkan ruang kerja [Lukis](/id/docs/start/workspaces/)
-dengan gambar kosong, dan bilah judul bertuliskan "Tanpa judul · 2048 × 1536".
-**Tinta saat ini**, lapisan lukis yang kosong, terpilih di atas **Kertas**, lapisan
-isian putih. Alat **Pena** aktif dengan kuas **Pena G** dan warna yang hampir hitam.
+Saat pertama kali Anda membuka {appName}, ruang kerja [Lukis](/id/docs/start/workspaces/) menampilkan gambar kosong A4 lanskap pada 300 ppi. **Tinta saat ini**, lapisan cat kosong, terpilih di atas **Kertas**. Alat **Pena** aktif dengan kuas **Pena G** dan warna hampir hitam.
 
 Pada pembukaan berikutnya, {appName} terbuka dengan ruang kerja yang terakhir Anda
 gunakan dan gambar yang masih terbuka saat itu.
@@ -59,8 +48,7 @@ memiliki pintasan di editor web. Pilih perintah itu dari menu atau dari
 
 ## Memulai gambar lain
 
-Pilih **Berkas > Baru…** lalu pilih **Buat** di dialog [Gambar baru](/id/docs/files/new/).
-Gambar baru terbuka di tabnya sendiri, di samping gambar pertama.
+Pilih **Berkas > Baru…** dan pilih **Buat** dalam dialog [Gambar baru](/id/docs/files/new/). Pilih ukuran, resolusi, Kertas, dan pengaturan warna, lalu pilih **Buat**. Gambar baru terbuka di tab tersendiri di sebelah gambar pertama.
 
 ## Menyimpan gambar
 

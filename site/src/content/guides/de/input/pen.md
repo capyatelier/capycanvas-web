@@ -1,23 +1,16 @@
 ---
 title: "Stift"
-description: "Die Stifteinstellungen in den Einstellungen sowie Doppeltippen und Drücken beim Apple Pencil."
-related: ["input/touch", "input/keyboard", "preferences", "brushes/basics"]
+description: "Die Stifteinstellungen in den Voreinstellungen sowie Doppeltippen und Drücken mit dem Apple Pencil."
+related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-Die Stifteinstellungen stehen auf der Seite **Stift und Eingabe** unter **Bearbeiten >
-Einstellungen**.
+Die Stifteinstellungen befinden sich auf der Seite **Stift und Eingabe** unter **Bearbeiten > Einstellungen**.
 
 ![Die Seite Stift und Eingabe der Einstellungen.](shot:pen/pen-and-input)
 
-## Druckreaktion
+## Stiftdruck
 
-Mit **Druckreaktion** unter **Stiftreaktion** können Sie ändern, wie der Stift auf
-leichten Druck reagiert. Niedrigere Werte verstärken leichten Druck, höhere Werte
-erfordern mehr Kraft. Der Bereich reicht von 0.25 × bis 4.00 ×. Beim Standardwert
-1.00 × wird der Druck des Stifts unverändert verwendet.
-
-Die Einstellung gilt für alle Pinsel und Werkzeuge, auch für **Auswahl malen** und
-**Schnellmaske**. Bereits gezeichnete Striche ändern sich nicht.
+Wählen Sie **Anpassen…** neben **Stiftdruck**, um die Druckkurve zu formen und auf der aktuellen Leinwand zu testen. Die Kurve gilt für alle druckempfindlichen Pinsel und Werkzeuge; bereits gezeichnete Striche ändern sich nicht. Siehe [Stiftdruck](/de/docs/input/pen-pressure/).
 
 ## Strichvorhersage
 

@@ -14,7 +14,7 @@ Thực hiện một trong các cách sau:
 - Nhấn **I** (**O** trong sơ đồ phím Kiểu GIMP).
 - Chọn **Ống hút màu** trong tìm lệnh.
 - Trong Vẽ và Ảnh, chọn **Ống hút màu** trên Thanh công cụ vẽ.
-- Trong Phác thảo, chọn **Bộ chọn màu** trên thanh ở cạnh trái, giữa thanh trượt kích thước và thanh trượt độ đục.
+- Trong Phác thảo, chọn **Bộ chọn màu** trên thanh ở cạnh trái, giữa **Thanh trượt kích thước cọ** và **Thanh trượt cường độ**.
 
 Để dừng mà không lấy màu, nhấn **I** hoặc chọn lại cùng nút đó, nhấn **Escape**, hoặc
 chọn công cụ hay cọ khác. Chạm ngón tay mà không giữ cũng dừng Ống hút màu.
@@ -30,7 +30,7 @@ lấy màu.
 | Bút | Rê bút, hoặc nhấn bút xuống | Nhấc bút |
 | Ngón tay | Chạm | Nhấc ngón tay |
 
-Với ngón tay, điểm lấy mẫu nằm phía trên đầu ngón tay.
+Với ngón tay, kính lúp hiện phía trên đầu ngón tay còn điểm lấy mẫu vẫn nằm dưới đầu ngón tay.
 
 Pixel trong suốt không lấy được màu nào, và màu lấy được luôn đục. Màu được lấy trong
 không gian màu của bản vẽ. Trong bản vẽ HDR, màu lấy được có thể sáng hơn màu trắng
@@ -64,6 +64,8 @@ Chọn **Kiểu** trên thanh Tùy chọn công cụ trong lúc lấy màu (ở 
 - **Ống hút màu** hiện con trỏ hình ống hút với đầu ống đặt tại điểm lấy mẫu.
 
 ![Kính lúp Bộ chọn màu trên một nét vẽ màu đỏ, với màu lấy mẫu và màu hiện tại trên vòng.](shot:color/eyedropper-loupe)
+
+![Kính lúp Bộ chọn màu phía trên ngón tay với điểm lấy mẫu dưới điểm tiếp xúc.](shot:color/eyedropper-touch)
 
 Thao tác chạm luôn dùng kính lúp. Chọn **Bộ chọn màu** trong Phác thảo sẽ đặt
 **Kiểu** thành **Bộ chọn màu**. Một dấu nhỏ hình các lớp xuất hiện khi **Nguồn** là

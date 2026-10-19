@@ -16,9 +16,9 @@ trabalho usada.
 Esboço não tem painéis encaixados: os botões de ferramentas e painéis na barra de título abrem gavetas.
 
 1. **Capy (modo Zen)**, **Menu principal**, **Painel Filtros**, **Selecionar** e **Transformar**.
-2. O seletor de áreas de trabalho.
-3. **Pincel**, **Esculpir**, **Borracha**, **Painel Camadas** e **Cor do pincel**. O editor web acrescenta **Tela cheia**.
-4. **Controle deslizante de tamanho do pincel**, **Conta-gotas**, **Controle deslizante de opacidade do pincel**, **Desfazer** e **Refazer**.
+2. O seletor de espaços de trabalho.
+3. **Pincel**, **Esculpir**, **Borracha**, **Painel Camadas** e **Cor do pincel**. O editor web adiciona **Tela cheia**.
+4. **Controle deslizante de tamanho do pincel**, **Conta-gotas**, **Controle de intensidade**, **Desfazer** e **Refazer**.
 
 | Botão | Painéis na gaveta |
 | --- | --- |

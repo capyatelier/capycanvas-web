@@ -1,77 +1,42 @@
 ---
 title: "Copy and paste"
-description: "Copying pixels and pasting them as new layers, within {appName} and between apps."
-related: ["selections/working", "transform/move-transform", "layers/working", "files/open-save"]
+description: "Copying pixels and pasting as a layer, mask or new drawing."
+related: ["selections/working", "transform/move-transform", "layers/types", "files/open-save"]
 ---
 
-You can copy pixels from a layer or from the visible image, and paste them as a
-new layer. The commands are in the **Edit** menu and in command search.
+Clipboard commands are in the **Edit** menu and command search.
 
-![The clipboard commands in the Edit menu.](shot:transform/clipboard-edit-menu)
+![Paste Special in the Edit menu.](shot:transform/clipboard-edit-menu)
 
-| Command | Key |
-| --- | --- |
-| **Cut** | **Ctrl+X** |
-| **Copy** | **Ctrl+C** |
-| **Copy Merged** | **Ctrl+Shift+C** |
-| **Paste** | **Ctrl+V** |
-| **Paste in Place** | **Ctrl+Shift+V** |
-| **Paste Into** | |
+## Copy and Cut
 
-**Copy** on the [selection bar](/docs/selections/working/) holds **Copy**,
-**Copy Merged** and **Cut**.
+**Copy** (**Ctrl+C**) copies the selected layer's pixels inside the selection, without its opacity, mask or attached filters. With no selection, it copies the layer within the canvas.
 
-## Copy
+**Cut** (**Ctrl+X**) copies the same pixels and erases them. It is unavailable on a locked layer or one with **Alpha lock**.
 
-Copies the active layer's own pixels inside the selection, without the layer's
-opacity, mask and attached filters. With no selection, it copies the whole
-layer within the canvas.
-
-## Cut
-
-Copies like **Copy**, then erases the selected pixels from the layer. You
-can't cut from a layer with **Alpha lock** on.
-
-## Copy Merged
-
-Copies the visible image inside the selection, as it appears in an export.
-
-## What you can't copy
-
-Groups, filter layers and selection layers have no pixels of their own. To
-copy from a group, select a layer inside it. You can't copy artwork in Quick
-Mask, and **Copy** and **Cut** are unavailable while you edit a mask.
-
-A large copy shows a progress note with **Cancel**.
+**Copy Merged** (**Ctrl+Shift+C**) copies the visible result inside the selection, including Paper lighting. Groups, filter layers and selection layers have no pixels of their own.
 
 ## Paste
 
-Adds the clipboard as a new active layer.
+**Paste** (**Ctrl+V**) adds clipboard artwork as a new layer and opens transform handles when placement is needed. An image from another app becomes an [Object layer](/docs/layers/types/), preserving its source until you rasterize it.
 
-- A copy from {appName} lands where it was copied from if that spot is in view, or in the center of the view otherwise.
-- An image from another app opens in the transform box. **Apply** places the image and **Cancel** discards the paste (see [Move and Transform](/docs/transform/move-transform/)).
+A copy made inside {appName} returns to its copied position when that position is visible. Otherwise it lands in the center of the view.
 
-## Paste in Place
+## Paste Special
 
-Adds the clipboard as a new layer where it was copied from, with no transform
-box. An image from another app lands in the center of the view at full size.
+Open **Edit > Paste Special** to choose a destination.
 
-## Paste Into
+- **Paste in Place** adds a layer at the copied position without opening transform handles.
+- **Paste Into** adds a layer with the active selection as its mask, then clears the selection.
+- **Paste mask** replaces or adds the selected layer's mask with the clipboard image.
+- **Paste as New Image** creates a new drawing from the clipboard.
 
-Works like **Paste in Place**, and gives the new layer a
-[mask](/docs/layers/masks/) that shows only the selection. The selection is
-then removed. **Paste Into** needs a selection.
+Commands that require a selection, editable layer or compatible clipboard image are dimmed.
 
-## Pasting between apps
+![The Paste Special choices for layers, masks and new drawings.](shot:transform/paste-special)
 
-Other apps receive a copy from {appName} as an 8-bit sRGB PNG image. Pasting
-back into {appName} uses the copy at its full bit depth while it is still on
-the clipboard.
+## Between apps
 
-A copy pasted into a drawing with other color settings becomes a
-[photo layer](/docs/layers/types/), converted from its own color profile.
+Other apps receive a copy from {appName} as an 8-bit sRGB PNG. While the internal copy remains on the clipboard, another {appName} drawing receives its original precision.
 
-While you type in a text field, the clipboard keys cut, copy and paste text.
-
-In the web editor, a pasted image can be up to 512 MiB. In a browser that
-can't paste images, choose **File > Import Image as Layer…** instead.
+In the web editor, a pasted image can be up to 512 MiB. If the browser cannot paste images, use **File > Import Image as Layer…**.

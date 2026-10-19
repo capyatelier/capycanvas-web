@@ -56,10 +56,7 @@ zeichnen.
 
 ## Linienbreite und Deckkraft
 
-**Linienbreite** und **Deckkraft** stehen im Bedienfeld **Werkzeug** und in der Leiste
-Werkzeugoptionen. Sie teilen ihre Werte mit **Pinselgröße** und **Deckkraft** des
-aktuellen Pinsels ([Größe, Deckkraft und Fluss](/de/docs/brushes/basics/)), und **[**
-und **]** ändern die Linienbreite.
+**Linienbreite** und **Deckkraft** befinden sich im Bedienfeld **Werkzeug** und in der Werkzeugoptionsleiste. Sie teilen ihre Werte mit **Pinselgröße** und **Deckkraft** des aktuellen Pinsels ([Größe, Stärke und Deckkraft](/de/docs/brushes/basics/)), und **[** und **]** ändern die Linienstärke.
 
 ### Linienbreite
 

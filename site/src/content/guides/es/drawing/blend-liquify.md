@@ -46,8 +46,7 @@ Cada modo es un ajuste preestablecido en **Conjunto de herramientas**:
 
 ![El panel Herramienta para Licuar cristales, con el grupo Licuar que muestra Intensidad y Distorsión.](shot:drawing/liquify-settings)
 
-**Intensidad**, **Distorsión** e **Inercia** están en el grupo **Licuar** del panel
-**Herramienta**. Licuar no tiene **Flujo**.
+**Intensidad**, **Distorsión** y **Inercia** están en el grupo **Licuar** del panel **Herramienta**. **Intensidad** establece cuánto mueve los píxeles el trazo.
 
 ### Intensidad
 

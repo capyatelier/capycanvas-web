@@ -12,9 +12,9 @@ zones recadrées**.
 
 Effectuez l’une des opérations suivantes :
 
-- Choisissez **Édition > Image > Recadrer**.
+- Choisissez **Image > Recadrer**.
 - Appuyez sur **C**.
-- Dans Photo, sélectionnez **Recadrer** dans la barre d’outils Outils.
+- Dans Photo, sélectionnez **Recadrer** dans la barre Outils.
 
 Un cadre muni de poignées apparaît autour de toute la toile, ou sous la forme du
 plus grand cadre au rapport choisi. La toile hors du cadre est assombrie, et la
@@ -112,15 +112,12 @@ Vous pouvez recadrer la toile sur les limites d’une sélection.
 
 Effectuez l’une des opérations suivantes :
 
-- Choisissez **Édition > Image > Recadrer la toile sur la sélection**.
-- Sélectionnez **Recadrer** dans la [barre de sélection](/fr/docs/selections/working/).
+- Choisissez **Image > Recadrer la toile sur la sélection**.
+- Sélectionnez **Recadrer** sur la [barre de sélection](/fr/docs/selections/working/).
 
 Les pixels situés hors des limites de la sélection restent masqués sur leurs
 calques. Vous ne pouvez pas recadrer sur une sélection inversée.
 
 ## Récupérer les pixels recadrés
 
-Choisissez **Édition > Image > Tout révéler** pour agrandir la toile jusqu’à ce
-qu’elle affiche les pixels de tous les calques, ou agrandissez la toile avec
-**Édition > Image > Taille de la toile…** (voir
-[Taille et rotation de l’image](/fr/docs/transform/image/)).
+Choisissez **Image > Tout révéler** pour agrandir la toile jusqu’à montrer les pixels de tous les calques, ou agrandissez-la avec **Image > Taille de la toile…** (voir [Taille et rotation de l’image](/fr/docs/transform/image/)).

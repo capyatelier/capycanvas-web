@@ -56,7 +56,7 @@ Choose the mode below the shapes in the **Tool Set** panel, or from
 
 **Line width** and **Opacity** are in the **Tool** panel and the Tool Options
 bar. They share their values with the current brush's **Brush size** and
-**Opacity** ([Size, opacity and flow](/docs/brushes/basics/)), and **[** and
+**Opacity** ([Size, strength and opacity](/docs/brushes/basics/)), and **[** and
 **]** change Line width.
 
 ### Line width

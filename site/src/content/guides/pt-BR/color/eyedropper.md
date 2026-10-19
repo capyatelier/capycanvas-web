@@ -11,10 +11,10 @@ ferramenta que você estava usando volta.
 
 Faça uma das seguintes ações:
 
-- Pressione **I** (**O** no mapa de atalhos Estilo GIMP).
+- Pressione **I** (**O** no mapa de teclas Estilo GIMP).
 - Escolha **Conta-gotas** na busca de comandos.
-- Em Pintura e Foto, selecione **Conta-gotas** na barra de ferramentas Ferramentas.
-- Em Esboço, selecione **Conta-gotas** na barra da borda esquerda, entre os controles deslizantes de tamanho e de opacidade.
+- Em Pintura e Foto, selecione **Conta-gotas** na barra Ferramentas.
+- Em Esboço, selecione **Conta-gotas** na barra da borda esquerda, entre **Controle deslizante de tamanho do pincel** e **Controle de intensidade**.
 
 Para parar sem capturar, pressione **I** ou selecione de novo o mesmo botão,
 pressione **Escape** ou escolha outra ferramenta ou outro pincel. Um toque com o
@@ -31,7 +31,7 @@ quando você captura.
 | Caneta | Passe a caneta sobre a tela ou encoste-a | Levante a caneta |
 | Dedo | Toque | Levante o dedo |
 
-Com o dedo, o ponto de amostra fica acima da ponta do dedo.
+Com um dedo, a lupa aparece acima da ponta do dedo enquanto o ponto de amostragem permanece embaixo da ponta do dedo.
 
 Pixels transparentes não capturam nada, e as cores capturadas são sempre opacas.
 As capturas são feitas no espaço de cores do desenho. Em um desenho HDR, uma
@@ -68,6 +68,8 @@ janela, em Foto):
 - **Conta-gotas** com pipeta mostra um cursor em forma de pipeta, com a ponta no ponto amostrado.
 
 ![A lupa do Conta-gotas sobre um traço vermelho, com as cores amostrada e atual no anel.](shot:color/eyedropper-loupe)
+
+![A lupa do seletor de cores acima de um dedo, com o ponto de amostragem sob o contato.](shot:color/eyedropper-touch)
 
 O toque sempre usa a lupa. Selecionar **Conta-gotas** em Esboço define **Estilo**
 como a lupa (**Conta-gotas**). Uma pequena marca de camadas aparece quando

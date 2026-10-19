@@ -21,7 +21,7 @@ Mọi thay đổi thiết lập cọ được lưu ngay vào cọ đặt sẵn t
 
 Bạn có thể đưa một thiết lập về giá trị có sẵn của cọ. Nhấp đúp (hoặc chạm đúp) vào
 nhãn hoặc biểu tượng của thiết lập trên thanh Tùy chọn công cụ
-([Kích thước, độ đục và lượng màu ra](/vi/docs/brushes/basics/)).
+([Kích thước, độ mạnh và độ đục](/vi/docs/brushes/basics/)).
 
 Bảng **Công cụ** không có nút đặt lại. Để đặt lại **Hòa màu**, chọn
 **Hòa màu Oklab**, lựa chọn có sẵn của mọi cọ hòa màu.

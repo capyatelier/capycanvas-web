@@ -135,7 +135,4 @@ Lakukan salah satu langkah berikut:
 - Pilih **Impor Gambar sebagai Lapisan…** di bagian bawah panel Lapisan.
 - Seret berkas gambar ke kanvas atau ke sebuah baris di panel Lapisan.
 
-Setiap berkas menjadi [lapisan foto](/id/docs/layers/types/) di atas lapisan aktif,
-atau di atas, di bawah, atau di dalam baris tempat Anda menjatuhkannya. Gambar
-diletakkan di tengah dan diperkecil agar muat di kanvas, dengan
-[pegangan penempatan](/id/docs/transform/move-transform/).
+Setiap file menjadi [lapisan Objek](/id/docs/layers/types/) di atas lapisan aktif, atau di atas, di bawah, atau di dalam baris tempat Anda menjatuhkannya. Gambar dipusatkan dan diperkecil agar muat di kanvas, dengan [handel penempatan](/id/docs/transform/move-transform/).

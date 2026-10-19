@@ -1,10 +1,12 @@
 ---
 title: "이미지 내보내기"
 description: "이미지 내보내기 대화 상자와 다시 내보내기로 그림을 병합한 이미지 사본 내보내기."
-related: ["files/open-save", "color-management/hdr", "color-management/color-spaces"]
+related: ["files/open-save", "layers/paper", "color-management/hdr", "color-management/color-spaces"]
 ---
 
 그림을 하나로 병합한 이미지 사본을 내보낼 수 있습니다. 내보내기는 `.capy` 그림을 바꾸지 않으며 저장으로 처리되지도 않습니다.
+
+기본 앱에서 내보내면 [종이 조명](/ko/docs/layers/paper/)이 포함됩니다. 웹에서 내보내면 현재는 포함되지 않습니다. 종이 질감이나 크기를 바꾼 직후 잠시 표시되는 요철 미리보기는 포함되지 않습니다.
 
 ## 이미지 내보내기
 
@@ -46,7 +48,7 @@ HDR PNG, HDR JPEG, HDR AVIF의 범위를 넘는 색을 잘라 냅니다. 이 형
 
 ### 출력 프로파일
 
-**sRGB**, **Display P3**, **Adobe RGB (1998)**, **ProPhoto RGB** 중에서 고르며, 자체 프로파일이 포함된 사진 레이어마다 “원본: *이름*” 항목이 추가됩니다.
+**sRGB**, **Display P3**, **Adobe RGB (1998)**, **ProPhoto RGB** 중에서 고르며, 자체 프로파일이 포함된 오브젝트 레이어마다 “원본: *이름*” 항목이 추가됩니다.
 
 ### 비트 심도
 

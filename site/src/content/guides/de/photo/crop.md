@@ -13,17 +13,13 @@ Wählen Sie **Datei > Öffnen…** oder drücken Sie **Strg+O**, und wählen Sie
 Foto aus ([Öffnen und Speichern](/de/docs/files/open-save/)). Das Foto öffnet
 sich in einer eigenen Zeichnungsregisterkarte.
 
-![Das Bedienfeld Ebenen mit der Fotoebene terrarium über einer ausgeblendeten Ebene Papier.](shot:photo/open-layers)
+![Das Ebenen-Bedienfeld mit der Terrarium-Objektebene.](shot:photo/open-layers)
 
-Die Zeichnung hat eine Ebene, die nach der Datei benannt ist, über einer
-ausgeblendeten Ebene **Papier**. Im Beispiel heißt die Ebene „terrarium“.
+Die Zeichnung enthält eine nach der Datei benannte Objektebene. Im Beispiel heißt die Ebene „terrarium“.
 
 ## 2. Seitenverhältnis wählen
 
-Wählen Sie **Bearbeiten > Bild > Zuschneiden**, wählen Sie in der Werkzeugleiste
-Werkzeuge **Zuschneiden** aus oder drücken Sie **C**
-([Zuschneiden](/de/docs/transform/crop/)). Über dem Foto erscheint ein Rahmen
-mit Griffen, und am unteren Rand der Leinwand die Zuschnittleiste.
+Wählen Sie **Bild > Zuschneiden**, wählen Sie **Zuschneiden** in der Werkzeugleiste Werkzeuge oder drücken Sie **C** ([Zuschneiden](/de/docs/transform/crop/)). Ein Rahmen mit Griffen erscheint über dem Foto, mit der Zuschneideleiste am unteren Rand der Leinwand.
 
 Wählen Sie in der Zuschnittleiste **Verhältnis** aus und wählen Sie **4:5**. Der
 Rahmen wird zum größten Rahmen in diesem Verhältnis, zentriert auf der

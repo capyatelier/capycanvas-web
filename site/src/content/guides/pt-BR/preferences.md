@@ -1,7 +1,7 @@
 ---
 title: "Preferências"
-description: "A caixa de diálogo Preferências e as configurações das páginas Aparência, Tela, Cor e Sobre."
-related: ["input/pen", "input/keyboard", "customize/zen", "color-management/color-spaces"]
+description: "O diálogo Preferências e os ajustes das páginas Aparência, Tela, Caneta e entrada, Cor e Sobre."
+related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
 Você pode alterar as configurações do aplicativo inteiro na caixa de diálogo
@@ -18,8 +18,7 @@ Faça uma das seguintes ações:
 - Em Pintura e Foto, selecione o botão de engrenagem na extremidade direita da barra de título.
 - Digite "Preferências" na [busca de comandos](/pt-BR/docs/start/command-search/).
 
-As Preferências abrem na página **Aparência**. **Ajuda > Atalhos de teclado** as
-abre em **Atalhos de teclado**, e **Ajuda > Sobre o {appName}**, em **Sobre**.
+Preferências abre em **Aparência**. Escolha **Editar > Atalhos de teclado** para os atalhos de teclado ou **Sobre o {appName}** no menu do aplicativo para Sobre.
 
 Com as Preferências abertas, os atalhos da tela, os botões da caneta e os toques
 com os dedos não fazem nada.
@@ -88,17 +87,22 @@ outras opções são **Azul** (o padrão no editor web e no iPad), **Verde azula
 Mantém o botão Capy na tela no [modo Zen](/pt-BR/docs/customize/zen/). Ativado por
 padrão.
 
-### Revelar painéis perto das bordas da tela
-
-Mostra os controles ocultos no modo Zen enquanto o ponteiro está perto de uma
-borda da tela com controles ocultos. Desativado por padrão.
-
 ### Ícone do botão
 
 Define a imagem do botão Capy: **Olhando para cima** (o padrão), **Olhando para
 frente**, **Tomando banho** ou **Dormindo**.
 
 ## Tela
+
+![Ajustes de navegação da tela.](shot:preferences/canvas-navigation)
+
+### Roda do mouse
+
+Escolha se a roda do mouse sem modificadores desloca a tela ou altera o zoom. Manter **Ctrl** pressionado usa a outra ação.
+
+### Girar com dois dedos
+
+Permite girar a visualização ao girar dois dedos. Desative para limitar os gestos de dois dedos ao deslocamento e ao zoom.
 
 ### Velocidade de deslocamento com rolagem
 

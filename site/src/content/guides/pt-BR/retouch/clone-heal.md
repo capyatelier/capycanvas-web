@@ -25,9 +25,7 @@ Faça uma das seguintes ações:
 **Pincel de correção** e **Pincel de correção pontual** não têm botão em
 Pintura.
 
-Cada ferramenta é um pincel, com **Tamanho do pincel**, **Opacidade**,
-**Fluxo** e as configurações de **Ponta** no painel Ferramenta (consulte
-[Tamanho, opacidade e fluxo](/pt-BR/docs/brushes/basics/)).
+Cada ferramenta é um pincel, com **Tamanho do pincel**, **Opacidade**, **Intensidade** e os ajustes de **Ponta** no painel Ferramenta (consulte [Tamanho, intensidade e opacidade](/pt-BR/docs/brushes/basics/)).
 
 ![O painel Ferramenta do Carimbo de clonagem, com as configurações do pincel e as configurações de origem.](shot:retouch/clone-tool-panel)
 

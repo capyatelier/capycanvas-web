@@ -1,7 +1,7 @@
 ---
 title: "Préférences"
-description: "La boîte de dialogue Préférences et les réglages de ses pages Apparence, Toile, Couleur et À propos."
-related: ["input/pen", "input/keyboard", "customize/zen", "color-management/color-spaces"]
+description: "La boîte de dialogue Préférences et les réglages de ses pages Apparence, Toile, Stylet et saisie, Couleur et À propos."
+related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
 Vous pouvez modifier les réglages de toute l’application dans la boîte de
@@ -19,9 +19,7 @@ Effectuez l’une des opérations suivantes :
 - Dans Peinture et Photo, sélectionnez le bouton en forme d’engrenage à l’extrémité droite de la barre de titre.
 - Tapez « Préférences » dans la [recherche de commandes](/fr/docs/start/command-search/).
 
-Les Préférences s’ouvrent sur la page **Apparence**.
-**Aide > Raccourcis clavier** les ouvre sur **Raccourcis clavier**, et
-**Aide > À propos de {appName}** sur **À propos**.
+Les Préférences s’ouvrent sur **Apparence**. Choisissez **Édition > Raccourcis clavier** pour les raccourcis clavier, ou **À propos de {appName}** dans le menu de l’application pour À propos.
 
 Tant que les Préférences sont ouvertes, les raccourcis de la toile, les boutons
 du stylet et les touchers à plusieurs doigts n’ont aucun effet.
@@ -92,17 +90,22 @@ web et sur iPad), **Bleu sarcelle**, **Vert**, **Jaune**, **Orange**, **Rouge**,
 Garde le bouton Capy à l’écran en [mode Zen](/fr/docs/customize/zen/). Activé par
 défaut.
 
-### Afficher les panneaux près des bords de l’écran
-
-Affiche les commandes masquées en mode Zen tant que le pointeur est près d’un
-bord de l’écran qui a des commandes masquées. Désactivé par défaut.
-
 ### Icône du bouton
 
 Définit l’image du bouton Capy : **Regard vers le haut** (par défaut),
 **Regard de face**, **Baignade** ou **Sommeil**.
 
 ## Toile
+
+![Les réglages de navigation de la toile.](shot:preferences/canvas-navigation)
+
+### Molette de la souris
+
+Choisissez si la molette sans modificateur déplace la toile ou zoome. Maintenir **Ctrl** utilise l’autre action.
+
+### Tourner avec deux doigts
+
+Permet de faire pivoter la vue avec une rotation à deux doigts. Désactivez ce réglage pour limiter les gestes à deux doigts au déplacement et au zoom.
 
 ### Vitesse de déplacement par défilement
 

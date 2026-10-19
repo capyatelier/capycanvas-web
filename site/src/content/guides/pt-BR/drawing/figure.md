@@ -56,10 +56,7 @@ Escolha o modo abaixo das formas no painel **Conjunto de ferramentas** ou em
 
 ## Largura da linha e Opacidade
 
-**Largura da linha** e **Opacidade** ficam no painel **Ferramenta** e na barra
-Opções da ferramenta. Elas compartilham os valores com **Tamanho do pincel** e
-**Opacidade** do pincel atual ([Tamanho, opacidade e fluxo](/pt-BR/docs/brushes/basics/)),
-e **[** e **]** alteram a Largura da linha.
+**Largura da linha** e **Opacidade** ficam no painel **Ferramenta** e na barra Opções da ferramenta. Compartilham seus valores com **Tamanho do pincel** e **Opacidade** do pincel atual ([Tamanho, intensidade e opacidade](/pt-BR/docs/brushes/basics/)), e **[** e **]** alteram a largura da linha.
 
 ### Largura da linha
 

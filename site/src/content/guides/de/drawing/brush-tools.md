@@ -1,12 +1,10 @@
 ---
 title: "Pinselwerkzeuge"
-description: "Die Pinselwerkzeuge, ihre integrierten Vorgaben und wo Sie sie auswählen."
-related: ["brushes/basics", "drawing/blend-liquify", "color/color-panel", "input/keyboard"]
+description: "Die Pinselwerkzeuge, ihre integrierten Vorgaben und die Stellen, an denen Sie sie wählen."
+related: ["brushes/basics", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
 ---
 
-Sie können mit den Werkzeugen **Feder**, **Bleistift**, **Malpinsel**, **Airbrush**
-und **Dekoration** malen und mit dem **Radierer** radieren. Jedes Werkzeug enthält
-eine oder mehrere Gruppen integrierter Pinselvorgaben.
+Sie können mit den Werkzeugen **Feder**, **Bleistift**, **Kohle**, **Kreide**, **Pastell**, **Wachsmalstift**, **Malpinsel**, **Airbrush** und **Dekoration** malen und mit **Radierer** radieren. Jedes Werkzeug enthält eine oder mehrere Gruppen integrierter Pinselvorgaben.
 
 ## Werkzeuge und Vorgaben
 
@@ -15,7 +13,10 @@ eine oder mehrere Gruppen integrierter Pinselvorgaben.
 | **Feder** | **Feder** | **G-Feder**, **Raue G-Feder**, **Kalligrafiefeder**, **Antike Feder**, **Realistische Feder**, **Nasse Tinte**, **Kleckstinte**, **Realistische Pinseltinte** |
 | | **Filzstift** | **Filzstift** |
 | **Bleistift** | **Bleistift** | **Bleistift**, **Spitzer Bleistift**, **Schattierungsstift** |
-| | **Pastell** | **Kohle**, **Kreide**, **Pastellblock** |
+| **Kohle** | **Kohle** | **Kohle** |
+| **Kreide** | **Kreide** | **Kreide** |
+| **Pastell** | **Pastell** | **Pastellblock** |
+| **Wachsmalstift** | **Wachsmalstift** | **Wachsmalstift** |
 | **Malpinsel** | **Malen** | **Malpinsel**, **Borstenpinsel**, **Flacher Texturpinsel**, **Trockenes Schummern**, **Transparente Lasur**, **Deckende Gouache**, **Multiplizierende Lasur** |
 | | **Aquarell** | **Aquarelllasur**, **Nasses Aquarell** |
 | | **Ölfarbe** | **Satter Ölpinsel**, **Malmesser**, **Nasser Rundpinsel** |
@@ -34,11 +35,11 @@ Diese Eigenschaften sind fest in die Vorgaben eingebaut und haben keine Einstell
 
 | Vorgabe | Verhalten |
 | --- | --- |
-| **Kalligrafiefeder**, **Antike Feder** | Schräg angesetzte Feder. |
+| **Kalligrafiefeder**, **Antike Feder** | Schräge Feder. |
 | **Filzstift** | Keilspitze. |
-| **Bleistift**, **Spitzer Bleistift**, **Schattierungsstift**, **Kohle** | Breiterer Strich, wenn Sie den Stift neigen. |
-| **Airbrush** | Trägt weiter Farbe auf, solange Sie den Stift still halten. |
-| **Sprühpinsel** | Streut seine Pinselabdrücke um den Strich. |
+| **Bleistift**, **Spitzer Bleistift**, **Schattierungsstift**, **Kohle**, **Kreide**, **Pastellblock**, **Wachsmalstift** | Druck und Neigung verändern Form und Materialauftrag der Markierung. Siehe [Trockenmedien](/de/docs/brushes/dry-media/). |
+| **Airbrush** | Trägt weiter Farbe auf, während Sie den Stift stillhalten. |
+| **Sprühpinsel** | Verteilt Abdrücke um den Strich. |
 | **Multiplizierende Lasur** | Malt im Modus Multiplizieren. |
 
 ## Ein Pinselwerkzeug auswählen
@@ -123,11 +124,11 @@ Eine aktive Auswahl beschränkt die Farbe auf die Auswahl.
 
 Auf den folgenden Ebenen malt ein Strich nichts, und ein Hinweis nennt den Grund:
 
-- Eine Gruppe oder eine Auswahlebene.
+- Eine Gruppe oder Auswahlebene.
 - Eine Füllebene ohne Maske.
 - Eine Ebene mit aktiviertem **Bearbeitung sperren** oder in einer gesperrten Gruppe.
-- Eine Filterebene ohne Maske, wenn die Ebene darunter gesperrt ist oder fehlt.
-- Eine skalierte oder gedrehte Ebene, bis Sie **Transformation auf Pixel anwenden** wählen ([Verschieben und Transformieren](/de/docs/transform/move-transform/)).
+- Eine Filterebene ohne Maske, wenn die darunterliegende Ebene gesperrt ist oder fehlt.
+- Eine skalierte oder gedrehte Ebene, bis Sie **Transformation anwenden** wählen ([Verschieben und Transformieren](/de/docs/transform/move-transform/)).
 
 Nasse, mischende und Aquarellpinsel malen auf einer Maske einfache Deckung. Beim
 ersten solchen Strich auf jeder Maske erscheint ein Hinweis.

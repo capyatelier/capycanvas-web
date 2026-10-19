@@ -4,17 +4,14 @@ description: "Phase 2 des Tutorials zur Fotobearbeitung: Staub und einen Fleck m
 related: ["retouch/clone-heal", "layers/settings", "layers/working"]
 ---
 
-In dieser Phase entsteht eine Ebene *Retouch*, die Staub und einen Fleck im Foto
-überdeckt. Die Fotoebene bleibt unverändert.
+Dieser Abschnitt erzeugt eine Ebene *Retouch*, die Staub und einen Fleck im Foto abdeckt. Die Objektebene ändert sich nicht.
 
 ## 1. Retuscheebene hinzufügen
 
 1. Wählen Sie unten im Bedienfeld Ebenen **Neue Ebene** aus und benennen Sie die neue Ebene in *Retouch* um.
 2. Wählen Sie **Ebene > Ebeneneinstellungen > Ebene darunter als Referenz verwenden** ([Ebeneneinstellungen](/de/docs/layers/settings/)).
 
-Die Fotoebene wird zur Referenzebene, und in ihrer Zeile erscheint neben dem
-Auge ein Leuchtturmsymbol. Die Reparaturwerkzeuge kopieren standardmäßig aus
-den Referenzebenen und malen auf *Retouch*.
+Die Objektebene wird zur Referenzebene, und ein Leuchtturmsymbol erscheint neben dem Auge in ihrer Zeile. Die Reparaturwerkzeuge kopieren standardmäßig von den Referenzebenen und malen auf *Retouch*.
 
 ![Das Bedienfeld Ebenen mit Retouch über der Ebene terrarium, die das Referenzsymbol zeigt.](shot:photo/retouch-layers)
 

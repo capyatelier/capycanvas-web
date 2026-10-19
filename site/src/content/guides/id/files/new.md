@@ -1,97 +1,49 @@
 ---
 title: "Gambar baru"
-description: "Dialog Gambar baru dan lapisan awal pada gambar baru."
-related: ["color-management/color-spaces", "layers/types", "files/open-save"]
+description: "Ukuran lembar, resolusi, kertas, pengaturan warna, dan preset dalam dialog Gambar baru."
+related: ["layers/paper", "color-management/color-spaces", "layers/types", "files/open-save"]
 ---
 
-Anda dapat memulai gambar di dialog **Gambar baru**. Gambar baru terbuka di tabnya
-sendiri, dan gambar saat ini tetap terbuka.
+Pilih **Berkas > Baru…**, tekan **Ctrl+N** jika tersedia, atau pilih **Baru…** di bilah Perintah. Gambar baru terbuka di tab tersendiri.
 
-## Membuka dialog Gambar baru
+![Dialog Gambar baru dengan dimensi A4, resolusi 300 ppi, pengaturan warna dan Kertas, serta Buat.](shot:files/new-dialog)
 
-Lakukan salah satu langkah berikut:
+## Preset
 
-- Pilih **Berkas > Baru…**.
-- Tekan **Ctrl+N** (tidak di editor web).
-- Di Lukis dan Foto, pilih **Baru…** di bilah alat Perintah.
+Pilih preset menurut kategori, cari berdasarkan nama, atau pilih preset yang baru digunakan. Preset mengisi dimensi, resolusi, pengaturan warna, dan pengaturan Kertas.
 
-Pilih pengaturan di bawah, lalu pilih **Buat**.
+![Penjelajah preset Gambar baru.](shot:files/new-presets)
 
-**Baru…** tidak tersedia selama pemangkasan atau transformasi sedang terbuka. Jika data
-gambar yang terbuka sudah terlalu banyak, gambar baru tidak terbuka sampai Anda menutup
-beberapa gambar.
+Sebelum Anda menggunakan atau menyimpan pengaturan lain, Preset memilih **Sketchbook**: A4 potret (210 × 297 mm), kertas Gambar dalam Putih alami, dan 2480 × 3508 px pada 300 ppi.
 
-## Pengaturan
+Simpan pengaturan saat ini sebagai preset bernama untuk digunakan kembali. Buka menu preset tersimpan untuk mengganti nama atau menghapusnya. Preset bawaan tidak dapat diganti nama atau dihapus.
 
-![Dialog Gambar baru dengan prasetel Gambar standar.](shot:files/new-dialog)
+## Lembar
 
-### Prasetel
+Pratinjau menunjukkan proporsi dan orientasi lembar. Masukkan nama gambar, lalu atur **Lebar** dan **Tinggi** dalam piksel, inci, sentimeter, atau milimeter. Gunakan kontrol tautan untuk mempertahankan proporsi saat ini, dan kontrol orientasi untuk menukar lebar dan tinggi.
 
-Mengisi setiap kolom dari prasetel bawaan atau prasetel yang Anda simpan. Mengubah
-kolom setelahnya mengalihkan **Prasetel** ke **Khusus**.
+**Resolusi** mengatur piksel per inci untuk dimensi fisik dan skala [tekstur Kertas](/id/docs/layers/paper/). Mengubah resolusi saja mengubah metadata ukuran cetak tanpa mengambil sampel ulang gambar.
 
-Setiap prasetel bawaan berukuran 2048 × 1536 piksel dengan latar belakang putih.
+Jendela baru dimulai dengan gambar kosong A4 lanskap yang terpisah pada 300 ppi (3508 × 2480 px).
 
-| Prasetel | Ruang warna | Kedalaman bit | Pembauran |
-| --- | --- | --- | --- |
-| **Gambar standar** | sRGB | SDR 8-bit | Perseptual |
-| **Warna luas** | Display P3 | SDR 8-bit | Perseptual |
-| **Pengeditan foto** | ProPhoto RGB | SDR 16-bit | Perseptual |
-| **Gambar HDR** | sRGB | HDR pecahan mengambang 16-bit | Cahaya linear |
+Dialog menampilkan dimensi piksel yang dihasilkan dan perkiraan kapasitas. Pengaturan di luar batas gambar perangkat saat ini tidak dapat dibuat; batas bergantung pada dimensi, kedalaman bit, dan sumber daya grafis yang tersedia.
 
-### Hapus prasetel tersimpan
+## Kertas
 
-Menghapus prasetel tersimpan yang dipilih. Prasetel bawaan tidak dapat dihapus.
+![Pilihan tekstur Kertas di Gambar baru.](shot:files/new-paper)
 
-### Lebar (px) dan Tinggi (px)
+Pilih tekstur Kertas bawaan atau impor untuk gambar baru. **Impor…** menambahkan gambar ke pustaka kertas dan memilihnya. Pilih **Tanpa kertas** untuk membuat gambar tanpa lapisan Kertas.
 
-Dari 1 hingga 8192 piksel. Kolom ini menerima hitungan seperti "160*2".
+![Pilihan Warna dan Transparan Kertas di Gambar baru.](shot:files/new-paper-color)
 
-### Ruang warna
+**Warna** mengatur warna Kertas. **Transparan** mempertahankan lapisan Kertas tetapi menyembunyikannya sejak awal. Ini berbeda dari **Tanpa kertas**, yang tidak membuat lapisan Kertas.
 
-**sRGB**, **Display P3**, **Adobe RGB (1998)**, atau **ProPhoto RGB** (lihat
-[Ruang warna, kedalaman bit, dan pembauran](/id/docs/color-management/color-spaces/)).
-Dengan **ProPhoto RGB** dan **SDR 8-bit**, dialog menyarankan SDR 16-bit.
+## Pengaturan warna
 
-### Kedalaman bit
+Pilih **Ruang warna**, **Kedalaman bit**, dan **Paduan** gambar. Kedalaman bit float menggunakan pencampuran **Cahaya linear**. Lihat [Ruang warna, kedalaman bit, dan pencampuran](/id/docs/color-management/color-spaces/).
 
-**SDR 8-bit**, **SDR 16-bit**, **HDR pecahan mengambang 16-bit**, atau
-**HDR pecahan mengambang 32-bit**. Kedalaman bit pecahan mengambang menghasilkan gambar
-HDR.
+## Membuat gambar
 
-### Pembauran
+Pilih **Buat**. Gambar dimulai dengan lapisan cat kosong, **Tinta saat ini**, di atas Kertas yang dipilih jika disertakan.
 
-**Perseptual** atau **Cahaya linear**. Dengan kedalaman bit pecahan mengambang,
-**Pembauran** tetap pada **Cahaya linear**.
-
-### Latar belakang
-
-**Putih** atau **Transparan**. **Transparan** menyembunyikan lapisan **Kertas**.
-
-### Nama prasetel
-
-Menyimpan pengaturan sebagai prasetel dengan nama ini saat Anda memilih **Buat**. Nama
-terdiri dari paling banyak 64 karakter, dan Anda dapat menyimpan hingga 64 prasetel.
-
-### Gunakan pengaturan ini untuk gambar baru
-
-Jika aktif, dialog terbuka dengan pengaturan ini pada kesempatan berikutnya. Ruang
-warna, kedalaman bit, dan latar belakang juga menjadi pengaturan **Gambar baru** di
-[Preferensi](/id/docs/preferences/).
-
-## Lapisan awal
-
-![Panel Lapisan pada gambar baru, dengan Tinta saat ini di atas Kertas.](shot:files/new-layers)
-
-Gambar baru memiliki dua lapisan. **Tinta saat ini**, lapisan lukis yang kosong,
-terpilih di atas **Kertas**, lapisan isian putih (lihat [Jenis lapisan](/id/docs/layers/types/)).
-Lapisan yang Anda tambahkan kemudian diberi nama "Lapisan" dan sebuah nomor.
-
-## Platform lain
-
-Di iPad, macOS, dan Android, kolom **Simpan Prasetel…** dan opsi **Gunakan Bawaan**
-menggantikan **Nama prasetel** dan **Gunakan pengaturan ini untuk gambar baru**. iPad
-dan macOS tidak memiliki tombol **Hapus prasetel tersimpan**.
-
-Di Linux, **Simpan Prasetel…** membuka dialog terpisah untuk nama, sedangkan
-**Ruang warna**, **Kedalaman bit**, dan **Pembauran** dikelompokkan di bawah **Warna**.
+Dialog menyimpan pilihan terakhir yang digunakan untuk membuat gambar. Memilih preset menggantikannya dengan nilai preset tersebut.

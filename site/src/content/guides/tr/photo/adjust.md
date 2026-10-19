@@ -27,25 +27,23 @@ bir nokta ekleyip yukarı sürükleyin ([Ton filtreleri](/tr/docs/filters/tone/)
 **Canlılık** değerini 25 yapın ([Renk filtreleri](/tr/docs/filters/color/)).
 **Canlılık** katmanı **Eğriler** katmanının üstünde görünür.
 
-## 3. Kayayı seçin
+## 3. Gölgeler/Parlak alanlar ekleyin
 
-1. **M** tuşuna basın veya Araçlar çubuğunda **Kement seçimi** aracını seçin ve kayanın çevresini çizin.
-2. **Seç > Seçim kenarlarını yumuşat…** komutunu seçin veya seçim çubuğunda **İyileştir** düğmesini seçip **Kenarları yumuşat…** komutunu seçin ([Seçimlerle çalışma](/tr/docs/selections/working/)).
-3. **Feather radius** değerini 20 px yapın ve **Uygula** düğmesini seçin.
+**Filtre > Ton > Gölgeler/Parlak alanlar** seçin. **Özellikler** panelinde **Gölgeler** değerini %35 yapın. **Gölgeler/Parlak alanlar** katmanı **Canlılık** üzerinde görünür ve seçili kalır.
 
-## 4. Kayadaki gölgeleri açın
+## 4. Ayarlamayı kayaya maskeleyin
 
 Fotoğrafın tamamındaki gölgeleri açmak siyah arka planı griye çevirir. Örnekte
 gölgeler yalnızca kayada açılır.
 
-Seçim çubuğunda **Ayarla** düğmesini seçin ve
-**Ton > Gölgeler/Parlak alanlar** komutunu seçin. **Özellikler** panelinde
-**Gölgeler** değerini %35 yapın.
+1. **M** tuşuna basın veya Araçlar çubuğunda **Kement seçimi** aracını seçin ve kayanın çevresini çizin.
+2. **Seç > Seçim kenarlarını yumuşat…** komutunu seçin veya seçim çubuğunda **İyileştir** düğmesini seçip **Kenarları yumuşat…** komutunu seçin ([Seçimlerle çalışma](/tr/docs/selections/working/)).
+3. **Kenar yumuşatma yarıçapı** değerini 20 px yapın ve **Uygula** düğmesini seçin.
+4. Seçim çubuğunda **Maske** seçin.
 
-![Kayanın çevresindeki seçimin yanında, Ayarla menüsü Ton kategorisinde açık seçim çubuğu.](shot:photo/adjust-bar)
+![Kayanın çevresindeki seçimin yanında Maske bulunan seçim çubuğu.](shot:photo/adjust-bar)
 
-Seçim, yeni **Gölgeler/Parlak alanlar** katmanının maskesi olur. Yalnızca kaya
-değişir.
+Seçim, **Gölgeler/Parlak alanlar** katmanının maskesi olur. Yalnızca kaya değişir.
 
 ## 5. Çizimi kaydedin
 

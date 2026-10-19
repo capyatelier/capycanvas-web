@@ -6,7 +6,7 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 
 **ツール**パネルで、水気のあるブラシや混色するブラシの絵の具の扱いを設定できます。各グループは、そのセクションで挙げたブラシにだけ表示されます。
 
-![ウェット水彩のツールパネル。混色、水彩、にじみのグループと、混色の方法のボタンがあります。](shot:brushes/wet-media-settings)
+![ウェット水彩のツールパネル。混色の設定と、混色、水彩、にじみのグループがあります。](shot:brushes/wet-media-settings)
 
 ## 混色
 
@@ -62,8 +62,8 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 
 次のいずれかの操作を行います。
 
-- **ツール**パネルの下部で、**Oklabで混色**、**リニアライトで混色**、**クラシック混色**のいずれかを選択します。
-- 「ツールのオプション」バーの**混色**から選びます（[サイズ、不透明度、流量](/ja/docs/brushes/basics/)）。
+- **ツール**パネルの**混色**から、**Oklabで混色**、**リニアライトで混色**、**クラシック混色**のいずれかを選びます。
+- 「ツールのオプション」バーの**その他のツールオプション**を開き、「ツール」の引き出しで**混色**を選びます（[サイズ、強さ、不透明度](/ja/docs/brushes/basics/)）。
 - 選択肢の名前でコマンドを検索します。
 
 | 選択肢 | 混ぜ方 |
@@ -74,7 +74,7 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 
 内蔵の混色ブラシは、すべて**Oklabで混色**に設定されています。選択はブラシと一緒に保存され、作品の**色の合成**の設定では変わりません。混色しないブラシでは、これらの選択肢は使用できません。
 
-![厚塗り油彩の「ツールのオプション」バーで開いた「混色」メニュー。](shot:brushes/color-mixing-menu)
+![ツールの引き出しの混色。](shot:brushes/color-mixing-menu)
 
 ## 筆毛
 

@@ -58,7 +58,7 @@ Modu **Araç seti** panelinde şekillerin altından veya Araç seçenekleri
 
 **Çizgi genişliği** ve **Opaklık**, **Araç** panelinde ve Araç seçenekleri
 çubuğunda bulunur. Bu ayarlar değerlerini geçerli fırçanın **Fırça boyutu** ve
-**Opaklık** ayarlarıyla paylaşır ([Boyut, opaklık ve akış](/tr/docs/brushes/basics/)).
+**Opaklık** ayarlarıyla paylaşır ([Boyut, güç ve opaklık](/tr/docs/brushes/basics/)).
 **[** ve **]** tuşları Çizgi genişliğini değiştirir.
 
 ### Çizgi genişliği

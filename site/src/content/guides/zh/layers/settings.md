@@ -107,4 +107,4 @@ related: ["layers/panel", "layers/blend-modes", "layers/types", "filters/how-fil
 
 ## 其他图层设置项
 
-**图层设置**中还有**将变换应用于像素**（参见[移动和变换](/zh/docs/transform/move-transform/)）。在照片图层上，其中还有**修复源配置文件…**、**栅格化源图像…** 和**恢复原始照片**（参见[图层类型](/zh/docs/layers/types/)）。
+**图层设置** 还列出 **应用变换**（参见[移动和变换](/zh/docs/transform/move-transform/)）。在对象图层上，选择 **栅格化图层** 可将源图像转换为可编辑像素（参见[图层类型](/zh/docs/layers/types/)）。

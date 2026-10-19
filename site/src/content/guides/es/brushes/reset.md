@@ -19,9 +19,7 @@ Cada cambio en un ajuste del pincel se guarda al instante con su ajuste preestab
 
 ## Restablecer un ajuste
 
-Puedes devolver un ajuste al valor integrado del pincel. Haz doble clic (o toca dos
-veces) en la etiqueta o el icono del ajuste en la barra Opciones de herramienta
-([Tamaño, opacidad y flujo](/es/docs/brushes/basics/)).
+Puedes restablecer un ajuste al valor incluido del pincel. Haz doble clic (o toca dos veces) en su etiqueta o icono de la barra Opciones de herramienta ([Tamaño, intensidad y opacidad](/es/docs/brushes/basics/)).
 
 El panel **Herramienta** no tiene opción para restablecer. Para restablecer **Mezcla
 de colores**, selecciona **Mezcla Oklab**, la opción integrada de todos los pinceles

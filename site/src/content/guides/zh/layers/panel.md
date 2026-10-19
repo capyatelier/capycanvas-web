@@ -12,9 +12,9 @@ related: ["layers/working", "layers/settings", "layers/types", "layers/masks"]
 
 执行以下任一操作：
 
-- 选择**窗口 > 图层**。
-- 在“绘画”中，选择右列中的**图层**。
-- 在“素描”中，选择标题栏中的**图层面板**。
+- 选择 **窗口 > 图层**。
+- 在“绘画”中，选择右列的 **图层**。
+- 在“素描”中，选择标题栏中的 **图层**。共享抽屉打开图层视图；选择图层的属性按钮可切换到属性。
 - 在[命令搜索](/zh/docs/start/command-search/)中输入“图层面板”。
 
 在“照片”中，该面板在右列中已打开。
@@ -48,6 +48,10 @@ related: ["layers/working", "layers/settings", "layers/types", "layers/masks"]
 8. 拖动手柄可[移动图层](/zh/docs/layers/working/)。
 
 选择一行可将其设为当前图层，并成为唯一选中的行。[图层类型](/zh/docs/layers/types/)列出了每种类型的缩略图。
+
+纸张有独立的颜色和纹理缩略图。如果缺少纸张，最后一行之后会显示 **添加纸张**。
+
+![“素描”抽屉从图层切换到属性。](shot:layers/sketch-properties-drawer)
 
 按住 **Ctrl** 点按绘画图层的缩略图，可将其不透明度载入为选区；点按蒙版缩略图则载入蒙版。加按 **Shift** 可添加到选区，加按 **Alt** 可从选区中减去，加按 **Shift+Alt** 可与选区相交。
 

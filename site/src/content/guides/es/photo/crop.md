@@ -12,17 +12,13 @@ Elige **Archivo > Abrir…**, o pulsa **Ctrl+O**, y selecciona la foto
 ([Abrir y guardar](/es/docs/files/open-save/)). La foto se abre en su propia
 pestaña de dibujo.
 
-![El panel Capas con la capa de la foto del terrario encima de una capa Papel oculta.](shot:photo/open-layers)
+![El panel Capas con la capa de objeto terrarium.](shot:photo/open-layers)
 
-El dibujo tiene una capa, con el nombre del archivo, encima de una capa
-**Papel** oculta. En el ejemplo, la capa se llama «terrarium».
+El dibujo tiene una capa de objeto con el nombre del archivo. En el ejemplo, la capa se llama «terrarium».
 
 ## 2. Elige una proporción
 
-Elige **Editar > Imagen > Recortar**, selecciona **Recortar** en la barra de
-herramientas o pulsa **C** ([Recortar](/es/docs/transform/crop/)). Aparece un
-marco con tiradores sobre la foto, con la barra de recorte a lo largo de la
-parte inferior del lienzo.
+Elige **Imagen > Recortar**, selecciona **Recortar** en la barra Herramientas o pulsa **C** ([Recortar](/es/docs/transform/crop/)). Aparece un marco con tiradores sobre la foto, con la barra de recorte al pie del lienzo.
 
 Selecciona **Proporción** en la barra de recorte y elige **4:5**. El marco pasa a
 ser el marco más grande de esa proporción, centrado en el lienzo. Su orientación

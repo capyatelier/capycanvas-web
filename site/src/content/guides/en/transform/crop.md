@@ -11,7 +11,7 @@ on their layers, hidden, unless you turn on **Delete Cropped**.
 
 Do one of the following:
 
-- Choose **Edit > Image > Crop**.
+- Choose **Image > Crop**.
 - Press **C**.
 - In Photo, select **Crop** in the Tools toolbar.
 
@@ -105,7 +105,7 @@ You can crop the canvas to the bounds of a selection.
 
 Do one of the following:
 
-- Choose **Edit > Image > Crop Canvas to Selection**.
+- Choose **Image > Crop Canvas to Selection**.
 - Select **Crop** on the [selection bar](/docs/selections/working/).
 
 Pixels outside the selection's bounds stay on their layers, hidden. You can't
@@ -113,6 +113,6 @@ crop to an inverted selection.
 
 ## Getting cropped pixels back
 
-Choose **Edit > Image > Reveal All** to grow the canvas until it shows every
-layer's pixels, or make the canvas larger with **Edit > Image > Canvas Size…**
+Choose **Image > Reveal All** to grow the canvas until it shows every
+layer's pixels, or make the canvas larger with **Image > Canvas Size…**
 (see [Image size and rotation](/docs/transform/image/)).

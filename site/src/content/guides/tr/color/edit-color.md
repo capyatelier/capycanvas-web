@@ -106,8 +106,7 @@ Rengi almak için tıklayın veya kalemi ya da parmağınızı kaldırın. İlet
 kutusu, alınan renk Yeni olarak ayarlanmış şekilde geri gelir. Değişiklik
 yapmadan geri dönmek için **Escape** tuşuna basın veya şeridi seçin.
 
-Parmakla örnekleme noktası parmak ucunun üstündedir. Rengi düzenle başka bir
-iletişim kutusundan açıldığında **Tuvalden al** gizlenir.
+Parmak kullanırken büyüteç parmak ucunun üzerinde görünür, örnekleme noktası ise altında kalır. Renk Düzenle başka bir iletişim kutusundan açıldığında **Tuvalden al** gizlenir.
 
 ## Son renkler ve paletler
 

@@ -56,7 +56,7 @@ trên thanh Tùy chọn công cụ. Đường thẳng chỉ vẽ được với 
 
 **Độ rộng nét** và **Độ đục** nằm trong bảng **Công cụ** và trên thanh Tùy chọn công
 cụ. Hai thiết lập này dùng chung giá trị với **Kích thước cọ** và **Độ đục** của cọ
-hiện tại ([Kích thước, độ đục và lượng màu ra](/vi/docs/brushes/basics/)), và **[**
+hiện tại ([Kích thước, độ mạnh và độ đục](/vi/docs/brushes/basics/)), và **[**
 và **]** thay đổi Độ rộng nét.
 
 ### Độ rộng nét

@@ -12,9 +12,9 @@ aktivieren **Abgeschnittene Bereiche löschen**.
 
 Führen Sie eine der folgenden Aktionen aus:
 
-- Wählen Sie **Bearbeiten > Bild > Zuschneiden**.
+- Wählen Sie **Bild > Zuschneiden**.
 - Drücken Sie **C**.
-- Wählen Sie im Arbeitsbereich Foto in der Werkzeugleiste Werkzeuge **Zuschneiden** aus.
+- Wählen Sie in Foto **Zuschneiden** in der Werkzeugleiste Werkzeuge.
 
 Ein Rahmen mit Griffen erscheint um die ganze Leinwand oder als größtmöglicher
 Rahmen im gewählten Verhältnis. Die Leinwand außerhalb des Rahmens wird
@@ -114,15 +114,12 @@ Sie können die Leinwand auf die Grenzen einer Auswahl zuschneiden.
 
 Führen Sie eine der folgenden Aktionen aus:
 
-- Wählen Sie **Bearbeiten > Bild > Leinwand auf Auswahl zuschneiden**.
-- Wählen Sie in der [Auswahlleiste](/de/docs/selections/working/) **Zuschneiden** aus.
+- Wählen Sie **Bild > Leinwand auf Auswahl zuschneiden**.
+- Wählen Sie **Zuschneiden** auf der [Auswahlleiste](/de/docs/selections/working/).
 
 Pixel außerhalb der Auswahlgrenzen bleiben verborgen auf ihren Ebenen. Auf eine
 umgekehrte Auswahl können Sie nicht zuschneiden.
 
 ## Abgeschnittene Pixel zurückholen
 
-Wählen Sie **Bearbeiten > Bild > Alles sichtbar machen**, um die Leinwand zu
-vergrößern, bis sie die Pixel aller Ebenen zeigt, oder vergrößern Sie die
-Leinwand mit **Bearbeiten > Bild > Leinwandgröße…** (siehe
-[Bildgröße und Drehung](/de/docs/transform/image/)).
+Wählen Sie **Bild > Alles sichtbar machen**, um die Leinwand bis zu den Pixeln aller Ebenen zu vergrößern, oder vergrößern Sie sie mit **Bild > Leinwandgröße…** (siehe [Bildgröße und Drehung](/de/docs/transform/image/)).

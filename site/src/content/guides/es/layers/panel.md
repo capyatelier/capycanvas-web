@@ -15,8 +15,8 @@ Haz una de las siguientes acciones:
 
 - Elige **Ventana > Capas**.
 - En Pintura, selecciona **Capas** en la columna derecha.
-- En Boceto, selecciona **Panel de capas** en la barra de título.
-- Escribe «Panel de capas» en la [búsqueda de comandos](/es/docs/start/command-search/).
+- En Boceto, selecciona **Capas** en la barra de título. El cajón compartido se abre en la vista Capas; selecciona el botón Propiedades de una capa para pasar a Propiedades.
+- Escribe «Panel Capas» en la [búsqueda de comandos](/es/docs/start/command-search/).
 
 En Foto, el panel está abierto en la columna derecha.
 
@@ -52,6 +52,10 @@ Las capas de un grupo aparecen con sangría debajo del grupo.
 
 Selecciona una fila para convertirla en la capa activa y en la única fila seleccionada.
 [Tipos de capa](/es/docs/layers/types/) muestra la miniatura de cada tipo.
+
+Papel tiene miniaturas separadas de color y textura. Si no hay Papel, **Añadir papel** aparece después de la última fila.
+
+![El cajón de Boceto cambiando de Capas a Propiedades.](shot:layers/sketch-properties-drawer)
 
 Haz **Ctrl**+clic en la miniatura de una capa de pintura para cargar su opacidad
 como selección, o en la miniatura de la máscara para cargar la máscara. Añade

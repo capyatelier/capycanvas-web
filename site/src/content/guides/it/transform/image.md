@@ -1,27 +1,26 @@
 ---
 title: "Dimensioni e rotazione dell'immagine"
-description: "I comandi di Modifica > Immagine che cambiano le dimensioni e l'orientamento dell'intera immagine."
+description: "I comandi del menu Immagine che cambiano dimensioni e orientamento dell’intera immagine."
 related: ["transform/crop", "start/canvas", "files/new", "color-management/color-spaces"]
 ---
 
 Puoi ridimensionare, ruotare e riflettere l'intera immagine da
-**Modifica > Immagine**. L'immagine resta nella stessa posizione sullo schermo.
+**Immagine**. L'immagine resta nella stessa posizione sullo schermo.
 
 I comandi non sono disponibili mentre è aperto un ritaglio o una trasformazione,
 né mentre modifichi una maschera, la Maschera veloce o un livello di selezione.
 Per **Ritaglia** e **Ritaglia tela alla selezione**, vedi
 [Ritaglio](/it/docs/transform/crop/).
 
-![Il sottomenu Immagine del menu Modifica.](shot:transform/image-menu)
+![Il menu Immagine.](shot:transform/image-menu)
 
 ## Dimensioni immagine…
 
 Puoi scalare l'intera immagine, o cambiarne solo la risoluzione.
 
-Scegli **Modifica > Immagine > Dimensioni immagine…**. I livelli di pittura e le
-maschere vengono ricampionati, e le foto posizionate conservano i pixel
-originali. Le selezioni, le guide e le impostazioni dei filtri espresse in pixel
-si adattano all'immagine.
+Scegli **Immagine > Dimensioni immagine…**. I livelli di pittura e le maschere vengono ricampionati e i livelli Oggetto conservano i pixel sorgenti. Selezioni, guide e impostazioni dei filtri misurate in pixel vengono ridimensionate con l'immagine.
+
+La Carta viene ricampionata insieme all'immagine. Cambiare solo la risoluzione aggiorna la scala fisica senza ricampionare i pixel.
 
 ![La finestra di dialogo Dimensioni immagine.](shot:transform/image-size-dialog)
 
@@ -50,7 +49,7 @@ rimpicciolisce e Bicubica quando si ingrandisce. Puoi anche scegliere
 
 Puoi aggiungere o togliere tela attorno all'immagine senza ricampionare.
 
-Scegli **Modifica > Immagine > Dimensioni tela…**. I pixel fuori da una tela più
+Scegli **Immagine > Dimensioni tela…**. I pixel fuori da una tela più
 piccola restano sui loro livelli, nascosti, e una tela più grande li mostra di
 nuovo.
 
@@ -73,7 +72,7 @@ Sceglie, da una griglia 3 × 3, il lato o l'angolo dell'immagine che resta fermo
 
 ## Ruotare e riflettere l'immagine
 
-Scegli uno di questi comandi da **Modifica > Immagine**:
+Scegli uno di questi comandi da **Immagine**:
 
 - **Ruota immagine di 90° a sinistra**
 - **Ruota immagine di 90° a destra**
@@ -87,11 +86,11 @@ pixel non vengono ricampionati. Per ruotare o riflettere solo la vista, vedi
 
 ## Rifila
 
-Scegli **Modifica > Immagine > Rifila** per ridurre la tela ai pixel visibili. I
+Scegli **Immagine > Rifila** per ridurre la tela ai pixel visibili. I
 pixel fuori dalla nuova tela restano sui loro livelli, nascosti.
 
 ## Mostra tutto
 
-Scegli **Modifica > Immagine > Mostra tutto** per allargare la tela finché non
+Scegli **Immagine > Mostra tutto** per allargare la tela finché non
 mostra i pixel di tutti i livelli, compresi i livelli nascosti e i pixel fuori
 dalla tela.

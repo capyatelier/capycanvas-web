@@ -64,9 +64,7 @@ Effectuez l’une des opérations suivantes :
 
 ![Le menu Ajouter un filtre ouvert depuis le bas du panneau Calques.](shot:filters/add-filter-menu)
 
-**Ajouter un filtre** fonctionne sur les calques de peinture et les calques photo
-déverrouillés, ainsi que sur les groupes qui ne sont pas réglés sur Transfert.
-Son menu contient toutes les catégories sauf **Remplissage**.
+**Ajouter un filtre** fonctionne sur les calques de peinture, les calques Objet et les groupes déverrouillés qui ne sont pas en mode Transfert. Son menu contient toutes les catégories sauf **Remplissage**.
 
 ## Tiroir Filtres de Croquis
 

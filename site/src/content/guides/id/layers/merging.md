@@ -9,9 +9,7 @@ dekat akhir menu **Lapisan** dan menu setiap lapisan.
 
 ![Menu Lapisan dengan Ribbon aktif, menampilkan Gabungkan Lapisan Terkliping, Gabungkan yang Terlihat, Cap yang Terlihat, dan Ratakan Gambar.](shot:layers/merging-menu)
 
-Setiap penggabungan adalah satu langkah urungkan. [Lapisan foto](/id/docs/layers/types/)
-kehilangan foto aslinya saat digabungkan. Anda tidak dapat menggabungkan lapisan
-selama mengedit lapisan seleksi atau Mask Cepat, atau selama transformasi.
+Setiap penggabungan merupakan satu langkah urung. [Lapisan Objek](/id/docs/layers/types/) dirasterisasi saat digabung. Anda tidak dapat menggabung saat menyunting lapisan seleksi atau Mask Cepat, atau selama transformasi.
 
 ## Gabungkan ke Bawah
 
@@ -60,14 +58,9 @@ Grup harus terlihat dan tidak terkunci, serta tidak boleh berisi lapisan seleksi
 
 ## Gabungkan yang Terlihat
 
-Pilih **Lapisan > Gabungkan yang Terlihat** untuk menggabungkan setiap lapisan yang
-terlihat, termasuk **Kertas**, menjadi satu lapisan. Lapisan tersembunyi tetap
-seperti semula.
+Pilih **Lapisan > Gabungkan yang Terlihat** untuk menggabungkan lapisan biasa yang terlihat. Kertas tetap menjadi lapisan Kertas terbawah. Lapisan tersembunyi tetap seperti semula.
 
-Lapisan hasil gabungan mengambil nama dan posisi lapisan terlihat yang paling bawah
-(**Kertas**, jika terlihat). Lapisan tersembunyi yang tadinya diklip ke lapisan yang
-digabungkan akan dilepas. Lapisan yang terlihat harus tidak terkunci, dan grup di
-antaranya tidak boleh berisi lapisan seleksi.
+Lapisan gabungan mengambil nama dan posisi lapisan paling bawah yang digabung. Lapisan tersembunyi yang diklip ke lapisan gabungan dilepaskan. Lapisan yang terlihat harus tidak terkunci, dan grup di antaranya tidak boleh berisi lapisan seleksi.
 
 ## Cap yang Terlihat
 
@@ -80,9 +73,7 @@ Lapisan yang terkunci tidak menghalangi **Cap yang Terlihat**.
 
 ## Ratakan Gambar
 
-Pilih **Lapisan > Ratakan Gambar** untuk menggabungkan setiap lapisan yang terlihat
-menjadi satu lapisan. Lapisan tersembunyi dan piksel di luar kanvas dibuang, tetapi
-lapisan seleksi di luar grup tetap ada. Lapisan yang terlihat harus tidak terkunci.
+Pilih **Lapisan > Ratakan Gambar** untuk menggabungkan lapisan biasa yang terlihat. Kertas tetap sebagai Kertas di bagian bawah. Lapisan tersembunyi dan piksel di luar kanvas dibuang, tetapi lapisan seleksi di luar grup tetap ada. Lapisan yang terlihat harus tidak terkunci.
 
 ![Pemberitahuan di atas kanvas bertuliskan "Meratakan gambar akan membuang 2 lapisan tersembunyi", dengan tombol Ratakan Gambar.](shot:layers/merging-flatten-notice)
 

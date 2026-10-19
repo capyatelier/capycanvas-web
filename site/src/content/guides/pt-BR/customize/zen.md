@@ -19,8 +19,7 @@ Faça uma das seguintes ações:
 - Digite "Modo Zen" na [busca de comandos](/pt-BR/docs/start/command-search/).
 - Com o mapa de atalhos **Estilo Procreate**, toque na tela com quatro dedos.
 
-Repita a ação para sair do modo Zen. O botão Capy aparece pressionado enquanto o
-modo Zen está ativado.
+Repita a mesma ação para sair do modo Zen.
 
 O modo Zen é salvo com cada área de trabalho e continua ativado depois de
 reiniciar. **Personalizar barra de título…** desativa o modo Zen.
@@ -36,25 +35,9 @@ O modo Zen também oculta as colunas recolhidas e o rodapé. Continuam na tela:
 
 As teclas e a busca de comandos (**Ctrl+K**) funcionam normalmente.
 
-## Mostrar os controles por um momento
-
-Os controles ocultos voltam enquanto um menu ou uma caixa de diálogo está aberto e
-enquanto você arrasta ou redimensiona um painel. Pressione **Escape** para mostrá-los
-até o ponteiro se mover.
-
-Com **Revelar painéis perto das bordas da tela** ativado, eles também voltam
-enquanto o ponteiro está perto da borda de cima ou de uma borda com painéis
-encaixados.
-
-Em uma tela sensível ao toque, o primeiro toque em um controle oculto mostra os
-controles, e o segundo toque usa o controle.
-
 ## Encaixar no modo Zen
 
-Enquanto os painéis encaixados estão ocultos, um painel flutuante que você arrasta
-só pode se juntar a outros painéis flutuantes. Com **Revelar painéis perto das
-bordas da tela** ativado, arrastar até uma borda com painéis encaixados os mostra
-como destinos para soltar.
+Enquanto os painéis acoplados estão ocultos, um painel flutuante arrastado só pode se juntar a outros painéis flutuantes.
 
 ## Menu do botão Capy
 
@@ -76,11 +59,6 @@ Escolha **Editar > Preferências**, selecione **Aparência** e encontre o grupo
 Mantém o botão Capy no canto superior esquerdo no modo Zen. Ativado por padrão.
 Enquanto estiver desativado, pressione **Tab** ou use a busca de comandos para
 sair do modo Zen.
-
-### Revelar painéis perto das bordas da tela
-
-Mostra os controles ocultos enquanto o ponteiro ou um dedo está perto de uma borda
-da tela com controles ocultos. Desativado por padrão.
 
 ### Ícone do botão
 

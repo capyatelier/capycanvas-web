@@ -7,7 +7,7 @@ related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-manag
 You can choose the paint color in the **Color** panel. Every workspace uses the
 same paint color.
 
-![The Color panel with the circular wheel, the readout at the top left and the swatches below the wheel.](shot:color/panel "1 Readout · 2 Shape buttons · 3 Edit Color · 4 Foreground and background · 5 Swap · 6 Transparent paint · 7 Black and white")
+![The Color panel with the circular wheel, the readout at the top left and the swatches below the wheel.](shot:color/panel "1 Readout · 2 Shape buttons · 3 Edit Color · 4 Foreground and background · 5 Swap · 6 Transparent paint")
 
 ## Opening the Color panel
 
@@ -79,8 +79,7 @@ colors**.
 
 ## Black and white
 
-Select **Paint with black** or **Paint with white** (the two small circles next
-to the transparent swatch), or choose **Black** or **White** in command search.
+Choose **Black** or **White** in command search.
 
 Black or white replaces the color of the selected foreground or background
 swatch. If **Transparent paint** is selected, black or white becomes a temporary

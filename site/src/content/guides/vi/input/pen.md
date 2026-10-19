@@ -1,22 +1,16 @@
 ---
 title: "Bút"
 description: "Các thiết lập bút trong Tùy chọn, và thao tác chạm hai lần và bóp trên Apple Pencil."
-related: ["input/touch", "input/keyboard", "preferences", "brushes/basics"]
+related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-Các thiết lập bút nằm trên trang **Bút và nhập liệu** của **Chỉnh sửa > Tùy chọn**.
+Thiết lập bút nằm trên trang **Bút và nhập liệu** của **Chỉnh sửa > Tùy chọn**.
 
 ![Trang Bút và nhập liệu của Tùy chọn.](shot:pen/pen-and-input)
 
-## Đáp ứng lực nhấn
+## Lực nhấn bút
 
-Bạn có thể thay đổi cách bút đáp ứng lực nhấn nhẹ bằng **Đáp ứng lực nhấn** trong
-**Đáp ứng của bút**. Giá trị thấp hơn làm lực nhấn nhẹ mạnh hơn, còn giá trị cao hơn
-đòi hỏi nhấn mạnh hơn. Phạm vi là 0.25 × đến 4.00 ×. Ở giá trị mặc định 1.00 ×, lực
-nhấn của bút được dùng nguyên trạng.
-
-Thiết lập này áp dụng cho mọi cọ và công cụ, kể cả **Vẽ vùng chọn** và
-**Mặt nạ nhanh**. Các nét đã vẽ không thay đổi.
+Chọn **Điều chỉnh…** cạnh **Lực nhấn bút** để chỉnh đường cong lực nhấn và thử trên khung vẽ hiện tại. Đường cong áp dụng cho mọi cọ và công cụ nhạy lực nhấn; nét đã vẽ không thay đổi. Xem [Lực nhấn bút](/vi/docs/input/pen-pressure/).
 
 ## Dự đoán nét vẽ
 

@@ -59,7 +59,7 @@ Do one of the following:
 
 ![The Add Filter menu open from the bottom of the Layers panel.](shot:filters/add-filter-menu)
 
-**Add Filter** works on unlocked paint layers, photo layers and groups that are
+**Add Filter** works on unlocked paint layers, Object layers and groups that are
 not set to Pass Through. Its menu has every category except **Fill**.
 
 ## Sketch Filters drawer

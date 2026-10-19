@@ -46,8 +46,7 @@ Setiap mode adalah prasetel di **Set Alat**:
 
 ![Panel Alat untuk Cairkan: Kristal, dengan grup Cairkan yang menampilkan Kekuatan dan Distorsi.](shot:drawing/liquify-settings)
 
-**Kekuatan**, **Distorsi**, dan **Momentum** ada di grup **Cairkan** pada panel
-**Alat**. Cairkan tidak memiliki **Aliran cat**.
+**Kekuatan**, **Distorsi**, dan **Momentum** ada di grup **Cairkan** pada panel **Alat**. **Kekuatan** mengatur seberapa kuat goresan memindahkan piksel.
 
 ### Kekuatan
 

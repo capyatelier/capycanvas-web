@@ -82,7 +82,7 @@ Riempi e Racchiudi e riempi condividono le impostazioni seguenti. **Selezione
 automatica** e **Seleziona per colore** usano gli stessi valori per tutte tranne
 **Opacità**. Per ripristinare un'impostazione, fai doppio clic sulla sua
 etichetta nella barra Opzioni strumento
-([Dimensioni, opacità e flusso](/it/docs/brushes/basics/)).
+([Dimensioni, intensità e opacità](/it/docs/brushes/basics/)).
 
 ### Tolleranza
 
@@ -106,9 +106,7 @@ bordi netti a pixel.
 
 ### Opacità
 
-Imposta l'intensità del riempimento. Modificarla cambia l'**Opacità** del
-pennello corrente, e viceversa. In Schizzo, usa il cursore dell'opacità nella
-barra sul bordo sinistro.
+Imposta l'intensità del riempimento. Modificarla cambia l'**Opacità** del pennello corrente, e viceversa. In Schizzo, usa **Cursore intensità** nella barra sul bordo sinistro.
 
 ## Riempire una selezione
 

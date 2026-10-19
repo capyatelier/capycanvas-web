@@ -12,10 +12,10 @@ related: ["layers/working", "layers/settings", "layers/types", "layers/masks"]
 
 執行以下任一操作：
 
-- 選擇**視窗 > 圖層**。
-- 在「繪畫」中，選擇右列中的**圖層**。
-- 在「素描」中，選擇標題列中的**圖層面板**。
-- 在[命令搜尋](/zh-Hant/docs/start/command-search/)中輸入「圖層面板」。
+- 選擇 **視窗 > 圖層**。
+- 在“繪畫”中，選擇右列的 **圖層**。
+- 在“素描”中，選擇標題欄中的 **圖層**。共享抽屜打開圖層視圖；選擇圖層的屬性按鈕可切換到屬性。
+- 在[命令搜索](/zh-Hant/docs/start/command-search/)中輸入“圖層面板”。
 
 在「照片」中，該面板在右列中已開啟。
 
@@ -48,6 +48,10 @@ related: ["layers/working", "layers/settings", "layers/types", "layers/masks"]
 8. 拖動手柄可[移動圖層](/zh-Hant/docs/layers/working/)。
 
 選擇一行可將其設為目前圖層，並成為唯一選取的行。[圖層型別](/zh-Hant/docs/layers/types/)列出了每種型別的縮圖。
+
+紙張有獨立的顏色和紋理縮圖。如果缺少紙張，最後一行之後會顯示 **加入紙張**。
+
+![“素描”抽屜從圖層切換到屬性。](shot:layers/sketch-properties-drawer)
 
 按住 **Ctrl** 點按繪畫圖層的縮圖，可將其不透明度載入為選取範圍；點按遮罩縮圖則載入遮罩。加按 **Shift** 可新增到選取範圍，加按 **Alt** 可從選取範圍中減去，加按 **Shift+Alt** 可與選取範圍相交。
 

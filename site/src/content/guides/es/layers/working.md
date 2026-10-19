@@ -135,7 +135,4 @@ Haz una de las siguientes acciones:
 - Selecciona **Importar imagen como capa…** en la parte inferior del panel Capas.
 - Arrastra archivos de imagen al lienzo o a una fila del panel Capas.
 
-Cada archivo se convierte en una [capa de foto](/es/docs/layers/types/) encima
-de la capa activa, o encima, debajo o dentro de la fila donde lo sueltas. La
-imagen se centra y se reduce para caber en el lienzo, con
-[tiradores de colocación](/es/docs/transform/move-transform/).
+Cada archivo se convierte en una [capa de objeto](/es/docs/layers/types/) encima de la capa activa, o encima, debajo o dentro de la fila sobre la que lo sueltes. La imagen se centra y se reduce para ajustarse al lienzo, con [tiradores de colocación](/es/docs/transform/move-transform/).

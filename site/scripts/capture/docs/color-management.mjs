@@ -1,6 +1,6 @@
 import { settleLayout } from '../shoot.mjs';
 const dialog = 'dialog[open]';
-const edit = '.header-menu[data-menu="edit"]';
+const image = '.header-menu[data-menu="image"]';
 const proof = '.dock-group:has(.proof-panel)';
 
 export default async function colorManagement({ e, b, shoot }) {
@@ -18,15 +18,14 @@ export default async function colorManagement({ e, b, shoot }) {
     await e.invoke('new_document');
     await e.wait(`!!document.querySelector('${dialog}')`);
     if (await e.read(`[...document.querySelectorAll('${dialog} button')].some(b=>b.textContent==='Discard Changes')`)) await press('Discard Changes');
-    await e.wait(`!!document.querySelector('${dialog} [data-document-field="depth"]')`);
+    await e.wait(`!!document.querySelector('#new-drawing-dialog[open] #new-drawing-depth') && !!layerApp.state().new_drawing`);
   };
   const create = async (space, depth) => {
     if (await e.read('layerApp.state().document_file.modified')) await e.save('_capture-scratch.capy');
     const before = await e.read('Number(layerApp.app.document_tabs(0).selected)');
     await openNew();
-    await choose(`${dialog} [data-document-field="space"]`, space);
-    await choose(`${dialog} [data-document-field="depth"]`, depth);
-    await e.click(`${dialog} [data-document-action="create"]`);
+    await e.configureNewDocument(2048, 1536, { space, depth });
+    await e.click('#new-drawing-create');
     await e.wait(`Number(layerApp.app.document_tabs(0).selected)!==${before} && !layerApp.state().document_file.busy && !document.querySelector('${dialog}')`);
     await e.wait(`(c=>c.space===${JSON.stringify(space)}&&c.depth===${JSON.stringify(depth)})(layerApp.app.document_color())`);
     await e.closeOtherDrawings();
@@ -53,11 +52,11 @@ export default async function colorManagement({ e, b, shoot }) {
     target: dialog,
     setup: async () => {
       await openNew();
-      await choose(`${dialog} [data-document-field="space"]`, 'DisplayP3');
-      await choose(`${dialog} [data-document-field="depth"]`, 'U8');
-      await e.wait(`document.querySelector('${dialog} .document-color-summary').textContent==='Display P3 · 8-bit SDR · Perceptual'`);
+      await choose('#new-drawing-space', String(await e.read(`layerApp.state().new_drawing.spaces.findIndex(choice=>choice.value==='DisplayP3')`)));
+      await choose('#new-drawing-depth', String(await e.read(`layerApp.state().new_drawing.depths.findIndex(choice=>choice.value==='U8')`)));
+      await e.wait(`layerApp.state().new_drawing.setup.color.space==='DisplayP3' && layerApp.state().new_drawing.setup.color.depth==='U8' && document.querySelector('#new-drawing-space').selectedOptions[0].textContent==='Display P3'`);
     },
-    teardown: async () => { await e.click(`${dialog} [data-document-action="cancel"]`); await closed(); },
+    teardown: async () => { await e.click('#new-drawing-cancel'); await closed(); },
   });
 
   await create('DisplayP3', 'U8');
@@ -105,16 +104,16 @@ export default async function colorManagement({ e, b, shoot }) {
 
   await create('Srgb', 'U8');
   await shoot('color-management/edit-blending-menu', {
-    target: { selector: `${edit}[open] .popover`, all: true },
+    target: { selector: `${image}[open] .popover`, all: true },
     setup: async () => {
-      await e.click(`${edit} > summary`);
-      await e.wait(`document.querySelector('${edit}').open`);
-      await b.evaluate(`[...document.querySelectorAll('${edit}[open] .popover button')].find(b=>b.querySelector('.menu-label')?.textContent==='Blending').click();void 0`);
-      await e.wait(`[...document.querySelectorAll('${edit}[open] .popover .menu-label')].some(n=>n.textContent==='Linear Light Blending')`);
+      await e.click(`${image} > summary`);
+      await e.wait(`document.querySelector('${image}').open`);
+      await b.evaluate(`[...document.querySelectorAll('${image}[open] .popover button')].find(b=>b.querySelector('.menu-label')?.textContent==='Blending').click();void 0`);
+      await e.wait(`[...document.querySelectorAll('${image}[open] .popover .menu-label')].some(n=>n.textContent==='Linear Light Blending')`);
     },
     teardown: async () => {
-      await e.click(`${edit} > summary`);
-      await e.wait(`!document.querySelector('${edit}').open`);
+      await e.click(`${image} > summary`);
+      await e.wait(`!document.querySelector('${image}').open`);
     },
   });
 

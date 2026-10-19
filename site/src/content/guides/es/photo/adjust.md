@@ -26,25 +26,23 @@ Elige **Filtro > Color > Intensidad de color** y pon **Intensidad de color** en 
 en el panel **Propiedades** ([Filtros de color](/es/docs/filters/color/)). La capa
 **Intensidad de color** aparece encima de **Curvas**.
 
-## 3. Selecciona la roca
+## 3. Añadir Sombras/Iluminaciones
 
-1. Pulsa **M**, o selecciona **Selección con lazo** en la barra de herramientas, y dibuja alrededor de la roca.
-2. Elige **Seleccionar > Suavizar bordes de selección…**, o selecciona **Perfeccionar** en la barra de selección y elige **Suavizar bordes…** ([Trabajar con selecciones](/es/docs/selections/working/)).
-3. Pon **Feather radius** en 20 px y selecciona **Aplicar**.
+Elige **Filtro > Tono > Sombras/Iluminaciones**. Ajusta **Sombras** al 35% en el panel **Propiedades**. La capa **Sombras/Iluminaciones** aparece sobre **Intensidad de color** y permanece seleccionada.
 
-## 4. Aclara las sombras de la roca
+## 4. Enmascarar el ajuste al área de la roca
 
 Aclarar las sombras de toda la foto volvería gris el fondo negro. El ejemplo
 solo las aclara en la roca.
 
-Selecciona **Ajustar** en la barra de selección y elige
-**Tono > Sombras/Iluminaciones**. Pon **Sombras** en 35% en el panel
-**Propiedades**.
+1. Pulsa **M**, o selecciona **Selección con lazo** en la barra de herramientas, y dibuja alrededor de la roca.
+2. Elige **Seleccionar > Suavizar bordes de selección…**, o selecciona **Perfeccionar** en la barra de selección y elige **Suavizar bordes…** ([Trabajar con selecciones](/es/docs/selections/working/)).
+3. Pon **Radio de suavizado de bordes** en 20 px y selecciona **Aplicar**.
+4. Selecciona **Máscara** en la barra de selección.
 
-![La barra de selección con el menú Ajustar abierto en la categoría Tono, junto a la selección alrededor de la roca.](shot:photo/adjust-bar)
+![La barra de selección con Máscara junto a la selección alrededor de la roca.](shot:photo/adjust-bar)
 
-La selección se convierte en la máscara de la nueva capa
-**Sombras/Iluminaciones**. Solo cambia la roca.
+La selección se convierte en la máscara de la capa **Sombras/Iluminaciones**. Solo cambia la roca.
 
 ## 5. Guarda el dibujo
 

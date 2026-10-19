@@ -5,7 +5,7 @@ related: ["layers/panel", "selections/working", "filters/how-filters-apply", "la
 ---
 
 Bir katmanın bölümlerini maskeyle gizleyebilirsiniz. Maskede boyalı alanlar
-katmanı gösterir, boş alanlar katmanı gizler. Boya katmanları, fotoğraf
+katmanı gösterir, boş alanlar katmanı gizler. Boya katmanları, nesne
 katmanları, gruplar, dolgu katmanları ve filtreler maskeye sahip olabilir.
 
 ## Maske ekleme
@@ -111,12 +111,11 @@ Aşağıdakilerden birini yapın:
 
 **Maskeyi katmana uygula** yalnızca boya katmanlarında çalışır ve maskenin etkin
 olması gerekir. Bozulmuş veya çarpıtılmış bir katmanda önce
-**Dönüşümü piksellere uygula** komutunu seçin. Bir grubun maskesini uygulamak
+**Dönüşümü uygula** komutunu seçin. Bir grubun maskesini uygulamak
 için **Grubu birleştir** komutunu kullanın (bkz.
 [Katmanları birleştirme](/tr/docs/layers/merging/)).
 
-Fotoğraf katmanında **Özgün fotoğrafa dön**, uygulanan maskenin sildiklerini
-geri getirir.
+Nesne katmanına maske uygulamak onu pikselleştirir.
 
 ## Filtre ve dolgu katmanlarındaki maskeler
 

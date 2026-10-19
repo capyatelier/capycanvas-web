@@ -24,7 +24,7 @@ related: ["retouch/dodge-burn", "layers/settings", "brushes/basics", "photo/reto
 
 **修复画笔**和**污点修复画笔**在“绘画”中没有按钮。
 
-每个工具都是一种画笔，在工具设置面板中有**画笔大小**、**不透明度**、**流量**和**笔尖**设置（参见[大小、不透明度和流量](/zh/docs/brushes/basics/)）。
+每个工具都是画笔，在工具设置面板中有 **画笔大小**、**不透明度**、**强度** 和 **笔尖** 设置（参见[大小、强度和不透明度](/zh/docs/brushes/basics/)）。
 
 ![仿制图章的工具设置面板，包含画笔设置和来源设置。](shot:retouch/clone-tool-panel)
 

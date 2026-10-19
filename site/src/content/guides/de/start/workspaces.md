@@ -15,9 +15,9 @@ ersten Start öffnet sich der Arbeitsbereich Malen, danach der zuletzt verwendet
 Der Arbeitsbereich Skizze hat keine angedockten Bedienfelder: Die Werkzeug- und Bedienfeldschaltflächen in der Titelleiste öffnen Schubladen.
 
 1. **Capy (Zen-Modus)**, **Hauptmenü**, **Bedienfeld Filter**, **Auswahl** und **Transformieren**.
-2. Der Arbeitsbereichswechsler.
-3. **Pinsel**, **Formen**, **Radierer**, **Bedienfeld Ebenen** und **Pinselfarbe**. Im Web-Editor kommt **Vollbild** hinzu.
-4. **Schieberegler für Pinselgröße**, **Farbpipette**, **Schieberegler für Pinseldeckkraft**, **Rückgängig** und **Wiederholen**.
+2. Der Arbeitsbereichsumschalter.
+3. **Pinsel**, **Formen**, **Radierer**, **Bedienfeld Ebenen** und **Pinselfarbe**. Der Webeditor ergänzt **Vollbild**.
+4. **Schieberegler für Pinselgröße**, **Farbpipette**, **Stärkeregler**, **Rückgängig** und **Wiederholen**.
 
 | Schaltfläche | Bedienfelder in der Schublade |
 | --- | --- |

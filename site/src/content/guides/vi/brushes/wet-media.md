@@ -7,7 +7,7 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 Bạn có thể đặt cách cọ ướt và cọ hòa màu xử lý màu vẽ trong bảng **Công cụ**. Mỗi
 nhóm chỉ xuất hiện ở những cọ được nêu trong phần của nhóm đó.
 
-![Bảng Công cụ cho Màu nước ướt với các nhóm Hòa màu, Màu nước và Loang cùng các nút hòa màu.](shot:brushes/wet-media-settings)
+![Bảng Công cụ cho Màu nước ướt với Hòa màu và các nhóm Hòa màu, Màu nước và Loang.](shot:brushes/wet-media-settings)
 
 ## Hòa màu
 
@@ -70,8 +70,8 @@ Bạn có thể chọn cách cọ hòa màu kết hợp các màu mà nó lấy 
 
 Thực hiện một trong các cách sau:
 
-- Chọn **Hòa màu Oklab**, **Hòa màu ánh sáng tuyến tính** hoặc **Hòa màu cổ điển** ở cuối bảng **Công cụ**.
-- Chọn từ **Hòa màu** trên thanh Tùy chọn công cụ ([Kích thước, độ đục và lượng màu ra](/vi/docs/brushes/basics/)).
+- Chọn **Hòa màu Oklab**, **Hòa màu ánh sáng tuyến tính** hoặc **Hòa màu cổ điển** từ **Hòa màu** trong bảng **Công cụ**.
+- Mở **Thêm tùy chọn công cụ** trên thanh Tùy chọn công cụ, rồi chọn **Hòa màu** trong ngăn Công cụ ([Kích thước, độ mạnh và độ đục](/vi/docs/brushes/basics/)).
 - Tìm lệnh theo tên lựa chọn.
 
 | Lựa chọn | Cách hòa màu |
@@ -84,7 +84,7 @@ Mọi cọ hòa màu có sẵn đều bắt đầu với **Hòa màu Oklab**. L�
 cọ, và thiết lập **Hòa trộn** của bản vẽ không làm thay đổi lựa chọn này. Với
 cọ không hòa màu, các lựa chọn này không dùng được.
 
-![Trình đơn Hòa màu đang mở trên thanh Tùy chọn công cụ cho Cọ sơn dầu đẫm.](shot:brushes/color-mixing-menu)
+![Hòa màu trong ngăn Công cụ.](shot:brushes/color-mixing-menu)
 
 ## Lông cọ
 

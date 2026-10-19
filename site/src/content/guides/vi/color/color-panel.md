@@ -7,7 +7,7 @@ related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-manag
 Bạn có thể chọn màu vẽ trong bảng **Màu**. Mọi không gian làm việc dùng chung một màu
 vẽ.
 
-![Bảng Màu với vòng màu tròn, chỉ số màu ở góc trên bên trái và các ô màu bên dưới vòng màu.](shot:color/panel "1 Chỉ số màu · 2 Nút hình dạng · 3 Sửa màu · 4 Màu trước và màu nền · 5 Đổi chỗ · 6 Màu vẽ trong suốt · 7 Đen và trắng")
+![Bảng Màu với vòng màu tròn, chỉ số màu ở góc trên bên trái và các ô màu bên dưới vòng màu.](shot:color/panel "1 Chỉ số màu · 2 Nút hình dạng · 3 Sửa màu · 4 Màu trước và màu nền · 5 Đổi chỗ · 6 Màu vẽ trong suốt")
 
 ## Mở bảng Màu
 
@@ -76,8 +76,7 @@ Bạn có thể hoán đổi màu trước và màu nền. Thực hiện một t
 
 ## Đen và trắng
 
-Chọn **Vẽ bằng màu đen** hoặc **Vẽ bằng màu trắng** (hai hình tròn nhỏ cạnh ô màu
-trong suốt), hoặc chọn **Đen** hoặc **Trắng** trong tìm lệnh.
+Chọn **Đen** hoặc **Trắng** trong tìm lệnh.
 
 Màu đen hoặc trắng thay thế màu của ô màu trước hoặc ô màu nền đang chọn. Nếu
 **Màu vẽ trong suốt** đang được chọn, màu đen hoặc trắng trở thành màu vẽ tạm thời.

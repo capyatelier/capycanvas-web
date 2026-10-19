@@ -19,8 +19,7 @@ Effectuez l’une des opérations suivantes :
 - Tapez « Mode Zen » dans la [recherche de commandes](/fr/docs/start/command-search/).
 - Avec les raccourcis **Style Procreate**, touchez la toile avec quatre doigts.
 
-Recommencez pour quitter le mode Zen. Le bouton Capy paraît enfoncé tant que le
-mode Zen est actif.
+Répétez la même action pour quitter le mode Zen.
 
 Le mode Zen est enregistré avec chaque espace de travail et reste actif après un
 redémarrage. **Personnaliser la barre de titre…** désactive le mode Zen.
@@ -37,25 +36,9 @@ affichés :
 
 Les touches et la recherche de commandes (**Ctrl+K**) fonctionnent normalement.
 
-## Afficher les commandes un instant
-
-Les commandes masquées réapparaissent tant qu’un menu ou une boîte de dialogue
-est ouvert et pendant que vous déplacez ou redimensionnez un panneau. Appuyez sur
-**Échap** pour les afficher jusqu’au prochain mouvement du pointeur.
-
-Quand **Afficher les panneaux près des bords de l’écran** est activé, elles
-réapparaissent aussi tant que le pointeur est près du bord supérieur, ou près
-d’un bord qui a des panneaux ancrés.
-
-Sur un écran tactile, le premier toucher sur une commande masquée affiche les
-commandes, et le second utilise la commande.
-
 ## Ancrer en mode Zen
 
-Tant que les panneaux ancrés sont masqués, un panneau flottant que vous faites
-glisser ne peut rejoindre que d’autres panneaux flottants. Quand
-**Afficher les panneaux près des bords de l’écran** est activé, faire glisser vers un bord qui a
-des panneaux ancrés les affiche comme cibles de dépôt.
+Quand les panneaux ancrés sont masqués, un panneau flottant que vous faites glisser ne peut rejoindre que d’autres panneaux flottants.
 
 ## Menu du bouton Capy
 
@@ -78,11 +61,6 @@ groupe **Mode Zen**. Ces réglages s’appliquent à tous les espaces de travail
 Garde le bouton Capy dans le coin supérieur gauche en mode Zen. Activé par
 défaut. Quand ce réglage est désactivé, appuyez sur **Tabulation** ou utilisez la
 recherche de commandes pour quitter le mode Zen.
-
-### Afficher les panneaux près des bords de l’écran
-
-Affiche les commandes masquées tant que le pointeur ou un doigt est près d’un
-bord de l’écran qui a des commandes masquées. Désactivé par défaut.
 
 ### Icône du bouton
 

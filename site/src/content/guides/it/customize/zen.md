@@ -19,8 +19,7 @@ Esegui una delle seguenti operazioni:
 - Digita «modalità Zen» nella [ricerca comandi](/it/docs/start/command-search/).
 - Con la mappa dei tasti **Stile Procreate**, tocca la tela con quattro dita.
 
-Ripeti la stessa operazione per uscire dalla modalità Zen. Il pulsante Capy
-appare premuto mentre la modalità Zen è attiva.
+Ripeti la stessa operazione per uscire dalla modalità Zen.
 
 La modalità Zen viene salvata con ogni area di lavoro e resta attiva dopo un
 riavvio. **Personalizza barra del titolo…** disattiva la modalità Zen.
@@ -36,25 +35,9 @@ La modalità Zen nasconde anche le colonne compresse e il piè di pagina. Restan
 
 I tasti e la ricerca comandi (**Ctrl+K**) funzionano come sempre.
 
-## Mostrare i controlli per un momento
-
-I controlli nascosti ricompaiono mentre è aperto un menu o una finestra di dialogo
-e mentre trascini o ridimensioni un pannello. Premi **Esc** per mostrarli finché
-il puntatore non si muove.
-
-Con **Mostra pannelli vicino ai bordi dello schermo** attivo, ricompaiono anche
-mentre il puntatore è vicino al bordo superiore, o vicino a un bordo con pannelli
-ancorati.
-
-Su uno schermo touch, il primo tocco su un controllo nascosto mostra i controlli,
-e il secondo tocco usa il controllo.
-
 ## Ancorare in modalità Zen
 
-Mentre i pannelli ancorati sono nascosti, un pannello mobile che trascini può
-unirsi solo ad altri pannelli mobili. Con **Mostra pannelli vicino ai bordi dello
-schermo** attivo, trascinare verso un bordo con pannelli ancorati li mostra come
-destinazioni di rilascio.
+Mentre i pannelli ancorati sono nascosti, un pannello mobile che trascini può unirsi solo ad altri pannelli mobili.
 
 ## Menu del pulsante Capy
 
@@ -78,11 +61,6 @@ Scegli **Modifica > Preferenze**, seleziona **Aspetto** e trova il gruppo
 Mantiene il pulsante Capy nell'angolo in alto a sinistra in modalità Zen. Attivo
 per impostazione predefinita. Quando è disattivato, premi **Tab** o usa la
 ricerca comandi per uscire dalla modalità Zen.
-
-### Mostra pannelli vicino ai bordi dello schermo
-
-Mostra i controlli nascosti mentre il puntatore o un dito è vicino a un bordo
-dello schermo con controlli nascosti. Disattivato per impostazione predefinita.
 
 ### Icona del pulsante
 

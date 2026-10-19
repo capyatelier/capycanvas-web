@@ -10,9 +10,9 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 
 执行以下任一操作：
 
-- 选择**编辑 > 图像 > 裁剪**。
+- 选择 **图像 > 裁剪**。
 - 按 **C**。
-- 在“照片”中，选择“工具”工具栏中的**裁剪**。
+- 在“照片”中，选择工具工具栏中的 **裁剪**。
 
 带控制点的裁剪框会出现在整个画布周围，或以所选比例的最大裁剪框出现。裁剪框外的画布变暗，画布底部边缘出现裁剪的[画布操作栏](/zh/docs/selections/working/)。
 
@@ -82,11 +82,11 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 
 执行以下任一操作：
 
-- 选择**编辑 > 图像 > 将画布裁剪到选区**。
-- 选择[选区操作栏](/zh/docs/selections/working/)上的**裁剪**。
+- 选择 **图像 > 将画布裁剪到选区**。
+- 选择[选区栏](/zh/docs/selections/working/)上的 **裁剪**。
 
 选区边界以外的像素隐藏并保留在各自的图层上。不能裁剪到反转的选区。
 
 ## 找回裁掉的像素
 
-选择**编辑 > 图像 > 显示全部**，可扩大画布直到显示所有图层的像素；或用**编辑 > 图像 > 画布大小…** 扩大画布（参见[图像大小和旋转](/zh/docs/transform/image/)）。
+选择 **图像 > 显示全部** 可扩大画布以显示所有图层的像素，或使用 **图像 > 画布大小…** 扩大画布（参见[图像大小和旋转](/zh/docs/transform/image/)）。

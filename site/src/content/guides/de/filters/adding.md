@@ -65,9 +65,7 @@ Führen Sie eine der folgenden Aktionen aus:
 
 ![Das Menü Filter hinzufügen, geöffnet vom unteren Rand des Bedienfelds Ebenen.](shot:filters/add-filter-menu)
 
-**Filter hinzufügen** funktioniert bei nicht gesperrten Malebenen, Fotoebenen
-und Gruppen, die nicht auf Durchreichen gestellt sind. Sein Menü enthält alle
-Kategorien außer **Füllung**.
+**Filter hinzufügen** funktioniert auf entsperrten Malebenen, Objektebenen und Gruppen, die nicht auf Durchreichen eingestellt sind. Sein Menü enthält alle Kategorien außer **Füllung**.
 
 ## Schublade Filter im Arbeitsbereich Skizze
 

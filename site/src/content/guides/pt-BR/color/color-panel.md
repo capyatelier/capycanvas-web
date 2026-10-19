@@ -7,7 +7,7 @@ related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-manag
 Você pode escolher a cor da tinta no painel **Cor**. Todas as áreas de trabalho
 usam a mesma cor de tinta.
 
-![O painel Cor com o círculo de cores, a leitura no canto superior esquerdo e as amostras abaixo do círculo.](shot:color/panel "1 Leitura · 2 Botões de forma · 3 Editar cor · 4 Primeiro plano e fundo · 5 Trocar · 6 Pintura transparente · 7 Preto e branco")
+![O painel Cor com a roda circular, o indicador no canto superior esquerdo e as amostras abaixo da roda.](shot:color/panel "1 Indicador · 2 Botões de forma · 3 Editar cor · 4 Primeiro plano e fundo · 5 Trocar · 6 Pintura transparente")
 
 ## Abrir o painel Cor
 
@@ -79,9 +79,7 @@ para **Trocar cores**.
 
 ## Preto e branco
 
-Selecione **Pintar com preto** ou **Pintar com branco** (os dois círculos pequenos
-ao lado da amostra transparente) ou escolha **Preto** ou **Branco** na busca de
-comandos.
+Escolha **Preto** ou **Branco** na busca de comandos.
 
 Preto ou branco substitui a cor da amostra de primeiro plano ou de fundo
 selecionada. Se **Pintura transparente** estiver selecionada, preto ou branco vira

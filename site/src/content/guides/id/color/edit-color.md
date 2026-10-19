@@ -104,8 +104,7 @@ Klik, atau angkat pena atau jari, untuk mengambil warna. Dialog kembali dengan w
 yang diambil sebagai Baru. Tekan **Escape** atau pilih strip itu untuk kembali tanpa
 perubahan.
 
-Dengan jari, titik sampel berada di atas ujung jari. **Ambil dari kanvas** disembunyikan
-jika Edit Warna dibuka dari dialog lain.
+Dengan jari, kaca pembesar muncul di atas ujung jari sementara titik sampel tetap berada di bawahnya. **Ambil dari kanvas** disembunyikan saat Sunting Warna dibuka dari dialog lain.
 
 ## Warna terbaru dan palet
 

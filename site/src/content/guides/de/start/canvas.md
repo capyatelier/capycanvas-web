@@ -20,10 +20,11 @@ Führen Sie eine der folgenden Aktionen aus:
 
 - Wählen Sie **Ansicht > Vergrößern** oder **Ansicht > Verkleinern**.
 - Drücken Sie **Strg+=** oder **Strg+-**.
-- Halten Sie **Strg** gedrückt und scrollen Sie. Unter macOS und auf dem iPad halten Sie **Control** gedrückt, nicht Command.
-- Ziehen Sie zwei Finger auf einem Touchscreen zusammen oder auseinander, unter macOS und auf dem iPad auch auf dem Trackpad.
-- Wählen Sie im Menü der Zoomanzeige eine Zoomstufe oder im Bedienfeld **Navigator** eine Zoomschaltfläche aus.
-- Drücken Sie den rechten Stick eines Gamecontrollers nach oben oder unten.
+- Halten Sie **Strg** und scrollen Sie. Halten Sie auf macOS und iPad **Control**, nicht Command.
+- Ziehen Sie zwei Finger auf einem Touchscreen oder auf dem Trackpad unter macOS und iPad zusammen oder auseinander.
+- Wählen Sie eine Zoomstufe im Menü der Zoomanzeige oder eine Zoomschaltfläche im Bedienfeld **Navigator**.
+- Bewegen Sie den rechten Stick eines Gamecontrollers nach oben oder unten.
+- Wählen Sie das Werkzeug **Zoomen** und klicken oder ziehen Sie entsprechend seinen Werkzeugeinstellungen.
 
 Der Zoom reicht von 2% bis 1600%. **Strg**+Scrollen zoomt um den Zeiger herum, die
 Zwei-Finger-Geste um die Finger. **Zoomgeschwindigkeit beim Scrollen** in den
@@ -37,6 +38,12 @@ Ansicht auf 0°, behält Spiegelungen aber bei.
 
 Eine Zeichnung wird beim Öffnen eingepasst, beim Ändern der Fenstergröße jedoch nicht erneut.
 
+## Zoomwerkzeug
+
+Wählen Sie **Zoomen** in der Werkzeugleiste Werkzeuge oder halten Sie seine Taste für den vorübergehenden Zugriff und verwenden Sie die Leinwand. Die Einstellung **Klicken** legt fest, ob ein Klick vergrößert oder verkleinert. **Ziehen** wählt stufenloses Zoomen, einen Zoombereich, die entgegengesetzte Klickaktion oder nur Klicken.
+
+![Die Einstellungen Klicken und Ziehen für das Zoomwerkzeug.](shot:start/zoom-tool-settings)
+
 ## Tatsächliche Pixel
 
 Wählen Sie **Ansicht > Tatsächliche Pixel** oder drücken Sie **Strg+1** oder
@@ -49,12 +56,12 @@ gedreht ist.
 
 Führen Sie eine der folgenden Aktionen aus:
 
-- Scrollen Sie. Mit gedrückter **Umschalt**-Taste scrollen Sie seitwärts.
-- Halten Sie die **Leertaste** gedrückt und ziehen Sie.
+- Scrollen Sie, wenn **Mausrad** in den [Voreinstellungen](/de/docs/preferences/) auf Verschieben eingestellt ist. Halten Sie **Umschalt** und scrollen Sie zum seitlichen Verschieben.
+- Halten Sie **Abstand** und ziehen Sie.
 - Ziehen Sie mit zwei Fingern auf einem Touchscreen.
-- Wählen Sie das Werkzeug **Hand** aus oder drücken Sie **H**, und ziehen Sie dann.
+- Wählen Sie das Werkzeug **Hand** oder drücken Sie **H** und ziehen Sie.
 - Ziehen Sie im Bedienfeld **Navigator**.
-- Ziehen Sie im Web-Editor mit der mittleren oder rechten Maustaste.
+- Ziehen Sie im Webeditor mit der mittleren oder rechten Maustaste.
 - Bewegen Sie den linken Stick eines Gamecontrollers.
 
 **Verschiebegeschwindigkeit beim Scrollen** in den [Einstellungen](/de/docs/preferences/)
@@ -65,9 +72,9 @@ legt die Strecke pro Scrollschritt fest.
 Führen Sie eine der folgenden Aktionen aus:
 
 - Wählen Sie **Ansicht > Ansicht 90° nach links drehen** oder **Ansicht > Ansicht 90° nach rechts drehen**.
-- Drehen Sie zwei Finger auf einem Touchscreen, unter macOS und auf dem iPad auch auf dem Trackpad.
-- Geben Sie im Menü der Zoomanzeige einen Winkel ein oder ziehen Sie dort den Drehregler.
-- Wählen Sie im Bedienfeld **Navigator** eine Drehschaltfläche aus.
+- Drehen Sie zwei Finger auf einem Touchscreen oder dem Trackpad unter macOS und iPad, wenn **Mit zwei Fingern drehen** in den Voreinstellungen eingeschaltet ist.
+- Geben Sie einen Winkel ein oder ziehen Sie den Drehregler im Menü der Zoomanzeige.
+- Wählen Sie eine Drehschaltfläche im Bedienfeld **Navigator**.
 
 Standardmäßig ist keine Taste zum Drehen der Ansicht belegt. Um zu 0° zurückzukehren,
 wählen Sie im Menü der Zoomanzeige **Drehung zurücksetzen** aus.

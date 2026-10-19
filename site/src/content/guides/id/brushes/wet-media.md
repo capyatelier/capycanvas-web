@@ -7,7 +7,7 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 Anda dapat mengatur cara kuas basah dan kuas pembaur mengolah cat di panel **Alat**.
 Setiap grup hanya muncul pada kuas yang disebutkan di bagiannya.
 
-![Panel Alat untuk Cat Air Basah dengan grup Pencampuran, Cat air, dan Rembesan, serta tombol pencampuran warna.](shot:brushes/wet-media-settings)
+![Panel Alat untuk Cat Air Basah dengan Pencampuran warna dan grup Pencampuran, Cat air, dan Rembesan.](shot:brushes/wet-media-settings)
 
 ## Pencampuran
 
@@ -72,8 +72,8 @@ Anda dapat memilih cara kuas pencampur menggabungkan warna yang diambilnya.
 
 Lakukan salah satu langkah berikut:
 
-- Pilih **Pencampuran Oklab**, **Pencampuran cahaya linear**, atau **Pencampuran klasik** di bagian bawah panel **Alat**.
-- Pilih dari **Pencampuran warna** di bilah Opsi Alat ([Ukuran, opasitas, dan aliran cat](/id/docs/brushes/basics/)).
+- Pilih **Pencampuran Oklab**, **Pencampuran cahaya linear**, atau **Pencampuran klasik** dari **Pencampuran warna** di panel **Alat**.
+- Buka **Opsi alat lainnya** di bilah Opsi Alat, lalu pilih **Pencampuran warna** di laci Alat ([Ukuran, kekuatan, dan opasitas](/id/docs/brushes/basics/)).
 - Cari nama pilihan itu di pencarian perintah.
 
 | Pilihan | Pencampuran |
@@ -86,7 +86,7 @@ Setiap kuas pencampur bawaan dimulai pada **Pencampuran Oklab**. Pilihan ini dis
 bersama kuas, dan pengaturan **Pembauran** pada gambar tidak mengubahnya. Untuk kuas
 yang tidak mencampur, pilihan ini tidak tersedia.
 
-![Menu Pencampuran warna terbuka di bilah Opsi Alat untuk Cat Minyak Penuh.](shot:brushes/color-mixing-menu)
+![Pencampuran warna di laci Alat.](shot:brushes/color-mixing-menu)
 
 ## Bulu
 

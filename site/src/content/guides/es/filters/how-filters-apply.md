@@ -24,10 +24,7 @@ capas de debajo en ese grupo, salvo que el grupo tenga
 
 ## Filtro adjunto
 
-Puedes adjuntar filtros a una capa de pintura, a una capa de foto o a un grupo
-que no tenga Traspasar activado. Selecciona la capa y después selecciona
-**Añadir filtro** en la parte inferior del panel Capas, en el panel
-**Propiedades** o en el menú de la capa.
+Puedes adjuntar filtros a una capa de pintura, una capa de objeto o un grupo que no esté en modo Traspasar. Selecciona la capa y después **Añadir filtro** al pie del panel Capas, del panel **Propiedades** o en el menú de la capa.
 
 Los filtros adjuntos se aplican desde la parte inferior de la cadena hacia
 arriba, después de la máscara de la capa y antes de su opacidad y su modo de
@@ -55,10 +52,7 @@ Haz una de las siguientes acciones:
 **Aplicar a las capas inferiores** pone el filtro en su propia capa, encima de
 la capa a la que estaba adjunto y de las capas recortadas a esa capa.
 
-El botón no está disponible mientras el filtro o la capa de debajo están
-bloqueados. Cuando la capa de debajo no es una capa de pintura, una capa de foto
-ni un grupo, su descripción emergente dice «No hay una capa inferior a la que
-vincular».
+El botón no está disponible mientras el filtro o la capa de debajo estén bloqueados. Cuando la capa de debajo no es una capa de pintura, de objeto o un grupo, su descripción emergente indica «No hay una capa inferior a la que vincular».
 
 ## Selecciones como máscaras de filtro
 

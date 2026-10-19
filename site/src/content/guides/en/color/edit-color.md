@@ -103,8 +103,7 @@ canvas shows Current, the sampled color and its values.
 Click, or lift the pen or finger, to pick. The dialog returns with the picked
 color as New. Press **Escape** or select the strip to go back without a change.
 
-With a finger, the sample point is above the fingertip. **Pick from the
-canvas** is hidden when Edit Color opens from another dialog.
+With a finger, the magnifier appears above the fingertip while the sample point remains under it. **Pick from the canvas** is hidden when Edit Color opens from another dialog.
 
 ## Recent colors and palettes
 

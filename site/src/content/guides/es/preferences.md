@@ -1,7 +1,7 @@
 ---
 title: "Preferencias"
-description: "El diálogo Preferencias y los ajustes de sus páginas Apariencia, Lienzo, Color y Acerca de."
-related: ["input/pen", "input/keyboard", "customize/zen", "color-management/color-spaces"]
+description: "El diálogo Preferencias y los ajustes de sus páginas Apariencia, Lienzo, Lápiz y entrada, Color y Acerca de."
+related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
 Puedes cambiar los ajustes de toda la aplicación en el diálogo **Preferencias**.
@@ -18,8 +18,7 @@ Haz una de las siguientes acciones:
 - En Pintura y Foto, selecciona el botón del engranaje en el extremo derecho de la barra de título.
 - Escribe «Preferencias» en la [búsqueda de comandos](/es/docs/start/command-search/).
 
-Preferencias se abre en la página **Apariencia**. **Ayuda > Atajos de teclado** lo
-abre en **Atajos de teclado**, y **Ayuda > Acerca de {appName}**, en **Acerca de**.
+Preferencias se abre en **Apariencia**. Elige **Editar > Atajos de teclado** para los atajos de teclado o **Acerca de {appName}** en el menú de la aplicación para Acerca de.
 
 Mientras Preferencias está abierto, los atajos del lienzo, los botones del lápiz y
 los toques con los dedos no hacen nada.
@@ -90,17 +89,22 @@ opciones son
 Mantiene el botón Capy en pantalla en [modo Zen](/es/docs/customize/zen/). Activado
 de forma predeterminada.
 
-### Mostrar paneles cerca de los bordes de la pantalla
-
-Muestra los controles ocultos en modo Zen mientras el puntero está cerca de un borde
-de la pantalla con controles ocultos. Desactivado de forma predeterminada.
-
 ### Icono del botón
 
 Define la imagen del botón Capy: **Mirando hacia arriba** (la predeterminada),
 **Mirando al frente**, **Bañándose** o **Durmiendo**.
 
 ## Lienzo
+
+![Ajustes de navegación del lienzo.](shot:preferences/canvas-navigation)
+
+### Rueda del ratón
+
+Elige si la rueda del ratón sin modificadores desplaza el lienzo o cambia el zoom. Mantener pulsado **Ctrl** usa la otra acción.
+
+### Girar con dos dedos
+
+Permite girar la vista al girar dos dedos. Desactívalo para limitar los gestos de dos dedos al desplazamiento y al zoom.
 
 ### Velocidad de desplazamiento
 

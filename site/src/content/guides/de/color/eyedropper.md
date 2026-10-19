@@ -11,10 +11,10 @@ Aufnehmen kehrt das zuvor verwendete Werkzeug zurück.
 
 Führen Sie eine der folgenden Aktionen aus:
 
-- Drücken Sie **I** (**O** in der Tastenkürzelbelegung GIMP-Stil).
+- Drücken Sie **I** (**O** in der Tastenbelegung GIMP-Stil).
 - Wählen Sie **Farbpipette** in der Befehlssuche.
-- Wählen Sie in den Arbeitsbereichen Malen und Foto **Farbpipette** in der Werkzeugleiste Werkzeuge aus.
-- Wählen Sie im Arbeitsbereich Skizze **Farbpipette** auf der Leiste am linken Rand aus, zwischen den Schiebereglern für Größe und Deckkraft.
+- Wählen Sie in Malen und Foto **Farbpipette** in der Werkzeugleiste Werkzeuge.
+- Wählen Sie in Skizze **Farbpipette** auf der Leiste am linken Rand zwischen **Schieberegler für Pinselgröße** und **Stärkeregler**.
 
 Um ohne Aufnehmen abzubrechen, drücken Sie **I** oder wählen dieselbe Schaltfläche
 erneut aus, drücken **Escape** oder wählen ein anderes Werkzeug oder einen anderen
@@ -31,7 +31,7 @@ Vorschau zu sehen. Die Malfarbe ändert sich erst beim Aufnehmen.
 | Stift | Darüberfahren oder Stift aufsetzen | Stift abheben |
 | Finger | Berühren | Finger abheben |
 
-Mit dem Finger liegt der Aufnahmepunkt über der Fingerspitze.
+Bei Verwendung eines Fingers erscheint die Lupe über der Fingerspitze, während der Abtastpunkt unter der Fingerspitze bleibt.
 
 Transparente Pixel liefern keine Farbe, und aufgenommene Farben sind immer deckend.
 Farben werden im Farbraum der Zeichnung aufgenommen. In einer HDR-Zeichnung kann eine
@@ -69,6 +69,8 @@ oben im Fenster). Beide Optionen heißen in der deutschen Oberfläche **Farbpipe
 - Die zweite zeigt einen Pipettenzeiger, dessen Spitze auf dem Aufnahmepunkt liegt.
 
 ![Die Lupe der Farbpipette über einem roten Strich, mit aufgenommener und aktueller Farbe im Ring.](shot:color/eyedropper-loupe)
+
+![Die Farbwählerlupe über einem Finger mit dem Abtastpunkt unter dem Kontakt.](shot:color/eyedropper-touch)
 
 Touch verwendet immer die Lupe. Wenn Sie im Arbeitsbereich Skizze **Farbpipette** auswählen, wird
 **Stil** auf die Lupe gesetzt. Ein kleines Ebenensymbol erscheint, wenn **Quelle** auf

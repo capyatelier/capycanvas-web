@@ -1,131 +1,65 @@
 ---
-title: "Taille, opacité et débit"
-description: "Taille du pinceau, Opacité et Débit, et les panneaux, barres et touches où vous modifiez les réglages du pinceau."
-related: ["brushes/tip-texture", "brushes/reset", "drawing/brush-tools", "input/keyboard"]
+title: "Taille, intensité et opacité"
+description: "Taille, Intensité et Opacité du pinceau, et les panneaux, barres et touches où les modifier."
+related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools"]
 ---
 
-Chaque modification d’un réglage de pinceau est enregistrée avec le préréglage du
-pinceau ([Enregistrer et réinitialiser les pinceaux](/fr/docs/brushes/reset/)).
+Les commandes du pinceau dépendent de l’outil et du préréglage. Les modifications sont enregistrées avec le préréglage.
 
 ## Panneau Outil
 
-Vous pouvez modifier tous les réglages du pinceau actif dans le panneau **Outil**.
+Ouvrez **Fenêtre > Outil** pour voir tous les réglages de l’outil actif. Vous pouvez aussi sélectionner l’onglet **Outil** dans Peinture ou Photo, ou sélectionner de nouveau l’outil actif pour ouvrir son tiroir.
 
-Effectuez l’une des opérations suivantes :
+![Le panneau Outil d’un pinceau sec avec Taille, Intensité et Opacité.](shot:brushes/tool-panel)
 
-- Choisissez **Fenêtre > Outil**.
-- Dans Peinture, sélectionnez l’onglet **Outil** dans la colonne de gauche.
-- Dans Photo, sélectionnez **Outil** dans la bande d’icônes à droite.
-- Sélectionnez de nouveau le bouton de l’outil actif. **Outil** est la dernière colonne du tiroir.
+### Taille
 
-Chaque réglage a une valeur, des boutons **−** et **+** et un curseur.
-Sélectionnez la valeur pour saisir un nombre. Seuls les réglages utilisés par le
-pinceau apparaissent, regroupés sous des intitulés comme **Pointe** et
-**Texture** ([Pointe et texture](/fr/docs/brushes/tip-texture/)).
+Définit le diamètre ou la largeur de la marque. La plage dépend de l’outil.
 
-![Le panneau Outil pour Crayon avec Taille du pinceau, Opacité et Débit au-dessus des groupes Pointe et Texture.](shot:brushes/tool-panel)
+### Intensité
 
-### Taille du pinceau
+Définit l’intensité de l’action à pleine pression. Pour les outils secs, elle modifie la couverture du matériau ; pour la Gomme, la quantité effacée ; pour Mélange et Fluidité, l’intensité du déplacement ou du mélange des pixels.
 
-Définit le diamètre du pinceau, de 0,5 à 2048 px.
+L’intensité agit dans chaque trait. Elle est distincte de l’[Intensité du lissage](/fr/docs/brushes/smoothing/).
 
 ### Opacité
 
-Définit la force de chaque empreinte du trait. Aucun pinceau intégré ne fait
-varier l’Opacité avec la pression du stylet.
+Définit l’opacité maximale du trait terminé. Réduire l’Opacité rend le trait entier plus transparent sans modifier la réaction du matériau à l’intérieur du trait.
 
-### Débit
+### Commandes par famille
 
-Définit la quantité de peinture déposée par chaque empreinte, mesurée à pleine
-pression pour les pinceaux dont le débit varie avec la pression. Les pinceaux
-humides et de mélange utilisent aussi le Débit pour la force avec laquelle chaque
-empreinte se mélange à la peinture du calque.
+Les pinceaux humides peuvent afficher des commandes comme **Charge d’eau**, **Diffusion** et **Mélange**. Les pinceaux secs affichent **Intensité de la texture** et **Dureté du matériau**. Seules les commandes utilisées par le préréglage sélectionné apparaissent.
 
-Les pinceaux Fluidité n’ont pas de Débit.
+## Commandes numériques
 
-## Accumulation dans un trait
-
-Là où un trait se croise lui-même, ces pinceaux restent à la force de leur
-empreinte la plus forte : les préréglages du groupe **Plume**, **Feutre**,
-**Crayon d’ombrage**, **Pinceau**, **Pinceau à soies**, **Plat texturé**,
-**Brossage à sec**, **Bloc de pastel**, **Glacis transparent**,
-**Lavis d’aquarelle** et **Aquarelle humide**. Les autres pinceaux s’accumulent là où
-leurs empreintes se chevauchent.
-
-Le réglage **Fusion** du dessin détermine la façon dont les empreintes
-s’accumulent
-([Espace colorimétrique, profondeur de couleur et fusion](/fr/docs/color-management/color-spaces/)).
+Sélectionnez une valeur affichée pour en saisir une. Faites défiler au-dessus d’une valeur, ou utilisez **−** et **+**, pour la modifier par pas. Maintenez le modificateur indiqué par l’application pendant le glissement pour des changements plus fins. Double-cliquez sur un libellé ou une icône dans **Options de l’outil** pour réinitialiser le réglage.
 
 ## Panneau Taille du pinceau
 
-Vous pouvez choisir une taille dans une grille du panneau **Taille du pinceau**.
-
-Effectuez l’une des opérations suivantes :
-
-- Choisissez **Fenêtre > Taille du pinceau**.
-- Dans Peinture, sélectionnez l’onglet **Taille du pinceau** à côté d’**Outil** dans la colonne de gauche.
-- Dans Photo, sélectionnez **Taille du pinceau** dans la bande d’icônes à droite.
-
-Chaque bouton affiche un point et une taille en pixels. Le bouton de la taille
-active est enfoncé.
-
-Quand **Peindre la sélection** est actif, le panneau règle la taille du pinceau
-de sélection. Vous pouvez attribuer une touche à chaque taille sous
-**Tailles de pinceau** sur la page Raccourcis clavier.
+Ouvrez **Fenêtre > Taille du pinceau** pour choisir une taille en pixels enregistrée dans les favoris. La taille active est enfoncée. Chaque préréglage conserve ses propres tailles favorites.
 
 ![Le panneau Taille du pinceau avec sa grille de boutons de taille.](shot:brushes/brush-size-panel)
 
-## Barre Options de l’outil
+## Options de l’outil
 
-Vous pouvez modifier les réglages de l’outil actif sur une seule rangée avec la
-barre **Options de l’outil**. Dans Photo, elle se trouve au bout de la barre
-d’outils du haut. Dans les autres espaces de travail, ajoutez-la à une barre
-d’outils avec **Insérer des outils…**
-([Barres d’outils et barre de titre](/fr/docs/customize/toolbars/)).
+La barre **Options de l’outil** regroupe les commandes principales de l’outil actif sur une rangée. Photo l’inclut dans la barre d’outils du haut ; ajoutez-la ailleurs avec **Insérer des outils…**. Les réglages qui ne tiennent pas sont sous **Autres options de l’outil**.
 
-Les menus **Outil** et **Variante** viennent en premier quand l’outil propose des
-choix, puis **Mélange de couleurs** pour les pinceaux qui mélangent la peinture,
-puis les réglages numériques. Les réglages qui ne tiennent pas sont regroupés
-sous **Autres options de l’outil**.
-
-- Double-cliquez (ou touchez deux fois) le libellé ou l’icône d’un réglage pour lui rendre la valeur intégrée du pinceau.
-- Faites défiler au-dessus d’une valeur pour la modifier pas à pas. Avec un doigt, faites glisser la valeur vers le haut ou vers le bas.
-- Cliquez avec le bouton droit sur la barre, ou appuyez longuement dessus, pour choisir **Horizontal : texte**, **Horizontal : icônes** ou **Afficher les curseurs**.
-
-![La barre Options de l’outil dans Photo pour le Pinceau de peinture, avec Variante et les réglages numériques.](shot:brushes/tool-options-bar)
+![Options de l’outil pour un pinceau avec ses commandes principales actuelles.](shot:brushes/tool-options-bar)
 
 ## Curseurs dans Croquis
 
-Dans Croquis, vous pouvez régler la taille et l’opacité du pinceau avec les deux
-curseurs de la barre du bord gauche.
+Croquis possède **Curseur de taille du pinceau** et **Curseur d’intensité** sur le bord gauche. Touchez ou cliquez sur une piste pour définir une valeur, faites glisser le long de la piste pour la modifier, ou sélectionnez l’embout pour ouvrir l’aperçu du contact.
 
-- Touchez ou cliquez sur la piste pour définir une valeur. Un aperçu montre la pointe à sa taille réelle en pixels, ou à l’opacité choisie.
-- Faites glisser le long de la piste pour modifier la valeur. L’aperçu se ferme quand vous levez le doigt ou le stylet.
-- Touchez l’embout au bout du curseur pour voir l’aperçu sans changer la valeur.
+![Les curseurs de taille du pinceau et d’Intensité dans Croquis, avec un aperçu de taille de 37 px ouvert.](shot:brushes/sketch-size-slider)
 
-Sélectionnez **+** (**Marquer cette valeur comme favorite**) dans l’aperçu pour
-marquer la valeur sur la piste, ou **−** (**Retirer le favori**) pour retirer la
-marque. Toucher près d’une marque définit exactement cette valeur. Chaque
-préréglage de pinceau conserve ses propres favoris.
+L’aperçu d’Intensité montre la réaction du pinceau actif à cette valeur.
 
-Un curseur est grisé quand l’outil actif n’a ni taille ni opacité. Vous pouvez
-ajouter le **Curseur de taille du pinceau** et le
-**Curseur d’opacité du pinceau** à n’importe quelle barre d’outils avec **Insérer des outils…**.
+![Le curseur Intensité avec son aperçu du contact ouvert.](shot:brushes/strength-preview)
 
-![La barre du bord gauche dans Croquis, avec l’aperçu de taille ouvert à côté du Curseur de taille du pinceau.](shot:brushes/sketch-size-slider)
+Sélectionnez **Marquer cette valeur comme favorite** dans un aperçu pour ajouter une marque à la piste, ou **Retirer le favori** pour la retirer. Chaque préréglage conserve ses propres favoris.
 
-## Touches
+## Touches de taille
 
-| Touche | Action |
-| --- | --- |
-| **[** | **Réduire la taille du pinceau** de 1 px. Maintenez la touche pour répéter. |
-| **]** | **Augmenter la taille du pinceau** de 1 px. Maintenez la touche pour répéter. |
-| Aucune | **Réduire l’opacité du pinceau** et **Augmenter l’opacité du pinceau** de 1 %. |
+Appuyez sur **[** ou **]** pour passer au palier de taille précédent ou suivant. Maintenez la touche pour répéter. Les paliers suivent la séquence de tailles du préréglage au lieu de changer d’un pixel.
 
-Vous pouvez attribuer des touches à ces actions sous **Peinture** sur la page
-[Raccourcis clavier](/fr/docs/input/keyboard/).
-
-## Saisir une valeur
-
-Cherchez le nom d’un réglage dans la recherche de commandes, comme **Débit…**, et
-tapez la nouvelle valeur ([Recherche de commandes](/fr/docs/start/command-search/)).
+Vous pouvez attribuer des touches aux commandes de Taille, d’Intensité et d’Opacité du pinceau sur la page [Raccourcis clavier](/fr/docs/input/keyboard/).

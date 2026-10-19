@@ -141,7 +141,4 @@ Anda melukis di mask lapisan.
 
 ## Item Pengaturan Lapisan lainnya
 
-**Pengaturan Lapisan** juga memuat **Terapkan Transformasi ke Piksel** (lihat
-[Pemindahan dan transformasi](/id/docs/transform/move-transform/)). Pada lapisan foto,
-menu ini memuat **Perbaiki Profil Sumber…**, **Rasterisasi Sumber…**, dan
-**Kembalikan ke Foto Asli** (lihat [Jenis lapisan](/id/docs/layers/types/)).
+**Pengaturan Lapisan** juga mencantumkan **Terapkan transformasi** (lihat [Pindah dan Transformasi](/id/docs/transform/move-transform/)). Pada lapisan Objek, pilih **Rasterisasi Lapisan** untuk mengonversi sumbernya ke piksel yang dapat disunting (lihat [Jenis lapisan](/id/docs/layers/types/)).

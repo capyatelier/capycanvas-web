@@ -6,7 +6,7 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 
 可以在**工具設定**面板中設定溼筆刷和混色筆刷處理顏料的方式。每個分組只出現在其所在小節列出的筆刷上。
 
-![濕水彩的工具設定面板，包含混色、水彩和暈染分組以及混色按鈕。](shot:brushes/wet-media-settings)
+![濕水彩的工具設定面板，包含混色選項以及混色、水彩和暈染分組。](shot:brushes/wet-media-settings)
 
 ## 混色
 
@@ -62,9 +62,9 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 
 執行以下任一操作：
 
-- 在**工具設定**面板底部選擇 **Oklab 混色**、**線性光混色**或**經典混色**。
-- 在工具選項欄的**混色**中選擇（[大小、不透明度和流量](/zh-Hant/docs/brushes/basics/)）。
-- 在命令搜尋中搜尋選項名稱。
+- 從 **工具設定** 面板的 **混色** 中選擇 **Oklab 混色**、**線性光混色** 或 **經典混色**。
+- 開啟工具選項欄中的 **更多工具選項**，然後在工具設定抽屜中選擇 **混色**（[大小、強度和不透明度](/zh-Hant/docs/brushes/basics/)）。
+- 在命令搜索中搜索選項名稱。
 
 | 選項 | 混合方式 |
 | --- | --- |
@@ -74,7 +74,7 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 
 所有內建混色筆刷的初始設定都是 **Oklab 混色**。該選項隨筆刷儲存，畫作的**色彩混合**設定不會改變它。對不混色的筆刷，這些選項無法使用。
 
-![飽蘸油彩的工具選項欄中開啟的混色選單。](shot:brushes/color-mixing-menu)
+![工具設定抽屜中的混色選項。](shot:brushes/color-mixing-menu)
 
 ## 鬃毛
 

@@ -1,7 +1,7 @@
 # Reproduce the editor screenshots
 
-Run from the website repository root. Every image on the site is an actual
-Capy Canvas render from the web editor, captured in a 1920 × 1080 window at twice
+Run from the website repository root. Documentation and homepage screenshots are
+Capy Canvas renders from the web editor, captured in a 1920 × 1080 window at twice
 the pixel density, in both light and dark appearances and in every site language,
 with the editor showing that language. Most images are cropped to the panel, bar,
 menu or dialog a section describes; the workspace overviews show the whole window.
@@ -27,9 +27,9 @@ directories.
 
 On Linux, `capture` launches **headed Chrome** on private headless Wayland
 displays, which keeps the WebGPU surface on NVIDIA. It opens no window on the
-desktop. Each chapter runs in its own fresh browser on its own display, all at
-once; `CAPTURE_JOBS` (default 16) sets how many run together. A full run of every
-chapter in every language takes about 13 minutes this way. `CHROME` selects
+desktop. Each chapter runs in its own fresh browser on its own display;
+`CAPTURE_JOBS` (default 6) sets how many run together. Lower concurrency keeps
+private displays and browsers within the host's file-watcher limits. `CHROME` selects
 another executable; `CAPTURE_BROWSER_MODE=native` uses Chrome's own headless mode
 where it renders WebGPU correctly.
 
@@ -97,6 +97,10 @@ once:
 CAPTURE_ONLY=layers CAPTURE_OUTPUT=/tmp/capture/layers CAPTURE_REVIEW=/tmp/capture/layers-review npm run capture
 ```
 
+`CAPTURE_EXAMPLES` can point to freshly generated tutorial projects when testing a
+chapter against an app revision that cannot open the committed example format.
+The full run creates its own current-format examples in the illustration chapter.
+
 A failed chapter does not stop the others and is retried once in a fresh
 browser, except the illustration chapter, which the others depend on. The review
 directory holds a screenshot, the editor state and browser errors for each failed
@@ -133,3 +137,34 @@ their files are unchanged; otherwise the run is marked `partial`.
 Reproduction means the same source, actions, artwork and composition. GPU, fonts,
 Chrome versions and input timing can change individual bytes, so review new
 images rather than expecting identical output.
+
+## Release visual
+
+After preparing the app, run `RELEASE_VERSION=1.0.13 npm run capture:release`.
+The script draws Charcoal on Unryu, Pointy Pencil on Handmade, Pastel Block on
+Sanded, and Crayon on Linen through real pen input with varying pressure and
+tilt. It exports each sample through the editor and arranges the PNGs with tool
+and paper labels. The paper colors are set in the editor. It adds no paper
+texture or marks after export.
+
+`release-visual.mjs` defines the composition; `dry-media.mjs` defines the strokes
+and materials. Working PNGs and editable projects go to
+`artifacts/release/visual/`. The final PNG, WebP, and source manifest go to
+`site/public/assets/releases/<version>/`; `RELEASE_VISUAL_OUTPUT` selects another
+destination. Inspect the composite at release-note width before publishing.
+
+The published 1.0.13 visual uses native canvas captures to retain paper lighting.
+Build a clean native app checkout using the
+[native capture guide](../store/README.md), then render the saved projects and
+compose their paper crops:
+
+```sh
+NATIVE_APP_REPO=/path/to/clean/app NATIVE_EXECUTABLE=/path/to/native/test-executable npm run capture:release:native
+RELEASE_VISUAL_SAMPLES=artifacts/release/native-visual node site/scripts/release-visual.mjs
+```
+
+The native script uses the app's capture helper, crops only the paper using the
+recorded camera and window bounds, and verifies the project and image hashes.
+It runs one sample at a time by default; `NATIVE_VISUAL_JOBS` changes
+concurrency. The second command can also be used to iterate on the composition
+without drawing or capturing the samples again.

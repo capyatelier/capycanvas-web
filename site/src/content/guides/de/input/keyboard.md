@@ -17,9 +17,9 @@ Command wie Strg.
 
 Führen Sie eine der folgenden Aktionen aus:
 
-- Wählen Sie **Hilfe > Tastenkürzel**.
+- Wählen Sie **Bearbeiten > Tastenkürzel**.
 - Drücken Sie **Strg+Umschalt+?**.
-- Wählen Sie **Bearbeiten > Einstellungen** und wählen Sie **Tastenkürzel** aus.
+- Wählen Sie **Bearbeiten > Einstellungen** und dann **Tastenkürzel**.
 
 ## Tastenkürzelvorgaben
 

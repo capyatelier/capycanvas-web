@@ -107,9 +107,7 @@ Fai clic, oppure solleva la penna o il dito, per prelevare. La finestra di
 dialogo ricompare con il colore prelevato come Nuovo. Premi **Esc** o seleziona la
 striscia per tornare indietro senza modifiche.
 
-Con un dito, il punto di campionamento si trova sopra il polpastrello. **Preleva
-dalla tela** è nascosto quando Modifica colore si apre da un'altra finestra di
-dialogo.
+Con un dito, la lente appare sopra il polpastrello mentre il punto di campionamento rimane sotto. **Preleva dalla tela** è nascosto quando Modifica colore si apre da un'altra finestra di dialogo.
 
 ## Colori recenti e tavolozze
 

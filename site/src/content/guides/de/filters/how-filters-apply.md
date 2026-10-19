@@ -24,10 +24,7 @@ Filter nur die Ebenen unter ihm in dieser Gruppe, außer die Gruppe ist auf
 
 ## Angehängter Filter
 
-Sie können Filter an eine Malebene, eine Fotoebene oder eine Gruppe anhängen,
-die nicht auf Durchreichen gestellt ist. Wählen Sie die Ebene aus und wählen Sie
-dann **Filter hinzufügen** unten im Bedienfeld Ebenen, im Bedienfeld
-**Eigenschaften** oder im Menü der Ebene aus.
+Sie können Filter an eine Malebene, eine Objektebene oder eine Gruppe anhängen, die nicht auf Durchreichen eingestellt ist. Wählen Sie die Ebene und dann **Filter hinzufügen** unten im Ebenen-Bedienfeld oder im Bedienfeld **Eigenschaften** oder im Ebenenmenü.
 
 Angehängte Filter wirken von unten nach oben durch die Kette, nach der Maske der
 Ebene und vor ihrer Deckkraft und ihrem Verrechnungsmodus. Bei einer
@@ -55,9 +52,7 @@ Führen Sie eine der folgenden Aktionen aus:
 **Auf die Ebenen darunter anwenden** setzt den Filter auf eine eigene Ebene, über
 die Ebene, an die er angehängt war, und deren beschnittene Ebenen.
 
-Die Schaltfläche ist nicht verfügbar, solange der Filter oder die Ebene darunter
-gesperrt ist. Ist die Ebene darunter keine Malebene, Fotoebene oder Gruppe,
-lautet ihr Tooltip „Keine Ebene darunter zum Zuordnen“.
+Die Schaltfläche ist nicht verfügbar, solange der Filter oder die darunterliegende Ebene gesperrt ist. Ist die darunterliegende Ebene keine Malebene, Objektebene oder Gruppe, lautet der Tooltip „Keine Ebene darunter zum Zuordnen“.
 
 ## Auswahlen als Filtermasken
 

@@ -18,6 +18,19 @@
       "pkg/layer_web_bg.wasm": "26043e46a58141b3eadbf217aadd5e55c823dddc10fba0a74e3b875e8672aa0a"
     }
   },
+  "nativeSource": {
+    "repository": "https://github.com/capyatelier/capycanvas",
+    "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+    "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+    "helper": "tools/visual/gtk-store-capture.py",
+    "helper_sha256": "c1c170e079306f85e2a4a251e48d4debf8e1fd70db0cddbc4659a24238163c6e",
+    "capture": "Native GTK Wayland window, paper cropped without resampling",
+    "window": {
+      "width": 1840,
+      "height": 1200,
+      "scale": 2
+    }
+  },
   "captures": [
     {
       "id": "charcoal",
@@ -25,15 +38,68 @@
       "name": "Charcoal",
       "paper": "unryu",
       "paperName": "Unryu",
-      "size": 200,
+      "size": [
+        2108,
+        1318
+      ],
       "color": "#302e2c",
+      "paperColor": "#f4f0e8",
+      "file": "charcoal.png",
+      "sha256": "5980ae76df05dbd360476b38ceb2de62a3baeb9345b13db7eaa7c8cd3e6918ca",
+      "project_sha256": "f6a0ee4e7c8e39eb3d1c495657886a4f867567b5904d4f8545e262c556b134d5",
+      "crop": [
+        829,
+        668,
+        2108,
+        1318
+      ],
       "extent": [
         1600,
         1000
       ],
-      "source": "Capy Canvas PNG export",
-      "sha256": "e14e37e5355d6d0571711ce35bdab8ba8a5337bf256c0de1fd6b6d809b3f7727",
-      "paperColor": "#f4f0e8"
+      "paper_bounds": [
+        828.199951171875,
+        667.75,
+        2109.600067138672,
+        1318.50004196167
+      ],
+      "camera": {
+        "flipped": [
+          false,
+          false
+        ],
+        "revision": 7,
+        "rotation": 0,
+        "rotation_locked": false,
+        "translation": [
+          785.199951171875,
+          624.75
+        ],
+        "viewport": [
+          3680,
+          2400
+        ],
+        "work_area": [
+          668,
+          180,
+          2344,
+          2208
+        ],
+        "zoom": 1.31850004196167,
+        "zoom_locked": false
+      },
+      "shadow_padding": [
+        43,
+        43
+      ],
+      "source_image_size": [
+        3766,
+        2486
+      ],
+      "source_image_sha256": "7ba00dcb595c386f9a83b912811d0c6bbe9e6864f0e2b8f6492159c341714992",
+      "capture_manifest_sha256": "9a7b58cf66d19a0c78def427953302459997762bb5bdd250f1b0f69aeb0e503f",
+      "recipe_sha256": "6365f2fcb2b9b47710620f6c05b8a533780fbe32ec50293d5a466c6af5c95c81",
+      "source": "Native Capy Canvas canvas capture"
     },
     {
       "id": "pastel",
@@ -41,15 +107,68 @@
       "name": "Pastel Block",
       "paper": "sanded_pastel",
       "paperName": "Sanded",
-      "size": 140,
+      "size": [
+        1134,
+        1986
+      ],
       "color": "#bc624c",
+      "paperColor": "#f1ede7",
+      "file": "pastel.png",
+      "sha256": "dd509f5c0e82a0fbca69678d75f5e026e3c5600b1ecbb4cbe6ae976b617a7266",
+      "project_sha256": "8ad9f644f68cf318052a4d347aab102311a1614860a2f69c8a1bb7666e91e7ac",
+      "crop": [
+        1316,
+        334,
+        1134,
+        1986
+      ],
       "extent": [
         800,
         1400
       ],
-      "source": "Capy Canvas PNG export",
-      "sha256": "1fb6071d10d4fc50e6c1cc96f061e821645907382498e8cd51dd30d309a74c46",
-      "paperColor": "#f1ede7"
+      "paper_bounds": [
+        1315.2286376953125,
+        333.40008544921875,
+        1135.5427742004395,
+        1987.199854850769
+      ],
+      "camera": {
+        "flipped": [
+          false,
+          false
+        ],
+        "revision": 7,
+        "rotation": 0,
+        "rotation_locked": false,
+        "translation": [
+          1272.2286376953125,
+          290.40008544921875
+        ],
+        "viewport": [
+          3680,
+          2400
+        ],
+        "work_area": [
+          668,
+          180,
+          2344,
+          2208
+        ],
+        "zoom": 1.4194284677505493,
+        "zoom_locked": false
+      },
+      "shadow_padding": [
+        43,
+        43
+      ],
+      "source_image_size": [
+        3766,
+        2486
+      ],
+      "source_image_sha256": "b6bdb5cfc4cbc81b4b699f95e67b666d9324cbcaf5f2a4b90c3eedda5af1b5ef",
+      "capture_manifest_sha256": "a67af4934e3bf21ec72dd8a83e7ec1626253020e270a971b60e662a1afc9257d",
+      "recipe_sha256": "b8f7b3d525017ced6c103e85bef2c8966ff68080f1f050cec21685add229159c",
+      "source": "Native Capy Canvas canvas capture"
     },
     {
       "id": "pencil",
@@ -57,15 +176,68 @@
       "name": "Pointy Pencil",
       "paper": "handmade_paper",
       "paperName": "Handmade",
-      "size": 25,
+      "size": [
+        2108,
+        1318
+      ],
       "color": "#3b4240",
+      "paperColor": "#f5f3ed",
+      "file": "pencil.png",
+      "sha256": "1083e167a7ce5139911ec719c8eede7e9cbb692c582f0abdf219fd3d4d4ad7b9",
+      "project_sha256": "b0c510f10b2eb82b5a2e3cb37f1bd26b270ae38c139be099e2a08a8b82e5f083",
+      "crop": [
+        829,
+        668,
+        2108,
+        1318
+      ],
       "extent": [
         1600,
         1000
       ],
-      "source": "Capy Canvas PNG export",
-      "sha256": "43a2560d10f142e9f74904e9a1953d86fb9b2d343b740d885ece2922b3674d7b",
-      "paperColor": "#f5f3ed"
+      "paper_bounds": [
+        828.199951171875,
+        667.75,
+        2109.600067138672,
+        1318.50004196167
+      ],
+      "camera": {
+        "flipped": [
+          false,
+          false
+        ],
+        "revision": 7,
+        "rotation": 0,
+        "rotation_locked": false,
+        "translation": [
+          785.199951171875,
+          624.75
+        ],
+        "viewport": [
+          3680,
+          2400
+        ],
+        "work_area": [
+          668,
+          180,
+          2344,
+          2208
+        ],
+        "zoom": 1.31850004196167,
+        "zoom_locked": false
+      },
+      "shadow_padding": [
+        43,
+        43
+      ],
+      "source_image_size": [
+        3766,
+        2486
+      ],
+      "source_image_sha256": "25b5d0e28f53bb5f7c6cce7510b1ad8f0ae3ad70b6c2120414fa62364600812a",
+      "capture_manifest_sha256": "3e433ec3d247e2145d7a26d44dfc8bd1c23f21c2c235ebacb455bd2f2e2ecba6",
+      "recipe_sha256": "d10a18a904615015836c426aa9920ee516e52e11fac19599f6a0d9158c1e94ec",
+      "source": "Native Capy Canvas canvas capture"
     },
     {
       "id": "crayon",
@@ -73,27 +245,80 @@
       "name": "Crayon",
       "paper": "linen",
       "paperName": "Linen",
-      "size": 100,
+      "size": [
+        2108,
+        1318
+      ],
       "color": "#657f49",
+      "paperColor": "#f0eee5",
+      "file": "crayon.png",
+      "sha256": "1ccd99f225fbcddb66bc98c68cc2e98bbc3b082df9e97b1bfbc66695fae4d65e",
+      "project_sha256": "ad32564e536fd12a69025a4dfa8227d52df7e2f7bea2d6336d27645874e51089",
+      "crop": [
+        829,
+        668,
+        2108,
+        1318
+      ],
       "extent": [
         1600,
         1000
       ],
-      "source": "Capy Canvas PNG export",
-      "sha256": "9fe9d1fb0d0422e317d00758b8c1bb33f4db242946e2ebcdc05d5c44325218e6",
-      "paperColor": "#f0eee5"
+      "paper_bounds": [
+        828.199951171875,
+        667.75,
+        2109.600067138672,
+        1318.50004196167
+      ],
+      "camera": {
+        "flipped": [
+          false,
+          false
+        ],
+        "revision": 7,
+        "rotation": 0,
+        "rotation_locked": false,
+        "translation": [
+          785.199951171875,
+          624.75
+        ],
+        "viewport": [
+          3680,
+          2400
+        ],
+        "work_area": [
+          668,
+          180,
+          2344,
+          2208
+        ],
+        "zoom": 1.31850004196167,
+        "zoom_locked": false
+      },
+      "shadow_padding": [
+        43,
+        43
+      ],
+      "source_image_size": [
+        3766,
+        2486
+      ],
+      "source_image_sha256": "778360ce2dc5d8b0ae3714b1030fd337a20d1d960c00426297877c5e32d03479",
+      "capture_manifest_sha256": "92602ed8489bea7af878bbba03c8c736f1a892f584c4a0c2f4ba932c82e68e3c",
+      "recipe_sha256": "b335ece782eea6465f3d86b82c1599e50b7ab4e44dcf58ee8c932b97e14ae2f1",
+      "source": "Native Capy Canvas canvas capture"
     }
   ],
   "files": [
     {
       "file": "dry-media.png",
-      "bytes": 1551626,
-      "sha256": "858d5635b46e4bf3113011571b3a5cbf0136f4c7d80e51828f0a378144d3ff6a"
+      "bytes": 4341826,
+      "sha256": "c7db1198d8c1d8940a76212f7788177c279a32051f5dfc314e5f7b8543742e09"
     },
     {
       "file": "dry-media.webp",
-      "bytes": 427456,
-      "sha256": "b52c5c52333705d661f8983cdc75faa53f11d602c11d0949222ea8e89cd517ec"
+      "bytes": 602180,
+      "sha256": "bba31482c8211c4f84f67a399a13d5c82d6a2c06bef5aa43ec8ede81ffe71239"
     }
   ]
 }

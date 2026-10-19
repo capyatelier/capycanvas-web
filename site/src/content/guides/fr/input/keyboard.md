@@ -17,7 +17,7 @@ fonctionne comme Ctrl.
 
 Effectuez l’une des opérations suivantes :
 
-- Choisissez **Aide > Raccourcis clavier**.
+- Choisissez **Édition > Raccourcis clavier**.
 - Appuyez sur **Ctrl+Maj+?**.
 - Choisissez **Édition > Préférences** et sélectionnez **Raccourcis clavier**.
 

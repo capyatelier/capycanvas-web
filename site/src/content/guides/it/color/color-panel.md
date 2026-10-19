@@ -7,7 +7,7 @@ related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-manag
 Puoi scegliere il colore di pittura nel pannello **Colore**. Tutte le aree di
 lavoro usano lo stesso colore di pittura.
 
-![Il pannello Colore con la ruota circolare, l'indicatore in alto a sinistra e i campioni sotto la ruota.](shot:color/panel "1 Indicatore · 2 Pulsanti della forma · 3 Modifica colore · 4 Primo piano e sfondo · 5 Scambia · 6 Pittura trasparente · 7 Bianco e nero")
+![Il pannello Colore con la ruota circolare, l'indicatore in alto a sinistra e i campioni sotto la ruota.](shot:color/panel "1 Indicatore · 2 Pulsanti della forma · 3 Modifica colore · 4 Primo piano e sfondo · 5 Scambia · 6 Pittura trasparente")
 
 ## Aprire il pannello Colore
 
@@ -82,9 +82,7 @@ tasto per **Scambia colori**.
 
 ## Bianco e nero
 
-Seleziona **Dipingi con nero** o **Dipingi con bianco** (i due piccoli cerchi
-accanto al campione trasparente), oppure scegli **Nero** o **Bianco** nella
-ricerca comandi.
+Scegli **Nero** o **Bianco** nella ricerca comandi.
 
 Il nero o il bianco sostituisce il colore del campione di primo piano o di sfondo
 selezionato. Se è selezionato **Pittura trasparente**, il nero o il bianco

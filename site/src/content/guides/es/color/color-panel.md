@@ -7,7 +7,7 @@ related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-manag
 Puedes elegir el color de pintura en el panel **Color**. Todos los espacios de
 trabajo usan el mismo color de pintura.
 
-![El panel Color con la rueda circular, la lectura arriba a la izquierda y las muestras bajo la rueda.](shot:color/panel "1 Lectura · 2 Botones de forma · 3 Editar color · 4 Primer plano y fondo · 5 Intercambiar · 6 Pintura transparente · 7 Negro y blanco")
+![El panel Color con la rueda circular, el indicador arriba a la izquierda y las muestras debajo de la rueda.](shot:color/panel "1 Indicador · 2 Botones de forma · 3 Editar color · 4 Primer plano y fondo · 5 Intercambiar · 6 Pintura transparente")
 
 ## Abrir el panel Color
 
@@ -81,9 +81,7 @@ para **Intercambiar colores**.
 
 ## Negro y blanco
 
-Selecciona **Pintar con negro** o **Pintar con blanco** (los dos círculos pequeños
-junto a la muestra transparente), o elige **Negro** o **Blanco** en la búsqueda de
-comandos.
+Elige **Negro** o **Blanco** en la búsqueda de comandos.
 
 El negro o el blanco sustituye el color de la muestra de primer plano o de fondo
 seleccionada. Si **Pintura transparente** está seleccionada, el negro o el blanco

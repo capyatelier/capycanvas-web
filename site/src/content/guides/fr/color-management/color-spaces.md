@@ -55,11 +55,7 @@ Les Préférences n’ont pas de réglage de Fusion.
 
 ## Attribuer un profil
 
-Choisissez **Édition > Attribuer un profil…** pour conserver les valeurs RVB du
-dessin et les lire dans un autre espace de travail. Choisissez l’espace sous
-**Espace colorimétrique**, où Adobe RGB (1998) apparaît sous le nom
-**Adobe RGB**. Les calques photo conservent le profil source de leur
-[photo d’origine](/fr/docs/layers/types/).
+Choisissez **Édition > Attribuer un profil…** pour conserver les valeurs RVB du dessin et les interpréter dans un autre espace de travail. Choisissez l’espace sous **Espace colorimétrique**, où Adobe RGB (1998) est indiqué comme **Adobe RGB**. Les calques Objet conservent le profil source de leur [photo d’origine](/fr/docs/layers/types/).
 
 ## Convertir l’espace colorimétrique
 

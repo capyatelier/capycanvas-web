@@ -152,21 +152,21 @@ dönüştürmenin değerlerini gösterir. **Çarpıt** modunda gösterilmez.
 
 ## Katman dönüştürmeleri
 
-Boya veya fotoğraf katmanlarının tamamına uygulanan bir dönüştürme her katmanla
+Boya veya nesne katmanlarının tamamına uygulanan bir dönüştürme her katmanla
 birlikte saklanır ve pikseller yeniden örneklenmez. **Dönüştür** saklanan
 dönüştürmeden yeniden açılır.
 
 Dönüştürmeyi piksellere uygulayana kadar ölçeklenmiş veya döndürülmüş bir
 katmanda rötuş yapamaz, bozulmuş veya çarpıtılmış bir katmana boyayamazsınız.
 
-## Dönüşümü piksellere uygula
+## Dönüşümü uygula
 
 Bir katmanın saklanan dönüştürmesini piksellerinin parçası yapabilirsiniz.
 
 Aşağıdakilerden birini yapın:
 
-- **Düzenle > Dönüşümü piksellere uygula** komutunu seçin.
-- **Katman > Katman ayarları > Dönüşümü piksellere uygula** komutunu seçin.
+- **Düzenle > Dönüşümü uygula** komutunu seçin.
+- **Katman > Katman ayarları > Dönüşümü uygula** komutunu seçin.
 
 İşlem sürerken tuvalin altındaki bir çubukta “Dönüşüm uygulanıyor…” yazar ve
 **İptal** düğmesi bulunur.

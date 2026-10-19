@@ -1,7 +1,7 @@
 ---
 title: "快速入门"
 description: "打开 {appName}，在第一幅空白画作上绘画，将其保存为 .capy 文件并导出 PNG。"
-related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
+related: ["start/workspaces", "start/device-support", "files/new", "files/open-save", "files/export"]
 ---
 
 ## 打开 {appName}
@@ -11,15 +11,7 @@ related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard
 - 在 [editor.capycanvas.art](https://editor.capycanvas.art/) 打开网页版编辑器。
 - 在[下载](/zh/download/)页面获取桌面应用、iPad 或 Android 测试版，或者查看将网页版编辑器安装为应用的步骤。
 
-网页版编辑器支持以下浏览器：
-
-| 系统 | 浏览器 |
-| --- | --- |
-| Windows | Chrome、Edge、Firefox 141 或更高版本 |
-| macOS | Chrome、Edge、Safari 26 或更高版本、Firefox 147 或更高版本（Apple 芯片） |
-| Linux（Wayland） | Chrome、Edge |
-| iPadOS 26 或更高版本 | Safari |
-| Android 12 或更高版本 | Chrome |
+原生应用和网页浏览器各自的要求参见[设备支持](/zh/docs/start/device-support/)。
 
 首次访问之后，网页版编辑器在没有网络连接时也能打开。
 
@@ -27,7 +19,7 @@ related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard
 
 ![新画作的图层面板，当前墨色位于纸张上方。](shot:files/new-layers)
 
-首次打开 {appName} 时，会显示[“绘画”](/zh/docs/start/workspaces/)工作区和一幅空白画作，标题栏显示“未命名 · 2048 × 1536”。已选中的**当前墨色**是一个空的绘画图层，位于白色填充图层**纸张**上方。当前工具为**钢笔**，画笔为 **G 笔**，颜色接近黑色。
+首次打开 {appName} 时，会显示[绘画](/zh/docs/start/workspaces/)工作区和一幅 300 ppi 的 A4 横向空白画作。纸张 **纸张** 上方的空白绘画图层 **当前墨色** 处于选中状态。**钢笔** 工具启用，使用 **G 笔** 画笔和接近黑色的颜色。
 
 之后再打开 {appName} 时，会进入上次使用的工作区，并打开上次打开的画作。
 
@@ -47,7 +39,7 @@ related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard
 
 ## 新建另一幅画作
 
-选择**文件 > 新建…**，然后在[新建绘画](/zh/docs/files/new/)对话框中选择**创建**。新画作在第一幅画作旁边的单独标签页中打开。
+选择 **文件 > 新建…**，在[新建画作](/zh/docs/files/new/)对话框中选择 **创建**。选择大小、分辨率、纸张和颜色设置，然后选择 **创建**。新画作在第一个画作旁边的独立标签页中打开。
 
 ## 保存画作
 

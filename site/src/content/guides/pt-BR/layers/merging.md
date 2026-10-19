@@ -9,9 +9,7 @@ mesclagem ficam perto do fim do menu **Camada** e do menu de cada camada.
 
 ![O menu Camada com Ribbon ativa, mostrando Mesclar camadas recortadas, Mesclar visíveis, Carimbar visíveis e Achatar imagem.](shot:layers/merging-menu)
 
-Cada mesclagem é um passo de desfazer. Uma [camada de foto](/pt-BR/docs/layers/types/)
-perde a foto original quando você a mescla. Não é possível mesclar enquanto você
-edita uma camada de seleção ou a Máscara rápida, nem durante uma transformação.
+Cada mesclagem é uma etapa de desfazer. Uma [camada de objeto](/pt-BR/docs/layers/types/) é rasterizada ao ser mesclada. Você não pode mesclar enquanto edita uma camada de seleção ou Máscara rápida, nem durante uma transformação.
 
 ## Mesclar abaixo
 
@@ -64,13 +62,9 @@ seleção.
 
 ## Mesclar visíveis
 
-Escolha **Camada > Mesclar visíveis** para mesclar todas as camadas visíveis,
-incluindo **Papel**, em uma só camada. As camadas ocultas continuam como estão.
+Escolha **Camada > Mesclar visíveis** para mesclar as camadas comuns visíveis. Papel permanece como a camada de Papel inferior. As camadas ocultas permanecem como estão.
 
-A camada mesclada fica com o nome e a posição da camada visível mais baixa
-(**Papel**, se estiver visível). As camadas ocultas que estavam recortadas por
-uma camada mesclada são liberadas. As camadas visíveis precisam estar
-desbloqueadas, e os grupos entre elas não podem conter camadas de seleção.
+A camada mesclada recebe o nome e a posição da camada mesclada mais baixa. Camadas ocultas recortadas a uma camada mesclada são liberadas. As camadas visíveis devem estar desbloqueadas e os grupos entre elas não podem conter camadas de seleção.
 
 ## Carimbar visíveis
 
@@ -83,10 +77,7 @@ Camadas bloqueadas não impedem **Carimbar visíveis**.
 
 ## Achatar imagem
 
-Escolha **Camada > Achatar imagem** para mesclar todas as camadas visíveis em uma
-só camada. As camadas ocultas e os pixels fora da tela são descartados, mas as
-camadas de seleção fora de grupos continuam. As camadas visíveis precisam estar
-desbloqueadas.
+Escolha **Camada > Achatar imagem** para mesclar as camadas comuns visíveis. Papel permanece como Papel na parte inferior. Camadas ocultas e pixels fora da tela são descartados, mas camadas de seleção fora dos grupos permanecem. As camadas visíveis devem estar desbloqueadas.
 
 ![O aviso sobre a tela que diz "Achatar descarta 2 camadas ocultas", com um botão Achatar imagem.](shot:layers/merging-flatten-notice)
 

@@ -1,10 +1,12 @@
 ---
 title: "画像の書き出し"
 description: "「画像を書き出す」ダイアログと再書き出しで、作品を統合した画像のコピーを書き出す操作。"
-related: ["files/open-save", "color-management/hdr", "color-management/color-spaces"]
+related: ["files/open-save", "layers/paper", "color-management/hdr", "color-management/color-spaces"]
 ---
 
 作品を統合した画像のコピーを書き出せます。書き出しによって`.capy`の作品が変更されることはなく、保存したことにもなりません。
+
+ネイティブアプリの書き出しには[用紙の照明](/ja/docs/layers/paper/)が含まれます。Web版の書き出しには現在含まれません。用紙テクスチャや大きさを変えた直後の一時的な凹凸プレビューは含まれません。
 
 ## 画像を書き出す
 
@@ -46,7 +48,7 @@ HDR PNG、HDR JPEG、HDR AVIFの範囲を超える色をクリップします。
 
 ### 出力プロファイル
 
-**sRGB**、**Display P3**、**Adobe RGB (1998)**、**ProPhoto RGB**のいずれかです。プロファイルが埋め込まれた写真レイヤーがある場合は、そのレイヤーごとに「元のプロファイル: *プロファイル名*」も選べます。
+**sRGB**、**Display P3**、**Adobe RGB (1998)**、**ProPhoto RGB**のいずれかです。プロファイルが埋め込まれたオブジェクトレイヤーがある場合は、そのレイヤーごとに「元のプロファイル: *プロファイル名*」も選べます。
 
 ### ビット深度
 

@@ -60,7 +60,7 @@ con **Contorno**.
 **Spessore linea** e **Opacità** si trovano nel pannello **Strumento** e nella
 barra Opzioni strumento. Condividono i loro valori con **Dimensioni pennello** e
 **Opacità** del pennello corrente
-([Dimensioni, opacità e flusso](/it/docs/brushes/basics/)), e **[** e **]**
+([Dimensioni, intensità e opacità](/it/docs/brushes/basics/)), e **[** e **]**
 cambiano Spessore linea.
 
 ### Spessore linea

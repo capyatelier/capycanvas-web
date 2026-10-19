@@ -24,6 +24,7 @@ Thực hiện một trong các cách sau:
 - Chụm hoặc mở hai ngón tay trên màn hình cảm ứng, hoặc trên bàn di chuột trên macOS và iPad.
 - Chọn một mức thu phóng trong trình đơn của chỉ số thu phóng, hoặc một nút thu phóng trong bảng **Điều hướng**.
 - Đẩy cần analog phải của tay cầm chơi game lên hoặc xuống.
+- Chọn công cụ **Thu phóng**, rồi nhấp hoặc kéo theo thiết lập Công cụ.
 
 Mức thu phóng từ 2% đến 1600%. **Ctrl**+cuộn thu phóng quanh con trỏ, còn thao tác
 chụm ngón thu phóng quanh các ngón tay. **Tốc độ cuộn để thu phóng** trong
@@ -37,6 +38,12 @@ trạng thái lật.
 
 Bản vẽ được canh vừa khi mở, và không canh lại khi bạn đổi kích thước cửa sổ.
 
+## Công cụ Thu phóng
+
+Chọn **Thu phóng** trên thanh Công cụ hoặc giữ phím truy cập tạm thời rồi dùng khung vẽ. Thiết lập **Nhấp** chọn nhấp để phóng to hay thu nhỏ. **Kéo** chọn thu phóng liên tục, vùng thu phóng, thao tác ngược với nhấp hoặc chỉ nhấp.
+
+![Thiết lập Nhấp và Kéo của công cụ Thu phóng.](shot:start/zoom-tool-settings)
+
 ## Pixel thực
 
 Chọn **Hiển thị > Pixel thực**, hoặc nhấn **Ctrl+1** hoặc **Ctrl+Alt+0**, để hiện
@@ -48,7 +55,7 @@ một pixel ảnh trên một pixel màn hình (100%). Trình đơn của chỉ 
 
 Thực hiện một trong các cách sau:
 
-- Cuộn. Giữ **Shift** và cuộn để di chuyển sang ngang.
+- Cuộn khi **Con lăn chuột** đặt thành dịch chuyển trong [Tùy chọn](/vi/docs/preferences/). Giữ **Shift** và cuộn để di chuyển ngang.
 - Giữ **Phím cách** và kéo.
 - Kéo bằng hai ngón tay trên màn hình cảm ứng.
 - Chọn công cụ **Bàn tay** hoặc nhấn **H**, rồi kéo.
@@ -64,7 +71,7 @@ cách di chuyển cho mỗi nấc cuộn.
 Thực hiện một trong các cách sau:
 
 - Chọn **Hiển thị > Xoay khung nhìn 90° sang trái** hoặc **Hiển thị > Xoay khung nhìn 90° sang phải**.
-- Xoay hai ngón tay trên màn hình cảm ứng, hoặc trên bàn di chuột trên macOS và iPad.
+- Xoay hai ngón tay trên màn hình cảm ứng, hoặc trên bàn di chuột trên macOS và iPad. khi bật **Xoay bằng hai ngón tay** trong Tùy chọn.
 - Gõ góc hoặc kéo thanh trượt góc xoay trong trình đơn của chỉ số thu phóng.
 - Chọn một nút xoay trong bảng **Điều hướng**.
 

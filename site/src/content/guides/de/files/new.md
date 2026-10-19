@@ -1,98 +1,49 @@
 ---
 title: "Neue Zeichnungen"
-description: "Der Dialog Neue Zeichnung und die Ebenen, mit denen eine neue Zeichnung beginnt."
-related: ["color-management/color-spaces", "layers/types", "files/open-save"]
+description: "Blattgröße, Auflösung, Papier, Farbeinstellungen und Vorgaben im Dialog Neue Zeichnung."
+related: ["layers/paper", "color-management/color-spaces", "layers/types", "files/open-save"]
 ---
 
-Im Dialog **Neue Zeichnung** können Sie eine Zeichnung beginnen. Die neue Zeichnung
-öffnet sich in einer eigenen Registerkarte, und die aktuelle Zeichnung bleibt geöffnet.
+Wählen Sie **Datei > Neu…**, drücken Sie **Strg+N**, wo verfügbar, oder wählen Sie **Neu…** in der Befehlsleiste. Die neue Zeichnung öffnet sich in einem eigenen Reiter.
 
-## Dialog Neue Zeichnung öffnen
+![Der Dialog Neue Zeichnung mit A4-Abmessungen, 300 ppi Auflösung, Farb- und Papiereinstellungen sowie Erstellen.](shot:files/new-dialog)
 
-Führen Sie eine der folgenden Aktionen aus:
+## Vorgaben
 
-- Wählen Sie **Datei > Neu…**.
-- Drücken Sie **Strg+N** (nicht im Web-Editor).
-- Wählen Sie in den Arbeitsbereichen Malen und Foto **Neu…** in der Werkzeugleiste Befehle aus.
+Wählen Sie eine Vorgabe nach Kategorie, suchen Sie nach Namen oder wählen Sie eine zuletzt verwendete Vorgabe. Eine Vorgabe füllt Abmessungen, Auflösung, Farbeinstellungen und Papiereinstellungen aus.
 
-Wählen Sie die unten beschriebenen Einstellungen und dann **Erstellen** aus.
+![Die Vorgabenauswahl in Neue Zeichnung.](shot:files/new-presets)
 
-**Neu…** ist nicht verfügbar, während ein Zuschnitt oder eine Transformation geöffnet
-ist. Sind bereits zu viele Zeichnungsdaten geöffnet, öffnet sich die neue Zeichnung
-erst, wenn Sie einige Zeichnungen schließen.
+Bevor Sie eine andere Einrichtung verwendet oder gespeichert haben, wählt Vorgaben **Skizzenbuch A4**: A4 im Hochformat (210 × 297 mm), Zeichenpapier in Naturweiß und 2480 × 3508 px bei 300 ppi.
 
-## Einstellungen
+Speichern Sie die aktuellen Einstellungen als benannte Vorgabe zur Wiederverwendung. Öffnen Sie das Menü einer gespeicherten Vorgabe, um sie umzubenennen oder zu löschen. Integrierte Vorgaben lassen sich nicht umbenennen oder löschen.
 
-![Der Dialog Neue Zeichnung mit der Vorgabe Standardzeichnung.](shot:files/new-dialog)
+## Blatt
 
-### Vorgabe
+Die Vorschau zeigt Proportionen und Ausrichtung des Blatts. Geben Sie einen Zeichnungsnamen ein und legen Sie **Breite** und **Höhe** in Pixeln, Zoll, Zentimetern oder Millimetern fest. Mit dem Verknüpfungsregler behalten Sie die aktuellen Proportionen bei, mit dem Ausrichtungsregler tauschen Sie Breite und Höhe.
 
-Füllt alle Felder aus einer integrierten oder einer von Ihnen gespeicherten Vorgabe.
-Wenn Sie danach ein Feld ändern, wechselt **Vorgabe** zu **Benutzerdefiniert**.
+**Auflösung** legt die Pixel pro Zoll für physische Abmessungen und die Skalierung der [Papiertextur](/de/docs/layers/paper/) fest. Eine Änderung nur der Auflösung ändert die Druckgrößen-Metadaten, ohne die Zeichnung neu zu berechnen.
 
-Alle integrierten Vorgaben haben 2048 × 1536 Pixel und einen weißen Hintergrund.
+Ein neues Fenster beginnt mit einer separaten leeren A4-Zeichnung im Querformat bei 300 ppi (3508 × 2480 px).
 
-| Vorgabe | Farbraum | Farbtiefe | Verrechnung |
-| --- | --- | --- | --- |
-| **Standardzeichnung** | sRGB | 8-Bit-SDR | Wahrnehmungsbasiert |
-| **Erweiterter Farbraum** | Display P3 | 8-Bit-SDR | Wahrnehmungsbasiert |
-| **Fotobearbeitung** | ProPhoto RGB | 16-Bit-SDR | Wahrnehmungsbasiert |
-| **HDR-Zeichnung** | sRGB | 16-Bit-Gleitkomma-HDR | Lineares Licht |
+Der Dialog zeigt die resultierenden Pixelmaße und die geschätzte Kapazität. Einstellungen jenseits der aktuellen Zeichnungsgrenze des Geräts können nicht erstellt werden; die Grenze hängt von Abmessungen, Farbtiefe und verfügbaren Grafikressourcen ab.
 
-### Gespeicherte Vorgabe entfernen
+## Papier
 
-Löscht die ausgewählte gespeicherte Vorgabe. Integrierte Vorgaben lassen sich nicht entfernen.
+![Die Papiertexturen in Neue Zeichnung.](shot:files/new-paper)
 
-### Breite (px) und Höhe (px)
+Wählen Sie eine integrierte oder importierte Papiertextur für die neue Zeichnung. **Importieren…** fügt der Papierbibliothek ein Bild hinzu und wählt es aus. Wählen Sie **Kein Papier**, um die Zeichnung ohne Papierebene zu erstellen.
 
-Von 1 bis 8192 Pixel. Die Felder akzeptieren Rechenausdrücke wie „160*2“.
+![Die Optionen Farbe und Transparent für Papier in Neue Zeichnung.](shot:files/new-paper-color)
 
-### Farbraum
+**Farbe** legt die Papierfarbe fest. **Transparent** behält die Papierebene bei, blendet sie anfangs aber aus. Dies unterscheidet sich von **Kein Papier**, das keine Papierebene erstellt.
 
-**sRGB**, **Display P3**, **Adobe RGB (1998)** oder **ProPhoto RGB** (siehe
-[Farbraum, Farbtiefe und Verrechnung](/de/docs/color-management/color-spaces/)).
-Bei **ProPhoto RGB** und **8-Bit-SDR** empfiehlt der Dialog 16-Bit-SDR.
+## Farbeinstellungen
 
-### Farbtiefe
+Wählen Sie **Farbraum**, **Farbtiefe** und **Überblendung** der Zeichnung. Fließkomma-Farbtiefen verwenden **Lineares Licht** als Verrechnung. Siehe [Farbraum, Farbtiefe und Verrechnung](/de/docs/color-management/color-spaces/).
 
-**8-Bit-SDR**, **16-Bit-SDR**, **16-Bit-Gleitkomma-HDR** oder **32-Bit-Gleitkomma-HDR**.
-Eine Gleitkomma-Farbtiefe ergibt eine HDR-Zeichnung.
+## Zeichnung erstellen
 
-### Verrechnung
+Wählen Sie **Erstellen**. Die Zeichnung beginnt mit einer leeren Malebene, **Aktuelle Tinte**, über dem gewählten Papier, wenn eines eingeschlossen wurde.
 
-**Wahrnehmungsbasiert** oder **Lineares Licht**. Bei einer Gleitkomma-Farbtiefe ist
-**Verrechnung** fest auf **Lineares Licht** eingestellt.
-
-### Hintergrund
-
-**Weiß** oder **Transparent**. **Transparent** blendet die Ebene **Papier** aus.
-
-### Vorgabename
-
-Speichert die Einstellungen unter diesem Namen als Vorgabe, wenn Sie **Erstellen**
-auswählen. Ein Name hat bis zu 64 Zeichen, und Sie können bis zu 64 Vorgaben behalten.
-
-### Diese Einstellungen für neue Zeichnungen verwenden
-
-Wenn aktiviert, öffnet sich der Dialog beim nächsten Mal mit diesen Einstellungen.
-Farbraum, Farbtiefe und Hintergrund werden außerdem zu den Einstellungen unter
-**Neue Zeichnungen** in den [Einstellungen](/de/docs/preferences/).
-
-## Die ersten Ebenen
-
-![Das Bedienfeld Ebenen einer neuen Zeichnung mit Aktuelle Tinte über Papier.](shot:files/new-layers)
-
-Eine neue Zeichnung hat zwei Ebenen. Ausgewählt ist **Aktuelle Tinte**, eine leere
-Malebene über **Papier**, einer weißen Füllebene (siehe
-[Ebenentypen](/de/docs/layers/types/)). Ebenen, die Sie später hinzufügen, heißen
-„Ebene“ mit einer Nummer.
-
-## Andere Plattformen
-
-Auf dem iPad, unter macOS und unter Android ersetzen ein Feld **Vorgabe speichern…**
-und eine Option **Standardwerte verwenden** die Elemente **Vorgabename** und **Diese
-Einstellungen für neue Zeichnungen verwenden**. Auf dem iPad und unter macOS gibt es
-keine Schaltfläche **Gespeicherte Vorgabe entfernen**.
-
-Unter Linux öffnet **Vorgabe speichern…** einen eigenen Dialog für den Namen, und
-**Farbraum**, **Farbtiefe** und **Verrechnung** sind unter **Farbe** zusammengefasst.
+Der Dialog behält die zuletzt zum Erstellen einer Zeichnung verwendeten Optionen bei. Eine Vorgabe ersetzt sie durch die Werte dieser Vorgabe.

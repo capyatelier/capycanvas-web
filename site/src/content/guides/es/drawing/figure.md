@@ -55,10 +55,7 @@ con **Contorno**.
 
 ## Anchura de línea y Opacidad
 
-**Anchura de línea** y **Opacidad** están en el panel **Herramienta** y en la barra
-Opciones de herramienta. Comparten sus valores con el **Tamaño del pincel** y la
-**Opacidad** del pincel actual ([Tamaño, opacidad y flujo](/es/docs/brushes/basics/)),
-y **[** y **]** cambian Anchura de línea.
+**Anchura de línea** y **Opacidad** están en el panel **Herramienta** y la barra Opciones de herramienta. Comparten sus valores con **Tamaño del pincel** y **Opacidad** del pincel actual ([Tamaño, intensidad y opacidad](/es/docs/brushes/basics/)), y **[** y **]** cambian la anchura de línea.
 
 ### Anchura de línea
 

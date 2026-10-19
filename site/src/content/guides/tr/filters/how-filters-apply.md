@@ -23,9 +23,7 @@ ayarlı değilse yalnızca o grupta altında kalan katmanları değiştirir.
 
 ## İliştirilmiş filtre
 
-Filtreleri bir boya katmanına, fotoğraf katmanına veya Geçiş ayarlı olmayan bir
-gruba iliştirebilirsiniz. Katmanı seçin, ardından Katmanlar panelinin altında,
-**Özellikler** panelinde veya katmanın menüsünde **Filtre ekle** öğesini seçin.
+Filtreleri bir boya katmanına, nesne katmanına veya Geçiş açık olmayan gruba ekleyebilirsiniz. Katmanı seçin, ardından Katmanlar veya **Özellikler** panelinin altındaki ya da katman menüsündeki **Filtre ekle** seçeneğini seçin.
 
 İliştirilmiş filtreler zincirin altından yukarı doğru, katmanın maskesinden sonra
 ve opaklığıyla karıştırma modundan önce uygulanır. Bir kırpma tabanında
@@ -54,7 +52,7 @@ Aşağıdakilerden birini yapın:
 kırpılmış katmanlarının üstünde kendi katmanına koyar.
 
 Filtre veya alttaki katman kilitliyken düğme kullanılamaz. Alttaki katman bir
-boya katmanı, fotoğraf katmanı veya grup değilse düğmenin araç ipucunda
+boya katmanı, nesne katmanı veya grup değilse düğmenin araç ipucunda
 “İliştirilecek alt katman yok” yazar.
 
 ## Filtre maskesi olarak seçimler

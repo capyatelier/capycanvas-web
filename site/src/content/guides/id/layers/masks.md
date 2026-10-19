@@ -5,7 +5,7 @@ related: ["layers/panel", "selections/working", "filters/how-filters-apply", "la
 ---
 
 Anda dapat menyembunyikan bagian lapisan dengan mask. Area yang dilukis di mask
-menampilkan lapisan, dan area kosong menyembunyikannya. Lapisan lukis, lapisan foto,
+menampilkan lapisan, dan area kosong menyembunyikannya. Lapisan lukis, lapisan Objek,
 grup, lapisan isian, dan filter dapat memiliki mask.
 
 ## Menambahkan mask
@@ -109,12 +109,10 @@ Lakukan salah satu langkah berikut:
 - Pilih **Terapkan Mask** di bilah pengeditan mask.
 
 **Terapkan mask ke lapisan** hanya berfungsi pada lapisan lukis, dan mask harus
-aktif. Pada lapisan yang didistorsi atau dilengkungkan, pilih **Terapkan
-Transformasi ke Piksel** terlebih dahulu. Untuk menerapkan mask grup, gunakan
+aktif. Pada lapisan yang didistorsi atau dilengkungkan, pilih **Terapkan transformasi** terlebih dahulu. Untuk menerapkan mask grup, gunakan
 **Gabungkan Grup** (lihat [Menggabungkan lapisan](/id/docs/layers/merging/)).
 
-Pada lapisan foto, **Kembalikan ke Foto Asli** memulihkan bagian yang dihapus oleh
-mask yang sudah diterapkan.
+Menerapkan mask ke lapisan Objek akan merasterisasinya.
 
 ## Mask pada lapisan filter dan lapisan isian
 

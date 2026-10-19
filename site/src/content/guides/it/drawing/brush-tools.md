@@ -1,12 +1,10 @@
 ---
 title: "Strumenti pennello"
 description: "Gli strumenti pennello, i loro predefiniti integrati e dove sceglierli."
-related: ["brushes/basics", "drawing/blend-liquify", "color/color-panel", "input/keyboard"]
+related: ["brushes/basics", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
 ---
 
-Puoi dipingere con gli strumenti **Penna**, **Matita**, **Pennello**,
-**Aerografo** e **Decorazione**, e cancellare con la **Gomma**. Ogni strumento
-contiene uno o più gruppi di predefiniti di pennello integrati.
+Puoi dipingere con gli strumenti **Penna**, **Matita**, **Carboncino**, **Gesso**, **Pastello**, **Pastello a cera**, **Pennello**, **Aerografo** e **Decorazione**, e cancellare con la **Gomma**. Ogni strumento contiene uno o più gruppi di predefiniti di pennello integrati.
 
 ## Strumenti e predefiniti
 
@@ -15,8 +13,11 @@ contiene uno o più gruppi di predefiniti di pennello integrati.
 | **Penna** | **Penna** | **G-Pen**, **G-Pen ruvida**, **Penna calligrafica**, **Penna antica**, **Penna realistica**, **Inchiostro bagnato**, **Inchiostro a macchie**, **Inchiostro realistico a pennello** |
 | | **Pennarello** | **Pennarello** |
 | **Matita** | **Matita** | **Matita**, **Matita appuntita**, **Matita per ombreggiare** |
-| | **Pastello** | **Carboncino**, **Gesso**, **Pastello a blocco** |
-| **Pennello** | **Dipingi** | **Pennello**, **Pennello a setole**, **Pennello piatto con trama**, **Sfregazzo asciutto**, **Velatura trasparente**, **Gouache coprente**, **Velatura moltiplicativa** |
+| **Carboncino** | **Carboncino** | **Carboncino** |
+| **Gesso** | **Gesso** | **Gesso** |
+| **Pastello** | **Pastello** | **Pastello a blocco** |
+| **Pastello a cera** | **Pastello a cera** | **Pastello a cera** |
+| **Pennello** | **Pittura** | **Pennello**, **Pennello a setole**, **Pennello piatto con trama**, **Sfregazzo asciutto**, **Velatura trasparente**, **Gouache coprente**, **Velatura moltiplicativa** |
 | | **Acquerello** | **Lavatura ad acquerello**, **Acquerello bagnato** |
 | | **Pittura a olio** | **Olio carico**, **Spatola**, **Pennello tondo bagnato** |
 | **Aerografo** | **Aerografo** | **Aerografo** |
@@ -36,7 +37,7 @@ Questi comportamenti sono integrati nei predefiniti e non hanno un'impostazione.
 | --- | --- |
 | **Penna calligrafica**, **Penna antica** | Pennino inclinato. |
 | **Pennarello** | Punta a scalpello. |
-| **Matita**, **Matita appuntita**, **Matita per ombreggiare**, **Carboncino** | Segno più largo quando inclini la penna. |
+| **Matita**, **Matita appuntita**, **Matita per ombreggiare**, **Carboncino**, **Gesso**, **Pastello a blocco**, **Pastello a cera** | Pressione e inclinazione cambiano forma e copertura del segno. Vedi [Materiali a secco](/it/docs/brushes/dry-media/). |
 | **Aerografo** | Continua ad aggiungere colore mentre tieni ferma la penna. |
 | **Spruzzo** | Sparge le impronte attorno al tratto. |
 | **Velatura moltiplicativa** | Dipinge in modalità Moltiplica. |
@@ -130,7 +131,7 @@ motivo:
 - Un livello di riempimento senza maschera.
 - Un livello con **Blocca modifica** attivo, o all'interno di un gruppo bloccato.
 - Un livello filtro senza maschera, quando il livello sottostante è bloccato o assente.
-- Un livello scalato o ruotato, finché non scegli **Applica trasformazione ai pixel** ([Spostamento e trasformazione](/it/docs/transform/move-transform/)).
+- Un livello scalato o ruotato, finché non scegli **Applica trasformazione** ([Spostamento e trasformazione](/it/docs/transform/move-transform/)).
 
 I pennelli bagnati, di sfumatura e ad acquerello dipingono una copertura uniforme
 su una maschera. Il primo tratto di questo tipo su ogni maschera mostra un avviso.

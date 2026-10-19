@@ -27,25 +27,23 @@ Wählen Sie **Filter > Farbe > Dynamik** und stellen Sie im Bedienfeld
 **Eigenschaften** **Dynamik** auf 25 ([Farbfilter](/de/docs/filters/color/)).
 Die Ebene **Dynamik** erscheint über **Kurven**.
 
-## 3. Stein auswählen
+## 3. Tiefen/Lichter hinzufügen
 
-1. Drücken Sie **M**, oder wählen Sie in der Werkzeugleiste Werkzeuge **Lassoauswahl** aus, und ziehen Sie eine Linie um den Stein.
-2. Wählen Sie **Auswahl > Auswahlkante weichzeichnen…**, oder wählen Sie in der Auswahlleiste **Verfeinern** aus und wählen Sie **Weiche Kante…** ([Mit Auswahlen arbeiten](/de/docs/selections/working/)).
-3. Stellen Sie **Feather radius** auf 20 px und wählen Sie **Anwenden** aus.
+Wählen Sie **Filter > Tonwert > Tiefen/Lichter**. Stellen Sie **Tiefen** im Panel **Eigenschaften** auf 35 %. Die Ebene **Tiefen/Lichter** erscheint über **Dynamik** und bleibt ausgewählt.
 
-## 4. Tiefen im Stein aufhellen
+## 4. Die Korrektur auf den Felsen maskieren
 
 Würden Sie die Tiefen des ganzen Fotos aufhellen, würde der schwarze
 Hintergrund grau. Das Beispiel hellt sie nur im Stein auf.
 
-Wählen Sie in der Auswahlleiste **Anpassen** aus und wählen Sie
-**Tonwert > Tiefen/Lichter**. Stellen Sie im Bedienfeld **Eigenschaften**
-**Tiefen** auf 35%.
+1. Drücken Sie **M**, oder wählen Sie in der Werkzeugleiste Werkzeuge **Lassoauswahl** aus, und ziehen Sie eine Linie um den Stein.
+2. Wählen Sie **Auswahl > Auswahlkante weichzeichnen…**, oder wählen Sie in der Auswahlleiste **Verfeinern** aus und wählen Sie **Weiche Kante…** ([Mit Auswahlen arbeiten](/de/docs/selections/working/)).
+3. Stellen Sie **Radius der weichen Kante** auf 20 px und wählen Sie **Anwenden** aus.
+4. Wählen Sie **Maske** in der Auswahlleiste.
 
-![Die Auswahlleiste mit dem Menü Anpassen, geöffnet bei der Kategorie Tonwert, neben der Auswahl um den Stein.](shot:photo/adjust-bar)
+![Die Auswahlleiste mit Maske neben der Auswahl um den Felsen.](shot:photo/adjust-bar)
 
-Die Auswahl wird zur Maske der neuen Ebene **Tiefen/Lichter**. Nur der Stein
-verändert sich.
+Die Auswahl wird zur Maske der Ebene **Tiefen/Lichter**. Nur der Felsen ändert sich.
 
 ## 5. Zeichnung speichern
 

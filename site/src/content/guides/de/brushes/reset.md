@@ -19,10 +19,7 @@ Jede Änderung an einer Pinseleinstellung wird sofort mit ihrer Vorgabe gespeich
 
 ## Eine Einstellung zurücksetzen
 
-Sie können eine einzelne Einstellung auf den integrierten Wert des Pinsels
-zurücksetzen. Doppelklicken (oder doppeltippen) Sie dazu in der Leiste
-Werkzeugoptionen auf die Beschriftung oder das Symbol der Einstellung
-([Größe, Deckkraft und Fluss](/de/docs/brushes/basics/)).
+Sie können eine Einstellung auf den integrierten Pinselwert zurücksetzen. Doppelklicken Sie auf die Beschriftung oder das Symbol der Einstellung in der Werkzeugoptionsleiste (oder tippen Sie doppelt darauf) ([Größe, Stärke und Deckkraft](/de/docs/brushes/basics/)).
 
 Das Bedienfeld **Werkzeug** hat keine Funktion zum Zurücksetzen. Um **Farbmischung**
 zurückzusetzen, wählen Sie **Oklab-Mischung** aus, die integrierte Option aller

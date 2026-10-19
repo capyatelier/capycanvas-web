@@ -99,9 +99,7 @@ Setzt den ausgewählten Farbstopp auf die aktuelle Farbe.
 
 ## Deckkraft
 
-**Deckkraft** legt die Stärke des Verlaufs fest und ist derselbe Wert wie die
-**Deckkraft** des aktuellen Pinsels. Im Arbeitsbereich Skizze verwenden Sie den Deckkraftregler am
-linken Rand.
+**Deckkraft** legt die Stärke des Verlaufs fest und entspricht der **Deckkraft** des aktuellen Pinsels. Verwenden Sie in Skizze **Stärkeregler** am linken Rand.
 
 ## Ebenen mit Verlaufsfüllung
 

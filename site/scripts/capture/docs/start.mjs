@@ -140,6 +140,12 @@ export default async function start({ e, b, shoot, example, message }) {
   await e.send({ type: 'set_rotation', rotation: 0 });
   await e.invoke('fit_canvas');
 
+  await e.invoke('zoom');
+  await e.show('tool_settings');
+  await e.wait(`document.querySelector('${group('tool_settings')} [data-toolbar-choice="zoom-drag"]')?.checkVisibility() && document.querySelector('${group('tool_settings')} [data-tool-action="center_zoom_clicks"]')?.checkVisibility()`);
+  await shoot('start/zoom-tool-settings', { target: [`${group('tool_settings')} .dock-tabs`, `${group('tool_settings')} .tool-settings-control`] });
+  await e.invoke('pen');
+
   await edit('Sketch');
   await shoot('start/undo-commands', { target: commandTiles('new_document', 'flip_horizontal') });
 

@@ -1,109 +1,45 @@
 ---
 title: "Jenis lapisan"
-description: "Jenis-jenis lapisan dalam gambar dan aturan untuk masing-masing."
-related: ["layers/panel", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
+description: "Lapisan cat, Objek, Kertas, grup, isian, filter, dan seleksi beserta aturan masing-masing."
+related: ["layers/panel", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
 ---
 
-![Panel Lapisan dengan lapisan seleksi, grup Lewat Langsung, filter Kurva, lapisan Isian Gradasi, lapisan Warna Solid, lapisan lukis Tinta saat ini, dan Kertas.](shot:layers/types-rows)
+![Jenis lapisan saat ini di panel Lapisan.](shot:layers/types-rows)
 
 ## Lapisan lukis
 
-Lapisan lukis menyimpan piksel hasil lukisan. Kuas, **Isi**, **Gradasi**, dan
-**Bentuk** hanya menambahkan piksel ke lapisan lukis.
+Lapisan cat menyimpan piksel dalam ruang warna gambar. Kuas, **Isi**, **Gradasi**, dan **Bentuk** melukis pada jenis lapisan ini.
 
-Untuk menambahkan lapisan lukis, pilih **Lapisan > Baru > Lapisan baru**, atau pilih
-**Lapisan baru** di bagian bawah panel Lapisan.
+Pilih **Lapisan > Baru > Lapisan baru**, atau pilih **Lapisan baru** di bagian bawah panel Lapisan. Gambar baru dimulai dengan **Tinta saat ini** di atas Kertas.
 
-Gambar baru dimulai dengan lapisan lukis kosong, **Tinta saat ini**, di atas
-**Kertas**. Hanya lapisan lukis yang memiliki **Kunci alpha**, **Mode warna**,
-**Bersihkan Seluruh Lapisan**, dan **Terapkan mask ke lapisan**.
+## Lapisan Objek
 
-## Grup
+Lapisan Objek menyimpan gambar impor dengan ukuran, kedalaman bit, dan profil warnanya sendiri. Membuka atau mengimpor gambar, menjatuhkan gambar di kanvas, dan menempelkan gambar dari aplikasi lain membuat lapisan Objek.
 
-Grup menyimpan lapisan dalam sebuah folder yang dapat Anda ciutkan menjadi satu baris.
-
-Lakukan salah satu langkah berikut:
-
-- Pilih **Lapisan > Baru > Grup baru**.
-- Pilih **Grup baru** di bagian bawah panel Lapisan.
-- Pilih beberapa baris, lalu pilih **Lapisan > Atur > Kelompokkan lapisan terpilih**.
-
-Pilih gambar mini folder untuk membuka atau menutup grup. Lencana pada folder
-menandai grup yang disetel ke [Lewat Langsung](/id/docs/layers/settings/).
-
-Grup menggabungkan lapisan-lapisannya terlebih dahulu, lalu membaurkan hasilnya
-dengan lapisan di bawahnya, kecuali jika grup disetel ke Lewat Langsung. Grup tidak
-memiliki piksel sendiri.
-
-## Lapisan isian
-
-Lapisan isian menutupi kanvas dengan satu warna (**Warna Solid**) atau gradasi
-(**Isian Gradasi**).
-
-Lakukan salah satu langkah berikut:
-
-- Pilih **Lapisan > Baru > Isian Warna Solid** atau **Isian Gradasi**.
-- Pilih **Filter > Isi > Warna Solid** atau **Isian Gradasi**.
-- Pilih **Warna Solid** atau **Isian Gradasi** di kategori **Isi** pada panel **Filter**.
-
-Lapisan isian ditempatkan di atas lapisan aktif dan lapisan yang diklip ke lapisan
-aktif. Warna Solid baru memakai warna cat saat ini, dan Isian Gradasi baru berjalan
-dari hitam ke putih. Jika ada seleksi aktif, seleksi itu menjadi mask lapisan isian.
-
-Untuk mengganti warna lapisan Warna Solid, pilih gambar mininya untuk membuka
-[Edit Warna](/id/docs/color/edit-color/), atau ubah **Warna** di panel **Properti**.
-[Gradasi](/id/docs/drawing/gradient/) menjelaskan pengaturan Isian Gradasi.
-
-Untuk melukis di lapisan isian, tambahkan mask. Kuas melukis di mask, bukan di
-isian. Lapisan isian dapat diklip, tetapi lapisan lain tidak dapat diklip ke lapisan
-isian dan filter tidak dapat dilampirkan ke lapisan isian.
-
-## Lapisan filter
-
-Lapisan filter menyimpan filter, bukan piksel. Barisnya menampilkan ikon dan nama
-filter. Lihat [Menambahkan filter](/id/docs/filters/adding/) dan
-[Cara filter diterapkan](/id/docs/filters/how-filters-apply/).
-
-Saat lapisan filter terpilih, kuas melukis di lapisan di bawahnya, atau di lapisan
-tempat filter itu dilampirkan. Jika filter memiliki mask, kuas melukis di mask.
-
-## Lapisan seleksi
-
-Lapisan seleksi menyimpan seleksi. Untuk menambahkannya, pilih **Lapisan Seleksi
-Baru** di bagian bawah panel Lapisan.
-
-Tombol di sebelah kanan gambar mini memuat seleksi yang tersimpan. Ikon mata
-menyembunyikan atau menampilkan hamparan seleksi di kanvas. Lapisan seleksi
-tidak memiliki opasitas, mode baur, mask, kliping, atau pengaturan acuan, dan tidak
-dapat digabungkan. [Lapisan seleksi](/id/docs/selections/selection-layers/) membahas
-cara mengedit seleksi yang tersimpan.
+Anda dapat memindahkan, mengubah ukuran, dan memutar lapisan Objek tanpa mengambil sampel ulang sumbernya berulang kali. Pilih **Lapisan > Rasterisasi Lapisan** saat perlu melukis pada pikselnya atau menggunakan perintah yang memerlukan lapisan cat. Rasterisasi mengonversinya ke ruang warna, kedalaman bit, dan kisi piksel gambar.
 
 ## Kertas
 
-**Kertas** adalah lapisan isian **Warna Solid** putih di dasar gambar baru. Anda dapat
-mengganti warna, menyembunyikan, atau menghapus **Kertas** seperti lapisan isian
-lainnya.
+Kertas menyediakan warna latar dan tekstur untuk goresan media kering. Kertas tetap di bagian bawah tumpukan lapisan dan memiliki gambar mini warna dan tekstur.
 
-**Kertas** tersembunyi sejak awal jika **Latar belakang** disetel ke **Transparan**
-di dialog [Gambar baru](/id/docs/files/new/), dan pada foto yang Anda buka.
+Gambar dapat memuat satu Kertas. Kertas tidak dapat memiliki mask, menjadi lapisan kliping, dipindahkan di atas lapisan biasa, atau digabung ke lapisan biasa. Lihat [Kertas](/id/docs/layers/paper/) untuk tekstur, pencahayaan, dan pengaturan lainnya.
 
-## Lapisan foto
+## Grup
 
-Lapisan foto adalah lapisan lukis yang menyimpan foto asli dalam ukuran, kedalaman
-bit, dan profil warnanya sendiri. Hasil melukis dan menghapus disimpan di atas foto.
+Grup menyimpan lapisan dalam folder yang dapat diciutkan. Pilih **Lapisan > Baru > Grup baru**, pilih **Grup baru** di bawah daftar lapisan, atau pilih **Lapisan > Atur > Kelompokkan lapisan terpilih**.
 
-Untuk menambahkan lapisan foto, lakukan salah satu langkah berikut:
+Grup menggabungkan isinya sebelum mencampurkannya dengan lapisan di bawah, kecuali [Lewati](/id/docs/layers/settings/) aktif.
 
-- Pilih **Berkas > Buka…**, lalu pilih foto.
-- Pilih **Berkas > Impor Gambar sebagai Lapisan…**.
-- Jatuhkan berkas gambar ke kanvas.
+## Lapisan isian
 
-Selama foto asli masih tersimpan, **Lapisan > Pengaturan Lapisan** memuat perintah
-berikut:
+**Warna Solid** dan **Isian Gradasi** menutupi kanvas dengan konten yang dihasilkan. Tambahkan dari **Lapisan > Baru**, menu **Filter > Isi**, atau panel **Filter**.
 
-- **Kembalikan ke Foto Asli** membuang hasil melukis dan menghapus, serta mask yang sudah diterapkan. Posisi, mask, opasitas, dan mode baur tetap, dan **Mode warna** kembali ke **Warna penuh**.
-- **Rasterisasi Sumber…** mengonversi foto asli ke ruang warna dan kedalaman bit gambar, dalam ukuran penuh. Setelah itu, **Kembalikan ke Foto Asli** tidak tersedia.
-- **Perbaiki Profil Sumber…** mengubah profil yang dipakai untuk membaca foto asli: **sRGB**, **Display P3**, **Adobe RGB (1998)**, atau **ProPhoto RGB**. Jika lapisan sudah dilukis, **Tambah Sumber Terkoreksi** menambahkan foto yang sudah dikoreksi sebagai lapisan baru, bukan mengubah profil lapisan itu.
+Pilih gambar mini Warna Solid untuk membuka **Edit Warna**. Tambahkan mask untuk melukis area isian yang terlihat. Anda dapat mengklip lapisan isian, tetapi tidak dapat mengklip lapisan lain kepadanya.
 
-**Kembalikan ke Foto Asli** dan **Rasterisasi Sumber…** juga ada di menu **Edit**.
-**Bersihkan Seluruh Lapisan** juga membuang foto asli.
+## Lapisan filter
+
+Lapisan filter mengubah lapisan di bawahnya alih-alih menyimpan piksel. Barisnya menampilkan ikon dan nama filter. Lihat [Cara filter diterapkan](/id/docs/filters/how-filters-apply/).
+
+## Lapisan seleksi
+
+Lapisan seleksi menyimpan seleksi. Pilih **Lapisan Seleksi Baru** di bawah daftar lapisan untuk menambahkannya. Lapisan ini tidak memiliki opasitas, mode campuran, mask, kliping, atau pengaturan referensi dan tidak dapat digabung.

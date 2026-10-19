@@ -78,7 +78,7 @@ and a notice offers to mark the layer below.
 Fill and Enclose and Fill share the settings below. **Auto select** and **Select by
 color** use the same values for all but **Opacity**. To reset a setting,
 double-click its label in the Tool Options bar
-([Size, opacity and flow](/docs/brushes/basics/)).
+([Size, strength and opacity](/docs/brushes/basics/)).
 
 ### Tolerance
 
@@ -103,8 +103,7 @@ edges.
 ### Opacity
 
 Sets the strength of the fill. Changing it changes the current brush's
-**Opacity**, and the other way around. In Sketch, use the opacity slider on the
-bar at the left edge.
+**Opacity**, and the other way around. In Sketch, use **Strength slider** on the bar at the left edge.
 
 ## Filling a selection
 

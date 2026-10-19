@@ -99,8 +99,7 @@ Mở [Sửa màu](/vi/docs/color/edit-color/) cho điểm màu đang chọn.
 
 ## Độ đục
 
-**Độ đục** đặt cường độ của dải chuyển màu, và là cùng giá trị với **Độ đục** của cọ
-hiện tại. Trong Phác thảo, dùng thanh trượt độ đục ở cạnh trái.
+**Độ đục** đặt cường độ chuyển sắc và có cùng giá trị với **Độ đục** của cọ hiện tại. Trong Phác thảo, dùng **Thanh trượt cường độ** ở cạnh trái.
 
 ## Lớp Tô chuyển màu
 

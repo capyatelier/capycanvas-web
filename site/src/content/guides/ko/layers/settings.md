@@ -132,6 +132,4 @@ related: ["layers/panel", "layers/blend-modes", "layers/types", "filters/how-fil
 
 ## 기타 레이어 설정 항목
 
-**레이어 설정**에는 **픽셀에 변형 적용**도 있습니다([이동과 변형](/ko/docs/transform/move-transform/) 참조).
-사진 레이어에서는 **원본 프로파일 복구…**, **원본 래스터화…**,
-**원본 사진으로 되돌리기**도 있습니다([레이어 종류](/ko/docs/layers/types/) 참조).
+**레이어 설정**에는 **변형 적용**도 있습니다([이동 및 변형](/ko/docs/transform/move-transform/)). 오브젝트 레이어에서는 **레이어 래스터화**를 선택해 원본을 편집 가능한 픽셀로 변환합니다([레이어 종류](/ko/docs/layers/types/)).

@@ -11,23 +11,19 @@ Los comandos de esta página están en el menú **Archivo**. En Boceto, ábrelo 
 
 ## Abrir un dibujo o una foto
 
-Puedes abrir dibujos `.capy` y fotos en formato OpenEXR, TIFF, PNG, WebP, BMP, JPEG,
-GIF, HEIF y AVIF. Cada archivo se abre en su propia pestaña.
+Puedes abrir dibujos `.capy` y fotos en formato OpenEXR, TIFF, PNG, WebP, BMP, JPEG, GIF, HEIF y AVIF. Cada uno se abre en su propia pestaña.
 
 Haz una de las siguientes acciones:
 
-- Elige **Archivo > Abrir…**. Puedes elegir varios archivos, salvo en Linux.
+- Elige **Archivo > Abrir…**. Puedes elegir varios archivos, excepto en Linux.
 - Pulsa **Ctrl+O**.
-- En Pintura y Foto, selecciona **Abrir…** en la barra de comandos.
-- En el editor web o en Linux, arrastra archivos sobre el nombre del dibujo o sobre las pestañas de la barra de título.
-- Si instalaste el editor web como aplicación, abre un archivo `.capy`, `.png`, `.jpg`, `.tif`, `.avif` o `.exr` con {appName} desde tu sistema.
+- En Pintura y Foto, selecciona **Abrir…** en la barra Comandos.
+- En el editor web o en Linux, arrastra archivos al nombre del dibujo o a las pestañas de la barra de título.
+- Si instalaste el editor web como aplicación, abre un archivo compatible con {appName} desde tu sistema.
 
 ## Fotos
 
-Una foto se abre como un dibujo nuevo con una capa de foto, con el nombre del
-archivo, sobre una capa **Papel**. La foto conserva su perfil de color y, de forma
-predeterminada, su profundidad de bits. Al guardar el dibujo se crea un archivo
-`.capy`; la foto nunca se sobrescribe.
+Una foto se abre como un dibujo nuevo con una capa de objeto cuyo nombre es el del archivo. El objeto conserva el tamaño, el perfil de color y, de forma predeterminada, la profundidad de bits de la imagen. Guardar el dibujo crea un archivo `.capy` y nunca sobrescribe la imagen de origen.
 
 - De un GIF o un WebP animado se abre el primer fotograma.
 - Una foto puede medir hasta 32768 píxeles por lado.
@@ -40,7 +36,7 @@ diálogo **Elegir interpretación de imagen**.
 
 ## Importar imágenes como capas
 
-Puedes añadir imágenes al dibujo actual como capas nuevas.
+Puedes añadir imágenes a un dibujo como capas nuevas.
 
 Haz una de las siguientes acciones:
 
@@ -48,9 +44,7 @@ Haz una de las siguientes acciones:
 - Pulsa **Ctrl+Mayús+O**.
 - Arrastra imágenes sobre el lienzo o sobre una fila del panel **Capas**.
 
-Cada imagen pasa a ser una capa con el nombre del archivo, sobre la capa
-seleccionada, con [tiradores de transformación](/es/docs/transform/move-transform/)
-para colocarla. Una imagen más grande que el lienzo se reduce para que quepa.
+Cada imagen se convierte en una [capa de objeto](/es/docs/layers/types/) con el nombre del archivo, encima de la capa seleccionada, con [tiradores de transformación](/es/docs/transform/move-transform/) para colocarla. Una imagen más grande que el lienzo se reduce para ajustarse.
 
 No puedes importar un archivo `.capy`. En el editor web, una imagen puede ocupar
 hasta 512 MiB.
@@ -65,9 +59,7 @@ Haz una de las siguientes acciones:
 - Pulsa **Ctrl+S**.
 - En Pintura y Foto, selecciona **Guardar** en la barra de comandos.
 
-La primera vez que guardas se te pide una ubicación, y las siguientes veces se
-escribe en el mismo archivo. Después de guardar, la pestaña muestra el nombre del
-archivo sin la marca ●.
+El primer guardado pide una ubicación; los siguientes usan el mismo archivo. La pestaña guardada muestra el nombre del archivo sin la marca ●.
 
 En Firefox y Safari, el dibujo solo cuenta como guardado después de seleccionar
 **Descargar** y luego **Archivo guardado** en el diálogo **Descargar archivo**.
@@ -82,17 +74,11 @@ el archivo cambió en el disco desde que lo abriste o lo guardaste.
 
 ## Lo que guarda un archivo .capy
 
-Un archivo `.capy` guarda cada capa con su máscara y sus ajustes, los filtros, las
-selecciones y guías guardadas, el espacio de color, la profundidad de bits y la
-mezcla, y los datos EXIF, XMP e IPTC de una foto. No guarda el historial de
-deshacer, la vista ni la selección activa.
+Un archivo `.capy` conserva cada capa con su máscara y ajustes, las imágenes de origen incrustadas de los objetos y las texturas de Papel importadas, los filtros, las selecciones y guías guardadas, el espacio de color, la profundidad de bits y la mezcla, y los datos EXIF, XMP e IPTC de una foto. No conserva el historial de deshacer, la vista ni la selección activa.
 
 ## Dibujos de solo lectura
 
-Un archivo `.capy` que {appName} no puede editar, como un archivo dañado, se
-abre en un diálogo en lugar de en una pestaña. **Copy Original File…** guarda una
-copia del archivo, y **Export Preview Image…** guarda la vista previa del dibujo
-como PNG.
+Un archivo `.capy` que {appName} no puede editar, incluido un archivo de un formato más nuevo no compatible o un archivo dañado, se abre en un diálogo en lugar de una pestaña. **Copy Original File…** guarda una copia del archivo y **Export Preview Image…** guarda la vista previa del dibujo como PNG.
 
 ## Pestañas de dibujo
 
@@ -114,8 +100,7 @@ En el editor web, arrastra una pestaña hacia un lado para reordenar las pestañ
 Un ● delante de un nombre indica cambios sin guardar. Si la barra de título es
 estrecha, las pestañas se convierten en un solo botón que abre la lista Dibujos.
 
-Cada pestaña conserva su propio historial de deshacer, su vista y su selección.
-Las pestañas no forman parte de un espacio de trabajo.
+Cada pestaña conserva su historial de deshacer, vista y selección. Las pestañas no forman parte de un espacio de trabajo.
 
 ## Dibujos…
 

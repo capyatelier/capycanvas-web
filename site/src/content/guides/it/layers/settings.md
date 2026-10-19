@@ -145,8 +145,4 @@ dipingi sulla maschera del livello.
 
 ## Altre voci di Impostazioni livello
 
-**Impostazioni livello** elenca anche **Applica trasformazione ai pixel** (vedi
-[Spostamento e trasformazione](/it/docs/transform/move-transform/)). Su un
-livello fotografico, elenca **Ripara profilo sorgente…**,
-**Rasterizza sorgente…** e **Ripristina foto originale** (vedi
-[Tipi di livello](/it/docs/layers/types/)).
+**Impostazioni livello** elenca anche **Applica trasformazione** (vedi [Spostamento e trasformazione](/it/docs/transform/move-transform/)). Su un livello Oggetto, scegli **Rasterizza livello** per convertirne l'origine in pixel modificabili (vedi [Tipi di livello](/it/docs/layers/types/)).

@@ -59,7 +59,7 @@ Thực hiện một trong các cách sau:
 
 ![Trình đơn Thêm bộ lọc mở từ cuối bảng Lớp.](shot:filters/add-filter-menu)
 
-**Thêm bộ lọc** dùng được với lớp vẽ, lớp ảnh và nhóm không đặt Xuyên qua, khi
+**Thêm bộ lọc** dùng được với lớp vẽ, lớp Đối tượng và nhóm không đặt Xuyên qua, khi
 các lớp này chưa khóa. Trình đơn của nút này có mọi danh mục trừ **Tô đầy**.
 
 ## Ngăn Bộ lọc trong Phác thảo

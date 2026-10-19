@@ -142,7 +142,4 @@ enquanto você pinta na máscara da camada.
 
 ## Outros itens de Configurações da camada
 
-**Configurações da camada** também lista **Aplicar transformação aos pixels**
-(consulte [Mover e Transformar](/pt-BR/docs/transform/move-transform/)). Em uma
-camada de foto, lista **Reparar perfil de origem…**, **Rasterizar origem…** e
-**Reverter para foto original** (consulte [Tipos de camada](/pt-BR/docs/layers/types/)).
+**Configurações da camada** também inclui **Aplicar transformação** (consulte [Mover e transformar](/pt-BR/docs/transform/move-transform/)). Em uma camada de objeto, escolha **Rasterizar camada** para converter sua origem em pixels editáveis (consulte [Tipos de camada](/pt-BR/docs/layers/types/)).

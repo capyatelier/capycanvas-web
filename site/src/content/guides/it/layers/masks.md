@@ -6,7 +6,7 @@ related: ["layers/panel", "selections/working", "filters/how-filters-apply", "la
 
 Puoi nascondere parti di un livello con una maschera. Le aree dipinte sulla
 maschera mostrano il livello, e le aree vuote lo nascondono. Possono avere una
-maschera i livelli di pittura, i livelli fotografici, i gruppi, i livelli di
+maschera i livelli di pittura, i livelli Oggetto, i gruppi, i livelli di
 riempimento e i filtri.
 
 ## Aggiungere una maschera
@@ -114,11 +114,10 @@ Esegui una delle seguenti operazioni:
 
 **Applica maschera al livello** funziona solo sui livelli di pittura, e la
 maschera deve essere attiva. Su un livello distorto o deformato, scegli prima
-**Applica trasformazione ai pixel**. Per applicare la maschera di un gruppo, usa
+**Applica trasformazione**. Per applicare la maschera di un gruppo, usa
 **Unisci gruppo** (vedi [Unire i livelli](/it/docs/layers/merging/)).
 
-Su un livello fotografico, **Ripristina foto originale** recupera ciò che una
-maschera applicata ha cancellato.
+Applicare una maschera a un livello Oggetto lo rasterizza.
 
 ## Maschere sui livelli filtro e di riempimento
 

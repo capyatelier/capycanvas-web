@@ -10,19 +10,19 @@ related: ["files/new", "files/export", "transform/move-transform", "start/undo"]
 
 ## 開啟畫作或照片
 
-可以開啟 `.capy` 畫作，以及 OpenEXR、TIFF、PNG、WebP、BMP、JPEG、GIF、HEIF 和 AVIF 格式的照片。每個檔案在單獨的分頁中開啟。
+可以打開 `.capy` 畫作，以及 OpenEXR、TIFF、PNG、WebP、BMP、JPEG、GIF、HEIF 和 AVIF 格式的照片。每個文件在自己的分頁中打開。
 
 執行以下任一操作：
 
-- 選擇**檔案 > 開啟…**。除 Linux 外，可以一次選擇多個檔案。
+- 選擇 **檔案 > 開啟…**。除 Linux 外，可以選擇多個文件。
 - 按 **Ctrl+O**。
-- 在「繪畫」和「照片」中，選擇「命令」工具列中的**開啟…**。
-- 在網頁版編輯器或 Linux 上，將檔案拖到標題列中的畫作名稱或分頁上。
-- 如果已將網頁版編輯器安裝為應用程式，可以在系統中用 {appName} 開啟 `.capy`、`.png`、`.jpg`、`.tif`、`.avif` 或 `.exr` 檔案。
+- 在“繪畫”和“照片”中，選擇命令工具列中的 **開啟…**。
+- 在網頁編輯器或 Linux 上，將文件拖到標題欄中的畫作名稱或分頁上。
+- 如果已將網頁編輯器安裝為應用，可從系統中使用 {appName} 打開受支持的文件。
 
 ## 照片
 
-照片會作為新畫作開啟，其中有一個以檔名命名的照片圖層，位於**紙張**圖層上方。照片保留其色彩描述檔，預設也保留其位元深度。儲存畫作會生成 `.capy` 檔案，不會覆蓋照片。
+照片會作為新畫作打開，其中包含以文件名命名的物件圖層。物件保留影像自身的尺寸、顏色描述檔和預設位元深度。儲存畫作會創建 `.capy` 文件，不會覆蓋源影像。
 
 - 動態 GIF 或 WebP 只開啟第一幀。
 - 照片每邊最多 32768 像素。
@@ -33,7 +33,7 @@ related: ["files/new", "files/export", "transform/move-transform", "start/undo"]
 
 ## 將影像匯入為圖層
 
-可以將影像作為新圖層新增到目前畫作中。
+可以將影像作為新圖層新增到畫作。
 
 執行以下任一操作：
 
@@ -41,7 +41,7 @@ related: ["files/new", "files/export", "transform/move-transform", "start/undo"]
 - 按 **Ctrl+Shift+O**。
 - 將影像拖到畫布上，或拖到**圖層**面板中的某一行上。
 
-每張影像都會成為一個以檔名命名的圖層，位於所選圖層上方，並帶有用於放置影像的[變形控制點](/zh-Hant/docs/transform/move-transform/)。比畫布大的影像會縮小到畫布內。
+每張影像都會在所選圖層上方成為以文件名命名的[物件圖層](/zh-Hant/docs/layers/types/)，並顯示用於放置的[變換手柄](/zh-Hant/docs/transform/move-transform/)。大於畫布的影像會縮小以適應畫布。
 
 不能匯入 `.capy` 檔案。在網頁版編輯器中，影像最大為 512 MiB。
 
@@ -55,7 +55,7 @@ related: ["files/new", "files/export", "transform/move-transform", "start/undo"]
 - 按 **Ctrl+S**。
 - 在「繪畫」和「照片」中，選擇「命令」工具列中的**儲存**。
 
-首次儲存時會詢問儲存位置，之後的儲存都寫入同一個檔案。儲存後，分頁上的檔名前不再有 ● 標記。
+首次儲存會詢問位置，之後儲存使用同一文件。已儲存的分頁顯示文件名，不帶 ● 標記。
 
 在 Firefox 和 Safari 中，只有在**下載檔案**對話方塊中選擇**下載**，再選擇**檔案已儲存**之後，畫作才算已儲存。
 
@@ -67,11 +67,11 @@ related: ["files/new", "files/export", "transform/move-transform", "start/undo"]
 
 ## .capy 檔案儲存的內容
 
-`.capy` 檔案儲存每個圖層及其遮罩和設定、濾鏡、已儲存的選取範圍和輔助線、色彩空間、位元深度和色彩混合方式，以及照片的 EXIF、XMP 和 IPTC 資料。它不儲存復原歷史記錄、檢視和目前選取範圍。
+`.capy` 文件保留每個圖層及其遮罩和設定、嵌入的物件源影像和匯入的紙張紋理、濾鏡、已儲存的選取範圍和參考線、色彩空間、位元深度和顏色混合，以及照片的 EXIF、XMP 和 IPTC 數據。它不保留復原歷程、視圖或目前選取範圍。
 
 ## 唯讀畫作
 
-{appName} 無法編輯的 `.capy` 檔案（例如已損壞的檔案）會在對話方塊中開啟，而不是在分頁中開啟。**Copy Original File…** 用於儲存檔案的副本，**Export Preview Image…** 用於將畫作的預覽圖儲存為 PNG。
+{appName} 無法編輯的 `.capy` 文件（包括不受支持的新格式文件或損壞的文件）會在對話框中打開，而非分頁。**Copy Original File…** 儲存文件副本，**Export Preview Image…** 將畫作預覽儲存為 PNG。
 
 ## 畫作分頁
 
@@ -91,7 +91,7 @@ related: ["files/new", "files/export", "transform/move-transform", "start/undo"]
 
 名稱前的 ● 表示有未儲存的更改。標題列較窄時，所有分頁會合併為一個按鈕，用於開啟「繪畫」列表。
 
-每個分頁都有自己的復原歷史記錄、檢視和選取範圍。分頁不屬於工作區。
+每個分頁保留自己的復原歷程、視圖和選取範圍。分頁不屬於工作區。
 
 ## 繪畫…
 

@@ -1,108 +1,45 @@
 ---
 title: "Layer types"
-description: "The kinds of layers in a drawing and the rules for each."
-related: ["layers/panel", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
+description: "Paint, Object, Paper, group, fill, filter and selection layers and the rules for each."
+related: ["layers/panel", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
 ---
 
-![The Layers panel with a selection layer, a Pass Through group, a Curves filter, a Gradient Fill layer, a Solid Color layer, the Current ink paint layer and Paper.](shot:layers/types-rows)
+![The current layer types in the Layers panel.](shot:layers/types-rows)
 
 ## Paint layer
 
-A paint layer holds painted pixels. Brushes, **Fill**, **Gradient** and
-**Figure** add pixels only to paint layers.
+A paint layer holds pixels in the drawing's color space. Brushes, **Fill**, **Gradient** and **Figure** paint on this layer type.
 
-To add a paint layer, choose **Layer > New > New layer**, or select **New
-layer** at the bottom of the Layers panel.
+Choose **Layer > New > New layer**, or select **New layer** at the bottom of the Layers panel. A new drawing starts with **Current ink** above Paper.
 
-A new drawing starts with an empty paint layer, **Current ink**, above
-**Paper**. Only paint layers have **Alpha lock**, **Color mode**, **Clear
-Entire Layer** and **Apply mask to layer**.
+## Object layer
 
-## Group
+An Object layer keeps an imported image at its own size, bit depth and color profile. Opening or importing an image, dropping an image on the canvas, and pasting an image from another app create Object layers.
 
-A group holds layers in a folder that you can collapse to one row.
-
-Do one of the following:
-
-- Choose **Layer > New > New group**.
-- Select **New group** at the bottom of the Layers panel.
-- Select several rows and choose **Layer > Organize > Group selected layers**.
-
-Select the folder thumbnail to expand or collapse the group. A badge on the
-folder marks a group set to [Pass Through](/docs/layers/settings/).
-
-A group combines its layers first and then blends the result with the layers
-below it, unless it is set to Pass Through. A group has no pixels of its own.
-
-## Fill layers
-
-A fill layer covers the canvas with one color (**Solid Color**) or a gradient
-(**Gradient Fill**).
-
-Do one of the following:
-
-- Choose **Layer > New > Solid Color Fill** or **Gradient Fill**.
-- Choose **Filter > Fill > Solid Color** or **Gradient Fill**.
-- Select **Solid Color** or **Gradient Fill** in the **Fill** category of the **Filters** panel.
-
-The fill layer goes above the active layer and the layers clipped to it. A new
-Solid Color uses the current paint color, and a new Gradient Fill runs from
-black to white. If a selection is active, it becomes the fill layer's mask.
-
-To change the color of a Solid Color, select its thumbnail to open
-[Edit Color](/docs/color/edit-color/), or change **Color** in the **Properties**
-panel. [Gradient](/docs/drawing/gradient/) describes the settings of a Gradient
-Fill.
-
-To paint on a fill layer, add a mask. Brushes paint the mask, not the fill.
-You can clip a fill layer, but you can't clip other layers to it or attach
-filters to it.
-
-## Filter layers
-
-A filter layer holds a filter instead of pixels. Its row shows the filter's
-icon and name. See [Adding filters](/docs/filters/adding/) and
-[How filters apply](/docs/filters/how-filters-apply/).
-
-With a filter layer selected, brushes paint on the layer below it, or on the
-layer it is attached to. If the filter has a mask, brushes paint the mask.
-
-## Selection layers
-
-A selection layer stores a selection. To add one, select **New Selection
-Layer** at the bottom of the Layers panel.
-
-The button to the right of the thumbnail loads the stored selection. The eye
-hides or shows the selection overlay on the canvas. A selection layer has no
-opacity, blend mode, mask, clipping or reference setting, and it can't be
-merged. [Selection layers](/docs/selections/selection-layers/) covers editing the
-stored selection.
+You can move, scale and rotate an Object layer without repeatedly resampling its source. Choose **Layer > Rasterize Layer** when you need to paint on its pixels or use a command that requires a paint layer. Rasterizing converts it to the drawing's color space, bit depth and pixel grid.
 
 ## Paper
 
-**Paper** is a white **Solid Color** fill layer at the bottom of a new drawing.
-You can recolor, hide or delete **Paper** like any other fill layer.
+Paper supplies the background color and the texture used by dry-media strokes. It stays at the bottom of the layer stack and has color and texture thumbnails.
 
-**Paper** starts hidden when **Background** is set to **Transparent** in the
-[New drawing](/docs/files/new/) dialog, and in a photo you open.
+A drawing can contain one Paper. Paper cannot have a mask, become a clipping layer, move above ordinary layers or be merged into an ordinary layer. See [Paper](/docs/layers/paper/) for its texture, lighting and other settings.
 
-## Photo layers
+## Group
 
-A photo layer is a paint layer that keeps the original photo at its own size,
-bit depth and color profile. Painting and erasing are stored on top of the
-photo.
+A group holds layers in a collapsible folder. Choose **Layer > New > New group**, select **New group** below the layer list, or choose **Layer > Organize > Group selected layers**.
 
-To add a photo layer, do one of the following:
+A group combines its contents before blending with layers below unless [Pass Through](/docs/layers/settings/) is on.
 
-- Choose **File > Open…** and select a photo.
-- Choose **File > Import Image as Layer…**.
-- Drop an image file on the canvas.
+## Fill layers
 
-While the original is kept, **Layer > Layer Settings** lists these commands:
+**Solid Color** and **Gradient Fill** cover the canvas with generated content. Add one from **Layer > New**, the **Filter > Fill** menu, or the **Filters** panel.
 
-- **Revert to Original Photo** discards the painting, erasing and applied masks. The position, mask, opacity and blend mode stay, and **Color mode** returns to **Full color**.
-- **Rasterize Source…** converts the original to the color space and bit depth of the drawing, at full size. Afterward, **Revert to Original Photo** is unavailable.
-- **Repair Source Profile…** changes the profile the original is read with: **sRGB**, **Display P3**, **Adobe RGB (1998)** or **ProPhoto RGB**. If the layer has painting on it, **Add Corrected Source** adds the corrected photo as a new layer instead.
+Select the thumbnail of Solid Color to open **Edit Color**. Add a mask to paint the visible area of a fill. You can clip a fill layer, but cannot clip other layers to it.
 
-**Revert to Original Photo** and **Rasterize Source…** are also in the **Edit**
-menu. **Clear Entire Layer** discards the original photo too.
+## Filter layers
+
+A filter layer changes layers below it instead of holding pixels. Its row shows the filter's icon and name. See [How filters apply](/docs/filters/how-filters-apply/).
+
+## Selection layers
+
+A selection layer stores a selection. Select **New Selection Layer** below the layer list to add one. It has no opacity, blend mode, mask, clipping or reference setting and cannot be merged.

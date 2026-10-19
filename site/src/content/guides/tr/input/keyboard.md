@@ -4,8 +4,7 @@ description: "Tercihler'in Klavye kısayolları sayfası ve varsayılan tuşlar.
 related: ["input/pen", "input/touch", "start/command-search", "preferences"]
 ---
 
-Komutların, araçların ve fırçaların tuşlarını Tercihler'in **Klavye
-kısayolları** sayfasında değiştirebilirsiniz.
+Komutların, araçların ve fırçaların tuşlarını Tercihler'in **Klavye kısayolları** sayfasında değiştirebilirsiniz.
 
 macOS'te ve iPad'de Ctrl yerine Command kullanılır; Alt tuşu Option'dır. Web
 uygulaması her bilgisayarda Ctrl gösterir ve Mac'te Command, Ctrl gibi çalışır.
@@ -16,15 +15,14 @@ uygulaması her bilgisayarda Ctrl gösterir ve Mac'te Command, Ctrl gibi çalı�
 
 Aşağıdakilerden birini yapın:
 
-- **Yardım > Klavye kısayolları** komutunu seçin.
+- **Düzenle > Klavye kısayolları** seçin.
 - **Ctrl+Shift+?** tuşlarına basın.
-- **Düzenle > Tercihler** komutunu seçin ve **Klavye kısayolları** sayfasını seçin.
+- **Düzenle > Tercihler** yolunu ve **Klavye kısayolları** seçeneğini seçin.
 
 ## Tuş eşlemesi hazır ayarları
 
 Başka bir uygulamayı örnek alan tuşlar kullanabilirsiniz. **Tuş eşlemesi**
-altında bir **Hazır ayar** seçin: **{appName}** (varsayılan), **Photoshop
-tarzı**, **Krita tarzı**, **Clip Studio Paint tarzı**, **Procreate tarzı**,
+altında bir **Hazır ayar** seçin: **{appName}** (varsayılan), **Photoshop tarzı**, **Krita tarzı**, **Clip Studio Paint tarzı**, **Procreate tarzı**,
 **GIMP tarzı** veya **Affinity tarzı**.
 
 Hazır ayar yalnızca bazı tuşları değiştirir ve sizin değiştirdiğiniz tuşları
@@ -95,8 +93,7 @@ gibi mod tuşları da aynı şekilde çalışır.
 ## Tuş eşlemelerini içe ve dışa aktarma
 
 Tuşlarınızı, değiştirici tuşlarınızı, parmak dokunuşlarınızı ve kalem
-düğmelerinizi bir `.capykeys` dosyası olarak kaydetmek için **Tuş eşlemesi
-seçenekleri** menüsünden **Dışa aktar…** komutunu seçin. **İçe aktar…**, böyle
+düğmelerinizi bir `.capykeys` dosyası olarak kaydetmek için **Tuş eşlemesi seçenekleri** menüsünden **Dışa aktar…** komutunu seçin. **İçe aktar…**, böyle
 bir dosyanın neleri ekleyeceğini, değiştireceğini ve kaldıracağını gösterdikten
 sonra dosyayı yükler. **İçe aktar** düğmesini seçene kadar hiçbir şey değişmez.
 
@@ -139,7 +136,7 @@ Ailedeki sonraki araç için tuşa yeniden basın.
 | **Rötuş araçları** (**Klonlama damgası**, **Düzeltme fırçası**, **Nokta düzeltme fırçası**) | **S** |
 | **Silgi** | **E** |
 | **Kement seçimi** | **M** |
-| **Otomatik seç** | **W** |
+| **Otomatik seç** | **G** |
 | **Doldur** | **F** |
 | **Gradyan** | **G** |
 | **Şekil** | **U** |
@@ -147,7 +144,7 @@ Ailedeki sonraki araç için tuşa yeniden basın.
 | **İşlem** | **O** |
 | **Dönüştür** | **Ctrl+T** |
 | **Kırp** | **C** |
-| **El** | **H** |
+| **El** | **Y** |
 | **Damlalık** | **I** |
 | Basılı tutulurken **Gezin** | **Boşluk** |
 | Basılı tutulurken **Renk örnekle** veya **Kaynağı ayarla** | **Alt** |
@@ -169,7 +166,7 @@ Ailedeki sonraki araç için tuşa yeniden basın.
 | **Seçimi tersine çevir** | **Ctrl+Shift+I** |
 | **Siyah / beyaza sıfırla** | **D** |
 | **Seçimi doldur** | **Shift+Backspace** |
-| **Seçili pikselleri temizle** | **Delete**, **Backspace** |
+| **Seçili pikselleri temizle** | **Sil**, **Backspace** |
 | **Seçimi yeni katmana kopyala** | **Ctrl+J** |
 | **Seçimi kesip yeni katmana taşı** | **Ctrl+Shift+J** |
 | **Alttakiyle birleştir** | **Ctrl+E** |

@@ -103,4 +103,4 @@ related: ["layers/panel", "layers/types", "layers/merging", "files/open-save"]
 - 选择图层面板底部的**将图像导入为图层…**。
 - 将图像文件拖到画布上，或拖到图层面板中的某一行上。
 
-每个文件会成为当前图层之上的[照片图层](/zh/docs/layers/types/)，或放在所拖到的行之上、之下或其中。图像居中放置并缩小到适合画布，带有[放置控制点](/zh/docs/transform/move-transform/)。
+每个文件都会在当前图层上方，或所拖放行的上方、下方或内部，成为[对象图层](/zh/docs/layers/types/)。图像居中并缩小以适应画布，带有[放置手柄](/zh/docs/transform/move-transform/)。

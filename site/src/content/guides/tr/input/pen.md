@@ -1,23 +1,16 @@
 ---
 title: "Kalem"
 description: "Tercihler'deki kalem ayarları ve Apple Pencil'da çift dokunma ve sıkıştırma."
-related: ["input/touch", "input/keyboard", "preferences", "brushes/basics"]
+related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
 Kalem ayarları **Düzenle > Tercihler** içindeki **Kalem ve giriş** sayfasındadır.
 
 ![Tercihler'in Kalem ve giriş sayfası.](shot:pen/pen-and-input)
 
-## Basınç tepkisi
+## Kalem basıncı
 
-Kalemin hafif basınca nasıl tepki vereceğini **Kalem tepkisi** altındaki
-**Basınç tepkisi** ile değiştirebilirsiniz. Düşük değerler hafif basıncı
-güçlendirir, yüksek değerler daha fazla kuvvet gerektirir. Aralık 0,25 × ile
-4,00 × arasıdır. Varsayılan değer olan 1,00 × ile kalemin basıncı
-değiştirilmeden kullanılır.
-
-Ayar, **Seçimi boya** ve **Hızlı maske** dâhil tüm fırçalara ve araçlara
-uygulanır. Önceden çizdiğiniz darbeler değişmez.
+Basınç eğrisini biçimlendirmek ve geçerli tuvalde denemek için **Kalem basıncı** yanındaki **Ayarla…** seçeneğini seçin. Eğri basınca duyarlı tüm fırça ve araçlara uygulanır; çizilmiş çizgiler değişmez. Bkz. [Kalem basıncı](/tr/docs/input/pen-pressure/).
 
 ## Fırça darbesi tahmini
 

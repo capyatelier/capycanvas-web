@@ -26,24 +26,25 @@ Choose **Filter > Color > Vibrance**, and set **Vibrance** to 25 in the
 **Properties** panel ([Color filters](/docs/filters/color/)). The **Vibrance**
 layer appears above **Curves**.
 
-## 3. Select the rock
+## 3. Add Shadows/Highlights
 
-1. Press **M**, or select **Lasso selection** in the Tools toolbar, and draw around the rock.
-2. Choose **Select > Feather Selection…**, or select **Refine** in the selection bar and choose **Feather…** ([Working with selections](/docs/selections/working/)).
-3. Set **Feather radius** to 20 px and select **Apply**.
+Choose **Filter > Tone > Shadows/Highlights**. Set **Shadows** to 35% in the
+**Properties** panel. The **Shadows/Highlights** layer appears above
+**Vibrance** and remains selected.
 
-## 4. Lift the shadows in the rock
+## 4. Mask the adjustment to the rock
 
 Lifting the shadows of the whole photo would turn the black background gray.
 The example lifts them in the rock only.
 
-Select **Adjust** in the selection bar and choose
-**Tone > Shadows/Highlights**. Set **Shadows** to 35% in the **Properties**
-panel.
+1. Press **M**, or select **Lasso selection** in the Tools toolbar, and draw around the rock.
+2. Choose **Select > Feather Selection…**, or select **Refine** in the selection bar and choose **Feather…** ([Working with selections](/docs/selections/working/)).
+3. Set **Feather radius** to 20 px and select **Apply**.
+4. Select **Mask** in the selection bar.
 
-![The selection bar with the Adjust menu open on the Tone category, beside the selection around the rock.](shot:photo/adjust-bar)
+![The selection bar with Mask beside the selection around the rock.](shot:photo/adjust-bar)
 
-The selection becomes the mask of the new **Shadows/Highlights** layer. Only
+The selection becomes the mask of the **Shadows/Highlights** layer. Only
 the rock changes.
 
 ## 5. Save the drawing

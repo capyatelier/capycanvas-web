@@ -1,83 +1,42 @@
 ---
 title: "Copiar y pegar"
-description: "Copiar píxeles y pegarlos como capas nuevas, dentro de {appName} y entre aplicaciones."
-related: ["selections/working", "transform/move-transform", "layers/working", "files/open-save"]
+description: "Copiar píxeles y pegarlos como capa, máscara o dibujo nuevo."
+related: ["selections/working", "transform/move-transform", "layers/types", "files/open-save"]
 ---
 
-Puedes copiar píxeles de una capa o de la imagen visible y pegarlos como una capa
-nueva. Los comandos están en el menú **Editar** y en la búsqueda de comandos.
+Los comandos del portapapeles están en el menú **Editar** y en la búsqueda de comandos.
 
-![Los comandos del portapapeles en el menú Editar.](shot:transform/clipboard-edit-menu)
+![Pegado especial en el menú Editar.](shot:transform/clipboard-edit-menu)
 
-| Comando | Tecla |
-| --- | --- |
-| **Cortar** | **Ctrl+X** |
-| **Copiar** | **Ctrl+C** |
-| **Copiar combinado** | **Ctrl+Mayús+C** |
-| **Pegar** | **Ctrl+V** |
-| **Pegar en su posición** | **Ctrl+Mayús+V** |
-| **Pegar dentro** | |
+## Copiar y cortar
 
-**Copiar**, en la [barra de selección](/es/docs/selections/working/), contiene
-**Copiar**, **Copiar combinado** y **Cortar**.
+**Copiar** (**Ctrl+C**) copia los píxeles de la capa seleccionada dentro de la selección, sin su opacidad, máscara ni filtros adjuntos. Sin selección, copia la capa dentro del lienzo.
 
-## Copiar
+**Cortar** (**Ctrl+X**) copia los mismos píxeles y los borra. No está disponible en una capa bloqueada o con **Bloquear alfa**.
 
-Copia los píxeles propios de la capa activa que están dentro de la selección,
-sin la opacidad, la máscara ni los filtros adjuntos de la capa. Sin selección,
-copia toda la capa dentro del lienzo.
-
-## Cortar
-
-Copia igual que **Copiar** y después borra de la capa los píxeles seleccionados.
-No puedes cortar de una capa con **Bloquear alfa** activado.
-
-## Copiar combinado
-
-Copia la imagen visible dentro de la selección, tal como aparece en una
-exportación.
-
-## Lo que no se puede copiar
-
-Los grupos, las capas de filtro y las capas de selección no tienen píxeles
-propios. Para copiar de un grupo, selecciona una capa dentro de él. No puedes
-copiar la imagen en la Máscara rápida, y **Copiar** y **Cortar** no están
-disponibles mientras editas una máscara.
-
-Una copia grande muestra un aviso de progreso con **Cancelar**.
+**Copiar combinado** (**Ctrl+Shift+C**) copia el resultado visible dentro de la selección, incluida la iluminación del Papel. Los grupos, las capas de filtro y las capas de selección no tienen píxeles propios.
 
 ## Pegar
 
-Añade el portapapeles como una capa nueva activa.
+**Pegar** (**Ctrl+V**) añade el contenido del portapapeles como una capa nueva y abre tiradores de transformación cuando es necesario colocarlo. Una imagen de otra aplicación se convierte en una [capa de objeto](/es/docs/layers/types/), conservando su origen hasta que la rasterices.
 
-- Una copia de {appName} aparece donde se copió si ese sitio está a la vista, o en el centro de la vista si no lo está.
-- Una imagen de otra aplicación se abre en el cuadro de transformación. **Aplicar** coloca la imagen y **Cancelar** descarta el pegado (consulta [Mover y transformar](/es/docs/transform/move-transform/)).
+Una copia hecha dentro de {appName} vuelve a la posición copiada cuando esa posición es visible. De lo contrario, se coloca en el centro de la vista.
 
-## Pegar en su posición
+## Pegado especial
 
-Añade el portapapeles como una capa nueva en el sitio de donde se copió, sin
-cuadro de transformación. Una imagen de otra aplicación aparece en el centro de
-la vista a tamaño completo.
+Abre **Editar > Pegado especial** para elegir un destino.
 
-## Pegar dentro
+- **Pegar en su posición** añade una capa en la posición copiada sin abrir tiradores de transformación.
+- **Pegar dentro** añade una capa con la selección activa como máscara y después quita la selección.
+- **Pegar máscara** sustituye o añade la máscara de la capa seleccionada con la imagen del portapapeles.
+- **Pegar como imagen nueva** crea un dibujo nuevo a partir del portapapeles.
 
-Funciona igual que **Pegar en su posición** y da a la capa nueva una
-[máscara](/es/docs/layers/masks/) que muestra solo la selección. Después, la
-selección se quita. **Pegar dentro** necesita una selección.
+Los comandos que requieren una selección, una capa editable o una imagen compatible del portapapeles aparecen atenuados.
 
-## Pegar entre aplicaciones
+![Las opciones de Pegado especial para capas, máscaras y dibujos nuevos.](shot:transform/paste-special)
 
-Las demás aplicaciones reciben una copia de {appName} como imagen PNG sRGB de
-8 bits. Al volver a pegar en {appName}, se usa la copia con toda su
-profundidad de bits mientras siga en el portapapeles.
+## Entre aplicaciones
 
-Una copia pegada en un dibujo con otros ajustes de color pasa a ser una
-[capa de foto](/es/docs/layers/types/), convertida desde su propio perfil de
-color.
+Otras aplicaciones reciben una copia de {appName} como PNG sRGB de 8 bits. Mientras la copia interna permanezca en el portapapeles, otro dibujo de {appName} recibe su precisión original.
 
-Mientras escribes en un campo de texto, las teclas del portapapeles cortan,
-copian y pegan texto.
-
-En el editor web, una imagen pegada puede ocupar hasta 512 MiB. En un navegador
-que no puede pegar imágenes, elige **Archivo > Importar imagen como capa…** en
-su lugar.
+En el editor web, una imagen pegada puede tener hasta 512 MiB. Si el navegador no puede pegar imágenes, usa **Archivo > Importar imagen como capa…**.

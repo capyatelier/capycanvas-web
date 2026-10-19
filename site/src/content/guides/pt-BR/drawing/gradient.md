@@ -101,9 +101,7 @@ Define a cor atual no ponto de cor selecionado.
 
 ## Opacidade
 
-**Opacidade** define a intensidade do degradê e é o mesmo valor da **Opacidade**
-do pincel atual. Em Esboço, use o controle deslizante de opacidade na borda
-esquerda.
+**Opacidade** define a intensidade do gradiente e tem o mesmo valor que a **Opacidade** do pincel atual. Em Esboço, use **Controle de intensidade** na borda esquerda.
 
 ## Camadas de Preenchimento de degradê
 

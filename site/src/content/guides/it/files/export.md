@@ -1,11 +1,13 @@
 ---
 title: "Esportare immagini"
 description: "Esportare una copia unita di un disegno come immagine con la finestra di dialogo Esporta immagine ed Esporta di nuovo."
-related: ["files/open-save", "color-management/hdr", "color-management/color-spaces"]
+related: ["files/open-save", "layers/paper", "color-management/hdr", "color-management/color-spaces"]
 ---
 
 Puoi esportare una copia unita del disegno come immagine. L'esportazione non
 modifica il disegno `.capy` e non vale come salvataggio.
+
+Le esportazioni native includono l’[illuminazione visibile della Carta](/it/docs/layers/paper/). Le esportazioni web attualmente la omettono. L'anteprima temporanea del rilievo mostrata dopo aver cambiato la trama della Carta o la Scala non è inclusa.
 
 ## Esportare un'immagine
 
@@ -57,7 +59,7 @@ perdita** (vedi Limiti dei formati più sotto).
 ### Profilo di uscita
 
 **sRGB**, **Display P3**, **Adobe RGB (1998)** o **ProPhoto RGB**, più
-«Originale: *nome*» per ogni livello fotografico con un proprio profilo
+«Originale: *nome*» per ogni livello Oggetto con un proprio profilo
 incorporato.
 
 ### Profondità in bit

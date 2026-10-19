@@ -1,25 +1,26 @@
 ---
 title: "Alat kuas"
 description: "Alat kuas, prasetel bawaannya, dan tempat memilihnya."
-related: ["brushes/basics", "drawing/blend-liquify", "color/color-panel", "input/keyboard"]
+related: ["brushes/basics", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
 ---
 
-Anda dapat melukis dengan alat **Pena**, **Pensil**, **Kuas Cat**, **Kuas Semprot Halus**,
-dan **Dekorasi**, serta menghapus dengan **Penghapus**. Setiap alat memuat satu atau
-beberapa grup prasetel kuas bawaan.
+Anda dapat melukis dengan alat **Pena**, **Pensil**, **Arang**, **Kapur**, **Pastel**, **Krayon**, **Kuas Cat**, **Kuas semprot halus**, dan **Dekorasi**, serta menghapus dengan **Penghapus**. Setiap alat memuat satu atau beberapa grup preset kuas bawaan.
 
 ## Alat dan prasetel
 
-| Alat | Grup | Prasetel |
+| Alat | Grup | Preset |
 | --- | --- | --- |
 | **Pena** | **Pena** | **Pena G**, **Pena G Kasar**, **Pena Kaligrafi**, **Pena Antik**, **Pena Realistis**, **Tinta Basah**, **Tinta Bercak**, **Tinta Sapuan Realistis** |
 | | **Spidol** | **Spidol** |
 | **Pensil** | **Pensil** | **Pensil**, **Pensil Runcing**, **Pensil Arsir** |
-| | **Pastel** | **Arang**, **Kapur**, **Balok Pastel** |
+| **Arang** | **Arang** | **Arang** |
+| **Kapur** | **Kapur** | **Kapur** |
+| **Pastel** | **Pastel** | **Balok Pastel** |
+| **Krayon** | **Krayon** | **Krayon** |
 | **Kuas Cat** | **Lukis** | **Kuas Cat**, **Kuas Berbulu**, **Kuas Pipih Bertekstur**, **Sapuan Kering**, **Sapuan Tipis Transparan**, **Gouache Pekat**, **Sapuan Tipis Perkalian** |
 | | **Cat air** | **Sapuan Cat Air**, **Cat Air Basah** |
 | | **Cat minyak** | **Cat Minyak Penuh**, **Pisau Palet**, **Kuas Bulat Basah** |
-| **Kuas Semprot Halus** | **Kuas semprot halus** | **Kuas Semprot Halus** |
+| **Kuas semprot halus** | **Kuas semprot halus** | **Kuas semprot halus** |
 | | **Semprot** | **Semprot** |
 | **Penghapus** | **Penghapus** | **Penghapus** |
 | **Dekorasi** | **Tekstur** | **Tekstur Ganda** |
@@ -36,7 +37,7 @@ Perilaku berikut sudah tertanam di prasetel dan tidak memiliki pengaturan.
 | --- | --- |
 | **Pena Kaligrafi**, **Pena Antik** | Mata pena miring. |
 | **Spidol** | Ujung pahat. |
-| **Pensil**, **Pensil Runcing**, **Pensil Arsir**, **Arang** | Goresan lebih lebar saat pena dimiringkan. |
+| **Pensil**, **Pensil Runcing**, **Pensil Arsir**, **Arang**, **Kapur**, **Balok Pastel**, **Krayon** | Tekanan dan kemiringan mengubah bentuk dan cakupan goresan. Lihat [Media kering](/id/docs/brushes/dry-media/). |
 | **Kuas Semprot Halus** | Terus menambahkan cat selama pena ditahan diam. |
 | **Semprot** | Menyebarkan tapak kuasnya di sekitar goresan. |
 | **Sapuan Tipis Perkalian** | Melukis dengan mode Perkalian. |
@@ -123,7 +124,7 @@ menyebutkan alasannya:
 - Lapisan isian tanpa mask.
 - Lapisan dengan **Kunci pengeditan** aktif, atau yang berada di dalam grup terkunci.
 - Lapisan filter tanpa mask, jika lapisan di bawahnya terkunci atau tidak ada.
-- Lapisan yang diskalakan atau diputar, sampai Anda memilih **Terapkan Transformasi ke Piksel** ([Pemindahan dan transformasi](/id/docs/transform/move-transform/)).
+- Lapisan yang diskalakan atau diputar, sampai Anda memilih **Terapkan transformasi** ([Pemindahan dan transformasi](/id/docs/transform/move-transform/)).
 
 Kuas basah, kuas pembaur, dan kuas cat air melukis cakupan polos pada mask. Goresan
 pertama dari kuas seperti itu pada setiap mask menampilkan pemberitahuan.

@@ -5,7 +5,7 @@ related: ["layers/panel", "selections/working", "filters/how-filters-apply", "la
 ---
 
 You can hide parts of a layer with a mask. Areas painted on the mask show the
-layer, and empty areas hide it. Paint layers, photo layers, groups, fill layers
+layer, and empty areas hide it. Paint layers, Object layers, groups, fill layers
 and filters can have masks.
 
 ## Adding a mask
@@ -109,12 +109,11 @@ Do one of the following:
 - Select **Apply Mask** in the mask editing bar.
 
 **Apply mask to layer** works only on paint layers, and the mask must be
-enabled. On a distorted or warped layer, choose **Apply Transform to Pixels**
+enabled. On a distorted or warped layer, choose **Apply transform**
 first. To apply the mask of a group, use **Merge Group** (see
 [Merging layers](/docs/layers/merging/)).
 
-On a photo layer, **Revert to Original Photo** brings back what an applied mask
-erased.
+Applying a mask to an Object layer rasterizes it.
 
 ## Masks on filter and fill layers
 

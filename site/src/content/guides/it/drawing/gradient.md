@@ -101,9 +101,7 @@ Imposta il punto selezionato sul colore corrente.
 
 ## Opacità
 
-**Opacità** imposta l'intensità della sfumatura, ed è lo stesso valore
-dell'**Opacità** del pennello corrente. In Schizzo, usa il cursore dell'opacità
-sul bordo sinistro.
+**Opacità** imposta l'intensità della sfumatura ed è lo stesso valore dell'**Opacità** del pennello corrente. In Schizzo, usa **Cursore intensità** sul bordo sinistro.
 
 ## Livelli Riempimento sfumato
 

@@ -11,7 +11,7 @@ vẫn nằm trên lớp của chúng ở trạng thái ẩn, trừ khi bạn b�
 
 Thực hiện một trong các cách sau:
 
-- Chọn **Chỉnh sửa > Ảnh > Cắt xén**.
+- Chọn **Ảnh > Cắt xén**.
 - Nhấn **C**.
 - Trong Ảnh, chọn **Cắt xén** trên Thanh công cụ vẽ.
 
@@ -105,7 +105,7 @@ Bạn có thể cắt xén khung vẽ theo giới hạn của vùng chọn.
 
 Thực hiện một trong các cách sau:
 
-- Chọn **Chỉnh sửa > Ảnh > Cắt khung vẽ theo vùng chọn**.
+- Chọn **Ảnh > Cắt khung vẽ theo vùng chọn**.
 - Chọn **Cắt xén** trên [thanh vùng chọn](/vi/docs/selections/working/).
 
 Pixel bên ngoài giới hạn vùng chọn vẫn nằm trên lớp của chúng ở trạng thái ẩn. Bạn
@@ -113,7 +113,7 @@ không thể cắt xén theo vùng chọn đã đảo.
 
 ## Lấy lại pixel bị cắt
 
-Chọn **Chỉnh sửa > Ảnh > Hiện tất cả** để mở rộng khung vẽ cho đến khi hiện pixel
+Chọn **Ảnh > Hiện tất cả** để mở rộng khung vẽ cho đến khi hiện pixel
 của mọi lớp, hoặc làm khung vẽ lớn hơn bằng
-**Chỉnh sửa > Ảnh > Kích thước khung vẽ…** (xem
+**Ảnh > Kích thước khung vẽ…** (xem
 [Kích thước và góc xoay ảnh](/vi/docs/transform/image/)).

@@ -79,10 +79,7 @@ Remplissage ne peint rien et un avis propose de marquer le calque inférieur.
 
 ![Le panneau Outil pour Remplissage avec Tolérance, le groupe Bords et Opacité.](shot:drawing/fill-settings)
 
-Remplissage et Entourer et remplir partagent les réglages ci-dessous.
-**Sélection automatique** et **Sélection par couleur** utilisent les mêmes valeurs, sauf
-**Opacité**. Pour réinitialiser un réglage, double-cliquez sur son libellé dans
-la barre Options de l’outil ([Taille, opacité et débit](/fr/docs/brushes/basics/)).
+Remplir et Entourer et remplir partagent les réglages ci-dessous. **Sélection automatique** et **Sélection par couleur** utilisent les mêmes valeurs sauf pour **Opacité**. Pour réinitialiser un réglage, double-cliquez sur son libellé dans la barre Options de l’outil ([Taille, intensité et opacité](/fr/docs/brushes/basics/)).
 
 ### Tolérance
 
@@ -106,9 +103,7 @@ bords nets au pixel près.
 
 ### Opacité
 
-Définit la force du remplissage. La modifier change l’**Opacité** du pinceau
-actif, et inversement. Dans Croquis, utilisez le curseur d’opacité de la barre du
-bord gauche.
+Définit l’intensité du remplissage. La modifier change l’**Opacité** du pinceau actif, et inversement. Dans Croquis, utilisez **Curseur d’intensité** sur la barre du bord gauche.
 
 ## Remplir une sélection
 

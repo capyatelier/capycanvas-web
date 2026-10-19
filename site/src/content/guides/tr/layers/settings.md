@@ -137,8 +137,4 @@ da tamamen saydam yapar. Katmanın maskesine boyarken **Renk modu** gizlenir.
 
 ## Diğer Katman ayarları öğeleri
 
-**Katman ayarları** ayrıca **Dönüşümü piksellere uygula** komutunu listeler
-(bkz. [Taşıma ve dönüştürme](/tr/docs/transform/move-transform/)). Fotoğraf
-katmanında **Kaynak profilini onar…**, **Kaynağı pikselleştir…** ve
-**Özgün fotoğrafa dön** komutlarını listeler (bkz.
-[Katman türleri](/tr/docs/layers/types/)).
+**Katman ayarları** içinde **Dönüşümü uygula** de bulunur (bkz. [Taşıma ve Dönüştürme](/tr/docs/transform/move-transform/)). Nesne katmanının kaynağını düzenlenebilir piksellere dönüştürmek için **Katmanı pikselleştir** seçin (bkz. [Katman türleri](/tr/docs/layers/types/)).

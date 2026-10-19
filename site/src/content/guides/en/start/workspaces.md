@@ -16,7 +16,7 @@ Sketch has no docked panels: the tool and panel buttons in the title bar open dr
 1. **Capy (Zen Mode)**, **Main Menu**, **Filters panel**, **Select** and **Transform**.
 2. The workspace switcher.
 3. **Brush**, **Sculpt**, **Eraser**, **Layers panel** and **Brush color**. The web editor adds **Full screen**.
-4. **Brush size slider**, **Color Picker**, **Brush opacity slider**, **Undo** and **Redo**.
+4. **Brush size slider**, **Color Picker**, **Strength slider**, **Undo** and **Redo**.
 
 | Button | Panels in the drawer |
 | --- | --- |

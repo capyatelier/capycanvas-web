@@ -7,7 +7,7 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 You can set how wet and blending brushes handle paint in the **Tool** panel.
 Each group appears only on the brushes named in its section.
 
-![The Tool panel for Wet Watercolor with the Mixing, Watercolor and Bleed groups and the color mixing buttons.](shot:brushes/wet-media-settings)
+![The Tool panel for Wet Watercolor with Color mixing and the Mixing, Watercolor and Bleed groups.](shot:brushes/wet-media-settings)
 
 ## Mixing
 
@@ -74,8 +74,8 @@ You can choose how a mixing brush combines the colors it picks up.
 
 Do one of the following:
 
-- Select **Oklab mixing**, **Linear light mixing** or **Classic mixing** at the bottom of the **Tool** panel.
-- Choose from **Color mixing** in the Tool Options bar ([Size, opacity and flow](/docs/brushes/basics/)).
+- Choose **Oklab mixing**, **Linear light mixing** or **Classic mixing** from **Color mixing** in the **Tool** panel.
+- Open **More tool options** in the Tool Options bar, then choose **Color mixing** in the Tool drawer ([Size, strength and opacity](/docs/brushes/basics/)).
 - Search commands for the choice's name.
 
 | Choice | Mixing |
@@ -88,7 +88,7 @@ Every built-in mixing brush starts on **Oklab mixing**. The choice is saved
 with the brush, and the drawing's **Blending** setting doesn't change it. For a
 brush that doesn't mix, the choices are unavailable.
 
-![The Color mixing menu open in the Tool Options bar for Loaded Oil.](shot:brushes/color-mixing-menu)
+![Color mixing in the Tool drawer.](shot:brushes/color-mixing-menu)
 
 ## Bristles
 

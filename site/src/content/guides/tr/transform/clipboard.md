@@ -1,81 +1,42 @@
 ---
 title: "Kopyalama ve yapıştırma"
-description: "{appName} içinde ve uygulamalar arasında pikselleri kopyalama ve yeni katman olarak yapıştırma."
-related: ["selections/working", "transform/move-transform", "layers/working", "files/open-save"]
+description: "Pikselleri kopyalama ve katman, maske veya yeni çizim olarak yapıştırma."
+related: ["selections/working", "transform/move-transform", "layers/types", "files/open-save"]
 ---
 
-Pikselleri bir katmandan veya görünür görüntüden kopyalayabilir ve yeni bir
-katman olarak yapıştırabilirsiniz. Komutlar **Düzenle** menüsünde ve komut
-aramada bulunur.
+Pano komutları **Düzenle** menüsünde ve komut aramasındadır.
 
-![Düzenle menüsündeki pano komutları.](shot:transform/clipboard-edit-menu)
+![Düzenle menüsünde Özel Yapıştır.](shot:transform/clipboard-edit-menu)
 
-| Komut | Tuş |
-| --- | --- |
-| **Kes** | **Ctrl+X** |
-| **Kopyala** | **Ctrl+C** |
-| **Birleştirileni kopyala** | **Ctrl+Shift+C** |
-| **Yapıştır** | **Ctrl+V** |
-| **Yerine yapıştır** | **Ctrl+Shift+V** |
-| **İçine yapıştır** | |
+## Kopyalama ve kesme
 
-[Seçim çubuğundaki](/tr/docs/selections/working/) **Kopyala** düğmesi
-**Kopyala**, **Birleştirileni kopyala** ve **Kes** komutlarını içerir.
+**Kopyala** (**Ctrl+C**), seçili katmanın seçim içindeki piksellerini opaklığı, maskesi veya ekli filtreleri olmadan kopyalar. Seçim yoksa katmanı tuval sınırları içinde kopyalar.
 
-## Kopyala
+**Kes** (**Ctrl+X**) aynı pikselleri kopyalar ve siler. Kilitli veya **Alfa kilidi** açık katmanda kullanılamaz.
 
-Etkin katmanın seçim içindeki kendi piksellerini, katmanın opaklığı, maskesi ve
-iliştirilmiş filtreleri olmadan kopyalar. Seçim yoksa katmanın tuval içindeki
-tamamını kopyalar.
-
-## Kes
-
-**Kopyala** gibi kopyalar, ardından seçili pikselleri katmandan siler.
-**Alfa kilidi** açık bir katmandan kesemezsiniz.
-
-## Birleştirileni kopyala
-
-Seçimin içindeki görünür görüntüyü, dışa aktarmada göründüğü gibi kopyalar.
-
-## Kopyalanamayanlar
-
-Grupların, filtre katmanlarının ve seçim katmanlarının kendine ait pikselleri
-yoktur. Bir gruptan kopyalamak için içindeki bir katmanı seçin. Hızlı maskede
-çizim kopyalayamazsınız. Bir maskeyi düzenlerken **Kopyala** ve **Kes**
-kullanılamaz.
-
-Büyük bir kopyalama, **İptal** düğmesiyle bir ilerleme notu gösterir.
+**Birleştirileni kopyala** (**Ctrl+Shift+C**), Kâğıt ışığı dahil seçim içindeki görünür sonucu kopyalar. Grupların, filtre katmanlarının ve seçim katmanlarının kendi pikselleri yoktur.
 
 ## Yapıştır
 
-Panodakini yeni etkin katman olarak ekler.
+**Yapıştır** (**Ctrl+V**) panodaki çizimi yeni katman olarak ekler ve yerleştirme gerektiğinde dönüştürme tutamaçlarını açar. Başka uygulamadan gelen görüntü, pikselleştirene kadar kaynağını koruyan bir [nesne katmanı](/tr/docs/layers/types/) olur.
 
-- {appName}'tan yapılan bir kopya, kopyalandığı yer görünümdeyse oraya, değilse görünümün ortasına yerleşir.
-- Başka bir uygulamadan gelen görüntü dönüşüm kutusunda açılır. **Uygula** görüntüyü yerleştirir, **İptal** yapıştırmayı atar (bkz. [Taşıma ve dönüştürme](/tr/docs/transform/move-transform/)).
+{appName} içinde alınan kopya, kopyalandığı konum görünürse oraya döner. Aksi halde görünümün ortasına yerleşir.
 
-## Yerine yapıştır
+## Özel Yapıştır
 
-Panodakini, dönüşüm kutusu olmadan, kopyalandığı yere yeni bir katman olarak
-ekler. Başka bir uygulamadan gelen görüntü tam boyutta görünümün ortasına
-yerleşir.
+Hedef seçmek için **Düzenle > Özel Yapıştır** yolunu açın.
 
-## İçine yapıştır
+- **Yerine yapıştır**, dönüştürme tutamaçlarını açmadan kopyalanan konuma katman ekler.
+- **İçine yapıştır**, etkin seçimi maske olarak kullanan bir katman ekler, ardından seçimi temizler.
+- **Maskeyi yapıştır**, seçili katmanın maskesini panodaki görüntüyle değiştirir veya ekler.
+- **Yeni Görüntü Olarak Yapıştır**, panodan yeni çizim oluşturur.
 
-**Yerine yapıştır** gibi çalışır ve yeni katmana yalnızca seçimi gösteren bir
-[maske](/tr/docs/layers/masks/) verir. Ardından seçim kaldırılır.
-**İçine yapıştır** için bir seçim gerekir.
+Seçim, düzenlenebilir katman veya uyumlu pano görüntüsü gerektiren komutlar soluk görünür.
 
-## Uygulamalar arasında yapıştırma
+![Katmanlar, maskeler ve yeni çizimler için Özel Yapıştır seçenekleri.](shot:transform/paste-special)
 
-Diğer uygulamalar {appName}'tan yapılan bir kopyayı 8 bit sRGB PNG görüntüsü
-olarak alır. Kopya panoda kaldığı sürece {appName}'a geri yapıştırma, kopyayı
-tam bit derinliğiyle kullanır.
+## Uygulamalar arasında
 
-Farklı renk ayarlarına sahip bir çizime yapıştırılan kopya, kendi renk
-profilinden dönüştürülerek bir [fotoğraf katmanı](/tr/docs/layers/types/) olur.
+Diğer uygulamalar {appName} kopyasını 8 bit sRGB PNG olarak alır. Dahili kopya panoda kaldığı sürece başka bir {appName} çizimi özgün hassasiyetini alır.
 
-Bir metin alanına yazarken pano tuşları metni keser, kopyalar ve yapıştırır.
-
-Web düzenleyicisinde yapıştırılan bir görüntü en fazla 512 MiB olabilir.
-Görüntü yapıştıramayan bir tarayıcıda bunun yerine
-**Dosya > Görüntüyü katman olarak içe aktar…** komutunu seçin.
+Web düzenleyicisinde yapıştırılan görüntü en fazla 512 MiB olabilir. Tarayıcı görüntü yapıştıramıyorsa **Dosya > Görüntüyü katman olarak içe aktar…** kullanın.

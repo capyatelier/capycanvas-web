@@ -4,17 +4,14 @@ description: "Étape 2 du tutoriel de retouche photo : la poussière et une tac
 related: ["retouch/clone-heal", "layers/settings", "layers/working"]
 ---
 
-Cette étape produit un calque *Retouch* qui couvre la poussière et une tache de la
-photo. Le calque de la photo ne change pas.
+Cette étape produit un calque *Retouch* qui couvre des poussières et une tache de la photo. Le calque Objet ne change pas.
 
 ## 1. Ajouter un calque de retouche
 
 1. Sélectionnez **Nouveau calque** en bas du panneau Calques et renommez le nouveau calque *Retouch*.
 2. Choisissez **Calque > Réglages du calque > Utiliser le calque inférieur comme référence** ([Réglages du calque](/fr/docs/layers/settings/)).
 
-Le calque de la photo devient un calque de référence, et une icône de phare apparaît
-à côté de l’œil sur sa ligne. Par défaut, les outils de correction copient depuis les
-calques de référence et peignent sur *Retouch*.
+Le calque Objet devient un calque de référence, et une icône de phare apparaît près de l’œil sur sa ligne. Par défaut, les outils correcteurs copient les calques de référence et peignent sur *Retouch*.
 
 ![Le panneau Calques avec Retouch au-dessus du calque terrarium, qui affiche l’icône de référence.](shot:photo/retouch-layers)
 

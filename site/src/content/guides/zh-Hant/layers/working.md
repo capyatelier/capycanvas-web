@@ -103,4 +103,4 @@ related: ["layers/panel", "layers/types", "layers/merging", "files/open-save"]
 - 選擇圖層面板底部的**將影像匯入為圖層…**。
 - 將影像檔案拖到畫布上，或拖到圖層面板中的某一行上。
 
-每個檔案會成為目前圖層之上的[照片圖層](/zh-Hant/docs/layers/types/)，或放在所拖到的行之上、之下或其中。影像居中放置並縮小到適合畫布，帶有[放置控制點](/zh-Hant/docs/transform/move-transform/)。
+每個文件都會在目前圖層上方，或所拖放行的上方、下方或內部，成為[物件圖層](/zh-Hant/docs/layers/types/)。影像居中並縮小以適應畫布，帶有[放置手柄](/zh-Hant/docs/transform/move-transform/)。

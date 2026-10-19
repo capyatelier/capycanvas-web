@@ -1,12 +1,10 @@
 ---
 title: "Punta y textura"
-description: "Los ajustes de Punta que dan forma a cada toque, e Intensidad de textura para el grano del papel en el trazo."
+description: "Los ajustes de Punta que dan forma a cada marca y la intensidad de la textura del papel en la marca."
 related: ["brushes/basics", "brushes/wet-media", "drawing/brush-tools"]
 ---
 
-Puedes cambiar la forma de cada toque y cuánto grano del papel se ve en el trazo
-con los ajustes **Punta** y **Textura** del panel **Herramienta**
-([Tamaño, opacidad y flujo](/es/docs/brushes/basics/)).
+Puedes cambiar la forma de cada marca y cuánto la modifica la textura del papel con los ajustes **Punta** y **Textura** del panel **Herramienta** ([Tamaño, intensidad y opacidad](/es/docs/brushes/basics/)).
 
 ![El panel Herramienta para Lápiz con el grupo Punta y el grupo Textura.](shot:brushes/tip-texture-settings)
 
@@ -24,7 +22,7 @@ Define la distancia entre toques, como porcentaje del diámetro del toque a la
 presión actual. El deslizador llega hasta el 100%, y puedes escribir valores de
 hasta el 1000%.
 
-### Ángulo
+### Ángulo de la punta
 
 Gira la punta, de −180° a 180°. Una punta redonda se ve igual en cualquier ángulo.
 
@@ -40,14 +38,9 @@ cualquiera de los dos sentidos.
 
 ## Puntas que giran con el trazo
 
-Las puntas de **Pincel de pintura**, **Pincel plano con textura**, **Bloque de
-pastel**, **Veladura transparente**, **Gouache opaco**, **Óleo cargado**,
-**Espátula**, **Aguada de acuarela**, **Acuarela húmeda**, **Textura doble** y
-**Mezclador natural** siguen la dirección del trazo. **Ángulo** no tiene efecto en
-estos pinceles.
+Las puntas de **Pincel de pintura**, **Pincel plano con textura**, **Bloque de pastel**, **Veladura transparente**, **Gouache opaco**, **Óleo cargado**, **Espátula**, **Aguada de acuarela**, **Acuarela húmeda**, **Textura doble** y **Mezclador natural** siguen la dirección del trazo. **Ángulo de la punta** no afecta a estos pinceles.
 
-**Restregado en seco** y **Tinta de pincel realista** suman la dirección del trazo
-al **Ángulo**.
+**Restregado en seco** y **Tinta de pincel realista** suman la dirección del trazo a **Ángulo de la punta**.
 
 ## Textura
 
@@ -56,12 +49,10 @@ pintura**, **Pincel de cerdas**, **Pincel plano con textura**, **Restregado en
 seco**, **Veladura transparente**, **Gouache opaco**, **Óleo cargado**,
 **Espátula**, **Textura doble** y **Mezclador natural**.
 
-El grano está fijo en el lienzo. Cada pincel tiene su propio grano, y no puedes
-cambiar su tamaño ni elegir otro grano.
+Los pinceles de medios secos usan la textura del Papel más cercano debajo de la capa de destino. Elige esa textura y su escala en [Papel](/es/docs/layers/paper/).
 
 ### Intensidad de textura
 
-Define cuánto se ve el grano del papel en el trazo. Al 0% el grano no tiene
-efecto, y al 100% la pintura sigue el grano por completo.
+Establece cuánto cambia la textura del Papel la cobertura. Al 0%, la textura no tiene efecto.
 
 ![Tres trazos de Carboncillo con Intensidad de textura al 0%, 50% y 100%.](shot:brushes/texture-strength)

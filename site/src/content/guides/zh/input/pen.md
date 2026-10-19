@@ -1,18 +1,16 @@
 ---
 title: "笔"
 description: "首选项中的笔设置，以及 Apple Pencil 的轻点两下和挤压。"
-related: ["input/touch", "input/keyboard", "preferences", "brushes/basics"]
+related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-笔的设置位于**编辑 > 首选项**的**笔与输入**页面。
+笔的设置位于 **编辑 > 首选项** 的 **笔与输入** 页面。
 
 ![首选项的笔与输入页面。](shot:pen/pen-and-input)
 
-## 压感响应
+## 笔压
 
-可以用**笔响应**下的**压感响应**更改数位笔对轻压的响应。值越低，轻压的效果越强；值越高，需要用的力越大。范围为 0.25 × 到 4.00 ×。默认值 1.00 × 时，笔压按原样使用。
-
-此设置适用于所有画笔和工具，包括**绘制选区**和**快速蒙版**。已经画好的笔迹不会改变。
+选择 **笔压** 旁的 **调整…** 可调整压力曲线并在当前画布上测试。曲线作用于所有压感画笔和工具；已画出的笔迹不会改变。参见[笔压](/zh/docs/input/pen-pressure/)。
 
 ## 笔迹预测
 

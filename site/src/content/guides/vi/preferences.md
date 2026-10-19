@@ -1,7 +1,7 @@
 ---
 title: "Tùy chọn"
-description: "Hộp thoại Tùy chọn và các thiết lập trên các trang Diện mạo, Khung vẽ, Màu và Giới thiệu."
-related: ["input/pen", "input/keyboard", "customize/zen", "color-management/color-spaces"]
+description: "Hộp thoại Tùy chọn và thiết lập trên các trang Giao diện, Khung vẽ, Đầu vào, Màu và Giới thiệu."
+related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
 Bạn có thể thay đổi thiết lập cho toàn bộ ứng dụng trong hộp thoại **Tùy chọn**. Mỗi
@@ -18,8 +18,7 @@ Thực hiện một trong các cách sau:
 - Trong Vẽ và Ảnh, chọn nút bánh răng ở đầu bên phải thanh tiêu đề.
 - Gõ “Tùy chọn” vào [tìm lệnh](/vi/docs/start/command-search/).
 
-Tùy chọn mở ở trang **Diện mạo**. **Trợ giúp > Phím tắt** mở Tùy chọn ở trang
-**Phím tắt**, còn **Trợ giúp > Giới thiệu {appName}** mở ở trang **Giới thiệu**.
+Tùy chọn mở ở **Diện mạo**. Chọn **Chỉnh sửa > Phím tắt** cho phím tắt hoặc **Giới thiệu {appName}** từ trình đơn ứng dụng cho Giới thiệu.
 
 Khi Tùy chọn đang mở, phím tắt trên khung vẽ, nút bút và thao tác chạm ngón tay không
 có tác dụng.
@@ -85,17 +84,22 @@ và Android, và không có trên web và iPad. Các lựa chọn khác là
 Giữ nút Capy trên màn hình trong [chế độ Zen](/vi/docs/customize/zen/). Bật theo mặc
 định.
 
-### Hiện bảng khi đến gần cạnh màn hình
-
-Hiện các điều khiển bị ẩn trong chế độ Zen khi con trỏ ở gần một mép màn hình có điều
-khiển bị ẩn. Tắt theo mặc định.
-
 ### Biểu tượng nút
 
 Đặt hình của nút Capy: **Nhìn lên** (mặc định), **Nhìn về phía trước**, **Tắm** hoặc
 **Ngủ**.
 
 ## Khung vẽ
+
+![Thiết lập điều hướng khung vẽ.](shot:preferences/canvas-navigation)
+
+### Con lăn chuột
+
+Chọn con lăn chuột không kèm phím bổ trợ sẽ dịch chuyển hay thu phóng khung vẽ. Giữ **Ctrl** để dùng thao tác còn lại.
+
+### Xoay bằng hai ngón tay
+
+Cho phép xoắn hai ngón tay để xoay chế độ xem. Tắt để cử chỉ hai ngón tay chỉ dịch chuyển và thu phóng.
 
 ### Tốc độ cuộn để di chuyển
 

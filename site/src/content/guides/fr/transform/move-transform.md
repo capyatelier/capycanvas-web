@@ -154,22 +154,20 @@ d’une transformation en cours, sauf en **Déformer**.
 
 ## Transformations de calques
 
-La transformation de calques de peinture ou de calques photo entiers est
-enregistrée avec chaque calque, et les pixels ne sont pas rééchantillonnés.
-**Transformer** se rouvre à partir de la transformation enregistrée.
+La transformation de calques entiers de peinture ou Objet est enregistrée avec chaque calque, et les pixels ne sont pas rééchantillonnés. **Transformer** rouvre la transformation enregistrée.
 
 Tant que vous n’avez pas appliqué la transformation aux pixels, vous ne pouvez pas
 retoucher un calque mis à l’échelle ou pivoté, ni peindre sur un calque distordu ou
 déformé.
 
-## Appliquer la transformation aux pixels
+## Appliquer la transformation
 
 Vous pouvez intégrer aux pixels d’un calque la transformation enregistrée.
 
 Effectuez l’une des opérations suivantes :
 
-- Choisissez **Édition > Appliquer la transformation aux pixels**.
-- Choisissez **Calque > Réglages du calque > Appliquer la transformation aux pixels**.
+- Choisissez **Édition > Appliquer la transformation**.
+- Choisissez **Calque > Réglages du calque > Appliquer la transformation**.
 
 Pendant l’opération, une barre en bas de la toile indique « Application de la
 transformation… », avec **Annuler**.

@@ -1,7 +1,7 @@
 ---
 title: "환경 설정"
-description: "환경 설정 대화 상자와 모양, 캔버스, 색상, 앱 정보 페이지의 설정."
-related: ["input/pen", "input/keyboard", "customize/zen", "color-management/color-spaces"]
+description: "환경 설정 대화 상자와 모양, 캔버스, 입력, 색상, 앱 정보 페이지의 설정."
+related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
 **환경 설정** 대화 상자에서 앱 전체에 적용되는 설정을 바꿀 수 있습니다. 변경 내용은 바로 적용되고 저장됩니다.
@@ -17,7 +17,7 @@ related: ["input/pen", "input/keyboard", "customize/zen", "color-management/colo
 - 페인팅과 사진 작업 영역에서는 제목 표시줄 오른쪽 끝의 톱니바퀴 버튼을 선택합니다.
 - [명령 검색](/ko/docs/start/command-search/)에 “환경 설정”을 입력합니다.
 
-환경 설정은 **모양** 페이지에서 열립니다. **도움말 > 키보드 단축키**를 선택하면 **키보드 단축키** 페이지에서, **도움말 > {appName} 정보**를 선택하면 **앱 정보** 페이지에서 열립니다.
+환경설정은 **모양**에서 열립니다. 키보드 단축키는 **편집 > 키보드 단축키**를 선택하고 정보는 앱 메뉴의 **{appName} 정보**을 선택합니다.
 
 환경 설정이 열려 있는 동안에는 캔버스 단축키, 펜 버튼, 손가락 탭이 작동하지 않습니다.
 
@@ -69,15 +69,21 @@ related: ["input/pen", "input/keyboard", "customize/zen", "color-management/colo
 
 [집중 모드](/ko/docs/customize/zen/)에서 Capy 버튼을 화면에 표시합니다. 기본적으로 켜져 있습니다.
 
-### 화면 가장자리에서 패널 표시
-
-집중 모드에서 포인터가 숨겨진 컨트롤이 있는 화면 가장자리 근처에 있는 동안 숨겨진 컨트롤을 표시합니다. 기본적으로 꺼져 있습니다.
-
 ### 버튼 아이콘
 
 Capy 버튼의 그림을 **올려다보기**(기본값), **정면 바라보기**, **목욕하기**, **잠자기** 중에서 고릅니다.
 
 ## 캔버스
+
+![캔버스 탐색 설정.](shot:preferences/canvas-navigation)
+
+### 마우스 휠
+
+보조 키 없이 마우스 휠을 사용할 때 캔버스를 이동할지 확대/축소할지 고릅니다. **Ctrl**을 누르면 다른 동작을 사용합니다.
+
+### 두 손가락으로 회전
+
+두 손가락을 비틀어 보기를 회전할 수 있습니다. 끄면 두 손가락 제스처는 이동과 확대/축소만 합니다.
 
 ### 스크롤 이동 속도
 

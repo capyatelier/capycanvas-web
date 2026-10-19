@@ -19,7 +19,7 @@ capture_review="${CAPTURE_REVIEW:-artifacts/capture-review}"
 mkdir -p "$capture_review"
 capture_displays=()
 capture_pids=()
-for ((index=0; index<${CAPTURE_JOBS:-16}; index++)); do
+for ((index=0; index<${CAPTURE_JOBS:-6}; index++)); do
   display="capy-site-capture-$index"
   WAYLAND_DISPLAY="$display" mutter --headless --wayland --no-x11 --virtual-monitor=1920x1080@60 \
     --wayland-display="$display" > "$capture_review/display-$index.log" 2>&1 &

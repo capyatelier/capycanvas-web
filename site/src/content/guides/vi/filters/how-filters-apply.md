@@ -23,7 +23,7 @@ nhóm được đặt [Xuyên qua](/vi/docs/layers/settings/).
 
 ## Bộ lọc gắn kèm
 
-Bạn có thể gắn bộ lọc vào lớp vẽ, lớp ảnh hoặc nhóm không đặt Xuyên qua. Chọn lớp,
+Bạn có thể gắn bộ lọc vào lớp vẽ, lớp Đối tượng hoặc nhóm không đặt Xuyên qua. Chọn lớp,
 rồi chọn **Thêm bộ lọc** ở cuối bảng Lớp hoặc bảng **Thuộc tính**, hoặc trong trình
 đơn của lớp.
 
@@ -52,7 +52,7 @@ Thực hiện một trong các cách sau:
 từng gắn vào và các lớp cắt của lớp đó.
 
 Nút không dùng được khi bộ lọc hoặc lớp bên dưới đang bị khóa. Khi lớp bên dưới
-không phải lớp vẽ, lớp ảnh hoặc nhóm, chú thích của nút ghi “Không có lớp bên dưới
+không phải lớp vẽ, lớp Đối tượng hoặc nhóm, chú thích của nút ghi “Không có lớp bên dưới
 để gắn”.
 
 ## Vùng chọn làm mặt nạ bộ lọc

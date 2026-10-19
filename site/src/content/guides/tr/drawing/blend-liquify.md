@@ -46,8 +46,7 @@ Her mod, **Araç seti** içinde bir hazır ayardır:
 
 ![Sıvılaştırma kristalleri için Araç paneli: Sıvılaştırma grubunda Güç ve Bozulma.](shot:drawing/liquify-settings)
 
-**Güç**, **Bozulma** ve **Momentum**, **Araç** panelinin **Sıvılaştırma**
-grubundadır. Sıvılaştır'ın **Akış** ayarı yoktur.
+**Güç**, **Bozulma** ve **Momentum**, **Araç** panelinin **Sıvılaştırma** grubundadır. **Güç**, çizginin pikselleri ne kadar güçlü hareket ettirdiğini belirler.
 
 ### Güç
 

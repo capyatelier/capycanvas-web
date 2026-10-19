@@ -12,7 +12,7 @@ ritagliati restano sui loro livelli, nascosti, a meno che non attivi
 
 Esegui una delle seguenti operazioni:
 
-- Scegli **Modifica > Immagine > Ritaglia**.
+- Scegli **Immagine > Ritaglia**.
 - Premi **C**.
 - In Foto, seleziona **Ritaglia** nella barra strumenti Strumenti.
 
@@ -113,7 +113,7 @@ Puoi ritagliare la tela sui limiti di una selezione.
 
 Esegui una delle seguenti operazioni:
 
-- Scegli **Modifica > Immagine > Ritaglia tela alla selezione**.
+- Scegli **Immagine > Ritaglia tela alla selezione**.
 - Seleziona **Ritaglia** nella [barra della selezione](/it/docs/selections/working/).
 
 I pixel fuori dai limiti della selezione restano sui loro livelli, nascosti. Non
@@ -121,7 +121,7 @@ puoi ritagliare su una selezione invertita.
 
 ## Recuperare i pixel ritagliati
 
-Scegli **Modifica > Immagine > Mostra tutto** per allargare la tela finché non
+Scegli **Immagine > Mostra tutto** per allargare la tela finché non
 mostra i pixel di tutti i livelli, oppure ingrandisci la tela con
-**Modifica > Immagine > Dimensioni tela…** (vedi
+**Immagine > Dimensioni tela…** (vedi
 [Dimensioni e rotazione dell'immagine](/it/docs/transform/image/)).

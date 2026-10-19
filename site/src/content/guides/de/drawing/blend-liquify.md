@@ -46,8 +46,7 @@ Jeder Modus ist eine Vorgabe in **Werkzeugsatz**:
 
 ![Das Bedienfeld Werkzeug für Verflüssigen: Kristalle mit der Gruppe Verflüssigen, die Stärke und Verzerrung zeigt.](shot:drawing/liquify-settings)
 
-**Stärke**, **Verzerrung** und **Trägheit** stehen in der Gruppe **Verflüssigen** des
-Bedienfelds **Werkzeug**. Verflüssigen hat keinen **Fluss**.
+**Stärke**, **Verzerrung** und **Trägheit** befinden sich in der Gruppe **Verflüssigen** des Bedienfelds **Werkzeug**. **Stärke** legt fest, wie stark der Strich Pixel bewegt.
 
 ### Stärke
 

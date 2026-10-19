@@ -27,8 +27,8 @@ Esegui una delle seguenti operazioni:
 in Pittura.
 
 Ogni strumento è un pennello, con **Dimensioni pennello**, **Opacità**,
-**Flusso** e le impostazioni di **Punta** nel pannello Strumento (vedi
-[Dimensioni, opacità e flusso](/it/docs/brushes/basics/)).
+**Intensità** e le impostazioni di **Punta** nel pannello Strumento (vedi
+[Dimensioni, intensità e opacità](/it/docs/brushes/basics/)).
 
 ![Il pannello Strumento per Timbro clone, con le impostazioni del pennello e della sorgente.](shot:retouch/clone-tool-panel)
 

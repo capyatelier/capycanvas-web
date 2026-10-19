@@ -14,7 +14,7 @@ Do one of the following:
 - Press **I** (**O** in the GIMP Style keymap).
 - Choose **Eyedropper** in command search.
 - In Paint and Photo, select **Eyedropper** in the Tools toolbar.
-- In Sketch, select **Color Picker** on the bar at the left edge, between the size and opacity sliders.
+- In Sketch, select **Color Picker** on the bar at the left edge, between **Brush size slider** and **Strength slider**.
 
 To stop without picking, press **I** or select the same button again, press
 **Escape**, or choose another tool or brush. A finger tap without a hold also
@@ -31,7 +31,7 @@ changes only when you pick.
 | Pen | Hover, or press the pen down | Lift the pen |
 | Finger | Touch | Lift the finger |
 
-With a finger, the sample point is above the fingertip.
+With a finger, the magnifier appears above the fingertip while the sample point remains under the fingertip.
 
 Transparent pixels pick nothing, and picked colors are always opaque. Picks
 are taken in the drawing's color space. In an HDR drawing, a pick can be
@@ -66,6 +66,8 @@ window in Photo):
 - **Eyedropper** shows a pipette cursor with its tip on the sampled point.
 
 ![The Color Picker magnifier over a red stroke, with the sampled and current colors in its ring.](shot:color/eyedropper-loupe)
+
+![The Color Picker magnifier above a finger, with the sample point under the contact.](shot:color/eyedropper-touch)
 
 Touch always uses the magnifier. Selecting **Color Picker** in Sketch sets
 **Style** to **Color Picker**. A small layers mark appears when **Source** is

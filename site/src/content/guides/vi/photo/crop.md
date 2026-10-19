@@ -11,14 +11,13 @@ Giai đoạn này mở ảnh và cắt xén ảnh theo khung 5:4.
 Chọn **Tệp > Mở…**, hoặc nhấn **Ctrl+O**, rồi chọn ảnh
 ([Mở và lưu](/vi/docs/files/open-save/)). Ảnh mở trong một thẻ bản vẽ riêng.
 
-![Bảng Lớp với lớp ảnh bể kính trồng cây phía trên lớp Giấy đang ẩn.](shot:photo/open-layers)
+![Bảng Lớp với lớp Đối tượng terrarium.](shot:photo/open-layers)
 
-Bản vẽ có một lớp mang tên tệp, nằm trên lớp **Giấy** đang ẩn. Trong ví dụ, lớp có
-tên “terrarium”.
+Bản vẽ có một lớp Đối tượng được đặt tên theo tệp. Trong ví dụ, lớp có tên "terrarium".
 
 ## 2. Chọn tỷ lệ
 
-Chọn **Chỉnh sửa > Ảnh > Cắt xén**, chọn **Cắt xén** trên Thanh công cụ vẽ, hoặc
+Chọn **Ảnh > Cắt xén**, chọn **Cắt xén** trên Thanh công cụ vẽ, hoặc
 nhấn **C** ([Cắt xén](/vi/docs/transform/crop/)). Một khung có tay nắm xuất hiện
 trên ảnh, cùng thanh cắt xén dọc cạnh dưới khung vẽ.
 

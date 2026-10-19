@@ -7,7 +7,7 @@ related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-manag
 Anda dapat memilih warna cat di panel **Warna**. Semua ruang kerja memakai warna cat
 yang sama.
 
-![Panel Warna dengan roda melingkar, angka warna di kiri atas, dan contoh warna di bawah roda.](shot:color/panel "1 Angka warna · 2 Tombol bentuk · 3 Edit Warna · 4 Latar depan dan latar belakang · 5 Tukar · 6 Cat transparan · 7 Hitam dan putih")
+![Panel Warna dengan roda melingkar, angka warna di kiri atas, dan contoh warna di bawah roda.](shot:color/panel "1 Angka warna · 2 Tombol bentuk · 3 Edit Warna · 4 Latar depan dan latar belakang · 5 Tukar · 6 Cat transparan")
 
 ## Membuka panel Warna
 
@@ -80,8 +80,7 @@ untuk **Tukar warna**.
 
 ## Hitam dan putih
 
-Pilih **Lukis dengan hitam** atau **Lukis dengan putih** (dua lingkaran kecil di samping
-contoh warna transparan), atau pilih **Hitam** atau **Putih** di pencarian perintah.
+Pilih **Hitam** atau **Putih** di pencarian perintah.
 
 Hitam atau putih menggantikan warna pada contoh warna latar depan atau latar belakang
 yang dipilih. Jika **Cat transparan** dipilih, hitam atau putih menjadi warna cat

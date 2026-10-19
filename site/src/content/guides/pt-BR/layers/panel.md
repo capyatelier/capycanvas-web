@@ -15,8 +15,8 @@ Faça uma das seguintes ações:
 
 - Escolha **Janela > Camadas**.
 - Em Pintura, selecione **Camadas** na coluna direita.
-- Em Esboço, selecione **Painel Camadas** na barra de título.
-- Digite "Painel Camadas" na [busca de comandos](/pt-BR/docs/start/command-search/).
+- Em Esboço, selecione **Camadas** na barra de título. A gaveta compartilhada abre na visualização Camadas; selecione o botão Propriedades de uma camada para mudar para Propriedades.
+- Digite “Painel Camadas” na [busca de comandos](/pt-BR/docs/start/command-search/).
 
 Em Foto, o painel já fica aberto na coluna direita.
 
@@ -52,6 +52,10 @@ As camadas de um grupo aparecem recuadas abaixo do grupo.
 
 Selecione uma linha para torná-la a camada ativa e a única linha selecionada.
 [Tipos de camada](/pt-BR/docs/layers/types/) mostra a miniatura de cada tipo.
+
+Papel tem miniaturas separadas de cor e textura. Se não houver Papel, **Adicionar papel** aparece após a última linha.
+
+![A gaveta de Esboço mudando de Camadas para Propriedades.](shot:layers/sketch-properties-drawer)
 
 **Ctrl**+clique na miniatura de uma camada de pintura para carregar a opacidade
 dela como seleção, ou na miniatura da máscara para carregar a máscara. Acrescente

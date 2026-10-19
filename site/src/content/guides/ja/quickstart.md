@@ -1,7 +1,7 @@
 ---
 title: "クイックスタート"
 description: "{appName}の起動、最初の白紙の作品への描画、.capyファイルとしての保存、PNGの書き出し。"
-related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard"]
+related: ["start/workspaces", "start/device-support", "files/new", "files/open-save", "files/export"]
 ---
 
 ## {appName}を開く
@@ -11,15 +11,7 @@ related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard
 - [editor.capycanvas.art](https://editor.capycanvas.art/)でウェブ版を開きます。
 - [ダウンロード](/ja/download/)ページで、デスクトップアプリかiPad版またはAndroid版のベータを入手するか、ウェブ版をアプリとしてインストールする手順を確認します。
 
-ウェブ版は次のブラウザーで動作します。
-
-| システム | ブラウザー |
-| --- | --- |
-| Windows | Chrome、Edge、Firefox 141以降 |
-| macOS | Chrome、Edge、Safari 26以降、Firefox 147以降（Appleシリコン） |
-| Linux（Wayland） | Chrome、Edge |
-| iPadOS 26以降 | Safari |
-| Android 12以降 | Chrome |
+ネイティブアプリとWebブラウザーのそれぞれの要件は[対応デバイス](/ja/docs/start/device-support/)を参照してください。
 
 一度アクセスすると、以降はインターネットに接続していなくてもウェブ版が開きます。
 
@@ -27,7 +19,7 @@ related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard
 
 ![新しい作品のレイヤーパネル。用紙の上に現在のインクがあります。](shot:files/new-layers)
 
-{appName}を初めて開くと、[「ペイント」](/ja/docs/start/workspaces/)ワークスペースに白紙の作品が表示され、タイトルバーには「無題 · 2048 × 1536」と表示されます。白い塗りつぶしレイヤー**用紙**の上で、空のペイントレイヤー**現在のインク**が選択されています。ツールは**ペン**で、ブラシは**Gペン**、色は黒に近い色です。
+初めて{appName}を開くと、[ペイント](/ja/docs/start/workspaces/)ワークスペースに300 ppiのA4横向きの空の作品が表示されます。**用紙**の上にある空の描画レイヤーの**現在のインク**が選択されています。**ペン**ツールの**Gペン**ブラシと黒に近い色が選択されています。
 
 2回目以降は、前回使ったワークスペースと、開いていた作品で{appName}が開きます。
 
@@ -47,7 +39,7 @@ related: ["start/workspaces", "files/open-save", "files/export", "input/keyboard
 
 ## 別の作品を始める
 
-**ファイル > 新規作成…** を選び、[新規作品](/ja/docs/files/new/)ダイアログで**作成**を選択します。新しい作品は、最初の作品の隣に専用のタブで開きます。
+**ファイル > 新規作成…** を選び、[新規作品](/ja/docs/files/new/)ダイアログで**作成**を選択します。サイズ、解像度、用紙、色の設定を選び、**作成**を選択します。新しい作品は最初の作品の隣のタブに開きます。
 
 ## 作品の保存
 

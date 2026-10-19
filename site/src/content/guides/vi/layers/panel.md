@@ -15,8 +15,8 @@ Thực hiện một trong các cách sau:
 
 - Chọn **Cửa sổ > Lớp**.
 - Trong Vẽ, chọn **Lớp** ở cột phải.
-- Trong Phác thảo, chọn **Bảng lớp** trên thanh tiêu đề.
-- Gõ “Bảng lớp” vào [tìm lệnh](/vi/docs/start/command-search/).
+- Trong Phác thảo, chọn **Lớp** trên thanh tiêu đề. Ngăn dùng chung mở ở chế độ xem Lớp; chọn nút Thuộc tính của một lớp để chuyển sang Thuộc tính.
+- Gõ "Bảng lớp" vào [tìm lệnh](/vi/docs/start/command-search/).
 
 Trong Ảnh, bảng này đã mở sẵn ở cột phải.
 
@@ -52,6 +52,10 @@ Các lớp trong nhóm được thụt vào bên dưới nhóm.
 
 Chọn một hàng để lớp đó trở thành lớp hiện tại và là hàng duy nhất được chọn.
 [Các loại lớp](/vi/docs/layers/types/) có hình thu nhỏ của từng loại lớp.
+
+Giấy có hình thu nhỏ màu và kết cấu riêng. Nếu thiếu Giấy, **Thêm giấy** xuất hiện sau hàng cuối.
+
+![Ngăn Phác thảo chuyển từ Lớp sang Thuộc tính.](shot:layers/sketch-properties-drawer)
 
 **Ctrl**+nhấp vào hình thu nhỏ của lớp vẽ để nạp độ đục của lớp thành vùng chọn,
 hoặc vào hình thu nhỏ mặt nạ để nạp mặt nạ. Giữ thêm **Shift** để cộng vào vùng
