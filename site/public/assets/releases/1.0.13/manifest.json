@@ -1,0 +1,99 @@
+{
+  "version": "1.0.13",
+  "width": 2400,
+  "height": 1668,
+  "source": {
+    "source": "https://github.com/capyatelier/capycanvas",
+    "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+    "patches": [
+      {
+        "file": "crates/layer-render-wgpu/src/present.rs",
+        "reason": "Recompute canvas glass when the theme changes the surround (capycanvas a71fa4834).",
+        "before": "            old[..placement.start] != data[..placement.start] || old[placement.end..40] != data[placement.end..40]\n        });\n",
+        "after": "            old[..placement.start] != data[..placement.start] || old[placement.end..40] != data[placement.end..40]\n        });\n        let surround = 12..16;\n        let restyled = self.camera_data.is_some_and(|old| old[surround.clone()] != data[surround]);\n"
+      }
+    ],
+    "hashes": {
+      "app.js": "00b74ceca5ab8731bef3f05f49da6d75e7751bd4e8a7a4b783eb90dad705a5cb",
+      "pkg/layer_web_bg.wasm": "26043e46a58141b3eadbf217aadd5e55c823dddc10fba0a74e3b875e8672aa0a"
+    }
+  },
+  "captures": [
+    {
+      "id": "charcoal",
+      "brush": 27,
+      "name": "Charcoal",
+      "paper": "unryu",
+      "paperName": "Unryu",
+      "size": 200,
+      "color": "#302e2c",
+      "extent": [
+        1600,
+        1000
+      ],
+      "source": "Capy Canvas PNG export",
+      "sha256": "e14e37e5355d6d0571711ce35bdab8ba8a5337bf256c0de1fd6b6d809b3f7727",
+      "paperColor": "#f4f0e8"
+    },
+    {
+      "id": "pastel",
+      "brush": 17,
+      "name": "Pastel Block",
+      "paper": "sanded_pastel",
+      "paperName": "Sanded",
+      "size": 140,
+      "color": "#bc624c",
+      "extent": [
+        800,
+        1400
+      ],
+      "source": "Capy Canvas PNG export",
+      "sha256": "1fb6071d10d4fc50e6c1cc96f061e821645907382498e8cd51dd30d309a74c46",
+      "paperColor": "#f1ede7"
+    },
+    {
+      "id": "pencil",
+      "brush": 25,
+      "name": "Pointy Pencil",
+      "paper": "handmade_paper",
+      "paperName": "Handmade",
+      "size": 25,
+      "color": "#3b4240",
+      "extent": [
+        1600,
+        1000
+      ],
+      "source": "Capy Canvas PNG export",
+      "sha256": "43a2560d10f142e9f74904e9a1953d86fb9b2d343b740d885ece2922b3674d7b",
+      "paperColor": "#f5f3ed"
+    },
+    {
+      "id": "crayon",
+      "brush": 43,
+      "name": "Crayon",
+      "paper": "linen",
+      "paperName": "Linen",
+      "size": 100,
+      "color": "#657f49",
+      "extent": [
+        1600,
+        1000
+      ],
+      "source": "Capy Canvas PNG export",
+      "sha256": "9fe9d1fb0d0422e317d00758b8c1bb33f4db242946e2ebcdc05d5c44325218e6",
+      "paperColor": "#f0eee5"
+    }
+  ],
+  "files": [
+    {
+      "file": "dry-media.png",
+      "bytes": 1551626,
+      "sha256": "858d5635b46e4bf3113011571b3a5cbf0136f4c7d80e51828f0a378144d3ff6a"
+    },
+    {
+      "file": "dry-media.webp",
+      "bytes": 427456,
+      "sha256": "b52c5c52333705d661f8983cdc75faa53f11d602c11d0949222ea8e89cd517ec"
+    }
+  ]
+}

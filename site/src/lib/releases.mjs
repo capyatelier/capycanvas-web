@@ -64,19 +64,29 @@ export function publishedReleases(releases) {
     });
 }
 
-export function renderNotes(markdown, { base, prefix }) {
+export function upcomingReleases(releases, entries, { base }) {
+  const publishedVersions = new Set(releases.map(release => release.version));
+  return entries
+    .filter(entry => !publishedVersions.has(entry.version))
+    .map(({ version, markdown }) => ({
+      version,
+      notes: renderNotes(markdown, { base, prefix: `notes-${version.replace(/[^\w-]/g, '-')}-`, localImages: true }),
+    }));
+}
+
+export function renderNotes(markdown, { base, prefix, localImages = false }) {
   return String(unified()
     .use(remarkParse)
     .use(remarkGfm)
     .use(remarkRehype, { allowDangerousHtml: true, clobberPrefix: '' })
     .use(rehypeRaw)
     .use(rehypeSanitize, { ...defaultSchema, clobberPrefix: prefix, strip: [...defaultSchema.strip, 'style'] })
-    .use(fitNotesIntoPage, { base, prefix })
+    .use(fitNotesIntoPage, { base, prefix, localImages })
     .use(rehypeStringify)
     .processSync(markdown));
 }
 
-function fitNotesIntoPage({ base, prefix }) {
+function fitNotesIntoPage({ base, prefix, localImages }) {
   return tree => {
     const elements = [];
     const collect = node => {
@@ -92,7 +102,12 @@ function fitNotesIntoPage({ base, prefix }) {
         const value = node.properties[attribute];
         if (typeof value !== 'string') continue;
         if (value.startsWith('#')) node.properties[attribute] = `#${prefix}${value.slice(1)}`;
-        else if (URL.canParse(value, base)) node.properties[attribute] = new URL(value, base).href;
+        else if (URL.canParse(value, base)) {
+          const url = new URL(value, base);
+          node.properties[attribute] = localImages && attribute === 'src' && url.origin === new URL(base).origin
+            ? `${url.pathname}${url.search}${url.hash}`
+            : url.href;
+        }
         else delete node.properties[attribute];
       }
     }

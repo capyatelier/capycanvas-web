@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { content, languages } from '../site/src/data/content.mjs';
-import { fetchReleases, publishedReleases, releasesApiUrl, releasesUrl, renderNotes } from '../site/src/lib/releases.mjs';
+import { fetchReleases, publishedReleases, upcomingReleases, releasesApiUrl, releasesUrl, renderNotes } from '../site/src/lib/releases.mjs';
 import { buildReleaseSite } from './release-sites.mjs';
 
 const fixture = JSON.parse(await readFile('tests/fixtures/releases.json', 'utf8'));
@@ -21,6 +21,17 @@ test('only published releases are offered, newest first', () => {
   assert.ok(fixture.some(release => release.draft) && fixture.some(release => release.prerelease), 'The fixture includes a draft and a pre-release');
   assert.deepEqual(releases.map(release => [release.version, release.date]), [['1.0.2', '2026-10-02'], ['1.0.1', '2026-09-12'], ['1.0.0', '2026-08-30']]);
   assert.deepEqual(publishedReleases([]), []);
+});
+
+test('upcoming notes have no release or download metadata and disappear when their version is published', () => {
+  const entries = [{ version: '1.0.13', markdown: '![Dry media](https://capycanvas.art/assets/releases/1.0.13/dry-media.webp)' }];
+  const options = { base: 'https://capycanvas.art/' };
+  const [upcoming] = upcomingReleases(publishedReleases(fixture), entries, options);
+  assert.deepEqual(Object.keys(upcoming), ['version', 'notes']);
+  assert.equal(upcoming.version, '1.0.13');
+  assert.match(upcoming.notes, /<img src="\/assets\/releases\/1\.0\.13\/dry-media\.webp" alt="Dry media">/);
+  assert.deepEqual(upcomingReleases([{ version: '1.0.13' }], entries, options), []);
+  assert.deepEqual(upcomingReleases([], [], options), []);
 });
 
 test('each platform offers its variants, and the Flatpak installs through its reference', () => {
@@ -145,12 +156,27 @@ for (const locale of Object.keys(languages)) {
         [`https://github.com/capyatelier/capycanvas/releases/tag/v${version}`, escapeText(t.versions.github)],
       ]);
     }
-    assert.equal(page.split('class="release-notes" lang="en"').length, 3, 'A release without notes shows none');
+    assert.equal(page.split('class="release-notes" lang="en"').length, 4, 'Upcoming notes and two published releases have notes');
     assert.equal(page.includes(escapeText(t.download.notesLanguage)), locale !== 'en');
     assert.ok(page.includes(`href="${releasesUrl}"`));
     assert.doesNotMatch(page, /onclick|javascript:|alert\(/);
     assert.doesNotMatch(page, neverOffered);
     assert.doesNotMatch(html, /1\.0\.3|1\.1\.0-beta/);
+  });
+
+  test(`${locale}: upcoming notes show the hero without a release date or downloads`, async () => {
+    const page = main(await read(published, `${prefix(locale)}download/past-versions`));
+    const article = page.match(/<article class="release release-upcoming" id="v1\.0\.13"[\s\S]*?<\/article>/)?.[0];
+    assert.ok(article);
+    assert.equal(article.match(/class="release-status"[^>]*>([^<]+)<\/span>/)?.[1], escapeText(t.versions.upcoming));
+    assert.match(article, /class="release-notes" lang="en"/);
+    assert.match(article, /src="\/assets\/releases\/1\.0\.13\/dry-media\.webp"/);
+    assert.doesNotMatch(article, /<time|release-files|release-latest|releases\/(?:download|tag)\//);
+    assert.ok(page.indexOf('id="v1.0.13"') < page.indexOf('id="v1.0.2"'));
+    const latestPublished = page.match(/<article class="release" id="v1\.0\.2"[\s\S]*?<\/article>/)?.[0];
+    assert.equal(latestPublished.match(/class="release-latest"[^>]*>([^<]+)<\/span>/)?.[1], escapeText(t.versions.latest));
+    const downloadPage = main(await read(published, `${prefix(locale)}download`));
+    assert.doesNotMatch(downloadPage, /1\.0\.13|dry-media\.webp/);
   });
 
   test(`${locale}: with no published release, both pages keep the coming-soon state`, async () => {
@@ -170,7 +196,8 @@ for (const locale of Object.keys(languages)) {
     ]);
     const versions = main(await read(empty, `${prefix(locale)}download/past-versions`));
     assert.match(versions, new RegExp(`<p class="lead"[^>]*>${escapeText(t.versions.empty)}</p>`));
-    assert.doesNotMatch(versions, /<article|release-notes/);
+    assert.match(versions, /<article class="release release-upcoming" id="v1\.0\.13"/);
+    assert.doesNotMatch(versions, /<time|release-files|releases\/(?:download|tag)\//);
     assert.ok(versions.includes(`href="${releasesUrl}"`));
   });
 }

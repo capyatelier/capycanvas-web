@@ -177,7 +177,13 @@ architecture; other browsers get x64. **Other platforms** lists every platform w
 per option, named by its variant, followed by Past versions and the GitHub releases list,
 then the web app instructions. Without JavaScript the button stays hidden. Past versions
 lists every published release, newest first, with its date, files, a link to the release on
-GitHub and its notes. Release assets are matched by exact name; Linux installation
+GitHub and its notes. Upcoming release notes are kept in
+`site/src/content/releases/<version>.md`, with a `version` frontmatter field. They
+appear above published releases with an **Upcoming** label, without a release date
+or downloads. When that version is published on GitHub, its local upcoming entry
+is hidden automatically. The Download page always uses published releases only.
+
+Release assets are matched by exact name; Linux installation
 uses the stable reference hosted on GitHub Pages:
 
 | Platform | Variant | Asset |
@@ -212,9 +218,13 @@ controls are 34px tall, and the selection colors and 8%/16% hover and pressed ti
 come from the editor's theme (`apps/layer-web/style.css` in capyatelier/capycanvas).
 
 Page text is translated in every language; release notes stay in English. They are
-rendered from the release body's Markdown and sanitized with `rehype-sanitize`'s
-GitHub schema before being written into the page. Headings in the notes are moved below the page's
-headings, relative links resolve to GitHub, and in-page anchors are kept unique.
+rendered from the release body's Markdown, or the upcoming Markdown file, and
+sanitized with `rehype-sanitize`'s GitHub schema before being written into the page.
+Headings in the notes are moved below the page's headings, relative links in
+published notes resolve to GitHub, and in-page anchors are kept unique.
+Use absolute `https://capycanvas.art/assets/releases/<version>/` image URLs in
+upcoming notes so the body can also be used on GitHub. The website renders those
+images from its own origin, including during local previews.
 
 Tests build the site from `tests/fixtures/releases.json`, shaped like the GitHub API
 response and including a draft, a pre-release and an unfinished upload, and from the empty

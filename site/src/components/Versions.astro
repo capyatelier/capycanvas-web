@@ -1,7 +1,7 @@
 ---
 import { content } from '../data/content.mjs';
 import { releasesUrl } from '../lib/releases.mjs';
-import { releases } from '../lib/release-data';
+import { releases, upcoming } from '../lib/release-data';
 import { platforms, type Locale } from '../lib/site';
 import { formatDate } from '../lib/format';
 import Icon from './Icon.astro';
@@ -15,7 +15,14 @@ const t = content[locale].versions;
 <main id="main" class="page">
   <h1>{t.title}</h1>
   <p class="lead">{releases.length ? t.intro : t.empty}</p>
-  {releases.length > 0 && locale !== 'en' && <p class="notes-language">{download.notesLanguage}</p>}
+  {(releases.length > 0 || upcoming.length > 0) && locale !== 'en' && <p class="notes-language">{download.notesLanguage}</p>}
+  {upcoming.map(release => (
+    <article class="release release-upcoming" id={`v${release.version}`} aria-labelledby={`v${release.version}-title`}>
+      <h2 id={`v${release.version}-title`}><Phrase text={t.version}><span slot="version">{release.version}</span></Phrase></h2>
+      <p class="release-date"><span class="release-status">{t.upcoming}</span></p>
+      <ReleaseNotes html={release.notes} />
+    </article>
+  ))}
   {releases.map((release, index) => (
     <article class="release" id={`v${release.version}`} aria-labelledby={`v${release.version}-title`}>
       <h2 id={`v${release.version}-title`}><Phrase text={t.version}><span slot="version">{release.version}</span></Phrase></h2>
@@ -34,11 +41,13 @@ const t = content[locale].versions;
 </main>
 
 <style>
+  .page { max-width: 928px; }
   .notes-language { margin-top: -16px; font-size: 13px; color: var(--muted); }
   .release { max-width: 640px; margin-top: 40px; }
+  .release-upcoming { max-width: 880px; }
   .release h2 { font-size: 20px; font-weight: 650; line-height: 1.35; margin-bottom: 2px; }
   .release-date { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin-bottom: 14px; font-size: 13px; color: var(--muted); }
-  .release-latest { padding: 0 8px; border-radius: 999px; background: var(--selected); color: var(--ink); font-size: 11px; font-weight: 500; line-height: 20px; }
+  .release-latest, .release-status { padding: 0 8px; border-radius: 999px; background: var(--selected); color: var(--ink); font-size: 11px; font-weight: 500; line-height: 20px; }
   .release-files { display: flex; flex-wrap: wrap; gap: var(--gap); list-style: none; margin: 0 0 18px; padding: 0; }
   .release-files li { display: flex; align-items: center; border-radius: var(--control-radius); background: var(--surface); font-size: 14px; }
   .release-files li:hover { background: color-mix(in srgb, var(--surface), var(--ink) 8%); }

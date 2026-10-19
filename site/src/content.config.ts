@@ -23,4 +23,9 @@ const policies = defineCollection({
   schema: z.object({ effectiveDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/) }),
 });
 
-export const collections = { guides, policies };
+const releaseNotes = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/releases' }),
+  schema: z.object({ version: z.string().regex(/^\d+\.\d+\.\d+$/) }),
+});
+
+export const collections = { guides, policies, releaseNotes };

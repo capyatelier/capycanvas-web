@@ -38,7 +38,7 @@ export const content = brandTranslations({
     versions: {
       title: 'Past versions', intro: 'If an update gives you trouble, you can go back to an earlier version.',
       empty: 'No versions have been released yet.',
-      version: 'Version {version}', released: 'Released {date}', latest: 'Latest', files: 'Files', github: 'All files on GitHub',
+      version: 'Version {version}', released: 'Released {date}', latest: 'Latest', upcoming: 'Upcoming', files: 'Files', github: 'All files on GitHub',
       meta: 'Every released version of {appName}, with release notes and download links.'
     },
     ipadBeta: {
@@ -92,7 +92,7 @@ export const content = brandTranslations({
     versions: {
       title: '過去のバージョン', intro: 'アップデートで問題が起きたときは、以前のバージョンに戻せます。',
       empty: '公開済みのバージョンはまだありません。',
-      version: 'バージョン {version}', released: '{date} 公開', latest: '最新', files: 'ファイル', github: 'GitHub のすべてのファイル',
+      version: 'バージョン {version}', released: '{date} 公開', latest: '最新', upcoming: '近日公開', files: 'ファイル', github: 'GitHub のすべてのファイル',
       meta: 'これまでに公開した {appName} のすべてのバージョンと、リリースノート、ダウンロードリンク。'
     },
     ipadBeta: {
@@ -146,7 +146,7 @@ export const content = brandTranslations({
     versions: {
       title: '历史版本', intro: '如果更新后遇到问题，可以换回之前的版本。',
       empty: '目前还没有发布任何版本。',
-      version: '版本 {version}', released: '发布于 {date}', latest: '最新', files: '文件', github: 'GitHub 上的所有文件',
+      version: '版本 {version}', released: '发布于 {date}', latest: '最新', upcoming: '即将推出', files: '文件', github: 'GitHub 上的所有文件',
       meta: '{appName} 已发布的所有版本，附发布说明和下载链接。'
     },
     ipadBeta: {
@@ -200,7 +200,7 @@ export const content = brandTranslations({
     versions: {
       title: '歷史版本', intro: '如果更新後遇到問題，可以換回之前的版本。',
       empty: '目前還沒有釋出任何版本。',
-      version: '版本 {version}', released: '釋出於 {date}', latest: '最新', files: '檔案', github: 'GitHub 上的所有檔案',
+      version: '版本 {version}', released: '釋出於 {date}', latest: '最新', upcoming: '即將推出', files: '檔案', github: 'GitHub 上的所有檔案',
       meta: '{appName} 已釋出的所有版本，附釋出說明和下載連結。'
     },
     ipadBeta: {
@@ -254,7 +254,7 @@ export const content = brandTranslations({
     versions: {
       title: '이전 버전', intro: '업데이트 후 문제가 생기면 이전 버전으로 되돌릴 수 있습니다.',
       empty: '아직 출시된 버전이 없습니다.',
-      version: '버전 {version}', released: '{date} 출시', latest: '최신', files: '파일', github: 'GitHub의 모든 파일',
+      version: '버전 {version}', released: '{date} 출시', latest: '최신', upcoming: '출시 예정', files: '파일', github: 'GitHub의 모든 파일',
       meta: '지금까지 출시된 {appName}의 모든 버전과 릴리스 노트, 다운로드 링크.'
     },
     ipadBeta: {

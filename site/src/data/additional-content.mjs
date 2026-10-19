@@ -69,6 +69,7 @@ export const additionalContent = {
       "version": "Versión {version}",
       "released": "Publicada el {date}",
       "latest": "Más reciente",
+      "upcoming": "Próximamente",
       "files": "Archivos",
       "github": "Todos los archivos en GitHub",
       "meta": "Todas las versiones publicadas de {appName}, con notas de la versión y enlaces de descarga."
@@ -184,6 +185,7 @@ export const additionalContent = {
       "version": "Versão {version}",
       "released": "Lançada em {date}",
       "latest": "Mais recente",
+      "upcoming": "Em breve",
       "files": "Arquivos",
       "github": "Todos os arquivos no GitHub",
       "meta": "Todas as versões lançadas do {appName}, com notas da versão e links para download."
@@ -299,6 +301,7 @@ export const additionalContent = {
       "version": "Versi {version}",
       "released": "Dirilis {date}",
       "latest": "Terbaru",
+      "upcoming": "Mendatang",
       "files": "Berkas",
       "github": "Semua berkas di GitHub",
       "meta": "Semua versi {appName} yang telah dirilis, beserta catatan rilis dan tautan unduhan."
@@ -414,6 +417,7 @@ export const additionalContent = {
       "version": "Version {version}",
       "released": "Publiée le {date}",
       "latest": "Dernière version",
+      "upcoming": "À venir",
       "files": "Fichiers",
       "github": "Tous les fichiers sur GitHub",
       "meta": "Toutes les versions publiées de {appName}, avec leurs notes de version et leurs liens de téléchargement."
@@ -529,6 +533,7 @@ export const additionalContent = {
       "version": "Version {version}",
       "released": "Veröffentlicht am {date}",
       "latest": "Neueste",
+      "upcoming": "Demnächst",
       "files": "Dateien",
       "github": "Alle Dateien auf GitHub",
       "meta": "Alle veröffentlichten Versionen von {appName} mit Versionshinweisen und Download-Links."
@@ -644,6 +649,7 @@ export const additionalContent = {
       "version": "Версия {version}",
       "released": "Выпущена {date}",
       "latest": "Последняя",
+      "upcoming": "Скоро",
       "files": "Файлы",
       "github": "Все файлы на GitHub",
       "meta": "Все выпущенные версии {appName} с примечаниями к выпуску и ссылками для скачивания."
@@ -759,6 +765,7 @@ export const additionalContent = {
       "version": "เวอร์ชัน {version}",
       "released": "เผยแพร่เมื่อ {date}",
       "latest": "ล่าสุด",
+      "upcoming": "เร็วๆ นี้",
       "files": "ไฟล์",
       "github": "ไฟล์ทั้งหมดบน GitHub",
       "meta": "{appName} ทุกเวอร์ชันที่เผยแพร่แล้ว พร้อมบันทึกประจำรุ่นและลิงก์ดาวน์โหลด"
@@ -874,6 +881,7 @@ export const additionalContent = {
       "version": "Phiên bản {version}",
       "released": "Phát hành ngày {date}",
       "latest": "Mới nhất",
+      "upcoming": "Sắp ra mắt",
       "files": "Tệp",
       "github": "Tất cả tệp trên GitHub",
       "meta": "Mọi phiên bản {appName} đã phát hành, kèm ghi chú phát hành và liên kết tải xuống."
@@ -989,6 +997,7 @@ export const additionalContent = {
       "version": "Sürüm {version}",
       "released": "{date} tarihinde yayımlandı",
       "latest": "En yeni",
+      "upcoming": "Yakında",
       "files": "Dosyalar",
       "github": "GitHub'daki tüm dosyalar",
       "meta": "{appName} uygulamasının yayımlanan tüm sürümleri, sürüm notları ve indirme bağlantılarıyla."
@@ -1104,6 +1113,7 @@ export const additionalContent = {
       "version": "Versione {version}",
       "released": "Pubblicata il {date}",
       "latest": "Più recente",
+      "upcoming": "In arrivo",
       "files": "File",
       "github": "Tutti i file su GitHub",
       "meta": "Tutte le versioni pubblicate di {appName}, con note di rilascio e link per il download."
