@@ -52,7 +52,7 @@ export const additionalContent = {
         "apk": "APK",
         "flatpak": "Flatpak",
         "x64": "x64",
-        "arm64": "Arm64",
+        "arm64": "ARM64",
         "appleSilicon": "Apple silicon"
       },
       "copy": "Copiar",
@@ -168,7 +168,7 @@ export const additionalContent = {
         "apk": "APK",
         "flatpak": "Flatpak",
         "x64": "x64",
-        "arm64": "Arm64",
+        "arm64": "ARM64",
         "appleSilicon": "Apple silicon"
       },
       "copy": "Copiar",
@@ -284,7 +284,7 @@ export const additionalContent = {
         "apk": "APK",
         "flatpak": "Flatpak",
         "x64": "x64",
-        "arm64": "Arm64",
+        "arm64": "ARM64",
         "appleSilicon": "Apple silicon"
       },
       "copy": "Salin",
@@ -400,7 +400,7 @@ export const additionalContent = {
         "apk": "APK",
         "flatpak": "Flatpak",
         "x64": "x64",
-        "arm64": "Arm64",
+        "arm64": "ARM64",
         "appleSilicon": "Apple silicon"
       },
       "copy": "Copier",
@@ -516,7 +516,7 @@ export const additionalContent = {
         "apk": "APK",
         "flatpak": "Flatpak",
         "x64": "x64",
-        "arm64": "Arm64",
+        "arm64": "ARM64",
         "appleSilicon": "Apple silicon"
       },
       "copy": "Kopieren",
@@ -632,7 +632,7 @@ export const additionalContent = {
         "apk": "APK",
         "flatpak": "Flatpak",
         "x64": "x64",
-        "arm64": "Arm64",
+        "arm64": "ARM64",
         "appleSilicon": "Apple silicon"
       },
       "copy": "Копировать",
@@ -748,7 +748,7 @@ export const additionalContent = {
         "apk": "APK",
         "flatpak": "Flatpak",
         "x64": "x64",
-        "arm64": "Arm64",
+        "arm64": "ARM64",
         "appleSilicon": "Apple silicon"
       },
       "copy": "คัดลอก",
@@ -864,7 +864,7 @@ export const additionalContent = {
         "apk": "APK",
         "flatpak": "Flatpak",
         "x64": "x64",
-        "arm64": "Arm64",
+        "arm64": "ARM64",
         "appleSilicon": "Apple silicon"
       },
       "copy": "Sao chép",
@@ -980,7 +980,7 @@ export const additionalContent = {
         "apk": "APK",
         "flatpak": "Flatpak",
         "x64": "x64",
-        "arm64": "Arm64",
+        "arm64": "ARM64",
         "appleSilicon": "Apple silicon"
       },
       "copy": "Kopyala",
@@ -1096,7 +1096,7 @@ export const additionalContent = {
         "apk": "APK",
         "flatpak": "Flatpak",
         "x64": "x64",
-        "arm64": "Arm64",
+        "arm64": "ARM64",
         "appleSilicon": "Apple silicon"
       },
       "copy": "Copia",

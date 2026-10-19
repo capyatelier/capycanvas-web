@@ -122,7 +122,7 @@ for (const locale of Object.keys(languages)) {
     assert.match(page, /<div data-platform="linux" hidden[^>]*><a [^>]+>[\s\S]*?<\/a><div class="command"/);
     assert.deepEqual([...page.matchAll(/<code[^>]*>([^<]+)<\/code>/g)].map(([, command]) => command), [`flatpak install --from ${flatpakRef}`]);
     assert.ok(page.includes(`data-copy="${escape(t.download.copy)}" data-copied="${escape(t.download.copied)}" title="${escape(t.download.copy)}" aria-label="${escape(t.download.copy)}"`));
-    for (const name of ['Linux Flatpak', 'Windows x64', 'Windows Arm64', `macOS ${variants.appleSilicon}`]) {
+    for (const name of ['Linux Flatpak', 'Windows x64', 'Windows ARM64', `macOS ${variants.appleSilicon}`]) {
       assert.ok(page.includes(`>${escapeText(t.download.downloadFor.replace('{version}', '1.0.2').replace('{platform}', name))}</a>`), name);
     }
     assert.ok(page.includes(escapeText(t.versions.released.replace('{date}', new Intl.DateTimeFormat(t.lang, { dateStyle: 'long', timeZone: 'UTC' }).format(new Date('2026-10-02T12:00:00Z'))))));
@@ -144,7 +144,7 @@ for (const locale of Object.keys(languages)) {
     assert.equal(page.split(`>${escapeText(t.versions.latest)}</span>`).length, 2);
     const variants = t.download.variants;
     for (const [version, date, files] of [
-      ['1.0.2', '2026-10-02', [['android.apk', 'Android APK'], ['linux-x86_64.flatpak', 'Linux Flatpak'], ['windows-x64-setup.exe', 'Windows x64'], ['windows-arm64-setup.exe', 'Windows Arm64'], ['macos-arm64.dmg', `macOS ${variants.appleSilicon}`]]],
+      ['1.0.2', '2026-10-02', [['android.apk', 'Android APK'], ['linux-x86_64.flatpak', 'Linux Flatpak'], ['windows-x64-setup.exe', 'Windows x64'], ['windows-arm64-setup.exe', 'Windows ARM64'], ['macos-arm64.dmg', `macOS ${variants.appleSilicon}`]]],
       ['1.0.1', '2026-09-12', [['android.apk', 'Android APK'], ['windows-x64-setup.exe', 'Windows x64']]],
       ['1.0.0', '2026-08-30', [['windows-x64-setup.exe', 'Windows x64']]],
     ]) {
@@ -166,17 +166,17 @@ for (const locale of Object.keys(languages)) {
 
   test(`${locale}: upcoming notes show the hero without a release date or downloads`, async () => {
     const page = main(await read(published, `${prefix(locale)}download/past-versions`));
-    const article = page.match(/<article class="release release-upcoming" id="v1\.0\.13"[\s\S]*?<\/article>/)?.[0];
+    const article = page.match(/<article class="release release-upcoming" id="v1\.0\.14"[\s\S]*?<\/article>/)?.[0];
     assert.ok(article);
     assert.equal(article.match(/class="release-status"[^>]*>([^<]+)<\/span>/)?.[1], escapeText(t.versions.upcoming));
     assert.match(article, /class="release-notes" lang="en"/);
     assert.match(article, /src="\/assets\/releases\/1\.0\.13\/dry-media\.webp"/);
     assert.doesNotMatch(article, /<time|release-files|release-latest|releases\/(?:download|tag)\//);
-    assert.ok(page.indexOf('id="v1.0.13"') < page.indexOf('id="v1.0.2"'));
+    assert.ok(page.indexOf('id="v1.0.14"') < page.indexOf('id="v1.0.2"'));
     const latestPublished = page.match(/<article class="release" id="v1\.0\.2"[\s\S]*?<\/article>/)?.[0];
     assert.equal(latestPublished.match(/class="release-latest"[^>]*>([^<]+)<\/span>/)?.[1], escapeText(t.versions.latest));
     const downloadPage = main(await read(published, `${prefix(locale)}download`));
-    assert.doesNotMatch(downloadPage, /1\.0\.13|dry-media\.webp/);
+    assert.doesNotMatch(downloadPage, /1\.0\.14|dry-media\.webp/);
   });
 
   test(`${locale}: with no published release, both pages keep the coming-soon state`, async () => {
@@ -196,7 +196,7 @@ for (const locale of Object.keys(languages)) {
     ]);
     const versions = main(await read(empty, `${prefix(locale)}download/past-versions`));
     assert.match(versions, new RegExp(`<p class="lead"[^>]*>${escapeText(t.versions.empty)}</p>`));
-    assert.match(versions, /<article class="release release-upcoming" id="v1\.0\.13"/);
+    assert.match(versions, /<article class="release release-upcoming" id="v1\.0\.14"/);
     assert.doesNotMatch(versions, /<time|release-files|releases\/(?:download|tag)\//);
     assert.ok(versions.includes(`href="${releasesUrl}"`));
   });
