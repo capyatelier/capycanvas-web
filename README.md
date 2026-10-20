@@ -202,8 +202,10 @@ Store `.msix`, Google Play `.aab`, the Flatpak repository archive and the `.zip`
 are left on GitHub. Until a release is published, Linux, Windows and macOS keep their
 "Coming soon" status and the page links to the GitHub releases list.
 
-The iPad and Android rows always show **Join the beta**, which opens a short sign-up
-page: `/download/ipad-beta/` (install TestFlight from its App Store button, open the invitation, install) and
+The iPad and Android rows offer only **Join the beta**; Android APK downloads remain
+available on Past versions. The button opens a short sign-up page:
+`/download/ipad-beta/` (install TestFlight from its App Store button, open the
+invitation, install) and
 `/download/android-beta/` (join the Google Group, accept the Google Play test, install,
 all with the tablet's Google account). The TestFlight, Google Group and Google Play test links are `betaLinks`
 in `site/src/lib/site.ts`. Play Console's closed testing track (`alpha`) must list

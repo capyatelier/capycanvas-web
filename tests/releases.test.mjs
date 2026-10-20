@@ -102,7 +102,6 @@ for (const locale of Object.keys(languages)) {
     assert.deepEqual(buttons, [
       ['ipad', `/${prefix(locale)}download/ipad-beta/`, escapeText(t.download.joinBeta)],
       ['android', `/${prefix(locale)}download/android-beta/`, escapeText(t.download.joinBeta)],
-      ['android', `${download}/v1.0.2/capycanvas-1.0.2-android.apk`, variants.apk],
       ['linux', flatpakRef, variants.flatpak],
       ['windows', `${download}/v1.0.2/capycanvas-1.0.2-windows-x64-setup.exe`, variants.x64],
       ['windows', `${download}/v1.0.2/capycanvas-1.0.2-windows-arm64-setup.exe`, variants.arm64],
