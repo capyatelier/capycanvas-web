@@ -15,6 +15,7 @@ const topics = Object.entries(overview.sections).map(([id, copy]) => ({ id, copy
 <DocsLayout locale={locale}>
   <h1>{content[locale].documentation.title}</h1>
   <p class="docs-lead">{t.intro}</p>
+  <p>{t.reach}</p>
   <div class="docs-concepts docs-stories">
     {topics.map(({ id, copy, paragraphs }) => <section aria-labelledby={id}>
       <GuideFigure locale={locale} image={{ ...capturePair(copy.image.shot, locale), alt: copy.image.alt }} />

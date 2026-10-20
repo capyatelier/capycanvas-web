@@ -2,6 +2,7 @@
 export const additionalDocsUI = {
   "es": {
     "intro": "{appName} es una aplicación gratuita de código abierto para dibujar, pintar y editar fotografías. Está inspirado en el zen de los capibaras.",
+    "reach": "La falta de software creativo se nota sobre todo en Linux, donde los artistas no tienen muchas buenas opciones. Aun así, el software bien diseñado debería funcionar en todas partes: Windows, Mac, iPad, Android y la web.",
     "overview": "Descripción general",
     "contents": "Contenido de la documentación",
     "onPage": "En esta página",
@@ -127,6 +128,7 @@ export const additionalDocsUI = {
   },
   "pt-BR": {
     "intro": "{appName} é um aplicativo gratuito e de código aberto para desenho, pintura e edição de fotos. É inspirado no zen das capivaras.",
+    "reach": "A falta de software criativo é mais evidente no Linux, onde não há muitas boas opções para artistas. Ainda assim, um software bem projetado deveria funcionar em todo lugar: Windows, Mac, iPad, Android e na web.",
     "overview": "Visão geral",
     "contents": "Conteúdo da documentação",
     "onPage": "Nesta página",
@@ -252,6 +254,7 @@ export const additionalDocsUI = {
   },
   "id": {
     "intro": "{appName} adalah aplikasi sumber terbuka gratis untuk membuat sketsa, melukis, dan mengedit foto. Ini terinspirasi oleh zen kapibara.",
+    "reach": "Kekurangan perangkat lunak kreatif paling terasa di Linux, tempat pilihan yang bagus untuk seniman masih terbatas. Meski begitu, perangkat lunak yang dirancang dengan baik seharusnya bisa digunakan di mana saja: Windows, Mac, iPad, Android, dan web.",
     "overview": "Ikhtisar",
     "contents": "Isi dokumentasi",
     "onPage": "Di halaman ini",
@@ -377,6 +380,7 @@ export const additionalDocsUI = {
   },
   "fr": {
     "intro": "{appName} est une application gratuite et open source pour le dessin, la peinture et la retouche photo. Il s'inspire du zen des capybaras.",
+    "reach": "Le manque de logiciels de création se fait surtout sentir sur Linux, où les artistes ont peu de bonnes options. Cela dit, un logiciel bien conçu devrait fonctionner partout : Windows, Mac, iPad, Android et sur le web.",
     "overview": "Aperçu",
     "contents": "Contenu de la documentation",
     "onPage": "Sur cette page",
@@ -502,6 +506,7 @@ export const additionalDocsUI = {
   },
   "de": {
     "intro": "{appName} ist eine kostenlose Open-Source-App zum Skizzieren, Malen und Bearbeiten von Fotos. Es ist vom Zen der Wasserschweine inspiriert.",
+    "reach": "Die Lücke bei Kreativsoftware ist unter Linux am deutlichsten, wo es für Kunstschaffende nur wenige gute Möglichkeiten gibt. Gut gestaltete Software sollte jedoch überall funktionieren: unter Windows, auf dem Mac, iPad und Android sowie im Web.",
     "overview": "Übersicht",
     "contents": "Dokumentationsinhalte",
     "onPage": "Auf dieser Seite",
@@ -627,6 +632,7 @@ export const additionalDocsUI = {
   },
   "ru": {
     "intro": "{appName} — бесплатное приложение с открытым исходным кодом для создания эскизов, рисования и редактирования фотографий. Он вдохновлен дзеном капибар.",
+    "reach": "Нехватка программ для творчества особенно заметна на Linux, где у художников не так много хороших вариантов. Но хорошо продуманная программа должна работать везде: на Windows, Mac, iPad, Android и в браузере.",
     "overview": "Обзор",
     "contents": "Содержание документации",
     "onPage": "На этой странице",
@@ -752,6 +758,7 @@ export const additionalDocsUI = {
   },
   "th": {
     "intro": "{appName} เป็นแอปโอเพ่นซอร์สฟรีสำหรับการสเก็ตช์ภาพ ลงสี และแก้ไขภาพ ได้รับแรงบันดาลใจจากเซนของคาปิบารา",
+    "reach": "การขาดแคลนซอฟต์แวร์สร้างสรรค์เห็นได้ชัดที่สุดบน Linux ซึ่งมีตัวเลือกดี ๆ สำหรับศิลปินไม่มากนัก แต่ซอฟต์แวร์ที่ออกแบบมาอย่างดีก็ควรใช้ได้ทุกที่ ทั้ง Windows, Mac, iPad, Android และเว็บ",
     "overview": "ภาพรวม",
     "contents": "เนื้อหาเอกสาร",
     "onPage": "บนหน้านี้",
@@ -877,6 +884,7 @@ export const additionalDocsUI = {
   },
   "vi": {
     "intro": "{appName} là một ứng dụng mã nguồn mở miễn phí để phác thảo, vẽ tranh và chỉnh sửa ảnh. Nó được lấy cảm hứng từ zen của capybaras.",
+    "reach": "Sự thiếu hụt phần mềm sáng tạo thể hiện rõ nhất trên Linux, nơi họa sĩ không có nhiều lựa chọn tốt. Dù vậy, phần mềm được thiết kế tốt nên dùng được ở mọi nơi: Windows, Mac, iPad, Android và web.",
     "overview": "Tổng quan",
     "contents": "Nội dung tài liệu",
     "onPage": "Trên trang này",
@@ -1002,6 +1010,7 @@ export const additionalDocsUI = {
   },
   "tr": {
     "intro": "{appName}, çizim, boyama ve fotoğraf düzenlemeye yönelik ücretsiz, açık kaynaklı bir uygulamadır. Kapibaraların zeninden ilham alıyor.",
+    "reach": "Yaratıcı yazılımların eksikliği en çok Linux’ta hissediliyor; sanatçılar için pek fazla iyi seçenek yok. Yine de iyi tasarlanmış bir yazılım her yerde çalışmalı: Windows, Mac, iPad, Android ve web.",
     "overview": "Genel bakış",
     "contents": "Dokümantasyon içeriği",
     "onPage": "Bu sayfada",
@@ -1127,6 +1136,7 @@ export const additionalDocsUI = {
   },
   "it": {
     "intro": "{appName} è un'app open source gratuita per disegnare, dipingere e modificare foto. Si ispira allo zen dei capibara.",
+    "reach": "La carenza di software creativo è più evidente su Linux, dove gli artisti non hanno molte buone opzioni. Un software ben progettato, però, dovrebbe funzionare ovunque: Windows, Mac, iPad, Android e sul web.",
     "overview": "Panoramica",
     "contents": "Contenuti della documentazione",
     "onPage": "In questa pagina",

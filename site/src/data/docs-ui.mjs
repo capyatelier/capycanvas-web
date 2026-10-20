@@ -3,6 +3,7 @@ import { additionalDocsUI } from './additional-docs.mjs';
 export const docsUI = brandTranslations({
   "en": {
     "intro": "{appName} is a free, open-source app for sketching, painting and photo editing. It is inspired by the zen of capybaras.",
+    "reach": "The gap in creative software is most stark on Linux, where there are not many good options for artists. Though, well-designed software should work everywhere: Windows, Mac, iPad and Android, and web.",
     "overview": "Overview",
     "contents": "Documentation contents",
     "onPage": "On this page",
@@ -213,6 +214,7 @@ export const docsUI = brandTranslations({
   },
   "ja": {
     "intro": "{appName}は、スケッチ、ペイント、写真編集のための、無料でオープンソースのアプリです。カピバラの禅のような穏やかさに着想を得ています。",
+    "reach": "クリエイティブソフトの不足が最も顕著なのはLinuxで、アーティストにとって優れた選択肢はあまりありません。とはいえ、よく設計されたソフトウェアは、Windows、Mac、iPad、Android、そしてウェブと、どこでも使えるべきだと考えています。",
     "overview": "目次",
     "contents": "ドキュメントの目次",
     "onPage": "このページの内容",
@@ -338,6 +340,7 @@ export const docsUI = brandTranslations({
   },
   "zh": {
     "intro": "{appName}是一款免费、开源的速写、绘画与照片编辑应用。它的灵感来自水豚的禅意。",
+    "reach": "创意软件的缺口在 Linux 上最为明显，艺术家可用的好工具并不多。不过，设计良好的软件应该能在任何平台上使用：Windows、Mac、iPad、Android，以及网页。",
     "overview": "概览",
     "contents": "文档目录",
     "onPage": "本页内容",
@@ -463,6 +466,7 @@ export const docsUI = brandTranslations({
   },
   "zh-Hant": {
     "intro": "{appName}是一款免費、開源的速寫、繪畫與照片編輯應用程式。它的靈感來自水豚的禪意。",
+    "reach": "創作軟體的缺口在 Linux 上最為明顯，藝術家可用的好工具並不多。不過，設計良好的軟體應該能在任何平台上使用：Windows、Mac、iPad、Android，以及網頁。",
     "overview": "概覽",
     "contents": "文件目錄",
     "onPage": "本頁內容",
@@ -588,6 +592,7 @@ export const docsUI = brandTranslations({
   },
   "ko": {
     "intro": "{appName}는 스케치, 페인팅, 사진 편집을 위한 무료 오픈 소스 앱입니다. 카피바라의 선(禪) 같은 평온함에서 영감을 받았습니다.",
+    "reach": "창작 소프트웨어의 부족은 Linux에서 가장 두드러집니다. 예술가가 고를 만한 좋은 도구가 많지 않기 때문입니다. 하지만 잘 설계된 소프트웨어라면 Windows, Mac, iPad, Android, 그리고 웹까지 어디서나 쓸 수 있어야 합니다.",
     "overview": "개요",
     "contents": "문서 목차",
     "onPage": "이 페이지의 내용",

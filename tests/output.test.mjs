@@ -155,6 +155,7 @@ for(const locale of Object.keys(languages)) {
     }
     if(page==='documentation') {
       assert.ok(html.includes(escapeText(docsUI[locale].intro)));
+      assert.ok(html.includes(escapeText(docsUI[locale].reach)));
       const overview=docsUI[locale].landing;
       const overviewText = html.replace(/<\/?em>/g, '');
       for (const [id, section] of Object.entries(overview.sections)) {
