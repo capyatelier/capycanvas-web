@@ -1,7 +1,7 @@
 ---
 title: "サイズ、強さ、不透明度"
 description: "ブラシのサイズ、強さ、不透明度と、それらを変更するパネル、バー、キー。"
-related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools"]
+related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools", "customize/bubbles"]
 ---
 
 ブラシの設定項目はツールとプリセットによって異なります。変更はプリセットに保存されます。
@@ -57,6 +57,8 @@ related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brus
 ![接触プレビューが開いた強さのスライダー。](shot:brushes/strength-preview)
 
 プレビューの**この値をブックマーク**でトラックに印を追加し、**ブックマークを削除**で削除します。ブックマークはプリセットごとに保存されます。
+
+そのバーから**色の選択**をキャンバスにドラッグすると、サイズと強さの弧がある[バブル](/ja/docs/customize/bubbles/)を取り出せます。
 
 ## サイズのキー
 

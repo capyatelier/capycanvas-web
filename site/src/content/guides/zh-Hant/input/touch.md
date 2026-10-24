@@ -1,7 +1,7 @@
 ---
 title: "觸控手勢"
 description: "手指在畫布上的操作，以及可指定操作的手指輕點。"
-related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
+related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
 在觸控式螢幕上，可以用手指移動畫布、拾取色彩和執行命令。
@@ -21,6 +21,18 @@ related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
 用一根手指在畫布上按住不動，可拾取手指下方的色彩。手指上方會出現一個放大環。拖動以瞄準，抬起手指即取色。按 **Escape** 可取消。
 
 第二根手指觸碰畫布時，取色會取消。
+
+## 清除圖層
+
+用三根手指在畫布上來回擦動，可對目前圖層執行**清除整個圖層**。三根手指一起移動、反向，再反向，中途不要抬起。一次**復原**即可恢復圖層。已鎖定的圖層不會被清除。
+
+## 移動氣泡
+
+用兩根手指拖動[氣泡](/zh-Hant/docs/customize/bubbles/)，可從氣泡上的任意位置移動它。
+
+## 專注模式下的工具列
+
+在 Linux 應用程式的[專注模式](/zh-Hant/docs/customize/zen/)下，用一根手指從視窗邊緣向內滑動，可顯示停靠在該邊緣的工具列和面板。
 
 ## 手指輕點
 
@@ -50,4 +62,4 @@ related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
 
 ## 平台
 
-觸控手勢在 Linux、Windows、Android、iPad 和網頁版上可用。macOS 上不顯示**觸控手勢**組。
+觸控手勢在 Linux、Windows、Android、iPad 和網頁版上可用。macOS 上不顯示**觸控手勢**組，但在觸控板上用三根手指來回擦動仍可清除圖層。

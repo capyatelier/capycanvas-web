@@ -1,7 +1,7 @@
 ---
 title: "タッチジェスチャー"
 description: "キャンバス上での指の操作と、割り当てられる指のタップ。"
-related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
+related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
 タッチスクリーンでは、指でキャンバスを動かしたり、色を取得したり、コマンドを実行したりできます。
@@ -22,6 +22,17 @@ related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
 
 2本目の指がキャンバスに触れると、色の取得はキャンセルされます。
 
+## レイヤーの消去
+
+3本の指でキャンバスをこするように動かすと、編集中のレイヤーに**レイヤー全体を消去**が実行されます。3本の指をそろえて動かし、反対方向へ、さらに指を離さずにもう一度反対方向へ動かします。**元に戻す**を1回実行すると、レイヤーが復元されます。ロックされたレイヤーは消去されません。
+
+## バブルの移動
+
+[バブル](/ja/docs/customize/bubbles/)は、2本の指でドラッグすると、バブルのどこからでも動かせます。
+
+## 集中モードでのツールバー
+
+Linuxアプリでは、[集中モード](/ja/docs/customize/zen/)で1本の指をウィンドウの端から内側へスワイプすると、その端にドッキングしたツールバーとパネルが表示されます。
 ## 指のタップ
 
 2本、3本、4本の指でキャンバスをタップして、操作を実行できます。
@@ -50,4 +61,4 @@ related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
 
 ## プラットフォーム
 
-タッチジェスチャーは、Linux、Windows、Android、iPad、ウェブで使えます。macOSでは**タッチジェスチャー**グループは表示されません。
+タッチジェスチャーは、Linux、Windows、Android、iPad、ウェブで使えます。macOSでは**タッチジェスチャー**グループは表示されませんが、トラックパッドでの3本指のこすり動作でもレイヤーを消去できます。

@@ -143,7 +143,7 @@ Vorgaben gelten für alle Zeichnungen.
 
 ## HDR-Export
 
-![Der Dialog Bild exportieren für eine HDR-Zeichnung mit HDR-JPEG · Gain Map nach Ausgabe ansehen.](shot:files/export-hdr-preview)
+![Das Menü Wiedergabevorschau auf HDR-Rekonstruktion · SDR-Vorschau eingestellt, mit den Vorschauen Bildinhalt und HDR-Rekonstruktion nebeneinander.](shot:files/export-hdr-preview)
 
 Bei einer Zeichnung mit 16 oder 32 Bit Gleitkomma bietet **Dynamikumfang** diese Optionen:
 

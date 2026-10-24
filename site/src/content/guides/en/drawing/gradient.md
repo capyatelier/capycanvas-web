@@ -43,7 +43,7 @@ Do one of the following:
 
 ## Stop editor
 
-![The Tool panel for the Gradient tool with the Shape row, the stop editor and Opacity.](shot:drawing/gradient-tool-panel)
+![The Tool panel for the Gradient tool with the Shape row and the stop editor.](shot:drawing/gradient-tool-panel)
 
 You can edit the gradient's colors in the stop editor below **Shape** in the
 **Tool** panel. The gradient button in the Tool Options bar opens the editor in

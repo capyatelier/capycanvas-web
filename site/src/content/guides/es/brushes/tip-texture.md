@@ -6,9 +6,11 @@ related: ["brushes/basics", "brushes/wet-media", "drawing/brush-tools"]
 
 Puedes cambiar la forma de cada marca y cuánto la modifica la textura del papel con los ajustes **Punta** y **Textura** del panel **Herramienta** ([Tamaño, intensidad y opacidad](/es/docs/brushes/basics/)).
 
-![El panel Herramienta para Lápiz con el grupo Punta y el grupo Textura.](shot:brushes/tip-texture-settings)
+![El panel Herramienta de Pincel de pintura desde Dureza hasta Intensidad de textura, con los grupos Suavizado, Punta y Textura.](shot:brushes/tip-texture-settings)
 
 ## Punta
+
+Los pinceles de medios secos solo muestran **Ángulo de la punta**.
 
 ### Dureza
 
@@ -38,21 +40,23 @@ cualquiera de los dos sentidos.
 
 ## Puntas que giran con el trazo
 
-Las puntas de **Pincel de pintura**, **Pincel plano con textura**, **Bloque de pastel**, **Veladura transparente**, **Gouache opaco**, **Óleo cargado**, **Espátula**, **Aguada de acuarela**, **Acuarela húmeda**, **Textura doble** y **Mezclador natural** siguen la dirección del trazo. **Ángulo de la punta** no afecta a estos pinceles.
+Las puntas de **Pincel de pintura**, **Pincel plano con textura**, **Veladura transparente**, **Gouache opaco**, **Óleo cargado**, **Espátula**, **Aguada de acuarela**, **Acuarela húmeda**, **Textura doble**, **Mezclador natural** y **Espátula de mezcla** siguen la dirección del trazo. **Ángulo de la punta** no afecta a estos pinceles.
 
 **Restregado en seco** y **Tinta de pincel realista** suman la dirección del trazo a **Ángulo de la punta**.
 
 ## Textura
 
-**Intensidad de textura** aparece en los pinceles de lápiz y de pastel, **Pincel de
-pintura**, **Pincel de cerdas**, **Pincel plano con textura**, **Restregado en
-seco**, **Veladura transparente**, **Gouache opaco**, **Óleo cargado**,
-**Espátula**, **Textura doble** y **Mezclador natural**.
+**Intensidad de textura** aparece en los conjuntos **Lápiz**, **Pastel** y
+**Pintura** (salvo **Veladura multiplicar**), en **Óleo cargado**, **Espátula** y
+**Textura doble**, y en ocho mezcladores: **Dedo**, **Mezclador suave**,
+**Difumino**, **Pañuelo de papel**, **Mezclador granulado**, **Mezclador natural**,
+**Espátula de mezcla** y **Mezclador de cerdas**. Un pincel que no la tiene ignora
+el Papel.
 
-Los pinceles de medios secos usan la textura del Papel más cercano debajo de la capa de destino. Elige esa textura y su escala en [Papel](/es/docs/layers/paper/).
+Los pinceles con **Intensidad de textura** usan la textura del Papel más cercano situado en la capa de destino o debajo de ella. Elige esa textura y su escala en [Papel](/es/docs/layers/paper/).
 
 ### Intensidad de textura
 
-Establece cuánto cambia la textura del Papel la cobertura. Al 0%, la textura no tiene efecto.
+Establece cuánto cambia la textura del Papel la cobertura. Al 0%, la textura no tiene efecto. En los mezcladores, un toque suave deja sin mezclar el grano del papel y la presión empuja la mezcla hacia dentro. **Mezclador suave** empieza en el 0%.
 
 ![Tres trazos de Carboncillo con Intensidad de textura al 0%, 50% y 100%.](shot:brushes/texture-strength)

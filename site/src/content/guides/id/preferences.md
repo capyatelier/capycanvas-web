@@ -1,6 +1,6 @@
 ---
 title: "Preferensi"
-description: "Dialog Preferensi dan pengaturan di halaman Tampilan, Kanvas, Masukan, Warna, dan Tentang."
+description: "Dialog Preferensi dan pengaturan di halaman Tampilan, Kanvas, Warna, Pena & Masukan, dan Tentang."
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -119,23 +119,9 @@ bawaan. Grup yang sudah ada tidak berubah.
 
 ## Warna
 
-Pengaturan **Gambar baru** berlaku untuk [gambar yang Anda buat](/id/docs/files/new/)
-setelahnya. Pengaturan **Membuka foto** berlaku untuk foto yang Anda buka.
+Pengaturan **Membuka foto** berlaku untuk foto yang Anda buka.
 
-![Halaman Warna di Preferensi.](shot:preferences/color)
-
-### Ruang warna
-
-Pilih **sRGB** (bawaan), **Display P3**, **Adobe RGB (1998)**, atau **ProPhoto RGB**.
-
-### Kedalaman bit
-
-Pilih **SDR 8-bit** (bawaan), **SDR 16-bit**, **HDR pecahan mengambang 16-bit**, atau
-**HDR pecahan mengambang 32-bit**.
-
-### Latar belakang
-
-Pilih **Putih** (bawaan) atau **Transparan**.
+![Pengaturan Membuka foto di halaman Warna pada Preferensi.](shot:preferences/color)
 
 ### Presisi pengeditan
 

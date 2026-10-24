@@ -1,7 +1,7 @@
 ---
 title: "復原和重做"
 description: "復原和重做對畫作的更改，以及版面配置更改的獨立歷史記錄。"
-related: ["start/command-search", "customize/workspaces", "input/touch"]
+related: ["start/command-search", "customize/bubbles", "customize/workspaces", "input/touch"]
 ---
 
 可以逐步復原對畫作的更改，也可以重做已復原的步驟。每幅開啟的畫作都有自己的歷史記錄。
@@ -27,6 +27,10 @@ related: ["start/command-search", "customize/workspaces", "input/touch"]
 - 用三根手指輕點畫布。
 
 復原後再做新的更改，可重做的步驟會被清除。
+
+## 復原和重做氣泡
+
+將**復原**或**重做**拖到畫布上，可把兩者放在同一個[氣泡](/zh-Hant/docs/customize/bubbles/)中。輕點左半邊復原，輕點右半邊重做。
 
 ## 步驟的計算方式
 

@@ -19,7 +19,7 @@ Après votre première visite, l’éditeur web s’ouvre aussi sans connexion �
 
 ![Le panneau Calques d’un nouveau dessin, avec Encre actuelle au-dessus de Papier.](shot:files/new-layers)
 
-À la première ouverture, {appName} affiche l’espace de travail [Peinture](/fr/docs/start/workspaces/) avec un dessin A4 paysage vierge à 300 ppp. **Encre actuelle**, un calque de peinture vide, est sélectionné au-dessus de **Papier**. L’outil **Plume** est actif avec le pinceau **Plume G** et une couleur presque noire.
+À la première ouverture, {appName} affiche l’espace de travail [Croquis](/fr/docs/start/workspaces/) avec un dessin paysage vierge, en 4:3 et aussi haut que votre écran. **Encre actuelle**, un calque de peinture vide, est sélectionné au-dessus de **Papier**, qui a la texture **Grain fin**. L’outil **Crayon** est actif avec une couleur gris foncé.
 
 Les fois suivantes, {appName} s’ouvre sur le dernier espace de travail utilisé,
 avec les dessins qui étaient ouverts.
@@ -27,8 +27,9 @@ avec les dessins qui étaient ouverts.
 ## Dessiner
 
 Faites glisser le stylet ou la souris sur la toile. Pour utiliser un autre outil,
-sélectionnez-le dans la barre d’outils Outils, sur le bord gauche de la fenêtre.
-Dans Croquis, sélectionnez **Pinceau** dans la barre de titre.
+sélectionnez **Pinceau** dans la barre de titre dans Croquis, ou l’outil dans la barre
+d’outils Outils, sur le bord gauche dans Peinture. Faites glisser un outil sur la toile
+pour l’y garder sous forme de [bulle](/fr/docs/customize/bubbles/).
 
 > **Remarque :** les doigts ne dessinent jamais. Deux doigts posés sur la toile font défiler, zoomer et pivoter la vue.
 
@@ -49,7 +50,7 @@ n’a pas de raccourci dans l’éditeur web. Choisissez-la dans le menu ou dans
 
 ## Commencer un autre dessin
 
-Choisissez **Fichier > Nouveau…** et sélectionnez **Créer** dans la boîte de dialogue [Nouveau dessin](/fr/docs/files/new/). Choisissez sa taille, sa résolution, son Papier et ses réglages de couleur, puis sélectionnez **Créer**. Le nouveau dessin s’ouvre dans son propre onglet à côté du premier.
+Choisissez **Fichier > Nouveau…** pour ouvrir la boîte de dialogue [Nouveau dessin](/fr/docs/files/new/). Le nouveau dessin s’ouvre dans son propre onglet à côté du premier.
 
 ## Enregistrer le dessin
 

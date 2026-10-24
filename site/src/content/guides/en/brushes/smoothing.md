@@ -14,7 +14,7 @@ You can smooth a brush stroke while you draw. Smoothing settings are saved separ
 
 Brush smoothing Strength is separate from the brush's primary **Strength** setting.
 
-![The same input path drawn at several smoothing Strength values.](shot:brushes/smoothing-comparison)
+![The same input path drawn twice, the upper stroke with smoothing off and the lower with a high smoothing Strength.](shot:brushes/smoothing-comparison)
 
 ## Adjust by speed
 

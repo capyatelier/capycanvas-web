@@ -25,6 +25,10 @@ altındadır:
 İki anahtar da varsayılan olarak açıktır ve **Tahmin miktarı** 16 ms'dir.
 **Fırça darbesi tahminini etkinleştir** kapalıyken diğer iki ayar kullanılamaz.
 
+Fare darbesi için kalem ucunun önünde tahmin yapılmaz; Linux, Windows ve
+Android'de ekransız bir kalem tabletinin darbeleri için de yapılmaz. Web
+düzenleyicisinde ve macOS'te bu tabletlerin darbeleri ayarlara göre tahmin edilir.
+
 | Sistem | Sistemin tahmini |
 | --- | --- |
 | iPad | Kullanılabilir |

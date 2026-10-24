@@ -98,11 +98,12 @@ unter ihren Griffen eine Leiste.
 | **Einrasten** | Aktiviert oder deaktiviert **An Linealen ausrichten**. |
 | **Hilfslinien** | Blendet alle Hilfslinien ein oder aus. Beim Ausblenden verschwindet auch die Leiste. |
 | **Begradigen** | Startet **Bild an Hilfslinie ausrichten**. Nur bei einer geraden Hilfslinie. |
+| **Mehr** | Öffnet ein Menü mit **Leinwandaktionsleiste anzeigen**. |
 
 Wenn Sie **Ansicht > Leinwandaktionsleiste anzeigen** deaktivieren, entfällt die
 Hilfslinienleiste.
 
-![Die Hilfslinienleiste unter einer ausgewählten geraden Hilfslinie mit Löschen, Einrasten, Hilfslinien und Begradigen.](shot:drawing/ruler-guide-bar)
+![Die Hilfslinienleiste unter einer ausgewählten geraden Hilfslinie mit Löschen, Einrasten, Hilfslinien, Begradigen und Mehr.](shot:drawing/ruler-guide-bar)
 
 ## Hilfslinien mit Vorgang verschieben
 

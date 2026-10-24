@@ -1,7 +1,7 @@
 ---
 title: "Boyut, güç ve opaklık"
 description: "Fırça boyutu, gücü ve opaklığı ile bunları değiştiren paneller, çubuklar ve tuşlar."
-related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools"]
+related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools", "customize/bubbles"]
 ---
 
 Fırça denetimleri araca ve hazır ayara bağlıdır. Değişiklikler hazır ayarla kaydedilir.
@@ -57,6 +57,8 @@ Güç önizlemesi geçerli fırçanın bu değerdeki tepkisini gösterir.
 ![Temas önizlemesi açık Güç kaydırıcısı.](shot:brushes/strength-preview)
 
 Yola bir işaret eklemek için önizlemede **Bu değeri yer işaretlerine ekle**, kaldırmak için **Yer işaretini kaldır** seçin. Her hazır ayar kendi işaretlerini saklar.
+
+Boyut ve Güç yaylarından oluşan bir [baloncuk](/tr/docs/customize/bubbles/) almak için o çubuktaki **Renk seçici** aracını tuvale sürükleyin.
 
 ## Boyut tuşları
 

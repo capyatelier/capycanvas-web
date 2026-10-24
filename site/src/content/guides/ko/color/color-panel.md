@@ -1,7 +1,7 @@
 ---
 title: "색상 패널"
 description: "색상 패널의 색상환과 견본으로 그리기 색상 고르기."
-related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-management/hdr"]
+related: ["color/edit-color", "color/palettes", "color/eyedropper", "customize/bubbles", "color-management/hdr"]
 ---
 
 **색상** 패널에서 그리기 색상을 고를 수 있습니다. 모든 작업 영역이 같은 그리기 색상을 사용합니다.
@@ -16,6 +16,8 @@ related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-manag
 - 명령 검색에서 **색상 패널**을 선택합니다.
 - 페인팅 작업 영역에서는 왼쪽 열의 **색상** 탭을 선택합니다.
 - “도구” 도구 모음 끝이나, 스케치 작업 영역에서는 제목 표시줄 오른쪽 끝의 **브러시 색상**을 선택합니다. 색상 패널과 팔레트 패널이 들어 있는 서랍이 열립니다.
+
+**브러시 색상**을 캔버스로 드래그하면 색상환을 그 자리에 [색상 링](/ko/docs/customize/bubbles/)으로 둘 수 있습니다.
 
 ## 색상환
 

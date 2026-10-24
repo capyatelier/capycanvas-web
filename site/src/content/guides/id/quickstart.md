@@ -19,15 +19,16 @@ Setelah kunjungan pertama, editor web juga terbuka tanpa koneksi internet.
 
 ![Panel Lapisan pada gambar baru, dengan Tinta saat ini di atas Kertas.](shot:files/new-layers)
 
-Saat pertama kali Anda membuka {appName}, ruang kerja [Lukis](/id/docs/start/workspaces/) menampilkan gambar kosong A4 lanskap pada 300 ppi. **Tinta saat ini**, lapisan cat kosong, terpilih di atas **Kertas**. Alat **Pena** aktif dengan kuas **Pena G** dan warna hampir hitam.
+Saat pertama kali Anda membuka {appName}, ruang kerja [Sketsa](/id/docs/start/workspaces/) menampilkan gambar kosong lanskap, 4:3 dan setinggi layar Anda. **Tinta saat ini**, lapisan cat kosong, terpilih di atas **Kertas**, yang bertekstur **Cold press**. Alat **Pensil** aktif dengan warna abu-abu tua.
 
 Pada pembukaan berikutnya, {appName} terbuka dengan ruang kerja yang terakhir Anda
 gunakan dan gambar yang masih terbuka saat itu.
 
 ## Menggambar
 
-Seret pena atau tetikus di kanvas. Untuk memakai alat lain, pilih alat tersebut di
-bilah alat Alat di tepi kiri jendela. Di Sketsa, pilih **Kuas** di bilah judul.
+Seret pena atau tetikus di kanvas. Untuk memakai alat lain, pilih **Kuas** di bilah
+judul di Sketsa, atau alat di bilah alat Alat di tepi kiri di Lukis. Seret alat ke
+kanvas untuk menyimpannya di sana sebagai [gelembung](/id/docs/customize/bubbles/).
 
 > **Catatan:** Jari tidak pernah menggambar. Dua jari di kanvas menggeser, memperbesar/memperkecil, dan memutar tampilan.
 
@@ -48,7 +49,7 @@ memiliki pintasan di editor web. Pilih perintah itu dari menu atau dari
 
 ## Memulai gambar lain
 
-Pilih **Berkas > Baru…** dan pilih **Buat** dalam dialog [Gambar baru](/id/docs/files/new/). Pilih ukuran, resolusi, Kertas, dan pengaturan warna, lalu pilih **Buat**. Gambar baru terbuka di tab tersendiri di sebelah gambar pertama.
+Pilih **Berkas > Baru…** untuk membuka dialog [Gambar baru](/id/docs/files/new/). Gambar baru terbuka di tab tersendiri di sebelah gambar pertama.
 
 ## Menyimpan gambar
 

@@ -40,7 +40,7 @@ related: ["retouch/clone-heal", "layers/blend-modes", "filters/detail-blur", "ph
 그룹 바로 아래에 남습니다.
 
 레이어는 보이고 **표준**으로 설정되어 있어야 하며, 그림은
-**편집 > 색상 합성 > 지각적 색상 합성**을 사용해야 합니다([색 공간, 비트 심도, 색상 합성](/ko/docs/color-management/color-spaces/) 참조).
+**이미지 > 색상 합성 > 지각적 색상 합성**을 사용해야 합니다([색 공간, 비트 심도, 색상 합성](/ko/docs/color-management/color-spaces/) 참조).
 패널이 열려 있는 동안 그림이 바뀌면 패널이 닫힙니다.
 
 ![주파수 분리 그룹(저주파 위에 고주파)과 숨겨진 원래 레이어가 있는 레이어 패널.](shot:retouch/frequency-separation-layers)

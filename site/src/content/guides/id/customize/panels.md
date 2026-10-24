@@ -68,13 +68,9 @@ menggantikan bilah tab.
 
 Anda dapat memilih kontrol yang ditampilkan panel.
 
-Lakukan salah satu langkah berikut:
-
-- Pilih **Atur Panel *nama*…** dari menu panel.
-- Pilih lagi tab yang sedang aktif.
-
-Sebuah kolom dengan kotak centang untuk setiap kontrol terbuka di samping panel. Tekan
-**Escape**, pilih tab itu lagi, atau pilih di luar kolom untuk menutupnya.
+Pilih **Atur Panel *nama*…** dari menu panel. Sebuah kolom dengan kotak centang untuk
+setiap kontrol terbuka di samping panel. Memilih tab lain menampilkan kontrol panel
+itu. Tekan **Escape** atau pilih di luar kolom untuk menutupnya.
 
 | Panel | Kontrol | Ditampilkan secara bawaan |
 | --- | --- | --- |

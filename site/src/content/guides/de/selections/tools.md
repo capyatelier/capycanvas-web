@@ -117,7 +117,7 @@ Klicken Sie auf eine Farbe auf der Leinwand. **Automatisch auswählen** nimmt de
 zusammenhängenden Bereich um diesen Punkt, **Nach Farbe auswählen** nimmt
 passende Pixel an beliebiger Stelle im Bild.
 
-![Das Bedienfeld Werkzeug für Automatisch auswählen mit Modus, Kantenglättung, Quelle, Toleranz, den Einstellungen unter Kanten und Radius der weichen Kante.](shot:selections/tools-auto-select-settings)
+![Das Bedienfeld Werkzeug für Automatisch auswählen mit Modus, Auswahl, Toleranz, den Einstellungen unter Kanten, Radius der weichen Kante, Kantenglättung und Quelle.](shot:selections/tools-auto-select-settings)
 
 ### Quelle
 
@@ -164,6 +164,5 @@ zieht ab. Ein abziehender Strich bewirkt nichts, solange keine Auswahl besteht.
 
 ## Die Schaltfläche Auswahl
 
-**Auswahl** unter den Einstellungen eines Auswahlwerkzeugs im Bedienfeld
-Werkzeug öffnet das [Menü Auswahl](/de/docs/selections/working/). Die
+**Auswahl** unter der Zeile **Modus** im Bedienfeld Werkzeug öffnet das [Menü Auswahl](/de/docs/selections/working/). Die
 Einstellungen von **Tonwertbereich** haben keine Schaltfläche **Auswahl**.

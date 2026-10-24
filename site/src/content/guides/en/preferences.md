@@ -1,6 +1,6 @@
 ---
 title: "Preferences"
-description: "The Preferences dialog and the settings on its Appearance, Canvas, Input, Color and About pages."
+description: "The Preferences dialog and the settings on its Appearance, Canvas, Color, Pen & Input and About pages."
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -120,24 +120,9 @@ Existing groups don't change.
 
 ## Color
 
-The **New drawings** settings apply to [drawings you create](/docs/files/new/)
-afterward. The **Opening photos** settings apply to photos you open.
+The **Opening photos** settings apply to photos you open.
 
-![The Color page of Preferences.](shot:preferences/color)
-
-### Color space
-
-Choose **sRGB** (the default), **Display P3**, **Adobe RGB (1998)** or **ProPhoto
-RGB**.
-
-### Bit depth
-
-Choose **8-bit SDR** (the default), **16-bit SDR**, **16-bit float HDR** or
-**32-bit float HDR**.
-
-### Background
-
-Choose **White** (the default) or **Transparent**.
+![The Opening photos settings on the Color page of Preferences.](shot:preferences/color)
 
 ### Editing precision
 

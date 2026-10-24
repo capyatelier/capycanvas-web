@@ -1,7 +1,7 @@
 ---
 title: "실행 취소와 다시 실행"
 description: "그림 변경 내용의 실행 취소와 다시 실행, 레이아웃 변경을 위한 별도의 기록."
-related: ["start/command-search", "customize/workspaces", "input/touch"]
+related: ["start/command-search", "customize/bubbles", "customize/workspaces", "input/touch"]
 ---
 
 그림의 변경 내용을 한 단계씩 실행 취소하고, 취소한 단계를 다시 실행할 수 있습니다. 열려 있는 그림마다 기록이 따로 있습니다.
@@ -27,6 +27,10 @@ related: ["start/command-search", "customize/workspaces", "input/touch"]
 - 세 손가락으로 캔버스를 탭합니다.
 
 실행 취소한 뒤 새로 변경하면 다시 실행할 수 있던 단계가 지워집니다.
+
+## 실행 취소와 다시 실행 버블
+
+**실행 취소** 또는 **다시 실행**을 캔버스로 드래그하면 둘을 하나의 [버블](/ko/docs/customize/bubbles/)에 둘 수 있습니다. 왼쪽 절반을 탭하면 실행 취소하고 오른쪽 절반을 탭하면 다시 실행합니다.
 
 ## 단계로 기록되는 작업
 

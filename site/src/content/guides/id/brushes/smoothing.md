@@ -14,7 +14,7 @@ Anda dapat menghaluskan goresan kuas saat menggambar. Pengaturan penghalusan dis
 
 Kekuatan penghalusan kuas terpisah dari pengaturan **Kekuatan** utama kuas.
 
-![Jalur masukan yang sama digambar dengan beberapa nilai Kekuatan penghalusan.](shot:brushes/smoothing-comparison)
+![Jalur masukan yang sama digambar dua kali, goresan atas tanpa penghalusan dan goresan bawah dengan Kekuatan penghalusan tinggi.](shot:brushes/smoothing-comparison)
 
 ## Sesuaikan menurut kecepatan
 

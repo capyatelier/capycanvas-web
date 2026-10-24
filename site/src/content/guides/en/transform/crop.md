@@ -5,7 +5,7 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 ---
 
 You can crop the canvas to a frame with the **Crop** tool. Cropped pixels stay
-on their layers, hidden, unless you turn on **Delete Cropped**.
+on their layers, hidden, unless you turn on **Delete Cropped Paint**.
 
 ## Cropping
 
@@ -44,7 +44,7 @@ ratio. **Free** is the default.
 **Swap crop orientation**, the icon button beside **Ratio**, turns the frame
 between landscape and portrait.
 
-The ratio, the overlay and **Delete Cropped** carry over to the next crop.
+The ratio, the overlay and **Delete Cropped Paint** carry over to the next crop.
 
 ![The Ratio menu on the crop bar.](shot:transform/crop-ratio-menu)
 
@@ -75,13 +75,13 @@ To straighten to a guide, select the guide and select **Straighten** on its
 canvas bar (see [Rulers and guides](/docs/drawing/ruler/)). A crop opens,
 turned level with the guide.
 
-## Delete Cropped
+## Delete Cropped Paint
 
-Turn on **Delete Cropped** to discard the pixels outside the frame when you
+Turn on **Delete Cropped Paint** to discard the pixels outside the frame when you
 apply the crop. Placed photos keep their original pixels. Off by default.
 
 A crop that would be too large with the hidden pixels kept works only with
-**Delete Cropped** on.
+**Delete Cropped Paint** on.
 
 ## Reset
 

@@ -71,7 +71,7 @@ adalah bawaannya.
 
 ## Memutar dan membalik gambar
 
-Pilih salah satu perintah berikut dari **Gambar**:
+Pilih salah satu perintah berikut dari **Gambar > Putar dan balik**:
 
 - **Putar Gambar 90° ke Kiri**
 - **Putar Gambar 90° ke Kanan**

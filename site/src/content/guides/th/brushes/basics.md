@@ -1,7 +1,7 @@
 ---
 title: "ขนาด ความแรง และความทึบ"
 description: "ขนาด ความแรง และความทึบของพู่กัน รวมถึงแผง แถบ และแป้นที่ใช้เปลี่ยนค่า"
-related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools"]
+related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools", "customize/bubbles"]
 ---
 
 ตัวควบคุมพู่กันขึ้นอยู่กับเครื่องมือและพู่กันสำเร็จรูป การเปลี่ยนแปลงจะบันทึกไว้กับพู่กันสำเร็จรูป
@@ -57,6 +57,8 @@ related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brus
 ![ตัวเลื่อนความแรงพร้อมภาพตัวอย่างการสัมผัสที่เปิดอยู่](shot:brushes/strength-preview)
 
 เลือก **บุ๊กมาร์กค่านี้** ในภาพตัวอย่างเพื่อเพิ่มเครื่องหมายบนราง หรือ **ลบบุ๊กมาร์ก** เพื่อลบ พู่กันสำเร็จรูปแต่ละอันเก็บบุ๊กมาร์กของตัวเอง
+
+ลาก **ตัวเลือกสี** จากแถบนั้นไปวางบนผืนผ้าใบเพื่อรับ[บับเบิล](/th/docs/customize/bubbles/)ที่มีส่วนโค้งขนาดและความแรง
 
 ## แป้นขนาด
 

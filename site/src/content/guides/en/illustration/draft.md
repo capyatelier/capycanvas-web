@@ -11,9 +11,9 @@ layer above it.
 
 1. Select **Paint** in the workspace switcher in the title bar.
 2. Choose **File > New…**, or press **Ctrl+N** ([New drawings](/docs/files/new/)).
-3. In the **New drawing** dialog, set **Width (px)** and **Height (px)** to 1200, and select **Create**.
+3. In the **New drawing** dialog, choose **px** in the unit menu, set **W** and **H** to 1200, and select **Create**.
 
-![The New drawing dialog with Width (px) and Height (px) set to 1200.](shot:illustration/new-drawing)
+![The New drawing dialog with W and H set to 1200 px.](shot:illustration/new-drawing)
 
 The drawing has two layers: **Current ink** above **Paper**. Double-click
 **Current ink** in the Layers panel and rename the layer *Color rough*.

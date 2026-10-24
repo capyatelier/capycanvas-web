@@ -70,11 +70,12 @@ Leiste nie.
 - **Schnellmaske**: siehe [Schnellmaske](/de/docs/selections/quick-mask/).
 - **Speichern**: **Als Auswahlebene speichern**, siehe [Auswahlebenen](/de/docs/selections/selection-layers/).
 
+Auf einer schmalen Leiste wandern die letzten Schaltflächen, etwa **Schnellmaske** und **Speichern**, in **Mehr**.
+
 ## Menü Auswahl
 
 Sie können das Menü **Auswahl** auch über **Mehr** in der Auswahlleiste öffnen
-und über **Auswahl** unter den Einstellungen eines Auswahlwerkzeugs im
-Bedienfeld Werkzeug.
+und über **Auswahl** unter der Zeile **Modus** im Bedienfeld Werkzeug.
 
 | Befehl | Wirkung | Taste |
 | --- | --- | --- |
@@ -146,7 +147,7 @@ Beschriftung „Umriss transformieren“. Er funktioniert wie
 
 Führen Sie eine der folgenden Aktionen aus:
 
-- Wählen Sie den Befehl im Menü **Bearbeiten**. Die Befehle zum Löschen stehen auch im Menü **Auswahl**.
+- Wählen Sie **Bearbeiten > Auswahl füllen**, **Ausgewählte Pixel löschen** oder **Außerhalb der Auswahl löschen**.
 - Drücken Sie **Umschalt+Rücktaste** zum Füllen oder **Löschen** bzw. **Rücktaste**, um die ausgewählten Pixel zu löschen.
 - Wählen Sie in der Auswahlleiste **Füllen** oder **Leeren** und einen Befehl aus.
 - Wählen Sie im Arbeitsbereich Malen in der Werkzeugleiste Befehle **Auswahl füllen** aus.
@@ -164,7 +165,7 @@ ursprünglichen Ebene.
 
 Führen Sie eine der folgenden Aktionen aus:
 
-- Wählen Sie **Auswahl > Auswahl auf neue Ebene kopieren** oder **Auswahl > Auswahl auf neue Ebene ausschneiden**.
+- Wählen Sie **Ebene > Neu > Auswahl auf neue Ebene kopieren** oder **Ebene > Neu > Auswahl auf neue Ebene ausschneiden**.
 - Drücken Sie **Strg+J** zum Kopieren oder **Strg+Umschalt+J** zum Ausschneiden.
 - Wählen Sie in der Auswahlleiste **Auf Ebene kopieren** aus und wählen Sie einen Befehl.
 

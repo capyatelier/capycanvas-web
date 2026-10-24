@@ -1,7 +1,7 @@
 ---
 title: "Tamaño, intensidad y opacidad"
 description: "Tamaño, intensidad y opacidad del pincel y los paneles, barras y teclas donde se cambian."
-related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools"]
+related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools", "customize/bubbles"]
 ---
 
 Los controles del pincel dependen de la herramienta y del preajuste. Los cambios se guardan con el preajuste.
@@ -57,6 +57,8 @@ La vista previa de intensidad muestra cómo responde el pincel actual a ese valo
 ![El control deslizante de Intensidad con su vista previa de contacto abierta.](shot:brushes/strength-preview)
 
 Selecciona **Marcar este valor** en una vista previa para añadir una marca a la pista, o **Quitar marcador** para quitarla. Cada preajuste conserva sus propios marcadores.
+
+Arrastra **Selector de color** desde esa barra al lienzo para sacar una [burbuja](/es/docs/customize/bubbles/) con arcos de Tamaño e Intensidad.
 
 ## Teclas de tamaño
 

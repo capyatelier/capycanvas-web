@@ -69,11 +69,12 @@ la barra.
 - **Máscara rápida**: consulta [Máscara rápida](/es/docs/selections/quick-mask/).
 - **Guardar**: **Guardar como capa de selección**, consulta [Capas de selección](/es/docs/selections/selection-layers/).
 
+En una barra estrecha, los últimos botones, como **Máscara rápida** y **Guardar**, pasan a **Más**.
+
 ## Menú Seleccionar
 
 También puedes abrir el menú **Seleccionar** desde **Más**, en la barra de
-selección, y desde **Seleccionar**, bajo los ajustes de una herramienta de
-selección en el panel Herramienta.
+selección, y desde **Seleccionar**, bajo la fila **Modo** del panel Herramienta.
 
 | Comando | Qué hace | Tecla |
 | --- | --- | --- |
@@ -143,7 +144,7 @@ salvo que **Distorsionar**, **Deformar** e **Interpolación** no están disponib
 
 Haz una de las siguientes acciones:
 
-- Elige el comando en el menú **Editar**. Los comandos para borrar también están en el menú **Seleccionar**.
+- Elige **Editar > Rellenar selección**, **Borrar píxeles seleccionados** o **Borrar fuera de la selección**.
 - Pulsa **Mayús+Retroceso** para rellenar, o **Supr** o **Retroceso** para borrar los píxeles seleccionados.
 - Selecciona **Rellenar**, o **Borrar** y un comando, en la barra de selección.
 - En Pintura, selecciona **Rellenar selección** en la barra de comandos.
@@ -160,7 +161,7 @@ de pintura activa a una capa nueva situada justo encima, en el mismo sitio.
 
 Haz una de las siguientes acciones:
 
-- Elige **Seleccionar > Copiar selección a una capa nueva** o **Seleccionar > Cortar selección a una capa nueva**.
+- Elige **Capa > Nuevo > Copiar selección a una capa nueva** o **Capa > Nuevo > Cortar selección a una capa nueva**.
 - Pulsa **Ctrl+J** para copiar o **Ctrl+Mayús+J** para cortar.
 - Selecciona **Copiar a capa** en la barra de selección y elige un comando.
 

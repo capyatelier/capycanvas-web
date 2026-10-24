@@ -17,7 +17,7 @@ for (const correction of compatibility) {
   const path = join(staging, correction.file);
   if (!existsSync(path)) continue;
   const source = readFileSync(path, 'utf8');
-  if (!source.includes(correction.before)) continue;
+  if (source.includes(correction.after) || !source.includes(correction.before)) continue;
   if (source.split(correction.before).length !== 2) throw Error(`Ambiguous correction: ${correction.file}`);
   writeFileSync(path, source.replace(correction.before, correction.after));
   patches.push(correction);

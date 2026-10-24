@@ -70,14 +70,10 @@ panelin altındaki bir tutamaç alır.
 
 Bir panelin hangi denetimleri göstereceğini seçebilirsiniz.
 
-Aşağıdakilerden birini yapın:
-
-- Panelin menüsünden **Yapılandır: *ad* paneli…** komutunu seçin.
-- Etkin sekmeyi yeniden seçin.
-
-Panelin yanında, her denetim için bir onay kutusu bulunan bir sütun açılır.
-Sütunu kapatmak için **Escape** tuşuna basın, sekmeyi yeniden seçin veya
-sütunun dışında bir yer seçin.
+Panelin menüsünden **Yapılandır: *ad* paneli…** komutunu seçin. Panelin yanında,
+her denetim için bir onay kutusu bulunan bir sütun açılır. Başka bir sekmeyi
+seçmek o panelin denetimlerini gösterir. Sütunu kapatmak için **Escape** tuşuna
+basın veya sütunun dışında bir yer seçin.
 
 | Panel | Denetimler | Varsayılan olarak gösterilenler |
 | --- | --- | --- |

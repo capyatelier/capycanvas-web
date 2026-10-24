@@ -1,7 +1,7 @@
 ---
 title: "Panel de color"
 description: "Elegir el color de pintura con la rueda y las muestras del panel Color."
-related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-management/hdr"]
+related: ["color/edit-color", "color/palettes", "color/eyedropper", "customize/bubbles", "color-management/hdr"]
 ---
 
 Puedes elegir el color de pintura en el panel **Color**. Todos los espacios de
@@ -17,6 +17,8 @@ Haz una de las siguientes acciones:
 - Elige **Panel de color** en la búsqueda de comandos.
 - En Pintura, selecciona la pestaña **Color** en la columna izquierda.
 - Selecciona **Color del pincel** al final de la barra de herramientas, o en el extremo derecho de la barra de título en Boceto. Se abre un cajón con los paneles Color y Paletas.
+
+Arrastra **Color del pincel** al lienzo para mantener allí la rueda como un [anillo de color](/es/docs/customize/bubbles/).
 
 ## Rueda de color
 

@@ -24,7 +24,7 @@ As camadas novas usam Normal.
 Não é possível mudar o modo de mesclagem de uma camada de seleção ou de uma
 camada bloqueada. [Mesclar abaixo](/pt-BR/docs/layers/merging/) exige as duas
 camadas em Normal. Os modos de mesclagem misturam as cores no espaço de
-mesclagem do desenho, definido em **Editar > Mesclagem** (consulte
+mesclagem do desenho, definido em **Imagem > Mesclagem** (consulte
 [Espaço de cores, profundidade de bits e mesclagem](/pt-BR/docs/color-management/color-spaces/)).
 
 ## Modos do menu de mesclagem

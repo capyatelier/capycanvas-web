@@ -96,10 +96,11 @@ its handles.
 | **Snap** | Turns **Snap to rulers** on or off. |
 | **Guides** | Shows or hides all guides. Hiding them also hides the bar. |
 | **Straighten** | Starts **Straighten Image to Guide**. Only for a Straight guide. |
+| **More** | Opens a menu with **Show canvas action bar**. |
 
 Turning off **View > Show canvas action bar** removes the guide bar.
 
-![The guide bar below a selected Straight guide, with Delete, Snap, Guides and Straighten.](shot:drawing/ruler-guide-bar)
+![The guide bar below a selected Straight guide, with Delete, Snap, Guides, Straighten and More.](shot:drawing/ruler-guide-bar)
 
 ## Moving guides with Operation
 

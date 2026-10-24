@@ -21,11 +21,11 @@ Thực hiện một trong các cách sau:
 hay Ảnh. Khi công cụ này đang được dùng, bảng Bộ công cụ liệt kê mọi công cụ vùng
 chọn.
 
-![Thiết lập Khoảng sắc độ trong ngăn Chọn của Phác thảo, với Chế độ, Sắc độ, Độ mềm và Làm mềm biên.](shot:selections/tonal-range-settings)
+![Thiết lập Khoảng sắc độ trong ngăn Chọn của Phác thảo, với Chế độ, các nút sắc độ, Độ mềm và Làm mềm biên.](shot:selections/tonal-range-settings)
 
 ## Sắc độ
 
-Chọn một nút ở hàng **Sắc độ · stop so với màu trắng tham chiếu** để chọn dải độ
+Chọn một nút ở hàng nút sắc độ bên dưới **Chế độ** để chọn dải độ
 sáng đó. Dải này kết hợp với vùng chọn hiện tại theo **Chế độ** (xem
 [Công cụ vùng chọn](/vi/docs/selections/tools/)).
 

@@ -1,7 +1,7 @@
 ---
 title: "Размер, сила и непрозрачность"
 description: "Размер, сила и непрозрачность кисти, а также панели и клавиши для их изменения."
-related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools"]
+related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools", "customize/bubbles"]
 ---
 
 Настройки кисти зависят от инструмента и шаблона. Изменения сохраняются в шаблоне.
@@ -57,6 +57,8 @@ related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brus
 ![Ползунок силы с открытым предпросмотром контакта.](shot:brushes/strength-preview)
 
 Выберите **Добавить закладку для значения** в предпросмотре, чтобы добавить отметку на дорожке, или **Удалить закладку**, чтобы удалить её. Каждый шаблон хранит свои закладки.
+
+Перетащите **Выбор цвета** с этой панели на холст, чтобы получить [пузырь](/ru/docs/customize/bubbles/) с дугами размера и силы.
 
 ## Клавиши размера
 

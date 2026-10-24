@@ -1,7 +1,7 @@
 ---
 title: "大小、强度和不透明度"
 description: "画笔大小、强度和不透明度，以及更改这些设置的面板、栏和按键。"
-related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools"]
+related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools", "customize/bubbles"]
 ---
 
 画笔控件因工具和预设而异。更改随预设一起保存。
@@ -57,6 +57,8 @@ related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brus
 ![强度滑块及其打开的接触预览。](shot:brushes/strength-preview)
 
 在预览中选择 **将此值加入书签** 可在滑轨上添加标记，选择 **移除书签** 可移除标记。每个预设各自保留书签。
+
+将 **颜色选择器** 从该竖栏拖到画布上，可得到带有大小弧和强度弧的[气泡](/zh/docs/customize/bubbles/)。
 
 ## 大小按键
 

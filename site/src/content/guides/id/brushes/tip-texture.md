@@ -6,9 +6,11 @@ related: ["brushes/basics", "brushes/wet-media", "drawing/brush-tools"]
 
 Anda dapat mengubah bentuk setiap cap dan seberapa kuat tekstur kertas mengubah goresan dengan pengaturan **Ujung** dan **Tekstur** di panel **Alat** ([Ukuran, kekuatan, dan opasitas](/id/docs/brushes/basics/)).
 
-![Panel Alat untuk Pensil dengan grup Ujung dan grup Tekstur.](shot:brushes/tip-texture-settings)
+![Panel Alat untuk Kuas Cat dari Kekerasan hingga Kekuatan tekstur, dengan grup Penghalusan, Ujung, dan Tekstur.](shot:brushes/tip-texture-settings)
 
 ## Ujung
+
+Kuas media kering hanya menampilkan **Sudut ujung**.
 
 ### Kekerasan
 
@@ -38,24 +40,25 @@ putaran penuh ke arah mana pun.
 
 ## Ujung yang berputar mengikuti goresan
 
-Ujung **Kuas Cat**, **Kuas Pipih Bertekstur**, **Balok Pastel**,
-**Sapuan Tipis Transparan**, **Gouache Pekat**, **Cat Minyak Penuh**, **Pisau Palet**,
-**Sapuan Cat Air**, **Cat Air Basah**, **Tekstur Ganda**, dan **Pembaur Alami**
+Ujung **Kuas Cat**, **Kuas Pipih Bertekstur**, **Sapuan Tipis Transparan**,
+**Gouache Pekat**, **Cat Minyak Penuh**, **Pisau Palet**, **Sapuan Cat Air**,
+**Cat Air Basah**, **Tekstur Ganda**, **Pembaur Alami**, dan **Pisau Pembaur**
 mengikuti arah goresan. **Sudut ujung** tidak berpengaruh pada kuas-kuas ini.
 
 **Sapuan Kering** dan **Tinta Sapuan Realistis** menambahkan arah goresan ke **Sudut ujung**.
 
 ## Tekstur
 
-**Kekuatan tekstur** muncul pada kuas pensil dan pastel, **Kuas Cat**, **Kuas Berbulu**,
-**Kuas Pipih Bertekstur**, **Sapuan Kering**, **Sapuan Tipis Transparan**,
-**Gouache Pekat**, **Cat Minyak Penuh**, **Pisau Palet**, **Tekstur Ganda**, dan
-**Pembaur Alami**.
+**Kekuatan tekstur** muncul pada set **Pensil**, **Pastel**, dan **Lukis**
+(kecuali **Sapuan Tipis Perkalian**), pada **Cat Minyak Penuh**, **Pisau Palet**, dan
+**Tekstur Ganda**, serta pada delapan pembaur: **Coreng**, **Pembaur Lembut**,
+**Stik pembaur kertas**, **Tisu**, **Pembaur Berbutir**, **Pembaur Alami**,
+**Pisau Pembaur**, dan **Pembaur Bulu Kuas**. Kuas tanpa pengaturan ini mengabaikan Kertas.
 
-Kuas media kering membaca tekstur Kertas terdekat di bawah lapisan tujuannya. Pilih dan atur skala tekstur di [Kertas](/id/docs/layers/paper/).
+Kuas dengan **Kekuatan tekstur** membaca tekstur Kertas terdekat pada atau di bawah lapisan tujuannya. Pilih dan atur skala tekstur di [Kertas](/id/docs/layers/paper/).
 
 ### Kekuatan tekstur
 
-Mengatur seberapa kuat tekstur Kertas mengubah cakupan. Pada 0% tekstur tidak berpengaruh.
+Mengatur seberapa kuat tekstur Kertas mengubah cakupan. Pada 0% tekstur tidak berpengaruh. Pada pembaur, sentuhan ringan membiarkan serat kertas tidak terbaur dan tekanan mendorong baurannya ke dalam serat itu. **Pembaur Lembut** dimulai dari 0%.
 
 ![Tiga goresan Arang dengan Kekuatan tekstur 0%, 50%, dan 100%.](shot:brushes/texture-strength)

@@ -145,7 +145,7 @@ Il nome di un predefinito può avere fino a 80 caratteri, e puoi conservare fino
 
 ## Esportazione HDR
 
-![La finestra di dialogo Esporta immagine per un disegno HDR con JPEG HDR · mappa di guadagno, dopo Anteprima uscita.](shot:files/export-hdr-preview)
+![Il menu Anteprima resa impostato su Ricostruzione HDR · anteprima SDR, con le anteprime Disegno e Ricostruzione HDR affiancate.](shot:files/export-hdr-preview)
 
 Su un disegno a virgola mobile a 16 o 32 bit, **Gamma dinamica** offre queste
 scelte:

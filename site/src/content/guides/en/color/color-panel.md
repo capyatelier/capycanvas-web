@@ -1,7 +1,7 @@
 ---
 title: "Color panel"
 description: "Choosing the paint color with the wheel and swatches of the Color panel."
-related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-management/hdr"]
+related: ["color/edit-color", "color/palettes", "color/eyedropper", "customize/bubbles", "color-management/hdr"]
 ---
 
 You can choose the paint color in the **Color** panel. Every workspace uses the
@@ -17,6 +17,8 @@ Do one of the following:
 - Choose **Color panel** in command search.
 - In Paint, select the **Color** tab in the left column.
 - Select **Brush color** at the end of the Tools toolbar, or at the right end of the title bar in Sketch. A drawer opens with the Color and Palettes panels.
+
+Drag **Brush color** onto the canvas to keep the wheel there as a [color ring](/docs/customize/bubbles/).
 
 ## Color wheel
 

@@ -116,7 +116,6 @@ baru, di posisi yang sama.
 Lakukan salah satu langkah berikut:
 
 - Pilih **Lapisan > Baru > Salin Seleksi ke Lapisan Baru** (**Ctrl+J**) atau **Potong Seleksi ke Lapisan Baru** (**Ctrl+Shift+J**).
-- Pilih perintah yang sama dari menu **Seleksi**.
 - Pilih perintah itu dari **Salin ke Lapisan** di [bilah seleksi](/id/docs/selections/working/) pada kanvas.
 
 Lapisan baru ditempatkan di atas lapisan sumber, dengan nama "Salinan *nama*", serta

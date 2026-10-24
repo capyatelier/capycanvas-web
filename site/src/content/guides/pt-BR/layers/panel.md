@@ -1,7 +1,7 @@
 ---
 title: "Painel Camadas"
 description: "O que cada parte do painel Camadas mostra e faz, incluindo o menu da camada."
-related: ["layers/working", "layers/settings", "layers/types", "layers/masks"]
+related: ["layers/working", "layers/settings", "layers/types", "layers/vector", "layers/masks"]
 ---
 
 O painel **Camadas** lista as camadas do desenho, com a camada da frente no
@@ -18,7 +18,7 @@ Faça uma das seguintes ações:
 - Em Esboço, selecione **Camadas** na barra de título. A gaveta compartilhada abre na visualização Camadas; selecione o botão Propriedades de uma camada para mudar para Propriedades.
 - Digite “Painel Camadas” na [busca de comandos](/pt-BR/docs/start/command-search/).
 
-Em Foto, o painel já fica aberto na coluna direita.
+Em Foto, o painel já fica aberto na coluna direita. Em Esboço, você pode arrastar **Camadas** da barra de título para a tela para mantê-lo ali como uma bolha ([Bolhas de ferramentas](/pt-BR/docs/customize/bubbles/)).
 
 ## Cabeçalho
 
@@ -55,7 +55,7 @@ Selecione uma linha para torná-la a camada ativa e a única linha selecionada.
 
 Papel tem miniaturas separadas de cor e textura. Se não houver Papel, **Adicionar papel** aparece após a última linha.
 
-![A gaveta de Esboço mudando de Camadas para Propriedades.](shot:layers/sketch-properties-drawer)
+![A gaveta de Esboço mostrando as Propriedades de Papel, com Todas as camadas na parte inferior.](shot:layers/sketch-properties-drawer)
 
 **Ctrl**+clique na miniatura de uma camada de pintura para carregar a opacidade
 dela como seleção, ou na miniatura da máscara para carregar a máscara. Acrescente
@@ -73,34 +73,37 @@ dela como seleção, ou na miniatura da máscara para carregar a máscara. Acres
 
 ## Botões do rodapé
 
-![Os botões na parte inferior do painel Camadas.](shot:layers/panel-footer "1 Nova camada · 2 Novo grupo · 3 Nova camada de seleção · 4 Adicionar máscara · 5 Adicionar filtro · 6 Importar imagem como camada… · 7 Excluir camadas selecionadas · 8 Ações da camada")
+![Os botões na parte inferior do painel Camadas.](shot:layers/panel-footer "1 Nova camada · 2 Nova camada vetorial · 3 Novo grupo · 4 Nova camada de seleção · 5 Adicionar máscara · 6 Adicionar filtro · 7 Importar imagem como camada… · 8 Excluir camadas selecionadas · 9 Ações da camada")
 
 1. **Nova camada** adiciona uma camada de pintura.
-2. **Novo grupo**. Com várias linhas selecionadas, o botão agrupa essas linhas.
-3. **Nova camada de seleção** (consulte [Camadas de seleção](/pt-BR/docs/selections/selection-layers/)).
-4. **Adicionar máscara**.
-5. **Adicionar filtro** anexa um filtro à camada ativa.
-6. **Importar imagem como camada…**
-7. **Excluir camadas selecionadas**.
-8. **Ações da camada** abre o menu da camada ativa.
+2. **Nova camada vetorial** adiciona uma [camada vetorial](/pt-BR/docs/layers/vector/).
+3. **Novo grupo**. Com várias linhas selecionadas, o botão agrupa essas linhas.
+4. **Nova camada de seleção** (consulte [Camadas de seleção](/pt-BR/docs/selections/selection-layers/)).
+5. **Adicionar máscara**.
+6. **Adicionar filtro** anexa um filtro à camada ativa.
+7. **Importar imagem como camada…**
+8. **Excluir camadas selecionadas**.
+9. **Ações da camada** abre o menu da camada ativa.
 
 Um botão fica indisponível quando a ação dele não se aplica à camada ativa, por
 exemplo **Adicionar máscara** em uma camada bloqueada (consulte
-[Trabalhar com camadas](/pt-BR/docs/layers/working/)).
+[Trabalhar com camadas](/pt-BR/docs/layers/working/)). Em um painel estreito, os
+botões que não cabem passam para o topo do menu **Ações da camada**, começando por
+**Nova camada de seleção**.
 
 ## Deslizar e manter pressionado
 
 Com uma caneta ou um dedo:
 
-- Deslize uma linha para a esquerda para mostrar **Excluir** na extremidade direita dela. Selecione **Excluir** para excluir a camada ou deslize para a direita para esconder o botão.
+- Deslize uma linha para a esquerda para mostrar **Bloquear**, **Duplicar** e **Excluir** na extremidade direita dela. **Bloquear** vira **Desbloquear** em uma camada bloqueada. Selecione um botão para aplicá-lo à camada ou deslize para a direita para esconder os botões.
 - Deslize uma camada de pintura para a direita para ativar ou desativar o **Bloqueio alfa**.
 - Deslize um grupo para a direita para ativar ou desativar **Atravessar**.
 - Mantenha pressionada uma linha para abrir o menu da camada. Para arrastar a linha, mova sem levantar.
 
-![Uma linha deslizada para a esquerda, com Excluir na extremidade direita.](shot:layers/panel-swipe-delete)
+![Uma linha deslizada para a esquerda, mostrando Bloquear, Duplicar e Excluir.](shot:layers/panel-swipe-delete)
 
-Um deslize curto não muda nada. Os gestos de deslizar não funcionam com mouse,
-na alça nem em camadas bloqueadas.
+Um deslize curto não muda nada. Os gestos de deslizar não funcionam com mouse nem
+na alça. Uma camada bloqueada só desliza para a esquerda.
 
 ## Menu da camada
 
@@ -117,7 +120,7 @@ Faça uma das seguintes ações:
 
 | Item | Conteúdo |
 | --- | --- |
-| **Novo** | **Nova camada**, **Nova camada de recorte**, **Novo grupo**, **Preenchimento de cor sólida**, **Preenchimento de degradê**, **Nova camada de subexposição e superexposição**, **Copiar seleção para nova camada**, **Recortar seleção para nova camada** |
+| **Novo** | **Nova camada**, **Nova camada de recorte**, **Novo grupo**, **Nova camada vetorial**, **Preenchimento de cor sólida**, **Preenchimento de degradê**, **Nova camada de subexposição e superexposição**, **Copiar seleção para nova camada**, **Recortar seleção para nova camada** |
 | **Adicionar filtro** | Filtros para anexar à camada, por categoria |
 | **Organizar** | **Renomear camada…**, **Duplicar**, **Agrupar camadas selecionadas** e, em um grupo, **Desagrupar** |
 | **Modo de mesclagem** | Todos os [modos de mesclagem](/pt-BR/docs/layers/blend-modes/) |
@@ -128,7 +131,8 @@ Faça uma das seguintes ações:
 | **Visibilidade** | **Mostrar camada**, **Mostrar camada e grupos superiores**, **Isolar camadas selecionadas**, **Mostrar todas as camadas** |
 | **Mover camada / máscara** | Seleciona a ferramenta [Operação](/pt-BR/docs/transform/move-transform/) |
 | **Mesclar abaixo**, **Mesclar visíveis**, **Carimbar visíveis**, **Achatar imagem** | Consulte [Mesclar camadas](/pt-BR/docs/layers/merging/) |
-| **Limpar camada inteira**, **Excluir camada** | **Limpar camada inteira** aparece só em camadas de pintura |
+| **Converter em camada de objetos**, **Rasterizar camada** | **Converter em camada de objetos** aparece em camadas de pintura, e **Rasterizar camada** em camadas de objeto e em [camadas vetoriais](/pt-BR/docs/layers/vector/) |
+| **Limpar camada inteira**, **Excluir camada** | **Limpar camada inteira** aparece só em camadas de pintura. Em uma camada vetorial, execute-o na [busca de comandos](/pt-BR/docs/start/command-search/) para remover todos os caminhos |
 
 Abrir o menu de uma linha torna essa camada ativa. O menu de um grupo começa com
 **Nova camada de seleção no grupo…** e **Salvar seleção atual no grupo…**. As

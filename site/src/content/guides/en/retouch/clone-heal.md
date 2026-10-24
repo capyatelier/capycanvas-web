@@ -19,7 +19,8 @@ Do one of the following:
 - Press **S**. Press it again to switch to **Healing Brush**, then **Spot Healing Brush**.
 - In Photo, select **Clone Stamp** or **Spot Healing Brush / Healing Brush** in the Tools toolbar.
 - In Paint, select **Blend / Clone Stamp** in the Tools toolbar. Right-click or hold the button to choose **Clone Stamp**.
-- In Sketch, select **Sculpt** in the title bar, select it again to open the drawer, and select **Clone**, **Heal** or **Spot Heal**.
+- In Sketch, select **Sculpt** in the title bar, select it again to open the drawer, choose the **Retouch** set, and choose a tool.
+- While a retouching tool is active, choose a tool in the **Retouch** set in **Tool Set**.
 - Type the tool's name in [command search](/docs/start/command-search/).
 
 **Healing Brush** and **Spot Healing Brush** have no button in Paint.

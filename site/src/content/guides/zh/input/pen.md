@@ -22,6 +22,8 @@ related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", 
 
 两个开关默认都打开，**预测量**默认为 16 ms。**启用笔迹预测**关闭时，另外两项设置不可用。
 
+鼠标的笔迹没有向笔尖前方延伸的预测；在 Linux、Windows 和 Android 上，没有屏幕的数位板的笔迹同样没有。在网页版编辑器和 macOS 上，这类数位板的笔迹会按设置预测。
+
 | 系统 | 系统预测 |
 | --- | --- |
 | iPad | 可用 |

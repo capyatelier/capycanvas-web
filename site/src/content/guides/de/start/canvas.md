@@ -75,9 +75,10 @@ Führen Sie eine der folgenden Aktionen aus:
 - Drehen Sie zwei Finger auf einem Touchscreen oder dem Trackpad unter macOS und iPad, wenn **Mit zwei Fingern drehen** in den Voreinstellungen eingeschaltet ist.
 - Geben Sie einen Winkel ein oder ziehen Sie den Drehregler im Menü der Zoomanzeige.
 - Wählen Sie eine Drehschaltfläche im Bedienfeld **Navigator**.
+- Wählen Sie **Ansicht drehen**, das sich eine Schaltfläche mit **Hand** teilt, oder drücken Sie **R** und ziehen Sie.
+- Drücken Sie **-**, um 90° nach links zu drehen, oder **^**, um 90° nach rechts zu drehen.
 
-Standardmäßig ist keine Taste zum Drehen der Ansicht belegt. Um zu 0° zurückzukehren,
-wählen Sie im Menü der Zoomanzeige **Drehung zurücksetzen** aus.
+Um zu 0° zurückzukehren, drücken Sie **5** oder wählen Sie im Menü der Zoomanzeige **Drehung zurücksetzen** aus.
 
 ## Ansicht spiegeln
 

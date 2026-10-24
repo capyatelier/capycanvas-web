@@ -14,7 +14,7 @@ Sie können einen Pinselstrich beim Zeichnen glätten. Die Glättungseinstellung
 
 Die Glättungsstärke ist von der Haupteinstellung **Stärke** des Pinsels getrennt.
 
-![Derselbe Eingabepfad mit mehreren Glättungsstärken gezeichnet.](shot:brushes/smoothing-comparison)
+![Derselbe Eingabepfad zweimal gezeichnet, der obere Strich ohne Glättung und der untere mit hoher Glättungsstärke.](shot:brushes/smoothing-comparison)
 
 ## Nach Geschwindigkeit anpassen
 

@@ -8,7 +8,7 @@ I filtri colore si trovano in **Filtro > Colore** e nella categoria **Colore**
 del pannello **Filtri**. Le loro impostazioni si cambiano nel pannello
 **Proprietà**.
 
-![Il pannello Filtri con la categoria Colore e un'anteprima di ogni filtro.](shot:filters/color-list)
+![La categoria Colore nel pannello Filtri, da Tonalità / Saturazione a Mappa sfumatura, ciascuna con un'anteprima del tratto.](shot:filters/color-list)
 
 ## Tonalità / Saturazione
 

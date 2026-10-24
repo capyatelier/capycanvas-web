@@ -1,11 +1,12 @@
 ---
 title: "Combinar capas"
-description: "Unir capas en una sola capa de pintura con los comandos de combinar."
-related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types"]
+description: "Unir capas en una sola capa con los comandos de combinar, y qué ocurre con las capas vectoriales."
+related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types", "layers/vector"]
 ---
 
-Puedes combinar capas en una sola capa de pintura. Los comandos de combinar
-están cerca del final del menú **Capa** y del menú de cada capa.
+Puedes combinar capas en una sola capa de pintura, o dos capas vectoriales en una
+sola capa vectorial. Los comandos de combinar están cerca del final del menú
+**Capa** y del menú de cada capa.
 
 ![El menú Capa con Ribbon activa, que muestra Combinar capas recortadas, Combinar visibles, Crear capa de visibles y Acoplar imagen.](shot:layers/merging-menu)
 
@@ -27,6 +28,21 @@ una referencia si alguna de las dos capas lo era.
 Las dos capas tienen que estar visibles, desbloqueadas y en Normal. La capa de
 debajo no puede ser un filtro, y no puede estar recortada salvo que la capa
 activa también lo esté.
+
+## Combinar capas vectoriales
+
+**Combinar hacia abajo** conserva los trazados cuando una
+[capa vectorial](/es/docs/layers/vector/) se combina con la capa vectorial de
+debajo, y los coloca por delante. Las dos capas necesitan opacidad al 100%, ninguna
+máscara, ningún recorte y ningún filtro adjunto.
+
+Cualquier otra combinación que incluya una capa vectorial convierte sus trazados en
+píxeles. Un aviso indica los nombres de las capas, por ejemplo «Al combinar, los
+trazados de “Line art” se convierten en píxeles.», y la combinación se ejecuta
+cuando seleccionas su botón. **Acoplar imagen** añade los nombres a su aviso de
+capas ocultas.
+
+![El aviso que dice «Al combinar, los trazados de “Line art” se convierten en píxeles.», con un botón Combinar hacia abajo.](shot:vector/merge-notice)
 
 ## Combinar capas recortadas
 

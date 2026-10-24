@@ -1,7 +1,7 @@
 ---
 title: "Spostamento e trasformazione"
-description: "Spostare e trasformare livelli e pixel selezionati con lo strumento Operazione e con Trasforma."
-related: ["selections/working", "transform/crop", "transform/clipboard", "drawing/ruler"]
+description: "Spostare e trasformare livelli, pixel selezionati e tracciati con lo strumento Operazione e con Trasforma."
+related: ["selections/working", "layers/paths", "transform/crop", "transform/clipboard", "drawing/ruler"]
 ---
 
 Puoi spostare livelli e pixel selezionati con lo strumento **Operazione**, e
@@ -13,7 +13,7 @@ Esegui una delle seguenti operazioni:
 
 - Apri il menu di un livello nel pannello Livelli e scegli **Sposta livello / maschera**.
 - Premi **O**.
-- In Pittura e Foto, seleziona **Operazione / Trasforma** nella barra strumenti Strumenti. Fai clic con il pulsante destro sul pulsante o tienilo premuto per scegliere **Operazione**.
+- In Pittura e Foto, seleziona **Operazione / Trasforma / Modifica punti** nella barra strumenti Strumenti. Fai clic con il pulsante destro sul pulsante o tienilo premuto per scegliere **Operazione**.
 - Digita «Operazione» nella [ricerca comandi](/it/docs/start/command-search/).
 
 Schizzo non ha un pulsante **Operazione**.
@@ -34,6 +34,13 @@ pittura attivo, a passi di pixel interi. Mentre modifichi una maschera,
 Con le guide visibili, **Operazione** seleziona e trascina anche le guide (vedi
 [Righelli e guide](/it/docs/drawing/ruler/)).
 
+## Spostare i tracciati
+
+Su un livello vettoriale, **Operazione** seleziona, sposta, scala e ruota i tracciati
+invece di spostare il livello. Premi **Ctrl+A** per selezionare ogni tracciato.
+**Modifica > Trasforma** con dei tracciati selezionati passa a **Operazione** e al
+suo riquadro. Vedi [Modificare i tracciati](/it/docs/layers/paths/).
+
 ## Lascia copia
 
 Puoi spostare una copia dei pixel selezionati e lasciare gli originali al loro
@@ -52,7 +59,7 @@ Esegui una delle seguenti operazioni:
 - Premi **Ctrl+T**.
 - Seleziona **Trasforma** nella barra strumenti Comandi in Pittura e Foto, o nella barra del titolo in Schizzo.
 - Seleziona **Trasforma** nella barra della selezione.
-- In Pittura e Foto, fai clic con il pulsante destro su **Operazione / Trasforma** nella barra strumenti Strumenti, o tienilo premuto, e scegli **Trasforma**.
+- In Pittura e Foto, fai clic con il pulsante destro su **Operazione / Trasforma / Modifica punti** nella barra strumenti Strumenti, o tienilo premuto, e scegli **Trasforma**.
 
 Con una selezione, **Trasforma** modifica i pixel selezionati del livello attivo
 o della maschera. Senza selezione, modifica i livelli selezionati. Appaiono un
@@ -96,7 +103,7 @@ In tutte le modalità:
 ### Modalità
 
 **Libero**, **Uniforme**, **Distorci** o **Deforma**. **Uniforme** mantiene le
-proporzioni. Le trasformazioni dei livelli si aprono in **Uniforme**.
+proporzioni. **Libero** è il valore predefinito.
 
 ### Dimensioni originali
 
@@ -122,7 +129,7 @@ Con **Deforma**:
 - **Ripristina griglia**: sostituisce la deformazione con una griglia regolare.
 - **Griglia**: **3 × 3** (il valore predefinito), **4 × 4** o **5 × 5**. Disponibile finché non cambi la forma.
 
-![La barra azioni della tela in modalità Deforma, con Suddividi griglia, Seleziona punti, Ripristina griglia e Griglia.](shot:transform/warp-bar)
+![La barra azioni della tela in modalità Deforma, con il menu Suddividi verticalmente, Seleziona punti, Ripristina griglia e il menu 3 × 3.](shot:transform/warp-bar)
 
 ### Pulsanti per riflettere e ruotare
 

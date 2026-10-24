@@ -69,11 +69,11 @@ nunca mostram a barra.
 - **Máscara rápida**: consulte [Máscara rápida](/pt-BR/docs/selections/quick-mask/).
 - **Salvar**: **Salvar como camada de seleção**, consulte [Camadas de seleção](/pt-BR/docs/selections/selection-layers/).
 
+Em uma barra estreita, os últimos botões, como **Máscara rápida** e **Salvar**, passam para **Mais**.
+
 ## Menu Selecionar
 
-Você também pode abrir o menu **Selecionar** em **Mais**, na barra de seleção, e
-em **Selecionar**, abaixo das configurações de uma ferramenta de seleção no
-painel Ferramenta.
+Você também pode abrir o menu **Selecionar** em **Mais**, na barra de seleção, e em **Selecionar**, abaixo da linha **Modo** do painel Ferramenta.
 
 | Comando | Função | Tecla |
 | --- | --- | --- |
@@ -144,7 +144,7 @@ A caixa de transformação aparece com uma barra de ações da tela com a legend
 
 Faça uma das seguintes ações:
 
-- Escolha o comando no menu **Editar**. Os comandos de limpar também estão no menu **Selecionar**.
+- Escolha **Editar > Preencher seleção**, **Limpar pixels selecionados** ou **Limpar fora da seleção**.
 - Pressione **Shift+Backspace** para preencher, ou **Excluir** ou **Backspace** para limpar os pixels selecionados.
 - Selecione **Preencher**, ou **Limpar** e um comando, na barra de seleção.
 - Em Pintura, selecione **Preencher seleção** na barra de ferramentas Comandos.
@@ -161,7 +161,7 @@ pintura ativa para uma nova camada logo acima, na mesma posição.
 
 Faça uma das seguintes ações:
 
-- Escolha **Selecionar > Copiar seleção para nova camada** ou **Selecionar > Recortar seleção para nova camada**.
+- Escolha **Camada > Novo > Copiar seleção para nova camada** ou **Camada > Novo > Recortar seleção para nova camada**.
 - Pressione **Ctrl+J** para copiar ou **Ctrl+Shift+J** para recortar.
 - Selecione **Copiar para camada** na barra de seleção e escolha um comando.
 

@@ -1,6 +1,6 @@
 ---
 title: "Kopieren und Einfügen"
-description: "Pixel kopieren und als Ebene, Maske oder neue Zeichnung einfügen."
+description: "Pixel kopieren und als Ebene oder neue Zeichnung einfügen."
 related: ["selections/working", "transform/move-transform", "layers/types", "files/open-save"]
 ---
 
@@ -16,6 +16,8 @@ Die Zwischenablagebefehle befinden sich im Menü **Bearbeiten** und in der Befeh
 
 **Sichtbares kopieren** (**Strg+Umschalt+C**) kopiert das sichtbare Ergebnis innerhalb der Auswahl einschließlich Papierbeleuchtung. Gruppen, Filterebenen und Auswahlebenen haben keine eigenen Pixel.
 
+**Pixel kopieren** funktioniert wie **Kopieren** und kopiert auf einer Objektebene deren Bilder als Pixel.
+
 ## Einfügen
 
 **Einfügen** (**Strg+V**) fügt den Inhalt der Zwischenablage als neue Ebene hinzu und öffnet bei Bedarf Transformationsgriffe zur Platzierung. Ein Bild aus einer anderen App wird zu einer [Objektebene](/de/docs/layers/types/), die ihre Quelle bis zum Rastern behält.
@@ -27,13 +29,14 @@ Eine innerhalb von {appName} erstellte Kopie kehrt an ihre kopierte Position zur
 Öffnen Sie **Bearbeiten > Inhalte einfügen**, um ein Ziel zu wählen.
 
 - **An gleicher Stelle einfügen** fügt eine Ebene an der kopierten Position hinzu, ohne Transformationsgriffe zu öffnen.
+- **An angezeigter Position einfügen** fügt eine Ebene in der Mitte der sichtbaren Leinwand hinzu, in ihrer Originalgröße.
+- **Am Zeiger einfügen** fügt eine Ebene zentriert auf dem Zeiger hinzu, in ihrer Originalgröße.
 - **In Auswahl einfügen** fügt eine Ebene mit der aktiven Auswahl als Maske hinzu und hebt dann die Auswahl auf.
-- **Maske einfügen** ersetzt oder ergänzt die Maske der ausgewählten Ebene durch das Bild aus der Zwischenablage.
 - **Als neues Bild einfügen** erstellt eine neue Zeichnung aus der Zwischenablage.
 
 Befehle, die eine Auswahl, eine bearbeitbare Ebene oder ein kompatibles Zwischenablagebild erfordern, sind abgeblendet.
 
-![Die Optionen von Inhalte einfügen für Ebenen, Masken und neue Zeichnungen.](shot:transform/paste-special)
+![Das Menü Inhalte einfügen mit An gleicher Stelle einfügen, An angezeigter Position einfügen, Am Zeiger einfügen, In Auswahl einfügen und Als neues Bild einfügen.](shot:transform/paste-special)
 
 ## Zwischen Apps
 

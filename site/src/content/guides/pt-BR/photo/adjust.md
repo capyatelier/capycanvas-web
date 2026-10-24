@@ -58,7 +58,7 @@ uma foto aberta pede uma pasta e um nome, como faz **Salvar como…**. O arquivo
 3. Defina **Tamanho em pixels** como **Ajustar aos limites** e deixe **Largura máxima (px)** e **Altura máxima (px)** em 2048.
 4. Selecione **Escolher arquivo…** e escolha uma pasta e um nome.
 
-![A caixa de diálogo Exportar imagem com Web / Compartilhar, Imagem JPEG, Qualidade 90 e Ajustar aos limites.](shot:photo/export-jpeg)
+![As configurações de exportação com Web / Compartilhar, Imagem JPEG, Qualidade 90 e Ajustar aos limites.](shot:photo/export-jpeg)
 
 Exportar não altera o desenho
 ([Exportar imagens](/pt-BR/docs/files/export/)).

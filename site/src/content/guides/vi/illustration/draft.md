@@ -11,9 +11,9 @@ trên.
 
 1. Chọn **Vẽ** trong bộ chuyển không gian làm việc trên thanh tiêu đề.
 2. Chọn **Tệp > Mới…**, hoặc nhấn **Ctrl+N** ([Bản vẽ mới](/vi/docs/files/new/)).
-3. Trong hộp thoại **Bản vẽ mới**, đặt **Chiều rộng (px)** và **Chiều cao (px)** là 1200, rồi chọn **Tạo**.
+3. Trong hộp thoại **Bản vẽ mới**, chọn **px** trong trình đơn đơn vị, đặt **R** và **C** là 1200, rồi chọn **Tạo**.
 
-![Hộp thoại Bản vẽ mới với Chiều rộng (px) và Chiều cao (px) đặt là 1200.](shot:illustration/new-drawing)
+![Hộp thoại Bản vẽ mới với R và C đặt là 1200 px.](shot:illustration/new-drawing)
 
 Bản vẽ có hai lớp: **Mực hiện tại** phía trên **Giấy**. Nhấp đúp vào **Mực hiện
 tại** trong bảng Lớp và đổi tên lớp thành *Color rough*.

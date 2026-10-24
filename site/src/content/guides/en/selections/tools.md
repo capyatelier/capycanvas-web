@@ -108,7 +108,7 @@ bottom of the canvas shows **Remove Point**, **Cancel** and **Finish**.
 Click a color on the canvas. **Auto select** takes the connected area around
 that point, and **Select by color** takes matching pixels anywhere in the image.
 
-![The Tool panel for Auto select, with Mode, Anti-aliasing, Source, Tolerance, the Edges settings and Feather radius.](shot:selections/tools-auto-select-settings)
+![The Tool panel for Auto select, with Mode, Select, Tolerance, the Edges settings, Feather radius, Anti-aliasing and Source.](shot:selections/tools-auto-select-settings)
 
 ### Source
 
@@ -152,6 +152,6 @@ nothing while there is no selection.
 
 ## The Select button
 
-**Select** below a selection tool's settings in the Tool panel opens the
+**Select** under the **Mode** row in the Tool panel opens the
 [Select menu](/docs/selections/working/). The **Tonal range** settings have no
 **Select** button.

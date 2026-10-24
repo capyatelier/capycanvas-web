@@ -68,13 +68,14 @@ n’affichent jamais la barre.
 - **Effacer** : **Effacer les pixels sélectionnés** ou **Effacer hors de la sélection**.
 - **Recadrer** : **Recadrer la toile sur la sélection**, voir [Recadrer](/fr/docs/transform/crop/).
 - **Masque rapide** : voir [Masque rapide](/fr/docs/selections/quick-mask/).
-- **Enregistrer** : **Enregistrer comme calque de sélection**, voir [Calques de sélection](/fr/docs/selections/selection-layers/).
+- **Enregistrer** : **Enregistrer comme calque de sélection**, voir [Calques de sélection](/fr/docs/selections/selection-layers/).
+
+Sur une barre étroite, les derniers boutons, comme **Masque rapide** et **Enregistrer**, passent dans **Plus**.
 
 ## Menu Sélection
 
 Vous pouvez aussi ouvrir le menu **Sélection** depuis **Plus** dans la barre de
-sélection, et depuis **Sélection** sous les réglages d’un outil de sélection dans le
-panneau Outil.
+sélection, et depuis **Sélection** sous la ligne **Mode** du panneau Outil.
 
 | Commande | Effet | Touche |
 | --- | --- | --- |
@@ -145,7 +146,7 @@ intitulée « Transformer le contour ». Il fonctionne comme
 
 Effectuez l’une des opérations suivantes :
 
-- Choisissez la commande dans le menu **Édition**. Les commandes d’effacement se trouvent aussi dans le menu **Sélection**.
+- Choisissez **Édition > Remplir la sélection**, **Effacer les pixels sélectionnés** ou **Effacer hors de la sélection**.
 - Appuyez sur **Maj+Retour arrière** pour remplir, ou sur **Supprimer** ou **Retour arrière** pour effacer les pixels sélectionnés.
 - Sélectionnez **Remplissage**, ou **Effacer** puis une commande, dans la barre de sélection.
 - Dans Peinture, sélectionnez **Remplir la sélection** dans la barre d’outils Commandes.
@@ -163,7 +164,7 @@ calque d’origine.
 
 Effectuez l’une des opérations suivantes :
 
-- Choisissez **Sélection > Copier la sélection vers un nouveau calque** ou **Sélection > Couper la sélection vers un nouveau calque**.
+- Choisissez **Calque > Nouveau > Copier la sélection vers un nouveau calque** ou **Calque > Nouveau > Couper la sélection vers un nouveau calque**.
 - Appuyez sur **Ctrl+J** pour copier ou sur **Ctrl+Maj+J** pour couper.
 - Sélectionnez **Copier vers un calque** dans la barre de sélection et choisissez une commande.
 

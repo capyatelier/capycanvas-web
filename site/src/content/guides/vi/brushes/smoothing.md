@@ -14,7 +14,7 @@ Bạn có thể làm mượt nét cọ khi vẽ. Thiết lập làm mượt đư
 
 Cường độ làm mượt cọ riêng biệt với thiết lập **Độ mạnh** chính của cọ.
 
-![Cùng đường đầu vào được vẽ ở nhiều giá trị Cường độ làm mượt.](shot:brushes/smoothing-comparison)
+![Cùng một đường đầu vào được vẽ hai lần, nét trên với làm mượt tắt và nét dưới với Cường độ làm mượt cao.](shot:brushes/smoothing-comparison)
 
 ## Điều chỉnh theo tốc độ
 

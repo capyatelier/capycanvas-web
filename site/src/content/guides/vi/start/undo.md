@@ -1,7 +1,7 @@
 ---
 title: "Hoàn tác và làm lại"
 description: "Hoàn tác và làm lại các thay đổi trên bản vẽ, và lịch sử riêng cho các thay đổi bố cục."
-related: ["start/command-search", "customize/workspaces", "input/touch"]
+related: ["start/command-search", "customize/bubbles", "customize/workspaces", "input/touch"]
 ---
 
 Bạn có thể hoàn tác các thay đổi trên bản vẽ từng bước một, và làm lại các bước đã
@@ -28,6 +28,10 @@ Thực hiện một trong các cách sau:
 - Chạm ba ngón tay lên khung vẽ.
 
 Một thay đổi mới sau khi Hoàn tác sẽ xóa các bước bạn có thể làm lại.
+
+## Bong bóng hoàn tác và làm lại
+
+Kéo **Hoàn tác** hoặc **Làm lại** lên khung vẽ để giữ cả hai trong một [bong bóng](/vi/docs/customize/bubbles/). Chạm nửa bên trái để hoàn tác và nửa bên phải để làm lại.
 
 ## Những gì được tính là một bước
 

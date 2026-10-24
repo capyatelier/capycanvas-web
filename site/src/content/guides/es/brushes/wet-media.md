@@ -7,14 +7,14 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 Puedes definir cómo manejan la pintura los pinceles húmedos y de mezcla en el panel
 **Herramienta**. Cada grupo aparece solo en los pinceles que se nombran en su sección.
 
-![El panel Herramienta para Acuarela húmeda con Mezcla de colores y los grupos Mezcla, Acuarela y Difusión.](shot:brushes/wet-media-settings)
+![La parte inferior del panel Herramienta para Acuarela húmeda, con los grupos Mezcla, Acuarela, Difusión y Fusión.](shot:brushes/wet-media-settings)
 
 ## Mezcla
 
-**Mezcla** aparece en **Pincel redondo húmedo**, **Gouache opaco**, **Óleo
-cargado**, **Espátula**, **Aguada de acuarela**, **Acuarela húmeda**, **Mezclador
-natural** y **Dedo**. Salvo en los pinceles de acuarela, un pincel cargado se queda
-sin pintura a lo largo del trazo, a un ritmo fijo para cada pincel.
+**Mezcla** aparece en los pinceles de pintura al óleo, **Gouache opaco**, los
+pinceles de acuarela y todos los mezcladores. **Recogida promediada**,
+**Persistencia** y **Recarga por presión** aparecen solo en los pinceles de pintura
+al óleo, **Gouache opaco**, **Mezclador húmedo** y **Mezclador de color**.
 
 ### Carga de pintura
 
@@ -30,11 +30,46 @@ Define cuánto arrastra el pincel a lo largo del trazo el color que recoge de la
 Diluye la pintura que lleva el pincel. Con valores más altos, el color propio del
 pincel pierde fuerza en la mezcla.
 
+### Recogida promediada
+
+Define hasta qué punto los colores recogidos por toda la punta se funden en uno. Al
+0%, cada parte de la punta conserva el suyo.
+
+### Persistencia
+
+Define hasta dónde se arrastra el color promediado a lo largo del trazo. Solo
+aparece mientras **Recogida promediada** está por encima del 0%.
+
+### Recarga por presión
+
+Define cuánto recarga la presión firme el color seleccionado en el pincel.
+**Pincel de mezcla** deposita su color con presión firme y solo mezcla con un toque
+suave.
+
+## Mezclador
+
+Cada mezclador añade ajustes al grupo **Mezclador**. **Alcance** está arriba del
+todo del panel **Herramienta**.
+
+| Ajuste | Mezcladores | Define |
+| --- | --- | --- |
+| **Alcance** | Todos salvo **Espátula de mezcla** y **Marmolado** | Hasta dónde recoge color el mezclador alrededor de cada punto del trazo. |
+| **Vetas** | **Dedo**, **Mezclador suave**, **Difumino**, **Pañuelo de papel**, **Mezclador natural**, **Mezclador de cerdas**, **Espátula de mezcla** | Cuánto se rompe el trazo en vetas a lo largo de su dirección. |
+| **Nitidez** | **Enfocar** | Cuánto contraste añade el trazo. |
+| **Textura conservada** | **Mezclador que conserva la textura** | Cuánto de la textura fina bajo el trazo permanece sobre el color mezclado. |
+| **Tamaño del detalle** | **Mezclador que conserva la textura** | El tamaño de la textura que se conserva. |
+| **Mezclar luminosidad** | **Mezclador de tono** | Cuánta luminosidad se mezcla junto con el tono y la saturación. |
+| **Grano** | **Mezclador disperso** | Con qué plenitud sustituye cada píxel disperso al que tiene debajo. |
+| **Estiramiento** | **Mezclador pictórico**, **Mezclador de cristal** | Cuánto se estiran las manchas o las celdas a lo largo del trazo. |
+| **Tamaño de celda** | **Mezclador de cristal** | El tamaño de las celdas. |
+| **Remolino** | **Marmolado** | Con qué fuerza se riza la pintura. |
+| **Tamaño del remolino** | **Marmolado** | El tamaño de los remolinos. |
+| **Conservación de bordes** | **Mezclador peine** | Con qué facilidad se detiene la mezcla en un borde entre colores. |
+
 ## Acuarela
 
 **Aguada de acuarela** y **Acuarela húmeda** tienen un grupo **Acuarela** para el
-borde más oscuro que se forma donde se acumula la pintura. La acuarela solo
-reacciona a la pintura de la misma capa.
+borde más oscuro que se forma donde se acumula la pintura. La acuarela solo reacciona a la pintura de la misma capa. **Intensidad del borde** está en la parte superior del panel **Herramienta**, sobre los grupos.
 
 ### Intensidad del borde
 
@@ -64,7 +99,7 @@ Define hasta dónde puede extenderse la pintura desde cada toque, de 0 a 96 px.
 
 ### Carga de agua
 
-Define cuánta agua deposita cada toque en el papel.
+Define cuánta agua deposita cada toque en el papel. Está en la parte superior del panel **Herramienta**, sobre los grupos.
 
 ## Mezcla de colores
 
@@ -86,7 +121,7 @@ Todos los pinceles de mezcla integrados empiezan con **Mezcla Oklab**. La opció
 guarda con el pincel, y el ajuste **Mezcla** del dibujo no la cambia. En un pincel
 que no mezcla, las opciones no están disponibles.
 
-![Mezcla de colores en el cajón Herramienta.](shot:brushes/color-mixing-menu)
+![El ajuste Mezcla de colores con Mezcla Oklab.](shot:brushes/color-mixing-menu)
 
 ## Cerdas
 

@@ -12,11 +12,11 @@ Dry-media brushes use pen pressure, pen tilt and the drawing's Paper texture to 
 
 The built-in dry-media presets are **Pencil**, **Pointy Pencil**, **Shading Pencil**, **Charcoal**, **Chalk**, **Pastel Block** and **Crayon**. Select their tool in the Tools toolbar, then choose a preset in **Tool Set**.
 
-Pencil and Pointy Pencil respond to pressure and tilt. Shading Pencil, Charcoal and Chalk use pressure for coverage and tilt for broad side strokes. Pastel Block uses the block's edge or broad face as you tilt the pen. Crayon responds to pressure and tilt with a rounded mark.
+Every preset responds to pen pressure and tilt. Tilting the pen toward the paper widens the mark into a side stroke. **Pastel Block** draws with the block's end when upright and with its long side when tilted.
 
 ## Primary settings
 
-![The primary controls and Material settings for a dry-media brush.](shot:brushes/dry-media-settings)
+![The Tool panel for Pencil with Brush size, Strength, Texture strength and Material hardness above the Smoothing, Tip and Blending groups.](shot:brushes/dry-media-settings)
 
 ### Size
 
@@ -30,11 +30,11 @@ Sets how firmly the material marks the surface. Higher values fill more of the p
 
 ### Texture strength
 
-Sets how strongly the Paper texture changes stroke coverage. At 0%, the stroke does not respond to the Paper texture.
+Sets how strongly the Paper texture changes stroke coverage. At 0%, the stroke does not respond to the Paper texture. The slider goes to 200%.
 
 ### Material hardness
 
-Sets how readily the material covers low and high parts of the Paper texture. Higher values make the material behave harder.
+Sets how much pen pressure changes the amount of pigment each contact leaves. At high values a light touch leaves little pigment, and at low values it leaves strong grains.
 
 ## Paper texture
 
@@ -42,4 +42,4 @@ Dry-media strokes use the nearest [Paper](/docs/layers/paper/) at or below the t
 
 ![Matched dry-media strokes on Bristol, Cold press and Sanded paper.](shot:layers/paper-surface-comparison)
 
-Dry-media brushes do not show wet-media controls such as **Bleed**, **Water load** or **Mixing**. The exact Tip controls depend on the preset.
+Dry-media brushes show only **Tip angle** in the **Tip** group, and no wet-media controls such as **Bleed**, **Water load** or **Mixing**.

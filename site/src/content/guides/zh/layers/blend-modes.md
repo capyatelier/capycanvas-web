@@ -19,7 +19,7 @@ related: ["layers/settings", "layers/panel", "color-management/color-spaces", "c
 
 当前模式在菜单中带有对勾，其名称显示在顶部栏按钮上。模式不是正常时，图层行的副标题会显示该模式。新图层使用正常模式。
 
-不能更改选区图层或已锁定图层的混合模式。[向下合并](/zh/docs/layers/merging/)要求两个图层都设为正常。混合模式在画作的混合色彩空间中混合颜色，该空间通过**编辑 > 颜色混合**设置（参见[色彩空间、位深度和颜色混合](/zh/docs/color-management/color-spaces/)）。
+不能更改选区图层或已锁定图层的混合模式。[向下合并](/zh/docs/layers/merging/)要求两个图层都设为正常。混合模式在画作的混合色彩空间中混合颜色，该空间通过**图像 > 颜色混合**设置（参见[色彩空间、位深度和颜色混合](/zh/docs/color-management/color-spaces/)）。
 
 ## 混合模式菜单中的模式
 

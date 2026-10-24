@@ -6,9 +6,11 @@ related: ["brushes/basics", "brushes/wet-media", "drawing/brush-tools"]
 
 Bạn có thể thay đổi hình dạng từng dấu cọ và mức kết cấu giấy thay đổi dấu vẽ bằng các thiết lập **Đầu cọ** và **Kết cấu** trong bảng **Công cụ** ([Kích thước, độ mạnh và độ đục](/vi/docs/brushes/basics/)).
 
-![Bảng Công cụ cho Bút chì với nhóm Đầu cọ và nhóm Kết cấu.](shot:brushes/tip-texture-settings)
+![Bảng Công cụ cho Cọ vẽ từ Độ cứng đến Độ mạnh kết cấu, với các nhóm Làm mượt, Đầu cọ và Kết cấu.](shot:brushes/tip-texture-settings)
 
 ## Đầu cọ
+
+Cọ chất liệu khô chỉ hiện **Góc đầu nét**.
 
 ### Độ cứng
 
@@ -36,23 +38,25 @@ cả hai chiều.
 
 ## Đầu cọ xoay theo nét vẽ
 
-Đầu cọ của **Cọ vẽ**, **Cọ dẹt có kết cấu**, **Khối phấn tiên**, **Lớp phủ trong**,
+Đầu cọ của **Cọ vẽ**, **Cọ dẹt có kết cấu**, **Lớp phủ trong**,
 **Màu bột đục**, **Cọ sơn dầu đẫm**, **Dao bay**, **Màu nước phủ loãng**,
-**Màu nước ướt**, **Hai kết cấu** và **Cọ hòa màu tự nhiên** đi theo hướng của nét
-vẽ. **Góc đầu nét** không có tác dụng với các cọ này.
+**Màu nước ướt**, **Hai kết cấu**, **Cọ hòa màu tự nhiên** và **Dao hòa màu** đi theo
+hướng của nét vẽ. **Góc đầu nét** không có tác dụng với các cọ này.
 
 **Cọ khô phủ mỏng** và **Mực cọ tự nhiên** cộng hướng nét vẽ vào **Góc đầu nét**.
 
 ## Kết cấu
 
-**Độ mạnh kết cấu** xuất hiện ở các cọ bút chì và phấn tiên, **Cọ vẽ**, **Cọ lông**,
-**Cọ dẹt có kết cấu**, **Cọ khô phủ mỏng**, **Lớp phủ trong**, **Màu bột đục**,
-**Cọ sơn dầu đẫm**, **Dao bay**, **Hai kết cấu** và **Cọ hòa màu tự nhiên**.
+**Độ mạnh kết cấu** xuất hiện ở các nhóm **Bút chì**, **Phấn tiên** và **Vẽ** (trừ
+**Lớp phủ nhân màu**), ở **Cọ sơn dầu đẫm**, **Dao bay** và **Hai kết cấu**, và ở tám
+cọ hòa màu: **Miết màu**, **Hòa màu mềm**, **Bút di chì**, **Khăn giấy**,
+**Hòa màu sần**, **Cọ hòa màu tự nhiên**, **Dao hòa màu** và **Hòa màu sợi cọ**. Cọ
+không có thiết lập này bỏ qua Giấy.
 
-Cọ chất liệu khô đọc kết cấu của Giấy gần nhất dưới lớp đích. Chọn và chỉnh tỷ lệ kết cấu trong [Giấy](/vi/docs/layers/paper/).
+Cọ có **Độ mạnh kết cấu** đọc kết cấu của Giấy gần nhất tại hoặc dưới lớp đích. Chọn và chỉnh tỷ lệ kết cấu trong [Giấy](/vi/docs/layers/paper/).
 
 ### Độ mạnh kết cấu
 
-Đặt mức kết cấu Giấy thay đổi độ phủ. Ở 0%, kết cấu không có tác động.
+Đặt mức kết cấu Giấy thay đổi độ phủ. Ở 0%, kết cấu không có tác động. Với cọ hòa màu, chạm nhẹ để vân giấy không bị hòa màu, còn lực nhấn đẩy màu hòa vào vân giấy. **Hòa màu mềm** bắt đầu ở 0%.
 
 ![Ba nét Than vẽ với Độ mạnh kết cấu 0%, 50% và 100%.](shot:brushes/texture-strength)

@@ -21,7 +21,7 @@ Chọn **Ảnh > Cắt xén**, chọn **Cắt xén** trên Thanh công cụ vẽ
 nhấn **C** ([Cắt xén](/vi/docs/transform/crop/)). Một khung có tay nắm xuất hiện
 trên ảnh, cùng thanh cắt xén dọc cạnh dưới khung vẽ.
 
-Chọn **Tỷ lệ** trên thanh cắt xén rồi chọn **4:5**. Khung trở thành khung lớn nhất
+Chọn trình đơn tỷ lệ ở đầu bên trái thanh cắt xén rồi chọn **4:5**. Khung trở thành khung lớn nhất
 theo tỷ lệ đó, nằm giữa khung vẽ. Hướng của khung theo hướng ảnh, nên ảnh ngang sẽ
 có khung 5:4.
 
@@ -43,6 +43,6 @@ Kéo bên trong khung bằng bút hoặc chuột để di chuyển khung. Trong 
 
 Chọn **Áp dụng** trên thanh cắt xén, hoặc nhấn **Enter**. Khung vẽ lấy kích thước
 của khung cắt: 2000 × 1600 pixel trong ví dụ. Các pixel bị cắt vẫn nằm trên lớp ở
-trạng thái ẩn, trừ khi **Xóa phần bị cắt** đang bật trên thanh cắt xén.
+trạng thái ẩn, trừ khi **Xóa nét vẽ bị cắt** đang bật trên thanh cắt xén.
 
 Giai đoạn tiếp theo: [Retouch](/vi/docs/photo/retouch/).

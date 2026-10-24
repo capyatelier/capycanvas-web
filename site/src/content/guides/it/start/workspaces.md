@@ -6,11 +6,11 @@ related: ["customize/workspaces", "customize/panels", "customize/toolbars", "cus
 
 Un'area di lavoro è una disposizione salvata della barra del titolo, delle barre
 strumenti e dei pannelli. {appName} ne include tre: **Schizzo**, **Pittura** e
-**Foto**. La prima volta si apre in Pittura, poi nell'ultima area di lavoro usata.
+**Foto**. La prima volta si apre in Schizzo, poi nell'ultima area di lavoro usata.
 
 ## Schizzo
 
-![L'area di lavoro Schizzo con l'esempio di illustrazione sulla tela.](shot:start/workspaces-sketch "1 Barra del titolo, a sinistra · 2 Selettore area di lavoro · 3 Barra del titolo, a destra · 4 Controlli del pennello")
+![L'area di lavoro Schizzo con l'esempio di illustrazione sulla tela.](shot:start/workspaces-sketch "1 Barra del titolo, a sinistra · 2 Selettore area di lavoro · 3 Barra del titolo, a destra · 4 Controlli del pennello · 5 Bolle degli strumenti")
 
 Schizzo non ha pannelli ancorati: i pulsanti degli strumenti e dei pannelli nella
 barra del titolo aprono dei cassetti.
@@ -19,6 +19,7 @@ barra del titolo aprono dei cassetti.
 2. Il selettore dell'area di lavoro.
 3. **Pennello**, **Modella**, **Gomma**, **Pannello Livelli** e **Colore pennello**. L'editor web aggiunge **Schermo intero**.
 4. **Cursore dimensioni pennello**, **Contagocce**, **Cursore intensità**, **Annulla** e **Ripeti**.
+5. Bolle degli strumenti staccate dalla barra del titolo, qui una bolla **Pennello** con il suo alone di impostazioni e un piccolo anello colore (vedi [Bolle degli strumenti](/it/docs/customize/bubbles/)).
 
 | Pulsante | Pannelli nel cassetto |
 | --- | --- |
@@ -28,7 +29,7 @@ barra del titolo aprono dei cassetti.
 | **Trasforma** | **Set di strumenti**, **Strumento** |
 | **Pannello Filtri** | **Tipo di filtro**, **Filtri**, **Proprietà** |
 | **Pannello Livelli** | **Livelli** |
-| **Colore pennello** | **Colore** |
+| **Colore pennello** | **Colore**, **Tavolozze** |
 
 **Menu principale** apre i menu (su macOS si trovano invece nella barra dei menu
 di sistema). **Seleziona** sceglie l'ultimo strumento di selezione usato.
@@ -44,7 +45,7 @@ Pittura ancora i pannelli in colonne su entrambi i lati della tela.
 
 1. **Capy (modalità Zen)** e i menu, il titolo del disegno al centro, poi il selettore dell'area di lavoro e **Impostazioni**. L'editor web aggiunge **Schermo intero**.
 2. **Nuovo…**, **Apri…**, **Salva**, **Annulla**, **Ripeti**, **Svuota intero livello**, **Riempi selezione**, **Trasforma** e **Rifletti vista orizzontalmente**.
-3. **Penna**, **Matita**, **Pennello**, **Gomma**, **Aerografo**, **Decorazione**, **Sfuma**, **Fluidifica**, gli strumenti di selezione, **Riempi**, **Sfumatura**, **Operazione**, **Forma**, **Righello**, **Mano**, **Contagocce** e **Colore pennello**.
+3. **Penna**, **Matita**, **Pennello**, **Gomma**, **Aerografo**, **Decorazione**, **Sfuma**, **Fluidifica**, gli strumenti di selezione, **Riempi**, **Sfumatura**, **Operazione**, **Forma**, **Righello**, **Mano**, **Zoom**, **Contagocce** e **Colore pennello**.
 4. Schede per **Set di strumenti** e **Diagnostica**, per **Strumento** e **Dimensioni pennello**, e per **Colore** e **Tavolozze**.
 5. Icone per **Navigatore** e **Prova colore**, per **Proprietà** e **Filtri**, e per **Livelli**.
 6. L'indicatore di zoom e rotazione, descritto in [Visualizzare la tela](/it/docs/start/canvas/).
@@ -65,7 +66,7 @@ del titolo è uguale a quella di Pittura.
 
 1. **Nuovo…**, **Apri…**, **Salva**, **Annulla**, **Ripeti** e **Trasforma**.
 2. **Opzioni strumento**, le impostazioni dello strumento corrente.
-3. **Operazione**, **Ritaglia**, gli strumenti di selezione, **Pennello**, **Gomma**, **Timbro clone**, **Pennello correttivo al volo**, **Sfuma**, **Fluidifica**, **Sfumatura**, **Mano**, **Contagocce** e **Colore pennello**.
+3. **Operazione**, **Ritaglia**, gli strumenti di selezione, **Pennello**, **Gomma**, **Timbro clone**, **Pennello correttivo al volo**, **Sfuma**, **Fluidifica**, **Sfumatura**, **Mano**, **Zoom**, **Contagocce** e **Colore pennello**.
 4. **Istogramma** e **Forma d’onda**, **Proprietà** e **Filtri**, e **Livelli**.
 5. Icone per **Set di strumenti** e **Diagnostica**, per **Strumento** e **Dimensioni pennello**, e per **Navigatore** e **Prova colore**. Ogni icona apre da solo il suo gruppo come cassetto.
 

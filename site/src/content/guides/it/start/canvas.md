@@ -78,9 +78,11 @@ Esegui una delle seguenti operazioni:
 - Ruota due dita su uno schermo touch, oppure sul trackpad su macOS e iPad, quando **Ruota con due dita** è attivo nelle Preferenze.
 - Digita un angolo o trascina il cursore di rotazione nel menu dell'indicatore dello zoom.
 - Seleziona un pulsante di rotazione nel pannello **Navigatore**.
+- Seleziona **Ruota vista**, che condivide un pulsante con **Mano**, oppure premi **R**, poi trascina.
+- Premi **-** per ruotare di 90° a sinistra, o **^** per ruotare di 90° a destra.
 
-Per impostazione predefinita, nessun tasto ruota la vista. Per tornare a 0°,
-seleziona **Reimposta rotazione** nel menu dell'indicatore dello zoom.
+Per tornare a 0°, premi **5** o seleziona **Reimposta rotazione** nel menu
+dell'indicatore dello zoom.
 
 ## Riflettere la vista
 

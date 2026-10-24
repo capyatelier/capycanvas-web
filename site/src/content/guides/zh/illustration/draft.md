@@ -10,9 +10,9 @@ related: ["files/new", "drawing/fill", "drawing/brush-tools", "transform/move-tr
 
 1. 在标题栏的工作区切换器中选择**绘画**。
 2. 选择**文件 > 新建…**，或按 **Ctrl+N**（[新建画作](/zh/docs/files/new/)）。
-3. 在**新建绘画**对话框中，将**宽度（px）** 和**高度（px）** 设为 1200，然后选择**创建**。
+3. 在**新建绘画**对话框中，在单位菜单中选择 **px**，将**宽**和**高**设为 1200，然后选择**创建**。
 
-![新建绘画对话框，宽度（px）和高度（px）设为 1200。](shot:illustration/new-drawing)
+![新建绘画对话框，宽和高设为 1200 px。](shot:illustration/new-drawing)
 
 画作有两个图层：**当前墨色**位于**纸张**上方。在图层面板中双击**当前墨色**，将图层重命名为 *Color rough*。
 

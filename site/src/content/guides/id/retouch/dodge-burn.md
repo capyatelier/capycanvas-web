@@ -41,7 +41,7 @@ Grup mengambil opasitas dan kliping dari lapisan asli. Lapisan asli tetap berada
 di bawah grup, dalam keadaan tersembunyi.
 
 Lapisan harus terlihat dan disetel ke **Normal**, dan gambar harus memakai
-**Edit > Pembauran > Pembauran Perseptual** (lihat
+**Gambar > Pembauran > Pembauran Perseptual** (lihat
 [Ruang warna, kedalaman bit, dan pembauran](/id/docs/color-management/color-spaces/)).
 Jika gambar berubah selama panel terbuka, panel akan tertutup.
 

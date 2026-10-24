@@ -43,7 +43,7 @@ Thực hiện một trong các cách sau:
 
 ## Trình chỉnh điểm màu
 
-![Bảng Công cụ cho công cụ Chuyển màu với hàng Hình dạng, trình chỉnh điểm màu và Độ đục.](shot:drawing/gradient-tool-panel)
+![Bảng Công cụ cho công cụ Chuyển màu với hàng Hình dạng và trình chỉnh điểm màu.](shot:drawing/gradient-tool-panel)
 
 Bạn có thể sửa màu của dải chuyển màu trong trình chỉnh điểm màu bên dưới
 **Hình dạng** trong bảng **Công cụ**. Nút chuyển màu trên thanh Tùy chọn công cụ mở

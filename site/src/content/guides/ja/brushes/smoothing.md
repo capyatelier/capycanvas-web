@@ -14,7 +14,7 @@ related: ["brushes/basics", "drawing/brush-tools", "brushes/reset"]
 
 手ブレ補正の強さは、ブラシの主設定の**強さ**とは別です。
 
-![同じ入力軌跡を手ブレ補正の強さを変えて描いた線。](shot:brushes/smoothing-comparison)
+![同じ入力軌跡を2回描いたもの。上のストロークは手ブレ補正オフ、下のストロークは手ブレ補正の強さが高い設定です。](shot:brushes/smoothing-comparison)
 
 ## 速度で調整
 

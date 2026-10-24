@@ -6,7 +6,7 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 
 Você pode recortar a tela em um quadro com a ferramenta **Recortar**. Os pixels
 recortados continuam nas camadas deles, ocultos, a menos que você ative
-**Excluir área recortada**.
+**Excluir pintura recortada**.
 
 ## Recortar a tela
 
@@ -46,7 +46,7 @@ proporção. **Livre** é o padrão.
 **Trocar orientação do recorte**, o botão de ícone ao lado de **Proporção**,
 alterna o quadro entre paisagem e retrato.
 
-A proporção, a sobreposição e **Excluir área recortada** se mantêm no próximo
+A proporção, a sobreposição e **Excluir pintura recortada** se mantêm no próximo
 recorte.
 
 ![O menu Proporção na barra de recorte.](shot:transform/crop-ratio-menu)
@@ -80,14 +80,14 @@ Para endireitar por uma guia, selecione a guia e selecione **Endireitar** na
 barra de ações da tela dela (consulte [Réguas e guias](/pt-BR/docs/drawing/ruler/)). Um
 recorte se abre, girado para se alinhar à guia.
 
-## Excluir área recortada
+## Excluir pintura recortada
 
-Ative **Excluir área recortada** para descartar os pixels fora do quadro ao
+Ative **Excluir pintura recortada** para descartar os pixels fora do quadro ao
 aplicar o recorte. As fotos posicionadas mantêm os pixels originais. Vem
 desativado por padrão.
 
 Um recorte que ficaria grande demais mantendo os pixels ocultos só funciona com
-**Excluir área recortada** ativado.
+**Excluir pintura recortada** ativado.
 
 ## Redefinir
 

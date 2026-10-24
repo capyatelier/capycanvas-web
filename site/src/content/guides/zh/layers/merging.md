@@ -1,10 +1,10 @@
 ---
 title: "合并图层"
-description: "用合并命令将多个图层合并为一个绘画图层。"
-related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types"]
+description: "用合并命令将多个图层合并为一个图层，以及矢量图层的处理方式。"
+related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types", "layers/vector"]
 ---
 
-可以将多个图层合并为一个绘画图层。合并命令位于**图层**菜单和每个图层菜单的末尾附近。
+可以将多个图层合并为一个绘画图层，或将两个矢量图层合并为一个矢量图层。合并命令位于**图层**菜单和每个图层菜单的末尾附近。
 
 ![Ribbon 为当前图层时的图层菜单，显示合并剪贴图层、合并可见图层、盖印可见图层和拼合图像。](shot:layers/merging-menu)
 
@@ -22,6 +22,14 @@ related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers
 合并后的图层沿用下方图层的名称、位置、剪贴和**锁定透明度**，不透明度为 100%，混合模式为正常，没有蒙版。只要两个图层中有一个是参考图层，合并后的图层就是参考图层。
 
 两个图层都必须可见、未锁定并设为正常。下方图层不能是滤镜；除非当前图层也是剪贴图层，下方图层不能是剪贴图层。
+
+## 合并矢量图层
+
+当[矢量图层](/zh/docs/layers/vector/)合并到其下方的矢量图层时，**向下合并**会保留路径，并把它们放在前面。两个图层都需要 100% 不透明度，没有蒙版、剪贴和附加的滤镜。
+
+其他所有包含矢量图层的合并都会把其路径变成像素。提示会指明相关图层，例如“合并会将‘Line art’中的路径变为像素。”，选择其按钮后才会执行合并。**拼合图像**会把这些名称加入其隐藏图层提示中。
+
+![显示“合并会将‘Line art’中的路径变为像素。”的提示，带有向下合并按钮。](shot:vector/merge-notice)
 
 ## 合并剪贴图层
 

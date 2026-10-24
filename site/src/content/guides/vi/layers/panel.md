@@ -1,7 +1,7 @@
 ---
 title: "Bảng lớp"
 description: "Chức năng của từng phần trong bảng Lớp, kể cả trình đơn lớp."
-related: ["layers/working", "layers/settings", "layers/types", "layers/masks"]
+related: ["layers/working", "layers/settings", "layers/types", "layers/vector", "layers/masks"]
 ---
 
 Bảng **Lớp** liệt kê các lớp của bản vẽ, lớp nằm trước nhất ở trên cùng. Phần đầu
@@ -18,7 +18,7 @@ Thực hiện một trong các cách sau:
 - Trong Phác thảo, chọn **Lớp** trên thanh tiêu đề. Ngăn dùng chung mở ở chế độ xem Lớp; chọn nút Thuộc tính của một lớp để chuyển sang Thuộc tính.
 - Gõ "Bảng lớp" vào [tìm lệnh](/vi/docs/start/command-search/).
 
-Trong Ảnh, bảng này đã mở sẵn ở cột phải.
+Trong Ảnh, bảng này đã mở sẵn ở cột phải. Trong Phác thảo, bạn có thể kéo **Lớp** từ thanh tiêu đề lên khung vẽ để giữ nó ở đó dưới dạng bong bóng ([Bong bóng công cụ](/vi/docs/customize/bubbles/)).
 
 ## Phần đầu bảng
 
@@ -55,7 +55,7 @@ Chọn một hàng để lớp đó trở thành lớp hiện tại và là hàn
 
 Giấy có hình thu nhỏ màu và kết cấu riêng. Nếu thiếu Giấy, **Thêm giấy** xuất hiện sau hàng cuối.
 
-![Ngăn Phác thảo chuyển từ Lớp sang Thuộc tính.](shot:layers/sketch-properties-drawer)
+![Ngăn Phác thảo hiện Thuộc tính của Giấy, với Tất cả lớp ở dưới cùng.](shot:layers/sketch-properties-drawer)
 
 **Ctrl**+nhấp vào hình thu nhỏ của lớp vẽ để nạp độ đục của lớp thành vùng chọn,
 hoặc vào hình thu nhỏ mặt nạ để nạp mặt nạ. Giữ thêm **Shift** để cộng vào vùng
@@ -73,34 +73,36 @@ chọn.
 
 ## Nút cuối bảng
 
-![Các nút ở cuối bảng Lớp.](shot:layers/panel-footer "1 Lớp mới · 2 Nhóm mới · 3 Lớp vùng chọn mới · 4 Thêm mặt nạ · 5 Thêm bộ lọc · 6 Nhập ảnh thành lớp… · 7 Xóa các lớp đã chọn · 8 Thao tác lớp")
+![Các nút ở cuối bảng Lớp.](shot:layers/panel-footer "1 Lớp mới · 2 Lớp vector mới · 3 Nhóm mới · 4 Lớp vùng chọn mới · 5 Thêm mặt nạ · 6 Thêm bộ lọc · 7 Nhập ảnh thành lớp… · 8 Xóa các lớp đã chọn · 9 Thao tác lớp")
 
 1. **Lớp mới** thêm một lớp vẽ.
-2. **Nhóm mới**. Khi đang chọn nhiều hàng, nút này gộp các hàng đó thành nhóm.
-3. **Lớp vùng chọn mới** (xem [Lớp vùng chọn](/vi/docs/selections/selection-layers/)).
-4. **Thêm mặt nạ**.
-5. **Thêm bộ lọc** gắn một bộ lọc vào lớp hiện tại.
-6. **Nhập ảnh thành lớp…**
-7. **Xóa các lớp đã chọn**.
-8. **Thao tác lớp** mở trình đơn lớp của lớp hiện tại.
+2. **Lớp vector mới** thêm một [lớp vector](/vi/docs/layers/vector/).
+3. **Nhóm mới**. Khi đang chọn nhiều hàng, nút này gộp các hàng đó thành nhóm.
+4. **Lớp vùng chọn mới** (xem [Lớp vùng chọn](/vi/docs/selections/selection-layers/)).
+5. **Thêm mặt nạ**.
+6. **Thêm bộ lọc** gắn một bộ lọc vào lớp hiện tại.
+7. **Nhập ảnh thành lớp…**
+8. **Xóa các lớp đã chọn**.
+9. **Thao tác lớp** mở trình đơn lớp của lớp hiện tại.
 
 Nút không dùng được khi thao tác của nút không áp dụng cho lớp hiện tại, ví dụ
 **Thêm mặt nạ** trên lớp đã khóa (xem
-[Làm việc với lớp](/vi/docs/layers/working/)).
+[Làm việc với lớp](/vi/docs/layers/working/)). Trong bảng hẹp, các nút không vừa sẽ
+chuyển lên đầu trình đơn **Thao tác lớp**, bắt đầu từ **Lớp vùng chọn mới**.
 
 ## Vuốt và giữ
 
 Bằng bút hoặc ngón tay:
 
-- Vuốt một hàng sang trái để hiện **Xóa** ở đầu bên phải của hàng. Chọn **Xóa** để xóa lớp, hoặc vuốt sang phải để ẩn nút.
+- Vuốt một hàng sang trái để hiện **Khóa**, **Nhân bản** và **Xóa** ở đầu bên phải của hàng. **Khóa** đổi thành **Mở khóa** trên lớp đã khóa. Chọn một nút để áp dụng cho lớp, hoặc vuốt sang phải để ẩn các nút.
 - Vuốt lớp vẽ sang phải để bật hoặc tắt **Khóa alpha**.
 - Vuốt nhóm sang phải để bật hoặc tắt **Xuyên qua**.
 - Giữ một hàng để mở trình đơn lớp của hàng đó. Di chuyển mà không nhấc lên để kéo hàng.
 
-![Một hàng được vuốt sang trái, với Xóa ở đầu bên phải.](shot:layers/panel-swipe-delete)
+![Một hàng được vuốt sang trái, hiện Khóa, Nhân bản và Xóa.](shot:layers/panel-swipe-delete)
 
-Vuốt ngắn không thay đổi gì. Thao tác vuốt không có tác dụng với chuột, trên tay cầm
-hay trên lớp đã khóa.
+Vuốt ngắn không thay đổi gì. Thao tác vuốt không có tác dụng với chuột hoặc trên tay
+cầm. Lớp đã khóa chỉ vuốt được sang trái.
 
 ## Trình đơn lớp
 
@@ -117,7 +119,7 @@ Thực hiện một trong các cách sau:
 
 | Mục | Nội dung |
 | --- | --- |
-| **Mới** | **Lớp mới**, **Lớp cắt mới**, **Nhóm mới**, **Tô màu đồng nhất**, **Tô chuyển màu**, **Lớp làm sáng và làm tối mới**, **Sao chép vùng chọn sang lớp mới**, **Cắt vùng chọn sang lớp mới** |
+| **Mới** | **Lớp mới**, **Lớp cắt mới**, **Nhóm mới**, **Lớp vector mới**, **Tô màu đồng nhất**, **Tô chuyển màu**, **Lớp làm sáng và làm tối mới**, **Sao chép vùng chọn sang lớp mới**, **Cắt vùng chọn sang lớp mới** |
 | **Thêm bộ lọc** | Các bộ lọc để gắn vào lớp, xếp theo danh mục |
 | **Sắp xếp** | **Đổi tên lớp…**, **Nhân bản**, **Nhóm các lớp đã chọn**, và **Bỏ nhóm** với nhóm |
 | **Chế độ hòa trộn** | Mọi [chế độ hòa trộn](/vi/docs/layers/blend-modes/) |
@@ -128,7 +130,8 @@ Thực hiện một trong các cách sau:
 | **Hiển thị** | **Hiện lớp**, **Hiện lớp và các nhóm cha**, **Chỉ hiện các lớp đã chọn**, **Hiện mọi lớp** |
 | **Di chuyển lớp / mặt nạ** | Chọn công cụ [Thao tác](/vi/docs/transform/move-transform/) |
 | **Gộp xuống**, **Gộp lớp hiển thị**, **Tạo lớp gộp hiển thị**, **Gộp phẳng ảnh** | Xem [Gộp lớp](/vi/docs/layers/merging/) |
-| **Xóa toàn bộ lớp**, **Xóa lớp** | **Xóa toàn bộ lớp** chỉ có trên lớp vẽ |
+| **Chuyển thành lớp đối tượng**, **Chuyển lớp thành ảnh điểm** | **Chuyển thành lớp đối tượng** có trên lớp vẽ, còn **Chuyển lớp thành ảnh điểm** có trên lớp Đối tượng và [lớp vector](/vi/docs/layers/vector/) |
+| **Xóa toàn bộ lớp**, **Xóa lớp** | **Xóa toàn bộ lớp** chỉ có trên lớp vẽ. Trên lớp vector, chạy lệnh này từ [tìm lệnh](/vi/docs/start/command-search/) để xóa mọi đường |
 
 Mở trình đơn của một hàng sẽ biến lớp đó thành lớp hiện tại. Trình đơn của nhóm bắt
 đầu bằng **Lớp vùng chọn mới trong nhóm…** và **Lưu vùng chọn hiện tại trong nhóm…**.

@@ -1,7 +1,7 @@
 ---
 title: "Katmanlar paneli"
 description: "Katman menüsü dâhil, Katmanlar panelinin her bölümünün gösterdikleri ve yaptıkları."
-related: ["layers/working", "layers/settings", "layers/types", "layers/masks"]
+related: ["layers/working", "layers/settings", "layers/types", "layers/vector", "layers/masks"]
 ---
 
 **Katmanlar** paneli çizimin katmanlarını listeler. En öndeki katman en üsttedir.
@@ -18,7 +18,7 @@ Aşağıdakilerden birini yapın:
 - Eskiz alanında başlık çubuğunda **Katmanlar** seçin. Ortak çekmece Katmanlar görünümünde açılır; Özelliklere geçmek için katmanın Özellikler düğmesini seçin.
 - [Komut aramasına](/tr/docs/start/command-search/) “Katmanlar paneli” yazın.
 
-Fotoğraf'ta panel sağ sütunda açıktır.
+Fotoğraf'ta panel sağ sütunda açıktır. Eskiz'de başlık çubuğundaki **Katmanlar** düğmesini tuvale sürükleyerek paneli orada baloncuk olarak tutabilirsiniz ([Araç baloncukları](/tr/docs/customize/bubbles/)).
 
 ## Başlık
 
@@ -55,7 +55,7 @@ Bir satırı seçtiğinizde o satır etkin katman ve tek seçili satır olur.
 
 Kâğıdın ayrı renk ve doku küçük resimleri vardır. Kâğıt yoksa son satırdan sonra **Kâğıt ekle** görünür.
 
-![Eskiz çekmecesinin Katmanlardan Özelliklere geçişi.](shot:layers/sketch-properties-drawer)
+![Eskiz çekmecesinde Kâğıt'ın Özellikleri; en altta Tüm katmanlar.](shot:layers/sketch-properties-drawer)
 
 Bir boya katmanının opaklığını seçim olarak yüklemek için **Ctrl** tuşunu basılı
 tutarak küçük resmine tıklayın. Maskeyi yüklemek için aynı şekilde maske küçük
@@ -73,33 +73,36 @@ seçimle kesiştirmek için **Shift+Alt** tuşlarını da basılı tutun.
 
 ## Alt düğmeler
 
-![Katmanlar panelinin altındaki düğmeler.](shot:layers/panel-footer "1 Yeni katman · 2 Yeni grup · 3 Yeni seçim katmanı · 4 Maske ekle · 5 Filtre ekle · 6 Görüntüyü katman olarak içe aktar… · 7 Seçili katmanları sil · 8 Katman eylemleri")
+![Katmanlar panelinin altındaki düğmeler.](shot:layers/panel-footer "1 Yeni katman · 2 Yeni vektör katmanı · 3 Yeni grup · 4 Yeni seçim katmanı · 5 Maske ekle · 6 Filtre ekle · 7 Görüntüyü katman olarak içe aktar… · 8 Seçili katmanları sil · 9 Katman eylemleri")
 
 1. **Yeni katman** bir boya katmanı ekler.
-2. **Yeni grup**. Birden çok satır seçiliyse bu satırları gruplar.
-3. **Yeni seçim katmanı** (bkz. [Seçim katmanları](/tr/docs/selections/selection-layers/)).
-4. **Maske ekle**.
-5. **Filtre ekle** etkin katmana bir filtre iliştirir.
-6. **Görüntüyü katman olarak içe aktar…**
-7. **Seçili katmanları sil**.
-8. **Katman eylemleri** etkin katmanın katman menüsünü açar.
+2. **Yeni vektör katmanı** bir [vektör katmanı](/tr/docs/layers/vector/) ekler.
+3. **Yeni grup**. Birden çok satır seçiliyse bu satırları gruplar.
+4. **Yeni seçim katmanı** (bkz. [Seçim katmanları](/tr/docs/selections/selection-layers/)).
+5. **Maske ekle**.
+6. **Filtre ekle** etkin katmana bir filtre iliştirir.
+7. **Görüntüyü katman olarak içe aktar…**
+8. **Seçili katmanları sil**.
+9. **Katman eylemleri** etkin katmanın katman menüsünü açar.
 
 Eylemi etkin katmana uygulanmayan bir düğme kullanılamaz, örneğin kilitli bir
 katmanda **Maske ekle** (bkz. [Katmanlarla çalışma](/tr/docs/layers/working/)).
+Dar bir panelde sığmayan düğmeler **Katman eylemleri** menüsünün en üstüne
+taşınır; ilk taşınan **Yeni seçim katmanı** olur.
 
 ## Kaydırma ve basılı tutma
 
 Kalemle veya parmakla:
 
-- Bir satırın sağ ucunda **Sil** düğmesini göstermek için satırı sola kaydırın. Katmanı silmek için **Sil** düğmesini seçin. Düğmeyi gizlemek için satırı sağa kaydırın.
+- Bir satırın sağ ucunda **Kilitle**, **Çoğalt** ve **Sil** düğmelerini göstermek için satırı sola kaydırın. Kilitli katmanda **Kilitle** düğmesi **Kilidi aç** olur. Düğmeyi katmana uygulamak için düğmeyi seçin ya da düğmeleri gizlemek için satırı sağa kaydırın.
 - Bir boya katmanında **Alfa kilidi** ayarını açmak veya kapatmak için satırı sağa kaydırın.
 - Bir grupta **Geçiş** ayarını açmak veya kapatmak için satırı sağa kaydırın.
 - Katman menüsünü açmak için bir satırı basılı tutun. Satırı sürüklemek için kaldırmadan hareket ettirin.
 
-![Sola kaydırılmış, sağ ucunda Sil düğmesi görünen bir satır.](shot:layers/panel-swipe-delete)
+![Sola kaydırılmış, Kilitle, Çoğalt ve Sil düğmelerini gösteren bir satır.](shot:layers/panel-swipe-delete)
 
-Kısa bir kaydırma hiçbir şeyi değiştirmez. Kaydırma fareyle, tutamaçta veya
-kilitli katmanlarda çalışmaz.
+Kısa bir kaydırma hiçbir şeyi değiştirmez. Kaydırma fareyle veya tutamaçta
+çalışmaz. Kilitli bir katman yalnızca sola kaydırılır.
 
 ## Katman menüsü
 
@@ -116,7 +119,7 @@ Aşağıdakilerden birini yapın:
 
 | Öğe | İçerik |
 | --- | --- |
-| **Yeni** | **Yeni katman**, **Yeni kırpma katmanı**, **Yeni grup**, **Düz renk dolgusu**, **Gradyan dolgusu**, **Yeni açıklaştırma ve koyulaştırma katmanı**, **Seçimi yeni katmana kopyala**, **Seçimi kesip yeni katmana taşı** |
+| **Yeni** | **Yeni katman**, **Yeni kırpma katmanı**, **Yeni grup**, **Yeni vektör katmanı**, **Düz renk dolgusu**, **Gradyan dolgusu**, **Yeni açıklaştırma ve koyulaştırma katmanı**, **Seçimi yeni katmana kopyala**, **Seçimi kesip yeni katmana taşı** |
 | **Filtre ekle** | Katmana iliştirilecek filtreler, kategoriye göre |
 | **Düzenle** | **Katmanı yeniden adlandır…**, **Çoğalt**, **Seçili katmanları grupla** ve bir grup için **Grubu çöz** |
 | **Karıştırma modu** | Tüm [karıştırma modları](/tr/docs/layers/blend-modes/) |
@@ -127,7 +130,8 @@ Aşağıdakilerden birini yapın:
 | **Görünürlük** | **Katmanı göster**, **Katmanı ve üst gruplarını göster**, **Seçili katmanları yalıt**, **Tüm katmanları göster** |
 | **Katmanı / maskeyi taşı** | [İşlem](/tr/docs/transform/move-transform/) aracını seçer |
 | **Alttakiyle birleştir**, **Görünenleri birleştir**, **Görünenlerden yeni katman oluştur**, **Görüntüyü düzleştir** | Bkz. [Katmanları birleştirme](/tr/docs/layers/merging/) |
-| **Katmanın tamamını temizle**, **Katmanı sil** | **Katmanın tamamını temizle** yalnızca boya katmanlarında görünür |
+| **Nesne katmanına dönüştür**, **Katmanı pikselleştir** | **Nesne katmanına dönüştür** boya katmanlarında, **Katmanı pikselleştir** ise nesne katmanlarında ve [vektör katmanlarında](/tr/docs/layers/vector/) görünür |
+| **Katmanın tamamını temizle**, **Katmanı sil** | **Katmanın tamamını temizle** yalnızca boya katmanlarında görünür. Vektör katmanında her yolu kaldırmak için [komut aramadan](/tr/docs/start/command-search/) çalıştırın |
 
 Bir satırın menüsünü açmak o katmanı etkin katman yapar. Bir grubun menüsü
 **Grupta yeni seçim katmanı…** ve **Geçerli seçimi grupta kaydet…** ile başlar.

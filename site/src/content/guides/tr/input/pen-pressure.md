@@ -10,7 +10,7 @@ Kalem basıncını fırçalar kullanmadan önce ayarlayabilirsiniz.
 
 [Tercihleri](/tr/docs/preferences/) açın, **Kalem ve giriş** seçin ve **Kalem basıncı** yanındaki **Ayarla…** seçeneğini seçin.
 
-![Eğrisi ve canlı basınç işaretiyle Kalem basıncı iletişim kutusu.](shot:pen/pressure-calibration)
+![Eğrisi, Daha sert ve Daha hafif, Sıfırla, İptal ve Uygula ile Kalem basıncı iletişim kutusu.](shot:pen/pressure-calibration)
 
 ## Basınç eğrisi
 

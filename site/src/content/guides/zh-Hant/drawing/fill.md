@@ -1,7 +1,7 @@
 ---
 title: "填色工具"
 description: "用目前色彩填色圖層的區域、徒手形狀和封閉區域。"
-related: ["drawing/gradient", "layers/settings", "selections/working", "drawing/brush-tools"]
+related: ["drawing/gradient", "layers/vector", "layers/settings", "selections/working", "drawing/brush-tools"]
 ---
 
 可以使用**填色**、**套索填色**和**圍住填色**，以目前色彩填色所選圖層的區域性。每次填色是一個復原步驟，並遵循**鎖定透明度**設定。
@@ -57,6 +57,10 @@ related: ["drawing/gradient", "layers/settings", "selections/working", "drawing/
 每個工具各自保留來源設定。填色的初始來源為**可見畫作**；每次開啟 {appName} 時，圍住填色都會恢復為**參考圖層**。
 
 如果填色使用**參考圖層**而沒有任何圖層被標記，填色不會畫上顏料，並會顯示提示，提供標記下方圖層的選項。
+
+## 向量圖層
+
+在向量圖層上，**填色**會為你按一下的封閉路徑上色。按一下其他位置，或使用**參考圖層**來源時，會在向量圖層下方新增一個繪畫圖層並在那裡填色。**套索填色**會新增一條填色的路徑，**漸層**和**圍住填色**則提供**在下方新增繪畫圖層**。參見[向量圖層](/zh-Hant/docs/layers/vector/)。
 
 ## 填色設定
 

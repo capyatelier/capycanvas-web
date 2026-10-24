@@ -19,7 +19,8 @@ Haz una de las siguientes acciones:
 - Pulsa **S**. Vuelve a pulsarla para cambiar a **Pincel corrector** y después a **Pincel corrector puntual**.
 - En Foto, selecciona **Tampón de clonar** o **Pincel corrector puntual / Pincel corrector** en la barra de herramientas.
 - En Pintura, selecciona **Mezclar / Tampón de clonar** en la barra de herramientas. Haz clic con el botón derecho en el botón, o mantenlo pulsado, para elegir **Tampón de clonar**.
-- En Boceto, selecciona **Esculpir** en la barra de título, vuelve a seleccionarlo para abrir el cajón y selecciona **Clonar**, **Corregir** o **Corrección puntual**.
+- En Boceto, selecciona **Esculpir** en la barra de título, vuelve a seleccionarlo para abrir el cajón, elige el conjunto **Retoque** y elige una herramienta.
+- Con una herramienta de retoque activa, elige una herramienta del conjunto **Retoque** en **Conjunto de herramientas**.
 - Escribe el nombre de la herramienta en la [búsqueda de comandos](/es/docs/start/command-search/).
 
 **Pincel corrector** y **Pincel corrector puntual** no tienen botón en Pintura.

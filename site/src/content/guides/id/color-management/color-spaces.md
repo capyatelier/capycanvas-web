@@ -1,11 +1,11 @@
 ---
 title: "Ruang warna, kedalaman bit, dan pembauran"
-description: "Memilih ruang warna, kedalaman bit, dan Pembauran gambar, serta mengubahnya nanti dari menu Edit."
+description: "Memilih ruang warna, kedalaman bit, dan Pembauran gambar, serta mengubahnya nanti dari menu Gambar."
 related: ["files/new", "color-management/proof", "color-management/hdr", "files/export", "preferences"]
 ---
 
 Anda dapat memilih ruang warna, kedalaman bit, dan Pembauran gambar saat membuatnya, dan
-mengubahnya nanti dari menu **Edit**.
+mengubahnya nanti dari menu **Gambar**.
 
 ## Ruang warna
 
@@ -26,41 +26,31 @@ disimpan sebagai RGB linear dengan 1.0 sebagai putih SDR pada 203 cd/m².
 ## Memilihnya untuk gambar baru
 
 Pilih **Berkas > Baru…** (**Ctrl+N**) lalu atur **Ruang warna**, **Kedalaman bit**,
-dan **Pembauran**, atau pilih **Prasetel**:
+dan **Pembauran** di bawah **Warna**. Sebuah prasetel dari **Prasetel** mengatur
+semuanya bersama lembar dan Kertas. Dialog ini mengingat pilihan gambar terakhir
+yang Anda buat.
 
-| Prasetel | Ruang warna | Kedalaman bit | Pembauran |
-| --- | --- | --- | --- |
-| **Gambar standar** | sRGB | SDR 8-bit | Perseptual |
-| **Warna luas** | Display P3 | SDR 8-bit | Perseptual |
-| **Pengeditan foto** | ProPhoto RGB | SDR 16-bit | Perseptual |
-| **Gambar HDR** | sRGB | HDR pecahan mengambang 16-bit | Cahaya linear |
+Pada kedalaman pecahan mengambang, **Pembauran** tetap pada Cahaya linear.
 
-Pada kedalaman pecahan mengambang, **Pembauran** tetap pada Cahaya linear. Aktifkan
-**Gunakan pengaturan ini untuk gambar baru** agar pilihan ini, termasuk Pembauran,
-menjadi bawaan untuk gambar baru.
-
-![Dialog Gambar baru dengan Ruang warna disetel ke Display P3, Kedalaman bit, Pembauran, dan baris ringkasan.](shot:color-management/new-dialog-color)
+![Dialog Gambar baru dengan Ruang warna disetel ke Display P3, Kedalaman bit, dan Pembauran di bawah Warna.](shot:color-management/new-dialog-color)
 
 ## Bawaan di Preferensi
 
 Pilih **Edit > Preferensi** lalu buka halaman **Warna**:
 
-- Di bawah **Gambar baru**, atur **Ruang warna**, **Kedalaman bit**, dan **Latar belakang** untuk gambar berikutnya. Gambar yang terbuka tidak berubah.
 - Di bawah **Membuka foto**, atur **Presisi pengeditan** (**Kedalaman sumber** atau **16-bit**) dan **RGB dan skala abu-abu tanpa profil** (**Anggap sRGB** atau **Tanyakan**). Dengan **Tanyakan**, membuka foto tanpa profil menampilkan **Pilih interpretasi gambar**. Foto yang memiliki profil mempertahankan profil tertanamnya.
 - Pilih **Kelola Profil…** untuk membuka [Pustaka Profil Warna](/id/docs/color-management/proof/).
 
-Preferensi tidak memiliki pengaturan Pembauran.
-
 ## Tetapkan Profil
 
-Pilih **Edit > Tetapkan Profil…** untuk mempertahankan angka RGB gambar dan membacanya
+Pilih **Gambar > Manajemen warna > Tetapkan Profil…** untuk mempertahankan angka RGB gambar dan membacanya
 dalam ruang kerja lain. Pilih ruang di bawah **Ruang warna**, tempat Adobe RGB (1998)
 tercantum sebagai **Adobe RGB**. lapisan Objek mempertahankan profil sumber dari
 [foto aslinya](/id/docs/layers/types/).
 
 ## Konversi Ruang Warna
 
-Pilih **Edit > Konversi Ruang Warna…** untuk mengubah angka RGB sehingga warna tetap
+Pilih **Gambar > Manajemen warna > Konversi Ruang Warna…** untuk mengubah angka RGB sehingga warna tetap
 terlihat sama dalam ruang kerja lain, di dalam batas gamutnya.
 
 Dengan **Simpan salinan yang diratakan**, **Terapkan** menjadi **Simpan Salinan…**.
@@ -86,7 +76,7 @@ berkas `.capy` baru dan membiarkan gambar yang terbuka tidak berubah.
 
 ## Ubah Kedalaman Bit
 
-Pilih **Edit > Ubah Kedalaman Bit…** untuk mengubah presisi penyimpanan. Ruang warna
+Pilih **Gambar > Manajemen warna > Ubah Kedalaman Bit…** untuk mengubah presisi penyimpanan. Ruang warna
 tidak berubah.
 
 Mengubah ke kedalaman pecahan mengambang menjadikan gambar HDR dan sekaligus mengatur
@@ -125,10 +115,10 @@ perubahan tanpa masukan lain dan hanya menyediakan **Batal**.
 Anda dapat menggabungkan lapisan berdasarkan nilai terenkode gambar atau dalam cahaya
 linear. Lakukan salah satu langkah berikut:
 
-- Pilih **Edit > Pembauran > Pembauran Perseptual** atau **Edit > Pembauran > Pembauran Cahaya Linear**.
+- Pilih **Gambar > Pembauran > Pembauran Perseptual** atau **Gambar > Pembauran > Pembauran Cahaya Linear**.
 - Atur **Pembauran** ke **Perseptual** atau **Cahaya linear** di dialog Gambar baru.
 
-![Menu Edit dengan submenu Pembauran terbuka dan Pembauran Perseptual dicentang.](shot:color-management/edit-blending-menu)
+![Submenu Pembauran dengan Pembauran Perseptual dicentang.](shot:color-management/edit-blending-menu)
 
 Piksel yang sudah dilukis mempertahankan nilainya. Pembauran mengubah:
 

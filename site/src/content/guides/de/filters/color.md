@@ -8,7 +8,7 @@ Die Farbfilter stehen unter **Filter > Farbe** und in der Kategorie **Farbe**
 des Bedienfelds **Filter**. Ihre Einstellungen ändern Sie im Bedienfeld
 **Eigenschaften**.
 
-![Das Bedienfeld Filter mit der Kategorie Farbe und einer Vorschau jedes Filters.](shot:filters/color-list)
+![Die Kategorie Farbe im Bedienfeld Filter, von Farbton / Sättigung bis Verlaufsumsetzung, jeweils mit einer Strichvorschau.](shot:filters/color-list)
 
 ## Farbton / Sättigung
 

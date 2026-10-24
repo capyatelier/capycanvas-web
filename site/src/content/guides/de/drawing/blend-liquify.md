@@ -14,13 +14,20 @@ Führen Sie eine der folgenden Aktionen aus:
 - Drücken Sie **J**.
 - Wählen Sie im Arbeitsbereich Malen **Mischen** in der Werkzeugleiste Werkzeuge aus. Dieselbe Schaltfläche enthält **Klonstempel**.
 - Wählen Sie im Arbeitsbereich Foto **Mischen** in der Werkzeugleiste Werkzeuge aus.
-- Wählen Sie im Arbeitsbereich Skizze **Mischen** in der Schublade **Formen**.
+- Wählen Sie im Arbeitsbereich Skizze einen Mischpinsel in der Schublade **Formen**.
 - Suchen Sie in der Befehlssuche nach **Mischen**.
 
-Mischen hat zwei Vorgaben, **Natürlicher Mischpinsel** und **Wischfinger**. Beide
-beginnen mit **Farbauftrag** auf 0% und tragen keine eigene Farbe. **Farbaufnahme**
-legt fest, wie weit sie Farbe entlang des Strichs mitziehen
-([Mischen, Farbausbreitung und Borsten](/de/docs/brushes/wet-media/)).
+Wählen Sie in **Werkzeugsatz** einen Satz und einen Mischpinsel. **Wischfinger** ist
+der Standard-Mischpinsel.
+
+| Satz | Mischpinsel |
+| --- | --- |
+| **Mischen** | **Wischfinger**, **Weicher Mischpinsel**, **Weichzeichner**, **Papierwischer**, **Papiertuch**, **Körniger Mischpinsel**, **Struktur-erhaltender Mischpinsel**, **Farbton-Mischpinsel** |
+| **Nasse Farbe** | **Natürlicher Mischpinsel**, **Nasser Mischpinsel**, **Farbmischer**, **Mischmesser**, **Borsten-Mischpinsel** |
+| **Effekte** | **Malerischer Mischpinsel**, **Kamm-Mischpinsel**, **Streu-Mischpinsel**, **Scharfzeichner**, **Marmorieren**, **Kristall-Mischpinsel**, **Dither-Mischpinsel** |
+
+Die Einstellungen jedes Mischpinsels stehen unter
+[Mischen, Farbausbreitung und Borsten](/de/docs/brushes/wet-media/).
 
 ## Verflüssigen
 
@@ -28,7 +35,7 @@ Führen Sie eine der folgenden Aktionen aus:
 
 - Drücken Sie **J**, während Mischen aktiv ist.
 - Wählen Sie in den Arbeitsbereichen Malen oder Foto **Verflüssigen** in der Werkzeugleiste Werkzeuge aus. Klicken Sie mit der rechten Maustaste auf die Schaltfläche oder halten Sie sie gedrückt, um einen Modus zu wählen.
-- Wählen Sie im Arbeitsbereich Skizze **Verflüssigen** in der Schublade **Formen**.
+- Wählen Sie im Arbeitsbereich Skizze einen Modus im Satz **Verflüssigen** der Schublade **Formen**.
 - Suchen Sie in der Befehlssuche nach **Verflüssigen**.
 
 Jeder Modus ist eine Vorgabe in **Werkzeugsatz**:
@@ -41,12 +48,38 @@ Jeder Modus ist eine Vorgabe in **Werkzeugsatz**:
 | **Verflüssigen: Zusammenziehen** | Zieht Pixel zur Pinselmitte hin. |
 | **Verflüssigen: Aufblasen** | Drückt Pixel von der Pinselmitte nach außen. |
 | **Verflüssigen: Kristalle** | Zerlegt das Bild unter dem Pinsel in kleine, verstreute Zellen. |
+| **Kante** | Zieht Pixel von beiden Seiten zur Strichlinie hin. |
+| **Wiederherstellen** | Nimmt die Verformung durch Verflüssigen unter dem Pinsel zurück. |
+
+Verflüssigen hat keine Schaltfläche „Anwenden“. Jeder Strich verändert die Ebene und
+ist ein eigener Schritt zum Rückgängigmachen. Striche verformen weiter die Pixel, die
+die Ebene vor dem ersten Strich hatte, bis Sie auf der Ebene malen, füllen, filtern,
+transformieren oder in sie einfügen.
+
+## Verflüssigen anpassen und Verflüssigen zurücksetzen
+
+Mit **Verflüssigen anpassen** können Sie alles abschwächen, was Verflüssigen an einer
+Ebene bewirkt hat, oder mit **Verflüssigen zurücksetzen** die Ebene auf ihre Pixel
+vor dem ersten Strich zurückführen.
+
+Führen Sie eine der folgenden Aktionen aus:
+
+- Aktivieren Sie im Bedienfeld **Werkzeug** **Verflüssigen anpassen** oder wählen Sie **Verflüssigen zurücksetzen**.
+- Suchen Sie in der Befehlssuche nach **Verflüssigen anpassen** oder **Verflüssigen zurücksetzen**.
+
+Wenn **Verflüssigen anpassen** aktiviert ist, erscheint im Bedienfeld **Werkzeug** ein
+Regler **Stärke**. Bei 100% bleibt die Verformung, wie sie ist, bei 0% ist sie
+verschwunden. Das Loslassen des Reglers ist ein Schritt zum Rückgängigmachen, ebenso
+**Verflüssigen zurücksetzen**.
+
+Beide Befehle sind nicht verfügbar und zeigen die Meldung „Wende zuerst Verflüssigen
+auf diese Ebene an“, bis die Ebene Änderungen durch Verflüssigen hat.
 
 ## Einstellungen für Verflüssigen
 
-![Das Bedienfeld Werkzeug für Verflüssigen: Kristalle mit der Gruppe Verflüssigen, die Stärke und Verzerrung zeigt.](shot:drawing/liquify-settings)
+![Das Bedienfeld Werkzeug für Verflüssigen: Kristalle mit Stärke, der Gruppe Verflüssigen mit Verzerrung und Trägheit sowie Verflüssigen anpassen und Verflüssigen zurücksetzen.](shot:drawing/liquify-settings)
 
-**Stärke**, **Verzerrung** und **Trägheit** befinden sich in der Gruppe **Verflüssigen** des Bedienfelds **Werkzeug**. **Stärke** legt fest, wie stark der Strich Pixel bewegt.
+**Verzerrung** und **Trägheit** befinden sich in der Gruppe **Verflüssigen** des Bedienfelds **Werkzeug**.
 
 ### Stärke
 
@@ -55,30 +88,24 @@ und zum Rand einer weichen Spitze hin ist die Wirkung schwächer.
 
 ### Verzerrung
 
-Legt fest, wie weit **Verflüssigen: Kristalle** die Pixel verstreut. Kein anderer Modus
-hat diese Einstellung.
+Macht die Bewegung unregelmäßig. Bei **Verflüssigen: Kristalle** legt sie fest, wie
+weit die Zellen verstreut werden. **Wiederherstellen** hat keine **Verzerrung**.
 
 ### Trägheit
 
-Lässt **Verflüssigen: Verschieben** Pixel weiter tragen, als sich der Stift bewegt.
-Erscheint nur bei diesem Modus.
+Trägt die Wirkung nach dem Abheben des Stifts entlang der letzten Strichrichtung
+weiter. **Wiederherstellen** hat keine **Trägheit**.
 
 ## Schublade Formen im Arbeitsbereich Skizze
 
-Im Arbeitsbereich Skizze enthält **Formen** in der Titelleiste Mischen, Verflüssigen und die
-Retuschierwerkzeuge.
+Wählen Sie im Arbeitsbereich Skizze **Formen** in der Titelleiste, um das zuletzt
+verwendete Mischen-, Verflüssigen- oder Retusche-Werkzeug zu nutzen, wählen Sie es
+erneut, um die Schublade zu öffnen, und ein weiteres Mal, um sie zu schließen. Die
+Schublade listet die Sätze, die Werkzeuge des gewählten Satzes und ihre
+Einstellungen. **Formen** und **Pinsel** merken sich jeweils ihre eigene letzte
+Vorgabe und Pinselgröße.
 
-- Wählen Sie **Formen** aus, um die zuletzt verwendete Formen-Vorgabe zu nutzen. Beim ersten Mal ist das **Natürlicher Mischpinsel**.
-- Wählen Sie **Formen** erneut aus, um die Schublade zu öffnen, und ein weiteres Mal, um sie zu schließen.
-
-Die Schublade hat drei Spalten. **Formen** listet **Mischen**, **Verflüssigen**,
-**Klonen**, **Reparieren** und **Bereichsreparatur**. **Werkzeuge** listet die
-Vorgaben der gewählten Gruppe, und **Werkzeug** enthält ihre Einstellungen.
-
-**Formen** und **Pinsel** merken sich jeweils ihre eigene letzte Vorgabe und
-Pinselgröße.
-
-![Die Schublade Formen im Arbeitsbereich Skizze mit Verflüssigen unter Formen und den sechs Verflüssigen-Vorgaben unter Werkzeuge.](shot:drawing/sketch-sculpt-drawer)
+![Die Schublade Formen im Arbeitsbereich Skizze mit den Sätzen Mischen, Nasse Farbe, Effekte, Verflüssigen und Retusche links, den Mischpinseln des Satzes Mischen in der Mitte und den Einstellungen von Wischfinger rechts.](shot:drawing/sketch-sculpt-drawer)
 
 ## Auf einer Maske malen
 

@@ -1,7 +1,7 @@
 ---
 title: "Bilah alat dan bilah judul"
 description: "Membuat dan mengedit bilah alat, serta menyesuaikan bilah judul."
-related: ["customize/panels", "customize/workspaces", "customize/zen", "start/command-search"]
+related: ["customize/panels", "customize/workspaces", "customize/zen", "customize/bubbles", "start/command-search"]
 ---
 
 Setiap ruang kerja menyimpan bilah alat dan bilah judulnya sendiri.
@@ -14,7 +14,10 @@ Untuk membuka menu bilah alat, klik kanan latar belakang bilah alat atau peganga
 atau tahan dengan jari atau pena. Klik kanan atau tahan sebuah alat untuk membuka menu
 alat itu.
 
-![Menu bilah alat dengan ukuran ubin.](shot:toolbars/toolbar-menu)
+**Tampilkan di Mode Zen** di menu bilah alat mempertahankan bilah alat di layar dalam
+[Mode Zen](/id/docs/customize/zen/) di aplikasi Linux.
+
+![Menu bilah alat dengan ukuran ubin dan item Tampilkan di Mode Zen.](shot:toolbars/toolbar-menu)
 
 ## Menampilkan dan menyembunyikan bilah alat
 
@@ -54,6 +57,7 @@ Setiap bilah alat harus memiliki nama yang berbeda.
 - Untuk menambahkan alat sebelum sebuah alat, pilih **Sisipkan Alat…** dari menu alat tersebut.
 - Untuk menghapus alat, pilih **Hapus Alat** dari menunya.
 - Untuk memindahkan alat, tahan alat itu, lalu seret di dalam bilah alat atau ke bilah alat lain.
+- Untuk menyimpan alat di kanvas, seret alat itu keluar dari bilah alat untuk mengambil [gelembung](/id/docs/customize/bubbles/).
 
 Selain perintah dan alat, daftar **Tambah Alat** berisi kuas, ukuran kuas,
 **Pemilih Warna**, **Penggeser ukuran kuas**, **Penggeser kekuatan**,

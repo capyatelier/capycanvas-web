@@ -20,7 +20,8 @@ Esegui una delle seguenti operazioni:
 - Premi **S**. Premilo di nuovo per passare a **Pennello correttivo**, poi a **Pennello correttivo al volo**.
 - In Foto, seleziona **Timbro clone** o **Pennello correttivo al volo / Pennello correttivo** nella barra strumenti Strumenti.
 - In Pittura, seleziona **Sfuma / Timbro clone** nella barra strumenti Strumenti. Fai clic con il pulsante destro sul pulsante o tienilo premuto per scegliere **Timbro clone**.
-- In Schizzo, seleziona **Modella** nella barra del titolo, selezionalo di nuovo per aprire il cassetto e seleziona **Clona**, **Correggi** o **Correggi al volo**.
+- In Schizzo, seleziona **Modella** nella barra del titolo, selezionalo di nuovo per aprire il cassetto, scegli il set **Ritocco** e scegli uno strumento.
+- Mentre uno strumento di ritocco è attivo, scegli uno strumento nel set **Ritocco** in **Set di strumenti**.
 - Digita il nome dello strumento nella [ricerca comandi](/it/docs/start/command-search/).
 
 **Pennello correttivo** e **Pennello correttivo al volo** non hanno un pulsante

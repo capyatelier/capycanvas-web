@@ -6,7 +6,7 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 
 Anda dapat memangkas kanvas sesuai bingkai dengan alat **Pangkas**. Piksel yang
 terpangkas tetap ada di lapisannya, dalam keadaan tersembunyi, kecuali jika Anda
-mengaktifkan **Hapus Bagian Terpangkas**.
+mengaktifkan **Hapus Lukisan Terpangkas**.
 
 ## Memangkas
 
@@ -46,7 +46,7 @@ Pilih **Bebas**, **Asli**, **1:1**, **4:5**, **2:3**, **5:7**, atau **16:9** dar
 **Tukar orientasi pangkas**, tombol ikon di samping **Rasio**, mengubah bingkai
 antara lanskap dan potret.
 
-Rasio, hamparan, dan **Hapus Bagian Terpangkas** terbawa ke pemangkasan berikutnya.
+Rasio, hamparan, dan **Hapus Lukisan Terpangkas** terbawa ke pemangkasan berikutnya.
 
 ![Menu Rasio di bilah pangkas.](shot:transform/crop-ratio-menu)
 
@@ -78,14 +78,14 @@ Untuk meluruskan sesuai garis bantu, pilih garis bantu itu lalu pilih **Luruskan
 bilah kanvasnya (lihat [Penggaris dan garis bantu](/id/docs/drawing/ruler/)).
 Pemangkasan terbuka, diputar sejajar dengan garis bantu.
 
-## Hapus Bagian Terpangkas
+## Hapus Lukisan Terpangkas
 
-Aktifkan **Hapus Bagian Terpangkas** untuk membuang piksel di luar bingkai saat Anda
+Aktifkan **Hapus Lukisan Terpangkas** untuk membuang piksel di luar bingkai saat Anda
 menerapkan pemangkasan. Foto yang ditempatkan mempertahankan piksel aslinya.
 Nonaktif secara bawaan.
 
 Pemangkasan yang akan terlalu besar jika piksel tersembunyi dipertahankan hanya
-dapat dilakukan dengan **Hapus Bagian Terpangkas** aktif.
+dapat dilakukan dengan **Hapus Lukisan Terpangkas** aktif.
 
 ## Atur Ulang
 

@@ -20,7 +20,7 @@ O desenho tem uma camada de objeto com o nome do arquivo. No exemplo, a camada s
 
 Escolha **Imagem > Recortar**, selecione **Recortar** na barra Ferramentas ou pressione **C** ([Recortar](/pt-BR/docs/transform/crop/)). Uma moldura com alças aparece sobre a foto, com a barra de recorte na parte inferior da tela.
 
-Selecione **Proporção** na barra de recorte e escolha **4:5**. O quadro vira o
+Selecione o menu de proporção na extremidade esquerda da barra de recorte e escolha **4:5**. O quadro vira o
 maior quadro dessa proporção, centralizado na tela. A orientação dele acompanha
 a foto, então uma foto em paisagem recebe um quadro 5:4.
 
@@ -43,7 +43,7 @@ samambaia.
 
 Selecione **Aplicar** na barra de recorte ou pressione **Enter**. A tela fica
 com o tamanho do quadro: 2000 × 1600 pixels no exemplo. Os pixels recortados
-continuam na camada, ocultos, a menos que **Excluir área recortada** esteja
+continuam na camada, ocultos, a menos que **Excluir pintura recortada** esteja
 ativado na barra de recorte.
 
 Próxima etapa: [Retoque](/pt-BR/docs/photo/retouch/).

@@ -1,7 +1,7 @@
 ---
 title: "Annuler et rétablir"
 description: "Annuler et rétablir les modifications d’un dessin, et l’historique distinct des changements de disposition."
-related: ["start/command-search", "customize/workspaces", "input/touch"]
+related: ["start/command-search", "customize/bubbles", "customize/workspaces", "input/touch"]
 ---
 
 Vous pouvez annuler les modifications d’un dessin une étape à la fois, et rétablir
@@ -29,6 +29,10 @@ Effectuez l’une des opérations suivantes :
 
 Une nouvelle modification après une annulation supprime les étapes que vous
 pouviez rétablir.
+
+## Bulle d’annulation et de rétablissement
+
+Faites glisser **Annuler** ou **Rétablir** sur la toile pour garder les deux dans une seule [bulle](/fr/docs/customize/bubbles/). Touchez sa moitié gauche pour annuler et sa moitié droite pour rétablir.
 
 ## Ce qui compte comme une étape
 

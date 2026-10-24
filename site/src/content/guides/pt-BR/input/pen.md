@@ -26,6 +26,11 @@ As duas opções vêm ativadas por padrão, e **Quantidade de previsão** fica e
 Com **Ativar previsão de traços** desativado, as outras duas configurações ficam
 indisponíveis.
 
+Um traço de mouse não recebe previsão à frente da ponta, e o mesmo vale para um
+traço de uma mesa digitalizadora sem tela no Linux, no Windows e no Android. No
+editor web e no macOS, os traços dessas mesas são previstos conforme as
+configurações.
+
 | Sistema | Previsão do sistema |
 | --- | --- |
 | iPad | Disponível |

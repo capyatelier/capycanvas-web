@@ -1,7 +1,7 @@
 ---
 title: "Panneau Calques"
 description: "Ce que montre et fait chaque partie du panneau Calques, menu du calque compris."
-related: ["layers/working", "layers/settings", "layers/types", "layers/masks"]
+related: ["layers/working", "layers/settings", "layers/types", "layers/vector", "layers/masks"]
 ---
 
 Le panneau **Calques** liste les calques du dessin, le calque le plus en avant
@@ -18,7 +18,7 @@ Effectuez l’une des opérations suivantes :
 - Dans Croquis, sélectionnez **Calques** dans la barre de titre. Le tiroir partagé s’ouvre sur sa vue Calques ; sélectionnez le bouton Propriétés d’un calque pour passer aux Propriétés.
 - Tapez « Panneau Calques » dans la [recherche de commandes](/fr/docs/start/command-search/).
 
-Dans Photo, le panneau est ouvert dans la colonne de droite.
+Dans Photo, le panneau est ouvert dans la colonne de droite. Dans Croquis, vous pouvez faire glisser **Calques** de la barre de titre sur la toile pour le garder là sous forme de bulle ([Bulles d’outils](/fr/docs/customize/bubbles/)).
 
 ## En-tête
 
@@ -55,7 +55,7 @@ Sélectionnez une ligne pour en faire le calque actif et la seule ligne sélecti
 
 Le Papier possède des vignettes distinctes pour la couleur et la texture. Si le Papier est absent, **Ajouter du papier** apparaît après la dernière ligne.
 
-![Le tiroir de Croquis passant de Calques à Propriétés.](shot:layers/sketch-properties-drawer)
+![Le tiroir de Croquis affichant les Propriétés du Papier, avec Tous les calques en bas.](shot:layers/sketch-properties-drawer)
 
 Faites **Ctrl**+clic sur la miniature d’un calque de peinture pour charger son
 opacité comme sélection, ou sur la miniature du masque pour charger le masque.
@@ -73,34 +73,35 @@ ou **Maj+Alt** pour n’en garder que l’intersection.
 
 ## Boutons du bas
 
-![Les boutons en bas du panneau Calques.](shot:layers/panel-footer "1 Nouveau calque · 2 Nouveau groupe · 3 Nouveau calque de sélection · 4 Ajouter un masque · 5 Ajouter un filtre · 6 Importer une image comme calque… · 7 Supprimer les calques sélectionnés · 8 Actions du calque")
+![Les boutons en bas du panneau Calques.](shot:layers/panel-footer "1 Nouveau calque · 2 Nouveau calque vectoriel · 3 Nouveau groupe · 4 Nouveau calque de sélection · 5 Ajouter un masque · 6 Ajouter un filtre · 7 Importer une image comme calque… · 8 Supprimer les calques sélectionnés · 9 Actions du calque")
 
 1. **Nouveau calque** ajoute un calque de peinture.
-2. **Nouveau groupe**. Quand plusieurs lignes sont sélectionnées, il les regroupe.
-3. **Nouveau calque de sélection** (voir [Calques de sélection](/fr/docs/selections/selection-layers/)).
-4. **Ajouter un masque**.
-5. **Ajouter un filtre** rattache un filtre au calque actif.
-6. **Importer une image comme calque…**
-7. **Supprimer les calques sélectionnés**.
-8. **Actions du calque** ouvre le menu du calque actif.
+2. **Nouveau calque vectoriel** ajoute un [calque vectoriel](/fr/docs/layers/vector/).
+3. **Nouveau groupe**. Quand plusieurs lignes sont sélectionnées, il les regroupe.
+4. **Nouveau calque de sélection** (voir [Calques de sélection](/fr/docs/selections/selection-layers/)).
+5. **Ajouter un masque**.
+6. **Ajouter un filtre** rattache un filtre au calque actif.
+7. **Importer une image comme calque…**
+8. **Supprimer les calques sélectionnés**.
+9. **Actions du calque** ouvre le menu du calque actif.
 
 Un bouton est indisponible quand son action ne s’applique pas au calque actif,
 par exemple **Ajouter un masque** sur un calque verrouillé (voir
-[Travailler avec les calques](/fr/docs/layers/working/)).
+[Travailler avec les calques](/fr/docs/layers/working/)). Dans un panneau étroit, les boutons qui ne tiennent pas passent en haut du menu **Actions du calque**, à commencer par **Nouveau calque de sélection**.
 
 ## Balayages et appuis longs
 
 Avec un stylet ou un doigt :
 
-- Balayez une ligne vers la gauche pour faire apparaître **Supprimer** à son extrémité droite. Sélectionnez **Supprimer** pour supprimer le calque, ou balayez vers la droite pour masquer le bouton.
+- Balayez une ligne vers la gauche pour faire apparaître **Verrouiller**, **Dupliquer** et **Supprimer** à son extrémité droite. **Verrouiller** devient **Déverrouiller** sur un calque verrouillé. Sélectionnez un bouton pour l’appliquer au calque, ou balayez vers la droite pour masquer les boutons.
 - Balayez un calque de peinture vers la droite pour activer ou désactiver **Verrouillage alpha**.
 - Balayez un groupe vers la droite pour activer ou désactiver **Transfert**.
 - Appuyez longuement sur une ligne pour ouvrir son menu de calque. Pour faire glisser la ligne à la place, déplacez le stylet ou le doigt sans le lever.
 
-![Une ligne balayée vers la gauche, avec Supprimer à son extrémité droite.](shot:layers/panel-swipe-delete)
+![Une ligne balayée vers la gauche, avec Verrouiller, Dupliquer et Supprimer.](shot:layers/panel-swipe-delete)
 
 Un balayage court ne change rien. Les balayages ne fonctionnent pas avec une
-souris, sur la poignée ni sur les calques verrouillés.
+souris ni sur la poignée. Un calque verrouillé ne se balaie que vers la gauche.
 
 ## Menu du calque
 
@@ -117,7 +118,7 @@ Effectuez l’une des opérations suivantes :
 
 | Élément | Contenu |
 | --- | --- |
-| **Nouveau** | **Nouveau calque**, **Nouveau calque écrêté**, **Nouveau groupe**, **Remplissage uni**, **Remplissage dégradé**, **Nouveau calque d’éclaircissement et d’assombrissement**, **Copier la sélection vers un nouveau calque**, **Couper la sélection vers un nouveau calque** |
+| **Nouveau** | **Nouveau calque**, **Nouveau calque écrêté**, **Nouveau groupe**, **Nouveau calque vectoriel**, **Remplissage uni**, **Remplissage dégradé**, **Nouveau calque d’éclaircissement et d’assombrissement**, **Copier la sélection vers un nouveau calque**, **Couper la sélection vers un nouveau calque** |
 | **Ajouter un filtre** | Les filtres à rattacher au calque, par catégorie |
 | **Organiser** | **Renommer le calque…**, **Dupliquer**, **Regrouper les calques sélectionnés** et, pour un groupe, **Dissocier le groupe** |
 | **Mode de fusion** | Tous les [modes de fusion](/fr/docs/layers/blend-modes/) |
@@ -128,7 +129,8 @@ Effectuez l’une des opérations suivantes :
 | **Visibilité** | **Afficher le calque**, **Afficher le calque et ses groupes parents**, **Isoler les calques sélectionnés**, **Afficher tous les calques** |
 | **Déplacer le calque / masque** | Sélectionne l’outil [Opération](/fr/docs/transform/move-transform/) |
 | **Fusionner avec le calque inférieur**, **Fusionner les calques visibles**, **Créer un calque du visible**, **Aplatir l’image** | Voir [Fusionner des calques](/fr/docs/layers/merging/) |
-| **Effacer tout le calque**, **Supprimer le calque** | **Effacer tout le calque** n’apparaît que sur les calques de peinture |
+| **Convertir en calque d’objets**, **Pixelliser le calque** | **Convertir en calque d’objets** apparaît sur les calques de peinture, et **Pixelliser le calque** sur les calques Objet et les [calques vectoriels](/fr/docs/layers/vector/) |
+| **Effacer tout le calque**, **Supprimer le calque** | **Effacer tout le calque** n’apparaît que sur les calques de peinture. Sur un calque vectoriel, lancez-le depuis la [recherche de commandes](/fr/docs/start/command-search/) pour supprimer tous les tracés |
 
 Ouvrir le menu d’une ligne rend ce calque actif. Le menu d’un groupe commence par
 **Nouveau calque de sélection dans le groupe…** et **Enregistrer la sélection

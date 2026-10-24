@@ -19,7 +19,8 @@ Faça uma das seguintes ações:
 - Pressione **S**. Pressione de novo para passar para **Pincel de correção** e depois para **Pincel de correção pontual**.
 - Em Foto, selecione **Carimbo de clonagem** ou **Pincel de correção pontual / Pincel de correção** na barra de ferramentas Ferramentas.
 - Em Pintura, selecione **Misturar / Carimbo de clonagem** na barra de ferramentas Ferramentas. Clique com o botão direito no botão ou mantenha-o pressionado para escolher **Carimbo de clonagem**.
-- Em Esboço, selecione **Esculpir** na barra de título, selecione de novo para abrir a gaveta e selecione **Clonar**, **Corrigir** ou **Correção pontual**.
+- Em Esboço, selecione **Esculpir** na barra de título, selecione de novo para abrir a gaveta, escolha o conjunto **Retoque** e escolha uma ferramenta.
+- Com uma ferramenta de retoque ativa, escolha uma ferramenta do conjunto **Retoque** em **Conjunto de ferramentas**.
 - Digite o nome da ferramenta na [busca de comandos](/pt-BR/docs/start/command-search/).
 
 **Pincel de correção** e **Pincel de correção pontual** não têm botão em

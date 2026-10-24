@@ -67,10 +67,12 @@ geri gelen bir seçimin yanında görünmez. Fırçalar, dolgu araçları,
 - **Hızlı maske**: bkz. [Hızlı maske](/tr/docs/selections/quick-mask/).
 - **Kaydet**: **Seçim katmanı olarak kaydet**, bkz. [Seçim katmanları](/tr/docs/selections/selection-layers/).
 
+Dar bir çubukta son düğmeler, örneğin **Hızlı maske** ve **Kaydet**, **Diğer** içine taşınır.
+
 ## Seç menüsü
 
-**Seç** menüsünü seçim çubuğundaki **Diğer** menüsünden ve Araç panelinde bir
-seçim aracının ayarlarının altındaki **Seç** düğmesinden de açabilirsiniz.
+**Seç** menüsünü seçim çubuğundaki **Diğer** menüsünden ve Araç panelinde **Mod**
+satırının altındaki **Seç** düğmesinden de açabilirsiniz.
 
 | Komut | İşlevi | Tuş |
 | --- | --- | --- |
@@ -140,7 +142,7 @@ görünür. [Dönüştür](/tr/docs/transform/move-transform/) gibi çalışır,
 
 Aşağıdakilerden birini yapın:
 
-- Komutu **Düzenle** menüsünden seçin. Temizleme komutları **Seç** menüsünde de bulunur.
+- **Düzenle > Seçimi doldur**, **Seçili pikselleri temizle** veya **Seçimin dışını temizle** komutunu seçin.
 - Doldurmak için **Shift+Backspace**, seçili pikselleri temizlemek için **Delete** veya **Backspace** tuşuna basın.
 - Seçim çubuğunda **Doldur** düğmesini veya **Temizle** düğmesini ve bir komutu seçin.
 - Boya'da Komutlar çubuğundaki **Seçimi doldur** düğmesini seçin.
@@ -157,7 +159,7 @@ ayrıca bu pikselleri özgün katmandan siler.
 
 Aşağıdakilerden birini yapın:
 
-- **Seç > Seçimi yeni katmana kopyala** veya **Seç > Seçimi kesip yeni katmana taşı** komutunu seçin.
+- **Katman > Yeni > Seçimi yeni katmana kopyala** veya **Katman > Yeni > Seçimi kesip yeni katmana taşı** komutunu seçin.
 - Kopyalamak için **Ctrl+J**, kesmek için **Ctrl+Shift+J** tuşlarına basın.
 - Seçim çubuğunda **Katmana kopyala** düğmesini seçin ve bir komut seçin.
 

@@ -1,7 +1,7 @@
 ---
 title: "Modalità Zen"
 description: "Nascondere la barra del titolo e i pannelli ancorati con la modalità Zen, e le sue preferenze."
-related: ["customize/panels", "customize/toolbars", "preferences", "input/keyboard"]
+related: ["customize/panels", "customize/toolbars", "customize/bubbles", "preferences", "input/keyboard"]
 ---
 
 In modalità Zen puoi nascondere la barra del titolo e i pannelli e le barre
@@ -29,11 +29,22 @@ riavvio. **Personalizza barra del titolo…** disattiva la modalità Zen.
 La modalità Zen nasconde anche le colonne compresse e il piè di pagina. Restano:
 
 - i pannelli mobili
+- le [bolle degli strumenti](/it/docs/customize/bubbles/), con i loro aloni, selettori e menu
 - la barra azioni della tela accanto a una selezione o a una trasformazione
 - il pulsante Capy, a meno che **Mostra Capy in modalità Zen** sia disattivato
 - gli avvisi
 
 I tasti e la ricerca comandi (**Ctrl+K**) funzionano come sempre.
+
+## Mantenere le barre strumenti in modalità Zen
+
+Nell'app per Linux, scegli **Mostra in modalità Zen** dal menu di una barra
+strumenti per mantenere quella barra strumenti sullo schermo in modalità Zen.
+
+Su un touchscreen nell'app per Linux, scorri verso l'interno con un dito partendo
+a meno di 24 px dal bordo della finestra per mostrare le barre strumenti e i
+pannelli ancorati a quel bordo. Si nascondono di nuovo quando tocchi fuori da
+essi. Una penna o un mouse non possono mostrarli.
 
 ## Ancorare in modalità Zen
 

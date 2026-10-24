@@ -140,7 +140,7 @@ saklayabilirsiniz. Hazır ayarlar tüm çizimlerde geçerlidir.
 
 ## HDR dışa aktarma
 
-![Çıktıyı önizle'den sonra, HDR JPEG · kazanç haritası seçili bir HDR çizimin Görüntüyü dışa aktar iletişim kutusu.](shot:files/export-hdr-preview)
+![Yorumlamayı önizle menüsü HDR yeniden oluşturma · SDR önizlemesi olarak ayarlı; Çizim ve HDR yeniden oluşturma önizlemeleri yan yana.](shot:files/export-hdr-preview)
 
 16 bit veya 32 bit kayan noktalı bir çizimde **Dinamik aralık** şu seçenekleri
 sunar:

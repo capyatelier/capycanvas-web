@@ -69,7 +69,7 @@ en su sitio. **Centro** es el valor predeterminado.
 
 ## Girar y voltear la imagen
 
-Elige una de estas opciones de **Imagen**:
+Elige una de estas opciones de **Imagen > Girar y voltear**:
 
 - **Girar imagen 90° a la izquierda**
 - **Girar imagen 90° a la derecha**

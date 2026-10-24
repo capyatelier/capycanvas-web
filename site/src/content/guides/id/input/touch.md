@@ -1,7 +1,7 @@
 ---
 title: "Gestur sentuh"
 description: "Fungsi jari di kanvas, dan ketukan jari yang dapat Anda tetapkan."
-related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
+related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
 Anda dapat menggerakkan kanvas, mengambil warna, dan menjalankan perintah dengan jari di
@@ -29,6 +29,24 @@ di atas jari. Seret untuk membidik, lalu angkat jari untuk mengambil warna. Teka
 **Escape** untuk membatalkan.
 
 Jari kedua di kanvas membatalkan pengambilan warna.
+
+## Membersihkan lapisan
+
+Gosok kanvas dengan tiga jari untuk menjalankan **Bersihkan Seluruh Lapisan** pada
+lapisan aktif. Gerakkan ketiga jari bersama-sama, balik arah, lalu balik arah lagi
+tanpa mengangkat jari. Satu kali **Urungkan** memulihkan lapisan. Lapisan yang terkunci
+tidak dibersihkan.
+
+## Memindahkan gelembung
+
+Seret [gelembung](/id/docs/customize/bubbles/) dengan dua jari untuk memindahkannya dari
+bagian mana pun pada gelembung itu.
+
+## Bilah alat dalam Mode Zen
+
+Di aplikasi Linux, dalam [Mode Zen](/id/docs/customize/zen/), geser ke dalam dari tepi
+jendela dengan satu jari untuk menampilkan bilah alat dan panel yang tertambat di tepi
+itu.
 
 ## Ketukan jari
 
@@ -64,4 +82,5 @@ ulang ketukan.
 ## Platform
 
 Gestur sentuh berfungsi di Linux, Windows, Android, iPad, dan web. Grup
-**Gestur sentuh** tidak ditampilkan di macOS.
+**Gestur sentuh** tidak ditampilkan di macOS, tempat gosokan tiga jari pada trackpad
+tetap membersihkan lapisan.

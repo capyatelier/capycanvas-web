@@ -1,6 +1,6 @@
 ---
 title: "首选项"
-description: "首选项对话框及其外观、画布、输入、颜色和关于页面上的设置。"
+description: "首选项对话框及其外观、画布、颜色、笔与输入和关于页面上的设置。"
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -99,21 +99,9 @@ related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", 
 
 ## 颜色
 
-**新建绘画**中的设置适用于之后[新建的画作](/zh/docs/files/new/)。**打开照片**中的设置适用于打开的照片。
+**打开照片**中的设置适用于打开的照片。
 
-![首选项的颜色页面。](shot:preferences/color)
-
-### 色彩空间
-
-选择 **sRGB**（默认）、**Display P3**、**Adobe RGB (1998)** 或 **ProPhoto RGB**。
-
-### 位深度
-
-选择 **8 位 SDR**（默认）、**16 位 SDR**、**16 位浮点 HDR** 或 **32 位浮点 HDR**。
-
-### 背景
-
-选择**白色**（默认）或**透明**。
+![首选项颜色页面上的打开照片设置。](shot:preferences/color)
 
 ### 编辑精度
 

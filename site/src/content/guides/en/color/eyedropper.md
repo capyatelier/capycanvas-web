@@ -67,7 +67,7 @@ window in Photo):
 
 ![The Color Picker magnifier over a red stroke, with the sampled and current colors in its ring.](shot:color/eyedropper-loupe)
 
-![The Color Picker magnifier above a finger, with the sample point under the contact.](shot:color/eyedropper-touch)
+![The Color Picker magnifier at the edge of a red stroke, with a crosshair at its center and a two-color ring.](shot:color/eyedropper-touch)
 
 Touch always uses the magnifier. Selecting **Color Picker** in Sketch sets
 **Style** to **Color Picker**. A small layers mark appears when **Source** is

@@ -11,9 +11,9 @@ eskizi oluşur.
 
 1. Başlık çubuğundaki çalışma alanı değiştiricide **Boya** seçeneğini seçin.
 2. **Dosya > Yeni…** komutunu seçin veya **Ctrl+N** tuşlarına basın ([Yeni çizimler](/tr/docs/files/new/)).
-3. **Yeni çizim** iletişim kutusunda **Genişlik (px)** ve **Yükseklik (px)** değerlerini 1200 yapın ve **Oluştur** düğmesini seçin.
+3. **Yeni çizim** iletişim kutusunda birim menüsünde **px** seçeneğini seçin, **G** ve **Y** değerlerini 1200 yapın ve **Oluştur** düğmesini seçin.
 
-![Genişlik (px) ve Yükseklik (px) değerleri 1200 olan Yeni çizim iletişim kutusu.](shot:illustration/new-drawing)
+![G ve Y değerleri 1200 px olan Yeni çizim iletişim kutusu.](shot:illustration/new-drawing)
 
 Çizimde iki katman vardır: **Kâğıt** katmanının üstünde **Geçerli mürekkep**.
 Katmanlar panelinde **Geçerli mürekkep** katmanına çift tıklayın ve katmanı

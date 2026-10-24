@@ -40,7 +40,7 @@ related: ["drawing/fill", "layers/types", "filters/color", "color/edit-color"]
 
 ## 色標編輯器
 
-![漸層工具的工具設定面板，包含形狀行、色標編輯器和不透明度。](shot:drawing/gradient-tool-panel)
+![漸層工具的工具設定面板，包含形狀行和色標編輯器。](shot:drawing/gradient-tool-panel)
 
 可以在**工具設定**面板中**形狀**下方的色標編輯器裡編輯漸層的色彩。工具選項欄中的漸層按鈕會在彈出視窗中開啟該編輯器。漸層填色圖層和**漸層對應**濾鏡使用同一個編輯器（[色彩濾鏡](/zh-Hant/docs/filters/color/)）。
 

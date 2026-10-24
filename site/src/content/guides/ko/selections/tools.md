@@ -107,7 +107,7 @@ related: ["selections/working", "selections/tonal-range", "selections/quick-mask
 캔버스에서 색을 클릭합니다. **자동 선택**은 그 지점 주위의 이어진 영역을,
 **색상으로 선택**은 이미지 어디에 있든 일치하는 픽셀을 선택합니다.
 
-![모드, 앤티앨리어싱, 샘플링 대상, 허용치, 가장자리 설정, 페더 반경이 있는 자동 선택의 도구 패널.](shot:selections/tools-auto-select-settings)
+![모드, 선택 영역, 허용치, 가장자리 설정, 페더 반경, 앤티앨리어싱, 샘플링 대상이 있는 자동 선택의 도구 패널.](shot:selections/tools-auto-select-settings)
 
 ### 샘플링 대상
 
@@ -150,6 +150,6 @@ related: ["selections/working", "selections/tonal-range", "selections/quick-mask
 
 ## 선택 영역 버튼
 
-도구 패널에서 선택 도구 설정 아래에 있는 **선택 영역** 버튼은
+도구 패널의 **모드** 행 아래에 있는 **선택 영역** 버튼은
 [선택 영역 메뉴](/ko/docs/selections/working/)를 엽니다. **톤 범위** 설정에는
 **선택 영역** 버튼이 없습니다.

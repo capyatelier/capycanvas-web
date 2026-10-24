@@ -26,6 +26,10 @@ Los dos interruptores están activados de forma predeterminada, y **Cantidad de
 predicción** es 16 ms. Mientras **Activar predicción de trazos** está desactivado,
 los otros dos ajustes no están disponibles.
 
+Un trazo de ratón no recibe predicción por delante de la punta, ni tampoco un trazo
+de una tableta gráfica sin pantalla en Linux, Windows y Android. En el editor web y
+en macOS, los trazos de esas tabletas se predicen según los ajustes.
+
 | Sistema | La predicción del sistema |
 | --- | --- |
 | iPad | Disponible |

@@ -17,11 +17,11 @@ related: ["selections/tools", "selections/quick-mask", "color-management/hdr", "
 
 **明暗範圍**沒有預設按鍵，在「繪畫」和「照片」的工具列上也沒有按鈕。使用該工具時，工具組面板會列出所有選取範圍工具。
 
-![「素描」選擇抽屜中的明暗範圍設定，包含模式、明暗、柔和度和羽化。](shot:selections/tonal-range-settings)
+![「素描」選擇抽屜中的明暗範圍設定，包含模式、明暗按鈕、柔和度和羽化。](shot:selections/tonal-range-settings)
 
 ## 明暗
 
-選擇**明暗 · 相對於參考白的級數**行中的按鈕，可選擇該亮度範圍。該範圍按照**模式**與目前選取範圍組合（參見[選取範圍工具](/zh-Hant/docs/selections/tools/)）。
+選擇**模式**下方明暗按鈕列中的按鈕，可選擇該亮度範圍。該範圍按照**模式**與目前選取範圍組合（參見[選取範圍工具](/zh-Hant/docs/selections/tools/)）。
 
 每個按鈕的工具提示寫出其範圍：
 

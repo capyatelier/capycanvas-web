@@ -34,6 +34,6 @@ related: ["retouch/clone-heal", "layers/blend-modes", "filters/detail-blur", "ph
 
 圖層群組沿用原圖層的不透明度和剪貼。原圖層保留在圖層群組正下方，並被隱藏。
 
-該圖層必須可見並設為**正常**，畫作必須使用**編輯 > 色彩混合 > 感知色彩混合**（參見[色彩空間、位元深度和色彩混合](/zh-Hant/docs/color-management/color-spaces/)）。如果面板開啟期間畫作發生更改，面板會關閉。
+該圖層必須可見並設為**正常**，畫作必須使用**影像 > 色彩混合 > 感知色彩混合**（參見[色彩空間、位元深度和色彩混合](/zh-Hant/docs/color-management/color-spaces/)）。如果面板開啟期間畫作發生更改，面板會關閉。
 
 ![圖層面板，顯示頻率分離圖層群組（高頻位於低頻上方）以及隱藏的原圖層。](shot:retouch/frequency-separation-layers)

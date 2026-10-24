@@ -1,7 +1,7 @@
 ---
 title: "Rückgängig und Wiederholen"
 description: "Änderungen an einer Zeichnung rückgängig machen und wiederholen sowie der separate Verlauf für Layoutänderungen."
-related: ["start/command-search", "customize/workspaces", "input/touch"]
+related: ["start/command-search", "customize/bubbles", "customize/workspaces", "input/touch"]
 ---
 
 Sie können Änderungen an einer Zeichnung Schritt für Schritt rückgängig machen und
@@ -29,6 +29,10 @@ Führen Sie eine der folgenden Aktionen aus:
 - Tippen Sie mit drei Fingern auf die Leinwand.
 
 Eine neue Änderung nach Rückgängig verwirft die Schritte, die Sie wiederholen könnten.
+
+## Blase für Rückgängig und Wiederholen
+
+Ziehen Sie **Rückgängig** oder **Wiederholen** auf die Leinwand, um beides in einer [Blase](/de/docs/customize/bubbles/) zu behalten. Tippen Sie auf ihre linke Hälfte, um rückgängig zu machen, und auf ihre rechte, um zu wiederholen.
 
 ## Was als Schritt zählt
 

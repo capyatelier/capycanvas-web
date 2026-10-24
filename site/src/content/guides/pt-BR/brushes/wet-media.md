@@ -7,14 +7,14 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 Você pode definir como os pincéis úmidos e de mistura lidam com a tinta no painel
 **Ferramenta**. Cada grupo aparece só nos pincéis citados na seção correspondente.
 
-![O painel Ferramenta da Aquarela molhada com Mistura de cores e os grupos Mistura, Aquarela e Espalhamento.](shot:brushes/wet-media-settings)
+![A parte inferior do painel Ferramenta da Aquarela molhada, com os grupos Mistura, Aquarela, Espalhamento e Mesclagem.](shot:brushes/wet-media-settings)
 
 ## Mistura
 
-**Mistura** aparece em **Pincel redondo molhado**, **Guache opaco**, **Óleo
-carregado**, **Espátula**, **Aguada de aquarela**, **Aquarela molhada**,
-**Misturador natural** e **Borrar**. Exceto nos pincéis de aquarela, um pincel
-carregado fica sem tinta ao longo do traço, em um ritmo fixo para cada pincel.
+**Mistura** aparece nos pincéis de tinta a óleo, em **Guache opaco**, nos
+pincéis de aquarela e em todos os misturadores. **Captação média**,
+**Persistência** e **Recarga por pressão** aparecem só nos pincéis de tinta a
+óleo, em **Guache opaco**, **Misturador úmido** e **Misturador de cores**.
 
 ### Carga de tinta
 
@@ -30,11 +30,45 @@ Define até onde o pincel arrasta, ao longo do traço, a cor que capta da camada
 Dilui a tinta que o pincel carrega. Valores maiores enfraquecem a cor do próprio
 pincel na mistura.
 
+### Captação média
+
+Define até onde as cores captadas ao longo da ponta se fundem em uma só. Em 0%,
+cada parte da ponta mantém a sua.
+
+### Persistência
+
+Define até onde a cor média é levada ao longo do traço. Só aparece enquanto
+**Captação média** está acima de 0%.
+
+### Recarga por pressão
+
+Define quanto uma pressão firme recarrega a cor selecionada no pincel. **Pincel
+de mistura** deposita a cor dele sob pressão firme e só mistura com um toque leve.
+
+## Misturador
+
+Cada misturador adiciona configurações ao grupo **Misturador**. **Alcance** fica no
+topo do painel **Ferramenta**.
+
+| Configuração | Misturadores | Define |
+| --- | --- | --- |
+| **Alcance** | Todos, menos **Espátula de mistura** e **Marmorizado** | Até onde o misturador capta cor ao redor de cada ponto do traço. |
+| **Estrias** | **Borrar**, **Misturador suave**, **Esfuminho**, **Lenço de papel**, **Misturador natural**, **Misturador de cerdas**, **Espátula de mistura** | Quanto o traço se quebra em estrias ao longo da direção dele. |
+| **Nitidez** | **Nitidez** | Quanto contraste o traço adiciona. |
+| **Textura preservada** | **Misturador que preserva a textura** | Quanto da textura fina sob o traço permanece sobre a cor misturada. |
+| **Tamanho do detalhe** | **Misturador que preserva a textura** | O tamanho da textura que é preservada. |
+| **Misturar luminosidade** | **Misturador de matiz** | Quanto da luminosidade se mistura junto com o matiz e a saturação. |
+| **Granulação** | **Misturador disperso** | Com que plenitude cada pixel disperso substitui o que está embaixo. |
+| **Alongamento** | **Misturador pictórico**, **Misturador cristalino** | Quanto as manchas ou as células se alongam ao longo do traço. |
+| **Tamanho da célula** | **Misturador cristalino** | O tamanho das células. |
+| **Redemoinho** | **Marmorizado** | Com que força a tinta se enrola. |
+| **Tamanho do redemoinho** | **Marmorizado** | O tamanho dos redemoinhos. |
+| **Preservação de bordas** | **Misturador pente** | Com que facilidade a mistura para em uma borda entre cores. |
+
 ## Aquarela
 
 **Aguada de aquarela** e **Aquarela molhada** têm um grupo **Aquarela** para a
-borda mais escura onde a tinta se acumula. A aquarela reage só à tinta da mesma
-camada.
+borda mais escura onde a tinta se acumula. A aquarela reage só à tinta da mesma camada. **Intensidade da borda** fica no topo do painel **Ferramenta**, acima dos grupos.
 
 ### Intensidade da borda
 
@@ -64,7 +98,7 @@ Define até onde a tinta pode se espalhar a partir de cada carimbo, de 0 a 96 px
 
 ### Carga de água
 
-Define quanta água cada carimbo deposita no papel.
+Define quanta água cada carimbo deposita no papel. Fica no topo do painel **Ferramenta**, acima dos grupos.
 
 ## Mistura de cores
 
@@ -86,7 +120,7 @@ Todo pincel de mistura integrado começa em **Mistura Oklab**. A opção é salv
 o pincel, e a configuração **Mesclagem** do desenho não a altera. Para um pincel
 que não mistura, as opções ficam indisponíveis.
 
-![Mistura de cores na gaveta Ferramenta.](shot:brushes/color-mixing-menu)
+![A configuração Mistura de cores mostrando Mistura Oklab.](shot:brushes/color-mixing-menu)
 
 ## Cerdas
 

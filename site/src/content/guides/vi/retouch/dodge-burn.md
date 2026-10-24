@@ -41,7 +41,7 @@ Nhóm nhận độ đục và thiết lập cắt của lớp ban đầu. Lớp 
 ở trạng thái ẩn.
 
 Lớp phải đang hiện và đặt ở **Bình thường**, và bản vẽ phải dùng
-**Chỉnh sửa > Hòa trộn > Hòa trộn theo cảm nhận** (xem
+**Ảnh > Hòa trộn > Hòa trộn theo cảm nhận** (xem
 [Không gian màu, độ sâu bit và hòa trộn](/vi/docs/color-management/color-spaces/)).
 Nếu bản vẽ thay đổi trong lúc bảng đang mở, bảng sẽ đóng.
 

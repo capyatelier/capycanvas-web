@@ -116,7 +116,6 @@ capa nueva, en el mismo sitio.
 Haz una de las siguientes acciones:
 
 - Elige **Capa > Nuevo > Copiar selección a una capa nueva** (**Ctrl+J**) o **Cortar selección a una capa nueva** (**Ctrl+Mayús+J**).
-- Elige los mismos comandos en el menú **Seleccionar**.
 - Elígelos en **Copiar a capa**, en la [barra de selección](/es/docs/selections/working/) del lienzo.
 
 La capa nueva se coloca encima de la capa de origen, se llama «*nombre* copia» y

@@ -1,10 +1,10 @@
 ---
 title: "合併圖層"
-description: "用合併命令將多個圖層合併為一個繪畫圖層。"
-related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types"]
+description: "用合併命令將多個圖層合併為一個圖層，以及向量圖層的處理方式。"
+related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types", "layers/vector"]
 ---
 
-可以將多個圖層合併為一個繪畫圖層。合併命令位於**圖層**選單和每個圖層選單的末尾附近。
+可以將多個圖層合併為一個繪畫圖層，或將兩個向量圖層合併為一個向量圖層。合併命令位於**圖層**選單和每個圖層選單的末尾附近。
 
 ![Ribbon 為目前圖層時的圖層選單，顯示合併剪裁圖層、合併可見圖層、蓋印可見圖層和平面化影像。](shot:layers/merging-menu)
 
@@ -22,6 +22,14 @@ related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers
 合併後的圖層沿用下方圖層的名稱、位置、剪貼和**鎖定透明度**，不透明度為 100%，混合模式為正常，沒有遮罩。只要兩個圖層中有一個是參考圖層，合併後的圖層就是參考圖層。
 
 兩個圖層都必須可見、未鎖定並設為正常。下方圖層不能是濾鏡；除非目前圖層也是剪貼圖層，下方圖層不能是剪貼圖層。
+
+## 合併向量圖層
+
+當[向量圖層](/zh-Hant/docs/layers/vector/)合併到其下方的向量圖層時，**向下合併**會保留路徑，並把它們放在前面。兩個圖層都需要 100% 不透明度，沒有遮罩、剪貼和附加的濾鏡。
+
+其他所有包含向量圖層的合併都會把其路徑變成像素。提示會指明相關圖層，例如「合併會將『Line art』中的路徑變為像素。」，選擇其按鈕後才會執行合併。**平面化影像**會把這些名稱加入其隱藏圖層提示中。
+
+![顯示「合併會將『Line art』中的路徑變為像素。」的提示，帶有向下合併按鈕。](shot:vector/merge-notice)
 
 ## 合併剪裁圖層
 

@@ -14,7 +14,7 @@ related: ["brushes/basics", "drawing/brush-tools", "brushes/reset"]
 
 笔画平滑的强度与画笔的主要 **强度** 设置不同。
 
-![同一输入路径在不同平滑强度下绘制的笔迹。](shot:brushes/smoothing-comparison)
+![同一输入路径绘制两次，上方笔迹关闭平滑，下方笔迹使用较高的平滑强度。](shot:brushes/smoothing-comparison)
 
 ## 按速度调整
 

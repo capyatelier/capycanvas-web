@@ -142,6 +142,7 @@ Ailedeki sonraki araç için tuşa yeniden basın.
 | **Şekil** | **U** |
 | **Cetvel** | **Shift+U** |
 | **İşlem** | **O** |
+| **Noktaları düzenle** | **A** |
 | **Dönüştür** | **Ctrl+T** |
 | **Kırp** | **C** |
 | **El** | **Y** |
@@ -170,6 +171,7 @@ Ailedeki sonraki araç için tuşa yeniden basın.
 | **Seçimi yeni katmana kopyala** | **Ctrl+J** |
 | **Seçimi kesip yeni katmana taşı** | **Ctrl+Shift+J** |
 | **Alttakiyle birleştir** | **Ctrl+E** |
+| **Yeni vektör katmanı** | **Ctrl+Alt+Shift+N** |
 | **Tuvali sığdır** | **Ctrl+0** |
 | **Gerçek pikseller** | **Ctrl+1**, **Ctrl+Alt+0** |
 | **Yakınlaştır**, **Uzaklaştır** | **Ctrl+=**, **Ctrl+-** |

@@ -11,9 +11,9 @@ en una capa encima.
 
 1. Selecciona **Pintura** en el selector de espacio de trabajo de la barra de título.
 2. Elige **Archivo > Nuevo…** o pulsa **Ctrl+N** ([Dibujos nuevos](/es/docs/files/new/)).
-3. En el diálogo **Dibujo nuevo**, pon **Anchura (px)** y **Altura (px)** en 1200 y selecciona **Crear**.
+3. En el diálogo **Dibujo nuevo**, elige **px** en el menú de unidad, pon **An** y **Al** en 1200 y selecciona **Crear**.
 
-![El diálogo Dibujo nuevo con Anchura (px) y Altura (px) en 1200.](shot:illustration/new-drawing)
+![El diálogo Dibujo nuevo con An y Al en 1200 px.](shot:illustration/new-drawing)
 
 El dibujo tiene dos capas: **Tinta actual** encima de **Papel**. Haz doble clic
 en **Tinta actual** en el panel Capas y cambia el nombre de la capa a

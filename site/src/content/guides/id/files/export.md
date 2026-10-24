@@ -142,7 +142,7 @@ Nama prasetel terdiri dari paling banyak 80 karakter, dan Anda dapat menyimpan h
 
 ## Ekspor HDR
 
-![Dialog Ekspor gambar untuk gambar HDR dengan HDR JPEG · peta penguatan, setelah Pratinjau Keluaran.](shot:files/export-hdr-preview)
+![Menu Pratinjau hasil disetel ke Rekonstruksi HDR · pratinjau SDR, dengan pratinjau Karya dan Rekonstruksi HDR berdampingan.](shot:files/export-hdr-preview)
 
 Pada gambar pecahan mengambang 16-bit atau 32-bit, **Rentang dinamis** menyediakan
 pilihan berikut:

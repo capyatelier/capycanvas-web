@@ -1,7 +1,7 @@
 ---
 title: "Outils de remplissage"
 description: "Remplir des zones, des formes à main levée et des régions fermées d’un calque avec la couleur active."
-related: ["drawing/gradient", "layers/settings", "selections/working", "drawing/brush-tools"]
+related: ["drawing/gradient", "layers/vector", "layers/settings", "selections/working", "drawing/brush-tools"]
 ---
 
 Vous pouvez remplir des parties du calque sélectionné avec la couleur active à
@@ -74,6 +74,10 @@ ouverture de {appName}.
 
 Si Remplissage utilise **Calques de référence** et qu’aucun calque n’est marqué,
 Remplissage ne peint rien et un avis propose de marquer le calque inférieur.
+
+## Calques vectoriels
+
+Sur un calque vectoriel, **Remplissage** colore le tracé fermé sur lequel vous cliquez. Un clic ailleurs, ou la source **Calques de référence**, ajoute un calque de peinture sous le calque vectoriel et remplit à cet endroit. **Remplissage au lasso** ajoute un tracé rempli, et **Dégradé** et **Entourer et remplir** proposent **Nouveau calque de peinture dessous**. Voir [Calques vectoriels](/fr/docs/layers/vector/).
 
 ## Réglages de remplissage
 

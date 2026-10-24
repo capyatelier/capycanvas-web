@@ -24,7 +24,7 @@ Bình thường.
 Bạn không thể đổi chế độ hòa trộn của lớp vùng chọn hoặc lớp đã khóa.
 [Gộp xuống](/vi/docs/layers/merging/) cần cả hai lớp ở chế độ Bình thường. Chế độ
 hòa trộn pha màu trong không gian hòa trộn của bản vẽ, được đặt bằng
-**Chỉnh sửa > Hòa trộn** (xem [Không gian màu, độ sâu bit và hòa trộn](/vi/docs/color-management/color-spaces/)).
+**Ảnh > Hòa trộn** (xem [Không gian màu, độ sâu bit và hòa trộn](/vi/docs/color-management/color-spaces/)).
 
 ## Các chế độ trong trình đơn chế độ hòa trộn
 

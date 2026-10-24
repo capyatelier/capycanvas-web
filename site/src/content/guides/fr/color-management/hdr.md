@@ -12,10 +12,9 @@ dessin HDR.
 
 Pour obtenir un dessin HDR, effectuez l’une des opérations suivantes :
 
-- Dans **Fichier > Nouveau…**, choisissez le préréglage **Dessin HDR** ou une **Profondeur de couleur** en virgule flottante.
-- Choisissez **Édition > Changer la profondeur de couleur…** et une profondeur en virgule flottante.
+- Dans **Fichier > Nouveau…**, choisissez le préréglage **4K HDR** ou une **Profondeur de couleur** en virgule flottante.
+- Choisissez **Image > Gestion des couleurs > Changer la profondeur de couleur…** et une profondeur en virgule flottante.
 - Ouvrez un fichier PNG HDR (BT.2020 PQ) ou AVIF HDR (HDR flottant 16 bits), ou un fichier OpenEXR (HDR flottant 32 bits).
-- Réglez **Profondeur de couleur** sur une profondeur en virgule flottante dans la page **Couleur** des [Préférences](/fr/docs/preferences/) pour que les nouveaux dessins soient HDR.
 
 Dans un dessin HDR :
 

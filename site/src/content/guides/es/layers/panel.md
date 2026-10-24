@@ -1,7 +1,7 @@
 ---
 title: "Panel de capas"
 description: "Qué muestra y qué hace cada parte del panel Capas, incluido el menú de capa."
-related: ["layers/working", "layers/settings", "layers/types", "layers/masks"]
+related: ["layers/working", "layers/settings", "layers/types", "layers/vector", "layers/masks"]
 ---
 
 El panel **Capas** muestra las capas del dibujo, con la capa que está más al
@@ -18,7 +18,7 @@ Haz una de las siguientes acciones:
 - En Boceto, selecciona **Capas** en la barra de título. El cajón compartido se abre en la vista Capas; selecciona el botón Propiedades de una capa para pasar a Propiedades.
 - Escribe «Panel Capas» en la [búsqueda de comandos](/es/docs/start/command-search/).
 
-En Foto, el panel está abierto en la columna derecha.
+En Foto, el panel está abierto en la columna derecha. En Boceto, puedes arrastrar **Capas** desde la barra de título al lienzo para mantenerlo allí como una burbuja ([Burbujas de herramientas](/es/docs/customize/bubbles/)).
 
 ## Cabecera
 
@@ -55,7 +55,7 @@ Selecciona una fila para convertirla en la capa activa y en la única fila selec
 
 Papel tiene miniaturas separadas de color y textura. Si no hay Papel, **Añadir papel** aparece después de la última fila.
 
-![El cajón de Boceto cambiando de Capas a Propiedades.](shot:layers/sketch-properties-drawer)
+![El cajón de Boceto mostrando las Propiedades de Papel, con Todas las capas en la parte inferior.](shot:layers/sketch-properties-drawer)
 
 Haz **Ctrl**+clic en la miniatura de una capa de pintura para cargar su opacidad
 como selección, o en la miniatura de la máscara para cargar la máscara. Añade
@@ -73,34 +73,37 @@ para intersecar con ella.
 
 ## Botones inferiores
 
-![Los botones de la parte inferior del panel Capas.](shot:layers/panel-footer "1 Capa nueva · 2 Grupo nuevo · 3 Nueva capa de selección · 4 Añadir máscara · 5 Añadir filtro · 6 Importar imagen como capa… · 7 Eliminar capas seleccionadas · 8 Acciones de capa")
+![Los botones de la parte inferior del panel Capas.](shot:layers/panel-footer "1 Capa nueva · 2 Nueva capa vectorial · 3 Grupo nuevo · 4 Nueva capa de selección · 5 Añadir máscara · 6 Añadir filtro · 7 Importar imagen como capa… · 8 Eliminar capas seleccionadas · 9 Acciones de capa")
 
 1. **Capa nueva** añade una capa de pintura.
-2. **Grupo nuevo**. Con varias filas seleccionadas, las agrupa.
-3. **Nueva capa de selección** (consulta [Capas de selección](/es/docs/selections/selection-layers/)).
-4. **Añadir máscara**.
-5. **Añadir filtro** adjunta un filtro a la capa activa.
-6. **Importar imagen como capa…**
-7. **Eliminar capas seleccionadas**.
-8. **Acciones de capa** abre el menú de capa de la capa activa.
+2. **Nueva capa vectorial** añade una [capa vectorial](/es/docs/layers/vector/).
+3. **Grupo nuevo**. Con varias filas seleccionadas, las agrupa.
+4. **Nueva capa de selección** (consulta [Capas de selección](/es/docs/selections/selection-layers/)).
+5. **Añadir máscara**.
+6. **Añadir filtro** adjunta un filtro a la capa activa.
+7. **Importar imagen como capa…**
+8. **Eliminar capas seleccionadas**.
+9. **Acciones de capa** abre el menú de capa de la capa activa.
 
 Un botón no está disponible cuando su acción no se aplica a la capa activa, por
 ejemplo **Añadir máscara** en una capa bloqueada (consulta
-[Trabajar con capas](/es/docs/layers/working/)).
+[Trabajar con capas](/es/docs/layers/working/)). En un panel estrecho, los botones
+que no caben pasan a la parte superior del menú **Acciones de capa**, empezando por
+**Nueva capa de selección**.
 
 ## Deslizar y mantener pulsado
 
 Con un lápiz o un dedo:
 
-- Desliza una fila hacia la izquierda para mostrar **Eliminar** en su extremo derecho. Selecciona **Eliminar** para eliminar la capa, o desliza hacia la derecha para ocultar el botón.
+- Desliza una fila hacia la izquierda para mostrar **Bloquear**, **Duplicar** y **Eliminar** en su extremo derecho. **Bloquear** dice **Desbloquear** en una capa bloqueada. Selecciona un botón para aplicarlo a la capa, o desliza hacia la derecha para ocultar los botones.
 - Desliza una capa de pintura hacia la derecha para activar o desactivar **Bloquear alfa**.
 - Desliza un grupo hacia la derecha para activar o desactivar **Traspasar**.
 - Mantén pulsada una fila para abrir su menú de capa. Si te mueves sin levantar, arrastras la fila.
 
-![Una fila deslizada hacia la izquierda, con Eliminar en su extremo derecho.](shot:layers/panel-swipe-delete)
+![Una fila deslizada hacia la izquierda, con Bloquear, Duplicar y Eliminar.](shot:layers/panel-swipe-delete)
 
 Un deslizamiento corto no cambia nada. Los deslizamientos no funcionan con el
-ratón, sobre el asa ni en capas bloqueadas.
+ratón ni sobre el asa. Una capa bloqueada solo se desliza hacia la izquierda.
 
 ## Menú de capa
 
@@ -117,7 +120,7 @@ Haz una de las siguientes acciones:
 
 | Elemento | Contenido |
 | --- | --- |
-| **Nuevo** | **Capa nueva**, **Nueva capa de recorte**, **Grupo nuevo**, **Relleno de color uniforme**, **Relleno degradado**, **Nueva capa de sobreexposición y subexposición**, **Copiar selección a una capa nueva**, **Cortar selección a una capa nueva** |
+| **Nuevo** | **Capa nueva**, **Nueva capa de recorte**, **Grupo nuevo**, **Nueva capa vectorial**, **Relleno de color uniforme**, **Relleno degradado**, **Nueva capa de sobreexposición y subexposición**, **Copiar selección a una capa nueva**, **Cortar selección a una capa nueva** |
 | **Añadir filtro** | Filtros para adjuntar a la capa, por categoría |
 | **Organizar** | **Renombrar capa…**, **Duplicar**, **Agrupar capas seleccionadas** y, en un grupo, **Desagrupar** |
 | **Modo de mezcla** | Todos los [modos de mezcla](/es/docs/layers/blend-modes/) |
@@ -128,7 +131,8 @@ Haz una de las siguientes acciones:
 | **Visibilidad** | **Mostrar capa**, **Mostrar capa y grupos superiores**, **Aislar capas seleccionadas**, **Mostrar todas las capas** |
 | **Mover capa / máscara** | Selecciona la herramienta [Operación](/es/docs/transform/move-transform/) |
 | **Combinar hacia abajo**, **Combinar visibles**, **Crear capa de visibles**, **Acoplar imagen** | Consulta [Combinar capas](/es/docs/layers/merging/) |
-| **Borrar capa completa**, **Eliminar capa** | **Borrar capa completa** solo aparece en las capas de pintura |
+| **Convertir en capa de objetos**, **Rasterizar capa** | **Convertir en capa de objetos** aparece en las capas de pintura, y **Rasterizar capa** en las capas de objeto y en las [capas vectoriales](/es/docs/layers/vector/) |
+| **Borrar capa completa**, **Eliminar capa** | **Borrar capa completa** solo aparece en las capas de pintura. En una capa vectorial, ejecútalo desde la [búsqueda de comandos](/es/docs/start/command-search/) para eliminar todos los trazados |
 
 Al abrir el menú de una fila, esa capa pasa a ser la activa. El menú de un grupo
 empieza con **Nueva capa de selección en el grupo…** y

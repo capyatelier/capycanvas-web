@@ -1,7 +1,7 @@
 ---
 title: "Move and Transform"
-description: "Moving and transforming layers and selected pixels with the Operation tool and Transform."
-related: ["selections/working", "transform/crop", "transform/clipboard", "drawing/ruler"]
+description: "Moving and transforming layers, selected pixels and paths with the Operation tool and Transform."
+related: ["selections/working", "layers/paths", "transform/crop", "transform/clipboard", "drawing/ruler"]
 ---
 
 You can move layers and selected pixels with the **Operation** tool, and
@@ -13,7 +13,7 @@ Do one of the following:
 
 - Open a layer's menu in the Layers panel and choose **Move layer / mask**.
 - Press **O**.
-- In Paint and Photo, select **Operation / Transform** in the Tools toolbar. Right-click or hold the button to choose **Operation**.
+- In Paint and Photo, select **Operation / Transform / Edit points** in the Tools toolbar. Right-click or hold the button to choose **Operation**.
 - Type "Operation" in [command search](/docs/start/command-search/).
 
 Sketch has no **Operation** button.
@@ -33,6 +33,10 @@ in whole-pixel steps. While you edit a mask, **Operation** moves the mask.
 With guides shown, **Operation** also selects and drags guides (see
 [Rulers and guides](/docs/drawing/ruler/)).
 
+## Moving paths
+
+On a vector layer, **Operation** selects, moves, scales and rotates paths instead of moving the layer. Press **Ctrl+A** to select every path. **Edit > Transform** with paths selected switches to **Operation** and its frame. See [Editing paths](/docs/layers/paths/).
+
 ## Leave Copy
 
 You can move a copy of the selected pixels and keep the originals in place.
@@ -49,7 +53,7 @@ Do one of the following:
 - Press **Ctrl+T**.
 - Select **Transform** in the Commands toolbar in Paint and Photo, or in the title bar in Sketch.
 - Select **Transform** on the selection bar.
-- In Paint and Photo, right-click or hold **Operation / Transform** in the Tools toolbar and choose **Transform**.
+- In Paint and Photo, right-click or hold **Operation / Transform / Edit points** in the Tools toolbar and choose **Transform**.
 
 With a selection, **Transform** changes the selected pixels of the active layer
 or mask. Without one, it changes the selected layers. A box with handles and
@@ -92,7 +96,7 @@ In every mode:
 ### Mode
 
 **Free**, **Uniform**, **Distort** or **Warp**. **Uniform** keeps proportions.
-Layer transforms open in **Uniform**.
+**Free** is the default.
 
 ### Original Size
 
@@ -116,7 +120,7 @@ With **Warp**:
 - **Reset Grid**: replaces the warp with a straight grid.
 - **Grid**: **3 × 3** (the default), **4 × 4** or **5 × 5**. Available until you change the shape.
 
-![The canvas bar in Warp mode, with Split Grid, Select Points, Reset Grid and Grid.](shot:transform/warp-bar)
+![The canvas bar in Warp mode, with the Split Vertically menu, Select Points, Reset Grid and the 3 × 3 menu.](shot:transform/warp-bar)
 
 ### Flip and turn buttons
 

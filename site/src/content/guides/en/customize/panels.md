@@ -65,13 +65,9 @@ tab bar.
 
 You can choose which controls a panel shows.
 
-Do one of the following:
-
-- Choose **Configure *name* panel…** from the panel's menu.
-- Select the active tab again.
-
-A column with a checkbox for each control opens beside the panel. Press
-**Escape**, select the tab again, or select outside the column to close it.
+Choose **Configure *name* panel…** from the panel's menu. A column with a
+checkbox for each control opens beside the panel. Selecting another tab shows
+that panel's controls. Press **Escape** or select outside the column to close it.
 
 | Panel | Controls | Shown by default |
 | --- | --- | --- |

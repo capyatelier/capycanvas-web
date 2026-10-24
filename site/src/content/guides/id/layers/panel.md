@@ -1,7 +1,7 @@
 ---
 title: "Panel Lapisan"
 description: "Apa yang ditampilkan dan dilakukan setiap bagian panel Lapisan, termasuk menu lapisan."
-related: ["layers/working", "layers/settings", "layers/types", "layers/masks"]
+related: ["layers/working", "layers/settings", "layers/types", "layers/vector", "layers/masks"]
 ---
 
 Panel **Lapisan** mencantumkan lapisan gambar, dengan lapisan terdepan di posisi
@@ -18,7 +18,7 @@ Lakukan salah satu langkah berikut:
 - Di Sketsa, pilih **Lapisan** di bilah judul. Laci bersama terbuka pada tampilan Lapisan; pilih tombol Properti lapisan untuk beralih ke Properti.
 - Ketik "Panel Lapisan" dalam [pencarian perintah](/id/docs/start/command-search/).
 
-Di Foto, panel ini sudah terbuka di kolom kanan.
+Di Foto, panel ini sudah terbuka di kolom kanan. Di Sketsa, Anda dapat menyeret **Lapisan** dari bilah judul ke kanvas untuk menyimpannya di sana sebagai gelembung ([Gelembung alat](/id/docs/customize/bubbles/)).
 
 ## Kepala panel
 
@@ -55,7 +55,7 @@ Pilih sebuah baris untuk menjadikannya lapisan aktif dan satu-satunya baris terp
 
 Kertas memiliki gambar mini warna dan tekstur terpisah. Jika Kertas tidak ada, **Tambah kertas** muncul setelah baris terakhir.
 
-![Laci Sketsa beralih dari Lapisan ke Properti.](shot:layers/sketch-properties-drawer)
+![Laci Sketsa yang menampilkan Properti Kertas, dengan Semua lapisan di bagian bawah.](shot:layers/sketch-properties-drawer)
 
 **Ctrl**+klik gambar mini lapisan lukis untuk memuat opasitasnya sebagai seleksi, atau
 gambar mini mask untuk memuat mask. Tambahkan **Shift** untuk menambah ke seleksi,
@@ -72,34 +72,37 @@ gambar mini mask untuk memuat mask. Tambahkan **Shift** untuk menambah ke seleks
 
 ## Tombol bawah
 
-![Tombol-tombol di bagian bawah panel Lapisan.](shot:layers/panel-footer "1 Lapisan baru · 2 Grup baru · 3 Lapisan Seleksi Baru · 4 Tambah mask · 5 Tambahkan filter · 6 Impor Gambar sebagai Lapisan… · 7 Hapus lapisan terpilih · 8 Tindakan lapisan")
+![Tombol-tombol di bagian bawah panel Lapisan.](shot:layers/panel-footer "1 Lapisan baru · 2 Lapisan vektor baru · 3 Grup baru · 4 Lapisan Seleksi Baru · 5 Tambah mask · 6 Tambahkan filter · 7 Impor Gambar sebagai Lapisan… · 8 Hapus lapisan terpilih · 9 Tindakan lapisan")
 
 1. **Lapisan baru** menambahkan lapisan lukis.
-2. **Grup baru**. Jika beberapa baris terpilih, tombol ini mengelompokkannya.
-3. **Lapisan Seleksi Baru** (lihat [Lapisan seleksi](/id/docs/selections/selection-layers/)).
-4. **Tambah mask**.
-5. **Tambahkan filter** melampirkan filter ke lapisan aktif.
-6. **Impor Gambar sebagai Lapisan…**
-7. **Hapus lapisan terpilih**.
-8. **Tindakan lapisan** membuka menu lapisan dari lapisan aktif.
+2. **Lapisan vektor baru** menambahkan [lapisan vektor](/id/docs/layers/vector/).
+3. **Grup baru**. Jika beberapa baris terpilih, tombol ini mengelompokkannya.
+4. **Lapisan Seleksi Baru** (lihat [Lapisan seleksi](/id/docs/selections/selection-layers/)).
+5. **Tambah mask**.
+6. **Tambahkan filter** melampirkan filter ke lapisan aktif.
+7. **Impor Gambar sebagai Lapisan…**
+8. **Hapus lapisan terpilih**.
+9. **Tindakan lapisan** membuka menu lapisan dari lapisan aktif.
 
 Tombol tidak tersedia jika tindakannya tidak berlaku untuk lapisan aktif, misalnya
 **Tambah mask** pada lapisan terkunci (lihat
-[Bekerja dengan lapisan](/id/docs/layers/working/)).
+[Bekerja dengan lapisan](/id/docs/layers/working/)). Pada panel yang sempit, tombol yang
+tidak muat dipindahkan ke bagian atas menu **Tindakan lapisan**, dimulai dari
+**Lapisan Seleksi Baru**.
 
 ## Usapan dan tahanan
 
 Dengan pena atau jari:
 
-- Usap baris ke kiri untuk memunculkan **Hapus** di ujung kanannya. Pilih **Hapus** untuk menghapus lapisan, atau usap ke kanan untuk menyembunyikan tombol itu.
+- Usap baris ke kiri untuk memunculkan **Kunci**, **Duplikat**, dan **Hapus** di ujung kanannya. **Kunci** berubah menjadi **Buka kunci** pada lapisan terkunci. Pilih sebuah tombol untuk menerapkannya pada lapisan, atau usap ke kanan untuk menyembunyikan tombol-tombol itu.
 - Usap lapisan lukis ke kanan untuk mengaktifkan atau menonaktifkan **Kunci alpha**.
 - Usap grup ke kanan untuk mengaktifkan atau menonaktifkan **Lewat Langsung**.
 - Tahan baris untuk membuka menu lapisannya. Gerakkan tanpa mengangkat untuk menyeret baris itu.
 
-![Baris yang diusap ke kiri, dengan Hapus di ujung kanannya.](shot:layers/panel-swipe-delete)
+![Baris yang diusap ke kiri, menampilkan Kunci, Duplikat, dan Hapus.](shot:layers/panel-swipe-delete)
 
-Usapan pendek tidak mengubah apa pun. Usapan tidak berfungsi dengan tetikus, pada
-pegangan, atau pada lapisan terkunci.
+Usapan pendek tidak mengubah apa pun. Usapan tidak berfungsi dengan tetikus atau pada
+pegangan. Lapisan terkunci hanya dapat diusap ke kiri.
 
 ## Menu lapisan
 
@@ -116,7 +119,7 @@ Lakukan salah satu langkah berikut:
 
 | Item | Isi |
 | --- | --- |
-| **Baru** | **Lapisan baru**, **Lapisan kliping baru**, **Grup baru**, **Isian Warna Solid**, **Isian Gradasi**, **Lapisan Terangkan & Gelapkan Baru**, **Salin Seleksi ke Lapisan Baru**, **Potong Seleksi ke Lapisan Baru** |
+| **Baru** | **Lapisan baru**, **Lapisan kliping baru**, **Grup baru**, **Lapisan vektor baru**, **Isian Warna Solid**, **Isian Gradasi**, **Lapisan Terangkan & Gelapkan Baru**, **Salin Seleksi ke Lapisan Baru**, **Potong Seleksi ke Lapisan Baru** |
 | **Tambahkan filter** | Filter untuk dilampirkan ke lapisan, menurut kategori |
 | **Atur** | **Ubah nama lapisan…**, **Duplikat**, **Kelompokkan lapisan terpilih**, dan **Pisahkan grup** untuk grup |
 | **Mode Baur** | Semua [mode baur](/id/docs/layers/blend-modes/) |
@@ -127,7 +130,8 @@ Lakukan salah satu langkah berikut:
 | **Visibilitas** | **Tampilkan lapisan**, **Tampilkan lapisan dan grup induk**, **Isolasi lapisan terpilih**, **Tampilkan semua lapisan** |
 | **Pindahkan lapisan / mask** | Memilih alat [Operasi](/id/docs/transform/move-transform/) |
 | **Gabungkan ke Bawah**, **Gabungkan yang Terlihat**, **Cap yang Terlihat**, **Ratakan Gambar** | Lihat [Menggabungkan lapisan](/id/docs/layers/merging/) |
-| **Bersihkan Seluruh Lapisan**, **Hapus lapisan** | **Bersihkan Seluruh Lapisan** hanya muncul pada lapisan lukis |
+| **Ubah ke Lapisan Objek**, **Rasterisasi Lapisan** | **Ubah ke Lapisan Objek** muncul pada lapisan lukis, dan **Rasterisasi Lapisan** pada lapisan Objek dan [lapisan vektor](/id/docs/layers/vector/) |
+| **Bersihkan Seluruh Lapisan**, **Hapus lapisan** | **Bersihkan Seluruh Lapisan** hanya muncul pada lapisan lukis. Pada lapisan vektor, jalankan dari [pencarian perintah](/id/docs/start/command-search/) untuk menghapus setiap jalur |
 
 Membuka menu sebuah baris menjadikan lapisan itu aktif. Menu grup diawali
 **Lapisan Seleksi Baru dalam Grup…** dan **Simpan Seleksi Saat Ini dalam Grup…**.

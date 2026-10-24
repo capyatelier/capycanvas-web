@@ -8,7 +8,7 @@ Les filtres de couleur se trouvent dans **Filtre > Couleur** et dans la
 catégorie **Couleur** du panneau **Filtres**. Leurs réglages se modifient dans
 le panneau **Propriétés**.
 
-![Le panneau Filtres affichant la catégorie Couleur avec un aperçu de chaque filtre.](shot:filters/color-list)
+![La catégorie Couleur dans le panneau Filtres, de Teinte / Saturation à Courbe de transfert de dégradé, chacune avec un aperçu de trait.](shot:filters/color-list)
 
 ## Teinte / Saturation
 

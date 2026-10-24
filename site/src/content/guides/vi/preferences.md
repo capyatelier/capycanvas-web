@@ -1,6 +1,6 @@
 ---
 title: "Tùy chọn"
-description: "Hộp thoại Tùy chọn và thiết lập trên các trang Giao diện, Khung vẽ, Đầu vào, Màu và Giới thiệu."
+description: "Hộp thoại Tùy chọn và thiết lập trên các trang Diện mạo, Khung vẽ, Màu, Bút và nhập liệu cùng Giới thiệu."
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -118,24 +118,9 @@ nhóm có sẵn không thay đổi.
 
 ## Màu
 
-Các thiết lập **Bản vẽ mới** áp dụng cho [bản vẽ bạn tạo](/vi/docs/files/new/) sau đó.
 Các thiết lập **Mở ảnh** áp dụng cho ảnh bạn mở.
 
-![Trang Màu của Tùy chọn.](shot:preferences/color)
-
-### Không gian màu
-
-Chọn **sRGB** (mặc định), **Display P3**, **Adobe RGB (1998)** hoặc
-**ProPhoto RGB**.
-
-### Độ sâu bit
-
-Chọn **SDR 8 bit** (mặc định), **SDR 16 bit**, **HDR số thực 16 bit** hoặc
-**HDR số thực 32 bit**.
-
-### Nền
-
-Chọn **Trắng** (mặc định) hoặc **Trong suốt**.
+![Các thiết lập Mở ảnh trên trang Màu của Tùy chọn.](shot:preferences/color)
 
 ### Độ chính xác khi chỉnh sửa
 

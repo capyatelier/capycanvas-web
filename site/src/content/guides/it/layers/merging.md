@@ -1,11 +1,12 @@
 ---
 title: "Unire i livelli"
-description: "Combinare più livelli in un solo livello di pittura con i comandi di unione."
-related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types"]
+description: "Combinare più livelli in un solo livello con i comandi di unione, e cosa succede ai livelli vettoriali."
+related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types", "layers/vector"]
 ---
 
-Puoi unire più livelli in un solo livello di pittura. I comandi di unione si
-trovano verso la fine del menu **Livello** e del menu di ogni livello.
+Puoi unire più livelli in un solo livello di pittura, oppure due livelli
+vettoriali in un solo livello vettoriale. I comandi di unione si trovano verso la
+fine del menu **Livello** e del menu di ogni livello.
 
 ![Il menu Livello con Ribbon attivo, con Unisci livelli ritagliati, Unisci visibili, Crea livello dai visibili e Appiattisci immagine.](shot:layers/merging-menu)
 
@@ -27,6 +28,21 @@ maschera. È un riferimento se lo era uno dei due livelli.
 Entrambi i livelli devono essere visibili, non bloccati e impostati su Normale.
 Il livello sottostante non può essere un filtro, e non può essere ritagliato a
 meno che non lo sia anche il livello attivo.
+
+## Unire livelli vettoriali
+
+**Unisci sotto** mantiene i tracciati quando un [livello vettoriale](/it/docs/layers/vector/)
+si unisce al livello vettoriale sottostante, e li mette davanti. Entrambi i livelli
+devono avere opacità al 100%, nessuna maschera, nessun ritaglio e nessun filtro
+collegato.
+
+Ogni altra unione che comprende un livello vettoriale trasforma i suoi tracciati
+in pixel. Un avviso nomina i livelli, per esempio “L’unione trasforma i tracciati
+di «Line art» in pixel.”, e l'unione viene eseguita quando selezioni il suo
+pulsante. **Appiattisci immagine** aggiunge i nomi al proprio avviso sui livelli
+nascosti.
+
+![L'avviso “L’unione trasforma i tracciati di «Line art» in pixel.” con un pulsante Unisci sotto.](shot:vector/merge-notice)
 
 ## Unisci livelli ritagliati
 

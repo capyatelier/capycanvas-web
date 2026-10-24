@@ -109,7 +109,7 @@ Köşeleri yerleştirirken tuvalin altındaki [tuval çubuğu](/tr/docs/selectio
 Tuvalde bir renge tıklayın. **Otomatik seç** o noktanın çevresindeki bitişik
 alanı, **Renge göre seç** görüntünün her yerindeki eşleşen pikselleri alır.
 
-![Mod, Kenar düzleştirme, Kaynak, Tolerans, Kenarlar ayarları ve Kenar yumuşatma yarıçapıyla Otomatik seç için Araç paneli.](shot:selections/tools-auto-select-settings)
+![Mod, Seç, Tolerans, Kenarlar ayarları, Kenar yumuşatma yarıçapı, Kenar düzleştirme ve Kaynak ile Otomatik seç için Araç paneli.](shot:selections/tools-auto-select-settings)
 
 ### Kaynak
 
@@ -155,6 +155,6 @@ darbesi hiçbir şey yapmaz.
 
 ## Seç düğmesi
 
-Araç panelinde bir seçim aracının ayarlarının altındaki **Seç** düğmesi
+Araç panelinde **Mod** satırının altındaki **Seç** düğmesi
 [Seç menüsünü](/tr/docs/selections/working/) açar. **Ton aralığı** ayarlarında
 **Seç** düğmesi yoktur.

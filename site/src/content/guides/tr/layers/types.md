@@ -1,10 +1,10 @@
 ---
 title: "Katman türleri"
-description: "Boya, nesne, kâğıt, grup, dolgu, filtre ve seçim katmanları ve her birinin kuralları."
-related: ["layers/panel", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
+description: "Boya, nesne, vektör, kâğıt, grup, dolgu, filtre ve seçim katmanları ve her birinin kuralları."
+related: ["layers/panel", "layers/vector", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
 ---
 
-![Katmanlar panelindeki geçerli katman türleri.](shot:layers/types-rows)
+![Katmanlar paneli: bir seçim katmanı, bir grup, bir boya katmanı, bir filtre, dolgu katmanları, bir vektör katmanı ve Kâğıt.](shot:layers/types-rows)
 
 ## Boya katmanı
 
@@ -18,9 +18,13 @@ Nesne katmanı içe aktarılan görüntüyü kendi boyutu, bit derinliği ve ren
 
 Nesne katmanını kaynağını tekrar tekrar örneklemeden taşıyabilir, ölçekleyebilir ve döndürebilirsiniz. Piksellerini boyamak veya boya katmanı gerektiren bir komut kullanmak için **Katman > Katmanı pikselleştir** seçin. Pikselleştirme onu çizimin renk uzayına, bit derinliğine ve piksel ızgarasına dönüştürür.
 
+## Vektör katmanı
+
+Vektör katmanı piksel yerine yollar tutar. **Katman > Yeni > Yeni vektör katmanı** komutunu seçin veya Katmanlar panelinin altındaki **Yeni vektör katmanı** seçeneğini seçin. Küçük resminde bir yol rozeti bulunur. Bkz. [Vektör katmanları](/tr/docs/layers/vector/).
+
 ## Kâğıt
 
-Kâğıt arka plan rengini ve kuru malzeme çizgilerinin kullandığı dokuyu sağlar. Katman yığınının en altında kalır ve renk ile doku küçük resimleri bulunur.
+Kâğıt arka plan rengini ve **Doku gücü** olan fırçaların tepki verdiği dokuyu sağlar. Katman yığınının en altında kalır ve renk ile doku küçük resimleri bulunur.
 
 Çizim bir Kâğıt içerebilir. Kâğıdın maskesi olamaz, kırpma katmanı olamaz, normal katmanların üzerine taşınamaz veya normal katmanla birleştirilemez. Doku, ışık ve diğer ayarları için bkz. [Kâğıt](/tr/docs/layers/paper/).
 

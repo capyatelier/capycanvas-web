@@ -1,25 +1,22 @@
 ---
 title: "Strumenti pennello"
 description: "Gli strumenti pennello, i loro predefiniti integrati e dove sceglierli."
-related: ["brushes/basics", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
+related: ["brushes/basics", "layers/vector", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
 ---
 
-Puoi dipingere con gli strumenti **Penna**, **Matita**, **Carboncino**, **Gesso**, **Pastello**, **Pastello a cera**, **Pennello**, **Aerografo** e **Decorazione**, e cancellare con la **Gomma**. Ogni strumento contiene uno o più gruppi di predefiniti di pennello integrati.
+Puoi dipingere con gli strumenti **Penna**, **Matita**, **Pennello**, **Aerografo** e **Decorazione**, e cancellare con la **Gomma**. Ogni strumento contiene uno o più gruppi di predefiniti di pennello integrati.
 
 ## Strumenti e predefiniti
 
 | Strumento | Gruppi | Predefiniti |
 | --- | --- | --- |
-| **Penna** | **Penna** | **G-Pen**, **G-Pen ruvida**, **Penna calligrafica**, **Penna antica**, **Penna realistica**, **Inchiostro bagnato**, **Inchiostro a macchie**, **Inchiostro realistico a pennello** |
+| **Penna** | **Penna** | **G-Pen**, **Monolinea**, **G-Pen ruvida**, **Inchiostro a macchie**, **Penna calligrafica**, **Penna antica**, **Penna realistica**, **Inchiostro bagnato**, **Inchiostro realistico a pennello** |
 | | **Pennarello** | **Pennarello** |
 | **Matita** | **Matita** | **Matita**, **Matita appuntita**, **Matita per ombreggiare** |
-| **Carboncino** | **Carboncino** | **Carboncino** |
-| **Gesso** | **Gesso** | **Gesso** |
-| **Pastello** | **Pastello** | **Pastello a blocco** |
-| **Pastello a cera** | **Pastello a cera** | **Pastello a cera** |
+| | **Pastello** | **Carboncino**, **Pastello a cera**, **Gesso**, **Pastello a blocco** |
 | **Pennello** | **Pittura** | **Pennello**, **Pennello a setole**, **Pennello piatto con trama**, **Sfregazzo asciutto**, **Velatura trasparente**, **Gouache coprente**, **Velatura moltiplicativa** |
 | | **Acquerello** | **Lavatura ad acquerello**, **Acquerello bagnato** |
-| | **Pittura a olio** | **Olio carico**, **Spatola**, **Pennello tondo bagnato** |
+| | **Pittura a olio** | **Olio carico**, **Spatola**, **Pennello tondo bagnato**, **Pennello miscelatore** |
 | **Aerografo** | **Aerografo** | **Aerografo** |
 | | **Spruzzo** | **Spruzzo** |
 | **Gomma** | **Gomma** | **Gomma** |
@@ -31,13 +28,14 @@ corrente del [pannello Colore](/it/docs/color/color-panel/).
 
 ## Comportamento dei predefiniti
 
-Questi comportamenti sono integrati nei predefiniti e non hanno un'impostazione.
+Questi comportamenti sono integrati nei predefiniti e non hanno un'impostazione. I
+predefiniti a secco sono descritti in [Materiali a secco](/it/docs/brushes/dry-media/).
 
 | Predefinito | Comportamento |
 | --- | --- |
 | **Penna calligrafica**, **Penna antica** | Pennino inclinato. |
+| **Monolinea** | Mantiene un solo spessore a ogni pressione. |
 | **Pennarello** | Punta a scalpello. |
-| **Matita**, **Matita appuntita**, **Matita per ombreggiare**, **Carboncino**, **Gesso**, **Pastello a blocco**, **Pastello a cera** | Pressione e inclinazione cambiano forma e copertura del segno. Vedi [Materiali a secco](/it/docs/brushes/dry-media/). |
 | **Aerografo** | Continua ad aggiungere colore mentre tieni ferma la penna. |
 | **Spruzzo** | Sparge le impronte attorno al tratto. |
 | **Velatura moltiplicativa** | Dipinge in modalità Moltiplica. |
@@ -106,7 +104,8 @@ Puoi cancellare il colore dal livello selezionato con la **Gomma**. Premi **E**,
 oppure seleziona **Gomma** nella barra strumenti Strumenti o, in Schizzo, nella
 barra del titolo.
 
-Mentre modifichi una maschera, la Gomma rimuove copertura dalla maschera.
+Mentre modifichi una maschera, la Gomma rimuove copertura dalla maschera. Su un
+livello vettoriale taglia o rimuove tracciati ([Livelli vettoriali](/it/docs/layers/vector/)).
 
 Con **Pittura trasparente** selezionato nel pannello Colore, ogni pennello
 cancella. Anche l'estremità gomma di una penna può cancellare
@@ -122,6 +121,9 @@ filtro. Se il filtro non ha una maschera, il tratto va al livello a cui si appli
 il filtro, oppure al primo livello sottostante
 ([Come si applicano i filtri](/it/docs/filters/how-filters-apply/)).
 
+Su un livello vettoriale, **G-Pen** e **Monolinea** aggiungono tracciati invece di
+dipingere pixel ([Livelli vettoriali](/it/docs/layers/vector/)).
+
 Una selezione attiva limita il colore alla selezione.
 
 Sui livelli seguenti, un tratto non dipinge nulla e un avviso ne indica il
@@ -129,6 +131,7 @@ motivo:
 
 - Un gruppo o un livello di selezione.
 - Un livello di riempimento senza maschera.
+- Un livello vettoriale, per un pennello che non può disegnare tracciati.
 - Un livello con **Blocca modifica** attivo, o all'interno di un gruppo bloccato.
 - Un livello filtro senza maschera, quando il livello sottostante è bloccato o assente.
 - Un livello scalato o ruotato, finché non scegli **Applica trasformazione** ([Spostamento e trasformazione](/it/docs/transform/move-transform/)).

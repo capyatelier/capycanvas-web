@@ -14,13 +14,20 @@ Aşağıdakilerden birini yapın:
 - **J** tuşuna basın.
 - Boya'da Araçlar çubuğunda **Karıştır** düğmesini seçin. **Klonlama damgası** da aynı düğmededir.
 - Fotoğraf'ta Araçlar çubuğunda **Karıştır** düğmesini seçin.
-- Eskiz'de **Şekillendir** çekmecesinde **Karıştır** öğesini seçin.
+- Eskiz'de **Şekillendir** çekmecesinde bir karıştırıcı seçin.
 - Komut aramada **Karıştır** öğesini arayın.
 
-Karıştır'ın iki hazır ayarı vardır: **Doğal karıştırıcı** ve **Lekeleme**. İkisi
-de **Boya yükü** %0 olarak başlar ve kendi rengini taşımaz. **Renk alma**,
-rengin darbe boyunca ne kadar sürükleneceğini belirler
-([Karıştırma, yayılma ve kıllar](/tr/docs/brushes/wet-media/)).
+**Araç seti** içinde bir set ve bir karıştırıcı seçin. Varsayılan karıştırıcı:
+**Lekeleme**.
+
+| Set | Karıştırıcılar |
+| --- | --- |
+| **Karıştır** | **Lekeleme**, **Yumuşak karıştırıcı**, **Bulanıklaştırma**, **Kâğıt karıştırma kalemi**, **Kâğıt mendil**, **Grenli karıştırıcı**, **Dokuyu koruyan karıştırıcı**, **Ton karıştırıcı** |
+| **Islak boya** | **Doğal karıştırıcı**, **Islak karıştırıcı**, **Renk karıştırıcı**, **Karıştırma bıçağı**, **Kıl karıştırıcı** |
+| **Efektler** | **Ressamca karıştırıcı**, **Tarak karıştırıcı**, **Dağınık karıştırıcı**, **Keskinleştirme**, **Ebru**, **Kristal karıştırıcı**, **Dither karıştırıcı** |
+
+Her karıştırıcının ayarları
+[Karıştırma, yayılma ve kıllar](/tr/docs/brushes/wet-media/) bölümündedir.
 
 ## Sıvılaştır
 
@@ -28,7 +35,7 @@ Aşağıdakilerden birini yapın:
 
 - Karıştır etkinken **J** tuşuna basın.
 - Boya'da veya Fotoğraf'ta Araçlar çubuğunda **Sıvılaştır** düğmesini seçin. Bir mod seçmek için düğmeye sağ tıklayın veya düğmeyi basılı tutun.
-- Eskiz'de **Şekillendir** çekmecesinde **Sıvılaştır** öğesini seçin.
+- Eskiz'de **Şekillendir** çekmecesindeki **Sıvılaştır** setinde bir mod seçin.
 - Komut aramada **Sıvılaştır** öğesini arayın.
 
 Her mod, **Araç seti** içinde bir hazır ayardır:
@@ -41,12 +48,38 @@ Her mod, **Araç seti** içinde bir hazır ayardır:
 | **Sıvılaştırma sıkıştırma** | Pikselleri fırçanın merkezine doğru çeker. |
 | **Sıvılaştırma genişletme** | Pikselleri fırçanın merkezinden dışarı doğru iter. |
 | **Sıvılaştırma kristalleri** | Fırçanın altındaki görüntüyü küçük, dağınık hücrelere böler. |
+| **Kenar** | Pikselleri iki yandan darbe çizgisine doğru çeker. |
+| **Yeniden oluştur** | Fırçanın altında Sıvılaştırma ile yapılan deformasyonu geri alır. |
+
+Sıvılaştır'ın Uygula düğmesi yoktur. Her darbe katmanı değiştirir ve kendi
+başına bir geri alma adımıdır. Siz katmana boyayana, katmanı doldurana,
+filtreleyene, dönüştürene veya katmana yapıştırana kadar darbeler, katmanın ilk
+darbeden önceki piksellerini bozmayı sürdürür.
+
+## Sıvılaştırmayı ayarla ve Sıvılaştırmayı sıfırla
+
+Bir katmanda Sıvılaştır'ın yaptığı her şeyi **Sıvılaştırmayı ayarla** ile
+azaltabilir ya da katmanı ilk darbeden önceki piksellerine **Sıvılaştırmayı
+sıfırla** ile döndürebilirsiniz.
+
+Aşağıdakilerden birini yapın:
+
+- **Araç** panelinde **Sıvılaştırmayı ayarla** seçeneğini açın veya **Sıvılaştırmayı sıfırla** düğmesini seçin.
+- Komut aramada **Sıvılaştırmayı ayarla** veya **Sıvılaştırmayı sıfırla** öğesini arayın.
+
+**Sıvılaştırmayı ayarla** açıkken **Araç** panelinde bir **Miktar** kaydırıcısı
+görünür. %100'de deformasyon olduğu gibi kalır, %0'da ortadan kalkar.
+Kaydırıcıyı bırakmak tek bir geri alma adımıdır, **Sıvılaştırmayı sıfırla** da
+öyle.
+
+Katmanda Sıvılaştırma değişikliği olana kadar iki komut da kullanılamaz ve
+“Önce bu katmana sıvılaştırma uygulayın” iletisi görünür.
 
 ## Sıvılaştırma ayarları
 
-![Sıvılaştırma kristalleri için Araç paneli: Sıvılaştırma grubunda Güç ve Bozulma.](shot:drawing/liquify-settings)
+![Sıvılaştırma kristalleri için Araç paneli: Güç, ardından Bozulma ve Momentum'u gösteren Sıvılaştırma grubu, Sıvılaştırmayı ayarla ve Sıvılaştırmayı sıfırla.](shot:drawing/liquify-settings)
 
-**Güç**, **Bozulma** ve **Momentum**, **Araç** panelinin **Sıvılaştırma** grubundadır. **Güç**, çizginin pikselleri ne kadar güçlü hareket ettirdiğini belirler.
+**Bozulma** ve **Momentum**, **Araç** panelinin **Sıvılaştırma** grubundadır.
 
 ### Güç
 
@@ -55,31 +88,23 @@ basıncında ve yumuşak bir ucun kenarına doğru zayıflar.
 
 ### Bozulma
 
-**Sıvılaştırma kristalleri** modunun pikselleri ne kadar dağıtacağını belirler.
-Bu ayar başka hiçbir modda yoktur.
+Hareketi düzensiz yapar. **Sıvılaştırma kristalleri** modunda hücrelerin ne
+kadar dağılacağını belirler. **Yeniden oluştur** modunda **Bozulma** yoktur.
 
 ### Momentum
 
-**Sıvılaştırma itme** modunun pikselleri kalemin hareket ettiğinden daha uzağa
-taşımasını sağlar. Yalnızca bu modda görünür.
+Kalemi kaldırdıktan sonra etkiyi darbenin son yönünde sürdürür. **Yeniden
+oluştur** modunda **Momentum** yoktur.
 
 ## Eskiz'de Şekillendir çekmecesi
 
-Eskiz'de başlık çubuğundaki **Şekillendir**; Karıştır, Sıvılaştır ve rötuş
-araçlarını içerir.
+Eskiz'de son Karıştır, Sıvılaştır veya Rötuş aracını kullanmak için başlık
+çubuğunda **Şekillendir** düğmesini seçin, çekmecesini açmak için yeniden,
+çekmeceyi kapatmak için bir kez daha seçin. Çekmece setleri, seçilen setin
+araçlarını ve ayarlarını listeler. **Şekillendir** ve **Fırça**, kendi son hazır
+ayarlarını ve fırça boyutlarını ayrı ayrı korur.
 
-- Son şekillendirme hazır ayarını kullanmak için **Şekillendir** düğmesini seçin. İlk seferde bu hazır ayar **Doğal karıştırıcı** olur.
-- Çekmecesini açmak için **Şekillendir** düğmesini yeniden, çekmeceyi kapatmak için bir kez daha seçin.
-
-Çekmecede üç sütun bulunur. **Şekillendirme**; **Karıştır**, **Sıvılaştır**,
-**Klonla**, **Düzelt** ve **Nokta düzeltme** öğelerini listeler. **Araçlar**
-seçilen grubun hazır ayarlarını listeler, **Araç** ise bunların ayarlarını
-içerir.
-
-**Şekillendir** ve **Fırça**, kendi son hazır ayarlarını ve fırça boyutlarını
-ayrı ayrı korur.
-
-![Eskiz'de Şekillendir çekmecesi: Şekillendirme sütununda Sıvılaştır seçili, Araçlar sütununda altı Sıvılaştır hazır ayarı.](shot:drawing/sketch-sculpt-drawer)
+![Eskiz'de Şekillendir çekmecesi: solda Karıştır, Islak boya, Efektler, Sıvılaştır ve Rötuş setleri, ortada Karıştır setinin karıştırıcıları, sağda Lekeleme ayarları.](shot:drawing/sketch-sculpt-drawer)
 
 ## Maskeye boyama
 

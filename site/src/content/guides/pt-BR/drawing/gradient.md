@@ -43,7 +43,7 @@ Faça uma das seguintes ações:
 
 ## Editor de pontos de cor
 
-![O painel Ferramenta da ferramenta Degradê, com a linha Forma, o editor de pontos de cor e Opacidade.](shot:drawing/gradient-tool-panel)
+![O painel Ferramenta da ferramenta Degradê, com a linha Forma e o editor de pontos de cor.](shot:drawing/gradient-tool-panel)
 
 Você pode editar as cores do degradê no editor de pontos de cor, abaixo de
 **Forma** no painel **Ferramenta**. O botão de degradê na barra Opções da

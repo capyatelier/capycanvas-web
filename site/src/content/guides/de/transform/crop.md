@@ -6,7 +6,7 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 
 Mit dem Werkzeug **Zuschneiden** können Sie die Leinwand auf einen Rahmen
 zuschneiden. Abgeschnittene Pixel bleiben verborgen auf ihren Ebenen, außer Sie
-aktivieren **Abgeschnittene Bereiche löschen**.
+aktivieren **Abgeschnittene Malbereiche löschen**.
 
 ## Zuschneiden
 
@@ -46,7 +46,7 @@ zum größtmöglichen Rahmen in diesem Verhältnis. Standard ist **Frei**.
 **Zuschnittausrichtung wechseln**, die Symbolschaltfläche neben **Verhältnis**,
 wechselt den Rahmen zwischen Quer- und Hochformat.
 
-Verhältnis, Überlagerung und **Abgeschnittene Bereiche löschen** werden für den
+Verhältnis, Überlagerung und **Abgeschnittene Malbereiche löschen** werden für den
 nächsten Zuschnitt übernommen.
 
 ![Das Menü Verhältnis in der Zuschnittleiste.](shot:transform/crop-ratio-menu)
@@ -82,14 +82,14 @@ Sie in ihrer Leinwandaktionsleiste **Begradigen** aus (siehe
 [Lineale und Hilfslinien](/de/docs/drawing/ruler/)). Ein Zuschnitt öffnet sich,
 an der Hilfslinie ausgerichtet.
 
-## Abgeschnittene Bereiche löschen
+## Abgeschnittene Malbereiche löschen
 
-Aktivieren Sie **Abgeschnittene Bereiche löschen**, um beim Anwenden des
+Aktivieren Sie **Abgeschnittene Malbereiche löschen**, um beim Anwenden des
 Zuschnitts die Pixel außerhalb des Rahmens zu verwerfen. Platzierte Fotos
 behalten ihre Originalpixel. Standardmäßig deaktiviert.
 
 Ein Zuschnitt, der mit den verborgen behaltenen Pixeln zu groß wäre, funktioniert
-nur mit aktiviertem **Abgeschnittene Bereiche löschen**.
+nur mit aktiviertem **Abgeschnittene Malbereiche löschen**.
 
 ## Zurücksetzen
 

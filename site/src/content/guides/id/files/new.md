@@ -12,27 +12,25 @@ Pilih **Berkas > Baru…**, tekan **Ctrl+N** jika tersedia, atau pilih **Baru…
 
 Pilih preset menurut kategori, cari berdasarkan nama, atau pilih preset yang baru digunakan. Preset mengisi dimensi, resolusi, pengaturan warna, dan pengaturan Kertas.
 
-![Penjelajah preset Gambar baru.](shot:files/new-presets)
-
-Sebelum Anda menggunakan atau menyimpan pengaturan lain, Preset memilih **Sketchbook**: A4 potret (210 × 297 mm), kertas Gambar dalam Putih alami, dan 2480 × 3508 px pada 300 ppi.
+![Penjelajah preset Gambar baru dengan kategori Sketsa, Cat air, Pastel, Kanvas, Media campuran, Komik, Cetakan, dan Digital.](shot:files/new-presets)
 
 Simpan pengaturan saat ini sebagai preset bernama untuk digunakan kembali. Buka menu preset tersimpan untuk mengganti nama atau menghapusnya. Preset bawaan tidak dapat diganti nama atau dihapus.
 
 ## Lembar
 
-Pratinjau menunjukkan proporsi dan orientasi lembar. Masukkan nama gambar, lalu atur **Lebar** dan **Tinggi** dalam piksel, inci, sentimeter, atau milimeter. Gunakan kontrol tautan untuk mempertahankan proporsi saat ini, dan kontrol orientasi untuk menukar lebar dan tinggi.
+Pratinjau menunjukkan proporsi dan orientasi lembar. Masukkan nama gambar, lalu atur **L** dan **T**, dan pilih px, in, cm, atau mm sebagai satuan. Gunakan kontrol tautan untuk mempertahankan proporsi saat ini, dan kontrol orientasi untuk menukar lebar dan tinggi.
 
 **Resolusi** mengatur piksel per inci untuk dimensi fisik dan skala [tekstur Kertas](/id/docs/layers/paper/). Mengubah resolusi saja mengubah metadata ukuran cetak tanpa mengambil sampel ulang gambar.
-
-Jendela baru dimulai dengan gambar kosong A4 lanskap yang terpisah pada 300 ppi (3508 × 2480 px).
 
 Dialog menampilkan dimensi piksel yang dihasilkan dan perkiraan kapasitas. Pengaturan di luar batas gambar perangkat saat ini tidak dapat dibuat; batas bergantung pada dimensi, kedalaman bit, dan sumber daya grafis yang tersedia.
 
 ## Kertas
 
-![Pilihan tekstur Kertas di Gambar baru.](shot:files/new-paper)
+![Laci Kertas di Gambar baru dengan Tanpa kertas, ubin kertas, dan Visibilitas tekstur.](shot:files/new-paper)
 
-Pilih tekstur Kertas bawaan atau impor untuk gambar baru. **Impor…** menambahkan gambar ke pustaka kertas dan memilihnya. Pilih **Tanpa kertas** untuk membuat gambar tanpa lapisan Kertas.
+Pilih ubin tekstur di bawah **Kertas** untuk memilih tekstur Kertas bawaan atau impor untuk gambar baru. **Visibilitas tekstur** di bagian bawah laci mengatur nilai yang sama seperti di [Properti](/id/docs/layers/paper/) lapisan Kertas, dan ubin menampilkannya di bawah nama tekstur. **Impor…** adalah ubin terakhir. Ubin ini menambahkan gambar ke pustaka kertas dan memilihnya.
+
+Pilih **Tanpa kertas** untuk membuat gambar tanpa lapisan Kertas. **Visibilitas tekstur** kemudian tidak tersedia.
 
 ![Pilihan Warna dan Transparan Kertas di Gambar baru.](shot:files/new-paper-color)
 

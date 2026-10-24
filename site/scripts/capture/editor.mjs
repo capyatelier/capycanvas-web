@@ -147,7 +147,7 @@ export async function editor(b, { saved } = {}) {
     await open(name, options);
     assert.equal(await read('layerApp.state().document_file.location?.name'), name, `Opened project: ${name}`);
   };
-  const configureNewDocument = async (width, height, { space = 'Srgb', depth = 'U8', resolution = 300, paper = 'drawing_paper', name } = {}) => {
+  const configureNewDocument = async (width, height, { space = 'Srgb', depth = 'U8', resolution = 300, paper = 'drawing_paper', relief = 0, name } = {}) => {
     await wait('!!document.querySelector("#new-drawing-dialog[open]") && !!layerApp.state().new_drawing');
     await b.evaluate(`(()=>{
       const view=()=>layerApp.state().new_drawing,dialog=()=>document.querySelector('#new-drawing-dialog[open]');
@@ -161,7 +161,10 @@ export async function editor(b, { saved } = {}) {
       choose('new-drawing-space','spaces',${JSON.stringify(space)});choose('new-drawing-depth','depths',${JSON.stringify(depth)});
       press('#new-drawing-texture');
       const paper=view().drawer.tiles.findIndex(t=>t.id===${JSON.stringify(paper)});if(paper<0)throw Error('Missing paper');
-      press('[data-new-drawing-paper="'+paper+'"]');press('#new-drawing-paper-use');
+      press('[data-new-drawing-paper="'+paper+'"]');
+      const relief=document.querySelector('#new-drawing-paper-relief-field input');if(!relief)throw Error('Missing Texture visibility field');
+      relief.focus();relief.value=String(${relief});relief.dispatchEvent(new Event('input',{bubbles:true}));
+      press('#new-drawing-paper-use');
       press('#new-drawing-paper-color');press('#new-drawing-paper-color-tiles [data-new-drawing-paper-color="0"]');press('#new-drawing-color-use');
       ${name ? `const field=dialog().querySelector('#new-drawing-name');field.value=${JSON.stringify(name)};field.dispatchEvent(new Event('input',{bubbles:true}));` : ''}
     })()`);
@@ -187,5 +190,17 @@ export async function editor(b, { saved } = {}) {
     }
     await b.settle(); await invoke('fit_canvas');
   };
-  return { b, read, idle, canvas, send, invoke, layer, wait, click, ready, active, select, add, visible, show, brush, setColor, path, stroke, draw, lasso, exportDialog, save, provide, drawings, closeOtherDrawings, selectDrawing, frame, open, load, configureNewDocument, newDocument, workspace };
+  const takeBubble = async (control, position) => {
+    const header = await read(`layerApp.app.workspace_persistence().layout.header.zones.flat().find(entry=>JSON.stringify(entry.item.control)===${JSON.stringify(JSON.stringify(control))})?.id ?? null`);
+    assert.ok(header, `Title bar item for a bubble: ${JSON.stringify(control)}`);
+    const viewport = await read(`(()=>{const r=document.querySelector('#workspace').getBoundingClientRect();return [r.width,r.height]})()`);
+    const before = await read('layerApp.app.bubbles().map(p=>p.view.id)');
+    for (const phase of ['down', 'up']) await send({ type: 'bubble', action: { type: 'drag', grab: { kind: 'header', id: header }, phase, position, viewport } });
+    const id = await read(`layerApp.app.bubbles().find(p=>!${JSON.stringify(before)}.includes(p.view.id))?.view.id ?? null`);
+    assert.ok(id != null, `Bubble taken from the title bar: ${JSON.stringify(control)}`);
+    await b.settle();
+    return id;
+  };
+  const bubbleOption = (id, option) => send({ type: 'bubble', action: { type: 'option', id, option } });
+  return { b, read, idle, canvas, send, invoke, layer, wait, click, ready, active, select, add, visible, show, brush, setColor, path, stroke, draw, lasso, exportDialog, save, provide, drawings, closeOtherDrawings, selectDrawing, frame, open, load, configureNewDocument, newDocument, workspace, takeBubble, bubbleOption };
 }

@@ -1,6 +1,6 @@
 ---
 title: "Tercihler"
-description: "Tercihler iletişim kutusu ve Görünüm, Tuval, Giriş, Renk ve Hakkında sayfalarındaki ayarlar."
+description: "Tercihler iletişim kutusu ve Görünüm, Tuval, Renk, Kalem ve giriş ve Hakkında sayfalarındaki ayarlar."
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -121,24 +121,9 @@ olarak kapalıdır. Mevcut gruplar değişmez.
 
 ## Renk
 
-**Yeni çizimler** ayarları daha sonra
-[oluşturduğunuz çizimlere](/tr/docs/files/new/) uygulanır. **Fotoğraf açma**
-ayarları açtığınız fotoğraflara uygulanır.
+**Fotoğraf açma** ayarları açtığınız fotoğraflara uygulanır.
 
-![Tercihler'in Renk sayfası.](shot:preferences/color)
-
-### Renk uzayı
-
-**sRGB** (varsayılan), **Display P3**, **Adobe RGB (1998)** veya **ProPhoto RGB** seçeneğini seçin.
-
-### Bit derinliği
-
-**8 bit SDR** (varsayılan), **16 bit SDR**, **16 bit kayan noktalı HDR** veya
-**32 bit kayan noktalı HDR** seçeneğini seçin.
-
-### Arka plan
-
-**Beyaz** (varsayılan) veya **Saydam** seçeneğini seçin.
+![Tercihler'in Renk sayfasındaki Fotoğraf açma ayarları.](shot:preferences/color)
 
 ### Düzenleme hassasiyeti
 

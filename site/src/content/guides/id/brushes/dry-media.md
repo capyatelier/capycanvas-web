@@ -12,11 +12,11 @@ Kuas media kering menggunakan tekanan pena, kemiringan pena, dan tekstur Kertas 
 
 Preset media kering bawaan adalah **Pensil**, **Pensil Runcing**, **Pensil Arsir**, **Arang**, **Kapur**, **Balok Pastel**, dan **Krayon**. Pilih alatnya di bilah Alat, lalu pilih preset di **Set Alat**.
 
-Pensil dan Pensil Runcing merespons tekanan dan kemiringan. Pensil Arsir, Arang, dan Kapur menggunakan tekanan untuk cakupan dan kemiringan untuk goresan sisi yang lebar. Balok Pastel menggunakan tepi atau sisi lebar balok saat pena dimiringkan. Krayon merespons tekanan dan kemiringan dengan goresan membulat.
+Setiap preset merespons tekanan dan kemiringan pena. Memiringkan pena ke arah kertas melebarkan goresan menjadi goresan sisi. **Balok Pastel** menggambar dengan ujung balok saat tegak dan dengan sisi panjangnya saat dimiringkan.
 
 ## Pengaturan utama
 
-![Kontrol utama dan pengaturan Bahan untuk kuas media kering.](shot:brushes/dry-media-settings)
+![Panel Alat untuk Pensil dengan Ukuran kuas, Kekuatan, Kekuatan tekstur, dan Kekerasan bahan di atas grup Penghalusan, Ujung, dan Paduan.](shot:brushes/dry-media-settings)
 
 ### Ukuran
 
@@ -30,11 +30,11 @@ Mengatur seberapa kuat bahan menandai permukaan. Nilai lebih tinggi mengisi lebi
 
 ### Kekuatan tekstur
 
-Mengatur seberapa kuat tekstur Kertas mengubah cakupan goresan. Pada 0%, goresan tidak merespons tekstur Kertas.
+Mengatur seberapa kuat tekstur Kertas mengubah cakupan goresan. Pada 0%, goresan tidak merespons tekstur Kertas. Penggeser mencapai 200%.
 
 ### Kekerasan bahan
 
-Mengatur kemudahan bahan menutupi bagian rendah dan tinggi tekstur Kertas. Nilai lebih tinggi membuat bahan berperilaku lebih keras.
+Mengatur seberapa besar tekanan pena mengubah jumlah pigmen yang ditinggalkan setiap sentuhan. Pada nilai tinggi, sentuhan ringan meninggalkan sedikit pigmen, dan pada nilai rendah meninggalkan butiran yang kuat.
 
 ## Tekstur kertas
 
@@ -42,4 +42,4 @@ Goresan media kering menggunakan [Kertas](/id/docs/layers/paper/) terdekat pada 
 
 ![Goresan media kering serupa pada kertas Bristol, Cold press, dan Amplas.](shot:layers/paper-surface-comparison)
 
-Kuas media kering tidak menampilkan kontrol media basah seperti **Rembesan**, **Muatan air**, atau **Pencampuran**. Kontrol Ujung yang tersedia bergantung pada preset.
+Kuas media kering hanya menampilkan **Sudut ujung** di grup **Ujung**, dan tidak menampilkan kontrol media basah seperti **Rembesan**, **Muatan air**, atau **Pencampuran**.

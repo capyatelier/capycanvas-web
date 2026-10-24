@@ -92,7 +92,7 @@ related: ["selections/working", "selections/tonal-range", "selections/quick-mask
 
 點按畫布上的某個色彩。**自動選取**選取該點周圍的連續區域，**依色彩選取**選取影像中任意位置的匹配像素。
 
-![自動選取的工具設定面板，包含模式、消除鋸齒、來源、容差、邊緣設定和羽化半徑。](shot:selections/tools-auto-select-settings)
+![自動選取的工具設定面板，包含模式、選取、容差、邊緣設定、羽化半徑、消除鋸齒和來源。](shot:selections/tools-auto-select-settings)
 
 ### 來源
 
@@ -128,4 +128,4 @@ related: ["selections/working", "selections/tonal-range", "selections/quick-mask
 
 ## 選擇按鈕
 
-工具設定面板中選取範圍工具設定下方的**選取**會開啟[選擇選單](/zh-Hant/docs/selections/working/)。**明暗範圍**設定中沒有**選取**按鈕。
+工具設定面板中**模式**列下方的**選取**會開啟[選擇選單](/zh-Hant/docs/selections/working/)。**明暗範圍**設定中沒有**選取**按鈕。

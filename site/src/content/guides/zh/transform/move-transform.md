@@ -1,7 +1,7 @@
 ---
 title: "移动和变换"
-description: "用操作工具和变换移动、变换图层及选中的像素。"
-related: ["selections/working", "transform/crop", "transform/clipboard", "drawing/ruler"]
+description: "用操作工具和变换移动、变换图层、选中的像素和路径。"
+related: ["selections/working", "layers/paths", "transform/crop", "transform/clipboard", "drawing/ruler"]
 ---
 
 可以用**操作**工具移动图层和选中的像素，并用**变换**对其进行缩放、旋转、斜切、扭曲或网格变形。
@@ -12,7 +12,7 @@ related: ["selections/working", "transform/crop", "transform/clipboard", "drawin
 
 - 在图层面板中打开某个图层的菜单，选择**移动图层／蒙版**。
 - 按 **O**。
-- 在“绘画”和“照片”中，选择“工具”工具栏中的**操作／变换**。右键单击或按住该按钮可选择**操作**。
+- 在“绘画”和“照片”中，选择“工具”工具栏中的**操作／变换／编辑锚点**。右键单击或按住该按钮可选择**操作**。
 - 在[命令搜索](/zh/docs/start/command-search/)中输入“操作”。
 
 “素描”中没有**操作**按钮。
@@ -29,6 +29,10 @@ related: ["selections/working", "transform/crop", "transform/clipboard", "drawin
 
 显示辅助线时，**操作**也可以选择和拖动辅助线（参见[标尺和辅助线](/zh/docs/drawing/ruler/)）。
 
+## 移动路径
+
+在矢量图层上，**操作**会选择、移动、缩放和旋转路径，而不是移动图层。按 **Ctrl+A** 可选中所有路径。选中路径后选择**编辑 > 变换**，会切换到**操作**及其变换框。参见[编辑路径](/zh/docs/layers/paths/)。
+
 ## 保留副本
 
 可以移动选中像素的副本，同时将原像素保留在原位。
@@ -43,7 +47,7 @@ related: ["selections/working", "transform/crop", "transform/clipboard", "drawin
 - 按 **Ctrl+T**。
 - 选择**变换**，它在“绘画”和“照片”中位于“命令”工具栏，在“素描”中位于标题栏。
 - 选择选区操作栏上的**变换**。
-- 在“绘画”和“照片”中，右键单击或按住“工具”工具栏中的**操作／变换**，然后选择**变换**。
+- 在“绘画”和“照片”中，右键单击或按住“工具”工具栏中的**操作／变换／编辑锚点**，然后选择**变换**。
 
 有选区时，**变换**更改当前图层或蒙版中选中的像素。没有选区时，它更改所选图层。画布上会出现带控制点的变换框和画布操作栏。
 
@@ -82,7 +86,7 @@ related: ["selections/working", "transform/crop", "transform/clipboard", "drawin
 
 ### 模式
 
-**自由**、**等比**、**扭曲**或**网格变形**。**等比**保持比例。图层变换以**等比**模式打开。
+**自由**、**等比**、**扭曲**或**网格变形**。**等比**保持比例。默认为**自由**。
 
 ### 原始大小
 
@@ -105,7 +109,7 @@ related: ["selections/working", "transform/crop", "transform/clipboard", "drawin
 - **重置网格**：用平直网格替换当前变形。
 - **网格**：**3 × 3**（默认）、**4 × 4** 或 **5 × 5**。更改形状之前可用。
 
-![网格变形模式下的画布操作栏，包含拆分网格、选择控制点、重置网格和网格。](shot:transform/warp-bar)
+![网格变形模式下的画布操作栏，包含垂直拆分菜单、选择控制点、重置网格和 3 × 3 菜单。](shot:transform/warp-bar)
 
 ### 翻转和旋转按钮
 

@@ -20,7 +20,8 @@ Führen Sie eine der folgenden Aktionen aus:
 - Drücken Sie **S**. Drücken Sie die Taste erneut, um zu **Reparaturpinsel** und dann zu **Bereichsreparaturpinsel** zu wechseln.
 - Wählen Sie im Arbeitsbereich Foto in der Werkzeugleiste Werkzeuge **Klonstempel** oder **Bereichsreparaturpinsel / Reparaturpinsel** aus.
 - Wählen Sie im Arbeitsbereich Malen in der Werkzeugleiste Werkzeuge **Mischen / Klonstempel** aus. Klicken Sie mit der rechten Maustaste auf die Schaltfläche oder halten Sie sie gedrückt, um **Klonstempel** zu wählen.
-- Wählen Sie im Arbeitsbereich Skizze in der Titelleiste **Formen** aus, wählen Sie es erneut aus, um die Schublade zu öffnen, und wählen Sie **Klonen**, **Reparieren** oder **Bereichsreparatur** aus.
+- Wählen Sie im Arbeitsbereich Skizze in der Titelleiste **Formen** aus, wählen Sie es erneut aus, um die Schublade zu öffnen, wählen Sie den Satz **Retusche** und dann ein Werkzeug.
+- Wählen Sie, solange ein Retuschierwerkzeug aktiv ist, in **Werkzeugsatz** ein Werkzeug im Satz **Retusche**.
 - Geben Sie den Namen des Werkzeugs in die [Befehlssuche](/de/docs/start/command-search/) ein.
 
 **Reparaturpinsel** und **Bereichsreparaturpinsel** haben im Arbeitsbereich

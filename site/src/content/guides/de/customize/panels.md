@@ -75,14 +75,11 @@ Registerkartenleiste.
 
 Sie können festlegen, welche Steuerelemente ein Bedienfeld zeigt.
 
-Führen Sie eine der folgenden Aktionen aus:
-
-- Wählen Sie **Bedienfeld *Name* konfigurieren…** im Menü des Bedienfelds.
-- Wählen Sie die aktive Registerkarte erneut aus.
-
-Neben dem Bedienfeld öffnet sich eine Spalte mit einem Kontrollkästchen für jedes
-Steuerelement. Drücken Sie **Escape**, wählen Sie die Registerkarte erneut aus oder
-wählen Sie eine Stelle außerhalb der Spalte aus, um sie zu schließen.
+Wählen Sie **Bedienfeld *Name* konfigurieren…** im Menü des Bedienfelds. Neben dem
+Bedienfeld öffnet sich eine Spalte mit einem Kontrollkästchen für jedes
+Steuerelement. Wenn Sie eine andere Registerkarte auswählen, zeigt die Spalte die
+Steuerelemente dieses Bedienfelds. Drücken Sie **Escape** oder wählen Sie eine Stelle
+außerhalb der Spalte aus, um sie zu schließen.
 
 | Bedienfeld | Steuerelemente | Standardmäßig angezeigt |
 | --- | --- | --- |

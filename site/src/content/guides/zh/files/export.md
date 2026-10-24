@@ -116,7 +116,7 @@ SDR 画作为 **SDR**；HDR 画作可以选择 HDR 格式（参见下文的 HDR 
 
 ## HDR 导出
 
-![HDR 画作的导出图像对话框，格式为 HDR JPEG · 增益图，已执行预览输出。](shot:files/export-hdr-preview)
+![预览版本菜单设为 HDR 重建 · SDR 预览，绘画和 HDR 重建预览并排显示。](shot:files/export-hdr-preview)
 
 对于 16 位或 32 位浮点画作，**动态范围**提供以下选项：
 

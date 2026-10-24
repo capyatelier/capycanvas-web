@@ -12,27 +12,25 @@ Chọn **Tệp > Mới…**, nhấn **Ctrl+N** ở nơi có thể dùng, hoặc 
 
 Chọn thiết lập đặt sẵn theo danh mục, tìm theo tên hoặc chọn thiết lập dùng gần đây. Thiết lập đặt sẵn điền kích thước, độ phân giải, thiết lập màu và Giấy.
 
-![Trình duyệt thiết lập đặt sẵn của Bản vẽ mới.](shot:files/new-presets)
-
-Trước khi bạn dùng hoặc lưu thiết lập khác, Thiết lập đặt sẵn chọn **Sổ vẽ**: A4 dọc (210 × 297 mm), Giấy vẽ màu Trắng tự nhiên và 2480 × 3508 px ở 300 ppi.
+![Trình duyệt thiết lập đặt sẵn của Bản vẽ mới với các danh mục Phác thảo, Màu nước, Phấn tiên, Toan, Chất liệu hỗn hợp, Truyện tranh, Bản in và Kỹ thuật số.](shot:files/new-presets)
 
 Lưu các thiết lập hiện tại thành thiết lập đặt sẵn có tên để dùng lại. Mở trình đơn của thiết lập đã lưu để đổi tên hoặc xóa. Không thể đổi tên hoặc xóa thiết lập có sẵn.
 
 ## Tờ giấy
 
-Bản xem trước hiện tỷ lệ và hướng tờ giấy. Nhập tên bản vẽ, rồi đặt **Chiều rộng** và **Chiều cao** bằng pixel, inch, centimét hoặc milimét. Dùng điều khiển liên kết để giữ tỷ lệ hiện tại và điều khiển hướng để đổi chỗ chiều rộng và chiều cao.
+Bản xem trước hiện tỷ lệ và hướng tờ giấy. Nhập tên bản vẽ, rồi đặt **R** và **C**, và chọn px, in, cm hoặc mm làm đơn vị. Dùng điều khiển liên kết để giữ tỷ lệ hiện tại và điều khiển hướng để đổi chỗ chiều rộng và chiều cao.
 
 **Độ phân giải** đặt số pixel mỗi inch cho kích thước vật lý và tỷ lệ [kết cấu Giấy](/vi/docs/layers/paper/). Chỉ đổi độ phân giải sẽ đổi siêu dữ liệu kích thước in mà không lấy mẫu lại bản vẽ.
-
-Cửa sổ mới bắt đầu với một bản vẽ A4 ngang trống riêng ở 300 ppi (3508 × 2480 px).
 
 Hộp thoại hiện kích thước pixel kết quả và dung lượng ước tính. Không thể tạo thiết lập vượt giới hạn bản vẽ hiện tại của thiết bị; giới hạn tùy thuộc kích thước, độ sâu bit và tài nguyên đồ họa có sẵn.
 
 ## Giấy
 
-![Các lựa chọn kết cấu Giấy trong Bản vẽ mới.](shot:files/new-paper)
+![Ngăn Giấy trong Bản vẽ mới với Không có giấy, các ô giấy và Độ hiện kết cấu.](shot:files/new-paper)
 
-Chọn kết cấu Giấy có sẵn hoặc đã nhập cho bản vẽ mới. **Nhập…** thêm ảnh vào thư viện giấy và chọn ảnh đó. Chọn **Không có giấy** để tạo bản vẽ không có lớp Giấy.
+Chọn ô kết cấu dưới **Giấy** để chọn kết cấu Giấy có sẵn hoặc đã nhập cho bản vẽ mới. **Độ hiện kết cấu** ở cuối ngăn đặt cùng giá trị như trong [Thuộc tính](/vi/docs/layers/paper/) của lớp Giấy, và ô hiện giá trị đó dưới tên kết cấu. **Nhập…** là ô cuối cùng. Nó thêm ảnh vào thư viện giấy và chọn ảnh đó.
+
+Chọn **Không có giấy** để tạo bản vẽ không có lớp Giấy. Khi đó **Độ hiện kết cấu** không dùng được.
 
 ![Các lựa chọn Màu Giấy và Trong suốt trong Bản vẽ mới.](shot:files/new-paper-color)
 

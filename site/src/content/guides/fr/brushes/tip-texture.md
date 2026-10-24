@@ -6,9 +6,11 @@ related: ["brushes/basics", "brushes/wet-media", "drawing/brush-tools"]
 
 Vous pouvez modifier la forme de chaque empreinte et l’influence de la texture du papier sur la marque avec les réglages **Pointe** et **Texture** du panneau **Outil** ([Taille, intensité et opacité](/fr/docs/brushes/basics/)).
 
-![Le panneau Outil pour Crayon avec le groupe Pointe et le groupe Texture.](shot:brushes/tip-texture-settings)
+![Le panneau Outil pour Pinceau, de Dureté à Intensité de la texture, avec les groupes Lissage, Pointe et Texture.](shot:brushes/tip-texture-settings)
 
 ## Pointe
+
+Les pinceaux secs n’affichent que l’**Angle de la pointe**.
 
 ### Dureté
 
@@ -40,21 +42,23 @@ dans un sens ou dans l’autre.
 
 ## Pointes qui suivent le trait
 
-Les pointes de **Pinceau**, **Plat texturé**, **Bloc de pastel**, **Glacis transparent**, **Gouache opaque**, **Huile chargée**, **Couteau à palette**, **Lavis d’aquarelle**, **Aquarelle humide**, **Double texture** et **Mélangeur naturel** suivent la direction du trait. **Angle de la pointe** n’a aucun effet sur ces pinceaux.
+Les pointes de **Pinceau**, **Plat texturé**, **Glacis transparent**, **Gouache opaque**, **Huile chargée**, **Couteau à palette**, **Lavis d’aquarelle**, **Aquarelle humide**, **Double texture**, **Mélangeur naturel** et **Couteau mélangeur** suivent la direction du trait. **Angle de la pointe** n’a aucun effet sur ces pinceaux.
 
 **Brossage à sec** et **Encre réaliste au pinceau** ajoutent la direction du trait à **Angle de la pointe**.
 
 ## Texture
 
-**Intensité de la texture** apparaît sur les pinceaux crayon et pastel,
-**Pinceau**, **Pinceau à soies**, **Plat texturé**, **Brossage à sec**,
-**Glacis transparent**, **Gouache opaque**, **Huile chargée**, **Couteau à palette**,
-**Double texture** et **Mélangeur naturel**.
+**Intensité de la texture** apparaît sur les ensembles **Crayon**, **Pastel** et
+**Peinture** (sauf **Glacis en produit**), sur **Huile chargée**, **Couteau à
+palette** et **Double texture**, et sur huit mélangeurs : **Doigt**, **Mélangeur
+doux**, **Estompe**, **Mouchoir en papier**, **Mélangeur granuleux**, **Mélangeur
+naturel**, **Couteau mélangeur** et **Mélangeur à soies**. Un pinceau qui n’a pas
+ce réglage ignore le Papier.
 
-Les pinceaux secs lisent la texture du Papier le plus proche sous leur calque cible. Choisissez cette texture et réglez son échelle dans [Papier](/fr/docs/layers/paper/).
+Les pinceaux avec le réglage **Intensité de la texture** lisent la texture du Papier le plus proche, au niveau de leur calque cible ou en dessous. Choisissez cette texture et réglez son échelle dans [Papier](/fr/docs/layers/paper/).
 
 ### Intensité de la texture
 
-Définit l’influence de la texture du Papier sur la couverture. À 0 %, la texture n’a aucun effet.
+Définit l’influence de la texture du Papier sur la couverture. À 0 %, la texture n’a aucun effet. Sur les mélangeurs, un toucher léger laisse le grain du papier sans mélange, et la pression fait pénétrer le mélange dedans. **Mélangeur doux** démarre à 0 %.
 
 ![Trois traits de Fusain avec Intensité de la texture à 0 %, 50 % et 100 %.](shot:brushes/texture-strength)

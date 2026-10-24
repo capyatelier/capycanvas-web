@@ -12,11 +12,11 @@ Cọ chất liệu khô dùng lực nhấn bút, độ nghiêng bút và kết c
 
 Các cọ chất liệu khô có sẵn là **Bút chì**, **Bút chì nhọn**, **Bút chì tô bóng**, **Than vẽ**, **Phấn**, **Khối phấn tiên** và **Bút sáp màu**. Chọn công cụ trên thanh Công cụ, rồi chọn cọ đặt sẵn trong **Bộ công cụ**.
 
-Bút chì và Bút chì nhọn phản ứng với lực nhấn và độ nghiêng. Bút chì tô bóng, Than và Phấn dùng lực nhấn cho độ phủ và độ nghiêng cho nét rộng bằng cạnh. Khối phấn tiên dùng cạnh hoặc mặt rộng của khối khi nghiêng bút. Sáp màu phản ứng với lực nhấn và độ nghiêng bằng dấu tròn.
+Mọi cọ đặt sẵn đều phản ứng với lực nhấn và độ nghiêng bút. Nghiêng bút về phía giấy làm dấu vẽ rộng ra thành nét rộng bằng cạnh. **Khối phấn tiên** vẽ bằng đầu khối khi bút dựng đứng và bằng cạnh dài khi nghiêng.
 
 ## Thiết lập chính
 
-![Các điều khiển chính và thiết lập Chất liệu của cọ chất liệu khô.](shot:brushes/dry-media-settings)
+![Bảng Công cụ cho Bút chì với Kích thước cọ, Độ mạnh, Độ mạnh kết cấu và Độ cứng chất liệu phía trên các nhóm Làm mượt, Đầu cọ và Hòa trộn.](shot:brushes/dry-media-settings)
 
 ### Kích thước
 
@@ -30,11 +30,11 @@ Bút chì và Bút chì nhọn phản ứng với lực nhấn và độ nghiên
 
 ### Độ mạnh kết cấu
 
-Đặt mức kết cấu Giấy thay đổi độ phủ nét vẽ. Ở 0%, nét không phản ứng với kết cấu Giấy.
+Đặt mức kết cấu Giấy thay đổi độ phủ nét vẽ. Ở 0%, nét không phản ứng với kết cấu Giấy. Thanh trượt lên tới 200%.
 
 ### Độ cứng chất liệu
 
-Đặt mức chất liệu phủ các phần thấp và cao của kết cấu Giấy. Giá trị cao làm chất liệu thể hiện cứng hơn.
+Đặt mức lực nhấn bút thay đổi lượng sắc tố mỗi lần chạm để lại. Ở giá trị cao, chạm nhẹ để lại ít sắc tố, còn ở giá trị thấp thì để lại các hạt đậm.
 
 ## Kết cấu giấy
 
@@ -42,4 +42,4 @@ Nét chất liệu khô dùng [Giấy](/vi/docs/layers/paper/) gần nhất tạ
 
 ![Các nét chất liệu khô tương ứng trên giấy Bristol, Ép nguội và Giấy nhám.](shot:layers/paper-surface-comparison)
 
-Cọ chất liệu khô không hiện các điều khiển chất liệu ướt như **Loang**, **Lượng nước** hoặc **Hòa màu**. Các điều khiển Đầu cọ cụ thể tùy thuộc cọ đặt sẵn.
+Cọ chất liệu khô chỉ hiện **Góc đầu nét** trong nhóm **Đầu cọ**, và không hiện các điều khiển chất liệu ướt như **Loang**, **Lượng nước** hoặc **Hòa màu**.

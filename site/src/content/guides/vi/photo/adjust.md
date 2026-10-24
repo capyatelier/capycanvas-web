@@ -57,6 +57,6 @@ và các lớp bộ lọc ([Mở và lưu](/vi/docs/files/open-save/)).
 3. Đặt **Kích thước pixel** là **Vừa trong giới hạn**, và giữ **Chiều rộng tối đa (px)** và **Chiều cao tối đa (px)** ở 2048.
 4. Chọn **Chọn tệp…**, rồi chọn thư mục và tên.
 
-![Hộp thoại Xuất ảnh với Web / Chia sẻ, Ảnh JPEG, Chất lượng 90 và Vừa trong giới hạn.](shot:photo/export-jpeg)
+![Các thiết lập xuất với Web / Chia sẻ, Ảnh JPEG, Chất lượng 90 và Vừa trong giới hạn.](shot:photo/export-jpeg)
 
 Việc xuất không thay đổi bản vẽ ([Xuất ảnh](/vi/docs/files/export/)).

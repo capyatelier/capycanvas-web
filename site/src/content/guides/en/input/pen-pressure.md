@@ -10,7 +10,7 @@ You can calibrate the pressure from your pen before brushes use it.
 
 Open [Preferences](/docs/preferences/), select **Pen & Input**, then select **Adjust…** beside **Pen pressure**.
 
-![The Pen pressure dialog with its curve and live pressure marker.](shot:pen/pressure-calibration)
+![The Pen pressure dialog with its curve, Firmer and Lighter, Reset, Cancel and Apply.](shot:pen/pressure-calibration)
 
 ## Pressure curve
 

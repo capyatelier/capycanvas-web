@@ -12,11 +12,11 @@ Los pinceles de medios secos usan la presión y la inclinación del lápiz y la 
 
 Los preajustes de medios secos incluidos son **Lápiz**, **Lápiz afilado**, **Lápiz de sombreado**, **Carboncillo**, **Tiza**, **Bloque de pastel** y **Crayón**. Selecciona su herramienta en la barra Herramientas y elige un preajuste en **Conjunto de herramientas**.
 
-Lápiz y Lápiz afilado responden a la presión y a la inclinación. Lápiz de sombreado, Carboncillo y Tiza usan la presión para la cobertura y la inclinación para trazos laterales amplios. Bloque de pastel usa el canto o la cara ancha del bloque al inclinar el lápiz. Crayón responde a la presión y a la inclinación con una marca redondeada.
+Todos los preajustes responden a la presión y a la inclinación del lápiz. Inclinar el lápiz hacia el papel ensancha la marca hasta convertirla en un trazo lateral. **Bloque de pastel** dibuja con el extremo del bloque cuando está recto y con su lado largo cuando se inclina.
 
 ## Ajustes principales
 
-![Los controles principales y los ajustes de Material de un pincel de medios secos.](shot:brushes/dry-media-settings)
+![El panel Herramienta de Lápiz con Tamaño del pincel, Intensidad, Intensidad de textura y Dureza del material encima de los grupos Suavizado, Punta y Fusión.](shot:brushes/dry-media-settings)
 
 ### Tamaño
 
@@ -30,11 +30,11 @@ Establece la firmeza con la que el material marca la superficie. Los valores alt
 
 ### Intensidad de textura
 
-Establece cuánto cambia la textura del Papel la cobertura del trazo. Al 0%, el trazo no responde a la textura del Papel.
+Establece cuánto cambia la textura del Papel la cobertura del trazo. Al 0%, el trazo no responde a la textura del Papel. El deslizador llega hasta el 200%.
 
 ### Dureza del material
 
-Establece con qué facilidad el material cubre las partes bajas y altas de la textura del Papel. Los valores altos hacen que el material se comporte como uno más duro.
+Establece cuánto cambia la presión del lápiz la cantidad de pigmento que deja cada contacto. Con valores altos, un toque suave deja poco pigmento, y con valores bajos deja granos intensos.
 
 ## Textura del papel
 
@@ -42,4 +42,4 @@ Los trazos de medios secos usan el [Papel](/es/docs/layers/paper/) más cercano 
 
 ![Trazos equivalentes de medios secos sobre papel Bristol, de grano fino y de lija.](shot:layers/paper-surface-comparison)
 
-Los pinceles de medios secos no muestran controles de medios húmedos como **Difusión**, **Carga de agua** o **Mezcla**. Los controles de Punta disponibles dependen del preajuste.
+Los pinceles de medios secos solo muestran **Ángulo de la punta** en el grupo **Punta**, y ningún control de medios húmedos como **Difusión**, **Carga de agua** o **Mezcla**.

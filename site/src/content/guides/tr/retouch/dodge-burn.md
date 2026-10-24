@@ -41,7 +41,7 @@ Grup, özgün katmanın opaklığını ve kırpmasını alır. Özgün katman gr
 altında gizli olarak kalır.
 
 Katmanın görünür ve **Normal** modunda olması, çizimin de
-**Düzenle > Karıştırma > Algısal karıştırma** kullanması gerekir (bkz.
+**Görüntü > Karıştırma > Algısal karıştırma** kullanması gerekir (bkz.
 [Renk uzayı, bit derinliği ve karıştırma](/tr/docs/color-management/color-spaces/)).
 Panel açıkken çizim değişirse panel kapanır.
 

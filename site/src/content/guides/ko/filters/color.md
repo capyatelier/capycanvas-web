@@ -7,7 +7,7 @@ related: ["filters/adding", "filters/tone", "filters/how-filters-apply"]
 색상 필터는 **필터 > 색상**과 **필터** 패널의 **색상** 분류에 있습니다. 설정은
 **속성** 패널에서 바꿉니다.
 
-![색상 분류의 필터별 미리 보기가 표시된 필터 패널.](shot:filters/color-list)
+![필터 패널의 색상 분류. 색조 / 채도부터 그레이디언트 맵까지 각각 선 미리 보기가 있습니다.](shot:filters/color-list)
 
 ## 색조 / 채도
 

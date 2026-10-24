@@ -58,7 +58,7 @@ aperta chiede una cartella e un nome, come fa **Salva con nome…**. Il file
 3. Imposta **Dimensioni in pixel** su **Adatta entro i limiti** e lascia **Larghezza massima (px)** e **Altezza massima (px)** a 2048.
 4. Seleziona **Scegli file…** e scegli una cartella e un nome.
 
-![La finestra di dialogo Esporta immagine con Web / Condivisione, Immagine JPEG, Qualità 90 e Adatta entro i limiti.](shot:photo/export-jpeg)
+![Le impostazioni di esportazione con Web / Condivisione, Immagine JPEG, Qualità 90 e Adatta entro i limiti.](shot:photo/export-jpeg)
 
 L'esportazione non modifica il disegno
 ([Esportare immagini](/it/docs/files/export/)).

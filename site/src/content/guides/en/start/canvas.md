@@ -73,9 +73,11 @@ Do one of the following:
 - Twist two fingers on a touch screen, or on the trackpad on macOS and iPad, when **Rotate with two fingers** is on in Preferences.
 - Type an angle or drag the rotation slider in the zoom readout's menu.
 - Select a rotate button in the **Navigator** panel.
+- Select **Rotate view**, which shares a button with **Hand**, or press **R**, then drag.
+- Press **-** to rotate 90° left, or **^** to rotate 90° right.
 
-No key rotates the view by default. To go back to 0°, select **Reset rotation**
-in the zoom readout's menu.
+To go back to 0°, press **5** or select **Reset rotation** in the zoom
+readout's menu.
 
 ## Flipping the view
 

@@ -8,15 +8,14 @@ Puoi impostare come i pennelli bagnati e di sfumatura trattano il colore nel
 pannello **Strumento**. Ogni gruppo compare solo sui pennelli elencati nella sua
 sezione.
 
-![Il pannello Strumento per Acquerello bagnato con Mescolanza dei colori e i gruppi Mescolanza, Acquerello e Diffusione.](shot:brushes/wet-media-settings)
+![La parte inferiore del pannello Strumento per Acquerello bagnato, con i gruppi Mescolanza, Acquerello, Diffusione e Fusione.](shot:brushes/wet-media-settings)
 
 ## Mescolanza
 
-**Mescolanza** compare su **Pennello tondo bagnato**, **Gouache coprente**,
-**Olio carico**, **Spatola**, **Lavatura ad acquerello**, **Acquerello
-bagnato**, **Sfumino naturale** e **Sfumino**. Tranne che nei pennelli ad
-acquerello, un pennello carico esaurisce il colore lungo il tratto, con una
-velocità fissa per ciascun pennello.
+**Mescolanza** compare sui pennelli a olio, su **Gouache coprente**, sui
+pennelli ad acquerello e su ogni sfumino. **Prelievo mediato**,
+**Persistenza** e **Ricarica con pressione** compaiono solo sui pennelli a olio,
+su **Gouache coprente**, **Sfumino bagnato** e **Miscelatore di colori**.
 
 ### Carica di colore
 
@@ -34,11 +33,48 @@ dal livello.
 Diluisce il colore che il pennello porta. Valori più alti indeboliscono il colore
 proprio del pennello nella mescolanza.
 
+### Prelievo mediato
+
+Imposta quanto i colori prelevati lungo la punta si fondono in uno solo. A 0%,
+ogni parte della punta mantiene il proprio.
+
+### Persistenza
+
+Imposta quanto lontano il colore mediato viene portato lungo il tratto. Compare
+solo quando **Prelievo mediato** è sopra lo 0%.
+
+### Ricarica con pressione
+
+Imposta quanto una pressione decisa ricarica nel pennello il colore selezionato.
+**Pennello miscelatore** stende il suo colore con una pressione decisa e sfuma
+solo con un tocco leggero.
+
+## Sfumino
+
+Ogni sfumino aggiunge impostazioni al gruppo **Sfumino**. **Estensione** si trova
+in cima al pannello **Strumento**.
+
+| Impostazione | Sfumini | Imposta |
+| --- | --- | --- |
+| **Estensione** | Tutti tranne **Spatola per sfumare** e **Marmorizzazione** | Quanto lontano attorno a ogni punto del tratto lo sfumino raccoglie colore. |
+| **Striature** | **Sfumino**, **Sfumino morbido**, **Sfumino di carta**, **Fazzoletto di carta**, **Sfumino naturale**, **Sfumino a setole**, **Spatola per sfumare** | Quanto il tratto si spezza in striature lungo la sua direzione. |
+| **Nitidezza** | **Nitidezza** | Quanto contrasto aggiunge il tratto. |
+| **Texture conservata** | **Sfumino che preserva la texture** | Quanta parte della texture fine sotto il tratto resta sopra il colore sfumato. |
+| **Dimensione dei dettagli** | **Sfumino che preserva la texture** | Le dimensioni della texture che viene conservata. |
+| **Sfuma la luminosità** | **Sfumino della tinta** | Quanta luminosità si fonde insieme a tinta e saturazione. |
+| **Grana** | **Sfumino sparso** | Quanto completamente ogni pixel sparso sostituisce quello sottostante. |
+| **Allungamento** | **Sfumino pittorico**, **Sfumino cristallino** | Quanto si allungano le macchie o le celle lungo il tratto. |
+| **Dimensione delle celle** | **Sfumino cristallino** | La dimensione delle celle. |
+| **Vortice** | **Marmorizzazione** | Quanto il colore si arriccia. |
+| **Dimensione dei vortici** | **Marmorizzazione** | La dimensione dei vortici. |
+| **Conservazione dei bordi** | **Sfumino a pettine** | Con quanta facilità la sfumatura si ferma su un bordo tra due colori. |
+
 ## Acquerello
 
 **Lavatura ad acquerello** e **Acquerello bagnato** hanno un gruppo
 **Acquerello** per il bordo più scuro dove il colore si raccoglie. L'acquerello
-reagisce solo al colore sullo stesso livello.
+reagisce solo al colore sullo stesso livello. **Intensità bordo** si trova in cima
+al pannello **Strumento**, sopra i gruppi.
 
 ### Intensità bordo
 
@@ -68,7 +104,7 @@ Imposta fin dove il colore può espandersi da ogni impronta, da 0 a 96 px.
 
 ### Carica d'acqua
 
-Imposta quanta acqua ogni impronta deposita sulla carta.
+Imposta quanta acqua ogni impronta deposita sulla carta. Si trova in cima al pannello **Strumento**, sopra i gruppi.
 
 ## Mescolanza dei colori
 
@@ -90,7 +126,7 @@ Tutti i pennelli integrati che mescolano partono da **Mescolanza Oklab**. La
 scelta viene salvata con il pennello, e l'impostazione **Fusione** del disegno
 non la modifica. Per un pennello che non mescola, le scelte non sono disponibili.
 
-![Mescolanza dei colori nel cassetto Strumento.](shot:brushes/color-mixing-menu)
+![L'impostazione Mescolanza dei colori con Mescolanza Oklab.](shot:brushes/color-mixing-menu)
 
 ## Setole
 

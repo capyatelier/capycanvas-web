@@ -1,7 +1,7 @@
 ---
 title: "Deshacer y rehacer"
 description: "Deshacer y rehacer cambios en un dibujo, y el historial aparte para los cambios de distribución."
-related: ["start/command-search", "customize/workspaces", "input/touch"]
+related: ["start/command-search", "customize/bubbles", "customize/workspaces", "input/touch"]
 ---
 
 Puedes deshacer los cambios de un dibujo paso a paso y rehacer los pasos que
@@ -28,6 +28,10 @@ Haz una de las siguientes acciones:
 - Toca el lienzo con tres dedos.
 
 Un cambio nuevo después de Deshacer borra los pasos que podías rehacer.
+
+## Burbuja de deshacer y rehacer
+
+Arrastra **Deshacer** o **Rehacer** al lienzo para mantener ambos en una sola [burbuja](/es/docs/customize/bubbles/). Toca su mitad izquierda para deshacer y su mitad derecha para rehacer.
 
 ## Lo que cuenta como paso
 

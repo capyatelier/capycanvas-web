@@ -69,7 +69,7 @@ finestra in Foto). Entrambe le scelte si chiamano **Contagocce**:
 
 ![La lente del Contagocce sopra un tratto rosso, con il colore campionato e il colore corrente nel suo anello.](shot:color/eyedropper-loupe)
 
-![La lente del Contagocce sopra un dito, con il punto di campionamento sotto il contatto.](shot:color/eyedropper-touch)
+![La lente del Contagocce sul bordo di un tratto rosso, con un mirino al centro e un anello a due colori.](shot:color/eyedropper-touch)
 
 Il tocco usa sempre la lente. In Schizzo, selezionare **Contagocce** imposta
 **Stile** sulla lente. Un piccolo simbolo di livelli compare quando **Sorgente**

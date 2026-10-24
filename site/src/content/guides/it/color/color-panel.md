@@ -1,7 +1,7 @@
 ---
 title: "Pannello Colore"
 description: "Scegliere il colore di pittura con la ruota e i campioni del pannello Colore."
-related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-management/hdr"]
+related: ["color/edit-color", "color/palettes", "color/eyedropper", "customize/bubbles", "color-management/hdr"]
 ---
 
 Puoi scegliere il colore di pittura nel pannello **Colore**. Tutte le aree di
@@ -17,6 +17,8 @@ Esegui una delle seguenti operazioni:
 - Scegli **Pannello Colore** nella ricerca comandi.
 - In Pittura, seleziona la scheda **Colore** nella colonna sinistra.
 - Seleziona **Colore pennello** alla fine della barra strumenti Strumenti, oppure all'estremità destra della barra del titolo in Schizzo. Si apre un cassetto con i pannelli Colore e Tavolozze.
+
+Trascina **Colore pennello** sulla tela per tenere la ruota lì come [anello colore](/it/docs/customize/bubbles/).
 
 ## Ruota dei colori
 

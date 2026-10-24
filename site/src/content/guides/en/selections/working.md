@@ -67,10 +67,12 @@ but not beside one that Undo or Redo brings back. Brushes, the fill tools,
 - **Quick Mask**: see [Quick Mask](/docs/selections/quick-mask/).
 - **Save**: **Save as Selection Layer**, see [Selection layers](/docs/selections/selection-layers/).
 
+On a narrow bar, the last buttons, such as **Quick Mask** and **Save**, move into **More**.
+
 ## Select menu
 
 You can also open the **Select** menu from **More** on the selection bar, and
-from **Select** below a selection tool's settings in the Tool panel.
+from **Select** under the **Mode** row of the Tool panel.
 
 | Command | Does | Key |
 | --- | --- | --- |
@@ -139,7 +141,7 @@ works like [Transform](/docs/transform/move-transform/), except that **Distort**
 
 Do one of the following:
 
-- Choose the command from the **Edit** menu. The clear commands are also in the **Select** menu.
+- Choose **Edit > Fill selection**, **Clear Selected Pixels** or **Clear Outside Selection**.
 - Press **Shift+Backspace** to fill, or **Delete** or **Backspace** to clear the selected pixels.
 - Select **Fill**, or **Clear** and a command, on the selection bar.
 - In Paint, select **Fill selection** in the Commands toolbar.
@@ -156,7 +158,7 @@ also erases them from the original layer.
 
 Do one of the following:
 
-- Choose **Select > Copy Selection to New Layer** or **Select > Cut Selection to New Layer**.
+- Choose **Layer > New > Copy Selection to New Layer** or **Layer > New > Cut Selection to New Layer**.
 - Press **Ctrl+J** to copy or **Ctrl+Shift+J** to cut.
 - Select **Copy to Layer** on the selection bar and choose a command.
 

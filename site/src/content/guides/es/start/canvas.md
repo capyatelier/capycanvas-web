@@ -59,7 +59,7 @@ Haz una de las siguientes acciones:
 - Desplaza la rueda cuando **Rueda del ratón** esté configurada para desplazar en [Preferencias](/es/docs/preferences/). Mantén pulsado **Mayús** y desplaza la rueda para moverte lateralmente.
 - Mantén pulsado **Espacio** y arrastra.
 - Arrastra con dos dedos en una pantalla táctil.
-- Selecciona la herramienta **Mano** o pulsa **Al** y arrastra.
+- Selecciona la herramienta **Mano** o pulsa **H** y arrastra.
 - Arrastra en el panel **Navegador**.
 - En el editor web, arrastra con el botón central o derecho del ratón.
 - Mueve el stick izquierdo de un mando.
@@ -75,9 +75,10 @@ Haz una de las siguientes acciones:
 - Gira dos dedos en una pantalla táctil o en el trackpad de macOS y iPad cuando **Girar con dos dedos** esté activado en Preferencias.
 - Escribe un ángulo o arrastra el control de rotación en el menú del indicador de zoom.
 - Selecciona un botón de rotación en el panel **Navegador**.
+- Selecciona **Girar vista**, que comparte botón con **Mano**, o pulsa **R** y arrastra.
+- Pulsa **-** para girar 90° a la izquierda, o **^** para girar 90° a la derecha.
 
-De forma predeterminada, ninguna tecla gira la vista. Para volver a 0°, selecciona
-**Restablecer rotación** en el menú del indicador de zoom.
+Para volver a 0°, pulsa **5** o selecciona **Restablecer rotación** en el menú del indicador de zoom.
 
 ## Voltear la vista
 

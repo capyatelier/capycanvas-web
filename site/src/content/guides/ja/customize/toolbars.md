@@ -1,7 +1,7 @@
 ---
 title: "ツールバーとタイトルバー"
 description: "ツールバーの作成と編集、タイトルバーのカスタマイズ。"
-related: ["customize/panels", "customize/workspaces", "customize/zen", "start/command-search"]
+related: ["customize/panels", "customize/workspaces", "customize/zen", "customize/bubbles", "start/command-search"]
 ---
 
 ツールバーとタイトルバーはワークスペースごとに保存されます。**ウィンドウ > レイアウトの変更を元に戻す**（**Ctrl+Alt+Z**）で、最後の変更を取り消せます。
@@ -10,7 +10,9 @@ related: ["customize/panels", "customize/workspaces", "customize/zen", "start/co
 
 ツールバーのメニューを開くには、ツールバーの背景かつまみを右クリックするか、指またはペンで長押しします。ツールを右クリックするか長押しすると、ツールのメニューが開きます。
 
-![タイルのサイズがあるツールバーのメニュー。](shot:toolbars/toolbar-menu)
+ツールバーのメニューの**集中モードで表示**を選ぶと、Linuxアプリの[集中モード](/ja/docs/customize/zen/)でもそのツールバーが画面に残ります。
+
+![タイルのサイズと「集中モードで表示」の項目があるツールバーのメニュー。](shot:toolbars/toolbar-menu)
 
 ## ツールバーの表示と非表示
 
@@ -45,6 +47,7 @@ related: ["customize/panels", "customize/workspaces", "customize/zen", "start/co
 - あるツールの前にツールを追加するには、そのツールのメニューから**ツールを挿入…** を選びます。
 - ツールを削除するには、そのツールのメニューから**ツールを削除**を選びます。
 - ツールを移動するには、ツールを長押ししてから、ツールバー内または別のツールバーにドラッグします。
+- ツールをキャンバスに残すには、ツールバーの外へドラッグして[バブル](/ja/docs/customize/bubbles/)を取り出します。
 
 **ツールを追加**の一覧には、コマンドとツールのほかに、ブラシ、ブラシサイズ、**色の選択**、**ブラシサイズのスライダー**、**強度スライダー**、**ツールのオプション**、**区切り**があります。**レイヤーパネル**など、パネルごとの項目もあり、パネルを引き出しとして開きます。
 

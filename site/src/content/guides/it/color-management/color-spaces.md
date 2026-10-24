@@ -1,11 +1,11 @@
 ---
 title: "Spazio colore, profondità in bit e fusione"
-description: "Scegliere spazio colore, profondità in bit e Fusione di un disegno, e modificarli in seguito dal menu Modifica."
+description: "Scegliere spazio colore, profondità in bit e Fusione di un disegno, e modificarli in seguito dal menu Immagine."
 related: ["files/new", "color-management/proof", "color-management/hdr", "files/export", "preferences"]
 ---
 
 Puoi scegliere spazio colore, profondità in bit e Fusione di un disegno quando lo
-crei, e modificarli in seguito dal menu **Modifica**.
+crei, e modificarli in seguito dal menu **Immagine**.
 
 ## Spazi colore
 
@@ -27,41 +27,31 @@ memorizzato in RGB lineare, in cui 1,0 è il bianco SDR a 203 cd/m².
 ## Sceglierli per un nuovo disegno
 
 Scegli **File > Nuovo…** (**Ctrl+N**) e imposta **Spazio colore**, **Profondità
-in bit** e **Fusione**, oppure scegli un **Predefinito**:
-
-| Predefinito | Spazio colore | Profondità in bit | Fusione |
-| --- | --- | --- | --- |
-| **Disegno standard** | sRGB | SDR a 8 bit | Percettiva |
-| **Ampia gamma di colori** | Display P3 | SDR a 8 bit | Percettiva |
-| **Modifica foto** | ProPhoto RGB | SDR a 16 bit | Percettiva |
-| **Disegno HDR** | sRGB | HDR a virgola mobile a 16 bit | Luce lineare |
+in bit** e **Fusione** sotto **Colore**. Un predefinito da **Predefiniti** li
+imposta insieme al foglio e alla Carta. La finestra mantiene le scelte dell'ultimo
+disegno che hai creato.
 
 Con una profondità a virgola mobile, **Fusione** è fissata su Luce lineare.
-Attiva **Usa queste impostazioni per i nuovi disegni** per rendere queste scelte,
-Fusione compresa, il valore predefinito per i nuovi disegni.
 
-![La finestra di dialogo Nuovo disegno con Spazio colore impostato su Display P3, Profondità in bit, Fusione e la riga di riepilogo.](shot:color-management/new-dialog-color)
+![La finestra di dialogo Nuovo disegno con Spazio colore impostato su Display P3, Profondità in bit e Fusione sotto Colore.](shot:color-management/new-dialog-color)
 
 ## Valori predefiniti nelle Preferenze
 
 Scegli **Modifica > Preferenze** e apri la pagina **Colore**:
 
-- Sotto **Nuovi disegni**, imposta **Spazio colore**, **Profondità in bit** e **Sfondo** dei disegni futuri. I disegni aperti non cambiano.
 - Sotto **Apertura delle foto**, imposta **Precisione di modifica** (**Profondità sorgente** o **16 bit**) e **RGB e scala di grigi senza profilo** (**Considera sRGB** o **Chiedi**). Con **Chiedi**, l'apertura di una foto senza profilo mostra **Scegli interpretazione dell'immagine**. Le foto con profilo mantengono i loro profili incorporati.
 - Seleziona **Gestisci profili…** per aprire la [Libreria dei profili colore](/it/docs/color-management/proof/).
 
-Le Preferenze non hanno un'impostazione per la Fusione.
-
 ## Assegna profilo
 
-Scegli **Modifica > Assegna profilo…** per mantenere i valori RGB del disegno e
+Scegli **Immagine > Gestione del colore > Assegna profilo…** per mantenere i valori RGB del disegno e
 leggerli in un altro spazio di lavoro. Scegli lo spazio sotto **Spazio colore**,
 dove Adobe RGB (1998) compare come **Adobe RGB**. I livelli Oggetto mantengono
 il profilo sorgente della loro [foto originale](/it/docs/layers/types/).
 
 ## Converti spazio colore
 
-Scegli **Modifica > Converti spazio colore…** per cambiare i valori RGB in modo
+Scegli **Immagine > Gestione del colore > Converti spazio colore…** per cambiare i valori RGB in modo
 che i colori mantengano il loro aspetto in un altro spazio di lavoro, entro il
 suo gamut.
 
@@ -89,7 +79,7 @@ invariato il disegno aperto.
 
 ## Cambia profondità in bit
 
-Scegli **Modifica > Cambia profondità in bit…** per cambiare la precisione
+Scegli **Immagine > Gestione del colore > Cambia profondità in bit…** per cambiare la precisione
 memorizzata. Lo spazio colore non cambia.
 
 Passare a una profondità a virgola mobile rende il disegno HDR e, nello stesso
@@ -129,10 +119,10 @@ modifica senza altri input e offrono solo **Annulla**.
 Puoi combinare i livelli sui valori codificati del disegno o in luce lineare.
 Esegui una delle seguenti operazioni:
 
-- Scegli **Modifica > Fusione > Fusione percettiva** o **Modifica > Fusione > Fusione in luce lineare**.
+- Scegli **Immagine > Fusione > Fusione percettiva** o **Immagine > Fusione > Fusione in luce lineare**.
 - Imposta **Fusione** su **Percettiva** o **Luce lineare** nella finestra di dialogo Nuovo.
 
-![Il menu Modifica con il sottomenu Fusione aperto e Fusione percettiva selezionata.](shot:color-management/edit-blending-menu)
+![Il sottomenu Fusione con Fusione percettiva selezionata.](shot:color-management/edit-blending-menu)
 
 I pixel dipinti mantengono i loro valori. La Fusione cambia:
 

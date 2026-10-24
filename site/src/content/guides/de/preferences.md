@@ -1,6 +1,6 @@
 ---
 title: "Voreinstellungen"
-description: "Der Dialog Voreinstellungen und die Einstellungen auf den Seiten Erscheinungsbild, Leinwand, Stift und Eingabe, Farbe und Info."
+description: "Der Dialog Voreinstellungen und die Einstellungen auf den Seiten Erscheinungsbild, Leinwand, Farbe, Stift und Eingabe und Info."
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -122,25 +122,9 @@ deaktiviert. Vorhandene Gruppen ändern sich nicht.
 
 ## Farbe
 
-Die Einstellungen unter **Neue Zeichnungen** gelten für
-[Zeichnungen, die Sie danach erstellen](/de/docs/files/new/). Die Einstellungen unter
-**Fotos öffnen** gelten für Fotos, die Sie öffnen.
+Die Einstellungen unter **Fotos öffnen** gelten für Fotos, die Sie öffnen.
 
-![Die Seite Farbe der Einstellungen.](shot:preferences/color)
-
-### Farbraum
-
-Wählen Sie **sRGB** (Standard), **Display P3**, **Adobe RGB (1998)** oder **ProPhoto
-RGB**.
-
-### Farbtiefe
-
-Wählen Sie **8-Bit-SDR** (Standard), **16-Bit-SDR**, **16-Bit-Gleitkomma-HDR** oder
-**32-Bit-Gleitkomma-HDR**.
-
-### Hintergrund
-
-Wählen Sie **Weiß** (Standard) oder **Transparent**.
+![Die Einstellungen unter Fotos öffnen auf der Seite Farbe der Einstellungen.](shot:preferences/color)
 
 ### Bearbeitungsgenauigkeit
 

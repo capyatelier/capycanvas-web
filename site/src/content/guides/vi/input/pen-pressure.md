@@ -10,7 +10,7 @@ Bạn có thể hiệu chỉnh lực nhấn từ bút trước khi cọ sử d�
 
 Mở [Tùy chọn](/vi/docs/preferences/), chọn **Bút và nhập liệu**, rồi chọn **Điều chỉnh…** cạnh **Lực nhấn bút**.
 
-![Hộp thoại Lực nhấn bút với đường cong và dấu lực nhấn trực tiếp.](shot:pen/pressure-calibration)
+![Hộp thoại Lực nhấn bút với đường cong, Mạnh hơn và Nhẹ hơn, Đặt lại, Hủy và Áp dụng.](shot:pen/pressure-calibration)
 
 ## Đường cong lực nhấn
 

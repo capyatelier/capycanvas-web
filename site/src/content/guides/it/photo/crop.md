@@ -23,7 +23,7 @@ strumenti Strumenti o premi **C** ([Ritaglio](/it/docs/transform/crop/)).
 Sopra la foto appare una cornice con maniglie, con la barra del ritaglio lungo il
 bordo inferiore della tela.
 
-Seleziona **Proporzioni** nella barra del ritaglio e scegli **4:5**. La cornice
+Seleziona il menu delle proporzioni all'estremità sinistra della barra del ritaglio e scegli **4:5**. La cornice
 diventa la più grande cornice con quelle proporzioni, centrata sulla tela. Il
 suo orientamento segue quello della foto, quindi una foto orizzontale riceve una
 cornice 5:4.
@@ -47,7 +47,7 @@ della felce margini uniformi.
 
 Seleziona **Applica** nella barra del ritaglio, o premi **Invio**. La tela prende
 le dimensioni della cornice: 2000 × 1600 pixel nell'esempio. I pixel ritagliati
-restano sul livello, nascosti, a meno che **Elimina area ritagliata** non sia
+restano sul livello, nascosti, a meno che **Elimina pittura ritagliata** non sia
 attivo nella barra del ritaglio.
 
 Fase successiva: [Ritocco](/it/docs/photo/retouch/).

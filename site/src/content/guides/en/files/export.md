@@ -141,7 +141,7 @@ Presets apply to every drawing.
 
 ## HDR export
 
-![The Export image dialog for an HDR drawing with HDR JPEG · gain map, after Preview Output.](shot:files/export-hdr-preview)
+![The Preview rendition menu set to HDR reconstruction · SDR preview, with the Artwork and the HDR reconstruction previews side by side.](shot:files/export-hdr-preview)
 
 On a 16-bit or 32-bit float drawing, **Dynamic range** offers these choices:
 

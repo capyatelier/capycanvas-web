@@ -1,7 +1,7 @@
 ---
 title: "Toolbars and title bar"
 description: "Making and editing toolbars, and customizing the title bar."
-related: ["customize/panels", "customize/workspaces", "customize/zen", "start/command-search"]
+related: ["customize/panels", "customize/workspaces", "customize/zen", "customize/bubbles", "start/command-search"]
 ---
 
 Each workspace keeps its own toolbars and title bar. **Window > Undo Layout
@@ -12,7 +12,10 @@ Change** (**Ctrl+Alt+Z**) reverses the last change.
 To open a toolbar's menu, right-click the toolbar's background or its grip, or
 hold it with a finger or pen. Right-click or hold a tool for the tool's menu.
 
-![The toolbar menu with the tile sizes.](shot:toolbars/toolbar-menu)
+**Show in Zen mode** in the toolbar's menu keeps the toolbar on screen in [Zen
+mode](/docs/customize/zen/) in the Linux app.
+
+![The toolbar menu with its tile sizes and the Show in Zen mode item.](shot:toolbars/toolbar-menu)
 
 ## Showing and hiding toolbars
 
@@ -52,6 +55,7 @@ Each toolbar needs a name of its own.
 - To add tools before a tool, choose **Insert Tools…** from that tool's menu.
 - To remove a tool, choose **Remove Tool** from its menu.
 - To move a tool, hold it, then drag it within the toolbar or into another toolbar.
+- To keep a tool on the canvas, drag it out of the toolbar to take a [bubble](/docs/customize/bubbles/).
 
 Besides commands and tools, the **Add Tools** list has brushes, brush sizes,
 **Color Picker**, **Brush size slider**, **Strength slider**, **Tool

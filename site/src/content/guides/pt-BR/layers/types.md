@@ -1,10 +1,10 @@
 ---
 title: "Tipos de camada"
-description: "Camadas de pintura, objeto, Papel, grupo, preenchimento, filtro e seleção e as regras de cada uma."
-related: ["layers/panel", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
+description: "Camadas de pintura, objeto, vetoriais, Papel, grupo, preenchimento, filtro e seleção e as regras de cada uma."
+related: ["layers/panel", "layers/vector", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
 ---
 
-![Os tipos de camada atuais no painel Camadas.](shot:layers/types-rows)
+![O painel Camadas com uma camada de seleção, um grupo, uma camada de pintura, um filtro, camadas de preenchimento, uma camada vetorial e Papel.](shot:layers/types-rows)
 
 ## Camada de pintura
 
@@ -18,9 +18,13 @@ Uma camada de objeto mantém uma imagem importada com seu próprio tamanho, prof
 
 Você pode mover, redimensionar e girar uma camada de objeto sem reamostrar sua origem repetidamente. Escolha **Camada > Rasterizar camada** quando precisar pintar nos pixels ou usar um comando que exige uma camada de pintura. A rasterização a converte para o espaço de cor, a profundidade de bits e a grade de pixels do desenho.
 
+## Camada vetorial
+
+Uma camada vetorial contém caminhos em vez de pixels. Escolha **Camada > Novo > Nova camada vetorial** ou selecione **Nova camada vetorial** na parte inferior do painel Camadas. Um selo de caminho marca a miniatura dela. Veja [Camadas vetoriais](/pt-BR/docs/layers/vector/).
+
 ## Papel
 
-Papel fornece a cor de fundo e a textura usada pelos traços de mídia seca. Permanece na parte inferior da pilha de camadas e tem miniaturas de cor e textura.
+Papel fornece a cor de fundo e a textura à qual os pincéis com **Intensidade da textura** reagem. Permanece na parte inferior da pilha de camadas e tem miniaturas de cor e textura.
 
 Um desenho pode conter um Papel. Papel não pode ter uma máscara, se tornar uma camada de recorte, ser movido acima de camadas comuns nem ser mesclado em uma camada comum. Consulte [Papel](/pt-BR/docs/layers/paper/) para a textura, a iluminação e os demais ajustes.
 

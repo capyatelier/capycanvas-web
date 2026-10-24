@@ -71,7 +71,7 @@ haut de la fenêtre dans Photo). Les deux choix s’intitulent **Pipette** :
 
 ![La loupe de la Pipette au-dessus d’un trait rouge, avec la couleur échantillonnée et la couleur active dans son anneau.](shot:color/eyedropper-loupe)
 
-![La loupe du Sélecteur de couleur au-dessus d’un doigt, avec le point de prélèvement sous le contact.](shot:color/eyedropper-touch)
+![La loupe de la Pipette au bord d’un trait rouge, avec un réticule en son centre et un anneau à deux couleurs.](shot:color/eyedropper-touch)
 
 Le toucher utilise toujours la loupe. Sélectionner **Pipette** dans Croquis règle
 **Style** sur la loupe. Une petite marque de calques apparaît quand **Source** est

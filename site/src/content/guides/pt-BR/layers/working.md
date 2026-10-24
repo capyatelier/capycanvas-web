@@ -118,7 +118,6 @@ uma nova camada, na mesma posição.
 Faça uma das seguintes ações:
 
 - Escolha **Camada > Novo > Copiar seleção para nova camada** (**Ctrl+J**) ou **Recortar seleção para nova camada** (**Ctrl+Shift+J**).
-- Escolha os mesmos comandos no menu **Selecionar**.
 - Escolha esses comandos em **Copiar para camada** na [barra de seleção](/pt-BR/docs/selections/working/) sobre a tela.
 
 A nova camada entra acima da camada de origem, com o nome "Cópia de *nome*" e

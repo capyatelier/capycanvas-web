@@ -22,6 +22,8 @@ related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", 
 
 두 스위치 모두 기본적으로 켜져 있으며, **예측량**은 16 ms입니다. **획 예측 사용**이 꺼져 있는 동안에는 다른 두 설정을 사용할 수 없습니다.
 
+마우스 획에는 펜 끝보다 앞선 예측이 적용되지 않으며, Linux, Windows, Android에서는 화면이 없는 펜 태블릿의 획도 마찬가지입니다. 웹 편집기와 macOS에서는 이런 태블릿의 획도 설정대로 예측됩니다.
+
 | 시스템 | 시스템 예측 |
 | --- | --- |
 | iPad | 사용 가능 |

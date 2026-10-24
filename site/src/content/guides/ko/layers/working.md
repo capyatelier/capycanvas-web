@@ -111,7 +111,6 @@ related: ["layers/panel", "layers/types", "layers/merging", "files/open-save"]
 다음 중 하나를 수행합니다.
 
 - **레이어 > 새로 만들기 > 선택 영역을 새 레이어로 복사**(**Ctrl+J**) 또는 **선택 영역을 새 레이어로 잘라내기**(**Ctrl+Shift+J**)를 선택합니다.
-- **선택 영역** 메뉴에서 같은 명령을 선택합니다.
 - 캔버스의 [선택 영역 표시줄](/ko/docs/selections/working/)에 있는 **레이어로 복사**에서 선택합니다.
 
 새 레이어는 원본 레이어 위에 같은 불투명도와 혼합 모드로 추가되며, 이름은

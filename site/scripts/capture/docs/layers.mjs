@@ -102,6 +102,7 @@ export default async function layers({ e, b, shoot, example }) {
     target: '.layers-panel .layer-footer',
     callouts: [
       { selector: '.layer-footer [aria-label="New layer"]' },
+      { selector: '.layer-footer [aria-label="New vector layer"]' },
       { selector: '.layer-footer [aria-label="New group"]' },
       { selector: '.layer-footer [aria-label="New Selection Layer"]' },
       { selector: '.layer-footer [aria-label="Add mask"]' },
@@ -150,8 +151,10 @@ export default async function layers({ e, b, shoot, example }) {
   await shoot('layers/masks-menu', {
     target: menu,
     setup: async () => {
+      await quiet(b); await e.canvas(); await e.idle();
       await openMaskMenu();
       await e.wait(`${opened} && !!${menuButton('Delete mask')}`);
+      assert.deepEqual(b.errors, [], 'Editor still responds after opening the mask menu');
     },
     teardown: closeMenus,
     ...reopening(openMaskMenu),
@@ -284,6 +287,9 @@ export default async function layers({ e, b, shoot, example }) {
 
   await e.newDocument(2048, 1536);
   await e.setColor('#d6ad67');
+  await e.invoke('new_vector_layer');
+  await e.layer({ op: 'rename', id: await e.active(), name: 'Line art' });
+  await e.layer({ op: 'delete', id: await id('Current ink') });
   await e.send({ type: 'effect', action: { op: 'insert', effect: 'solid_color' } });
   await e.send({ type: 'effect', action: { op: 'insert', effect: 'gradient_fill' } });
   await e.send({ type: 'effect', action: { op: 'insert', effect: 'curves' } });
@@ -295,7 +301,7 @@ export default async function layers({ e, b, shoot, example }) {
   await e.layer({ op: 'cancel_rename' });
   await e.invoke('return_to_artwork');
   assert.deepEqual(await e.read('layerApp.state().layers.map(r=>[r.selection_layer?"selection":r.group?r.blend_label:r.adjustment_effect?r.label:r.depth?"paint":r.label,r.depth])'),
-    [['selection', 0], ['Pass Through', 0], ['paint', 1], ['Curves', 0], ['Gradient Fill', 0], ['Solid Color', 0], ['Current ink', 0], ['Paper', 0]], 'One expanded row of each layer type');
+    [['selection', 0], ['Pass Through', 0], ['paint', 1], ['Curves', 0], ['Gradient Fill', 0], ['Solid Color', 0], ['Line art', 0], ['Paper', 0]], 'One expanded row of each layer type');
   await shoot('layers/types-rows', { target: { selector: '#layer-rows .layer-swipe', all: true } });
 
   await e.workspace('photographer');

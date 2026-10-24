@@ -1,10 +1,11 @@
 ---
 title: "Ebenen vereinen"
-description: "Ebenen mit den Befehlen zum Vereinen zu einer Malebene zusammenfassen."
-related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types"]
+description: "Ebenen mit den Befehlen zum Vereinen zu einer Ebene zusammenfassen und was mit Vektorebenen geschieht."
+related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types", "layers/vector"]
 ---
 
-Sie können Ebenen zu einer Malebene vereinen. Die Befehle zum Vereinen stehen
+Sie können Ebenen zu einer Malebene vereinen oder zwei Vektorebenen zu einer
+Vektorebene. Die Befehle zum Vereinen stehen
 gegen Ende des Menüs **Ebene** und des Menüs jeder Ebene.
 
 ![Das Menü Ebene bei aktiver Ebene Ribbon, mit Beschnittene Ebenen vereinen, Sichtbare Ebenen vereinen, Sichtbares auf neue Ebene kopieren und Bild reduzieren.](shot:layers/merging-menu)
@@ -27,6 +28,14 @@ Sie ist eine Referenz, wenn eine der beiden Ebenen eine war.
 Beide Ebenen müssen sichtbar, nicht gesperrt und auf Normal gestellt sein. Die
 Ebene darunter darf kein Filter sein, und sie darf nur beschnitten sein, wenn
 auch die aktive Ebene beschnitten ist.
+
+## Vektorebenen vereinen
+
+**Mit darunterliegender Ebene vereinen** behält die Pfade, wenn eine [Vektorebene](/de/docs/layers/vector/) mit der Vektorebene darunter vereint wird, und legt sie davor. Beide Ebenen brauchen 100% Deckkraft, keine Maske, keine Beschneidung und keine angehängten Filter.
+
+Jedes andere Vereinen, das eine Vektorebene einschließt, wandelt ihre Pfade in Pixel um. Ein Hinweis nennt die Ebenen, zum Beispiel „Beim Zusammenfügen werden die Pfade in ‚Line art‘ zu Pixeln.“, und das Vereinen läuft, wenn Sie seine Schaltfläche auswählen. **Bild reduzieren** fügt die Namen seinem Hinweis zu ausgeblendeten Ebenen hinzu.
+
+![Der Hinweis „Beim Zusammenfügen werden die Pfade in ‚Line art‘ zu Pixeln.“ mit einer Schaltfläche Mit darunterliegender Ebene vereinen.](shot:vector/merge-notice)
 
 ## Beschnittene Ebenen vereinen
 

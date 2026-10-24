@@ -14,13 +14,20 @@ Effectuez l’une des opérations suivantes :
 - Appuyez sur **J**.
 - Dans Peinture, sélectionnez **Mélange** dans la barre d’outils Outils. Le même bouton contient **Tampon de duplication**.
 - Dans Photo, sélectionnez **Mélange** dans la barre d’outils Outils.
-- Dans Croquis, choisissez **Mélange** dans le tiroir **Sculpture**.
+- Dans Croquis, choisissez un mélangeur dans le tiroir **Sculpture**.
 - Cherchez **Mélange** dans la recherche de commandes.
 
-Mélange a deux préréglages, **Mélangeur naturel** et **Doigt**. Tous deux
-commencent avec **Charge de peinture** à 0 % et n’ont pas de couleur propre.
-**Prélèvement de couleur** règle la distance sur laquelle ils entraînent la
-couleur le long du trait ([Mélange, diffusion et soies](/fr/docs/brushes/wet-media/)).
+Choisissez un ensemble et un mélangeur dans **Ensemble d’outils**. **Doigt** est le
+mélangeur par défaut.
+
+| Ensemble | Mélangeurs |
+| --- | --- |
+| **Mélange** | **Doigt**, **Mélangeur doux**, **Flou**, **Estompe**, **Mouchoir en papier**, **Mélangeur granuleux**, **Mélangeur préservant la texture**, **Mélangeur de teinte** |
+| **Peinture fraîche** | **Mélangeur naturel**, **Mélangeur humide**, **Mélangeur de couleurs**, **Couteau mélangeur**, **Mélangeur à soies** |
+| **Effets** | **Mélangeur pictural**, **Mélangeur peigne**, **Mélangeur dispersé**, **Netteté**, **Marbrure**, **Mélangeur cristallin**, **Mélangeur tramé** |
+
+Les réglages de chaque mélangeur figurent dans
+[Mélange, diffusion et soies](/fr/docs/brushes/wet-media/).
 
 ## Fluidité
 
@@ -28,7 +35,7 @@ Effectuez l’une des opérations suivantes :
 
 - Appuyez sur **J** quand Mélange est actif.
 - Dans Peinture ou Photo, sélectionnez **Fluidité** dans la barre d’outils Outils. Cliquez avec le bouton droit sur le bouton, ou appuyez longuement dessus, pour choisir un mode.
-- Dans Croquis, choisissez **Fluidité** dans le tiroir **Sculpture**.
+- Dans Croquis, choisissez un mode dans l’ensemble **Fluidité** du tiroir **Sculpture**.
 - Cherchez **Fluidité** dans la recherche de commandes.
 
 Chaque mode est un préréglage du panneau **Ensemble d’outils** :
@@ -41,12 +48,38 @@ Chaque mode est un préréglage du panneau **Ensemble d’outils** :
 | **Fluidité : contraction** | Attire les pixels vers le centre du pinceau. |
 | **Fluidité : dilatation** | Repousse les pixels depuis le centre du pinceau. |
 | **Fluidité cristalline** | Fragmente l’image sous le pinceau en petites cellules dispersées. |
+| **Contour** | Attire les pixels vers la ligne du trait des deux côtés. |
+| **Reconstruire** | Annule la déformation de Fluidité sous le pinceau. |
+
+Fluidité n’a pas de bouton Appliquer. Chaque trait modifie le calque et constitue
+sa propre étape d’annulation. Les traits continuent de déformer les pixels que le
+calque avait avant le premier trait, jusqu’à ce que vous peigniez, remplissiez,
+filtriez, transformiez ou colliez dans le calque.
+
+## Ajuster la fluidité et Réinitialiser la fluidité
+
+Vous pouvez atténuer tout ce que Fluidité a fait à un calque avec **Ajuster la
+fluidité**, ou rendre au calque ses pixels d’avant le premier trait avec
+**Réinitialiser la fluidité**.
+
+Effectuez l’une des opérations suivantes :
+
+- Dans le panneau **Outil**, activez **Ajuster la fluidité** ou sélectionnez **Réinitialiser la fluidité**.
+- Cherchez **Ajuster la fluidité** ou **Réinitialiser la fluidité** dans la recherche de commandes.
+
+Quand **Ajuster la fluidité** est activé, un curseur **Quantité** apparaît dans le
+panneau **Outil**. À 100 %, la déformation reste telle quelle, et à 0 %, elle
+disparaît. Relâcher le curseur compte pour une étape d’annulation, tout comme
+**Réinitialiser la fluidité**.
+
+Les deux commandes sont indisponibles, avec le message « Appliquez d’abord la
+fluidité à ce calque », tant que le calque n’a subi aucune modification de Fluidité.
 
 ## Réglages de Fluidité
 
-![Le panneau Outil pour Fluidité cristalline, avec le groupe Fluidité qui affiche Intensité et Distorsion.](shot:drawing/liquify-settings)
+![Le panneau Outil pour Fluidité cristalline, avec Intensité, le groupe Fluidité qui affiche Distorsion et Inertie, et Ajuster la fluidité et Réinitialiser la fluidité.](shot:drawing/liquify-settings)
 
-**Intensité**, **Distorsion** et **Inertie** sont dans le groupe **Fluidité** du panneau **Outil**. **Intensité** définit l’intensité du déplacement des pixels par le trait.
+**Distorsion** et **Inertie** sont dans le groupe **Fluidité** du panneau **Outil**.
 
 ### Intensité
 
@@ -55,30 +88,23 @@ faible avec une pression légère du stylet et vers le bord d’une pointe douce
 
 ### Distorsion
 
-Règle la distance de dispersion des pixels avec **Fluidité cristalline**. Aucun
-autre mode n’a ce réglage.
+Rend le mouvement irrégulier. Avec **Fluidité cristalline**, elle règle la distance
+de dispersion des cellules. **Reconstruire** n’a pas de **Distorsion**.
 
 ### Inertie
 
-Avec **Fluidité : poussée**, entraîne les pixels plus loin que le stylet ne se
-déplace. Ce réglage n’apparaît que pour ce mode.
+Prolonge l’effet dans la dernière direction du trait après que vous avez levé le
+stylet. **Reconstruire** n’a pas d’**Inertie**.
 
 ## Tiroir Sculpture dans Croquis
 
-Dans Croquis, **Sculpture** dans la barre de titre regroupe Mélange, Fluidité et
-les outils de retouche.
+Dans Croquis, sélectionnez **Sculpture** dans la barre de titre pour utiliser le
+dernier outil de Mélange, Fluidité ou Retouche, sélectionnez-le de nouveau pour
+ouvrir son tiroir, et une fois de plus pour fermer le tiroir. Le tiroir liste les
+ensembles, les outils de l’ensemble choisi et leurs réglages. **Sculpture** et
+**Pinceau** conservent chacun leur dernier préréglage et leur taille de pinceau.
 
-- Sélectionnez **Sculpture** pour utiliser le dernier préréglage de sculpture. La première fois, il s’agit de **Mélangeur naturel**.
-- Sélectionnez de nouveau **Sculpture** pour ouvrir son tiroir, et une fois de plus pour fermer le tiroir.
-
-Le tiroir a trois colonnes. **Sculpture** liste **Mélange**, **Fluidité**,
-**Duplication**, **Correction** et **Correction localisée**. **Outils** liste les
-préréglages du groupe choisi, et **Outil** contient leurs réglages.
-
-**Sculpture** et **Pinceau** conservent chacun leur dernier préréglage et leur
-taille de pinceau.
-
-![Le tiroir Sculpture dans Croquis, avec Fluidité choisi dans Sculpture et les six préréglages Fluidité dans Outils.](shot:drawing/sketch-sculpt-drawer)
+![Le tiroir Sculpture dans Croquis, avec les ensembles Mélange, Peinture fraîche, Effets, Fluidité et Retouche à gauche, les mélangeurs de l’ensemble Mélange au milieu et les réglages de Doigt à droite.](shot:drawing/sketch-sculpt-drawer)
 
 ## Peindre sur un masque
 

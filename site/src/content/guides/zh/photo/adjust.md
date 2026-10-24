@@ -46,6 +46,6 @@ related: ["filters/how-filters-apply", "filters/tone", "selections/working", "fi
 3. 将**像素尺寸**设为**适应尺寸上限**，并保持**最大宽度（px）** 和**最大高度（px）** 为 2048。
 4. 选择**选择文件…**，然后选择文件夹和名称。
 
-![导出图像对话框，设为网页 / 分享、JPEG 图像、质量 90 和适应尺寸上限。](shot:photo/export-jpeg)
+![导出设置，设为网页 / 分享、JPEG 图像、质量 90 和适应尺寸上限。](shot:photo/export-jpeg)
 
 导出不会更改画作（[导出图像](/zh/docs/files/export/)）。

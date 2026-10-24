@@ -1,10 +1,10 @@
 ---
 title: "Tipi di livello"
-description: "Livelli di pittura, Oggetto, Carta, gruppo, riempimento, filtro e selezione e le regole per ciascuno."
-related: ["layers/panel", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
+description: "Livelli di pittura, Oggetto, vettoriali, Carta, gruppo, riempimento, filtro e selezione e le regole per ciascuno."
+related: ["layers/panel", "layers/vector", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
 ---
 
-![I tipi di livello correnti nel pannello Livelli.](shot:layers/types-rows)
+![Il pannello Livelli con un livello di selezione, un gruppo, un livello di pittura, un filtro, livelli di riempimento, un livello vettoriale e la Carta.](shot:layers/types-rows)
 
 ## Livello di pittura
 
@@ -18,9 +18,13 @@ Un livello Oggetto conserva un'immagine importata con dimensioni, profondità in
 
 Puoi spostare, ridimensionare e ruotare un livello Oggetto senza ricampionarne ripetutamente l'origine. Scegli **Livello > Rasterizza livello** quando devi dipingere sui suoi pixel o usare un comando che richiede un livello di pittura. La rasterizzazione lo converte nello spazio colore, nella profondità in bit e nella griglia di pixel del disegno.
 
+## Livello vettoriale
+
+Un livello vettoriale contiene tracciati invece di pixel. Scegli **Livello > Nuovo > Nuovo livello vettoriale**, oppure seleziona **Nuovo livello vettoriale** in fondo al pannello Livelli. Un badge tracciato contrassegna la sua miniatura. Vedi [Livelli vettoriali](/it/docs/layers/vector/).
+
 ## Carta
 
-La Carta fornisce il colore di sfondo e la trama usata dai tratti a secco. Rimane in fondo alla pila dei livelli e ha miniature del colore e della trama.
+La Carta fornisce il colore di sfondo e la trama a cui reagiscono i pennelli con **Intensità della trama**. Rimane in fondo alla pila dei livelli e ha miniature del colore e della trama.
 
 Un disegno può contenere una Carta. La Carta non può avere una maschera, diventare un livello di ritaglio, essere spostata sopra i livelli ordinari o essere unita a un livello ordinario. Vedi [Carta](/it/docs/layers/paper/) per trama, illuminazione e altre impostazioni.
 

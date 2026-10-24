@@ -58,7 +58,7 @@ Faça uma das seguintes ações:
 - Role quando **Roda do mouse** estiver configurada para deslocar em [Preferências](/pt-BR/docs/preferences/). Mantenha **Shift** pressionado e role para mover lateralmente.
 - Mantenha **Espaço** pressionado e arraste.
 - Arraste com dois dedos em uma tela sensível ao toque.
-- Selecione a ferramenta **Mão** ou pressione **A** e arraste.
+- Selecione a ferramenta **Mão** ou pressione **H** e arraste.
 - Arraste no painel **Navegador**.
 - No editor web, arraste com o botão do meio ou direito do mouse.
 - Mova o analógico esquerdo de um controle de jogo.
@@ -74,9 +74,10 @@ Faça uma das seguintes ações:
 - Gire dois dedos na tela sensível ao toque ou no trackpad do macOS e do iPad quando **Girar com dois dedos** estiver ativado em Preferências.
 - Digite um ângulo ou arraste o controle de rotação no menu do indicador de zoom.
 - Selecione um botão de rotação no painel **Navegador**.
+- Selecione **Girar visualização**, que compartilha um botão com **Mão**, ou pressione **R** e arraste.
+- Pressione **-** para girar 90° à esquerda, ou **^** para girar 90° à direita.
 
-Por padrão, nenhuma tecla gira a visualização. Para voltar a 0°, selecione
-**Redefinir rotação** no menu da indicação de zoom.
+Para voltar a 0°, pressione **5** ou selecione **Redefinir rotação** no menu da indicação de zoom.
 
 ## Inverter a visualização
 

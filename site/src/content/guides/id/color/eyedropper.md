@@ -66,7 +66,7 @@ Pilih **Gaya** di bilah Opsi Alat saat mengambil warna (di bagian atas jendela d
 
 ![Kaca pembesar Pemilih Warna di atas goresan merah, dengan warna sampel dan warna saat ini di cincinnya.](shot:color/eyedropper-loupe)
 
-![Kaca pembesar Pemilih Warna di atas jari, dengan titik sampel di bawah kontak.](shot:color/eyedropper-touch)
+![Kaca pembesar Pemilih Warna di tepi goresan merah, dengan garis silang di tengahnya dan cincin dua warna.](shot:color/eyedropper-touch)
 
 Sentuhan selalu memakai kaca pembesar. Memilih **Pemilih Warna** di Sketsa mengatur
 **Gaya** ke **Pemilih Warna**. Tanda lapisan kecil muncul jika **Sumber** disetel ke

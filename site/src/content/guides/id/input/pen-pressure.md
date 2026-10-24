@@ -10,7 +10,7 @@ Anda dapat mengalibrasi tekanan pena sebelum digunakan oleh kuas.
 
 Buka [Preferensi](/id/docs/preferences/), pilih **Pena & Masukan**, lalu pilih **Sesuaikan…** di samping **Tekanan pena**.
 
-![Dialog Tekanan pena dengan kurva dan penanda tekanan langsung.](shot:pen/pressure-calibration)
+![Dialog Tekanan pena dengan kurvanya, Lebih kuat dan Lebih ringan, Atur Ulang, Batal, dan Terapkan.](shot:pen/pressure-calibration)
 
 ## Kurva tekanan
 

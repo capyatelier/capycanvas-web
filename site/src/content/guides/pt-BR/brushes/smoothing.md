@@ -14,7 +14,7 @@ Você pode suavizar um traço de pincel enquanto desenha. Os ajustes de suaviza�
 
 A intensidade da suavização do pincel é independente do ajuste principal de **Intensidade** do pincel.
 
-![O mesmo caminho desenhado com vários valores de Intensidade de suavização.](shot:brushes/smoothing-comparison)
+![O mesmo caminho desenhado duas vezes, o traço de cima sem suavização e o de baixo com um valor alto de Intensidade de suavização.](shot:brushes/smoothing-comparison)
 
 ## Ajustar pela velocidade
 

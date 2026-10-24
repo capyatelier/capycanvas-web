@@ -1,11 +1,12 @@
 ---
 title: "Katmanları birleştirme"
-description: "Birleştirme komutlarıyla katmanları tek bir boya katmanında birleştirme."
-related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types"]
+description: "Birleştirme komutlarıyla katmanları tek bir katmanda birleştirme ve vektör katmanlarına ne olduğu."
+related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types", "layers/vector"]
 ---
 
-Katmanları tek bir boya katmanında birleştirebilirsiniz. Birleştirme komutları
-**Katman** menüsünün ve her katman menüsünün sonlarına doğru bulunur.
+Katmanları tek bir boya katmanında ya da iki vektör katmanını tek bir vektör
+katmanında birleştirebilirsiniz. Birleştirme komutları **Katman** menüsünün ve
+her katman menüsünün sonlarına doğru bulunur.
 
 ![Ribbon etkinken Katman menüsü; Kırpılan katmanları birleştir, Görünenleri birleştir, Görünenlerden yeni katman oluştur ve Görüntüyü düzleştir görünüyor.](shot:layers/merging-menu)
 
@@ -27,6 +28,19 @@ olur.
 
 İki katman da görünür, kilitsiz ve Normal modunda olmalıdır. Alttaki katman bir
 filtre olamaz ve etkin katman da kırpılmış değilse kırpılmış olamaz.
+
+## Vektör katmanlarını birleştirme
+
+**Alttakiyle birleştir**, bir [vektör katmanı](/tr/docs/layers/vector/) altındaki
+vektör katmanıyla birleşirken yolları korur ve onları öne koyar. İki katmanın da
+opaklığı %100 olmalı, maskesi, kırpması ve iliştirilmiş filtresi olmamalıdır.
+
+Vektör katmanı içeren diğer her birleştirme, yollarını piksele dönüştürür. Bir
+bildirim katmanların adlarını verir, örneğin “Birleştirme, “Line art” içindeki
+yolları piksele dönüştürür.”, ve birleştirme siz düğmesini seçtiğinizde çalışır.
+**Görüntüyü düzleştir**, adları gizli katman bildirimine ekler.
+
+![“Birleştirme, “Line art” içindeki yolları piksele dönüştürür.” bildirimi ve Alttakiyle birleştir düğmesi.](shot:vector/merge-notice)
 
 ## Kırpılan katmanları birleştir
 

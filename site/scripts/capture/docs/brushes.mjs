@@ -43,15 +43,19 @@ export default async function brushes({ e, b, shoot }) {
   await e.wait(`!!document.querySelector('${group('tool_settings')} [data-tool-setting="material_hardness"]')`);
   await fit('tool_settings');
   await shoot('brushes/tool-panel', { target: group('tool_settings'), variant: refit('tool_settings') });
-  await shoot('brushes/tip-texture-settings', {
-    variant: refit('tool_settings'),
-    target: [{ selector: `${group('tool_settings')} [data-tool-setting="grain_depth"]` }, { selector: `${group('tool_settings')} [data-tool-setting="material_hardness"]` }, { selector: `${group('tool_settings')} [data-tool-setting="angle"]` }],
-  });
-
   await shoot('brushes/dry-media-settings', { target: group('tool_settings'), variant: refit('tool_settings') });
   await shoot('brushes/smoothing-settings', {
     target: [{ selector: `${group('tool_settings')} [data-tool-setting="smoothing_strength"]` }, { selector: `${group('tool_settings')} h3`, text: 'Smoothing' }],
     variant: refit('tool_settings'),
+  });
+
+  await e.send({ type: 'select_brush', id: 4 });
+  await e.wait(`!!document.querySelector('${group('tool_settings')} [data-tool-setting="grain_depth"]') && !document.querySelector('${group('tool_settings')} [data-tool-setting="material_hardness"]')`);
+  await fit('tool_settings');
+  await shoot('brushes/tip-texture-settings', {
+    pad: 4,
+    variant: refit('tool_settings'),
+    target: [{ selector: `${group('tool_settings')} [data-tool-setting="hardness"]` }, { selector: `${group('tool_settings')} [data-tool-setting="grain_depth"]` }],
   });
 
   await e.send({ type: 'select_brush', id: 1 });

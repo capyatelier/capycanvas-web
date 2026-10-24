@@ -46,6 +46,6 @@ related: ["filters/how-filters-apply", "filters/tone", "selections/working", "fi
 3. **ピクセル数**を**指定サイズ内に収める**にし、**最大幅（px）** と**最大高さ（px）** は2048のままにします。
 4. **ファイルを選択…** を選択し、フォルダーと名前を選びます。
 
-![「画像を書き出す」ダイアログ。Web / 共有、JPEG画像、品質90、指定サイズ内に収めるが設定されています。](shot:photo/export-jpeg)
+![書き出しの設定。Web / 共有、JPEG画像、品質90、指定サイズ内に収めるが設定されています。](shot:photo/export-jpeg)
 
 書き出しても、作品は変わりません（[画像の書き出し](/ja/docs/files/export/)）。

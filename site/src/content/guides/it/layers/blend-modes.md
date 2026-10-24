@@ -24,7 +24,7 @@ pulsante dell'intestazione. Il sottotitolo della riga mostra il metodo quando no
 Non puoi cambiare il metodo di fusione di un livello di selezione o di un livello
 bloccato. [Unisci sotto](/it/docs/layers/merging/) richiede che entrambi i livelli
 siano impostati su Normale. I metodi di fusione mescolano i colori nello spazio
-di fusione del disegno, impostato con **Modifica > Fusione** (vedi
+di fusione del disegno, impostato con **Immagine > Fusione** (vedi
 [Spazio colore, profondità in bit e fusione](/it/docs/color-management/color-spaces/)).
 
 ## Metodi del menu di fusione

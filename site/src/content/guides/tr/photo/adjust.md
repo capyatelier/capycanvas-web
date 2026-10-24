@@ -59,7 +59,7 @@ dosyası özgün fotoğrafı, katmanları, maskeleri ve filtre katmanlarını tu
 3. **Piksel boyutu** ayarını **Sınırlara sığdır** yapın ve **En büyük genişlik (px)** ile **En büyük yükseklik (px)** değerlerini 2048 olarak bırakın.
 4. **Dosya seç…** düğmesini seçin, bir klasör ve ad seçin.
 
-![Web / paylaşım, JPEG görüntüsü, Kalite 90 ve Sınırlara sığdır ayarlarıyla Görüntüyü dışa aktar iletişim kutusu.](shot:photo/export-jpeg)
+![Web / paylaşım, JPEG görüntüsü, Kalite 90 ve Sınırlara sığdır ayarlarıyla dışa aktarma ayarları.](shot:photo/export-jpeg)
 
 Dışa aktarma çizimi değiştirmez
 ([Görüntüleri dışa aktarma](/tr/docs/files/export/)).

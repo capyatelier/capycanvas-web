@@ -7,7 +7,7 @@ related: ["filters/adding", "filters/tone", "filters/how-filters-apply"]
 Các bộ lọc màu nằm trong **Bộ lọc > Màu** và trong danh mục **Màu** của bảng
 **Bộ lọc**. Bạn thay đổi thiết lập của chúng trong bảng **Thuộc tính**.
 
-![Bảng Bộ lọc hiện danh mục Màu với bản xem trước của từng bộ lọc.](shot:filters/color-list)
+![Danh mục Màu trong bảng Bộ lọc, từ Sắc màu / Độ bão hòa đến Ánh xạ chuyển màu, mỗi bộ lọc có bản xem trước nét vẽ.](shot:filters/color-list)
 
 ## Sắc màu / Độ bão hòa
 

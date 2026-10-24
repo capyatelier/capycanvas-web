@@ -78,9 +78,10 @@ Effectuez l’une des opérations suivantes :
 - Faites pivoter deux doigts sur un écran tactile, ou sur le trackpad de macOS et d’iPad, quand **Tourner avec deux doigts** est activé dans les Préférences.
 - Saisissez un angle ou faites glisser le curseur de rotation dans le menu de l’indicateur de zoom.
 - Sélectionnez un bouton de rotation dans le panneau **Navigateur**.
+- Sélectionnez **Pivoter la vue**, qui partage un bouton avec **Main**, ou appuyez sur **R**, puis faites glisser.
+- Appuyez sur **-** pour pivoter de 90° vers la gauche, ou sur **^** pour pivoter de 90° vers la droite.
 
-Par défaut, aucune touche ne fait pivoter la vue. Pour revenir à 0°, sélectionnez
-**Réinitialiser la rotation** dans le menu de l’affichage du zoom.
+Pour revenir à 0°, appuyez sur **5** ou sélectionnez **Réinitialiser la rotation** dans le menu de l’affichage du zoom.
 
 ## Retourner la vue
 

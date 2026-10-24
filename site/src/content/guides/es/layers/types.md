@@ -1,10 +1,10 @@
 ---
 title: "Tipos de capa"
-description: "Capas de pintura, objeto, Papel, grupo, relleno, filtro y selección y las reglas de cada una."
-related: ["layers/panel", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
+description: "Capas de pintura, objeto, vectoriales, Papel, grupo, relleno, filtro y selección y las reglas de cada una."
+related: ["layers/panel", "layers/vector", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
 ---
 
-![Los tipos de capa actuales en el panel Capas.](shot:layers/types-rows)
+![El panel Capas con una capa de selección, un grupo, una capa de pintura, un filtro, capas de relleno, una capa vectorial y Papel.](shot:layers/types-rows)
 
 ## Capa de pintura
 
@@ -18,9 +18,13 @@ Una capa de objeto conserva una imagen importada con su propio tamaño, profundi
 
 Puedes mover, escalar y girar una capa de objeto sin remuestrear su origen repetidamente. Elige **Capa > Rasterizar capa** cuando necesites pintar en sus píxeles o usar un comando que requiera una capa de pintura. Rasterizar la convierte al espacio de color, la profundidad de bits y la cuadrícula de píxeles del dibujo.
 
+## Capa vectorial
+
+Una capa vectorial contiene trazados en lugar de píxeles. Elige **Capa > Nuevo > Nueva capa vectorial**, o selecciona **Nueva capa vectorial** al pie del panel Capas. Una insignia de trazado marca su miniatura. Consulta [Capas vectoriales](/es/docs/layers/vector/).
+
 ## Papel
 
-Papel proporciona el color de fondo y la textura que usan los trazos de medios secos. Permanece al fondo de la pila de capas y tiene miniaturas de color y textura.
+Papel proporciona el color de fondo y la textura a la que reaccionan los pinceles con **Intensidad de textura**. Permanece al fondo de la pila de capas y tiene miniaturas de color y textura.
 
 Un dibujo puede contener un Papel. Papel no puede tener una máscara, convertirse en capa de recorte, moverse encima de las capas normales ni combinarse con una capa normal. Consulta [Papel](/es/docs/layers/paper/) para la textura, la iluminación y los demás ajustes.
 

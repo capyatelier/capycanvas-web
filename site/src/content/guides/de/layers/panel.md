@@ -1,7 +1,7 @@
 ---
 title: "Bedienfeld Ebenen"
 description: "Was jeder Teil des Bedienfelds Ebenen zeigt und bewirkt, einschließlich des Ebenenmenüs."
-related: ["layers/working", "layers/settings", "layers/types", "layers/masks"]
+related: ["layers/working", "layers/settings", "layers/types", "layers/vector", "layers/masks"]
 ---
 
 Das Bedienfeld **Ebenen** listet die Ebenen der Zeichnung auf, die vorderste
@@ -18,7 +18,7 @@ Führen Sie eine der folgenden Aktionen aus:
 - Wählen Sie in Skizze **Ebenen** in der Titelleiste. Die gemeinsame Schublade öffnet ihre Ebenenansicht; wählen Sie die Eigenschaften-Schaltfläche einer Ebene, um zu Eigenschaften zu wechseln.
 - Geben Sie „Ebenen-Bedienfeld“ in der [Befehlssuche](/de/docs/start/command-search/) ein.
 
-Im Arbeitsbereich Foto ist das Bedienfeld in der rechten Spalte geöffnet.
+Im Arbeitsbereich Foto ist das Bedienfeld in der rechten Spalte geöffnet. Im Arbeitsbereich Skizze können Sie **Ebenen** aus der Titelleiste auf die Leinwand ziehen, um es dort als Blase zu behalten ([Werkzeugblasen](/de/docs/customize/bubbles/)).
 
 ## Kopfbereich
 
@@ -56,7 +56,7 @@ Miniatur jedes Typs.
 
 Papier hat getrennte Farb- und Texturminiaturen. Fehlt Papier, erscheint **Papier hinzufügen** nach der letzten Zeile.
 
-![Die Schublade in Skizze beim Wechsel von Ebenen zu Eigenschaften.](shot:layers/sketch-properties-drawer)
+![Die Schublade in Skizze mit den Eigenschaften von Papier und Alle Ebenen am unteren Rand.](shot:layers/sketch-properties-drawer)
 
 Klicken Sie bei gedrückter Taste **Strg** auf die Miniatur einer Malebene, um
 ihre Deckkraft als Auswahl zu laden, oder auf die Maskenminiatur, um die Maske
@@ -75,34 +75,35 @@ Schnittmenge mit ihr zu bilden.
 
 ## Schaltflächen am unteren Rand
 
-![Die Schaltflächen am unteren Rand des Bedienfelds Ebenen.](shot:layers/panel-footer "1 Neue Ebene · 2 Neue Gruppe · 3 Neue Auswahlebene · 4 Maske hinzufügen · 5 Filter hinzufügen · 6 Bild als Ebene importieren… · 7 Ausgewählte Ebenen löschen · 8 Ebenenaktionen")
+![Die Schaltflächen am unteren Rand des Bedienfelds Ebenen.](shot:layers/panel-footer "1 Neue Ebene · 2 Neue Vektorebene · 3 Neue Gruppe · 4 Neue Auswahlebene · 5 Maske hinzufügen · 6 Filter hinzufügen · 7 Bild als Ebene importieren… · 8 Ausgewählte Ebenen löschen · 9 Ebenenaktionen")
 
 1. **Neue Ebene** fügt eine Malebene hinzu.
-2. **Neue Gruppe**. Sind mehrere Zeilen ausgewählt, werden sie gruppiert.
-3. **Neue Auswahlebene** (siehe [Auswahlebenen](/de/docs/selections/selection-layers/)).
-4. **Maske hinzufügen**.
-5. **Filter hinzufügen** hängt einen Filter an die aktive Ebene an.
-6. **Bild als Ebene importieren…**
-7. **Ausgewählte Ebenen löschen**.
-8. **Ebenenaktionen** öffnet das Ebenenmenü der aktiven Ebene.
+2. **Neue Vektorebene** fügt eine [Vektorebene](/de/docs/layers/vector/) hinzu.
+3. **Neue Gruppe**. Sind mehrere Zeilen ausgewählt, werden sie gruppiert.
+4. **Neue Auswahlebene** (siehe [Auswahlebenen](/de/docs/selections/selection-layers/)).
+5. **Maske hinzufügen**.
+6. **Filter hinzufügen** hängt einen Filter an die aktive Ebene an.
+7. **Bild als Ebene importieren…**
+8. **Ausgewählte Ebenen löschen**.
+9. **Ebenenaktionen** öffnet das Ebenenmenü der aktiven Ebene.
 
 Eine Schaltfläche ist nicht verfügbar, wenn ihre Aktion nicht auf die aktive
 Ebene anwendbar ist, zum Beispiel **Maske hinzufügen** bei einer gesperrten
-Ebene (siehe [Mit Ebenen arbeiten](/de/docs/layers/working/)).
+Ebene (siehe [Mit Ebenen arbeiten](/de/docs/layers/working/)). In einem schmalen Bedienfeld wandern die Schaltflächen, die nicht passen, an den Anfang des Menüs **Ebenenaktionen**, beginnend mit **Neue Auswahlebene**.
 
 ## Wischen und Gedrückthalten
 
 Mit einem Stift oder einem Finger:
 
-- Wischen Sie eine Zeile nach links, um an ihrem rechten Ende **Löschen** anzuzeigen. Wählen Sie **Löschen** aus, um die Ebene zu löschen, oder wischen Sie nach rechts, um die Schaltfläche wieder auszublenden.
+- Wischen Sie eine Zeile nach links, um an ihrem rechten Ende **Sperren**, **Duplizieren** und **Löschen** anzuzeigen. **Sperren** lautet bei einer gesperrten Ebene **Entsperren**. Wählen Sie eine Schaltfläche aus, um sie auf die Ebene anzuwenden, oder wischen Sie nach rechts, um die Schaltflächen wieder auszublenden.
 - Wischen Sie eine Malebene nach rechts, um **Alphaschutz** zu aktivieren oder zu deaktivieren.
 - Wischen Sie eine Gruppe nach rechts, um **Durchreichen** zu aktivieren oder zu deaktivieren.
 - Halten Sie eine Zeile gedrückt, um ihr Ebenenmenü zu öffnen. Bewegen Sie den Stift oder Finger, ohne abzusetzen, um die Zeile stattdessen zu ziehen.
 
-![Eine nach links gewischte Zeile mit Löschen an ihrem rechten Ende.](shot:layers/panel-swipe-delete)
+![Eine nach links gewischte Zeile mit Sperren, Duplizieren und Löschen.](shot:layers/panel-swipe-delete)
 
-Ein kurzes Wischen ändert nichts. Wischen funktioniert nicht mit der Maus, nicht
-auf dem Griff und nicht bei gesperrten Ebenen.
+Ein kurzes Wischen ändert nichts. Wischen funktioniert nicht mit der Maus und nicht
+auf dem Griff. Eine gesperrte Ebene lässt sich nur nach links wischen.
 
 ## Ebenenmenü
 
@@ -119,7 +120,7 @@ Führen Sie eine der folgenden Aktionen aus:
 
 | Eintrag | Inhalt |
 | --- | --- |
-| **Neu** | **Neue Ebene**, **Neue beschnittene Ebene**, **Neue Gruppe**, **Einfarbige Füllung**, **Verlaufsfüllung**, **Neue Abwedel- und Nachbelichtungsebene**, **Auswahl auf neue Ebene kopieren**, **Auswahl auf neue Ebene ausschneiden** |
+| **Neu** | **Neue Ebene**, **Neue beschnittene Ebene**, **Neue Gruppe**, **Neue Vektorebene**, **Einfarbige Füllung**, **Verlaufsfüllung**, **Neue Abwedel- und Nachbelichtungsebene**, **Auswahl auf neue Ebene kopieren**, **Auswahl auf neue Ebene ausschneiden** |
 | **Filter hinzufügen** | Filter zum Anhängen an die Ebene, nach Kategorie |
 | **Anordnen** | **Ebene umbenennen…**, **Duplizieren**, **Ausgewählte Ebenen gruppieren** und bei einer Gruppe **Gruppierung aufheben** |
 | **Verrechnungsmodus** | Alle [Verrechnungsmodi](/de/docs/layers/blend-modes/) |
@@ -130,7 +131,8 @@ Führen Sie eine der folgenden Aktionen aus:
 | **Sichtbarkeit** | **Ebene einblenden**, **Ebene und übergeordnete Gruppen einblenden**, **Ausgewählte Ebenen isolieren**, **Alle Ebenen einblenden** |
 | **Ebene / Maske verschieben** | Wählt das Werkzeug [Vorgang](/de/docs/transform/move-transform/) aus |
 | **Mit darunterliegender Ebene vereinen**, **Sichtbare Ebenen vereinen**, **Sichtbares auf neue Ebene kopieren**, **Bild reduzieren** | Siehe [Ebenen vereinen](/de/docs/layers/merging/) |
-| **Gesamte Ebene leeren**, **Ebene löschen** | **Gesamte Ebene leeren** erscheint nur bei Malebenen |
+| **In Objektebene umwandeln**, **Ebene rastern** | **In Objektebene umwandeln** erscheint bei Malebenen und **Ebene rastern** bei Objektebenen und [Vektorebenen](/de/docs/layers/vector/) |
+| **Gesamte Ebene leeren**, **Ebene löschen** | **Gesamte Ebene leeren** erscheint nur bei Malebenen. Bei einer Vektorebene führen Sie es über die [Befehlssuche](/de/docs/start/command-search/) aus, um jeden Pfad zu entfernen |
 
 Wenn Sie das Menü einer Zeile öffnen, wird diese Ebene aktiv. Das Menü einer
 Gruppe beginnt mit **Neue Auswahlebene in Gruppe…** und

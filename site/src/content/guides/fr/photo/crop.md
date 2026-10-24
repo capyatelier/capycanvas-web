@@ -20,7 +20,7 @@ Le dessin contient un calque Objet nommé d’après le fichier. Dans l’exempl
 
 Choisissez **Image > Recadrer**, sélectionnez **Recadrer** dans la barre Outils, ou appuyez sur **C** ([Recadrer](/fr/docs/transform/crop/)). Un cadre à poignées apparaît sur la photo, avec la barre de recadrage au bas de la toile.
 
-Sélectionnez **Rapport** dans la barre de recadrage et choisissez **4:5**. Le cadre
+Sélectionnez le menu des rapports à l’extrémité gauche de la barre de recadrage et choisissez **4:5**. Le cadre
 devient le plus grand cadre de ce rapport, centré sur la toile. Son orientation suit
 celle de la photo : une photo à l’horizontale reçoit un cadre 5:4.
 
@@ -43,7 +43,7 @@ la roche et des pointes de la fougère.
 
 Sélectionnez **Appliquer** dans la barre de recadrage, ou appuyez sur **Entrée**. La
 toile prend la taille du cadre : 2000 × 1600 pixels dans l’exemple. Les pixels
-recadrés restent sur le calque, masqués, sauf si **Supprimer les zones recadrées**
+recadrés restent sur le calque, masqués, sauf si **Supprimer la peinture recadrée**
 est activé dans la barre de recadrage.
 
 Étape suivante : [Retouche](/fr/docs/photo/retouch/).

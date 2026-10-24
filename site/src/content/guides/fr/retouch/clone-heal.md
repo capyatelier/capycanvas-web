@@ -19,7 +19,8 @@ Effectuez l’une des opérations suivantes :
 - Appuyez sur **S**. Appuyez de nouveau pour passer à **Pinceau correcteur**, puis à **Correcteur localisé**.
 - Dans Photo, sélectionnez **Tampon de duplication** ou **Correcteur localisé / Pinceau correcteur** dans la barre d’outils Outils.
 - Dans Peinture, sélectionnez **Mélange / Tampon de duplication** dans la barre d’outils Outils. Cliquez avec le bouton droit sur le bouton ou appuyez longuement dessus pour choisir **Tampon de duplication**.
-- Dans Croquis, sélectionnez **Sculpture** dans la barre de titre, sélectionnez-le de nouveau pour ouvrir le tiroir, puis sélectionnez **Duplication**, **Correction** ou **Correction localisée**.
+- Dans Croquis, sélectionnez **Sculpture** dans la barre de titre, sélectionnez-le de nouveau pour ouvrir le tiroir, choisissez l’ensemble **Retouche**, puis choisissez un outil.
+- Quand un outil de retouche est actif, choisissez un outil dans l’ensemble **Retouche** dans **Ensemble d’outils**.
 - Tapez le nom de l’outil dans la [recherche de commandes](/fr/docs/start/command-search/).
 
 **Pinceau correcteur** et **Correcteur localisé** n’ont pas de bouton dans Peinture.

@@ -1,7 +1,7 @@
 ---
 title: "触摸手势"
 description: "手指在画布上的操作，以及可指定操作的手指轻点。"
-related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
+related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
 在触摸屏上，可以用手指移动画布、拾取颜色和执行命令。
@@ -21,6 +21,18 @@ related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
 用一根手指在画布上按住不动，可拾取手指下方的颜色。手指上方会出现一个放大环。拖动以瞄准，抬起手指即取色。按 **Escape** 可取消。
 
 第二根手指触碰画布时，取色会取消。
+
+## 清除图层
+
+用三根手指在画布上来回擦动，可对当前图层执行**清除整个图层**。三根手指一起移动、反向，再反向，中途不要抬起。一次**撤销**即可恢复图层。已锁定的图层不会被清除。
+
+## 移动气泡
+
+用两根手指拖动[气泡](/zh/docs/customize/bubbles/)，可从气泡上的任意位置移动它。
+
+## 专注模式下的工具栏
+
+在 Linux 应用的[专注模式](/zh/docs/customize/zen/)下，用一根手指从窗口边缘向内滑动，可显示停靠在该边缘的工具栏和面板。
 
 ## 手指轻点
 
@@ -50,4 +62,4 @@ related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
 
 ## 平台
 
-触摸手势在 Linux、Windows、Android、iPad 和网页版上可用。macOS 上不显示**触摸手势**组。
+触摸手势在 Linux、Windows、Android、iPad 和网页版上可用。macOS 上不显示**触摸手势**组，但在触控板上用三根手指来回擦动仍可清除图层。

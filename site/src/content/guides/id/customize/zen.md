@@ -1,7 +1,7 @@
 ---
 title: "Mode Zen"
 description: "Menyembunyikan bilah judul serta panel yang tertambat dengan Mode Zen, dan preferensinya."
-related: ["customize/panels", "customize/toolbars", "preferences", "input/keyboard"]
+related: ["customize/panels", "customize/toolbars", "customize/bubbles", "preferences", "input/keyboard"]
 ---
 
 Anda dapat menyembunyikan bilah judul serta panel dan bilah alat yang tertambat dalam
@@ -30,11 +30,22 @@ Mode Zen juga menyembunyikan kolom yang diciutkan dan bagian bawah jendela. Yang
 tampil:
 
 - panel mengambang
+- [gelembung alat](/id/docs/customize/bubbles/), beserta halo, pemilih, dan menunya
 - bilah tindakan kanvas di samping seleksi atau transformasi
 - tombol Capy, kecuali jika **Tampilkan Capy dalam mode Zen** nonaktif
 - pemberitahuan
 
 Tombol pintasan dan pencarian perintah (**Ctrl+K**) berfungsi seperti biasa.
+
+## Mempertahankan bilah alat dalam Mode Zen
+
+Di aplikasi Linux, pilih **Tampilkan di Mode Zen** dari menu bilah alat untuk
+mempertahankan bilah alat itu di layar dalam Mode Zen.
+
+Di layar sentuh pada aplikasi Linux, geser ke dalam dengan satu jari dari jarak 24 px
+dari tepi jendela untuk menampilkan bilah alat dan panel yang tertambat di tepi itu.
+Semuanya tersembunyi lagi saat Anda menyentuh di luarnya. Pena atau mouse tidak dapat
+menampilkannya.
 
 ## Menambatkan dalam Mode Zen
 

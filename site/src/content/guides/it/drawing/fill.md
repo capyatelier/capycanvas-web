@@ -1,7 +1,7 @@
 ---
 title: "Strumenti di riempimento"
 description: "Riempire aree, forme a mano libera e zone chiuse di un livello con il colore corrente."
-related: ["drawing/gradient", "layers/settings", "selections/working", "drawing/brush-tools"]
+related: ["drawing/gradient", "layers/vector", "layers/settings", "selections/working", "drawing/brush-tools"]
 ---
 
 Puoi riempire parti del livello selezionato con il colore corrente usando
@@ -73,6 +73,10 @@ volta che apri {appName}.
 Se Riempi usa **Livelli di riferimento** e nessun livello è contrassegnato,
 Riempi non dipinge nulla e un avviso propone di contrassegnare il livello
 sottostante.
+
+## Livelli vettoriali
+
+Su un livello vettoriale, **Riempi** colora il tracciato chiuso su cui fai clic. Un clic in qualsiasi altro punto, o la sorgente **Livelli di riferimento**, aggiunge un livello di pittura sotto il livello vettoriale e riempie lì. **Riempimento con lazo** aggiunge un tracciato riempito, e **Sfumatura** e **Racchiudi e riempi** offrono **Nuovo livello di pittura sotto**. Vedi [Livelli vettoriali](/it/docs/layers/vector/).
 
 ## Impostazioni di riempimento
 

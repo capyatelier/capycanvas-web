@@ -12,11 +12,11 @@ Trockenmedium-Pinsel verwenden Stiftdruck, Stiftneigung und die Papiertextur der
 
 Die integrierten Trockenmedium-Vorgaben sind **Bleistift**, **Spitzer Bleistift**, **Schattierungsstift**, **Kohle**, **Kreide**, **Pastellblock** und **Wachsmalstift**. Wählen Sie ihr Werkzeug in der Werkzeugleiste Werkzeuge und dann eine Vorgabe in **Werkzeugsatz**.
 
-Bleistift und Spitzer Bleistift reagieren auf Druck und Neigung. Schattierbleistift, Kohle und Kreide verwenden Druck für den Materialauftrag und Neigung für breite seitliche Striche. Pastellblock verwendet je nach Stiftneigung die Kante oder die breite Fläche des Blocks. Wachsstift reagiert auf Druck und Neigung mit einer abgerundeten Markierung.
+Jede Vorgabe reagiert auf Stiftdruck und Stiftneigung. Wenn Sie den Stift zum Papier neigen, wird die Markierung zu einem breiten seitlichen Strich. **Pastellblock** zeichnet aufrecht mit dem Ende des Blocks und geneigt mit seiner Längsseite.
 
 ## Haupteinstellungen
 
-![Die Hauptregler und Materialeinstellungen eines Trockenmedium-Pinsels.](shot:brushes/dry-media-settings)
+![Das Bedienfeld Werkzeug für Bleistift mit Pinselgröße, Stärke, Texturstärke und Materialhärte über den Gruppen Glättung, Spitze und Überblendung.](shot:brushes/dry-media-settings)
 
 ### Größe
 
@@ -30,11 +30,11 @@ Legt fest, wie kräftig das Material die Oberfläche markiert. Höhere Werte fü
 
 ### Texturstärke
 
-Legt fest, wie stark die Papiertextur den Materialauftrag des Strichs verändert. Bei 0 % reagiert der Strich nicht auf die Papiertextur.
+Legt fest, wie stark die Papiertextur den Materialauftrag des Strichs verändert. Bei 0% reagiert der Strich nicht auf die Papiertextur. Der Regler reicht bis 200%.
 
 ### Materialhärte
 
-Legt fest, wie leicht das Material die tiefen und hohen Bereiche der Papiertextur bedeckt. Höhere Werte lassen das Material härter reagieren.
+Legt fest, wie stark der Stiftdruck die Pigmentmenge verändert, die jeder Kontakt hinterlässt. Bei hohen Werten hinterlässt eine leichte Berührung wenig Pigment, bei niedrigen Werten kräftige Körnung.
 
 ## Papiertextur
 
@@ -42,4 +42,4 @@ Trockenmedium-Striche verwenden das nächste [Papier](/de/docs/layers/paper/) au
 
 ![Vergleichbare Trockenmedium-Striche auf Bristolkarton, Matt und Sandpapier.](shot:layers/paper-surface-comparison)
 
-Trockenmedium-Pinsel zeigen keine Nassmedium-Regler wie **Farbausbreitung**, **Wasserauftrag** oder **Mischen**. Die genauen Spitzenregler hängen von der Vorgabe ab.
+Trockenmedium-Pinsel zeigen in der Gruppe **Spitze** nur **Spitzenwinkel** und keine Nassmedium-Regler wie **Farbausbreitung**, **Wasserauftrag** oder **Mischen**.

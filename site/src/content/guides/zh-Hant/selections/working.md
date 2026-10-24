@@ -59,9 +59,11 @@ related: ["selections/tools", "selections/quick-mask", "selections/selection-lay
 - **快速遮罩**：參見[快速遮罩](/zh-Hant/docs/selections/quick-mask/)。
 - **儲存**：**另存為選取範圍圖層**，參見[選取範圍圖層](/zh-Hant/docs/selections/selection-layers/)。
 
+在較窄的欄上，最後幾個按鈕（例如**快速遮罩**和**儲存**）會移到**更多**中。
+
 ## 選擇選單
 
-也可以從選取範圍操作欄上的**更多**，以及工具設定面板中選取範圍工具設定下方的**選取**開啟**選取**選單。
+也可以從選取範圍操作欄上的**更多**，以及工具設定面板**模式**列下方的**選取**開啟**選取**選單。
 
 | 命令 | 作用 | 按鍵 |
 | --- | --- | --- |
@@ -121,7 +123,7 @@ related: ["selections/tools", "selections/quick-mask", "selections/selection-lay
 
 執行以下任一操作：
 
-- 從**編輯**選單中選擇該命令。清除命令也在**選取**選單中。
+- 選擇**編輯 > 填色選取範圍**、**清除所選像素**或**清除選取範圍外部**。
 - 按 **Shift+Backspace** 填色，或按 **Delete** 或 **Backspace** 清除選取的像素。
 - 在選取範圍操作欄上選擇**填滿**，或選擇**清除**再選擇一個命令。
 - 在「繪畫」中，選擇「命令」工具列中的**填色選取範圍**。
@@ -135,7 +137,7 @@ related: ["selections/tools", "selections/quick-mask", "selections/selection-lay
 
 執行以下任一操作：
 
-- 選擇**選取 > 將選取範圍複製至新圖層**或**選取 > 將選取範圍剪下至新圖層**。
+- 選擇**圖層 > 新增 > 將選取範圍複製至新圖層**或**圖層 > 新增 > 將選取範圍剪下至新圖層**。
 - 按 **Ctrl+J** 複製，或按 **Ctrl+Shift+J** 剪下。
 - 選擇選取範圍操作欄上的**複製至圖層**，然後選擇一個命令。
 

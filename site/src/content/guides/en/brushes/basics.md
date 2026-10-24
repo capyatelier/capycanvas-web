@@ -1,7 +1,7 @@
 ---
 title: "Size, strength and opacity"
 description: "Brush Size, Strength and Opacity, and the panels, bars and keys where you change them."
-related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools"]
+related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools", "customize/bubbles"]
 ---
 
 Brush controls depend on the tool and preset. Changes are saved with the preset.
@@ -57,6 +57,8 @@ The Strength preview shows how the current brush responds at that value.
 ![The Strength slider with its contact preview open.](shot:brushes/strength-preview)
 
 Select **Bookmark this value** in a preview to add a mark to the track, or **Remove bookmark** to remove it. Each preset keeps its own bookmarks.
+
+Drag **Color Picker** from that bar onto the canvas to take a [bubble](/docs/customize/bubbles/) with Size and Strength arcs.
 
 ## Size keys
 

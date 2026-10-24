@@ -1,7 +1,7 @@
 ---
 title: "Ukuran, kekuatan, dan opasitas"
 description: "Ukuran, Kekuatan, dan Opasitas kuas, serta panel, bilah, dan tombol untuk mengubahnya."
-related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools"]
+related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools", "customize/bubbles"]
 ---
 
 Kontrol kuas bergantung pada alat dan preset. Perubahan disimpan bersama preset.
@@ -57,6 +57,8 @@ Pratinjau Kekuatan menunjukkan respons kuas saat ini pada nilai tersebut.
 ![Penggeser Kekuatan dengan pratinjau kontak terbuka.](shot:brushes/strength-preview)
 
 Pilih **Tandai nilai ini** dalam pratinjau untuk menambahkan tanda pada jalur, atau **Hapus penanda** untuk menghapusnya. Setiap preset menyimpan penandanya sendiri.
+
+Seret **Pemilih Warna** dari bilah itu ke kanvas untuk mengambil [gelembung](/id/docs/customize/bubbles/) dengan busur Ukuran dan Kekuatan.
 
 ## Tombol ukuran
 

@@ -1,7 +1,7 @@
 ---
 title: "Gestos táctiles"
 description: "Lo que hacen los dedos sobre el lienzo y los toques con los dedos que puedes asignar."
-related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
+related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
 Puedes mover el lienzo, tomar colores y ejecutar comandos con los dedos en una
@@ -30,6 +30,23 @@ anillo de aumento por encima del dedo. Arrastra para apuntar y levanta el dedo p
 tomar el color. Pulsa **Escape** para cancelar.
 
 Un segundo dedo sobre el lienzo cancela la toma de color.
+
+## Borrar la capa
+
+Frota el lienzo con tres dedos para ejecutar **Borrar capa completa** en la capa
+activa. Mueve los tres dedos juntos, invierte la dirección y vuelve a invertirla sin
+levantarlos. Un **Deshacer** restaura la capa. Una capa bloqueada no se borra.
+
+## Mover una burbuja
+
+Arrastra una [burbuja](/es/docs/customize/bubbles/) con dos dedos para moverla desde
+cualquier punto de ella.
+
+## Barras de herramientas en modo Zen
+
+En la aplicación para Linux, desliza hacia dentro con un dedo desde el borde de la
+ventana en el [modo Zen](/es/docs/customize/zen/) para mostrar las barras de
+herramientas y los paneles acoplados en ese borde.
 
 ## Toques con los dedos
 
@@ -66,4 +83,5 @@ todos los atajos**, en esa página, también restablece los toques.
 ## Plataformas
 
 Los gestos táctiles funcionan en Linux, Windows, Android, iPad y la web. El grupo
-**Gestos táctiles** no aparece en macOS.
+**Gestos táctiles** no aparece en macOS, donde frotar con tres dedos en el trackpad
+sigue borrando la capa.

@@ -24,7 +24,7 @@ katmanlar Normal modunu kullanır.
 Bir seçim katmanının veya kilitli bir katmanın karıştırma modunu
 değiştiremezsiniz. [Alttakiyle birleştir](/tr/docs/layers/merging/) için iki
 katmanın da Normal modunda olması gerekir. Karıştırma modları renkleri,
-**Düzenle > Karıştırma** ile ayarlanan çizimin karıştırma uzayında karıştırır
+**Görüntü > Karıştırma** ile ayarlanan çizimin karıştırma uzayında karıştırır
 (bkz. [Renk uzayı, bit derinliği ve karıştırma](/tr/docs/color-management/color-spaces/)).
 
 ## Karıştırma menüsündeki modlar

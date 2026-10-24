@@ -12,11 +12,11 @@ Kuru malzeme fırçaları her çizgiyi biçimlendirmek için kalem basıncını,
 
 Yerleşik kuru malzeme hazır ayarları **Kurşun kalem**, **Sivri kurşun kalem**, **Gölgelendirme kalemi**, **Kömür**, **Tebeşir**, **Pastel blok** ve **Mum boya** seçenekleridir. Araçlar çubuğunda araçlarını seçin, ardından **Araç seti** içinde bir hazır ayar seçin.
 
-Kurşun Kalem ve Sivri Kurşun Kalem basınca ve eğime tepki verir. Gölgeleme Kalemi, Kömür ve Tebeşir kaplama için basıncı, geniş yan çizgiler için eğimi kullanır. Pastel Blok, kalemi eğdikçe bloğun kenarını veya geniş yüzünü kullanır. Mum boya basınca ve eğime yuvarlak bir izle tepki verir.
+Her hazır ayar kalem basıncına ve eğimine tepki verir. Kalemi kâğıda doğru eğmek izi geniş bir yan çizgiye dönüştürür. **Pastel blok**, kalem dikken bloğun ucuyla, eğikken uzun kenarıyla çizer.
 
 ## Ana ayarlar
 
-![Kuru malzeme fırçasının ana denetimleri ve Malzeme ayarları.](shot:brushes/dry-media-settings)
+![Kurşun kalem için Araç paneli: Fırça boyutu, Güç, Doku gücü ve Malzeme sertliği ile bunların altında Yumuşatma, Uç ve Karıştırma grupları.](shot:brushes/dry-media-settings)
 
 ### Boyut
 
@@ -30,11 +30,11 @@ Malzemenin yüzeye ne kadar güçlü iz bıraktığını belirler. Yüksek değe
 
 ### Doku gücü
 
-Kâğıt dokusunun çizgi kaplamasını ne kadar değiştirdiğini belirler. %0 değerinde çizgi Kâğıt dokusuna tepki vermez.
+Kâğıt dokusunun çizgi kaplamasını ne kadar değiştirdiğini belirler. %0 değerinde çizgi Kâğıt dokusuna tepki vermez. Kaydırıcı %200'e kadar gider.
 
 ### Malzeme sertliği
 
-Malzemenin Kâğıt dokusunun alçak ve yüksek kısımlarını ne kadar kolay kapladığını belirler. Yüksek değerler malzemenin daha sert davranmasını sağlar.
+Kalem basıncının her temasın bıraktığı pigment miktarını ne kadar değiştirdiğini belirler. Yüksek değerlerde hafif bir dokunuş az pigment bırakır, düşük değerlerde ise belirgin taneler bırakır.
 
 ## Kâğıt dokusu
 
@@ -42,4 +42,4 @@ Kuru malzeme çizgileri hedef katmanda veya altında en yakın [Kâğıdı](/tr/
 
 ![Bristol, Soğuk pres ve Zımparalı kâğıtta eşleştirilmiş kuru malzeme çizgileri.](shot:layers/paper-surface-comparison)
 
-Kuru malzeme fırçalarında **Yayılma**, **Su yükü** veya **Karıştırma** gibi ıslak malzeme denetimleri görünmez. Uç denetimleri hazır ayara bağlıdır.
+Kuru malzeme fırçaları **Uç** grubunda yalnızca **Uç açısı** gösterir ve **Yayılma**, **Su yükü** veya **Karıştırma** gibi ıslak malzeme denetimleri göstermez.

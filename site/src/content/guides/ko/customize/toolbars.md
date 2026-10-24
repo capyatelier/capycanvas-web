@@ -1,7 +1,7 @@
 ---
 title: "도구 모음과 제목 표시줄"
 description: "도구 모음 만들기와 편집, 제목 표시줄 사용자 지정."
-related: ["customize/panels", "customize/workspaces", "customize/zen", "start/command-search"]
+related: ["customize/panels", "customize/workspaces", "customize/zen", "customize/bubbles", "start/command-search"]
 ---
 
 작업 영역마다 도구 모음과 제목 표시줄이 따로 저장됩니다. **창 > 레이아웃 변경 실행 취소**(**Ctrl+Alt+Z**)는 마지막 변경을 되돌립니다.
@@ -10,7 +10,9 @@ related: ["customize/panels", "customize/workspaces", "customize/zen", "start/co
 
 도구 모음 메뉴를 열려면 도구 모음의 배경이나 손잡이를 마우스 오른쪽 버튼으로 클릭하거나, 손가락이나 펜으로 길게 누릅니다. 도구를 마우스 오른쪽 버튼으로 클릭하거나 길게 누르면 그 도구의 메뉴가 열립니다.
 
-![타일 크기가 있는 도구 모음 메뉴.](shot:toolbars/toolbar-menu)
+도구 모음 메뉴에서 **집중 모드에서 표시**를 선택하면 Linux 앱의 [집중 모드](/ko/docs/customize/zen/)에서도 그 도구 모음이 화면에 남습니다.
+
+![타일 크기와 집중 모드에서 표시 항목이 있는 도구 모음 메뉴.](shot:toolbars/toolbar-menu)
 
 ## 도구 모음 표시와 숨기기
 
@@ -45,6 +47,7 @@ related: ["customize/panels", "customize/workspaces", "customize/zen", "start/co
 - 어떤 도구 앞에 도구를 추가하려면 그 도구의 메뉴에서 **도구 삽입…** 항목을 선택합니다.
 - 도구를 제거하려면 그 도구의 메뉴에서 **도구 제거**를 선택합니다.
 - 도구를 옮기려면 도구를 길게 누른 다음 도구 모음 안이나 다른 도구 모음으로 드래그합니다.
+- 도구를 캔버스에 두려면 도구 모음 밖으로 드래그해 [버블](/ko/docs/customize/bubbles/)을 꺼냅니다.
 
 **도구 추가** 목록에는 명령과 도구 외에도 브러시, 브러시 크기, **색상 선택기**, **브러시 크기 슬라이더**, **강도 슬라이더**, **도구 옵션**, **구분선**이 있습니다. 또한 **레이어 패널**처럼 패널을 서랍으로 여는 항목이 패널마다 있습니다.
 

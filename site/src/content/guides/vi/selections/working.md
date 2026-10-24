@@ -67,10 +67,12 @@ Cọ, các công cụ tô đầy, **Chuyển màu** và **Hình** không bao gi�
 - **Mặt nạ nhanh**: xem [Mặt nạ nhanh](/vi/docs/selections/quick-mask/).
 - **Lưu**: **Lưu thành lớp vùng chọn**, xem [Lớp vùng chọn](/vi/docs/selections/selection-layers/).
 
+Trên thanh hẹp, các nút cuối, chẳng hạn **Mặt nạ nhanh** và **Lưu**, chuyển vào **Thêm**.
+
 ## Trình đơn Chọn
 
 Bạn cũng có thể mở trình đơn **Chọn** từ **Thêm** trên thanh vùng chọn, và từ nút
-**Chọn** bên dưới thiết lập của công cụ vùng chọn trong bảng Công cụ.
+**Chọn** bên dưới hàng **Chế độ** của bảng Công cụ.
 
 | Lệnh | Tác dụng | Phím |
 | --- | --- | --- |
@@ -139,7 +141,7 @@ như [Biến đổi](/vi/docs/transform/move-transform/), trừ việc không c�
 
 Thực hiện một trong các cách sau:
 
-- Chọn lệnh từ trình đơn **Chỉnh sửa**. Các lệnh xóa cũng có trong trình đơn **Chọn**.
+- Chọn **Chỉnh sửa > Tô đầy vùng chọn**, **Xóa pixel đã chọn** hoặc **Xóa ngoài vùng chọn**.
 - Nhấn **Shift+Backspace** để tô đầy, hoặc **Xóa** hay **Backspace** để xóa các pixel đã chọn.
 - Chọn **Tô đầy**, hoặc **Xóa** rồi chọn một lệnh, trên thanh vùng chọn.
 - Trong Vẽ, chọn **Tô đầy vùng chọn** trên Thanh lệnh.
@@ -156,7 +158,7 @@ còn xóa các pixel đó khỏi lớp ban đầu.
 
 Thực hiện một trong các cách sau:
 
-- Chọn **Chọn > Sao chép vùng chọn sang lớp mới** hoặc **Chọn > Cắt vùng chọn sang lớp mới**.
+- Chọn **Lớp > Mới > Sao chép vùng chọn sang lớp mới** hoặc **Lớp > Mới > Cắt vùng chọn sang lớp mới**.
 - Nhấn **Ctrl+J** để sao chép hoặc **Ctrl+Shift+J** để cắt.
 - Chọn **Sao chép sang lớp** trên thanh vùng chọn rồi chọn một lệnh.
 

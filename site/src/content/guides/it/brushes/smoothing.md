@@ -14,7 +14,7 @@ Puoi levigare un tratto mentre disegni. Le impostazioni di levigatura vengono sa
 
 L'intensità della levigatura è distinta dall'impostazione principale **Intensità** del pennello.
 
-![Lo stesso percorso disegnato con vari valori di Intensità della levigatura.](shot:brushes/smoothing-comparison)
+![Lo stesso percorso di input disegnato due volte, il tratto in alto senza levigatura e quello in basso con un'Intensità della levigatura alta.](shot:brushes/smoothing-comparison)
 
 ## Regola in base alla velocità
 

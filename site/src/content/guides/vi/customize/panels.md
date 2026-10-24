@@ -63,13 +63,9 @@ trình đơn của bảng, và một tay cầm ở cuối bảng sẽ thay cho t
 
 Bạn có thể chọn các điều khiển mà một bảng hiện ra.
 
-Thực hiện một trong các cách sau:
-
-- Chọn **Cấu hình bảng *tên*…** từ trình đơn của bảng.
-- Chọn lại thẻ đang mở.
-
-Một cột có ô đánh dấu cho từng điều khiển mở ra cạnh bảng. Nhấn **Escape**, chọn lại
-thẻ, hoặc chọn bên ngoài cột để đóng cột.
+Chọn **Cấu hình bảng *tên*…** từ trình đơn của bảng. Một cột có ô đánh dấu cho từng
+điều khiển mở ra cạnh bảng. Chọn thẻ khác sẽ hiện các điều khiển của bảng đó. Nhấn
+**Escape** hoặc chọn bên ngoài cột để đóng cột.
 
 | Bảng | Điều khiển | Hiện theo mặc định |
 | --- | --- | --- |

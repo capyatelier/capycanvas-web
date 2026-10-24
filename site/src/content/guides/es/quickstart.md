@@ -19,7 +19,7 @@ Después de la primera visita, el editor web también se abre sin conexión a in
 
 ![El panel Capas de un dibujo nuevo, con Tinta actual sobre Papel.](shot:files/new-layers)
 
-La primera vez que abres {appName}, muestra el espacio de trabajo [Pintura](/es/docs/start/workspaces/) con un dibujo A4 horizontal en blanco a 300 ppp. **Tinta actual**, una capa de pintura vacía, está seleccionada encima de **Papel**. La herramienta **Pluma** está activa con el pincel **Plumilla G** y un color casi negro.
+La primera vez que abres {appName}, muestra el espacio de trabajo [Boceto](/es/docs/start/workspaces/) con un dibujo horizontal en blanco, de 4:3 y tan alto como tu pantalla. **Tinta actual**, una capa de pintura vacía, está seleccionada encima de **Papel**, que tiene la textura **Grano fino**. La herramienta **Lápiz** está activa con un color gris oscuro.
 
 Más adelante, {appName} se abre con el espacio de trabajo que usaste por última
 vez y con los dibujos que tenías abiertos.
@@ -27,8 +27,9 @@ vez y con los dibujos que tenías abiertos.
 ## Dibujar
 
 Arrastra sobre el lienzo con un lápiz o un ratón. Para usar otra herramienta,
-selecciónala en la barra de herramientas del borde izquierdo de la ventana. En
-Boceto, selecciona **Pincel** en la barra de título.
+selecciona **Pincel** en la barra de título en Boceto, o la herramienta en la barra
+de herramientas del borde izquierdo en Pintura. Arrastra una herramienta al lienzo
+para mantenerla allí como una [burbuja](/es/docs/customize/bubbles/).
 
 > **Nota:** Los dedos nunca dibujan. Con dos dedos sobre el lienzo desplazas, haces zoom y giras la vista.
 
@@ -49,7 +50,7 @@ tecla en el editor web. Elígelo en el menú o en la
 
 ## Empezar otro dibujo
 
-Elige **Archivo > Nuevo…** y selecciona **Crear** en el diálogo [Nuevo dibujo](/es/docs/files/new/). Elige el tamaño, la resolución y los ajustes de Papel y color, y selecciona **Crear**. El dibujo nuevo se abre en su propia pestaña junto al primero.
+Elige **Archivo > Nuevo…** para abrir el diálogo [Nuevo dibujo](/es/docs/files/new/). El dibujo nuevo se abre en su propia pestaña junto al primero.
 
 ## Guardar el dibujo
 

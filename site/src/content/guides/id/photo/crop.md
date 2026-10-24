@@ -22,7 +22,7 @@ Pilih **Gambar > Pangkas**, pilih **Pangkas** di bilah alat Alat, atau tekan
 **C** ([Pangkas](/id/docs/transform/crop/)). Bingkai dengan pegangan muncul di atas
 foto, dengan bilah pangkas di sepanjang bagian bawah kanvas.
 
-Pilih **Rasio** di bilah pangkas, lalu pilih **4:5**. Bingkai menjadi bingkai terbesar
+Pilih menu rasio di ujung kiri bilah pangkas, lalu pilih **4:5**. Bingkai menjadi bingkai terbesar
 dengan rasio itu, di tengah kanvas. Orientasinya mengikuti foto, sehingga foto lanskap
 mendapat bingkai 5:4.
 
@@ -45,7 +45,7 @@ seimbang.
 
 Pilih **Terapkan** di bilah pangkas, atau tekan **Enter**. Kanvas mengambil ukuran
 bingkai: 2000 × 1600 piksel dalam contoh ini. Piksel yang terpangkas tetap ada di
-lapisan, dalam keadaan tersembunyi, kecuali jika **Hapus Bagian Terpangkas** aktif di
+lapisan, dalam keadaan tersembunyi, kecuali jika **Hapus Lukisan Terpangkas** aktif di
 bilah pangkas.
 
 Tahap berikutnya: [Meretus](/id/docs/photo/retouch/).

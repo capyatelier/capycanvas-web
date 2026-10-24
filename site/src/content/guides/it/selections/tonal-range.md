@@ -22,12 +22,12 @@ Esegui una delle seguenti operazioni:
 strumenti di Pittura o Foto. Mentre è lo strumento attivo, il pannello Set
 di strumenti elenca tutti gli strumenti di selezione.
 
-![Le impostazioni di Intervallo tonale nel cassetto Seleziona di Schizzo, con Modalità, Toni, Morbidezza e Sfumatura.](shot:selections/tonal-range-settings)
+![Le impostazioni di Intervallo tonale nel cassetto Seleziona di Schizzo, con Modalità, i pulsanti dei toni, Morbidezza e Sfumatura.](shot:selections/tonal-range-settings)
 
 ## Toni
 
-Seleziona un pulsante nella riga **Toni · stop rispetto al bianco di riferimento**
-per selezionare quella fascia di luminosità. La fascia si combina con la
+Seleziona un pulsante nella riga dei pulsanti dei toni sotto **Modalità** per
+selezionare quella fascia di luminosità. La fascia si combina con la
 selezione corrente secondo **Modalità** (vedi
 [Strumenti di selezione](/it/docs/selections/tools/)).
 

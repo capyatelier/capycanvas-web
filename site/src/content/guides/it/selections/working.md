@@ -69,11 +69,12 @@ mostrano mai la barra.
 - **Maschera veloce**: vedi [Maschera veloce](/it/docs/selections/quick-mask/).
 - **Salva**: **Salva come livello di selezione**, vedi [Livelli di selezione](/it/docs/selections/selection-layers/).
 
+Su una barra stretta, gli ultimi pulsanti, come **Maschera veloce** e **Salva**, passano in **Altro**.
+
 ## Menu Seleziona
 
 Puoi aprire il menu **Seleziona** anche da **Altro** nella barra della selezione,
-e da **Seleziona** sotto le impostazioni di uno strumento di selezione nel
-pannello Strumento.
+e da **Seleziona** sotto la riga **Modalità** del pannello Strumento.
 
 | Comando | Funzione | Tasto |
 | --- | --- | --- |
@@ -143,7 +144,7 @@ ma **Distorci**, **Deforma** e **Interpolazione** non sono disponibili.
 
 Esegui una delle seguenti operazioni:
 
-- Scegli il comando dal menu **Modifica**. I comandi per svuotare si trovano anche nel menu **Seleziona**.
+- Scegli **Modifica > Riempi selezione**, **Svuota pixel selezionati** o **Svuota fuori dalla selezione**.
 - Premi **Maiusc+Backspace** per riempire, oppure **Canc** o **Backspace** per svuotare i pixel selezionati.
 - Seleziona **Riempi**, oppure **Svuota** e un comando, nella barra della selezione.
 - In Pittura, seleziona **Riempi selezione** nella barra strumenti Comandi.
@@ -160,7 +161,7 @@ pittura attivo su un nuovo livello subito sopra, nella stessa posizione.
 
 Esegui una delle seguenti operazioni:
 
-- Scegli **Seleziona > Copia selezione su nuovo livello** o **Seleziona > Taglia selezione su nuovo livello**.
+- Scegli **Livello > Nuovo > Copia selezione su nuovo livello** o **Livello > Nuovo > Taglia selezione su nuovo livello**.
 - Premi **Ctrl+J** per copiare o **Ctrl+Maiusc+J** per tagliare.
 - Seleziona **Copia su livello** nella barra della selezione e scegli un comando.
 

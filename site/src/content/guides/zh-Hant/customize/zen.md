@@ -1,7 +1,7 @@
 ---
 title: "專注模式"
 description: "使用專注模式隱藏標題列和停靠的面板，以及專注模式的偏好設定。"
-related: ["customize/panels", "customize/toolbars", "preferences", "input/keyboard"]
+related: ["customize/panels", "customize/toolbars", "customize/bubbles", "preferences", "input/keyboard"]
 ---
 
 在專注模式下，可以隱藏標題列以及停靠的面板和工具列，畫布會佔滿整個視窗。
@@ -27,11 +27,18 @@ related: ["customize/panels", "customize/toolbars", "preferences", "input/keyboa
 專注模式還會隱藏摺疊的列和底欄。以下內容保留：
 
 - 浮動面板
+- [工具氣泡](/zh-Hant/docs/customize/bubbles/)，包括其光環、選擇器和選單
 - 選取範圍或變形旁邊的畫布操作欄
 - Capy 按鈕（除非關閉了**在專注模式下顯示 Capy**）
 - 通知
 
 按鍵和命令搜尋（**Ctrl+K**）照常可用。
+
+## 在專注模式下保留工具列
+
+在 Linux 應用程式中，從工具列選單中選擇**在專注模式中顯示**，可讓該工具列在專注模式下保留在螢幕上。
+
+在 Linux 應用程式的觸控式螢幕上，用一根手指從距視窗邊緣 24 px 以內向內滑動，可顯示停靠在該邊緣的工具列和面板。觸碰它們以外的位置時，它們會再次隱藏。數位筆或滑鼠無法將它們顯示出來。
 
 ## 專注模式下的停靠
 

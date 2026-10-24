@@ -6,7 +6,7 @@ related: ["filters/adding", "filters/tone", "filters/how-filters-apply"]
 
 颜色滤镜位于**滤镜 > 颜色**和**滤镜**面板的**颜色**类别中。在**属性**面板中更改其设置。
 
-![滤镜面板显示颜色类别，每个滤镜都有预览。](shot:filters/color-list)
+![滤镜面板中的颜色类别，从色相／饱和度到渐变映射，每个滤镜都有笔迹预览。](shot:filters/color-list)
 
 ## 色相／饱和度
 

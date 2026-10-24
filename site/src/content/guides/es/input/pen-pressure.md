@@ -10,7 +10,7 @@ Puedes calibrar la presión del lápiz antes de que la usen los pinceles.
 
 Abre [Preferencias](/es/docs/preferences/), selecciona **Lápiz y entrada** y después **Ajustar…** junto a **Presión del lápiz**.
 
-![El diálogo Presión del lápiz con su curva y el indicador de presión en tiempo real.](shot:pen/pressure-calibration)
+![El diálogo Presión del lápiz con su curva, Más firme y Más suave, Restablecer, Cancelar y Aplicar.](shot:pen/pressure-calibration)
 
 ## Curva de presión
 

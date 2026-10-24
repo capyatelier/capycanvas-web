@@ -26,6 +26,10 @@ Les deux interrupteurs sont activés par défaut, et **Intensité de la prédict
 vaut 16 ms. Quand **Activer la prédiction des traits** est désactivé, les deux
 autres réglages ne sont pas disponibles.
 
+Un trait à la souris n’obtient aucune prédiction en avance sur la pointe, pas plus
+qu’un trait d’une tablette sans écran sous Linux, Windows et Android. Dans l’éditeur
+web et sur macOS, les traits de ces tablettes sont prédits selon les réglages.
+
 | Système | La prédiction du système |
 | --- | --- |
 | iPad | Disponible |

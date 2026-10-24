@@ -1,11 +1,11 @@
 ---
 title: "Gộp lớp"
-description: "Kết hợp các lớp thành một lớp vẽ bằng các lệnh gộp."
-related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types"]
+description: "Kết hợp các lớp thành một lớp bằng các lệnh gộp, và điều gì xảy ra với lớp vector."
+related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types", "layers/vector"]
 ---
 
-Bạn có thể gộp các lớp thành một lớp vẽ. Các lệnh gộp nằm gần cuối trình đơn
-**Lớp** và gần cuối trình đơn của từng lớp.
+Bạn có thể gộp các lớp thành một lớp vẽ, hoặc gộp hai lớp vector thành một lớp vector.
+Các lệnh gộp nằm gần cuối trình đơn **Lớp** và gần cuối trình đơn của từng lớp.
 
 ![Trình đơn Lớp khi Ribbon là lớp hiện tại, với Gộp lớp bị cắt, Gộp lớp hiển thị, Tạo lớp gộp hiển thị và Gộp phẳng ảnh.](shot:layers/merging-menu)
 
@@ -26,6 +26,19 @@ nếu một trong hai lớp là lớp tham chiếu.
 
 Cả hai lớp phải đang hiển thị, chưa khóa và ở chế độ Bình thường. Lớp bên dưới không
 được là bộ lọc, và không được là lớp cắt trừ khi lớp hiện tại cũng là lớp cắt.
+
+## Gộp lớp vector
+
+**Gộp xuống** giữ nguyên các đường khi một [lớp vector](/vi/docs/layers/vector/) gộp vào
+lớp vector bên dưới, và đặt chúng ở phía trước. Cả hai lớp cần độ đục 100%, không có
+mặt nạ, không cắt và không có bộ lọc gắn vào.
+
+Mọi lần gộp khác có lớp vector đều biến các đường của lớp đó thành pixel. Một thông báo
+nêu tên các lớp, ví dụ “Khi gộp, các đường trong “Line art” sẽ thành điểm ảnh.”, và việc
+gộp chạy khi bạn chọn nút của thông báo. **Gộp phẳng ảnh** thêm các tên đó vào thông báo
+về lớp ẩn của nó.
+
+![Thông báo ghi “Khi gộp, các đường trong “Line art” sẽ thành điểm ảnh.”, với nút Gộp xuống.](shot:vector/merge-notice)
 
 ## Gộp lớp bị cắt
 

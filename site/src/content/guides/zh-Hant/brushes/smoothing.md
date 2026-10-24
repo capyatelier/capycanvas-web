@@ -14,7 +14,7 @@ related: ["brushes/basics", "drawing/brush-tools", "brushes/reset"]
 
 筆畫平滑的強度與筆刷的主要 **強度** 設定不同。
 
-![同一輸入路徑在不同平滑強度下繪製的筆跡。](shot:brushes/smoothing-comparison)
+![同一輸入路徑繪製兩次，上方筆跡關閉平滑，下方筆跡使用較高的平滑強度。](shot:brushes/smoothing-comparison)
 
 ## 依速度調整
 

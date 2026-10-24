@@ -97,11 +97,12 @@ Cetvel veya İşlem aracıyla bir kılavuz seçtiğinizde tutamaçlarının alt�
 | **Hizala** | **Cetvellere hizala** ayarını açar veya kapatır. |
 | **Kılavuzlar** | Tüm kılavuzları gösterir veya gizler. Gizlemek çubuğu da gizler. |
 | **Düzelt** | **Görüntüyü kılavuza göre düzelt** işlemini başlatır. Yalnızca Düz kılavuz için. |
+| **Diğer** | **Tuval eylem çubuğunu göster** içeren bir menü açar. |
 
 **Görünüm > Tuval eylem çubuğunu göster** kapatıldığında kılavuz çubuğu
 kaldırılır.
 
-![Seçili bir Düz kılavuzun altındaki kılavuz çubuğu: Sil, Hizala, Kılavuzlar ve Düzelt.](shot:drawing/ruler-guide-bar)
+![Seçili bir Düz kılavuzun altındaki kılavuz çubuğu: Sil, Hizala, Kılavuzlar, Düzelt ve Diğer.](shot:drawing/ruler-guide-bar)
 
 ## İşlem ile kılavuzları taşıma
 

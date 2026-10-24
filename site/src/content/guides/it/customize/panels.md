@@ -72,14 +72,10 @@ maniglia in fondo al pannello sostituisce la barra delle schede.
 
 Puoi scegliere quali controlli mostra un pannello.
 
-Esegui una delle seguenti operazioni:
-
-- Scegli **Configura Pannello *nome*…** dal menu del pannello.
-- Seleziona di nuovo la scheda attiva.
-
-Accanto al pannello si apre una colonna con una casella di controllo per ogni
-controllo. Premi **Esc**, seleziona di nuovo la scheda o seleziona fuori dalla
-colonna per chiuderla.
+Scegli **Configura Pannello *nome*…** dal menu del pannello. Accanto al pannello
+si apre una colonna con una casella di controllo per ogni controllo. Selezionare
+un'altra scheda mostra i controlli di quel pannello. Premi **Esc** o seleziona
+fuori dalla colonna per chiuderla.
 
 | Pannello | Controlli | Mostrati per impostazione predefinita |
 | --- | --- | --- |

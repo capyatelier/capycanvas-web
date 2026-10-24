@@ -1,7 +1,7 @@
 ---
 title: "色パネル"
 description: "色パネルのホイールとスウォッチによる、描く色の選択。"
-related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-management/hdr"]
+related: ["color/edit-color", "color/palettes", "color/eyedropper", "customize/bubbles", "color-management/hdr"]
 ---
 
 **色**パネルで描く色を選べます。描く色はすべてのワークスペースで共通です。
@@ -16,6 +16,8 @@ related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-manag
 - コマンド検索で**色パネル**を選びます。
 - 「ペイント」では、左の列の**色**タブを選択します。
 - 「ツール」ツールバーの末尾、または「スケッチ」ではタイトルバーの右端にある**ブラシの色**を選択します。「色」と「パレット」のパネルが引き出しとして開きます。
+
+**ブラシの色**をキャンバスにドラッグすると、ホイールをその場に[色のリング](/ja/docs/customize/bubbles/)として残せます。
 
 ## カラーホイール
 

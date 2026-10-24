@@ -1,10 +1,10 @@
 ---
 title: "Layer types"
-description: "Paint, Object, Paper, group, fill, filter and selection layers and the rules for each."
-related: ["layers/panel", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
+description: "Paint, Object, vector, Paper, group, fill, filter and selection layers and the rules for each."
+related: ["layers/panel", "layers/vector", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
 ---
 
-![The current layer types in the Layers panel.](shot:layers/types-rows)
+![The Layers panel with a selection layer, a group, a paint layer, a filter, fill layers, a vector layer and Paper.](shot:layers/types-rows)
 
 ## Paint layer
 
@@ -18,9 +18,13 @@ An Object layer keeps an imported image at its own size, bit depth and color pro
 
 You can move, scale and rotate an Object layer without repeatedly resampling its source. Choose **Layer > Rasterize Layer** when you need to paint on its pixels or use a command that requires a paint layer. Rasterizing converts it to the drawing's color space, bit depth and pixel grid.
 
+## Vector layer
+
+A vector layer holds paths instead of pixels. Choose **Layer > New > New vector layer**, or select **New vector layer** at the bottom of the Layers panel. A path badge marks its thumbnail. See [Vector layers](/docs/layers/vector/).
+
 ## Paper
 
-Paper supplies the background color and the texture used by dry-media strokes. It stays at the bottom of the layer stack and has color and texture thumbnails.
+Paper supplies the background color and the texture that brushes with **Texture strength** react to. It stays at the bottom of the layer stack and has color and texture thumbnails.
 
 A drawing can contain one Paper. Paper cannot have a mask, become a clipping layer, move above ordinary layers or be merged into an ordinary layer. See [Paper](/docs/layers/paper/) for its texture, lighting and other settings.
 

@@ -145,6 +145,7 @@ Pressione a tecla de novo para passar à próxima ferramenta da família.
 | **Forma** | **U** |
 | **Régua** | **Shift+U** |
 | **Operação** | **O** |
+| **Editar pontos** | **A** |
 | **Transformar** | **Ctrl+T** |
 | **Recortar** | **C** |
 | **Mão** | **H** |
@@ -173,6 +174,7 @@ Pressione a tecla de novo para passar à próxima ferramenta da família.
 | **Copiar seleção para nova camada** | **Ctrl+J** |
 | **Recortar seleção para nova camada** | **Ctrl+Shift+J** |
 | **Mesclar abaixo** | **Ctrl+E** |
+| **Nova camada vetorial** | **Ctrl+Alt+Shift+N** |
 | **Ajustar tela** | **Ctrl+0** |
 | **Pixels reais** | **Ctrl+1**, **Ctrl+Alt+0** |
 | **Ampliar**, **Reduzir** | **Ctrl+=**, **Ctrl+-** |

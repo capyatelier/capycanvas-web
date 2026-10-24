@@ -1,7 +1,7 @@
 ---
 title: "元に戻す・やり直す"
 description: "作品への変更の取り消しとやり直し、レイアウトの変更用の別の履歴。"
-related: ["start/command-search", "customize/workspaces", "input/touch"]
+related: ["start/command-search", "customize/bubbles", "customize/workspaces", "input/touch"]
 ---
 
 作品への変更を1ステップずつ取り消し、取り消したステップをやり直せます。開いている作品には、それぞれ専用の履歴があります。
@@ -27,6 +27,10 @@ related: ["start/command-search", "customize/workspaces", "input/touch"]
 - キャンバスを3本の指でタップします。
 
 元に戻した後で新しい変更を加えると、やり直せるステップは消去されます。
+
+## 元に戻す・やり直すバブル
+
+**元に戻す**または**やり直す**をキャンバスにドラッグすると、両方を1つの[バブル](/ja/docs/customize/bubbles/)にして残せます。左半分をタップすると元に戻し、右半分をタップするとやり直します。
 
 ## 1ステップとして記録される操作
 

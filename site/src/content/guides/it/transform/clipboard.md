@@ -1,6 +1,6 @@
 ---
 title: "Copiare e incollare"
-description: "Copiare pixel e incollarli come livello, maschera o nuovo disegno."
+description: "Copiare pixel e incollarli come livello o nuovo disegno."
 related: ["selections/working", "transform/move-transform", "layers/types", "files/open-save"]
 ---
 
@@ -16,6 +16,8 @@ I comandi degli appunti sono nel menu **Modifica** e nella ricerca comandi.
 
 **Copia elementi uniti** (**Ctrl+Shift+C**) copia il risultato visibile dentro la selezione, inclusa l'illuminazione della Carta. Gruppi, livelli filtro e livelli di selezione non hanno pixel propri.
 
+**Copia pixel** funziona come **Copia**, e su un livello Oggetto ne copia le immagini come pixel.
+
 ## Incolla
 
 **Incolla** (**Ctrl+V**) aggiunge il disegno degli appunti come nuovo livello e apre le maniglie di trasformazione quando serve posizionarlo. Un'immagine da un'altra app diventa un [livello Oggetto](/it/docs/layers/types/), conservando l'origine fino alla rasterizzazione.
@@ -27,13 +29,14 @@ Una copia eseguita in {appName} torna nella posizione copiata quando questa è v
 Apri **Modifica > Incolla speciale** per scegliere una destinazione.
 
 - **Incolla nella stessa posizione** aggiunge un livello nella posizione copiata senza aprire le maniglie di trasformazione.
+- **Incolla nella posizione visibile** aggiunge un livello al centro della tela visibile, alle sue dimensioni originali.
+- **Incolla al cursore** aggiunge un livello centrato sul puntatore, alle sue dimensioni originali.
 - **Incolla dentro** aggiunge un livello con la selezione attiva come maschera, poi cancella la selezione.
-- **Incolla maschera** sostituisce o aggiunge la maschera del livello selezionato con l'immagine degli appunti.
 - **Incolla come nuova immagine** crea un nuovo disegno dagli appunti.
 
 I comandi che richiedono una selezione, un livello modificabile o un'immagine compatibile negli appunti sono attenuati.
 
-![Le opzioni di Incolla speciale per livelli, maschere e nuovi disegni.](shot:transform/paste-special)
+![Il menu Incolla speciale con Incolla nella stessa posizione, Incolla nella posizione visibile, Incolla al cursore, Incolla dentro e Incolla come nuova immagine.](shot:transform/paste-special)
 
 ## Tra app
 

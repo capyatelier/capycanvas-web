@@ -6,9 +6,11 @@ related: ["brushes/basics", "brushes/wet-media", "drawing/brush-tools"]
 
 Você pode alterar a forma de cada marca e quanto a textura do papel a modifica com os ajustes **Ponta** e **Textura** no painel **Ferramenta** ([Tamanho, intensidade e opacidade](/pt-BR/docs/brushes/basics/)).
 
-![O painel Ferramenta do Lápis, com o grupo Ponta e o grupo Textura.](shot:brushes/tip-texture-settings)
+![O painel Ferramenta de Pincel de Dureza até Intensidade da textura, com os grupos Suavização, Ponta e Textura.](shot:brushes/tip-texture-settings)
 
 ## Ponta
+
+Pincéis de mídia seca mostram só **Ângulo da ponta**.
 
 ### Dureza
 
@@ -38,21 +40,23 @@ qualquer sentido.
 
 ## Pontas que giram com o traço
 
-As pontas de **Pincel**, **Pincel chato texturizado**, **Bloco de pastel**, **Veladura transparente**, **Guache opaco**, **Óleo carregado**, **Espátula**, **Aguada de aquarela**, **Aquarela molhada**, **Textura dupla** e **Misturador natural** seguem a direção do traço. **Ângulo da ponta** não afeta esses pincéis.
+As pontas de **Pincel**, **Pincel chato texturizado**, **Veladura transparente**, **Guache opaco**, **Óleo carregado**, **Espátula**, **Aguada de aquarela**, **Aquarela molhada**, **Textura dupla**, **Misturador natural** e **Espátula de mistura** seguem a direção do traço. **Ângulo da ponta** não afeta esses pincéis.
 
 **Esfregaço seco** e **Tinta realista com pincel** somam a direção do traço a **Ângulo da ponta**.
 
 ## Textura
 
-**Intensidade da textura** aparece nos pincéis de lápis e de pastel, em
-**Pincel**, **Pincel de cerdas**, **Pincel chato texturizado**, **Esfregaço
-seco**, **Veladura transparente**, **Guache opaco**, **Óleo carregado**,
-**Espátula**, **Textura dupla** e **Misturador natural**.
+**Intensidade da textura** aparece nos conjuntos **Lápis**, **Pastel** e
+**Pintar** (exceto **Veladura multiplicada**), em **Óleo carregado**, **Espátula** e
+**Textura dupla**, e em oito misturadores: **Borrar**, **Misturador suave**,
+**Esfuminho**, **Lenço de papel**, **Misturador granulado**, **Misturador natural**,
+**Espátula de mistura** e **Misturador de cerdas**. Um pincel sem ela ignora o
+Papel.
 
-Pincéis de mídia seca usam a textura do Papel mais próximo abaixo da camada de destino. Escolha essa textura e sua escala em [Papel](/pt-BR/docs/layers/paper/).
+Pincéis com **Intensidade da textura** usam a textura do Papel mais próximo na camada de destino ou abaixo dela. Escolha essa textura e sua escala em [Papel](/pt-BR/docs/layers/paper/).
 
 ### Intensidade da textura
 
-Define quanto a textura do Papel altera a cobertura. Em 0%, a textura não tem efeito.
+Define quanto a textura do Papel altera a cobertura. Em 0%, a textura não tem efeito. Nos misturadores, um toque leve deixa o grão do papel sem misturar e a pressão empurra a mistura para dentro dele. **Misturador suave** começa em 0%.
 
 ![Três traços de Carvão vegetal com Intensidade da textura em 0%, 50% e 100%.](shot:brushes/texture-strength)

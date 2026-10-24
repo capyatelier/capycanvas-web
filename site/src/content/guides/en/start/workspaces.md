@@ -4,12 +4,12 @@ description: "The Sketch, Paint and Photo workspaces, switching between workspac
 related: ["customize/workspaces", "customize/panels", "customize/toolbars", "customize/zen"]
 ---
 
-A workspace is a saved arrangement of the title bar, toolbars and panels. {appName} includes three: **Sketch**, **Paint** and **Photo**. It opens in Paint the
+A workspace is a saved arrangement of the title bar, toolbars and panels. {appName} includes three: **Sketch**, **Paint** and **Photo**. It opens in Sketch the
 first time, and after that in the workspace you used last.
 
 ## Sketch
 
-![The Sketch workspace with the illustration example on the canvas.](shot:start/workspaces-sketch "1 Title bar, left · 2 Workspace switcher · 3 Title bar, right · 4 Brush controls")
+![The Sketch workspace with the illustration example on the canvas.](shot:start/workspaces-sketch "1 Title bar, left · 2 Workspace switcher · 3 Title bar, right · 4 Brush controls · 5 Tool bubbles")
 
 Sketch has no docked panels: the tool and panel buttons in the title bar open drawers.
 
@@ -17,6 +17,7 @@ Sketch has no docked panels: the tool and panel buttons in the title bar open dr
 2. The workspace switcher.
 3. **Brush**, **Sculpt**, **Eraser**, **Layers panel** and **Brush color**. The web editor adds **Full screen**.
 4. **Brush size slider**, **Color Picker**, **Strength slider**, **Undo** and **Redo**.
+5. Tool bubbles taken from the title bar, here a **Brush** bubble with its settings halo and a small color ring (see [Tool bubbles](/docs/customize/bubbles/)).
 
 | Button | Panels in the drawer |
 | --- | --- |
@@ -26,7 +27,7 @@ Sketch has no docked panels: the tool and panel buttons in the title bar open dr
 | **Transform** | **Tool Set**, **Tool** |
 | **Filters panel** | **Filter Type**, **Filters**, **Properties** |
 | **Layers panel** | **Layers** |
-| **Brush color** | **Color** |
+| **Brush color** | **Color**, **Palettes** |
 
 **Main Menu** opens the menus (on macOS, they're in the system menu bar
 instead). **Select** chooses the selection tool you used last.
@@ -42,7 +43,7 @@ Paint docks panels in columns on both sides of the canvas.
 
 1. **Capy (Zen Mode)** and the menus, the drawing title in the middle, then the workspace switcher and **Settings**. The web editor adds **Full screen**.
 2. **New…**, **Open…**, **Save**, **Undo**, **Redo**, **Clear Entire Layer**, **Fill selection**, **Transform** and **Flip view horizontally**.
-3. **Pen**, **Pencil**, **Paint Brush**, **Eraser**, **Airbrush**, **Decoration**, **Blend**, **Liquify**, the selection tools, **Fill**, **Gradient**, **Operation**, **Figure**, **Ruler**, **Hand**, **Eyedropper** and **Brush color**.
+3. **Pen**, **Pencil**, **Paint Brush**, **Eraser**, **Airbrush**, **Decoration**, **Blend**, **Liquify**, the selection tools, **Fill**, **Gradient**, **Operation**, **Figure**, **Ruler**, **Hand**, **Zoom**, **Eyedropper** and **Brush color**.
 4. Tabs for **Tool Set** and **Diagnostics**, **Tool** and **Brush size**, and **Color** and **Palettes**.
 5. Icons for **Navigator** and **Proof**, **Properties** and **Filters**, and **Layers**.
 6. The zoom and rotation readout, described in [Viewing the canvas](/docs/start/canvas/).
@@ -61,7 +62,7 @@ Photo keeps the photo-editing panels open at the right. Its title bar matches Pa
 
 1. **New…**, **Open…**, **Save**, **Undo**, **Redo** and **Transform**.
 2. **Tool Options**, the settings of the current tool.
-3. **Operation**, **Crop**, the selection tools, **Brush**, **Eraser**, **Clone Stamp**, **Spot Healing Brush**, **Blend**, **Liquify**, **Gradient**, **Hand**, **Eyedropper** and **Brush color**.
+3. **Operation**, **Crop**, the selection tools, **Brush**, **Eraser**, **Clone Stamp**, **Spot Healing Brush**, **Blend**, **Liquify**, **Gradient**, **Hand**, **Zoom**, **Eyedropper** and **Brush color**.
 4. **Histogram** and **Waveform**, **Properties** and **Filters**, and **Layers**.
 5. Icons for **Tool Set** and **Diagnostics**, **Tool** and **Brush size**, and **Navigator** and **Proof**. Each icon opens its group alone as a drawer.
 

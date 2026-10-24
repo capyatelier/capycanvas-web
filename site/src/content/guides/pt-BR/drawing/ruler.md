@@ -96,10 +96,11 @@ aparece abaixo das alças.
 | **Encaixar** | Ativa ou desativa **Encaixar nas réguas**. |
 | **Guias** | Mostra ou oculta todas as guias. Ocultá-las também oculta a barra. |
 | **Endireitar** | Inicia **Endireitar imagem pela guia**. Só para uma guia Reta. |
+| **Mais** | Abre um menu com **Mostrar barra de ações da tela**. |
 
 Desativar **Exibir > Mostrar barra de ações da tela** remove a barra da guia.
 
-![A barra da guia abaixo de uma guia Reta selecionada, com Excluir, Encaixar, Guias e Endireitar.](shot:drawing/ruler-guide-bar)
+![A barra da guia abaixo de uma guia Reta selecionada, com Excluir, Encaixar, Guias, Endireitar e Mais.](shot:drawing/ruler-guide-bar)
 
 ## Mover guias com Operação
 

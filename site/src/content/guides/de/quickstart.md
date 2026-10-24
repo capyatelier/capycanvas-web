@@ -19,16 +19,18 @@ Nach dem ersten Besuch öffnet sich der Web-Editor auch ohne Internetverbindung.
 
 ![Das Bedienfeld Ebenen einer neuen Zeichnung mit Aktuelle Tinte über Papier.](shot:files/new-layers)
 
-Beim ersten Öffnen zeigt {appName} den Arbeitsbereich [Malen](/de/docs/start/workspaces/) mit einer leeren A4-Zeichnung im Querformat bei 300 ppi. **Aktuelle Tinte**, eine leere Malebene, ist über **Papier** ausgewählt. Das Werkzeug **Feder** ist mit dem Pinsel **G-Feder** und einer fast schwarzen Farbe aktiv.
+Beim ersten Öffnen zeigt {appName} den Arbeitsbereich [Skizze](/de/docs/start/workspaces/) mit einer leeren Zeichnung im Querformat, 4:3 und so hoch wie Ihr Bildschirm. **Aktuelle Tinte**, eine leere Malebene, ist über **Papier** ausgewählt, das die Textur **Matt** hat. Das Werkzeug **Bleistift** ist mit einer dunkelgrauen Farbe aktiv.
 
 Bei späteren Starts öffnet {appName} den zuletzt verwendeten Arbeitsbereich und die
 Zeichnungen, die zuletzt geöffnet waren.
 
 ## Zeichnen
 
-Ziehen Sie mit einem Stift oder der Maus über die Leinwand. Ein anderes Werkzeug
-wählen Sie in der Werkzeugleiste Werkzeuge am linken Fensterrand aus. Im Arbeitsbereich Skizze
-wählen Sie in der Titelleiste **Pinsel** aus.
+Ziehen Sie mit einem Stift oder der Maus über die Leinwand. Um ein anderes Werkzeug
+zu verwenden, wählen Sie im Arbeitsbereich Skizze **Pinsel** in der Titelleiste aus,
+im Arbeitsbereich Malen das Werkzeug in der Werkzeugleiste Werkzeuge am linken Rand.
+Ziehen Sie ein Werkzeug auf die Leinwand, um es dort als
+[Blase](/de/docs/customize/bubbles/) zu behalten.
 
 > **Hinweis:** Finger zeichnen nie. Mit zwei Fingern auf der Leinwand verschieben, zoomen und drehen Sie die Ansicht.
 
@@ -50,7 +52,7 @@ in der [Befehlssuche](/de/docs/start/command-search/).
 
 ## Eine weitere Zeichnung beginnen
 
-Wählen Sie **Datei > Neu…** und **Erstellen** im Dialog [Neue Zeichnung](/de/docs/files/new/). Wählen Sie Größe, Auflösung, Papier und Farbeinstellungen und dann **Erstellen**. Die neue Zeichnung öffnet sich in einem eigenen Reiter neben der ersten.
+Wählen Sie **Datei > Neu…**, um den Dialog [Neue Zeichnung](/de/docs/files/new/) zu öffnen. Die neue Zeichnung öffnet sich in einem eigenen Reiter neben der ersten.
 
 ## Die Zeichnung speichern
 

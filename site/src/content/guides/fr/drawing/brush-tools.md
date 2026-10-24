@@ -1,25 +1,22 @@
 ---
 title: "Outils de pinceau"
 description: "Les outils de pinceau, leurs préréglages intégrés et les endroits où les choisir."
-related: ["brushes/basics", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
+related: ["brushes/basics", "layers/vector", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
 ---
 
-Vous pouvez peindre avec les outils **Plume**, **Crayon**, **Fusain**, **Craie**, **Pastel**, **Crayon de cire**, **Pinceau de peinture**, **Aérographe** et **Décoration**, et effacer avec **Gomme**. Chaque outil contient un ou plusieurs groupes de préréglages de pinceau intégrés.
+Vous pouvez peindre avec les outils **Plume**, **Crayon**, **Pinceau de peinture**, **Aérographe** et **Décoration**, et effacer avec **Gomme**. Chaque outil contient un ou plusieurs groupes de préréglages de pinceau intégrés.
 
 ## Outils et préréglages
 
 | Outil | Groupes | Préréglages |
 | --- | --- | --- |
-| **Plume** | **Plume** | **Plume G**, **Plume G rugueuse**, **Plume calligraphique**, **Plume ancienne**, **Plume réaliste**, **Encre humide**, **Encre tachetée**, **Encre réaliste au pinceau** |
+| **Plume** | **Plume** | **Plume G**, **Monoligne**, **Plume G rugueuse**, **Encre tachetée**, **Plume calligraphique**, **Plume ancienne**, **Plume réaliste**, **Encre humide**, **Encre réaliste au pinceau** |
 | | **Feutre** | **Feutre** |
 | **Crayon** | **Crayon** | **Crayon**, **Crayon pointu**, **Crayon d’ombrage** |
-| **Fusain** | **Fusain** | **Fusain** |
-| **Craie** | **Craie** | **Craie** |
-| **Pastel** | **Pastel** | **Bloc de pastel** |
-| **Crayon de cire** | **Crayon de cire** | **Crayon de cire** |
+| | **Pastel** | **Fusain**, **Crayon de cire**, **Craie**, **Bloc de pastel** |
 | **Pinceau de peinture** | **Peinture** | **Pinceau**, **Pinceau à soies**, **Plat texturé**, **Brossage à sec**, **Glacis transparent**, **Gouache opaque**, **Glacis en produit** |
 | | **Aquarelle** | **Lavis d’aquarelle**, **Aquarelle humide** |
-| | **Peinture à l’huile** | **Huile chargée**, **Couteau à palette**, **Rond humide** |
+| | **Peinture à l’huile** | **Huile chargée**, **Couteau à palette**, **Rond humide**, **Pinceau mélangeur** |
 | **Aérographe** | **Aérographe** | **Aérographe** |
 | | **Pulvérisation** | **Pulvérisation** |
 | **Gomme** | **Gomme** | **Gomme** |
@@ -31,13 +28,13 @@ active du [panneau Couleur](/fr/docs/color/color-panel/).
 
 ## Comportement des préréglages
 
-Ces comportements font partie des préréglages et n’ont pas de réglage.
+Ces comportements font partie des préréglages et n’ont pas de réglage. Les préréglages secs sont décrits dans [Outils secs](/fr/docs/brushes/dry-media/).
 
 | Préréglage | Comportement |
 | --- | --- |
 | **Plume calligraphique**, **Plume ancienne** | Plume inclinée. |
+| **Monoligne** | Garde une seule épaisseur à toute pression. |
 | **Feutre** | Pointe biseautée. |
-| **Crayon**, **Crayon pointu**, **Crayon d’ombrage**, **Fusain**, **Craie**, **Bloc de pastel**, **Crayon de cire** | La pression et l’inclinaison modifient la forme et la couverture de la marque. Voir [Outils secs](/fr/docs/brushes/dry-media/). |
 | **Aérographe** | Continue d’ajouter de la peinture quand vous maintenez le stylet immobile. |
 | **Pulvérisation** | Disperse ses empreintes autour du trait. |
 | **Glacis en produit** | Peint en mode Produit. |
@@ -106,7 +103,7 @@ Vous pouvez effacer la peinture du calque sélectionné avec la **Gomme**. Appuy
 sur **E**, ou sélectionnez **Gomme** dans la barre d’outils Outils ou, dans
 Croquis, dans la barre de titre.
 
-Pendant que vous modifiez un masque, la Gomme retire de la couverture du masque.
+Pendant que vous modifiez un masque, la Gomme retire de la couverture du masque. Sur un calque vectoriel, elle coupe ou supprime des tracés ([Calques vectoriels](/fr/docs/layers/vector/)).
 
 Quand **Peinture transparente** est sélectionnée dans le panneau Couleur, tous les
 pinceaux effacent. L’extrémité gomme d’un stylet peut aussi effacer
@@ -123,12 +120,15 @@ Si le filtre n’a pas de masque, le trait va sur le calque auquel le filtre
 s’applique, ou sur le calque situé juste en dessous
 ([Application des filtres](/fr/docs/filters/how-filters-apply/)).
 
+Sur un calque vectoriel, **Plume G** et **Monoligne** ajoutent des tracés au lieu de peindre des pixels ([Calques vectoriels](/fr/docs/layers/vector/)).
+
 Une sélection active limite la peinture à la sélection.
 
 Sur les calques suivants, un trait ne peint rien et un avis en donne la raison :
 
 - Un groupe ou un calque de sélection.
 - Un calque de remplissage sans masque.
+- Un calque vectoriel, pour un pinceau qui ne peut pas dessiner de tracés.
 - Un calque avec **Verrouiller la modification** activé, ou situé dans un groupe verrouillé.
 - Un calque de filtre sans masque, quand le calque du dessous est verrouillé ou absent.
 - Un calque mis à l’échelle ou pivoté, tant que vous n’avez pas choisi **Appliquer la transformation** ([Déplacer et transformer](/fr/docs/transform/move-transform/)).

@@ -23,7 +23,7 @@ düğmesini seçin veya **C** tuşuna basın ([Kırpma](/tr/docs/transform/crop/
 Fotoğrafın üzerinde tutamaçlı bir çerçeve, tuvalin altında da kırpma çubuğu
 görünür.
 
-Kırpma çubuğunda **Oran** düğmesini seçin ve **4:5** seçeneğini seçin. Çerçeve,
+Kırpma çubuğunun sol ucundaki oran menüsünü seçin ve **4:5** seçeneğini seçin. Çerçeve,
 tuvalde ortalanmış olarak o oranın en büyük çerçevesi olur. Çerçevenin yönü
 fotoğrafa uyar. Bu nedenle yatay bir fotoğraf 5:4 oranında bir çerçeve alır.
 
@@ -45,6 +45,6 @@ eğrelti otunun uçlarına eşit kenar boşlukları vermek için çerçeve sağa
 
 Kırpma çubuğunda **Uygula** düğmesini seçin veya **Enter** tuşuna basın. Tuval
 çerçevenin boyutunu alır: örnekte 2000 × 1600 piksel. Kırpma çubuğunda
-**Kırpılanı sil** açık değilse kırpılan pikseller katmanda gizli olarak kalır.
+**Kırpılan boyayı sil** açık değilse kırpılan pikseller katmanda gizli olarak kalır.
 
 Sonraki aşama: [Rötuş](/tr/docs/photo/retouch/).

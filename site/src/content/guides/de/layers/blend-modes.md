@@ -25,7 +25,7 @@ Bei einer Auswahlebene oder einer gesperrten Ebene können Sie den
 Verrechnungsmodus nicht ändern.
 [Mit darunterliegender Ebene vereinen](/de/docs/layers/merging/) setzt voraus,
 dass beide Ebenen auf Normal stehen. Verrechnungsmodi mischen Farben im
-Verrechnungsraum der Zeichnung, der unter **Bearbeiten > Verrechnung**
+Verrechnungsraum der Zeichnung, der unter **Bild > Verrechnung**
 eingestellt wird (siehe [Farbraum, Farbtiefe und Verrechnung](/de/docs/color-management/color-spaces/)).
 
 ## Modi im Menü der Verrechnungsmodi

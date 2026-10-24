@@ -1,10 +1,11 @@
 ---
 title: "Fusionner des calques"
-description: "Combiner des calques en un seul calque de peinture avec les commandes de fusion."
-related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types"]
+description: "Combiner des calques en un seul calque avec les commandes de fusion, et ce qui arrive aux calques vectoriels."
+related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types", "layers/vector"]
 ---
 
-Vous pouvez fusionner des calques en un seul calque de peinture. Les commandes de
+Vous pouvez fusionner des calques en un seul calque de peinture, ou deux calques
+vectoriels en un seul calque vectoriel. Les commandes de
 fusion se trouvent vers la fin du menu **Calque** et du menu de chaque calque.
 
 ![Le menu Calque avec Ribbon actif, montrant Fusionner les calques écrêtés, Fusionner les calques visibles, Créer un calque du visible et Aplatir l’image.](shot:layers/merging-menu)
@@ -27,6 +28,14 @@ et aucun masque. Il sert de référence si l’un des deux calques en était une
 Les deux calques doivent être visibles, non verrouillés et réglés sur Normal. Le
 calque inférieur ne peut pas être un filtre, et il ne peut pas être écrêté, sauf
 si le calque actif l’est aussi.
+
+## Fusionner des calques vectoriels
+
+**Fusionner avec le calque inférieur** conserve les tracés quand un [calque vectoriel](/fr/docs/layers/vector/) fusionne avec le calque vectoriel du dessous, et les place devant. Les deux calques doivent avoir une opacité de 100 %, aucun masque, aucun écrêtage et aucun filtre rattaché.
+
+Toute autre fusion qui comprend un calque vectoriel transforme ses tracés en pixels. Un avis nomme les calques, par exemple « La fusion transforme les tracés de “Line art” en pixels. », et la fusion s’exécute quand vous sélectionnez son bouton. **Aplatir l’image** ajoute les noms à son avis sur les calques masqués.
+
+![L’avis « La fusion transforme les tracés de “Line art” en pixels. », avec un bouton Fusionner avec le calque inférieur.](shot:vector/merge-notice)
 
 ## Fusionner les calques écrêtés
 

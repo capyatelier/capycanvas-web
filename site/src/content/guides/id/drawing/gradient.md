@@ -43,7 +43,7 @@ Lakukan salah satu langkah berikut:
 
 ## Editor titik gradasi
 
-![Panel Alat untuk alat Gradasi dengan baris Bentuk, editor titik gradasi, dan Opasitas.](shot:drawing/gradient-tool-panel)
+![Panel Alat untuk alat Gradasi dengan baris Bentuk dan editor titik gradasi.](shot:drawing/gradient-tool-panel)
 
 Anda dapat mengedit warna gradasi di editor titik gradasi di bawah **Bentuk** pada
 panel **Alat**. Tombol gradasi di bilah Opsi Alat membuka editor ini di jendela kecil.

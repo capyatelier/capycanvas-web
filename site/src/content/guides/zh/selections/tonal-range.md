@@ -17,11 +17,11 @@ related: ["selections/tools", "selections/quick-mask", "color-management/hdr", "
 
 **明暗范围**没有默认按键，在“绘画”和“照片”的工具栏上也没有按钮。使用该工具时，工具组面板会列出所有选区工具。
 
-![“素描”选择抽屉中的明暗范围设置，包含模式、明暗、柔和度和羽化。](shot:selections/tonal-range-settings)
+![“素描”选择抽屉中的明暗范围设置，包含模式、明暗按钮、柔和度和羽化。](shot:selections/tonal-range-settings)
 
 ## 明暗
 
-选择**明暗 · 相对于参考白的档数**行中的按钮，可选择该亮度范围。该范围按照**模式**与当前选区组合（参见[选区工具](/zh/docs/selections/tools/)）。
+选择**模式**下方明暗按钮行中的按钮，可选择该亮度范围。该范围按照**模式**与当前选区组合（参见[选区工具](/zh/docs/selections/tools/)）。
 
 每个按钮的工具提示写出其范围：
 

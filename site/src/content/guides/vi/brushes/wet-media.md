@@ -7,14 +7,13 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 Bạn có thể đặt cách cọ ướt và cọ hòa màu xử lý màu vẽ trong bảng **Công cụ**. Mỗi
 nhóm chỉ xuất hiện ở những cọ được nêu trong phần của nhóm đó.
 
-![Bảng Công cụ cho Màu nước ướt với Hòa màu và các nhóm Hòa màu, Màu nước và Loang.](shot:brushes/wet-media-settings)
+![Phần dưới của bảng Công cụ cho Màu nước ướt, với các nhóm Hòa màu, Màu nước, Loang và Hòa trộn.](shot:brushes/wet-media-settings)
 
 ## Hòa màu
 
-**Hòa màu** xuất hiện ở **Cọ tròn ướt**, **Màu bột đục**, **Cọ sơn dầu đẫm**,
-**Dao bay**, **Màu nước phủ loãng**, **Màu nước ướt**, **Cọ hòa màu tự nhiên** và
-**Miết màu**. Trừ các cọ màu nước, cọ đã nhúng màu sẽ cạn màu dần dọc theo nét vẽ, với
-tốc độ cố định cho từng cọ.
+**Hòa màu** xuất hiện ở các cọ sơn dầu, **Màu bột đục**, các cọ màu nước và mọi cọ
+hòa màu. **Lấy màu trung bình**, **Độ bền màu** và **Nạp màu theo lực** chỉ xuất hiện
+ở các cọ sơn dầu, **Màu bột đục**, **Hòa màu ướt** và **Trộn màu**.
 
 ### Lượng màu
 
@@ -30,10 +29,46 @@ trị thấp hơn để màu lấy từ lớp lấn át.
 Làm loãng màu vẽ cọ mang theo. Giá trị cao hơn làm màu riêng của cọ yếu đi trong hỗn
 hợp.
 
+### Lấy màu trung bình
+
+Đặt mức các màu lấy lên khắp đầu cọ hòa vào làm một. Ở 0%, mỗi phần của đầu cọ giữ
+màu riêng.
+
+### Độ bền màu
+
+Đặt mức màu trung bình được mang theo dọc nét vẽ. Thiết lập này chỉ xuất hiện khi
+**Lấy màu trung bình** lớn hơn 0%.
+
+### Nạp màu theo lực
+
+Đặt mức lực nhấn mạnh nạp lại màu đã chọn vào cọ. **Cọ trộn màu** đặt màu của nó khi
+nhấn mạnh và chỉ hòa màu khi chạm nhẹ.
+
+## Cọ hòa màu
+
+Mỗi cọ hòa màu thêm thiết lập vào nhóm **Cọ hòa màu**. **Độ lan** nằm ở đầu bảng
+**Công cụ**.
+
+| Thiết lập | Cọ hòa màu | Đặt |
+| --- | --- | --- |
+| **Độ lan** | Tất cả trừ **Dao hòa màu** và **Vân cẩm thạch** | Khoảng cách quanh mỗi điểm của nét vẽ mà cọ hòa màu thu gom màu. |
+| **Vệt** | **Miết màu**, **Hòa màu mềm**, **Bút di chì**, **Khăn giấy**, **Cọ hòa màu tự nhiên**, **Hòa màu sợi cọ**, **Dao hòa màu** | Mức nét vẽ vỡ thành các vệt dọc theo hướng của nó. |
+| **Độ sắc nét** | **Làm sắc nét** | Mức tương phản mà nét vẽ thêm vào. |
+| **Giữ chất liệu** | **Hòa màu giữ chất liệu** | Mức kết cấu mịn bên dưới nét vẽ còn giữ lại trên màu đã hòa. |
+| **Cỡ chi tiết** | **Hòa màu giữ chất liệu** | Kích thước của kết cấu được giữ lại. |
+| **Hòa độ sáng** | **Hòa màu sắc độ** | Mức độ sáng hòa cùng sắc màu và độ bão hòa. |
+| **Độ sạn** | **Hòa màu rải** | Mức mỗi điểm ảnh rải ra thay thế hoàn toàn điểm ảnh bên dưới. |
+| **Độ kéo giãn** | **Hòa màu kiểu tranh**, **Hòa màu tinh thể** | Mức các mảng hoặc ô kéo giãn dọc theo nét vẽ. |
+| **Cỡ ô** | **Hòa màu tinh thể** | Kích thước của các ô. |
+| **Độ xoáy** | **Vân cẩm thạch** | Mức màu vẽ cuộn xoáy. |
+| **Cỡ xoáy** | **Vân cẩm thạch** | Kích thước của các xoáy. |
+| **Giữ cạnh** | **Hòa màu chải** | Mức hòa màu dễ dừng lại ở cạnh giữa các màu. |
+
 ## Màu nước
 
 **Màu nước phủ loãng** và **Màu nước ướt** có nhóm **Màu nước** cho đường viền đậm
-hơn ở chỗ màu đọng lại. Màu nước chỉ phản ứng với màu vẽ trên cùng một lớp.
+hơn ở chỗ màu đọng lại. Màu nước chỉ phản ứng với màu vẽ trên cùng một lớp. **Độ mạnh biên** nằm ở đầu bảng
+**Công cụ**, phía trên các nhóm.
 
 ### Độ mạnh biên
 
@@ -62,7 +97,7 @@ vẽ. Màu chỉ lan trong lúc vẽ nét, không lan sau khi bạn nhấc bút.
 
 ### Lượng nước
 
-Đặt lượng nước mỗi dấu cọ đặt lên giấy.
+Đặt lượng nước mỗi dấu cọ đặt lên giấy. Thiết lập này nằm ở đầu bảng **Công cụ**, phía trên các nhóm.
 
 ## Chế độ hòa màu
 
@@ -84,7 +119,7 @@ Mọi cọ hòa màu có sẵn đều bắt đầu với **Hòa màu Oklab**. L�
 cọ, và thiết lập **Hòa trộn** của bản vẽ không làm thay đổi lựa chọn này. Với
 cọ không hòa màu, các lựa chọn này không dùng được.
 
-![Hòa màu trong ngăn Công cụ.](shot:brushes/color-mixing-menu)
+![Thiết lập Hòa màu hiển thị Hòa màu Oklab.](shot:brushes/color-mixing-menu)
 
 ## Lông cọ
 

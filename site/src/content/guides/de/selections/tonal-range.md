@@ -22,12 +22,11 @@ Führen Sie eine der folgenden Aktionen aus:
 Arbeitsbereiche Malen und Foto keine Schaltfläche. Solange es das aktive
 Werkzeug ist, listet das Bedienfeld Werkzeugsatz alle Auswahlwerkzeuge.
 
-![Die Einstellungen von Tonwertbereich in der Schublade Auswahl im Arbeitsbereich Skizze, mit Modus, Tonwerte, Weichheit und Weiche Kante.](shot:selections/tonal-range-settings)
+![Die Einstellungen von Tonwertbereich in der Schublade Auswahl im Arbeitsbereich Skizze, mit Modus, den Tonwertschaltflächen, Weichheit und Weiche Kante.](shot:selections/tonal-range-settings)
 
 ## Tonwerte
 
-Wählen Sie in der Zeile **Tonwerte · Blendenstufen relativ zum Referenzweiß**
-eine Schaltfläche aus, um dieses Helligkeitsband auszuwählen. Das Band wird
+Wählen Sie in der Zeile der Tonwertschaltflächen unter **Modus** eine Schaltfläche aus, um dieses Helligkeitsband auszuwählen. Das Band wird
 entsprechend **Modus** mit der aktuellen Auswahl kombiniert (siehe
 [Auswahlwerkzeuge](/de/docs/selections/tools/)).
 

@@ -1,7 +1,7 @@
 ---
 title: "집중 모드"
 description: "집중 모드로 제목 표시줄과 도킹된 패널 숨기기와 집중 모드 환경 설정."
-related: ["customize/panels", "customize/toolbars", "preferences", "input/keyboard"]
+related: ["customize/panels", "customize/toolbars", "customize/bubbles", "preferences", "input/keyboard"]
 ---
 
 집중 모드에서는 제목 표시줄과 도킹된 패널 및 도구 모음을 숨길 수 있습니다. 그러면 캔버스가 창 전체를 채웁니다.
@@ -27,11 +27,18 @@ related: ["customize/panels", "customize/toolbars", "preferences", "input/keyboa
 집중 모드에서는 접힌 열과 하단 표시줄도 숨겨집니다. 다음 항목은 남습니다.
 
 - 플로팅 패널
+- [도구 버블](/ko/docs/customize/bubbles/)과 그 헤일로, 선택 링, 메뉴
 - 선택 영역이나 변형 옆의 캔버스 작업 표시줄
 - Capy 버튼(**집중 모드에서 Capy 표시**가 꺼져 있지 않은 경우)
 - 알림
 
 키와 명령 검색(**Ctrl+K**)은 평소처럼 작동합니다.
+
+## 집중 모드에서 도구 모음 유지하기
+
+Linux 앱에서는 도구 모음 메뉴에서 **집중 모드에서 표시**를 선택하면 집중 모드에서도 그 도구 모음이 화면에 남습니다.
+
+Linux 앱의 터치스크린에서는 창 가장자리에서 24 px 이내에서 손가락 하나로 안쪽으로 쓸어 넘기면 그 가장자리에 도킹된 도구 모음과 패널이 표시됩니다. 그 바깥을 터치하면 다시 숨겨집니다. 펜이나 마우스로는 표시할 수 없습니다.
 
 ## 집중 모드에서 도킹하기
 

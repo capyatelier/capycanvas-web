@@ -1,7 +1,7 @@
 ---
 title: "Touchgesten"
 description: "Was Finger auf der Leinwand bewirken, und die Fingertipps, die Sie belegen können."
-related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
+related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
 Auf einem Touchscreen können Sie mit den Fingern die Leinwand bewegen, Farben
@@ -30,6 +30,24 @@ Halten Sie einen Finger still auf der Leinwand, um die Farbe darunter aufzunehme
 Finger ab, um die Farbe zu übernehmen. Drücken Sie **Escape**, um abzubrechen.
 
 Ein zweiter Finger auf der Leinwand bricht das Aufnehmen ab.
+
+## Die Ebene leeren
+
+Wischen Sie mit drei Fingern hin und her über die Leinwand, um **Gesamte Ebene leeren**
+auf der aktiven Ebene auszuführen. Bewegen Sie alle drei Finger gemeinsam, kehren Sie
+die Richtung um und kehren Sie sie dann ohne Abheben noch einmal um. Ein
+**Rückgängig** stellt die Ebene wieder her. Eine gesperrte Ebene wird nicht geleert.
+
+## Eine Blase verschieben
+
+Ziehen Sie eine [Blase](/de/docs/customize/bubbles/) mit zwei Fingern, um sie von
+jeder Stelle aus zu verschieben.
+
+## Werkzeugleisten im Zen-Modus
+
+Wischen Sie in der Linux-App im [Zen-Modus](/de/docs/customize/zen/) mit einem Finger
+von einem Fensterrand nach innen, um die an diesem Rand angedockten Werkzeugleisten
+und Bedienfelder einzublenden.
 
 ## Fingertipps
 
@@ -67,4 +85,4 @@ Seite setzt auch die Fingertipps zurück.
 ## Plattformen
 
 Touchgesten funktionieren unter Linux, Windows, Android, auf dem iPad und im Web. Die
-Gruppe **Touchgesten** wird unter macOS nicht angezeigt.
+Gruppe **Touchgesten** wird unter macOS nicht angezeigt; dort leert ein Dreifinger-Wischen auf dem Trackpad weiterhin die Ebene.

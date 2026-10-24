@@ -1,7 +1,7 @@
 ---
 title: "채우기 도구"
 description: "레이어의 영역, 자유 형태, 둘러싼 영역을 현재 색으로 채우기."
-related: ["drawing/gradient", "layers/settings", "selections/working", "drawing/brush-tools"]
+related: ["drawing/gradient", "layers/vector", "layers/settings", "selections/working", "drawing/brush-tools"]
 ---
 
 **채우기**, **올가미 채우기**, **둘러싸서 채우기**로 선택한 레이어의 일부를 현재 색으로 채울 수 있습니다. 채우기 한 번은 실행 취소 한 단계이며, **투명도 잠금**이 적용됩니다.
@@ -57,6 +57,10 @@ related: ["drawing/gradient", "layers/settings", "selections/working", "drawing/
 도구마다 샘플링 대상을 따로 기억합니다. 채우기는 **보이는 그림**에서 시작하고, 둘러싸서 채우기는 {appName}를 열 때마다 **참조 레이어**로 돌아갑니다.
 
 채우기가 **참조 레이어**를 사용하는데 참조로 표시된 레이어가 없으면, 채우기는 아무것도 칠하지 않고 알림에서 아래 레이어를 참조로 표시할지 묻습니다.
+
+## 벡터 레이어
+
+벡터 레이어에서 **채우기**는 클릭한 닫힌 패스에 색을 입힙니다. 그 밖의 곳을 클릭하거나 **참조 레이어** 소스를 사용하면 벡터 레이어 아래에 페인팅 레이어를 추가하고 거기에 채웁니다. **올가미 채우기**는 채워진 패스를 추가하며, **그레이디언트**와 **둘러싸서 채우기**에서는 **아래에 새 페인트 레이어**를 고를 수 있습니다. [벡터 레이어](/ko/docs/layers/vector/)를 참조합니다.
 
 ## 채우기 설정
 

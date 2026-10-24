@@ -44,7 +44,7 @@ El grupo toma la opacidad y el recorte de la capa original. La capa original se
 queda justo debajo del grupo, oculta.
 
 La capa tiene que estar visible y en **Normal**, y el dibujo tiene que usar
-**Editar > Mezcla > Mezcla perceptual** (consulta
+**Imagen > Mezcla > Mezcla perceptual** (consulta
 [Espacio de color, profundidad de bits y mezcla](/es/docs/color-management/color-spaces/)).
 Si el dibujo cambia mientras el panel está abierto, el panel se cierra.
 

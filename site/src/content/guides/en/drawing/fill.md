@@ -1,7 +1,7 @@
 ---
 title: "Fill tools"
 description: "Filling areas, freehand shapes and enclosed regions of a layer with the current color."
-related: ["drawing/gradient", "layers/settings", "selections/working", "drawing/brush-tools"]
+related: ["drawing/gradient", "layers/vector", "layers/settings", "selections/working", "drawing/brush-tools"]
 ---
 
 You can fill parts of the selected layer with the current color using
@@ -70,6 +70,10 @@ Enclose and Fill returns to **Reference layers** each time you open {appName}.
 
 If Fill uses **Reference layers** and no layer is marked, Fill paints nothing
 and a notice offers to mark the layer below.
+
+## Vector layers
+
+On a vector layer, **Fill** colors the closed path you click. A click anywhere else, or the **Reference layers** source, adds a paint layer below the vector layer and fills there. **Lasso fill** adds a filled path, and **Gradient** and **Enclose and Fill** offer **New Paint Layer Below**. See [Vector layers](/docs/layers/vector/).
 
 ## Fill settings
 

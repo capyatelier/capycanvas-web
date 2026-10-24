@@ -70,7 +70,7 @@ Chọn cạnh hoặc góc của ảnh được giữ nguyên vị trí, từ m�
 
 ## Xoay và lật ảnh
 
-Chọn một trong các lệnh sau từ **Ảnh**:
+Chọn một trong các lệnh sau từ **Ảnh > Xoay và lật**:
 
 - **Xoay ảnh 90° sang trái**
 - **Xoay ảnh 90° sang phải**

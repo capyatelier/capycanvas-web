@@ -12,27 +12,25 @@ Escolha **Arquivo > Novo…**, pressione **Ctrl+N** quando disponível ou seleci
 
 Escolha uma predefinição por categoria, pesquise pelo nome ou selecione uma usada recentemente. Uma predefinição preenche as dimensões, a resolução e os ajustes de cor e Papel.
 
-![O navegador de predefinições de Novo desenho.](shot:files/new-presets)
-
-Antes de você usar ou salvar outra configuração, Predefinições seleciona **Sketchbook**: A4 na orientação retrato (210 × 297 mm), papel Desenho em Branco natural e 2480 × 3508 px a 300 ppi.
+![O navegador de predefinições de Novo desenho com as categorias Esboço, Aquarela, Pastel, Tela, Técnica mista, Quadrinhos, Impressos e Digital.](shot:files/new-presets)
 
 Salve os ajustes atuais como uma predefinição nomeada para reutilizá-los. Abra o menu de uma predefinição salva para renomeá-la ou excluí-la. As predefinições incluídas não podem ser renomeadas nem excluídas.
 
 ## Folha
 
-A prévia mostra as proporções e a orientação da folha. Digite um nome para o desenho e defina **Largura** e **Altura** em pixels, polegadas, centímetros ou milímetros. Use o controle de vínculo para manter as proporções atuais e o controle de orientação para trocar a largura e a altura.
+A prévia mostra as proporções e a orientação da folha. Digite um nome para o desenho, defina **L** e **A** e escolha px, pol, cm ou mm como unidade. Use o controle de vínculo para manter as proporções atuais e o controle de orientação para trocar a largura e a altura.
 
 **Resolução** define os pixels por polegada usados nas dimensões físicas e na escala da [textura do Papel](/pt-BR/docs/layers/paper/). Alterar apenas a resolução altera os metadados do tamanho de impressão sem reamostrar o desenho.
-
-Uma nova janela começa com um desenho em branco separado A4 na orientação paisagem a 300 ppi (3508 × 2480 px).
 
 O diálogo mostra as dimensões em pixels resultantes e a capacidade estimada. Não é possível criar desenhos cujos ajustes ultrapassem o limite atual do dispositivo; o limite depende das dimensões, da profundidade de bits e dos recursos gráficos disponíveis.
 
 ## Papel
 
-![Opções de textura do Papel em Novo desenho.](shot:files/new-paper)
+![A gaveta Papel de Novo desenho com Sem papel, as miniaturas de papel e Visibilidade da textura.](shot:files/new-paper)
 
-Escolha uma textura de Papel incluída ou importada para o novo desenho. **Importar…** adiciona uma imagem à biblioteca de papéis e a seleciona. Escolha **Sem papel** para criar o desenho sem uma camada de Papel.
+Selecione a miniatura de textura em **Papel** para escolher uma textura de Papel incluída ou importada para o novo desenho. **Visibilidade da textura**, na parte de baixo da gaveta, define o mesmo valor que nas [Propriedades](/pt-BR/docs/layers/paper/) da camada de Papel, e a miniatura o mostra abaixo do nome da textura. **Importar…** é a última miniatura. Ela adiciona uma imagem à biblioteca de papéis e a seleciona.
+
+Escolha **Sem papel** para criar o desenho sem uma camada de Papel. **Visibilidade da textura** fica então indisponível.
 
 ![Opções Cor do papel e Transparente em Novo desenho.](shot:files/new-paper-color)
 

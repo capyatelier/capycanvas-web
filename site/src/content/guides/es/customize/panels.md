@@ -70,14 +70,10 @@ inferior del panel sustituye a la barra de pestañas.
 
 Puedes elegir qué controles muestra un panel.
 
-Haz una de las siguientes acciones:
-
-- Elige **Configurar Panel *nombre*…** en el menú del panel.
-- Vuelve a seleccionar la pestaña activa.
-
-Junto al panel se abre una columna con una casilla por cada control. Pulsa
-**Escape**, vuelve a seleccionar la pestaña o selecciona fuera de la columna para
-cerrarla.
+Elige **Configurar Panel *nombre*…** en el menú del panel. Junto al panel se abre
+una columna con una casilla por cada control. Al seleccionar otra pestaña se
+muestran los controles de ese panel. Pulsa **Escape** o selecciona fuera de la
+columna para cerrarla.
 
 | Panel | Controles | Visibles de forma predeterminada |
 | --- | --- | --- |

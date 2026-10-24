@@ -1,7 +1,7 @@
 ---
 title: "Dokunma hareketleri"
 description: "Parmakların tuvalde yaptıkları ve atayabileceğiniz parmak dokunuşları."
-related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
+related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
 Dokunmatik ekranda parmaklarınızla tuvali taşıyabilir, renk alabilir ve komut
@@ -30,6 +30,24 @@ Altındaki rengi almak için bir parmağınızı tuvalde sabit tutun. Parmağın
 için parmağınızı kaldırın. İptal etmek için **Escape** tuşuna basın.
 
 Tuvale değen ikinci bir parmak renk almayı iptal eder.
+
+## Katmanı temizleme
+
+Etkin katmanda **Katmanın tamamını temizle** komutunu çalıştırmak için tuvali üç
+parmakla sürtün. Üç parmağı birlikte hareket ettirin, yön değiştirin, sonra
+parmaklarınızı kaldırmadan yeniden yön değiştirin. Tek bir **Geri al** katmanı
+geri getirir. Kilitli katman temizlenmez.
+
+## Baloncuk taşıma
+
+Bir [baloncuğu](/tr/docs/customize/bubbles/) üzerinde herhangi bir yerden taşımak
+için iki parmakla sürükleyin.
+
+## Zen modunda araç çubukları
+
+Linux uygulamasında [Zen modunda](/tr/docs/customize/zen/), bir pencere kenarına
+yerleştirilmiş araç çubuklarını ve panelleri göstermek için o kenardan içeri
+doğru tek parmakla kaydırın.
 
 ## Parmak dokunuşları
 
@@ -65,4 +83,4 @@ dokunuşları da sıfırlar.
 ## Platformlar
 
 Dokunma hareketleri Linux, Windows, Android, iPad ve web'de çalışır. **Dokunma
-hareketleri** grubu macOS'te gösterilmez.
+hareketleri** grubu macOS'te gösterilmez; ancak macOS'te dokunmatik yüzeyde üç parmakla sürtmek yine katmanı temizler.

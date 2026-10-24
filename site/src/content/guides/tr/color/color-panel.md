@@ -1,7 +1,7 @@
 ---
 title: "Renk paneli"
 description: "Renk panelinin çemberi ve renk örnekleriyle boya rengini seçme."
-related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-management/hdr"]
+related: ["color/edit-color", "color/palettes", "color/eyedropper", "customize/bubbles", "color-management/hdr"]
 ---
 
 Boya rengini **Renk** panelinde seçebilirsiniz. Tüm çalışma alanları aynı boya
@@ -17,6 +17,8 @@ Aşağıdakilerden birini yapın:
 - Komut aramada **Renk paneli** öğesini seçin.
 - Boya'da sol sütundaki **Renk** sekmesini seçin.
 - Araçlar çubuğunun sonundaki veya Eskiz'de başlık çubuğunun sağ ucundaki **Fırça rengi** düğmesini seçin. Renk ve Paletler panellerini içeren bir çekmece açılır.
+
+**Fırça rengi** düğmesini tuvale sürükleyerek çemberi orada [renk halkası](/tr/docs/customize/bubbles/) olarak tutabilirsiniz.
 
 ## Renk çemberi
 

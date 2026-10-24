@@ -1,6 +1,6 @@
 ---
 title: "Preferências"
-description: "O diálogo Preferências e os ajustes das páginas Aparência, Tela, Caneta e entrada, Cor e Sobre."
+description: "O diálogo Preferências e os ajustes das páginas Aparência, Tela, Cor, Caneta e entrada e Sobre."
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -121,25 +121,9 @@ Desativado por padrão. Os grupos existentes não mudam.
 
 ## Cor
 
-As configurações de **Novos desenhos** valem para os [desenhos que você
-criar](/pt-BR/docs/files/new/) a partir daí. As configurações de **Abertura de
-fotos** valem para as fotos que você abrir.
+As configurações de **Abertura de fotos** valem para as fotos que você abrir.
 
-![A página Cor das Preferências.](shot:preferences/color)
-
-### Espaço de cores
-
-Escolha **sRGB** (o padrão), **Display P3**, **Adobe RGB (1998)** ou **ProPhoto
-RGB**.
-
-### Profundidade de bits
-
-Escolha **SDR de 8 bits** (o padrão), **SDR de 16 bits**, **HDR de 16 bits em
-ponto flutuante** ou **HDR de 32 bits em ponto flutuante**.
-
-### Fundo
-
-Escolha **Branco** (o padrão) ou **Transparente**.
+![As configurações de Abertura de fotos na página Cor das Preferências.](shot:preferences/color)
 
 ### Precisão de edição
 

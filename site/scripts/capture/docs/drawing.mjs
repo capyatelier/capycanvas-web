@@ -51,7 +51,16 @@ export function helpers(e, b) {
     }
     assert.equal(await layout(), starting, 'The workspace layout is back to where the chapter found it');
   };
+  let floated = null;
+  const dockFloated = async () => {
+    if (!floated) return;
+    const { panel, group: target, index } = floated;
+    floated = null;
+    await e.send({ type: 'move_panel', panel, target: { kind: 'tab', group: target, index } });
+    await workspaceReady();
+  };
   const fit = async (panel, margin = 0) => {
+    if (floated && floated.panel !== panel) { await dockFloated(); await e.show(panel); await workspaceReady(); }
     const measure = () => e.read(`(()=>{
       const g=document.querySelector(${json(group(panel))});if(!g)throw Error('Missing panel '+${json(panel)});
       const p=[...g.querySelectorAll('.panel')].find(n=>n.checkVisibility());const pr=p.getBoundingClientRect();
@@ -77,7 +86,9 @@ export function helpers(e, b) {
     // Float and resize the real panel so every preset is visible in the shot.
     if (!fits((await measure()).need)) {
       if (!await e.read(`document.querySelector(${json(group(panel))}).classList.contains('floating-panel')`)) {
+        const home = await e.read(`(()=>{const g=layerApp.app.layout(innerWidth,innerHeight).groups.find(g=>g.panels.includes(${json(panel)}));return {group:g.id,index:g.panels.indexOf(${json(panel)})}})()`);
         await e.send({ type: 'move_panel', panel, target: { kind: 'float', position: [420, 100] } });
+        floated = { panel, ...home };
         await workspaceReady();
       }
       for (let attempt = 0; attempt < 4 && !fits((await measure()).need); attempt++) {
@@ -120,7 +131,7 @@ export function helpers(e, b) {
     await e.send({ type: 'customize', action: { type: 'close_expanded' } });
     await e.wait(`!document.querySelector(${json(drawer)})`);
   };
-  return { key, escape, point, mouse, press, mouseDrag, workspace, restoreLayout, fit, refit, tile, tileButton, header, openMenu, closeMenu, drawerSettled, openDrawer, closeDrawer };
+  return { key, escape, point, mouse, press, mouseDrag, workspace, restoreLayout, fit, refit, dockFloated, tile, tileButton, header, openMenu, closeMenu, drawerSettled, openDrawer, closeDrawer };
 }
 
 export default async function drawing({ e, b, shoot }) {
@@ -224,10 +235,10 @@ export default async function drawing({ e, b, shoot }) {
   await shoot('drawing/sketch-sculpt-drawer', {
     target: [drawer, `${await header('sculpt')} .header-tool`],
     setup: async () => {
-      await openDrawer('sculpt', 'sculpt_sets', 'Liquify');
-      const push = await e.read('layerApp.state().tool_set.subtools[0].preview');
-      await press(`${drawer} .tools-control [data-brush="${push}"]`);
-      await e.wait(`layerApp.state().brush.preset===${json(push)}`);
+      await openDrawer('sculpt', 'sculpt_sets', 'Blend');
+      const smudge = await e.read('layerApp.state().tool_set.subtools[0].preview');
+      await press(`${drawer} .tools-control [data-brush="${smudge}"]`);
+      await e.wait(`layerApp.state().brush.preset===${json(smudge)}`);
       await drawerSettled();
     },
     teardown: closeDrawer,

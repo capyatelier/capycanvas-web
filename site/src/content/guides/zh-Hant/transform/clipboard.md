@@ -1,6 +1,6 @@
 ---
 title: "複製和貼上"
-description: "複製像素並貼上為圖層、遮罩或新畫作。"
+description: "複製像素並貼上為圖層或新畫作。"
 related: ["selections/working", "transform/move-transform", "layers/types", "files/open-save"]
 ---
 
@@ -16,6 +16,8 @@ related: ["selections/working", "transform/move-transform", "layers/types", "fil
 
 **合併複製**（**Ctrl+Shift+C**）複製選取範圍內的可見結果，包括紙張光照。組、濾鏡圖層和選取範圍圖層本身沒有像素。
 
+**複製像素**的作用與**複製**相同，並且在物件圖層上會將其影像複製為像素。
+
 ## 貼上
 
 **貼上**（**Ctrl+V**）將剪貼簿中的畫作作為新圖層新增，需要放置時打開變換手柄。其他應用中的影像會成為[物件圖層](/zh-Hant/docs/layers/types/)，在點陣化之前保留其源影像。
@@ -27,13 +29,14 @@ related: ["selections/working", "transform/move-transform", "layers/types", "fil
 打開 **編輯 > 選擇性貼上** 可選擇目標。
 
 - **原位貼上** 在複製位置新增圖層，不打開變換手柄。
+- **貼上至顯示位置** 在可見畫布的中央新增圖層，保持原始大小。
+- **貼上至游標位置** 新增以指標為中心的圖層，保持原始大小。
 - **貼入選取範圍** 新增圖層，以目前選取範圍為遮罩，然後清除選取範圍。
-- **貼上遮罩** 使用剪貼簿影像替換或新增所選圖層的遮罩。
 - **貼上為新影像** 從剪貼簿創建新畫作。
 
 要求選取範圍、可編輯圖層或兼容剪貼簿影像的命令，在不滿足條件時變暗。
 
-![特殊貼上中用於圖層、遮罩和新畫作的選項。](shot:transform/paste-special)
+![選擇性貼上選單，包含原位貼上、貼上至顯示位置、貼上至游標位置、貼入選取範圍和貼上為新影像。](shot:transform/paste-special)
 
 ## 應用程式之間
 

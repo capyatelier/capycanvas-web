@@ -67,7 +67,7 @@ Renk alırken Araç seçenekleri çubuğunda (Fotoğraf'ta pencerenin üstünde)
 
 ![Kırmızı bir darbenin üzerinde Renk seçici büyüteci: halkasında örneklenen ve geçerli renkler.](shot:color/eyedropper-loupe)
 
-![Parmağın üzerinde Renk Seçici büyüteci ve temasın altındaki örnekleme noktası.](shot:color/eyedropper-touch)
+![Kırmızı bir çizginin kenarında Renk Seçici büyüteci; ortasında artı işareti ve iki renkli bir halka.](shot:color/eyedropper-touch)
 
 Dokunmatik girişte her zaman büyüteç kullanılır. Eskiz'de **Renk seçici**
 düğmesini seçmek **Tarz** ayarını **Renk seçici** yapar. **Kaynak** ayarı

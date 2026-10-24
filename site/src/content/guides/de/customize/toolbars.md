@@ -1,7 +1,7 @@
 ---
 title: "Werkzeugleisten und Titelleiste"
 description: "Werkzeugleisten erstellen und bearbeiten und die Titelleiste anpassen."
-related: ["customize/panels", "customize/workspaces", "customize/zen", "start/command-search"]
+related: ["customize/panels", "customize/workspaces", "customize/zen", "customize/bubbles", "start/command-search"]
 ---
 
 Jeder Arbeitsbereich hat seine eigenen Werkzeugleisten und seine eigene Titelleiste.
@@ -15,7 +15,9 @@ ihren Hintergrund oder ihren Griff oder halten Sie ihn mit Finger oder Stift ged
 Für das Menü eines Werkzeugs klicken Sie mit der rechten Maustaste auf das Werkzeug
 oder halten es gedrückt.
 
-![Das Werkzeugleistenmenü mit den Kachelgrößen.](shot:toolbars/toolbar-menu)
+**Im Zen-Modus anzeigen** im Menü der Werkzeugleiste behält die Werkzeugleiste in der Linux-App im [Zen-Modus](/de/docs/customize/zen/) auf dem Bildschirm.
+
+![Das Werkzeugleistenmenü mit den Kachelgrößen und dem Eintrag Im Zen-Modus anzeigen.](shot:toolbars/toolbar-menu)
 
 ## Werkzeugleisten ein- und ausblenden
 
@@ -56,6 +58,7 @@ Jede Werkzeugleiste braucht einen eigenen Namen.
 - Um Werkzeuge vor einem Werkzeug einzufügen, wählen Sie **Werkzeuge einfügen…** im Menü dieses Werkzeugs.
 - Um ein Werkzeug zu entfernen, wählen Sie **Werkzeug entfernen** in seinem Menü.
 - Um ein Werkzeug zu verschieben, halten Sie es gedrückt und ziehen es innerhalb der Werkzeugleiste oder in eine andere Werkzeugleiste.
+- Um ein Werkzeug auf der Leinwand zu behalten, ziehen Sie es aus der Werkzeugleiste, um eine [Blase](/de/docs/customize/bubbles/) zu holen.
 
 Neben Befehlen und Werkzeugen enthält die Liste **Werkzeuge hinzufügen** Pinsel, Pinselgrößen, **Farbpipette**, **Schieberegler für Pinselgröße**, **Stärkeregler**, **Werkzeugoptionen** und **Trennlinie**. Sie enthält auch einen Eintrag für jedes Bedienfeld, etwa **Bedienfeld Ebenen**, der das Bedienfeld in einer Schublade öffnet.
 

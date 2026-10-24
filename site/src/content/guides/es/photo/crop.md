@@ -20,7 +20,7 @@ El dibujo tiene una capa de objeto con el nombre del archivo. En el ejemplo, la 
 
 Elige **Imagen > Recortar**, selecciona **Recortar** en la barra Herramientas o pulsa **C** ([Recortar](/es/docs/transform/crop/)). Aparece un marco con tiradores sobre la foto, con la barra de recorte al pie del lienzo.
 
-Selecciona **Proporción** en la barra de recorte y elige **4:5**. El marco pasa a
+Selecciona el menú de proporción en el extremo izquierdo de la barra de recorte y elige **4:5**. El marco pasa a
 ser el marco más grande de esa proporción, centrado en el lienzo. Su orientación
 sigue la de la foto, así que una foto horizontal recibe un marco de 5:4.
 
@@ -43,7 +43,7 @@ helecho.
 
 Selecciona **Aplicar** en la barra de recorte, o pulsa **Intro**. El lienzo toma
 el tamaño del marco: 2000 × 1600 píxeles en el ejemplo. Los píxeles recortados
-se quedan en la capa, ocultos, salvo que **Eliminar lo recortado** esté activado
+se quedan en la capa, ocultos, salvo que **Eliminar pintura recortada** esté activado
 en la barra de recorte.
 
 Siguiente etapa: [Retoque](/es/docs/photo/retouch/).

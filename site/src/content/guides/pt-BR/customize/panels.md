@@ -72,13 +72,9 @@ painel substitui a barra de abas.
 
 Você pode escolher quais controles um painel mostra.
 
-Faça uma das seguintes ações:
-
-- Escolha **Configurar Painel *nome*…** no menu do painel.
-- Selecione de novo a aba ativa.
-
-Abre ao lado do painel uma coluna com uma caixa de seleção para cada controle.
-Pressione **Escape**, selecione a aba de novo ou selecione fora da coluna para
+Escolha **Configurar Painel *nome*…** no menu do painel. Abre ao lado do painel
+uma coluna com uma caixa de seleção para cada controle. Selecionar outra aba mostra
+os controles desse painel. Pressione **Escape** ou selecione fora da coluna para
 fechá-la.
 
 | Painel | Controles | Mostrados por padrão |

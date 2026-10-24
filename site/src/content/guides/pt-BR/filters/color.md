@@ -7,7 +7,7 @@ related: ["filters/adding", "filters/tone", "filters/how-filters-apply"]
 Os filtros de cor ficam em **Filtro > Cor** e na categoria **Cor** do painel
 **Filtros**. Você muda as configurações deles no painel **Propriedades**.
 
-![O painel Filtros mostrando a categoria Cor com uma prévia de cada filtro.](shot:filters/color-list)
+![A categoria Cor no painel Filtros, de Matiz / Saturação a Mapa de degradê, cada uma com uma prévia de traço.](shot:filters/color-list)
 
 ## Matiz / Saturação
 

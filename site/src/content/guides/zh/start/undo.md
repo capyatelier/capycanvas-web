@@ -1,7 +1,7 @@
 ---
 title: "撤销和重做"
 description: "撤销和重做对画作的更改，以及布局更改的独立历史记录。"
-related: ["start/command-search", "customize/workspaces", "input/touch"]
+related: ["start/command-search", "customize/bubbles", "customize/workspaces", "input/touch"]
 ---
 
 可以逐步撤销对画作的更改，也可以重做已撤销的步骤。每幅打开的画作都有自己的历史记录。
@@ -27,6 +27,10 @@ related: ["start/command-search", "customize/workspaces", "input/touch"]
 - 用三根手指轻点画布。
 
 撤销后再做新的更改，可重做的步骤会被清除。
+
+## 撤销和重做气泡
+
+将**撤销**或**重做**拖到画布上，可把两者放在同一个[气泡](/zh/docs/customize/bubbles/)中。轻点左半边撤销，轻点右半边重做。
 
 ## 步骤的计算方式
 

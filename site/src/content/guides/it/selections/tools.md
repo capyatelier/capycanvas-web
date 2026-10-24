@@ -115,7 +115,7 @@ Fai clic su un colore della tela. **Selezione automatica** prende l'area
 contigua attorno a quel punto, e **Seleziona per colore** prende i pixel
 corrispondenti in qualsiasi punto dell'immagine.
 
-![Il pannello Strumento per Selezione automatica, con Modalità, Antialiasing, Sorgente, Tolleranza, le impostazioni Bordi e Raggio di sfumatura.](shot:selections/tools-auto-select-settings)
+![Il pannello Strumento per Selezione automatica, con Modalità, Seleziona, Tolleranza, le impostazioni Bordi, Raggio di sfumatura, Antialiasing e Sorgente.](shot:selections/tools-auto-select-settings)
 
 ### Sorgente
 
@@ -161,6 +161,5 @@ tratto che sottrae non ha effetto finché non c'è una selezione.
 
 ## Il pulsante Seleziona
 
-**Seleziona** sotto le impostazioni di uno strumento di selezione nel pannello
-Strumento apre il [menu Seleziona](/it/docs/selections/working/). Le impostazioni
+**Seleziona** sotto la riga **Modalità** del pannello Strumento apre il [menu Seleziona](/it/docs/selections/working/). Le impostazioni
 di **Intervallo tonale** non hanno il pulsante **Seleziona**.

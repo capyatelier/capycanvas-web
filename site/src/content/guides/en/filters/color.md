@@ -7,7 +7,7 @@ related: ["filters/adding", "filters/tone", "filters/how-filters-apply"]
 The Color filters are in **Filter > Color** and in the **Color** category of
 the **Filters** panel. You change their settings in the **Properties** panel.
 
-![The Filters panel showing the Color category with a preview of each filter.](shot:filters/color-list)
+![The Color category in the Filters panel, from Hue / Saturation to Gradient Map, each with a stroke preview.](shot:filters/color-list)
 
 ## Hue / Saturation
 

@@ -88,7 +88,6 @@ related: ["layers/panel", "layers/types", "layers/merging", "files/open-save"]
 执行以下任一操作：
 
 - 选择**图层 > 新建 > 将选区复制到新图层**（**Ctrl+J**）或**将选区剪切到新图层**（**Ctrl+Shift+J**）。
-- 从**选择**菜单中选择相同的命令。
 - 从画布上[选区操作栏](/zh/docs/selections/working/)的**复制到图层**中选择这些命令。
 
 新图层位于源图层之上，名为“*名称*副本”，不透明度和混合模式与源图层相同。选区会被清除，选择**选择 > 重新选择**可恢复选区。

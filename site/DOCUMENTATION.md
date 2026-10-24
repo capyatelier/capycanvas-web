@@ -2,8 +2,7 @@
 
 The manual is an Astro content collection in `src/content/guides/`. It describes
 the Capy Canvas editor at the app revision recorded in
-`public/assets/capture.json` (currently main at d94650c5a, just after v1.0.4,
-with the glass fix from a71fa4834 applied and recorded there). Release
+`public/assets/capture.json` (currently main at 2d7c4d5d7, after v1.0.14). Release
 availability must agree with the download page.
 
 Read [WRITING.md](WRITING.md) before writing or reviewing a page. It sets the
@@ -26,13 +25,13 @@ order (`docTopics`), and the redirects from retired paths (`docRedirects`):
 | Drawing tools | Brush tools, Blend and Liquify, Fill, Gradient, Figure, Rulers and guides |
 | Brush settings | Size, opacity and flow; Tip and texture; Mixing, bleed and bristles; Resetting brushes |
 | Color | Color panel, Edit Color, Palettes, Eyedropper |
-| Layers | Layers panel, Layer types, Working with layers, Layer settings, Blend modes, Masks, Merging |
+| Layers | Layers panel, Layer types, Vector layers, Editing paths, Working with layers, Layer settings, Blend modes, Masks, Merging |
 | Filters | How filters apply, Adding filters, and five filter references by category |
 | Selections | Selection tools, Working with selections, Quick Mask, Selection layers, Select by brightness |
 | Transform and image | Move and Transform, Crop, Image size and rotation, Copy and paste |
 | Retouching | Clone and heal, Dodge and burn |
 | Color management | Color spaces, Proof, HDR |
-| Customizing | Panels, Toolbars and title bar, Workspaces, Zen mode, Preferences |
+| Customizing | Panels, Toolbars and title bar, Tool bubbles, Workspaces, Zen mode, Preferences |
 | Input | Pen, Touch gestures, Keyboard shortcuts |
 | Illustration tutorial | Introduction, then sketching, line art, base colors and rendering |
 | Photo editing tutorial | Introduction, then opening and cropping, retouching, adjusting and exporting |

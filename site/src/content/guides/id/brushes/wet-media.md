@@ -7,14 +7,14 @@ related: ["brushes/tip-texture", "brushes/basics", "drawing/blend-liquify", "dra
 Anda dapat mengatur cara kuas basah dan kuas pembaur mengolah cat di panel **Alat**.
 Setiap grup hanya muncul pada kuas yang disebutkan di bagiannya.
 
-![Panel Alat untuk Cat Air Basah dengan Pencampuran warna dan grup Pencampuran, Cat air, dan Rembesan.](shot:brushes/wet-media-settings)
+![Bagian bawah panel Alat untuk Cat Air Basah, dengan grup Pencampuran, Cat air, Rembesan, dan Paduan.](shot:brushes/wet-media-settings)
 
 ## Pencampuran
 
-**Pencampuran** muncul pada **Kuas Bulat Basah**, **Gouache Pekat**, **Cat Minyak Penuh**,
-**Pisau Palet**, **Sapuan Cat Air**, **Cat Air Basah**, **Pembaur Alami**, dan
-**Coreng**. Kecuali pada kuas cat air, kuas yang bermuatan cat akan kehabisan cat
-sepanjang goresan, dengan laju yang tetap untuk setiap kuas.
+**Pencampuran** muncul pada kuas cat minyak, **Gouache Pekat**, kuas cat air, dan
+setiap pembaur. **Pengambilan rata-rata**, **Ketahanan**, dan
+**Isi ulang dengan tekanan** hanya muncul pada kuas cat minyak, **Gouache Pekat**,
+**Pembaur Basah**, dan **Pencampur Warna**.
 
 ### Muatan cat
 
@@ -31,10 +31,47 @@ Mengatur sejauh apa kuas menyeret warna yang diambilnya dari lapisan sepanjang g
 Mengencerkan cat yang dibawa kuas. Nilai yang lebih tinggi melemahkan warna kuas itu
 sendiri dalam campuran.
 
+### Pengambilan rata-rata
+
+Mengatur sejauh apa warna yang diambil di sepanjang ujung kuas menyatu menjadi satu.
+Pada 0%, setiap bagian ujung mempertahankan warnanya sendiri.
+
+### Ketahanan
+
+Mengatur sejauh apa warna rata-rata terbawa sepanjang goresan. Pengaturan ini hanya
+muncul selama **Pengambilan rata-rata** di atas 0%.
+
+### Isi ulang dengan tekanan
+
+Mengatur seberapa banyak tekanan kuat memuat ulang warna terpilih ke dalam kuas.
+**Kuas Pencampur** meletakkan warnanya saat ditekan kuat dan hanya membaur saat
+disentuh ringan.
+
+## Pembaur
+
+Setiap pembaur menambahkan pengaturan ke grup **Pembaur**. **Jangkauan** berada di
+bagian atas panel **Alat**.
+
+| Pengaturan | Pembaur | Fungsi |
+| --- | --- | --- |
+| **Jangkauan** | Semua kecuali **Pisau Pembaur** dan **Marmer** | Seberapa jauh di sekitar setiap titik goresan pembaur mengumpulkan warna. |
+| **Guratan** | **Coreng**, **Pembaur Lembut**, **Stik pembaur kertas**, **Tisu**, **Pembaur Alami**, **Pembaur Bulu Kuas**, **Pisau Pembaur** | Seberapa banyak goresan pecah menjadi guratan searah arahnya. |
+| **Ketajaman** | **Pertajam** | Seberapa banyak kontras yang ditambahkan goresan. |
+| **Tekstur dipertahankan** | **Pembaur Penjaga Tekstur** | Seberapa banyak tekstur halus di bawah goresan tetap berada di atas warna yang terbaur. |
+| **Ukuran detail** | **Pembaur Penjaga Tekstur** | Ukuran tekstur yang dipertahankan. |
+| **Baurkan kecerahan** | **Pembaur Rona** | Seberapa banyak kecerahan ikut terbaur bersama rona dan saturasi. |
+| **Butiran** | **Pembaur Tebar** | Seberapa penuh setiap piksel yang tersebar menggantikan piksel di bawahnya. |
+| **Regangan** | **Pembaur Lukis**, **Pembaur Kristal** | Seberapa jauh bidang atau sel meregang sepanjang goresan. |
+| **Ukuran sel** | **Pembaur Kristal** | Ukuran sel. |
+| **Pusaran** | **Marmer** | Seberapa kuat cat melengkung. |
+| **Ukuran pusaran** | **Marmer** | Ukuran pusaran. |
+| **Penjagaan tepi** | **Pembaur Sisir** | Seberapa mudah baurannya berhenti di tepi antara warna. |
+
 ## Cat air
 
 **Sapuan Cat Air** dan **Cat Air Basah** memiliki grup **Cat air** untuk tepi yang lebih
-gelap di tempat cat menggenang. Cat air hanya bereaksi terhadap cat di lapisan yang sama.
+gelap di tempat cat menggenang. Cat air hanya bereaksi terhadap cat di lapisan yang sama. **Kekuatan tepi** berada di
+bagian atas panel **Alat**, di atas grup-grup.
 
 ### Kekuatan tepi
 
@@ -64,7 +101,7 @@ Mengatur sejauh apa cat dapat menyebar dari setiap tapak kuas, dari 0 hingga 96 
 
 ### Muatan air
 
-Mengatur banyaknya air yang diletakkan setiap tapak kuas di kertas.
+Mengatur banyaknya air yang diletakkan setiap tapak kuas di kertas. Berada di bagian atas panel **Alat**, di atas grup-grup.
 
 ## Pencampuran warna
 
@@ -86,7 +123,7 @@ Setiap kuas pencampur bawaan dimulai pada **Pencampuran Oklab**. Pilihan ini dis
 bersama kuas, dan pengaturan **Pembauran** pada gambar tidak mengubahnya. Untuk kuas
 yang tidak mencampur, pilihan ini tidak tersedia.
 
-![Pencampuran warna di laci Alat.](shot:brushes/color-mixing-menu)
+![Pengaturan Pencampuran warna yang menampilkan Pencampuran Oklab.](shot:brushes/color-mixing-menu)
 
 ## Bulu
 

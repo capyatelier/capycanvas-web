@@ -1,25 +1,22 @@
 ---
 title: "Pinselwerkzeuge"
 description: "Die Pinselwerkzeuge, ihre integrierten Vorgaben und die Stellen, an denen Sie sie wählen."
-related: ["brushes/basics", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
+related: ["brushes/basics", "layers/vector", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
 ---
 
-Sie können mit den Werkzeugen **Feder**, **Bleistift**, **Kohle**, **Kreide**, **Pastell**, **Wachsmalstift**, **Malpinsel**, **Airbrush** und **Dekoration** malen und mit **Radierer** radieren. Jedes Werkzeug enthält eine oder mehrere Gruppen integrierter Pinselvorgaben.
+Sie können mit den Werkzeugen **Feder**, **Bleistift**, **Malpinsel**, **Airbrush** und **Dekoration** malen und mit **Radierer** radieren. Jedes Werkzeug enthält eine oder mehrere Gruppen integrierter Pinselvorgaben.
 
 ## Werkzeuge und Vorgaben
 
 | Werkzeug | Gruppen | Vorgaben |
 | --- | --- | --- |
-| **Feder** | **Feder** | **G-Feder**, **Raue G-Feder**, **Kalligrafiefeder**, **Antike Feder**, **Realistische Feder**, **Nasse Tinte**, **Kleckstinte**, **Realistische Pinseltinte** |
+| **Feder** | **Feder** | **G-Feder**, **Monoline-Stift**, **Raue G-Feder**, **Kleckstinte**, **Kalligrafiefeder**, **Antike Feder**, **Realistische Feder**, **Nasse Tinte**, **Realistische Pinseltinte** |
 | | **Filzstift** | **Filzstift** |
 | **Bleistift** | **Bleistift** | **Bleistift**, **Spitzer Bleistift**, **Schattierungsstift** |
-| **Kohle** | **Kohle** | **Kohle** |
-| **Kreide** | **Kreide** | **Kreide** |
-| **Pastell** | **Pastell** | **Pastellblock** |
-| **Wachsmalstift** | **Wachsmalstift** | **Wachsmalstift** |
+| | **Pastell** | **Kohle**, **Wachsmalstift**, **Kreide**, **Pastellblock** |
 | **Malpinsel** | **Malen** | **Malpinsel**, **Borstenpinsel**, **Flacher Texturpinsel**, **Trockenes Schummern**, **Transparente Lasur**, **Deckende Gouache**, **Multiplizierende Lasur** |
 | | **Aquarell** | **Aquarelllasur**, **Nasses Aquarell** |
-| | **Ölfarbe** | **Satter Ölpinsel**, **Malmesser**, **Nasser Rundpinsel** |
+| | **Ölfarbe** | **Satter Ölpinsel**, **Malmesser**, **Nasser Rundpinsel**, **Mischender Pinsel** |
 | **Airbrush** | **Airbrush** | **Airbrush** |
 | | **Sprühpinsel** | **Sprühpinsel** |
 | **Radierer** | **Radierer** | **Radierer** |
@@ -31,13 +28,13 @@ Vorgaben haben keine eigene Farbe. Jeder Pinsel malt mit der aktuellen Farbe im
 
 ## Verhalten der Vorgaben
 
-Diese Eigenschaften sind fest in die Vorgaben eingebaut und haben keine Einstellung.
+Diese Eigenschaften sind fest in die Vorgaben eingebaut und haben keine Einstellung. Die Trockenmedium-Vorgaben werden unter [Trockenmedien](/de/docs/brushes/dry-media/) behandelt.
 
 | Vorgabe | Verhalten |
 | --- | --- |
 | **Kalligrafiefeder**, **Antike Feder** | Schräge Feder. |
+| **Monoline-Stift** | Behält bei jedem Druck eine Breite. |
 | **Filzstift** | Keilspitze. |
-| **Bleistift**, **Spitzer Bleistift**, **Schattierungsstift**, **Kohle**, **Kreide**, **Pastellblock**, **Wachsmalstift** | Druck und Neigung verändern Form und Materialauftrag der Markierung. Siehe [Trockenmedien](/de/docs/brushes/dry-media/). |
 | **Airbrush** | Trägt weiter Farbe auf, während Sie den Stift stillhalten. |
 | **Sprühpinsel** | Verteilt Abdrücke um den Strich. |
 | **Multiplizierende Lasur** | Malt im Modus Multiplizieren. |
@@ -105,7 +102,7 @@ Mit dem **Radierer** können Sie Farbe von der ausgewählten Ebene entfernen. Dr
 Sie **E**, oder wählen Sie **Radierer** in der Werkzeugleiste Werkzeuge oder, im
 Arbeitsbereich Skizze, in der Titelleiste aus.
 
-Während Sie eine Maske bearbeiten, entfernt der Radierer Maskendeckung.
+Während Sie eine Maske bearbeiten, entfernt der Radierer Maskendeckung. Auf einer Vektorebene schneidet er Pfade oder entfernt sie ([Vektorebenen](/de/docs/layers/vector/)).
 
 Ist im Bedienfeld Farbe **Transparente Farbe** ausgewählt, radiert jeder Pinsel. Auch
 das Radiererende eines Stifts kann radieren ([Stift](/de/docs/input/pen/)).
@@ -120,12 +117,15 @@ Filters. Hat der Filter keine Maske, geht der Strich auf die Ebene, auf die der 
 wirkt, oder auf die nächste Ebene darunter
 ([Wie Filter wirken](/de/docs/filters/how-filters-apply/)).
 
+Auf einer Vektorebene fügen **G-Feder** und **Monoline-Stift** Pfade hinzu, statt Pixel zu malen ([Vektorebenen](/de/docs/layers/vector/)).
+
 Eine aktive Auswahl beschränkt die Farbe auf die Auswahl.
 
 Auf den folgenden Ebenen malt ein Strich nichts, und ein Hinweis nennt den Grund:
 
 - Eine Gruppe oder Auswahlebene.
 - Eine Füllebene ohne Maske.
+- Eine Vektorebene, bei einem Pinsel, der keine Pfade zeichnen kann.
 - Eine Ebene mit aktiviertem **Bearbeitung sperren** oder in einer gesperrten Gruppe.
 - Eine Filterebene ohne Maske, wenn die darunterliegende Ebene gesperrt ist oder fehlt.
 - Eine skalierte oder gedrehte Ebene, bis Sie **Transformation anwenden** wählen ([Verschieben und Transformieren](/de/docs/transform/move-transform/)).

@@ -22,12 +22,11 @@ Haz una de las siguientes acciones:
 o de Foto. Mientras es la herramienta activa, el panel Conjunto de herramientas
 muestra todas las herramientas de selección.
 
-![Los ajustes de Rango tonal en el cajón Seleccionar de Boceto, con Modo, Tonos, Suavidad y Suavizado de bordes.](shot:selections/tonal-range-settings)
+![Los ajustes de Rango tonal en el cajón Seleccionar de Boceto, con Modo, los botones de tonos, Suavidad y Suavizado de bordes.](shot:selections/tonal-range-settings)
 
 ## Tonos
 
-Selecciona un botón de la fila **Tonos · pasos respecto al blanco de referencia**
-para seleccionar esa franja de brillo. La franja se combina con la selección
+Selecciona un botón de la fila de botones de tonos bajo **Modo** para seleccionar esa franja de brillo. La franja se combina con la selección
 actual según **Modo** (consulta [Herramientas de selección](/es/docs/selections/tools/)).
 
 La descripción emergente de cada botón nombra su franja:

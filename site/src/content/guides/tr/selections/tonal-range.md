@@ -21,11 +21,11 @@ Aşağıdakilerden birini yapın:
 çubuklarında düğmesi bulunmaz. Etkin araç bu olduğunda Araç seti paneli tüm
 seçim araçlarını listeler.
 
-![Eskiz Seç çekmecesinde Mod, Tonlar, Yumuşaklık ve Kenar yumuşatma ile Ton aralığı ayarları.](shot:selections/tonal-range-settings)
+![Eskiz Seç çekmecesinde Mod, ton düğmeleri, Yumuşaklık ve Kenar yumuşatma ile Ton aralığı ayarları.](shot:selections/tonal-range-settings)
 
 ## Tonlar
 
-O parlaklık bandını seçmek için **Tonlar · referans beyaza göre poz cinsinden**
+O parlaklık bandını seçmek için **Mod** satırının altındaki ton düğmeleri
 satırında bir düğme seçin. Band, **Mod** ayarına göre geçerli seçimle birleşir
 (bkz. [Seçim araçları](/tr/docs/selections/tools/)).
 

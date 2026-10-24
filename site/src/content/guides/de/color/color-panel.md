@@ -1,7 +1,7 @@
 ---
 title: "Bedienfeld Farbe"
 description: "Die Malfarbe mit dem Farbrad und den Farbfeldern des Bedienfelds Farbe wählen."
-related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-management/hdr"]
+related: ["color/edit-color", "color/palettes", "color/eyedropper", "customize/bubbles", "color-management/hdr"]
 ---
 
 Im Bedienfeld **Farbe** können Sie die Malfarbe wählen. Alle Arbeitsbereiche
@@ -17,6 +17,8 @@ Führen Sie eine der folgenden Aktionen aus:
 - Wählen Sie **Bedienfeld Farbe** in der Befehlssuche.
 - Wählen Sie im Arbeitsbereich Malen die Registerkarte **Farbe** in der linken Spalte aus.
 - Wählen Sie **Pinselfarbe** am Ende der Werkzeugleiste Werkzeuge aus, im Arbeitsbereich Skizze am rechten Ende der Titelleiste. Eine Schublade mit den Bedienfeldern Farbe und Paletten öffnet sich.
+
+Ziehen Sie **Pinselfarbe** auf die Leinwand, um das Farbrad dort als [Farbring](/de/docs/customize/bubbles/) zu behalten.
 
 ## Farbrad
 

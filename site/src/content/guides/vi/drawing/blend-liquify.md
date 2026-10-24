@@ -14,12 +14,19 @@ Thực hiện một trong các cách sau:
 - Nhấn **J**.
 - Trong Vẽ, chọn **Hòa màu** trên Thanh công cụ vẽ. Cùng nút này chứa **Dấu sao chép**.
 - Trong Ảnh, chọn **Hòa màu** trên Thanh công cụ vẽ.
-- Trong Phác thảo, chọn **Hòa màu** trong ngăn **Tạo hình**.
+- Trong Phác thảo, chọn một cọ hòa màu trong ngăn **Tạo hình**.
 - Tìm lệnh **Hòa màu**.
 
-Hòa màu có hai cọ đặt sẵn, **Cọ hòa màu tự nhiên** và **Miết màu**. Cả hai bắt đầu
-với **Lượng màu** ở 0% và không mang màu riêng. **Lượng màu lấy** đặt mức kéo màu
-theo nét vẽ ([Trộn màu, loang và lông cọ](/vi/docs/brushes/wet-media/)).
+Chọn một nhóm và một cọ hòa màu trong **Bộ công cụ**. **Miết màu** là cọ hòa màu mặc định.
+
+| Nhóm | Cọ hòa màu |
+| --- | --- |
+| **Hòa màu** | **Miết màu**, **Hòa màu mềm**, **Làm mờ**, **Bút di chì**, **Khăn giấy**, **Hòa màu sần**, **Hòa màu giữ chất liệu**, **Hòa màu sắc độ** |
+| **Sơn ướt** | **Cọ hòa màu tự nhiên**, **Hòa màu ướt**, **Trộn màu**, **Dao hòa màu**, **Hòa màu sợi cọ** |
+| **Hiệu ứng** | **Hòa màu kiểu tranh**, **Hòa màu chải**, **Hòa màu rải**, **Làm sắc nét**, **Vân cẩm thạch**, **Hòa màu tinh thể**, **Hòa màu điểm ảnh** |
+
+Thiết lập của từng cọ hòa màu nằm trong
+[Trộn màu, loang và lông cọ](/vi/docs/brushes/wet-media/).
 
 ## Biến dạng
 
@@ -27,7 +34,7 @@ Thực hiện một trong các cách sau:
 
 - Nhấn **J** khi Hòa màu đang hoạt động.
 - Trong Vẽ hoặc Ảnh, chọn **Biến dạng** trên Thanh công cụ vẽ. Nhấp chuột phải hoặc giữ nút để chọn một chế độ.
-- Trong Phác thảo, chọn **Biến dạng** trong ngăn **Tạo hình**.
+- Trong Phác thảo, chọn một chế độ trong nhóm **Biến dạng** của ngăn **Tạo hình**.
 - Tìm lệnh **Biến dạng**.
 
 Mỗi chế độ là một cọ đặt sẵn trong **Bộ công cụ**:
@@ -40,12 +47,35 @@ Mỗi chế độ là một cọ đặt sẵn trong **Bộ công cụ**:
 | **Biến dạng bóp** | Kéo pixel vào phía tâm cọ. |
 | **Biến dạng phồng** | Đẩy pixel ra xa tâm cọ. |
 | **Biến dạng tinh thể** | Làm vỡ ảnh dưới cọ thành các ô nhỏ rải rác. |
+| **Cạnh** | Kéo pixel về phía đường nét vẽ từ cả hai phía. |
+| **Khôi phục** | Lấy lại độ biến dạng do Biến dạng tạo ra dưới cọ. |
+
+Biến dạng không có nút Áp dụng. Mỗi nét vẽ thay đổi lớp và là một bước hoàn tác riêng.
+Các nét tiếp tục làm biến dạng các pixel mà lớp có trước nét đầu tiên, cho đến khi bạn
+vẽ lên, tô, áp dụng bộ lọc, biến đổi hoặc dán vào lớp.
+
+## Điều chỉnh hóa lỏng và Đặt lại hóa lỏng
+
+Bạn có thể giảm bớt toàn bộ những gì Biến dạng đã làm với một lớp bằng **Điều chỉnh hóa lỏng**,
+hoặc đưa lớp về các pixel trước nét đầu tiên bằng **Đặt lại hóa lỏng**.
+
+Thực hiện một trong các cách sau:
+
+- Trong bảng **Công cụ**, bật **Điều chỉnh hóa lỏng** hoặc chọn **Đặt lại hóa lỏng**.
+- Tìm lệnh **Điều chỉnh hóa lỏng** hoặc **Đặt lại hóa lỏng**.
+
+Khi **Điều chỉnh hóa lỏng** bật, thanh trượt **Mức độ** xuất hiện trong bảng **Công cụ**.
+Ở 100%, độ biến dạng giữ nguyên, còn ở 0% độ biến dạng mất hết. Thả thanh trượt là một
+bước hoàn tác, và **Đặt lại hóa lỏng** cũng vậy.
+
+Cả hai lệnh đều không dùng được, kèm thông báo “Áp dụng hóa lỏng cho lớp này trước”,
+cho đến khi lớp có thay đổi từ Biến dạng.
 
 ## Thiết lập Biến dạng
 
-![Bảng Công cụ cho Biến dạng tinh thể, với nhóm Biến dạng hiện Độ mạnh và Độ méo.](shot:drawing/liquify-settings)
+![Bảng Công cụ cho Biến dạng tinh thể với Độ mạnh, nhóm Biến dạng hiện Độ méo và Quán tính, cùng Điều chỉnh hóa lỏng và Đặt lại hóa lỏng.](shot:drawing/liquify-settings)
 
-**Độ mạnh**, **Độ méo** và **Quán tính** nằm trong nhóm **Biến dạng** của bảng **Công cụ**. **Độ mạnh** đặt mức nét dịch chuyển pixel.
+**Độ méo** và **Quán tính** nằm trong nhóm **Biến dạng** của bảng **Công cụ**.
 
 ### Độ mạnh
 
@@ -54,28 +84,21 @@ Mỗi chế độ là một cọ đặt sẵn trong **Bộ công cụ**:
 
 ### Độ méo
 
-Đặt mức **Biến dạng tinh thể** rải pixel. Không chế độ nào khác có thiết lập này.
+Làm chuyển động không đều. Ở **Biến dạng tinh thể**, nó đặt mức các ô rải ra. **Khôi phục** không có **Độ méo**.
 
 ### Quán tính
 
-Làm **Biến dạng đẩy** mang pixel đi xa hơn quãng đường bút di chuyển, và chỉ xuất
-hiện ở chế độ đó.
+Tiếp tục hiệu ứng theo hướng cuối cùng của nét vẽ sau khi bạn nhấc bút. **Khôi phục**
+không có **Quán tính**.
 
 ## Ngăn Tạo hình trong Phác thảo
 
-Trong Phác thảo, **Tạo hình** trên thanh tiêu đề chứa Hòa màu, Biến dạng và các công
-cụ chỉnh sửa ảnh.
-
-- Chọn **Tạo hình** để dùng cọ đặt sẵn tạo hình gần nhất. Lần đầu tiên, đó là **Cọ hòa màu tự nhiên**.
-- Chọn lại **Tạo hình** để mở ngăn, và chọn thêm lần nữa để đóng ngăn.
-
-Ngăn có ba cột. **Tạo hình** liệt kê **Hòa màu**, **Biến dạng**, **Sao chép**,
-**Phục hồi** và **Phục hồi điểm**. **Công cụ** liệt kê các cọ đặt sẵn của nhóm đã
-chọn, còn **Công cụ** chứa thiết lập của chúng.
-
+Trong Phác thảo, chọn **Tạo hình** trên thanh tiêu đề để dùng công cụ Hòa màu, Biến
+dạng hoặc Sửa ảnh gần nhất, chọn lại để mở ngăn của nó, và chọn thêm lần nữa để đóng
+ngăn. Ngăn liệt kê các nhóm, các công cụ của nhóm đã chọn và thiết lập của chúng.
 **Tạo hình** và **Cọ** giữ riêng cọ đặt sẵn và kích thước cọ gần nhất của mỗi nút.
 
-![Ngăn Tạo hình trong Phác thảo với Biến dạng được chọn trong Tạo hình và sáu cọ đặt sẵn Biến dạng trong Công cụ.](shot:drawing/sketch-sculpt-drawer)
+![Ngăn Tạo hình trong Phác thảo với các nhóm Hòa màu, Sơn ướt, Hiệu ứng, Biến dạng và Sửa ảnh ở bên trái, các cọ hòa màu của nhóm Hòa màu ở giữa và thiết lập của Miết màu ở bên phải.](shot:drawing/sketch-sculpt-drawer)
 
 ## Vẽ trên mặt nạ
 

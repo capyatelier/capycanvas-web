@@ -40,7 +40,7 @@ related: ["drawing/fill", "layers/types", "filters/color", "color/edit-color"]
 
 ## 색 정지점 편집기
 
-![모양 행, 색 정지점 편집기, 불투명도가 있는 그레이디언트 도구의 도구 패널.](shot:drawing/gradient-tool-panel)
+![모양 행과 색 정지점 편집기가 있는 그레이디언트 도구의 도구 패널.](shot:drawing/gradient-tool-panel)
 
 **도구** 패널의 **모양** 아래에 있는 색 정지점 편집기에서 그레이디언트의 색을 편집할 수 있습니다. 도구 옵션 막대의 그레이디언트 버튼을 선택하면 팝업으로 편집기가 열립니다. 그레이디언트 채우기 레이어와 **그레이디언트 맵** 필터도 같은 편집기를 사용합니다([색상 필터](/ko/docs/filters/color/)).
 

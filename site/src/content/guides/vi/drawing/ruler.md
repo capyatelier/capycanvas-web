@@ -96,10 +96,11 @@ hiện bên dưới các tay nắm của nó.
 | **Bắt dính** | Bật hoặc tắt **Bắt dính vào thước**. |
 | **Đường hướng dẫn** | Hiện hoặc ẩn mọi đường hướng dẫn. Ẩn đường hướng dẫn cũng ẩn thanh này. |
 | **Làm thẳng** | Bắt đầu **Làm thẳng ảnh theo đường hướng dẫn**. Chỉ có với đường hướng dẫn Thẳng. |
+| **Thêm** | Mở một trình đơn có **Hiện thanh thao tác khung vẽ**. |
 
 Tắt **Hiển thị > Hiện thanh thao tác khung vẽ** sẽ bỏ thanh đường hướng dẫn.
 
-![Thanh đường hướng dẫn bên dưới một đường hướng dẫn Thẳng đang chọn, với Xóa, Bắt dính, Đường hướng dẫn và Làm thẳng.](shot:drawing/ruler-guide-bar)
+![Thanh đường hướng dẫn bên dưới một đường hướng dẫn Thẳng đang chọn, với Xóa, Bắt dính, Đường hướng dẫn, Làm thẳng và Thêm.](shot:drawing/ruler-guide-bar)
 
 ## Di chuyển đường hướng dẫn bằng Thao tác
 

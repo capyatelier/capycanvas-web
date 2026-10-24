@@ -146,7 +146,7 @@ jusqu’à 64 préréglages. Les préréglages s’appliquent à tous les dessin
 
 ## Exportation HDR
 
-![La boîte de dialogue Exporter l’image pour un dessin HDR avec JPEG HDR · carte de gain, après Prévisualiser la sortie.](shot:files/export-hdr-preview)
+![Le menu Prévisualiser le rendu réglé sur Reconstruction HDR · aperçu SDR, avec les aperçus Dessin et Reconstruction HDR côte à côte.](shot:files/export-hdr-preview)
 
 Pour un dessin en virgule flottante 16 bits ou 32 bits, **Plage dynamique**
 propose ces choix :

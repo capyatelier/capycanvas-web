@@ -138,6 +138,7 @@ for the next tool in the family.
 | **Figure** | **U** |
 | **Ruler** | **Shift+U** |
 | **Operation** | **O** |
+| **Edit points** | **A** |
 | **Transform** | **Ctrl+T** |
 | **Crop** | **C** |
 | **Hand** | **H** |
@@ -166,6 +167,7 @@ for the next tool in the family.
 | **Copy Selection to New Layer** | **Ctrl+J** |
 | **Cut Selection to New Layer** | **Ctrl+Shift+J** |
 | **Merge Down** | **Ctrl+E** |
+| **New vector layer** | **Ctrl+Alt+Shift+N** |
 | **Fit canvas** | **Ctrl+0** |
 | **Actual Pixels** | **Ctrl+1**, **Ctrl+Alt+0** |
 | **Zoom in**, **Zoom out** | **Ctrl+=**, **Ctrl+-** |

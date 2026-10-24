@@ -34,6 +34,6 @@ related: ["retouch/clone-heal", "layers/blend-modes", "filters/detail-blur", "ph
 
 图层组沿用原图层的不透明度和剪贴。原图层保留在图层组正下方，并被隐藏。
 
-该图层必须可见并设为**正常**，画作必须使用**编辑 > 颜色混合 > 感知颜色混合**（参见[色彩空间、位深度和颜色混合](/zh/docs/color-management/color-spaces/)）。如果面板打开期间画作发生更改，面板会关闭。
+该图层必须可见并设为**正常**，画作必须使用**图像 > 颜色混合 > 感知颜色混合**（参见[色彩空间、位深度和颜色混合](/zh/docs/color-management/color-spaces/)）。如果面板打开期间画作发生更改，面板会关闭。
 
 ![图层面板，显示频率分离图层组（高频位于低频上方）以及隐藏的原图层。](shot:retouch/frequency-separation-layers)

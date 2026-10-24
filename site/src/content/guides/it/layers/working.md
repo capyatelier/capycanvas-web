@@ -117,7 +117,6 @@ livello, nella stessa posizione.
 Esegui una delle seguenti operazioni:
 
 - Scegli **Livello > Nuovo > Copia selezione su nuovo livello** (**Ctrl+J**) o **Taglia selezione su nuovo livello** (**Ctrl+Maiusc+J**).
-- Scegli gli stessi comandi dal menu **Seleziona**.
 - Sceglili da **Copia su livello** nella [barra della selezione](/it/docs/selections/working/) sulla tela.
 
 Il nuovo livello va sopra il livello di origine, si chiama «*nome* copia» e ha

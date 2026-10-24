@@ -1,6 +1,6 @@
 ---
 title: "复制和粘贴"
-description: "复制像素并粘贴为图层、蒙版或新画作。"
+description: "复制像素并粘贴为图层或新画作。"
 related: ["selections/working", "transform/move-transform", "layers/types", "files/open-save"]
 ---
 
@@ -16,6 +16,8 @@ related: ["selections/working", "transform/move-transform", "layers/types", "fil
 
 **合并复制**（**Ctrl+Shift+C**）复制选区内的可见结果，包括纸张光照。组、滤镜图层和选区图层本身没有像素。
 
+**复制像素**的作用与**复制**相同，并且在对象图层上会将其图像复制为像素。
+
 ## 粘贴
 
 **粘贴**（**Ctrl+V**）将剪贴板中的画作作为新图层添加，需要放置时打开变换手柄。其他应用中的图像会成为[对象图层](/zh/docs/layers/types/)，在栅格化之前保留其源图像。
@@ -27,13 +29,14 @@ related: ["selections/working", "transform/move-transform", "layers/types", "fil
 打开 **编辑 > 选择性粘贴** 可选择目标。
 
 - **原位粘贴** 在复制位置添加图层，不打开变换手柄。
+- **粘贴到显示位置** 在可见画布的中央添加图层，保持原始大小。
+- **粘贴到光标位置** 添加以指针为中心的图层，保持原始大小。
 - **粘贴入选区** 添加图层，以当前选区为蒙版，然后清除选区。
-- **粘贴蒙版** 使用剪贴板图像替换或添加所选图层的蒙版。
 - **粘贴为新图像** 从剪贴板创建新画作。
 
 要求选区、可编辑图层或兼容剪贴板图像的命令，在不满足条件时变暗。
 
-![特殊粘贴中用于图层、蒙版和新画作的选项。](shot:transform/paste-special)
+![选择性粘贴菜单，包含原位粘贴、粘贴到显示位置、粘贴到光标位置、粘贴入选区和粘贴为新图像。](shot:transform/paste-special)
 
 ## 应用之间
 

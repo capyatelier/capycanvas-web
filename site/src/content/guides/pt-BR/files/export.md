@@ -141,7 +141,7 @@ predefinições. As predefinições valem para todos os desenhos.
 
 ## Exportação HDR
 
-![A caixa de diálogo Exportar imagem de um desenho HDR com JPEG HDR · mapa de ganho, depois de Visualizar saída.](shot:files/export-hdr-preview)
+![O menu Visualizar versão definido como Reconstrução HDR · prévia SDR, com as prévias de Arte e de Reconstrução HDR lado a lado.](shot:files/export-hdr-preview)
 
 Em um desenho de 16 ou 32 bits em ponto flutuante, **Alcance dinâmico** oferece
 estas opções:

@@ -1,7 +1,7 @@
 ---
 title: "터치 제스처"
 description: "캔버스에서 손가락으로 할 수 있는 동작과 지정할 수 있는 손가락 탭."
-related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
+related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
 터치스크린에서 손가락으로 캔버스를 움직이고, 색을 가져오고, 명령을 실행할 수 있습니다.
@@ -22,6 +22,17 @@ related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
 
 캔버스에 두 번째 손가락을 대면 색 가져오기가 취소됩니다.
 
+## 레이어 지우기
+
+세 손가락으로 캔버스를 문지르면 활성 레이어에서 **레이어 전체 지우기**가 실행됩니다. 세 손가락을 함께 움직이고, 반대로 움직이고, 손가락을 떼지 않은 채 다시 반대로 움직입니다. **실행 취소**를 한 번 하면 레이어가 복원됩니다. 잠긴 레이어는 지워지지 않습니다.
+
+## 버블 옮기기
+
+[버블](/ko/docs/customize/bubbles/)은 두 손가락으로 드래그하면 버블의 어디에서든 옮길 수 있습니다.
+
+## 집중 모드의 도구 모음
+
+Linux 앱에서는 [집중 모드](/ko/docs/customize/zen/)에서 손가락 하나로 창 가장자리에서 안쪽으로 쓸어 넘기면 그 가장자리에 도킹된 도구 모음과 패널이 표시됩니다.
 ## 손가락 탭
 
 두 손가락, 세 손가락, 네 손가락으로 캔버스를 탭해 동작을 실행할 수 있습니다.
@@ -50,4 +61,4 @@ related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
 
 ## 플랫폼
 
-터치 제스처는 Linux, Windows, Android, iPad, 웹에서 작동합니다. macOS에서는 **터치 제스처** 그룹이 표시되지 않습니다.
+터치 제스처는 Linux, Windows, Android, iPad, 웹에서 작동합니다. macOS에서는 **터치 제스처** 그룹이 표시되지 않지만, 트랙패드에서 세 손가락으로 문지르면 여전히 레이어가 지워집니다.

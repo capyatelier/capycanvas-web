@@ -11,9 +11,9 @@ sur un calque placé au-dessus.
 
 1. Sélectionnez **Peinture** dans le sélecteur d’espaces de travail de la barre de titre.
 2. Choisissez **Fichier > Nouveau…** ou appuyez sur **Ctrl+N** ([Nouveaux dessins](/fr/docs/files/new/)).
-3. Dans la boîte de dialogue **Nouveau dessin**, réglez **Largeur (px)** et **Hauteur (px)** sur 1200, puis sélectionnez **Créer**.
+3. Dans la boîte de dialogue **Nouveau dessin**, choisissez **px** dans le menu des unités, réglez **L** et **H** sur 1200, puis sélectionnez **Créer**.
 
-![La boîte de dialogue Nouveau dessin avec Largeur (px) et Hauteur (px) réglées sur 1200.](shot:illustration/new-drawing)
+![La boîte de dialogue Nouveau dessin avec L et H réglées sur 1200 px.](shot:illustration/new-drawing)
 
 Le dessin contient deux calques : **Encre actuelle** au-dessus de **Papier**.
 Double-cliquez sur **Encre actuelle** dans le panneau Calques et renommez le calque

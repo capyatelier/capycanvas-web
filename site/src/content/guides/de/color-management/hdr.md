@@ -12,10 +12,9 @@ HDR-Zeichnung.
 
 Um eine HDR-Zeichnung zu erhalten, führen Sie eine der folgenden Aktionen aus:
 
-- Wählen Sie unter **Datei > Neu…** die Vorgabe **HDR-Zeichnung** oder eine Gleitkomma-**Farbtiefe**.
-- Wählen Sie **Bearbeiten > Farbtiefe ändern…** und eine Gleitkomma-Farbtiefe.
+- Wählen Sie unter **Datei > Neu…** die Vorgabe **4K HDR** oder eine Gleitkomma-**Farbtiefe**.
+- Wählen Sie **Bild > Farbverwaltung > Farbtiefe ändern…** und eine Gleitkomma-Farbtiefe.
 - Öffnen Sie eine HDR-PNG-Datei (BT.2020 PQ) oder HDR-AVIF-Datei (16-Bit-Gleitkomma-HDR) oder eine OpenEXR-Datei (32-Bit-Gleitkomma-HDR).
-- Setzen Sie **Farbtiefe** auf der Seite **Farbe** der [Einstellungen](/de/docs/preferences/) auf eine Gleitkomma-Farbtiefe, damit neue Zeichnungen HDR sind.
 
 In einer HDR-Zeichnung gilt:
 

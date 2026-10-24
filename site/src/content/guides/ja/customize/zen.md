@@ -1,7 +1,7 @@
 ---
 title: "集中モード"
 description: "集中モードによるタイトルバーとドッキングしたパネルの非表示と、集中モードの環境設定。"
-related: ["customize/panels", "customize/toolbars", "preferences", "input/keyboard"]
+related: ["customize/panels", "customize/toolbars", "customize/bubbles", "preferences", "input/keyboard"]
 ---
 
 集中モードでは、タイトルバーと、ドッキングしたパネルとツールバーを隠せます。キャンバスがウィンドウ全体に広がります。
@@ -27,11 +27,18 @@ related: ["customize/panels", "customize/toolbars", "preferences", "input/keyboa
 集中モードでは、折りたたんだ列とフッターも隠れます。次のものは表示されたままです。
 
 - フローティングパネル
+- [ツールバブル](/ja/docs/customize/bubbles/)（ハロー、セレクター、メニューを含む）
 - 選択範囲や変形の横にあるキャンバス操作バー
 - Capyボタン（**集中モードでCapyを表示**がオフの場合を除く）
 - 通知
 
 キーとコマンド検索（**Ctrl+K**）は通常どおり使えます。
+
+## 集中モードでツールバーを残す
+
+Linuxアプリでは、ツールバーのメニューから**集中モードで表示**を選ぶと、そのツールバーが集中モードでも画面に残ります。
+
+Linuxアプリのタッチスクリーンでは、ウィンドウの端から24 px以内で、1本の指を内側へスワイプすると、その端にドッキングしたツールバーとパネルが表示されます。それらの外側にタッチすると、再び隠れます。ペンやマウスでは表示できません。
 
 ## 集中モードでのドッキング
 

@@ -43,7 +43,7 @@ Esegui una delle seguenti operazioni:
 
 ## Editor dei punti
 
-![Il pannello Strumento per lo strumento Sfumatura con la riga Forma, l'editor dei punti e Opacità.](shot:drawing/gradient-tool-panel)
+![Il pannello Strumento per lo strumento Sfumatura con la riga Forma e l'editor dei punti.](shot:drawing/gradient-tool-panel)
 
 Puoi modificare i colori della sfumatura nell'editor dei punti sotto **Forma**
 nel pannello **Strumento**. Il pulsante della sfumatura nella barra Opzioni

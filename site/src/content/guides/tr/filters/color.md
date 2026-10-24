@@ -7,7 +7,7 @@ related: ["filters/adding", "filters/tone", "filters/how-filters-apply"]
 Renk filtreleri **Filtre > Renk** menüsünde ve **Filtreler** panelinin **Renk**
 kategorisinde bulunur. Ayarlarını **Özellikler** panelinde değiştirirsiniz.
 
-![Her filtrenin önizlemesiyle Renk kategorisini gösteren Filtreler paneli.](shot:filters/color-list)
+![Filtreler panelindeki Renk kategorisi, Ton / doygunluk'tan Gradyan haritası'na kadar; her birinde bir çizgi önizlemesi var.](shot:filters/color-list)
 
 ## Ton / doygunluk
 

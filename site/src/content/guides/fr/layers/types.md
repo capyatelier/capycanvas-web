@@ -1,10 +1,10 @@
 ---
 title: "Types de calques"
-description: "Les calques de peinture, Objet, Papier, groupe, remplissage, filtre et sélection, et leurs règles."
-related: ["layers/panel", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
+description: "Les calques de peinture, Objet, vectoriel, Papier, groupe, remplissage, filtre et sélection, et leurs règles."
+related: ["layers/panel", "layers/vector", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
 ---
 
-![Les types de calques actuels dans le panneau Calques.](shot:layers/types-rows)
+![Le panneau Calques avec un calque de sélection, un groupe, un calque de peinture, un filtre, des calques de remplissage, un calque vectoriel et le Papier.](shot:layers/types-rows)
 
 ## Calque de peinture
 
@@ -18,9 +18,13 @@ Un calque Objet conserve une image importée à sa taille, sa profondeur de coul
 
 Vous pouvez déplacer, redimensionner et faire pivoter un calque Objet sans rééchantillonner sa source à répétition. Choisissez **Calque > Pixelliser le calque** pour peindre sur ses pixels ou utiliser une commande qui exige un calque de peinture. La pixellisation le convertit à l’espace colorimétrique, à la profondeur de couleur et à la grille de pixels du dessin.
 
+## Calque vectoriel
+
+Un calque vectoriel contient des tracés au lieu de pixels. Choisissez **Calque > Nouveau > Nouveau calque vectoriel**, ou sélectionnez **Nouveau calque vectoriel** au bas du panneau Calques. Un badge de tracé signale sa vignette. Voir [Calques vectoriels](/fr/docs/layers/vector/).
+
 ## Papier
 
-Le Papier fournit la couleur de fond et la texture utilisée par les traits secs. Il reste au bas de la pile de calques et possède des vignettes de couleur et de texture.
+Le Papier fournit la couleur de fond et la texture à laquelle réagissent les pinceaux qui ont le réglage **Intensité de la texture**. Il reste au bas de la pile de calques et possède des vignettes de couleur et de texture.
 
 Un dessin peut contenir un Papier. Le Papier ne peut pas avoir de masque, devenir un calque d’écrêtage, passer au-dessus des calques ordinaires ni être fusionné dans un calque ordinaire. Voir [Papier](/fr/docs/layers/paper/) pour sa texture, son éclairage et ses autres réglages.
 

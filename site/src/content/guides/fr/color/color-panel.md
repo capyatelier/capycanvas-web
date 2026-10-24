@@ -1,7 +1,7 @@
 ---
 title: "Panneau Couleur"
 description: "Choisir la couleur de peinture avec la roue et les pastilles du panneau Couleur."
-related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-management/hdr"]
+related: ["color/edit-color", "color/palettes", "color/eyedropper", "customize/bubbles", "color-management/hdr"]
 ---
 
 Vous pouvez choisir la couleur de peinture dans le panneau **Couleur**. Tous les
@@ -17,6 +17,8 @@ Effectuez l’une des opérations suivantes :
 - Choisissez **Panneau Couleur** dans la recherche de commandes.
 - Dans Peinture, sélectionnez l’onglet **Couleur** dans la colonne de gauche.
 - Sélectionnez **Couleur du pinceau** au bout de la barre d’outils Outils, ou à l’extrémité droite de la barre de titre dans Croquis. Un tiroir s’ouvre avec les panneaux Couleur et Palettes.
+
+Faites glisser **Couleur du pinceau** sur la toile pour y garder la roue sous forme d’[anneau de couleur](/fr/docs/customize/bubbles/).
 
 ## Roue chromatique
 

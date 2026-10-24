@@ -5,7 +5,7 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 ---
 
 Bạn có thể cắt xén khung vẽ theo một khung bằng công cụ **Cắt xén**. Pixel bị cắt
-vẫn nằm trên lớp của chúng ở trạng thái ẩn, trừ khi bạn bật **Xóa phần bị cắt**.
+vẫn nằm trên lớp của chúng ở trạng thái ẩn, trừ khi bạn bật **Xóa nét vẽ bị cắt**.
 
 ## Cắt xén
 
@@ -45,7 +45,7 @@ Chọn **Tự do**, **Gốc**, **1:1**, **4:5**, **2:3**, **5:7** hoặc **16:9*
 **Đổi hướng cắt**, nút biểu tượng bên cạnh **Tỷ lệ**, chuyển khung giữa hướng ngang
 và hướng dọc.
 
-Tỷ lệ, lớp phủ và **Xóa phần bị cắt** được giữ cho lần cắt xén tiếp theo.
+Tỷ lệ, lớp phủ và **Xóa nét vẽ bị cắt** được giữ cho lần cắt xén tiếp theo.
 
 ![Trình đơn Tỷ lệ trên thanh cắt xén.](shot:transform/crop-ratio-menu)
 
@@ -76,13 +76,13 @@ trên thanh khung vẽ của đường đó (xem
 [Thước và đường hướng dẫn](/vi/docs/drawing/ruler/)). Thao tác cắt xén mở ra, với
 khung đã xoay ngang bằng đường hướng dẫn.
 
-## Xóa phần bị cắt
+## Xóa nét vẽ bị cắt
 
-Bật **Xóa phần bị cắt** để bỏ các pixel bên ngoài khung khi áp dụng cắt xén. Ảnh đã
+Bật **Xóa nét vẽ bị cắt** để bỏ các pixel bên ngoài khung khi áp dụng cắt xén. Ảnh đã
 đặt giữ pixel gốc. Mặc định tắt.
 
 Lần cắt xén nào quá lớn nếu giữ lại pixel ẩn thì chỉ thực hiện được khi bật
-**Xóa phần bị cắt**.
+**Xóa nét vẽ bị cắt**.
 
 ## Đặt lại
 

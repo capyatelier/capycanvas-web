@@ -1,7 +1,7 @@
 ---
 title: "Dolgu araçları"
 description: "Bir katmandaki alanları, serbest çizilmiş şekilleri ve kapalı bölgeleri geçerli renkle doldurma."
-related: ["drawing/gradient", "layers/settings", "selections/working", "drawing/brush-tools"]
+related: ["drawing/gradient", "layers/vector", "layers/settings", "selections/working", "drawing/brush-tools"]
 ---
 
 Seçili katmanın bölümlerini **Doldur**, **Kement dolgusu** ve **Çevrele ve doldur** ile geçerli renkle doldurabilirsiniz. Her dolgu bir geri alma adımıdır
@@ -70,6 +70,10 @@ doldur ise {appName}'ı her açtığınızda **Referans katmanlar** ayarına dö
 
 Doldur **Referans katmanlar** kullanıyorsa ve işaretli katman yoksa Doldur
 hiçbir şey boyamaz. Bir bildirim, alttaki katmanı işaretlemeyi önerir.
+
+## Vektör katmanları
+
+Vektör katmanında **Doldur** tıkladığınız kapalı yolu renklendirir. Başka bir yere tıklamak ya da **Referans katmanlar** kaynağı, vektör katmanının altına bir boya katmanı ekler ve dolguyu orada yapar. **Kement dolgusu** dolgulu bir yol ekler, **Gradyan** ile **Çevrele ve doldur** ise **Alta Yeni Boya Katmanı** seçeneğini sunar. Bkz. [Vektör katmanları](/tr/docs/layers/vector/).
 
 ## Dolgu ayarları
 

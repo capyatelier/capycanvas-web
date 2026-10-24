@@ -26,6 +26,11 @@ Entrambi gli interruttori sono attivi per impostazione predefinita, e
 **Intensità della previsione** è 16 ms. Mentre **Attiva previsione del tratto** è
 disattivato, le altre due impostazioni non sono disponibili.
 
+Un tratto di mouse non riceve alcuna previsione davanti alla punta, e così un
+tratto di una tavoletta grafica senza schermo su Linux, Windows e Android. Nell'editor
+web e su macOS, i tratti di queste tavolette vengono previsti secondo le
+impostazioni.
+
 | Sistema | La previsione del sistema |
 | --- | --- |
 | iPad | Disponibile |

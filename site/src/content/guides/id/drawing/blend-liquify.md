@@ -14,13 +14,19 @@ Lakukan salah satu langkah berikut:
 - Tekan **J**.
 - Di Lukis, pilih **Baurkan** di bilah alat Alat. Tombol yang sama memuat **Stempel Klon**.
 - Di Foto, pilih **Baurkan** di bilah alat Alat.
-- Di Sketsa, pilih **Baurkan** di laci **Pahat**.
+- Di Sketsa, pilih sebuah pembaur di laci **Pahat**.
 - Cari **Baurkan** di pencarian perintah.
 
-Baurkan memiliki dua prasetel, **Pembaur Alami** dan **Coreng**. Keduanya dimulai dengan
-**Muatan cat** 0% dan tidak membawa warna sendiri. **Pengambilan warna** mengatur sejauh
-apa keduanya menyeret warna sepanjang goresan
-([Pencampuran, rembesan, dan bulu kuas](/id/docs/brushes/wet-media/)).
+Pilih set dan pembaur di **Set Alat**. **Coreng** adalah pembaur bawaan.
+
+| Set | Pembaur |
+| --- | --- |
+| **Baurkan** | **Coreng**, **Pembaur Lembut**, **Buram**, **Stik pembaur kertas**, **Tisu**, **Pembaur Berbutir**, **Pembaur Penjaga Tekstur**, **Pembaur Rona** |
+| **Cat basah** | **Pembaur Alami**, **Pembaur Basah**, **Pencampur Warna**, **Pisau Pembaur**, **Pembaur Bulu Kuas** |
+| **Efek** | **Pembaur Lukis**, **Pembaur Sisir**, **Pembaur Tebar**, **Pertajam**, **Marmer**, **Pembaur Kristal**, **Pembaur Dither** |
+
+Pengaturan setiap pembaur ada di
+[Pencampuran, rembesan, dan bulu kuas](/id/docs/brushes/wet-media/).
 
 ## Cairkan
 
@@ -28,7 +34,7 @@ Lakukan salah satu langkah berikut:
 
 - Tekan **J** saat Baurkan aktif.
 - Di Lukis atau Foto, pilih **Cairkan** di bilah alat Alat. Klik kanan atau tahan tombol itu untuk memilih mode.
-- Di Sketsa, pilih **Cairkan** di laci **Pahat**.
+- Di Sketsa, pilih mode di set **Cairkan** pada laci **Pahat**.
 - Cari **Cairkan** di pencarian perintah.
 
 Setiap mode adalah prasetel di **Set Alat**:
@@ -41,12 +47,37 @@ Setiap mode adalah prasetel di **Set Alat**:
 | **Cairkan: Cubit** | Menarik piksel ke arah pusat kuas. |
 | **Cairkan: Perbesar** | Mendorong piksel menjauh dari pusat kuas. |
 | **Cairkan: Kristal** | Memecah gambar di bawah kuas menjadi sel-sel kecil yang tersebar. |
+| **Tepi** | Menarik piksel ke arah garis goresan dari kedua sisi. |
+| **Pulihkan** | Mengembalikan deformasi Cairkan di bawah kuas. |
+
+Cairkan tidak memiliki tombol Terapkan. Setiap goresan mengubah lapisan dan menjadi
+langkah urungkan tersendiri. Goresan terus mendeformasi piksel yang dimiliki lapisan
+sebelum goresan pertama, sampai Anda melukis, mengisi, memfilter, mentransformasi,
+atau menempelkan sesuatu ke lapisan itu.
+
+## Sesuaikan Liquify dan Atur ulang Liquify
+
+Anda dapat mengurangi semua yang telah dilakukan Cairkan pada lapisan dengan
+**Sesuaikan Liquify**, atau mengembalikan lapisan ke pikselnya sebelum goresan pertama
+dengan **Atur ulang Liquify**.
+
+Lakukan salah satu langkah berikut:
+
+- Di panel **Alat**, aktifkan **Sesuaikan Liquify** atau pilih **Atur ulang Liquify**.
+- Cari **Sesuaikan Liquify** atau **Atur ulang Liquify** di pencarian perintah.
+
+Saat **Sesuaikan Liquify** aktif, penggeser **Jumlah** muncul di panel **Alat**. Pada
+100% deformasi tetap seperti adanya, dan pada 0% deformasi hilang. Melepas penggeser
+adalah satu langkah urungkan, begitu pula **Atur ulang Liquify**.
+
+Kedua perintah tidak tersedia, dengan pesan "Terapkan Liquify ke lapisan ini terlebih
+dahulu", sampai lapisan memiliki perubahan Cairkan.
 
 ## Pengaturan Cairkan
 
-![Panel Alat untuk Cairkan: Kristal, dengan grup Cairkan yang menampilkan Kekuatan dan Distorsi.](shot:drawing/liquify-settings)
+![Panel Alat untuk Cairkan: Kristal dengan Kekuatan, grup Cairkan yang menampilkan Distorsi dan Momentum, serta Sesuaikan Liquify dan Atur ulang Liquify.](shot:drawing/liquify-settings)
 
-**Kekuatan**, **Distorsi**, dan **Momentum** ada di grup **Cairkan** pada panel **Alat**. **Kekuatan** mengatur seberapa kuat goresan memindahkan piksel.
+**Distorsi** dan **Momentum** ada di grup **Cairkan** pada panel **Alat**.
 
 ### Kekuatan
 
@@ -55,29 +86,22 @@ tekanan pena yang ringan dan di dekat tepi ujung kuas yang lembut.
 
 ### Distorsi
 
-Mengatur sejauh apa **Cairkan: Kristal** menyebarkan piksel. Mode lain tidak memiliki
-pengaturan ini.
+Membuat gerakan tidak beraturan. Pada **Cairkan: Kristal**, pengaturan ini menentukan
+sejauh apa sel-sel menyebar. **Pulihkan** tidak memiliki **Distorsi**.
 
 ### Momentum
 
-Membuat **Cairkan: Dorong** membawa piksel lebih jauh daripada gerakan pena. Pengaturan
-ini hanya muncul pada mode tersebut.
+Melanjutkan efek sepanjang arah terakhir goresan setelah Anda mengangkat pena.
+**Pulihkan** tidak memiliki **Momentum**.
 
 ## Laci Pahat di Sketsa
 
-Di Sketsa, **Pahat** di bilah judul memuat Baurkan, Cairkan, dan alat retus.
+Di Sketsa, pilih **Pahat** di bilah judul untuk memakai alat Baurkan, Cairkan, atau
+Retus terakhir, pilih lagi untuk membuka lacinya, dan sekali lagi untuk menutup laci.
+Laci menampilkan set, alat dari set yang dipilih, dan pengaturannya. **Pahat** dan
+**Kuas** masing-masing mengingat prasetel dan ukuran kuas terakhirnya sendiri.
 
-- Pilih **Pahat** untuk memakai prasetel pahat terakhir. Pada pemakaian pertama, prasetel ini adalah **Pembaur Alami**.
-- Pilih **Pahat** lagi untuk membuka lacinya, dan sekali lagi untuk menutup laci.
-
-Laci ini memiliki tiga kolom. **Pahat** menampilkan **Baurkan**, **Cairkan**, **Klon**,
-**Pulihkan**, dan **Pulihkan noda**. **Alat** menampilkan prasetel dari grup yang
-dipilih, dan **Alat** berikutnya memuat pengaturannya.
-
-**Pahat** dan **Kuas** masing-masing mengingat prasetel dan ukuran kuas terakhirnya
-sendiri.
-
-![Laci Pahat di Sketsa dengan Cairkan dipilih di Pahat dan enam prasetel Cairkan di Alat.](shot:drawing/sketch-sculpt-drawer)
+![Laci Pahat di Sketsa dengan set Baurkan, Cat basah, Efek, Cairkan, dan Retus di kiri, pembaur dari set Baurkan di tengah, dan pengaturan Coreng di kanan.](shot:drawing/sketch-sculpt-drawer)
 
 ## Melukis pada mask
 

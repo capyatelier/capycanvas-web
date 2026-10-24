@@ -11,9 +11,9 @@ lapisan di atasnya.
 
 1. Pilih **Lukis** di pemilih ruang kerja pada bilah judul.
 2. Pilih **Berkas > Baru…**, atau tekan **Ctrl+N** ([Gambar baru](/id/docs/files/new/)).
-3. Di dialog **Gambar baru**, setel **Lebar (px)** dan **Tinggi (px)** ke 1200, lalu pilih **Buat**.
+3. Di dialog **Gambar baru**, pilih **px** di menu satuan, setel **L** dan **T** ke 1200, lalu pilih **Buat**.
 
-![Dialog Gambar baru dengan Lebar (px) dan Tinggi (px) disetel ke 1200.](shot:illustration/new-drawing)
+![Dialog Gambar baru dengan L dan T disetel ke 1200 px.](shot:illustration/new-drawing)
 
 Gambar memiliki dua lapisan: **Tinta saat ini** di atas **Kertas**. Klik ganda
 **Tinta saat ini** di panel Lapisan dan ganti nama lapisan menjadi *Color rough*.

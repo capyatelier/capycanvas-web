@@ -113,6 +113,7 @@ related: ["input/pen", "input/touch", "start/command-search", "preferences"]
 | **形状** | **U** |
 | **标尺** | **Shift+U** |
 | **操作** | **O** |
+| **编辑锚点** | **A** |
 | **变换** | **Ctrl+T** |
 | **裁剪** | **C** |
 | **抓手** | **H** |
@@ -141,6 +142,7 @@ related: ["input/pen", "input/touch", "start/command-search", "preferences"]
 | **将选区复制到新图层** | **Ctrl+J** |
 | **将选区剪切到新图层** | **Ctrl+Shift+J** |
 | **向下合并** | **Ctrl+E** |
+| **新建矢量图层** | **Ctrl+Alt+Shift+N** |
 | **画布适合窗口** | **Ctrl+0** |
 | **实际像素** | **Ctrl+1**、**Ctrl+Alt+0** |
 | **放大**、**缩小** | **Ctrl+=**、**Ctrl+-** |

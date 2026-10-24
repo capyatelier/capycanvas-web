@@ -22,7 +22,7 @@ Choose **Image > Crop**, select **Crop** in the Tools toolbar, or press
 **C** ([Crop](/docs/transform/crop/)). A frame with handles appears over the
 photo, with the crop bar along the bottom of the canvas.
 
-Select **Ratio** in the crop bar and choose **4:5**. The frame becomes the
+Select the ratio menu at the left end of the crop bar and choose **4:5**. The frame becomes the
 largest frame of that ratio, centered on the canvas. Its orientation follows
 the photo, so a landscape photo gets a 5:4 frame.
 
@@ -44,6 +44,6 @@ frame to the right, to give the rock and the tips of the fern even margins.
 
 Select **Apply** in the crop bar, or press **Enter**. The canvas takes the size
 of the frame: 2000 × 1600 pixels in the example. The cropped pixels stay on
-the layer, hidden, unless **Delete Cropped** is on in the crop bar.
+the layer, hidden, unless **Delete Cropped Paint** is on in the crop bar.
 
 Next stage: [Retouching](/docs/photo/retouch/).

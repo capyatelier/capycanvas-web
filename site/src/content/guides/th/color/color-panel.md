@@ -1,7 +1,7 @@
 ---
 title: "แผงสี"
 description: "การเลือกสีสำหรับระบายด้วยวงล้อสีและช่องสีของแผงสี"
-related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-management/hdr"]
+related: ["color/edit-color", "color/palettes", "color/eyedropper", "customize/bubbles", "color-management/hdr"]
 ---
 
 คุณเลือกสีสำหรับระบายได้ในแผง **สี** ทุกพื้นที่ทำงานใช้สีระบายเดียวกัน
@@ -16,6 +16,8 @@ related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-manag
 - เลือก **แผงสี** ในการค้นหาคำสั่ง
 - ในพื้นที่ทำงานระบายสี ให้เลือกแท็บ **สี** ในคอลัมน์ซ้าย
 - เลือก **สีพู่กัน** ที่ท้ายแถบเครื่องมือวาดภาพ หรือที่ปลายด้านขวาของแถบชื่อเรื่องในพื้นที่ทำงานร่างภาพ ลิ้นชักที่มีแผงสีและแผงจานสีจะเปิดขึ้น
+
+ลาก **สีพู่กัน** ไปวางบนผืนผ้าใบเพื่อเก็บวงล้อสีไว้ที่นั่นเป็น[วงแหวนสี](/th/docs/customize/bubbles/)
 
 ## วงล้อสี
 

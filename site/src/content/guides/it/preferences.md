@@ -1,6 +1,6 @@
 ---
 title: "Preferenze"
-description: "La finestra di dialogo Preferenze e le impostazioni delle pagine Aspetto, Tela, Ingresso, Colore e Informazioni."
+description: "La finestra di dialogo Preferenze e le impostazioni delle pagine Aspetto, Tela, Colore, Penna e input e Informazioni."
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -123,25 +123,9 @@ per impostazione predefinita. I gruppi esistenti non cambiano.
 
 ## Colore
 
-Le impostazioni di **Nuovi disegni** si applicano ai
-[disegni che crei](/it/docs/files/new/) da quel momento. Le impostazioni di
-**Apertura delle foto** si applicano alle foto che apri.
+Le impostazioni di **Apertura delle foto** si applicano alle foto che apri.
 
-![La pagina Colore delle Preferenze.](shot:preferences/color)
-
-### Spazio colore
-
-Scegli **sRGB** (predefinito), **Display P3**, **Adobe RGB (1998)** o **ProPhoto
-RGB**.
-
-### Profondità in bit
-
-Scegli **SDR a 8 bit** (predefinito), **SDR a 16 bit**, **HDR a virgola mobile a
-16 bit** o **HDR a virgola mobile a 32 bit**.
-
-### Sfondo
-
-Scegli **Bianco** (predefinito) o **Trasparente**.
+![Le impostazioni di Apertura delle foto nella pagina Colore delle Preferenze.](shot:preferences/color)
 
 ### Precisione di modifica
 

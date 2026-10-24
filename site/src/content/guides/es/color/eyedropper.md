@@ -69,7 +69,7 @@ parte superior de la ventana en Foto):
 
 ![La lupa del Selector de color sobre un trazo rojo, con los colores muestreado y actual en su anillo.](shot:color/eyedropper-loupe)
 
-![La lupa del selector de color sobre un dedo, con el punto de muestra debajo del contacto.](shot:color/eyedropper-touch)
+![La lupa del Selector de color en el borde de un trazo rojo, con una cruz en el centro y un anillo de dos colores.](shot:color/eyedropper-touch)
 
 Con la pantalla táctil siempre se usa la lupa. Seleccionar **Selector de color** en
 Boceto pone **Estilo** en **Selector de color**. Cuando **Origen** es **Capa

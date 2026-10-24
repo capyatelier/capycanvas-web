@@ -108,7 +108,7 @@ khung vẽ hiện **Xóa điểm**, **Hủy** và **Hoàn tất**.
 Nhấp vào một màu trên khung vẽ. **Tự động chọn** lấy vùng liền nhau quanh điểm đó,
 còn **Chọn theo màu** lấy các pixel có màu khớp ở bất kỳ đâu trong ảnh.
 
-![Bảng Công cụ của Tự động chọn, với Chế độ, Khử răng cưa, Nguồn, Dung sai, các thiết lập Cạnh và Bán kính làm mềm biên.](shot:selections/tools-auto-select-settings)
+![Bảng Công cụ của Tự động chọn, với Chế độ, Chọn, Dung sai, các thiết lập Cạnh, Bán kính làm mềm biên, Khử răng cưa và Nguồn.](shot:selections/tools-auto-select-settings)
 
 ### Nguồn
 
@@ -151,6 +151,6 @@ tẩy của bút sẽ bớt khỏi vùng chọn. Nét bớt không có tác dụ
 
 ## Nút Chọn
 
-**Chọn** bên dưới thiết lập của công cụ vùng chọn trong bảng Công cụ mở
+**Chọn** bên dưới hàng **Chế độ** trong bảng Công cụ mở
 [trình đơn Chọn](/vi/docs/selections/working/). Thiết lập của **Khoảng sắc độ**
 không có nút **Chọn**.

@@ -1,7 +1,7 @@
 ---
 title: "Geri alma ve yineleme"
 description: "Çizimdeki değişiklikleri geri alma ve yineleme ile düzen değişikliklerinin ayrı geçmişi."
-related: ["start/command-search", "customize/workspaces", "input/touch"]
+related: ["start/command-search", "customize/bubbles", "customize/workspaces", "input/touch"]
 ---
 
 Çizimdeki değişiklikleri adım adım geri alabilir, geri aldığınız adımları
@@ -28,6 +28,12 @@ Aşağıdakilerden birini yapın:
 - Tuvale üç parmakla dokunun.
 
 Geri aldıktan sonra yapılan yeni bir değişiklik, yinelenebilecek adımları temizler.
+
+## Geri al ve Yinele baloncuğu
+
+**Geri al** veya **Yinele** düğmesini tuvale sürükleyin; ikisi tek bir
+[baloncukta](/tr/docs/customize/bubbles/) kalır. Geri almak için sol yarısına,
+yinelemek için sağ yarısına dokunun.
 
 ## Adım sayılan değişiklikler
 

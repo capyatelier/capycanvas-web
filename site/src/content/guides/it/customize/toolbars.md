@@ -1,7 +1,7 @@
 ---
 title: "Barre strumenti e barra del titolo"
 description: "Creare e modificare le barre strumenti, e personalizzare la barra del titolo."
-related: ["customize/panels", "customize/workspaces", "customize/zen", "start/command-search"]
+related: ["customize/panels", "customize/workspaces", "customize/zen", "customize/bubbles", "start/command-search"]
 ---
 
 Ogni area di lavoro conserva le proprie barre strumenti e la propria barra del
@@ -15,7 +15,11 @@ sfondo della barra o sulla sua maniglia, oppure tienila premuta con un dito o un
 penna. Fai clic con il pulsante destro su uno strumento, o tienilo premuto, per il
 menu dello strumento.
 
-![Il menu della barra strumenti con le dimensioni dei riquadri.](shot:toolbars/toolbar-menu)
+**Mostra in modalità Zen** nel menu della barra strumenti mantiene la barra
+strumenti sullo schermo in [modalità Zen](/it/docs/customize/zen/) nell'app per
+Linux.
+
+![Il menu della barra strumenti con le dimensioni dei riquadri e la voce Mostra in modalità Zen.](shot:toolbars/toolbar-menu)
 
 ## Mostrare e nascondere le barre strumenti
 
@@ -57,6 +61,7 @@ Ogni barra strumenti deve avere un nome proprio.
 - Per aggiungere strumenti prima di uno strumento, scegli **Inserisci strumenti…** dal menu di quello strumento.
 - Per rimuovere uno strumento, scegli **Rimuovi strumento** dal suo menu.
 - Per spostare uno strumento, tienilo premuto, poi trascinalo all'interno della barra strumenti o in un'altra barra strumenti.
+- Per tenere uno strumento sulla tela, trascinalo fuori dalla barra strumenti per staccarne una [bolla](/it/docs/customize/bubbles/).
 
 Oltre a comandi e strumenti, l'elenco **Aggiungi strumenti** contiene pennelli,
 dimensioni dei pennelli, **Contagocce**, **Cursore dimensioni pennello**,

@@ -1,7 +1,7 @@
 ---
 title: "工具列和標題列"
 description: "建立和編輯工具列，以及自訂標題列。"
-related: ["customize/panels", "customize/workspaces", "customize/zen", "start/command-search"]
+related: ["customize/panels", "customize/workspaces", "customize/zen", "customize/bubbles", "start/command-search"]
 ---
 
 每個工作區都有自己的工具列和標題列。**視窗 > 復原版面配置變更**（**Ctrl+Alt+Z**）可撤回上一次更改。
@@ -10,7 +10,9 @@ related: ["customize/panels", "customize/workspaces", "customize/zen", "start/co
 
 要開啟工具列選單，右鍵按一下工具列的背景或手柄，或用手指或數位筆按住它。右鍵按一下或按住某個工具，可開啟該工具的選單。
 
-![工具列選單及其中的圖塊大小。](shot:toolbars/toolbar-menu)
+工具列選單中的**在專注模式中顯示**可在 Linux 應用程式的[專注模式](/zh-Hant/docs/customize/zen/)下讓該工具列保留在螢幕上。
+
+![工具列選單，包含圖塊大小和在專注模式中顯示一項。](shot:toolbars/toolbar-menu)
 
 ## 顯示和隱藏工具列
 
@@ -45,6 +47,7 @@ related: ["customize/panels", "customize/workspaces", "customize/zen", "start/co
 - 要在某個工具之前新增工具，從該工具的選單中選擇**插入工具…**。
 - 要移除工具，從其選單中選擇**移除工具**。
 - 要移動工具，按住它，然後在工具列內拖動，或拖到另一個工具列中。
+- 要把工具留在畫布上，可將其拖出工具列，取出[氣泡](/zh-Hant/docs/customize/bubbles/)。
 
 除命令和工具外，**新增工具** 列表還包含筆刷、筆刷大小、**色彩選擇器**、**筆刷大小滑桿**、**強度滑桿**、**工具選項** 和 **分隔線**。它還包含每個面板的條目，例如 **圖層面板**，可在抽屜中打開對應面板。
 

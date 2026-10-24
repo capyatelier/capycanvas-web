@@ -4,7 +4,7 @@ description: "Cor e textura do Papel, papéis importados, escala, iluminação e
 related: ["layers/types", "layers/panel", "brushes/dry-media", "files/new"]
 ---
 
-Papel fornece a cor de fundo do desenho e a textura usada pelos pincéis de mídia seca.
+Papel fornece a cor de fundo do desenho e a textura à qual os pincéis com **Intensidade da textura** reagem.
 
 ## Linha de Papel
 
@@ -24,7 +24,9 @@ Selecione a miniatura de textura na linha de Papel ou **Escolher textura** em **
 
 ![Papéis incluídos em Escolher textura.](shot:layers/paper-choose-texture)
 
-A biblioteca inclui superfícies Bristol, de desenho, prensadas a quente, prensadas a frio, ásperas, lixadas, vergê, washi, de tela e de linho. **Importar…** adiciona uma imagem como textura de papel reutilizável. Os papéis importados são incorporados ao desenho.
+A biblioteca é uma grade com rolagem, ordenada dos papéis de aquarela e de desenho até texturas de superfície como concreto, madeira e areia. Os papéis com direção de grão vêm em pares **horizontal** e **vertical**.
+
+**Importar…** adiciona uma imagem, RGB ou em tons de cinza, ao fim da grade como textura de papel reutilizável. Os papéis importados são incorporados ao desenho.
 
 Abra o menu de um papel importado para **Renomear…** ou **Excluir**. Um papel incorporado em um desenho que não está na biblioteca mostra **Adicionar à biblioteca** em seu lugar.
 
@@ -48,7 +50,7 @@ Define a escala física da textura, de 25% a 400%. A tela mostra brevemente o re
 
 ### Visibilidade da textura
 
-Define quanto a iluminação da textura aparece na imagem final. Em 0%, a iluminação da textura está desativada.
+Define quanto a iluminação da textura aparece na imagem final, de 0% a 300%. Em 0%, a iluminação da textura está desativada.
 
 ### Luz
 
@@ -58,12 +60,12 @@ Define a direção da luz sobre a textura do papel.
 
 Define quanto da iluminação do papel permanece visível sobre a pintura acima dele. Em 0%, a pintura opaca em modo Normal cobre a iluminação; em 100%, a iluminação afeta a imagem inteira.
 
-![As mesmas marcas com ajustes diferentes de iluminação do papel.](shot:layers/paper-lighting)
+![Traços na tela ao lado do painel Propriedades de Papel, definido como Linho com Visibilidade da textura 55%, Luz 130° e Visível através da tinta 100%.](shot:layers/paper-lighting)
 
 As exportações do aplicativo nativo incluem a iluminação visível do papel. O editor web atualmente exporta sem iluminação do papel. A breve prévia da textura exibida após alterar **Textura** ou **Escala** não é exportada.
 
 ## Traços e geometria
 
-Novos traços de mídia seca usam o Papel mais próximo na sua camada ou abaixo dela. Ocultar Papel não impede que sua textura afete novos traços. Alterar a textura ou sua escala não altera as marcas já desenhadas.
+Novos traços de pincéis com **Intensidade da textura** usam o Papel mais próximo na sua camada ou abaixo dela. Ocultar Papel não impede que sua textura afete novos traços. Alterar a textura ou sua escala não altera as marcas já desenhadas.
 
 Papel usa a resolução de impressão do desenho para manter sua escala física. **Imagem > Tamanho da imagem…** pode alterar essa resolução. Redimensionar ou girar a imagem reamostra Papel com o desenho; recortar não altera sua escala.

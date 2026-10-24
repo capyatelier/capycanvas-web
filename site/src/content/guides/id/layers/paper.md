@@ -4,7 +4,7 @@ description: "Warna dan tekstur Kertas, kertas impor, skala, pencahayaan, dan ba
 related: ["layers/types", "layers/panel", "brushes/dry-media", "files/new"]
 ---
 
-Kertas menyediakan warna latar gambar dan tekstur yang digunakan kuas media kering.
+Kertas menyediakan warna latar gambar dan tekstur yang direspons kuas dengan **Kekuatan tekstur**.
 
 ## Baris Kertas
 
@@ -24,7 +24,9 @@ Pilih gambar mini tekstur di baris Kertas, atau pilih **Pilih Tekstur** di **Pro
 
 ![Kertas bawaan di Pilih Tekstur.](shot:layers/paper-choose-texture)
 
-Pustaka mencakup permukaan Bristol, gambar, hot press, cold press, kasar, amplas, bergaris, washi, kanvas, dan linen. **Impor…** menambahkan gambar sebagai tekstur kertas yang dapat digunakan kembali. Kertas impor disematkan dalam gambar.
+Pustaka berupa satu kisi yang dapat digulir, diurutkan dari kertas cat air dan kertas gambar hingga tekstur permukaan seperti beton, kayu, dan pasir. Kertas dengan arah serat hadir berpasangan **mendatar** dan **tegak**.
+
+**Impor…** menambahkan gambar, RGB atau skala abu-abu, ke akhir kisi sebagai tekstur kertas yang dapat digunakan kembali. Kertas impor disematkan dalam gambar.
 
 Buka menu kertas impor untuk **Ubah Nama…** atau **Hapus**. Kertas yang disematkan dalam gambar tetapi tidak ada di pustaka memiliki **Tambahkan ke Pustaka** sebagai gantinya.
 
@@ -48,7 +50,7 @@ Mengatur skala fisik tekstur, dari 25% hingga 400%. Kanvas menampilkan relief te
 
 ### Visibilitas tekstur
 
-Mengatur seberapa kuat pencahayaan tekstur terlihat pada gambar akhir. Pada 0%, pencahayaan tekstur mati.
+Mengatur seberapa kuat pencahayaan tekstur terlihat pada gambar akhir, dari 0% hingga 300%. Pada 0%, pencahayaan tekstur mati.
 
 ### Cahaya
 
@@ -58,12 +60,12 @@ Mengatur arah cahaya pada tekstur kertas.
 
 Mengatur seberapa banyak pencahayaan kertas tetap terlihat di atas cat. Pada 0%, cat Normal yang opak menutupi pencahayaan; pada 100%, pencahayaan memengaruhi seluruh gambar.
 
-![Goresan yang sama dengan pengaturan pencahayaan kertas berbeda.](shot:layers/paper-lighting)
+![Goresan di kanvas di samping panel Properti untuk Kertas, disetel ke Linen dengan Visibilitas tekstur 55%, Cahaya 130°, dan Terlihat menembus cat 100%.](shot:layers/paper-lighting)
 
 Ekspor aplikasi native menyertakan pencahayaan kertas yang terlihat. Editor web saat ini mengekspor tanpa pencahayaan kertas. Pratinjau tekstur singkat setelah mengubah **Tekstur** atau **Skala** tidak diekspor.
 
 ## Goresan dan geometri
 
-Goresan media kering baru menggunakan Kertas terdekat pada atau di bawah lapisannya. Menyembunyikan Kertas tidak menghentikan teksturnya memengaruhi goresan baru. Mengubah tekstur atau skalanya tidak mengubah goresan yang sudah dibuat.
+Goresan baru dari kuas dengan **Kekuatan tekstur** menggunakan Kertas terdekat pada atau di bawah lapisannya. Menyembunyikan Kertas tidak menghentikan teksturnya memengaruhi goresan baru. Mengubah tekstur atau skalanya tidak mengubah goresan yang sudah dibuat.
 
 Kertas menggunakan resolusi cetak gambar untuk mempertahankan skala fisiknya. **Gambar > Ukuran Gambar…** dapat mengubah resolusi tersebut. Mengubah ukuran atau memutar gambar mengambil sampel ulang Kertas bersama gambar; pemotongan tidak mengubah skalanya.

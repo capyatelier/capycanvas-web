@@ -41,7 +41,7 @@ Le groupe reprend l’opacité et l’écrêtage du calque d’origine. Le calqu
 reste juste en dessous du groupe, masqué.
 
 Le calque doit être visible et en mode **Normal**, et le dessin doit utiliser
-**Édition > Fusion > Fusion perceptuelle** (voir
+**Image > Fusion > Fusion perceptuelle** (voir
 [Espace colorimétrique, profondeur de couleur et fusion](/fr/docs/color-management/color-spaces/)).
 Si le dessin change pendant que le panneau est ouvert, le panneau se ferme.
 

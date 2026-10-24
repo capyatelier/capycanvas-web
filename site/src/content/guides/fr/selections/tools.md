@@ -114,7 +114,7 @@ Cliquez sur une couleur de la toile. **Sélection automatique** prend la zone
 contiguë autour de ce point, et **Sélection par couleur** prend les pixels
 correspondants dans toute l’image.
 
-![Le panneau Outil pour Sélection automatique, avec Mode, Anticrénelage, Source, Tolérance, les réglages Bords et Rayon du contour progressif.](shot:selections/tools-auto-select-settings)
+![Le panneau Outil pour Sélection automatique, avec Mode, Sélection, Tolérance, les réglages Bords, Rayon du contour progressif, Anticrénelage et Source.](shot:selections/tools-auto-select-settings)
 
 ### Source
 
@@ -160,6 +160,5 @@ aucun effet tant qu’il n’y a pas de sélection.
 
 ## Le bouton Sélection
 
-**Sélection**, sous les réglages d’un outil de sélection dans le panneau Outil,
-ouvre le [menu Sélection](/fr/docs/selections/working/). Les réglages de
+**Sélection**, sous la ligne **Mode** du panneau Outil, ouvre le [menu Sélection](/fr/docs/selections/working/). Les réglages de
 **Plage tonale** n’ont pas de bouton **Sélection**.

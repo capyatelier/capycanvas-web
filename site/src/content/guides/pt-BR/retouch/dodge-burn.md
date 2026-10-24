@@ -43,7 +43,7 @@ O grupo recebe a opacidade e o recorte da camada original. A camada original
 fica logo abaixo do grupo, oculta.
 
 A camada precisa estar visível e em **Normal**, e o desenho precisa usar
-**Editar > Mesclagem > Mesclagem perceptual** (consulte
+**Imagem > Mesclagem > Mesclagem perceptual** (consulte
 [Espaço de cores, profundidade de bits e mesclagem](/pt-BR/docs/color-management/color-spaces/)).
 Se o desenho mudar enquanto o painel estiver aberto, o painel se fecha.
 

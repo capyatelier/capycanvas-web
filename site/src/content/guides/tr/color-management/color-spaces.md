@@ -1,11 +1,11 @@
 ---
 title: "Renk uzayı, bit derinliği ve karıştırma"
-description: "Bir çizimin renk uzayını, bit derinliğini ve Karıştırma ayarını seçme ve bunları daha sonra Düzenle menüsünden değiştirme."
+description: "Bir çizimin renk uzayını, bit derinliğini ve Karıştırma ayarını seçme ve bunları daha sonra Görüntü menüsünden değiştirme."
 related: ["files/new", "color-management/proof", "color-management/hdr", "files/export", "preferences"]
 ---
 
 Bir çizimin renk uzayını, bit derinliğini ve Karıştırma ayarını çizimi
-oluştururken seçebilir, daha sonra **Düzenle** menüsünden değiştirebilirsiniz.
+oluştururken seçebilir, daha sonra **Görüntü** menüsünden değiştirebilirsiniz.
 
 ## Renk uzayları
 
@@ -25,34 +25,23 @@ Bir çizimin bit derinliği **8 bit SDR**, **16 bit SDR**, **16 bit kayan noktal
 
 ## Yeni çizim için seçme
 
-**Dosya > Yeni…** (**Ctrl+N**) komutunu seçin ve **Renk uzayı**, **Bit derinliği** ile **Karıştırma** ayarlarını yapın ya da bir **Hazır ayar** seçin:
-
-| Hazır ayar | Renk uzayı | Bit derinliği | Karıştırma |
-| --- | --- | --- | --- |
-| **Standart çizim** | sRGB | 8 bit SDR | Algısal |
-| **Geniş renk** | Display P3 | 8 bit SDR | Algısal |
-| **Fotoğraf düzenleme** | ProPhoto RGB | 16 bit SDR | Algısal |
-| **HDR çizimi** | sRGB | 16 bit kayan noktalı HDR | Doğrusal ışık |
+**Dosya > Yeni…** (**Ctrl+N**) komutunu seçin ve **Renk** altında **Renk uzayı**, **Bit derinliği** ile **Karıştırma** ayarlarını yapın. **Hazır ayarlar** içindeki bir hazır ayar bunları yaprak ve Kâğıtla birlikte ayarlar. İletişim kutusu, oluşturduğunuz son çizimin seçimlerini korur.
 
 Kayan noktalı derinlikte **Karıştırma**, Doğrusal ışık olarak sabittir.
-Karıştırma dâhil seçimlerinizi yeni çizimlerin varsayılanı yapmak için **Bu ayarları yeni çizimler için kullan** seçeneğini açın.
 
-![Yeni çizim iletişim kutusu: Renk uzayı Display P3, Bit derinliği, Karıştırma ve özet satırı.](shot:color-management/new-dialog-color)
+![Yeni çizim iletişim kutusu: Renk uzayı Display P3, Bit derinliği ve Karıştırma Renk altında.](shot:color-management/new-dialog-color)
 
 ## Tercihlerdeki varsayılanlar
 
 **Düzenle > Tercihler** komutunu seçin ve **Renk** sayfasını açın:
 
-- **Yeni çizimler** altında gelecekteki çizimlerin **Renk uzayı**, **Bit derinliği** ve **Arka plan** ayarlarını yapın. Açık çizimler değişmez.
 - **Fotoğraf açma** altında **Düzenleme hassasiyeti** (**Kaynak derinliği** veya **16 bit**) ve **Profilsiz RGB ve gri tonlama** (**sRGB varsay** veya **Sor**) ayarlarını yapın. **Sor** seçiliyken profilsiz bir fotoğraf açmak **Görüntü yorumlamasını seçin** penceresini gösterir. Profilli fotoğraflar gömülü profillerini korur.
 - [Renk profili kitaplığını](/tr/docs/color-management/proof/) açmak için **Profilleri yönet…** düğmesini seçin.
-
-Tercihler'de Karıştırma ayarı yoktur.
 
 ## Profil ata
 
 Çizimin RGB sayılarını koruyup başka bir çalışma renk uzayında yorumlamak için
-**Düzenle > Profil ata…** komutunu seçin. Renk uzayını **Renk uzayı** altında
+**Görüntü > Renk Yönetimi > Profil ata…** komutunu seçin. Renk uzayını **Renk uzayı** altında
 seçin; burada Adobe RGB (1998), **Adobe RGB** olarak listelenir. Nesne
 katmanları [özgün fotoğraflarının](/tr/docs/layers/types/) kaynak profilini
 korur.
@@ -60,7 +49,7 @@ korur.
 ## Renk uzayını dönüştür
 
 Renklerin başka bir çalışma renk uzayında, o uzayın gamı içinde görünümlerini
-korumaları için RGB sayılarını değiştirmek üzere **Düzenle > Renk uzayını dönüştür…** komutunu seçin.
+korumaları için RGB sayılarını değiştirmek üzere **Görüntü > Renk Yönetimi > Renk uzayını dönüştür…** komutunu seçin.
 
 **Düzleştirilmiş kopyayı kaydet** seçiliyken **Uygula**, **Kopyayı kaydet…**
 olur. Kopyanın tek bir katmanı vardır; boyutu ve bit derinliği aynıdır. Dosya
@@ -84,7 +73,7 @@ yeni bir `.capy` dosyası olarak kaydeder ve açık çizimi değiştirmez.
 
 ## Bit derinliğini değiştir
 
-Saklanan hassasiyeti değiştirmek için **Düzenle > Bit derinliğini değiştir…**
+Saklanan hassasiyeti değiştirmek için **Görüntü > Renk Yönetimi > Bit derinliğini değiştir…**
 komutunu seçin. Renk uzayı değişmez.
 
 Kayan noktalı bir derinliğe geçmek çizimi HDR yapar ve aynı adımda Karıştırma'yı
@@ -124,10 +113,10 @@ iletişim kutuları değişikliği başka bir giriş beklemeden uygular ve yaln�
 Katmanları çizimin kodlanmış değerleri üzerinde veya doğrusal ışıkta
 birleştirebilirsiniz. Aşağıdakilerden birini yapın:
 
-- **Düzenle > Karıştırma > Algısal karıştırma** veya **Düzenle > Karıştırma > Doğrusal ışıkta karıştırma** komutunu seçin.
+- **Görüntü > Karıştırma > Algısal karıştırma** veya **Görüntü > Karıştırma > Doğrusal ışıkta karıştırma** komutunu seçin.
 - Yeni çizim iletişim kutusunda **Karıştırma** ayarını **Algısal** veya **Doğrusal ışık** yapın.
 
-![Karıştırma alt menüsü açık ve Algısal karıştırma işaretli Düzenle menüsü.](shot:color-management/edit-blending-menu)
+![Algısal karıştırma işaretli Karıştırma alt menüsü.](shot:color-management/edit-blending-menu)
 
 Boyanmış pikseller değerlerini korur. Karıştırma şunları değiştirir:
 

@@ -1,7 +1,7 @@
 ---
 title: "Panel Warna"
 description: "Memilih warna cat dengan roda dan contoh warna di panel Warna."
-related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-management/hdr"]
+related: ["color/edit-color", "color/palettes", "color/eyedropper", "customize/bubbles", "color-management/hdr"]
 ---
 
 Anda dapat memilih warna cat di panel **Warna**. Semua ruang kerja memakai warna cat
@@ -17,6 +17,8 @@ Lakukan salah satu langkah berikut:
 - Pilih **Panel Warna** di pencarian perintah.
 - Di Lukis, pilih tab **Warna** di kolom kiri.
 - Pilih **Warna kuas** di ujung bilah alat Alat, atau di ujung kanan bilah judul di Sketsa. Sebuah laci terbuka dengan panel Warna dan Palet.
+
+Seret **Warna kuas** ke kanvas untuk menyimpan roda di sana sebagai [cincin warna](/id/docs/customize/bubbles/).
 
 ## Roda warna
 

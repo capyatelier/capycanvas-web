@@ -6,11 +6,11 @@ related: ["customize/workspaces", "customize/panels", "customize/toolbars", "cus
 
 Ein Arbeitsbereich ist eine gespeicherte Anordnung von Titelleiste, Werkzeugleisten
 und Bedienfeldern. {appName} enthält drei: **Skizze**, **Malen** und **Foto**. Beim
-ersten Start öffnet sich der Arbeitsbereich Malen, danach der zuletzt verwendete Arbeitsbereich.
+ersten Start öffnet sich der Arbeitsbereich Skizze, danach der zuletzt verwendete Arbeitsbereich.
 
 ## Skizze
 
-![Der Arbeitsbereich Skizze mit dem Illustrationsbeispiel auf der Leinwand.](shot:start/workspaces-sketch "1 Titelleiste, links · 2 Arbeitsbereichswechsler · 3 Titelleiste, rechts · 4 Pinselsteuerung")
+![Der Arbeitsbereich Skizze mit dem Illustrationsbeispiel auf der Leinwand.](shot:start/workspaces-sketch "1 Titelleiste, links · 2 Arbeitsbereichswechsler · 3 Titelleiste, rechts · 4 Pinselsteuerung · 5 Werkzeugblasen")
 
 Der Arbeitsbereich Skizze hat keine angedockten Bedienfelder: Die Werkzeug- und Bedienfeldschaltflächen in der Titelleiste öffnen Schubladen.
 
@@ -18,6 +18,7 @@ Der Arbeitsbereich Skizze hat keine angedockten Bedienfelder: Die Werkzeug- und 
 2. Der Arbeitsbereichsumschalter.
 3. **Pinsel**, **Formen**, **Radierer**, **Bedienfeld Ebenen** und **Pinselfarbe**. Der Webeditor ergänzt **Vollbild**.
 4. **Schieberegler für Pinselgröße**, **Farbpipette**, **Stärkeregler**, **Rückgängig** und **Wiederholen**.
+5. Aus der Titelleiste herausgezogene Werkzeugblasen, hier eine Blase **Pinsel** mit ihrem Halo für die Einstellungen und ein kleiner Farbring (siehe [Werkzeugblasen](/de/docs/customize/bubbles/)).
 
 | Schaltfläche | Bedienfelder in der Schublade |
 | --- | --- |
@@ -27,7 +28,7 @@ Der Arbeitsbereich Skizze hat keine angedockten Bedienfelder: Die Werkzeug- und 
 | **Transformieren** | **Werkzeugsatz**, **Werkzeug** |
 | **Bedienfeld Filter** | **Filterart**, **Filter**, **Eigenschaften** |
 | **Bedienfeld Ebenen** | **Ebenen** |
-| **Pinselfarbe** | **Farbe** |
+| **Pinselfarbe** | **Farbe**, **Paletten** |
 
 **Hauptmenü** öffnet die Menüs (unter macOS stehen sie stattdessen in der Menüleiste
 des Systems). **Auswahl** wählt das zuletzt verwendete Auswahlwerkzeug.
@@ -43,7 +44,7 @@ Der Arbeitsbereich Malen dockt Bedienfelder in Spalten auf beiden Seiten der Lei
 
 1. **Capy (Zen-Modus)** und die Menüs, in der Mitte der Titel der Zeichnung, dann der Arbeitsbereichswechsler und **Einstellungen**. Im Web-Editor kommt **Vollbild** hinzu.
 2. **Neu…**, **Öffnen…**, **Speichern**, **Rückgängig**, **Wiederholen**, **Gesamte Ebene leeren**, **Auswahl füllen**, **Transformieren** und **Ansicht horizontal spiegeln**.
-3. **Feder**, **Bleistift**, **Malpinsel**, **Radierer**, **Airbrush**, **Dekoration**, **Mischen**, **Verflüssigen**, die Auswahlwerkzeuge, **Füllung**, **Farbverlauf**, **Vorgang**, **Form**, **Lineal**, **Hand**, **Farbpipette** und **Pinselfarbe**.
+3. **Feder**, **Bleistift**, **Malpinsel**, **Radierer**, **Airbrush**, **Dekoration**, **Mischen**, **Verflüssigen**, die Auswahlwerkzeuge, **Füllung**, **Farbverlauf**, **Vorgang**, **Form**, **Lineal**, **Hand**, **Zoom**, **Farbpipette** und **Pinselfarbe**.
 4. Registerkarten für **Werkzeugsatz** und **Diagnose**, für **Werkzeug** und **Pinselgröße** sowie für **Farbe** und **Paletten**.
 5. Symbole für **Navigator** und **Softproof**, für **Eigenschaften** und **Filter** sowie für **Ebenen**.
 6. Die Anzeige für Zoom und Drehung, beschrieben unter [Leinwandansicht](/de/docs/start/canvas/).
@@ -65,7 +66,7 @@ Die Titelleiste entspricht der des Arbeitsbereichs Malen.
 
 1. **Neu…**, **Öffnen…**, **Speichern**, **Rückgängig**, **Wiederholen** und **Transformieren**.
 2. **Werkzeugoptionen**, die Einstellungen des aktuellen Werkzeugs.
-3. **Vorgang**, **Zuschneiden**, die Auswahlwerkzeuge, **Pinsel**, **Radierer**, **Klonstempel**, **Bereichsreparaturpinsel**, **Mischen**, **Verflüssigen**, **Farbverlauf**, **Hand**, **Farbpipette** und **Pinselfarbe**.
+3. **Vorgang**, **Zuschneiden**, die Auswahlwerkzeuge, **Pinsel**, **Radierer**, **Klonstempel**, **Bereichsreparaturpinsel**, **Mischen**, **Verflüssigen**, **Farbverlauf**, **Hand**, **Zoom**, **Farbpipette** und **Pinselfarbe**.
 4. **Histogramm** und **Wellenform**, **Eigenschaften** und **Filter** sowie **Ebenen**.
 5. Symbole für **Werkzeugsatz** und **Diagnose**, für **Werkzeug** und **Pinselgröße** sowie für **Navigator** und **Softproof**. Jedes Symbol öffnet nur seine eigene Gruppe als Schublade.
 

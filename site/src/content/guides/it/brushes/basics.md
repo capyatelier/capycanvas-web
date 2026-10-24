@@ -1,7 +1,7 @@
 ---
 title: "Dimensioni, intensità e opacità"
 description: "Dimensioni, Intensità e Opacità del pennello, e i pannelli, le barre e i tasti con cui modificarle."
-related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools"]
+related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools", "customize/bubbles"]
 ---
 
 I controlli del pennello dipendono dallo strumento e dal predefinito. Le modifiche vengono salvate con il predefinito.
@@ -57,6 +57,8 @@ L'anteprima dell'intensità mostra come il pennello corrente risponde a quel val
 ![Il cursore Intensità con l'anteprima del contatto aperta.](shot:brushes/strength-preview)
 
 Seleziona **Aggiungi questo valore ai segnalibri** in un'anteprima per aggiungere un segno alla guida, oppure **Rimuovi segnalibro** per rimuoverlo. Ogni predefinito conserva i propri segnalibri.
+
+Trascina **Contagocce** da quella barra sulla tela per ottenere una [bolla](/it/docs/customize/bubbles/) con gli archi Dimensioni e Intensità.
 
 ## Tasti delle dimensioni
 

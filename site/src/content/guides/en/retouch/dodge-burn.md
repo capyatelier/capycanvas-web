@@ -40,7 +40,7 @@ The group takes the original layer's opacity and clipping. The original layer
 stays directly below the group, hidden.
 
 The layer has to be visible and set to **Normal**, and the drawing has to use
-**Edit > Blending > Perceptual Blending** (see
+**Image > Blending > Perceptual Blending** (see
 [Color space, bit depth and blending](/docs/color-management/color-spaces/)).
 If the drawing changes while the panel is open, the panel closes.
 

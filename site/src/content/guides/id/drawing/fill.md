@@ -1,7 +1,7 @@
 ---
 title: "Alat isi"
 description: "Mengisi area, bentuk bebas, dan wilayah tertutup pada lapisan dengan warna saat ini."
-related: ["drawing/gradient", "layers/settings", "selections/working", "drawing/brush-tools"]
+related: ["drawing/gradient", "layers/vector", "layers/settings", "selections/working", "drawing/brush-tools"]
 ---
 
 Anda dapat mengisi bagian lapisan yang dipilih dengan warna saat ini menggunakan
@@ -69,6 +69,10 @@ Lingkari dan Isi kembali ke **Lapisan acuan** setiap kali Anda membuka {appName}
 
 Jika Isi memakai **Lapisan acuan** dan tidak ada lapisan yang ditandai, Isi tidak
 melukis apa pun dan sebuah pemberitahuan menawarkan untuk menandai lapisan di bawahnya.
+
+## Lapisan vektor
+
+Pada lapisan vektor, **Isi** mewarnai jalur tertutup yang Anda klik. Klik di tempat lain, atau sumber **Lapisan acuan**, menambahkan lapisan cat di bawah lapisan vektor dan mengisi di sana. **Isi laso** menambahkan jalur terisi, dan **Gradasi** serta **Lingkari dan Isi** menawarkan **Lapisan Cat Baru di Bawah**. Lihat [Lapisan vektor](/id/docs/layers/vector/).
 
 ## Pengaturan isi
 

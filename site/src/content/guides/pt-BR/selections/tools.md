@@ -113,7 +113,7 @@ Clique em uma cor na tela. **Seleção automática** pega a área contínua ao r
 desse ponto, e **Selecionar por cor** pega os pixels correspondentes em
 qualquer parte da imagem.
 
-![O painel Ferramenta de Seleção automática, com Modo, Suavização de serrilhado, Origem, Tolerância, as configurações de Bordas e Raio de difusão.](shot:selections/tools-auto-select-settings)
+![O painel Ferramenta de Seleção automática, com Modo, Selecionar, Tolerância, as configurações de Bordas, Raio de difusão, Suavização de serrilhado e Origem.](shot:selections/tools-auto-select-settings)
 
 ### Origem
 
@@ -159,6 +159,5 @@ subtrai. Um traço que subtrai não faz nada enquanto não há seleção.
 
 ## O botão Selecionar
 
-**Selecionar**, abaixo das configurações de uma ferramenta de seleção no painel
-Ferramenta, abre o [menu Selecionar](/pt-BR/docs/selections/working/). As
+**Selecionar**, abaixo da linha **Modo** do painel Ferramenta, abre o [menu Selecionar](/pt-BR/docs/selections/working/). As
 configurações de **Intervalo tonal** não têm o botão **Selecionar**.

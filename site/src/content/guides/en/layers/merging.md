@@ -1,11 +1,12 @@
 ---
 title: "Merging layers"
-description: "Combining layers into one paint layer with the merge commands."
-related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types"]
+description: "Combining layers into one layer with the merge commands, and what happens to vector layers."
+related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types", "layers/vector"]
 ---
 
-You can merge layers into one paint layer. The merge commands are near the end
-of the **Layer** menu and of each layer's menu.
+You can merge layers into one paint layer, or two vector layers into one vector
+layer. The merge commands are near the end of the **Layer** menu and of each
+layer's menu.
 
 ![The Layer menu with Ribbon active, showing Merge Clipped Layers, Merge Visible, Stamp Visible and Flatten Image.](shot:layers/merging-menu)
 
@@ -28,6 +29,19 @@ reference if either layer was.
 
 Both layers must be visible, unlocked and set to Normal. The layer below can't
 be a filter, and it can't be clipped unless the active layer is clipped too.
+
+## Merging vector layers
+
+**Merge Down** keeps the paths when a [vector layer](/docs/layers/vector/) merges
+into the vector layer below, and puts them in front. Both
+layers need 100% opacity, no mask, no clipping and no attached filters.
+
+Every other merge that includes a vector layer turns its paths into pixels. A
+notice names the layers, for example "Merging turns the paths in “Line art” into
+pixels.", and the merge runs when you select its button. **Flatten Image** adds
+the names to its hidden layers notice.
+
+![The notice that reads "Merging turns the paths in “Line art” into pixels.", with a Merge Down button.](shot:vector/merge-notice)
 
 ## Merge Clipped Layers
 

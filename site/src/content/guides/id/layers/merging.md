@@ -1,11 +1,12 @@
 ---
 title: "Menggabungkan lapisan"
-description: "Menggabungkan beberapa lapisan menjadi satu lapisan lukis dengan perintah gabung."
-related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types"]
+description: "Menggabungkan beberapa lapisan menjadi satu lapisan dengan perintah gabung, dan apa yang terjadi pada lapisan vektor."
+related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types", "layers/vector"]
 ---
 
-Anda dapat menggabungkan lapisan menjadi satu lapisan lukis. Perintah gabung ada di
-dekat akhir menu **Lapisan** dan menu setiap lapisan.
+Anda dapat menggabungkan lapisan menjadi satu lapisan lukis, atau dua lapisan vektor
+menjadi satu lapisan vektor. Perintah gabung ada di dekat akhir menu **Lapisan** dan
+menu setiap lapisan.
 
 ![Menu Lapisan dengan Ribbon aktif, menampilkan Gabungkan Lapisan Terkliping, Gabungkan yang Terlihat, Cap yang Terlihat, dan Ratakan Gambar.](shot:layers/merging-menu)
 
@@ -27,6 +28,20 @@ menjadi acuan jika salah satu lapisan asalnya adalah acuan.
 Kedua lapisan harus terlihat, tidak terkunci, dan disetel ke Normal. Lapisan di
 bawah tidak boleh berupa filter, dan tidak boleh diklip kecuali lapisan aktif juga
 diklip.
+
+## Menggabungkan lapisan vektor
+
+**Gabungkan ke Bawah** mempertahankan jalur saat [lapisan vektor](/id/docs/layers/vector/)
+digabung ke lapisan vektor di bawahnya, dan menempatkannya di depan. Kedua lapisan
+harus beropasitas 100%, tanpa mask, tanpa kliping, dan tanpa filter terlampir.
+
+Setiap penggabungan lain yang menyertakan lapisan vektor mengubah jalurnya menjadi
+piksel. Sebuah pemberitahuan menyebutkan lapisan itu, misalnya "Menggabungkan mengubah
+jalur di “Line art” menjadi piksel.", dan penggabungan berjalan saat Anda memilih
+tombolnya. **Ratakan Gambar** menambahkan nama-nama itu ke pemberitahuan lapisan
+tersembunyinya.
+
+![Pemberitahuan bertuliskan "Menggabungkan mengubah jalur di “Line art” menjadi piksel.", dengan tombol Gabungkan ke Bawah.](shot:vector/merge-notice)
 
 ## Gabungkan Lapisan Terkliping
 

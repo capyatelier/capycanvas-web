@@ -1,7 +1,7 @@
 ---
 title: "Taille, intensité et opacité"
 description: "Taille, Intensité et Opacité du pinceau, et les panneaux, barres et touches où les modifier."
-related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools"]
+related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools", "customize/bubbles"]
 ---
 
 Les commandes du pinceau dépendent de l’outil et du préréglage. Les modifications sont enregistrées avec le préréglage.
@@ -57,6 +57,8 @@ L’aperçu d’Intensité montre la réaction du pinceau actif à cette valeur.
 ![Le curseur Intensité avec son aperçu du contact ouvert.](shot:brushes/strength-preview)
 
 Sélectionnez **Marquer cette valeur comme favorite** dans un aperçu pour ajouter une marque à la piste, ou **Retirer le favori** pour la retirer. Chaque préréglage conserve ses propres favoris.
+
+Faites glisser **Pipette** depuis cette barre sur la toile pour sortir une [bulle](/fr/docs/customize/bubbles/) avec des arcs de taille et d’intensité.
 
 ## Touches de taille
 

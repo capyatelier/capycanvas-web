@@ -19,16 +19,17 @@ Depois da primeira visita, o editor web abre também sem conexão com a internet
 
 ![O painel Camadas de um desenho novo, com Tinta atual acima de Papel.](shot:files/new-layers)
 
-Na primeira vez que você abre {appName}, ele mostra o espaço de trabalho [Pintura](/pt-BR/docs/start/workspaces/) com um desenho A4 em branco na orientação paisagem a 300 ppi. **Tinta atual**, uma camada de pintura vazia, está selecionada acima de **Papel**. A ferramenta **Caneta** está ativa com o pincel **Caneta G** e uma cor quase preta.
+Na primeira vez que você abre {appName}, ele mostra o espaço de trabalho [Esboço](/pt-BR/docs/start/workspaces/) com um desenho em branco na orientação paisagem, em 4:3 e tão alto quanto a sua tela. **Tinta atual**, uma camada de pintura vazia, está selecionada acima de **Papel**, que tem a textura **Grão fino**. A ferramenta **Lápis** está ativa com uma cor cinza-escura.
 
 Nas vezes seguintes, o {appName} abre com a última área de trabalho usada e os
 desenhos que estavam abertos.
 
 ## Desenhar
 
-Arraste na tela com uma caneta ou um mouse. Para usar outra ferramenta, selecione-a
-na barra de ferramentas Ferramentas, na borda esquerda da janela. Em Esboço,
-selecione **Pincel** na barra de título.
+Arraste na tela com uma caneta ou um mouse. Para usar outra ferramenta, selecione
+**Pincel** na barra de título em Esboço, ou a ferramenta na barra de ferramentas
+Ferramentas, na borda esquerda, em Pintura. Arraste uma ferramenta para a tela para
+mantê-la ali como uma [bolha](/pt-BR/docs/customize/bubbles/).
 
 > **Observação:** Os dedos nunca desenham. Com dois dedos na tela, você desloca, amplia e gira a visualização.
 
@@ -48,7 +49,7 @@ Escolha-o no menu ou na [busca de comandos](/pt-BR/docs/start/command-search/).
 
 ## Começar outro desenho
 
-Escolha **Arquivo > Novo…** e selecione **Criar** no diálogo [Novo desenho](/pt-BR/docs/files/new/). Escolha o tamanho, a resolução e os ajustes de Papel e cor, e selecione **Criar**. O novo desenho abre em sua própria aba ao lado do primeiro.
+Escolha **Arquivo > Novo…** para abrir o diálogo [Novo desenho](/pt-BR/docs/files/new/). O novo desenho abre em sua própria aba ao lado do primeiro.
 
 ## Salvar o desenho
 

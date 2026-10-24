@@ -19,7 +19,8 @@ Thực hiện một trong các cách sau:
 - Nhấn **S**. Nhấn lại để chuyển sang **Cọ phục hồi**, rồi **Cọ phục hồi điểm**.
 - Trong Ảnh, chọn **Dấu sao chép** hoặc **Cọ phục hồi điểm / Cọ phục hồi** trên Thanh công cụ vẽ.
 - Trong Vẽ, chọn **Hòa màu / Dấu sao chép** trên Thanh công cụ vẽ. Nhấp chuột phải hoặc giữ nút để chọn **Dấu sao chép**.
-- Trong Phác thảo, chọn **Tạo hình** trên thanh tiêu đề, chọn lại lần nữa để mở ngăn, rồi chọn **Sao chép**, **Phục hồi** hoặc **Phục hồi điểm**.
+- Trong Phác thảo, chọn **Tạo hình** trên thanh tiêu đề, chọn lại lần nữa để mở ngăn, chọn nhóm **Sửa ảnh**, rồi chọn một công cụ.
+- Khi một công cụ chỉnh sửa ảnh đang hoạt động, chọn một công cụ trong nhóm **Sửa ảnh** ở **Bộ công cụ**.
 - Gõ tên công cụ vào [tìm lệnh](/vi/docs/start/command-search/).
 
 **Cọ phục hồi** và **Cọ phục hồi điểm** không có nút trong Vẽ.

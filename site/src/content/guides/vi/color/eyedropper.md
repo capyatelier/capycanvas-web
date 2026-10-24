@@ -65,7 +65,7 @@ Chọn **Kiểu** trên thanh Tùy chọn công cụ trong lúc lấy màu (ở 
 
 ![Kính lúp Bộ chọn màu trên một nét vẽ màu đỏ, với màu lấy mẫu và màu hiện tại trên vòng.](shot:color/eyedropper-loupe)
 
-![Kính lúp Bộ chọn màu phía trên ngón tay với điểm lấy mẫu dưới điểm tiếp xúc.](shot:color/eyedropper-touch)
+![Kính lúp Bộ chọn màu ở mép một nét vẽ màu đỏ, với dấu thập ở giữa và một vòng hai màu.](shot:color/eyedropper-touch)
 
 Thao tác chạm luôn dùng kính lúp. Chọn **Bộ chọn màu** trong Phác thảo sẽ đặt
 **Kiểu** thành **Bộ chọn màu**. Một dấu nhỏ hình các lớp xuất hiện khi **Nguồn** là

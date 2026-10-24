@@ -1,25 +1,22 @@
 ---
 title: "Ferramentas de pincel"
 description: "As ferramentas de pincel, suas predefinições incluídas e onde escolhê-las."
-related: ["brushes/basics", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
+related: ["brushes/basics", "layers/vector", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
 ---
 
-Você pode pintar com as ferramentas **Caneta**, **Lápis**, **Carvão vegetal**, **Giz**, **Pastel**, **Giz de cera**, **Pincel de pintura**, **Aerógrafo** e **Decoração**, e apagar com **Borracha**. Cada ferramenta contém um ou mais grupos de predefinições de pincel incluídas.
+Você pode pintar com as ferramentas **Caneta**, **Lápis**, **Pincel de pintura**, **Aerógrafo** e **Decoração**, e apagar com **Borracha**. Cada ferramenta contém um ou mais grupos de predefinições de pincel incluídas.
 
 ## Ferramentas e predefinições
 
 | Ferramenta | Grupos | Predefinições |
 | --- | --- | --- |
-| **Caneta** | **Caneta** | **Caneta G**, **Caneta G áspera**, **Caneta de caligrafia**, **Caneta antiga**, **Caneta realista**, **Tinta molhada**, **Tinta manchada**, **Tinta realista com pincel** |
+| **Caneta** | **Caneta** | **Caneta G**, **Monolinha**, **Caneta G áspera**, **Tinta manchada**, **Caneta de caligrafia**, **Caneta antiga**, **Caneta realista**, **Tinta molhada**, **Tinta realista com pincel** |
 | | **Marcador** | **Marcador** |
 | **Lápis** | **Lápis** | **Lápis**, **Lápis de ponta fina**, **Lápis de sombreado** |
-| **Carvão vegetal** | **Carvão vegetal** | **Carvão vegetal** |
-| **Giz** | **Giz** | **Giz** |
-| **Pastel** | **Pastel** | **Bloco de pastel** |
-| **Giz de cera** | **Giz de cera** | **Giz de cera** |
+| | **Pastel** | **Carvão vegetal**, **Giz de cera**, **Giz**, **Bloco de pastel** |
 | **Pincel de pintura** | **Pintura** | **Pincel**, **Pincel de cerdas**, **Pincel chato texturizado**, **Esfregaço seco**, **Veladura transparente**, **Guache opaco**, **Veladura multiplicada** |
 | | **Aquarela** | **Aguada de aquarela**, **Aquarela molhada** |
-| | **Tinta a óleo** | **Óleo carregado**, **Espátula**, **Pincel redondo molhado** |
+| | **Tinta a óleo** | **Óleo carregado**, **Espátula**, **Pincel redondo molhado**, **Pincel de mistura** |
 | **Aerógrafo** | **Aerógrafo** | **Aerógrafo** |
 | | **Spray** | **Spray** |
 | **Borracha** | **Borracha** | **Borracha** |
@@ -31,13 +28,14 @@ predefinições não têm cor própria: todo pincel pinta com a cor atual do
 
 ## Comportamento das predefinições
 
-Estes comportamentos fazem parte das predefinições e não têm configuração.
+Estes comportamentos fazem parte das predefinições e não têm configuração. As
+predefinições de mídia seca são tratadas em [Mídias secas](/pt-BR/docs/brushes/dry-media/).
 
 | Predefinição | Comportamento |
 | --- | --- |
 | **Caneta de caligrafia**, **Caneta antiga** | Pena inclinada. |
+| **Monolinha** | Mantém uma só largura em qualquer pressão. |
 | **Marcador** | Ponta chanfrada. |
-| **Lápis**, **Lápis de ponta fina**, **Lápis de sombreado**, **Carvão vegetal**, **Giz**, **Bloco de pastel**, **Giz de cera** | A pressão e a inclinação alteram a forma e a cobertura da marca. Consulte [Mídias secas](/pt-BR/docs/brushes/dry-media/). |
 | **Aerógrafo** | Continua adicionando tinta enquanto você mantém a caneta parada. |
 | **Spray** | Espalha as marcas ao redor do traço. |
 | **Veladura multiplicada** | Pinta no modo Multiplicar. |
@@ -104,7 +102,7 @@ Você pode apagar a tinta da camada selecionada com a **Borracha**. Pressione **
 ou selecione **Borracha** na barra de ferramentas Ferramentas ou, em Esboço, na
 barra de título.
 
-Enquanto você edita uma máscara, a Borracha remove a cobertura da máscara.
+Enquanto você edita uma máscara, a Borracha remove a cobertura da máscara. Em uma camada vetorial, ela corta ou remove caminhos ([Camadas vetoriais](/pt-BR/docs/layers/vector/)).
 
 Com **Pintura transparente** selecionada no painel Cor, todo pincel apaga. A ponta
 de borracha de uma caneta também pode apagar ([Caneta](/pt-BR/docs/input/pen/)).
@@ -118,12 +116,16 @@ a máscara dela. Em uma camada de filtro, o traço pinta a máscara do filtro. S
 filtro não tiver máscara, o traço vai para a camada à qual o filtro se aplica ou
 para a próxima camada abaixo ([Como os filtros se aplicam](/pt-BR/docs/filters/how-filters-apply/)).
 
+Em uma camada vetorial, **Caneta G** e **Monolinha** adicionam caminhos em vez de
+pintar pixels ([Camadas vetoriais](/pt-BR/docs/layers/vector/)).
+
 Uma seleção ativa limita a tinta à seleção.
 
 Nas camadas a seguir, um traço não pinta nada e um aviso informa o motivo:
 
 - Um grupo ou uma camada de seleção.
 - Uma camada de preenchimento sem máscara.
+- Uma camada vetorial, com um pincel que não pode desenhar caminhos.
 - Uma camada com **Bloquear edição** ativado ou dentro de um grupo bloqueado.
 - Uma camada de filtro sem máscara quando a camada abaixo está bloqueada ou ausente.
 - Uma camada redimensionada ou girada, até você escolher **Aplicar transformação** ([Mover e transformar](/pt-BR/docs/transform/move-transform/)).

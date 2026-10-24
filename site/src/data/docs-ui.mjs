@@ -147,7 +147,7 @@ export const docsUI = brandTranslations({
                 "slug": "layers/types"
               }
             ],
-            "text": "Paint, Object and Paper layers; groups, clipping, masks, blend modes, editable fills and saved selections."
+            "text": "Paint, Vector, Object and Paper layers; groups, clipping, masks, blend modes, editable fills and saved selections."
           },
           {
             "areas": [
@@ -174,7 +174,7 @@ export const docsUI = brandTranslations({
                 "slug": "retouch/clone-heal"
               }
             ],
-            "text": "Clone Stamp, Healing and Spot Healing, dodge and burn, blending and liquify."
+            "text": "Clone Stamp, Healing and Spot Healing, dodge and burn, blenders and Liquify."
           },
           {
             "areas": [
@@ -196,7 +196,7 @@ export const docsUI = brandTranslations({
                 "slug": "transform/move-transform"
               }
             ],
-            "text": "Reference-layer fills, Enclose and Fill, gradients, rulers, crop, resize, perspective and mesh warp."
+            "text": "Reference-layer fills, Enclose and Fill, gradients, shapes and vector paths, rulers, crop, resize, perspective and mesh warp."
           },
           {
             "areas": [

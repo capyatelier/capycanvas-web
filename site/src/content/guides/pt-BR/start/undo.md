@@ -1,7 +1,7 @@
 ---
 title: "Desfazer e refazer"
 description: "Como desfazer e refazer alterações em um desenho, e o histórico separado das alterações de layout."
-related: ["start/command-search", "customize/workspaces", "input/touch"]
+related: ["start/command-search", "customize/bubbles", "customize/workspaces", "input/touch"]
 ---
 
 Você pode desfazer as alterações em um desenho um passo de cada vez e refazer os
@@ -28,6 +28,10 @@ Faça uma das seguintes ações:
 - Toque na tela com três dedos.
 
 Uma nova alteração depois de Desfazer apaga os passos que podiam ser refeitos.
+
+## Bolha de desfazer e refazer
+
+Arraste **Desfazer** ou **Refazer** para a tela para manter os dois em uma só [bolha](/pt-BR/docs/customize/bubbles/). Toque na metade esquerda para desfazer e na metade direita para refazer.
 
 ## O que conta como passo
 

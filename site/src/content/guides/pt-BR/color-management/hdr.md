@@ -12,10 +12,9 @@ em **HDR de 16 bits em ponto flutuante** ou **HDR de 32 bits em ponto flutuante*
 
 Para ter um desenho HDR, faça uma das seguintes ações:
 
-- Em **Arquivo > Novo…**, escolha a predefinição **Desenho HDR** ou uma **Profundidade de bits** em ponto flutuante.
-- Escolha **Editar > Alterar profundidade de bits…** e uma profundidade em ponto flutuante.
+- Em **Arquivo > Novo…**, escolha a predefinição **4K HDR** ou uma **Profundidade de bits** em ponto flutuante.
+- Escolha **Imagem > Gerenciamento de cores > Alterar profundidade de bits…** e uma profundidade em ponto flutuante.
 - Abra um arquivo PNG HDR (BT.2020 PQ) ou AVIF HDR (HDR de 16 bits em ponto flutuante), ou um arquivo OpenEXR (HDR de 32 bits em ponto flutuante).
-- Defina **Profundidade de bits** como uma profundidade em ponto flutuante na página **Cor** de [Preferências](/pt-BR/docs/preferences/) para que os novos desenhos sejam HDR.
 
 Em um desenho HDR:
 

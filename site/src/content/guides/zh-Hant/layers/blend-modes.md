@@ -19,7 +19,7 @@ related: ["layers/settings", "layers/panel", "color-management/color-spaces", "c
 
 目前模式在選單中帶有對勾，其名稱顯示於頂端列按鈕上。模式不是正常時，圖層列的副標題會顯示該模式。新圖層使用正常模式。
 
-不能更改選取範圍圖層或已鎖定圖層的混合模式。[向下合併](/zh-Hant/docs/layers/merging/)要求兩個圖層都設為正常。混合模式在畫作的混合色彩空間中混合色彩，該空間透過**編輯 > 色彩混合**設定（參見[色彩空間、位元深度和色彩混合](/zh-Hant/docs/color-management/color-spaces/)）。
+不能更改選取範圍圖層或已鎖定圖層的混合模式。[向下合併](/zh-Hant/docs/layers/merging/)要求兩個圖層都設為正常。混合模式在畫作的混合色彩空間中混合色彩，該空間透過**影像 > 色彩混合**設定（參見[色彩空間、位元深度和色彩混合](/zh-Hant/docs/color-management/color-spaces/)）。
 
 ## 混合模式選單中的模式
 

@@ -73,13 +73,9 @@ en bas du panneau remplace alors la barre d’onglets.
 
 Vous pouvez choisir les commandes qu’affiche un panneau.
 
-Effectuez l’une des opérations suivantes :
-
-- Choisissez **Configurer Panneau *nom*…** dans le menu du panneau.
-- Sélectionnez de nouveau l’onglet actif.
-
-Une colonne avec une case à cocher pour chaque commande s’ouvre à côté du
-panneau. Appuyez sur **Échap**, sélectionnez de nouveau l’onglet ou
+Choisissez **Configurer Panneau *nom*…** dans le menu du panneau. Une colonne avec
+une case à cocher pour chaque commande s’ouvre à côté du panneau. Sélectionner un
+autre onglet affiche les commandes de ce panneau. Appuyez sur **Échap** ou
 sélectionnez en dehors de la colonne pour la fermer.
 
 | Panneau | Commandes | Affichées par défaut |

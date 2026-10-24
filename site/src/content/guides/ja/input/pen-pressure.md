@@ -10,7 +10,7 @@ related: ["input/pen", "preferences", "brushes/dry-media"]
 
 [環境設定](/ja/docs/preferences/)を開いて**ペンと入力**を選び、**筆圧**の横の**調整…** を選択します。
 
-![カーブと現在の筆圧を示すマーカーがある筆圧ダイアログ。](shot:pen/pressure-calibration)
+![カーブ、硬くと柔らかく、リセット、キャンセル、適用がある筆圧ダイアログ。](shot:pen/pressure-calibration)
 
 ## 筆圧カーブ
 

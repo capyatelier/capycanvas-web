@@ -67,7 +67,7 @@ related: ["transform/crop", "start/canvas", "files/new", "color-management/color
 
 ## 이미지 회전과 뒤집기
 
-**이미지**에서 다음 중 하나를 선택합니다.
+**이미지 > 회전 및 뒤집기**에서 다음 중 하나를 선택합니다.
 
 - **이미지 왼쪽으로 90° 회전**
 - **이미지 오른쪽으로 90° 회전**

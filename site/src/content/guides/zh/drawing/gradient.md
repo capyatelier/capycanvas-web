@@ -40,7 +40,7 @@ related: ["drawing/fill", "layers/types", "filters/color", "color/edit-color"]
 
 ## 色标编辑器
 
-![渐变工具的工具设置面板，包含形状行、色标编辑器和不透明度。](shot:drawing/gradient-tool-panel)
+![渐变工具的工具设置面板，包含形状行和色标编辑器。](shot:drawing/gradient-tool-panel)
 
 可以在**工具设置**面板中**形状**下方的色标编辑器里编辑渐变的颜色。工具选项栏中的渐变按钮会在弹出窗口中打开该编辑器。渐变填充图层和**渐变映射**滤镜使用同一个编辑器（[颜色滤镜](/zh/docs/filters/color/)）。
 

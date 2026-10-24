@@ -120,7 +120,6 @@ vers un nouveau calque, à la même position.
 Effectuez l’une des opérations suivantes :
 
 - Choisissez **Calque > Nouveau > Copier la sélection vers un nouveau calque** (**Ctrl+J**) ou **Couper la sélection vers un nouveau calque** (**Ctrl+Maj+J**).
-- Choisissez les mêmes commandes dans le menu **Sélection**.
 - Choisissez-les dans **Copier vers un calque**, dans la [barre de sélection](/fr/docs/selections/working/) sur la toile.
 
 Le nouveau calque se place au-dessus du calque source, sous le nom « Copie de

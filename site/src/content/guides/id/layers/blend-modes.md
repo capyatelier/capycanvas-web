@@ -24,7 +24,7 @@ Normal.
 Mode baur lapisan seleksi atau lapisan terkunci tidak dapat diubah.
 [Gabungkan ke Bawah](/id/docs/layers/merging/) memerlukan kedua lapisan disetel ke
 Normal. Mode baur mencampur warna di ruang pembauran gambar, yang disetel dengan
-**Edit > Pembauran** (lihat [Ruang warna, kedalaman bit, dan pembauran](/id/docs/color-management/color-spaces/)).
+**Gambar > Pembauran** (lihat [Ruang warna, kedalaman bit, dan pembauran](/id/docs/color-management/color-spaces/)).
 
 ## Mode di menu baur
 

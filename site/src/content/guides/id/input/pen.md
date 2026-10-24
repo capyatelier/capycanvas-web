@@ -25,6 +25,10 @@ sebenarnya menggantikannya saat Anda menggambar. Pengaturannya ada di bawah
 Kedua sakelar aktif secara bawaan, dan **Jumlah prediksi** bernilai 16 ms. Selama
 **Aktifkan prediksi goresan** nonaktif, dua pengaturan lainnya tidak tersedia.
 
+Goresan tetikus tidak mendapat prediksi di depan ujung, begitu pula goresan dari tablet
+pena tanpa layar di Linux, Windows, dan Android. Di editor web dan di macOS, goresan
+dari tablet seperti itu diprediksi sesuai pengaturan.
+
 | Sistem | Prediksi dari sistem |
 | --- | --- |
 | iPad | Tersedia |

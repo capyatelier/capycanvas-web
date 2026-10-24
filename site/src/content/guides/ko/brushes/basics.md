@@ -1,7 +1,7 @@
 ---
 title: "크기, 강도 및 불투명도"
 description: "브러시 크기, 강도, 불투명도와 이를 바꾸는 패널, 막대 및 키."
-related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools"]
+related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools", "customize/bubbles"]
 ---
 
 브러시 설정 항목은 도구와 프리셋에 따라 다릅니다. 변경 내용은 프리셋에 저장됩니다.
@@ -57,6 +57,8 @@ related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brus
 ![접촉 미리보기가 열린 강도 슬라이더.](shot:brushes/strength-preview)
 
 미리보기에서 **이 값을 북마크에 추가**를 선택하면 트랙에 표시를 추가하고 **북마크 제거**를 선택하면 제거합니다. 각 프리셋은 자체 북마크를 유지합니다.
+
+그 막대에서 **색상 선택기**를 캔버스로 드래그하면 크기와 강도 호가 있는 [버블](/ko/docs/customize/bubbles/)을 꺼낼 수 있습니다.
 
 ## 크기 키
 

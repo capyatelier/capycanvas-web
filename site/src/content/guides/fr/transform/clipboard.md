@@ -1,6 +1,6 @@
 ---
 title: "Copier et coller"
-description: "Copier des pixels et les coller comme calque, masque ou nouveau dessin."
+description: "Copier des pixels et les coller comme calque ou nouveau dessin."
 related: ["selections/working", "transform/move-transform", "layers/types", "files/open-save"]
 ---
 
@@ -16,6 +16,8 @@ Les commandes du presse-papiers sont dans le menu **Édition** et la recherche d
 
 **Copier avec fusion** (**Ctrl+Maj+C**) copie le résultat visible dans la sélection, y compris l’éclairage du Papier. Les groupes, les calques de filtre et les calques de sélection n’ont pas de pixels propres.
 
+**Copier les pixels** fonctionne comme **Copier** et, sur un calque Objet, copie ses images sous forme de pixels.
+
 ## Coller
 
 **Coller** (**Ctrl+V**) ajoute le contenu du presse-papiers comme nouveau calque et ouvre les poignées de transformation si un placement est nécessaire. Une image d’une autre application devient un [calque Objet](/fr/docs/layers/types/), qui conserve sa source jusqu’à sa pixellisation.
@@ -27,13 +29,14 @@ Une copie faite dans {appName} retrouve sa position d’origine si celle-ci est 
 Ouvrez **Édition > Collage spécial** pour choisir une destination.
 
 - **Coller sur place** ajoute un calque à la position copiée sans ouvrir les poignées de transformation.
+- **Coller à la position affichée** ajoute un calque au centre de la toile visible, à sa taille d’origine.
+- **Coller au curseur** ajoute un calque centré sur le pointeur, à sa taille d’origine.
 - **Coller dedans** ajoute un calque avec la sélection active comme masque, puis efface la sélection.
-- **Coller le masque** remplace ou ajoute le masque du calque sélectionné avec l’image du presse-papiers.
 - **Coller comme nouvelle image** crée un nouveau dessin à partir du presse-papiers.
 
 Les commandes qui exigent une sélection, un calque modifiable ou une image compatible dans le presse-papiers sont grisées.
 
-![Les choix de Collage spécial pour les calques, les masques et les nouveaux dessins.](shot:transform/paste-special)
+![Le menu Collage spécial avec Coller sur place, Coller à la position affichée, Coller au curseur, Coller dedans et Coller comme nouvelle image.](shot:transform/paste-special)
 
 ## Entre applications
 

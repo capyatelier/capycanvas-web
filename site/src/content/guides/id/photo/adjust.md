@@ -58,7 +58,7 @@ foto asli, lapisan, mask, dan lapisan filter
 3. Setel **Ukuran piksel** ke **Sesuaikan dalam batas**, lalu biarkan **Lebar maksimum (px)** dan **Tinggi maksimum (px)** tetap 2048.
 4. Pilih **Pilih Berkas…**, lalu pilih folder dan tentukan nama.
 
-![Dialog Ekspor gambar dengan Web / Bagikan, Gambar JPEG, Kualitas 90, dan Sesuaikan dalam batas.](shot:photo/export-jpeg)
+![Pengaturan ekspor dengan Web / Bagikan, Gambar JPEG, Kualitas 90, dan Sesuaikan dalam batas.](shot:photo/export-jpeg)
 
 Mengekspor tidak mengubah gambar
 ([Mengekspor gambar](/id/docs/files/export/)).

@@ -1,7 +1,7 @@
 ---
 title: "Gestos de toque"
 description: "O que os dedos fazem na tela e os toques com os dedos que você pode atribuir."
-related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
+related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
 Você pode mover a tela, capturar cores e executar comandos com os dedos em uma
@@ -30,6 +30,23 @@ aparece acima do dedo. Arraste para mirar e levante o dedo para pegar a cor.
 Pressione **Escape** para cancelar.
 
 Um segundo dedo na tela cancela a captura.
+
+## Limpar a camada
+
+Esfregue a tela com três dedos para executar **Limpar camada inteira** na camada
+ativa. Mova os três dedos juntos, inverta o movimento e inverta de novo sem
+levantá-los. Um **Desfazer** restaura a camada. Uma camada bloqueada não é limpa.
+
+## Mover uma bolha
+
+Arraste uma [bolha](/pt-BR/docs/customize/bubbles/) com dois dedos para movê-la de
+qualquer ponto dela.
+
+## Barras de ferramentas no modo Zen
+
+No aplicativo para Linux, deslize para dentro a partir da borda da janela com um dedo
+no [modo Zen](/pt-BR/docs/customize/zen/) para mostrar as barras de ferramentas e os
+painéis encaixados nessa borda.
 
 ## Toques com os dedos
 
@@ -66,4 +83,5 @@ toques.
 ## Plataformas
 
 Os gestos de toque funcionam no Linux, no Windows, no Android, no iPad e no editor
-web. O grupo **Gestos de toque** não aparece no macOS.
+web. O grupo **Gestos de toque** não aparece no macOS, onde esfregar o trackpad com três
+dedos continua limpando a camada.

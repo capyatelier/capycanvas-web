@@ -1,25 +1,22 @@
 ---
 title: "Alat kuas"
 description: "Alat kuas, prasetel bawaannya, dan tempat memilihnya."
-related: ["brushes/basics", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
+related: ["brushes/basics", "layers/vector", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
 ---
 
-Anda dapat melukis dengan alat **Pena**, **Pensil**, **Arang**, **Kapur**, **Pastel**, **Krayon**, **Kuas Cat**, **Kuas semprot halus**, dan **Dekorasi**, serta menghapus dengan **Penghapus**. Setiap alat memuat satu atau beberapa grup preset kuas bawaan.
+Anda dapat melukis dengan alat **Pena**, **Pensil**, **Kuas Cat**, **Kuas semprot halus**, dan **Dekorasi**, serta menghapus dengan **Penghapus**. Setiap alat memuat satu atau beberapa grup preset kuas bawaan.
 
 ## Alat dan prasetel
 
 | Alat | Grup | Preset |
 | --- | --- | --- |
-| **Pena** | **Pena** | **Pena G**, **Pena G Kasar**, **Pena Kaligrafi**, **Pena Antik**, **Pena Realistis**, **Tinta Basah**, **Tinta Bercak**, **Tinta Sapuan Realistis** |
+| **Pena** | **Pena** | **Pena G**, **Monoline**, **Pena G Kasar**, **Tinta Bercak**, **Pena Kaligrafi**, **Pena Antik**, **Pena Realistis**, **Tinta Basah**, **Tinta Sapuan Realistis** |
 | | **Spidol** | **Spidol** |
 | **Pensil** | **Pensil** | **Pensil**, **Pensil Runcing**, **Pensil Arsir** |
-| **Arang** | **Arang** | **Arang** |
-| **Kapur** | **Kapur** | **Kapur** |
-| **Pastel** | **Pastel** | **Balok Pastel** |
-| **Krayon** | **Krayon** | **Krayon** |
+| | **Pastel** | **Arang**, **Krayon**, **Kapur**, **Balok Pastel** |
 | **Kuas Cat** | **Lukis** | **Kuas Cat**, **Kuas Berbulu**, **Kuas Pipih Bertekstur**, **Sapuan Kering**, **Sapuan Tipis Transparan**, **Gouache Pekat**, **Sapuan Tipis Perkalian** |
 | | **Cat air** | **Sapuan Cat Air**, **Cat Air Basah** |
-| | **Cat minyak** | **Cat Minyak Penuh**, **Pisau Palet**, **Kuas Bulat Basah** |
+| | **Cat minyak** | **Cat Minyak Penuh**, **Pisau Palet**, **Kuas Bulat Basah**, **Kuas Pencampur** |
 | **Kuas semprot halus** | **Kuas semprot halus** | **Kuas semprot halus** |
 | | **Semprot** | **Semprot** |
 | **Penghapus** | **Penghapus** | **Penghapus** |
@@ -31,13 +28,13 @@ memiliki warna sendiri; setiap kuas melukis dengan warna saat ini di
 
 ## Perilaku prasetel
 
-Perilaku berikut sudah tertanam di prasetel dan tidak memiliki pengaturan.
+Perilaku berikut sudah tertanam di prasetel dan tidak memiliki pengaturan. Prasetel media kering dibahas di [Media kering](/id/docs/brushes/dry-media/).
 
 | Prasetel | Perilaku |
 | --- | --- |
 | **Pena Kaligrafi**, **Pena Antik** | Mata pena miring. |
+| **Monoline** | Mempertahankan satu lebar pada tekanan berapa pun. |
 | **Spidol** | Ujung pahat. |
-| **Pensil**, **Pensil Runcing**, **Pensil Arsir**, **Arang**, **Kapur**, **Balok Pastel**, **Krayon** | Tekanan dan kemiringan mengubah bentuk dan cakupan goresan. Lihat [Media kering](/id/docs/brushes/dry-media/). |
 | **Kuas Semprot Halus** | Terus menambahkan cat selama pena ditahan diam. |
 | **Semprot** | Menyebarkan tapak kuasnya di sekitar goresan. |
 | **Sapuan Tipis Perkalian** | Melukis dengan mode Perkalian. |
@@ -101,7 +98,7 @@ grup akan memilih prasetel terakhirnya dan membiarkan laci tetap terbuka. Laci
 Anda dapat menghapus cat dari lapisan yang dipilih dengan **Penghapus**. Tekan **E**,
 atau pilih **Penghapus** di bilah alat Alat atau, di Sketsa, di bilah judul.
 
-Saat Anda mengedit mask, Penghapus menghapus cakupan mask.
+Saat Anda mengedit mask, Penghapus menghapus cakupan mask. Pada lapisan vektor, Penghapus memotong atau menghapus jalur ([Lapisan vektor](/id/docs/layers/vector/)).
 
 Jika **Cat transparan** dipilih di panel Warna, setiap kuas menghapus. Ujung penghapus
 pada pena juga dapat menghapus ([Pena](/id/docs/input/pen/)).
@@ -115,6 +112,9 @@ lapisan filter, goresan melukis mask filter. Jika filter tidak memiliki mask, go
 masuk ke lapisan tempat filter diterapkan, atau ke lapisan berikutnya di bawahnya
 ([Cara filter diterapkan](/id/docs/filters/how-filters-apply/)).
 
+Pada lapisan vektor, **Pena G** dan **Monoline** menambahkan jalur alih-alih melukis
+piksel ([Lapisan vektor](/id/docs/layers/vector/)).
+
 Seleksi yang aktif membatasi cat di dalam seleksi.
 
 Pada lapisan berikut, goresan tidak melukis apa pun dan sebuah pemberitahuan
@@ -122,6 +122,7 @@ menyebutkan alasannya:
 
 - Grup atau lapisan seleksi.
 - Lapisan isian tanpa mask.
+- Lapisan vektor, untuk kuas yang tidak dapat menggambar jalur.
 - Lapisan dengan **Kunci pengeditan** aktif, atau yang berada di dalam grup terkunci.
 - Lapisan filter tanpa mask, jika lapisan di bawahnya terkunci atau tidak ada.
 - Lapisan yang diskalakan atau diputar, sampai Anda memilih **Terapkan transformasi** ([Pemindahan dan transformasi](/id/docs/transform/move-transform/)).

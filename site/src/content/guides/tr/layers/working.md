@@ -117,7 +117,6 @@ veya taşıyabilirsiniz.
 Aşağıdakilerden birini yapın:
 
 - **Katman > Yeni > Seçimi yeni katmana kopyala** (**Ctrl+J**) veya **Seçimi kesip yeni katmana taşı** (**Ctrl+Shift+J**) komutunu seçin.
-- Aynı komutları **Seç** menüsünden seçin.
 - Bu komutları tuvaldeki [seçim çubuğunda](/tr/docs/selections/working/) **Katmana kopyala** altından seçin.
 
 Yeni katman, kaynak katmanın üstüne aynı opaklık ve karıştırma moduyla eklenir

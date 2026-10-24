@@ -12,10 +12,9 @@ HDR çizimidir.
 
 HDR çizimi elde etmek için aşağıdakilerden birini yapın:
 
-- **Dosya > Yeni…** içinde **HDR çizimi** hazır ayarını veya kayan noktalı bir **Bit derinliği** seçin.
-- **Düzenle > Bit derinliğini değiştir…** komutunu ve kayan noktalı bir derinlik seçin.
+- **Dosya > Yeni…** içinde **4K HDR** hazır ayarını veya kayan noktalı bir **Bit derinliği** seçin.
+- **Görüntü > Renk Yönetimi > Bit derinliğini değiştir…** komutunu ve kayan noktalı bir derinlik seçin.
 - Bir HDR PNG (BT.2020 PQ) veya HDR AVIF dosyası (16 bit kayan noktalı HDR) ya da bir OpenEXR dosyası (32 bit kayan noktalı HDR) açın.
-- Yeni çizimleri HDR yapmak için [Tercihler](/tr/docs/preferences/) içindeki **Renk** sayfasında **Bit derinliği** ayarını kayan noktalı bir derinlik yapın.
 
 HDR çiziminde:
 

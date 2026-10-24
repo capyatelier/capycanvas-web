@@ -1,6 +1,6 @@
 ---
 title: "Préférences"
-description: "La boîte de dialogue Préférences et les réglages de ses pages Apparence, Toile, Stylet et saisie, Couleur et À propos."
+description: "La boîte de dialogue Préférences et les réglages de ses pages Apparence, Toile, Couleur, Stylet et saisie et À propos."
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -125,25 +125,9 @@ Désactivé par défaut. Les groupes existants ne changent pas.
 
 ## Couleur
 
-Les réglages **Nouveaux dessins** s’appliquent aux
-[dessins que vous créez](/fr/docs/files/new/) ensuite. Les réglages
-**Ouverture des photos** s’appliquent aux photos que vous ouvrez.
+Les réglages **Ouverture des photos** s’appliquent aux photos que vous ouvrez.
 
-![La page Couleur des Préférences.](shot:preferences/color)
-
-### Espace colorimétrique
-
-Choisissez **sRGB** (par défaut), **Display P3**, **Adobe RGB (1998)** ou
-**ProPhoto RGB**.
-
-### Profondeur de couleur
-
-Choisissez **SDR 8 bits** (par défaut), **SDR 16 bits**, **HDR flottant 16 bits**
-ou **HDR flottant 32 bits**.
-
-### Arrière-plan
-
-Choisissez **Blanc** (par défaut) ou **Transparent**.
+![Les réglages Ouverture des photos sur la page Couleur des Préférences.](shot:preferences/color)
 
 ### Précision de retouche
 

@@ -1,7 +1,7 @@
 ---
 title: "Thanh công cụ và thanh tiêu đề"
 description: "Tạo và sửa thanh công cụ, và tùy chỉnh thanh tiêu đề."
-related: ["customize/panels", "customize/workspaces", "customize/zen", "start/command-search"]
+related: ["customize/panels", "customize/workspaces", "customize/zen", "customize/bubbles", "start/command-search"]
 ---
 
 Mỗi không gian làm việc giữ thanh công cụ và thanh tiêu đề riêng. **Cửa sổ > Hoàn tác
@@ -13,7 +13,10 @@ thay đổi bố cục** (**Ctrl+Alt+Z**) đảo ngược thay đổi gần nh�
 cụ, hoặc giữ thanh công cụ bằng ngón tay hay bút. Nhấp chuột phải hoặc giữ một công cụ
 để mở trình đơn của công cụ đó.
 
-![Trình đơn thanh công cụ với các kích thước ô.](shot:toolbars/toolbar-menu)
+**Hiện trong chế độ Zen** trong trình đơn của thanh công cụ giữ thanh công cụ trên màn hình
+trong [chế độ Zen](/vi/docs/customize/zen/) ở ứng dụng Linux.
+
+![Trình đơn thanh công cụ với các kích thước ô và mục Hiện trong chế độ Zen.](shot:toolbars/toolbar-menu)
 
 ## Hiện và ẩn thanh công cụ
 
@@ -53,6 +56,7 @@ Mỗi thanh công cụ cần một tên riêng.
 - Để thêm công cụ vào trước một công cụ, chọn **Chèn công cụ…** từ trình đơn của công cụ đó.
 - Để xóa một công cụ, chọn **Xóa công cụ** từ trình đơn của công cụ đó.
 - Để di chuyển một công cụ, giữ công cụ rồi kéo trong thanh công cụ hoặc sang thanh công cụ khác.
+- Để giữ một công cụ trên khung vẽ, kéo công cụ ra khỏi thanh công cụ để lấy một [bong bóng](/vi/docs/customize/bubbles/).
 
 Ngoài lệnh và công cụ, danh sách **Thêm công cụ** còn có cọ, kích thước cọ,
 **Bộ chọn màu**, **Thanh trượt kích thước cọ**, **Thanh trượt cường độ**,

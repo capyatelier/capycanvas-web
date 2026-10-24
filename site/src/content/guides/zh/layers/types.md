@@ -1,10 +1,10 @@
 ---
 title: "图层类型"
-description: "绘画、对象、纸张、组、填充、滤镜和选区图层及各自规则。"
-related: ["layers/panel", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
+description: "绘画、对象、矢量、纸张、组、填充、滤镜和选区图层及各自规则。"
+related: ["layers/panel", "layers/vector", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
 ---
 
-![图层面板中的当前图层类型。](shot:layers/types-rows)
+![图层面板，包含选区图层、图层组、绘画图层、滤镜、填充图层、矢量图层和纸张。](shot:layers/types-rows)
 
 ## 绘画图层
 
@@ -18,9 +18,13 @@ related: ["layers/panel", "layers/paper", "layers/working", "filters/how-filters
 
 可以移动、缩放和旋转对象图层，而无需反复重新采样其源图像。需要在其像素上绘画或使用要求绘画图层的命令时，选择 **图层 > 栅格化图层**。栅格化会将其转换为画作的色彩空间、位深度和像素网格。
 
+## 矢量图层
+
+矢量图层保存路径而不是像素。选择 **图层 > 新建 > 新建矢量图层**，或选择图层面板底部的 **新建矢量图层**。其缩略图上有路径徽章。参见[矢量图层](/zh/docs/layers/vector/)。
+
 ## 纸张
 
-纸张提供背景颜色，以及干性画材笔迹使用的纹理。它位于图层堆栈底部，并有颜色和纹理缩略图。
+纸张提供背景颜色，以及有 **纹理强度** 的画笔所响应的纹理。它位于图层堆栈底部，并有颜色和纹理缩略图。
 
 一幅画作可以包含一张纸张。纸张不能有蒙版、成为剪贴图层、移动到普通图层上方或合并到普通图层中。纹理、光照和其他设置参见[纸张](/zh/docs/layers/paper/)。
 

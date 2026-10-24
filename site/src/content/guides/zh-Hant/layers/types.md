@@ -1,10 +1,10 @@
 ---
 title: "圖層型別"
-description: "繪畫、物件、紙張、組、填充、濾鏡和選取範圍圖層及各自規則。"
-related: ["layers/panel", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
+description: "繪畫、物件、向量、紙張、組、填充、濾鏡和選取範圍圖層及各自規則。"
+related: ["layers/panel", "layers/vector", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
 ---
 
-![圖層面板中的目前圖層類型。](shot:layers/types-rows)
+![圖層面板，包含選取範圍圖層、圖層群組、繪畫圖層、濾鏡、填色圖層、向量圖層和紙張。](shot:layers/types-rows)
 
 ## 繪畫圖層
 
@@ -18,9 +18,13 @@ related: ["layers/panel", "layers/paper", "layers/working", "filters/how-filters
 
 可以移動、縮放和旋轉物件圖層，而無需反復重新取樣其源影像。需要在其像素上繪畫或使用要求繪畫圖層的命令時，選擇 **圖層 > 點陣化圖層**。點陣化會將其轉換為畫作的色彩空間、位元深度和像素網格。
 
+## 向量圖層
+
+向量圖層儲存路徑而不是像素。選擇 **圖層 > 新增 > 新增向量圖層**，或選擇圖層面板底部的 **新增向量圖層**。其縮圖上有路徑徽章。參見[向量圖層](/zh-Hant/docs/layers/vector/)。
+
 ## 紙張
 
-紙張提供背景顏色，以及乾性畫材筆跡使用的紋理。它位於圖層堆疊底部，並有顏色和紋理縮圖。
+紙張提供背景顏色，以及有 **紋理強度** 的筆刷所響應的紋理。它位於圖層堆疊底部，並有顏色和紋理縮圖。
 
 一幅畫作可以包含一張紙張。紙張不能有遮罩、成為剪貼圖層、移動到普通圖層上方或合併到普通圖層中。紋理、光照和其他設定參見[紙張](/zh-Hant/docs/layers/paper/)。
 

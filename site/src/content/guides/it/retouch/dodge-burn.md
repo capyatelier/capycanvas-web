@@ -44,7 +44,7 @@ Il gruppo prende l'opacità e il ritaglio del livello originale. Il livello
 originale resta subito sotto il gruppo, nascosto.
 
 Il livello deve essere visibile e impostato su **Normale**, e il disegno deve
-usare **Modifica > Fusione > Fusione percettiva** (vedi
+usare **Immagine > Fusione > Fusione percettiva** (vedi
 [Spazio colore, profondità in bit e fusione](/it/docs/color-management/color-spaces/)).
 Se il disegno cambia mentre il pannello è aperto, il pannello si chiude.
 

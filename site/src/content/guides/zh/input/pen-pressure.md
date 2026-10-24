@@ -10,7 +10,7 @@ related: ["input/pen", "preferences", "brushes/dry-media"]
 
 打开[首选项](/zh/docs/preferences/)，选择 **笔与输入**，然后选择 **笔压** 旁的 **调整…**。
 
-![笔压对话框，包含曲线和实时笔压标记。](shot:pen/pressure-calibration)
+![笔压对话框，包含曲线、更用力和更轻柔、重置、取消和应用。](shot:pen/pressure-calibration)
 
 ## 压力曲线
 

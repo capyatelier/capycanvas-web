@@ -39,12 +39,14 @@ export const settleLayout = (b, selector = '#workspace .dock-group,#header .head
 })`);
 export const quiet = b => b.evaluate(`document.fonts.ready.then(()=>${animations}).then(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(()=>r(null)))))`);
 
+const thumbnailsLoaded = b => b.until(`[...document.querySelectorAll('#layer-rows .layer-thumbnail:not(.layer-texture) canvas')].filter(canvas=>{const box=canvas.getBoundingClientRect();return canvas.checkVisibility()&&box.width>0&&box.top<innerHeight&&box.bottom>0}).every(canvas=>canvas.dataset.previewRevision)`, 15000);
+
 export async function settled(b) {
   await b.evaluate('Promise.all([...document.images].map(i=>i.decode().catch(()=>null))).then(()=>null)');
   await quiet(b);
   await b.evaluate('layerApp.app.wait_for_canvas().then(()=>null)');
   await b.until('!document.querySelector("#status").textContent && layerApp.app.brush_ready() && document.querySelector(".startup-progress")?.hidden !== false', 20000);
-  await b.until(`[...document.querySelectorAll('#layer-rows .layer-thumbnail:not(.layer-texture) canvas')].filter(canvas=>{const box=canvas.getBoundingClientRect();return canvas.checkVisibility()&&box.width>0&&box.top<innerHeight&&box.bottom>0}).every(canvas=>canvas.dataset.previewRevision)`, 15000);
+  await thumbnailsLoaded(b);
   await b.until(`[...document.querySelectorAll('#layer-rows .layer-thumbnail:not(.layer-texture) canvas')].filter(c=>c.checkVisibility()&&c.getBoundingClientRect().width>0).every(c=>{const d=c.getContext('2d').getImageData(0,0,c.width,c.height).data;for(let i=3;i<d.length;i+=4)if(d[i])return true;return false})`, 3000).catch(() => {});
   assert.equal(await b.evaluate('document.body.innerText.includes("Painting is unavailable")'), false, 'Capture has a working GPU canvas');
   await quiet(b);
@@ -104,6 +106,7 @@ export function shooter({ b, lang, names, output, captures, previous = new Map()
     const images = Object.fromEntries(themes.map(theme => [theme, []]));
     for (const theme of themes) {
       await applyTheme(b, theme);
+      await thumbnailsLoaded(b);
       if (setup) await setup(theme);
       await b.call('Input.dispatchMouseEvent', { type: 'mouseMoved', x: -20, y: -20 });
       await settled(b);

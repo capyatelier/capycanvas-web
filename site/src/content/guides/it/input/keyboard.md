@@ -150,6 +150,7 @@ Premi di nuovo il tasto per lo strumento successivo della famiglia.
 | **Forma** | **U** |
 | **Righello** | **Maiusc+U** |
 | **Operazione** | **O** |
+| **Modifica punti** | **A** |
 | **Trasforma** | **Ctrl+T** |
 | **Ritaglia** | **C** |
 | **Mano** | **H** |
@@ -178,6 +179,7 @@ Premi di nuovo il tasto per lo strumento successivo della famiglia.
 | **Copia selezione su nuovo livello** | **Ctrl+J** |
 | **Taglia selezione su nuovo livello** | **Ctrl+Maiusc+J** |
 | **Unisci sotto** | **Ctrl+E** |
+| **Nuovo livello vettoriale** | **Ctrl+Alt+Maiusc+N** |
 | **Adatta tela** | **Ctrl+0** |
 | **Pixel reali** | **Ctrl+1**, **Ctrl+Alt+0** |
 | **Ingrandisci**, **Riduci** | **Ctrl+=**, **Ctrl+-** |

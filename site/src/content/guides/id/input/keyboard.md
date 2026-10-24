@@ -142,6 +142,7 @@ lagi untuk alat berikutnya dalam keluarga tersebut.
 | **Bentuk** | **U** |
 | **Penggaris** | **Shift+U** |
 | **Operasi** | **O** |
+| **Edit titik** | **A** |
 | **Transformasi** | **Ctrl+T** |
 | **Pangkas** | **C** |
 | **Tangan** | **H** |
@@ -170,6 +171,7 @@ lagi untuk alat berikutnya dalam keluarga tersebut.
 | **Salin Seleksi ke Lapisan Baru** | **Ctrl+J** |
 | **Potong Seleksi ke Lapisan Baru** | **Ctrl+Shift+J** |
 | **Gabungkan ke Bawah** | **Ctrl+E** |
+| **Lapisan vektor baru** | **Ctrl+Alt+Shift+N** |
 | **Sesuaikan kanvas** | **Ctrl+0** |
 | **Piksel Aktual** | **Ctrl+1**, **Ctrl+Alt+0** |
 | **Perbesar**, **Perkecil** | **Ctrl+=**, **Ctrl+-** |

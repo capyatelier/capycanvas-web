@@ -10,7 +10,7 @@ Puoi calibrare la pressione della penna prima che venga usata dai pennelli.
 
 Apri [Preferenze](/it/docs/preferences/), seleziona **Penna e input**, poi **Regola…** accanto a **Pressione della penna**.
 
-![La finestra Pressione della penna con la curva e l'indicatore della pressione in tempo reale.](shot:pen/pressure-calibration)
+![La finestra Pressione della penna con la curva, Più forte e Più leggera, Ripristina, Annulla e Applica.](shot:pen/pressure-calibration)
 
 ## Curva della pressione
 

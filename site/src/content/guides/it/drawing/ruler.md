@@ -98,11 +98,12 @@ maniglie compare una barra.
 | **Aggancia** | Attiva o disattiva **Aggancia ai righelli**. |
 | **Guide** | Mostra o nasconde tutte le guide. Nasconderle nasconde anche la barra. |
 | **Raddrizza** | Avvia **Raddrizza immagine alla guida**. Solo per una guida di tipo Retto. |
+| **Altro** | Apre un menu con **Mostra barra azioni della tela**. |
 
 Disattivare **Visualizza > Mostra barra azioni della tela** rimuove la barra
 della guida.
 
-![La barra della guida sotto una guida di tipo Retto selezionata, con Elimina, Aggancia, Guide e Raddrizza.](shot:drawing/ruler-guide-bar)
+![La barra della guida sotto una guida di tipo Retto selezionata, con Elimina, Aggancia, Guide, Raddrizza e Altro.](shot:drawing/ruler-guide-bar)
 
 ## Spostare le guide con Operazione
 

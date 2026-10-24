@@ -112,7 +112,6 @@ place.
 Do one of the following:
 
 - Choose **Layer > New > Copy Selection to New Layer** (**Ctrl+J**) or **Cut Selection to New Layer** (**Ctrl+Shift+J**).
-- Choose the same commands from the **Select** menu.
 - Choose them from **Copy to Layer** in the [selection bar](/docs/selections/working/) on the canvas.
 
 The new layer goes above the source layer, named "*name* copy", with the same

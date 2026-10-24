@@ -60,7 +60,7 @@ Originalfoto, die Ebenen, die Masken und die Filterebenen
 3. Stellen Sie **Pixelgröße** auf **In Grenzen einpassen** und lassen Sie **Maximale Breite (px)** und **Maximale Höhe (px)** auf 2048.
 4. Wählen Sie **Datei auswählen…** aus und wählen Sie einen Ordner und einen Namen.
 
-![Der Dialog Bild exportieren mit Web / Teilen, JPEG-Bild, Qualität 90 und In Grenzen einpassen.](shot:photo/export-jpeg)
+![Die Exporteinstellungen mit Web / Teilen, JPEG-Bild, Qualität 90 und In Grenzen einpassen.](shot:photo/export-jpeg)
 
 Das Exportieren verändert die Zeichnung nicht
 ([Bilder exportieren](/de/docs/files/export/)).

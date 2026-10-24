@@ -1,7 +1,7 @@
 ---
 title: "Taşıma ve dönüştürme"
-description: "İşlem aracı ve Dönüştür ile katmanları ve seçili pikselleri taşıma ve dönüştürme."
-related: ["selections/working", "transform/crop", "transform/clipboard", "drawing/ruler"]
+description: "İşlem aracı ve Dönüştür ile katmanları, seçili pikselleri ve yolları taşıma ve dönüştürme."
+related: ["selections/working", "layers/paths", "transform/crop", "transform/clipboard", "drawing/ruler"]
 ---
 
 Katmanları ve seçili pikselleri **İşlem** aracıyla taşıyabilir, **Dönüştür**
@@ -13,7 +13,7 @@ Aşağıdakilerden birini yapın:
 
 - Katmanlar panelinde bir katmanın menüsünü açın ve **Katmanı / maskeyi taşı** komutunu seçin.
 - **O** tuşuna basın.
-- Boya ve Fotoğraf'ta Araçlar çubuğundaki **İşlem / Dönüştür** düğmesini seçin. **İşlem** aracını seçmek için düğmeye sağ tıklayın veya düğmeyi basılı tutun.
+- Boya ve Fotoğraf'ta Araçlar çubuğundaki **İşlem / Dönüştür / Noktaları düzenle** düğmesini seçin. **İşlem** aracını seçmek için düğmeye sağ tıklayın veya düğmeyi basılı tutun.
 - [Komut aramaya](/tr/docs/start/command-search/) “İşlem” yazın.
 
 Eskiz'de **İşlem** düğmesi yoktur.
@@ -33,6 +33,13 @@ taşımak için sürükleyin. Bir maskeyi düzenlerken **İşlem** maskeyi taş�
 Kılavuzlar gösterilirken **İşlem** kılavuzları da seçer ve sürükler (bkz.
 [Cetveller ve kılavuzlar](/tr/docs/drawing/ruler/)).
 
+## Yolları taşıma
+
+Vektör katmanında **İşlem**, katmanı taşımak yerine yolları seçer, taşır, ölçekler
+ve döndürür. Her yolu seçmek için **Ctrl+A** tuşlarına basın. Yollar seçiliyken
+**Düzenle > Dönüştür** komutu **İşlem** aracına ve çerçevesine geçer. Bkz.
+[Yolları düzenleme](/tr/docs/layers/paths/).
+
 ## Kopya bırak
 
 Seçili piksellerin bir kopyasını taşıyıp özgün pikselleri yerinde
@@ -50,7 +57,7 @@ Aşağıdakilerden birini yapın:
 - **Ctrl+T** tuşlarına basın.
 - Boya ve Fotoğraf'ta Komutlar çubuğundaki, Eskiz'de başlık çubuğundaki **Dönüştür** düğmesini seçin.
 - Seçim çubuğunda **Dönüştür** düğmesini seçin.
-- Boya ve Fotoğraf'ta Araçlar çubuğundaki **İşlem / Dönüştür** düğmesine sağ tıklayın veya düğmeyi basılı tutun ve **Dönüştür** aracını seçin.
+- Boya ve Fotoğraf'ta Araçlar çubuğundaki **İşlem / Dönüştür / Noktaları düzenle** düğmesine sağ tıklayın veya düğmeyi basılı tutun ve **Dönüştür** aracını seçin.
 
 Seçim varken **Dönüştür** etkin katmanın veya maskenin seçili piksellerini
 değiştirir. Seçim yoksa seçili katmanları değiştirir. Tutamaçlı bir kutu ve
@@ -94,7 +101,7 @@ Tüm modlarda:
 ### Mod
 
 **Serbest**, **Orantılı**, **Boz** veya **Çarpıt**. **Orantılı** oranları
-korur. Katman dönüştürmeleri **Orantılı** modunda açılır.
+korur. **Serbest** varsayılandır.
 
 ### Özgün boyut
 
@@ -119,7 +126,7 @@ kılavuzlara hizalar. Döndürme hizalanmaz. Varsayılan olarak kapalıdır.
 - **Izgarayı sıfırla**: çarpıtmayı düz bir ızgarayla değiştirir.
 - **Izgara**: **3 × 3** (varsayılan), **4 × 4** veya **5 × 5**. Şekli değiştirene kadar kullanılabilir.
 
-![Çarpıt modunda Izgarayı böl, Noktaları seç, Izgarayı sıfırla ve Izgara ile tuval çubuğu.](shot:transform/warp-bar)
+![Çarpıt modunda Dikey böl menüsü, Noktaları seç, Izgarayı sıfırla ve 3 × 3 menüsüyle tuval çubuğu.](shot:transform/warp-bar)
 
 ### Çevirme ve döndürme düğmeleri
 

@@ -116,7 +116,7 @@ HDR PNG, HDR JPEG, HDR AVIF의 범위를 넘는 색을 잘라 냅니다. 이 형
 
 ## HDR 내보내기
 
-![출력 미리보기를 실행한 뒤 HDR JPEG · 게인 맵이 선택된 HDR 그림의 이미지 내보내기 대화 상자.](shot:files/export-hdr-preview)
+![미리보기 버전 메뉴가 HDR 재구성 · SDR 미리보기로 설정되어 있고, 그림과 HDR 재구성 미리보기가 나란히 표시된 모습.](shot:files/export-hdr-preview)
 
 16비트 또는 32비트 부동 소수점 그림에서는 **다이내믹 레인지**에 다음 선택 항목이 있습니다.
 

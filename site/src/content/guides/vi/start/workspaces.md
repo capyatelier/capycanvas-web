@@ -6,12 +6,12 @@ related: ["customize/workspaces", "customize/panels", "customize/toolbars", "cus
 
 Không gian làm việc là một cách sắp xếp đã lưu của thanh tiêu đề, các thanh công cụ
 và các bảng. {appName} có sẵn ba không gian làm việc: **Phác thảo**, **Vẽ** và
-**Ảnh**. Lần đầu, ứng dụng mở trong Vẽ. Những lần sau, ứng dụng mở trong không gian
+**Ảnh**. Lần đầu, ứng dụng mở trong Phác thảo. Những lần sau, ứng dụng mở trong không gian
 làm việc bạn dùng gần nhất.
 
 ## Phác thảo
 
-![Không gian làm việc Phác thảo với tranh minh họa mẫu trên khung vẽ.](shot:start/workspaces-sketch "1 Thanh tiêu đề, bên trái · 2 Bộ chuyển không gian làm việc · 3 Thanh tiêu đề, bên phải · 4 Điều khiển cọ")
+![Không gian làm việc Phác thảo với tranh minh họa mẫu trên khung vẽ.](shot:start/workspaces-sketch "1 Thanh tiêu đề, bên trái · 2 Bộ chuyển không gian làm việc · 3 Thanh tiêu đề, bên phải · 4 Điều khiển cọ · 5 Bong bóng công cụ")
 
 Phác thảo không có bảng gắn cố định: các nút công cụ và nút bảng trên thanh tiêu đề mở ra ngăn.
 
@@ -19,6 +19,7 @@ Phác thảo không có bảng gắn cố định: các nút công cụ và nút
 2. Bộ chuyển không gian làm việc.
 3. **Cọ**, **Tạo hình**, **Tẩy**, **Bảng lớp** và **Màu cọ**. Trình chỉnh sửa web có thêm **Toàn màn hình**.
 4. **Thanh trượt kích thước cọ**, **Bộ chọn màu**, **Thanh trượt cường độ**, **Hoàn tác** và **Làm lại**.
+5. Các bong bóng công cụ lấy từ thanh tiêu đề, ở đây là một bong bóng **Cọ** với vòng thiết lập của nó và một vòng màu nổi nhỏ (xem [Bong bóng công cụ](/vi/docs/customize/bubbles/)).
 
 | Nút | Bảng trong ngăn |
 | --- | --- |
@@ -28,7 +29,7 @@ Phác thảo không có bảng gắn cố định: các nút công cụ và nút
 | **Biến đổi** | **Bộ công cụ**, **Công cụ** |
 | **Bảng bộ lọc** | **Loại bộ lọc**, **Bộ lọc**, **Thuộc tính** |
 | **Bảng lớp** | **Lớp** |
-| **Màu cọ** | **Màu** |
+| **Màu cọ** | **Màu**, **Bảng màu** |
 
 **Trình đơn chính** mở các trình đơn (trên macOS, các trình đơn nằm trên thanh
 trình đơn của hệ thống). **Chọn** chọn công cụ vùng chọn bạn dùng gần nhất.
@@ -44,7 +45,7 @@ Vẽ gắn các bảng thành cột ở hai bên khung vẽ.
 
 1. **Capy (chế độ Zen)** và các trình đơn, tên bản vẽ ở giữa, sau đó là bộ chuyển không gian làm việc và **Thiết lập**. Trình chỉnh sửa web có thêm **Toàn màn hình**.
 2. **Mới…**, **Mở…**, **Lưu**, **Hoàn tác**, **Làm lại**, **Xóa toàn bộ lớp**, **Tô đầy vùng chọn**, **Biến đổi** và **Lật khung nhìn ngang**.
-3. **Bút**, **Bút chì**, **Cọ vẽ**, **Tẩy**, **Bút phun**, **Trang trí**, **Hòa màu**, **Biến dạng**, các công cụ vùng chọn, **Tô đầy**, **Chuyển màu**, **Thao tác**, **Hình**, **Thước**, **Bàn tay**, **Ống hút màu** và **Màu cọ**.
+3. **Bút**, **Bút chì**, **Cọ vẽ**, **Tẩy**, **Bút phun**, **Trang trí**, **Hòa màu**, **Biến dạng**, các công cụ vùng chọn, **Tô đầy**, **Chuyển màu**, **Thao tác**, **Hình**, **Thước**, **Bàn tay**, **Thu phóng**, **Ống hút màu** và **Màu cọ**.
 4. Các thẻ **Bộ công cụ** và **Chẩn đoán**, **Công cụ** và **Kích thước cọ**, **Màu** và **Bảng màu**.
 5. Biểu tượng cho **Điều hướng** và **Mô phỏng màu**, **Thuộc tính** và **Bộ lọc**, và **Lớp**.
 6. Chỉ số thu phóng và góc xoay, được mô tả trong [Xem khung vẽ](/vi/docs/start/canvas/).
@@ -63,7 +64,7 @@ cột phải, nhấn **Esc** hoặc chọn biểu tượng đang được tô s�
 
 1. **Mới…**, **Mở…**, **Lưu**, **Hoàn tác**, **Làm lại** và **Biến đổi**.
 2. **Tùy chọn công cụ**, các thiết lập của công cụ hiện tại.
-3. **Thao tác**, **Cắt xén**, các công cụ vùng chọn, **Cọ**, **Tẩy**, **Dấu sao chép**, **Cọ phục hồi điểm**, **Hòa màu**, **Biến dạng**, **Chuyển màu**, **Bàn tay**, **Ống hút màu** và **Màu cọ**.
+3. **Thao tác**, **Cắt xén**, các công cụ vùng chọn, **Cọ**, **Tẩy**, **Dấu sao chép**, **Cọ phục hồi điểm**, **Hòa màu**, **Biến dạng**, **Chuyển màu**, **Bàn tay**, **Thu phóng**, **Ống hút màu** và **Màu cọ**.
 4. **Biểu đồ phân bố** và **Dạng sóng**, **Thuộc tính** và **Bộ lọc**, và **Lớp**.
 5. Biểu tượng cho **Bộ công cụ** và **Chẩn đoán**, **Công cụ** và **Kích thước cọ**, **Điều hướng** và **Mô phỏng màu**. Mỗi biểu tượng mở riêng nhóm của nó thành một ngăn.
 

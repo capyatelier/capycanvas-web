@@ -1,6 +1,6 @@
 ---
 title: "환경 설정"
-description: "환경 설정 대화 상자와 모양, 캔버스, 입력, 색상, 앱 정보 페이지의 설정."
+description: "환경 설정 대화 상자와 모양, 캔버스, 색상, 펜 및 입력, 앱 정보 페이지의 설정."
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -99,21 +99,9 @@ Capy 버튼의 그림을 **올려다보기**(기본값), **정면 바라보기**
 
 ## 색상
 
-**새 그림** 설정은 이후에 [만드는 그림](/ko/docs/files/new/)에 적용됩니다. **사진 열기** 설정은 여는 사진에 적용됩니다.
+**사진 열기** 설정은 여는 사진에 적용됩니다.
 
-![환경 설정의 색상 페이지.](shot:preferences/color)
-
-### 색 공간
-
-**sRGB**(기본값), **Display P3**, **Adobe RGB (1998)**, **ProPhoto RGB** 중에서 고릅니다.
-
-### 비트 심도
-
-**8비트 SDR**(기본값), **16비트 SDR**, **16비트 부동 소수점 HDR**, **32비트 부동 소수점 HDR** 중에서 고릅니다.
-
-### 배경
-
-**흰색**(기본값) 또는 **투명**을 고릅니다.
+![환경 설정의 색상 페이지에 있는 사진 열기 설정.](shot:preferences/color)
 
 ### 편집 정밀도
 

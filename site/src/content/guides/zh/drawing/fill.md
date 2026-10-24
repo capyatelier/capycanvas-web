@@ -1,7 +1,7 @@
 ---
 title: "填充工具"
 description: "用当前颜色填充图层的区域、徒手形状和封闭区域。"
-related: ["drawing/gradient", "layers/settings", "selections/working", "drawing/brush-tools"]
+related: ["drawing/gradient", "layers/vector", "layers/settings", "selections/working", "drawing/brush-tools"]
 ---
 
 可以使用**填充**、**套索填充**和**围住填充**，以当前颜色填充所选图层的局部。每次填充是一个撤销步骤，并遵循**锁定透明度**设置。
@@ -57,6 +57,10 @@ related: ["drawing/gradient", "layers/settings", "selections/working", "drawing/
 每个工具各自保留来源设置。填充的初始来源为**可见画作**；每次打开 {appName} 时，围住填充都会恢复为**参考图层**。
 
 如果填充使用**参考图层**而没有任何图层被标记，填充不会画上颜料，并会显示提示，提供标记下方图层的选项。
+
+## 矢量图层
+
+在矢量图层上，**填充**会为你点击的闭合路径上色。点击其他位置，或使用**参考图层**来源时，会在矢量图层下方添加一个绘画图层并在那里填充。**套索填充**会添加一条填充的路径，**渐变**和**围住填充**则提供**在下方新建绘画图层**。参见[矢量图层](/zh/docs/layers/vector/)。
 
 ## 填充设置
 

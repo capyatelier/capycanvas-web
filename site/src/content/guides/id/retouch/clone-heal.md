@@ -19,7 +19,8 @@ Lakukan salah satu langkah berikut:
 - Tekan **S**. Tekan sekali lagi untuk beralih ke **Kuas Pemulih**, lalu **Kuas Pemulih Noda**.
 - Di Foto, pilih **Stempel Klon** atau **Kuas Pemulih Noda / Kuas Pemulih** di bilah alat Alat.
 - Di Lukis, pilih **Baurkan / Stempel Klon** di bilah alat Alat. Klik kanan atau tahan tombol itu untuk memilih **Stempel Klon**.
-- Di Sketsa, pilih **Pahat** di bilah judul, pilih sekali lagi untuk membuka laci, lalu pilih **Klon**, **Pulihkan**, atau **Pulihkan noda**.
+- Di Sketsa, pilih **Pahat** di bilah judul, pilih sekali lagi untuk membuka laci, pilih set **Retus**, lalu pilih sebuah alat.
+- Saat alat retus aktif, pilih alat di set **Retus** di **Set Alat**.
 - Ketik nama alat di [pencarian perintah](/id/docs/start/command-search/).
 
 **Kuas Pemulih** dan **Kuas Pemulih Noda** tidak memiliki tombol di Lukis.

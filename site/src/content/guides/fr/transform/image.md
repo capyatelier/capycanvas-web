@@ -69,7 +69,7 @@ Choisit, dans une grille de 3 × 3, le côté ou l’angle de l’image qui rest
 
 ## Faire pivoter et retourner l’image
 
-Choisissez l’une de ces commandes dans **Image** :
+Choisissez l’une de ces commandes dans **Image > Rotation et retournement** :
 
 - **Pivoter l’image de 90° à gauche**
 - **Pivoter l’image de 90° à droite**

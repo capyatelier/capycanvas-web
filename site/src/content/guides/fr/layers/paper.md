@@ -4,7 +4,7 @@ description: "La couleur et la texture du Papier, les papiers importés, l’éc
 related: ["layers/types", "layers/panel", "brushes/dry-media", "files/new"]
 ---
 
-Le Papier fournit la couleur de fond du dessin et la texture utilisée par les pinceaux secs.
+Le Papier fournit la couleur de fond du dessin et la texture à laquelle réagissent les pinceaux qui ont le réglage **Intensité de la texture**.
 
 ## Ligne du Papier
 
@@ -24,7 +24,9 @@ Sélectionnez la vignette de texture sur la ligne du Papier, ou **Choisir la tex
 
 ![Les papiers intégrés dans Choisir une texture.](shot:layers/paper-choose-texture)
 
-La bibliothèque comprend des surfaces Bristol, papier à dessin, pressé à chaud, pressé à froid, rugueux, poncé, vergé, washi, toile et lin. **Importer…** ajoute une image comme texture de papier réutilisable. Les papiers importés sont intégrés au dessin.
+La bibliothèque est une grille défilante unique, classée des papiers aquarelle et dessin jusqu’aux textures de surface comme le béton, le bois et le sable. Les papiers avec un sens de grain vont par paires **horizontal** et **vertical**.
+
+**Importer…** ajoute une image, RVB ou en niveaux de gris, à la fin de la grille comme texture de papier réutilisable. Les papiers importés sont intégrés au dessin.
 
 Ouvrez le menu d’un papier importé pour choisir **Renommer…** ou **Supprimer**. Un papier intégré à un dessin mais absent de votre bibliothèque propose à la place **Ajouter à la bibliothèque**.
 
@@ -48,7 +50,7 @@ Définit l’échelle physique de la texture, de 25 % à 400 %. La toile montre 
 
 ### Visibilité de la texture
 
-Définit l’intensité de l’éclairage de la texture dans l’image terminée. À 0 %, l’éclairage de la texture est désactivé.
+Définit l’intensité de l’éclairage de la texture dans l’image terminée, de 0 % à 300 %. À 0 %, l’éclairage de la texture est désactivé.
 
 ### Lumière
 
@@ -58,12 +60,12 @@ Définit la direction de la lumière sur la texture du papier.
 
 Définit la quantité d’éclairage du papier qui reste visible sur la peinture au-dessus. À 0 %, la peinture opaque en mode Normal masque l’éclairage ; à 100 %, l’éclairage affecte toute l’image.
 
-![Les mêmes marques avec différents réglages d’éclairage du papier.](shot:layers/paper-lighting)
+![Des traits sur la toile à côté du panneau Propriétés du Papier, réglé sur Toile de lin avec Visibilité de la texture 55 %, Lumière 130° et Visible à travers la peinture 100 %.](shot:layers/paper-lighting)
 
 Les exportations de l’application native incluent l’éclairage visible du papier. L’éditeur web exporte actuellement sans éclairage du papier. Le bref aperçu de texture affiché après une modification de **Texture** ou **Échelle** n’est pas exporté.
 
 ## Traits et géométrie
 
-Les nouveaux traits secs utilisent le Papier le plus proche, au niveau de leur calque ou en dessous. Masquer le Papier n’empêche pas sa texture d’influencer les nouveaux traits. Modifier la texture ou son échelle ne change pas les marques déjà dessinées.
+Les nouveaux traits des pinceaux qui ont le réglage **Intensité de la texture** utilisent le Papier le plus proche, au niveau de leur calque ou en dessous. Masquer le Papier n’empêche pas sa texture d’influencer les nouveaux traits. Modifier la texture ou son échelle ne change pas les marques déjà dessinées.
 
 Le Papier utilise la résolution d’impression du dessin pour conserver son échelle physique. **Image > Taille de l’image…** peut modifier cette résolution. Redimensionner ou faire pivoter l’image rééchantillonne le Papier avec le dessin ; le recadrage ne change pas son échelle.

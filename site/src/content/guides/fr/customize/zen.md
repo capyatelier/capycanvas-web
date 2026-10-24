@@ -1,7 +1,7 @@
 ---
 title: "Mode Zen"
 description: "Masquer la barre de titre et les panneaux ancrés avec le mode Zen, et ses préférences."
-related: ["customize/panels", "customize/toolbars", "preferences", "input/keyboard"]
+related: ["customize/panels", "customize/toolbars", "customize/bubbles", "preferences", "input/keyboard"]
 ---
 
 Vous pouvez masquer la barre de titre, les panneaux ancrés et les barres d’outils
@@ -30,11 +30,22 @@ Le mode Zen masque aussi les colonnes réduites et le pied de page. Restent
 affichés :
 
 - les panneaux flottants
+- les [bulles d’outils](/fr/docs/customize/bubbles/), avec leurs halos, sélecteurs et menus
 - la barre d’actions de la toile à côté d’une sélection ou d’une transformation
 - le bouton Capy, sauf si **Afficher Capy en mode Zen** est désactivé
 - les avis
 
 Les touches et la recherche de commandes (**Ctrl+K**) fonctionnent normalement.
+
+## Garder des barres d’outils en mode Zen
+
+Dans l’application Linux, choisissez **Afficher en mode Zen** dans le menu d’une
+barre d’outils pour garder cette barre d’outils à l’écran en mode Zen.
+
+Sur un écran tactile, dans l’application Linux, balayez vers l’intérieur avec un
+doigt à moins de 24 px du bord de la fenêtre pour afficher les barres d’outils et
+les panneaux ancrés à ce bord. Ils se masquent de nouveau quand vous touchez en
+dehors. Un stylet ou une souris ne peut pas les afficher.
 
 ## Ancrer en mode Zen
 

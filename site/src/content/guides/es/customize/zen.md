@@ -1,7 +1,7 @@
 ---
 title: "Modo Zen"
 description: "Ocultar la barra de título y los paneles acoplados con el modo Zen, y sus preferencias."
-related: ["customize/panels", "customize/toolbars", "preferences", "input/keyboard"]
+related: ["customize/panels", "customize/toolbars", "customize/bubbles", "preferences", "input/keyboard"]
 ---
 
 Puedes ocultar la barra de título y los paneles y barras de herramientas acoplados
@@ -29,11 +29,22 @@ reiniciar. **Personalizar barra de título…** desactiva el modo Zen.
 El modo Zen también oculta las columnas contraídas y el pie. Se mantienen:
 
 - los paneles flotantes
+- las [burbujas de herramientas](/es/docs/customize/bubbles/), con sus halos, selectores y menús
 - la barra de acciones del lienzo junto a una selección o una transformación
 - el botón Capy, salvo que **Mostrar Capy en modo Zen** esté desactivado
 - los avisos
 
 Las teclas y la búsqueda de comandos (**Ctrl+K**) funcionan como siempre.
+
+## Mantener barras de herramientas en modo Zen
+
+En la aplicación para Linux, elige **Mostrar en modo Zen** en el menú de una barra
+de herramientas para mantener esa barra en pantalla en el modo Zen.
+
+En una pantalla táctil en la aplicación para Linux, desliza hacia dentro con un
+dedo desde menos de 24 px del borde de la ventana para mostrar las barras de
+herramientas y los paneles acoplados en ese borde. Se ocultan de nuevo cuando
+tocas fuera de ellos. Un lápiz o un ratón no pueden mostrarlos.
 
 ## Acoplar en modo Zen
 

@@ -12,11 +12,11 @@ Les pinceaux secs utilisent la pression et l’inclinaison du stylet ainsi que l
 
 Les préréglages secs intégrés sont **Crayon**, **Crayon pointu**, **Crayon d’ombrage**, **Fusain**, **Craie**, **Bloc de pastel** et **Crayon de cire**. Sélectionnez leur outil dans la barre Outils, puis choisissez un préréglage dans **Ensemble d’outils**.
 
-Crayon et Crayon pointu réagissent à la pression et à l’inclinaison. Crayon d’ombrage, Fusain et Craie utilisent la pression pour la couverture et l’inclinaison pour les traits larges sur le côté. Bloc de pastel utilise l’arête ou la face large du bloc selon l’inclinaison du stylet. Crayon de cire réagit à la pression et à l’inclinaison avec une marque arrondie.
+Chaque préréglage réagit à la pression et à l’inclinaison du stylet. Incliner le stylet vers le papier élargit la marque en un trait large sur le côté. **Bloc de pastel** dessine avec l’extrémité du bloc quand le stylet est droit et avec son grand côté quand il est incliné.
 
 ## Réglages principaux
 
-![Les commandes principales et les réglages Matériau d’un pinceau sec.](shot:brushes/dry-media-settings)
+![Le panneau Outil de Crayon avec Taille du pinceau, Intensité, Intensité de la texture et Dureté du matériau au-dessus des groupes Lissage, Pointe et Fusion.](shot:brushes/dry-media-settings)
 
 ### Taille
 
@@ -30,11 +30,11 @@ Définit la force avec laquelle le matériau marque la surface. Les valeurs éle
 
 ### Intensité de la texture
 
-Définit l’influence de la texture du Papier sur la couverture du trait. À 0 %, le trait ne réagit pas à la texture du Papier.
+Définit l’influence de la texture du Papier sur la couverture du trait. À 0 %, le trait ne réagit pas à la texture du Papier. Le curseur va jusqu’à 200 %.
 
 ### Dureté du matériau
 
-Définit la facilité avec laquelle le matériau couvre les creux et les reliefs de la texture du Papier. Les valeurs élevées font réagir le matériau comme un matériau plus dur.
+Définit dans quelle mesure la pression du stylet change la quantité de pigment que laisse chaque contact. Aux valeurs élevées, un toucher léger laisse peu de pigment ; aux valeurs basses, il laisse des grains marqués.
 
 ## Texture du papier
 
@@ -42,4 +42,4 @@ Les traits secs utilisent le [Papier](/fr/docs/layers/paper/) le plus proche, au
 
 ![Des traits secs comparables sur les papiers Bristol, Grain fin et Sablé.](shot:layers/paper-surface-comparison)
 
-Les pinceaux secs n’affichent pas les commandes des pinceaux humides comme **Diffusion**, **Charge d’eau** ou **Mélange**. Les commandes de Pointe dépendent du préréglage.
+Les pinceaux secs n’affichent que l’**Angle de la pointe** dans le groupe **Pointe**, et aucune commande de pinceau humide comme **Diffusion**, **Charge d’eau** ou **Mélange**.

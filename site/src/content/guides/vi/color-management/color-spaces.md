@@ -1,11 +1,11 @@
 ---
 title: "Không gian màu, độ sâu bit và hòa trộn"
-description: "Chọn không gian màu, độ sâu bit và Hòa trộn của bản vẽ, và thay đổi chúng sau đó từ trình đơn Chỉnh sửa."
+description: "Chọn không gian màu, độ sâu bit và Hòa trộn của bản vẽ, và thay đổi chúng sau đó từ trình đơn Ảnh."
 related: ["files/new", "color-management/proof", "color-management/hdr", "files/export", "preferences"]
 ---
 
 Bạn có thể chọn không gian màu, độ sâu bit và Hòa trộn của bản vẽ khi tạo bản vẽ, và
-thay đổi chúng sau đó từ trình đơn **Chỉnh sửa**.
+thay đổi chúng sau đó từ trình đơn **Ảnh**.
 
 ## Các không gian màu
 
@@ -26,41 +26,30 @@ Hồ sơ màu ICC không thể làm không gian làm việc. Bạn có thể dù
 ## Chọn cho bản vẽ mới
 
 Chọn **Tệp > Mới…** (**Ctrl+N**) rồi đặt **Không gian màu**, **Độ sâu bit** và
-**Hòa trộn**, hoặc chọn một **Thiết lập đặt sẵn**:
+**Hòa trộn** trong **Màu**. Một thiết lập từ **Thiết lập đặt sẵn** đặt chúng cùng với
+tờ giấy và Giấy. Hộp thoại giữ các lựa chọn của bản vẽ gần nhất bạn đã tạo.
 
-| Thiết lập đặt sẵn | Không gian màu | Độ sâu bit | Hòa trộn |
-| --- | --- | --- | --- |
-| **Bản vẽ tiêu chuẩn** | sRGB | SDR 8 bit | Theo cảm nhận |
-| **Dải màu rộng** | Display P3 | SDR 8 bit | Theo cảm nhận |
-| **Chỉnh sửa ảnh** | ProPhoto RGB | SDR 16 bit | Theo cảm nhận |
-| **Bản vẽ HDR** | sRGB | HDR số thực 16 bit | Ánh sáng tuyến tính |
+Ở độ sâu số thực, **Hòa trộn** cố định ở Ánh sáng tuyến tính.
 
-Ở độ sâu số thực, **Hòa trộn** cố định ở Ánh sáng tuyến tính. Bật **Dùng các thiết
-lập này cho bản vẽ mới** để biến các lựa chọn này, kể cả Hòa trộn, thành mặc định cho
-bản vẽ mới.
-
-![Hộp thoại Bản vẽ mới với Không gian màu đặt là Display P3, Độ sâu bit, Hòa trộn và dòng tóm tắt.](shot:color-management/new-dialog-color)
+![Hộp thoại Bản vẽ mới với Không gian màu đặt là Display P3, Độ sâu bit và Hòa trộn trong Màu.](shot:color-management/new-dialog-color)
 
 ## Mặc định trong Tùy chọn
 
 Chọn **Chỉnh sửa > Tùy chọn** rồi mở trang **Màu**:
 
-- Trong **Bản vẽ mới**, đặt **Không gian màu**, **Độ sâu bit** và **Nền** cho các bản vẽ sau này. Các bản vẽ đang mở không thay đổi.
 - Trong **Mở ảnh**, đặt **Độ chính xác khi chỉnh sửa** (**Độ sâu nguồn** hoặc **16 bit**) và **RGB và thang xám không có hồ sơ màu** (**Coi là sRGB** hoặc **Hỏi**). Với **Hỏi**, mở ảnh không có hồ sơ màu sẽ hiện **Chọn cách diễn giải ảnh**. Ảnh có hồ sơ màu giữ hồ sơ màu nhúng của chúng.
 - Chọn **Quản lý hồ sơ màu…** để mở [Thư viện hồ sơ màu](/vi/docs/color-management/proof/).
 
-Tùy chọn không có thiết lập Hòa trộn.
-
 ## Gán hồ sơ màu
 
-Chọn **Chỉnh sửa > Gán hồ sơ màu…** để giữ nguyên các số RGB của bản vẽ và đọc chúng
+Chọn **Ảnh > Quản lý màu > Gán hồ sơ màu…** để giữ nguyên các số RGB của bản vẽ và đọc chúng
 trong một không gian làm việc khác. Chọn không gian trong **Không gian màu**, nơi
 Adobe RGB (1998) được ghi là **Adobe RGB**. Lớp Đối tượng giữ hồ sơ màu nguồn của
 [ảnh gốc](/vi/docs/layers/types/).
 
 ## Chuyển không gian màu
 
-Chọn **Chỉnh sửa > Chuyển không gian màu…** để thay đổi các số RGB sao cho màu giữ
+Chọn **Ảnh > Quản lý màu > Chuyển không gian màu…** để thay đổi các số RGB sao cho màu giữ
 nguyên vẻ ngoài trong một không gian làm việc khác, trong phạm vi dải màu của không
 gian đó.
 
@@ -87,7 +76,7 @@ bản vẽ đang mở.
 
 ## Đổi độ sâu bit
 
-Chọn **Chỉnh sửa > Đổi độ sâu bit…** để thay đổi độ chính xác lưu trữ. Không gian màu
+Chọn **Ảnh > Quản lý màu > Đổi độ sâu bit…** để thay đổi độ chính xác lưu trữ. Không gian màu
 không thay đổi.
 
 Đổi sang độ sâu số thực sẽ biến bản vẽ thành HDR và đặt Hòa trộn thành Ánh sáng tuyến
@@ -125,10 +114,10 @@ có **Hủy**.
 Bạn có thể kết hợp các lớp trên giá trị mã hóa của bản vẽ hoặc trong ánh sáng tuyến
 tính. Thực hiện một trong các cách sau:
 
-- Chọn **Chỉnh sửa > Hòa trộn > Hòa trộn theo cảm nhận** hoặc **Chỉnh sửa > Hòa trộn > Hòa trộn ánh sáng tuyến tính**.
+- Chọn **Ảnh > Hòa trộn > Hòa trộn theo cảm nhận** hoặc **Ảnh > Hòa trộn > Hòa trộn ánh sáng tuyến tính**.
 - Đặt **Hòa trộn** thành **Theo cảm nhận** hoặc **Ánh sáng tuyến tính** trong hộp thoại Bản vẽ mới.
 
-![Trình đơn Chỉnh sửa với trình đơn con Hòa trộn đang mở và Hòa trộn theo cảm nhận được đánh dấu.](shot:color-management/edit-blending-menu)
+![Trình đơn con Hòa trộn với Hòa trộn theo cảm nhận được đánh dấu.](shot:color-management/edit-blending-menu)
 
 Pixel đã vẽ giữ nguyên giá trị. Hòa trộn thay đổi:
 

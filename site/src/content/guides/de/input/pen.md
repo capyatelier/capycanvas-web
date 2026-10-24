@@ -26,6 +26,10 @@ Beide Schalter sind standardmäßig aktiviert, und **Vorhersagestärke** beträg
 Solange **Strichvorhersage aktivieren** deaktiviert ist, sind die beiden anderen
 Einstellungen nicht verfügbar.
 
+Ein Mausstrich erhält keine Vorhersage vor der Spitze, ebenso wenig ein Strich von einem
+Tablett ohne Bildschirm unter Linux, Windows und Android. Im Webeditor und unter macOS
+werden Striche von solchen Tabletts wie eingestellt vorhergesagt.
+
 | System | Vorhersage des Systems |
 | --- | --- |
 | iPad | Verfügbar |

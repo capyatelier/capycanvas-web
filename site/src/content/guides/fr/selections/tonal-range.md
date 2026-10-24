@@ -22,12 +22,11 @@ Effectuez l’une des opérations suivantes :
 de Peinture et de Photo. Quand c’est l’outil actif, le panneau Ensemble d’outils
 affiche tous les outils de sélection.
 
-![Les réglages de Plage tonale dans le tiroir Sélection de Croquis, avec Mode, Tons, Douceur et Contour progressif.](shot:selections/tonal-range-settings)
+![Les réglages de Plage tonale dans le tiroir Sélection de Croquis, avec Mode, les boutons de tons, Douceur et Contour progressif.](shot:selections/tonal-range-settings)
 
 ## Tons
 
-Sélectionnez un bouton de la ligne **Tons · diaphragmes par rapport au blanc de
-référence** pour sélectionner la bande de luminosité correspondante. La bande se
+Sélectionnez un bouton de la ligne des boutons de tons sous **Mode** pour sélectionner la bande de luminosité correspondante. La bande se
 combine avec la sélection actuelle selon le **Mode** (voir
 [Outils de sélection](/fr/docs/selections/tools/)).
 

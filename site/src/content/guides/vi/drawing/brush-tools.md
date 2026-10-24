@@ -1,25 +1,22 @@
 ---
 title: "Công cụ cọ"
 description: "Các công cụ cọ, cọ đặt sẵn có trong ứng dụng, và nơi chọn chúng."
-related: ["brushes/basics", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
+related: ["brushes/basics", "layers/vector", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
 ---
 
-Bạn có thể vẽ bằng các công cụ **Bút**, **Bút chì**, **Than vẽ**, **Phấn**, **Phấn tiên**, **Bút sáp màu**, **Cọ vẽ**, **Bút phun** và **Trang trí**, và tẩy bằng **Tẩy**. Mỗi công cụ chứa một hoặc nhiều nhóm cọ đặt sẵn có trong ứng dụng.
+Bạn có thể vẽ bằng các công cụ **Bút**, **Bút chì**, **Cọ vẽ**, **Bút phun** và **Trang trí**, và tẩy bằng **Tẩy**. Mỗi công cụ chứa một hoặc nhiều nhóm cọ đặt sẵn có trong ứng dụng.
 
 ## Công cụ và cọ đặt sẵn
 
 | Công cụ | Nhóm | Cọ đặt sẵn |
 | --- | --- | --- |
-| **Bút** | **Bút** | **Bút G**, **Bút G thô**, **Bút thư pháp**, **Bút cổ điển**, **Bút tự nhiên**, **Mực ướt**, **Mực loang**, **Mực cọ tự nhiên** |
+| **Bút** | **Bút** | **Bút G**, **Nét đều**, **Bút G thô**, **Mực loang**, **Bút thư pháp**, **Bút cổ điển**, **Bút tự nhiên**, **Mực ướt**, **Mực cọ tự nhiên** |
 | | **Bút dạ** | **Bút dạ** |
 | **Bút chì** | **Bút chì** | **Bút chì**, **Bút chì nhọn**, **Bút chì tô bóng** |
-| **Than vẽ** | **Than vẽ** | **Than vẽ** |
-| **Phấn** | **Phấn** | **Phấn** |
-| **Phấn tiên** | **Phấn tiên** | **Khối phấn tiên** |
-| **Bút sáp màu** | **Bút sáp màu** | **Bút sáp màu** |
+| | **Phấn tiên** | **Than vẽ**, **Bút sáp màu**, **Phấn**, **Khối phấn tiên** |
 | **Cọ vẽ** | **Vẽ** | **Cọ vẽ**, **Cọ lông**, **Cọ dẹt có kết cấu**, **Cọ khô phủ mỏng**, **Lớp phủ trong**, **Màu bột đục**, **Lớp phủ nhân màu** |
 | | **Màu nước** | **Màu nước phủ loãng**, **Màu nước ướt** |
-| | **Sơn dầu** | **Cọ sơn dầu đẫm**, **Dao bay**, **Cọ tròn ướt** |
+| | **Sơn dầu** | **Cọ sơn dầu đẫm**, **Dao bay**, **Cọ tròn ướt**, **Cọ trộn màu** |
 | **Bút phun** | **Bút phun** | **Bút phun** |
 | | **Phun màu** | **Phun màu** |
 | **Tẩy** | **Tẩy** | **Tẩy** |
@@ -31,13 +28,13 @@ sẵn không có màu riêng; mọi cọ đều vẽ bằng màu hiện tại tr
 
 ## Đặc tính của cọ đặt sẵn
 
-Các đặc tính này có sẵn trong cọ đặt sẵn và không có thiết lập nào để thay đổi.
+Các đặc tính này có sẵn trong cọ đặt sẵn và không có thiết lập nào để thay đổi. Các cọ đặt sẵn chất liệu khô được nêu trong [Chất liệu khô](/vi/docs/brushes/dry-media/).
 
 | Cọ đặt sẵn | Đặc tính |
 | --- | --- |
 | **Bút thư pháp**, **Bút cổ điển** | Ngòi đặt nghiêng. |
+| **Nét đều** | Giữ một độ rộng ở mọi mức lực nhấn. |
 | **Bút dạ** | Đầu vát. |
-| **Bút chì**, **Bút chì nhọn**, **Bút chì tô bóng**, **Than vẽ**, **Phấn**, **Khối phấn tiên**, **Bút sáp màu** | Lực nhấn và độ nghiêng thay đổi hình dạng và độ phủ dấu vẽ. Xem [Chất liệu khô](/vi/docs/brushes/dry-media/). |
 | **Bút phun** | Tiếp tục thêm màu khi bạn giữ yên bút. |
 | **Phun màu** | Rải dấu cọ quanh nét. |
 | **Lớp phủ nhân màu** | Vẽ ở chế độ Nhân. |
@@ -101,7 +98,7 @@ của nhóm đã chọn, còn **Công cụ** chứa thiết lập của chúng. 
 Bạn có thể xóa màu vẽ khỏi lớp đang chọn bằng **Tẩy**. Nhấn **E**, hoặc chọn **Tẩy**
 trên Thanh công cụ vẽ hoặc, trong Phác thảo, trên thanh tiêu đề.
 
-Khi bạn đang sửa mặt nạ, Tẩy xóa độ phủ của mặt nạ.
+Khi bạn đang sửa mặt nạ, Tẩy xóa độ phủ của mặt nạ. Trên lớp vector, Tẩy cắt hoặc xóa các đường ([Lớp vector](/vi/docs/layers/vector/)).
 
 Khi chọn **Màu vẽ trong suốt** trong bảng Màu, mọi cọ đều tẩy. Đầu tẩy của bút cũng
 tẩy được ([Bút](/vi/docs/input/pen/)).
@@ -115,12 +112,15 @@ lớp bộ lọc, nét vẽ vẽ lên mặt nạ của bộ lọc. Nếu bộ l�
 vào lớp mà bộ lọc áp dụng lên, hoặc vào lớp kế tiếp bên dưới
 ([Phạm vi tác động của bộ lọc](/vi/docs/filters/how-filters-apply/)).
 
+Trên lớp vector, **Bút G** và **Nét đều** thêm đường thay vì vẽ pixel ([Lớp vector](/vi/docs/layers/vector/)).
+
 Vùng chọn đang hoạt động giới hạn màu vẽ trong vùng chọn.
 
 Trên các lớp sau, nét vẽ không vẽ gì và một thông báo nêu lý do:
 
 - Nhóm hoặc lớp vùng chọn.
 - Lớp tô màu không có mặt nạ.
+- Lớp vector, với cọ không vẽ được đường.
 - Lớp đang bật **Khóa chỉnh sửa**, hoặc nằm trong nhóm đã khóa.
 - Lớp bộ lọc không có mặt nạ, khi lớp bên dưới đã khóa hoặc không tồn tại.
 - Lớp đã đổi tỷ lệ hoặc đã xoay, cho đến khi bạn chọn **Áp dụng biến đổi** ([Di chuyển và biến đổi](/vi/docs/transform/move-transform/)).

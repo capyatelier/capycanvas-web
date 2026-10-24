@@ -1,7 +1,7 @@
 ---
 title: "Chế độ Zen"
 description: "Ẩn thanh tiêu đề và các bảng đã gắn bằng chế độ Zen, và các tùy chọn của chế độ này."
-related: ["customize/panels", "customize/toolbars", "preferences", "input/keyboard"]
+related: ["customize/panels", "customize/toolbars", "customize/bubbles", "preferences", "input/keyboard"]
 ---
 
 Bạn có thể ẩn thanh tiêu đề cùng các bảng và thanh công cụ đã gắn trong chế độ Zen. Khi
@@ -29,11 +29,21 @@ Chế độ Zen được lưu cùng từng không gian làm việc và vẫn b�
 Chế độ Zen còn ẩn các cột thu gọn và chân trang. Những thứ sau vẫn hiện:
 
 - các bảng nổi
+- [bong bóng công cụ](/vi/docs/customize/bubbles/), cùng vòng thiết lập, vòng chọn và trình đơn của chúng
 - thanh khung vẽ cạnh vùng chọn hoặc hộp biến đổi
 - nút Capy, trừ khi **Hiện Capy trong chế độ Zen** đang tắt
 - các thông báo
 
 Phím tắt và tìm lệnh (**Ctrl+K**) hoạt động như bình thường.
+
+## Giữ thanh công cụ trong chế độ Zen
+
+Trong ứng dụng Linux, chọn **Hiện trong chế độ Zen** từ trình đơn của một thanh công
+cụ để giữ thanh công cụ đó trên màn hình trong chế độ Zen.
+
+Trên màn hình cảm ứng trong ứng dụng Linux, vuốt vào trong bằng một ngón tay từ trong
+phạm vi 24 px của mép cửa sổ để hiện các thanh công cụ và bảng đã gắn ở mép đó. Chúng
+ẩn lại khi bạn chạm ra ngoài. Bút hoặc chuột không thể hiện chúng.
 
 ## Gắn bảng trong chế độ Zen
 

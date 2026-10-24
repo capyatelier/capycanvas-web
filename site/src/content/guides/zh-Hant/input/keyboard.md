@@ -112,7 +112,8 @@ related: ["input/pen", "input/touch", "start/command-search", "preferences"]
 | **漸層** | **G** |
 | **形狀** | **U** |
 | **尺規** | **Shift+U** |
-| **動作** | **O** |
+| **操作** | **O** |
+| **編輯錨點** | **A** |
 | **變形** | **Ctrl+T** |
 | **裁切** | **C** |
 | **手掌** | **H** |
@@ -141,6 +142,7 @@ related: ["input/pen", "input/touch", "start/command-search", "preferences"]
 | **將選取範圍複製至新圖層** | **Ctrl+J** |
 | **將選取範圍剪下至新圖層** | **Ctrl+Shift+J** |
 | **向下合併** | **Ctrl+E** |
+| **新增向量圖層** | **Ctrl+Alt+Shift+N** |
 | **讓畫布符合視窗** | **Ctrl+0** |
 | **實際像素** | **Ctrl+1**、**Ctrl+Alt+0** |
 | **放大**、**縮小** | **Ctrl+=**、**Ctrl+-** |

@@ -1,7 +1,7 @@
 ---
 title: "Zen-Modus"
 description: "Titelleiste und angedockte Bedienfelder mit dem Zen-Modus ausblenden, und seine Einstellungen."
-related: ["customize/panels", "customize/toolbars", "preferences", "input/keyboard"]
+related: ["customize/panels", "customize/toolbars", "customize/bubbles", "preferences", "input/keyboard"]
 ---
 
 Im Zen-Modus können Sie die Titelleiste sowie die angedockten Bedienfelder und
@@ -30,11 +30,23 @@ Der Zen-Modus blendet auch zugeklappte Spalten und die Fußleiste aus. Diese Ele
 bleiben:
 
 - schwebende Bedienfelder
+- [Werkzeugblasen](/de/docs/customize/bubbles/) mit ihren Halos, Auswahlen und Menüs
 - die Leinwandaktionsleiste neben einer Auswahl oder Transformation
 - die Capy-Schaltfläche, sofern **Capy im Zen-Modus anzeigen** nicht deaktiviert ist
 - Hinweise
 
 Tasten und die Befehlssuche (**Strg+K**) funktionieren wie gewohnt.
+
+## Werkzeugleisten im Zen-Modus behalten
+
+Wählen Sie in der Linux-App **Im Zen-Modus anzeigen** im Menü einer Werkzeugleiste,
+um diese Werkzeugleiste im Zen-Modus auf dem Bildschirm zu behalten.
+
+Wischen Sie auf einem Touchscreen in der Linux-App mit einem Finger nach innen,
+beginnend innerhalb von 24 px vom Fensterrand, um die an diesem Rand angedockten
+Werkzeugleisten und Bedienfelder einzublenden. Sie werden wieder ausgeblendet, wenn
+Sie außerhalb davon berühren. Mit einem Stift oder einer Maus lassen sie sich nicht
+einblenden.
 
 ## Andocken im Zen-Modus
 

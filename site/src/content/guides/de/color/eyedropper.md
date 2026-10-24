@@ -70,7 +70,7 @@ oben im Fenster). Beide Optionen heißen in der deutschen Oberfläche **Farbpipe
 
 ![Die Lupe der Farbpipette über einem roten Strich, mit aufgenommener und aktueller Farbe im Ring.](shot:color/eyedropper-loupe)
 
-![Die Farbwählerlupe über einem Finger mit dem Abtastpunkt unter dem Kontakt.](shot:color/eyedropper-touch)
+![Die Lupe der Farbpipette am Rand eines roten Strichs, mit einem Fadenkreuz in der Mitte und einem zweifarbigen Ring.](shot:color/eyedropper-touch)
 
 Touch verwendet immer die Lupe. Wenn Sie im Arbeitsbereich Skizze **Farbpipette** auswählen, wird
 **Stil** auf die Lupe gesetzt. Ein kleines Ebenensymbol erscheint, wenn **Quelle** auf

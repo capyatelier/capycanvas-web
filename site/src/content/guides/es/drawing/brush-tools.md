@@ -1,25 +1,22 @@
 ---
 title: "Herramientas de pincel"
 description: "Las herramientas de pincel, sus preajustes incluidos y dónde elegirlos."
-related: ["brushes/basics", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
+related: ["brushes/basics", "layers/vector", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
 ---
 
-Puedes pintar con las herramientas **Pluma**, **Lápiz**, **Carboncillo**, **Tiza**, **Pastel**, **Crayón**, **Pincel de pintura**, **Aerógrafo** y **Decoración**, y borrar con **Borrador**. Cada herramienta contiene uno o varios grupos de preajustes de pincel incluidos.
+Puedes pintar con las herramientas **Pluma**, **Lápiz**, **Pincel de pintura**, **Aerógrafo** y **Decoración**, y borrar con **Borrador**. Cada herramienta contiene uno o varios grupos de preajustes de pincel incluidos.
 
 ## Herramientas y ajustes preestablecidos
 
 | Herramienta | Grupos | Preajustes |
 | --- | --- | --- |
-| **Pluma** | **Pluma** | **Plumilla G**, **Plumilla G rugosa**, **Pluma de caligrafía**, **Pluma antigua**, **Pluma realista**, **Tinta húmeda**, **Tinta con manchas**, **Tinta de pincel realista** |
+| **Pluma** | **Pluma** | **Plumilla G**, **Monolínea**, **Plumilla G rugosa**, **Tinta con manchas**, **Pluma de caligrafía**, **Pluma antigua**, **Pluma realista**, **Tinta húmeda**, **Tinta de pincel realista** |
 | | **Marcador** | **Marcador** |
 | **Lápiz** | **Lápiz** | **Lápiz**, **Lápiz afilado**, **Lápiz de sombreado** |
-| **Carboncillo** | **Carboncillo** | **Carboncillo** |
-| **Tiza** | **Tiza** | **Tiza** |
-| **Pastel** | **Pastel** | **Bloque de pastel** |
-| **Crayón** | **Crayón** | **Crayón** |
+| | **Pastel** | **Carboncillo**, **Crayón**, **Tiza**, **Bloque de pastel** |
 | **Pincel de pintura** | **Pintura** | **Pincel de pintura**, **Pincel de cerdas**, **Pincel plano con textura**, **Restregado en seco**, **Veladura transparente**, **Gouache opaco**, **Veladura multiplicar** |
 | | **Acuarela** | **Aguada de acuarela**, **Acuarela húmeda** |
-| | **Pintura al óleo** | **Óleo cargado**, **Espátula**, **Pincel redondo húmedo** |
+| | **Pintura al óleo** | **Óleo cargado**, **Espátula**, **Pincel redondo húmedo**, **Pincel de mezcla** |
 | **Aerógrafo** | **Aerógrafo** | **Aerógrafo** |
 | | **Pulverizador** | **Pulverizador** |
 | **Borrador** | **Borrador** | **Borrador** |
@@ -32,13 +29,14 @@ pintan con el color actual del [panel de color](/es/docs/color/color-panel/).
 ## Comportamiento de los ajustes preestablecidos
 
 Estos comportamientos están integrados en los ajustes preestablecidos y no se
-controlan con ningún ajuste.
+controlan con ningún ajuste. Los preajustes de medios secos se tratan en
+[Medios secos](/es/docs/brushes/dry-media/).
 
 | Preajuste | Comportamiento |
 | --- | --- |
 | **Pluma de caligrafía**, **Pluma antigua** | Plumilla inclinada. |
+| **Monolínea** | Mantiene una sola anchura con cualquier presión. |
 | **Marcador** | Punta biselada. |
-| **Lápiz**, **Lápiz afilado**, **Lápiz de sombreado**, **Carboncillo**, **Tiza**, **Bloque de pastel**, **Crayón** | La presión y la inclinación cambian la forma y la cobertura de la marca. Consulta [Medios secos](/es/docs/brushes/dry-media/). |
 | **Aerógrafo** | Sigue añadiendo pintura mientras mantienes el lápiz quieto. |
 | **Pulverizador** | Dispersa las marcas alrededor del trazo. |
 | **Veladura multiplicar** | Pinta en modo Multiplicar. |
@@ -106,7 +104,7 @@ ajuste preestablecido y el cajón sigue abierto. El cajón **Borrador** solo tie
 Puedes borrar pintura de la capa seleccionada con el **Borrador**. Pulsa **E**, o
 selecciona **Borrador** en la barra de herramientas o, en Boceto, en la barra de título.
 
-Mientras editas una máscara, el Borrador quita cobertura de la máscara.
+Mientras editas una máscara, el Borrador quita cobertura de la máscara. En una capa vectorial, corta o elimina trazados ([Capas vectoriales](/es/docs/layers/vector/)).
 
 Con **Pintura transparente** seleccionada en el panel Color, todos los pinceles
 borran. El extremo borrador de un lápiz también puede borrar ([Lápiz](/es/docs/input/pen/)).
@@ -120,12 +118,16 @@ la máscara. En una capa de filtro, el trazo pinta en la máscara del filtro. Si
 filtro no tiene máscara, el trazo va a la capa a la que se aplica el filtro o a la
 siguiente capa hacia abajo ([Cómo se aplican los filtros](/es/docs/filters/how-filters-apply/)).
 
+En una capa vectorial, **Plumilla G** y **Monolínea** añaden trazados en lugar de
+pintar píxeles ([Capas vectoriales](/es/docs/layers/vector/)).
+
 Una selección activa limita la pintura a la selección.
 
 En las siguientes capas, un trazo no pinta nada y un aviso indica el motivo:
 
 - Un grupo o una capa de selección.
 - Una capa de relleno sin máscara.
+- Una capa vectorial, con un pincel que no puede dibujar trazados.
 - Una capa con **Bloquear edición** activado o dentro de un grupo bloqueado.
 - Una capa de filtro sin máscara cuando la capa de debajo está bloqueada o no existe.
 - Una capa escalada o girada, hasta que elijas **Aplicar transformación** ([Mover y transformar](/es/docs/transform/move-transform/)).

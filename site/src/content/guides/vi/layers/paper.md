@@ -4,7 +4,7 @@ description: "Màu và kết cấu Giấy, giấy đã nhập, tỷ lệ, ánh s
 related: ["layers/types", "layers/panel", "brushes/dry-media", "files/new"]
 ---
 
-Giấy cung cấp màu nền của bản vẽ và kết cấu cho cọ chất liệu khô.
+Giấy cung cấp màu nền của bản vẽ và kết cấu mà các cọ có **Độ mạnh kết cấu** phản ứng với.
 
 ## Hàng Giấy
 
@@ -24,7 +24,9 @@ Chọn hình thu nhỏ kết cấu trên hàng Giấy hoặc chọn **Chọn k�
 
 ![Các loại giấy có sẵn trong Chọn kết cấu.](shot:layers/paper-choose-texture)
 
-Thư viện gồm bề mặt Bristol, giấy vẽ, ép nóng, ép nguội, nhám thô, phủ nhám, giấy gân, washi, vải bố và vải lanh. **Nhập…** thêm ảnh thành kết cấu giấy có thể dùng lại. Giấy đã nhập được nhúng trong bản vẽ.
+Thư viện là một lưới cuộn duy nhất, xếp từ giấy màu nước và giấy vẽ đến các kết cấu bề mặt như bê tông, gỗ và cát. Giấy có hướng vân đi theo cặp **ngang** và **dọc**.
+
+**Nhập…** thêm một ảnh, RGB hoặc thang xám, vào cuối lưới thành kết cấu giấy có thể dùng lại. Giấy đã nhập được nhúng trong bản vẽ.
 
 Mở trình đơn của giấy đã nhập để **Đổi tên…** hoặc **Xóa**. Giấy được nhúng trong bản vẽ nhưng thiếu trong thư viện có **Thêm vào thư viện** thay thế.
 
@@ -48,7 +50,7 @@ Mở **Chọn kết cấu**.
 
 ### Độ hiện kết cấu
 
-Đặt mức ánh sáng kết cấu hiện trong ảnh hoàn chỉnh. Ở 0%, ánh sáng kết cấu tắt.
+Đặt mức ánh sáng kết cấu hiện trong ảnh hoàn chỉnh, từ 0% đến 300%. Ở 0%, ánh sáng kết cấu tắt.
 
 ### Ánh sáng
 
@@ -58,12 +60,12 @@ Mở **Chọn kết cấu**.
 
 Đặt mức ánh sáng giấy còn hiện trên màu vẽ phía trên. Ở 0%, màu đục ở chế độ Bình thường che ánh sáng; ở 100%, ánh sáng ảnh hưởng toàn bộ ảnh.
 
-![Cùng các dấu vẽ với thiết lập ánh sáng giấy khác nhau.](shot:layers/paper-lighting)
+![Các nét vẽ trên khung vẽ cạnh bảng Thuộc tính của Giấy, đặt là Toan lanh với Độ hiện kết cấu 55%, Ánh sáng 130° và Hiện qua lớp màu 100%.](shot:layers/paper-lighting)
 
 Ảnh xuất từ ứng dụng gốc có ánh sáng giấy đang hiện. Trình biên tập web hiện xuất ảnh không có ánh sáng giấy. Bản xem trước kết cấu ngắn sau khi đổi **Kết cấu** hoặc **Tỷ lệ** không được xuất.
 
 ## Nét vẽ và hình học
 
-Nét chất liệu khô mới dùng Giấy gần nhất tại hoặc dưới lớp của chúng. Ẩn Giấy không ngăn kết cấu ảnh hưởng đến nét mới. Đổi kết cấu hoặc tỷ lệ không thay đổi dấu đã vẽ.
+Nét mới của các cọ có **Độ mạnh kết cấu** dùng Giấy gần nhất tại hoặc dưới lớp của chúng. Ẩn Giấy không ngăn kết cấu ảnh hưởng đến nét mới. Đổi kết cấu hoặc tỷ lệ không thay đổi dấu đã vẽ.
 
 Giấy dùng độ phân giải in của bản vẽ để giữ tỷ lệ vật lý. **Ảnh > Kích thước ảnh…** có thể đổi độ phân giải đó. Đổi kích thước hoặc xoay ảnh sẽ lấy mẫu lại Giấy cùng bản vẽ; cắt xén không đổi tỷ lệ.

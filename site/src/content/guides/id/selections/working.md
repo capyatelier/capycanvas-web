@@ -68,10 +68,12 @@ seleksi yang dikembalikan oleh Urungkan atau Ulangi. Kuas, alat isi, **Gradasi**
 - **Mask Cepat**: lihat [Mask Cepat](/id/docs/selections/quick-mask/).
 - **Simpan**: **Simpan sebagai Lapisan Seleksi**, lihat [Lapisan seleksi](/id/docs/selections/selection-layers/).
 
+Pada bilah yang sempit, tombol terakhir, seperti **Mask Cepat** dan **Simpan**, dipindahkan ke **Lainnya**.
+
 ## Menu Seleksi
 
 Anda juga dapat membuka menu **Seleksi** dari **Lainnya** di bilah seleksi, dan dari
-**Seleksi** di bawah pengaturan alat seleksi di panel Alat.
+**Seleksi** di bawah baris **Mode** di panel Alat.
 
 | Perintah | Fungsi | Tombol |
 | --- | --- | --- |
@@ -141,7 +143,7 @@ kecuali **Distorsi**, **Lengkungkan**, dan **Interpolasi** tidak tersedia.
 
 Lakukan salah satu langkah berikut:
 
-- Pilih perintah dari menu **Edit**. Perintah pembersihan juga ada di menu **Seleksi**.
+- Pilih **Edit > Isi seleksi**, **Bersihkan Piksel Terpilih**, atau **Bersihkan di Luar Seleksi**.
 - Tekan **Shift+Backspace** untuk mengisi, atau **Delete** atau **Backspace** untuk membersihkan piksel terseleksi.
 - Pilih **Isi**, atau **Bersihkan** lalu sebuah perintah, di bilah seleksi.
 - Di Lukis, pilih **Isi seleksi** di bilah alat Perintah.
@@ -158,7 +160,7 @@ Baru** juga menghapusnya dari lapisan asal.
 
 Lakukan salah satu langkah berikut:
 
-- Pilih **Seleksi > Salin Seleksi ke Lapisan Baru** atau **Seleksi > Potong Seleksi ke Lapisan Baru**.
+- Pilih **Lapisan > Baru > Salin Seleksi ke Lapisan Baru** atau **Lapisan > Baru > Potong Seleksi ke Lapisan Baru**.
 - Tekan **Ctrl+J** untuk menyalin atau **Ctrl+Shift+J** untuk memotong.
 - Pilih **Salin ke Lapisan** di bilah seleksi, lalu pilih perintah.
 

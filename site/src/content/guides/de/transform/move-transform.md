@@ -1,7 +1,7 @@
 ---
 title: "Verschieben und Transformieren"
-description: "Ebenen und ausgewählte Pixel mit dem Werkzeug Vorgang und mit Transformieren verschieben und transformieren."
-related: ["selections/working", "transform/crop", "transform/clipboard", "drawing/ruler"]
+description: "Ebenen, ausgewählte Pixel und Pfade mit dem Werkzeug Vorgang und mit Transformieren verschieben und transformieren."
+related: ["selections/working", "layers/paths", "transform/crop", "transform/clipboard", "drawing/ruler"]
 ---
 
 Mit dem Werkzeug **Vorgang** können Sie Ebenen und ausgewählte Pixel
@@ -14,7 +14,7 @@ Führen Sie eine der folgenden Aktionen aus:
 
 - Öffnen Sie im Bedienfeld Ebenen das Menü einer Ebene und wählen Sie **Ebene / Maske verschieben**.
 - Drücken Sie **O**.
-- Wählen Sie in den Arbeitsbereichen Malen und Foto in der Werkzeugleiste Werkzeuge **Vorgang / Transformieren** aus. Klicken Sie mit der rechten Maustaste auf die Schaltfläche oder halten Sie sie gedrückt, um **Vorgang** zu wählen.
+- Wählen Sie in den Arbeitsbereichen Malen und Foto in der Werkzeugleiste Werkzeuge **Vorgang / Transformieren / Punkte bearbeiten** aus. Klicken Sie mit der rechten Maustaste auf die Schaltfläche oder halten Sie sie gedrückt, um **Vorgang** zu wählen.
 - Geben Sie „Vorgang“ in die [Befehlssuche](/de/docs/start/command-search/) ein.
 
 Der Arbeitsbereich Skizze hat keine Schaltfläche **Vorgang**.
@@ -36,6 +36,10 @@ bearbeiten, verschiebt **Vorgang** die Maske.
 Sind Hilfslinien eingeblendet, wählt und zieht **Vorgang** auch Hilfslinien
 (siehe [Lineale und Hilfslinien](/de/docs/drawing/ruler/)).
 
+## Pfade verschieben
+
+Auf einer Vektorebene wählt, verschiebt, skaliert und dreht **Vorgang** Pfade, statt die Ebene zu verschieben. Drücken Sie **Strg+A**, um jeden Pfad auszuwählen. **Bearbeiten > Transformieren** wechselt bei ausgewählten Pfaden zu **Vorgang** und seinem Rahmen. Siehe [Pfade bearbeiten](/de/docs/layers/paths/).
+
 ## Kopie belassen
 
 Sie können eine Kopie der ausgewählten Pixel verschieben und die Originale an
@@ -53,7 +57,7 @@ Führen Sie eine der folgenden Aktionen aus:
 - Drücken Sie **Strg+T**.
 - Wählen Sie **Transformieren** in den Arbeitsbereichen Malen und Foto in der Werkzeugleiste Befehle aus, im Arbeitsbereich Skizze in der Titelleiste.
 - Wählen Sie in der Auswahlleiste **Transformieren** aus.
-- Klicken Sie in den Arbeitsbereichen Malen und Foto in der Werkzeugleiste Werkzeuge mit der rechten Maustaste auf **Vorgang / Transformieren** oder halten Sie es gedrückt, und wählen Sie **Transformieren**.
+- Klicken Sie in den Arbeitsbereichen Malen und Foto in der Werkzeugleiste Werkzeuge mit der rechten Maustaste auf **Vorgang / Transformieren / Punkte bearbeiten** oder halten Sie es gedrückt, und wählen Sie **Transformieren**.
 
 Bei bestehender Auswahl ändert **Transformieren** die ausgewählten Pixel der
 aktiven Ebene oder Maske. Ohne Auswahl ändert es die ausgewählten Ebenen. Ein
@@ -97,7 +101,7 @@ In jedem Modus:
 ### Modus
 
 **Frei**, **Einheitlich**, **Verzerren** oder **Verformen**. **Einheitlich**
-erhält die Proportionen. Ebenentransformationen öffnen sich in **Einheitlich**.
+erhält die Proportionen. **Frei** ist die Standardeinstellung.
 
 ### Originalgröße
 
@@ -123,7 +127,7 @@ Bei **Verformen**:
 - **Raster zurücksetzen**: ersetzt die Verformung durch ein gerades Raster.
 - **Raster**: **3 × 3** (Standard), **4 × 4** oder **5 × 5**. Verfügbar, bis Sie die Form ändern.
 
-![Die Leinwandaktionsleiste im Modus Verformen mit Raster teilen, Punkte auswählen, Raster zurücksetzen und Raster.](shot:transform/warp-bar)
+![Die Leinwandaktionsleiste im Modus Verformen mit dem Menü Vertikal teilen, Punkte auswählen, Raster zurücksetzen und dem Menü 3 × 3.](shot:transform/warp-bar)
 
 ### Schaltflächen zum Spiegeln und Drehen
 

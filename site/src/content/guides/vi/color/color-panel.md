@@ -1,7 +1,7 @@
 ---
 title: "Bảng màu hiện tại"
 description: "Chọn màu vẽ bằng vòng màu và các ô màu của bảng Màu."
-related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-management/hdr"]
+related: ["color/edit-color", "color/palettes", "color/eyedropper", "customize/bubbles", "color-management/hdr"]
 ---
 
 Bạn có thể chọn màu vẽ trong bảng **Màu**. Mọi không gian làm việc dùng chung một màu
@@ -17,6 +17,8 @@ Thực hiện một trong các cách sau:
 - Chọn **Bảng màu hiện tại** trong tìm lệnh.
 - Trong Vẽ, chọn thẻ **Màu** ở cột trái.
 - Chọn **Màu cọ** ở cuối Thanh công cụ vẽ, hoặc ở đầu bên phải thanh tiêu đề trong Phác thảo. Một ngăn mở ra với các bảng Màu và Bảng màu.
+
+Kéo **Màu cọ** lên khung vẽ để giữ vòng màu ở đó dưới dạng [vòng màu nổi](/vi/docs/customize/bubbles/).
 
 ## Vòng màu
 

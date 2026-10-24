@@ -6,12 +6,12 @@ related: ["customize/workspaces", "customize/panels", "customize/toolbars", "cus
 
 Çalışma alanı, başlık çubuğunun, araç çubuklarının ve panellerin kaydedilmiş bir
 düzenidir. {appName}'ta üç çalışma alanı bulunur: **Eskiz**, **Boya** ve
-**Fotoğraf**. Uygulama ilk seferde Boya'da, sonrasında en son kullandığınız
+**Fotoğraf**. Uygulama ilk seferde Eskiz'de, sonrasında en son kullandığınız
 çalışma alanında açılır.
 
 ## Eskiz
 
-![Tuvalde illüstrasyon örneğinin açık olduğu Eskiz çalışma alanı.](shot:start/workspaces-sketch "1 Başlık çubuğu, sol · 2 Çalışma alanı değiştirici · 3 Başlık çubuğu, sağ · 4 Fırça denetimleri")
+![Tuvalde illüstrasyon örneğinin açık olduğu Eskiz çalışma alanı.](shot:start/workspaces-sketch "1 Başlık çubuğu, sol · 2 Çalışma alanı değiştirici · 3 Başlık çubuğu, sağ · 4 Fırça denetimleri · 5 Araç baloncukları")
 
 Eskiz'de yuvaya yerleştirilmiş panel yoktur: başlık çubuğundaki araç ve panel düğmeleri çekmeceleri açar.
 
@@ -19,6 +19,7 @@ Eskiz'de yuvaya yerleştirilmiş panel yoktur: başlık çubuğundaki araç ve p
 2. Çalışma alanı değiştirici.
 3. **Fırça**, **Şekillendir**, **Silgi**, **Katmanlar paneli** ve **Fırça rengi**. Web düzenleyicisinde bunlara **Tam ekran** eklenir.
 4. **Fırça boyutu kaydırıcısı**, **Renk seçici**, **Güç kaydırıcısı**, **Geri al** ve **Yinele**.
+5. Başlık çubuğundan çıkarılmış araç baloncukları; burada ayar haleli bir **Fırça** baloncuğu ve küçük bir renk halkası (bkz. [Araç baloncukları](/tr/docs/customize/bubbles/)).
 
 | Düğme | Çekmecedeki paneller |
 | --- | --- |
@@ -28,7 +29,7 @@ Eskiz'de yuvaya yerleştirilmiş panel yoktur: başlık çubuğundaki araç ve p
 | **Dönüştür** | **Araç seti**, **Araç** |
 | **Filtreler paneli** | **Filtre türü**, **Filtreler**, **Özellikler** |
 | **Katmanlar paneli** | **Katmanlar** |
-| **Fırça rengi** | **Renk** |
+| **Fırça rengi** | **Renk**, **Paletler** |
 
 **Ana menü** menüleri açar (macOS'te menüler bunun yerine sistem menü
 çubuğundadır). **Seç**, en son kullandığınız seçim aracını seçer.
@@ -44,7 +45,7 @@ Boya, panelleri tuvalin iki yanındaki sütunlara yerleştirir.
 
 1. **Capy (Zen modu)** ve menüler, ortada çizimin başlığı, ardından çalışma alanı değiştirici ve **Ayarlar**. Web düzenleyicisinde bunlara **Tam ekran** eklenir.
 2. **Yeni…**, **Aç…**, **Kaydet**, **Geri al**, **Yinele**, **Katmanın tamamını temizle**, **Seçimi doldur**, **Dönüştür** ve **Görünümü yatay çevir**.
-3. **Kalem**, **Kurşun kalem**, **Boya fırçası**, **Silgi**, **Pistole**, **Süsleme**, **Karıştır**, **Sıvılaştır**, seçim araçları, **Doldur**, **Gradyan**, **İşlem**, **Şekil**, **Cetvel**, **El**, **Damlalık** ve **Fırça rengi**.
+3. **Kalem**, **Kurşun kalem**, **Boya fırçası**, **Silgi**, **Pistole**, **Süsleme**, **Karıştır**, **Sıvılaştır**, seçim araçları, **Doldur**, **Gradyan**, **İşlem**, **Şekil**, **Cetvel**, **El**, **Yakınlaştır**, **Damlalık** ve **Fırça rengi**.
 4. Sekmeler: **Araç seti** ile **Tanılama**, **Araç** ile **Fırça boyutu**, **Renk** ile **Paletler**.
 5. Simgeler: **Gezgin** ile **Renk provası**, **Özellikler** ile **Filtreler** ve **Katmanlar**.
 6. [Tuvali görüntüleme](/tr/docs/start/canvas/) sayfasında anlatılan yakınlaştırma ve döndürme göstergesi.
@@ -63,7 +64,7 @@ Fotoğraf, fotoğraf düzenleme panellerini sağda açık tutar. Başlık çubu�
 
 1. **Yeni…**, **Aç…**, **Kaydet**, **Geri al**, **Yinele** ve **Dönüştür**.
 2. Geçerli aracın ayarlarını içeren **Araç seçenekleri**.
-3. **İşlem**, **Kırp**, seçim araçları, **Fırça**, **Silgi**, **Klonlama damgası**, **Nokta düzeltme fırçası**, **Karıştır**, **Sıvılaştır**, **Gradyan**, **El**, **Damlalık** ve **Fırça rengi**.
+3. **İşlem**, **Kırp**, seçim araçları, **Fırça**, **Silgi**, **Klonlama damgası**, **Nokta düzeltme fırçası**, **Karıştır**, **Sıvılaştır**, **Gradyan**, **El**, **Yakınlaştır**, **Damlalık** ve **Fırça rengi**.
 4. **Histogram** ile **Dalga biçimi**, **Özellikler** ile **Filtreler** ve **Katmanlar**.
 5. Simgeler: **Araç seti** ile **Tanılama**, **Araç** ile **Fırça boyutu**, **Gezgin** ile **Renk provası**. Her simge kendi grubunu tek başına bir çekmece olarak açar.
 

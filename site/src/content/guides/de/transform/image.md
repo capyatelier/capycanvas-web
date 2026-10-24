@@ -68,7 +68,7 @@ bleibt. Standard ist **Mitte**.
 
 ## Bild drehen und spiegeln
 
-Wählen Sie einen dieser Befehle unter **Bild**:
+Wählen Sie einen dieser Befehle unter **Bild > Drehen und spiegeln**:
 
 - **Bild 90° nach links drehen**
 - **Bild 90° nach rechts drehen**

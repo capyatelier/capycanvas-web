@@ -43,7 +43,7 @@ Aşağıdakilerden birini yapın:
 
 ## Durak düzenleyicisi
 
-![Gradyan aracı için Araç paneli: Şekil satırı, durak düzenleyicisi ve Opaklık.](shot:drawing/gradient-tool-panel)
+![Gradyan aracı için Araç paneli: Şekil satırı ve durak düzenleyicisi.](shot:drawing/gradient-tool-panel)
 
 Gradyanın renklerini **Araç** panelinde **Şekil** satırının altındaki durak
 düzenleyicisinde düzenleyebilirsiniz. Araç seçenekleri çubuğundaki gradyan

@@ -1,7 +1,7 @@
 ---
 title: "Di chuyển và biến đổi"
-description: "Di chuyển và biến đổi lớp và pixel đã chọn bằng công cụ Thao tác và lệnh Biến đổi."
-related: ["selections/working", "transform/crop", "transform/clipboard", "drawing/ruler"]
+description: "Di chuyển và biến đổi lớp, pixel đã chọn và đường bằng công cụ Thao tác và lệnh Biến đổi."
+related: ["selections/working", "layers/paths", "transform/crop", "transform/clipboard", "drawing/ruler"]
 ---
 
 Bạn có thể di chuyển lớp và pixel đã chọn bằng công cụ **Thao tác**, và đổi tỷ lệ,
@@ -13,7 +13,7 @@ Thực hiện một trong các cách sau:
 
 - Mở trình đơn của một lớp trong bảng Lớp rồi chọn **Di chuyển lớp / mặt nạ**.
 - Nhấn **O**.
-- Trong Vẽ và Ảnh, chọn **Thao tác / Biến đổi** trên Thanh công cụ vẽ. Nhấp chuột phải hoặc giữ nút để chọn **Thao tác**.
+- Trong Vẽ và Ảnh, chọn **Thao tác / Biến đổi / Sửa điểm** trên Thanh công cụ vẽ. Nhấp chuột phải hoặc giữ nút để chọn **Thao tác**.
 - Gõ “Thao tác” vào [tìm lệnh](/vi/docs/start/command-search/).
 
 Phác thảo không có nút **Thao tác**.
@@ -33,6 +33,10 @@ bước nguyên pixel. Khi bạn đang sửa mặt nạ, **Thao tác** di chuy�
 Khi đường hướng dẫn đang hiện, **Thao tác** còn chọn và kéo được đường hướng dẫn
 (xem [Thước và đường hướng dẫn](/vi/docs/drawing/ruler/)).
 
+## Di chuyển đường
+
+Trên lớp vector, **Thao tác** chọn, di chuyển, đổi tỷ lệ và xoay các đường thay vì di chuyển lớp. Nhấn **Ctrl+A** để chọn mọi đường. **Chỉnh sửa > Biến đổi** khi đã chọn đường sẽ chuyển sang **Thao tác** và khung của nó. Xem [Chỉnh sửa đường](/vi/docs/layers/paths/).
+
 ## Giữ bản sao
 
 Bạn có thể di chuyển một bản sao của các pixel đã chọn và giữ nguyên bản gốc tại
@@ -50,7 +54,7 @@ Thực hiện một trong các cách sau:
 - Nhấn **Ctrl+T**.
 - Chọn **Biến đổi** trên Thanh lệnh trong Vẽ và Ảnh, hoặc trên thanh tiêu đề trong Phác thảo.
 - Chọn **Biến đổi** trên thanh vùng chọn.
-- Trong Vẽ và Ảnh, nhấp chuột phải hoặc giữ **Thao tác / Biến đổi** trên Thanh công cụ vẽ rồi chọn **Biến đổi**.
+- Trong Vẽ và Ảnh, nhấp chuột phải hoặc giữ **Thao tác / Biến đổi / Sửa điểm** trên Thanh công cụ vẽ rồi chọn **Biến đổi**.
 
 Khi có vùng chọn, **Biến đổi** thay đổi các pixel đã chọn của lớp hoặc mặt nạ hiện
 tại. Khi không có vùng chọn, lệnh thay đổi các lớp đã chọn. Một hộp có tay nắm và
@@ -93,7 +97,7 @@ biến đổi, và **Hoàn tác** cũng vậy khi bạn đang biến đổi lớ
 ### Chế độ
 
 **Tự do**, **Đồng tỷ lệ**, **Làm méo** hoặc **Uốn cong**. **Đồng tỷ lệ** giữ tỷ
-lệ khung hình. Biến đổi lớp mở ở **Đồng tỷ lệ**.
+lệ khung hình. **Tự do** là mặc định.
 
 ### Kích thước gốc
 
@@ -117,7 +121,7 @@ Với **Uốn cong**:
 - **Đặt lại lưới**: thay vùng uốn bằng một lưới thẳng.
 - **Lưới**: **3 × 3** (mặc định), **4 × 4** hoặc **5 × 5**. Dùng được cho đến khi bạn thay đổi hình dạng.
 
-![Thanh khung vẽ ở chế độ Uốn cong, với Chia lưới, Chọn điểm, Đặt lại lưới và Lưới.](shot:transform/warp-bar)
+![Thanh khung vẽ ở chế độ Uốn cong, với trình đơn Chia dọc, Chọn điểm, Đặt lại lưới và trình đơn 3 × 3.](shot:transform/warp-bar)
 
 ### Nút lật và xoay
 

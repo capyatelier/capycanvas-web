@@ -6,12 +6,12 @@ related: ["customize/workspaces", "customize/panels", "customize/toolbars", "cus
 
 Un espace de travail est une disposition enregistrée de la barre de titre, des
 barres d’outils et des panneaux. {appName} en propose trois : **Croquis**,
-**Peinture** et **Photo**. Il s’ouvre dans Peinture la première fois, puis dans le
+**Peinture** et **Photo**. Il s’ouvre dans Croquis la première fois, puis dans le
 dernier espace de travail utilisé.
 
 ## Croquis
 
-![L’espace de travail Croquis avec l’exemple d’illustration sur la toile.](shot:start/workspaces-sketch "1 Barre de titre, à gauche · 2 Sélecteur d’espaces de travail · 3 Barre de titre, à droite · 4 Réglages du pinceau")
+![L’espace de travail Croquis avec l’exemple d’illustration sur la toile.](shot:start/workspaces-sketch "1 Barre de titre, à gauche · 2 Sélecteur d’espaces de travail · 3 Barre de titre, à droite · 4 Réglages du pinceau · 5 Bulles d’outils")
 
 Croquis n’a aucun panneau ancré : les boutons d’outils et de panneaux de la barre de titre ouvrent des tiroirs.
 
@@ -19,6 +19,7 @@ Croquis n’a aucun panneau ancré : les boutons d’outils et de panneaux de l
 2. Le sélecteur d’espace de travail.
 3. **Pinceau**, **Sculpture**, **Gomme**, **Panneau Calques** et **Couleur du pinceau**. L’éditeur web ajoute **Plein écran**.
 4. **Curseur de taille du pinceau**, **Pipette**, **Curseur d’intensité**, **Annuler** et **Rétablir**.
+5. Bulles d’outils sorties de la barre de titre, ici une bulle **Pinceau** avec son halo de réglages et un petit anneau de couleur (voir [Bulles d’outils](/fr/docs/customize/bubbles/)).
 
 | Bouton | Panneaux du tiroir |
 | --- | --- |
@@ -28,7 +29,7 @@ Croquis n’a aucun panneau ancré : les boutons d’outils et de panneaux de l
 | **Transformer** | **Ensemble d’outils**, **Outil** |
 | **Panneau Filtres** | **Type de filtre**, **Filtres**, **Propriétés** |
 | **Panneau Calques** | **Calques** |
-| **Couleur du pinceau** | **Couleur** |
+| **Couleur du pinceau** | **Couleur**, **Palettes** |
 
 **Menu principal** ouvre les menus (sur macOS, ils se trouvent plutôt dans la barre
 des menus du système). **Sélection** choisit le dernier outil de sélection utilisé.
@@ -44,7 +45,7 @@ Peinture ancre les panneaux dans des colonnes, de part et d’autre de la toile.
 
 1. **Capy (mode Zen)** et les menus, le titre du dessin au centre, puis le sélecteur d’espaces de travail et **Réglages**. L’éditeur web ajoute **Plein écran**.
 2. **Nouveau…**, **Ouvrir…**, **Enregistrer**, **Annuler**, **Rétablir**, **Effacer tout le calque**, **Remplir la sélection**, **Transformer** et **Retourner la vue horizontalement**.
-3. **Plume**, **Crayon**, **Pinceau de peinture**, **Gomme**, **Aérographe**, **Décoration**, **Mélange**, **Fluidité**, les outils de sélection, **Remplissage**, **Dégradé**, **Opération**, **Figure**, **Règle**, **Main**, **Pipette** et **Couleur du pinceau**.
+3. **Plume**, **Crayon**, **Pinceau de peinture**, **Gomme**, **Aérographe**, **Décoration**, **Mélange**, **Fluidité**, les outils de sélection, **Remplissage**, **Dégradé**, **Opération**, **Figure**, **Règle**, **Main**, **Zoom**, **Pipette** et **Couleur du pinceau**.
 4. Les onglets **Ensemble d’outils** et **Diagnostics**, **Outil** et **Taille du pinceau**, et **Couleur** et **Palettes**.
 5. Les icônes de **Navigateur** et **Épreuvage**, de **Propriétés** et **Filtres**, et de **Calques**.
 6. L’affichage du zoom et de la rotation, décrit dans [Afficher la toile](/fr/docs/start/canvas/).
@@ -64,7 +65,7 @@ Photo garde les panneaux de retouche photo ouverts à droite. Sa barre de titre 
 
 1. **Nouveau…**, **Ouvrir…**, **Enregistrer**, **Annuler**, **Rétablir** et **Transformer**.
 2. **Options de l’outil**, les réglages de l’outil actif.
-3. **Opération**, **Recadrer**, les outils de sélection, **Pinceau**, **Gomme**, **Tampon de duplication**, **Correcteur localisé**, **Mélange**, **Fluidité**, **Dégradé**, **Main**, **Pipette** et **Couleur du pinceau**.
+3. **Opération**, **Recadrer**, les outils de sélection, **Pinceau**, **Gomme**, **Tampon de duplication**, **Correcteur localisé**, **Mélange**, **Fluidité**, **Dégradé**, **Main**, **Zoom**, **Pipette** et **Couleur du pinceau**.
 4. **Histogramme** et **Forme d’onde**, **Propriétés** et **Filtres**, et **Calques**.
 5. Les icônes d’**Ensemble d’outils** et **Diagnostics**, d’**Outil** et **Taille du pinceau**, et de **Navigateur** et **Épreuvage**. Chaque icône ouvre son groupe seul, dans un tiroir.
 

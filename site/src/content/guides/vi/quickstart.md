@@ -19,15 +19,17 @@ Sau lần truy cập đầu tiên, trình chỉnh sửa web mở được cả k
 
 ![Bảng Lớp của một bản vẽ mới, với Mực hiện tại nằm trên Giấy.](shot:files/new-layers)
 
-Lần đầu mở {appName}, ứng dụng hiện không gian làm việc [Vẽ](/vi/docs/start/workspaces/) với bản vẽ A4 ngang trống ở 300 ppi. **Mực hiện tại**, lớp vẽ trống, được chọn phía trên **Giấy**. Công cụ **Bút** đang dùng với cọ **Bút G** và màu gần đen.
+Lần đầu mở {appName}, ứng dụng hiện không gian làm việc [Phác thảo](/vi/docs/start/workspaces/) với bản vẽ ngang trống, tỷ lệ 4:3 và cao bằng màn hình của bạn. **Mực hiện tại**, lớp vẽ trống, được chọn phía trên **Giấy**, có kết cấu **Vân vừa**. Công cụ **Bút chì** đang dùng với màu xám đậm.
 
 Những lần sau, {appName} mở không gian làm việc bạn dùng gần nhất cùng các bản
 vẽ đang mở lúc đó.
 
 ## Vẽ
 
-Kéo trên khung vẽ bằng bút hoặc chuột. Để dùng công cụ khác, chọn công cụ đó trên
-Thanh công cụ vẽ ở cạnh trái cửa sổ. Trong Phác thảo, chọn **Cọ** trên thanh tiêu đề.
+Kéo trên khung vẽ bằng bút hoặc chuột. Để dùng công cụ khác, chọn **Cọ**
+trên thanh tiêu đề trong Phác thảo, hoặc chọn công cụ trên Thanh công cụ vẽ ở cạnh trái
+trong Vẽ. Kéo một công cụ lên khung vẽ để giữ nó ở đó dưới dạng
+[bong bóng](/vi/docs/customize/bubbles/).
 
 > **Lưu ý:** Ngón tay không vẽ được. Hai ngón tay trên khung vẽ dùng để di chuyển, thu phóng và xoay khung nhìn.
 
@@ -48,7 +50,7 @@ trong trình chỉnh sửa web. Hãy chọn lệnh đó từ trình đơn hoặc
 
 ## Tạo bản vẽ khác
 
-Chọn **Tệp > Mới…** và chọn **Tạo** trong hộp thoại [Bản vẽ mới](/vi/docs/files/new/). Chọn kích thước, độ phân giải, Giấy và thiết lập màu rồi chọn **Tạo**. Bản vẽ mới mở trong thẻ riêng cạnh bản vẽ đầu.
+Chọn **Tệp > Mới…** để mở hộp thoại [Bản vẽ mới](/vi/docs/files/new/). Bản vẽ mới mở trong thẻ riêng cạnh bản vẽ đầu.
 
 ## Lưu bản vẽ
 

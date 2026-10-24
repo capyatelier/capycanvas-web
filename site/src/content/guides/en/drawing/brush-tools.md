@@ -1,10 +1,10 @@
 ---
 title: "Brush tools"
 description: "The brush tools, their built-in presets, and where you choose them."
-related: ["brushes/basics", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
+related: ["brushes/basics", "layers/vector", "brushes/dry-media", "brushes/smoothing", "drawing/blend-liquify", "color/color-panel"]
 ---
 
-You can paint with the **Pen**, **Pencil**, **Charcoal**, **Chalk**, **Pastel**, **Crayon**, **Paint Brush**, **Airbrush** and
+You can paint with the **Pen**, **Pencil**, **Paint Brush**, **Airbrush** and
 **Decoration** tools, and erase with the **Eraser**. Each tool holds one or
 more groups of built-in brush presets.
 
@@ -12,16 +12,13 @@ more groups of built-in brush presets.
 
 | Tool | Groups | Presets |
 | --- | --- | --- |
-| **Pen** | **Pen** | **G-Pen**, **Rough G-Pen**, **Calligraphy Pen**, **Antique Pen**, **Realistic Pen**, **Wet Ink**, **Blotty Ink**, **Realistic Brushed Ink** |
+| **Pen** | **Pen** | **G-Pen**, **Monoline**, **Rough G-Pen**, **Blotty Ink**, **Calligraphy Pen**, **Antique Pen**, **Realistic Pen**, **Wet Ink**, **Realistic Brushed Ink** |
 | | **Marker** | **Marker** |
 | **Pencil** | **Pencil** | **Pencil**, **Pointy Pencil**, **Shading Pencil** |
-| **Charcoal** | **Charcoal** | **Charcoal** |
-| **Chalk** | **Chalk** | **Chalk** |
-| **Pastel** | **Pastel** | **Pastel Block** |
-| **Crayon** | **Crayon** | **Crayon** |
+| | **Pastel** | **Charcoal**, **Crayon**, **Chalk**, **Pastel Block** |
 | **Paint Brush** | **Paint** | **Paintbrush**, **Bristle Paintbrush**, **Textured Flat**, **Dry Scumble**, **Transparent Glaze**, **Opaque Gouache**, **Multiply Glaze** |
 | | **Watercolor** | **Watercolor Wash**, **Wet Watercolor** |
-| | **Oil paint** | **Loaded Oil**, **Palette Knife**, **Wet Round** |
+| | **Oil paint** | **Loaded Oil**, **Palette Knife**, **Wet Round**, **Mixing Brush** |
 | **Airbrush** | **Airbrush** | **Airbrush** |
 | | **Spray** | **Spray** |
 | **Eraser** | **Eraser** | **Eraser** |
@@ -33,13 +30,14 @@ color of their own; every brush paints with the current color in the
 
 ## Preset behavior
 
-These behaviors are built into the presets and have no setting.
+These behaviors are built into the presets and have no setting. The dry-media
+presets are covered in [Dry media](/docs/brushes/dry-media/).
 
 | Preset | Behavior |
 | --- | --- |
 | **Calligraphy Pen**, **Antique Pen** | Angled nib. |
+| **Monoline** | Keeps one width at every pressure. |
 | **Marker** | Chisel tip. |
-| **Pencil**, **Pointy Pencil**, **Shading Pencil**, **Charcoal**, **Chalk**, **Pastel Block**, **Crayon** | Pressure and tilt change the shape and coverage of the mark. See [Dry media](/docs/brushes/dry-media/). |
 | **Airbrush** | Keeps adding paint while you hold the pen still. |
 | **Spray** | Scatters its dabs around the stroke. |
 | **Multiply Glaze** | Paints in Multiply mode. |
@@ -103,7 +101,8 @@ Choosing a group selects its last preset and leaves the drawer open. The
 You can erase paint from the selected layer with the **Eraser**. Press **E**,
 or select **Eraser** in the Tools toolbar or, in Sketch, in the title bar.
 
-While you edit a mask, the Eraser removes mask coverage.
+While you edit a mask, the Eraser removes mask coverage. On a vector layer, it
+cuts or removes paths ([Vector layers](/docs/layers/vector/)).
 
 With **Transparent paint** selected in the Color panel, every brush erases. The
 eraser end of a pen can also erase ([Pen](/docs/input/pen/)).
@@ -117,6 +116,9 @@ On a filter layer, the stroke paints the filter's mask. If the filter has no
 mask, the stroke goes to the layer the filter applies to, or to the next layer
 below ([How filters apply](/docs/filters/how-filters-apply/)).
 
+On a vector layer, **G-Pen** and **Monoline** add paths instead of painting
+pixels ([Vector layers](/docs/layers/vector/)).
+
 An active selection limits paint to the selection.
 
 On the following layers, a stroke paints nothing and a notice gives the
@@ -124,6 +126,7 @@ reason:
 
 - A group or a selection layer.
 - A fill layer without a mask.
+- A vector layer, for a brush that can't draw paths.
 - A layer with **Lock editing** on, or inside a locked group.
 - A filter layer without a mask, when the layer below it is locked or missing.
 - A scaled or rotated layer, until you choose **Apply transform** ([Move and Transform](/docs/transform/move-transform/)).

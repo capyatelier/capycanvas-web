@@ -1,6 +1,6 @@
 ---
 title: "Preferencias"
-description: "El diálogo Preferencias y los ajustes de sus páginas Apariencia, Lienzo, Lápiz y entrada, Color y Acerca de."
+description: "El diálogo Preferencias y los ajustes de sus páginas Apariencia, Lienzo, Color, Lápiz y entrada y Acerca de."
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -124,25 +124,9 @@ forma predeterminada. Los grupos existentes no cambian.
 
 ## Color
 
-Los ajustes de **Dibujos nuevos** se aplican a los
-[dibujos que crees](/es/docs/files/new/) a partir de entonces. Los ajustes de **Al
-abrir fotos** se aplican a las fotos que abras.
+Los ajustes de **Al abrir fotos** se aplican a las fotos que abras.
 
-![La página Color de Preferencias.](shot:preferences/color)
-
-### Espacio de color
-
-Elige **sRGB** (el predeterminado), **Display P3**, **Adobe RGB (1998)** o
-**ProPhoto RGB**.
-
-### Profundidad de bits
-
-Elige **SDR de 8 bits** (la predeterminada), **SDR de 16 bits**, **HDR de coma
-flotante de 16 bits** o **HDR de coma flotante de 32 bits**.
-
-### Fondo
-
-Elige **Blanco** (el predeterminado) o **Transparente**.
+![Los ajustes de Al abrir fotos en la página Color de Preferencias.](shot:preferences/color)
 
 ### Precisión de edición
 

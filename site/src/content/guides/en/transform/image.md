@@ -71,7 +71,7 @@ Picks the side or corner of the image that stays in place, from a 3 × 3 grid.
 
 ## Rotating and flipping the image
 
-Choose one of these from **Image**:
+Choose one of these from **Image > Rotate and Flip**:
 
 - **Rotate Image 90° Left**
 - **Rotate Image 90° Right**

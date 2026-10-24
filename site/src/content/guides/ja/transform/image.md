@@ -58,7 +58,7 @@ related: ["transform/crop", "start/canvas", "files/new", "color-management/color
 
 ## 画像の回転と反転
 
-**画像**から、次のいずれかを選びます。
+**画像 > 回転と反転**から、次のいずれかを選びます。
 
 - **画像を左に90°回転**
 - **画像を右に90°回転**

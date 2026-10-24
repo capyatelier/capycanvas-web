@@ -1,7 +1,7 @@
 ---
 title: "Pemindahan dan transformasi"
-description: "Memindahkan dan mentransformasi lapisan serta piksel terseleksi dengan alat Operasi dan Transformasi."
-related: ["selections/working", "transform/crop", "transform/clipboard", "drawing/ruler"]
+description: "Memindahkan dan mentransformasi lapisan, piksel terseleksi, dan jalur dengan alat Operasi dan Transformasi."
+related: ["selections/working", "layers/paths", "transform/crop", "transform/clipboard", "drawing/ruler"]
 ---
 
 Anda dapat memindahkan lapisan dan piksel terseleksi dengan alat **Operasi**, serta
@@ -14,7 +14,7 @@ Lakukan salah satu langkah berikut:
 
 - Buka menu lapisan di panel Lapisan, lalu pilih **Pindahkan lapisan / mask**.
 - Tekan **O**.
-- Di Lukis dan Foto, pilih **Operasi / Transformasi** di bilah alat Alat. Klik kanan atau tahan tombol itu untuk memilih **Operasi**.
+- Di Lukis dan Foto, pilih **Operasi / Transformasi / Edit titik** di bilah alat Alat. Klik kanan atau tahan tombol itu untuk memilih **Operasi**.
 - Ketik "Operasi" di [pencarian perintah](/id/docs/start/command-search/).
 
 Sketsa tidak memiliki tombol **Operasi**.
@@ -34,6 +34,10 @@ dalam langkah piksel utuh. Selama Anda mengedit mask, **Operasi** memindahkan ma
 Saat garis bantu ditampilkan, **Operasi** juga memilih dan menyeret garis bantu
 (lihat [Penggaris dan garis bantu](/id/docs/drawing/ruler/)).
 
+## Memindahkan jalur
+
+Pada lapisan vektor, **Operasi** memilih, memindahkan, menskalakan, dan memutar jalur alih-alih memindahkan lapisan. Tekan **Ctrl+A** untuk memilih setiap jalur. **Edit > Transformasi** dengan jalur terpilih beralih ke **Operasi** beserta bingkainya. Lihat [Mengedit jalur](/id/docs/layers/paths/).
+
 ## Tinggalkan Salinan
 
 Anda dapat memindahkan salinan piksel terseleksi dan membiarkan aslinya tetap di
@@ -51,7 +55,7 @@ Lakukan salah satu langkah berikut:
 - Tekan **Ctrl+T**.
 - Pilih **Transformasi** di bilah alat Perintah di Lukis dan Foto, atau di bilah judul di Sketsa.
 - Pilih **Transformasi** di bilah seleksi.
-- Di Lukis dan Foto, klik kanan atau tahan **Operasi / Transformasi** di bilah alat Alat, lalu pilih **Transformasi**.
+- Di Lukis dan Foto, klik kanan atau tahan **Operasi / Transformasi / Edit titik** di bilah alat Alat, lalu pilih **Transformasi**.
 
 Jika ada seleksi, **Transformasi** mengubah piksel terseleksi pada lapisan aktif atau
 mask. Jika tidak ada, perintah ini mengubah lapisan terpilih. Kotak dengan pegangan
@@ -95,7 +99,7 @@ Dalam setiap mode:
 ### Mode
 
 **Bebas**, **Seragam**, **Distorsi**, atau **Lengkungkan**. **Seragam** mempertahankan
-proporsi. Transformasi lapisan terbuka dalam **Seragam**.
+proporsi. **Bebas** adalah bawaan.
 
 ### Ukuran Asli
 
@@ -120,7 +124,7 @@ Dengan **Lengkungkan**:
 - **Atur Ulang Kisi**: mengganti lengkungan dengan kisi lurus.
 - **Kisi**: **3 × 3** (bawaan), **4 × 4**, atau **5 × 5**. Tersedia sampai Anda mengubah bentuknya.
 
-![Bilah kanvas dalam mode Lengkungkan, dengan Pisahkan Kisi, Pilih Titik, Atur Ulang Kisi, dan Kisi.](shot:transform/warp-bar)
+![Bilah kanvas dalam mode Lengkungkan, dengan menu Pisahkan secara Vertikal, Pilih Titik, Atur Ulang Kisi, dan menu 3 × 3.](shot:transform/warp-bar)
 
 ### Tombol balik dan putar
 

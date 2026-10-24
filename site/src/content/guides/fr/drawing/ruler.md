@@ -97,11 +97,12 @@ apparaît sous ses poignées.
 | **Magnétisme** | Active ou désactive **Aligner sur les règles**. |
 | **Repères** | Affiche ou masque tous les repères. Les masquer masque aussi la barre. |
 | **Redresser** | Lance **Redresser l’image selon le repère**. Uniquement pour un repère Droit. |
+| **Plus** | Ouvre un menu avec **Afficher la barre d’actions de la toile**. |
 
 Désactiver **Affichage > Afficher la barre d’actions de la toile** retire la
 barre du repère.
 
-![La barre du repère sous un repère Droit sélectionné, avec Supprimer, Magnétisme, Repères et Redresser.](shot:drawing/ruler-guide-bar)
+![La barre du repère sous un repère Droit sélectionné, avec Supprimer, Magnétisme, Repères, Redresser et Plus.](shot:drawing/ruler-guide-bar)
 
 ## Déplacer les repères avec Opération
 

@@ -58,7 +58,7 @@ máscaras y las capas de filtro ([Abrir y guardar](/es/docs/files/open-save/)).
 3. Pon **Tamaño en píxeles** en **Ajustar a los límites**, y deja **Anchura máxima (px)** y **Altura máxima (px)** en 2048.
 4. Selecciona **Elegir archivo…** y elige una carpeta y un nombre.
 
-![El diálogo Exportar imagen con Web / Compartir, Imagen JPEG, Calidad 90 y Ajustar a los límites.](shot:photo/export-jpeg)
+![Los ajustes de exportación con Web / Compartir, Imagen JPEG, Calidad 90 y Ajustar a los límites.](shot:photo/export-jpeg)
 
 Exportar no cambia el dibujo
 ([Exportar imágenes](/es/docs/files/export/)).

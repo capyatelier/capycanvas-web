@@ -22,12 +22,11 @@ Faça uma das seguintes ações:
 Pintura e de Foto. Enquanto ele é a ferramenta atual, o painel Conjunto de
 ferramentas lista todas as ferramentas de seleção.
 
-![As configurações de Intervalo tonal na gaveta Selecionar de Esboço, com Modo, Tons, Suavidade e Difusão.](shot:selections/tonal-range-settings)
+![As configurações de Intervalo tonal na gaveta Selecionar de Esboço, com Modo, os botões de tons, Suavidade e Difusão.](shot:selections/tonal-range-settings)
 
 ## Tons
 
-Selecione um botão na linha **Tons · pontos de exposição relativos ao branco de referência**
-para selecionar essa faixa de brilho. A faixa se combina com a seleção atual de
+Selecione um botão na linha de botões de tons abaixo de **Modo** para selecionar essa faixa de brilho. A faixa se combina com a seleção atual de
 acordo com o **Modo** (consulte [Ferramentas de seleção](/pt-BR/docs/selections/tools/)).
 
 A dica de cada botão indica a faixa dele:

@@ -7,7 +7,7 @@ related: ["filters/adding", "filters/tone", "filters/how-filters-apply"]
 Filter Warna ada di **Filter > Warna** dan di kategori **Warna** pada panel
 **Filter**. Pengaturannya diubah di panel **Properti**.
 
-![Panel Filter yang menampilkan kategori Warna dengan pratinjau setiap filter.](shot:filters/color-list)
+![Kategori Warna di panel Filter, dari Rona / Saturasi hingga Peta Gradasi, masing-masing dengan pratinjau goresan.](shot:filters/color-list)
 
 ## Rona / Saturasi
 

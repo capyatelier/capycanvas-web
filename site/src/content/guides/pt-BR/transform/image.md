@@ -68,7 +68,7 @@ Escolhe, em uma grade 3 × 3, o lado ou o canto da imagem que fica no lugar.
 
 ## Girar e espelhar a imagem
 
-Escolha uma destas opções em **Imagem**:
+Escolha uma destas opções em **Imagem > Girar e inverter**:
 
 - **Girar imagem 90° à esquerda**
 - **Girar imagem 90° à direita**

@@ -5,12 +5,12 @@ related: ["customize/workspaces", "customize/panels", "customize/toolbars", "cus
 ---
 
 Ruang kerja adalah susunan bilah judul, bilah alat, dan panel yang tersimpan. {appName} menyertakan tiga ruang kerja: **Sketsa**, **Lukis**, dan **Foto**. Saat pertama
-kali dibuka, {appName} menampilkan Lukis, dan setelah itu ruang kerja yang terakhir
+kali dibuka, {appName} menampilkan Sketsa, dan setelah itu ruang kerja yang terakhir
 Anda gunakan.
 
 ## Sketsa
 
-![Ruang kerja Sketsa dengan contoh ilustrasi di kanvas.](shot:start/workspaces-sketch "1 Bilah judul, kiri · 2 Pemilih ruang kerja · 3 Bilah judul, kanan · 4 Kontrol kuas")
+![Ruang kerja Sketsa dengan contoh ilustrasi di kanvas.](shot:start/workspaces-sketch "1 Bilah judul, kiri · 2 Pemilih ruang kerja · 3 Bilah judul, kanan · 4 Kontrol kuas · 5 Gelembung alat")
 
 Sketsa tidak memiliki panel yang tertambat: tombol alat dan panel di bilah judul membuka laci.
 
@@ -18,6 +18,7 @@ Sketsa tidak memiliki panel yang tertambat: tombol alat dan panel di bilah judul
 2. Pemilih ruang kerja.
 3. **Kuas**, **Pahat**, **Penghapus**, **Panel Lapisan**, dan **Warna kuas**. Editor web menambahkan **Layar penuh**.
 4. **Penggeser ukuran kuas**, **Pemilih Warna**, **Penggeser kekuatan**, **Urungkan**, dan **Ulangi**.
+5. Gelembung alat yang diambil dari bilah judul, di sini gelembung **Kuas** dengan halo pengaturannya dan cincin warna kecil (lihat [Gelembung alat](/id/docs/customize/bubbles/)).
 
 | Tombol | Panel di laci |
 | --- | --- |
@@ -27,7 +28,7 @@ Sketsa tidak memiliki panel yang tertambat: tombol alat dan panel di bilah judul
 | **Transformasi** | **Set Alat**, **Alat** |
 | **Panel Filter** | **Jenis Filter**, **Filter**, **Properti** |
 | **Panel Lapisan** | **Lapisan** |
-| **Warna kuas** | **Warna** |
+| **Warna kuas** | **Warna**, **Palet** |
 
 **Menu Utama** membuka menu (di macOS, menu berada di bilah menu sistem).
 **Seleksi** memilih alat seleksi yang terakhir Anda gunakan.
@@ -43,7 +44,7 @@ Lukis menambatkan panel dalam kolom di kedua sisi kanvas.
 
 1. **Capy (Mode Zen)** dan menu, judul gambar di tengah, lalu pemilih ruang kerja dan **Pengaturan**. Editor web menambahkan **Layar penuh**.
 2. **Baru…**, **Buka…**, **Simpan**, **Urungkan**, **Ulangi**, **Bersihkan Seluruh Lapisan**, **Isi seleksi**, **Transformasi**, dan **Balik tampilan secara horizontal**.
-3. **Pena**, **Pensil**, **Kuas Cat**, **Penghapus**, **Kuas Semprot Halus**, **Dekorasi**, **Baurkan**, **Cairkan**, alat seleksi, **Isi**, **Gradasi**, **Operasi**, **Bentuk**, **Penggaris**, **Tangan**, **Pipet Warna**, dan **Warna kuas**.
+3. **Pena**, **Pensil**, **Kuas Cat**, **Penghapus**, **Kuas Semprot Halus**, **Dekorasi**, **Baurkan**, **Cairkan**, alat seleksi, **Isi**, **Gradasi**, **Operasi**, **Bentuk**, **Penggaris**, **Tangan**, **Zoom**, **Pipet Warna**, dan **Warna kuas**.
 4. Tab untuk **Set Alat** dan **Diagnostik**, **Alat** dan **Ukuran kuas**, serta **Warna** dan **Palet**.
 5. Ikon untuk **Navigator** dan **Simulasi Cetak**, **Properti** dan **Filter**, serta **Lapisan**.
 6. Indikator zum dan rotasi, yang dijelaskan di [Melihat kanvas](/id/docs/start/canvas/).
@@ -63,7 +64,7 @@ dengan Lukis.
 
 1. **Baru…**, **Buka…**, **Simpan**, **Urungkan**, **Ulangi**, dan **Transformasi**.
 2. **Opsi Alat**, yaitu pengaturan alat saat ini.
-3. **Operasi**, **Pangkas**, alat seleksi, **Kuas**, **Penghapus**, **Stempel Klon**, **Kuas Pemulih Noda**, **Baurkan**, **Cairkan**, **Gradasi**, **Tangan**, **Pipet Warna**, dan **Warna kuas**.
+3. **Operasi**, **Pangkas**, alat seleksi, **Kuas**, **Penghapus**, **Stempel Klon**, **Kuas Pemulih Noda**, **Baurkan**, **Cairkan**, **Gradasi**, **Tangan**, **Zoom**, **Pipet Warna**, dan **Warna kuas**.
 4. **Histogram** dan **Bentuk gelombang**, **Properti** dan **Filter**, serta **Lapisan**.
 5. Ikon untuk **Set Alat** dan **Diagnostik**, **Alat** dan **Ukuran kuas**, serta **Navigator** dan **Simulasi Cetak**. Setiap ikon membuka grupnya sendiri sebagai laci.
 

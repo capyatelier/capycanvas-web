@@ -1,7 +1,7 @@
 ---
 title: "Größe, Stärke und Deckkraft"
 description: "Größe, Stärke und Deckkraft des Pinsels sowie die Bedienfelder, Leisten und Tasten zum Ändern dieser Werte."
-related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools"]
+related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools", "customize/bubbles"]
 ---
 
 Die Pinselregler hängen vom Werkzeug und der Vorgabe ab. Änderungen werden mit der Vorgabe gespeichert.
@@ -57,6 +57,8 @@ Die Stärkevorschau zeigt, wie der aktuelle Pinsel bei diesem Wert reagiert.
 ![Der Stärkeregler mit geöffneter Kontaktvorschau.](shot:brushes/strength-preview)
 
 Wählen Sie **Diesen Wert merken** in einer Vorschau, um eine Markierung auf der Spur hinzuzufügen, oder **Lesezeichen entfernen**, um sie zu entfernen. Jede Vorgabe behält ihre eigenen Lesezeichen.
+
+Ziehen Sie **Farbpipette** aus dieser Leiste auf die Leinwand, um eine [Blase](/de/docs/customize/bubbles/) mit Bögen für Größe und Stärke zu holen.
 
 ## Größentasten
 

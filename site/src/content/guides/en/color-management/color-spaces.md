@@ -1,11 +1,11 @@
 ---
 title: "Color space, bit depth and blending"
-description: "Choosing a drawing's color space, bit depth and Blending, and changing them later from the Edit menu."
+description: "Choosing a drawing's color space, bit depth and Blending, and changing them later from the Image menu."
 related: ["files/new", "color-management/proof", "color-management/hdr", "files/export", "preferences"]
 ---
 
 You can choose a drawing's color space, bit depth and Blending when you create
-it, and change them later from the **Edit** menu.
+it, and change them later from the **Image** menu.
 
 ## Color spaces
 
@@ -26,41 +26,31 @@ white at 203 cd/m².
 ## Choosing them for a new drawing
 
 Choose **File > New…** (**Ctrl+N**) and set **Color space**, **Bit depth** and
-**Blending**, or choose a **Preset**:
+**Blending** under **Color**. A preset from **Presets** sets them along with
+the sheet and Paper. The dialog keeps the choices of the last drawing you
+created.
 
-| Preset | Color space | Bit depth | Blending |
-| --- | --- | --- | --- |
-| **Standard drawing** | sRGB | 8-bit SDR | Perceptual |
-| **Wide color** | Display P3 | 8-bit SDR | Perceptual |
-| **Photo editing** | ProPhoto RGB | 16-bit SDR | Perceptual |
-| **HDR drawing** | sRGB | 16-bit float HDR | Linear light |
+At a float depth, **Blending** is fixed to Linear light.
 
-At a float depth, **Blending** is fixed to Linear light. Turn on **Use these
-settings for new drawings** to make the choices, including Blending, the
-default for new drawings.
-
-![The New drawing dialog with Color space set to Display P3, Bit depth, Blending and the summary line.](shot:color-management/new-dialog-color)
+![The New drawing dialog with Color space set to Display P3, Bit depth and Blending under Color.](shot:color-management/new-dialog-color)
 
 ## Defaults in Preferences
 
 Choose **Edit > Preferences** and open the **Color** page:
 
-- Under **New drawings**, set the **Color space**, **Bit depth** and **Background** of future drawings. Open drawings don't change.
 - Under **Opening photos**, set **Editing precision** (**Source depth** or **16-bit**) and **Untagged RGB and grayscale** (**Assume sRGB** or **Ask**). With **Ask**, opening an untagged photo shows **Choose image interpretation**. Tagged photos keep their embedded profiles.
 - Select **Manage Profiles…** to open the [Color Profile Library](/docs/color-management/proof/).
 
-Preferences has no Blending setting.
-
 ## Assign Profile
 
-Choose **Edit > Assign Profile…** to keep the drawing's RGB numbers and read
+Choose **Image > Color Management > Assign Profile…** to keep the drawing's RGB numbers and read
 them in another working space. Choose the space under **Color space**, where
 Adobe RGB (1998) is listed as **Adobe RGB**. Object layers keep the source
 profile of their [original photo](/docs/layers/types/).
 
 ## Convert Color Space
 
-Choose **Edit > Convert Color Space…** to change the RGB numbers so that the
+Choose **Image > Color Management > Convert Color Space…** to change the RGB numbers so that the
 colors keep their appearance in another working space, within its gamut.
 
 With **Save flattened copy**, **Apply** becomes **Save Copy…**. The copy has one
@@ -86,7 +76,7 @@ open drawing unchanged.
 
 ## Change Bit Depth
 
-Choose **Edit > Change Bit Depth…** to change the stored precision. The color
+Choose **Image > Color Management > Change Bit Depth…** to change the stored precision. The color
 space doesn't change.
 
 Changing to a float depth makes the drawing HDR and sets Blending to Linear
@@ -124,10 +114,10 @@ only **Cancel**.
 You can combine layers on the drawing's encoded values or in linear light. Do
 one of the following:
 
-- Choose **Edit > Blending > Perceptual Blending** or **Edit > Blending > Linear Light Blending**.
+- Choose **Image > Blending > Perceptual Blending** or **Image > Blending > Linear Light Blending**.
 - Set **Blending** to **Perceptual** or **Linear light** in the New dialog.
 
-![The Edit menu with the Blending submenu open and Perceptual Blending checked.](shot:color-management/edit-blending-menu)
+![The Blending submenu with Perceptual Blending checked.](shot:color-management/edit-blending-menu)
 
 Painted pixels keep their values. Blending changes:
 

@@ -25,7 +25,8 @@ export async function annotate(b, targets, first = true) {
       let r=node.getBoundingClientRect();
       if(spec.union){const boxes=nodes.map(n=>n.getBoundingClientRect());const x=Math.min(...boxes.map(r=>r.left)),y=Math.min(...boxes.map(r=>r.top)),right=Math.max(...boxes.map(r=>r.right)),bottom=Math.max(...boxes.map(r=>r.bottom));r={left:x,top:y,right,bottom};}
       if(spec.documentRect){const camera=layerApp.state().camera;if(camera.rotation!==0||camera.flipped.some(Boolean))throw Error('Document callout requires an unrotated view');const [x,y,w,h]=spec.documentRect;const ratio=camera.viewport[0]/innerWidth;r={left:(camera.translation[0]+x*camera.zoom)/ratio,top:(camera.translation[1]+y*camera.zoom)/ratio,right:(camera.translation[0]+(x+w)*camera.zoom)/ratio,bottom:(camera.translation[1]+(y+h)*camera.zoom)/ratio};}
-      let left=r.left,top=r.top,right=r.right,bottom=r.bottom;
+      const outset=spec.outset||0;
+      let left=r.left-outset,top=r.top-outset,right=r.right+outset,bottom=r.bottom+outset;
       for(let p=node.parentElement;p;p=p.parentElement){const style=getComputedStyle(p),box=p.getBoundingClientRect();
         if(/hidden|clip|auto|scroll/.test(style.overflowX)){left=Math.max(left,box.left);right=Math.min(right,box.right);}
         if(/hidden|clip|auto|scroll/.test(style.overflowY)){top=Math.max(top,box.top);bottom=Math.min(bottom,box.bottom);}

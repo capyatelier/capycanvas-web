@@ -43,7 +43,7 @@ Effectuez l’une des opérations suivantes :
 
 ## Éditeur de points
 
-![Le panneau Outil de l’outil Dégradé avec la rangée Forme, l’éditeur de points et Opacité.](shot:drawing/gradient-tool-panel)
+![Le panneau Outil de l’outil Dégradé avec la rangée Forme et l’éditeur de points.](shot:drawing/gradient-tool-panel)
 
 Vous pouvez modifier les couleurs du dégradé dans l’éditeur de points, sous
 **Forme** dans le panneau **Outil**. Le bouton de dégradé de la barre Options de

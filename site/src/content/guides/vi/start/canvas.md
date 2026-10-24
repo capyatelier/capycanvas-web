@@ -74,9 +74,11 @@ Thực hiện một trong các cách sau:
 - Xoay hai ngón tay trên màn hình cảm ứng, hoặc trên bàn di chuột trên macOS và iPad. khi bật **Xoay bằng hai ngón tay** trong Tùy chọn.
 - Gõ góc hoặc kéo thanh trượt góc xoay trong trình đơn của chỉ số thu phóng.
 - Chọn một nút xoay trong bảng **Điều hướng**.
+- Chọn **Xoay chế độ xem**, dùng chung một nút với **Bàn tay**, hoặc nhấn **R**, rồi kéo.
+- Nhấn **-** để xoay 90° sang trái, hoặc **^** để xoay 90° sang phải.
 
-Mặc định, không có phím nào để xoay khung nhìn. Để trở về 0°, chọn **Đặt lại góc
-xoay** trong trình đơn của chỉ số thu phóng.
+Để trở về 0°, nhấn **5** hoặc chọn **Đặt lại góc xoay** trong trình đơn của chỉ số
+thu phóng.
 
 ## Lật khung nhìn
 

@@ -11,10 +11,9 @@ Bạn có thể vẽ màu sáng hơn màu trắng SDR trong bản vẽ HDR. Bả
 
 Để có bản vẽ HDR, thực hiện một trong các cách sau:
 
-- Trong **Tệp > Mới…**, chọn thiết lập đặt sẵn **Bản vẽ HDR** hoặc một **Độ sâu bit** số thực.
-- Chọn **Chỉnh sửa > Đổi độ sâu bit…** rồi chọn một độ sâu số thực.
+- Trong **Tệp > Mới…**, chọn thiết lập đặt sẵn **4K HDR** hoặc một **Độ sâu bit** số thực.
+- Chọn **Ảnh > Quản lý màu > Đổi độ sâu bit…** rồi chọn một độ sâu số thực.
 - Mở tệp HDR PNG (BT.2020 PQ) hoặc HDR AVIF (HDR số thực 16 bit), hoặc tệp OpenEXR (HDR số thực 32 bit).
-- Đặt **Độ sâu bit** thành một độ sâu số thực trên trang **Màu** của [Tùy chọn](/vi/docs/preferences/) để bản vẽ mới là bản vẽ HDR.
 
 Trong bản vẽ HDR:
 

@@ -108,7 +108,7 @@ Klik sebuah warna di kanvas. **Seleksi otomatis** mengambil area tersambung di
 sekitar titik itu, dan **Seleksi berdasarkan warna** mengambil piksel yang cocok di
 mana pun dalam gambar.
 
-![Panel Alat untuk Seleksi otomatis, dengan Mode, Penghalusan tepi, Sumber, Toleransi, pengaturan Tepi, dan Radius perhalusan tepi.](shot:selections/tools-auto-select-settings)
+![Panel Alat untuk Seleksi otomatis, dengan Mode, Seleksi, Toleransi, pengaturan Tepi, Radius perhalusan tepi, Penghalusan tepi, dan Sumber.](shot:selections/tools-auto-select-settings)
 
 ### Sumber
 
@@ -153,6 +153,6 @@ mengurangi tidak berpengaruh selama tidak ada seleksi.
 
 ## Tombol Seleksi
 
-**Seleksi** di bawah pengaturan alat seleksi di panel Alat membuka
+**Seleksi** di bawah baris **Mode** di panel Alat membuka
 [menu Seleksi](/id/docs/selections/working/). Pengaturan **Rentang nada** tidak
 memiliki tombol **Seleksi**.

@@ -1,7 +1,7 @@
 ---
 title: "Painel Cor"
 description: "Como escolher a cor da tinta com o círculo de cores e as amostras do painel Cor."
-related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-management/hdr"]
+related: ["color/edit-color", "color/palettes", "color/eyedropper", "customize/bubbles", "color-management/hdr"]
 ---
 
 Você pode escolher a cor da tinta no painel **Cor**. Todas as áreas de trabalho
@@ -17,6 +17,8 @@ Faça uma das seguintes ações:
 - Escolha **Painel Cor** na busca de comandos.
 - Em Pintura, selecione a aba **Cor** na coluna esquerda.
 - Selecione **Cor do pincel** no fim da barra de ferramentas Ferramentas ou, em Esboço, na extremidade direita da barra de título. Abre uma gaveta com os painéis Cor e Paletas.
+
+Arraste **Cor do pincel** para a tela para manter a roda ali como um [anel de cor](/pt-BR/docs/customize/bubbles/).
 
 ## Círculo de cores
 

@@ -77,9 +77,11 @@ Aşağıdakilerden birini yapın:
 - Tercihlerde **İki parmakla döndür** açıkken dokunmatik ekranda veya macOS ve iPad izleme dörtgeninde iki parmağınızı çevirin.
 - Yakınlaştırma göstergesinin menüsünde bir açı yazın veya döndürme kaydırıcısını sürükleyin.
 - **Gezgin** panelinde bir döndürme düğmesi seçin.
+- **El** ile aynı düğmeyi paylaşan **Görünümü döndür** düğmesini seçin veya **R** tuşuna basın, ardından sürükleyin.
+- 90° sola döndürmek için **-**, 90° sağa döndürmek için **^** tuşuna basın.
 
-Varsayılan olarak görünümü döndüren bir tuş yoktur. 0°'ye dönmek için
-yakınlaştırma göstergesinin menüsünde **Döndürmeyi sıfırla** öğesini seçin.
+0°'ye dönmek için **5** tuşuna basın veya yakınlaştırma göstergesinin
+menüsünde **Döndürmeyi sıfırla** öğesini seçin.
 
 ## Görünümü çevirme
 

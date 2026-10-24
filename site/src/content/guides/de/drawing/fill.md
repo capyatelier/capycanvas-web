@@ -1,7 +1,7 @@
 ---
 title: "Füllwerkzeuge"
 description: "Bereiche, freihändige Formen und umschlossene Flächen einer Ebene mit der aktuellen Farbe füllen."
-related: ["drawing/gradient", "layers/settings", "selections/working", "drawing/brush-tools"]
+related: ["drawing/gradient", "layers/vector", "layers/settings", "selections/working", "drawing/brush-tools"]
 ---
 
 Mit **Füllung**, **Lassofüllung** und **Umranden und füllen** können Sie Teile der
@@ -73,6 +73,10 @@ Bild**, und Umranden und füllen kehrt bei jedem Start von {appName} zu
 
 Verwendet Füllung **Referenzebenen** und ist keine Ebene markiert, malt Füllung nichts,
 und ein Hinweis bietet an, die Ebene darunter zu markieren.
+
+## Vektorebenen
+
+Auf einer Vektorebene färbt **Füllung** den geschlossenen Pfad, auf den Sie klicken. Ein Klick an einer anderen Stelle oder die Quelle **Referenzebenen** fügt unter der Vektorebene eine Malebene hinzu und füllt dort. **Lassofüllung** fügt einen gefüllten Pfad hinzu, und **Farbverlauf** und **Umranden und füllen** bieten **Neue Malebene darunter** an. Siehe [Vektorebenen](/de/docs/layers/vector/).
 
 ## Einstellungen für Füllung
 

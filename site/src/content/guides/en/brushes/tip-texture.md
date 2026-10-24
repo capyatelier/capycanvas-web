@@ -8,9 +8,11 @@ You can change the shape of each dab and how strongly paper texture changes the
 mark with the **Tip** and **Texture** settings in the **Tool** panel
 ([Size, strength and opacity](/docs/brushes/basics/)).
 
-![The Tool panel for Pencil with the Tip group and the Texture group.](shot:brushes/tip-texture-settings)
+![The Tool panel for Paintbrush from Hardness down to Texture strength, with the Smoothing, Tip and Texture groups.](shot:brushes/tip-texture-settings)
 
 ## Tip
+
+Dry-media brushes show only **Tip angle**.
 
 ### Hardness
 
@@ -39,25 +41,30 @@ direction.
 
 ## Tips that turn with the stroke
 
-The tips of **Paintbrush**, **Textured Flat**, **Pastel Block**, **Transparent
-Glaze**, **Opaque Gouache**, **Loaded Oil**, **Palette Knife**, **Watercolor
-Wash**, **Wet Watercolor**, **Dual Texture** and **Natural Blender** follow the
-direction of the stroke. **Tip angle** has no effect on these brushes.
+The tips of **Paintbrush**, **Textured Flat**, **Transparent Glaze**,
+**Opaque Gouache**, **Loaded Oil**, **Palette Knife**, **Watercolor Wash**,
+**Wet Watercolor**, **Dual Texture**, **Natural Blender** and
+**Blending Knife** follow the direction of the stroke. **Tip angle** has no
+effect on these brushes.
 
 **Dry Scumble** and **Realistic Brushed Ink** add the stroke direction to
 **Tip angle**.
 
 ## Texture
 
-**Texture strength** appears on the pencil and pastel brushes, **Paintbrush**,
-**Bristle Paintbrush**, **Textured Flat**, **Dry Scumble**, **Transparent
-Glaze**, **Opaque Gouache**, **Loaded Oil**, **Palette Knife**, **Dual
-Texture** and **Natural Blender**.
+**Texture strength** appears on the **Pencil**, **Pastel** and **Paint** sets
+(except **Multiply Glaze**), on **Loaded Oil**, **Palette Knife** and **Dual
+Texture**, and on eight blenders: **Smudge**, **Soft Blender**, **Blending Stump**, **Tissue**,
+**Grainy Blender**, **Natural Blender**, **Blending Knife** and
+**Bristle Blender**. A brush without it ignores Paper.
 
-Dry-media brushes read the texture of the nearest Paper below their target layer. Choose and scale that texture in [Paper](/docs/layers/paper/).
+Brushes with **Texture strength** read the texture of the nearest Paper at or
+below their target layer. Choose and scale that texture in [Paper](/docs/layers/paper/).
 
 ### Texture strength
 
-Sets how strongly Paper texture changes coverage. At 0% the texture has no effect.
+Sets how strongly Paper texture changes coverage. At 0% the texture has no
+effect. On blenders, a light touch leaves the tooth of the paper unblended and
+pressure pushes the blend into it. **Soft Blender** starts at 0%.
 
 ![Three Charcoal strokes at Texture strength 0%, 50% and 100%.](shot:brushes/texture-strength)

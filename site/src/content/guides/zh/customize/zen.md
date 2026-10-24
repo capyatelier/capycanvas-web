@@ -1,7 +1,7 @@
 ---
 title: "专注模式"
 description: "使用专注模式隐藏标题栏和停靠的面板，以及专注模式的首选项。"
-related: ["customize/panels", "customize/toolbars", "preferences", "input/keyboard"]
+related: ["customize/panels", "customize/toolbars", "customize/bubbles", "preferences", "input/keyboard"]
 ---
 
 在专注模式下，可以隐藏标题栏以及停靠的面板和工具栏，画布会占满整个窗口。
@@ -27,11 +27,18 @@ related: ["customize/panels", "customize/toolbars", "preferences", "input/keyboa
 专注模式还会隐藏折叠的列和底栏。以下内容保留：
 
 - 浮动面板
+- [工具气泡](/zh/docs/customize/bubbles/)，包括其光环、选择器和菜单
 - 选区或变换旁边的画布操作栏
 - Capy 按钮（除非关闭了**在专注模式下显示 Capy**）
 - 通知
 
 按键和命令搜索（**Ctrl+K**）照常可用。
+
+## 在专注模式下保留工具栏
+
+在 Linux 应用中，从工具栏菜单中选择**在专注模式中显示**，可让该工具栏在专注模式下保留在屏幕上。
+
+在 Linux 应用的触摸屏上，用一根手指从距窗口边缘 24 px 以内向内滑动，可显示停靠在该边缘的工具栏和面板。触碰它们以外的位置时，它们会再次隐藏。数位笔或鼠标无法将它们显示出来。
 
 ## 专注模式下的停靠
 

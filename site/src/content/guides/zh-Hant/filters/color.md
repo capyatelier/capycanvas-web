@@ -6,7 +6,7 @@ related: ["filters/adding", "filters/tone", "filters/how-filters-apply"]
 
 色彩濾鏡位於**濾鏡 > 色彩**和**濾鏡**面板的**色彩**類別中。在**屬性**面板中更改其設定。
 
-![濾鏡面板顯示色彩類別，每個濾鏡都有預覽。](shot:filters/color-list)
+![濾鏡面板中的色彩類別，從色相／飽和度到漸層對應，每個濾鏡都有筆跡預覽。](shot:filters/color-list)
 
 ## 色相／飽和度
 

@@ -1,7 +1,7 @@
 ---
 title: "Déplacer et transformer"
-description: "Déplacer et transformer des calques et des pixels sélectionnés avec l’outil Opération et Transformer."
-related: ["selections/working", "transform/crop", "transform/clipboard", "drawing/ruler"]
+description: "Déplacer et transformer des calques, des pixels sélectionnés et des tracés avec l’outil Opération et Transformer."
+related: ["selections/working", "layers/paths", "transform/crop", "transform/clipboard", "drawing/ruler"]
 ---
 
 Vous pouvez déplacer des calques et des pixels sélectionnés avec l’outil
@@ -14,7 +14,7 @@ Effectuez l’une des opérations suivantes :
 
 - Ouvrez le menu d’un calque dans le panneau Calques et choisissez **Déplacer le calque / masque**.
 - Appuyez sur **O**.
-- Dans Peinture et Photo, sélectionnez **Opération / Transformer** dans la barre d’outils Outils. Cliquez avec le bouton droit sur le bouton, ou appuyez longuement dessus, pour choisir **Opération**.
+- Dans Peinture et Photo, sélectionnez **Opération / Transformer / Modifier les points** dans la barre d’outils Outils. Cliquez avec le bouton droit sur le bouton, ou appuyez longuement dessus, pour choisir **Opération**.
 - Tapez « Opération » dans la [recherche de commandes](/fr/docs/start/command-search/).
 
 Croquis n’a pas de bouton **Opération**.
@@ -35,6 +35,10 @@ de peinture actif, par pas d’un pixel entier. Pendant la modification d’un m
 Quand les repères sont affichés, **Opération** sélectionne et fait aussi glisser
 les repères (voir [Règles et repères](/fr/docs/drawing/ruler/)).
 
+## Déplacer des tracés
+
+Sur un calque vectoriel, **Opération** sélectionne, déplace, redimensionne et fait pivoter des tracés au lieu de déplacer le calque. Appuyez sur **Ctrl+A** pour sélectionner tous les tracés. **Édition > Transformer** avec des tracés sélectionnés passe à **Opération** et à son cadre. Voir [Modifier des tracés](/fr/docs/layers/paths/).
+
 ## Laisser une copie
 
 Vous pouvez déplacer une copie des pixels sélectionnés et laisser les originaux en
@@ -52,7 +56,7 @@ Effectuez l’une des opérations suivantes :
 - Appuyez sur **Ctrl+T**.
 - Sélectionnez **Transformer** dans la barre d’outils Commandes de Peinture et de Photo, ou dans la barre de titre de Croquis.
 - Sélectionnez **Transformer** dans la barre de sélection.
-- Dans Peinture et Photo, cliquez avec le bouton droit sur **Opération / Transformer** dans la barre d’outils Outils, ou appuyez longuement dessus, et choisissez **Transformer**.
+- Dans Peinture et Photo, cliquez avec le bouton droit sur **Opération / Transformer / Modifier les points** dans la barre d’outils Outils, ou appuyez longuement dessus, et choisissez **Transformer**.
 
 Avec une sélection, **Transformer** modifie les pixels sélectionnés du calque ou du
 masque actif. Sans sélection, il modifie les calques sélectionnés. Un cadre muni de
@@ -96,7 +100,7 @@ Dans tous les modes :
 ### Mode
 
 **Libre**, **Uniforme**, **Distordre** ou **Déformer**. **Uniforme** conserve les
-proportions. Les transformations de calques s’ouvrent en **Uniforme**.
+proportions. **Libre** est le mode par défaut.
 
 ### Taille d’origine
 
@@ -121,7 +125,7 @@ Avec **Déformer** :
 - **Réinitialiser la grille** : remplace la déformation par une grille droite.
 - **Grille** : **3 × 3** (par défaut), **4 × 4** ou **5 × 5**. Disponible tant que vous n’avez pas modifié la forme.
 
-![La barre d’actions de la toile en mode Déformer, avec Diviser la grille, Sélectionner les points, Réinitialiser la grille et Grille.](shot:transform/warp-bar)
+![La barre d’actions de la toile en mode Déformer, avec le menu Diviser verticalement, Sélectionner les points, Réinitialiser la grille et le menu 3 × 3.](shot:transform/warp-bar)
 
 ### Boutons de retournement et de rotation
 

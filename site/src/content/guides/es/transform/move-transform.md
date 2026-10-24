@@ -1,7 +1,7 @@
 ---
 title: "Mover y transformar"
-description: "Mover y transformar capas y píxeles seleccionados con la herramienta Operación y con Transformar."
-related: ["selections/working", "transform/crop", "transform/clipboard", "drawing/ruler"]
+description: "Mover y transformar capas, píxeles seleccionados y trazados con la herramienta Operación y con Transformar."
+related: ["selections/working", "layers/paths", "transform/crop", "transform/clipboard", "drawing/ruler"]
 ---
 
 Puedes mover capas y píxeles seleccionados con la herramienta **Operación**, y
@@ -14,7 +14,7 @@ Haz una de las siguientes acciones:
 
 - Abre el menú de una capa en el panel Capas y elige **Mover capa / máscara**.
 - Pulsa **O**.
-- En Pintura y en Foto, selecciona **Operación / Transformar** en la barra de herramientas. Haz clic con el botón derecho en el botón, o mantenlo pulsado, para elegir **Operación**.
+- En Pintura y en Foto, selecciona **Operación / Transformar / Editar puntos** en la barra de herramientas. Haz clic con el botón derecho en el botón, o mantenlo pulsado, para elegir **Operación**.
 - Escribe «Operación» en la [búsqueda de comandos](/es/docs/start/command-search/).
 
 Boceto no tiene botón **Operación**.
@@ -35,6 +35,10 @@ pintura activa, en pasos de píxeles enteros. Mientras editas una máscara,
 Con las guías visibles, **Operación** también selecciona y arrastra guías
 (consulta [Reglas y guías](/es/docs/drawing/ruler/)).
 
+## Mover trazados
+
+En una capa vectorial, **Operación** selecciona, mueve, escala y gira trazados en lugar de mover la capa. Pulsa **Ctrl+A** para seleccionar todos los trazados. **Editar > Transformar** con trazados seleccionados pasa a **Operación** y a su cuadro. Consulta [Editar trazados](/es/docs/layers/paths/).
+
 ## Dejar copia
 
 Puedes mover una copia de los píxeles seleccionados y dejar los originales en su
@@ -52,7 +56,7 @@ Haz una de las siguientes acciones:
 - Pulsa **Ctrl+T**.
 - Selecciona **Transformar** en la barra de comandos en Pintura y en Foto, o en la barra de título en Boceto.
 - Selecciona **Transformar** en la barra de selección.
-- En Pintura y en Foto, haz clic con el botón derecho en **Operación / Transformar** en la barra de herramientas, o mantenlo pulsado, y elige **Transformar**.
+- En Pintura y en Foto, haz clic con el botón derecho en **Operación / Transformar / Editar puntos** en la barra de herramientas, o mantenlo pulsado, y elige **Transformar**.
 
 Con una selección, **Transformar** cambia los píxeles seleccionados de la capa o
 la máscara activa. Sin selección, cambia las capas seleccionadas. Aparecen un
@@ -95,7 +99,7 @@ En todos los modos:
 ### Modo
 
 **Libre**, **Uniforme**, **Distorsionar** o **Deformar**. **Uniforme** conserva
-las proporciones. Las transformaciones de capa se abren en **Uniforme**.
+las proporciones. **Libre** es el valor predeterminado.
 
 ### Tamaño original
 
@@ -120,7 +124,7 @@ Con **Deformar**:
 - **Restablecer cuadrícula**: reemplaza la deformación por una cuadrícula recta.
 - **Cuadrícula**: **3 × 3** (el valor predeterminado), **4 × 4** o **5 × 5**. Disponible hasta que cambias la forma.
 
-![La barra del lienzo en el modo Deformar, con Dividir cuadrícula, Seleccionar puntos, Restablecer cuadrícula y Cuadrícula.](shot:transform/warp-bar)
+![La barra del lienzo en el modo Deformar, con el menú Dividir verticalmente, Seleccionar puntos, Restablecer cuadrícula y el menú 3 × 3.](shot:transform/warp-bar)
 
 ### Botones de voltear y girar
 

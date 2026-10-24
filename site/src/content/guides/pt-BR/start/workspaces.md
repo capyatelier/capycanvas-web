@@ -6,12 +6,12 @@ related: ["customize/workspaces", "customize/panels", "customize/toolbars", "cus
 
 Uma área de trabalho é uma disposição salva da barra de título, das barras de
 ferramentas e dos painéis. O {appName} inclui três: **Esboço**, **Pintura** e
-**Foto**. Ele abre em Pintura na primeira vez e, depois disso, na última área de
+**Foto**. Ele abre em Esboço na primeira vez e, depois disso, na última área de
 trabalho usada.
 
 ## Esboço
 
-![A área de trabalho Esboço com o exemplo de ilustração na tela.](shot:start/workspaces-sketch "1 Barra de título, esquerda · 2 Seletor de áreas de trabalho · 3 Barra de título, direita · 4 Controles do pincel")
+![A área de trabalho Esboço com o exemplo de ilustração na tela.](shot:start/workspaces-sketch "1 Barra de título, esquerda · 2 Seletor de áreas de trabalho · 3 Barra de título, direita · 4 Controles do pincel · 5 Bolhas de ferramentas")
 
 Esboço não tem painéis encaixados: os botões de ferramentas e painéis na barra de título abrem gavetas.
 
@@ -19,6 +19,7 @@ Esboço não tem painéis encaixados: os botões de ferramentas e painéis na ba
 2. O seletor de espaços de trabalho.
 3. **Pincel**, **Esculpir**, **Borracha**, **Painel Camadas** e **Cor do pincel**. O editor web adiciona **Tela cheia**.
 4. **Controle deslizante de tamanho do pincel**, **Conta-gotas**, **Controle de intensidade**, **Desfazer** e **Refazer**.
+5. Bolhas de ferramentas tiradas da barra de título, aqui uma bolha de **Pincel** com o halo de configurações e um pequeno anel de cor (veja [Bolhas de ferramentas](/pt-BR/docs/customize/bubbles/)).
 
 | Botão | Painéis na gaveta |
 | --- | --- |
@@ -28,7 +29,7 @@ Esboço não tem painéis encaixados: os botões de ferramentas e painéis na ba
 | **Transformar** | **Conjunto de ferramentas**, **Ferramenta** |
 | **Painel Filtros** | **Tipo de filtro**, **Filtros**, **Propriedades** |
 | **Painel Camadas** | **Camadas** |
-| **Cor do pincel** | **Cor** |
+| **Cor do pincel** | **Cor**, **Paletas** |
 
 **Menu principal** abre os menus (no macOS, eles ficam na barra de menus do
 sistema). **Selecionar** escolhe a última ferramenta de seleção usada.
@@ -44,7 +45,7 @@ Pintura encaixa os painéis em colunas dos dois lados da tela.
 
 1. **Capy (modo Zen)** e os menus, o título do desenho no meio e, depois, o seletor de áreas de trabalho e **Configurações**. O editor web acrescenta **Tela cheia**.
 2. **Novo…**, **Abrir…**, **Salvar**, **Desfazer**, **Refazer**, **Limpar camada inteira**, **Preencher seleção**, **Transformar** e **Inverter visualização horizontalmente**.
-3. **Caneta**, **Lápis**, **Pincel de pintura**, **Borracha**, **Aerógrafo**, **Decoração**, **Misturar**, **Liquefazer**, as ferramentas de seleção, **Preencher**, **Degradê**, **Operação**, **Forma**, **Régua**, **Mão**, **Conta-gotas** e **Cor do pincel**.
+3. **Caneta**, **Lápis**, **Pincel de pintura**, **Borracha**, **Aerógrafo**, **Decoração**, **Misturar**, **Liquefazer**, as ferramentas de seleção, **Preencher**, **Degradê**, **Operação**, **Forma**, **Régua**, **Mão**, **Zoom**, **Conta-gotas** e **Cor do pincel**.
 4. Abas de **Conjunto de ferramentas** e **Diagnóstico**, de **Ferramenta** e **Tamanho do pincel**, e de **Cor** e **Paletas**.
 5. Ícones de **Navegador** e **Prova**, de **Propriedades** e **Filtros**, e de **Camadas**.
 6. A indicação de zoom e rotação, descrita em [Visualizar a tela](/pt-BR/docs/start/canvas/).
@@ -63,7 +64,7 @@ Foto mantém os painéis de edição de fotos abertos à direita. A barra de tí
 
 1. **Novo…**, **Abrir…**, **Salvar**, **Desfazer**, **Refazer** e **Transformar**.
 2. **Opções da ferramenta**, as configurações da ferramenta atual.
-3. **Operação**, **Recortar**, as ferramentas de seleção, **Pincel**, **Borracha**, **Carimbo de clonagem**, **Pincel de correção pontual**, **Misturar**, **Liquefazer**, **Degradê**, **Mão**, **Conta-gotas** e **Cor do pincel**.
+3. **Operação**, **Recortar**, as ferramentas de seleção, **Pincel**, **Borracha**, **Carimbo de clonagem**, **Pincel de correção pontual**, **Misturar**, **Liquefazer**, **Degradê**, **Mão**, **Zoom**, **Conta-gotas** e **Cor do pincel**.
 4. **Histograma** e **Forma de onda**, **Propriedades** e **Filtros**, e **Camadas**.
 5. Ícones de **Conjunto de ferramentas** e **Diagnóstico**, de **Ferramenta** e **Tamanho do pincel**, e de **Navegador** e **Prova**. Cada ícone abre só o seu grupo, como gaveta.
 

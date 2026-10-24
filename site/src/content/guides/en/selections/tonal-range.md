@@ -20,12 +20,12 @@ Do one of the following:
 **Tonal range** has no default key and no button on the Paint or Photo
 toolbars. While it is the tool, the Tool Set panel lists every selection tool.
 
-![The Tonal range settings in the Sketch Select drawer, with Mode, Tones, Softness and Feather.](shot:selections/tonal-range-settings)
+![The Tonal range settings in the Sketch Select drawer, with Mode, the tone buttons, Softness and Feather.](shot:selections/tonal-range-settings)
 
 ## Tones
 
-Select a button in the **Tones · stops relative to reference white** row to
-select that band of brightness. The band combines with the current selection
+Select a button in the row of tone buttons below **Mode** to select that band
+of brightness. The band combines with the current selection
 according to **Mode** (see [Selection tools](/docs/selections/tools/)).
 
 Each button's tooltip names its band:

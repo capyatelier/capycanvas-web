@@ -1,6 +1,6 @@
 ---
 title: "偏好設定"
-description: "偏好設定對話框及其外觀、畫布、輸入、顏色和關於頁面上的設定。"
+description: "偏好設定對話框及其外觀、畫布、顏色、繪圖筆與輸入和關於頁面上的設定。"
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -99,21 +99,9 @@ related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", 
 
 ## 色彩
 
-**新建繪畫**中的設定適用於之後[新建的畫作](/zh-Hant/docs/files/new/)。**開啟照片**中的設定適用於開啟的照片。
+**開啟照片**中的設定適用於開啟的照片。
 
-![偏好設定的色彩頁面。](shot:preferences/color)
-
-### 色彩空間
-
-選擇 **sRGB**（預設）、**Display P3**、**Adobe RGB (1998)** 或 **ProPhoto RGB**。
-
-### 位元深度
-
-選擇 **8 位元 SDR**（預設）、**16 位元 SDR**、**16 位元浮點 HDR** 或 **32 位元浮點 HDR**。
-
-### 背景
-
-選擇**白色**（預設）或**透明**。
+![偏好設定色彩頁面上的開啟照片設定。](shot:preferences/color)
 
 ### 編輯精度
 

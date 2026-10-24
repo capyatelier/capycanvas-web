@@ -12,10 +12,9 @@ dibujo HDR.
 
 Para obtener un dibujo HDR, haz una de las siguientes acciones:
 
-- En **Archivo > Nuevo…**, elige el ajuste preestablecido **Dibujo HDR** o una **Profundidad de bits** de coma flotante.
-- Elige **Editar > Cambiar profundidad de bits…** y una profundidad de coma flotante.
+- En **Archivo > Nuevo…**, elige el ajuste preestablecido **4K HDR** o una **Profundidad de bits** de coma flotante.
+- Elige **Imagen > Gestión del color > Cambiar profundidad de bits…** y una profundidad de coma flotante.
 - Abre un archivo PNG HDR (BT.2020 PQ) o AVIF HDR (HDR de coma flotante de 16 bits), o un archivo OpenEXR (HDR de coma flotante de 32 bits).
-- Pon **Profundidad de bits** en una profundidad de coma flotante en la página **Color** de [Preferencias](/es/docs/preferences/) para que los dibujos nuevos sean HDR.
 
 En un dibujo HDR:
 

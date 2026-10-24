@@ -12,27 +12,25 @@ related: ["layers/paper", "color-management/color-spaces", "layers/types", "file
 
 Kategoriye göre bir hazır ayar seçin, adla arayın veya yakın zamanda kullanılanı seçin. Hazır ayar boyutları, çözünürlüğü, renk ve Kâğıt ayarlarını doldurur.
 
-![Yeni çizim hazır ayarı tarayıcısı.](shot:files/new-presets)
-
-Başka bir düzen kullanmadan veya kaydetmeden önce Hazır ayarlarda **Eskiz defteri** seçilidir: dikey A4 (210 × 297 mm), Doğal beyaz renginde Çizim kâğıdı ve 300 ppi çözünürlükte 2480 × 3508 px.
+![Eskiz, Suluboya, Pastel, Tuval, Karma teknik, Çizgi roman, Baskılar ve Dijital kategorileriyle Yeni çizim hazır ayarı tarayıcısı.](shot:files/new-presets)
 
 Geçerli ayarları yeniden kullanmak için adlandırılmış bir hazır ayar olarak kaydedin. Yeniden adlandırmak veya silmek için kayıtlı hazır ayarın menüsünü açın. Yerleşik hazır ayarlar yeniden adlandırılamaz veya silinemez.
 
 ## Yaprak
 
-Önizleme sayfanın oranlarını ve yönünü gösterir. Çizim adını girin, ardından **Genişlik** ve **Yükseklik** değerlerini piksel, inç, santimetre veya milimetre olarak ayarlayın. Geçerli oranları korumak için bağlantı denetimini, genişlik ile yüksekliği değiştirmek için yön denetimini kullanın.
+Önizleme sayfanın oranlarını ve yönünü gösterir. Çizim adını girin, ardından **G** ve **Y** değerlerini ayarlayın ve birim olarak px, in, cm veya mm seçin. Geçerli oranları korumak için bağlantı denetimini, genişlik ile yüksekliği değiştirmek için yön denetimini kullanın.
 
 **Çözünürlük**, fiziksel boyutlar ve [Kâğıt dokusu](/tr/docs/layers/paper/) ölçeği için kullanılan inç başına piksel sayısını belirler. Yalnızca çözünürlüğü değiştirmek çizimi yeniden örneklemeden baskı boyutu bilgilerini değiştirir.
-
-Yeni pencere, 300 ppi çözünürlükte ayrı bir boş yatay A4 çizimle başlar (3508 × 2480 px).
 
 İletişim kutusu sonuç piksel boyutlarını ve tahmini kapasiteyi gösterir. Cihazın geçerli çizim sınırını aşan ayarlar oluşturulamaz; sınır boyutlara, bit derinliğine ve kullanılabilir grafik kaynaklarına bağlıdır.
 
 ## Kâğıt
 
-![Yeni çizimde Kâğıt dokusu seçenekleri.](shot:files/new-paper)
+![Yeni çizimde Kâğıt çekmecesi: Kâğıt yok, kâğıt kutucukları ve Doku görünürlüğü.](shot:files/new-paper)
 
-Yeni çizim için yerleşik veya içe aktarılmış bir Kâğıt dokusu seçin. **İçe aktar…**, kâğıt kitaplığına bir görüntü ekler ve onu seçer. Kâğıt katmanı olmadan çizim oluşturmak için **Kâğıt yok** seçin.
+Yeni çizim için yerleşik veya içe aktarılmış bir Kâğıt dokusu seçmek üzere **Kâğıt** altındaki doku kutucuğunu seçin. Çekmecenin altındaki **Doku görünürlüğü**, Kâğıt katmanının [Özellikler](/tr/docs/layers/paper/) panelindekiyle aynı değeri belirler ve kutucuk bunu dokunun adının altında gösterir. **İçe aktar…** son kutucuktur: kâğıt kitaplığına bir görüntü ekler ve onu seçer.
+
+Kâğıt katmanı olmadan çizim oluşturmak için **Kâğıt yok** seçin. Bu durumda **Doku görünürlüğü** kullanılamaz.
 
 ![Yeni çizimde Kâğıt Rengi ve Saydam seçenekleri.](shot:files/new-paper-color)
 

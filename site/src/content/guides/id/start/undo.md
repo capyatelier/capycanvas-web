@@ -1,7 +1,7 @@
 ---
 title: "Urungkan dan ulangi"
 description: "Mengurungkan dan mengulangi perubahan pada gambar, serta riwayat terpisah untuk perubahan tata letak."
-related: ["start/command-search", "customize/workspaces", "input/touch"]
+related: ["start/command-search", "customize/bubbles", "customize/workspaces", "input/touch"]
 ---
 
 Anda dapat mengurungkan perubahan pada gambar langkah demi langkah, dan mengulangi
@@ -29,6 +29,12 @@ Lakukan salah satu langkah berikut:
 - Ketuk kanvas dengan tiga jari.
 
 Perubahan baru setelah Urungkan menghapus langkah yang masih dapat diulangi.
+
+## Gelembung Urungkan dan Ulangi
+
+Seret **Urungkan** atau **Ulangi** ke kanvas untuk menyimpan keduanya dalam satu
+[gelembung](/id/docs/customize/bubbles/). Ketuk bagian kirinya untuk mengurungkan dan
+bagian kanannya untuk mengulangi.
 
 ## Yang dihitung sebagai langkah
 

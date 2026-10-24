@@ -147,6 +147,7 @@ herramientas. Pulsa la tecla otra vez para pasar a la siguiente herramienta de l
 | **Figura** | **U** |
 | **Regla** | **Mayús+U** |
 | **Operación** | **O** |
+| **Editar puntos** | **A** |
 | **Transformar** | **Ctrl+T** |
 | **Recortar** | **C** |
 | **Mano** | **H** |
@@ -175,6 +176,7 @@ herramientas. Pulsa la tecla otra vez para pasar a la siguiente herramienta de l
 | **Copiar selección a una capa nueva** | **Ctrl+J** |
 | **Cortar selección a una capa nueva** | **Ctrl+Mayús+J** |
 | **Combinar hacia abajo** | **Ctrl+E** |
+| **Nueva capa vectorial** | **Ctrl+Alt+Mayús+N** |
 | **Ajustar lienzo a la vista** | **Ctrl+0** |
 | **Píxeles reales** | **Ctrl+1**, **Ctrl+Alt+0** |
 | **Acercar**, **Alejar** | **Ctrl+=**, **Ctrl+-** |

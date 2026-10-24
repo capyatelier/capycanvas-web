@@ -82,7 +82,9 @@ export default async function start({ e, b, shoot, example, message }) {
   await e.workspace('painter');
   await restore();
   await e.load('04-finished.capy');
-  await e.invoke('pen');
+  await e.invoke('pencil');
+  await e.takeBubble({ kind: 'command', command: 'drawing_brush' }, [560, 290]);
+  await e.bubbleOption(await e.takeBubble({ kind: 'color' }, [420, 470]), { kind: 'size', size: 136 });
   await shoot('start/workspaces-sketch', {
     target: fullWindow, pad: 0, maxWidth: 1920,
     check: async () => { await b.call('Input.dispatchMouseEvent', { type: 'mouseMoved', x: 1300, y: 30 }); await b.settle(); await b.settle(); },
@@ -91,8 +93,10 @@ export default async function start({ e, b, shoot, example, message }) {
       { selector: '#header .workspace-switcher', badge: 'below' },
       { selector: '#header .header-item[data-kind="workspaces"] ~ .header-item', union: true, badge: 'below' },
       { selector: '.toolbar-controls[data-panel^="toolbar:"]' },
+      { selector: '.tool-bubble :is(.bubble-surface, .bubble-band)', union: true, outset: 14, badge: 'below' },
     ],
   });
+  await e.send({ type: 'bubble', action: { type: 'put_back_all' } });
 
   await e.workspace('illustrator');
   await restore();

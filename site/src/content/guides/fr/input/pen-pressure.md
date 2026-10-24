@@ -10,7 +10,7 @@ Vous pouvez calibrer la pression du stylet avant son utilisation par les pinceau
 
 Ouvrez les [Préférences](/fr/docs/preferences/), sélectionnez **Stylet et saisie**, puis **Ajuster…** à côté de **Pression du stylet**.
 
-![La boîte de dialogue Pression du stylet avec sa courbe et l’indicateur de pression en direct.](shot:pen/pressure-calibration)
+![La boîte de dialogue Pression du stylet avec sa courbe, Plus ferme et Plus léger, Réinitialiser, Annuler et Appliquer.](shot:pen/pressure-calibration)
 
 ## Courbe de pression
 

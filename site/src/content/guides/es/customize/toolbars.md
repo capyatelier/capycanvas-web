@@ -1,7 +1,7 @@
 ---
 title: "Barras de herramientas y barra de título"
 description: "Crear y editar barras de herramientas, y personalizar la barra de título."
-related: ["customize/panels", "customize/workspaces", "customize/zen", "start/command-search"]
+related: ["customize/panels", "customize/workspaces", "customize/zen", "customize/bubbles", "start/command-search"]
 ---
 
 Cada espacio de trabajo conserva sus propias barras de herramientas y su propia
@@ -15,7 +15,9 @@ el fondo de la barra o en su asa, o mantenla pulsada con un dedo o un lápiz. Ha
 clic con el botón derecho o mantén pulsada una herramienta para abrir el menú de la
 herramienta.
 
-![El menú de la barra de herramientas con los tamaños de botón.](shot:toolbars/toolbar-menu)
+**Mostrar en modo Zen** en el menú de la barra mantiene la barra en pantalla en el [modo Zen](/es/docs/customize/zen/) en la aplicación para Linux.
+
+![El menú de la barra de herramientas con sus tamaños de botón y el elemento Mostrar en modo Zen.](shot:toolbars/toolbar-menu)
 
 ## Mostrar y ocultar barras de herramientas
 
@@ -56,6 +58,7 @@ Cada barra de herramientas necesita un nombre propio.
 - Para añadir herramientas delante de una herramienta, elige **Insertar herramientas…** en el menú de esa herramienta.
 - Para quitar una herramienta, elige **Quitar herramienta** en su menú.
 - Para mover una herramienta, mantenla pulsada y arrástrala dentro de la barra o a otra barra.
+- Para mantener una herramienta en el lienzo, sácala de la barra para crear una [burbuja](/es/docs/customize/bubbles/).
 
 Además de comandos y herramientas, la lista **Añadir herramientas** tiene pinceles, tamaños de pincel, **Selector de color**, **Deslizador de tamaño de pincel**, **Control de intensidad**, **Opciones de herramienta** y **Separador**. También tiene una entrada para cada panel, como **Panel de capas**, que abre el panel en un cajón.
 

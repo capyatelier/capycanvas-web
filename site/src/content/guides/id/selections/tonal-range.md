@@ -21,11 +21,11 @@ Lakukan salah satu langkah berikut:
 bilah alat Lukis atau Foto. Selama alat ini aktif, panel Set Alat mencantumkan
 setiap alat seleksi.
 
-![Pengaturan Rentang nada di laci Seleksi pada Sketsa, dengan Mode, Nada, Kelembutan, dan Perhalus tepi.](shot:selections/tonal-range-settings)
+![Pengaturan Rentang nada di laci Seleksi pada Sketsa, dengan Mode, tombol nada, Kelembutan, dan Perhalus tepi.](shot:selections/tonal-range-settings)
 
 ## Nada
 
-Pilih sebuah tombol di baris **Nada · stop relatif terhadap putih acuan** untuk
+Pilih sebuah tombol di baris tombol nada di bawah **Mode** untuk
 menyeleksi pita kecerahan itu. Pita tersebut digabungkan dengan seleksi saat ini
 sesuai **Mode** (lihat [Alat seleksi](/id/docs/selections/tools/)).
 

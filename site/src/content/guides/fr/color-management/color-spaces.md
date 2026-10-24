@@ -1,11 +1,11 @@
 ---
 title: "Espace colorimétrique, profondeur de couleur et fusion"
-description: "Choisir l’espace colorimétrique, la profondeur de couleur et la Fusion d’un dessin, et les modifier ensuite depuis le menu Édition."
+description: "Choisir l’espace colorimétrique, la profondeur de couleur et la Fusion d’un dessin, et les modifier ensuite depuis le menu Image."
 related: ["files/new", "color-management/proof", "color-management/hdr", "files/export", "preferences"]
 ---
 
 Vous pouvez choisir l’espace colorimétrique, la profondeur de couleur et la Fusion
-d’un dessin à sa création, et les modifier ensuite depuis le menu **Édition**.
+d’un dessin à sa création, et les modifier ensuite depuis le menu **Image**.
 
 ## Espaces colorimétriques
 
@@ -26,40 +26,30 @@ RVB linéaire où 1,0 correspond au blanc SDR à 203 cd/m².
 
 ## Les choisir pour un nouveau dessin
 
-Choisissez **Fichier > Nouveau…** (**Ctrl+N**) et réglez
-**Espace colorimétrique**, **Profondeur de couleur** et **Fusion**, ou choisissez un
-**Préréglage** :
-
-| Préréglage | Espace colorimétrique | Profondeur de couleur | Fusion |
-| --- | --- | --- | --- |
-| **Dessin standard** | sRGB | SDR 8 bits | Perceptuelle |
-| **Couleurs étendues** | Display P3 | SDR 8 bits | Perceptuelle |
-| **Retouche photo** | ProPhoto RGB | SDR 16 bits | Perceptuelle |
-| **Dessin HDR** | sRGB | HDR flottant 16 bits | Lumière linéaire |
+Choisissez **Fichier > Nouveau…** (**Ctrl+N**) et réglez **Espace colorimétrique**,
+**Profondeur de couleur** et **Fusion** sous **Couleur**. Un préréglage de
+**Préréglages** les règle avec la feuille et le Papier. La boîte de dialogue
+conserve les choix du dernier dessin que vous avez créé.
 
 Avec une profondeur en virgule flottante, **Fusion** est fixé sur Lumière
-linéaire. Activez **Utiliser ces réglages pour les nouveaux dessins** pour faire
-de ces choix, Fusion comprise, les valeurs par défaut des nouveaux dessins.
+linéaire.
 
-![La boîte de dialogue Nouveau dessin avec Espace colorimétrique réglé sur Display P3, Profondeur de couleur, Fusion et la ligne de résumé.](shot:color-management/new-dialog-color)
+![La boîte de dialogue Nouveau dessin avec Espace colorimétrique réglé sur Display P3, Profondeur de couleur et Fusion sous Couleur.](shot:color-management/new-dialog-color)
 
 ## Valeurs par défaut dans les Préférences
 
 Choisissez **Édition > Préférences** et ouvrez la page **Couleur** :
 
-- Sous **Nouveaux dessins**, réglez l’**Espace colorimétrique**, la **Profondeur de couleur** et l’**Arrière-plan** des futurs dessins. Les dessins ouverts ne changent pas.
 - Sous **Ouverture des photos**, réglez **Précision de retouche** (**Profondeur d’origine** ou **16 bits**) et **RVB et niveaux de gris sans profil** (**Supposer sRGB** ou **Demander**). Avec **Demander**, l’ouverture d’une photo sans profil affiche **Choisir l’interprétation de l’image**. Les photos avec profil conservent leur profil incorporé.
 - Sélectionnez **Gérer les profils…** pour ouvrir la [Bibliothèque de profils colorimétriques](/fr/docs/color-management/proof/).
 
-Les Préférences n’ont pas de réglage de Fusion.
-
 ## Attribuer un profil
 
-Choisissez **Édition > Attribuer un profil…** pour conserver les valeurs RVB du dessin et les interpréter dans un autre espace de travail. Choisissez l’espace sous **Espace colorimétrique**, où Adobe RGB (1998) est indiqué comme **Adobe RGB**. Les calques Objet conservent le profil source de leur [photo d’origine](/fr/docs/layers/types/).
+Choisissez **Image > Gestion des couleurs > Attribuer un profil…** pour conserver les valeurs RVB du dessin et les interpréter dans un autre espace de travail. Choisissez l’espace sous **Espace colorimétrique**, où Adobe RGB (1998) est indiqué comme **Adobe RGB**. Les calques Objet conservent le profil source de leur [photo d’origine](/fr/docs/layers/types/).
 
 ## Convertir l’espace colorimétrique
 
-Choisissez **Édition > Convertir l’espace colorimétrique…** pour modifier les
+Choisissez **Image > Gestion des couleurs > Convertir l’espace colorimétrique…** pour modifier les
 valeurs RVB afin que les couleurs gardent leur apparence dans un autre espace de
 travail, dans les limites de son gamut.
 
@@ -88,7 +78,7 @@ un nouveau fichier `.capy` et laisse le dessin ouvert inchangé.
 
 ## Changer la profondeur de couleur
 
-Choisissez **Édition > Changer la profondeur de couleur…** pour modifier la
+Choisissez **Image > Gestion des couleurs > Changer la profondeur de couleur…** pour modifier la
 précision enregistrée. L’espace colorimétrique ne change pas.
 
 Passer à une profondeur en virgule flottante rend le dessin HDR et règle Fusion
@@ -131,10 +121,10 @@ qu’**Annuler**.
 Vous pouvez combiner les calques sur les valeurs encodées du dessin ou en lumière
 linéaire. Effectuez l’une des opérations suivantes :
 
-- Choisissez **Édition > Fusion > Fusion perceptuelle** ou **Édition > Fusion > Fusion en lumière linéaire**.
+- Choisissez **Image > Fusion > Fusion perceptuelle** ou **Image > Fusion > Fusion en lumière linéaire**.
 - Réglez **Fusion** sur **Perceptuelle** ou **Lumière linéaire** dans la boîte de dialogue Nouveau dessin.
 
-![Le menu Édition avec le sous-menu Fusion ouvert et Fusion perceptuelle cochée.](shot:color-management/edit-blending-menu)
+![Le sous-menu Fusion avec Fusion perceptuelle cochée.](shot:color-management/edit-blending-menu)
 
 Les pixels peints conservent leurs valeurs. La Fusion modifie :
 

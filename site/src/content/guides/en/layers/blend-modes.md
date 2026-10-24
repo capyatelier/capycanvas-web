@@ -24,7 +24,7 @@ layers use Normal.
 You can't change the blend mode of a selection layer or a locked layer.
 [Merge Down](/docs/layers/merging/) needs both layers set to Normal. Blend
 modes mix colors in the blending space of the drawing, set with
-**Edit > Blending** (see [Color space, bit depth and blending](/docs/color-management/color-spaces/)).
+**Image > Blending** (see [Color space, bit depth and blending](/docs/color-management/color-spaces/)).
 
 ## Modes in the blend menu
 

@@ -1,7 +1,7 @@
 ---
 title: "Layers panel"
 description: "What each part of the Layers panel shows and does, including the layer menu."
-related: ["layers/working", "layers/settings", "layers/types", "layers/masks"]
+related: ["layers/working", "layers/settings", "layers/types", "layers/vector", "layers/masks"]
 ---
 
 The **Layers** panel lists the layers of the drawing, with the front layer at
@@ -18,7 +18,7 @@ Do one of the following:
 - In Sketch, select **Layers** in the title bar. The shared drawer opens on its Layers view; select a layer's Properties button to switch to Properties.
 - Type "Layers panel" in [command search](/docs/start/command-search/).
 
-In Photo, the panel is open in the right column.
+In Photo, the panel is open in the right column. In Sketch, you can drag **Layers** from the title bar onto the canvas to keep it there as a bubble ([Tool bubbles](/docs/customize/bubbles/)).
 
 ## Header
 
@@ -55,7 +55,7 @@ Select a row to make it the active layer and the only selected row.
 
 Paper has separate color and texture thumbnails. If Paper is missing, **Add paper** appears after the last row.
 
-![The Sketch drawer changing from Layers to Properties.](shot:layers/sketch-properties-drawer)
+![The Sketch drawer showing the Properties of Paper, with All layers at the bottom.](shot:layers/sketch-properties-drawer)
 
 **Ctrl**+click a paint layer's thumbnail to load its opacity as a selection, or
 the mask thumbnail to load the mask. Add **Shift** to add to the selection,
@@ -72,34 +72,37 @@ the mask thumbnail to load the mask. Add **Shift** to add to the selection,
 
 ## Footer buttons
 
-![The buttons at the bottom of the Layers panel.](shot:layers/panel-footer "1 New layer · 2 New group · 3 New Selection Layer · 4 Add mask · 5 Add Filter · 6 Import Image as Layer… · 7 Delete selected layers · 8 Layer actions")
+![The buttons at the bottom of the Layers panel.](shot:layers/panel-footer "1 New layer · 2 New vector layer · 3 New group · 4 New Selection Layer · 5 Add mask · 6 Add Filter · 7 Import Image as Layer… · 8 Delete selected layers · 9 Layer actions")
 
 1. **New layer** adds a paint layer.
-2. **New group**. With several rows selected, it groups them.
-3. **New Selection Layer** (see [Selection layers](/docs/selections/selection-layers/)).
-4. **Add mask**.
-5. **Add Filter** attaches a filter to the active layer.
-6. **Import Image as Layer…**
-7. **Delete selected layers**.
-8. **Layer actions** opens the layer menu of the active layer.
+2. **New vector layer** adds a [vector layer](/docs/layers/vector/).
+3. **New group**. With several rows selected, it groups them.
+4. **New Selection Layer** (see [Selection layers](/docs/selections/selection-layers/)).
+5. **Add mask**.
+6. **Add Filter** attaches a filter to the active layer.
+7. **Import Image as Layer…**
+8. **Delete selected layers**.
+9. **Layer actions** opens the layer menu of the active layer.
 
 A button is unavailable when its action doesn't apply to the active layer, for
 example **Add mask** on a locked layer (see
-[Working with layers](/docs/layers/working/)).
+[Working with layers](/docs/layers/working/)). In a narrow panel, the buttons
+that don't fit move to the top of the **Layer actions** menu, starting with
+**New Selection Layer**.
 
 ## Swipes and holds
 
 With a pen or a finger:
 
-- Swipe a row to the left to show **Delete** at its right end. Select **Delete** to delete the layer, or swipe right to hide the button.
+- Swipe a row to the left to show **Lock**, **Duplicate** and **Delete** at its right end. **Lock** reads **Unlock** on a locked layer. Select a button to apply it to the layer, or swipe right to hide the buttons.
 - Swipe a paint layer to the right to turn **Alpha lock** on or off.
 - Swipe a group to the right to turn **Pass Through** on or off.
 - Hold a row to open its layer menu. Move without lifting to drag the row instead.
 
-![A row swiped to the left, with Delete at its right end.](shot:layers/panel-swipe-delete)
+![A row swiped to the left, showing Lock, Duplicate and Delete.](shot:layers/panel-swipe-delete)
 
-A short swipe changes nothing. Swipes don't work with a mouse, on the grip, or
-on locked layers.
+A short swipe changes nothing. Swipes don't work with a mouse or on the grip.
+A locked layer swipes only to the left.
 
 ## Layer menu
 
@@ -116,7 +119,7 @@ Do one of the following:
 
 | Item | Contents |
 | --- | --- |
-| **New** | **New layer**, **New clipping layer**, **New group**, **Solid Color Fill**, **Gradient Fill**, **New Dodge & Burn Layer**, **Copy Selection to New Layer**, **Cut Selection to New Layer** |
+| **New** | **New layer**, **New clipping layer**, **New group**, **New vector layer**, **Solid Color Fill**, **Gradient Fill**, **New Dodge & Burn Layer**, **Copy Selection to New Layer**, **Cut Selection to New Layer** |
 | **Add Filter** | Filters to attach to the layer, by category |
 | **Organize** | **Rename layer…**, **Duplicate**, **Group selected layers**, and **Ungroup** for a group |
 | **Blend Mode** | Every [blend mode](/docs/layers/blend-modes/) |
@@ -127,7 +130,8 @@ Do one of the following:
 | **Visibility** | **Show layer**, **Show layer and parent groups**, **Isolate selected layers**, **Show all layers** |
 | **Move layer / mask** | Selects the [Operation](/docs/transform/move-transform/) tool |
 | **Merge Down**, **Merge Visible**, **Stamp Visible**, **Flatten Image** | See [Merging layers](/docs/layers/merging/) |
-| **Clear Entire Layer**, **Delete layer** | **Clear Entire Layer** appears on paint layers only |
+| **Convert to Object Layer**, **Rasterize Layer** | **Convert to Object Layer** appears on paint layers, and **Rasterize Layer** on Object and [vector layers](/docs/layers/vector/) |
+| **Clear Entire Layer**, **Delete layer** | **Clear Entire Layer** appears on paint layers only. On a vector layer, run it from [command search](/docs/start/command-search/) to remove every path |
 
 Opening the menu of a row makes that layer active. A group's menu starts with
 **New Selection Layer in Group…** and **Save Current Selection in Group…**.

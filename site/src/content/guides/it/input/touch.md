@@ -1,7 +1,7 @@
 ---
 title: "Gesti touch"
 description: "Cosa fanno le dita sulla tela, e i tocchi con le dita che puoi assegnare."
-related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
+related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
 Su uno schermo touch puoi spostare la tela, prelevare colori ed eseguire comandi
@@ -30,6 +30,24 @@ dito compare un anello d'ingrandimento. Trascina per mirare, e solleva il dito
 per prendere il colore. Premi **Esc** per annullare.
 
 Un secondo dito sulla tela annulla il prelievo.
+
+## Svuotare il livello
+
+Strofina la tela con tre dita per eseguire **Svuota intero livello** sul livello
+attivo. Muovi le tre dita insieme, inverti la direzione, poi invertila di nuovo
+senza sollevarle. Un solo **Annulla** ripristina il livello. Un livello bloccato
+non viene svuotato.
+
+## Spostare una bolla
+
+Trascina una [bolla](/it/docs/customize/bubbles/) con due dita per spostarla da
+qualsiasi suo punto.
+
+## Barre strumenti in modalità Zen
+
+Nell'app per Linux, in [modalità Zen](/it/docs/customize/zen/) scorri verso
+l'interno con un dito da un bordo della finestra per mostrare le barre strumenti
+e i pannelli ancorati a quel bordo.
 
 ## Tocchi con le dita
 
@@ -66,4 +84,4 @@ tutte le scorciatoie** in quella pagina ripristina anche i tocchi.
 ## Piattaforme
 
 I gesti touch funzionano su Linux, Windows, Android, iPad e sul web. Il gruppo
-**Gesti touch** non compare su macOS.
+**Gesti touch** non compare su macOS, dove strofinare con tre dita il trackpad svuota comunque il livello.

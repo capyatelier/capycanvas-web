@@ -116,7 +116,7 @@ HDR PNG、HDR JPEG、HDR AVIFの範囲を超える色をクリップします。
 
 ## HDRの書き出し
 
-![出力をプレビューした後の、HDRの作品の「画像を書き出す」ダイアログ。HDR JPEG · ゲインマップが選ばれています。](shot:files/export-hdr-preview)
+![「プレビューする表示」のメニューをHDR再構成 · SDRプレビューに設定し、作品とHDR再構成のプレビューを並べた状態。](shot:files/export-hdr-preview)
 
 16ビットまたは32ビット浮動小数点の作品では、**ダイナミックレンジ**に次の選択肢があります。
 

@@ -96,11 +96,12 @@ di bawah gagangnya.
 | **Lekatkan** | Mengaktifkan atau menonaktifkan **Lekatkan ke penggaris**. |
 | **Garis Bantu** | Menampilkan atau menyembunyikan semua garis bantu. Menyembunyikannya juga menyembunyikan bilah ini. |
 | **Luruskan** | Memulai **Luruskan Gambar ke Garis Bantu**. Hanya untuk garis bantu Lurus. |
+| **Lainnya** | Membuka menu dengan **Tampilkan bilah tindakan kanvas**. |
 
 Menonaktifkan **Tampilan > Tampilkan bilah tindakan kanvas** menghilangkan bilah garis
 bantu.
 
-![Bilah garis bantu di bawah garis bantu Lurus yang dipilih, dengan Hapus, Lekatkan, Garis Bantu, dan Luruskan.](shot:drawing/ruler-guide-bar)
+![Bilah garis bantu di bawah garis bantu Lurus yang dipilih, dengan Hapus, Lekatkan, Garis Bantu, Luruskan, dan Lainnya.](shot:drawing/ruler-guide-bar)
 
 ## Memindahkan garis bantu dengan Operasi
 

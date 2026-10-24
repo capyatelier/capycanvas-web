@@ -1,7 +1,7 @@
 ---
 title: "Cử chỉ chạm"
 description: "Tác dụng của ngón tay trên khung vẽ, và các thao tác chạm ngón tay bạn có thể gán."
-related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
+related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
 Bạn có thể di chuyển khung vẽ, lấy màu và chạy lệnh bằng ngón tay trên màn hình cảm
@@ -28,6 +28,22 @@ Giữ yên một ngón tay trên khung vẽ để lấy màu bên dưới. Một
 phía trên ngón tay. Kéo để ngắm, rồi nhấc ngón tay để lấy màu. Nhấn **Escape** để hủy.
 
 Ngón tay thứ hai chạm khung vẽ sẽ hủy thao tác lấy màu.
+
+## Xóa lớp
+
+Chà khung vẽ bằng ba ngón tay để chạy **Xóa toàn bộ lớp** trên lớp đang hoạt động. Di
+chuyển cả ba ngón tay cùng nhau, đảo chiều, rồi đảo chiều lần nữa mà không nhấc ngón.
+Một lần **Hoàn tác** khôi phục lớp. Lớp bị khóa không bị xóa.
+
+## Di chuyển bong bóng
+
+Kéo một [bong bóng](/vi/docs/customize/bubbles/) bằng hai ngón tay để di chuyển nó từ
+bất kỳ chỗ nào trên bong bóng.
+
+## Thanh công cụ trong chế độ Zen
+
+Trong ứng dụng Linux, vuốt vào trong từ mép cửa sổ bằng một ngón tay trong
+[chế độ Zen](/vi/docs/customize/zen/) để hiện các thanh công cụ và bảng đã gắn ở mép đó.
 
 ## Chạm ngón tay
 
@@ -62,4 +78,4 @@ chạm. **Đặt lại mọi phím tắt** trên trang đó cũng đặt lại c
 ## Nền tảng
 
 Cử chỉ chạm hoạt động trên Linux, Windows, Android, iPad và web. Nhóm **Cử chỉ chạm**
-không hiện trên macOS.
+không hiện trên macOS, nơi chà ba ngón trên bàn di chuột vẫn xóa lớp.

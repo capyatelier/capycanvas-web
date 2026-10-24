@@ -1,7 +1,7 @@
 ---
 title: "Barres d’outils et barre de titre"
 description: "Créer et modifier des barres d’outils, et personnaliser la barre de titre."
-related: ["customize/panels", "customize/workspaces", "customize/zen", "start/command-search"]
+related: ["customize/panels", "customize/workspaces", "customize/zen", "customize/bubbles", "start/command-search"]
 ---
 
 Chaque espace de travail conserve ses propres barres d’outils et sa propre barre
@@ -15,7 +15,9 @@ fond de la barre ou sur sa poignée, ou appuyez longuement dessus avec un doigt 
 un stylet. Cliquez avec le bouton droit sur un outil, ou appuyez longuement
 dessus, pour ouvrir le menu de l’outil.
 
-![Le menu de la barre d’outils avec les tailles de tuiles.](shot:toolbars/toolbar-menu)
+**Afficher en mode Zen** dans le menu de la barre d’outils garde la barre d’outils à l’écran en [mode Zen](/fr/docs/customize/zen/) dans l’application Linux.
+
+![Le menu de la barre d’outils avec ses tailles de tuiles et l’élément Afficher en mode Zen.](shot:toolbars/toolbar-menu)
 
 ## Afficher et masquer des barres d’outils
 
@@ -57,6 +59,7 @@ Chaque barre d’outils doit avoir un nom qui lui est propre.
 - Pour ajouter des outils avant un outil, choisissez **Insérer des outils…** dans le menu de cet outil.
 - Pour retirer un outil, choisissez **Retirer l’outil** dans son menu.
 - Pour déplacer un outil, appuyez longuement dessus, puis faites-le glisser dans la barre d’outils ou dans une autre barre d’outils.
+- Pour garder un outil sur la toile, faites-le glisser hors de la barre d’outils pour sortir une [bulle](/fr/docs/customize/bubbles/).
 
 Outre les commandes et les outils, la liste **Ajouter des outils** comprend des pinceaux, des tailles de pinceau, **Pipette**, **Curseur de taille du pinceau**, **Curseur d’intensité**, **Options de l’outil** et **Séparateur**. Elle propose aussi une entrée pour chaque panneau, comme **Panneau Calques**, qui ouvre le panneau dans un tiroir.
 

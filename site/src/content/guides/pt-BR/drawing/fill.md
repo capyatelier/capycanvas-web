@@ -1,7 +1,7 @@
 ---
 title: "Ferramentas de preenchimento"
 description: "Como preencher áreas, formas à mão livre e regiões fechadas de uma camada com a cor atual."
-related: ["drawing/gradient", "layers/settings", "selections/working", "drawing/brush-tools"]
+related: ["drawing/gradient", "layers/vector", "layers/settings", "selections/working", "drawing/brush-tools"]
 ---
 
 Você pode preencher partes da camada selecionada com a cor atual usando
@@ -72,6 +72,10 @@ Contornar e preencher volta para **Camadas de referência** sempre que você abr
 
 Se Preencher usar **Camadas de referência** e nenhuma camada estiver marcada,
 Preencher não pinta nada e um aviso oferece marcar a camada abaixo.
+
+## Camadas vetoriais
+
+Em uma camada vetorial, **Preencher** colore o caminho fechado em que você clica. Um clique em qualquer outro ponto, ou a origem **Camadas de referência**, adiciona uma camada de pintura abaixo da camada vetorial e preenche ali. **Preencher com laço** adiciona um caminho preenchido, e **Degradê** e **Contornar e preencher** oferecem **Nova camada de pintura abaixo**. Veja [Camadas vetoriais](/pt-BR/docs/layers/vector/).
 
 ## Configurações de preenchimento
 

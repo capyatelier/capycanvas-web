@@ -61,7 +61,7 @@ original photo, the layers, the masks, and the filter layers
 3. Set **Pixel size** to **Fit within bounds**, and leave **Maximum width (px)** and **Maximum height (px)** at 2048.
 4. Select **Choose File…**, and choose a folder and a name.
 
-![The Export image dialog with Web / Share, JPEG image, Quality 90 and Fit within bounds.](shot:photo/export-jpeg)
+![The export settings with Web / Share, JPEG image, Quality 90 and Fit within bounds.](shot:photo/export-jpeg)
 
 Exporting doesn't change the drawing
 ([Exporting images](/docs/files/export/)).

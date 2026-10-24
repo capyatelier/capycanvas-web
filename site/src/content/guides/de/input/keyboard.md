@@ -148,6 +148,7 @@ Taste erneut für das nächste Werkzeug der Familie.
 | **Form** | **U** |
 | **Lineal** | **Umschalt+U** |
 | **Vorgang** | **O** |
+| **Punkte bearbeiten** | **A** |
 | **Transformieren** | **Strg+T** |
 | **Zuschneiden** | **C** |
 | **Hand** | **H** |
@@ -176,6 +177,7 @@ Taste erneut für das nächste Werkzeug der Familie.
 | **Auswahl auf neue Ebene kopieren** | **Strg+J** |
 | **Auswahl auf neue Ebene ausschneiden** | **Strg+Umschalt+J** |
 | **Mit darunterliegender Ebene vereinen** | **Strg+E** |
+| **Neue Vektorebene** | **Strg+Alt+Umschalt+N** |
 | **Leinwand einpassen** | **Strg+0** |
 | **Tatsächliche Pixel** | **Strg+1**, **Strg+Alt+0** |
 | **Vergrößern**, **Verkleinern** | **Strg+=**, **Strg+-** |

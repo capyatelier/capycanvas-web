@@ -92,7 +92,7 @@ related: ["selections/working", "selections/tonal-range", "selections/quick-mask
 
 点按画布上的某个颜色。**自动选择**选取该点周围的连续区域，**按颜色选择**选取图像中任意位置的匹配像素。
 
-![自动选择的工具设置面板，包含模式、抗锯齿、来源、容差、边缘设置和羽化半径。](shot:selections/tools-auto-select-settings)
+![自动选择的工具设置面板，包含模式、选择、容差、边缘设置、羽化半径、抗锯齿和来源。](shot:selections/tools-auto-select-settings)
 
 ### 来源
 
@@ -128,4 +128,4 @@ related: ["selections/working", "selections/tonal-range", "selections/quick-mask
 
 ## 选择按钮
 
-工具设置面板中选区工具设置下方的**选择**会打开[选择菜单](/zh/docs/selections/working/)。**明暗范围**设置中没有**选择**按钮。
+工具设置面板中**模式**行下方的**选择**会打开[选择菜单](/zh/docs/selections/working/)。**明暗范围**设置中没有**选择**按钮。

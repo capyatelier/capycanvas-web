@@ -1,7 +1,7 @@
 ---
 title: "Công cụ tô màu"
 description: "Tô màu hiện tại vào vùng, hình vẽ tự do và vùng khép kín trên một lớp."
-related: ["drawing/gradient", "layers/settings", "selections/working", "drawing/brush-tools"]
+related: ["drawing/gradient", "layers/vector", "layers/settings", "selections/working", "drawing/brush-tools"]
 ---
 
 Bạn có thể tô màu hiện tại vào các phần của lớp đang chọn bằng **Tô đầy**, **Tô vùng
@@ -70,6 +70,10 @@ tô trở về **Lớp tham chiếu** mỗi lần bạn mở {appName}.
 
 Nếu Tô đầy dùng **Lớp tham chiếu** mà chưa có lớp nào được đánh dấu, Tô đầy không vẽ
 gì và một thông báo đề nghị đánh dấu lớp bên dưới.
+
+## Lớp vector
+
+Trên lớp vector, **Tô đầy** tô màu đường khép kín mà bạn nhấp vào. Nhấp vào chỗ khác, hoặc dùng nguồn **Lớp tham chiếu**, sẽ thêm một lớp vẽ bên dưới lớp vector và tô ở đó. **Tô vùng chọn tự do** thêm một đường được tô, còn **Chuyển màu** và **Khoanh và tô** đưa ra **Lớp vẽ mới bên dưới**. Xem [Lớp vector](/vi/docs/layers/vector/).
 
 ## Thiết lập tô màu
 

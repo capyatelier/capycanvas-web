@@ -10,10 +10,9 @@ related: ["color-management/proof", "color-management/color-spaces", "color/colo
 
 要得到 HDR 畫作，執行以下任一操作：
 
-- 選擇**檔案 > 新增…**，然後選擇 **HDR 繪畫**預設或浮點**位元深度**。
-- 選擇**編輯 > 變更位元深度…**，然後選擇浮點位元深度。
+- 選擇**檔案 > 新增…**，然後選擇 **4K HDR** 預設或浮點**位元深度**。
+- 選擇**影像 > 色彩管理 > 變更位元深度…**，然後選擇浮點位元深度。
 - 開啟 HDR PNG（BT.2020 PQ）或 HDR AVIF 檔案（16 位元浮點 HDR），或 OpenEXR 檔案（32 位元浮點 HDR）。
-- 在[偏好設定](/zh-Hant/docs/preferences/)的**色彩**頁面中將**位元深度**設為浮點位元深度，新畫作即為 HDR。
 
 在 HDR 畫作中：
 

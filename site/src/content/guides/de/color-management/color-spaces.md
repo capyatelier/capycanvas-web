@@ -1,11 +1,11 @@
 ---
 title: "Farbraum, Farbtiefe und Verrechnung"
-description: "Farbraum, Farbtiefe und Verrechnung einer Zeichnung wählen und später über das Menü Bearbeiten ändern."
+description: "Farbraum, Farbtiefe und Verrechnung einer Zeichnung wählen und später über das Menü Bild ändern."
 related: ["files/new", "color-management/proof", "color-management/hdr", "files/export", "preferences"]
 ---
 
 Sie können Farbraum, Farbtiefe und Verrechnung einer Zeichnung beim Erstellen wählen
-und später über das Menü **Bearbeiten** ändern.
+und später über das Menü **Bild** ändern.
 
 ## Farbräume
 
@@ -26,39 +26,30 @@ lineares RGB, in dem 1.0 SDR-Weiß bei 203 cd/m² entspricht.
 
 ## Für eine neue Zeichnung wählen
 
-Wählen Sie **Datei > Neu…** (**Strg+N**) und legen Sie **Farbraum**, **Farbtiefe**
-und **Verrechnung** fest, oder wählen Sie eine **Vorgabe**:
-
-| Vorgabe | Farbraum | Farbtiefe | Verrechnung |
-| --- | --- | --- | --- |
-| **Standardzeichnung** | sRGB | 8-Bit-SDR | Wahrnehmungsbasiert |
-| **Erweiterter Farbraum** | Display P3 | 8-Bit-SDR | Wahrnehmungsbasiert |
-| **Fotobearbeitung** | ProPhoto RGB | 16-Bit-SDR | Wahrnehmungsbasiert |
-| **HDR-Zeichnung** | sRGB | 16-Bit-Gleitkomma-HDR | Lineares Licht |
+Wählen Sie **Datei > Neu…** (**Strg+N**) und legen Sie unter **Farbe** **Farbraum**,
+**Farbtiefe** und **Verrechnung** fest. Eine Vorgabe aus **Vorgaben** legt sie
+zusammen mit Blatt und Papier fest. Der Dialog behält die Auswahl der zuletzt
+erstellten Zeichnung.
 
 Bei einer Gleitkomma-Farbtiefe ist **Verrechnung** fest auf Lineares Licht
-eingestellt. Aktivieren Sie **Diese Einstellungen für neue Zeichnungen verwenden**,
-um die Auswahl einschließlich Verrechnung zum Standard für neue Zeichnungen zu machen.
+eingestellt.
 
-![Der Dialog Neue Zeichnung mit Farbraum auf Display P3, Farbtiefe, Verrechnung und der Zusammenfassungszeile.](shot:color-management/new-dialog-color)
+![Der Dialog Neue Zeichnung mit Farbraum auf Display P3, Farbtiefe und Verrechnung unter Farbe.](shot:color-management/new-dialog-color)
 
 ## Standardwerte in den Einstellungen
 
 Wählen Sie **Bearbeiten > Einstellungen** und öffnen Sie die Seite **Farbe**:
 
-- Unter **Neue Zeichnungen** legen Sie **Farbraum**, **Farbtiefe** und **Hintergrund** künftiger Zeichnungen fest. Geöffnete Zeichnungen ändern sich nicht.
 - Unter **Fotos öffnen** legen Sie **Bearbeitungsgenauigkeit** (**Quellfarbtiefe** oder **16 Bit**) und **RGB und Graustufen ohne Profil** (**sRGB annehmen** oder **Nachfragen**) fest. Bei **Nachfragen** zeigt das Öffnen eines Fotos ohne Profil **Bildinterpretation wählen**. Fotos mit Profil behalten ihre eingebetteten Profile.
 - Wählen Sie **Profile verwalten…** aus, um die [Farbprofilbibliothek](/de/docs/color-management/proof/) zu öffnen.
 
-Die Einstellungen enthalten keine Einstellung für die Verrechnung.
-
 ## Profil zuweisen
 
-Wählen Sie **Bearbeiten > Profil zuweisen…**, um die RGB-Werte der Zeichnung beizubehalten und in einem anderen Arbeitsfarbraum zu lesen. Wählen Sie den Farbraum unter **Farbraum**, wo Adobe RGB (1998) als **Adobe RGB** aufgeführt ist. Objektebenen behalten das Quellprofil ihres [Originalfotos](/de/docs/layers/types/).
+Wählen Sie **Bild > Farbverwaltung > Profil zuweisen…**, um die RGB-Werte der Zeichnung beizubehalten und in einem anderen Arbeitsfarbraum zu lesen. Wählen Sie den Farbraum unter **Farbraum**, wo Adobe RGB (1998) als **Adobe RGB** aufgeführt ist. Objektebenen behalten das Quellprofil ihres [Originalfotos](/de/docs/layers/types/).
 
 ## Farbraum konvertieren
 
-Wählen Sie **Bearbeiten > Farbraum konvertieren…**, um die RGB-Werte so zu ändern,
+Wählen Sie **Bild > Farbverwaltung > Farbraum konvertieren…**, um die RGB-Werte so zu ändern,
 dass die Farben in einem anderen Arbeitsfarbraum ihr Aussehen behalten, innerhalb
 seines Farbumfangs.
 
@@ -86,7 +77,7 @@ speichern** speichert eine konvertierte, auf eine Ebene reduzierte Kopie als neu
 
 ## Farbtiefe ändern
 
-Wählen Sie **Bearbeiten > Farbtiefe ändern…**, um die gespeicherte Genauigkeit zu
+Wählen Sie **Bild > Farbverwaltung > Farbtiefe ändern…**, um die gespeicherte Genauigkeit zu
 ändern. Der Farbraum ändert sich nicht.
 
 Ein Wechsel zu einer Gleitkomma-Farbtiefe macht die Zeichnung zu HDR und setzt die
@@ -126,10 +117,10 @@ wenden die Änderung ohne weitere Eingabe an und bieten nur **Abbrechen**.
 Sie können Ebenen auf den kodierten Werten der Zeichnung oder in linearem Licht
 verrechnen. Führen Sie eine der folgenden Aktionen aus:
 
-- Wählen Sie **Bearbeiten > Verrechnung > Wahrnehmungsbasierte Verrechnung** oder **Bearbeiten > Verrechnung > Verrechnung in linearem Licht**.
+- Wählen Sie **Bild > Verrechnung > Wahrnehmungsbasierte Verrechnung** oder **Bild > Verrechnung > Verrechnung in linearem Licht**.
 - Setzen Sie **Verrechnung** im Dialog Neue Zeichnung auf **Wahrnehmungsbasiert** oder **Lineares Licht**.
 
-![Das Menü Bearbeiten mit geöffnetem Untermenü Verrechnung und abgehakter Wahrnehmungsbasierter Verrechnung.](shot:color-management/edit-blending-menu)
+![Das Untermenü Verrechnung mit abgehakter Wahrnehmungsbasierter Verrechnung.](shot:color-management/edit-blending-menu)
 
 Gemalte Pixel behalten ihre Werte. Die Verrechnung ändert:
 

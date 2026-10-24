@@ -4,7 +4,7 @@ description: "Kırp aracıyla tuvali kırpma ve düzeltme."
 related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"]
 ---
 
-**Kırp** aracıyla tuvali bir çerçeveye göre kırpabilirsiniz. **Kırpılanı sil**
+**Kırp** aracıyla tuvali bir çerçeveye göre kırpabilirsiniz. **Kırpılan boyayı sil**
 seçeneğini açmadığınız sürece kırpılan pikseller kendi katmanlarında gizli
 olarak kalır.
 
@@ -45,7 +45,7 @@ Tuval çubuğundaki **Oran** menüsünden **Serbest**, **Özgün**, **1:1**, **4
 **Oran** menüsünün yanındaki simge düğmesi **Kırpma yönünü değiştir**, çerçeveyi
 yatay ile dikey arasında çevirir.
 
-Oran, kaplama ve **Kırpılanı sil** sonraki kırpmaya aktarılır.
+Oran, kaplama ve **Kırpılan boyayı sil** sonraki kırpmaya aktarılır.
 
 ![Kırpma çubuğundaki Oran menüsü.](shot:transform/crop-ratio-menu)
 
@@ -77,14 +77,14 @@ Bir kılavuza göre düzeltmek için kılavuzu seçin ve kılavuzun tuval çubu�
 **Düzelt** düğmesini seçin (bkz. [Cetveller ve kılavuzlar](/tr/docs/drawing/ruler/)).
 Kılavuzla aynı hizaya döndürülmüş bir kırpma açılır.
 
-## Kırpılanı sil
+## Kırpılan boyayı sil
 
 Kırpmayı uyguladığınızda çerçevenin dışındaki pikselleri atmak için
-**Kırpılanı sil** seçeneğini açın. Yerleştirilmiş fotoğraflar özgün
+**Kırpılan boyayı sil** seçeneğini açın. Yerleştirilmiş fotoğraflar özgün
 piksellerini korur. Varsayılan olarak kapalıdır.
 
 Gizli pikseller korunduğunda çok büyük olacak bir kırpma yalnızca
-**Kırpılanı sil** açıkken çalışır.
+**Kırpılan boyayı sil** açıkken çalışır.
 
 ## Sıfırla
 

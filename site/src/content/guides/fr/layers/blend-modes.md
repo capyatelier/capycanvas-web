@@ -25,7 +25,7 @@ Normal. Les nouveaux calques utilisent Normal.
 Vous ne pouvez pas changer le mode de fusion d’un calque de sélection ni d’un
 calque verrouillé. [Fusionner avec le calque inférieur](/fr/docs/layers/merging/)
 demande que les deux calques soient réglés sur Normal. Les modes de fusion mélangent les
-couleurs dans l’espace de fusion du dessin, défini avec **Édition > Fusion**
+couleurs dans l’espace de fusion du dessin, défini avec **Image > Fusion**
 (voir [Espace colorimétrique, profondeur de couleur et fusion](/fr/docs/color-management/color-spaces/)).
 
 ## Modes du menu des modes de fusion

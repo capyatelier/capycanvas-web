@@ -1,7 +1,7 @@
 ---
 title: "Undo and redo"
 description: "Undoing and redoing changes to a drawing, and the separate history for layout changes."
-related: ["start/command-search", "customize/workspaces", "input/touch"]
+related: ["start/command-search", "customize/bubbles", "customize/workspaces", "input/touch"]
 ---
 
 You can undo changes to a drawing one step at a time, and redo the steps you
@@ -28,6 +28,11 @@ Do one of the following:
 - Tap the canvas with three fingers.
 
 A new change after Undo clears the steps you could redo.
+
+## Undo and redo bubble
+
+Drag **Undo** or **Redo** onto the canvas to keep both in one [bubble](/docs/customize/bubbles/).
+Tap its left half to undo and its right half to redo.
 
 ## What counts as a step
 

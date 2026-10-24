@@ -1,7 +1,7 @@
 ---
 title: "Mover e Transformar"
-description: "Como mover e transformar camadas e pixels selecionados com a ferramenta Operação e com Transformar."
-related: ["selections/working", "transform/crop", "transform/clipboard", "drawing/ruler"]
+description: "Como mover e transformar camadas, pixels selecionados e caminhos com a ferramenta Operação e com Transformar."
+related: ["selections/working", "layers/paths", "transform/crop", "transform/clipboard", "drawing/ruler"]
 ---
 
 Você pode mover camadas e pixels selecionados com a ferramenta **Operação**, e
@@ -14,7 +14,7 @@ Faça uma das seguintes ações:
 
 - Abra o menu de uma camada no painel Camadas e escolha **Mover camada / máscara**.
 - Pressione **O**.
-- Em Pintura e Foto, selecione **Operação / Transformar** na barra de ferramentas Ferramentas. Clique com o botão direito no botão ou mantenha-o pressionado para escolher **Operação**.
+- Em Pintura e Foto, selecione **Operação / Transformar / Editar pontos** na barra de ferramentas Ferramentas. Clique com o botão direito no botão ou mantenha-o pressionado para escolher **Operação**.
 - Digite "Operação" na [busca de comandos](/pt-BR/docs/start/command-search/).
 
 Esboço não tem o botão **Operação**.
@@ -35,6 +35,10 @@ ativa, em passos de pixels inteiros. Enquanto você edita uma máscara,
 Com as guias visíveis, **Operação** também seleciona e arrasta as guias
 (consulte [Réguas e guias](/pt-BR/docs/drawing/ruler/)).
 
+## Mover caminhos
+
+Em uma camada vetorial, **Operação** seleciona, move, dimensiona e gira caminhos em vez de mover a camada. Pressione **Ctrl+A** para selecionar todos os caminhos. **Editar > Transformar** com caminhos selecionados passa para **Operação** e a caixa dela. Veja [Editar caminhos](/pt-BR/docs/layers/paths/).
+
 ## Deixar cópia
 
 Você pode mover uma cópia dos pixels selecionados e manter os originais no
@@ -52,7 +56,7 @@ Faça uma das seguintes ações:
 - Pressione **Ctrl+T**.
 - Selecione **Transformar** na barra de ferramentas Comandos, em Pintura e Foto, ou na barra de título, em Esboço.
 - Selecione **Transformar** na barra de seleção.
-- Em Pintura e Foto, clique com o botão direito ou mantenha pressionado **Operação / Transformar** na barra de ferramentas Ferramentas e escolha **Transformar**.
+- Em Pintura e Foto, clique com o botão direito ou mantenha pressionado **Operação / Transformar / Editar pontos** na barra de ferramentas Ferramentas e escolha **Transformar**.
 
 Com uma seleção, **Transformar** altera os pixels selecionados da camada ou da
 máscara ativa. Sem seleção, altera as camadas selecionadas. Aparecem uma caixa
@@ -96,7 +100,7 @@ Em todos os modos:
 ### Modo
 
 **Livre**, **Uniforme**, **Distorcer** ou **Deformar**. **Uniforme** mantém as
-proporções. As transformações de camada abrem em **Uniforme**.
+proporções. **Livre** é o padrão.
 
 ### Tamanho original
 
@@ -121,7 +125,7 @@ Com **Deformar**:
 - **Redefinir grade**: substitui a deformação por uma grade reta.
 - **Grade**: **3 × 3** (o padrão), **4 × 4** ou **5 × 5**. Fica disponível até você mudar a forma.
 
-![A barra de ações da tela no modo Deformar, com Dividir grade, Selecionar pontos, Redefinir grade e Grade.](shot:transform/warp-bar)
+![A barra de ações da tela no modo Deformar, com o menu Dividir verticalmente, Selecionar pontos, Redefinir grade e o menu 3 × 3.](shot:transform/warp-bar)
 
 ### Botões de inverter e girar
 

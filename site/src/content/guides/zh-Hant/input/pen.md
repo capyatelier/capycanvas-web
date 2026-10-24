@@ -22,6 +22,8 @@ related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", 
 
 兩個開關預設都開啟，**預測量**預設為 16 ms。**啟用筆跡預測**關閉時，另外兩項設定無法使用。
 
+滑鼠的筆跡沒有向筆尖前方延伸的預測；在 Linux、Windows 和 Android 上，沒有螢幕的數位板的筆跡同樣沒有。在網頁版編輯器和 macOS 上，這類數位板的筆跡會按設定預測。
+
 | 系統 | 系統預測 |
 | --- | --- |
 | iPad | 可用 |

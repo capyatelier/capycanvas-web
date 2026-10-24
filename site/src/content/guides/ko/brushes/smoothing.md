@@ -14,7 +14,7 @@ related: ["brushes/basics", "drawing/brush-tools", "brushes/reset"]
 
 선 보정의 강도는 브러시의 기본 **강도** 설정과 별개입니다.
 
-![동일한 입력 경로를 여러 선 보정 강도로 그린 선.](shot:brushes/smoothing-comparison)
+![동일한 입력 경로를 두 번 그린 모습. 위쪽 선은 선 보정이 꺼져 있고 아래쪽 선은 선 보정 강도가 높습니다.](shot:brushes/smoothing-comparison)
 
 ## 속도에 따라 조정
 

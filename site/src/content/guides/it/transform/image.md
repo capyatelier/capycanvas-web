@@ -72,7 +72,7 @@ Sceglie, da una griglia 3 × 3, il lato o l'angolo dell'immagine che resta fermo
 
 ## Ruotare e riflettere l'immagine
 
-Scegli uno di questi comandi da **Immagine**:
+Scegli uno di questi comandi da **Immagine > Ruota e rifletti**:
 
 - **Ruota immagine di 90° a sinistra**
 - **Ruota immagine di 90° a destra**

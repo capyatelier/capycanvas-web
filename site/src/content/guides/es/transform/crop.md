@@ -6,7 +6,7 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 
 Puedes recortar el lienzo a un marco con la herramienta **Recortar**. Los píxeles
 recortados se quedan en sus capas, ocultos, salvo que actives
-**Eliminar lo recortado**.
+**Eliminar pintura recortada**.
 
 ## Recortar el lienzo
 
@@ -46,7 +46,7 @@ de esa proporción. **Libre** es el valor predeterminado.
 **Intercambiar orientación de recorte**, el botón de icono junto a
 **Proporción**, cambia el marco entre horizontal y vertical.
 
-La proporción, la superposición y **Eliminar lo recortado** se mantienen en el
+La proporción, la superposición y **Eliminar pintura recortada** se mantienen en el
 siguiente recorte.
 
 ![El menú Proporción en la barra de recorte.](shot:transform/crop-ratio-menu)
@@ -81,14 +81,14 @@ Para enderezar según una guía, selecciona la guía y selecciona **Enderezar** 
 su barra del lienzo (consulta [Reglas y guías](/es/docs/drawing/ruler/)). Se abre
 un recorte girado para quedar alineado con la guía.
 
-## Eliminar lo recortado
+## Eliminar pintura recortada
 
-Activa **Eliminar lo recortado** para descartar los píxeles fuera del marco al
+Activa **Eliminar pintura recortada** para descartar los píxeles fuera del marco al
 aplicar el recorte. Las fotos colocadas conservan sus píxeles originales.
 Desactivado de forma predeterminada.
 
 Un recorte que sería demasiado grande si se conservaran los píxeles ocultos solo
-funciona con **Eliminar lo recortado** activado.
+funciona con **Eliminar pintura recortada** activado.
 
 ## Restablecer
 

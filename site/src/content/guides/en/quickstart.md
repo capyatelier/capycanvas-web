@@ -19,19 +19,20 @@ After your first visit, the web editor also opens without an internet connection
 
 ![The Layers panel of a new drawing, with Current ink above Paper.](shot:files/new-layers)
 
-The first time you open {appName}, it shows the [Paint](/docs/start/workspaces/)
-workspace with a blank A4 landscape drawing at 300 ppi.
-**Current ink**, an empty paint layer, is selected above **Paper**. The **Pen**
-tool is active with the **G-Pen** brush and a near-black color.
+The first time you open {appName}, it shows the [Sketch](/docs/start/workspaces/)
+workspace with a blank landscape drawing, 4:3 and as tall as your screen.
+**Current ink**, an empty paint layer, is selected above **Paper**, which has the
+**Cold press** texture. The **Pencil** tool is active with a dark gray color.
 
 Later, {appName} opens with the workspace you used last and the drawings that
 were open.
 
 ## Drawing
 
-Drag on the canvas with a pen or a mouse. To use another tool, select it in the
-Tools toolbar at the left edge of the window. In Sketch, select **Brush** in the
-title bar.
+Drag on the canvas with a pen or a mouse. To use another tool, select **Brush**
+in the title bar in Sketch, or the tool in the Tools toolbar at the left edge in
+Paint. Drag a tool onto the canvas to keep it there as a
+[bubble](/docs/customize/bubbles/).
 
 > **Memo:** Fingers never draw. Two fingers on the canvas pan, zoom and rotate the view.
 
@@ -52,8 +53,8 @@ in the web editor. Choose it from the menu or from
 
 ## Starting another drawing
 
-Choose **File > New…** and select **Create** in the [New drawing](/docs/files/new/)
-dialog. Choose its size, resolution, Paper and color settings, then select **Create**. The new drawing opens in its own tab next to the first one.
+Choose **File > New…** to open the [New drawing](/docs/files/new/) dialog. The new
+drawing opens in its own tab next to the first one.
 
 ## Saving the drawing
 

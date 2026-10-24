@@ -10,9 +10,9 @@ related: ["files/new", "drawing/fill", "drawing/brush-tools", "transform/move-tr
 
 1. 在標題列的工作區切換器中選擇**繪畫**。
 2. 選擇**檔案 > 新增…**，或按 **Ctrl+N**（[新建畫作](/zh-Hant/docs/files/new/)）。
-3. 在**新建繪畫**對話方塊中，將**寬度（px）** 和**高度（px）** 設為 1200，然後選擇**建立**。
+3. 在**新建繪畫**對話方塊中，在單位選單中選擇 **px**，將**寬**和**高**設為 1200，然後選擇**建立**。
 
-![新建繪畫對話方塊，寬度（px）和高度（px）設為 1200。](shot:illustration/new-drawing)
+![新建繪畫對話方塊，寬和高設為 1200 px。](shot:illustration/new-drawing)
 
 畫作有兩個圖層：**目前墨色**位於**紙張**上方。在圖層面板中按兩下**目前墨色**，將圖層重新命名為 *Color rough*。
 

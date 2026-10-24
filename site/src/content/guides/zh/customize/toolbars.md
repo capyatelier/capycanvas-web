@@ -1,7 +1,7 @@
 ---
 title: "工具栏和标题栏"
 description: "创建和编辑工具栏，以及自定义标题栏。"
-related: ["customize/panels", "customize/workspaces", "customize/zen", "start/command-search"]
+related: ["customize/panels", "customize/workspaces", "customize/zen", "customize/bubbles", "start/command-search"]
 ---
 
 每个工作区都有自己的工具栏和标题栏。**窗口 > 撤销布局更改**（**Ctrl+Alt+Z**）可撤回上一次更改。
@@ -10,7 +10,9 @@ related: ["customize/panels", "customize/workspaces", "customize/zen", "start/co
 
 要打开工具栏菜单，右键单击工具栏的背景或手柄，或用手指或数位笔按住它。右键单击或按住某个工具，可打开该工具的菜单。
 
-![工具栏菜单及其中的图块大小。](shot:toolbars/toolbar-menu)
+工具栏菜单中的**在专注模式中显示**可在 Linux 应用的[专注模式](/zh/docs/customize/zen/)下让该工具栏保留在屏幕上。
+
+![工具栏菜单，包含图块大小和在专注模式中显示一项。](shot:toolbars/toolbar-menu)
 
 ## 显示和隐藏工具栏
 
@@ -45,6 +47,7 @@ related: ["customize/panels", "customize/workspaces", "customize/zen", "start/co
 - 要在某个工具之前添加工具，从该工具的菜单中选择**插入工具…**。
 - 要移除工具，从其菜单中选择**移除工具**。
 - 要移动工具，按住它，然后在工具栏内拖动，或拖到另一个工具栏中。
+- 要把工具留在画布上，可将其拖出工具栏，取出[气泡](/zh/docs/customize/bubbles/)。
 
 除命令和工具外，**添加工具** 列表还包含画笔、画笔大小、**颜色选择器**、**画笔大小滑块**、**强度滑块**、**工具选项** 和 **分隔线**。它还包含每个面板的条目，例如 **图层面板**，可在抽屉中打开对应面板。
 

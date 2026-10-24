@@ -11,9 +11,9 @@ camada acima dele.
 
 1. Selecione **Pintura** no seletor de áreas de trabalho, na barra de título.
 2. Escolha **Arquivo > Novo…** ou pressione **Ctrl+N** ([Novos desenhos](/pt-BR/docs/files/new/)).
-3. Na caixa de diálogo **Novo desenho**, defina **Largura (px)** e **Altura (px)** como 1200 e selecione **Criar**.
+3. Na caixa de diálogo **Novo desenho**, escolha **px** no menu de unidade, defina **L** e **A** como 1200 e selecione **Criar**.
 
-![A caixa de diálogo Novo desenho com Largura (px) e Altura (px) definidas como 1200.](shot:illustration/new-drawing)
+![A caixa de diálogo Novo desenho com L e A definidas como 1200 px.](shot:illustration/new-drawing)
 
 O desenho tem duas camadas: **Tinta atual** acima de **Papel**. Clique duas
 vezes em **Tinta atual** no painel Camadas e renomeie a camada como

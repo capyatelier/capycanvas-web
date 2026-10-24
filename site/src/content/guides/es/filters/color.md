@@ -7,7 +7,7 @@ related: ["filters/adding", "filters/tone", "filters/how-filters-apply"]
 Los filtros de color están en **Filtro > Color** y en la categoría **Color** del
 panel **Filtros**. Sus ajustes se cambian en el panel **Propiedades**.
 
-![El panel Filtros con la categoría Color y una vista previa de cada filtro.](shot:filters/color-list)
+![La categoría Color en el panel Filtros, de Tono / Saturación a Mapa de degradado, cada una con una vista previa de trazo.](shot:filters/color-list)
 
 ## Tono / Saturación
 

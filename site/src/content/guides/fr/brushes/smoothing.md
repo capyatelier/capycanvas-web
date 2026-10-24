@@ -14,7 +14,7 @@ Vous pouvez lisser le trait d’un pinceau pendant le dessin. Les réglages de l
 
 L’Intensité du lissage est distincte du réglage principal **Intensité** du pinceau.
 
-![Le même tracé dessiné avec plusieurs valeurs d’Intensité du lissage.](shot:brushes/smoothing-comparison)
+![Le même tracé dessiné deux fois, le trait du haut sans lissage et celui du bas avec une Intensité du lissage élevée.](shot:brushes/smoothing-comparison)
 
 ## Ajuster selon la vitesse
 

@@ -1,7 +1,7 @@
 ---
 title: "Herramientas de relleno"
 description: "Rellenar zonas, formas a mano alzada y regiones cerradas de una capa con el color actual."
-related: ["drawing/gradient", "layers/settings", "selections/working", "drawing/brush-tools"]
+related: ["drawing/gradient", "layers/vector", "layers/settings", "selections/working", "drawing/brush-tools"]
 ---
 
 Puedes rellenar partes de la capa seleccionada con el color actual mediante
@@ -70,6 +70,10 @@ y Rodear y rellenar vuelve a **Capas de referencia** cada vez que abres {appName
 
 Si Rellenar usa **Capas de referencia** y no hay ninguna capa marcada, no pinta
 nada y un aviso ofrece marcar la capa de debajo.
+
+## Capas vectoriales
+
+En una capa vectorial, **Rellenar** colorea el trazado cerrado en el que haces clic. Un clic en cualquier otro punto, o el origen **Capas de referencia**, añade una capa de pintura debajo de la capa vectorial y rellena allí. **Relleno con lazo** añade un trazado relleno, y **Degradado** y **Rodear y rellenar** ofrecen **Nueva capa de pintura debajo**. Consulta [Capas vectoriales](/es/docs/layers/vector/).
 
 ## Ajustes de relleno
 

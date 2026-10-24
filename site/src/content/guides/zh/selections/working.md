@@ -59,9 +59,11 @@ related: ["selections/tools", "selections/quick-mask", "selections/selection-lay
 - **快速蒙版**：参见[快速蒙版](/zh/docs/selections/quick-mask/)。
 - **保存**：**另存为选区图层**，参见[选区图层](/zh/docs/selections/selection-layers/)。
 
+在较窄的栏上，最后几个按钮（例如**快速蒙版**和**保存**）会移到**更多**中。
+
 ## 选择菜单
 
-也可以从选区操作栏上的**更多**，以及工具设置面板中选区工具设置下方的**选择**打开**选择**菜单。
+也可以从选区操作栏上的**更多**，以及工具设置面板**模式**行下方的**选择**打开**选择**菜单。
 
 | 命令 | 作用 | 按键 |
 | --- | --- | --- |
@@ -121,7 +123,7 @@ related: ["selections/tools", "selections/quick-mask", "selections/selection-lay
 
 执行以下任一操作：
 
-- 从**编辑**菜单中选择该命令。清除命令也在**选择**菜单中。
+- 选择**编辑 > 填充选区**、**清除所选像素**或**清除选区外部**。
 - 按 **Shift+Backspace** 填充，或按 **Delete** 或 **Backspace** 清除选中的像素。
 - 在选区操作栏上选择**填充**，或选择**清除**再选择一个命令。
 - 在“绘画”中，选择“命令”工具栏中的**填充选区**。
@@ -135,7 +137,7 @@ related: ["selections/tools", "selections/quick-mask", "selections/selection-lay
 
 执行以下任一操作：
 
-- 选择**选择 > 将选区复制到新图层**或**选择 > 将选区剪切到新图层**。
+- 选择**图层 > 新建 > 将选区复制到新图层**或**图层 > 新建 > 将选区剪切到新图层**。
 - 按 **Ctrl+J** 复制，或按 **Ctrl+Shift+J** 剪切。
 - 选择选区操作栏上的**复制到图层**，然后选择一个命令。
 

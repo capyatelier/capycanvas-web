@@ -24,7 +24,7 @@ Normal. Las capas nuevas usan Normal.
 No puedes cambiar el modo de mezcla de una capa de selección ni de una capa
 bloqueada. [Combinar hacia abajo](/es/docs/layers/merging/) necesita que las dos
 capas estén en Normal. Los modos de mezcla combinan los colores en el espacio de
-mezcla del dibujo, que se ajusta con **Editar > Mezcla** (consulta
+mezcla del dibujo, que se ajusta con **Imagen > Mezcla** (consulta
 [Espacio de color, profundidad de bits y mezcla](/es/docs/color-management/color-spaces/)).
 
 ## Modos del menú de modos de mezcla

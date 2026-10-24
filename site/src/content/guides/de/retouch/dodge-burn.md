@@ -44,7 +44,7 @@ Die Gruppe übernimmt Deckkraft und Beschneidung der ursprünglichen Ebene. Die
 ursprüngliche Ebene bleibt ausgeblendet direkt unter der Gruppe.
 
 Die Ebene muss sichtbar und auf **Normal** gestellt sein, und die Zeichnung muss
-**Bearbeiten > Verrechnung > Wahrnehmungsbasierte Verrechnung** verwenden (siehe
+**Bild > Verrechnung > Wahrnehmungsbasierte Verrechnung** verwenden (siehe
 [Farbraum, Farbtiefe und Verrechnung](/de/docs/color-management/color-spaces/)).
 Ändert sich die Zeichnung, während das Feld geöffnet ist, schließt es sich.
 

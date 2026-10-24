@@ -1,11 +1,12 @@
 ---
 title: "Mesclar camadas"
-description: "Como combinar camadas em uma única camada de pintura com os comandos de mesclagem."
-related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types"]
+description: "Como combinar camadas em uma única camada com os comandos de mesclagem, e o que acontece com as camadas vetoriais."
+related: ["layers/working", "filters/how-filters-apply", "layers/masks", "layers/types", "layers/vector"]
 ---
 
-Você pode mesclar camadas em uma única camada de pintura. Os comandos de
-mesclagem ficam perto do fim do menu **Camada** e do menu de cada camada.
+Você pode mesclar camadas em uma única camada de pintura, ou duas camadas vetoriais
+em uma única camada vetorial. Os comandos de mesclagem ficam perto do fim do menu
+**Camada** e do menu de cada camada.
 
 ![O menu Camada com Ribbon ativa, mostrando Mesclar camadas recortadas, Mesclar visíveis, Carimbar visíveis e Achatar imagem.](shot:layers/merging-menu)
 
@@ -27,6 +28,20 @@ Ela é uma referência se qualquer uma das duas camadas era.
 As duas camadas precisam estar visíveis, desbloqueadas e em Normal. A camada de
 baixo não pode ser um filtro e não pode estar recortada, a menos que a camada
 ativa também esteja.
+
+## Mesclar camadas vetoriais
+
+**Mesclar abaixo** mantém os caminhos quando uma
+[camada vetorial](/pt-BR/docs/layers/vector/) é mesclada na camada vetorial abaixo
+dela, e os coloca na frente. As duas camadas precisam ter opacidade de 100%,
+nenhuma máscara, nenhum recorte e nenhum filtro anexado.
+
+Qualquer outra mesclagem que inclua uma camada vetorial transforma os caminhos em
+pixels. Um aviso informa os nomes das camadas, por exemplo "Ao mesclar, os caminhos
+em “Line art” viram pixels.", e a mesclagem é executada quando você seleciona o
+botão do aviso. **Achatar imagem** acrescenta os nomes ao aviso de camadas ocultas.
+
+![O aviso que diz "Ao mesclar, os caminhos em “Line art” viram pixels.", com um botão Mesclar abaixo.](shot:vector/merge-notice)
 
 ## Mesclar camadas recortadas
 

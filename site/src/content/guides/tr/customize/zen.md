@@ -1,7 +1,7 @@
 ---
 title: "Zen modu"
 description: "Zen modu ile başlık çubuğunu ve yuvaya yerleştirilmiş panelleri gizleme ve Zen modu tercihleri."
-related: ["customize/panels", "customize/toolbars", "preferences", "input/keyboard"]
+related: ["customize/panels", "customize/toolbars", "customize/bubbles", "preferences", "input/keyboard"]
 ---
 
 Zen modunda başlık çubuğunu, yuvaya yerleştirilmiş panelleri ve araç
@@ -29,11 +29,22 @@ da açık kalır. **Başlık çubuğunu özelleştir…** Zen modunu kapatır.
 Zen modu daraltılmış sütunları ve alt çubuğu da gizler. Şunlar ekranda kalır:
 
 - yüzen paneller
+- [araç baloncukları](/tr/docs/customize/bubbles/), haleleri, seçicileri ve menüleriyle
 - seçimin veya dönüştürmenin yanındaki tuval eylem çubuğu
 - **Zen modunda Capy'yi göster** kapatılmadıysa Capy düğmesi
 - bildirimler
 
 Tuşlar ve komut arama (**Ctrl+K**) her zamanki gibi çalışır.
+
+## Araç çubuklarını Zen modunda tutma
+
+Linux uygulamasında, bir araç çubuğunu Zen modunda ekranda tutmak için araç
+çubuğunun menüsünden **Zen modunda göster** komutunu seçin.
+
+Linux uygulamasında dokunmatik ekranda, pencere kenarının 24 px içinden tek
+parmakla içeri doğru kaydırarak o kenara yerleştirilmiş araç çubuklarını ve
+panelleri gösterin. Bunların dışına dokunduğunuzda yeniden gizlenirler. Kalem
+veya fare bunları gösteremez.
 
 ## Zen modunda yerleştirme
 

@@ -5,8 +5,7 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 ---
 
 Vous pouvez recadrer la toile selon un cadre avec l’outil **Recadrer**. Les pixels
-recadrés restent masqués sur leurs calques, sauf si vous activez **Supprimer les
-zones recadrées**.
+recadrés restent masqués sur leurs calques, sauf si vous activez **Supprimer la peinture recadrée**.
 
 ## Recadrer la toile
 
@@ -46,7 +45,7 @@ cadre de ce rapport. **Libre** est la valeur par défaut.
 **Inverser l’orientation du recadrage**, le bouton à icône à côté de **Rapport**,
 fait passer le cadre du format paysage au format portrait, et inversement.
 
-Le rapport, la superposition et **Supprimer les zones recadrées** sont conservés
+Le rapport, la superposition et **Supprimer la peinture recadrée** sont conservés
 pour le recadrage suivant.
 
 ![Le menu Rapport dans la barre de recadrage.](shot:transform/crop-ratio-menu)
@@ -80,14 +79,14 @@ Pour redresser selon un repère, sélectionnez le repère, puis **Redresser** da
 barre d’actions de la toile (voir [Règles et repères](/fr/docs/drawing/ruler/)). Un
 recadrage s’ouvre, pivoté pour s’aligner sur le repère.
 
-## Supprimer les zones recadrées
+## Supprimer la peinture recadrée
 
-Activez **Supprimer les zones recadrées** pour supprimer les pixels situés hors du
+Activez **Supprimer la peinture recadrée** pour supprimer les pixels situés hors du
 cadre lors de l’application du recadrage. Les photos placées conservent leurs pixels
 d’origine. Désactivé par défaut.
 
 Un recadrage qui serait trop grand si les pixels masqués étaient conservés ne
-fonctionne qu’avec **Supprimer les zones recadrées** activé.
+fonctionne qu’avec **Supprimer la peinture recadrée** activé.
 
 ## Réinitialiser
 

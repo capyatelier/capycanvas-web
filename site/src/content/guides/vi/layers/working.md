@@ -109,7 +109,6 @@ nguyên vị trí.
 Thực hiện một trong các cách sau:
 
 - Chọn **Lớp > Mới > Sao chép vùng chọn sang lớp mới** (**Ctrl+J**) hoặc **Cắt vùng chọn sang lớp mới** (**Ctrl+Shift+J**).
-- Chọn các lệnh này từ trình đơn **Chọn**.
 - Chọn các lệnh này từ **Sao chép sang lớp** trên [thanh vùng chọn](/vi/docs/selections/working/) trên khung vẽ.
 
 Lớp mới nằm trên lớp nguồn, có tên “Bản sao *tên*”, cùng độ đục và chế độ hòa trộn.

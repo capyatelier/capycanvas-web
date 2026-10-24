@@ -1,11 +1,11 @@
 ---
 title: "Espaço de cores, profundidade de bits e mesclagem"
-description: "Como escolher o espaço de cores, a profundidade de bits e a Mesclagem de um desenho e como alterá-los depois pelo menu Editar."
+description: "Como escolher o espaço de cores, a profundidade de bits e a Mesclagem de um desenho e como alterá-los depois pelo menu Imagem."
 related: ["files/new", "color-management/proof", "color-management/hdr", "files/export", "preferences"]
 ---
 
 Você pode escolher o espaço de cores, a profundidade de bits e a Mesclagem de um
-desenho ao criá-lo e alterá-los depois pelo menu **Editar**.
+desenho ao criá-lo e alterá-los depois pelo menu **Imagem**.
 
 ## Espaços de cores
 
@@ -27,38 +27,28 @@ branco SDR a 203 cd/m².
 ## Escolher para um desenho novo
 
 Escolha **Arquivo > Novo…** (**Ctrl+N**) e defina **Espaço de cores**,
-**Profundidade de bits** e **Mesclagem**, ou escolha uma **Predefinição**:
-
-| Predefinição | Espaço de cores | Profundidade de bits | Mesclagem |
-| --- | --- | --- | --- |
-| **Desenho padrão** | sRGB | SDR de 8 bits | Perceptual |
-| **Cores amplas** | Display P3 | SDR de 8 bits | Perceptual |
-| **Edição de fotos** | ProPhoto RGB | SDR de 16 bits | Perceptual |
-| **Desenho HDR** | sRGB | HDR de 16 bits em ponto flutuante | Luz linear |
+**Profundidade de bits** e **Mesclagem** em **Cor**. Uma predefinição de
+**Predefinições** define esses itens junto com a folha e o Papel. O diálogo mantém
+as escolhas do último desenho que você criou.
 
 Com uma profundidade em ponto flutuante, **Mesclagem** fica fixa em Luz linear.
-Ative **Usar estas configurações para novos desenhos** para tornar essas escolhas,
-incluindo a Mesclagem, o padrão dos novos desenhos.
 
-![A caixa de diálogo Novo desenho com Espaço de cores definido como Display P3, Profundidade de bits, Mesclagem e a linha de resumo.](shot:color-management/new-dialog-color)
+![A caixa de diálogo Novo desenho com Espaço de cores definido como Display P3, Profundidade de bits e Mesclagem em Cor.](shot:color-management/new-dialog-color)
 
 ## Padrões em Preferências
 
 Escolha **Editar > Preferências** e abra a página **Cor**:
 
-- Em **Novos desenhos**, defina **Espaço de cores**, **Profundidade de bits** e **Fundo** dos desenhos futuros. Os desenhos abertos não mudam.
 - Em **Abertura de fotos**, defina **Precisão de edição** (**Profundidade da origem** ou **16 bits**) e **RGB e escala de cinza sem perfil** (**Assumir sRGB** ou **Perguntar**). Com **Perguntar**, abrir uma foto sem perfil mostra **Escolher interpretação da imagem**. As fotos com perfil mantêm os perfis incorporados.
 - Selecione **Gerenciar perfis…** para abrir a [Biblioteca de perfis de cor](/pt-BR/docs/color-management/proof/).
 
-Preferências não tem configuração de Mesclagem.
-
 ## Atribuir perfil
 
-Escolha **Editar > Atribuir perfil…** para manter os valores RGB do desenho e interpretá-los em outro espaço de trabalho. Escolha o espaço em **Espaço de cores**, onde Adobe RGB (1998) aparece como **Adobe RGB**. Camadas de objeto mantêm o perfil de origem da [foto original](/pt-BR/docs/layers/types/).
+Escolha **Imagem > Gerenciamento de cores > Atribuir perfil…** para manter os valores RGB do desenho e interpretá-los em outro espaço de trabalho. Escolha o espaço em **Espaço de cores**, onde Adobe RGB (1998) aparece como **Adobe RGB**. Camadas de objeto mantêm o perfil de origem da [foto original](/pt-BR/docs/layers/types/).
 
 ## Converter espaço de cores
 
-Escolha **Editar > Converter espaço de cores…** para alterar os números RGB de
+Escolha **Imagem > Gerenciamento de cores > Converter espaço de cores…** para alterar os números RGB de
 modo que as cores mantenham a aparência em outro espaço de trabalho, dentro da
 gama dele.
 
@@ -85,7 +75,7 @@ deixa o desenho aberto inalterado.
 
 ## Alterar profundidade de bits
 
-Escolha **Editar > Alterar profundidade de bits…** para alterar a precisão
+Escolha **Imagem > Gerenciamento de cores > Alterar profundidade de bits…** para alterar a precisão
 armazenada. O espaço de cores não muda.
 
 Passar para uma profundidade em ponto flutuante torna o desenho HDR e define a
@@ -125,10 +115,10 @@ sem pedir mais nada e oferecem só **Cancelar**.
 Você pode combinar as camadas pelos valores codificados do desenho ou em luz
 linear. Faça uma das seguintes ações:
 
-- Escolha **Editar > Mesclagem > Mesclagem perceptual** ou **Editar > Mesclagem > Mesclagem em luz linear**.
+- Escolha **Imagem > Mesclagem > Mesclagem perceptual** ou **Imagem > Mesclagem > Mesclagem em luz linear**.
 - Defina **Mesclagem** como **Perceptual** ou **Luz linear** na caixa de diálogo Novo desenho.
 
-![O menu Editar com o submenu Mesclagem aberto e Mesclagem perceptual marcada.](shot:color-management/edit-blending-menu)
+![O submenu Mesclagem com Mesclagem perceptual marcada.](shot:color-management/edit-blending-menu)
 
 Os pixels pintados mantêm os valores. A Mesclagem altera:
 

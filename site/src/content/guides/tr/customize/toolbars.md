@@ -1,7 +1,7 @@
 ---
 title: "Araç çubukları ve başlık çubuğu"
 description: "Araç çubukları oluşturma ve düzenleme ve başlık çubuğunu özelleştirme."
-related: ["customize/panels", "customize/workspaces", "customize/zen", "start/command-search"]
+related: ["customize/panels", "customize/workspaces", "customize/zen", "customize/bubbles", "start/command-search"]
 ---
 
 Her çalışma alanı kendi araç çubuklarını ve başlık çubuğunu korur. **Pencere > Düzen değişikliğini geri al** (**Ctrl+Alt+Z**) son değişikliği geri alır.
@@ -12,7 +12,10 @@ Bir araç çubuğunun menüsünü açmak için araç çubuğunun arka planına v
 tutamacına sağ tıklayın ya da parmakla veya kalemle basılı tutun. Aracın menüsü
 için araca sağ tıklayın veya aracı basılı tutun.
 
-![Kutucuk boyutlarını içeren araç çubuğu menüsü.](shot:toolbars/toolbar-menu)
+Araç çubuğunun menüsündeki **Zen modunda göster**, Linux uygulamasında araç
+çubuğunu [Zen modunda](/tr/docs/customize/zen/) ekranda tutar.
+
+![Kutucuk boyutlarını ve Zen modunda göster öğesini içeren araç çubuğu menüsü.](shot:toolbars/toolbar-menu)
 
 ## Araç çubuklarını gösterme ve gizleme
 
@@ -52,6 +55,7 @@ Her araç çubuğunun kendine ait bir adı olmalıdır.
 - Bir aracın önüne araç eklemek için o aracın menüsünden **Araçları ekle…** komutunu seçin.
 - Bir aracı kaldırmak için aracın menüsünden **Aracı kaldır** komutunu seçin.
 - Bir aracı taşımak için basılı tutun, ardından araç çubuğunun içinde veya başka bir araç çubuğuna sürükleyin.
+- Bir aracı tuvalde tutmak için aracı araç çubuğundan dışarı sürükleyip bir [baloncuk](/tr/docs/customize/bubbles/) çıkarın.
 
 **Araç ekle** listesinde komutların ve araçların yanı sıra fırçalar, fırça
 boyutları, **Renk seçici**, **Fırça boyutu kaydırıcısı**, **Güç kaydırıcısı**, **Araç seçenekleri** ve **Ayırıcı** bulunur. Listede ayrıca her

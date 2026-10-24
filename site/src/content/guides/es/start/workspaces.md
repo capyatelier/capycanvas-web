@@ -6,12 +6,12 @@ related: ["customize/workspaces", "customize/panels", "customize/toolbars", "cus
 
 Un espacio de trabajo es una distribución guardada de la barra de título, las
 barras de herramientas y los paneles. {appName} incluye tres: **Boceto**,
-**Pintura** y **Foto**. La primera vez se abre en Pintura y, después, en el
+**Pintura** y **Foto**. La primera vez se abre en Boceto y, después, en el
 espacio de trabajo que usaste por última vez.
 
 ## Boceto
 
-![El espacio de trabajo Boceto con el ejemplo de ilustración en el lienzo.](shot:start/workspaces-sketch "1 Barra de título, izquierda · 2 Selector de espacio de trabajo · 3 Barra de título, derecha · 4 Controles del pincel")
+![El espacio de trabajo Boceto con el ejemplo de ilustración en el lienzo.](shot:start/workspaces-sketch "1 Barra de título, izquierda · 2 Selector de espacio de trabajo · 3 Barra de título, derecha · 4 Controles del pincel · 5 Burbujas de herramientas")
 
 Boceto no tiene paneles acoplados: los botones de herramientas y de paneles de la barra de título abren cajones.
 
@@ -19,6 +19,7 @@ Boceto no tiene paneles acoplados: los botones de herramientas y de paneles de l
 2. El selector de espacios de trabajo.
 3. **Pincel**, **Esculpir**, **Borrador**, **Panel de capas** y **Color del pincel**. El editor web añade **Pantalla completa**.
 4. **Deslizador de tamaño de pincel**, **Selector de color**, **Control de intensidad**, **Deshacer** y **Rehacer**.
+5. Burbujas de herramientas sacadas de la barra de título, aquí una burbuja de **Pincel** con su halo de ajustes y un pequeño anillo de color (consulta [Burbujas de herramientas](/es/docs/customize/bubbles/)).
 
 | Botón | Paneles del cajón |
 | --- | --- |
@@ -28,7 +29,7 @@ Boceto no tiene paneles acoplados: los botones de herramientas y de paneles de l
 | **Transformar** | **Conjunto de herramientas**, **Herramienta** |
 | **Panel de filtros** | **Tipo de filtro**, **Filtros**, **Propiedades** |
 | **Panel de capas** | **Capas** |
-| **Color del pincel** | **Color** |
+| **Color del pincel** | **Color**, **Paletas** |
 
 **Menú principal** abre los menús (en macOS están en la barra de menús del
 sistema). **Seleccionar** elige la herramienta de selección que usaste por última vez.
@@ -44,7 +45,7 @@ Pintura acopla los paneles en columnas a ambos lados del lienzo.
 
 1. **Capy (modo Zen)** y los menús, el título del dibujo en el centro y después el selector de espacio de trabajo y **Ajustes**. El editor web añade **Pantalla completa**.
 2. **Nuevo…**, **Abrir…**, **Guardar**, **Deshacer**, **Rehacer**, **Borrar capa completa**, **Rellenar selección**, **Transformar** y **Voltear vista horizontalmente**.
-3. **Pluma**, **Lápiz**, **Pincel de pintura**, **Borrador**, **Aerógrafo**, **Decoración**, **Mezclar**, **Licuar**, las herramientas de selección, **Rellenar**, **Degradado**, **Operación**, **Figura**, **Regla**, **Mano**, **Cuentagotas** y **Color del pincel**.
+3. **Pluma**, **Lápiz**, **Pincel de pintura**, **Borrador**, **Aerógrafo**, **Decoración**, **Mezclar**, **Licuar**, las herramientas de selección, **Rellenar**, **Degradado**, **Operación**, **Figura**, **Regla**, **Mano**, **Zoom**, **Cuentagotas** y **Color del pincel**.
 4. Pestañas de **Conjunto de herramientas** y **Diagnóstico**, de **Herramienta** y **Tamaño del pincel**, y de **Color** y **Paletas**.
 5. Iconos de **Navegador** y **Prueba de color**, de **Propiedades** y **Filtros**, y de **Capas**.
 6. El indicador de zoom y rotación, descrito en [Vista del lienzo](/es/docs/start/canvas/).
@@ -63,7 +64,7 @@ Foto mantiene abiertos a la derecha los paneles de edición fotográfica. Su bar
 
 1. **Nuevo…**, **Abrir…**, **Guardar**, **Deshacer**, **Rehacer** y **Transformar**.
 2. **Opciones de herramienta**, los ajustes de la herramienta actual.
-3. **Operación**, **Recortar**, las herramientas de selección, **Pincel**, **Borrador**, **Tampón de clonar**, **Pincel corrector puntual**, **Mezclar**, **Licuar**, **Degradado**, **Mano**, **Cuentagotas** y **Color del pincel**.
+3. **Operación**, **Recortar**, las herramientas de selección, **Pincel**, **Borrador**, **Tampón de clonar**, **Pincel corrector puntual**, **Mezclar**, **Licuar**, **Degradado**, **Mano**, **Zoom**, **Cuentagotas** y **Color del pincel**.
 4. **Histograma** y **Forma de onda**, **Propiedades** y **Filtros**, y **Capas**.
 5. Iconos de **Conjunto de herramientas** y **Diagnóstico**, de **Herramienta** y **Tamaño del pincel**, y de **Navegador** y **Prueba de color**. Cada icono abre solo su grupo, como cajón.
 

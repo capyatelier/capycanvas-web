@@ -46,6 +46,6 @@ related: ["filters/how-filters-apply", "filters/tone", "selections/working", "fi
 3. 將**像素尺寸**設為**符合尺寸上限**，並保持**最大寬度（px）** 和**最大高度（px）** 為 2048。
 4. 選擇**選擇檔案…**，然後選擇資料夾和名稱。
 
-![匯出影像對話方塊，設為網頁 / 分享、JPEG 影像、質量 90 和符合尺寸上限。](shot:photo/export-jpeg)
+![匯出設定，設為網頁 / 分享、JPEG 影像、質量 90 和符合尺寸上限。](shot:photo/export-jpeg)
 
 匯出不會更改畫作（[匯出影像](/zh-Hant/docs/files/export/)）。

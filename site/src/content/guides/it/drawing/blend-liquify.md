@@ -14,13 +14,20 @@ Esegui una delle seguenti operazioni:
 - Premi **J**.
 - In Pittura, seleziona **Sfuma** nella barra strumenti Strumenti. Lo stesso pulsante contiene **Timbro clone**.
 - In Foto, seleziona **Sfuma** nella barra strumenti Strumenti.
-- In Schizzo, scegli **Sfuma** nel cassetto **Modella**.
+- In Schizzo, scegli uno sfumino nel cassetto **Modella**.
 - Cerca **Sfuma** nella ricerca comandi.
 
-Sfuma ha due predefiniti, **Sfumino naturale** e **Sfumino**. Entrambi partono
-con **Carica di colore** allo 0% e non portano un colore proprio. **Prelievo del
-colore** imposta quanto lontano trascinano il colore lungo il tratto
-([Mescolanza, diffusione e setole](/it/docs/brushes/wet-media/)).
+Scegli un set e uno sfumino in **Set di strumenti**. **Sfumino** è lo sfumino
+predefinito.
+
+| Set | Sfumini |
+| --- | --- |
+| **Sfuma** | **Sfumino**, **Sfumino morbido**, **Sfocatura**, **Sfumino di carta**, **Fazzoletto di carta**, **Sfumino granuloso**, **Sfumino che preserva la texture**, **Sfumino della tinta** |
+| **Colore fresco** | **Sfumino naturale**, **Sfumino bagnato**, **Miscelatore di colori**, **Spatola per sfumare**, **Sfumino a setole** |
+| **Effetti** | **Sfumino pittorico**, **Sfumino a pettine**, **Sfumino sparso**, **Nitidezza**, **Marmorizzazione**, **Sfumino cristallino**, **Sfumino a retino** |
+
+Le impostazioni di ogni sfumino si trovano in
+[Mescolanza, diffusione e setole](/it/docs/brushes/wet-media/).
 
 ## Fluidifica
 
@@ -28,7 +35,7 @@ Esegui una delle seguenti operazioni:
 
 - Premi **J** mentre Sfuma è attivo.
 - In Pittura o Foto, seleziona **Fluidifica** nella barra strumenti Strumenti. Fai clic con il pulsante destro sul pulsante o tienilo premuto per scegliere una modalità.
-- In Schizzo, scegli **Fluidifica** nel cassetto **Modella**.
+- In Schizzo, scegli una modalità nel set **Fluidifica** del cassetto **Modella**.
 - Cerca **Fluidifica** nella ricerca comandi.
 
 Ogni modalità è un predefinito in **Set di strumenti**:
@@ -41,12 +48,38 @@ Ogni modalità è un predefinito in **Set di strumenti**:
 | **Fluidifica: contrai** | Attira i pixel verso il centro del pennello. |
 | **Fluidifica: espandi** | Spinge i pixel lontano dal centro del pennello. |
 | **Fluidifica: cristalli** | Spezza l'immagine sotto il pennello in piccole celle sparse. |
+| **Bordo** | Attira i pixel verso la linea del tratto da entrambi i lati. |
+| **Ricostruisci** | Annulla sotto il pennello la deformazione di Fluidifica. |
+
+Fluidifica non ha un pulsante Applica. Ogni tratto modifica il livello ed è un
+passaggio di annullamento a sé. I tratti continuano a deformare i pixel che il
+livello aveva prima del primo tratto, finché non dipingi sul livello, lo riempi,
+lo filtri, lo trasformi o ci incolli.
+
+## Regola Fluidifica e Ripristina Fluidifica
+
+Puoi ridurre tutto ciò che Fluidifica ha fatto a un livello con **Regola
+Fluidifica**, oppure riportare il livello ai suoi pixel precedenti al primo
+tratto con **Ripristina Fluidifica**.
+
+Esegui una delle seguenti operazioni:
+
+- Nel pannello **Strumento**, attiva **Regola Fluidifica** o seleziona **Ripristina Fluidifica**.
+- Cerca **Regola Fluidifica** o **Ripristina Fluidifica** nella ricerca comandi.
+
+Con **Regola Fluidifica** attivo, nel pannello **Strumento** compare un cursore
+**Intensità**. Al 100% la deformazione resta com'è, e allo 0% è sparita.
+Rilasciare il cursore è un passaggio di annullamento, e lo è anche **Ripristina
+Fluidifica**.
+
+Entrambi i comandi non sono disponibili, con il messaggio «Applica prima
+Fluidifica a questo livello», finché il livello non ha modifiche di Fluidifica.
 
 ## Impostazioni di Fluidifica
 
-![Il pannello Strumento per Fluidifica: cristalli, con il gruppo Fluidifica che mostra Intensità e Distorsione.](shot:drawing/liquify-settings)
+![Il pannello Strumento per Fluidifica: cristalli con Intensità, il gruppo Fluidifica che mostra Distorsione e Inerzia, e Regola Fluidifica e Ripristina Fluidifica.](shot:drawing/liquify-settings)
 
-**Intensità**, **Distorsione** e **Inerzia** si trovano nel gruppo **Fluidifica** del pannello **Strumento**. **Intensità** imposta l'intensità con cui il tratto sposta i pixel.
+**Distorsione** e **Inerzia** si trovano nel gruppo **Fluidifica** del pannello **Strumento**.
 
 ### Intensità
 
@@ -55,30 +88,23 @@ pressione leggera della penna e verso il bordo di una punta morbida.
 
 ### Distorsione
 
-Imposta quanto **Fluidifica: cristalli** sparpaglia i pixel. Nessun'altra
-modalità ha questa impostazione.
+Rende irregolare il movimento. Su **Fluidifica: cristalli** imposta quanto si
+sparpagliano le celle. **Ricostruisci** non ha **Distorsione**.
 
 ### Inerzia
 
-Fa sì che **Fluidifica: spingi** porti i pixel più lontano di quanto si muova la
-penna, e compare solo in questa modalità.
+Porta avanti l'effetto lungo l'ultima direzione del tratto dopo che sollevi la
+penna. **Ricostruisci** non ha **Inerzia**.
 
 ## Cassetto Modella in Schizzo
 
-In Schizzo, **Modella** nella barra del titolo contiene Sfuma, Fluidifica e gli
-strumenti di ritocco.
+In Schizzo, seleziona **Modella** nella barra del titolo per usare l'ultimo
+strumento Sfuma, Fluidifica o Ritocco, selezionalo di nuovo per aprire il suo
+cassetto, e un'altra volta per chiuderlo. Il cassetto elenca i set, gli strumenti
+del set scelto e le loro impostazioni. **Modella** e **Pennello** conservano
+ciascuno il proprio ultimo predefinito e la propria dimensione del pennello.
 
-- Seleziona **Modella** per usare l'ultimo predefinito di modellazione. La prima volta è **Sfumino naturale**.
-- Seleziona di nuovo **Modella** per aprire il suo cassetto, e un'altra volta per chiuderlo.
-
-Il cassetto ha tre colonne. **Modellazione** elenca **Sfuma**, **Fluidifica**,
-**Clona**, **Correggi** e **Correggi al volo**. **Strumenti** elenca i
-predefiniti del gruppo scelto e **Strumento** contiene le loro impostazioni.
-
-**Modella** e **Pennello** conservano ciascuno il proprio ultimo predefinito e la
-propria dimensione del pennello.
-
-![Il cassetto Modella in Schizzo con Fluidifica scelto in Modellazione e i sei predefiniti di Fluidifica in Strumenti.](shot:drawing/sketch-sculpt-drawer)
+![Il cassetto Modella in Schizzo con i set Sfuma, Colore fresco, Effetti, Fluidifica e Ritocco a sinistra, gli sfumini del set Sfuma al centro e le impostazioni di Sfumino a destra.](shot:drawing/sketch-sculpt-drawer)
 
 ## Dipingere su una maschera
 

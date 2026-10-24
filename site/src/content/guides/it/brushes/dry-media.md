@@ -12,11 +12,11 @@ I pennelli a secco usano la pressione e l'inclinazione della penna e la trama de
 
 I predefiniti a secco integrati sono **Matita**, **Matita appuntita**, **Matita per ombreggiare**, **Carboncino**, **Gesso**, **Pastello a blocco** e **Pastello a cera**. Seleziona lo strumento nella barra Strumenti, poi scegli un predefinito in **Set di strumenti**.
 
-Matita e Matita appuntita rispondono alla pressione e all'inclinazione. Matita per ombreggiare, Carboncino e Gesso usano la pressione per la copertura e l'inclinazione per tratti larghi di lato. Pastello a blocco usa il bordo o la faccia larga del blocco quando inclini la penna. Pastello a cera risponde alla pressione e all'inclinazione con un segno arrotondato.
+Ogni predefinito risponde alla pressione e all'inclinazione della penna. Inclinare la penna verso la carta allarga il segno in un tratto di lato. **Pastello a blocco** disegna con l'estremità del blocco quando la penna è dritta e con il suo lato lungo quando è inclinata.
 
 ## Impostazioni principali
 
-![I controlli principali e le impostazioni Materiale per un pennello a secco.](shot:brushes/dry-media-settings)
+![Il pannello Strumento per Matita con Dimensioni pennello, Intensità, Intensità della trama e Durezza del materiale sopra i gruppi Levigatura, Punta e Fusione.](shot:brushes/dry-media-settings)
 
 ### Dimensioni
 
@@ -30,11 +30,11 @@ Imposta quanto il materiale segna la superficie. Valori più alti riempiono magg
 
 ### Intensità della trama
 
-Imposta quanto la trama della Carta cambia la copertura del tratto. A 0%, il tratto non risponde alla trama della Carta.
+Imposta quanto la trama della Carta cambia la copertura del tratto. A 0%, il tratto non risponde alla trama della Carta. Il cursore arriva al 200%.
 
 ### Durezza del materiale
 
-Imposta quanto il materiale copre le parti basse e alte della trama della Carta. Valori più alti fanno comportare il materiale come un materiale più duro.
+Imposta quanto la pressione della penna cambia la quantità di pigmento che lascia ogni contatto. Con valori alti un tocco leggero lascia poco pigmento, e con valori bassi lascia grani marcati.
 
 ## Trama della carta
 
@@ -42,4 +42,4 @@ I tratti a secco usano la [Carta](/it/docs/layers/paper/) più vicina al livello
 
 ![Tratti a secco corrispondenti su carta Bristol, Grana fine e Abrasiva.](shot:layers/paper-surface-comparison)
 
-I pennelli a secco non mostrano controlli per materiali bagnati come **Diffusione**, **Carica d'acqua** o **Mescolanza**. I controlli Punta esatti dipendono dal predefinito.
+I pennelli a secco mostrano solo **Angolo della punta** nel gruppo **Punta**, e nessun controllo per materiali bagnati come **Diffusione**, **Carica d'acqua** o **Mescolanza**.

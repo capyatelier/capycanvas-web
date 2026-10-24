@@ -19,16 +19,17 @@ Yerel uygulama ve web tarayıcısı gereksinimleri için [Cihaz desteği](/tr/do
 
 ![Yeni bir çizimin Katmanlar paneli: Kâğıt'ın üstünde Geçerli mürekkep.](shot:files/new-layers)
 
-{appName} ilk açıldığında 300 ppi çözünürlükte boş yatay A4 çizimle [Boyama](/tr/docs/start/workspaces/) çalışma alanını gösterir. **Kâğıt** üzerinde boş **Geçerli mürekkep** boya katmanı seçilidir. **Kalem** aracı **G kalem** fırçası ve siyaha yakın renkle etkindir.
+{appName} ilk açıldığında [Eskiz](/tr/docs/start/workspaces/) çalışma alanını, boş, yatay, 4:3 oranlı ve ekranınız kadar yüksek bir çizimle gösterir. **Soğuk pres** dokusuna sahip **Kâğıt** üzerinde boş **Geçerli mürekkep** boya katmanı seçilidir. **Kurşun kalem** aracı koyu gri bir renkle etkindir.
 
 Sonraki açılışlarda {appName}, en son kullandığınız çalışma alanıyla ve açık
 olan çizimlerle açılır.
 
 ## Çizme
 
-Tuvalde kalemle veya fareyle sürükleyin. Başka bir araç kullanmak için o aracı
-pencerenin sol kenarındaki Araçlar çubuğunda seçin. Eskiz'de başlık
-çubuğundaki **Fırça** düğmesini seçin.
+Tuvalde kalemle veya fareyle sürükleyin. Başka bir araç kullanmak için Eskiz'de
+başlık çubuğundaki **Fırça** düğmesini, Boya'da pencerenin sol kenarındaki
+Araçlar çubuğundan aracı seçin. Bir aracı tuvalde tutmak için tuvale sürükleyin;
+araç bir [baloncuk](/tr/docs/customize/bubbles/) olur.
 
 > **Not:** Parmaklar hiçbir zaman çizmez. Tuvaldeki iki parmak görünümü kaydırır, yakınlaştırır ve döndürür.
 
@@ -50,7 +51,7 @@ bir komutu menüden veya [komut aramadan](/tr/docs/start/command-search/) seçin
 
 ## Başka bir çizim başlatma
 
-**Dosya > Yeni…** yolunu ve [Yeni çizim](/tr/docs/files/new/) iletişim kutusunda **Oluştur** seçeneğini seçin. Boyutunu, çözünürlüğünü, Kâğıt ve renk ayarlarını seçin, ardından **Oluştur** seçin. Yeni çizim ilkinin yanında kendi sekmesinde açılır.
+[Yeni çizim](/tr/docs/files/new/) iletişim kutusunu açmak için **Dosya > Yeni…** komutunu seçin. Yeni çizim ilkinin yanında kendi sekmesinde açılır.
 
 ## Çizimi kaydetme
 

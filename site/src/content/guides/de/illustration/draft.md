@@ -11,9 +11,9 @@ darüber eine Bleistiftskizze.
 
 1. Wählen Sie im Arbeitsbereichswechsler in der Titelleiste **Malen** aus.
 2. Wählen Sie **Datei > Neu…** oder drücken Sie **Strg+N** ([Neue Zeichnungen](/de/docs/files/new/)).
-3. Stellen Sie im Dialog **Neue Zeichnung** **Breite (px)** und **Höhe (px)** auf 1200 und wählen Sie **Erstellen** aus.
+3. Wählen Sie im Dialog **Neue Zeichnung** im Einheitenmenü **px**, stellen Sie **B** und **H** auf 1200 und wählen Sie **Erstellen** aus.
 
-![Der Dialog Neue Zeichnung mit Breite (px) und Höhe (px) auf 1200.](shot:illustration/new-drawing)
+![Der Dialog Neue Zeichnung mit B und H auf 1200 px.](shot:illustration/new-drawing)
 
 Die Zeichnung hat zwei Ebenen: **Aktuelle Tinte** über **Papier**.
 Doppelklicken Sie im Bedienfeld Ebenen auf **Aktuelle Tinte** und benennen Sie

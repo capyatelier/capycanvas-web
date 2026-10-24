@@ -21,7 +21,7 @@ Die Zeichnung enthält eine nach der Datei benannte Objektebene. Im Beispiel hei
 
 Wählen Sie **Bild > Zuschneiden**, wählen Sie **Zuschneiden** in der Werkzeugleiste Werkzeuge oder drücken Sie **C** ([Zuschneiden](/de/docs/transform/crop/)). Ein Rahmen mit Griffen erscheint über dem Foto, mit der Zuschneideleiste am unteren Rand der Leinwand.
 
-Wählen Sie in der Zuschnittleiste **Verhältnis** aus und wählen Sie **4:5**. Der
+Wählen Sie am linken Ende der Zuschnittleiste das Verhältnismenü aus und wählen Sie **4:5**. Der
 Rahmen wird zum größten Rahmen in diesem Verhältnis, zentriert auf der
 Leinwand. Seine Ausrichtung folgt dem Foto, ein Foto im Querformat erhält also
 einen Rahmen im Format 5:4.
@@ -47,6 +47,6 @@ und die Spitzen des Farns gleichmäßige Ränder erhalten.
 Wählen Sie in der Zuschnittleiste **Anwenden** aus oder drücken Sie **Eingabe**.
 Die Leinwand nimmt die Größe des Rahmens an: im Beispiel 2000 × 1600 Pixel. Die
 abgeschnittenen Pixel bleiben ausgeblendet auf der Ebene, außer
-**Abgeschnittene Bereiche löschen** ist in der Zuschnittleiste aktiviert.
+**Abgeschnittene Malbereiche löschen** ist in der Zuschnittleiste aktiviert.
 
 Nächste Phase: [Retuschieren](/de/docs/photo/retouch/).

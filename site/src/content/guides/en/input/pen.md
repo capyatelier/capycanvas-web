@@ -24,6 +24,10 @@ the real stroke replaces it as you draw. The settings are under **Pen response**
 Both switches are on by default, and **Prediction amount** is 16 ms. While
 **Enable stroke prediction** is off, the other two settings are unavailable.
 
+A mouse stroke gets no prediction ahead of the tip, and neither does a stroke
+from a pen tablet without a screen on Linux, Windows and Android. In the web
+editor and on macOS, strokes from such tablets are predicted as set.
+
 | System | The system's prediction |
 | --- | --- |
 | iPad | Available |

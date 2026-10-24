@@ -72,7 +72,7 @@ Varsayılan **Orta** seçeneğidir.
 
 ## Görüntüyü döndürme ve çevirme
 
-**Görüntü** menüsünden şunlardan birini seçin:
+**Görüntü > Döndür ve Çevir** menüsünden şunlardan birini seçin:
 
 - **Görüntüyü 90° sola döndür**
 - **Görüntüyü 90° sağa döndür**

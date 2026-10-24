@@ -1,7 +1,7 @@
 ---
 title: "色彩面板"
 description: "使用色彩面板中的色輪和色板選擇繪畫色彩。"
-related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-management/hdr"]
+related: ["color/edit-color", "color/palettes", "color/eyedropper", "customize/bubbles", "color-management/hdr"]
 ---
 
 可以在**色彩**面板中選擇繪畫色彩。所有工作區使用同一個繪畫色彩。
@@ -16,6 +16,8 @@ related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-manag
 - 在命令搜尋中選擇**色彩面板**。
 - 在「繪畫」中，選擇左列中的**色彩**分頁。
 - 選擇「工具」工具列末端的**筆刷色彩**；在「素描」中，它位於標題列右端。隨即開啟一個抽屜，其中包含色彩面板和色票盤面板。
+
+將**筆刷色彩**拖到畫布上，可把色輪作為[色環](/zh-Hant/docs/customize/bubbles/)留在畫布上。
 
 ## 色環
 

@@ -43,7 +43,7 @@ Haz una de las siguientes acciones:
 
 ## Editor de puntos de color
 
-![El panel Herramienta de la herramienta Degradado con la fila Forma, el editor de puntos de color y Opacidad.](shot:drawing/gradient-tool-panel)
+![El panel Herramienta de la herramienta Degradado con la fila Forma y el editor de puntos de color.](shot:drawing/gradient-tool-panel)
 
 Puedes editar los colores del degradado en el editor de puntos de color, bajo
 **Forma** en el panel **Herramienta**. El botón de degradado de la barra Opciones

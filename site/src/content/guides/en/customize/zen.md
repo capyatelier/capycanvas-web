@@ -1,7 +1,7 @@
 ---
 title: "Zen mode"
 description: "Hiding the title bar and docked panels with Zen mode, and its preferences."
-related: ["customize/panels", "customize/toolbars", "preferences", "input/keyboard"]
+related: ["customize/panels", "customize/toolbars", "customize/bubbles", "preferences", "input/keyboard"]
 ---
 
 You can hide the title bar and the docked panels and toolbars in Zen mode. The
@@ -29,11 +29,21 @@ Title Bar…** turns Zen mode off.
 Zen mode also hides collapsed columns and the footer. These stay:
 
 - floating panels
+- [tool bubbles](/docs/customize/bubbles/), with their halos, choosers and menus
 - the canvas action bar next to a selection or transform
 - the Capy button, unless **Show Capy in Zen mode** is off
 - notices
 
 Keys and command search (**Ctrl+K**) work as usual.
+
+## Keeping toolbars in Zen mode
+
+In the Linux app, choose **Show in Zen mode** from a toolbar's menu to keep that
+toolbar on screen in Zen mode.
+
+On a touchscreen in the Linux app, swipe inward with one finger from within 24 px
+of a window edge to show the toolbars and panels docked at that edge. They hide
+again when you touch outside them. A pen or a mouse can't show them.
 
 ## Docking in Zen mode
 

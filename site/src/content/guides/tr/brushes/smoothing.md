@@ -14,7 +14,7 @@ related: ["brushes/basics", "drawing/brush-tools", "brushes/reset"]
 
 Fırça yumuşatma gücü, fırçanın ana **Güç** ayarından ayrıdır.
 
-![Aynı giriş yolunun farklı yumuşatma Gücü değerleriyle çizimi.](shot:brushes/smoothing-comparison)
+![Aynı giriş yolu iki kez çizilmiş: üstteki çizgi yumuşatma kapalıyken, alttaki yüksek bir yumuşatma Gücüyle.](shot:brushes/smoothing-comparison)
 
 ## Hıza göre ayarla
 

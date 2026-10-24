@@ -12,10 +12,9 @@ disegno HDR.
 
 Per ottenere un disegno HDR, esegui una delle seguenti operazioni:
 
-- In **File > Nuovo…**, scegli il predefinito **Disegno HDR** o una **Profondità in bit** a virgola mobile.
-- Scegli **Modifica > Cambia profondità in bit…** e una profondità a virgola mobile.
+- In **File > Nuovo…**, scegli il predefinito **4K HDR** o una **Profondità in bit** a virgola mobile.
+- Scegli **Immagine > Gestione del colore > Cambia profondità in bit…** e una profondità a virgola mobile.
 - Apri un file PNG HDR (BT.2020 PQ) o AVIF HDR (HDR a virgola mobile a 16 bit), oppure un file OpenEXR (HDR a virgola mobile a 32 bit).
-- Imposta **Profondità in bit** su una profondità a virgola mobile nella pagina **Colore** delle [Preferenze](/it/docs/preferences/) per rendere HDR i nuovi disegni.
 
 In un disegno HDR:
 

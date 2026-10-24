@@ -43,7 +43,7 @@ Führen Sie eine der folgenden Aktionen aus:
 
 ## Farbstopp-Editor
 
-![Das Bedienfeld Werkzeug für das Werkzeug Farbverlauf mit der Zeile Form, dem Farbstopp-Editor und Deckkraft.](shot:drawing/gradient-tool-panel)
+![Das Bedienfeld Werkzeug für das Werkzeug Farbverlauf mit der Zeile Form und dem Farbstopp-Editor.](shot:drawing/gradient-tool-panel)
 
 Die Farben des Verlaufs bearbeiten Sie im Farbstopp-Editor unter **Form** im
 Bedienfeld **Werkzeug**. Die Verlaufsschaltfläche in der Leiste Werkzeugoptionen

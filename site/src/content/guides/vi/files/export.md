@@ -142,7 +142,7 @@ sẵn. Thiết lập đặt sẵn áp dụng cho mọi bản vẽ.
 
 ## Xuất HDR
 
-![Hộp thoại Xuất ảnh cho bản vẽ HDR với HDR JPEG · bản đồ độ tăng, sau khi chọn Xem trước đầu ra.](shot:files/export-hdr-preview)
+![Trình đơn Xem trước bản chuyển sắc đặt ở Tái tạo HDR · xem trước SDR, với bản xem trước Bản vẽ và Tái tạo HDR cạnh nhau.](shot:files/export-hdr-preview)
 
 Với bản vẽ số thực 16 bit hoặc 32 bit, **Dải động** có các lựa chọn sau:
 

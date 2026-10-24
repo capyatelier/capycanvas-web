@@ -22,7 +22,7 @@ related: ["layers/settings", "layers/panel", "color-management/color-spaces", "c
 
 선택 영역 레이어와 잠긴 레이어의 혼합 모드는 바꿀 수 없습니다.
 [아래 레이어와 병합](/ko/docs/layers/merging/)을 하려면 두 레이어 모두 표준이어야 합니다.
-혼합 모드는 **편집 > 색상 합성**으로 설정한 그림의 합성 색 공간에서 색을 섞습니다([색 공간, 비트 심도, 색상 합성](/ko/docs/color-management/color-spaces/) 참조).
+혼합 모드는 **이미지 > 색상 합성**으로 설정한 그림의 합성 색 공간에서 색을 섞습니다([색 공간, 비트 심도, 색상 합성](/ko/docs/color-management/color-spaces/) 참조).
 
 ## 혼합 모드 메뉴의 모드
 

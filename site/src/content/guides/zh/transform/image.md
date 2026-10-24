@@ -58,7 +58,7 @@ related: ["transform/crop", "start/canvas", "files/new", "color-management/color
 
 ## 旋转和翻转图像
 
-从 **图像** 中选择以下任一命令：
+从 **图像 > 旋转和翻转** 中选择以下任一命令：
 
 - **图像左转 90°**
 - **图像右转 90°**

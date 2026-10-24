@@ -19,7 +19,7 @@ Dopo la prima visita, l'editor web si apre anche senza connessione a Internet.
 
 ![Il pannello Livelli di un nuovo disegno, con Inchiostro corrente sopra Carta.](shot:files/new-layers)
 
-La prima volta che apri {appName}, compare l'area di lavoro [Pittura](/it/docs/start/workspaces/) con un disegno vuoto A4 orizzontale a 300 ppi. **Inchiostro corrente**, un livello di pittura vuoto, è selezionato sopra **Carta**. È attivo lo strumento **Penna** con il pennello **G-Pen** e un colore quasi nero.
+La prima volta che apri {appName}, compare l'area di lavoro [Schizzo](/it/docs/start/workspaces/) con un disegno vuoto orizzontale, 4:3 e alto quanto il tuo schermo. **Inchiostro corrente**, un livello di pittura vuoto, è selezionato sopra **Carta**, che ha la trama **Grana fine**. È attivo lo strumento **Matita** con un colore grigio scuro.
 
 Alle aperture successive, {appName} si apre nell'ultima area di lavoro usata e
 con i disegni che erano aperti.
@@ -27,8 +27,9 @@ con i disegni che erano aperti.
 ## Disegnare
 
 Trascina sulla tela con una penna o con il mouse. Per usare un altro strumento,
-selezionalo nella barra strumenti Strumenti, sul bordo sinistro della finestra.
-In Schizzo, seleziona **Pennello** nella barra del titolo.
+seleziona **Pennello** nella barra del titolo in Schizzo, oppure lo strumento nella
+barra strumenti Strumenti sul bordo sinistro in Pittura. Trascina uno strumento
+sulla tela per tenerlo lì come [bolla](/it/docs/customize/bubbles/).
 
 > **Nota:** le dita non disegnano mai. Con due dita sulla tela sposti, ingrandisci e ruoti la vista.
 
@@ -49,7 +50,7 @@ questi tasti non ha scorciatoia nell'editor web. Sceglilo dal menu o dalla
 
 ## Iniziare un altro disegno
 
-Scegli **File > Nuovo…** e seleziona **Crea** nella finestra [Nuovo disegno](/it/docs/files/new/). Scegli dimensioni, risoluzione, Carta e impostazioni colore, poi seleziona **Crea**. Il nuovo disegno si apre in una scheda dedicata accanto al primo.
+Scegli **File > Nuovo…** per aprire la finestra [Nuovo disegno](/it/docs/files/new/). Il nuovo disegno si apre in una scheda dedicata accanto al primo.
 
 ## Salvare il disegno
 

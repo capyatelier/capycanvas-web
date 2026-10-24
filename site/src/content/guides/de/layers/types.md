@@ -1,10 +1,10 @@
 ---
 title: "Ebenentypen"
-description: "Mal-, Objekt-, Papier-, Gruppen-, Füll-, Filter- und Auswahlebenen und die Regeln für jeden Typ."
-related: ["layers/panel", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
+description: "Mal-, Objekt-, Vektor-, Papier-, Gruppen-, Füll-, Filter- und Auswahlebenen und die Regeln für jeden Typ."
+related: ["layers/panel", "layers/vector", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
 ---
 
-![Die aktuellen Ebenentypen im Ebenen-Bedienfeld.](shot:layers/types-rows)
+![Das Bedienfeld Ebenen mit einer Auswahlebene, einer Gruppe, einer Malebene, einem Filter, Füllebenen, einer Vektorebene und Papier.](shot:layers/types-rows)
 
 ## Malebene
 
@@ -18,9 +18,13 @@ Eine Objektebene behält ein importiertes Bild in seiner eigenen Größe, Farbti
 
 Sie können eine Objektebene verschieben, skalieren und drehen, ohne ihre Quelle wiederholt neu zu berechnen. Wählen Sie **Ebene > Ebene rastern**, wenn Sie auf ihren Pixeln malen oder einen Befehl verwenden möchten, der eine Malebene erfordert. Das Rastern wandelt sie in Farbraum, Farbtiefe und Pixelraster der Zeichnung um.
 
+## Vektorebene
+
+Eine Vektorebene enthält Pfade statt Pixel. Wählen Sie **Ebene > Neu > Neue Vektorebene** oder **Neue Vektorebene** unten im Ebenen-Bedienfeld. Ein Pfadsymbol kennzeichnet ihre Miniatur. Siehe [Vektorebenen](/de/docs/layers/vector/).
+
 ## Papier
 
-Papier liefert die Hintergrundfarbe und die Textur für Trockenmedium-Striche. Es bleibt unten im Ebenenstapel und hat Farb- und Texturminiaturen.
+Papier liefert die Hintergrundfarbe und die Textur, auf die Pinsel mit **Texturstärke** reagieren. Es bleibt unten im Ebenenstapel und hat Farb- und Texturminiaturen.
 
 Eine Zeichnung kann ein Papier enthalten. Papier kann keine Maske haben, keine Schnittmaskenebene werden, nicht über gewöhnliche Ebenen verschoben und nicht mit einer gewöhnlichen Ebene zusammengeführt werden. Siehe [Papier](/de/docs/layers/paper/) für Textur, Beleuchtung und weitere Einstellungen.
 

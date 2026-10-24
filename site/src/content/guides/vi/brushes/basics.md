@@ -1,7 +1,7 @@
 ---
 title: "Kích thước, độ mạnh và độ đục"
 description: "Kích thước, Độ mạnh và Độ đục cọ, cùng các bảng, thanh và phím để thay đổi chúng."
-related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools"]
+related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools", "customize/bubbles"]
 ---
 
 Các điều khiển cọ tùy thuộc công cụ và cọ đặt sẵn. Thay đổi được lưu cùng cọ đặt sẵn.
@@ -57,6 +57,8 @@ Bản xem trước Độ mạnh cho thấy cọ hiện tại phản ứng ở gi
 ![Thanh trượt Độ mạnh với bản xem trước tiếp xúc đang mở.](shot:brushes/strength-preview)
 
 Chọn **Đánh dấu nhớ giá trị này** trong bản xem trước để thêm dấu trên rãnh, hoặc **Xóa dấu nhớ** để xóa. Mỗi cọ đặt sẵn giữ dấu nhớ riêng.
+
+Kéo **Bộ chọn màu** từ thanh đó lên khung vẽ để lấy một [bong bóng](/vi/docs/customize/bubbles/) có cung Kích thước và Độ mạnh.
 
 ## Phím kích thước
 

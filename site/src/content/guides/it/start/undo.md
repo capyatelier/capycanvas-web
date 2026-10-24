@@ -1,7 +1,7 @@
 ---
 title: "Annullare e ripetere"
 description: "Annullare e ripetere le modifiche a un disegno, e la cronologia separata per le modifiche alla disposizione."
-related: ["start/command-search", "customize/workspaces", "input/touch"]
+related: ["start/command-search", "customize/bubbles", "customize/workspaces", "input/touch"]
 ---
 
 Puoi annullare le modifiche a un disegno un passaggio alla volta, e ripetere i
@@ -28,6 +28,12 @@ Esegui una delle seguenti operazioni:
 - Tocca la tela con tre dita.
 
 Una nuova modifica dopo Annulla cancella i passaggi che potevi ripetere.
+
+## Bolla Annulla e Ripeti
+
+Trascina **Annulla** o **Ripeti** sulla tela per tenere entrambi in una sola
+[bolla](/it/docs/customize/bubbles/). Tocca la metà sinistra per annullare e la
+metà destra per ripetere.
 
 ## Cosa conta come passaggio
 

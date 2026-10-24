@@ -8,14 +8,15 @@ Vous pouvez régler la façon dont les pinceaux humides et de mélange travaille
 peinture dans le panneau **Outil**. Chaque groupe n’apparaît que sur les pinceaux
 cités dans sa section.
 
-![Le panneau Outil pour Aquarelle humide avec Mélange de couleurs et les groupes Mélange, Aquarelle et Diffusion.](shot:brushes/wet-media-settings)
+![La partie inférieure du panneau Outil pour Aquarelle humide, avec les groupes Mélange, Aquarelle, Diffusion et Fusion.](shot:brushes/wet-media-settings)
 
 ## Mélange
 
-**Mélange** apparaît sur **Rond humide**, **Gouache opaque**, **Huile chargée**,
-**Couteau à palette**, **Lavis d’aquarelle**, **Aquarelle humide**,
-**Mélangeur naturel** et **Doigt**. Sauf pour les pinceaux aquarelle, un pinceau chargé
-s’épuise le long du trait, à un rythme fixe propre à chaque pinceau.
+**Mélange** apparaît sur les pinceaux de peinture à l’huile, **Gouache opaque**,
+les pinceaux aquarelle et tous les mélangeurs. **Prélèvement moyenné**,
+**Persistance** et **Recharge à la pression** n’apparaissent que sur les pinceaux
+de peinture à l’huile, **Gouache opaque**, **Mélangeur humide** et **Mélangeur de
+couleurs**.
 
 ### Charge de peinture
 
@@ -33,11 +34,46 @@ qu’il prélève sur le calque.
 Dilue la peinture que porte le pinceau. Les valeurs élevées affaiblissent la
 couleur propre du pinceau dans le mélange.
 
+### Prélèvement moyenné
+
+Définit dans quelle mesure les couleurs prélevées sur toute la pointe se fondent en
+une seule. À 0 %, chaque partie de la pointe garde la sienne.
+
+### Persistance
+
+Définit jusqu’où la couleur moyennée se porte le long du trait. Apparaît seulement
+tant que **Prélèvement moyenné** est supérieur à 0 %.
+
+### Recharge à la pression
+
+Définit dans quelle mesure une forte pression recharge le pinceau avec la couleur
+sélectionnée. **Pinceau mélangeur** dépose sa couleur sous une forte pression et ne
+fait que mélanger sous un toucher léger.
+
+## Mélangeur
+
+Chaque mélangeur ajoute des réglages au groupe **Mélangeur**. **Étendue** se trouve
+en haut du panneau **Outil**.
+
+| Réglage | Mélangeurs | Définit |
+| --- | --- | --- |
+| **Étendue** | Tous sauf **Couteau mélangeur** et **Marbrure** | Jusqu’où autour de chaque point du trait le mélangeur recueille la couleur. |
+| **Traînées** | **Doigt**, **Mélangeur doux**, **Estompe**, **Mouchoir en papier**, **Mélangeur naturel**, **Mélangeur à soies**, **Couteau mélangeur** | Dans quelle mesure le trait se brise en traînées le long de sa direction. |
+| **Netteté** | **Netteté** | Quel contraste le trait ajoute. |
+| **Texture conservée** | **Mélangeur préservant la texture** | Quelle part de la texture fine sous le trait reste par-dessus la couleur mélangée. |
+| **Taille des détails** | **Mélangeur préservant la texture** | La taille de la texture conservée. |
+| **Mélanger la luminosité** | **Mélangeur de teinte** | Dans quelle mesure la luminosité se mélange avec la teinte et la saturation. |
+| **Grain** | **Mélangeur dispersé** | Dans quelle mesure chaque pixel dispersé remplace entièrement celui du dessous. |
+| **Étirement** | **Mélangeur pictural**, **Mélangeur cristallin** | Jusqu’où les plaques ou les cellules s’étirent le long du trait. |
+| **Taille des cellules** | **Mélangeur cristallin** | La taille des cellules. |
+| **Tourbillon** | **Marbrure** | Avec quelle force la peinture s’enroule. |
+| **Taille des tourbillons** | **Marbrure** | La taille des tourbillons. |
+| **Préservation des contours** | **Mélangeur peigne** | Avec quelle facilité le mélange s’arrête à un bord entre deux couleurs. |
+
 ## Aquarelle
 
 **Lavis d’aquarelle** et **Aquarelle humide** ont un groupe **Aquarelle** pour le
-liseré plus foncé qui se forme là où la peinture s’accumule. L’aquarelle ne réagit
-qu’à la peinture du même calque.
+liseré plus foncé qui se forme là où la peinture s’accumule. L’aquarelle ne réagit qu’à la peinture du même calque. **Intensité des bords** se trouve en haut du panneau **Outil**, au-dessus des groupes.
 
 ### Intensité des bords
 
@@ -68,7 +104,7 @@ Définit jusqu’où la peinture peut se répandre à partir de chaque empreinte
 
 ### Charge d’eau
 
-Définit la quantité d’eau que chaque empreinte dépose sur le papier.
+Définit la quantité d’eau que chaque empreinte dépose sur le papier. Il se trouve en haut du panneau **Outil**, au-dessus des groupes.
 
 ## Mélange de couleurs
 
@@ -91,7 +127,7 @@ Tous les pinceaux de mélange intégrés commencent sur **Mélange Oklab**. Le c
 est enregistré avec le pinceau, et le réglage **Fusion** du dessin ne le modifie
 pas. Pour un pinceau qui ne mélange pas, les choix ne sont pas disponibles.
 
-![Mélange de couleurs dans le tiroir Outil.](shot:brushes/color-mixing-menu)
+![Le réglage Mélange de couleurs avec Mélange Oklab.](shot:brushes/color-mixing-menu)
 
 ## Soies
 

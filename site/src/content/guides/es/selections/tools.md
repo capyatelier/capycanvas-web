@@ -114,7 +114,7 @@ Haz clic en un color del lienzo. **Seleccionar automáticamente** toma la zona
 continua alrededor de ese punto, y **Seleccionar por color** toma los píxeles que
 coinciden en cualquier parte de la imagen.
 
-![El panel Herramienta de Seleccionar automáticamente, con Modo, Suavizado de contornos, Origen, Tolerancia, los ajustes de Bordes y Radio de suavizado de bordes.](shot:selections/tools-auto-select-settings)
+![El panel Herramienta de Seleccionar automáticamente, con Modo, Seleccionar, Tolerancia, los ajustes de Bordes, Radio de suavizado de bordes, Suavizado de contornos y Origen.](shot:selections/tools-auto-select-settings)
 
 ### Origen
 
@@ -160,6 +160,5 @@ resta no hace nada mientras no haya selección.
 
 ## El botón Seleccionar
 
-**Seleccionar**, bajo los ajustes de una herramienta de selección en el panel
-Herramienta, abre el [menú Seleccionar](/es/docs/selections/working/). Los ajustes
+**Seleccionar**, bajo la fila **Modo** del panel Herramienta, abre el [menú Seleccionar](/es/docs/selections/working/). Los ajustes
 de **Rango tonal** no tienen botón **Seleccionar**.

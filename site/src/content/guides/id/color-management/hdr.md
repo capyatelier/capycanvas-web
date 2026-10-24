@@ -12,10 +12,9 @@ gambar HDR.
 
 Untuk mendapatkan gambar HDR, lakukan salah satu langkah berikut:
 
-- Di **Berkas > Baru…**, pilih prasetel **Gambar HDR** atau **Kedalaman bit** pecahan mengambang.
-- Pilih **Edit > Ubah Kedalaman Bit…** lalu kedalaman pecahan mengambang.
+- Di **Berkas > Baru…**, pilih prasetel **4K HDR** atau **Kedalaman bit** pecahan mengambang.
+- Pilih **Gambar > Manajemen warna > Ubah Kedalaman Bit…** lalu kedalaman pecahan mengambang.
 - Buka berkas HDR PNG (BT.2020 PQ) atau HDR AVIF (HDR pecahan mengambang 16-bit), atau berkas OpenEXR (HDR pecahan mengambang 32-bit).
-- Atur **Kedalaman bit** ke kedalaman pecahan mengambang di halaman **Warna** pada [Preferensi](/id/docs/preferences/) agar gambar baru menjadi HDR.
 
 Pada gambar HDR:
 

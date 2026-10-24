@@ -24,6 +24,10 @@ thế đoạn đó khi bạn vẽ. Các thiết lập nằm trong **Đáp ứng 
 Theo mặc định, cả hai công tắc đều bật, và **Mức dự đoán** là 16 ms. Khi
 **Bật dự đoán nét vẽ** tắt, hai thiết lập còn lại không dùng được.
 
+Nét vẽ bằng chuột không có dự đoán phía trước đầu bút, và nét vẽ từ bảng vẽ không có
+màn hình trên Linux, Windows và Android cũng vậy. Trong trình chỉnh sửa web và trên
+macOS, nét vẽ từ các bảng vẽ đó được dự đoán theo thiết lập.
+
 | Hệ thống | Dự đoán của hệ thống |
 | --- | --- |
 | iPad | Có |

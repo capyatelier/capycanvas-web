@@ -96,11 +96,12 @@ bajo sus tiradores.
 | **Ajustar** | Activa o desactiva **Ajustar a reglas**. |
 | **Guías** | Muestra u oculta todas las guías. Al ocultarlas también se oculta la barra. |
 | **Enderezar** | Inicia **Enderezar imagen según la guía**. Solo en una guía Recta. |
+| **Más** | Abre un menú con **Mostrar barra de acciones del lienzo**. |
 
 Si desactivas **Ver > Mostrar barra de acciones del lienzo**, la barra de la guía
 desaparece.
 
-![La barra de la guía bajo una guía Recta seleccionada, con Eliminar, Ajustar, Guías y Enderezar.](shot:drawing/ruler-guide-bar)
+![La barra de la guía bajo una guía Recta seleccionada, con Eliminar, Ajustar, Guías, Enderezar y Más.](shot:drawing/ruler-guide-bar)
 
 ## Mover guías con Operación
 

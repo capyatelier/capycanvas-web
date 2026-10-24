@@ -122,7 +122,6 @@ Ebene kopieren oder verschieben.
 Führen Sie eine der folgenden Aktionen aus:
 
 - Wählen Sie **Ebene > Neu > Auswahl auf neue Ebene kopieren** (**Strg+J**) oder **Auswahl auf neue Ebene ausschneiden** (**Strg+Umschalt+J**).
-- Wählen Sie dieselben Befehle im Menü **Auswahl**.
 - Wählen Sie sie unter **Auf Ebene kopieren** in der [Auswahlleiste](/de/docs/selections/working/) auf der Leinwand.
 
 Die neue Ebene wird über der Quellebene eingefügt, heißt „*Name* Kopie“ und hat

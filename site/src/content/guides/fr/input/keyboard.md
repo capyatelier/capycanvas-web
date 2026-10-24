@@ -152,6 +152,7 @@ Appuyez de nouveau sur la touche pour passer à l’outil suivant de la famille.
 | **Figure** | **U** |
 | **Règle** | **Maj+U** |
 | **Opération** | **O** |
+| **Modifier les points** | **A** |
 | **Transformer** | **Ctrl+T** |
 | **Recadrer** | **C** |
 | **Main** | **H** |
@@ -180,6 +181,7 @@ Appuyez de nouveau sur la touche pour passer à l’outil suivant de la famille.
 | **Copier la sélection vers un nouveau calque** | **Ctrl+J** |
 | **Couper la sélection vers un nouveau calque** | **Ctrl+Maj+J** |
 | **Fusionner avec le calque inférieur** | **Ctrl+E** |
+| **Nouveau calque vectoriel** | **Ctrl+Alt+Maj+N** |
 | **Ajuster à la toile** | **Ctrl+0** |
 | **Pixels réels** | **Ctrl+1**, **Ctrl+Alt+0** |
 | **Zoom avant**, **Zoom arrière** | **Ctrl+=**, **Ctrl+-** |

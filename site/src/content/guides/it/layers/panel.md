@@ -1,7 +1,7 @@
 ---
 title: "Pannello Livelli"
 description: "Cosa mostra e cosa fa ogni parte del pannello Livelli, compreso il menu del livello."
-related: ["layers/working", "layers/settings", "layers/types", "layers/masks"]
+related: ["layers/working", "layers/settings", "layers/types", "layers/vector", "layers/masks"]
 ---
 
 Il pannello **Livelli** elenca i livelli del disegno, con il livello più in
@@ -18,7 +18,7 @@ Esegui una delle seguenti operazioni:
 - In Schizzo, seleziona **Livelli** nella barra del titolo. Il cassetto condiviso si apre sulla vista Livelli; seleziona il pulsante Proprietà di un livello per passare a Proprietà.
 - Digita «Pannello Livelli» nella [ricerca comandi](/it/docs/start/command-search/).
 
-In Foto, il pannello è aperto nella colonna destra.
+In Foto, il pannello è aperto nella colonna destra. In Schizzo, puoi trascinare **Livelli** dalla barra del titolo sulla tela per tenerlo lì come bolla ([Bolle degli strumenti](/it/docs/customize/bubbles/)).
 
 ## Intestazione
 
@@ -55,7 +55,7 @@ Seleziona una riga per renderla il livello attivo e l'unica riga selezionata.
 
 La Carta ha miniature separate del colore e della trama. Se manca la Carta, **Aggiungi carta** compare dopo l'ultima riga.
 
-![Il cassetto di Schizzo passa da Livelli a Proprietà.](shot:layers/sketch-properties-drawer)
+![Il cassetto di Schizzo con le Proprietà della Carta, con Tutti i livelli in fondo.](shot:layers/sketch-properties-drawer)
 
 Fai **Ctrl**+clic sulla miniatura di un livello di pittura per caricarne
 l'opacità come selezione, o sulla miniatura della maschera per caricare la
@@ -73,34 +73,37 @@ sottrarre o **Maiusc+Alt** per intersecare.
 
 ## Pulsanti in basso
 
-![I pulsanti in fondo al pannello Livelli.](shot:layers/panel-footer "1 Nuovo livello · 2 Nuovo gruppo · 3 Nuovo livello di selezione · 4 Aggiungi maschera · 5 Aggiungi filtro · 6 Importa immagine come livello… · 7 Elimina livelli selezionati · 8 Azioni livello")
+![I pulsanti in fondo al pannello Livelli.](shot:layers/panel-footer "1 Nuovo livello · 2 Nuovo livello vettoriale · 3 Nuovo gruppo · 4 Nuovo livello di selezione · 5 Aggiungi maschera · 6 Aggiungi filtro · 7 Importa immagine come livello… · 8 Elimina livelli selezionati · 9 Azioni livello")
 
 1. **Nuovo livello** aggiunge un livello di pittura.
-2. **Nuovo gruppo**. Con più righe selezionate, le raggruppa.
-3. **Nuovo livello di selezione** (vedi [Livelli di selezione](/it/docs/selections/selection-layers/)).
-4. **Aggiungi maschera**.
-5. **Aggiungi filtro** collega un filtro al livello attivo.
-6. **Importa immagine come livello…**
-7. **Elimina livelli selezionati**.
-8. **Azioni livello** apre il menu del livello attivo.
+2. **Nuovo livello vettoriale** aggiunge un [livello vettoriale](/it/docs/layers/vector/).
+3. **Nuovo gruppo**. Con più righe selezionate, le raggruppa.
+4. **Nuovo livello di selezione** (vedi [Livelli di selezione](/it/docs/selections/selection-layers/)).
+5. **Aggiungi maschera**.
+6. **Aggiungi filtro** collega un filtro al livello attivo.
+7. **Importa immagine come livello…**
+8. **Elimina livelli selezionati**.
+9. **Azioni livello** apre il menu del livello attivo.
 
 Un pulsante non è disponibile quando la sua azione non si applica al livello
 attivo, per esempio **Aggiungi maschera** su un livello bloccato (vedi
-[Lavorare con i livelli](/it/docs/layers/working/)).
+[Lavorare con i livelli](/it/docs/layers/working/)). In un pannello stretto, i
+pulsanti che non entrano passano in cima al menu **Azioni livello**, a cominciare
+da **Nuovo livello di selezione**.
 
 ## Scorrimenti e pressioni prolungate
 
 Con una penna o un dito:
 
-- Scorri una riga verso sinistra per mostrare **Elimina** alla sua estremità destra. Seleziona **Elimina** per eliminare il livello, o scorri verso destra per nascondere il pulsante.
+- Scorri una riga verso sinistra per mostrare **Blocca**, **Duplica** ed **Elimina** alla sua estremità destra. **Blocca** diventa **Sblocca** su un livello bloccato. Seleziona un pulsante per applicarlo al livello, o scorri verso destra per nascondere i pulsanti.
 - Scorri un livello di pittura verso destra per attivare o disattivare **Blocca alfa**.
 - Scorri un gruppo verso destra per attivare o disattivare **Attraversa**.
 - Tieni premuta una riga per aprire il menu del livello. Muoviti senza sollevare per trascinare invece la riga.
 
-![Una riga scorsa verso sinistra, con Elimina alla sua estremità destra.](shot:layers/panel-swipe-delete)
+![Una riga scorsa verso sinistra, con Blocca, Duplica ed Elimina.](shot:layers/panel-swipe-delete)
 
 Uno scorrimento breve non cambia nulla. Gli scorrimenti non funzionano con il
-mouse, sulla maniglia o sui livelli bloccati.
+mouse o sulla maniglia. Un livello bloccato scorre solo verso sinistra.
 
 ## Menu del livello
 
@@ -117,7 +120,7 @@ Esegui una delle seguenti operazioni:
 
 | Voce | Contenuto |
 | --- | --- |
-| **Nuovo** | **Nuovo livello**, **Nuovo livello ritagliato**, **Nuovo gruppo**, **Riempimento tinta unita**, **Riempimento sfumato**, **Nuovo livello Scherma e brucia**, **Copia selezione su nuovo livello**, **Taglia selezione su nuovo livello** |
+| **Nuovo** | **Nuovo livello**, **Nuovo livello ritagliato**, **Nuovo gruppo**, **Nuovo livello vettoriale**, **Riempimento tinta unita**, **Riempimento sfumato**, **Nuovo livello Scherma e brucia**, **Copia selezione su nuovo livello**, **Taglia selezione su nuovo livello** |
 | **Aggiungi filtro** | I filtri da collegare al livello, per categoria |
 | **Organizza** | **Rinomina livello…**, **Duplica**, **Raggruppa livelli selezionati** e, per un gruppo, **Separa gruppo** |
 | **Metodo di fusione** | Tutti i [metodi di fusione](/it/docs/layers/blend-modes/) |
@@ -128,7 +131,8 @@ Esegui una delle seguenti operazioni:
 | **Visibilità** | **Mostra livello**, **Mostra livello e gruppi superiori**, **Isola livelli selezionati**, **Mostra tutti i livelli** |
 | **Sposta livello / maschera** | Seleziona lo strumento [Operazione](/it/docs/transform/move-transform/) |
 | **Unisci sotto**, **Unisci visibili**, **Crea livello dai visibili**, **Appiattisci immagine** | Vedi [Unire i livelli](/it/docs/layers/merging/) |
-| **Svuota intero livello**, **Elimina livello** | **Svuota intero livello** appare solo sui livelli di pittura |
+| **Converti in livello oggetto**, **Rasterizza livello** | **Converti in livello oggetto** appare sui livelli di pittura, e **Rasterizza livello** sui livelli Oggetto e [vettoriali](/it/docs/layers/vector/) |
+| **Svuota intero livello**, **Elimina livello** | **Svuota intero livello** appare solo sui livelli di pittura. Su un livello vettoriale, eseguilo dalla [ricerca comandi](/it/docs/start/command-search/) per rimuovere ogni tracciato |
 
 Aprire il menu di una riga rende attivo quel livello. Il menu di un gruppo
 inizia con **Nuovo livello di selezione nel gruppo…** e

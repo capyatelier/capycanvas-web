@@ -1,7 +1,7 @@
 ---
 title: "颜色面板"
 description: "使用颜色面板中的色轮和色板选择绘画颜色。"
-related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-management/hdr"]
+related: ["color/edit-color", "color/palettes", "color/eyedropper", "customize/bubbles", "color-management/hdr"]
 ---
 
 可以在**颜色**面板中选择绘画颜色。所有工作区使用同一个绘画颜色。
@@ -16,6 +16,8 @@ related: ["color/edit-color", "color/palettes", "color/eyedropper", "color-manag
 - 在命令搜索中选择**颜色面板**。
 - 在“绘画”中，选择左列中的**颜色**标签页。
 - 选择“工具”工具栏末端的**画笔颜色**；在“素描”中，它位于标题栏右端。随即打开一个抽屉，其中包含颜色面板和调色板面板。
+
+将**画笔颜色**拖到画布上，可把色轮作为[色环](/zh/docs/customize/bubbles/)留在画布上。
 
 ## 色轮
 

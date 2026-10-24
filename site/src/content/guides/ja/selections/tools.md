@@ -92,7 +92,7 @@ related: ["selections/working", "selections/tonal-range", "selections/quick-mask
 
 キャンバス上の色をクリックします。**自動選択**はその点の周りのつながった範囲を、**色で選択**は画像内のどこにあっても一致する画素を選択します。
 
-![自動選択のツールパネル。モード、アンチエイリアス、参照対象、許容差、縁の設定、ぼかし半径があります。](shot:selections/tools-auto-select-settings)
+![自動選択のツールパネル。モード、選択範囲、許容差、縁の設定、ぼかし半径、アンチエイリアス、参照対象があります。](shot:selections/tools-auto-select-settings)
 
 ### 参照対象
 
@@ -128,4 +128,4 @@ related: ["selections/working", "selections/tonal-range", "selections/quick-mask
 
 ## 選択範囲ボタン
 
-ツールパネルで選択ツールの設定の下にある**選択範囲**は、[選択範囲メニュー](/ja/docs/selections/working/)を開きます。**階調範囲**の設定には、**選択範囲**ボタンはありません。
+ツールパネルの**モード**の行の下にある**選択範囲**は、[選択範囲メニュー](/ja/docs/selections/working/)を開きます。**階調範囲**の設定には、**選択範囲**ボタンはありません。

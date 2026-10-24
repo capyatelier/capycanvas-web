@@ -8,15 +8,14 @@ Im Bedienfeld **Werkzeug** können Sie festlegen, wie nasse und mischende Pinsel
 Farbe umgehen. Jede Gruppe erscheint nur bei den Pinseln, die in ihrem Abschnitt
 genannt sind.
 
-![Das Bedienfeld Werkzeug für Nasses Aquarell mit Farbmischung und den Gruppen Mischen, Aquarell und Farbausbreitung.](shot:brushes/wet-media-settings)
+![Der untere Teil des Bedienfelds Werkzeug für Nasses Aquarell mit den Gruppen Mischen, Aquarell, Farbausbreitung und Überblendung.](shot:brushes/wet-media-settings)
 
 ## Mischen
 
-**Mischen** erscheint bei **Nasser Rundpinsel**, **Deckende Gouache**, **Satter
-Ölpinsel**, **Malmesser**, **Aquarelllasur**, **Nasses Aquarell**, **Natürlicher
-Mischpinsel** und **Wischfinger**. Außer bei den Aquarellpinseln geht einem
-geladenen Pinsel entlang des Strichs die Farbe aus, mit einer für jeden Pinsel festen
-Rate.
+**Mischen** erscheint bei den Ölfarbenpinseln, **Deckende Gouache**, den
+Aquarellpinseln und jedem Mischpinsel. **Gemittelte Aufnahme**, **Beständigkeit**
+und **Nachladen bei Druck** erscheinen nur bei den Ölfarbenpinseln, **Deckende
+Gouache**, **Nasser Mischpinsel** und **Farbmischer**.
 
 ### Farbauftrag
 
@@ -33,11 +32,46 @@ Strichs mitzieht.
 Verdünnt die Farbe, die der Pinsel trägt. Höhere Werte schwächen die eigene Farbe
 des Pinsels in der Mischung ab.
 
+### Gemittelte Aufnahme
+
+Legt fest, wie weit die über die Spitze aufgenommenen Farben zu einer verschmelzen.
+Bei 0% behält jeder Teil der Spitze seine eigene.
+
+### Beständigkeit
+
+Legt fest, wie weit die gemittelte Farbe entlang des Strichs getragen wird. Erscheint
+nur, solange **Gemittelte Aufnahme** über 0% liegt.
+
+### Nachladen bei Druck
+
+Legt fest, wie stark fester Druck die ausgewählte Farbe in den Pinsel nachlädt.
+**Mischender Pinsel** trägt seine Farbe bei festem Druck auf und mischt nur bei
+leichter Berührung.
+
+## Mischpinsel
+
+Jeder Mischpinsel fügt der Gruppe **Mischpinsel** Einstellungen hinzu. **Reichweite**
+steht oben im Bedienfeld **Werkzeug**.
+
+| Einstellung | Mischpinsel | Legt fest |
+| --- | --- | --- |
+| **Reichweite** | Alle außer **Mischmesser** und **Marmorieren** | Wie weit um jeden Punkt des Strichs der Mischpinsel Farbe aufnimmt. |
+| **Streifen** | **Wischfinger**, **Weicher Mischpinsel**, **Papierwischer**, **Papiertuch**, **Natürlicher Mischpinsel**, **Borsten-Mischpinsel**, **Mischmesser** | Wie stark der Strich entlang seiner Richtung in Streifen zerfällt. |
+| **Schärfe** | **Scharfzeichner** | Wie viel Kontrast der Strich hinzufügt. |
+| **Erhaltene Struktur** | **Struktur-erhaltender Mischpinsel** | Wie viel der feinen Textur unter dem Strich über der gemischten Farbe erhalten bleibt. |
+| **Detailgröße** | **Struktur-erhaltender Mischpinsel** | Die Größe der Textur, die erhalten bleibt. |
+| **Helligkeit mischen** | **Farbton-Mischpinsel** | Wie stark die Helligkeit zusammen mit Farbton und Sättigung gemischt wird. |
+| **Körnung** | **Streu-Mischpinsel** | Wie vollständig jedes gestreute Pixel das darunterliegende ersetzt. |
+| **Dehnung** | **Malerischer Mischpinsel**, **Kristall-Mischpinsel** | Wie weit sich Flecken oder Zellen entlang des Strichs dehnen. |
+| **Zellgröße** | **Kristall-Mischpinsel** | Die Größe der Zellen. |
+| **Wirbel** | **Marmorieren** | Wie stark sich die Farbe kräuselt. |
+| **Wirbelgröße** | **Marmorieren** | Die Größe der Wirbel. |
+| **Kantenschutz** | **Kamm-Mischpinsel** | Wie leicht die Mischung an einer Kante zwischen Farben stoppt. |
+
 ## Aquarell
 
 **Aquarelllasur** und **Nasses Aquarell** haben eine Gruppe **Aquarell** für den
-dunkleren Rand, an dem sich die Farbe sammelt. Aquarell reagiert nur auf Farbe auf
-derselben Ebene.
+dunkleren Rand, an dem sich die Farbe sammelt. Aquarell reagiert nur auf Farbe auf derselben Ebene. **Kantenstärke** steht oben im Bedienfeld **Werkzeug**, über den Gruppen.
 
 ### Kantenstärke
 
@@ -67,7 +101,7 @@ Legt fest, wie weit sich Farbe von jedem Pinselabdruck ausbreiten kann, von 0 bi
 
 ### Wasserauftrag
 
-Legt fest, wie viel Wasser jeder Pinselabdruck auf das Papier bringt.
+Legt fest, wie viel Wasser jeder Pinselabdruck auf das Papier bringt. Er steht oben im Bedienfeld **Werkzeug**, über den Gruppen.
 
 ## Farbmischung
 
@@ -89,7 +123,7 @@ Jeder integrierte Mischpinsel beginnt mit **Oklab-Mischung**. Die Wahl wird mit 
 Pinsel gespeichert, und die Einstellung **Verrechnung** der Zeichnung ändert sie
 nicht. Bei einem Pinsel, der nicht mischt, sind die Optionen nicht verfügbar.
 
-![Farbmischung in der Werkzeugschublade.](shot:brushes/color-mixing-menu)
+![Die Einstellung Farbmischung mit Oklab-Mischung.](shot:brushes/color-mixing-menu)
 
 ## Borsten
 

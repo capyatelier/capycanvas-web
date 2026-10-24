@@ -6,7 +6,7 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 
 Puoi ritagliare la tela entro una cornice con lo strumento **Ritaglia**. I pixel
 ritagliati restano sui loro livelli, nascosti, a meno che non attivi
-**Elimina area ritagliata**.
+**Elimina pittura ritagliata**.
 
 ## Ritagliare
 
@@ -46,7 +46,7 @@ cornice con quelle proporzioni. **Libero** è il valore predefinito.
 **Scambia orientamento ritaglio**, il pulsante a icona accanto a
 **Proporzioni**, ruota la cornice tra orizzontale e verticale.
 
-Le proporzioni, la sovrapposizione ed **Elimina area ritagliata** restano per il
+Le proporzioni, la sovrapposizione ed **Elimina pittura ritagliata** restano per il
 ritaglio successivo.
 
 ![Il menu Proporzioni nella barra del ritaglio.](shot:transform/crop-ratio-menu)
@@ -81,14 +81,14 @@ Per raddrizzare in base a una guida, seleziona la guida e seleziona
 [Righelli e guide](/it/docs/drawing/ruler/)). Si apre un ritaglio ruotato in
 linea con la guida.
 
-## Elimina area ritagliata
+## Elimina pittura ritagliata
 
-Attiva **Elimina area ritagliata** per scartare i pixel fuori dalla cornice
+Attiva **Elimina pittura ritagliata** per scartare i pixel fuori dalla cornice
 quando applichi il ritaglio. Le foto posizionate conservano i pixel originali.
 Disattivato per impostazione predefinita.
 
 Un ritaglio che risulterebbe troppo grande conservando i pixel nascosti funziona
-solo con **Elimina area ritagliata** attivo.
+solo con **Elimina pittura ritagliata** attivo.
 
 ## Ripristina
 

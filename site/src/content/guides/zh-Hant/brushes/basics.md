@@ -1,7 +1,7 @@
 ---
 title: "大小、強度和不透明度"
 description: "筆刷大小、強度和不透明度，以及更改這些設定的面板、欄和按鍵。"
-related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools"]
+related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brushes/reset", "drawing/brush-tools", "customize/bubbles"]
 ---
 
 筆刷控制項因工具和預設而異。更改隨預設一起儲存。
@@ -57,6 +57,8 @@ related: ["brushes/dry-media", "brushes/smoothing", "brushes/tip-texture", "brus
 ![強度滑桿及其打開的接觸預覽。](shot:brushes/strength-preview)
 
 在預覽中選擇 **將此值加入書籤** 可在滑軌上新增標記，選擇 **移除書籤** 可移除標記。每個預設各自保留書簽。
+
+將 **色彩選擇器** 從該豎欄拖到畫布上，可得到帶有大小弧和強度弧的[氣泡](/zh-Hant/docs/customize/bubbles/)。
 
 ## 大小按鍵
 

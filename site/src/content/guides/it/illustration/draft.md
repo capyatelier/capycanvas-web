@@ -11,9 +11,9 @@ su un livello sopra di esso.
 
 1. Seleziona **Pittura** nel selettore dell'area di lavoro nella barra del titolo.
 2. Scegli **File > Nuovo…**, o premi **Ctrl+N** ([Nuovi disegni](/it/docs/files/new/)).
-3. Nella finestra di dialogo **Nuovo disegno**, imposta **Larghezza (px)** e **Altezza (px)** su 1200 e seleziona **Crea**.
+3. Nella finestra di dialogo **Nuovo disegno**, scegli **px** nel menu delle unità, imposta **L** e **A** su 1200 e seleziona **Crea**.
 
-![La finestra di dialogo Nuovo disegno con Larghezza (px) e Altezza (px) impostate su 1200.](shot:illustration/new-drawing)
+![La finestra di dialogo Nuovo disegno con L e A impostate su 1200 px.](shot:illustration/new-drawing)
 
 Il disegno ha due livelli: **Inchiostro corrente** sopra **Carta**. Fai doppio
 clic su **Inchiostro corrente** nel pannello Livelli e rinomina il livello

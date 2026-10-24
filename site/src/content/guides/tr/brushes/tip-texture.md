@@ -6,9 +6,11 @@ related: ["brushes/basics", "brushes/wet-media", "drawing/brush-tools"]
 
 Her izin şeklini ve kâğıt dokusunun izi ne kadar değiştirdiğini **Araç** panelindeki **Uç** ve **Doku** ayarlarıyla değiştirebilirsiniz ([Boyut, güç ve opaklık](/tr/docs/brushes/basics/)).
 
-![Kurşun kalem için Araç paneli: Uç grubu ve Doku grubu.](shot:brushes/tip-texture-settings)
+![Boya fırçası için Araç paneli: Sertlik'ten Doku gücü'ne kadar ayarlar ile Yumuşatma, Uç ve Doku grupları.](shot:brushes/tip-texture-settings)
 
 ## Uç
+
+Kuru malzeme fırçaları yalnızca **Uç açısı** gösterir.
 
 ### Sertlik
 
@@ -38,22 +40,23 @@ olarak belirler.
 
 ## Darbeyle dönen uçlar
 
-**Boya fırçası**, **Dokulu düz fırça**, **Pastel blok**, **Saydam lazür**,
-**Opak guaj**, **Bol boyalı yağlı boya**, **Palet bıçağı**, **Suluboya yıkama**,
-**Islak suluboya**, **Çift doku** ve **Doğal karıştırıcı** fırçalarının uçları
-darbenin yönünü izler. **Uç açısı** bu fırçalarda etkisizdir.
+**Boya fırçası**, **Dokulu düz fırça**, **Saydam lazür**, **Opak guaj**,
+**Bol boyalı yağlı boya**, **Palet bıçağı**, **Suluboya yıkama**,
+**Islak suluboya**, **Çift doku**, **Doğal karıştırıcı** ve
+**Karıştırma bıçağı** fırçalarının uçları darbenin yönünü izler.
+**Uç açısı** bu fırçalarda etkisizdir.
 
 **Kuru sürtme** ve **Gerçekçi fırça mürekkebi**, darbe yönünü **Uç açısı** değerine
 ekler.
 
 ## Doku
 
-**Doku gücü**; kurşun kalem ve pastel fırçalarında, **Boya fırçası**, **Kıl boya fırçası**, **Dokulu düz fırça**, **Kuru sürtme**, **Saydam lazür**, **Opak guaj**, **Bol boyalı yağlı boya**, **Palet bıçağı**, **Çift doku** ve **Doğal karıştırıcı** fırçalarında görünür.
+**Doku gücü**; **Kurşun kalem**, **Pastel** ve **Boya** setlerinde (**Çarpma lazürü** hariç), **Bol boyalı yağlı boya**, **Palet bıçağı** ve **Çift doku** fırçalarında ve sekiz karıştırıcıda görünür: **Lekeleme**, **Yumuşak karıştırıcı**, **Kâğıt karıştırma kalemi**, **Kâğıt mendil**, **Grenli karıştırıcı**, **Doğal karıştırıcı**, **Karıştırma bıçağı** ve **Kıl karıştırıcı**. Bu ayarı olmayan fırça Kâğıdı yok sayar.
 
-Kuru malzeme fırçaları hedef katmanın altındaki en yakın Kâğıdın dokusunu kullanır. Bu dokuyu ve ölçeğini [Kâğıt](/tr/docs/layers/paper/) bölümünde seçin.
+**Doku gücü** olan fırçalar hedef katmanda veya altında en yakın Kâğıdın dokusunu kullanır. Bu dokuyu ve ölçeğini [Kâğıt](/tr/docs/layers/paper/) bölümünde seçin.
 
 ### Doku gücü
 
-Kâğıt dokusunun kaplamayı ne kadar değiştirdiğini belirler. %0 değerinde dokunun etkisi yoktur.
+Kâğıt dokusunun kaplamayı ne kadar değiştirdiğini belirler. %0 değerinde dokunun etkisi yoktur. Karıştırıcılarda hafif dokunuş kâğıdın pürüzlü yapısını karışmamış bırakır, basınç ise karışımı onun içine iter. **Yumuşak karıştırıcı** %0'dan başlar.
 
 ![Doku gücü %0, %50 ve %100 olan üç Kömür darbesi.](shot:brushes/texture-strength)

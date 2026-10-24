@@ -1,10 +1,10 @@
 ---
 title: "Jenis lapisan"
-description: "Lapisan cat, Objek, Kertas, grup, isian, filter, dan seleksi beserta aturan masing-masing."
-related: ["layers/panel", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
+description: "Lapisan cat, Objek, vektor, Kertas, grup, isian, filter, dan seleksi beserta aturan masing-masing."
+related: ["layers/panel", "layers/vector", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
 ---
 
-![Jenis lapisan saat ini di panel Lapisan.](shot:layers/types-rows)
+![Panel Lapisan dengan lapisan seleksi, grup, lapisan cat, filter, lapisan isian, lapisan vektor, dan Kertas.](shot:layers/types-rows)
 
 ## Lapisan lukis
 
@@ -18,9 +18,13 @@ Lapisan Objek menyimpan gambar impor dengan ukuran, kedalaman bit, dan profil wa
 
 Anda dapat memindahkan, mengubah ukuran, dan memutar lapisan Objek tanpa mengambil sampel ulang sumbernya berulang kali. Pilih **Lapisan > Rasterisasi Lapisan** saat perlu melukis pada pikselnya atau menggunakan perintah yang memerlukan lapisan cat. Rasterisasi mengonversinya ke ruang warna, kedalaman bit, dan kisi piksel gambar.
 
+## Lapisan vektor
+
+Lapisan vektor menyimpan jalur, bukan piksel. Pilih **Lapisan > Baru > Lapisan vektor baru**, atau pilih **Lapisan vektor baru** di bagian bawah panel Lapisan. Lencana jalur menandai gambar mininya. Lihat [Lapisan vektor](/id/docs/layers/vector/).
+
 ## Kertas
 
-Kertas menyediakan warna latar dan tekstur untuk goresan media kering. Kertas tetap di bagian bawah tumpukan lapisan dan memiliki gambar mini warna dan tekstur.
+Kertas menyediakan warna latar dan tekstur yang direspons kuas dengan **Kekuatan tekstur**. Kertas tetap di bagian bawah tumpukan lapisan dan memiliki gambar mini warna dan tekstur.
 
 Gambar dapat memuat satu Kertas. Kertas tidak dapat memiliki mask, menjadi lapisan kliping, dipindahkan di atas lapisan biasa, atau digabung ke lapisan biasa. Lihat [Kertas](/id/docs/layers/paper/) untuk tekstur, pencahayaan, dan pengaturan lainnya.
 

@@ -4,7 +4,7 @@ description: "Paper color and texture, imported papers, scale, lighting and laye
 related: ["layers/types", "layers/panel", "brushes/dry-media", "files/new"]
 ---
 
-Paper supplies the drawing's background color and the texture used by dry-media brushes.
+Paper supplies the drawing's background color and the texture that brushes with **Texture strength** react to.
 
 ## Paper row
 
@@ -24,7 +24,9 @@ Select the texture thumbnail on the Paper row, or select **Choose Texture** in *
 
 ![Built-in papers in Choose Texture.](shot:layers/paper-choose-texture)
 
-The library includes Bristol, drawing, hot press, cold press, rough, sanded, laid, washi, canvas and linen surfaces. **Import…** adds an image as a reusable paper texture. Imported papers are embedded in the drawing.
+The library is one scrolling grid, ordered from watercolor and drawing papers to surface textures such as concrete, wood and sand. Papers with a grain direction come in **across** and **down** pairs.
+
+**Import…** adds an image, RGB or grayscale, to the end of the grid as a reusable paper texture. Imported papers are embedded in the drawing.
 
 Open an imported paper's menu to **Rename…** or **Delete** it. A paper embedded in a drawing but missing from your library has **Add to Library** instead.
 
@@ -48,7 +50,7 @@ Sets the physical scale of the texture, from 25% to 400%. The canvas briefly sho
 
 ### Texture visibility
 
-Sets how strongly the texture's lighting appears in the finished picture. At 0%, texture lighting is off.
+Sets how strongly the texture's lighting appears in the finished picture, from 0% to 300%. At 0%, texture lighting is off.
 
 ### Light
 
@@ -58,12 +60,12 @@ Sets the direction of the light across the paper texture.
 
 Sets how much paper lighting remains visible over paint above it. At 0%, opaque Normal paint covers the lighting; at 100%, the lighting affects the whole picture.
 
-![The same marks with different paper lighting settings.](shot:layers/paper-lighting)
+![Strokes on the canvas beside the Properties panel for Paper, set to Linen with Texture visibility 55%, Light 130° and Shows through paint 100%.](shot:layers/paper-lighting)
 
 Native app exports include visible Paper lighting. The web editor currently exports without Paper lighting. The brief texture preview shown after changing **Texture** or **Scale** is not exported.
 
 ## Strokes and geometry
 
-New dry-media strokes use the nearest Paper at or below their layer. Hiding Paper does not stop its texture from affecting new strokes. Changing the texture or its scale does not change marks already drawn.
+New strokes from brushes with **Texture strength** use the nearest Paper at or below their layer. Hiding Paper does not stop its texture from affecting new strokes. Changing the texture or its scale does not change marks already drawn.
 
 Paper uses the drawing's print resolution to keep its physical scale. **Image > Image Size…** can change that resolution. Resizing or rotating the image resamples Paper with the drawing; cropping does not change its scale.

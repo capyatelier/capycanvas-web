@@ -20,7 +20,8 @@ Aşağıdakilerden birini yapın:
 - **S** tuşuna basın. **Düzeltme fırçası**, ardından **Nokta düzeltme fırçası** aracına geçmek için tuşa yeniden basın.
 - Fotoğraf'ta Araçlar çubuğundaki **Klonlama damgası** veya **Nokta düzeltme fırçası / Düzeltme fırçası** düğmesini seçin.
 - Boya'da Araçlar çubuğundaki **Karıştır / Klonlama damgası** düğmesini seçin. **Klonlama damgası** aracını seçmek için düğmeye sağ tıklayın veya düğmeyi basılı tutun.
-- Eskiz'de başlık çubuğundaki **Şekillendir** düğmesini seçin, çekmeceyi açmak için düğmeyi yeniden seçin ve **Klonla**, **Düzelt** veya **Nokta düzeltme** seçeneğini seçin.
+- Eskiz'de başlık çubuğundaki **Şekillendir** düğmesini seçin, çekmeceyi açmak için düğmeyi yeniden seçin, **Rötuş** setini seçin ve bir araç seçin.
+- Bir rötuş aracı etkinken **Araç seti** içindeki **Rötuş** setinde bir araç seçin.
 - Aracın adını [komut aramaya](/tr/docs/start/command-search/) yazın.
 
 Boya'da **Düzeltme fırçası** ve **Nokta düzeltme fırçası** için düğme

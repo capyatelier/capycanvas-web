@@ -141,6 +141,7 @@ sang công cụ tiếp theo trong họ.
 | **Hình** | **U** |
 | **Thước** | **Shift+U** |
 | **Thao tác** | **O** |
+| **Sửa điểm** | **A** |
 | **Biến đổi** | **Ctrl+T** |
 | **Cắt xén** | **C** |
 | **Bàn tay** | **H** |
@@ -169,6 +170,7 @@ sang công cụ tiếp theo trong họ.
 | **Sao chép vùng chọn sang lớp mới** | **Ctrl+J** |
 | **Cắt vùng chọn sang lớp mới** | **Ctrl+Shift+J** |
 | **Gộp xuống** | **Ctrl+E** |
+| **Lớp vector mới** | **Ctrl+Alt+Shift+N** |
 | **Vừa khung vẽ** | **Ctrl+0** |
 | **Pixel thực** | **Ctrl+1**, **Ctrl+Alt+0** |
 | **Phóng to**, **Thu nhỏ** | **Ctrl+=**, **Ctrl+-** |

@@ -145,7 +145,7 @@ aplican a todos los dibujos.
 
 ## Exportación HDR
 
-![El diálogo Exportar imagen de un dibujo HDR con JPEG HDR · mapa de ganancia, después de Previsualizar salida.](shot:files/export-hdr-preview)
+![El menú Versión de vista previa con Reconstrucción HDR · vista previa SDR, con las vistas previas de Imagen y de Reconstrucción HDR una junto a la otra.](shot:files/export-hdr-preview)
 
 En un dibujo de coma flotante de 16 o 32 bits, **Rango dinámico** ofrece estas opciones:
 

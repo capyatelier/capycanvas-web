@@ -69,7 +69,7 @@ janela, em Foto):
 
 ![A lupa do Conta-gotas sobre um traço vermelho, com as cores amostrada e atual no anel.](shot:color/eyedropper-loupe)
 
-![A lupa do seletor de cores acima de um dedo, com o ponto de amostragem sob o contato.](shot:color/eyedropper-touch)
+![A lupa do Conta-gotas na borda de um traço vermelho, com uma mira no centro e um anel de duas cores.](shot:color/eyedropper-touch)
 
 O toque sempre usa a lupa. Selecionar **Conta-gotas** em Esboço define **Estilo**
 como a lupa (**Conta-gotas**). Uma pequena marca de camadas aparece quando

@@ -1,10 +1,10 @@
 ---
 title: "Các loại lớp"
-description: "Lớp vẽ, Đối tượng, Giấy, nhóm, tô, bộ lọc và vùng chọn cùng quy tắc của từng loại."
-related: ["layers/panel", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
+description: "Lớp vẽ, Đối tượng, vector, Giấy, nhóm, tô, bộ lọc và vùng chọn cùng quy tắc của từng loại."
+related: ["layers/panel", "layers/vector", "layers/paper", "layers/working", "filters/how-filters-apply", "selections/selection-layers"]
 ---
 
-![Các loại lớp hiện tại trong bảng Lớp.](shot:layers/types-rows)
+![Bảng Lớp với một lớp vùng chọn, một nhóm, một lớp vẽ, một bộ lọc, các lớp tô, một lớp vector và Giấy.](shot:layers/types-rows)
 
 ## Lớp vẽ
 
@@ -18,9 +18,13 @@ Lớp Đối tượng giữ ảnh đã nhập ở kích thước, độ sâu bit
 
 Bạn có thể di chuyển, đổi kích thước và xoay lớp Đối tượng mà không liên tục lấy mẫu lại nguồn. Chọn **Lớp > Chuyển lớp thành ảnh điểm** khi cần vẽ lên pixel hoặc dùng lệnh yêu cầu lớp vẽ. Chuyển thành ảnh điểm sẽ chuyển sang không gian màu, độ sâu bit và lưới pixel của bản vẽ.
 
+## Lớp vector
+
+Lớp vector giữ các đường thay vì pixel. Chọn **Lớp > Mới > Lớp vector mới**, hoặc chọn **Lớp vector mới** ở cuối bảng Lớp. Một biểu tượng đường đánh dấu hình thu nhỏ của lớp. Xem [Lớp vector](/vi/docs/layers/vector/).
+
 ## Giấy
 
-Giấy cung cấp màu nền và kết cấu cho nét chất liệu khô. Giấy nằm dưới cùng chồng lớp và có hình thu nhỏ màu và kết cấu.
+Giấy cung cấp màu nền và kết cấu mà các cọ có **Độ mạnh kết cấu** phản ứng với. Giấy nằm dưới cùng chồng lớp và có hình thu nhỏ màu và kết cấu.
 
 Một bản vẽ có thể chứa một Giấy. Giấy không thể có mặt nạ, trở thành lớp cắt, chuyển lên trên lớp thông thường hoặc gộp vào lớp thông thường. Xem [Giấy](/vi/docs/layers/paper/) về kết cấu, ánh sáng và thiết lập khác.
 

@@ -1,7 +1,7 @@
 ---
 title: "Touch gestures"
 description: "What fingers do on the canvas, and the finger taps you can assign."
-related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper"]
+related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
 You can move the canvas, pick colors and run commands with your fingers on a
@@ -30,6 +30,22 @@ ring appears above the finger. Drag to aim, and lift the finger to take the
 color. Press **Escape** to cancel.
 
 A second finger on the canvas cancels the pick.
+
+## Clearing the layer
+
+Scrub the canvas with three fingers to run **Clear Entire Layer** on the active
+layer. Move all three fingers together, reverse, then reverse again without
+lifting. One **Undo** restores the layer. A locked layer isn't cleared.
+
+## Moving a bubble
+
+Drag a [bubble](/docs/customize/bubbles/) with two fingers to move it from
+anywhere on it.
+
+## Toolbars in Zen mode
+
+In the Linux app, swipe inward from a window edge with one finger in
+[Zen mode](/docs/customize/zen/) to show the toolbars and panels docked at that edge.
 
 ## Finger taps
 
@@ -64,4 +80,5 @@ includes the taps. **Reset All Shortcuts** on that page resets the taps too.
 ## Platforms
 
 Touch gestures work on Linux, Windows, Android, iPad and the web. The **Touch
-gestures** group isn't shown on macOS.
+gestures** group isn't shown on macOS, where a three-finger scrub on the trackpad
+still clears the layer.

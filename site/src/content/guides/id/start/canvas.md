@@ -74,9 +74,11 @@ Lakukan salah satu langkah berikut:
 - Putar dua jari di layar sentuh, atau di trackpad pada macOS dan iPad, saat **Putar dengan dua jari** aktif dalam Preferensi.
 - Ketik sudut atau seret penggeser rotasi di menu indikator zum.
 - Pilih tombol putar di panel **Navigator**.
+- Pilih **Putar tampilan**, yang berbagi tombol dengan **Tangan**, atau tekan **R**, lalu seret.
+- Tekan **-** untuk memutar 90° ke kiri, atau **^** untuk memutar 90° ke kanan.
 
-Secara bawaan, tidak ada tombol pintasan untuk memutar tampilan. Untuk kembali ke 0°,
-pilih **Atur ulang rotasi** di menu indikator zum.
+Untuk kembali ke 0°, tekan **5** atau pilih **Atur ulang rotasi** di menu
+indikator zum.
 
 ## Membalik tampilan
 

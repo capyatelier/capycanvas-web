@@ -54,6 +54,6 @@ related: ["filters/how-filters-apply", "filters/tone", "selections/working", "fi
 3. **픽셀 크기**를 **지정 크기 안에 맞추기**로 설정하고, **최대 너비(px)**, **최대 높이(px)** 값은 2048로 둡니다.
 4. **파일 선택…** 버튼을 선택하고 폴더와 이름을 정합니다.
 
-![웹 / 공유, JPEG 이미지, 품질 90, 지정 크기 안에 맞추기가 설정된 이미지 내보내기 대화 상자.](shot:photo/export-jpeg)
+![웹 / 공유, JPEG 이미지, 품질 90, 지정 크기 안에 맞추기가 설정된 내보내기 설정.](shot:photo/export-jpeg)
 
 내보내기는 그림을 바꾸지 않습니다([이미지 내보내기](/ko/docs/files/export/)).

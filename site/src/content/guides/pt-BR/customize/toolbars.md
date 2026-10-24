@@ -1,7 +1,7 @@
 ---
 title: "Barras de ferramentas e barra de título"
 description: "Como criar e editar barras de ferramentas e personalizar a barra de título."
-related: ["customize/panels", "customize/workspaces", "customize/zen", "start/command-search"]
+related: ["customize/panels", "customize/workspaces", "customize/zen", "customize/bubbles", "start/command-search"]
 ---
 
 Cada área de trabalho guarda suas próprias barras de ferramentas e sua barra de
@@ -14,7 +14,9 @@ Para abrir o menu de uma barra de ferramentas, clique com o botão direito no fu
 ou na alça da barra, ou mantenha-a pressionada com o dedo ou a caneta. Clique com
 o botão direito ou mantenha pressionada uma ferramenta para abrir o menu dela.
 
-![O menu da barra de ferramentas com os tamanhos de bloco.](shot:toolbars/toolbar-menu)
+**Mostrar no modo Zen** no menu da barra mantém a barra na tela no [modo Zen](/pt-BR/docs/customize/zen/) no aplicativo para Linux.
+
+![O menu da barra de ferramentas com os tamanhos de bloco e o item Mostrar no modo Zen.](shot:toolbars/toolbar-menu)
 
 ## Mostrar e ocultar barras de ferramentas
 
@@ -55,6 +57,7 @@ Cada barra de ferramentas precisa de um nome próprio.
 - Para adicionar ferramentas antes de uma ferramenta, escolha **Inserir ferramentas…** no menu dessa ferramenta.
 - Para remover uma ferramenta, escolha **Remover ferramenta** no menu dela.
 - Para mover uma ferramenta, mantenha-a pressionada e arraste-a dentro da barra ou para outra barra.
+- Para manter uma ferramenta na tela, arraste-a para fora da barra para tirar uma [bolha](/pt-BR/docs/customize/bubbles/).
 
 Além de comandos e ferramentas, a lista **Adicionar ferramentas** tem pincéis, tamanhos de pincel, **Conta-gotas**, **Controle deslizante de tamanho do pincel**, **Controle de intensidade**, **Opções da ferramenta** e **Divisor**. Ela também tem uma entrada para cada painel, como **Painel Camadas**, que abre o painel em uma gaveta.
 

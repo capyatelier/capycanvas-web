@@ -11,10 +11,9 @@ You can paint colors brighter than SDR white in an HDR drawing. A drawing at
 
 To get an HDR drawing, do one of the following:
 
-- In **File > New…**, choose the **HDR drawing** preset or a float **Bit depth**.
-- Choose **Edit > Change Bit Depth…** and a float depth.
+- In **File > New…**, choose the **4K HDR** preset or a float **Bit depth**.
+- Choose **Image > Color Management > Change Bit Depth…** and a float depth.
 - Open an HDR PNG (BT.2020 PQ) or HDR AVIF file (16-bit float HDR), or an OpenEXR file (32-bit float HDR).
-- Set **Bit depth** to a float depth on the **Color** page of [Preferences](/docs/preferences/) to make new drawings HDR.
 
 In an HDR drawing:
 

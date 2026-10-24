@@ -6,9 +6,11 @@ related: ["brushes/basics", "brushes/wet-media", "drawing/brush-tools"]
 
 Mit den Einstellungen **Spitze** und **Textur** im Bedienfeld **Werkzeug** können Sie die Form jedes Abdrucks und den Einfluss der Papiertextur auf die Markierung ändern ([Größe, Stärke und Deckkraft](/de/docs/brushes/basics/)).
 
-![Das Bedienfeld Werkzeug für Bleistift mit den Gruppen Spitze und Textur.](shot:brushes/tip-texture-settings)
+![Das Bedienfeld Werkzeug für Malpinsel von Härte bis Texturstärke, mit den Gruppen Glättung, Spitze und Textur.](shot:brushes/tip-texture-settings)
 
 ## Spitze
+
+Trockenmedium-Pinsel zeigen nur **Spitzenwinkel**.
 
 ### Härte
 
@@ -38,21 +40,23 @@ vollen Umdrehung in beide Richtungen.
 
 ## Spitzen, die sich mit dem Strich drehen
 
-Die Spitzen von **Malpinsel**, **Flacher Texturpinsel**, **Pastellblock**, **Transparente Lasur**, **Deckende Gouache**, **Satter Ölpinsel**, **Malmesser**, **Aquarelllasur**, **Nasses Aquarell**, **Doppelte Textur** und **Natürlicher Mischpinsel** folgen der Strichrichtung. **Spitzenwinkel** wirkt sich auf diese Pinsel nicht aus.
+Die Spitzen von **Malpinsel**, **Flacher Texturpinsel**, **Transparente Lasur**, **Deckende Gouache**, **Satter Ölpinsel**, **Malmesser**, **Aquarelllasur**, **Nasses Aquarell**, **Doppelte Textur**, **Natürlicher Mischpinsel** und **Mischmesser** folgen der Strichrichtung. **Spitzenwinkel** wirkt sich auf diese Pinsel nicht aus.
 
 **Trockenes Schummern** und **Realistische Pinseltinte** addieren die Strichrichtung zu **Spitzenwinkel**.
 
 ## Textur
 
-**Texturstärke** erscheint bei den Bleistift- und Pastellpinseln, **Malpinsel**,
-**Borstenpinsel**, **Flacher Texturpinsel**, **Trockenes Schummern**, **Transparente
-Lasur**, **Deckende Gouache**, **Satter Ölpinsel**, **Malmesser**, **Doppelte
-Textur** und **Natürlicher Mischpinsel**.
+**Texturstärke** erscheint bei den Sätzen **Bleistift**, **Pastell** und **Malen**
+(außer bei **Multiplizierende Lasur**), bei **Satter Ölpinsel**, **Malmesser** und
+**Doppelte Textur** sowie bei acht Mischpinseln: **Wischfinger**, **Weicher
+Mischpinsel**, **Papierwischer**, **Papiertuch**, **Körniger Mischpinsel**,
+**Natürlicher Mischpinsel**, **Mischmesser** und **Borsten-Mischpinsel**. Ein
+Pinsel ohne diese Einstellung ignoriert das Papier.
 
-Trockenmedium-Pinsel lesen die Textur des nächsten Papiers unter ihrer Zielebene. Wählen und skalieren Sie diese Textur unter [Papier](/de/docs/layers/paper/).
+Pinsel mit **Texturstärke** lesen die Textur des nächsten Papiers auf oder unter ihrer Zielebene. Wählen und skalieren Sie diese Textur unter [Papier](/de/docs/layers/paper/).
 
 ### Texturstärke
 
-Legt fest, wie stark die Papiertextur den Materialauftrag verändert. Bei 0 % hat die Textur keine Wirkung.
+Legt fest, wie stark die Papiertextur den Materialauftrag verändert. Bei 0% hat die Textur keine Wirkung. Bei Mischpinseln lässt eine leichte Berührung die Körnung des Papiers ungemischt, und mit Druck dringt die Mischung in sie ein. **Weicher Mischpinsel** beginnt bei 0%.
 
 ![Drei Striche mit Kohle bei Texturstärke 0%, 50% und 100%.](shot:brushes/texture-strength)

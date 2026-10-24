@@ -59,7 +59,7 @@ les masques et les calques de filtre ([Ouvrir et enregistrer](/fr/docs/files/ope
 3. Réglez **Dimensions en pixels** sur **Ajuster aux limites**, et laissez **Largeur maximale (px)** et **Hauteur maximale (px)** à 2048.
 4. Sélectionnez **Choisir un fichier…**, puis choisissez un dossier et un nom.
 
-![La boîte de dialogue Exporter l’image avec Web / Partage, Image JPEG, Qualité 90 et Ajuster aux limites.](shot:photo/export-jpeg)
+![Les réglages d’exportation avec Web / Partage, Image JPEG, Qualité 90 et Ajuster aux limites.](shot:photo/export-jpeg)
 
 L’exportation ne modifie pas le dessin
 ([Exporter des images](/fr/docs/files/export/)).
