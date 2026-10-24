@@ -83,8 +83,8 @@ export default async function start({ e, b, shoot, example, message }) {
   await restore();
   await e.load('04-finished.capy');
   await e.invoke('pencil');
-  await e.takeBubble({ kind: 'command', command: 'drawing_brush' }, [560, 290]);
-  await e.bubbleOption(await e.takeBubble({ kind: 'color' }, [420, 470]), { kind: 'size', size: 136 });
+  await e.takeBubble({ kind: 'command', command: 'drawing_brush' }, [476, 206]);
+  await e.bubbleOption(await e.takeBubble({ kind: 'color' }, [336, 386]), { kind: 'size', size: 136 });
   await shoot('start/workspaces-sketch', {
     target: fullWindow, pad: 0, maxWidth: 1920,
     check: async () => { await b.call('Input.dispatchMouseEvent', { type: 'mouseMoved', x: 1300, y: 30 }); await b.settle(); await b.settle(); },

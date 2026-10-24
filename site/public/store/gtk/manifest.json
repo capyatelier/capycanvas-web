@@ -10,8 +10,8 @@
     "scale": 2
   },
   "recipeHashes": {
-    "capture/showcase-scenes.mjs": "938f65ec8b1094982a84500258dfd529cd30742a712c147709914267d78a108e",
-    "store/gtk.mjs": "16ab6f6caf7465890f6a88b87338d802691485a726db074a065af7547efef5ac"
+    "capture/showcase-scenes.mjs": "7c1362d146bbf6cefea46e3b08973b84d6d156f1ac9aa42f2d7bb1ccd048f136",
+    "store/gtk.mjs": "c63fc5ab151befd2c79e0135492440c3fc9ca905a9cae55a3f122f87930d7fd4"
   },
   "artwork": {
     "spring.png": {
@@ -62,12 +62,12 @@
       "path": "store/gtk/en/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1954659,
-      "sha256": "2a7896ff8a22cb963bb8b6de7e7930fff925fe8f704fb68bb54c31122e97795a",
+      "bytes": 1962961,
+      "sha256": "0b593fef37b32727369caf02f605103145685d6dd36a17e17dd6bb657ae2c421",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -78,12 +78,12 @@
       "path": "store/gtk/en/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1943610,
-      "sha256": "7b8f13877b50d412e7e8653bf73d6adbdf830d455a4f45f0dda16f44121565c4",
+      "bytes": 1952558,
+      "sha256": "856c5685236bee949e6f655b72bcfda8e3e21750ac4fbad713de9df18e2b580c",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -94,12 +94,12 @@
       "path": "store/gtk/ja/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1953666,
-      "sha256": "579f12af54b37ecb89f816d37b46e09c24168d2174653f6a504180995db68792",
+      "bytes": 1962035,
+      "sha256": "4cece9e4df42c2ad117dafdbfed4fc969880bf87c4d0e8b37a855b33fb7826f3",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -110,12 +110,12 @@
       "path": "store/gtk/ja/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1942384,
-      "sha256": "e644e7581c94da5e2b8b93b881ae7727c414c7bdc52da5fe14666f68fffcd17b",
+      "bytes": 1951292,
+      "sha256": "095c19d4f84d91ae502657764246a6c27954c4f9a7a6d2cc441a609bada269b3",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -126,12 +126,12 @@
       "path": "store/gtk/zh-hans/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1955840,
-      "sha256": "83dd01e06d2a9365e9c330fe90f49f8252c8a0f128297bd3d44871d6bb436ad6",
+      "bytes": 1964108,
+      "sha256": "c2dfa006b957decb3f9d2b4fb6c886a2df4659c6d75df8f0931ced9cca2b01be",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -142,12 +142,12 @@
       "path": "store/gtk/zh-hans/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1945300,
-      "sha256": "745f5537d9484d666b20c482865a00b9893548103c9d9fe0f4208d87ffc5be0b",
+      "bytes": 1954220,
+      "sha256": "0e2015df63db1e8132f07c761d7e96511be35503fb81dcf268417d396fbdfea6",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -158,12 +158,12 @@
       "path": "store/gtk/zh-hant/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1956024,
-      "sha256": "869d1f4741cfdf15a99e6cbc5fbf50e91facf4af2ec2b4e2c59f01d3b9af810f",
+      "bytes": 1964287,
+      "sha256": "74c79bcb6b7f5ac647314dc9b62624bbdcfc4257ab4f7c71049adc3482999c98",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -174,12 +174,12 @@
       "path": "store/gtk/zh-hant/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1945451,
-      "sha256": "788133dd52ac74aa45d7e55764a25e9812e3bdee41928a48083346af3816f337",
+      "bytes": 1954352,
+      "sha256": "d4d6ea17fc5cb571f1ff126c39334da51484c96bf3b353761fa1fe8b0856b0ac",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -190,12 +190,12 @@
       "path": "store/gtk/ko/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1954210,
-      "sha256": "a05794ed034c4d6083f25027dedd7f31695d1df653d9e0f7d9b29d0e5fa3b8b5",
+      "bytes": 1962522,
+      "sha256": "9bbb1b83700112f8cc410a9108a486b0c6b1a10a466d0fb5a2ea8aa76b938c8e",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -206,12 +206,12 @@
       "path": "store/gtk/ko/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1943294,
-      "sha256": "2aad484d2ae4fe18c6a1a45de8032e3e7f5795f163368a9c9b27de0486b09910",
+      "bytes": 1952213,
+      "sha256": "c7a88ca077ac010fea701f689a1b82d703e63e03f380d464813854212af35e63",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -222,12 +222,12 @@
       "path": "store/gtk/es/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1954369,
-      "sha256": "45f0de86831a66fe098655dfd4a43b3a940bc4df8073bd273f409258e1680a11",
+      "bytes": 1962648,
+      "sha256": "7d4c0b9d2cc3a96c924d20726b53ff507e1b6571baf1e00739fdd60550bd05b5",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -238,12 +238,12 @@
       "path": "store/gtk/es/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1943411,
-      "sha256": "3834845ab85850577632eff7a0f505cfa5cba3ed241d79fa3e4d3f5ff242317e",
+      "bytes": 1952318,
+      "sha256": "ed23429b0f8510c7f0aa6813831c153aaefe2f6bb2a25662a0707cbc52fe5fb4",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -254,12 +254,12 @@
       "path": "store/gtk/pt-br/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1954216,
-      "sha256": "c5cb1e3780bcdbc2432ec5ca44bb2389d4339d54a72343ca5b5a891b85620fc6",
+      "bytes": 1962520,
+      "sha256": "4db91e816c18abe1faa1289878645e483bdf8134c3f45fd77ac69a2bad5b593c",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -270,12 +270,12 @@
       "path": "store/gtk/pt-br/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1943223,
-      "sha256": "7539cfc44a63077a9eb6bdbd4abc25180327a809457a4af81cbd437dacf9804e",
+      "bytes": 1952133,
+      "sha256": "97c3ea9dbd7ab120f14c457f41a09b77306587744ebabda7efbe3a2486066fbf",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -286,12 +286,12 @@
       "path": "store/gtk/id/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1955196,
-      "sha256": "b7a70bd5603cbaffedf7653313aa559a015706e99d48736bdac3091463701a45",
+      "bytes": 1963449,
+      "sha256": "1ed4df83600b2d75156c46527c9de572406f80e8e2c8bfa66d4c3af1d4c7f31d",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -302,12 +302,12 @@
       "path": "store/gtk/id/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1944406,
-      "sha256": "81873439abd2f59b38b67b08ff678e0300bb3312cf3cdf3a670f1803699f7c78",
+      "bytes": 1953330,
+      "sha256": "35b8a44e0f6965239242d03fc01c5aea693ef07b16fa5d5373c50fa42c6ea237",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -318,12 +318,12 @@
       "path": "store/gtk/fr/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1953679,
-      "sha256": "a3db5764fc5ab155dcbc5065331a9bfbcff78bd9f15b589c5020a6c44ed6f970",
+      "bytes": 1962065,
+      "sha256": "9045cd7ea46db4acb1324febd3fa9010093da3775149270605f4acb1881dd23e",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -334,12 +334,12 @@
       "path": "store/gtk/fr/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1942389,
-      "sha256": "24bb7064199abb155ed0e1230f3b374e3afb6a7fa2b6fb344f92045024f7abbb",
+      "bytes": 1951336,
+      "sha256": "6bc928596b0880b9580058373c9d4e58f33949894eb80198d546dc33bdc586b9",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -350,12 +350,12 @@
       "path": "store/gtk/de/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1954630,
-      "sha256": "c6aa18472f12fdbd38250f91af5cb15cee44b58dfcf8b295a43eb2155fc13df7",
+      "bytes": 1962890,
+      "sha256": "4951b6c28c4078d333d540bd4b83a85cd20a5caef917058e433775ca1f8be9f5",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -366,12 +366,12 @@
       "path": "store/gtk/de/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1943893,
-      "sha256": "31d9aaa7ec4759f50839ec39ac5abe2c3d3bdbddd5381eef7210b3b37a706971",
+      "bytes": 1952834,
+      "sha256": "37740599851a2d1361f931730c414124f97c0b662bdd145adac46004b43a317c",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -382,12 +382,12 @@
       "path": "store/gtk/ru/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1953051,
-      "sha256": "214f69d935cf13466120dfca517aaaf93ca2ccc767883aeee3c238bf1b9b9d4a",
+      "bytes": 1961464,
+      "sha256": "345e1dfacdc03cc9f4747ad2b43c06f46941e3eb178f5c6c525021c54c92e041",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -398,12 +398,12 @@
       "path": "store/gtk/ru/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1940871,
-      "sha256": "5e77cb17d2a7238292a686fbf20a1e848ab29717d9939a840a8d7b7fcb388c9e",
+      "bytes": 1949887,
+      "sha256": "511b67d15d3e8e426bdec7489486884b90f645b9fa46b33ea061a90c87fdd97c",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -414,12 +414,12 @@
       "path": "store/gtk/th/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1954634,
-      "sha256": "f1fc006c96ae52893dbb47953bcf2be956a9f81360c47d898a54c41e9f5e5531",
+      "bytes": 1962960,
+      "sha256": "a4fc52c82cf2a5cd46e11e02074cab4f982b60a8b7b6874d03fbcebc9db2524e",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -430,12 +430,12 @@
       "path": "store/gtk/th/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1943542,
-      "sha256": "dd0796633369d26372a2af6222c986885ac3b104347b8f1b9406c6f440fe12f1",
+      "bytes": 1952419,
+      "sha256": "7ec2179bc4b73d9806866469d518fa50e4deeddee081ab27918bf16dcbdf42eb",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -446,12 +446,12 @@
       "path": "store/gtk/vi/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1954588,
-      "sha256": "5c4ea2f325a33ef366532f2a8a61268dda886591febef98e36f825bf4e98f5c1",
+      "bytes": 1962886,
+      "sha256": "3acd9bfdb44ba5ecbad89742c9c1375de33450aa8414a6921249e7a71ac7d80f",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -462,12 +462,12 @@
       "path": "store/gtk/vi/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1943580,
-      "sha256": "3741dc5390bb692e62fc56fd89f0e8e46fe741bc4122e5a7eef1d4fe5a6508b8",
+      "bytes": 1952493,
+      "sha256": "aaf7cc5fe92f1971df9d833bdb52b965bfc8b8667893817ea4bac185aad29bd2",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -478,12 +478,12 @@
       "path": "store/gtk/tr/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1954722,
-      "sha256": "0605026f413a5842f54e57c54e1e4eccbcc5c8f71470a739816fca7aaf6f451b",
+      "bytes": 1962938,
+      "sha256": "66dd3a785cc1e3233184800d13bfb8d9985a2210f19fcd66f218e1b3c3ff591f",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -494,12 +494,12 @@
       "path": "store/gtk/tr/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1943525,
-      "sha256": "f0bd658b189de6037d0d7c7de0c57d15039e00092fd439b82c57b04b2bb1ce7c",
+      "bytes": 1952419,
+      "sha256": "91a149855e0339e1c343e24ad3bdff675fc770b95276e3d8f5e626b1ef441340",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -510,12 +510,12 @@
       "path": "store/gtk/it/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1953992,
-      "sha256": "b3b4dc293daa24e6ddb57f381a6640fb724d27460f408a847837736b569eccde",
+      "bytes": 1962310,
+      "sha256": "81051e827238ef11665a696385c338717fc2fdedad9281bc693cafa54e11612f",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -526,12 +526,12 @@
       "path": "store/gtk/it/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1943057,
-      "sha256": "e970a5e457baacd826c6f9365a61af4330a2cf5cd1c723e2900201be04acb892",
+      "bytes": 1951962,
+      "sha256": "49321ec49b4b8dd659f9154a48f0071dadacef3ee574a1d80af54039ceba3da1",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -542,12 +542,12 @@
       "path": "store/gtk/en/paint-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1893230,
-      "sha256": "8154d7ec474042a8e574029958deb8c460ad85d3d84fbc5a072cd7f138db9f83",
+      "bytes": 1893229,
+      "sha256": "dedf83711ac21b30e207d79085fb927a515e5fba609ae77c733f75ae53cd2e2e",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -558,12 +558,12 @@
       "path": "store/gtk/en/paint-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1882013,
-      "sha256": "85b4201097f204708420425bd42096b05b2846dc50f25a1148943750ed8cc543",
+      "bytes": 1882012,
+      "sha256": "1319824bb7bc9b79812ce26926c09ede14cdb8ae23503438c772d0caa6c67a35",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -574,12 +574,12 @@
       "path": "store/gtk/ja/paint-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1899763,
-      "sha256": "897fbea64f8fdb7f77f785cb5ea817d0dd22ac46edf1c67df71bedaf2adc568b",
+      "bytes": 1899710,
+      "sha256": "c0aabb8e87f280a59a32bb817364b683e27d55ebb9819f115594090a386d11c2",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -590,12 +590,12 @@
       "path": "store/gtk/ja/paint-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1887709,
-      "sha256": "942c744d0f2ffee9faed5c38c515990260d040faecf83d1ed2555e46749724fe",
+      "bytes": 1887714,
+      "sha256": "acacd3d015cf50369fae5b091a40d90bd703fe69a27d96a4b8f7ac046c79422b",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -606,12 +606,12 @@
       "path": "store/gtk/zh-hans/paint-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1900072,
-      "sha256": "6f85bde77217185a0b93213f509bef2bf50d8224cd5698db41e6bd12bc38b11c",
+      "bytes": 1900034,
+      "sha256": "3585d82969fa9716428669aeda9e2186f3872606c38eca95664260746cbcd055",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -622,12 +622,12 @@
       "path": "store/gtk/zh-hans/paint-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1888359,
-      "sha256": "532c8d8716e9c56384d68c7b509149ef10aba262244b47ce70b7e9a3e0bea7dd",
+      "bytes": 1888362,
+      "sha256": "82c12de3dca14a407c9b54bfa45f00df308edfdc77421503ec4e31c77dae06c7",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -638,12 +638,12 @@
       "path": "store/gtk/zh-hant/paint-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1901756,
-      "sha256": "eb41a5b81e5f1780b7dbbd8d4c7f1f07f455e45ac5fd8370720fb4630f0e312e",
+      "bytes": 1901724,
+      "sha256": "30728e127f63b9a4b3240c6f12d833b4440368cfaa6672b5cacaf8133546a7a3",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -654,12 +654,12 @@
       "path": "store/gtk/zh-hant/paint-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1890708,
-      "sha256": "4d47d772b06eb8778eeae37cc159ad86397fefe2a80388796e84b5c6b7aed02e",
+      "bytes": 1890669,
+      "sha256": "8b81e2d94584725b91a059fc776f1707add46036bb1e8cbc5eff453adee375a1",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -675,7 +675,7 @@
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -686,12 +686,12 @@
       "path": "store/gtk/ko/paint-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1855916,
-      "sha256": "6232616de21f881ebfbb5f534cda9a1b61e208c6cb79ae2ece31d33e4ddc4c8d",
+      "bytes": 1855921,
+      "sha256": "159f2452047a7cb51a0357dce40431d221a9077615ecc556a9a7301da733635f",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -707,7 +707,7 @@
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -723,7 +723,7 @@
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -734,12 +734,12 @@
       "path": "store/gtk/pt-br/paint-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1549726,
-      "sha256": "1ff7b364901f6516a1245fa070cc8df1f7cba9d8a23ad4736e4b6c2a9d7fcebd",
+      "bytes": 1549702,
+      "sha256": "40fea14340018721f4e215eb2076aa75258b368309e44a38812288056250ccd1",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -755,7 +755,7 @@
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -766,12 +766,12 @@
       "path": "store/gtk/id/paint-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1780514,
-      "sha256": "f465cfd4b1b85aa7ec805381349bb629d3c8cb58ab5dc9d999da4e96f4f0e739",
+      "bytes": 1900866,
+      "sha256": "75f14782239449109973168de3b24861735d48c65df83db856fd4165deafa197",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -787,7 +787,7 @@
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -798,12 +798,12 @@
       "path": "store/gtk/fr/paint-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1643910,
-      "sha256": "e1b0e4df566afae41a16111b90b834df77e6cef40005b280ec7907fd4b5e9137",
+      "bytes": 1643911,
+      "sha256": "8adafcf004e33e97bd231ca0ba854c6525b74fd4d420e326bf3582d1a146259f",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -815,11 +815,11 @@
       "width": 2486,
       "height": 1686,
       "bytes": 1633704,
-      "sha256": "07972d04f9bcfb8408e443e55bfa3a23aa7150a3abb74356e899a3ad953a66d0",
+      "sha256": "344965916587562527e6fcc193582e212f1ce42226937a73abfa307fc2be3682",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -835,7 +835,7 @@
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -846,12 +846,12 @@
       "path": "store/gtk/de/paint-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1799972,
-      "sha256": "7b7e7f9d42830875985b24b335ba8339e7e6b03f0a439888e28834e4857a74fc",
+      "bytes": 1799973,
+      "sha256": "7069b4f80a7864af8df6767f05b33472b025e72fb962990f93f41cb893f3a3e6",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -862,12 +862,12 @@
       "path": "store/gtk/ru/paint-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1487319,
-      "sha256": "4d453c3596e203ba2590b40590efdd81564ecd171fab129a3ff73d1f6decc551",
+      "bytes": 1487338,
+      "sha256": "13691af5477f7c0b52f87258bb4454faf247e80902df900eeb26e46cc9082db0",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -878,12 +878,12 @@
       "path": "store/gtk/ru/paint-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1478483,
-      "sha256": "a849441de6e6bbca056754313b8d0d0e69ad760cef81c2879e74a2f149f45d1e",
+      "bytes": 1478465,
+      "sha256": "d4a875255af985b786449198a7a8014a4e472542012494b5d23e1c46f6976560",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -899,7 +899,7 @@
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -910,12 +910,12 @@
       "path": "store/gtk/th/paint-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1877585,
-      "sha256": "38be762e397116f929ae51d5230d9b6414291656f8b414ea794c28f38c45217a",
+      "bytes": 1877596,
+      "sha256": "e19ee36d763159043c19e1058c1f96ebeeb6522b0a6a25ad3dd36c3464409161",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -926,12 +926,12 @@
       "path": "store/gtk/vi/paint-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1706931,
-      "sha256": "d15e4d33d72c2ed7baef2445469101237e74bb4aa0c95580fb63ee3f028d7451",
+      "bytes": 1706929,
+      "sha256": "957c66b944fc7ba4b444b3303b71c0fe7dd398272d163c9fff618622c2126c49",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -942,12 +942,12 @@
       "path": "store/gtk/vi/paint-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1696568,
-      "sha256": "e3ab7b73f7d40bcac3f9bb1bc76846b49ad270dfb1a9780af5123c186fdcd17e",
+      "bytes": 1696560,
+      "sha256": "d362b2a1c29af3a2400dfd8a1c6ba763cbfda4d6aa02a65a54a9168759e84bbc",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -958,12 +958,12 @@
       "path": "store/gtk/tr/paint-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1899957,
-      "sha256": "264c60462ba24ecf2d77666c892600e089e66946a7231f11a91f128111a1f112",
+      "bytes": 1899960,
+      "sha256": "18fef8e962b8ff8d6ae3d895bd3152ef68cd0c7d53a245fc4da7a425a346d32f",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -979,7 +979,7 @@
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -995,7 +995,7 @@
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1011,7 +1011,7 @@
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1022,12 +1022,12 @@
       "path": "store/gtk/en/photo-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 2178078,
-      "sha256": "6922da2b9d75fc992393a7c004547d01cf1ad5d224f34c92630e90b4e4601499",
+      "bytes": 2178079,
+      "sha256": "d70ad57dfbe98d183fe1b58d284389dfc4f1b9e7e9d84d52beced9c01003b91d",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1043,7 +1043,7 @@
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1054,12 +1054,12 @@
       "path": "store/gtk/ja/photo-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 2188637,
-      "sha256": "c8e3c4bda5e690cfe681c09eb687f269f2d630313634334b21c3cd958a67a7fc",
+      "bytes": 2188654,
+      "sha256": "4359b2388c40be5e6eaf6bf97575f3b9a5d71b4ebd4faac2c23e3053c612c995",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1070,12 +1070,12 @@
       "path": "store/gtk/ja/photo-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 2200456,
-      "sha256": "cf6bfc73111ac22c2e49c8fb9488bccca1d2ef7135a6999aca23c13b3332efe8",
+      "bytes": 2200554,
+      "sha256": "d9655c35689baa9a0b5314b5c67646a7a8ca785de7ea11c537a7cd9c235f379c",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1086,12 +1086,12 @@
       "path": "store/gtk/zh-hans/photo-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 2190017,
-      "sha256": "ed37c0640015c0e86bf79b26989d3b002e69444db760cb46abf84ee9b73540fa",
+      "bytes": 2190032,
+      "sha256": "e2a8bba6ae9c1cba5e961c55d3ebac2920dac0d17c7331ff49e8eb6378a29135",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1102,12 +1102,12 @@
       "path": "store/gtk/zh-hans/photo-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 2204107,
-      "sha256": "50d033f50ea886b5571af47d511492f533a09a99d738338683165cd52e2464a8",
+      "bytes": 2204151,
+      "sha256": "545274fb509082b4fea37ec6c2634e193586ed3426c6383085fd78e3ab0a27dd",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1118,12 +1118,12 @@
       "path": "store/gtk/zh-hant/photo-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 2190412,
-      "sha256": "ed324db9ee8cfa473c7b9a253c18a54dc766dc25392bef9a889f189dbba3e3af",
+      "bytes": 2190428,
+      "sha256": "d0e3fb17271bb900e4d93232035c4e34dfaec388e154db61267dc6c932d25b3b",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1134,12 +1134,12 @@
       "path": "store/gtk/zh-hant/photo-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 2203922,
-      "sha256": "fbbd52b69dbc00d91c4617bc317100dfa73d6ea4c2f0e95cc851ebde8c3cffc9",
+      "bytes": 2204063,
+      "sha256": "48076869aa7621acd2ab993ee438a4a846ddffe2feb3c6ae153a9be2e5948923",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1155,7 +1155,7 @@
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1171,7 +1171,7 @@
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1187,7 +1187,7 @@
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1198,12 +1198,12 @@
       "path": "store/gtk/es/photo-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 2034320,
-      "sha256": "be2e3c4d73f25421e6490a9fe08302e8e27750eb85a363045ce27ee54c86f37c",
+      "bytes": 2034352,
+      "sha256": "fec46e04a54ae4dcd9349299880cbf4464d811ff5dc318e18707f76c0a32e42b",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1214,12 +1214,12 @@
       "path": "store/gtk/pt-br/photo-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 2017649,
-      "sha256": "0f6eea45715507a6ac0765a7b98cd82afcb537e9f35d9a8d1d27668bbbb555bd",
+      "bytes": 2017655,
+      "sha256": "30dc05ec04048f45a1d05c09ecbaa26cd50b7827bf8ccabc360d571cc1723080",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1230,12 +1230,12 @@
       "path": "store/gtk/pt-br/photo-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 2032283,
-      "sha256": "3a5fd3a34f4872c17d8de63535eda8b5ebf8d15038c6007fa87041b7f3a37a34",
+      "bytes": 2032209,
+      "sha256": "2209c2f018d8e6c9f695dce5c2456d1f9bc00fa90b5ddb03e0f35872bb91c1f3",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1246,12 +1246,12 @@
       "path": "store/gtk/id/photo-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1917795,
-      "sha256": "5feabc13ddb8e6abdbe75e6a13d2586efe3294b635eb68bbc068bc849eeabba5",
+      "bytes": 1917769,
+      "sha256": "87cfbf2a4c93d62533a4160ff0a77110633eaea9c395e9b995d8a0b883f4765d",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1267,7 +1267,7 @@
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1278,12 +1278,12 @@
       "path": "store/gtk/fr/photo-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1989881,
-      "sha256": "32f28b379c96b85450a57daffa758dc7706940aaf4ff4f3292172fbe29242f66",
+      "bytes": 1989895,
+      "sha256": "b3e6bc4e452b1e6fabc5da79f98f7f2f3b7f9c8083fad6e89f61e5b7e792d51f",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1299,7 +1299,7 @@
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1310,12 +1310,12 @@
       "path": "store/gtk/de/photo-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 2078961,
-      "sha256": "61ea9a2efb83365f7128c4b59a7882ec20e37279bb8f8a218442048e028dc224",
+      "bytes": 2078968,
+      "sha256": "f3d0a5484f2522c66b97fe8ce665d2f032d93f3657a8eb4fb527204b4a9e4836",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1331,7 +1331,7 @@
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1347,7 +1347,7 @@
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1358,12 +1358,12 @@
       "path": "store/gtk/ru/photo-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1889674,
-      "sha256": "76639b86cc5f9f61cd3335bb7d2c57badcf98b60bd093c3cb83e4da7145804cc",
+      "bytes": 1889561,
+      "sha256": "3efb5926c162364eb429b0ec591b8b7c9dbb0d6a9a18cf89be21d4c04eb242a3",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1374,12 +1374,12 @@
       "path": "store/gtk/th/photo-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 2181677,
-      "sha256": "a51f4817e101579b7fc49deb13b377b5a5c0f4ab8b7a4c1423602dac4c52b8a2",
+      "bytes": 2181438,
+      "sha256": "ea0f12a13d4a775c4f82b4dbe1ca7dc71343df407fdac8185646aa69d40d47d6",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1390,12 +1390,12 @@
       "path": "store/gtk/th/photo-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 2195422,
-      "sha256": "7b2bb434afed99db7df671e7efc63f247d2c169a616da230431a22fe69752b21",
+      "bytes": 2195611,
+      "sha256": "7e8e0a76ea0cf6c086d3019b73bea8e2b2dcfc8d39ce151c00238d22331ba425",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1406,12 +1406,12 @@
       "path": "store/gtk/vi/photo-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 2002776,
-      "sha256": "56ca2de6a165d954f155b2d2f4f2e34014fa95abdd47f13259718d6dc90353b8",
+      "bytes": 2002717,
+      "sha256": "e149620137ef417703c4c4665ab5d2f3a90cfc8e4a23b90a6179ac254b38de0c",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1422,12 +1422,12 @@
       "path": "store/gtk/vi/photo-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 2012970,
-      "sha256": "860092ab3b182f3788c3ee5aa5bcaa33084d166d778f95543efb6e6a322c8187",
+      "bytes": 2013078,
+      "sha256": "fc50ce998f01d3ece5e48ea054e170bac2bdba0434a3647bf29163123ff9cbd0",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1438,12 +1438,12 @@
       "path": "store/gtk/tr/photo-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 2109743,
-      "sha256": "e93402102dae32056056d1914a0a6f33b420c7d9051289895aa94d1fe5169b22",
+      "bytes": 2109693,
+      "sha256": "74d8929126e7c2deb0f0e4054dcfd29872710f22dc071fcf9b475aaae34136a8",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1459,7 +1459,7 @@
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1470,12 +1470,12 @@
       "path": "store/gtk/it/photo-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 2029118,
-      "sha256": "07c3e991612c3520d1da6ed77da3fd82df1a2968565983df0157f7358dbc8349",
+      "bytes": 2029115,
+      "sha256": "cbc43f68d7cc8650522a43ed0f31ebf7e336229ad5fe097b398e4b6d604a9c73",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     },
     {
@@ -1486,12 +1486,12 @@
       "path": "store/gtk/it/photo-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 2046640,
-      "sha256": "5a664b9aa520dd6cd4a857e81b57647d555235a10cc4a14e6708b561271000c3",
+      "bytes": 2046674,
+      "sha256": "9c087a994aa95908f56461a34ae92244b85274caf1ff029e3add35cb5cf5b926",
       "capture": {
         "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
         "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "3b5bbb172c3c7551fb4c0c0c19e77f1a541cca235d8eaf4d88081392973389d9"
+        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
       }
     }
   ]
