@@ -12,7 +12,7 @@ la charger de nouveau plus tard.
 Effectuez l’une des opérations suivantes :
 
 - Choisissez **Sélection > Enregistrer comme calque de sélection**.
-- Sélectionnez **Enregistrer** dans la barre de sélection ou dans la barre Masque rapide.
+- Sélectionnez **Masque > Enregistrer comme calque de sélection** dans la barre de sélection ou **Enregistrer comme calque de sélection** dans la barre Masque rapide.
 - En Masque rapide, choisissez **Calque > Enregistrer comme calque de sélection**.
 
 Le nouveau calque se place en haut de la liste des calques, sous le nom *Sélection*
@@ -58,7 +58,7 @@ porte l’intitulé « Modification de » suivi du nom du calque. Quand la bar
 d’actions de la toile est masquée, cette barre n’apparaît pas.
 
 - **Charger** fait du calque la sélection actuelle et revient au dessin.
-- **Inverser** inverse la sélection enregistrée et laisse le calque ouvert pour modification.
+- **Inverser le calque de sélection** inverse la sélection enregistrée et laisse le calque ouvert pour modification.
 - **Revenir au dessin** met fin à la modification. **Échap** a le même effet.
 
 Après la modification, le calque modifié auparavant redevient actif ou, à défaut,
@@ -69,7 +69,7 @@ choisissez une commande dans **Modifier**. **Sélection > Agrandir la sélection
 les autres commandes d’affinage du menu **Sélection** reviennent d’abord au dessin,
 puis modifient la sélection actuelle.
 
-![La barre d’actions de la toile pour un calque de sélection en cours de modification, avec Charger, Inverser et Revenir au dessin.](shot:selections/selection-layer-bar)
+![Barre de canevas pour un calque de sélection modifié avec Charger, Inverser le calque de sélection et Revenir au dessin.](shot:selections/selection-layer-bar)
 
 ## Charger un calque de sélection
 

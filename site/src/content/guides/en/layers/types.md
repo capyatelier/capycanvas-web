@@ -14,7 +14,7 @@ Choose **Layer > New > New layer**, or select **New layer** at the bottom of the
 
 ## Object layer
 
-An Object layer keeps an imported image at its own size, bit depth and color profile. Opening or importing an image, dropping an image on the canvas, and pasting an image from another app create Object layers.
+An Object layer keeps an imported image at its own size, bit depth and color profile. Importing an image as a layer, dropping an image on the canvas, and pasting an image from another app create Object layers.
 
 You can move, scale and rotate an Object layer without repeatedly resampling its source. Choose **Layer > Rasterize Layer** when you need to paint on its pixels or use a command that requires a paint layer. Rasterizing converts it to the drawing's color space, bit depth and pixel grid.
 

@@ -30,6 +30,8 @@ chuột phải vào các nút, rồi bật hoặc tắt không gian làm việc 
 Không gian làm việc hiện tại luôn có nút. Các không gian làm việc bạn tạo được thêm vào
 thanh tiêu đề.
 
+Trong hộp thoại **Không gian làm việc**, chọn ghim bên cạnh không gian làm việc để hiện hoặc ẩn nút của nó trên thanh tiêu đề.
+
 ![Danh sách Hiện trên thanh trên cùng bên dưới các nút không gian làm việc.](shot:workspaces/show-in-top-bar)
 
 ## Không gian làm việc mới…
@@ -39,7 +41,7 @@ Bạn có thể lưu bố cục hiện tại thành một không gian làm việ
 Thực hiện một trong các cách sau:
 
 - Chọn **Cửa sổ > Không gian làm việc > Không gian làm việc mới…**.
-- Chọn **Không gian làm việc mới** (**+**) trong hộp thoại **Không gian làm việc**.
+- Chọn **Không gian làm việc mới** (**+**) bên dưới danh sách trong hộp thoại **Không gian làm việc**.
 
 Gõ **Tên** rồi chọn **Tạo và chuyển sang**. Mỗi không gian làm việc cần một tên
 riêng.
@@ -50,14 +52,15 @@ Chọn **Cửa sổ > Không gian làm việc > Quản lý không gian làm vi�
 **Không gian làm việc**. Chọn một không gian làm việc sẽ xem trước bố cục của nó phía
 sau hộp thoại. Để chuyển sang, chọn **Chuyển sang không gian làm việc**.
 
-- Kéo tay nắm của một không gian làm việc để sắp xếp lại danh sách. Thanh tiêu đề dùng cùng thứ tự này.
-- Chọn **⋯** cạnh một không gian làm việc, hoặc nhấp chuột phải vào nó, để có **Hiện trên thanh trên cùng**, **Di chuyển lên**, **Di chuyển xuống**, **Đổi tên…** và **Xóa…**.
+- Kéo tay cầm ở bên phải không gian làm việc để sắp xếp lại danh sách. Thanh tiêu đề sử dụng thứ tự tương tự.
+- Nhấp chuột phải hoặc giữ không gian làm việc cho **Đổi tên…**, **Xóa…**, **Di chuyển lên** và **Di chuyển xuống**. Đổi tên sẽ chỉnh sửa tên trong hàng; nhấn **Enter** để giữ nó hoặc **Escape** để hủy.
+- Chọn không gian làm việc, sau đó chọn **Xóa** bên dưới danh sách. Trên màn hình cảm ứng, vuốt hàng của nó để hiển thị **Xóa**.
 
 Để sao chép một không gian làm việc, chuyển sang không gian đó rồi chọn
 **Không gian làm việc mới…**. Không thể đổi tên hoặc xóa **Phác thảo**, **Vẽ** và
 **Ảnh**, và việc xóa không gian làm việc là vĩnh viễn.
 
-![Hộp thoại Không gian làm việc với các tùy chọn của một không gian làm việc đang mở.](shot:workspaces/manage-dialog)
+![Hộp thoại Không gian làm việc với menu ngữ cảnh của không gian làm việc đang mở.](shot:workspaces/manage-dialog)
 
 ## Lịch sử bố cục…
 

@@ -37,8 +37,8 @@ Das bearbeitete Foto hat diese Ebenen, von oben nach unten:
 | **Dynamik** | Erhöht die Dynamik des ganzen Fotos |
 | **Kurven** | Eine S-Kurve für das ganze Foto |
 | *Retouch* | Reparaturstriche |
-| Die Objektebene | Das Foto, nach seiner Datei benannt |
+| Die Malebene | Das Foto, nach seiner Datei benannt |
 
-Auf der Objektebene wird nichts gemalt.
+Auf der Malebene wird nichts gemalt.
 
 Erste Phase: [Öffnen und Zuschneiden](/de/docs/photo/crop/).

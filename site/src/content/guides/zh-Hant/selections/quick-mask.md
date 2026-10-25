@@ -41,10 +41,10 @@ related: ["selections/working", "selections/selection-layers", "selections/tonal
 
 畫布底部的[畫布操作欄](/zh-Hant/docs/selections/working/)的說明文字為「快速遮罩」：
 
-- **反轉**：**反轉選取範圍**。
-- **填色**和**清除**：**填色遮罩**填滿整個遮罩，**清除選取覆蓋範圍**清空濛版。
+- **反轉選取範圍** 交換選中和未選中的區域。
+- **填色遮罩** 填滿整個蒙版，**清除選取覆蓋範圍** 清空濛版。
 - **改善**：**擴大…**、**縮小…**、**羽化…**、**邊界…** 和**平滑…**。此處**變形輪廓**無法使用。
-- **儲存**：**另存為選取範圍圖層**（參見[選取範圍圖層](/zh-Hant/docs/selections/selection-layers/)）。
+- **另存為選取範圍圖層**：參見[選區圖層](/zh-Hant/docs/selections/selection-layers/)。
 - **退出**：**返回畫作**。
 
 隱藏畫布操作欄時，快速遮罩欄不會出現。

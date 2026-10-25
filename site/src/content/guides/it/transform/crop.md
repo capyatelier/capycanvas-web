@@ -6,7 +6,7 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 
 Puoi ritagliare la tela entro una cornice con lo strumento **Ritaglia**. I pixel
 ritagliati restano sui loro livelli, nascosti, a meno che non attivi
-**Elimina pittura ritagliata**.
+**Elimina pixel dipinti ritagliati**.
 
 ## Ritagliare
 
@@ -28,11 +28,11 @@ bordo inferiore della tela.
 Su uno schermo touch, solo le maniglie rispondono a un dito. Un dito all'interno
 della cornice sposta la vista.
 
-Per terminare, seleziona **Applica** o premi **Invio**. **Annulla**, **Esc**
-e **Modifica > Annulla** scartano il ritaglio. In
+Per terminare, seleziona **Applica ritaglio** o premi **Invio**. **Annulla ritaglio**, **Escape**
+e **Annulla** scartano il ritaglio. In
 entrambi i casi, torna lo strumento usato in precedenza.
 
-**Applica** ritaglia anche i livelli bloccati. Non puoi iniziare un ritaglio
+**Applica ritaglio** ritaglia anche i livelli bloccati. Non puoi iniziare un ritaglio
 mentre è aperta una trasformazione.
 
 ![La cornice di ritaglio sulla foto del terrario, con la barra azioni della tela lungo il bordo inferiore.](shot:transform/crop-bar)
@@ -46,7 +46,7 @@ cornice con quelle proporzioni. **Libero** è il valore predefinito.
 **Scambia orientamento ritaglio**, il pulsante a icona accanto a
 **Proporzioni**, ruota la cornice tra orizzontale e verticale.
 
-Le proporzioni, la sovrapposizione ed **Elimina pittura ritagliata** restano per il
+Le proporzioni, la sovrapposizione ed **Elimina pixel dipinti ritagliati** restano per il
 ritaglio successivo.
 
 ![Il menu Proporzioni nella barra del ritaglio.](shot:transform/crop-ratio-menu)
@@ -58,9 +58,7 @@ visibili, compresi quelli oltre la tela. **Proporzioni** passa a **Libero**.
 
 ## Sovrapposizione
 
-Scegli **Terzi**, **Griglia**, **Diagonale** o **Sezione aurea** da
-**Sovrapposizione**. **Terzi** è il valore predefinito. Premi **O** durante il
-ritaglio per mostrare la sovrapposizione successiva.
+Scegli un overlay da **Altro > Sovrapponi**. **Sovrapposizione regola dei terzi** è l'impostazione predefinita. Premi **O** mentre ritagli per mostrare la sovrapposizione successiva.
 
 ## Raddrizzare
 
@@ -81,20 +79,18 @@ Per raddrizzare in base a una guida, seleziona la guida e seleziona
 [Righelli e guide](/it/docs/drawing/ruler/)). Si apre un ritaglio ruotato in
 linea con la guida.
 
-## Elimina pittura ritagliata
+## Elimina pixel dipinti ritagliati
 
-Attiva **Elimina pittura ritagliata** per scartare i pixel fuori dalla cornice
+Attiva **Altro > Elimina pixel dipinti ritagliati** per scartare i pixel fuori dalla cornice
 quando applichi il ritaglio. Le foto posizionate conservano i pixel originali.
 Disattivato per impostazione predefinita.
 
 Un ritaglio che risulterebbe troppo grande conservando i pixel nascosti funziona
-solo con **Elimina pittura ritagliata** attivo.
+solo con **Elimina pixel dipinti ritagliati** attivo.
 
-## Ripristina
+## Ripristina ritaglio
 
-**Ripristina** riporta la cornice all'intera tela, dritta, e disattiva
-**Raddrizza**. Con delle proporzioni scelte, la cornice diventa la più grande
-cornice con quelle proporzioni.
+**Ripristina ritaglio** in **Altro** riporta la cornice sull'intera tela, in posizione verticale, e disattiva **Raddrizza**. Con un rapporto scelto, il fotogramma diventa il fotogramma più grande di quel rapporto.
 
 ## Impostazioni di ritaglio nel pannello Strumento
 
@@ -114,7 +110,7 @@ Puoi ritagliare la tela sui limiti di una selezione.
 Esegui una delle seguenti operazioni:
 
 - Scegli **Immagine > Ritaglia tela alla selezione**.
-- Seleziona **Ritaglia** nella [barra della selezione](/it/docs/selections/working/).
+- Scegli **Altro > Ritaglia tela alla selezione** sulla [barra di selezione](/it/docs/selections/working/).
 
 I pixel fuori dai limiti della selezione restano sui loro livelli, nascosti. Non
 puoi ritagliare su una selezione invertita.

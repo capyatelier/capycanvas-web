@@ -20,9 +20,7 @@ Effectuez l’une des opérations suivantes :
 
 ![Le panneau Filtres avec le menu des catégories, le bouton de recherche et les lignes de filtres avec leurs aperçus.](shot:filters/filters-panel)
 
-Lorsqu’un calque est sélectionné, chaque ligne montre un aperçu du filtre sur ce
-calque et sur les calques situés en dessous. Les filtres animés portent une
-marque devant leur icône.
+Chaque ligne affiche le filtre sur un exemple d'image fixe. Les filtres animés ont une marque devant leur icône.
 
 Le menu en haut affiche une catégorie ou **Tous les filtres**. **Rechercher des
 filtres** trouve un filtre par son nom dans la catégorie choisie.

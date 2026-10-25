@@ -36,8 +36,8 @@ La photo retouchée contient ces calques, de haut en bas :
 | **Vibrance** | Augmente la vibrance de toute la photo |
 | **Courbes** | Une courbe en S pour toute la photo |
 | *Retouch* | Traits de correction |
-| Le calque Objet | La photo, nommée d’après son fichier |
+| Le calque de peinture | La photo, nommée d’après son fichier |
 
-Rien n’est peint sur le calque Objet.
+Rien n’est peint sur le calque de peinture.
 
 Première étape : [Ouverture et recadrage](/fr/docs/photo/crop/).

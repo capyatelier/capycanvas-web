@@ -12,6 +12,10 @@ related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", 
 
 选择 **笔压** 旁的 **调整…** 可调整压力曲线并在当前画布上测试。曲线作用于所有压感画笔和工具；已画出的笔迹不会改变。参见[笔压](/zh/docs/input/pen-pressure/)。
 
+## 笔倾斜
+
+选择 **笔倾斜** 旁的 **调整…**，更改画笔的倾斜曲线和方向。参见[画笔倾斜](/zh/docs/input/pen-tilt/)。
+
 ## 笔迹预测
 
 笔迹预测会在笔尖前方先画出一小段笔迹，绘画时由实际笔迹替换。相关设置位于**笔响应**下：

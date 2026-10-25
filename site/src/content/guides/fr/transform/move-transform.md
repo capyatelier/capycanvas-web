@@ -44,9 +44,7 @@ Sur un calque vectoriel, **Opération** sélectionne, déplace, redimensionne et
 Vous pouvez déplacer une copie des pixels sélectionnés et laisser les originaux en
 place.
 
-Activez **Laisser une copie** dans le panneau Outil ou dans la
-[barre de sélection](/fr/docs/selections/working/). Maintenez **Alt** au début du
-glissement pour obtenir l’effet inverse le temps de ce glissement.
+Activez **Laisser une copie** dans le panneau **Outil**, ou choisissez **Plus > Laisser une copie** dans la [barre de sélection](/fr/docs/selections/working/). Maintenez **Alt** au début du déplacement pour inverser ce choix pendant ce seul déplacement.
 
 ## Transformer
 
@@ -62,15 +60,15 @@ Avec une sélection, **Transformer** modifie les pixels sélectionnés du calque
 masque actif. Sans sélection, il modifie les calques sélectionnés. Un cadre muni de
 poignées et la barre d’actions de la toile apparaissent.
 
-Pour terminer, sélectionnez **Appliquer** ou appuyez sur **Entrée**. **Annuler** dans
-la barre ou **Échap** abandonne la transformation, tout comme la commande
+Pour terminer, sélectionnez **Appliquer la transformation** ou appuyez sur **Entrée**. **Annuler la transformation** dans
+la barre ou **Escape** abandonne la transformation, tout comme la commande
 **Annuler** pendant la transformation de calques.
 
 Pour transformer plusieurs calques, supprimez d’abord la sélection.
 
 ## Poignées
 
-En **Libre** et **Uniforme** :
+Lors de la mise à l'échelle :
 
 - Faites glisser à l’intérieur du cadre pour le déplacer. Maintenez **Maj** pour ne le déplacer qu’horizontalement ou verticalement.
 - Faites glisser une poignée d’angle ou de côté pour mettre à l’échelle depuis le côté opposé. Maintenez **Maj** pour conserver les proportions, ou **Alt** pour mettre à l’échelle autour du pivot.
@@ -95,12 +93,11 @@ Dans tous les modes :
 
 ## Barre de transformation
 
-![La barre d’actions de la toile pour une transformation, avec Mode, Magnétisme, les boutons de retournement et de rotation, Réinitialiser, Interpolation, Annuler et Appliquer.](shot:transform/transform-bar)
+![La barre de transformation avec les boutons de mode, les commandes de retournement et d'accrochage, Annuler la transformation et Appliquer la transformation.](shot:transform/transform-bar)
 
 ### Mode
 
-**Libre**, **Uniforme**, **Distordre** ou **Déformer**. **Uniforme** conserve les
-proportions. **Libre** est le mode par défaut.
+Sélectionnez **Redimensionner**, **Distordre** ou **Déformer** dans la barre. **Conserver les proportions** conserve les proportions pendant la mise à l’échelle. En mode **Distordre**, **Perspective** reporte le déplacement d’un coin sur le coin voisin. Le choix par défaut est **Redimensionner**.
 
 ### Taille d’origine
 
@@ -120,29 +117,24 @@ Avec **Distordre**, reproduit en miroir chaque déplacement d’angle sur l’an
 
 Avec **Déformer** :
 
-- **Diviser la grille** : choisissez **Diviser verticalement**, **Diviser horizontalement** ou **Diviser en croix**, puis touchez la déformation pour y ajouter une ligne de grille sans changer la forme. **Échap** annule la division. Une grille compte au plus 32 cellules dans chaque direction.
-- **Sélectionner les points** : touchez des points pour les sélectionner et les déplacer ensemble.
-- **Réinitialiser la grille** : remplace la déformation par une grille droite.
-- **Grille** : **3 × 3** (par défaut), **4 × 4** ou **5 × 5**. Disponible tant que vous n’avez pas modifié la forme.
+- **Grille** ouvre **3 × 3** (par défaut), **4 × 4** et **5 × 5**, ainsi que les commandes de fractionnement de grille. La taille de la grille est disponible jusqu'à ce que vous changiez la forme.
+- Choisissez **Diviser verticalement**, **Diviser horizontalement** ou **Diviser en croix**, puis sélectionnez un point sur le maillage pour ajouter une ligne de quadrillage sans modifier la forme. **Escape** annule le fractionnement. Une grille peut contenir jusqu'à 32 cellules dans chaque direction.
+- **Sélectionner les points** sélectionne les points à déplacer ensemble.
+- **Réinitialiser la grille** restaure un maillage droit.
 
-![La barre d’actions de la toile en mode Déformer, avec le menu Diviser verticalement, Sélectionner les points, Réinitialiser la grille et le menu 3 × 3.](shot:transform/warp-bar)
+![La barre de transformation en mode Déformer avec Grille et Sélectionner les points.](shot:transform/warp-bar)
 
 ### Boutons de retournement et de rotation
 
-Les boutons à icône **Retourner horizontalement**, **Retourner verticalement**,
-**Pivoter de 90° à gauche** et **Pivoter de 90° à droite** retournent ou font
-pivoter le contenu autour du pivot.
+**Retourner horizontalement** se trouve dans la barre. **Plus** contient **Retourner verticalement**, **Pivoter de 90° à gauche** et **Pivoter de 90° à droite**. Ces commandes retournent ou font pivoter le contenu autour du pivot.
 
-### Réinitialiser
+### Réinitialiser la transformation
 
-Annule toutes les modifications faites dans cette transformation et la laisse
-ouverte. **Mode** revient à **Libre**.
+Choisissez **Réinitialiser la transformation** dans **Plus** pour annuler chaque modification de la transformation actuelle. La transformation reste ouverte et revient à **Redimensionner**.
 
 ### Interpolation
 
-Définit le rééchantillonnage des pixels : **Au plus proche**, **Bilinéaire**,
-**Bicubique** ou **Lanczos**. **Bilinéaire** est la valeur par défaut en **Libre**
-et **Uniforme**, et **Bicubique** en **Distordre** et **Déformer**.
+Choisissez **Interpolation** dans **Plus** pour définir la manière dont les pixels sont rééchantillonnés : **Au plus proche**, **Bilinéaire**, **Bicubique** ou **Lanczos**. **Bilinéaire** est la valeur par défaut lors de la mise à l'échelle et **Bicubique** dans **Distordre** et **Déformer**.
 
 ## Valeurs de transformation dans le panneau Outil
 
@@ -150,7 +142,7 @@ Le panneau Outil, et la barre Options de l’outil dans Photo, affichent les val
 d’une transformation en cours, sauf en **Déformer**.
 
 - **Point d’ancrage de position** : **X** et **Y**, en pixels, avec au-dessus la grille d’ancrage qui choisit le point du cadre auquel ils correspondent.
-- **Échelle** : **Largeur** et **Hauteur**, en pourcentage. **Uniforme** les garde liées.
+- **Redimensionner** : **Largeur** et **Hauteur**, en pourcentage. **Conserver les proportions** les garde liées.
 - **Rotation** : **Angle**, de −180° à 180°.
 - **Inclinaison** : **Inclinaison**, de −85° à 85°.
 
@@ -174,7 +166,7 @@ Effectuez l’une des opérations suivantes :
 - Choisissez **Calque > Réglages du calque > Appliquer la transformation**.
 
 Pendant l’opération, une barre en bas de la toile indique « Application de la
-transformation… », avec **Annuler**.
+transformation… », avec **Annuler la transformation**.
 
 ## Répéter la transformation
 
@@ -185,6 +177,7 @@ importations et les transformations de pixels sélectionnés ne sont pas répét
 ## Images placées
 
 Quand vous collez une image provenant d’une autre application ou choisissez
-**Fichier > Importer une image comme calque…**, l’image s’ouvre dans le cadre de
-transformation. **Appliquer** place l’image et **Annuler** la supprime. Tant que
+**Fichier > Import Image as
+Layer…**, l’image s’ouvre dans le cadre de
+transformation. **Appliquer la transformation** place l’image et **Annuler la transformation** la supprime. Tant que
 vous n’avez choisi ni l’un ni l’autre, les autres commandes sont indisponibles.

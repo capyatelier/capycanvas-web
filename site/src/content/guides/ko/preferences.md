@@ -117,7 +117,7 @@ Capy 버튼의 그림을 **올려다보기**(기본값), **정면 바라보기**
 
 ## 펜 및 입력
 
-이 페이지의 설정은 [펜](/ko/docs/input/pen/)과 [터치 제스처](/ko/docs/input/touch/)에서 설명합니다.
+이 페이지의 설정은 [펜](/ko/docs/input/pen/), [펜 기울기](/ko/docs/input/pen-tilt/), [터치 동작](/ko/docs/input/touch/)에 설명되어 있습니다.
 
 ## 키보드 단축키
 

@@ -83,6 +83,12 @@ Effectuez l’une des opérations suivantes :
 
 Pour revenir à 0°, appuyez sur **5** ou sélectionnez **Réinitialiser la rotation** dans le menu de l’affichage du zoom.
 
+## Magnétisme de la rotation
+
+**Magnétisme de la rotation** maintient la vue proche de 0°, 90°, 180° et 270° pendant que vous faites pivoter avec un geste, l'outil **Pivoter la vue** ou un curseur. Il est activé par défaut.
+
+Activez-le ou désactivez-le dans **Affichage > Magnétisme de la rotation** ou dans le menu de lecture du zoom. **Verrouiller la rotation** arrête complètement les gestes de rotation.
+
 ## Retourner la vue
 
 Effectuez l’une des opérations suivantes :

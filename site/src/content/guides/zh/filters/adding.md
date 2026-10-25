@@ -18,7 +18,7 @@ related: ["filters/how-filters-apply", "filters/tone", "filters/color", "start/c
 
 ![滤镜面板，包含类别菜单、搜索按钮和带预览的滤镜行。](shot:filters/filters-panel)
 
-选中图层时，每一行都会预览滤镜作用于该图层及其下方图层的效果。动画滤镜的图标前有一个标记。
+每一行都在固定示例图像上显示滤镜效果。动画滤镜的图标前有标记。
 
 顶部的菜单显示一个类别或**所有滤镜**。**搜索滤镜**在所选类别中按名称查找滤镜。
 

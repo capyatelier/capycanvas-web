@@ -24,7 +24,7 @@ Esegui una delle seguenti operazioni:
 
 ## Foto
 
-Una foto si apre come nuovo disegno con un livello Oggetto che prende il nome dal file. L'Oggetto conserva l'immagine con dimensioni, profilo colore e, per impostazione predefinita, profondità in bit propri. Salvare il disegno crea un file `.capy` e non sovrascrive mai l'immagine sorgente.
+Una foto si apre come un nuovo disegno con un livello di pittura che prende il nome dal file. Il disegno mantiene le dimensioni, il profilo colore e, per impostazione predefinita, la profondità di bit originali della foto. Il salvataggio del disegno crea un file `.capy` e non sovrascrive mai l'immagine sorgente.
 
 - Di una GIF o WebP animata si apre il primo fotogramma.
 - Una foto può misurare fino a 32768 pixel per lato.

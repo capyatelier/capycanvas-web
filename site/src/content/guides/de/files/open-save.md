@@ -23,7 +23,7 @@ Führen Sie eine der folgenden Aktionen aus:
 
 ## Fotos
 
-Ein Foto öffnet sich als neue Zeichnung mit einer nach der Datei benannten Objektebene. Das Objekt behält die eigene Größe, das Farbprofil und standardmäßig die Farbtiefe des Bilds bei. Beim Speichern der Zeichnung entsteht eine `.capy`-Datei; das Quellbild wird niemals überschrieben.
+Ein Foto wird als neue Zeichnung mit einer Malebene geöffnet, die nach der Datei benannt ist. Die Zeichnung behält die Originalgröße, das Farbprofil und standardmäßig die Bittiefe des Fotos bei. Beim Speichern wird eine `.capy`-Datei erstellt. Das Quellbild wird nie überschrieben.
 
 - Bei einem animierten GIF oder WebP öffnet sich das erste Einzelbild.
 - Ein Foto kann pro Seite bis zu 32768 Pixel groß sein.

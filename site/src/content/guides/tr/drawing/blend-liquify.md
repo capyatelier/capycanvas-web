@@ -29,6 +29,24 @@ Aşağıdakilerden birini yapın:
 Her karıştırıcının ayarları
 [Karıştırma, yayılma ve kıllar](/tr/docs/brushes/wet-media/) bölümündedir.
 
+### Kıl karıştırıcı
+
+**Kıl karıştırıcı** boyayı çizgiler halinde çeker. Bu numunenin sol ucu harmanlanmamıştır.
+
+![Kıl karıştırıcı sağdaki gölgeli boyayı çiziyor.](shot:examples/bristle-blender)
+
+### Dither karıştırıcı
+
+**Dither karıştırıcı**, bantları bir renk taklidi düzeninde karıştırır.
+
+![Dither karıştırıcı sağdaki gölgeli bantları karıştırıyor.](shot:examples/dither-blender)
+
+### Ebru
+
+**Ebru** boyayı kıvrımlar halinde kıvırır.
+
+![Ebru sağdaki gölgeli bantları kıvırıyor.](shot:examples/marbling)
+
 ## Sıvılaştır
 
 Aşağıdakilerden birini yapın:
@@ -55,6 +73,18 @@ Sıvılaştır'ın Uygula düğmesi yoktur. Her darbe katmanı değiştirir ve k
 başına bir geri alma adımıdır. Siz katmana boyayana, katmanı doldurana,
 filtreleyene, dönüştürene veya katmana yapıştırana kadar darbeler, katmanın ilk
 darbeden önceki piksellerini bozmayı sürdürür.
+
+### Kenar
+
+**Kenar** boyayı kontur çizgisine doğru çeker. Soldaki bantlar orijinal boyayı göstermektedir.
+
+![Kenar renkli bantları sağdaki yatay çizgiye doğru çekiyor.](shot:examples/liquify-edge)
+
+### Yeniden oluştur
+
+**Yeniden oluştur** fırçanın altındaki orijinal boyayı geri kazandırır. Burada bozuk bantların sağ yarısını geri yükler.
+
+![Solda bozuk bantlar ve sağda Yeniden oluştur ile onarılmış boya.](shot:examples/liquify-reconstruct)
 
 ## Sıvılaştırmayı ayarla ve Sıvılaştırmayı sıfırla
 

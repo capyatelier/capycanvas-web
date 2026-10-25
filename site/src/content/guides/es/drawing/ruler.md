@@ -68,7 +68,7 @@ Haz una de las siguientes acciones:
 
 - Elige **Ver > Mostrar reglas** o **Ver > Ajustar a reglas**.
 - Con la herramienta Regla activa, o con una guía seleccionada con Operación, selecciona **Mostrar reglas** o **Ajustar a reglas** en el panel **Herramienta**.
-- Selecciona **Guías** o **Ajustar** en la barra de la guía.
+- Elige **Más > Show rulers** o selecciona **Ajustar a guías** en la barra de guías.
 
 Los dos están activados de forma predeterminada. **Ajustar a reglas** no está
 disponible mientras las guías están ocultas.
@@ -79,7 +79,7 @@ Selecciona la guía y haz una de las siguientes acciones:
 
 - Pulsa **Supr** o **Retroceso**.
 - Selecciona **Eliminar regla** en el panel **Herramienta**.
-- Selecciona **Eliminar** en la barra de la guía.
+- Selecciona **Eliminar guía** en la barra de la guía.
 
 **Supr** y **Retroceso** solo eliminan una guía mientras la herramienta activa es
 Regla, Figura, Operación, Transformar o Recortar. Con otras herramientas, estas
@@ -92,16 +92,16 @@ bajo sus tiradores.
 
 | Botón | Acción |
 | --- | --- |
-| **Eliminar** | Elimina la guía. |
-| **Ajustar** | Activa o desactiva **Ajustar a reglas**. |
-| **Guías** | Muestra u oculta todas las guías. Al ocultarlas también se oculta la barra. |
+| **Eliminar guía** | Elimina la guía. |
+| **Ajustar a guías** | Activa o desactiva **Snap to rulers**. |
+| **Más > Show rulers** | Muestra u oculta todas las guías. Al ocultarlas también se oculta la barra. |
 | **Enderezar** | Inicia **Enderezar imagen según la guía**. Solo en una guía Recta. |
 | **Más** | Abre un menú con **Mostrar barra de acciones del lienzo**. |
 
 Si desactivas **Ver > Mostrar barra de acciones del lienzo**, la barra de la guía
 desaparece.
 
-![La barra de la guía bajo una guía Recta seleccionada, con Eliminar, Ajustar, Guías, Enderezar y Más.](shot:drawing/ruler-guide-bar)
+![La barra bajo una guía recta seleccionada, con Eliminar guía, Ajustar a guías, Enderezar y Más.](shot:drawing/ruler-guide-bar)
 
 ## Mover guías con Operación
 

@@ -99,6 +99,22 @@ export default async function input({ e, b, shoot, example }) {
     teardown: cancelCalibration,
   });
   assert.equal(await settings(), starting, 'Pressure calibration cancellation restores preferences');
+  const tilt = '#pen-tilt-dialog';
+  await shoot('pen/tilt-calibration', {
+    target: tilt,
+    setup: async () => {
+      await e.invoke('pen_tilt');
+      await e.wait(`!!layerApp.state().tilt_calibration && !!document.querySelector('${tilt}')`);
+      await e.draw('M320 600 L450 600', { pressure: .5, tiltX: 42, tiltY: 18 });
+      await e.wait('layerApp.state().tilt_calibration.ready');
+      await pressButton(tilt, 'More sensitive');
+    },
+    teardown: async () => {
+      await pressButton(tilt, 'Cancel');
+      await e.wait(`!layerApp.state().tilt_calibration && !document.querySelector('${tilt}')`);
+    },
+  });
+  assert.equal(await settings(), starting, 'Tilt calibration cancellation restores preferences');
   await e.workspace('illustrator');
 
   const cursor = '.preference-choice:has(#setting-cursor)';

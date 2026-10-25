@@ -25,13 +25,19 @@ A tool has one bubble, and dragging the tool out again moves it. Commands such a
 
 ## Halo and chooser
 
-A bubble comes out selected, with its settings halo open if the tool has settings. Each tap moves it through halo, chooser and closed, except that a brush bubble has no chooser. Tapping an unselected tool's bubble selects the tool first.
+Selecting a tool bubble opens its settings halo. Selecting it again opens the chooser; a brush bubble opens or closes its halo instead. Choosing a tool or brush from the chooser opens its halo.
 
 Drag along a halo arc to change a setting, and double-tap or double-click the arc to reset it. The chooser rings the tool's media around the bubble: select a medium to fan out its brushes, then select a brush.
 
 Hold the bubble or right-click it to open its menu. Its check items put settings in the halo, up to six for each brush.
 
 ![A bubble's chooser with the Watercolor medium selected and its brushes beside it.](shot:bubbles/dial-chooser)
+
+## Show Sliders
+
+Turn off **Show Sliders** in a bubble’s menu to hide the settings arcs. The setting applies to tool, medium, brush, and **Color Picker** bubbles in the current workspace, and stays saved after you put them back. Choosing a tool or brush leaves its sliders hidden while this setting is off.
+
+![The Show Sliders item in a tool bubble’s menu.](shot:bubbles/show-sliders)
 
 ## Color ring
 

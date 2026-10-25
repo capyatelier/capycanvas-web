@@ -89,10 +89,10 @@ Sie können einen Pfad Ankerpunkt für Ankerpunkt zeichnen.
 - Klicken Sie, um einen Eckpunkt hinzuzufügen. Drücken und ziehen Sie, um Griffe für einen glatten Punkt herauszuziehen, oder halten Sie **Alt** gedrückt, um nur den ausgehenden Griff zu ziehen.
 - Halten Sie **Umschalt** gedrückt, um den nächsten Ankerpunkt in 45°-Schritten vom letzten zu setzen.
 - Klicken Sie auf den ersten Ankerpunkt, um den Pfad zu schließen.
-- Wählen Sie **Abschließen** in der Leinwandleiste oder drücken Sie **Eingabe**, um den Pfad hinzuzufügen. **Abbrechen** oder **Escape** verwirft ihn.
-- **Punkt entfernen** oder **Rücktaste** entfernt den letzten Ankerpunkt, ebenso **Rückgängig**.
+- Wählen Sie **Pfad abschließen** in der Leinwandleiste oder drücken Sie **Eingabe**, um den Pfad hinzuzufügen. **Pfad verwerfen** oder **Escape** verwirft ihn.
+- **Letzten Punkt entfernen** oder **Rücktaste** entfernt den letzten Ankerpunkt, ebenso **Rückgängig**.
 
-![Die Leinwandleiste beim Zeichnen eines Pfads mit Punkt entfernen, Abbrechen und Abschließen.](shot:vector/path-bar)
+![Die Leinwandleiste, während ein Pfad gezeichnet wird, mit Letzten Punkt entfernen, Pfad verwerfen und Pfad abschließen.](shot:vector/path-bar)
 
 Der Pfad verwendet den aktuellen Modus, die **Linienbreite** und die Farben, mit spitzen Ecken und flachen Enden. Auf einer Vektorebene ist er nach dem Abschließen ausgewählt, und ein Pfad, der am offenen Ende eines ausgewählten Pfads beginnt, setzt diesen fort.
 

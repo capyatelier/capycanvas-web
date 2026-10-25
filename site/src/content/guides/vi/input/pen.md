@@ -12,6 +12,10 @@ Thiết lập bút nằm trên trang **Bút và nhập liệu** của **Chỉnh 
 
 Chọn **Điều chỉnh…** cạnh **Lực nhấn bút** để chỉnh đường cong lực nhấn và thử trên khung vẽ hiện tại. Đường cong áp dụng cho mọi cọ và công cụ nhạy lực nhấn; nét đã vẽ không thay đổi. Xem [Lực nhấn bút](/vi/docs/input/pen-pressure/).
 
+## Độ nghiêng bút
+
+Chọn **Điều chỉnh…** bên cạnh **Độ nghiêng bút** để thay đổi đường cong và hướng nghiêng cho bút của bạn. Xem [Nghiêng bút](/vi/docs/input/pen-tilt/).
+
 ## Dự đoán nét vẽ
 
 Dự đoán nét vẽ vẽ trước một đoạn ngắn của nét phía trước đầu bút, và nét thật thay

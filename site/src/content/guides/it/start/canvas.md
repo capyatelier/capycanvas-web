@@ -84,6 +84,12 @@ Esegui una delle seguenti operazioni:
 Per tornare a 0°, premi **5** o seleziona **Reimposta rotazione** nel menu
 dell'indicatore dello zoom.
 
+## Aggancia rotazione
+
+**Aggancia rotazione** mantiene la vista vicino a 0°, 90°, 180° e 270° mentre ruoti con un gesto, lo strumento **Ruota vista** o un cursore. È attivo per impostazione predefinita.
+
+Attivalo o disattivalo in **Visualizza > Aggancia rotazione** o nel menu di lettura dello zoom. **Blocca rotazione** interrompe completamente i movimenti di rotazione.
+
 ## Riflettere la vista
 
 Esegui una delle seguenti operazioni:

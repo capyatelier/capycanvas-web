@@ -44,9 +44,7 @@ En una capa vectorial, **Operación** selecciona, mueve, escala y gira trazados 
 Puedes mover una copia de los píxeles seleccionados y dejar los originales en su
 sitio.
 
-Activa **Dejar copia** en el panel Herramienta o en la
-[barra de selección](/es/docs/selections/working/). Mantén pulsada **Alt** al
-empezar a arrastrar para hacer lo contrario en ese arrastre.
+Activa **Dejar copia** en el panel **Herramienta** o elige **Más > Dejar copia** en la [barra de selección](/es/docs/selections/working/). Mantén **Alt** al empezar a arrastrar para hacer lo contrario solo en ese arrastre.
 
 ## Transformar
 
@@ -62,14 +60,14 @@ Con una selección, **Transformar** cambia los píxeles seleccionados de la capa
 la máscara activa. Sin selección, cambia las capas seleccionadas. Aparecen un
 cuadro con tiradores y la barra del lienzo.
 
-Para terminar, selecciona **Aplicar** o pulsa **Intro**. **Cancelar** o **Escape**
+Para terminar, selecciona **Aplicar transformación** o pulsa **Intro**. **Cancelar transformación** o **Escape**
 descartan la transformación, igual que **Deshacer** mientras transformas capas.
 
 Para transformar varias capas, quita antes la selección.
 
 ## Tiradores
 
-En **Libre** y **Uniforme**:
+Al escalar:
 
 - Arrastra dentro del cuadro para moverlo. Mantén pulsada **Mayús** para moverlo solo en horizontal o en vertical.
 - Arrastra un tirador de esquina o de lado para escalar desde el lado opuesto. Mantén pulsada **Mayús** para conservar las proporciones, o **Alt** para escalar respecto al pivote.
@@ -94,12 +92,11 @@ En todos los modos:
 
 ## Barra de transformación
 
-![La barra del lienzo de una transformación, con Modo, Ajustar, los botones de voltear y girar, Restablecer, Interpolación, Cancelar y Aplicar.](shot:transform/transform-bar)
+![La barra de transformación con modos, inversión, ajuste, Cancelar transformación y Aplicar transformación.](shot:transform/transform-bar)
 
 ### Modo
 
-**Libre**, **Uniforme**, **Distorsionar** o **Deformar**. **Uniforme** conserva
-las proporciones. **Libre** es el valor predeterminado.
+Selecciona **Escalar**, **Distorsionar** o **Deformar** en la barra. **Mantener proporciones** mantiene la proporción al escalar y **Perspectiva** refleja el arrastre de una esquina en la contigua en **Distorsionar**. El valor predeterminado es **Escalar**.
 
 ### Tamaño original
 
@@ -119,29 +116,24 @@ Con **Distorsionar**, refleja cada arrastre de esquina en la esquina vecina.
 
 Con **Deformar**:
 
-- **Dividir cuadrícula**: elige **Dividir verticalmente**, **Dividir horizontalmente** o **Dividir en cruz** y después toca la deformación para añadir ahí una línea de cuadrícula sin cambiar la forma. **Escape** cancela la división. Una cuadrícula admite hasta 32 celdas en cada dirección.
-- **Seleccionar puntos**: toca puntos para seleccionarlos y moverlos juntos.
-- **Restablecer cuadrícula**: reemplaza la deformación por una cuadrícula recta.
-- **Cuadrícula**: **3 × 3** (el valor predeterminado), **4 × 4** o **5 × 5**. Disponible hasta que cambias la forma.
+- **Cuadrícula** abre **3 × 3** (predeterminado), **4 × 4**, **5 × 5** y los comandos para dividir la cuadrícula. El tamaño puede elegirse antes de cambiar la forma.
+- Elige **Dividir verticalmente**, **Dividir horizontalmente** o **Dividir en cruz** y toca la malla para añadir una línea sin cambiar la forma. **Escape** cancela la división. Una cuadrícula admite hasta 32 celdas en cada dirección.
+- **Seleccionar puntos** selecciona puntos para moverlos juntos.
+- **Restablecer cuadrícula** sustituye la malla por una cuadrícula recta.
 
-![La barra del lienzo en el modo Deformar, con el menú Dividir verticalmente, Seleccionar puntos, Restablecer cuadrícula y el menú 3 × 3.](shot:transform/warp-bar)
+![La barra de transformación en Deformar, con Cuadrícula y Seleccionar puntos.](shot:transform/warp-bar)
 
 ### Botones de voltear y girar
 
-Los botones de icono **Voltear horizontalmente**, **Voltear verticalmente**,
-**Girar 90° a la izquierda** y **Girar 90° a la derecha** reflejan o giran el
-contenido respecto al pivote.
+**Voltear horizontalmente** está en la barra. **Más** contiene **Voltear verticalmente**, **Girar 90° a la izquierda** y **Girar 90° a la derecha**. Reflejan o giran el contenido alrededor del pivote.
 
-### Restablecer
+### Restablecer transformación
 
-Deshace todos los cambios hechos en esta transformación y la mantiene abierta.
-**Modo** vuelve a **Libre**.
+Elige **Restablecer transformación** en **Más** para deshacer todos los cambios de la transformación actual. La transformación sigue abierta y vuelve a **Escalar**.
 
 ### Interpolación
 
-Define cómo se remuestrean los píxeles: **Más cercano**, **Bilineal**, **Bicúbica**
-o **Lanczos**. **Bilineal** es el valor predeterminado en **Libre** y
-**Uniforme**, y **Bicúbica** en **Distorsionar** y **Deformar**.
+Elige **Interpolation** en **Más** para establecer el remuestreo: **Vecino más cercano**, **Bilineal**, **Bicúbica** o **Lanczos**. El valor predeterminado al escalar es **Bilineal**, y en **Distorsionar** y **Deformar**, **Bicúbica**.
 
 ## Valores de transformación en el panel Herramienta
 
@@ -149,7 +141,7 @@ El panel Herramienta, y la barra Opciones de herramienta en Foto, muestran los
 valores de una transformación abierta, salvo en **Deformar**.
 
 - **Anclaje de posición**: **X** e **Y**, en píxeles. La cuadrícula de anclaje que hay encima elige a qué punto del cuadro corresponden.
-- **Escala**: **Anchura** y **Altura**, en porcentaje. **Uniforme** los mantiene vinculados.
+- **Escalar**: **Anchura** y **Altura**, en porcentaje. **Mantener proporciones** los mantiene vinculados.
 - **Rotación**: **Ángulo**, de −180° a 180°.
 - **Inclinación**: **Inclinación**, de −85° a 85°.
 
@@ -173,7 +165,7 @@ Haz una de las siguientes acciones:
 - Elige **Capa > Ajustes de capa > Aplicar transformación**.
 
 Mientras se aplica, una barra en la parte inferior del lienzo dice «Aplicando
-transformación…» y muestra **Cancelar**.
+transformación…» y muestra **Cancelar transformación**.
 
 ## Repetir transformación
 
@@ -184,6 +176,7 @@ y las transformaciones de píxeles seleccionados no se repiten.
 ## Imágenes colocadas
 
 Cuando pegas una imagen de otra aplicación o eliges
-**Archivo > Importar imagen como capa…**, la imagen se abre en el cuadro de
-transformación. **Aplicar** coloca la imagen y **Cancelar** la quita. Hasta que
+**Archivo > Import Image as
+Layer…**, la imagen se abre en el cuadro de
+transformación. **Aplicar transformación** coloca la imagen y **Cancelar transformación** la quita. Hasta que
 elijas una de las dos opciones, los demás comandos no están disponibles.

@@ -36,8 +36,8 @@ Foto yang sudah diedit memiliki lapisan berikut, dari atas ke bawah:
 | **Vibransi** | Menaikkan vibransi seluruh foto |
 | **Kurva** | Kurva S untuk seluruh foto |
 | *Retouch* | Goresan pemulih |
-| lapisan Objek | Foto, dinamai sesuai berkasnya |
+| lapisan lukis | Foto, dinamai sesuai berkasnya |
 
-Tidak ada yang dilukis di lapisan Objek.
+Tidak ada yang dilukis di lapisan lukis.
 
 Tahap pertama: [Membuka dan memangkas](/id/docs/photo/crop/).

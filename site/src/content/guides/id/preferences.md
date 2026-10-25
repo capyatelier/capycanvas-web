@@ -140,8 +140,7 @@ Membuka pustaka profil warna. Lihat
 
 ## Pena & Masukan
 
-Pengaturan di halaman ini dijelaskan di [Pena](/id/docs/input/pen/) dan
-[Gestur sentuh](/id/docs/input/touch/).
+Pengaturan pada halaman ini dijelaskan dalam [Pena](/id/docs/input/pen/), [Kemiringan pena](/id/docs/input/pen-tilt/), dan [Gerakan sentuh](/id/docs/input/touch/).
 
 ## Pintasan Papan Ketik
 

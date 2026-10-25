@@ -29,9 +29,9 @@ The bar sits beside the object, or at the bottom edge of the canvas. From left
 to right it has:
 
 - A caption, such as "Quick Mask" or "Transform Outline".
-- The buttons. A dimmed button is unavailable; select it to see the reason.
+- The buttons. Hover over an icon to read its name. A dimmed button is unavailable; select it to see the reason.
 - **More**, with the buttons that don't fit, then the **Select** menu for a selection or the **Layer** menu for a mask.
-- The button that finishes, such as **Apply** or **Exit**.
+- The button that finishes, such as **Apply transform** or **Exit**.
 
 A bar beside an object hides while you touch the canvas or move the view.
 
@@ -53,21 +53,15 @@ but not beside one that Undo or Redo brings back. Brushes, the fill tools,
 
 ![The selection bar below a rectangular selection.](shot:selections/working-selection-bar)
 
-- **Deselect** and **Invert**: see the Select menu below.
-- **Leave Copy**: with **Operation** only, see [Move and Transform](/docs/transform/move-transform/).
-- **Copy to Layer**: **Copy Selection to New Layer** or **Cut Selection to New Layer**.
-- **Copy**: **Copy**, **Copy Merged** or **Cut**, see [Copy and paste](/docs/transform/clipboard/).
-- **Transform**: transforms the selected pixels.
-- **Refine**: the refine commands and **Transform Outline**.
-- **Mask**: masks the active layer to the selection.
-- **Adjust**: adds a filter that uses the selection as its mask, see [How filters apply](/docs/filters/how-filters-apply/).
-- **Fill**: **Fill selection**.
-- **Clear**: **Clear Selected Pixels** or **Clear Outside Selection**.
-- **Crop**: **Crop Canvas to Selection**, see [Crop](/docs/transform/crop/).
-- **Quick Mask**: see [Quick Mask](/docs/selections/quick-mask/).
-- **Save**: **Save as Selection Layer**, see [Selection layers](/docs/selections/selection-layers/).
+- **Transform** changes the selected pixels.
+- **Copy** opens the clipboard and copy-to-layer commands.
+- **Fill selection** fills the selected pixels; **Clear Selected Pixels** erases them.
+- **Adjust** adds a filter masked to the selection.
+- **Mask** opens the mask commands and saved-selection commands.
+- **Invert selection** and **Refine** change the selection outline.
+- **Deselect pixels** clears the selection.
 
-On a narrow bar, the last buttons, such as **Quick Mask** and **Save**, move into **More**.
+**More** holds **Clear Outside Selection** and **Crop Canvas to Selection**. With **Operation** active, it also holds **Leave Copy**. Buttons that do not fit also move into **More**. The menu ends with the **Select** menu.
 
 ## Select menu
 
@@ -143,7 +137,7 @@ Do one of the following:
 
 - Choose **Edit > Fill selection**, **Clear Selected Pixels** or **Clear Outside Selection**.
 - Press **Shift+Backspace** to fill, or **Delete** or **Backspace** to clear the selected pixels.
-- Select **Fill**, or **Clear** and a command, on the selection bar.
+- Select **Fill selection** or **Clear Selected Pixels** on the selection bar, or choose **More > Clear Outside Selection**.
 - In Paint, select **Fill selection** in the Commands toolbar.
 - Open the layer's menu and choose **Pixel Selection > Fill Selection**.
 
@@ -160,7 +154,7 @@ Do one of the following:
 
 - Choose **Layer > New > Copy Selection to New Layer** or **Layer > New > Cut Selection to New Layer**.
 - Press **Ctrl+J** to copy or **Ctrl+Shift+J** to cut.
-- Select **Copy to Layer** on the selection bar and choose a command.
+- Select **Copy** on the selection bar and choose a command.
 
 The new layer is named after the original, for example *Ribbon copy*, and
 keeps its opacity, visibility and blend mode. The selection is removed until
@@ -176,7 +170,7 @@ You can add a mask to the active layer that shows only the selection.
 Do one of the following:
 
 - Open the layer's menu and choose **Mask > Mask: reveal selection**, or **Mask > Mask: hide selection** to hide the selected area.
-- Select **Mask** on the selection bar.
+- Select **Mask** on the selection bar and choose a mask command.
 
 If the layer already has a mask, the selection replaces the existing mask.
 The selection is removed, and the mask opens for editing (see

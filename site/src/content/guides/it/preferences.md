@@ -145,8 +145,7 @@ Apre la libreria dei profili colore. Vedi
 
 ## Penna e input
 
-Le impostazioni di questa pagina sono descritte in [Penna](/it/docs/input/pen/) e
-[Gesti touch](/it/docs/input/touch/).
+Le impostazioni di questa pagina sono descritte in [Penna](/it/docs/input/pen/), [Inclinazione penna](/it/docs/input/pen-tilt/) e [Movimenti tattili](/it/docs/input/touch/).
 
 ## Scorciatoie da tastiera
 

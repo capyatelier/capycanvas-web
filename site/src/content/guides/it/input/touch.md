@@ -23,6 +23,8 @@ Mentre la penna è sulla tela, le dita non spostano la tela. Un dito su una
 maniglia di trasformazione o di ritaglio, o sulla sorgente del **Timbro clone**,
 trascina invece la maniglia o la sorgente.
 
+**Aggancia rotazione** è attivo per impostazione predefinita e mantiene la visuale vicino ai quarti di giro. Disattivalo in **Visualizza > Aggancia rotazione** per la rotazione libera.
+
 ## Prelevare un colore
 
 Tieni fermo un dito sulla tela per prelevare il colore sotto di esso. Sopra il

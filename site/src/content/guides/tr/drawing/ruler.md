@@ -69,7 +69,7 @@ Aşağıdakilerden birini yapın:
 
 - **Görünüm > Cetvelleri göster** veya **Görünüm > Cetvellere hizala** komutunu seçin.
 - Cetvel aracı etkinken veya İşlem ile bir kılavuz seçiliyken **Araç** panelinde **Cetvelleri göster** veya **Cetvellere hizala** seçeneğini seçin.
-- Kılavuz çubuğunda **Kılavuzlar** veya **Hizala** düğmesini seçin.
+- **Diğer > Show rulers** seçeneğini seçin veya kılavuz çubuğunda **Kılavuzlara hizala** seçeneğini seçin.
 
 İkisi de varsayılan olarak açıktır. Kılavuzlar gizliyken **Cetvellere hizala**
 kullanılamaz.
@@ -80,7 +80,7 @@ Kılavuzu seçin, ardından aşağıdakilerden birini yapın:
 
 - **Delete** veya **Backspace** tuşuna basın.
 - **Araç** panelinde **Cetveli sil** düğmesini seçin.
-- Kılavuz çubuğunda **Sil** düğmesini seçin.
+- Kılavuz çubuğunda **Kılavuzu sil** düğmesini seçin.
 
 **Delete** ve **Backspace** tuşları kılavuzu yalnızca Cetvel, Şekil, İşlem,
 Dönüştür veya Kırp etkin araçken siler. Diğer araçlarla bu tuşlar **Seçili
@@ -93,16 +93,16 @@ Cetvel veya İşlem aracıyla bir kılavuz seçtiğinizde tutamaçlarının alt�
 
 | Düğme | Eylem |
 | --- | --- |
-| **Sil** | Kılavuzu siler. |
-| **Hizala** | **Cetvellere hizala** ayarını açar veya kapatır. |
-| **Kılavuzlar** | Tüm kılavuzları gösterir veya gizler. Gizlemek çubuğu da gizler. |
+| **Kılavuzu sil** | Kılavuzu siler. |
+| **Kılavuzlara hizala** | **Snap to rulers** ayarını açar veya kapatır. |
+| **Diğer > Show rulers** | Tüm kılavuzları gösterir veya gizler. Gizlemek çubuğu da gizler. |
 | **Düzelt** | **Görüntüyü kılavuza göre düzelt** işlemini başlatır. Yalnızca Düz kılavuz için. |
 | **Diğer** | **Tuval eylem çubuğunu göster** içeren bir menü açar. |
 
 **Görünüm > Tuval eylem çubuğunu göster** kapatıldığında kılavuz çubuğu
 kaldırılır.
 
-![Seçili bir Düz kılavuzun altındaki kılavuz çubuğu: Sil, Hizala, Kılavuzlar, Düzelt ve Diğer.](shot:drawing/ruler-guide-bar)
+![Kılavuzu sil, Kılavuzlara hizala, Düzelt ve Diğer içeren seçilmiş bir Düz kılavuzunun altındaki kılavuz çubuğu.](shot:drawing/ruler-guide-bar)
 
 ## İşlem ile kılavuzları taşıma
 

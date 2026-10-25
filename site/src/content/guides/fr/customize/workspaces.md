@@ -32,6 +32,8 @@ activez ou désactivez des espaces de travail dans la liste
 L’espace de travail actif a toujours un bouton. Les espaces de travail que vous
 créez sont ajoutés à la barre de titre.
 
+Dans la boîte de dialogue **Espaces de travail**, sélectionnez l’épingle à côté d’un espace de travail pour afficher ou masquer son bouton dans la barre de titre.
+
 ![La liste Afficher dans la barre supérieure sous les boutons des espaces de travail.](shot:workspaces/show-in-top-bar)
 
 ## Nouvel espace de travail…
@@ -41,7 +43,7 @@ Vous pouvez enregistrer la disposition actuelle comme nouvel espace de travail.
 Effectuez l’une des opérations suivantes :
 
 - Choisissez **Fenêtre > Espaces de travail > Nouvel espace de travail…**.
-- Sélectionnez **Nouvel espace de travail** (**+**) dans la boîte de dialogue **Espaces de travail**.
+- Sélectionnez **Nouvel espace de travail** (**+**) sous la liste dans la boîte de dialogue **Espaces de travail**.
 
 Saisissez un **Nom** et sélectionnez **Créer et activer**. Chaque espace de
 travail doit avoir un nom qui lui est propre.
@@ -53,14 +55,15 @@ ouvrir la boîte de dialogue **Espaces de travail**. Sélectionner un espace de
 travail affiche un aperçu de sa disposition derrière la boîte de dialogue. Pour
 y passer, sélectionnez **Passer à l’espace de travail**.
 
-- Faites glisser un espace de travail par sa poignée pour réorganiser la liste. La barre de titre utilise le même ordre.
-- Sélectionnez **⋯** à côté d’un espace de travail, ou cliquez dessus avec le bouton droit, pour accéder à **Afficher dans la barre supérieure**, **Monter**, **Descendre**, **Renommer…** et **Supprimer…**.
+- Faites glisser la poignée à droite d'un espace de travail pour réorganiser la liste. La barre de titre utilise le même ordre.
+- Faites un clic droit ou maintenez un espace de travail pour accéder à **Renommer…**, **Supprimer…**, **Monter** et **Descendre**. Le nom se modifie dans la ligne ; appuyez sur **Entrée** pour le garder ou sur **Escape** pour annuler.
+- Sélectionnez un espace de travail, puis sélectionnez **Supprimer** sous la liste. Sur un écran tactile, faites glisser sa ligne pour afficher **Supprimer**.
 
 Pour copier un espace de travail, passez-y et choisissez
 **Nouvel espace de travail…**. **Croquis**, **Peinture** et **Photo** ne peuvent être ni renommés ni
 supprimés, et la suppression d’un espace de travail est définitive.
 
-![La boîte de dialogue Espaces de travail avec les options d’un espace de travail ouvertes.](shot:workspaces/manage-dialog)
+![La boîte de dialogue Espaces de travail avec le menu contextuel d'un espace de travail ouvert.](shot:workspaces/manage-dialog)
 
 ## Historique des dispositions…
 

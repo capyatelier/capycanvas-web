@@ -89,18 +89,17 @@ Klik setiap sudut bentuk. Untuk menyelesaikan, lakukan salah satu langkah beriku
 
 - Klik sudut pertama sekali lagi.
 - Tekan **Enter**.
-- Pilih **Selesai** di bilah kanvas, atau **Selesaikan seleksi** di panel Alat.
+- Pilih **Selesaikan seleksi** di bilah kanvas, atau **Selesaikan seleksi** di panel Alat.
 
 Poligon memerlukan sedikitnya tiga sudut.
 
-- Untuk menghapus sudut terakhir, tekan **Backspace** atau **Delete**, atau pilih **Hapus Titik** di bilah kanvas atau **Hapus titik terakhir** di panel Alat.
-- Untuk membatalkan poligon, tekan **Escape**, atau pilih **Batal** di bilah kanvas atau **Batalkan seleksi** di panel Alat.
+- Untuk menghapus sudut terakhir, tekan **Backspace** atau **Hapus**, atau pilih **Hapus titik terakhir** di bilah kanvas atau **Hapus titik terakhir** di panel Alat.
+- Untuk membatalkan poligon, tekan **Escape**, atau pilih **Batalkan seleksi** di bilah kanvas atau **Batalkan seleksi** di panel Alat.
 - Untuk mengepaskan tepi berikutnya ke kelipatan 45°, tahan **Shift**. Untuk mengepaskan setiap tepi, aktifkan **Batasi tepi ke 45°** di panel Alat.
 
-Selama Anda menempatkan sudut, [bilah kanvas](/id/docs/selections/working/) di
-bagian bawah kanvas menampilkan **Hapus Titik**, **Batal**, dan **Selesai**.
+Saat Anda menempatkan sudut, [bilah kanvas](/id/docs/selections/working/) di bagian bawah kanvas menampilkan **Hapus titik terakhir**, **Batalkan seleksi**, dan **Selesaikan seleksi**.
 
-![Bilah kanvas untuk poligon, dengan Hapus Titik, Batal, dan Selesai.](shot:selections/tools-polygon-bar)
+![Bilah kanvas untuk poligon, dengan Hapus titik terakhir, Batalkan seleksi, dan Selesaikan seleksi.](shot:selections/tools-polygon-bar)
 
 ## Seleksi otomatis dan Seleksi berdasarkan warna
 

@@ -29,6 +29,24 @@ der Standard-Mischpinsel.
 Die Einstellungen jedes Mischpinsels stehen unter
 [Mischen, Farbausbreitung und Borsten](/de/docs/brushes/wet-media/).
 
+### Borsten-Mischpinsel
+
+**Borsten-Mischpinsel** zieht Farbe in Streifen. Das linke Ende dieser Probe ist ungemischt.
+
+![Borsten-Mischpinsel streift die schattierte Farbe rechts.](shot:examples/bristle-blender)
+
+### Dither-Mischpinsel
+
+**Dither-Mischpinsel** mischt die Bänder zu einem Dither-Muster.
+
+![Dither-Mischpinsel mischt die schattierten Bänder rechts.](shot:examples/dither-blender)
+
+### Marmorieren
+
+**Marmorieren** kräuselt die Farbe zu Wirbeln.
+
+![Marmorieren kräuselt die schattierten Bänder auf der rechten Seite.](shot:examples/marbling)
+
 ## Verflüssigen
 
 Führen Sie eine der folgenden Aktionen aus:
@@ -55,6 +73,18 @@ Verflüssigen hat keine Schaltfläche „Anwenden“. Jeder Strich verändert di
 ist ein eigener Schritt zum Rückgängigmachen. Striche verformen weiter die Pixel, die
 die Ebene vor dem ersten Strich hatte, bis Sie auf der Ebene malen, füllen, filtern,
 transformieren oder in sie einfügen.
+
+### Kante
+
+**Kante** zieht Farbe zur Strichlinie. Die Streifen links zeigen die ursprüngliche Farbe.
+
+![Kante Ziehen Sie die farbigen Bänder zu einem horizontalen Strich auf der rechten Seite.](shot:examples/liquify-edge)
+
+### Wiederherstellen
+
+**Wiederherstellen** stellt die ursprüngliche Farbe unter dem Pinsel wieder her. Hier wird die rechte Hälfte der verzerrten Bänder wiederhergestellt.
+
+![Verformte Farbstreifen links und mit Wiederherstellen wiederhergestellte Farbe rechts.](shot:examples/liquify-reconstruct)
 
 ## Verflüssigen anpassen und Verflüssigen zurücksetzen
 

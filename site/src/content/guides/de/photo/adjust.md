@@ -39,7 +39,7 @@ Hintergrund grau. Das Beispiel hellt sie nur im Stein auf.
 1. Drücken Sie **M**, oder wählen Sie in der Werkzeugleiste Werkzeuge **Lassoauswahl** aus, und ziehen Sie eine Linie um den Stein.
 2. Wählen Sie **Auswahl > Auswahlkante weichzeichnen…**, oder wählen Sie in der Auswahlleiste **Verfeinern** aus und wählen Sie **Weiche Kante…** ([Mit Auswahlen arbeiten](/de/docs/selections/working/)).
 3. Stellen Sie **Radius der weichen Kante** auf 20 px und wählen Sie **Anwenden** aus.
-4. Wählen Sie **Maske** in der Auswahlleiste.
+4. Wählen Sie **Maske > Maske: Auswahl zeigen** in der Auswahlleiste.
 
 ![Die Auswahlleiste mit Maske neben der Auswahl um den Felsen.](shot:photo/adjust-bar)
 

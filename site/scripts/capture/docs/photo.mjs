@@ -15,7 +15,7 @@ const rows = { selector: '#layer-rows .layer-row', all: true };
 const thumbnailsCurrent = `(()=>{const state=layerApp.state(),epoch=String(state.document_file.epoch),list=document.querySelector('#layer-rows').getBoundingClientRect();
   return state.layers.every(layer=>{const row=document.querySelector('#layer-rows .layer-row[data-layer="'+layer.id+'"]');if(!row)return true;const box=row.getBoundingClientRect();
     if(box.height===0||box.bottom<Math.max(0,list.top)||box.top>innerHeight)return true;const [content,mask]=[...row.querySelectorAll('.layer-thumbnail')].map(b=>b.querySelector('canvas'));
-    return (!layer.has_thumbnail||content?.dataset.previewRevision===epoch+':'+String(layer.paint_revision))&&(!layer.has_mask||mask?.dataset.previewRevision===epoch+':'+String(layer.mask_revision));});})()`;
+    return (!layer.has_thumbnail||!!layer.fill_color||content?.dataset.previewRevision===epoch+':'+String(layer.paint_revision))&&(!layer.has_mask||mask?.dataset.previewRevision===epoch+':'+String(layer.mask_revision));});})()`;
 const analysed = `layerApp.state().histogram.status==='Exact'&&!String(layerApp.state().layer_properties?.description??'').includes('Updating')`;
 const curveAnalysed = `!/Updating|Preview/.test(document.querySelector('${curvesPanel} .scope-footer')?.textContent??'Updating')`;
 
@@ -245,7 +245,7 @@ export default async function photoTutorial({ e, b, shoot, message, review }) {
     maxWidth: 1920,
     ready: `${barKind('selection')}&&${command('mask_selection')}?.enabled`,
   });
-  await press(`${bar} [data-command="mask_selection"]`);
+  await e.invoke('mask_selection');
   await e.wait(`layerApp.state().layers.length===${count}&&!layerApp.state().layer_tools.has_selection&&layerApp.state().layer_tools.editing_layer.has_mask&&Number(layerApp.state().layer_tools.editing_layer.id)===${lift}`);
   await checkShadows();
   const finished = await layers();

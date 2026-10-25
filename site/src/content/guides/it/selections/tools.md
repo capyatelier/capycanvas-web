@@ -96,18 +96,17 @@ Fai clic su ogni angolo della forma. Per terminare, esegui una delle seguenti op
 
 - Fai di nuovo clic sul primo angolo.
 - Premi **Invio**.
-- Seleziona **Termina** nella barra azioni della tela, o **Termina selezione** nel pannello Strumento.
+- Seleziona **Termina selezione** nella barra azioni della tela, o **Termina selezione** nel pannello Strumento.
 
 Un poligono richiede almeno tre angoli.
 
-- Per rimuovere l'ultimo angolo, premi **Backspace** o **Canc**, oppure seleziona **Rimuovi punto** nella barra azioni della tela o **Rimuovi ultimo punto** nel pannello Strumento.
-- Per annullare il poligono, premi **Esc**, oppure seleziona **Annulla** nella barra azioni della tela o **Annulla selezione** nel pannello Strumento.
+- Per rimuovere l'ultimo angolo, premi **Backspace** o **Elimina**, oppure seleziona **Rimuovi ultimo punto** nella barra azioni della tela o **Rimuovi ultimo punto** nel pannello Strumento.
+- Per annullare il poligono, premi **Escape**, oppure seleziona **Annulla selezione** nella barra azioni della tela o **Annulla selezione** nel pannello Strumento.
 - Per vincolare il lato successivo a scatti di 45°, tieni premuto **Maiusc**. Per vincolare tutti i lati, attiva **Vincola bordi a 45°** nel pannello Strumento.
 
-Mentre posizioni gli angoli, la [barra azioni della tela](/it/docs/selections/working/)
-in fondo alla tela mostra **Rimuovi punto**, **Annulla** e **Termina**.
+Mentre posizioni gli angoli, la [barra dell'area di disegno](/it/docs/selections/working/) nella parte inferiore dell'area di disegno mostra **Rimuovi ultimo punto**, **Annulla selezione** e **Termina selezione**.
 
-![La barra azioni della tela per un poligono, con Rimuovi punto, Annulla e Termina.](shot:selections/tools-polygon-bar)
+![La barra di tela per un poligono, con Rimuovi ultimo punto, Annulla selezione e Termina selezione.](shot:selections/tools-polygon-bar)
 
 ## Selezione automatica e Seleziona per colore
 

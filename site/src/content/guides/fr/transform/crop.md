@@ -5,7 +5,7 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 ---
 
 Vous pouvez recadrer la toile selon un cadre avec l’outil **Recadrer**. Les pixels
-recadrés restent masqués sur leurs calques, sauf si vous activez **Supprimer la peinture recadrée**.
+recadrés restent masqués sur leurs calques, sauf si vous activez **Supprimer les pixels peints recadrés**.
 
 ## Recadrer la toile
 
@@ -27,11 +27,11 @@ en bas de la toile.
 Sur un écran tactile, seules les poignées réagissent au doigt. Un doigt posé à
 l’intérieur du cadre déplace la vue.
 
-Pour terminer, sélectionnez **Appliquer** ou appuyez sur **Entrée**. **Annuler** dans
-la barre, **Échap** et la commande **Annuler** abandonnent le recadrage. Dans tous
+Pour terminer, sélectionnez **Appliquer le recadrage** ou appuyez sur **Entrée**. **Annuler le recadrage** dans
+la barre, **Escape** et la commande **Annuler** abandonnent le recadrage. Dans tous
 les cas, l’outil utilisé auparavant revient.
 
-**Appliquer** recadre aussi les calques verrouillés. Vous ne pouvez pas commencer un
+**Appliquer le recadrage** recadre aussi les calques verrouillés. Vous ne pouvez pas commencer un
 recadrage pendant une transformation.
 
 ![Le cadre de recadrage sur la photo du terrarium, avec la barre d’actions de la toile en bas.](shot:transform/crop-bar)
@@ -45,7 +45,7 @@ cadre de ce rapport. **Libre** est la valeur par défaut.
 **Inverser l’orientation du recadrage**, le bouton à icône à côté de **Rapport**,
 fait passer le cadre du format paysage au format portrait, et inversement.
 
-Le rapport, la superposition et **Supprimer la peinture recadrée** sont conservés
+Le rapport, la superposition et **Supprimer les pixels peints recadrés** sont conservés
 pour le recadrage suivant.
 
 ![Le menu Rapport dans la barre de recadrage.](shot:transform/crop-ratio-menu)
@@ -57,9 +57,7 @@ compris les pixels situés au-delà de la toile. **Rapport** passe à **Libre**.
 
 ## Superposition
 
-Choisissez **Tiers**, **Grille**, **Diagonale** ou **Nombre d’or** dans
-**Superposition**. **Tiers** est la valeur par défaut. Appuyez sur **O** pendant le
-recadrage pour afficher la superposition suivante.
+Choisissez une superposition parmi **Plus > Superposition**. **Superposition de la règle des tiers** est la valeur par défaut. Appuyez sur **O** pendant le recadrage pour afficher la superposition suivante.
 
 ## Redresser
 
@@ -79,20 +77,18 @@ Pour redresser selon un repère, sélectionnez le repère, puis **Redresser** da
 barre d’actions de la toile (voir [Règles et repères](/fr/docs/drawing/ruler/)). Un
 recadrage s’ouvre, pivoté pour s’aligner sur le repère.
 
-## Supprimer la peinture recadrée
+## Supprimer les pixels peints recadrés
 
-Activez **Supprimer la peinture recadrée** pour supprimer les pixels situés hors du
+Activez **Plus > Supprimer les pixels peints recadrés** pour supprimer les pixels situés hors du
 cadre lors de l’application du recadrage. Les photos placées conservent leurs pixels
 d’origine. Désactivé par défaut.
 
 Un recadrage qui serait trop grand si les pixels masqués étaient conservés ne
-fonctionne qu’avec **Supprimer la peinture recadrée** activé.
+fonctionne qu’avec **Supprimer les pixels peints recadrés** activé.
 
-## Réinitialiser
+## Réinitialiser le recadrage
 
-**Réinitialiser** ramène le cadre à toute la toile, droit, et désactive
-**Redresser**. Si un rapport est choisi, le cadre devient le plus grand cadre de ce
-rapport.
+**Réinitialiser le recadrage** dans **Plus** renvoie le cadre sur toute la toile, à la verticale, et désactive **Redresser**. Avec un rapport choisi, la trame devient la plus grande trame de ce rapport.
 
 ## Réglages de recadrage dans le panneau Outil
 
@@ -112,7 +108,7 @@ Vous pouvez recadrer la toile sur les limites d’une sélection.
 Effectuez l’une des opérations suivantes :
 
 - Choisissez **Image > Recadrer la toile sur la sélection**.
-- Sélectionnez **Recadrer** sur la [barre de sélection](/fr/docs/selections/working/).
+- Choisissez **Plus > Recadrer la toile sur la sélection** dans la [barre de sélection](/fr/docs/selections/working/).
 
 Les pixels situés hors des limites de la sélection restent masqués sur leurs
 calques. Vous ne pouvez pas recadrer sur une sélection inversée.

@@ -95,18 +95,17 @@ opérations suivantes :
 
 - Cliquez de nouveau sur le premier sommet.
 - Appuyez sur **Entrée**.
-- Sélectionnez **Terminer** dans la barre d’actions de la toile, ou **Terminer la sélection** dans le panneau Outil.
+- Sélectionnez **Terminer la sélection** dans la barre d’actions de la toile, ou **Terminer la sélection** dans le panneau Outil.
 
 Un polygone a besoin d’au moins trois sommets.
 
-- Pour retirer le dernier sommet, appuyez sur **Retour arrière** ou **Supprimer**, ou sélectionnez **Supprimer le point** dans la barre d’actions de la toile ou **Retirer le dernier point** dans le panneau Outil.
-- Pour abandonner le polygone, appuyez sur **Échap**, ou sélectionnez **Annuler** dans la barre d’actions de la toile ou **Annuler la sélection** dans le panneau Outil.
+- Pour retirer le dernier sommet, appuyez sur **Retour arrière** ou **Supprimer**, ou sélectionnez **Retirer le dernier point** dans la barre d’actions de la toile ou **Retirer le dernier point** dans le panneau Outil.
+- Pour abandonner le polygone, appuyez sur **Escape**, ou sélectionnez **Annuler la sélection** dans la barre d’actions de la toile ou **Annuler la sélection** dans le panneau Outil.
 - Pour aligner le côté suivant par pas de 45°, maintenez **Maj**. Pour aligner tous les côtés, activez **Contraindre les bords à 45°** dans le panneau Outil.
 
-Pendant que vous placez les sommets, la [barre d’actions de la toile](/fr/docs/selections/working/),
-en bas de la toile, affiche **Supprimer le point**, **Annuler** et **Terminer**.
+Pendant que vous placez des coins, la [barre de canevas](/fr/docs/selections/working/) en bas du canevas affiche **Retirer le dernier point**, **Annuler la sélection** et **Terminer la sélection**.
 
-![La barre d’actions de la toile pour un polygone, avec Supprimer le point, Annuler et Terminer.](shot:selections/tools-polygon-bar)
+![Barre de canevas pour un polygone, avec Retirer le dernier point, Annuler la sélection et Terminer la sélection.](shot:selections/tools-polygon-bar)
 
 ## Sélection automatique et Sélection par couleur
 

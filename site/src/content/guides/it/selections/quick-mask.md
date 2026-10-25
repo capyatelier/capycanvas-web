@@ -56,10 +56,10 @@ I comandi che modificano il disegno, come **Svuota pixel selezionati** e
 La [barra azioni della tela](/it/docs/selections/working/) in fondo alla tela ha la
 didascalia «Maschera veloce»:
 
-- **Inverti**: **Inverti selezione**.
-- **Riempi** e **Svuota**: **Riempi maschera** riempie l'intera maschera, e **Svuota copertura selezione** svuota la maschera.
+- **Inverti selezione** scambia le aree selezionate e non selezionate.
+- **Riempi maschera** riempie l'intera maschera e **Svuota copertura selezione** la svuota.
 - **Perfeziona**: **Espandi…**, **Riduci…**, **Sfuma…**, **Bordo…** e **Smussa…**. **Trasforma contorno** qui non è disponibile.
-- **Salva**: **Salva come livello di selezione** (vedi [Livelli di selezione](/it/docs/selections/selection-layers/)).
+- **Salva come livello di selezione**: vedere [Livelli di selezione](/it/docs/selections/selection-layers/).
 - **Esci**: **Torna al disegno**.
 
 Con la barra azioni della tela nascosta, la barra della Maschera veloce non appare.

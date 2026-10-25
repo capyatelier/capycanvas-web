@@ -4,7 +4,7 @@ description: "Kırp aracıyla tuvali kırpma ve düzeltme."
 related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"]
 ---
 
-**Kırp** aracıyla tuvali bir çerçeveye göre kırpabilirsiniz. **Kırpılan boyayı sil**
+**Kırp** aracıyla tuvali bir çerçeveye göre kırpabilirsiniz. **Kırpılan boya piksellerini sil**
 seçeneğini açmadığınız sürece kırpılan pikseller kendi katmanlarında gizli
 olarak kalır.
 
@@ -27,11 +27,11 @@ için [tuval çubuğu](/tr/docs/selections/working/) tuvalin alt kenarında gör
 Dokunmatik ekranda parmağa yalnızca tutamaçlar yanıt verir. Çerçevenin içindeki
 parmak görünümü taşır.
 
-Bitirmek için **Uygula** düğmesini seçin veya **Enter** tuşuna basın. **İptal**,
+Bitirmek için **Kırpmayı uygula** düğmesini seçin veya **Enter** tuşuna basın. **Kırpmayı iptal et**,
 **Escape** ve **Geri al** kırpmayı atar. Her iki durumda da daha önce
 kullandığınız araca dönülür.
 
-**Uygula** kilitli katmanları da kırpar. Bir dönüştürme açıkken kırpmaya
+**Kırpmayı uygula** kilitli katmanları da kırpar. Bir dönüştürme açıkken kırpmaya
 başlayamazsınız.
 
 ![Teraryum fotoğrafındaki kırpma çerçevesi ve alt kenardaki tuval çubuğu.](shot:transform/crop-bar)
@@ -45,7 +45,7 @@ Tuval çubuğundaki **Oran** menüsünden **Serbest**, **Özgün**, **1:1**, **4
 **Oran** menüsünün yanındaki simge düğmesi **Kırpma yönünü değiştir**, çerçeveyi
 yatay ile dikey arasında çevirir.
 
-Oran, kaplama ve **Kırpılan boyayı sil** sonraki kırpmaya aktarılır.
+Oran, kaplama ve **Kırpılan boya piksellerini sil** sonraki kırpmaya aktarılır.
 
 ![Kırpma çubuğundaki Oran menüsü.](shot:transform/crop-ratio-menu)
 
@@ -56,9 +56,7 @@ görünür piksellerin sınırlarına ayarlar. **Oran** **Serbest** olarak deği
 
 ## Kaplama
 
-**Kaplama** menüsünden **Üçler**, **Izgara**, **Çapraz** veya **Altın oran**
-seçeneğini seçin. Varsayılan **Üçler** seçeneğidir. Kırparken sonraki kaplamayı
-göstermek için **O** tuşuna basın.
+**Diğer > Kaplama**'den bir katman seçin. **Üçler kuralı kaplaması** varsayılandır. Bir sonraki kaplamayı göstermek için kırpırken **O** tuşuna basın.
 
 ## Düzeltme
 
@@ -77,19 +75,18 @@ Bir kılavuza göre düzeltmek için kılavuzu seçin ve kılavuzun tuval çubu�
 **Düzelt** düğmesini seçin (bkz. [Cetveller ve kılavuzlar](/tr/docs/drawing/ruler/)).
 Kılavuzla aynı hizaya döndürülmüş bir kırpma açılır.
 
-## Kırpılan boyayı sil
+## Kırpılan boya piksellerini sil
 
 Kırpmayı uyguladığınızda çerçevenin dışındaki pikselleri atmak için
-**Kırpılan boyayı sil** seçeneğini açın. Yerleştirilmiş fotoğraflar özgün
+**Diğer > Kırpılan boya piksellerini sil** seçeneğini açın. Yerleştirilmiş fotoğraflar özgün
 piksellerini korur. Varsayılan olarak kapalıdır.
 
 Gizli pikseller korunduğunda çok büyük olacak bir kırpma yalnızca
-**Kırpılan boyayı sil** açıkken çalışır.
+**Kırpılan boya piksellerini sil** açıkken çalışır.
 
-## Sıfırla
+## Kırpmayı sıfırla
 
-**Sıfırla** çerçeveyi düz olarak tuvalin tamamına döndürür ve **Düzelt**
-ayarını kapatır. Bir oran seçiliyse çerçeve o oranın en büyük çerçevesi olur.
+**Diğer**'deki **Kırpmayı sıfırla**, çerçeveyi tüm tuvale dik olarak döndürür ve **Düzelt** seçeneğini kapatır. Seçilen bir oran ile çerçeve, o oranın en büyük karesi haline gelir.
 
 ## Araç panelindeki kırpma ayarları
 
@@ -109,7 +106,7 @@ Tuvali bir seçimin sınırlarına göre kırpabilirsiniz.
 Aşağıdakilerden birini yapın:
 
 - **Görüntü > Tuvali seçime göre kırp** komutunu seçin.
-- [Seçim çubuğunda](/tr/docs/selections/working/) **Kırp** düğmesini seçin.
+- [Seçim çubuğunda](/tr/docs/selections/working/) **Diğer > Tuvali seçime göre kırp** seçeneğini seçin.
 
 Seçimin sınırları dışındaki pikseller kendi katmanlarında gizli olarak kalır.
 Tersine çevrilmiş bir seçime göre kırpamazsınız.

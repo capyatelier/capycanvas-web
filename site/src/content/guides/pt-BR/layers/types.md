@@ -14,7 +14,7 @@ Escolha **Camada > Novo > Nova camada** ou selecione **Nova camada** na parte in
 
 ## Camada de objeto
 
-Uma camada de objeto mantém uma imagem importada com seu próprio tamanho, profundidade de bits e perfil de cor. Abrir ou importar uma imagem, soltar uma imagem na tela e colar uma imagem de outro aplicativo criam camadas de objeto.
+Uma camada de objeto mantém o tamanho, a profundidade de bits e o perfil de cores da imagem importada. Importar uma imagem como camada, soltá-la na tela ou colá-la de outro aplicativo cria uma camada de objeto.
 
 Você pode mover, redimensionar e girar uma camada de objeto sem reamostrar sua origem repetidamente. Escolha **Camada > Rasterizar camada** quando precisar pintar nos pixels ou usar um comando que exige uma camada de pintura. A rasterização a converte para o espaço de cor, a profundidade de bits e a grade de pixels do desenho.
 

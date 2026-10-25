@@ -126,7 +126,7 @@ export default async function selections({ e, b, shoot, example }) {
   await clear();
   await e.invoke('tonal_select');
   await openDrawer();
-  await press(`${drawer} [data-tool-choice-tone="4"]`);
+  await e.send({ type: 'tonal', action: { kind: 'preset', index: 4 } });
   await hasSelection();
   await shoot('selections/tonal-range-settings', { target: tonal, setup: openDrawer });
   await closeDrawer();
@@ -138,8 +138,7 @@ export default async function selections({ e, b, shoot, example }) {
   await e.invoke('return_to_artwork');
   await clear();
   await openDrawer();
-  const custom = await e.read(`Math.max(...[...document.querySelectorAll('${drawer} [data-tool-choice-tone]')].map(n=>Number(n.dataset.toolChoiceTone)))`);
-  await press(`${drawer} [data-tool-choice-tone="${custom}"]`);
+  await e.send(await e.read("layerApp.state().tool_extra.find(o=>o.Choice?.id==='tonal-tones').Choice.items.at(-1).action"));
   await e.wait(`!!document.querySelector('${tonal} .range-control')`);
   await shoot('selections/tonal-range-custom', { target: tonal, setup: openDrawer });
   await closeDrawer();

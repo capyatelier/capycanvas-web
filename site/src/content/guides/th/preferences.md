@@ -117,7 +117,7 @@ related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", 
 
 ## ปากกาและการป้อนข้อมูล
 
-การตั้งค่าในหน้านี้อธิบายไว้ใน[ปากกา](/th/docs/input/pen/)และ[ท่าทางสัมผัส](/th/docs/input/touch/)
+การตั้งค่าในหน้านี้อธิบายไว้ใน [ปากกา](/th/docs/input/pen/), [การเอียงปากกา](/th/docs/input/pen-tilt/) และ [รูปแบบการสัมผัส](/th/docs/input/touch/)
 
 ## แป้นพิมพ์ลัด
 

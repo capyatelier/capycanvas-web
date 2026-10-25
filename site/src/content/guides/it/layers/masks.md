@@ -42,10 +42,10 @@ tratti sulla maschera sono asciutti, senza mescolanza, diffusione né trama.
 Mentre dipingi su una maschera, in fondo alla tela appare una barra con la
 scritta «Modifica della maschera di *livello*».
 
-![La barra di modifica della maschera con Inverti, Disattiva, Applica maschera, Altro e Modifica contenuto.](shot:layers/masks-bar)
+![La barra di modifica della maschera con Inverti maschera del livello, Attiva maschera del livello, Applica maschera, Altro e Modifica contenuto.](shot:layers/masks-bar)
 
-- **Inverti**
-- **Disattiva** spegne la maschera, e il pulsante diventa **Attiva**.
+- **Inverti maschera del livello** scambia le aree mostrate e nascoste.
+- **Attiva maschera del livello** accende o spegne la maschera.
 - **Applica maschera** cancella i pixel nascosti dalla maschera, poi rimuove la maschera.
 - **Altro** contiene il menu **Livello** e **Mostra barra azioni della tela**. Disattiva **Mostra barra azioni della tela** per nascondere la barra.
 - **Modifica contenuto** torna a dipingere sul livello.
@@ -57,7 +57,7 @@ Puoi creare una maschera dalla selezione corrente.
 Esegui una delle seguenti operazioni:
 
 - Scegli **Livello > Maschera > Maschera: mostra selezione** o **Maschera: nascondi selezione**. Su un livello con maschera, le voci diventano **Sostituisci maschera: mostra selezione** e **Sostituisci maschera: nascondi selezione**.
-- Seleziona **Maschera** nella [barra della selezione](/it/docs/selections/working/) sulla tela. La nuova maschera mostra l'area selezionata e sostituisce l'eventuale maschera del livello.
+- Scegli un comando maschera da **Maschera** nella [barra di selezione](/it/docs/selections/working/) sull'area di disegno. La nuova maschera mostra l'area selezionata e sostituisce qualsiasi maschera posseduta dal livello.
 
 Un filtro o un livello di riempimento aggiunto mentre c'è una selezione attiva
 riceve una maschera dalla selezione. **Incolla dentro** crea un nuovo livello con

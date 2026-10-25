@@ -29,6 +29,24 @@ mélangeur par défaut.
 Les réglages de chaque mélangeur figurent dans
 [Mélange, diffusion et soies](/fr/docs/brushes/wet-media/).
 
+### Mélangeur à soies
+
+**Mélangeur à soies** tire la peinture en stries. L'extrémité gauche de cet échantillon n'est pas mélangée.
+
+![Mélangeur à soies striant la peinture ombrée à droite.](shot:examples/bristle-blender)
+
+### Mélangeur tramé
+
+**Mélangeur tramé** mélange les bandes dans un motif de tramage.
+
+![Mélangeur tramé mélangeant les bandes ombrées à droite.](shot:examples/dither-blender)
+
+### Marbrure
+
+**Marbrure** courbe la peinture en tourbillons.
+
+![Marbrure enroulant les bandes ombrées à droite.](shot:examples/marbling)
+
 ## Fluidité
 
 Effectuez l’une des opérations suivantes :
@@ -55,6 +73,18 @@ Fluidité n’a pas de bouton Appliquer. Chaque trait modifie le calque et const
 sa propre étape d’annulation. Les traits continuent de déformer les pixels que le
 calque avait avant le premier trait, jusqu’à ce que vous peigniez, remplissiez,
 filtriez, transformiez ou colliez dans le calque.
+
+### Contour
+
+**Contour** tire la peinture vers la ligne de trait. Les bandes à gauche montrent la peinture d'origine.
+
+![Contour en tirant les bandes colorées vers un trait horizontal à droite.](shot:examples/liquify-edge)
+
+### Reconstruire
+
+**Reconstruire** restaure la peinture d'origine sous le pinceau. Ici, il restaure la moitié droite des bandes déformées.
+
+![Bandes déformées à gauche et peinture restaurée avec Reconstruire à droite.](shot:examples/liquify-reconstruct)
 
 ## Ajuster la fluidité et Réinitialiser la fluidité
 

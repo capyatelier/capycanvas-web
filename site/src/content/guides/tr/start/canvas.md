@@ -83,6 +83,12 @@ Aşağıdakilerden birini yapın:
 0°'ye dönmek için **5** tuşuna basın veya yakınlaştırma göstergesinin
 menüsünde **Döndürmeyi sıfırla** öğesini seçin.
 
+## Döndürmeyi hizala
+
+**Döndürmeyi hizala**, siz bir hareketle, **Görünümü döndür** aracıyla veya kaydırıcıyla döndürürken görünümü 0°, 90°, 180° ve 270° yakınında tutar. Varsayılan olarak açıktır.
+
+**Görünüm > Döndürmeyi hizala**'den veya yakınlaştırma okumasının menüsünden açın veya kapatın. **Döndürmeyi kilitle** döndürme hareketlerini tamamen durdurur.
+
 ## Görünümü çevirme
 
 Aşağıdakilerden birini yapın:

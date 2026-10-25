@@ -87,9 +87,6 @@ Lần nhấp tiếp theo sẽ đặt nguồn.
 
 ## Thanh khung vẽ của vùng tròn nguồn
 
-Nhấp vào vùng tròn nguồn mà không kéo để hiện
-[thanh khung vẽ](/vi/docs/selections/working/) bên cạnh, với **Căn chỉnh**,
-**Nguồn**, hai nút lật, **Đặt lại độ lệch** và **Đặt nguồn**. Nhấp lại vào vùng
-tròn, hoặc chọn công cụ khác, để ẩn thanh.
+Nhấp vào đĩa nguồn mà không kéo để hiển thị [thanh khung vẽ](/vi/docs/selections/working/) bên cạnh nó, với **Căn chỉnh**, **Nguồn**, **Lật nguồn ngang** và **Đặt nguồn**. **Thêm** chứa **Lật nguồn dọc** và **Đặt lại độ lệch nguồn**. Bấm vào đĩa một lần nữa hoặc chọn một công cụ khác để ẩn thanh.
 
 ![Vùng tròn nguồn và thanh khung vẽ của nó.](shot:retouch/clone-source-bar)

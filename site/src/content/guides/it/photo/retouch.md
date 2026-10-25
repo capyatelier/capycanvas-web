@@ -5,14 +5,14 @@ related: ["retouch/clone-heal", "layers/settings", "layers/working"]
 ---
 
 Questa fase produce un livello *Retouch* che copre la polvere e una macchia
-nella foto. Il livello Oggetto non cambia.
+nella foto. Il livello di pittura non cambia.
 
 ## 1. Aggiungi un livello di ritocco
 
 1. Seleziona **Nuovo livello** in fondo al pannello Livelli e rinomina il nuovo livello *Retouch*.
 2. Scegli **Livello > Impostazioni livello > Usa livello sottostante come riferimento** ([Impostazioni livello](/it/docs/layers/settings/)).
 
-Il livello Oggetto diventa un livello di riferimento, e sulla sua riga, accanto
+Il livello di pittura diventa un livello di riferimento, e sulla sua riga, accanto
 all'occhio, appare l'icona di un faro. Gli strumenti correttivi copiano dai
 livelli di riferimento per impostazione predefinita e dipingono su *Retouch*.
 

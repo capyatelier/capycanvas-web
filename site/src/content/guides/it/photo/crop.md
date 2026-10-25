@@ -12,9 +12,9 @@ Scegli **File > Apri…**, o premi **Ctrl+O**, e seleziona la foto
 ([Aprire e salvare](/it/docs/files/open-save/)). La foto si apre in una scheda di
 disegno propria.
 
-![Il pannello Livelli con il livello Oggetto del terrario.](shot:photo/open-layers)
+![Il pannello Livelli con il livello di pittura terrarium.](shot:photo/open-layers)
 
-Il disegno ha un livello Oggetto che prende il nome dal file. Nell'esempio, il livello si chiama «terrarium».
+Il disegno ha un livello di pittura con il nome del file. Nell’esempio il livello si chiama «terrarium».
 
 ## 2. Scegli le proporzioni
 
@@ -45,9 +45,9 @@ della felce margini uniformi.
 
 ## 4. Applica il ritaglio
 
-Seleziona **Applica** nella barra del ritaglio, o premi **Invio**. La tela prende
+Seleziona **Applica ritaglio** nella barra del ritaglio, o premi **Invio**. La tela prende
 le dimensioni della cornice: 2000 × 1600 pixel nell'esempio. I pixel ritagliati
-restano sul livello, nascosti, a meno che **Elimina pittura ritagliata** non sia
+restano sul livello, nascosti, a meno che **Altro > Elimina pixel dipinti ritagliati** non sia
 attivo nella barra del ritaglio.
 
 Fase successiva: [Ritocco](/it/docs/photo/retouch/).

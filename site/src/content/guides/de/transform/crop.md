@@ -6,7 +6,7 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 
 Mit dem Werkzeug **Zuschneiden** können Sie die Leinwand auf einen Rahmen
 zuschneiden. Abgeschnittene Pixel bleiben verborgen auf ihren Ebenen, außer Sie
-aktivieren **Abgeschnittene Malbereiche löschen**.
+aktivieren **Abgeschnittene Malpixel löschen**.
 
 ## Zuschneiden
 
@@ -28,11 +28,11 @@ abgedunkelt, und am unteren Rand der Leinwand erscheint die
 Auf einem Touchscreen reagieren nur die Griffe auf einen Finger. Ein Finger
 innerhalb des Rahmens bewegt die Ansicht.
 
-Zum Abschließen wählen Sie **Anwenden** aus oder drücken Sie **Eingabe**.
-**Abbrechen**, **Escape** und **Rückgängig** verwerfen den Zuschnitt. In beiden
+Zum Abschließen wählen Sie **Zuschnitt anwenden** aus oder drücken Sie **Eingabe**.
+**Zuschnitt abbrechen**, **Escape** und **Rückgängig** verwerfen den Zuschnitt. In beiden
 Fällen kehrt das zuvor verwendete Werkzeug zurück.
 
-**Anwenden** schneidet auch gesperrte Ebenen zu. Solange eine Transformation
+**Zuschnitt anwenden** schneidet auch gesperrte Ebenen zu. Solange eine Transformation
 geöffnet ist, können Sie keinen Zuschnitt beginnen.
 
 ![Der Zuschnittrahmen auf dem Terrarium-Foto mit der Leinwandaktionsleiste am unteren Rand.](shot:transform/crop-bar)
@@ -46,7 +46,7 @@ zum größtmöglichen Rahmen in diesem Verhältnis. Standard ist **Frei**.
 **Zuschnittausrichtung wechseln**, die Symbolschaltfläche neben **Verhältnis**,
 wechselt den Rahmen zwischen Quer- und Hochformat.
 
-Verhältnis, Überlagerung und **Abgeschnittene Malbereiche löschen** werden für den
+Verhältnis, Überlagerung und **Abgeschnittene Malpixel löschen** werden für den
 nächsten Zuschnitt übernommen.
 
 ![Das Menü Verhältnis in der Zuschnittleiste.](shot:transform/crop-ratio-menu)
@@ -59,9 +59,7 @@ zu **Frei**.
 
 ## Überlagerung
 
-Wählen Sie unter **Überlagerung** **Drittel**, **Raster**, **Diagonal** oder
-**Goldener Schnitt**. Standard ist **Drittel**. Drücken Sie beim Zuschneiden
-**O**, um die nächste Überlagerung anzuzeigen.
+Wählen Sie ein Overlay aus **Mehr > Überlagerung**. **Drittelregelüberlagerung** ist die Standardeinstellung. Drücken Sie beim Zuschneiden **O**, um die nächste Überlagerung anzuzeigen.
 
 ## Begradigen
 
@@ -82,20 +80,18 @@ Sie in ihrer Leinwandaktionsleiste **Begradigen** aus (siehe
 [Lineale und Hilfslinien](/de/docs/drawing/ruler/)). Ein Zuschnitt öffnet sich,
 an der Hilfslinie ausgerichtet.
 
-## Abgeschnittene Malbereiche löschen
+## Abgeschnittene Malpixel löschen
 
-Aktivieren Sie **Abgeschnittene Malbereiche löschen**, um beim Anwenden des
+Aktivieren Sie **Mehr > Abgeschnittene Malpixel löschen**, um beim Anwenden des
 Zuschnitts die Pixel außerhalb des Rahmens zu verwerfen. Platzierte Fotos
 behalten ihre Originalpixel. Standardmäßig deaktiviert.
 
 Ein Zuschnitt, der mit den verborgen behaltenen Pixeln zu groß wäre, funktioniert
-nur mit aktiviertem **Abgeschnittene Malbereiche löschen**.
+nur mit aktiviertem **Abgeschnittene Malpixel löschen**.
 
-## Zurücksetzen
+## Zuschnitt zurücksetzen
 
-**Zurücksetzen** setzt den Rahmen aufrecht auf die ganze Leinwand zurück und
-deaktiviert **Begradigen**. Ist ein Verhältnis gewählt, wird der Rahmen zum
-größtmöglichen Rahmen in diesem Verhältnis.
+**Zuschnitt zurücksetzen** in **Mehr** bringt den Rahmen auf die gesamte Leinwand zurück, aufrecht, und schaltet **Begradigen** aus. Wenn ein Verhältnis gewählt wird, wird der Frame zum größten Frame dieses Verhältnisses.
 
 ## Zuschnitteinstellungen im Bedienfeld Werkzeug
 
@@ -115,7 +111,7 @@ Sie können die Leinwand auf die Grenzen einer Auswahl zuschneiden.
 Führen Sie eine der folgenden Aktionen aus:
 
 - Wählen Sie **Bild > Leinwand auf Auswahl zuschneiden**.
-- Wählen Sie **Zuschneiden** auf der [Auswahlleiste](/de/docs/selections/working/).
+- Wählen Sie **Mehr > Leinwand auf Auswahl zuschneiden** in der [Auswahlleiste](/de/docs/selections/working/).
 
 Pixel außerhalb der Auswahlgrenzen bleiben verborgen auf ihren Ebenen. Auf eine
 umgekehrte Auswahl können Sie nicht zuschneiden.

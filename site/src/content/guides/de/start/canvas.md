@@ -80,6 +80,12 @@ Führen Sie eine der folgenden Aktionen aus:
 
 Um zu 0° zurückzukehren, drücken Sie **5** oder wählen Sie im Menü der Zoomanzeige **Drehung zurücksetzen** aus.
 
+## Drehung einrasten
+
+**Drehung einrasten** hält die Ansicht nahe 0°, 90°, 180° und 270°, während Sie mit einer Geste, dem Werkzeug **Ansicht drehen** oder einem Schieberegler drehen. Es ist standardmäßig aktiviert.
+
+Schalten Sie es im **Ansicht > Drehung einrasten** oder im Menü der Zoomanzeige ein oder aus. **Drehung sperren** stoppt Rotationsgesten vollständig.
+
 ## Ansicht spiegeln
 
 Führen Sie eine der folgenden Aktionen aus:

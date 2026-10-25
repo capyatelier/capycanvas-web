@@ -80,6 +80,12 @@ Haz una de las siguientes acciones:
 
 Para volver a 0°, pulsa **5** o selecciona **Restablecer rotación** en el menú del indicador de zoom.
 
+## Ajustar rotación
+
+**Ajustar rotación** mantiene la vista cerca de 0°, 90°, 180° y 270° al girar con un gesto, la herramienta **Girar vista** o un deslizador. Está activado de forma predeterminada.
+
+Actívalo o desactívalo en **Ver > Ajustar rotación** o en el menú del indicador de zoom. **Bloquear rotación** impide los gestos de rotación por completo.
+
 ## Voltear la vista
 
 Haz una de las siguientes acciones:

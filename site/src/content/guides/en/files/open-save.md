@@ -24,9 +24,7 @@ Do one of the following:
 
 ## Photos
 
-A photo opens as a new drawing with an Object layer named after the file. The
-Object keeps the image at its own size, color profile and, by default, bit depth.
-Saving the drawing creates a `.capy` file and never overwrites the source image.
+A photo opens as a new drawing with a Paint layer named after the file. The drawing keeps the photo's original size, color profile and, by default, bit depth. Saving the drawing creates a `.capy` file and never overwrites the source image.
 
 - An animated GIF or WebP opens its first frame.
 - A photo can be up to 32768 pixels on each side.

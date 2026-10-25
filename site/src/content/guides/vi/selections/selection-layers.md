@@ -12,7 +12,7 @@ sau này.
 Thực hiện một trong các cách sau:
 
 - Chọn **Chọn > Lưu thành lớp vùng chọn**.
-- Chọn **Lưu** trên thanh vùng chọn hoặc trên thanh Mặt nạ nhanh.
+- Chọn **Mặt nạ > Lưu thành lớp vùng chọn** trên thanh lựa chọn hoặc **Lưu thành lớp vùng chọn** trên thanh Quick Mask.
 - Trong Mặt nạ nhanh, chọn **Lớp > Lưu thành lớp vùng chọn**.
 
 Lớp mới nằm trên cùng danh sách lớp, có tên là *Vùng chọn* kèm một số. Lớp mở ra để
@@ -53,7 +53,7 @@ chung.
 kèm tên lớp. Khi thanh khung vẽ bị ẩn, thanh này không xuất hiện.
 
 - **Nạp** biến lớp thành vùng chọn hiện tại và trở về bản vẽ.
-- **Đảo ngược** đảo vùng chọn đã lưu và giữ lớp ở chế độ chỉnh sửa.
+- **Đảo lớp vùng chọn** đảo vùng chọn đã lưu và giữ lớp ở chế độ chỉnh sửa.
 - **Trở về bản vẽ** kết thúc chỉnh sửa. **Escape** cũng vậy.
 
 Sau khi chỉnh sửa, lớp bạn sửa trước đó trở lại thành lớp hiện tại, hoặc lớp vẽ trên
@@ -63,7 +63,7 @@ cùng nếu trước đó không có lớp nào.
 **Sửa đổi**. **Chọn > Mở rộng vùng chọn…** và các lệnh tinh chỉnh khác trong trình
 đơn **Chọn** sẽ trở về bản vẽ trước, rồi thay đổi vùng chọn hiện tại.
 
-![Thanh khung vẽ khi sửa lớp vùng chọn, với Nạp, Đảo ngược và Trở về bản vẽ.](shot:selections/selection-layer-bar)
+![Thanh canvas cho lớp lựa chọn đã chỉnh sửa với Nạp, Đảo lớp vùng chọn và Trở về bản vẽ.](shot:selections/selection-layer-bar)
 
 ## Nạp lớp vùng chọn
 

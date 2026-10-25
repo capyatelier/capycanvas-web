@@ -90,10 +90,10 @@ Bir yolu bağlantı noktası bağlantı noktası çizebilirsiniz.
 - Köşe bağlantı noktası eklemek için tıklayın. Yumuşak bir bağlantı noktası için tutamaçları çekmek üzere basıp sürükleyin ya da yalnızca çıkış tutamacını sürüklemek için **Alt** tuşunu basılı tutun.
 - Sonraki bağlantı noktasını sonuncudan itibaren 45° adımlarla yerleştirmek için **Shift** tuşunu basılı tutun.
 - Yolu kapatmak için ilk bağlantı noktasına tıklayın.
-- Yolu eklemek için tuval çubuğunda **Bitir** düğmesini seçin veya **Enter** tuşuna basın. **İptal** veya **Escape** yolu atar.
-- **Noktayı kaldır** veya **Backspace** son bağlantı noktasını kaldırır, **Geri al** da öyle.
+- Yolu eklemek için tuval çubuğunda **Yolu bitir** düğmesini seçin veya **Enter** tuşuna basın. **Yolu iptal et** veya **Escape** yolu atar.
+- **Son noktayı kaldır** veya **Backspace** son bağlantı noktasını kaldırır, **Geri al** da öyle.
 
-![Yol çizilirken tuval çubuğu: Noktayı kaldır, İptal ve Bitir.](shot:vector/path-bar)
+![Son noktayı kaldır, Yolu iptal et ve Yolu bitir ile bir yol çizilirken tuval çubuğu.](shot:vector/path-bar)
 
 Yol geçerli modu, **Çizgi genişliği** değerini ve renkleri kullanır; köşeleri sivri, uçları düzdür. Vektör katmanında bitirdiğinizde seçili olur ve seçili bir yolun açık ucundan başlayan yol onu sürdürür.
 

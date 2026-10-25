@@ -90,18 +90,18 @@ Click each corner of the shape. To finish, do one of the following:
 
 - Click the first corner again.
 - Press **Enter**.
-- Select **Finish** on the canvas bar, or **Finish selection** in the Tool panel.
+- Select **Finish selection** on the canvas bar, or **Finish selection** in the Tool panel.
 
 A polygon needs at least three corners.
 
-- To remove the last corner, press **Backspace** or **Delete**, or select **Remove Point** on the canvas bar or **Remove last point** in the Tool panel.
-- To cancel the polygon, press **Escape**, or select **Cancel** on the canvas bar or **Cancel selection** in the Tool panel.
+- To remove the last corner, press **Backspace** or **Delete**, or select **Remove last point** on the canvas bar or **Remove last point** in the Tool panel.
+- To cancel the polygon, press **Escape**, or select **Cancel selection** on the canvas bar or **Cancel selection** in the Tool panel.
 - To snap the next edge to 45° steps, hold **Shift**. To snap every edge, turn on **Constrain edges to 45°** in the Tool panel.
 
 While you place corners, the [canvas bar](/docs/selections/working/) at the
-bottom of the canvas shows **Remove Point**, **Cancel** and **Finish**.
+bottom of the canvas shows **Remove last point**, **Cancel selection**, and **Finish selection**.
 
-![The canvas bar for a polygon, with Remove Point, Cancel and Finish.](shot:selections/tools-polygon-bar)
+![The canvas bar for a polygon, with Remove last point, Cancel selection, and Finish selection.](shot:selections/tools-polygon-bar)
 
 ## Auto select and Select by color
 

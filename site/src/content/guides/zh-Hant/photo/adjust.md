@@ -29,7 +29,7 @@ related: ["filters/how-filters-apply", "filters/tone", "selections/working", "fi
 1. 按 **M**，或選擇「工具」工具列中的**套索選取範圍**，然後圍繞石頭畫一圈。
 2. 選擇**選取 > 羽化選取範圍…**，或選擇選取範圍操作欄中的**改善**，然後選擇**羽化…**（[使用選取範圍](/zh-Hant/docs/selections/working/)）。
 3. 將 **羽化半徑** 設為 20 px，然後選擇**套用**。
-4. 在選取範圍列中選擇**遮罩**。
+4. 在選取範圍列中選擇 **遮罩 > 遮罩：顯示選取範圍**。
 
 ![岩石周圍選取範圍旁的選取範圍列，其中包含遮罩。](shot:photo/adjust-bar)
 

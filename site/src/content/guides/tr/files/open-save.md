@@ -23,7 +23,7 @@ Aşağıdakilerden birini yapın:
 
 ## Fotoğraflar
 
-Fotoğraf, dosya adını taşıyan bir nesne katmanıyla yeni çizim olarak açılır. Nesne görüntünün kendi boyutunu, renk profilini ve varsayılan olarak bit derinliğini korur. Çizimi kaydetmek bir `.capy` dosyası oluşturur ve kaynak görüntünün üzerine yazmaz.
+Fotoğraf, dosyanın adını taşıyan bir boya katmanıyla yeni bir çizim olarak açılır. Çizim, fotoğrafın orijinal boyutunu, renk profilini ve varsayılan olarak bit derinliğini korur. Çizimi kaydetmek bir `.capy` dosyası oluşturur ve kaynak görüntünün üzerine yazmaz.
 
 - Hareketli bir GIF veya WebP dosyasının ilk karesi açılır.
 - Fotoğrafın her kenarı en fazla 32768 piksel olabilir.

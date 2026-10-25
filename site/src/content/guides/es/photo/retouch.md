@@ -4,14 +4,14 @@ description: "Etapa 2 del tutorial de edición de fotos: polvo y una mancha elim
 related: ["retouch/clone-heal", "layers/settings", "layers/working"]
 ---
 
-Esta etapa produce una capa *Retouch* que cubre polvo y una mancha en la foto. La capa de objeto no cambia.
+Esta etapa produce una capa *Retouch* que cubre polvo y una mancha en la foto. La capa de pintura no cambia.
 
 ## 1. Añade una capa de retoque
 
 1. Selecciona **Capa nueva** en la parte inferior del panel Capas y cambia el nombre de la capa nueva a *Retouch*.
 2. Elige **Capa > Ajustes de capa > Usar capa inferior como referencia** ([Ajustes de capa](/es/docs/layers/settings/)).
 
-La capa de objeto se convierte en capa de referencia y aparece un icono de faro junto al ojo en su fila. Las herramientas de corrección copian de las capas de referencia de forma predeterminada y pintan en *Retouch*.
+La capa de pintura se convierte en capa de referencia y aparece un icono de faro junto al ojo en su fila. Las herramientas de corrección copian de las capas de referencia de forma predeterminada y pintan en *Retouch*.
 
 ![El panel Capas con Retouch encima de la capa terrarium, que muestra el icono de referencia.](shot:photo/retouch-layers)
 

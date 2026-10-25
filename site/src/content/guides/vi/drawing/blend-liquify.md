@@ -28,6 +28,24 @@ Chọn một nhóm và một cọ hòa màu trong **Bộ công cụ**. **Miết 
 Thiết lập của từng cọ hòa màu nằm trong
 [Trộn màu, loang và lông cọ](/vi/docs/brushes/wet-media/).
 
+### Hòa màu sợi cọ
+
+**Hòa màu sợi cọ** kéo sơn thành vệt. Đầu bên trái của mẫu này không được trộn lẫn.
+
+![Hòa màu sợi cọ vệt sơn bóng mờ ở bên phải.](shot:examples/bristle-blender)
+
+### Hòa màu điểm ảnh
+
+**Hòa màu điểm ảnh** trộn các dải thành một mẫu hòa sắc.
+
+![Hòa màu điểm ảnh trộn các dải bóng mờ ở bên phải.](shot:examples/dither-blender)
+
+### Vân cẩm thạch
+
+**Vân cẩm thạch** cuộn sơn thành những vòng xoáy.
+
+![Vân cẩm thạch uốn các dải bóng mờ ở bên phải.](shot:examples/marbling)
+
 ## Biến dạng
 
 Thực hiện một trong các cách sau:
@@ -53,6 +71,18 @@ Mỗi chế độ là một cọ đặt sẵn trong **Bộ công cụ**:
 Biến dạng không có nút Áp dụng. Mỗi nét vẽ thay đổi lớp và là một bước hoàn tác riêng.
 Các nét tiếp tục làm biến dạng các pixel mà lớp có trước nét đầu tiên, cho đến khi bạn
 vẽ lên, tô, áp dụng bộ lọc, biến đổi hoặc dán vào lớp.
+
+### Cạnh
+
+**Cạnh** kéo sơn về phía nét vẽ. Các dải bên trái thể hiện màu sơn nguyên bản.
+
+![Cạnh kéo các dải màu về phía nét ngang ở bên phải.](shot:examples/liquify-edge)
+
+### Khôi phục
+
+**Khôi phục** khôi phục lớp sơn gốc dưới cọ. Ở đây nó khôi phục nửa bên phải của các dải bị biến dạng.
+
+![Các dải bị biến dạng ở bên trái và lớp sơn được khôi phục bằng Khôi phục ở bên phải.](shot:examples/liquify-reconstruct)
 
 ## Điều chỉnh hóa lỏng và Đặt lại hóa lỏng
 

@@ -12,9 +12,9 @@ Pilih **Berkas > Buka…**, atau tekan **Ctrl+O**, lalu pilih fotonya
 ([Membuka dan menyimpan](/id/docs/files/open-save/)). Foto terbuka di tab gambarnya
 sendiri.
 
-![Panel Lapisan dengan lapisan Objek terarium.](shot:photo/open-layers)
+![Panel Lapisan dengan lapisan lukis terrarium.](shot:photo/open-layers)
 
-Gambar memiliki satu lapisan Objek bernama sesuai file. Dalam contoh, lapisan bernama "terrarium".
+Gambar memiliki satu lapisan lukis dengan nama yang sama dengan file. Dalam contoh ini, nama lapisannya adalah “terrarium”.
 
 ## 2. Pilih rasio
 
@@ -43,9 +43,9 @@ seimbang.
 
 ## 4. Terapkan pemangkasan
 
-Pilih **Terapkan** di bilah pangkas, atau tekan **Enter**. Kanvas mengambil ukuran
+Pilih **Terapkan pangkasan** di bilah pangkas, atau tekan **Enter**. Kanvas mengambil ukuran
 bingkai: 2000 × 1600 piksel dalam contoh ini. Piksel yang terpangkas tetap ada di
-lapisan, dalam keadaan tersembunyi, kecuali jika **Hapus Lukisan Terpangkas** aktif di
+lapisan, dalam keadaan tersembunyi, kecuali jika **Lainnya > Hapus Piksel Lukisan Terpangkas** aktif di
 bilah pangkas.
 
 Tahap berikutnya: [Meretus](/id/docs/photo/retouch/).

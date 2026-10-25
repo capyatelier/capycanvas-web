@@ -12,7 +12,7 @@ later.
 Do one of the following:
 
 - Choose **Select > Save as Selection Layer**.
-- Select **Save** on the selection bar or on the Quick Mask bar.
+- Select **Mask > Save as Selection Layer** on the selection bar, or **Save as Selection Layer** on the Quick Mask bar.
 - In Quick Mask, choose **Layer > Save as Selection Layer**.
 
 The new layer goes to the top of the layer list, named *Selection* and a
@@ -55,7 +55,7 @@ captioned "Editing" and the layer's name. With the canvas bar hidden, this bar d
 appear.
 
 - **Load** makes the layer the current selection and returns to the artwork.
-- **Invert** inverts the stored selection and keeps the layer open for editing.
+- **Invert Selection Layer** inverts the stored selection and keeps the layer open for editing.
 - **Return to Artwork** ends editing. **Escape** does the same.
 
 After editing, the layer you edited before becomes active again, or the top
@@ -66,7 +66,7 @@ from **Modify**. **Select > Grow Selection…** and the other refine commands in
 the **Select** menu return to the artwork first and change the current
 selection.
 
-![The canvas bar for an edited selection layer, with Load, Invert and Return to Artwork.](shot:selections/selection-layer-bar)
+![The canvas bar for an edited selection layer with Load, Invert Selection Layer, and Return to Artwork.](shot:selections/selection-layer-bar)
 
 ## Loading a selection layer
 

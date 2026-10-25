@@ -11,9 +11,9 @@ Giai đoạn này mở ảnh và cắt xén ảnh theo khung 5:4.
 Chọn **Tệp > Mở…**, hoặc nhấn **Ctrl+O**, rồi chọn ảnh
 ([Mở và lưu](/vi/docs/files/open-save/)). Ảnh mở trong một thẻ bản vẽ riêng.
 
-![Bảng Lớp với lớp Đối tượng terrarium.](shot:photo/open-layers)
+![Bảng Lớp với lớp vẽ terrarium.](shot:photo/open-layers)
 
-Bản vẽ có một lớp Đối tượng được đặt tên theo tệp. Trong ví dụ, lớp có tên "terrarium".
+Bản vẽ có một lớp vẽ được đặt tên theo tệp. Trong ví dụ, lớp có tên “terrarium”.
 
 ## 2. Chọn tỷ lệ
 
@@ -41,8 +41,8 @@ Kéo bên trong khung bằng bút hoặc chuột để di chuyển khung. Trong 
 
 ## 4. Áp dụng cắt xén
 
-Chọn **Áp dụng** trên thanh cắt xén, hoặc nhấn **Enter**. Khung vẽ lấy kích thước
+Chọn **Áp dụng cắt** trên thanh cắt xén, hoặc nhấn **Enter**. Khung vẽ lấy kích thước
 của khung cắt: 2000 × 1600 pixel trong ví dụ. Các pixel bị cắt vẫn nằm trên lớp ở
-trạng thái ẩn, trừ khi **Xóa nét vẽ bị cắt** đang bật trên thanh cắt xén.
+trạng thái ẩn, trừ khi **Thêm > Xóa pixel nét vẽ bị cắt** đang bật trên thanh cắt xén.
 
 Giai đoạn tiếp theo: [Retouch](/vi/docs/photo/retouch/).

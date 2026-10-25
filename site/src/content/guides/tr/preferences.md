@@ -143,8 +143,7 @@ Renk profili kitaplığını açar. Bkz.
 
 ## Kalem ve giriş
 
-Bu sayfadaki ayarlar [Kalem](/tr/docs/input/pen/) ve
-[Dokunma hareketleri](/tr/docs/input/touch/) sayfalarında anlatılır.
+Bu sayfadaki ayarlar [Kalem](/tr/docs/input/pen/), [Kalem eğme](/tr/docs/input/pen-tilt/) ve [Dokunma hareketleri](/tr/docs/input/touch/) bölümlerinde açıklanmıştır.
 
 ## Klavye kısayolları
 

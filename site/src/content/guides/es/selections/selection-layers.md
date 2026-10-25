@@ -12,7 +12,7 @@ más tarde.
 Haz una de las siguientes acciones:
 
 - Elige **Seleccionar > Guardar como capa de selección**.
-- Selecciona **Guardar** en la barra de selección o en la barra de Máscara rápida.
+- Selecciona **Máscara > Guardar como capa de selección** en la barra de selección, o **Guardar como capa de selección** en la barra de Máscara rápida.
 - En la Máscara rápida, elige **Capa > Guardar como capa de selección**.
 
 La capa nueva se coloca arriba del todo en la lista de capas, con el nombre
@@ -58,7 +58,7 @@ lienzo tiene el rótulo «Editando» seguido del nombre de la capa. Con la barra
 lienzo oculta, esta barra no aparece.
 
 - **Cargar** convierte la capa en la selección actual y vuelve a la imagen.
-- **Invertir** invierte la selección guardada y mantiene la capa abierta para editarla.
+- **Invertir capa de selección** invierte la selección guardada y mantiene la capa abierta para editarla.
 - **Volver a la imagen** termina la edición. **Escape** hace lo mismo.
 
 Al terminar la edición, vuelve a estar activa la capa que editabas antes, o la
@@ -69,7 +69,7 @@ elige una opción de **Modificar**. **Seleccionar > Expandir selección…** y l
 para perfeccionar del menú **Seleccionar** vuelven primero a la imagen y cambian
 la selección actual.
 
-![La barra del lienzo de una capa de selección en edición, con Cargar, Invertir y Volver a la imagen.](shot:selections/selection-layer-bar)
+![La barra de una capa de selección en edición, con Cargar, Invertir capa de selección y Volver a la imagen.](shot:selections/selection-layer-bar)
 
 ## Cargar una capa de selección
 

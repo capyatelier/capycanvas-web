@@ -75,6 +75,6 @@ related: ["retouch/dodge-burn", "layers/settings", "brushes/basics", "photo/reto
 
 ## 取樣圓盤的畫布操作欄
 
-點按取樣圓盤而不拖動，可在其旁邊顯示[畫布操作欄](/zh-Hant/docs/selections/working/)，其中有**對齊**、**來源**、兩個翻轉按鈕、**重設偏移**和**設定取樣點**。再次點按圓盤或選擇其他工具可隱藏該欄。
+單擊源圓盤而不拖動，可在旁邊顯示[畫布欄](/zh-Hant/docs/selections/working/)，其中有 **對齊**、**來源**、**水平翻轉取樣來源** 和 **設定取樣點**。**更多** 包含 **垂直翻轉取樣來源** 和 **重設取樣偏移**。再次單擊圓盤或選擇其他工具可隱藏此欄。
 
 ![取樣圓盤及其畫布操作欄。](shot:retouch/clone-source-bar)

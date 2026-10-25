@@ -10,9 +10,9 @@ related: ["files/open-save", "transform/crop", "start/workspaces"]
 
 選擇**檔案 > 開啟…**，或按 **Ctrl+O**，然後選擇照片（[開啟和儲存](/zh-Hant/docs/files/open-save/)）。照片會在單獨的畫作分頁中開啟。
 
-![圖層面板中的 terrarium 物件圖層。](shot:photo/open-layers)
+![圖層面板中的 terrarium 繪畫圖層。](shot:photo/open-layers)
 
-畫作有一個以文件名命名的物件圖層。示例中，圖層名為“terrarium”。
+繪畫包含一個以檔名命名的繪畫圖層。本例中，圖層名為“terrarium”。
 
 ## 2. 選擇比例
 
@@ -32,6 +32,6 @@ related: ["files/open-save", "transform/crop", "start/workspaces"]
 
 ## 4. 套用裁切
 
-選擇裁切欄中的**套用**，或按 **Enter**。畫布變為裁切框的尺寸：示例中為 2000 × 1600 像素。除非裁切欄中開啟了**刪除範圍外繪畫像素**，否則被裁掉的像素會隱藏並保留在圖層上。
+選擇裁切欄中的**套用裁切**，或按 **Enter**。畫布變為裁切框的尺寸：示例中為 2000 × 1600 像素。除非裁切欄中開啟了**更多 > 刪除裁切範圍外的繪畫像素**，否則被裁掉的像素會隱藏並保留在圖層上。
 
 下一階段：[修飾](/zh-Hant/docs/photo/retouch/)。

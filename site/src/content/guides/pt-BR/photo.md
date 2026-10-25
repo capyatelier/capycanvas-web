@@ -36,8 +36,8 @@ A foto editada tem estas camadas, de cima para baixo:
 | **Vibração** | Aumenta a vibração de toda a foto |
 | **Curvas** | Uma curva em S para toda a foto |
 | *Retouch* | Traços de recuperação |
-| A camada de objeto | A foto, com o nome do arquivo |
+| A camada de pintura | A foto, com o nome do arquivo |
 
-Nada é pintado na camada de objeto.
+Nada é pintado na camada de pintura.
 
 Primeira etapa: [Abrir e recortar](/pt-BR/docs/photo/crop/).

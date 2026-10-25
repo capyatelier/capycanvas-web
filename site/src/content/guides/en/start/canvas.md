@@ -79,6 +79,12 @@ Do one of the following:
 To go back to 0°, press **5** or select **Reset rotation** in the zoom
 readout's menu.
 
+## Snap rotation
+
+**Snap rotation** holds the view near 0°, 90°, 180°, and 270° while you rotate with a gesture, the **Rotate view** tool, or a slider. It is on by default.
+
+Turn it on or off in **View > Snap rotation** or the zoom readout’s menu. **Lock rotation** stops rotation gestures entirely.
+
 ## Flipping the view
 
 Do one of the following:

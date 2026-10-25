@@ -117,7 +117,7 @@ Capyボタンの絵柄を、**見上げる**（初期設定）、**正面を向�
 
 ## ペンと入力
 
-このページの設定については、[ペン](/ja/docs/input/pen/)と[タッチジェスチャー](/ja/docs/input/touch/)で説明しています。
+このページの設定は[ペン](/ja/docs/input/pen/)、[ペンの傾き](/ja/docs/input/pen-tilt/)、[タッチ操作](/ja/docs/input/touch/)で説明しています。
 
 ## キーボードショートカット
 

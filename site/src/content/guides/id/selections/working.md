@@ -29,9 +29,9 @@ Bilah ini berada di samping objek, atau di tepi bawah kanvas. Dari kiri ke kanan
 bilah ini memuat:
 
 - Keterangan, misalnya "Mask Cepat" atau "Transformasi Garis Seleksi".
-- Tombol-tombol. Tombol yang redup tidak tersedia; pilih tombol itu untuk melihat alasannya.
+- Tombolnya. Arahkan kursor ke ikon untuk membaca namanya. Tombol redup tidak tersedia; pilih untuk melihat alasannya.
 - **Lainnya**, berisi tombol yang tidak muat, lalu menu **Seleksi** untuk seleksi atau menu **Lapisan** untuk mask.
-- Tombol penyelesai, misalnya **Terapkan** atau **Keluar**.
+- Tombol penyelesai, misalnya **Terapkan transformasi** atau **Keluar**.
 
 Bilah di samping objek disembunyikan selama Anda menyentuh kanvas atau menggeser
 tampilan.
@@ -54,21 +54,15 @@ seleksi yang dikembalikan oleh Urungkan atau Ulangi. Kuas, alat isi, **Gradasi**
 
 ![Bilah seleksi di bawah seleksi persegi panjang.](shot:selections/working-selection-bar)
 
-- **Batalkan Seleksi** dan **Balikkan**: lihat menu Seleksi di bawah.
-- **Tinggalkan Salinan**: hanya dengan **Operasi**, lihat [Pemindahan dan transformasi](/id/docs/transform/move-transform/).
-- **Salin ke Lapisan**: **Salin Seleksi ke Lapisan Baru** atau **Potong Seleksi ke Lapisan Baru**.
-- **Salin**: **Salin**, **Salin Gabungan**, atau **Potong**, lihat [Salin dan tempel](/id/docs/transform/clipboard/).
-- **Transformasi**: mentransformasi piksel yang terseleksi.
-- **Perbaiki**: perintah perbaikan dan **Transformasi Garis Seleksi**.
-- **Mask**: memberi mask pada lapisan aktif sesuai seleksi.
-- **Sesuaikan**: menambahkan filter yang memakai seleksi sebagai mask-nya, lihat [Cara filter diterapkan](/id/docs/filters/how-filters-apply/).
-- **Isi**: **Isi seleksi**.
-- **Bersihkan**: **Bersihkan Piksel Terpilih** atau **Bersihkan di Luar Seleksi**.
-- **Pangkas**: **Pangkas Kanvas ke Seleksi**, lihat [Pangkas](/id/docs/transform/crop/).
-- **Mask Cepat**: lihat [Mask Cepat](/id/docs/selections/quick-mask/).
-- **Simpan**: **Simpan sebagai Lapisan Seleksi**, lihat [Lapisan seleksi](/id/docs/selections/selection-layers/).
+- **Transformasi** mengubah piksel yang dipilih.
+- **Salin** membuka clipboard dan perintah salin ke lapisan.
+- **Isi seleksi** mengisi piksel yang dipilih; **Bersihkan Piksel Terpilih** menghapusnya.
+- **Sesuaikan** menambahkan filter yang menggunakan pilihan sebagai masker.
+- **Mask** membuka perintah topeng dan perintah pemilihan tersimpan.
+- **Balikkan seleksi** dan **Perbaiki** mengubah garis seleksi.
+- **Batalkan seleksi piksel** menghapus pilihan.
 
-Pada bilah yang sempit, tombol terakhir, seperti **Mask Cepat** dan **Simpan**, dipindahkan ke **Lainnya**.
+**Lainnya** berisi **Bersihkan di Luar Seleksi** dan **Pangkas Kanvas ke Seleksi**. Saat **Operasi** aktif, **Tinggalkan Salinan** juga tersedia di sana. Tombol yang tidak muat pada bilah juga dipindahkan ke **Lainnya**. Menu **Seleksi** berada di bagian akhir.
 
 ## Menu Seleksi
 
@@ -145,7 +139,7 @@ Lakukan salah satu langkah berikut:
 
 - Pilih **Edit > Isi seleksi**, **Bersihkan Piksel Terpilih**, atau **Bersihkan di Luar Seleksi**.
 - Tekan **Shift+Backspace** untuk mengisi, atau **Delete** atau **Backspace** untuk membersihkan piksel terseleksi.
-- Pilih **Isi**, atau **Bersihkan** lalu sebuah perintah, di bilah seleksi.
+- Pilih **Isi seleksi** atau **Bersihkan Piksel Terpilih** pada bilah pilihan, atau pilih **Lainnya > Bersihkan di Luar Seleksi**.
 - Di Lukis, pilih **Isi seleksi** di bilah alat Perintah.
 - Buka menu lapisan, lalu pilih **Seleksi Piksel > Isi Seleksi**.
 
@@ -162,7 +156,7 @@ Lakukan salah satu langkah berikut:
 
 - Pilih **Lapisan > Baru > Salin Seleksi ke Lapisan Baru** atau **Lapisan > Baru > Potong Seleksi ke Lapisan Baru**.
 - Tekan **Ctrl+J** untuk menyalin atau **Ctrl+Shift+J** untuk memotong.
-- Pilih **Salin ke Lapisan** di bilah seleksi, lalu pilih perintah.
+- Pilih **Salin** di bilah seleksi, lalu pilih perintah.
 
 Lapisan baru dinamai sesuai lapisan asalnya, misalnya *Salinan Ribbon*, dan
 mempertahankan opasitas, visibilitas, serta mode baurnya. Seleksi dibuang sampai
@@ -177,7 +171,7 @@ Anda dapat menambahkan mask ke lapisan aktif yang hanya menampilkan seleksi.
 Lakukan salah satu langkah berikut:
 
 - Buka menu lapisan, lalu pilih **Mask > Mask: tampilkan seleksi**, atau **Mask > Mask: sembunyikan seleksi** untuk menyembunyikan area yang terseleksi.
-- Pilih **Mask** di bilah seleksi.
+- Pilih **Mask** pada bilah pilihan dan pilih perintah topeng.
 
 Jika lapisan sudah memiliki mask, seleksi menggantikan mask yang ada. Seleksi
 dibuang, dan mask terbuka untuk diedit (lihat [Mask](/id/docs/layers/masks/)).

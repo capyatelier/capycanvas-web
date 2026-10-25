@@ -29,6 +29,8 @@ buttons, and turn workspaces on or off in the **Show in top bar** list.
 The current workspace always has a button. Workspaces you make are added to the
 title bar.
 
+In the **Workspaces** dialog, select the pin beside a workspace to show or hide its button in the title bar.
+
 ![The Show in top bar list under the workspace buttons.](shot:workspaces/show-in-top-bar)
 
 ## New Workspace…
@@ -38,7 +40,7 @@ You can save the current layout as a new workspace.
 Do one of the following:
 
 - Choose **Window > Workspaces > New Workspace…**.
-- Select **New Workspace** (**+**) in the **Workspaces** dialog.
+- Select **New Workspace** (**+**) below the list in the **Workspaces** dialog.
 
 Type a **Name** and select **Create and Switch**. Each workspace needs a name of
 its own.
@@ -49,14 +51,15 @@ Choose **Window > Workspaces > Manage Workspaces…** to open the **Workspaces**
 dialog. Selecting a workspace previews its layout behind the dialog. To switch,
 select **Switch to Workspace**.
 
-- Drag a workspace by its handle to reorder the list. The title bar uses the same order.
-- Select **⋯** next to a workspace, or right-click it, for **Show in top bar**, **Move Up**, **Move Down**, **Rename…** and **Delete…**.
+- Drag the handle at the right of a workspace to reorder the list. The title bar uses the same order.
+- Right-click or hold a workspace for **Rename…**, **Delete…**, **Move Up**, and **Move Down**. Renaming edits the name in the row; press **Enter** to keep it or **Escape** to cancel.
+- Select a workspace, then select **Delete** below the list. On a touch screen, swipe its row to show **Delete**.
 
 To copy a workspace, switch to it and choose **New Workspace…**. **Sketch**,
 **Paint** and **Photo** can't be renamed or deleted, and deleting a workspace is
 permanent.
 
-![The Workspaces dialog with the options of a workspace open.](shot:workspaces/manage-dialog)
+![The Workspaces dialog with a workspace’s context menu open.](shot:workspaces/manage-dialog)
 
 ## Layout History…
 

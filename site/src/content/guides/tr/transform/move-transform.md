@@ -45,9 +45,7 @@ ve döndürür. Her yolu seçmek için **Ctrl+A** tuşlarına basın. Yollar se�
 Seçili piksellerin bir kopyasını taşıyıp özgün pikselleri yerinde
 bırakabilirsiniz.
 
-Araç panelinde veya [seçim çubuğunda](/tr/docs/selections/working/)
-**Kopya bırak** seçeneğini açın. Tek bir sürükleme için tersini yapmak üzere
-sürüklemeye başlarken **Alt** tuşunu basılı tutun.
+**Araç** panelinde **Kopya bırak** seçeneğini açın veya [seçim çubuğunda](/tr/docs/selections/working/) **Diğer > Kopya bırak** yolunu seçin. Sürüklemeye başlarken **Alt** tuşunu basılı tutmak, yalnızca o sürükleme için seçimi tersine çevirir.
 
 ## Dönüştür
 
@@ -63,7 +61,7 @@ Seçim varken **Dönüştür** etkin katmanın veya maskenin seçili piksellerin
 değiştirir. Seçim yoksa seçili katmanları değiştirir. Tutamaçlı bir kutu ve
 tuval çubuğu görünür.
 
-Bitirmek için **Uygula** düğmesini seçin veya **Enter** tuşuna basın. **İptal**
+Bitirmek için **Dönüşümü uygula** düğmesini seçin veya **Enter** tuşuna basın. **Dönüşümü iptal et**
 veya **Escape** dönüştürmeyi atar. Katmanları dönüştürürken **Geri al** da aynı
 işi yapar.
 
@@ -71,7 +69,7 @@ Birden çok katmanı dönüştürmek için önce seçimi temizleyin.
 
 ## Tutamaçlar
 
-**Serbest** ve **Orantılı** modlarında:
+Ölçeklendirme sırasında:
 
 - Kutuyu taşımak için kutunun içinde sürükleyin. Yalnızca yatay veya dikey taşımak için **Shift** tuşunu basılı tutun.
 - Karşı kenardan ölçeklemek için bir köşe veya kenar tutamacını sürükleyin. Oranları korumak için **Shift**, pivot noktası çevresinde ölçeklemek için **Alt** tuşunu basılı tutun.
@@ -96,12 +94,11 @@ Tüm modlarda:
 
 ## Dönüştürme çubuğu
 
-![Mod, Hizala, çevirme ve döndürme düğmeleri, Sıfırla, Enterpolasyon, İptal ve Uygula ile dönüştürme için tuval çubuğu.](shot:transform/transform-bar)
+![Mod düğmeleri, çevirme ve yakalama kontrolleri, Dönüşümü iptal et ve Dönüşümü uygula içeren dönüştürme çubuğu.](shot:transform/transform-bar)
 
 ### Mod
 
-**Serbest**, **Orantılı**, **Boz** veya **Çarpıt**. **Orantılı** oranları
-korur. **Serbest** varsayılandır.
+Çubukta **Ölçekle**, **Boz** veya **Çarpıt** seçeneğini seçin. **Oranları koru**, ölçeklendirme sırasında en boy oranını korur ve **Perspektif**, **Boz**'deki köşe sürüklemelerini yansıtır. **Ölçekle** varsayılandır.
 
 ### Özgün boyut
 
@@ -121,29 +118,24 @@ kılavuzlara hizalar. Döndürme hizalanmaz. Varsayılan olarak kapalıdır.
 
 **Çarpıt** ile:
 
-- **Izgarayı böl**: **Dikey böl**, **Yatay böl** veya **İki yönde böl** seçeneğini seçin, ardından şekli değiştirmeden oraya bir ızgara çizgisi eklemek için çarpıtmaya dokunun. **Escape** bölmeyi iptal eder. Bir ızgara her yönde en fazla 32 hücre tutar.
-- **Noktaları seç**: noktaları seçip birlikte taşımak için noktalara dokunun.
-- **Izgarayı sıfırla**: çarpıtmayı düz bir ızgarayla değiştirir.
-- **Izgara**: **3 × 3** (varsayılan), **4 × 4** veya **5 × 5**. Şekli değiştirene kadar kullanılabilir.
+- **Izgara**, **3 × 3** (varsayılan), **4 × 4** ve **5 × 5** seçeneğini ve ızgara bölme komutlarını açar. Şekli değiştirene kadar ızgara boyutu kullanılabilir.
+- **Dikey böl**, **Yatay böl** veya **İki yönde böl** seçeneğini seçin, ardından şekli değiştirmeden ızgara çizgisi eklemek için ağ üzerinde bir nokta seçin. **Escape** bölünmeyi iptal eder. Bir ızgara her yönde en fazla 32 hücreyi tutar.
+- **Noktaları seç** birlikte hareket edecek noktaları seçer.
+- **Izgarayı sıfırla** düz bir ağı geri yükler.
 
-![Çarpıt modunda Dikey böl menüsü, Noktaları seç, Izgarayı sıfırla ve 3 × 3 menüsüyle tuval çubuğu.](shot:transform/warp-bar)
+![Izgara ve Noktaları seç ile Çarpıt modundaki dönüştürme çubuğu.](shot:transform/warp-bar)
 
 ### Çevirme ve döndürme düğmeleri
 
-**Yatay çevir**, **Dikey çevir**, **90° sola döndür** ve **90° sağa döndür**
-simge düğmeleri içeriği pivot noktası çevresinde yansıtır veya döndürür.
+**Yatay çevir** çubukta. **Diğer**, **Dikey çevir**, **90° sola döndür** ve **90° sağa döndür** seçeneğini içerir. Pivot hakkındaki içeriği yansıtır veya döndürürler.
 
-### Sıfırla
+### Dönüşümü sıfırla
 
-Bu dönüştürmede yapılan tüm değişiklikleri geri alır ve dönüştürmeyi açık
-tutar. **Mod** **Serbest** ayarına döner.
+Geçerli dönüşümdeki her değişikliği geri almak için **Diğer**'de **Dönüşümü sıfırla** seçeneğini seçin. Dönüşüm açık kalır ve **Ölçekle**'ye geri döner.
 
 ### Enterpolasyon
 
-Piksellerin nasıl yeniden örnekleneceğini belirler: **En yakın**,
-**Çift doğrusal**, **Çift kübik** veya **Lanczos**. **Serbest** ve **Orantılı**
-modlarında varsayılan **Çift doğrusal**, **Boz** ve **Çarpıt** modlarında
-**Çift kübik** seçeneğidir.
+Piksellerin nasıl yeniden örnekleneceğini ayarlamak için **Diğer**'de **Interpolation** seçeneğini seçin: **En yakın komşu**, **Çift doğrusal**, **Çift kübik** veya **Lanczos**. Ölçeklendirme sırasında **Çift doğrusal** varsayılandır ve **Boz** ve **Çarpıt**'de **Çift kübik**.
 
 ## Araç panelindeki dönüştürme değerleri
 
@@ -151,7 +143,7 @@ Araç paneli ve Fotoğraf'ta Araç seçenekleri çubuğu, açık bir
 dönüştürmenin değerlerini gösterir. **Çarpıt** modunda gösterilmez.
 
 - **Konum sabitleme noktası**: piksel cinsinden **X** ve **Y**. Üstlerindeki sabitleme ızgarası, bu değerlerin kutunun hangi noktasını verdiğini belirler.
-- **Ölçek**: yüzde cinsinden **Genişlik** ve **Yükseklik**. **Orantılı** bunları bağlı tutar.
+- **Ölçekle**: yüzde cinsinden **Genişlik** ve **Yükseklik**. **Oranları koru** bunları bağlı tutar.
 - **Döndürme**: −180° ile 180° arasında **Açı**.
 - **Eğme**: −85° ile 85° arasında **Eğme**.
 
@@ -176,7 +168,7 @@ Aşağıdakilerden birini yapın:
 - **Katman > Katman ayarları > Dönüşümü uygula** komutunu seçin.
 
 İşlem sürerken tuvalin altındaki bir çubukta “Dönüşüm uygulanıyor…” yazar ve
-**İptal** düğmesi bulunur.
+**Dönüşümü iptal et** düğmesi bulunur.
 
 ## Dönüştürmeyi yinele
 
@@ -187,6 +179,7 @@ ve seçili piksel dönüştürmeleri yinelenmez.
 ## Yerleştirilmiş görüntüler
 
 Başka bir uygulamadan bir görüntü yapıştırdığınızda veya
-**Dosya > Görüntüyü katman olarak içe aktar…** komutunu seçtiğinizde görüntü
-dönüşüm kutusunda açılır. **Uygula** görüntüyü yerleştirir, **İptal** görüntüyü
+**Dosya > Import Image as
+Layer…** komutunu seçtiğinizde görüntü
+dönüşüm kutusunda açılır. **Dönüşümü uygula** görüntüyü yerleştirir, **Dönüşümü iptal et** görüntüyü
 kaldırır. Birini seçene kadar diğer komutlar kullanılamaz.

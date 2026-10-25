@@ -23,6 +23,8 @@ Tant que le stylet est sur la toile, les doigts ne déplacent pas la toile. Un
 doigt posé sur une poignée de transformation ou de recadrage, ou sur la source du
 **Tampon de duplication**, fait glisser la poignée ou la source à la place.
 
+**Magnétisme de la rotation** est activé par défaut et maintient la vue près des quarts de tour. Éteignez-le dans **Affichage > Magnétisme de la rotation** pour une rotation libre.
+
 ## Prélever une couleur
 
 Maintenez un doigt immobile sur la toile pour prélever la couleur qui se trouve

@@ -66,6 +66,7 @@ export const docTopics = [
   { slug: 'preferences', group: 'customize' },
   { slug: 'input/pen', group: 'input' },
   { slug: 'input/pen-pressure', group: 'input' },
+  { slug: 'input/pen-tilt', group: 'input' },
   { slug: 'input/touch', group: 'input' },
   { slug: 'input/keyboard', group: 'input' },
   { slug: 'illustration', group: 'illustration' },

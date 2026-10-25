@@ -29,6 +29,24 @@ mezclador predeterminado.
 Los ajustes de cada mezclador están en
 [Mezcla, difusión y cerdas](/es/docs/brushes/wet-media/).
 
+### Mezclador de cerdas
+
+**Mezclador de cerdas** arrastra la pintura formando vetas. El extremo izquierdo de esta muestra está sin mezclar.
+
+![Mezclador de cerdas formando vetas en las bandas de pintura de la derecha.](shot:examples/bristle-blender)
+
+### Mezclador de tramado
+
+**Mezclador de tramado** mezcla las bandas con un patrón de tramado.
+
+![Mezclador de tramado mezclando las bandas de pintura de la derecha.](shot:examples/dither-blender)
+
+### Marmolado
+
+**Marmolado** curva la pintura formando remolinos.
+
+![Marmolado formando remolinos en las bandas de la derecha.](shot:examples/marbling)
+
 ## Licuar
 
 Haz una de las siguientes acciones:
@@ -54,6 +72,18 @@ Cada modo es un ajuste preestablecido en **Conjunto de herramientas**:
 Licuar no tiene botón Aplicar. Cada trazo cambia la capa y es un paso de deshacer
 propio. Los trazos siguen deformando los píxeles que tenía la capa antes del primer
 trazo, hasta que pintas, rellenas, filtras, transformas o pegas en la capa.
+
+### Borde
+
+**Borde** atrae la pintura hacia la línea del trazo. Las bandas de la izquierda muestran la pintura original.
+
+![Borde atrayendo las bandas de color hacia un trazo horizontal a la derecha.](shot:examples/liquify-edge)
+
+### Reconstruir
+
+**Reconstruir** restaura la pintura original bajo el pincel. Aquí restaura la mitad derecha de las bandas deformadas.
+
+![Bandas deformadas a la izquierda y pintura restaurada con Reconstruir a la derecha.](shot:examples/liquify-reconstruct)
 
 ## Ajustar Licuar y Restablecer Licuar
 

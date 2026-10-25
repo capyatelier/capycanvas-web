@@ -227,7 +227,7 @@ export default async function customize({ e, b, shoot, example, message }) {
       await b.until(`document.querySelector('#tool-search').value===${json(query)} && ${toolChecked(query)}`, 5000);
     },
     teardown: async () => {
-      await escape();
+      await e.send({ type: 'customize', action: { type: 'cancel_tools' } });
       await e.wait(`!document.querySelector('#tool-picker').open`);
     },
   });
@@ -236,9 +236,9 @@ export default async function customize({ e, b, shoot, example, message }) {
   await shoot('toolbars/tool-menu', {
     target: contextMenu,
     setup: async () => {
-      await rightClick('[data-panel="toolbar"] [data-tile]');
+      await rightClick('#workspace .toolbar-controls[data-panel="toolbar"] [data-tile] button');
       const labels = await menuLabels(contextMenu);
-      assert.deepEqual(labels.slice(-2), ['Remove Tool', 'Insert Tools…']);
+      assert.ok(labels.includes('Remove Tool') && labels.includes('Insert Tools…'), 'The tool context menu offers removal and insertion');
     },
     teardown: closeContextMenu,
   });
@@ -273,7 +273,7 @@ export default async function customize({ e, b, shoot, example, message }) {
       await e.wait(`!document.querySelector('#delete-managed-toolbar').disabled`);
     },
     teardown: async () => {
-      await escape();
+      await e.click('#toolbar-manager .dialog-close');
       await e.wait(`!document.querySelector('#toolbar-manager').open`);
     },
   });
@@ -311,7 +311,7 @@ export default async function customize({ e, b, shoot, example, message }) {
   const builtIn = await e.read('JSON.parse(layerApp.app.workspace_view()).switcher.map(w=>w.id)');
   await e.send({ type: 'workspace_manager', command: { type: 'manage' } });
   await e.wait(`document.querySelector('dialog.workspace-manager')?.open`);
-  await press('dialog.workspace-manager .workspace-add');
+  await press('dialog.workspace-manager .workspace-row-actions .workspace-add');
   await e.wait(`!!document.querySelector('.workspace-form[open] input')`);
   await press('.workspace-form[open] input');
   await b.evaluate(`document.querySelector('.workspace-form[open] input').select()`);
@@ -322,6 +322,7 @@ export default async function customize({ e, b, shoot, example, message }) {
   await workspaceReady();
   const inking = await e.read('JSON.parse(layerApp.app.workspace_view()).id');
   assert.ok(!builtIn.includes(inking), 'Inking is a new workspace');
+  await closeManager();
   await e.workspace('illustrator');
   await workspaceReady();
   const inkingRow = `.workspace-row[data-id="${inking}"]`;
@@ -331,7 +332,7 @@ export default async function customize({ e, b, shoot, example, message }) {
       await e.send({ type: 'workspace_manager', command: { type: 'manage' } });
       await e.wait(`document.querySelector('dialog.workspace-manager')?.open`);
       await quiet(b);
-      await press(`${inkingRow} .workspace-options`);
+      await mouse(await point(`${inkingRow} .workspace-row-title`), 'right');
       await e.wait(`!!document.querySelector('.workspace-row-menu')?.checkVisibility()`);
     },
     variant: async locale => {
@@ -339,7 +340,7 @@ export default async function customize({ e, b, shoot, example, message }) {
       await b.evaluate(`document.querySelector('.workspace-row-menu')?.hidePopover();void 0`);
       await e.wait(`(v=>v.ready&&!v.busy&&!v.switcher_busy)(JSON.parse(layerApp.app.workspace_view()))`);
       await quiet(b);
-      await press(`${inkingRow} .workspace-options`);
+      await mouse(await point(`${inkingRow} .workspace-row-title`), 'right');
       await e.wait(`!!document.querySelector('.workspace-row-menu')?.checkVisibility()`);
       await b.call('Input.dispatchMouseEvent', { type: 'mouseMoved', x: -20, y: -20 });
       await b.settle();
@@ -349,7 +350,7 @@ export default async function customize({ e, b, shoot, example, message }) {
   await e.send({ type: 'workspace_manager', command: { type: 'manage' } });
   await e.wait(`document.querySelector('dialog.workspace-manager')?.open`);
   await quiet(b);
-  await press(`${inkingRow} .workspace-options`);
+  await mouse(await point(`${inkingRow} .workspace-row-title`), 'right');
   await press('.workspace-row-menu [data-action="delete"]');
   await e.wait(`!!document.querySelector('.workspace-form[open] .destructive-action')`);
   await press('.workspace-form[open] .destructive-action');

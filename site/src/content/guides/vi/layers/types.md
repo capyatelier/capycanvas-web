@@ -14,7 +14,7 @@ Chọn **Lớp > Mới > Lớp mới** hoặc chọn **Lớp mới** ở cuối 
 
 ## Lớp Đối tượng
 
-Lớp Đối tượng giữ ảnh đã nhập ở kích thước, độ sâu bit và hồ sơ màu riêng. Mở hoặc nhập ảnh, thả ảnh lên khung vẽ và dán ảnh từ ứng dụng khác đều tạo lớp Đối tượng.
+Lớp Đối tượng giữ nguyên kích thước, độ sâu bit và hồ sơ màu của ảnh được nhập. Nhập ảnh dưới dạng lớp, thả ảnh lên khung vẽ hoặc dán ảnh từ ứng dụng khác sẽ tạo lớp Đối tượng.
 
 Bạn có thể di chuyển, đổi kích thước và xoay lớp Đối tượng mà không liên tục lấy mẫu lại nguồn. Chọn **Lớp > Chuyển lớp thành ảnh điểm** khi cần vẽ lên pixel hoặc dùng lệnh yêu cầu lớp vẽ. Chuyển thành ảnh điểm sẽ chuyển sang không gian màu, độ sâu bit và lưới pixel của bản vẽ.
 

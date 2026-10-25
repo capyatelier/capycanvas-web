@@ -25,13 +25,19 @@ Ein Werkzeug hat eine Blase, und wenn Sie das Werkzeug erneut herausziehen, wird
 
 ## Halo und Auswahl
 
-Eine Blase erscheint ausgewählt, und ihr Halo für die Einstellungen ist geöffnet, wenn das Werkzeug Einstellungen hat. Jedes Tippen schaltet weiter von Halo über Auswahl zu geschlossen; nur eine Pinselblase hat keine Auswahl. Tippen auf die Blase eines nicht ausgewählten Werkzeugs wählt zuerst das Werkzeug aus.
+Die Auswahl einer Werkzeugblase öffnet ihren Einstellungsring. Erneutes Auswählen öffnet die Werkzeugauswahl; bei einer Pinselblase wird stattdessen der Einstellungsring geöffnet oder geschlossen. Ein Werkzeug oder Pinsel aus der Auswahl öffnet seinen Einstellungsring.
 
 Ziehen Sie entlang eines Halobogens, um eine Einstellung zu ändern, und tippen Sie doppelt oder doppelklicken Sie auf den Bogen, um sie zurückzusetzen. Die Auswahl legt die Medien des Werkzeugs als Ring um die Blase: Wählen Sie ein Medium aus, um seine Pinsel aufzufächern, und dann einen Pinsel.
 
 Halten Sie die Blase gedrückt oder klicken Sie mit der rechten Maustaste darauf, um ihr Menü zu öffnen. Seine Häkchen-Einträge legen Einstellungen in den Halo, bis zu sechs pro Pinsel.
 
 ![Die Auswahl einer Blase mit dem ausgewählten Medium Aquarell und seinen Pinseln daneben.](shot:bubbles/dial-chooser)
+
+## Schieberegler anzeigen
+
+Deaktivieren Sie **Schieberegler anzeigen** im Menü einer Blase, um die Einstellungsbögen auszublenden. Die Einstellung gilt für Werkzeug, Medium, Pinsel und **Farbpipette**-Blasen im aktuellen Arbeitsbereich und bleibt gespeichert, nachdem Sie sie wieder platziert haben. Wenn Sie ein Werkzeug oder einen Pinsel auswählen, bleiben dessen Schieberegler ausgeblendet, solange diese Einstellung deaktiviert ist.
+
+![Das Element Schieberegler anzeigen im Menü einer Werkzeugblase.](shot:bubbles/show-sliders)
 
 ## Farbring
 

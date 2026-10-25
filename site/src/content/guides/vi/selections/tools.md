@@ -90,18 +90,17 @@ Nhấp vào từng góc của hình. Để hoàn tất, thực hiện một tron
 
 - Nhấp lại vào góc đầu tiên.
 - Nhấn **Enter**.
-- Chọn **Hoàn tất** trên thanh khung vẽ, hoặc **Hoàn tất vùng chọn** trong bảng Công cụ.
+- Chọn **Hoàn tất vùng chọn** trên thanh khung vẽ, hoặc **Hoàn tất vùng chọn** trong bảng Công cụ.
 
 Đa giác cần ít nhất ba góc.
 
-- Để bỏ góc cuối cùng, nhấn **Backspace** hoặc **Xóa**, hoặc chọn **Xóa điểm** trên thanh khung vẽ hay **Xóa điểm cuối** trong bảng Công cụ.
-- Để hủy đa giác, nhấn **Escape**, hoặc chọn **Hủy** trên thanh khung vẽ hay **Hủy vùng chọn** trong bảng Công cụ.
+- Để bỏ góc cuối cùng, nhấn **Backspace** hoặc **Xóa**, hoặc chọn **Xóa điểm cuối** trên thanh khung vẽ hay **Xóa điểm cuối** trong bảng Công cụ.
+- Để hủy đa giác, nhấn **Escape**, hoặc chọn **Hủy vùng chọn** trên thanh khung vẽ hay **Hủy vùng chọn** trong bảng Công cụ.
 - Để cạnh tiếp theo bắt theo từng bước 45°, giữ **Shift**. Để mọi cạnh đều bắt theo 45°, bật **Giới hạn cạnh theo góc 45°** trong bảng Công cụ.
 
-Trong lúc bạn đặt các góc, [thanh khung vẽ](/vi/docs/selections/working/) ở cuối
-khung vẽ hiện **Xóa điểm**, **Hủy** và **Hoàn tất**.
+Trong khi bạn đặt các góc, [thanh khung vẽ](/vi/docs/selections/working/) ở cuối canvas hiển thị **Xóa điểm cuối**, **Hủy vùng chọn** và **Hoàn tất vùng chọn**.
 
-![Thanh khung vẽ khi vẽ đa giác, với Xóa điểm, Hủy và Hoàn tất.](shot:selections/tools-polygon-bar)
+![Thanh canvas cho đa giác, với Xóa điểm cuối, Hủy vùng chọn và Hoàn tất vùng chọn.](shot:selections/tools-polygon-bar)
 
 ## Tự động chọn và Chọn theo màu
 

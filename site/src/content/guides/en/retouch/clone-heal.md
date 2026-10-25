@@ -87,8 +87,7 @@ The next click sets the source.
 ## Canvas bar for the source disc
 
 Click the source disc without dragging to show the
-[canvas bar](/docs/selections/working/) beside it, with **Aligned**,
-**Source**, the two flip buttons, **Reset Offset** and **Set Source**. Click the
+[canvas bar](/docs/selections/working/) beside it, with **Aligned**, **Source**, **Flip Source Horizontally**, and **Set Source**. **More** holds **Flip Source Vertically** and **Reset Source Offset**. Click the
 disc again, or choose another tool, to hide the bar.
 
 ![The source disc with its canvas bar.](shot:retouch/clone-source-bar)

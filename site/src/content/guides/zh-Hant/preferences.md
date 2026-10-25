@@ -117,7 +117,7 @@ related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", 
 
 ## 繪圖筆與輸入
 
-此頁面上的設定在[筆](/zh-Hant/docs/input/pen/)和[觸控手勢](/zh-Hant/docs/input/touch/)中介紹。
+此頁面的設定見[畫筆](/zh-Hant/docs/input/pen/)、[畫筆傾斜](/zh-Hant/docs/input/pen-tilt/)和[觸控手勢](/zh-Hant/docs/input/touch/)。
 
 ## 鍵盤快捷鍵
 

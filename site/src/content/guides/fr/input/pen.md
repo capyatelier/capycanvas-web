@@ -12,6 +12,10 @@ Les réglages du stylet sont sur la page **Stylet et saisie** de **Édition > Pr
 
 Sélectionnez **Ajuster…** à côté de **Pression du stylet** pour modeler la courbe de pression et la tester sur la toile actuelle. La courbe s’applique à tous les pinceaux et outils sensibles à la pression ; les traits déjà dessinés ne changent pas. Voir [Pression du stylet](/fr/docs/input/pen-pressure/).
 
+## Inclinaison du stylet
+
+Sélectionnez **Ajuster…** à côté de **Inclinaison du stylet** pour modifier la courbe d'inclinaison et la direction de votre stylet. Voir [Inclinaison du stylet](/fr/docs/input/pen-tilt/).
+
 ## Prédiction des traits
 
 La prédiction des traits dessine un court segment du trait en avance sur la

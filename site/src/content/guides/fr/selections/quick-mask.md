@@ -55,10 +55,10 @@ et **Transformer**, sont indisponibles en Masque rapide.
 La [barre d’actions de la toile](/fr/docs/selections/working/), en bas de la
 toile, porte l’intitulé « Masque rapide » :
 
-- **Inverser** : **Inverser la sélection**.
-- **Remplissage** et **Effacer** : **Remplir le masque** remplit tout le masque, et **Effacer la couverture de sélection** le vide.
+- **Inverser la sélection** permute les zones sélectionnées et non sélectionnées.
+- **Remplir le masque** remplit tout le masque et **Effacer la couverture de sélection** vide le masque.
 - **Affiner** : **Agrandir…**, **Réduire…**, **Contour progressif…**, **Bordure…** et **Lisser…**. **Transformer le contour** n’est pas disponible ici.
-- **Enregistrer** : **Enregistrer comme calque de sélection** (voir [Calques de sélection](/fr/docs/selections/selection-layers/)).
+- **Enregistrer comme calque de sélection** : voir [Couches de sélection](/fr/docs/selections/selection-layers/).
 - **Quitter** : **Revenir au dessin**.
 
 Quand la barre d’actions de la toile est masquée, la barre Masque rapide

@@ -12,9 +12,9 @@ Choisissez **Fichier > Ouvrir…**, ou appuyez sur **Ctrl+O**, et sélectionnez 
 ([Ouvrir et enregistrer](/fr/docs/files/open-save/)). La photo s’ouvre dans son
 propre onglet de dessin.
 
-![Le panneau Calques avec le calque Objet du terrarium.](shot:photo/open-layers)
+![Le panneau Calques avec le calque de peinture terrarium.](shot:photo/open-layers)
 
-Le dessin contient un calque Objet nommé d’après le fichier. Dans l’exemple, le calque s’appelle « terrarium ».
+Le dessin comporte un calque de peinture nommé d’après le fichier. Dans l’exemple, le calque s’appelle « terrarium ».
 
 ## 2. Choisir un rapport
 
@@ -41,9 +41,9 @@ la roche et des pointes de la fougère.
 
 ## 4. Appliquer le recadrage
 
-Sélectionnez **Appliquer** dans la barre de recadrage, ou appuyez sur **Entrée**. La
+Sélectionnez **Appliquer le recadrage** dans la barre de recadrage, ou appuyez sur **Entrée**. La
 toile prend la taille du cadre : 2000 × 1600 pixels dans l’exemple. Les pixels
-recadrés restent sur le calque, masqués, sauf si **Supprimer la peinture recadrée**
+recadrés restent sur le calque, masqués, sauf si **Plus > Supprimer les pixels peints recadrés**
 est activé dans la barre de recadrage.
 
 Étape suivante : [Retouche](/fr/docs/photo/retouch/).

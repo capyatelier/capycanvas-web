@@ -29,9 +29,9 @@ Thanh nằm bên cạnh đối tượng, hoặc ở cạnh dưới khung vẽ. T
 có:
 
 - Một nhãn, ví dụ “Mặt nạ nhanh” hoặc “Biến đổi viền”.
-- Các nút. Nút bị mờ là nút không dùng được; chọn nút đó để xem lý do.
+- Các nút bấm. Di chuột qua biểu tượng để đọc tên của nó. Nút bị mờ không khả dụng; chọn nó để xem lý do.
 - **Thêm**, chứa các nút không vừa trên thanh, tiếp theo là trình đơn **Chọn** với vùng chọn hoặc trình đơn **Lớp** với mặt nạ.
-- Nút hoàn tất, ví dụ **Áp dụng** hoặc **Thoát**.
+- Nút hoàn tất, ví dụ **Áp dụng biến đổi** hoặc **Thoát**.
 
 Thanh nằm cạnh đối tượng sẽ ẩn đi khi bạn chạm vào khung vẽ hoặc di chuyển khung
 nhìn.
@@ -53,21 +53,15 @@ Cọ, các công cụ tô đầy, **Chuyển màu** và **Hình** không bao gi�
 
 ![Thanh vùng chọn bên dưới một vùng chọn hình chữ nhật.](shot:selections/working-selection-bar)
 
-- **Bỏ chọn** và **Đảo ngược**: xem trình đơn Chọn bên dưới.
-- **Giữ bản sao**: chỉ có với **Thao tác**, xem [Di chuyển và biến đổi](/vi/docs/transform/move-transform/).
-- **Sao chép sang lớp**: **Sao chép vùng chọn sang lớp mới** hoặc **Cắt vùng chọn sang lớp mới**.
-- **Sao chép**: **Sao chép**, **Sao chép ảnh gộp** hoặc **Cắt**, xem [Sao chép và dán](/vi/docs/transform/clipboard/).
-- **Biến đổi**: biến đổi các pixel đã chọn.
-- **Tinh chỉnh**: các lệnh tinh chỉnh và **Biến đổi viền**.
-- **Mặt nạ**: tạo mặt nạ cho lớp hiện tại theo vùng chọn.
-- **Điều chỉnh**: thêm một bộ lọc dùng vùng chọn làm mặt nạ, xem [Phạm vi tác động của bộ lọc](/vi/docs/filters/how-filters-apply/).
-- **Tô đầy**: **Tô đầy vùng chọn**.
-- **Xóa**: **Xóa pixel đã chọn** hoặc **Xóa ngoài vùng chọn**.
-- **Cắt xén**: **Cắt khung vẽ theo vùng chọn**, xem [Cắt xén](/vi/docs/transform/crop/).
-- **Mặt nạ nhanh**: xem [Mặt nạ nhanh](/vi/docs/selections/quick-mask/).
-- **Lưu**: **Lưu thành lớp vùng chọn**, xem [Lớp vùng chọn](/vi/docs/selections/selection-layers/).
+- **Biến đổi** thay đổi các pixel đã chọn.
+- **Sao chép** mở clipboard và lệnh sao chép vào lớp.
+- **Tô đầy vùng chọn** lấp đầy các pixel đã chọn; **Xóa pixel đã chọn** xóa chúng.
+- **Điều chỉnh** thêm bộ lọc dùng vùng chọn làm mặt nạ.
+- **Mặt nạ** mở các lệnh mặt nạ và các lệnh chọn đã lưu.
+- **Đảo vùng chọn** và **Tinh chỉnh** thay đổi đường viền vùng chọn.
+- **Bỏ chọn pixel** xóa lựa chọn.
 
-Trên thanh hẹp, các nút cuối, chẳng hạn **Mặt nạ nhanh** và **Lưu**, chuyển vào **Thêm**.
+**Thêm** chứa **Xóa ngoài vùng chọn** và **Cắt khung vẽ theo vùng chọn**. Khi **Thao tác** đang hoạt động, mục **Giữ bản sao** cũng xuất hiện. Các nút không vừa thanh cũng được chuyển vào **Thêm**. Cuối cùng là menu **Chọn**.
 
 ## Trình đơn Chọn
 
@@ -143,7 +137,7 @@ Thực hiện một trong các cách sau:
 
 - Chọn **Chỉnh sửa > Tô đầy vùng chọn**, **Xóa pixel đã chọn** hoặc **Xóa ngoài vùng chọn**.
 - Nhấn **Shift+Backspace** để tô đầy, hoặc **Xóa** hay **Backspace** để xóa các pixel đã chọn.
-- Chọn **Tô đầy**, hoặc **Xóa** rồi chọn một lệnh, trên thanh vùng chọn.
+- Chọn **Tô đầy vùng chọn** hoặc **Xóa pixel đã chọn** trên thanh lựa chọn hoặc chọn **Thêm > Xóa ngoài vùng chọn**.
 - Trong Vẽ, chọn **Tô đầy vùng chọn** trên Thanh lệnh.
 - Mở trình đơn của lớp rồi chọn **Vùng chọn pixel > Tô đầy vùng chọn**.
 
@@ -160,7 +154,7 @@ Thực hiện một trong các cách sau:
 
 - Chọn **Lớp > Mới > Sao chép vùng chọn sang lớp mới** hoặc **Lớp > Mới > Cắt vùng chọn sang lớp mới**.
 - Nhấn **Ctrl+J** để sao chép hoặc **Ctrl+Shift+J** để cắt.
-- Chọn **Sao chép sang lớp** trên thanh vùng chọn rồi chọn một lệnh.
+- Chọn **Sao chép** trên thanh vùng chọn rồi chọn một lệnh.
 
 Lớp mới được đặt tên theo lớp ban đầu, ví dụ *Bản sao Ribbon*, và giữ độ đục, trạng thái
 hiển thị và chế độ hòa trộn của lớp ban đầu. Vùng chọn bị bỏ cho đến khi bạn chọn
@@ -176,7 +170,7 @@ Bạn có thể thêm cho lớp hiện tại một mặt nạ chỉ hiện vùng
 Thực hiện một trong các cách sau:
 
 - Mở trình đơn của lớp rồi chọn **Mặt nạ > Mặt nạ: hiện vùng chọn**, hoặc **Mặt nạ > Mặt nạ: ẩn vùng chọn** để ẩn vùng đã chọn.
-- Chọn **Mặt nạ** trên thanh vùng chọn.
+- Chọn **Mặt nạ** trên thanh lựa chọn và chọn lệnh mặt nạ.
 
 Nếu lớp đã có mặt nạ, vùng chọn sẽ thay thế mặt nạ hiện có. Vùng chọn bị bỏ, và mặt
 nạ mở ra để chỉnh sửa (xem [Mặt nạ](/vi/docs/layers/masks/)).

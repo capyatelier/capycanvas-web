@@ -30,6 +30,8 @@ de trabalho na lista **Mostrar na barra superior**.
 A área de trabalho atual sempre tem um botão. As áreas de trabalho que você cria
 são adicionadas à barra de título.
 
+Na caixa de diálogo **Áreas de trabalho**, selecione o alfinete ao lado de um espaço de trabalho para mostrar ou ocultar seu botão na barra de título.
+
 ![A lista Mostrar na barra superior abaixo dos botões das áreas de trabalho.](shot:workspaces/show-in-top-bar)
 
 ## Nova área de trabalho…
@@ -39,7 +41,7 @@ Você pode salvar o layout atual como uma nova área de trabalho.
 Faça uma das seguintes ações:
 
 - Escolha **Janela > Áreas de trabalho > Nova área de trabalho…**.
-- Selecione **Nova área de trabalho** (**+**) na caixa de diálogo **Áreas de trabalho**.
+- Selecione **Nova área de trabalho** (**+**) abaixo da lista na caixa de diálogo **Áreas de trabalho**.
 
 Digite um **Nome** e selecione **Criar e trocar**. Cada área de trabalho precisa
 de um nome próprio.
@@ -51,14 +53,15 @@ caixa de diálogo **Áreas de trabalho**. Selecionar uma área de trabalho mostr
 prévia do layout atrás da caixa de diálogo. Para trocar, selecione **Trocar para
 área de trabalho**.
 
-- Arraste uma área de trabalho pela alça para reordenar a lista. A barra de título usa a mesma ordem.
-- Selecione **⋯** ao lado de uma área de trabalho, ou clique com o botão direito nela, para ver **Mostrar na barra superior**, **Mover para cima**, **Mover para baixo**, **Renomear…** e **Excluir…**.
+- Arraste a alça à direita de uma área de trabalho para reordenar a lista. A barra de título usa a mesma ordem.
+- Clique com o botão direito ou mantenha pressionado um espaço de trabalho para **Renomear…**, **Excluir…**, **Mover para cima** e **Mover para baixo**. Renomear edita o nome na linha; pressione **Enter** para mantê-lo ou **Escape** para cancelar.
+- Selecione um espaço de trabalho e selecione **Excluir** abaixo da lista. Em uma tela sensível ao toque, deslize sua linha para mostrar **Excluir**.
 
 Para copiar uma área de trabalho, troque para ela e escolha **Nova área de
 trabalho…**. **Esboço**, **Pintura** e **Foto** não podem ser renomeadas nem
 excluídas, e a exclusão de uma área de trabalho é permanente.
 
-![A caixa de diálogo Áreas de trabalho com as opções de uma área de trabalho abertas.](shot:workspaces/manage-dialog)
+![A caixa de diálogo Áreas de trabalho com o menu de contexto de um espaço de trabalho aberto.](shot:workspaces/manage-dialog)
 
 ## Histórico de layout…
 

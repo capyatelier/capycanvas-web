@@ -85,10 +85,6 @@ Le clic suivant définit la source.
 
 ## Barre d’actions de la toile du disque source
 
-Cliquez sur le disque source sans le faire glisser pour afficher la
-[barre d’actions de la toile](/fr/docs/selections/working/) à côté, avec **Aligné**,
-**Source**, les deux boutons de retournement, **Réinitialiser le décalage** et
-**Définir la source**. Cliquez de nouveau sur le disque, ou choisissez un autre
-outil, pour masquer la barre.
+Cliquez sur le disque source sans le faire glisser pour afficher la [barre de canevas](/fr/docs/selections/working/) à côté, avec **Aligné**, **Source**, **Retourner la source horizontalement** et **Définir la source**. **Plus** contient **Retourner la source verticalement** et **Réinitialiser le décalage de la source**. Cliquez à nouveau sur le disque ou choisissez un autre outil pour masquer la barre.
 
 ![Le disque source et sa barre d’actions de la toile.](shot:retouch/clone-source-bar)

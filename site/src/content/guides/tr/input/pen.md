@@ -12,6 +12,10 @@ Kalem ayarları **Düzenle > Tercihler** içindeki **Kalem ve giriş** sayfasın
 
 Basınç eğrisini biçimlendirmek ve geçerli tuvalde denemek için **Kalem basıncı** yanındaki **Ayarla…** seçeneğini seçin. Eğri basınca duyarlı tüm fırça ve araçlara uygulanır; çizilmiş çizgiler değişmez. Bkz. [Kalem basıncı](/tr/docs/input/pen-pressure/).
 
+## Kalem eğimi
+
+Kaleminizin eğim eğrisini ve yönünü değiştirmek için **Kalem eğimi**'nin yanındaki **Ayarla…** seçeneğini seçin. Bkz. [Kalem eğme](/tr/docs/input/pen-tilt/).
+
 ## Fırça darbesi tahmini
 
 Fırça darbesi tahmini, darbenin kısa bir bölümünü kalem ucunun önünde çizer; siz

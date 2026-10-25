@@ -4,14 +4,14 @@ description: "照片編輯教學第 2 階段：在照片上方的圖層上用修
 related: ["retouch/clone-heal", "layers/settings", "layers/working"]
 ---
 
-本階段創建 *Retouch* 圖層，覆蓋照片中的灰塵和一處污跡。物件圖層保持不變。
+本階段創建 *Retouch* 圖層，覆蓋照片中的灰塵和一處污跡。繪畫圖層保持不變。
 
 ## 1. 新增修飾圖層
 
 1. 選擇圖層面板底部的**新增圖層**，將新圖層重新命名為 *Retouch*。
 2. 選擇**圖層 > 圖層設定 > 使用下方圖層作為參考**（[圖層設定](/zh-Hant/docs/layers/settings/)）。
 
-物件圖層成為參考圖層，其行中眼睛旁邊出現燈塔圖標。修復工具預設從參考圖層複製，並畫在 *Retouch* 上。
+繪畫圖層成為參考圖層，其行中眼睛旁邊出現燈塔圖標。修復工具預設從參考圖層複製，並畫在 *Retouch* 上。
 
 ![圖層面板，Retouch 位於 terrarium 圖層上方，terrarium 圖層顯示參考圖示。](shot:photo/retouch-layers)
 

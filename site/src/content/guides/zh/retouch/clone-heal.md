@@ -75,6 +75,6 @@ related: ["retouch/dodge-burn", "layers/settings", "brushes/basics", "photo/reto
 
 ## 取样圆盘的画布操作栏
 
-点按取样圆盘而不拖动，可在其旁边显示[画布操作栏](/zh/docs/selections/working/)，其中有**对齐**、**来源**、两个翻转按钮、**重置偏移**和**设置取样点**。再次点按圆盘或选择其他工具可隐藏该栏。
+单击源圆盘而不拖动，可在旁边显示[画布栏](/zh/docs/selections/working/)，其中有 **对齐**、**来源**、**水平翻转取样来源** 和 **设置取样点**。**更多** 包含 **垂直翻转取样来源** 和 **重置取样偏移**。再次单击圆盘或选择其他工具可隐藏此栏。
 
 ![取样圆盘及其画布操作栏。](shot:retouch/clone-source-bar)

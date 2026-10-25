@@ -20,8 +20,7 @@ Aşağıdakilerden birini yapın:
 
 ![Kategori menüsü, arama düğmesi ve önizlemeli filtre satırlarıyla Filtreler paneli.](shot:filters/filters-panel)
 
-Bir katman seçiliyken her satır, filtreyi o katman ve altındaki katmanlar
-üzerinde önizler. Hareketli filtrelerin simgesinden önce bir işaret bulunur.
+Her satır, filtreyi sabit bir örnek görüntü üzerinde gösterir. Animasyonlu filtrelerin simgelerinin önünde bir işareti bulunur.
 
 Üstteki menü tek bir kategoriyi veya **Tüm filtreler** seçeneğini gösterir.
 **Filtrelerde ara**, seçilen kategori içinde bir filtreyi adıyla bulur.

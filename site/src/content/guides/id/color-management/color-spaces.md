@@ -53,9 +53,7 @@ tercantum sebagai **Adobe RGB**. lapisan Objek mempertahankan profil sumber dari
 Pilih **Gambar > Manajemen warna > Konversi Ruang Warna…** untuk mengubah angka RGB sehingga warna tetap
 terlihat sama dalam ruang kerja lain, di dalam batas gamutnya.
 
-Dengan **Simpan salinan yang diratakan**, **Terapkan** menjadi **Simpan Salinan…**.
-Salinan memiliki satu lapisan, dengan ukuran dan kedalaman bit yang sama. Nama berkasnya
-harus diakhiri `.capy` dan tidak boleh sama dengan berkas gambar yang sedang terbuka.
+Dengan **Simpan salinan yang diratakan**, **Terapkan** menjadi **Buat Salinan**. Salinan dibuka sebagai gambar baru dengan satu lapisan, dengan ukuran dan kedalaman bit yang sama. Pilih **Berkas > Simpan** untuk menyimpannya sebagai file `.capy`.
 
 ![Dialog Konversi Ruang Warna dengan perbandingan Sebelum dan Sesudah serta pesan gamut.](shot:color-management/convert-dialog)
 
@@ -65,9 +63,7 @@ Ruang kerja tujuan konversi. Awalnya ruang saat ini yang dipilih.
 
 ### Hasil
 
-**Lapisan yang dapat diedit** (bawaan) mengonversi setiap lapisan di tempat.
-**Simpan salinan yang diratakan** menyimpan salinan hasil konversi yang diratakan sebagai
-berkas `.capy` baru dan membiarkan gambar yang terbuka tidak berubah.
+**Lapisan yang dapat diedit** (default) mengonversi setiap lapisan di tempatnya. **Simpan salinan yang diratakan** membuka salinan yang dikonversi dan diratakan sebagai gambar baru dan membiarkan aslinya tidak berubah.
 
 ### Tujuan perenderan
 
@@ -97,14 +93,11 @@ SDR 8-bit.
 
 Untuk menerapkan Tetapkan Profil, Konversi Ruang Warna, atau Ubah Kedalaman Bit:
 
-1. Atur kolom di dialog.
-2. Pilih **Pratinjau Hasil Lengkap**.
-3. Bandingkan **Sebelum** dan **Sesudah**.
-4. Pilih **Terapkan** (atau **Simpan Salinan…**).
+1. Atur bidang dalam dialog.
+2. Bandingkan **Sebelum** dan **Sesudah** saat pratinjau muncul.
+3. Pilih **Terapkan** (atau **Buat Salinan**).
 
-**Terapkan** tetap tidak tersedia sampai pratinjau siap, dan mengubah kolom membuang
-pratinjau. Jika ada warna yang terpotong, baris status berbunyi "Sebagian warna melebihi
-gamut tujuan. Bandingkan hasil sebelum menerapkan."
+**Terapkan** tetap tidak tersedia hingga pratinjau siap. Mengubah bidang akan memperbarui perbandingan. Baris status melaporkan warna apa pun yang terpotong.
 
 Terapkan adalah satu langkah urungkan. Urungkan dan Ulangi membuka
 **Urungkan Perubahan Warna** dan **Ulangi Perubahan Warna**. Dialog ini menerapkan

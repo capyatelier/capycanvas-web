@@ -12,9 +12,9 @@ Bu aşamada açılmış ve 5:4 oranında bir çerçeveye kırpılmış fotoğraf
 seçin ([Açma ve kaydetme](/tr/docs/files/open-save/)). Fotoğraf kendi çizim
 sekmesinde açılır.
 
-![Terrarium nesne katmanıyla Katmanlar paneli.](shot:photo/open-layers)
+![terrarium boya katmanını içeren Katmanlar paneli.](shot:photo/open-layers)
 
-Çizimde dosya adını taşıyan bir nesne katmanı bulunur. Örnekte katmanın adı “terrarium”dur.
+Çizimde dosyanın adını taşıyan bir boya katmanı bulunur. Örnekte katmanın adı “terrarium”dur.
 
 ## 2. Bir oran seçin
 
@@ -43,8 +43,8 @@ eğrelti otunun uçlarına eşit kenar boşlukları vermek için çerçeve sağa
 
 ## 4. Kırpmayı uygulayın
 
-Kırpma çubuğunda **Uygula** düğmesini seçin veya **Enter** tuşuna basın. Tuval
+Kırpma çubuğunda **Kırpmayı uygula** düğmesini seçin veya **Enter** tuşuna basın. Tuval
 çerçevenin boyutunu alır: örnekte 2000 × 1600 piksel. Kırpma çubuğunda
-**Kırpılan boyayı sil** açık değilse kırpılan pikseller katmanda gizli olarak kalır.
+**Diğer > Kırpılan boya piksellerini sil** açık değilse kırpılan pikseller katmanda gizli olarak kalır.
 
 Sonraki aşama: [Rötuş](/tr/docs/photo/retouch/).

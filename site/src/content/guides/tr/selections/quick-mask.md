@@ -54,10 +54,10 @@ Hızlı maskede kullanılamaz.
 Tuvalin altındaki [tuval çubuğunun](/tr/docs/selections/working/) başlığı
 “Hızlı maske” olur:
 
-- **Tersine çevir**: **Seçimi tersine çevir**.
-- **Doldur** ve **Temizle**: **Maskeyi doldur** maskenin tamamını doldurur, **Seçim kapsamını temizle** maskeyi boşaltır.
+- **Seçimi tersine çevir** seçili ve seçilmemiş alanları değiştirir.
+- **Maskeyi doldur** maskenin tamamını doldurur ve **Seçim kapsamını temizle** maskeyi boşaltır.
 - **İyileştir**: **Genişlet…**, **Daralt…**, **Kenarları yumuşat…**, **Kenarlık…** ve **Düzleştir…**. **Seçim anahattını dönüştür** burada kullanılamaz.
-- **Kaydet**: **Seçim katmanı olarak kaydet** (bkz. [Seçim katmanları](/tr/docs/selections/selection-layers/)).
+- **Seçim katmanı olarak kaydet**: bkz. [Seçim katmanları](/tr/docs/selections/selection-layers/).
 - **Çık**: **Çizime dön**.
 
 Tuval çubuğu gizliyse Hızlı maske çubuğu görünmez.

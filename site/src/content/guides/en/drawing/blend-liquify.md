@@ -28,6 +28,24 @@ Choose a set and a blender in **Tool Set**. **Smudge** is the default blender.
 The settings of each blender are in
 [Mixing, bleed and bristles](/docs/brushes/wet-media/).
 
+### Bristle Blender
+
+**Bristle Blender** pulls paint into streaks. The left end of this sample is unblended.
+
+![Bristle Blender streaking the shaded paint at the right.](shot:examples/bristle-blender)
+
+### Dither Blender
+
+**Dither Blender** mixes the bands into a dither pattern.
+
+![Dither Blender mixing the shaded bands at the right.](shot:examples/dither-blender)
+
+### Marbling
+
+**Marbling** curls the paint into swirls.
+
+![Marbling curling the shaded bands at the right.](shot:examples/marbling)
+
 ## Liquify
 
 Do one of the following:
@@ -53,6 +71,18 @@ Each mode is a preset in **Tool Set**:
 Liquify has no Apply button. Each stroke changes the layer and is its own undo
 step. Strokes keep deforming the pixels the layer had before the first stroke,
 until you paint on, fill, filter, transform or paste into the layer.
+
+### Edge
+
+**Edge** pulls paint toward the stroke line. The bands at the left show the original paint.
+
+![Edge pulling the colored bands toward a horizontal stroke at the right.](shot:examples/liquify-edge)
+
+### Reconstruct
+
+**Reconstruct** restores the original paint under the brush. Here it restores the right half of the distorted bands.
+
+![Distorted bands on the left and paint restored with Reconstruct on the right.](shot:examples/liquify-reconstruct)
 
 ## Adjust Liquify and Reset Liquify
 

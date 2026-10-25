@@ -56,10 +56,10 @@ Los comandos que cambian la imagen, como **Borrar píxeles seleccionados** y
 La [barra del lienzo](/es/docs/selections/working/) de la parte inferior del
 lienzo tiene el rótulo «Máscara rápida»:
 
-- **Invertir**: **Invertir selección**.
-- **Rellenar** y **Borrar**: **Rellenar máscara** rellena toda la máscara, y **Borrar cobertura de selección** vacía la máscara.
+- **Invertir selección** intercambia las zonas seleccionadas y no seleccionadas.
+- **Rellenar máscara** rellena toda la máscara y **Borrar cobertura de selección** la vacía.
 - **Perfeccionar**: **Expandir…**, **Contraer…**, **Suavizar bordes…**, **Borde…** y **Suavizar…**. **Transformar contorno** no está disponible aquí.
-- **Guardar**: **Guardar como capa de selección** (consulta [Capas de selección](/es/docs/selections/selection-layers/)).
+- **Guardar como capa de selección**: consulta [Capas de selección](/es/docs/selections/selection-layers/).
 - **Salir**: **Volver a la imagen**.
 
 Con la barra del lienzo oculta, la barra de Máscara rápida no aparece.

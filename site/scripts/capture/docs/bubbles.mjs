@@ -72,9 +72,8 @@ export default async function bubbles({ e, b, shoot, example }) {
   await choose(brush, await chooserCenter(brush, 'brush'));
   await e.wait(`${chooser(brush)}.length===0`);
   await tap(brush);
-  await tap(brush);
+  await e.wait(`${chooser(brush)}.length>0`);
   await shoot('bubbles/dial-chooser', { target: around([brush]), pad: 28, ...ready(steady()) });
-  await tap(brush);
   await tap(brush);
 
   const history = await takeTile('toolbar:19', 20, [1030, 420]);
@@ -88,6 +87,16 @@ export default async function bubbles({ e, b, shoot, example }) {
       await e.wait("document.querySelector('#workspace').classList.contains('bubble-dab-active')");
     },
     teardown: () => bubbleAction({ type: 'ring', id: controls, phase: 'up', position: onSize(.55) }),
+    ...ready(steady()),
+  });
+  await shoot('bubbles/show-sliders', {
+    target: around([brush], [menu]), pad: 28,
+    setup: async () => {
+      const [x, y] = await centre(brush);
+      await rightClick({ x, y });
+      await e.wait(`!!document.querySelector(${json(menu)})`);
+    },
+    teardown: async () => { await escape(); await e.wait(`!document.querySelector(${json(menu)})`); },
     ...ready(steady()),
   });
   await putBackAll();

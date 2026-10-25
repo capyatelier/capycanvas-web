@@ -5,7 +5,7 @@ const group = panel => `.dock-group:has(.dock-tab[data-panel="${panel}"])`;
 const thumbnailsCurrent = `(()=>{const state=layerApp.state(),epoch=String(state.document_file.epoch),list=document.querySelector('#layer-rows').getBoundingClientRect();
   return state.layers.every(layer=>{const row=document.querySelector('#layer-rows .layer-row[data-layer="'+layer.id+'"]');if(!row)return true;const box=row.getBoundingClientRect();
     if(box.height===0||box.bottom<Math.max(0,list.top)||box.top>innerHeight)return true;const [content,mask]=[...row.querySelectorAll('.layer-thumbnail')].map(b=>b.querySelector('canvas'));
-    return (!layer.has_thumbnail||content?.dataset.previewRevision===epoch+':'+String(layer.paint_revision))&&(!layer.has_mask||mask?.dataset.previewRevision===epoch+':'+String(layer.mask_revision));});})()`;
+    return (!layer.has_thumbnail||!!layer.fill_color||content?.dataset.previewRevision===epoch+':'+String(layer.paint_revision))&&(!layer.has_mask||mask?.dataset.previewRevision===epoch+':'+String(layer.mask_revision));});})()`;
 const commandTiles = (...ids) => ({ selector: `.toolbar-controls[data-panel="commands"] > [data-tile]:has(${ids.map(id => `> [data-command="${id}"]`).join(', ')})`, union: true, all: true });
 
 export default async function start({ e, b, shoot, example, message }) {

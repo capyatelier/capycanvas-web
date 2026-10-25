@@ -57,10 +57,10 @@ Befehle, die den Bildinhalt ändern, etwa **Ausgewählte Pixel löschen** und
 Die [Leinwandaktionsleiste](/de/docs/selections/working/) am unteren Rand der
 Leinwand trägt die Beschriftung „Schnellmaske“:
 
-- **Umkehren**: **Auswahl umkehren**.
-- **Füllen** und **Leeren**: **Maske füllen** füllt die ganze Maske, **Auswahlabdeckung löschen** leert die Maske.
+- **Auswahl umkehren** vertauscht die ausgewählten und nicht ausgewählten Bereiche.
+- **Maske füllen** füllt die gesamte Maske und **Auswahlabdeckung löschen** leert die Maske.
 - **Verfeinern**: **Erweitern…**, **Verkleinern…**, **Weiche Kante…**, **Rand…** und **Glätten…**. **Umriss transformieren** ist hier nicht verfügbar.
-- **Speichern**: **Als Auswahlebene speichern** (siehe [Auswahlebenen](/de/docs/selections/selection-layers/)).
+- **Als Auswahlebene speichern**: siehe [Auswahlebenen](/de/docs/selections/selection-layers/).
 - **Verlassen**: **Zur Zeichnung zurückkehren**.
 
 Ist die Leinwandaktionsleiste ausgeblendet, erscheint die Leiste der

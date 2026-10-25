@@ -23,6 +23,8 @@ While the pen is on the canvas, fingers don't move the canvas. A finger on a
 transform or crop handle, or on the source of the **Clone Stamp**, drags the
 handle or the source instead.
 
+**Snap rotation** is on by default and holds the view near quarter turns. Turn it off in **View > Snap rotation** for free rotation.
+
 ## Picking a color
 
 Hold one finger still on the canvas to pick the color under it. A magnifying

@@ -79,6 +79,12 @@ Faça uma das seguintes ações:
 
 Para voltar a 0°, pressione **5** ou selecione **Redefinir rotação** no menu da indicação de zoom.
 
+## Encaixar rotação
+
+**Encaixar rotação** mantém a visualização próxima de 0°, 90°, 180° e 270° enquanto você gira com um gesto, a ferramenta **Girar visualização** ou um controle deslizante. Está ativado por padrão.
+
+Ligue ou desligue em **Exibir > Encaixar rotação** ou no menu de leitura de zoom. **Bloquear rotação** interrompe totalmente os gestos de rotação.
+
 ## Inverter a visualização
 
 Faça uma das seguintes ações:

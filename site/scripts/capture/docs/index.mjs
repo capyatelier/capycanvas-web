@@ -15,5 +15,6 @@ import customize from './customize.mjs';
 import bubbles from './bubbles.mjs';
 import input from './input.mjs';
 import photo from './photo.mjs';
+import toolExamples from './tool-examples.mjs';
 
-export const chapters = { illustration, start, files, drawing, brushes, color, layers, vector, filters, selections, transform, retouch, colorManagement, customize, bubbles, input, photo };
+export const chapters = { illustration, start, files, drawing, brushes, color, layers, vector, filters, selections, transform, retouch, colorManagement, customize, bubbles, input, photo, toolExamples };

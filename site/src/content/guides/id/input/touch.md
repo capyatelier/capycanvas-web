@@ -22,6 +22,8 @@ Selama pena berada di kanvas, jari tidak menggerakkan kanvas. Jari pada gagang
 transformasi atau pemangkasan, atau pada sumber **Stempel Klon**, akan menyeret gagang
 atau sumber itu.
 
+**Lekatkan rotasi** aktif secara default dan mempertahankan tampilan hampir seperempat putaran. Matikan di **Tampilan > Lekatkan rotasi** untuk rotasi bebas.
+
 ## Mengambil warna
 
 Tahan satu jari diam di kanvas untuk mengambil warna di bawahnya. Cincin pembesar muncul

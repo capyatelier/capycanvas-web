@@ -14,7 +14,7 @@ Wählen Sie **Ebene > Neu > Neue Ebene** oder **Neue Ebene** unten im Ebenen-Bed
 
 ## Objektebene
 
-Eine Objektebene behält ein importiertes Bild in seiner eigenen Größe, Farbtiefe und seinem Farbprofil. Beim Öffnen oder Importieren eines Bilds, Ablegen eines Bilds auf der Leinwand und Einfügen eines Bilds aus einer anderen App entstehen Objektebenen.
+Eine Objektebene behält die Größe, Bittiefe und das Farbprofil des importierten Bildes bei. Wenn Sie ein Bild als Ebene importieren, auf die Leinwand ziehen oder aus einer anderen App einfügen, entsteht eine Objektebene.
 
 Sie können eine Objektebene verschieben, skalieren und drehen, ohne ihre Quelle wiederholt neu zu berechnen. Wählen Sie **Ebene > Ebene rastern**, wenn Sie auf ihren Pixeln malen oder einen Befehl verwenden möchten, der eine Malebene erfordert. Das Rastern wandelt sie in Farbraum, Farbtiefe und Pixelraster der Zeichnung um.
 

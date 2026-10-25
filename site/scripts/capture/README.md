@@ -38,6 +38,9 @@ where it renders WebGPU correctly.
 `docs/index.mjs` lists one recipe per chapter. The illustration chapter draws
 the tutorial study with real pen input and saves the downloadable examples;
 other chapters get them with `example(name)`, which waits for that chapter.
+The `toolExamples` chapter draws colored bands and applies Bristle Blender,
+Dither Blender, Marbling, Liquify Edge, and Liquify Reconstruct. These images
+show the original paint at the left and the result at the right.
 `showcase.mjs` stages the homepage slides from the scenes in
 `showcase-scenes.mjs`, which the [software center screenshots](../store/README.md)
 share.

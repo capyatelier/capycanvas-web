@@ -5,14 +5,14 @@ related: ["retouch/clone-heal", "layers/settings", "layers/working"]
 ---
 
 This stage produces a *Retouch* layer that covers dust and a smudge in the
-photo. The Object layer doesn't change.
+photo. The Paint layer doesn't change.
 
 ## 1. Add a retouch layer
 
 1. Select **New layer** at the bottom of the Layers panel, and rename the new layer *Retouch*.
 2. Choose **Layer > Layer Settings > Use layer below as reference** ([Layer settings](/docs/layers/settings/)).
 
-The Object layer becomes a reference layer, and a lighthouse icon appears next
+The Paint layer becomes a reference layer, and a lighthouse icon appears next
 to the eye on its row. The healing tools copy from the reference layers by
 default and paint on *Retouch*.
 

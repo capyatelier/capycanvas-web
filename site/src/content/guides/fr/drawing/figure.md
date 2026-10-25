@@ -89,10 +89,10 @@ Vous pouvez dessiner un tracé point d’ancrage par point d’ancrage.
 - Cliquez pour ajouter un point d’ancrage d’angle. Appuyez et faites glisser pour sortir des poignées et créer un point d’ancrage lisse, ou maintenez **Alt** enfoncée pour ne faire glisser que la poignée sortante.
 - Maintenez **Maj** enfoncée pour placer le point d’ancrage suivant par pas de 45° à partir du précédent.
 - Cliquez sur le premier point d’ancrage pour fermer le tracé.
-- Sélectionnez **Terminer** dans la barre de la toile ou appuyez sur **Entrée** pour ajouter le tracé. **Annuler** ou **Échap** l’abandonne.
-- **Supprimer le point** ou **Retour arrière** supprime le dernier point d’ancrage, tout comme **Annuler**.
+- Sélectionnez **Terminer le tracé** dans la barre de la toile ou appuyez sur **Entrée** pour ajouter le tracé. **Annuler le tracé** ou **Escape** l’abandonne.
+- **Retirer le dernier point** ou **Retour arrière** supprime le dernier point d’ancrage, tout comme **Annuler**.
 
-![La barre de la toile pendant le dessin d’un tracé, avec Supprimer le point, Annuler et Terminer.](shot:vector/path-bar)
+![La barre de canevas lorsqu'un chemin est tracé, avec Retirer le dernier point, Annuler le tracé et Terminer le tracé.](shot:vector/path-bar)
 
 Le tracé utilise le mode actif, l’**Épaisseur de ligne** et les couleurs, avec des angles pointus et des extrémités plates. Sur un calque vectoriel, il est sélectionné quand vous terminez, et un tracé qui commence à l’extrémité ouverte d’un tracé sélectionné le prolonge.
 

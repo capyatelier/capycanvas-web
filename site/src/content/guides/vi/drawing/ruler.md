@@ -68,7 +68,7 @@ Thực hiện một trong các cách sau:
 
 - Chọn **Hiển thị > Hiện thước** hoặc **Hiển thị > Bắt dính vào thước**.
 - Khi công cụ Thước đang hoạt động, hoặc khi một đường hướng dẫn được chọn bằng Thao tác, chọn **Hiện thước** hoặc **Bắt dính vào thước** trong bảng **Công cụ**.
-- Chọn **Đường hướng dẫn** hoặc **Bắt dính** trên thanh đường hướng dẫn.
+- Chọn **Thêm > Show rulers** hoặc chọn **Bắt dính vào đường hướng dẫn** trên thanh hướng dẫn.
 
 Mặc định cả hai đều bật. Không dùng được **Bắt dính vào thước** khi đường hướng dẫn
 đang ẩn.
@@ -79,7 +79,7 @@ Chọn đường hướng dẫn, rồi thực hiện một trong các cách sau:
 
 - Nhấn **Xóa** hoặc **Backspace**.
 - Chọn **Xóa thước** trong bảng **Công cụ**.
-- Chọn **Xóa** trên thanh đường hướng dẫn.
+- Chọn **Xóa đường hướng dẫn** trên thanh đường hướng dẫn.
 
 **Xóa** và **Backspace** chỉ xóa đường hướng dẫn khi công cụ đang hoạt động là
 Thước, Hình, Thao tác, Biến đổi hoặc Cắt xén. Với các công cụ khác, các phím này chạy
@@ -92,15 +92,15 @@ hiện bên dưới các tay nắm của nó.
 
 | Nút | Tác dụng |
 | --- | --- |
-| **Xóa** | Xóa đường hướng dẫn. |
-| **Bắt dính** | Bật hoặc tắt **Bắt dính vào thước**. |
-| **Đường hướng dẫn** | Hiện hoặc ẩn mọi đường hướng dẫn. Ẩn đường hướng dẫn cũng ẩn thanh này. |
+| **Xóa đường hướng dẫn** | Xóa đường hướng dẫn. |
+| **Bắt dính vào đường hướng dẫn** | Bật hoặc tắt **Snap to rulers**. |
+| **Thêm > Show rulers** | Hiện hoặc ẩn mọi đường hướng dẫn. Ẩn đường hướng dẫn cũng ẩn thanh này. |
 | **Làm thẳng** | Bắt đầu **Làm thẳng ảnh theo đường hướng dẫn**. Chỉ có với đường hướng dẫn Thẳng. |
 | **Thêm** | Mở một trình đơn có **Hiện thanh thao tác khung vẽ**. |
 
 Tắt **Hiển thị > Hiện thanh thao tác khung vẽ** sẽ bỏ thanh đường hướng dẫn.
 
-![Thanh đường hướng dẫn bên dưới một đường hướng dẫn Thẳng đang chọn, với Xóa, Bắt dính, Đường hướng dẫn, Làm thẳng và Thêm.](shot:drawing/ruler-guide-bar)
+![Thanh hướng dẫn bên dưới hướng dẫn Thẳng đã chọn, với Xóa đường hướng dẫn, Bắt dính vào đường hướng dẫn, Làm thẳng và Thêm.](shot:drawing/ruler-guide-bar)
 
 ## Di chuyển đường hướng dẫn bằng Thao tác
 

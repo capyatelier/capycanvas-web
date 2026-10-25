@@ -87,9 +87,6 @@ El siguiente clic establece el origen.
 
 ## Barra del lienzo del disco de origen
 
-Haz clic en el disco de origen sin arrastrar para mostrar a su lado la
-[barra del lienzo](/es/docs/selections/working/), con **Alineado**, **Origen**,
-los dos botones de voltear, **Restablecer desplazamiento** y **Establecer origen**.
-Vuelve a hacer clic en el disco, o elige otra herramienta, para ocultar la barra.
+Haz clic en el disco de origen sin arrastrarlo para mostrar a su lado la [barra del lienzo](/es/docs/selections/working/), con **Alineado**, **Origen**, **Voltear origen horizontalmente** y **Establecer origen**. **Más** contiene **Voltear origen verticalmente** y **Restablecer desplazamiento del origen**. Vuelve a hacer clic en el disco o elige otra herramienta para ocultar la barra.
 
 ![El disco de origen con su barra del lienzo.](shot:retouch/clone-source-bar)

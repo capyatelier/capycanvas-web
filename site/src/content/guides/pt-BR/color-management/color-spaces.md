@@ -52,9 +52,7 @@ Escolha **Imagem > Gerenciamento de cores > Converter espaço de cores…** para
 modo que as cores mantenham a aparência em outro espaço de trabalho, dentro da
 gama dele.
 
-Com **Salvar cópia achatada**, **Aplicar** vira **Salvar cópia…**. A cópia tem uma
-só camada, com o mesmo tamanho e a mesma profundidade de bits. O nome do arquivo
-precisa terminar em `.capy` e não pode ser o arquivo do desenho aberto.
+Com **Salvar cópia achatada**, **Aplicar** se torna **Criar cópia**. A cópia abre como um novo desenho com uma camada, com o mesmo tamanho e profundidade de bits. Escolha **Arquivo > Salvar** para salvá-la como um arquivo `.capy`.
 
 ![A caixa de diálogo Converter espaço de cores com a comparação Antes e Depois e a mensagem sobre a gama.](shot:color-management/convert-dialog)
 
@@ -64,9 +62,7 @@ O espaço de trabalho de destino. De início, o espaço atual fica selecionado.
 
 ### Resultado
 
-**Camadas editáveis** (padrão) converte cada camada no lugar. **Salvar cópia
-achatada** salva uma cópia convertida e achatada como um novo arquivo `.capy` e
-deixa o desenho aberto inalterado.
+**Camadas editáveis** (padrão) converte cada camada no desenho atual. **Salvar cópia achatada** abre uma cópia convertida com as camadas mescladas como um novo desenho e mantém o original inalterado.
 
 ### Intenção de renderização
 
@@ -98,13 +94,10 @@ Para aplicar Atribuir perfil, Converter espaço de cores ou Alterar profundidade
 bits:
 
 1. Defina os campos na caixa de diálogo.
-2. Selecione **Visualizar resultado completo**.
-3. Compare **Antes** e **Depois**.
-4. Selecione **Aplicar** (ou **Salvar cópia…**).
+2. Compare **Antes** e **Depois** quando a visualização for exibida.
+3. Selecione **Aplicar** (ou **Criar cópia**).
 
-**Aplicar** fica indisponível até a prévia ficar pronta, e alterar um campo
-descarta a prévia. Se alguma cor for cortada, a linha de status diz "Algumas
-cores excedem a gama de destino. Compare o resultado antes de aplicar."
+**Aplicar** permanece indisponível até que a visualização esteja pronta. Alterar um campo atualiza a comparação. A linha de status informa todas as cores que são cortadas.
 
 Aplicar é um passo de desfazer. Desfazer e Refazer abrem **Desfazer alteração de
 cor** e **Refazer alteração de cor**. Essas caixas de diálogo aplicam a alteração

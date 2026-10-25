@@ -46,10 +46,7 @@ suo riquadro. Vedi [Modificare i tracciati](/it/docs/layers/paths/).
 Puoi spostare una copia dei pixel selezionati e lasciare gli originali al loro
 posto.
 
-Attiva **Lascia copia** nel pannello Strumento o nella
-[barra della selezione](/it/docs/selections/working/). Tieni premuto **Alt**
-quando inizi a trascinare per ottenere l'effetto opposto per un solo
-trascinamento.
+Attiva **Lascia copia** nel pannello **Strumento** oppure scegli **Altro > Lascia copia** nella [barra di selezione](/it/docs/selections/working/). Tieni premuto **Alt** all’inizio del trascinamento per invertire la scelta solo per quel trascinamento.
 
 ## Trasforma
 
@@ -65,15 +62,15 @@ Con una selezione, **Trasforma** modifica i pixel selezionati del livello attivo
 o della maschera. Senza selezione, modifica i livelli selezionati. Appaiono un
 riquadro con maniglie e la barra azioni della tela.
 
-Per terminare, seleziona **Applica** o premi **Invio**. **Annulla** o **Esc**
-scartano la trasformazione, e lo stesso fa **Modifica > Annulla** mentre
+Per terminare, seleziona **Applica trasformazione** o premi **Invio**. **Annulla trasformazione** o **Escape**
+scartano la trasformazione, e lo stesso fa **Annulla** mentre
 trasformi dei livelli.
 
 Per trasformare più livelli, prima annulla la selezione.
 
 ## Maniglie
 
-In **Libero** e **Uniforme**:
+Durante il ridimensionamento:
 
 - Trascina all'interno del riquadro per spostarlo. Tieni premuto **Maiusc** per spostarlo solo in orizzontale o in verticale.
 - Trascina una maniglia d'angolo o di lato per scalare dal lato opposto. Tieni premuto **Maiusc** per mantenere le proporzioni, o **Alt** per scalare attorno al perno.
@@ -98,12 +95,11 @@ In tutte le modalità:
 
 ## Barra di trasformazione
 
-![La barra azioni della tela per una trasformazione, con Modalità, Aggancia, i pulsanti per riflettere e ruotare, Ripristina, Interpolazione, Annulla e Applica.](shot:transform/transform-bar)
+![La barra di trasformazione con i pulsanti di modalità, i controlli di capovolgimento e aggancio, Annulla trasformazione e Applica trasformazione.](shot:transform/transform-bar)
 
 ### Modalità
 
-**Libero**, **Uniforme**, **Distorci** o **Deforma**. **Uniforme** mantiene le
-proporzioni. **Libero** è il valore predefinito.
+Seleziona **Ridimensiona**, **Distorci** o **Deforma** sulla barra. **Mantieni proporzioni** mantiene le proporzioni durante il ridimensionamento e **Prospettiva** rispecchia i trascinamenti degli angoli in **Distorci**. **Ridimensiona** è l'impostazione predefinita.
 
 ### Dimensioni originali
 
@@ -124,29 +120,24 @@ Con **Distorci**, riflette ogni trascinamento di un angolo sull'angolo vicino.
 
 Con **Deforma**:
 
-- **Suddividi griglia**: scegli **Suddividi verticalmente**, **Suddividi orizzontalmente** o **Suddividi a croce**, poi tocca la deformazione per aggiungere lì una linea della griglia senza cambiare la forma. **Esc** annulla la suddivisione. Una griglia contiene fino a 32 celle in ogni direzione.
-- **Seleziona punti**: tocca i punti per selezionarli e spostarli insieme.
-- **Ripristina griglia**: sostituisce la deformazione con una griglia regolare.
-- **Griglia**: **3 × 3** (il valore predefinito), **4 × 4** o **5 × 5**. Disponibile finché non cambi la forma.
+- **Griglia** apre **3 × 3** (predefinito), **4 × 4** e **5 × 5** e i comandi di suddivisione della griglia. La dimensione della griglia è disponibile finché non si modifica la forma.
+- Scegli **Suddividi verticalmente**, **Suddividi orizzontalmente** o **Suddividi a croce**, quindi seleziona un punto sulla mesh per aggiungere una linea della griglia senza modificare la forma. **Escape** annulla la divisione. Una griglia può contenere fino a 32 celle in ciascuna direzione.
+- **Seleziona punti** seleziona i punti da spostare insieme.
+- **Ripristina griglia** ripristina una mesh diritta.
 
-![La barra azioni della tela in modalità Deforma, con il menu Suddividi verticalmente, Seleziona punti, Ripristina griglia e il menu 3 × 3.](shot:transform/warp-bar)
+![La barra di trasformazione in modalità Deforma con Griglia e Seleziona punti.](shot:transform/warp-bar)
 
 ### Pulsanti per riflettere e ruotare
 
-I pulsanti a icona **Rifletti orizzontalmente**, **Rifletti verticalmente**,
-**Ruota di 90° a sinistra** e **Ruota di 90° a destra** riflettono o ruotano il
-contenuto attorno al perno.
+**Rifletti orizzontalmente** è sul bar. **Altro** contiene **Rifletti verticalmente**, **Ruota di 90° a sinistra** e **Ruota di 90° a destra**. Rispecchiano o trasformano il contenuto attorno al perno.
 
-### Ripristina
+### Ripristina trasformazione
 
-Annulla tutte le modifiche fatte in questa trasformazione e la lascia aperta.
-**Modalità** torna a **Libero**.
+Scegli **Ripristina trasformazione** in **Altro** per annullare ogni modifica nella trasformazione corrente. La trasformazione rimane aperta e ritorna a **Ridimensiona**.
 
 ### Interpolazione
 
-Imposta come vengono ricampionati i pixel: **Più vicino**, **Bilineare**,
-**Bicubica** o **Lanczos**. **Bilineare** è il valore predefinito in **Libero**
-e **Uniforme**, e **Bicubica** in **Distorci** e **Deforma**.
+Scegli **Interpolation** in **Altro** per impostare la modalità di ricampionamento dei pixel: **Vicino più prossimo**, **Bilineare**, **Bicubica** o **Lanczos**. **Bilineare** è l'impostazione predefinita durante il ridimensionamento e **Bicubica** in **Distorci** e **Deforma**.
 
 ## Valori di trasformazione nel pannello Strumento
 
@@ -154,7 +145,7 @@ Il pannello Strumento, e in Foto la barra Opzioni strumento, mostrano i valori d
 una trasformazione aperta, tranne in **Deforma**.
 
 - **Punto di ancoraggio**: **X** e **Y**, in pixel, con sopra la griglia di ancoraggio che sceglie a quale punto del riquadro si riferiscono.
-- **Scala**: **Larghezza** e **Altezza**, in percentuale. **Uniforme** le mantiene collegate.
+- **Ridimensiona**: **Larghezza** e **Altezza**, in percentuale. **Mantieni proporzioni** le mantiene collegate.
 - **Rotazione**: **Angolo**, da −180° a 180°.
 - **Inclinazione**: **Inclinazione**, da −85° a 85°.
 
@@ -179,7 +170,7 @@ Esegui una delle seguenti operazioni:
 - Scegli **Livello > Impostazioni livello > Applica trasformazione**.
 
 Durante l'operazione, una barra in fondo alla tela indica «Applicazione
-trasformazione…» con **Annulla**.
+trasformazione…» con **Annulla trasformazione**.
 
 ## Ripeti trasformazione
 
@@ -191,6 +182,7 @@ ripetute.
 ## Immagini posizionate
 
 Quando incolli un'immagine da un'altra app o scegli
-**File > Importa immagine come livello…**, l'immagine si apre nel riquadro di
-trasformazione. **Applica** posiziona l'immagine e **Annulla** la rimuove.
+**File > Import Image as
+Layer…**, l'immagine si apre nel riquadro di
+trasformazione. **Applica trasformazione** posiziona l'immagine e **Annulla trasformazione** la rimuove.
 Finché non scegli uno dei due, gli altri comandi non sono disponibili.

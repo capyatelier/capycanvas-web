@@ -39,7 +39,7 @@ les éclaircit que dans la roche.
 1. Appuyez sur **M**, ou sélectionnez **Sélection au lasso** dans la barre d’outils Outils, et tracez le tour de la roche.
 2. Choisissez **Sélection > Contour progressif de sélection…**, ou sélectionnez **Affiner** dans la barre de sélection et choisissez **Contour progressif…** ([Travailler avec les sélections](/fr/docs/selections/working/)).
 3. Réglez **Rayon du contour progressif** sur 20 px et sélectionnez **Appliquer**.
-4. Sélectionnez **Masque** dans la barre de sélection.
+4. Choisissez **Masque > Masque : révéler la sélection** dans la barre de sélection.
 
 ![La barre de sélection avec Masque, à côté de la sélection autour de la roche.](shot:photo/adjust-bar)
 

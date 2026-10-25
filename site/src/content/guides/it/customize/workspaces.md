@@ -30,6 +30,8 @@ le aree di lavoro nell'elenco **Mostra nella barra superiore**.
 L'area di lavoro corrente ha sempre un pulsante. Le aree di lavoro che crei
 vengono aggiunte alla barra del titolo.
 
+Nella finestra di dialogo **Aree di lavoro**, selezionare la puntina accanto a un’area di lavoro per mostrarne o nasconderne il pulsante nella barra del titolo.
+
 ![L'elenco Mostra nella barra superiore sotto i pulsanti delle aree di lavoro.](shot:workspaces/show-in-top-bar)
 
 ## Nuova area di lavoro…
@@ -39,7 +41,7 @@ Puoi salvare la disposizione corrente come nuova area di lavoro.
 Esegui una delle seguenti operazioni:
 
 - Scegli **Finestra > Aree di lavoro > Nuova area di lavoro…**.
-- Seleziona **Nuova area di lavoro** (**+**) nella finestra di dialogo **Aree di lavoro**.
+- Selezionare **Nuova area di lavoro** (**+**) sotto l'elenco nella finestra di dialogo **Aree di lavoro**.
 
 Digita un **Nome** e seleziona **Crea e passa**. Ogni area di lavoro deve avere
 un nome proprio.
@@ -51,14 +53,15 @@ finestra di dialogo **Aree di lavoro**. Selezionare un'area di lavoro ne mostra
 l'anteprima della disposizione dietro la finestra di dialogo. Per passare a
 quell'area di lavoro, seleziona **Passa all'area di lavoro**.
 
-- Trascina un'area di lavoro per la sua maniglia per riordinare l'elenco. La barra del titolo usa lo stesso ordine.
-- Seleziona **⋯** accanto a un'area di lavoro, oppure fai clic su di essa con il pulsante destro, per **Mostra nella barra superiore**, **Sposta su**, **Sposta giù**, **Rinomina…** ed **Elimina…**.
+- Trascina la maniglia a destra di un'area di lavoro per riordinare l'elenco. La barra del titolo utilizza lo stesso ordine.
+- Fai clic con il pulsante destro del mouse o tenere premuto su un'area di lavoro per **Rinomina…**, **Elimina…**, **Sposta su** e **Sposta giù**. La ridenominazione modifica il nome nella riga; premere **Invio** per mantenerlo o **Escape** per annullare.
+- Seleziona un'area di lavoro, quindi seleziona **Elimina** sotto l'elenco. Su un touch screen, scorrere la riga per visualizzare **Elimina**.
 
 Per copiare un'area di lavoro, passa a quell'area di lavoro e scegli **Nuova area
 di lavoro…**. **Schizzo**, **Pittura** e **Foto** non possono essere rinominate né
 eliminate, e l'eliminazione di un'area di lavoro è definitiva.
 
-![La finestra di dialogo Aree di lavoro con le opzioni di un'area di lavoro aperte.](shot:workspaces/manage-dialog)
+![La finestra di dialogo Aree di lavoro con il menu contestuale dell'area di lavoro aperta.](shot:workspaces/manage-dialog)
 
 ## Cronologia disposizione…
 

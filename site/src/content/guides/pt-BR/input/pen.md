@@ -12,6 +12,10 @@ Os ajustes da caneta ficam na página **Caneta e entrada** de **Editar > Prefer�
 
 Selecione **Ajustar…** ao lado de **Pressão da caneta** para moldar a curva de pressão e testá-la na tela atual. A curva se aplica a todos os pincéis e ferramentas sensíveis à pressão; os traços já desenhados não mudam. Consulte [Pressão da caneta](/pt-BR/docs/input/pen-pressure/).
 
+## Inclinação da caneta
+
+Selecione **Ajustar…** ao lado de **Inclinação da caneta** para alterar a curva de inclinação e a direção da sua caneta. Consulte [Inclinação da caneta](/pt-BR/docs/input/pen-tilt/).
+
 ## Previsão de traços
 
 A previsão de traços desenha um pequeno trecho do traço à frente da ponta da

@@ -38,7 +38,7 @@ le schiarisce solo nella roccia.
 1. Premi **M**, o seleziona **Selezione con lazo** nella barra strumenti Strumenti, e traccia un contorno attorno alla roccia.
 2. Scegli **Seleziona > Sfuma selezione…**, oppure seleziona **Perfeziona** nella barra della selezione e scegli **Sfuma…** ([Lavorare con le selezioni](/it/docs/selections/working/)).
 3. Imposta **Raggio di sfumatura** su 20 px e seleziona **Applica**.
-4. Seleziona **Maschera** nella barra di selezione.
+4. Scegliere **Maschera > Maschera: mostra selezione** sulla barra di selezione.
 
 ![La barra di selezione con Maschera accanto alla selezione attorno alla roccia.](shot:photo/adjust-bar)
 

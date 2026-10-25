@@ -31,6 +31,8 @@ oberer Leiste anzeigen**.
 Der aktuelle Arbeitsbereich hat immer eine Schaltfläche. Selbst erstellte
 Arbeitsbereiche werden der Titelleiste hinzugefügt.
 
+Wählen Sie im Dialog **Arbeitsbereiche** die Stecknadel neben einem Arbeitsbereich, um dessen Schaltfläche in der Titelleiste ein- oder auszublenden.
+
 ![Die Liste In oberer Leiste anzeigen unter den Arbeitsbereichsschaltflächen.](shot:workspaces/show-in-top-bar)
 
 ## Neuer Arbeitsbereich…
@@ -40,7 +42,7 @@ Sie können das aktuelle Layout als neuen Arbeitsbereich speichern.
 Führen Sie eine der folgenden Aktionen aus:
 
 - Wählen Sie **Fenster > Arbeitsbereiche > Neuer Arbeitsbereich…**.
-- Wählen Sie im Dialog **Arbeitsbereiche** **Neuer Arbeitsbereich** (**+**) aus.
+- Wählen Sie **Neuer Arbeitsbereich** (**+**) unterhalb der Liste im **Arbeitsbereiche**-Dialog aus.
 
 Geben Sie einen **Name** ein und wählen Sie **Erstellen und wechseln** aus. Jeder
 Arbeitsbereich braucht einen eigenen Namen.
@@ -52,14 +54,15 @@ Wählen Sie **Fenster > Arbeitsbereiche > Arbeitsbereiche verwalten…**, um den
 hinter dem Dialog eine Vorschau seines Layouts. Zum Wechseln wählen Sie **Zum
 Arbeitsbereich wechseln** aus.
 
-- Ziehen Sie einen Arbeitsbereich an seinem Griff, um die Liste neu zu ordnen. Die Titelleiste verwendet dieselbe Reihenfolge.
-- Wählen Sie **⋯** neben einem Arbeitsbereich aus oder klicken Sie mit der rechten Maustaste darauf, um **In oberer Leiste anzeigen**, **Nach oben verschieben**, **Nach unten verschieben**, **Umbenennen…** und **Löschen…** aufzurufen.
+- Ziehen Sie den Griff rechts neben einem Arbeitsbereich, um die Liste neu anzuordnen. Die Titelleiste verwendet dieselbe Reihenfolge.
+- Klicken Sie mit der rechten Maustaste auf einen Arbeitsbereich oder halten Sie ihn gedrückt. Das Menü enthält **Umbenennen…**, **Löschen…**, **Nach oben verschieben** und **Nach unten verschieben**. Der Name wird direkt in der Zeile bearbeitet. **Eingabe** übernimmt ihn, **Escape** bricht ab.
+- Wählen Sie einen Arbeitsbereich aus und wählen Sie dann **Löschen** unter der Liste aus. Wischen Sie auf einem Touchscreen über die Zeile, um **Löschen** anzuzeigen.
 
 Um einen Arbeitsbereich zu kopieren, wechseln Sie zu ihm und wählen **Neuer
 Arbeitsbereich…**. **Skizze**, **Malen** und **Foto** lassen sich weder umbenennen
 noch löschen, und das Löschen eines Arbeitsbereichs ist endgültig.
 
-![Der Dialog Arbeitsbereiche mit geöffneten Optionen eines Arbeitsbereichs.](shot:workspaces/manage-dialog)
+![Der Arbeitsbereiche-Dialog mit geöffnetem Kontextmenü eines Arbeitsbereichs.](shot:workspaces/manage-dialog)
 
 ## Layoutverlauf…
 

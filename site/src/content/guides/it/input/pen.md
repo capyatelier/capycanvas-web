@@ -12,6 +12,10 @@ Le impostazioni della penna si trovano nella pagina **Penna e input** di **Modif
 
 Seleziona **Regola…** accanto a **Pressione della penna** per modellare la curva della pressione e provarla sulla tela corrente. La curva si applica a tutti i pennelli e strumenti sensibili alla pressione; i tratti già disegnati non cambiano. Vedi [Pressione della penna](/it/docs/input/pen-pressure/).
 
+## Inclinazione della penna
+
+Selezionare **Regola…** accanto a **Inclinazione della penna** per modificare la curva di inclinazione e la direzione della penna. Vedere [Inclinazione penna](/it/docs/input/pen-tilt/).
+
 ## Previsione del tratto
 
 La previsione del tratto disegna un breve tratto davanti alla punta della penna,

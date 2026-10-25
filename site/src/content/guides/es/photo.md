@@ -36,8 +36,8 @@ La foto editada tiene estas capas, de arriba abajo:
 | **Intensidad de color** | Aumenta la intensidad de toda la foto |
 | **Curvas** | Una curva en S para toda la foto |
 | *Retouch* | Trazos de corrección |
-| La capa de objeto | La foto, con el nombre de su archivo |
+| La capa de pintura | La foto, con el nombre de su archivo |
 
-No se pinta nada en la capa de objeto.
+No se pinta nada en la capa de pintura.
 
 Primera etapa: [Abrir y recortar](/es/docs/photo/crop/).

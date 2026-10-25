@@ -41,7 +41,7 @@ On a vector layer, **Operation** selects, moves, scales and rotates paths instea
 
 You can move a copy of the selected pixels and keep the originals in place.
 
-Turn on **Leave Copy** in the Tool panel, or on the
+Turn on **Leave Copy** in the **Tool** panel, or choose **More > Leave Copy** on the
 [selection bar](/docs/selections/working/). Hold **Alt** as you start dragging
 to do the opposite for one drag.
 
@@ -59,14 +59,14 @@ With a selection, **Transform** changes the selected pixels of the active layer
 or mask. Without one, it changes the selected layers. A box with handles and
 the canvas bar appear.
 
-To finish, select **Apply** or press **Enter**. **Cancel** or **Escape**
+To finish, select **Apply transform** or press **Enter**. **Cancel transform** or **Escape**
 discards the transform, and so does **Undo** while you transform layers.
 
 To transform several layers, clear the selection first.
 
 ## Handles
 
-In **Free** and **Uniform**:
+While scaling:
 
 - Drag inside the box to move it. Hold **Shift** to move only horizontally or vertically.
 - Drag a corner or edge handle to scale from the opposite side. Hold **Shift** to keep proportions, or **Alt** to scale about the pivot.
@@ -91,12 +91,11 @@ In every mode:
 
 ## Transform bar
 
-![The canvas bar for a transform, with Mode, Snap, the flip and turn buttons, Reset, Interpolation, Cancel and Apply.](shot:transform/transform-bar)
+![The transform bar with the mode buttons, flip and snapping controls, Cancel transform, and Apply transform.](shot:transform/transform-bar)
 
 ### Mode
 
-**Free**, **Uniform**, **Distort** or **Warp**. **Uniform** keeps proportions.
-**Free** is the default.
+Select **Scale**, **Distort**, or **Warp** on the bar. **Keep proportions** holds the aspect ratio while scaling, and **Perspective** mirrors corner drags in **Distort**. **Scale** is the default.
 
 ### Original Size
 
@@ -115,27 +114,25 @@ With **Distort**, mirrors each corner drag onto the neighboring corner.
 
 With **Warp**:
 
-- **Split Grid**: choose **Split Vertically**, **Split Horizontally** or **Split Crosswise**, then tap the warp to add a grid line there without changing the shape. **Escape** cancels the split. A grid holds up to 32 cells in each direction.
-- **Select Points**: tap points to select them and move them together.
-- **Reset Grid**: replaces the warp with a straight grid.
-- **Grid**: **3 × 3** (the default), **4 × 4** or **5 × 5**. Available until you change the shape.
+- **Grid** opens **3 × 3** (the default), **4 × 4**, and **5 × 5**, and the grid-splitting commands. Grid size is available until you change the shape.
+- Choose **Split Vertically**, **Split Horizontally**, or **Split Crosswise**, then select a point on the mesh to add a grid line without changing the shape. **Escape** cancels the split. A grid holds up to 32 cells in each direction.
+- **Select Points** selects points to move together.
+- **Reset Grid** restores a straight mesh.
 
-![The canvas bar in Warp mode, with the Split Vertically menu, Select Points, Reset Grid and the 3 × 3 menu.](shot:transform/warp-bar)
+![The transform bar in Warp mode with Grid and Select Points.](shot:transform/warp-bar)
 
 ### Flip and turn buttons
 
-The icon buttons **Flip horizontally**, **Flip vertically**, **Rotate 90° left**
-and **Rotate 90° right** mirror or turn the content about the pivot.
+**Flip horizontally** is on the bar. **More** holds **Flip vertically**, **Rotate 90° left**, and **Rotate 90° right**. They mirror or turn the content about the pivot.
 
-### Reset
+### Reset transform
 
-Undoes every change made in this transform and keeps it open. **Mode** returns
-to **Free**.
+Choose **Reset transform** in **More** to undo every change in the current transform. The transform stays open and returns to **Scale**.
 
 ### Interpolation
 
-Sets how pixels are resampled: **Nearest**, **Bilinear**, **Bicubic** or
-**Lanczos**. **Bilinear** is the default in **Free** and **Uniform**, and
+Choose **Interpolation** in **More** to set how pixels are resampled: **Nearest neighbor**, **Bilinear**, **Bicubic** or
+**Lanczos**. **Bilinear** is the default while scaling, and
 **Bicubic** in **Distort** and **Warp**.
 
 ## Transform values in the Tool panel
@@ -144,7 +141,7 @@ The Tool panel, and the Tool Options bar in Photo, show the values of an open
 transform, except in **Warp**.
 
 - **Position anchor**: **X** and **Y**, in pixels, with the anchor grid above them that picks which point of the box they give.
-- **Scale**: **Width** and **Height**, in percent. **Uniform** keeps them linked.
+- **Scale**: **Width** and **Height**, in percent. **Keep proportions** keeps them linked.
 - **Rotation**: **Angle**, from −180° to 180°.
 - **Skew**: **Skew**, from −85° to 85°.
 
@@ -168,7 +165,7 @@ Do one of the following:
 - Choose **Layer > Layer Settings > Apply transform**.
 
 While it works, a bar at the bottom of the canvas reads "Applying transform…"
-with **Cancel**.
+with **Cancel transform**.
 
 ## Transform Again
 
@@ -179,6 +176,6 @@ pixels aren't repeated.
 ## Placed images
 
 When you paste an image from another app or choose **File > Import Image as
-Layer…**, the image opens in the transform box. **Apply** places the image and
-**Cancel** removes the image. Until you choose one, other commands are
+Layer…**, the image opens in the transform box. **Apply transform** places the image and
+**Cancel transform** removes the image. Until you choose one, other commands are
 unavailable.

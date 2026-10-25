@@ -38,7 +38,7 @@ vùng tối trên hòn đá được nâng sáng.
 1. Nhấn **M**, hoặc chọn **Chọn tự do** trên Thanh công cụ vẽ, rồi vẽ quanh hòn đá.
 2. Chọn **Chọn > Làm mềm biên vùng chọn…**, hoặc chọn **Tinh chỉnh** trên thanh vùng chọn rồi chọn **Làm mềm biên…** ([Làm việc với vùng chọn](/vi/docs/selections/working/)).
 3. Đặt **Bán kính làm mềm biên** là 20 px rồi chọn **Áp dụng**.
-4. Chọn **Mặt nạ** trên thanh vùng chọn.
+4. Chọn **Mặt nạ > Mặt nạ: hiện vùng chọn** trên thanh vùng chọn.
 
 ![Thanh vùng chọn với Mặt nạ bên cạnh vùng chọn quanh tảng đá.](shot:photo/adjust-bar)
 

@@ -12,7 +12,7 @@ nanti.
 Lakukan salah satu langkah berikut:
 
 - Pilih **Seleksi > Simpan sebagai Lapisan Seleksi**.
-- Pilih **Simpan** di bilah seleksi atau di bilah Mask Cepat.
+- Pilih **Mask > Simpan sebagai Lapisan Seleksi** pada bilah pilihan, atau **Simpan sebagai Lapisan Seleksi** pada bilah Quick Mask.
 - Di Mask Cepat, pilih **Lapisan > Simpan sebagai Lapisan Seleksi**.
 
 Lapisan baru ditempatkan di posisi teratas daftar lapisan, dengan nama *Seleksi* dan
@@ -54,7 +54,7 @@ Properti menampilkan **Warna hamparan** dan **Opasitas hamparan** lapisan itu, s
 "Mengedit" dan nama lapisan. Jika bilah kanvas disembunyikan, bilah ini tidak muncul.
 
 - **Muat** menjadikan lapisan itu seleksi saat ini dan kembali ke karya.
-- **Balikkan** membalik seleksi yang tersimpan dan membiarkan lapisan tetap terbuka untuk diedit.
+- **Balikkan Lapisan Seleksi** membalik seleksi yang tersimpan dan membiarkan lapisan tetap terbuka untuk diedit.
 - **Kembali ke Karya** mengakhiri pengeditan. **Escape** melakukan hal yang sama.
 
 Setelah pengeditan, lapisan yang Anda edit sebelumnya kembali aktif, atau lapisan
@@ -64,7 +64,7 @@ Untuk memperbaiki seleksi yang tersimpan, buka menu lapisan seleksi, lalu pilih 
 **Ubah**. **Seleksi > Perluas Seleksi…** dan perintah perbaikan lainnya di menu
 **Seleksi** kembali ke karya terlebih dahulu dan mengubah seleksi saat ini.
 
-![Bilah kanvas untuk lapisan seleksi yang diedit, dengan Muat, Balikkan, dan Kembali ke Karya.](shot:selections/selection-layer-bar)
+![Bilah kanvas untuk lapisan pilihan yang diedit dengan Muat, Balikkan Lapisan Seleksi, dan Kembali ke Karya.](shot:selections/selection-layer-bar)
 
 ## Memuat lapisan seleksi
 

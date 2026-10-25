@@ -19,8 +19,7 @@ Thực hiện một trong các cách sau:
 
 ![Bảng Bộ lọc với trình đơn danh mục, nút tìm kiếm và các hàng bộ lọc có ảnh xem trước.](shot:filters/filters-panel)
 
-Khi đang chọn một lớp, mỗi hàng hiện bản xem trước của bộ lọc trên lớp đó và các
-lớp bên dưới. Bộ lọc có chuyển động có một dấu đứng trước biểu tượng.
+Mỗi hàng hiển thị bộ lọc trên một hình ảnh mẫu cố định. Bộ lọc hoạt hình có dấu trước biểu tượng của chúng.
 
 Trình đơn ở trên cùng hiện một danh mục hoặc **Mọi bộ lọc**. **Tìm bộ lọc** tìm bộ
 lọc theo tên trong danh mục đã chọn.

@@ -4,14 +4,14 @@ description: "Etapa 2 do tutorial de edição de fotos: poeira e uma mancha remo
 related: ["retouch/clone-heal", "layers/settings", "layers/working"]
 ---
 
-Esta etapa produz uma camada *Retouch* que cobre poeira e uma mancha na foto. A camada de objeto não muda.
+Esta etapa produz uma camada *Retouch* que cobre poeira e uma mancha na foto. A camada de pintura não muda.
 
 ## 1. Adicionar uma camada de retoque
 
 1. Selecione **Nova camada** na parte inferior do painel Camadas e renomeie a nova camada como *Retouch*.
 2. Escolha **Camada > Configurações da camada > Usar camada abaixo como referência** ([Configurações da camada](/pt-BR/docs/layers/settings/)).
 
-A camada de objeto se torna uma camada de referência e um ícone de farol aparece ao lado do olho na sua linha. As ferramentas de recuperação copiam das camadas de referência por padrão e pintam em *Retouch*.
+A camada de pintura se torna uma camada de referência e um ícone de farol aparece ao lado do olho na sua linha. As ferramentas de recuperação copiam das camadas de referência por padrão e pintam em *Retouch*.
 
 ![O painel Camadas com Retouch acima da camada terrarium, que mostra o ícone de referência.](shot:photo/retouch-layers)
 

@@ -12,6 +12,10 @@ Die Stifteinstellungen befinden sich auf der Seite **Stift und Eingabe** unter *
 
 Wählen Sie **Anpassen…** neben **Stiftdruck**, um die Druckkurve zu formen und auf der aktuellen Leinwand zu testen. Die Kurve gilt für alle druckempfindlichen Pinsel und Werkzeuge; bereits gezeichnete Striche ändern sich nicht. Siehe [Stiftdruck](/de/docs/input/pen-pressure/).
 
+## Stiftneigung
+
+Wählen Sie **Anpassen…** neben **Stiftneigung** aus, um die Neigungskurve und Richtung Ihres Stifts zu ändern. Siehe [Stiftneigung](/de/docs/input/pen-tilt/).
+
 ## Strichvorhersage
 
 Die Strichvorhersage zeichnet ein kurzes Stück des Strichs vor der Stiftspitze, und

@@ -25,13 +25,19 @@ Uno strumento ha una sola bolla: trascinarlo di nuovo fuori la sposta. Comandi c
 
 ## Alone e selettore
 
-Una bolla esce selezionata, con l'alone delle impostazioni aperto se lo strumento ha impostazioni. Ogni tocco la fa passare da alone a selettore a chiusa; la bolla di un pennello fa eccezione perché non ha il selettore. Toccare la bolla di uno strumento non selezionato seleziona prima lo strumento.
+Selezionando una bolla di strumento si apre il suo anello delle impostazioni. Selezionandola di nuovo si apre il selettore; una bolla di pennello apre o chiude invece il suo anello. Scegliere uno strumento o un pennello dal selettore ne apre l’anello delle impostazioni.
 
 Trascina lungo un arco dell'alone per cambiare un'impostazione, e tocca due volte o fai doppio clic sull'arco per ripristinarla. Il selettore dispone i materiali dello strumento in cerchio attorno alla bolla: seleziona un materiale per aprire a ventaglio i suoi pennelli, poi seleziona un pennello.
 
 Tieni premuta la bolla, o fai clic con il pulsante destro su di essa, per aprirne il menu. Le sue voci con segno di spunta mettono le impostazioni nell'alone, fino a sei per ogni pennello.
 
 ![Il selettore di una bolla con il materiale Acquerello selezionato e i suoi pennelli accanto.](shot:bubbles/dial-chooser)
+
+## Mostra cursori
+
+Disattiva **Mostra cursori** nel menu di una bolla per nascondere gli archi delle impostazioni. L'impostazione si applica allo strumento, al mezzo, al pennello e alle bolle **Contagocce** nell'area di lavoro corrente e rimane salvata dopo averle reinserite. La scelta di uno strumento o di un pennello lascia nascosti i relativi cursori mentre questa impostazione è disattivata.
+
+![La voce Mostra cursori nel menu di una bolla degli strumenti.](shot:bubbles/show-sliders)
 
 ## Anello colore
 

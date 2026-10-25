@@ -18,7 +18,7 @@ related: ["filters/how-filters-apply", "filters/tone", "filters/color", "start/c
 
 ![濾鏡面板，包含類別選單、搜尋按鈕和帶預覽的濾鏡行。](shot:filters/filters-panel)
 
-選取圖層時，每一行都會預覽濾鏡作用於該圖層及其下方圖層的效果。動畫濾鏡的圖示前有一個標記。
+每一行都在固定示例影象上顯示濾鏡效果。動畫濾鏡的圖示前有標記。
 
 頂部的選單顯示一個類別或**所有濾鏡**。**搜尋濾鏡**在所選類別中按名稱查詢濾鏡。
 

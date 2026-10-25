@@ -5,7 +5,7 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 ---
 
 You can crop the canvas to a frame with the **Crop** tool. Cropped pixels stay
-on their layers, hidden, unless you turn on **Delete Cropped Paint**.
+on their layers, hidden, unless you turn on **Delete Cropped Paint Pixels**.
 
 ## Cropping
 
@@ -27,24 +27,24 @@ of the canvas.
 On a touch screen, only the handles respond to a finger. A finger inside the
 frame moves the view.
 
-To finish, select **Apply** or press **Enter**. **Cancel**, **Escape** and
+To finish, select **Apply crop** or press **Enter**. **Cancel crop**, **Escape**, and
 **Undo** discard the crop. Either way, the tool you used before returns.
 
-**Apply** also crops locked layers. You can't start a crop while a transform
+**Apply crop** also crops locked layers. You can't start a crop while a transform
 is open.
 
 ![The crop frame on the terrarium photo, with the canvas bar at the bottom edge.](shot:transform/crop-bar)
 
 ## Ratio
 
-Choose **Free**, **Original**, **1:1**, **4:5**, **2:3**, **5:7** or **16:9**
+Choose **Free**, **Original**, **1:1**, **4:5**, **2:3**, **5:7**, or **16:9**
 from **Ratio** on the canvas bar. The frame becomes the largest frame of that
 ratio. **Free** is the default.
 
 **Swap crop orientation**, the icon button beside **Ratio**, turns the frame
 between landscape and portrait.
 
-The ratio, the overlay and **Delete Cropped Paint** carry over to the next crop.
+The ratio, the overlay and **Delete Cropped Paint Pixels** carry over to the next crop.
 
 ![The Ratio menu on the crop bar.](shot:transform/crop-ratio-menu)
 
@@ -55,8 +55,7 @@ including pixels beyond the canvas. **Ratio** changes to **Free**.
 
 ## Overlay
 
-Choose **Thirds**, **Grid**, **Diagonal** or **Golden Ratio** from **Overlay**.
-**Thirds** is the default. Press **O** while cropping to show the next overlay.
+Choose an overlay from **More > Overlay**. **Rule of thirds overlay** is the default. Press **O** while cropping to show the next overlay.
 
 ## Straightening
 
@@ -75,17 +74,17 @@ To straighten to a guide, select the guide and select **Straighten** on its
 canvas bar (see [Rulers and guides](/docs/drawing/ruler/)). A crop opens,
 turned level with the guide.
 
-## Delete Cropped Paint
+## Delete Cropped Paint Pixels
 
-Turn on **Delete Cropped Paint** to discard the pixels outside the frame when you
+Turn on **More > Delete Cropped Paint Pixels** to discard the pixels outside the frame when you
 apply the crop. Placed photos keep their original pixels. Off by default.
 
 A crop that would be too large with the hidden pixels kept works only with
-**Delete Cropped Paint** on.
+**Delete Cropped Paint Pixels** on.
 
-## Reset
+## Reset crop
 
-**Reset** returns the frame to the whole canvas, upright, and turns off
+**Reset crop** in **More** returns the frame to the whole canvas, upright, and turns off
 **Straighten**. With a ratio chosen, the frame becomes the largest frame of
 that ratio.
 
@@ -106,7 +105,7 @@ You can crop the canvas to the bounds of a selection.
 Do one of the following:
 
 - Choose **Image > Crop Canvas to Selection**.
-- Select **Crop** on the [selection bar](/docs/selections/working/).
+- Choose **More > Crop Canvas to Selection** on the [selection bar](/docs/selections/working/).
 
 Pixels outside the selection's bounds stay on their layers, hidden. You can't
 crop to an inverted selection.

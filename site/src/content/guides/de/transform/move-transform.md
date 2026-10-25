@@ -45,9 +45,7 @@ Auf einer Vektorebene wählt, verschiebt, skaliert und dreht **Vorgang** Pfade, 
 Sie können eine Kopie der ausgewählten Pixel verschieben und die Originale an
 ihrem Platz lassen.
 
-Aktivieren Sie **Kopie belassen** im Bedienfeld Werkzeug oder in der
-[Auswahlleiste](/de/docs/selections/working/). Halten Sie zu Beginn des Ziehens
-**Alt** gedrückt, um für dieses eine Ziehen das Gegenteil zu bewirken.
+Aktivieren Sie **Kopie belassen** im **Werkzeug**-Panel oder wählen Sie **Mehr > Kopie belassen** in der [Auswahlleiste](/de/docs/selections/working/). Halten Sie beim Beginn des Ziehens **Alt** gedrückt, um die Einstellung nur für diesen Zug umzukehren.
 
 ## Transformieren
 
@@ -63,15 +61,15 @@ Bei bestehender Auswahl ändert **Transformieren** die ausgewählten Pixel der
 aktiven Ebene oder Maske. Ohne Auswahl ändert es die ausgewählten Ebenen. Ein
 Rahmen mit Griffen und die Leinwandaktionsleiste erscheinen.
 
-Zum Abschließen wählen Sie **Anwenden** aus oder drücken Sie **Eingabe**.
-**Abbrechen** oder **Escape** verwirft die Transformation, ebenso
+Zum Abschließen wählen Sie **Transformation anwenden** aus oder drücken Sie **Eingabe**.
+**Transformation abbrechen** oder **Escape** verwirft die Transformation, ebenso
 **Rückgängig**, während Sie Ebenen transformieren.
 
 Um mehrere Ebenen zu transformieren, heben Sie zuerst die Auswahl auf.
 
 ## Griffe
 
-In **Frei** und **Einheitlich**:
+Beim Skalieren:
 
 - Ziehen Sie innerhalb des Rahmens, um ihn zu verschieben. Halten Sie **Umschalt** gedrückt, um nur waagerecht oder senkrecht zu verschieben.
 - Ziehen Sie einen Eck- oder Kantengriff, um von der gegenüberliegenden Seite aus zu skalieren. Halten Sie **Umschalt** gedrückt, um die Proportionen zu erhalten, oder **Alt**, um um den Drehpunkt zu skalieren.
@@ -96,12 +94,11 @@ In jedem Modus:
 
 ## Transformationsleiste
 
-![Die Leinwandaktionsleiste für eine Transformation mit Modus, Einrasten, den Schaltflächen zum Spiegeln und Drehen, Zurücksetzen, Interpolation, Abbrechen und Anwenden.](shot:transform/transform-bar)
+![Die Transformationsleiste mit den Modusschaltflächen, Flip- und Snapping-Steuerelementen Transformation abbrechen und Transformation anwenden.](shot:transform/transform-bar)
 
 ### Modus
 
-**Frei**, **Einheitlich**, **Verzerren** oder **Verformen**. **Einheitlich**
-erhält die Proportionen. **Frei** ist die Standardeinstellung.
+Wählen Sie **Skalieren**, **Verzerren** oder **Verformen** in der Leiste. **Seitenverhältnis beibehalten** erhält das Seitenverhältnis beim Skalieren. **Perspektive** spiegelt in **Verzerren** die Bewegung einer Ecke auf die benachbarte Ecke. Die Vorgabe ist **Skalieren**.
 
 ### Originalgröße
 
@@ -122,29 +119,24 @@ Spiegelt bei **Verzerren** jedes Ziehen einer Ecke auf die benachbarte Ecke.
 
 Bei **Verformen**:
 
-- **Raster teilen**: Wählen Sie **Vertikal teilen**, **Horizontal teilen** oder **Über Kreuz teilen** und tippen Sie dann auf die Verformung, um dort eine Rasterlinie hinzuzufügen, ohne die Form zu ändern. **Escape** bricht das Teilen ab. Ein Raster hat bis zu 32 Zellen in jeder Richtung.
-- **Punkte auswählen**: Tippen Sie auf Punkte, um sie auszuwählen und gemeinsam zu bewegen.
-- **Raster zurücksetzen**: ersetzt die Verformung durch ein gerades Raster.
-- **Raster**: **3 × 3** (Standard), **4 × 4** oder **5 × 5**. Verfügbar, bis Sie die Form ändern.
+- **Raster** öffnet **3 × 3** (Standard), **4 × 4** und **5 × 5** sowie die Befehle zur Rasteraufteilung. Die Rastergröße ist verfügbar, bis Sie die Form ändern.
+- Wählen Sie **Vertikal teilen**, **Horizontal teilen** oder **Über Kreuz teilen** und wählen Sie dann einen Punkt auf dem Netz aus, um eine Gitterlinie hinzuzufügen, ohne die Form zu ändern. **Escape** bricht die Teilung ab. Ein Gitter fasst bis zu 32 Zellen in jede Richtung.
+- **Punkte auswählen** wählt Punkte aus, die gemeinsam verschoben werden sollen.
+- **Raster zurücksetzen** stellt ein gerades Netz wieder her.
 
-![Die Leinwandaktionsleiste im Modus Verformen mit dem Menü Vertikal teilen, Punkte auswählen, Raster zurücksetzen und dem Menü 3 × 3.](shot:transform/warp-bar)
+![Der Transformationsbalken im Verformen-Modus mit Raster und Punkte auswählen.](shot:transform/warp-bar)
 
 ### Schaltflächen zum Spiegeln und Drehen
 
-Die Symbolschaltflächen **Horizontal spiegeln**, **Vertikal spiegeln**,
-**90° nach links drehen** und **90° nach rechts drehen** spiegeln oder drehen
-den Inhalt um den Drehpunkt.
+**Horizontal spiegeln** befindet sich in der Leiste. **Mehr** enthält **Vertikal spiegeln**, **90° nach links drehen** und **90° nach rechts drehen**. Die Befehle spiegeln oder drehen den Inhalt um den Drehpunkt.
 
-### Zurücksetzen
+### Transformation zurücksetzen
 
-Macht alle Änderungen dieser Transformation rückgängig und lässt sie geöffnet.
-**Modus** kehrt zu **Frei** zurück.
+Wählen Sie **Transformation zurücksetzen** in **Mehr**, um jede Änderung in der aktuellen Transformation rückgängig zu machen. Die Transformation bleibt offen und kehrt zu **Skalieren** zurück.
 
 ### Interpolation
 
-Legt fest, wie Pixel neu berechnet werden: **Nächster Nachbar**, **Bilinear**,
-**Bikubisch** oder **Lanczos**. **Bilinear** ist der Standard in **Frei** und
-**Einheitlich**, **Bikubisch** in **Verzerren** und **Verformen**.
+Wählen Sie **Interpolation** in **Mehr**, um festzulegen, wie Pixel neu abgetastet werden: **Nächster Nachbar**, **Bilinear**, **Bikubisch** oder **Lanczos**. **Bilinear** ist die Standardeinstellung beim Skalieren und **Bikubisch** in **Verzerren** und **Verformen**.
 
 ## Transformationswerte im Bedienfeld Werkzeug
 
@@ -152,7 +144,7 @@ Das Bedienfeld Werkzeug und im Arbeitsbereich Foto die Leiste Werkzeugoptionen
 zeigen die Werte einer geöffneten Transformation, außer in **Verformen**.
 
 - **Positionsanker**: **X** und **Y** in Pixeln, darüber das Ankerraster, das festlegt, welchen Punkt des Rahmens sie angeben.
-- **Skalierung**: **Breite** und **Höhe** in Prozent. **Einheitlich** hält sie verknüpft.
+- **Skalieren**: **Breite** und **Höhe** in Prozent. **Seitenverhältnis beibehalten** hält sie verknüpft.
 - **Drehung**: **Winkel**, von −180° bis 180°.
 - **Scherung**: **Scherung**, von −85° bis 85°.
 
@@ -176,7 +168,7 @@ Führen Sie eine der folgenden Aktionen aus:
 - Wählen Sie **Ebene > Ebeneneinstellungen > Transformation anwenden**.
 
 Während die Transformation angewandt wird, zeigt eine Leiste am unteren Rand der Leinwand
-„Transformation wird angewandt…“ mit **Abbrechen**.
+„Transformation wird angewandt…“ mit **Transformation abbrechen**.
 
 ## Erneut transformieren
 
@@ -187,6 +179,7 @@ Importe und Transformationen ausgewählter Pixel werden nicht wiederholt.
 ## Platzierte Bilder
 
 Wenn Sie ein Bild aus einer anderen App einfügen oder
-**Datei > Bild als Ebene importieren…** wählen, öffnet sich das Bild im
-Transformationsrahmen. **Anwenden** platziert das Bild, **Abbrechen** entfernt
+**Datei > Import Image as
+Layer…** wählen, öffnet sich das Bild im
+Transformationsrahmen. **Transformation anwenden** platziert das Bild, **Transformation abbrechen** entfernt
 es. Bis Sie eins davon wählen, sind andere Befehle nicht verfügbar.

@@ -90,10 +90,10 @@ Puedes dibujar un trazado anclaje a anclaje.
 - Haz clic para añadir un anclaje de esquina. Pulsa y arrastra para sacar tiradores y crear un anclaje suave, o mantén pulsada **Alt** para arrastrar solo el tirador de salida.
 - Mantén pulsada **Mayús** para colocar el siguiente anclaje en pasos de 45° desde el último.
 - Haz clic en el primer anclaje para cerrar el trazado.
-- Selecciona **Finalizar** en la barra del lienzo o pulsa **Intro** para añadir el trazado. **Cancelar** o **Escape** lo descarta.
-- **Eliminar punto** o **Retroceso** quita el último anclaje, y **Deshacer** también.
+- Selecciona **Terminar trazado** en la barra del lienzo o pulsa **Intro** para añadir el trazado. **Cancelar trazado** o **Escape** lo descarta.
+- **Eliminar último punto** o **Retroceso** quita el último anclaje, y **Deshacer** también.
 
-![La barra del lienzo mientras se dibuja un trazado, con Eliminar punto, Cancelar y Finalizar.](shot:vector/path-bar)
+![La barra al dibujar un trazado, con Eliminar último punto, Cancelar trazado y Terminar trazado.](shot:vector/path-bar)
 
 El trazado usa el modo, la **Anchura de línea** y los colores actuales, con esquinas agudas y extremos planos. En una capa vectorial queda seleccionado al finalizar, y un trazado que empieza en el extremo abierto de un trazado seleccionado lo continúa.
 

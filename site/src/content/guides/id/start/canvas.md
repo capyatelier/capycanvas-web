@@ -80,6 +80,12 @@ Lakukan salah satu langkah berikut:
 Untuk kembali ke 0°, tekan **5** atau pilih **Atur ulang rotasi** di menu
 indikator zum.
 
+## Lekatkan rotasi
+
+**Lekatkan rotasi** menahan tampilan mendekati 0°, 90°, 180°, dan 270° saat Anda memutar dengan gerakan, alat **Putar tampilan**, atau penggeser. Ini aktif secara default.
+
+Aktifkan atau nonaktifkan di **Tampilan > Lekatkan rotasi** atau menu pembacaan zoom. **Kunci rotasi** menghentikan gerakan rotasi sepenuhnya.
+
 ## Membalik tampilan
 
 Lakukan salah satu langkah berikut:

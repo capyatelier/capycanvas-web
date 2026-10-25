@@ -51,9 +51,7 @@ korur.
 Renklerin başka bir çalışma renk uzayında, o uzayın gamı içinde görünümlerini
 korumaları için RGB sayılarını değiştirmek üzere **Görüntü > Renk Yönetimi > Renk uzayını dönüştür…** komutunu seçin.
 
-**Düzleştirilmiş kopyayı kaydet** seçiliyken **Uygula**, **Kopyayı kaydet…**
-olur. Kopyanın tek bir katmanı vardır; boyutu ve bit derinliği aynıdır. Dosya
-adı `.capy` ile bitmelidir ve açık çizimin dosyası olamaz.
+**Düzleştirilmiş kopyayı kaydet** seçildiğinde **Uygula**, **Kopya oluştur** olur. Kopya, aynı boyut ve bit derinliğinde, tek katmanlı yeni bir çizim olarak açılır. `.capy` dosyası olarak kaydetmek için **Dosya > Kaydet** komutunu seçin.
 
 ![Renk uzayını dönüştür iletişim kutusu: Önce ve Sonra karşılaştırması ve gam iletisi.](shot:color-management/convert-dialog)
 
@@ -63,9 +61,7 @@ Dönüştürülecek çalışma renk uzayı. Başlangıçta geçerli renk uzayı 
 
 ### Sonuç
 
-**Düzenlenebilir katmanlar** (varsayılan) her katmanı yerinde dönüştürür.
-**Düzleştirilmiş kopyayı kaydet**, dönüştürülmüş ve düzleştirilmiş bir kopyayı
-yeni bir `.capy` dosyası olarak kaydeder ve açık çizimi değiştirmez.
+**Düzenlenebilir katmanlar** (varsayılan) her katmanı yerinde dönüştürür. **Düzleştirilmiş kopyayı kaydet** dönüştürülmüş, düzleştirilmiş bir kopyayı yeni bir çizim olarak açar ve orijinali değiştirmeden bırakır.
 
 ### Renk dönüştürme amacı
 
@@ -96,13 +92,10 @@ Profil ata, Renk uzayını dönüştür veya Bit derinliğini değiştir işlemi
 uygulamak için:
 
 1. İletişim kutusundaki alanları ayarlayın.
-2. **Sonucun tamamını önizle** düğmesini seçin.
-3. **Önce** ve **Sonra** görüntülerini karşılaştırın.
-4. **Uygula** (veya **Kopyayı kaydet…**) düğmesini seçin.
+2. Önizleme göründüğünde **Önce** ile **Sonra** arasındaki farkı karşılaştırın.
+3. **Uygula** veya **Kopya oluştur** seçeneğini seçin.
 
-Önizleme hazır olana kadar **Uygula** kullanılamaz ve bir alanı değiştirmek
-önizlemeyi atar. Herhangi bir renk kırpılırsa durum satırında “Bazı renkler
-hedef renk gamını aşıyor. Uygulamadan önce sonucu karşılaştırın.” yazar.
+Önizleme hazır olana kadar **Uygula** kullanılamaz durumda kalır. Bir alanı değiştirmek karşılaştırmayı günceller. Durum satırı, kırpılan tüm renkleri bildirir.
 
 Uygulama tek bir geri alma adımıdır. Geri al ve Yinele, **Renk değişikliğini geri al** ve **Renk değişikliğini yinele** iletişim kutularını açar. Bu
 iletişim kutuları değişikliği başka bir giriş beklemeden uygular ve yalnızca

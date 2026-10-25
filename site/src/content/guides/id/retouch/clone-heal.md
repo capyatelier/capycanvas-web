@@ -86,9 +86,6 @@ Klik berikutnya menyetel sumber.
 
 ## Bilah kanvas untuk cakram sumber
 
-Klik cakram sumber tanpa menyeret untuk menampilkan
-[bilah kanvas](/id/docs/selections/working/) di sampingnya, dengan **Selaras**,
-**Sumber**, kedua tombol balik, **Atur Ulang Offset**, dan **Atur Sumber**. Klik cakram
-sekali lagi, atau pilih alat lain, untuk menyembunyikan bilah itu.
+Klik disk sumber tanpa menyeret untuk menampilkan [bilah kanvas](/id/docs/selections/working/) di sampingnya, dengan **Selaras**, **Sumber**, **Balik Sumber secara Horizontal**, dan **Atur Sumber**. **Lainnya** menampung **Balik Sumber secara Vertikal** dan **Atur Ulang Offset Sumber**. Klik disk lagi, atau pilih alat lain, untuk menyembunyikan bilah.
 
 ![Cakram sumber dengan bilah kanvasnya.](shot:retouch/clone-source-bar)

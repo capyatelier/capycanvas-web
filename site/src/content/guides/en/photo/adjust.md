@@ -40,7 +40,7 @@ The example lifts them in the rock only.
 1. Press **M**, or select **Lasso selection** in the Tools toolbar, and draw around the rock.
 2. Choose **Select > Feather Selection…**, or select **Refine** in the selection bar and choose **Feather…** ([Working with selections](/docs/selections/working/)).
 3. Set **Feather radius** to 20 px and select **Apply**.
-4. Select **Mask** in the selection bar.
+4. Choose **Mask > Mask: reveal selection** on the selection bar.
 
 ![The selection bar with Mask beside the selection around the rock.](shot:photo/adjust-bar)
 

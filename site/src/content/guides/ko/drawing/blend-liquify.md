@@ -26,6 +26,24 @@ related: ["drawing/brush-tools", "brushes/wet-media", "brushes/tip-texture", "re
 
 각 혼색 브러시의 설정은 [혼색, 번짐, 붓털](/ko/docs/brushes/wet-media/)에 있습니다.
 
+### 붓털 혼색
+
+**붓털 혼색**은 페인트를 줄무늬로 끌어옵니다. 이 샘플의 왼쪽 끝은 혼합되지 않았습니다.
+
+![Bristle Blender는 오른쪽의 음영처리된 페인트에 줄무늬를 표시합니다.](shot:examples/bristle-blender)
+
+### 디더 혼색
+
+**디더 혼색**은 밴드를 디더 패턴으로 혼합합니다.
+
+![Dither Blender는 오른쪽에 음영 처리된 밴드를 믹싱합니다.](shot:examples/dither-blender)
+
+### 마블링
+
+**마블링**은 페인트를 소용돌이 모양으로 말립니다.
+
+![Marbling는 오른쪽 음영 밴드를 컬링합니다.](shot:examples/marbling)
+
 ## 왜곡
 
 다음 중 하나를 수행합니다.
@@ -49,6 +67,18 @@ related: ["drawing/brush-tools", "brushes/wet-media", "brushes/tip-texture", "re
 | **복원** | 브러시 아래의 왜곡 변형을 되돌립니다. |
 
 왜곡에는 적용 버튼이 없습니다. 획을 그을 때마다 레이어가 바뀌며, 각각 실행 취소 한 단계입니다. 획은 첫 번째 획 이전에 레이어에 있던 픽셀을 계속 변형합니다. 이는 레이어에 칠하거나, 채우거나, 필터를 적용하거나, 변형하거나, 붙여넣을 때까지 이어집니다.
+
+### 가장자리
+
+**가장자리**는 페인트를 스트로크 선 쪽으로 당깁니다. 왼쪽 밴드는 원래 페인트를 보여줍니다.
+
+![가장자리 컬러 밴드를 오른쪽의 수평 스트로크 방향으로 당깁니다.](shot:examples/liquify-edge)
+
+### 복원
+
+**복원**은 브러시 아래의 원래 페인트를 복원합니다. 여기서는 왜곡된 밴드의 오른쪽 절반을 복원합니다.
+
+![왼쪽의 왜곡된 밴드와 오른쪽의 Reconstruct로 복원된 페인트.](shot:examples/liquify-reconstruct)
 
 ## 유동화 조정과 유동화 초기화
 

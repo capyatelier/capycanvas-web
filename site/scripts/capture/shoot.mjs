@@ -39,7 +39,7 @@ export const settleLayout = (b, selector = '#workspace .dock-group,#header .head
 })`);
 export const quiet = b => b.evaluate(`document.fonts.ready.then(()=>${animations}).then(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(()=>r(null)))))`);
 
-const thumbnailsLoaded = b => b.until(`[...document.querySelectorAll('#layer-rows .layer-thumbnail:not(.layer-texture) canvas')].filter(canvas=>{const box=canvas.getBoundingClientRect();return canvas.checkVisibility()&&box.width>0&&box.top<innerHeight&&box.bottom>0}).every(canvas=>canvas.dataset.previewRevision)`, 15000);
+const thumbnailsLoaded = b => b.until(`[...document.querySelectorAll('#layer-rows .layer-thumbnail:not(.layer-texture) canvas')].filter(canvas=>{const box=canvas.getBoundingClientRect();return canvas.checkVisibility()&&box.width>0&&box.top<innerHeight&&box.bottom>0&&!layerApp.state().layers.find(l=>String(l.id)===canvas.closest('.layer-row')?.dataset.layer)?.fill_color}).every(canvas=>canvas.dataset.previewRevision)`, 15000);
 
 export async function settled(b) {
   await b.evaluate('Promise.all([...document.images].map(i=>i.decode().catch(()=>null))).then(()=>null)');
@@ -121,8 +121,10 @@ export function shooter({ b, lang, names, output, captures, previous = new Map()
           await lang.use(locale);
           if (plan) await names.apply(plan, locale);
           if (variant) await variant(locale);
+          await b.call('Input.dispatchMouseEvent', { type: 'mouseMoved', x: -20, y: -20 });
           await settleLayout(b);
           await quiet(b);
+          await b.until('!document.querySelector("#hover-tooltip")?.matches(":popover-open")');
           assert.deepEqual(await b.evaluate('__capture.surfaces()'), surfaces, `${shot}: the same menus and dialogs are open in ${locale}`);
           let clip = { x: 0, y: 0, width, height, scale: 1 };
           if (!full) {

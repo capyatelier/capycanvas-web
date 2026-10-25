@@ -12,9 +12,9 @@ Choose **File > Open…**, or press **Ctrl+O**, and select the photo
 ([Opening and saving](/docs/files/open-save/)). The photo opens in a drawing
 tab of its own.
 
-![The Layers panel with the terrarium Object layer.](shot:photo/open-layers)
+![The Layers panel with the terrarium Paint layer.](shot:photo/open-layers)
 
-The drawing has one Object layer named after the file. In the example, the layer is named "terrarium".
+The drawing has one Paint layer named after the file. In the example, the layer is named "terrarium".
 
 ## 2. Choose a ratio
 
@@ -42,8 +42,8 @@ frame to the right, to give the rock and the tips of the fern even margins.
 
 ## 4. Apply the crop
 
-Select **Apply** in the crop bar, or press **Enter**. The canvas takes the size
+Select **Apply crop** in the crop bar, or press **Enter**. The canvas takes the size
 of the frame: 2000 × 1600 pixels in the example. The cropped pixels stay on
-the layer, hidden, unless **Delete Cropped Paint** is on in the crop bar.
+the layer, hidden, unless **More > Delete Cropped Paint Pixels** is on in the crop bar.
 
 Next stage: [Retouching](/docs/photo/retouch/).

@@ -14,7 +14,7 @@ Scegli **Livello > Nuovo > Nuovo livello**, oppure seleziona **Nuovo livello** i
 
 ## Livello Oggetto
 
-Un livello Oggetto conserva un'immagine importata con dimensioni, profondità in bit e profilo colore propri. Aprire o importare un'immagine, trascinarla sulla tela e incollarla da un'altra app crea livelli Oggetto.
+Un livello Oggetto conserva le dimensioni, la profondità di bit e il profilo colore dell’immagine importata. Importare un’immagine come livello, trascinarla sulla tela o incollarla da un’altra app crea un livello Oggetto.
 
 Puoi spostare, ridimensionare e ruotare un livello Oggetto senza ricampionarne ripetutamente l'origine. Scegli **Livello > Rasterizza livello** quando devi dipingere sui suoi pixel o usare un comando che richiede un livello di pittura. La rasterizzazione lo converte nello spazio colore, nella profondità in bit e nella griglia di pixel del disegno.
 

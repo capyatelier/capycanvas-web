@@ -6,7 +6,7 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 
 Você pode recortar a tela em um quadro com a ferramenta **Recortar**. Os pixels
 recortados continuam nas camadas deles, ocultos, a menos que você ative
-**Excluir pintura recortada**.
+**Excluir pixels de pintura recortados**.
 
 ## Recortar a tela
 
@@ -28,11 +28,11 @@ inferior da tela.
 Em uma tela sensível ao toque, só as alças respondem ao dedo. Um dedo dentro do
 quadro move a visualização.
 
-Para terminar, selecione **Aplicar** ou pressione **Enter**. **Cancelar**,
+Para terminar, selecione **Aplicar recorte** ou pressione **Enter**. **Cancelar recorte**,
 **Escape** e **Desfazer** descartam o recorte. Nos dois casos, a ferramenta que
 você usava antes volta.
 
-**Aplicar** também recorta as camadas bloqueadas. Não é possível começar um
+**Aplicar recorte** também recorta as camadas bloqueadas. Não é possível começar um
 recorte enquanto uma transformação está aberta.
 
 ![O quadro de recorte na foto do terrário, com a barra de ações da tela na borda inferior.](shot:transform/crop-bar)
@@ -46,7 +46,7 @@ proporção. **Livre** é o padrão.
 **Trocar orientação do recorte**, o botão de ícone ao lado de **Proporção**,
 alterna o quadro entre paisagem e retrato.
 
-A proporção, a sobreposição e **Excluir pintura recortada** se mantêm no próximo
+A proporção, a sobreposição e **Excluir pixels de pintura recortados** se mantêm no próximo
 recorte.
 
 ![O menu Proporção na barra de recorte.](shot:transform/crop-ratio-menu)
@@ -58,9 +58,7 @@ visíveis, incluindo os pixels além da tela. **Proporção** muda para **Livre*
 
 ## Sobreposição
 
-Escolha **Terços**, **Grade**, **Diagonal** ou **Proporção áurea** em
-**Sobreposição**. **Terços** é o padrão. Pressione **O** durante o recorte para
-mostrar a próxima sobreposição.
+Escolha uma sobreposição de **Mais > Sobreposição**. **Sobreposição da regra dos terços** é o padrão. Pressione **O** enquanto corta para mostrar a próxima sobreposição.
 
 ## Endireitar
 
@@ -80,20 +78,18 @@ Para endireitar por uma guia, selecione a guia e selecione **Endireitar** na
 barra de ações da tela dela (consulte [Réguas e guias](/pt-BR/docs/drawing/ruler/)). Um
 recorte se abre, girado para se alinhar à guia.
 
-## Excluir pintura recortada
+## Excluir pixels de pintura recortados
 
-Ative **Excluir pintura recortada** para descartar os pixels fora do quadro ao
+Ative **Mais > Excluir pixels de pintura recortados** para descartar os pixels fora do quadro ao
 aplicar o recorte. As fotos posicionadas mantêm os pixels originais. Vem
 desativado por padrão.
 
 Um recorte que ficaria grande demais mantendo os pixels ocultos só funciona com
-**Excluir pintura recortada** ativado.
+**Excluir pixels de pintura recortados** ativado.
 
-## Redefinir
+## Redefinir recorte
 
-**Redefinir** volta o quadro para a tela inteira, sem rotação, e desativa
-**Endireitar**. Com uma proporção escolhida, o quadro vira o maior quadro dessa
-proporção.
+**Redefinir recorte** em **Mais** retorna o quadro para toda a tela, na vertical, e desativa **Endireitar**. Com uma proporção escolhida, o quadro se torna o maior quadro dessa proporção.
 
 ## Configurações de recorte no painel Ferramenta
 
@@ -113,7 +109,7 @@ Você pode recortar a tela nos limites de uma seleção.
 Faça uma das seguintes ações:
 
 - Escolha **Imagem > Recortar tela à seleção**.
-- Selecione **Recortar** na [barra de seleção](/pt-BR/docs/selections/working/).
+- Escolha **Mais > Recortar tela à seleção** na [barra de seleção](/pt-BR/docs/selections/working/).
 
 Os pixels fora dos limites da seleção continuam nas camadas deles, ocultos. Não
 é possível recortar por uma seleção invertida.

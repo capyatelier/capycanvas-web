@@ -53,10 +53,7 @@ Choisissez **Image > Gestion des couleurs > Convertir l’espace colorimétrique
 valeurs RVB afin que les couleurs gardent leur apparence dans un autre espace de
 travail, dans les limites de son gamut.
 
-Avec **Enregistrer une copie aplatie**, **Appliquer** devient
-**Enregistrer une copie…**. La copie a un seul calque, de même taille et de même
-profondeur de couleur. Son nom de fichier doit se terminer par `.capy` et ne peut pas être
-celui du fichier du dessin ouvert.
+Avec **Enregistrer une copie aplatie**, **Appliquer** devient **Créer une copie**. La copie s'ouvre sous la forme d'un nouveau dessin avec un seul calque, de même taille et profondeur de bits. Choisissez **Fichier > Enregistrer** pour l'enregistrer en tant que fichier `.capy`.
 
 ![La boîte de dialogue Convertir l’espace colorimétrique avec la comparaison Avant et Après et le message sur le gamut.](shot:color-management/convert-dialog)
 
@@ -67,9 +64,7 @@ départ.
 
 ### Résultat
 
-**Calques modifiables** (par défaut) convertit chaque calque sur place.
-**Enregistrer une copie aplatie** enregistre une copie convertie et aplatie dans
-un nouveau fichier `.capy` et laisse le dessin ouvert inchangé.
+**Calques modifiables** (par défaut) convertit chaque calque en place. **Enregistrer une copie aplatie** ouvre une copie convertie et aplatie en tant que nouveau dessin et laisse l'original inchangé.
 
 ### Intention de rendu
 
@@ -101,15 +96,11 @@ que si la cible est le SDR 8 bits.
 Pour appliquer Attribuer un profil, Convertir l’espace colorimétrique ou Changer
 la profondeur de couleur :
 
-1. Réglez les champs de la boîte de dialogue.
-2. Sélectionnez **Prévisualiser le résultat complet**.
-3. Comparez **Avant** et **Après**.
-4. Sélectionnez **Appliquer** (ou **Enregistrer une copie…**).
+1. Définissez les champs dans la boîte de dialogue.
+2. Comparez **Avant** et **Après** lorsque l'aperçu apparaît.
+3. Sélectionnez **Appliquer** (ou **Créer une copie**).
 
-**Appliquer** reste indisponible tant que l’aperçu n’est pas prêt, et modifier un
-champ supprime l’aperçu. Si des couleurs sont écrêtées, la ligne d’état indique
-« Certaines couleurs dépassent le gamut de destination. Comparer le résultat
-avant d’appliquer. »
+**Appliquer** reste indisponible tant que l’aperçu n’est pas prêt. La modification d’un champ actualise la comparaison. La ligne d’état signale les couleurs écrêtées.
 
 L’application est une étape d’annulation. Annuler et Rétablir
 ouvrent **Annuler le changement de couleur** et

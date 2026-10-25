@@ -14,7 +14,7 @@ Choisissez **Calque > Nouveau > Nouveau calque**, ou sélectionnez **Nouveau cal
 
 ## Calque Objet
 
-Un calque Objet conserve une image importée à sa taille, sa profondeur de couleur et son profil colorimétrique propres. Ouvrir ou importer une image, déposer une image sur la toile et coller une image d’une autre application créent des calques Objet.
+Un calque Objet conserve la taille, la profondeur de couleur et le profil colorimétrique de l’image importée. Importer une image comme calque, la déposer sur la toile ou la coller depuis une autre application crée un calque Objet.
 
 Vous pouvez déplacer, redimensionner et faire pivoter un calque Objet sans rééchantillonner sa source à répétition. Choisissez **Calque > Pixelliser le calque** pour peindre sur ses pixels ou utiliser une commande qui exige un calque de peinture. La pixellisation le convertit à l’espace colorimétrique, à la profondeur de couleur et à la grille de pixels du dessin.
 

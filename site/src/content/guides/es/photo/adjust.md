@@ -38,7 +38,7 @@ solo las aclara en la roca.
 1. Pulsa **M**, o selecciona **Selección con lazo** en la barra de herramientas, y dibuja alrededor de la roca.
 2. Elige **Seleccionar > Suavizar bordes de selección…**, o selecciona **Perfeccionar** en la barra de selección y elige **Suavizar bordes…** ([Trabajar con selecciones](/es/docs/selections/working/)).
 3. Pon **Radio de suavizado de bordes** en 20 px y selecciona **Aplicar**.
-4. Selecciona **Máscara** en la barra de selección.
+4. Elige **Máscara > Máscara: mostrar selección** en la barra de selección.
 
 ![La barra de selección con Máscara junto a la selección alrededor de la roca.](shot:photo/adjust-bar)
 

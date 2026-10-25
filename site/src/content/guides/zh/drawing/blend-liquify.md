@@ -26,6 +26,24 @@ related: ["drawing/brush-tools", "brushes/wet-media", "brushes/tip-texture", "re
 
 每支混色笔的设置参见[混色、洇色和鬃毛](/zh/docs/brushes/wet-media/)。
 
+### 鬃毛混色
+
+**鬃毛混色** 将颜料拉成条纹。此示例左端保持未混合的状态。
+
+![鬃毛混色 将右侧的明暗色带混成条纹。](shot:examples/bristle-blender)
+
+### 抖动混色
+
+**抖动混色** 用抖动图案混合色带。
+
+![抖动混色 混合右侧的明暗色带。](shot:examples/dither-blender)
+
+### 大理石纹
+
+**大理石纹** 将颜料卷成旋涡。
+
+![大理石纹 将右侧的明暗色带卷成旋涡。](shot:examples/marbling)
+
 ## 液化
 
 执行以下任一操作：
@@ -49,6 +67,18 @@ related: ["drawing/brush-tools", "brushes/wet-media", "brushes/tip-texture", "re
 | **重建** | 取回画笔下的液化变形。 |
 
 液化没有应用按钮。每一笔都会改变图层，并各自成为一个撤销步骤。笔迹会一直在图层第一笔之前的像素上继续变形，直到你在图层上绘画、填充、使用滤镜、变换或粘贴。
+
+### 边缘
+
+**边缘** 将颜料拉向笔画线。左侧色带显示原始颜料。
+
+![边缘 将右侧的色带拉向水平笔画。](shot:examples/liquify-edge)
+
+### 重建
+
+**重建** 恢复画笔下方的原始颜料。此处恢复了扭曲色带的右半部分。
+
+![左侧为扭曲色带，右侧为用 重建 恢复的颜料。](shot:examples/liquify-reconstruct)
 
 ## 调整液化和重置液化
 

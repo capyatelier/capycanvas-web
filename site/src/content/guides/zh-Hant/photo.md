@@ -33,8 +33,8 @@ related: ["start/workspaces", "transform/crop", "retouch/clone-heal", "filters/h
 | **自然飽和度** | 提高整張照片的自然飽和度 |
 | **曲線** | 作用於整張照片的 S 曲線 |
 | *Retouch* | 修復筆跡 |
-| 物件圖層 | 照片，以文件名命名 |
+| 繪畫圖層 | 照片，以文件名命名 |
 
-物件圖層上沒有任何繪畫。
+繪畫圖層上沒有任何繪畫。
 
 第一個階段：[開啟和裁切](/zh-Hant/docs/photo/crop/)。

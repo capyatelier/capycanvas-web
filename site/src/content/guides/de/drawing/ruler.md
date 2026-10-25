@@ -70,7 +70,7 @@ Führen Sie eine der folgenden Aktionen aus:
 
 - Wählen Sie **Ansicht > Lineale anzeigen** oder **Ansicht > An Linealen ausrichten**.
 - Wählen Sie bei aktivem Werkzeug Lineal oder einer mit Vorgang ausgewählten Hilfslinie **Lineale anzeigen** oder **An Linealen ausrichten** im Bedienfeld **Werkzeug** aus.
-- Wählen Sie **Hilfslinien** oder **Einrasten** in der Hilfslinienleiste aus.
+- Wählen Sie **Mehr > Show rulers** oder **An Hilfslinien ausrichten** in der Führungsleiste.
 
 Beides ist standardmäßig aktiviert. Solange Hilfslinien ausgeblendet sind, ist **An
 Linealen ausrichten** nicht verfügbar.
@@ -81,7 +81,7 @@ Wählen Sie die Hilfslinie aus, und führen Sie dann eine der folgenden Aktionen
 
 - Drücken Sie **Löschen** oder **Rücktaste**.
 - Wählen Sie **Lineal löschen** im Bedienfeld **Werkzeug** aus.
-- Wählen Sie **Löschen** in der Hilfslinienleiste aus.
+- Wählen Sie **Hilfslinie löschen** in der Hilfslinienleiste aus.
 
 **Löschen** und **Rücktaste** löschen eine Hilfslinie nur, wenn Lineal, Form, Vorgang,
 Transformieren oder Zuschneiden das aktive Werkzeug ist. Bei anderen Werkzeugen führen
@@ -94,16 +94,16 @@ unter ihren Griffen eine Leiste.
 
 | Schaltfläche | Aktion |
 | --- | --- |
-| **Löschen** | Löscht die Hilfslinie. |
-| **Einrasten** | Aktiviert oder deaktiviert **An Linealen ausrichten**. |
-| **Hilfslinien** | Blendet alle Hilfslinien ein oder aus. Beim Ausblenden verschwindet auch die Leiste. |
+| **Hilfslinie löschen** | Löscht die Hilfslinie. |
+| **An Hilfslinien ausrichten** | Aktiviert oder deaktiviert **Snap to rulers**. |
+| **Mehr > Show rulers** | Blendet alle Hilfslinien ein oder aus. Beim Ausblenden verschwindet auch die Leiste. |
 | **Begradigen** | Startet **Bild an Hilfslinie ausrichten**. Nur bei einer geraden Hilfslinie. |
 | **Mehr** | Öffnet ein Menü mit **Leinwandaktionsleiste anzeigen**. |
 
 Wenn Sie **Ansicht > Leinwandaktionsleiste anzeigen** deaktivieren, entfällt die
 Hilfslinienleiste.
 
-![Die Hilfslinienleiste unter einer ausgewählten geraden Hilfslinie mit Löschen, Einrasten, Hilfslinien, Begradigen und Mehr.](shot:drawing/ruler-guide-bar)
+![Die Führungsschiene unter einer ausgewählten Gerade-Führung mit Hilfslinie löschen, An Hilfslinien ausrichten, Begradigen und Mehr.](shot:drawing/ruler-guide-bar)
 
 ## Hilfslinien mit Vorgang verschieben
 

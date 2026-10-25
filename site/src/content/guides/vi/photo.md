@@ -36,8 +36,8 @@ dùng các phần sau của không gian làm việc:
 | **Độ rực màu** | Tăng độ rực màu của toàn bộ ảnh |
 | **Đường cong** | Một đường cong chữ S cho toàn bộ ảnh |
 | *Retouch* | Các nét phục hồi |
-| Lớp Đối tượng | Bức ảnh, mang tên của tệp |
+| Lớp vẽ | Bức ảnh, mang tên của tệp |
 
-Không có nét vẽ trên lớp Đối tượng.
+Không có nét vẽ trên lớp vẽ.
 
 Giai đoạn đầu tiên: [Mở và cắt xén ảnh](/vi/docs/photo/crop/).

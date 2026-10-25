@@ -13,9 +13,9 @@ Wählen Sie **Datei > Öffnen…** oder drücken Sie **Strg+O**, und wählen Sie
 Foto aus ([Öffnen und Speichern](/de/docs/files/open-save/)). Das Foto öffnet
 sich in einer eigenen Zeichnungsregisterkarte.
 
-![Das Ebenen-Bedienfeld mit der Terrarium-Objektebene.](shot:photo/open-layers)
+![Das Ebenenbedienfeld mit der Malebene terrarium.](shot:photo/open-layers)
 
-Die Zeichnung enthält eine nach der Datei benannte Objektebene. Im Beispiel heißt die Ebene „terrarium“.
+Die Zeichnung enthält eine Malebene mit dem Namen der Datei. Im Beispiel heißt die Ebene „terrarium“.
 
 ## 2. Seitenverhältnis wählen
 
@@ -44,9 +44,9 @@ und die Spitzen des Farns gleichmäßige Ränder erhalten.
 
 ## 4. Zuschnitt anwenden
 
-Wählen Sie in der Zuschnittleiste **Anwenden** aus oder drücken Sie **Eingabe**.
+Wählen Sie in der Zuschnittleiste **Zuschnitt anwenden** aus oder drücken Sie **Eingabe**.
 Die Leinwand nimmt die Größe des Rahmens an: im Beispiel 2000 × 1600 Pixel. Die
 abgeschnittenen Pixel bleiben ausgeblendet auf der Ebene, außer
-**Abgeschnittene Malbereiche löschen** ist in der Zuschnittleiste aktiviert.
+**Mehr > Abgeschnittene Malpixel löschen** ist in der Zuschnittleiste aktiviert.
 
 Nächste Phase: [Retuschieren](/de/docs/photo/retouch/).

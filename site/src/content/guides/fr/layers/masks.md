@@ -40,10 +40,10 @@ traits sur un masque sont secs, sans mélange, ni diffusion, ni texture.
 Pendant que vous peignez sur un masque, une barre intitulée « Modification du
 masque de *calque* » apparaît en bas de la toile.
 
-![La barre de modification du masque avec Inverser, Désactiver, Appliquer le masque, Plus et Modifier le contenu.](shot:layers/masks-bar)
+![La barre d'édition de masque avec Inverser le masque de calque, Activer le masque de calque, Appliquer le masque, Plus et Modifier le contenu.](shot:layers/masks-bar)
 
-- **Inverser**
-- **Désactiver** désactive le masque, et le bouton indique alors **Activer**.
+- **Inverser le masque de calque** permute les zones affichées et masquées.
+- **Activer le masque de calque** active ou désactive le masque.
 - **Appliquer le masque** efface les pixels que le masque cache, puis supprime le masque.
 - **Plus** contient le menu **Calque** et **Afficher la barre d’actions de la toile**. Désactivez **Afficher la barre d’actions de la toile** pour masquer la barre.
 - **Modifier le contenu** revient à la peinture sur le calque.
@@ -55,7 +55,7 @@ Vous pouvez créer un masque à partir de la sélection actuelle.
 Effectuez l’une des opérations suivantes :
 
 - Choisissez **Calque > Masque > Masque : révéler la sélection** ou **Masque : masquer la sélection**. Sur un calque qui a un masque, ces éléments deviennent **Remplacer le masque : révéler la sélection** et **Remplacer le masque : masquer la sélection**.
-- Sélectionnez **Masque** dans la [barre de sélection](/fr/docs/selections/working/) sur la toile. Le nouveau masque montre la zone sélectionnée et remplace le masque éventuel du calque.
+- Choisissez une commande de masque de **Masque** dans la [barre de sélection](/fr/docs/selections/working/) sur le canevas. Le nouveau masque affiche la zone sélectionnée et remplace tout masque du calque.
 
 Un filtre ou un calque de remplissage ajouté pendant qu’une sélection est active
 reçoit un masque tiré de la sélection. **Coller dedans** crée un nouveau calque

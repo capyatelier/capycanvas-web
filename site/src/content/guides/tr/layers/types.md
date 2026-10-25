@@ -14,7 +14,7 @@ Boya katmanı çizimin renk uzayında pikseller tutar. Fırçalar, **Dolgu**, **
 
 ## Nesne katmanı
 
-Nesne katmanı içe aktarılan görüntüyü kendi boyutu, bit derinliği ve renk profiliyle saklar. Görüntüyü açmak veya içe aktarmak, tuvale bırakmak ve başka uygulamadan yapıştırmak nesne katmanı oluşturur.
+Nesne katmanı, içe aktarılan görüntünün boyutunu, bit derinliğini ve renk profilini korur. Görüntüyü katman olarak içe aktarmak, tuvale bırakmak veya başka bir uygulamadan yapıştırmak Nesne katmanı oluşturur.
 
 Nesne katmanını kaynağını tekrar tekrar örneklemeden taşıyabilir, ölçekleyebilir ve döndürebilirsiniz. Piksellerini boyamak veya boya katmanı gerektiren bir komut kullanmak için **Katman > Katmanı pikselleştir** seçin. Pikselleştirme onu çizimin renk uzayına, bit derinliğine ve piksel ızgarasına dönüştürür.
 

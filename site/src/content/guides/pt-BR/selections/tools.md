@@ -94,18 +94,17 @@ Clique em cada canto da forma. Para terminar, faça uma das seguintes ações:
 
 - Clique de novo no primeiro canto.
 - Pressione **Enter**.
-- Selecione **Concluir** na barra de ações da tela ou **Concluir seleção** no painel Ferramenta.
+- Selecione **Concluir seleção** na barra de ações da tela ou **Concluir seleção** no painel Ferramenta.
 
 Um polígono precisa de pelo menos três cantos.
 
-- Para remover o último canto, pressione **Backspace** ou **Excluir**, ou selecione **Remover ponto** na barra de ações da tela ou **Remover último ponto** no painel Ferramenta.
-- Para cancelar o polígono, pressione **Escape** ou selecione **Cancelar** na barra de ações da tela ou **Cancelar seleção** no painel Ferramenta.
+- Para remover o último canto, pressione **Backspace** ou **Excluir**, ou selecione **Remover último ponto** na barra de ações da tela ou **Remover último ponto** no painel Ferramenta.
+- Para cancelar o polígono, pressione **Escape** ou selecione **Cancelar seleção** na barra de ações da tela ou **Cancelar seleção** no painel Ferramenta.
 - Para encaixar a próxima aresta em passos de 45°, mantenha **Shift** pressionada. Para encaixar todas as arestas, ative **Restringir bordas a 45°** no painel Ferramenta.
 
-Enquanto você posiciona os cantos, a [barra de ações da tela](/pt-BR/docs/selections/working/)
-na parte inferior da tela mostra **Remover ponto**, **Cancelar** e **Concluir**.
+Enquanto você posiciona cantos, a [barra de tela](/pt-BR/docs/selections/working/) na parte inferior da tela mostra **Remover último ponto**, **Cancelar seleção** e **Concluir seleção**.
 
-![A barra de ações da tela para um polígono, com Remover ponto, Cancelar e Concluir.](shot:selections/tools-polygon-bar)
+![A barra de tela para um polígono, com Remover último ponto, Cancelar seleção e Concluir seleção.](shot:selections/tools-polygon-bar)
 
 ## Seleção automática e Selecionar por cor
 

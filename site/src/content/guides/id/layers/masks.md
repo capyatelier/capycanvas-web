@@ -40,10 +40,10 @@ bersifat kering, tanpa pencampuran, rembesan, atau tekstur.
 Selama Anda melukis di mask, bilah bertuliskan "Mengedit mask *lapisan*" muncul di
 bagian bawah kanvas.
 
-![Bilah pengeditan mask dengan Balikkan, Nonaktifkan, Terapkan Mask, Lainnya, dan Edit Isi.](shot:layers/masks-bar)
+![Bilah pengeditan topeng dengan Balikkan Mask Lapisan, Aktifkan Mask Lapisan, Terapkan Mask, Lainnya, dan Edit Isi.](shot:layers/masks-bar)
 
-- **Balikkan**
-- **Nonaktifkan** mematikan mask, lalu tombolnya bertuliskan **Aktifkan**.
+- **Balikkan Mask Lapisan** menukar area yang ditampilkan dan tersembunyi.
+- **Aktifkan Mask Lapisan** menghidupkan atau mematikan masker.
 - **Terapkan Mask** menghapus piksel yang disembunyikan mask, lalu membuang mask.
 - **Lainnya** memuat menu **Lapisan** dan **Tampilkan bilah tindakan kanvas**. Nonaktifkan **Tampilkan bilah tindakan kanvas** untuk menyembunyikan bilah ini.
 - **Edit Isi** kembali ke melukis di lapisan.
@@ -55,7 +55,7 @@ Anda dapat membuat mask dari seleksi saat ini.
 Lakukan salah satu langkah berikut:
 
 - Pilih **Lapisan > Mask > Mask: tampilkan seleksi** atau **Mask: sembunyikan seleksi**. Pada lapisan yang sudah memiliki mask, item ini bertuliskan **Ganti mask: tampilkan seleksi** dan **Ganti mask: sembunyikan seleksi**.
-- Pilih **Mask** di [bilah seleksi](/id/docs/selections/working/) pada kanvas. Mask baru menampilkan area yang terseleksi dan menggantikan mask yang sudah dimiliki lapisan.
+- Pilih perintah mask dari **Mask** di [bilah pilihan](/id/docs/selections/working/) di kanvas. Mask baru menampilkan area yang dipilih dan menggantikan mask apa pun yang dimiliki layer.
 
 Filter atau lapisan isian yang ditambahkan selama ada seleksi aktif mendapat mask
 dari seleksi itu. **Tempel ke Dalam** membuat lapisan baru yang di-mask sesuai

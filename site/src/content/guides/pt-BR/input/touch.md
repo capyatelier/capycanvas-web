@@ -23,6 +23,8 @@ Enquanto a caneta está na tela, os dedos não movem a tela. Um dedo em uma alç
 transformação ou de recorte, ou na origem do **Carimbo de clonagem**, arrasta em
 vez disso a alça ou a origem.
 
+**Encaixar rotação** está ativado por padrão e mantém a visualização perto de um quarto de volta. Desligue-o em **Exibir > Encaixar rotação** para rotação livre.
+
 ## Capturar uma cor
 
 Mantenha um dedo parado na tela para capturar a cor sob ele. Um anel de lupa

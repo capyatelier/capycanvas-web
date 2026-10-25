@@ -42,9 +42,7 @@ Trên lớp vector, **Thao tác** chọn, di chuyển, đổi tỷ lệ và xoay
 Bạn có thể di chuyển một bản sao của các pixel đã chọn và giữ nguyên bản gốc tại
 chỗ.
 
-Bật **Giữ bản sao** trong bảng Công cụ, hoặc trên
-[thanh vùng chọn](/vi/docs/selections/working/). Giữ **Alt** khi bắt đầu kéo để làm
-ngược lại cho lần kéo đó.
+Bật **Giữ bản sao** trong bảng **Công cụ** hoặc chọn **Thêm > Giữ bản sao** trên [thanh vùng chọn](/vi/docs/selections/working/). Giữ **Alt** khi bắt đầu kéo để đảo lựa chọn chỉ trong lần kéo đó.
 
 ## Biến đổi
 
@@ -60,14 +58,14 @@ Khi có vùng chọn, **Biến đổi** thay đổi các pixel đã chọn của
 tại. Khi không có vùng chọn, lệnh thay đổi các lớp đã chọn. Một hộp có tay nắm và
 thanh khung vẽ xuất hiện.
 
-Để hoàn tất, chọn **Áp dụng** hoặc nhấn **Enter**. **Hủy** hoặc **Escape** bỏ phép
+Để hoàn tất, chọn **Áp dụng biến đổi** hoặc nhấn **Enter**. **Hủy biến đổi** hoặc **Escape** bỏ phép
 biến đổi, và **Hoàn tác** cũng vậy khi bạn đang biến đổi lớp.
 
 Để biến đổi nhiều lớp, bỏ vùng chọn trước.
 
 ## Tay nắm
 
-Ở **Tự do** và **Đồng tỷ lệ**:
+Trong khi mở rộng quy mô:
 
 - Kéo bên trong hộp để di chuyển hộp. Giữ **Shift** để chỉ di chuyển theo chiều ngang hoặc chiều dọc.
 - Kéo tay nắm ở góc hoặc ở cạnh để đổi tỷ lệ từ phía đối diện. Giữ **Shift** để giữ tỷ lệ khung hình, hoặc **Alt** để đổi tỷ lệ quanh tâm xoay.
@@ -92,12 +90,11 @@ biến đổi, và **Hoàn tác** cũng vậy khi bạn đang biến đổi lớ
 
 ## Thanh biến đổi
 
-![Thanh khung vẽ khi biến đổi, với Chế độ, Bắt dính, các nút lật và xoay, Đặt lại, Nội suy, Hủy và Áp dụng.](shot:transform/transform-bar)
+![Thanh biến đổi có các nút chế độ, điều khiển lật và chụp nhanh, Hủy biến đổi và Áp dụng biến đổi.](shot:transform/transform-bar)
 
 ### Chế độ
 
-**Tự do**, **Đồng tỷ lệ**, **Làm méo** hoặc **Uốn cong**. **Đồng tỷ lệ** giữ tỷ
-lệ khung hình. **Tự do** là mặc định.
+Chọn **Đổi tỷ lệ**, **Làm méo** hoặc **Uốn cong** trên thanh. **Giữ tỷ lệ** giữ tỷ lệ khi đổi kích thước. Trong **Làm méo**, **Phối cảnh** phản chiếu chuyển động của một góc sang góc bên cạnh. Mặc định là **Đổi tỷ lệ**.
 
 ### Kích thước gốc
 
@@ -116,28 +113,24 @@ Với **Làm méo**, mỗi lần kéo một góc thì góc kề bên di chuyển
 
 Với **Uốn cong**:
 
-- **Chia lưới**: chọn **Chia dọc**, **Chia ngang** hoặc **Chia chữ thập**, rồi chạm vào vùng uốn để thêm một đường lưới tại đó mà không đổi hình dạng. **Escape** hủy thao tác chia. Lưới có tối đa 32 ô mỗi chiều.
-- **Chọn điểm**: chạm vào các điểm để chọn và di chuyển chúng cùng lúc.
-- **Đặt lại lưới**: thay vùng uốn bằng một lưới thẳng.
-- **Lưới**: **3 × 3** (mặc định), **4 × 4** hoặc **5 × 5**. Dùng được cho đến khi bạn thay đổi hình dạng.
+- **Lưới** mở **3 × 3** (mặc định), **4 × 4**, **5 × 5** và các lệnh chia lưới. Kích thước lưới có sẵn cho đến khi bạn thay đổi hình dạng.
+- Chọn **Chia dọc**, **Chia ngang** hoặc **Chia chữ thập**, sau đó chọn một điểm trên lưới để thêm đường lưới mà không thay đổi hình dạng. **Escape** hủy việc phân chia. Một lưới chứa tối đa 32 ô theo mỗi hướng.
+- **Chọn điểm** chọn các điểm để di chuyển cùng nhau.
+- **Đặt lại lưới** khôi phục lưới thẳng.
 
-![Thanh khung vẽ ở chế độ Uốn cong, với trình đơn Chia dọc, Chọn điểm, Đặt lại lưới và trình đơn 3 × 3.](shot:transform/warp-bar)
+![Thanh biến đổi ở chế độ Uốn cong với Lưới và Chọn điểm.](shot:transform/warp-bar)
 
 ### Nút lật và xoay
 
-Các nút biểu tượng **Lật ngang**, **Lật dọc**, **Xoay 90° sang trái** và
-**Xoay 90° sang phải** lật hoặc xoay nội dung quanh tâm xoay.
+**Lật ngang** có trên thanh. **Thêm** chứa **Lật dọc**, **Xoay 90° sang trái** và **Xoay 90° sang phải**. Họ phản chiếu hoặc xoay chuyển nội dung về trục xoay.
 
-### Đặt lại
+### Đặt lại biến đổi
 
-Hoàn tác mọi thay đổi trong lần biến đổi này và giữ phép biến đổi đang mở.
-**Chế độ** trở về **Tự do**.
+Chọn **Đặt lại biến đổi** trong **Thêm** để hoàn tác mọi thay đổi trong biến đổi hiện tại. Biến đổi vẫn mở và trở về **Đổi tỷ lệ**.
 
 ### Nội suy
 
-Đặt cách lấy mẫu lại pixel: **Lân cận gần nhất**, **Song tuyến tính**,
-**Song bậc ba** hoặc **Lanczos**. **Song tuyến tính** là mặc định ở **Tự do** và
-**Đồng tỷ lệ**, còn **Song bậc ba** là mặc định ở **Làm méo** và **Uốn cong**.
+Chọn **Interpolation** trong **Thêm** để đặt cách lấy mẫu lại pixel: **Lân cận gần nhất**, **Song tuyến tính**, **Song bậc ba** hoặc **Lanczos**. **Song tuyến tính** là mặc định khi chia tỷ lệ và **Song bậc ba** trong **Làm méo** và **Uốn cong**.
 
 ## Giá trị biến đổi trong bảng Công cụ
 
@@ -145,7 +138,7 @@ Bảng Công cụ, và thanh Tùy chọn công cụ trong Ảnh, hiện các gi�
 đổi đang mở, trừ ở **Uốn cong**.
 
 - **Điểm neo vị trí**: **X** và **Y**, tính bằng pixel, với lưới điểm neo phía trên để chọn điểm nào của hộp được dùng cho hai giá trị này.
-- **Tỷ lệ**: **Chiều rộng** và **Chiều cao**, tính bằng phần trăm. **Đồng tỷ lệ** giữ hai giá trị liên kết với nhau.
+- **Đổi tỷ lệ**: **Chiều rộng** và **Chiều cao**, tính bằng phần trăm. **Giữ tỷ lệ** giữ hai giá trị liên kết với nhau.
 - **Góc xoay**: **Góc**, từ −180° đến 180°.
 - **Độ nghiêng**: **Độ nghiêng**, từ −85° đến 85°.
 
@@ -169,7 +162,7 @@ Thực hiện một trong các cách sau:
 - Chọn **Lớp > Thiết lập lớp > Áp dụng biến đổi**.
 
 Trong lúc xử lý, một thanh ở cuối khung vẽ ghi “Đang áp dụng biến đổi…” kèm nút
-**Hủy**.
+**Hủy biến đổi**.
 
 ## Biến đổi lần nữa
 
@@ -179,6 +172,7 @@ chọn không được lặp lại.
 
 ## Ảnh đã đặt
 
-Khi bạn dán ảnh từ ứng dụng khác hoặc chọn **Tệp > Nhập ảnh thành lớp…**, ảnh mở ra
-trong hộp biến đổi. **Áp dụng** đặt ảnh, còn **Hủy** bỏ ảnh. Cho đến khi bạn chọn
+Khi bạn dán ảnh từ ứng dụng khác hoặc chọn **Tệp > Import Image as
+Layer…**, ảnh mở ra
+trong hộp biến đổi. **Áp dụng biến đổi** đặt ảnh, còn **Hủy biến đổi** bỏ ảnh. Cho đến khi bạn chọn
 một trong hai, các lệnh khác không dùng được.

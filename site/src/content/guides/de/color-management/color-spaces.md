@@ -53,9 +53,7 @@ Wählen Sie **Bild > Farbverwaltung > Farbraum konvertieren…**, um die RGB-Wer
 dass die Farben in einem anderen Arbeitsfarbraum ihr Aussehen behalten, innerhalb
 seines Farbumfangs.
 
-Mit **Reduzierte Kopie speichern** wird **Anwenden** zu **Kopie speichern…**. Die
-Kopie hat eine Ebene mit derselben Größe und Farbtiefe. Ihr Dateiname muss auf
-`.capy` enden und darf nicht die Datei der geöffneten Zeichnung sein.
+Mit **Reduzierte Kopie speichern** wird **Anwenden** zu **Kopie erstellen**. Die Kopie öffnet sich als neue Zeichnung mit einer Ebene, derselben Größe und Bittiefe. Wählen Sie **Datei > Speichern**, um die Kopie als `.capy`-Datei zu speichern.
 
 ![Der Dialog Farbraum konvertieren mit dem Vergleich Vorher und Nachher und der Meldung zum Farbumfang.](shot:color-management/convert-dialog)
 
@@ -66,9 +64,7 @@ ausgewählt.
 
 ### Ergebnis
 
-**Bearbeitbare Ebenen** (Standard) konvertiert jede Ebene direkt. **Reduzierte Kopie
-speichern** speichert eine konvertierte, auf eine Ebene reduzierte Kopie als neue
-`.capy`-Datei und lässt die geöffnete Zeichnung unverändert.
+**Bearbeitbare Ebenen** (Standard) konvertiert jede Ebene in der aktuellen Zeichnung. **Reduzierte Kopie speichern** öffnet eine konvertierte, auf eine Ebene reduzierte Kopie als neue Zeichnung und lässt das Original unverändert.
 
 ### Wiedergabeabsicht
 
@@ -99,14 +95,10 @@ Ziel 8-Bit-SDR ist.
 So wenden Sie Profil zuweisen, Farbraum konvertieren oder Farbtiefe ändern an:
 
 1. Legen Sie die Felder im Dialog fest.
-2. Wählen Sie **Vollständiges Ergebnis ansehen** aus.
-3. Vergleichen Sie **Vorher** und **Nachher**.
-4. Wählen Sie **Anwenden** (oder **Kopie speichern…**) aus.
+2. Vergleichen Sie **Vorher** und **Nachher**, wenn die Vorschau erscheint.
+3. Wählen Sie **Anwenden** (oder **Kopie erstellen**).
 
-**Anwenden** bleibt nicht verfügbar, bis die Vorschau bereit ist, und eine Änderung
-an einem Feld verwirft die Vorschau. Wird eine Farbe beschnitten, lautet die
-Statuszeile „Einige Farben überschreiten den Zielfarbumfang. Das Ergebnis vor dem
-Anwenden vergleichen.“
+**Anwenden** bleibt nicht verfügbar, bis die Vorschau fertig ist. Wenn Sie ein Feld ändern, wird der Vergleich aktualisiert. Die Statuszeile meldet alle Farben, die abgeschnitten werden.
 
 Anwenden ist ein Rückgängig-Schritt. Rückgängig und Wiederholen öffnen
 **Farbänderung rückgängig machen** und **Farbänderung wiederholen**. Diese Dialoge

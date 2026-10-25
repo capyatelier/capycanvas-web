@@ -12,7 +12,7 @@ wieder laden.
 Führen Sie eine der folgenden Aktionen aus:
 
 - Wählen Sie **Auswahl > Als Auswahlebene speichern**.
-- Wählen Sie in der Auswahlleiste oder in der Leiste der Schnellmaske **Speichern** aus.
+- Wählen Sie **Maske > Als Auswahlebene speichern** in der Auswahlleiste oder **Als Auswahlebene speichern** in der Schnellmaskenleiste.
 - Wählen Sie in der Schnellmaske **Ebene > Als Auswahlebene speichern**.
 
 Die neue Ebene kommt ganz oben in die Ebenenliste und heißt *Auswahl* mit einer
@@ -59,7 +59,7 @@ Leinwand trägt als Beschriftung den Namen der Ebene und „wird bearbeitet“.
 Ist die Leinwandaktionsleiste ausgeblendet, erscheint diese Leiste nicht.
 
 - **Laden** macht die Ebene zur aktuellen Auswahl und kehrt zur Zeichnung zurück.
-- **Umkehren** kehrt die gespeicherte Auswahl um und lässt die Ebene zum Bearbeiten geöffnet.
+- **Auswahlebene umkehren** kehrt die gespeicherte Auswahl um und lässt die Ebene zum Bearbeiten geöffnet.
 - **Zur Zeichnung zurückkehren** beendet die Bearbeitung. **Escape** bewirkt dasselbe.
 
 Nach der Bearbeitung wird die zuvor bearbeitete Ebene wieder aktiv oder, falls
@@ -70,7 +70,7 @@ und wählen Sie unter **Ändern**. **Auswahl > Auswahl vergrößern…** und die
 anderen Befehle zum Verfeinern im Menü **Auswahl** kehren zuerst zur Zeichnung
 zurück und ändern die aktuelle Auswahl.
 
-![Die Leinwandaktionsleiste für eine bearbeitete Auswahlebene mit Laden, Umkehren und Zur Zeichnung zurückkehren.](shot:selections/selection-layer-bar)
+![Die Leinwandleiste für eine bearbeitete Auswahlebene mit Laden, Auswahlebene umkehren und Zur Zeichnung zurückkehren.](shot:selections/selection-layer-bar)
 
 ## Auswahlebene laden
 

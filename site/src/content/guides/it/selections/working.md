@@ -29,9 +29,9 @@ La barra si trova accanto all'oggetto, o lungo il bordo inferiore della tela. Da
 sinistra a destra contiene:
 
 - Una didascalia, come «Maschera veloce» o «Trasforma contorno».
-- I pulsanti. Un pulsante attenuato non è disponibile; selezionalo per vederne il motivo.
+- I pulsanti. Passa il mouse sopra un'icona per leggerne il nome. Un pulsante in grigio non è disponibile; selezionalo per vedere il motivo.
 - **Altro**, con i pulsanti che non entrano nella barra, poi il menu **Seleziona** per una selezione o il menu **Livello** per una maschera.
-- Il pulsante che conclude, come **Applica** o **Esci**.
+- Il pulsante che conclude, come **Applica trasformazione** o **Esci**.
 
 Una barra accanto a un oggetto si nasconde mentre tocchi la tela o sposti la
 vista.
@@ -55,21 +55,15 @@ mostrano mai la barra.
 
 ![La barra della selezione sotto una selezione rettangolare.](shot:selections/working-selection-bar)
 
-- **Deseleziona** e **Inverti**: vedi il menu Seleziona più sotto.
-- **Lascia copia**: solo con **Operazione**, vedi [Spostamento e trasformazione](/it/docs/transform/move-transform/).
-- **Copia su livello**: **Copia selezione su nuovo livello** o **Taglia selezione su nuovo livello**.
-- **Copia**: **Copia**, **Copia elementi uniti** o **Taglia**, vedi [Copiare e incollare](/it/docs/transform/clipboard/).
-- **Trasforma**: trasforma i pixel selezionati.
-- **Perfeziona**: i comandi di perfezionamento e **Trasforma contorno**.
-- **Maschera**: applica al livello attivo una maschera sulla selezione.
-- **Regola**: aggiunge un filtro che usa la selezione come maschera, vedi [Come si applicano i filtri](/it/docs/filters/how-filters-apply/).
-- **Riempi**: **Riempi selezione**.
-- **Svuota**: **Svuota pixel selezionati** o **Svuota fuori dalla selezione**.
-- **Ritaglia**: **Ritaglia tela alla selezione**, vedi [Ritaglio](/it/docs/transform/crop/).
-- **Maschera veloce**: vedi [Maschera veloce](/it/docs/selections/quick-mask/).
-- **Salva**: **Salva come livello di selezione**, vedi [Livelli di selezione](/it/docs/selections/selection-layers/).
+- **Trasforma** cambia i pixel selezionati.
+- **Copia** apre gli appunti e i comandi di copia su livello.
+- **Riempi selezione** riempie i pixel selezionati; **Svuota pixel selezionati** li cancella.
+- **Regola** aggiunge un filtro che usa la selezione come maschera.
+- **Maschera** apre i comandi della maschera e i comandi di selezione salvata.
+- **Inverti selezione** e **Perfeziona** cambiano il contorno della selezione.
+- **Deseleziona pixel** cancella la selezione.
 
-Su una barra stretta, gli ultimi pulsanti, come **Maschera veloce** e **Salva**, passano in **Altro**.
+**Altro** contiene **Svuota fuori dalla selezione** e **Ritaglia tela alla selezione**. Quando **Operazione** è attivo, contiene anche **Lascia copia**. I pulsanti che non entrano nella barra passano a **Altro**. Il menu termina con il menu **Seleziona**.
 
 ## Menu Seleziona
 
@@ -146,7 +140,7 @@ Esegui una delle seguenti operazioni:
 
 - Scegli **Modifica > Riempi selezione**, **Svuota pixel selezionati** o **Svuota fuori dalla selezione**.
 - Premi **Maiusc+Backspace** per riempire, oppure **Canc** o **Backspace** per svuotare i pixel selezionati.
-- Seleziona **Riempi**, oppure **Svuota** e un comando, nella barra della selezione.
+- Selezionare **Riempi selezione** o **Svuota pixel selezionati** sulla barra di selezione oppure scegliere **Altro > Svuota fuori dalla selezione**.
 - In Pittura, seleziona **Riempi selezione** nella barra strumenti Comandi.
 - Apri il menu del livello e scegli **Selezione pixel > Riempi selezione**.
 
@@ -163,7 +157,7 @@ Esegui una delle seguenti operazioni:
 
 - Scegli **Livello > Nuovo > Copia selezione su nuovo livello** o **Livello > Nuovo > Taglia selezione su nuovo livello**.
 - Premi **Ctrl+J** per copiare o **Ctrl+Maiusc+J** per tagliare.
-- Seleziona **Copia su livello** nella barra della selezione e scegli un comando.
+- Seleziona **Copia** nella barra della selezione e scegli un comando.
 
 Il nuovo livello prende il nome dell'originale, per esempio *Ribbon copia*, e ne
 mantiene opacità, visibilità e metodo di fusione. La selezione viene rimossa
@@ -179,7 +173,7 @@ Puoi aggiungere al livello attivo una maschera che mostra solo la selezione.
 Esegui una delle seguenti operazioni:
 
 - Apri il menu del livello e scegli **Maschera > Maschera: mostra selezione**, oppure **Maschera > Maschera: nascondi selezione** per nascondere l'area selezionata.
-- Seleziona **Maschera** nella barra della selezione.
+- Selezionare **Maschera** sulla barra di selezione e scegliere un comando di maschera.
 
 Se il livello ha già una maschera, la selezione sostituisce la maschera
 esistente. La selezione viene rimossa, e la maschera si apre per la modifica

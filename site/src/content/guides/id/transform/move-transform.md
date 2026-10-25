@@ -43,9 +43,7 @@ Pada lapisan vektor, **Operasi** memilih, memindahkan, menskalakan, dan memutar 
 Anda dapat memindahkan salinan piksel terseleksi dan membiarkan aslinya tetap di
 tempat.
 
-Aktifkan **Tinggalkan Salinan** di panel Alat, atau di
-[bilah seleksi](/id/docs/selections/working/). Tahan **Alt** saat mulai menyeret
-untuk melakukan kebalikannya pada satu seretan.
+Aktifkan **Tinggalkan Salinan** di panel **Alat**, atau pilih **Lainnya > Tinggalkan Salinan** pada [bilah seleksi](/id/docs/selections/working/). Tahan **Alt** saat mulai menyeret untuk membalik pilihan hanya selama seretan itu.
 
 ## Transformasi
 
@@ -61,7 +59,7 @@ Jika ada seleksi, **Transformasi** mengubah piksel terseleksi pada lapisan aktif
 mask. Jika tidak ada, perintah ini mengubah lapisan terpilih. Kotak dengan pegangan
 dan bilah kanvas muncul.
 
-Untuk menyelesaikan, pilih **Terapkan** atau tekan **Enter**. **Batal** atau
+Untuk menyelesaikan, pilih **Terapkan transformasi** atau tekan **Enter**. **Batalkan transformasi** atau
 **Escape** membuang transformasi, begitu pula **Urungkan** selama Anda mentransformasi
 lapisan.
 
@@ -69,7 +67,7 @@ Untuk mentransformasi beberapa lapisan, batalkan seleksi terlebih dahulu.
 
 ## Pegangan
 
-Dalam **Bebas** dan **Seragam**:
+Saat menskalakan:
 
 - Seret di dalam kotak untuk memindahkannya. Tahan **Shift** untuk memindahkan hanya secara horizontal atau vertikal.
 - Seret pegangan sudut atau tepi untuk menskalakan dari sisi seberangnya. Tahan **Shift** untuk mempertahankan proporsi, atau **Alt** untuk menskalakan terhadap titik poros.
@@ -94,12 +92,11 @@ Dalam setiap mode:
 
 ## Bilah transformasi
 
-![Bilah kanvas untuk transformasi, dengan Mode, Lekatkan, tombol balik dan putar, Atur Ulang, Interpolasi, Batal, dan Terapkan.](shot:transform/transform-bar)
+![Bilah transformasi dengan tombol mode, kontrol balik dan gertakan, Batalkan transformasi, dan Terapkan transformasi.](shot:transform/transform-bar)
 
 ### Mode
 
-**Bebas**, **Seragam**, **Distorsi**, atau **Lengkungkan**. **Seragam** mempertahankan
-proporsi. **Bebas** adalah bawaan.
+Pilih **Skalakan**, **Distorsi**, atau **Lengkungkan** pada bilah. **Pertahankan proporsi** mempertahankan rasio aspek saat mengubah ukuran. Dalam **Distorsi**, **Perspektif** mencerminkan gerakan sudut ke sudut di sebelahnya. Pilihan awal adalah **Skalakan**.
 
 ### Ukuran Asli
 
@@ -119,28 +116,24 @@ Dengan **Distorsi**, mencerminkan setiap seretan sudut ke sudut di sebelahnya.
 
 Dengan **Lengkungkan**:
 
-- **Pisahkan Kisi**: pilih **Pisahkan secara Vertikal**, **Pisahkan secara Horizontal**, atau **Pisahkan Menyilang**, lalu ketuk lengkungan untuk menambahkan garis kisi di sana tanpa mengubah bentuknya. **Escape** membatalkan pemisahan. Satu kisi dapat memuat hingga 32 sel ke setiap arah.
-- **Pilih Titik**: ketuk titik-titik untuk memilihnya dan memindahkannya bersama.
-- **Atur Ulang Kisi**: mengganti lengkungan dengan kisi lurus.
-- **Kisi**: **3 × 3** (bawaan), **4 × 4**, atau **5 × 5**. Tersedia sampai Anda mengubah bentuknya.
+- **Kisi** membuka **3 × 3** (default), **4 × 4**, dan **5 × 5**, serta perintah pemisahan grid. Ukuran kisi tersedia hingga Anda mengubah bentuknya.
+- Pilih **Pisahkan secara Vertikal**, **Pisahkan secara Horizontal**, atau **Pisahkan Menyilang**, lalu pilih titik pada mesh untuk menambahkan garis grid tanpa mengubah bentuknya. **Escape** membatalkan pemisahan. Sebuah grid menampung hingga 32 sel di setiap arah.
+- **Pilih Titik** memilih titik untuk dipindahkan bersama.
+- **Atur Ulang Kisi** mengembalikan jaring lurus.
 
-![Bilah kanvas dalam mode Lengkungkan, dengan menu Pisahkan secara Vertikal, Pilih Titik, Atur Ulang Kisi, dan menu 3 × 3.](shot:transform/warp-bar)
+![Bilah transformasi dalam mode Lengkungkan dengan Kisi dan Pilih Titik.](shot:transform/warp-bar)
 
 ### Tombol balik dan putar
 
-Tombol ikon **Balik secara horizontal**, **Balik secara vertikal**, **Putar 90° ke
-kiri**, dan **Putar 90° ke kanan** mencerminkan atau memutar isi terhadap titik poros.
+**Balik secara horizontal** ada di bar. **Lainnya** menampung **Balik secara vertikal**, **Putar 90° ke kiri**, dan **Putar 90° ke kanan**. Mereka mencerminkan atau memutar konten tentang poros.
 
-### Atur Ulang
+### Atur ulang transformasi
 
-Membatalkan setiap perubahan dalam transformasi ini dan membiarkannya tetap terbuka.
-**Mode** kembali ke **Bebas**.
+Pilih **Atur ulang transformasi** di **Lainnya** untuk membatalkan setiap perubahan dalam transformasi saat ini. Transformasi tetap terbuka dan kembali ke **Skalakan**.
 
 ### Interpolasi
 
-Menentukan cara piksel disampel ulang: **Terdekat**, **Bilinear**, **Bikubik**, atau
-**Lanczos**. **Bilinear** adalah bawaan dalam **Bebas** dan **Seragam**, dan
-**Bikubik** dalam **Distorsi** dan **Lengkungkan**.
+Pilih **Interpolation** di **Lainnya** untuk mengatur cara pengambilan sampel ulang piksel: **Tetangga terdekat**, **Bilinear**, **Bikubik**, atau **Lanczos**. **Bilinear** adalah default saat melakukan penskalaan, dan **Bikubik** di **Distorsi** dan **Lengkungkan**.
 
 ## Nilai transformasi di panel Alat
 
@@ -148,7 +141,7 @@ Panel Alat, dan bilah Opsi Alat di Foto, menampilkan nilai transformasi yang sed
 terbuka, kecuali dalam **Lengkungkan**.
 
 - **Jangkar posisi**: **X** dan **Y**, dalam piksel, dengan kisi jangkar di atasnya untuk memilih titik kotak yang ditunjukkan nilai tersebut.
-- **Skala**: **Lebar** dan **Tinggi**, dalam persen. **Seragam** menjaga keduanya tetap terkait.
+- **Skalakan**: **Lebar** dan **Tinggi**, dalam persen. **Pertahankan proporsi** menjaga keduanya tetap terkait.
 - **Rotasi**: **Sudut**, dari −180° hingga 180°.
 - **Kemiringan**: **Kemiringan**, dari −85° hingga 85°.
 
@@ -174,7 +167,7 @@ Lakukan salah satu langkah berikut:
 - Pilih **Lapisan > Pengaturan Lapisan > Terapkan transformasi**.
 
 Selama prosesnya berjalan, bilah di bagian bawah kanvas bertuliskan "Menerapkan
-transformasi…" dengan **Batal**.
+transformasi…" dengan **Batalkan transformasi**.
 
 ## Transformasikan lagi
 
@@ -184,7 +177,7 @@ transformasi piksel terseleksi tidak diulang.
 
 ## Gambar yang ditempatkan
 
-Saat Anda menempelkan gambar dari aplikasi lain atau memilih **Berkas > Impor Gambar
-sebagai Lapisan…**, gambar terbuka di kotak transformasi. **Terapkan** menempatkan
-gambar dan **Batal** membuang gambar. Sampai Anda memilih salah satunya, perintah lain
+Saat Anda menempelkan gambar dari aplikasi lain atau memilih **Berkas > Import Image as
+Layer…**, gambar terbuka di kotak transformasi. **Terapkan transformasi** menempatkan
+gambar dan **Batalkan transformasi** membuang gambar. Sampai Anda memilih salah satunya, perintah lain
 tidak tersedia.

@@ -56,10 +56,10 @@ Os comandos que alteram a arte, como **Limpar pixels selecionados** e
 A [barra de ações da tela](/pt-BR/docs/selections/working/) na parte inferior da tela tem
 a legenda "Máscara rápida":
 
-- **Inverter**: **Inverter seleção**.
-- **Preencher** e **Limpar**: **Preencher máscara** preenche a máscara inteira, e **Limpar cobertura da seleção** esvazia a máscara.
+- **Inverter seleção** troca as áreas selecionadas e não selecionadas.
+- **Preencher máscara** preenche toda a máscara e **Limpar cobertura da seleção** esvazia a máscara.
 - **Refinar**: **Expandir…**, **Contrair…**, **Difusão…**, **Borda…** e **Suavizar…**. **Transformar contorno** fica indisponível aqui.
-- **Salvar**: **Salvar como camada de seleção** (consulte [Camadas de seleção](/pt-BR/docs/selections/selection-layers/)).
+- **Salvar como camada de seleção**: consulte [Camadas de seleção](/pt-BR/docs/selections/selection-layers/).
 - **Sair**: **Voltar à arte**.
 
 Com a barra de ações da tela oculta, a barra da Máscara rápida não aparece.

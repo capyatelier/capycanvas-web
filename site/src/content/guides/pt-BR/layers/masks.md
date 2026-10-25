@@ -39,10 +39,10 @@ traços na máscara são secos, sem mistura, espalhamento nem textura.
 Enquanto você pinta em uma máscara, uma barra com o rótulo "Editando a máscara
 de *camada*" aparece na parte inferior da tela.
 
-![A barra de edição da máscara com Inverter, Desativar, Aplicar máscara, Mais e Editar conteúdo.](shot:layers/masks-bar)
+![A barra de edição de máscara com Inverter máscara da camada, Ativar máscara da camada, Aplicar máscara, Mais e Editar conteúdo.](shot:layers/masks-bar)
 
-- **Inverter**
-- **Desativar** desativa a máscara, e o botão passa a mostrar **Ativar**.
+- **Inverter máscara da camada** troca as áreas mostradas e ocultas.
+- **Ativar máscara da camada** liga ou desliga a máscara.
 - **Aplicar máscara** apaga os pixels que a máscara oculta e depois remove a máscara.
 - **Mais** contém o menu **Camada** e **Mostrar barra de ações da tela**. Desative **Mostrar barra de ações da tela** para ocultar a barra.
 - **Editar conteúdo** volta à pintura na camada.
@@ -54,7 +54,7 @@ Você pode criar uma máscara a partir da seleção atual.
 Faça uma das seguintes ações:
 
 - Escolha **Camada > Máscara > Máscara: revelar seleção** ou **Máscara: ocultar seleção**. Em uma camada com máscara, os itens mostram **Substituir máscara: revelar seleção** e **Substituir máscara: ocultar seleção**.
-- Selecione **Máscara** na [barra de seleção](/pt-BR/docs/selections/working/) sobre a tela. A nova máscara mostra a área selecionada e substitui qualquer máscara que a camada tinha.
+- Escolha um comando de máscara de **Máscara** na [barra de seleção](/pt-BR/docs/selections/working/) na tela. A nova máscara mostra a área selecionada e substitui qualquer máscara que a camada tivesse.
 
 Um filtro ou uma camada de preenchimento adicionados com uma seleção ativa
 recebem uma máscara a partir da seleção. **Colar dentro** cria uma nova camada

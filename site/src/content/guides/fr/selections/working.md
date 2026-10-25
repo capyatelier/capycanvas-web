@@ -29,9 +29,9 @@ La barre se place à côté de l’objet, ou en bas de la toile. De gauche à dr
 elle contient :
 
 - Un intitulé, par exemple « Masque rapide » ou « Transformer le contour ».
-- Les boutons. Un bouton estompé est indisponible ; sélectionnez-le pour en voir la raison.
+- Les boutons. Passez la souris sur une icône pour lire son nom. Un bouton grisé n'est pas disponible ; sélectionnez-le pour voir la raison.
 - **Plus**, avec les boutons qui ne tiennent pas dans la barre, puis le menu **Sélection** pour une sélection ou le menu **Calque** pour un masque.
-- Le bouton qui termine l’opération, par exemple **Appliquer** ou **Quitter**.
+- Le bouton qui termine l’opération, par exemple **Appliquer la transformation** ou **Quitter**.
 
 Une barre placée à côté d’un objet se masque pendant que vous touchez la toile ou
 déplacez la vue.
@@ -56,21 +56,15 @@ n’affichent jamais la barre.
 
 ![La barre de sélection sous une sélection rectangulaire.](shot:selections/working-selection-bar)
 
-- **Désélectionner** et **Inverser** : voir le menu Sélection ci-dessous.
-- **Laisser une copie** : avec **Opération** uniquement, voir [Déplacer et transformer](/fr/docs/transform/move-transform/).
-- **Copier vers un calque** : **Copier la sélection vers un nouveau calque** ou **Couper la sélection vers un nouveau calque**.
-- **Copier** : **Copier**, **Copier avec fusion** ou **Couper**, voir [Copier et coller](/fr/docs/transform/clipboard/).
-- **Transformer** : transforme les pixels sélectionnés.
-- **Affiner** : les commandes d’affinage et **Transformer le contour**.
-- **Masque** : masque le calque actif selon la sélection.
-- **Ajuster** : ajoute un filtre qui utilise la sélection comme masque, voir [Application des filtres](/fr/docs/filters/how-filters-apply/).
-- **Remplissage** : **Remplir la sélection**.
-- **Effacer** : **Effacer les pixels sélectionnés** ou **Effacer hors de la sélection**.
-- **Recadrer** : **Recadrer la toile sur la sélection**, voir [Recadrer](/fr/docs/transform/crop/).
-- **Masque rapide** : voir [Masque rapide](/fr/docs/selections/quick-mask/).
-- **Enregistrer** : **Enregistrer comme calque de sélection**, voir [Calques de sélection](/fr/docs/selections/selection-layers/).
+- **Transformer** modifie les pixels sélectionnés.
+- **Copier** ouvre les commandes du presse-papiers et de copie sur calque.
+- **Remplir la sélection** remplit les pixels sélectionnés ; **Effacer les pixels sélectionnés** les efface.
+- **Ajuster** ajoute un filtre dont le masque est la sélection.
+- **Masque** ouvre les commandes de masque et les commandes de sélection enregistrée.
+- **Inverser la sélection** et **Affiner** modifient le contour de sélection.
+- **Désélectionner les pixels** efface la sélection.
 
-Sur une barre étroite, les derniers boutons, comme **Masque rapide** et **Enregistrer**, passent dans **Plus**.
+**Plus** contient **Effacer hors de la sélection** et **Recadrer la toile sur la sélection**. Lorsque l’outil **Opération** est actif, **Laisser une copie** y apparaît aussi. Les boutons qui ne tiennent pas dans la barre passent également dans **Plus**. Le menu se termine par le menu **Sélection**.
 
 ## Menu Sélection
 
@@ -148,7 +142,7 @@ Effectuez l’une des opérations suivantes :
 
 - Choisissez **Édition > Remplir la sélection**, **Effacer les pixels sélectionnés** ou **Effacer hors de la sélection**.
 - Appuyez sur **Maj+Retour arrière** pour remplir, ou sur **Supprimer** ou **Retour arrière** pour effacer les pixels sélectionnés.
-- Sélectionnez **Remplissage**, ou **Effacer** puis une commande, dans la barre de sélection.
+- Sélectionnez **Remplir la sélection** ou **Effacer les pixels sélectionnés** dans la barre de sélection, ou choisissez **Plus > Effacer hors de la sélection**.
 - Dans Peinture, sélectionnez **Remplir la sélection** dans la barre d’outils Commandes.
 - Ouvrez le menu du calque et choisissez **Sélection de pixels > Remplir la sélection**.
 
@@ -166,7 +160,7 @@ Effectuez l’une des opérations suivantes :
 
 - Choisissez **Calque > Nouveau > Copier la sélection vers un nouveau calque** ou **Calque > Nouveau > Couper la sélection vers un nouveau calque**.
 - Appuyez sur **Ctrl+J** pour copier ou sur **Ctrl+Maj+J** pour couper.
-- Sélectionnez **Copier vers un calque** dans la barre de sélection et choisissez une commande.
+- Sélectionnez **Copier** dans la barre de sélection et choisissez une commande.
 
 Le nouveau calque porte le nom de l’original, par exemple *Copie de Ribbon*, et
 conserve son opacité, sa visibilité et son mode de fusion. La sélection est
@@ -183,7 +177,7 @@ sélectionnée.
 Effectuez l’une des opérations suivantes :
 
 - Ouvrez le menu du calque et choisissez **Masque > Masque : révéler la sélection**, ou **Masque > Masque : masquer la sélection** pour masquer la zone sélectionnée.
-- Sélectionnez **Masque** dans la barre de sélection.
+- Sélectionnez **Masque** dans la barre de sélection et choisissez une commande de masque.
 
 Si le calque a déjà un masque, la sélection remplace ce masque. La sélection est
 supprimée et le masque s’ouvre pour modification (voir

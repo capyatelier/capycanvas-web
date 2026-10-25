@@ -68,7 +68,7 @@ Lakukan salah satu langkah berikut:
 
 - Pilih **Tampilan > Tampilkan penggaris** atau **Tampilan > Lekatkan ke penggaris**.
 - Saat alat Penggaris aktif, atau saat garis bantu dipilih dengan Operasi, pilih **Tampilkan penggaris** atau **Lekatkan ke penggaris** di panel **Alat**.
-- Pilih **Garis Bantu** atau **Lekatkan** di bilah garis bantu.
+- Pilih **Lainnya > Show rulers** atau pilih **Lekatkan ke garis bantu** di bilah panduan.
 
 Keduanya aktif secara bawaan. **Lekatkan ke penggaris** tidak tersedia saat garis bantu
 disembunyikan.
@@ -79,7 +79,7 @@ Pilih garis bantu, lalu lakukan salah satu langkah berikut:
 
 - Tekan **Delete** atau **Backspace**.
 - Pilih **Hapus penggaris** di panel **Alat**.
-- Pilih **Hapus** di bilah garis bantu.
+- Pilih **Hapus garis bantu** di bilah garis bantu.
 
 **Delete** dan **Backspace** hanya menghapus garis bantu saat Penggaris, Bentuk, Operasi,
 Transformasi, atau Pangkas menjadi alat yang aktif. Dengan alat lain, tombol ini
@@ -92,16 +92,16 @@ di bawah gagangnya.
 
 | Tombol | Tindakan |
 | --- | --- |
-| **Hapus** | Menghapus garis bantu. |
-| **Lekatkan** | Mengaktifkan atau menonaktifkan **Lekatkan ke penggaris**. |
-| **Garis Bantu** | Menampilkan atau menyembunyikan semua garis bantu. Menyembunyikannya juga menyembunyikan bilah ini. |
+| **Hapus garis bantu** | Menghapus garis bantu. |
+| **Lekatkan ke garis bantu** | Mengaktifkan atau menonaktifkan **Snap to rulers**. |
+| **Lainnya > Show rulers** | Menampilkan atau menyembunyikan semua garis bantu. Menyembunyikannya juga menyembunyikan bilah ini. |
 | **Luruskan** | Memulai **Luruskan Gambar ke Garis Bantu**. Hanya untuk garis bantu Lurus. |
 | **Lainnya** | Membuka menu dengan **Tampilkan bilah tindakan kanvas**. |
 
 Menonaktifkan **Tampilan > Tampilkan bilah tindakan kanvas** menghilangkan bilah garis
 bantu.
 
-![Bilah garis bantu di bawah garis bantu Lurus yang dipilih, dengan Hapus, Lekatkan, Garis Bantu, Luruskan, dan Lainnya.](shot:drawing/ruler-guide-bar)
+![Bilah panduan di bawah panduan Lurus yang dipilih, dengan Hapus garis bantu, Lekatkan ke garis bantu, Luruskan, dan Lainnya.](shot:drawing/ruler-guide-bar)
 
 ## Memindahkan garis bantu dengan Operasi
 

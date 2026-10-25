@@ -12,6 +12,10 @@ Pengaturan pena ada di halaman **Pena & Masukan** pada **Edit > Preferensi**.
 
 Pilih **Sesuaikan…** di samping **Tekanan pena** untuk membentuk kurva tekanan dan mengujinya di kanvas saat ini. Kurva berlaku untuk setiap kuas dan alat yang peka tekanan; goresan yang sudah dibuat tidak berubah. Lihat [Tekanan pena](/id/docs/input/pen-pressure/).
 
+## Kemiringan pena
+
+Pilih **Sesuaikan…** di samping **Kemiringan pena** untuk mengubah kurva kemiringan dan arah pena Anda. Lihat [Kemiringan pena](/id/docs/input/pen-tilt/).
+
 ## Prediksi goresan
 
 Prediksi goresan menggambar sepotong pendek goresan di depan ujung pena, dan goresan

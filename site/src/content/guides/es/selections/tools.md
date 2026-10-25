@@ -94,19 +94,17 @@ Haz clic en cada esquina de la forma. Para terminar, haz una de las siguientes a
 
 - Vuelve a hacer clic en la primera esquina.
 - Pulsa **Intro**.
-- Selecciona **Finalizar** en la barra del lienzo, o **Finalizar selección** en el panel Herramienta.
+- Selecciona **Finalizar selección** en la barra del lienzo, o **Finalizar selección** en el panel Herramienta.
 
 Un polígono necesita al menos tres esquinas.
 
-- Para quitar la última esquina, pulsa **Retroceso** o **Supr**, o selecciona **Eliminar punto** en la barra del lienzo o **Eliminar último punto** en el panel Herramienta.
-- Para cancelar el polígono, pulsa **Escape**, o selecciona **Cancelar** en la barra del lienzo o **Cancelar selección** en el panel Herramienta.
+- Para quitar la última esquina, pulsa **Retroceso** o **Eliminar**, o selecciona **Eliminar último punto** en la barra del lienzo o **Eliminar último punto** en el panel Herramienta.
+- Para cancelar el polígono, pulsa **Escape**, o selecciona **Cancelar selección** en la barra del lienzo o **Cancelar selección** en el panel Herramienta.
 - Para ajustar el siguiente borde a pasos de 45°, mantén pulsada **Mayús**. Para ajustar todos los bordes, activa **Restringir bordes a 45°** en el panel Herramienta.
 
-Mientras colocas esquinas, la [barra del lienzo](/es/docs/selections/working/)
-de la parte inferior del lienzo muestra **Eliminar punto**, **Cancelar** y
-**Finalizar**.
+Mientras colocas las esquinas, la [barra del lienzo](/es/docs/selections/working/) muestra **Eliminar último punto**, **Cancelar selección** y **Finalizar selección** en el borde inferior.
 
-![La barra del lienzo de un polígono, con Eliminar punto, Cancelar y Finalizar.](shot:selections/tools-polygon-bar)
+![La barra de un polígono con Eliminar último punto, Cancelar selección y Finalizar selección.](shot:selections/tools-polygon-bar)
 
 ## Seleccionar automáticamente y Seleccionar por color
 

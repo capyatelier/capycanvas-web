@@ -6,7 +6,7 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 
 Anda dapat memangkas kanvas sesuai bingkai dengan alat **Pangkas**. Piksel yang
 terpangkas tetap ada di lapisannya, dalam keadaan tersembunyi, kecuali jika Anda
-mengaktifkan **Hapus Lukisan Terpangkas**.
+mengaktifkan **Hapus Piksel Lukisan Terpangkas**.
 
 ## Memangkas
 
@@ -28,11 +28,11 @@ kanvas.
 Di layar sentuh, hanya pegangan yang merespons jari. Jari di dalam bingkai
 menggeser tampilan.
 
-Untuk menyelesaikan, pilih **Terapkan** atau tekan **Enter**. **Batal**, **Escape**,
+Untuk menyelesaikan, pilih **Terapkan pangkasan** atau tekan **Enter**. **Batalkan pangkasan**, **Escape**,
 dan **Urungkan** membuang pemangkasan. Dengan cara mana pun, alat yang Anda pakai
 sebelumnya kembali aktif.
 
-**Terapkan** juga memangkas lapisan yang terkunci. Anda tidak dapat memulai
+**Terapkan pangkasan** juga memangkas lapisan yang terkunci. Anda tidak dapat memulai
 pemangkasan selama transformasi masih terbuka.
 
 ![Bingkai pangkas pada foto terarium, dengan bilah kanvas di tepi bawah.](shot:transform/crop-bar)
@@ -46,7 +46,7 @@ Pilih **Bebas**, **Asli**, **1:1**, **4:5**, **2:3**, **5:7**, atau **16:9** dar
 **Tukar orientasi pangkas**, tombol ikon di samping **Rasio**, mengubah bingkai
 antara lanskap dan potret.
 
-Rasio, hamparan, dan **Hapus Lukisan Terpangkas** terbawa ke pemangkasan berikutnya.
+Rasio, hamparan, dan **Hapus Piksel Lukisan Terpangkas** terbawa ke pemangkasan berikutnya.
 
 ![Menu Rasio di bilah pangkas.](shot:transform/crop-ratio-menu)
 
@@ -57,9 +57,7 @@ terlihat, termasuk piksel di luar kanvas. **Rasio** berubah menjadi **Bebas**.
 
 ## Hamparan
 
-Pilih **Sepertiga**, **Kisi**, **Diagonal**, atau **Rasio Emas** dari **Hamparan**.
-**Sepertiga** adalah bawaannya. Tekan **O** saat memangkas untuk menampilkan hamparan
-berikutnya.
+Pilih overlay dari **Lainnya > Hamparan**. **Hamparan aturan sepertiga** adalah defaultnya. Tekan **O** sambil memotong untuk menampilkan hamparan berikutnya.
 
 ## Meluruskan
 
@@ -78,20 +76,18 @@ Untuk meluruskan sesuai garis bantu, pilih garis bantu itu lalu pilih **Luruskan
 bilah kanvasnya (lihat [Penggaris dan garis bantu](/id/docs/drawing/ruler/)).
 Pemangkasan terbuka, diputar sejajar dengan garis bantu.
 
-## Hapus Lukisan Terpangkas
+## Hapus Piksel Lukisan Terpangkas
 
-Aktifkan **Hapus Lukisan Terpangkas** untuk membuang piksel di luar bingkai saat Anda
+Aktifkan **Lainnya > Hapus Piksel Lukisan Terpangkas** untuk membuang piksel di luar bingkai saat Anda
 menerapkan pemangkasan. Foto yang ditempatkan mempertahankan piksel aslinya.
 Nonaktif secara bawaan.
 
 Pemangkasan yang akan terlalu besar jika piksel tersembunyi dipertahankan hanya
-dapat dilakukan dengan **Hapus Lukisan Terpangkas** aktif.
+dapat dilakukan dengan **Hapus Piksel Lukisan Terpangkas** aktif.
 
-## Atur Ulang
+## Atur ulang pangkasan
 
-**Atur Ulang** mengembalikan bingkai ke seluruh kanvas, dalam posisi tegak, dan
-menonaktifkan **Luruskan**. Jika sebuah rasio dipilih, bingkai menjadi bingkai
-terbesar dengan rasio itu.
+**Atur ulang pangkasan** di **Lainnya** mengembalikan bingkai ke seluruh kanvas, tegak, dan mematikan **Luruskan**. Dengan rasio yang dipilih, frame menjadi frame terbesar dari rasio tersebut.
 
 ## Pengaturan pangkas di panel Alat
 
@@ -110,7 +106,7 @@ Anda dapat memangkas kanvas sesuai batas seleksi.
 Lakukan salah satu langkah berikut:
 
 - Pilih **Gambar > Pangkas Kanvas ke Seleksi**.
-- Pilih **Pangkas** di [bilah seleksi](/id/docs/selections/working/).
+- Pilih **Lainnya > Pangkas Kanvas ke Seleksi** pada [bilah pilihan](/id/docs/selections/working/).
 
 Piksel di luar batas seleksi tetap ada di lapisannya, dalam keadaan tersembunyi.
 Kanvas tidak dapat dipangkas sesuai seleksi yang dibalik.

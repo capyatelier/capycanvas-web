@@ -97,19 +97,17 @@ folgenden Aktionen aus:
 
 - Klicken Sie erneut auf die erste Ecke.
 - Drücken Sie **Eingabe**.
-- Wählen Sie in der Leinwandaktionsleiste **Abschließen** oder im Bedienfeld Werkzeug **Auswahl abschließen** aus.
+- Wählen Sie in der Leinwandaktionsleiste **Auswahl abschließen** oder im Bedienfeld Werkzeug **Auswahl abschließen** aus.
 
 Ein Polygon braucht mindestens drei Ecken.
 
-- Um die letzte Ecke zu entfernen, drücken Sie **Rücktaste** oder **Löschen**, oder wählen Sie in der Leinwandaktionsleiste **Punkt entfernen** oder im Bedienfeld Werkzeug **Letzten Punkt entfernen** aus.
-- Um das Polygon abzubrechen, drücken Sie **Escape**, oder wählen Sie in der Leinwandaktionsleiste **Abbrechen** oder im Bedienfeld Werkzeug **Auswahl abbrechen** aus.
+- Um die letzte Ecke zu entfernen, drücken Sie **Rücktaste** oder **Löschen**, oder wählen Sie in der Leinwandaktionsleiste **Letzten Punkt entfernen** oder im Bedienfeld Werkzeug **Letzten Punkt entfernen** aus.
+- Um das Polygon abzubrechen, drücken Sie **Escape**, oder wählen Sie in der Leinwandaktionsleiste **Auswahl abbrechen** oder im Bedienfeld Werkzeug **Auswahl abbrechen** aus.
 - Um die nächste Kante in 45°-Schritten einrasten zu lassen, halten Sie **Umschalt** gedrückt. Um jede Kante einrasten zu lassen, aktivieren Sie im Bedienfeld Werkzeug **Kanten auf 45° beschränken**.
 
-Während Sie Ecken setzen, zeigt die
-[Leinwandaktionsleiste](/de/docs/selections/working/) am unteren Rand der
-Leinwand **Punkt entfernen**, **Abbrechen** und **Abschließen**.
+Während Sie Ecken platzieren, zeigt die [Leinwandleiste](/de/docs/selections/working/) am unteren Rand der Leinwand **Letzten Punkt entfernen**, **Auswahl abbrechen** und **Auswahl abschließen** an.
 
-![Die Leinwandaktionsleiste für ein Polygon mit Punkt entfernen, Abbrechen und Abschließen.](shot:selections/tools-polygon-bar)
+![Die Leinwandleiste für ein Vieleck mit Letzten Punkt entfernen, Auswahl abbrechen und Auswahl abschließen.](shot:selections/tools-polygon-bar)
 
 ## Automatisch auswählen und Nach Farbe auswählen
 

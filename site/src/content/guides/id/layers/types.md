@@ -14,7 +14,7 @@ Pilih **Lapisan > Baru > Lapisan baru**, atau pilih **Lapisan baru** di bagian b
 
 ## Lapisan Objek
 
-Lapisan Objek menyimpan gambar impor dengan ukuran, kedalaman bit, dan profil warnanya sendiri. Membuka atau mengimpor gambar, menjatuhkan gambar di kanvas, dan menempelkan gambar dari aplikasi lain membuat lapisan Objek.
+Lapisan Objek mempertahankan ukuran, kedalaman bit, dan profil warna gambar yang diimpor. Mengimpor gambar sebagai lapisan, meletakkannya di kanvas, atau menempelkannya dari aplikasi lain akan membuat lapisan Objek.
 
 Anda dapat memindahkan, mengubah ukuran, dan memutar lapisan Objek tanpa mengambil sampel ulang sumbernya berulang kali. Pilih **Lapisan > Rasterisasi Lapisan** saat perlu melukis pada pikselnya atau menggunakan perintah yang memerlukan lapisan cat. Rasterisasi mengonversinya ke ruang warna, kedalaman bit, dan kisi piksel gambar.
 

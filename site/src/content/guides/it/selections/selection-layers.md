@@ -12,7 +12,7 @@ nuovo in seguito.
 Esegui una delle seguenti operazioni:
 
 - Scegli **Seleziona > Salva come livello di selezione**.
-- Seleziona **Salva** nella barra della selezione o nella barra della Maschera veloce.
+- Selezionare **Maschera > Salva come livello di selezione** sulla barra di selezione o **Salva come livello di selezione** sulla barra Maschera veloce.
 - Nella Maschera veloce, scegli **Livello > Salva come livello di selezione**.
 
 Il nuovo livello va in cima all'elenco dei livelli, con il nome *Selezione* e un
@@ -58,7 +58,7 @@ didascalia «Modifica di» e il nome del livello. Con la barra azioni della tela
 nascosta, questa barra non appare.
 
 - **Carica** rende il livello la selezione corrente e torna al disegno.
-- **Inverti** inverte la selezione memorizzata e lascia il livello aperto per la modifica.
+- **Inverti livello di selezione** inverte la selezione memorizzata e lascia il livello aperto per la modifica.
 - **Torna al disegno** termina la modifica. **Esc** fa lo stesso.
 
 Dopo la modifica, torna attivo il livello che modificavi prima, o il livello di
@@ -69,7 +69,7 @@ e scegli da **Modifica**. **Seleziona > Espandi selezione…** e gli altri coman
 di perfezionamento del menu **Seleziona** prima tornano al disegno e poi
 modificano la selezione corrente.
 
-![La barra azioni della tela per un livello di selezione in modifica, con Carica, Inverti e Torna al disegno.](shot:selections/selection-layer-bar)
+![La barra di tela per un livello di selezione modificato con Carica, Inverti livello di selezione e Torna al disegno.](shot:selections/selection-layer-bar)
 
 ## Caricare un livello di selezione
 

@@ -23,7 +23,7 @@ Haz una de las siguientes acciones:
 
 ## Fotos
 
-Una foto se abre como un dibujo nuevo con una capa de objeto cuyo nombre es el del archivo. El objeto conserva el tamaño, el perfil de color y, de forma predeterminada, la profundidad de bits de la imagen. Guardar el dibujo crea un archivo `.capy` y nunca sobrescribe la imagen de origen.
+Una foto se abre como un dibujo nuevo con una capa de pintura que lleva el nombre del archivo. El dibujo conserva el tamaño original de la foto, su perfil de color y, de forma predeterminada, su profundidad de bits. Guardar el dibujo crea un archivo `.capy` y nunca sobrescribe la imagen original.
 
 - De un GIF o un WebP animado se abre el primer fotograma.
 - Una foto puede medir hasta 32768 píxeles por lado.

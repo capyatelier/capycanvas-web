@@ -25,13 +25,19 @@ Una herramienta tiene una sola burbuja, y si vuelves a sacarla, la burbuja se mu
 
 ## Halo y selector
 
-Una burbuja sale seleccionada, con su halo de ajustes abierto si la herramienta tiene ajustes. Cada toque la hace pasar por halo, selector y cerrada, salvo que una burbuja de pincel no tiene selector. Al tocar la burbuja de una herramienta sin seleccionar, primero se selecciona la herramienta.
+Al seleccionar una burbuja de herramienta se abre su halo de ajustes. Al seleccionarla de nuevo se abre el selector; una burbuja de pincel abre o cierra su halo. Elegir una herramienta o un pincel en el selector abre su halo.
 
 Arrastra a lo largo de un arco del halo para cambiar un ajuste, y toca dos veces o haz doble clic en el arco para restablecerlo. El selector coloca los medios de la herramienta en círculo alrededor de la burbuja: selecciona un medio para desplegar sus pinceles y luego selecciona un pincel.
 
 Mantén pulsada la burbuja, o haz clic en ella con el botón derecho, para abrir su menú. Sus elementos con marca de verificación colocan ajustes en el halo, hasta seis por pincel.
 
 ![El selector de una burbuja con el medio Acuarela seleccionado y sus pinceles al lado.](shot:bubbles/dial-chooser)
+
+## Mostrar deslizadores
+
+Desactiva **Mostrar deslizadores** en el menú de una burbuja para ocultar los arcos de ajustes. La opción se aplica a las burbujas de herramientas, medios, pinceles y **Selector de color** del espacio de trabajo actual, y se conserva después de devolverlas. Mientras esté desactivada, elegir una herramienta o un pincel mantiene sus deslizadores ocultos.
+
+![La opción Mostrar deslizadores en el menú de una burbuja de herramienta.](shot:bubbles/show-sliders)
 
 ## Anillo de color
 

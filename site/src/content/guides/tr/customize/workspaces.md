@@ -30,6 +30,8 @@ listesinde çalışma alanlarını işaretleyin veya işaretlerini kaldırın.
 Geçerli çalışma alanının her zaman bir düğmesi vardır. Oluşturduğunuz çalışma
 alanları başlık çubuğuna eklenir.
 
+**Çalışma alanları** iletişim kutusunda çalışma alanının yanındaki raptiyeyi seçerek başlık çubuğundaki düğmesini gösterin veya gizleyin.
+
 ![Çalışma alanı düğmelerinin altında Üst çubukta göster listesi.](shot:workspaces/show-in-top-bar)
 
 ## Yeni çalışma alanı…
@@ -39,7 +41,7 @@ Geçerli düzeni yeni bir çalışma alanı olarak kaydedebilirsiniz.
 Aşağıdakilerden birini yapın:
 
 - **Pencere > Çalışma alanları > Yeni çalışma alanı…** komutunu seçin.
-- **Çalışma alanları** iletişim kutusunda **Yeni çalışma alanı** (**+**) düğmesini seçin.
+- **Çalışma alanları** iletişim kutusundaki listenin altında **Yeni çalışma alanı** (**+**) seçeneğini seçin.
 
 Bir **Ad** yazın ve **Oluştur ve geç** düğmesini seçin. Her çalışma alanının
 kendine ait bir adı olmalıdır.
@@ -51,14 +53,15 @@ kendine ait bir adı olmalıdır.
 düzeninin önizlemesini iletişim kutusunun arkasında gösterir. Geçiş yapmak için
 **Çalışma alanına geç** düğmesini seçin.
 
-- Listeyi yeniden sıralamak için bir çalışma alanını tutamacından sürükleyin. Başlık çubuğu da aynı sırayı kullanır.
-- **Üst çubukta göster**, **Yukarı taşı**, **Aşağı taşı**, **Yeniden adlandır…** ve **Sil…** için bir çalışma alanının yanındaki **⋯** düğmesini seçin veya çalışma alanına sağ tıklayın.
+- Listeyi yeniden sıralamak için çalışma alanının sağındaki tutamacı sürükleyin. Başlık çubuğu aynı sırayı kullanır.
+- **Yeniden adlandır…**, **Sil…**, **Yukarı taşı** ve **Aşağı taşı** için bir çalışma alanına sağ tıklayın veya basılı tutun. Yeniden adlandırma, satırdaki adı düzenler; tutmak için **Enter** tuşuna veya iptal etmek için **Escape** tuşuna basın.
+- Bir çalışma alanı seçin ve ardından listenin altından **Sil** öğesini seçin. Dokunmatik ekranda **Sil** seçeneğini görüntülemek için satırını kaydırın.
 
 Bir çalışma alanını kopyalamak için o çalışma alanına geçin ve **Yeni çalışma
 alanı…** komutunu seçin. **Eskiz**, **Boya** ve **Fotoğraf** yeniden
 adlandırılamaz veya silinemez. Çalışma alanını silmek kalıcıdır.
 
-![Bir çalışma alanının seçenekleri açık hâlde Çalışma alanları iletişim kutusu.](shot:workspaces/manage-dialog)
+![Çalışma alanının içerik menüsünün açık olduğu Çalışma alanları iletişim kutusu.](shot:workspaces/manage-dialog)
 
 ## Düzen geçmişi…
 

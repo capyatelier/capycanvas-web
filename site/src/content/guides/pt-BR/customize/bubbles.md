@@ -25,13 +25,19 @@ Uma ferramenta tem uma só bolha, e arrastar a ferramenta para fora de novo move
 
 ## Halo e seletor
 
-Uma bolha sai selecionada, com o halo de configurações aberto se a ferramenta tiver configurações. Cada toque faz a bolha passar por halo, seletor e fechada, exceto que uma bolha de pincel não tem seletor. Tocar na bolha de uma ferramenta não selecionada seleciona a ferramenta primeiro.
+Selecionar uma bolha de ferramenta abre seu anel de ajustes. Selecioná-la novamente abre o seletor; uma bolha de pincel abre ou fecha seu anel. Escolher uma ferramenta ou pincel no seletor abre seu anel de ajustes.
 
 Arraste ao longo de um arco do halo para mudar uma configuração, e toque duas vezes ou clique duas vezes no arco para redefini-la. O seletor distribui os meios da ferramenta em círculo ao redor da bolha: selecione um meio para abrir os pincéis dele em leque e depois selecione um pincel.
 
 Mantenha a bolha pressionada, ou clique nela com o botão direito, para abrir o menu dela. Os itens com marca de seleção colocam configurações no halo, até seis para cada pincel.
 
 ![O seletor de uma bolha com o meio Aquarela selecionado e os pincéis dele ao lado.](shot:bubbles/dial-chooser)
+
+## Mostrar controles deslizantes
+
+Desative **Mostrar controles deslizantes** no menu de um bolha para ocultar os arcos de configurações. A configuração se aplica a bolhas de ferramenta, mídia, pincel e **Conta-gotas** na área de trabalho atual e permanece salva após você colocá-las de volta. A escolha de uma ferramenta ou pincel deixa seus controles deslizantes ocultos enquanto essa configuração está desativada.
+
+![O item Mostrar controles deslizantes no menu de um bolha de ferramentas.](shot:bubbles/show-sliders)
 
 ## Anel de cor
 

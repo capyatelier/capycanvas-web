@@ -85,10 +85,10 @@ You can draw a path anchor by anchor.
 - Click to add a corner anchor. Press and drag to pull out handles for a smooth anchor, or hold **Alt** to drag only the outgoing handle.
 - Hold **Shift** to place the next anchor in 45° steps from the last.
 - Click the first anchor to close the path.
-- Select **Finish** on the canvas bar or press **Enter** to add the path. **Cancel** or **Escape** discards it.
-- **Remove Point** or **Backspace** removes the last anchor, and so does **Undo**.
+- Select **Finish path** on the canvas bar or press **Enter** to add the path. **Cancel path** or **Escape** discards it.
+- **Remove last point** or **Backspace** removes the last anchor, and so does **Undo**.
 
-![The canvas bar while a path is drawn, with Remove Point, Cancel and Finish.](shot:vector/path-bar)
+![The canvas bar while a path is drawn, with Remove last point, Cancel path, and Finish path.](shot:vector/path-bar)
 
 The path uses the current mode, **Line width** and colors, with sharp corners and flat ends. On a vector layer it is selected when you finish, and a path that starts at the open end of a selected path continues it.
 

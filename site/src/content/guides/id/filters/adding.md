@@ -20,8 +20,7 @@ Lakukan salah satu langkah berikut:
 
 ![Panel Filter dengan menu kategori, tombol pencarian, dan baris filter beserta pratinjaunya.](shot:filters/filters-panel)
 
-Saat sebuah lapisan terpilih, setiap baris menampilkan pratinjau filter pada lapisan
-itu dan lapisan di bawahnya. Filter beranimasi memiliki tanda di depan ikonnya.
+Setiap baris menampilkan filter pada gambar sampel tetap. Filter animasi memiliki tanda sebelum ikonnya.
 
 Menu di bagian atas menampilkan satu kategori atau **Semua filter**. **Cari filter**
 mencari filter berdasarkan nama di dalam kategori yang dipilih.

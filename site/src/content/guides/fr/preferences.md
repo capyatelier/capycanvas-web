@@ -147,8 +147,7 @@ Ouvre la bibliothèque de profils colorimétriques. Voir
 
 ## Stylet et saisie
 
-Les réglages de cette page sont décrits dans [Stylet](/fr/docs/input/pen/) et
-[Gestes tactiles](/fr/docs/input/touch/).
+Les paramètres de cette page sont décrits dans [Stylo](/fr/docs/input/pen/), [Inclinaison du stylet](/fr/docs/input/pen-tilt/) et [Gestes tactiles](/fr/docs/input/touch/).
 
 ## Raccourcis clavier
 

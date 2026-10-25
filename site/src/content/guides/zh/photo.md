@@ -33,8 +33,8 @@ related: ["start/workspaces", "transform/crop", "retouch/clone-heal", "filters/h
 | **自然饱和度** | 提高整张照片的自然饱和度 |
 | **曲线** | 作用于整张照片的 S 曲线 |
 | *Retouch* | 修复笔迹 |
-| 对象图层 | 照片，以文件名命名 |
+| 绘画图层 | 照片，以文件名命名 |
 
-对象图层上没有任何绘画。
+绘画图层上没有任何绘画。
 
 第一个阶段：[打开和裁剪](/zh/docs/photo/crop/)。

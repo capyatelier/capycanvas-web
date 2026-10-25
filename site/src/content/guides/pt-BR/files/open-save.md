@@ -23,7 +23,7 @@ Faça uma das seguintes ações:
 
 ## Fotos
 
-Uma foto abre como um novo desenho com uma camada de objeto nomeada a partir do arquivo. O objeto mantém o tamanho, o perfil de cor e, por padrão, a profundidade de bits da imagem. Salvar o desenho cria um arquivo `.capy` e nunca sobrescreve a imagem de origem.
+Uma foto é aberta como um novo desenho com uma camada de pintura com o nome do arquivo. O desenho mantém o tamanho original da foto, o perfil de cores e, por padrão, a profundidade de bits. Salvar o desenho cria um arquivo `.capy` e nunca substitui a imagem de origem.
 
 - Um GIF ou WebP animado abre no primeiro quadro.
 - Uma foto pode ter até 32768 pixels de cada lado.

@@ -12,6 +12,10 @@ The pen settings are on the **Pen & Input** page of **Edit > Preferences**.
 
 Select **Adjust…** beside **Pen pressure** to shape the pressure curve and test it on the current canvas. The curve applies to every pressure-sensitive brush and tool; strokes already drawn do not change. See [Pen pressure](/docs/input/pen-pressure/).
 
+## Pen tilt
+
+Select **Adjust…** beside **Pen tilt** to change the tilt curve and direction for your pen. See [Pen tilt](/docs/input/pen-tilt/).
+
 ## Stroke prediction
 
 Stroke prediction draws a short stretch of the stroke ahead of the pen tip, and

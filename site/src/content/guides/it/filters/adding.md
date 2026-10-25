@@ -20,9 +20,7 @@ Esegui una delle seguenti operazioni:
 
 ![Il pannello Filtri con il menu delle categorie, il pulsante di ricerca e le righe dei filtri con le anteprime.](shot:filters/filters-panel)
 
-Mentre è selezionato un livello, ogni riga mostra un'anteprima del filtro su quel
-livello e sui livelli sottostanti. I filtri animati hanno un segno prima
-dell'icona.
+Ogni riga mostra il filtro su un'immagine campione fissa. I filtri animati hanno un segno prima della loro icona.
 
 Il menu in alto mostra una categoria o **Tutti i filtri**. **Cerca filtri**
 trova un filtro per nome nella categoria scelta.

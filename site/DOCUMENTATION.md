@@ -2,7 +2,7 @@
 
 The manual is an Astro content collection in `src/content/guides/`. It describes
 the Capy Canvas editor at the app revision recorded in
-`public/assets/capture.json` (currently main at 2d7c4d5d7, after v1.0.14). Release
+`public/assets/capture.json` (currently 8261dd86a2, after v1.0.14). Release
 availability must agree with the download page.
 
 Read [WRITING.md](WRITING.md) before writing or reviewing a page. It sets the
@@ -32,7 +32,7 @@ order (`docTopics`), and the redirects from retired paths (`docRedirects`):
 | Retouching | Clone and heal, Dodge and burn |
 | Color management | Color spaces, Proof, HDR |
 | Customizing | Panels, Toolbars and title bar, Tool bubbles, Workspaces, Zen mode, Preferences |
-| Input | Pen, Touch gestures, Keyboard shortcuts |
+| Input | Pen, Pen pressure, Pen tilt, Touch gestures, Keyboard shortcuts |
 | Illustration tutorial | Introduction, then sketching, line art, base colors and rendering |
 | Photo editing tutorial | Introduction, then opening and cropping, retouching, adjusting and exporting |
 

@@ -14,7 +14,7 @@ Elige **Capa > Nuevo > Capa nueva** o selecciona **Capa nueva** al pie del panel
 
 ## Capa de objeto
 
-Una capa de objeto conserva una imagen importada con su propio tamaño, profundidad de bits y perfil de color. Abrir o importar una imagen, soltar una imagen en el lienzo y pegar una imagen desde otra aplicación crean capas de objeto.
+Una capa de objeto conserva el tamaño, la profundidad de bits y el perfil de color de la imagen importada. Al importar una imagen como capa, soltarla en el lienzo o pegarla desde otra aplicación, se crea una capa de objeto.
 
 Puedes mover, escalar y girar una capa de objeto sin remuestrear su origen repetidamente. Elige **Capa > Rasterizar capa** cuando necesites pintar en sus píxeles o usar un comando que requiera una capa de pintura. Rasterizar la convierte al espacio de color, la profundidad de bits y la cuadrícula de píxeles del dibujo.
 

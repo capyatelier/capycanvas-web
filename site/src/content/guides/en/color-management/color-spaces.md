@@ -53,9 +53,7 @@ profile of their [original photo](/docs/layers/types/).
 Choose **Image > Color Management > Convert Color Space…** to change the RGB numbers so that the
 colors keep their appearance in another working space, within its gamut.
 
-With **Save flattened copy**, **Apply** becomes **Save Copy…**. The copy has one
-layer, with the same size and bit depth. Its file name must end in `.capy` and
-can't be the open drawing's file.
+With **Save flattened copy**, **Apply** becomes **Create Copy**. The copy opens as a new drawing with one layer, at the same size and bit depth. Choose **File > Save** to save it as a `.capy` file.
 
 ![The Convert Color Space dialog with the Before and After comparison and the gamut message.](shot:color-management/convert-dialog)
 
@@ -65,9 +63,7 @@ The working space to convert to. The current space is selected at first.
 
 ### Result
 
-**Editable layers** (default) converts every layer in place. **Save flattened
-copy** saves a converted, flattened copy as a new `.capy` file and leaves the
-open drawing unchanged.
+**Editable layers** (default) converts every layer in place. **Save flattened copy** opens a converted, flattened copy as a new drawing and leaves the original unchanged.
 
 ### Rendering intent
 
@@ -97,13 +93,10 @@ target is 8-bit SDR.
 To apply Assign Profile, Convert Color Space or Change Bit Depth:
 
 1. Set the fields in the dialog.
-2. Select **Preview Complete Result**.
-3. Compare **Before** and **After**.
-4. Select **Apply** (or **Save Copy…**).
+2. Compare **Before** and **After** when the preview appears.
+3. Select **Apply** (or **Create Copy**).
 
-**Apply** stays unavailable until the preview is ready, and changing a field
-discards the preview. If any color clips, the status line reads "Some colors
-exceed the destination gamut. Compare the result before applying."
+**Apply** stays unavailable until the preview is ready. Changing a field updates the comparison. The status line reports any colors that clip.
 
 Apply is one undo step. Undo and Redo open **Undo Color Change** and **Redo
 Color Change**. These dialogs apply the change without further input and offer

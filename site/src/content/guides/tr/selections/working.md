@@ -29,9 +29,9 @@ satırıdır.
 içerir:
 
 - “Hızlı maske” veya “Seçim anahattını dönüştür” gibi bir başlık.
-- Düğmeler. Soluk bir düğme kullanılamaz. Nedenini görmek için düğmeyi seçin.
+- Düğmeler. Adını okumak için bir simgenin üzerine gelin. Karartılmış bir düğme mevcut değil; nedenini görmek için onu seçin.
 - Sığmayan düğmeleri, ardından seçim için **Seç** menüsünü veya maske için **Katman** menüsünü içeren **Diğer**.
-- **Uygula** veya **Çık** gibi işlemi bitiren düğme.
+- **Dönüşümü uygula** veya **Çık** gibi işlemi bitiren düğme.
 
 Bir nesnenin yanındaki çubuk, tuvale dokunurken veya görünümü taşırken gizlenir.
 
@@ -53,21 +53,15 @@ geri gelen bir seçimin yanında görünmez. Fırçalar, dolgu araçları,
 
 ![Dikdörtgen bir seçimin altındaki seçim çubuğu.](shot:selections/working-selection-bar)
 
-- **Seçimi kaldır** ve **Tersine çevir**: aşağıdaki Seç menüsüne bakın.
-- **Kopya bırak**: yalnızca **İşlem** ile, bkz. [Taşıma ve dönüştürme](/tr/docs/transform/move-transform/).
-- **Katmana kopyala**: **Seçimi yeni katmana kopyala** veya **Seçimi kesip yeni katmana taşı**.
-- **Kopyala**: **Kopyala**, **Birleştirileni kopyala** veya **Kes**, bkz. [Kopyalama ve yapıştırma](/tr/docs/transform/clipboard/).
-- **Dönüştür**: seçili pikselleri dönüştürür.
-- **İyileştir**: iyileştirme komutları ve **Seçim anahattını dönüştür**.
-- **Maske**: etkin katmanı seçime göre maskeler.
-- **Ayarla**: seçimi maske olarak kullanan bir filtre ekler, bkz. [Filtrelerin uygulanması](/tr/docs/filters/how-filters-apply/).
-- **Doldur**: **Seçimi doldur**.
-- **Temizle**: **Seçili pikselleri temizle** veya **Seçimin dışını temizle**.
-- **Kırp**: **Tuvali seçime göre kırp**, bkz. [Kırpma](/tr/docs/transform/crop/).
-- **Hızlı maske**: bkz. [Hızlı maske](/tr/docs/selections/quick-mask/).
-- **Kaydet**: **Seçim katmanı olarak kaydet**, bkz. [Seçim katmanları](/tr/docs/selections/selection-layers/).
+- **Dönüştür** seçilen pikselleri değiştirir.
+- **Kopyala** panoyu ve katmana kopyala komutlarını açar.
+- **Seçimi doldur** seçilen pikselleri doldurur; **Seçili pikselleri temizle** bunları siler.
+- **Ayarla** seçimi maske olarak kullanan bir filtre ekler.
+- **Maske** maske komutlarını ve kayıtlı seçim komutlarını açar.
+- **Seçimi tersine çevir** ve **İyileştir** seçim çerçevesini değiştirir.
+- **Piksel seçimini kaldır** seçimi temizler.
 
-Dar bir çubukta son düğmeler, örneğin **Hızlı maske** ve **Kaydet**, **Diğer** içine taşınır.
+**Diğer**, **Seçimin dışını temizle** ve **Tuvali seçime göre kırp** komutlarını içerir. **İşlem** etkinken **Kopya bırak** da burada görünür. Çubuğa sığmayan düğmeler de **Diğer** içine taşınır. Menünün sonunda **Seç** menüsü bulunur.
 
 ## Seç menüsü
 
@@ -144,7 +138,7 @@ Aşağıdakilerden birini yapın:
 
 - **Düzenle > Seçimi doldur**, **Seçili pikselleri temizle** veya **Seçimin dışını temizle** komutunu seçin.
 - Doldurmak için **Shift+Backspace**, seçili pikselleri temizlemek için **Delete** veya **Backspace** tuşuna basın.
-- Seçim çubuğunda **Doldur** düğmesini veya **Temizle** düğmesini ve bir komutu seçin.
+- Seçim çubuğunda **Seçimi doldur** veya **Seçili pikselleri temizle** seçeneğini seçin veya **Diğer > Seçimin dışını temizle** seçeneğini seçin.
 - Boya'da Komutlar çubuğundaki **Seçimi doldur** düğmesini seçin.
 - Katmanın menüsünü açın ve **Piksel seçimi > Seçimi doldur** komutunu seçin.
 
@@ -161,7 +155,7 @@ Aşağıdakilerden birini yapın:
 
 - **Katman > Yeni > Seçimi yeni katmana kopyala** veya **Katman > Yeni > Seçimi kesip yeni katmana taşı** komutunu seçin.
 - Kopyalamak için **Ctrl+J**, kesmek için **Ctrl+Shift+J** tuşlarına basın.
-- Seçim çubuğunda **Katmana kopyala** düğmesini seçin ve bir komut seçin.
+- Seçim çubuğunda **Kopyala** düğmesini seçin ve bir komut seçin.
 
 Yeni katman özgün katmanın adını alır, örneğin *Ribbon kopyası*, ve özgün
 katmanın opaklığını, görünürlüğünü ve karıştırma modunu korur. **Yeniden seç**
@@ -176,7 +170,7 @@ Etkin katmana yalnızca seçimi gösteren bir maske ekleyebilirsiniz.
 Aşağıdakilerden birini yapın:
 
 - Katmanın menüsünü açın ve **Maske > Maske: seçimi göster** komutunu seçin. Seçili alanı gizlemek için **Maske > Maske: seçimi gizle** komutunu seçin.
-- Seçim çubuğunda **Maske** düğmesini seçin.
+- Seçim çubuğunda **Maske** seçeneğini seçin ve bir maske komutu seçin.
 
 Katmanın zaten maskesi varsa seçim mevcut maskenin yerini alır. Seçim kaldırılır
 ve maske düzenleme için açılır (bkz. [Maskeler](/tr/docs/layers/masks/)).

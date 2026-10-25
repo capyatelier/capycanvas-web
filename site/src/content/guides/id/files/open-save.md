@@ -24,7 +24,7 @@ Lakukan salah satu langkah berikut:
 
 ## Foto
 
-Foto terbuka sebagai gambar baru dengan lapisan Objek bernama sesuai file. Objek mempertahankan ukuran, profil warna, dan secara bawaan kedalaman bit gambar itu sendiri. Menyimpan gambar membuat file `.capy` dan tidak pernah menimpa gambar sumber.
+Foto terbuka sebagai gambar baru dengan lapisan lukis yang dinamai sesuai file. Gambar mempertahankan ukuran asli foto, profil warna, dan, secara default, kedalaman bit. Menyimpan gambar membuat file `.capy` dan tidak pernah menimpa gambar sumber.
 
 - GIF atau WebP animasi hanya membuka bingkai pertamanya.
 - Foto dapat berukuran hingga 32768 piksel di setiap sisi.

@@ -139,8 +139,7 @@ Mở thư viện hồ sơ màu. Xem
 
 ## Bút và nhập liệu
 
-Các thiết lập trên trang này được mô tả trong [Bút](/vi/docs/input/pen/) và
-[Cử chỉ chạm](/vi/docs/input/touch/).
+Các cài đặt trên trang này được mô tả trong [Bút](/vi/docs/input/pen/), [Độ nghiêng bút](/vi/docs/input/pen-tilt/) và [Cử chỉ chạm](/vi/docs/input/touch/).
 
 ## Phím tắt
 

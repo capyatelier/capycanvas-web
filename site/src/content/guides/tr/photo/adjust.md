@@ -39,7 +39,7 @@ gölgeler yalnızca kayada açılır.
 1. **M** tuşuna basın veya Araçlar çubuğunda **Kement seçimi** aracını seçin ve kayanın çevresini çizin.
 2. **Seç > Seçim kenarlarını yumuşat…** komutunu seçin veya seçim çubuğunda **İyileştir** düğmesini seçip **Kenarları yumuşat…** komutunu seçin ([Seçimlerle çalışma](/tr/docs/selections/working/)).
 3. **Kenar yumuşatma yarıçapı** değerini 20 px yapın ve **Uygula** düğmesini seçin.
-4. Seçim çubuğunda **Maske** seçin.
+4. Seçim çubuğunda **Maske > Maske: seçimi göster** komutunu seçin.
 
 ![Kayanın çevresindeki seçimin yanında Maske bulunan seçim çubuğu.](shot:photo/adjust-bar)
 

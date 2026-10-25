@@ -91,18 +91,17 @@ bıraktığınızda kapalı şekil seçim olur.
 
 - İlk köşeye yeniden tıklayın.
 - **Enter** tuşuna basın.
-- Tuval çubuğunda **Bitir** düğmesini veya Araç panelinde **Seçimi bitir** düğmesini seçin.
+- Tuval çubuğunda **Seçimi bitir** düğmesini veya Araç panelinde **Seçimi bitir** düğmesini seçin.
 
 Bir çokgen en az üç köşe gerektirir.
 
-- Son köşeyi kaldırmak için **Backspace** veya **Delete** tuşuna basın ya da tuval çubuğunda **Noktayı kaldır** düğmesini veya Araç panelinde **Son noktayı kaldır** düğmesini seçin.
-- Çokgeni iptal etmek için **Escape** tuşuna basın ya da tuval çubuğunda **İptal** düğmesini veya Araç panelinde **Seçimi iptal et** düğmesini seçin.
+- Son köşeyi kaldırmak için **Backspace** veya **Sil** tuşuna basın ya da tuval çubuğunda **Son noktayı kaldır** düğmesini veya Araç panelinde **Son noktayı kaldır** düğmesini seçin.
+- Çokgeni iptal etmek için **Escape** tuşuna basın ya da tuval çubuğunda **Seçimi iptal et** düğmesini veya Araç panelinde **Seçimi iptal et** düğmesini seçin.
 - Sonraki kenarı 45°'lik adımlara oturtmak için **Shift** tuşunu basılı tutun. Tüm kenarları oturtmak için Araç panelinde **Kenarları 45° ile sınırla** seçeneğini açın.
 
-Köşeleri yerleştirirken tuvalin altındaki [tuval çubuğu](/tr/docs/selections/working/)
-**Noktayı kaldır**, **İptal** ve **Bitir** düğmelerini gösterir.
+Köşeleri yerleştirirken tuvalın altındaki [tuval çubuğu](/tr/docs/selections/working/) **Son noktayı kaldır**, **Seçimi iptal et** ve **Seçimi bitir** seçeneğini gösterir.
 
-![Noktayı kaldır, İptal ve Bitir düğmeleriyle çokgen için tuval çubuğu.](shot:selections/tools-polygon-bar)
+![Son noktayı kaldır, Seçimi iptal et ve Seçimi bitir içeren bir çokgen için tuval çubuğu.](shot:selections/tools-polygon-bar)
 
 ## Otomatik seç ve Renge göre seç
 

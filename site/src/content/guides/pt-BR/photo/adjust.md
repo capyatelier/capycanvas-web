@@ -38,7 +38,7 @@ clareia as sombras só na pedra.
 1. Pressione **M**, ou selecione **Seleção por laço** na barra de ferramentas Ferramentas, e desenhe ao redor da pedra.
 2. Escolha **Selecionar > Difusão da seleção…**, ou selecione **Refinar** na barra de seleção e escolha **Difusão…** ([Trabalhar com seleções](/pt-BR/docs/selections/working/)).
 3. Defina **Raio de difusão** como 20 px e selecione **Aplicar**.
-4. Selecione **Máscara** na barra de seleção.
+4. Escolha **Máscara > Máscara: revelar seleção** na barra de seleção.
 
 ![A barra de seleção com Máscara ao lado da seleção ao redor da rocha.](shot:photo/adjust-bar)
 

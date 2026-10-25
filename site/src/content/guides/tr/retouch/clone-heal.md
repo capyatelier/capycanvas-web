@@ -89,9 +89,6 @@ Sonraki tıklama kaynağı ayarlar.
 
 ## Kaynak diski için tuval çubuğu
 
-Kaynak diskine sürüklemeden tıklayarak yanında **Hizalı**, **Kaynak**, iki
-çevirme düğmesi, **Ofseti sıfırla** ve **Kaynağı ayarla** düğmelerini içeren
-[tuval çubuğunu](/tr/docs/selections/working/) gösterin. Çubuğu gizlemek için
-diske yeniden tıklayın veya başka bir araç seçin.
+Yanındaki [tuval çubuğunu](/tr/docs/selections/working/) **Hizalı**, **Kaynak**, **Kaynağı yatay çevir** ve **Kaynağı ayarla** ile birlikte göstermek için kaynak diski sürüklemeden tıklayın. **Diğer**, **Kaynağı dikey çevir** ve **Kaynak ofsetini sıfırla** seçeneğini içerir. Çubuğu gizlemek için diske tekrar tıklayın veya başka bir araç seçin.
 
 ![Kaynak diski ve tuval çubuğu.](shot:retouch/clone-source-bar)

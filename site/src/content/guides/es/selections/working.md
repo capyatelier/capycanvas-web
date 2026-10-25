@@ -29,9 +29,9 @@ La barra se sitúa junto al objeto o en el borde inferior del lienzo. De
 izquierda a derecha tiene:
 
 - Un rótulo, como «Máscara rápida» o «Transformar contorno».
-- Los botones. Un botón atenuado no está disponible; selecciónalo para ver el motivo.
+- Los botones. Sitúa el puntero sobre un icono para leer su nombre. Un botón atenuado no está disponible; selecciónalo para ver el motivo.
 - **Más**, con los botones que no caben y después el menú **Seleccionar** para una selección o el menú **Capa** para una máscara.
-- El botón que termina, como **Aplicar** o **Salir**.
+- El botón que termina, como **Aplicar transformación** o **Salir**.
 
 Una barra situada junto a un objeto se oculta mientras tocas el lienzo o mueves
 la vista.
@@ -55,21 +55,15 @@ la barra.
 
 ![La barra de selección bajo una selección rectangular.](shot:selections/working-selection-bar)
 
-- **Deseleccionar** e **Invertir**: consulta el menú Seleccionar, más abajo.
-- **Dejar copia**: solo con **Operación**, consulta [Mover y transformar](/es/docs/transform/move-transform/).
-- **Copiar a capa**: **Copiar selección a una capa nueva** o **Cortar selección a una capa nueva**.
-- **Copiar**: **Copiar**, **Copiar combinado** o **Cortar**, consulta [Copiar y pegar](/es/docs/transform/clipboard/).
-- **Transformar**: transforma los píxeles seleccionados.
-- **Perfeccionar**: los comandos para perfeccionar y **Transformar contorno**.
-- **Máscara**: aplica a la capa activa una máscara con la forma de la selección.
-- **Ajustar**: añade un filtro que usa la selección como máscara, consulta [Cómo se aplican los filtros](/es/docs/filters/how-filters-apply/).
-- **Rellenar**: **Rellenar selección**.
-- **Borrar**: **Borrar píxeles seleccionados** o **Borrar fuera de la selección**.
-- **Recortar**: **Recortar lienzo a la selección**, consulta [Recortar](/es/docs/transform/crop/).
-- **Máscara rápida**: consulta [Máscara rápida](/es/docs/selections/quick-mask/).
-- **Guardar**: **Guardar como capa de selección**, consulta [Capas de selección](/es/docs/selections/selection-layers/).
+- **Transformar** transforma los píxeles seleccionados.
+- **Copiar** abre los comandos del portapapeles y de copia a una capa.
+- **Rellenar selección** rellena los píxeles seleccionados; **Borrar píxeles seleccionados** los borra.
+- **Ajustar** añade un filtro enmascarado con la selección.
+- **Máscara** abre los comandos de máscaras y selecciones guardadas.
+- **Invertir selección** y **Perfeccionar** cambian el contorno de la selección.
+- **Deseleccionar píxeles** elimina la selección.
 
-En una barra estrecha, los últimos botones, como **Máscara rápida** y **Guardar**, pasan a **Más**.
+**Más** contiene **Borrar fuera de la selección** y **Recortar lienzo a la selección**. Con **Operación** activo, también contiene **Dejar copia**. Los botones que no caben también pasan a **Más**. Al final aparece el menú **Seleccionar**.
 
 ## Menú Seleccionar
 
@@ -146,7 +140,7 @@ Haz una de las siguientes acciones:
 
 - Elige **Editar > Rellenar selección**, **Borrar píxeles seleccionados** o **Borrar fuera de la selección**.
 - Pulsa **Mayús+Retroceso** para rellenar, o **Supr** o **Retroceso** para borrar los píxeles seleccionados.
-- Selecciona **Rellenar**, o **Borrar** y un comando, en la barra de selección.
+- Selecciona **Rellenar selección** o **Borrar píxeles seleccionados** en la barra de selección, o elige **Más > Borrar fuera de la selección**.
 - En Pintura, selecciona **Rellenar selección** en la barra de comandos.
 - Abre el menú de la capa y elige **Selección de píxeles > Rellenar selección**.
 
@@ -163,7 +157,7 @@ Haz una de las siguientes acciones:
 
 - Elige **Capa > Nuevo > Copiar selección a una capa nueva** o **Capa > Nuevo > Cortar selección a una capa nueva**.
 - Pulsa **Ctrl+J** para copiar o **Ctrl+Mayús+J** para cortar.
-- Selecciona **Copiar a capa** en la barra de selección y elige un comando.
+- Selecciona **Copiar** en la barra de selección y elige un comando.
 
 La capa nueva recibe el nombre de la original, por ejemplo *Ribbon copia*, y
 conserva su opacidad, su visibilidad y su modo de mezcla. La selección se quita
@@ -179,7 +173,7 @@ Puedes añadir a la capa activa una máscara que muestre solo la selección.
 Haz una de las siguientes acciones:
 
 - Abre el menú de la capa y elige **Máscara > Máscara: mostrar selección**, o **Máscara > Máscara: ocultar selección** para ocultar la zona seleccionada.
-- Selecciona **Máscara** en la barra de selección.
+- Selecciona **Máscara** en la barra de selección y elige un comando de máscara.
 
 Si la capa ya tiene máscara, la selección reemplaza la máscara existente. La
 selección se quita y la máscara se abre para editarla (consulta

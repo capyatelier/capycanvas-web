@@ -4,7 +4,7 @@ description: "사진 편집 튜토리얼 2단계: 사진 위 레이어에서 복
 related: ["retouch/clone-heal", "layers/settings", "layers/working"]
 ---
 
-이 단계에서는 사진의 먼지와 얼룩을 덮는 *Retouch* 레이어를 만듭니다. 오브젝트 레이어는
+이 단계에서는 사진의 먼지와 얼룩을 덮는 *Retouch* 레이어를 만듭니다. 페인트 레이어는
 바뀌지 않습니다.
 
 ## 1. 보정 레이어 추가하기
@@ -12,7 +12,7 @@ related: ["retouch/clone-heal", "layers/settings", "layers/working"]
 1. 레이어 패널 아래쪽의 **새 레이어**를 선택하고 새 레이어의 이름을 *Retouch*로 바꿉니다.
 2. **레이어 > 레이어 설정 > 아래 레이어를 참조로 사용**을 선택합니다([레이어 설정](/ko/docs/layers/settings/)).
 
-오브젝트 레이어가 참조 레이어가 되고, 그 행의 눈 아이콘 옆에 등대 아이콘이 나타납니다.
+페인트 레이어가 참조 레이어가 되고, 그 행의 눈 아이콘 옆에 등대 아이콘이 나타납니다.
 복구 도구는 기본적으로 참조 레이어에서 복사해 *Retouch*에 칠합니다.
 
 ![참조 아이콘이 표시된 terrarium 레이어 위에 Retouch가 있는 레이어 패널.](shot:photo/retouch-layers)

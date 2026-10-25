@@ -25,13 +25,19 @@ Mỗi công cụ chỉ có một bong bóng, và kéo công cụ ra lần nữa 
 
 ## Vòng thiết lập và vòng chọn
 
-Một bong bóng xuất hiện ở trạng thái đã chọn, với vòng thiết lập mở nếu công cụ có thiết lập. Mỗi lần chạm đưa nó qua vòng thiết lập, vòng chọn rồi đóng, trừ bong bóng cọ không có vòng chọn. Chạm vào bong bóng của một công cụ chưa chọn sẽ chọn công cụ đó trước.
+Chọn bong bóng công cụ để mở vòng thiết lập. Chọn lại để mở bộ chọn; bong bóng cọ sẽ mở hoặc đóng vòng thiết lập. Chọn công cụ hoặc cọ trong bộ chọn sẽ mở vòng thiết lập của công cụ hoặc cọ đó.
 
 Kéo dọc một cung của vòng thiết lập để đổi thiết lập, và nhấp đúp hoặc chạm đúp vào cung để đặt lại. Vòng chọn xếp các chất liệu của công cụ thành vòng quanh bong bóng: chọn một chất liệu để bung các cọ của nó ra, rồi chọn một cọ.
 
 Giữ bong bóng hoặc nhấp chuột phải vào nó để mở trình đơn. Các mục có dấu kiểm đặt thiết lập vào vòng thiết lập, tối đa sáu thiết lập cho mỗi cọ.
 
 ![Vòng chọn của một bong bóng với chất liệu Màu nước được chọn và các cọ của nó bên cạnh.](shot:bubbles/dial-chooser)
+
+## Hiện thanh trượt
+
+Tắt **Hiện thanh trượt** trong menu bong bóng để ẩn các cung cài đặt. Cài đặt này áp dụng cho các bong bóng công cụ, phương tiện, cọ vẽ và **Bộ chọn màu** trong không gian làm việc hiện tại và vẫn được lưu sau khi bạn đặt chúng trở lại. Việc chọn một công cụ hoặc cọ vẽ sẽ ẩn các thanh trượt của nó khi cài đặt này tắt.
+
+![Mục Hiện thanh trượt trong menu của bong bóng công cụ.](shot:bubbles/show-sliders)
 
 ## Vòng màu nổi
 

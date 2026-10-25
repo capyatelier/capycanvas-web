@@ -55,10 +55,10 @@ Commands that change the artwork, such as **Clear Selected Pixels** and
 The [canvas bar](/docs/selections/working/) at the bottom of the canvas is
 captioned "Quick Mask":
 
-- **Invert**: **Invert selection**.
-- **Fill** and **Clear**: **Fill Mask** fills the whole mask, and **Clear Selection Coverage** empties the mask.
+- **Invert selection** swaps the selected and unselected areas.
+- **Fill Mask** fills the whole mask, and **Clear Selection Coverage** empties the mask.
 - **Refine**: **Grow…**, **Shrink…**, **Feather…**, **Border…** and **Smooth…**. **Transform Outline** is unavailable here.
-- **Save**: **Save as Selection Layer** (see [Selection layers](/docs/selections/selection-layers/)).
+- **Save as Selection Layer**: see [Selection layers](/docs/selections/selection-layers/).
 - **Exit**: **Return to Artwork**.
 
 With the canvas bar hidden, the Quick Mask bar doesn't appear.

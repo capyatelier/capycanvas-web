@@ -143,8 +143,7 @@ Verrechnung](/de/docs/color-management/color-spaces/).
 
 ## Stift und Eingabe
 
-Die Einstellungen auf dieser Seite sind unter [Stift](/de/docs/input/pen/) und
-[Touchgesten](/de/docs/input/touch/) beschrieben.
+Die Einstellungen auf dieser Seite werden unter [Stift](/de/docs/input/pen/), [Stiftneigung](/de/docs/input/pen-tilt/) und [Touch-Gesten](/de/docs/input/touch/) beschrieben.
 
 ## Tastenkürzel
 

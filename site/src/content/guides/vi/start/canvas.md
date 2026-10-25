@@ -80,6 +80,12 @@ Thực hiện một trong các cách sau:
 Để trở về 0°, nhấn **5** hoặc chọn **Đặt lại góc xoay** trong trình đơn của chỉ số
 thu phóng.
 
+## Bắt dính góc xoay
+
+**Bắt dính góc xoay** giữ chế độ xem gần 0°, 90°, 180° và 270° trong khi bạn xoay bằng cử chỉ, công cụ **Xoay chế độ xem** hoặc thanh trượt. Nó được bật theo mặc định.
+
+Bật hoặc tắt nó trong **Hiển thị > Bắt dính góc xoay** hoặc menu đọc thu phóng. **Khóa xoay** dừng hoàn toàn cử chỉ xoay.
+
 ## Lật khung nhìn
 
 Thực hiện một trong các cách sau:

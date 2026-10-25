@@ -29,6 +29,8 @@ itu, lalu aktifkan atau nonaktifkan ruang kerja di daftar **Tampilkan di bilah a
 Ruang kerja saat ini selalu memiliki tombol. Ruang kerja yang Anda buat ditambahkan ke
 bilah judul.
 
+Dalam dialog **Ruang kerja**, pilih pin di samping ruang kerja untuk menampilkan atau menyembunyikan tombolnya di bilah judul.
+
 ![Daftar Tampilkan di bilah atas di bawah tombol ruang kerja.](shot:workspaces/show-in-top-bar)
 
 ## Ruang Kerja Baru…
@@ -38,7 +40,7 @@ Anda dapat menyimpan tata letak saat ini sebagai ruang kerja baru.
 Lakukan salah satu langkah berikut:
 
 - Pilih **Jendela > Ruang kerja > Ruang Kerja Baru…**.
-- Pilih **Ruang Kerja Baru** (**+**) di dialog **Ruang kerja**.
+- Pilih **Ruang Kerja Baru** (**+**) di bawah daftar pada dialog **Ruang kerja**.
 
 Ketik **Nama** lalu pilih **Buat dan Beralih**. Setiap ruang kerja harus memiliki nama
 yang berbeda.
@@ -49,14 +51,15 @@ Pilih **Jendela > Ruang kerja > Kelola Ruang Kerja…** untuk membuka dialog
 **Ruang kerja**. Memilih ruang kerja menampilkan pratinjau tata letaknya di belakang
 dialog. Untuk berpindah, pilih **Beralih ke Ruang Kerja**.
 
-- Seret ruang kerja pada pegangannya untuk mengubah urutan daftar. Bilah judul memakai urutan yang sama.
-- Pilih **⋯** di samping ruang kerja, atau klik kanan ruang kerja itu, untuk **Tampilkan di bilah atas**, **Pindahkan ke Atas**, **Pindahkan ke Bawah**, **Ubah Nama…**, dan **Hapus…**.
+- Seret pegangan di sebelah kanan ruang kerja untuk menyusun ulang daftar. Bilah judul menggunakan urutan yang sama.
+- Klik kanan atau tahan ruang kerja untuk **Ubah Nama…**, **Hapus…**, **Pindahkan ke Atas**, dan **Pindahkan ke Bawah**. Mengganti nama akan mengedit nama di baris; tekan **Enter** untuk menyimpannya atau **Escape** untuk membatalkan.
+- Pilih ruang kerja, lalu pilih **Hapus** di bawah daftar. Pada layar sentuh, geser barisnya untuk menampilkan **Hapus**.
 
 Untuk menyalin ruang kerja, beralihlah ke ruang kerja itu lalu pilih
 **Ruang Kerja Baru…**. **Sketsa**, **Lukis**, dan **Foto** tidak dapat diganti namanya
 atau dihapus, dan penghapusan ruang kerja bersifat permanen.
 
-![Dialog Ruang kerja dengan opsi salah satu ruang kerja terbuka.](shot:workspaces/manage-dialog)
+![Dialog Ruang kerja dengan menu konteks ruang kerja terbuka.](shot:workspaces/manage-dialog)
 
 ## Riwayat Tata Letak…
 

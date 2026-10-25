@@ -25,13 +25,19 @@ Un outil n’a qu’une bulle : le faire glisser de nouveau la déplace. Les co
 
 ## Halo et sélecteur
 
-Une bulle sort sélectionnée, avec son halo de réglages ouvert si l’outil a des réglages. Chaque toucher la fait passer du halo au sélecteur, puis à l’état fermé ; seule une bulle de pinceau n’a pas de sélecteur. Toucher la bulle d’un outil non sélectionné sélectionne d’abord l’outil.
+Sélectionner une bulle d’outil ouvre son anneau de réglages. La sélectionner à nouveau ouvre le sélecteur ; une bulle de pinceau ouvre ou ferme son anneau. Choisir un outil ou un pinceau dans le sélecteur ouvre son anneau de réglages.
 
 Faites glisser le long d’un arc du halo pour modifier un réglage, et touchez deux fois ou double-cliquez sur l’arc pour le réinitialiser. Le sélecteur dispose les médias de l’outil en cercle autour de la bulle : sélectionnez un médium pour déployer ses pinceaux, puis sélectionnez un pinceau.
 
 Appuyez longuement sur la bulle, ou cliquez dessus avec le bouton droit, pour ouvrir son menu. Ses éléments à cocher placent des réglages dans le halo, jusqu’à six par pinceau.
 
 ![Le sélecteur d’une bulle avec le médium Aquarelle sélectionné et ses pinceaux à côté.](shot:bubbles/dial-chooser)
+
+## Afficher les curseurs
+
+Désactivez **Afficher les curseurs** dans le menu d’une bulle pour masquer les arcs de réglage. Ce réglage est commun aux bulles d’outils, de médiums, de pinceaux et de **Pipette** de l’espace de travail actuel. Il reste enregistré après leur remise en place. Lorsqu’il est désactivé, choisir un outil ou un pinceau ne montre pas ses curseurs.
+
+![L’élément Afficher les curseurs dans le menu d’une bulle d’outil.](shot:bubbles/show-sliders)
 
 ## Anneau de couleur
 

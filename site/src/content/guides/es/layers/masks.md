@@ -39,10 +39,10 @@ papeles. Los trazos en la máscara son secos, sin mezcla, sangrado ni textura.
 Mientras pintas en una máscara, aparece en la parte inferior del lienzo una barra
 con el texto «Editando máscara de *capa*».
 
-![La barra de edición de máscara con Invertir, Desactivar, Aplicar máscara, Más y Editar contenido.](shot:layers/masks-bar)
+![La barra de edición de máscara con Invertir máscara de capa, Activar máscara de capa, Aplicar máscara, Más y Editar contenido.](shot:layers/masks-bar)
 
-- **Invertir**
-- **Desactivar** desactiva la máscara, y el botón pasa a decir **Activar**.
+- **Invertir máscara de capa** intercambia las zonas visibles y ocultas.
+- **Activar máscara de capa** activa o desactiva la máscara.
 - **Aplicar máscara** borra los píxeles que oculta la máscara y después elimina la máscara.
 - **Más** contiene el menú **Capa** y **Mostrar barra de acciones del lienzo**. Desactiva **Mostrar barra de acciones del lienzo** para ocultar la barra.
 - **Editar contenido** vuelve a pintar en la capa.
@@ -54,7 +54,7 @@ Puedes crear una máscara a partir de la selección actual.
 Haz una de las siguientes acciones:
 
 - Elige **Capa > Máscara > Máscara: mostrar selección** o **Máscara: ocultar selección**. En una capa con máscara, los elementos dicen **Reemplazar máscara: mostrar selección** y **Reemplazar máscara: ocultar selección**.
-- Selecciona **Máscara** en la [barra de selección](/es/docs/selections/working/) del lienzo. La máscara nueva muestra la zona seleccionada y reemplaza la máscara que tuviera la capa.
+- Elige un comando de máscara en **Máscara**, en la [barra de selección](/es/docs/selections/working/) del lienzo. La nueva máscara muestra la zona seleccionada y sustituye la máscara anterior de la capa.
 
 Una capa de filtro o de relleno añadida con una selección activa recibe una
 máscara a partir de la selección. **Pegar dentro** crea una capa nueva con una

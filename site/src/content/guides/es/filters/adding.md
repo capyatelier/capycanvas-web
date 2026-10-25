@@ -19,9 +19,7 @@ Haz una de las siguientes acciones:
 
 ![El panel Filtros con el menú de categorías, el botón de búsqueda y filas de filtros con vistas previas.](shot:filters/filters-panel)
 
-Mientras hay una capa seleccionada, cada fila muestra una vista previa del filtro
-sobre esa capa y las capas de debajo. Los filtros animados tienen una marca
-delante de su icono.
+Cada fila muestra el filtro sobre una imagen de muestra fija. Los filtros animados tienen una marca delante de su icono.
 
 El menú de arriba muestra una categoría o **Todos los filtros**. **Buscar filtros**
 encuentra un filtro por su nombre dentro de la categoría elegida.

@@ -6,7 +6,7 @@ related: ["transform/image", "selections/working", "drawing/ruler", "photo/crop"
 
 Puedes recortar el lienzo a un marco con la herramienta **Recortar**. Los píxeles
 recortados se quedan en sus capas, ocultos, salvo que actives
-**Eliminar pintura recortada**.
+**Eliminar píxeles de pintura recortados**.
 
 ## Recortar el lienzo
 
@@ -28,11 +28,11 @@ inferior del lienzo.
 En una pantalla táctil, solo los tiradores responden a un dedo. Un dedo dentro
 del marco mueve la vista.
 
-Para terminar, selecciona **Aplicar** o pulsa **Intro**. **Cancelar**, **Escape**
+Para terminar, selecciona **Aplicar recorte** o pulsa **Intro**. **Cancelar recorte**, **Escape**
 y **Deshacer** descartan el recorte. En los dos casos, vuelve la herramienta que
 usabas antes.
 
-**Aplicar** también recorta las capas bloqueadas. No puedes empezar un recorte
+**Aplicar recorte** también recorta las capas bloqueadas. No puedes empezar un recorte
 mientras hay una transformación abierta.
 
 ![El marco de recorte sobre la foto del terrario, con la barra del lienzo en el borde inferior.](shot:transform/crop-bar)
@@ -46,7 +46,7 @@ de esa proporción. **Libre** es el valor predeterminado.
 **Intercambiar orientación de recorte**, el botón de icono junto a
 **Proporción**, cambia el marco entre horizontal y vertical.
 
-La proporción, la superposición y **Eliminar pintura recortada** se mantienen en el
+La proporción, la superposición y **Eliminar píxeles de pintura recortados** se mantienen en el
 siguiente recorte.
 
 ![El menú Proporción en la barra de recorte.](shot:transform/crop-ratio-menu)
@@ -59,9 +59,7 @@ visibles, incluidos los que están fuera del lienzo. **Proporción** cambia a
 
 ## Superposición
 
-Elige **Tercios**, **Cuadrícula**, **Diagonal** o **Proporción áurea** en
-**Superposición**. **Tercios** es el valor predeterminado. Pulsa **O** mientras
-recortas para mostrar la siguiente superposición.
+Elige una superposición en **Más > Superposición**. La predeterminada es **Superposición de regla de tercios**. Pulsa **O** durante el recorte para mostrar la siguiente.
 
 ## Enderezar
 
@@ -81,20 +79,18 @@ Para enderezar según una guía, selecciona la guía y selecciona **Enderezar** 
 su barra del lienzo (consulta [Reglas y guías](/es/docs/drawing/ruler/)). Se abre
 un recorte girado para quedar alineado con la guía.
 
-## Eliminar pintura recortada
+## Eliminar píxeles de pintura recortados
 
-Activa **Eliminar pintura recortada** para descartar los píxeles fuera del marco al
+Activa **Más > Eliminar píxeles de pintura recortados** para descartar los píxeles fuera del marco al
 aplicar el recorte. Las fotos colocadas conservan sus píxeles originales.
 Desactivado de forma predeterminada.
 
 Un recorte que sería demasiado grande si se conservaran los píxeles ocultos solo
-funciona con **Eliminar pintura recortada** activado.
+funciona con **Eliminar píxeles de pintura recortados** activado.
 
-## Restablecer
+## Restablecer recorte
 
-**Restablecer** devuelve el marco a todo el lienzo, recto, y desactiva
-**Enderezar**. Con una proporción elegida, el marco pasa a ser el marco más grande
-de esa proporción.
+**Restablecer recorte**, en **Más**, devuelve el marco a todo el lienzo, sin giro, y desactiva **Enderezar**. Si hay una proporción elegida, el marco adopta el mayor tamaño posible con ella.
 
 ## Ajustes de recorte en el panel Herramienta
 
@@ -114,7 +110,7 @@ Puedes recortar el lienzo a los límites de una selección.
 Haz una de las siguientes acciones:
 
 - Elige **Imagen > Recortar lienzo a la selección**.
-- Selecciona **Recortar** en la [barra de selección](/es/docs/selections/working/).
+- Elige **Más > Recortar lienzo a la selección** en la [barra de selección](/es/docs/selections/working/).
 
 Los píxeles fuera de los límites de la selección se quedan en sus capas,
 ocultos. No puedes recortar a una selección invertida.

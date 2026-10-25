@@ -29,6 +29,24 @@ misturador padrão.
 As configurações de cada misturador estão em
 [Mistura, espalhamento e cerdas](/pt-BR/docs/brushes/wet-media/).
 
+### Misturador de cerdas
+
+**Misturador de cerdas** transforma a tinta em listras. A extremidade esquerda desta amostra não está misturada.
+
+![Misturador de cerdas listrando a tinta sombreada à direita.](shot:examples/bristle-blender)
+
+### Misturador pontilhado
+
+**Misturador pontilhado** mistura as bandas em um padrão de pontilhamento.
+
+![Misturador pontilhado misturando as faixas sombreadas à direita.](shot:examples/dither-blender)
+
+### Marmorizado
+
+**Marmorizado** enrola a tinta em redemoinhos.
+
+![Marmorizado curvando as faixas sombreadas à direita.](shot:examples/marbling)
+
 ## Liquefazer
 
 Faça uma das seguintes ações:
@@ -55,6 +73,18 @@ Liquefazer não tem botão Aplicar. Cada traço altera a camada e é uma etapa d
 desfazer própria. Os traços continuam deformando os pixels que a camada tinha antes
 do primeiro traço, até você pintar, preencher, aplicar um filtro, transformar ou
 colar na camada.
+
+### Borda
+
+**Borda** puxa a tinta em direção à linha do traço. As faixas à esquerda mostram a pintura original.
+
+![Borda puxando as faixas coloridas em direção a um traço horizontal à direita.](shot:examples/liquify-edge)
+
+### Reconstruir
+
+**Reconstruir** restaura a tinta original sob o pincel. Aqui ele restaura a metade direita das bandas distorcidas.
+
+![Faixas distorcidas à esquerda e pintura restaurada com Reconstruir à direita.](shot:examples/liquify-reconstruct)
 
 ## Ajustar Dissolver e Redefinir Dissolver
 

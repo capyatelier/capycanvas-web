@@ -29,7 +29,7 @@ related: ["filters/how-filters-apply", "filters/tone", "selections/working", "fi
 1. 按 **M**，或选择“工具”工具栏中的**套索选区**，然后围绕石头画一圈。
 2. 选择**选择 > 羽化选区…**，或选择选区操作栏中的**优化**，然后选择**羽化…**（[使用选区](/zh/docs/selections/working/)）。
 3. 将 **羽化半径** 设为 20 px，然后选择**应用**。
-4. 在选区栏中选择**蒙版**。
+4. 在选区栏中选择 **蒙版 > 蒙版：显示选区**。
 
 ![岩石周围选区旁的选区栏，其中包含蒙版。](shot:photo/adjust-bar)
 

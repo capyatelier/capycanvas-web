@@ -12,7 +12,7 @@ novo mais tarde.
 Faça uma das seguintes ações:
 
 - Escolha **Selecionar > Salvar como camada de seleção**.
-- Selecione **Salvar** na barra de seleção ou na barra da Máscara rápida.
+- Selecione **Máscara > Salvar como camada de seleção** na barra de seleção ou **Salvar como camada de seleção** na barra Quick Mask.
 - Na Máscara rápida, escolha **Camada > Salvar como camada de seleção**.
 
 A nova camada vai para o topo da lista de camadas, com o nome *Seleção* e um
@@ -58,7 +58,7 @@ a legenda "Editando" seguida do nome da camada. Com a barra de ações da tela o
 barra não aparece.
 
 - **Carregar** torna a camada a seleção atual e volta para a arte.
-- **Inverter** inverte a seleção armazenada e mantém a camada aberta para edição.
+- **Inverter camada de seleção** inverte a seleção armazenada e mantém a camada aberta para edição.
 - **Voltar à arte** encerra a edição. **Escape** faz o mesmo.
 
 Depois da edição, a camada que você editava antes volta a ficar ativa, ou a
@@ -69,7 +69,7 @@ em **Modificar**. **Selecionar > Expandir seleção…** e os outros comandos de
 refinamento do menu **Selecionar** primeiro voltam para a arte e depois alteram
 a seleção atual.
 
-![A barra de ações da tela de uma camada de seleção em edição, com Carregar, Inverter e Voltar à arte.](shot:selections/selection-layer-bar)
+![A barra de tela para uma camada de seleção editada com Carregar, Inverter camada de seleção e Voltar à arte.](shot:selections/selection-layer-bar)
 
 ## Carregar uma camada de seleção
 

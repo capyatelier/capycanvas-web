@@ -23,7 +23,7 @@ Effectuez l’une des opérations suivantes :
 
 ## Photos
 
-Une photo s’ouvre comme nouveau dessin avec un calque Objet nommé d’après le fichier. L’Objet conserve la taille, le profil colorimétrique et, par défaut, la profondeur de couleur de l’image. Enregistrer le dessin crée un fichier `.capy` et n’écrase jamais l’image source.
+Une photo s'ouvre sous la forme d'un nouveau dessin avec un calque de peinture nommé d'après le fichier. Le dessin conserve la taille d'origine de la photo, son profil de couleur et, par défaut, sa profondeur de bits. L'enregistrement du dessin crée un fichier `.capy` et n'écrase jamais l'image source.
 
 - Un GIF ou un WebP animé ouvre sa première image.
 - Une photo peut mesurer jusqu’à 32 768 pixels de côté.

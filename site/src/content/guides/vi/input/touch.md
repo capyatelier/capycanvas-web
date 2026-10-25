@@ -22,6 +22,8 @@ Khi bút đang chạm khung vẽ, ngón tay không di chuyển khung vẽ. Ngón
 nắm biến đổi hoặc tay nắm cắt xén, hoặc trên điểm nguồn của **Dấu sao chép**, sẽ kéo
 tay nắm hoặc điểm nguồn đó.
 
+**Bắt dính góc xoay** được bật theo mặc định và giữ chế độ xem gần các lượt một phần tư. Tắt nó trong **Hiển thị > Bắt dính góc xoay** để xoay tự do.
+
 ## Lấy màu
 
 Giữ yên một ngón tay trên khung vẽ để lấy màu bên dưới. Một vòng kính lúp xuất hiện

@@ -12,9 +12,9 @@ Elige **Archivo > Abrir…**, o pulsa **Ctrl+O**, y selecciona la foto
 ([Abrir y guardar](/es/docs/files/open-save/)). La foto se abre en su propia
 pestaña de dibujo.
 
-![El panel Capas con la capa de objeto terrarium.](shot:photo/open-layers)
+![El panel Capas con la capa de pintura terrarium.](shot:photo/open-layers)
 
-El dibujo tiene una capa de objeto con el nombre del archivo. En el ejemplo, la capa se llama «terrarium».
+El dibujo tiene una capa de pintura con el nombre del archivo. En el ejemplo, la capa se llama «terrarium».
 
 ## 2. Elige una proporción
 
@@ -41,9 +41,9 @@ helecho.
 
 ## 4. Aplica el recorte
 
-Selecciona **Aplicar** en la barra de recorte, o pulsa **Intro**. El lienzo toma
+Selecciona **Aplicar recorte** en la barra de recorte, o pulsa **Intro**. El lienzo toma
 el tamaño del marco: 2000 × 1600 píxeles en el ejemplo. Los píxeles recortados
-se quedan en la capa, ocultos, salvo que **Eliminar pintura recortada** esté activado
+se quedan en la capa, ocultos, salvo que **Más > Eliminar píxeles de pintura recortados** esté activado
 en la barra de recorte.
 
 Siguiente etapa: [Retoque](/es/docs/photo/retouch/).

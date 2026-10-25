@@ -23,6 +23,8 @@ Kalem tuvaldeyken parmaklar tuvali taşımaz. Dönüştürme veya kırpma tutama
 ya da **Klonlama damgası** kaynağındaki bir parmak, bunun yerine tutamacı veya
 kaynağı sürükler.
 
+**Döndürmeyi hizala** varsayılan olarak açıktır ve görünümü çeyrek dönüşe yakın tutar. Serbest dönüş için **Görünüm > Döndürmeyi hizala**'de kapatın.
+
 ## Renk alma
 
 Altındaki rengi almak için bir parmağınızı tuvalde sabit tutun. Parmağın

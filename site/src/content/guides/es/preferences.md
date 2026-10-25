@@ -146,8 +146,7 @@ bits y mezcla](/es/docs/color-management/color-spaces/).
 
 ## Lápiz y entrada
 
-Los ajustes de esta página se describen en [Lápiz](/es/docs/input/pen/) y en
-[Gestos táctiles](/es/docs/input/touch/).
+Los ajustes de esta página se describen en [Lápiz](/es/docs/input/pen/), [Inclinación del lápiz](/es/docs/input/pen-tilt/) y [Gestos táctiles](/es/docs/input/touch/).
 
 ## Atajos de teclado
 

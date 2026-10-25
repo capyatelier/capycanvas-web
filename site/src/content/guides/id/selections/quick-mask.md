@@ -54,10 +54,10 @@ Perintah yang mengubah karya, seperti **Bersihkan Piksel Terpilih** dan
 [Bilah kanvas](/id/docs/selections/working/) di bagian bawah kanvas berketerangan
 "Mask Cepat":
 
-- **Balikkan**: **Balikkan seleksi**.
-- **Isi** dan **Bersihkan**: **Isi Mask** mengisi seluruh mask, dan **Bersihkan Cakupan Seleksi** mengosongkan mask.
+- **Balikkan seleksi** menukar area yang dipilih dan tidak dipilih.
+- **Isi Mask** mengisi seluruh masker, dan **Bersihkan Cakupan Seleksi** mengosongkan masker.
 - **Perbaiki**: **Perluas…**, **Perkecil…**, **Perhalus Tepi…**, **Bingkai…**, dan **Haluskan…**. **Transformasi Garis Seleksi** tidak tersedia di sini.
-- **Simpan**: **Simpan sebagai Lapisan Seleksi** (lihat [Lapisan seleksi](/id/docs/selections/selection-layers/)).
+- **Simpan sebagai Lapisan Seleksi**: lihat [Lapisan pilihan](/id/docs/selections/selection-layers/).
 - **Keluar**: **Kembali ke Karya**.
 
 Jika bilah kanvas disembunyikan, bilah Mask Cepat tidak muncul.

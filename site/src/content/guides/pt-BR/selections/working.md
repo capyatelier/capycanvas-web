@@ -29,9 +29,9 @@ A barra fica ao lado do objeto ou na borda inferior da tela. Da esquerda para a
 direita, ela tem:
 
 - Uma legenda, como "Máscara rápida" ou "Transformar contorno".
-- Os botões. Um botão esmaecido está indisponível; selecione-o para ver o motivo.
+- Os botões. Passe o mouse sobre um ícone para ler seu nome. Um botão esmaecido não está disponível; selecione-o para ver o motivo.
 - **Mais**, com os botões que não cabem, e depois o menu **Selecionar** para uma seleção ou o menu **Camada** para uma máscara.
-- O botão que conclui, como **Aplicar** ou **Sair**.
+- O botão que conclui, como **Aplicar transformação** ou **Sair**.
 
 Uma barra ao lado de um objeto se esconde enquanto você toca na tela ou move a
 visualização.
@@ -55,21 +55,15 @@ nunca mostram a barra.
 
 ![A barra de seleção abaixo de uma seleção retangular.](shot:selections/working-selection-bar)
 
-- **Desmarcar** e **Inverter**: consulte o menu Selecionar abaixo.
-- **Deixar cópia**: só com **Operação**, consulte [Mover e Transformar](/pt-BR/docs/transform/move-transform/).
-- **Copiar para camada**: **Copiar seleção para nova camada** ou **Recortar seleção para nova camada**.
-- **Copiar**: **Copiar**, **Copiar mesclado** ou **Recortar**, consulte [Copiar e colar](/pt-BR/docs/transform/clipboard/).
-- **Transformar**: transforma os pixels selecionados.
-- **Refinar**: os comandos de refinamento e **Transformar contorno**.
-- **Máscara**: mascara a camada ativa pela seleção.
-- **Ajustar**: adiciona um filtro que usa a seleção como máscara, consulte [Como os filtros se aplicam](/pt-BR/docs/filters/how-filters-apply/).
-- **Preencher**: **Preencher seleção**.
-- **Limpar**: **Limpar pixels selecionados** ou **Limpar fora da seleção**.
-- **Recortar**: **Recortar tela à seleção**, consulte [Recortar](/pt-BR/docs/transform/crop/).
-- **Máscara rápida**: consulte [Máscara rápida](/pt-BR/docs/selections/quick-mask/).
-- **Salvar**: **Salvar como camada de seleção**, consulte [Camadas de seleção](/pt-BR/docs/selections/selection-layers/).
+- **Transformar** altera os pixels selecionados.
+- **Copiar** abre a área de transferência e comandos de cópia para camada.
+- **Preencher seleção** preenche os pixels selecionados; **Limpar pixels selecionados** os apaga.
+- **Ajustar** adiciona um filtro que usa a seleção como máscara.
+- **Máscara** abre os comandos de máscara e comandos de seleção salva.
+- **Inverter seleção** e **Refinar** alteram o contorno da seleção.
+- **Desmarcar pixels** limpa a seleção.
 
-Em uma barra estreita, os últimos botões, como **Máscara rápida** e **Salvar**, passam para **Mais**.
+**Mais** contém **Limpar fora da seleção** e **Recortar tela à seleção**. Com **Operação** ativo, também contém **Deixar cópia**. Os botões que não cabem na barra também passam para **Mais**. O menu termina com o menu **Selecionar**.
 
 ## Menu Selecionar
 
@@ -146,7 +140,7 @@ Faça uma das seguintes ações:
 
 - Escolha **Editar > Preencher seleção**, **Limpar pixels selecionados** ou **Limpar fora da seleção**.
 - Pressione **Shift+Backspace** para preencher, ou **Excluir** ou **Backspace** para limpar os pixels selecionados.
-- Selecione **Preencher**, ou **Limpar** e um comando, na barra de seleção.
+- Selecione **Preencher seleção** ou **Limpar pixels selecionados** na barra de seleção ou escolha **Mais > Limpar fora da seleção**.
 - Em Pintura, selecione **Preencher seleção** na barra de ferramentas Comandos.
 - Abra o menu da camada e escolha **Seleção de pixels > Preencher seleção**.
 
@@ -163,7 +157,7 @@ Faça uma das seguintes ações:
 
 - Escolha **Camada > Novo > Copiar seleção para nova camada** ou **Camada > Novo > Recortar seleção para nova camada**.
 - Pressione **Ctrl+J** para copiar ou **Ctrl+Shift+J** para recortar.
-- Selecione **Copiar para camada** na barra de seleção e escolha um comando.
+- Selecione **Copiar** na barra de seleção e escolha um comando.
 
 A nova camada recebe um nome baseado na original, por exemplo *Cópia de Ribbon*,
 e mantém a opacidade, a visibilidade e o modo de mesclagem dela. A seleção é
@@ -179,7 +173,7 @@ Você pode adicionar à camada ativa uma máscara que mostra só a seleção.
 Faça uma das seguintes ações:
 
 - Abra o menu da camada e escolha **Máscara > Máscara: revelar seleção**, ou **Máscara > Máscara: ocultar seleção** para ocultar a área selecionada.
-- Selecione **Máscara** na barra de seleção.
+- Selecione **Máscara** na barra de seleção e escolha um comando de máscara.
 
 Se a camada já tiver uma máscara, a seleção substitui a máscara existente. A
 seleção é removida, e a máscara se abre para edição (consulte

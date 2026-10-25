@@ -12,7 +12,7 @@ yeniden yükleyebilirsiniz.
 Aşağıdakilerden birini yapın:
 
 - **Seç > Seçim katmanı olarak kaydet** komutunu seçin.
-- Seçim çubuğunda veya Hızlı maske çubuğunda **Kaydet** düğmesini seçin.
+- Seçim çubuğunda **Maske > Seçim katmanı olarak kaydet**'yi veya Hızlı Maske çubuğunda **Seçim katmanı olarak kaydet**'yi seçin.
 - Hızlı maskede **Katman > Seçim katmanı olarak kaydet** komutunu seçin.
 
 Yeni katman, katman listesinin en üstüne *Seçim* ve bir sayıdan oluşan bir adla
@@ -54,7 +54,7 @@ Tuvalin altındaki [tuval çubuğunun](/tr/docs/selections/working/) başlığı
 “Düzenleniyor:” ve katmanın adıdır. Tuval çubuğu gizliyse bu çubuk görünmez.
 
 - **Yükle** katmanı geçerli seçim yapar ve çizime döner.
-- **Tersine çevir** saklanan seçimi tersine çevirir ve katmanı düzenleme için açık tutar.
+- **Seçim katmanını tersine çevir** saklanan seçimi tersine çevirir ve katmanı düzenleme için açık tutar.
 - **Çizime dön** düzenlemeyi bitirir. **Escape** de aynısını yapar.
 
 Düzenlemeden sonra daha önce düzenlediğiniz katman yeniden etkin olur. Böyle bir
@@ -64,7 +64,7 @@ Saklanan seçimi iyileştirmek için seçim katmanının menüsünü açın ve
 **Değiştir** altından seçin. **Seç > Seçimi genişlet…** ve **Seç** menüsündeki
 diğer iyileştirme komutları önce çizime döner ve geçerli seçimi değiştirir.
 
-![Yükle, Tersine çevir ve Çizime dön düğmeleriyle düzenlenen bir seçim katmanının tuval çubuğu.](shot:selections/selection-layer-bar)
+![Yükle, Seçim katmanını tersine çevir ve Çizime dön içeren düzenlenmiş bir seçim katmanı için tuval çubuğu.](shot:selections/selection-layer-bar)
 
 ## Seçim katmanını yükleme
 

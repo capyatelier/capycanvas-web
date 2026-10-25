@@ -40,10 +40,10 @@ dry, with no mixing, bleed or texture.
 While you paint on a mask, a bar labeled "Editing *layer* mask" appears at the
 bottom of the canvas.
 
-![The mask editing bar with Invert, Disable, Apply Mask, More and Edit Content.](shot:layers/masks-bar)
+![The mask editing bar with Invert Layer Mask, Enable Layer Mask, Apply Mask, More, and Edit Content.](shot:layers/masks-bar)
 
-- **Invert**
-- **Disable** turns the mask off, and the button then reads **Enable**.
+- **Invert Layer Mask** swaps the shown and hidden areas.
+- **Enable Layer Mask** turns the mask on or off.
 - **Apply Mask** erases the pixels the mask hides, then removes the mask.
 - **More** holds the **Layer** menu and **Show canvas action bar**. Turn off **Show canvas action bar** to hide the bar.
 - **Edit Content** returns to painting on the layer.
@@ -55,7 +55,7 @@ You can make a mask from the current selection.
 Do one of the following:
 
 - Choose **Layer > Mask > Mask: reveal selection** or **Mask: hide selection**. On a layer with a mask, the items read **Replace mask: reveal selection** and **Replace mask: hide selection**.
-- Select **Mask** in the [selection bar](/docs/selections/working/) on the canvas. The new mask shows the selected area and replaces any mask the layer had.
+- Choose a mask command from **Mask** in the [selection bar](/docs/selections/working/) on the canvas. The new mask shows the selected area and replaces any mask the layer had.
 
 A filter or fill layer added while a selection is active gets a mask from the
 selection. **Paste Into** creates a new layer masked to the selection (see

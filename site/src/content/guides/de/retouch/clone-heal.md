@@ -91,10 +91,6 @@ Der nächste Klick legt die Quelle fest.
 
 ## Leinwandaktionsleiste für die Quellscheibe
 
-Klicken Sie auf die Quellscheibe, ohne zu ziehen, um daneben die
-[Leinwandaktionsleiste](/de/docs/selections/working/) anzuzeigen, mit
-**Ausgerichtet**, **Quelle**, den beiden Schaltflächen zum Spiegeln,
-**Versatz zurücksetzen** und **Quelle festlegen**. Klicken Sie erneut auf die
-Scheibe oder wählen Sie ein anderes Werkzeug, um die Leiste auszublenden.
+Klicken Sie auf den Quellkreis, ohne ihn zu ziehen. Daneben erscheint die [Leinwandleiste](/de/docs/selections/working/) mit **Ausgerichtet**, **Quelle**, **Quelle horizontal spiegeln** und **Quelle festlegen**. **Mehr** enthält **Quelle vertikal spiegeln** und **Quellversatz zurücksetzen**. Ein erneuter Klick auf den Kreis oder die Wahl eines anderen Werkzeugs blendet die Leiste aus.
 
 ![Die Quellscheibe mit ihrer Leinwandaktionsleiste.](shot:retouch/clone-source-bar)

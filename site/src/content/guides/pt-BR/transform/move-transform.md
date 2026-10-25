@@ -44,9 +44,7 @@ Em uma camada vetorial, **Operação** seleciona, move, dimensiona e gira caminh
 Você pode mover uma cópia dos pixels selecionados e manter os originais no
 lugar.
 
-Ative **Deixar cópia** no painel Ferramenta ou na
-[barra de seleção](/pt-BR/docs/selections/working/). Mantenha **Alt**
-pressionada ao começar a arrastar para fazer o contrário em um único arrasto.
+Ative **Deixar cópia** no painel **Ferramenta** ou escolha **Mais > Deixar cópia** na [barra de seleção](/pt-BR/docs/selections/working/). Segure **Alt** ao começar a arrastar para inverter a escolha somente nesse arrasto.
 
 ## Transformar
 
@@ -62,7 +60,7 @@ Com uma seleção, **Transformar** altera os pixels selecionados da camada ou da
 máscara ativa. Sem seleção, altera as camadas selecionadas. Aparecem uma caixa
 com alças e a barra de ações da tela.
 
-Para terminar, selecione **Aplicar** ou pressione **Enter**. **Cancelar** ou
+Para terminar, selecione **Aplicar transformação** ou pressione **Enter**. **Cancelar transformação** ou
 **Escape** descarta a transformação, assim como **Desfazer** enquanto você
 transforma camadas.
 
@@ -70,7 +68,7 @@ Para transformar várias camadas, desfaça a seleção antes.
 
 ## Alças
 
-Em **Livre** e **Uniforme**:
+Durante o dimensionamento:
 
 - Arraste dentro da caixa para movê-la. Mantenha **Shift** pressionada para mover só na horizontal ou na vertical.
 - Arraste uma alça de canto ou de lado para dimensionar a partir do lado oposto. Mantenha **Shift** pressionada para manter as proporções, ou **Alt** para dimensionar em torno do pivô.
@@ -95,12 +93,11 @@ Em todos os modos:
 
 ## Barra de transformação
 
-![A barra de ações da tela de uma transformação, com Modo, Encaixar, os botões de inverter e girar, Redefinir, Interpolação, Cancelar e Aplicar.](shot:transform/transform-bar)
+![A barra de transformação com os botões de modo, controles de virar e encaixar, Cancelar transformação e Aplicar transformação.](shot:transform/transform-bar)
 
 ### Modo
 
-**Livre**, **Uniforme**, **Distorcer** ou **Deformar**. **Uniforme** mantém as
-proporções. **Livre** é o padrão.
+Selecione **Redimensionar**, **Distorcer** ou **Deformar** na barra. **Manter proporções** mantém a proporção durante o dimensionamento e **Perspectiva** espelha os arrastos de canto em **Distorcer**. **Redimensionar** é o padrão.
 
 ### Tamanho original
 
@@ -120,29 +117,24 @@ Com **Distorcer**, espelha cada arrasto de canto no canto vizinho.
 
 Com **Deformar**:
 
-- **Dividir grade**: escolha **Dividir verticalmente**, **Dividir horizontalmente** ou **Dividir em cruz** e toque na deformação para adicionar ali uma linha de grade sem mudar a forma. **Escape** cancela a divisão. Uma grade tem no máximo 32 células em cada direção.
-- **Selecionar pontos**: toque em pontos para selecioná-los e movê-los juntos.
-- **Redefinir grade**: substitui a deformação por uma grade reta.
-- **Grade**: **3 × 3** (o padrão), **4 × 4** ou **5 × 5**. Fica disponível até você mudar a forma.
+- **Grade** abre **3 × 3** (o padrão), **4 × 4** e **5 × 5** e os comandos de divisão de grade. O tamanho da grade fica disponível até você alterar a forma.
+- Escolha **Dividir verticalmente**, **Dividir horizontalmente** ou **Dividir em cruz** e selecione um ponto na malha para adicionar uma linha de grade sem alterar a forma. **Escape** cancela a divisão. Uma grade contém até 32 células em cada direção.
+- **Selecionar pontos** seleciona pontos para se moverem juntos.
+- **Redefinir grade** restaura uma malha reta.
 
-![A barra de ações da tela no modo Deformar, com o menu Dividir verticalmente, Selecionar pontos, Redefinir grade e o menu 3 × 3.](shot:transform/warp-bar)
+![A barra de transformação no modo Deformar com Grade e Selecionar pontos.](shot:transform/warp-bar)
 
 ### Botões de inverter e girar
 
-Os botões de ícone **Inverter horizontalmente**, **Inverter verticalmente**,
-**Girar 90° à esquerda** e **Girar 90° à direita** espelham ou giram o conteúdo
-em torno do pivô.
+**Inverter horizontalmente** está na barra. **Mais** contém **Inverter verticalmente**, **Girar 90° à esquerda** e **Girar 90° à direita**. Eles espelham ou transformam o conteúdo em torno do pivô.
 
-### Redefinir
+### Redefinir transformação
 
-Desfaz todas as mudanças feitas nesta transformação e a mantém aberta. **Modo**
-volta para **Livre**.
+Escolha **Redefinir transformação** em **Mais** para desfazer todas as alterações na transformação atual. A transformação permanece aberta e retorna para **Redimensionar**.
 
 ### Interpolação
 
-Define como os pixels são reamostrados: **Vizinho mais próximo**,
-**Bilinear**, **Bicúbica** ou **Lanczos**. **Bilinear** é o padrão em
-**Livre** e **Uniforme**, e **Bicúbica** em **Distorcer** e **Deformar**.
+Escolha **Interpolation** em **Mais** para definir como os pixels são reamostrados: **Vizinho mais próximo**, **Bilinear**, **Bicúbica** ou **Lanczos**. **Bilinear** é o padrão durante o dimensionamento e **Bicúbica** em **Distorcer** e **Deformar**.
 
 ## Valores da transformação no painel Ferramenta
 
@@ -150,7 +142,7 @@ O painel Ferramenta, e a barra Opções da ferramenta em Foto, mostram os valore
 de uma transformação aberta, exceto em **Deformar**.
 
 - **Âncora de posição**: **X** e **Y**, em pixels, com a grade de âncora acima deles, que escolhe a qual ponto da caixa os valores se referem.
-- **Escala**: **Largura** e **Altura**, em porcentagem. **Uniforme** mantém os dois vinculados.
+- **Redimensionar**: **Largura** e **Altura**, em porcentagem. **Manter proporções** mantém os dois vinculados.
 - **Rotação**: **Ângulo**, de −180° a 180°.
 - **Inclinação**: **Inclinação**, de −85° a 85°.
 
@@ -173,7 +165,7 @@ Faça uma das seguintes ações:
 - Escolha **Camada > Configurações da camada > Aplicar transformação**.
 
 Durante o processo, uma barra na parte inferior da tela mostra "Aplicando
-transformação…" com **Cancelar**.
+transformação…" com **Cancelar transformação**.
 
 ## Transformar novamente
 
@@ -184,6 +176,7 @@ transformações de pixels selecionados não se repetem.
 ## Imagens posicionadas
 
 Quando você cola uma imagem de outro aplicativo ou escolhe
-**Arquivo > Importar imagem como camada…**, a imagem se abre na caixa de
-transformação. **Aplicar** posiciona a imagem e **Cancelar** remove a imagem.
+**Arquivo > Import Image as
+Layer…**, a imagem se abre na caixa de
+transformação. **Aplicar transformação** posiciona a imagem e **Cancelar transformação** remove a imagem.
 Até você escolher um dos dois, os outros comandos ficam indisponíveis.

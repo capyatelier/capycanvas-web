@@ -87,10 +87,6 @@ O próximo clique define a origem.
 
 ## Barra de ações da tela do disco de origem
 
-Clique no disco de origem sem arrastar para mostrar a
-[barra de ações da tela](/pt-BR/docs/selections/working/) ao lado dele, com
-**Alinhado**, **Origem**, os dois botões de inverter, **Redefinir deslocamento**
-e **Definir origem**. Clique no disco de novo, ou escolha outra ferramenta, para
-ocultar a barra.
+Clique no disco de origem sem arrastar para mostrar a [barra de tela](/pt-BR/docs/selections/working/) ao lado dele, com **Alinhado**, **Origem**, **Inverter origem horizontalmente** e **Definir origem**. **Mais** contém **Inverter origem verticalmente** e **Redefinir deslocamento da origem**. Clique no disco novamente ou escolha outra ferramenta para ocultar a barra.
 
 ![O disco de origem com a barra de ações da tela.](shot:retouch/clone-source-bar)

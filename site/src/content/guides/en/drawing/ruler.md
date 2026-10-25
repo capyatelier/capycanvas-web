@@ -68,7 +68,7 @@ Do one of the following:
 
 - Choose **View > Show rulers** or **View > Snap to rulers**.
 - With the Ruler tool active, or a guide selected with Operation, select **Show rulers** or **Snap to rulers** in the **Tool** panel.
-- Select **Guides** or **Snap** in the guide bar.
+- Choose **More > Show rulers** or select **Snap to guides** in the guide bar.
 
 Both are on by default. **Snap to rulers** is unavailable while guides are
 hidden.
@@ -79,7 +79,7 @@ Select the guide, then do one of the following:
 
 - Press **Delete** or **Backspace**.
 - Select **Delete ruler** in the **Tool** panel.
-- Select **Delete** in the guide bar.
+- Select **Delete guide** in the guide bar.
 
 **Delete** and **Backspace** delete a guide only while Ruler, Figure,
 Operation, Transform or Crop is the active tool. With other tools, these keys
@@ -92,15 +92,15 @@ its handles.
 
 | Button | Action |
 | --- | --- |
-| **Delete** | Deletes the guide. |
-| **Snap** | Turns **Snap to rulers** on or off. |
-| **Guides** | Shows or hides all guides. Hiding them also hides the bar. |
+| **Delete guide** | Deletes the guide. |
+| **Snap to guides** | Turns **Snap to rulers** on or off. |
+| **More > Show rulers** | Shows or hides all guides. Hiding them also hides the bar. |
 | **Straighten** | Starts **Straighten Image to Guide**. Only for a Straight guide. |
 | **More** | Opens a menu with **Show canvas action bar**. |
 
 Turning off **View > Show canvas action bar** removes the guide bar.
 
-![The guide bar below a selected Straight guide, with Delete, Snap, Guides, Straighten and More.](shot:drawing/ruler-guide-bar)
+![The guide bar below a selected Straight guide, with Delete guide, Snap to guides, Straighten, and More.](shot:drawing/ruler-guide-bar)
 
 ## Moving guides with Operation
 

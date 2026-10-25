@@ -51,9 +51,7 @@ Elige **Imagen > Gestión del color > Asignar perfil…** para conservar los val
 Elige **Imagen > Gestión del color > Convertir espacio de color…** para cambiar los valores RGB de modo
 que los colores conserven su aspecto en otro espacio de trabajo, dentro de su gama.
 
-Con **Guardar copia acoplada**, **Aplicar** pasa a ser **Guardar copia…**. La copia
-tiene una sola capa, con el mismo tamaño y la misma profundidad de bits. Su nombre
-de archivo debe terminar en `.capy` y no puede ser el archivo del dibujo abierto.
+Con **Guardar copia acoplada**, **Aplicar** pasa a ser **Crear copia**. La copia se abre como un dibujo nuevo con una capa, con el mismo tamaño y profundidad de bits. Elige **Archivo > Guardar** para guardarla como archivo `.capy`.
 
 ![El diálogo Convertir espacio de color con la comparación Antes y Después y el mensaje sobre la gama.](shot:color-management/convert-dialog)
 
@@ -63,9 +61,7 @@ El espacio de trabajo al que se convierte. Al principio está seleccionado el es
 
 ### Resultado
 
-**Capas editables** (predeterminado) convierte cada capa en su sitio. **Guardar
-copia acoplada** guarda una copia convertida y acoplada como archivo `.capy` nuevo y
-deja sin cambios el dibujo abierto.
+**Capas editables** (predeterminado) convierte cada capa en el dibujo actual. **Guardar copia acoplada** abre una copia convertida y acoplada como un dibujo nuevo y conserva el original sin cambios.
 
 ### Propósito de conversión
 
@@ -95,15 +91,11 @@ cuando el destino es SDR de 8 bits.
 
 Para aplicar Asignar perfil, Convertir espacio de color o Cambiar profundidad de bits:
 
-1. Define los campos del diálogo.
-2. Selecciona **Previsualizar resultado completo**.
-3. Compara **Antes** y **Después**.
-4. Selecciona **Aplicar** (o **Guardar copia…**).
+1. Configura los campos del cuadro de diálogo.
+2. Compara **Antes** y **Después** cuando aparezca la vista previa.
+3. Selecciona **Aplicar** (o **Crear copia**).
 
-**Aplicar** no está disponible hasta que la vista previa está lista, y cambiar un
-campo descarta la vista previa. Si algún color se recorta, la línea de estado
-indica «Algunos colores superan la gama de destino. Compara el resultado antes de
-aplicar.»
+**Aplicar** permanece desactivado hasta que la vista previa está lista. Al cambiar un campo, se actualiza la comparación. La línea de estado indica si hay colores recortados.
 
 Aplicar es un paso de deshacer. Deshacer y Rehacer abren **Deshacer cambio de
 color** y **Rehacer cambio de color**. Estos diálogos aplican el cambio sin pedir

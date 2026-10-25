@@ -23,6 +23,8 @@ Mientras el lápiz está sobre el lienzo, los dedos no mueven el lienzo. Un dedo
 un tirador de transformación o de recorte, o sobre el origen del **Tampón de
 clonar**, arrastra el tirador o el origen.
 
+**Ajustar rotación** está activado de forma predeterminada y mantiene la vista cerca de los cuartos de vuelta. Desactiva **Ver > Ajustar rotación** para girar libremente.
+
 ## Tomar un color
 
 Mantén un dedo quieto sobre el lienzo para tomar el color que hay debajo. Aparece un

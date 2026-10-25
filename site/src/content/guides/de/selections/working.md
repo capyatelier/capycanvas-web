@@ -29,9 +29,9 @@ Die Leiste steht neben dem Objekt oder am unteren Rand der Leinwand. Von links
 nach rechts enthält sie:
 
 - Eine Beschriftung, etwa „Schnellmaske“ oder „Umriss transformieren“.
-- Die Schaltflächen. Eine abgeblendete Schaltfläche ist nicht verfügbar; wählen Sie sie aus, um den Grund zu sehen.
+- Die Schaltflächen. Bewegen Sie den Mauszeiger über ein Symbol, um seinen Namen zu lesen. Eine abgeblendete Schaltfläche ist nicht verfügbar. Wählen Sie es aus, um den Grund zu sehen.
 - **Mehr** mit den Schaltflächen, die keinen Platz haben, danach das Menü **Auswahl** für eine Auswahl oder das Menü **Ebene** für eine Maske.
-- Die Schaltfläche zum Abschließen, etwa **Anwenden** oder **Verlassen**.
+- Die Schaltfläche zum Abschließen, etwa **Transformation anwenden** oder **Verlassen**.
 
 Eine Leiste neben einem Objekt wird ausgeblendet, während Sie die Leinwand
 berühren oder die Ansicht bewegen.
@@ -56,21 +56,15 @@ Leiste nie.
 
 ![Die Auswahlleiste unter einer rechteckigen Auswahl.](shot:selections/working-selection-bar)
 
-- **Auswahl aufheben** und **Umkehren**: siehe Menü Auswahl unten.
-- **Kopie belassen**: nur mit **Vorgang**, siehe [Verschieben und Transformieren](/de/docs/transform/move-transform/).
-- **Auf Ebene kopieren**: **Auswahl auf neue Ebene kopieren** oder **Auswahl auf neue Ebene ausschneiden**.
-- **Kopieren**: **Kopieren**, **Sichtbares kopieren** oder **Ausschneiden**, siehe [Kopieren und Einfügen](/de/docs/transform/clipboard/).
-- **Transformieren**: transformiert die ausgewählten Pixel.
-- **Verfeinern**: die Befehle zum Verfeinern und **Umriss transformieren**.
-- **Maske**: maskiert die aktive Ebene auf die Auswahl.
-- **Anpassen**: fügt einen Filter hinzu, der die Auswahl als Maske verwendet, siehe [Wie Filter wirken](/de/docs/filters/how-filters-apply/).
-- **Füllen**: **Auswahl füllen**.
-- **Leeren**: **Ausgewählte Pixel löschen** oder **Außerhalb der Auswahl löschen**.
-- **Zuschneiden**: **Leinwand auf Auswahl zuschneiden**, siehe [Zuschneiden](/de/docs/transform/crop/).
-- **Schnellmaske**: siehe [Schnellmaske](/de/docs/selections/quick-mask/).
-- **Speichern**: **Als Auswahlebene speichern**, siehe [Auswahlebenen](/de/docs/selections/selection-layers/).
+- **Transformieren** ändert die ausgewählten Pixel.
+- **Kopieren** öffnet die Zwischenablage und die Befehle zum Kopieren in die Ebene.
+- **Auswahl füllen** füllt die ausgewählten Pixel; **Ausgewählte Pixel löschen** löscht sie.
+- **Anpassen** fügt einen Filter hinzu, dessen Maske die Auswahl ist.
+- **Maske** öffnet die Maskenbefehle und Befehle zur gespeicherten Auswahl.
+- **Auswahl umkehren** und **Verfeinern** ändern die Auswahlkontur.
+- **Pixelauswahl aufheben** löscht die Auswahl.
 
-Auf einer schmalen Leiste wandern die letzten Schaltflächen, etwa **Schnellmaske** und **Speichern**, in **Mehr**.
+**Mehr** enthält **Außerhalb der Auswahl löschen** und **Leinwand auf Auswahl zuschneiden**. Bei aktivem **Vorgang** steht dort auch **Kopie belassen**. Schaltflächen, die nicht auf die Leiste passen, erscheinen ebenfalls unter **Mehr**. Am Ende steht das Menü **Auswahl**.
 
 ## Menü Auswahl
 
@@ -149,7 +143,7 @@ Führen Sie eine der folgenden Aktionen aus:
 
 - Wählen Sie **Bearbeiten > Auswahl füllen**, **Ausgewählte Pixel löschen** oder **Außerhalb der Auswahl löschen**.
 - Drücken Sie **Umschalt+Rücktaste** zum Füllen oder **Löschen** bzw. **Rücktaste**, um die ausgewählten Pixel zu löschen.
-- Wählen Sie in der Auswahlleiste **Füllen** oder **Leeren** und einen Befehl aus.
+- Wählen Sie in der Auswahlleiste **Auswahl füllen** oder **Ausgewählte Pixel löschen** aus, oder wählen Sie **Mehr > Außerhalb der Auswahl löschen**.
 - Wählen Sie im Arbeitsbereich Malen in der Werkzeugleiste Befehle **Auswahl füllen** aus.
 - Öffnen Sie das Menü der Ebene und wählen Sie **Pixelauswahl > Auswahl füllen**.
 
@@ -167,7 +161,7 @@ Führen Sie eine der folgenden Aktionen aus:
 
 - Wählen Sie **Ebene > Neu > Auswahl auf neue Ebene kopieren** oder **Ebene > Neu > Auswahl auf neue Ebene ausschneiden**.
 - Drücken Sie **Strg+J** zum Kopieren oder **Strg+Umschalt+J** zum Ausschneiden.
-- Wählen Sie in der Auswahlleiste **Auf Ebene kopieren** aus und wählen Sie einen Befehl.
+- Wählen Sie in der Auswahlleiste **Kopieren** aus und wählen Sie einen Befehl.
 
 Die neue Ebene wird nach dem Original benannt, zum Beispiel *Ribbon Kopie*, und
 behält dessen Deckkraft, Sichtbarkeit und Verrechnungsmodus. Die Auswahl ist
@@ -183,7 +177,7 @@ Sie können der aktiven Ebene eine Maske hinzufügen, die nur die Auswahl zeigt.
 Führen Sie eine der folgenden Aktionen aus:
 
 - Öffnen Sie das Menü der Ebene und wählen Sie **Maske > Maske: Auswahl zeigen** oder **Maske > Maske: Auswahl verbergen**, um den ausgewählten Bereich zu verbergen.
-- Wählen Sie in der Auswahlleiste **Maske** aus.
+- Wählen Sie **Maske** in der Auswahlleiste und wählen Sie einen Maskenbefehl.
 
 Hat die Ebene bereits eine Maske, ersetzt die Auswahl die vorhandene Maske. Die
 Auswahl wird entfernt, und die Maske öffnet sich zum Bearbeiten (siehe

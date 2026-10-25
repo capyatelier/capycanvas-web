@@ -36,8 +36,8 @@ Düzenlenmiş fotoğrafta yukarıdan aşağıya şu katmanlar bulunur:
 | **Canlılık** | Tüm fotoğrafın canlılığını artırır |
 | **Eğriler** | Tüm fotoğraf için S eğrisi |
 | *Retouch* | İyileştirme çizgileri |
-| Nesne katmanı | Dosya adını taşıyan fotoğraf |
+| Boya katmanı | Dosya adını taşıyan fotoğraf |
 
-Nesne katmanına hiçbir şey boyanmaz.
+Boya katmanına hiçbir şey boyanmaz.
 
 İlk aşama: [Açma ve kırpma](/tr/docs/photo/crop/).

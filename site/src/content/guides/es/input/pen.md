@@ -12,6 +12,10 @@ Los ajustes del lápiz están en la página **Lápiz y entrada** de **Editar > P
 
 Selecciona **Ajustar…** junto a **Presión del lápiz** para dar forma a la curva de presión y probarla en el lienzo actual. La curva se aplica a todos los pinceles y herramientas sensibles a la presión; los trazos ya dibujados no cambian. Consulta [Presión del lápiz](/es/docs/input/pen-pressure/).
 
+## Inclinación del lápiz
+
+Selecciona **Ajustar…** junto a **Inclinación del lápiz** para cambiar la curva y la dirección de inclinación del lápiz. Consulta [Inclinación del lápiz](/es/docs/input/pen-tilt/).
+
 ## Predicción de trazos
 
 La predicción de trazos dibuja un tramo corto del trazo por delante de la punta del

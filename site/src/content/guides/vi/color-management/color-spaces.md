@@ -53,9 +53,7 @@ Chọn **Ảnh > Quản lý màu > Chuyển không gian màu…** để thay đ�
 nguyên vẻ ngoài trong một không gian làm việc khác, trong phạm vi dải màu của không
 gian đó.
 
-Với **Lưu bản sao gộp phẳng**, **Áp dụng** trở thành **Lưu bản sao…**. Bản sao có một
-lớp, cùng kích thước và độ sâu bit. Tên tệp phải kết thúc bằng `.capy` và không được
-trùng với tệp của bản vẽ đang mở.
+Với **Lưu bản sao gộp phẳng**, **Áp dụng** trở thành **Tạo bản sao**. Bản sao mở ra dưới dạng bản vẽ mới với một lớp, có cùng kích thước và độ sâu bit. Chọn **Tệp > Lưu** để lưu dưới dạng tệp `.capy`.
 
 ![Hộp thoại Chuyển không gian màu với phần so sánh Trước và Sau và thông báo về dải màu.](shot:color-management/convert-dialog)
 
@@ -65,9 +63,7 @@ Không gian làm việc cần chuyển sang. Ban đầu, không gian hiện tạ
 
 ### Kết quả
 
-**Lớp có thể chỉnh sửa** (mặc định) chuyển đổi trực tiếp mọi lớp. **Lưu bản sao gộp
-phẳng** lưu một bản sao đã chuyển đổi và gộp phẳng thành tệp `.capy` mới và giữ nguyên
-bản vẽ đang mở.
+**Lớp có thể chỉnh sửa** (mặc định) chuyển đổi mọi lớp tại chỗ. **Lưu bản sao gộp phẳng** mở một bản sao được làm phẳng, đã được chuyển đổi dưới dạng bản vẽ mới và giữ nguyên bản gốc.
 
 ### Mục đích kết xuất màu
 
@@ -96,14 +92,11 @@ khi bạn đổi [Hòa trộn](#hòa-trộn). Giảm độ sâu có thể cắt 
 
 Để áp dụng Gán hồ sơ màu, Chuyển không gian màu hoặc Đổi độ sâu bit:
 
-1. Đặt các ô trong hộp thoại.
-2. Chọn **Xem trước toàn bộ kết quả**.
-3. So sánh **Trước** và **Sau**.
-4. Chọn **Áp dụng** (hoặc **Lưu bản sao…**).
+1. Đặt các trường trong hộp thoại.
+2. So sánh **Trước** và **Sau** khi bản xem trước xuất hiện.
+3. Chọn **Áp dụng** (hoặc **Tạo bản sao**).
 
-**Áp dụng** không dùng được cho đến khi bản xem trước sẵn sàng, và đổi một ô sẽ hủy
-bản xem trước. Nếu có màu bị cắt ngưỡng, dòng trạng thái ghi “Một số màu vượt dải màu
-đích. So sánh kết quả trước khi áp dụng.”
+**Áp dụng** không khả dụng cho đến khi bản xem trước sẵn sàng. Thay đổi một trường sẽ cập nhật phần so sánh. Dòng trạng thái thông báo các màu bị cắt.
 
 Áp dụng là một bước hoàn tác. Hoàn tác và Làm lại mở **Hoàn tác đổi màu** và
 **Làm lại đổi màu**. Các hộp thoại này áp dụng thay đổi mà không cần nhập thêm và chỉ

@@ -36,8 +36,8 @@ The edited photo has these layers, from top to bottom:
 | **Vibrance** | Raises the vibrance of the whole photo |
 | **Curves** | An S curve for the whole photo |
 | *Retouch* | Healing strokes |
-| The Object layer | The photo, named after its file |
+| The Paint layer | The photo, named after its file |
 
-Nothing is painted on the Object layer.
+Nothing is painted on the Paint layer.
 
 First stage: [Opening and cropping](/docs/photo/crop/).

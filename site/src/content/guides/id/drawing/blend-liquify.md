@@ -28,6 +28,24 @@ Pilih set dan pembaur di **Set Alat**. **Coreng** adalah pembaur bawaan.
 Pengaturan setiap pembaur ada di
 [Pencampuran, rembesan, dan bulu kuas](/id/docs/brushes/wet-media/).
 
+### Pembaur Bulu Kuas
+
+**Pembaur Bulu Kuas** membuat cat menjadi bergaris-garis. Ujung kiri sampel ini tidak tercampur.
+
+![Pembaur Bulu Kuas menggoreskan cat yang diarsir di sebelah kanan.](shot:examples/bristle-blender)
+
+### Pembaur Dither
+
+**Pembaur Dither** mencampurkan pita menjadi pola gentar.
+
+![Pembaur Dither memadukan pita yang diarsir di sebelah kanan.](shot:examples/dither-blender)
+
+### Marmer
+
+**Marmer** menggulung cat menjadi pusaran.
+
+![Marmer menggulung pita yang diarsir di sebelah kanan.](shot:examples/marbling)
+
 ## Cairkan
 
 Lakukan salah satu langkah berikut:
@@ -54,6 +72,18 @@ Cairkan tidak memiliki tombol Terapkan. Setiap goresan mengubah lapisan dan menj
 langkah urungkan tersendiri. Goresan terus mendeformasi piksel yang dimiliki lapisan
 sebelum goresan pertama, sampai Anda melukis, mengisi, memfilter, mentransformasi,
 atau menempelkan sesuatu ke lapisan itu.
+
+### Tepi
+
+**Tepi** menarik cat ke arah garis guratan. Pita di sebelah kiri menunjukkan cat aslinya.
+
+![Tepi menarik pita berwarna ke arah goresan horizontal di sebelah kanan.](shot:examples/liquify-edge)
+
+### Pulihkan
+
+**Pulihkan** mengembalikan cat asli di bawah kuas. Di sini ia memulihkan bagian kanan dari pita yang terdistorsi.
+
+![Pita terdistorsi di sebelah kiri dan cat dipulihkan dengan Pulihkan di sebelah kanan.](shot:examples/liquify-reconstruct)
 
 ## Sesuaikan Liquify dan Atur ulang Liquify
 

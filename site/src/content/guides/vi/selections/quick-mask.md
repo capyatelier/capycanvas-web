@@ -52,10 +52,10 @@ Các lệnh thay đổi bản vẽ, như **Xóa pixel đã chọn** và **Biến
 [Thanh khung vẽ](/vi/docs/selections/working/) ở cuối khung vẽ có nhãn “Mặt nạ
 nhanh”:
 
-- **Đảo ngược**: **Đảo vùng chọn**.
-- **Tô đầy** và **Xóa**: **Tô đầy mặt nạ** tô đầy toàn bộ mặt nạ, còn **Xóa độ phủ vùng chọn** làm trống mặt nạ.
+- **Đảo vùng chọn** hoán đổi vùng được chọn và không được chọn.
+- **Tô đầy mặt nạ** lấp đầy toàn bộ mặt nạ và **Xóa độ phủ vùng chọn** làm trống mặt nạ.
 - **Tinh chỉnh**: **Mở rộng…**, **Thu hẹp…**, **Làm mềm biên…**, **Viền…** và **Làm mịn…**. **Biến đổi viền** không dùng được ở đây.
-- **Lưu**: **Lưu thành lớp vùng chọn** (xem [Lớp vùng chọn](/vi/docs/selections/selection-layers/)).
+- **Lưu thành lớp vùng chọn**: xem [Lớp lựa chọn](/vi/docs/selections/selection-layers/).
 - **Thoát**: **Trở về bản vẽ**.
 
 Khi thanh khung vẽ bị ẩn, thanh Mặt nạ nhanh không xuất hiện.

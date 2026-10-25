@@ -11,9 +11,9 @@ related: ["files/open-save", "transform/crop", "start/workspaces"]
 **파일 > 열기…** 명령을 선택하거나 **Ctrl+O** 키를 누르고 사진을 선택합니다([열기와 저장](/ko/docs/files/open-save/)).
 사진은 별도의 그림 탭에 열립니다.
 
-![terrarium 오브젝트 레이어가 있는 레이어 패널.](shot:photo/open-layers)
+![terrarium 페인트 레이어가 있는 레이어 패널.](shot:photo/open-layers)
 
-그림에는 파일 이름이 붙은 오브젝트 레이어가 하나 있습니다. 예제의 레이어 이름은 "terrarium"입니다.
+그림에는 파일 이름을 딴 페인트 레이어가 하나 있습니다. 예제의 레이어 이름은 “terrarium”입니다.
 
 ## 2. 비율 고르기
 
@@ -40,8 +40,8 @@ related: ["files/open-save", "transform/crop", "start/workspaces"]
 
 ## 4. 자르기 적용하기
 
-자르기 표시줄에서 **적용**을 선택하거나 **Enter** 키를 누릅니다. 캔버스가 프레임 크기로
-바뀝니다. 예제에서는 2000 × 1600 픽셀입니다. 자르기 표시줄에서 **잘린 그림 픽셀 삭제**를
+자르기 표시줄에서 **자르기 적용**을 선택하거나 **Enter** 키를 누릅니다. 캔버스가 프레임 크기로
+바뀝니다. 예제에서는 2000 × 1600 픽셀입니다. 자르기 표시줄에서 **더 보기 > 잘린 그림 픽셀 삭제**를
 켜지 않았다면 잘린 픽셀은 숨겨진 채로 레이어에 남습니다.
 
 다음 단계: [보정](/ko/docs/photo/retouch/).

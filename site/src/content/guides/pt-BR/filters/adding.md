@@ -20,9 +20,7 @@ Faça uma das seguintes ações:
 
 ![O painel Filtros com o menu de categorias, o botão de busca e linhas de filtros com prévias.](shot:filters/filters-panel)
 
-Enquanto uma camada está selecionada, cada linha mostra uma prévia do filtro
-nessa camada e nas camadas abaixo dela. Os filtros animados têm uma marca antes
-do ícone.
+Cada linha mostra o filtro em uma imagem de amostra fixa. Os filtros animados têm uma marca antes do ícone.
 
 O menu no topo mostra uma categoria ou **Todos os filtros**. **Buscar filtros**
 encontra um filtro pelo nome dentro da categoria escolhida.

@@ -23,6 +23,8 @@ Solange der Stift auf der Leinwand ist, bewegen Finger die Leinwand nicht. Ein F
 auf einem Griff zum Transformieren oder Zuschneiden oder auf der Quelle des
 Werkzeugs **Klonstempel** zieht stattdessen den Griff oder die Quelle.
 
+**Drehung einrasten** ist standardmäßig aktiviert und hält die Ansicht in der Nähe von Vierteldrehungen. Schalten Sie es in **Ansicht > Drehung einrasten** aus, um eine freie Drehung zu ermöglichen.
+
 ## Eine Farbe aufnehmen
 
 Halten Sie einen Finger still auf der Leinwand, um die Farbe darunter aufzunehmen.

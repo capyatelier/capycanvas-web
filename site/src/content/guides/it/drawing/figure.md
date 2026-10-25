@@ -95,10 +95,10 @@ Puoi disegnare un tracciato punto di ancoraggio dopo punto di ancoraggio.
 - Fai clic per aggiungere un punto di ancoraggio ad angolo. Premi e trascina per tirare fuori le maniglie di un punto di ancoraggio curvo, oppure tieni premuto **Alt** per trascinare solo la maniglia in uscita.
 - Tieni premuto **Maiusc** per posizionare il punto successivo a passi di 45° dall'ultimo.
 - Fai clic sul primo punto di ancoraggio per chiudere il tracciato.
-- Seleziona **Termina** nella barra della tela o premi **Invio** per aggiungere il tracciato. **Annulla** o **Esc** lo scarta.
-- **Rimuovi punto** o **Backspace** rimuove l'ultimo punto di ancoraggio, e lo fa anche **Annulla**.
+- Seleziona **Termina tracciato** nella barra della tela o premi **Invio** per aggiungere il tracciato. **Annulla tracciato** o **Escape** lo scarta.
+- **Rimuovi ultimo punto** o **Backspace** rimuove l'ultimo punto di ancoraggio, e lo fa anche **Annulla**.
 
-![La barra della tela mentre si disegna un tracciato, con Rimuovi punto, Annulla e Termina.](shot:vector/path-bar)
+![La barra della tela mentre viene disegnato un percorso, con Rimuovi ultimo punto, Annulla tracciato e Termina tracciato.](shot:vector/path-bar)
 
 Il tracciato usa la modalità, lo **Spessore linea** e i colori correnti, con angoli vivi ed estremità piatte. Su un livello vettoriale viene selezionato quando termini, e un tracciato che inizia all'estremità aperta di un tracciato selezionato lo continua.
 

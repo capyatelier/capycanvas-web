@@ -38,7 +38,7 @@ abu-abu. Contoh ini hanya mengangkat bayangan di batu.
 1. Tekan **M**, atau pilih **Seleksi laso** di bilah alat Alat, lalu gambar di sekeliling batu.
 2. Pilih **Seleksi > Perhalus Tepi Seleksi…**, atau pilih **Perbaiki** di bilah seleksi lalu pilih **Perhalus Tepi…** ([Bekerja dengan seleksi](/id/docs/selections/working/)).
 3. Setel **Radius perhalusan tepi** ke 20 px, lalu pilih **Terapkan**.
-4. Pilih **Mask** di bilah seleksi.
+4. Pilih **Mask > Mask: tampilkan seleksi** pada bilah pilihan.
 
 ![Bilah seleksi dengan Mask di samping seleksi di sekeliling batu.](shot:photo/adjust-bar)
 

@@ -89,10 +89,10 @@ Você pode desenhar um caminho âncora por âncora.
 - Clique para adicionar uma âncora de canto. Pressione e arraste para puxar as alças de uma âncora suave, ou mantenha **Alt** pressionada para arrastar só a alça de saída.
 - Mantenha **Shift** pressionada para colocar a próxima âncora em passos de 45° a partir da última.
 - Clique na primeira âncora para fechar o caminho.
-- Selecione **Concluir** na barra da tela ou pressione **Enter** para adicionar o caminho. **Cancelar** ou **Escape** o descarta.
-- **Remover ponto** ou **Backspace** remove a última âncora, e **Desfazer** também.
+- Selecione **Concluir caminho** na barra da tela ou pressione **Enter** para adicionar o caminho. **Cancelar caminho** ou **Escape** o descarta.
+- **Remover último ponto** ou **Backspace** remove a última âncora, e **Desfazer** também.
 
-![A barra da tela enquanto um caminho é desenhado, com Remover ponto, Cancelar e Concluir.](shot:vector/path-bar)
+![A barra de tela enquanto um caminho é desenhado, com Remover último ponto, Cancelar caminho e Concluir caminho.](shot:vector/path-bar)
 
 O caminho usa o modo, a **Largura da linha** e as cores atuais, com cantos agudos e pontas retas. Em uma camada vetorial, ele fica selecionado quando você conclui, e um caminho que começa na ponta aberta de um caminho selecionado o continua.
 

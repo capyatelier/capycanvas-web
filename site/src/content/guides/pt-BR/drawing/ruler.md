@@ -68,7 +68,7 @@ Faça uma das seguintes ações:
 
 - Escolha **Exibir > Mostrar réguas** ou **Exibir > Encaixar nas réguas**.
 - Com a ferramenta Régua ativa, ou com uma guia selecionada com Operação, selecione **Mostrar réguas** ou **Encaixar nas réguas** no painel **Ferramenta**.
-- Selecione **Guias** ou **Encaixar** na barra da guia.
+- Escolha **Mais > Show rulers** ou selecione **Encaixar nas guias** na barra guia.
 
 As duas opções vêm ativadas por padrão. **Encaixar nas réguas** fica indisponível
 enquanto as guias estão ocultas.
@@ -79,7 +79,7 @@ Selecione a guia e faça uma das seguintes ações:
 
 - Pressione **Excluir** ou **Backspace**.
 - Selecione **Excluir régua** no painel **Ferramenta**.
-- Selecione **Excluir** na barra da guia.
+- Selecione **Excluir guia** na barra da guia.
 
 **Excluir** e **Backspace** só excluem uma guia quando a ferramenta ativa é Régua,
 Forma, Operação, Transformar ou Recortar. Com outras ferramentas, essas teclas
@@ -92,15 +92,15 @@ aparece abaixo das alças.
 
 | Botão | Ação |
 | --- | --- |
-| **Excluir** | Exclui a guia. |
-| **Encaixar** | Ativa ou desativa **Encaixar nas réguas**. |
-| **Guias** | Mostra ou oculta todas as guias. Ocultá-las também oculta a barra. |
+| **Excluir guia** | Exclui a guia. |
+| **Encaixar nas guias** | Ativa ou desativa **Snap to rulers**. |
+| **Mais > Show rulers** | Mostra ou oculta todas as guias. Ocultá-las também oculta a barra. |
 | **Endireitar** | Inicia **Endireitar imagem pela guia**. Só para uma guia Reta. |
 | **Mais** | Abre um menu com **Mostrar barra de ações da tela**. |
 
 Desativar **Exibir > Mostrar barra de ações da tela** remove a barra da guia.
 
-![A barra da guia abaixo de uma guia Reta selecionada, com Excluir, Encaixar, Guias, Endireitar e Mais.](shot:drawing/ruler-guide-bar)
+![A barra guia abaixo de um guia Reta selecionado, com Excluir guia, Encaixar nas guias, Endireitar e Mais.](shot:drawing/ruler-guide-bar)
 
 ## Mover guias com Operação
 

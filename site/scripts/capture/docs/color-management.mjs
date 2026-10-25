@@ -6,7 +6,8 @@ const proof = '.dock-group:has(.proof-panel)';
 export default async function colorManagement({ e, b, shoot }) {
   const steady = selector => settleLayout(b, selector, 8);
   const press = async label => {
-    await b.evaluate(`[...document.querySelectorAll('${dialog} button')].find(b=>b.textContent===${JSON.stringify(label)}).click();void 0`);
+    await e.wait(`[...document.querySelectorAll('${dialog} button')].some(b=>b.textContent.trim()===${JSON.stringify(label)})`);
+    await b.evaluate(`[...document.querySelectorAll('${dialog} button')].find(b=>b.textContent.trim()===${JSON.stringify(label)}).click();void 0`);
     await b.settle();
   };
   const closed = () => e.wait(`!document.querySelector('${dialog}')`);
@@ -67,8 +68,7 @@ export default async function colorManagement({ e, b, shoot }) {
       await e.invoke('convert_color_space');
       await e.wait(`!!document.querySelector('${dialog} select[aria-label="Color space"]')`);
       await choose(`${dialog} select[aria-label="Color space"]`, 'Srgb');
-      await press('Preview Complete Result');
-      await e.wait(`document.querySelectorAll('${dialog} .color-comparison canvas').length===2 && document.querySelector('${dialog}').innerText.includes('Some colors exceed the destination gamut.')`);
+      await e.wait(`document.querySelectorAll('${dialog} .color-comparison canvas').length===2 && document.querySelector('${dialog}').innerText.includes('Some colors exceed the destination gamut')`);
     },
     teardown: async () => { await press('Cancel'); await closed(); },
   });

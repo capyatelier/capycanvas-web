@@ -38,10 +38,10 @@ nét khô, không trộn màu, không loang và không có kết cấu.
 Khi bạn vẽ lên mặt nạ, một thanh ghi “Đang sửa mặt nạ *lớp*” xuất hiện ở cuối khung
 vẽ.
 
-![Thanh sửa mặt nạ với Đảo ngược, Tắt, Áp dụng mặt nạ, Thêm và Sửa nội dung.](shot:layers/masks-bar)
+![Thanh chỉnh sửa mặt nạ với Đảo mặt nạ lớp, Bật mặt nạ lớp, Áp dụng mặt nạ, Thêm và Sửa nội dung.](shot:layers/masks-bar)
 
-- **Đảo ngược**
-- **Tắt** tắt mặt nạ, và nút đổi thành **Bật**.
+- **Đảo mặt nạ lớp** hoán đổi vùng hiển thị và vùng ẩn.
+- **Bật mặt nạ lớp** bật hoặc tắt mặt nạ.
 - **Áp dụng mặt nạ** xóa các pixel bị mặt nạ ẩn, rồi bỏ mặt nạ.
 - **Thêm** chứa trình đơn **Lớp** và **Hiện thanh thao tác khung vẽ**. Tắt **Hiện thanh thao tác khung vẽ** để ẩn thanh này.
 - **Sửa nội dung** quay lại vẽ lên lớp.
@@ -53,7 +53,7 @@ Bạn có thể tạo mặt nạ từ vùng chọn hiện tại.
 Thực hiện một trong các cách sau:
 
 - Chọn **Lớp > Mặt nạ > Mặt nạ: hiện vùng chọn** hoặc **Mặt nạ: ẩn vùng chọn**. Trên lớp đã có mặt nạ, các mục này ghi **Thay mặt nạ: hiện vùng chọn** và **Thay mặt nạ: ẩn vùng chọn**.
-- Chọn **Mặt nạ** trên [thanh vùng chọn](/vi/docs/selections/working/) trên khung vẽ. Mặt nạ mới hiện vùng đã chọn và thay mọi mặt nạ lớp đang có.
+- Chọn lệnh mặt nạ từ **Mặt nạ** trong [thanh lựa chọn](/vi/docs/selections/working/) trên khung vẽ. Mặt nạ mới hiển thị vùng đã chọn và thay thế bất kỳ mặt nạ nào mà lớp có.
 
 Bộ lọc hoặc lớp tô màu được thêm khi đang có vùng chọn sẽ nhận mặt nạ từ vùng chọn.
 **Dán vào** tạo một lớp mới có mặt nạ theo vùng chọn (xem

@@ -20,9 +20,7 @@ Führen Sie eine der folgenden Aktionen aus:
 
 ![Das Bedienfeld Filter mit dem Kategoriemenü, der Suchschaltfläche und Filterzeilen mit Vorschauen.](shot:filters/filters-panel)
 
-Ist eine Ebene ausgewählt, zeigt jede Zeile eine Vorschau des Filters auf dieser
-Ebene und den Ebenen darunter. Animierte Filter haben vor ihrem Symbol eine
-Markierung.
+Jede Zeile zeigt den Filter für ein festes Beispielbild. Animierte Filter haben vor ihrem Symbol eine Markierung.
 
 Das Menü oben zeigt eine Kategorie oder **Alle Filter**. **Filter suchen**
 findet einen Filter nach Namen innerhalb der gewählten Kategorie.

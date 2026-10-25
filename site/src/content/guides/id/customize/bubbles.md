@@ -25,13 +25,19 @@ Sebuah alat memiliki satu gelembung, dan menyeret alat itu keluar lagi memindahk
 
 ## Halo dan pemilih
 
-Gelembung keluar dalam keadaan terpilih, dengan halo pengaturannya terbuka jika alat itu memiliki pengaturan. Setiap ketukan menggesernya melalui halo, pemilih, dan tertutup, kecuali gelembung kuas yang tidak memiliki pemilih. Mengetuk gelembung alat yang belum terpilih memilih alat itu lebih dulu.
+Memilih gelembung alat akan membuka cincin pengaturannya. Memilihnya lagi akan membuka pemilih; gelembung kuas membuka atau menutup cincin pengaturannya. Memilih alat atau kuas dari pemilih akan membuka cincin pengaturannya.
 
 Seret sepanjang busur halo untuk mengubah pengaturan, dan ketuk dua kali atau klik dua kali busur itu untuk mengatur ulang. Pemilih menata media alat melingkar di sekitar gelembung: pilih sebuah media untuk membentangkan kuas-kuasnya, lalu pilih sebuah kuas.
 
 Tahan gelembung atau klik kanan untuk membuka menunya. Item bercentang di menu menempatkan pengaturan di halo, hingga enam untuk setiap kuas.
 
 ![Pemilih gelembung dengan media Cat air terpilih dan kuas-kuasnya di sampingnya.](shot:bubbles/dial-chooser)
+
+## Tampilkan Penggeser
+
+Matikan **Tampilkan Penggeser** di menu gelembung untuk menyembunyikan busur pengaturan. Pengaturan ini berlaku untuk gelembung alat, media, kuas, dan **Pemilih Warna** di ruang kerja saat ini, dan tetap disimpan setelah Anda memasangnya kembali. Memilih alat atau kuas akan membuat penggesernya tersembunyi saat pengaturan ini dinonaktifkan.
+
+![Item Tampilkan Penggeser di menu gelembung alat.](shot:bubbles/show-sliders)
 
 ## Cincin warna
 

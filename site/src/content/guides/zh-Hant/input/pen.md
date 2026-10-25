@@ -12,6 +12,10 @@ related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", 
 
 選擇 **筆壓** 旁的 **調整…** 可調整壓力曲線並在目前畫布上測試。曲線作用於所有壓感筆刷和工具；已畫出的筆跡不會改變。參見[筆壓](/zh-Hant/docs/input/pen-pressure/)。
 
+## 筆傾斜
+
+選擇 **筆傾斜** 旁的 **調整…**，更改畫筆的傾斜曲線和方向。參見[畫筆傾斜](/zh-Hant/docs/input/pen-tilt/)。
+
 ## 筆跡預測
 
 筆跡預測會在筆尖前方先畫出一小段筆跡，繪畫時由實際筆跡替換。相關設定位於**繪圖筆反應**下：

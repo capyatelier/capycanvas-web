@@ -88,10 +88,10 @@ Anda dapat menggambar jalur titik demi titik.
 - Klik untuk menambahkan titik sudut. Tekan dan seret untuk menarik pegangan bagi titik mulus, atau tahan **Alt** untuk menyeret hanya pegangan keluar.
 - Tahan **Shift** untuk menempatkan titik berikutnya dengan kelipatan 45° dari titik terakhir.
 - Klik titik pertama untuk menutup jalur.
-- Pilih **Selesai** di bilah tindakan kanvas atau tekan **Enter** untuk menambahkan jalur. **Batal** atau **Escape** membuangnya.
-- **Hapus Titik** atau **Backspace** menghapus titik terakhir, begitu pula **Urungkan**.
+- Pilih **Selesaikan jalur** di bilah tindakan kanvas atau tekan **Enter** untuk menambahkan jalur. **Batalkan jalur** atau **Escape** membuangnya.
+- **Hapus titik terakhir** atau **Backspace** menghapus titik terakhir, begitu pula **Urungkan**.
 
-![Bilah tindakan kanvas saat jalur digambar, dengan Hapus Titik, Batal, dan Selesai.](shot:vector/path-bar)
+![Bilah kanvas saat jalur digambar, dengan Hapus titik terakhir, Batalkan jalur, dan Selesaikan jalur.](shot:vector/path-bar)
 
 Jalur memakai mode saat ini, **Lebar garis**, dan warna saat ini, dengan sudut tajam dan ujung datar. Pada lapisan vektor, jalur terpilih saat Anda selesai, dan jalur yang dimulai dari ujung terbuka jalur terpilih akan melanjutkannya.
 

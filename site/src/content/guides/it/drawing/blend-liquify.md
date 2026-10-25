@@ -29,6 +29,24 @@ predefinito.
 Le impostazioni di ogni sfumino si trovano in
 [Mescolanza, diffusione e setole](/it/docs/brushes/wet-media/).
 
+### Sfumino a setole
+
+**Sfumino a setole** lascia strisce di colore. L'estremità sinistra di questo campione non è miscelata.
+
+![Sfumino a setole stria la colore ombreggiata a destra.](shot:examples/bristle-blender)
+
+### Sfumino a retino
+
+**Sfumino a retino** mescola le bande in un pattern dither.
+
+![Sfumino a retino mescolando le bande ombreggiate a destra.](shot:examples/dither-blender)
+
+### Marmorizzazione
+
+**Marmorizzazione** arriccia la colore formando vortici.
+
+![Marmorizzazione arriccia le bande ombreggiate a destra.](shot:examples/marbling)
+
 ## Fluidifica
 
 Esegui una delle seguenti operazioni:
@@ -55,6 +73,18 @@ Fluidifica non ha un pulsante Applica. Ogni tratto modifica il livello ed è un
 passaggio di annullamento a sé. I tratti continuano a deformare i pixel che il
 livello aveva prima del primo tratto, finché non dipingi sul livello, lo riempi,
 lo filtri, lo trasformi o ci incolli.
+
+### Bordo
+
+**Bordo** tira la colore verso la linea del tratto. Le fasce a sinistra mostrano la colore originale.
+
+![Bordo tirando le fasce colorate verso un tratto orizzontale a destra.](shot:examples/liquify-edge)
+
+### Ricostruisci
+
+**Ricostruisci** ripristina la colore originale sotto il pennello. Qui ripristina la metà destra delle bande distorte.
+
+![Fasce distorte a sinistra e colore restaurata con Ricostruisci a destra.](shot:examples/liquify-reconstruct)
 
 ## Regola Fluidifica e Ripristina Fluidifica
 

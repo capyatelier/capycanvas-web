@@ -12,9 +12,9 @@ Escolha **Arquivo > Abrir…** ou pressione **Ctrl+O** e selecione a foto
 ([Abrir e salvar](/pt-BR/docs/files/open-save/)). A foto se abre em uma aba de
 desenho própria.
 
-![O painel Camadas com a camada de objeto terrarium.](shot:photo/open-layers)
+![O painel Camadas com a camada de pintura terrarium.](shot:photo/open-layers)
 
-O desenho tem uma camada de objeto com o nome do arquivo. No exemplo, a camada se chama “terrarium”.
+O desenho tem uma camada de pintura com o nome do arquivo. No exemplo, a camada se chama “terrarium”.
 
 ## 2. Escolher uma proporção
 
@@ -41,9 +41,9 @@ samambaia.
 
 ## 4. Aplicar o recorte
 
-Selecione **Aplicar** na barra de recorte ou pressione **Enter**. A tela fica
+Selecione **Aplicar recorte** na barra de recorte ou pressione **Enter**. A tela fica
 com o tamanho do quadro: 2000 × 1600 pixels no exemplo. Os pixels recortados
-continuam na camada, ocultos, a menos que **Excluir pintura recortada** esteja
+continuam na camada, ocultos, a menos que **Mais > Excluir pixels de pintura recortados** esteja
 ativado na barra de recorte.
 
 Próxima etapa: [Retoque](/pt-BR/docs/photo/retouch/).

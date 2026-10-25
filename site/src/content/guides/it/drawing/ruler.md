@@ -70,7 +70,7 @@ Esegui una delle seguenti operazioni:
 
 - Scegli **Visualizza > Mostra righelli** o **Visualizza > Aggancia ai righelli**.
 - Con lo strumento Righello attivo, o con una guida selezionata con Operazione, seleziona **Mostra righelli** o **Aggancia ai righelli** nel pannello **Strumento**.
-- Seleziona **Guide** o **Aggancia** nella barra della guida.
+- Scegli **Altro > Show rulers** o seleziona **Aggancia alle guide** nella barra di guida.
 
 Entrambe le opzioni sono attive per impostazione predefinita. **Aggancia ai
 righelli** non è disponibile mentre le guide sono nascoste.
@@ -81,7 +81,7 @@ Seleziona la guida, poi esegui una delle seguenti operazioni:
 
 - Premi **Canc** o **Backspace**.
 - Seleziona **Elimina righello** nel pannello **Strumento**.
-- Seleziona **Elimina** nella barra della guida.
+- Seleziona **Elimina guida** nella barra della guida.
 
 **Canc** e **Backspace** eliminano una guida solo quando lo strumento attivo è
 Righello, Forma, Operazione, Trasforma o Ritaglia. Con gli altri strumenti, questi
@@ -94,16 +94,16 @@ maniglie compare una barra.
 
 | Pulsante | Azione |
 | --- | --- |
-| **Elimina** | Elimina la guida. |
-| **Aggancia** | Attiva o disattiva **Aggancia ai righelli**. |
-| **Guide** | Mostra o nasconde tutte le guide. Nasconderle nasconde anche la barra. |
+| **Elimina guida** | Elimina la guida. |
+| **Aggancia alle guide** | Attiva o disattiva **Snap to rulers**. |
+| **Altro > Show rulers** | Mostra o nasconde tutte le guide. Nasconderle nasconde anche la barra. |
 | **Raddrizza** | Avvia **Raddrizza immagine alla guida**. Solo per una guida di tipo Retto. |
 | **Altro** | Apre un menu con **Mostra barra azioni della tela**. |
 
 Disattivare **Visualizza > Mostra barra azioni della tela** rimuove la barra
 della guida.
 
-![La barra della guida sotto una guida di tipo Retto selezionata, con Elimina, Aggancia, Guide, Raddrizza e Altro.](shot:drawing/ruler-guide-bar)
+![La barra di guida sotto una guida Retto selezionata, con Elimina guida, Aggancia alle guide, Raddrizza e Altro.](shot:drawing/ruler-guide-bar)
 
 ## Spostare le guide con Operazione
 

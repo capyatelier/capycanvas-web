@@ -39,10 +39,10 @@ Maskenstriche sind trocken, ohne Mischen, Farbausbreitung oder Textur.
 Während Sie auf einer Maske malen, erscheint am unteren Rand der Leinwand eine
 Leiste mit der Aufschrift „Maske von *Ebene* wird bearbeitet“.
 
-![Die Leiste zur Maskenbearbeitung mit Umkehren, Deaktivieren, Maske anwenden, Mehr und Inhalt bearbeiten.](shot:layers/masks-bar)
+![Die Maskenbearbeitungsleiste mit Ebenenmaske umkehren, Ebenenmaske aktivieren, Maske anwenden, Mehr und Inhalt bearbeiten.](shot:layers/masks-bar)
 
-- **Umkehren**
-- **Deaktivieren** schaltet die Maske aus, die Schaltfläche lautet dann **Aktivieren**.
+- **Ebenenmaske umkehren** vertauscht die angezeigten und ausgeblendeten Bereiche.
+- **Ebenenmaske aktivieren** schaltet die Maske ein oder aus.
 - **Maske anwenden** löscht die Pixel, die die Maske verbirgt, und entfernt dann die Maske.
 - **Mehr** enthält das Menü **Ebene** und **Leinwandaktionsleiste anzeigen**. Deaktivieren Sie **Leinwandaktionsleiste anzeigen**, um die Leiste auszublenden.
 - **Inhalt bearbeiten** kehrt zum Malen auf der Ebene zurück.
@@ -54,7 +54,7 @@ Sie können aus der aktuellen Auswahl eine Maske erstellen.
 Führen Sie eine der folgenden Aktionen aus:
 
 - Wählen Sie **Ebene > Maske > Maske: Auswahl zeigen** oder **Maske: Auswahl verbergen**. Bei einer Ebene mit Maske lauten die Einträge **Maske ersetzen: Auswahl zeigen** und **Maske ersetzen: Auswahl verbergen**.
-- Wählen Sie **Maske** in der [Auswahlleiste](/de/docs/selections/working/) auf der Leinwand aus. Die neue Maske zeigt den ausgewählten Bereich und ersetzt eine vorhandene Maske der Ebene.
+- Wählen Sie einen Maskenbefehl von **Maske** in der [Auswahlleiste](/de/docs/selections/working/) auf der Leinwand. Die neue Maske zeigt den ausgewählten Bereich und ersetzt alle Masken der Ebene.
 
 Ein Filter oder eine Füllebene, die bei aktiver Auswahl hinzugefügt wird,
 erhält eine Maske aus der Auswahl. **In Auswahl einfügen** erstellt eine neue

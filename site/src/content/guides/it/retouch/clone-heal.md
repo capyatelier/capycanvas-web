@@ -91,10 +91,6 @@ Il clic successivo imposta la sorgente.
 
 ## Barra azioni della tela per il disco della sorgente
 
-Fai clic sul disco della sorgente senza trascinare per mostrare accanto a esso
-la [barra azioni della tela](/it/docs/selections/working/), con **Allineato**,
-**Sorgente**, i due pulsanti per riflettere, **Azzera scostamento** e
-**Imposta sorgente**. Fai di nuovo clic sul disco, o scegli un altro strumento,
-per nascondere la barra.
+Fai clic sul disco di origine senza trascinarlo per visualizzare la [barra dell'area di disegno](/it/docs/selections/working/) accanto ad esso, con **Allineato**, **Sorgente**, **Rifletti sorgente orizzontalmente** e **Imposta sorgente**. **Altro** contiene **Rifletti sorgente verticalmente** e **Azzera scostamento sorgente**. Fai di nuovo clic sul disco o scegliere un altro strumento per nascondere la barra.
 
 ![Il disco della sorgente con la sua barra azioni della tela.](shot:retouch/clone-source-bar)

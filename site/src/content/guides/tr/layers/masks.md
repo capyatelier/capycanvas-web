@@ -40,10 +40,10 @@ fırça darbeleri kurudur: karışma, yayılma veya doku olmaz.
 Maskeye boyarken tuvalin altında “Maske düzenleniyor: *katman*” etiketli bir
 çubuk görünür.
 
-![Tersine çevir, Devre dışı bırak, Maskeyi uygula, Diğer ve İçeriği düzenle düğmeleriyle maske düzenleme çubuğu.](shot:layers/masks-bar)
+![Katman maskesini tersine çevir, Katman maskesini etkinleştir, Maskeyi uygula, Diğer ve İçeriği düzenle içeren maske düzenleme çubuğu.](shot:layers/masks-bar)
 
-- **Tersine çevir**
-- **Devre dışı bırak** maskeyi kapatır. Bu durumda düğmenin adı **Etkinleştir** olur.
+- **Katman maskesini tersine çevir** gösterilen ve gizli alanları değiştirir.
+- **Katman maskesini etkinleştir** maskeyi açar veya kapatır.
 - **Maskeyi uygula** maskenin gizlediği pikselleri siler, ardından maskeyi kaldırır.
 - **Diğer**, **Katman** menüsünü ve **Tuval eylem çubuğunu göster** seçeneğini içerir. Çubuğu gizlemek için **Tuval eylem çubuğunu göster** seçeneğini kapatın.
 - **İçeriği düzenle** katmana boyamaya döner.
@@ -55,7 +55,7 @@ Geçerli seçimden maske oluşturabilirsiniz.
 Aşağıdakilerden birini yapın:
 
 - **Katman > Maske > Maske: seçimi göster** veya **Maske: seçimi gizle** komutunu seçin. Maskesi olan bir katmanda öğelerin adı **Maskeyi değiştir: seçimi göster** ve **Maskeyi değiştir: seçimi gizle** olur.
-- Tuvaldeki [seçim çubuğunda](/tr/docs/selections/working/) **Maske** düğmesini seçin. Yeni maske seçili alanı gösterir ve katmanın varsa maskesinin yerini alır.
+- Tuvaltaki [seçim çubuğundaki](/tr/docs/selections/working/) **Maske**'den bir maske komutu seçin. Yeni maske seçilen alanı gösterir ve katmanın sahip olduğu tüm maskelerin yerini alır.
 
 Etkin bir seçim varken eklenen filtre veya dolgu katmanı seçimden bir maske
 alır. **İçine yapıştır** seçime göre maskelenmiş yeni bir katman oluşturur (bkz.

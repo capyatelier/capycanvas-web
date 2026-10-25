@@ -10,9 +10,9 @@ related: ["files/open-save", "transform/crop", "start/workspaces"]
 
 选择**文件 > 打开…**，或按 **Ctrl+O**，然后选择照片（[打开和保存](/zh/docs/files/open-save/)）。照片会在单独的画作标签页中打开。
 
-![图层面板中的 terrarium 对象图层。](shot:photo/open-layers)
+![图层面板中的 terrarium 绘画图层。](shot:photo/open-layers)
 
-画作有一个以文件名命名的对象图层。示例中，图层名为“terrarium”。
+绘画包含一个以文件名命名的绘画图层。本例中，图层名为“terrarium”。
 
 ## 2. 选择比例
 
@@ -32,6 +32,6 @@ related: ["files/open-save", "transform/crop", "start/workspaces"]
 
 ## 4. 应用裁剪
 
-选择裁剪栏中的**应用**，或按 **Enter**。画布变为裁剪框的尺寸：示例中为 2000 × 1600 像素。除非裁剪栏中打开了**删除范围外绘画像素**，否则被裁掉的像素会隐藏并保留在图层上。
+选择裁剪栏中的**应用裁剪**，或按 **Enter**。画布变为裁剪框的尺寸：示例中为 2000 × 1600 像素。除非裁剪栏中打开了**更多 > 删除裁剪范围外的绘画像素**，否则被裁掉的像素会隐藏并保留在图层上。
 
 下一阶段：[修饰](/zh/docs/photo/retouch/)。

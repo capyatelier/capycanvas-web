@@ -30,6 +30,8 @@ desactiva espacios de trabajo en la lista **Mostrar en la barra superior**.
 El espacio de trabajo actual siempre tiene botón. Los espacios de trabajo que creas
 se añaden a la barra de título.
 
+En el cuadro de diálogo **Espacios de trabajo**, selecciona la chincheta junto a un espacio de trabajo para mostrar u ocultar su botón en la barra de título.
+
 ![La lista Mostrar en la barra superior bajo los botones de espacio de trabajo.](shot:workspaces/show-in-top-bar)
 
 ## Nuevo espacio de trabajo…
@@ -39,7 +41,7 @@ Puedes guardar la distribución actual como un espacio de trabajo nuevo.
 Haz una de las siguientes acciones:
 
 - Elige **Ventana > Espacios de trabajo > Nuevo espacio de trabajo…**.
-- Selecciona **Nuevo espacio de trabajo** (**+**) en el diálogo **Espacios de trabajo**.
+- Selecciona **Nuevo espacio de trabajo** (**+**) debajo de la lista del diálogo **Espacios de trabajo**.
 
 Escribe un **Nombre** y selecciona **Crear y cambiar**. Cada espacio de trabajo
 necesita un nombre propio.
@@ -51,14 +53,15 @@ el diálogo **Espacios de trabajo**. Al seleccionar un espacio de trabajo, su
 distribución se previsualiza detrás del diálogo. Para cambiar a él, selecciona
 **Cambiar al espacio de trabajo**.
 
-- Arrastra un espacio de trabajo por su asa para reordenar la lista. La barra de título usa el mismo orden.
-- Selecciona **⋯** junto a un espacio de trabajo, o haz clic con el botón derecho en él, para acceder a **Mostrar en la barra superior**, **Subir**, **Bajar**, **Renombrar…** y **Eliminar…**.
+- Arrastra el tirador a la derecha de un espacio de trabajo para reordenar la lista. La barra de título usa el mismo orden.
+- Haz clic derecho o mantén pulsado un espacio de trabajo para acceder a **Renombrar…**, **Eliminar…**, **Subir** y **Bajar**. El nombre se edita en la fila; pulsa **Intro** para guardarlo o **Escape** para cancelar.
+- Selecciona un espacio de trabajo y después **Eliminar**, debajo de la lista. En una pantalla táctil, desliza su fila para mostrar **Eliminar**.
 
 Para copiar un espacio de trabajo, cambia a él y elige **Nuevo espacio de
 trabajo…**. **Boceto**, **Pintura** y **Foto** no se pueden renombrar ni eliminar,
 y eliminar un espacio de trabajo es definitivo.
 
-![El diálogo Espacios de trabajo con las opciones de un espacio de trabajo abiertas.](shot:workspaces/manage-dialog)
+![El diálogo Espacios de trabajo con el menú contextual de un espacio de trabajo abierto.](shot:workspaces/manage-dialog)
 
 ## Historial de distribución…
 

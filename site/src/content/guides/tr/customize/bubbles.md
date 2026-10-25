@@ -25,13 +25,19 @@ Bir aracın tek baloncuğu olur; aracı yeniden dışarı sürüklemek baloncuğ
 
 ## Hale ve seçici
 
-Baloncuk seçili olarak çıkar; aracın ayarları varsa ayar halesi açıktır. Her dokunuş baloncuğu hale, seçici ve kapalı durumları arasında ilerletir; yalnızca fırça baloncuğunun seçicisi yoktur. Seçili olmayan bir aracın baloncuğuna dokunmak önce aracı seçer.
+Bir araç balonu seçildiğinde ayarlar halkası açılır. Tekrar seçildiğinde seçici açılır; bunun yerine bir fırça balonu ayar halkasını açar veya kapatır. Seçiciden bir araç veya fırça seçildiğinde ayarlar halkası açılır.
 
 Bir ayarı değiştirmek için hale yayı boyunca sürükleyin, sıfırlamak için yaya çift dokunun veya çift tıklayın. Seçici, aracın malzemelerini baloncuğun çevresine dizer: fırçalarını yelpaze gibi açmak için bir malzeme seçin, sonra bir fırça seçin.
 
 Menüsünü açmak için baloncuğu basılı tutun veya sağ tıklayın. Menüsündeki onay işaretli öğeler ayarları haleye koyar, her fırça için en fazla altı ayar.
 
 ![Suluboya malzemesi seçili ve fırçaları yanında olan bir baloncuğun seçicisi.](shot:bubbles/dial-chooser)
+
+## Kaydırıcıları göster
+
+Ayar yaylarını gizlemek için baloncuk menüsünden **Kaydırıcıları göster** seçeneğini kapatın. Ayar, geçerli çalışma alanındaki araç, ortam, fırça ve **Renk seçici** baloncuklarına uygulanır ve bunları geri yerleştirdikten sonra kayıtlı kalır. Bu ayar kapalıyken bir araç veya fırça seçildiğinde kaydırıcıları gizli kalır.
+
+![Araç balonunun menüsündeki Kaydırıcıları göster öğesi.](shot:bubbles/show-sliders)
 
 ## Renk halkası
 

@@ -19,8 +19,7 @@ Do one of the following:
 
 ![The Filters panel with the category menu, the search button, and filter rows with previews.](shot:filters/filters-panel)
 
-While a layer is selected, each row previews the filter on that layer and the
-layers below it. Animated filters have a mark before their icon.
+Each row shows the filter on a fixed sample image. Animated filters have a mark before their icon.
 
 The menu at the top shows one category or **All filters**. **Search filters**
 finds a filter by name within the chosen category.

@@ -143,8 +143,7 @@ bits e mesclagem](/pt-BR/docs/color-management/color-spaces/).
 
 ## Caneta e entrada
 
-As configurações desta página estão descritas em [Caneta](/pt-BR/docs/input/pen/)
-e [Gestos de toque](/pt-BR/docs/input/touch/).
+As configurações nesta página estão descritas em [Caneta](/pt-BR/docs/input/pen/), [Inclinação da caneta](/pt-BR/docs/input/pen-tilt/) e [Gestos de toque](/pt-BR/docs/input/touch/).
 
 ## Atalhos de teclado
 

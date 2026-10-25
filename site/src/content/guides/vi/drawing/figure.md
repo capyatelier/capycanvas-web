@@ -85,10 +85,10 @@ Bạn có thể vẽ một đường từng điểm neo một.
 - Nhấp để thêm điểm neo góc. Nhấn và kéo để kéo ra các tay nắm cho điểm neo trơn, hoặc giữ **Alt** để chỉ kéo tay nắm đi ra.
 - Giữ **Shift** để đặt điểm neo tiếp theo theo từng nấc 45° từ điểm neo trước.
 - Nhấp vào điểm neo đầu tiên để khép đường.
-- Chọn **Hoàn tất** trên thanh khung vẽ hoặc nhấn **Enter** để thêm đường. **Hủy** hoặc **Escape** bỏ đường.
-- **Xóa điểm** hoặc **Backspace** xóa điểm neo cuối cùng, **Hoàn tác** cũng vậy.
+- Chọn **Hoàn tất đường** trên thanh khung vẽ hoặc nhấn **Enter** để thêm đường. **Hủy đường** hoặc **Escape** bỏ đường.
+- **Xóa điểm cuối** hoặc **Backspace** xóa điểm neo cuối cùng, **Hoàn tác** cũng vậy.
 
-![Thanh khung vẽ khi đang vẽ một đường, với Xóa điểm, Hủy và Hoàn tất.](shot:vector/path-bar)
+![Thanh canvas trong khi vẽ đường dẫn, với Xóa điểm cuối, Hủy đường và Hoàn tất đường.](shot:vector/path-bar)
 
 Đường dùng chế độ hiện tại, **Độ rộng nét** và màu, với góc nhọn và đầu phẳng. Trên lớp vector, đường được chọn khi bạn hoàn tất, và một đường bắt đầu từ đầu hở của đường đang chọn sẽ nối tiếp đường đó.
 

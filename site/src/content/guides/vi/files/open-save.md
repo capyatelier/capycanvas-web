@@ -23,7 +23,7 @@ Thực hiện một trong các cách sau:
 
 ## Ảnh
 
-Ảnh mở thành bản vẽ mới với lớp Đối tượng được đặt tên theo tệp. Đối tượng giữ kích thước, hồ sơ màu và theo mặc định là độ sâu bit riêng của ảnh. Lưu bản vẽ tạo tệp `.capy` và không bao giờ ghi đè ảnh nguồn.
+Ảnh mở thành bản vẽ mới với một lớp vẽ được đặt tên theo tệp. Bản vẽ giữ nguyên kích thước gốc, hồ sơ màu và, theo mặc định, độ sâu bit của ảnh. Lưu bản vẽ tạo tệp `.capy` và không ghi đè ảnh nguồn.
 
 - Ảnh GIF hoặc WebP động chỉ mở khung hình đầu tiên.
 - Mỗi cạnh của ảnh có thể dài tối đa 32768 pixel.

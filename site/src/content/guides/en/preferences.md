@@ -141,8 +141,7 @@ blending](/docs/color-management/color-spaces/).
 
 ## Pen & Input
 
-The settings on this page are described in [Pen](/docs/input/pen/) and [Touch
-gestures](/docs/input/touch/).
+The settings on this page are described in [Pen](/docs/input/pen/), [Pen tilt](/docs/input/pen-tilt/), and [Touch gestures](/docs/input/touch/).
 
 ## Keyboard Shortcuts
 

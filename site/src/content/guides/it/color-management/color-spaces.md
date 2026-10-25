@@ -55,9 +55,7 @@ Scegli **Immagine > Gestione del colore > Converti spazio colore…** per cambia
 che i colori mantengano il loro aspetto in un altro spazio di lavoro, entro il
 suo gamut.
 
-Con **Salva copia unita**, **Applica** diventa **Salva copia…**. La copia ha un
-solo livello, con le stesse dimensioni e la stessa profondità in bit. Il suo nome
-file deve terminare con `.capy` e non può essere il file del disegno aperto.
+Con **Salva copia unita**, **Applica** diventa **Crea copia**. La copia si apre come un nuovo disegno con un livello, con le stesse dimensioni e profondità di bit. Scegliere **File > Salva** per salvarla come file `.capy`.
 
 ![La finestra di dialogo Converti spazio colore con il confronto Prima e Dopo e il messaggio sul gamut.](shot:color-management/convert-dialog)
 
@@ -68,9 +66,7 @@ corrente.
 
 ### Risultato
 
-**Livelli modificabili** (predefinito) converte ogni livello sul posto. **Salva
-copia unita** salva una copia convertita e unita come nuovo file `.capy` e lascia
-invariato il disegno aperto.
+**Livelli modificabili** (predefinito) converte ogni livello sul posto. **Salva copia unita** apre una copia convertita e appiattita come un nuovo disegno e lascia invariato l'originale.
 
 ### Intento di rendering
 
@@ -100,15 +96,11 @@ quando la destinazione è SDR a 8 bit.
 
 Per applicare Assegna profilo, Converti spazio colore o Cambia profondità in bit:
 
-1. Imposta i campi nella finestra di dialogo.
-2. Seleziona **Anteprima risultato completo**.
-3. Confronta **Prima** e **Dopo**.
-4. Seleziona **Applica** (o **Salva copia…**).
+1. Impostare i campi nella finestra di dialogo.
+2. Confrontare **Prima** e **Dopo** quando appare l’anteprima.
+3. Selezionare **Applica** (o **Crea copia**).
 
-**Applica** resta non disponibile finché l'anteprima non è pronta, e cambiare un
-campo scarta l'anteprima. Se un colore viene tagliato, la riga di stato riporta
-«Alcuni colori superano la gamma di destinazione. Confronta il risultato prima di
-applicare.»
+**Applica** rimane non disponibile finché l'anteprima non è pronta. La modifica di un campo aggiorna il confronto. La riga di stato riporta tutti i colori ritagliati.
 
 Applica è un passaggio di annullamento. Annulla e Ripeti aprono **Annulla cambio
 colore** e **Ripeti cambio colore**. Queste finestre di dialogo applicano la
