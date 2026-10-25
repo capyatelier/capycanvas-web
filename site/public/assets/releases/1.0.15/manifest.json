@@ -1,0 +1,39 @@
+{
+  "version": "1.0.15",
+  "width": 1800,
+  "height": 600,
+  "source": {
+    "source": "https://github.com/capyatelier/capycanvas",
+    "revision": "3fa3235d438646edc48d349d7879d6152959432b",
+    "patches": [],
+    "hashes": {
+      "app.js": "5447136b4759879ca08f8d069b4461bf492e2464f2fc54308d2773adcf8d1e48",
+      "pkg/layer_web_bg.wasm": "57e49351aa13c159ed2b16e7ce9ff11ba811a87f1dff504857a44729df167fca"
+    },
+    "theme": "dark",
+    "canvases": {
+      "vector": "#32363b",
+      "bubbles": "#3b3d3f",
+      "blenders": "#292c30"
+    },
+    "previewReference": "crates/layer-bench/src/previews.rs",
+    "artwork": "Abstract shapes and real blender preview patterns rendered with the app."
+  },
+  "files": [
+    {
+      "file": "vector-layers.webp",
+      "bytes": 44794,
+      "sha256": "61165aa2ae3d91f46317b49f0105099ca4158f04f686c4ad3821228c95a9b1d0"
+    },
+    {
+      "file": "tool-bubbles.webp",
+      "bytes": 104686,
+      "sha256": "666a610fbdeec7e820abe209a018c3a2a8eedec56405c1fcd401eb7291c6c2e1"
+    },
+    {
+      "file": "blenders.webp",
+      "bytes": 97302,
+      "sha256": "ac62d9e7f8cdf1e1e4fa86949a2cca61062e4c99e03a2c6e22a8af4d01d5d36d"
+    }
+  ]
+}
