@@ -1,0 +1,321 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "codec": "vp9",
+  "audio": false,
+  "locales": [
+    "en",
+    "ja",
+    "zh",
+    "zh-Hant",
+    "ko",
+    "es",
+    "pt-BR",
+    "id",
+    "fr",
+    "de",
+    "ru",
+    "th",
+    "vi",
+    "tr",
+    "it"
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "sources": {
+    "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc": {
+      "source": "https://github.com/capyatelier/capycanvas",
+      "patches": [],
+      "hashes": {
+        "app.js": "4a895f6483ab39b39d9338fffc8be28084124d1e66356947723ca9dc44fef017",
+        "pkg/layer_web_bg.wasm": "e3cbd80e6220cb5eca5b0083277ee93c70cb47303196d2154ecdcda24e78c65b"
+      }
+    }
+  },
+  "recipeHashes": {
+    "capture-demo.mjs": "f2d98556cc6b1c291d8364cc1279b538f467e70675028f8752930f8598aab6e3",
+    "capture/demo/motion.mjs": "6c5ff9624efcee84beec721b7233fea769db1ddec45011ddac6af721dff3d56a",
+    "capture/demo/pointer.mjs": "a4e1d8abd2e994aebe71ff79fe0d0908ccd8f28407da136ca3e26cc1a0a8e081",
+    "capture/demo/encode.mjs": "5d01ef6e6c0f7f6c8910af702cf98cf94660c1ef6ff546d1e141d2be3ba458cf",
+    "browser.mjs": "c48fb1a448c4310f888eb8e76cc03764d143b91984de2dbee9c2ef1d01396602",
+    "serve.mjs": "8b0bb3577fd421ed6147b66b67326e022f06787be73b7f612f8ffa60cb86eac3",
+    "capture/editor.mjs": "274e8f8b9638b4c06a24d6aa0c69d9113d978fd992ef735bd6359664f40642d7",
+    "capture/languages.mjs": "cd9dcbf4da7f54ce67be95a2e7ee80989625f6e8b2acd07724ac09a5ee7969b4",
+    "capture/shoot.mjs": "8d7f9d6653bf07197425c5e0332d2da8161869c41b198ebd3aa77407a26aa99f"
+  },
+  "videos": [
+    {
+      "file": "en/sketch-light.webm",
+      "locale": "en",
+      "theme": "light",
+      "duration": 25.084,
+      "bytes": 887789,
+      "sha256": "0a48c9799b62a4bd9c7e5b9f62ca10438aa2dfe3bbfa8011486c86d2b89cdf5b",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "en/sketch-dark.webm",
+      "locale": "en",
+      "theme": "dark",
+      "duration": 25.334,
+      "bytes": 931880,
+      "sha256": "e978c6b1023413ba3f3b460273f2e0cc6f175d513f813adf378ab96e23625832",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "ja/sketch-light.webm",
+      "locale": "ja",
+      "theme": "light",
+      "duration": 25.125,
+      "bytes": 888325,
+      "sha256": "1b0fab25293a137d303286df7881590eab2d2ecf6a0d2f7931ab40ce82fe0c07",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "ja/sketch-dark.webm",
+      "locale": "ja",
+      "theme": "dark",
+      "duration": 25.209,
+      "bytes": 924981,
+      "sha256": "1c32db3ce0fb07b1cc3949fdde68f32c9f9b3ccd198c15c6d2eb419748e4b709",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "zh/sketch-light.webm",
+      "locale": "zh",
+      "theme": "light",
+      "duration": 25.375,
+      "bytes": 879624,
+      "sha256": "a47c39cd9e420e63968732d6d590e09c844ddbef67b80ccbdc1f7eb52b89d3af",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "zh/sketch-dark.webm",
+      "locale": "zh",
+      "theme": "dark",
+      "duration": 25.917,
+      "bytes": 927012,
+      "sha256": "1d41e6c4b8661dad8cfd46f8b705ff9a7e443feded3accca92f51c3475c3c580",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "zh-Hant/sketch-light.webm",
+      "locale": "zh-Hant",
+      "theme": "light",
+      "duration": 25.459,
+      "bytes": 881471,
+      "sha256": "e621cd6c8ca352ed3e00163ba6885bd91c25e696424683925ea82a0a559dff8c",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "zh-Hant/sketch-dark.webm",
+      "locale": "zh-Hant",
+      "theme": "dark",
+      "duration": 25.292,
+      "bytes": 928791,
+      "sha256": "0d49e9a67c143cceb609bf02944d375b1691026aa1164c201ab59e31369d5926",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "ko/sketch-light.webm",
+      "locale": "ko",
+      "theme": "light",
+      "duration": 25.209,
+      "bytes": 892224,
+      "sha256": "d50ef5a56e4f86509315584d373d2ee6717bf8c79dbe0a067ac82f6eb55b4b45",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "ko/sketch-dark.webm",
+      "locale": "ko",
+      "theme": "dark",
+      "duration": 25.709,
+      "bytes": 945756,
+      "sha256": "0d0ceedaf4546cc3a2c95c223ff6bb6a706d0cc3b7beadbda68efc1397725790",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "es/sketch-light.webm",
+      "locale": "es",
+      "theme": "light",
+      "duration": 25.334,
+      "bytes": 899986,
+      "sha256": "74e76bba49a1d2b6158dfaf05652e7441b83bceba911e7821e2f532620d319d4",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "es/sketch-dark.webm",
+      "locale": "es",
+      "theme": "dark",
+      "duration": 25.209,
+      "bytes": 953840,
+      "sha256": "eb5af6df34f0435f00c453d7d229287ebe61495aaa3a91f767cdaec4ecec0d1f",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "pt-BR/sketch-light.webm",
+      "locale": "pt-BR",
+      "theme": "light",
+      "duration": 25.084,
+      "bytes": 904116,
+      "sha256": "ee8f6d7f633b4d1faf7d456f14bd612bb00b2f964f2c752e9654f028ac6164d2",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "pt-BR/sketch-dark.webm",
+      "locale": "pt-BR",
+      "theme": "dark",
+      "duration": 25.417,
+      "bytes": 941693,
+      "sha256": "d24e0645411f698779aa2c342b716b5202dbefcf7fb58775960abcf27e0f5a2f",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "id/sketch-light.webm",
+      "locale": "id",
+      "theme": "light",
+      "duration": 25.084,
+      "bytes": 885445,
+      "sha256": "e20e6e0f4bb79fd25007e0ce357f63b58581ba2ae6da2c921b69332fd85eb765",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "id/sketch-dark.webm",
+      "locale": "id",
+      "theme": "dark",
+      "duration": 25.209,
+      "bytes": 939329,
+      "sha256": "d743a3ccc853f3e40cda247e99bbed828082d632c37b8f259d8ea6ce33a2dfaf",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "fr/sketch-light.webm",
+      "locale": "fr",
+      "theme": "light",
+      "duration": 25.25,
+      "bytes": 893084,
+      "sha256": "11749b1df3a7a8a2c5a590f0ea64c8aa75f3c63d184fd2063408292e226f5658",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "fr/sketch-dark.webm",
+      "locale": "fr",
+      "theme": "dark",
+      "duration": 25.292,
+      "bytes": 943341,
+      "sha256": "095c7e4d9199bd49c0e588c8a9592bf8fe7452f15485c5a1e9b21a79e209a907",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "de/sketch-light.webm",
+      "locale": "de",
+      "theme": "light",
+      "duration": 25.334,
+      "bytes": 893948,
+      "sha256": "b9b6382420ecea2a0c99cb60eecd840f7465631c2d02a2f348ed7e26355d2e8a",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "de/sketch-dark.webm",
+      "locale": "de",
+      "theme": "dark",
+      "duration": 25.459,
+      "bytes": 942803,
+      "sha256": "e3576bf9a8ba25bbc522312ee804ddc76c1dbdaab2e182a5cb1525ffc01bbfce",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "ru/sketch-light.webm",
+      "locale": "ru",
+      "theme": "light",
+      "duration": 25.375,
+      "bytes": 910751,
+      "sha256": "85a612b909f0c4842e7c00eef179a0457e5463043b02ca09c512fd4e5b4c8f99",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "ru/sketch-dark.webm",
+      "locale": "ru",
+      "theme": "dark",
+      "duration": 25.334,
+      "bytes": 951058,
+      "sha256": "d5ce96aff0719269ca55f746a28c17b984f9add8f7bc9f33201b3f8ac83d0a23",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "th/sketch-light.webm",
+      "locale": "th",
+      "theme": "light",
+      "duration": 25.209,
+      "bytes": 902622,
+      "sha256": "4670d3cf70f49f30fb9da43f052adc8c50d356546a91540ab1742634f3931c37",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "th/sketch-dark.webm",
+      "locale": "th",
+      "theme": "dark",
+      "duration": 25.209,
+      "bytes": 952822,
+      "sha256": "71a93161371064dd274685ae5b9950fde150fe7d155769746a158a4ed9b631b2",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "vi/sketch-light.webm",
+      "locale": "vi",
+      "theme": "light",
+      "duration": 25.375,
+      "bytes": 885151,
+      "sha256": "b454e7716c97edc1c971c42630a2ca6b67745d5fddd7bab6e26f360ee6da8392",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "vi/sketch-dark.webm",
+      "locale": "vi",
+      "theme": "dark",
+      "duration": 25.334,
+      "bytes": 915658,
+      "sha256": "b3f4aa865a2ac8eac47efff152d4d28e296b278d21eeb84ac273b6a3f3617f2e",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "tr/sketch-light.webm",
+      "locale": "tr",
+      "theme": "light",
+      "duration": 25.167,
+      "bytes": 899595,
+      "sha256": "bd4570a01a17ab49d60f97ba2a2c98f6470f6498fcb946fdf65c459804cb90b9",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "tr/sketch-dark.webm",
+      "locale": "tr",
+      "theme": "dark",
+      "duration": 25.209,
+      "bytes": 950045,
+      "sha256": "08ac37e00ce315238cef7d715777692c6c0d85324c9fb3691a1a68eda62f20f0",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "it/sketch-light.webm",
+      "locale": "it",
+      "theme": "light",
+      "duration": 25.167,
+      "bytes": 897042,
+      "sha256": "02dc53792088298073fff7156e7db94ff4aba8c4382d8993a9a522e97dafd0b0",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    },
+    {
+      "file": "it/sketch-dark.webm",
+      "locale": "it",
+      "theme": "dark",
+      "duration": 25.167,
+      "bytes": 935134,
+      "sha256": "36c46e9f985efbfb707ab138514ba51bd5cb7ab7a9f1213439dfeda9007b90b1",
+      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc"
+    }
+  ]
+}

@@ -10,8 +10,8 @@
     "scale": 2
   },
   "recipeHashes": {
-    "capture/showcase-scenes.mjs": "7c1362d146bbf6cefea46e3b08973b84d6d156f1ac9aa42f2d7bb1ccd048f136",
-    "store/gtk.mjs": "c63fc5ab151befd2c79e0135492440c3fc9ca905a9cae55a3f122f87930d7fd4"
+    "capture/showcase-scenes.mjs": "2ab43bb35dc3869921ae4ce0e15219134d394d2ce4cf491c2a2d6bc520788484",
+    "store/gtk.mjs": "477e8a278bf0b5959a55ac0f74e98931922a7547df8a549e70f85875b4b10422"
   },
   "artwork": {
     "spring.png": {
@@ -62,12 +62,12 @@
       "path": "store/gtk/en/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1962961,
-      "sha256": "0b593fef37b32727369caf02f605103145685d6dd36a17e17dd6bb657ae2c421",
+      "bytes": 1915785,
+      "sha256": "5e006a38593785ea12f69f8941281254a6bd3f0f4009a6da47e461a3099e0140",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -78,12 +78,12 @@
       "path": "store/gtk/en/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1952558,
-      "sha256": "856c5685236bee949e6f655b72bcfda8e3e21750ac4fbad713de9df18e2b580c",
+      "bytes": 1905438,
+      "sha256": "59e47b21f47c66303d1f6804f5d9bbdadb71ac65aefb959639cdba20f766df18",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -94,12 +94,12 @@
       "path": "store/gtk/ja/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1962035,
-      "sha256": "4cece9e4df42c2ad117dafdbfed4fc969880bf87c4d0e8b37a855b33fb7826f3",
+      "bytes": 1914769,
+      "sha256": "68f532cafd3ac73c1553e9ebad9b149da0ea438160935efca81dada7397b5020",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -110,12 +110,12 @@
       "path": "store/gtk/ja/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1951292,
-      "sha256": "095c19d4f84d91ae502657764246a6c27954c4f9a7a6d2cc441a609bada269b3",
+      "bytes": 1904232,
+      "sha256": "d143e8fbbbaf3df58fb862b5f199215bc513fa294d3f56f5013ab836e423079d",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -126,12 +126,12 @@
       "path": "store/gtk/zh-hans/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1964108,
-      "sha256": "c2dfa006b957decb3f9d2b4fb6c886a2df4659c6d75df8f0931ced9cca2b01be",
+      "bytes": 1916741,
+      "sha256": "33f9b50d742ce41729720699fccd4c7a836b1cce2d44ca293affda0dfd9112a6",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -142,12 +142,12 @@
       "path": "store/gtk/zh-hans/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1954220,
-      "sha256": "0e2015df63db1e8132f07c761d7e96511be35503fb81dcf268417d396fbdfea6",
+      "bytes": 1906895,
+      "sha256": "5fa98788d6a2b4c0190bf780a7a165ae7f7237060d535dd000c9cc54f4618591",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -158,12 +158,12 @@
       "path": "store/gtk/zh-hant/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1964287,
-      "sha256": "74c79bcb6b7f5ac647314dc9b62624bbdcfc4257ab4f7c71049adc3482999c98",
+      "bytes": 1916891,
+      "sha256": "58db0daf5f8e17d4a4ce1691f9d04a39aa1d54f44f182cded48b7717007f1456",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -174,12 +174,12 @@
       "path": "store/gtk/zh-hant/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1954352,
-      "sha256": "d4d6ea17fc5cb571f1ff126c39334da51484c96bf3b353761fa1fe8b0856b0ac",
+      "bytes": 1907011,
+      "sha256": "17e183bc60f196932903f6765331bb4a61cae59af2865b2aea20f0a014df04be",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -190,12 +190,12 @@
       "path": "store/gtk/ko/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1962522,
-      "sha256": "9bbb1b83700112f8cc410a9108a486b0c6b1a10a466d0fb5a2ea8aa76b938c8e",
+      "bytes": 1915130,
+      "sha256": "8f04918c5d159799893b2f0791bf8f3906e8adad93aa5c0fd9689e7c060b302c",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -206,12 +206,12 @@
       "path": "store/gtk/ko/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1952213,
-      "sha256": "c7a88ca077ac010fea701f689a1b82d703e63e03f380d464813854212af35e63",
+      "bytes": 1905110,
+      "sha256": "bf2e92079ec85a4f2b4c1dc0ca9d34c25d52f35427f9ac9047bbd7381b40b751",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -222,12 +222,12 @@
       "path": "store/gtk/es/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1962648,
-      "sha256": "7d4c0b9d2cc3a96c924d20726b53ff507e1b6571baf1e00739fdd60550bd05b5",
+      "bytes": 1915279,
+      "sha256": "ba748f73a98597ad7db54ce3f3fc82770208799cb74f1572cadb92fbaa746a88",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -238,12 +238,12 @@
       "path": "store/gtk/es/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1952318,
-      "sha256": "ed23429b0f8510c7f0aa6813831c153aaefe2f6bb2a25662a0707cbc52fe5fb4",
+      "bytes": 1905082,
+      "sha256": "5f6560cdc8219b71bb633805272eb3e43d19cf266d6c4603dcab79d77d01a4e8",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -254,12 +254,12 @@
       "path": "store/gtk/pt-br/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1962520,
-      "sha256": "4db91e816c18abe1faa1289878645e483bdf8134c3f45fd77ac69a2bad5b593c",
+      "bytes": 1915363,
+      "sha256": "38865174626f3c41f8331adcd93f12b2ca1c9a2857417761b8bc9290c963c5dd",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -270,12 +270,12 @@
       "path": "store/gtk/pt-br/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1952133,
-      "sha256": "97c3ea9dbd7ab120f14c457f41a09b77306587744ebabda7efbe3a2486066fbf",
+      "bytes": 1904982,
+      "sha256": "73c9e279b8833eeb3fa4209bead0a45b18c0483fbea4fddeb06f88ac9d0d4ec7",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -286,12 +286,12 @@
       "path": "store/gtk/id/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1963449,
-      "sha256": "1ed4df83600b2d75156c46527c9de572406f80e8e2c8bfa66d4c3af1d4c7f31d",
+      "bytes": 1916131,
+      "sha256": "a8da6c647d7d7cf23d1b1cc561ece37542634c2e224a5268c3e28ff6054416d2",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -302,12 +302,12 @@
       "path": "store/gtk/id/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1953330,
-      "sha256": "35b8a44e0f6965239242d03fc01c5aea693ef07b16fa5d5373c50fa42c6ea237",
+      "bytes": 1906082,
+      "sha256": "c5b53620a6b9fb559530b4ae6c7dc85c3e796f81d0b837283d854682fbdbeac5",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -318,12 +318,12 @@
       "path": "store/gtk/fr/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1962065,
-      "sha256": "9045cd7ea46db4acb1324febd3fa9010093da3775149270605f4acb1881dd23e",
+      "bytes": 1914661,
+      "sha256": "54cedf37fa6898d79593e319393f179f54c25c7832da6d58a42f4380b2ebbd14",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -334,12 +334,12 @@
       "path": "store/gtk/fr/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1951336,
-      "sha256": "6bc928596b0880b9580058373c9d4e58f33949894eb80198d546dc33bdc586b9",
+      "bytes": 1904204,
+      "sha256": "ec05adc41a21a8390e0736dbbdee8c00255d5b410c9595b12f76c74b79cd824c",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -350,12 +350,12 @@
       "path": "store/gtk/de/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1962890,
-      "sha256": "4951b6c28c4078d333d540bd4b83a85cd20a5caef917058e433775ca1f8be9f5",
+      "bytes": 1915565,
+      "sha256": "c0a1c6eb65cdb72bf84699103cff86118b7870513d5d55a9a16738e7a52a812d",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -366,12 +366,12 @@
       "path": "store/gtk/de/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1952834,
-      "sha256": "37740599851a2d1361f931730c414124f97c0b662bdd145adac46004b43a317c",
+      "bytes": 1905586,
+      "sha256": "d8940388694cfc4dea39ababcbd0d596eb6a0e2a1031573ce98b0db1b23b6d8a",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -382,12 +382,12 @@
       "path": "store/gtk/ru/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1961464,
-      "sha256": "345e1dfacdc03cc9f4747ad2b43c06f46941e3eb178f5c6c525021c54c92e041",
+      "bytes": 1914069,
+      "sha256": "10ad0f774e0215049d72f34ce8936350c9b0c2fb90e0d126cf8791c8f3a22615",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -398,12 +398,12 @@
       "path": "store/gtk/ru/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1949887,
-      "sha256": "511b67d15d3e8e426bdec7489486884b90f645b9fa46b33ea061a90c87fdd97c",
+      "bytes": 1902844,
+      "sha256": "bafe73bfcbab2835d5c22d6e32a61d5c74d518cb87edec61e09b0c6aaceb5bce",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -414,12 +414,12 @@
       "path": "store/gtk/th/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1962960,
-      "sha256": "a4fc52c82cf2a5cd46e11e02074cab4f982b60a8b7b6874d03fbcebc9db2524e",
+      "bytes": 1915590,
+      "sha256": "90a663313f3de5aea60df2b53e5b39621f7c5e8514a2dbd141cb9635cad2733d",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -430,12 +430,12 @@
       "path": "store/gtk/th/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1952419,
-      "sha256": "7ec2179bc4b73d9806866469d518fa50e4deeddee081ab27918bf16dcbdf42eb",
+      "bytes": 1905282,
+      "sha256": "515c040da516ad76e3f34731d8e3e875c48bac3beedbb4acbfcefc7b3d7c8fc8",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -446,12 +446,12 @@
       "path": "store/gtk/vi/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1962886,
-      "sha256": "3acd9bfdb44ba5ecbad89742c9c1375de33450aa8414a6921249e7a71ac7d80f",
+      "bytes": 1915485,
+      "sha256": "3fc71f01b172b2c11e0a0333e31ddc57989c8f5d505fd391702b50e2a22ed69b",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -462,12 +462,12 @@
       "path": "store/gtk/vi/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1952493,
-      "sha256": "aaf7cc5fe92f1971df9d833bdb52b965bfc8b8667893817ea4bac185aad29bd2",
+      "bytes": 1905311,
+      "sha256": "53c149c08c011c882fe017559d69603000c476796c9df51a59bd762673e7d218",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -478,12 +478,12 @@
       "path": "store/gtk/tr/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1962938,
-      "sha256": "66dd3a785cc1e3233184800d13bfb8d9985a2210f19fcd66f218e1b3c3ff591f",
+      "bytes": 1915762,
+      "sha256": "72a0b2b32a2a23524f1b8c8442c9bbb828422e3e397efdffe118682fe5a1d7a2",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -494,12 +494,12 @@
       "path": "store/gtk/tr/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1952419,
-      "sha256": "91a149855e0339e1c343e24ad3bdff675fc770b95276e3d8f5e626b1ef441340",
+      "bytes": 1905317,
+      "sha256": "73e677988f10bcb27d6a4b5cb7c230df7e6de460bcae33ab4792251f506e5c69",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -510,12 +510,12 @@
       "path": "store/gtk/it/sketch-light.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1962310,
-      "sha256": "81051e827238ef11665a696385c338717fc2fdedad9281bc693cafa54e11612f",
+      "bytes": 1915146,
+      "sha256": "ec4361d2b46f8cd815f5dbecedb7d0f5af357913c2a26eaf4de7ee26f67d6d7e",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {
@@ -526,12 +526,12 @@
       "path": "store/gtk/it/sketch-dark.png",
       "width": 2486,
       "height": 1686,
-      "bytes": 1951962,
-      "sha256": "49321ec49b4b8dd659f9154a48f0071dadacef3ee574a1d80af54039ceba3da1",
+      "bytes": 1904799,
+      "sha256": "07006da6367b8f74c63434fb2af20a1bf2c9c6b5255b3c5f5aa448e5c960a5f4",
       "capture": {
-        "source_revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
-        "executable_sha256": "c03b381fb19576a507b2f005709bc7877d7ee9344ba0eeac7384f306cc89d573",
-        "recipe_sha256": "d6bfc2d3e00845ed30e0fef80dd74824524a70eb31f01fa81471d61fcca827a4"
+        "source_revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
+        "executable_sha256": "3db62d638ba590beb53fcc62bfeb769a25247405784a0f326a1b453ae76ff42c",
+        "recipe_sha256": "78a0de5060ca64118b191c38a2434ae0a2723e7fc68678ebe90f02fe6d37cb5c"
       }
     },
     {

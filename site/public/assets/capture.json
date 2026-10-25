@@ -23,7 +23,7 @@
   "display": "Headed Chrome on private headless Wayland displays, one browser per chapter",
   "canvas2d": "Software decoding and UI previews; artwork remains hardware WebGPU.",
   "recipeHashes": {
-    "browser.mjs": "a15a2cb4646dbda8cfe8bcda998947278574e6c719fae6685a7211094e37601e",
+    "browser.mjs": "c48fb1a448c4310f888eb8e76cc03764d143b91984de2dbee9c2ef1d01396602",
     "capture-compatibility.mjs": "c1265671aa317d01a1d8a6e4d6af0e66cd0ab9c5d74aee1c55c89d20aa796ce1",
     "capture-headless.sh": "e755bc8cacb8d76f270e06bf6252b6c535ce4d9d62e1dc41e805890875cf5bb9",
     "capture.mjs": "ae4698968564882aac7b1292bec6d28ba860536f218e98a0aad4ed963e26661a",
@@ -50,10 +50,10 @@
     "capture/editor.mjs": "274e8f8b9638b4c06a24d6aa0c69d9113d978fd992ef735bd6359664f40642d7",
     "capture/languages.mjs": "cd9dcbf4da7f54ce67be95a2e7ee80989625f6e8b2acd07724ac09a5ee7969b4",
     "capture/shoot.mjs": "8d7f9d6653bf07197425c5e0332d2da8161869c41b198ebd3aa77407a26aa99f",
-    "capture/showcase-scenes.mjs": "7c1362d146bbf6cefea46e3b08973b84d6d156f1ac9aa42f2d7bb1ccd048f136",
-    "capture/showcase.mjs": "4d78ff403e138934b11c10c395f20ae708b9a95a60cee3c90ae71cc4c8c56453",
+    "capture/showcase-scenes.mjs": "2ab43bb35dc3869921ae4ce0e15219134d394d2ce4cf491c2a2d6bc520788484",
+    "capture/showcase.mjs": "6de3a4f4f43d3741dd422449a840d4ada2ed4002b23535fc31648b529305d3e6",
     "prepare-capture.mjs": "13a7b9db0561c429376d2edf4b241a1552c644dbe3e1a3761843c94a697f18d6",
-    "serve.mjs": "f804ab7645298d628e5749e2cb50539242b8fb5ab17f222f9506dba7e9134569"
+    "serve.mjs": "8b0bb3577fd421ed6147b66b67326e022f06787be73b7f612f8ffa60cb86eac3"
   },
   "languages": "Each image is captured once per site language from the same editor state, after switching the editor language in place. Default layer, palette and swatch names shown in the image are renamed to the names the editor gives them in that language, then restored. Images identical in every language are stored once under shared/. A new capture keeps the committed file when it has the same size, quality and callouts and its pixels match within a small tolerance (no channel off by more than 32, mean difference under 1).",
   "artwork": "Manual: an original abstract study of a teal ribbon, ochre disc and terracotta block, dry-media and paper comparisons drawn through real browser pen input and editor actions, and a photograph of a terrarium supplied by Capy Atelier. The paper-library example imports a PNG derived from the editor's Linen preview. Homepage: a pen sketch, an oil painting and a photograph supplied by Capy Atelier, shown in Sketch, Paint and Photo.",
@@ -120659,7 +120659,7 @@
     },
     {
       "file": "showcase/de/sketch-dark.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "dark",
       "locales": [
@@ -120670,13 +120670,13 @@
         1920,
         1080
       ],
-      "bytes": 845886,
-      "sha256": "1f2103712d0e2297484d8d0e3b2073abb0fe0425bca86305f0b16becb7cf17d0",
+      "bytes": 835150,
+      "sha256": "e4d38eaf97e1a6154c1e895c938b285ab52767f9e9159b41c128807c7cf5b142",
       "annotations": []
     },
     {
       "file": "showcase/de/sketch-light.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "light",
       "locales": [
@@ -120687,8 +120687,8 @@
         1920,
         1080
       ],
-      "bytes": 841776,
-      "sha256": "3df64c43b5ffda38847d0c7e6afcd23a78dcac6feef6bc987088ea20f0644ec7",
+      "bytes": 834210,
+      "sha256": "1c71bfcaa8869fd95bdb8ad29ad042b45d7a98d628b8189fc7b981e104eba2d7",
       "annotations": []
     },
     {
@@ -120761,7 +120761,7 @@
     },
     {
       "file": "showcase/en/sketch-dark.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "dark",
       "locales": [
@@ -120772,13 +120772,13 @@
         1920,
         1080
       ],
-      "bytes": 845896,
-      "sha256": "9b98ae2b7041f641233a81d096214bcf1152b07bb13d59aed9ce385962d53ae0",
+      "bytes": 835112,
+      "sha256": "c004df0a656fdc84a9e912f84759ad4e96c45a1857e936b013b3e122dcec83c4",
       "annotations": []
     },
     {
       "file": "showcase/en/sketch-light.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "light",
       "locales": [
@@ -120789,8 +120789,8 @@
         1920,
         1080
       ],
-      "bytes": 841574,
-      "sha256": "6034e6998a214dbe8eaee5837f70cfca86d12f5ac41f6decd9f856bc19a3160c",
+      "bytes": 834344,
+      "sha256": "e9e421d718cd56fd1c1145e43fe6cebf42ebc563cfc6e5d3de259bd4ac3f9fc7",
       "annotations": []
     },
     {
@@ -120863,7 +120863,7 @@
     },
     {
       "file": "showcase/es/sketch-dark.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "dark",
       "locales": [
@@ -120874,13 +120874,13 @@
         1920,
         1080
       ],
-      "bytes": 846240,
-      "sha256": "ff05de8677e1b277bb3256a48032cb07a3130e900c611a62d4b967c0292208b3",
+      "bytes": 835242,
+      "sha256": "060cbae84f55c128589e34a9b0a81df2851f4116292c05c3361c1f521f33ded6",
       "annotations": []
     },
     {
       "file": "showcase/es/sketch-light.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "light",
       "locales": [
@@ -120891,8 +120891,8 @@
         1920,
         1080
       ],
-      "bytes": 841688,
-      "sha256": "80af768fc9631657b5bc7d69efd1b317e6445b822ace5505b756eee01a057e03",
+      "bytes": 834294,
+      "sha256": "775db09d5227170525f917e9ff8f634bffa281d8fcc80d6686c7c2fac687a403",
       "annotations": []
     },
     {
@@ -120965,7 +120965,7 @@
     },
     {
       "file": "showcase/fr/sketch-dark.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "dark",
       "locales": [
@@ -120976,13 +120976,13 @@
         1920,
         1080
       ],
-      "bytes": 846086,
-      "sha256": "bb86395e8a7937d69686e2e4e2bac3e96d61b89621b782846e50290e67848d63",
+      "bytes": 835146,
+      "sha256": "0d5d3a3b676b770951850dcf69f2129df8be21856267497f155798260dfee8db",
       "annotations": []
     },
     {
       "file": "showcase/fr/sketch-light.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "light",
       "locales": [
@@ -120993,8 +120993,8 @@
         1920,
         1080
       ],
-      "bytes": 841960,
-      "sha256": "1cc2566457b2800aa6ea4bbc42c07e22fd027c02ff39442570e5669d45c7da7f",
+      "bytes": 834410,
+      "sha256": "3c3c66e922ae86d1b7026f1e049199af37c913a95cab2570bdccf8048f8e9830",
       "annotations": []
     },
     {
@@ -121067,7 +121067,7 @@
     },
     {
       "file": "showcase/id/sketch-dark.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "dark",
       "locales": [
@@ -121078,13 +121078,13 @@
         1920,
         1080
       ],
-      "bytes": 846094,
-      "sha256": "c524d8cb8605621ea16df97442e3e41b2b66e5b9d00bc124f36ad85234a477fe",
+      "bytes": 835332,
+      "sha256": "221025697c391d01a21e71ba1f4fb2ae611c66175296c629e74f675ed39b1c3d",
       "annotations": []
     },
     {
       "file": "showcase/id/sketch-light.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "light",
       "locales": [
@@ -121095,8 +121095,8 @@
         1920,
         1080
       ],
-      "bytes": 841414,
-      "sha256": "b95aa11c7e5830f9187782d9d86ee5385ded8b9f55f7195ab034ab3b5b9b41a4",
+      "bytes": 834372,
+      "sha256": "db131ccf9b92fd6ad91c281f085a5155fe5e3e987ddb7676481f240c4a8c4a6b",
       "annotations": []
     },
     {
@@ -121169,7 +121169,7 @@
     },
     {
       "file": "showcase/it/sketch-dark.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "dark",
       "locales": [
@@ -121180,13 +121180,13 @@
         1920,
         1080
       ],
-      "bytes": 846044,
-      "sha256": "1c400a47a55cf5136d7bf4f81769a6595f1d08cbdae80545213d5f97d604861e",
+      "bytes": 835222,
+      "sha256": "84712da3ddc80e368c107abc7b92169876f8460b524bd27c14662788114f9447",
       "annotations": []
     },
     {
       "file": "showcase/it/sketch-light.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "light",
       "locales": [
@@ -121197,8 +121197,8 @@
         1920,
         1080
       ],
-      "bytes": 841796,
-      "sha256": "9b69ddc2747fded0d4f11feb5e254762f5fa1b029a5f6217e938b081b2a1911d",
+      "bytes": 834334,
+      "sha256": "811c3d4405f17f4915fc4ceaad5091eaaf32720cb4965b588f7f2f14453cd0c0",
       "annotations": []
     },
     {
@@ -121271,7 +121271,7 @@
     },
     {
       "file": "showcase/ja/sketch-dark.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "dark",
       "locales": [
@@ -121282,13 +121282,13 @@
         1920,
         1080
       ],
-      "bytes": 845542,
-      "sha256": "c070e401e2f056b1f0914acd6eceabcca0ad1cb07518b09299210a5363b14de7",
+      "bytes": 834750,
+      "sha256": "5913ddad29bfca9c085e23f216e68687a3ba65fb651740dc8277a232e7d4bfb4",
       "annotations": []
     },
     {
       "file": "showcase/ja/sketch-light.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "light",
       "locales": [
@@ -121299,8 +121299,8 @@
         1920,
         1080
       ],
-      "bytes": 841152,
-      "sha256": "3b0128a11380cb20c0f11e5faf658bae9a214157506fe4ee2e157208a5c9b596",
+      "bytes": 834110,
+      "sha256": "a51cc9cdefc5a8e7b6e308da46a1a2e8b7e1f2c57894c10c2b12e308fceffa12",
       "annotations": []
     },
     {
@@ -121373,7 +121373,7 @@
     },
     {
       "file": "showcase/ko/sketch-dark.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "dark",
       "locales": [
@@ -121384,13 +121384,13 @@
         1920,
         1080
       ],
-      "bytes": 845828,
-      "sha256": "66452743684ba76258805b1d611b867f707e9072ccb9fcd70f8530905ea7f2ed",
+      "bytes": 834954,
+      "sha256": "cc88e53485ec93d3ab0546754e556daa1891b4e64e08daff1899f6a6614b4ac3",
       "annotations": []
     },
     {
       "file": "showcase/ko/sketch-light.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "light",
       "locales": [
@@ -121401,8 +121401,8 @@
         1920,
         1080
       ],
-      "bytes": 841206,
-      "sha256": "8aa7b6579fb483916c4cd4578042e29afb84dc5612549a28bbb447056cd8e8af",
+      "bytes": 833986,
+      "sha256": "8e935fb75c232168093e278493a031a5c1028925ed2ad500cc5c075321a9ba9a",
       "annotations": []
     },
     {
@@ -121475,7 +121475,7 @@
     },
     {
       "file": "showcase/pt-BR/sketch-dark.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "dark",
       "locales": [
@@ -121486,13 +121486,13 @@
         1920,
         1080
       ],
-      "bytes": 845946,
-      "sha256": "d7c415a2d5e732d677b3eed07415aa7297d6ee7d36bd606eb2ad9022a3eaa7b6",
+      "bytes": 835172,
+      "sha256": "a558b29ca9531504d22666b34d60bfb8a79d5054037b5c8e6449b696765307c8",
       "annotations": []
     },
     {
       "file": "showcase/pt-BR/sketch-light.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "light",
       "locales": [
@@ -121503,8 +121503,8 @@
         1920,
         1080
       ],
-      "bytes": 841646,
-      "sha256": "8f15e3cee16ddd5b07a727831981d4bd4105ea7ffff2a864a316b2ac76ca01c0",
+      "bytes": 834242,
+      "sha256": "a970bb371854e2d5f9100deb0868e034fdf247f7bfa6e50abccaac878cd2d3c0",
       "annotations": []
     },
     {
@@ -121577,7 +121577,7 @@
     },
     {
       "file": "showcase/ru/sketch-dark.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "dark",
       "locales": [
@@ -121588,13 +121588,13 @@
         1920,
         1080
       ],
-      "bytes": 846734,
-      "sha256": "9eab3a8945eee34dbcada8a5bc279ee9e8efcff3600dc9a7c33918242f684d74",
+      "bytes": 835996,
+      "sha256": "3cb293dba1dee0cda19fc5395fa1b32c479f1526e039ef4de9b93023ed000c03",
       "annotations": []
     },
     {
       "file": "showcase/ru/sketch-light.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "light",
       "locales": [
@@ -121605,8 +121605,8 @@
         1920,
         1080
       ],
-      "bytes": 842626,
-      "sha256": "f17c8523fd1b4ced6513f57e5bbb457eaeb696c145e229bf64996d2586fecdce",
+      "bytes": 835116,
+      "sha256": "fb567ea9c43d1f44c2782489e758d2d9160200aecab68fa95949cf43d61a2447",
       "annotations": []
     },
     {
@@ -121679,7 +121679,7 @@
     },
     {
       "file": "showcase/th/sketch-dark.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "dark",
       "locales": [
@@ -121690,13 +121690,13 @@
         1920,
         1080
       ],
-      "bytes": 846116,
-      "sha256": "9cac2c9335cf488b1b5b5363b3ec1c21f13168be41d03657633ed7bc4a1e2c25",
+      "bytes": 835022,
+      "sha256": "32fd8f9fc9a227857d4a70d69f8b6918b8318106b73010796ae945e35f5273d4",
       "annotations": []
     },
     {
       "file": "showcase/th/sketch-light.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "light",
       "locales": [
@@ -121707,8 +121707,8 @@
         1920,
         1080
       ],
-      "bytes": 841862,
-      "sha256": "9a0040d01a625d2ccef91ed8756010402d2acc08428a4a66eebf3e55dfe07e13",
+      "bytes": 834372,
+      "sha256": "8a530869c9ed514da9796c21d425414cb4419e349b75d3a01a05b26aff74a484",
       "annotations": []
     },
     {
@@ -121781,7 +121781,7 @@
     },
     {
       "file": "showcase/tr/sketch-dark.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "dark",
       "locales": [
@@ -121792,13 +121792,13 @@
         1920,
         1080
       ],
-      "bytes": 846204,
-      "sha256": "9dbf1a5372b36aa3abfdb2e1e970010d10646939f140429a8ac66d2f135ba3e7",
+      "bytes": 835304,
+      "sha256": "4e9c6339bae1b916a6fc21383ae7c4575a6ad721aea038f6daecaa266d8e51c7",
       "annotations": []
     },
     {
       "file": "showcase/tr/sketch-light.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "light",
       "locales": [
@@ -121809,8 +121809,8 @@
         1920,
         1080
       ],
-      "bytes": 841862,
-      "sha256": "a505ca5c9d03d0230b588821e5b4ee21ed3db22418a74d9d51de80eaf5137ba1",
+      "bytes": 834438,
+      "sha256": "ce47ca7a2d4c2e68297661b7d1e7bf41b91fb8c628616d67bfce7a2204330b81",
       "annotations": []
     },
     {
@@ -121883,7 +121883,7 @@
     },
     {
       "file": "showcase/vi/sketch-dark.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "dark",
       "locales": [
@@ -121894,13 +121894,13 @@
         1920,
         1080
       ],
-      "bytes": 846360,
-      "sha256": "7c65614ef0b9b0109d4913c4fcbd42e646e260dba921ae03df4deb710c5d3572",
+      "bytes": 835280,
+      "sha256": "8686c736020ebeb58a4d53172d01f685ff62683274fdf6a5d56fed0541d48cec",
       "annotations": []
     },
     {
       "file": "showcase/vi/sketch-light.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "light",
       "locales": [
@@ -121911,8 +121911,8 @@
         1920,
         1080
       ],
-      "bytes": 841706,
-      "sha256": "abc4d3c7f8010e7af08ee10f70fff722df9f14b18d6fe4d66f19d082e4a93262",
+      "bytes": 834314,
+      "sha256": "a0899d6e6b5c7da21ba350ad160fd89a5ecae410c3f0e843814b31b27a35e038",
       "annotations": []
     },
     {
@@ -121985,7 +121985,7 @@
     },
     {
       "file": "showcase/zh-Hant/sketch-dark.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "dark",
       "locales": [
@@ -121996,13 +121996,13 @@
         1920,
         1080
       ],
-      "bytes": 846588,
-      "sha256": "542fd418f65459eee929b0a109b7888f75c4a2e8faef6e2cd5181cb6b89d269d",
+      "bytes": 835690,
+      "sha256": "95a84f37db4d11b305f2fb490ed91ec4865961332f6a2fe7c684d696d64c290e",
       "annotations": []
     },
     {
       "file": "showcase/zh-Hant/sketch-light.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "light",
       "locales": [
@@ -122013,8 +122013,8 @@
         1920,
         1080
       ],
-      "bytes": 842144,
-      "sha256": "efe69bfe506b60dd6df35360649af02fa3a90a62efe887ab27e52519e4f62e10",
+      "bytes": 834596,
+      "sha256": "a76c86e4d3d927ed5133b93528cb7213015eda8239fde14eba0978c8527aa601",
       "annotations": []
     },
     {
@@ -122087,7 +122087,7 @@
     },
     {
       "file": "showcase/zh/sketch-dark.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "dark",
       "locales": [
@@ -122098,13 +122098,13 @@
         1920,
         1080
       ],
-      "bytes": 846164,
-      "sha256": "ec28159376ac6d468c2e8167bd47b123f098555be277d6d3a15e3d38f2298daa",
+      "bytes": 835414,
+      "sha256": "5f7ad0dfbc4b3802348f8a8e37b80d583e9c2d99a7c4de3f7eaa8c75c1825c2b",
       "annotations": []
     },
     {
       "file": "showcase/zh/sketch-light.webp",
-      "revision": "2d7c4d5d7739a4b20dfc8485e38dc3e9d23f08dc",
+      "revision": "4424eaa1b5b15aa3c12547af31349f9a4b9a805e",
       "shot": "showcase/sketch",
       "theme": "light",
       "locales": [
@@ -122115,8 +122115,8 @@
         1920,
         1080
       ],
-      "bytes": 841978,
-      "sha256": "c027c9415be778cf60871602a6b14387f4580e25debe661bcc1b55a2d64be590",
+      "bytes": 834890,
+      "sha256": "626a395d20b7d0952191a6d77f233ec0addbb923575e0b1c5b5ba084ff4f2ef0",
       "annotations": []
     }
   ],
@@ -122154,6 +122154,28 @@
       "hashes": {
         "app.js": "4a895f6483ab39b39d9338fffc8be28084124d1e66356947723ca9dc44fef017",
         "pkg/layer_web_bg.wasm": "e3cbd80e6220cb5eca5b0083277ee93c70cb47303196d2154ecdcda24e78c65b"
+      },
+      "browser": {
+        "protocolVersion": "1.3",
+        "product": "Chrome/154.0.8037.57",
+        "revision": "@73c14f6228d7cd537c855007e8f88678969cc0eb",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+        "jsVersion": "15.4.80.11"
+      }
+    },
+    "4424eaa1b5b15aa3c12547af31349f9a4b9a805e": {
+      "source": "https://github.com/capyatelier/capycanvas",
+      "patches": [
+        {
+          "file": "crates/layer-render-wgpu/src/present.rs",
+          "reason": "Recompute canvas glass when the theme changes the surround (capycanvas a71fa4834).",
+          "before": "            old[..placement.start] != data[..placement.start] || old[placement.end..40] != data[placement.end..40]\n        });\n",
+          "after": "            old[..placement.start] != data[..placement.start] || old[placement.end..40] != data[placement.end..40]\n        });\n        let surround = 12..16;\n        let restyled = self.camera_data.is_some_and(|old| old[surround.clone()] != data[surround]);\n"
+        }
+      ],
+      "hashes": {
+        "app.js": "00b74ceca5ab8731bef3f05f49da6d75e7751bd4e8a7a4b783eb90dad705a5cb",
+        "pkg/layer_web_bg.wasm": "26043e46a58141b3eadbf217aadd5e55c823dddc10fba0a74e3b875e8672aa0a"
       },
       "browser": {
         "protocolVersion": "1.3",

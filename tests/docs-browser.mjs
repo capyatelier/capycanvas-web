@@ -1,7 +1,9 @@
 import { docTopics } from '../site/src/data/docs-nav.mjs';
 import { content, languages } from '../site/src/data/content.mjs';
+import { checkSketchDemo } from './demo-browser.mjs';
 
 export async function checkDocumentation(b, host, check) {
+  await checkSketchDemo(b, host, check);
   const route = (locale, slug) => `${locale === 'en' ? '' : '/' + locale}/docs/${slug}/`;
   const results = [];
   await b.evaluate('localStorage.clear()');

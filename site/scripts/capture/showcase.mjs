@@ -5,7 +5,6 @@ const command = id => `layerApp.state().commands.find(c=>c.id===${JSON.stringify
 const analysed = `layerApp.state().histogram.status==='Exact'&&!String(layerApp.state().layer_properties?.description??'').includes('Updating')`;
 const thumbnailsDrawn = `[...document.querySelectorAll('#layer-rows .layer-thumbnail canvas')].filter(c=>c.checkVisibility()).every(c=>{const d=c.getContext('2d').getImageData(0,0,c.width,c.height).data;for(let i=3;i<d.length;i+=4)if(d[i])return true;return false})`;
 const highlights = `[...document.querySelectorAll('button[aria-label]')].some(b=>(b.getAttribute('aria-label')||'').startsWith('Highlights'))`;
-const sketchBubbles = `(()=>{const b=layerApp.app.workspace_persistence().layout.bubbles.bubbles;return b.length===2&&b.some(x=>x.source.control?.command==='drawing_brush')&&b.some(x=>x.source.control?.kind==='color'&&x.options?.size===136)&&layerApp.app.bubbles().some(p=>p.view.halo)})()`;
 
 export default async function showcase({ e, record }) {
   const restoreLayout = async () => {
@@ -35,7 +34,7 @@ export default async function showcase({ e, record }) {
     wait_histogram: () => e.wait(analysed),
   };
   const shots = {
-    sketch: { ready: () => e.wait(sketchBubbles) },
+    sketch: {},
     paint: { setup: () => e.b.until(thumbnailsDrawn, 120000) },
     photo: { ready: () => e.wait(highlights), setup: async () => { await e.wait(analysed); await e.b.until(thumbnailsDrawn, 120000); } },
   };

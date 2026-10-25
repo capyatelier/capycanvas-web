@@ -46,6 +46,7 @@ export const additionalDocsUI = {
       "android": "Usa un lápiz que admita presión. Un lápiz óptico con punta de goma cuenta como un dedo, y los dedos nunca dibujan."
     },
     "imageOpen": "Abrir captura de pantalla en tamaño completo",
+    "sketchDemo": "Demostración de cómo colocar herramientas flotantes, centrarse en el lienzo, elegir un pincel verde y ajustar su suavidad.",
     "landing": {
       "sections": {
         "sketch": {
@@ -171,6 +172,7 @@ export const additionalDocsUI = {
       "android": "Use uma caneta que suporte pressão. Uma caneta com ponta de borracha conta como um dedo, e dedos nunca desenham."
     },
     "imageOpen": "Abra a captura de tela em tamanho real",
+    "sketchDemo": "Demonstração de como posicionar ferramentas flutuantes, focar na tela, escolher um pincel verde e ajustar sua suavidade.",
     "landing": {
       "sections": {
         "sketch": {
@@ -296,6 +298,7 @@ export const additionalDocsUI = {
       "android": "Gunakan pena yang mendukung tekanan. Stylus berujung karet dianggap sebagai jari, dan jari tidak pernah menggambar."
     },
     "imageOpen": "Buka tangkapan layar ukuran penuh",
+    "sketchDemo": "Demonstrasi menata alat mengambang, berfokus pada kanvas, memilih kuas hijau, dan menyesuaikan kelembutannya.",
     "landing": {
       "sections": {
         "sketch": {
@@ -421,6 +424,7 @@ export const additionalDocsUI = {
       "android": "Utilisez un stylet sensible à la pression. Un stylet à pointe en caoutchouc compte comme un doigt, et les doigts ne dessinent jamais."
     },
     "imageOpen": "Ouvrir la capture d'écran en taille réelle",
+    "sketchDemo": "Démonstration du placement des outils flottants, du mode de concentration sur la toile, du choix d’un pinceau vert et du réglage de sa douceur.",
     "landing": {
       "sections": {
         "sketch": {
@@ -546,6 +550,7 @@ export const additionalDocsUI = {
       "android": "Verwenden Sie einen Stift, der Druck unterstützt. Ein Eingabestift mit Gummispitze gilt als Finger, und Finger zeichnen nie."
     },
     "imageOpen": "Öffnen Sie den Screenshot in voller Größe",
+    "sketchDemo": "Vorführung: schwebende Werkzeuge anordnen, auf die Leinwand konzentrieren, einen grünen Pinsel wählen und seine Weichheit einstellen.",
     "landing": {
       "sections": {
         "sketch": {
@@ -671,6 +676,7 @@ export const additionalDocsUI = {
       "android": "Используйте перо с поддержкой нажима. Стилус с резиновым наконечником считается пальцем, а пальцы никогда не рисуют."
     },
     "imageOpen": "Открыть полноразмерный скриншот",
+    "sketchDemo": "Демонстрация размещения плавающих инструментов, перехода к работе без отвлекающих элементов, выбора зелёной кисти и настройки её мягкости.",
     "landing": {
       "sections": {
         "sketch": {
@@ -796,6 +802,7 @@ export const additionalDocsUI = {
       "android": "ใช้ปากกาที่รองรับแรงกด สไตลัสปลายยางจะนับเป็นนิ้ว และนิ้วจะไม่วาดเส้น"
     },
     "imageOpen": "เปิดภาพหน้าจอขนาดเต็ม",
+    "sketchDemo": "สาธิตการจัดวางเครื่องมือลอย การมุ่งความสนใจที่ผืนผ้าใบ การเลือกพู่กันสีเขียว และการปรับความนุ่มของพู่กัน",
     "landing": {
       "sections": {
         "sketch": {
@@ -921,6 +928,7 @@ export const additionalDocsUI = {
       "android": "Hãy dùng bút hỗ trợ lực nhấn. Bút cảm ứng đầu cao su được tính là ngón tay, và ngón tay không bao giờ vẽ."
     },
     "imageOpen": "Mở ảnh chụp màn hình kích thước đầy đủ",
+    "sketchDemo": "Minh họa cách sắp xếp công cụ nổi, tập trung vào khung vẽ, chọn cọ xanh lá và điều chỉnh độ mềm của cọ.",
     "landing": {
       "sections": {
         "sketch": {
@@ -1046,6 +1054,7 @@ export const additionalDocsUI = {
       "android": "Basıncı destekleyen bir kalem kullanın. Kauçuk uçlu bir kalem parmak sayılır ve parmaklar hiçbir zaman çizim yapmaz."
     },
     "imageOpen": "Tam boyutlu ekran görüntüsünü aç",
+    "sketchDemo": "Yüzen araçları yerleştirme, tuvale odaklanma, yeşil bir fırça seçme ve yumuşaklığını ayarlama gösterimi.",
     "landing": {
       "sections": {
         "sketch": {
@@ -1171,6 +1180,7 @@ export const additionalDocsUI = {
       "android": "Usa una penna che supporti la pressione. Uno stilo con punta in gomma conta come un dito, e le dita non disegnano mai."
     },
     "imageOpen": "Apri lo screenshot a dimensione intera",
+    "sketchDemo": "Dimostrazione di come disporre gli strumenti mobili, concentrarsi sulla tela, scegliere un pennello verde e regolarne la morbidezza.",
     "landing": {
       "sections": {
         "sketch": {

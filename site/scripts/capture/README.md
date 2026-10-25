@@ -138,6 +138,33 @@ Reproduction means the same source, actions, artwork and composition. GPU, fonts
 Chrome versions and input timing can change individual bytes, so review new
 images rather than expecting identical output.
 
+## Sketch demonstration
+
+The documentation overview's Sketch loop is a real 1920 × 1080 editor recording
+at 24 fps, with a filled circular pointer over trusted browser mouse input.
+`demo/motion.mjs` defines the paths, timing and short reading pauses in
+`capture-demo.mjs`. The color wheel is Medium; the sequence selects leaf green
+and Blotty Ink, then shows the live tip during a hardness adjustment.
+
+Install FFmpeg with VP9 support as well as the capture requirements above.
+Capture each site locale and both themes, then review and publish the complete set:
+
+```sh
+DEMO_LOCALE=ja DEMO_THEME=dark npm run capture:demo
+npm run capture:demo:publish
+npm run check
+```
+
+`DEMO_LOCALE` defaults to `en` and `DEMO_THEME` to `light`. Results go to
+`artifacts/sketch-demos/<locale>-<theme>/`; `DEMO_OUTPUT` selects another path.
+Raw PNG frames are removed after encoding unless `DEMO_KEEP_FRAMES=1`.
+The encoder uses VP9 quality 24 and a long keyframe interval to keep static
+artwork small, with a short dissolve back to the original hero at the loop end.
+The publisher requires every locale/theme pair, checks the codec, absence of
+audio, dimensions, frame rate, duration and size with FFprobe, then writes
+`public/assets/demos/` and its source/hash manifest. `DEMO_DIRECTORY` selects a
+different capture set. Keep homepage and store stills free of tool bubbles.
+
 ## Release visual
 
 After preparing the app, run `RELEASE_VERSION=1.0.13 npm run capture:release`.

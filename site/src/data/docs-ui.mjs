@@ -47,6 +47,7 @@ export const docsUI = brandTranslations({
       "android": "Use a pen that supports pressure. A rubber-tipped stylus counts as a finger, and fingers never draw."
     },
     "imageOpen": "Open full-size screenshot",
+    "sketchDemo": "Demonstration of arranging floating tools, focusing on the canvas, choosing a green brush and adjusting its softness.",
     "landing": {
       "sections": {
         "sketch": {
@@ -257,6 +258,7 @@ export const docsUI = brandTranslations({
       "android": "筆圧に対応したペンを使ってください。先端がゴムのスタイラスは指として扱われ、指では描画されません。"
     },
     "imageOpen": "スクリーンショットを原寸で開く",
+    "sketchDemo": "フローティングツールを配置し、キャンバスに集中できる表示に切り替え、緑色のブラシを選んで柔らかさを調整するデモ。",
     "landing": {
       "sections": {
         "sketch": {
@@ -382,6 +384,7 @@ export const docsUI = brandTranslations({
       "android": "请使用支持压感的笔。橡胶头触控笔会被当作手指，而手指不会画出笔画。"
     },
     "imageOpen": "打开原尺寸截图",
+    "sketchDemo": "演示如何摆放浮动工具、专注画布、选择绿色画笔并调整其柔软度。",
     "landing": {
       "sections": {
         "sketch": {
@@ -507,6 +510,7 @@ export const docsUI = brandTranslations({
       "android": "請使用支援筆壓的筆。橡膠頭觸控筆會被當作手指，而手指不會畫出筆畫。"
     },
     "imageOpen": "開啟原始大小截圖",
+    "sketchDemo": "示範如何擺放浮動工具、專注畫布、選擇綠色筆刷並調整其柔軟度。",
     "landing": {
       "sections": {
         "sketch": {
@@ -632,6 +636,7 @@ export const docsUI = brandTranslations({
       "android": "필압을 지원하는 펜을 사용하세요. 끝이 고무로 된 스타일러스는 손가락으로 인식되며, 손가락으로는 그려지지 않습니다."
     },
     "imageOpen": "원본 크기 스크린샷 열기",
+    "sketchDemo": "떠 있는 도구를 배치하고, 캔버스에 집중하고, 녹색 브러시를 선택하고 부드러움을 조절하는 시연.",
     "landing": {
       "sections": {
         "sketch": {

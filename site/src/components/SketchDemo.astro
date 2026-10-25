@@ -1,0 +1,50 @@
+---
+import { docsUI } from '../data/docs-ui.mjs';
+import { capturePair } from '../lib/captures.mjs';
+import type { Locale } from '../lib/site';
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const image = capturePair('showcase/sketch', locale);
+const alt = docsUI[locale].landing.sections.sketch.image.alt;
+---
+<figure class="guide-figure sketch-demo" data-sketch-demo>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset={image.dark} />
+    <img src={image.light} alt={alt} width="1920" height="1080" decoding="async" />
+  </picture>
+  <video width="1920" height="1080" autoplay loop muted playsinline preload="none"
+    aria-label={docsUI[locale].sketchDemo}
+    data-light={`/assets/demos/${locale}/sketch-light.webm`}
+    data-dark={`/assets/demos/${locale}/sketch-dark.webm`}></video>
+</figure>
+<script>
+  for (const figure of document.querySelectorAll<HTMLElement>('[data-sketch-demo]')) {
+    const video = figure.querySelector('video')!;
+    const appearance = matchMedia('(prefers-color-scheme: dark)');
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+    let visible = false;
+    const update = () => {
+      if (reduced.matches || !visible || document.hidden) {
+        video.pause();
+        if (reduced.matches) figure.removeAttribute('data-playing');
+        return;
+      }
+      const source = appearance.matches ? video.dataset.dark! : video.dataset.light!;
+      if (video.getAttribute('src') !== source) {
+        figure.removeAttribute('data-playing');
+        video.src = source;
+        video.load();
+      }
+      void video.play().catch(() => {});
+    };
+    video.addEventListener('playing', () => figure.setAttribute('data-playing', ''));
+    video.addEventListener('error', () => figure.removeAttribute('data-playing'));
+    new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting;
+      update();
+    }, { threshold: .15 }).observe(figure);
+    appearance.addEventListener('change', update);
+    reduced.addEventListener('change', update);
+    document.addEventListener('visibilitychange', update);
+  }
+</script>

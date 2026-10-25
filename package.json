@@ -20,6 +20,8 @@
     "capture:release": "bash site/scripts/run-private-capture.sh site/scripts/release-visual.mjs",
     "capture:release:native": "node site/scripts/release-visual-native.mjs",
     "capture:store": "node site/scripts/store/capture.mjs",
+    "capture:demo": "bash site/scripts/run-private-capture.sh site/scripts/capture-demo.mjs",
+    "capture:demo:publish": "node site/scripts/publish-demos.mjs",
     "check:branding": "node site/scripts/check-branding.mjs"
   },
   "devDependencies": {

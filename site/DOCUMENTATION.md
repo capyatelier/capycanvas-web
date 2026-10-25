@@ -42,7 +42,12 @@ its former path to `docRedirects`; the build writes a redirect page for it under
 
 The overview (`components/Documentation.astro`, copy in `src/data/docs-ui.mjs`)
 uses the author's Sketch, Paint and Photo stories in every language. Each
-section opens with its workspace screenshot, followed by the title and story.
+section opens with its workspace image, followed by the title and story. Sketch
+uses a silent, automatic WebM loop with no visible controls, showing how to place
+the tool bubbles, enter Zen mode, choose a green Blotty Ink brush and adjust its
+hardness. The video uses the page's language and appearance. It loads when the
+image comes into view and pauses offscreen or in a hidden tab. Reduced motion,
+disabled JavaScript and playback errors keep the clean workspace still.
 The closing statement and guide links sit side by side when space allows and
 stack on narrow screens. The English page also includes the README Tools table. Its
 personal voice follows the app README; the lookup rules in WRITING.md apply to

@@ -5,15 +5,6 @@ const rgba = hex => [...hex.match(/[\da-f]{2}/gi).map(byte => parseInt(byte, 16)
 const action = action => ({ type: 'action', action });
 const invoke = command => action({ type: 'invoke', command });
 const color = hex => action({ type: 'set_color', rgba: rgba(hex) });
-const bubble = action => ({ type: 'action', action: { type: 'bubble', action } });
-const takeBubble = (header, position, storePosition) => ['down', 'up'].map(phase => ({
-  ...bubble({ type: 'drag', grab: { kind: 'header', id: header }, phase, position, viewport: [reference.width, reference.height] }),
-  storePosition,
-}));
-
-const sketchHeader = { brush: 7, color: 11 };
-const sketchBubbles = { brush: 23, color: 24 };
-const smallColorRing = 136;
 
 export const scenes = [
   {
@@ -21,9 +12,6 @@ export const scenes = [
     steps: [
       { type: 'frame', zoom: .96, focus: [1000, 912] },
       color('#000000'),
-      ...takeBubble(sketchHeader.brush, [556, 192], [330, 160]),
-      ...takeBubble(sketchHeader.color, [301, 406], [170, 300]),
-      bubble({ type: 'option', id: sketchBubbles.color, option: { kind: 'size', size: smallColorRing } }),
     ],
   },
   {

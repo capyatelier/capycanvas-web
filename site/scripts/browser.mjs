@@ -12,7 +12,7 @@ export async function browser({ gpu = false, headless = true, gpuArgs, width = 1
     ...(gpu ? ['--enable-gpu', '--enable-unsafe-webgpu', '--disable-accelerated-2d-canvas', ...(gpuArgs || (process.platform === 'linux' ? ['--use-angle=vulkan', '--enable-features=Vulkan', '--disable-vulkan-surface'] : []))] : ['--disable-gpu']), 'about:blank'];
   const chrome = spawn(process.env.CHROME || 'google-chrome', args, { stdio: ['ignore', 'ignore', 'pipe', 'pipe', 'pipe'], env: { ...process.env, ...env } });
   let seq = 0, buffer = '', session, stderr = '';
-  const pending = new Map(), errors = [];
+  const pending = new Map(), errors = [], listeners = new Map();
   chrome.stderr.on('data', data => { stderr += data; });
   const fail = error => { for (const item of pending.values()) { clearTimeout(item.timer); item.reject(error); } pending.clear(); };
   chrome.on('error', fail);
@@ -23,6 +23,7 @@ export async function browser({ gpu = false, headless = true, gpuArgs, width = 1
       const end = buffer.indexOf('\0');
       if (end < 0) break;
       const event = JSON.parse(buffer.slice(0, end)); buffer = buffer.slice(end + 1);
+      if (event.method) for (const listener of listeners.get(event.method) || []) listener(event.params);
       if (event.id) {
         const waiter = pending.get(event.id);
         if (!waiter) continue;
@@ -70,6 +71,7 @@ export async function browser({ gpu = false, headless = true, gpuArgs, width = 1
     await call('Emulation.setDeviceMetricsOverride', { width, height, deviceScaleFactor: scale, mobile: false });
   } catch (error) { await close(); throw error; }
   return { call, evaluate, until, close, errors,
+    on(method, listener) { if (!listeners.has(method)) listeners.set(method, new Set()); listeners.get(method).add(listener); return () => listeners.get(method).delete(listener); },
     async navigate(url) { await call('Page.navigate', { url }); await until(`document.readyState === 'complete' && location.href !== 'about:blank'`); },
     async theme(value) { await call('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-color-scheme', value }] }); },
     async screenshot(path, full = false) {
