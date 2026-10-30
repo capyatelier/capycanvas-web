@@ -2,23 +2,25 @@
 import { docsUI } from '../data/docs-ui.mjs';
 import { capturePair } from '../lib/captures.mjs';
 import type { Locale } from '../lib/site';
-interface Props { locale: Locale }
-const { locale } = Astro.props;
-const image = capturePair('showcase/sketch', locale);
-const alt = docsUI[locale].landing.sections.sketch.image.alt;
+interface Props { locale: Locale; id: 'sketch' | 'paint' }
+const { locale, id } = Astro.props;
+const copy = docsUI[locale];
+const { shot, alt } = copy.landing.sections[id].image;
+const image = capturePair(shot, locale);
+const label = { sketch: copy.sketchDemo, paint: copy.paintDemo }[id];
 ---
-<figure class="guide-figure sketch-demo" data-sketch-demo>
+<figure class="guide-figure workspace-demo" data-workspace-demo={id}>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset={image.dark} />
     <img src={image.light} alt={alt} width="1920" height="1080" decoding="async" />
   </picture>
   <video width="1920" height="1080" autoplay loop muted playsinline preload="none"
-    aria-label={docsUI[locale].sketchDemo}
-    data-light={`/assets/demos/${locale}/sketch-light.webm`}
-    data-dark={`/assets/demos/${locale}/sketch-dark.webm`}></video>
+    aria-label={label}
+    data-light={`/assets/demos/${locale}/${id}-light.webm`}
+    data-dark={`/assets/demos/${locale}/${id}-dark.webm`}></video>
 </figure>
 <script>
-  for (const figure of document.querySelectorAll<HTMLElement>('[data-sketch-demo]')) {
+  for (const figure of document.querySelectorAll<HTMLElement>('[data-workspace-demo]')) {
     const video = figure.querySelector('video')!;
     const appearance = matchMedia('(prefers-color-scheme: dark)');
     const reduced = matchMedia('(prefers-reduced-motion: reduce)');

@@ -141,32 +141,50 @@ Reproduction means the same source, actions, artwork and composition. GPU, fonts
 Chrome versions and input timing can change individual bytes, so review new
 images rather than expecting identical output.
 
-## Sketch demonstration
+## Sketch and Paint demonstrations
 
-The documentation overview's Sketch loop is a real 1920 × 1080 editor recording
-at 24 fps, with a filled circular pointer over trusted browser mouse input.
-`demo/motion.mjs` defines the paths, timing and short reading pauses in
+The documentation overview's Sketch and Paint loops are real 1920 × 1080 editor
+recordings at 24 fps, with a filled circular pointer over trusted browser input.
+
+Sketch: `demo/motion.mjs` defines the paths, timing and short reading pauses in
 `capture-demo.mjs`. The color wheel is Medium; the sequence selects leaf green
 and Blotty Ink, then shows the live tip during a hardness adjustment.
+
+Paint: `capture-paint-demo.mjs` opens `showcase/house.png` with Loaded Oil,
+switches to Blend, sets Painterly Blender to about 592 px and Crystal Blender to
+about 411 px with the Tool panel slider, and replays recorded pen strokes over
+the blue and pink sky. `demo/paint-strokes.json` holds those strokes in document
+coordinates with their timing, calibrated pressure and tilt, so they replay at
+any zoom; `demo/paint-motion.mjs` defines the travel between them. Hide cursor when
+painting is turned off so the brush outline stays visible during strokes. The
+finger then swipes the Tool Set column closed, opens Filters beside Layers, raises
+that panel, searches for Posterize, Crosshatch and Glass, taps Distortion to double
+it, and swipes Posterize away in Layers. Controls use mouse input, the Tool Set
+scroll and layer swipe use touch (rows only swipe for direct contact), and
+strokes use pen input. Filters without animation keep the loop small.
 
 Install FFmpeg with VP9 support as well as the capture requirements above.
 Capture each site locale and both themes, then review and publish the complete set:
 
 ```sh
 DEMO_LOCALE=ja DEMO_THEME=dark npm run capture:demo
+DEMO_LOCALE=ja DEMO_THEME=dark npm run capture:demo:paint
 npm run capture:demo:publish
 npm run check
 ```
 
 `DEMO_LOCALE` defaults to `en` and `DEMO_THEME` to `light`. Results go to
-`artifacts/sketch-demos/<locale>-<theme>/`; `DEMO_OUTPUT` selects another path.
-Raw PNG frames are removed after encoding unless `DEMO_KEEP_FRAMES=1`.
-The encoder uses VP9 quality 24 and a long keyframe interval to keep static
-artwork small, with a short dissolve back to the original hero at the loop end.
-The publisher requires every locale/theme pair, checks the codec, absence of
-audio, dimensions, frame rate, duration and size with FFprobe, then writes
-`public/assets/demos/` and its source/hash manifest. `DEMO_DIRECTORY` selects a
-different capture set. Keep homepage and store stills free of tool bubbles.
+`artifacts/sketch-demos/<locale>-<theme>/` and `artifacts/paint-demos/<locale>-<theme>/`;
+`DEMO_OUTPUT` selects another path. Raw PNG frames are removed after encoding
+unless `DEMO_KEEP_FRAMES=1`. Sketch uses VP9 quality 24 and Paint quality 30 with
+a 1.4 Mbit/s cap, both with a long keyframe interval to keep static artwork
+small and a short dissolve back to the original hero at the loop end.
+The publisher requires every locale/theme pair of both demos, checks the codec,
+absence of audio, dimensions, frame rate, duration and size with FFprobe, then
+writes `public/assets/demos/` and its source/hash manifest.
+`SKETCH_DEMO_DIRECTORY` and `PAINT_DEMO_DIRECTORY` select other capture sets, so
+one demo can be republished with the other's approved captures. Keep homepage
+and store stills free of tool bubbles.
 
 ## Release visual
 

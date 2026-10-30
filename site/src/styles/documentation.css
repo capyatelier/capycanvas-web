@@ -36,9 +36,9 @@ html[data-page="documentation"] .nav-inner { max-width: 1320px; }
 .docs-stories p { color: var(--ink); font-size: 16px; line-height: 1.8; margin-bottom: 18px; }
 .docs-stories .guide-image-link { display: block; }
 .docs-stories .guide-figure { margin: 0; }
-.sketch-demo { position: relative; }
-.sketch-demo video { position: absolute; inset: 0; display: block; width: 100%; height: auto; border-radius: var(--surface-radius); visibility: hidden; }
-.sketch-demo[data-playing] video { visibility: visible; }
+.workspace-demo { position: relative; }
+.workspace-demo video { position: absolute; inset: 0; display: block; width: 100%; height: auto; border-radius: var(--surface-radius); visibility: hidden; }
+.workspace-demo[data-playing] video { visibility: visible; }
 .docs-story-text { max-width: 760px; margin: auto; }
 .docs-story-text > p:first-child { font-style: italic; font-size: 17px; }
 .docs-story-summary { display: grid; grid-template-columns: 1.15fr 1fr; align-items: start; gap: 48px; margin-top: 32px; }

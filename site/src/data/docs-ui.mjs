@@ -48,6 +48,7 @@ export const docsUI = brandTranslations({
     },
     "imageOpen": "Open full-size screenshot",
     "sketchDemo": "Demonstration of arranging floating tools, focusing on the canvas, choosing a green brush and adjusting its softness.",
+    "paintDemo": "Demonstration of blending the sky with Painterly Blender and Crystal Blender, then finding and adding Posterize, Crosshatch and Glass in the Filters panel.",
     "landing": {
       "sections": {
         "sketch": {
@@ -259,6 +260,7 @@ export const docsUI = brandTranslations({
     },
     "imageOpen": "スクリーンショットを原寸で開く",
     "sketchDemo": "フローティングツールを配置し、キャンバスに集中できる表示に切り替え、緑色のブラシを選んで柔らかさを調整するデモ。",
+    "paintDemo": "絵画風混色と結晶混色で空を混色し、フィルターパネルで階調化、クロスハッチ、ガラスを探して追加するデモ。",
     "landing": {
       "sections": {
         "sketch": {
@@ -385,6 +387,7 @@ export const docsUI = brandTranslations({
     },
     "imageOpen": "打开原尺寸截图",
     "sketchDemo": "演示如何摆放浮动工具、专注画布、选择绿色画笔并调整其柔软度。",
+    "paintDemo": "演示如何用绘画混色和晶体混色融合天空，再在滤镜面板中查找并添加色调分离、交叉排线和玻璃。",
     "landing": {
       "sections": {
         "sketch": {
@@ -511,6 +514,7 @@ export const docsUI = brandTranslations({
     },
     "imageOpen": "開啟原始大小截圖",
     "sketchDemo": "示範如何擺放浮動工具、專注畫布、選擇綠色筆刷並調整其柔軟度。",
+    "paintDemo": "示範如何用繪畫混色和晶體混色融合天空，再在濾鏡面板中尋找並加入色調分離、交叉排線和玻璃。",
     "landing": {
       "sections": {
         "sketch": {
@@ -637,6 +641,7 @@ export const docsUI = brandTranslations({
     },
     "imageOpen": "원본 크기 스크린샷 열기",
     "sketchDemo": "떠 있는 도구를 배치하고, 캔버스에 집중하고, 녹색 브러시를 선택하고 부드러움을 조절하는 시연.",
+    "paintDemo": "회화풍 혼색과 결정 혼색으로 하늘을 섞은 뒤, 필터 패널에서 포스터화, 교차선, 유리를 찾아 추가하는 시연.",
     "landing": {
       "sections": {
         "sketch": {

@@ -47,6 +47,7 @@ export const additionalDocsUI = {
     },
     "imageOpen": "Abrir captura de pantalla en tamaño completo",
     "sketchDemo": "Demostración de cómo colocar herramientas flotantes, centrarse en el lienzo, elegir un pincel verde y ajustar su suavidad.",
+    "paintDemo": "Demostración de cómo mezclar el cielo con Mezclador pictórico y Mezclador de cristal, y de cómo buscar y añadir Posterizar, Trama cruzada y Vidrio en el panel Filtros.",
     "landing": {
       "sections": {
         "sketch": {
@@ -173,6 +174,7 @@ export const additionalDocsUI = {
     },
     "imageOpen": "Abra a captura de tela em tamanho real",
     "sketchDemo": "Demonstração de como posicionar ferramentas flutuantes, focar na tela, escolher um pincel verde e ajustar sua suavidade.",
+    "paintDemo": "Demonstração de como misturar o céu com Misturador pictórico e Misturador cristalino e de como encontrar e adicionar Posterizar, Hachura cruzada e Vidro no painel Filtros.",
     "landing": {
       "sections": {
         "sketch": {
@@ -299,6 +301,7 @@ export const additionalDocsUI = {
     },
     "imageOpen": "Buka tangkapan layar ukuran penuh",
     "sketchDemo": "Demonstrasi menata alat mengambang, berfokus pada kanvas, memilih kuas hijau, dan menyesuaikan kelembutannya.",
+    "paintDemo": "Demonstrasi membaurkan langit dengan Pembaur Lukis dan Pembaur Kristal, lalu mencari dan menambahkan Posterisasi, Arsir Silang, dan Kaca di panel Filter.",
     "landing": {
       "sections": {
         "sketch": {
@@ -425,6 +428,7 @@ export const additionalDocsUI = {
     },
     "imageOpen": "Ouvrir la capture d'écran en taille réelle",
     "sketchDemo": "Démonstration du placement des outils flottants, du mode de concentration sur la toile, du choix d’un pinceau vert et du réglage de sa douceur.",
+    "paintDemo": "Démonstration du mélange du ciel avec le Mélangeur pictural et le Mélangeur cristallin, puis de la recherche et de l’ajout de Postérisation, Hachures croisées et Verre dans le panneau Filtres.",
     "landing": {
       "sections": {
         "sketch": {
@@ -551,6 +555,7 @@ export const additionalDocsUI = {
     },
     "imageOpen": "Öffnen Sie den Screenshot in voller Größe",
     "sketchDemo": "Vorführung: schwebende Werkzeuge anordnen, auf die Leinwand konzentrieren, einen grünen Pinsel wählen und seine Weichheit einstellen.",
+    "paintDemo": "Vorführung: den Himmel mit „Malerischer Mischpinsel“ und „Kristall-Mischpinsel“ vermischen, dann „Tontrennung“, „Kreuzschraffur“ und „Glas“ im Bedienfeld „Filter“ suchen und hinzufügen.",
     "landing": {
       "sections": {
         "sketch": {
@@ -677,6 +682,7 @@ export const additionalDocsUI = {
     },
     "imageOpen": "Открыть полноразмерный скриншот",
     "sketchDemo": "Демонстрация размещения плавающих инструментов, перехода к работе без отвлекающих элементов, выбора зелёной кисти и настройки её мягкости.",
+    "paintDemo": "Демонстрация смешивания неба инструментами «Живописное смешивание» и «Кристаллическое смешивание», затем поиска и добавления фильтров «Постеризация», «Перекрёстная штриховка» и «Стекло» на панели «Фильтры».",
     "landing": {
       "sections": {
         "sketch": {
@@ -803,6 +809,7 @@ export const additionalDocsUI = {
     },
     "imageOpen": "เปิดภาพหน้าจอขนาดเต็ม",
     "sketchDemo": "สาธิตการจัดวางเครื่องมือลอย การมุ่งความสนใจที่ผืนผ้าใบ การเลือกพู่กันสีเขียว และการปรับความนุ่มของพู่กัน",
+    "paintDemo": "สาธิตการเกลี่ยสีท้องฟ้าด้วยเกลี่ยสีแบบภาพวาดและเกลี่ยสีผลึก จากนั้นค้นหาและเพิ่มลดระดับสี เส้นแรเงาไขว้ และกระจกในแผงฟิลเตอร์",
     "landing": {
       "sections": {
         "sketch": {
@@ -929,6 +936,7 @@ export const additionalDocsUI = {
     },
     "imageOpen": "Mở ảnh chụp màn hình kích thước đầy đủ",
     "sketchDemo": "Minh họa cách sắp xếp công cụ nổi, tập trung vào khung vẽ, chọn cọ xanh lá và điều chỉnh độ mềm của cọ.",
+    "paintDemo": "Minh họa cách hòa màu bầu trời bằng Hòa màu kiểu tranh và Hòa màu tinh thể, rồi tìm và thêm Giảm mức màu, Gạch chéo và Kính trong bảng Bộ lọc.",
     "landing": {
       "sections": {
         "sketch": {
@@ -1055,6 +1063,7 @@ export const additionalDocsUI = {
     },
     "imageOpen": "Tam boyutlu ekran görüntüsünü aç",
     "sketchDemo": "Yüzen araçları yerleştirme, tuvale odaklanma, yeşil bir fırça seçme ve yumuşaklığını ayarlama gösterimi.",
+    "paintDemo": "Gökyüzünü Ressamca karıştırıcı ve Kristal karıştırıcı ile karıştırma, ardından Filtreler panelinde Posterleştirme, Çapraz tarama ve Cam filtrelerini bulup ekleme gösterimi.",
     "landing": {
       "sections": {
         "sketch": {
@@ -1181,6 +1190,7 @@ export const additionalDocsUI = {
     },
     "imageOpen": "Apri lo screenshot a dimensione intera",
     "sketchDemo": "Dimostrazione di come disporre gli strumenti mobili, concentrarsi sulla tela, scegliere un pennello verde e regolarne la morbidezza.",
+    "paintDemo": "Dimostrazione di come sfumare il cielo con Sfumino pittorico e Sfumino cristallino, poi cercare e aggiungere Posterizza, Tratteggio incrociato e Vetro dal pannello Filtri.",
     "landing": {
       "sections": {
         "sketch": {
