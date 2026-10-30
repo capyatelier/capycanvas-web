@@ -297,7 +297,8 @@ The documentation overview uses 1080p Sketch and Paint demonstrations in every
 language and both themes, with silent automatic loops and no visible playback controls.
 Only the visible variant loads; reduced motion keeps the clean still image.
 See [the capture guide](site/scripts/capture/README.md#sketch-and-paint-demonstrations)
-for recording and publishing the videos. Homepage and store heroes stay static.
+for recording and publishing the videos. The homepage plays the opening of the
+same Paint and Sketch videos and keeps Photo still; store heroes stay static.
 
 Google Play listing assets and the manual publishing workflow are documented in
 [the Google Play listing guide](store/google-play/README.md).

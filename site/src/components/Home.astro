@@ -4,6 +4,7 @@ import { appUrl, route, type Locale } from '../lib/site';
 import { capturePair } from '../lib/captures.mjs';
 import { getImage } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
+import demos from '../../public/assets/demos/manifest.json';
 interface Props { locale: Locale }
 const { locale } = Astro.props;
 const t = content[locale];
@@ -20,14 +21,21 @@ const responsive = Object.fromEntries(await Promise.all(slides.map(async ({ id }
   return [theme, image.srcSet.attribute];
 })))])));
 const sizes = '(max-width: 540px) calc(100vw - 32px), (max-width: 1072px) calc(100vw - 48px), 1024px';
+const clips: Record<string, Record<string, { file: string; hero: number }>> = Object.fromEntries(Object.entries(demos.demos).map(([id, demo]) =>
+  [id, Object.fromEntries(demo.videos.filter(video => video.locale === locale).map(video => [video.theme, video]))]));
 ---
 <main id="main" class="hero">
   <h1 class="visually-hidden">{t.home.title}</h1>
   <div class="workspace showcase" data-showcase>
-    {slides.map(({ id }) => <picture class="showcase-frame" data-slide={id}>
-      <source media="(prefers-color-scheme: dark)" srcset={responsive[id].dark} sizes={sizes} />
-      <img src={images[id].light} width="1920" height="1080" alt={t.home.slides[id]} srcset={responsive[id].light} sizes={sizes} loading={id === 'paint' ? 'eager' : 'lazy'} fetchpriority={id === 'paint' ? 'high' : 'low'} decoding="async" />
-    </picture>)}
+    {slides.map(({ id }) => <div class="showcase-frame" data-slide={id}>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset={responsive[id].dark} sizes={sizes} />
+        <img src={images[id].light} width="1920" height="1080" alt={t.home.slides[id]} srcset={responsive[id].light} sizes={sizes} loading={id === 'paint' ? 'eager' : 'lazy'} fetchpriority={id === 'paint' ? 'high' : 'low'} decoding="async" />
+      </picture>
+      {clips[id] && <video width="1920" height="1080" muted playsinline preload="none" aria-hidden="true"
+        data-light={`/assets/demos/${clips[id].light.file}`} data-light-end={clips[id].light.hero}
+        data-dark={`/assets/demos/${clips[id].dark.file}`} data-dark-end={clips[id].dark.hero}></video>}
+    </div>)}
     <fieldset class="showcase-switcher">
       <legend class="visually-hidden">{t.home.workspaces}</legend>
       <span class="showcase-indicator" aria-hidden="true"></span>
@@ -49,22 +57,48 @@ const sizes = '(max-width: 540px) calc(100vw - 32px), (max-width: 1072px) calc(1
   if (showcase) {
     const choices = [...showcase.querySelectorAll<HTMLInputElement>('input[type="radio"]')];
     const images = [...showcase.querySelectorAll<HTMLImageElement>('img')];
+    const videos = [...showcase.querySelectorAll<HTMLVideoElement>('video')];
+    const dark = matchMedia('(prefers-color-scheme: dark)');
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+    const saveData = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData;
+    const active = () => choices.find(choice => choice.checked)!.value;
     let timer: number | undefined;
+    let ready = false;
+    const advance = () => {
+      const current = choices.findIndex(choice => choice.checked);
+      choices[(current + 1) % choices.length].checked = true;
+      schedule();
+    };
+    const wait = () => { window.clearTimeout(timer); timer = window.setTimeout(advance, 13500); };
     const schedule = () => {
       window.clearTimeout(timer);
+      for (const video of videos) if (document.hidden || video.parentElement!.dataset.slide !== active()) video.pause();
       if (document.hidden) { showcase.removeAttribute('data-playing'); return; }
       showcase.setAttribute('data-playing', '');
-      timer = window.setTimeout(() => {
-        const current = choices.findIndex(choice => choice.checked);
-        choices[(current + 1) % choices.length].checked = true;
-        schedule();
-      }, 13500);
+      const video = videos.find(video => video.parentElement!.dataset.slide === active());
+      if (!video || !ready || reduced.matches || saveData) { wait(); return; }
+      const theme = dark.matches ? 'dark' : 'light';
+      if (video.getAttribute('src') !== video.dataset[theme]) {
+        video.parentElement!.removeAttribute('data-playing');
+        video.src = video.dataset[theme]!;
+      }
+      video.dataset.end = video.dataset[`${theme}End`];
+      video.currentTime = 0;
+      void video.play().catch(() => { if (video.paused) wait(); });
     };
+    for (const video of videos) {
+      const frame = video.parentElement!;
+      video.addEventListener('playing', () => frame.setAttribute('data-playing', ''));
+      video.addEventListener('error', () => { frame.removeAttribute('data-playing'); if (frame.dataset.slide === active()) wait(); });
+      video.addEventListener('timeupdate', () => { if (!video.paused && video.currentTime >= Number(video.dataset.end)) { video.pause(); advance(); } });
+    }
     for (const choice of choices) choice.addEventListener('change', schedule);
     document.addEventListener('visibilitychange', schedule);
+    dark.addEventListener('change', schedule);
+    reduced.addEventListener('change', schedule);
     const first = images.find(image => image.closest('[data-slide]')?.getAttribute('data-slide') === 'paint');
     first?.decode().catch(() => undefined).then(() => {
-      const preload = () => Promise.all(images.map(image => { image.loading = 'eager'; return image.decode().catch(() => undefined); })).then(schedule);
+      const preload = () => Promise.all(images.map(image => { image.loading = 'eager'; return image.decode().catch(() => undefined); })).then(() => { ready = true; schedule(); });
       if (typeof window.requestIdleCallback === 'function') window.requestIdleCallback(preload, { timeout: 2500 });
       else window.setTimeout(preload, 1000);
     });

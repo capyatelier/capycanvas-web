@@ -134,7 +134,9 @@ rewritten, so a recapture doesn't add every image to the repository again.
 
 The manual's images all come from one app revision. The homepage slides can
 come from a newer one: prepare that revision and run
-`CAPTURE_ONLY=showcase npm run capture`. The other images are kept as long as
+`CAPTURE_ONLY=showcase npm run capture`. `CAPTURE_SCENES=paint` (a comma
+list of `sketch`, `paint`, `photo`) captures only those slides, so each slide's
+still can match the app revision of its demo video. The other images are kept as long as
 their files are unchanged; otherwise the run is marked `partial`.
 
 Reproduction means the same source, actions, artwork and composition. GPU, fonts,
@@ -181,7 +183,10 @@ a 1.4 Mbit/s cap, both with a long keyframe interval to keep static artwork
 small and a short dissolve back to the original hero at the loop end.
 The publisher requires every locale/theme pair of both demos, checks the codec,
 absence of audio, dimensions, frame rate, duration and size with FFprobe, then
-writes `public/assets/demos/` and its source/hash manifest.
+writes `public/assets/demos/` and its source/hash manifest. The manifest also
+records where each homepage clip ends: after the pink sky in Paint and after leaf
+green in Sketch. The homepage plays those openings from the same files, so a
+reader who opens both pages downloads each video once.
 `SKETCH_DEMO_DIRECTORY` and `PAINT_DEMO_DIRECTORY` select other capture sets, so
 one demo can be republished with the other's approved captures. Keep homepage
 and store stills free of tool bubbles.

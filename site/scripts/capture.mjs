@@ -126,8 +126,8 @@ async function runChapter(name, display, attempt) {
       const total = pixels.length / 4;
       assert.ok(buckets.size > 30 && Math.max(...buckets.values()) < total * .9, 'Screenshot contains rendered artwork, not a blank or missing GPU surface');
     };
-    const { shoot, record } = shooter({ b, lang, names: nameLocalizer(b, localize), output, captures, previous: committed, verifyPixels, width, height });
-    await chapters[name]({ e, b, shoot, record, verifyPixels, example, message, examples, output, review });
+    const { capture, shoot, record } = shooter({ b, lang, names: nameLocalizer(b, localize), output, captures, previous: committed, verifyPixels, width, height });
+    await chapters[name]({ e, b, capture, shoot, record, verifyPixels, example, message, examples, output, review });
     assert.deepEqual(b.errors, [], `No application errors during ${name}`);
     timings[name] = Math.round((Date.now() - begun) / 1000);
     console.log(`Finished ${name} in ${timings[name]} s`);

@@ -12,7 +12,7 @@ const run = promisify(execFile);
 const shared = ['capture/demo/pointer.mjs', 'browser.mjs', 'serve.mjs', 'capture/editor.mjs', 'capture/languages.mjs', 'capture/shoot.mjs'];
 const demos = {
   sketch: {
-    seconds: [24, 28], bytes: 1500000,
+    seconds: [24, 28], bytes: 1500000, hero: ['color-changed', .9],
     recipes: ['capture-demo.mjs', 'capture/demo/motion.mjs', 'capture/demo/encode.mjs', ...shared],
     check: capture => {
       assert.equal(capture.colorWheel, 'Medium (216px)');
@@ -21,7 +21,7 @@ const demos = {
     },
   },
   paint: {
-    seconds: [30, 36], bytes: 3000000,
+    seconds: [30, 36], bytes: 3000000, hero: ['pink-sky-crystal', .2],
     recipes: ['capture-paint-demo.mjs', 'capture/demo/paint-motion.mjs', 'capture/demo/paint-strokes.json', 'capture/demo/motion.mjs', ...shared],
     check: capture => {
       assert.ok(Math.abs(capture.painterlySize - 592) <= 12 && Math.abs(capture.crystalSize - 411) <= 10, 'Blender sizes');
@@ -53,7 +53,10 @@ for (const [id, demo] of Object.entries(demos)) {
     const duration = Number(probe.format.duration);
     assert.ok(duration >= demo.seconds[0] && duration < demo.seconds[1], `${id} demo length: ${source}`);
     assert.ok(bytes.length < demo.bytes, `Small download: ${source}`);
-    planned.push({ source, file: `${locale}/${id}-${theme}.webm`, locale, theme, duration,
+    const [stage, hold] = demo.hero;
+    const hero = Number((capture.stages.find(entry => entry.name === stage).at - capture.firstFrameAt + hold).toFixed(2));
+    assert.ok(hero > 10 && hero < duration, `${id} homepage clip ends inside the video: ${source}`);
+    planned.push({ source, file: `${locale}/${id}-${theme}.webm`, locale, theme, duration, hero,
       bytes: bytes.length, sha256: hash(bytes), revision });
   }
   const recipeHashes = Object.fromEntries(await Promise.all(demo.recipes.map(async file => [file, hash(await readFile(`site/scripts/${file}`))])));

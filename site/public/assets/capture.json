@@ -26,7 +26,7 @@
     "browser.mjs": "c48fb1a448c4310f888eb8e76cc03764d143b91984de2dbee9c2ef1d01396602",
     "capture-compatibility.mjs": "c1265671aa317d01a1d8a6e4d6af0e66cd0ab9c5d74aee1c55c89d20aa796ce1",
     "capture-headless.sh": "e755bc8cacb8d76f270e06bf6252b6c535ce4d9d62e1dc41e805890875cf5bb9",
-    "capture.mjs": "285ad9857c9bc9fd50c087117763271c8b3cbf9e6c227ee0b9cf5ff34de18697",
+    "capture.mjs": "bd1dd1b13b5734fd64d92c3621a82d12d7c2b5565b2c55ba572949e8c1a5398b",
     "capture/annotations.mjs": "519395e133f8d671a2afe47813819f61e27638459dde744a2418f2a03f321e5e",
     "capture/docs/brushes.mjs": "9199335583f9629869d24375a61031a55d13fc8c28abad076beedea1e13eb047",
     "capture/docs/bubbles.mjs": "cbabbba5898fe94b35f1b6bb650f168ead827718933bebdcd0ed5d9fc7bfee35",
@@ -52,7 +52,7 @@
     "capture/languages.mjs": "cd9dcbf4da7f54ce67be95a2e7ee80989625f6e8b2acd07724ac09a5ee7969b4",
     "capture/shoot.mjs": "e215ca37e528a73a5a829369797098efa068d83a10edaad2989a3437fcd82ad5",
     "capture/showcase-scenes.mjs": "2ab43bb35dc3869921ae4ce0e15219134d394d2ce4cf491c2a2d6bc520788484",
-    "capture/showcase.mjs": "6de3a4f4f43d3741dd422449a840d4ada2ed4002b23535fc31648b529305d3e6",
+    "capture/showcase.mjs": "7abe37fd42f7a4f140006203fcffa6776fa8ef9f28beeda2f2866c694165afe0",
     "prepare-capture.mjs": "13a7b9db0561c429376d2edf4b241a1552c644dbe3e1a3761843c94a697f18d6",
     "serve.mjs": "8b0bb3577fd421ed6147b66b67326e022f06787be73b7f612f8ffa60cb86eac3"
   },
@@ -120578,7 +120578,7 @@
     },
     {
       "file": "showcase/de/paint-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "dark",
       "locales": [
@@ -120589,13 +120589,13 @@
         1920,
         1080
       ],
-      "bytes": 340838,
-      "sha256": "adec10cf4ed3352c90b6ca2268b63fd66c29fe3ddb6259b05bbcc97ee92525fd",
+      "bytes": 337678,
+      "sha256": "ba4e2f70cf96d7833536a498d635f499cf44e132a3c1c4bf968e2b9e22906725",
       "annotations": []
     },
     {
       "file": "showcase/de/paint-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "light",
       "locales": [
@@ -120606,8 +120606,8 @@
         1920,
         1080
       ],
-      "bytes": 341122,
-      "sha256": "09022555ca8d68bad401fb4a617d3270374dc94f65b8aa4c6b18b4fdce356f82",
+      "bytes": 337486,
+      "sha256": "98e53676d9e829fcc8eaa1b979dfcb2fab7752ccfb6b8721f4424bf108201b5b",
       "annotations": []
     },
     {
@@ -120680,7 +120680,7 @@
     },
     {
       "file": "showcase/en/paint-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "dark",
       "locales": [
@@ -120691,13 +120691,13 @@
         1920,
         1080
       ],
-      "bytes": 330564,
-      "sha256": "1195d6f8d0bb730024dc6c1024730746c1f8f76f8a14681048be52f5e7f328b7",
+      "bytes": 334650,
+      "sha256": "038324106cc1cad25c24be55fc0ef603c529a470ebd5ac5544fd0c3fdc355d55",
       "annotations": []
     },
     {
       "file": "showcase/en/paint-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "light",
       "locales": [
@@ -120708,8 +120708,8 @@
         1920,
         1080
       ],
-      "bytes": 329598,
-      "sha256": "48c16f3bc80d0bdd8bb3b300717862aa74944323076f92e68885acc260908a09",
+      "bytes": 327964,
+      "sha256": "3f66c9c808c6cee562632d6208d7f26a13b42b0cad4c2ee1b4832b7fd6231ac5",
       "annotations": []
     },
     {
@@ -120782,7 +120782,7 @@
     },
     {
       "file": "showcase/es/paint-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "dark",
       "locales": [
@@ -120793,13 +120793,13 @@
         1920,
         1080
       ],
-      "bytes": 354942,
-      "sha256": "8f69f5cbbcfc4e59e9503dd40f4e493493477600c300b72d22c4151ab8c9d12a",
+      "bytes": 354064,
+      "sha256": "f06c1facc8e27c17cacdcad0d8435b58bbcb09bde64b5cc27dbb77691b3e46a8",
       "annotations": []
     },
     {
       "file": "showcase/es/paint-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "light",
       "locales": [
@@ -120810,8 +120810,8 @@
         1920,
         1080
       ],
-      "bytes": 352740,
-      "sha256": "5e1ea7f08e2363ffc7b5a81bb1a04832b3746e78caf541159224eacfbfb72803",
+      "bytes": 353082,
+      "sha256": "3172133be8630353968e122bae98157e3f2fd4e243dc7d32c231c4751ba8645e",
       "annotations": []
     },
     {
@@ -120884,7 +120884,7 @@
     },
     {
       "file": "showcase/fr/paint-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "dark",
       "locales": [
@@ -120895,13 +120895,13 @@
         1920,
         1080
       ],
-      "bytes": 347072,
-      "sha256": "9f7c78622049049353764220d1cce4a0f6de4e87c9c4a019b11887d5d735be18",
+      "bytes": 345710,
+      "sha256": "e91d775f34a292334cbd6dffca37f12915ce5790da39c093daa25774957472e4",
       "annotations": []
     },
     {
       "file": "showcase/fr/paint-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "light",
       "locales": [
@@ -120912,8 +120912,8 @@
         1920,
         1080
       ],
-      "bytes": 346578,
-      "sha256": "c8c2328ad6d43b5d53ef255e5bbd137088a968bad52b9fb8c54ae972a0ad6192",
+      "bytes": 344858,
+      "sha256": "f4822de4c431ebb45a69a4778d62b3288dd0ad0696846718108b179f9c166cf5",
       "annotations": []
     },
     {
@@ -120986,7 +120986,7 @@
     },
     {
       "file": "showcase/id/paint-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "dark",
       "locales": [
@@ -120997,13 +120997,13 @@
         1920,
         1080
       ],
-      "bytes": 339704,
-      "sha256": "fc65375da3e8c83b8c6954f41f3960963d53b0cfb80dd3d99b9b3fedf7dbd916",
+      "bytes": 336080,
+      "sha256": "d5c94621e1956cdadee4c3291214abc3941930b7de55708a7fed03078949a580",
       "annotations": []
     },
     {
       "file": "showcase/id/paint-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "light",
       "locales": [
@@ -121014,8 +121014,8 @@
         1920,
         1080
       ],
-      "bytes": 339408,
-      "sha256": "94157a3f91692ea7f0554c2011afc73d3d0bc89f6bd5d4b36d5dbd601f85f578",
+      "bytes": 335708,
+      "sha256": "8e7621360c7adee143f30b28419e29c9877a72c8837960043872939069e4b0e3",
       "annotations": []
     },
     {
@@ -121088,7 +121088,7 @@
     },
     {
       "file": "showcase/it/paint-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "dark",
       "locales": [
@@ -121099,13 +121099,13 @@
         1920,
         1080
       ],
-      "bytes": 345138,
-      "sha256": "8a7c99abb981c60625eb9ed6db2438dcfc45f7ae4fb0d92ee4aa04fbb42402d4",
+      "bytes": 342510,
+      "sha256": "97557afa7ab84ee4a5bf6dbd9257309a17115bb70de012db92970081f7337d70",
       "annotations": []
     },
     {
       "file": "showcase/it/paint-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "light",
       "locales": [
@@ -121116,8 +121116,8 @@
         1920,
         1080
       ],
-      "bytes": 343934,
-      "sha256": "b4e51e207b105be8c7063dc17214ac3b537f74ca7f6fbbd29d1b6dd986bb38d0",
+      "bytes": 341842,
+      "sha256": "64fea7125c0bb7d37509efd677c986146cbdb0e4cb0ea68f3e03d795d383f828",
       "annotations": []
     },
     {
@@ -121190,7 +121190,7 @@
     },
     {
       "file": "showcase/ja/paint-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "dark",
       "locales": [
@@ -121201,13 +121201,13 @@
         1920,
         1080
       ],
-      "bytes": 332204,
-      "sha256": "c70efa675919d2be3402ab369cd0de32071ff8490d138e33131eed139fcfc07b",
+      "bytes": 331592,
+      "sha256": "b2c1999ee01cb5c279c21b43bad24a3da4a31f4ecf87de18cc9052713ca23180",
       "annotations": []
     },
     {
       "file": "showcase/ja/paint-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "light",
       "locales": [
@@ -121218,8 +121218,8 @@
         1920,
         1080
       ],
-      "bytes": 331874,
-      "sha256": "e91822cbd76512fe7d3df16b5448815121bfeb9085c3a6ad998b5c8db88b392e",
+      "bytes": 330674,
+      "sha256": "1cb21fd2e0bba9d2634a8bd994549b9d1b324db57c2cf8531ba20feb344fa5c7",
       "annotations": []
     },
     {
@@ -121292,7 +121292,7 @@
     },
     {
       "file": "showcase/ko/paint-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "dark",
       "locales": [
@@ -121303,13 +121303,13 @@
         1920,
         1080
       ],
-      "bytes": 318938,
-      "sha256": "388b01604a00e3a9812b1dc32c7c73cbe3dbe9460829d40d105ebe100493177f",
+      "bytes": 318588,
+      "sha256": "349edf901ede617513dee155834a072d6e147d1022a2ac3637058018b4046965",
       "annotations": []
     },
     {
       "file": "showcase/ko/paint-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "light",
       "locales": [
@@ -121320,8 +121320,8 @@
         1920,
         1080
       ],
-      "bytes": 318612,
-      "sha256": "9a2149a1a381790996835ec988a97f79edb5d9c18a0c1764a28b2d00d00b8ddf",
+      "bytes": 318950,
+      "sha256": "7c5c4775ae49fee8d9251b57b942ec8c06e6175489cf6010fe218095c8401715",
       "annotations": []
     },
     {
@@ -121394,7 +121394,7 @@
     },
     {
       "file": "showcase/pt-BR/paint-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "dark",
       "locales": [
@@ -121405,13 +121405,13 @@
         1920,
         1080
       ],
-      "bytes": 355468,
-      "sha256": "b026f1fc426ba193384baa38260bec385e20579e35353194c003f5f29e1da180",
+      "bytes": 353040,
+      "sha256": "fb195c590e6d2f1a6da60bec3d9db593fec9aead79a1a467e5cd98d87bcae1b2",
       "annotations": []
     },
     {
       "file": "showcase/pt-BR/paint-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "light",
       "locales": [
@@ -121422,8 +121422,8 @@
         1920,
         1080
       ],
-      "bytes": 355320,
-      "sha256": "ed1dc4e057767533ca5f3a076d4fa59032e198b45725e38cdef804bb8d092295",
+      "bytes": 352246,
+      "sha256": "66f27593d3ddc04605a2ef89e07ff1e34f365b7f2517dc4d026944ad490e1b87",
       "annotations": []
     },
     {
@@ -121496,7 +121496,7 @@
     },
     {
       "file": "showcase/ru/paint-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "dark",
       "locales": [
@@ -121507,13 +121507,13 @@
         1920,
         1080
       ],
-      "bytes": 349548,
-      "sha256": "be9735a012d53278fd5086181b71eba76a62bb4355ebe07294ec4fe95042638d",
+      "bytes": 348292,
+      "sha256": "93f24a3c0a1fdc331b22325c92de9cf10a783504f4b05256dc358aed81b8d2bc",
       "annotations": []
     },
     {
       "file": "showcase/ru/paint-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "light",
       "locales": [
@@ -121524,8 +121524,8 @@
         1920,
         1080
       ],
-      "bytes": 348666,
-      "sha256": "d381f59497dda9e68421837ccadbdfa81cea9aca58eb6aa5d1fed9b8acad9d76",
+      "bytes": 347866,
+      "sha256": "7fb4d5b1da0c32c904d410f1323bfb43cacacc4ceda079622bbfe48ad3426781",
       "annotations": []
     },
     {
@@ -121598,7 +121598,7 @@
     },
     {
       "file": "showcase/th/paint-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "dark",
       "locales": [
@@ -121609,13 +121609,13 @@
         1920,
         1080
       ],
-      "bytes": 325194,
-      "sha256": "cdd8954c0927ae79d60887691f999096e3cbd09e8af6666c21147c461f41f1ba",
+      "bytes": 331172,
+      "sha256": "21d54b557c2f79c92df4434dfd90aa06a4f5cc74bcb426cf793c73bdee0331cd",
       "annotations": []
     },
     {
       "file": "showcase/th/paint-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "light",
       "locales": [
@@ -121626,8 +121626,8 @@
         1920,
         1080
       ],
-      "bytes": 321148,
-      "sha256": "acd6357ae19bef907129cee50ba81cd29dd31250ae8a786065e419240f316996",
+      "bytes": 331554,
+      "sha256": "810fe55c090b2e2de8f6ee30343111ead08fc6cba248b4e4d0391c78295aadd8",
       "annotations": []
     },
     {
@@ -121700,7 +121700,7 @@
     },
     {
       "file": "showcase/tr/paint-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "dark",
       "locales": [
@@ -121711,13 +121711,13 @@
         1920,
         1080
       ],
-      "bytes": 336164,
-      "sha256": "19ad27ba8ac502d37d5ab48413458588e3ef4790a58b03b26ad485efd441390c",
+      "bytes": 334776,
+      "sha256": "6dfae133e1dc48fad45b1319c4ba0059e1ac7af75911001a4c459762c3dfedb0",
       "annotations": []
     },
     {
       "file": "showcase/tr/paint-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "light",
       "locales": [
@@ -121728,8 +121728,8 @@
         1920,
         1080
       ],
-      "bytes": 335726,
-      "sha256": "54acd22a628584a462db7512ce504f603eaaaa2095c04a5ecb8aa55b6831577a",
+      "bytes": 334536,
+      "sha256": "9c66cc0aeef85d7e19e4f89f3566e3f96f4ed747af3cbdfee297e5ad28322e45",
       "annotations": []
     },
     {
@@ -121802,7 +121802,7 @@
     },
     {
       "file": "showcase/vi/paint-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "dark",
       "locales": [
@@ -121813,13 +121813,13 @@
         1920,
         1080
       ],
-      "bytes": 338982,
-      "sha256": "13ff8b7c5a7c36d6c1b3d739716006f57675731ea93ca03fc10c562c626e8af1",
+      "bytes": 337162,
+      "sha256": "80f3cc73d434b8cf62b901ddaeb78d4ff6d8b9830c0b194b0135c5f3d71c2558",
       "annotations": []
     },
     {
       "file": "showcase/vi/paint-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "light",
       "locales": [
@@ -121830,8 +121830,8 @@
         1920,
         1080
       ],
-      "bytes": 338436,
-      "sha256": "d11e097d24eb1ea044b684c8ebb609cc934dde3909deac8a03efeceaf0023c2e",
+      "bytes": 336234,
+      "sha256": "c5c6a80a6cbc22948f6cc8f373ba6a0588f2761e1b7264678d8d865d75d011aa",
       "annotations": []
     },
     {
@@ -121904,7 +121904,7 @@
     },
     {
       "file": "showcase/zh-Hant/paint-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "dark",
       "locales": [
@@ -121915,13 +121915,13 @@
         1920,
         1080
       ],
-      "bytes": 330916,
-      "sha256": "74a3f14aa3ee1e3a1424850bc760b67422e04fcf69a019fbbb5337183354b760",
+      "bytes": 329566,
+      "sha256": "ea05a6444df245342d5724b2cc48f87b08f3a2b925037c406f73406159035d59",
       "annotations": []
     },
     {
       "file": "showcase/zh-Hant/paint-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "light",
       "locales": [
@@ -121932,8 +121932,8 @@
         1920,
         1080
       ],
-      "bytes": 329794,
-      "sha256": "35d903ad1708cbe7aae96ff0e22f3c957249081abf3c88f661c8112a0981a04f",
+      "bytes": 329188,
+      "sha256": "50cb454bf01c587b91473145c3f7eda4bbd56bf9ec07199c5330290dbb7b98b1",
       "annotations": []
     },
     {
@@ -122006,7 +122006,7 @@
     },
     {
       "file": "showcase/zh/paint-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "dark",
       "locales": [
@@ -122017,13 +122017,13 @@
         1920,
         1080
       ],
-      "bytes": 328778,
-      "sha256": "c09cab3705a994afa631d8aa2ded4c8190d2d31270c6047dfbdf61b6e66b197a",
+      "bytes": 327306,
+      "sha256": "c29564f7452673906e5c0f90c9f9b81a9491b049d680f583de88d38bf5af315d",
       "annotations": []
     },
     {
       "file": "showcase/zh/paint-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126",
       "shot": "showcase/paint",
       "theme": "light",
       "locales": [
@@ -122034,8 +122034,8 @@
         1920,
         1080
       ],
-      "bytes": 328068,
-      "sha256": "12cf1e7201f4ac94ba786569deff21e1aa4baea13a59d1407d263a03be8ec865",
+      "bytes": 326940,
+      "sha256": "ae97cbe1b4afec6a86849c07c65c09083fe1f91b5baae5a30a4602c75421b97c",
       "annotations": []
     },
     {
@@ -122141,6 +122141,21 @@
       "hashes": {
         "app.js": "bad0a6ff49dd3d44e94a6a973abae2dc0958bada38cb367c52d1263bf32b88a1",
         "pkg/layer_web_bg.wasm": "8f5723797c8bfe803ddfd5af50df00e2358638a6094dcf763c463d35ae8358fd"
+      },
+      "browser": {
+        "protocolVersion": "1.3",
+        "product": "Chrome/156.0.8078.47",
+        "revision": "@1d17a2e2ee147bb7d6ae2ab6abdb3a2510c17775",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "jsVersion": "15.6.75.19"
+      }
+    },
+    "d7425d800af8d8780bf11923a5ed48d5be9b1126": {
+      "source": "https://github.com/capyatelier/capycanvas",
+      "patches": [],
+      "hashes": {
+        "app.js": "f77d6e6f4dcdfaf5c75f43ba51fcde6f5fbba4531dd7e55ed7211a79d0ac545e",
+        "pkg/layer_web_bg.wasm": "6ecef3a69dc06278a0b8f45cc513310a2496af38a2e1d941673da7cd43fe33fb"
       },
       "browser": {
         "protocolVersion": "1.3",

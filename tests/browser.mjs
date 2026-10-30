@@ -95,12 +95,26 @@ try {
   await b.navigate(host.url+'/?lang=en'); await b.theme('light'); await b.settle();
   await b.theme('dark'); await b.until("document.querySelector('.showcase-frame[data-slide=\"paint\"] img').currentSrc.includes('/paint-dark.')"); checks++;
   await b.until("document.querySelector('[data-showcase]').hasAttribute('data-playing')"); checks++;
-  await b.until("document.querySelector('.showcase input[value=\"photo\"]').checked", 20000); checks++;
+  const clip = slide => `document.querySelector('.showcase-frame[data-slide="${slide}"] video')`;
+  const finish = slide => b.evaluate(`${clip(slide)}.currentTime=Number(${clip(slide)}.dataset.end)-.4`);
+  await b.until(`${clip('paint')}.currentSrc.endsWith('/assets/demos/en/paint-dark.webm')&&${clip('paint')}.currentTime>.05&&document.querySelector('.showcase-frame[data-slide="paint"]').hasAttribute('data-playing')`, 20000); checks++;
+  check(await b.evaluate("!document.querySelector('.showcase-frame[data-slide=\"photo\"] video')"),'Photo stays a still image');
+  await finish('paint');
+  await b.until("document.querySelector('.showcase input[value=\"photo\"]').checked", 10000); checks++;
+  check(await b.evaluate(`${clip('paint')}.paused`),'The Paint clip stops when the slideshow moves on');
   await b.evaluate("[...document.querySelectorAll('.showcase-switcher label')].find(label=>label.textContent.trim()==='Sketch').click()");
   check(await b.evaluate("document.querySelector('.showcase input[value=\"sketch\"]').checked&&document.querySelector('[data-showcase]').hasAttribute('data-playing')"),'Choosing a workspace shows it and the slideshow continues');
   await b.until("getComputedStyle(document.querySelector('.showcase-frame[data-slide=\"sketch\"]')).opacity==='1'"); checks++;
-  await b.until("document.querySelector('.showcase input[value=\"paint\"]').checked", 20000); checks++;
+  await b.until(`${clip('sketch')}.currentSrc.endsWith('/assets/demos/en/sketch-dark.webm')&&${clip('sketch')}.currentTime>.05`, 20000); checks++;
+  await finish('sketch');
+  await b.until("document.querySelector('.showcase input[value=\"paint\"]').checked", 10000); checks++;
+  await b.until(`!${clip('paint')}.paused&&${clip('paint')}.currentTime<2`, 10000); checks++;
   check(await b.evaluate("(()=>{const shot=document.querySelector('.showcase').getBoundingClientRect(),dots=document.querySelector('.showcase-switcher').getBoundingClientRect();return dots.top>=shot.top&&dots.bottom<=shot.bottom&&dots.width<shot.width*.6})()"),'The slide indicator sits inside the screenshot');
+  await b.call('Emulation.setEmulatedMedia',{features:[{name:'prefers-color-scheme',value:'light'},{name:'prefers-reduced-motion',value:'reduce'}]});
+  await b.navigate(host.url+'/?lang=en'); await b.settle();
+  await b.until("document.querySelector('[data-showcase]').hasAttribute('data-playing')", 10000);
+  check(await b.evaluate("[...document.querySelectorAll('.showcase video')].every(video=>!video.getAttribute('src'))&&!performance.getEntriesByType('resource').some(r=>r.name.endsWith('.webm'))"),'Reduced motion keeps the homepage stills and loads no video');
+  await b.call('Emulation.setEmulatedMedia',{features:[{name:'prefers-color-scheme',value:'dark'},{name:'prefers-reduced-motion',value:'no-preference'}]});
   // Preference detection and regional language tags, including unsupported-first lists.
   for(const [langs,expected] of [
     [['ja-JP'],'ja'], [['zh-TW'],'zh-Hant'], [['zh-HK'],'zh-Hant'], [['zh-MO'],'zh-Hant'],
