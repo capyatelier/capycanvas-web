@@ -15,7 +15,9 @@ export async function checkWorkspaceDemos(b, host, check) {
       await emulate(theme);
       await b.navigate(page(locale));
       await b.evaluate(`${figure}.scrollIntoView({block:'center'})`);
-      await b.until(`${video}.currentTime > .05`);
+      await b.until(`${video}.currentTime > .05`).catch(async error => {
+        throw new Error(`${id} demo did not play ${locale}/${theme}: ${await b.evaluate(`JSON.stringify({scroll:scrollY,top:${figure}.getBoundingClientRect().top,hidden:document.hidden,src:${video}.getAttribute('src'),ready:${video}.readyState,network:${video}.networkState,paused:${video}.paused,time:${video}.currentTime,error:${video}.error?.message,playing:${figure}.hasAttribute('data-playing')})`)}`, { cause: error });
+      });
       const result = await b.evaluate(`(() => {
         const v = ${video}, box = v.getBoundingClientRect();
         return { source: v.currentSrc, playing: !v.paused, loop: v.loop, muted: v.muted,

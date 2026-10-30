@@ -41,8 +41,8 @@ const label = { sketch: copy.sketchDemo, paint: copy.paintDemo }[id];
     };
     video.addEventListener('playing', () => figure.setAttribute('data-playing', ''));
     video.addEventListener('error', () => figure.removeAttribute('data-playing'));
-    new IntersectionObserver(([entry]) => {
-      visible = entry.isIntersecting;
+    new IntersectionObserver(entries => {
+      visible = entries.at(-1)!.isIntersecting;
       update();
     }, { threshold: .15 }).observe(figure);
     appearance.addEventListener('change', update);
