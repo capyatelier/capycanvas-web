@@ -66,3 +66,42 @@ for (const options of [{ wrongHash: true }, { rejectValidation: true }]) {
     assert.equal(f.calls.at(-1).endpoint, '/edits/123');
   });
 }
+
+
+test('selected localized updates preserve English, video, graphics, tracks and app details', async () => {
+  const calls = [], images = {};
+  const listings = new Map([['en-US', { language: 'en-US', title: 'English', video: 'english-video' }],
+    ['ja-JP', { language: 'ja-JP', title: 'Before', video: 'japanese-video' }],
+    ['fr-FR', { language: 'fr-FR', title: 'French' }]]);
+  const originalEnglish = structuredClone(listings.get('en-US'));
+  const bytes = Buffer.from('native-image');
+  const sha256 = createHash('sha256').update(bytes).digest('hex');
+  const request = async (url, options) => {
+    const path = new URL(url).pathname.split('/applications/art.capycanvas.editor')[1];
+    calls.push({ method: options.method, path });
+    let body = {};
+    if (path === '/edits') body = { id: 'owned' };
+    else if (path === '/edits/owned/listings') body = { listings: [...listings.values()] };
+    else if (path === '/edits/owned/tracks') body = { tracks: [{ track: 'production', releases: [] }] };
+    else if (path === '/edits/owned/details') body = { defaultLanguage: 'en-US' };
+    else if (/\/listings\/[^/]+$/.test(path)) {
+      const language = path.split('/').at(-1);
+      if (options.method === 'PUT') listings.set(language, JSON.parse(options.body));
+      body = listings.get(language);
+    } else if (path.includes('/listings/ja-JP/')) {
+      if (options.method === 'DELETE') images[path] = [];
+      if (options.method === 'POST') images[path].push({ sha256 });
+      body = { images: images[path] ?? [] };
+    }
+    return new Response(JSON.stringify(body));
+  };
+  await publish([{ listing: { language: 'ja-JP', title: 'カピカン', shortDescription: 'Draw', fullDescription: 'Paint' },
+    images: { phoneScreenshots: [{ bytes, sha256 }] } }], { mode: 'validate', token: 'fixture', request });
+  assert.deepEqual(listings.get('en-US'), originalEnglish);
+  assert.equal(listings.get('ja-JP').video, 'japanese-video');
+  assert.equal(listings.get('fr-FR').title, 'French');
+  const mutations = calls.filter(c => c.method !== 'GET');
+  assert.ok(!mutations.some(c => c.path.includes('/tracks') || c.path.includes('/details') || /icon|featureGraphic|en-US|fr-FR/.test(c.path)));
+  assert.ok(mutations.every(c => c.path === '/edits' || c.path.startsWith('/edits/owned')));
+  assert.deepEqual(calls.at(-1), { method: 'DELETE', path: '/edits/owned' });
+});

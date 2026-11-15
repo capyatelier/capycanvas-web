@@ -1,0 +1,131 @@
+{
+  "schema": 1,
+  "windowsTitle": "Capy Canvas",
+  "privacyPolicyUrl": "https://capycanvas.art/privacy/",
+  "locales": [
+    {
+      "source": "en",
+      "ui": "en",
+      "apple": "en-US",
+      "play": "en-US",
+      "windows": "en-us",
+      "appleSubtitle": "Draw, paint and edit photos"
+    },
+    {
+      "source": "ja",
+      "ui": "ja",
+      "apple": "ja",
+      "play": "ja-JP",
+      "windows": "ja-jp",
+      "appleSubtitle": "スケッチ・ペイント・写真編集"
+    },
+    {
+      "source": "zh-CN",
+      "ui": "zh-Hans",
+      "apple": "zh-Hans",
+      "play": "zh-CN",
+      "windows": "zh-cn",
+      "appleSubtitle": "绘画、插画与照片编辑"
+    },
+    {
+      "source": "zh-TW",
+      "ui": "zh-Hant",
+      "apple": "zh-Hant",
+      "play": "zh-TW",
+      "windows": "zh-tw",
+      "appleSubtitle": "繪畫、插畫與相片編輯"
+    },
+    {
+      "source": "ko",
+      "ui": "ko",
+      "apple": "ko",
+      "play": "ko-KR",
+      "windows": "ko-kr",
+      "appleSubtitle": "드로잉, 페인팅, 사진 편집"
+    },
+    {
+      "source": "es",
+      "ui": "es",
+      "apple": "es-ES",
+      "play": "es-ES",
+      "windows": "es-es",
+      "appleSubtitle": "Dibuja, pinta y edita fotos"
+    },
+    {
+      "source": "pt-BR",
+      "ui": "pt-BR",
+      "apple": "pt-BR",
+      "play": "pt-BR",
+      "windows": "pt-br",
+      "appleSubtitle": "Desenhe, pinte e edite fotos"
+    },
+    {
+      "source": "id",
+      "ui": "id",
+      "apple": "id",
+      "play": "id",
+      "windows": "id-id",
+      "appleSubtitle": "Gambar, lukis, dan edit foto"
+    },
+    {
+      "source": "fr",
+      "ui": "fr",
+      "apple": "fr-FR",
+      "play": "fr-FR",
+      "windows": "fr-fr",
+      "appleSubtitle": "Dessin, peinture et retouche"
+    },
+    {
+      "source": "de",
+      "ui": "de",
+      "apple": "de-DE",
+      "play": "de-DE",
+      "windows": "de-de",
+      "appleSubtitle": "Zeichnen und Malen"
+    },
+    {
+      "source": "ru",
+      "ui": "ru",
+      "apple": "ru",
+      "play": "ru-RU",
+      "windows": "ru-ru",
+      "appleSubtitle": "Рисование и обработка фото"
+    },
+    {
+      "source": "th",
+      "ui": "th",
+      "apple": "th",
+      "play": "th",
+      "windows": "th-th",
+      "appleSubtitle": "วาดภาพ ระบายสี และแต่งภาพ"
+    },
+    {
+      "source": "vi",
+      "ui": "vi",
+      "apple": "vi",
+      "play": "vi",
+      "windows": "vi-vn",
+      "appleSubtitle": "Vẽ và chỉnh sửa ảnh"
+    },
+    {
+      "source": "tr",
+      "ui": "tr",
+      "apple": "tr",
+      "play": "tr-TR",
+      "windows": "tr-tr",
+      "appleSubtitle": "Çiz, boya, fotoğraf düzenle"
+    },
+    {
+      "source": "it",
+      "ui": "it",
+      "apple": "it",
+      "play": "it-IT",
+      "windows": "it-it",
+      "appleSubtitle": "Disegna, dipingi, ritocca foto"
+    }
+  ],
+  "minimumHardware": [
+    "Windows 11",
+    "Hardware GPU with Direct3D 12 support"
+  ]
+}

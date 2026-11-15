@@ -74,3 +74,6 @@ report to `artifacts/store-capture/verify.json`.
 
 The URLs stay the same when the images are refreshed. Software centers cache
 screenshots, so a replacement can take a while to appear.
+
+For native Android/Windows captures, shared listing generation and Apple preparation,
+see [store release content](../../../store/README.md).

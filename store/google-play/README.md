@@ -51,12 +51,15 @@ A successful commit is not proof of review approval or public availability.
 The workflow saves the previous listing, previous image URLs, uploaded hashes,
 and edit result in the `google-play-publish` run artifact.
 
-Capture sources and raw state snapshots remain local artifacts in
-`capycanvas3/artifacts/play-store-capture/`; the website's
-`artifacts/google-play/` holds the complete local upload pack and source copies.
+Capture sources and raw state snapshots remain local artifacts in the app checkout;
+the website's `artifacts/google-play/` holds the complete local upload pack and source copies.
 When replacing images, update their manifest hashes and visually review every
 variant before publishing. Do not include keys, tokens, or API reports here.
 
 Google references: [API setup](https://developers.google.com/android-publisher/getting_started),
 [image slots](https://developers.google.com/android-publisher/api-ref/rest/v3/AppImageType),
 [edit behavior](https://developers.google.com/android-publisher/concurrency-considerations).
+
+Generated localizations and native multilingual screenshot packs use the same
+publisher with explicit `--listings`, `--captures` and `--locale` options; see
+[store release content](../README.md).

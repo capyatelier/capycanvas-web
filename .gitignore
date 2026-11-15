@@ -6,3 +6,15 @@ artifacts/
 
 gha-creds-*.json
 .wrangler/
+
+__pycache__/
+*.local.md
+.env
+.env.*
+!.env.example
+*.p8
+*.p12
+*.pfx
+*.pem
+*.key
+*.mobileprovision
