@@ -146,23 +146,39 @@ and read back selected metadata. It preserves other languages, build selection,
 release options and review submissions. Account privacy declarations, trader
 status, agreements, pricing and reviewer contacts are separate portal decisions.
 
-Apple's native showcase capture adapter and screenshot upload adapter are
-pending. Extend the app's Swift fixtures on a Mac using the staged recipe and the
-same receipt contract. Build both macOS and iPadOS; inspect actual AppKit/UIKit
-controls and Metal canvas content in every locale and theme. Validate captures
-against [Apple's current screenshot specifications](https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications).
-Generate a handoff with:
+Follow the app's native capture guide for macOS, iPad and iPhone. Build and
+review actual AppKit/UIKit controls and Metal canvas content in every locale and
+theme. Create a separate `native.mjs catalog --platform apple` manifest for each
+fixture binary and device family. Preserve that provenance when combining packs.
+The optional `apple.py screenshots` command produces a local handoff; its
+`readyForUpload: false` does not assess live display eligibility.
+
+Plan screenshot uploads with the current
+[image asset and placement API](https://developer.apple.com/documentation/appstoreconnectapi/uploading-and-managing-image-assets):
 
 ```sh
-python3 site/scripts/store/apple.py screenshots \
-  --captures artifacts/apple-upload/manifest.json --output artifacts/apple-screenshot-plan.json
+python3 site/scripts/store/apple_assets.py --app-id APP_ID --version VERSION \
+  --manifest artifacts/apple-mac/manifest.json \
+  --manifest artifacts/apple-ipad/manifest.json \
+  --manifest artifacts/apple-iphone/manifest.json \
+  --locale ja --locale fr-FR --output artifacts/apple-images-plan.json
 ```
 
-The handoff explicitly reports `readyForUpload: false`. It does not upload or
-claim that dimensions qualify for a display slot. Implement and qualify the
-current [image asset and placement API](https://developer.apple.com/documentation/appstoreconnectapi/uploading-and-managing-image-assets)
-before adding screenshot writes; Apple documents the older `appScreenshots`
-flow as deprecated. Submission for review and public release remain separate.
+The default is a read-only plan. Review it, then repeat with a new `--output` and
+`--apply` to upload, place and read back the selected screenshots. Omit `--locale`
+to select all supplied captures. Each selected device/language group requires
+Paint, Sketch and Photo in light and dark themes. Use `--phase images` to stage a
+reviewed subset in the asset library without changing screenshot placements.
+Exclude captures with visual defects before staging.
+
+The uploader resolves display specifications and count limits from Apple's live
+reference data. It verifies hashes, native dimensions, positive processing
+states and saved placement order. Repeated uploads reuse matching asset hashes.
+Existing screenshots that differ require explicit `--replace`, which affects
+only selected groups and rejects concurrent changes detected before placement.
+Fresh parent checks require editable drafts. Upload progress and API snapshots
+stay private; use a fresh short-lived `APP_STORE_CONNECT_TOKEN` for each run.
+Build selection, submission for review and public release remain separate.
 
 ## Publication boundary
 

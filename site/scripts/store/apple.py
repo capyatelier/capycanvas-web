@@ -102,7 +102,7 @@ def screenshot_plan(manifest):
     if any(len(items) > 10 for items in groups.values()):
         raise ValueError('Apple accepts at most ten screenshots per device size')
     return {'schema': 1, 'readyForUpload': False,
-            'remaining': 'Qualify native Mac/iPad captures and implement the current image asset placement API adapter.',
+            'remaining': 'Resolve live screenshot specifications and draft localizations with apple_assets.py; this local handoff does not validate placement eligibility.',
             'groups': [{'language': key[0], 'device': key[1], 'images': value} for key, value in sorted(groups.items())]}
 
 

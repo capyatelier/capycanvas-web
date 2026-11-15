@@ -9,7 +9,7 @@ import { createHash } from 'node:crypto';
 import { catalog, prepare } from '../site/scripts/store/native.mjs';
 
 test('store preparation regression suite', () => {
-  execFileSync('python3', ['-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_store_prep.py'], { stdio: 'pipe' });
+  execFileSync('python3', ['-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_store*.py'], { stdio: 'pipe' });
 });
 
 for (const platform of ['android', 'windows']) test(`native ${platform} catalog removes diagnostic fields and rejects mismatched recipe evidence`, async () => {
