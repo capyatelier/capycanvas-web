@@ -10,8 +10,8 @@ host by hand.
 | `capycanvas.art` | Worker `capycanvas-web`, static assets from `docs/` | Push to `main`, or `npm run deploy` |
 | `www.capycanvas.art` | A redirect rule to the apex | Zone rules in the Cloudflare dashboard |
 | `downloads.capycanvas.art` | R2 bucket `capycanvas-downloads` | `npm run publish:downloads` |
-| `editor.capycanvas.art` | Worker `capycanvas-editor` | The **Deploy editor** workflow in [babymastodon/capycanvas-release](https://github.com/babymastodon/capycanvas-release) |
-| `flatpak.capycanvas.art` | Worker `capycanvas-flatpak` | The **Publish release updates** workflow in [babymastodon/capycanvas](https://github.com/babymastodon/capycanvas) |
+| `editor.capycanvas.art` | Worker `capycanvas-editor` | The **Deploy editor** workflow in [capyatelier/capycanvas-release](https://github.com/capyatelier/capycanvas-release) |
+| `flatpak.capycanvas.art` | Worker `capycanvas-flatpak` | The **Publish release updates** workflow in [capyatelier/capycanvas](https://github.com/capyatelier/capycanvas) |
 
 Other deploys run from a maintainer's machine. Log in once with `npx wrangler login`
 as a member of the Cloudflare account that owns the `capycanvas.art` zone. If
@@ -49,7 +49,7 @@ the site:
 gh workflow run site.yml --ref main
 ```
 
-`publish:downloads` lists the published releases of `babymastodon/capycanvas`
+`publish:downloads` lists the published releases of `capyatelier/capycanvas`
 with `gh`, downloads each release missing from `releases.json`, checks every
 file against GitHub's SHA-256 digest, uploads it to
 `downloads.capycanvas.art/<tag>/<file>`, adds the bucket's files to the

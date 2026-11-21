@@ -8,7 +8,7 @@ import { downloadsOrigin, releasesFeedUrl } from '../src/lib/releases.mjs';
 import { allowDownloads, bucket } from './allow-downloads.mjs';
 
 const run = promisify(execFile);
-const repository = 'babymastodon/capycanvas';
+const repository = 'capyatelier/capycanvas';
 const work = resolve('artifacts/downloads');
 const wrangler = resolve('node_modules/.bin/wrangler');
 

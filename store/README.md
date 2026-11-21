@@ -34,7 +34,7 @@ node site/scripts/store/native.mjs prepare --app-repo ../capycanvas \
 
 This stages the canonical scene recipe, first-party artwork and translated scope
 readiness captions for the app's native adapters. Follow the app's
-[native capture guide](https://github.com/babymastodon/capycanvas/blob/main/docs/development/store-screenshots.md).
+[native capture guide](https://github.com/capyatelier/capycanvas/blob/main/docs/development/store-screenshots.md).
 Use reserved devices, owned development identities and private storage. Record
 the exact app commit and binary hash from the build you actually install; keep
 the recipe unchanged through capture. Collect results under a new local folder.
