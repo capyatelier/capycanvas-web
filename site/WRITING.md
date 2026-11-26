@@ -680,6 +680,13 @@ Each line carries a point artists care about. Say the main point and stop:
 "Capy Canvas now works on phones" doesn't need "or in your phone's browser"
 after it. Leave out details that only matter to us, however true they are.
 
+Say what the change means for the artist, in their situation, rather than
+listing how it works:
+
+| Avoid | Use |
+| --- | --- |
+| Draw with pen or finger on iPhone and Android. | Now you can draw on the go, directly on your iPhone and Android. |
+
 ### Claims
 
 - Check every feature you name in the app. Use its label as the app shows it,
