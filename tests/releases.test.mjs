@@ -166,7 +166,7 @@ for (const locale of Object.keys(languages)) {
     const next = page.match(/<article class="release release-upcoming" id="v1\.0\.16"[\s\S]*?<\/article>/)?.[0];
     assert.ok(next);
     assert.deepEqual([...next.matchAll(/<img src="([^"]+)"/g)].map(([, src]) => src), [
-      '/assets/releases/1.0.16/phones.webp', '/assets/releases/1.0.16/taper.webp',
+      '/assets/releases/1.0.16/devices.webp', '/assets/releases/1.0.16/speed.webp', '/assets/releases/1.0.16/taper.webp',
     ]);
     assert.doesNotMatch(next, /<time|release-files|release-latest|releases\/(?:download|tag)\//);
     assert.ok(page.indexOf('id="v1.0.16"') < page.indexOf('id="v1.0.2"'));
@@ -182,7 +182,7 @@ for (const locale of Object.keys(languages)) {
     const latestPublished = page.match(/<article class="release" id="v1\.0\.2"[\s\S]*?<\/article>/)?.[0];
     assert.equal(latestPublished.match(/class="release-latest"[^>]*>([^<]+)<\/span>/)?.[1], escapeText(t.versions.latest));
     const downloadPage = main(await read(published, `${prefix(locale)}download`));
-    assert.doesNotMatch(downloadPage, /1\.0\.16|phones\.webp|taper\.webp|1\.0\.15|vector-layers\.webp|tool-bubbles\.webp|blenders\.webp/);
+    assert.doesNotMatch(downloadPage, /1\.0\.16|devices\.webp|speed\.webp|taper\.webp|1\.0\.15|vector-layers\.webp|tool-bubbles\.webp|blenders\.webp/);
   });
 
   test(`${locale}: with no published release, both pages keep the coming-soon state`, async () => {

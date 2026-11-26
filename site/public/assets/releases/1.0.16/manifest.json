@@ -14,128 +14,186 @@
   },
   "captures": [
     {
-      "id": "browser-phone",
-      "platform": "web",
-      "source_revision": "96078feb04ce6b37a71b5ab25810bf1b105163eb",
-      "theme": "dark",
-      "sha256": "344eb0ed009ec25e6b9af5db0f7a5c74c9fedf4afd72eb5f56042bf8191d9379",
-      "size": [
-        1170,
-        2532
-      ],
-      "scene": "photo",
-      "viewport": [
-        390,
-        844
-      ],
-      "scale": 3,
-      "artwork_sha256": "5f10cba853f91946637bb5d0b2d605fae4901e3837dd356a2887d900ec284a45"
-    },
-    {
-      "id": "taper",
-      "platform": "web",
-      "source_revision": "96078feb04ce6b37a71b5ab25810bf1b105163eb",
-      "theme": "dark",
-      "sha256": "e9b38b41b1ddcf1f491db3551ded574b9ee67cb85777c5297f8da383618145c2",
-      "size": [
-        1920,
-        1080
-      ],
-      "hashes": {
-        "app.js": "dd19d7dbc02c73bdfa48e4339d3d6f61a9b09a628c04115bd0db4fba43abdc8c",
-        "pkg/layer_web_bg.wasm": "88596e5f98ec28a406dac93bc791d66bc36e910703047c96ec6655ab31c9ca12"
-      },
-      "viewport": [
-        1920,
-        1080
-      ],
-      "brush": "G-Pen",
-      "brush_size": 28,
-      "pressure": 0.7,
-      "paths": [
-        "M 60 176 Q 91 102 151 71",
-        "M 168 174 C 194 137 212 105 218 54",
-        "M 253 176 Q 293 148 335 94",
-        "M 48 322 C 89 245 152 224 192 277",
-        "M 199 352 Q 223 268 281 220",
-        "M 288 363 Q 311 311 350 273"
-      ],
-      "studies": [
-        {
-          "mode": "off",
-          "caption": "No taper"
-        },
-        {
-          "mode": "fixed",
-          "caption": "Fixed taper",
-          "start": 1.5,
-          "end": 1.5,
-          "pointiness": 0.9
-        },
-        {
-          "mode": "proportional",
-          "caption": "Proportional taper",
-          "start": 0.45,
-          "end": 0.45,
-          "pointiness": 0.9
-        }
-      ],
-      "paper_crop": [
-        360,
-        330,
-        1200,
-        420
-      ],
-      "panel_crop": [
-        52,
-        436,
-        272,
-        175
-      ]
-    },
-    {
       "id": "iphone",
       "platform": "apple",
       "language": "en",
       "device": "iphone",
-      "scene": "paint",
+      "scene": "photo",
       "theme": "dark",
-      "file": "iphone/en/paint-dark.png",
+      "file": "iphone/en/photo-dark.png",
       "width": 1206,
       "height": 2622,
-      "sha256": "2dd310f70e443b2df44dbedb9d204f6d63f99ca55d703444af46ab24b0a89965",
+      "sha256": "1baac367eca38cbc5e80926c118cadd8a66ec2198e2a8fcad2829b2859187d89",
       "source_revision": "6f729407fdd0408b26ffd2cf3a508710a84ea31a",
       "binary_sha256": "babc4800eb8b6414cf3413070330b405d01f29cac36a61d610e1e665ad126dfd",
       "recipe_sha256": "521017b1afd5018ed64e6a2fab8d97e18bd64dee9485308d95241a80221b400a",
       "capture_manifest_sha256": "3e11aa7e7381f1e5d4a1c2e53ba16029f248275a85082f22ba39e7985185c199"
     },
     {
-      "id": "phone",
-      "platform": "android",
+      "id": "ipad",
+      "platform": "apple",
       "language": "en",
-      "device": "phone",
+      "device": "ipad",
       "scene": "sketch",
       "theme": "dark",
-      "file": "phone/en/sketch-dark.png",
-      "width": 1080,
-      "height": 2160,
-      "sha256": "afd0c6f0f062e60bf0732cea9b566bc3ce7118fa7489020b8314add354591a6a",
-      "source_revision": "96078feb04ce6b37a71b5ab25810bf1b105163eb",
-      "binary_sha256": "abe70fec4f1aea476adc8926793cade345be010300d275a74e6cc2c4cbfa3294",
+      "file": "ipad/en/sketch-dark.png",
+      "width": 2752,
+      "height": 2064,
+      "sha256": "298010b8441588bd4441f8b0b737cf50e8d43c6f70e4a1498252b00cc569efa4",
+      "source_revision": "6f729407fdd0408b26ffd2cf3a508710a84ea31a",
+      "binary_sha256": "6ce73495dae2e4952e8b361238a63230312a9e2b2846f4fe003b3f8962850cb3",
       "recipe_sha256": "521017b1afd5018ed64e6a2fab8d97e18bd64dee9485308d95241a80221b400a",
-      "capture_manifest_sha256": "d0c6eee7f380230d837640aa6318bbee5fe7e8f0972e8afb6e572b80f9b36a3c"
+      "capture_manifest_sha256": "9d2618fda671078ddee658fcc3cb4e1e5975b95b4e46370445f3d3373bf1a401"
+    },
+    {
+      "id": "mac",
+      "platform": "apple",
+      "language": "en",
+      "device": "mac",
+      "scene": "paint",
+      "theme": "dark",
+      "file": "mac/en/paint-dark.png",
+      "width": 2560,
+      "height": 1600,
+      "sha256": "961df70044713fa83627a9bc821707896f0467be0eba59239a75eef2366688ce",
+      "source_revision": "6f729407fdd0408b26ffd2cf3a508710a84ea31a",
+      "binary_sha256": "3e338bc5da16a909824403b803e73db8ec949aec2233cfcf4b0e781123a95060",
+      "recipe_sha256": "521017b1afd5018ed64e6a2fab8d97e18bd64dee9485308d95241a80221b400a",
+      "capture_manifest_sha256": "df84da6c4729bf7d7046d7f8922f5af838a5ae05e67557639cfadac1340cad43"
+    },
+    {
+      "id": "taper",
+      "platform": "web",
+      "source_revision": "96078feb04ce6b37a71b5ab25810bf1b105163eb",
+      "hashes": {
+        "app.js": "dd19d7dbc02c73bdfa48e4339d3d6f61a9b09a628c04115bd0db4fba43abdc8c",
+        "pkg/layer_web_bg.wasm": "88596e5f98ec28a406dac93bc791d66bc36e910703047c96ec6655ab31c9ca12"
+      },
+      "theme": "dark",
+      "sha256": "ef2eb712a09313bc24fc8640c5b147e131f455cb180dda1620bd9c2cb853d76a",
+      "size": [
+        3840,
+        2160
+      ],
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "scale": 2
+      },
+      "brush": "G-Pen",
+      "pressure": 0.7,
+      "taper": {
+        "mode": "proportional",
+        "start": 0.3,
+        "end": 0.3,
+        "pointiness": 0.5
+      },
+      "strokes": [
+        {
+          "size": 12,
+          "path": "M 92 430 C 360 441 690 219 1096 76"
+        },
+        {
+          "size": 16,
+          "path": "M 270 410 C 221 379 177 315 144 237"
+        },
+        {
+          "size": 15,
+          "path": "M 290 402 C 354 447 430 461 515 439"
+        },
+        {
+          "size": 16,
+          "path": "M 454 348 C 388 300 358 230 339 151"
+        },
+        {
+          "size": 15,
+          "path": "M 481 336 C 539 365 633 382 708 351"
+        },
+        {
+          "size": 15,
+          "path": "M 633 271 C 576 214 548 143 535 69"
+        },
+        {
+          "size": 14,
+          "path": "M 661 257 C 736 294 818 286 892 247"
+        },
+        {
+          "size": 14,
+          "path": "M 806 194 C 762 143 739 87 730 35"
+        },
+        {
+          "size": 13,
+          "path": "M 830 181 C 899 216 974 202 1039 161"
+        },
+        {
+          "size": 12,
+          "path": "M 985 118 C 961 84 950 54 950 26"
+        }
+      ],
+      "paper_crop": [
+        720,
+        580,
+        2400,
+        1000
+      ],
+      "panel_crop": [
+        104,
+        878,
+        544,
+        344
+      ]
     }
   ],
+  "chart": {
+    "unit": "seconds",
+    "lower_is_better": true,
+    "versions": [
+      "1.0.15",
+      "1.0.16"
+    ],
+    "source": "Release note benchmark timings",
+    "timings": [
+      {
+        "task": "Startup",
+        "device": "TCL Tab 11 Gen 2",
+        "previous": 22.5,
+        "current": 3.9
+      },
+      {
+        "task": "Startup",
+        "device": "XPPen MovinkPad Pro 14",
+        "previous": 7.6,
+        "current": 1.5
+      },
+      {
+        "task": "Open a 12 MP photo",
+        "device": "TCL Tab 11 Gen 2",
+        "previous": 27.1,
+        "current": 5.3
+      },
+      {
+        "task": "Open a 61 MP photo",
+        "device": "XPPen MovinkPad Pro 14",
+        "previous": 9.8,
+        "current": 3.8
+      }
+    ]
+  },
   "files": [
     {
-      "file": "phones.webp",
-      "bytes": 70776,
-      "sha256": "58e17aeb34ef02c90b68dfa3e718692a0831666ea228a25e0eb879d0ec7498b7"
+      "file": "devices.webp",
+      "bytes": 146482,
+      "sha256": "9ee1ea8bf4ab4be2d6a85723edef92eea58474be0f013f1b9a7cb96eb9250c6f"
+    },
+    {
+      "file": "speed.webp",
+      "bytes": 33748,
+      "sha256": "e40bb23e0fbb9c768c02eafb04c6ea0b41939bcc6bc231c3adc6fdfee2264d60"
     },
     {
       "file": "taper.webp",
-      "bytes": 34784,
-      "sha256": "c68064937bc87225522a160ea36e4a0c7393ed3c4db20c65a697ab4d36b784e6"
+      "bytes": 27684,
+      "sha256": "eada8e61138db154b40316f078b74c4789e53baedeafdde22de9c204b4317fba"
     }
   ]
 }
