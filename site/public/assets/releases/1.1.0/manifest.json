@@ -126,7 +126,7 @@
     "lower_is_better": true,
     "versions": [
       "1.0.15",
-      "1.0.16"
+      "1.1"
     ],
     "source": "Release note benchmark timings",
     "timings": [
@@ -181,14 +181,14 @@
     },
     {
       "file": "speed.webp",
-      "bytes": 31744,
-      "sha256": "0b8f1e428c0e1395b9fa4057e018cbbdaa6e5cb91186a13b23e128133f08776b",
+      "bytes": 31152,
+      "sha256": "3a6f137809e6ba5a5108a146b19f91655d0eedbe48f5fe53558d25476c875749",
       "alpha": true
     },
     {
       "file": "speed-dark.webp",
-      "bytes": 28418,
-      "sha256": "a39e4e49a1d4d3c1cc1f3e956c6f7664e10e24319256c21d33b183d969f8eb06",
+      "bytes": 28036,
+      "sha256": "ac0b05135e507c5332751d1df8be9635c54f328462cc70dc094527c753f98677",
       "alpha": true
     },
     {
