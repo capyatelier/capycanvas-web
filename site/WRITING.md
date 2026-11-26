@@ -1,9 +1,13 @@
 # Writing the Capy Canvas manual
 
-This guide sets the language, structure and tone of the documentation at
-capycanvas.art. Every English page is checked against it before it is published,
-and translations follow it too. Read it in full before writing your first page,
-then keep the checklist at the end open while you work.
+This guide sets the language, structure and tone of everything Capy Canvas
+publishes for artists: the manual, the website, release notes, store listings and
+the app's own text. All of it must follow this guide. Sections 1 to 4 and 8 to 11
+cover the manual, section 12 covers release notes and store copy, and the words,
+cadence and punctuation rules in sections 5 to 7 apply to every text. Every
+English text is checked against it before it is published, and translations
+follow it too. Read it in full before writing your first page, then keep the
+checklist for your kind of text open while you work.
 
 ## 1. The reader
 
@@ -472,6 +476,66 @@ read as machine-made even when each sentence is fine. Let the shape follow the
 content: one sentence where there's one fact, a list where there are routes,
 a table where there are settings.
 
+### Summary, then restatement
+
+A sentence that names its subjects, followed by sentences that repeat them with
+details. Fix the structure, not the words: attach each detail to the thing it
+describes and say it once.
+
+| Avoid | Use |
+| --- | --- |
+| We redesigned smoothing and added a new taper engine for pens. Pen pressure is now smoothed too, and tapers work even if your pen has no pressure. | We redesigned smoothing to include pen pressure, and added a new taper engine that works with or without a pressure-sensitive pen. |
+| We also built a new display stack. Photos open up to 5x faster, because it loads textures at your screen's native resolution. It's also more responsive, and it uses disk instead of RAM for large images. | We also built a more responsive display stack that loads textures at your screen's native resolution and keeps large images on disk instead of in RAM. |
+
+### Mirrored pairs
+
+Two unrelated facts balanced in one sentence for rhythm, such as "X is now Y too,
+and Z works even if W", or a chain of "it … it's also … and it". Give each fact
+to the thing it belongs to. "Too", "also" and "even if" are usually the sign.
+
+### Feature as subject
+
+A feature doing a vague verb to a vague object: "smoothing now covers pen
+pressure", "the taper engine gives lines clean ends", "handles graphics tablets
+better". Say what we did or what the artist gets.
+
+| Avoid | Use |
+| --- | --- |
+| It also handles multi-GPU systems and graphics tablets better. | On Windows, Capy Canvas has better multi-GPU and graphics tablet support. |
+| A new taper engine gives lines clean ends. | Pens have a new taper engine that works without pen pressure. |
+
+### The wrong benefit
+
+A true detail picked because it was easy to describe. Read the change before
+describing it, and lead with what an artist notices. "We made smoothing
+stronger" was true, but the change artists notice is that pen pressure is now
+smoothed along the line.
+
+### Lawyer words
+
+A verb or condition chosen so that an unverified claim stays technically true:
+"draw on images up to 1 gigapixel" to avoid promising that they save, or "on
+Windows laptops with two graphics cards" to avoid promising a general fix. The
+reader can't tell whether it applies to them. Verify the plain claim, or leave
+it out.
+
+### Code words and double meanings
+
+Words from the code ("fills under the lines", "spills to disk") and words with
+two meanings ("the .capy format is stable", where stable could mean it doesn't
+crash or doesn't change). Say what the artist sees or can rely on.
+
+| Avoid | Use |
+| --- | --- |
+| The .capy format is stable, but it's better not to take chances. | Drawings saved in 1.0.15 or later will keep opening in future versions. |
+| Fill closes small gaps and fills under the lines. | The bucket tool closes small gaps in line art and leaves no white edge along the lines. |
+
+### Benchmark prose
+
+Device models, megapixel counts and "X seconds instead of Y" in a sentence read
+as a test report and pick the best case. Give one multiplier in prose ("up to
+5x faster") and put the measurements in a chart.
+
 ## 7. Punctuation and typography
 
 - No em dashes or en dashes in prose. Use a period, a colon or parentheses.
@@ -586,3 +650,57 @@ published. Report every failure with the sentence and the rule number.
 18. Read aloud, no two sentences in a row have the same rhythm.
 
 A page passes when every item passes. "Mostly fine" is a fail.
+
+
+## 12. Release notes and store copy
+
+Release notes, the AppStream entry and store listings speak for the people who
+make Capy Canvas. They're written in the owner's voice: first person plural,
+plain, personable and to the point. Keep the owner's own phrasing wherever it's
+accurate. This is the model:
+
+> There's a lot in this release - over 1,600 commits since the last one. Capy
+> Canvas now works on phones, and is a lot faster and more reliable than before.
+
+### Structure
+
+- **AppStream entry.** One opening line, four to seven short fragment bullets
+  and one closing line, within Google Play's 500 characters. No warnings or
+  caveats the owner didn't ask for.
+- **Long notes.** An opening paragraph saying what the release is about and
+  why, then one short section per theme with at most one image or chart, a list
+  of other changes, the full changelog link, a note before updating, and thanks
+  to contributors. Link the issue or pull request a change answers. Match the
+  length and cadence of earlier notes: a few hundred words.
+- **Known issues.** Leave them out unless the owner asks for them.
+
+### Claims
+
+- Every number comes from a matched comparison with the previous release on
+  named devices. In prose, give one multiplier; put the measurements in a chart
+  with one device per bar pair.
+- Name devices by brand and model, and check the brand.
+- A claim that needs a qualifier to be true is rewritten to what is true, or
+  left out. Never narrow a claim with a hedge to dodge checking it.
+- When you explain why something is faster, name the actual mechanism in plain
+  words ("compiles fewer shaders when it starts and reuses them between
+  launches").
+- Name tools the way artists say them in release notes ("bucket tool"); the
+  manual uses the app's labels.
+
+### Images
+
+Images work on the light and dark site themes. App captures can stay dark; the
+background is transparent, or there is a variant per theme chosen with
+`<picture>`. Show the app in styled device frames, keep screenshots unstretched,
+and look at every image at display size on both backgrounds before committing.
+
+### Checklist
+
+1. The text is in the owner's voice, and none of the cadence patterns in section 6 appear.
+2. Each feature and its detail are said once, together.
+3. Each benefit is the one an artist notices, checked against the change itself.
+4. Every number has a matched comparison behind it, and the devices are named correctly.
+5. No qualifier exists only to keep a claim technically true.
+6. The AppStream entry fits in 500 characters.
+7. Every image reads well on both themes.
