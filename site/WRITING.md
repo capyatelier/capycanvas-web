@@ -674,18 +674,30 @@ accurate. This is the model:
   length and cadence of earlier notes: a few hundred words.
 - **Known issues.** Leave them out unless the owner asks for them.
 
-### What to include
+### Start from what the artist can now do
 
-Each line carries a point artists care about. Say the main point and stop:
-"Capy Canvas now works on phones" doesn't need "or in your phone's browser"
-after it. Leave out details that only matter to us, however true they are.
+Release notes have a different job from the manual. The manual describes a
+feature neutrally; release notes tell an artist what they can now do in their
+own work that they couldn't before. Decide that first, before checking any
+wording, and write it as the main sentence of each section and bullet:
 
-Say what the change means for the artist, in their situation, rather than
-listing how it works:
+> Now you can draw on the go, directly on your iPhone and Android.
+
+That sentence matters because it's the reason phones matter to an artist.
+Everything else is a detail, and a detail goes in only if it changes whether
+the reader can use the feature. Platforms, input methods, surfaces and
+mechanisms usually don't: "or in your phone's browser" and "with pen or finger"
+add coverage, not value. A true, well-written detail can still be the wrong
+thing to say.
+
+Ask of every line: would an artist do something differently after reading it?
+If not, cut it. The cadence checks in section 6 and the claim checks below come
+after this; they catch badly written or untrue sentences, not sentences that
+shouldn't be there.
 
 | Avoid | Use |
 | --- | --- |
-| Draw with pen or finger on iPhone and Android. | Now you can draw on the go, directly on your iPhone and Android. |
+| Draw with pen or finger on iPhone and Android, or in your phone's browser. | Now you can draw on the go, directly on your iPhone and Android. |
 
 ### Claims
 
@@ -718,11 +730,11 @@ and look at every image at display size on both backgrounds before committing.
 
 ### Checklist
 
-1. The text is in the owner's voice, and none of the cadence patterns in section 6 appear.
-2. Each feature and its detail are said once, together.
-3. Each benefit is the one an artist notices, checked against the change itself.
-4. Every feature named is in the app under that name, with its menu path when it isn't a tool, and every verb matches what changed.
-5. No detail is there only because it's true; each line carries a point artists care about.
+1. Each section and bullet leads with what the artist can now do in their own work, and every other line changes whether they can use it.
+2. The text is in the owner's voice, and none of the cadence patterns in section 6 appear.
+3. Each feature and its detail are said once, together.
+4. Each benefit is the one an artist notices, checked against the change itself.
+5. Every feature named is in the app under that name, with its menu path when it isn't a tool, and every verb matches what changed.
 6. Every number has a matched comparison behind it, and the devices are named correctly.
 7. No qualifier exists only to keep a claim technically true.
 8. The AppStream entry fits in 500 characters.
