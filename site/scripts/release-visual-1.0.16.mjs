@@ -52,15 +52,19 @@ const dataURL = bytes => 'data:image/png;base64,' + bytes.toString('base64');
 async function compose(file, styles, html) {
   const page = await browser({ width, height });
   try {
+    await page.call('Emulation.setDefaultBackgroundColorOverride', { color: { r: 0, g: 0, b: 0, a: 0 } });
     await page.call('Page.setDocumentContent', { frameId: (await page.call('Page.getFrameTree')).frameTree.frame.id,
-      html: '<!doctype html><meta charset="utf-8"><style>*{box-sizing:border-box}html,body{margin:0;width:1800px;height:600px;overflow:hidden;background:#26282c;color:#f0efec;font-family:'+font+'}'+styles+'</style>'+html });
+      html: '<!doctype html><meta charset="utf-8"><style>*{box-sizing:border-box}html,body{margin:0;width:1800px;height:600px;overflow:hidden;background:transparent;color:#2e2e32;font-family:'+font+'}'+styles+'</style>'+html });
     await page.evaluate('Promise.all([...document.images].map(i=>i.decode())).then(()=>document.fonts.ready).then(()=>null)');
     assert.equal(await page.evaluate('document.documentElement.scrollWidth'), width);
     assert.equal(await page.evaluate('document.documentElement.scrollHeight'), height);
     const result = await page.call('Page.captureScreenshot', { format: 'webp', quality: 94 });
     const bytes = Buffer.from(result.data, 'base64');
+    assert.equal(bytes.toString('ascii',12,16),'VP8X');
+    assert.ok(bytes[20] & 0x10, file + ' must have WebP alpha');
+    assert.deepEqual([bytes.readUIntLE(24,3)+1,bytes.readUIntLE(27,3)+1],[width,height]);
     await writeFile(resolve(output, file), bytes);
-    return { file, bytes: bytes.length, sha256: hash(bytes) };
+    return { file, bytes: bytes.length, sha256: hash(bytes), alpha: true };
   } finally { await page.close(); }
 }
 
@@ -70,31 +74,39 @@ const mac = await native(required('RELEASE_MAC_MANIFEST'), 'mac', 'paint');
 assert.equal(new Set(captures.map(c => c.source_revision)).size, 1, 'Native device images share a source revision');
 const devices = await compose('devices.webp',
   'main{height:600px;display:flex;align-items:center;justify-content:center;gap:34px;padding:24px 30px}' +
-  '.device{flex:none;position:relative;padding:11px;border:1px solid #686a6d;background:linear-gradient(150deg,#303236 0%,#111214 38%,#17181b 100%);box-shadow:0 14px 22px #11121690,inset 0 0 0 2px #222428}' +
+  '.device{flex:none;position:relative;padding:11px;border:1px solid #686a6d;background:linear-gradient(150deg,#303236 0%,#111214 38%,#17181b 100%);box-shadow:0 10px 19px #11121666,inset 0 0 0 2px #222428}' +
   '.device img{display:block;width:auto;object-fit:contain}' +
   '.phone{border-radius:27px;padding:9px}.phone img{height:454px;border-radius:19px}' +
   '.island{position:absolute;top:16px;left:50%;width:52px;height:13px;transform:translateX(-50%);border-radius:20px;background:#050506}' +
   '.tablet{border-radius:19px;padding:13px}.tablet img{height:444px;border-radius:8px}' +
   '.desktop{display:flex;flex-direction:column;align-items:center;flex:none;margin-top:7px}.monitor{border-radius:15px;padding:12px 12px 16px}.monitor img{height:470px;border-radius:5px}' +
   '.stand{height:36px;width:96px;background:linear-gradient(90deg,#393b40,#56585c 46%,#393b40);clip-path:polygon(22% 0,78% 0,95% 100%,5% 100%)}' +
-  '.base{height:12px;width:220px;border-radius:5px;background:linear-gradient(#56585c,#292b2e);box-shadow:0 9px 14px #101114a0;border-top:1px solid #74767a}',
+  '.base{height:12px;width:220px;border-radius:5px;background:linear-gradient(#56585c,#292b2e);box-shadow:0 7px 12px #10111466;border-top:1px solid #74767a}',
   '<main><div class="device phone"><img src="'+dataURL(iphone)+'"><span class="island"></span></div>' +
   '<div class="device tablet"><img src="'+dataURL(ipad)+'"></div><div class="desktop"><div class="device monitor"><img src="'+dataURL(mac)+'"></div><div class="stand"></div><div class="base"></div></div></main>');
 
 const timings = [
   { task: 'Startup', device: 'TCL Tab 11 Gen 2', previous: 22.5, current: 3.9 },
-  { task: 'Startup', device: 'XPPen MovinkPad Pro 14', previous: 7.6, current: 1.5 },
+  { task: 'Startup', device: 'Wacom MovinkPad Pro 14', previous: 7.6, current: 1.5 },
   { task: 'Open a 12 MP photo', device: 'TCL Tab 11 Gen 2', previous: 27.1, current: 5.3 },
-  { task: 'Open a 61 MP photo', device: 'XPPen MovinkPad Pro 14', previous: 9.8, current: 3.8 },
+  { task: 'Open a 61 MP photo', device: 'Wacom MovinkPad Pro 14', previous: 9.8, current: 3.8 },
 ];
 const bar = (value, kind, extra = '') => '<div class="barline"><div class="bar '+kind+'" style="width:'+(value*35)+'px"></div><span class="value">'+value.toFixed(1)+' s</span>'+extra+'</div>';
-const speed = await compose('speed.webp',
-  'body{padding:32px 54px}.legend{height:52px;display:flex;align-items:center;gap:42px;margin-left:470px;font-size:26px;font-weight:600}.legend span{display:flex;align-items:center;gap:12px}.swatch{width:32px;height:18px;border-radius:4px}' +
-  '.previous{background:#8a8983}.current{background:#3987e5}.rows{position:relative;margin-top:8px}.row{display:grid;grid-template-columns:470px 1fr;align-items:center;height:117px}.label{font-size:28px;font-weight:600;line-height:1.22}.device-name{color:#c3c2b7;font-size:24px;font-weight:400;margin-top:5px}' +
-  '.bars{display:flex;flex-direction:column;gap:2px;border-left:1px solid #444746}.barline{height:28px;display:flex;align-items:center;gap:14px;white-space:nowrap}.bar{height:28px;flex:none;border-radius:0 4px 4px 0}.value{font-size:27px;font-weight:600}.faster{color:#c3c2b7;font-size:24px;font-weight:400}',
-  '<div class="legend"><span><i class="swatch previous"></i>1.0.15</span><span><i class="swatch current"></i>1.0.16</span></div><div class="rows">' +
-  timings.map(row => '<div class="row"><div class="label">'+row.task+'<div class="device-name">'+row.device+'</div></div><div class="bars">'+
-    bar(row.previous,'previous')+bar(row.current,'current','<span class="faster">'+(row.previous/row.current).toFixed(1)+'x faster</span>')+'</div></div>').join('')+'</div>');
+const palettes = {
+  light: { ink: '#2e2e32', muted: '#64646b', previous: '#7d7d83', current: '#2871c8', baseline: '#c6c6c9' },
+  dark: { ink: '#fafafb', muted: '#b9b9bf', previous: '#8e8e94', current: '#3584e4', baseline: '#505054' },
+};
+const speedFiles = [];
+for (const [theme,palette] of Object.entries(palettes)) {
+  speedFiles.push(await compose(theme === 'light' ? 'speed.webp' : 'speed-dark.webp',
+    'body{color:'+palette.ink+'}'+
+    'body{padding:32px 54px}.legend{height:52px;display:flex;align-items:center;gap:42px;margin-left:470px;font-size:26px;font-weight:600}.legend span{display:flex;align-items:center;gap:12px}.swatch{width:32px;height:18px;border-radius:4px}' +
+    '.previous{background:'+palette.previous+'}.current{background:'+palette.current+'}.rows{position:relative;margin-top:8px}.row{display:grid;grid-template-columns:470px 1fr;align-items:center;height:117px}.label{font-size:28px;font-weight:600;line-height:1.22}.device-name{color:'+palette.muted+';font-size:24px;font-weight:400;margin-top:5px}' +
+    '.bars{display:flex;flex-direction:column;gap:2px;border-left:1px solid '+palette.baseline+'}.barline{height:28px;display:flex;align-items:center;gap:14px;white-space:nowrap}.bar{height:28px;flex:none;border-radius:0 4px 4px 0}.value{font-size:27px;font-weight:600}.faster{color:'+palette.muted+';font-size:24px;font-weight:400}',
+    '<div class="legend"><span><i class="swatch previous"></i>1.0.15</span><span><i class="swatch current"></i>1.0.16</span></div><div class="rows">' +
+    timings.map(row => '<div class="row"><div class="label">'+row.task+'<div class="device-name">'+row.device+'</div></div><div class="bars">'+
+      bar(row.previous,'previous')+bar(row.current,'current','<span class="faster">'+(row.previous/row.current).toFixed(1)+'x faster</span>')+'</div></div>').join('')+'</div>'));
+}
 
 const host = await serve(0, prepared.directory);
 const viewport = { width: 1920, height: 1080, scale: 2 };
@@ -109,7 +121,7 @@ try {
   await e.invoke('new_document');
   const { createDrawing } = await import(pathToFileURL(resolve(prepared.directory, 'new-drawing-fixture.mjs')));
   const extent = [1200, 500];
-  await e.b.evaluate(createDrawing({ width: extent[0], height: extent[1], name: 'Ink sprig' }));
+  await e.b.evaluate(createDrawing({ width: extent[0], height: extent[1], name: 'Ink curves' }));
   await e.wait(`Number(layerApp.app.document_tabs(0).selected)!==${before} && !layerApp.state().document_file.busy`);
   await e.closeOtherDrawings();
   assert.deepEqual(await e.read('layerApp.state().tabs.filter(t=>t.active).map(t=>[t.width,t.height])'), [extent]);
@@ -126,16 +138,10 @@ try {
   const values = await e.read("['taper_start','taper_end','taper_pointiness'].map(id=>layerApp.state().tool_settings.find(s=>s.id===id).value)");
   [taper.start,taper.end,taper.pointiness].forEach((value,i)=>assert.ok(Math.abs(value-values[i])<.001));
   const strokes = [
-    { size: 12, path: 'M 92 430 C 360 441 690 219 1096 76' },
-    { size: 16, path: 'M 270 410 C 221 379 177 315 144 237' },
-    { size: 15, path: 'M 290 402 C 354 447 430 461 515 439' },
-    { size: 16, path: 'M 454 348 C 388 300 358 230 339 151' },
-    { size: 15, path: 'M 481 336 C 539 365 633 382 708 351' },
-    { size: 15, path: 'M 633 271 C 576 214 548 143 535 69' },
-    { size: 14, path: 'M 661 257 C 736 294 818 286 892 247' },
-    { size: 14, path: 'M 806 194 C 762 143 739 87 730 35' },
-    { size: 13, path: 'M 830 181 C 899 216 974 202 1039 161' },
-    { size: 12, path: 'M 985 118 C 961 84 950 54 950 26' },
+    { size: 22, path: 'M 85 365 C 290 480 475 420 581 244 S 865 32 1100 114' },
+    { size: 16, path: 'M 119 151 C 320 48 472 78 587 250 S 854 449 1110 350' },
+    { size: 12, path: 'M 159 441 C 330 300 387 105 535 70 S 920 185 1035 270' },
+    { size: 9, path: 'M 181 68 C 350 140 405 425 580 440 S 830 205 1060 175' },
   ];
   await e.frame(1, [600,250]);
   for (const stroke of strokes) {
@@ -185,6 +191,6 @@ const taperFile=await compose('taper.webp',
   '.paper{width:1280px;height:auto;border-radius:6px;display:block}.panel{width:410px;flex:none;padding:6px 0 3px;background:#414141;border-radius:10px;overflow:hidden}.panel img{display:block;width:100%;height:auto}',
   '<main><img class="paper" src="'+dataURL(paper)+'"><div class="panel"><img src="'+dataURL(panel)+'"></div></main>');
 const { directory,...source }=prepared;
-await writeFile(resolve(output,'manifest.json'),JSON.stringify({version,width,height,source:{...source,theme:'dark'},captures,
-  chart:{unit:'seconds',lower_is_better:true,versions:['1.0.15','1.0.16'],source:'Release note benchmark timings',timings},files:[devices,speed,taperFile]},null,2)+'\n');
+await writeFile(resolve(output,'manifest.json'),JSON.stringify({version,width,height,background:'transparent',source:{...source,theme:'dark'},captures,
+  chart:{unit:'seconds',lower_is_better:true,versions:['1.0.15','1.0.16'],source:'Release note benchmark timings',timings,palettes},files:[devices,...speedFiles,taperFile]},null,2)+'\n');
 console.log('Release visuals saved to '+output);

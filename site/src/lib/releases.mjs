@@ -88,6 +88,13 @@ function fitNotesIntoPage({ base, prefix, localImages }) {
     const shift = notesHeadingLevel - Math.min(...headings.map(node => Number(node.tagName[1])));
     for (const heading of headings) heading.tagName = `h${Math.min(6, Number(heading.tagName[1]) + shift)}`;
     for (const node of elements) {
+      if (localImages && typeof node.properties.srcSet === 'string') {
+        const candidate = /^(\S+)(?:\s+(\d+w|\d+(?:\.\d+)?x))?$/.exec(node.properties.srcSet.trim());
+        if (candidate && URL.canParse(candidate[1], base)) {
+          const url = new URL(candidate[1], base);
+          if (url.origin === new URL(base).origin) node.properties.srcSet = `${url.pathname}${url.search}${url.hash}${candidate[2] ? ' ' + candidate[2] : ''}`;
+        }
+      }
       for (const attribute of ['href', 'src']) {
         const value = node.properties[attribute];
         if (typeof value !== 'string') continue;

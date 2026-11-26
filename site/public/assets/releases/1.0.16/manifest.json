@@ -2,6 +2,7 @@
   "version": "1.0.16",
   "width": 1800,
   "height": 600,
+  "background": "transparent",
   "source": {
     "source": "https://github.com/capyatelier/capycanvas",
     "revision": "96078feb04ce6b37a71b5ab25810bf1b105163eb",
@@ -70,7 +71,7 @@
         "pkg/layer_web_bg.wasm": "88596e5f98ec28a406dac93bc791d66bc36e910703047c96ec6655ab31c9ca12"
       },
       "theme": "dark",
-      "sha256": "ef2eb712a09313bc24fc8640c5b147e131f455cb180dda1620bd9c2cb853d76a",
+      "sha256": "70d9dde35b548bc37f650feea72085c8fd77a1c2484b27e03e3fbff24fac712b",
       "size": [
         3840,
         2160
@@ -90,44 +91,20 @@
       },
       "strokes": [
         {
-          "size": 12,
-          "path": "M 92 430 C 360 441 690 219 1096 76"
+          "size": 22,
+          "path": "M 85 365 C 290 480 475 420 581 244 S 865 32 1100 114"
         },
         {
           "size": 16,
-          "path": "M 270 410 C 221 379 177 315 144 237"
-        },
-        {
-          "size": 15,
-          "path": "M 290 402 C 354 447 430 461 515 439"
-        },
-        {
-          "size": 16,
-          "path": "M 454 348 C 388 300 358 230 339 151"
-        },
-        {
-          "size": 15,
-          "path": "M 481 336 C 539 365 633 382 708 351"
-        },
-        {
-          "size": 15,
-          "path": "M 633 271 C 576 214 548 143 535 69"
-        },
-        {
-          "size": 14,
-          "path": "M 661 257 C 736 294 818 286 892 247"
-        },
-        {
-          "size": 14,
-          "path": "M 806 194 C 762 143 739 87 730 35"
-        },
-        {
-          "size": 13,
-          "path": "M 830 181 C 899 216 974 202 1039 161"
+          "path": "M 119 151 C 320 48 472 78 587 250 S 854 449 1110 350"
         },
         {
           "size": 12,
-          "path": "M 985 118 C 961 84 950 54 950 26"
+          "path": "M 159 441 C 330 300 387 105 535 70 S 920 185 1035 270"
+        },
+        {
+          "size": 9,
+          "path": "M 181 68 C 350 140 405 425 580 440 S 830 205 1060 175"
         }
       ],
       "paper_crop": [
@@ -161,7 +138,7 @@
       },
       {
         "task": "Startup",
-        "device": "XPPen MovinkPad Pro 14",
+        "device": "Wacom MovinkPad Pro 14",
         "previous": 7.6,
         "current": 1.5
       },
@@ -173,27 +150,52 @@
       },
       {
         "task": "Open a 61 MP photo",
-        "device": "XPPen MovinkPad Pro 14",
+        "device": "Wacom MovinkPad Pro 14",
         "previous": 9.8,
         "current": 3.8
       }
-    ]
+    ],
+    "palettes": {
+      "light": {
+        "ink": "#2e2e32",
+        "muted": "#64646b",
+        "previous": "#7d7d83",
+        "current": "#2871c8",
+        "baseline": "#c6c6c9"
+      },
+      "dark": {
+        "ink": "#fafafb",
+        "muted": "#b9b9bf",
+        "previous": "#8e8e94",
+        "current": "#3584e4",
+        "baseline": "#505054"
+      }
+    }
   },
   "files": [
     {
       "file": "devices.webp",
-      "bytes": 146482,
-      "sha256": "9ee1ea8bf4ab4be2d6a85723edef92eea58474be0f013f1b9a7cb96eb9250c6f"
+      "bytes": 155464,
+      "sha256": "412cec3d72ded159cf4a50538e870f47bcbc4d7fff427cf8784cd04dea0fc986",
+      "alpha": true
     },
     {
       "file": "speed.webp",
-      "bytes": 33748,
-      "sha256": "e40bb23e0fbb9c768c02eafb04c6ea0b41939bcc6bc231c3adc6fdfee2264d60"
+      "bytes": 31744,
+      "sha256": "0b8f1e428c0e1395b9fa4057e018cbbdaa6e5cb91186a13b23e128133f08776b",
+      "alpha": true
+    },
+    {
+      "file": "speed-dark.webp",
+      "bytes": 28418,
+      "sha256": "a39e4e49a1d4d3c1cc1f3e956c6f7664e10e24319256c21d33b183d969f8eb06",
+      "alpha": true
     },
     {
       "file": "taper.webp",
-      "bytes": 27684,
-      "sha256": "eada8e61138db154b40316f078b74c4789e53baedeafdde22de9c204b4317fba"
+      "bytes": 35688,
+      "sha256": "c3375f4ff93acfc15b63318bdbf6a061e7852a7286257b7b681f0b78eb106e9d",
+      "alpha": true
     }
   ]
 }
