@@ -527,8 +527,21 @@ crash or doesn't change). Say what the artist sees or can rely on.
 
 | Avoid | Use |
 | --- | --- |
-| The .capy format is stable, but it's better not to take chances. | Drawings saved in 1.0.15 or later will keep opening in future versions. |
+| The .capy format is stable, but it's better not to take chances. | Drawings saved in 1.0.15 or later will be compatible with future versions. |
 | Fill closes small gaps and fills under the lines. | The bucket tool closes small gaps in line art and leaves no white edge along the lines. |
+
+### Invented paraphrase
+
+A homemade phrase in place of a word artists already use, written to sound
+plain. It ends up stranger than the word it replaced. "Will keep opening" reads
+as if a file opens again and again on its own; nobody describes files that way.
+Plain means the word people actually say, not the fewest technical-sounding
+words. The rule against code words is about words from our code, not everyday
+terms like "compatible", "export" or "undo".
+
+| Avoid | Use |
+| --- | --- |
+| Drawings saved in 1.0.15 or later will keep opening in future versions. | Drawings saved in 1.0.15 or later will be compatible with future versions. |
 
 ### Benchmark prose
 
@@ -643,11 +656,12 @@ published. Report every failure with the sentence and the rule number.
 11. No connective tissue, purpose padding, reassurance or closing summary (6).
 12. No sentence ends on a vague pronoun when a noun would carry the stress (6).
 13. No hedges, metaphors or personification (6).
-14. Sections differ in shape where their content differs (6).
-15. No em dashes, exclamation marks or bold for emphasis (7).
-16. Images are cropped to what the section describes, with alt text (8).
-17. The description is one plain sentence (3).
-18. Read aloud, no two sentences in a row have the same rhythm.
+14. No invented paraphrase where a word artists already use exists (6).
+15. Sections differ in shape where their content differs (6).
+16. No em dashes, exclamation marks or bold for emphasis (7).
+17. Images are cropped to what the section describes, with alt text (8).
+18. The description is one plain sentence (3).
+19. Read aloud, no two sentences in a row have the same rhythm.
 
 A page passes when every item passes. "Mostly fine" is a fail.
 
