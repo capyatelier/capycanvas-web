@@ -674,8 +674,22 @@ accurate. This is the model:
   length and cadence of earlier notes: a few hundred words.
 - **Known issues.** Leave them out unless the owner asks for them.
 
+### What to include
+
+Each line carries a point artists care about. Say the main point and stop:
+"Capy Canvas now works on phones" doesn't need "or in your phone's browser"
+after it. Leave out details that only matter to us, however true they are.
+
 ### Claims
 
+- Check every feature you name in the app. Use its label as the app shows it,
+  and say where it is when it isn't a tool: "Edit ▸ Flat All Areas", not "Flat
+  All Areas" written as if it were a tool. Don't take names from string files
+  or commit messages.
+- Check every verb against what the change does. Smoothing that now acts on
+  pressure "accounts for" pressure; it doesn't "include" it.
+- Don't state shares or quantities nobody measured ("most of the work went
+  there"). Say the intent instead ("that was the focus").
 - Every number comes from a matched comparison with the previous release on
   named devices. In prose, give one multiplier; put the measurements in a chart
   with one device per bar pair.
@@ -700,7 +714,9 @@ and look at every image at display size on both backgrounds before committing.
 1. The text is in the owner's voice, and none of the cadence patterns in section 6 appear.
 2. Each feature and its detail are said once, together.
 3. Each benefit is the one an artist notices, checked against the change itself.
-4. Every number has a matched comparison behind it, and the devices are named correctly.
-5. No qualifier exists only to keep a claim technically true.
-6. The AppStream entry fits in 500 characters.
-7. Every image reads well on both themes.
+4. Every feature named is in the app under that name, with its menu path when it isn't a tool, and every verb matches what changed.
+5. No detail is there only because it's true; each line carries a point artists care about.
+6. Every number has a matched comparison behind it, and the devices are named correctly.
+7. No qualifier exists only to keep a claim technically true.
+8. The AppStream entry fits in 500 characters.
+9. Every image reads well on both themes.
