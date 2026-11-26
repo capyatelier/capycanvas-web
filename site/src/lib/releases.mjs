@@ -7,6 +7,7 @@ import rehypeSanitize, { defaultSchema } from 'rehype-sanitize';
 import rehypeStringify from 'rehype-stringify';
 
 export const releasesUrl = 'https://github.com/capyatelier/capycanvas/releases';
+export const displayVersion = version => version.replace(/^(\d+\.\d+)\.0$/, '$1');
 export const downloadsOrigin = 'https://downloads.capycanvas.art';
 export const releasesFeedUrl = `${downloadsOrigin}/releases.json`;
 export const platformFiles = {

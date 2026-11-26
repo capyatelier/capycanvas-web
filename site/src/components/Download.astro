@@ -1,6 +1,6 @@
 ---
 import { content } from '../data/content.mjs';
-import { releasesUrl } from '../lib/releases.mjs';
+import { displayVersion, releasesUrl } from '../lib/releases.mjs';
 import { releases, type PlatformFile, type Variant } from '../lib/release-data';
 import { appUrl, betaPages, feedbackUrl, platforms, route, type Locale, type Platform } from '../lib/site';
 import { formatDate } from '../lib/format';
@@ -26,7 +26,7 @@ const picks: Pick[] = [
     if (!latest) return [];
     return (files[platform] ?? []).map(file => ({
       platform, href: href(file), icon: 'download', arch: architectures[file.variant], command: commands[file.variant]?.(file),
-      label: t.downloadFor.replace('{version}', latest.version).replace('{platform}', `${name(platform)} ${t.variants[file.variant]}`),
+      label: t.downloadFor.replace('{version}', displayVersion(latest.version)).replace('{platform}', `${name(platform)} ${t.variants[file.variant]}`),
       detail: content[locale].versions.released.replace('{date}', formatDate(lang, latest.date)),
     }));
   }),

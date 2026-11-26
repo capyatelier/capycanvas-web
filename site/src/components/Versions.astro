@@ -1,6 +1,6 @@
 ---
 import { content } from '../data/content.mjs';
-import { releasesUrl } from '../lib/releases.mjs';
+import { displayVersion, releasesUrl } from '../lib/releases.mjs';
 import { releases, upcoming } from '../lib/release-data';
 import { platforms, type Locale } from '../lib/site';
 import { formatDate } from '../lib/format';
@@ -18,14 +18,14 @@ const t = content[locale].versions;
   {(releases.length > 0 || upcoming.length > 0) && locale !== 'en' && <p class="notes-language">{download.notesLanguage}</p>}
   {upcoming.map(release => (
     <article class="release release-upcoming" id={`v${release.version}`} aria-labelledby={`v${release.version}-title`}>
-      <h2 id={`v${release.version}-title`}><Phrase text={t.version}><span slot="version">{release.version}</span></Phrase></h2>
+      <h2 id={`v${release.version}-title`}><Phrase text={t.version}><span slot="version">{displayVersion(release.version)}</span></Phrase></h2>
       <p class="release-date"><span class="release-status">{t.upcoming}</span></p>
       <ReleaseNotes html={release.notes} />
     </article>
   ))}
   {releases.map((release, index) => (
     <article class="release" id={`v${release.version}`} aria-labelledby={`v${release.version}-title`}>
-      <h2 id={`v${release.version}-title`}><Phrase text={t.version}><span slot="version">{release.version}</span></Phrase></h2>
+      <h2 id={`v${release.version}-title`}><Phrase text={t.version}><span slot="version">{displayVersion(release.version)}</span></Phrase></h2>
       <p class="release-date">
         <span><Phrase text={t.released}><time slot="date" datetime={release.date}>{formatDate(lang, release.date)}</time></Phrase></span>
         {index === 0 && <span class="release-latest">{t.latest}</span>}

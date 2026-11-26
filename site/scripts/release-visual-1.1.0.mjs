@@ -5,11 +5,12 @@ import { dirname, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { PNG } from 'pngjs';
 import { browser } from './browser.mjs';
+import { displayVersion } from '../src/lib/releases.mjs';
 import { serve } from './serve.mjs';
 import { editor } from './capture/editor.mjs';
 import { quiet, settleLayout } from './capture/shoot.mjs';
 
-const version = '1.0.16';
+const version = '1.1.0';
 const width = 1800, height = 600;
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const json = async path => JSON.parse(await readFile(path, 'utf8'));
@@ -103,7 +104,7 @@ for (const [theme,palette] of Object.entries(palettes)) {
     'body{padding:32px 54px}.legend{height:52px;display:flex;align-items:center;gap:42px;margin-left:470px;font-size:26px;font-weight:600}.legend span{display:flex;align-items:center;gap:12px}.swatch{width:32px;height:18px;border-radius:4px}' +
     '.previous{background:'+palette.previous+'}.current{background:'+palette.current+'}.rows{position:relative;margin-top:8px}.row{display:grid;grid-template-columns:470px 1fr;align-items:center;height:117px}.label{font-size:28px;font-weight:600;line-height:1.22}.device-name{color:'+palette.muted+';font-size:24px;font-weight:400;margin-top:5px}' +
     '.bars{display:flex;flex-direction:column;gap:2px;border-left:1px solid '+palette.baseline+'}.barline{height:28px;display:flex;align-items:center;gap:14px;white-space:nowrap}.bar{height:28px;flex:none;border-radius:0 4px 4px 0}.value{font-size:27px;font-weight:600}.faster{color:'+palette.muted+';font-size:24px;font-weight:400}',
-    '<div class="legend"><span><i class="swatch previous"></i>1.0.15</span><span><i class="swatch current"></i>1.0.16</span></div><div class="rows">' +
+    '<div class="legend"><span><i class="swatch previous"></i>1.0.15</span><span><i class="swatch current"></i>' + displayVersion(version) + '</span></div><div class="rows">' +
     timings.map(row => '<div class="row"><div class="label">'+row.task+'<div class="device-name">'+row.device+'</div></div><div class="bars">'+
       bar(row.previous,'previous')+bar(row.current,'current','<span class="faster">'+(row.previous/row.current).toFixed(1)+'x faster</span>')+'</div></div>').join('')+'</div>'));
 }
@@ -192,5 +193,5 @@ const taperFile=await compose('taper.webp',
   '<main><img class="paper" src="'+dataURL(paper)+'"><div class="panel"><img src="'+dataURL(panel)+'"></div></main>');
 const { directory,...source }=prepared;
 await writeFile(resolve(output,'manifest.json'),JSON.stringify({version,width,height,background:'transparent',source:{...source,theme:'dark'},captures,
-  chart:{unit:'seconds',lower_is_better:true,versions:['1.0.15','1.0.16'],source:'Release note benchmark timings',timings,palettes},files:[devices,...speedFiles,taperFile]},null,2)+'\n');
+  chart:{unit:'seconds',lower_is_better:true,versions:['1.0.15',displayVersion(version)],source:'Release note benchmark timings',timings,palettes},files:[devices,...speedFiles,taperFile]},null,2)+'\n');
 console.log('Release visuals saved to '+output);

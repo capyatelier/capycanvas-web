@@ -4,8 +4,12 @@ import assert from 'node:assert/strict';
 import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { content, languages } from '../site/src/data/content.mjs';
-import { fetchReleases, publishedReleases, upcomingReleases, releasesFeedUrl, releasesUrl, renderNotes } from '../site/src/lib/releases.mjs';
+import { displayVersion, fetchReleases, publishedReleases, upcomingReleases, releasesFeedUrl, releasesUrl, renderNotes } from '../site/src/lib/releases.mjs';
 import { buildReleaseSite } from './release-sites.mjs';
+
+test('release headings and download buttons drop a zero patch part', () => {
+  assert.deepEqual(['1.1.0', '2.0.0', '1.0.15', '1.1.1'].map(displayVersion), ['1.1', '2.0', '1.0.15', '1.1.1']);
+});
 
 const fixture = JSON.parse(await readFile('tests/fixtures/releases.json', 'utf8'));
 const download = 'https://downloads.capycanvas.art';
@@ -163,14 +167,17 @@ for (const locale of Object.keys(languages)) {
     const page = main(await read(published, `${prefix(locale)}download/past-versions`));
     const article = page.match(/<article class="release release-upcoming" id="v1\.0\.15"[\s\S]*?<\/article>/)?.[0];
     assert.ok(article);
-    const next = page.match(/<article class="release release-upcoming" id="v1\.0\.16"[\s\S]*?<\/article>/)?.[0];
+    const next = page.match(/<article class="release release-upcoming" id="v1\.1\.0"[\s\S]*?<\/article>/)?.[0];
     assert.ok(next);
+    const heading = next.match(/<h2 id="v1\.1\.0-title"[^>]*>[\s\S]*?<\/h2>/)?.[0];
+    assert.match(heading, />1\.1</);
+    assert.doesNotMatch(heading, /1\.1\.0</);
     assert.deepEqual([...next.matchAll(/<img src="([^"]+)"/g)].map(([, src]) => src), [
-      '/assets/releases/1.0.16/devices.webp', '/assets/releases/1.0.16/speed.webp', '/assets/releases/1.0.16/taper.webp',
+      '/assets/releases/1.1.0/devices.webp', '/assets/releases/1.1.0/speed.webp', '/assets/releases/1.1.0/taper.webp',
     ]);
-    assert.match(next, /<picture><source media="\(prefers-color-scheme: dark\)" srcset="\/assets\/releases\/1\.0\.16\/speed-dark\.webp"><img src="\/assets\/releases\/1\.0\.16\/speed\.webp" alt="[^"]+"><\/picture>/);
+    assert.match(next, /<picture><source media="\(prefers-color-scheme: dark\)" srcset="\/assets\/releases\/1\.1\.0\/speed-dark\.webp"><img src="\/assets\/releases\/1\.1\.0\/speed\.webp" alt="[^"]+"><\/picture>/);
     assert.doesNotMatch(next, /<time|release-files|release-latest|releases\/(?:download|tag)\//);
-    assert.ok(page.indexOf('id="v1.0.16"') < page.indexOf('id="v1.0.2"'));
+    assert.ok(page.indexOf('id="v1.1.0"') < page.indexOf('id="v1.0.2"'));
     assert.equal(article.match(/class="release-status"[^>]*>([^<]+)<\/span>/)?.[1], escapeText(t.versions.upcoming));
     assert.match(article, /class="release-notes" lang="en"/);
     assert.deepEqual([...article.matchAll(/<img src="([^"]+)"/g)].map(([, src]) => src), [
@@ -183,7 +190,7 @@ for (const locale of Object.keys(languages)) {
     const latestPublished = page.match(/<article class="release" id="v1\.0\.2"[\s\S]*?<\/article>/)?.[0];
     assert.equal(latestPublished.match(/class="release-latest"[^>]*>([^<]+)<\/span>/)?.[1], escapeText(t.versions.latest));
     const downloadPage = main(await read(published, `${prefix(locale)}download`));
-    assert.doesNotMatch(downloadPage, /1\.0\.16|devices\.webp|speed(?:-dark)?\.webp|taper\.webp|1\.0\.15|vector-layers\.webp|tool-bubbles\.webp|blenders\.webp/);
+    assert.doesNotMatch(downloadPage, /1\.1\.0|devices\.webp|speed(?:-dark)?\.webp|taper\.webp|1\.0\.15|vector-layers\.webp|tool-bubbles\.webp|blenders\.webp/);
   });
 
   test(`${locale}: with no published release, both pages keep the coming-soon state`, async () => {
