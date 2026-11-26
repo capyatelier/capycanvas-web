@@ -151,7 +151,7 @@ for (const locale of Object.keys(languages)) {
         [`https://github.com/capyatelier/capycanvas/releases/tag/v${version}`, escapeText(t.versions.github)],
       ]);
     }
-    assert.equal(page.split('class="release-notes" lang="en"').length, 4, 'Upcoming notes and two published releases have notes');
+    assert.equal(page.split('class="release-notes" lang="en"').length, 5, 'Two upcoming notes and two published releases have notes');
     assert.equal(page.includes(escapeText(t.download.notesLanguage)), locale !== 'en');
     assert.ok(page.includes(`href="${releasesUrl}"`));
     assert.doesNotMatch(page, /onclick|javascript:|alert\(/);
@@ -159,10 +159,17 @@ for (const locale of Object.keys(languages)) {
     assert.doesNotMatch(html, /1\.0\.3|1\.1\.0-beta/);
   });
 
-  test(`${locale}: upcoming notes show all three heroes without a release date or downloads`, async () => {
+  test(`${locale}: upcoming notes show release heroes without a release date or downloads`, async () => {
     const page = main(await read(published, `${prefix(locale)}download/past-versions`));
     const article = page.match(/<article class="release release-upcoming" id="v1\.0\.15"[\s\S]*?<\/article>/)?.[0];
     assert.ok(article);
+    const next = page.match(/<article class="release release-upcoming" id="v1\.0\.16"[\s\S]*?<\/article>/)?.[0];
+    assert.ok(next);
+    assert.deepEqual([...next.matchAll(/<img src="([^"]+)"/g)].map(([, src]) => src), [
+      '/assets/releases/1.0.16/phones.webp', '/assets/releases/1.0.16/taper.webp',
+    ]);
+    assert.doesNotMatch(next, /<time|release-files|release-latest|releases\/(?:download|tag)\//);
+    assert.ok(page.indexOf('id="v1.0.16"') < page.indexOf('id="v1.0.2"'));
     assert.equal(article.match(/class="release-status"[^>]*>([^<]+)<\/span>/)?.[1], escapeText(t.versions.upcoming));
     assert.match(article, /class="release-notes" lang="en"/);
     assert.deepEqual([...article.matchAll(/<img src="([^"]+)"/g)].map(([, src]) => src), [
@@ -175,7 +182,7 @@ for (const locale of Object.keys(languages)) {
     const latestPublished = page.match(/<article class="release" id="v1\.0\.2"[\s\S]*?<\/article>/)?.[0];
     assert.equal(latestPublished.match(/class="release-latest"[^>]*>([^<]+)<\/span>/)?.[1], escapeText(t.versions.latest));
     const downloadPage = main(await read(published, `${prefix(locale)}download`));
-    assert.doesNotMatch(downloadPage, /1\.0\.15|vector-layers\.webp|tool-bubbles\.webp|blenders\.webp/);
+    assert.doesNotMatch(downloadPage, /1\.0\.16|phones\.webp|taper\.webp|1\.0\.15|vector-layers\.webp|tool-bubbles\.webp|blenders\.webp/);
   });
 
   test(`${locale}: with no published release, both pages keep the coming-soon state`, async () => {
