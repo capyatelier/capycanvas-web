@@ -674,28 +674,31 @@ accurate. This is the model:
   length and cadence of earlier notes: a few hundred words.
 - **Known issues.** Leave them out unless the owner asks for them.
 
-### Start from what the artist can now do
+### Write from the artist's point of view
 
-Release notes have a different job from the manual. The manual describes a
-feature neutrally; release notes tell an artist what they can now do in their
-own work that they couldn't before. Decide that first, before checking any
-wording, and write it as the main sentence of each section and bullet:
+Release notes are not a summary of what we built. A summary starts from the
+changelog and describes the product: where it runs, what it supports, which
+parts changed. Write instead from where the artist sits: their work, where they
+draw, what they want to do, and what this release changes about that.
 
 > Now you can draw on the go, directly on your iPhone and Android.
 
-That sentence matters because it's the reason phones matter to an artist.
-Everything else is a detail, and a detail goes in only if it changes whether
-the reader can use the feature. Platforms, input methods, surfaces and
-mechanisms usually don't: "or in your phone's browser" and "with pen or finger"
-add coverage, not value. A true, well-written detail can still be the wrong
-thing to say.
+That line describes the artist's life: they can draw away from their desk. "Or in
+your phone's browser" describes the product: one more place it runs. Both are
+true, and the second reads fine, but only the first is something an artist cares
+about. "With pen or finger" is the same kind of product detail.
 
-Ask of every line: would an artist do something differently after reading it?
-If not, cut it. The cadence checks in section 6 and the claim checks below come
-after this; they catch badly written or untrue sentences, not sentences that
-shouldn't be there.
+Before drafting, list what artists want to do, then say which of those this
+release changes. Don't start from the commit log and summarize it. For each
+line, ask whose point of view it takes: the artist's (their work, their places,
+their goals) or ours (platforms, components, features shipped). Keep a product
+detail only when it changes whether the reader can use the feature.
 
-| Avoid | Use |
+Section 6's cadence checks and the claim checks below come after this. They
+judge how a sentence is written and whether it's true. Neither asks whose point
+of view it takes, so a summary that passes them can still be the wrong text.
+
+| Ours | The artist's |
 | --- | --- |
 | Draw with pen or finger on iPhone and Android, or in your phone's browser. | Now you can draw on the go, directly on your iPhone and Android. |
 
@@ -730,7 +733,7 @@ and look at every image at display size on both backgrounds before committing.
 
 ### Checklist
 
-1. Each section and bullet leads with what the artist can now do in their own work, and every other line changes whether they can use it.
+1. Every line takes the artist's point of view: what they can now do in their own work. Product details stay only when they change whether the reader can use the feature.
 2. The text is in the owner's voice, and none of the cadence patterns in section 6 appear.
 3. Each feature and its detail are said once, together.
 4. Each benefit is the one an artist notices, checked against the change itself.
