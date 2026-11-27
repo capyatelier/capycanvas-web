@@ -27,6 +27,11 @@ test('only published releases are offered, newest first', () => {
   assert.deepEqual(publishedReleases([]), []);
 });
 
+test('a release is dated by the day it was published in California', () => {
+  const [release] = publishedReleases([{ tag_name: 'v1.1.0', published_at: '2026-11-27T00:32:14Z', html_url: 'https://github.com/capyatelier/capycanvas/releases/tag/v1.1.0', assets: [] }]);
+  assert.equal(release.date, '2026-11-26');
+});
+
 test('upcoming notes have no release or download metadata and disappear when their version is published', () => {
   const entries = [{ version: '1.0.13', markdown: '![Dry media](https://capycanvas.art/assets/releases/1.0.13/dry-media.webp)' }];
   const options = { base: 'https://capycanvas.art/' };

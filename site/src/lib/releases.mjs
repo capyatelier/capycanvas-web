@@ -28,6 +28,8 @@ export async function fetchReleases({ fetch = globalThis.fetch } = {}) {
   return response.json();
 }
 
+const releaseDay = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles' });
+
 export function publishedReleases(releases) {
   return releases
     .filter(release => !release.draft && !release.prerelease && release.published_at)
@@ -40,7 +42,7 @@ export function publishedReleases(releases) {
       };
       return {
         version,
-        date: release.published_at.slice(0, 10),
+        date: releaseDay.format(new Date(release.published_at)),
         url: release.html_url,
         notes: renderNotes(release.body ?? '', { base: release.html_url, prefix: `notes-${version.replace(/[^\w-]/g, '-')}-` }),
         files: Object.fromEntries(Object.entries(platformFiles).flatMap(([platform, variants]) => {
