@@ -71,7 +71,7 @@ export const additionalContent = {
       "latest": "Más reciente",
       "upcoming": "Próximamente",
       "files": "Archivos",
-      "github": "Todos los archivos en GitHub",
+      "github": "Más descargas en GitHub",
       "meta": "Todas las versiones publicadas de {appName}, con notas de la versión y enlaces de descarga."
     },
     "ipadBeta": {
@@ -187,7 +187,7 @@ export const additionalContent = {
       "latest": "Mais recente",
       "upcoming": "Em breve",
       "files": "Arquivos",
-      "github": "Todos os arquivos no GitHub",
+      "github": "Mais downloads no GitHub",
       "meta": "Todas as versões lançadas do {appName}, com notas da versão e links para download."
     },
     "ipadBeta": {
@@ -303,7 +303,7 @@ export const additionalContent = {
       "latest": "Terbaru",
       "upcoming": "Mendatang",
       "files": "Berkas",
-      "github": "Semua berkas di GitHub",
+      "github": "Unduhan lainnya di GitHub",
       "meta": "Semua versi {appName} yang telah dirilis, beserta catatan rilis dan tautan unduhan."
     },
     "ipadBeta": {
@@ -419,7 +419,7 @@ export const additionalContent = {
       "latest": "Dernière version",
       "upcoming": "À venir",
       "files": "Fichiers",
-      "github": "Tous les fichiers sur GitHub",
+      "github": "Autres téléchargements sur GitHub",
       "meta": "Toutes les versions publiées de {appName}, avec leurs notes de version et leurs liens de téléchargement."
     },
     "ipadBeta": {
@@ -535,7 +535,7 @@ export const additionalContent = {
       "latest": "Neueste",
       "upcoming": "Demnächst",
       "files": "Dateien",
-      "github": "Alle Dateien auf GitHub",
+      "github": "Weitere Downloads auf GitHub",
       "meta": "Alle veröffentlichten Versionen von {appName} mit Versionshinweisen und Download-Links."
     },
     "ipadBeta": {
@@ -651,7 +651,7 @@ export const additionalContent = {
       "latest": "Последняя",
       "upcoming": "Скоро",
       "files": "Файлы",
-      "github": "Все файлы на GitHub",
+      "github": "Другие загрузки на GitHub",
       "meta": "Все выпущенные версии {appName} с примечаниями к выпуску и ссылками для скачивания."
     },
     "ipadBeta": {
@@ -767,7 +767,7 @@ export const additionalContent = {
       "latest": "ล่าสุด",
       "upcoming": "เร็วๆ นี้",
       "files": "ไฟล์",
-      "github": "ไฟล์ทั้งหมดบน GitHub",
+      "github": "ดาวน์โหลดเพิ่มเติมบน GitHub",
       "meta": "{appName} ทุกเวอร์ชันที่เผยแพร่แล้ว พร้อมบันทึกประจำรุ่นและลิงก์ดาวน์โหลด"
     },
     "ipadBeta": {
@@ -883,7 +883,7 @@ export const additionalContent = {
       "latest": "Mới nhất",
       "upcoming": "Sắp ra mắt",
       "files": "Tệp",
-      "github": "Tất cả tệp trên GitHub",
+      "github": "Thêm bản tải xuống trên GitHub",
       "meta": "Mọi phiên bản {appName} đã phát hành, kèm ghi chú phát hành và liên kết tải xuống."
     },
     "ipadBeta": {
@@ -999,7 +999,7 @@ export const additionalContent = {
       "latest": "En yeni",
       "upcoming": "Yakında",
       "files": "Dosyalar",
-      "github": "GitHub'daki tüm dosyalar",
+      "github": "GitHub'daki diğer indirmeler",
       "meta": "{appName} uygulamasının yayımlanan tüm sürümleri, sürüm notları ve indirme bağlantılarıyla."
     },
     "ipadBeta": {
@@ -1115,7 +1115,7 @@ export const additionalContent = {
       "latest": "Più recente",
       "upcoming": "In arrivo",
       "files": "File",
-      "github": "Tutti i file su GitHub",
+      "github": "Altri download su GitHub",
       "meta": "Tutte le versioni pubblicate di {appName}, con note di rilascio e link per il download."
     },
     "ipadBeta": {

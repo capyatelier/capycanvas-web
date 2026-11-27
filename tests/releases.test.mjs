@@ -155,10 +155,9 @@ for (const locale of Object.keys(languages)) {
       const article = page.match(new RegExp(`<article class="release" id="v${version.replaceAll('.', '\\.')}"[\\s\\S]*?</article>`))[0];
       assert.match(article, new RegExp(`<time datetime="${date}"`));
       const links = [...article.matchAll(/<li[^>]*><a href="([^"]+)"[^>]*>(?:<svg[\s\S]*?<\/svg>)?([^<]+)(?:<svg[\s\S]*?<\/svg>)?<\/a>/g)].map(([, url, label]) => [url, label]);
-      assert.deepEqual(links, [
-        ...files.map(([file, label]) => [`${download}/v${version}/capycanvas-${version}-${file}`, escapeText(label)]),
-        [`https://github.com/capyatelier/capycanvas/releases/tag/v${version}`, escapeText(t.versions.github)],
-      ]);
+      assert.deepEqual(links, files.map(([file, label]) => [`${download}/v${version}/capycanvas-${version}-${file}`, escapeText(label)]));
+      const more = article.match(/<\/ul>\s*<p class="release-github"[^>]*><a href="([^"]+)"[^>]*>([^<]+)<svg/);
+      assert.deepEqual(more?.slice(1), [`https://github.com/capyatelier/capycanvas/releases/tag/v${version}`, escapeText(t.versions.github)]);
     }
     assert.equal(page.split('class="release-notes" lang="en"').length, 5, 'Two upcoming notes and two published releases have notes');
     assert.equal(page.includes(escapeText(t.download.notesLanguage)), locale !== 'en');
