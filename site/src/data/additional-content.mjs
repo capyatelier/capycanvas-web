@@ -21,14 +21,14 @@ export const additionalContent = {
     },
     "home": {
       "title": "{appName}",
-      "description": "{appName} es una aplicación multiplataforma para bocetos, ilustración y fotografía, con un potente motor de pintura acelerado por GPU. Y lo mejor: es 100 % gratis y todo el código es abierto.",
+      "description": "{appName} es una aplicación multiplataforma para bocetos, ilustración y fotografía, con un potente motor de pintura acelerado por GPU.",
       "workspaces": "Espacio de trabajo",
       "slides": {
         "sketch": "Un dibujo a tinta de un tren debajo de un gran árbol en el espacio de trabajo Sketch, donde el dibujo llena la pantalla y algunas herramientas se ubican en los bordes.",
         "paint": "Una pintura al óleo de una casa junto al mar al atardecer en el espacio de trabajo Paint, con pinceles, colores y capas al lado del lienzo.",
         "photo": "Una fotografía de un pequeño terrario en el espacio de trabajo Photo, con el motivo guardado como capa de selección sobre la foto."
       },
-      "meta": "{appName} es una aplicación multiplataforma para bocetos, ilustración y fotografía, con un potente motor de pintura acelerado por GPU. Y lo mejor: es 100 % gratis y todo el código es abierto."
+      "meta": "{appName} es una aplicación multiplataforma para bocetos, ilustración y fotografía, con un potente motor de pintura acelerado por GPU."
     },
     "download": {
       "title": "Descargar",
@@ -137,14 +137,14 @@ export const additionalContent = {
     },
     "home": {
       "title": "{appName}",
-      "description": "{appName} é um aplicativo multiplataforma para esboços, ilustração e fotografia, com um poderoso motor de pintura acelerado por GPU. E o melhor: é 100% gratuito e todo o código é aberto.",
+      "description": "{appName} é um aplicativo multiplataforma para esboços, ilustração e fotografia, com um poderoso motor de pintura acelerado por GPU.",
       "workspaces": "Espaço de trabalho",
       "slides": {
         "sketch": "Um desenho a tinta de um trem sob uma grande árvore na área de trabalho Sketch, onde o desenho preenche a tela e algumas ferramentas ficam nas bordas.",
         "paint": "Pintura a óleo de uma casa à beira-mar ao pôr do sol na área de trabalho Paint, com pincéis, cores e camadas ao lado da tela.",
         "photo": "Uma fotografia de um pequeno terrário na área de trabalho Photo, com o tema salvo como camada de seleção acima da foto."
       },
-      "meta": "{appName} é um aplicativo multiplataforma para esboços, ilustração e fotografia, com um poderoso motor de pintura acelerado por GPU. E o melhor: é 100% gratuito e todo o código é aberto."
+      "meta": "{appName} é um aplicativo multiplataforma para esboços, ilustração e fotografia, com um poderoso motor de pintura acelerado por GPU."
     },
     "download": {
       "title": "Baixar",
@@ -253,14 +253,14 @@ export const additionalContent = {
     },
     "home": {
       "title": "{appName}",
-      "description": "{appName} adalah aplikasi lintas platform untuk sketsa, ilustrasi, dan fotografi, dengan mesin lukis canggih yang dipercepat GPU. Yang terbaik, aplikasi ini 100% gratis dan seluruh kodenya open source.",
+      "description": "{appName} adalah aplikasi lintas platform untuk sketsa, ilustrasi, dan fotografi, dengan mesin lukis canggih yang dipercepat GPU.",
       "workspaces": "Ruang kerja",
       "slides": {
         "sketch": "Gambar tinta kereta api di bawah pohon besar di ruang kerja Sketch, tempat gambar memenuhi layar dan beberapa alat berada di tepinya.",
         "paint": "Lukisan cat minyak sebuah rumah di tepi laut saat matahari terbenam di ruang kerja Paint, dengan kuas, warna, dan lapisan di samping kanvas.",
         "photo": "Foto terarium kecil di ruang kerja Photo, dengan subjek tersimpan sebagai lapisan seleksi di atas foto."
       },
-      "meta": "{appName} adalah aplikasi lintas platform untuk sketsa, ilustrasi, dan fotografi, dengan mesin lukis canggih yang dipercepat GPU. Yang terbaik, aplikasi ini 100% gratis dan seluruh kodenya open source."
+      "meta": "{appName} adalah aplikasi lintas platform untuk sketsa, ilustrasi, dan fotografi, dengan mesin lukis canggih yang dipercepat GPU."
     },
     "download": {
       "title": "Unduh",
@@ -369,14 +369,14 @@ export const additionalContent = {
     },
     "home": {
       "title": "{appName}",
-      "description": "{appName} est une application multiplateforme pour le dessin, l'illustration et la photographie, dotée d'un puissant moteur de peinture accéléré par GPU. Le meilleur ? Elle est gratuite et open source.",
+      "description": "{appName} est une application multiplateforme pour le dessin, l'illustration et la photographie, dotée d'un puissant moteur de peinture accéléré par GPU.",
       "workspaces": "Espace de travail",
       "slides": {
         "sketch": "Un dessin à l'encre d'un train sous un grand arbre dans l'espace de travail Sketch, où le dessin remplit l'écran et quelques outils se trouvent sur les bords.",
         "paint": "Une peinture à l'huile d'une maison au bord de la mer au coucher du soleil dans l'espace de travail Paint, avec des pinceaux, des couleurs et des calques à côté de la toile.",
         "photo": "Une photographie d'un petit terrarium dans l'espace de travail Photo, avec le sujet enregistré comme calque de sélection au-dessus de la photo."
       },
-      "meta": "{appName} est une application multiplateforme pour le dessin, l'illustration et la photographie, dotée d'un puissant moteur de peinture accéléré par GPU. Le meilleur ? Elle est gratuite et open source."
+      "meta": "{appName} est une application multiplateforme pour le dessin, l'illustration et la photographie, dotée d'un puissant moteur de peinture accéléré par GPU."
     },
     "download": {
       "title": "Télécharger",
@@ -485,14 +485,14 @@ export const additionalContent = {
     },
     "home": {
       "title": "{appName}",
-      "description": "{appName} ist eine plattformübergreifende App für Skizzen, Illustration und Fotografie mit einer leistungsstarken GPU-beschleunigten Mal-Engine. Das Beste: Sie ist völlig kostenlos und Open Source.",
+      "description": "{appName} ist eine plattformübergreifende App für Skizzen, Illustration und Fotografie mit einer leistungsstarken GPU-beschleunigten Mal-Engine.",
       "workspaces": "Arbeitsbereich",
       "slides": {
         "sketch": "Eine Tuschezeichnung eines Zuges unter einem großen Baum im Sketch-Arbeitsbereich, wobei die Zeichnung den Bildschirm ausfüllt und an den Rändern einige Werkzeuge sitzen.",
         "paint": "Ein Ölgemälde eines Hauses am Meer bei Sonnenuntergang im Paint-Arbeitsbereich, mit Pinseln, Farben und Ebenen neben der Leinwand.",
         "photo": "Ein Foto eines kleinen Terrariums im Photo-Arbeitsbereich, mit dem Motiv als Auswahlebene über dem Foto gespeichert."
       },
-      "meta": "{appName} ist eine plattformübergreifende App für Skizzen, Illustration und Fotografie mit einer leistungsstarken GPU-beschleunigten Mal-Engine. Das Beste: Sie ist völlig kostenlos und Open Source."
+      "meta": "{appName} ist eine plattformübergreifende App für Skizzen, Illustration und Fotografie mit einer leistungsstarken GPU-beschleunigten Mal-Engine."
     },
     "download": {
       "title": "Herunterladen",
@@ -601,14 +601,14 @@ export const additionalContent = {
     },
     "home": {
       "title": "{appName}",
-      "description": "{appName} — кроссплатформенное приложение для скетчей, иллюстрации и обработки фото с мощным движком рисования с ускорением на GPU. А главное — оно бесплатное и с открытым кодом.",
+      "description": "{appName} — это кроссплатформенное приложение для создания эскизов, иллюстраций и фотографий с мощным механизмом рисования с ускорением GPU.",
       "workspaces": "Рабочая область",
       "slides": {
         "sketch": "Чернильный рисунок поезда под большим деревом в рабочем пространстве Sketch, где рисунок заполняет экран, а по краям расположено несколько инструментов.",
         "paint": "Картина маслом дома у моря на закате в рабочем пространстве Paint, с кистями, цветами и слоями рядом с холстом.",
         "photo": "Фотография небольшого террариума в рабочей области Photo; объект сохранён как слой выделения над фотографией."
       },
-      "meta": "{appName} — кроссплатформенное приложение для скетчей, иллюстрации и обработки фото с мощным движком рисования с ускорением на GPU. А главное — оно бесплатное и с открытым кодом."
+      "meta": "{appName} — это кроссплатформенное приложение для создания эскизов, иллюстраций и фотографий с мощным механизмом рисования с ускорением GPU."
     },
     "download": {
       "title": "Скачать",
@@ -717,14 +717,14 @@ export const additionalContent = {
     },
     "home": {
       "title": "{appName}",
-      "description": "{appName} เป็นแอปข้ามแพลตฟอร์มสำหรับสเก็ตช์ ภาพประกอบ และแต่งรูป พร้อมกลไกการลงสี GPU อันทรงพลัง ใช้ฟรีและเป็นโอเพนซอร์ส",
+      "description": "{appName} เป็นแอปข้ามแพลตฟอร์มสำหรับการสเก็ตช์ภาพ ภาพประกอบ และการถ่ายภาพ พร้อมด้วยกลไกการลงสีที่เร่งประสิทธิภาพ GPU อันทรงพลัง",
       "workspaces": "พื้นที่ทำงาน",
       "slides": {
         "sketch": "ภาพวาดหมึกของรถไฟใต้ต้นไม้ใหญ่ในพื้นที่ทำงาน Sketch โดยที่ภาพวาดนั้นเต็มหน้าจอและมีเครื่องมือสองสามชิ้นอยู่ที่ขอบ",
         "paint": "ภาพวาดสีน้ำมันของบ้านริมทะเลยามพระอาทิตย์ตกดินในพื้นที่ทำงาน Paint พร้อมด้วยพู่กัน สี และเลเยอร์ข้างผ้าใบ",
         "photo": "รูปถ่ายของตู้กระจกขนาดเล็กในพื้นที่ทำงาน Photo โดยบันทึกวัตถุหลักเป็นเลเยอร์พื้นที่เลือกไว้เหนือภาพถ่าย"
       },
-      "meta": "{appName} เป็นแอปข้ามแพลตฟอร์มสำหรับสเก็ตช์ ภาพประกอบ และแต่งรูป พร้อมกลไกการลงสี GPU อันทรงพลัง ใช้ฟรีและเป็นโอเพนซอร์ส"
+      "meta": "{appName} เป็นแอปข้ามแพลตฟอร์มสำหรับการสเก็ตช์ภาพ ภาพประกอบ และการถ่ายภาพ พร้อมด้วยกลไกการลงสีที่เร่งประสิทธิภาพ GPU อันทรงพลัง"
     },
     "download": {
       "title": "ดาวน์โหลด",
@@ -833,14 +833,14 @@ export const additionalContent = {
     },
     "home": {
       "title": "{appName}",
-      "description": "{appName} là một ứng dụng đa nền tảng để phác thảo, minh họa và chỉnh sửa ảnh, với công cụ vẽ tăng tốc GPU mạnh mẽ. Tuyệt nhất là ứng dụng miễn phí 100% và toàn bộ mã nguồn đều mở.",
+      "description": "{appName} là một ứng dụng đa nền tảng để phác thảo, minh họa và chụp ảnh, với công cụ vẽ tăng tốc GPU mạnh mẽ.",
       "workspaces": "Không gian làm việc",
       "slides": {
         "sketch": "Bản vẽ bằng mực về một chiếc xe lửa bên dưới một cái cây lớn trong không gian làm việc Sketch, nơi bản vẽ lấp đầy màn hình và một vài công cụ nằm ở các cạnh.",
         "paint": "Bức tranh sơn dầu về một ngôi nhà bên bờ biển lúc hoàng hôn trong không gian làm việc Paint, với bút vẽ, màu sắc và các lớp bên cạnh khung vẽ.",
         "photo": "Ảnh chụp một hồ cạn nhỏ trong không gian làm việc Photo, với chủ thể được lưu thành lớp vùng chọn phía trên ảnh."
       },
-      "meta": "{appName} là một ứng dụng đa nền tảng để phác thảo, minh họa và chỉnh sửa ảnh, với công cụ vẽ tăng tốc GPU mạnh mẽ. Tuyệt nhất là ứng dụng miễn phí 100% và toàn bộ mã nguồn đều mở."
+      "meta": "{appName} là một ứng dụng đa nền tảng để phác thảo, minh họa và chụp ảnh, với công cụ vẽ tăng tốc GPU mạnh mẽ."
     },
     "download": {
       "title": "Tải xuống",
@@ -949,14 +949,14 @@ export const additionalContent = {
     },
     "home": {
       "title": "{appName}",
-      "description": "{appName}, güçlü bir GPU hızlandırmalı boyama motoruna sahip, eskiz, illüstrasyon ve fotoğrafçılık için çapraz platformlu bir uygulamadır. En güzeli de %100 ücretsiz olması ve tüm kodunun açık kaynak olması.",
+      "description": "{appName}, güçlü bir GPU hızlandırmalı boyama motoruna sahip, eskiz, illüstrasyon ve fotoğrafçılık için çapraz platformlu bir uygulamadır.",
       "workspaces": "Çalışma alanı",
       "slides": {
         "sketch": "Sketch çalışma alanındaki büyük bir ağacın altındaki bir trenin mürekkepli çizimi; burada çizim ekranı dolduruyor ve kenarlarda birkaç araç bulunuyor.",
         "paint": "Paint çalışma alanında, tuvalin yanında fırçalar, renkler ve katmanlar bulunan, gün batımında deniz kenarındaki bir evin yağlıboya tablosu.",
         "photo": "Photo çalışma alanında küçük bir teraryumun fotoğrafı; konu, fotoğrafın üstünde seçim katmanı olarak kaydedilmiş."
       },
-      "meta": "{appName}, güçlü bir GPU hızlandırmalı boyama motoruna sahip, eskiz, illüstrasyon ve fotoğrafçılık için çapraz platformlu bir uygulamadır. En güzeli de %100 ücretsiz olması ve tüm kodunun açık kaynak olması."
+      "meta": "{appName}, güçlü bir GPU hızlandırmalı boyama motoruna sahip, eskiz, illüstrasyon ve fotoğrafçılık için çapraz platformlu bir uygulamadır."
     },
     "download": {
       "title": "İndir",
@@ -1065,14 +1065,14 @@ export const additionalContent = {
     },
     "home": {
       "title": "{appName}",
-      "description": "{appName} è un'app multipiattaforma per schizzi, illustrazione e fotografia, con un potente motore di pittura accelerato dalla GPU. E la cosa migliore: è gratis al 100% e tutto il codice è open source.",
+      "description": "{appName} è un'app multipiattaforma per schizzi, illustrazioni e fotografie, con un potente motore di pittura accelerato GPU.",
       "workspaces": "Spazio di lavoro",
       "slides": {
         "sketch": "Un disegno a inchiostro di un treno sotto un grande albero nell'area di lavoro Sketch, dove il disegno riempie lo schermo e alcuni strumenti si trovano ai bordi.",
         "paint": "Un dipinto a olio di una casa al mare al tramonto nello spazio di lavoro Paint, con pennelli, colori e strati accanto alla tela.",
         "photo": "Una fotografia di un piccolo terrario nell'area di lavoro Photo, con il soggetto salvato come livello di selezione sopra la foto."
       },
-      "meta": "{appName} è un'app multipiattaforma per schizzi, illustrazione e fotografia, con un potente motore di pittura accelerato dalla GPU. E la cosa migliore: è gratis al 100% e tutto il codice è open source."
+      "meta": "{appName} è un'app multipiattaforma per schizzi, illustrazioni e fotografie, con un potente motore di pittura accelerato GPU."
     },
     "download": {
       "title": "Scarica",

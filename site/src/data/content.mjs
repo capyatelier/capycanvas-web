@@ -15,14 +15,14 @@ export const content = brandTranslations({
     nav: { privacy: 'Privacy', webDemo: 'Web Demo', download: 'Download', documentation: 'Documentation', home: 'Home', language: 'Language', main: 'Main navigation', skip: 'Skip to content', github: '{appName} on GitHub' },
     home: {
       title: '{appName}',
-      description: "{appName} is a cross-platform app for sketching, illustration, and photography, with a powerful GPU-accelerated painting engine. Best of all, it's 100% free and all of the code is open source.",
+      description: '{appName} is a cross-platform app for sketching, illustration, and photography, with a powerful GPU-accelerated painting engine.',
       workspaces: 'Workspace',
       slides: {
         sketch: 'An ink drawing of a train beneath a large tree in the Sketch workspace, where the drawing fills the screen and a few tools sit at the edges.',
         paint: 'An oil painting of a house by the sea at sunset in the Paint workspace, with brushes, colors and layers beside the canvas.',
         photo: 'A photograph of a small terrarium in the Photo workspace, with the subject saved as a selection layer above the photo.'
       },
-      meta: "{appName} is a cross-platform app for sketching, illustration, and photography, with a powerful GPU-accelerated painting engine. Best of all, it's 100% free and all of the code is open source."
+      meta: '{appName} is a cross-platform app for sketching, illustration, and photography, with a powerful GPU-accelerated painting engine.'
     },
     download: {
       title: 'Download', intro: '{appName} is in beta. Expect some rough edges, and {feedback}.', feedback: 'share your feedback on GitHub',
@@ -69,14 +69,14 @@ export const content = brandTranslations({
     nav: { privacy: 'プライバシー', webDemo: 'ウェブデモ', download: 'ダウンロード', documentation: 'ドキュメント', home: 'ホーム', language: '言語', main: 'メインナビゲーション', skip: '本文へ移動', github: 'GitHub の {appName}' },
     home: {
       title: '{appName}',
-      description: '{appName}は、強力な GPU 加速ペイントエンジンを備えた、スケッチ、イラスト、写真のためのクロスプラットフォームアプリです。しかも完全無料で、コードはすべてオープンソースです。',
+      description: '{appName} は、強力な GPU 加速ペイントエンジンを備えた、スケッチ、イラスト、写真のためのクロスプラットフォームアプリです。',
       workspaces: 'ワークスペース',
       slides: {
         sketch: 'Sketchワークスペースで表示した、大きな木の下の電車を描いたペン画。絵が画面いっぱいに広がり、道具は画面の端にまとまっています。',
         paint: 'Paintワークスペースで表示した、夕暮れの海辺の家を描いた油彩。キャンバスの横にブラシ、色、レイヤーが並んでいます。',
         photo: 'Photoワークスペースで表示した、小さなテラリウムの写真。被写体が選択範囲レイヤーとして写真の上に保存されています。'
       },
-      meta: '{appName}は、強力な GPU 加速ペイントエンジンを備えた、スケッチ、イラスト、写真のためのクロスプラットフォームアプリです。しかも完全無料で、コードはすべてオープンソースです。'
+      meta: '{appName} は、強力な GPU 加速ペイントエンジンを備えた、スケッチ、イラスト、写真のためのクロスプラットフォームアプリです。'
     },
     download: {
       title: 'ダウンロード', intro: '{appName} は現在ベータ版です。不具合があるかもしれません。{feedback}。', feedback: 'GitHub でご意見をお寄せください',
@@ -123,14 +123,14 @@ export const content = brandTranslations({
     nav: { privacy: '隐私', webDemo: '网页演示', download: '下载', documentation: '文档', home: '首页', language: '语言', main: '主导航', skip: '跳转到正文', github: 'GitHub 上的 {appName}' },
     home: {
       title: '{appName}',
-      description: '{appName} 是一款跨平台应用，配备强大的 GPU 加速绘画引擎，适用于速写、插画和摄影。最棒的是，它完全免费，所有代码都已开源。',
+      description: '{appName} 是一款跨平台应用，配备强大的 GPU 加速绘画引擎，适用于速写、插画和摄影。',
       workspaces: '工作区',
       slides: {
         sketch: 'Sketch工作区中的一幅钢笔画：大树下的一节电车。画面铺满整个屏幕，少量工具位于屏幕边缘。',
         paint: 'Paint工作区中的一幅油画：日落时分海边的房子，画布旁边是笔刷、颜色和图层。',
         photo: 'Photo工作区中的一张小型生态缸照片，主体已作为选区图层保存在照片上方。'
       },
-      meta: '{appName} 是一款跨平台应用，配备强大的 GPU 加速绘画引擎，适用于速写、插画和摄影。最棒的是，它完全免费，所有代码都已开源。'
+      meta: '{appName} 是一款跨平台应用，配备强大的 GPU 加速绘画引擎，适用于速写、插画和摄影。'
     },
     download: {
       title: '下载', intro: '{appName} 目前处于测试阶段，可能会有一些小问题，欢迎{feedback}。', feedback: '在 GitHub 上反馈意见',
@@ -177,14 +177,14 @@ export const content = brandTranslations({
     nav: { privacy: '隱私權', webDemo: '網頁示範', download: '下載', documentation: '文件', home: '首頁', language: '語言', main: '主導航', skip: '跳至主要內容', github: 'GitHub 上的 {appName}' },
     home: {
       title: '{appName}',
-      description: '{appName}是一款跨平台應用程式，配備強大的 GPU 加速繪畫引擎，適用於速寫、插畫和攝影。最棒的是，它完全免費，所有程式碼都是開源的。',
+      description: '{appName}是一款跨平台應用程式，配備強大的 GPU 加速繪畫引擎，適用於速寫、插畫和攝影。',
       workspaces: '工作區',
       slides: {
         sketch: 'Sketch工作區中的一幅鋼筆畫：大樹下的一節電車。畫面鋪滿整個螢幕，少量工具位於螢幕邊緣。',
         paint: 'Paint工作區中的一幅油畫：日落時分海邊的房子，畫布旁邊是筆刷、色彩和圖層。',
         photo: 'Photo工作區中的一張小型生態缸照片，主體已作為選取範圍圖層儲存在照片上方。'
       },
-      meta: '{appName}是一款跨平台應用程式，配備強大的 GPU 加速繪畫引擎，適用於速寫、插畫和攝影。最棒的是，它完全免費，所有程式碼都是開源的。'
+      meta: '{appName}是一款跨平台應用程式，配備強大的 GPU 加速繪畫引擎，適用於速寫、插畫和攝影。'
     },
     download: {
       title: '下載', intro: '{appName} 目前處於測試階段，可能會有一些小問題，歡迎{feedback}。', feedback: '在 GitHub 上回饋意見',
@@ -231,14 +231,14 @@ export const content = brandTranslations({
     nav: { privacy: '개인정보', webDemo: '웹 데모', download: '다운로드', documentation: '문서', home: '홈', language: '언어', main: '주요 탐색', skip: '본문으로 건너뛰기', github: 'GitHub의 {appName}' },
     home: {
       title: '{appName}',
-      description: '{appName}는 강력한 GPU 가속 페인팅 엔진을 갖춘, 스케치와 일러스트, 사진을 위한 크로스 플랫폼 앱입니다. 무엇보다 100% 무료이고 모든 코드가 오픈 소스입니다.',
+      description: '{appName}는 강력한 GPU 가속 페인팅 엔진을 갖춘, 스케치와 일러스트, 사진을 위한 크로스 플랫폼 앱입니다.',
       workspaces: '작업 공간',
       slides: {
         sketch: 'Sketch 작업 공간에 표시한, 큰 나무 아래의 전차를 그린 펜화. 그림이 화면을 가득 채우고 몇 가지 도구만 가장자리에 있습니다.',
         paint: 'Paint 작업 공간에 표시한, 해 질 녘 바닷가의 집을 그린 유화. 캔버스 옆에 브러시, 색상, 레이어가 있습니다.',
         photo: 'Photo 작업 공간에 표시한 작은 테라리움 사진. 피사체가 사진 위에 선택 영역 레이어로 저장되어 있습니다.'
       },
-      meta: '{appName}는 강력한 GPU 가속 페인팅 엔진을 갖춘, 스케치와 일러스트, 사진을 위한 크로스 플랫폼 앱입니다. 무엇보다 100% 무료이고 모든 코드가 오픈 소스입니다.'
+      meta: '{appName}는 강력한 GPU 가속 페인팅 엔진을 갖춘, 스케치와 일러스트, 사진을 위한 크로스 플랫폼 앱입니다.'
     },
     download: {
       title: '다운로드', intro: '{appName}는 현재 베타 단계입니다. 다소 불안정할 수 있습니다. {feedback}.', feedback: 'GitHub에서 의견을 보내 주세요',
