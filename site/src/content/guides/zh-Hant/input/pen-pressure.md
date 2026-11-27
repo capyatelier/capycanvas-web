@@ -8,7 +8,7 @@ related: ["input/pen", "preferences", "brushes/dry-media"]
 
 ## 打開筆壓校準
 
-打開[偏好設定](/zh-Hant/docs/preferences/)，選擇 **繪圖筆與輸入**，然後選擇 **筆壓** 旁的 **調整…**。
+打開[偏好設定](/zh-Hant/docs/preferences/)，選擇 **繪圖筆與滑鼠**，然後選擇 **筆壓** 旁的 **調整…**。
 
 ![筆壓對話框，包含曲線、更用力和更輕柔、重設、取消和套用。](shot:pen/pressure-calibration)
 

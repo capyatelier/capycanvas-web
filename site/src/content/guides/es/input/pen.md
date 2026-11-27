@@ -4,9 +4,9 @@ description: "Los ajustes del lápiz en Preferencias y el doble toque y el gesto
 related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-Los ajustes del lápiz están en la página **Lápiz y entrada** de **Editar > Preferencias**.
+Los ajustes del lápiz están en la página **Lápiz y ratón** de **Editar > Preferencias**.
 
-![La página Lápiz y entrada de Preferencias.](shot:pen/pen-and-input)
+![La página Lápiz y ratón de Preferencias.](shot:pen/pen-and-input)
 
 ## Presión del lápiz
 

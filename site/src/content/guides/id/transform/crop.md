@@ -25,9 +25,6 @@ kanvas.
 - Seret pegangan sudut atau tepi untuk mengubah ukuran bingkai. Tahan **Shift** untuk mempertahankan proporsinya, atau **Alt** untuk mengubah ukuran dari titik tengah.
 - Seret bingkai melewati tepi kanvas untuk menambahkan kanvas transparan.
 
-Di layar sentuh, hanya pegangan yang merespons jari. Jari di dalam bingkai
-menggeser tampilan.
-
 Untuk menyelesaikan, pilih **Terapkan pangkasan** atau tekan **Enter**. **Batalkan pangkasan**, **Escape**,
 dan **Urungkan** membuang pemangkasan. Dengan cara mana pun, alat yang Anda pakai
 sebelumnya kembali aktif.

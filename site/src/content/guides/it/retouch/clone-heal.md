@@ -59,9 +59,7 @@ Esegui una delle seguenti operazioni:
 - Tieni premuto **Alt** e fai clic nel punto da cui vuoi copiare.
 - Seleziona **Imposta sorgente**, poi fai clic.
 
-Finché non la imposti, la sorgente si trova al centro della vista. Trascina il
-disco per spostare la sorgente. Un dito può trascinare il disco, ma non imposta
-mai la sorgente. Mentre dipingi, il disco segue il punto che viene copiato.
+Finché non la imposti, la sorgente si trova al centro della vista. Trascina il disco per spostare la sorgente. Un dito può trascinare il disco, ma imposta la sorgente solo quando disegna. Mentre dipingi, il disco segue il punto che viene copiato.
 
 **Pennello correttivo al volo** trova da sé la propria sorgente e non ha un
 disco.

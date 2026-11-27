@@ -34,7 +34,7 @@ in the title bar in Sketch, or the tool in the Tools toolbar at the left edge in
 Paint. Drag a tool onto the canvas to keep it there as a
 [bubble](/docs/customize/bubbles/).
 
-> **Memo:** Fingers never draw. Two fingers on the canvas pan, zoom and rotate the view.
+> **Memo:** On iPad, iPhone and Android, one finger draws until you first use a pen on the canvas. Two fingers on the canvas pan, zoom and rotate the view. See [Touch gestures](/docs/input/touch/).
 
 To undo a stroke, choose **Edit > Undo**, press **Ctrl+Z** or tap the canvas
 with two fingers (see [Undo and redo](/docs/start/undo/)).

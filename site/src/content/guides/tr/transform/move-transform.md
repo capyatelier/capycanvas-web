@@ -90,7 +90,7 @@ Birden çok katmanı dönüştürmek için önce seçimi temizleyin.
 Tüm modlarda:
 
 - Ok tuşları kutuyu 1 px, **Shift** ile 10 px kaydırır.
-- Dokunmatik ekranda bir tutamacın üstündeki veya kutunun içindeki parmak onu sürükler. Başka bir yerdeki parmak görünümü taşır.
+- Dokunmatik ekranda bir tutamacın üstündeki veya kutunun içindeki parmak onu sürükler.
 
 ## Dönüştürme çubuğu
 

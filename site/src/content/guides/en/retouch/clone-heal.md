@@ -57,7 +57,7 @@ Do one of the following:
 - Select **Set Source**, then click.
 
 Until you set it, the source is at the center of the view. Drag the disc to
-move the source. A finger can drag the disc, but never sets the source. While
+move the source. A finger can drag the disc, and sets the source only when one finger draws. While
 you paint, the disc follows the point being copied.
 
 **Spot Healing Brush** finds its own source and has no disc.

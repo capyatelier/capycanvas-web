@@ -4,9 +4,9 @@ description: "The pen settings in Preferences and Apple Pencil double-tap and sq
 related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-The pen settings are on the **Pen & Input** page of **Edit > Preferences**.
+The pen settings are on the **Pen & Mouse** page of **Edit > Preferences**.
 
-![The Pen & Input page of Preferences.](shot:pen/pen-and-input)
+![The Pen & Mouse page of Preferences.](shot:pen/pen-and-input)
 
 ## Pen pressure
 

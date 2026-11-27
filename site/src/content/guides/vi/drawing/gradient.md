@@ -21,7 +21,6 @@ Kéo từ điểm đầu đến điểm cuối. Một đường thẳng đi theo
 
 - Dải chuyển màu phủ toàn bộ lớp, với màu đầu tiên ở trước điểm đầu và màu cuối cùng ở sau điểm cuối.
 - Nhấn **Escape** trong lúc kéo để hủy.
-- Kéo bằng ngón tay sẽ di chuyển khung vẽ.
 - Vùng chọn đang hoạt động giới hạn dải chuyển màu, và dải chuyển màu tuân theo **Khóa alpha**.
 - Trong Mặt nạ nhanh hoặc trên lớp vùng chọn, dải chuyển màu đi vào mặt nạ vùng chọn.
 - Mỗi dải chuyển màu là một bước hoàn tác.

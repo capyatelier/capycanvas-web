@@ -78,7 +78,7 @@ related: ["selections/working", "layers/paths", "transform/crop", "transform/cli
 在所有模式下：
 
 - 方向鍵每次將變形框微移 1 px，按住 **Shift** 時微移 10 px。
-- 在觸控式螢幕上，手指放在控制點上或框內時拖動變形框。手指放在其他位置時移動檢視。
+- 在觸控式螢幕上，手指放在控制點上或框內時拖動變形框。
 
 ## 變形欄
 

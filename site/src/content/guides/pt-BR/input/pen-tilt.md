@@ -10,7 +10,7 @@ Você pode alterar a resposta de inclinação e a direção de cada caneta.
 
 Faça um dos seguintes:
 
-- Abra [Preferências](/pt-BR/docs/preferences/), selecione **Caneta e entrada** e depois **Ajustar…** ao lado de **Inclinação da caneta**.
+- Abra [Preferências](/pt-BR/docs/preferences/), selecione **Caneta e mouse** e depois **Ajustar…** ao lado de **Inclinação da caneta**.
 - Procure **Inclinação da caneta…** na busca de comandos.
 
 Use sua caneta na tela para selecionar o dispositivo a ser calibrado. A caixa de diálogo mostra o nome do dispositivo e sua direção de inclinação. Cada caneta mantém sua própria calibração.

@@ -91,7 +91,7 @@ In **Deforma**:
 In tutte le modalità:
 
 - I tasti freccia spostano il riquadro di 1 px, e di 10 px con **Maiusc**.
-- Su uno schermo touch, un dito su una maniglia o all'interno del riquadro lo trascina. Un dito altrove sposta la vista.
+- Su uno schermo touch, un dito su una maniglia o all'interno del riquadro lo trascina.
 
 ## Barra di trasformazione
 

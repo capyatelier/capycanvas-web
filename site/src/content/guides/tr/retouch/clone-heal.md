@@ -58,9 +58,7 @@ Aşağıdakilerden birini yapın:
 - **Alt** tuşunu basılı tutun ve kopyalamak istediğiniz yere tıklayın.
 - **Kaynağı ayarla** düğmesini seçin, ardından tıklayın.
 
-Siz ayarlayana kadar kaynak görünümün ortasındadır. Kaynağı taşımak için diski
-sürükleyin. Parmak diski sürükleyebilir, ancak kaynağı hiçbir zaman ayarlamaz.
-Boyarken disk kopyalanan noktayı izler.
+Siz ayarlayana kadar kaynak görünümün ortasındadır. Kaynağı taşımak için diski sürükleyin. Parmak diski sürükleyebilir, ancak kaynağı yalnızca parmak çizerken ayarlar. Boyarken disk kopyalanan noktayı izler.
 
 **Nokta düzeltme fırçası** kendi kaynağını bulur ve diski yoktur.
 

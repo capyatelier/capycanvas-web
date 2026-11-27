@@ -4,9 +4,9 @@ description: "Pengaturan pena di Preferensi serta ketuk ganda dan remas pada App
 related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-Pengaturan pena ada di halaman **Pena & Masukan** pada **Edit > Preferensi**.
+Pengaturan pena ada di halaman **Pena & Mouse** pada **Edit > Preferensi**.
 
-![Halaman Pena & Masukan di Preferensi.](shot:pen/pen-and-input)
+![Halaman Pena & Mouse di Preferensi.](shot:pen/pen-and-input)
 
 ## Tekanan pena
 

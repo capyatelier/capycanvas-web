@@ -10,7 +10,7 @@ Sie können die Neigungsreaktion und -richtung für jeden Stift ändern.
 
 Führen Sie einen der folgenden Schritte aus:
 
-- Öffnen Sie [Einstellungen](/de/docs/preferences/), wählen Sie **Stift und Eingabe** und dann **Anpassen…** neben **Stiftneigung** aus.
+- Öffnen Sie [Einstellungen](/de/docs/preferences/), wählen Sie **Stift und Maus** und dann **Anpassen…** neben **Stiftneigung** aus.
 - Suchen Sie in der Befehlssuche nach **Stiftneigung…**.
 
 Verwenden Sie Ihren Stift auf der Leinwand, um das zu kalibrierende Gerät auszuwählen. Der Dialog zeigt den Gerätenamen und seine Neigungsrichtung. Jeder Stift behält seine eigene Kalibrierung.

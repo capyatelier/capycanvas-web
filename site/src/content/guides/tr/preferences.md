@@ -1,6 +1,6 @@
 ---
 title: "Tercihler"
-description: "Tercihler iletişim kutusu ve Görünüm, Tuval, Renk, Kalem ve giriş ve Hakkında sayfalarındaki ayarlar."
+description: "Tercihler iletişim kutusu ve Görünüm, Renk, Dokunma, Kalem ve fare ve Hakkında sayfalarındaki ayarlar."
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -91,34 +91,6 @@ olarak açıktır.
 
 Capy düğmesinin resmini belirler: **Yukarı bakıyor** (varsayılan), **Öne bakıyor**, **Yıkanıyor** veya **Uyuyor**.
 
-## Tuval
-
-![Tuvalde gezinme ayarları.](shot:preferences/canvas-navigation)
-
-### Fare tekerleği
-
-Değiştirici tuş kullanılmadan fare tekerleğinin tuvali kaydırmasını veya yakınlaştırmasını seçin. **Ctrl** basılıyken diğer işlem kullanılır.
-
-### İki parmakla döndür
-
-İki parmakla çevirmenin görünümü döndürmesini sağlar. İki parmak hareketlerini kaydırma ve yakınlaştırmayla sınırlamak için kapatın.
-
-### Kaydırarak gezinme hızı
-
-Fare tekerleğinin, izleme dörtgeninin ve oyun kumandasının sol analog çubuğunun
-tuvali ne kadar kaydıracağını 0,25 × ile 4,00 × arasında ölçekler (varsayılan
-1,00 ×).
-
-### Kaydırarak yakınlaştırma hızı
-
-**Ctrl** ve fare tekerleğiyle ya da oyun kumandasının sağ analog çubuğuyla
-yakınlaştırmayı 0,25 × ile 4,00 × arasında ölçekler (varsayılan 1,00 ×).
-
-### Yeni gruplar için Geçiş modunu kullan
-
-Yeni grupları [Geçiş](/tr/docs/layers/blend-modes/) olarak ayarlar. Varsayılan
-olarak kapalıdır. Mevcut gruplar değişmez.
-
 ## Renk
 
 **Fotoğraf açma** ayarları açtığınız fotoğraflara uygulanır.
@@ -141,9 +113,45 @@ Renk profili olmayan fotoğrafların nasıl açılacağını belirler: **sRGB va
 Renk profili kitaplığını açar. Bkz.
 [Renk uzayı, bit derinliği ve karıştırma](/tr/docs/color-management/color-spaces/).
 
-## Kalem ve giriş
+### Yeni gruplar için Geçiş modunu kullan
 
-Bu sayfadaki ayarlar [Kalem](/tr/docs/input/pen/), [Kalem eğme](/tr/docs/input/pen-tilt/) ve [Dokunma hareketleri](/tr/docs/input/touch/) bölümlerinde açıklanmıştır.
+Yeni grupları [Geçiş](/tr/docs/layers/blend-modes/) olarak ayarlar. Varsayılan
+olarak kapalıdır. Mevcut gruplar değişmez.
+
+## Dokunma
+
+**Tek parmakla sürükleme** ve **Dokunma hareketleri** altındaki parmak dokunuşları [Dokunma hareketleri](/tr/docs/input/touch/) bölümünde açıklanmıştır. macOS uygulamasında **Tek parmakla sürükleme** yoktur.
+
+### İki parmakla döndür
+
+İki parmakla çevirmenin görünümü döndürmesini sağlar. İki parmak hareketlerini kaydırma ve yakınlaştırmayla sınırlamak için kapatın.
+
+### Hızlı sıkıştırarak sığdır
+
+Hızlıca içe doğru sıkıştırmak, çizimin tamamını döndürme veya çevirme olmadan ortalanmış olarak gösterir. Varsayılan olarak açıktır.
+
+### Ters sıkıştırmayla görünümü geri yükle
+
+Sığdırmak için hızlıca sıkıştırdıktan hemen sonra parmakları hızlıca açmak önceki görünüme döner. Varsayılan olarak açıktır.
+
+## Kalem ve fare
+
+Bu sayfadaki kalem ayarları [Kalem](/tr/docs/input/pen/) ve [Kalem eğme](/tr/docs/input/pen-tilt/) bölümlerinde açıklanmıştır.
+
+### Fare tekerleği
+
+Değiştirici tuş kullanılmadan fare tekerleğinin tuvali kaydırmasını veya yakınlaştırmasını seçin. **Ctrl** basılıyken diğer işlem kullanılır.
+
+### Kaydırarak gezinme hızı
+
+Fare tekerleğinin, izleme dörtgeninin ve oyun kumandasının sol analog çubuğunun
+tuvali ne kadar kaydıracağını 0,25 × ile 4,00 × arasında ölçekler (varsayılan
+1,00 ×).
+
+### Kaydırarak yakınlaştırma hızı
+
+**Ctrl** ve fare tekerleğiyle ya da oyun kumandasının sağ analog çubuğuyla
+yakınlaştırmayı 0,25 × ile 4,00 × arasında ölçekler (varsayılan 1,00 ×).
 
 ## Klavye kısayolları
 

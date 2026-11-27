@@ -5417,40 +5417,6 @@
       "annotations": []
     },
     {
-      "file": "docs/de/preferences/canvas-navigation-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "dark",
-      "locales": [
-        "de"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 14226,
-      "sha256": "525257c7725034296988c76d336cd69c027dc36c90bf6341dec9648f4b1bcfd1",
-      "annotations": []
-    },
-    {
-      "file": "docs/de/preferences/canvas-navigation-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "light",
-      "locales": [
-        "de"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 14960,
-      "sha256": "81b6ea87cc2027ea59df727b7d1e1eb5e0816f0a7979a2398f30fdc59a6f9d75",
-      "annotations": []
-    },
-    {
       "file": "docs/de/preferences/color-dark.webp",
       "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
       "shot": "docs/preferences/color",
@@ -13340,40 +13306,6 @@
       ],
       "bytes": 44936,
       "sha256": "b0d45648334e02a13db6c7c13981c8aaf6616057465bd5c565c0a3fecb6af3da",
-      "annotations": []
-    },
-    {
-      "file": "docs/en/preferences/canvas-navigation-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "dark",
-      "locales": [
-        "en"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 10658,
-      "sha256": "78f5ade00e31f7d24c0e0755b28617b6f7e887b501f2a1832ed019c23f8f284c",
-      "annotations": []
-    },
-    {
-      "file": "docs/en/preferences/canvas-navigation-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "light",
-      "locales": [
-        "en"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 11182,
-      "sha256": "8692911421a1fd5d1454744e67844be18f31c844e5acdb52942612b2264ac9a8",
       "annotations": []
     },
     {
@@ -21269,40 +21201,6 @@
       "annotations": []
     },
     {
-      "file": "docs/es/preferences/canvas-navigation-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "dark",
-      "locales": [
-        "es"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 12926,
-      "sha256": "68f9be30ba8c7c754c68ec63ad4360f93fefdfc21cfb80dabe648541fed6e1bc",
-      "annotations": []
-    },
-    {
-      "file": "docs/es/preferences/canvas-navigation-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "light",
-      "locales": [
-        "es"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 13664,
-      "sha256": "93727afba2bcc1d81742e3853b589e048bf487ae87ea3131bac0cb424114bb3c",
-      "annotations": []
-    },
-    {
       "file": "docs/es/preferences/color-dark.webp",
       "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
       "shot": "docs/preferences/color",
@@ -29192,40 +29090,6 @@
       ],
       "bytes": 49658,
       "sha256": "31a0295ac8951d123d26213101b9ee8fccf0c3790c20ce463afd8f1d9de4fd30",
-      "annotations": []
-    },
-    {
-      "file": "docs/fr/preferences/canvas-navigation-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "dark",
-      "locales": [
-        "fr"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 14120,
-      "sha256": "d8782fba321ca1f85849995e4def19c9a7538ee873336c94947e4b76ad065681",
-      "annotations": []
-    },
-    {
-      "file": "docs/fr/preferences/canvas-navigation-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "light",
-      "locales": [
-        "fr"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 14880,
-      "sha256": "245171172a7eaf82544fa8791c94a24e158120c8f85f6024aeb9ecb3af2082fa",
       "annotations": []
     },
     {
@@ -37121,40 +36985,6 @@
       "annotations": []
     },
     {
-      "file": "docs/id/preferences/canvas-navigation-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "dark",
-      "locales": [
-        "id"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 12420,
-      "sha256": "1d049d7d0a7512f5faf23e70432c2eda9b605cd896f978024713a79615ff9539",
-      "annotations": []
-    },
-    {
-      "file": "docs/id/preferences/canvas-navigation-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "light",
-      "locales": [
-        "id"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 13076,
-      "sha256": "1c0c71c00a36020d5e26ccc9df5afddb1a4fd3463663c2c15fe27dbe83ca1cc7",
-      "annotations": []
-    },
-    {
       "file": "docs/id/preferences/color-dark.webp",
       "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
       "shot": "docs/preferences/color",
@@ -45044,40 +44874,6 @@
       ],
       "bytes": 47798,
       "sha256": "99b7ad67c6f3621f3092241dfbdbf5b8ceae2890ef6aaeaba24f6005f1ace7ee",
-      "annotations": []
-    },
-    {
-      "file": "docs/it/preferences/canvas-navigation-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "dark",
-      "locales": [
-        "it"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 13450,
-      "sha256": "b0474cc35724f69a4eaf30f36d6dc1ccd1530568f99caa785642acb04b767dd3",
-      "annotations": []
-    },
-    {
-      "file": "docs/it/preferences/canvas-navigation-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "light",
-      "locales": [
-        "it"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 14096,
-      "sha256": "63b7830b529733ed8604b28a65b782b277aa90aa6ae4a4147d2117695ca906f3",
       "annotations": []
     },
     {
@@ -52973,40 +52769,6 @@
       "annotations": []
     },
     {
-      "file": "docs/ja/preferences/canvas-navigation-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "dark",
-      "locales": [
-        "ja"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 11934,
-      "sha256": "21d085d6ca2248debfd618e2eca55e3a700bd27908b73d412eb31e559d8c04a9",
-      "annotations": []
-    },
-    {
-      "file": "docs/ja/preferences/canvas-navigation-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "light",
-      "locales": [
-        "ja"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 12570,
-      "sha256": "16b6ca8537e2fe309666701865706fd712418daf69a588aae4458d75a9a31522",
-      "annotations": []
-    },
-    {
       "file": "docs/ja/preferences/color-dark.webp",
       "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
       "shot": "docs/preferences/color",
@@ -60896,40 +60658,6 @@
       ],
       "bytes": 39466,
       "sha256": "c808b94366d3eac7b17cd533c6cb083c355e4902343b3de921c7c2bce55f3437",
-      "annotations": []
-    },
-    {
-      "file": "docs/ko/preferences/canvas-navigation-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "dark",
-      "locales": [
-        "ko"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 9236,
-      "sha256": "c764e3b8f587b55c035786b0be15b49d0075e697d6e48000a350598de0e41716",
-      "annotations": []
-    },
-    {
-      "file": "docs/ko/preferences/canvas-navigation-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "light",
-      "locales": [
-        "ko"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 9662,
-      "sha256": "33666897233b03762999d1cc13971039fe58048aa75094a6da7b5944f3ea3fc0",
       "annotations": []
     },
     {
@@ -68825,40 +68553,6 @@
       "annotations": []
     },
     {
-      "file": "docs/pt-BR/preferences/canvas-navigation-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "dark",
-      "locales": [
-        "pt-BR"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 13822,
-      "sha256": "4f75328f852691420c84efa50b41e8e1b1bdf1375b2c3634f7821b76ab9df5e6",
-      "annotations": []
-    },
-    {
-      "file": "docs/pt-BR/preferences/canvas-navigation-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "light",
-      "locales": [
-        "pt-BR"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 14540,
-      "sha256": "ce944aa39c4947c073e3d1a65f3c4bc376e5669d41c49bd6415fd48bba09e194",
-      "annotations": []
-    },
-    {
       "file": "docs/pt-BR/preferences/color-dark.webp",
       "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
       "shot": "docs/preferences/color",
@@ -76748,40 +76442,6 @@
       ],
       "bytes": 48202,
       "sha256": "2ba5e3640fc394f5a1ae0a71f378cc5fb11c1509bb6cd72ef34308603928acac",
-      "annotations": []
-    },
-    {
-      "file": "docs/ru/preferences/canvas-navigation-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "dark",
-      "locales": [
-        "ru"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 14018,
-      "sha256": "b3a1072b6b0031d97c998a10d272db6c09ab58c854ee7d1b0fbb0a4124b02d02",
-      "annotations": []
-    },
-    {
-      "file": "docs/ru/preferences/canvas-navigation-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "light",
-      "locales": [
-        "ru"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 14678,
-      "sha256": "d7ab3402f9cb8d955e9969e029d7b4986706b1e33e9036a55aabdad24a793c4f",
       "annotations": []
     },
     {
@@ -85793,40 +85453,6 @@
       "annotations": []
     },
     {
-      "file": "docs/th/preferences/canvas-navigation-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "dark",
-      "locales": [
-        "th"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 10184,
-      "sha256": "2c90d6a8005f5e38d4b4cd5df68c9b400468b794096eeda5ee5a4ce3f0760b7b",
-      "annotations": []
-    },
-    {
-      "file": "docs/th/preferences/canvas-navigation-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "light",
-      "locales": [
-        "th"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 10632,
-      "sha256": "554abeea7fe62713d3652a4f03e1c279e8c455382fe0ae5699540f626f9c4062",
-      "annotations": []
-    },
-    {
       "file": "docs/th/preferences/color-dark.webp",
       "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
       "shot": "docs/preferences/color",
@@ -93716,40 +93342,6 @@
       ],
       "bytes": 43814,
       "sha256": "b7a2d94398f5e5dfb3ce73a6b2cc240f537e930e9b517fd660690fa00ceea74b",
-      "annotations": []
-    },
-    {
-      "file": "docs/tr/preferences/canvas-navigation-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "dark",
-      "locales": [
-        "tr"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 11324,
-      "sha256": "9916c16aad5a66b46fbda124aad5443d695c322b186719a63464b8ea93e108a7",
-      "annotations": []
-    },
-    {
-      "file": "docs/tr/preferences/canvas-navigation-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "light",
-      "locales": [
-        "tr"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 11866,
-      "sha256": "17737ca8f98209e4acca51385d8f9c6db792a459b738eec9af58afa7b73c7420",
       "annotations": []
     },
     {
@@ -101645,40 +101237,6 @@
       "annotations": []
     },
     {
-      "file": "docs/vi/preferences/canvas-navigation-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "dark",
-      "locales": [
-        "vi"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 12414,
-      "sha256": "f4ca35f5b946cd80779699d761b18d06b3b45868b0f148fe15ab7e889bc36fae",
-      "annotations": []
-    },
-    {
-      "file": "docs/vi/preferences/canvas-navigation-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "light",
-      "locales": [
-        "vi"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 13086,
-      "sha256": "502fb4b652c8921683bedd08ab4ff554fec0fffbf2583155d68c1c406e633e38",
-      "annotations": []
-    },
-    {
       "file": "docs/vi/preferences/color-dark.webp",
       "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
       "shot": "docs/preferences/color",
@@ -109571,40 +109129,6 @@
       "annotations": []
     },
     {
-      "file": "docs/zh-Hant/preferences/canvas-navigation-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "dark",
-      "locales": [
-        "zh-Hant"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 11180,
-      "sha256": "e821f45a6fd46bb1561db9268a4466f1ca52ac3d4f7da2c0fa98e81a56027a10",
-      "annotations": []
-    },
-    {
-      "file": "docs/zh-Hant/preferences/canvas-navigation-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "light",
-      "locales": [
-        "zh-Hant"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 11860,
-      "sha256": "58d52f43fdbfbd383101b50b499f584a3e77c100e80c1e468f795257c3432ec5",
-      "annotations": []
-    },
-    {
       "file": "docs/zh-Hant/preferences/color-dark.webp",
       "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
       "shot": "docs/preferences/color",
@@ -117494,40 +117018,6 @@
       ],
       "bytes": 42586,
       "sha256": "a4b770155496f7efeadab452a668ef2d2c1b686f87a4c945ad19b4ce4ee3c485",
-      "annotations": []
-    },
-    {
-      "file": "docs/zh/preferences/canvas-navigation-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "dark",
-      "locales": [
-        "zh"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 10688,
-      "sha256": "be639c15bb459140706565290d26fdcb65ad41b8a03b30250d67339bce02e2c2",
-      "annotations": []
-    },
-    {
-      "file": "docs/zh/preferences/canvas-navigation-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
-      "shot": "docs/preferences/canvas-navigation",
-      "theme": "light",
-      "locales": [
-        "zh"
-      ],
-      "quality": 70,
-      "size": [
-        584,
-        353
-      ],
-      "bytes": 11134,
-      "sha256": "648b08f0c99d2570dd995ea57de44c2a21dbf72be22903b6bf3a0770a8b6b3a0",
       "annotations": []
     },
     {

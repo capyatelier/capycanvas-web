@@ -88,7 +88,7 @@ Dalam **Lengkungkan**:
 Dalam setiap mode:
 
 - Tombol panah menggeser kotak sejauh 1 px, dan 10 px dengan **Shift**.
-- Di layar sentuh, jari pada pegangan atau di dalam kotak akan menyeretnya. Jari di tempat lain menggeser tampilan.
+- Di layar sentuh, jari pada pegangan atau di dalam kotak akan menyeretnya.
 
 ## Bilah transformasi
 

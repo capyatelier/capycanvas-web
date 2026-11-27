@@ -31,7 +31,7 @@ başlık çubuğundaki **Fırça** düğmesini, Boya'da pencerenin sol kenarınd
 Araçlar çubuğundan aracı seçin. Bir aracı tuvalde tutmak için tuvale sürükleyin;
 araç bir [baloncuk](/tr/docs/customize/bubbles/) olur.
 
-> **Not:** Parmaklar hiçbir zaman çizmez. Tuvaldeki iki parmak görünümü kaydırır, yakınlaştırır ve döndürür.
+> **Not:** iPad, iPhone ve Android'de, tuvalde ilk kez kalem kullanana kadar tek parmak çizer. Tuvaldeki iki parmak görünümü kaydırır, yakınlaştırır ve döndürür. Bkz. [Dokunma hareketleri](/tr/docs/input/touch/).
 
 Bir fırça darbesini geri almak için **Düzenle > Geri al** komutunu seçin,
 **Ctrl+Z** tuşlarına basın veya tuvale iki parmakla dokunun (bkz.

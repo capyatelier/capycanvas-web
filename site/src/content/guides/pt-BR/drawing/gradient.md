@@ -21,7 +21,6 @@ degradê é pintado quando você solta.
 
 - O degradê cobre a camada inteira, com a primeira cor antes do ponto inicial e a última cor depois do ponto final.
 - Pressione **Escape** durante o arrasto para cancelar.
-- Arrastar com um dedo move a tela.
 - Uma seleção ativa limita o degradê, e o **Bloqueio alfa** é respeitado.
 - Na Máscara rápida ou em uma camada de seleção, o degradê vai para a máscara de seleção.
 - Cada degradê é um passo de desfazer.

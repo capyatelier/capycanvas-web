@@ -87,7 +87,7 @@ In **Warp**:
 In every mode:
 
 - Arrow keys nudge the box by 1 px, and by 10 px with **Shift**.
-- On a touch screen, a finger on a handle or inside the box drags it. A finger elsewhere moves the view.
+- On a touch screen, a finger on a handle or inside the box drags it.
 
 ## Transform bar
 

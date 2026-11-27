@@ -43,8 +43,8 @@ export const docsUI = brandTranslations({
       "windows": "{appName} uses Windows Ink for the pen. On Windows, Pen buttons lists one side button, the Lower side button.",
       "mac": "If the pen lands in the wrong place, check which screen your tablet is mapped to in its settings. Use Command wherever these guides say Ctrl, and Option wherever they say Alt.",
       "linux": "The Linux app needs a Wayland session and a graphics card that supports Vulkan. If pressure doesn't work or the cursor lands in the wrong place, check your desktop's tablet settings.",
-      "ipad": "Most Apple Pencil models support pressure and tilt, but Apple Pencil (USB-C) doesn't support pressure. Fingers and palms never draw.",
-      "android": "Use a pen that supports pressure. A rubber-tipped stylus counts as a finger, and fingers never draw."
+      "ipad": "Most Apple Pencil models support pressure and tilt, but Apple Pencil (USB-C) doesn't support pressure. Once you've used Apple Pencil on the canvas, fingers and palms don't draw.",
+      "android": "Use a pen that supports pressure. A rubber-tipped stylus counts as a finger, so it has no pressure."
     },
     "imageOpen": "Open full-size screenshot",
     "sketchDemo": "Demonstration of arranging floating tools, focusing on the canvas, choosing a green brush and adjusting its softness.",
@@ -256,8 +256,8 @@ export const docsUI = brandTranslations({
       "windows": "{appName}はペンにWindows Inkを使います。Windowsでは、「ペンボタン」に表示されるサイドボタンは「下のサイドボタン」の1つだけです。",
       "mac": "ペンの位置がずれる場合は、タブレットの設定で割り当てている画面を確認してください。このガイドでCtrlと書かれている箇所ではCommandを、Altと書かれている箇所ではOptionを使ってください。",
       "linux": "Linux版のアプリには、Waylandセッションと、Vulkanに対応したグラフィックカードが必要です。筆圧が効かない、またはカーソルの位置がずれる場合は、デスクトップのタブレット設定を確認してください。",
-      "ipad": "ほとんどのApple Pencilは筆圧と傾きに対応していますが、Apple Pencil（USB-C）は筆圧に対応していません。指や手のひらでは描画されません。",
-      "android": "筆圧に対応したペンを使ってください。先端がゴムのスタイラスは指として扱われ、指では描画されません。"
+      "ipad": "ほとんどのApple Pencilは筆圧と傾きに対応していますが、Apple Pencil（USB-C）は筆圧に対応していません。キャンバスで一度Apple Pencilを使うと、指や手のひらでは描画されなくなります。",
+      "android": "筆圧に対応したペンを使ってください。先端がゴムのスタイラスは指として扱われるため、筆圧は使えません。"
     },
     "imageOpen": "スクリーンショットを原寸で開く",
     "sketchDemo": "フローティングツールを配置し、キャンバスに集中できる表示に切り替え、緑色のブラシを選んで柔らかさを調整するデモ。",
@@ -384,8 +384,8 @@ export const docsUI = brandTranslations({
       "windows": "{appName}使用Windows Ink处理笔输入。在Windows上，“笔按钮”中只列出一个侧按钮，即“下侧按钮”。",
       "mac": "如果笔的落点不对，请在数位板设置中检查它映射到了哪个屏幕。本指南中写作Ctrl的地方请使用Command，写作Alt的地方请使用Option。",
       "linux": "Linux版应用需要Wayland会话和支持Vulkan的显卡。如果压感不起作用或光标位置不对，请检查桌面环境中的数位板设置。",
-      "ipad": "大多数Apple Pencil都支持压感和倾斜，但Apple Pencil（USB-C）不支持压感。手指和手掌不会画出笔画。",
-      "android": "请使用支持压感的笔。橡胶头触控笔会被当作手指，而手指不会画出笔画。"
+      "ipad": "大多数Apple Pencil都支持压感和倾斜，但Apple Pencil（USB-C）不支持压感。在画布上用过 Apple Pencil 之后，手指和手掌不会画出笔画。",
+      "android": "请使用支持压感的笔。橡胶头触控笔会被当作手指，因此没有压感。"
     },
     "imageOpen": "打开原尺寸截图",
     "sketchDemo": "演示如何摆放浮动工具、专注画布、选择绿色画笔并调整其柔软度。",
@@ -512,8 +512,8 @@ export const docsUI = brandTranslations({
       "windows": "{appName}使用Windows Ink處理筆輸入。在Windows上，「繪圖筆按鈕」中只列出一個側按鈕，即「下側按鈕」。",
       "mac": "如果筆的落點不對，請在數位板設定中檢查它對映到了哪個螢幕。本指南中寫作Ctrl的地方請使用Command，寫作Alt的地方請使用Option。",
       "linux": "Linux 版應用程式需要Wayland 工作階段和支援Vulkan的顯示卡。如果筆壓不起作用或游標位置不對，請檢查桌面環境中的數位板設定。",
-      "ipad": "大多數Apple Pencil都支援筆壓和傾斜，但Apple Pencil（USB-C）不支援筆壓。手指和手掌不會畫出筆畫。",
-      "android": "請使用支援筆壓的筆。橡膠頭觸控筆會被當作手指，而手指不會畫出筆畫。"
+      "ipad": "大多數Apple Pencil都支援筆壓和傾斜，但Apple Pencil（USB-C）不支援筆壓。在畫布上用過 Apple Pencil 之後，手指和手掌不會畫出筆畫。",
+      "android": "請使用支援筆壓的筆。橡膠頭觸控筆會被當作手指，因此沒有筆壓。"
     },
     "imageOpen": "開啟原始大小截圖",
     "sketchDemo": "示範如何擺放浮動工具、專注畫布、選擇綠色筆刷並調整其柔軟度。",
@@ -640,8 +640,8 @@ export const docsUI = brandTranslations({
       "windows": "{appName}는 펜 입력에 Windows Ink를 사용합니다. Windows의 펜 버튼에는 측면 버튼으로 아래쪽 측면 버튼 하나만 표시됩니다.",
       "mac": "펜이 엉뚱한 위치에 찍히면 태블릿 설정에서 어느 화면에 연결되어 있는지 확인하세요. 이 가이드에서 Ctrl로 표시된 곳은 Command를, Alt로 표시된 곳은 Option을 사용하세요.",
       "linux": "Linux 앱에는 Wayland 세션과 Vulkan을 지원하는 그래픽 카드가 필요합니다. 필압이 작동하지 않거나 커서 위치가 어긋나면 데스크톱의 태블릿 설정을 확인하세요.",
-      "ipad": "대부분의 Apple Pencil은 필압과 기울기를 지원하지만, Apple Pencil(USB-C)은 필압을 지원하지 않습니다. 손가락과 손바닥으로는 그려지지 않습니다.",
-      "android": "필압을 지원하는 펜을 사용하세요. 끝이 고무로 된 스타일러스는 손가락으로 인식되며, 손가락으로는 그려지지 않습니다."
+      "ipad": "대부분의 Apple Pencil은 필압과 기울기를 지원하지만, Apple Pencil(USB-C)은 필압을 지원하지 않습니다. 캔버스에서 Apple Pencil을 한 번 사용하면 손가락과 손바닥으로는 그려지지 않습니다.",
+      "android": "필압을 지원하는 펜을 사용하세요. 끝이 고무로 된 스타일러스는 손가락으로 인식되므로 필압이 없습니다."
     },
     "imageOpen": "원본 크기 스크린샷 열기",
     "sketchDemo": "떠 있는 도구를 배치하고, 캔버스에 집중하고, 녹색 브러시를 선택하고 부드러움을 조절하는 시연.",

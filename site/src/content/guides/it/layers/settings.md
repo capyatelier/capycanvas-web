@@ -119,7 +119,7 @@ non può essere ritagliato, fare da base di ritaglio né avere filtri collegati.
 Non puoi cambiare Attraversa su un gruppo bloccato.
 
 I nuovi gruppi usano Normale, a meno che **Usa Attraversa per i nuovi gruppi**
-non sia attivo nella pagina **Tela** delle [Preferenze](/it/docs/preferences/).
+non sia attivo nella pagina **Colore** delle [Preferenze](/it/docs/preferences/).
 Raggruppare livelli che usano un metodo di fusione diverso da Normale, o un
 filtro su un livello proprio, imposta il nuovo gruppo su Attraversa.
 

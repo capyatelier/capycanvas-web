@@ -89,7 +89,7 @@ Em **Deformar**:
 Em todos os modos:
 
 - As teclas de seta deslocam a caixa 1 px, ou 10 px com **Shift**.
-- Em uma tela sensível ao toque, um dedo sobre uma alça ou dentro da caixa a arrasta. Um dedo em outro lugar move a visualização.
+- Em uma tela sensível ao toque, um dedo sobre uma alça ou dentro da caixa a arrasta.
 
 ## Barra de transformação
 

@@ -4,9 +4,9 @@ description: "환경 설정의 펜 설정과 Apple Pencil 이중 탭 및 스퀴�
 related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-펜 설정은 **편집 > 환경 설정**의 **펜 및 입력** 페이지에 있습니다.
+펜 설정은 **편집 > 환경 설정**의 **펜 및 마우스** 페이지에 있습니다.
 
-![환경 설정의 펜 및 입력 페이지.](shot:pen/pen-and-input)
+![환경 설정의 펜 및 마우스 페이지.](shot:pen/pen-and-input)
 
 ## 필압
 

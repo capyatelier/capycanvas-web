@@ -4,24 +4,35 @@ description: "Was Finger auf der Leinwand bewirken, und die Fingertipps, die Sie
 related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
-Auf einem Touchscreen können Sie mit den Fingern die Leinwand bewegen, Farben
-aufnehmen und Befehle ausführen.
+Auf einem Touchscreen können Sie mit den Fingern zeichnen, die Leinwand bewegen, Farben aufnehmen und Befehle ausführen.
 
-> **Hinweis:** Finger zeichnen nie. Zeichnen Sie mit einem Stift oder der Maus auf der Leinwand.
+## Mit einem Finger ziehen
+
+**Mit einem Finger ziehen** legt fest, was das Ziehen mit einem Finger auf der Leinwand bewirkt.
+
+| Auswahl | Ein Finger |
+| --- | --- |
+| **Automatisch** | Zeichnet auf iPad, iPhone und Android, bis Sie zum ersten Mal einen Stift auf der Leinwand verwenden. Danach und auf anderen Geräten zeichnet und verschiebt ein Finger nicht. |
+| **Zeichnen** | Verwendet das aktuelle Werkzeug wie ein Stift. |
+| **Leinwand verschieben** | Verschiebt die Leinwand. |
+| **Aus** | Zeichnet und verschiebt nicht. |
+
+Die Voreinstellung ist **Automatisch**. Führen Sie zum Ändern eine der folgenden Aktionen aus:
+
+- Öffnen Sie im Dialog **Einstellungen** die Seite **Touch** und wählen Sie **Mit einem Finger ziehen**.
+- Wählen Sie in Malen **Mit einem Finger ziehen** am Anfang der Befehlsleiste aus.
+
+Die macOS-App bietet **Mit einem Finger ziehen** nicht.
 
 ## Die Leinwand bewegen
 
-Ziehen Sie die Leinwand mit zwei Fingern, um sie zu verschieben. Ziehen Sie zwei
-Finger zusammen oder auseinander, um zu zoomen, und drehen Sie zwei Finger, um die
-Leinwand zu drehen. Mit dem Werkzeug **Hand** verschiebt auch ein einzelner Finger.
+Ziehen Sie die Leinwand mit zwei Fingern, um sie zu verschieben. Ziehen Sie zwei Finger zusammen oder auseinander, um zu zoomen, und drehen Sie zwei Finger, um die Leinwand zu drehen. Mit dem Werkzeug **Hand**, oder wenn **Mit einem Finger ziehen** auf **Leinwand verschieben** steht, verschiebt auch ein einzelner Finger.
 
 **Drehung sperren** und **Zoom sperren** im Zoommenü unten an der Leinwand verhindern,
 dass die Zwei-Finger-Geste die Ansicht dreht oder zoomt. Siehe
 [Leinwandansicht](/de/docs/start/canvas/).
 
-Solange der Stift auf der Leinwand ist, bewegen Finger die Leinwand nicht. Ein Finger
-auf einem Griff zum Transformieren oder Zuschneiden oder auf der Quelle des
-Werkzeugs **Klonstempel** zieht stattdessen den Griff oder die Quelle.
+Solange der Stift auf der Leinwand ist, bewegen Finger die Leinwand nicht. Sofern **Mit einem Finger ziehen** nicht auf **Leinwand verschieben** steht, zieht ein Finger auf einem Griff zum Transformieren oder Zuschneiden oder auf der Quelle des Werkzeugs **Klonstempel** den Griff oder die Quelle.
 
 **Drehung einrasten** ist standardmäßig aktiviert und hält die Ansicht in der Nähe von Vierteldrehungen. Schalten Sie es in **Ansicht > Drehung einrasten** aus, um eine freie Drehung zu ermöglichen.
 
@@ -70,7 +81,7 @@ Tippen. Hat ein Tippen die Ansicht bewegt, kehrt die Ansicht zurück.
 
 So ändern Sie ein Tippen:
 
-1. Wählen Sie **Bearbeiten > Einstellungen** und wählen Sie **Stift und Eingabe** aus.
+1. Wählen Sie **Bearbeiten > Einstellungen** und wählen Sie **Touch** aus.
 2. Wählen Sie das Tippen unter **Touchgesten** aus.
 3. Wählen Sie eine Aktion oder **Nichts**, um das Tippen abzuschalten.
 

@@ -21,7 +21,6 @@ Loslassen wird der Verlauf gemalt.
 
 - Der Verlauf bedeckt die ganze Ebene, mit der ersten Farbe vor dem Startpunkt und der letzten Farbe hinter dem Endpunkt.
 - Drücken Sie während des Ziehens **Escape**, um abzubrechen.
-- Ziehen mit einem Finger verschiebt stattdessen die Leinwand.
 - Eine aktive Auswahl begrenzt den Verlauf, und **Alphaschutz** wird berücksichtigt.
 - In der Schnellmaske oder auf einer Auswahlebene geht der Verlauf in die Auswahlmaske.
 - Jeder Verlauf ist ein Rückgängig-Schritt.

@@ -89,7 +89,7 @@ En **Déformer** :
 Dans tous les modes :
 
 - Les touches fléchées décalent le cadre de 1 px, et de 10 px avec **Maj**.
-- Sur un écran tactile, un doigt posé sur une poignée ou à l’intérieur du cadre le fait glisser. Un doigt posé ailleurs déplace la vue.
+- Sur un écran tactile, un doigt posé sur une poignée ou à l’intérieur du cadre le fait glisser.
 
 ## Barre de transformation
 

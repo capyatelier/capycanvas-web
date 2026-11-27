@@ -31,7 +31,7 @@ trên thanh tiêu đề trong Phác thảo, hoặc chọn công cụ trên Thanh
 trong Vẽ. Kéo một công cụ lên khung vẽ để giữ nó ở đó dưới dạng
 [bong bóng](/vi/docs/customize/bubbles/).
 
-> **Lưu ý:** Ngón tay không vẽ được. Hai ngón tay trên khung vẽ dùng để di chuyển, thu phóng và xoay khung nhìn.
+> **Lưu ý:** Trên iPad, iPhone và Android, một ngón tay sẽ vẽ cho đến khi bạn dùng bút trên khung vẽ lần đầu. Hai ngón tay trên khung vẽ dùng để di chuyển, thu phóng và xoay khung nhìn. Xem [Cử chỉ chạm](/vi/docs/input/touch/).
 
 Để hoàn tác một nét vẽ, chọn **Chỉnh sửa > Hoàn tác**, nhấn **Ctrl+Z** hoặc chạm
 hai ngón tay lên khung vẽ (xem [Hoàn tác và làm lại](/vi/docs/start/undo/)).

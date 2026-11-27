@@ -21,7 +21,6 @@ dilukis saat Anda melepasnya.
 
 - Gradasi menutupi seluruh lapisan, dengan warna pertama sebelum titik awal dan warna terakhir setelah titik akhir.
 - Tekan **Escape** selama menyeret untuk membatalkan.
-- Seretan dengan jari menggeser kanvas.
 - Seleksi yang aktif membatasi gradasi, dan **Kunci alpha** tetap berlaku.
 - Di Mask Cepat atau pada lapisan seleksi, gradasi masuk ke mask seleksi.
 - Setiap gradasi adalah satu langkah urungkan.

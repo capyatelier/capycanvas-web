@@ -8,7 +8,7 @@ related: ["input/pen", "preferences", "brushes/dry-media"]
 
 ## 필압 조정 열기
 
-[환경설정](/ko/docs/preferences/)을 열고 **펜 및 입력**을 선택한 다음 **필압** 옆의 **조정…** 버튼을 선택합니다.
+[환경설정](/ko/docs/preferences/)을 열고 **펜 및 마우스**를 선택한 다음 **필압** 옆의 **조정…** 버튼을 선택합니다.
 
 ![곡선, 더 강하게와 더 가볍게, 초기화, 취소, 적용이 있는 필압 대화상자.](shot:pen/pressure-calibration)
 

@@ -90,7 +90,7 @@ In **Verformen**:
 In jedem Modus:
 
 - Die Pfeiltasten verschieben den Rahmen um 1 px, mit **Umschalt** um 10 px.
-- Auf einem Touchscreen zieht ein Finger auf einem Griff oder innerhalb des Rahmens diesen. Ein Finger an anderer Stelle bewegt die Ansicht.
+- Auf einem Touchscreen zieht ein Finger auf einem Griff oder innerhalb des Rahmens diesen.
 
 ## Transformationsleiste
 

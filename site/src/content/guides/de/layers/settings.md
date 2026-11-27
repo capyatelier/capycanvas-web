@@ -122,7 +122,7 @@ sein und keine angehängten Filter haben. Bei einer gesperrten Gruppe können Si
 Durchreichen nicht ändern.
 
 Neue Gruppen verwenden Normal, außer
-**Durchreichen für neue Gruppen verwenden** ist auf der Seite **Leinwand** der
+**Durchreichen für neue Gruppen verwenden** ist auf der Seite **Farbe** der
 [Einstellungen](/de/docs/preferences/) aktiviert. Wenn Sie Ebenen gruppieren, die
 einen anderen Verrechnungsmodus als Normal verwenden, oder einen Filter auf
 einer eigenen Ebene, wird die neue Gruppe auf Durchreichen gestellt.

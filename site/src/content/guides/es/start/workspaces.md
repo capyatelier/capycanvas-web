@@ -44,7 +44,7 @@ pie** en **Ventana > Personalizar barra de título…**.
 Pintura acopla los paneles en columnas a ambos lados del lienzo.
 
 1. **Capy (modo Zen)** y los menús, el título del dibujo en el centro y después el selector de espacio de trabajo y **Ajustes**. El editor web añade **Pantalla completa**.
-2. **Nuevo…**, **Abrir…**, **Guardar**, **Deshacer**, **Rehacer**, **Borrar capa completa**, **Rellenar selección**, **Transformar** y **Voltear vista horizontalmente**.
+2. **Nuevo…**, **Abrir…**, **Guardar**, **Deshacer**, **Rehacer**, **Borrar capa completa**, **Rellenar selección**, **Transformar** y **Voltear vista horizontalmente**. Salvo en la aplicación para macOS, **Arrastrar con un dedo** va primero.
 3. **Pluma**, **Lápiz**, **Pincel de pintura**, **Borrador**, **Aerógrafo**, **Decoración**, **Mezclar**, **Licuar**, las herramientas de selección, **Rellenar**, **Degradado**, **Operación**, **Figura**, **Regla**, **Mano**, **Zoom**, **Cuentagotas** y **Color del pincel**.
 4. Pestañas de **Conjunto de herramientas** y **Diagnóstico**, de **Herramienta** y **Tamaño del pincel**, y de **Color** y **Paletas**.
 5. Iconos de **Navegador** y **Prueba de color**, de **Propiedades** y **Filtros**, y de **Capas**.

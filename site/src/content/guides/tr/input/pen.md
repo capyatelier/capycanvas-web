@@ -4,9 +4,9 @@ description: "Tercihler'deki kalem ayarları ve Apple Pencil'da çift dokunma ve
 related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-Kalem ayarları **Düzenle > Tercihler** içindeki **Kalem ve giriş** sayfasındadır.
+Kalem ayarları **Düzenle > Tercihler** içindeki **Kalem ve fare** sayfasındadır.
 
-![Tercihler'in Kalem ve giriş sayfası.](shot:pen/pen-and-input)
+![Tercihler'in Kalem ve fare sayfası.](shot:pen/pen-and-input)
 
 ## Kalem basıncı
 

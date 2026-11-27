@@ -110,7 +110,7 @@ clipped, be a clipping base or have filters attached. You can't change Pass
 Through on a locked group.
 
 New groups use Normal unless **Use Pass Through for new groups** is on in the
-**Canvas** page of [Preferences](/docs/preferences/). Grouping layers that use a
+**Color** page of [Preferences](/docs/preferences/). Grouping layers that use a
 blend mode other than Normal, or a filter on its own layer, makes the new group
 Pass Through.
 

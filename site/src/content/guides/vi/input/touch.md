@@ -4,23 +4,34 @@ description: "Tác dụng của ngón tay trên khung vẽ, và các thao tác c
 related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
-Bạn có thể di chuyển khung vẽ, lấy màu và chạy lệnh bằng ngón tay trên màn hình cảm
-ứng.
+Bạn có thể vẽ, di chuyển khung vẽ, lấy màu và chạy lệnh bằng ngón tay trên màn hình cảm ứng.
 
-> **Lưu ý:** Ngón tay không vẽ được. Hãy dùng bút hoặc chuột để vẽ trên khung vẽ.
+## Kéo một ngón
+
+**Kéo một ngón** quyết định điều xảy ra khi bạn kéo một ngón tay trên khung vẽ.
+
+| Lựa chọn | Một ngón tay |
+| --- | --- |
+| **Tự động** | Vẽ trên iPad, iPhone và Android cho đến khi bạn dùng bút trên khung vẽ lần đầu. Sau đó, và trên các thiết bị khác, ngón tay không vẽ và không cuộn. |
+| **Vẽ** | Dùng công cụ hiện tại giống như bút. |
+| **Di chuyển khung vẽ** | Cuộn khung vẽ. |
+| **Tắt** | Không vẽ và không cuộn. |
+
+Mặc định là **Tự động**. Để thay đổi, thực hiện một trong các cách sau:
+
+- Trong **Tùy chọn**, mở trang **Cảm ứng** và chọn **Kéo một ngón**.
+- Trong Vẽ, chọn **Kéo một ngón** ở đầu Thanh lệnh.
+
+Ứng dụng macOS không có **Kéo một ngón**.
 
 ## Di chuyển khung vẽ
 
-Kéo khung vẽ bằng hai ngón tay để cuộn. Chụm hoặc mở hai ngón tay để thu phóng, và
-xoay hai ngón tay để xoay khung vẽ. Với công cụ **Bàn tay**, một ngón tay cũng cuộn
-được.
+Kéo khung vẽ bằng hai ngón tay để cuộn. Chụm hoặc mở hai ngón tay để thu phóng, và xoay hai ngón tay để xoay khung vẽ. Với công cụ **Bàn tay**, hoặc khi **Kéo một ngón** được đặt là **Di chuyển khung vẽ**, một ngón tay cũng cuộn được.
 
 **Khóa xoay** và **Khóa thu phóng** trong trình đơn thu phóng ở cuối khung vẽ chặn thao
 tác chụm ngón xoay hoặc thu phóng khung nhìn. Xem [Xem khung vẽ](/vi/docs/start/canvas/).
 
-Khi bút đang chạm khung vẽ, ngón tay không di chuyển khung vẽ. Ngón tay đặt trên tay
-nắm biến đổi hoặc tay nắm cắt xén, hoặc trên điểm nguồn của **Dấu sao chép**, sẽ kéo
-tay nắm hoặc điểm nguồn đó.
+Khi bút đang chạm khung vẽ, ngón tay không di chuyển khung vẽ. Trừ khi **Kéo một ngón** được đặt là **Di chuyển khung vẽ**, ngón tay đặt trên tay nắm biến đổi hoặc tay nắm cắt xén, hoặc trên điểm nguồn của **Dấu sao chép**, sẽ kéo tay nắm hoặc điểm nguồn đó.
 
 **Bắt dính góc xoay** được bật theo mặc định và giữ chế độ xem gần các lượt một phần tư. Tắt nó trong **Hiển thị > Bắt dính góc xoay** để xoay tự do.
 
@@ -65,7 +76,7 @@ chạm đã làm khung nhìn di chuyển, khung nhìn sẽ trở về vị trí 
 
 Để thay đổi một thao tác chạm:
 
-1. Chọn **Chỉnh sửa > Tùy chọn** rồi chọn **Bút và nhập liệu**.
+1. Chọn **Chỉnh sửa > Tùy chọn** rồi chọn **Cảm ứng**.
 2. Chọn thao tác chạm trong **Cử chỉ chạm**.
 3. Chọn một thao tác, hoặc **Không có** để tắt thao tác chạm đó.
 

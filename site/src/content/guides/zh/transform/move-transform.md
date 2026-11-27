@@ -78,7 +78,7 @@ related: ["selections/working", "layers/paths", "transform/crop", "transform/cli
 在所有模式下：
 
 - 方向键每次将变换框微移 1 px，按住 **Shift** 时微移 10 px。
-- 在触摸屏上，手指放在控制点上或框内时拖动变换框。手指放在其他位置时移动视图。
+- 在触摸屏上，手指放在控制点上或框内时拖动变换框。
 
 ## 变换栏
 

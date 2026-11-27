@@ -56,9 +56,7 @@ Lakukan salah satu langkah berikut:
 - Tahan **Alt** lalu klik tempat yang ingin Anda salin.
 - Pilih **Atur Sumber**, lalu klik.
 
-Sampai Anda menyetelnya, sumber berada di tengah tampilan. Seret cakram untuk
-memindahkan sumber. Jari dapat menyeret cakram, tetapi tidak pernah menyetel sumber.
-Selama Anda melukis, cakram mengikuti titik yang sedang disalin.
+Sampai Anda menyetelnya, sumber berada di tengah tampilan. Seret cakram untuk memindahkan sumber. Jari dapat menyeret cakram, tetapi hanya menyetel sumber saat jari menggambar. Selama Anda melukis, cakram mengikuti titik yang sedang disalin.
 
 **Kuas Pemulih Noda** mencari sumbernya sendiri dan tidak memiliki cakram.
 

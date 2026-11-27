@@ -55,10 +55,7 @@ Effectuez l’une des opérations suivantes :
 - Maintenez la touche **Alt** enfoncée et cliquez à l’endroit à copier.
 - Sélectionnez **Définir la source**, puis cliquez.
 
-Tant que vous ne l’avez pas définie, la source se trouve au centre de la vue.
-Faites glisser le disque pour déplacer la source. Un doigt peut faire glisser le
-disque, mais ne définit jamais la source. Pendant que vous peignez, le disque
-suit le point copié.
+Tant que vous ne l’avez pas définie, la source se trouve au centre de la vue. Faites glisser le disque pour déplacer la source. Un doigt peut faire glisser le disque, mais ne définit la source que lorsqu’il dessine. Pendant que vous peignez, le disque suit le point copié.
 
 **Correcteur localisé** trouve sa source lui-même et n’a pas de disque.
 

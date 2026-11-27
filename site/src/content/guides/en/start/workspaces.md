@@ -42,7 +42,7 @@ footer** in **Window > Customize Title Bar…**.
 Paint docks panels in columns on both sides of the canvas.
 
 1. **Capy (Zen Mode)** and the menus, the drawing title in the middle, then the workspace switcher and **Settings**. The web editor adds **Full screen**.
-2. **New…**, **Open…**, **Save**, **Undo**, **Redo**, **Clear Entire Layer**, **Fill selection**, **Transform** and **Flip view horizontally**.
+2. **New…**, **Open…**, **Save**, **Undo**, **Redo**, **Clear Entire Layer**, **Fill selection**, **Transform** and **Flip view horizontally**. Except in the macOS app, **One-finger drag** comes first.
 3. **Pen**, **Pencil**, **Paint Brush**, **Eraser**, **Airbrush**, **Decoration**, **Blend**, **Liquify**, the selection tools, **Fill**, **Gradient**, **Operation**, **Figure**, **Ruler**, **Hand**, **Zoom**, **Eyedropper** and **Brush color**.
 4. Tabs for **Tool Set** and **Diagnostics**, **Tool** and **Brush size**, and **Color** and **Palettes**.
 5. Icons for **Navigator** and **Proof**, **Properties** and **Filters**, and **Layers**.

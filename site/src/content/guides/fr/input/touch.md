@@ -4,24 +4,35 @@ description: "Ce que font les doigts sur la toile, et les touchers à plusieurs 
 related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
-Sur un écran tactile, vous pouvez déplacer la toile, prélever des couleurs et
-exécuter des commandes avec les doigts.
+Sur un écran tactile, vous pouvez dessiner, déplacer la toile, prélever des couleurs et exécuter des commandes avec les doigts.
 
-> **Remarque :** les doigts ne dessinent jamais. Utilisez un stylet ou une souris pour dessiner sur la toile.
+## Glisser à un doigt
+
+**Glisser à un doigt** définit l’effet d’un doigt que vous faites glisser sur la toile.
+
+| Choix | Un doigt |
+| --- | --- |
+| **Automatique** | Dessine sur iPad, iPhone et Android jusqu’à ce que vous utilisiez un stylet sur la toile pour la première fois. Ensuite, et sur les autres appareils, il ne dessine pas et ne fait pas défiler. |
+| **Dessiner** | Utilise l’outil actif, comme un stylet. |
+| **Déplacer la toile** | Fait défiler la toile. |
+| **Désactivé** | Ne dessine pas et ne fait pas défiler. |
+
+**Automatique** est le réglage par défaut. Pour le modifier, effectuez l’une des opérations suivantes :
+
+- Dans **Préférences**, ouvrez la page **Tactile** et choisissez **Glisser à un doigt**.
+- Dans Peinture, sélectionnez **Glisser à un doigt** au début de la barre Commandes.
+
+L’application macOS ne propose pas **Glisser à un doigt**.
 
 ## Déplacer la toile
 
-Faites glisser la toile avec deux doigts pour la faire défiler. Pincez avec deux
-doigts pour zoomer, et faites tourner deux doigts pour faire pivoter la toile.
-Avec l’outil **Main**, un seul doigt fait aussi défiler.
+Faites glisser la toile avec deux doigts pour la faire défiler. Pincez avec deux doigts pour zoomer, et faites tourner deux doigts pour faire pivoter la toile. Avec l’outil **Main**, ou avec **Glisser à un doigt** réglé sur **Déplacer la toile**, un seul doigt fait aussi défiler.
 
 **Verrouiller la rotation** et **Verrouiller le zoom**, dans le menu du zoom en
 bas de la toile, empêchent le pincement de faire pivoter ou de zoomer la vue.
 Voir [Afficher la toile](/fr/docs/start/canvas/).
 
-Tant que le stylet est sur la toile, les doigts ne déplacent pas la toile. Un
-doigt posé sur une poignée de transformation ou de recadrage, ou sur la source du
-**Tampon de duplication**, fait glisser la poignée ou la source à la place.
+Tant que le stylet est sur la toile, les doigts ne déplacent pas la toile. Sauf si **Glisser à un doigt** est réglé sur **Déplacer la toile**, un doigt posé sur une poignée de transformation ou de recadrage, ou sur la source du **Tampon de duplication**, fait glisser la poignée ou la source.
 
 **Magnétisme de la rotation** est activé par défaut et maintient la vue près des quarts de tour. Éteignez-le dans **Affichage > Magnétisme de la rotation** pour une rotation libre.
 
@@ -72,7 +83,7 @@ sa place.
 
 Pour modifier un toucher :
 
-1. Choisissez **Édition > Préférences** et sélectionnez **Stylet et saisie**.
+1. Choisissez **Édition > Préférences** et sélectionnez **Tactile**.
 2. Sélectionnez le toucher sous **Gestes tactiles**.
 3. Choisissez une action, ou **Rien** pour désactiver le toucher.
 

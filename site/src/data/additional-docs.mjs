@@ -42,8 +42,8 @@ export const additionalDocsUI = {
       "windows": "{appName} usa Windows Ink para el lápiz. En Windows, Botones del lápiz muestra un solo botón lateral: Botón lateral inferior.",
       "mac": "Si el lápiz marca en el lugar equivocado, comprueba en los ajustes de tu tableta a qué pantalla está asignada. Usa Command donde estas guías digan Ctrl, y Option donde digan Alt.",
       "linux": "La aplicación para Linux necesita una sesión de Wayland y una tarjeta gráfica compatible con Vulkan. Si la presión no funciona o el cursor aparece en el lugar equivocado, revisa los ajustes de tableta de tu escritorio.",
-      "ipad": "La mayoría de los modelos de Apple Pencil admiten presión e inclinación, pero el Apple Pencil (USB-C) no admite presión. Los dedos y la palma de la mano nunca dibujan.",
-      "android": "Usa un lápiz que admita presión. Un lápiz óptico con punta de goma cuenta como un dedo, y los dedos nunca dibujan."
+      "ipad": "La mayoría de los modelos de Apple Pencil admiten presión e inclinación, pero el Apple Pencil (USB-C) no admite presión. Una vez que usas el Apple Pencil en el lienzo, los dedos y la palma de la mano no dibujan.",
+      "android": "Usa un lápiz que admita presión. Un lápiz óptico con punta de goma cuenta como un dedo, así que no tiene presión."
     },
     "imageOpen": "Abrir captura de pantalla en tamaño completo",
     "sketchDemo": "Demostración de cómo colocar herramientas flotantes, centrarse en el lienzo, elegir un pincel verde y ajustar su suavidad.",
@@ -170,8 +170,8 @@ export const additionalDocsUI = {
       "windows": "O {appName} usa o Windows Ink para a caneta. No Windows, Botões da caneta mostra apenas um botão lateral: Botão lateral inferior.",
       "mac": "Se a caneta tocar no lugar errado, verifique nas configurações do tablet para qual tela ele está mapeado. Use Command onde estes guias indicarem Ctrl, e Option onde indicarem Alt.",
       "linux": "O aplicativo para Linux precisa de uma sessão Wayland e de uma placa de vídeo compatível com Vulkan. Se a pressão não funcionar ou o cursor parar no lugar errado, verifique as configurações de tablet do seu desktop.",
-      "ipad": "A maioria dos modelos de Apple Pencil suporta pressão e inclinação, mas o Apple Pencil (USB-C) não suporta pressão. Dedos e palmas nunca desenham.",
-      "android": "Use uma caneta que suporte pressão. Uma caneta com ponta de borracha conta como um dedo, e dedos nunca desenham."
+      "ipad": "A maioria dos modelos de Apple Pencil suporta pressão e inclinação, mas o Apple Pencil (USB-C) não suporta pressão. Depois que você usa o Apple Pencil na tela, dedos e palmas não desenham.",
+      "android": "Use uma caneta que suporte pressão. Uma caneta com ponta de borracha conta como um dedo, então não tem pressão."
     },
     "imageOpen": "Abra a captura de tela em tamanho real",
     "sketchDemo": "Demonstração de como posicionar ferramentas flutuantes, focar na tela, escolher um pincel verde e ajustar sua suavidade.",
@@ -298,8 +298,8 @@ export const additionalDocsUI = {
       "windows": "{appName} menggunakan Windows Ink untuk pena. Di Windows, Tombol pena hanya mencantumkan satu tombol samping, yaitu Tombol samping bawah.",
       "mac": "Jika pena mengenai tempat yang salah, periksa di pengaturan tablet Anda layar mana yang dipetakan ke tablet. Gunakan Command di mana pun panduan ini menyebut Ctrl, dan Option di mana pun menyebut Alt.",
       "linux": "Aplikasi Linux memerlukan sesi Wayland dan kartu grafis yang mendukung Vulkan. Jika tekanan tidak berfungsi atau kursor berada di tempat yang salah, periksa pengaturan tablet di desktop Anda.",
-      "ipad": "Sebagian besar model Apple Pencil mendukung tekanan dan kemiringan, tetapi Apple Pencil (USB-C) tidak mendukung tekanan. Jari dan telapak tangan tidak pernah menggambar.",
-      "android": "Gunakan pena yang mendukung tekanan. Stylus berujung karet dianggap sebagai jari, dan jari tidak pernah menggambar."
+      "ipad": "Sebagian besar model Apple Pencil mendukung tekanan dan kemiringan, tetapi Apple Pencil (USB-C) tidak mendukung tekanan. Setelah Anda memakai Apple Pencil di kanvas, jari dan telapak tangan tidak menggambar.",
+      "android": "Gunakan pena yang mendukung tekanan. Stylus berujung karet dianggap sebagai jari, sehingga tidak ada tekanan."
     },
     "imageOpen": "Buka tangkapan layar ukuran penuh",
     "sketchDemo": "Demonstrasi menata alat mengambang, berfokus pada kanvas, memilih kuas hijau, dan menyesuaikan kelembutannya.",
@@ -426,8 +426,8 @@ export const additionalDocsUI = {
       "windows": "{appName} utilise Windows Ink pour le stylet. Sous Windows, « Boutons du stylet » n'affiche qu'un bouton latéral : « Bouton latéral inférieur ».",
       "mac": "Si le stylet touche au mauvais endroit, vérifiez dans les paramètres de votre tablette à quel écran elle est associée. Utilisez Commande partout où ces guides indiquent Ctrl, et Option partout où ils indiquent Alt.",
       "linux": "L'application Linux nécessite une session Wayland et une carte graphique compatible avec Vulkan. Si la pression ne fonctionne pas ou si le curseur se pose au mauvais endroit, vérifiez les paramètres de tablette de votre environnement de bureau.",
-      "ipad": "La plupart des modèles d'Apple Pencil prennent en charge la pression et l'inclinaison, mais l'Apple Pencil (USB-C) ne prend pas en charge la pression. Les doigts et la paume ne dessinent jamais.",
-      "android": "Utilisez un stylet sensible à la pression. Un stylet à pointe en caoutchouc compte comme un doigt, et les doigts ne dessinent jamais."
+      "ipad": "La plupart des modèles d'Apple Pencil prennent en charge la pression et l'inclinaison, mais l'Apple Pencil (USB-C) ne prend pas en charge la pression. Une fois que vous avez utilisé l'Apple Pencil sur la toile, les doigts et la paume ne dessinent pas.",
+      "android": "Utilisez un stylet sensible à la pression. Un stylet à pointe en caoutchouc compte comme un doigt et n'a donc pas de pression."
     },
     "imageOpen": "Ouvrir la capture d'écran en taille réelle",
     "sketchDemo": "Démonstration du placement des outils flottants, du mode de concentration sur la toile, du choix d’un pinceau vert et du réglage de sa douceur.",
@@ -554,8 +554,8 @@ export const additionalDocsUI = {
       "windows": "{appName} verwendet Windows Ink für den Stift. Unter Windows zeigt „Stifttasten“ nur eine Seitentaste an: „Untere Seitentaste“.",
       "mac": "Wenn der Stift an der falschen Stelle landet, überprüfen Sie in den Einstellungen, welchem Bildschirm Ihr Tablet zugeordnet ist. Verwenden Sie Command, wo in diesen Anleitungen Strg steht, und Option, wo Alt steht.",
       "linux": "Die Linux-App benötigt eine Wayland-Sitzung und eine Grafikkarte mit Vulkan-Unterstützung. Wenn Druck nicht funktioniert oder der Cursor an der falschen Stelle landet, überprüfen Sie die Tablet-Einstellungen Ihres Desktops.",
-      "ipad": "Die meisten Apple Pencil-Modelle unterstützen Druck und Neigung, Apple Pencil (USB-C) unterstützt jedoch keinen Druck. Finger und Handballen zeichnen nie.",
-      "android": "Verwenden Sie einen Stift, der Druck unterstützt. Ein Eingabestift mit Gummispitze gilt als Finger, und Finger zeichnen nie."
+      "ipad": "Die meisten Apple Pencil-Modelle unterstützen Druck und Neigung, Apple Pencil (USB-C) unterstützt jedoch keinen Druck. Sobald Sie den Apple Pencil auf der Leinwand verwendet haben, zeichnen Finger und Handballen nicht.",
+      "android": "Verwenden Sie einen Stift, der Druck unterstützt. Ein Eingabestift mit Gummispitze gilt als Finger und hat daher keinen Druck."
     },
     "imageOpen": "Öffnen Sie den Screenshot in voller Größe",
     "sketchDemo": "Vorführung: schwebende Werkzeuge anordnen, auf die Leinwand konzentrieren, einen grünen Pinsel wählen und seine Weichheit einstellen.",
@@ -682,8 +682,8 @@ export const additionalDocsUI = {
       "windows": "{appName} использует Windows Ink для пера. В Windows в разделе «Кнопки пера» указана только одна боковая кнопка: «Нижняя боковая кнопка».",
       "mac": "Если перо попадает не туда, проверьте в настройках планшета, к какому экрану он привязан. Используйте Command везде, где в руководствах написано Ctrl, и Option везде, где написано Alt.",
       "linux": "Приложению для Linux нужны сеанс Wayland и видеокарта с поддержкой Vulkan. Если нажим не работает или курсор оказывается не в том месте, проверьте настройки планшета в своей среде рабочего стола.",
-      "ipad": "Большинство моделей Apple Pencil поддерживают нажим и наклон, но Apple Pencil (USB-C) не поддерживает нажим. Пальцы и ладонь никогда не рисуют.",
-      "android": "Используйте перо с поддержкой нажима. Стилус с резиновым наконечником считается пальцем, а пальцы никогда не рисуют."
+      "ipad": "Большинство моделей Apple Pencil поддерживают нажим и наклон, но Apple Pencil (USB-C) не поддерживает нажим. После того как вы воспользуетесь Apple Pencil на холсте, пальцы и ладонь не рисуют.",
+      "android": "Используйте перо с поддержкой нажима. Стилус с резиновым наконечником считается пальцем, поэтому нажима у него нет."
     },
     "imageOpen": "Открыть полноразмерный скриншот",
     "sketchDemo": "Демонстрация размещения плавающих инструментов, перехода к работе без отвлекающих элементов, выбора зелёной кисти и настройки её мягкости.",
@@ -810,8 +810,8 @@ export const additionalDocsUI = {
       "windows": "{appName} ใช้ Windows Ink สำหรับปากกา บน Windows ปุ่มปากกาจะแสดงปุ่มด้านข้างเพียงปุ่มเดียว คือปุ่มด้านข้างล่าง",
       "mac": "หากปากกาลงผิดตำแหน่ง ให้ตรวจสอบในการตั้งค่าแท็บเล็ตว่าแท็บเล็ตจับคู่กับหน้าจอใด ใช้ Command ทุกที่ที่คู่มือนี้ระบุว่า Ctrl และใช้ Option ทุกที่ที่ระบุว่า Alt",
       "linux": "แอป Linux ต้องใช้เซสชัน Wayland และการ์ดจอที่รองรับ Vulkan หากแรงกดไม่ทำงานหรือเคอร์เซอร์ไปผิดตำแหน่ง ให้ตรวจสอบการตั้งค่าแท็บเล็ตของเดสก์ท็อป",
-      "ipad": "รุ่น Apple Pencil ส่วนใหญ่รองรับแรงกดและการเอียง แต่ Apple Pencil (USB-C) ไม่รองรับแรงกด นิ้วและฝ่ามือจะไม่วาดเส้น",
-      "android": "ใช้ปากกาที่รองรับแรงกด สไตลัสปลายยางจะนับเป็นนิ้ว และนิ้วจะไม่วาดเส้น"
+      "ipad": "รุ่น Apple Pencil ส่วนใหญ่รองรับแรงกดและการเอียง แต่ Apple Pencil (USB-C) ไม่รองรับแรงกด เมื่อคุณใช้ Apple Pencil บนผืนผ้าใบแล้ว นิ้วและฝ่ามือจะไม่วาดเส้น",
+      "android": "ใช้ปากกาที่รองรับแรงกด สไตลัสปลายยางจะนับเป็นนิ้ว จึงไม่มีแรงกด"
     },
     "imageOpen": "เปิดภาพหน้าจอขนาดเต็ม",
     "sketchDemo": "สาธิตการจัดวางเครื่องมือลอย การมุ่งความสนใจที่ผืนผ้าใบ การเลือกพู่กันสีเขียว และการปรับความนุ่มของพู่กัน",
@@ -938,8 +938,8 @@ export const additionalDocsUI = {
       "windows": "{appName} dùng Windows Ink cho bút. Trên Windows, Nút bút chỉ có một nút bên: Nút bên dưới.",
       "mac": "Nếu bút chạm sai vị trí, hãy kiểm tra trong cài đặt của bảng vẽ xem bảng vẽ được ánh xạ tới màn hình nào. Dùng Command ở mọi chỗ hướng dẫn ghi Ctrl, và Option ở mọi chỗ ghi Alt.",
       "linux": "Ứng dụng Linux cần phiên Wayland và card đồ họa hỗ trợ Vulkan. Nếu lực nhấn không hoạt động hoặc con trỏ đặt sai vị trí, hãy kiểm tra cài đặt bảng vẽ của môi trường desktop.",
-      "ipad": "Hầu hết các mẫu Apple Pencil đều hỗ trợ lực nhấn và độ nghiêng, nhưng Apple Pencil (USB-C) không hỗ trợ lực nhấn. Ngón tay và lòng bàn tay không bao giờ vẽ.",
-      "android": "Hãy dùng bút hỗ trợ lực nhấn. Bút cảm ứng đầu cao su được tính là ngón tay, và ngón tay không bao giờ vẽ."
+      "ipad": "Hầu hết các mẫu Apple Pencil đều hỗ trợ lực nhấn và độ nghiêng, nhưng Apple Pencil (USB-C) không hỗ trợ lực nhấn. Sau khi bạn dùng Apple Pencil trên khung vẽ, ngón tay và lòng bàn tay không vẽ.",
+      "android": "Hãy dùng bút hỗ trợ lực nhấn. Bút cảm ứng đầu cao su được tính là ngón tay nên không có lực nhấn."
     },
     "imageOpen": "Mở ảnh chụp màn hình kích thước đầy đủ",
     "sketchDemo": "Minh họa cách sắp xếp công cụ nổi, tập trung vào khung vẽ, chọn cọ xanh lá và điều chỉnh độ mềm của cọ.",
@@ -1066,8 +1066,8 @@ export const additionalDocsUI = {
       "windows": "{appName}, kalem için Windows Ink kullanır. Windows'ta Kalem düğmeleri yalnızca bir yan düğme listeler: Alt yan düğme.",
       "mac": "Kalem yanlış yere denk geliyorsa tabletinizin ayarlarından hangi ekrana eşlendiğini kontrol edin. Bu kılavuzlarda Ctrl yazan her yerde Command, Alt yazan her yerde Option kullanın.",
       "linux": "Linux uygulaması bir Wayland oturumu ve Vulkan destekleyen bir ekran kartı gerektirir. Basınç çalışmıyorsa veya imleç yanlış yere geliyorsa masaüstünüzün tablet ayarlarını kontrol edin.",
-      "ipad": "Çoğu Apple Pencil modeli basınç ve eğimi destekler ancak Apple Pencil (USB-C) basıncı desteklemez. Parmaklar ve avuç içi hiçbir zaman çizim yapmaz.",
-      "android": "Basıncı destekleyen bir kalem kullanın. Kauçuk uçlu bir kalem parmak sayılır ve parmaklar hiçbir zaman çizim yapmaz."
+      "ipad": "Çoğu Apple Pencil modeli basınç ve eğimi destekler ancak Apple Pencil (USB-C) basıncı desteklemez. Tuvalde Apple Pencil'ı kullandıktan sonra parmaklar ve avuç içi çizim yapmaz.",
+      "android": "Basıncı destekleyen bir kalem kullanın. Kauçuk uçlu bir kalem parmak sayılır, bu yüzden basıncı yoktur."
     },
     "imageOpen": "Tam boyutlu ekran görüntüsünü aç",
     "sketchDemo": "Yüzen araçları yerleştirme, tuvale odaklanma, yeşil bir fırça seçme ve yumuşaklığını ayarlama gösterimi.",
@@ -1194,8 +1194,8 @@ export const additionalDocsUI = {
       "windows": "{appName} usa Windows Ink per la penna. Su Windows, Pulsanti della penna elenca un solo pulsante laterale: Pulsante laterale inferiore.",
       "mac": "Se la penna arriva nel punto sbagliato, controlla nelle impostazioni del tablet a quale schermo è associato. Usa Command dove queste guide indicano Ctrl, e Option dove indicano Alt.",
       "linux": "L'app per Linux richiede una sessione Wayland e una scheda grafica che supporti Vulkan. Se la pressione non funziona o il cursore finisce nel punto sbagliato, controlla le impostazioni del tablet del tuo desktop.",
-      "ipad": "La maggior parte dei modelli di Apple Pencil supporta pressione e inclinazione, ma Apple Pencil (USB-C) non supporta la pressione. Dita e palmo non disegnano mai.",
-      "android": "Usa una penna che supporti la pressione. Uno stilo con punta in gomma conta come un dito, e le dita non disegnano mai."
+      "ipad": "La maggior parte dei modelli di Apple Pencil supporta pressione e inclinazione, ma Apple Pencil (USB-C) non supporta la pressione. Dopo che hai usato Apple Pencil sulla tela, dita e palmo non disegnano.",
+      "android": "Usa una penna che supporti la pressione. Uno stilo con punta in gomma conta come un dito, quindi non ha pressione."
     },
     "imageOpen": "Apri lo screenshot a dimensione intera",
     "sketchDemo": "Dimostrazione di come disporre gli strumenti mobili, concentrarsi sulla tela, scegliere un pennello verde e regolarne la morbidezza.",

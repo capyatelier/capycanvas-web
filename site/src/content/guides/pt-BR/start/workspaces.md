@@ -44,7 +44,7 @@ rodapé** em **Janela > Personalizar barra de título…**.
 Pintura encaixa os painéis em colunas dos dois lados da tela.
 
 1. **Capy (modo Zen)** e os menus, o título do desenho no meio e, depois, o seletor de áreas de trabalho e **Configurações**. O editor web acrescenta **Tela cheia**.
-2. **Novo…**, **Abrir…**, **Salvar**, **Desfazer**, **Refazer**, **Limpar camada inteira**, **Preencher seleção**, **Transformar** e **Inverter visualização horizontalmente**.
+2. **Novo…**, **Abrir…**, **Salvar**, **Desfazer**, **Refazer**, **Limpar camada inteira**, **Preencher seleção**, **Transformar** e **Inverter visualização horizontalmente**. Exceto no aplicativo para macOS, **Arrastar com um dedo** vem primeiro.
 3. **Caneta**, **Lápis**, **Pincel de pintura**, **Borracha**, **Aerógrafo**, **Decoração**, **Misturar**, **Liquefazer**, as ferramentas de seleção, **Preencher**, **Degradê**, **Operação**, **Forma**, **Régua**, **Mão**, **Zoom**, **Conta-gotas** e **Cor do pincel**.
 4. Abas de **Conjunto de ferramentas** e **Diagnóstico**, de **Ferramenta** e **Tamanho do pincel**, e de **Cor** e **Paletas**.
 5. Ícones de **Navegador** e **Prova**, de **Propriedades** e **Filtros**, e de **Camadas**.

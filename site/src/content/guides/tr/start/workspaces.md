@@ -44,7 +44,7 @@ göstermek için **Pencere > Başlık çubuğunu özelleştir…** içinde **Alt
 Boya, panelleri tuvalin iki yanındaki sütunlara yerleştirir.
 
 1. **Capy (Zen modu)** ve menüler, ortada çizimin başlığı, ardından çalışma alanı değiştirici ve **Ayarlar**. Web düzenleyicisinde bunlara **Tam ekran** eklenir.
-2. **Yeni…**, **Aç…**, **Kaydet**, **Geri al**, **Yinele**, **Katmanın tamamını temizle**, **Seçimi doldur**, **Dönüştür** ve **Görünümü yatay çevir**.
+2. **Yeni…**, **Aç…**, **Kaydet**, **Geri al**, **Yinele**, **Katmanın tamamını temizle**, **Seçimi doldur**, **Dönüştür** ve **Görünümü yatay çevir**. macOS uygulaması dışında ilk sırada **Tek parmakla sürükleme** bulunur.
 3. **Kalem**, **Kurşun kalem**, **Boya fırçası**, **Silgi**, **Pistole**, **Süsleme**, **Karıştır**, **Sıvılaştır**, seçim araçları, **Doldur**, **Gradyan**, **İşlem**, **Şekil**, **Cetvel**, **El**, **Yakınlaştır**, **Damlalık** ve **Fırça rengi**.
 4. Sekmeler: **Araç seti** ile **Tanılama**, **Araç** ile **Fırça boyutu**, **Renk** ile **Paletler**.
 5. Simgeler: **Gezgin** ile **Renk provası**, **Özellikler** ile **Filtreler** ve **Katmanlar**.

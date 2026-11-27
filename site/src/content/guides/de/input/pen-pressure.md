@@ -8,7 +8,7 @@ Sie können den Druck Ihres Stifts kalibrieren, bevor die Pinsel ihn verwenden.
 
 ## Druckkalibrierung öffnen
 
-Öffnen Sie die [Voreinstellungen](/de/docs/preferences/), wählen Sie **Stift und Eingabe** und dann **Anpassen…** neben **Stiftdruck**.
+Öffnen Sie die [Voreinstellungen](/de/docs/preferences/), wählen Sie **Stift und Maus** und dann **Anpassen…** neben **Stiftdruck**.
 
 ![Der Dialog Stiftdruck mit seiner Kurve, Fester und Leichter, Zurücksetzen, Abbrechen und Anwenden.](shot:pen/pressure-calibration)
 

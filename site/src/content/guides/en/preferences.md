@@ -1,6 +1,6 @@
 ---
 title: "Preferences"
-description: "The Preferences dialog and the settings on its Appearance, Canvas, Color, Pen & Input and About pages."
+description: "The Preferences dialog and the settings on its Appearance, Color, Touch, Pen & Mouse and About pages."
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -91,33 +91,6 @@ default.
 Sets the Capy button's picture: **Looking up** (the default), **Facing
 forward**, **Bathing** or **Sleeping**.
 
-## Canvas
-
-![Canvas navigation settings.](shot:preferences/canvas-navigation)
-
-### Mouse wheel
-
-Choose whether an unmodified mouse wheel pans or zooms the canvas. Holding **Ctrl** uses the other action.
-
-### Rotate with two fingers
-
-Allows a two-finger twist to rotate the view. Turn it off to keep two-finger gestures to pan and zoom.
-
-### Scroll pan speed
-
-Scales how far the mouse wheel, the trackpad and a game controller's left stick
-scroll the canvas, from 0.25 × to 4.00 × (default 1.00 ×).
-
-### Scroll zoom speed
-
-Scales zooming with **Ctrl** and the mouse wheel, or with a game controller's
-right stick, from 0.25 × to 4.00 × (default 1.00 ×).
-
-### Use Pass Through for new groups
-
-Sets new groups to [Pass Through](/docs/layers/blend-modes/). Off by default.
-Existing groups don't change.
-
 ## Color
 
 The **Opening photos** settings apply to photos you open.
@@ -139,9 +112,44 @@ Sets how photos without a color profile open: **Assume sRGB** (the default) or
 Opens the color profile library. See [Color space, bit depth and
 blending](/docs/color-management/color-spaces/).
 
-## Pen & Input
+### Use Pass Through for new groups
 
-The settings on this page are described in [Pen](/docs/input/pen/), [Pen tilt](/docs/input/pen-tilt/), and [Touch gestures](/docs/input/touch/).
+Sets new groups to [Pass Through](/docs/layers/blend-modes/). Off by default.
+Existing groups don't change.
+
+## Touch
+
+**One-finger drag** and the finger taps under **Touch gestures** are described in [Touch gestures](/docs/input/touch/). The macOS app doesn't have **One-finger drag**.
+
+### Rotate with two fingers
+
+Allows a two-finger twist to rotate the view. Turn it off to keep two-finger gestures to pan and zoom.
+
+### Quick pinch to fit
+
+A quick pinch inward shows the whole drawing, centered, with no rotation or flip. On by default.
+
+### Reverse pinch to restore view
+
+Right after a quick pinch to fit, a quick pinch outward returns to the view you had before. On by default.
+
+## Pen & Mouse
+
+The pen settings on this page are described in [Pen](/docs/input/pen/) and [Pen tilt](/docs/input/pen-tilt/).
+
+### Mouse wheel
+
+Choose whether an unmodified mouse wheel pans or zooms the canvas. Holding **Ctrl** uses the other action.
+
+### Scroll pan speed
+
+Scales how far the mouse wheel, the trackpad and a game controller's left stick
+scroll the canvas, from 0.25 × to 4.00 × (default 1.00 ×).
+
+### Scroll zoom speed
+
+Scales zooming with **Ctrl** and the mouse wheel, or with a game controller's
+right stick, from 0.25 × to 4.00 × (default 1.00 ×).
 
 ## Keyboard Shortcuts
 

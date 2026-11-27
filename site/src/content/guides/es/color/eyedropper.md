@@ -16,9 +16,7 @@ Haz una de las siguientes acciones:
 - En Pintura y Foto, selecciona **Cuentagotas** en la barra Herramientas.
 - En Boceto, selecciona **Selector de color** en la barra del borde izquierdo, entre **Deslizador de tamaño de pincel** y **Control de intensidad**.
 
-Para salir sin tomar un color, pulsa **I** o vuelve a seleccionar el mismo botón,
-pulsa **Escape**, o elige otra herramienta u otro pincel. Un toque con el dedo sin
-mantenerlo también desactiva el Cuentagotas.
+Para salir sin tomar un color, pulsa **I** o vuelve a seleccionar el mismo botón, pulsa **Escape**, o elige otra herramienta u otro pincel. Cuando un dedo no dibuja, un toque con el dedo sin mantenerlo también desactiva el Cuentagotas.
 
 ## Tomar un color
 

@@ -24,9 +24,6 @@ için [tuval çubuğu](/tr/docs/selections/working/) tuvalin alt kenarında gör
 - Çerçeveyi yeniden boyutlandırmak için bir köşe veya kenar tutamacını sürükleyin. Oranlarını korumak için **Shift**, merkezden boyutlandırmak için **Alt** tuşunu basılı tutun.
 - Saydam tuval eklemek için çerçeveyi tuval kenarının ötesine sürükleyin.
 
-Dokunmatik ekranda parmağa yalnızca tutamaçlar yanıt verir. Çerçevenin içindeki
-parmak görünümü taşır.
-
 Bitirmek için **Kırpmayı uygula** düğmesini seçin veya **Enter** tuşuna basın. **Kırpmayı iptal et**,
 **Escape** ve **Geri al** kırpmayı atar. Her iki durumda da daha önce
 kullandığınız araca dönülür.

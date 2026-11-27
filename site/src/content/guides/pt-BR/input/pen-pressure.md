@@ -8,7 +8,7 @@ Você pode calibrar a pressão da caneta antes que os pincéis a usem.
 
 ## Abrir a calibração de pressão
 
-Abra [Preferências](/pt-BR/docs/preferences/), selecione **Caneta e entrada** e depois **Ajustar…** ao lado de **Pressão da caneta**.
+Abra [Preferências](/pt-BR/docs/preferences/), selecione **Caneta e mouse** e depois **Ajustar…** ao lado de **Pressão da caneta**.
 
 ![O diálogo Pressão da caneta com sua curva, Mais firme e Mais leve, Redefinir, Cancelar e Aplicar.](shot:pen/pressure-calibration)
 

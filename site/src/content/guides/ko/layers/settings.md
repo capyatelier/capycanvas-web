@@ -106,7 +106,7 @@ related: ["layers/panel", "layers/blend-modes", "layers/types", "filters/how-fil
 기준 레이어로 쓰거나, 필터를 연결할 수 없습니다. 잠긴 그룹의 통과 설정은 바꿀 수
 없습니다.
 
-[환경 설정](/ko/docs/preferences/)의 **캔버스** 페이지에서
+[환경 설정](/ko/docs/preferences/)의 **색상** 페이지에서
 **새 그룹에 통과 모드 사용**이 켜져 있지 않으면 새 그룹은 표준을 사용합니다. 표준이
 아닌 혼합 모드를 쓰는 레이어나 별도 레이어로 있는 필터를 그룹화하면 새 그룹이
 통과로 설정됩니다.

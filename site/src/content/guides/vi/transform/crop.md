@@ -24,9 +24,6 @@ dưới khung vẽ.
 - Kéo tay nắm ở góc hoặc ở cạnh để đổi kích thước khung. Giữ **Shift** để giữ tỷ lệ khung, hoặc **Alt** để đổi kích thước từ tâm.
 - Kéo khung vượt ra ngoài mép khung vẽ để thêm phần khung vẽ trong suốt.
 
-Trên màn hình cảm ứng, chỉ các tay nắm phản hồi ngón tay. Ngón tay đặt bên trong
-khung sẽ di chuyển khung nhìn.
-
 Để hoàn tất, chọn **Áp dụng cắt** hoặc nhấn **Enter**. **Hủy cắt**, **Escape** và
 **Hoàn tác** bỏ thao tác cắt xén. Trong cả hai trường hợp, công cụ bạn dùng trước đó
 sẽ được chọn lại.

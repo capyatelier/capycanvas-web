@@ -1,6 +1,6 @@
 ---
 title: "Préférences"
-description: "La boîte de dialogue Préférences et les réglages de ses pages Apparence, Toile, Couleur, Stylet et saisie et À propos."
+description: "La boîte de dialogue Préférences et les réglages de ses pages Apparence, Couleur, Tactile, Stylet et souris et À propos."
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -95,34 +95,6 @@ défaut.
 Définit l’image du bouton Capy : **Regard vers le haut** (par défaut),
 **Regard de face**, **Baignade** ou **Sommeil**.
 
-## Toile
-
-![Les réglages de navigation de la toile.](shot:preferences/canvas-navigation)
-
-### Molette de la souris
-
-Choisissez si la molette sans modificateur déplace la toile ou zoome. Maintenir **Ctrl** utilise l’autre action.
-
-### Tourner avec deux doigts
-
-Permet de faire pivoter la vue avec une rotation à deux doigts. Désactivez ce réglage pour limiter les gestes à deux doigts au déplacement et au zoom.
-
-### Vitesse de déplacement par défilement
-
-Règle l’ampleur du défilement de la toile par la molette de la souris, le
-trackpad et le stick gauche d’une manette de jeu, de 0,25 × à 4,00 × (1,00 × par
-défaut).
-
-### Vitesse de zoom par défilement
-
-Règle le zoom avec **Ctrl** et la molette de la souris, ou avec le stick droit
-d’une manette de jeu, de 0,25 × à 4,00 × (1,00 × par défaut).
-
-### Utiliser Transfert pour les nouveaux groupes
-
-Règle les nouveaux groupes sur [Transfert](/fr/docs/layers/blend-modes/).
-Désactivé par défaut. Les groupes existants ne changent pas.
-
 ## Couleur
 
 Les réglages **Ouverture des photos** s’appliquent aux photos que vous ouvrez.
@@ -145,9 +117,45 @@ défaut) ou **Demander**. Les photos avec profil le conservent.
 Ouvre la bibliothèque de profils colorimétriques. Voir
 [Espace colorimétrique, profondeur de couleur et fusion](/fr/docs/color-management/color-spaces/).
 
-## Stylet et saisie
+### Utiliser Transfert pour les nouveaux groupes
 
-Les paramètres de cette page sont décrits dans [Stylo](/fr/docs/input/pen/), [Inclinaison du stylet](/fr/docs/input/pen-tilt/) et [Gestes tactiles](/fr/docs/input/touch/).
+Règle les nouveaux groupes sur [Transfert](/fr/docs/layers/blend-modes/).
+Désactivé par défaut. Les groupes existants ne changent pas.
+
+## Tactile
+
+**Glisser à un doigt** et les touchers des doigts sous **Gestes tactiles** sont décrits dans [Gestes tactiles](/fr/docs/input/touch/). L’application macOS ne propose pas **Glisser à un doigt**.
+
+### Tourner avec deux doigts
+
+Permet de faire pivoter la vue avec une rotation à deux doigts. Désactivez ce réglage pour limiter les gestes à deux doigts au déplacement et au zoom.
+
+### Pincer rapidement pour ajuster
+
+Un pincement rapide vers l’intérieur affiche tout le dessin, centré, sans rotation ni retournement. Activé par défaut.
+
+### Écarter les doigts pour rétablir la vue
+
+Juste après un pincement rapide pour ajuster, un écartement rapide des doigts rétablit la vue précédente. Activé par défaut.
+
+## Stylet et souris
+
+Les réglages du stylet de cette page sont décrits dans [Stylo](/fr/docs/input/pen/) et [Inclinaison du stylet](/fr/docs/input/pen-tilt/).
+
+### Molette de la souris
+
+Choisissez si la molette sans modificateur déplace la toile ou zoome. Maintenir **Ctrl** utilise l’autre action.
+
+### Vitesse de déplacement par défilement
+
+Règle l’ampleur du défilement de la toile par la molette de la souris, le
+trackpad et le stick gauche d’une manette de jeu, de 0,25 × à 4,00 × (1,00 × par
+défaut).
+
+### Vitesse de zoom par défilement
+
+Règle le zoom avec **Ctrl** et la molette de la souris, ou avec le stick droit
+d’une manette de jeu, de 0,25 × à 4,00 × (1,00 × par défaut).
 
 ## Raccourcis clavier
 

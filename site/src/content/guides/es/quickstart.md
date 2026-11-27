@@ -31,7 +31,7 @@ selecciona **Pincel** en la barra de título en Boceto, o la herramienta en la b
 de herramientas del borde izquierdo en Pintura. Arrastra una herramienta al lienzo
 para mantenerla allí como una [burbuja](/es/docs/customize/bubbles/).
 
-> **Nota:** Los dedos nunca dibujan. Con dos dedos sobre el lienzo desplazas, haces zoom y giras la vista.
+> **Nota:** En iPad, iPhone y Android, un dedo dibuja hasta que usas un lápiz en el lienzo por primera vez. Con dos dedos sobre el lienzo desplazas, haces zoom y giras la vista. Consulta [Gestos táctiles](/es/docs/input/touch/).
 
 Para deshacer un trazo, elige **Editar > Deshacer**, pulsa **Ctrl+Z** o toca el
 lienzo con dos dedos (consulta [Deshacer y rehacer](/es/docs/start/undo/)).

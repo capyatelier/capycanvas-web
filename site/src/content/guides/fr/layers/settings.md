@@ -118,7 +118,7 @@ pas être écrêté, servir de calque de base d’écrêtage ni recevoir de filt
 rattachés. Vous ne pouvez pas modifier Transfert sur un groupe verrouillé.
 
 Les nouveaux groupes utilisent Normal, sauf si **Utiliser Transfert pour les
-nouveaux groupes** est activé dans la page **Toile** des
+nouveaux groupes** est activé dans la page **Couleur** des
 [Préférences](/fr/docs/preferences/). Grouper des calques qui utilisent un mode de
 fusion autre que Normal, ou un filtre sur son propre calque, règle le nouveau
 groupe sur Transfert.

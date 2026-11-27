@@ -1,6 +1,6 @@
 ---
 title: "Voreinstellungen"
-description: "Der Dialog Voreinstellungen und die Einstellungen auf den Seiten Erscheinungsbild, Leinwand, Farbe, Stift und Eingabe und Info."
+description: "Der Dialog Voreinstellungen und die Einstellungen auf den Seiten Erscheinungsbild, Farbe, Touch, Stift und Maus und Info."
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -93,33 +93,6 @@ Bildschirm. Standardmäßig aktiviert.
 Legt das Bild der Capy-Schaltfläche fest: **Blick nach oben** (Standard), **Blick nach
 vorn**, **Badend** oder **Schlafend**.
 
-## Leinwand
-
-![Die Einstellungen zur Leinwandnavigation.](shot:preferences/canvas-navigation)
-
-### Mausrad
-
-Wählen Sie, ob das Mausrad ohne Zusatztaste die Leinwand verschiebt oder zoomt. Mit gedrücktem **Strg** wird die andere Aktion verwendet.
-
-### Mit zwei Fingern drehen
-
-Erlaubt das Drehen der Ansicht mit einer Drehbewegung zweier Finger. Schalten Sie dies aus, um Gesten mit zwei Fingern auf Verschieben und Zoomen zu begrenzen.
-
-### Verschiebegeschwindigkeit beim Scrollen
-
-Skaliert, wie weit Mausrad, Trackpad und der linke Stick eines Gamecontrollers die
-Leinwand verschieben, von 0.25 × bis 4.00 × (Standard 1.00 ×).
-
-### Zoomgeschwindigkeit beim Scrollen
-
-Skaliert das Zoomen mit **Strg** und dem Mausrad oder mit dem rechten Stick eines
-Gamecontrollers, von 0.25 × bis 4.00 × (Standard 1.00 ×).
-
-### Durchreichen für neue Gruppen verwenden
-
-Setzt neue Gruppen auf [Durchreichen](/de/docs/layers/blend-modes/). Standardmäßig
-deaktiviert. Vorhandene Gruppen ändern sich nicht.
-
 ## Farbe
 
 Die Einstellungen unter **Fotos öffnen** gelten für Fotos, die Sie öffnen.
@@ -141,9 +114,44 @@ oder **Nachfragen**. Fotos mit Profil behalten es.
 Öffnet die Farbprofilbibliothek. Siehe [Farbraum, Farbtiefe und
 Verrechnung](/de/docs/color-management/color-spaces/).
 
-## Stift und Eingabe
+### Durchreichen für neue Gruppen verwenden
 
-Die Einstellungen auf dieser Seite werden unter [Stift](/de/docs/input/pen/), [Stiftneigung](/de/docs/input/pen-tilt/) und [Touch-Gesten](/de/docs/input/touch/) beschrieben.
+Setzt neue Gruppen auf [Durchreichen](/de/docs/layers/blend-modes/). Standardmäßig
+deaktiviert. Vorhandene Gruppen ändern sich nicht.
+
+## Touch
+
+**Mit einem Finger ziehen** und die Fingertipps unter **Touchgesten** werden unter [Touch-Gesten](/de/docs/input/touch/) beschrieben. Die macOS-App bietet **Mit einem Finger ziehen** nicht.
+
+### Mit zwei Fingern drehen
+
+Erlaubt das Drehen der Ansicht mit einer Drehbewegung zweier Finger. Schalten Sie dies aus, um Gesten mit zwei Fingern auf Verschieben und Zoomen zu begrenzen.
+
+### Schnell zusammenziehen zum Einpassen
+
+Wenn Sie zwei Finger schnell zusammenziehen, wird die ganze Zeichnung zentriert angezeigt, ohne Drehung und Spiegelung. Standardmäßig an.
+
+### Aufziehen zum Wiederherstellen der Ansicht
+
+Wenn Sie direkt nach dem schnellen Zusammenziehen zwei Finger schnell aufziehen, kehrt die vorherige Ansicht zurück. Standardmäßig an.
+
+## Stift und Maus
+
+Die Stifteinstellungen auf dieser Seite werden unter [Stift](/de/docs/input/pen/) und [Stiftneigung](/de/docs/input/pen-tilt/) beschrieben.
+
+### Mausrad
+
+Wählen Sie, ob das Mausrad ohne Zusatztaste die Leinwand verschiebt oder zoomt. Mit gedrücktem **Strg** wird die andere Aktion verwendet.
+
+### Verschiebegeschwindigkeit beim Scrollen
+
+Skaliert, wie weit Mausrad, Trackpad und der linke Stick eines Gamecontrollers die
+Leinwand verschieben, von 0.25 × bis 4.00 × (Standard 1.00 ×).
+
+### Zoomgeschwindigkeit beim Scrollen
+
+Skaliert das Zoomen mit **Strg** und dem Mausrad oder mit dem rechten Stick eines
+Gamecontrollers, von 0.25 × bis 4.00 × (Standard 1.00 ×).
 
 ## Tastenkürzel
 

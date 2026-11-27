@@ -24,9 +24,6 @@ of the canvas.
 - Drag a corner or edge handle to resize the frame. Hold **Shift** to keep its proportions, or **Alt** to resize from the center.
 - Drag the frame past the canvas edge to add transparent canvas.
 
-On a touch screen, only the handles respond to a finger. A finger inside the
-frame moves the view.
-
 To finish, select **Apply crop** or press **Enter**. **Cancel crop**, **Escape**, and
 **Undo** discard the crop. Either way, the tool you used before returns.
 

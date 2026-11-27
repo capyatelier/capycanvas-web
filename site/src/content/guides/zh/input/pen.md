@@ -4,9 +4,9 @@ description: "首选项中的笔设置，以及 Apple Pencil 的轻点两下和�
 related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-笔的设置位于 **编辑 > 首选项** 的 **笔与输入** 页面。
+笔的设置位于 **编辑 > 首选项** 的 **笔与鼠标** 页面。
 
-![首选项的笔与输入页面。](shot:pen/pen-and-input)
+![首选项的笔与鼠标页面。](shot:pen/pen-and-input)
 
 ## 笔压
 

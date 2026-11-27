@@ -21,7 +21,6 @@ bıraktığınızda gradyan boyanır.
 
 - Gradyan katmanın tamamını kaplar: başlangıç noktasından önce ilk renk, bitiş noktasından sonra son renk bulunur.
 - İptal etmek için sürükleme sırasında **Escape** tuşuna basın.
-- Parmakla sürüklemek bunun yerine tuvali taşır.
 - Etkin bir seçim gradyanı sınırlar ve **Alfa kilidi** dikkate alınır.
 - Hızlı maskede veya bir seçim katmanında gradyan seçim maskesine gider.
 - Her gradyan bir geri alma adımıdır.

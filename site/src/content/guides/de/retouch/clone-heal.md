@@ -58,10 +58,7 @@ Führen Sie eine der folgenden Aktionen aus:
 - Halten Sie **Alt** gedrückt und klicken Sie auf die Stelle, von der Sie kopieren möchten.
 - Wählen Sie **Quelle festlegen** aus und klicken Sie dann.
 
-Solange Sie die Quelle nicht festgelegt haben, liegt sie in der Mitte der
-Ansicht. Ziehen Sie die Scheibe, um die Quelle zu verschieben. Ein Finger kann
-die Scheibe ziehen, legt aber nie die Quelle fest. Während Sie malen, folgt die
-Scheibe der Stelle, die gerade kopiert wird.
+Solange Sie die Quelle nicht festgelegt haben, liegt sie in der Mitte der Ansicht. Ziehen Sie die Scheibe, um die Quelle zu verschieben. Ein Finger kann die Scheibe ziehen, legt die Quelle aber nur fest, wenn er zeichnet. Während Sie malen, folgt die Scheibe der Stelle, die gerade kopiert wird.
 
 Der **Bereichsreparaturpinsel** findet seine Quelle selbst und hat keine
 Scheibe.

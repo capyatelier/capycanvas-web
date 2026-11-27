@@ -16,9 +16,7 @@ Faça uma das seguintes ações:
 - Em Pintura e Foto, selecione **Conta-gotas** na barra Ferramentas.
 - Em Esboço, selecione **Conta-gotas** na barra da borda esquerda, entre **Controle deslizante de tamanho do pincel** e **Controle de intensidade**.
 
-Para parar sem capturar, pressione **I** ou selecione de novo o mesmo botão,
-pressione **Escape** ou escolha outra ferramenta ou outro pincel. Um toque com o
-dedo, sem manter pressionado, também encerra o Conta-gotas.
+Para parar sem capturar, pressione **I** ou selecione de novo o mesmo botão, pressione **Escape** ou escolha outra ferramenta ou outro pincel. Quando um dedo não desenha, um toque com o dedo, sem manter pressionado, também encerra o Conta-gotas.
 
 ## Capturar
 

@@ -115,7 +115,7 @@ dapat diklip, menjadi dasar kliping, atau dilampiri filter. Lewat Langsung tidak
 dapat diubah pada grup yang terkunci.
 
 Grup baru memakai Normal, kecuali jika **Gunakan Lewat Langsung untuk grup baru**
-aktif di halaman **Kanvas** pada [Preferensi](/id/docs/preferences/).
+aktif di halaman **Warna** pada [Preferensi](/id/docs/preferences/).
 Mengelompokkan lapisan yang memakai mode baur selain Normal, atau filter yang berada
 di lapisannya sendiri, menjadikan grup baru itu Lewat Langsung.
 

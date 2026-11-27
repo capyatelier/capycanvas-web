@@ -44,7 +44,7 @@ trang** trong **Cửa sổ > Tùy chỉnh thanh tiêu đề…**.
 Vẽ gắn các bảng thành cột ở hai bên khung vẽ.
 
 1. **Capy (chế độ Zen)** và các trình đơn, tên bản vẽ ở giữa, sau đó là bộ chuyển không gian làm việc và **Thiết lập**. Trình chỉnh sửa web có thêm **Toàn màn hình**.
-2. **Mới…**, **Mở…**, **Lưu**, **Hoàn tác**, **Làm lại**, **Xóa toàn bộ lớp**, **Tô đầy vùng chọn**, **Biến đổi** và **Lật khung nhìn ngang**.
+2. **Mới…**, **Mở…**, **Lưu**, **Hoàn tác**, **Làm lại**, **Xóa toàn bộ lớp**, **Tô đầy vùng chọn**, **Biến đổi** và **Lật khung nhìn ngang**. Trừ ứng dụng macOS, **Kéo một ngón** đứng đầu.
 3. **Bút**, **Bút chì**, **Cọ vẽ**, **Tẩy**, **Bút phun**, **Trang trí**, **Hòa màu**, **Biến dạng**, các công cụ vùng chọn, **Tô đầy**, **Chuyển màu**, **Thao tác**, **Hình**, **Thước**, **Bàn tay**, **Thu phóng**, **Ống hút màu** và **Màu cọ**.
 4. Các thẻ **Bộ công cụ** và **Chẩn đoán**, **Công cụ** và **Kích thước cọ**, **Màu** và **Bảng màu**.
 5. Biểu tượng cho **Điều hướng** và **Mô phỏng màu**, **Thuộc tính** và **Bộ lọc**, và **Lớp**.

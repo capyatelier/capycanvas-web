@@ -10,7 +10,7 @@ Anda dapat mengubah respons kemiringan dan arah untuk setiap pena.
 
 Lakukan salah satu hal berikut:
 
-- Buka [Preferensi](/id/docs/preferences/), pilih **Pena & Masukan**, lalu **Sesuaikan…** di samping **Kemiringan pena**.
+- Buka [Preferensi](/id/docs/preferences/), pilih **Pena & Mouse**, lalu **Sesuaikan…** di samping **Kemiringan pena**.
 - Cari **Kemiringan pena…** di pencarian perintah.
 
 Gunakan pena Anda di kanvas untuk memilih perangkat yang akan dikalibrasi. Dialog menunjukkan nama perangkat dan arah kemiringannya. Setiap pena menyimpan kalibrasinya sendiri.

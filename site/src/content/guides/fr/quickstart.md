@@ -31,7 +31,7 @@ sélectionnez **Pinceau** dans la barre de titre dans Croquis, ou l’outil dans
 d’outils Outils, sur le bord gauche dans Peinture. Faites glisser un outil sur la toile
 pour l’y garder sous forme de [bulle](/fr/docs/customize/bubbles/).
 
-> **Remarque :** les doigts ne dessinent jamais. Deux doigts posés sur la toile font défiler, zoomer et pivoter la vue.
+> **Remarque :** sur iPad, iPhone et Android, un doigt dessine jusqu’à ce que vous utilisiez un stylet sur la toile pour la première fois. Deux doigts posés sur la toile font défiler, zoomer et pivoter la vue. Voir [Gestes tactiles](/fr/docs/input/touch/).
 
 Pour annuler un trait, choisissez **Édition > Annuler**, appuyez sur **Ctrl+Z** ou
 touchez la toile avec deux doigts (voir [Annuler et rétablir](/fr/docs/start/undo/)).

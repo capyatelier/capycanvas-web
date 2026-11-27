@@ -10,7 +10,7 @@ related: ["input/pen", "input/pen-pressure", "brushes/dry-media", "preferences"]
 
 Effettuare una delle seguenti operazioni:
 
-- Aprire le [Preferenze](/it/docs/preferences/), selezionare **Penna e input**, poi **Regola…** accanto a **Inclinazione della penna**.
+- Aprire le [Preferenze](/it/docs/preferences/), selezionare **Penna e mouse**, poi **Regola…** accanto a **Inclinazione della penna**.
 - Cercare **Inclinazione della penna…** nella ricerca dei comandi.
 
 Usare la penna sulla tela per selezionare il dispositivo da calibrare. La finestra di dialogo mostra il nome del dispositivo e la sua direzione di inclinazione. Ogni penna mantiene la propria calibrazione.

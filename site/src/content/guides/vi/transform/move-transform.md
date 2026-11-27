@@ -86,7 +86,7 @@ Trong khi mở rộng quy mô:
 Ở mọi chế độ:
 
 - Phím mũi tên dịch hộp 1 px, và 10 px khi giữ **Shift**.
-- Trên màn hình cảm ứng, ngón tay đặt trên tay nắm hoặc bên trong hộp sẽ kéo tay nắm hoặc hộp. Ngón tay đặt ở chỗ khác sẽ di chuyển khung nhìn.
+- Trên màn hình cảm ứng, ngón tay đặt trên tay nắm hoặc bên trong hộp sẽ kéo tay nắm hoặc hộp.
 
 ## Thanh biến đổi
 

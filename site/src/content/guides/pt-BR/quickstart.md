@@ -31,7 +31,7 @@ Arraste na tela com uma caneta ou um mouse. Para usar outra ferramenta, selecion
 Ferramentas, na borda esquerda, em Pintura. Arraste uma ferramenta para a tela para
 mantê-la ali como uma [bolha](/pt-BR/docs/customize/bubbles/).
 
-> **Observação:** Os dedos nunca desenham. Com dois dedos na tela, você desloca, amplia e gira a visualização.
+> **Observação:** No iPad, no iPhone e no Android, um dedo desenha até você usar uma caneta na tela pela primeira vez. Com dois dedos na tela, você desloca, amplia e gira a visualização. Consulte [Gestos de toque](/pt-BR/docs/input/touch/).
 
 Para desfazer um traço, escolha **Editar > Desfazer**, pressione **Ctrl+Z** ou toque
 na tela com dois dedos (consulte [Desfazer e refazer](/pt-BR/docs/start/undo/)).

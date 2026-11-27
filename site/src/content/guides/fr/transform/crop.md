@@ -24,9 +24,6 @@ en bas de la toile.
 - Faites glisser une poignée d’angle ou de côté pour redimensionner le cadre. Maintenez **Maj** pour conserver ses proportions, ou **Alt** pour redimensionner depuis le centre.
 - Faites glisser le cadre au-delà du bord de la toile pour ajouter de la toile transparente.
 
-Sur un écran tactile, seules les poignées réagissent au doigt. Un doigt posé à
-l’intérieur du cadre déplace la vue.
-
 Pour terminer, sélectionnez **Appliquer le recadrage** ou appuyez sur **Entrée**. **Annuler le recadrage** dans
 la barre, **Escape** et la commande **Annuler** abandonnent le recadrage. Dans tous
 les cas, l’outil utilisé auparavant revient.

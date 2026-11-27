@@ -8,7 +8,7 @@ Puoi calibrare la pressione della penna prima che venga usata dai pennelli.
 
 ## Aprire la calibrazione della pressione
 
-Apri [Preferenze](/it/docs/preferences/), seleziona **Penna e input**, poi **Regola…** accanto a **Pressione della penna**.
+Apri [Preferenze](/it/docs/preferences/), seleziona **Penna e mouse**, poi **Regola…** accanto a **Pressione della penna**.
 
 ![La finestra Pressione della penna con la curva, Più forte e Più leggera, Ripristina, Annulla e Applica.](shot:pen/pressure-calibration)
 

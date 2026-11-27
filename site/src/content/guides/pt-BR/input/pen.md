@@ -4,9 +4,9 @@ description: "Os ajustes da caneta em Preferências e o toque duplo e o gesto de
 related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-Os ajustes da caneta ficam na página **Caneta e entrada** de **Editar > Preferências**.
+Os ajustes da caneta ficam na página **Caneta e mouse** de **Editar > Preferências**.
 
-![A página Caneta e entrada das Preferências.](shot:pen/pen-and-input)
+![A página Caneta e mouse das Preferências.](shot:pen/pen-and-input)
 
 ## Pressão da caneta
 

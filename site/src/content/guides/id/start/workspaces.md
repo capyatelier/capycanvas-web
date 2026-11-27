@@ -43,7 +43,7 @@ aktifkan **Tampilkan bagian bawah** di **Jendela > Sesuaikan Bilah Judul…**.
 Lukis menambatkan panel dalam kolom di kedua sisi kanvas.
 
 1. **Capy (Mode Zen)** dan menu, judul gambar di tengah, lalu pemilih ruang kerja dan **Pengaturan**. Editor web menambahkan **Layar penuh**.
-2. **Baru…**, **Buka…**, **Simpan**, **Urungkan**, **Ulangi**, **Bersihkan Seluruh Lapisan**, **Isi seleksi**, **Transformasi**, dan **Balik tampilan secara horizontal**.
+2. **Baru…**, **Buka…**, **Simpan**, **Urungkan**, **Ulangi**, **Bersihkan Seluruh Lapisan**, **Isi seleksi**, **Transformasi**, dan **Balik tampilan secara horizontal**. Kecuali di aplikasi macOS, **Seret satu jari** ada di urutan pertama.
 3. **Pena**, **Pensil**, **Kuas Cat**, **Penghapus**, **Kuas Semprot Halus**, **Dekorasi**, **Baurkan**, **Cairkan**, alat seleksi, **Isi**, **Gradasi**, **Operasi**, **Bentuk**, **Penggaris**, **Tangan**, **Zoom**, **Pipet Warna**, dan **Warna kuas**.
 4. Tab untuk **Set Alat** dan **Diagnostik**, **Alat** dan **Ukuran kuas**, serta **Warna** dan **Palet**.
 5. Ikon untuk **Navigator** dan **Simulasi Cetak**, **Properti** dan **Filter**, serta **Lapisan**.

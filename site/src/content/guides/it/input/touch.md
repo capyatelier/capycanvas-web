@@ -4,24 +4,35 @@ description: "Cosa fanno le dita sulla tela, e i tocchi con le dita che puoi ass
 related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
-Su uno schermo touch puoi spostare la tela, prelevare colori ed eseguire comandi
-con le dita.
+Su uno schermo touch puoi disegnare, spostare la tela, prelevare colori ed eseguire comandi con le dita.
 
-> **Nota:** le dita non disegnano mai. Usa una penna o un mouse per disegnare sulla tela.
+## Trascinamento con un dito
+
+**Trascinamento con un dito** stabilisce cosa fa un dito trascinato sulla tela.
+
+| Scelta | Un dito |
+| --- | --- |
+| **Automatico** | Disegna su iPad, iPhone e Android finché non usi per la prima volta una penna sulla tela. Dopo, e sugli altri dispositivi, non disegna né scorre. |
+| **Disegna** | Usa lo strumento attuale, come una penna. |
+| **Sposta la tela** | Scorre la tela. |
+| **Disattivo** | Non disegna né scorre. |
+
+**Automatico** è l'impostazione predefinita. Per cambiarla, esegui una delle seguenti operazioni:
+
+- In **Preferenze**, apri la pagina **Tocco** e scegli **Trascinamento con un dito**.
+- In Pittura, seleziona **Trascinamento con un dito** all'inizio della barra strumenti Comandi.
+
+L'app per macOS non ha **Trascinamento con un dito**.
 
 ## Spostare la tela
 
-Trascina la tela con due dita per scorrerla. Pizzica con due dita per ingrandire,
-e ruota due dita per ruotare la tela. Con lo strumento **Mano**, anche un solo
-dito scorre la tela.
+Trascina la tela con due dita per scorrerla. Pizzica con due dita per ingrandire, e ruota due dita per ruotare la tela. Con lo strumento **Mano**, o con **Trascinamento con un dito** impostato su **Sposta la tela**, anche un solo dito scorre la tela.
 
 **Blocca rotazione** e **Blocca zoom** nel menu dello zoom in fondo alla tela
 impediscono che il pizzico ruoti o ingrandisca la vista. Vedi
 [Visualizzare la tela](/it/docs/start/canvas/).
 
-Mentre la penna è sulla tela, le dita non spostano la tela. Un dito su una
-maniglia di trasformazione o di ritaglio, o sulla sorgente del **Timbro clone**,
-trascina invece la maniglia o la sorgente.
+Mentre la penna è sulla tela, le dita non spostano la tela. Tranne quando **Trascinamento con un dito** è impostato su **Sposta la tela**, un dito su una maniglia di trasformazione o di ritaglio, o sulla sorgente del **Timbro clone**, trascina la maniglia o la sorgente.
 
 **Aggancia rotazione** è attivo per impostazione predefinita e mantiene la visuale vicino ai quarti di giro. Disattivalo in **Visualizza > Aggancia rotazione** per la rotazione libera.
 
@@ -69,7 +80,7 @@ non contano come tocco. Se un tocco ha spostato la vista, la vista torna indietr
 
 Per cambiare un tocco:
 
-1. Scegli **Modifica > Preferenze** e seleziona **Penna e input**.
+1. Scegli **Modifica > Preferenze** e seleziona **Tocco**.
 2. Seleziona il tocco sotto **Gesti touch**.
 3. Scegli un'azione, oppure **Niente** per disattivare il tocco.
 

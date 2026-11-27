@@ -10,7 +10,7 @@ related: ["input/pen", "input/pen-pressure", "brushes/dry-media", "preferences"]
 
 執行以下任一操作：
 
-- 開啟[偏好設定](/zh-Hant/docs/preferences/)，選擇 **繪圖筆與輸入**，再選擇 **筆傾斜** 旁的 **調整…**。
+- 開啟[偏好設定](/zh-Hant/docs/preferences/)，選擇 **繪圖筆與滑鼠**，再選擇 **筆傾斜** 旁的 **調整…**。
 - 在命令搜尋中搜尋 **筆傾斜…**。
 
 在畫布上使用筆，選擇要校準的裝置。對話方塊顯示裝置名稱和傾斜方向。每支筆分別儲存校準。

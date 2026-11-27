@@ -1,6 +1,6 @@
 ---
 title: "Preferencias"
-description: "El diálogo Preferencias y los ajustes de sus páginas Apariencia, Lienzo, Color, Lápiz y entrada y Acerca de."
+description: "El diálogo Preferencias y los ajustes de sus páginas Apariencia, Color, Táctil, Lápiz y ratón y Acerca de."
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -94,34 +94,6 @@ de forma predeterminada.
 Define la imagen del botón Capy: **Mirando hacia arriba** (la predeterminada),
 **Mirando al frente**, **Bañándose** o **Durmiendo**.
 
-## Lienzo
-
-![Ajustes de navegación del lienzo.](shot:preferences/canvas-navigation)
-
-### Rueda del ratón
-
-Elige si la rueda del ratón sin modificadores desplaza el lienzo o cambia el zoom. Mantener pulsado **Ctrl** usa la otra acción.
-
-### Girar con dos dedos
-
-Permite girar la vista al girar dos dedos. Desactívalo para limitar los gestos de dos dedos al desplazamiento y al zoom.
-
-### Velocidad de desplazamiento
-
-Ajusta cuánto desplazan el lienzo la rueda del ratón, el trackpad y el joystick
-izquierdo de un mando de videojuegos, de 0.25 × a 4.00 × (1.00 × de forma
-predeterminada).
-
-### Velocidad de zoom con la rueda
-
-Ajusta el zoom con **Ctrl** y la rueda del ratón, o con el joystick derecho de un
-mando de videojuegos, de 0.25 × a 4.00 × (1.00 × de forma predeterminada).
-
-### Usar Traspasar en los grupos nuevos
-
-Pone los grupos nuevos en [Traspasar](/es/docs/layers/blend-modes/). Desactivado de
-forma predeterminada. Los grupos existentes no cambian.
-
 ## Color
 
 Los ajustes de **Al abrir fotos** se aplican a las fotos que abras.
@@ -144,9 +116,45 @@ predeterminado) o **Preguntar**. Las fotos con perfil lo conservan.
 Abre la biblioteca de perfiles de color. Consulta [Espacio de color, profundidad de
 bits y mezcla](/es/docs/color-management/color-spaces/).
 
-## Lápiz y entrada
+### Usar Traspasar en los grupos nuevos
 
-Los ajustes de esta página se describen en [Lápiz](/es/docs/input/pen/), [Inclinación del lápiz](/es/docs/input/pen-tilt/) y [Gestos táctiles](/es/docs/input/touch/).
+Pone los grupos nuevos en [Traspasar](/es/docs/layers/blend-modes/). Desactivado de
+forma predeterminada. Los grupos existentes no cambian.
+
+## Táctil
+
+**Arrastrar con un dedo** y los toques con los dedos de **Gestos táctiles** se describen en [Gestos táctiles](/es/docs/input/touch/). La aplicación para macOS no tiene **Arrastrar con un dedo**.
+
+### Girar con dos dedos
+
+Permite girar la vista al girar dos dedos. Desactívalo para limitar los gestos de dos dedos al desplazamiento y al zoom.
+
+### Pellizcar rápido para encajar
+
+Un pellizco rápido hacia dentro muestra todo el dibujo, centrado, sin rotación ni volteo. Activado de forma predeterminada.
+
+### Pellizcar hacia fuera para restaurar la vista
+
+Justo después de un pellizco rápido para encajar, un pellizco rápido hacia fuera vuelve a la vista anterior. Activado de forma predeterminada.
+
+## Lápiz y ratón
+
+Los ajustes del lápiz de esta página se describen en [Lápiz](/es/docs/input/pen/) e [Inclinación del lápiz](/es/docs/input/pen-tilt/).
+
+### Rueda del ratón
+
+Elige si la rueda del ratón sin modificadores desplaza el lienzo o cambia el zoom. Mantener pulsado **Ctrl** usa la otra acción.
+
+### Velocidad de desplazamiento
+
+Ajusta cuánto desplazan el lienzo la rueda del ratón, el trackpad y el joystick
+izquierdo de un mando de videojuegos, de 0.25 × a 4.00 × (1.00 × de forma
+predeterminada).
+
+### Velocidad de zoom con la rueda
+
+Ajusta el zoom con **Ctrl** y la rueda del ratón, o con el joystick derecho de un
+mando de videojuegos, de 0.25 × a 4.00 × (1.00 × de forma predeterminada).
 
 ## Atajos de teclado
 

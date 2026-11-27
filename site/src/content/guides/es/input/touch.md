@@ -4,24 +4,35 @@ description: "Lo que hacen los dedos sobre el lienzo y los toques con los dedos 
 related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
-Puedes mover el lienzo, tomar colores y ejecutar comandos con los dedos en una
-pantalla táctil.
+Puedes dibujar, mover el lienzo, tomar colores y ejecutar comandos con los dedos en una pantalla táctil.
 
-> **Nota:** Los dedos nunca dibujan. Usa un lápiz o un ratón para dibujar en el lienzo.
+## Arrastrar con un dedo
+
+**Arrastrar con un dedo** define qué ocurre al arrastrar un dedo por el lienzo.
+
+| Opción | Un dedo |
+| --- | --- |
+| **Automático** | Dibuja en iPad, iPhone y Android hasta que usas un lápiz en el lienzo por primera vez. Después, y en otros dispositivos, no dibuja ni desplaza. |
+| **Dibujar** | Usa la herramienta actual, como un lápiz. |
+| **Mover el lienzo** | Desplaza el lienzo. |
+| **Desactivado** | No dibuja ni desplaza. |
+
+**Automático** es el valor predeterminado. Para cambiarlo, haz una de las siguientes acciones:
+
+- En **Preferencias**, abre la página **Táctil** y elige **Arrastrar con un dedo**.
+- En Pintura, selecciona **Arrastrar con un dedo** al principio de la barra Comandos.
+
+La aplicación para macOS no tiene **Arrastrar con un dedo**.
 
 ## Mover el lienzo
 
-Arrastra el lienzo con dos dedos para desplazarlo. Pellizca con dos dedos para hacer
-zoom, y gira dos dedos para girar el lienzo. Con la herramienta **Mano**, un solo
-dedo también desplaza el lienzo.
+Arrastra el lienzo con dos dedos para desplazarlo. Pellizca con dos dedos para hacer zoom, y gira dos dedos para girar el lienzo. Con la herramienta **Mano**, o con **Arrastrar con un dedo** en **Mover el lienzo**, un solo dedo también desplaza el lienzo.
 
 **Bloquear rotación** y **Bloquear zoom**, en el menú de zoom de la parte inferior
 del lienzo, impiden que el pellizco gire la vista o cambie el zoom. Consulta
 [Vista del lienzo](/es/docs/start/canvas/).
 
-Mientras el lápiz está sobre el lienzo, los dedos no mueven el lienzo. Un dedo sobre
-un tirador de transformación o de recorte, o sobre el origen del **Tampón de
-clonar**, arrastra el tirador o el origen.
+Mientras el lápiz está sobre el lienzo, los dedos no mueven el lienzo. Salvo que **Arrastrar con un dedo** esté en **Mover el lienzo**, un dedo sobre un tirador de transformación o de recorte, o sobre el origen del **Tampón de clonar**, arrastra el tirador o el origen.
 
 **Ajustar rotación** está activado de forma predeterminada y mantiene la vista cerca de los cuartos de vuelta. Desactiva **Ver > Ajustar rotación** para girar libremente.
 
@@ -68,7 +79,7 @@ larga, no cuentan como toque. Si un toque movió la vista, la vista vuelve a su 
 
 Para cambiar un toque:
 
-1. Elige **Editar > Preferencias** y selecciona **Lápiz y entrada**.
+1. Elige **Editar > Preferencias** y selecciona **Táctil**.
 2. Selecciona el toque en **Gestos táctiles**.
 3. Elige una acción, o **Nada** para desactivar el toque.
 

@@ -21,7 +21,6 @@ y el degradado se pinta al soltar.
 
 - El degradado cubre toda la capa, con el primer color antes del punto inicial y el último color más allá del punto final.
 - Pulsa **Escape** durante el arrastre para cancelar.
-- Si arrastras con un dedo, se mueve el lienzo.
 - Una selección activa limita el degradado, y se respeta **Bloquear alfa**.
 - En la Máscara rápida o en una capa de selección, el degradado va a la máscara de selección.
 - Cada degradado es un paso de deshacer.

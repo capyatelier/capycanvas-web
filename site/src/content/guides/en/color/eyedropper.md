@@ -17,8 +17,8 @@ Do one of the following:
 - In Sketch, select **Color Picker** on the bar at the left edge, between **Brush size slider** and **Strength slider**.
 
 To stop without picking, press **I** or select the same button again, press
-**Escape**, or choose another tool or brush. A finger tap without a hold also
-stops the Eyedropper.
+**Escape**, or choose another tool or brush. When one finger doesn't draw, a
+finger tap without a hold also stops the Eyedropper.
 
 ## Picking
 

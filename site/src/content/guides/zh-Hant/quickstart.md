@@ -27,7 +27,7 @@ related: ["start/workspaces", "start/device-support", "files/new", "files/open-s
 
 用數位筆或滑鼠在畫布上拖動。要使用其他工具，在「素描」中請選擇標題列中的**筆刷**，在「繪畫」中請選擇視窗左邊緣「工具」工具列中的工具。將工具拖到畫布上，可讓它作為[氣泡](/zh-Hant/docs/customize/bubbles/)留在那裡。
 
-> **備註**：手指不會繪畫。兩根手指在畫布上可以平移、縮放和旋轉檢視。
+> **備註**：在 iPad、iPhone 和 Android 上，首次在畫布上使用數位筆之前，一根手指可以繪畫。兩根手指在畫布上可以平移、縮放和旋轉檢視。參見[觸控手勢](/zh-Hant/docs/input/touch/)。
 
 要復原一筆，選擇**編輯 > 復原**、按 **Ctrl+Z** 或用兩根手指輕點畫布（參見[復原和重做](/zh-Hant/docs/start/undo/)）。
 

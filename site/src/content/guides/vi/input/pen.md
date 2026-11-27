@@ -4,9 +4,9 @@ description: "Các thiết lập bút trong Tùy chọn, và thao tác chạm ha
 related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-Thiết lập bút nằm trên trang **Bút và nhập liệu** của **Chỉnh sửa > Tùy chọn**.
+Thiết lập bút nằm trên trang **Bút và chuột** của **Chỉnh sửa > Tùy chọn**.
 
-![Trang Bút và nhập liệu của Tùy chọn.](shot:pen/pen-and-input)
+![Trang Bút và chuột của Tùy chọn.](shot:pen/pen-and-input)
 
 ## Lực nhấn bút
 

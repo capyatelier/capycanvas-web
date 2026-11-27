@@ -16,9 +16,7 @@ Führen Sie eine der folgenden Aktionen aus:
 - Wählen Sie in Malen und Foto **Farbpipette** in der Werkzeugleiste Werkzeuge.
 - Wählen Sie in Skizze **Farbpipette** auf der Leiste am linken Rand zwischen **Schieberegler für Pinselgröße** und **Stärkeregler**.
 
-Um ohne Aufnehmen abzubrechen, drücken Sie **I** oder wählen dieselbe Schaltfläche
-erneut aus, drücken **Escape** oder wählen ein anderes Werkzeug oder einen anderen
-Pinsel. Auch ein Tippen mit dem Finger ohne Halten beendet die Farbpipette.
+Um ohne Aufnehmen abzubrechen, drücken Sie **I** oder wählen dieselbe Schaltfläche erneut aus, drücken **Escape** oder wählen ein anderes Werkzeug oder einen anderen Pinsel. Wenn ein Finger nicht zeichnet, beendet auch ein Tippen mit dem Finger ohne Halten die Farbpipette.
 
 ## Aufnehmen
 

@@ -43,7 +43,7 @@ Sie **Fußleiste anzeigen** unter **Fenster > Titelleiste anpassen…**.
 Der Arbeitsbereich Malen dockt Bedienfelder in Spalten auf beiden Seiten der Leinwand an.
 
 1. **Capy (Zen-Modus)** und die Menüs, in der Mitte der Titel der Zeichnung, dann der Arbeitsbereichswechsler und **Einstellungen**. Im Web-Editor kommt **Vollbild** hinzu.
-2. **Neu…**, **Öffnen…**, **Speichern**, **Rückgängig**, **Wiederholen**, **Gesamte Ebene leeren**, **Auswahl füllen**, **Transformieren** und **Ansicht horizontal spiegeln**.
+2. **Neu…**, **Öffnen…**, **Speichern**, **Rückgängig**, **Wiederholen**, **Gesamte Ebene leeren**, **Auswahl füllen**, **Transformieren** und **Ansicht horizontal spiegeln**. Außer in der macOS-App steht **Mit einem Finger ziehen** an erster Stelle.
 3. **Feder**, **Bleistift**, **Malpinsel**, **Radierer**, **Airbrush**, **Dekoration**, **Mischen**, **Verflüssigen**, die Auswahlwerkzeuge, **Füllung**, **Farbverlauf**, **Vorgang**, **Form**, **Lineal**, **Hand**, **Zoom**, **Farbpipette** und **Pinselfarbe**.
 4. Registerkarten für **Werkzeugsatz** und **Diagnose**, für **Werkzeug** und **Pinselgröße** sowie für **Farbe** und **Paletten**.
 5. Symbole für **Navigator** und **Softproof**, für **Eigenschaften** und **Filter** sowie für **Ebenen**.

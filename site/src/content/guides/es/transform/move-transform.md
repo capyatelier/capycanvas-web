@@ -88,7 +88,7 @@ En **Deformar**:
 En todos los modos:
 
 - Las teclas de flecha desplazan el cuadro 1 px, y 10 px con **Mayús**.
-- En una pantalla táctil, un dedo sobre un tirador o dentro del cuadro lo arrastra. Un dedo en cualquier otro sitio mueve la vista.
+- En una pantalla táctil, un dedo sobre un tirador o dentro del cuadro lo arrastra.
 
 ## Barra de transformación
 

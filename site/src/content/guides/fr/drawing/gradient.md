@@ -21,7 +21,6 @@ pointeur, et le dégradé est peint quand vous relâchez.
 
 - Le dégradé couvre tout le calque, avec la première couleur avant le point de départ et la dernière au-delà du point d’arrivée.
 - Appuyez sur **Échap** pendant le glissement pour annuler.
-- Un glissement avec un doigt déplace la toile à la place.
 - Une sélection active limite le dégradé, et le **Verrouillage alpha** est respecté.
 - En Masque rapide ou sur un calque de sélection, le dégradé va dans le masque de sélection.
 - Chaque dégradé est une étape d’annulation.

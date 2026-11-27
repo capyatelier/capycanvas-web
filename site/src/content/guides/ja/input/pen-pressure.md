@@ -8,7 +8,7 @@ related: ["input/pen", "preferences", "brushes/dry-media"]
 
 ## 筆圧調整を開く
 
-[環境設定](/ja/docs/preferences/)を開いて**ペンと入力**を選び、**筆圧**の横の**調整…** を選択します。
+[環境設定](/ja/docs/preferences/)を開いて**ペンとマウス**を選び、**筆圧**の横の**調整…** を選択します。
 
 ![カーブ、硬くと柔らかく、リセット、キャンセル、適用がある筆圧ダイアログ。](shot:pen/pressure-calibration)
 

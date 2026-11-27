@@ -4,9 +4,9 @@ description: "環境設定のペンの設定と、Apple Pencilのダブルタッ
 related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-ペンの設定は**編集 > 環境設定**の**ペンと入力**ページにあります。
+ペンの設定は**編集 > 環境設定**の**ペンとマウス**ページにあります。
 
-![環境設定の「ペンと入力」ページ。](shot:pen/pen-and-input)
+![環境設定の「ペンとマウス」ページ。](shot:pen/pen-and-input)
 
 ## 筆圧
 

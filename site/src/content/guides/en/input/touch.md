@@ -4,24 +4,40 @@ description: "What fingers do on the canvas, and the finger taps you can assign.
 related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
-You can move the canvas, pick colors and run commands with your fingers on a
+You can draw, move the canvas, pick colors and run commands with your fingers on a
 touchscreen.
 
-> **Memo:** Fingers never draw. Use a pen or a mouse to draw on the canvas.
+## One-finger drag
+
+**One-finger drag** sets what dragging one finger on the canvas does.
+
+| Choice | One finger |
+| --- | --- |
+| **Auto** | Draws on iPad, iPhone and Android until you first use a pen on the canvas. After that, and on other devices, it doesn't draw or scroll. |
+| **Draw** | Uses the current tool, as a pen does. |
+| **Move canvas** | Scrolls the canvas. |
+| **Off** | Doesn't draw or scroll. |
+
+**Auto** is the default. To change it, do one of the following:
+
+- In **Preferences**, open the **Touch** page and choose **One-finger drag**.
+- In Paint, select **One-finger drag** at the start of the Commands toolbar.
+
+The macOS app doesn't have **One-finger drag**.
 
 ## Moving the canvas
 
 Drag the canvas with two fingers to scroll. Pinch with two fingers to zoom, and
-rotate two fingers to rotate the canvas. With the **Hand** tool, one finger also
-scrolls.
+rotate two fingers to rotate the canvas. With the **Hand** tool, or with
+**One-finger drag** set to **Move canvas**, one finger also scrolls.
 
 **Lock rotation** and **Lock zoom** in the zoom menu at the bottom of the canvas
 stop pinching from rotating or zooming the view. See [Viewing the
 canvas](/docs/start/canvas/).
 
-While the pen is on the canvas, fingers don't move the canvas. A finger on a
-transform or crop handle, or on the source of the **Clone Stamp**, drags the
-handle or the source instead.
+While the pen is on the canvas, fingers don't move the canvas. Unless
+**One-finger drag** is **Move canvas**, a finger on a transform or crop handle,
+or on the source of the **Clone Stamp**, drags the handle or the source.
 
 **Snap rotation** is on by default and holds the view near quarter turns. Turn it off in **View > Snap rotation** for free rotation.
 
@@ -67,7 +83,7 @@ the view, the view moves back.
 
 To change a tap:
 
-1. Choose **Edit > Preferences** and select **Pen & Input**.
+1. Choose **Edit > Preferences** and select **Touch**.
 2. Select the tap under **Touch gestures**.
 3. Choose an action, or **Nothing** to turn the tap off.
 

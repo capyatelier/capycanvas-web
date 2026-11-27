@@ -4,9 +4,9 @@ description: "Les réglages du stylet dans les Préférences, le double toucher 
 related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-Les réglages du stylet sont sur la page **Stylet et saisie** de **Édition > Préférences**.
+Les réglages du stylet sont sur la page **Stylet et souris** de **Édition > Préférences**.
 
-![La page Stylet et saisie des Préférences.](shot:pen/pen-and-input)
+![La page Stylet et souris des Préférences.](shot:pen/pen-and-input)
 
 ## Pression du stylet
 

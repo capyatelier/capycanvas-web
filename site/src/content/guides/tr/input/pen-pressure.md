@@ -8,7 +8,7 @@ Kalem basıncını fırçalar kullanmadan önce ayarlayabilirsiniz.
 
 ## Basınç ayarını açma
 
-[Tercihleri](/tr/docs/preferences/) açın, **Kalem ve giriş** seçin ve **Kalem basıncı** yanındaki **Ayarla…** seçeneğini seçin.
+[Tercihleri](/tr/docs/preferences/) açın, **Kalem ve fare** seçin ve **Kalem basıncı** yanındaki **Ayarla…** seçeneğini seçin.
 
 ![Eğrisi, Daha sert ve Daha hafif, Sıfırla, İptal ve Uygula ile Kalem basıncı iletişim kutusu.](shot:pen/pressure-calibration)
 

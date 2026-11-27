@@ -16,9 +16,7 @@ Esegui una delle seguenti operazioni:
 - In Pittura e Foto, seleziona **Contagocce** nella barra strumenti Strumenti.
 - In Schizzo, seleziona **Contagocce** nella barra sul bordo sinistro, tra **Cursore dimensioni pennello** e **Cursore intensità**.
 
-Per uscire senza prelevare, premi **I** o seleziona di nuovo lo stesso pulsante,
-premi **Esc**, oppure scegli un altro strumento o pennello. Anche un tocco con il
-dito senza tenerlo premuto chiude il Contagocce.
+Per uscire senza prelevare, premi **I** o seleziona di nuovo lo stesso pulsante, premi **Esc**, oppure scegli un altro strumento o pennello. Quando un dito non disegna, anche un tocco con il dito senza tenerlo premuto chiude il Contagocce.
 
 ## Prelevare
 

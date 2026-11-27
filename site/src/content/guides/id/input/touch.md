@@ -4,23 +4,34 @@ description: "Fungsi jari di kanvas, dan ketukan jari yang dapat Anda tetapkan."
 related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
-Anda dapat menggerakkan kanvas, mengambil warna, dan menjalankan perintah dengan jari di
-layar sentuh.
+Anda dapat menggambar, menggerakkan kanvas, mengambil warna, dan menjalankan perintah dengan jari di layar sentuh.
 
-> **Catatan:** Jari tidak pernah menggambar. Gunakan pena atau tetikus untuk menggambar di kanvas.
+## Seret satu jari
+
+**Seret satu jari** menentukan apa yang terjadi saat Anda menyeret satu jari di kanvas.
+
+| Pilihan | Satu jari |
+| --- | --- |
+| **Otomatis** | Menggambar di iPad, iPhone, dan Android sampai Anda pertama kali memakai pena di kanvas. Setelah itu, dan di perangkat lain, jari tidak menggambar atau menggulir. |
+| **Menggambar** | Memakai alat yang sedang aktif, seperti pena. |
+| **Geser kanvas** | Menggulir kanvas. |
+| **Nonaktif** | Tidak menggambar atau menggulir. |
+
+**Otomatis** adalah pengaturan bawaan. Untuk mengubahnya, lakukan salah satu langkah berikut:
+
+- Di **Preferensi**, buka halaman **Sentuh** lalu pilih **Seret satu jari**.
+- Di Lukis, pilih **Seret satu jari** di awal bilah alat Perintah.
+
+Aplikasi macOS tidak memiliki **Seret satu jari**.
 
 ## Menggerakkan kanvas
 
-Seret kanvas dengan dua jari untuk menggulir. Cubit dengan dua jari untuk
-memperbesar/memperkecil, dan putar dua jari untuk memutar kanvas. Dengan alat **Tangan**,
-satu jari juga menggulir.
+Seret kanvas dengan dua jari untuk menggulir. Cubit dengan dua jari untuk memperbesar/memperkecil, dan putar dua jari untuk memutar kanvas. Dengan alat **Tangan**, atau jika **Seret satu jari** disetel ke **Geser kanvas**, satu jari juga menggulir.
 
 **Kunci rotasi** dan **Kunci zoom** di menu zum di bagian bawah kanvas mencegah cubitan
 memutar atau mengubah zum tampilan. Lihat [Melihat kanvas](/id/docs/start/canvas/).
 
-Selama pena berada di kanvas, jari tidak menggerakkan kanvas. Jari pada gagang
-transformasi atau pemangkasan, atau pada sumber **Stempel Klon**, akan menyeret gagang
-atau sumber itu.
+Selama pena berada di kanvas, jari tidak menggerakkan kanvas. Kecuali **Seret satu jari** disetel ke **Geser kanvas**, jari pada gagang transformasi atau pemangkasan, atau pada sumber **Stempel Klon**, akan menyeret gagang atau sumber itu.
 
 **Lekatkan rotasi** aktif secara default dan mempertahankan tampilan hampir seperempat putaran. Matikan di **Tampilan > Lekatkan rotasi** untuk rotasi bebas.
 
@@ -68,7 +79,7 @@ Jika ketukan menggeser tampilan, tampilan kembali ke posisi semula.
 
 Untuk mengubah ketukan:
 
-1. Pilih **Edit > Preferensi** lalu pilih **Pena & Masukan**.
+1. Pilih **Edit > Preferensi** lalu pilih **Sentuh**.
 2. Pilih ketukan di bawah **Gestur sentuh**.
 3. Pilih tindakan, atau **Tidak ada** untuk menonaktifkan ketukan.
 

@@ -10,7 +10,7 @@ Vous pouvez modifier la réponse et la direction de l'inclinaison pour chaque st
 
 Effectuez l'une des opérations suivantes :
 
-- Ouvrez les [Préférences](/fr/docs/preferences/), sélectionnez **Stylet et saisie**, puis **Ajuster…** à côté de **Inclinaison du stylet**.
+- Ouvrez les [Préférences](/fr/docs/preferences/), sélectionnez **Stylet et souris**, puis **Ajuster…** à côté de **Inclinaison du stylet**.
 - Recherchez **Inclinaison du stylet…** dans la recherche de commandes.
 
 Utilisez votre stylet sur la toile pour sélectionner l'appareil à calibrer. La boîte de dialogue affiche le nom de l'appareil et sa direction d'inclinaison. Chaque stylet conserve son propre calibrage.

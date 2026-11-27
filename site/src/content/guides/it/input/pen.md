@@ -4,9 +4,9 @@ description: "Le impostazioni della penna nelle Preferenze, e il doppio tocco e 
 related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-Le impostazioni della penna si trovano nella pagina **Penna e input** di **Modifica > Preferenze**.
+Le impostazioni della penna si trovano nella pagina **Penna e mouse** di **Modifica > Preferenze**.
 
-![La pagina Penna e input delle Preferenze.](shot:pen/pen-and-input)
+![La pagina Penna e mouse delle Preferenze.](shot:pen/pen-and-input)
 
 ## Pressione della penna
 

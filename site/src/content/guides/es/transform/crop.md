@@ -25,9 +25,6 @@ inferior del lienzo.
 - Arrastra un tirador de esquina o de lado para cambiar el tamaño del marco. Mantén pulsada **Mayús** para conservar sus proporciones, o **Alt** para cambiar el tamaño desde el centro.
 - Arrastra el marco más allá del borde del lienzo para añadir lienzo transparente.
 
-En una pantalla táctil, solo los tiradores responden a un dedo. Un dedo dentro
-del marco mueve la vista.
-
 Para terminar, selecciona **Aplicar recorte** o pulsa **Intro**. **Cancelar recorte**, **Escape**
 y **Deshacer** descartan el recorte. En los dos casos, vuelve la herramienta que
 usabas antes.

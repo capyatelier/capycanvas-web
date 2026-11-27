@@ -115,7 +115,7 @@ pode ser recortado, ser base de recorte nem ter filtros anexados. Não é possí
 mudar Atravessar em um grupo bloqueado.
 
 Os novos grupos usam Normal, a menos que **Usar Atravessar para novos grupos**
-esteja ativado na página **Tela** das [Preferências](/pt-BR/docs/preferences/).
+esteja ativado na página **Cor** das [Preferências](/pt-BR/docs/preferences/).
 Agrupar camadas que usam um modo de mesclagem diferente de Normal, ou um filtro
 em uma camada própria, deixa o novo grupo com Atravessar.
 

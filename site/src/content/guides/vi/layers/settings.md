@@ -108,7 +108,7 @@ làm lớp nền cắt và không thể gắn bộ lọc. Bạn không thể đ�
 nhóm đã khóa.
 
 Nhóm mới dùng Bình thường, trừ khi **Dùng Xuyên qua cho nhóm mới** được bật trong
-trang **Khung vẽ** của [Tùy chọn](/vi/docs/preferences/). Khi bạn nhóm các lớp dùng
+trang **Màu** của [Tùy chọn](/vi/docs/preferences/). Khi bạn nhóm các lớp dùng
 chế độ hòa trộn khác Bình thường, hoặc một bộ lọc nằm trên lớp riêng, nhóm mới sẽ ở
 chế độ Xuyên qua.
 

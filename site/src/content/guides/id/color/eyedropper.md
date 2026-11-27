@@ -16,9 +16,7 @@ Lakukan salah satu langkah berikut:
 - Di Lukis dan Foto, pilih **Pipet Warna** di bilah alat Alat.
 - Di Sketsa, pilih **Pemilih Warna** pada bilah di tepi kiri, di antara **Penggeser ukuran kuas** dan **Penggeser kekuatan**.
 
-Untuk berhenti tanpa mengambil warna, tekan **I** atau pilih tombol yang sama lagi, tekan
-**Escape**, atau pilih alat atau kuas lain. Ketukan jari tanpa menahan juga menghentikan
-Pipet Warna.
+Untuk berhenti tanpa mengambil warna, tekan **I** atau pilih tombol yang sama lagi, tekan **Escape**, atau pilih alat atau kuas lain. Saat jari tidak menggambar, ketukan jari tanpa menahan juga menghentikan Pipet Warna.
 
 ## Mengambil warna
 

@@ -110,7 +110,7 @@ Geçiş ayarını kapatmak grubu Normal moduna getirir. Geçiş ayarlı bir grup
 kırpılamaz, kırpma tabanı olamaz ve ona filtre iliştirilemez. Kilitli bir grupta
 Geçiş ayarını değiştiremezsiniz.
 
-[Tercihler](/tr/docs/preferences/) bölümünün **Tuval** sayfasında
+[Tercihler](/tr/docs/preferences/) bölümünün **Renk** sayfasında
 **Yeni gruplar için Geçiş modunu kullan** açık değilse yeni gruplar Normal
 modunu kullanır. Normal dışında bir karıştırma modu kullanan katmanları veya
 kendi katmanındaki bir filtreyi gruplamak, yeni grubu Geçiş yapar.

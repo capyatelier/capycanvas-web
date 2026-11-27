@@ -27,7 +27,7 @@ related: ["start/workspaces", "start/device-support", "files/new", "files/open-s
 
 用数位笔或鼠标在画布上拖动。要使用其他工具，在“素描”中请选择标题栏中的**画笔**，在“绘画”中请选择窗口左边缘“工具”工具栏中的工具。将工具拖到画布上，可让它作为[气泡](/zh/docs/customize/bubbles/)留在那里。
 
-> **备注**：手指不会绘画。两根手指在画布上可以平移、缩放和旋转视图。
+> **备注**：在 iPad、iPhone 和 Android 上，首次在画布上使用数位笔之前，一根手指可以绘画。两根手指在画布上可以平移、缩放和旋转视图。参见[触摸手势](/zh/docs/input/touch/)。
 
 要撤销一笔，选择**编辑 > 撤销**、按 **Ctrl+Z** 或用两根手指轻点画布（参见[撤销和重做](/zh/docs/start/undo/)）。
 

@@ -25,9 +25,6 @@ inferior da tela.
 - Arraste uma alça de canto ou de lado para redimensionar o quadro. Mantenha **Shift** pressionada para manter as proporções, ou **Alt** para redimensionar a partir do centro.
 - Arraste o quadro além da borda da tela para acrescentar tela transparente.
 
-Em uma tela sensível ao toque, só as alças respondem ao dedo. Um dedo dentro do
-quadro move a visualização.
-
 Para terminar, selecione **Aplicar recorte** ou pressione **Enter**. **Cancelar recorte**,
 **Escape** e **Desfazer** descartam o recorte. Nos dois casos, a ferramenta que
 você usava antes volta.

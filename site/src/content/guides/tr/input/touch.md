@@ -4,24 +4,35 @@ description: "Parmakların tuvalde yaptıkları ve atayabileceğiniz parmak doku
 related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
-Dokunmatik ekranda parmaklarınızla tuvali taşıyabilir, renk alabilir ve komut
-çalıştırabilirsiniz.
+Dokunmatik ekranda parmaklarınızla çizebilir, tuvali taşıyabilir, renk alabilir ve komut çalıştırabilirsiniz.
 
-> **Not:** Parmaklar hiçbir zaman çizmez. Tuvalde çizmek için kalem veya fare kullanın.
+## Tek parmakla sürükleme
+
+**Tek parmakla sürükleme**, tuvalde tek parmakla sürüklediğinizde ne olacağını belirler.
+
+| Seçenek | Tek parmak |
+| --- | --- |
+| **Otomatik** | Tuvalde ilk kez kalem kullanana kadar iPad, iPhone ve Android'de çizer. Bundan sonra ve diğer cihazlarda çizmez ve kaydırmaz. |
+| **Çiz** | Geçerli aracı bir kalem gibi kullanır. |
+| **Tuvali kaydır** | Tuvali kaydırır. |
+| **Kapalı** | Çizmez ve kaydırmaz. |
+
+Varsayılan değer **Otomatik**'tir. Değiştirmek için aşağıdakilerden birini yapın:
+
+- **Tercihler** iletişim kutusunda **Dokunma** sayfasını açın ve **Tek parmakla sürükleme** seçeneğini belirleyin.
+- Boyama alanında Komutlar çubuğunun başındaki **Tek parmakla sürükleme** düğmesini seçin.
+
+macOS uygulamasında **Tek parmakla sürükleme** yoktur.
 
 ## Tuvali taşıma
 
-Tuvali kaydırmak için iki parmakla sürükleyin. Yakınlaştırmak için iki parmakla
-kıstırın, tuvali döndürmek için iki parmağınızı çevirin. **El** aracıyla tek
-parmak da kaydırır.
+Tuvali kaydırmak için iki parmakla sürükleyin. Yakınlaştırmak için iki parmakla kıstırın, tuvali döndürmek için iki parmağınızı çevirin. **El** aracıyla veya **Tek parmakla sürükleme** **Tuvali kaydır** olarak ayarlıyken tek parmak da kaydırır.
 
 Tuvalin altındaki yakınlaştırma menüsünde bulunan **Döndürmeyi kilitle** ve
 **Yakınlaştırmayı kilitle**, kıstırmanın görünümü döndürmesini veya
 yakınlaştırmasını engeller. Bkz. [Tuvali görüntüleme](/tr/docs/start/canvas/).
 
-Kalem tuvaldeyken parmaklar tuvali taşımaz. Dönüştürme veya kırpma tutamacındaki
-ya da **Klonlama damgası** kaynağındaki bir parmak, bunun yerine tutamacı veya
-kaynağı sürükler.
+Kalem tuvaldeyken parmaklar tuvali taşımaz. **Tek parmakla sürükleme** **Tuvali kaydır** olarak ayarlı değilse, dönüştürme veya kırpma tutamacındaki ya da **Klonlama damgası** kaynağındaki bir parmak tutamacı veya kaynağı sürükler.
 
 **Döndürmeyi hizala** varsayılan olarak açıktır ve görünümü çeyrek dönüşe yakın tutar. Serbest dönüş için **Görünüm > Döndürmeyi hizala**'de kapatın.
 
@@ -69,7 +80,7 @@ sayılmaz. Dokunuş görünümü hareket ettirdiyse görünüm geri döner.
 
 Bir dokunuşu değiştirmek için:
 
-1. **Düzenle > Tercihler** komutunu seçin ve **Kalem ve giriş** sayfasını seçin.
+1. **Düzenle > Tercihler** komutunu seçin ve **Dokunma** sayfasını seçin.
 2. **Dokunma hareketleri** altında dokunuşu seçin.
 3. Bir eylem seçin veya dokunuşu kapatmak için **Hiçbir şey** seçeneğini seçin.
 

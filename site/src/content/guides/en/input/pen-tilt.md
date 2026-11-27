@@ -10,7 +10,7 @@ You can change the tilt response and direction for each pen.
 
 Do one of the following:
 
-- Open [Preferences](/docs/preferences/), select **Pen & Input**, then select **Adjust…** beside **Pen tilt**.
+- Open [Preferences](/docs/preferences/), select **Pen & Mouse**, then select **Adjust…** beside **Pen tilt**.
 - Search commands for **Pen tilt…**.
 
 Use your pen on the canvas to select the device to calibrate. The dialog shows the device name and its tilt direction. Each pen keeps its own calibration.

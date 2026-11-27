@@ -10,7 +10,7 @@ Puedes cambiar la respuesta y la dirección de inclinación de cada lápiz.
 
 Realiza una de estas acciones:
 
-- Abre [Preferencias](/es/docs/preferences/), selecciona **Lápiz y entrada** y después **Ajustar…** junto a **Inclinación del lápiz**.
+- Abre [Preferencias](/es/docs/preferences/), selecciona **Lápiz y ratón** y después **Ajustar…** junto a **Inclinación del lápiz**.
 - Busca **Inclinación del lápiz…** en la búsqueda de comandos.
 
 Usa el lápiz sobre el lienzo para seleccionar el dispositivo que vas a calibrar. El diálogo muestra su nombre y la dirección de inclinación. Cada lápiz conserva su propia calibración.

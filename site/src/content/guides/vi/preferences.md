@@ -1,6 +1,6 @@
 ---
 title: "Tùy chọn"
-description: "Hộp thoại Tùy chọn và thiết lập trên các trang Diện mạo, Khung vẽ, Màu, Bút và nhập liệu cùng Giới thiệu."
+description: "Hộp thoại Tùy chọn và thiết lập trên các trang Diện mạo, Màu, Cảm ứng, Bút và chuột cùng Giới thiệu."
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -89,33 +89,6 @@ Giữ nút Capy trên màn hình trong [chế độ Zen](/vi/docs/customize/zen/
 Đặt hình của nút Capy: **Nhìn lên** (mặc định), **Nhìn về phía trước**, **Tắm** hoặc
 **Ngủ**.
 
-## Khung vẽ
-
-![Thiết lập điều hướng khung vẽ.](shot:preferences/canvas-navigation)
-
-### Con lăn chuột
-
-Chọn con lăn chuột không kèm phím bổ trợ sẽ dịch chuyển hay thu phóng khung vẽ. Giữ **Ctrl** để dùng thao tác còn lại.
-
-### Xoay bằng hai ngón tay
-
-Cho phép xoắn hai ngón tay để xoay chế độ xem. Tắt để cử chỉ hai ngón tay chỉ dịch chuyển và thu phóng.
-
-### Tốc độ cuộn để di chuyển
-
-Đặt hệ số cho khoảng cách mà con lăn chuột, bàn di chuột và cần analog trái của tay
-cầm chơi game cuộn khung vẽ, từ 0.25 × đến 4.00 × (mặc định 1.00 ×).
-
-### Tốc độ cuộn để thu phóng
-
-Đặt hệ số cho việc thu phóng bằng **Ctrl** và con lăn chuột, hoặc bằng cần analog
-phải của tay cầm chơi game, từ 0.25 × đến 4.00 × (mặc định 1.00 ×).
-
-### Dùng Xuyên qua cho nhóm mới
-
-Đặt nhóm mới thành [Xuyên qua](/vi/docs/layers/blend-modes/). Tắt theo mặc định. Các
-nhóm có sẵn không thay đổi.
-
 ## Màu
 
 Các thiết lập **Mở ảnh** áp dụng cho ảnh bạn mở.
@@ -137,9 +110,44 @@ sơ màu giữ hồ sơ màu của nó.
 Mở thư viện hồ sơ màu. Xem
 [Không gian màu, độ sâu bit và hòa trộn](/vi/docs/color-management/color-spaces/).
 
-## Bút và nhập liệu
+### Dùng Xuyên qua cho nhóm mới
 
-Các cài đặt trên trang này được mô tả trong [Bút](/vi/docs/input/pen/), [Độ nghiêng bút](/vi/docs/input/pen-tilt/) và [Cử chỉ chạm](/vi/docs/input/touch/).
+Đặt nhóm mới thành [Xuyên qua](/vi/docs/layers/blend-modes/). Tắt theo mặc định. Các
+nhóm có sẵn không thay đổi.
+
+## Cảm ứng
+
+**Kéo một ngón** và các thao tác chạm ngón tay trong **Cử chỉ chạm** được mô tả trong [Cử chỉ chạm](/vi/docs/input/touch/). Ứng dụng macOS không có **Kéo một ngón**.
+
+### Xoay bằng hai ngón tay
+
+Cho phép xoắn hai ngón tay để xoay chế độ xem. Tắt để cử chỉ hai ngón tay chỉ dịch chuyển và thu phóng.
+
+### Chụm nhanh để vừa khung
+
+Chụm nhanh hai ngón tay vào sẽ hiện toàn bộ bản vẽ ở giữa, không xoay hay lật. Bật theo mặc định.
+
+### Mở hai ngón tay để khôi phục góc nhìn
+
+Ngay sau khi chụm nhanh để vừa khung, mở nhanh hai ngón tay ra sẽ trở về góc nhìn trước đó. Bật theo mặc định.
+
+## Bút và chuột
+
+Các cài đặt bút trên trang này được mô tả trong [Bút](/vi/docs/input/pen/) và [Độ nghiêng bút](/vi/docs/input/pen-tilt/).
+
+### Con lăn chuột
+
+Chọn con lăn chuột không kèm phím bổ trợ sẽ dịch chuyển hay thu phóng khung vẽ. Giữ **Ctrl** để dùng thao tác còn lại.
+
+### Tốc độ cuộn để di chuyển
+
+Đặt hệ số cho khoảng cách mà con lăn chuột, bàn di chuột và cần analog trái của tay
+cầm chơi game cuộn khung vẽ, từ 0.25 × đến 4.00 × (mặc định 1.00 ×).
+
+### Tốc độ cuộn để thu phóng
+
+Đặt hệ số cho việc thu phóng bằng **Ctrl** và con lăn chuột, hoặc bằng cần analog
+phải của tay cầm chơi game, từ 0.25 × đến 4.00 × (mặc định 1.00 ×).
 
 ## Phím tắt
 

@@ -16,8 +16,7 @@ Thực hiện một trong các cách sau:
 - Trong Vẽ và Ảnh, chọn **Ống hút màu** trên Thanh công cụ vẽ.
 - Trong Phác thảo, chọn **Bộ chọn màu** trên thanh ở cạnh trái, giữa **Thanh trượt kích thước cọ** và **Thanh trượt cường độ**.
 
-Để dừng mà không lấy màu, nhấn **I** hoặc chọn lại cùng nút đó, nhấn **Escape**, hoặc
-chọn công cụ hay cọ khác. Chạm ngón tay mà không giữ cũng dừng Ống hút màu.
+Để dừng mà không lấy màu, nhấn **I** hoặc chọn lại cùng nút đó, nhấn **Escape**, hoặc chọn công cụ hay cọ khác. Khi ngón tay không vẽ, chạm ngón tay mà không giữ cũng dừng Ống hút màu.
 
 ## Lấy màu
 

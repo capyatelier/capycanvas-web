@@ -56,9 +56,7 @@ Faça uma das seguintes ações:
 - Mantenha **Alt** pressionada e clique no ponto de onde quer copiar.
 - Selecione **Definir origem** e depois clique.
 
-Até você defini-la, a origem fica no centro da visualização. Arraste o disco
-para mover a origem. Um dedo pode arrastar o disco, mas nunca define a origem.
-Enquanto você pinta, o disco acompanha o ponto que está sendo copiado.
+Até você defini-la, a origem fica no centro da visualização. Arraste o disco para mover a origem. Um dedo pode arrastar o disco, mas só define a origem quando desenha. Enquanto você pinta, o disco acompanha o ponto que está sendo copiado.
 
 **Pincel de correção pontual** encontra a própria origem e não tem disco.
 

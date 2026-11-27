@@ -10,7 +10,7 @@ Her kalemin eğim tepkisini ve yönünü değiştirebilirsiniz.
 
 Aşağıdakilerden birini yapın:
 
-- [Tercihler](/tr/docs/preferences/) penceresinde **Kalem ve giriş** sayfasını açın ve **Kalem eğimi** yanındaki **Ayarla…** düğmesini seçin.
+- [Tercihler](/tr/docs/preferences/) penceresinde **Kalem ve fare** sayfasını açın ve **Kalem eğimi** yanındaki **Ayarla…** düğmesini seçin.
 - Komut aramasında **Kalem eğimi…** arayın.
 
 Kalibre edilecek cihazı seçmek için kaleminizi tuval üzerinde kullanın. İletişim kutusunda cihazın adı ve eğim yönü gösterilir. Her kalem kendi kalibrasyonunu korur.

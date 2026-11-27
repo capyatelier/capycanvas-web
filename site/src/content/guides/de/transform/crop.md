@@ -25,9 +25,6 @@ abgedunkelt, und am unteren Rand der Leinwand erscheint die
 - Ziehen Sie einen Eck- oder Kantengriff, um die Größe des Rahmens zu ändern. Halten Sie **Umschalt** gedrückt, um seine Proportionen zu erhalten, oder **Alt**, um die Größe von der Mitte aus zu ändern.
 - Ziehen Sie den Rahmen über den Leinwandrand hinaus, um transparente Leinwand hinzuzufügen.
 
-Auf einem Touchscreen reagieren nur die Griffe auf einen Finger. Ein Finger
-innerhalb des Rahmens bewegt die Ansicht.
-
 Zum Abschließen wählen Sie **Zuschnitt anwenden** aus oder drücken Sie **Eingabe**.
 **Zuschnitt abbrechen**, **Escape** und **Rückgängig** verwerfen den Zuschnitt. In beiden
 Fällen kehrt das zuvor verwendete Werkzeug zurück.

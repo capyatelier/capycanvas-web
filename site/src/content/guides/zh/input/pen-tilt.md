@@ -10,7 +10,7 @@ related: ["input/pen", "input/pen-pressure", "brushes/dry-media", "preferences"]
 
 执行以下任一操作：
 
-- 打开[偏好设置](/zh/docs/preferences/)，选择 **笔与输入**，再选择 **笔倾斜** 旁的 **调整…**。
+- 打开[偏好设置](/zh/docs/preferences/)，选择 **笔与鼠标**，再选择 **笔倾斜** 旁的 **调整…**。
 - 在命令搜索中搜索 **笔倾斜…**。
 
 在画布上使用笔，选择要校准的设备。对话框显示设备名称和倾斜方向。每支笔分别保存校准。

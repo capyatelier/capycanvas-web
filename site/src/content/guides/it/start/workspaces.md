@@ -44,7 +44,7 @@ attiva **Mostra piè di pagina** in **Finestra > Personalizza barra del titolo�
 Pittura ancora i pannelli in colonne su entrambi i lati della tela.
 
 1. **Capy (modalità Zen)** e i menu, il titolo del disegno al centro, poi il selettore dell'area di lavoro e **Impostazioni**. L'editor web aggiunge **Schermo intero**.
-2. **Nuovo…**, **Apri…**, **Salva**, **Annulla**, **Ripeti**, **Svuota intero livello**, **Riempi selezione**, **Trasforma** e **Rifletti vista orizzontalmente**.
+2. **Nuovo…**, **Apri…**, **Salva**, **Annulla**, **Ripeti**, **Svuota intero livello**, **Riempi selezione**, **Trasforma** e **Rifletti vista orizzontalmente**. Tranne che nell'app per macOS, **Trascinamento con un dito** viene per primo.
 3. **Penna**, **Matita**, **Pennello**, **Gomma**, **Aerografo**, **Decorazione**, **Sfuma**, **Fluidifica**, gli strumenti di selezione, **Riempi**, **Sfumatura**, **Operazione**, **Forma**, **Righello**, **Mano**, **Zoom**, **Contagocce** e **Colore pennello**.
 4. Schede per **Set di strumenti** e **Diagnostica**, per **Strumento** e **Dimensioni pennello**, e per **Colore** e **Tavolozze**.
 5. Icone per **Navigatore** e **Prova colore**, per **Proprietà** e **Filtri**, e per **Livelli**.

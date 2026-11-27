@@ -1,6 +1,6 @@
 ---
 title: "Preferensi"
-description: "Dialog Preferensi dan pengaturan di halaman Tampilan, Kanvas, Warna, Pena & Masukan, dan Tentang."
+description: "Dialog Preferensi dan pengaturan di halaman Tampilan, Warna, Sentuh, Pena & Mouse, dan Tentang."
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -90,33 +90,6 @@ secara bawaan.
 Mengatur gambar tombol Capy: **Menengadah** (bawaan), **Menghadap depan**, **Mandi**,
 atau **Tidur**.
 
-## Kanvas
-
-![Pengaturan navigasi kanvas.](shot:preferences/canvas-navigation)
-
-### Roda mouse
-
-Pilih apakah roda mouse tanpa tombol pengubah menggeser atau menzum kanvas. Menahan **Ctrl** menggunakan tindakan lainnya.
-
-### Putar dengan dua jari
-
-Memungkinkan putaran dua jari memutar tampilan. Matikan untuk membatasi gerakan dua jari ke geser dan zum.
-
-### Kecepatan geser saat menggulir
-
-Mengatur skala seberapa jauh roda tetikus, trackpad, dan stik kiri pengontrol game
-menggulir kanvas, dari 0.25 × hingga 4.00 × (bawaan 1.00 ×).
-
-### Kecepatan zum saat menggulir
-
-Mengatur skala zum dengan **Ctrl** dan roda tetikus, atau dengan stik kanan pengontrol
-game, dari 0.25 × hingga 4.00 × (bawaan 1.00 ×).
-
-### Gunakan Lewat Langsung untuk grup baru
-
-Mengatur grup baru ke [Lewat Langsung](/id/docs/layers/blend-modes/). Nonaktif secara
-bawaan. Grup yang sudah ada tidak berubah.
-
 ## Warna
 
 Pengaturan **Membuka foto** berlaku untuk foto yang Anda buka.
@@ -138,9 +111,44 @@ Mengatur cara foto tanpa profil warna dibuka: **Anggap sRGB** (bawaan) atau
 Membuka pustaka profil warna. Lihat
 [Ruang warna, kedalaman bit, dan pembauran](/id/docs/color-management/color-spaces/).
 
-## Pena & Masukan
+### Gunakan Lewat Langsung untuk grup baru
 
-Pengaturan pada halaman ini dijelaskan dalam [Pena](/id/docs/input/pen/), [Kemiringan pena](/id/docs/input/pen-tilt/), dan [Gerakan sentuh](/id/docs/input/touch/).
+Mengatur grup baru ke [Lewat Langsung](/id/docs/layers/blend-modes/). Nonaktif secara
+bawaan. Grup yang sudah ada tidak berubah.
+
+## Sentuh
+
+**Seret satu jari** dan ketukan jari di bawah **Gestur sentuh** dijelaskan dalam [Gerakan sentuh](/id/docs/input/touch/). Aplikasi macOS tidak memiliki **Seret satu jari**.
+
+### Putar dengan dua jari
+
+Memungkinkan putaran dua jari memutar tampilan. Matikan untuk membatasi gerakan dua jari ke geser dan zum.
+
+### Cubit cepat untuk menyesuaikan
+
+Cubitan cepat ke dalam menampilkan seluruh gambar di tengah, tanpa rotasi atau pembalikan. Aktif secara bawaan.
+
+### Renggangkan untuk memulihkan tampilan
+
+Tepat setelah cubitan cepat untuk menyesuaikan, merenggangkan dua jari dengan cepat mengembalikan tampilan sebelumnya. Aktif secara bawaan.
+
+## Pena & Mouse
+
+Pengaturan pena pada halaman ini dijelaskan dalam [Pena](/id/docs/input/pen/) dan [Kemiringan pena](/id/docs/input/pen-tilt/).
+
+### Roda mouse
+
+Pilih apakah roda mouse tanpa tombol pengubah menggeser atau menzum kanvas. Menahan **Ctrl** menggunakan tindakan lainnya.
+
+### Kecepatan geser saat menggulir
+
+Mengatur skala seberapa jauh roda tetikus, trackpad, dan stik kiri pengontrol game
+menggulir kanvas, dari 0.25 × hingga 4.00 × (bawaan 1.00 ×).
+
+### Kecepatan zum saat menggulir
+
+Mengatur skala zum dengan **Ctrl** dan roda tetikus, atau dengan stik kanan pengontrol
+game, dari 0.25 × hingga 4.00 × (bawaan 1.00 ×).
 
 ## Pintasan Papan Ketik
 

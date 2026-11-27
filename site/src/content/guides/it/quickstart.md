@@ -31,7 +31,7 @@ seleziona **Pennello** nella barra del titolo in Schizzo, oppure lo strumento ne
 barra strumenti Strumenti sul bordo sinistro in Pittura. Trascina uno strumento
 sulla tela per tenerlo lì come [bolla](/it/docs/customize/bubbles/).
 
-> **Nota:** le dita non disegnano mai. Con due dita sulla tela sposti, ingrandisci e ruoti la vista.
+> **Nota:** su iPad, iPhone e Android, un dito disegna finché non usi per la prima volta una penna sulla tela. Con due dita sulla tela sposti, ingrandisci e ruoti la vista. Vedi [Movimenti tattili](/it/docs/input/touch/).
 
 Per annullare un tratto, scegli **Modifica > Annulla**, premi **Ctrl+Z** oppure
 tocca la tela con due dita (vedi [Annullare e ripetere](/it/docs/start/undo/)).

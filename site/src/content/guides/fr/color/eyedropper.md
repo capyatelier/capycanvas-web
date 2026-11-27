@@ -16,9 +16,7 @@ Effectuez l’une des opérations suivantes :
 - Dans Peinture et Photo, sélectionnez **Pipette** dans la barre Outils.
 - Dans Croquis, sélectionnez **Pipette** sur la barre du bord gauche, entre **Curseur de taille du pinceau** et **Curseur d’intensité**.
 
-Pour arrêter sans prélever, appuyez sur **I** ou sélectionnez de nouveau le même
-bouton, appuyez sur **Échap**, ou choisissez un autre outil ou un autre pinceau.
-Un toucher bref du doigt, sans maintien, arrête aussi la Pipette.
+Pour arrêter sans prélever, appuyez sur **I** ou sélectionnez de nouveau le même bouton, appuyez sur **Échap**, ou choisissez un autre outil ou un autre pinceau. Quand un doigt ne dessine pas, un toucher bref du doigt, sans maintien, arrête aussi la Pipette.
 
 ## Prélever
 

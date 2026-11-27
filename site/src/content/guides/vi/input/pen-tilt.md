@@ -10,7 +10,7 @@ Bạn có thể thay đổi phản ứng nghiêng và hướng cho mỗi cây b�
 
 Thực hiện một trong những thao tác sau:
 
-- Mở [Tùy chọn](/vi/docs/preferences/), chọn **Bút và nhập liệu**, rồi chọn **Điều chỉnh…** bên cạnh **Độ nghiêng bút**.
+- Mở [Tùy chọn](/vi/docs/preferences/), chọn **Bút và chuột**, rồi chọn **Điều chỉnh…** bên cạnh **Độ nghiêng bút**.
 - Tìm **Độ nghiêng bút…** trong phần tìm kiếm lệnh.
 
 Sử dụng bút của bạn trên khung vẽ để chọn thiết bị cần hiệu chỉnh. Hộp thoại hiển thị tên thiết bị và hướng nghiêng của thiết bị. Mỗi cây bút giữ hiệu chuẩn riêng của mình.

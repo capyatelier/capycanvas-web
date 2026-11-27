@@ -57,9 +57,7 @@ Thực hiện một trong các cách sau:
 - Giữ **Alt** và nhấp vào chỗ bạn muốn sao chép.
 - Chọn **Đặt nguồn**, rồi nhấp.
 
-Khi chưa được đặt, nguồn nằm ở giữa khung nhìn. Kéo vùng tròn để di chuyển nguồn.
-Ngón tay kéo được vùng tròn nhưng không bao giờ đặt được nguồn. Trong lúc bạn vẽ,
-vùng tròn đi theo điểm đang được sao chép.
+Khi chưa được đặt, nguồn nằm ở giữa khung nhìn. Kéo vùng tròn để di chuyển nguồn. Ngón tay kéo được vùng tròn, nhưng chỉ đặt được nguồn khi ngón tay đang vẽ. Trong lúc bạn vẽ, vùng tròn đi theo điểm đang được sao chép.
 
 **Cọ phục hồi điểm** tự tìm nguồn và không có vùng tròn nguồn.
 

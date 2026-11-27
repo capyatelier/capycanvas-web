@@ -25,9 +25,6 @@ bordo inferiore della tela.
 - Trascina una maniglia d'angolo o di lato per ridimensionare la cornice. Tieni premuto **Maiusc** per mantenerne le proporzioni, o **Alt** per ridimensionarla dal centro.
 - Trascina la cornice oltre il bordo della tela per aggiungere tela trasparente.
 
-Su uno schermo touch, solo le maniglie rispondono a un dito. Un dito all'interno
-della cornice sposta la vista.
-
 Per terminare, seleziona **Applica ritaglio** o premi **Invio**. **Annulla ritaglio**, **Escape**
 e **Annulla** scartano il ritaglio. In
 entrambi i casi, torna lo strumento usato in precedenza.

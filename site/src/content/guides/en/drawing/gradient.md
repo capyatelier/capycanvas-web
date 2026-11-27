@@ -21,7 +21,6 @@ the gradient paints when you release.
 
 - The gradient covers the whole layer, with the first color before the start point and the last color past the end point.
 - Press **Escape** during the drag to cancel.
-- A drag with a finger moves the canvas instead.
 - An active selection limits the gradient, and **Alpha lock** is respected.
 - In Quick Mask or on a selection layer, the gradient goes into the selection mask.
 - Each gradient is one undo step.

@@ -1,6 +1,6 @@
 ---
 title: "Preferências"
-description: "O diálogo Preferências e os ajustes das páginas Aparência, Tela, Cor, Caneta e entrada e Sobre."
+description: "O diálogo Preferências e os ajustes das páginas Aparência, Cor, Toque, Caneta e mouse e Sobre."
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -92,33 +92,6 @@ padrão.
 Define a imagem do botão Capy: **Olhando para cima** (o padrão), **Olhando para
 frente**, **Tomando banho** ou **Dormindo**.
 
-## Tela
-
-![Ajustes de navegação da tela.](shot:preferences/canvas-navigation)
-
-### Roda do mouse
-
-Escolha se a roda do mouse sem modificadores desloca a tela ou altera o zoom. Manter **Ctrl** pressionado usa a outra ação.
-
-### Girar com dois dedos
-
-Permite girar a visualização ao girar dois dedos. Desative para limitar os gestos de dois dedos ao deslocamento e ao zoom.
-
-### Velocidade de deslocamento com rolagem
-
-Define a escala do deslocamento da tela com a roda do mouse, o trackpad e o
-analógico esquerdo de um controle de jogo, de 0,25 × a 4,00 × (padrão 1,00 ×).
-
-### Velocidade de zoom com rolagem
-
-Define a escala do zoom com **Ctrl** e a roda do mouse, ou com o analógico direito
-de um controle de jogo, de 0,25 × a 4,00 × (padrão 1,00 ×).
-
-### Usar Atravessar para novos grupos
-
-Define os novos grupos como [Atravessar](/pt-BR/docs/layers/blend-modes/).
-Desativado por padrão. Os grupos existentes não mudam.
-
 ## Cor
 
 As configurações de **Abertura de fotos** valem para as fotos que você abrir.
@@ -141,9 +114,44 @@ Define como abrem as fotos sem perfil de cor: **Assumir sRGB** (o padrão) ou
 Abre a biblioteca de perfis de cor. Consulte [Espaço de cores, profundidade de
 bits e mesclagem](/pt-BR/docs/color-management/color-spaces/).
 
-## Caneta e entrada
+### Usar Atravessar para novos grupos
 
-As configurações nesta página estão descritas em [Caneta](/pt-BR/docs/input/pen/), [Inclinação da caneta](/pt-BR/docs/input/pen-tilt/) e [Gestos de toque](/pt-BR/docs/input/touch/).
+Define os novos grupos como [Atravessar](/pt-BR/docs/layers/blend-modes/).
+Desativado por padrão. Os grupos existentes não mudam.
+
+## Toque
+
+**Arrastar com um dedo** e os toques com os dedos em **Gestos de toque** estão descritos em [Gestos de toque](/pt-BR/docs/input/touch/). O aplicativo para macOS não tem **Arrastar com um dedo**.
+
+### Girar com dois dedos
+
+Permite girar a visualização ao girar dois dedos. Desative para limitar os gestos de dois dedos ao deslocamento e ao zoom.
+
+### Pinçar rápido para ajustar
+
+Um pinçamento rápido para dentro mostra o desenho inteiro, centralizado, sem rotação nem inversão. Ligado por padrão.
+
+### Afastar os dedos para restaurar a vista
+
+Logo após um pinçamento rápido para ajustar, afastar os dedos rapidamente volta à visualização anterior. Ligado por padrão.
+
+## Caneta e mouse
+
+As configurações da caneta nesta página estão descritas em [Caneta](/pt-BR/docs/input/pen/) e [Inclinação da caneta](/pt-BR/docs/input/pen-tilt/).
+
+### Roda do mouse
+
+Escolha se a roda do mouse sem modificadores desloca a tela ou altera o zoom. Manter **Ctrl** pressionado usa a outra ação.
+
+### Velocidade de deslocamento com rolagem
+
+Define a escala do deslocamento da tela com a roda do mouse, o trackpad e o
+analógico esquerdo de um controle de jogo, de 0,25 × a 4,00 × (padrão 1,00 ×).
+
+### Velocidade de zoom com rolagem
+
+Define a escala do zoom com **Ctrl** e a roda do mouse, ou com o analógico direito
+de um controle de jogo, de 0,25 × a 4,00 × (padrão 1,00 ×).
 
 ## Atalhos de teclado
 

@@ -55,10 +55,7 @@ Haz una de las siguientes acciones:
 - Mantén pulsada **Alt** y haz clic donde quieras copiar.
 - Selecciona **Establecer origen** y después haz clic.
 
-Hasta que lo establezcas, el origen está en el centro de la vista. Arrastra el
-disco para mover el origen. Un dedo puede arrastrar el disco, pero nunca
-establece el origen. Mientras pintas, el disco sigue el punto que se está
-copiando.
+Hasta que lo establezcas, el origen está en el centro de la vista. Arrastra el disco para mover el origen. Un dedo puede arrastrar el disco, pero solo establece el origen cuando el dedo dibuja. Mientras pintas, el disco sigue el punto que se está copiando.
 
 **Pincel corrector puntual** busca su propio origen y no tiene disco.
 

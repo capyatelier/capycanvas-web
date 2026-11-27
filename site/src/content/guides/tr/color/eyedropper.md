@@ -16,9 +16,7 @@ Aşağıdakilerden birini yapın:
 - Boyama ve Fotoğraf alanlarında Araçlar çubuğunda **Damlalık** seçin.
 - Eskiz alanında sol kenardaki çubukta **Fırça boyutu kaydırıcısı** ve **Güç kaydırıcısı** arasındaki **Renk seçici** seçeneğini seçin.
 
-Renk almadan durdurmak için **I** tuşuna basın veya aynı düğmeyi yeniden seçin,
-**Escape** tuşuna basın ya da başka bir araç veya fırça seçin. Basılı tutmadan
-yapılan bir parmak dokunuşu da Damlalığı durdurur.
+Renk almadan durdurmak için **I** tuşuna basın veya aynı düğmeyi yeniden seçin, **Escape** tuşuna basın ya da başka bir araç veya fırça seçin. Parmak çizmiyorsa, basılı tutmadan yapılan bir parmak dokunuşu da Damlalığı durdurur.
 
 ## Renk alma
 

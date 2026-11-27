@@ -4,9 +4,9 @@ description: "偏好設定中的筆設定，以及 Apple Pencil 的輕點兩下�
 related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-筆的設定位於 **編輯 > 偏好設定** 的 **繪圖筆與輸入** 頁面。
+筆的設定位於 **編輯 > 偏好設定** 的 **繪圖筆與滑鼠** 頁面。
 
-![偏好設定的繪圖筆與輸入頁面。](shot:pen/pen-and-input)
+![偏好設定的繪圖筆與滑鼠頁面。](shot:pen/pen-and-input)
 
 ## 筆壓
 

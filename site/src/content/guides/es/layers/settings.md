@@ -115,7 +115,7 @@ puede recortar, no puede ser base de recorte y no admite filtros adjuntos. No
 puedes cambiar Traspasar en un grupo bloqueado.
 
 Los grupos nuevos usan Normal, salvo que **Usar Traspasar en los grupos nuevos**
-esté activado en la página **Lienzo** de [Preferencias](/es/docs/preferences/).
+esté activado en la página **Color** de [Preferencias](/es/docs/preferences/).
 Si agrupas capas que usan un modo de mezcla distinto de Normal, o un filtro en
 su propia capa, el grupo nuevo queda en Traspasar.
 

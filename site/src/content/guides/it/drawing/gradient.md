@@ -21,7 +21,6 @@ sfumatura viene dipinta quando rilasci.
 
 - La sfumatura copre l'intero livello, con il primo colore prima del punto iniziale e l'ultimo colore oltre il punto finale.
 - Premi **Esc** durante il trascinamento per annullare.
-- Un trascinamento con un dito sposta invece la tela.
 - Una selezione attiva limita la sfumatura, e **Blocca alfa** viene rispettato.
 - Nella Maschera veloce o su un livello di selezione, la sfumatura va nella maschera di selezione.
 - Ogni sfumatura è un passaggio di annullamento.

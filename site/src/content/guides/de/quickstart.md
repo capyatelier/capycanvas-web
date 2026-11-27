@@ -32,7 +32,7 @@ im Arbeitsbereich Malen das Werkzeug in der Werkzeugleiste Werkzeuge am linken R
 Ziehen Sie ein Werkzeug auf die Leinwand, um es dort als
 [Blase](/de/docs/customize/bubbles/) zu behalten.
 
-> **Hinweis:** Finger zeichnen nie. Mit zwei Fingern auf der Leinwand verschieben, zoomen und drehen Sie die Ansicht.
+> **Hinweis:** Auf iPad, iPhone und Android zeichnet ein Finger, bis Sie zum ersten Mal einen Stift auf der Leinwand verwenden. Mit zwei Fingern auf der Leinwand verschieben, zoomen und drehen Sie die Ansicht. Siehe [Touch-Gesten](/de/docs/input/touch/).
 
 Um einen Strich rückgängig zu machen, wählen Sie **Bearbeiten > Rückgängig**, drücken
 **Strg+Z** oder tippen mit zwei Fingern auf die Leinwand (siehe

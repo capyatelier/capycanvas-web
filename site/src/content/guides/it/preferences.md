@@ -1,6 +1,6 @@
 ---
 title: "Preferenze"
-description: "La finestra di dialogo Preferenze e le impostazioni delle pagine Aspetto, Tela, Colore, Penna e input e Informazioni."
+description: "La finestra di dialogo Preferenze e le impostazioni delle pagine Aspetto, Colore, Tocco, Penna e mouse e Informazioni."
 related: ["input/pen", "input/pen-pressure", "input/keyboard", "customize/zen", "color-management/color-spaces"]
 ---
 
@@ -94,33 +94,6 @@ Attivo per impostazione predefinita.
 Imposta l'immagine del pulsante Capy: **Guarda in alto** (predefinita), **Guarda
 avanti**, **Fa il bagno** o **Dorme**.
 
-## Tela
-
-![Le impostazioni di navigazione della tela.](shot:preferences/canvas-navigation)
-
-### Rotella del mouse
-
-Scegli se la rotella del mouse senza modificatori sposta o ingrandisce la tela. Tenere premuto **Ctrl** usa l'altra azione.
-
-### Ruota con due dita
-
-Consente di ruotare la vista ruotando due dita. Disattivalo per limitare i gesti a due dita a spostamento e zoom.
-
-### Velocità di spostamento con scorrimento
-
-Regola di quanto la rotellina del mouse, il trackpad e la levetta sinistra di un
-controller di gioco scorrono la tela, da 0,25 × a 4,00 × (predefinito 1,00 ×).
-
-### Velocità di zoom con scorrimento
-
-Regola lo zoom con **Ctrl** e la rotellina del mouse, oppure con la levetta destra
-di un controller di gioco, da 0,25 × a 4,00 × (predefinito 1,00 ×).
-
-### Usa Attraversa per i nuovi gruppi
-
-Imposta i nuovi gruppi su [Attraversa](/it/docs/layers/blend-modes/). Disattivato
-per impostazione predefinita. I gruppi esistenti non cambiano.
-
 ## Colore
 
 Le impostazioni di **Apertura delle foto** si applicano alle foto che apri.
@@ -143,9 +116,44 @@ Imposta come si aprono le foto senza profilo colore: **Considera sRGB**
 Apre la libreria dei profili colore. Vedi
 [Spazio colore, profondità in bit e fusione](/it/docs/color-management/color-spaces/).
 
-## Penna e input
+### Usa Attraversa per i nuovi gruppi
 
-Le impostazioni di questa pagina sono descritte in [Penna](/it/docs/input/pen/), [Inclinazione penna](/it/docs/input/pen-tilt/) e [Movimenti tattili](/it/docs/input/touch/).
+Imposta i nuovi gruppi su [Attraversa](/it/docs/layers/blend-modes/). Disattivato
+per impostazione predefinita. I gruppi esistenti non cambiano.
+
+## Tocco
+
+**Trascinamento con un dito** e i tocchi con le dita in **Gesti touch** sono descritti in [Movimenti tattili](/it/docs/input/touch/). L'app per macOS non ha **Trascinamento con un dito**.
+
+### Ruota con due dita
+
+Consente di ruotare la vista ruotando due dita. Disattivalo per limitare i gesti a due dita a spostamento e zoom.
+
+### Pizzica rapidamente per adattare
+
+Un rapido pizzico verso l'interno mostra l'intero disegno, centrato, senza rotazione né riflessione. Attivo per impostazione predefinita.
+
+### Allarga le dita per ripristinare la vista
+
+Subito dopo un rapido pizzico per adattare, un rapido allargamento delle dita ripristina la vista precedente. Attivo per impostazione predefinita.
+
+## Penna e mouse
+
+Le impostazioni della penna di questa pagina sono descritte in [Penna](/it/docs/input/pen/) e [Inclinazione penna](/it/docs/input/pen-tilt/).
+
+### Rotella del mouse
+
+Scegli se la rotella del mouse senza modificatori sposta o ingrandisce la tela. Tenere premuto **Ctrl** usa l'altra azione.
+
+### Velocità di spostamento con scorrimento
+
+Regola di quanto la rotellina del mouse, il trackpad e la levetta sinistra di un
+controller di gioco scorrono la tela, da 0,25 × a 4,00 × (predefinito 1,00 ×).
+
+### Velocità di zoom con scorrimento
+
+Regola lo zoom con **Ctrl** e la rotellina del mouse, oppure con la levetta destra
+di un controller di gioco, da 0,25 × a 4,00 × (predefinito 1,00 ×).
 
 ## Scorciatoie da tastiera
 

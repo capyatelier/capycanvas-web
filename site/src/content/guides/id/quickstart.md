@@ -30,7 +30,7 @@ Seret pena atau tetikus di kanvas. Untuk memakai alat lain, pilih **Kuas** di bi
 judul di Sketsa, atau alat di bilah alat Alat di tepi kiri di Lukis. Seret alat ke
 kanvas untuk menyimpannya di sana sebagai [gelembung](/id/docs/customize/bubbles/).
 
-> **Catatan:** Jari tidak pernah menggambar. Dua jari di kanvas menggeser, memperbesar/memperkecil, dan memutar tampilan.
+> **Catatan:** Di iPad, iPhone, dan Android, satu jari menggambar sampai Anda pertama kali memakai pena di kanvas. Dua jari di kanvas menggeser, memperbesar/memperkecil, dan memutar tampilan. Lihat [Gerakan sentuh](/id/docs/input/touch/).
 
 Untuk mengurungkan goresan, pilih **Edit > Urungkan**, tekan **Ctrl+Z**, atau ketuk
 kanvas dengan dua jari (lihat [Urungkan dan ulangi](/id/docs/start/undo/)).

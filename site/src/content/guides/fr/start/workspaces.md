@@ -44,7 +44,7 @@ Croquis masque le pied de page qui affiche le zoom. Pour l’afficher, activez
 Peinture ancre les panneaux dans des colonnes, de part et d’autre de la toile.
 
 1. **Capy (mode Zen)** et les menus, le titre du dessin au centre, puis le sélecteur d’espaces de travail et **Réglages**. L’éditeur web ajoute **Plein écran**.
-2. **Nouveau…**, **Ouvrir…**, **Enregistrer**, **Annuler**, **Rétablir**, **Effacer tout le calque**, **Remplir la sélection**, **Transformer** et **Retourner la vue horizontalement**.
+2. **Nouveau…**, **Ouvrir…**, **Enregistrer**, **Annuler**, **Rétablir**, **Effacer tout le calque**, **Remplir la sélection**, **Transformer** et **Retourner la vue horizontalement**. Sauf dans l’application macOS, **Glisser à un doigt** vient en premier.
 3. **Plume**, **Crayon**, **Pinceau de peinture**, **Gomme**, **Aérographe**, **Décoration**, **Mélange**, **Fluidité**, les outils de sélection, **Remplissage**, **Dégradé**, **Opération**, **Figure**, **Règle**, **Main**, **Zoom**, **Pipette** et **Couleur du pinceau**.
 4. Les onglets **Ensemble d’outils** et **Diagnostics**, **Outil** et **Taille du pinceau**, et **Couleur** et **Palettes**.
 5. Les icônes de **Navigateur** et **Épreuvage**, de **Propriétés** et **Filtres**, et de **Calques**.

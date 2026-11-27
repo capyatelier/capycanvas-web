@@ -4,9 +4,9 @@ description: "Die Stifteinstellungen in den Voreinstellungen sowie Doppeltippen 
 related: ["input/pen-pressure", "input/touch", "input/keyboard", "preferences", "brushes/basics"]
 ---
 
-Die Stifteinstellungen befinden sich auf der Seite **Stift und Eingabe** unter **Bearbeiten > Einstellungen**.
+Die Stifteinstellungen befinden sich auf der Seite **Stift und Maus** unter **Bearbeiten > Einstellungen**.
 
-![Die Seite Stift und Eingabe der Einstellungen.](shot:pen/pen-and-input)
+![Die Seite Stift und Maus der Einstellungen.](shot:pen/pen-and-input)
 
 ## Stiftdruck
 

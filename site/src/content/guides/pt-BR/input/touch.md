@@ -4,24 +4,35 @@ description: "O que os dedos fazem na tela e os toques com os dedos que você po
 related: ["input/pen", "start/canvas", "start/undo", "color/eyedropper", "customize/bubbles"]
 ---
 
-Você pode mover a tela, capturar cores e executar comandos com os dedos em uma
-tela sensível ao toque.
+Você pode desenhar, mover a tela, capturar cores e executar comandos com os dedos em uma tela sensível ao toque.
 
-> **Observação:** Os dedos nunca desenham. Use uma caneta ou um mouse para desenhar na tela.
+## Arrastar com um dedo
+
+**Arrastar com um dedo** define o que acontece quando você arrasta um dedo na tela.
+
+| Opção | Um dedo |
+| --- | --- |
+| **Automático** | Desenha no iPad, no iPhone e no Android até você usar uma caneta na tela pela primeira vez. Depois disso, e em outros dispositivos, não desenha nem desloca. |
+| **Desenhar** | Usa a ferramenta atual, como uma caneta. |
+| **Mover a tela** | Desloca a tela. |
+| **Desligado** | Não desenha nem desloca. |
+
+**Automático** é o padrão. Para mudar, faça uma das seguintes ações:
+
+- Em **Preferências**, abra a página **Toque** e escolha **Arrastar com um dedo**.
+- Em Pintura, selecione **Arrastar com um dedo** no início da barra Comandos.
+
+O aplicativo para macOS não tem **Arrastar com um dedo**.
 
 ## Mover a tela
 
-Arraste a tela com dois dedos para deslocar. Faça o gesto de pinça com dois dedos
-para ampliar ou reduzir, e gire dois dedos para girar a tela. Com a ferramenta
-**Mão**, um dedo também desloca.
+Arraste a tela com dois dedos para deslocar. Faça o gesto de pinça com dois dedos para ampliar ou reduzir, e gire dois dedos para girar a tela. Com a ferramenta **Mão**, ou com **Arrastar com um dedo** em **Mover a tela**, um dedo também desloca.
 
 **Bloquear rotação** e **Bloquear zoom**, no menu de zoom na parte de baixo da
 tela, impedem que a pinça gire ou altere o zoom da visualização. Consulte
 [Visualizar a tela](/pt-BR/docs/start/canvas/).
 
-Enquanto a caneta está na tela, os dedos não movem a tela. Um dedo em uma alça de
-transformação ou de recorte, ou na origem do **Carimbo de clonagem**, arrasta em
-vez disso a alça ou a origem.
+Enquanto a caneta está na tela, os dedos não movem a tela. Exceto com **Arrastar com um dedo** em **Mover a tela**, um dedo em uma alça de transformação ou de recorte, ou na origem do **Carimbo de clonagem**, arrasta a alça ou a origem.
 
 **Encaixar rotação** está ativado por padrão e mantém a visualização perto de um quarto de volta. Desligue-o em **Exibir > Encaixar rotação** para rotação livre.
 
@@ -69,7 +80,7 @@ posição anterior.
 
 Para alterar um toque:
 
-1. Escolha **Editar > Preferências** e selecione **Caneta e entrada**.
+1. Escolha **Editar > Preferências** e selecione **Toque**.
 2. Selecione o toque em **Gestos de toque**.
 3. Escolha uma ação, ou **Nada** para desativar o toque.
 
