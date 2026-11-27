@@ -369,14 +369,14 @@ export const additionalContent = {
     },
     "home": {
       "title": "{appName}",
-      "description": "{appName} est une application multiplateforme pour le dessin, l'illustration et la photographie, dotée d'un puissant moteur de peinture accéléré par GPU. Le meilleur ? Elle est 100 % gratuite et tout son code est open source.",
+      "description": "{appName} est une application multiplateforme pour le dessin, l'illustration et la photographie, dotée d'un puissant moteur de peinture accéléré par GPU. Le meilleur ? Elle est gratuite et open source.",
       "workspaces": "Espace de travail",
       "slides": {
         "sketch": "Un dessin à l'encre d'un train sous un grand arbre dans l'espace de travail Sketch, où le dessin remplit l'écran et quelques outils se trouvent sur les bords.",
         "paint": "Une peinture à l'huile d'une maison au bord de la mer au coucher du soleil dans l'espace de travail Paint, avec des pinceaux, des couleurs et des calques à côté de la toile.",
         "photo": "Une photographie d'un petit terrarium dans l'espace de travail Photo, avec le sujet enregistré comme calque de sélection au-dessus de la photo."
       },
-      "meta": "{appName} est une application multiplateforme pour le dessin, l'illustration et la photographie, dotée d'un puissant moteur de peinture accéléré par GPU. Le meilleur ? Elle est 100 % gratuite et tout son code est open source."
+      "meta": "{appName} est une application multiplateforme pour le dessin, l'illustration et la photographie, dotée d'un puissant moteur de peinture accéléré par GPU. Le meilleur ? Elle est gratuite et open source."
     },
     "download": {
       "title": "Télécharger",
@@ -485,14 +485,14 @@ export const additionalContent = {
     },
     "home": {
       "title": "{appName}",
-      "description": "{appName} ist eine plattformübergreifende App für Skizzen, Illustration und Fotografie mit einer leistungsstarken GPU-beschleunigten Mal-Engine. Das Beste daran: Sie ist zu 100 % kostenlos, und der gesamte Code ist Open Source.",
+      "description": "{appName} ist eine plattformübergreifende App für Skizzen, Illustration und Fotografie mit einer leistungsstarken GPU-beschleunigten Mal-Engine. Das Beste: Sie ist völlig kostenlos und Open Source.",
       "workspaces": "Arbeitsbereich",
       "slides": {
         "sketch": "Eine Tuschezeichnung eines Zuges unter einem großen Baum im Sketch-Arbeitsbereich, wobei die Zeichnung den Bildschirm ausfüllt und an den Rändern einige Werkzeuge sitzen.",
         "paint": "Ein Ölgemälde eines Hauses am Meer bei Sonnenuntergang im Paint-Arbeitsbereich, mit Pinseln, Farben und Ebenen neben der Leinwand.",
         "photo": "Ein Foto eines kleinen Terrariums im Photo-Arbeitsbereich, mit dem Motiv als Auswahlebene über dem Foto gespeichert."
       },
-      "meta": "{appName} ist eine plattformübergreifende App für Skizzen, Illustration und Fotografie mit einer leistungsstarken GPU-beschleunigten Mal-Engine. Das Beste daran: Sie ist zu 100 % kostenlos, und der gesamte Code ist Open Source."
+      "meta": "{appName} ist eine plattformübergreifende App für Skizzen, Illustration und Fotografie mit einer leistungsstarken GPU-beschleunigten Mal-Engine. Das Beste: Sie ist völlig kostenlos und Open Source."
     },
     "download": {
       "title": "Herunterladen",
@@ -601,14 +601,14 @@ export const additionalContent = {
     },
     "home": {
       "title": "{appName}",
-      "description": "{appName} — кроссплатформенное приложение для скетчей, иллюстрации и обработки фото с мощным движком рисования с ускорением на GPU. А главное — оно на 100% бесплатное, и весь его код открыт.",
+      "description": "{appName} — кроссплатформенное приложение для скетчей, иллюстрации и обработки фото с мощным движком рисования с ускорением на GPU. А главное — оно бесплатное и с открытым кодом.",
       "workspaces": "Рабочая область",
       "slides": {
         "sketch": "Чернильный рисунок поезда под большим деревом в рабочем пространстве Sketch, где рисунок заполняет экран, а по краям расположено несколько инструментов.",
         "paint": "Картина маслом дома у моря на закате в рабочем пространстве Paint, с кистями, цветами и слоями рядом с холстом.",
         "photo": "Фотография небольшого террариума в рабочей области Photo; объект сохранён как слой выделения над фотографией."
       },
-      "meta": "{appName} — кроссплатформенное приложение для скетчей, иллюстрации и обработки фото с мощным движком рисования с ускорением на GPU. А главное — оно на 100% бесплатное, и весь его код открыт."
+      "meta": "{appName} — кроссплатформенное приложение для скетчей, иллюстрации и обработки фото с мощным движком рисования с ускорением на GPU. А главное — оно бесплатное и с открытым кодом."
     },
     "download": {
       "title": "Скачать",
